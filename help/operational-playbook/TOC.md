@@ -1,15 +1,15 @@
 ---
-user-guide-title: 상거래 운영 Playbook
+user-guide-title: Operational Playbook
 user-guide-description: 성공적인 전자 상거래 사이트를 운영할 수 있도록 비즈니스를 운영할 준비가 된 방법을 알아봅니다.
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# 상거래 운영 Playbook {#operational-playbook}
+# Operational Playbook {#operational-playbook}
 
 - [개요](overview.md)
 - 상거래 {#intro}
