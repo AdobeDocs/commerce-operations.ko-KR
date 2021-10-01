@@ -1,23 +1,19 @@
 ---
-title: 기본 설정 변경
+title: Adobe 상거래 성능 최적화
 description: 일부 기본 설정을 변경하여 Adobe Experience Manager을 CMS로 사용하도록 Adobe 상거래 프로젝트를 준비합니다.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
 
 
-# 기본 Adobe 상거래 설정 변경
+# Adobe 상거래 성능 최적화
 
 ## AEM 및 Adobe 상거래 인프라의 지리적 위치
 
 페이지를 작성할 때 AEM 게시자와 Commerce GraphQL 간의 지연을 줄이려면 동일한 AWS(또는 Azure) 지역 내에서 두 개의 개별 인프라의 초기 프로비저닝을 호스팅해야 합니다. 두 클라우드에 대해 선택한 지리적 위치는 고객 기반의 대부분과 가장 가깝아야 하므로 고객 측 GraphQL 요청이 지리적으로 가까운 위치에서 대부분의 고객에게 제공됩니다.
-
-## AWS/Azure PrivateLink - 클라우드 VPC에서 AEM 및 Adobe Commerce 연결
-
-응답 시간을 향상시키고 과도한 로드 기대치를 가진 사이트의 지연 시간을 더 줄이기 위해 AEM VPC와 클라우드 VPC의 Adobe 커머스 간에 AWS(또는 Azure) Privacetlink 연결을 고려할 수 있습니다. 이를 통해 AEM 게시자와 Adobe 커머스 간의 모든 네트워크 트래픽이 글로벌 AWS 백본을 통해 유지되며 공개 인터넷을 트래버스할 필요가 없습니다.
 
 ## Marketing Commerce의 GraphQL 캐싱
 

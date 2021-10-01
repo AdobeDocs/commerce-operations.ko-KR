@@ -1,10 +1,9 @@
 ---
 user-guide-title: 규모에 맞게 상거래 경험 제공
 user-guide-description: Adobe Experience Manager에서 Marketing Cloud를 사용하여 경험을 규모에 맞게 전달하는 방법을 알아봅니다.
-hide: true
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '39'
+source-wordcount: '41'
 ht-degree: 0%
 
 ---
@@ -14,8 +13,8 @@ ht-degree: 0%
 
 - [개요](overview.md)
 - [유효 캐싱 계획](caching.md)
-- [성능 최적화](performance.md)
+- [AEM 성능 최적화](performance.md)
 - [인프라 정렬](infrastructure.md)
-- [기본 설정 변경](default-settings.md)
-- [시작 준비](launch.md)
+- [Adobe 상거래 성능 최적화](default-settings.md)
+- [성능 테스트 팁](launch.md)
 - [결론](conclusion.md)

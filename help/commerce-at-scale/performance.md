@@ -1,15 +1,15 @@
 ---
-title: 성능 최적화
+title: AEM 성능 최적화
 description: Adobe Commerce에서 높은 로드를 지원하도록 기본 Adobe Experience Manager 구성을 최적화합니다.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
 
 
-# 기본 구성에서 로드 중인 AEM 성능 최적화
+# AEM 성능 최적화
 
 AEM 디스패처는 역방향 프록시이며 빠르고 동적인 환경을 제공합니다. 정적 리소스 형태로 가능한 한 사이트 컨텐츠를 저장(또는 &quot;캐싱&quot;)하는 것을 목표로 Apache HTTP Server와 같은 정적 HTML 서버의 일부로 작동합니다. 이 접근 방법은 AEM 페이지 렌더링 기능과 Adobe Commerce GraphQL 서비스에 최대한 액세스할 필요가 없도록 하는 것입니다. 대부분의 페이지를 정적 HTML, CSS 및 JS로 제공함으로써 사용자에게 성능 이점을 제공하고 환경의 인프라 요구 사항을 줄입니다. 사용자에서 사용자까지 동일하게 반복될 수 있는 모든 페이지 또는 쿼리는 캐싱에 대해 고려되어야 합니다.
 
@@ -54,7 +54,7 @@ content/ecommerce/us/en/products/product-page.html
 
 | 컨텐츠(docroot) | ecommerce | 미국 | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 1 | 2개 | 1 | 4 | - |
+| 0 | 3 | 2개 | 3 | 4 | - |
 
 이 경우 statfilelevel 속성을 기본 &quot;0&quot;으로 설정한 상태에서 product-page.html 템플릿이 업데이트되고 무효화를 트리거하는 활성화되면 docroot에서 level 4로 모든 .stat 파일이 터치되고 파일이 무효화되어 해당 단일 변경 사항에서 사이트의 모든 페이지(다른 웹 사이트, 국가 및 언어 포함)에 대한 AEM 게시 인스턴스에서 추가 요청이 발생합니다.
 
