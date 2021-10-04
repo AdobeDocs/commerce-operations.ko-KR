@@ -4,7 +4,7 @@ description: 상거래 구현 Playbook의 목표
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
