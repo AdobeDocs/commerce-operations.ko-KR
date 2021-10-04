@@ -1,13 +1,13 @@
 ---
 title: Adobe 상거래 및 Adobe Experience Manager 인프라 정렬
 description: Adobe 상거래 및 Adobe Experience Manager 인프라를 정렬하여 허용 가능한 시간 초과 및 연결 제한을 설정합니다.
-exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
+
 
 # 인프라 할당(시간 초과 및 연결 제한)
 
