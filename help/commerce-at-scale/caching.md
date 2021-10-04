@@ -1,13 +1,13 @@
 ---
 title: 유효 캐시 계획
 description: 로드 중인 사이트의 성공을 확인하려면 캐싱에 대한 권장 벤치마크를 참조하십시오.
-source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
+exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # 로드 중 전자 상거래 성공에 대한 유효 캐싱 계획
 

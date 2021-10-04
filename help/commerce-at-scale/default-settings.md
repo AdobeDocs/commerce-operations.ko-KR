@@ -1,13 +1,13 @@
 ---
 title: Adobe 상거래 성능 최적화
 description: 일부 기본 설정을 변경하여 Adobe Experience Manager을 CMS로 사용하도록 Adobe 상거래 프로젝트를 준비합니다.
-source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
+exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 0%
 
 ---
-
 
 # Adobe 상거래 성능 최적화
 

@@ -1,15 +1,15 @@
 ---
-title: 시작 준비
+title: 성능 테스트 팁
 description: Adobe Commerce 및 Adobe Experience Manager 솔루션을 실행하기 위한 KPI를 설정하는 방법을 알아봅니다.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
-
-# 시작 준비
+# 성능 테스트 팁
 
 위의 모든 변경 사항의 효율성을 평가하려면 Go-Live 전 및 향후 프로덕션 환경에 대한 주요 배포 전에 철저한 성능 테스트를 실행해야 합니다. 로드 테스트를 계획할 때 실제 소비자 트래픽을 가능한 한 많이 시뮬레이션하는 것이 중요합니다.
 

@@ -1,13 +1,13 @@
 ---
 title: 규모에 맞게 경험 제공
 description: Adobe Commerce 및 Adobe Experience Manager을 사용하여 경험을 규모에 맞게 제공하는 방법을 알아봅니다.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce, Commerce Integration Framework 및 Adobe Experience Manager을 사용하여 규모에 맞게 경험을 제공합니다
 
@@ -30,6 +30,6 @@ AEM 전자 상거래 상점 예제의 제품 세부 사항 페이지에 있는 �
 
 ## 클라이언트측 렌더링
 
-PDP(Product Detail Page)와 같이 재고 수준/가용성 또는 가격과 같은 동적 속성이 표시되는 경우 클라이언트측 구성 요소를 사용할 수 있습니다. 위의 서버측 렌더링 접근 방식을 사용하여 템플릿 페이지를 디스패처에 작성하고 캐시할 수 있지만 정적 페이지 자체 내에서 동적 클라이언트측 웹 구성 요소가 있을 수 있습니다. 이러한 동적 구성 요소는 GraphQL API를 통해 GraphQL API를 통해 Adobe Commerce에서 클라이언트의 브라우저에서 직접 데이터를 가져와 PDP에서 실시간으로 현재 가격 또는 재고 수준을 확인할 수 있습니다. 이렇게 하면 일반적으로 실시간으로 표시되어야 하는 컨텐츠가 페이지 로드 시 항상 가져오게 됩니다. 위의 예에서 노란색 상자에 이러한 예제가 표시됩니다.
+PDP(Product Detail Page)와 같이 재고 수준/가용성 또는 가격과 같은 동적 속성이 표시되는 경우 클라이언트측 구성 요소를 사용할 수 있습니다. 위의 서버측 렌더링 접근 방식을 사용하여 템플릿 페이지를 디스패처에 작성하고 캐시할 수 있지만 정적 페이지 자체 내에서 동적 클라이언트측 웹 구성 요소가 있을 수 있습니다. 이러한 동적 구성 요소는 GraphQL API를 통해 GraphQL API를 통해 Adobe Commerce에서 클라이언트의 브라우저에서 직접 데이터를 가져와 PDP에서 실시간으로 현재 가격 또는 재고 수준을 확인할 수 있습니다. 이렇게 하면 일반적으로 실시간으로 표시되어야 하는 컨텐츠가 페이지 로드 시 항상 가져오게 됩니다. 위의 예에서 빨간색 상자에 예제가 표시됩니다.
 
 AEM 템플릿과 클라이언트측 렌더링 조합을 체크아웃 프로세스 중에 사용할 수도 있습니다. 클라이언트측 장바구니 구성 요소는 장바구니, 체크아웃 양식 및 결제 서비스 공급자와의 통합을 렌더링합니다. 이 하이브리드 접근 방식은 계정 만들기, 계정 로그인 및 잊어버린 암호와 같은 Adobe Commerce 계정 관리 기능에도 사용할 수 있습니다.

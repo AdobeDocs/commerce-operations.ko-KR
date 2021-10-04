@@ -1,13 +1,13 @@
 ---
 title: Adobe 상거래 및 Adobe Experience Manager 인프라 정렬
 description: Adobe 상거래 및 Adobe Experience Manager 인프라를 정렬하여 허용 가능한 시간 초과 및 연결 제한을 설정합니다.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # 인프라 할당(시간 초과 및 연결 제한)
 
@@ -25,11 +25,11 @@ AEM 및 Adobe 상거래 및 정렬이 필요한 로드 밸런서와 같은 주�
 
 1. 디스패처 상태 검사는 디스패처가 로드 서지 지연에서 불필요하게 일찍 서비스를 이탈하지 않도록 검토해야 합니다. 부하 분산 장치 상태 확인의 시간 제한 설정은 게시자 시간 제한 설정과 정렬되어야 합니다.
 
-   ![AEM 로드 밸런서 상태 검사를 보여주는 스크린샷](../assets/commerce-at-scale/health-checks.svg)
+   ![AEM 로드 밸런서 상태 검사를 보여주는 스크린샷](../assets/commerce-at-scale/health-checks.png)
 
 1. Dispatcher 대상 그룹 고착성을 비활성화하고 라운드 로빈 로드 밸런싱 알고리즘을 사용할 수 있습니다. 세션 고착성을 설정해야 하는 AEM 특정 기능이나 AEM 사용자 세션이 없다고 가정합니다. 이 섹션에서는 사용자 로그인 및 세션 관리가 GraphQL을 통해 Adobe 상거래에서만 사용된다고 가정합니다.
 
-   ![AEM 세션 고착성 속성을 보여주는 스크린샷](../assets/commerce-at-scale/session-stickiness.svg)
+   ![AEM 세션 고착성 속성을 보여주는 스크린샷](../assets/commerce-at-scale/session-stickiness.png)
 
 1. 세션 고착성을 활성화하는 경우, 기본적으로 Apple은 Set-Cookies 헤더로 페이지를 캐시하지 않으므로 명시적으로 캐시하지 않을 수 있습니다. Adobe 상거래 는 캐시 가능 페이지에서도 쿠키를 설정하지만(TTL > 0) 기본 기본 VCL은 캐시 캐싱이 제대로 작동하도록 캐시 가능 페이지에서 해당 쿠키를 제거합니다. 페이지가 캐싱되지 않는 경우 사용 중인 사용자 지정 쿠키를 확인하고 기본 VCL도 업로드한 다음 사이트를 다시 확인합니다.
 
@@ -49,8 +49,8 @@ http 연결 시간 제한 및 http 소켓 시간 초과는 실제 시간 초과�
 
 다음 이미지는 Magento CIF GraphQL 클라이언트 구성 팩토리를 보여줍니다. 여기에 표시된 설정은 예시에만 해당되며 사례에 따라 조정되어야 합니다.
 
-![상거래 통합 프레임워크 구성 설정의 스크린샷](../assets/commerce-at-scale/cif-config.svg)
+![상거래 통합 프레임워크 구성 설정의 스크린샷](../assets/commerce-at-scale/cif-config.png)
 
 다음 이미지는 백엔드 구성을 보여줍니다. 여기에 표시된 설정은 예시에만 해당되며 사례에 따라 조정되어야 합니다.
 
-![자산에 대한 상거래 관리 구성 설정의 스크린샷](../assets/commerce-at-scale/cif-config-advanced.svg)
+![자산에 대한 상거래 관리 구성 설정의 스크린샷](../assets/commerce-at-scale/cif-config-advanced.png)

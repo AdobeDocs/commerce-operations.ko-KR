@@ -1,19 +1,19 @@
 ---
 title: 구현 Playbook
 description: 상거래 구현 Playbook의 목표
-source-git-commit: bb7dbf2a9d7f2fca1ecc7714f8f1ea53e4fcf067
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # 구현 Playbook
 
 이 Playbook의 목적은 일반적인 Adobe 상거래 구현의 가장 전체적인 개요를 제공하는 것입니다.
 
-개발 및 통합을 통해 프로젝트 범위 지정 초기 단계부터 배포 및 지속적인 지원에 이르기까지 커머스 프로젝트를 성공적으로 실행하기 위해 고려해야 하는 다양한 방법론과 모범 사례가 있습니다.
+개발, 통합 및 배포에서 지속적인 지원에 이르기까지 프로젝트 초기 단계부터 Adobe 상거래 프로젝트를 성공적으로 실행하기 위해 고려해야 하는 다양한 방법론과 모범 사례가 있습니다.
 
 또한 이러한 프로세스 및 고려 사항은 모든 종류의 Adobe Commerce 프로젝트에 적용됩니다.
 

@@ -1,13 +1,13 @@
 ---
 title: AEM 성능 최적화
 description: Adobe Commerce에서 높은 로드를 지원하도록 기본 Adobe Experience Manager 구성을 최적화합니다.
-source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
+exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
 
 ---
-
 
 # AEM 성능 최적화
 
@@ -54,7 +54,7 @@ content/ecommerce/us/en/products/product-page.html
 
 | 컨텐츠(docroot) | ecommerce | 미국 | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 3 | 2개 | 3 | 4 | - |
+| 0 | 1 | 2개 | 3 | 4 | - |
 
 이 경우 statfilelevel 속성을 기본 &quot;0&quot;으로 설정한 상태에서 product-page.html 템플릿이 업데이트되고 무효화를 트리거하는 활성화되면 docroot에서 level 4로 모든 .stat 파일이 터치되고 파일이 무효화되어 해당 단일 변경 사항에서 사이트의 모든 페이지(다른 웹 사이트, 국가 및 언어 포함)에 대한 AEM 게시 인스턴스에서 추가 요청이 발생합니다.
 
@@ -130,7 +130,7 @@ https://www.adobe.com/?gclid=oirhgj34y43yowiahg9u3t
 >
 >`ignoreUrlParams` 설정의 중요도에 대한 추가 읽기는 [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub 리포지토리에서 사용할 수 있습니다.
 
-따라서 페이지의 HTML 구조를 변경하는 GET 매개 변수를 사용하는 경우를 제외하고 &quot;ignoreUrlParams&quot;에서 기본적으로 모든 매개 변수를 무시하도록 구성해야 합니다. 예로는 검색어가 URL을 GET 매개 변수로 하는 검색 페이지가 있습니다. 이 경우 gclid, fbclid 및 광고 채널이 사용하는 기타 모든 추적 매개 변수와 같은 매개 변수를 무시하도록 ignoreUrlParams 를 수동으로 구성하여 일반적인 사이트 작업에 필요한 GET 매개 변수는 영향을 받지 않습니다.
+따라서 페이지의 HTML 구조를 변경하는 GET 매개 변수를 사용하는 경우를 제외하고 &quot;ignoreUrlParams&quot;에서 기본적으로 모든 매개 변수를 무시하도록 구성해야 합니다. 예로는 검색어가 URL을 GET 매개 변수로 사용하는 검색 페이지가 있습니다. 이 경우 gclid, fbclid 및 광고 채널이 사용하는 기타 모든 추적 매개 변수와 같은 매개 변수를 무시하도록 ignoreUrlParams 를 수동으로 구성하여 일반적인 사이트 작업에 필요한 GET 매개 변수는 영향을 받지 않습니다.
 
 ## MPM 작업자는 디스패처에 대해 제한
 
