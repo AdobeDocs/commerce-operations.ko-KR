@@ -2,9 +2,9 @@
 title: 구현 Playbook
 description: 상거래 구현 Playbook의 목표
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 - 단일 시장 또는 다중 시장 출시
 - 미들웨어를 사용하거나 사용하지 않는 광범위한 통합
 
-이 Playbook에서 다음과 같이 전자 상거래 프로젝트 이니셔티브에 일반적으로 관여하는 다양한 관련자에게 통찰력과 지침을 제공하기를 바랍니다.
+이 Playbook에서 다음과 같은 전자 상거래 프로젝트 이니셔티브에 일반적으로 참여할 수 있는 다양한 이해 당사자에게 통찰력과 지침을 제공하기를 바랍니다.
 
 - CEO와 일반 경영자들은 전자 상거래 출시가 무엇을 수반하는지 확고한 생각을 가져야 한다
 - 플랫폼 자체에서 비즈니스 사용자와 작업할 CMO 및 디지털 관리자
