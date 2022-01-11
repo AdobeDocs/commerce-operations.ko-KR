@@ -2,7 +2,7 @@
 title: 성능 최적화 Recommendations
 description: 다음 권장 사항을 수행하여 Adobe Commerce 구현의 성능을 최적화합니다.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
+source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Adobe Commerce 버전 2.4에서는 Elasticsearch이 필요하지만 2.4 이전 �
 
 ### Adobe Commerce 업데이트 유지
 
-Adobe Commerce은 최신 버전을 실행할 때 항상 성능이 향상됩니다. 각 새 버전을 릴리스한 후에도 Adobe Commerce을 최신 상태로 유지할 수 없는 경우에도 여전히 업데이트하는 것이 좋습니다 [업그레이드](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) Adobe Commerce에서 주목할 만한 성능 최적화를 도입했습니다.
+Adobe Commerce은 최신 버전을 실행할 때 항상 성능이 향상됩니다. 각 새 버전을 릴리스한 후에도 Adobe Commerce을 최신 상태로 유지할 수 없는 경우에도 여전히 업데이트하는 것이 좋습니다 [업그레이드](../../../upgrade/overview.md) Adobe Commerce에서 주목할 만한 성능 최적화를 도입했습니다.
 
 예를 들어, 2020년에 Adobe은 Redis 레이어에 대한 최적화를 발표하여 비효율성, 연결 문제 및 Redis와 Adobe Commerce 간에 불필요한 데이터 전송을 해결했습니다. 2.3에서 2.4 사이의 전반적인 성능은 밤낮으로 향상되었으며 Redis 최적화 때문에 장바구니, 체크아웃, 동시 사용자가 크게 향상되었습니다.
 
