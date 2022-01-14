@@ -1,9 +1,9 @@
 ---
 title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source의 다양한 패치 유형과 패치 작동 방식에 대해 알아봅니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -17,31 +17,31 @@ ht-degree: 0%
 
 패치(또는 diff) 파일은 다음에 참하는 텍스트 파일입니다.
 
-- The file(s) to be changed.
+- 변경할 파일입니다.
 - 변경을 시작할 라인 번호와 변경할 라인 수
-- The new code to swap in.
+- 바꿀 새 코드입니다.
 
-When the [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) program is run, this file is read in and the specified changes are made to the file(s).
+이 [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) 프로그램이 실행되면 이 파일이 읽히고 지정된 변경 사항이 파일에 적용됩니다.
 
-There are three types of patches:
+패치 유형은 다음과 같습니다.
 
 - **핫픽스**—Adobe이 [보안 센터](https://magento.com/security/patches).
 - **개별 패치**—Adobe Commerce 지원 센터에서 개별 단위로 생성 및 배포하는 패치
-- **Custom patches**—Unofficial patches that you can create from a git commit.
+- **사용자 정의 패치**- Git 커밋에서 만들 수 있는 비공식적인 패치
 
 ## 핫픽스
 
-핫픽스는 많은 판매자에게 영향을 주는 보안 또는 품질 수정 사항이 포함된 패치입니다. These fixes are applied to the next patch release for the applicable minor version. 필요에 따라 Adobe 릴리스 핫픽스.
+핫픽스는 많은 판매자에게 영향을 주는 보안 또는 품질 수정 사항이 포함된 패치입니다. 이러한 수정 사항은 적용 가능한 부 버전에 대한 다음 패치 릴리스에 적용됩니다. 필요에 따라 Adobe 릴리스 핫픽스.
 
 에서 핫픽스를 찾을 수 있습니다. [보안 센터](https://magento.com/security/patches). 페이지의 지침에 따라 버전 및 설치 유형에 따라 패치 파일을 다운로드합니다. 를 사용하십시오 [명령줄](../patches/apply.md#) 또는 [작성기](../patches/apply.md) 핫픽스 패치를 적용하려면
 
 >[!NOTE]
 >
->Hot fixes can contain backward incompatible changes.
+>핫픽스에는 호환되지 않는 변경 사항이 포함될 수 있습니다.
 
 ## 개별 패치
 
-Individual patches contain low-impact quality fixes for a specific issue. These fixes are applied to the most recently supported minor version (for example, 2.4.x), but could be missing from the previous supported minor version (for example, 2.3.x). Adobe releases individual patches as needed.
+개별 패치에는 특정 문제에 대한 저충격 품질 수정 사항이 포함되어 있습니다. 이러한 수정 사항은 가장 최근에 지원되는 부 버전(예: 2.4.x)에 적용되지만, 이전에 지원되는 부 버전(예: 2.3.x)에서 누락될 수 있습니다. Adobe은 필요에 따라 개별 패치를 릴리스합니다.
 
 를 사용하십시오 [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html) 개별 패치를 적용하려면
 
@@ -59,17 +59,17 @@ Adobe 엔지니어링 팀이 Adobe Commerce 또는 Magento Open Source 작성기
 
 사용자 정의 패치를 생성하려면
 
-1. Create a `patches/composer` directory in your local project.
-1. Identify the GitHub commit or pull request to use for the patch. This example uses the [`2d31571`](https://github.com/magento/magento2/commit/) commit, linked to GitHub issue [#6474](https://github.com/magento/magento2/issues/6474).
-1. 추가 `.patch` 또는 `.diff` 확장: 커밋 URL에 대한 . Use `.diff` for a smaller file size. 예: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. 만들기 `patches/composer` 로컬 프로젝트의 디렉터리입니다.
+1. 패치에 사용할 GitHub 커밋 또는 가져오기 요청을 식별합니다. 이 예제에서는 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) 커밋, GitHub 문제에 연결 [#6474](https://github.com/magento/magento2/issues/6474).
+1. 추가 `.patch` 또는 `.diff` 확장: 커밋 URL에 대한 . 사용 `.diff` 더 작은 파일 크기로 예: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. 페이지를 `patches/composer` 디렉토리. 예, `github-issue-6474.diff`.
 1. 파일 편집 및 제거 `app/code/<VENDOR>/<PACKAGE>` 모든 경로에 있는 모든 경로에 있는 모든 경로에 있는 `vendor/<VENDOR>/<PACKAGE>` 디렉토리.
 
    >[!NOTE]
    >
-   >Text editors that automatically remove trailing whitespace or add new lines can break the patch. Use a simple text editor to make these changes.
+   >후행 공백을 자동으로 제거하거나 새 줄을 추가하는 텍스트 편집기에 의해 패치가 중단됩니다. 간단한 텍스트 편집기를 사용하여 이러한 변경 작업을 수행합니다.
 
-The following example shows the previously mentioned DIFF file after removing all instances of `app/code/Magento/Payment`:
+다음 예제에서는 모든 인스턴스를 제거한 후 이전에 언급된 DIFF 파일을 보여 줍니다 `app/code/Magento/Payment`:
 
 ```diff
 diff --git a/view/frontend/web/js/view/payment/iframe.js b/view/frontend/web/js/view/payment/iframe.js
@@ -78,20 +78,21 @@ index c8a6fef58d31..7d01c195791e 100644
 +++ b/view/frontend/web/js/view/payment/iframe.js
 @@ -154,6 +154,7 @@ define(
               */
-              clearTimeout: function () {
-                  clearTimeout(this.timeoutId);
-                  this.fail();
-                  return this;
-            },
+             clearTimeout: function () {
+                 clearTimeout(this.timeoutId);
++                this.fail();
+ 
+                 return this;
+             },
 ```
 
-## Applying patches
+## 패치 적용
 
-You can apply patches using any of the following methods:
+다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [Quality Patches Tool](https://devdocs.magento.com/quality-patches/tool.html)
-- [Command line](../patches/apply.md#command-line)
-- [Composer](../patches/apply.md#composer)
+- [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html)
+- [명령줄](../patches/apply.md#command-line)
+- [작성기](../patches/apply.md#composer)
 
 >[!NOTE]
 >
