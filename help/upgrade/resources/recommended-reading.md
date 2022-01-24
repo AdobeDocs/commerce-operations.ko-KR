@@ -1,9 +1,9 @@
 ---
 title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 또는 Magento Open Source 업그레이드 계획에 대한 권장 읽기를 검토합니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 0%
 - [업그레이드 모범 사례](../prepare/best-practices.md)
 - [다운로드 가능한 2.4.4 업그레이드 안내서](../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf)
 
-## 업그레이드 호환성 도구
+## [!DNL Upgrade Compatibility Tool]
 
-- [Adobe Commerce 업그레이드 호환성 도구를 사용하여 다음 업그레이드를 준비합니다.](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
+- [Adobe Commerce을 사용하여 다음 업그레이드를 준비합니다. [!DNL Upgrade Compatibility Tool]](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
 - [개요](../upgrade-compatibility-tool/overview.md)
-- [PHPStorm 및 업그레이드 호환성 도구](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
+- [PHPStorm 및 [!DNL Upgrade Compatibility Tool]](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
 
 ## 보안
 

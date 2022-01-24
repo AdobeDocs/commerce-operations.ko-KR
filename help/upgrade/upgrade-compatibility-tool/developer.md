@@ -1,21 +1,21 @@
 ---
-title: 업그레이드 호환성 도구 개발자 정보
-description: API 색인 통합을 사용하여 업그레이드 호환성 도구를 사용자 지정합니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] 개발자 정보'
+description: 사용자 지정 [!DNL Upgrade Compatibility Tool] api 색인 통합을 사용합니다.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# 업그레이드 호환성 도구 개발자 정보
+# [!DNL Upgrade Compatibility Tool] 개발자 정보
 
-이 주제에서는 Adobe Commerce 코드와 함께 긴밀하게 작업하고 업그레이드 호환성 도구에 대한 자세한 정보를 알고 싶은 개발자를 위한 정보를 제공합니다. You can use this knowledge to customize the tool&#39;s components.
+이 주제에서는 Adobe Commerce 코드와 함께 긴밀하게 작업하고 다음에 대한 자세한 정보를 알고 싶은 개발자를 위한 정보를 제공합니다 [!DNL Upgrade Compatibility Tool]. 이 지식을 사용하여 도구의 구성 요소를 사용자 지정할 수 있습니다.
 
 ## Adobe Commerce API 색인 통합
 
-Adobe Commerce API index integration is an internal integration solution that encompasses a set of tools to explore Adobe Commerce extensions developed by Adobe, Adobe Commerce Partners, and third-party vendors based on static code analysis.
+Adobe Commerce API 색인 통합은 정적 코드 분석을 기반으로 Adobe, Adobe Commerce 파트너 및 타사 공급업체가 개발한 Adobe Commerce 확장을 탐색하는 도구 세트를 포함하는 내부 통합 솔루션입니다.
 
 Adobe Commerce API 색인과의 통합은 다음을 통해 수행됩니다.
 
@@ -29,7 +29,7 @@ Adobe Commerce API 색인과의 통합은 다음을 통해 수행됩니다.
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-이전 예에서는 업그레이드 호환성 도구에서 `@sut_mray_mock` 로서의 `MRayInterface` 구현 을 참조하십시오. 의 응답 `api()` 및 `modules()` 메서드는 다음 파일에서 가져옵니다.
+이전 예에서 [!DNL Upgrade Compatibility Tool] 사용 `@sut_mray_mock` 로서의 `MRayInterface` 구현 을 참조하십시오. 의 응답 `api()` 및 `modules()` 메서드는 다음 파일에서 가져옵니다.
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -55,21 +55,21 @@ Adobe Commerce API 색인과의 통합은 다음을 통해 수행됩니다.
 
 ## 수락 테스트
 
-1. Before executing acceptance tests, you must set the Adobe Commerce URL in the `phpunit` configuration file.
+1. 수락 테스트를 실행하기 전에 `phpunit` 구성 파일.
 1. 기본값 복사 `tests/acceptance/phpunit.xml` 파일(.dist 접미사 제외)
 1. 변경 `TESTS_BASE_URL` 테스트할 Adobe Commerce URL을 가리킵니다.
-1. To run the acceptance tests, execute one of the following commands:
+1. 수락 테스트를 실행하려면 다음 명령 중 하나를 실행합니다.
 
    - `vendor/bin/phpunit -c tests/acceptance/phpunit.xml tests/acceptance`
    - `vendor/bin/phpunit -c tests/acceptance/phpunit.xml --testsuite=acceptance-tests`
 
 ## GraphQL 단위 테스트 및 ESLint 코드 분석
 
-### Requirements
+### 요구 사항
 
 >[!NOTE]
 >
->You must have Node.js on your system, see the [Node.js documentation](https://nodejs.dev/learn/how-to-install-nodejs).
+>시스템에 Node.js가 있어야 합니다. 자세한 내용은 [Node.js 설명서](https://nodejs.dev/learn/how-to-install-nodejs).
 
 다음은 MacOS 시스템에 대한 지침입니다.
 
@@ -117,12 +117,12 @@ Adobe Commerce API 색인과의 통합은 다음을 통해 수행됩니다.
 - 식별된 문제 수
 - 식별된 문제 심각도
 
-The Upgrade Compatibility Tool calculates this score according to the complexity score formula below.
+다음 [!DNL Upgrade Compatibility Tool] 아래의 복잡성 점수 공식에 따라 이 점수를 계산합니다.
 
-### Complexity score formula
+### 복잡성 점수 공식
 
 `Complexity Score = (Critical issues * 3) + (Errors *2) + Warnings`
 
 >[!WARNING]
 >
->These are absolute values.
+>이는 절대 값입니다.

@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 프로세스 개요
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 업그레이드하여 저장소를 안전하게 유지하고 효율적으로 운영하는 방법을 알아봅니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce 또는 Magento Open Source 프로젝트를 업그레이드하려�
 
 이 안내서의 target 대상에는 다음이 포함됩니다.
 
-### Ecommerce Managers and Technical Directors
+### 전자 상거래 관리자 및 기술 책임자
 
 이 안내서는 이러한 역할을 수행하는 고객이 업그레이드 여정, 정기적으로 업그레이드의 중요성, 업그레이드를 가장 잘 계획하고 준비하는 방법을 이해하는 데 도움이 됩니다.
 
@@ -51,7 +51,7 @@ _따라서... 업그레이드 이유는 무엇입니까?_
 
 ### 성능
 
-Performance is another top reason for upgrading. According to [HubSpot](https://blog.hubspot.com/marketing/page-load-time-conversion-rates), the first five seconds of load time have a significant effect on conversion rates and every second of latency thereafter has a –4.4% impact. 페이지 속도가 선도적인 SEO 순위 지표라는 사실과 함께 사이트 성능이 유지 관리 및 정기적으로 향상되는 중요한 요소인 이유를 보여줍니다. 각 패치 릴리스에는 성능 향상이 포함되어 있으므로 새로운 릴리스를 통해 성장 계획을 지원하고 비즈니스 경쟁력을 유지할 수 있습니다.
+성능을 업그레이드해야 하는 또 다른 주요 이유 에 따라 [HubSpot](https://blog.hubspot.com/marketing/page-load-time-conversion-rates): 로드 시간의 처음 5초는 전환율에 큰 영향을 주며, 이후 매 초 지연은 -4.4%에 영향을 줍니다. 페이지 속도가 선도적인 SEO 순위 지표라는 사실과 함께 사이트 성능이 유지 관리 및 정기적으로 향상되는 중요한 요소인 이유를 보여줍니다. 각 패치 릴리스에는 성능 향상이 포함되어 있으므로 새로운 릴리스를 통해 성장 계획을 지원하고 비즈니스 경쟁력을 유지할 수 있습니다.
 
 ### 지연 비용
 
@@ -59,9 +59,16 @@ Performance is another top reason for upgrading. According to [HubSpot](https://
 
 이는 직관적이지 않을 수 있지만, 정기적인 플랫폼 업데이트를 수행하는 것은 지연으로 인한 누적된 기술 부채 때문에 자주 업데이트를 수행하는 것보다 전반적인 노력이 덜 필요합니다. Adobe는 최근 소매 상점을 운영하고 있으며 드물게 일관되지 않고(연간 또는 이상) 업그레이드를 수행하는 파트너와 작업했습니다. 업그레이드 방식을 전환하고 12개월 동안 Adobe이 권장하는 일반 업그레이드 경로를 따르는 방식으로 전환함으로써, 파트너는 4주 동안의 누적 개발 시간, 노력 및 관련 비용을 고객에게 절감했으며, 이러한 모든 것들은 비즈니스 성장을 이끄는 이니셔티브로 리디렉션되었습니다.
 
-![](../assets/upgrade-guide/waiting-is-not-a-winning-strategy.jpg)
-
 업데이트가 정기적으로 수행되면 변경 사항이 증가하므로 해당 업그레이드 작업에도 이러한 내용이 반영됩니다. 플랫폼 업데이트가 긴 기간 동안 지연되면 더 많은 관련 프로세스가 될 수 있습니다. 또한 [Marketplace](https://marketplace.magento.com/) 및 기타 모든 타사 통합도 영향을 받을 수 있습니다. 마지막으로, 조사, 계획 및 지연된 업그레이드를 수행하는 데 걸리는 시간은 모두 연장되어, 피할 수 있는 노력과 비용이 추가됩니다.
+
+프로젝트 업그레이드 작업 수준에 영향을 주는 몇 가지 일반적인 요소는 다음과 같습니다.
+
+| 기술적 복잡성 | 계획 및 전략 |
+|-----------------------------------------------------------|--------------------------------------------------------------|
+| 사용자 지정 범위 | 요구사항의 명확성, 결정 및 범위 크리프 |
+| 확장 수 | 업그레이드 빈도 |
+| 타사(OMS, ERP)와의 통합 수 | 테스트 전략 |
+| 우수 사례에 부호화 |  |
 
 디지털 상거래 공간의 지속적인 성장은 기업에 더 빨리, 더 자주, 그리고 예측할 수 없는 방식으로 발전하라는 압력을 가했습니다. 고객 구매 행동을 지속적으로 예측하지 못하면 가장 규모가 큰 브랜드 사이에서도 동일한 결과를 얻을 수 있습니다. 성능 및 가동 시간 없이 모든 터치포인트에 강력하고 개인화된 경험을 제공할 수 있어야 합니다. 세계 경쟁업체들을 앞서기 위해서는 제한 없이 빠르게 혁신을 이룰 수 있어야 합니다. 업그레이드를 통해, 향후 비즈니스를 정리하고 보다 나은 서비스 동적 고객 요구 사항을 충족하도록 설정하는 것입니다.
 
@@ -69,11 +76,11 @@ Performance is another top reason for upgrading. According to [HubSpot](https://
 
 Adobe은 [릴리스 일정](https://devdocs.magento.com/release/) 상인의 계획 프로세스를 용이하게 하고 각 패치 릴리스 주기를 업그레이드할 것을 권장합니다. PCI 규정을 준수하려면 가맹점은 최신 패치 또는 보안 패치를 사용해야 합니다. 다음 타임라인은 2022년의 주요 릴리스 및 EOL 이벤트를 보여줍니다.
 
-![](../assets/upgrade-guide/2022-release-timeline.svg)
+![](../assets/upgrade-guide/2022-release-timeline.jpg)
 
 주목할 중요한 이벤트는 다음과 같습니다.
 
-- 2.3.x 지원은 2022년 4월 이후 종료됩니다
-- 2.4.0 to 2.4.3 (based on PHP 7.4) reaches end of quality support in November ’22, when PHP 7.4 reaches EOL
-- Based on these two events above, it is important to upgrade to version 2.4.4 or higher by November ‘22
-- In line with the Adobe Commerce [lifecycle policy](https://devdocs.magento.com/release/lifecycle-policy.html), versions 2.4.4 and 2.4.5 are supported until Nov ’24
+- 2.3.x 라인이 2022년 9월 EOS(End of Support)에 도달함
+- 2.4.0에서 2.4.3(PHP 7.4 기반)은 PHP 7.4가 EOL(End Of Life)에 도달하는 2022년 11월에 EOS에 도달합니다
+- 이 두 EOS 이벤트를 기반으로, **2022년 11월까지 버전 2.4.4 이상으로 업그레이드해야 합니다**
+- Adobe Commerce과 함께 [라이프사이클 정책](https://devdocs.magento.com/release/lifecycle-policy.html), 버전 2.4.4 및 2.4.5는 2024년 11월까지 품질 지원 및 보안 패치를 받게 됩니다

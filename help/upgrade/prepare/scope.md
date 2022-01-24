@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 범위 이해
 description: Adobe Commerce 또는 Magento Open Source 사용자 지정 모듈 또는 타사 확장에 영향을 줄 수 있는 릴리스의 호환되지 않는 변경 사항에 대해 알아봅니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Adobe Commerce Marketplace의 새로운 호환성 정책을 통해 _모두_ 나�
 
 모든 사용자 지정 모듈은 업그레이드하려는 대상 버전과 비교하여 확인해야 합니다. 업그레이드의 시간 및 리소스가 많이 소모되는 프로세스입니다. 사용자 지정 모듈을 평가할 때는 호환되지 않는 변경 사항을 찾고 컨트롤러 분해와 같은 새로운 방법을 알고 있어야 합니다. 에서 이에 대해 자세히 알아볼 수 있습니다 [릴리스 노트](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). 또한 다음을 수행하는지 확인합니다 [모범 사례](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) 모듈 개발용.
 
-## 업그레이드 호환성 도구
+## [!DNL Upgrade Compatibility Tool]
 
-업그레이드 호환성 도구는 잠재적인 업그레이드 문제에 대한 인스턴스를 분석하는 명령줄 툴입니다. 설치한 현재 버전과 업그레이드하려는 버전 간의 문제가 확인됩니다.
+다음 [!DNL Upgrade Compatibility Tool] 는 잠재적인 업그레이드 문제에 대한 인스턴스를 분석하는 명령줄 도구입니다. 설치한 현재 버전과 업그레이드하려는 버전 간의 문제가 확인됩니다.
 
 이 도구를 사용하면 업그레이드의 범위와 영향을 이해하는 데 필요한 작업이 줄어듭니다. 업그레이드할 때 일반적인 코드 문제를 방지하고 식별된 문제를 해결하는 방법에 대한 명확한 방향을 제공합니다. 또한 성공적인 업그레이드를 위해 필요한 가장 중요한 문제를 우선시하여 업그레이드 시 시간과 비용을 절감할 수 있습니다.
 
-업그레이드 호환성 도구를 시작하려면 다음 섹션을 참조하십시오. 업그레이드 호환성 도구 를 참조하십시오. [안내서](../upgrade-compatibility-tool/overview.md) 자세한 기술 세부 사항 및 고급 사용 사례에 대해 설명합니다.
+시작하려면 다음 섹션을 참조하십시오. [!DNL Upgrade Compatibility Tool]. 자세한 내용은 [!DNL Upgrade Compatibility Tool] [안내서](../upgrade-compatibility-tool/overview.md) 자세한 기술 세부 사항 및 고급 사용 사례에 대해 설명합니다.
 
 ### 도구 다운로드
 
@@ -78,7 +78,7 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 ### 출력 분석
 
-업그레이드 호환성 도구는 영향을 받는 코드 또는 모듈, 심각도 및 문제가 발생하는 모든 문제에 대한 설명을 식별하는 JSON 파일을 내보냅니다. 또한 복잡성 점수가 있는 요약 보고서를 출력하여 팀이 최신 버전으로 업그레이드하는 데 필요한 사항을 대략적으로 이해할 수 있습니다. 복잡성 점수가 낮을수록 업그레이드를 더 쉽게 수행할 수 있습니다.
+다음 [!DNL Upgrade Compatibility Tool] 영향을 받는 코드 또는 모듈, 심각도 및 문제가 발생하는 모든 문제에 대한 설명을 식별하는 JSON 파일을 내보냅니다. 또한 복잡성 점수가 있는 요약 보고서를 출력하여 팀이 최신 버전으로 업그레이드하는 데 필요한 사항을 대략적으로 이해할 수 있습니다. 복잡성 점수가 낮을수록 업그레이드를 더 쉽게 수행할 수 있습니다.
 
 다음 출력은 예제 요약 보고서를 보여 줍니다.
 
@@ -111,4 +111,4 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 또한 업그레이드를 작업하는 동안 도구를 정기적으로 실행하여 진행 상황을 확인할 것을 권장합니다. 문제를 수정하면 문제 수가 줄어듭니다. 또한 팀이 작업을 배포하기 위한 최상의 방법을 결정하는 데 도움이 됩니다.
 
-이 툴의 향후 릴리스는 PHP 8.1 호환성 테스트와 자동 수정을 통합하여 문제를 가능한 한 빨리 해결할 수 있도록 합니다.
+다음 [!DNL Upgrade Compatibility Tool] 는 계속 개선되며 향후 릴리스에는 문제를 가능한 한 빨리 해결하는 데 도움이 되는 자동 수정 사항과 같은 기능이 포함됩니다. 2022년 1월에 발표된 최신 개선 사항에는 PHP 8.1 호환성 테스트 및 HTML 시각화 기능이 포함되어 있어 업그레이드 시 더 많은 노력이 필요한 영역을 빠르게 식별할 수 있습니다.

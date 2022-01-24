@@ -1,36 +1,36 @@
 ---
-title: Overview of the Upgrade Compatibility Tool
-description: Learn about the Upgrade Compatibility Tool and how it can help you with your Adobe Commerce project.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: 개요 [!DNL Upgrade Compatibility Tool]
+description: 에 대해 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에 어떻게 도움을 줄 수 있습니까?
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Overview of the Upgrade Compatibility Tool
+# 개요 [!DNL Upgrade Compatibility Tool]
 
 >[!NOTE]
 >
->업그레이드 호환성 도구는 Adobe Commerce 인스턴스에만 사용할 수 있습니다.
+>다음 [!DNL Upgrade Compatibility Tool] Adobe Commerce 인스턴스에만 사용할 수 있습니다.
 
-The Upgrade Compatibility Tool is a command-line tool that checks an Adobe Commerce customized instance against a specific version by analyzing all modules and core code installed in it. It returns a list of critical issues, errors, and warnings that must be addressed before upgrading to the latest version of Adobe Commerce. It also identifies potential problems that must be fixed in your code before attempting to upgrade to a newer version of Adobe Commerce.
+다음 [!DNL Upgrade Compatibility Tool] 은 Adobe Commerce 사용자 지정된 인스턴스에 설치된 모든 모듈 및 핵심 코드를 분석하여 특정 버전과 비교하여 확인하는 명령줄 도구입니다. 최신 버전의 Adobe Commerce으로 업그레이드하기 전에 해결해야 하는 중요한 문제, 오류 및 경고 목록을 반환합니다. 또한 최신 버전의 Adobe Commerce으로 업그레이드하기 전에 코드에서 해결해야 하는 잠재적인 문제를 식별합니다.
 
-The Upgrade Compatibility Tool allows you to identify when core code changes have been made to customized features. 자세한 내용은 [도구 실행](../upgrade-compatibility-tool/run.md) 주제 를 참조하십시오.
+다음 [!DNL Upgrade Compatibility Tool] 사용자 지정된 기능에 대한 핵심 코드 변경 사항을 적용한 시기를 식별할 수 있습니다. 자세한 내용은 [도구 실행](../upgrade-compatibility-tool/run.md) 주제 를 참조하십시오.
 
-It is distributed as a Composer package with every release of an Adobe Commerce version. See the [Developer](../upgrade-compatibility-tool/developer.md) topic for more information.
+Adobe Commerce 버전을 릴리스할 때마다 작성기 패키지로 배포됩니다. 자세한 내용은 [개발자](../upgrade-compatibility-tool/developer.md) 주제 를 참조하십시오.
 
-Refer to the [Install](../upgrade-compatibility-tool/install.md) for the first steps with the Upgrade Compatibility Tool.
+자세한 내용은 [설치](../upgrade-compatibility-tool/install.md) 을 사용하여 첫 번째 단계에 대해 [!DNL Upgrade Compatibility Tool].
 
-## 업그레이드 호환성 도구 개선 도움말
+## 개선 사항 [!DNL Upgrade Compatibility Tool]
 
-To connect with the Upgrade Compatibility Tool team, contact us on the Engineering Slack channel [Upgrade Compatibility Tool](https://magentocommeng.slack.com/archives/C019Y143U9F).
+에 연결하려면 [!DNL Upgrade Compatibility Tool] 팀, 엔지니어링 Slack 채널에서 문의하십시오. [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
 
 >[!NOTE]
 >
 >도구를 개선하는 데 도움이 되는 피드백, 문제 및 제안 사항을 알고 싶습니다.
 
-Do you have an idea how to improve our compatibility analysis? 을(를) 확인합니다. [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) 페이지를 참조하십시오.
+호환성 분석을 향상시키는 방법을 알고 계십니까? 을(를) 확인합니다. [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) 페이지를 참조하십시오.
 
 자세한 내용은 [리소스](https://devdocs.magento.com/community/resources/resources.html) 페이지를 참조하십시오.

@@ -1,9 +1,9 @@
 ---
 title: 우수 사례
 description: Adobe Commerce 및 Magento Open Source 프로젝트에 대한 업그레이드 프로세스를 관리하려면 Adobe 권장 우수 사례를 사용하십시오.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Adobe Commerce의 기능을 지속적으로 확장함에 따라 최신 사용 �
 
 - 를 검토합니다. [릴리스 노트](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) 새 버전의 범위와 영향을 이해합니다.
 
-- 를 사용하십시오 [업그레이드 호환성 도구](../upgrade-compatibility-tool/overview.md) 최신 버전으로 업그레이드하기 전에 사용자 지정 코드에서 해결해야 하는 잠재적 문제를 식별하려면 다음을 수행하십시오.
+- 를 사용하십시오 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) 최신 버전으로 업그레이드하기 전에 사용자 지정 코드에서 해결해야 하는 잠재적 문제를 식별하려면 다음을 수행하십시오.
 
 - 타사 확장을 사용하는 경우 업그레이드하려는 대상 버전과의 호환성을 확인합니다.
 

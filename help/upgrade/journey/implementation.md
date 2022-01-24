@@ -1,10 +1,10 @@
 ---
 title: 업그레이드 구현
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 위한 업그레이드 구현 단계의 다양한 방법에 대해 알아봅니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 - **대상 릴리스 범위**—에 대한 설명서 [상거래 개발 문서](https://devdocs.magento.com) 및 partner release 웨비나에 대한 정보는 target 업그레이드에 대해 알고 있어야 하는 모든 세부 사항을 제공합니다.
 
-- **업그레이드 호환성 도구 결과**—이 도구를 사용하면 현재 코드를 대상 버전의 코드와 비교하고 해결해야 하는 모든 문제에 대한 보고서를 작성함으로써 더 빠르고 쉽게 업그레이드할 수 있습니다. 자세한 내용은 [업그레이드 호환성 도구](../upgrade-compatibility-tool/overview.md). 보고서의 주요 세부 사항은 다음과 같습니다.
+- **[!DNL Upgrade Compatibility Tool]결과**—이 도구를 사용하면 현재 코드를 대상 버전의 코드와 비교하고 해결해야 하는 모든 문제에 대한 보고서를 작성함으로써 더 빠르고 쉽게 업그레이드할 수 있습니다. 자세한 내용은 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). 보고서의 주요 세부 사항은 다음과 같습니다.
 
    - 현재 설치된 버전
    - Target 버전 업그레이드
