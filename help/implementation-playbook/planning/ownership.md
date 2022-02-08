@@ -1,13 +1,13 @@
 ---
 title: 책임 및 소유권
-description: 성공적인 Adobe 상거래 구현을 위해 프로젝트 역할 및 책임을 정의합니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: 성공적인 Adobe Commerce 구현을 위해 프로젝트 역할 및 책임을 정의합니다.
+exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # 책임 및 소유권
 
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 ## 공동 작업 방법
 
-[프로젝트 범위 지정](../project-scope/deliverables.md) 섹션에서 언급했듯이 책임감, 책임감, 상담 및 정보(RACI) 매트릭스는 프로젝트의 각 단계에서 소유권 및 책임을 정의하고 문서화하는 유용한 도구입니다. 매트릭스 내에서 프로젝트의 모든 작업, 이정표 및 결정은 특정 역할이나 개인에게 매핑됩니다. 프로젝트 관리를 통해 각 팀 구성원 및 이해 관계자가 특정 역할을 이해하도록 함으로써 프로세스를 간소화할 수 있습니다. 이는 프로젝트의 계획 단계에서 정의되어야 하며 각 이해 관계자가 수락합니다.
+RACI(Responsible, Responsibility, Consulting 및 Information) 매트릭스(Dell에서 언급한 바와 같이 [프로젝트 범위 지정](../project-scope/deliverables.md) 섹션 - 프로젝트의 각 단계에서 소유권 및 책임을 정의하고 문서화하는 유용한 도구입니다. 매트릭스 내에서 프로젝트의 모든 작업, 이정표 및 결정은 특정 역할이나 개인에게 매핑됩니다. 프로젝트 관리를 통해 각 팀 구성원 및 이해 관계자가 특정 역할을 이해하도록 함으로써 프로세스를 간소화할 수 있습니다. 이는 프로젝트의 계획 단계에서 정의되어야 하며 각 이해 관계자가 수락합니다.
 
 ![RACI 프레임워크를 설명하는 표](../../assets/playbooks/raci.svg)

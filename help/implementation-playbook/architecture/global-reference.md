@@ -1,17 +1,17 @@
 ---
-title: Adobe 커머스 글로벌 참조 아키텍처
-description: 글로벌 참조 아키텍처를 활용하여 Adobe 상거래 구현을 최대한 활용하십시오.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Adobe Commerce 글로벌 참조 아키텍처
+description: 글로벌 참조 아키텍처를 활용하여 Adobe Commerce 구현을 최대한 활용할 수 있습니다.
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-
 # GRA(글로벌 참조 아키텍처)
 
-여러 현지 시장(현지화된 통화, 언어, 미디어, 공유 카탈로그 및 고유한 장바구니를 사용하는 여러 브랜드를 위한 사이트를 운영하고 있으며 동일한 기능 및 통합을 구현하는 데 필요한 불필요한 비용을 방지하려는 비즈니스를 수행하는 경우, GRA(Global Reference Architecture)는 항상 좋은 옵션입니다.
+여러 현지 시장(현지화된 통화, 언어, 미디어, 공유 카탈로그 및 고유한 카트가 있는 경우)에서 여러 브랜드에 대한 사이트가 여러 개인 기업을 운영하고 있고 동일한 기능 및 통합을 구현하는 데 필요한 불필요한 비용을 방지하려는 경우(GRA) 글로벌 참조 아키텍처(GRA)는 항상 좋은 옵션입니다.
 
 ![아키텍처의 차이 비용을 설명하는 표](../../assets/playbooks/divergent-architecture.svg)
 
@@ -46,4 +46,3 @@ GRA가 미치는 영향:
 - 새로운 시장 활성화 방법
 
    - 많은 시간과 비용이 소요되는 여러 채널과 시장을 간편하게 출시할 수 있습니다.
-
