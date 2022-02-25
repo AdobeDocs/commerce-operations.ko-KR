@@ -1,9 +1,9 @@
 ---
 title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source의 다양한 패치 유형과 패치 작동 방식에 대해 알아봅니다.
-source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
+source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -91,8 +91,8 @@ index c8a6fef58d31..7d01c195791e 100644
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
 - [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html)
-- [명령줄](../patches/apply.md#command-line)
-- [작성기](../patches/apply.md#composer)
+- [명령줄](/help/upgrade/patches/apply.md#command-line)
+- [작성기](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
