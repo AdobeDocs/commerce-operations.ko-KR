@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 전제 조건"'
 description: '시스템이 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에 사용할 수 있습니다. '
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 2e2f55ff659c36ffce7cf26224d5ceb61e53c42d
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] 전제 조건
+
+{{commerce-only}}
 
 실행 [!DNL Upgrade Compatibility Tool] 는 수행해야 하는 작업을 식별하는 데 도움이 됩니다 **이전** Adobe Commerce 버전 업그레이드
 
@@ -22,7 +24,7 @@ ht-degree: 0%
 | Node.js | [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`, 또는 `>=16.0.0`) |
 | 메모리 제한 | 최소 2GB RAM |
 | Adobe Commerce 액세스 키 | 없음 |
-| Adobe Commerce(오픈 소스 또는 엔터프라이즈) | 없음 |
+| Adobe Commerce | 없음 |
 
 를 실행할 수 있습니다 [!DNL Upgrade Compatibility Tool] 모든 운영 체제에서 사용할 수 있습니다. 를 실행할 필요가 없습니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 인스턴스가 있는 위치.
 

@@ -1,9 +1,9 @@
 ---
 title: 모듈 및 확장 관리
 description: 명령줄 인터페이스 및 작성기 패키지 관리자를 사용하여 Adobe Commerce 및 Magento Open Source 모듈 및 확장을 관리합니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,7 @@ ht-degree: 0%
 
 을(를) 추가할 수 있습니다 `require` 섹션에 `composer.json` 파일 또는 `composer require` 다음과 같이 명령을 수행합니다.
 
-1. 서버에 로그인합니다.
-1. 로 전환 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. 응용 프로그램을 복제한 디렉토리로 변경합니다. 예,
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 다음 옵션이 있습니다.
 

@@ -1,7 +1,7 @@
 ---
 title: 설치 [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 설치합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에 사용할 수 있습니다.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -10,6 +10,8 @@ ht-degree: 0%
 
 
 # 설치 [!DNL Upgrade Compatibility Tool]
+
+{{commerce-only}}
 
 다음 [!DNL Upgrade Compatibility Tool] 은 Adobe Commerce 사용자 지정된 인스턴스에 설치된 모든 모듈을 분석하여 특정 버전과 비교하여 확인하는 명령줄 도구입니다. 최신 버전의 Adobe Commerce으로 업그레이드하기 전에 해결해야 하는 오류 및 경고 목록을 반환합니다.
 

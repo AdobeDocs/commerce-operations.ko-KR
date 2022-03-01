@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 개발자 정보"'
 description: 사용자 지정 [!DNL Upgrade Compatibility Tool] api 색인 통합을 사용합니다.
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] 개발자 정보
+
+{{commerce-only}}
 
 이 주제에서는 Adobe Commerce 코드와 함께 긴밀하게 작업하고 다음에 대한 자세한 정보를 알고 싶은 개발자를 위한 정보를 제공합니다 [!DNL Upgrade Compatibility Tool]. 이 지식을 사용하여 도구의 구성 요소를 사용자 지정할 수 있습니다.
 
