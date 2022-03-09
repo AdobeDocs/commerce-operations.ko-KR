@@ -1,7 +1,7 @@
 ---
 title: 를 실행합니다. [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
+source-git-commit: 02c42b2b1853da9f73e75a069adcb1ab815e6134
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -73,7 +73,7 @@ bin/uct upgrade:check --help
 
 - `-m, --module-path[=MODULE-PATH]`: 분석할 모듈의 경로입니다
 - `-a, --current-version[=CURRENT-VERSION]`: 현재 Adobe Commerce 버전인 경우 Adobe Commerce 설치 버전이 사용됩니다.
-- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce 버전. 생략하면 Adobe Commerce 설치 버전이 사용됩니다.
+- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce 버전인 경우 최신 릴리스된 Adobe Commerce 버전이 사용됩니다.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: 출력을 json 형식으로 내보낼 파일의 경로입니다.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: 출력을 HTML 형식으로 내보낼 파일의 경로입니다.
 - `--min-issue-level`: 보고서에 표시할 최소 문제 수준. 기본값은 입니다. [경고].
