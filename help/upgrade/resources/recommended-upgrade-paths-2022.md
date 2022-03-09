@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce 2.4.4+로 플랫폼 현대화
 description: 2022년 Adobe Commerce 또는 Magento Open Source 업그레이드 계획에 대한 권장 사항을 검토합니다.
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: ddad036c0f2ed5f790136c5c4d6faec38069dbda
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,17 @@ Adobe는 2.4.4 이상으로 업그레이드를 계획할 때 판매자에게 더
 
 ## 버전 2.3.6 이하에서 업그레이드
 
-![](../../assets/upgrade-guide/2.3.6.jpg)
+![](../../assets/upgrade-guide/2.3.6.png)
 
 ## 2.3.7에서 업그레이드
 
-![](../../assets/upgrade-guide/2.3.7.jpg)
+![](../../assets/upgrade-guide/2.3.7.png)
 
 ## 2.4.0-2.4.3에서 업그레이드
 
-![](../../assets/upgrade-guide/2.4.0-2.4.3.jpg)
+![](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## 2.4.3에서 업그레이드(또는 새로 업그레이드됨)
 
-![](../../assets/upgrade-guide/2.4.3.jpg)
+![](../../assets/upgrade-guide/2.4.3.png)
 
