@@ -1,9 +1,9 @@
 ---
 title: 를 실행합니다. [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
+source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -279,6 +279,20 @@ bin/uct upgrade:check <dir> -c 2.4.3
 - 따옴표가 없는 태그 버전(단일 또는 이중 아님)을 입력합니다. ~~&#39;2.4.1-develop&#39;~~.
 - 현재 설치된 버전보다 이전 버전을 제공하거나 현재 지원되는 가장 오래된 버전인 2.3 이전 버전을 제공해서는 안 됩니다.
 
+### 를 사용하십시오 `refactor` 명령
+
+다음 [!DNL Upgrade Compatibility Tool] 에서는 축소된 문제 세트를 자동으로 수정할 수 있습니다.
+
+- 인수를 전달하지 않고 사용할 수 있도록 허용되었지만 이제 이러한 사용이 더 이상 사용되지 않습니다.
+- 사용 `$this` Magento 템플릿
+- PHP 키워드 사용 `final` 를 반환합니다.
+
+실행:
+
+```bash
+bin/uct refactor <dir>
+```
+
 ## GraphQL 스키마 호환성 확인
 
 다음 [!DNL Upgrade Compatibility Tool] 또한 두 GraphQL 종단점을 검토하고 두 종단점 간의 끊김 및 위험한 변경을 찾는 스키마를 비교할 수 있는 옵션을 제공합니다.
@@ -316,7 +330,46 @@ bin/uct graphql:compare <schema1> <schema2>
 
 를 실행할 수 있습니다 [!DNL Upgrade Compatibility Tool] PhpStorm 플러그인을 통해 실행 구성을 사용할 수 있습니다. 자세한 내용은 [[!DNL Upgrade Compatibility Tool] 구성 실행](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) 주제 를 참조하십시오.
 
+## 권장 작업
+
+### 결과 최적화
+
+다음 [!DNL Upgrade Compatibility Tool] 기본적으로 프로젝트에서 식별된 모든 문제와 함께 결과가 포함된 보고서를 제공합니다. 업그레이드를 완료하기 위해 해결해야 하는 문제에 집중할 수 있도록 결과를 최적화할 수 있습니다.
+
+- 옵션을 사용합니다 `--ignore-current-version-compatibility-issues`: 현재 Adobe Commerce 버전에 대해 알려진 모든 중요한 문제, 오류 및 경고를 표시하지 않습니다. 업그레이드하려는 버전에 대한 오류만 제공됩니다.
+- 추가 `--min-issue-level` 옵션을 선택하면 이 설정을 통해 최소 문제 수준을 설정하여 업그레이드에 가장 중요한 문제만 우선 순위를 지정할 수 있습니다. 특정 공급업체, 모듈 또는 심지어 디렉토리만 분석하려는 경우 경로를 옵션으로 지정할 수도 있습니다.
+- 를 실행합니다. `bin` 옵션이 추가된 명령 `-m`. 이를 통해 [!DNL Upgrade Compatibility Tool] 특정 모듈을 독립적으로 분석하고, [!DNL Upgrade Compatibility Tool].
+
+### Adobe Commerce 우수 사례 따라하기
+
+- 동일한 이름의 모듈이 두 개 있지 않도록 합니다.
+- Adobe Commerce 팔로우 [코딩 표준](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+
 ## 문제 해결
+
+### 세그먼테이션 오류
+
+두 모듈의 이름이 같은 경우 [!DNL Upgrade Compatibility Tool] 세그먼테이션 오류 오류를 표시합니다.
+
+이 오류를 방지하려면 `bin` 옵션이 추가된 명령 `-m`:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/<module-name>
+```
+
+>[!NOTE]
+>
+>다음 `<dir>` 값은 Adobe Commerce 인스턴스가 있는 디렉토리입니다.
+
+다음 `-m` 옵션을 사용하면 [!DNL Upgrade Compatibility Tool] Adobe Commerce 인스턴스에서 동일한 이름의 두 모듈이 발생하지 않도록 각 특정 모듈을 독립적으로 분석합니다.
+
+이 명령 옵션을 사용하면 [!DNL Upgrade Compatibility Tool] 여러 모듈이 포함된 폴더를 분석하려면 다음을 수행하십시오.
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
+```
+
+또한 이 권장 사항은 [!DNL Upgrade Compatibility Tool].
 
 ### 빈 출력
 
