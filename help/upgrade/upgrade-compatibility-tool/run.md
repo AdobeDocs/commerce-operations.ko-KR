@@ -1,7 +1,7 @@
 ---
 title: 를 실행합니다. [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: 02c42b2b1853da9f73e75a069adcb1ab815e6134
+source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -77,7 +77,7 @@ bin/uct upgrade:check --help
 - `--json-output-path[=JSON-OUTPUT-PATH]`: 출력을 json 형식으로 내보낼 파일의 경로입니다.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: 출력을 HTML 형식으로 내보낼 파일의 경로입니다.
 - `--min-issue-level`: 보고서에 표시할 최소 문제 수준. 기본값은 입니다. [경고].
-- `--ignore-current-version-compatibility-issues`: 알려진 중요한 문제, 오류 및 경고를 사용자 [!DNL Upgrade Compatibility Tool] 보고서 세트에 대해 설명합니다.
+- `-i, --ignore-current-version-compatibility-issues`: 알려진 중요한 문제, 오류 및 경고를 사용자 [!DNL Upgrade Compatibility Tool] 보고서 세트에 대해 설명합니다.
 - `--context=CONTEXT`: 실행 컨텍스트. 이 옵션은 통합 목적이며 실행 결과에 영향을 주지 않습니다.
 - `-h, --help`: 해당 특정 명령에 대한 도움말을 표시합니다. 명령을 제공하지 않으면 `list` 명령은 기본 결과입니다.
 - `-q, --quiet`: 명령을 실행하는 동안 메시지를 출력하지 마십시오.
