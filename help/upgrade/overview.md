@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 프로세스 개요
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 업그레이드하여 저장소를 안전하게 유지하고 효율적으로 운영하는 방법을 알아봅니다.
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ _따라서... 업그레이드 이유는 무엇입니까?_
 
 Adobe은 [릴리스 일정](https://devdocs.magento.com/release/) 상인의 계획 프로세스를 용이하게 하고 각 패치 릴리스 주기를 업그레이드할 것을 권장합니다. PCI 규정을 준수하려면 가맹점은 최신 패치 또는 보안 패치를 사용해야 합니다. 다음 타임라인은 2022년의 주요 릴리스 및 EOL 이벤트를 보여줍니다.
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
 
 주목할 중요한 이벤트는 다음과 같습니다.
 
