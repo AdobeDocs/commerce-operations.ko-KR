@@ -2,7 +2,7 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce 운영 가이드
 
-이 페이지에서는 Adobe Commerce 및 Magento Open Source을 위한 모든 작업 안내서에 대한 링크를 제공합니다.
-
-## 새로운 기능
-
-다음 표에는 새로운 주제 및 기존 주제에 대한 중요한 업데이트와 같이, 사용자가 알고 싶은 최근 변경 사항이 포함되어 있습니다.
-
-| 설명 | 유형 |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 추가됨 [정보](../upgrade/upgrade-compatibility-tool/overview.md) 업그레이드 호환성 도구에 대해 규칙이 정의되는 방식에 대해 설명합니다. | 주요 업데이트 |
-| 이전 업그레이드 호환성 도구가 제거됨 [오류 코드](../upgrade/upgrade-compatibility-tool/error-messages.md). | 기술 |
-
-## 안내서
+Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로젝트를 개발, 배포 및 유지 관리하기 위한 개념, 프로세스, 도구 및 모범 사례에 대한 실용적인 정보를 얻습니다.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ ht-degree: 0%
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="업그레이드" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="업그레이드" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>업그레이드</strong></a>
@@ -129,3 +118,12 @@ ht-degree: 0%
   </td>
 </tr>
 </table>
+
+## 새로운 기능
+
+새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
+
+| 변경 | 유형 |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 추가됨 [정보](../upgrade/upgrade-compatibility-tool/overview.md) 업그레이드 호환성 도구에 대해 규칙이 정의되는 방식에 대해 설명합니다. | 주요 업데이트 |
+| 이전 업그레이드 호환성 도구가 제거됨 [오류 코드](../upgrade/upgrade-compatibility-tool/error-messages.md). | 기술 |
