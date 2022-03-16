@@ -1,15 +1,15 @@
 ---
-title: Adobe Commerce 정보
+title: Adobe Commerce
 description: Adobe Commerce 설명
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce
+# Adobe Commerce 정보
 
 Adobe Commerce은 개방형 상거래 혁신을 위한 선도적인 플랫폼입니다. 매년, Adobe Commerce은 총 상품 거래량으로 1,000억 달러 이상을 취급한다. Adobe Commerce은 고객에게 독특하고 매력적인 쇼핑 경험, 기본 제공 기능, 사용자 지정할 수 있는 무제한 기능, 유연한 헤드리스 아키텍처 및 원활한 타사 통합을 제공하는 기능을 제공합니다.
 
