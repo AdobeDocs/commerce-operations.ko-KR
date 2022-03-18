@@ -1,13 +1,13 @@
 ---
 mini-toc-levels: 2
-git-repo: https://git.corp.adobe.com/AdobeDocs/commerce-operations.ko-KR
+git-repo: https://github.com/AdobeDocs/commerce-operations.ko-KR
 index: true
-solution: Adobe Commerce
+solution: Commerce,Adobe Commerce
 product: magento
 type: Documentation
-source-git-commit: 78ae8bb7dfa35fd268e226c4c3181ed5fb781138
+source-git-commit: 4130362ef8fa34b5f7de98fb7823ee533a8f925a
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 내부용 메타데이터
 
-`metadata.md` 파일에는 리포지토리의 사용자 안내서 `TOC.md` 파일에 전달되는 리포지토리 수준 메타데이터가 포함되어 있습니다. 사용 안내서의 metadata.md 콘텐츠를 변경하려면 `TOC.md` 파일에서 변경합니다.
+다음 `metadata.md` 파일에는 사용 안내서에 전달되는 리포지토리 수준 메타데이터가 포함되어 있습니다 `TOC.md` 보고서에 있는 파일입니다. 사용 안내서의 metadata.md 콘텐츠를 변경하려면 원하는 대로 수행합니다 `TOC.md` 파일.
 
 | 메타데이터 | 기능 |
 |--- |--- |
