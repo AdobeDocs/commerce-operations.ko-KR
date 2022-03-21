@@ -1,7 +1,7 @@
 ---
 title: 업그레이드 프로세스 개요
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 업그레이드하여 저장소를 안전하게 유지하고 효율적으로 운영하는 방법을 알아봅니다.
-source-git-commit: 517e38aa5b0f413503fdb7ba00be8c605cceb570
+source-git-commit: 5841f30f3b3539de425f0597ef05cab4e3316263
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -84,4 +84,3 @@ Adobe은 [릴리스 일정](https://devdocs.magento.com/release/) 상인의 계�
 - 2.4.0에서 2.4.3(PHP 7.4 기반)은 PHP 7.4가 EOL(End Of Life)에 도달하는 2022년 11월에 EOS에 도달합니다
 - 이 두 EOS 이벤트를 기반으로, **2022년 11월까지 버전 2.4.4 이상으로 업그레이드해야 합니다**
 - Adobe Commerce과 함께 [라이프사이클 정책](https://devdocs.magento.com/release/lifecycle-policy.html), 버전 2.4.4 및 2.4.5는 2024년 11월까지 품질 지원 및 보안 패치를 받게 됩니다
-
