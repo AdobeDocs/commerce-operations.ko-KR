@@ -1,13 +1,13 @@
 ---
 title: 상거래 작업
 description: 전자 상거래 비즈니스를 위한 성공적인 운영 전략을 달성하는 데 필요한 사항을 알아봅니다.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 21123987-0508-4d52-8af4-837b7a3ba1cb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
 
 ---
-
 
 # 상거래 작업
 

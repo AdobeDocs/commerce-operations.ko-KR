@@ -1,13 +1,13 @@
 ---
 title: 가격 책정
-description: 일반적으로 다양한 전자 결제 방법 및 온라인 결제의 이점에 대해 알아봅니다.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: 일반적으로 다양한 전자 결제 방법과 온라인 결제의 이점에 대해 알아봅니다.
+exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # 가격 책정
 

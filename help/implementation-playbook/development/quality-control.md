@@ -1,13 +1,13 @@
 ---
 title: 품질 관리
-description: 구현 프로젝트와 관련된 Adobe 상거래 품질 제어 프로세스에 대해 알아봅니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: 구현 프로젝트와 관련된 Adobe Commerce 품질 제어 프로세스에 대해 알아봅니다.
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # 품질 관리 프로세스 및 도구
 
@@ -142,12 +142,12 @@ ht-degree: 0%
 </tbody>
 </table>
 
-개발 프로세스에 대해 식별된 [tools](project-management-tools.md)과 유사한 방식으로 품질 관리 테스트에 자주 사용하는 몇 가지 선택 솔루션 및 플랫폼을 선택했습니다.
+와 비슷합니다 [도구](project-management-tools.md) 개발 프로세스를 위해 식별되었으며 품질 관리 테스트에 자주 사용하는 몇 가지 선택 솔루션과 플랫폼을 선택했습니다.
 
 | 목적 | 도구 |
 |---------------------------|---------------------------------------------------|
 | 웹 사이트 성능 인덱스 | Google PageSpeed, Webpagetest, JMeter |
-| 보안 | Adobe 상거래 보안 스캔 도구, SonarQube, ZAP |
+| 보안 | Adobe Commerce 보안 검사 도구, SonarQube, ZAP |
 | 문제 관리 시스템 | JIRA |
 | UI 테스트 | 완벽한 픽셀, 브라우저 스택 |
 | API 테스트 | Postman, SoapUI |
@@ -172,7 +172,7 @@ OWASPZAP(Zed Attack Proxy)는 응용 프로그램 보안뿐만 아니라 전문 
 
 ## UI 테스트
 
-퍼펙트 픽셀을 사용하면 개발자와 마크업 디자이너가 개발한 HTML의 맨 위에 반투명 이미지 오버레이를 놓고 픽셀 단위의 완벽한 비교를 수행할 수 있습니다.
+퍼펙트 픽셀을 사용하면 개발자와 마크업 디자이너가 개발한 HTML 위에 반투명 이미지 오버레이를 놓고 픽셀 단위의 완벽한 비교를 수행할 수 있습니다.
 
 BrowserStack은 개발자가 온디맨드 브라우저, 운영 체제 및 실제 모바일 장치에서 웹 사이트 및 모바일 애플리케이션을 테스트할 수 있도록 하는 클라우드 웹 및 모바일 테스트 플랫폼입니다.
 

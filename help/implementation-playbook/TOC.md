@@ -1,20 +1,20 @@
 ---
-user-guide-title: 구현 Playbook
-user-guide-description: 성공적인 Adobe 상거래 사이트를 계획 및 구현하는 전략에 대해 알아봅니다.
+user-guide-title: 구현 플레이북
+user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
 source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 
-# 구현 Playbook {#implementation-playbook}
+# 구현 플레이북 {#implementation-playbook}
 
 - [개요](overview.md)
 - 상거래 {#intro}
-   - [Adobe 상거래](intro/about-commerce.md)
+   - [Adobe Commerce 정보](intro/about-commerce.md)
    - [플랫폼 개발 원칙](intro/platform-development.md)
 - 프로젝트 범위 {#project-scope}
    - [지식은 힘이다](project-scope/knowledge.md)
@@ -26,7 +26,7 @@ ht-degree: 0%
    - [플랫폼 도구](development/platform-tools.md)
    - [프로젝트 관리 도구](development/project-management-tools.md)
    - [프로젝트 구현 방식](development/delivery.md)
-   - [Quality control](development/quality-control.md)
+   - [품질 관리](development/quality-control.md)
 - 계획 및 거버넌스 {#planning}
    - [전달 및 계획 방식](planning/delivery.md)
    - [책임 및 소유권](planning/ownership.md)
@@ -35,22 +35,22 @@ ht-degree: 0%
    - [기능](architecture/capabilities.md)
    - [통합 전략](architecture/integration-strategy.md)
    - [확장성 전략](architecture/extensibility-strategy.md)
-   - [Integration options](architecture/integration-options.md)
+   - [통합 옵션](architecture/integration-options.md)
    - [글로벌 참조 아키텍처](architecture/global-reference.md)
-   - 헤드리스 상거래 {#headless}
+   - 헤드리스 커머스 {#headless}
       - [이점](architecture/headless/benefits.md)
       - [헤드리스로 여정](architecture/headless/journey-to-headless.md)
       - [마이크로서비스](architecture/headless/microservices.md)
       - [헤드리스의 진화](architecture/headless/evolution.md)
-      - [Coupled storefront architecture](architecture/headless/legacy-storefront.md)
+      - [연결된 상점 전면 아키텍처](architecture/headless/legacy-storefront.md)
       - [헤드리스 아키텍처](architecture/headless/adobe-commerce.md)
 - 인프라 및 배포 {#infrastructure}
    - [개요](infrastructure/overview.md)
    - [온프레미스 인프라](infrastructure/on-premises.md)
-   - Cloud infrastructure {#cloud}
+   - 클라우드 인프라 {#cloud}
       - [개요](infrastructure/cloud/overview.md)
       - [지역](infrastructure/cloud/regions.md)
-      - [Technologies](infrastructure/cloud/technology.md)
+      - [기술](infrastructure/cloud/technology.md)
       - [환경](infrastructure/cloud/environments.md)
       - [관리 서비스](infrastructure/cloud/managed-services.md)
       - [보안 및 규정 준수](infrastructure/cloud/security.md)
@@ -66,6 +66,6 @@ ht-degree: 0%
 - 유지 관리 및 지원 {#maintenance}
    - [개요](maintenance/overview.md)
    - [모델](maintenance/models.md)
-   - [Service levels](maintenance/service-level-agreements.md)
+   - [서비스 수준](maintenance/service-level-agreements.md)
    - [지표](maintenance/metrics.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)

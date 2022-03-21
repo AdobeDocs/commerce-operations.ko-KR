@@ -1,13 +1,13 @@
 ---
 title: Launch 준비 개요
-description: Adobe 상거래 구현에 대한 Launch 준비의 의미에 대한 요약을 검토합니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Adobe Commerce 구현에 대한 Launch 준비의 의미에 대한 요약을 검토합니다.
+exl-id: 87cfcb48-3c0e-4c14-afb4-62bb9fe94c48
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
 
 ---
-
 
 # Launch 준비 개요
 

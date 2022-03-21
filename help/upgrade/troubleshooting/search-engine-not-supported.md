@@ -1,6 +1,6 @@
 ---
-title: Current Search Engine Not Supported
-description: Troubleshoot your Adobe Commerce or Magento Open Source upgrade after encountering an error about an unsupported search engine.
+title: 현재 검색 엔진이 지원되지 않음
+description: 지원되지 않는 검색 엔진에 대한 오류가 발생한 후 Adobe Commerce 또는 Magento Open Source 업그레이드 문제를 해결합니다.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '459'
@@ -9,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Current search engine not supported
+# 현재 검색 엔진이 지원되지 않음
 
 다음 오류 메시지는 업그레이드할 Magento 버전이 업그레이드 중인 Magento 버전에서 지원되지 않는 카탈로그 검색 엔진을 사용하도록 구성되어 있음을 나타냅니다.
 
@@ -17,22 +17,22 @@ ht-degree: 0%
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-This error means one of the following conditions is true on the down-level version of Adobe Commerce or Magento Open Source:
+이 오류는 Adobe Commerce 또는 Magento Open Source의 하위 수준에서 다음 조건 중 하나가 참임을 의미합니다.
 
-- The search engine is set to MySQL.
-- The search engine is set to a version of Elasticsearch that is no longer supported.
+- 검색 엔진이 MySQL로 설정되어 있습니다.
+- 검색 엔진이 더 이상 지원되지 않는 Elasticsearch 버전으로 설정되어 있습니다.
 
-Use the following command to check the current search engine:
+다음 명령을 사용하여 현재 검색 엔진을 확인합니다.
 
 ```bash
 bin/magento config:show catalog/search/engine
 ```
 
-The error occurs if the returned value is `mysql` or `elasticsearch`.
+반환된 값이 `mysql` 또는 `elasticsearch`.
 
 >[!WARNING]
 >
->If you have received this error, Magento is in an inconsistent state, and you cannot access the Admin. 이 오류를 해결하는 동안 이전 버전으로 되돌리는 것이 좋습니다. To do this, run one of the following commands:
+>이 오류가 발생하면 Magento이 일관성이 없는 상태이며 관리자에 액세스할 수 없습니다. 이 오류를 해결하는 동안 이전 버전으로 되돌리는 것이 좋습니다. 이렇게 하려면 다음 명령 중 하나를 실행합니다.
 >
 >
 ```bash
@@ -44,20 +44,20 @@ The error occurs if the returned value is `mysql` or `elasticsearch`.
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->위치 `<version>` 실행 중인 Magento 버전입니다. **이전** 업그레이드. 예, `2.3.5`.
+>위치 `<version>` 실행 중인 Magento 버전입니다. **이전** 업그레이드. For example, `2.3.5`.
 
-Follow the guidelines described in the following sections to recover from an inconsistent state.
+불일치 상태에서 복구하려면 다음 섹션에 설명된 지침을 따르십시오.
 
-## If your search engine is `mysql`
+## 검색 엔진이 `mysql`
 
-Before 2.4, MySQL was the default catalog search engine, but MySQL is no longer supported in this capacity. 이제 2.4로 업그레이드하기 전에 Elasticsearch을 검색 엔진으로 설치 및 구성해야 합니다.
+2.4 이전에는 MySQL이 기본 카탈로그 검색 엔진이지만 이 용수에서 더 이상 MySQL이 지원되지 않습니다. 이제 2.4로 업그레이드하기 전에 Elasticsearch을 검색 엔진으로 설치 및 구성해야 합니다.
 
-Use the following resources to help guide you through this process:
+다음 리소스를 사용하여 이 프로세스를 안내하십시오.
 
 - [Elasticsearch 설치 및 구성](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html)
-- [Installing Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configure Elasticsearch to work with [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) or [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
-- [Configure Magento to use Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
+- [Elasticsearch 설치](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+- 사용할 Elasticsearch 구성 [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) 또는 [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
+- [Elasticsearch을 사용하도록 Magento 구성](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
 
 Elasticsearch 및 재색인을 구성한 후 2.4로 업그레이드할 수 있습니다.
 
@@ -65,9 +65,9 @@ Elasticsearch 및 재색인을 구성한 후 2.4로 업그레이드할 수 있�
 
 값 `elasticsearch` Adobe Commerce 또는 Magento Open Source의 다운 수준 버전이 Elasticsearch 2.x를 사용하도록 구성되어 있음을 나타냅니다. 이 버전의 Elasticsearch은 더 이상 지원되지 않습니다.
 
-You must perform the following tasks before upgrading to 2.4:
+2.4로 업그레이드하기 전에 다음 작업을 수행해야 합니다.
 
-1. Elasticsearch 업데이트. We recommend updating to Elasticsearch 7.x. Refer to [Upgrading Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) for full instructions on backing up your data, detecting potential migration issues, and testing upgrades before deploying to production. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작할 필요가 있거나 필요하지 않을 수 있습니다.
+1. Elasticsearch 업데이트. Elasticsearch 7.x로 업데이트하는 것이 좋습니다. 을(를) 참조하십시오. [업그레이드 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 프로덕션에 배포하기 전에 데이터 백업, 잠재적 마이그레이션 문제 감지, 업그레이드 테스트 등에 대한 전체 지침을 살펴보십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작할 필요가 있거나 필요하지 않을 수 있습니다.
 
    >[!NOTE]
    >

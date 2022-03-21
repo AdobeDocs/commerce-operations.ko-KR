@@ -1,13 +1,13 @@
 ---
 title: 테스트
 description: AB 테스트 및 배포 테스트는 전자 상거래 프로젝트에 일반적으로 사용되며 고품질 웹 사이트를 보장합니다.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 59675287-c390-4b41-be75-55c90d7e93c8
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
 
 ---
-
 
 # 테스트
 

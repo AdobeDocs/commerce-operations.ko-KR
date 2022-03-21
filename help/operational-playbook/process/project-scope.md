@@ -1,13 +1,13 @@
 ---
 title: 프로젝트 범위
 description: 프로젝트 요구 사항을 지정하고 프로젝트 계획에서 역할과 책임을 정의합니다.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 57a68f7b-adef-4b87-b9f3-3e184d8accf4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
-
 
 # 프로젝트 범위
 

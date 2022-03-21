@@ -3,7 +3,7 @@ title: 우수 사례
 description: Adobe Commerce 및 Magento Open Source 프로젝트에 대한 업그레이드 프로세스를 관리하려면 Adobe 권장 우수 사례를 사용하십시오.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---

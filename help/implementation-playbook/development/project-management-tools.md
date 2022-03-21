@@ -1,17 +1,17 @@
 ---
-title: Project Management Tools
-description: Adobe 상거래 구현을 위해 권장되는 프로젝트 관리 도구를 선택합니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: 프로젝트 관리 도구
+description: Adobe Commerce 구현을 위해 권장되는 프로젝트 관리 도구를 선택합니다.
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # 프로젝트 관리 도구
 
-실제 Adobe 상거래 환경에서 전환하는 것 역시 마찬가지로 중요한 것은 협업을 수행하는 도구와 솔루션이며 전체 개발 프로세스를 가능한 한 매끄럽게 만드는 것입니다.
+실제 Adobe Commerce 환경에서 전환하는 것 역시 마찬가지로 중요한 것은 공동 작업을 수행하고 전체 개발 프로세스를 가능한 한 매끄럽게 만드는 도구와 솔루션입니다.
 
 다음 표에는 권장되는 프로젝트 관리 도구가 포함되어 있습니다.
 
@@ -21,36 +21,36 @@ ht-degree: 0%
 | SLA 관리 | Atlassian JIRA 서비스 관리 |
 | 문서 관리 | 아틀라시아 합류 |
 | 소스 코드 관리 | Atlassian Bitbucket, GitHub |
-| Continuous Integration (CI)/Continuous Delivery (CD) | 젠킨스 |
-| Communication | Email, Microsoft Teams, Phone, Slack |
+| CI(Continuous Integration)/Continuous Delivery(CD) | 젠킨스 |
+| 통신 | 이메일, Microsoft Teams, 전화, Slack |
 | 모임 | 확대/축소, Microsoft Teams |
 
-## SLA management
+## SLA 관리
 
-Jira Service Management empowers development and operations teams to collaborate at a high velocity so that they can respond to business changes and deliver great customer and employee service experiences fast.
+Jira Service Management는 개발 및 운영 팀이 고속으로 협업하여 비즈니스 변화에 대응하여 탁월한 고객 및 직원 서비스 경험을 신속하게 제공할 수 있도록 합니다.
 
 ## 문서 관리
 
-Confluence is great tool to build, organize, and collaborate on work in one place from virtually anywhere. 충돌에 모범 사례 템플릿이 포함되어 있으므로 새로운 구조를 만들 필요가 없습니다. 손쉽게 시작하고 팀 및 프로젝트 전반에서 일관성을 유지할 수 있습니다.
+합치는 언제 어디서나 한 곳에서 작업을 구축, 구성 및 공동으로 작업할 수 있는 탁월한 툴입니다. 충돌에 모범 사례 템플릿이 포함되어 있으므로 새로운 구조를 만들 필요가 없습니다. 손쉽게 시작하고 팀 및 프로젝트 전반에서 일관성을 유지할 수 있습니다.
 
 ## 티켓 관리
 
-Jira is a ticket tracking and management system (including version and release management) with powerful features, such as:
+Jira는 다음과 같은 강력한 기능을 갖춘 티켓 추적 및 관리 시스템(버전 및 릴리스 관리 포함)입니다.
 
 - 실수를 방지하기 위한 제한 워크플로우
 - 티켓 수준에서 측정 및 시간 시트 추적
-- Easy ticket visualization and moving with Agile/Scrum
+- Agile/Screm을 통해 손쉽게 티켓 시각화 및 이동
 - 클라이언트 팀 및 개발 팀 간의 투명한 정보
 
 ## 소스 코드 관리
 
-비트버킷은 Git 코드 관리 이상입니다. Bitbucket gives teams one place to plan projects, collaborate on code, test, and deploy. Using Bitbucket, you can approve code reviews more efficiently with pull requests. 지정된 승인자가 있는 병합된 체크리스트를 만들고 인라인 메모로 소스 코드에서 바로 토론을 개최할 수도 있습니다.
+비트버킷은 Git 코드 관리 이상입니다. Bitrbucket을 사용하면 팀에서 프로젝트를 계획, 코드 공동 작업, 테스트 및 배포할 수 있습니다. Bitbucket을 사용하면, 끌어오기 요청으로 코드 검토를 보다 효율적으로 승인할 수 있습니다. 지정된 승인자가 있는 병합된 체크리스트를 만들고 인라인 메모로 소스 코드에서 바로 토론을 개최할 수도 있습니다.
 
 GitHub는 일부 프로젝트에서도 사용되는 Bitbucket과 유사합니다.
 
 ## 통신
 
-For different clients, we may use a variety of tools for communication: email, Microsoft Teams, and Slack are all common tools that we have leveraged for project-related communications.
+고객마다 다음과 같은 다양한 커뮤니케이션 도구를 사용할 수 있습니다. 이메일, Microsoft Teams 및 Slack은 프로젝트 관련 커뮤니케이션에 활용하는 모든 일반적인 도구입니다.
 
 ## 모임
 
@@ -58,4 +58,4 @@ Microsoft Teams 및 확대/축소는 온라인 회의를 설정하는 가장 일
 
 ## CI(Continuous Integration)/ CD(Continuous Delivery)
 
-Jenkins is the leading open-source automation solution and provides hundreds of plugins to support building, deploying, and automating any project. 젠킨스는 간단한 CI 서버로 사용하거나 모든 프로젝트에 대해 CD 허브로 전환할 수 있습니다.
+Jenkins는 최고의 오픈 소스 자동화 솔루션으로, 모든 프로젝트 구축, 배포 및 자동화를 지원하는 수백 개의 플러그인을 제공합니다. 젠킨스는 간단한 CI 서버로 사용하거나 모든 프로젝트에 대해 CD 허브로 전환할 수 있습니다.

@@ -1,10 +1,10 @@
 ---
-user-guide-title: 운영 가이드
-user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션을 유지 관리하는 운영 측면에 대해 알아봅니다.
+user-guide-title: 운영 안내서
+user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 유지 관리의 운영 방식에 대해 알아봅니다.
 source-git-commit: ee7867a6d428643ca1ee57b0f3d782b2a78efa2e
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -21,6 +21,6 @@ ht-degree: 0%
 - [성능 우수 사례](https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html)
 - [도구](https://devdocs.magento.com/quality-patches/tool.html)
 - [명령줄 도구](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)
-- [구현 Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html?lang=en)
-- [Operational Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html?lang=en)
+- [구현 플레이북](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html?lang=en)
+- [운영 플레이북](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html?lang=en)
 - [규모에 따른 상거래](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html?lang=en)

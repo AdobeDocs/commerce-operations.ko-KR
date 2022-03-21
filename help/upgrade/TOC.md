@@ -1,10 +1,10 @@
 ---
 user-guide-title: 업그레이드 안내서
-user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 업그레이드가 매우 중요한 이유와 업그레이드를 성공적으로 계획 및 실행하는 방법을 알아봅니다.
+user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션을 업그레이드하는 것이 중요한 이유와 업그레이드를 성공적으로 계획하고 실행하는 방법을 알아보십시오.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 

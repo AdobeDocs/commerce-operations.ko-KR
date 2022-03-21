@@ -1,13 +1,13 @@
 ---
 title: 상거래 호스팅 비교
 description: 이 비교 표를 검토하여 전자 상거래 프로젝트 호스팅에 대한 최상의 결정을 하십시오.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
 
 ---
-
 
 # 클라우드와 온프레미스 비교
 

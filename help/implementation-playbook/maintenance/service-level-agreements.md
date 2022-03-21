@@ -1,13 +1,13 @@
 ---
-title: Service Level Agreements
-description: Learn about service level agreements and how to use them to support your Adobe Commerce implementation.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: 서비스 수준 계약
+description: 서비스 수준 계약 및 SLA를 사용하여 Adobe Commerce 구현을 지원하는 방법에 대해 알아봅니다.
+exl-id: 5da42dfa-e165-4142-a863-6f3ce7689478
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
 
 ---
-
 
 # SLA(서비스 수준 계약)
 
@@ -20,23 +20,23 @@ ht-degree: 1%
 <table>
 <thead>
   <tr>
-    <th>Issue Type</th>
+    <th>문제 유형</th>
     <th>영향</th>
     <th>예</th>
-    <th colspan="2">Response/Restoration time during supported business hours</th>
+    <th colspan="2">지원되는 영업시간 동안 응답/복원 시간</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td colspan="3"></td>
     <td>금</td>
-    <td>Platinum</td>
+    <td>백금</td>
   </tr>
   <tr>
     <td>P1</td>
-    <td>Critical Impact</td>
-    <td>Service down or unusable</td>
-    <td>1 hour / 4hours</td>
+    <td>중요한 영향</td>
+    <td>서비스가 중단되거나 사용할 수 없음</td>
+    <td>1시간/4시간</td>
     <td>1시간/4시간</td>
   </tr>
   <tr>
@@ -49,14 +49,14 @@ ht-degree: 1%
   <tr>
     <td></td>
     <td></td>
-    <td>Service is unusable across end user base</td>
+    <td>최종 사용자 기반에서 서비스를 사용할 수 없습니다.</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td>P2</td>
-    <td>High Impact</td>
-    <td>Service severely impaired</td>
+    <td>높은 영향</td>
+    <td>서비스가 심각하게 손상됨</td>
     <td>2시간/12시간</td>
     <td>2시간/8시간</td>
   </tr>
@@ -76,8 +76,8 @@ ht-degree: 1%
   </tr>
   <tr>
     <td>P3</td>
-    <td>Medium Impact</td>
-    <td>Service partially impaired</td>
+    <td>중간 영향</td>
+    <td>서비스가 부분적으로 손상됨</td>
     <td>8시간/16시간</td>
     <td>8시간/12시간</td>
   </tr>
@@ -91,7 +91,7 @@ ht-degree: 1%
   <tr>
     <td></td>
     <td></td>
-    <td>Questions about features used in customer launch</td>
+    <td>고객 실행에서 사용되는 기능에 대한 질문</td>
     <td></td>
     <td></td>
   </tr>

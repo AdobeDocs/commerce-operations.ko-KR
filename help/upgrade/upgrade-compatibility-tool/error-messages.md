@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 오류 메시지"'
 description: 를 사용할 때 발생하는 오류 메시지에 대해 자세히 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
 source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3639'
 ht-degree: 0%
 
 ---

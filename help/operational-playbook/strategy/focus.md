@@ -1,13 +1,13 @@
 ---
 title: 포커스
 description: 데이터 기반의 결정을 내릴 수 있도록 기본 지표를 활용합니다.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5b946cce-25cd-4a69-b565-235acb16cad4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # 일반 상거래 지표
 

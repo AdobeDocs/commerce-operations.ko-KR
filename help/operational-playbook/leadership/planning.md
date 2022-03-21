@@ -1,13 +1,13 @@
 ---
 title: 상거래 계획
-description: Adobe 상거래 프로젝트 목표를 달성하기 위한 단계별 계획을 만듭니다.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+description: Adobe Commerce 프로젝트 목표를 달성하기 위한 단계별 계획을 만듭니다.
+exl-id: b3f7de65-8630-4c5e-8b3b-2ea8c4e1b20a
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
-
 
 # 계획
 

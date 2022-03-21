@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 방법으로 소프트웨어를 설치한 경우 명령줄에서 Adobe Commerce 또는 Magento Open Source 응용 프로그램을 업그레이드할 수 있습니다.
 
-- Downloading the [metapackage](https://glossary.magento.com/metapackage) using the `composer create-project` command.
+- 다운로드 [메타카지](https://glossary.magento.com/metapackage) 사용 `composer create-project` 명령.
 - 압축된 아카이브 설치
 
 >[!NOTE]
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 를 완료해야 합니다. [업그레이드 사전 요구 사항](../prepare/prerequisites.md) 업그레이드 프로세스를 시작하기 전에 환경을 준비하십시오.
 
-## Manage packages
+## 패키지 관리
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ ht-degree: 0%
       composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
       ```
 
-1. Upgrade your instance using the following `composer require-commerce` command syntax:
+1. 다음을 사용하여 인스턴스를 업그레이드합니다 `composer require-commerce` 명령 구문:
 
    ```bash
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
@@ -84,9 +84,9 @@ ht-degree: 0%
 
    명령 옵션은 다음과 같습니다.
 
-   - `<product>` — (필수) 업그레이드할 패키지입니다. For on-premises installations, this value must be either `product-community-edition` or `product-enterprise-edition`.
+   - `<product>` — (필수) 업그레이드할 패키지입니다. 온-프레미스 설치의 경우 이 값은 다음 중 하나여야 합니다 `product-community-edition` 또는 `product-enterprise-edition`.
 
-   - `<version>` —(Required) The version of Adobe Commerce or Magento Open Source you are upgrading to. For example, `2.4.3`.
+   - `<version>` —(필수) 업그레이드할 Adobe Commerce 또는 Magento Open Source 버전입니다. For example, `2.4.3`.
 
    - `--no-update` —(필수) 종속성을 자동으로 업데이트합니다.
 
@@ -94,8 +94,8 @@ ht-degree: 0%
 
    - `--force-root-updates` —(선택 사항) 충돌하는 모든 사용자 지정 값을 예상 Magento 값으로 무시합니다.
 
-   - `--help` —(Optional) Provides usage details about the plugin.
-   둘 중 어느 것도 아니면 `--interactive-root-conflicts` 아니요 `--force-root-updates` 지정한 경우, 이 명령은 충돌에 있는 기존 값을 유지하고 경고 메시지를 표시합니다. To learn more about the plugin, refer to the [Plugin Usage README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+   - `--help` —(선택 사항) 플러그인에 대한 사용 세부 사항을 제공합니다.
+   둘 중 어느 것도 아니면 `--interactive-root-conflicts` 아니요 `--force-root-updates` 지정한 경우, 이 명령은 충돌에 있는 기존 값을 유지하고 경고 메시지를 표시합니다. 플러그인에 대한 자세한 내용은 [플러그인 사용 README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. 종속성을 업데이트합니다.
 
@@ -135,7 +135,7 @@ _Adobe Commerce_:
 composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
 ```
 
-### Example - Quality patch
+### 예 - 품질 패치
 
 품질 패치는 주로 기능성을 포함합니다 _및_ 보안 수정 사항. 그러나 경우에 따라 이전 버전과 호환되는 새로운 기능이 포함될 수 있습니다. Composer를 사용하여 품질 패치를 다운로드합니다. 예를 들어 Magento Open Source 2.4.1 메타패키지를 지정하려면 다음을 수행합니다.
 
@@ -155,7 +155,7 @@ _Adobe Commerce_:
 composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
 ```
 
-### Example - Security patch
+### 예 - 보안 패치
 
 보안 패치에는 보안 수정 사항만 포함되어 있습니다. 업그레이드 프로세스를 빠르고 쉽게 수행할 수 있도록 설계되었습니다.
 
@@ -211,7 +211,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
    bin/magento setup:upgrade
    ```
 
-1. Disable maintenance mode.
+1. 유지 관리 모드를 비활성화합니다.
 
    ```bash
    bin/magento maintenance:disable
@@ -232,8 +232,8 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 애플리케이션이  `We're sorry, an error has occurred while generating this email.` 오류:
 
 1. 재설정 [파일 시스템 소유권 및 권한](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) 를 `root` 권한.
-1. Clear the following directories:
+1. 다음 디렉터리를 지웁니다.
    - `var/cache/`
    - `var/page_cache/`
    - `generated/code/`
-1. Check your storefront in your web browser again.
+1. 웹 브라우저에 있는 스토어를 다시 확인하십시오.

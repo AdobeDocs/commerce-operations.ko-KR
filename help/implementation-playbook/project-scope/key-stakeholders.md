@@ -1,17 +1,17 @@
 ---
 title: 주요 이해 관계자
-description: Adobe 상거래 구현과 관련된 주요 이해 관계자와 프로젝트의 다양한 측면을 소유한 사람을 검토합니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Adobe Commerce 구현과 관련된 주요 이해 관계자와 프로젝트의 다양한 측면을 소유한 사람을 검토합니다.
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # 주요 이해 관계자
 
-2021년 많은 기업들은 &quot;대유행에 견디는&quot; 것이 조직의 디지털 강점과 직접적으로 관련된다는 사실을 알게 되었다. Forrester 데이터를 기반으로 한 [McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)는 경제성장이 3개월밖에 되지 않아 10년이 지난 것으로 나타났으며, 이는 오프라인 문이 닫혀있는 동안 고객과 디지털 방식으로 교류해야 하는 필요성으로 인한 성장이었습니다.
+2021년 많은 기업들은 &quot;대유행에 견디는&quot; 것이 조직의 디지털 강점과 직접적으로 관련된다는 사실을 알게 되었다. Forrester 데이터를 기반으로,[맥킨지](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)업계 성장세가 3개월 만에 10년 만에 나타났다는 사실을 알게 되었습니다. 디지털 방식으로 고객과 교류해야 하는 필요와 오프라인 문이 닫혀있는 동안 기업의 성장은 더욱 강화되었습니다.
 
 상거래 변환에 투자하기로 결정한 경우, 가장 중요한 단계 중 하나는 해당 조직에 속한 사람을 결정하는 것입니다. 중소기업에서는 전자 상이나 디지털 팀이 소수에 불과하기 때문에 전체 팀이 이 일을 맡는다. 그러나 규모가 큰 조직의 경우 한 가지 접근 방식은 다음과 같은 세 가지 서로 다른 영역으로 분할하는 것입니다.
 
@@ -38,6 +38,6 @@ ht-degree: 0%
 
 ## 경영진 스폰서는 누구입니까?
 
-Digital Commerce 360은 기업들이 아직 새로운 상거래 변환에 투자하지 않은 가장 큰 이유는 리더쉽 지원이 부족하기 때문이라고 보고했습니다. 지도층이 얼마나 관여하느냐가 브랜드 성공에 중요한 요소다. 상거래 구현 기간 동안 반복되는 체크포인트 회의를 포함하여 다음 역할에서 전체 지원이 권장됩니다.
+Digital Commerce 360은 기업들이 아직 새로운 상거래 변환에 투자하지 않은 가장 큰 이유는 리더쉽 지원이 부족하기 때문이라고 보고했습니다. 지도층이 얼마나 관련되느냐가 브랜드 성공에 중요하다. 상거래 구현 기간 동안 반복되는 체크포인트 회의를 포함하여 다음 역할에서 전체 지원이 권장됩니다.
 
 - 전체 C-suite

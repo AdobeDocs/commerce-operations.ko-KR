@@ -3,8 +3,8 @@ title: 업그레이드 구현
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 위한 업그레이드 구현 단계의 다양한 방법에 대해 알아봅니다.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 

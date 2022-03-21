@@ -1,17 +1,17 @@
 ---
 title: 성능 최적화
-description: Adobe 상거래 구현의 성과를 검토하는 데 필요한 성능 최적화 및 단계에 대해 모두 알아보십시오.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Adobe Commerce 구현의 성능을 검토하는 데 필요한 성능 최적화 및 단계에 대해 모두 알아보십시오.
+exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
 # 성능 최적화
 
-공연은 큰 주제이다. 사용자가 느려지거나 응답을 하지 않는 사이트를 경험하면 전환에 영향을 줍니다. 클라우드 인프라 구현에서 Adobe 상거래 성능을 최적화하려면 다음 단계를 수행하는 것이 좋습니다.
+공연은 큰 주제이다. 사용자가 느려지거나 응답을 하지 않는 사이트를 경험하면 전환에 영향을 줍니다. 클라우드 인프라 구현에서 Adobe Commerce의 성능을 최적화하려면 다음 단계를 수행하는 것이 좋습니다.
 
 - 문제 평가
 - 성능 측정
@@ -41,9 +41,9 @@ TTFB(High Time-to-First Byte)는 일반적으로 서버의 응답 속도를 정�
 
 일반적으로 느린 로드 리소스는 정적 리소스(CSS, JavaScript, 이미지, 비디오, 타사 Ajax 호출 응답)를 정의하는 표시기로 간주됩니다.
 
-Adobe 커머스 는 다음과 같은 기능을 통해 비즈니스에 맞게 확장할 수 있습니다.
+Adobe Commerce은 다음과 같은 기능을 통해 비즈니스 규모에 맞게 확장할 수 있습니다.
 
-![Adobe 상거래 의 확장 가능한 기능을 보여주는 다이어그램](../../../assets/playbooks/scalable-capabilities.svg)
+![Adobe Commerce의 확장 가능한 기능을 보여주는 다이어그램](../../../assets/playbooks/scalable-capabilities.svg)
 
 또한 상거래 규모에 영향을 주는 주요 요소들이 있으며, 이는 전체 성능에 영향을 줍니다.
 

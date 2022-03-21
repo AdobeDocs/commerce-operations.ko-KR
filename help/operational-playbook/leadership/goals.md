@@ -1,13 +1,13 @@
 ---
 title: 상거래 목표
 description: 팀이 전략적 목표를 달성하고 조직의 효과를 높일 수 있도록 단기 및 장기 목표를 설정합니다.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # 목표
 

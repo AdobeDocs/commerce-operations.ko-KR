@@ -37,7 +37,7 @@ ht-degree: 0%
    - **제목:** *\&quot;MAGETWO-56934: 잘못된 신용 카드가 있는 Authorize.net으로 주문할 때 체크아웃 페이지가 중지됩니다.\&quot;*
    - **패치 경로:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
-   예:
+   For example:
 
    ```json
    "extra": {

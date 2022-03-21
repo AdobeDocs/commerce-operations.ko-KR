@@ -4,8 +4,8 @@ title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
 source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '205'
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
       <img alt="구현" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>구현 Playbook</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>구현 플레이북</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -105,7 +105,7 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
        <img alt="작업" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Operational Playbook</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>운영 플레이북</strong></a>
     </div>
   </td>
   <td valign="top">

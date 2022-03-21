@@ -1,13 +1,13 @@
 ---
 title: 프로젝트 거버넌스
-description: 프로젝트 거버넌스 권장 사항을 Adobe 상거래 구현에 적용합니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: 프로젝트 거버넌스 권장 사항을 Adobe Commerce 구현에 적용합니다.
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
-
 
 # 프로젝트 거버넌스
 

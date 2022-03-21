@@ -1,19 +1,19 @@
 ---
-user-guide-title: Operational Playbook
-user-guide-description: 성공적인 전자 상거래 사이트를 운영할 수 있도록 비즈니스를 운영할 준비가 된 방법을 알아봅니다.
+user-guide-title: 운영 플레이북
+user-guide-description: 비즈니스가 성공적인 전자 상거래 사이트를 운영할 수 있도록 하는 방법에 대해 알아봅니다.
 source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# Operational Playbook {#operational-playbook}
+# 운영 플레이북 {#operational-playbook}
 
 - [개요](overview.md)
 - 상거래 {#intro}
-   - [Adobe 상거래](intro/commerce.md)
+   - [Adobe Commerce](intro/commerce.md)
    - [ecommerce란?](intro/ecommerce.md)
    - [비즈니스 모델](intro/business-model.md)
    - [상거래 작업](intro/operations.md)

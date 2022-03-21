@@ -1,13 +1,13 @@
 ---
 title: 프로젝트 구현 방식
-description: Adobe 상거래 소프트웨어 게재의 작동 방식을 숙지하십시오.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Adobe Commerce 소프트웨어 게재 작동 방식을 숙지하십시오.
+exl-id: 579cd083-8b12-49ff-bc8a-8db1ca588d74
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # 프로젝트 구현 방식
 
@@ -41,7 +41,7 @@ ht-degree: 0%
    - 코드 컴파일 테스트를 실행합니다.
    - 정적 코드 검사(예: SonarQube)를 실행합니다.
 - 전달된 모든 스캔 커밋은 대상 분기에 병합됩니다.
-- 새로 릴리스된 태그가 배포 준비 패키지를 위해 AWS S3로 푸시됩니다.
+- 릴리스된 새 태그가 배포 준비 패키지를 위해 AWS S3에 푸시됩니다.
 - 새 배포는 배포 엔지니어링 팀에 의해 트리거됩니다.
    - 배포 작업에서 대상 환경에 새 패키지를 배포합니다.
    - 데이터베이스 구조 업데이트를 사용하려면 고객이 새로운 요청을 수행할 때 일시 중지가 필요합니다.

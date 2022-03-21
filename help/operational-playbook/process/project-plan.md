@@ -1,13 +1,13 @@
 ---
 title: 프로젝트 계획
 description: 상세한 전자 상거래 프로젝트 계획을 통해 전자 상거래 프로젝트 모니터링 및 관리
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2d6c8998-925a-4015-b26b-945127cab805
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
-
 
 # 프로젝트 계획
 

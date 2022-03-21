@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 개발자 정보"'
 description: 사용자 지정 [!DNL Upgrade Compatibility Tool] api 색인 통합을 사용합니다.
 source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
