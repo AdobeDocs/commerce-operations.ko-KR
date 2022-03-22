@@ -2,9 +2,9 @@
 title: Adobe Commerce 정보
 description: Adobe Commerce 설명
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerce은 상인들에게 독특하고 매력적인 쇼핑 경험을 만
 
 ## 어디에서나 원활한 쇼핑 수행
 
-전자 상거래 증가는 고객이 어디에 있든지 고객의 요구 사항을 충족시켜 줍니다. 도달 범위를 확장하고 새로운 채널, 지역으로 확대하며 하나의 플랫폼에서 기업과 소비자 모두에게 온라인으로 판매합니다. 언제 어디서나 고객이 쇼핑을 좋아하는 고객에게 상거래를 권합니다.
+고객의 요구 사항을 충족함으로써 커머스 확장은 더욱 강화됩니다. 도달 범위를 확장하고 새로운 채널, 지역으로 확대하며 하나의 플랫폼에서 기업과 소비자 모두에게 온라인으로 판매합니다. 언제 어디서나 고객이 쇼핑을 좋아하는 고객에게 상거래를 권합니다.
 
 - 모바일 상거래
 - B2B ecommerce
@@ -42,7 +42,7 @@ Adobe Commerce은 상인들에게 독특하고 매력적인 쇼핑 경험을 만
 
 - 비즈니스 인텔리전스
 - 배송
-- 재고 관리
+- Inventory management
 - 주문 관리 및 고객 서비스
 
 ## 자신감 있는 운영
