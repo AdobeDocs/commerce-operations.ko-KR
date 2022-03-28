@@ -1,7 +1,7 @@
 ---
 title: 전체 사전 요구 사항
 description: 이러한 전제 조건 단계를 완료하여 업그레이드를 위한 Adobe Commerce 또는 Magento Open Source 프로젝트를 준비합니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 �
 
 열린 파일 제한(ulimit)을 설정하면 긴 쿼리 문자열의 여러 재귀 호출이나 `bin/magento setup:rollback` 명령. 이 명령은 UNIX 셸마다 다릅니다. 에 대한 세부 사항은 개별 향을 참조하십시오 `ulimit` 명령.
 
-Adobe은 열린 파일을 설정할 것을 권장합니다 [ulimit](http://ss64.com/bash/ulimit.html) 값 `65536` 또는 그 이상 사용할 수 있지만, 필요한 경우 더 큰 값을 사용할 수 있습니다. 명령줄에서 ulimit를 설정하거나 사용자 셸에 대한 영구 설정으로 만들 수 있습니다.
+Adobe은 열린 파일을 설정할 것을 권장합니다 [ulimit](https://ss64.com/bash/ulimit.html) 값 `65536` 또는 그 이상 사용할 수 있지만, 필요한 경우 더 큰 값을 사용할 수 있습니다. 명령줄에서 ulimit를 설정하거나 사용자 셸에 대한 영구 설정으로 만들 수 있습니다.
 
 명령줄에서 ulimit를 설정하려면 다음을 수행합니다.
 

@@ -1,9 +1,9 @@
 ---
 title: 를 실행합니다. [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 A _바닐라_ 설치는 특정 릴리스 버전에 대해 지정된 버전 태그 또는 분기를 새로 설치하는 것입니다.
 
-다음 `bin/uct core:code:changes` 시스템에서 vanilla 인스턴스가 있는지 확인합니다. 바닐라 설치를 처음 사용하는 경우, 인터랙티브한 명령줄에 의해 바닐라 프로젝트를 [Adobe Commerce 저장소](https://repo.magento.com/).
+다음 `bin/uct core:code:changes` 시스템에서 vanilla 인스턴스가 있는지 확인합니다. vanilla 설치를 처음 사용하는 경우 대화형 명령줄 질문이 Adobe Commerce 리포지토리에서 vanilla 프로젝트를 다운로드하라는 메시지를 표시합니다(`https://repo.magento.com/`).
 
 를 실행할 수 있습니다 [!DNL Upgrade Compatibility Tool] 명령을 사용하여 `--vanilla-dir` Adobe Commerce vanilla 설치 디렉토리를 지정하는 옵션.
 
