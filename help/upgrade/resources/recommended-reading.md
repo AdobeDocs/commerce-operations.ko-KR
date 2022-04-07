@@ -1,10 +1,10 @@
 ---
 title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 또는 Magento Open Source 업그레이드 계획에 대한 권장 읽기를 검토합니다.
-source-git-commit: de3ab30a0831f6bbf92313c568ac624212868afe
+source-git-commit: 1cecdf89df9a870d57347468ce9220f74d46cd73
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,6 @@ ht-degree: 3%
             <li><a href="https://marketplace.magento.com/magento-live-search.html">라이브 검색</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">결제 서비스</a></li>
             <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">제품 Recommendations</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">업그레이드 PWA Studio</a></li>
           </ul>
       </td>
     </tr>
@@ -77,7 +76,13 @@ ht-degree: 3%
             <li><a href="https://devdocs.magento.com/release/availability.html">소프트웨어 가용성</a></li>
           </ul>
       </td>
-      <td></td>
+      <td><strong>Storefront 경험</strong>
+        <p>고객을 위한 고유한 경험을 구축하는 데 사용할 수 있는 최신 상점 기술에 대해 알아봅니다.</p>
+          <ul>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">업그레이드 PWA Studio</a></li>
+          </ul>
+      </td>
     </tr>
   </tbody>
 </table>
