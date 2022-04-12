@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
+source-git-commit: d3eac6db56f658ead240e8244858d0bd80a43908
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
        <img alt="도구" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/quality-patches/tool.html"><strong>도구</strong></a>
+      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>도구</strong></a>
     </div>
   </td>
 </tr>
