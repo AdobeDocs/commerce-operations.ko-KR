@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 모듈 및 확장
 description: 명령줄 인터페이스 및 작성기를 사용하여 Adobe Commerce 및 Magento Open Source 모듈 및 확장을 업그레이드합니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,9 @@ ht-degree: 0%
    ```bash
    bin/magento cache:clean
    ```
+
+## 공급업체 번들 확장(VBE)
+
+Adobe이 모두 제거됨 [VBE](https://devdocs.magento.com/extensions/vendor/) 에서 2.4.4. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
+
+Adobe Commerce 및 Magento Open Source 2.4.4 이상에서 이러한 확장을 계속 사용하려면 의 해당 패키지 종속성을 업데이트해야 합니다. `composer.json` 파일 _이전_ 2.4.4로 업그레이드합니다. 사용할 패키지 이름 및 버전은 공급업체에 문의하십시오.
