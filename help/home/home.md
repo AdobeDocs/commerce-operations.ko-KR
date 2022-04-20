@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: d3eac6db56f658ead240e8244858d0bd80a43908
+source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '197'
+ht-degree: 2%
 
 ---
 
@@ -67,11 +67,11 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html">
+    <a href="../performance/overview.md">
        <img alt="성능" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html"><strong>성능 우수 사례</strong></a>
+      <a href="../performance/overview.md"><strong>성능 우수 사례</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -79,7 +79,7 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
        <img alt="도구" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>도구</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>도구</strong></a>
     </div>
   </td>
 </tr>
