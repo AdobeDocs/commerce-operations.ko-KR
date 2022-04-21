@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -127,3 +127,4 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 추가됨 [정보](../upgrade/upgrade-compatibility-tool/overview.md) 업그레이드 호환성 도구에 대해 규칙이 정의되는 방식에 대해 설명합니다. | 주요 업데이트 |
 | 이전 업그레이드 호환성 도구가 제거됨 [오류 코드](../upgrade/upgrade-compatibility-tool/error-messages.md). | 기술 |
+| 이동됨 [사이트 전체 분석 도구 안내서](../tools/site-wide-analysis-tool/intro.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) Experience League에 연결할 수도 있습니다. | 새로 만들기 |
