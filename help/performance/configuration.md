@@ -1,7 +1,7 @@
 ---
 title: 구성 우수 사례
 description: 이러한 우수 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 구성 우수 사례
 
-Commerce는 페이지에서 응답 시간을 향상시키고 더 높은 처리량을 제공하는 데 사용할 수 있는 다양한 설정 및 도구를 제공합니다.
+상거래 에서는 페이지에서 응답 시간을 향상시키고 더 높은 처리량을 제공하는 데 사용할 수 있는 많은 설정 및 도구를 제공합니다.
 
 ## 크론 작업
 
