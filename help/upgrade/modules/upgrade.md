@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 모듈 및 확장
 description: 명령줄 인터페이스 및 작성기를 사용하여 Adobe Commerce 및 Magento Open Source 모듈 및 확장을 업그레이드합니다.
-source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
+source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,12 @@ ht-degree: 0%
 Adobe이 모두 제거됨 [VBE](https://devdocs.magento.com/extensions/vendor/) 에서 2.4.4. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
 
 Adobe Commerce 및 Magento Open Source 2.4.4 이상에서 이러한 확장을 계속 사용하려면 의 해당 패키지 종속성을 업데이트해야 합니다. `composer.json` 파일 _이전_ 2.4.4로 업그레이드합니다. 사용할 패키지 이름 및 버전은 공급업체에 문의하십시오.
+
+자세한 내용은 다음 Adobe Commerce Marketplace 목록을 참조하십시오.
+
+- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
+- [카라나](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [교점](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [요트포](https://marketplace.magento.com/yotpo-module-yotpo.html)
+
