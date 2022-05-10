@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 오류 메시지"'
 description: 를 사용할 때 발생하는 오류 메시지에 대해 자세히 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: 9bdf64177b4cecab5dd3562fef0bcc507a57ccf0
+source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3756'
 ht-degree: 4%
 
 ---
@@ -141,16 +141,6 @@ ht-degree: 4%
 | 5026년 | 사용 안 함 `"text/javascript"` 유형 속성 | 공용 멤버만 사용합니다. |
 | 5028년 | 의 보호 및 개인 구성원에 대한 액세스 `Block` phtml 템플릿에서 클래스는 사용되지 않습니다. | 공용 멤버만 사용합니다. |
 | 5031년 | 오래된 메서드를 포함합니다. | 사용 `getConnection()` 메서드를 사용하십시오. |
-| 5032년 | `loadLayout` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Framework\View\Layout\Builder::build` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5033년 | `renderLayout` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Framework\Controller\ResultInterface::renderResult` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5034년 | `_redirect` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Redirect::render` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5035년 | `_forward` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Forward::forward` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5036년 | `_setActiveMenu` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Page::setActiveMenu` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5037년 | `_addBreadcrumb` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5038년 | `_addContent` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Page::addContent` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5039년 | `_addLeft` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Page::addLeft` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5040년 | `_addJs` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Page::addJs` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5041년 | `_moveBlockToContainer` 메서드는 더 이상 사용되지 않습니다. | 사용 `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` 을 가리키도록 업데이트하는 것이 좋습니다. |
 | 5042년 | PHP 클래스 참조의 형식이 잘못되었습니다. | CamelCased 문자, 숫자 및 선행 슬래시만 사용하여 클래스를 참조하는지 확인합니다. |
 | 5043년 | 모듈 참조의 형식이 잘못되었습니다. | 모듈이 문자, 숫자, 밑줄만 사용하고 선행 슬래시는 사용하지 않고 참조되는지 확인합니다. |
 | 5044년 | 클래스 `Zend_Db_Select` 제한됨 | 제안 대체: `\Magento\Framework\DB\Select`. |
