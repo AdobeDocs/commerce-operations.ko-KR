@@ -1,258 +1,259 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] 오류 메시지"'
-description: 를 사용할 때 발생하는 오류 메시지에 대해 자세히 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
+title: '[!DNL Upgrade Compatibility Tool]'
+description: ' [!DNL Upgrade Compatibility Tool] '
+source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
 workflow-type: tm+mt
-source-wordcount: '3756'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
 
 
-# [!DNL Upgrade Compatibility Tool] 오류 메시지
+# [!DNL Upgrade Compatibility Tool]
 
 {{commerce-only}}
 
-이 오류 메시지 참조는 [!DNL Upgrade Compatibility Tool].
+[!DNL Upgrade Compatibility Tool]
 
-오류 메시지는 수준(중요 문제, 오류 및 경고)과 유형(코어 코드, 사용자 지정 코드 및 GraphQL 스키마)별로 분류됩니다. 각 유형에는 다음 정보가 포함됩니다.
+Error messages are categorized by level (critical issues, errors, and warnings) and type (core code, custom code, and GraphQL schemas). Each type contains the following information:
 
-- **오류 코드**: Adobe Commerce에서 오류 메시지에 대해 식별자를 할당했습니다.
-- **오류 설명**: 오류 원인을 요약하는 설명입니다.
-- **오류 제안 작업**: 해당하는 경우 오류 문제 해결 및 해결에 대한 지침을 제공합니다.
+- ****
+- ****
+- ****
 
-## 중요한 문제
+## Critical issues
 
-### 코어 코드
+### Core code
 
-이러한 오류는 일부 핵심 파일이 없거나 원본과 일치하지 않을 때 보고됩니다.
+These errors are reported when some of the core files are missing or do not match the original.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 2001년 | 코어 파일을 찾을 수 없습니다. | 를 실행합니다. `composer install` 프로젝트의 루트 디렉토리에서 명령 |
-| 2002년 | 코어 파일이 수정되었습니다. | 를 실행합니다. `composer install` 프로젝트의 루트 디렉토리에서 명령 |
-| 2003년 | 작성기 종속성이 설치되어 있지 않습니다 | 작성기 종속성이 누락되면 문제가 발생할 수 있습니다. 실행으로 종속성 복원 `composer require package_name`. |
-| 2005년 | 코어 폴더를 찾을 수 없습니다. | 를 실행합니다. `composer install` 프로젝트의 루트 디렉토리에서 명령 |
+| 2001 | Core file was not found | `composer install` |
+| 2002 | Core file was modified | `composer install` |
+| 2003 | Composer dependency is not installed | Missing composer dependency may potentially result in issues. `composer require package_name` |
+| 2005 | Core folder was not found | `composer install` |
 
 {style=&quot;table-layout:auto&quot;}
 
-### 사용자 지정 코드
+### Custom code
 
-사용자 지정 코드가 Target Adobe Commerce 버전에 없는 엔티티를 참조하는 경우 중요한 오류가 발생합니다. 이러한 오류는 중요한 코딩 기준이 깨졌을 때도 보고됩니다.
+Critical errors are raised when the custom code is referencing entities that are not present in the target Adobe Commerce version. These errors are also reported when critical coding standards have been broken.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1110년 | 존재하지 않는 Adobe Commerce 클래스/인터페이스 인스턴스화 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. 존재하지 않는 Adobe Commerce 클래스/인터페이스를 인스턴스화합니다. |
-| 1111년 | 존재하지 않는 Adobe Commerce 클래스에서 확장 | 확장 클래스가 더 이상 코드 베이스에 없습니다. Adobe Commerce 기능을 확장하는 데에는 상속이 권장되지 않습니다. 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1112년 | 존재하지 않는 Adobe Commerce 클래스를 가져오는 중 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1113년 | 존재하지 않는 Adobe Commerce 클래스를 로드하는 중 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1114년 | 존재하지 않는 Adobe Commerce 클래스 사용 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1214년 | 존재하지 않는 Adobe Commerce 상수 사용 | 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1215년 | 존재하지 않는 Adobe Commerce 상수 재정의 | 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1216년 | 존재하지 않는 Adobe Commerce 상수 지정 | 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1312년 | 존재하지 않는 Adobe Commerce 인터페이스를 가져왔습니다 | 상속을 제거하거나 사용자 지정 범위에 도입된 인터페이스로 바꾸는 것이 좋습니다. |
-| 1314년 | 존재하지 않는 Adobe Commerce 인터페이스 사용 | 상속을 제거하거나 사용자 지정 범위에 도입된 인터페이스로 바꾸는 것이 좋습니다. |
-| 1317년 | 상속된 존재하지 않는 Adobe Commerce 인터페이스 | 상속을 제거하거나 사용자 지정 범위에 도입된 인터페이스로 바꾸는 것이 좋습니다. |
-| 1318년 | 존재하지 않는 Adobe Commerce 인터페이스 구현 | 상속을 제거하거나 사용자 지정 범위에 도입된 인터페이스로 바꾸는 것이 좋습니다. |
-| 1410년 | 존재하지 않는 Adobe Commerce 메서드 호출 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1514년 | 존재하지 않는 Adobe Commerce 속성 사용 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1515년 | 존재하지 않는 Adobe Commerce 속성 재정의 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1516년 | 존재하지 않는 Adobe Commerce 속성 지정 | 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. 단일 클래스 내에서만 사용할 수 있는 경우 속성 액세스 수준을 private으로 업데이트합니다. |
-| 5002년 | 여는 PHP 태그는 파일의 첫 번째 컨텐츠여야 합니다 | PHP에서 태그를 열기 전에 파일에 내용이 없는지 확인합니다. |
-| 5003년 | 함수는 더 이상 사용되지 않습니다 | 오류 메시지에 제시된 대체 항목을 사용하십시오. 메시지에 대체 기능을 제안하지 않는 경우 대체 기능이나 구현을 선택하려면 세심한 검토가 필요합니다. |
-| 5005년 | PHP 구문 오류 | PHP 구문 표준을 준수하도록 코드를 업데이트해야 합니다. |
-| 5072년 | 가능한 Magento 2 디자인 위반입니다. 일반적인 Magento 1.x 구성을 감지했습니다. | Magento 2 표준으로 구성을 업데이트합니다. |
-| 5076년 | PHP 7 이후 예약된 네임스페이스에 사용할 수 없습니다. | 네임스페이스의 예약된 단어를 예약되지 않은 키워드로 바꿉니다. |
-| 5077년 | PHP 7 이후 예약된 클래스 이름으로 사용할 수 없습니다. | 예약된 클래스 이름을 예약되지 않은 이름으로 바꿉니다. |
+| 1110 | Instantiating non-existent Adobe Commerce class/interface | `@api` Instantiating non-existent Adobe Commerce class/interface. |
+| 1111 | Extending from non-existent Adobe Commerce class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. `@api` |
+| 1112 | Importing non-existent Adobe Commerce class | `@api` |
+| 1113 | Loading non-existent Adobe Commerce class | `@api` |
+| 1114 | Using non-existent Adobe Commerce class | `@api` |
+| 1214 | Using non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1215 | Overriding non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1216 | Assignation of non-existent Adobe Commerce constant | Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1312 | Imported non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1314 | Used non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1317 | Inherited non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1318 | Implemented non-existent Adobe Commerce interface | Consider removing the inheritance or replacing it with the interface introduced in the scope of the customization. |
+| 1410 | Call non-existent Adobe Commerce method | `@api` |
+| 1514 | Using non-existent Adobe Commerce property | `@api` |
+| 1515 | Overriding non-existent Adobe Commerce property | `@api` |
+| 1516 | Assignation of non-existent Adobe Commerce property | `@api` Update the property access level to private if it can be used within a single class only. |
+| 5002 | The opening PHP tag must be the first content in the file | Ensure there is no content in the file before the PHP opening tag. |
+| 5003 | Function has been deprecated | Use a replacement suggested in the error message. If the message does not suggest a replacement, a close review is needed to select an alternative function or implementation. |
+| 5005 | PHP syntax error | The code must be updated to comply with the PHP syntax standards. |
+| 5072 | Possible Magento 2 design violation. Detected a typical Magento 1.x construction | Update construction to Magento 2 standards. |
+| 5076 | Cannot use in namespace as it is reserved since PHP 7 | Replace the reserved word in the namespace with a non-reserved keyword. |
+| 5077 | Cannot use as class name as it is reserved since PHP 7 | Replace the reserved class name with a non-reserved name. |
 
 {style=&quot;table-layout:auto&quot;}
 
-### GraphQL 스키마
+### GraphQL Schema
 
-스키마 항목이 대상 버전에 없는 경우 GraphQL 스키마 중요한 문제가 발생합니다.
+GraphQL Schema critical issues are raised if the schema items are not present in the target version.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 3101년 | 유형이 제거되었습니다. | 이 필드를 참조하는 모든 쿼리를 나열합니다. 사용자 지정 구현에서 이러한 쿼리를 사용하는지 확인합니다. 변경된 쿼리 인터페이스를 처리하도록 클라이언트 코드를 업데이트합니다. |
-| 3102년 | 공용 구조체에서 제거된 유형 | GraphQL 요청 구성 또는 응답 처리 구현에서 결합 유형을 사용하는 경우 업데이트해야 할 수 있습니다. |
-| 3103년 | 필드가 제거됨 | 사용자 지정 코드 베이스에서 필드가 참조되었는지 확인합니다. 새 필드 유형을 올바로 처리하도록 구현을 조정합니다. |
-| 3105년 | 구현된 인터페이스가 제거되었습니다. | 제거된 인터페이스를 구현하는 유형이 사용자 지정에 사용되는지 확인합니다. 제거된 인터페이스에 의존하는 경우 구현을 업데이트해야 할 수 있습니다. |
-| 3106년 | 열거형에서 제거된 값 | 제거된 열거형 값을 GraphQL 요청 구성 또는 응답 처리 구현에서 사용하는 경우 업데이트해야 할 수 있습니다. |
-| 3107년 | 인수가 제거됨 | 사용자 지정 코드 베이스에서 필드가 사용되는지 확인합니다. 이 필드의 인수를 제거합니다. |
-| 3109년 | 지시문이 제거됨 | 사용자 지정 코드 베이스에서 지시어가 사용되는지 확인합니다. 지시문에 대한 참조를 제거하도록 구현을 조정합니다. |
-| 3110년 | 지시어 인수가 제거되었습니다. | 사용자 지정 코드 베이스에서 지시어가 사용되는지 확인합니다. 지시어 인수를 제거합니다. |
-| 3111년 | 반복 가능한 지시문이 제거됨 | 사용자 지정 코드 베이스에서 지시어가 사용되는지 확인합니다. 인터페이스 변경 사항을 처리하도록 구현을 조정합니다. |
-| 3112년 | 지시어 위치가 제거됨 | 사용자 지정 코드 베이스에서 지시어가 사용되는지 확인합니다. 인터페이스 변경 사항을 처리하도록 구현을 조정합니다. |
-| 3201년 | 유형이 변경된 종류 | 이 필드를 참조하는 모든 쿼리를 나열합니다. 사용자 지정 구현에서 이러한 쿼리를 사용하는지 확인합니다. 변경된 쿼리 인터페이스를 처리하도록 클라이언트 코드를 업데이트합니다. |
-| 3203년 | 필드가 종류를 변경했습니다. | 사용자 지정 코드 베이스에서 필드가 참조되었는지 확인합니다. 새 필드 유형을 올바로 처리하도록 구현을 조정합니다. |
-| 3207년 | 인수가 종류를 변경했습니다. | 사용자 지정 코드 베이스에서 필드가 사용되는지 확인합니다. 이 필드의 인수 유형을 업데이트합니다. |
-| 3303년 | 필수 입력 필드가 추가되었습니다. | 이 필드를 포함하는 쿼리를 사용자 지정에 사용하는 경우 요청에 필드를 추가해야 합니다. |
-| 3307년 | 필수 인수가 추가되었습니다. | 사용자 지정 코드 베이스에서 필드가 사용되는지 확인합니다. 필드를 사용할 때는 새 필수 인수를 지정해야 합니다. |
-| 3310년 | 필수 지시어 인수가 추가되었습니다. | 사용자 지정 코드 베이스에서 지시어가 사용되는지 확인합니다. 지시어 인수를 추가합니다. |
+| 3101 | Type was removed | List all queries that are referencing this field. Check if these queries are used by the customization implementation. Update the client code to handle the changed query interface. |
+| 3102 | Type removed from union | If the union type is used in the GraphQL request constructing or response processing implementation it may need to be updated. |
+| 3103 | Field removed | Check if the field is referenced in the customization codebase. Adjust the implementation to correctly handle the new field type. |
+| 3105 | Implemented interface removed | Check if the type implementing the removed interface is used in the customization. The implementation may need to be updated if it is relying on the removed interface. |
+| 3106 | Value removed from enum | If the removed enum value is used in the GraphQL request constructing or response processing implementation it may need to be updated. |
+| 3107 | Argument removed | Check if the field is used in the customization codebase. Remove the argument for this field. |
+| 3109 | Directive removed | Check if the directive is used in the customization codebase. Adjust the implementation to remove the reference to the directive. |
+| 3110 | Directive argument removed | Check if the directive is used in the customization codebase. Remove the directive argument. |
+| 3111 | Directive repeatable removed | Check if the directive is used in the customization codebase. Adjust the implementation to handle the interface changes. |
+| 3112 | Directive location removed | Check if the directive is used in the customization codebase. Adjust the implementation to handle the interface changes. |
+| 3201 | Type changed kind | List all queries that are referencing this field. Check if these queries are used by the customization implementation. Update the client code to handle the changed query interface. |
+| 3203 | Field changed kind | Check if the field is referenced in the customization codebase. Adjust the implementation to correctly handle the new field type. |
+| 3207 | Argument changed kind | Check if the field is used in the customization codebase. Update the argument type for this field. |
+| 3303 | Required input field added | The field should be added to the request if the query including this field is used for the customization. |
+| 3307 | Required argument added | Check if the field is used in the customization codebase. The new required argument should be specified when using the field. |
+| 3310 | Required directive argument added | Check if the directive is used in the customization codebase. Add the directive argument. |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 오류
+## Errors
 
-### 사용자 지정 코드
+### Custom code
 
-사용자 지정 코드 오류는 사용자 지정 코드가 로 간주되거나 표시되지 않는 Adobe Commerce 시작 지점을 사용하는 경우 발생합니다 `@api`. 이러한 진입점의 보존된 동작은 보장되지 않습니다. 사용자 지정은 `@api` 대신 시작 지점을 사용합니다. 비 API Adobe Commerce 코드를 기반으로 하는 기능은 업그레이드 후 테스트해야 합니다. 이러한 오류는 주요 코딩 기준이 깨졌을 때도 보고됩니다.
+`@api` The preserved behavior of such entry points is not guaranteed. `@api` The functionality that is based on non-API Adobe Commerce code should be tested after the upgrade. These errors are also reported when major coding standards have been broken.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1104년 | API 인터페이스를 상속하는 비 API 클래스 사용 | 로 표시되지 않은 클래스 `@api` 변경될 수 있습니다. 로 표시된 인터페이스를 사용하도록 코드를 업데이트하는 것이 좋습니다 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1121년 | Adobe Commerce이 아닌 API 클래스에서 확장 | 확장 클래스가 더 이상 코드 베이스에 없습니다. Adobe Commerce 기능을 확장하는 데에는 상속이 권장되지 않습니다. 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1122년 | Adobe Commerce이 아닌 API 클래스 가져오기 | 확장 클래스가 더 이상 코드 베이스에 없습니다. 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1123년 | 비Adobe Commerce API 클래스 로드 | 확장 클래스가 더 이상 코드 베이스에 없습니다. 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1124년 | 비Adobe Commerce API 클래스 사용 | 확장 클래스가 더 이상 코드 베이스에 없습니다. 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1224년 | 비Adobe Commerce API 상수 사용 | 로 표시되지 않는 상수 `@api` 변경될 수 있습니다. 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1225년 | 비Adobe Commerce API 상수 재정의 | 로 표시되지 않는 상수 `@api` 변경될 수 있습니다. 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1226년 | 비Adobe Commerce API 상수 할당 | 로 표시되지 않는 상수 `@api` 변경될 수 있습니다. 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1322년 | 가져온 비Adobe Commerce API 인터페이스 | 인터페이스가 로 표시되지 않음 `@api` 변경될 수 있습니다. 이 상속을 제거하거나 로 표시된 Adobe Commerce 인터페이스에서 상속으로 바꾸는 것이 좋습니다 `@api` 또는 사용자 지정 코드의 범위에 도입된 인터페이스입니다. |
-| 1324년 | Adobe Commerce 이외의 API 인터페이스 사용 | 인터페이스가 로 표시되지 않음 `@api` 변경될 수 있습니다. 이 상속을 제거하거나 로 표시된 Adobe Commerce 인터페이스에서 상속으로 바꾸는 것이 좋습니다 `@api` 또는 사용자 지정 코드의 범위에 도입된 인터페이스입니다. |
-| 1327년 | 상속된 비Adobe Commerce API 인터페이스 | 로 표시되지 않는 상수 `@api` 변경될 수 있습니다. 대신 사용자 지정 코드 내에서 필요한 값의 비공개 상수를 도입하고 사용하는 것이 좋습니다. |
-| 1328년 | 비Adobe Commerce API 인터페이스 구현 | 인터페이스가 로 표시되지 않음 `@api` 변경될 수 있습니다. 이 상속을 제거하거나 로 표시된 Adobe Commerce 인터페이스에서 상속으로 바꾸는 것이 좋습니다 `@api` 또는 사용자 지정 코드의 범위에 도입된 인터페이스입니다. |
-| 1420년 | Adobe Commerce이 아닌 API 클래스/인터페이스 인스턴스화 | 로 표시되지 않은 클래스 `@api` 변경될 수 있습니다. 로 표시된 인터페이스를 사용하도록 코드를 업데이트하는 것이 좋습니다 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. 또한 클래스 인스턴스를 검색하는 데 권장되는 방법은 ID를 사용하는 것입니다. 클래스의 새 인스턴스가 필요한 경우 공장 사용을 고려해 보십시오. |
-| 1428년 | 구현 세부 사항에 대한 가능한 종속성. | 로 표시되지 않은 클래스 `@api` 변경될 수 있습니다. 로 표시된 인터페이스를 사용하도록 코드를 업데이트하는 것이 좋습니다 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1429년 | 비Adobe Commerce API 메서드 호출 | 로 표시되지 않는 메서드 `@api` 또는 가 API 클래스/인터페이스 내에 선언되지 않을 수 있습니다. 메서드의 인터페이스가 새 버전에서 업데이트되지 않더라도 해당 동작이나 출력이 다를 수 있습니다. 인터페이스 메서드에 의존하는 것이 좋습니다. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1449년 | 구현에 있는 비인터페이스 메서드 호출 | 인터페이스에서 선언되지 않은 메서드는 변경할 수 있습니다. 인터페이스 메서드에 의존하는 것이 좋습니다. 그렇지 않으면 업그레이드 후 이 구현에 의존하는 기능을 테스트해야 합니다. |
-| 1524년 | 비Adobe Commerce API 속성 사용 | 로 표시되지 않는 속성의 값 `@api` 변경될 수 있습니다. 대신 API 인터페이스 메서드에 의존하는 것이 좋습니다. |
-| 1525년 | 비Adobe Commerce API 속성 재정의 | 로 표시되지 않는 속성의 값 `@api` 변경될 수 있습니다. 대신 API 인터페이스 메서드에 의존하는 것이 좋습니다. |
-| 1526년 | Adobe Commerce 이외 API 속성 지정 | 로 표시되지 않는 속성의 값 `@api` 변경될 수 있습니다. 대신 API 인터페이스 메서드에 의존하는 것이 좋습니다. |
-| 5004년 | 인수가 없는 함수는 더 이상 사용되지 않습니다 | 입력을 전달하여 함수의 첫 번째 인수로 유효성을 검사합니다. |
-| 5007년 | 특정 기능의 사용이 금지됩니다 | 이러한 함수를 사용하지 마십시오. |
-| 5009 | 템플릿 지시문은 메서드를 호출할 수 없습니다. 스칼라 배열 액세스만 허용됩니다 | 템플릿에서 메서드 호출을 제거합니다. |
-| 5010년 | 템플릿 `@vars` 주석 블록에 잘못된 JSON이 포함되어 있습니다. | 잘못된 JSON을 수정합니다. |
-| 5011년 | 템플릿 `@vars` 주석 블록에 잘못된 레이블이 있습니다. | 잘못된 레이블을 수정합니다. |
-| 5012년 | 템플릿 `@vars` 메모 블록에 템플릿에 사용된 변수가 없습니다. | 누락된 변수를 @vars 주석 블록에 추가합니다. |
-| 5013년 | 비void html 요소와 함께 자체 닫기 태그를 사용하지 마십시오 | 대신 닫기 태그를 사용하십시오. |
-| 5014년 | 다음 `"active"` 속성이 사용되지 않음 | 활성 모듈 목록은 배포 구성에 정의되어 있습니다. |
-| 5015년 | 다음 `<param>` 노드 사용 안 함 | 사용 `<argument name="..." xsi:type="...">` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5016년 | 다음 `<instance>` 노드 사용 안 함 | 사용 `<argument name="..." xsi:type="object">` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5017년 | 다음 `<array>` 노드 사용 안 함 | 사용 `<argument name="..." xsi:type="array">` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5018년 | 다음 `<item key="...">` 노드 사용 안 함 | 사용 `<item name="..." xsi:type="...">` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5019년 | 다음 `<value>` 노드 사용 안 함 | 대신 실제 값을 텍스트 리터럴으로 제공합니다. |
-| 5020년 | 사용되지 않는 노드: `<supported_blocks>` | 교체 `<supported_containers>`. |
-| 5021년 | 사용되지 않는 노드: `<block_name>` | 교체 `<container_name>`. |
-| 5022년 | 공장 이름이 검색되었습니다. | 위젯 유형은 / 로 시작하면 안 됩니다. |
-| 5023년 | 라인에서 오래된 ACL 구조가 검색됨 | lib/internal/Magento/Framework/Acl/etc/acl.xsd을 확인합니다. |
-| 5024년 | 라인에서 사용되지 않는 메뉴 구조 검색 | app/code/Magento/Backend/etc/menu.xsd을 확인합니다. |
-| 5025년 | 파일에서 오래된 시스템 구성 구조를 발견했습니다. | app/code/Magento/Config/etc/system_file.xsd을 확인합니다. |
-| 5026년 | 사용 안 함 `"text/javascript"` 유형 속성 | 공용 멤버만 사용합니다. |
-| 5028년 | 의 보호 및 개인 구성원에 대한 액세스 `Block` phtml 템플릿에서 클래스는 사용되지 않습니다. | 공용 멤버만 사용합니다. |
-| 5031년 | 오래된 메서드를 포함합니다. | 사용 `getConnection()` 메서드를 사용하십시오. |
-| 5042년 | PHP 클래스 참조의 형식이 잘못되었습니다. | CamelCased 문자, 숫자 및 선행 슬래시만 사용하여 클래스를 참조하는지 확인합니다. |
-| 5043년 | 모듈 참조의 형식이 잘못되었습니다. | 모듈이 문자, 숫자, 밑줄만 사용하고 선행 슬래시는 사용하지 않고 참조되는지 확인합니다. |
-| 5044년 | 클래스 `Zend_Db_Select` 제한됨 | 제안 대체: `\Magento\Framework\DB\Select`. |
-| 5045년 | 클래스 `Zend_Db_Adapter_Pdo_Mysql` 제한됨 | 제안 대체: `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
-| 5046년 | 클래스 `Magento\Framework\Serialize\Serializer\Serialize` 제한됨 | 제안 대체: `Magento\Framework\Serialize\SerializerInterface`. |
-| 5047년 | 클래스 `ArrayObject` 제한됨 | 제안 대체: 사용자 지정 클래스, 다음에서 확장 `ArrayObject` 를 사용하여 serialize/unserialize 메서드를 덮어씁니다. |
-| 5048년 | 클래스 `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` 제한됨 | 제안 대체: 사용자 정의 클래스를 만드는 팩터리이며, `ArrayObject` 를 사용하여 serialize/unserialize 메서드를 덮어씁니다. |
-| 5050년 | 참조할 블록이 제거됩니다. | 블록에 대한 참조를 제거합니다. |
-| 5051년 | `output="toHtml"` 는 사용되지 않습니다 | 사용 `output="1"`. |
-| 5052년 | 클래스 `\Magento\Framework\View\Element\Text\ListText` 은 더 이상 레이아웃에 사용할 수 없습니다. | 클래스 제거 `\Magento\Framework\View\Element\Text\ListText` 레이아웃. |
-| 5053년 | 레이아웃 명령을 통해 메서드 호출 `<action>` 허용되지 않습니다. | 에서 잘못된 메서드를 사용하지 마십시오 `<action>`. |
-| 5054년 | `helper` 특성 포함 `/` | 제거 `/` 을 반환합니다. |
-| 5055년 | `helper` 속성이 다음을 포함하지 않음 `::` | 추가 `::` 도우미 속성으로 바꾸는 중입니다. |
-| 5056년 | 설치 스크립트는 사용되지 않습니다 | 모듈의 etc/db_schema.xml 파일에 선언적 스키마 접근 방식을 사용합니다. |
-| 5057년 | InstallSchema 스크립트는 사용되지 않습니다. | 모듈의 etc/db_schema.xml 파일에 선언적 스키마 접근 방식을 사용합니다. |
-| 5058년 | InstallData 스크립트는 사용되지 않습니다. | 모듈의 설정/패치/데이터 디렉토리에 데이터 패치 접근 방식을 사용합니다. |
-| 5059년 | 설치 스크립트는 사용되지 않습니다 | 모듈의 설치 폴더에 InstallData 클래스를 만듭니다. |
-| 5060년 | 업그레이드 스크립트는 더 이상 사용되지 않습니다 | 모듈의 etc/db_schema.xml 파일에 선언적 스키마 접근 방식을 사용합니다. |
-| 5061년 | UpgradeSchema 스크립트는 사용되지 않습니다 | 모듈의 etc/db_schema.xml 파일에 선언적 스키마 접근 방식을 사용합니다. |
-| 5062년 | UpgradeData 스크립트는 사용되지 않습니다 | 모듈의 설정/패치/데이터 디렉토리에 데이터 패치 접근 방식을 사용합니다. |
-| 5063년 | 업그레이드 스크립트는 더 이상 사용되지 않습니다 | 모듈의 설치/패치/데이터 디렉토리에 데이터 패치 접근 방식을 사용합니다. |
-| 5064년 | 반복 스크립트는 더 이상 사용되지 않습니다 | 모듈의 설치 폴더에 클래스 반복 생성 |
-| 5065년 | &#39;data&#39;가 잘못된 디렉터리에 있습니다. | 모듈의 설정/패치/데이터 폴더 내에 데이터 패치를 만들어 데이터 업그레이드를 수행하거나 모듈의 etc/db_schema.xml 파일에 있는 선언적 스키마 접근 방식을 사용하여 스키마 변경을 수행합니다. |
-| 5066년 | &#39;sql&#39;이 잘못된 디렉터리에 있습니다. | 모듈의 설정/패치/데이터 폴더 내에 데이터 패치를 만들어 데이터 업그레이드를 수행하거나 모듈의 etc/db_schema.xml 파일에 있는 선언적 스키마 접근 방식을 사용하여 스키마 변경을 수행합니다. |
-| 5067년 | XPath로 식별된 노드는 사용되지 않습니다 | 오류에 나타난 오래된 XML을 업데이트해야 합니다. 오류 메시지에서 제안 사항을 따릅니다. |
-| 5068년 | 지시문 `{{htmlescape}}` 는 사용되지 않습니다 | 사용 `{{var}}` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5069년 | 지시문 `{{escapehtml}}` 는 사용되지 않습니다 | 사용 `{{var}}` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 5070년 | 세 번째 매개 변수는 `getChildHtml()` | 호출에서 세 번째 매개 변수 제거 `getChildHtml()`. |
-| 5071년 | 4번째 매개 변수는 `getChildHtml()` | 호출에서 4번째 매개 변수 제거 `getChildHtml()`. |
-| 5073년 | 슬래시가 있는 기존 테이블 이름을 직접 테이블 이름에 고정해야 합니다 | 대신 직접 테이블 이름을 사용하십시오. |
-| 5075년 | 응용 프로그램 모듈은 테스트 모듈의 클래스를 사용하지 않아야 합니다 | 테스트 모듈에서 클래스 사용을 제거합니다. |
-| 5078년 | 클래스는 생성자에서 요청되어야 합니다. 그렇지 않으면 컴파일러가 이러한 클래스를 찾아 생성할 수 없습니다 | 생성자에 클래스를 추가합니다. |
-| 5079년 | var 클래스 변수 사용은 권장되지 않습니다 | &#39;var&#39;를 사용하여 클래스 변수를 선언하지 마십시오. |
-| 5080년 | 가능한 원시 SQL 문이 검색되었습니다. | 대신 저장소 또는 데이터 패치를 사용하십시오. |
-| 5081년 | 템플릿에 대한 도움말의 사용은 금지됩니다 | 대신 ViewModel을 사용합니다. |
-| 5082년 | 템플릿에 $this를 사용하는 것은 더 이상 사용되지 않습니다 | 대신 $block을 사용하십시오. |
-| 5083년 | 상수는 번역 함수의 첫 번째 인수로 사용할 수 없습니다 | 대신 문자열 리터럴을 사용하십시오. |
-| 5085년 | 특정 기능의 사용이 금지됩니다 | 대신 메시지에 대해 권장하는 대체 함수를 사용하십시오. |
-| 5087년 | PHP 버전 간 호환성 문제 | 메시지에서 제안 사항을 따르고 를 확인합니다. [마이그레이션 안내서](https://www.php.net/manual/en/migration81.php). |
-| 5088년 | 필요한 매개 변수 뒤에 있는 선택적 매개 변수 | 선택적 매개 변수 뒤로 이동합니다. |
-| 5089년 | 메서드 가시성 `final private` 발견됨 | 메서드 가시성 변경 `final private` 에만 `private`. |
-| 5090년 | 매직 메서드 `__set_state` 으로 정의되지 않음 `static` | 매직 메서드 `__set_state` 는 `static`. |
-| 5091년 | 클래스 `__toString()` 상속되지 않는 방법 `Stringable` 인터페이스 | 추가 `Stringable` 클래스 인터페이스 `__toString()` 메서드를 사용합니다. |
-| 5092년 | `is_resource()` 이제 개체를 반환하는 함수에 사용되는 메서드입니다. | 변경 `is_resource()` to `instanceof` 개체. |
-| 6001년 | `jQuery.andSelf()` 제거됨 | 사용 `jQuery.addBack()`. |
-| 6002년 | jQuery `$.bind` 및 `$.unbind` 더 이상 사용되지 않음 | 사용 `$.on` 및 `$.off` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 6003년 | 이벤트에 가입할 jQuery 메서드는 더 이상 사용되지 않으며 사용하지 않아야 합니다 | 사용 `.on("event name", fn)` 메서드를 사용하여 이벤트를 구독하는 것이 좋습니다. |
-| 6003년 | 이벤트를 트리거하는 jQuery 메서드는 더 이상 사용되지 않으며 사용하지 않아야 합니다 | 사용 `.trigger("event name")` 메서드를 사용하여 해당 이벤트를 트리거하는 방법을 배웁니다. |
-| 6004년 | jQuery `$.delegate` 및 `$.undelegate` 더 이상 사용되지 않음 | 사용 `$.on` 및 `$.off` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 6005년 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) 이 제거되었습니다. | 사용 (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`)을 가리키도록 업데이트하는 것이 좋습니다. |
-| 6006년 | `jQuery.size()` 제거됨 | 사용 `jQuery.length`. |
-| 6007년 | `jQuery.trim` 는 더 이상 사용되지 않습니다 | 사용 `String.prototype.trim`. |
-| 6008년 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, &#39;inlite&#39; 테마, &#39;모바일&#39; 테마, &#39;현대어&#39; 테마)가 제거됨 | tinymce5와 호환되도록 코드를 업데이트합니다. |
-| 6009년 | `jQuery.isFunction()` 는 더 이상 사용되지 않습니다 | 대부분의 경우 [x === &quot;function&quot; 유형]. |
-| 6009년 | `jQuery.type()` 는 더 이상 사용되지 않습니다 | 다음과 같은 적절한 유형 확인으로 바꿉니다 [x === &quot;function&quot; 유형]. |
-| 6009년 | `jQuery.isArray()` 는 더 이상 사용되지 않습니다 | 대신 네이티브 Array.isArray 메서드를 사용하십시오. |
-| 6009년 | `jQuery.parseJSON()` 는 더 이상 사용되지 않습니다 | JSON 문자열을 구문 분석하려면 대신 기본 JSON.parse 메서드를 사용하십시오. |
-| 6010년 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) 더 이상 사용되지 않습니다. | 대신 jQuery.expr.pseudos를 사용합니다. |
+| 1104 | Using non-API class that is inheriting API interface | `@api` `@api` Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1121 | Extending from non-Adobe Commerce API class | The extended class is no longer present in the codebase. Inheritance is not recommended way of extending Adobe Commerce functionality. `@api` |
+| 1122 | Importing non-Adobe Commerce API class | The extended class is no longer present in the codebase. `@api` Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1123 | Loading non-Adobe Commerce API class | The extended class is no longer present in the codebase. `@api` Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1124 | Using non-Adobe Commerce API class | The extended class is no longer present in the codebase. `@api` Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1224 | Using non-Adobe Commerce API constant | `@api` Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1225 | Overriding non-Adobe Commerce API constant | `@api` Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1226 | Assignation of non-Adobe Commerce API constant | `@api` Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1322 | Imported non-Adobe Commerce API interface | `@api` `@api` |
+| 1324 | Used non-Adobe Commerce API interface | `@api` `@api` |
+| 1327 | Inherited non-Adobe Commerce API interface | `@api` Consider introducing and using a private constant of the required value within the custom code instead. |
+| 1328 | Implemented non-Adobe Commerce API interface | `@api` `@api` |
+| 1420 | Instantiating non-Adobe Commerce API class/interface | `@api` `@api` Otherwise, the functionality relying on this implementation should be tested after the upgrade. Also, the recommended way of retrieving an instance of the class is using DI. Consider using a factory if a new instance of the class is required. |
+| 1428 | Possible dependency on implementation details. | `@api` `@api` Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1429 | Call non-Adobe Commerce API methods | `@api` Even if the interface of the method is not updated in the new version, its behaviour or output can be different. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1449 | Call to non-interface method (that is present in implementation) | Methods that are not declared in the interface may be changed. Consider relying on an interface method. Otherwise, the functionality relying on this implementation should be tested after the upgrade. |
+| 1524 | Using non-Adobe Commerce API property | `@api` Consider relying on the API interface method instead. |
+| 1525 | Overriding non-Adobe Commerce API property | `@api` Consider relying on the API interface method instead. |
+| 1526 | Assignation of non-Adobe Commerce API property | `@api` Consider relying on the API interface method instead. |
+| 5004 | Function without argument has been deprecated | Pass the input to validate as the first argument of the function. |
+| 5007 | The use of certain functions is discouraged | Avoid using these functions. |
+| 5009 | Template directives may not invoke methods. Only scalar array access is allowed | Remove method invocations from the template. |
+| 5010 | `@vars` | Fix invalid JSON. |
+| 5011 | `@vars` | Fix invalid label. |
+| 5012 | `@vars` | Add missing variable to @vars comment block. |
+| 5013 | Avoid using self-closing tag with non-void html element | Use close tag instead. |
+| 5014 | `"active"` | The list of active modules is defined in deployment configuration. |
+| 5015 | `<param>` | `<argument name="..." xsi:type="...">` |
+| 5016 | `<instance>` | `<argument name="..." xsi:type="object">` |
+| 5017 | `<array>` | `<argument name="..." xsi:type="array">` |
+| 5018 | `<item key="...">` | `<item name="..." xsi:type="...">` |
+| 5019 | `<value>` | Instead, provide the actual value as a text literal. |
+| 5020 | `<supported_blocks>` | `<supported_containers>` |
+| 5021 | `<block_name>` | `<container_name>` |
+| 5022 | Factory name detected | Widget type should not begin with /. |
+| 5023 | Obsolete ACL structure detected in line | Check lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
+| 5024 | Obsolete menu structure detected in line | Check app/code/Magento/Backend/etc/menu.xsd. |
+| 5025 | Obsolete system configuration structure detected in file | Check app/code/Magento/Config/etc/system_file.xsd. |
+| 5026 | `"text/javascript"` | Use only public members. |
+| 5028 | `Block` | Use only public members. |
+| 5031 | Contains obsolete method | `getConnection()` |
+| 5042 | Incorrect format of PHP class reference | Check that class is referenced using only camelCased letters, numbers, and no leading slash. |
+| 5043 | Incorrect format of module reference | Check that module is referenced using only letters, numbers, underscores, and no leading slash. |
+| 5044 | `Zend_Db_Select` | `\Magento\Framework\DB\Select` |
+| 5045 | `Zend_Db_Adapter_Pdo_Mysql` | `\Magento\Framework\DB\Adapter\Pdo\Mysql` |
+| 5046 | `Magento\Framework\Serialize\Serializer\Serialize` | `Magento\Framework\Serialize\SerializerInterface` |
+| 5047 | `ArrayObject` | `ArrayObject` |
+| 5048 | `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` | `ArrayObject` |
+| 5050 | The block being referenced is removed | Remove reference to block. |
+| 5051 | `output="toHtml"` | `output="1"` |
+| 5052 | `\Magento\Framework\View\Element\Text\ListText` | `\Magento\Framework\View\Element\Text\ListText` |
+| 5053 | `<action>` | `<action>` |
+| 5054 | `helper``/` | `/` |
+| 5055 | `helper``::` | `::` |
+| 5056 | Install scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5057 | InstallSchema scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5058 | InstallData scripts are obsolete | Use data patches approach in module\&#39;s Setup/Patch/Data dir. |
+| 5059 | Install scripts are obsolete | Create a class InstallData in the module\&#39;s Setup folder. |
+| 5060 | Upgrade scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5061 | UpgradeSchema scripts are obsolete | Use declarative schema approach in module\&#39;s etc/db_schema.xml file. |
+| 5062 | UpgradeData scripts are obsolete | Use data patches approach in module\&#39;s Setup/Patch/Data dir. |
+| 5063 | Upgrade scripts are obsolete | Use data patches approach in the module\&#39;s Setup/Patch/Data dir. |
+| 5064 | Recurring scripts are obsolete | Create class Recurring in the module\&#39;s Setup folder. |
+| 5065 | &#39;data&#39; is in an invalid directory | Create a data patch within module&#39;s Setup/Patch/Data folder for data upgrades or use declarative schema approach in module&#39;s etc/db_schema.xml file for schema changes. |
+| 5066 | &#39;sql&#39; is in an invalid directory | Create a data patch within module&#39;s Setup/Patch/Data folder for data upgrades or use declarative schema approach in module&#39;s etc/db_schema.xml file for schema changes. |
+| 5067 | Nodes identified by XPath are obsolete | Obsolete XML pointed out in the error should be updated. Follow the suggestions from the error message. |
+| 5068 | `{{htmlescape}}` | `{{var}}` |
+| 5069 | `{{escapehtml}}` | `{{var}}` |
+| 5070 | `getChildHtml()` | `getChildHtml()` |
+| 5071 | `getChildHtml()` | `getChildHtml()` |
+| 5073 | Legacy table names with slash must be fixed to direct table names | Use direct table name instead. |
+| 5075 | Application modules should not use classes from test modules | Remove usage of classes from test modules. |
+| 5078 | Class must be requested in constructor, otherwise compiler will not be able to find and generate these classes | Add class to constructor. |
+| 5079 | Use of var class variables is discouraged | Avoid using &#39;var&#39; to declare class variable. |
+| 5080 | Possible raw SQL statement detected | Use repositories or data patches instead. |
+| 5081 | The use of helpers in templates is discouraged | Use ViewModel instead. |
+| 5082 | The use of $this in templates is deprecated | Use $block instead. |
+| 5083 | Constants are not allowed as the first argument of translation function | Use string literal instead. |
+| 5085 | The use of certain functions is discouraged | Use the alternative function advised on the message instead. |
+| 5087 | PHP cross-version compatibility issue | [](https://www.php.net/manual/en/migration81.php) |
+| 5088 | Optional parameters found after required ones | Move required parameters after optional ones. |
+| 5089 | `final private` | `final private``private` |
+| 5090 | `__set_state``static` | `__set_state``static` |
+| 5091 | `__toString()``Stringable` | `Stringable``__toString()` |
+| 5092 | `is_resource()` | `is_resource()``instanceof` |
+| 6001 | `jQuery.andSelf()` | `jQuery.addBack()` |
+| 6002 | `$.bind``$.unbind` | `$.on``$.off` |
+| 6003 | jQuery method to subscribe to event is deprecated and shouldn&#39;t be used | `.on("event name", fn)` |
+| 6003 | jQuery method to trigger event is deprecated and shouldn&#39;t be used | `.trigger("event name")` |
+| 6004 | `$.delegate``$.undelegate` | `$.on``$.off` |
+| 6005 | `jQuery.load()``jQuery.unload()``jQuery.error()` | `.on("load", fn)``.on("unload", fn)``.on("error", fn)` |
+| 6006 | `jQuery.size()` | `jQuery.length` |
+| 6007 | `jQuery.trim` | `String.prototype.trim` |
+| 6008 | `addButton``addContextToolbar``addMenuItem``addSidebar``file_browser_callback``insert_button_items` | Update code to be compatible with tinymce5. |
+| 6009 | `jQuery.isFunction()` | [] |
+| 6009 | `jQuery.type()` | [] |
+| 6009 | `jQuery.isArray()` | Use the native Array.isArray method instead. |
+| 6009 | `jQuery.parseJSON()` | To parse JSON strings, use the native JSON.parse method instead. |
+| 6010 | `jQuery.expr[":"]``jQuery.expr.filters` | Use jQuery.expr.pseudos instead. |
 
 {style=&quot;table-layout:auto&quot;}
 
-## 경고
+## Warnings
 
-### 코어 코드
+### Core code
 
-이러한 경고는 코어 코드 베이스에 작은 불일치가 있을 때 보고됩니다.
+These warnings are reported when there are minor inconsistencies in the core codebase.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 2004년 | 작성기 종속성 버전이 일치하지 않습니다 | 문제는 이메일과 실제 프로젝트의 작성기 종속성 버전이 다르음을 나타냅니다. 실행을 통해 종속성 업데이트 `composer update <package_name>`. |
+| 2004 | Composer dependency version mismatch | Issue indicates that Composer dependency version in etalon and actual project is different. `composer update <package_name>` |
 
 {style=&quot;table-layout:auto&quot;}
 
-### 사용자 지정 코드
+### Custom code
 
-사용되지 않는 코드에 대한 참조가 검색되면 사용자 지정 코드 경고가 발생합니다. 이러한 참조는 지원되는 확장 포인트로 대체해야 합니다. 다음 사항에 주의하십시오. `@see` 권장 사항에 사용되지 않는 항목의 주석. 이러한 오류는 사소한 코딩 표준이 손상된 경우에도 보고됩니다.
+Custom code warnings are raised when the references to deprecated code are detected. Such references should be replaced with the supported extension points. `@see` These errors are also reported when minor coding standards have been broken.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 1131년 | Adobe Commerce에서 확장 ``@deprecated`` 클래스 | 확장 클래스는 향후 버전에서 제거됩니다. Adobe Commerce 기능을 확장하는 데에는 상속이 권장되지 않습니다. 로 표시된 클래스를 사용하도록 코드 업데이트 `@api`. |
-| 1132년 | Adobe Commerce 가져오기 `@deprecated` 클래스 | 확장 클래스는 향후 버전에서 제거됩니다. 로 표시된 Adobe Commerce 클래스 사용을 고려해 보십시오 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 1133년 | Adobe Commerce 로드 중 `@deprecated` 클래스 | 확장 클래스는 향후 버전에서 제거됩니다. 로 표시된 Adobe Commerce 클래스 사용을 고려해 보십시오 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 1134년 | Adobe Commerce 사용 `@deprecated` 클래스 | 확장 클래스는 향후 버전에서 제거됩니다. 로 표시된 Adobe Commerce 클래스 사용을 고려해 보십시오 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 1234년 | Adobe Commerce 사용 `@deprecated` 상수 | 사용 중단되는 상수가 향후 버전에서 제거됩니다. 로 표시된 상수를 사용하는 것이 좋습니다 `@api` 또는 대신 구현 내의 개인 상수입니다. |
-| 1235년 | Adobe Commerce 재정의 `@deprecated` 상수 | 사용 중단되는 상수가 향후 버전에서 제거됩니다. 로 표시된 상수를 사용하는 것이 좋습니다 `@api` 또는 대신 구현 내의 개인 상수입니다. |
-| 1236년 | Adobe Commerce 지정 `@deprecated` 상수 | 사용 중단되는 상수가 향후 버전에서 제거됩니다. 로 표시된 상수를 사용하는 것이 좋습니다 `@api` 또는 대신 구현 내의 개인 상수입니다. |
-| 1332년 | 가져온 Adobe Commerce `@deprecated` 인터페이스 | 사용 중단되는 인터페이스는 향후 버전에서 제거됩니다. 로 표시된 인터페이스 또는 클래스 사용을 고려해 보십시오 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 1334년 | 사용된 Adobe Commerce `@deprecated` 인터페이스 | 사용 중단되는 인터페이스는 향후 버전에서 제거됩니다. 로 표시된 인터페이스 또는 클래스 사용을 고려해 보십시오 `@api` 을 가리키도록 업데이트하는 것이 좋습니다. |
-| 1337년 | Adobe Commerce에서 상속됨 `@deprecated` 인터페이스 | 사용 중단되는 인터페이스는 향후 버전에서 제거됩니다. 로 표시된 인터페이스를 사용하여 인터페이스 상속을 제거하는 것이 좋습니다 `@api` 또는 대신 구현 내에 도입된 인터페이스입니다. |
-| 1338년 | 구현된 Adobe Commerce `@deprecated` 인터페이스 | 사용 중단되는 인터페이스는 향후 버전에서 제거됩니다. 로 표시된 인터페이스를 사용하여 인터페이스 상속을 제거하는 것이 좋습니다 `@api` 또는 대신 구현 내에 도입된 인터페이스입니다. |
-| 1430년 | 선언되지 않은 dataobject 메서드 호출 | 선언되지 않은 매직 메서드는 변경될 수 있습니다. 대신 인터페이스 메서드에 의존하는 것이 좋습니다. |
-| 1439년 | Adobe Commerce으로 전화 `@deprecated` 메서드 | 더 이상 사용되지 않는 메서드는 다음 버전에서 제거됩니다. API 인터페이스에 선언된 메서드에 의존하는 것을 대신 고려해 보십시오. |
-| 1534년 | Adobe Commerce 사용 `@deprecated` 속성 | 더 이상 사용되지 않는 메서드는 다음 버전에서 제거됩니다. API 인터페이스에 선언된 메서드에 의존하는 것을 대신 고려해 보십시오. |
-| 1535년 | Adobe Commerce 재정의 `@deprecated` 속성 | 사용되지 않는 속성은 향후 버전에서 제거됩니다. API 인터페이스에 선언된 메서드를 사용하거나 대신 구현 내에서 개인 속성을 사용하는 것이 좋습니다. |
-| 1536년 | Adobe Commerce 지정 `@deprecated` 속성 | 더 이상 사용되지 않는 메서드는 다음 버전에서 제거됩니다. API 인터페이스에 선언된 메서드에 의존하는 것을 대신 고려해 보십시오. |
-| 5006년 | 생성자에서 프록시 및 인터셉터는 명시적으로 요청해서는 안 됩니다. | 원래 클래스는 생성자 매개 변수의 형식으로 선언해야 합니다. 인터셉터/프록시 클래스는 프레임워크 종속성 삽입 구현으로 전달됩니다. |
-| 5074년 | 사용되지 않는 메서드 사용 `getResource()` 대상(저장 / 로드 / 삭제) 데이터가 검색됩니다. | 대신 저장소를 사용하십시오. |
-| 5086년 | 상수에 대한 가시성을 선언하지 않습니다 | 모든 상수에 대한 가시성을 선언합니다. |
+| 1131 | ``@deprecated`` | The extended class will be removed in upcoming versions. Inheritance is not recommended way of extending Adobe Commerce functionality. `@api` |
+| 1132 | `@deprecated` | The extended class will be removed in upcoming versions. `@api` |
+| 1133 | `@deprecated` | The extended class will be removed in upcoming versions. `@api` |
+| 1134 | `@deprecated` | The extended class will be removed in upcoming versions. `@api` |
+| 1234 | `@deprecated` | The deprecated constant will be removed in upcoming versions. `@api` |
+| 1235 | `@deprecated` | The deprecated constant will be removed in upcoming versions. `@api` |
+| 1236 | `@deprecated` | The deprecated constant will be removed in upcoming versions. `@api` |
+| 1332 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1334 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1337 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1338 | `@deprecated` | The deprecated interface will be removed in upcoming versions. `@api` |
+| 1430 | Call not declared dataobject method | The magic methods that are not declared may be changed. Consider relying on interface methods instead. |
+| 1439 | `@deprecated` | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1440 | Method signature mismatch | A call or override of core method is detected with parameters, arguments or return type that does not match the method signature. |
+| 1534 | `@deprecated` | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 1535 | `@deprecated` | The deprecated property will be removed in upcoming versions. Consider relying on methods declared in API interfaces or using a private property within your implementation instead. |
+| 1536 | `@deprecated` | The deprecated method will be removed in upcoming versions. Consider relying on methods declared in API interfaces instead. |
+| 5006 | Proxies and interceptors MUST never be explicitly requested in constructors | The original class should be declared as a type of the constructor parameter. The Interceptor/Proxy class will be passed by the framework dependency injection implementation. |
+| 5074 | `getResource()` | Use a repository instead. |
+| 5086 | Visibility is not declared on a constant | Declare the visibility on all constants. |
 
 {style=&quot;table-layout:auto&quot;}
 
-### GraphQL 스키마
+### GraphQL Schema
 
-GraphQL 스키마 경고는 새 버전의 스키마에 추가 항목이 추가되면 발생합니다. 구현을 검토하여 요청에 사용해야 하는지 확인하는 것이 좋습니다.
+GraphQL Schema warnings are raised when the additional items are added to the schema in the new version. It is recommended to review the implementation to see if they should be used for requests.
 
-| 오류 코드 | 오류 설명 | 추천 작업 |
+| Error code | Error description | Suggested action |
 | --- | --- | --- |
-| 3206년 | 인수 기본값이 변경되었습니다. | 사용자 지정에 쿼리를 사용하는 경우 인수 값을 명시적으로 지정해야 할 수 있습니다. |
-| 3302년 | 합계에 추가된 유형 | 형식이 조합에 추가되었습니다. 구현 처리 시 이 결합 유형을 반환하는 쿼리의 결과를 확인하고 추가된 유형을 처리할 수 있는지 확인합니다. |
-| 3304년 | 선택적 입력 필드가 추가되었습니다 | 선택적 입력 필드가 추가되었습니다. 구현을 확인하여 |
-| 3305년 | 구현된 인터페이스 추가 | 필드는 구현에서 고려할 수 있는 추가 정보를 수락/제공할 수 있습니다. |
-| 3306년 | 열거형에 추가된 값 | 값이 열거형에 추가되었습니다. 클라이언트가 열거형 값에 switch 문을 포함하고 기본 대/소문자를 포함하지 않으면 이 변경으로 인해 예기치 않은 동작이 발생할 수 있습니다. |
-| 3308년 | 선택적 인수가 추가되었습니다. | 쿼리에서 사용자 지정에서 새 인수를 사용하는 경우 요청에 추가해야 할 수 있습니다. |
+| 3206 | Argument default value changed | If the query is used in the customization the argument value may have to be specified explicitly. |
+| 3302 | Type added to union | The type was added to the union. Check the implementation processing the result of the query returning this union type and ensure it is able to handle the added type. |
+| 3304 | Optional input field added | Optional input field added. Check the implementation to ensure. |
+| 3305 | Implemented interface added | The field can accept/provide more information that can be considered in the implementation. |
+| 3306 | Value added to enum | A value was added to an enum. If clients contain a switch statement on the enum&#39;s value and do not include a default case, this change might cause unexpected behavior. |
+| 3308 | Optional argument added | If the query is using a new argument in the customization it may need to be added to the request. |
 
 {style=&quot;table-layout:auto&quot;}
