@@ -1,9 +1,9 @@
 ---
 title: 를 실행합니다. [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
+source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,15 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 
 #### HTML
 
-HTML 파일에는 식별된 문제 목록 및 분석 요약이 포함되어 있습니다. 4가지 차트도 포함되어 있습니다.
+HTML 파일에는 분석 요약 및 식별된 문제 목록도 포함되어 있습니다.
+
+![HTML 보고서 - 요약](../../assets/upgrade-guide/uct-html-summary.png)
+
+에서 식별된 문제를 쉽게 탐색할 수 있습니다 [!DNL Upgrade Compatibility Tool] 분석:
+
+![HTML 보고서 - 세부 정보](../../assets/upgrade-guide/uct-html-details.png)
+
+HTML 보고서에는 4개의 차트도 포함되어 있습니다.
 
 - **문제 심각도별 모듈**: 모듈별 심각도 분포를 표시합니다.
 - **문제 심각도별 파일**: 파일별 심각도 배포를 표시합니다.
@@ -171,9 +179,21 @@ HTML 파일에는 식별된 문제 목록 및 분석 요약이 포함되어 있�
 
 이러한 차트를 사용하면 가장 손상된 부품과 업그레이드를 수행하는 데 더 많은 작업이 필요한 부품을 한눈에 파악할 수 있습니다.
 
-![HTML 보고서 - 요약](../../assets/upgrade-guide/uct-html-summary.png)
+![HTML 보고서 - 다이어그램](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-![HTML 보고서 - 세부 정보](../../assets/upgrade-guide/uct-html-details.png)
+보고서에 표시된 문제를 최소 문제 수준에 따라 필터링할 수 있습니다(기본적으로 [경고]).
+
+오른쪽 상단 모서리에는 필요에 따라 다른 드롭다운을 선택할 수 있는 드롭다운이 있습니다. 식별된 문제 목록은 그에 따라 필터링됩니다.
+
+![HTML 보고서 - 드롭다운 사용](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+낮은 문제 수준의 문제는 제거되지만 알림이 표시되므로 모듈별로 식별된 문제가 항상 인식됩니다.
+
+또한 다이어그램은 `Modules with relative sizes and issues`: `min-issue-level` 원래 설정
+
+다른 결과를 보려면, `--min-issue-level` 선택 사항입니다.
+
+![HTML 보고서 - 버블 차트 다이어그램](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 이 보고서를 다른 출력 폴더로 내보내려면 다음을 수행하십시오.
 
@@ -341,8 +361,8 @@ bin/uct graphql:compare <schema1> <schema2>
 다음 [!DNL Upgrade Compatibility Tool] 기본적으로 프로젝트에서 식별된 모든 문제와 함께 결과가 포함된 보고서를 제공합니다. 업그레이드를 완료하기 위해 해결해야 하는 문제에 집중할 수 있도록 결과를 최적화할 수 있습니다.
 
 - 옵션을 사용합니다 `--ignore-current-version-compatibility-issues`: 현재 Adobe Commerce 버전에 대해 알려진 모든 중요한 문제, 오류 및 경고를 표시하지 않습니다. 업그레이드하려는 버전에 대한 오류만 제공됩니다.
-- 추가 `--min-issue-level` 옵션을 선택하면 이 설정을 통해 최소 문제 수준을 설정하여 업그레이드에 가장 중요한 문제만 우선 순위를 지정할 수 있습니다. 특정 공급업체, 모듈 또는 심지어 디렉토리만 분석하려는 경우 경로를 옵션으로 지정할 수도 있습니다.
-- 를 실행합니다. `bin` 옵션이 추가된 명령 `-m`. 이를 통해 [!DNL Upgrade Compatibility Tool] 특정 모듈을 독립적으로 분석하고, [!DNL Upgrade Compatibility Tool].
+- 추가 `--min-issue-level` 옵션을 선택하면 이 설정을 통해 최소 문제 수준을 설정하여 업그레이드에 가장 중요한 문제만 우선 순위를 지정할 수 있습니다.
+- 특정 공급업체, 모듈 또는 심지어 디렉토리만 분석하려는 경우 경로를 옵션으로 지정할 수도 있습니다. 를 실행합니다. `bin` 옵션이 추가된 명령 `-m`. 이를 통해 [!DNL Upgrade Compatibility Tool] 특정 모듈을 독립적으로 분석하고, [!DNL Upgrade Compatibility Tool].
 
 ### Adobe Commerce 우수 사례 따라하기
 
