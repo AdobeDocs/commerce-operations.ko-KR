@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: 이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Adobe에서 [쉘 스크립트](https://github.com/magento-swat/install-agent-hel
 1. 설치를 확인합니다.
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -253,7 +253,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
 
 ### 서비스 {#service}
 
-1. 시스템 단위 파일 만들기 `(/etc/systemd/system/scheduler.service)` 다음 구성으로 대체합니다(바꾸기 `<filesystemowner>` 에이전트가 설치된 디렉토리를 소유하는 Unix 사용자 사용)
+1. 시스템 단위 파일 만들기 `(/etc/systemd/system/scheduler.service)` 다음 구성으로 대체합니다(바꾸기 `<filesystemowner>` 에이전트 및 Adobe Commerce 소프트웨어가 설치된 디렉토리를 소유하는 Unix 사용자 사용) 에이전트를 루트 사용자로 다운로드한 경우 디렉토리 및 중첩 파일 소유자를 변경합니다.
 
    ```config
    [Unit]
