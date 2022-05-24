@@ -1,9 +1,9 @@
 ---
 title: 를 실행합니다. [!DNL Upgrade Compatibility Tool]
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
+source-git-commit: 64b061f3b2f93827bfdb904a6faddbd21f4da5e6
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ bin/uct upgrade:check <dir>
 
 를 실행할 수 있습니다 `core:code:changes` 특정 Adobe Commerce 인스턴스에 대한 코어 코드 변경 사항만 분석하는 명령입니다. 자세한 내용은 [코어 코드 변경 사항](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) 섹션을 참조하십시오.
 
-를 사용할 수 있는 동안 `graphql:compare` 두 GraphQL 스키마를 비교하여 변경 사항이 있는지 확인하는 명령 자세한 내용은 [GraphQL 스키마 호환성 확인](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) 섹션을 참조하십시오.
+를 사용할 수 있습니다 `graphql:compare` 두 GraphQL 스키마를 비교하여 변경 사항이 있는지 확인하는 명령 자세한 내용은 [GraphQL 스키마 호환성 확인](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) 섹션을 참조하십시오.
 
 ### Recommendations 를 사용하여 `upgrade:check` 명령
 
@@ -317,6 +317,10 @@ bin/uct upgrade:check <dir> -c 2.4.3
 bin/uct refactor <dir>
 ```
 
+여기서 인수는 다음과 같습니다.
+
+- `<dir>`: Adobe Commerce 설치 디렉토리.
+
 ## GraphQL 스키마 호환성 확인
 
 다음 [!DNL Upgrade Compatibility Tool] 또한 두 GraphQL 종단점을 검토하고 두 종단점 간의 끊김 및 위험한 변경을 찾는 스키마를 비교할 수 있는 옵션을 제공합니다.
@@ -350,9 +354,10 @@ bin/uct graphql:compare <schema1> <schema2>
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-자세한 내용은 [개발자 정보](../upgrade-compatibility-tool/developer.md) 추가 정보.
-
 를 실행할 수 있습니다 [!DNL Upgrade Compatibility Tool] PhpStorm 플러그인을 통해 실행 구성을 사용할 수 있습니다. 자세한 내용은 [[!DNL Upgrade Compatibility Tool] 구성 실행](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) 주제 를 참조하십시오.
+
+다음 보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30) 사용 방법을 배우려면 [!DNL Upgrade Compatibility Tool] Magento PHPStorm 플러그인과 함께 사용할 수 있습니다.
+
 
 ## 권장 작업
 

@@ -1,7 +1,7 @@
 ---
 user-guide-title: 업그레이드 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션을 업그레이드하는 것이 중요한 이유와 업그레이드를 성공적으로 계획하고 실행하는 방법을 알아보십시오.
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 20%
@@ -32,12 +32,12 @@ ht-degree: 20%
    - [패치 작동 방식](patches/overview.md)
    - [패치 적용](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [개요](upgrade-compatibility-tool/overview.md)
+   - [[!DNL Upgrade Compatibility Tool] 개요](upgrade-compatibility-tool/overview.md)
    - [전제 조건](upgrade-compatibility-tool/prerequisites.md)
    - [설치](upgrade-compatibility-tool/install.md)
    - [도구 실행](upgrade-compatibility-tool/run.md)
+   - [관련 도구](upgrade-compatibility-tool/related-tools.md)
    - [통합 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [개발자 정보](upgrade-compatibility-tool/developer.md)
    - [오류 메시지](upgrade-compatibility-tool/error-messages.md)
 - 기여 개발자 {#developer}
    - [Git 기반 설치 업그레이드](developer/git-installs.md)
