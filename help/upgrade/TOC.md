@@ -1,10 +1,10 @@
 ---
 user-guide-title: 업그레이드 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션을 업그레이드하는 것이 중요한 이유와 업그레이드를 성공적으로 계획하고 실행하는 방법을 알아보십시오.
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '145'
+ht-degree: 19%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [패치 작동 방식](patches/overview.md)
    - [패치 적용](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] 개요](upgrade-compatibility-tool/overview.md)
+   - [개요](upgrade-compatibility-tool/overview.md)
    - [전제 조건](upgrade-compatibility-tool/prerequisites.md)
-   - [설치](upgrade-compatibility-tool/install.md)
-   - [도구 실행](upgrade-compatibility-tool/run.md)
+   - 를 사용하십시오 [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [명령줄 인터페이스에서 도구 실행](upgrade-compatibility-tool/run.md)
+      - [와 통합 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Magento PHPStorm 플러그인 내에서 도구 실행](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - 보고 {#reporting}
+      - [보고서](upgrade-compatibility-tool/reports.md)
+      - [오류 메시지](upgrade-compatibility-tool/error-messages.md)
    - [관련 도구](upgrade-compatibility-tool/related-tools.md)
-   - [통합 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [오류 메시지](upgrade-compatibility-tool/error-messages.md)
 - 기여 개발자 {#developer}
    - [Git 기반 설치 업그레이드](developer/git-installs.md)
    - [모듈 관리](developer/manage-modules.md)
