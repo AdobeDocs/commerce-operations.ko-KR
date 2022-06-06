@@ -1,7 +1,7 @@
 ---
 title: 상태 속성
 description: 의 다양한 상태 정보에 대해 알아봅니다. [!DNL Site-Wide Analysis Tool].
-source-git-commit: 1222d1c87de26ce95c4eefaa9d2a9c3731e1b3cf
+source-git-commit: 01d4e800c31615494e6e3f20adfbf3d35fabcce9
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -19,6 +19,3 @@ ht-degree: 0%
 **[!UICONTROL Health Index Bar]**: 그것은 0이 최악이고 100이 완벽한 건강인 0부터 100까지 전체적인 현장 건강을 측정합니다. 활성 추천의 수량 및 우선순위 가중치 계수에 따라 계산됩니다.
 
 **[!UICONTROL Download Recommendations Report]**: Recommendations 보고서는 프로젝트에 적용할 수 있는 개인화된 추천을 제공합니다. 이 섹션을 클릭하여 PDF 보고서를 다운로드할 수 있습니다.
-
-
-

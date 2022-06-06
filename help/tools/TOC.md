@@ -1,9 +1,9 @@
 ---
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 도구 사용, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
-source-git-commit: 55282af5ac2aef62f55c0d552045d622102a1091
+source-git-commit: 89ac54c84a9db0e9f4e171d07a55f7cbe2a2280d
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
@@ -19,4 +19,4 @@ ht-degree: 0%
    - [상태 속성](site-wide-analysis-tool/status.md)
    - [기능 탭](site-wide-analysis-tool/features-tabs.md)
    - [확장](site-wide-analysis-tool/extensions.md)
-
+   - [패치](site-wide-analysis-tool/patches.md)
