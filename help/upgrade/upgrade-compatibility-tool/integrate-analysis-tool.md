@@ -1,9 +1,9 @@
 ---
 title: '"통합 [!DNL Site-Wide Analysis Tool]"'
 description: 다음 단계에 따라 을 검색합니다. [!DNL Upgrade Compatibility Tool] 보고서 출처 [!DNL Site-Wide Analysis Tool] 대시보드 를 사용하십시오.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 ![UCT SWAT 위젯 - 결과](../../assets/upgrade-guide/uct-swat-results.png)
 
-클릭 **[!UICONTROL Download Report]** 읽어들이기 [!DNL Upgrade Compatibility Tool] 보고서 HTML 및 세부 사항 검토
+클릭 **[!UICONTROL Download Report]** 읽어들이기 [!DNL Upgrade Compatibility Tool] [HTML 보고서](../upgrade-compatibility-tool/reports.md#html-report) 세부 사항을 검토합니다.
