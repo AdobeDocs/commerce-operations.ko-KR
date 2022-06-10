@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 보고서"'
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 - *총 위험 오류*: 발견된 중요한 오류 수입니다.
 - *총 오류*: 발견된 오류 수입니다.
 - *총 경고 수*: 찾은 경고 수
+- *메모리 최대 사용*: 최대 메모리 양 [!DNL Upgrade Compatibility Tool] 을 실행하는 동안 에 도달했습니다.
 
 다음 명령줄 인터페이스 예를 참조하십시오.
 
