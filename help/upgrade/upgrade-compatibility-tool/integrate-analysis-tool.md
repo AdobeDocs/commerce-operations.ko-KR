@@ -1,9 +1,9 @@
 ---
 title: '"통합 [!DNL Site-Wide Analysis Tool]"'
 description: 다음 단계에 따라 을 검색합니다. [!DNL Upgrade Compatibility Tool] 보고서 출처 [!DNL Site-Wide Analysis Tool] 대시보드 를 사용하십시오.
-source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
+source-git-commit: 0d4ccc8c2e1a470b5fb3a7d59e81230e8986c257
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 자세한 내용은 [[!DNL Site-Wide Analysis Tool] 사용 안내서](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) 추가 정보.
 
-## 를 실행합니다. [!DNL Upgrade Compatibility Tool] SWAT에서
+## 를 실행합니다. [!DNL Upgrade Compatibility Tool] 에서 [!DNL Site-Wide Analysis Tool]
 
 로 이동합니다 [!DNL Site-Wide Analysis Tool] 프로젝트에 대한 대시보드 를 찾아 [!DNL Upgrade Compatibility Tool] 위젯.
 
@@ -32,3 +32,5 @@ ht-degree: 0%
 ![UCT SWAT 위젯 - 결과](../../assets/upgrade-guide/uct-swat-results.png)
 
 클릭 **[!UICONTROL Download Report]** 읽어들이기 [!DNL Upgrade Compatibility Tool] [HTML 보고서](../upgrade-compatibility-tool/reports.md#html-report) 세부 사항을 검토합니다.
+
+를 실행할 때 [!DNL Upgrade Compatibility Tool] 사용 [!DNL Site-Wide Analysis Tool] 이 보고서는 프로젝트 버전과 최신 릴리스 버전을 비교하는 결과를 보여줍니다.
