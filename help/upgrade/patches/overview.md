@@ -1,9 +1,9 @@
 ---
 title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source의 다양한 패치 유형과 패치 작동 방식에 대해 알아봅니다.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 - 변경을 시작할 라인 번호와 변경할 라인 수
 - 바꿀 새 코드입니다.
 
-이 [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) 프로그램이 실행되면 이 파일이 읽히고 지정된 변경 사항이 파일에 적용됩니다.
+패치 프로그램이 실행되면 이 파일이 읽히고 지정된 변경 사항이 파일에 적용됩니다.
 
 패치 유형은 다음과 같습니다.
 
