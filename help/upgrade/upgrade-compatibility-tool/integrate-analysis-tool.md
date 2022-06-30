@@ -1,9 +1,9 @@
 ---
 title: '"통합 [!DNL Site-Wide Analysis Tool]"'
 description: 다음 단계에 따라 을 검색합니다. [!DNL Upgrade Compatibility Tool] 보고서 출처 [!DNL Site-Wide Analysis Tool] 대시보드 를 사용하십시오.
-source-git-commit: 0d4ccc8c2e1a470b5fb3a7d59e81230e8986c257
+source-git-commit: 1fc12289125a5954243e177a0c21505234eb2e81
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,7 @@ ht-degree: 0%
 
 클릭 **[!UICONTROL Download Report]** 읽어들이기 [!DNL Upgrade Compatibility Tool] [HTML 보고서](../upgrade-compatibility-tool/reports.md#html-report) 세부 사항을 검토합니다.
 
-를 실행할 때 [!DNL Upgrade Compatibility Tool] 사용 [!DNL Site-Wide Analysis Tool] 이 보고서는 프로젝트 버전과 최신 릴리스 버전을 비교하는 결과를 보여줍니다.
+
+>[!NOTE]
+>
+> 실행 [!DNL Upgrade Compatibility Tool] 사용 [!DNL Site-Wide Analysis Tool] 은 결과를 최적화하고 target 업그레이드를 위해 새롭고 중요한 문제에 집중할 수 있도록 도와줍니다. 이 템플릿은 를 사용합니다 [`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results) 옵션 및 은 항상 프로젝트 버전과 최신 릴리스 버전을 비교하는 결과를 표시합니다.
