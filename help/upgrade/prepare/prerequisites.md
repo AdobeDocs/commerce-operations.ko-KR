@@ -1,9 +1,9 @@
 ---
 title: 전체 사전 요구 사항
 description: 이러한 전제 조건 단계를 완료하여 업그레이드를 위한 Adobe Commerce 또는 Magento Open Source 프로젝트를 준비합니다.
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Adobe Commerce 2.4에는 직렬화된 데이터를 JSON으로 변환해야 하�
 1. 변수를 설정합니다.
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
