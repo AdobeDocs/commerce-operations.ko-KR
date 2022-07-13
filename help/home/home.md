@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: e38d4f1c3e7618e77afb638f4a996cd7e5ebdbd5
+source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '206'
 ht-degree: 1%
 
 ---
@@ -59,11 +59,11 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/extensions/">
-       <img alt="확장" src="../assets/icons/extension.svg" width="40" height="40"/>
+    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+       <img alt="명령줄 도구 참조" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/extensions/"><strong>확장</strong></a>
+      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>명령줄 도구 참조</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -84,14 +84,6 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
   </td>
 </tr>
 <tr>
-  <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
-       <img alt="명령줄 도구 참조" src="../assets/icons/page-rule.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>명령줄 도구 참조</strong></a>
-    </div>
-  </td>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
       <img alt="구현" src="../assets/icons/play.svg" width="40" height="40"/>
