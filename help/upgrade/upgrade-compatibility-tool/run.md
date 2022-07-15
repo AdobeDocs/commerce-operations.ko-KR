@@ -1,9 +1,9 @@
 ---
 title: '"실행 [!DNL Upgrade Compatibility Tool]"'
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] ( Adobe Commerce 프로젝트에 대한 명령줄 인터페이스 사용)을 참조하십시오.
-source-git-commit: 1dde98ab903f54aee0a094efd86dbf296065e92c
+source-git-commit: a0bb188eea38688c5bfe68e8c6bb7b3d040f5e0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+도구 실행 파일에 `chmod` 명령:
+
+```bash
+chmod +x ./uct/bin/uct
 ```
 
 ## 다음 [!DNL Upgrade Compatibility Tool] 명령줄 인터페이스
