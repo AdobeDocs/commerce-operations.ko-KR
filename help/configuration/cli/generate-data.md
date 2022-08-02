@@ -1,0 +1,448 @@
+---
+title: 성능 테스트를 위한 데이터 생성
+description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
+source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+workflow-type: tm+mt
+source-wordcount: '764'
+ht-degree: 9%
+
+---
+
+
+# 성능 테스트 데이터
+
+를 사용하려면 [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 성능 테스트를 위한 다른 도구는 저장소, 카테고리 및 제품과 같은 많은 양의 데이터를 생성해야 합니다.
+
+{{file-system-owner}}
+
+## 프로필
+
+를 사용하여 만드는 데이터의 양을 조정할 수 있습니다 _프로필_ (작은, 중간, 큰, 아주 큰). 프로필은 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 디렉토리.
+
+For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+
+다음 그림은 _작음_ 프로필:
+
+![생성된 데이터가 있는 샘플 저장소](../../assets/configuration/generate-data.png)
+
+다음 표에는 데이터 생성기 프로필에 대한 세부 사항이 나와 있습니다. 작은, 중간, 큰, 아주 큰.
+
+| 매개 변수 | 작은 프로필 | 미디어 프로필 | 미디어 다중 사이트 프로필 | 큰 프로필 | 매우 큰 프로필 |
+| --- | --- | --- | --- | --- | --- |
+| `websites` | 1 | 3 | 25년 | 5개 | 5개 |
+| `store_groups` | 1 | 3 | 25년 | 5개 | 5개 |
+| `store_views` | 1 | 3 | 50 | 5개 | 5개 |
+| `simple_products` | 800년 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `configurable_products` | 16 및 24개 옵션 | 640(24개 옵션 포함) | 800(24개 옵션 포함) 및 79개(200개 옵션 포함) | 8,000(24개 옵션 포함) | 16,000(24개 옵션 포함) |
+| `product_images` | 제품당 이미지 100개 / 이미지 3개 | 1000개 이미지 / 제품당 3개 이미지 | 1000개 이미지 / 제품당 3개 이미지 | 2000개 이미지 / 제품당 3개 이미지 | 2000개 이미지 / 제품당 3개 이미지 |
+| `categories` | 30 | 300년 | 100년 | 3,000 | 6,000 |
+| `categories_nesting_level` | 3 | 3 | 3 | 5개 | 5개 |
+| `catalog_price_rules` | 20년 | 20년 | 20년 | 20년 | 20년 |
+| `catalog_target_rules` | 5개 | 5개 | 5개 | 5개 | 5개 |
+| `cart_price_rules` | 20년 | 20년 | 20년 | 20년 | 20년 |
+| `cart_price_rules_floor` | 2개 | 2개 | 2개 | 2개 | 2개 |
+| `customers` | 200년 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130년 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
+
+### 데이터 생성기 실행
+
+>[!WARNING]
+>
+>데이터 생성기를 실행하기 전에 서버에서 실행 중인 모든 크론 작업을 비활성화합니다. 크론 작업을 비활성화하면 데이터 생성기가 활성 크론 작업과 충돌하는 작업을 수행하지 못하도록 하여 불필요한 오류를 방지합니다.
+
+이 섹션에 설명된 대로 명령을 실행합니다. 명령이 실행되면 다음을 수행해야 합니다 [모든 인덱스 다시 색인화](../cli/manage-indexers.md).
+
+명령 옵션:
+
+```bash
+bin/magento setup:perf:generate-fixtures <path-to-profile>
+```
+
+위치 `<path-to-profile>` 프로필의 절대 파일 시스템 경로 및 이름을 지정합니다.
+
+For example,
+
+```bash
+bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
+```
+
+작은 프로필에 대한 샘플 출력:
+
+```terminal
+Generating profile with following params:
+    |- Websites: 1
+    |- Store Groups Count: 1
+    |- Store Views Count: 1
+    |- Categories: 30
+    |- Attribute Sets (Default): 3
+    |- Attribute Sets (Extra): 10
+    |- Simple products: 800
+    |- Configurable products: 0
+    |--- 5 products for attribute set "Attribute Set 1"
+    |--- 5 products for attribute set "Attribute Set 2"
+    |--- 5 products for attribute set "Attribute Set 3"
+    |--- 40 products for attribute set "Dynamic Attribute Set 1-24"
+    |- Product images: 100, 3 per product
+    |- Customers: 200
+    |- Cart Price Rules: 20
+    |- Catalog Price Rules: 20
+    |- Catalog Target Rules: 5
+    |- Orders: 80
+Generating websites, stores and store views...  done in <time>
+Generating categories...  done in <time>
+Generating attribute sets...  done in <time>
+Generating simple products...  done in <time>
+... more ...
+```
+
+## 성능 고정장치
+
+### 관리자 사용자
+
+생성 [관리](https://glossary.magento.com/admin) 사용자 참조. [XML](https://glossary.magento.com/xml) 프로필 노드:
+
+```xml
+<!-- Number of admin users -->
+<admin_users>{int}</admin_users>
+```
+
+### 속성 세트
+
+지정된 구성으로 속성 세트를 생성합니다. XML 프로필 노드:
+
+```xml
+<!-- Number of product attribute sets -->
+<product_attribute_sets>{int}</product_attribute_sets>
+
+<!-- Number of attributes per set -->
+<product_attribute_sets_attributes>{int}</product_attribute_sets_attributes>
+
+<!-- Number of values per attribute -->
+<product_attribute_sets_attributes_values>{int}</product_attribute_sets_attributes_values>
+```
+
+### 번들 제품
+
+번들 제품을 생성합니다. 생성된 번들 선택 사항은 [카탈로그](https://glossary.magento.com/catalog). 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If  `assign_entities_to_all_websites` 이 프로필에서 로 설정되어 있습니다. `1`. 제품은 모든 웹 사이트에 할당됩니다.
+
+XML 프로필 노드:
+
+```xml
+<!-- Number of products -->
+<bundle_products>{int}</bundle_products>
+
+<!-- Number of options per each product -->
+<bundle_products_options>{int}</bundle_products_options>
+
+<!-- Number of simple products per each option -->
+<bundle_products_variation>{int}</bundle_products_variation>
+```
+
+### 장바구니 가격 규칙
+
+장바구니 가격 규칙을 생성합니다. XML 프로필 노드:
+
+```xml
+<!-- Number of cart price rules -->
+<cart_price_rules>{int}</cart_price_rules>
+
+<!-- Number of conditions per rule -->
+<cart_price_rules_floor>{int}</cart_price_rules_floor>
+```
+
+### 카탈로그 가격 규칙
+
+카탈로그 가격 규칙을 생성합니다. XML 프로필 노드:
+
+```xml
+<!-- Number of catalog price rules -->
+<catalog_price_rules>{int}</catalog_price_rules>
+```
+
+### 카테고리
+
+카테고리를 생성합니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `0`, 모든 카테고리는 루트 카테고리별로 균일하게 분포됩니다. 그렇지 않으면 모든 카테고리가 하나의 루트에 할당됩니다 [카테고리](https://glossary.magento.com/category).
+
+XML 프로필 노드:
+
+```xml
+<!-- Number of categories to generate -->
+<categories>{int}</categories>
+
+<!-- Nesting level of categories -->
+<categories_nesting_level>{int}</categories_nesting_level>
+```
+
+### 구성
+
+구성 필드의 값을 설정합니다. XML 프로필 노드:
+
+```xml
+<!-- Config variables and values for change -->
+<configs>
+    <config>
+        <path>{string}</path> <!-- e.g. admin/security/use_form_key -->
+        <scope>{string}</scope> <!-- e.g. default -->
+        <scopeId>{int}</scopeId>
+        <value>{int|string}</value>
+    </config>
+
+    <!-- ... more entries ... -->
+</configs>
+```
+
+### 구성 가능한 제품
+
+구성 가능한 제품을 생성합니다. 생성된 구성 가능한 옵션은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `1`, 제품은 모든 웹 사이트에 할당됩니다.
+
+지원되는 XML 노드 형식은 다음과 같습니다.
+
+- 기본 및 사전 정의된 속성 세트당 배포:
+
+   ```xml
+   <!-- Number of configurable products -->
+   <configurable_products>{int}</configurable_products>
+   ```
+
+- 기존 속성 세트를 기반으로 제품을 생성합니다.
+
+   ```xml
+   <configurable_products>
+   
+       <config>
+               <!-- Existing attribute set name -->
+               <attributeSet>{string}</attributeSet>
+   
+               <!-- Configurable sku pattern with %s -->
+               <sku>{string}</sku>
+   
+               <!-- Number of configurable products -->
+               <products>{int}</products>
+   
+               <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+               <category>[{string}]</category>
+   
+               <!-- Type of Swatch attribute e.g. color|image -->
+               <swatches>{string}</swatches>
+       </config>
+   
+   <!-- ... more entries ... -->
+   </configurable_products>
+   ```
+
+- 동적으로 생성된 를 기반으로 제품 생성 [속성 세트](https://glossary.magento.com/attribute-set) 지정된 개수의 속성 및 옵션이 있는 경우:
+
+   ```xml
+   <configurable_products>
+   
+       <config>
+           <!-- Number of attributes in configurable product -->
+           <attributes>{int}</attributes>
+   
+           <!-- Number of options per attribute -->
+           <options>{int}</options>
+   
+           <!-- Configurable sku pattern with %s -->
+           <sku>{string}</sku>
+   
+           <!-- Number of configurable products -->
+           <products>{int}</products>
+   
+           <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+           <category>[{string}]</category>
+   
+           <!-- Type of Swatch attribute e.g. color|image -->
+           <swatches>{string}</swatches>
+       </config>
+   
+       <!-- ... more entries ... -->
+   </configurable_products>
+   ```
+
+- 각 속성마다 지정된 구성을 사용하여 동적으로 생성된 속성 세트를 기반으로 제품을 생성합니다.
+
+   ```xml
+   <configurable_products>
+   
+       <config>
+           <attributes>
+               <!-- Configuration for a first attribute -->
+               <attribute>
+                   <!-- Amount of options per attribute -->
+                   <options>{int}</options>
+   
+                   <!-- Type of Swatch attribute -->
+                   <swatches>{string}</swatches>
+               </attribute>
+   
+               <!-- Configuration for a second attribute -->
+               <attribute>
+                   <!-- Amount of options per attribute -->
+                   <options>{int}</options>
+               </attribute>
+           </attributes>
+   
+           <!-- Configurable sku pattern with %s -->
+           <sku>{string}</sku>
+   
+           <!-- Number of configurable products -->
+           <products>{int}</products>
+   
+           <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
+           <category>[{string}]</category>
+       </config>
+   
+       <!-- ... more entries ... -->
+   </configurable_products>
+   ```
+
+### 고객
+
+고객을 생성합니다. 고객은 사용 가능한 모든 웹 사이트에 정상적으로 배포됩니다. 고객 이메일, 고객 그룹 및 고객 주소를 제외한 각 고객의 데이터는 동일합니다.
+
+XML 프로필 노드:
+
+```xml
+<!-- Number of customers to generate -->
+<customers>{int}</customers>
+```
+
+다음 XML을 사용하여 고객 구성을 변경할 수 있습니다.
+
+```xml
+<customer-config>
+    <!-- Number of addresses per each customer -->
+    <addresses-count>{int}</addresses-count>
+</customer-config>
+```
+
+### 제품 이미지
+
+제품 이미지를 생성합니다. 생성에는 크기 조정이 포함되지 않습니다.
+
+XML 프로필 노드:
+
+```xml
+<product-images>
+    <!-- Number of images to generate -->
+    <images-count>{int}</images-count>
+
+    <!-- Number of images to be assigned per each product -->
+    <images-per-product>{int}</images-per-product>
+</product-images>
+```
+
+### 인덱스 상태
+
+인덱서의 상태를 업데이트합니다. XML 프로필 노드:
+
+```xml
+<indexer>
+    <!-- Name of indexer (e.g. catalogrule_product) -->
+    <id>{string}</id>
+    <set_scheduled>{bool}</set_scheduled>
+</indexer>
+```
+
+### 주문
+
+구성 가능한 수의 다양한 유형의 주문 품목을 사용하여 주문을 생성합니다. 생성된 주문에 대해 비활성 견적을 생성합니다(선택적).
+
+XML 프로필 노드:
+
+```xml
+<!-- It is necessary to enable quotes for orders -->
+<order_quotes_enable>{bool}</order_quotes_enable>
+
+<!-- Min number of simple products per each order -->
+<order_simple_product_count_from>{int}</order_simple_product_count_from>
+
+<!-- Max number of simple products per each order -->
+<order_simple_product_count_to>{int}</order_simple_product_count_to>
+
+<!-- Min number of configurable products per each order -->
+<order_configurable_product_count_from>{int}</order_configurable_product_count_from>
+
+<!-- Max number of configurable products per each order -->
+<order_configurable_product_count_to>{int}</order_configurable_product_count_to>
+
+<!-- Min number of big configurable products (with big amount of options) per each order -->
+<order_big_configurable_product_count_from>{int}</order_big_configurable_product_count_from>
+
+<!-- Max number of big configurable products (with big amount of options) per each order -->
+<order_big_configurable_product_count_to>{int}</order_big_configurable_product_count_to>
+
+<!-- Number of orders to generate -->
+<orders>{int}</orders>
+```
+
+### 단순 제품
+
+간단한 제품을 생성합니다. 제품은 기본 및 사전 정의된 속성 세트별로 배포됩니다. 프로파일에 추가 속성 세트가 다음과 같이 지정된 경우: `<product_attribute_sets>{int}</product_attribute_sets>`, 제품은 추가 속성 세트마다 배포됩니다.
+
+제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `1`, 제품은 모든 웹 사이트에 할당됩니다.
+
+XML 프로필 노드:
+
+```xml
+<!-- Number of simple products to generate -->
+<simple_products>{int}</simple_products>
+```
+
+### 웹 사이트
+
+웹 사이트를 생성합니다. XML 프로필 노드:
+
+```xml
+<!-- Number of websites to be generated -->
+<websites>{int}</websites>
+```
+
+### 그룹 저장
+
+저장소 그룹(관리에서 다음과 같이 지칭됨)을 생성합니다 _상점_). 저장소 그룹은 웹 사이트 간에 정상적으로 배포됩니다.
+
+XML 프로필 노드:
+
+```xml
+<!-- Number of store groups to be generated -->
+<store_groups>{int}</store_groups>
+```
+
+### 보기 저장
+
+저장소 보기를 생성합니다. 저장소 보기는 저장소 그룹 간에 정상적으로 배포됩니다. XML 프로필 노드:
+
+```xml
+<!-- Number of store views to be generated -->
+<store_views>{int}</store_views>
+
+<!-- 1 means that all stores will have the same root category, 0 means that all stores will have unique root category -->
+<assign_entities_to_all_websites>{0|1}<assign_entities_to_all_websites/>
+```
+
+### 세율
+
+세율을 생성합니다. XML 프로필 노드:
+
+```xml
+<!-- Accepts name of CSV file with tax rates (<path to Commerce folder>/setup/src/Magento/Setup/Fixtures/_files) -->
+<tax_rates_file>{CSV file name}</tax_rates_file>
+```
+
+## 추가 구성 정보:
+
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`- 기본 속성 세트
+
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—고객 구성
+
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—제품 전체 설명 구성
+
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`- 제품 간략한 설명 구성
+
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`- 제품 간략한 및 전체 설명에 대한 구성 이 이전 구현은 이전 버전과의 호환성을 위해 제공됩니다.
+
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`- 짧은 검색어와 전체 설명에서 사용할 검색어 수가 적습니다.
+
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- 짧고 전체 설명에 사용할 검색어의 수가 큽니다.
