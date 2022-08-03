@@ -1,7 +1,7 @@
 ---
 title: 데이터베이스 성능 솔루션 분할
 description: Adobe Commerce 및 Magento Open Source을 위한 데이터베이스 분할 솔루션에 대해 읽어 보십시오.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 분할 데이터베이스 솔루션 개요
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

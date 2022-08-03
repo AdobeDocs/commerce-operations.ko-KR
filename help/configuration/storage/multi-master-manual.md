@@ -1,7 +1,7 @@
 ---
 title: 수동으로 마스터 데이터베이스 구성
 description: 분할 데이터베이스 솔루션 수동 구성에 대한 지침을 참조하십시오.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 수동으로 마스터 데이터베이스 구성
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

@@ -1,7 +1,7 @@
 ---
 title: 분할 데이터베이스 확인
 description: Commerce 분할 데이터베이스 구성이 제대로 작동하는지 확인하는 방법을 알아봅니다.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 분할 데이터베이스 확인
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

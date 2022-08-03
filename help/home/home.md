@@ -2,7 +2,7 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
+source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
       <img alt="구성" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html"><strong>구성</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>구성</strong></a>
     </div>
   </td>
   <td valign="top">
