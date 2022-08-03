@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 요구 사항'
 description: '시스템이 를 실행하는 데 필요한 요구 사항을 충족하는지 확인합니다. [!DNL Upgrade Compatibility Tool] ( Adobe Commerce 프로젝트에 대한 명령줄 인터페이스 사용)을 참조하십시오. '
 source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---

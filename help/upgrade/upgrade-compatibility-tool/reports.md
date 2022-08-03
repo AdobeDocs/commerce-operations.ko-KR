@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 보고서"'
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
 source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 여기서 인수는 다음과 같습니다.
 
-- `<dir>`: {{site.data.var.ee}} 설치 디렉터리입니다.
+- `<dir>`: {{site.data.var.ee}} 설치 디렉토리.
 - `[=HTML-OUTPUT-PATH]`: 내보낼 경로 디렉토리 `.html` 출력 파일입니다.
 
 >[!NOTE]
