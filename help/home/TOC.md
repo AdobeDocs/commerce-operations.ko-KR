@@ -3,8 +3,8 @@ user-guide-title: 운영 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 유지 관리의 운영 방식에 대해 알아봅니다.
 source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 17%
 
 ---
 
