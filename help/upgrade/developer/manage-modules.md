@@ -1,9 +1,9 @@
 ---
-title: 모듈 및 확장 관리
+title: 모듈 및 확장 관리(개발자)
 description: 명령줄 인터페이스 및 작성기 패키지 관리자를 사용하여 Adobe Commerce 및 Magento Open Source 모듈 및 확장을 관리합니다.
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
