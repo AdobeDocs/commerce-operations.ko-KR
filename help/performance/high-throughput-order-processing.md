@@ -1,9 +1,9 @@
 ---
 title: 높은 처리량 주문 처리
 description: Adobe Commerce 또는 Magento Open Source 배포를 위해 주문 배치 및 체크아웃 경험을 최적화합니다.
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ DelayedTotalCalculation이 활성화되면 장바구니에 제품을 추가한 �
 비활성화하면 장바구니에 제품을 추가할 때 재고 확인이 발생하지 않습니다. 이 인벤토리 검사를 건너뛴 경우 일부 재고 부족 시나리오에서 다른 유형의 오류가 발생할 수 있습니다. 재고 확인 _항상_ 비활성화된 경우에도 주문 배치 단계에서 발생합니다.
 
 **장바구니 로드 시 재고 확인 활성화** 기본적으로 활성화되어 있습니다(예로 설정). 장바구니를 로드할 때 재고 확인을 비활성화하려면 **[!UICONTROL Enable Inventory Check On Cart Load]** to `No` 관리자 UI에서 **스토어** > **구성** > **카탈로그** > **인벤토리** > **스톡 옵션** 섹션을 참조하십시오. 자세한 내용은 [글로벌 옵션 구성][global] 및 [카탈로그 인벤토리][inventory] 에서 _사용 안내서_.
+
+## 로드 밸런싱
+
+MySQL 데이터베이스 및 Redis 인스턴스에 대해 보조 연결을 활성화하여 여러 노드에 대한 로드 밸런싱을 수행할 수 있습니다.
+
+Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 상거래를 사용하는 경우, [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 의 값 `.magento.env.yaml` 파일. 한 노드만 읽기-쓰기 트래픽을 처리해야 하므로 변수를 로 설정합니다. `true` 따라서 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. 값을 로 설정합니다. `false` 기존 읽기 전용 연결 배열을 `env.php` 파일.
+
+의 예 `.magento.env.yaml` 파일:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
