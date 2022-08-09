@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 수행
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 프로젝트를 업그레이드하십시오.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ ht-degree: 0%
    ```
 
    자세한 내용은 [유지 관리 모드 활성화 또는 비활성화](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) 추가 옵션을 보려면 선택적으로, [사용자 지정 유지 관리 모드 페이지](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+
+1. 메시지 큐 소비자와 같은 비동기 프로세스가 실행되는 동안 업그레이드 프로세스를 시작하면 데이터가 손상될 수 있습니다. 데이터 손상을 방지하려면 모든 크론 작업을 비활성화합니다.
+
+   _Adobe Commerce on cloud 인프라:_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. 모든 메시지 큐 소비자를 수동으로 시작하여 모든 메시지가 소비되는지 확인합니다.
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   크론 작업이 완료될 때까지 기다립니다. 프로세스 뷰어를 사용하거나 `ps aux | grep 'bin/magento queue'` 모든 프로세스가 완료될 때까지 여러 번 명령
 
 1. 의 백업 만들기 `composer.json` 파일.
 
