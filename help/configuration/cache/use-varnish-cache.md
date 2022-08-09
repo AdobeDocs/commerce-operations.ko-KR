@@ -1,9 +1,9 @@
 ---
 title: Varnish를 사용하여 캐시 지우기
 description: 캐시 지우기가 Varnish에서 작동하는 방식과 Adobe Commerce 애플리케이션의 웹 캐싱 가속기로 사용하는 방법을 알아봅니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업
 
 ## Varnish를 제거하도록 상거래 구성
 
-Commerce에서는 [`magento setup:config:set`](https://devdocs.magento.com/guides/2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) 명령.
+Commerce에서는 [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) 명령.
 
 선택적 매개 변수를 사용할 수 있습니다 `--http-cache-hosts` 매개 변수를 사용하여 Varnish 호스트 및 수신 포트의 쉼표로 구분된 목록을 지정합니다. 하나 또는 여러 개의 Varnish 호스트를 모두 구성합니다. 공백 문자로 호스트를 분리하지 마십시오.
 
@@ -57,4 +57,4 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 관리자를 사용하여 캐시를 새로 고치려면 **[!UICONTROL SYSTEM]** > 도구 > **캐시 관리**&#x200B;를 클릭한 다음 **플러시 Magento 캐시** 를 클릭합니다. (개별 캐시 유형을 새로 고칠 수도 있습니다.)
 
-명령줄을 사용하여 캐시를 새로 고치려면 일반적으로 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 명령으로 [파일 시스템 소유자](https://devdocs.magento.com/guides/2.4/install-gde/prereq/file-sys-perms-over.html).
+명령줄을 사용하여 캐시를 새로 고치려면 일반적으로 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 명령으로 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).

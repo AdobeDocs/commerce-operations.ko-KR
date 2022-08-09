@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 Recommendations
 description: Adobe Commerce 및 Magento Open Source 배포의 최적 성능과 관련된 권장 소프트웨어 목록을 검토합니다.
-source-git-commit: 1d5956ce22c1a159336e9e7d64064b618fc2e63f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Magento은 Nginx 및 Apache 웹 서버를 완전히 지원합니다. [!DNL Comme
 | 웹 서버 | 속성 이름 | 위치 | 관련 정보 |
 |--- | --- | --- | ---|
 | Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [성능을 위한 NGINX 조정](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache 성능 조정](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache 성능 조정](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache MPM 공통 지시문](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]

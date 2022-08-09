@@ -1,9 +1,9 @@
 ---
 title: 명령줄 도구
 description: 전자 상거래 명령줄 도구를 사용하여 설치 및 구성 작업을 실행합니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 - CLI는 확장 가능하므로 타사 개발자가 CLI를 &quot;플러그인&quot;할 수 있습니다. 이로 인해 사용자의 학습 곡선을 없앨 수 있습니다.
 - 비활성화된 모듈에 대한 명령이 표시되지 않습니다.
 
-이 항목에서는 CLI를 사용하여 Adobe Commerce 및 Magento Open Source 소프트웨어를 구성하는 방법을 설명합니다. 상거래 설치에 대한 자세한 내용은 [설치 개요](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) 에서 _설치 안내서_.
+이 항목에서는 CLI를 사용하여 Adobe Commerce 및 Magento Open Source 소프트웨어를 구성하는 방법을 설명합니다. 상거래 설치에 대한 자세한 내용은 [설치 흐름](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) 에서 _설치 안내서_.
 
 ## 전제 조건
 

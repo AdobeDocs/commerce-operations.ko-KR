@@ -1,9 +1,9 @@
 ---
 title: 고급 [!DNL JavaScript] 번들링
 description: JavaScript 번들링을 통해 서버 요청의 크기와 빈도를 줄이는 방법에 대해 알아보십시오.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Slow 3G 연결 기능에서 깨끗한 홈 페이지의 모든 번들을 로드�
 
 - [nodejs](https://nodejs.org/en/download/)
 - [r.js](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS]](http://phantomjs.org/) (선택 사항)
+- [[!DNL PhantomJS]](https://phantomjs.org/) (선택 사항)
 
 ### 샘플 코드
 

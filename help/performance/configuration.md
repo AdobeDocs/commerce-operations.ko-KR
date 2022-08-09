@@ -1,7 +1,7 @@
 ---
 title: 구성 우수 사례
 description: 이러한 우수 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
-source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -76,7 +76,7 @@ MariaDB 10.4에서 재색인화를 수행하는 데 다른 MariaDB에 비해 시
 
 ### 번들 팁
 
-* 축소 및 번들링(예: )에 타사 도구를 사용하는 것이 좋습니다 [r.js](http://requirejs.org/)). [!DNL Commerce] 기본 제공 메커니즘은 최적이 아니며 대체 요소로 제공됩니다.
+* 축소 및 번들링(예: )에 타사 도구를 사용하는 것이 좋습니다 [r.js](https://requirejs.org/)). [!DNL Commerce] 기본 제공 메커니즘은 최적이 아니며 대체 요소로 제공됩니다.
 * HTTP2 프로토콜을 활성화하는 것은 JS 번들링을 사용하는 것과 좋은 대안이 될 수 있습니다. 프로토콜은 거의 동일한 이점을 제공합니다.
 * JS 및 CSS 파일 병합과 같이 더 이상 사용되지 않는 설정은 페이지의 HEAD 섹션에서 동기적으로 로드된 JS에만 사용하도록 설계되었으므로 사용하지 않는 설정을 사용하는 것이 좋습니다. 이 기술을 사용하면 번들링 및 requireJS 논리가 잘못 작동할 수 있습니다.
 

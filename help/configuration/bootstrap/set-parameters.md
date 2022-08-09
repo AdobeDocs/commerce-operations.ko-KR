@@ -1,7 +1,7 @@
 ---
 title: 부트스트랩 매개 변수의 값 설정
 description: Commerce 응용 프로그램에 대한 부트스트랩 매개 변수를 설정하는 방법을 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -172,4 +172,4 @@ Apache `mod_env` 지시문은 [Apache 버전 2.2] 및 [Apache 버전 2.4].
 [Apache 버전 2.2]: http://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
 [Apache 버전 2.4]: http://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
 [Nginx 샘플 구성]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: http://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables
+[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

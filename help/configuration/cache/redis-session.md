@@ -1,10 +1,10 @@
 ---
 title: 세션 저장소에 Redis 사용
 description: 세션 저장소에 대한 Redis 구성 방법을 알아봅니다.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-timeout | timeout | 연결 시간 초과(초)입니다. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유한 문자열(예: sess-db0).<br>[phpredis 및 php-fpm의 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | 데이터베이스 | 고유 Redis 데이터베이스 번호입니다. 이 번호는 데이터 손실로부터 보호하는 것이 좋습니다.<br><br>**중요 사항**: 두 개 이상의 캐싱 유형에 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호를 0에, 페이지 캐싱 데이터베이스 번호는 1에, 세션 저장소 데이터베이스 번호는 2에 지정하는 것이 좋습니다. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | 압축을 비활성화하려면 0으로 설정합니다(권장할 경우). [suhosin.session.encrypt = 켜짐](https://suhosin.org/stories/howtos.html)).<br>[64KB 이상의 문자열에 대해 알려진 문제](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048년 |
+| session-save-redis-compression-threshold | compression_threshold | 압축을 비활성화하려면 0으로 설정합니다(권장할 경우). `suhosin.session.encrypt = On`).<br>[64KB 이상의 문자열에 대해 알려진 문제](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048년 |
 | session-save-redis-compression-lib | compression_library | 옵션: gzip, lzf, lz4 또는 snappy. | gzip |
 | session-save-redis-log-level | log_level | 최소 세부 정보에서 가장 자세한 정보까지 순서대로 나열된 다음 중 하나로 설정합니다.<ul><li>0(긴급: 가장 심각한 오류만)<li>1(경고: 즉각적인 조치 필요)<li>2(중요: 애플리케이션 구성 요소를 사용할 수 없음)<li>3 (오류: 런타임 오류(심각하지 않지만 모니터링해야 함)<li>4(경고: 추가 정보, 권장)<li>5(통지: 일반적이지만 중요한 조건<li>6(정보: 정보 메시지)<li>7(디버그: 개발 또는 테스트에만 가장 많은 정보)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | 한 세션의 잠금을 기다릴 수 있는 최대 프로세스 수입니다. 대규모 프로덕션 클러스터의 경우 PHP 프로세스 수의 10% 이상으로 설정합니다. | 6 |

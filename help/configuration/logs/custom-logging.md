@@ -1,9 +1,9 @@
 ---
 title: 사용자 지정 로깅
 description: 사용자 지정 로깅을 사용하여 오류를 조사하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Monolog는 고급 로깅 전략을 구축할 수 있는 다양한 핸들러가 �
 <!-- link definitions -->
 
 [di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[유체]: http://www.fluentd.org
+[유체]: https://www.fluentd.org/
 [laminas]: https://docs.laminas.dev/laminas-log/
 [Logplex]: https://devcenter.heroku.com/articles/logplex
 [Logstash]: https://www.elastic.co/products/logstash

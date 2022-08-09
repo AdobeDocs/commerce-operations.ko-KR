@@ -1,9 +1,9 @@
 ---
 title: Varnish 설치
 description: Varnish 설치에 대한 조언을 참조하십시오.
-source-git-commit: 688db9fcc9cd196d1560e49719b03ef32d13870d
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Varnish 소프트웨어 설치는 이 안내서의 범위를 벗어납니다. Varnish 설치에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [설치 wiki](http://wiki.mikejung.biz/Varnish)
+- [설치 안내서](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Varnish 설치 가이드](https://www.varnish-cache.org/docs)
-- [Varnish(Techmint) 설치 방법](http://www.tecmint.com/install-varnish-cache-web-accelerator)
+- [Varnish(Techmint) 설치 방법](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
