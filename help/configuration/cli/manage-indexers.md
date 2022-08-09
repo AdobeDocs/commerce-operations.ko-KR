@@ -1,9 +1,9 @@
 ---
 title: 인덱서 관리
 description: 상거래 인덱스를 보고 관리하는 방법에 대한 예를 참조하십시오.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 위치 `[indexer]` 는 공백으로 구분된 인덱서 목록입니다. 생략 `[indexer]` 모든 인덱서의 상태를 확인합니다.
-
 
 샘플 결과:
 
@@ -120,8 +119,9 @@ Catalog Search index has been rebuilt successfully in <time>
 - `Catalog Search Fulltext` 는 스토어 보기를 따라 다를 수 있습니다.
 - `Category Product` 는 스토어 보기를 따라 다를 수 있습니다.
 - `Catalog Price` 는 웹 사이트 및 고객 그룹과 병행할 수 있습니다.
+- `Catalog Permissions` 는 고객 그룹과 병행할 수 있습니다.
 
-병렬화를 사용하려면 제품 가격 인덱서에 사용할 수 있는 차원 모드 중 하나를 설정해야 합니다.
+병렬화를 사용하려면 제품 가격 인덱서에 사용할 수 있는 차원 모드 중 하나를 설정합니다.
 
 - `none` (기본값)
 - `website`
@@ -133,6 +133,11 @@ Catalog Search index has been rebuilt successfully in <time>
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+카탈로그 권한에 병렬 처리를 사용하려면 카탈로그 권한 인덱서에 사용할 수 있는 차원 모드 중 하나를 설정합니다.
+
+- `none` (기본값)
+- `customer_group`
 
 또는 현재 모드를 확인하려면:
 
