@@ -1,7 +1,7 @@
 ---
 title: 민감하고 시스템별 경로
 description: 시스템별 및 중요한 구성 값 목록을 참조하십시오.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 019d638403f2dc3e170a56842335da203126d8a6
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 0%
@@ -144,9 +144,9 @@ ht-degree: 0%
 | 솔루션 서버 경로 | `catalog/search/solr_server_path` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch 서버 호스트 이름 | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch 서버 포트 | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch 인덱스 접두사 | `catalog/search/elasticsearch_index_prefix` | !<!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
+| Elasticsearch 인덱스 접두사 | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch HTTP 인증 활성화 | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP 사용자 이름 | `catalog/search/elasticsearch_username` | !<!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP 사용자 이름 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP 암호 | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch 서버 시간 초과 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) |
 
@@ -711,7 +711,7 @@ ht-degree: 0%
 | SFTP 자격 증명 |
 | SFTP 자격 증명 | `payment_nz/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
 | SFTP 자격 증명 | `payment_nz/paypal_payment_gateways/paypal_payflowpro_nz/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
-| API 로그인 ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | !![Commerce-only]([enc] |  | ![중요](/help/assets/configuration/cloud-sens.png) |
+| API 로그인 ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![암호화된](/help/assets/configuration/cloud-enc.png) |  | ![중요](/help/assets/configuration/cloud-sens.png) |
 | Merchant MD5 | `payment_nz/authorizenet_directpost/trans_md5` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![암호화된](/help/assets/configuration/cloud-enc.png) |  | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 이메일 고객 | `payment_nz/authorizenet_directpost/email_customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
 | Merchant&#39;s Email | `payment_nz/authorizenet_directpost/merchant_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
