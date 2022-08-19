@@ -1,9 +1,9 @@
 ---
 title: '"실행 [!DNL Upgrade Compatibility Tool]"'
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] ( Adobe Commerce 프로젝트에 대한 명령줄 인터페이스 사용)을 참조하십시오.
-source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
+source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,6 @@ bin/uct --help
 사용 가능한 모든 목록이 반환됩니다 `help` 옵션 [!DNL Upgrade Compatibility Tool] 명령줄 인터페이스에서 다음을 수행합니다.
 
 ```terminal
-- -m, --module-path[=MODULE-PATH]: Path of the modules to be analysed
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
@@ -260,13 +259,3 @@ bin/uct upgrade:check --help
 - 옵션을 사용합니다 `--ignore-current-version-compatibility-issues` 를 사용 중인 현재 버전에서 사용 중인 대상 버전으로 업데이트하여 도입된 새로운 문제를 가져오려는 경우에만 [!DNL Upgrade Compatibility Tool] 보고서 세트에 대해 설명합니다.
 - 추가 `--min-issue-level` 옵션을 선택하면 이 설정을 통해 최소 문제 수준을 설정하여 업그레이드에 가장 중요한 문제만 우선 순위를 지정할 수 있습니다.
 - 다음 [!DNL Upgrade Compatibility Tool] 실행하려면 2GB 이상의 RAM이 필요합니다. 이 설정은 메모리 부족 때문에 문제가 발생하지 않도록 하는 것이 좋습니다. 다음 [!DNL Upgrade Compatibility Tool] 질문을 실행하면 `upgrade:check` 낮은 명령 `memory_limit` 설정
-- 특정 공급업체, 모듈 또는 심지어 디렉토리만 분석하려는 경우 경로를 옵션으로 지정할 수도 있습니다. 를 실행합니다. `bin` 옵션이 추가된 명령 `-m`. 이를 통해 [!DNL Upgrade Compatibility Tool] 특정 모듈을 독립적으로 분석하고, [!DNL Upgrade Compatibility Tool]. 을(를) 지정합니다. `-m` 특정 모듈에 대해 도구를 실행하는 옵션:
-
-   ```bash
-   bin/uct upgrade:check <dir> -m[=MODULE-PATH]
-   ```
-
-여기서 인수는 다음과 같습니다.
-
-- `<dir>`: Adobe Commerce 설치 디렉토리.
-- `[=MODULE-PATH]`: 특정 모듈 경로 디렉터리입니다.
