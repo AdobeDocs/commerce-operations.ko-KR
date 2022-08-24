@@ -1,9 +1,9 @@
 ---
 title: '"개요 [!DNL Upgrade Compatibility Tool]"'
 description: 에 대해 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에 어떻게 도움을 줄 수 있습니까?
-source-git-commit: 9b0f97d36092d2a1057cdc905671cda8540881c9
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,12 @@ ht-degree: 0%
 다음 다이어그램은 [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] 다이어그램](../../assets/upgrade-guide/uct-diagram-v5.png)
+
+## [!DNL Upgrade Compatibility Tool] 데모
+
+이 비디오에서 다음에 대해 자세히 알아보십시오 [!DNL Upgrade Compatibility Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## 개선 사항 [!DNL Upgrade Compatibility Tool]
 

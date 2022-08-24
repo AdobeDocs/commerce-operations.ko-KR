@@ -1,7 +1,7 @@
 ---
 title: '"[!DNL Observation for Adobe Commerce]"'
 description: 알아보기 [!DNL Observation for Adobe Commerce], 사용 시기 및 액세스 방법을 설명합니다.
-source-git-commit: 0ee158cb33757b33307d0ca669b921a82665cefe
+source-git-commit: e042acac00d9aaa7d2f49beb8ce98e213ae369e7
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -31,3 +31,9 @@ Adobe Commerce 사이트 성능을 최적화하고 문제를 진단하려는 상
 * 로그에서 중요한 오류 메시지에 대한 시각적 요약으로 데이터 수집 및 구문 분석을 단순화합니다.
 
 * IP 요청 빈도, 액세스한 URL, 사용된 API 등과 같은 다양한 서비스에서 관점을 얻을 수 있습니다.
+
+## [!DNL Observation for Adobe Commerce] 데모
+
+자세한 내용은 이 비디오 를 참조하십시오 [!DNL Observation for Adobe Commerce]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)
