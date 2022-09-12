@@ -1,9 +1,9 @@
 ---
 title: 단일 시스템 배포
 description: 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법을 알아봅니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -91,6 +91,6 @@ ht-degree: 1%
 
 <!-- link definitions -->
 
-[install]: https://devdocs.magento.com/guides/v2.4/install-gde/install/prepare-install.html
-[composer]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html
-[file-owner]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html#magento-file-system-owner
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[composer]: ../../installation/composer.md
+[file-owner]: ../../installation/prerequisites/file-system/overview.md

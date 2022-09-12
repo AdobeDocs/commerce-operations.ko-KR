@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 [!DNL Data Migration Tool]
 description: 업그레이드 방법 알아보기 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하려면 다음을 수행하십시오.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### Magento 소프트웨어 업그레이드
 
-아직 안하셨다면, [Magento 소프트웨어 업그레이드](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+아직 안하셨다면, [Magento 소프트웨어 업그레이드](../../upgrade/overview.md).
 
 ### 백업 `vendor/magento/data-migration-tool` directory
 
@@ -56,8 +56,8 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 ## 업그레이드 [!DNL Data Migration Tool]
 
-1. Magento 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento 2 루트 디렉토리로 변경합니다.
+1. 애플리케이션 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. 응용 프로그램 루트 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
    ```bash

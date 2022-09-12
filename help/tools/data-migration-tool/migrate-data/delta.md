@@ -1,9 +1,9 @@
 ---
 title: 변경 사항 마이그레이션
 description: 를 사용하여 마지막 Magento 1 데이터 마이그레이션 이후 변경된 데이터만 마이그레이션하는 방법을 알아봅니다. [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 시작하기 전에 다음 단계를 수행하여 준비하십시오.
 
-1. 다음 방법으로 Magento 서버에 로그인 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento 변경 `/bin` 디렉토리 또는 시스템 PATH에 추가되었는지 확인합니다.
+1. 다음 방법으로 애플리케이션 서버에 로그인합니다. [파일 시스템 소유자](../../../installation/prerequisites/file-system/overview.md).
+1. 로 변경 `/bin` 디렉토리 또는 시스템에 추가되었는지 확인합니다. `PATH`.
 
 자세한 내용은 [첫 단계](overview.md#first-steps) 섹션을 참조하십시오.
 

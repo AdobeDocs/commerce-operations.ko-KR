@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Data Migration Tool] 전제 조건'
-description: '"을 사용하기 전에 필요한 작업을 알아보십시오 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하는 방법"'
-source-git-commit: 87298a6dfd783fed264f275495a3ad72374eb9f6
+description: "을 사용하기 전에 필요한 작업을 알아보십시오 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하는 방법"
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ## Magento 2 시스템
 
-* Magento 2 시스템이 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+* Magento 2 시스템이 [시스템 요구 사항](../../installation/system-requirements.md).
 
    기존 Magento 1 시스템과 적어도 일치하는 토폴로지 및 디자인을 사용합니다.
 
-* [Magento 2 설치](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
+* [Magento 2 설치](../../installation/overview.md).
 
 ## 크론
 

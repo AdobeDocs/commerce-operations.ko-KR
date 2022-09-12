@@ -1,9 +1,9 @@
 ---
 title: 고급 설정
 description: 대용량 데이터를 처리하도록 설계된 대규모 엔터프라이즈 시스템에 대한 모범 사례 및 권장 사항을 검토합니다.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 많은 수의 제품 SKU, 웹 사이트, 고객 그룹 또는 공유 카탈로그가 제품 가격 및 카탈로그 규칙 인덱서의 실행 시간에 영향을 줍니다. 모든 웹 사이트는 기본적으로 모든 고객 그룹(공유 카탈로그)에 할당되기 때문입니다.
 
-인덱스 시간을 줄이려면 다음을 수행할 수 있습니다 [고객 그룹(공유 카탈로그)에서 특정 웹 사이트 제외](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+인덱스 시간을 줄이려면 다음을 수행할 수 있습니다 [고객 그룹(공유 카탈로그)에서 특정 웹 사이트 제외](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Redis 설정
 
@@ -56,7 +56,7 @@ Magento Open Source 및 Adobe [!DNL Commerce] 를 통해 구현된 메시지 큐
 
 >[!WARNING]
 >
->데이터베이스 분할 기능은 [사용되지 않음](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) Adobe Commerce 버전 2.4.2에서 지원됩니다. 자세한 내용은 [분할 데이터베이스에서 단일 데이터베이스로 되돌리기](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>데이터베이스 분할 기능은 [사용되지 않음](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) Adobe Commerce 버전 2.4.2에서 지원됩니다. 자세한 내용은 [분할 데이터베이스에서 단일 데이터베이스로 되돌리기](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce을 사용하면 성장하는 비즈니스 요구 사항을 충족하도록 확장 가능한 데이터베이스 저장소를 구성할 수 있습니다. 특정 도메인을 제공하는 세 개의 별도의 마스터 데이터베이스를 설정할 수 있습니다.
 
@@ -95,7 +95,7 @@ bin/magento setup:db-schema:add-slave
 마스터 데이터베이스를 분할하고 슬레이브 데이터베이스를 설정한 후 [!DNL Commerce] 특정 데이터베이스에 대한 연결을 자동으로 제어하여 요청 유형(POST, PUT, GET 등)과 데이터 리소스를 기반으로 결정을 내릴 수 있습니다. If [!DNL Commerce] 또는 확장에서 GET 요청에 대해 쓰기 작업을 수행하면 시스템이 슬레이브에서 마스터 데이터베이스로 연결을 자동으로 전환합니다. 마스터 데이터베이스와 동일한 방식으로 작동합니다. 체크 아웃 관련 테이블로 작업하는 즉시 시스템에서 모든 쿼리를 특정 데이터베이스로 리디렉션합니다. 한편 모든 카탈로그 관련 쿼리는 기본 데이터베이스로 이동합니다.
 
 다중 마스터/슬레이브 구성의 구성 및 이점에 대한 자세한 내용은
-[데이터베이스 성능 솔루션 분할](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[데이터베이스 성능 솔루션 분할](../configuration/storage/multi-master.md).
 
 ## 미디어 콘텐츠 제공
 

@@ -1,9 +1,9 @@
 ---
 title: 캐시 관리
 description: 캐시 유형 관리 및 캐시 상태 보기
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Current status:
 
 >[!INFO]
 >
->버전 2.2부터 프로덕션 모드에서 상거래를 실행하는 동안 명령줄을 사용하여 캐시 유형만 활성화하거나 비활성화할 수 있습니다. 개발자 모드에서 상거래를 실행하는 경우 명령줄을 사용하여 캐시 유형을 활성화하거나 수동으로 비활성화할 수 있습니다. 이 작업을 수행하기 전에 수동으로 다음을 수행해야 합니다 `<magento_root>/app/etc/env.php` 쓰기 가능 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>버전 2.2부터 프로덕션 모드에서 상거래를 실행하는 동안 명령줄을 사용하여 캐시 유형만 활성화하거나 비활성화할 수 있습니다. 개발자 모드에서 상거래를 실행하는 경우 명령줄을 사용하여 캐시 유형을 활성화하거나 수동으로 비활성화할 수 있습니다. 이 작업을 수행하기 전에 수동으로 다음을 수행해야 합니다 `<magento_root>/app/etc/env.php` 쓰기 가능 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 
 정리( 라고 함)할 수 있습니다 _플러시_ 또는 _새로 고침_) 명령줄 또는 관리자를 사용하여 캐시 유형을 지정합니다.
 

@@ -1,9 +1,9 @@
 ---
-title: '"실행 [!DNL Upgrade Compatibility Tool]"'
+title: "실행 [!DNL Upgrade Compatibility Tool]"
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] ( Adobe Commerce 프로젝트에 대한 명령줄 인터페이스 사용)을 참조하십시오.
-source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ A _바닐라_ 설치는 특정 릴리스 버전에 대해 지정된 버전 태�
 
 를 실행할 수 있습니다 [!DNL Upgrade Compatibility Tool] 명령을 사용하여 `--vanilla-dir` Adobe Commerce vanilla 설치 디렉토리를 지정하는 옵션.
 
-자세한 내용은 [바닐라 인스턴스 배포](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) 주제 를 참조하십시오.
+자세한 내용은 [바닐라 인스턴스 배포](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) 주제 를 참조하십시오.
 
 ## 를 사용하십시오 `refactor` 명령
 
@@ -249,7 +249,7 @@ bin/uct upgrade:check --help
 ## Adobe Commerce 우수 사례 따라하기
 
 - 동일한 이름의 모듈이 두 개 있지 않도록 합니다.
-- Adobe Commerce 팔로우 [코딩 표준](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+- Adobe Commerce 팔로우 [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) 모범 사례에 따라 태깅합니다.
 
 ## 결과 최적화

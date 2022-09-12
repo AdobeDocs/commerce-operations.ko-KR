@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 구현
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 위한 업그레이드 구현 단계의 다양한 방법에 대해 알아봅니다.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
    - Target 버전 업그레이드
    - 발견된 중요한 오류 수 및 세부 정보
 
-- 대상 버전을 지원하도록 서비스를 업그레이드합니다. 다음 테이블 템플릿을 사용하여 업그레이드해야 하는 서비스를 매핑합니다. 를 사용하십시오 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 추가할 내용을 결정하려면 _로 업그레이드_ 열.
+- 대상 버전을 지원하도록 서비스를 업그레이드합니다. 다음 테이블 템플릿을 사용하여 업그레이드해야 하는 서비스를 매핑합니다. 를 사용하십시오 [시스템 요구 사항](../../installation/system-requirements.md) 추가할 내용을 결정하려면 _로 업그레이드_ 열.
 
 
    | 서비스 | 현재 버전 | 로 업그레이드 | 참고 |
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ## 개발 및 QA
 
-테스트는 가장 많은 시간이 필요한 업그레이드 단계입니다. 따라서 이 프로세스는 가능한 한 자동화되어야 합니다. 다음 _[Application Testing 안내서](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ 는 더 빠른 QA를 위해 플랫폼 및 시스템 테스트 도구를 설정하고 사용하는 방법에 대한 자세한 내용을 제공합니다. 프로덕션으로 이동하기 전에 스테이징 환경을 사용하여 업그레이드를 테스트하고 확인합니다.
+테스트는 가장 많은 시간이 필요한 업그레이드 단계입니다. 따라서 이 프로세스는 가능한 한 자동화되어야 합니다. 다음 _[Application Testing 안내서](https://developer.adobe.com/commerce/testing/guide/)_ 는 더 빠른 QA를 위해 플랫폼 및 시스템 테스트 도구를 설정하고 사용하는 방법에 대한 자세한 내용을 제공합니다. 프로덕션으로 이동하기 전에 스테이징 환경을 사용하여 업그레이드를 테스트하고 확인합니다.
 
 ## UAT 및 실행 준비
 

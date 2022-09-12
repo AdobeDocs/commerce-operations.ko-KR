@@ -1,9 +1,9 @@
 ---
 title: 데이터 마이그레이션 설정
 description: 설정을 을 사용하여 Magento 1에서 Magento 2으로 마이그레이션하는 방법을 배웁니다. [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 시작하기 전에 다음 단계를 수행하여 준비하십시오.
 
-1. Magento 2 인스턴스로 서버에 로그인합니다. [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 애플리케이션 서버에 다음 형식으로 로그인합니다. [파일 시스템 소유자](../../../installation/prerequisites/file-system/overview.md).
 
-1. Magento 2으로 변경 `/bin` 디렉토리 또는 시스템 PATH에 추가되었는지 확인합니다.
+1. 로 변경 `/bin` 디렉토리 또는 시스템에 추가되었는지 확인합니다. `PATH`.
 
 >[!NOTE]
 >
@@ -53,15 +53,15 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 설정을 마이그레이션할 때 시스템 구성을 무시하거나 이름을 바꾸거나 변경할 수 있습니다. 이를 위해 `settings.xml` 파일.
 
-1. Magento 2 인스턴스로 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 애플리케이션 서버에 로그인하거나 [파일 시스템 소유자](../../../installation/prerequisites/file-system/overview.md).
 
 1. 다음 디렉토리로 변경합니다.
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   예를 들어 Magento 2이 `/var/www/html`, `settings.xml.dist` 파일이 다음 디렉터리 중 하나에 있습니다.
+   예를 들어 애플리케이션이 `/var/www/html`, `settings.xml.dist` 파일이 다음 디렉터리 중 하나에 있습니다.
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

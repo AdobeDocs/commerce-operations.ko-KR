@@ -1,9 +1,9 @@
 ---
 title: 크론 작업 구성 및 실행
 description: cron 작업을 관리하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ UNIX 시스템은 _crontab_- cron 데몬에 대한 지침이 포함된 파일이
 
 >[!WARNING]
 >
->- 설치 및 업그레이드 중에 문제가 발생하지 않도록 PHP 명령줄 구성과 PHP 웹 서버 플러그 인의 구성 모두에 동일한 PHP 설정을 적용하는 것이 좋습니다. 자세한 내용은 [필수 PHP 설정](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- 설치 및 업그레이드 중에 문제가 발생하지 않도록 PHP 명령줄 구성과 PHP 웹 서버 플러그 인의 구성 모두에 동일한 PHP 설정을 적용하는 것이 좋습니다. 자세한 내용은 [필수 PHP 설정](../../installation/prerequisites/php-settings.md).
 >- 다중 노드 시스템에서 crontab은 하나의 노드에서만 실행할 수 있습니다. 성능 또는 확장성과 관련된 이유로 둘 이상의 웹 노드를 설정하는 경우에만 적용됩니다.
 
 
@@ -58,7 +58,7 @@ Commerce Crontab이 내부에 있습니다. `#~ MAGENTO START` 및 `#~ MAGENTO E
 
 전자 상거래 crontab을 생성하려면
 
-1. 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 상거래 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
@@ -100,7 +100,7 @@ Commerce 응용 프로그램을 제거하기 전에만 Commerce crontab을 제�
 
 상거래 crontab을 제거하려면
 
-1. 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 상거래 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 

@@ -1,9 +1,9 @@
 ---
 title: 검색 중지 구성
 description: CSV 파일을 사용하여 Adobe Commerce에 대한 스토어를 관리하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ stopwords 파일의 기본 수명 [캐시](https://glossary.magento.com/cache) �
 
 **스토워드를 편집하려면**:
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 텍스트 편집기를 사용하여 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리.
 
    CSV 파일은 이름 지정 규칙을 사용합니다 `stopwords_<locale_code>.csv`. 예를 들어, 독일어 스톱워드 파일의 이름은 다음과 같습니다 `stopwords_de_DE.csv`.
@@ -60,7 +60,7 @@ stopwords 파일의 기본 수명 [캐시](https://glossary.magento.com/cache) �
 
 **로캘에 대한 스토어를 추가하려면**:
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 
 1. 텍스트 편집기를 사용하여 이름이 인 스톱 워드 파일을 만듭니다. `stopwords_<locale_code>.csv` 에서 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리.
 
@@ -125,7 +125,7 @@ stopwords 파일의 기본 수명 [캐시](https://glossary.magento.com/cache) �
 
 ## 모듈에서 디렉토리를 변경하려면
 
-1. [모듈 만들기](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [모듈 만들기](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. 모듈에서 `etc/di.xml` 지침 추가:
 
    ```xml

@@ -1,9 +1,9 @@
 ---
 title: 우수 사례
 description: Adobe Commerce 및 Magento Open Source 프로젝트에 대한 업그레이드 프로세스를 관리하려면 Adobe 권장 우수 사례를 사용하십시오.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Adobe Commerce 인스턴스를 업그레이드하는 작업 수준은 다음 요
 
 프로젝트 작업을 시작하는 순간부터 향후 업그레이드가 현재 작업의 영향을 받는 방식을 고려해야 합니다. 다음에 설명된 대로 항상 Adobe Commerce 개발 우수 사례를 따르십시오.
 
-- [개발 우수 사례](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [코딩 표준](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [개발 우수 사례](https://developer.adobe.com/commerce/php/best-practices/)
+- [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)
 
 아직 Adobe Commerce 확장성 플랫폼을 채택하지 않았다면 채택하십시오. 플랫폼을 사용하면 SaaS와 같은 업그레이드 기능을 유지하면서 프로세스를 효율적으로 사용자 지정하고 시스템을 통합하고 새로운 기능을 배포할 수 있습니다. 기능은 다음과 같습니다.
 
@@ -80,7 +80,7 @@ Adobe Commerce의 기능을 지속적으로 확장함에 따라 최신 사용 �
 
 ### 업그레이드 후 테스트
 
-테스트는 가장 많은 시간이 필요한 업그레이드 단계입니다. 따라서 이 프로세스는 가능한 한 자동화되어야 합니다. 핵심 테스트 도구를 사용하면 이점을 누릴 수 있습니다. 다음 [Application Testing 안내서](https://devdocs.magento.com/guides/v2.4/test/testing.html) 자세한 내용을 제공합니다.
+테스트는 가장 많은 시간이 필요한 업그레이드 단계입니다. 따라서 이 프로세스는 가능한 한 자동화되어야 합니다. 핵심 테스트 도구를 사용하면 이점을 누릴 수 있습니다. 다음 [Application Testing 안내서](https://developer.adobe.com/commerce/testing/guide/) 자세한 내용을 제공합니다.
 
 프로덕션으로 이동하기 전에 스테이징 환경을 사용하여 업그레이드를 테스트하고 확인합니다.
 

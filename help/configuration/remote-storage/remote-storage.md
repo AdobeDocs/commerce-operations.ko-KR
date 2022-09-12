@@ -1,9 +1,9 @@
 ---
 title: 원격 저장소 구성
 description: 온-프레미스 Commerce 응용 프로그램에 대한 원격 저장소 모듈을 구성하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,5 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[nginx-module]: http://nginx.org/en/docs/http/ngx_http_image_filter_module.html
 [Magento 코딩 표준]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp
+[setup]: ../../installation/tutorials/deployment.md

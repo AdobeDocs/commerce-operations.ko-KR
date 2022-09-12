@@ -1,9 +1,9 @@
 ---
 title: 일반적인 명령
 description: 일반적인 Commerce CLI 명령 및 사용 샘플링을 봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ bin/magento help cache:enable
 | [`magento dev:tests:run`](../cli/unit-tests.md) | 자동화된 테스트 실행 |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | 레이아웃 XML 파일을 업데이트하여 새로운 XSLT(Extensible Stylesheet Language Transformations) 스타일시트와 일치합니다 |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | 성능 테스트에 사용할 데이터를 생성합니다. |
-| [`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html) | Commerce 응용 프로그램을 설치한 후 선택적 샘플 데이터를 설치합니다.<br><br>샘플 데이터에 대한 자세한 내용은 [선택적 샘플 데이터](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce 응용 프로그램을 설치한 후 선택적 샘플 데이터를 설치합니다.<br><br>샘플 데이터에 대한 자세한 내용은 [선택적 샘플 데이터](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | 백엔드 구성 관리 |
-| [`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html) | 관리자 사용자를 생성/편집/잠금 해제합니다. |
-| [`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html) | 개발자 템플릿 힌트를 활성화/비활성화합니다. |
+| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 관리자 사용자를 생성/편집/잠금 해제합니다. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 개발자 템플릿 힌트를 활성화/비활성화합니다. |
 
 ## 일반적인 인수
 

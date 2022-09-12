@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 2%
 
 ---
 
@@ -25,27 +25,27 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="설치" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>설치</strong></a>
+      <a href="../installation/overview.md"><strong>설치</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="구성" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>구성</strong></a>
+      <a href="../configuration/overview.md"><strong>구성</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
+    <a href="../tools/data-migration-tool/how-migration-works.md">
       <img alt="마이그레이션" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>마이그레이션</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>마이그레이션</strong></a>
     </div>
   </td>
 </tr>
@@ -75,11 +75,11 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="도구" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>도구</strong></a>
+      <a href="../tools/overview.md"><strong>도구</strong></a>
     </div>
   </td>
 </tr>

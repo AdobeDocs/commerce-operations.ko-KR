@@ -1,9 +1,9 @@
 ---
 title: 애플리케이션 모드
 description: 상거래 애플리케이션은 필요에 따라 다른 모드로 작동할 수 있습니다. 사용 가능한 응용 프로그램 모드의 세부 목록을 확인합니다.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ ht-degree: 0%
 
 유지 관리, 업그레이드 또는 구성 작업을 완료하는 동안 사이트를 오프라인으로 전환하려면 유지 관리 모드에서 Commerce 응용 프로그램을 실행합니다. 유지 관리 모드에서 사이트는 방문자를 기본값으로 리디렉션합니다 `Service Temporarily Unavailable` 페이지.
 
-을(를) 만들 수 있습니다 [사용자 지정 유지 관리 페이지](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html)을 지정하는 경우, 유지 관리 모드를 수동으로 활성화 및 비활성화하고, 인증된 IP 주소의 방문자가 저장소를 정상적으로 볼 수 있도록 유지 관리 모드를 구성합니다. 자세한 내용은 [유지 관리 모드 활성화 및 비활성화](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+을(를) 만들 수 있습니다 [사용자 지정 유지 관리 페이지](../../upgrade/troubleshooting/maintenance-mode-options.md)을 지정하는 경우, 유지 관리 모드를 수동으로 활성화 및 비활성화하고, 인증된 IP 주소의 방문자가 저장소를 정상적으로 볼 수 있도록 유지 관리 모드를 구성합니다. 자세한 내용은 [유지 관리 모드 활성화 및 비활성화](../../installation/tutorials/maintenance-mode.md).
 
 클라우드 인프라에서 상거래를 사용하는 경우 배포 단계 동안 상거래 애플리케이션이 유지 관리 모드로 실행됩니다. 배포가 완료되면 Commerce 응용 프로그램이 프로덕션 모드에서 실행으로 돌아갑니다. 자세한 내용은 [배포 후크](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) 에서 _Commerce Cloud 안내서_.

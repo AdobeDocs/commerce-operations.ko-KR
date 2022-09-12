@@ -2,9 +2,9 @@
 title: 유효 캐시 계획
 description: 로드 중인 사이트의 성공을 확인하려면 캐싱에 대한 권장 벤치마크를 참조하십시오.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ ht-degree: 0%
 
 이러한 초기 계획 완료와 함께 이러한 요구 사항에 따라 캐시를 구성하기 위해 기술 구성을 적용할 수 있습니다.
 
-컨텐츠가 업데이트되고 캐싱 TTL 내에서 라이브로 만들어야 하는 경우에도 대부분의 경우 에 대한 캐시를 수동으로 지울 수 있습니다 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) 및 [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) 해당 컨텐츠에 대해 선택적으로 캐시합니다. 즉, 긴급한 변경 사항이 즉시 반영됩니다. 또한 수동 캐시 지우기에 대한 프로세스를 미리 계획 및 테스트하여 일부 컨텐츠에 대한 업데이트를 수동으로 적용해야 하는 경우 사이트 작업 Runbook에 문서화되어 이 작업을 수행하는 방법 및 사용자를 지웁니다.
+컨텐츠가 업데이트되고 캐싱 TTL 내에서 라이브로 만들어야 하는 경우에도 대부분의 경우 에 대한 캐시를 수동으로 지울 수 있습니다 [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) 및 [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) 해당 컨텐츠에 대해 선택적으로 캐시합니다. 즉, 긴급한 변경 사항이 즉시 반영됩니다. 또한 수동 캐시 지우기에 대한 프로세스를 미리 계획 및 테스트하여 일부 컨텐츠에 대한 업데이트를 수동으로 적용해야 하는 경우 사이트 작업 Runbook에 문서화되어 이 작업을 수행하는 방법 및 사용자를 지웁니다.

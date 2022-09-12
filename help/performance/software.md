@@ -1,9 +1,9 @@
 ---
 title: 소프트웨어 Recommendations
 description: Adobe Commerce 및 Magento Open Source 배포의 최적 성능과 관련된 권장 소프트웨어 목록을 검토합니다.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 Adobe에서는 다음 소프트웨어를 [!DNL Commerce]:
 
-* [PHP](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html)
+* [PHP](../installation/system-requirements.md)
 * Nginx 및 [PHP-FPM](https://php-fpm.org/)
-* [[!DNL MySQL]](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html)
-* [[!DNL Elasticsearch] 또는 OpenSearch](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html)
+* [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
+* [[!DNL Elasticsearch] 또는 OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
 다중 서버 배포 또는 비즈니스 확장을 계획하는 상인의 경우 다음을 권장합니다.
 
-* [[!DNL Varnish] 캐시](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish.html)
-* [레디스](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-session.html) 세션(2.0.6 이상에서)
-* Redis 인스턴스를 [기본 캐시](https://devdocs.magento.com/guides/v2.4/config-guide/redis/redis-pg-cache.html) (페이지 캐시에 이 인스턴스를 사용하지 마십시오.)
+* [[!DNL Varnish] 캐시](../configuration/cache/config-varnish.md)
+* [레디스](../configuration/cache/redis-session.md) 세션(2.0.6 이상에서)
+* Redis 인스턴스를 [기본 캐시](../configuration/cache/redis-pg-cache.md) (페이지 캐시에 이 인스턴스를 사용하지 마십시오.)
 
-자세한 내용은 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 각 소프트웨어 유형의 지원되는 버전에 대한 정보.
+자세한 내용은 [시스템 요구 사항](../installation/system-requirements.md) 각 소프트웨어 유형의 지원되는 버전에 대한 정보.
 
 ## 운영 체제
 
@@ -157,7 +157,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-를 활성화하는 것이 좋습니다 [PHP APCu 확장](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) 및 [구성 `composer` 그것을 지원하다](https://devdocs.magento.com/guides/v2.4/performance-best-practices/deployment-flow.html#preprocess-dependency-injection-instructions) 을 추가하여 성능을 극대화할 수 있습니다. 이 확장은 열린 파일의 파일 위치를 캐시하여 성능을 높입니다 [!DNL Commerce] 페이지, Ajax 호출 및 끝점을 포함한 서버 호출.
+를 활성화하는 것이 좋습니다 [PHP APCu 확장](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) 및 [구성 `composer` 그것을 지원하다](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) 을 추가하여 성능을 극대화할 수 있습니다. 이 확장은 열린 파일의 파일 위치를 캐시하여 성능을 높입니다 [!DNL Commerce] 페이지, Ajax 호출 및 끝점을 포함한 서버 호출.
 
 편집 `apcu.ini` 다음을 포함할 파일:
 
@@ -208,7 +208,7 @@ Magento은 Nginx 및 Apache 웹 서버를 완전히 지원합니다. [!DNL Comme
 * **유예 모드** 를 사용하면 [!DNL Varnish] 개체의 TTL(Time to Live) 기간을 초과하여 캐시에 저장하고 이 오래된 콘텐츠를 제공하는 경우 [!DNL Commerce] 은 정상이 아니거나 새 콘텐츠를 아직 가져오지 않은 경우 적합합니다.
 * **Saint 모드** 블랙리스트에 비정상 [!DNL Commerce] 구성할 수 있는 시간에 대한 서버입니다. 따라서, 비정상 백엔드는 [!DNL Varnish] 로드 밸런서로서 사용됩니다.
 
-자세한 내용은 [고급 [!DNL Varnish] 구성](https://devdocs.magento.com/guides/v2.4/config-guide/varnish/config-varnish-advanced.html) 를 참조하십시오.
+자세한 내용은 [고급 [!DNL Varnish] 구성](../configuration/cache/config-varnish-advanced.md) 를 참조하십시오.
 
 ### 자산 성능 최적화
 

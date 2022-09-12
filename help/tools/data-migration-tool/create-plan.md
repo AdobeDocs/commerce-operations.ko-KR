@@ -1,9 +1,9 @@
 ---
 title: 데이터 마이그레이션 계획 만들기
 description: 다음 단계에 따라 Magento 1에서 Magento 2으로 성공적으로 업그레이드하려면 데이터 마이그레이션 계획을 만드십시오.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,6 @@ ht-degree: 0%
 1. 이제 Magento 2 저장소를 사용할 준비가 되었습니다. 본인과 고객은 모든 활동을 재개할 수 있습니다.
 
 <!-- LINK ADDRESSES -->
-[Magento 시스템 요구 사항]: https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html
+[Magento 시스템 요구 사항]: ../../installation/system-requirements.md
 [Commerce Marketplace]: https://marketplace.magento.com
-[구성 안내서]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html
+[구성 안내서]: ../../configuration/cli/manage-indexers.md

@@ -1,9 +1,9 @@
 ---
 title: Nginx를 사용하여 여러 웹 사이트 설정
 description: Nginx를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 **하나의 가상 호스트를 만들려면** (간소화됨):
 
-이 구성은 [Nginx 구성](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html).
+이 구성은 [nginx 구성](../../installation/prerequisites/web-server/nginx.md).
 
 1. 텍스트 편집기를 열고 다음 컨텐츠를 라는 새 파일에 추가합니다. `/etc/nginx/sites-available/magento`:
 

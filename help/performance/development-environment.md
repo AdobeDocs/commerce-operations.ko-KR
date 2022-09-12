@@ -1,9 +1,9 @@
 ---
 title: 개발 환경 Recommendations
 description: 로컬 Adobe Commerce 또는 Magento Open Source 개발 환경을 설정하기 위한 성능 권장 사항에 대해 알아봅니다.
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ VM에서 개발하고 Magento 페이지를 로드하는 데 2초 이상 걸리�
 
 <!-- Link definitions -->
 
-[캐시 정리]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[캐시 비활성화]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[캐시 정리]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[캐시 비활성화]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

@@ -1,9 +1,9 @@
 ---
 title: 마스터 데이터베이스 자동 구성
 description: 분할 데이터베이스 솔루션 자동 구성에 대한 지침을 참조하십시오.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## Adobe Commerce 소프트웨어 설치
 
-Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베이스를 활성화할 수 있습니다. 즉, 체크아웃 및 주문 데이터가 이미 있는 Adobe Commerce 시스템에 분할 데이터베이스를 추가할 수 있습니다. Adobe Commerce README 또는 [설치 안내서](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) 단일 마스터 데이터베이스를 사용하여 Adobe Commerce 소프트웨어를 설치하려면 다음을 수행하십시오.
+Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베이스를 활성화할 수 있습니다. 즉, 체크아웃 및 주문 데이터가 이미 있는 Adobe Commerce 시스템에 분할 데이터베이스를 추가할 수 있습니다. Adobe Commerce README 또는 [설치 안내서](../../installation/overview.md) 단일 마스터 데이터베이스를 사용하여 Adobe Commerce 소프트웨어를 설치하려면 다음을 수행하십시오.
 
 ## 추가 마스터 데이터베이스 설정
 

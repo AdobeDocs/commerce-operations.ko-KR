@@ -1,9 +1,9 @@
 ---
 title: 개요
 description: 다음 우수 사례에 따라 Adobe Commerce 또는 Magento Open Source 배포의 성능을 최적화합니다.
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 
 ## 가정
 
-* 을 사용하여 Adobe Commerce 또는 Magento Open Source을 설치했습니다. [작성기](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+* 을 사용하여 Adobe Commerce 또는 Magento Open Source을 설치했습니다. [작성기](../installation/composer.md).
 * 이 설치를 사용하여 Adobe Commerce 또는 Magento Open Source의 라이브 프로덕션 인스턴스를 실행할 수 있습니다.

@@ -1,9 +1,9 @@
 ---
 title: 배포용 구성 파일
 description: Commerce 응용 프로그램 설치에 구성 파일이 작동하는 방식을 이해합니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,9 @@ Adobe Commerce에서는 구성 요소를 쉽게 사용자 지정하고 구성 �
 
 예:
 
-- 구성 요소 제거: [`bin/magento setup:uninstall`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall.html)
+- 구성 요소 제거: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
 - 구성 요소의 상태 확인: [`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
-- 구성 요소 활성화 또는 비활성화: [`bin/magento module:disable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable), [`bin/magento module:enable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html#instgde-cli-subcommands-enable-disable).
+- 구성 요소 활성화 또는 비활성화: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_
 

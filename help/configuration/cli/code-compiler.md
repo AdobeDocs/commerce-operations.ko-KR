@@ -1,9 +1,9 @@
 ---
 title: 코드 컴파일러
 description: 명령줄에서 코드 컴파일러를 실행하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Commerce 응용 프로그램을 설치하기 전에 코드를 컴파일하려면
 
    를 사용하십시오 `[-c|--clear-static-content]` 지우기 옵션 [정적 콘텐츠](https://glossary.magento.com/static-content). 이전에 모듈을 활성화하거나 비활성화하고 이전에 모듈에 대해 생성된 정적 콘텐츠를 지워야 하는 경우에 필요합니다.
 
-   자세한 내용은 [모듈 사용](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+   자세한 내용은 [모듈 사용](../../installation/tutorials/manage-modules.md).
 
 1. 코드를 컴파일합니다.
 

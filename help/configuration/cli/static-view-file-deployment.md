@@ -1,9 +1,9 @@
 ---
 title: 정적 보기 파일 배포
 description: 프로덕션 모드 중에 상거래 파일 시스템에 정적 파일을 쓰는 방법을 알아봅니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->_개발자 모드만_: 새 모듈을 설치하거나 활성화하면 새 JavaScript, CSS, 레이아웃 등이 로드될 수 있습니다. 정적 파일에 문제가 발생하지 않도록 하려면 이전 파일을 정리하여 새 모듈에 대한 모든 변경 사항을 가져오는지 확인해야 합니다. 생성된 정적 보기 파일을 여러 가지 방법으로 정리할 수 있습니다. 을(를) 참조하십시오. [자세한 내용은 정적 파일 캐시 항목 정리](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) 추가 정보.
+>_개발자 모드만_: 새 모듈을 설치하거나 활성화하면 새 JavaScript, CSS, 레이아웃 등이 로드될 수 있습니다. 정적 파일에 문제가 발생하지 않도록 하려면 이전 파일을 정리하여 새 모듈에 대한 모든 변경 사항을 가져오는지 확인해야 합니다. 생성된 정적 보기 파일을 여러 가지 방법으로 정리할 수 있습니다. 을(를) 참조하십시오. [자세한 내용은 정적 파일 캐시 항목 정리](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) 추가 정보.
 
 **정적 보기 파일을 배포하려면**:
 
-1. Commerce 서버에 또는으로 로그인합니다 [파일 시스템 소유자에게 전환](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 또는으로 로그인합니다 [파일 시스템 소유자에게 전환](../../installation/prerequisites/file-system/overview.md).
 1. 다음 내용의 내용을 삭제합니다. `<magento_root>/pub/static`를 제외하고 `.htaccess` 파일. 이 파일을 삭제하지 마십시오.
 1. 정적 보기 파일 배포 도구 실행 `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ New version of deployed files: 1466711110
 
 ## 정적 보기 파일 배포 도구 문제 해결
 
-[먼저 상거래 소프트웨어를 설치합니다](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); 그렇지 않으면 정적 보기 파일 배포 도구를 실행할 수 없습니다.
+[먼저 상거래 소프트웨어를 설치합니다](../../installation/overview.md); 그렇지 않으면 정적 보기 파일 배포 도구를 실행할 수 없습니다.
 
 **증상**: 정적 보기 파일 배포 도구를 실행하면 다음 오류가 표시됩니다.
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 다음 단계를 사용하십시오.
 
-1. 를 사용하여 상거래 소프트웨어 설치 [명령줄](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Commerce 서버에 또는으로 로그인합니다 [다음으로 전환](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html): 파일 시스템 소유자입니다.
-1. 다음 내용의 내용을 삭제합니다. `<magento_root>/pub/static` 디렉토리(단, `.htaccess` 파일. 이 파일을 삭제하지 마십시오.
+1. 를 사용하여 상거래 소프트웨어 설치 [명령줄](../../installation/composer.md).
+1. 응용 프로그램 서버에 또는 로 로그인합니다. [다음으로 전환](../../installation/prerequisites/file-system/overview.md): 파일 시스템 소유자입니다.
+1. 다음 내용의 내용을 삭제합니다. `<app_root>/pub/static` 디렉토리(단, `.htaccess` 파일. 이 파일을 삭제하지 마십시오.
 1. 정적 보기 파일 배포: `bin/magento setup:static-content:deploy`
 
 ## 정적 콘텐츠 배포 도구 사용자 지정을 위한 개발자용 팁

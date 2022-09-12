@@ -1,9 +1,9 @@
 ---
 title: 패치 적용
 description: Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대해 알아봅니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 명령줄에서 패치를 적용하려면
 
 1. 로컬 파일을 `<Magento_root>` FTP, SFTP, SSH 또는 일반적인 전송 방법을 사용하여 서버의 디렉토리입니다.
-1. 서버로 로그인합니다. [관리자 사용자](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) 그리고 파일이 올바른 디렉토리에 있는지 확인합니다.
+1. 서버로 로그인합니다. [관리자 사용자](../../configuration/cli/config-cli.md#prerequisites) 그리고 파일이 올바른 디렉토리에 있는지 확인합니다.
 1. 명령줄 인터페이스에서 패치 확장에 따라 다음 명령을 실행합니다.
 
    ```bash

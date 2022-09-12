@@ -1,9 +1,9 @@
 ---
 title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source의 다양한 패치 유형과 패치 작동 방식에 대해 알아봅니다.
-source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. 자세한 내용은 [파일 시스템 백업 및 롤백](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. 자세한 내용은 [파일 시스템 백업 및 롤백](../../installation/tutorials/backup.md).
 
 패치(또는 diff) 파일은 다음에 참하는 텍스트 파일입니다.
 

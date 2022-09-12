@@ -3,7 +3,7 @@ title: 사용자 정의 로그 파일에 쓰기
 description: 사용자 지정 로그 파일을 설정하는 방법을 알아봅니다.
 contributor_name: Atwix
 contributor_link: https://www.atwix.com/
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ## 에서 사용자 지정 로그 파일을 설정합니다. `di.xml`
 
-이 예는 를 사용하는 방법을 보여줍니다. [가상 유형](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) 기록하다 `debug` 표준 대신 사용자 지정 로그 파일에 메시지 보내기 `/var/log/debug.log`.
+이 예는 를 사용하는 방법을 보여줍니다. [가상 유형](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 기록하다 `debug` 표준 대신 사용자 지정 로그 파일에 메시지 보내기 `/var/log/debug.log`.
 
-1. 에서 `di.xml` 모듈의 파일에서 사용자 정의 로그 파일을 [가상 유형](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types).
+1. 에서 `di.xml` 모듈의 파일에서 사용자 정의 로그 파일을 [가상 유형](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    다음 `name` 값 `Magento\Payment\Model\Method\MyCustomDebug` 고유해야 합니다.
 
-1. 다른 처리기를 정의합니다. [가상 유형](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) 고유한 `name`:
+1. 다른 처리기를 정의합니다. [가상 유형](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 고유한 `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. 를 주입합니다. `MyCustomLogger` [가상 유형](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) 에서 `Magento\Payment\Model\Method\Logger` 개체:
+1. 를 주입합니다. `MyCustomLogger` [가상 유형](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 에서 `Magento\Payment\Model\Method\Logger` 개체:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 이 클래스의 처리기를 [가상 유형](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html#virtual-types) 모듈 `di.xml` 파일.
+1. 이 클래스의 처리기를 [가상 유형](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 모듈 `di.xml` 파일.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

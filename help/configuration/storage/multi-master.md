@@ -1,9 +1,9 @@
 ---
 title: 데이터베이스 성능 솔루션 분할
 description: Adobe Commerce 및 Magento Open Source을 위한 데이터베이스 분할 솔루션에 대해 읽어 보십시오.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerce에서는 세 개의 마스터 데이터베이스와 복제 데이
 
    >[!WARNING]
    >
-   >두 개의 추가 데이터베이스 인스턴스를 수동으로 백업해야 합니다. 상거래(Commerce)는 기본 데이터베이스 인스턴스만 백업합니다. 다음 [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) 명령 및 관리 옵션은 추가 테이블을 백업하지 않습니다.
+   >두 개의 추가 데이터베이스 인스턴스를 수동으로 백업해야 합니다. 상거래(Commerce)는 기본 데이터베이스 인스턴스만 백업합니다. 다음 [`magento setup:backup --db`](../../installation/tutorials/backup.md) 명령 및 관리 옵션은 추가 테이블을 백업하지 않습니다.
 
 ## 전제 조건
 

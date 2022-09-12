@@ -1,9 +1,9 @@
 ---
 title: 설치 [!DNL Data Migration Tool]
 description: 설치 방법 알아보기 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하려면 다음을 수행하십시오.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-현재 `develop` 브랜치는 <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/dev_downgrade.html">릴리스된 분기</a> 계속하기 전에
+현재 `develop` 브랜치는 [릴리스된 분기](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) 계속하기 전에
 
-Magento 소프트웨어를 아직 설치하지 않았다면 [지금 설치](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
-GitHub 리포지토리를 복제하는 경우, 에 설명된 대로 릴리스 태그를 체크 아웃해야 합니다 [(기여자) Magento 리포지토리 복제](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/dev_install.html).
+Adobe Commerce 또는 Magento Open Source 소프트웨어를 아직 설치하지 않았다면 [지금 설치](../../installation/prerequisites/commerce.md).
+GitHub 리포지토리를 복제하는 경우, 에 설명된 대로 릴리스 태그를 체크 아웃해야 합니다 [(기여자) GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## 릴리스된 버전 찾기 [!DNL Data Migration Tool]
 
@@ -70,8 +70,8 @@ GitHub 리포지토리를 복제하는 경우, 에 설명된 대로 릴리스 �
 
 를 설치하려면 [!DNL Data Migration Tool], 업데이트해야 합니다. `composer.json` Magento 루트 설치 디렉터리에서 [!DNL Data Migration Tool] 패키지.
 
-1. Magento 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento 2 루트 디렉토리로 변경합니다.
+1. 애플리케이션 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. 응용 프로그램 루트 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
    ```bash
@@ -94,14 +94,14 @@ GitHub 리포지토리를 복제하는 경우, 에 설명된 대로 릴리스 �
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. 메시지가 표시되면 을 입력합니다 [인증 키](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html). 공개 키는 사용자 이름 입니다. 개인 키는 암호입니다.
+1. 메시지가 표시되면 을 입력합니다 [인증 키](../../installation/prerequisites/authentication-keys.md). 공개 키는 사용자 이름 입니다. 개인 키는 암호입니다.
 
 ### GitHub에서 설치
 
-GitHub 리포지토리에서 Magento 2을 복제한 경우 아래 절차에 따라 을 설치하십시오. [!DNL Data Migration Tool].
+GitHub 리포지토리를 복제한 경우 아래 절차에 따라 을 설치하십시오. [!DNL Data Migration Tool].
 
-1. Magento 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Magento 2 루트 디렉토리로 변경합니다.
+1. 애플리케이션 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. 응용 프로그램 루트 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
    ```bash

@@ -1,9 +1,9 @@
 ---
 title: 하드웨어 Recommendations
 description: Adobe Commerce 및 Magento Open Source 배포의 최적 성능과 관련된 권장 하드웨어 목록을 검토합니다.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Magento에 시스템이 배포되는 방식에 따라 PHP 메모리 요구 사�
 
 * Storfront 페이지만 제공하는 웹 노드: 256MB
 * 큰 카탈로그로 관리 페이지를 제공하는 웹 노드: 1GB
-* [!DNL Commerce] 큰 카탈로그로 사이트를 색인화하는 cron: >256MB(참조) [고급 설정](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) 최적의 성능을 위해 튜닝하려면 다음을 수행합니다.)
+* [!DNL Commerce] 큰 카탈로그로 사이트를 색인화하는 cron: >256MB(참조) [고급 설정](../performance/advanced-setup.md) 최적의 성능을 위해 튜닝하려면 다음을 수행합니다.)
 * [!DNL Commerce] 정적 자산 컴파일 및 배포: 756MB
 * [!DNL Commerce] 성능 툴킷 프로필 생성: 1GB PHP RAM, 16MB 이상 [!DNL MySQL] TMP_TABLE_SIZE 및 MAX_HEAP_TABLE_SIZE 설정
 

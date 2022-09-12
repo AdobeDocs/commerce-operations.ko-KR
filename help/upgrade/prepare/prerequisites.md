@@ -1,9 +1,9 @@
 ---
 title: 전체 사전 요구 사항
 description: 이러한 전제 조건 단계를 완료하여 업그레이드를 위한 Adobe Commerce 또는 Magento Open Source 프로젝트를 준비합니다.
-source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 전체 업그레이드 사전 요구 사항
 
-Adobe Commerce 또는 Magento Open Source을 실행하는 데 필요한 사항을 이해하는 것이 중요합니다. 먼저 을(를) 검토해야 합니다 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 로 업그레이드하려는 버전의 경우
+Adobe Commerce 또는 Magento Open Source을 실행하는 데 필요한 사항을 이해하는 것이 중요합니다. 먼저 을(를) 검토해야 합니다 [시스템 요구 사항](../../installation/system-requirements.md) 로 업그레이드하려는 버전의 경우
 
 시스템 요구 사항을 검토한 후 시스템을 업그레이드하기 전에 다음 사전 요구 사항을 완료해야 합니다.
 
@@ -26,9 +26,9 @@ Adobe Commerce 또는 Magento Open Source을 실행하는 데 필요한 사항�
 
 ## 모든 소프트웨어 업데이트
 
-다음 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 타사 소프트웨어 버전을 정확하게 설명합니다.
+다음 [시스템 요구 사항](../../installation/system-requirements.md) Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 타사 소프트웨어 버전을 정확하게 설명합니다.
 
-사용자 환경의 모든 시스템 요구 사항과 종속성을 업데이트했는지 확인합니다. PHP 참조 [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), 및 [필수 PHP 설정](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html#php-required-set).
+사용자 환경의 모든 시스템 요구 사항과 종속성을 업데이트했는지 확인합니다. PHP 참조 [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), 및 [필수 PHP 설정](../../installation/prerequisites/php-settings.md#php-settings).
 
 ## 지원되는 검색 엔진이 설치되어 있는지 확인합니다.
 
@@ -50,10 +50,10 @@ Adobe Commerce 및 Magento Open Source에서 소프트웨어를 사용하려면 
 
 2.4부터는 MySQL이 더 이상 지원되는 카탈로그 검색 엔진이 아닙니다. 업그레이드하기 전에 Elasticsearch 또는 OpenSearch를 설치 및 구성해야 합니다. 다음 리소스를 사용하여 이 프로세스를 안내하십시오.
 
-- [Elasticsearch 설치 및 구성](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
+- [Elasticsearch 설치 및 구성](../../configuration/search/overview-search.md)
 - [Elasticsearch 설치](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 구성 [nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html) 또는 [Apache](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html) 검색 엔진과 함께 작업하려면
-- [Elasticsearch을 사용하도록 상거래 구성](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) 및 다시 색인화
+- 구성 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) 또는 [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 검색 엔진과 함께 작업하려면
+- [Elasticsearch을 사용하도록 상거래 구성](../../configuration/search/configure-search-engine.md) 및 다시 색인화
 
 일부 타사 카탈로그 검색 엔진은 Adobe Commerce 검색 엔진 맨 위에서 실행됩니다. 확장을 업데이트해야 하는지 여부를 확인하려면 공급업체에 문의하십시오.
 
@@ -63,9 +63,9 @@ Adobe Commerce 및 Magento Open Source에서 소프트웨어를 사용하려면 
 
 을(를) 참조하십시오. [업그레이드 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 프로덕션에 배포하기 전에 데이터 백업, 잠재적 마이그레이션 문제 감지, 업그레이드 테스트 등에 대한 전체 지침을 살펴보십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작할 필요가 있거나 필요하지 않을 수 있습니다.
 
-Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) 를 클릭하여 설치된 JDK 버전을 확인합니다.
+Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 를 클릭하여 설치된 JDK 버전을 확인합니다.
 
-[Elasticsearch을 사용하도록 Magento 구성](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) Elasticsearch 2을 지원되는 버전으로 업데이트한 후 수행해야 하는 작업에 대해 설명합니다.
+[Elasticsearch 구성](../../configuration/search/configure-search-engine.md) Elasticsearch 2을 지원되는 버전으로 업데이트한 후 수행해야 하는 작업에 대해 설명합니다.
 
 ### OpenSearch
 
@@ -77,9 +77,9 @@ OpenSearch는 Elasticsearch의 라이센스 변경 후 Elasticsearch 7.10.2의 �
 
 다음을 수행할 수 있습니다 [Elasticsearch에서 OpenSearch로 마이그레이션](opensearch-migration.md) 위에 나열된 Adobe Commerce 또는 Magento Open Source 버전으로 업그레이드하는 경우에만 해당됩니다.
 
-OpenSearch를 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) 를 클릭하여 설치된 JDK 버전을 확인합니다.
+OpenSearch를 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 를 클릭하여 설치된 JDK 버전을 확인합니다.
 
-[Elasticsearch을 사용하도록 Magento 구성](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) 검색 엔진을 변경한 후 수행해야 하는 작업에 대해 설명합니다.
+[Elasticsearch을 사용하도록 Magento 구성](../../configuration/search/configure-search-engine.md) 검색 엔진을 변경한 후 수행해야 하는 작업에 대해 설명합니다.
 
 ### 타사 확장
 
@@ -93,8 +93,8 @@ Adobe은 열린 파일을 설정할 것을 권장합니다 [ulimit](https://ss64
 
 명령줄에서 ulimit를 설정하려면 다음을 수행합니다.
 
-1. 로 전환 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. 제한 을 65536.
+1. 로 전환 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. ulimit를 로 설정합니다. `65536`.
 
    ```bash
    ulimit -s 65536
@@ -106,7 +106,7 @@ Adobe은 열린 파일을 설정할 것을 권장합니다 [ulimit](https://ss64
 
 Bash 쉘에서 값을 설정하려면 다음을 수행합니다.
 
-1. 로 전환 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 로 전환 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 열기 `/home/<username>/.bashrc` 텍스트 편집기에서 을 참조하십시오.
 1. 다음 줄을 추가합니다.
 
@@ -150,7 +150,7 @@ crontab -l
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
-자세한 내용은 [크론 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 추가 정보.
+자세한 내용은 [크론 구성 및 실행](../../configuration/cli/configure-cron-jobs.md) 추가 정보.
 
 ## DATA_CONVERTER_BATCH_SIZE 설정
 
@@ -172,7 +172,7 @@ Adobe Commerce 2.4에는 직렬화된 데이터를 JSON으로 변환해야 하�
 
 환경 변수를 설정하려면 다음을 수행하십시오.
 
-1. 로 전환 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 로 전환 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 변수를 설정합니다.
 
    ```bash
@@ -191,9 +191,9 @@ Adobe Commerce 2.4에는 직렬화된 데이터를 JSON으로 변환해야 하�
 
 ## 파일 시스템 권한 확인
 
-보안상의 이유로 Adobe Commerce 및 Magento Open Source에서는 파일 시스템에 대한 특정 권한이 필요합니다. 권한은 다음과 다릅니다 _[소유권](https://devdocs.magento.com/guides/v2.4/comp-mgr/prereq/prereq_compman-checklist.html#magento-owner-group)_. 소유권은 파일 시스템에서 작업을 수행할 수 있는 사용자를 결정합니다. 권한은 사용자가 수행할 수 있는 작업을 결정합니다.
+보안상의 이유로 Adobe Commerce 및 Magento Open Source에서는 파일 시스템에 대한 특정 권한이 필요합니다. 권한은 다음과 다릅니다 _[소유권](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 소유권은 파일 시스템에서 작업을 수행할 수 있는 사용자를 결정합니다. 권한은 사용자가 수행할 수 있는 작업을 결정합니다.
 
-파일 시스템의 디렉토리는 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) 그룹에 속해 있어야 합니다.
+파일 시스템의 디렉토리는 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md) 그룹에 속해 있어야 합니다.
 
 파일 시스템 권한이 제대로 설정되었는지 확인하려면 애플리케이션 서버에 로그인하거나 호스팅 공급자의 파일 관리자 응용 프로그램을 사용하십시오.
 
@@ -254,11 +254,11 @@ ls -la /var/www/html/magento2/pub
 
 Adobe Commerce 및 Magento Open Source은 정적 파일 자산을 의 하위 디렉토리에 배포하므로 `pub`또한 여기에서 권한 및 소유권을 확인하는 것이 좋습니다.
 
-자세한 내용은 [파일 시스템 권한 및 소유권](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+자세한 내용은 [파일 시스템 권한 및 소유권](../../installation/prerequisites/file-system/overview.md).
 
 ## 설정 `pub/` 디렉토리 루트
 
-자세한 내용은 [보안을 향상하기 위해 docroot 수정](https://devdocs.magento.com/guides/v2.4/install-gde/tutorials/change-docroot-to-pub.html) 자세한 내용
+자세한 내용은 [보안을 향상하기 위해 docroot 수정](../../installation/tutorials/docroot.md) 자세한 내용
 
 ## Composer 업데이트 플러그인 설치
 

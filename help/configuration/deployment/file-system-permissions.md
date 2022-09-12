@@ -1,9 +1,9 @@
 ---
 title: 파일 시스템 액세스 권한
 description: 개발 및 프로덕션 시스템에 대해 상거래 응용 프로그램 파일 시스템의 소유자 또는 소유자를 설정하는 방법을 참조하십시오.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 파일 시스템 액세스 권한
 
-이 섹션에서는 개발 및 프로덕션 시스템을 위해 Commerce 파일 시스템의 소유자 또는 소유자를 설정하는 방법을 설명합니다. 계속하기 전에 [파일 시스템 소유권 및 권한 개요](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+이 섹션에서는 개발 및 프로덕션 시스템을 위해 Commerce 파일 시스템의 소유자 또는 소유자를 설정하는 방법을 설명합니다. 계속하기 전에 [파일 시스템 소유권 및 권한 개요](../../installation/prerequisites/file-system/overview.md).
 
-이 항목에서는 상거래 개발 및 프로덕션 시스템에 중점을 둡니다. 상거래를 설치하는 경우 [사전 설치 소유권 및 권한 설정](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+이 항목에서는 상거래 개발 및 프로덕션 시스템에 중점을 둡니다. 상거래를 설치하는 경우 [사전 설치 소유권 및 권한 설정](../../installation/prerequisites/file-system/configure-permissions.md).
 
 다음 섹션에서는 하나 또는 두 개의 파일 시스템 소유자를 위한 요구 사항을 설명합니다. 이것의 의미는 다음과 같습니다.
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ### 선택적으로 설정 `magento_umask`
 
-자세한 내용은 [선택적으로 umask 설정](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) 에서 _설치 안내서_.
+자세한 내용은 [선택적으로 umask 설정](../../installation/next-steps/set-umask.md) 에서 _설치 안내서_.
 
 ## 비공개 호스팅을 위한 프로덕션 파일 시스템 소유권(사용자 2명)
 
@@ -121,7 +121,7 @@ ht-degree: 0%
    >
    >명령줄 사용자는 _파일 시스템 소유자_.
 
-이러한 사용자는 동일한 파일에 액세스할 수 있어야 하므로 [공유 그룹](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) 두 사람이 함께 있는 곳에 다음 절차는 이미 이 작업을 수행했다고 가정합니다.
+이러한 사용자는 동일한 파일에 액세스할 수 있어야 하므로 [공유 그룹](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) 두 사람이 함께 있는 곳에 다음 절차는 이미 이 작업을 수행했다고 가정합니다.
 
 다음 섹션 중 하나를 참조하십시오.
 

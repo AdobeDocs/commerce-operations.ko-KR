@@ -1,9 +1,9 @@
 ---
 title: 사용자 지정 크론 작업 및 크론 그룹 구성(튜토리얼)
 description: 이 단계별 자습서를 사용하여 사용자 지정 크론 작업을 만듭니다.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 - 상거래 응용 프로그램은에 설치됩니다. `/var/www/html/magento2`
 - 상거래 데이터베이스 사용자 이름과 암호가 모두 `magento`
-- 모든 작업을 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- 모든 작업을 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)
 
 ## 1단계: 샘플 모듈 가져오기
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 **샘플 모듈을 가져오려면**:
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 상거래 응용 프로그램 루트(예: 홈 디렉토리)에 없는 디렉토리로 변경합니다.
 1. 복제 [`magento2-samples` 저장소][samples].
 

@@ -1,9 +1,9 @@
 ---
 title: 명령줄 도구
 description: 전자 상거래 명령줄 도구를 사용하여 설치 및 구성 작업을 실행합니다.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ ht-degree: 0%
 - CLI는 확장 가능하므로 타사 개발자가 CLI를 &quot;플러그인&quot;할 수 있습니다. 이로 인해 사용자의 학습 곡선을 없앨 수 있습니다.
 - 비활성화된 모듈에 대한 명령이 표시되지 않습니다.
 
-이 항목에서는 CLI를 사용하여 Adobe Commerce 및 Magento Open Source 소프트웨어를 구성하는 방법을 설명합니다. 상거래 설치에 대한 자세한 내용은 [설치 흐름](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) 에서 _설치 안내서_.
+이 항목에서는 CLI를 사용하여 Adobe Commerce 및 Magento Open Source 소프트웨어를 구성하는 방법을 설명합니다. 상거래 설치에 대한 자세한 내용은 [설치 흐름](../../installation/overview.md) 에서 _설치 안내서_.
 
 ## 전제 조건
 
 CLI를 사용하기 전에 다음을 확인하십시오.
 
-1. 시스템이 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 에서 _설치 안내서_.
-1. 에 설명된 모든 전제 조건 작업을 완료했습니다. [전제 조건](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) 에서 _설치 안내서_.
-1. 상거래 서버에 로그인한 후 상거래 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환하십시오. 자세한 내용은 [파일 시스템 소유자에게 전환](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) 에서 _설치 안내서_.
+1. 시스템이 [시스템 요구 사항](../../installation/system-requirements.md) 에서 _설치 안내서_.
+1. 에 설명된 모든 전제 조건 작업을 완료했습니다. [전제 조건](../../installation/prerequisites/overview.md) 에서 _설치 안내서_.
+1. 상거래 서버에 로그인한 후 상거래 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환하십시오. 자세한 내용은 [파일 시스템 소유자에게 전환](../../installation/prerequisites/file-system/overview.md) 에서 _설치 안내서_.
 
 ## 실행 중인 명령
 

@@ -1,9 +1,9 @@
 ---
 title: 현재 검색 엔진이 지원되지 않음
 description: 지원되지 않는 검색 엔진에 대한 오류가 발생한 후 Adobe Commerce 또는 Magento Open Source 업그레이드 문제를 해결합니다.
-source-git-commit: 96534d5307062aa4fda8f6433630d2d39e2848e7
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -54,10 +54,10 @@ bin/magento config:show catalog/search/engine
 
 다음 리소스를 사용하여 이 프로세스를 안내하십시오.
 
-- [Elasticsearch 설치 및 구성](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html)
+- [Elasticsearch 설치 및 구성](../../configuration/search/overview-search.md)
 - [Elasticsearch 설치](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 사용할 Elasticsearch 구성 [nginx](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-nginx.html) 또는 [Apache](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-config-apache.html)
-- [Elasticsearch을 사용하도록 Magento 구성](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html)
+- 사용할 Elasticsearch 구성 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) 또는 [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
+- [Elasticsearch 구성](../../configuration/search/configure-search-engine.md)
 
 검색 엔진을 구성하고 다시 색인화하면 2.4로 업그레이드할 수 있습니다.
 
@@ -71,8 +71,8 @@ bin/magento config:show catalog/search/engine
 
    >[!NOTE]
    >
-   >Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) 를 클릭하여 설치된 JDK 버전을 확인합니다.
+   >Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 를 클릭하여 설치된 JDK 버전을 확인합니다.
 
-1. [Elasticsearch을 사용하도록 Magento 구성](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html) 색인화
+1. [Elasticsearch 구성](../../configuration/search/configure-search-engine.md) 색인화
 
 검색 엔진을 구성하고 다시 색인화하면 2.4로 업그레이드할 수 있습니다.

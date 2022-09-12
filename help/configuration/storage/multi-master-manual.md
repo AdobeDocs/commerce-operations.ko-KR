@@ -1,9 +1,9 @@
 ---
 title: 수동으로 마스터 데이터베이스 구성
 description: 분할 데이터베이스 솔루션 수동 구성에 대한 지침을 참조하십시오.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
 
 **시스템을 백업하려면**:
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 다음 명령을 입력합니다.
 
    ```bash
@@ -476,7 +476,7 @@ SET foreign_key_checks = 1;
 
 배포 구성을 업데이트하려면:
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 배포 구성 백업:
 
    ```bash

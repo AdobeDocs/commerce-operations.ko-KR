@@ -1,0 +1,14 @@
+---
+source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+workflow-type: tm+mt
+source-wordcount: '33'
+ht-degree: 0%
+
+---
+# 샘플 데이터 설치 완료
+
+샘플 데이터 패키지를 다운로드한 후에는 파일 시스템 소유자로 응용 프로그램 서버에 로그인하거나 로 전환한 후 다음 명령을 입력합니다. `<app_root>` 디렉토리:
+
+```bash
+bin/magento setup:upgrade
+```

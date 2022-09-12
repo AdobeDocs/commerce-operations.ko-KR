@@ -1,7 +1,7 @@
 ---
 title: 레이아웃 파일 변환
 description: XML 레이아웃 파일을 변환합니다.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 해당 XSLT(Extensible Stylesheet Language Transformations) 스타일시트를 업데이트할 경우 이 명령을 사용하여 레이아웃 XML 파일을 업데이트합니다.
 
-- [레이아웃 지침](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
-- [레이아웃 파일 형식](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+- [레이아웃 지침](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [레이아웃 파일 형식](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 명령 옵션:
 

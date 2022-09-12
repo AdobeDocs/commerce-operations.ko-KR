@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '85'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   화이트리스트 IP 주소 설정 등의 추가 옵션에 대해서는 다음을 참조하십시오 [`magento maintenance:enable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+   화이트리스트 IP 주소 설정 등의 추가 옵션에 대해서는 다음을 참조하십시오 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
 1. 다음을 설정하여 실행 중인 대기열 작업자를 중지합니다. `cron_run` to `false` in `app/etc/env.php` 아래와 같이 변경하는 것을 의미합니다.
 

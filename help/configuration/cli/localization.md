@@ -1,9 +1,9 @@
 ---
 title: 번역 사전 및 언어 패키지
 description: 번역 사전을 생성하고 언어 패키지를 빌드하는 방법을 알아봅니다.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    ```php
    <?php
    /**
-    * Copyright © Magento, Inc. All rights reserved.
+    * Copyright &copy; Magento, Inc. All rights reserved.
     * See COPYING.txt for license details.
     */
    
@@ -302,7 +302,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    ```xml
    <?xml version="1.0"?>
    /**
-   * Copyright © Magento, Inc. All rights reserved.
+   * Copyright &copy; Magento, Inc. All rights reserved.
    * See COPYING.txt for license details.
    */
    
@@ -315,16 +315,14 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 <!-- link definitions -->
 
-[Translate theme strings]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/translate_theory.html
-[번역 개요]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html
-[Community Engineering contributions]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#translations-project
-[번역 사전]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-dictionaries
+[번역 개요]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
+[번역 사전]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
 [번역 구성]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
-[언어 패키지에 대해 자세히 알아보기]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html#m2devgde-xlate-languagepack
+[언어 패키지에 대해 자세히 알아보기]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[등록]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[등록]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [&#39;de_de&#39;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[&#39;composer.json&#39;]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html
-[&#39;registration.php&#39;]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html
+[&#39;composer.json&#39;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
+[&#39;registration.php&#39;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

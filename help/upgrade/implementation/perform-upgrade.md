@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 수행
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 프로젝트를 업그레이드하십시오.
-source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >GitHub 리포지토리를 복제한 경우 이 메서드를 사용하여 업그레이드하지 마십시오. 대신 다음을 참조하십시오 [Git 기반 설치 업그레이드](../developer/git-installs.md) 업그레이드 지침
 
-다음 지침은 작성기를 사용하여 업그레이드하는 방법을 보여줍니다. Adobe Commerce 2.4.2 에서는 작성기 2에 대한 지원을 도입했습니다. &lt;2.4.1에서 업그레이드하려는 경우 먼저 작성기 1을 사용하여 작성기 2(예: 2.4.2)와 호환되는 버전으로 업그레이드해야 합니다 _이전_ 2.4.2 업그레이드를 위해 작성기 2로 업그레이드 또한 [지원되는 버전](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) PHP의 세그먼트입니다.
+다음 지침은 작성기를 사용하여 업그레이드하는 방법을 보여줍니다. Adobe Commerce 2.4.2 에서는 작성기 2에 대한 지원을 도입했습니다. &lt;2.4.1에서 업그레이드하려는 경우 먼저 작성기 1을 사용하여 작성기 2(예: 2.4.2)와 호환되는 버전으로 업그레이드해야 합니다 _이전_ 2.4.2 업그레이드를 위해 작성기 2로 업그레이드 또한 [지원되는 버전](../../installation/system-requirements.md) PHP의 세그먼트입니다.
 
 >[!WARNING]
 >
@@ -42,7 +42,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   자세한 내용은 [유지 관리 모드 활성화 또는 비활성화](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) 추가 옵션을 보려면 선택적으로, [사용자 지정 유지 관리 모드 페이지](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+   자세한 내용은 [유지 관리 모드 활성화 또는 비활성화](../../installation/tutorials/maintenance-mode.md) 추가 옵션을 보려면 선택적으로, [사용자 지정 유지 관리 모드 페이지](../troubleshooting/maintenance-mode-options.md).
 
 1. 메시지 큐 소비자와 같은 비동기 프로세스가 실행되는 동안 업그레이드 프로세스를 시작하면 데이터가 손상될 수 있습니다. 데이터 손상을 방지하려면 모든 크론 작업을 비활성화합니다.
 
@@ -253,7 +253,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 애플리케이션이  `We're sorry, an error has occurred while generating this email.` 오류:
 
-1. 재설정 [파일 시스템 소유권 및 권한](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html) 를 `root` 권한.
+1. 재설정 [파일 시스템 소유권 및 권한](../../installation/prerequisites/file-system/configure-permissions.md) 를 `root` 권한.
 1. 다음 디렉터리를 지웁니다.
    - `var/cache/`
    - `var/page_cache/`

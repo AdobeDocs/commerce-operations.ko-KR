@@ -1,9 +1,9 @@
 ---
 title: 구성 우수 사례
 description: 이러한 우수 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 크론 작업
 
-의 모든 비동기 작업 [!DNL Commerce] 는 Linux를 사용하여 수행됩니다 `cron` 명령. 자세한 내용은 [크론 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 를 클릭하여 올바르게 구성합니다.
+의 모든 비동기 작업 [!DNL Commerce] 는 Linux를 사용하여 수행됩니다 `cron` 명령. 자세한 내용은 [크론 구성 및 실행](../configuration/cli/configure-cron-jobs.md) 를 클릭하여 올바르게 구성합니다.
 
 ## 인덱서
 
@@ -40,7 +40,7 @@ MariaDB 10.4에서 재색인화를 수행하는 데 다른 MariaDB에 비해 시
 
 >[!WARNING]
 >
->다음 **[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe Commerce on cloud 인프라](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) 을 지원하지 않음 `Developer` 모드.
+>다음 **[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md). [Adobe Commerce on cloud 인프라](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) 을 지원하지 않음 `Developer` 모드.
 
 ## 지연된 스톡 업데이트
 
@@ -66,7 +66,7 @@ MariaDB 10.4에서 재색인화를 수행하는 데 다른 MariaDB에 비해 시
 
 >[!INFO]
 >
->다음 **[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe [!DNL Commerce] 클라우드 인프라](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) 을 지원하지 않음 `Developer` 모드.
+>다음 **[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] 클라우드 인프라](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) 을 지원하지 않음 `Developer` 모드.
 
 를 활성화하면 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 옵션을 사용하면 Commerce에서 모든 JS 리소스를 storefront 페이지에 로드되는 하나 또는 번들 세트에 병합할 수 있습니다. JS를 번들이면 서버에 대한 요청이 적으므로 페이지 성능이 향상됩니다. 또한 브라우저가 첫 번째 호출 시 JS 리소스를 캐시하고 모든 추가 탐색을 위해 다시 사용하는 데 도움이 됩니다. 모든 JS가 텍스트로 로드되므로 이 옵션은 레이지 평가도 제공합니다. 페이지에서 특정 작업이 트리거된 후에만 코드 분석 및 평가를 시작합니다. 그러나 첫 번째 페이지 로드 시간이 매우 중요한 저장소는 모든 JS 컨텐츠가 첫 번째 호출에 로드되므로 권장되지 않습니다.
 

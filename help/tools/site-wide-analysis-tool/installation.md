@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: 이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용
-source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ bin/magento module:status Magento_ServicesConnector
 
 확장을 설치하고 다른 서비스에 대한 기존 API 키를 사용하여 구성한 경우, **API 키를 다시 생성해야 합니다.** 에이전트의 Adobe Commerce 관리에서 업데이트합니다.
 
-1. 웹 사이트를 [유지 모드](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+1. 웹 사이트를 [유지 모드](../../installation/tutorials/maintenance-mode.md).
 
 1. 에 로그인합니다. [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 

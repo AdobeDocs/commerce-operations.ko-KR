@@ -1,9 +1,9 @@
 ---
 title: 구성 [!DNL Data Migration Tool]
 description: 을 구성하는 두 가지 방법에 대해 알아봅니다 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하려면 다음을 수행하십시오.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 를 구성하려면 [!DNL Data Migration Tool] 마이그레이션:
 
-1. Magento 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. 애플리케이션 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 
 1. 다음 디렉토리로 변경합니다.
 

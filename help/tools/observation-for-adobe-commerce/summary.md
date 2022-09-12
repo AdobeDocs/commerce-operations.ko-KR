@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL Summary] tab"'
+title: "다음 [!UICONTROL Summary] tab"
 description: 에 대해 알아보기 [!UICONTROL Summary] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 **배포 로그 구문:**
 
-* &#39;%생성 명령%&#39;을(를) &#39;start_gen&#39;으로 시작하는 중
+* &#39;%generate command%&#39;을(를) &#39;start_gen&#39;으로 시작하는 중
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;(apply_patches)
 * &#39;%설정 플래그: .static_content_deploy%&#39;) as &#39;SCD&#39;
 * &#39;%알림: &#39;generate command completed%&#39;) as &#39;gen_compl&#39;
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ![잠재적 보트](../../assets/tools/potential-bots.jpg)
 
-다음 **[!UICONTROL Potential Bots]** 프레임은 NULL 또는 &#39;%bot%&#39;과 같은 request_user_agent 이름이 있는 요청을 봅니다. 일반적으로 &#39;%bot%&#39; request_user_agent는 `robots.txt` 파일.
+다음 **[!UICONTROL Potential Bots]** 프레임은 NULL 또는 &#39;%bot%&#39;과 같은 request_user_agent 이름의 요청을 봅니다. 일반적으로 &#39;%bot%&#39; request_user_agent는 `robots.txt` 파일.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ ht-degree: 0%
 * &#39;%self-leave%&#39;) as &#39;susp_node&#39;
 * &#39;%members = 3/3 (join/total%&#39;) as &#39;3of3&#39;
 * &#39;%members = 2/3(join/total%&#39;) as &#39;2of3&#39;
-* &#39;%members = 2/2%&#39;) as &#39;2of2&#39; ・ &#39;%members = 1/2%&#39;) as &#39;1of2&#39; ・ &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
+* &#39;%members = 2/2%&#39;) as &#39;2of2&#39; * &#39;%members = 1/2%&#39;) as &#39;1of2&#39; * &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;) &#39;1of1&#39;
 * &#39;%\[참고\] /usr/sbin/myqld(myqld 10).%&#39;) &#39;sql_restart&#39;
 * &#39;%Quorum: &#39;no_node_count&#39;로서 완료 상태:%&#39;가 있는 노드가 없음
@@ -228,7 +228,7 @@ ht-degree: 0%
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
 * &#39;%\[참고\] WSREP: 메모리 맵을 디스크에 플러싱..%&#39;) &#39;mem_map_flush&#39;
 * &#39;%Internal MariaDB 오류 코드: 1146%) 로서의 &#39;sql_1146&#39;
-* &#39;%Internal MariaDB 오류 코드: 1062%) as &#39;sql_1062&#39; ・ &#39;%1062 \[경고\] InnoDB:%&#39;) as &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB 오류 코드: 1062%&#39;) &#39;sql_1062&#39; * &#39;%1062 \[경고\] InnoDB:%&#39;) as &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB 오류 코드: 1064%) 로서의 &#39;sql_1064&#39;
 * &#39;%InnoDB: &#39;assertion_err&#39;(% 파일의 검증 실패)
 * &#39;%mysqld_safe 현재 실행 중인 프로세스 수: 0%&#39;) &#39;mysql_oom&#39;
@@ -289,7 +289,7 @@ PHP 프로세스의 동작 방식은 [구성](https://www.php.net/manual/en/inst
 
 ![php 오류](../../assets/tools/php-errors.jpg)
 
-다음 **[!UICONTROL PHP errors]** 프레임은 선택한 기간 동안 작업자의 PHP 오류 수를 표시합니다. 자세한 내용은 [Adobe Commerce PHP 설정](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+다음 **[!UICONTROL PHP errors]** 프레임은 선택한 기간 동안 작업자의 PHP 오류 수를 표시합니다. 자세한 내용은 [Adobe Commerce PHP 설정](../../installation/prerequisites/php-settings.md).
 
 **PHP 오류 및 메시지**
 
@@ -309,7 +309,7 @@ PHP 프로세스의 동작 방식은 [구성](https://www.php.net/manual/en/inst
 
 ![php 프로세스](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] 사용 [!DNL Nginx]. 시스템 요구 사항에 대해 알아보려면 [Adobe Commerce 버전에 매핑된 PHP 버전 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). 다음 **[!UICONTROL PHP processes]** 프레임은 선택한 타임라인에서 특정 시간에 실행되는 PHP 프로세스 수를 보여줍니다.
+[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] 사용 [!DNL Nginx]. 시스템 요구 사항에 대해 알아보려면 [Adobe Commerce 버전에 매핑된 PHP 버전 요구 사항](../../installation/system-requirements.md). 다음 **[!UICONTROL PHP processes]** 프레임은 선택한 타임라인에서 특정 시간에 실행되는 PHP 프로세스 수를 보여줍니다.
 
 ## [!UICONTROL Secondary processes]
 

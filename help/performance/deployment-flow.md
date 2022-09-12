@@ -1,9 +1,9 @@
 ---
 title: 배포 흐름
-description: '프로덕션 환경에서 Adobe Commerce 또는 Magento Open Source을 배포하는 데 필요한 단계에 대해 알아봅니다. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: 프로덕션 환경에서 Adobe Commerce 또는 Magento Open Source을 배포하는 데 필요한 단계에 대해 알아봅니다.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## 자동 로더 업데이트
 
-컴파일이 완료되면 다음을 확인합니다. [APCu가 활성화됨](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) 자동 로더를 업데이트합니다.
+컴파일이 완료되면 다음을 확인합니다. [APCu가 활성화됨](../performance/software.md#php-settings) 자동 로더를 업데이트합니다.
 
 자동 로더를 업데이트하려면:
 
@@ -82,7 +82,7 @@ bin/magento setup:static-content:deploy
 
 정적 콘텐츠가 배포되지 않으면, [!DNL Commerce] 나열된 모든 작업을 즉시 수행하므로 응답 시간이 크게 늘어납니다.
 
-다양한 옵션을 사용하여 저장소 크기 및 이행 요구에 따라 배포 작업을 사용자 정의할 수 있습니다. 가장 일반적인 것은 컴팩트한 배포 전략입니다. 자세한 내용은 [정적 파일 배포 전략](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+다양한 옵션을 사용하여 저장소 크기 및 이행 요구에 따라 배포 작업을 사용자 정의할 수 있습니다. 가장 일반적인 것은 컴팩트한 배포 전략입니다. 자세한 내용은 [정적 파일 배포 전략](../configuration/cli/static-view-file-strategy.md)
 
 정적 콘텐츠를 배포하려면:
 

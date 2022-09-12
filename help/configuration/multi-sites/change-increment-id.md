@@ -1,9 +1,9 @@
 ---
 title: 증분 ID 변경
 description: 상거래 데이터베이스 엔터티의 증분 ID를 변경합니다.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Adobe Commerce (온-프레미스): 2.x.x
 - Adobe Commerce on cloud 인프라: 2.x.x
-- MySQL: [지원되는 버전]
+- MySQL: [지원되는 버전](../../installation/prerequisites/database/mysql.md)
 
 ## 증가 ID는 언제 변경해야 합니까?
 
@@ -75,4 +75,4 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 [PayPal 게이트웨이가 요청을 거부했습니다. 송장 문제가 중복되었습니다.]: https://support.magento.com/hc/en-us/articles/115002457473
 [DB 백업 만들기]: https://support.magento.com/hc/en-us/articles/360003254334
-[지원되는 버전]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[지원되는 버전]

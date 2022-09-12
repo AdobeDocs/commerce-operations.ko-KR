@@ -1,9 +1,9 @@
 ---
 title: 작업 모드 설정
 description: Adobe Commerce 작업 모드 설정에 대해 읽어보십시오.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ pub/static
 
 ## 현재 모드 표시
 
-이렇게 하는 가장 쉬운 방법은 이 명령을 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). 호스팅을 공유한 경우 공급자가 서버에 로그인할 수 있도록 하는 사용자입니다. 개인 서버가 있는 경우 일반적으로 상거래 서버의 로컬 사용자 계정입니다.
+이렇게 하는 가장 쉬운 방법은 이 명령을 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md). 호스팅을 공유한 경우 공급자가 서버에 로그인할 수 있도록 하는 사용자입니다. 개인 서버가 있는 경우 일반적으로 상거래 서버의 로컬 사용자 계정입니다.
 
 명령 사용:
 

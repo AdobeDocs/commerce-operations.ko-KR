@@ -1,7 +1,7 @@
 ---
 title: 구성 설정 내보내기
 description: 구성 덤프라고도 하는 구성 파일로 Adobe Commerce 구성 설정을 내보냅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 에 작성된 중요 설정을 설정하려면 `env.php`를 사용하려면 [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) 명령.
 
-구성 값은 를 참조하여 중요하거나 시스템별로 지정됩니다 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) 모듈 [`di.xml`](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/configuration/sensitive-and-environment-settings.html#how-to-specify-values-as-sensitive-or-system-specific) 파일.
+구성 값은 를 참조하여 중요하거나 시스템별로 지정됩니다 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) 모듈 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) 파일.
 
 사용 시 추가 시스템 설정을 내보내려면 `config_types`를 사용하려면 를 사용하는 것이 좋습니다 [`bin/magento config:set`](set-configuration-values.md#set-values) 명령.

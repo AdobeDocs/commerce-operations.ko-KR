@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Data Migration Tool] 기술 사양"'
+title: "[!DNL Data Migration Tool] 기술 사양"
 description: 의 구현 세부 사항에 대해 알아봅니다. [!DNL Data Migration Tool] Magento 1과 Magento 2 간에 데이터를 전송할 때 확장 방법을 지정합니다."
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 시스템 요구 사항
 
-다음 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 대상 [!DNL Data Migration Tool] Magento 2과 동일합니다.
+다음 [시스템 요구 사항](../../installation/system-requirements.md) 대상 [!DNL Data Migration Tool] Magento 2과 동일합니다.
 
 ## 내부 구조
 

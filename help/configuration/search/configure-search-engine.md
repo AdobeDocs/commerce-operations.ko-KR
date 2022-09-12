@@ -1,9 +1,9 @@
 ---
 title: 검색 엔진 구성
 description: Adobe Commerce 및 Magento Open Source을 사용하여 검색 엔진을 구성합니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 
    계속:
 
-   - [검색 엔진에 대한 Apache 구성](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html)
-   - [검색 엔진에 대한 ninx 구성](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html)
+   - [검색 엔진에 대한 Apache 구성](../../installation/prerequisites/search-engine/configure-apache.md)
+   - [검색 엔진에 대한 ninx 구성](../../installation/prerequisites/search-engine/configure-nginx.md)
 
    또는 다음을 볼 수 있습니다.
 
@@ -53,7 +53,7 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 - 검색 엔진 서버가 실행 중인지 확인합니다.
 - 서버가 상거래 호스트와 다른 호스트에 있는 경우 상거래 서버에 로그인하고 검색 엔진 호스트를 ping합니다. 네트워크 연결 문제를 해결하고 연결을 다시 테스트합니다.
 - Elasticsearch 또는 OpenSearch를 시작한 명령 창에서 스택 추적 및 예외를 검사합니다. 계속하기 전에 이러한 문제를 해결해야 합니다. 특히 을 사용하는 사용자로 검색 엔진을 시작했는지 확인합니다. `root` 권한.
-- 확인 [UNIX 방화벽 및 SELinux](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#firewall-selinux) 둘 다 비활성화되어 있거나, 검색 엔진과 상거래가 서로 통신할 수 있도록 하는 규칙을 설정하십시오.
+- 확인 [UNIX 방화벽 및 SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) 둘 다 비활성화되어 있거나, 검색 엔진과 상거래가 서로 통신할 수 있도록 하는 규칙을 설정하십시오.
 - 의 값을 확인합니다 **Elasticsearch 서버 호스트 이름** 필드. 서버가 사용 가능한지 확인하십시오. 대신 서버의 IP 주소를 시도할 수 있습니다.
 - 를 사용하십시오 `netstat -an | grep <listen-port>` 명령을 사용하여 **Elasticsearch 서버 포트** 다른 프로세스에서 필드를 사용하고 있지 않습니다.
 
@@ -85,7 +85,7 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 
 명령줄을 사용하여 다시 색인화하려면
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 1. 다음 명령을 입력합니다.
 
    카탈로그 검색 색인만 다시 색인화하려면 다음 명령을 입력합니다.

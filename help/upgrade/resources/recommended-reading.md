@@ -1,10 +1,10 @@
 ---
 title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 또는 Magento Open Source 업그레이드 계획에 대한 권장 읽기를 검토합니다.
-source-git-commit: 1cecdf89df9a870d57347468ce9220f74d46cd73
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 2%
+source-wordcount: '420'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 2%
           <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Adobe Commerce 버전 다운로드</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Upgrade Compatibility Tool PhpStorm 플러그인</a> (비디오)</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">업그레이드 호환성 도구</a></li>
+            <li><a href="../upgrade-compatibility-tool/overview.md">업그레이드 호환성 도구</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack 채널</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">품질 패치 도구</a></li>
           </ul>
@@ -64,15 +64,15 @@ ht-degree: 2%
       <td><strong>업그레이드 리소스</strong>
         <p>저장소 보안을 유지하고 효율적으로 운영할 수 있습니다. Adobe의 광범위한 기술 문서를 검토하여 Adobe Commerce 또는 Magento Open Source 업그레이드를 준비하십시오.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022년 권장 업그레이드 경로</a></li>
+            <li><a href="recommended-upgrade-paths-2022.md">2022년 권장 업그레이드 경로</a></li>
             <li><a href="../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf">2.4 업그레이드 안내서</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 기술 업그레이드 워크샵 기록</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">사전 릴리스 액세스</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">베타 프로그램 개요</a></li>
-            <li><a href="https://devdocs.magento.com/contributor-guide/backward-compatible-development/index.html">호환되지 않는 이전 개발</a></li>
+            <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">호환되지 않는 이전 개발</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html">호환되지 않는 이전 변경 사항</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360057968951-Upgrade-plan-checklist-for-Adobe-Commerce">업그레이드 계획 검사 목록</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/best-practices.html?lang=en">업그레이드 우수 사례</a></li>
+            <li><a href="../prepare/best-practices.md">업그레이드 우수 사례</a></li>
             <li><a href="https://devdocs.magento.com/release/availability.html">소프트웨어 가용성</a></li>
           </ul>
       </td>

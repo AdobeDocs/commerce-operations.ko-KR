@@ -1,9 +1,9 @@
 ---
 title: 분할 데이터베이스 되돌리기
 description: 사용되지 않는 분할 데이터베이스 구현에서 단일 데이터베이스 구현으로 되돌립니다.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ## 작업 확인
 
-단일 데이터베이스 구현이 제대로 작동하는지 확인하려면 다음 작업을 수행하고 데이터가 `magento_main` 데이터베이스 도구를 사용하는 데이터베이스 테이블 [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+단일 데이터베이스 구현이 제대로 작동하는지 확인하려면 다음 작업을 수행하고 데이터가 `magento_main` 데이터베이스 도구를 사용하는 데이터베이스 테이블 [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. 외래 키가 복원되었는지 확인합니다. 예: `QUOTE_STORE_ID_STORE_STORE_ID` 키 `quote` 데이터베이스 테이블.
 1. 고객이 상점 앞에서 주문을 할 수 있는지 확인합니다.
