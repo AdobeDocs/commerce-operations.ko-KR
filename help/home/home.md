@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '155'
 ht-degree: 2%
 
 ---
@@ -42,10 +42,10 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
   </td>
   <td valign="top">
     <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="마이그레이션" src="../assets/icons/move-to.svg" width="40" height="40"/>
+      <img alt="데이터 마이그레이션" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>마이그레이션</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>데이터 마이그레이션</strong></a>
     </div>
   </td>
 </tr>
@@ -117,6 +117,5 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 
 | 변경 | 유형 |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 추가됨 [정보](../upgrade/upgrade-compatibility-tool/overview.md) 업그레이드 호환성 도구에 대해 규칙이 정의되는 방식에 대해 설명합니다. | 주요 업데이트 |
-| 이전 업그레이드 호환성 도구가 제거됨 [오류 코드](../upgrade/upgrade-compatibility-tool/error-messages.md). | 기술 |
-| 이동됨 [사이트 전체 분석 도구 안내서](../tools/site-wide-analysis-tool/intro.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) Experience League에 연결할 수도 있습니다. | 새로 만들기 |
+| 이동 [온-프레미스 설치 안내서](../installation/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) Experience League에 연결할 수도 있습니다. | 새로 만들기 |
+| 이동 [데이터 마이그레이션 안내서](../tools/data-migration-tool/how-migration-works.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) Experience League에 연결할 수도 있습니다. | 새로 만들기 |
