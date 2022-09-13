@@ -1,7 +1,7 @@
 ---
 title: 사용
 description: 사용 방법을 알아봅니다 [!DNL Quality Patches Tool].
-source-git-commit: 356ee307e0199d70c0e391e0d903e8f2e1600e63
+source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 사용
 
-다음 [품질 패치 도구](https://github.com/magento/quality-patches) 는 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 또는 Magento Open Source 버전에서 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다. 패치를 개발한 사람에 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
+다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 는 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 또는 Magento Open Source 버전에서 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다. 패치를 개발한 사람에 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
 
 >[!INFO]
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!INFO]
 > 
->아직 설치되지 않은 경우 설치해야 합니다 [Git](https://github.com/git-guides/install-git) 또는 [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) 설치하기 전에 [!DNL Quality Patches Tool]. 추가 `magento/quality-patches` 대상 패키지 작성기 `composer.json` 파일:
+>아직 설치되지 않은 경우 설치해야 합니다 [[!DNL Git]](https://github.com/git-guides/install-git) 또는 [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) 설치하기 전에 [!DNL Quality Patches Tool]. 추가 `magento/quality-patches` 대상 패키지 작성기 `composer.json` 파일:
 
 ```bash
 composer require magento/quality-patches
