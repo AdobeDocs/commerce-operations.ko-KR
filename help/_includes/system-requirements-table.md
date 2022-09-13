@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c7fca1ee676f1eb96256c55121771370702410
+source-git-commit: ec60f7f2baecbdfe40971d17abe61aa52e30d1bd
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 65%
+source-wordcount: '246'
+ht-degree: 60%
 
 ---
 # 시스템 요구 사항
@@ -644,4 +644,4 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->클라우드 인프라 기반의 Adobe Commerce에 대한 Elasticsearch 버전 지원 및 호환성은 클라우드 인프라에 배포된 서비스 버전에 따라 결정되며, 드문 경우 Adobe Commerce 온프레미스 배포에서 지원하는 버전과 다를 수 있습니다.
+>클라우드 기반의 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며, Adobe Commerce 온프레미스 배포에서 지원하는 버전과 가끔 다릅니다. 클라우드 인프라에서 Adobe Commerce에 배포되는 지원되는 소프트웨어 및 서비스에 대한 자세한 내용은 [지원되는 소프트웨어 및 서비스](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software).
