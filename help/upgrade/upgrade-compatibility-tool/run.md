@@ -1,9 +1,9 @@
 ---
 title: "실행 [!DNL Upgrade Compatibility Tool]"
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] ( Adobe Commerce 프로젝트에 대한 명령줄 인터페이스 사용)을 참조하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ bin/uct upgrade:check <dir>
 
 | **명령** | **사용 가능한 옵션** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—min-issue-level: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에서 현재 버전의 심각한 문제, 오류 및 경고를 포함시키지 않으려는 경우.</li><li>—coming-version (또는 -c): 특정 Adobe Commerce 버전 Target.</li></ul> |
+| `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—current version: 현재 Adobe Commerce 버전입니다. 이 매개 변수는 필수이며 항상 사용해야 합니다.</li><li>—min-issue-level: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에서 현재 버전의 중요한 문제, 오류 및 경고를 포함시키지 않으려는 경우.</li><li>—coming-version (또는 -c): 특정 Adobe Commerce 버전 Target. 누락된 경우 사용 가능한 최신 버전이 사용됩니다.</li></ul> |
 
 다음 [!DNL Upgrade Compatibility Tool] 다음을 실행할 수 있습니다. `upgrade:check` 명령을 사용하여 명령 `--ignore-current-version-compatibility-issues` 선택 사항입니다. 현재 버전에서 사용 중인 의 타깃팅된 버전으로 업데이트하여 도입된 새로운 문제를 가져오려는 경우에만 이 옵션을 사용합니다 [!DNL Upgrade Compatibility Tool] 보고서:
 
@@ -218,20 +218,18 @@ bin/uct --help
 사용 가능한 모든 목록이 반환됩니다 `help` 옵션 [!DNL Upgrade Compatibility Tool] 명령줄 인터페이스에서 다음을 수행합니다.
 
 ```terminal
-- -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
-- -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
-- --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
-- --html-output-path[=HTML-OUTPUT-PATH]: Path of the file where the output will be exported in HTML format.
-- --context=CONTEXT: Execution context. This option is for integration purposes and does not affect the execution result.
-- -h, --help: Display help for that specific command. If no command is provided, `list` command is the default result.
-- -q, --quiet: Do not output any messages while executing the command.
-- -v, --version: Display application version.
-- --ansi, --no-ansi: Enable ANSI output.
-- -n, --no-interaction: Do not ask any interactive question while executing the command.
-- -v, --vv, --vvv, --verbose: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
+- --raw             To output raw command list
+- --format=FORMAT   The output format (txt, xml, json, or md) [default: "txt"]
+- --short           To skip describing commands' arguments
+- -h, --help            Display help for the given command. When no command is given display help for the list command
+- -q, --quiet           Do not output any message
+- -V, --version         Display this application version
+- --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
+- -n, --no-interaction  Do not ask any interactive question
+- -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 ```
 
-그러나 실행할 수 있습니다 `--help` 특정 명령을 실행할 때 옵션으로 사용할 수 있습니다. 이렇게 하면 특정 항목이 반환됩니다 `--help` 특정 명령에 대한 옵션
+실행할 수 있습니다 `--help` 특정 명령을 실행할 때 옵션으로 사용할 수 있습니다. 반환 `--help` 지정한 명령에 대한 옵션.
 
 의 예 `upgrade:check` 명령 `--help` 옵션:
 
@@ -242,8 +240,19 @@ bin/uct upgrade:check --help
 에 대해 실행할 수 있는 특정 옵션을 반환합니다 `upgrade:check` 명령:
 
 ```terminal
---min-issue-level.
--i, --ignore-current-version-compatibility-issues.
+- -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
+- -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
+- --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
+- --html-output-path[=HTML-OUTPUT-PATH]: Path of the file where the output will be exported in HTML format.
+- --min-issue-level[=MIN-ISSUE-LEVEL]            Minimal issue level you want to see in the report (warning, error or critical). [default: "warning"]
+- -i, --ignore-current-version-compatibility-issues  Ignore common issues for current and coming version
+- --context=CONTEXT: Execution context. This option is for integration purposes and does not affect the execution result.
+- -h, --help: Display help for that specific command. If no command is provided, `list` command is the default result.
+- -q, --quiet: Do not output any messages while executing the command.
+- -v, --version: Display application version.
+- --ansi, --no-ansi: Enable ANSI output.
+- -n, --no-interaction: Do not ask any interactive question while executing the command.
+- -v, --vv, --vvv, --verbose: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
 ```
 
 ## Adobe Commerce 우수 사례 따라하기
