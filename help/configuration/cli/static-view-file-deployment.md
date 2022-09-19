@@ -1,7 +1,7 @@
 ---
 title: 정적 보기 파일 배포
 description: 프로덕션 모드 중에 상거래 파일 시스템에 정적 파일을 쓰는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -56,7 +56,7 @@ ht-degree: 0%
 | `<languages>` | 공백으로 구분된 [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) 정적 보기 파일을 출력할 언어 코드입니다. 기본값은 입니다. `en_US`)<br>다음을 실행하여 목록을 찾습니다. `bin/magento info:language:list` | 아니요 |
 | `--language (-l)` | 지정된 언어에 대해서만 파일을 생성합니다. 옵션이 지정되지 않은 기본값은 모든 ISO-639 언어 코드에 대한 파일을 생성하는 것입니다. 한 번에 하나의 언어 코드 이름을 지정할 수 있습니다. 기본값은 입니다. **모두**.<br>For example: `--language en_US --language es_ES` | 아니요 |
 | `--exclude-language` | 지정된 언어 코드의 파일을 생성합니다. 옵션이 지정되지 않은 기본값은 아무 것도 제외하는 것입니다. 하나의 언어 코드 또는 쉼표로 구분된 언어 코드 목록을 지정할 수 있습니다. 기본값은 입니다. **없음**. | 아니요 |
-| `--theme <theme>` | 정적 콘텐츠를 배포할 헤미입니다. 기본값은 입니다. **모두**.<br>예: `--theme Magento/blank --theme Magento/luma` | 아니요 |
+| `--theme <theme>` | 정적 콘텐츠를 배포할 테마. 기본값은 입니다. **모두**.<br>예: `--theme Magento/blank --theme Magento/luma` | 아니요 |
 | `--exclude-theme <theme>` | 정적 콘텐츠를 배포할 때 제외할 테마. 기본값은 입니다. **없음**.<br>For example, `--exclude-theme Magento/blank` | 아니요 |
 | `--area (-a)` | 지정된 영역에 대해서만 파일을 생성합니다. 옵션이 지정되지 않은 기본값은 모든 영역에 대한 파일을 생성하는 것입니다. 유효한 값은 `adminhtml` 및 `frontend`. 기본값은 입니다. **모두**.<br>예: `--area adminhtml` | 아니요 |
 | `--exclude-area` | 지정된 영역에 대한 파일을 생성하지 마십시오. 옵션이 지정되지 않은 기본값은 아무 것도 제외하는 것입니다. 기본값은 입니다. **없음**. | 아니요 |
