@@ -1,9 +1,9 @@
 ---
 title: 전체 사전 요구 사항
 description: 이러한 전제 조건 단계를 완료하여 업그레이드를 위한 Adobe Commerce 또는 Magento Open Source 프로젝트를 준비합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Adobe은 열린 파일을 설정할 것을 권장합니다 [ulimit](https://ss64
 1. ulimit를 로 설정합니다. `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > 열린 파일 제한 구문은 사용하는 UNIX 셸에 따라 다릅니다. 이전 설정은 Bash 셸과 함께 CentOS 및 Ubuntu에서 작동해야 합니다. 그러나 Mac OS의 경우 올바른 설정은 ulimit -S 65532. 자세한 내용은 매뉴얼 페이지 또는 운영 체제 참조를 참조하십시오.
 
 Bash 쉘에서 값을 설정하려면 다음을 수행합니다.
 
@@ -111,7 +107,7 @@ Bash 쉘에서 값을 설정하려면 다음을 수행합니다.
 1. 다음 줄을 추가합니다.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. 변경 내용을 `.bashrc` 파일을 종료하고 텍스트 편집기를 종료합니다.
