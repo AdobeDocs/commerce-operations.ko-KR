@@ -1,7 +1,7 @@
 ---
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 예를 들어 2.4.3은 MariaDB 10.4에서 완전히 테스트되었습니다. Adobe은 2.4.3으로 업그레이드하기 전에 MariaDB 10.4로 업그레이드할 것을 권장합니다.
 
-{{$include /help/_includes/system-requirements-table.md}}
+{{$include /help/_includes/templated/system-requirements-table.md}}
 
 ## 기타
 

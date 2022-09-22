@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 ## 템플릿
 
 다음 `_jekyll` 디렉토리에는 템플릿화된 항목과 필수 자산이 포함되어 있습니다.
-액체 템플릿 언어를 사용하는 템플릿은 `_jekyll` HTML 파일로 디렉토리 추가
+액체 템플릿 언어를 사용하는 템플릿은 `_jekyll/templated` HTML 파일로 디렉토리 추가
 다음 `_jekyll/_data` 디렉토리에는 템플릿을 렌더링하는 데 사용되는 데이터가 있는 파일이 있습니다.
 
 모든 템플릿을 렌더링하려면 다음을 수행합니다.
@@ -80,7 +80,6 @@ _scripts/render
 > **참고:** 에서 스크립트를 실행해야 합니다. `_jekyll` 디렉토리.
 > **참고:** 이 스크립트를 실행하려면 Ruby가 설치되어 있어야 합니다.
 
-스크립트는 렌더링을 실행하고 렌더링된 파일을 `_jekyll/_rendered` 디렉토리를 HTML 파일로 하여 `help/_includes` 디렉토리 `.md` 파일.
-
+스크립트는 렌더링을 실행하고 렌더링된 템플릿을 `help/_includes/templated` 디렉토리.
 
 자세한 내용은 Jekyl 설명서 를 참조하십시오 [데이터 파일](https://jekyllrb.com/docs/datafiles, [액체 필터](https://jekyllrb.com/docs/liquid/filters/), 및 기타 기능을 사용할 수 있습니다.
