@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
+source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -59,11 +59,11 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="명령줄 도구 참조" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>명령줄 도구 참조</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>명령줄 도구 참조</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,5 +117,6 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 
 | 변경 | 유형 |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 이동 [온-프레미스 설치 안내서](../installation/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) Experience League에 연결할 수도 있습니다. | 새로 만들기 |
-| 이동 [데이터 마이그레이션 안내서](../tools/data-migration-tool/how-migration-works.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) Experience League에 연결할 수도 있습니다. | 새로 만들기 |
+| 이동 [명령줄 도구 참조](../reference/commerce.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | 새로 만들기 |
+| 이동 [온-프레미스 설치 안내서](../installation/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | 새로 만들기 |
+| 이동 [데이터 마이그레이션 안내서](../tools/data-migration-tool/how-migration-works.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | 새로 만들기 |
