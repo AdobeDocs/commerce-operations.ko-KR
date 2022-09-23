@@ -1,7 +1,7 @@
 ---
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
-source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
+source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -39,7 +39,7 @@ RedHat Enterprise Linux(RHEL), CentOS, Ubuntu, Debian 등과 같은 Linux 배포
 >
 >다음 [PHP 설치 지침](prerequisites/php-settings.md) 이러한 확장을 설치하는 단계를 포함합니다.
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 을(를) 참조하십시오. [공식 PHP 설명서](https://php.net/manual/en/extensions.php) 를 참조하십시오.
 
