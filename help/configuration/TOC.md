@@ -1,7 +1,7 @@
 ---
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 기능 및 서비스를 구성합니다.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
       - [Varnish 개요](cache/config-varnish.md)
       - [Varnish 설치](cache/config-varnish-install.md)
       - [웹 서버](cache/config-varnish-server.md)
-      - [상거래 애플리케이션 구성](cache/config-varnish-magento.md)
+      - [상거래 애플리케이션 구성](cache/configure-varnish-commerce.md)
       - [고급 변명 구성](cache/config-varnish-advanced.md)
       - [캐시 지우기](cache/use-varnish-cache.md)
       - [여러 Varnish 인스턴스 지우기 캐시](cache/use-multiple-varnish-cache.md)

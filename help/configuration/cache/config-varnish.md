@@ -1,7 +1,7 @@
 ---
 title: Varnish 구성 및 사용
 description: Varnish가 파일을 저장하고 HTTP 트래픽을 향상시키는 방법을 이해합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Varnish 캐싱은 다음을 사용하여 Commerce에서 작동합니다.
 
 - [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) Magento 2 GitHub 저장소에서
 - `.htaccess` 상거래와 함께 제공된 Apache용 분산 구성 파일
-- `default.vcl` Varnish를 사용하여 생성된 [관리](../cache/config-varnish-magento.md)
+- `default.vcl` Varnish를 사용하여 생성된 [관리](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 이 주제에서는 이전 목록의 기본 옵션만 다룹니다. 복잡한 시나리오에서 캐싱을 구성하는 다른 여러 가지 방법이 있습니다(예: 콘텐츠 전달 네트워크 사용). 이러한 메서드는 이 안내서의 범위를 벗어납니다.

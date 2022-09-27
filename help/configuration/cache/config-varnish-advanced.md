@@ -1,7 +1,7 @@
 ---
 title: 고급 변명 구성
 description: 상태 확인, 유예 및 saint 모드를 포함한 고급 변명 기능을 구성합니다.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Commerce에서는 다음과 같은 기본 상태 검사를 정의합니다.
 
 ### 상거래 백엔드가 정상인 경우
 
-상태 확인에서 상거래 백엔드가 정상인지 확인하면 Varnish는 시간이 유예 기간에 남아 있는지 확인합니다. 기본 유예 기간은 300초이지만 머천트가 [관리](https://glossary.magento.com/admin) 에 설명된 대로 [Varnish를 사용하도록 상거래 구성](config-varnish-magento.md). 유예 기간이 만료되지 않은 경우 Varnish는 오래된 콘텐츠를 전달하고 상거래 서버에서 개체를 비동기적으로 새로 고칩니다. 유예 기간이 만료된 경우 Varnish는 오래된 콘텐츠를 제공하고 Commerce 백엔드에서 개체를 동기적으로 새로 고침합니다.
+상태 확인에서 상거래 백엔드가 정상인지 확인하면 Varnish는 시간이 유예 기간에 남아 있는지 확인합니다. 기본 유예 기간은 300초이지만 머천트가 [관리](https://glossary.magento.com/admin) 에 설명된 대로 [Varnish를 사용하도록 상거래 구성](configure-varnish-commerce.md). 유예 기간이 만료되지 않은 경우 Varnish는 오래된 콘텐츠를 전달하고 상거래 서버에서 개체를 비동기적으로 새로 고칩니다. 유예 기간이 만료된 경우 Varnish는 오래된 콘텐츠를 제공하고 Commerce 백엔드에서 개체를 동기적으로 새로 고침합니다.
 
 Varnish에서 오래된 개체를 제공하는 최대 시간은 유예 기간(기본적으로 300초)과 TTL 값(기본적으로 86400초)의 합입니다.
 
