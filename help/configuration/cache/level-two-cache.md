@@ -1,9 +1,9 @@
 ---
 title: L2 캐시 구성
 description: L2 캐시를 구성하는 방법을 알아봅니다.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -76,8 +76,81 @@ Adobe은 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 이 기능�
 
 ## 오래된 캐시 옵션
 
-시작 [!DNL Commerce] 2.4, `stale_cache` 옵션을 사용하면 일부 특정 경우에 성능이 향상됩니다.
+시작 [!DNL Commerce] 2.4, `use_stale_cache` 옵션을 사용하면 일부 특정 경우에 성능이 향상됩니다.
 
 일반적으로, 잠금 대기 시 상쇄 해제를 성능 측면에서는 사용할 수 있지만, 머천트가 가지고 있는 블록 또는 캐시 수가 클수록 잠금 대기 시간이 늘어납니다. 일부 시나리오에서는 **키 수** \* **조회 시간 초과** 프로세스의 시간입니다. 드문 경우이긴 하지만, 상인은 `Block/Config` 캐시되므로 잠금에 대한 작은 조회 시간 제한도 몇 초 정도 걸릴 수 있습니다.
 
 오래된 캐시는 L2 캐시에서만 작동합니다. 오래된 캐시가 있으면 오래된 캐시를 보낼 수 있지만 새 캐시가 병렬 프로세스에서 생성됩니다. 오래된 캐시를 활성화하려면 `'use_stale_cache' => true` L2 캐시의 최상위 구성
+
+Adobe은 `use_stale_cache` 다음을 포함하여 가장 많은 이점을 제공하는 캐시 유형에 대해서만 옵션을 선택합니다.
+
+- `block_html`
+- `config_integration_api`
+- `config_integration`
+- `full_page`
+- `layout`
+- `reflection`
+- `translate`
+
+다음 코드는 구성 예를 보여줍니다.
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => false,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ],
+         'stale_cache_enabled' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => true,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+        'layout' => ['frontend' => 'stale_cache_enabled'],
+        'block_html' => ['frontend' => 'stale_cache_enabled'],
+        'reflection' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+        'full_page' => ['frontend' => 'stale_cache_enabled'],
+        'translate' => ['frontend' => 'stale_cache_enabled']
+    ],
+],
+```
