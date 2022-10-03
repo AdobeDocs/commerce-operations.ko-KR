@@ -1,9 +1,9 @@
 ---
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 도구 사용, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
-source-git-commit: 5edd2839a611fc20b1978b01923a692b21a8dd55
+source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
    - [경고](site-wide-analysis-tool/alerts.md)
    - [패치](site-wide-analysis-tool/patches.md)
 - 품질 패치 도구 {#quality-patches-tool}
+   - [품질 패치 도구](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 노트](quality-patches-tool/release-notes.md)
 - Adobe Commerce 관찰 {#observation-for-adobe-commerce}
