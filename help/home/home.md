@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
+source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '174'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="릴리스 정보" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>릴리스 정보</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>릴리스 정보</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,6 +117,7 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 
 | 변경 | 유형 |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 이동 [릴리스 정보 안내서](../release/roadmap.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | 새로 만들기 |
 | 이동 [명령줄 도구 참조](../reference/commerce.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | 새로 만들기 |
 | 이동 [온-프레미스 설치 안내서](../installation/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | 새로 만들기 |
 | 이동 [데이터 마이그레이션 안내서](../tools/data-migration-tool/how-migration-works.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | 새로 만들기 |
