@@ -1,9 +1,9 @@
 ---
 title: 사용
 description: 사용 방법을 알아봅니다 [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 
 >[!INFO]
-> 
->자세한 내용은 [개별 패치 적용](#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [사용 가능한 패치](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 릴리즈된 패치 전체 목록 검토
+>
+>자세한 내용은 [개별 패치 적용](#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [사용 가능한 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리즈된 패치 전체 목록 검토
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 ## 설치
 
 >[!INFO]
-> 
+>
 >아직 설치되지 않은 경우 설치해야 합니다 [[!DNL Git]](https://github.com/git-guides/install-git) 또는 [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) 설치하기 전에 [!DNL Quality Patches Tool]. 추가 `magento/quality-patches` 대상 패키지 작성기 `composer.json` 파일:
 
 ```bash
@@ -72,7 +72,7 @@ Adobe Commerce 2.3.5.
    - `Recommended replacement` — 사용되지 않는 패치에 대해 권장되는 대체 패치입니다.
 
 >[!INFO]
-> 
+>
 >새 버전의 Adobe Commerce 또는 Magento Open Source으로 업그레이드한 후 새 버전에 패치가 포함되지 않은 경우 패치를 다시 적용해야 합니다. 자세한 내용은 [업그레이드 후 패치 다시 적용](#re-apply-patches-after-an-upgrade).
 
 ## 개별 패치 적용 {#apply-individual-patches}

@@ -1,7 +1,7 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->자세한 내용은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [사용 가능한 패치](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) 소프트웨어 업데이트 가이드에서 릴리즈된 패치의 전체 목록을 검토합니다.
+>자세한 내용은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [사용 가능한 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 소프트웨어 업데이트 가이드에서 릴리즈된 패치의 전체 목록을 검토합니다.
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ ht-degree: 0%
 * **MDVA-30052** (*Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - 개인 컨텐츠(로컬 저장소)를 올바르게 채우지 않아 성능 문제가 발생하는 문제를 수정합니다.
 * **MDVA-30131** (*Adobe Commerce >=2.3.4 &lt;2.3.6> || 2.4.0*) - 레이어 탐색과 관련된 문제를 수정합니다. 여기서 *아니요* 부울 유형 제품 속성에 대한 값이 [!DNL Elasticsearch] 은 검색 엔진으로 사용됩니다.
 * **MDVA-35514** (*Adobe Commerce >=2.4.0 &lt;2.4.1>*) - 배송 레이블을 만들고 패키지 만들기 모달 창에서 패키지에 순서가 지정된 제품을 추가하는 문제를 수정합니다.
-
