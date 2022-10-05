@@ -1,9 +1,9 @@
 ---
 title: 사용
 description: 사용 방법을 알아봅니다 [!DNL Quality Patches Tool].
-source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
+source-git-commit: 9e719cdf888caa3fa34f6416650e62bbf1b81175
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 
 다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 는 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 또는 Magento Open Source 버전에서 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다. 패치를 개발한 사람에 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
+
+이거 보세요 [기술 비디오](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe Commerce 및 Magento Open Source용 품질 패치 도구를 사용하는 방법을 알아봅니다.
 
 >[!INFO]
 >
