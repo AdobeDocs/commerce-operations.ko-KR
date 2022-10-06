@@ -1,9 +1,9 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
+source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
 workflow-type: tm+mt
-source-wordcount: '9233'
+source-wordcount: '9467'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6)에 대해) - 많은 수의 제품 소스를 할당할 때 사용자가 오류가 발생하는 문제를 수정합니다.
+* **ACSD-46856** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우) - 시스템 > 구성 > 가져오기 > 고급 가격을 통해 성능 업데이트 계층 가격을 개선합니다.
+* **ACSD-46541** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4)에 대해) - 주문 항목이 삭제될 경우 관리자가 대변 메모를 만들 수 없는 문제를 수정합니다.
+* **ACSD-46581** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)에 대해) - 장바구니에서 국가를 선택한 후 예상 세금 합계가 업데이트되지 않는 문제를 수정합니다.
+* **ACSD-46618** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)에 대해) - 제품 목록 위젯에 로그인한 고객에 대해 캐시된 잘못된 가격이 표시되는 문제를 수정합니다.
+* **ACSD-46674** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 이미지 유형의 사용자 지정 옵션이 고객 이메일에서 HTML으로 표시되는 문제를 수정합니다.
+* **ACSD-46988** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6)에 대해 GraphQL &#39;통화&#39; API 요청이 사용자 지정 통화에 대해 NULL 값을 반환하는 문제가 수정되었습니다.
+* **ACSD-47076** (Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.5)의 경우 - Vimeo 비디오를 스토어에 재생할 수 없는 문제가 해결되었습니다.
+* **ACSD-45071** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.4)에 대해) - 가져오는 동안 기본 소스가 제품에 추가되는 문제를 수정합니다.
+* **AC-3023** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - DHL 스키마를 최신 버전 10.0으로 업데이트합니다.
+* 업데이트된 패치: MDVA-42584.
+* 교체된 패치: MDVA-36572, ACSD-45241.
 
 ## v1.1.20 {#v1-1-20}
 
@@ -281,7 +296,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 를 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
+* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 을 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce >=2.3.0 &lt;2.4.3>*) - 그룹화된 제품의 사용자 지정 재고를 저장할 때 문제가 해결되어 제품이 프론트런트에 재고가 없습니다.
 * **MDVA-36572** (*Adobe Commerce >=2.3.5 &lt;2.4.3>*) - 대변 메모 업데이트로 인해 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 경우 문제를 수정합니다.
 * **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3>*) - Admin Console에 연결할 수 없는 *리디렉션이 너무 많음* 오류가 발생했습니다.
