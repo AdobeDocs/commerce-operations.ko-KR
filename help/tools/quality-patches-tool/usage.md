@@ -1,7 +1,7 @@
 ---
 title: 사용
 description: 사용 방법을 알아봅니다 [!DNL Quality Patches Tool].
-source-git-commit: 9e719cdf888caa3fa34f6416650e62bbf1b81175
+source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
