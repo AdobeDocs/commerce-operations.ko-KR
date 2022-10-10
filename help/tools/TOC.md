@@ -1,9 +1,9 @@
 ---
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 도구 사용, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [Redis 탭](observation-for-adobe-commerce/redis-tab.md)
    - [MySQL 탭](observation-for-adobe-commerce/mysql-tab.md)
    - [PHP 탭](observation-for-adobe-commerce/php-tab.md)
+   - [보트 탭](observation-for-adobe-commerce/bots.md)
    - [배포 탭](observation-for-adobe-commerce/deploy-tab.md)
    - [경고 탭](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF 탭](observation-for-adobe-commerce/waf-tab.md)
