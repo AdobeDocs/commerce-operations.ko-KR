@@ -1,9 +1,9 @@
 ---
 title: 패치 적용
 description: Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대해 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [명령줄](../patches/apply.md#command-line)
 - [작성기](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->공식 품질 패치를 적용하려면 [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html). 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행합니다.
+>공식 품질 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행합니다.
 
 작성기를 사용하여 사용자 지정 패치를 적용하려면
 

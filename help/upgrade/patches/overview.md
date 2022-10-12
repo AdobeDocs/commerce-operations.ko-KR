@@ -1,9 +1,9 @@
 ---
 title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source의 다양한 패치 유형과 패치 작동 방식에 대해 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 개별 패치에는 특정 문제에 대한 저충격 품질 수정 사항이 포함되어 있습니다. 이러한 수정 사항은 가장 최근에 지원되는 부 버전(예: 2.4.x)에 적용되지만, 이전에 지원되는 부 버전(예: 2.3.x)에서 누락될 수 있습니다. Adobe은 필요에 따라 개별 패치를 릴리스합니다.
 
-를 사용하십시오 [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html) 개별 패치를 적용하려면
+를 사용하십시오 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)개별 패치를 적용할 {target=&quot;_blank&quot;}.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [명령줄](/help/upgrade/patches/apply.md#command-line)
 - [작성기](/help/upgrade/patches/apply.md#composer)
 

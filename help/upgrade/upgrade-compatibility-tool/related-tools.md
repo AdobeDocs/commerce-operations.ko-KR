@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] 관련 도구"
 description: 와 관련된 도구에 대해 자세히 알아보십시오 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,4 +25,4 @@ ht-degree: 0%
    >
    >[!DNL AmpersandHQ] 는 Adobe 공식 도구가 아닙니다.
 
-- **[!DNL Quality Patches Tool]**: Adobe Commerce 및 Magento Open Source에 대한 품질 패치를 제공하는 명령줄 도구입니다. 자세한 내용은 [[!DNL Quality patches tool] 사용 안내서](https://devdocs.magento.com/quality-patches/tool.html) 추가 정보.
+- **[!DNL Quality Patches Tool]**: Adobe Commerce 및 Magento Open Source에 대한 품질 패치를 제공하는 명령줄 도구입니다. 자세한 내용은 [[!DNL Quality patches tool] 사용 안내서](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)자세한 내용은 {target=&quot;_blank&quot;} 를 참조하십시오.
