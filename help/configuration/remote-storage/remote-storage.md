@@ -1,30 +1,30 @@
 ---
 title: 원격 저장소 구성
 description: 온-프레미스 Commerce 응용 프로그램에 대한 원격 저장소 모듈을 구성하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
 # 원격 저장소 구성
 
-원격 스토리지 모듈은 미디어 파일을 저장하고 AWS S3와 같은 스토리지 서비스를 사용하여 영구적인 원격 스토리지 컨테이너에 가져오기/내보내기를 예약할 수 있는 옵션을 제공합니다. 기본적으로 [!DNL Commerce] 응용 프로그램은 미디어 파일을 응용 프로그램이 포함된 동일한 파일 시스템에 저장합니다. 복잡한 다중 서버 구성에 비효율적이고 리소스를 공유할 때 성능이 저하될 수 있습니다. 원격 스토리지 모듈을 사용하여 미디어 파일을 `pub/media` 파일의 디렉토리 및 가져오기/내보내기 `var` 서버측 이미지 크기 조정을 활용하기 위한 원격 개체 저장소의 디렉터리입니다.
+원격 스토리지 모듈은 미디어 파일을 저장하고 AWS S3와 같은 스토리지 서비스를 사용하여 영구적인 원격 스토리지 컨테이너에서 가져오기 및 내보내기를 예약할 수 있는 옵션을 제공합니다. 기본적으로 Adobe Commerce 애플리케이션은 미디어 파일을 해당 애플리케이션이 포함된 동일한 파일 시스템에 저장합니다. 복잡한 다중 서버 구성에 비효율적이고 리소스를 공유할 때 성능이 저하될 수 있습니다. 원격 스토리지 모듈을 사용하여 미디어 파일을 `pub/media` 파일의 디렉토리 및 가져오기/내보내기 `var` 서버측 이미지 크기 조정을 활용하기 위한 원격 개체 저장소의 디렉터리입니다.
 
 >[!INFO]
 >
->원격 저장소는 버전 2.4.2 이상에서만 사용할 수 있습니다. 자세한 내용은 [2.4.2 릴리스 노트](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>원격 저장소는 상거래 버전 2.4.2 이상에서만 사용할 수 있습니다. 자세한 내용은 [2.4.2 릴리스 노트](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->원격 스토리지 모듈에 _제한적_ 클라우드 인프라에서 Adobe Commerce 지원. Adobe이 타사 스토리지 어댑터 서비스 문제를 완전히 해결할 수 없습니다.
+>원격 스토리지 모듈에 _제한적_ 클라우드 인프라에서 Adobe Commerce 지원. Adobe이 타사 스토리지 어댑터 서비스 문제를 완전히 해결할 수 없습니다. 자세한 내용은 [Commerce on Cloud 인프라를 위한 원격 스토리지 구성](cloud-support.md) 클라우드 프로젝트를 위한 원격 스토리지 구현 지침
 
 ![스키마 이미지](../../assets/configuration/remote-storage-schema.png)
 
 ## 원격 스토리지 옵션
 
-를 사용하여 원격 스토리지를 구성할 수 있습니다. `remote-storage` 옵션 [`setup` CLI 명령][setup]. 다음 `remote-storage` 옵션은 다음 구문을 사용합니다.
+를 사용하여 원격 스토리지를 구성할 수 있습니다. `remote-storage` 옵션 [`setup` CLI 명령](../../installation/tutorials/deployment.md). 다음 `remote-storage` 옵션은 다음 구문을 사용합니다.
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -49,21 +49,23 @@ ht-degree: 0%
 
 ## 원격 스토리지 사용
 
-새로 설치하는 동안 원격 스토리지를 설치할 수 있습니다 [!DNL Commerce] 를 사용하여 기존 Commerce 인스턴스에 설치하거나 추가하십시오. `remote-storage` 매개 변수 이름 및 값 쌍이 `setup` CLI 명령 최소한 스토리지를 제공해야 합니다 `driver`, `bucket`, 및 `region`.
+Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 상거래 인스턴스에 원격 저장소를 추가할 수 있습니다. 다음 예제에서는 일련의 `remote-storage` 상거래 매개 변수 `setup` CLI 명령 최소한 스토리지를 제공해야 합니다 `driver`, `bucket`, 및 `region`.
 
-다음 예에서는 미국에서 AWS S3 스토리지 어댑터를 사용하여 원격 저장소를 활성화합니다.
-
-- 새로 설치 [!DNL Commerce] 원격 스토리지
+- 예: 원격 저장소를 사용하여 상거래 설치
 
    ```bash
    bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
 
-- 기존 시스템에서 원격 스토리지 사용 [!DNL Commerce]
+- 예: 기존 상거래에 원격 저장소 사용
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
+
+>[!TIP]
+>
+>클라우드 기반의 Adobe Commerce에 대해서는 다음을 참조하십시오 [Commerce on Cloud 인프라를 위한 원격 스토리지 구성](cloud-support.md).
 
 ## 제한 사항
 
@@ -75,7 +77,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 원격 스토리지를 활성화하면 설정된 개발 환경에 영향을 줄 수 있습니다. 예를 들어 특정 PHP 파일 함수가 예상대로 작동하지 않을 수 있습니다. 파일 작업에 상거래 프레임워크 사용을 적용해야 합니다.
 
-금지된 PHP 기본 기능 목록은 [Magento 코딩 표준] 저장소.
+금지된 PHP 기본 기능 목록은 [magento coding-standard 저장소][code-standard].
 
 ## 컨텐츠 마이그레이션
 
@@ -92,5 +94,4 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[Magento 코딩 표준]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: ../../installation/tutorials/deployment.md
+[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
