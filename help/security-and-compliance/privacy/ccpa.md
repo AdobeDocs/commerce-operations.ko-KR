@@ -1,7 +1,7 @@
 ---
 title: 캘리포니아 소비자 개인 정보 보호법(CCPA)
 description: 개인 정보가 수집, 저장 및 사용되는 방법을 판별하기 위해 캘리포니아에서 소비자의 권한을 확장하는 CCPA(캘리포니아 소비자 개인 정보 보호법)에 대해 알아봅니다.
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,7 +24,7 @@ CCPA는 소비자에게 다음과 같은 새로운 권한을 부여합니다.
 - **옵트아웃 권한** 개인 정보 판매.
 - **비차별권** (CCPA에 따라 개인 정보 보호 권한을 행사한 가격 또는 서비스 측면에서.)
 
-## CCPA 규정 준수 안내서
+## CCPA 규정 준수
 
 CCPA 규정 준수 계획을 개발하고 구현하려면 협력하여 작업해야 합니다. 우리는 상인들이 교차 기능 팀을 편성할 것을 권장하며, 다음에 설명된 로드맵을 따를 것을 권장합니다. [CCPA 규정 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) 그 회사가 그 규정을 준수하도록 하기 위해서. 개발자는 프로세스의 2~5단계를 중점적으로 고려하여 이해 관계자로 참여하도록 초대될 수 있습니다. 자세한 내용은 [CCPA 규정 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) 추가 정보.
 
@@ -46,7 +46,7 @@ CCPA 규정 준수 계획을 개발하고 구현하려면 협력하여 작업해
 
 ## 개인 정보 참조
 
-기술 정보는 지원하는 Adobe Commerce 또는 Magento Open Source의 각 버전에 적용되는 개인 정보 참조에서 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 참조하십시오.
+기술 정보는 지원하는 각 Adobe Commerce 또는 Magento Open Source 버전에 적용되는 개인 정보 참조에서 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 참조하십시오.
 
-- [개인 정보 참조(버전 2.x)](data-m2.md)
-- [개인 정보 참조(버전 1.x)](data-m1.md)
+- [고객 개인 정보 참조(버전 2.x)](data-m2.md)
+- [고객 개인 정보 참조(버전) 1.x)](data-m1.md)

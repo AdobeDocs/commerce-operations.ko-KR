@@ -1,9 +1,9 @@
 ---
 title: 고객 개인 정보 참조(버전 1.x)
 description: Magento 1.x에서 고객 개인 정보에 대한 데이터 흐름 및 데이터베이스 엔티티 매핑에 대해 알아봅니다.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 및 Magento Open Source 판매자와 개발자가 개인 정보 보호 규정을 준수할 수 있도록 준비하는 데 도움이 되는 일련의 주제입니다. 법적 의무를 준수해야 하는지 및 어떻게 준수해야 하는지 확인하려면 법률 자문을 구하십시오.
 
-다음과 같은 개인 정보 보호 규정에 대한 규정 준수 프로그램을 개발할 때 참조할 수 있도록 다음 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 사용합니다.
+다음과 같은 개인 정보 보호 규정에 대한 규정 준수 프로그램을 개발할 때 참조할 수 있도록 다음 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 사용하십시오.
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
