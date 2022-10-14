@@ -1,10 +1,10 @@
 ---
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 주요 날짜에 대해 알아보십시오.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Adobe Commerce 2.4 및 후속 릴리스의 경우:
 
-- 라이프사이클 정책을 보다 효율적으로 수행하기 위해 Adobe은 PHP 버전이 기반으로 하는 지원 날짜가 끝날 때까지 2.4 릴리스 라인에 품질 수정 사항을 제공합니다. 고객은 연락하여 품질 수정 사항에 액세스할 수 있습니다 [Adobe Commerce 지원](https://developer.adobe.com/commerce/contributor/community/support/) 또는 셀프 서비스를 통해 [품질 패치 도구](https://devdocs.magento.com/quality-patches/tool.html) 해당 버전이 여전히 품질 지원을 받을 수 있는 경우 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜는 아래 표를 참조하십시오.
+- 라이프사이클 정책을 보다 효율적으로 수행하기 위해 Adobe은 PHP 버전이 기반으로 하는 지원 날짜가 끝날 때까지 2.4 릴리스 라인에 품질 수정 사항을 제공합니다. 고객은 연락하여 품질 수정 사항에 액세스할 수 있습니다 [Adobe Commerce 지원](https://developer.adobe.com/commerce/contributor/community/support/) 또는 셀프 서비스를 통해 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}(해당 버전이 여전히 품질 지원을 받을 수 있는 경우) Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜는 아래 표를 참조하십시오.
 
 - Adobe은 고객의 버전이 여전히 품질 지원을 받을 수 있는 경우에도 최신 패치 또는 보안 패치 릴리스를 통해서만 보안 수정 사항을 제공합니다. 품질 수정 사항과 달리 보안 수정 사항은 지원되는 부 릴리스 내에서 이전 부 릴리스 또는 이전 패치 릴리스로 지원할 수 없습니다.
 
