@@ -1,9 +1,9 @@
 ---
 title: 릴리스 일정
 description: Adobe Commerce의 특정 버전이 베타, 사전 릴리스 및 일반 릴리스로 예약되는 시기를 알아봅니다.
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Adobe은 Adobe Commerce 및 Magento Open Source의 지원되는 각 릴리스 �
 | 2022년 6월<br>기능 릴리스 | \-\- | \-\- | \-\- | 2022년 6월 21일 |
 | 2022년 8월<br>기능 + 패치 릴리스 + 보안 패치 릴리스 | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 2022년 7월 26일 | 2022년 8월 9일 |
 | 2022년 10월 일<br>기능 + 보안 패치 릴리스 | 2.4.5-p1<sup>2개</sup><br>2.4.4-p2 | \-\- | 2022년 9월 27일 | 2022년 10월 11일 |
+| 2023년 1월<br>기능 릴리스 | \-\- | \-\- | \-\- | 2023년 1월 17일 |
+| 2023년 3월<br>기능 + 패치 릴리스 + 보안 패치 릴리스 | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | 2023년 1월 | 2023년 2월 28일 | 2023년 3월 14일 |
 
 <sup>\-\- 이 릴리스에 적용할 수 없는 항목을 나타냅니다.</sup><br>
 <sup>1 2.3.x 릴리스 라인의 마지막 패치 릴리스입니다. 2.3.x 릴리스 라인은 2022년 9월 EOS(End of Support)에 도달합니다.</sup><br>
@@ -32,10 +34,6 @@ Adobe은 Adobe Commerce 및 Magento Open Source의 지원되는 각 릴리스 �
 >[!TIP]
 >
 >패치 및 보안 패치 릴리스는 핵심 코드 베이스를 업그레이드하여 플랫폼을 안전하고 안정적이며 안정적으로 유지할 수 있는 기회입니다. 기능 릴리스는 2개월마다 발생합니다. 기능 릴리스는 핵심 코드 베이스에 독립적이며 외부 모듈 또는 확장을 통해 사용할 수 있습니다. 기존 독립 기능에 대한 모든 업데이트는 기능 릴리스 기간 동안 릴리스되며 이 기능이 이미 구현된 경우 자동으로 발생하지 않습니다.
-
->[!NOTE]
->
->Adobe에서는 [새 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) 이는 지원되는 릴리스 라인에 적용됩니다. 2022년 릴리스 달력 및 라이프사이클 정책의 새로운 전략에 대해 자세히 알아보려면 [블로그](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## 조기 액세스
 
