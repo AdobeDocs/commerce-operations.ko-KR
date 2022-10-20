@@ -3,8 +3,8 @@ title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 또는 Magento Open Source 업그레이드 계획에 대한 권장 읽기를 검토합니다.
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '423'
+ht-degree: 3%
 
 ---
 
