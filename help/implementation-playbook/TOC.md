@@ -2,9 +2,9 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
+source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '128'
 ht-degree: 12%
 
 ---
@@ -65,7 +65,4 @@ ht-degree: 12%
    - [출시 후 단계](launch/post-launch-steps.md)
 - 유지 관리 및 지원 {#maintenance}
    - [개요](maintenance/overview.md)
-   - [모델](maintenance/models.md)
-   - [서비스 수준](maintenance/service-level-agreements.md)
-   - [지표](maintenance/metrics.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)

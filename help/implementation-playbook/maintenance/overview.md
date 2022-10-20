@@ -2,9 +2,9 @@
 title: 유지 관리 및 지원 개요
 description: 새로 실행한 Adobe Commerce 구현을 올바르게 유지 및 지원합니다.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,7 @@ ht-degree: 0%
 > 프로젝트 관리자가 사후 프로덕션 지원 팀을 성공적으로 설정하는 데 필요한 작업을 완료하는 데 도움이 되는 전환 확인 목록을 만드는 것이 중요합니다. 이 전환은 전체 프로젝트 계획의 일부여야 하며 작업은 일정에 포함되어야 합니다.
 
 플랫폼과 상거래 관행을 지속적으로 향상 및 최적화하기 위해 비즈니스에 적합한 지원 모델을 파악하는 것은 구현 프로세스 중에 수행된 모든 하드 작업을 유지 관리하는 중요한 단계입니다. 포괄적인 지속적인 지원 계획을 통해 상거래 사이트는 고객의 기대에 부응할 수 있으며 지속적으로 목표를 달성할 수 있습니다.
+
+Adobe Commerce을 배포할 때는 유지 관리 및 지원 전략에 포함할 사항을 고려해야 합니다.
+Adobe Commerce 라이센스에는 전문가 지원이 포함됩니다. 전문가 지원 및 Adobe 지원 계획에 대한 자세한 내용은 [Adobe 지원 계획](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Adobe 지원 계획 외에도 기존 Magento 지원 용어가 있습니다. 적용 가능한 지원 서비스를 이해하려면 계약을 참조하여 보유하고 있는 지원 계약을 확인하거나 CSM(Customer Success Manager)과 상의하십시오.
