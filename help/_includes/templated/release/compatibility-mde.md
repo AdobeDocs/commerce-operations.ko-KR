@@ -1,17 +1,22 @@
 ---
-source-git-commit: d1f1f08a6c42f9d1900d37b5cdeb11fbccd2b92e
+source-git-commit: 27779307682b7fb4f4abd597772a25700f6bf132
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
 # 호환성
 
+<!--This include content is automatically generated using the compatibility-mde.html
+template and the "_data/release/mde.yml" data file. To update the content,
+add new information to the data file. Follow the instructions in the README instructions to generate
+the updated content: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates-->
+
 **지원됨** - Adobe에서 완전히 테스트하고 지원되는 버전입니다.
 
-**호환 가능** - 또는 와 호환된다고 확인되지만 지원되지 않는 버전입니다.
+**호환 가능** - Adobe Commerce 또는 Magento Open Source과 호환된다고 확인되지만 지원되지 않는 버전입니다.
 
-**지원되지 않음** - 상거래 또는 Magento 릴리스와 호환되지 않는 버전입니다.
+**지원되지 않음** - Adobe Commerce 또는 Magento Open Source 릴리스와 호환되지 않는 버전입니다.
 
 <table style="table-layout:auto">
   <thead>
