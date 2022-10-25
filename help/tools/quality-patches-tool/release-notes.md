@@ -1,9 +1,9 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.3) - 수정 사항 _bool 유형의 값에 대한 배열 오프셋에 액세스하려고 합니다._ PHP 7.4의 알려진 제품에 대해 존재하지 않는 특정 카테고리 경로에 액세스할 때 오류가 발생했습니다.
+* **ACSD-47332** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 00:00과 00:59 UTC 사이에서 실행될 때만 보고되는 오류로 인해 cron이 실패하는 문제를 해결했습니다.
+* **ACSD-47280** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 특정 범위에서 공유 카탈로그 기능을 비활성화하는 것이 제대로 작동하지 않는 문제를 해결했습니다.
+* **ACSD-47106** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6)의 경우 - 회사 만들기 페이지의 새 사용자 지정 속성에 값을 저장할 수 없는 문제가 해결되었습니다.
+* 업데이트된 패치: ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
@@ -296,7 +304,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 을 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
+* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 를 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce >=2.3.0 &lt;2.4.3>*) - 그룹화된 제품의 사용자 지정 재고를 저장할 때 문제가 해결되어 제품이 프론트런트에 재고가 없습니다.
 * **MDVA-36572** (*Adobe Commerce >=2.3.5 &lt;2.4.3>*) - 대변 메모 업데이트로 인해 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 경우 문제를 수정합니다.
 * **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3>*) - Admin Console에 연결할 수 없는 *리디렉션이 너무 많음* 오류가 발생했습니다.
