@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 2%
 
 ---
 
@@ -126,4 +126,4 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 | 변경 | 유형 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | 이동 [보안 및 규정 준수 안내서](../security-and-compliance/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | 새로 만들기 |
-| 이동 [릴리스 정보 안내서](../release/roadmap.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 새로 만들기 |
+| 이동 [릴리스 정보 안내서](../release/release-notes/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 새로 만들기 |

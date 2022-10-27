@@ -1,7 +1,7 @@
 ---
 title: 릴리스 일정
 description: Adobe Commerce의 특정 버전이 베타, 사전 릴리스 및 일반 릴리스로 예약되는 시기를 알아봅니다.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 릴리스 일정
 
-Adobe은 제품 업그레이드를 간단하고 예측 가능하고 개선 사항을 제공하는 것과 조기 입양자에게 보다 신속하게 새로운 기능을 제공하는 것 사이에서 올바른 균형을 맞추기 위해 지속적으로 노력하고 있습니다. 지난 해 동안 우리는 이 균형을 지원하기 위해 소프트웨어를 제공하는 방법을 정련했습니다. 자세한 내용은 [릴리스 정책](policy.md).
+Adobe은 제품 업그레이드를 간단하고 예측 가능하고 개선 사항을 제공하는 것과 조기 입양자에게 보다 신속하게 새로운 기능을 제공하는 것 사이에서 올바른 균형을 맞추기 위해 지속적으로 노력하고 있습니다. 지난 해 동안 우리는 이 균형을 지원하기 위해 소프트웨어를 제공하는 방법을 정련했습니다. 자세한 내용은 [버전 관리 정책](versioning-policy.md).
 
 Adobe은 Adobe Commerce 및 Magento Open Source의 지원되는 각 릴리스 라인에 대한 보안 및 기능 패치를 릴리스합니다.
 
