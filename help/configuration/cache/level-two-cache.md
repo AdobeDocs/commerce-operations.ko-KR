@@ -1,9 +1,9 @@
 ---
 title: L2 캐시 구성
 description: L2 캐시를 구성하는 방법을 알아봅니다.
-source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
+source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Commerce는 해시된 데이터 버전을 Redis에 저장하며 접미사 &#39;:
 
 >[!INFO]
 >
->클라우드 인프라 기반의 Adobe Commerce의 경우, [확장된 Redis 캐시 구현](https://support.magento.com/hc/en-us/articles/360049292532) 지원 문서.
+>클라우드 기반의 Adobe Commerce의 경우 [변수 배포](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) L2 캐시 구성의 경우
 
 ## 구성 예
 
