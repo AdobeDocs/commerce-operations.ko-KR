@@ -2,7 +2,7 @@
 title: Adobe Commerce 글로벌 참조 아키텍처
 description: 글로벌 참조 아키텍처를 활용하여 Adobe Commerce 구현을 최대한 활용할 수 있습니다.
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: f713e07b57705e8720c773f9f762a357c173e29d
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -10,6 +10,8 @@ ht-degree: 0%
 ---
 
 # GRA(글로벌 참조 아키텍처)
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
 
 여러 현지 시장(현지화된 통화, 언어, 미디어, 공유 카탈로그 및 고유한 카트가 있는 경우)에서 여러 브랜드에 대한 사이트가 여러 개인 기업을 운영하고 있고 동일한 기능 및 통합을 구현하는 데 필요한 불필요한 비용을 방지하려는 경우(GRA) 글로벌 참조 아키텍처(GRA)는 항상 좋은 옵션입니다.
 
