@@ -1,9 +1,9 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 특정 범위에 대한 액세스가 제한된 관리자가 제품 검토를 삭제할 수 없는 문제가 해결되었습니다.
+* **ACSD-47107** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.5)의 경우 - 카탈로그 가격 규칙 할인이 사용자 지정 제품 옵션에 적용되는 문제를 수정합니다.
+* **ACSD-47232** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 관리자에서 총 가중치 조건이 있는 쿠폰을 적용할 수 없는 문제가 해결되었습니다.
+* **ACSD-46519** (Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.6)에 대해 GraphQL categoryList 요청이 앵커 카테고리에 대해 잘못된 product_count를 반환하는 문제가 해결되었습니다.
+* **ACSD-47027** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6)에 대해) - 느린 updateCompanyRole GraphQL 요청을 수정합니다.
+* **ACSD-47666** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)에 대해 - 관리자 > 시스템 > 권한 > 사용자 역할 > 역할 > 역할 사용자 그리드에서 필터 기능이 작동하지 않는 문제를 수정했습니다.
+* **ACSD-47497** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 관리 아래의 구성에 서비스 탭이 표시되지 않는 문제가 해결되었습니다.
+* 업데이트된 패치: ACSD-47743.
+* 교체된 패치: MDVA-42807.
 
 ## v1.1.22 {#v1-1-22}
 
@@ -304,7 +316,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 를 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
+* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 을 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce >=2.3.0 &lt;2.4.3>*) - 그룹화된 제품의 사용자 지정 재고를 저장할 때 문제가 해결되어 제품이 프론트런트에 재고가 없습니다.
 * **MDVA-36572** (*Adobe Commerce >=2.3.5 &lt;2.4.3>*) - 대변 메모 업데이트로 인해 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 경우 문제를 수정합니다.
 * **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3>*) - Admin Console에 연결할 수 없는 *리디렉션이 너무 많음* 오류가 발생했습니다.
