@@ -4,7 +4,7 @@ description: Adobe Commerce 구현 문제를 해결하는 방법을 알아봅니
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 754051c98d2c5265398f1f0806cb34128fe03c36
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerce on cloud 인프라
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 배포 문제 | **배포 우수 사례를 따릅니다.** 지원 티켓 중 13%는 배포 문제를 포함합니다. 이러한 원인 중 많은 것을 방지하는 방법을 포함하도록 모범 사례가 업데이트되었습니다. | [빌드 및 배포에 대한 우수 사례](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) 개발자 설명서에서 를 참조하십시오. |
 | 사이트 다운 문제 | **사이트 다운 문제 해결사를 사용합니다.** 크론은 오래 실행될 수 있고 서로 오버런할 수 있습니다. 많은 운영 중단과 성능 문제의 원인입니다. | [사이트 아래로 문제 해결사](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.html?lang=en) 및 [충돌 작업을 재설정하는 방법](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) 지원 기술 자료에서 |
-| 성능 문제 | **Adobe Commerce 배너를 사용하지 않는 경우 비활성화하십시오.** 배너를 활성화했지만 사용하지 않으면 리소스가 필요하지 않으면 데이터베이스를 조회하는 데 사용되며 성능 문제가 발생합니다. | [성능을 향상시키기 위해 Adobe Commerce 배너 출력을 비활성화합니다](지원 기술 자료에서 https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.html) |
+| 성능 문제 | **Adobe Commerce 배너를 사용하지 않는 경우 비활성화하십시오.** 배너를 활성화했지만 사용하지 않으면 리소스가 필요하지 않으면 데이터베이스를 조회하는 데 사용되며 성능 문제가 발생합니다. | [성능을 향상시키기 위해 Adobe Commerce 배너 출력을 비활성화합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.html) 지원 기술 자료에서 |
 | 검색 문제 | **MySQL 카탈로그 검색 엔진이 Adobe Commerce 2.4.0에서 제거되었습니다.** 버전 2.4.0을 설치하기 전에 Elasticsearch 호스트 설정과 구성이 있어야 합니다. 개발자 설명서에서 Elasticsearch 설치 및 구성 을 참조하십시오. | [Elasticsearch 서비스 설정](https://devdocs.magento.com/cloud/project/services-elastic.html) 개발자 설명서에서 를 참조하십시오. |
 | 사용자 지정 오류 | **피크 시간 동안 배포하지 마십시오.** 사용자를 추가하고 제거하면 배포가 트리거됩니다. | [다운타임 없이 구축](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html) 개발자 설명서에서 를 참조하십시오. |
 | 데이터베이스 오류 및 문제 | **데이터베이스 문제로 인해 배포(후크 후 문제), 성능 및 사이트 다운 상황이 발생합니다.** 많은 경우 오류 또는 데이터베이스 공간 할당이 부족합니다. | [MariaDB 오류 코드](https://mariadb.com/kb/en/library/mariadb-error-codes/#mariadb-specific-error-codes); [저장소 공간 관리](https://devdocs.magento.com/cloud/project/manage-disk-space.html) (데이터베이스 포함)을 개발자 설명서에서 확인할 수 있습니다. |
