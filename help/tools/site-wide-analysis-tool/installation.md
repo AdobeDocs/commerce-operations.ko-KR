@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: 이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Adobe Commerce의 온-프레미스 설치가 있는 경우 도구를 사용하�
 
 ## [!DNL Commerce Services Connector]
 
-에이전트에는 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 시스템 및 [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) API 키 사용. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행하십시오.
+에이전트에는 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 시스템 및 [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) API 키 사용. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행하십시오.
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -83,7 +83,7 @@ bin/magento module:status Magento_ServicesConnector
 
 1. 클릭 **[!UICONTROL Delete]** 기존 API 키 옆에 있습니다.
 
-1. [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 새 API 키.
+1. [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 새 API 키.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ bin/magento module:status Magento_ServicesConnector
    bin/magento setup:upgrade
    ```
 
-1. [API 키 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) 확장을 시스템에 연결하기 위해
+1. [API 키 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 확장을 시스템에 연결하기 위해
 
 ## 에이전트 설치
 
