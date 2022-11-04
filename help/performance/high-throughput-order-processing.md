@@ -1,9 +1,9 @@
 ---
 title: 높은 처리량 주문 처리
 description: Adobe Commerce 또는 Magento Open Source 배포를 위해 주문 배치 및 체크아웃 경험을 최적화합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ bin/magento setup:config:set --checkout-async 0
 AsyncOrder는 제한된 집합 집합을 지원합니다. [!DNL Commerce] 기능.
 
 | 카테고리 | 지원되는 기능 |
-|---------------- | -----------------------|
+|------------------|--------------------------------------------------------------------------|
 | 체크아웃 유형 | OnePage 체크아웃<br>표준 체크아웃<br>B2B 협상 가능 견적 |
 | 결제 방법 | 수표/화폐 주문<br>배달 시 현금<br>Braintree<br>PayPal PayFlow Pro |
 | 배송 방법 | 모든 배송 방법이 지원됩니다. |
@@ -184,8 +184,8 @@ stage:
 
 <!-- link definitions -->
 
-[global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
-[inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
+[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
+[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
 [DelayedTotalCalculating]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

@@ -1,15 +1,16 @@
 ---
-title: 프로세스 및 타임라인
+title: 구현 프로세스 및 타임라인
 description: 일반적인 Adobe Commerce 구현 타임라인 및 타임라인 활동의 예를 참조하십시오.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# 일반적인 프로세스 및 타임라인
+
+# 일반적인 구현 프로세스 및 타임라인
 
 많은 조직이 제안 요청(RFP)을 만들어 상거래 변환을 준비합니다. 여기에는 세부 요구 사항, 현재 레코드 시스템, 비즈니스 사례 및 특정 목표(예: 매출, 전환, 평균 주문 가격)가 포함되어 성공을 정의합니다. 그런 다음 이 브랜드는 2~3개의 상거래 시스템 통합업체 또는 디지털 에이전시에 접근하여 평가, 검토, 회사 선택, 출시 예상 일정 수립 작업을 시작합니다.
 
