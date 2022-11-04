@@ -1,9 +1,9 @@
 ---
 title: 샘플 데이터 Git 리포지토리 복제
 description: Git 리포지토리를 복제하여 Adobe Commerce 및 Magento Open Source 샘플 데이터를 설치하려면 다음 단계를 따르십시오.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ SSH 프로토콜을 사용하여 샘플 데이터 GitHub 리포지토리를 복�
 
    를 사용한 경우 `2.4-develop` Magento Open Source GitHub 리포지토리의 분기, 샘플 데이터 분기는 `2.4-develop`.
 
-   를 사용한 경우 `2.4.3` Magento Open Source GitHub 리포지토리의 분기, 샘플 데이터 분기는 `2.4.3`.
-
-   올바른 분기를 체크 아웃하려면 샘플 데이터 저장소의 루트 디렉토리에서 다음 명령을 실행합니다(이 경우 `2.4.3` 분기):
+   올바른 분기를 체크 아웃하려면 샘플 데이터 저장소의 루트 디렉토리에서 다음 명령을 실행합니다(이 경우 `2.4-develop` 분기):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. 다음으로 변경 `<app_root>`.
@@ -129,12 +127,10 @@ HTTPS 프로토콜을 사용하여 샘플 데이터 GitHub 리포지토리를 �
 
    를 사용한 경우 `2.4-develop` Magento Open Source GitHub 리포지토리의 분기, 샘플 데이터 분기는 `2.4-develop`.
 
-   를 사용한 경우 `2.4.3` Magento Open Source GitHub 리포지토리의 분기, 샘플 데이터 분기는 `2.4.3`.
-
-   올바른 분기를 체크 아웃하려면 샘플 데이터 저장소의 루트 디렉토리에서 다음 명령을 실행합니다(이 경우 `2.4.3` 분기):
+   올바른 분기를 체크 아웃하려면 샘플 데이터 저장소의 루트 디렉토리에서 다음 명령을 실행합니다(이 경우 `2.4-develop` 분기):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. 다음으로 변경 `<magento_root>`.

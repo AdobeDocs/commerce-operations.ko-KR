@@ -1,9 +1,9 @@
 ---
 title: 온-프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ Adobe Commerce 또는 Magento Open Source 메타패키지를 가져오려면 다
 
    >[!NOTE]
    >
-   >Adobe Commerce 고객은 GA(General Availability) 날짜 2주 전에 2.4.x 및 2.3.x 패치에 액세스할 수 있습니다. 사전 릴리스 패키지는 작성기를 통해서만 사용할 수 있습니다. GA가 될 때까지 Developer Portal 또는 GitHub에서 사전 릴리스에 액세스할 수 없습니다. 작성기에서 이러한 패키지를 찾을 수 없는 경우 Adobe Commerce 지원 센터에 문의하십시오.
+   >Adobe Commerce 고객은 GA(General Availability) 날짜 2주 전에 패치에 액세스할 수 있습니다. 사전 릴리스 패키지는 작성기를 통해서만 사용할 수 있습니다. GA가 될 때까지 Developer Portal 또는 GitHub에서 사전 릴리스에 액세스할 수 없습니다. 작성기에서 이러한 패키지를 찾을 수 없는 경우 Adobe Commerce 지원 센터에 문의하십시오.
 
 ### 예 - 부 릴리스
 
-부 릴리스에는 새로운 기능, 품질 수정 및 보안 수정 사항이 포함되어 있습니다. Composer를 사용하여 부 릴리스를 지정합니다. 예를 들어 Adobe Commerce 2.4.3 메타패키지를 지정하려면 다음을 수행합니다.
+부 릴리스에는 새로운 기능, 품질 수정 및 보안 수정 사항이 포함되어 있습니다. Composer를 사용하여 부 릴리스를 지정합니다. 예를 들어 Adobe Commerce 2.4.5 메타패키지를 지정하려면 다음을 수행합니다.
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### 예 - 품질 패치
 
-품질 패치는 주로 기능성을 포함합니다 _및_ 보안 수정 사항. 그러나 경우에 따라 이전 버전과 호환되는 새로운 기능을 포함할 수 있습니다. Composer를 사용하여 품질 패치를 다운로드합니다. 예를 들어 Adobe Commerce 2.4.3 메타패키지를 지정하려면 다음을 수행합니다.
+품질 패치는 주로 기능성을 포함합니다 _및_ 보안 수정 사항. 그러나 경우에 따라 이전 버전과 호환되는 새로운 기능을 포함할 수 있습니다. Composer를 사용하여 품질 패치를 다운로드합니다. 예를 들어 Adobe Commerce 2.4.5 메타패키지를 지정하려면 다음을 수행합니다.
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### 예 - 보안 패치
 
 보안 패치에는 보안 수정 사항만 포함되어 있습니다. 업그레이드 프로세스를 빠르고 쉽게 수행할 수 있도록 설계되었습니다.
 
-보안 패치는 작성기 이름 지정 규칙을 사용합니다 `2.4.3-px`. 작성기를 사용하여 패치를 지정합니다. 예를 들어 Adobe Commerce 2.4.3-p1 메타패키지를 다운로드하려면 다음을 수행하십시오.
+보안 패치는 작성기 이름 지정 규칙을 사용합니다 `2.4.5-px`. 작성기를 사용하여 패치를 지정합니다. 예를 들어 Adobe Commerce 2.4.5-p1 메타패키지를 다운로드하려면 다음을 수행하십시오.
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## 파일 권한 설정
