@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL PHP] tab"'
-description: 에 대해 알아보기 [!UICONTROL PHP] [!DNS Observation for Adobe Commerce] 탭.
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+title: "다음 [!UICONTROL PHP] tab"
+description: 에 대해 알아보기 [!UICONTROL PHP] 탭 [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![PHP 프로세스 로드](../../assets/tools/php-process-load.jpg)
 
-이 프레임은 선택한 기간의 PHP-FPM 프로세스에서 CPU 로드를 보여 줍니다.
+다음 **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** 프레임은 선택한 기간의 PHP-FPM 프로세스에서 CPU 로드를 표시합니다.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![PHP CPU 사용률](../../assets/tools/php-cpu-utilization.jpg)
 
-다음 **[!UICONTROL PHP CPU Utilization]** 프레임은 선택한 기간 동안의 PHP 프로세스의 CPU % 활용률을 보여줍니다.
+다음 **[!UICONTROL PHP CPU Utilization]** 프레임은 선택한 기간 동안 PHP 프로세스의 CPU 사용률을 보여줍니다.
 
 ## [!UICONTROL PHP Process states]
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
 * &#39;%[참고] WSREP: 메모리 맵을 디스크에 플러싱..%&#39;) &#39;mem_map_flush&#39;
 * &#39;%Internal MariaDB 오류 코드: 1146%) 로서의 &#39;sql_1146&#39;
-* &#39;%Internal MariaDB 오류 코드: &#39;sql_1062&#39;(으)로 1062%) ・ &#39;%1062 [경고] InnoDB:%) as &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB 오류 코드: 1062%&#39;) as &#39;sql_1062&#39; * &#39;%1062 [경고] InnoDB:%) as &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB 오류 코드: 1064%) 로서의 &#39;sql_1064&#39;
 * &#39;%InnoDB: &#39;assertion_err&#39;(% 파일의 검증 실패)
 * &#39;%mysqld_safe 현재 실행 중인 프로세스 수: 0%&#39;) &#39;mysql_oom&#39;

@@ -1,9 +1,9 @@
 ---
 title: "다음 [!UICONTROL Summary] tab"
 description: 에 대해 알아보기 [!UICONTROL Summary] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
+source-git-commit: 5058441eb64d59b3e1aa329603a87f75c826996e
 workflow-type: tm+mt
-source-wordcount: '2637'
+source-wordcount: '2655'
 ht-degree: 0%
 
 ---
@@ -23,29 +23,29 @@ ht-degree: 0%
 
 ### 트랜잭션 유형:
 
-**웹:** HTTP 요청으로 트랜잭션이 시작됩니다. 대부분의 조직의 경우 고객 중심 상호 작용을 나타내므로 모니터링해야 하는 가장 중요한 트랜잭션입니다.
+**웹:** HTTP 요청으로 웹 트랜잭션이 시작됩니다. 대부분의 조직의 경우 고객 중심 상호 작용을 나타내므로 모니터링해야 하는 가장 중요한 트랜잭션입니다.
 
 **웹이 아닌:** 웹이 아닌 트랜잭션은 웹 요청으로 시작되지 않습니다. 여기에는 웹이 아닌 작업자 프로세스, 백그라운드 프로세스, 스크립트, 메시지 큐 활동 및 기타 작업이 포함될 수 있습니다.
 
-를 보고 있습니다. **[!UICONTROL Transaction Overview]** 프레임에는 평균 APDEX 점수가 .76인 약 53,000개의 트랜잭션이 있으며 이러한 트랜잭션의 95%가 2.313초 이내에 발생했습니다. 짧은 시간 동안 APDEX 히트가 있는 경우 더 긴박한 일정이 현재 평균과 차이를 보일 수 있는 프레임입니다.
+만약 **[!UICONTROL Transaction Overview]** 위의 프레임에는 평균 APDEX 점수가 .76인 약 53,000개의 트랜잭션이 있으며 이러한 트랜잭션의 95%가 2.313초 이내에 발생했습니다. 짧은 시간 동안 APDEX 히트가 있는 경우 더 긴박한 일정이 현재 평균과 차이를 보일 수 있는 프레임입니다.
 
 ## [!UICONTROL 404 page errors frame]
 
 ![404 페이지 오류 프레임](../../assets/tools/404-page-errors.jpg)
 
-다음 **[!UICONTROL 404 page errors]** 프레임 목록 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 및 선택한 기간 동안의 404 페이지 오류 카운트입니다.
+다음 **[!UICONTROL 404 page errors]** 프레임 목록 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 및 선택한 기간에 대한 404 페이지 오류 카운트입니다.
 
 ## [!UICONTROL % of Storage Free frame]
 
 ![스토리지 프리 프레임 비율](../../assets/tools/percent-of-storage-free.jpg)
 
-다음 **[!UICONTROL % of Storage Free]** 프레임은 클러스터의 모든 노드에 대해 스토리지 마운트의 평균 사용 가능한 비율(%)을 표시합니다. 예를 들어 세 개의 노드 클러스터가 있으면 \&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. 세 노드에 차이가 있으면 이 프레임이 거짓일 수 있습니다. 분산의 예는 다음과 같습니다. `/data/mysql` 사용 가능한 마운트 지점은 세 노드 클러스터에서 다른 값입니다. 아래에 프레임이 있습니다 [!UICONTROL MySQL] 마운트 포인트를 노드 이름별로 패싯하는 탭으로서 보다 정확하게 확인할 수 있습니다. `/data/mysql` 실제로 각 노드에서 스토리지를 사용할 수 있습니다.
+다음 **[!UICONTROL % of Storage Free]** 프레임은 클러스터의 모든 노드에 대해 스토리지 마운트의 평균 사용 가능 비율을 표시합니다. 예를 들어 세 개의 노드 클러스터가 있는 경우 프레임에 \ 가 표시됩니다&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. 세 노드에 차이가 있으면 이 프레임이 거짓일 수 있습니다. 분산의 예는 다음과 같습니다. `/data/mysql` 사용 가능한 마운트 지점은 세 노드 클러스터에서 다른 값입니다. 아래에 프레임이 있습니다 [!UICONTROL MySQL] 마운트 포인트를 노드 이름별로 패싯하는 탭으로서 보다 정확하게 확인할 수 있습니다. `/data/mysql` 실제로 각 노드에서 스토리지를 사용할 수 있습니다.
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![사용 가능한 프레임인 시스템 메모리 비율](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-이 프레임은 노드별로 각 노드에서 사용 가능한 시스템 메모리의 양을 표시합니다.
+다음 **사용 가능한 시스템 메모리 비율(%)** 프레임은 각 노드에서 사용 가능한 시스템 메모리의 양을 노드별로 표시합니다.
 
 ## [!UICONTROL Swap memory free in bytes]
 
@@ -57,19 +57,19 @@ ht-degree: 0%
 
 ![호스트별 CPU 퍼센트](../../assets/tools/cpu-percent-by-host.jpg)
 
-모든 환경 및 노드의 집계는 **[!UICONTROL CPU % by host]** 프레임. 비프로덕션 환경은 선택 취소해야 합니다. 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 주목해야 합니다. 이 문서에서는 높은 CPU 사용률에 대한 팁을 제공합니다. [Adobe Commerce에서 New Relic를 사용하여 성능 문제 해결](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+모든 환경 및 노드의 집계는 **[!UICONTROL CPU % by host]** 프레임. 비프로덕션 환경은 선택 취소해야 합니다. 또한 프로덕션 환경에 대한 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 내용은 [Adobe Commerce에서 New Relic를 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
 ![일정 동안의 경고](../../assets/tools/alerts-during-timeframe.jpg)
 
-다음 **[!UICONTROL Alerts during timeframe]** 을 포함하여 모든 경고를 표시합니다 [!UICONTROL Managed Alerts] Adobe Commerce 지원에서 추가함.
+다음 **[!UICONTROL Alerts during timeframe]** 을 포함하여 모든 경고를 표시합니다 [!UICONTROL Managed Alerts] Adobe Commerce에서 지원을 추가했습니다.
 
 ## [!UICONTROL CPU Usage]
 
 ![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-만약 **[!UICONTROL CPU Usage]** 프레임은 비어 있으며, [!DNL New Relic] 이 활성화되어 있지 않습니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro에 있는 경우 지원 티켓을 열어 [!DNL New Relic Infrastructure] 활성화되었습니다.
+만약 **[!UICONTROL CPU Usage]** 프레임은 비어 있으며, 이는 [!DNL New Relic] 이 활성화되어 있지 않습니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro인 경우 [지원 티켓](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 다음을 수행해야 합니다. [!DNL New Relic Infrastructure] 활성화되었습니다.
 
 ## [!UICONTROL Average Response Time]
 
@@ -87,13 +87,13 @@ ht-degree: 0%
 
 ![응답 코드](../../assets/tools/response-code.jpg)
 
-다음 **[!UICONTROL Response Code]** 프레임은 웹 트래픽과 요청 응답 코드를 잘 나타냅니다. 그렇습니다 [!DNL New Relic] 트랜잭션 데이터에 대해, `httpResponseCode` 반환됨.
+다음 **[!UICONTROL Response Code]** 프레임은 웹 트래픽과 요청 응답 코드를 잘 나타냅니다. 그렇습니다 [!DNL New Relic's] 트랜잭션 데이터에 대해, `httpResponseCode` 반환됨.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
 ![웹 트래픽 볼륨과 1주 전 비교](../../assets/tools/web-traffic-volume-compared.jpg)
 
-이 프레임은 현재 볼륨과 비교하여 1주일 전의 웹 트래픽 볼륨을 표시합니다.
+이 프레임은 지난 1주 및 현재 주의 비교 웹 트래픽 볼륨을 표시합니다.
 
 ## [!UICONTROL Deployment Log Entries]
 
@@ -105,9 +105,9 @@ ht-degree: 0%
 
 ![배포 상태](../../assets/tools/deployment-state.jpg)
 
-다음 **[!UICONTROL Deployment State]** 프레임 패싯은 배포 로그에서 특정 배포 구문을 패싯합니다. 다음은 로그 및 패싯 이름에서 계산되는 구문의 예입니다.
+다음 **[!UICONTROL Deployment State]** 프레임 패싯은 배포 로그에서 특정 배포 단계를 처리합니다. 다음은 로그 및 패싯 이름에서 계산되는 단계에 대한 몇 가지 예입니다.
 
-**배포 로그 구문:**
+**배포 로그 단계:**
 
 * &#39;%generate command%&#39;을(를) &#39;start_gen&#39;으로 시작하는 중
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;(apply_patches)
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ![ip 응답 - 지속 시간에 상위 20url](../../assets/tools/ip-response-top-20-urls.jpg)
 
-이 프레임은 응답으로 가장 긴 기간이 있는 URL을 표시합니다. 응답 시간이 가장 긴 대용량 이미지 파일 또는 페이지, API 또는 페이지를 나타낼 수 있습니다.
+다음 **[!UICONTROL IP Response – top 20 URLs in duration]** 프레임은 응답에서 가장 긴 기간을 사용하는 URL을 표시합니다. 응답 시간이 가장 긴 대용량 이미지 파일 또는 페이지, API 또는 페이지를 나타낼 수 있습니다.
 
 ## [!UICONTROL API Calls by IP]
 
@@ -164,13 +164,13 @@ ht-degree: 0%
 
 ![노드별 액세스](../../assets/tools/nginx-access-by-node.jpg)
 
-다음 **[!UICONTROL Nginx access by node]** 프레임에서 카운트를 봅니다. `access.log` 노드 기준. 이렇게 하면 로드가 균등하게 분배되는지 확인하는 데 유용합니다. 종종 노드가 드롭되는 시점을 표시합니다. 이렇게 하면 사이트 전체 로드도 표시됩니다.
+다음 **[!UICONTROL Nginx access by node]** 프레임에서 카운트를 봅니다. `access.log` 노드 기준. 이렇게 하면 로드가 균등하게 분배되는지 확인하는 데 유용합니다. 종종 노드가 드롭되는 시점을 표시합니다. 프레임은 사이트 전체의 로드도 보여줍니다.
 
 ## [!UICONTROL Galera Log]
 
 ![갈라 로그](../../assets/tools/galera-log.jpg)
 
-[갈레라](https://galeracluster.com/library/galera-documentation.pdf) 데이터베이스 클러스터에 사용됩니다. 이 프레임은 [!UICONTROL Galera] 클러스터 이러한 신호는 클러스터에 들어오거나 나가는 노드에 중점을 둡니다. 이는 데이터베이스 데이터 무결성을 유지하기 위한 일반적인 동작입니다. 노드는 [!UICONTROL Galera] 클러스터 상태 변경.
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) 데이터베이스 클러스터에 사용됩니다. 이 프레임은 [!UICONTROL Galera] 클러스터 이 신호는 클러스터에 들어오거나 나가는 노드에 중점을 둡니다. 이는 데이터베이스 데이터 무결성을 유지하기 위한 일반적인 동작입니다. 노드는 [!UICONTROL Galera] 클러스터 상태 변경.
 
 **목록 [!UICONTROL Galera] 상태 변경:**
 
@@ -256,9 +256,9 @@ ht-degree: 0%
 
 ![로그에서 빨간색 동기화](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[레디스](https://redis.io/docs/about/) 는 데이터베이스, 캐시 및 메시지 브로커로 사용되는 오픈 소스(BSD 라이센스)의 메모리 내 데이터 구조 저장소입니다. 구성된 경우 데이터베이스 및 세션 캐싱을 수행할 수 있습니다. 다음 **[!UICONTROL Redis synchronization from Log]** 프레임 초점 [Redis 동기화](https://redis.io/docs/manual/replication/). 큰 경우 [!DNL Redis] 데이터 집합. 동기화 문제가 있을 가능성이 높습니다(동기화를 유지하기 위해 더 많은 데이터).
+[[!DNL Redis]](https://redis.io/docs/about/) 는 데이터베이스, 캐시 및 메시지 브로커로 사용되는 오픈 소스(BSD 라이센스)의 메모리 내 데이터 구조 저장소입니다. 구성된 경우 데이터베이스 및 세션 캐싱을 수행할 수 있습니다. 다음 **[!UICONTROL Redis synchronization from Log]** 프레임 초점 [[!DNL Redis] 동기화](https://redis.io/docs/manual/replication/). 큰 경우 [!DNL Redis] 데이터 집합으로, 동기화에 문제가 있을 가능성이 높습니다(동기화를 유지하기 위해 더 많은 데이터).
 
-**[!DNL Redis]오류 및 메시지**
+**[!DNL Redis]오류 및 메시지:**
 
 * &#39;%SLAVE 동기화: &#39;space&#39;로 &#39;device%&#39;에 남아 있는 공간이 없습니다.
 * &#39;%Server가 시작됨, Redis version%&#39;) as &#39;serv_start&#39;
@@ -291,7 +291,7 @@ PHP 프로세스의 동작 방식은 [구성](https://www.php.net/manual/en/inst
 
 다음 **[!UICONTROL PHP errors]** 프레임은 선택한 기간 동안 작업자의 PHP 오류 수를 표시합니다. 자세한 내용은 [Adobe Commerce PHP 설정](../../installation/prerequisites/php-settings.md).
 
-**PHP 오류 및 메시지**
+**PHP 오류 및 메시지:**
 
 * &#39;%worker_connections%&#39;이(가) &#39;worker&#39;로 부족합니다.
 * &#39;%PHP 오류: 허용되는 메모리 크기입니다!%&#39;) &#39;mem_size&#39;
@@ -309,37 +309,37 @@ PHP 프로세스의 동작 방식은 [구성](https://www.php.net/manual/en/inst
 
 ![php 프로세스](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] 사용 [!DNL Nginx]. 시스템 요구 사항에 대해 알아보려면 [Adobe Commerce 버전에 매핑된 PHP 버전 요구 사항](../../installation/system-requirements.md). 다음 **[!UICONTROL PHP processes]** 프레임은 선택한 타임라인에서 특정 시간에 실행되는 PHP 프로세스 수를 보여줍니다.
+[PHP-FPM](https://php-fpm.org/) is [!UICONTROL FastCGI Process Manager] 사용 [!DNL Nginx]. 시스템 요구 사항에 대해 알아보려면 [Adobe Commerce 버전에 매핑된 PHP 버전 요구 사항](../../installation/system-requirements.md). 다음 **[!UICONTROL PHP processes]** 프레임은 선택한 타임라인에서 특정 시간에 실행되는 PHP 프로세스 수를 보여줍니다.
 
 ## [!UICONTROL Secondary processes]
 
 ![보조 프로세스](../../assets/tools/secondary-processes.jpg)
 
-보조 프로세스는 사이트 응답에 영향을 줄 수 있습니다. 다음 **[!UICONTROL Secondary processes]** 프레임은 사이트에 로드를 추가할 수 있는 프로세스 또는 프로세스를 나타낼 수 있습니다. 주로 데이터베이스가 가장 많은 보조 프로세스를 실행합니다.
+보조 프로세스는 사이트 응답에 영향을 줄 수 있습니다. 다음 **[!UICONTROL Secondary processes]** 프레임은 사이트에 로드를 추가할 수 있는 프로세스 또는 프로세스를 나타냅니다. 주로 데이터베이스가 가장 많은 보조 프로세스를 실행합니다.
 
 ## [!UICONTROL Traffic vs Week Ago]
 
 ![주 전과 비교](../../assets/tools/traffic-vs-week-ago.jpg)
 
-다음 **[!UICONTROL Traffic vs Week Ago]** 프레임은 [!DNL Fastly] 캐시 상태가 &#39;MISS&#39;, &#39;PASS&#39;인 로그 이러한 요청은 원본 서버에 로드를 추가합니다. 이 프레임은 웹 요청 볼륨과 동일한 기간 동안 1주 전 웹 요청 볼륨을 표시합니다.
+다음 **[!UICONTROL Traffic vs Week Ago]** 프레임은 [!DNL Fastly] 캐시 상태가 &#39;MISS&#39;, &#39;PASS&#39;인 로그 이러한 요청은 원본 서버에 로드를 추가합니다. 이 프레임은 동일한 기간 동안 현재 주 및 지난 주 동안의 비교 웹 요청 볼륨을 표시합니다.
 
 ## [!UICONTROL Fastly Cache]
 
 ![기본 캐시](../../assets/tools/fastly-cache.jpg)
 
-다음 **[!UICONTROL Fastly Cache]** 프레임은 기본 로그에서 요청의 캐시 상태에 대한 집계 보기를 표시합니다. ERROR를 클릭하면 요청에 오류 비율 이 표시됩니다. 이렇게 하면 일반적으로 원본 서버가 페이지 요청에 충분히 응답하지 않을 때 증가합니다.
+다음 **[!UICONTROL Fastly Cache]** 프레임은 의 요청 캐시 상태에 대한 집계 보기를 표시합니다 [!DNL Fastly] 로그. ERROR를 선택하면 요청에 오류 백분율이 표시됩니다. 일반적으로 원본 서버가 페이지 요청에 충분히 빠르게 응답하지 않을 때 증가합니다.
 
 ## [!UICONTROL Page Rendering]
 
 ![페이지 렌더링](../../assets/tools/page-rendering.jpg)
 
-다음 **[!UICONTROL Page Rendering]** 프레임은 의 페이지 보기 소스에서 평균 페이지 렌더링 기간을 표시합니다 [!DNL New Relic] 이전 주의 동일한 시간 기간과 비교한 것입니다.
+다음 **[!UICONTROL Page Rendering]** 프레임은 페이지의 페이지 보기 원본에서 현재 주의 평균 페이지 렌더링 기간을 표시합니다 [!DNL New Relic] 동일한 기간 동안 이전 주와 비교한 것입니다.
 
 ## [!UICONTROL Page loading detail]
 
 ![페이지 로드 세부 정보](../../assets/tools/page-loading-detail.png)
 
-다음 **[!UICONTROL Page loading detail]** 프레임은 페이지 로드 이벤트를 설명합니다. 이것은 이러한 패싯의 의미를 자세히 설명합니다. 다음은 이 프레임에 대해 실행 중인 쿼리입니다.
+다음 **[!UICONTROL Page loading detail]** 프레임은 페이지 로드 이벤트를 설명합니다. 이것은 이러한 패싯의 의미를 자세히 설명합니다. 다음은 이 프레임에 대해 실행되는 쿼리입니다.
 
 `SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
@@ -359,7 +359,7 @@ PHP 프로세스의 동작 방식은 [구성](https://www.php.net/manual/en/inst
 
 ![주문 트랜잭션 기본값](../../assets/tools/order-transactions-default.jpg)
 
-다음 **[!UICONTROL Order transactions (default?)]** 프레임은 트랜잭션을 찾습니다. `request.headers.host` name = &#39;WebTransaction/Action/checkout/onepage/success&#39;인 트랜잭션에서 가져옵니다. 주문 성공 URL이 다른 경우 이 프레임에 데이터가 없습니다.
+다음 **[!UICONTROL Order transactions (default?)]** 프레임은 트랜잭션을 찾습니다. `request.headers.host` 트랜잭션에서 이름 = 인 경우 `WebTransaction/Action/checkout/onepage/success`. 주문 성공 URL이 다른 경우 이 프레임에 데이터가 없습니다.
 
 ## [!UICONTROL Elasticsearch Index information]
 

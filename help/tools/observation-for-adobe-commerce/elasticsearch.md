@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL Elasticsearch] tab"'
+title: "다음 [!UICONTROL Elasticsearch] tab"
 description: 에 대해 알아보기 [!UICONTROL Elasticsearch] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 2427a18ea67833bc50912ef78be29d4320b5b205
+source-git-commit: b3cc9033eb9445af3edafd8c7ae9809dbb8174fc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ![클러스터 상태 요약](../../assets/tools/cluster-status-summary.jpg)
 
-선택한 기간 동안 **[!UICONTROL Cluster Status Summary]** 프레임은 [!DNL Elasticsearch] 클러스터가 통과되었습니다. 이 예에서는 선택한 기간 동안 클러스터가 녹색 상태가 한 번 되고 선택한 기간 동안 노란색 상태가 되었습니다.
+선택한 기간 동안 **[!UICONTROL Cluster Status Summary]** 프레임은 [!DNL Elasticsearch] 클러스터가 통과되었습니다. 이 예에서는 선택한 기간 동안 클러스터가 선택한 일정 동안 녹색 상태로 한 번, 노란색 상태로 있었습니다.
 
 ## [!UICONTROL Active Primary Shards]
 
 ![활성 기본 샤드](../../assets/tools/active-primary-shards.jpg)
 
-다음 **[!UICONTROL Active Primary Shards]** 프레임에는 선택한 계정의 활성 기본 샤드의 수에 따라 숫자가 다르게 표시됩니다 [!DNL Elasticsearch] 서비스.
+다음 **[!UICONTROL Active Primary Shards]** 프레임은 선택한 계정의 활성 기본 샤드의 수에 따라 다른 숫자를 표시합니다 [!DNL Elasticsearch] 서비스.
 
 From [!DNL Elasticsearch]: 최종 안내서 [2.x]:
 
@@ -33,7 +33,7 @@ From [!DNL Elasticsearch]: 최종 안내서 [2.x]:
 
 ![클러스터의 활성 공유](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]** - 모든 운영 및 복제본 섀드가 [!DNL Elasticsearch] 클러스터
+다음 **[!UICONTROL Active Shards in Cluster]** 프레임은 [!DNL Elasticsearch] 클러스터
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
@@ -45,19 +45,19 @@ From [!DNL Elasticsearch]: 최종 안내서 [2.x]:
 
 ![Elasticsearch 상태](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-다음 **[!UICONTROL Elasticsearch Status by node information]** 프레임이 [!DNL Elasticsearch] 노드별 클러스터 상태 이 옵션은 [!DNL Elasticsearch] 클러스터에서 선택한 일정 동안 어떤 상태를 반환하고 있습니다.
+다음 **[!UICONTROL Elasticsearch Status by node information]** 프레임이 [!DNL Elasticsearch] 색상 및 노드별 클러스터 상태 이것은 [!DNL Elasticsearch] 클러스터에서 선택한 일정 동안 어떤 상태를 반환하고 있습니다.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Elasticsearch 인덱스 정보](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-이 **[!UICONTROL Elasticsearch index information]** 테이블에는 인덱스 이름, 인덱스 이름, 노드, 인덱싱된 문서 수, 인덱스 상태 및 특정 시간에 대한 인덱스 크기(MB)가 표시됩니다.
+다음 **[!UICONTROL Elasticsearch index information]** 테이블에는 인덱스 이름, 인덱스 이름, 노드, 인덱싱된 문서 수, 인덱스 상태 및 특정 시간에 대한 인덱스 크기(MB)가 표시됩니다.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Elasticsearch 프로세스 CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-다음 **[!UICONTROL Elasticsearch process CPU %]** 프레임은 프로세스 CPU%를 [!DNL Elasticsearch] 선택한 기간에 대해 처리합니다.
+다음 **[!UICONTROL Elasticsearch process CPU %]** 프레임은 프로세스 CPU 비율을 [!DNL Elasticsearch] 선택한 기간에 대해 처리합니다.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
@@ -81,7 +81,7 @@ From [!DNL Elasticsearch]: 최종 안내서 [2.x]:
 
 ![Elasticsearch 오류](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
-다음 **[!UICONTROL Elasticsearch Errors]** 프레임에는 오류가 표시됩니다 [!DNL Elasticsearch] 공간이 부족한 것처럼 모든 섀드가 실패하는 경우, 검색에 매개 변수 문제가 있는 경우 버전 오류 및 모든 노드를 사용할 수 없는 경우 노랑에서 빨간색 상태로 전환하십시오.
+다음 **[!UICONTROL Elasticsearch Errors]** 프레임은 오류를 표시합니다. [!DNL Elasticsearch] 공간이 부족한 것처럼 모든 섀드가 실패하는 경우, 검색에 매개 변수 문제가 있는 경우 버전 오류 및 모든 노드를 사용할 수 없는 경우 노랑에서 빨간색 상태로 전환하십시오.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 

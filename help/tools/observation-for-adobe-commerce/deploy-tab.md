@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL Deploy] tab"'
+title: "다음 [!UICONTROL Deploy] tab"
 description: 에 대해 알아보기 [!UICONTROL Deploy] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 다음 **[!UICONTROL Deploy Log Detail]** 프레임은 선택한 기간 동안 발생한 배포 로그 메시지 요약 정보를 보여줍니다. 프레임이 배포 로그에서 다음 문자열에 대한 구문 분석을 수행합니다.
 
-* &#39;%NOTICE: 배포를 시작합니다.%&#39;) &#39;start_play&#39;
+* &#39;%알림: 배포를 시작합니다.%&#39;) &#39;start_play&#39;
 * &#39;%정보: 시나리오 시작: scenario/deploy.xml%&#39;) as &#39;start_scenario&#39;
 * &#39;%알림: &#39;strt_predply&#39;로 &#39;사전 배포%&#39; 시작
 * &#39;% 정보: 패치 로그 파일%)을 &#39;rstr_ptch_log&#39;로 복원

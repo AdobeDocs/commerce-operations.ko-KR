@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL Redis] tab"'
+title: "다음 [!UICONTROL Redis] tab"
 description: 에 대해 알아보기 [!UICONTROL Redis] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: f4379d0b89a6ea6d2f2a5a02c505581d4d54708f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![Redis 노드 요약](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-다음 **[!UICONTROL Redis Node summary]** 는 환경에 있는 모든 노드를 포함합니다. 이 예에는 공유 스테이징의 노드가 포함되어 있습니다. 프로덕션에 운영 및 보조 노드 1개와 스테이징에 대한 보조 노드 2개가 있습니다.
+다음 **[!UICONTROL Redis Node summary]** 는 환경에 있는 모든 노드를 포함합니다. 위의 예에는 공유 스테이징을 위한 노드가 포함되어 있습니다. 프로덕션에 운영 및 보조 노드 1개와 스테이징에 대한 보조 노드 2개가 있습니다.
 
 ## [!UICONTROL Redis node detail]
 
@@ -56,10 +56,10 @@ ht-degree: 0%
 
 ![마지막 db 저장 이후 변경 내용 수정](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] 는 메모리 거주자이며 정보를 저장소에 저장합니다. 다음 **[!UICONTROL Redis changes since last db save]** 프레임은 마지막 데이터베이스를 저장소에 저장한 후 발생한 메모리 변경 횟수를 나타냅니다. [이 정보](https://redis.io/docs/manual/persistence/) 설명 [!DNL Redis's] 지속성.
+[!DNL Redis] 는 메모리 거주자이며 정보를 저장소에 저장합니다. 다음 **[!UICONTROL Redis changes since last db save]** 프레임은 마지막 데이터베이스를 저장소에 저장한 후 발생한 메모리 변경 횟수를 나타냅니다. 을(를) 참조하십시오. [Redis 지속성](https://redis.io/docs/manual/persistence/) 추가 설명 [!DNL Redis's] 지속성.
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![로그에서 Redis 동기화](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-다음 **[!UICONTROL Redis synchronization from Log]** 프레임은 [!DNL Redis] 동기화 문제로 인해 발생하는 동기화 또는 오류 자세한 내용은 [Redis 설명서](https://redis.io/docs/).
+다음 **[!UICONTROL Redis synchronization from Log]** 프레임은 [!DNL Redis] 동기화 문제로 인해 발생하는 동기화 또는 오류 자세한 내용은 [!DNL Redis]를 참조하려면 [[!DNL Redis] 설명서](https://redis.io/docs/).

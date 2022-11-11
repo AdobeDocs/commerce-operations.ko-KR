@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL MySQL] tab"'
+title: "다음 [!UICONTROL MySQL] tab"
 description: 에 대해 알아보기 [!UICONTROL MySQL] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![노드별 MySQL% 사용 가능한 스토리지](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또는 `tmpdir` 공간이 부족합니다. 기본값 `tmpdir` (MySQL 설정)은 `/tmp`. 이 프레임은 `/, /tmp` ( 별도의 마운트 로 정의된 경우) 및 `/data/mysql` 사용 가능한 스토리지의 비율(%)입니다. MySQL 버전 5.7(MariaDB 버전 10.2)부터 압축되지 않은 tmp 테이블은 의 tmp 테이블스페이스에 기록됩니다 `/data/mysql` 디렉터리(ibtmp1)를 클릭합니다. 이 파일은 기본적으로 제한 없이 자동으로 확장됩니다. 테이블스페이스이므로 크기가 줄어들지 않고 MySQL이 다시 시작될 때 12MB로 재설정됩니다.
+MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또는 `tmpdir` 공간이 부족합니다. 기본값 `tmpdir` (MySQL 설정)은 `/tmp`. 다음 **[!UICONTROL MySQL% free storage by node]** 프레임에서 `/, /tmp` ( 별도의 마운트 로 정의된 경우) 및 `/data/mysql` 사용 가능한 스토리지의 비율입니다. MySQL 버전 5.7(MariaDB 버전 10.2)부터 압축되지 않음 `tmp` 표는 `tmp` 의 테이블스페이스 `/data/mysql` 디렉터리(ibtmp1)를 클릭합니다. 이 파일은 기본적으로 제한 없이 자동으로 확장됩니다. 테이블스페이스이므로 크기가 줄어들지 않고 MySQL이 다시 시작될 때 12MB로 재설정됩니다.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -38,7 +38,7 @@ MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또�
 
 ![MySQL 종료 및 시작](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-다음 **[!UICONTROL MySQL shutdowns and starts]** 프레임은 노드가 종료될 때를 감지합니다. [!DNL Galera] 노드는 제거되고 자동으로 제거됩니다 [!DNL Galera] 노드 아래에 있어야 합니다. 이렇게 하면 일반적으로 MySQL 서비스가 다시 시작됩니다.
+다음 **[!UICONTROL MySQL shutdowns and starts]** 프레임은 노드가 종료될 때를 감지합니다. 다음 [!DNL Galera] 노드는 제거되고 자동으로 제거됩니다 [!DNL Galera] 노드 아래에 있어야 합니다. 이렇게 하면 일반적으로 MySQL 서비스가 다시 시작됩니다.
 
 ## [!UICONTROL Galera log]
 
@@ -55,7 +55,7 @@ MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또�
 * &#39;%members = 2/3(join/total%&#39;) as&#39;2of3&#39;
 * &#39;%members = 2/2%&#39;) as &#39;2of2&#39;
 * &#39;%members = 1/2%&#39;) as &#39;1of2&#39;
-* &#39;%members = 1/3%&#39;) &#39;1of3&#39;
+* &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;) &#39;1of1&#39;
 * &#39;%\[참고\] /usr/sbin/myqld(myqld 10).%&#39;) as&#39;sql_restart&#39;
 * &#39;%Quorum: &#39;no_node_count&#39;로서 완료 상태:%&#39;가 있는 노드가 없음
@@ -114,7 +114,7 @@ MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또�
 
 ![크론 테이블 변경](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-다음 **[!UICONTROL Cron table change]** 프레임에서 &quot;cron 작업에 대한 잠금을 가져올 수 없음:&quot; 오류 메시지와 함께, `cron_schedule` 테이블. 만약 `cron_schedule` 테이블이 잠겼습니다(예: `DELETE` 쿼리가 실행되고 있습니다.) 다른 함수가 실행되지 않도록 차단됩니다.
+다음 **[!UICONTROL Cron table change]** 프레임은 특정 PHP 메모리 오류 및 그와 관련된 잠금과 함께 &quot;cron 작업에 대한 잠금을 가져올 수 없습니다.&quot; 오류 메시지를 찾습니다 `cron_schedule` 테이블. 만약 `cron_schedule` 테이블이 잠겼습니다(예: `DELETE` 쿼리가 실행되고 있습니다.) 다른 함수가 실행되지 않도록 차단됩니다.
 
 ## [!UICONTROL Deadlocks]
 
@@ -198,7 +198,7 @@ MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또�
 
 ![데이터베이스 오류](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-다음 **[!UICONTROL Database Errors]** 프레임은 다양한 데이터베이스를 표시합니다 [경고 및 오류](https://mariadb.com/kb/en/mariadb-error-codes/).
+다음 **[!UICONTROL Database Errors]** 프레임은 다양한 데이터베이스를 표시합니다 [경고 및 오류](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%임시 테이블에 할당된 메모리 크기가 &#39;temp_tbl_buff_pool&#39;으로 innodb_buffer_pool_size%&#39;의 20%를 넘습니다.
 * &#39;%\[오류\] WSREP: rbr write fail%&#39;) &#39;rbr_write_fail&#39;
@@ -225,9 +225,9 @@ MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또�
 * &#39;%SQLSTATE[HY000]: 일반 오류: (2014%) &#39;sql_2014&#39;)
 * &#39;%1927 연결이 &#39;%&#39;)(으)로 &#39;sql_1927&#39;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
-* &#39;&#39;%[참고] WSREP: 메모리 맵을 디스크에 플러싱..%&#39;) &#39;mem_map_flush&#39;
+* &quot;%[참고] WSREP: 메모리 맵을 디스크에 플러싱..%&#39;) &#39;mem_map_flush&#39;
 * &#39;%Internal MariaDB 오류 코드: 1146%) 로서의 &#39;sql_1146&#39;
-* &#39;%Internal MariaDB 오류 코드: &#39;sql_1062&#39;(으)로 1062%) ・ &#39;%1062 [경고] InnoDB:%) as &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB 오류 코드: 1062%&#39;) as &#39;sql_1062&#39; * &#39;%1062 [경고] InnoDB:%) as &#39;sql_1062_w&#39;
 * &#39;%Internal MariaDB 오류 코드: 1064%) 로서의 &#39;sql_1064&#39;
 * &#39;%InnoDB: &#39;assertion_err&#39;(% 파일의 검증 실패)
 * &#39;%mysqld_safe 현재 실행 중인 프로세스 수: 0%&#39;) &#39;mysql_oom&#39;
