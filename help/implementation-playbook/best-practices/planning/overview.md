@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트의 계획 단계에 대한 구현 모�
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ ht-degree: 0%
 
 ## **판매 및 마케팅**
 
-- [제품 장바구니 제한에 대한 &#x200B; 우수 사례](product-cart.md)
+- [제품 장바구니 제한에 대한 모범 사례](product-cart.md)
 - [프로모션 구성 우수 사례](product-cart-promotions.md)
 
 ## **프로젝트 범위 지정**
 
 - [파트너 문제 제기](partner-escalation.md)
+- [결제 스토리지 처리](payment-processing-storage.md)
 
 ## **구매 확장**
 
-- [Adobe Commerce에서 타사 확장을 사용하는 &#x200B; 우수 사례](extensions.md)
+- [Adobe Commerce에서 타사 확장을 사용하는 우수 사례](extensions.md)
