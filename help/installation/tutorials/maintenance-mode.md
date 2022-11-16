@@ -1,9 +1,9 @@
 ---
 title: 유지 관리 모드 활성화 또는 비활성화
 description: 다음 단계에 따라 유지 관리를 위해 Adobe Commerce 또는 Magento Open Source 배포이 다운될 때 고객이 보게 되는 내용을 사용자 지정합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 
 ## 다중 저장소 설정
 
-각각 다른 레이아웃과 현지화된 컨텐츠가 있는 여러 스토어를 설정하려면 각 스토어마다 스킨을 만들어 `pub/errors/{name}` 여기서 `{name}` 는 스토어 코드입니다. 동일한 인스턴스를 사용하여 스토어와 웹 사이트를 구분하려면 를 사용하십시오 `pub/errors/{type}-{name}` 여기서 `{type}` 다음 중 하나입니다. `store` 또는 `website` 및 가 `MAGE_RUN_TYPE` ( 서버 구성에 있음)을 참조하십시오.
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-다른 옵션은 를 전달하는 것입니다 `$_GET['skin']` 매개 변수를 사용하십시오. 이 메서드는 서버에 특정 구성이 필요합니다.
+각각 다른 레이아웃과 현지화된 컨텐츠가 있는 여러 저장소를 설정하려면 다음을 전달합니다 `$_GET['skin']` 매개 변수를 사용하십시오.
 
 다음 예에서는 `503` 오류 템플릿 파일 입력. 현지화된 콘텐츠가 필요합니다.
 
