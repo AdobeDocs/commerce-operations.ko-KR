@@ -1,7 +1,7 @@
 ---
 title: env.php 참조
 description: env.php 파일의 값 목록을 참조하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -185,7 +185,7 @@ If `queue/default_connection` 시스템에 지정되어 있습니다. `env.php` 
 
 ## 디렉토리
 
-웹 서버가 `/pub` 디렉토리 [향상된 보안][change-docroot-to-pub].
+웹 서버가 `/pub` 디렉토리 [향상된 보안](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ If `queue/default_connection` 시스템에 지정되어 있습니다. `env.php` 
 
 공급자 잠금 설정은 `lock` 노드 아래에 있어야 합니다.
 
-추가 정보 [공급자 구성 잠금][lock-provider-config].
+추가 정보 [공급자 구성 잠금](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ If `queue/default_connection` 시스템에 지정되어 있습니다. `env.php` 
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/

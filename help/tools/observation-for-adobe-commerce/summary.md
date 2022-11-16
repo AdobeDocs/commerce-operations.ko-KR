@@ -1,9 +1,9 @@
 ---
 title: "다음 [!UICONTROL Summary] tab"
 description: 에 대해 알아보기 [!UICONTROL Summary] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 808018aca0630f725eebdd279b9314e2ee80eccc
+source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-만약 **[!UICONTROL CPU Usage]** 프레임은 비어 있으며, 이는 [!DNL New Relic] 이 활성화되어 있지 않습니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro인 경우 [지원 티켓](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 다음을 수행해야 합니다. [!DNL New Relic Infrastructure] 활성화되었습니다.
+만약 **[!UICONTROL CPU Usage]** 프레임은 비어 있으며, 이는 [!DNL New Relic] 이 활성화되어 있지 않습니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro인 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 다음을 수행해야 합니다. [!DNL New Relic Infrastructure] 활성화되었습니다.
 
 ## [!UICONTROL Average Response Time]
 
