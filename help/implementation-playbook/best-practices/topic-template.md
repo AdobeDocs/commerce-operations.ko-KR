@@ -2,41 +2,48 @@
 title: 우수 사례 주제 제목
 description: 방법 알아보기..
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: b74279181bbb90713cb3c15832c744e3698b960a
+source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 
-<!--
+<!-- Template Instructions: 
 
-Remove hide settings for best practices topics. These values are to hide this template from the TOC and search indexing.
+When you create a new best practices topic from this template, remove the hide metadata tags. These values hide this template from the TOC and search indexing.
 
 Metadata values configured in ExL:
 Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
 
-Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml 
-
-Hide values are set to yes for the template so it is not included in ExL. You can remove those tags for best practices topics you add. -->
+Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml  -->
 
 # 제목
 
-<!--Add one or two sentences to summarize the overall contents of this best practice topic-->
+<!--Template instruction:  Add one or two sentences to summarize the overall contents of this best practice topic-->
 
 ## 영향을 받는 제품 및 버전
 
-<!-- When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
+<!-- Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
 
-<!--Add details for the product and versions where the best practice info is relevant. Below are examples, adjust as needed. If info applies specifically to B2B or B2C, include that information -->
+<!--Template instruction: Add details for the product and versions where the best practice info is relevant. Below are two examples, adjust and delete unneeded info per best practice requirements. If info applies specifically to B2B or B2C, include that information -->
 
-Adobe Commerce 온프레미스, [모든 지원 버전](../../release/versions.md) &lt;!>- 컨텐츠가 특정 버전에만 적용되는 경우 대신 [모든 지원 버전]> 클라우드 인프라의 Adobe Commerce
-<!-- Business type: B2C and B2B -- specify only if needed?)-->
+<!-- Example 1: -->
+
+[지원되는 모든 버전](../../../release/versions.md) 다음 중 하나를 수행합니다.
+
+- Adobe Commerce on cloud 인프라
+- Adobe Commerce 온-프레미스
+
+<!-- Example 2: -->
+
+Adobe Commerce 버전 2.3.4 이하 및 MariaDB 버전 10.0 이전 버전을 사용하는 Adobe Commerce on cloud infrastructure
+
+<!-- Business type: B2C and B2B -- specify only if needed/)-->
 
 ## 헤더 ...
 
@@ -52,3 +59,5 @@ Adobe Commerce 온프레미스, [모든 지원 버전](../../release/versions.md
 
 - 항목 1
 - 항목 2
+
+<!-- Template instruction:  Remove all template comments and instructions from the best practices article before committing your changes. -->
