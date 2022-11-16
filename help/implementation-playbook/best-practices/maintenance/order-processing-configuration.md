@@ -4,9 +4,9 @@ description: 체크아웃 및 주문 처리 성능을 개선하기 위한 구성
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: fbeaa486d32d77135ab97f4819ef4df9e64c6471
+source-git-commit: fb30b18c9b9f6a9f538189eeafda9ee7a29d436c
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]**- 많은 수의 주문이 동시에 배치될 때 발생할 수 있는 데이터베이스 잠금 및 느린 처리를 방지하려면 이 옵션을 활성화합니다.
 - **[!UICONTROL Asynchronous email notifications]**- 이 옵션을 사용하면 즉시 보내는 대신 지정된 간격으로 체크아웃 및 주문 처리 이메일 알림을 전송하여 체크아웃 성능을 빠르게 향상시킬 수 있습니다.
-- **[!UICONTROL Enable Archiving]**—주문, 송장, 출하 및 대변 메모 그리드의 성능을 향상시키고 작업 공간에 불필요한 정보를 보관하여 현재 업무에 집중할 수 있도록 이 옵션을 활성화합니다. 자세한 내용은 [보관 사용](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**—주문, 송장, 선적 및 대변 메모의 성능을 개선하고, 작업 공간에 불필요한 정보를 보관하여 현재 업무에 집중할 수 있도록 이 옵션을 활성화합니다. 자세한 내용은 [보관 사용](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## 영향을 받는 제품 및 버전
 
