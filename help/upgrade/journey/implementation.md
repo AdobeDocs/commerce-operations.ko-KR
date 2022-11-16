@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 구현
 description: Adobe Commerce 및 Magento Open Source 프로젝트를 위한 업그레이드 구현 단계의 다양한 방법에 대해 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
    |-----------------|-----------------|------------|----------------------------------------------------------|
    | PHP | 7.2.33 | 8.1 |  |
    | 레디스 | 5.05 | 6.0 |  |
-   | RabbitMQ | 3.7 | 3.8 | 현재 사용 중이지 않지만 사용하는 것을 고려해야 합니다 |
+   | [!DNL RabbitMQ] | 3.7 | 3.8 | 현재 사용 중이지 않지만 사용하는 것을 고려해야 합니다 |
    | MariaDB(클라우드) | 10.2.33 | 10.4 |  |
    | MySQL | 8.0 |  |  |
    | 작성기 | 1.9.2 | 2.0 |  |

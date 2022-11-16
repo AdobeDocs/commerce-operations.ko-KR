@@ -2,9 +2,9 @@
 title: 클라우드 인프라 개요
 description: 클라우드 인프라에서 Adobe Commerce에 대해 알아봅니다.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Adobe Commerce의 장점을 현실화하는 소프트웨어를 살펴보자.
 
 - Git은 리포지토리의 사용자 코드입니다. 자동 빌드 및 배포를 통해 로컬 분기, 편리한 스테이징 영역 및 여러 워크플로우를 통해 효율적인 개발 및 지속적인 배포를 수행할 수 있습니다.
 
-- Platform-as-a-Service(PaaS)는 PHP, MySQL, Redis, RabbitMQ 및 Elasticsearch 기술을 포함하는 미리 제공된 인프라를 제공합니다.
+- Platform-as-a-Service(PaaS)는 PHP, MySQL, Redis, [!DNL RabbitMQ], 및 Elasticsearch 기술.
 
 - AWS 또는 Azure의 클라우드 호스팅은 온라인 판매 및 소매업을 위한 확장 가능하고 안전한 환경을 제공하는 기본 IaaS(Infrastructure-as-a-Service)를 지원합니다.

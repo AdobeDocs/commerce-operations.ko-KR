@@ -1,9 +1,9 @@
 ---
 title: 고급 온-프레미스 설치
 description: 소유하는 인프라에 대한 Adobe Commerce 또는 Magento Open Source에 대한 고급 설치 시나리오에 대해 알아봅니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
@@ -170,16 +170,16 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--elasticsearch-username` | 검색 엔진을 인증할 사용자 ID입니다 | 아니요, 인증을 사용할 수 없는 경우 |
 | `--elasticsearch-password` | 검색 엔진 인증을 위한 암호 | 아니요, 인증을 사용할 수 없는 경우 |
 
-**RabbitMQ 구성 옵션:**
+**[!DNL RabbitMQ]구성 옵션:**
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
-| `--amqp-host` | 를 사용하지 마십시오 `--amqp` RabbitMQ 설치를 이미 설정하지 않은 경우 옵션을 선택합니다. RabbitMQ 설치 및 구성에 대한 자세한 내용은 RabbitMQ 설치 를 참조하십시오.<br><br>RabbitMQ가 설치된 호스트 이름입니다. | 아니요 |
-| `--amqp-port` | RabbitMQ에 연결하는 데 사용할 포트입니다. 기본값은 5672입니다. | 아니요 |
-| `--amqp-user` | RabbitMQ에 연결하는 사용자 이름입니다. 기본 사용자를 사용하지 마십시오 `guest`. | 아니요 |
-| `--amqp-password` | RabbitMQ에 연결하는 암호입니다. 기본 암호를 사용하지 마십시오 `guest`. | 아니요 |
-| `--amqp-virtualhost` | RabbitMQ에 연결하는 가상 호스트입니다. 기본값은 입니다. `/`. | 아니요 |
-| `--amqp-ssl` | RabbitMQ에 연결할지 여부를 나타냅니다. 기본값은 입니다. `false`. RabbitMQ용 SSL 설정에 대한 자세한 내용은 RabbitMQ 를 참조하십시오. | 아니요 |
+| `--amqp-host` | 를 사용하지 마십시오 `--amqp` 설치 설정을 이미 설정하지 않은 경우 옵션 [!DNL RabbitMQ]. 자세한 내용은 [!DNL RabbitMQ] 설치 및 구성에 대한 자세한 정보 [!DNL RabbitMQ].<br><br>호스트 이름 [!DNL RabbitMQ] 가 설치되어 있습니다. | 아니요 |
+| `--amqp-port` | 연결하는 데 사용할 포트 [!DNL RabbitMQ]. 기본값은 5672입니다. | 아니요 |
+| `--amqp-user` | 연결하는 사용자 이름 [!DNL RabbitMQ]. 기본 사용자를 사용하지 마십시오 `guest`. | 아니요 |
+| `--amqp-password` | 연결하는 데 사용할 암호 [!DNL RabbitMQ]. 기본 암호를 사용하지 마십시오 `guest`. | 아니요 |
+| `--amqp-virtualhost` | 연결할 가상 호스트 [!DNL RabbitMQ]. 기본값은 입니다. `/`. | 아니요 |
+| `--amqp-ssl` | 연결 여부를 나타냅니다. [!DNL RabbitMQ]. 기본값은 입니다. `false`. 자세한 내용은 [!DNL RabbitMQ] 용 SSL 설정에 대한 정보 [!DNL RabbitMQ]. | 아니요 |
 | `--consumers-wait-for-messages` | 소비자가 큐에서 메시지를 기다려야 합니까? 1 - 예, 0 - 아니오 | 아니요 |
 
 **구성 잠금 옵션:**

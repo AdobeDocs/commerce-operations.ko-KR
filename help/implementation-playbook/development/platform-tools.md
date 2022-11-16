@@ -2,9 +2,9 @@
 title: 플랫폼 도구
 description: Adobe Commerce 구현을 위한 권장 플랫폼 도구를 선택합니다.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 | 웹 서버 | Nginx, Apache |
 | 캐싱 서비스 | 레디스, 바니쉬 |
 | 검색 서비스 | Elasticsearch |
-| 메시지 큐 서비스 | RabbitMQ |
+| 메시지 큐 서비스 | [!DNL RabbitMQ] |
 | 보안 검사 도구 | 소나큐, ZAP |
 
 ## 데이터베이스
@@ -61,7 +61,7 @@ Adobe Commerce 버전 2.4 이상의 경우 Elasticsearch을 카탈로그 검색 
 
 ## 메시지 큐 서비스
 
-메시지 큐는 메시지의 발신자와 수신자가 서로 연락하지 않는 비동기 통신 메커니즘을 제공합니다. RabbitMQ는 신뢰할 수 있고, 가용성이 높고, 확장 가능하며, 휴대용 메시징 시스템을 제공하는 오픈 소스 메시지 브로커입니다.
+메시지 큐는 메시지의 발신자와 수신자가 서로 연락하지 않는 비동기 통신 메커니즘을 제공합니다. [!DNL RabbitMQ] 은 안정적이고 가용성이 높고 확장 가능한 휴대용 메시징 시스템을 제공하는 오픈 소스 메시지 브로커입니다.
 
 ## 보안 도구
 

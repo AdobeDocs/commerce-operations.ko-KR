@@ -1,9 +1,9 @@
 ---
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 도구 사용, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
-source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    - [경고 탭](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF 탭](observation-for-adobe-commerce/waf-tab.md)
    - [CDN 탭](observation-for-adobe-commerce/cdn-tab.md)
-   - [RabbitMQ 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [다음 [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [크론 탭](observation-for-adobe-commerce/cron-tab.md)
    - [색인 지정 탭](observation-for-adobe-commerce/indexing-tab.md)
    - [QuickView 탭](observation-for-adobe-commerce/oac-quickview-tab.md)

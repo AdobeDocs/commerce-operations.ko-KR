@@ -1,9 +1,9 @@
 ---
 title: Amazon 메시지 큐 설정
 description: AWS MQ 서비스를 사용하도록 Commerce를 구성하는 방법을 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-에 대한 기본 구성 `InventoryCatalog` rabbitMQ에 메시지를 게시하지 않습니다. 기본 동작은 동일한 사용자 스레드에서 작업을 수행하는 것입니다. 다음 `InventoryCatalog` 메시지를 게시하려면 다음을 활성화합니다 `cataloginventory/bulk_operations/async`. 관리자에서 로 이동합니다. **스토어** > 구성 > **카탈로그** > **인벤토리** > 관리 일괄 작업 및 설정  `Run asynchronously`to **예**.
+에 대한 기본 구성 `InventoryCatalog` 에 메시지를 게시하지 않음 [!DNL RabbitMQ]; 기본 동작은 동일한 사용자 스레드에서 작업을 수행하는 것입니다. 다음 `InventoryCatalog` 메시지를 게시하려면 다음을 활성화합니다 `cataloginventory/bulk_operations/async`. 관리자에서 로 이동합니다. **스토어** > 구성 > **카탈로그** > **인벤토리** > 관리 일괄 작업 및 설정  `Run asynchronously`to **예**.
 
 ## 메시지 큐 테스트
 
-Commerce에서 RabbitMQ로 메시지 전송을 테스트하려면 다음을 수행하십시오.
+Commerce에서 로 보내는 메시지를 테스트하려면 [!DNL RabbitMQ]:
 
-1. AWS의 RabbitMQ 웹 콘솔에 로그인하여 큐를 모니터링합니다.
+1. 에 로그인합니다. [!DNL RabbitMQ] 큐를 모니터링하기 위한 AWS의 웹 콘솔.
 1. 관리자에서 제품을 만듭니다.
 1. 인벤토리 소스를 만듭니다.
 1. 활성화 **스토어** > 구성 > **카탈로그** > **인벤토리** > 관리 일괄 작업 > 비동기식으로 실행.
 1. 이동 **카탈로그** > 제품. 그리드에서 위에서 만든 제품을 선택하고 **재고 출처 지정**.
 1. 클릭 **저장 및 닫기** 프로세스를 완료합니다.
 
-   이제 RabbitMQ 웹 콘솔에 메시지가 표시됩니다.
+   이제 다음에 메시지가 표시됩니다 [!DNL RabbitMQ] 웹 콘솔.
 
 1. 시작 `async.operations.all` 메시지 큐 소비자.
 
@@ -86,5 +86,5 @@ Commerce에서 RabbitMQ로 메시지 전송을 테스트하려면 다음을 수�
    bin/magento queue:consumers:start async.operations.all
    ```
 
-이제 RabbitMQ 웹 콘솔에서 큐에 있는 메시지가 처리됩니다.
+이제 큐에 있는 메시지가 [!DNL RabbitMQ] 웹 콘솔.
 관리자의 제품에서 재고 소스가 변경되었는지 확인합니다.

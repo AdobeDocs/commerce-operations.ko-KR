@@ -1,22 +1,22 @@
 ---
-title: '"다음 [!UICONTROL RabbitMQ] tab"'
-description: 에 대해 알아보기 [!UICONTROL RabbitMQ] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+title: "다음 [!UICONTROL [!DNL RabbitMQ]] tab"
+description: 에 대해 알아보기 [!UICONTROL [!DNL RabbitMQ]] 탭 [!DNL Observation for Adobe Commerce].
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# 다음 [!UICONTROL RabbitMQ] 탭
+# 다음 [!UICONTROL [!DNL RabbitMQ]] 탭
 
-다음 **[!UICONTROL RabbitMQ]** 탭에는 [!DNL RabbitMQ] 신호.
+다음 **[!UICONTROL [!DNL RabbitMQ]]** 탭에는 [!DNL RabbitMQ] 신호.
 
-## [!UICONTROL RabbitMQ Infrastructure events]
+## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![RabbitMQ 인프라 이벤트](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] 인프라 이벤트](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Infrastructure events]** 프레임은 [!DNL RabbitMQ] 선택한 기간에 발생한 시간:
+다음 **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** 프레임은 [!DNL RabbitMQ] 선택한 기간에 발생한 시간:
 
 * %응답 [오류] 노드 [rabbit@host1]: &#39;unexpected_resp_node1&#39;로서 &#39;from%&#39;에 예기치 않은 http 응답
 * &#39;%응답 [오류] 노드 [rabbit@host2]: &#39;unexpected_resp_node2&#39;로서 &#39;from%&#39;에서 예기치 않은 http 응답
@@ -37,18 +37,18 @@ ht-degree: 0%
 * &#39;%N이(가) 수정됨: version/management%&#39;) as &#39;rmq_entity_modified_ver_mgt&#39;
 * &#39;%N이(가) 수정됨: version/management%&#39;) as &#39;rmq_entity_modified_ver_mgt&#39;
 
-## [!UICONTROL RabbitMQ service start/stop signals]
+## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![RabbitMQ 서비스 시작/중지 신호](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] 서비스 시작/중지 신호](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 이 프레임은 [!DNL RabbitMQ] 선택한 기간 동안 발생한 서비스 시작/중지 신호:
 
-* &#39;%RabbitMQ를 중지하도록 요청..%&#39;) &#39;rabbitmq_stop&#39; 사용
-* &#39;%RabbitMQ%&#39;)을 &#39;rabbitq_start&#39;로 시작하는 중
+* &#39;%[!DNL RabbitMQ] 정지 요청...%&#39;) &#39;rabbitmq_stop&#39; 사용
+* &#39;%시작 중 [!DNL RabbitMQ]%&#39;) &#39;rabbitmq_start&#39;
 
-## [!UICONTROL RabbitMQ errors]
+## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![RabbitMQ 오류](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] 오류](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
 이 프레임은 [!DNL RabbitMQ] 선택한 일정 동안 발생한 오류:
 
@@ -58,9 +58,9 @@ ht-degree: 0%
 * &#39;%허용되지 않는 노드%&#39;의 연결 시도(&#39;disallowed_node&#39;)
 * &#39;%AMQP 연결%&#39;를 &#39;rmq_err_amqp_conn&#39;으로 닫는 중
 
-## [!UICONTROL RabbitMQ node status]
+## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![RabbitMQ 노드 상태](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] 노드 상태](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * &#39;%rabbit on node rabbit@host1 down%&#39;) as &#39;rmq_node1_down&#39;
 * &#39;%rabbit on node rabbit@host2 down%&#39;) as &#39;rmq_node2_down&#39;
@@ -69,47 +69,47 @@ ht-degree: 0%
 * &#39;%rabbit on node rabbit@host2 up%&#39;) as &#39;rmq_node2_up&#39;
 * &#39;%rabbit on node rabbit@host3 up%&#39;) as &#39;rmq_node3_up&#39;
 
-## [!UICONTROL RabbitMQ Message High-Level Summary status by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![RabbitMQ 메시지 대기열별 상위 수준 요약 상태](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] 대기열별 메시지 개요 상태](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** 그래프에는 [!DNL RabbitMQ] 선택한 일정의 큐입니다.
+다음 **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** 그래프에는 [!DNL RabbitMQ] 선택한 일정의 큐입니다.
 
-## [!UICONTROL RabbitMQ Message Detail Summary]
+## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![RabbitMQ 메시지 세부 정보 요약](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+![[!DNL RabbitMQ] 메시지 세부 정보 요약](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
 * &#39;%report.ERROR: Cron Job consumer_runner에 오류가 있습니다. NOT_FOUND - no queue%&#39;) as &#39;queue_err&#39;
 * &#39;%report.ERROR: Cron Job consumer_runner에 오류가 있습니다. NOT_FOUND - no queue%&#39;) as &#39;queue_err&#39;
 * &#39;%auth%&#39;(으)로 인증되고 액세스 권한을 부여함)
 * &#39;%AMQP 연결%&#39;을(를) &#39;close_conn&#39;으로 닫는 중
 
-## [!UICONTROL RabbitMQ Queue Consumption MB]
+## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![RabbitMQ 큐 사용 MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] 큐 사용량 MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Queue Consumption MB]** 그래프는 각 사용자가 사용한 바이트 수를 보여줍니다. [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
+다음 **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** 그래프는 각 사용자가 사용한 바이트 수를 보여줍니다. [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
 
-## [!UICONTROL RabbitMQ Published Messages by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![RabbitMQ Published Messages by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] 큐에 게시된 메시지](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Published Messages by Queue]** 그래프는 각 사용자가 사용한 바이트 수를 보여줍니다. [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
+다음 **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** 그래프는 각 사용자가 사용한 바이트 수를 보여줍니다. [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
 
-## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![RabbitMQ가 게시한 큐별 메시지 처리량](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] 대기열별 게시된 메시지 처리량](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** 그래프에는 게시된 메시지의 각 초당 평균 수를 보여줍니다 [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
+다음 **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** 그래프에는 게시된 메시지의 각 초당 평균 수를 보여줍니다 [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
 
-## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![큐별 RabbitMQ 총 메시지 처리량](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] 대기열별 총 메시지 처리량](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** 그래프는 각 초당 평균 총 메시지 수를 보여줍니다 [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
+다음 **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** 그래프는 각 초당 평균 총 메시지 수를 보여줍니다 [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
 
-## [!UICONTROL RabbitMQ Consumers by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![큐별 RabbitMQ 소비자](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] 큐별 소비자](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-다음 **[!UICONTROL RabbitMQ Consumers by Queue]** 그래프에서는 각 소비자의 평균 총 소비자 수를 보여줍니다 [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.
+다음 **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** 그래프에서는 각 소비자의 평균 총 소비자 수를 보여줍니다 [!DNL RabbitMQ] 선택한 일정 동안 대기합니다.

@@ -2,9 +2,9 @@
 title: 플랫폼 개발 원칙
 description: Adobe Commerce 작업 시 기본 플랫폼 개발 원칙을 이해합니다.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ Adobe Commerce on cloud 인프라는 Adobe Commerce 소프트웨어를 위한 �
 
 ![Adobe Commerce 구성 요소 인포그래픽](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on cloud infrastructure는 PHP, MySQL, Redis, RabbitMQ 및 Elasticsearch 기술을 포함하는 미리 제공된 인프라를 제공합니다. PaaS(Platform as a Service) 환경에서 코드 변경 사항이 푸시될 때마다 효율적인 개발 및 지속적인 배포를 위한 자동 빌드 및 배포 작업을 수행하는 Git 기반 워크플로우입니다. 사용자 정의 가능한 환경 구성 파일 및 도구 및 온라인 판매 및 리테일을 위한 확장 가능하고 안전한 환경을 제공하는 AWS 호스팅
+Adobe Commerce on cloud infrastructure는 PHP, MySQL, Redis, [!DNL RabbitMQ], 및 Elasticsearch 기술 PaaS(Platform as a Service) 환경에서 코드 변경 사항이 푸시될 때마다 효율적인 개발 및 지속적인 배포를 위한 자동 빌드 및 배포 작업을 수행하는 Git 기반 워크플로우입니다. 사용자 정의 가능한 환경 구성 파일 및 도구 및 온라인 판매 및 리테일을 위한 확장 가능하고 안전한 환경을 제공하는 AWS 호스팅
 
 ![Adobe Commerce 구성 요소 인포그래픽](../../assets/playbooks/cloud-tech-stack.svg)

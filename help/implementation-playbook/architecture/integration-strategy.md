@@ -2,9 +2,9 @@
 title: Adobe Commerce 통합 전략
 description: Adobe Commerce 구현을 위한 통합 전략 및 옵션을 검토하십시오.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ Adobe Commerce은 세 가지 유연한 통합 옵션을 제공합니다.
 
 ![Adobe Commerce 통합 옵션](../../assets/playbooks/integration-options.svg)
 
-보통 실시간 통합이 필요하지만 일부 시나리오에는 필요하지 않습니다. Adobe Commerce은 기본적으로 비동기 프로세스를 활성화하기 위해 메시지 버스로 RabbitMQ를 지원합니다. 이 기능은 실시간으로 교환하지 않아도 되지만, 배치 파일 교환 또는 REST 배치 데이터 프로세스 API로 업데이트하여 비동기적으로 처리하는 것이 좋습니다.
+보통 실시간 통합이 필요하지만 일부 시나리오에는 필요하지 않습니다. Adobe Commerce은 기본적으로 지원 [!DNL RabbitMQ] 는 비동기 프로세스를 활성화하기 위한 메시지 버스로서, 실시간으로 교환하지 않아도 되지만, 배치 파일 교환 또는 REST 배치 데이터 프로세스 API로 업데이트하여 비동기적으로 처리할 수 있는 일부 데이터에 대해 권장됩니다.

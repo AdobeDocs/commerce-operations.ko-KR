@@ -1,7 +1,7 @@
 ---
-source-git-commit: a3fa25993f365a85307db45ef16f68eeb12604bb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>라이브러리</td>
-    <td>이전에 videlalbilla/php-amqplib입니다.  이 라이브러리는 AMQP 프로토콜의 순수 PHP 구현입니다. RabbitMQ에 대한 테스트를 거쳤습니다.</td>
+    <td>이전에 videlalbilla/php-amqplib입니다.  이 라이브러리는 AMQP 프로토콜의 순수 PHP 구현입니다. 그것은 시험적으로 시험되었습니다 [!DNL RabbitMQ].</td>
   </tr>
   </tbody>
 </table>

@@ -2,9 +2,9 @@
 title: 성능 최적화 Recommendations
 description: 다음 권장 사항을 수행하여 Adobe Commerce 구현의 성능을 최적화합니다.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Varnish 전체 페이지 캐시 메모리 무효화는 유효하지만, 가장 �
 
 ### 메시지 큐
 
-MQF(메시지 큐 프레임워크)는 모듈이 메시지를 큐에 게시할 수 있도록 하는 시스템입니다. 또한 비동기식으로 메시지를 받는 소비자를 정의합니다. Adobe Commerce은 메시지 전송 및 수신을 위한 확장 가능한 플랫폼을 제공하는 메시징 브로커 RabbitMQ를 지원합니다.
+MQF(메시지 큐 프레임워크)는 모듈이 메시지를 큐에 게시할 수 있도록 하는 시스템입니다. 또한 비동기식으로 메시지를 받는 소비자를 정의합니다. Adobe Commerce 지원 [!DNL RabbitMQ] 메시지 전송 및 수신을 위한 확장 가능한 플랫폼을 제공하는 메시징 브로커
 
 ### 성능 테스트 및 모니터링
 
