@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: 이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용
-source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
+source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,17 @@ Adobe Commerce의 온-프레미스 설치가 있는 경우 도구를 사용하�
 
 - Bash/shell 유틸리티
 
-   - `grep`
+   - `php`
+
+   - `wget`
 
    - `awk`
 
    - `nice`
 
    - `grep`
+
+   - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
@@ -185,7 +189,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. 런처 아카이브를 압축합니다.
+   1. 런처 아카이브를 압축 해제합니다.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
