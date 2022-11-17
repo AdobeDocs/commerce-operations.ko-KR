@@ -1,7 +1,7 @@
 ---
 title: 소프트웨어 Recommendations
 description: Adobe Commerce 및 Magento Open Source 배포의 최적 성능과 관련된 권장 소프트웨어 목록을 검토합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8572cc8702d6f7e9c40b64110a9ba18aa5784f44
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -34,13 +34,15 @@ Adobe에서는 다음 소프트웨어를 [!DNL Commerce]:
 >
 >net.ipv4.tcp_tw_reuse를 활성화해도 들어오는 연결에 영향을 주지 않습니다.
 
-```terminal
+```text
 net.ipv4.tcp_tw_reuse = 1
 ```
 
 커널 매개 변수 `net.core.somaxconn` 연결을 기다리는 최대 열린 소켓 수를 제어합니다. 이 값은 1024로 안전하게 증가시킬 수 있지만 이 양을 처리하는 서버의 기능과 상관관계가 있어야 합니다. 이 커널 매개 변수를 사용하려면 다음 값을 `/etc/sysctl.conf`:
 
-`net.core.somaxconn = 1024`
+```text
+net.core.somaxconn = 1024
+```
 
 ## PHP
 
@@ -121,7 +123,9 @@ Magento Open Source 및 Adobe Commerce:
 
 모든 사람의 성공적인 실행을 보장하기 위해 [!DNL Commerce] 데이터나 코드를 디스크에 덤프하지 않고 인스턴스를 다음과 같이 메모리 제한을 설정합니다.
 
-`memory_limit=1G`
+```text
+memory_limit=1G
+```
 
 디버깅을 위해 이 값을 2G로 늘립니다.
 
