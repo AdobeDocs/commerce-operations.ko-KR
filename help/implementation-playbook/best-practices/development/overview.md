@@ -1,9 +1,9 @@
 ---
 title: 구현 개발 단계
 description: Adobe Commerce 프로젝트의 개발 단계에 대한 구현 모범 사례에 대해 알아봅니다.
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ ht-degree: 0%
 - [CSS 및 JS 파일 최적화](optimize-css-js-files.md)
 - [응답형 사이트를 위한 이미지 최적화](image-optimization.md)
 - [클라우드 인프라&#x200B;에 대한 Adobe Commerce 우수 사례 문제 해결](troubleshooting.md)
+- [데이터베이스 테이블을 수정하는 시기와 방법을 &#x200B; 알아봅니다](modifying-core-and-third-party-tables.md)
