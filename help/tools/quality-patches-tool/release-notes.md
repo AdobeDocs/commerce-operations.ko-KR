@@ -1,9 +1,9 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6)의 경우 - SEO 기반 URL이 없는 제품에 대해 생성되지 않는 문제가 해결되었습니다 *url_key* store-view 수준에서 재정의된 속성입니다.
+* **ACSD-46865** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6)의 경우 - 비동기 색인화가 활성화될 때 선적 및 대변 메모 그리드가 채워지지 않는 문제를 수정합니다.
+* **ACSD-47004** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6)의 경우 - VAT ID가 없는 청구 주소에 VAT가 적용되지 않는 문제가 수정되었습니다.
+* **ACSD-47803** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 재고 부족 구성 가능한 제품 견본이 사용 가능한 상태로 표시되는 문제를 수정합니다.
+* **ACSD-47137** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6)의 경우 - pub/media 폴더가 매우 클 때 이미지 갤러리의 로드 속도가 개선됩니다.
+* **ACSD-46770** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - *이메일 주문 확인* 이 선택 취소되어 있습니다.
+* **ACSD-47955** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6)의 경우 - GraphQL에 장바구니 할인이 올바로 표시되지 않는 문제가 수정되었습니다.
+* **ACSD-46617** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - *체크아웃을 계속합니다* 하위 합계가 구성된 것보다 큰 경우에도 버튼이 회색으로 표시됩니다 *최소 주문 금액*.
+* **ACSD-47079** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5)의 경우 - REST API POST /rest/V1/inventory/source-items를 통해 하위 제품 재고 상태가 변경될 때 복합 제품(번들, 그룹 및 구성 가능) 재고 상태가 업데이트되지 않는 문제를 해결했습니다.
+* **ACSD-47336** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 수정 사항 *문제가 발생했습니다.* 상거래 관리자에서 알림을 닫을 때 오류가 발생했습니다.
+* **ACSD-47559** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 이메일 템플릿 미리 보기 영역이 완전히 표시되지 않는 문제를 수정했습니다.
+* **ACSD-47920** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우, *게스트 체크아웃 허용* 이(가) 꺼져 있습니다.
+* 교체된 패치: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
 
@@ -316,7 +332,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 을 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
+* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 를 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce >=2.3.0 &lt;2.4.3>*) - 그룹화된 제품의 사용자 지정 재고를 저장할 때 문제가 해결되어 제품이 프론트런트에 재고가 없습니다.
 * **MDVA-36572** (*Adobe Commerce >=2.3.5 &lt;2.4.3>*) - 대변 메모 업데이트로 인해 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 경우 문제를 수정합니다.
 * **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3>*) - Admin Console에 연결할 수 없는 *리디렉션이 너무 많음* 오류가 발생했습니다.
@@ -465,7 +481,7 @@ ht-degree: 0%
 * **MDVA-31236** (*Adobe Commerce >=2.4.0 &lt;2.4.2>*) - 사용자 지정 리소스 액세스 권한이 있는 관리자가 2FA를 설정하거나 로그인할 수 없는 문제가 수정되었습니다.
 * **MDVA-30845** (*Adobe Commerce >=2.3.5 &lt;2.3.7>*) - *죄송합니다. 현재 이 주문에 사용할 수 있는 견적이 없습니다* UPS XML/USPS/DHL에 연결하지 못할 경우 오류가 표시되고 다른 배송 방법이 없습니다.
 * **MDVA-32133** (*Adobe Commerce >=2.4.0 &lt;2.4.1>*) - 특정 경우에 미디어 갤러리가 페이지 빌더에서 로드되지 않는 문제를 수정합니다.
-* **MDVA-12304** (*Adobe Commerce >=2.3.0 &lt;2.4.2>*) - 최대 쿠키 수를 50개에서 200개로 늘립니다.
+* **MDVA-12304** (*Adobe Commerce >=2.3.0*) - 최대 쿠키 수를 50개에서 200개로 늘립니다.
 * **MDVA-32632** (*Adobe Commerce >=2.3.2 &lt;2.3.5>*) - 주문이 결제 시스템에 표시되지만 Adobe Commerce에는 표시되지 않는 문제를 수정합니다.
 * **MDVA-32449** (*Adobe Commerce >=2.3.0 &lt;2.3.6> || 2.4.0 || >=2.4.1 &lt;2.4.2(B2B 확장 포함)*) - 주문 내역이 매우 느리게 로드되거나 전혀 로드되지 않는 문제를 수정합니다.
 * **MDVA-32739** (*Adobe Commerce >=2.3.0 &lt;2.4.2>*) - 비동기 이메일 알림 을 활성화하면 이전 판매 이메일이 전송되는 문제를 수정합니다.
