@@ -1,9 +1,9 @@
 ---
 title: X-Frame-Options 헤더
 description: X-Frame-Options를 사용하여 페이지 렌더링을 제어합니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 예방하려면 [클릭 추적](https://owasp.org/www-community/attacks/Clickjacking) 유용한 정보, [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) 스토어에 대한 요청의 HTTP 요청 헤더입니다.
 
-다음 `X-Frame-Options` 헤더를 사용하면 브라우저에서 페이지를 렌더링할 수 있는지 여부를 지정할 수 있습니다 `<frame>`, `<iframe>`, 또는 `<object>` 아래와 같이 변경하는 것을 의미합니다.
+다음 `X-Frame-Options` 헤더 를 사용하면 브라우저에서 페이지를 렌더링할 수 있는지 여부를 지정할 수 있습니다 `<frame>`, `<iframe>`, 또는 `<object>` 아래와 같이 변경하는 것을 의미합니다.
 
 - `DENY`: 프레임에 페이지를 표시할 수 없습니다.
 - `SAMEORIGIN`: (기본값) 페이지 자체와 동일한 원점의 프레임에만 페이지를 표시할 수 있습니다.
@@ -28,11 +28,13 @@ ht-degree: 0%
 
 ## 구현 `X-Frame-Options`
 
-값 설정 `X-Frame-Options` in `<magento_root>/app/etc/env.php`. 기본값은 다음과 같습니다.
+값 설정 `X-Frame-Options` in `<project-root>/app/etc/env.php`. 기본값은 다음과 같이 설정됩니다.
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+의 변경 사항에 대해 재배포합니다. `env.php` 적용할 파일입니다.
 
 >[!TIP]
 >
@@ -44,10 +46,8 @@ ht-degree: 0%
 
 다음 예제에서는 HTTP 프로토콜을 통해 Commerce 서버에 연결할 수 있는 모든 컴퓨터에서 실행할 수 있는 curl을 사용합니다.
 
-다음 명령을 사용합니다.
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 을(를) 찾습니다. `X-Frame-Options` 값을 지정한 경우 이해할 수 있도록 해줍니다.
