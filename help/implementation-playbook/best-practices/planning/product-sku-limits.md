@@ -4,7 +4,7 @@ description: 사이트 성능을 극대화하도록 제품 SKU(Stock Keeping Uni
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # 제품 SKU 구성에 대한 우수 사례
 
-성능을 극대화하기 위해 효과적인 제품 재고 관리 단위(SKU)에 권장되는 최대 값은 1천만 개입니다. 이 유효 제품 최대값은 다음과 같이 계산됩니다.
+성능을 극대화하기 위해 효과적인 제품 재고 관리 단위(SKU)에 권장되는 최대 값은 2억 4200만 개입니다. 이 유효 제품 최대값은 다음과 같이 계산됩니다.
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 최대 유효 SKU 수 이상을 보유하면 제품 데이터 검색이 느려지고 관리 작업을 완료하는 시간이 늘어납니다.
 
