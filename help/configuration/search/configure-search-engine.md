@@ -1,9 +1,9 @@
 ---
 title: 검색 엔진 구성
 description: Adobe Commerce 및 Magento Open Source을 사용하여 검색 엔진을 구성합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 이 섹션에서는 Adobe Commerce 및 Magento Open Source을 사용하여 Elasticsearch 또는 OpenSearch를 테스트하도록 선택해야 하는 최소 설정을 설명합니다. 버전 2.4.4 및 2.4.3-p2의 경우, 모든 필드에 레이블이 지정됨 **Elasticsearch** OpenSearch에도 적용됩니다.
 
-검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## 관리자에서 검색 엔진 구성
 
