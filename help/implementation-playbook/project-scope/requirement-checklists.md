@@ -2,7 +2,7 @@
 title: 요구 사항 확인 목록
 description: Adobe Commerce 구현을 준비하는 데 도움이 되는 이 포괄적인 질문 목록을 사용하십시오.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -205,7 +205,7 @@ ht-degree: 0%
 
 - 어떤 주문 관리 시스템이 Adobe Commerce과 통합됩니까? (예: Microsoft Dynamics, SAP, Retail Pro)
 
-- 어떤 제품 인벤토리 관리 시스템이 Adobe Commerce과 통합됩니까? (예: Akeneo, InRiver, Bluestone)
+- 어떤 제품 정보 관리 시스템이 Adobe Commerce과 통합됩니까? (예: Akeneo, InRiver, Bluestone)
 
 - 어떤 고객 관계 관리 시스템이 Adobe Commerce과 통합됩니까? (예: Hubspot, Salesforce, Klaviyo)
 
