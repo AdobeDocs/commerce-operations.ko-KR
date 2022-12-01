@@ -1,9 +1,9 @@
 ---
 title: 전체 사전 요구 사항
 description: 이러한 전제 조건 단계를 완료하여 업그레이드를 위한 Adobe Commerce 또는 Magento Open Source 프로젝트를 준비합니다.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Adobe Commerce 또는 Magento Open Source을 실행하는 데 필요한 사항�
 
 - 모든 소프트웨어 업데이트
 - 지원되는 검색 엔진이 설치되어 있는지 확인합니다
+- 데이터베이스 테이블 형식 변환
 - 열린 파일 제한 설정
 - 크론 작업이 실행 중인지 확인합니다
 - 설정 `DATA_CONVERTER_BATCH_SIZE`
@@ -30,7 +31,11 @@ Adobe Commerce 또는 Magento Open Source을 실행하는 데 필요한 사항�
 
 사용자 환경의 모든 시스템 요구 사항과 종속성을 업데이트했는지 확인합니다. PHP 참조 [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), 및 [필수 PHP 설정](../../installation/prerequisites/php-settings.md#php-settings).
 
-## 지원되는 검색 엔진이 설치되어 있는지 확인합니다.
+>[!NOTE]
+>
+>클라우드 인프라 Pro 프로젝트의 경우 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하는 티켓. 필요한 서비스 변경 사항을 표시하고 업데이트된 내용을 포함하십시오 `.magento.app.yaml` 및 `services.yaml` 티켓의 파일 및 PHP 버전입니다. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. 자세한 내용은 [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+
+## 지원되는 검색 엔진이 설치되어 있는지 확인합니다
 
 Adobe Commerce 및 Magento Open Source에서 소프트웨어를 사용하려면 Elasticsearch 또는 OpenSearch를 설치해야 합니다.
 
@@ -63,7 +68,7 @@ Adobe Commerce 및 Magento Open Source에서 소프트웨어를 사용하려면 
 
 을(를) 참조하십시오. [업그레이드 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 프로덕션에 배포하기 전에 데이터 백업, 잠재적 마이그레이션 문제 감지, 업그레이드 테스트 등에 대한 전체 지침을 살펴보십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작할 필요가 있거나 필요하지 않을 수 있습니다.
 
-Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 를 클릭하여 설치된 JDK 버전을 확인합니다.
+Elasticsearch을 사용하려면 JDK(Java Development Kit) 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 를 클릭하여 설치된 JDK 버전을 확인합니다.
 
 [Elasticsearch 구성](../../configuration/search/configure-search-engine.md) Elasticsearch 2을 지원되는 버전으로 업데이트한 후 수행해야 하는 작업에 대해 설명합니다.
 
@@ -79,11 +84,15 @@ OpenSearch는 Elasticsearch의 라이센스 변경 후 Elasticsearch 7.10.2의 �
 
 OpenSearch를 사용하려면 JDK 1.8 이상이 필요합니다. 자세한 내용은 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 를 클릭하여 설치된 JDK 버전을 확인합니다.
 
-[Elasticsearch을 사용하도록 Magento 구성](../../configuration/search/configure-search-engine.md) 검색 엔진을 변경한 후 수행해야 하는 작업에 대해 설명합니다.
+[검색 엔진 구성](../../configuration/search/configure-search-engine.md) 검색 엔진을 변경한 후 수행해야 하는 작업에 대해 설명합니다.
 
 ### 타사 확장
 
 확장이 2.4와 완전히 호환되는지 여부를 확인하려면 검색 엔진 공급업체에 문의하는 것이 좋습니다.
+
+## 데이터베이스 테이블 형식 변환
+
+모든 데이터베이스 테이블의 형식을 `COMPACT` to `DYNAMIC`. 또한 저장소 엔진 유형을 `MyISAM` to `InnoDB`. 자세한 내용은 [모범 사례](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## 열린 파일 제한 설정
 
@@ -116,9 +125,9 @@ Bash 쉘에서 값을 설정하려면 다음을 수행합니다.
 >
 >에 대한 값을 설정하지 않는 것이 좋습니다 `pcre.recursion_limit` 속성( `php.ini` 실패 알림 없이 롤백이 불완전할 수 있으므로 파일입니다.
 
-## cron 작업이 실행 중인지 확인
+## 크론 작업이 실행 중인지 확인합니다
 
-UNIX 작업 스케줄러 `cron` 는 일상적인 Adobe Commerce 및 Magento Open Source 작업에 매우 중요합니다. 색인 재지정, 뉴스레터, 이메일, 사이트 맵 등과 같은 일정을 잡습니다. 몇 가지 기능을 사용하려면 파일 시스템 소유자로 실행 중인 하나 이상의 크론 작업이 필요합니다.
+UNIX 작업 스케줄러 `cron` 는 일상적인 Adobe Commerce 및 Magento Open Source 작업에 매우 중요합니다. 색인 재지정, 뉴스레터, 이메일 및 사이트 맵과 같은 일정을 잡습니다. 몇 가지 기능을 사용하려면 파일 시스템 소유자로 실행 중인 하나 이상의 크론 작업이 필요합니다.
 
 cron 작업이 제대로 설정되었는지 확인하려면 파일 시스템 소유자로 다음 명령을 입력하여 crontab을 확인합니다.
 
