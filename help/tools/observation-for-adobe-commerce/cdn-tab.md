@@ -1,7 +1,7 @@
 ---
-title: '"다음 [!UICONTROL CDN] tab"'
+title: "다음 [!UICONTROL CDN] tab"
 description: 에 대해 알아보기 [!UICONTROL CDN] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ![선택한 기간(초)에 대한 실제 캐시 평균 응답](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-이 프레임은 캐시 가능한 요청의 기간(초)을 보여줍니다. 즉, `cache_response` 는 MISS이며 선택한 시간에 대해 캐시된 누락된 응답의 평균을 표시합니다.
+이 프레임은 캐시 가능한 요청의 기간(초)을 보여줍니다. 즉, `cache_response` is [!UICONTROL MISS]에 지정된 경우 선택한 시간에 대해 캐시된 누락된 응답의 평균을 표시합니다.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![요청 - 선택한 기간 이후(1주 전과 비교)](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-이 프레임은 맨 위에 있는 총 요청에 대한 요약 상자와 유사하지만 이전 주 요청 수를 표시합니다. 이는 캐시 가능한 요청뿐만 아니라 모든 요청입니다(여기서 `is_cacheable` 가 true입니다.)
+이 프레임은 [!UICONTROL Total Requests] 맨 위에 있지만 은 이전 주의 요청 수를 표시합니다. 이는 캐시 가능한 요청뿐만 아니라 모든 요청입니다(여기서 `is_cacheable` 가 true입니다.)
 
 ## [!UICONTROL Response Count]
 
