@@ -1,9 +1,9 @@
 ---
 title: 인덱서 관리
 description: 상거래 인덱스를 보고 관리하는 방법에 대한 예를 참조하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->인덱서 모드를 전환하기 전에 웹 사이트를 [유지 관리](../../installation/tutorials/maintenance-mode.md) 모드 및 [cron 작업 비활성화](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
+>인덱서 모드를 전환하기 전에 웹 사이트를 [유지 관리](../../installation/tutorials/maintenance-mode.md) 모드 및 [cron 작업 비활성화](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
 
 인덱서 구성을 지정하려면 다음을 수행합니다.
 

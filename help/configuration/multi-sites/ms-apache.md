@@ -1,9 +1,9 @@
 ---
 title: Apache를 사용하여 여러 웹 사이트 설정
 description: Apache를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
    호스팅된 환경에 여러 웹 사이트를 배포하는 데 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 
-   클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 [여러 웹 사이트 또는 저장소 설정](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 에서 _Commerce Cloud 안내서_.
+   클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 [여러 웹 사이트 또는 저장소 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 에서 _Commerce on Cloud Infrastructure 안내서_.
 
 - 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`
 
@@ -95,8 +95,8 @@ ht-degree: 0%
 1. 정적 경로를 형식으로 추가합니다.
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. 브라우저에서 다음 URL 중 하나로 이동합니다.
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 호스팅된 환경에 여러 웹 사이트를 배포하는 데 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
->- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 참조 [여러 클라우드 웹 사이트 또는 저장소 설정](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 에서 _Commerce Cloud 안내서_.
+>- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 참조 [여러 클라우드 웹 사이트 또는 저장소 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 에서 _Commerce on Cloud Infrastructure 안내서_.
 
 
 ### 문제 해결

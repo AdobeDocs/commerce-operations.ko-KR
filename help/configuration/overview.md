@@ -1,9 +1,9 @@
 ---
 title: 구성 안내서 개요
 description: Adobe Commerce 또는 Magento Open Source 애플리케이션에 대해 구성 가능한 모든 기능 및 서비스에 대해 알아봅니다.
-source-git-commit: 573b407bf29fd4dea2c0e9a52593f65fa64ffa2d
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 0%
 
 ## 클라우드 구성
 
-[!DNL Commerce on cloud infrastructure] 사용 [구성 파일 집합](https://devdocs.magento.com/cloud/env/environments.html) 를 업데이트하려면 [!DNL Commerce] 호스팅 환경의 애플리케이션 기능 및 서비스. Adobe의 클라우드 호스팅 환경의 고유한 특성 때문에 항상 [클라우드 안내서](https://devdocs.magento.com/cloud/bk-cloud.html) 추가 구성 요구 사항
+[!DNL Commerce on cloud infrastructure] 사용 [구성 파일 집합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) 호스팅 환경에서 Commerce 애플리케이션 기능 및 서비스를 업데이트하려면 다음을 수행하십시오. Adobe 클라우드 호스팅 환경의 고유한 특성 때문에 항상 [클라우드 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 추가 구성 요구 사항

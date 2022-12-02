@@ -1,9 +1,9 @@
 ---
 title: 애플리케이션 모드
 description: 상거래 애플리케이션은 필요에 따라 다른 모드로 작동할 수 있습니다. 사용 가능한 응용 프로그램 모드의 세부 목록을 확인합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[Adobe Commerce on cloud 인프라](https://devdocs.magento.com/cloud/bk-cloud.html) 은 프로덕션 및 유지 관리 모드만 지원합니다.
+>[Adobe Commerce on cloud 인프라](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 은 프로덕션 및 유지 관리 모드만 지원합니다.
 
 ## 기본 모드
 
@@ -71,4 +71,4 @@ ht-degree: 0%
 
 을(를) 만들 수 있습니다 [사용자 지정 유지 관리 페이지](../../upgrade/troubleshooting/maintenance-mode-options.md)을 지정하는 경우, 유지 관리 모드를 수동으로 활성화 및 비활성화하고, 인증된 IP 주소의 방문자가 저장소를 정상적으로 볼 수 있도록 유지 관리 모드를 구성합니다. 자세한 내용은 [유지 관리 모드 활성화 및 비활성화](../../installation/tutorials/maintenance-mode.md).
 
-클라우드 인프라에서 상거래를 사용하는 경우 배포 단계 동안 상거래 애플리케이션이 유지 관리 모드로 실행됩니다. 배포가 완료되면 Commerce 응용 프로그램이 프로덕션 모드에서 실행으로 돌아갑니다. 자세한 내용은 [배포 후크](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) 에서 _Commerce Cloud 안내서_.
+클라우드 인프라에서 상거래를 사용하는 경우 배포 단계 동안 상거래 애플리케이션이 유지 관리 모드로 실행됩니다. 배포가 완료되면 Commerce 응용 프로그램이 프로덕션 모드에서 실행으로 돌아갑니다. 자세한 내용은 [배포 후크](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) 에서 _Commerce on Cloud Infrastructure 안내서_.

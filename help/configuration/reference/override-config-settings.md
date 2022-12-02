@@ -1,9 +1,9 @@
 ---
 title: 구성 설정 무시
 description: 환경 변수를 사용하여 구성 설정을 재정의하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->다음을 확인하십시오 [환경 구성](https://devdocs.magento.com/cloud/env/variables-intro.html) 의 주제 _Commerce Cloud 안내서_ 클라우드 인프라에서 Adobe Commerce에서 변수 작업에 대한 자세한 내용은 다음을 참조하십시오.
+>다음을 확인하십시오 [환경 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) 의 주제 _Commerce on Cloud Infrastructure 안내서_.
 
 ## 환경 변수
 
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- 에서 설정한 값을 사용하려면 `$_ENV` 배열, 설정해야 합니다. `variables_order = "EGPCS"`(환경, Get, Post, Cookie 및 서버)를 `php.ini` 파일. 자세한 내용은 [PHP 설명서](https://www.php.net/manual/en/ini.core.php).
 >
->- 클라우드 기반의 Adobe Commerce의 경우, [Project Web Interface](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var)를 채울 때는 변수 이름을 `env:`. For example:
+>- 클라우드 기반의 Adobe Commerce의 경우, [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)를 채울 때는 변수 이름을 `env:`. For example:
 >
->![환경 변수 예](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![환경 변수 예](../../assets/configuration/cloud-console-envvariable.png)

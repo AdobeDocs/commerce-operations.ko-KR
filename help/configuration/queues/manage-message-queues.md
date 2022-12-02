@@ -1,9 +1,9 @@
 ---
 title: 메시지 큐 관리
 description: Adobe Commerce용 명령줄에서 메시지 큐를 관리하는 방법을 알아봅니다.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) 를 `consumers_runner` 크론 작업.
+>Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) 를 `consumers_runner` 크론 작업.
 
 ### 특정 구성
 
@@ -82,6 +82,6 @@ ht-degree: 0%
 
    >[!INFO]
    >
-   >Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) 소비자가 메시지 큐에서 메시지를 처리하는 방법을 구성하려면 다음을 수행하십시오.
+   >Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) 소비자가 메시지 큐에서 메시지를 처리하는 방법을 구성하려면 다음을 수행하십시오.
 
 자세한 내용은 [메시지 큐 소비자 시작](../cli/start-message-queues.md).
