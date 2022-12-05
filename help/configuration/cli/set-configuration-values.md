@@ -1,7 +1,7 @@
 ---
 title: 구성 값 설정
 description: 관리자에서 잠긴 구성 값을 설정하고 값을 변경하는 방법을 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 | --- | --- |
 | `--scope` | 구성 범위입니다. 가능한 값은 다음과 같습니다 `default`, `website`, 또는 `store`. 기본값은 입니다. `default`. |
 | `--scope-code` | 구성 범위 코드(웹 사이트 코드 또는 스토어 보기 코드) |
-| `-le or --lock-env` | 관리자에서 편집할 수 없도록 값을 잠그거나 관리자에서 이미 잠긴 설정을 변경합니다. 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일. |
-| `-lc or --lock-config` | 관리자에서 편집할 수 없도록 값을 잠그거나 관리자에서 이미 잠긴 설정을 변경합니다. 명령은 값을 `<Commerce base dir>/app/etc/config.php` 파일. 다음 `--lock-config` 옵션 덮어쓰기 `--lock-env` 두 옵션을 모두 지정하는 경우 |
+| `-e or --lock-env` | 관리자에서 편집할 수 없도록 값을 잠그거나 관리자에서 이미 잠긴 설정을 변경합니다. 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일. |
+| `-c or --lock-config` | 관리자에서 편집할 수 없도록 값을 잠그거나 관리자에서 이미 잠긴 설정을 변경합니다. 명령은 값을 `<Commerce base dir>/app/etc/config.php` 파일. 다음 `--lock-config` 옵션 덮어쓰기 `--lock-env` 두 옵션을 모두 지정하는 경우 |
 | `path` | _필수 여부_. 구성 경로 |
 | `value` | _필수 여부_. 구성 값 |
 
