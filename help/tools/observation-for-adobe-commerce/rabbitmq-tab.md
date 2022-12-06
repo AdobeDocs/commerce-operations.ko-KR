@@ -1,9 +1,9 @@
 ---
 title: "다음 [!UICONTROL [!DNL RabbitMQ]] tab"
 description: 에 대해 알아보기 [!UICONTROL [!DNL RabbitMQ]] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: e59b8db21c449fcf91466df7482849a0454bfe3e
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -18,24 +18,24 @@ ht-degree: 0%
 
 다음 **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** 프레임은 [!DNL RabbitMQ] 선택한 기간에 발생한 시간:
 
-* %응답 [오류] 노드 [rabbit@host1]: &#39;unexpected_resp_node1&#39;로서 &#39;from%&#39;에 예기치 않은 http 응답
-* &#39;%응답 [오류] 노드 [rabbit@host2]: &#39;unexpected_resp_node2&#39;로서 &#39;from%&#39;에서 예기치 않은 http 응답
-* &#39;%응답 [오류] 노드 [rabbit@host3]: &#39;unexpected_resp_node3&#39;로서 &#39;from%&#39;에 예기치 않은 http 응답
-* &#39;%응답 [오류] 노드 [rabbit@host3]: &quot;http://localhost:15672/api/healthchecks/node/rabbit@host3&quot; 가져오기: context defined%) as &#39;node3_timeout_exceeded&#39;
-* &#39;%응답 [오류] 노드 [rabbit@host1]: &quot;http://localhost:15672/api/healthchecks/node/rabbit@host1&quot; 가져오기: &#39;node1_timeout_exceeded&#39;)
-* &#39;%응답 [오류] 노드 [rabbit@host2]: &quot;http://localhost:15672/api/healthchecks/node/rabbit@host2&quot; 가져오기: &#39;node2_timeout_exceeded&#39;)
-* &#39;%401 Unauthorized%&#39;) as &#39;401_unauth&#39;
-* &#39;%401 Unauthorized%&#39;) as &#39;401_unauth&#39;
-* %서비스가 다시 시작됨: rmq-server%) &#39;rmq_service_restart&#39;
-* &#39;%응답 [실패] 노드 [rabbit@host1]: nodedown%&#39;) &#39;rmq_node1_down&#39;
-* &#39;%응답 [실패] 노드 [rabbit@host2]: nodedown%&#39;) &#39;rmq_node2_down&#39;
-* &#39;%응답 [실패] 노드 [rabbit@host2]: nodedown%&#39;) &#39;rmq_node2_down&#39;
-* &#39;%N이(가) 수정됨: exchange/bindings.destination%&#39;) as &#39;rmq_entity_modified&#39;
-* &#39;%N이(가) 수정됨: exchange/bindings.destination%&#39;) as &#39;rmq_entity_modified&#39;
-* &#39;%N이(가) 수정됨: &#39;rmq_entity_created_q_exclusive&quot;%Entity 수정됨: queue/auto_delete%&#39;) as &#39;rmq_entity_q_delete&#39;
-* &#39;%N이(가) 수정됨: &#39;rmq_entity_modified_q_durable&#39;)
-* &#39;%N이(가) 수정됨: version/management%&#39;) as &#39;rmq_entity_modified_ver_mgt&#39;
-* &#39;%N이(가) 수정됨: version/management%&#39;) as &#39;rmq_entity_modified_ver_mgt&#39;
+* `%Response [error] for node [rabbit@host1]: unexpected http response from%`) `unexpected_resp_node1`
+* `%Response [error] for node [rabbit@host2]: unexpected http response from%`) `unexpected_resp_node2`
+* `%Response [error] for node [rabbit@host3]: unexpected http response from%`) `unexpected_resp_node3`
+* `%Response [error] for node [rabbit@host3]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host3": context deadline exceeded%`) `node3_timeout_exceeded`
+* `%Response [error] for node [rabbit@host1]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host1": context deadline exceeded%`) `node1_timeout_exceeded`
+* `%Response [error] for node [rabbit@host2]: Get "http://localhost:15672/api/healthchecks/node/rabbit@host2": context deadline exceeded%`) `node2_timeout_exceeded`
+* `%401 Unauthorized%`) `401_unauth`
+* `%401 Unauthorized%`) `401_unauth`
+* `%Service restarted: rabbitmq-server%`) `rmq_service_restart`
+* `%Response [failed] for node [rabbit@host1]: nodedown%`) `rmq_node1_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) `rmq_node2_down`
+* `%Response [failed] for node [rabbit@host2]: nodedown%`) `rmq_node2_down`
+* `%Entity modified: exchange/bindings.destination%`) `rmq_entity_modified`
+* `%Entity modified: exchange/bindings.destination%`) `rmq_entity_modified`
+* `%Entity modified: queue/exclusive%`) `rmq_entity_created_q_exclusive` `%Entity modified: queue/auto_delete%`) `rmq_entity_q_delete`
+* `%Entity modified: queue/durable%`) `rmq_entity_modified_q_durable`
+* `%Entity modified: version/management%`) `rmq_entity_modified_ver_mgt`
+* `%Entity modified: version/management%`) `rmq_entity_modified_ver_mgt`
 
 ## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
@@ -43,8 +43,8 @@ ht-degree: 0%
 
 이 프레임은 [!DNL RabbitMQ] 선택한 기간 동안 발생한 서비스 시작/중지 신호:
 
-* &#39;%[!DNL RabbitMQ] 정지 요청...%&#39;) &#39;rabbitmq_stop&#39; 사용
-* &#39;%시작 중 [!DNL RabbitMQ]%&#39;) &#39;rabbitmq_start&#39;
+* `%RabbitMQ is asked to stop...%`) `rabbitmq_stop`
+* `%Starting RabbitMQ%`) `rabbitmq_start`
 
 ## [!UICONTROL [!DNL RabbitMQ] errors]
 
@@ -52,22 +52,22 @@ ht-degree: 0%
 
 이 프레임은 [!DNL RabbitMQ] 선택한 일정 동안 발생한 오류:
 
-* &#39;exit_timeout&#39;인 이유 {case_clause,timeout} 및 stacktrace {rabbit_mgmt_wm_healchecks%&#39;가 있습니다.
-* &#39;%client가 예기치 않게 TCP 연결%&#39;을(를) &#39;client_closed_tcp_conn&#39;으로 닫았습니다.
-* &#39;%at 정의되지 않은 종료(context shutdown_error%&#39;에서 이유 종료가 있음) &#39;undefined_exit&#39;
-* &#39;%허용되지 않는 노드%&#39;의 연결 시도(&#39;disallowed_node&#39;)
-* &#39;%AMQP 연결%&#39;를 &#39;rmq_err_amqp_conn&#39;으로 닫는 중
+* `%exit with reason {case_clause,timeout} and stacktrace {rabbit_mgmt_wm_healthchecks%}` 로서의 `exit_timeout`
+* `%client unexpectedly closed TCP connection%`) `client_closed_tcp_conn`
+* `%at undefined exit with reason shutdown in context shutdown_error%`) `undef_exit`
+* `%Connection attempt from disallowed node%`) `disallowed_node`
+* `%closing AMQP connection%`) `rmq_err_amqp_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] node status]
 
 ![[!DNL RabbitMQ] 노드 상태](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
-* &#39;%rabbit on node rabbit@host1 down%&#39;) as &#39;rmq_node1_down&#39;
-* &#39;%rabbit on node rabbit@host2 down%&#39;) as &#39;rmq_node2_down&#39;
-* &#39;%rabbit on node rabbit@host3 down%&#39;) as &#39;rmq_node3_down&#39;
-* &#39;%rabbit on node rabbit@host1 up%&#39;) as &#39;rmq_node1_up&#39;
-* &#39;%rabbit on node rabbit@host2 up%&#39;) as &#39;rmq_node2_up&#39;
-* &#39;%rabbit on node rabbit@host3 up%&#39;) as &#39;rmq_node3_up&#39;
+* `%rabbit on node rabbit@host1 down%`) `rmq_node1_down`
+* `%rabbit on node rabbit@host2 down%`) `rmq_node2_down`
+* `%rabbit on node rabbit@host3 down%`) `rmq_node3_down`
+* `%rabbit on node rabbit@host1 up%`) `rmq_node1_up`
+* `%rabbit on node rabbit@host2 up%`) `rmq_node2_up`
+* `%rabbit on node rabbit@host3 up%`) `rmq_node3_up`
 
 ## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
@@ -79,10 +79,10 @@ ht-degree: 0%
 
 ![[!DNL RabbitMQ] 메시지 세부 정보 요약](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
-* &#39;%report.ERROR: Cron Job consumer_runner에 오류가 있습니다. NOT_FOUND - no queue%&#39;) as &#39;queue_err&#39;
-* &#39;%report.ERROR: Cron Job consumer_runner에 오류가 있습니다. NOT_FOUND - no queue%&#39;) as &#39;queue_err&#39;
-* &#39;%auth%&#39;(으)로 인증되고 액세스 권한을 부여함)
-* &#39;%AMQP 연결%&#39;을(를) &#39;close_conn&#39;으로 닫는 중
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) `queue_err`
+* `%report.ERROR: Cron Job consumers_runner has an error: NOT_FOUND - no queue%`) `queue_err`
+* `%authenticated and granted access to vhost%`) `auth`
+* `%closing AMQP connection%`) `close_conn`
 
 ## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
