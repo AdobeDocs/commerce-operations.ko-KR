@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: "이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용"
-source-git-commit: bfcedda38f91f5dba8880bb1593ad40a6e3f8041
+source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >학습 [사용 방법](../site-wide-analysis-tool/access.md) a [!DNL Site-Wide Analysis Tool] 보고서를 생성합니다.
 
-Adobe Commerce의 온-프레미스 설치가 있는 경우 도구를 사용하려면 인프라에 에이전트를 설치해야 합니다. 클라우드 인프라 프로젝트에서 Adobe Commerce에 에이전트를 설치할 필요가 없습니다.
+Adobe Commerce에 대한 온-프레미스 설치가 있는 경우 도구를 사용하려면 인프라에 에이전트를 설치하십시오. 클라우드 인프라 프로젝트에서 Adobe Commerce에 에이전트를 설치할 필요가 없습니다.
 
 ## 에이전트
 
@@ -36,7 +36,7 @@ Adobe Commerce의 온-프레미스 설치가 있는 경우 도구를 사용하�
 
 >[!INFO]
 >
->에이전트는 다중 노드 Adobe Commerce 설치를 지원합니다. 각 노드에 에이전트를 설치하고 구성해야 합니다.
+>에이전트는 다중 노드 Adobe Commerce 설치를 지원합니다. 각 노드에 에이전트를 설치하고 구성합니다.
 
 ## 시스템 요구 사항
 
@@ -44,7 +44,7 @@ Adobe Commerce의 온-프레미스 설치가 있는 경우 도구를 사용하�
 
 - 운영 체제
 
-   - [!DNL Linux x86-64] 배포와 같은 [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], 및 유사
+   - [!DNL Linux x86-64] 배포와 같은 [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], 및 유사
    >[!IMPORTANT]
    >
    >Adobe Commerce은 [!DNL Microsoft Windows] 또는 [!DNL macOS].
@@ -81,7 +81,11 @@ bin/magento module:status Magento_ServicesConnector
 
 1. 웹 사이트를 [유지 모드](../../installation/tutorials/maintenance-mode.md).
 
-1. 에 로그인합니다. [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. 에 로그인합니다. [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+
+   >[!NOTE]
+   >
+   > 계정에 액세스하는 데 문제가 있으면 [Adobe Commerce 지원 또는 클라우드 계정에 로그인할 수 없습니다.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 문제 해결 도움말 을 참조하십시오.
 
 1. 클릭 **[!UICONTROL API Portal]**.
 
@@ -146,7 +150,7 @@ Adobe에서 [쉘 스크립트](https://github.com/magento-swat/install-agent-hel
    Success exit.
    ```
 
-1. 에이전트를 다운로드하여 설치한 후에는 다음을 수행해야 합니다 [실행할 구성](#run-the-agent) 다음 방법 중 하나를 사용합니다.
+1. 에이전트를 다운로드하여 설치한 후 [실행할 구성](#run-the-agent) 다음 방법 중 하나를 사용합니다.
 
    - [서비스](#service) (루트 액세스 권한이 있는 경우 기본 설정)
 
@@ -257,7 +261,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
 
 ### 서비스 {#service}
 
-1. 시스템 단위 파일 만들기 `(/etc/systemd/system/scheduler.service)` 다음 구성으로 대체합니다(바꾸기 `<filesystemowner>` 에이전트 및 Adobe Commerce 소프트웨어가 설치된 디렉토리를 소유하는 Unix 사용자 사용) 에이전트를 루트 사용자로 다운로드한 경우 디렉토리 및 중첩 파일 소유자를 변경합니다.
+1. 시스템 단위 파일 만들기 `(/etc/systemd/system/scheduler.service)` 다음 구성으로 대체합니다(바꾸기 `<filesystemowner>` 에이전트 및 Adobe Commerce 소프트웨어가 설치된 디렉토리를 소유하는 UNIX® 사용자 사용) 에이전트를 루트 사용자로 다운로드한 경우 디렉토리 및 중첩 파일 소유자를 변경합니다.
 
    ```config
    [Unit]
