@@ -1,9 +1,9 @@
 ---
 title: 인증 키 가져오기
 description: 다음 단계에 따라 repo.magento.com에서 Adobe Commerce 및 Magento Open Source 작성기 패키지에 액세스할 수 있는 자격 증명을 검색합니다.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 다음 `repo.magento.com` 저장소는 Adobe Commerce 및 Magento Open Source 및 타사 작성기 패키지가 저장되며 인증이 필요합니다. Commerce Marketplace 계정을 사용하여 32자로 된 쌍을 생성합니다 *인증 키* 저장소에 액세스하려면
 
->[!NOTE]
+Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 부여하려면 해당 패키지에 대한 액세스 권한이 부여된 MAGEID와 연결된 키를 사용해야 합니다. MAGEID는 일반적으로 Adobe Commerce 계정의 기본 연락처이며 클라우드 인프라 프로젝트에서 Adobe Commerce의 프로젝트 소유자가 아닐 수 있습니다.
+
+>[!TIP]
 >
->Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 부여하려면 해당 패키지에 대한 액세스 권한이 부여된 MAGEID와 연결된 키를 사용해야 합니다. MAGEID는 일반적으로 **청구 담당자** Adobe Commerce 계정에서 항상 **프로젝트 소유자** Adobe Commerce on cloud infrastructure project의 지침에 따라 콘솔에서 스테이징을 로컬로 활성화하십시오. 만약 [오류](https://support.magento.com/hc/en-us/articles/360040296392)를 입력하면 패키지에 액세스할 수 있는 권한이 없거나 계정의 미결 송장으로 인해 액세스 권한이 만료되었을 수 있습니다. 연락처 [Adobe Commerce 지원](https://support.magento.com/hc/en-us) MAGEID에 대한 지원을 요청합니다.
+>만약 [오류](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)를 설정하는 경우, 패키지에 액세스할 수 있는 권한이 없거나 계정의 미결 송장으로 인해 액세스 권한이 만료되었을 수 있습니다.
+>
+>* 계정의 기본 담당자 개인인 경우 계정에 미결 송장이 나열되지 않았는지 확인합니다.
+>* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 미결 송장이 없는 경우 담당자에게 문의하십시오 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 기본 연락처의 MAGEID를 사용하는 데 도움이 됩니다.
+
 
 인증 키를 만들려면:
 
