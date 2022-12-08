@@ -1,15 +1,15 @@
 ---
-title: '"다음 [!UICONTROL QuickView] tab"'
-description: QuickView 탭에서는 디스크 속도 및 서버 사용에 포함된 여러 가지 경고 유형을 확인할 수 있습니다.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "다음 [!DNL QuickView] tab"
+description: 다음 [!DNL QuickView] 이 탭에서는 디스크 공간 및 서버 사용량에 있는 경고 유형을 포함하여 표시될 수 있는 다양한 경고 유형에 대해 설명합니다.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# 다음 [!UICONTROL QuickView] 탭
+# 다음 [!DNL QuickView] 탭
 
 다음 **[!UICONTROL QuickView]** 이 탭에서는 디스크 공간 및 서버 사용량에 있는 경고 유형을 포함하여 표시될 수 있는 다양한 경고 유형에 대해 설명합니다. 추가로 탭의 프레임이 설명되어 있습니다.
 

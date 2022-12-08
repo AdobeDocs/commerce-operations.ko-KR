@@ -1,17 +1,17 @@
 ---
-title: '"다음 [!UICONTROL Infra] tab"'
-description: 다음 [!UICONTROL Infra] 탭에서는 인프라 문제의 문제와 원인을 파악합니다.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "다음 [!DNL Infra] tab"
+description: 다음 [!DNL Infra] 탭에서는 인프라 문제의 문제와 원인을 파악합니다.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# 다음 [!UICONTROL Infra] 탭
+# 다음 [!DNL Infra] 탭
 
-다음 **[!UICONTROL Infra]** 탭에서는 인프라 문제의 문제와 원인을 파악합니다. 또한 탭에서 볼 수 있는 프레임에 대해 설명합니다.
+다음 **[!DNL Infra]** 탭에서는 인프라 문제의 문제와 원인을 파악합니다. 또한 탭에서 볼 수 있는 프레임에 대해 설명합니다.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![마운트별 Inode 사용](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-다음 **[!UICONTROL Inode usage by mount]** 프레임은 선택한 기간에 대해 마운트별로 inode 사용을 표시합니다. 스토리지 공간이 충분할 수 있지만 노드가 INODES가 부족하면 사용 가능한 스토리지 부족 현상이 나타납니다. 파일(특히 작은 파일)을 제거하면 공간이 모두 확보되며 정보를 사용할 수 있습니다.
+다음 **[!UICONTROL Inode usage by mount]** 프레임 표시 [!DNL inode] 선택한 기간에 대해 마운트별 사용. 노드가 부족하면 사용 가능한 스토리지가 많아도 [!DNL inodes]로 설정되면 사용 가능한 스토리지가 부족하게 됩니다. 파일(특히 작은 파일)을 제거하면 공간이 모두 확보되어 [!DNL inodes] 사용할 수 있습니다.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
