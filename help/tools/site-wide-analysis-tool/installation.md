@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: "이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용"
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Adobe Commerce에 대한 온-프레미스 설치가 있는 경우 도구를 사�
 에이전트에는 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 시스템 및 [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) API 키 사용. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행하십시오.
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 확장을 설치하고 다른 서비스에 대한 기존 API 키를 사용하여 구성한 경우, **API 키를 다시 생성해야 합니다.** 에이전트의 Adobe Commerce 관리에서 업데이트합니다.
@@ -102,19 +102,25 @@ bin/magento module:status Magento_ServicesConnector
 1. 확장을 `composer.json` 파일을 설치하고 설치합니다.
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. 확장을 활성화합니다.
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. 데이터베이스 스키마를 업데이트합니다.
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. 캐시를 지웁니다.
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [API 키 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 확장을 시스템에 연결하기 위해
