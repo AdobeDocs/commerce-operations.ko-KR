@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL Security] tab"'
+title: "다음 [!UICONTROL Security] tab"
 description: 에 대해 알아보기 [!UICONTROL Security] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,24 +33,24 @@ ht-degree: 0%
 
 ## [!UICONTROL POST activities]
 
-다음 **[!UICONTROL POST activities]** 프레임은 사이트에 대한 POST 활동을 보여주고, 클라이언트_ip에서 면처리된 를 표시합니다 [!DNL Fastly] 로그. 또한 IP 주소로 액세스하는 URL을 표시합니다.
+다음 **[!UICONTROL POST activities]** 프레임이 `POST` 사이트에 대한 활동, 면처리된 `client_ip` 에서 [!DNL Fastly] 로그. 또한 IP 주소로 액세스하는 URL을 표시합니다.
 
 ![POST 활동](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-다음 **POST 활동 요약 테이블** 프레임은 사이트에 대한 요약된 POST 활동(클라이언트_ip에서 면처리)을 표시합니다 [!DNL Fastly] 로그. 또한 IP 주소로 액세스하는 URL에 대한 개수도 표시됩니다. 선택한 기간에 대한 개수입니다.
+다음 **[!UICONTROL POST activities summary table]** 프레임은 요약된 `POST` 사이트에 대한 활동, 면처리된 `client_ip` 에서 [!DNL Fastly] 로그. 또한 IP 주소로 액세스하는 URL에 대한 개수도 표시됩니다. 선택한 기간에 대한 개수입니다.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-다음 **[!UICONTROL POST activities details table]** 프레임은 [!DNL Fastly] 로그. 또한 [!DNL Fastly] 이러한 요청에 대해 기록합니다. 이는 마지막 2000개의 요청으로 제한됩니다.
+다음 **[!UICONTROL POST activities details table]** 프레임이 `POST` 사이트에서 활동에 대한 활동 [!DNL Fastly] 로그. 또한 [!DNL Fastly] 이러한 요청에 대해 기록합니다. 이는 마지막 2000개의 요청으로 제한됩니다.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-다음 **[!UICONTROL Guest Carts activities]** 프레임은 선택한 시간대의 게스트 장바구니 활동 수를 IP 주소 및 액세스한 URL별로 면처리하여 보여줍니다. 차량 공격시 손님카트를 사용할 수 있습니다 이 프레임은 게스트 장바구니 URL이 액세스하는 총 요청 수를 보여줍니다.
+다음 **[!UICONTROL Guest Carts activities]** 프레임은 선택한 시간대의 게스트 장바구니 활동 수를 IP 주소 및 액세스한 URL별로 면처리하여 보여줍니다. 차량 공격시 손님카트를 사용할 수 있습니다 이 프레임은 게스트 장바구니의 URL을 액세스하는 총 요청 수를 보여줍니다.
 
 ![게스트 장바구니 활동](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
