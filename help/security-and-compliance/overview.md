@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 규정 준수
 
-상인들은 안전한 환경, 관할 구역의 법적 요구 사항 및 온라인 상거래에 대한 우수 사례를 유지하기 위한 업계 지침을 충족해야 합니다. 비즈니스 관점에서 자세한 내용은 [개인 정보 보호 정책 저장](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+상인들은 안전한 환경, 관할 구역의 법적 요구 사항 및 온라인 상거래에 대한 우수 사례를 유지하기 위한 업계 지침을 충족해야 합니다. 비즈니스 관점에서 자세한 내용은 [저장 개인정보 처리방침](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
 
 이 규정 준수 설명서는 Adobe Commerce 및 Magento Open Source 설치가 특정 개인 정보 보호 법의 요구 사항을 준수하도록 하는 기술 정보를 제공합니다. 이러한 요구 사항 중 일부는 상인이 규정을 준수하기 위해 추가 개발 작업을 완료해야 합니다. 자세한 내용은 다음 주제를 참조하십시오.
 
