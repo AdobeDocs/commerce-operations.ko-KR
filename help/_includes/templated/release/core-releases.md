@@ -1,8 +1,8 @@
 ---
 source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '953'
+ht-degree: 9%
 
 ---
 # 릴리스된 버전

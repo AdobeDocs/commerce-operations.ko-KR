@@ -3,7 +3,7 @@ title: "사용 방법 [!DNL Observation for Adobe Commerce] nerlet"
 description: 사용 방법을 알아봅니다 [!DNL Observation for Adobe Commerce] 너들릿.
 source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---

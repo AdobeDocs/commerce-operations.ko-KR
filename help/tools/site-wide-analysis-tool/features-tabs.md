@@ -3,7 +3,7 @@ title: 기능 탭
 description: 의 다양한 기능 탭에 대해 알아봅니다. [!DNL Site-Wide Analysis Tool]
 source-git-commit: 4f34d7db04229ef511cddbedce6ed08b75028831
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---

@@ -6,7 +6,7 @@ feature-set: Commerce
 feature: Best Practices
 source-git-commit: bb9b8cc9993a70ea50667f08c8260759ab0f91dc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -62,10 +62,10 @@ SSH 키를 검토, 삭제 및 회전하는 것이 좋습니다.
 - 를 사용하여 이벤트 분석 [Adobe Commerce 도구 관찰](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
 Adobe Commerce 관찰 도구를 사용하면 복잡한 문제를 분석하여 근본 원인을 식별할 수 있습니다. 서로 다른 데이터를 추적하는 대신 이벤트와 오류에 대해 상관관계를 맺어 성능 병목 현상을 보다 심층적으로 파악할 수 있습니다.
 이 도구는 근본 원인을 식별하고 사이트를 최적으로 계속 작동하도록 하기 위해 잠재적 사이트 문제 중 일부를 명확하게 확인하기 위한 것입니다. 위의 Adobe Commerce 도구 설명서에 대한 링크를 클릭하여 도구 설명서에 액세스합니다. 설명서에는 **보안** 탭.
-- 을 사용하여 로그 분석 [새 레큐리티 로그](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Adobe Commerce on cloud infrastructure pro 프로젝트에는 다음이 포함됩니다 [새 레큐리티 로그](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) 서비스. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
-New Relic Logs 서비스를 사용하여 다음 작업을 완료할 수 있습니다.
-   - 사용 [새 Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) 합계된 로그 데이터를 검색하려면 다음을 수행하십시오.
-   - New Relic Logs 애플리케이션을 통해 로그 데이터를 시각화합니다.
+- 을 사용하여 로그 분석 [New Relic 로그](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Adobe Commerce on cloud infrastructure pro 프로젝트에는 다음이 포함됩니다 [New Relic 로그](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) 서비스. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
+New Relic 로그 서비스를 사용하여 다음 작업을 완료할 수 있습니다.
+   - 사용 [New Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) 합계된 로그 데이터를 검색하려면 다음을 수행하십시오.
+   - New Relic 로그 애플리케이션을 통해 로그 데이터를 시각화합니다.
 
 ## 추가 정보
 

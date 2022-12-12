@@ -3,7 +3,7 @@ title: 고급 [!DNL JavaScript] 번들링
 description: JavaScript 번들링을 통해 서버 요청의 크기와 빈도를 줄이는 방법에 대해 알아보십시오.
 source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2137'
 ht-degree: 0%
 
 ---

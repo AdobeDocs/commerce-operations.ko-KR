@@ -3,7 +3,7 @@ title: 캐시 유형
 description: 캐시 프론트론을 캐시 유형과 연결합니다.
 source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---

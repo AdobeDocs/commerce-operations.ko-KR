@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 크론 작업 및 크론 그룹 참조
 description: 크론 그룹을 사용하여 크론을 사용자 지정하는 방법을 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 24f6d30fb42c2bed6dbb85a4ce7acf9145a74162
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -38,7 +38,8 @@ A _클론 그룹_ 는 한 번에 두 개 이상의 프로세스에 대해 쉽게
 한 그룹의 경우 파일에는 다음 내용이 있어야 합니다.
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="<group_name>">
         <job name="<job_name>" instance="<classpath>" method="<method>">
             <schedule><time></schedule>
@@ -60,7 +61,8 @@ A _클론 그룹_ 는 한 번에 두 개 이상의 프로세스에 대해 쉽게
 결과 `crontab.xml` 두 그룹의 경우 다음과 같습니다.
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="default">
         <job name="<job_1_name>" instance="<classpath>" method="<method_name>">
             <schedule>* * * * *</schedule>
@@ -93,7 +95,8 @@ A _클론 그룹_ 는 한 번에 두 개 이상의 프로세스에 대해 쉽게
 아래는 의 예입니다 `cron_groups.xml` 파일:
 
 ```xml
-<config>
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/cron_groups.xsd">
     <group id="<group_name>">
         <schedule_generate_every>1</schedule_generate_every>
         <schedule_ahead_for>4</schedule_ahead_for>

@@ -1,6 +1,6 @@
 ---
 title: 업그레이드를 위한 유지 관리 모드 옵션
-description: '업그레이드를 실행하는 동안 고객이 Adobe Commerce 또는 Magento Open Source 저장소에 표시되는 사용자 지정 유지 관리 모드 페이지를 만듭니다. '
+description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 또는 Magento Open Source 저장소에 표시되는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '384'

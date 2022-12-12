@@ -3,7 +3,7 @@ title: 온-프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
 source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---

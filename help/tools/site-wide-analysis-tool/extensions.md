@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Extensions]"'
+title: "[!DNL Extensions]"
 description: 에 대해 알아보기 [!DNL Extensions] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 사용 시기, 이점 및 우수 사례
 source-git-commit: 8b14dc7e30f4dd487fdb37bb9984346021fcba14
 workflow-type: tm+mt

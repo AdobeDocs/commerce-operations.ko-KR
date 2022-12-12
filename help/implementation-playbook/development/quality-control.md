@@ -178,7 +178,7 @@ BrowserStack은 개발자가 온디맨드 브라우저, 운영 체제 및 실제
 
 ## API 테스트
 
-Postman은 API 개발을 위한 공동 작업 플랫폼입니다. Postman을 사용하면 API를 빌드하는 각 단계를 단순화하고 공동 작업을 간소화하여 더 나은 API를 만들 수 있습니다.
+Postman은 API 개발을 위한 공동 작업 플랫폼입니다. Postman은 API를 빌드하는 각 단계를 단순화하고 공동 작업을 간소화하므로 더 나은 API를 만들 수 있습니다.
 
 SoapUI는 SOAP(Simple Object Access Protocol) 및 표현 상태 전송(REST)을 위한 오픈 소스 웹 서비스 테스트 애플리케이션입니다. 웹 서비스 검사 기능을 다룹니다. 호출, 개발, 시뮬레이션, 기능 테스트 로드 및 준수 테스트.
 

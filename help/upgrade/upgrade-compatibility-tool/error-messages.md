@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] 오류 메시지"'
+title: "[!DNL Upgrade Compatibility Tool] 오류 메시지"
 description: 를 사용할 때 발생하는 오류 메시지에 대해 자세히 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서 확인하십시오.
 source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
@@ -80,7 +80,7 @@ ht-degree: 4%
 
 ### GraphQL 스키마
 
-스키마 항목이 대상 버전에 없는 경우 GraphQL 스키마 중요한 문제가 발생합니다.
+스키마 항목이 대상 버전에 없으면 GraphQL 스키마 중요한 문제가 발생합니다.
 
 | 오류 코드 | 오류 설명 | 추천 작업 |
 | --- | --- | --- |

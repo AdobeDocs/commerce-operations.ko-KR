@@ -3,7 +3,7 @@ title: 패치 적용
 description: Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대해 알아봅니다.
 source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---

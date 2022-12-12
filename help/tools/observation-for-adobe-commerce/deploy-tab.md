@@ -3,7 +3,7 @@ title: "다음 [!UICONTROL Deploy] tab"
 description: 에 대해 알아보기 [!UICONTROL Deploy] 탭 [!DNL Observation for Adobe Commerce].
 source-git-commit: 27ebd472dc4e81e58b36bf5fac529461beae4be1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---

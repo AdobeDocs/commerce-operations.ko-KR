@@ -3,7 +3,7 @@ title: "다음 [!UICONTROL Indexing] tab"
 description: 에 대해 알아보기 [!UICONTROL Indexing] 탭 [!DNL Observation for Adobe Commerce].
 source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---

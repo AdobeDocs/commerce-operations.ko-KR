@@ -29,7 +29,7 @@ ht-degree: 0%
 - [프런트 엔드 성능 감사](frontend-performance.md)
 - [준비, 설정, 유지 관리](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [SWAT 도구를 사용하여 Adobe Commerce의 보안 및 운영 보장](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - 태그 데크
-- 신유교
+- New Relic
 - 로그
 - 디스크 공간
 

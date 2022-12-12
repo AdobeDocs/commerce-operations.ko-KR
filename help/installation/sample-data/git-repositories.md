@@ -3,7 +3,7 @@ title: 샘플 데이터 Git 리포지토리 복제
 description: Git 리포지토리를 복제하여 Adobe Commerce 및 Magento Open Source 샘플 데이터를 설치하려면 다음 단계를 따르십시오.
 source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---

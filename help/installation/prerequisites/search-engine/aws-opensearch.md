@@ -3,7 +3,7 @@ title: AWS OpenSearch
 description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 대한 AWS OpenSearch 웹 서비스를 구성하십시오.
 source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---

@@ -3,7 +3,7 @@ title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---

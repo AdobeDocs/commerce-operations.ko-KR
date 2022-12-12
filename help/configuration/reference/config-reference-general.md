@@ -151,14 +151,14 @@ ht-degree: 0%
 
 {style=&quot;table-layout:auto&quot;}
 
-### 새 Relic 보고 경로
+### New Relic 보고 경로
 
-이러한 구성 값은 의 관리자에서 사용할 수 있습니다 **스토어** > 설정 > **구성** > **일반** > **새 Relic 보고**.
+이러한 구성 값은 의 관리자에서 사용할 수 있습니다 **스토어** > 설정 > **구성** > **일반** > **New Relic 보고**.
 
 | 이름 | 구성 경로 | 상거래 전용? |
 |--------------|--------------|--------------|
 | New Relic 통합 활성화 | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 새 Relic 응용 프로그램 이름 | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| New Relic 애플리케이션 이름 | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cron 활성화 | `newrelicreporting/cron/enable_cron` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style=&quot;table-layout:auto&quot;}

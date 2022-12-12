@@ -76,7 +76,7 @@ MySQL(`datadir` MySQL 구성 설정, 기본값은 입니다. `/data/mysql`) 또�
 
 ![데이터베이스 성능](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-다음 **[!UICONTROL Database performance]** 프레임은 특정 요청 중 데이터베이스 성능을 표시합니다. 그래프 아래의 색상 아이콘에서 각 지표를 클릭하여 볼 수 있습니다. 많은 지표가 호출되었습니다. [New Relic를 사용하여 MySQL 데이터베이스 성능 모니터링](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) 이 프레임에 있습니다.
+다음 **[!UICONTROL Database performance]** 프레임은 특정 요청 중 데이터베이스 성능을 표시합니다. 그래프 아래의 색상 아이콘에서 각 지표를 클릭하여 볼 수 있습니다. 많은 지표가 호출되었습니다. [New Relic을 사용하여 MySQL 데이터베이스 성능 모니터링](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) 이 프레임에 있습니다.
 
 * average(query.queriesPerSecond)
 * average(query.slowQueriesPerSecond)

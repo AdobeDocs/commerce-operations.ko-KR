@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Alerts]"'
+title: "[!DNL Alerts]"
 description: 에 대해 알아보기 [!UICONTROL Alerts] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 사용 시기 및 이점
 source-git-commit: 3efc01fb1f376514ebbfb1dd29b42c764a9fd4d5
 workflow-type: tm+mt

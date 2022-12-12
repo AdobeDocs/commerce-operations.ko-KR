@@ -3,7 +3,7 @@ title: "다음 [!UICONTROL CDN] tab"
 description: 에 대해 알아보기 [!UICONTROL CDN] 탭 [!DNL Observation for Adobe Commerce].
 source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---

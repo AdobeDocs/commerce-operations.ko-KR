@@ -3,7 +3,7 @@ title: "다음 [!UICONTROL bots] tab"
 description: 에 대해 알아보기 [!UICONTROL bots] 탭 [!DNL Observation for Adobe Commerce].
 source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---

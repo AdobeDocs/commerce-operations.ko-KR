@@ -96,17 +96,17 @@ ht-degree: 0%
 
 {style=&quot;table-layout:auto&quot;}
 
-### 새로운 Relic 보고 민감성 및 시스템별 경로
+### New Relic 보고 구분 및 시스템별 경로
 
-이러한 구성 값은 의 관리자에서 사용할 수 있습니다 **스토어** > 설정 > **구성** > **일반** > **새 Relic 보고**.
+이러한 구성 값은 의 관리자에서 사용할 수 있습니다 **스토어** > 설정 > **구성** > **일반** > **New Relic 보고**.
 
 | 이름 | 구성 경로 | 상거래 전용? | 암호화됨? | 시스템별? | 민감한가? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-| 새 Relic 계정 ID | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
-| 새 Relic 응용 프로그램 ID | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
-| 새 Relic API 키 | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![암호화된](/help/assets/configuration/cloud-enc.png) |  | ![중요](/help/assets/configuration/cloud-sens.png) |
+| New Relic 계정 ID | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
+| New Relic 애플리케이션 ID | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![중요](/help/assets/configuration/cloud-sens.png) |
+| New Relic API 키 | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![암호화된](/help/assets/configuration/cloud-enc.png) |  | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 통찰력 API 키 | `newrelicreporting/general/insights_insert_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![암호화된](/help/assets/configuration/cloud-enc.png) |  | ![중요](/help/assets/configuration/cloud-sens.png) |
-| 새 Relic API URL | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
+| New Relic API URL | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 통찰력 API URL | `newrelicreporting/general/insights_api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![시스템 특정](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
 
 {style=&quot;table-layout:auto&quot;}

@@ -1,5 +1,5 @@
 ---
-title: 캠페인 관리
+title: Campaign Management
 description: 비즈니스 요구 사항에 맞게 전자 상거래 캠페인을 구성할 수 있습니다.
 exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

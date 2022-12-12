@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce 및 Magento Open Source 릴리스 노트
-description: 특정 Adobe Commerce 및 Magento Open Source 릴리스에 대한 정보를 찾을 수 있는 위치를 알아봅니다.
+description: 특정 Adobe Commerce 및 Magento Open Source 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '400'
+ht-degree: 4%
 
 ---
 

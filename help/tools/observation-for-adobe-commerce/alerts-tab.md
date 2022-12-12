@@ -1,9 +1,9 @@
 ---
-title: '"다음 [!UICONTROL Alerts] tab"'
+title: "다음 [!UICONTROL Alerts] tab"
 description: 에 대해 알아보기 [!UICONTROL Alerts] 탭 [!DNL Observation for Adobe Commerce].
 source-git-commit: 2a82a5e232de3efa3adb76aee2334e198b929947
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---

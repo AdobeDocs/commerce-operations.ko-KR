@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![호스트별 CPU 퍼센트](../../assets/tools/cpu-percent-by-host.jpg)
 
-모든 환경 및 노드의 집계는 **[!UICONTROL CPU % by host]** 프레임. 비프로덕션 환경은 선택 취소해야 합니다. 또한 프로덕션 환경에 대한 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 내용은 [Adobe Commerce에서 New Relic를 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+모든 환경 및 노드의 집계는 **[!UICONTROL CPU % by host]** 프레임. 비프로덕션 환경은 선택 취소해야 합니다. 또한 프로덕션 환경에 대한 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 내용은 [Adobe Commerce에서 New Relic을 사용한 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 

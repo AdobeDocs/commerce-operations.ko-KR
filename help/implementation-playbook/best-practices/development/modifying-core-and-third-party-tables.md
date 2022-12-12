@@ -34,11 +34,11 @@ Adobe은 먼저 이 데이터를 저장할지 여부를 결정할 것을 권장�
 
 이 경우 데이터베이스를 서버로 마이그레이션해야 하며, 데이터를 읽을 수 있는 웹 인터페이스를 제공하거나 MySQL Workbench 또는 유사한 도구를 사용하는 교육을 제공해야 합니다. 새 데이터베이스에서 이 데이터를 제외하면 개발 팀이 데이터 마이그레이션 문제를 해결하는 대신 새 사이트에 주력할 수 있으므로 마이그레이션이 빠르게 진행됩니다.
 
-데이터를 상거래 외부에 유지하는 것과 관련된 옵션이지만 실시간으로 사용할 수 있도록 하는 또 다른 옵션은 GraphQL 메쉬와 같은 다른 도구를 활용하는 것입니다. 이 옵션은 서로 다른 데이터 소스를 결합하고 단일 응답으로 반환합니다.
+데이터를 상거래 외부에 유지하는 것과 관련된 옵션이지만 실시간으로 사용할 수 있는 또 다른 옵션은 GraphQL 메쉬와 같은 다른 도구를 활용하는 것입니다. 이 옵션은 서로 다른 데이터 소스를 결합하고 단일 응답으로 반환합니다.
 
 예를 들어 다음 작업을 수행할 수 있습니다. `stitch` 외부 데이터베이스의 이전 주문, 폐기된 이전 Magento 1 사이트가 함께 제공됩니다. 그런 다음 GraphQL 메쉬를 사용하여 고객 주문 내역의 일부로 표시합니다. 이러한 이전 주문은 현재 주문과 결합할 수 있습니다 [!DNL Adobe Commerce] 환경.
 
-GraphQL에서 API 메쉬 사용에 대한 자세한 내용은 [API Mesh란 무엇입니까?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target=&quot;_blank&quot;}) 및 [GraphQL 메쉬 게이트웨이](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}.
+GraphQL과 API 메쉬 사용에 대한 자세한 내용은 [API Mesh란 무엇입니까?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target=&quot;_blank&quot;}) 및 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}.
 
 ## 확장 속성을 사용하여 이전 데이터 마이그레이션
 
@@ -52,9 +52,9 @@ GraphQL에서 API 메쉬 사용에 대한 자세한 내용은 [API Mesh란 무�
 
 ### 다른 대안을 고려하십시오
 
-개발자로서 외부 도구의 사용을 항상 고려해야 합니다 [!DNL Adobe Commerce] GraphQL 메쉬 및 Adobe 앱 빌더와 같은 환경. 이러한 도구를 사용하면 데이터에 대한 액세스 권한을 유지할 수 있지만 코어 상거래 애플리케이션이나 기본 데이터베이스 테이블에는 영향을 주지 않습니다. 이 접근 방식을 사용하면 API를 통해 데이터를 노출합니다. 그런 다음 App Builder 구성에 데이터 소스를 추가합니다. GraphQL Mesh를 사용하면 이러한 데이터 소스를 결합하고 여기에서 언급한 대로 단일 응답을 생성할 수 있습니다 [이전 데이터](#legacy-data).
+개발자로서 외부 도구의 사용을 항상 고려해야 합니다 [!DNL Adobe Commerce] 환경(예: GraphQL mesh 및 Adobe App Builder). 이러한 도구를 사용하면 데이터에 대한 액세스 권한을 유지할 수 있지만 코어 상거래 애플리케이션이나 기본 데이터베이스 테이블에는 영향을 주지 않습니다. 이 접근 방식을 사용하면 API를 통해 데이터를 노출합니다. 그런 다음 App Builder 구성에 데이터 소스를 추가합니다. GraphQL Mesh를 사용하여 이러한 데이터 소스를 결합하고 여기에서 언급한 대로 단일 응답을 생성할 수 있습니다 [이전 데이터](#legacy-data).
 
-GraphQL 메쉬에 대한 자세한 내용은 [GraphQL 메쉬 게이트웨이](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}. 앱 빌더 Adobe에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target=&quot;_blank&quot;}.
+GraphQL 메쉬에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}. 앱 빌더 Adobe에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target=&quot;_blank&quot;}.
 
 ## 핵심 테이블 또는 타사 테이블 수정
 

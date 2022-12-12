@@ -3,8 +3,8 @@ title: 세션 저장소에 Redis 사용
 description: 세션 저장소에 대한 Redis 구성 방법을 알아봅니다.
 source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '724'
+ht-degree: 1%
 
 ---
 

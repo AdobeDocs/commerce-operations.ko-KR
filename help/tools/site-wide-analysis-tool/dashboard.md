@@ -3,7 +3,7 @@ title: "[!DNL Dashboard]"
 description: 에 대해 알아보기 [!DNL Dashboard] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 요소, 사용할 시기, 이점 및 우수 사례
 source-git-commit: d176b6a82fbea2f3c611be0fbea85814086feed9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---

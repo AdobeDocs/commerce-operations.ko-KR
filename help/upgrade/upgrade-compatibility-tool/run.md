@@ -39,7 +39,7 @@ chmod +x ./uct/bin/uct
 | `dbschema:diff` | 이 명령은 지정된 두 Adobe Commerce 버전 간의 데이터베이스 스키마의 모든 차이점을 표시합니다. |
 | `core:code:changes` | 이 명령은 현재 Adobe Commerce 설치를 깨끗한 vanilla 설치와 비교합니다. |
 | `refactor` | 이 명령은 축소된 문제 집합을 자동으로 수정합니다. |
-| `graphql:compare` | 이 명령은 두 GraphQL 끝점을 검색하고 해당 스키마를 비교할 수 있는 옵션을 제공합니다. |
+| `graphql:compare` | 이 명령은 두 GraphQL 종단점을 검토하고 해당 스키마를 비교하는 옵션을 제공합니다. |
 | `list` | 이 명령은 모든 [!DNL Upgrade Compatibility Tool] 사용 가능한 명령. |
 | `help` | 이 명령은 사용 가능한 모든 것을 반환합니다 `help`옵션 [!DNL Upgrade Compatibility Tool]. 이 명령은 이전 명령과 함께 실행할 수 있습니다. |
 
@@ -182,7 +182,7 @@ bin/uct refactor <dir>
 
 ## 를 사용하십시오 `graphql:compare` 명령
 
-이 명령은 [!DNL Upgrade Compatibility Tool] 두 개의 GraphQL 끝점을 도입하고 스키마 간에 끊김 및 위험 변경 사항을 찾는 스키마를 비교하려면 다음을 수행합니다.
+이 명령은 [!DNL Upgrade Compatibility Tool] 두 GraphQL 종단점을 검토하고 스키마 간에 중단되거나 위험한 변경을 찾는 대상을 비교합니다.
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>

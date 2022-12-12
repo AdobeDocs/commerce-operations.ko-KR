@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Information]"'
+title: "[!DNL Information]"
 description: 에 대해 알아보기 [!UICONTROL Information] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 사용 시기, 이점 및 우수 사례
 source-git-commit: 6cbb4b4fef5e1ccc06803b5a3af5dd9f4d0e7df8
 workflow-type: tm+mt

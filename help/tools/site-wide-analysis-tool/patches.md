@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Patches]"'
+title: "[!DNL Patches]"
 description: 에 대해 알아보기 [!UICONTROL Patches] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 사용 시기 및 이점
 source-git-commit: 9ee2e49de83c23386de624eff9515fd59923e987
 workflow-type: tm+mt

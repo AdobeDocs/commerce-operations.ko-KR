@@ -3,7 +3,7 @@ title: X-Frame-Options 헤더
 description: X-Frame-Options를 사용하여 페이지 렌더링을 제어합니다.
 source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---

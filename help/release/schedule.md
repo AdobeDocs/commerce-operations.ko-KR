@@ -1,10 +1,10 @@
 ---
 title: 릴리스 일정
-description: Adobe Commerce의 특정 버전이 베타, 사전 릴리스 및 일반 릴리스로 예약되는 시기를 알아봅니다.
+description: Adobe Commerce의 특정 버전이 Beta, 프리릴리스 및 일반 공급으로 예정된 시기에 대해 알아봅니다.
 source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

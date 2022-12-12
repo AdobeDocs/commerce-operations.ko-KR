@@ -3,7 +3,7 @@ title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source의 다양한 패치 유형과 패치 작동 방식에 대해 알아봅니다.
 source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---

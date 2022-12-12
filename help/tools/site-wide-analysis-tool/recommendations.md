@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Recommendations]"'
+title: "[!DNL Recommendations]"
 description: 에 대해 알아보기 [!UICONTROL Recommendations] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 사용 시기, 이점 및 우수 사례
 source-git-commit: bc0d61a3a6210e50072733e212041f34185a8e2e
 workflow-type: tm+mt

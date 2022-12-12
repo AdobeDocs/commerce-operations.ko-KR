@@ -287,4 +287,4 @@ bin/magento cache:clean config full_page
 
 - 프랑스어 및 독일어 사이트가 404를 반환하지만 관리자가 로드되는 경우 작업을 완료했는지 확인하십시오 [6단계: 기본 URL에 스토어 코드 추가](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - 모든 URL이 404를 반환하는 경우 웹 서버를 다시 시작했는지 확인하십시오.
-- Admin Console이 제대로 작동하지 않으면, 가상 호스트를 올바르게 설정했는지 확인하십시오.
+- Admin Console이 제대로 작동하지 않는 경우 가상 호스트를 올바르게 설정했는지 확인하십시오.
