@@ -1,9 +1,9 @@
 ---
 title: 원격 저장소에 대한 AWS S3 버킷 구성
 description: 원격 저장소에 AWS S3 저장소 서비스를 사용하도록 상거래 프로젝트를 구성합니다.
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 31078c836fb088a10712c8c4cf4430a38d1962f2
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,12 @@ ht-degree: 0%
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
+   ```
+
+1. 미디어 파일을 원격 스토리지와 동기화합니다.
+
+   ```bash
+   bin/magento remote-storage:sync
    ```
 
 ## Nginx 구성
