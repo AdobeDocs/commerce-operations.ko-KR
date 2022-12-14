@@ -2,9 +2,9 @@
 title: Adobe Commerce
 description: Adobe Commerce 설명
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+source-git-commit: 1611a8cab95ec24a1420fac31958853e28033af6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerce은 온프레스에서 호스팅 가능합니다. 따라서 자체
 Adobe Commerce은 다음과 같은 추가 기능과 함께 제공되는 전체 기능 전자 상거래 솔루션입니다.
 
 - 견적, 사용자 지정 카탈로그, B2B 기능, 구매자 역할 및 권한 관리
-- 시각화 및 사용자 지정 Report Builder로 BI 대시보드 Magento
+- 시각화 및 사용자 지정 Report Builder를 사용한 Adobe Commerce 보고 대시보드
 - Magento 채팅(dotdigital 지원)
 - 고급 마케팅 도구
 - [!DNL Product Recommendations] Adobe Sensei에서 제공

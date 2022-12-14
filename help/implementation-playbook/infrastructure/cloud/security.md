@@ -2,9 +2,9 @@
 title: 클라우드 인프라 보안
 description: Adobe Commerce을 클라우드 인프라에서 안전하게 유지하는 방법에 대해 알아봅니다.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Managed Services 프로덕션 환경으로 실행 코드를 가져올 수 있는
 
 중요한 데이터는 소비자의 개인 정보 또는 Managed Services 고객의 기밀 데이터를 포함할 수 있습니다. 중요한 고객 및 소비자 데이터 보호는 Adobe Commerce Managed Services에 대한 중요한 의무입니다. Managed Services과 Adobe 고객 모두 개인 식별 정보에 대한 법적 책임을 집니다. 아키텍처의 보안 기능 외에도 중요한 데이터에 대한 배포 및 액세스를 제한하는 다른 제어 기능이 있습니다.
 
-고객은 자신의 데이터를 소유하고 해당 데이터가 위치할 위치를 제어할 수 있습니다. 고객은 프로덕션 및 개발 인스턴스가 상주하는 위치를 지정합니다. 또한 Commerce와 함께 MBI(Magento Business Intelligence) 환경에 사용할 위치와, MBI 애플리케이션에서 개인 식별 정보에 액세스할 수 있는지 여부를 지정합니다. 프로덕션 인스턴스는 대부분의 AWS 지역에 있지만, 개발 및 MBI 환경은 현재 미국 또는 유럽 연합에서 찾을 수 있습니다.
+고객은 자신의 데이터를 소유하고 해당 데이터가 위치할 위치를 제어할 수 있습니다. 고객은 프로덕션 및 개발 인스턴스가 상주하는 위치를 지정합니다. 또한 Commerce와 함께 Adobe Commerce 보고 환경에 사용할 위치와 Adobe Commerce 보고 애플리케이션이 개인 식별 정보에 액세스할 수 있는지 여부를 지정합니다. 프로덕션 인스턴스는 대부분의 AWS 지역에 있지만, 개발 및 Adobe Commerce 보고 환경은 미국 또는 유럽 연합에서 찾을 수 있습니다.
 
 중요한 데이터는 Apple CDN 서버 네트워크를 통해 전달될 수 있지만 실제 네트워크에 저장되지는 않습니다. Adobe Commerce Managed Services 오퍼링에 포함된 모든 파트너는 중요한 데이터를 보호하기 위한 계약 의무를 갖습니다. Managed Services은 고객이 지정한 위치에서 중요한 고객 또는 소비자 데이터를 이동하지 않습니다.
 
