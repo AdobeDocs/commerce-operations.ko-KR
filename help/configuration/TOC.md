@@ -1,9 +1,9 @@
 ---
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 기능 및 서비스를 구성합니다.
-source-git-commit: b872a61f74818990833ba6b48e061fa1ca69b7cb
+source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,7 @@ ht-degree: 0%
    + [메시지 큐 프레임워크](queues/message-queue-framework.md)
    + [메시지 큐 관리](queues/manage-message-queues.md)
    + [Amazon MQ 설정](queues/aws-mq.md)
+   + [소비자](queues/consumers.md)
 + 여러 사이트 {#multi-sites}
    + [여러 사이트 및 보기](multi-sites/ms-overview.md)
    + [데이터베이스 엔터티 증분 ID](multi-sites/change-increment-id.md)

@@ -1,7 +1,7 @@
 ---
 title: 메시지 큐 개요
 description: 메시지 큐 프레임워크 및 Adobe Commerce 및 Magento Open Source 애플리케이션에서 메시지 큐 작동 방식에 대해 읽어보십시오.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 78ad565f051f254229424ddcdb8ce633d3a78ec6
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 메시지 큐 개요
 
-MQF(메시지 큐 프레임워크)는 [모듈](https://glossary.magento.com/module) 메시지를 큐에 게시하려면 또한 비동기식으로 메시지를 받을 소비자를 정의합니다. MQF는 [[!DNL RabbitMQ]](https://www.rabbitmq.com) 메시지 전송 및 수신을 위한 확장 가능한 플랫폼을 제공하는 메시징 브로커 또한, 배달되지 않은 메시지를 저장하는 메커니즘이 포함된다. [!DNL RabbitMQ] 은 AMQP(Advanced Message Queuing Protocol) 0.9.1 사양을 기반으로 합니다.
+MQF(메시지 큐 프레임워크)는 [모듈](https://glossary.magento.com/module) 메시지를 큐에 게시하려면 또한 정의 [소비자](consumers.md) 이 경우 메시지가 비동기식으로 전송됩니다. MQF는 [[!DNL RabbitMQ]](https://www.rabbitmq.com) 메시지 전송 및 수신을 위한 확장 가능한 플랫폼을 제공하는 메시징 브로커 또한, 배달되지 않은 메시지를 저장하는 메커니즘이 포함된다. [!DNL RabbitMQ] 은 AMQP(Advanced Message Queuing Protocol) 0.9.1 사양을 기반으로 합니다.
 
 다음 다이어그램은 메시지 큐 프레임워크를 보여 줍니다.
 

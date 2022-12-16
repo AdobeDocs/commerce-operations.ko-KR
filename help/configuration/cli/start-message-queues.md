@@ -1,7 +1,7 @@
 ---
 title: 메시지 큐 소비자 시작
 description: 메시지 큐 소비자를 시작하는 방법을 알아봅니다.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Inventory management 대량 작업 및 REST 벌크 및 비동기 끝점과 같은 비동기 작업을 활성화하려면 메시지 큐 소비자를 시작해야 합니다. B2B 기능을 활성화하려면 여러 소비자를 시작해야 합니다. 타사 모듈을 사용하려면 사용자 지정 소비자를 시작해야 할 수도 있습니다.
+을(를) 시작해야 합니다 [메시지 큐 소비자](../queues/consumers.md) Inventory management 대량 작업 및 REST 대량 및 비동기 끝점과 같은 비동기 작업을 사용하도록 설정하려면 다음을 수행하십시오. B2B 기능을 활성화하려면 여러 소비자를 시작해야 합니다. 타사 모듈을 사용하려면 사용자 지정 소비자를 시작해야 할 수도 있습니다.
 
 모든 소비자 목록을 보려면
 
