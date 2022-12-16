@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
+source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,7 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
 
 | 변경 | 유형 |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| 이동 [보안 및 규정 준수 안내서](../security-and-compliance/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | 새로 만들기 |
-| 이동 [릴리스 정보 안내서](../release/release-notes/overview.md) 변환 전: [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 새로 만들기 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| 모든 항목을 설명하는 새 주제가 추가되었습니다 [메시지 큐 소비자](../configuration/queues/consumers.md). | 새로 만들기 |
+| 추가됨 [지침](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) Adobe Commerce on cloud infrastructure Pro 프로젝트의 데이터베이스 테이블 저장소 형식을 변환하는 중입니다. | 업데이트됨 |
+| 추가됨 [지침](../configuration/remote-storage/cloud-support.md) 클라우드 인프라 프로젝트에서 Adobe Commerce의 원격 스토리지를 사용하도록 설정하는 데 사용됩니다. | 업데이트됨 |
