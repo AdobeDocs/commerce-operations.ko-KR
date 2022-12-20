@@ -1,9 +1,9 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
+source-git-commit: 2754ce0c8e27d51777924f4640b81628fbb2ea81
 workflow-type: tm+mt
-source-wordcount: '10066'
+source-wordcount: '10379'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.25 {#v1-1-25}
+
+* **ACSD-48058** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6)에 대해 번들 제품이 웹 사이트에 할당되지 않은 경우 제품 가격 재색인이 작동하지 않는 문제를 수정했습니다.
+* **ACSD-48262** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6)의 경우 - &quot;페이지당 모든 제품 허용&quot; 설정이 예로 설정되어 있을 때 제품이 전방에 표시되지 않는 문제가 해결되었습니다.
+* **ACSD-48293** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4)에 대해) - 매진된 하위 제품이 재고로 반환될 때 복합 제품이 재고가 부족한 문제를 해결했습니다.
+* **ACSD-47520** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)에 대해) - 대변 메모가 작성될 때 고객이 보상 점수를 잃어버리는 문제를 수정합니다.
+* **ACSD-48044** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4.4)의 경우 - 다중 배송이 있는 단일 주문에 여러 선물 카드를 적용하여 주문이 실행되지 않는 문제를 해결했습니다.
+* **ACSD-48300** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6)의 경우 - 구성 가능한 제품을 제거할 경우 반품을 만들 수 없는 문제가 해결되었습니다.
+* **ACSD-47910** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6) - 각 엔티티 그리드에서 주문, 송장, 선적 및 대변 메모가 누락되는 문제를 수정합니다.
+* **ACSD-47292** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6)의 경우 - &quot;재고 부족 제품 표시&quot;가 예로 설정된 경우 GraphQL 응답에서 재고 부족 번들 제품을 사용할 수 없는 문제가 수정되었습니다.
+* **ACSD-48234** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6)의 경우 - &quot;재고 부족&quot; 옵션이 활성화될 때 카탈로그 검색 결과에 잘못된 카테고리 항목 수가 표시되는 문제를 수정합니다.
+* **ACSD-48313** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.5)에 대해) - 속성 값에 쉼표가 포함되어 있는 경우 &quot;configurable_variations&quot; 열이 구문 분석되지 않는 문제를 수정합니다. &quot;additional_attributes에 동일한 구문 분석 알고리즘이 사용됩니다.
+* **ACSD-48627** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6)의 경우 - 재고 부족 구성 가능한 제품에서 GraphQL 요청을 보내 장바구니 세부 사항을 가져올 때 오류가 발생하는 문제를 수정합니다.
+* 업데이트된 패치: MDVA-39384.
 
 ## v1.1.24 {#v1-1-24}
 
@@ -202,7 +217,7 @@ ht-degree: 0%
 * **MDVA-38728** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.2 &lt;2.4.5*) - 일괄 속성 업데이트로 인해 변경 후에만 기본 스토어에 대한 URL 재작성이 발생하는 문제를 수정합니다 *제품 가시성*.
 * **MDVA-43091** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.3 &lt;2.4.4*) - 백엔드의 관리자에서 번들 제품을 주문하면 오류가 발생하는 문제를 수정합니다 *이 제품에 소수점 수량을 사용할 수 없습니다*.
 * **MDVA-40816** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.0 &lt;2.4.5*) - 관련 제품 규칙에 규칙 조건에 정의되지 않은 카테고리의 제품이 표시되는 문제를 수정했습니다.
-* **MDVA-41305** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.5*) - GraphQL 돌연변이가 구성 가능한 제품 옵션을 희망 목록에 추가한 후 반환하지 않는 문제를 수정했습니다.
+* **MDVA-41305** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.5*) - GraphQL 돌연변이가 구성 가능한 제품 옵션을 희망 목록에 추가한 후 반환하지 않는 문제가 수정되었습니다.
 * **MDVA-39181** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.1 &lt;2.4.5*) - 관련 제품 규칙에 규칙 조건에 정의되지 않은 카테고리의 제품이 표시되는 문제를 수정했습니다.
 * **MDVA-42584** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.3*) - 가져오기 또는 API를 통해 수량 및 재고 상태를 변경한 후 백엔드의 구성 가능한 재고 상태가 업데이트되지 않는 문제를 수정합니다.
 * **MDVA-40175** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.3*) - 다음 위치의 문제를 수정합니다. *운송 방법을 변경하려면 클릭하십시오.* 는 재정렬 중에 관리자에서 배송 방법을 선택할 라디오 단추를 표시하지 않습니다.
@@ -245,11 +260,11 @@ ht-degree: 0%
 ## v1.1.6 {#v1-1-6}
 
 * **MDVA-40550** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.5 &lt;2.4.4*) - 재색인화 중에 프론트먼트에서 제품이 누락되는 문제를 수정합니다.
-* **MDVA-40120** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.1 &lt;2.4.4*) - DESC/ASC로 GraphQL 정렬이 관련성 또는 가격이 동일한 제품에서 작동하지 않는 문제를 수정합니다.
+* **MDVA-40120** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.1 &lt;2.4.4*) - DESC/ASC별로 GraphQL 정렬이 관련성 또는 가격이 동일한 제품에서 작동하지 않는 문제를 수정합니다.
 * **MDVA-41399** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.3 &lt;2.4.2*) - 관리자가 액세스할 수 없는 문제가 수정되었습니다 *장바구니 관리* 고객이 원하는 목록에 제품을 추가할 경우 페이지를 지정합니다.
 * **MDVA-40609** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.3*) - 비활성화된 제품 데이터가 `cataloginventory_stock_status` 인덱스 테이블, 잘못 비활성화된 제품 수량을 표시합니다.
-* **MDVA-39031** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.1 &lt;2.4.4*) - GraphQL을 통해 타겟 웹 사이트에 할당되지 않은 경우에도 장바구니에 제품을 추가할 수 있는 문제를 수정합니다.
-* **MDVA-41597** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.4*) - GraphQL을 사용하여 장바구니에 구성 가능한 제품을 두 개 이상 추가할 때 사용자에게 오류가 발생하는 문제를 수정합니다.
+* **MDVA-39031** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.1 &lt;2.4.4*) - 타겟 웹 사이트에 할당되지 않은 경우에도 GraphQL을 통해 장바구니에 제품을 추가할 수 있는 문제를 수정했습니다.
+* **MDVA-41597** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.4*) - GraphQL을 사용하여 장바구니에 구성 가능한 제품을 두 개 이상 추가할 때 오류가 발생하는 문제를 수정합니다.
 * **MDVA-27456** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.5 &lt;2.3.7*) - 사용자가 로드하려고 할 때 오류가 발생하는 문제를 수정합니다 [!DNL Swagger].
 * **MDVA-32776** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.2*) - 주문이 배치되었지만 출하되지 않은 경우 재고 상태가 업데이트되지 않는 문제를 수정합니다.
 * **MDVA-30862** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.4 &lt;2.4.0*) - 인쇄된 PDF 송장에 잘못된 주문 일자가 있는 문제를 수정합니다.
@@ -276,7 +291,7 @@ ht-degree: 0%
 * **MDVA-40537** (*Adobe Commerce 및 Magento Open Source >=2.3.4 &lt;=2.4.0-p1*) - 동일한 URL 키를 가진 여러 CMS 페이지가 있는 경우, 스토어 보기를 만들 때 오류가 발생하는 문제를 수정합니다.
 * **MDVA-37725** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.0 &lt;=2.4.3-p1*) - 기본이 아닌 웹 사이트에서 보낸 비동기 주문 이메일에 기본 웹 사이트의 로고 URL이 포함되는 문제를 수정합니다.
 * **MDVA-39482** (*Adobe Commerce 및 Magento Open Source >=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) - 미납주문이 활성화되었을 때 &quot;0&quot; 수량과 함께 가져오는 경우 제품 재고가 떨어지는 문제를 수정합니다.
-* **MDVA-40435** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.4 &lt;2.4.4*) - GraphQL을 통해 적용할 때 동적 가격이 있는 번들 제품에 대한 잘못된 할인이 발생하는 문제를 수정합니다.
+* **MDVA-40435** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.4 &lt;2.4.4*) - GraphQL을 통해 적용할 때 동적 가격이 있는 번들 제품에서 잘못된 할인이 발생하는 문제를 수정합니다.
 * **MC-42528** (*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;=2.4.3-p1*) - `categoryList` GraphQL 쿼리는 할당된 카테고리와 할당되지 않은 카테고리를 모두 반환합니다.
 * **MDVA-29400** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.0 &lt;=2.3.7-p1 || >=2.4.0 &lt;=2.4.0-p1*) - [!DNL PayPal Express Checkout].
 * **MDVA-26005** (*Adobe Commerce 및 Magento Open Source >=2.3.4 &lt;=2.3.5-p2*) - 장바구니 가격 규칙 조건에 대한 카테고리에서 카테고리를 선택할 수 없는 문제를 수정합니다.
@@ -285,7 +300,7 @@ ht-degree: 0%
 ## v1.1.3 {#v1-1-3}
 
 * **MDVA-40262** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.4*) - GraphQL 검색 쿼리가 관리자의 인기 있는 검색어에 표시되지 않던 문제를 해결했습니다.
-* **MDVA-40601** (*Adobe Commerce 및 Magento Open Source >=2.3.1의 경우 &lt;=2.4.2-p2*) - GraphQL을 통해 예약된 업데이트로 변경된 카테고리에 대한 정보를 사용자가 가져오려고 하면 오류가 발생하는 문제를 수정합니다.
+* **MDVA-40601** (*Adobe Commerce 및 Magento Open Source >=2.3.1의 경우 &lt;=2.4.2-p2*) - GraphQL을 통해 예약된 업데이트로 변경된 카테고리에 대한 정보를 가져오려고 하면 오류가 발생하는 문제를 수정합니다.
 * **MDVA-37234** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.5 &lt;2.4.0 || >=2.4.1 &lt;=2.4.2-p2*) - 동일한 SKU에 대해 항목을 장바구니에 여러 번(병렬 요청)추가하면 동일한 장바구니 ID에 대한 중복 라인 항목이 만들어지는 문제를 해결했습니다.
 * **MDVA-33606** (*Adobe Commerce 및 Magento Open Source >=2.4.1의 경우 &lt;=2.4.2-p2*) - 사용자가 *고유 제약 조건 위반* 계층에 지정된 CMS 페이지를 저장할 때 오류가 발생합니다.
 * **MDVA-31590** (*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;=2.4.1-p1*) - 사용자가 MySQL 비동기 큐를 사용하여 속성을 벌크로 업데이트할 수 없는 문제를 수정했습니다.
@@ -350,11 +365,11 @@ ht-degree: 0%
 
 * **MDVA-37478** (*Adobe Commerce >=2.3.0 &lt;=2.3.7*) - 와 함께 배치된 주문에 대한 부분 송장을 만들 때 Adobe Commerce에 오류가 발생하는 문제를 수정합니다 *계정입금* REST API를 통한 결제 방법.
 * **MDVA-37362** (*Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) - 구성 가능한 제품 옵션 값과 변형 속성 값이 GraphQL 응답에서 비어 있는 문제를 수정합니다.
-* **MDVA-37288** (*Adobe Commerce 2.4.2*) - GraphQL 요청 후 잘못된 계층 가격이 반환되던 문제를 수정합니다.
+* **MDVA-37288** (*Adobe Commerce 2.4.2*) - GraphQL 요청 후 잘못된 계층 가격이 반환되는 문제를 수정합니다.
 * **MDVA-37225** (*Adobe Commerce >=2.4.1 &lt;=2.4.2-p1*) - 가져온 SKU에 정수 값이 있는 경우 빠른 주문 생성 중에 업로드 프로세스가 중단된 문제를 수정합니다.
 * **MDVA-37224** (*Adobe Commerce >=2.3.3 &lt;=2.4.2-p1*) - 고객이 협상 가능한 견적을 지불할 수 없는 문제를 수정합니다. [!DNL PayFlow Pro] 장바구니에 다른 제품을 포함합니다.
 * **MDVA-36286** (*Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*) - 동일한 SKU가 하위 카테고리에서 다른 위치를 갖는 경우 Page Builder 제품 위젯 미리 보기가 중단되는 문제를 수정합니다.
-* **MDVA-30186** (*Adobe Commerce >=2.3.4 &lt;=2.3.5-p2, >=2.4.0 &lt;=2.4.0-p1, >=2.4.2 &lt;=2.4.2-p1*) - GraphQL 응답에서 속성 항목 수 대신 속성 옵션이 옵션 값별로 정렬되는 문제를 수정합니다.
+* **MDVA-30186** (*Adobe Commerce >=2.3.4 &lt;=2.3.5-p2, >=2.4.0 &lt;=2.4.0-p1, >=2.4.2 &lt;=2.4.2-p1*) - 속성 옵션이 GraphQL 응답에서 속성 항목 수 대신 옵션 값별로 정렬되는 문제를 수정했습니다.
 
 ## v1.0.22 {#v1-0-22}
 
