@@ -4,7 +4,7 @@ description: 클라우드 인프라 기술 스택을 계속 업데이트하는 �
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerce에서 사용 중인 서비스와 구성 요소가 수명 종료 �
 
 스타터 플랜을 사용하는 고객은 서비스 업그레이드에 대해 셀프 서비스를 제공할 수 있습니다. 을(를) 참조하십시오. [서비스 버전 변경](https://devdocs.magento.com/cloud/project/services.html#change-service-version) 를 참조하십시오.
 
-Pro 플랜의 고객은 서비스 업그레이드에 대해서만 셀프 서비스를 제공할 수 있습니다 [통합 환경](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). 프로덕션에서 서비스를 업그레이드하려면 다음을 수행해야 합니다 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 업그레이드 요청.
+Pro 플랜의 고객은 서비스 업그레이드에 대해서만 셀프 서비스를 제공할 수 있습니다 [통합 환경](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). 프로덕션에서 서비스를 업그레이드하려면 다음을 수행해야 합니다 [지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 업그레이드 요청.
 
 >[!WARNING]
 >

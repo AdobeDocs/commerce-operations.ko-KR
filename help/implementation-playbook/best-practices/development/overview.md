@@ -1,9 +1,9 @@
 ---
 title: 구현 개발 단계
 description: Adobe Commerce 프로젝트의 개발 단계에 대한 구현 모범 사례에 대해 알아봅니다.
-source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,15 @@ ht-degree: 0%
 
 ### 코드 검토, 병합 및 테스트
 
-- 지침 및 표준
-
 <!--Assets not yet integrated
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
 - [CSS 및 JS 파일 최적화](optimize-css-js-files.md)
 - [비공개 콘텐츠 블록에 대한 우수 사례](private-content-block-configuration.md)
-
-- 사용자 지정 코드 추가
-   - [확장 개발자를 위한 우수 사례](https://developer.adobe.com/commerce/php/best-practices/)
+- [확장 개발자를 위한 우수 사례](https://developer.adobe.com/commerce/php/best-practices/)
 
 <!--Assets not yet integrated
 
@@ -61,13 +58,13 @@ ht-degree: 0%
 
 ### 로컬 및 스테이징 환경 설정
 
-- [클라우드 인프라 개발 워크플로우](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html) - 클라우드 안내서에서 추가됨
+- [클라우드 인프라 개발 워크플로우](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## 코드, 병합, 테스트
 
-- [빌드 및 배포에 대한 우수 사례](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
+- [빌드 및 배포에 대한 우수 사례](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [정적 콘텐츠 배포 - 클라우드](static-content-deployment.md)
 - [CSS 및 JS 파일 최적화](optimize-css-js-files.md)
 - [응답형 사이트를 위한 이미지 최적화](image-optimization.md)
-- [클라우드 인프라&#x200B;에 대한 Adobe Commerce 우수 사례 문제 해결](troubleshooting.md)
-- [데이터베이스 테이블을 수정하는 시기와 방법을 &#x200B; 알아봅니다](modifying-core-and-third-party-tables.md)
+- [클라우드 인프라 관련 Adobe Commerce 우수 사례 문제 해결](troubleshooting.md)
+- [데이터베이스 테이블을 수정하는 시기와 방법을 알아봅니다.](modifying-core-and-third-party-tables.md)

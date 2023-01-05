@@ -1,9 +1,9 @@
 ---
 title: 구현 유지 관리 단계
 description: Adobe Commerce 프로젝트의 유지 관리 단계에 대한 구현 모범 사례에 대해 알아봅니다.
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 0%
 - [프런트 엔드 성능 감사](frontend-performance.md)
 - [준비, 설정, 유지 관리](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [SWAT 도구를 사용하여 Adobe Commerce의 보안 및 운영 보장](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - 태그 데크
-- New Relic
-- 로그
-- 디스크 공간
+- [New Relic 및 상태 알림을 사용하여 클라우드 인프라에 배포된 Adobe Commerce 사이트의 성능, 디스크 공간 및 로그를 모니터링합니다](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## 데이터베이스 관리
 
@@ -53,14 +51,15 @@ ht-degree: 0%
 - [다시 색인화하는 방법](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [인덱스에 대한 구성 &#x200B; 우수 사례](indexer-configuration.md)
 - [주문 처리에 대한 구성 우수 사례](order-processing-configuration.md)
-- 태그 데크
-- 프로모션 또는 휴일 동안 예정된 트래픽 증가에 대한 업사이징 계획 - CTAG 데크 콘텐츠
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## 구성
 
 - [프로덕션 사이트에서 관리 업데이트 예약](scheduling-admin-updates-in-production.md)
 
-- 피크 시즌 및 판촉 기간(업사이징) 계획 - CTAG 데크 컨텐츠
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## 버그 수정
 

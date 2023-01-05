@@ -4,9 +4,9 @@ description: 결제 세부 사항을 안전하게 처리하고 저장하는 방�
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 결제 처리 및 저장 모범 사례
 
-유지 관리의 주요 원칙 중 하나 [PCI 규정 준수](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) 신용카드 결제를 제대로 처리하고 저장하는 전략이 있다.
+유지 관리의 주요 원칙 중 하나 [PCI 규정 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) 신용카드 결제를 제대로 처리하고 저장하는 전략이 있다.
 
 Adobe Commerce에 카드홀더 데이터를 저장하는 것은 **엄금금지** 또한 PCI-DSS(Payment Card Industry Data Security Standard)에 따른 가맹점의 의무를 위반할 수 있습니다. Adobe의 공동 책임 모델 및 가맹점 책임에 대한 자세한 내용은 [Adobe Commerce 공유 권한 안내서](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) Adobe 신탁센터에서
 

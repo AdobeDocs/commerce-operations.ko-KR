@@ -4,9 +4,9 @@ description: 인덱서 구성에 대한 다음 모범 사례를 통해 사이트
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Adobe Commerce에는 두 가지 유형의 색인 모드가 있습니다. [!UICON
 - 인덱스 구성을 검토합니다.
 - 인덱서를 다음으로 설정 _[!UICONTROL Update on Schedule]_대규모 사이트 및 업데이트 횟수가 많고 트래픽이 많은 사이트의 경우 자세한 내용은 [인덱스 관리](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - 팔로우 [성능 모범 사례](../../../performance/configuration.md) 인덱스를 관리합니다.
+
+>[!IMPORTANT]
+>
+>다음 [!DNL Customer Grid] 는 [!UICONTROL Update on Save] 선택 사항입니다. 이 색인은 `Update by Schedule` 선택 사항입니다.
 
 ## 추가 정보
 

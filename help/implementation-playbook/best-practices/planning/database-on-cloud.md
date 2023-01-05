@@ -4,9 +4,9 @@ description: 클라우드 인프라에서 Adobe Commerce을 배포할 때 성능
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ DDL 문을 실행해야 하는 경우 웹 사이트를 유지 관리 모드로 �
 
 ## 추가 정보
 
-- [InnoDB와 MYISAM의 주요 차이점은 무엇입니까?](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [MySQL 저장소 엔진](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5 MariaDB용 업그레이드 사전 요구 사항](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [데이터베이스 성능 문제를 해결하기 위한 우수 사례](../maintenance/resolve-database-performance-issues.md)

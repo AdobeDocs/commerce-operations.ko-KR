@@ -4,7 +4,7 @@ description: 웹 크롤러에 Adobe Commerce 사이트에 대한 지침을 전�
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -107,11 +107,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->도움이 필요하면, [Adobe Commerce 지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.md#submit-ticket).
+>도움이 필요하면, [Adobe Commerce 지원 티켓 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 추가 정보
 
 - [웹 사이트, 저장소 및 저장소 보기 이해](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [웹 사이트 추가](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
 - [Adobe Commerce 사이트에 대한 악성 트래픽을 차단하려면 페이스트를 사용합니다](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt가 클라우드 인프라 2.3.x의 Adobe Commerce에서 404 오류를 발생합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.md)
+- [robots.txt가 클라우드 인프라 2.3.x의 Adobe Commerce에서 404 오류를 발생합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
