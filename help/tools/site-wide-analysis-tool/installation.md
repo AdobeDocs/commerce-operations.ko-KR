@@ -1,9 +1,9 @@
 ---
 title: 설치 안내서
 description: "이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용"
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -381,27 +381,27 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
    rm -rf swat-agent
    ```
 
-## 구성 파일 무시
+## 문제 해결
 
-환경 변수를 사용하여 설치 중에 구성 파일에 지정한 값을 재정의할 수 있습니다. 이렇게 하면 이전 버전의 에이전트와의 이전 호환성을 유지합니다. 권장 값에 대해서는 다음 표를 참조하십시오.
+### 액세스 키가 제대로 구문 분석되지 않았습니다.
 
-| 속성 | 설명 |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | 에이전트를 설치할 때 제공한 회사 또는 사이트 이름 |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | PHP CLI 인터프리터에 대한 경로(일반적으로 `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | Adobe Commerce 애플리케이션이 설치된 루트 디렉토리(일반적으로 `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Adobe Commerce 설치용 데이터베이스 사용자 |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | Adobe Commerce 설치에 지정된 사용자의 데이터베이스 암호 |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Adobe Commerce 설치용 데이터베이스 호스트 |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Adobe Commerce 설치의 데이터베이스 이름 |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Adobe Commerce 설치에 대한 데이터베이스 포트(일반적으로 `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Adobe Commerce 설치 테이블 접두사(기본값: `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | Adobe Commerce 설치에 보조 데이터베이스 인스턴스가 있는지 여부(일반적으로 `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | 에이전트의 임시 디렉터리(일반적으로 `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | 첫 번째 실행 시 데이터 수집(일반적으로 `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | 심각도를 기준으로 기록되는 이벤트를 결정합니다(일반적으로 `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | 자동 업그레이드 활성화 (업그레이드 후 다시 시작해야 함) 에이전트가 옵션이 비활성화되어 있으면 업그레이드를 확인하지 않습니다. `true` 또는 `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | 스테이징 환경에서 에이전트를 사용하도록 샌드박스 모드 활성화 |
+액세스 키를 제대로 구문 분석하지 않으면 다음 오류가 표시될 수 있습니다.
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+이 오류를 해결하려면 다음 단계를 수행하십시오.
+
+1. 작업 [스크립트 설치](#scripted)를 눌러 출력을 저장하고 출력에 오류를 검토합니다.
+1. 생성된 를 검토합니다 `config.yaml` 파일을 작성하고 Commerce 인스턴스와 PHP의 경로가 올바른지 확인합니다.
+1. 스케줄러를 실행 중인 사용자가 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md) Unix 그룹 또는 는 파일 시스템 소유자와 동일한 사용자입니다.
+1. 다음을 확인합니다. [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 키가 올바르게 설치되어 있고 해당 키를 업데이트하여 확장을 시스템에 연결해 보십시오.
+1. [제거](#uninstall) 키를 업데이트한 후 에이전트를 사용하여 다시 설치합니다. [스크립트 설치](#scripted).
+1. 스케줄러를 실행하고 동일한 오류가 계속 표시되는지 확인합니다.
+1. 여전히 동일한 오류가 표시되면 `config.yaml` 지원 티켓을 디버깅하여 엽니다.
+
 
 >[!INFO]
 >
