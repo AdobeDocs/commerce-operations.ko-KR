@@ -1,7 +1,7 @@
 ---
 user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 및 Magento Open Source 릴리스에 대해 알아봅니다.
-source-git-commit: eeb8eb96cc0b2e4db03f64a7d90e64b3c53b9676
+source-git-commit: a2d95f70b5d24b555b7d9b42c2f4317b02b81e68
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 16%
@@ -15,13 +15,13 @@ ht-degree: 16%
    - [개요](release-notes/overview.md)
    - [호환되지 않는 변경 사항](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
-   - [2.4.6](release-notes/commerce/2-4-6.md)
-   - [2.4.5](release-notes/commerce/2-4-5.md)
-   - [2.4.4](release-notes/commerce/2-4-4.md)
-   - [2.4.3](release-notes/commerce/2-4-3.md)
-   - [2.4.2](release-notes/commerce/2-4-2.md)
-   - [2.4.1](release-notes/commerce/2-4-1.md)
-   - [2.4.0](release-notes/commerce/2-4-0.md)
+      - [2.4.6](release-notes/commerce/2-4-6.md)
+      - [2.4.5](release-notes/commerce/2-4-5.md)
+      - [2.4.4](release-notes/commerce/2-4-4.md)
+      - [2.4.3](release-notes/commerce/2-4-3.md)
+      - [2.4.2](release-notes/commerce/2-4-2.md)
+      - [2.4.1](release-notes/commerce/2-4-1.md)
+      - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [2.4.5](release-notes/open-source/2-4-5.md)
       - [2.4.4](release-notes/open-source/2-4-4.md)
