@@ -39,27 +39,27 @@ Adobe Commerce 2.4 및 후속 릴리스의 경우:
 <thead>
   <tr>
     <th colspan="2"></th>
-    <th colspan="4">2022년</th>
-    <th colspan="4">2023년</th>
-    <th colspan="4">2024년</th>
+    <th colspan="4">2022</th>
+    <th colspan="4">2023</th>
+    <th colspan="4">2024</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>상거래</td>
     <td>PHP</td>
-    <td>1분기</td>
-    <td>2분기</td>
-    <td>3분기</td>
-    <td>4분기</td>
-    <td>1분기</td>
-    <td>2분기</td>
-    <td>3분기</td>
-    <td>4분기</td>
-    <td>1분기</td>
-    <td>2분기</td>
-    <td>3분기</td>
-    <td>4분기</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.0 - 2.4.3</td>
