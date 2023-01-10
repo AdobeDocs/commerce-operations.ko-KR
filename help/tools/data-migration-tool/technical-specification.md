@@ -1,7 +1,7 @@
 ---
 title: "[!DNL Data Migration Tool] 기술 사양"
 description: 의 구현 세부 사항에 대해 알아봅니다. [!DNL Data Migration Tool] Magento 1과 Magento 2 간에 데이터를 전송할 때 확장 방법을 지정합니다."
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
@@ -264,7 +264,7 @@ class StageClass implements StageInterface
 
 데이터 스테이지에서 롤백을 지원하는 경우 `RollbackInterface` 인터페이스.
 
-실행 중인 단계의 시각화는 Symfony의 ProgressBar 구성 요소에서 제공합니다(참조 [진행률 표시줄](http://symfony.com/doc/current/components/console/helpers/progressbar.html)). LogLevelProcessor로 단계에서 이 구성 요소에 액세스합니다.
+실행 중인 단계의 시각화는 Symfony의 ProgressBar 구성 요소에서 제공합니다(참조 [진행률 표시줄](https://symfony.com/doc/current/components/console/helpers/progressbar.html)). LogLevelProcessor로 단계에서 이 구성 요소에 액세스합니다.
 
 사용 주요 방법은 다음과 같습니다.
 
@@ -532,7 +532,7 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 * 단위
 * 통합
 
-도구 `tests/` 디렉토리(테스트 유형과 동일한 단위 테스트)는 `tests/unit` 디렉토리). 테스트를 시작하려면 Punit가 설치되어 있어야 합니다. 현재 디렉터리를 테스트 디렉터리로 변경하고 시작 경로를 실행합니다. 예:
+도구 `tests/` 디렉토리(테스트 유형과 동일한 단위 테스트)는 `tests/unit` 디렉토리). 테스트를 시작하려면 Punit가 설치되어 있어야 합니다. 현재 디렉터리를 테스트 디렉터리로 변경하고 시작 경로를 실행합니다. For example:
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

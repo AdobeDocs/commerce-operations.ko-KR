@@ -1,9 +1,9 @@
 ---
 title: Redis 구성
 description: Redis 기능에 대한 개요를 보고 Redis 구성을 시작하십시오.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ RDB 옵션과 AOF 옵션을 동시에 활성화할 수도 있습니다. 지속�
 
 캐시 인스턴스에 대해 전체 상거래 캐시를 저장하기에 충분하도록 인스턴스를 설정합니다. 크기 요구 사항은 제품 수 및 스토어 보기 수와 같은 다양한 요소에 따라 다릅니다. 시작 지점으로 파일 시스템에서 캐시 폴더의 크기를 사용할 수 있습니다. 예를 들어 `var/cache` 파일 시스템의 폴더는 5GB이며, 시작할 최소 5GB의 Redis 인스턴스를 설정합니다. 상거래 캐시를 복원할 수 있으므로 캐시 인스턴스에 지속성이 필요하지 않습니다. 자세한 내용은 [Redis 캐시 안내서](https://redis.io/docs/manual/eviction/).
 
-성능 조정을 위해 비동기 삭제에 대해 다음 설정을 활성화할 수도 있습니다. 이러한 설정은 레디스의 동작을 변경하지 않습니다. 참조 - [레드뉴스](http://antirez.com/news/93) 비동기 삭제에 대한 자세한 내용을 참조하십시오.
+성능 조정을 위해 비동기 삭제에 대해 다음 설정을 활성화할 수 있습니다. 이러한 설정은 레디스의 동작을 변경하지 않습니다.
 
 ```ini
 lazyfree-lazy-eviction yes
