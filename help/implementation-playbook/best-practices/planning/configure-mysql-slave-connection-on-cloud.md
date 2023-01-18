@@ -4,15 +4,18 @@ description: 클라우드 인프라에 배포된 Adobe Commerce 사이트에 대
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 
 # MySQL 슬레이브 연결 구성 우수 사례
+
+>!![NOTE]
+본 문서는 일부 독자가 인종차별적이거나 성차별적이거나 억압적인 상태를 보일 수 있는 업계 표준 소프트웨어 용어를 포함하고 있으며 독자가 상처받거나, 정신적 충격적이거나, 환영받지 못할 수도 있습니다. Adobe은 코드, 설명서 및 사용자 경험에서 이러한 용어를 제거하려고 노력하고 있습니다.
 
 클라우드 인프라 Pro 아키텍처에 배포된 Adobe Commerce 사이트의 경우 기본적으로 데이터베이스에 대해 MYSQL 슬레이브 연결을 활성화하는 것이 좋습니다.
 
@@ -24,7 +27,7 @@ Adobe Commerce on cloud infrastructure, Pro 아키텍처
 
 ## MySQL 슬레이브 연결 구성
 
-MYSQL 슬레이브 연결에 대한 구성은 [MYSQL_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) Adobe Commerce의 클라우드 인프라 환경 구성 파일에 변수 배포, `.magento.env.yaml`. 이 변수를 로 설정 `true` 을 눌러 연결을 활성화합니다.
+MYSQL 슬레이브 연결에 대한 구성은 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) Adobe Commerce의 클라우드 인프라 환경 구성 파일에 변수 배포, `.magento.env.yaml`. 이 변수를 로 설정 `true` 을 눌러 연결을 활성화합니다.
 
 MySQL 슬레이브 연결을 사용하려면
 
@@ -45,6 +48,3 @@ MySQL 슬레이브 연결을 사용하려면
 - [환경 변수](https://devdocs.magento.com/cloud/env/variables-intro.html)
 - [클라우드 인프라에서 Adobe Commerce의 MySQL 고로드 병목 현상](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [클라우드 인프라 기반의 Adobe Commerce을 위한 데이터베이스 우수 사례](database-on-cloud.md)
-
->!![NOTE]
-본 문서에 여전히 업계 표준 소프트웨어 용어가 포함되어 있을 수 있으며, 이러한 소프트웨어 용어는 일부 사용자가 인종차별적이거나 성차별적이거나 억압적이며 독자가 다치거나, 정신적 충격적이거나, 환영받지 못할 수도 있습니다. Adobe은 코드, 설명서 및 사용자 경험에서 이러한 용어를 제거하려고 노력하고 있습니다.
