@@ -4,7 +4,7 @@ description: 클라우드 인프라에 배포된 Adobe Commerce 사이트에 대
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
+source-git-commit: a5a6e25e3fd303e07a07110b85aa1d460f53cd54
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -14,8 +14,9 @@ ht-degree: 0%
 
 # MySQL 슬레이브 연결 구성 우수 사례
 
->!![NOTE]
-본 문서는 일부 독자가 인종차별적이거나 성차별적이거나 억압적인 상태를 보일 수 있는 업계 표준 소프트웨어 용어를 포함하고 있으며 독자가 상처받거나, 정신적 충격적이거나, 환영받지 못할 수도 있습니다. Adobe은 코드, 설명서 및 사용자 경험에서 이러한 용어를 제거하려고 노력하고 있습니다.
+>[!NOTE]
+>
+>본 문서는 일부 독자가 인종차별적이거나 성차별적이거나 억압적인 상태를 보일 수 있는 업계 표준 소프트웨어 용어를 포함하고 있으며 독자가 상처받거나, 정신적 충격적이거나, 환영받지 못할 수도 있습니다. Adobe은 코드, 설명서 및 사용자 경험에서 이러한 용어를 제거하려고 노력하고 있습니다.
 
 클라우드 인프라 Pro 아키텍처에 배포된 Adobe Commerce 사이트의 경우 기본적으로 데이터베이스에 대해 MYSQL 슬레이브 연결을 활성화하는 것이 좋습니다.
 
