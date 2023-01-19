@@ -4,7 +4,7 @@ description: Adobe Commerce 2.3.5에서 업그레이드하도록 Adobe Commerce 
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
 1. 콤팩트에서 다이내믹 형식으로 변환할 테이블을 식별합니다.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. 변환 작업을 예약할 수 있도록 테이블 크기를 결정합니다.
