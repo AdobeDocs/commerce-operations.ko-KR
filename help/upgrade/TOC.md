@@ -1,10 +1,10 @@
 ---
 user-guide-title: 업그레이드 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션을 업그레이드하는 것이 중요한 이유와 업그레이드를 성공적으로 계획하고 실행하는 방법을 알아보십시오.
-source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 19%
+source-wordcount: '156'
+ht-degree: 17%
 
 ---
 
@@ -53,3 +53,4 @@ ht-degree: 19%
    - [권장 읽기](resources/recommended-reading.md)
    - [Adobe Commerce 2.4.4+로 플랫폼 현대화](resources/recommended-upgrade-paths-2022.md)
    - [업그레이드 계획 검사 목록](https://support.magento.com/hc/en-us/articles/360057968951)
+- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

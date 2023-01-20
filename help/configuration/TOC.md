@@ -1,9 +1,9 @@
 ---
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 기능 및 서비스를 구성합니다.
-source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -145,3 +145,4 @@ ht-degree: 0%
       + [분할 데이터베이스 확인](storage/multi-master-verify.md)
       + [데이터베이스 복제](storage/multi-master-replication.md)
       + [단일 데이터베이스로 되돌리기](storage/revert-split-database.md)
++ [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

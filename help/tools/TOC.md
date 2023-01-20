@@ -1,9 +1,9 @@
 ---
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 도구 사용, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
    - [경고](site-wide-analysis-tool/alerts.md)
    - [패치](site-wide-analysis-tool/patches.md)
 - 품질 패치 도구 {#quality-patches-tool}
-   - [품질 패치 도구](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+   - [품질 패치 도구](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 노트](quality-patches-tool/release-notes.md)
 - Adobe Commerce 관찰 {#observation-for-adobe-commerce}
@@ -74,3 +74,4 @@ ht-degree: 0%
    - 리소스 {#resources}
       - [문제 해결](https://support.magento.com/hc/en-us/articles/360033020451)
       - [창로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

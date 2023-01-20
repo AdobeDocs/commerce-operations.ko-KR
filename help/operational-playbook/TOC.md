@@ -1,10 +1,10 @@
 ---
 user-guide-title: 운영 플레이북
 user-guide-description: 비즈니스가 성공적인 전자 상거래 사이트를 운영할 수 있도록 하는 방법에 대해 알아봅니다.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 13%
+source-wordcount: '142'
+ht-degree: 12%
 
 ---
 
@@ -72,3 +72,4 @@ ht-degree: 13%
    - [클릭 및 수집](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [확인 목록 및 템플릿](checklists-templates/home.md)
+- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

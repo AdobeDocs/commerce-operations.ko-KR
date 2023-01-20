@@ -1,9 +1,9 @@
 ---
 user-guide-title: 성능 우수 사례
 user-guide-description: 권장 사항을 사용하여 Adobe Commerce 또는 Magento Open Source 프로덕션 배포의 성능을 최적화합니다.
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,4 @@ ht-degree: 0%
 - 고급 개념 {#performance-best-practices}
    - [고급 설정](advanced-setup.md)
    - [고급 [!DNL JavaScript] 번들링](advanced-js-bundling.md)
+- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

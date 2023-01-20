@@ -1,10 +1,10 @@
 ---
 user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 및 Magento Open Source 릴리스에 대해 알아봅니다.
-source-git-commit: a2d95f70b5d24b555b7d9b42c2f4317b02b81e68
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 16%
+source-wordcount: '87'
+ht-degree: 14%
 
 ---
 
@@ -50,3 +50,4 @@ ht-degree: 16%
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Adobe Commerce용 클라우드 패키지](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
+- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
