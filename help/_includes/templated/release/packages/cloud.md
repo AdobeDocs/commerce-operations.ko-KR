@@ -1,7 +1,7 @@
 ---
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -439,7 +439,7 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>라이브러리</td>
-    <td>이전에 videlalbilla/php-amqplib입니다.  이 라이브러리는 AMQP 프로토콜의 순수 PHP 구현입니다. 그것은 시험적으로 시험되었습니다 [!DNL RabbitMQ].</td>
+    <td>이전에 videlalbilla/php-amqplib입니다.  이 라이브러리는 AMQP 프로토콜의 순수 PHP 구현입니다. RabbitMQ에 대한 테스트를 거쳤습니다.</td>
   </tr>
   </tbody>
 </table>

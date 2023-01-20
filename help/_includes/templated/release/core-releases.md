@@ -1,5 +1,5 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 9%
@@ -54,7 +54,7 @@ ht-degree: 9%
 
 ## 2.4.0-2.4.3
 
-2.4.0-2.4.3 릴리스 라인에 대한 지원은 2022년 11월 28일에 종료됩니다.
+2.4.0-2.4.3 릴리스 라인에 대한 지원은 2022년 11월 28일에 종료되었습니다.
 
 <table>
   <thead>
