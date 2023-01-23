@@ -4,9 +4,9 @@ description: 관리자 또는 명령줄에서 Adobe Commerce 프로젝트용 CSS
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 052aa61e2bb59ae11b90b5401ce6426dec9c6046
+source-git-commit: e6e8a2d7ef059265dbcbfcd6be117828a639f6d6
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -93,3 +93,5 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 - [클라이언트측 최적화 설정](../../../performance/configuration.md#client-side-optimization-settings)
 - [사용 안내서: 리소스 파일 최적화](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [프런트 엔드 개발자 안내서: CSS 병합, 축소 및 사이트 성능](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [고급 JavaScript 번들](../../../performance/advanced-js-bundling.md)
+
