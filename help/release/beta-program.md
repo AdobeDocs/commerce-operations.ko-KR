@@ -1,9 +1,9 @@
 ---
 title: 베타 프로그램
 description: Adobe Commerce 베타 프로그램 및 참여 방법에 대해 알아봅니다.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: b92053ae4b5454a686d314bdbbad97a212082046
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -13,8 +13,11 @@ ht-degree: 0%
 
 Adobe Commerce 베타 프로그램에 오신 것을 환영합니다. 참여에 관심을 가져 주셔서 감사합니다.
 
-이 프로그램은 모든 Adobe Commerce 파트너 및 고객이 사용할 수 있습니다.
-베타 프로그램에 등록하려면 아래 설명된 단계를 읽고 따릅니다.
+이 프로그램은 모든 Adobe Commerce 파트너 및 고객이 사용할 수 있습니다. 베타 프로그램에 등록하려면 아래 설명된 단계를 읽고 따릅니다.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce 2.4.6은 이 프로그램이 지원하는 마지막 릴리스입니다. 2023년 6월부터 향후 Adobe은 Adobe Commerce 및 Magento Open Source의 공개 베타 버전을 릴리스할 예정입니다. 자세한 내용은 [릴리스 일정](schedule.md) 공개 베타 릴리스 날짜 목록.
 
 ## 참여 이유
 
