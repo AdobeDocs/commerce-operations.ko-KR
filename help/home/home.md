@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 운영 제품 설명서의 인덱스를 찾아봅니다.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '109'
+ht-degree: 3%
 
 ---
 
@@ -119,12 +119,4 @@ Adobe Commerce 및 Magento Open Source 플랫폼에 배포된 상거래 프로�
 </tr>
 </table>
 
-## 새로운 기능
-
-새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
-
-| 변경 | 유형 |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| 모든 항목을 설명하는 새 주제가 추가되었습니다 [메시지 큐 소비자](../configuration/queues/consumers.md). | 새로 만들기 |
-| 추가됨 [지침](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) Adobe Commerce on cloud infrastructure Pro 프로젝트의 데이터베이스 테이블 저장소 형식을 변환하는 중입니다. | 업데이트됨 |
-| 추가됨 [지침](../configuration/remote-storage/cloud-support.md) 클라우드 인프라 프로젝트에서 Adobe Commerce의 원격 스토리지를 사용하도록 설정하는 데 사용됩니다. | 업데이트됨 |
+{{$include /help/_includes/templated/whats-new.md}}
