@@ -4,9 +4,9 @@ description: Adobe Commerce 2.3.5의 확장된 Redis 캐시 구현을 사용하�
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ stage:
 >[!NOTE]
 >
 > 명령줄에서 을(를) 사용하여 로컬 클라우드 환경에 설치된 ece-tools 버전을 확인합니다. `composer show magento/ece-tools` 명령. 필요한 경우 [ece-tools 버전 업데이트](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>작업 _not_ 클라우드 인프라 프로젝트에 대한 Redis 슬레이브 연결 구성 [스케일 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). 이로 인해 Redis 연결 오류가 발생합니다. 자세한 내용은 [Redis 구성 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 에서 _클라우드 기반의 상거래_ 안내서.
+
 
 ### 온-프레미스 배포에 대한 구성
 
