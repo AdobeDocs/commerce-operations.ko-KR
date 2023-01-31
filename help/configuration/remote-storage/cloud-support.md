@@ -1,7 +1,7 @@
 ---
 title: 클라우드 기반의 상거래를 위한 원격 스토리지
 description: 클라우드 인프라에서 Adobe Commerce을 위한 원격 스토리지를 설정하는 방법에 대한 지침을 참조하십시오.
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -78,7 +78,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 1. 클릭 **변수 추가**.
 
-1. 에서 _이름_ 필드, 입력 `env:REMOTE_STORAGE`
+1. 에서 _이름_ 필드, 입력 `REMOTE_STORAGE`
 
 1. 에서 _값_ 필드에서 JSON 구성을 추가합니다.
 
