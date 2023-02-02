@@ -1,9 +1,9 @@
 ---
 title: 데이터 마이그레이션 계획 만들기
 description: 다음 단계에 따라 Magento 1에서 Magento 2으로 성공적으로 업그레이드하려면 데이터 마이그레이션 계획을 만드십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * 기존 Magento 1 시스템과 적어도 일치하는 토폴로지 및 디자인을 사용하여 Magento 2 하드웨어 시스템을 설정합니다
 
-* Magento 2.x(이 릴리스의 모든 모듈 포함) 및 [!DNL Data Migration Tool] 를 충족하는 시스템 [Magento 시스템 요구 사항]
+* Magento 2.x(이 릴리스의 모든 모듈 포함) 및 [!DNL Data Migration Tool] 를 충족하는 시스템 [시스템 요구 사항](../../installation/system-requirements.md)
 
 * 사용자 지정 조정을 수행합니다. [!DNL Data Migration Tool] 코드를 사용하면 일부 데이터(예: CMS 페이지, 판매 규칙)를 마이그레이션하거나 마이그레이션 중에 Magento 사용자 지정을 전환할 필요가 없습니다. 다음 문서를 참조하십시오. [!DNL Data Migration Tool]s [기술 사양](technical-specification.md) 마이그레이션이 내부에서 작동하는 방식을 더 잘 이해하십시오.
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    일부 확장에 마이그레이션하려는 데이터가 있는 경우 Magento 2용으로 적합한 이러한 확장을 설치해야 할 수 있습니다. Magento 2 데이터베이스에서 확장의 구조가 다른 경우, [!DNL Data Migration Tool].
 
-1. 모든 Magento 2.x 인덱서를 다시 색인화합니다. 자세한 내용은 [구성 안내서].
+1. 모든 Magento 2.x 인덱서를 다시 색인화합니다. 자세한 내용은 [인덱스 관리](../../configuration/cli/manage-indexers.md) 에서 _구성 안내서_.
 
 ## 5단계: 마이그레이션된 데이터를 변경합니다(필요한 경우).
 
@@ -116,6 +116,5 @@ ht-degree: 0%
 1. 이제 Magento 2 저장소를 사용할 준비가 되었습니다. 본인과 고객은 모든 활동을 재개할 수 있습니다.
 
 <!-- LINK ADDRESSES -->
-[Magento 시스템 요구 사항]: ../../installation/system-requirements.md
+
 [Commerce Marketplace]: https://marketplace.magento.com
-[구성 안내서]: ../../configuration/cli/manage-indexers.md

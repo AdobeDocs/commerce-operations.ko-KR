@@ -1,7 +1,7 @@
 ---
 title: 데이터 마이그레이션 작동 방식
 description: 용어, 워크플로우 다이어그램, 단계 등 Magento 1과 Magento 2 간의 데이터 마이그레이션 프로세스에 대해 알아봅니다.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 다음 [!DNL Data Migration Tool] 는 Magento 1에서 Magento 2으로 데이터를 전송하는 데 사용되는 CLI(명령줄 인터페이스) 툴입니다. 이 도구는 Magento 1과 2 데이터베이스 구조(테이블 및 필드) 간의 일관성을 확인하고, 데이터 전송 진행 상황을 추적하고 로그를 생성하고, 데이터 확인 테스트를 실행합니다.
 
-## Terminology
+## 용어
 
 * **모드** - Magento 1.x에서 Magento 2.x로 데이터를 마이그레이션하기 위해 정렬된 작업 세트입니다.
 * **단계** - 마이그레이션할 데이터의 종류를 정의하는 모드의 작업
@@ -62,14 +62,7 @@ ht-degree: 0%
 
 ![마이그레이션 흐름](../../assets/data-migration/migration_flow.png)
 
-<!-- Link definitions -->
 [[!DNL Data Migration Tool] 기술 사양]: technical-specification.md
-
-[Migration Modes]: ../../assets/data-migration/MigrationModes2.png
-
-[Migration Overview]: ../../assets/data-migration/MigrationOverview2.png
-
-[Migration Steps]: ../../assets/data-migration/MigrationSteps2.png
 
 Magento 1.x의 세계 #1 상거래 플랫폼에서 Magento 2의 미래 플랫폼으로 이전하는 것을 고려하게 되어 기쁩니다. 마이그레이션이라고 하는 이 프로세스에 대한 세부 사항을 공유하게 되어 기쁘게 생각합니다.
 

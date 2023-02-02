@@ -1,9 +1,9 @@
 ---
 title: 개발 환경 Recommendations
 description: 로컬 Adobe Commerce 또는 Magento Open Source 개발 환경을 설정하기 위한 성능 권장 사항에 대해 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## 비활성화하지 않고 캐시를 지웁니다.
 
-많은 개발자들이 자신의 개발자 인스턴스에서 모든 캐시를 비활성화하는 경향이 있습니다. 모든 캐시를 사용하지 않도록 설정하지 않고 캐시를 청소하는 것이 좋습니다. [!DNL Commerce] 다음 경우에 보다 효율적으로 실행 [캐시 정리] 완전히 비활성화하는 대신 대부분의 캐시 유형은 개발 중에 거의 무효화되지 않습니다.
+많은 개발자들이 자신의 개발자 인스턴스에서 모든 캐시를 비활성화하는 경향이 있습니다. 모든 캐시를 사용하지 않도록 설정하지 않고 캐시를 청소하는 것이 좋습니다. [!DNL Commerce] 다음 경우에 보다 효율적으로 실행 [캐시 정리](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) 완전히 비활성화하는 대신 대부분의 캐시 유형은 개발 중에 거의 무효화되지 않습니다.
 
-만약 [캐시 비활성화]에서는 개발 인스턴스에서 페이지 및 블록 캐시만 비활성화하는 것이 좋습니다. 테스트 중에 모든 캐시를 사용하도록 설정해야 합니다.
+만약 [캐시 비활성화](../configuration/cli/manage-cache.md#enable-or-disable-cache-types)에서는 개발 인스턴스에서 페이지 및 블록 캐시만 비활성화하는 것이 좋습니다. 테스트 중에 모든 캐시를 사용하도록 설정해야 합니다.
 
 ## 개발 모드에서 피하는 명령
 
@@ -44,8 +44,3 @@ ht-degree: 0%
 ## 가상 컴퓨터의 일반 페이지 로드 시간
 
 VM에서 개발하고 Magento 페이지를 로드하는 데 2초 이상 걸리는 경우 환경 설정을 검토하십시오.
-
-<!-- Link definitions -->
-
-[캐시 정리]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
-[캐시 비활성화]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

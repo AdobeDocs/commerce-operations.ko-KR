@@ -1,10 +1,10 @@
 ---
 title: 단일 시스템 배포
 description: 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 가정
 
-- 다음을 사용하여 Commerce를 설치했습니다. [작성기].
+- 다음을 사용하여 Commerce를 설치했습니다. [작성기](../../installation/composer.md).
 - 서버에 업데이트를 직접 적용합니다.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 배포 단계
 
-1. 프로덕션 서버에 로그인하거나 [파일 시스템 소유자][file-owner].
+1. 프로덕션 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 
 1. 전자 상거래 기본 디렉터리로 디렉터리를 변경합니다.
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    **패키지**: 업데이트할 패키지의 이름입니다.
 
-   For example:
+   예:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
@@ -92,5 +92,3 @@ ht-degree: 1%
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md
