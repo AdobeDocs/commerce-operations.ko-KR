@@ -1,7 +1,7 @@
 ---
-source-git-commit: a0b8a6131d9bccb819c846c873d2044da4009989
+source-git-commit: e7c10f28e241e47af8722fd41da0a9e86709b871
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,69 @@ ht-degree: 0%
 
 새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
 
+### 2023년 1월 27일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 노트</a> 1.1.26 QPT(Quality Patches Tool) 패키지 릴리스의 경우</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 1월 24일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>업데이트 날짜: <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">릴리스 일정</a> 및 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">소프트웨어 수명 주기 정책</a> 2023년도 주제.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 1월 23일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce 2.4.6 베타 2에 대한 릴리스 노트가 추가되었습니다. 자세한 내용은 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Adobe Commerce 2.4.6 릴리스 노트</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2023년 1월 19일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>
@@ -33,7 +93,7 @@ ht-degree: 0%
 
 ### 2023년 1월 10일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>
@@ -53,7 +113,7 @@ ht-degree: 0%
 
 ### 2023년 1월 9일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>
@@ -73,7 +133,7 @@ ht-degree: 0%
 
 ### 2022년 12월 20일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>
@@ -93,7 +153,7 @@ ht-degree: 0%
 
 ### 2022년 12월 16일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>
@@ -113,7 +173,7 @@ ht-degree: 0%
 
 ### 2022년 12월 2일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>
@@ -133,7 +193,7 @@ ht-degree: 0%
 
 ### 2022년 12월 1일
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>설명</th>

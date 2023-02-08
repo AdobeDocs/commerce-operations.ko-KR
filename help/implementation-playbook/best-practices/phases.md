@@ -1,7 +1,7 @@
 ---
 title: 구현 단계
 description: Adobe Commerce 프로젝트의 구현 단계에 대한 모범 사례에 대해 알아봅니다.
-source-git-commit: 2aa9511c4bf7c3feb6cae5e7879502b4f7cb028b
+source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -59,3 +59,5 @@ Adobe Commerce 프로젝트를 구현하는 방법에는 여러 가지가 있습
   </td>
 </tr>
 </table>
+
+{{$include /help/_includes/templated/whats-new-bp.md}}
