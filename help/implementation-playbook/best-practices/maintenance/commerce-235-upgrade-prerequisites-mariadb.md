@@ -4,19 +4,19 @@ description: Adobe Commerce 2.3.5에서 업그레이드하도록 Adobe Commerce 
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
+source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Commerce 2.3.5 업그레이드 사전 요구 사항
+# MariaDB에 대한 업그레이드 사전 요구 사항
 
-이 문서에서는 버전 2.3.4 이하에서 Adobe Commerce 2.3.5로 업그레이드할 때 데이터베이스를 준비하는 방법에 대해 설명합니다.
+Adobe Commerce 2.3.4 이하에서 최신 버전으로 업그레이드하려면 클라우드 인프라의 MariaDB 서비스를 버전 10.0 또는 10.2에서 버전 10.3 또는 10.4로 업그레이드해야 합니다. MariaDB 버전 10.3 이상에서는 데이터베이스가 동적 테이블 행 형식을 사용해야 하며 Adobe Commerce에서는 테이블에 대해 InnoDB 스토리지 엔진을 사용해야 합니다. 이 문서에서는 이러한 MariaDB 요구 사항을 준수하도록 데이터베이스를 업데이트하는 방법에 대해 설명합니다.
 
-이 업그레이드를 사용하려면 지원 팀이 클라우드 인프라의 MariaDB를 MariaDB 10.0에서 10.2로 업그레이드하여 Adobe Commerce 버전 2.3.5 이상의 요구 사항을 충족해야 합니다.
+데이터베이스를 준비한 후 Adobe Commerce 업그레이드 프로세스를 계속 진행하기 전에 Adobe Commerce 지원 티켓을 제출하여 클라우드 인프라에서 MariaDB 서비스 버전을 업데이트합니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -27,7 +27,7 @@ Adobe Commerce 버전 2.3.4 이하 및 MariaDB 버전 10.0 이전 버전을 사�
 Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에 데이터베이스 테이블을 변환하여 데이터베이스를 준비하십시오.
 
 - 행 형식을 `COMPACT` to `DYNAMIC`
-- 스토리지 엔진을 `MyISAM` to `InnoDB`
+- 스토리지 엔진 변경 `MyISAM` to `InnoDB`
 
 전환을 계획하고 예약할 때 다음 고려 사항을 염두에 두십시오.
 
@@ -137,6 +137,12 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
 
 1. 테이블이 복귀된 경우 테이블 행 형식 및 저장소 엔진을 변경하는 단계를 반복합니다.
 
+## 스토리지 엔진 변경
+
+자세한 내용은 [MyISAM 테이블을 InnoDB로 변환](../planning/database-on-cloud.md).
+
 ## 추가 정보
 
-[클라우드 인프라 기반의 Adobe Commerce을 위한 데이터베이스 우수 사례](../planning/database-on-cloud.md)
+- [클라우드 인프라 기반의 Adobe Commerce을 위한 데이터베이스 우수 사례](../planning/database-on-cloud.md)
+- [클라우드에서 Adobe Commerce용 10.0에서 12.0으로 MariaDB 업데이트](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
+

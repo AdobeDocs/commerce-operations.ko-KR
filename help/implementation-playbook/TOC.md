@@ -1,16 +1,16 @@
 ---
-user-guide-title: 구현 플레이북
-user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
+user-guide-title: 구현 Playbook
+user-guide-description: 성공적인 Adobe Commerce 사이트를 계획 및 구현하는 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 6%
+source-wordcount: '255'
+ht-degree: 0%
 
 ---
 
 
-# 구현 플레이북 {#implementation-playbook}
+# 구현 Playbook {#implementation-playbook}
 
 - [개요](overview.md)
 - 상거래 {#intro}
@@ -110,6 +110,6 @@ ht-degree: 6%
       - [프로덕션 사이트에서 관리 업데이트 예약](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [서비스 업데이트](best-practices/maintenance/update-services.md)
       - [업그레이드 검사 목록](best-practices/maintenance/upgrade-checklist.md)
-      - [데이터베이스 성능 문제 &#x200B; 해결](best-practices/maintenance/resolve-database-performance-issues.md)
-      - [Adobe Commerce 2.3.5 MariaDB용 업그레이드 사전 &#x200B; 요구 사항](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+      - [데이터베이스 성능 문제 해결](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
