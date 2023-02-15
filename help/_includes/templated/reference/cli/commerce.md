@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
 workflow-type: tm+mt
-source-wordcount: '19853'
+source-wordcount: '29783'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**버전**: 1.40.0
+**버전**: 1.42.0
 
 이 참조에는 `magento-cloud` 명령줄 도구.
 초기 목록은 `magento-cloud list` 명령입니다.
@@ -83,13 +83,6 @@ magento-cloud bot [--party] [--parrot]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -106,14 +99,42 @@ magento-cloud bot [--party] [--parrot]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -144,13 +165,6 @@ cc
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -167,14 +181,42 @@ cc
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -208,13 +250,6 @@ magento-cloud decode [-P|--property PROPERTY] [--] <value>
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -231,14 +266,42 @@ magento-cloud decode [-P|--property PROPERTY] [--] <value>
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -281,13 +344,6 @@ stdout에 URL을 출력합니다.
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -304,14 +360,42 @@ stdout에 URL을 출력합니다.
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -322,7 +406,7 @@ stdout에 URL을 출력합니다.
 명령에 대한 도움말을 표시합니다.
 
 ```bash
-help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 
@@ -354,13 +438,6 @@ help [--format FORMAT] [--raw] [--] [<command_name>]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -377,14 +454,42 @@ help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -412,13 +517,6 @@ magento-cloud legacy-migrate [--no-backup]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -435,14 +533,42 @@ magento-cloud legacy-migrate [--no-backup]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -453,9 +579,15 @@ magento-cloud legacy-migrate [--no-backup]
 명령 나열
 
 ```bash
-list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
+
+### `command`
+
+실행할 명령
+
+- 필수 여부
 
 ### `namespace`
 
@@ -476,13 +608,83 @@ list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 - 기본값: `txt`
 - 값 필요
 
+### `--all`
+
+숨겨진 명령을 포함하여 모든 명령 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--verbose`, `-v|-vv|-vvv`
+
+메시지 세부 정보 증가
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--yes`, `-y`
+
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no`, `-n`
+
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
 
 ## `multi`
 
 여러 프로젝트에서 명령 실행
 
 ```bash
-magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 
@@ -490,7 +692,10 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 실행할 명령
 
+- 기본값: `[]`
+
 - 필수 여부
+- 어레이
 
 ### `--projects`, `-p`
 
@@ -526,13 +731,6 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -549,14 +747,42 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -567,7 +793,7 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 웹 UI 열기
 
 ```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--browser`
@@ -591,7 +817,7 @@ stdout에 URL을 출력합니다.
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -604,13 +830,6 @@ stdout에 URL을 출력합니다.
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -631,14 +850,42 @@ stdout에 URL을 출력합니다.
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -659,13 +906,6 @@ magento-cloud welcome
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -682,14 +922,42 @@ magento-cloud welcome
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -710,13 +978,6 @@ magento-cloud winky
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -733,14 +994,42 @@ magento-cloud winky
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -751,7 +1040,7 @@ magento-cloud winky
 활동 취소
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -762,14 +1051,14 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--type`
 
-유형별 필터링(기본 활동을 선택할 때). 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별 필터링(기본 활동을 선택할 때). 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 유형의 와일드카드로 사용할 수 있습니다(예: ). &#39;%var%&#39; 을(를) 사용하여 변수 관련 활동을 선택합니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude-type`
 
-유형별로 제외 (기본 활동을 선택할 때). 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별로 제외 (기본 활동을 선택할 때). 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 와일드카드로 사용하여 유형을 제외할 수 있습니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -789,7 +1078,7 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -802,13 +1091,6 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -829,14 +1111,42 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -847,7 +1157,7 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 단일 활동에 대한 자세한 정보 보기
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -864,21 +1174,21 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--type`
 
-유형별 필터링(기본 활동을 선택할 때). 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별 필터링(기본 활동을 선택할 때). 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 유형의 와일드카드로 사용할 수 있습니다(예: ). &#39;%var%&#39; 을(를) 사용하여 변수 관련 활동을 선택합니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude-type`
 
-유형별로 제외 (기본 활동을 선택할 때). 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별로 제외 (기본 활동을 선택할 때). 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 와일드카드로 사용하여 유형을 제외할 수 있습니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--state`
 
-상태별로 필터링(기본 활동을 선택할 때): in_progress, 보류 중, 완료 또는 취소됨 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+상태별로 필터링(기본 활동을 선택할 때): in_progress, 보류 중, 완료 또는 취소됨 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -911,7 +1221,7 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -923,14 +1233,14 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -956,13 +1266,6 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -979,14 +1282,42 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -997,7 +1328,7 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 환경 또는 프로젝트에 대한 활동 목록 가져오기
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -1012,14 +1343,14 @@ act
 
 ### `--type`, `-t`
 
-유형별 활동 필터링 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별 활동 필터링 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 유형의 와일드카드로 사용할 수 있습니다(예: ). &#39;%var%&#39; 을(를) 사용하여 변수 관련 활동을 선택합니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude-type`, `-x`
 
-유형별로 활동을 제외합니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별로 활동을 제외합니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 와일드카드로 사용하여 유형을 제외할 수 있습니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1039,7 +1370,7 @@ act
 
 ### `--state`
 
-상태별로 활동 필터링: in_progress, 보류 중, 완료 또는 취소됨 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+상태별로 활동 필터링: in_progress, 보류 중, 완료 또는 취소됨 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1066,14 +1397,14 @@ act
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: id*, created*, description*, progress*, state*, result*, completed, environments, type (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1100,7 +1431,7 @@ act
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -1113,13 +1444,6 @@ act
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1140,14 +1464,42 @@ act
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1158,7 +1510,7 @@ act
 활동에 대한 로그 표시
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -1183,21 +1535,21 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--type`
 
-유형별 필터링(기본 활동을 선택할 때). 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별 필터링(기본 활동을 선택할 때). 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 유형의 와일드카드로 사용할 수 있습니다(예: ). &#39;%var%&#39; 을(를) 사용하여 변수 관련 활동을 선택합니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude-type`
 
-유형별로 제외 (기본 활동을 선택할 때). 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별로 제외 (기본 활동을 선택할 때). 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 와일드카드로 사용하여 유형을 제외할 수 있습니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--state`
 
-상태별로 필터링(기본 활동을 선택할 때): in_progress, 보류 중, 완료 또는 취소됨 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+상태별로 필터링(기본 활동을 선택할 때): in_progress, 보류 중, 완료 또는 취소됨 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1237,7 +1589,7 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -1250,13 +1602,6 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1277,14 +1622,42 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1295,7 +1668,7 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 Magento Cloud API에서 인증된 cURL 요청을 실행합니다
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
 
@@ -1313,6 +1686,12 @@ API 경로
 ### `--data`, `-d`
 
 보낼 데이터
+
+- 값 필요
+
+### `--json`
+
+전송할 JSON 데이터
 
 - 값 필요
 
@@ -1365,13 +1744,6 @@ curl 글로빙 사용(—glob 플래그 제거)
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -1388,14 +1760,42 @@ curl 글로빙 사용(—glob 플래그 제거)
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1406,7 +1806,7 @@ curl 글로빙 사용(—glob 플래그 제거)
 앱 구성 보기
 
 ```bash
-magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--property`, `-P`
@@ -1430,7 +1830,7 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -1459,13 +1859,6 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -1482,14 +1875,42 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1500,7 +1921,7 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 프로젝트의 앱 나열
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -1523,7 +1944,7 @@ apps
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -1535,14 +1956,14 @@ apps
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: name*, type*, disk, path, size (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1557,13 +1978,6 @@ apps
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1584,14 +1998,42 @@ apps
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1612,13 +2054,6 @@ magento-cloud auth:api-token-login
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -1635,14 +2070,42 @@ magento-cloud auth:api-token-login
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1688,13 +2151,6 @@ stdout에 URL을 출력합니다.
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -1711,14 +2167,42 @@ stdout에 URL을 출력합니다.
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1729,7 +2213,7 @@ stdout에 URL을 출력합니다.
 계정 정보 표시
 
 ```bash
-magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 
@@ -1760,14 +2244,14 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1782,13 +2266,6 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1809,14 +2286,42 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1856,13 +2361,6 @@ logout
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -1879,14 +2377,42 @@ logout
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1912,13 +2438,6 @@ auth:login
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -1935,14 +2454,42 @@ auth:login
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1953,19 +2500,26 @@ auth:login
 Cloud API 요청에 대한 OAuth 2 액세스 토큰 가져오기
 
 ```bash
-magento-cloud auth:token
+magento-cloud auth:token [-H|--header] [-W|--no-warn]
 ```
 
-### `--help`, `-h`
+### `--header`, `-H`
 
-이 도움말 메시지 표시
+토큰에 &quot;Authorization: RFC 6750 헤더를 만들려면 &quot;베어러&quot;를 클릭하십시오.
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
+### `--no-warn`, `-W`
 
-메시지를 출력하지 않음
+기본적으로 stderr로 인쇄되는 경고를 표시하지 않습니다. 다른 유용할 수 있는 메시지를 숨기므로 이 옵션은 감독자를 리디렉션하는 것보다 선호됩니다.
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -1986,14 +2540,42 @@ magento-cloud auth:token
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2004,7 +2586,7 @@ magento-cloud auth:token
 프로젝트에 대한 Blackfire.io 통합 설정
 
 ```bash
-magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--server_id`
@@ -2027,7 +2609,7 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2052,9 +2634,92 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 - 기본값: `false`
 - 값을 허용하지 않음
 
+### `--verbose`, `-v|-vv|-vvv`
+
+메시지 세부 정보 증가
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--yes`, `-y`
+
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no`, `-n`
+
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
 ### `--quiet`, `-q`
 
 메시지를 출력하지 않음
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+
+## `blue-green:conclude`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 알파 ]&lt;/> 파란색/녹색 배포 완료
+
+```bash
+magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--project`, `-p`
+
+프로젝트 ID 또는 URL
+
+- 값 필요
+
+### `--host`
+
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
+
+- 값 필요
+
+### `--environment`, `-e`
+
+환경 ID
+
+- 값 필요
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2075,14 +2740,236 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+
+## `blue-green:deploy`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 알파 ]&lt;/> 파란색/녹색 배포 수행
+
+```bash
+magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`
+
+최신 버전의 라우팅 비율을 설정합니다.
+
+- 기본값: `100`
+- 값 필요
+
+### `--project`, `-p`
+
+프로젝트 ID 또는 URL
+
+- 값 필요
+
+### `--host`
+
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
+
+- 값 필요
+
+### `--environment`, `-e`
+
+환경 ID
+
+- 값 필요
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--verbose`, `-v|-vv|-vvv`
+
+메시지 세부 정보 증가
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--yes`, `-y`
+
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no`, `-n`
+
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+
+## `blue-green:enable`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 알파 ]&lt;/> 파란색/녹색 배포 사용
+
+```bash
+magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`, `-%`
+
+최신 버전의 라우팅 비율을 설정합니다.
+
+- 기본값: `100`
+- 값 필요
+
+### `--project`, `-p`
+
+프로젝트 ID 또는 URL
+
+- 값 필요
+
+### `--host`
+
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
+
+- 값 필요
+
+### `--environment`, `-e`
+
+환경 ID
+
+- 값 필요
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--verbose`, `-v|-vv|-vvv`
+
+메시지 세부 정보 증가
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--yes`, `-y`
+
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no`, `-n`
+
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2093,7 +2980,7 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 프로젝트에 SSL 인증서 추가
 
 ```bash
-magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--cert`
@@ -2123,7 +3010,7 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2148,13 +3035,6 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -2171,14 +3051,42 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2189,7 +3097,7 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 프로젝트에서 인증서 삭제
 
 ```bash
-magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 
@@ -2207,7 +3115,7 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2232,13 +3140,6 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -2255,14 +3156,42 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2273,7 +3202,7 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 인증서 보기
 
 ```bash
-magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 
@@ -2304,20 +3233,13 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2338,14 +3260,42 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2356,7 +3306,7 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 프로젝트 인증서 나열
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -2438,14 +3388,14 @@ certs
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 생성됨, 도메인, 만료, id, 발급자 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -2465,20 +3415,13 @@ certs
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2499,14 +3442,42 @@ certs
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2517,7 +3488,7 @@ certs
 커밋 세부 정보 표시
 
 ```bash
-magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2542,7 +3513,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2586,13 +3557,6 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -2609,14 +3573,42 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2627,7 +3619,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 목록 커밋
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2656,7 +3648,7 @@ commits
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2668,14 +3660,14 @@ commits
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 작성자, 날짜, sha, 요약 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -2701,13 +3693,6 @@ commits
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -2724,14 +3709,42 @@ commits
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2742,7 +3755,7 @@ commits
 원격 데이터베이스의 로컬 덤프 만들기
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -2829,7 +3842,7 @@ gzip을 사용하여 덤프를 압축
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2864,13 +3877,6 @@ gzip을 사용하여 덤프를 압축
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -2887,14 +3893,42 @@ gzip을 사용하여 덤프를 압축
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -2905,7 +3939,7 @@ gzip을 사용하여 덤프를 압축
 데이터베이스의 디스크 사용량 예측
 
 ```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--bytes`, `-B`
@@ -2930,7 +3964,7 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -2954,14 +3988,14 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: max, percent_used, 사용됨. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -2986,13 +4020,6 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3009,14 +4036,42 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3027,7 +4082,7 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 원격 데이터베이스에서 SQL 실행
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -3067,7 +4122,7 @@ environment:sql
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -3102,13 +4157,6 @@ environment:sql
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3125,14 +4173,42 @@ environment:sql
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3143,7 +4219,7 @@ environment:sql
 프로젝트에 새 도메인 추가
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3180,7 +4256,7 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -3205,13 +4281,6 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3228,14 +4297,42 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3246,7 +4343,7 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 프로젝트에서 도메인 삭제
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3264,7 +4361,7 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -3289,13 +4386,6 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3312,14 +4402,42 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3330,7 +4448,7 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 도메인에 대한 세부 정보 표시
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -3347,14 +4465,14 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -3381,20 +4499,13 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3415,14 +4526,42 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3433,7 +4572,7 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 모든 도메인 목록 가져오기
 
 ```bash
-magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -3443,14 +4582,14 @@ domains
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: name*, ssl*, created_at*, updated_at (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -3470,20 +4609,13 @@ domains
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3504,14 +4636,42 @@ domains
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3522,7 +4682,7 @@ domains
 도메인 업데이트
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3559,7 +4719,7 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -3584,13 +4744,6 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3607,14 +4760,42 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3625,7 +4806,7 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 환경 활성화
 
 ```bash
-magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -3651,7 +4832,7 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -3682,13 +4863,6 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3705,14 +4879,42 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3723,7 +4925,7 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 환경 분기
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -3776,7 +4978,7 @@ branch
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -3813,13 +5015,6 @@ branch
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3836,14 +5031,42 @@ branch
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3881,13 +5104,6 @@ checkout
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -3904,14 +5120,42 @@ checkout
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -3922,7 +5166,7 @@ checkout
 환경의 API에서 인증된 cURL 요청 실행
 
 ```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -3940,6 +5184,12 @@ API 경로
 ### `--data`, `-d`
 
 보낼 데이터
+
+- 값 필요
+
+### `--json`
+
+전송할 JSON 데이터
 
 - 값 필요
 
@@ -3993,7 +5243,7 @@ curl 글로빙 사용(—glob 플래그 제거)
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4006,13 +5256,6 @@ curl 글로빙 사용(—glob 플래그 제거)
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4033,14 +5276,42 @@ curl 글로빙 사용(—glob 플래그 제거)
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4048,10 +5319,10 @@ curl 글로빙 사용(—glob 플래그 제거)
 
 ## `environment:delete`
 
-환경 삭제
+하나 이상의 환경 삭제
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -4062,7 +5333,7 @@ environment:deactivate
 
 ### `environment`
 
-삭제할 환경입니다. % 문자를 와일드카드로 사용할 수 있습니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+삭제할 환경입니다. % 문자를 와일드카드로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 
@@ -4070,52 +5341,59 @@ environment:deactivate
 
 ### `--delete-branch`
 
-원격 Git 분기 삭제
+Git 분기 삭제(비활성 환경)
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no-delete-branch`
 
-원격 Git 분기는 삭제하지 마십시오
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--inactive`
-
-모든 비활성 환경 삭제
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--merged`
-
-병합된 모든 환경 삭제
+Git 분기(비활성 환경)는 삭제하지 마십시오
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--type`
 
-삭제할 환경 유형 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형의 모든 환경 삭제(선택한 다른 항목에 추가) 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
+
+- 기본값: `[]`
+- 값 필요
+
+### `--only-type`, `-t`
+
+특정 유형의 환경만 삭제 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude`
 
-삭제하지 않는 환경입니다. % 문자를 와일드카드로 사용할 수 있습니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+삭제하지 않는 환경입니다. % 문자를 와일드카드로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude-type`
 
-삭제할 수 없는 환경 유형 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+삭제할 수 없는 환경 유형 목록을 단일 값(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
+
+### `--inactive`
+
+모든 비활성 환경 삭제(선택한 다른 환경에 추가)
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--merged`
+
+병합된 모든 환경 삭제(선택한 다른 환경에 추가)
+
+- 기본값: `false`
+- 값을 허용하지 않음
 
 ### `--project`, `-p`
 
@@ -4125,7 +5403,7 @@ environment:deactivate
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4156,13 +5434,6 @@ environment:deactivate
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -4179,14 +5450,42 @@ environment:deactivate
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4197,7 +5496,7 @@ environment:deactivate
 환경에 대한 HTTP 액세스 설정 업데이트
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -4233,7 +5532,7 @@ httpaccess
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4264,13 +5563,6 @@ httpaccess
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -4287,14 +5579,42 @@ httpaccess
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4305,7 +5625,7 @@ httpaccess
 환경에 대한 속성 읽기 또는 설정
 
 ```bash
-magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -4340,14 +5660,14 @@ environment:metadata
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -4367,7 +5687,7 @@ environment:metadata
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4398,13 +5718,6 @@ environment:metadata
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -4421,14 +5734,42 @@ environment:metadata
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4439,7 +5780,7 @@ environment:metadata
 공개 Git 리포지토리에서 환경 초기화
 
 ```bash
-magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 
@@ -4463,7 +5804,7 @@ Git 리포지토리 URL
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4494,13 +5835,6 @@ Git 리포지토리 URL
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -4517,14 +5851,42 @@ Git 리포지토리 URL
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4535,7 +5897,7 @@ Git 리포지토리 URL
 환경 목록 가져오기
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -4585,21 +5947,21 @@ env
 
 ### `--type`
 
-환경 유형별 목록을 필터링합니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+환경 유형별 목록을 필터링합니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: id*, title*, status*, type*, created, machine_name, 업데이트됨 (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -4619,20 +5981,13 @@ env
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4653,14 +6008,42 @@ env
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4671,7 +6054,7 @@ env
 환경 로그 읽기
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -4712,7 +6095,7 @@ logs
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4734,16 +6117,15 @@ logs
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4764,14 +6146,42 @@ logs
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4782,7 +6192,7 @@ logs
 환경 병합
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -4804,7 +6214,7 @@ merge
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4835,13 +6245,6 @@ merge
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -4858,14 +6261,42 @@ merge
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -4876,7 +6307,7 @@ merge
 환경에 코드 푸시
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -4974,7 +6405,7 @@ push
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -4997,13 +6428,6 @@ push
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -5020,14 +6444,42 @@ push
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5038,7 +6490,7 @@ push
 환경 재배포
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -5054,7 +6506,7 @@ redeploy
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5085,13 +6537,6 @@ redeploy
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -5108,14 +6553,42 @@ redeploy
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5126,7 +6599,7 @@ redeploy
 환경의 관계 표시
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -5161,7 +6634,7 @@ relationships
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5190,13 +6663,6 @@ relationships
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -5213,14 +6679,42 @@ relationships
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5231,7 +6725,7 @@ relationships
 scp를 사용하여 현재 환경에 파일 복사
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -5263,7 +6757,7 @@ scp
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5285,6 +6779,12 @@ scp
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--identity-file`, `-i`
 
 사용할 SSH ID(개인 키)
@@ -5294,13 +6794,6 @@ scp
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5321,14 +6814,42 @@ scp
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5361,13 +6882,6 @@ magento-cloud environment:set-remote <environment> [<branch>]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -5384,14 +6898,42 @@ magento-cloud environment:set-remote <environment> [<branch>]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5402,7 +6944,7 @@ magento-cloud environment:set-remote <environment> [<branch>]
 현재 환경에 SSH
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -5441,7 +6983,7 @@ SSH URL만 출력합니다.
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5463,6 +7005,12 @@ SSH URL만 출력합니다.
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--identity-file`, `-i`
 
 사용할 SSH ID(개인 키)
@@ -5472,13 +7020,6 @@ SSH URL만 출력합니다.
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5499,14 +7040,42 @@ SSH URL만 출력합니다.
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5517,7 +7086,7 @@ SSH URL만 출력합니다.
 환경의 코드 및/또는 데이터를 해당 상위에서 동기화
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -5549,7 +7118,7 @@ sync
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5580,13 +7149,6 @@ sync
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -5603,14 +7165,42 @@ sync
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5621,7 +7211,7 @@ sync
 환경의 공개 URL 가져오기
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -5657,7 +7247,7 @@ stdout에 URL을 출력합니다.
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5670,13 +7260,6 @@ stdout에 URL을 출력합니다.
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5697,14 +7280,42 @@ stdout에 URL을 출력합니다.
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5715,7 +7326,7 @@ stdout에 URL을 출력합니다.
 환경에서 Xdebug로 터널을 엽니다.
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -5738,7 +7349,7 @@ xdebug
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5760,6 +7371,12 @@ xdebug
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--identity-file`, `-i`
 
 사용할 SSH ID(개인 키)
@@ -5769,13 +7386,6 @@ xdebug
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5796,14 +7406,42 @@ xdebug
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5814,7 +7452,7 @@ xdebug
 단일 통합 활동에 대한 세부 정보 보기
 
 ```bash
-magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -5842,7 +7480,7 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -5854,14 +7492,14 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -5887,13 +7525,6 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -5910,14 +7541,42 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -5928,7 +7587,7 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 통합을 위한 활동 목록 가져오기
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -5949,14 +7608,14 @@ integration:activities
 
 ### `--type`
 
-유형별 활동을 필터링합니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별 활동을 필터링합니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
 
 ### `--exclude-type`, `-x`
 
-유형별로 활동을 제외합니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+유형별로 활동을 제외합니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다. % 문자를 와일드카드로 사용하여 유형을 제외할 수 있습니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -5976,7 +7635,7 @@ integration:activities
 
 ### `--state`
 
-상태별로 활동을 필터링합니다. 단일 값을 지정하면 쉼표나 공백으로 분할됩니다.
+상태별로 활동을 필터링합니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -5987,16 +7646,23 @@ integration:activities
 
 - 값 필요
 
+### `--incomplete`, `-i`
+
+불완전한 활동만 나열
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: id*, created*, description*, type*, state*, result*, completed (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -6023,7 +7689,7 @@ integration:activities
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -6036,13 +7702,6 @@ integration:activities
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6063,14 +7722,42 @@ integration:activities
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6081,7 +7768,7 @@ integration:activities
 통합 활동에 대한 로그를 표시합니다
 
 ```bash
-magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -6117,7 +7804,7 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -6134,13 +7821,6 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -6157,14 +7837,42 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6175,12 +7883,12 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 프로젝트에 통합 추가
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-통합 유형(&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerdity&#39;, &#39;health.pagerdice&#39;, &#39;health.webhook&#39;, &#39;script&#39;))
+통합 유형(&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerdity&#39;, &#39;health.pagerdity&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sucrooic&#39;, &#39;syslog&#39;)
 
 - 값 필요
 
@@ -6198,7 +7906,7 @@ Bitbucket Server 사용자 이름
 
 ### `--token`
 
-통합을 위한 액세스 토큰
+통합을 위한 인증 또는 액세스 토큰
 
 - 값 필요
 
@@ -6211,6 +7919,12 @@ Bitbucket OAuth 소비자 키
 ### `--secret`
 
 Bitbucket OAuth 소비자 암호
+
+- 값 필요
+
+### `--license-key`
+
+New Relic 로그 라이선스 키
 
 - 값 필요
 
@@ -6298,7 +8012,7 @@ GitLab: 병합 요청을 위한 데이터 복제
 
 ### `--url`
 
-Webhook: JSON 데이터를 받을 URL
+통합을 위한 URL 또는 API 엔드포인트
 
 - 값 필요
 
@@ -6367,6 +8081,77 @@ PagerDuty 라우팅 키
 
 - 값 필요
 
+### `--category`
+
+필터링에 사용되는 스모 논리 카테고리
+
+- 값 필요
+
+### `--index`
+
+Splunk 색인
+
+- 값 필요
+
+### `--sourcetype`
+
+Splunk 이벤트 소스 유형
+
+- 값 필요
+
+### `--protocol`
+
+Syslog 전송 프로토콜(&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+
+- 기본값: `tls`
+- 값 필요
+
+### `--syslog-host`
+
+Syslog 중계/수집기 호스트
+
+- 값 필요
+
+### `--syslog-port`
+
+Syslog 중계/수집기 포트
+
+- 값 필요
+
+### `--facility`
+
+Syslog 기능
+
+- 기본값: `1`
+- 값 필요
+
+### `--message-format`
+
+Syslog 메시지 형식(&#39;rfc3164&#39; 또는 &#39;rfc5424&#39;)
+
+- 기본값: `rfc5424`
+- 값 필요
+
+### `--auth-mode`
+
+인증 모드(&#39;prefix&#39; 또는 &#39;structured_data&#39;)
+
+- 기본값: `prefix`
+- 값 필요
+
+### `--auth-token`
+
+인증 토큰
+
+- 값 필요
+
+### `--verify-tls`
+
+HTTPS 인증서 확인을 사용할지 여부(권장)
+
+- 기본값: `true`
+- 값 필요
+
 ### `--project`, `-p`
 
 프로젝트 ID 또는 URL
@@ -6375,7 +8160,7 @@ PagerDuty 라우팅 키
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -6400,13 +8185,6 @@ PagerDuty 라우팅 키
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -6423,14 +8201,42 @@ PagerDuty 라우팅 키
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6441,7 +8247,7 @@ PagerDuty 라우팅 키
 프로젝트에서 통합 삭제
 
 ```bash
-magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6458,7 +8264,7 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -6483,13 +8289,6 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -6506,14 +8305,42 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6524,7 +8351,7 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 통합에 대한 세부 사항 보기
 
 ```bash
-magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6541,14 +8368,14 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -6568,20 +8395,13 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6602,14 +8422,42 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6620,7 +8468,7 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 프로젝트 통합 목록 보기
 
 ```bash
-magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -6630,14 +8478,14 @@ integrations
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: id, 요약, 유형. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -6657,20 +8505,13 @@ integrations
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6691,14 +8532,42 @@ integrations
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6709,7 +8578,7 @@ integrations
 통합 업데이트
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6720,7 +8589,7 @@ magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username
 
 ### `--type`
 
-통합 유형(&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerdity&#39;, &#39;health.pagerdice&#39;, &#39;health.webhook&#39;, &#39;script&#39;))
+통합 유형(&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerdity&#39;, &#39;health.pagerdity&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sucrooic&#39;, &#39;syslog&#39;)
 
 - 값 필요
 
@@ -6738,7 +8607,7 @@ Bitbucket Server 사용자 이름
 
 ### `--token`
 
-통합을 위한 액세스 토큰
+통합을 위한 인증 또는 액세스 토큰
 
 - 값 필요
 
@@ -6751,6 +8620,12 @@ Bitbucket OAuth 소비자 키
 ### `--secret`
 
 Bitbucket OAuth 소비자 암호
+
+- 값 필요
+
+### `--license-key`
+
+New Relic 로그 라이선스 키
 
 - 값 필요
 
@@ -6838,7 +8713,7 @@ GitLab: 병합 요청을 위한 데이터 복제
 
 ### `--url`
 
-Webhook: JSON 데이터를 받을 URL
+통합을 위한 URL 또는 API 엔드포인트
 
 - 값 필요
 
@@ -6907,6 +8782,77 @@ PagerDuty 라우팅 키
 
 - 값 필요
 
+### `--category`
+
+필터링에 사용되는 스모 논리 카테고리
+
+- 값 필요
+
+### `--index`
+
+Splunk 색인
+
+- 값 필요
+
+### `--sourcetype`
+
+Splunk 이벤트 소스 유형
+
+- 값 필요
+
+### `--protocol`
+
+Syslog 전송 프로토콜(&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+
+- 기본값: `tls`
+- 값 필요
+
+### `--syslog-host`
+
+Syslog 중계/수집기 호스트
+
+- 값 필요
+
+### `--syslog-port`
+
+Syslog 중계/수집기 포트
+
+- 값 필요
+
+### `--facility`
+
+Syslog 기능
+
+- 기본값: `1`
+- 값 필요
+
+### `--message-format`
+
+Syslog 메시지 형식(&#39;rfc3164&#39; 또는 &#39;rfc5424&#39;)
+
+- 기본값: `rfc5424`
+- 값 필요
+
+### `--auth-mode`
+
+인증 모드(&#39;prefix&#39; 또는 &#39;structured_data&#39;)
+
+- 기본값: `prefix`
+- 값 필요
+
+### `--auth-token`
+
+인증 토큰
+
+- 값 필요
+
+### `--verify-tls`
+
+HTTPS 인증서 확인을 사용할지 여부(권장)
+
+- 기본값: `true`
+- 값 필요
+
 ### `--project`, `-p`
 
 프로젝트 ID 또는 URL
@@ -6915,7 +8861,7 @@ PagerDuty 라우팅 키
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -6940,13 +8886,6 @@ PagerDuty 라우팅 키
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -6963,14 +8902,42 @@ PagerDuty 라우팅 키
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -6981,7 +8948,7 @@ PagerDuty 라우팅 키
 기존 통합의 유효성 검사
 
 ```bash
-magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6998,20 +8965,13 @@ magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<i
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7032,14 +8992,42 @@ magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<i
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7177,13 +9165,6 @@ Drush: 잠금 파일 만들기 또는 업데이트(Drush 버전 7+에서만 사�
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -7200,14 +9181,42 @@ Drush: 잠금 파일 만들기 또는 업데이트(Drush 버전 7+에서만 사�
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7253,13 +9262,6 @@ clean
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -7276,14 +9278,42 @@ clean
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7315,9 +9345,169 @@ dir
 - 기본값: `false`
 - 값을 허용하지 않음
 
+### `--verbose`, `-v|-vv|-vvv`
+
+메시지 세부 정보 증가
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--yes`, `-y`
+
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no`, `-n`
+
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
 ### `--quiet`, `-q`
 
 메시지를 출력하지 않음
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+
+## `metrics:disk-usage`
+
+서비스에 대한 디스크 사용량 표시
+
+```bash
+magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+
+```bash
+disk
+```
+
+### `--service`, `-s`
+
+서비스 이름
+
+- 값 필요
+
+### `--type`
+
+서비스 유형(서비스 이름이 제공되지 않은 경우)(예: mysql, pgsql, mongodb 등) 형식 버전은 필요하지 않습니다.
+
+- 값 필요
+
+### `--range`, `-r`
+
+시간 범위. 지표는 종료 시간(—to)까지 이 기간 동안 로드됩니다. 단위를 지정할 수 있습니다. 시간(h), 분(m) 또는 초(s). 최소 &lt;comment>5m&lt;/comment>, 최대값 &lt;comment>8시간&lt;/comment> 또는 그 이상(프로젝트에 따라 다름), 기본값은 &lt;comment>10m&lt;/comment>.
+
+- 값 필요
+
+### `--interval`, `-i`
+
+시간 간격. 기본값은 범위의 분할입니다. 단위를 지정할 수 있습니다. 시간(h), 분(m) 또는 초(s). 최소 &lt;comment>1m&lt;/comment>, 최대값 &lt;comment>1시간&lt;/comment>.
+
+- 값 필요
+
+### `--to`
+
+종료 시간입니다. 기본값은 now입니다.
+
+- 값 필요
+
+### `--bytes`, `-B`
+
+크기 표시(바이트)
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--latest`, `-1`
+
+최신 단일 데이터 포인트만 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--project`, `-p`
+
+프로젝트 ID 또는 URL
+
+- 값 필요
+
+### `--host`
+
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
+
+- 값 필요
+
+### `--environment`, `-e`
+
+환경 ID
+
+- 값 필요
+
+### `--format`
+
+출력 형식: 테이블, csv, tsv 또는 일반
+
+- 기본값: `table`
+- 값 필요
+
+### `--columns`, `-c`
+
+표시할 열. 사용 가능한 열: timestamp*, used*, limit*,%*, ipercent*, limit, interval, iused (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
+
+- 기본값: `[]`
+- 값 필요
+
+### `--no-header`
+
+테이블 헤더를 출력하지 마십시오
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--date-fmt`
+
+날짜 형식(PHP 날짜 형식 문자열)
+
+- 기본값: `c`
+- 값 필요
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7338,14 +9528,42 @@ dir
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7356,7 +9574,7 @@ dir
 다시 동기화를 사용하여 마운트에서 파일 다운로드
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--all`, `-a`
@@ -7421,7 +9639,7 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -7443,6 +9661,12 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--identity-file`, `-i`
 
 사용할 SSH ID(개인 키)
@@ -7452,13 +9676,6 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7479,14 +9696,42 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7497,7 +9742,7 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 마운트 목록 가져오기
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 
@@ -7521,14 +9766,14 @@ mounts
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 정의, 경로. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -7548,7 +9793,7 @@ mounts
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -7570,16 +9815,15 @@ mounts
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7600,14 +9844,42 @@ mounts
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7618,7 +9890,7 @@ mounts
 마운트의 디스크 사용량을 확인합니다
 
 ```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--bytes`, `-B`
@@ -7637,14 +9909,14 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 사용 가능, 최대, 마운트, percent_used, size, used. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -7670,7 +9942,7 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -7692,16 +9964,15 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7722,14 +9993,42 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7740,7 +10039,7 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 rsync를 사용하여 파일을 마운트에 업로드합니다.
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--source`
@@ -7791,7 +10090,7 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -7813,6 +10112,12 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 - 값 필요
 
+### `--instance`, `-I`
+
+인스턴스 ID
+
+- 값 필요
+
 ### `--identity-file`, `-i`
 
 사용할 SSH ID(개인 키)
@@ -7826,13 +10131,6 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -7849,14 +10147,42 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7867,7 +10193,7 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 프로젝트의 빌드 캐시 지우기
 
 ```bash
-magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 ### `--project`, `-p`
@@ -7878,20 +10204,13 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7912,14 +10231,42 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -7930,7 +10277,7 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 프로젝트의 API에서 인증된 cURL 요청을 실행합니다
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
 ```
 
 
@@ -7948,6 +10295,12 @@ API 경로
 ### `--data`, `-d`
 
 보낼 데이터
+
+- 값 필요
+
+### `--json`
+
+전송할 JSON 데이터
 
 - 값 필요
 
@@ -8001,20 +10354,13 @@ curl 글로빙 사용(—glob 플래그 제거)
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8035,14 +10381,42 @@ curl 글로빙 사용(—glob 플래그 제거)
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8053,7 +10427,7 @@ curl 글로빙 사용(—glob 플래그 제거)
 로컬에서 프로젝트 복제
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -8099,7 +10473,7 @@ get
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -8112,13 +10486,6 @@ get
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8139,14 +10506,42 @@ get
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8157,7 +10552,7 @@ get
 프로젝트에 대한 속성을 읽거나 설정합니다
 
 ```bash
-magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -8192,14 +10587,14 @@ project:metadata
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -8219,7 +10614,7 @@ project:metadata
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -8244,13 +10639,6 @@ project:metadata
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -8267,14 +10655,42 @@ project:metadata
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8285,7 +10701,7 @@ project:metadata
 모든 활성 프로젝트 목록 가져오기
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 
@@ -8300,7 +10716,7 @@ pro
 
 ### `--pipe`
 
-간단한 프로젝트 ID 목록을 출력합니다. 페이지 매김이 비활성화됩니다.
+간단한 프로젝트 ID 목록을 출력합니다. 페이지 매김을 비활성화합니다.
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8347,27 +10763,26 @@ pro
 
 ### `--page`
 
-페이지 번호(1부터 시작)
+페이지 번호. 이렇게 하면 구성 또는 —count에도 불구하고 페이지 매김을 사용할 수 있습니다. - 파이프가 지정된 경우 무시됩니다.
 
-- 기본값: `1`
 - 값 필요
 
-### `--count`
+### `--count`, `-c`
 
-페이지당 표시할 프로젝트 수입니다. 기본값은 터미널 높이를 기반으로 합니다. 페이지 매김을 비활성화하려면 0을 사용합니다.
+페이지당 표시할 프로젝트 수입니다. 페이지 매김을 비활성화하려면 0을 사용합니다. —페이지가 지정된 경우 무시됩니다.
 
 - 값 필요
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
 ### `--columns`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -8393,13 +10808,6 @@ pro
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -8416,14 +10824,42 @@ pro
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8450,13 +10886,6 @@ magento-cloud project:set-remote [<project>]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -8473,14 +10902,42 @@ magento-cloud project:set-remote [<project>]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8491,7 +10948,7 @@ magento-cloud project:set-remote [<project>]
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 사용되지 않음 ]&lt;/> 프로젝트에서 변수를 삭제합니다
 
 ```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -8509,7 +10966,7 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -8534,13 +10991,6 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -8557,14 +11007,42 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8575,7 +11053,7 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 사용되지 않음 ]&lt;/> 프로젝트에 대한 변수 보기
 
 ```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -8608,14 +11086,14 @@ project:variable:list
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -8635,20 +11113,13 @@ project:variable:list
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8669,14 +11140,42 @@ project:variable:list
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8687,7 +11186,7 @@ project:variable:list
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 사용되지 않음 ]&lt;/> 프로젝트에 대한 변수 설정
 
 ```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -8737,7 +11236,7 @@ pvset
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -8762,13 +11261,6 @@ pvset
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -8785,14 +11277,42 @@ pvset
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8803,7 +11323,7 @@ pvset
 프로젝트 리포지토리에서 파일 읽기
 
 ```bash
-magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 
@@ -8827,7 +11347,7 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -8840,13 +11360,6 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8867,14 +11380,42 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8885,7 +11426,7 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 프로젝트 리포지토리의 파일 나열
 
 ```bash
-magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8929,7 +11470,7 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -8942,13 +11483,6 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8969,14 +11503,42 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -8987,7 +11549,7 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 프로젝트 리포지토리에서 디렉토리 또는 파일 읽기
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -9015,7 +11577,7 @@ read
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9028,13 +11590,6 @@ read
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9055,14 +11610,42 @@ read
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9073,7 +11656,7 @@ read
 경로에 대한 자세한 정보 보기
 
 ```bash
-magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 
@@ -9123,7 +11706,7 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9152,13 +11735,6 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9175,14 +11751,42 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9193,7 +11797,7 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 환경에 대한 모든 경로 나열
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -9221,14 +11825,14 @@ environment:routes
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: route*, type*, to*, url (* = default columns). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -9248,7 +11852,7 @@ environment:routes
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9261,13 +11865,6 @@ environment:routes
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9288,14 +11885,42 @@ environment:routes
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9327,13 +11952,6 @@ local:install
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9350,14 +11968,42 @@ local:install
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9387,14 +12033,14 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
 ### `--columns`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 자산, 날짜, 다운로드, 릴리스. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -9420,13 +12066,6 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9443,14 +12082,42 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9514,13 +12181,6 @@ update
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9537,14 +12197,42 @@ update
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9555,7 +12243,7 @@ update
 프로젝트에 서비스 나열
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -9578,7 +12266,7 @@ services
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9590,14 +12278,14 @@ services
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 디스크, 이름, 크기, 유형 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -9612,13 +12300,6 @@ services
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9639,14 +12320,42 @@ services
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9657,7 +12366,7 @@ services
 MongoDB에서 데이터의 이진 아카이브 덤프를 만듭니다
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9705,7 +12414,7 @@ gzip을 사용하여 덤프를 압축
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9728,13 +12437,6 @@ gzip을 사용하여 덤프를 압축
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9751,14 +12453,42 @@ gzip을 사용하여 덤프를 압축
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9769,7 +12499,7 @@ gzip을 사용하여 덤프를 압축
 MongoDB에서 데이터 내보내기
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9823,7 +12553,7 @@ mongoexport
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9846,13 +12576,6 @@ mongoexport
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9869,14 +12592,42 @@ mongoexport
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9887,7 +12638,7 @@ mongoexport
 데이터의 이진 아카이브 덤프를 MongoDB로 복원
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9921,7 +12672,7 @@ mongorestore
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -9944,13 +12695,6 @@ mongorestore
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -9967,14 +12711,42 @@ mongorestore
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -9985,7 +12757,7 @@ mongorestore
 MongoDB 셸 사용
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -10019,7 +12791,7 @@ mongo
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -10042,13 +12814,6 @@ mongo
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10065,14 +12830,42 @@ mongo
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10083,7 +12876,7 @@ mongo
 Redis CLI 액세스
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -10117,7 +12910,7 @@ Redis 명령에 추가할 인수
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -10140,13 +12933,6 @@ Redis 명령에 추가할 인수
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10163,14 +12949,42 @@ Redis 명령에 추가할 인수
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10197,13 +13011,6 @@ magento-cloud session:switch [<id>]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10220,14 +13027,42 @@ magento-cloud session:switch [<id>]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10238,7 +13073,7 @@ magento-cloud session:switch [<id>]
 환경에 대한 스냅샷 만들기
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -10277,7 +13112,7 @@ environment:backup
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -10301,16 +13136,16 @@ environment:backup
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--help`, `-h`
+### `--unsafe`
 
-이 도움말 메시지 표시
+사용되지 않는 옵션: 대신 use —live
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
+### `--help`, `-h`
 
-메시지를 출력하지 않음
+이 도움말 메시지 표시
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10331,14 +13166,42 @@ environment:backup
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10349,7 +13212,7 @@ environment:backup
 사용 가능한 환경 스냅샷 목록
 
 ```bash
-magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -10369,7 +13232,7 @@ backup:list
 
 ### `--limit`
 
-스냅샷 수를 목록으로 제한
+[사용되지 않음] - 이 옵션은 사용되지 않습니다.
 
 - 값 필요
 
@@ -10381,14 +13244,14 @@ backup:list
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -10415,7 +13278,7 @@ backup:list
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -10428,13 +13291,6 @@ backup:list
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10455,14 +13311,42 @@ backup:list
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10473,7 +13357,7 @@ backup:list
 환경 스냅샷 복원
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 
@@ -10512,7 +13396,7 @@ backup:restore
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -10543,13 +13427,6 @@ backup:restore
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10566,14 +13443,42 @@ backup:restore
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10584,7 +13489,7 @@ backup:restore
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 베타 ]&lt;/> 소스 작업 실행
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
 
@@ -10609,7 +13514,7 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -10640,13 +13545,6 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10663,14 +13561,42 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10711,13 +13637,6 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10734,14 +13653,42 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10783,13 +13730,6 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10806,14 +13746,42 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10846,13 +13814,6 @@ magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10869,14 +13830,42 @@ magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10903,13 +13892,6 @@ magento-cloud ssh-key:delete [<id>]
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -10926,14 +13908,42 @@ magento-cloud ssh-key:delete [<id>]
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -10944,7 +13954,7 @@ magento-cloud ssh-key:delete [<id>]
 계정에 SSH 키 목록 가져오기
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -10954,14 +13964,14 @@ ssh-keys
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: id*, title*, path*, 지문(* = 기본 열). 문자 &quot;+&quot;는 기본 열의 자리 표시자로 사용할 수 있습니다. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -10980,13 +13990,6 @@ ssh-keys
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11003,14 +14006,42 @@ ssh-keys
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11021,7 +14052,7 @@ ssh-keys
 구독 속성 읽기 또는 수정
 
 ```bash
-magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 
@@ -11050,14 +14081,14 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -11077,20 +14108,13 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11111,14 +14135,42 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11129,7 +14181,7 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 SSH 터널 닫기
 
 ```bash
-magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--all`, `-a`
@@ -11147,7 +14199,7 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11170,13 +14222,6 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11193,14 +14238,42 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11211,7 +14284,7 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 SSH 터널에 대한 관계 정보 보기
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 ### `--property`, `-P`
@@ -11235,7 +14308,7 @@ base64로 인코딩된 JSON으로 출력
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11253,14 +14326,14 @@ base64로 인코딩된 JSON으로 출력
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
 ### `--columns`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -11275,13 +14348,6 @@ base64로 인코딩된 JSON으로 출력
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11302,14 +14368,42 @@ base64로 인코딩된 JSON으로 출력
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11320,7 +14414,7 @@ base64로 인코딩된 JSON으로 출력
 SSH 터널 나열
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -11343,7 +14437,7 @@ tunnels
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11361,14 +14455,14 @@ tunnels
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -11383,13 +14477,6 @@ tunnels
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11410,14 +14497,42 @@ tunnels
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11428,7 +14543,7 @@ tunnels
 앱 관계로 SSH 터널 열기
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--gateway-ports`, `-g`
@@ -11446,7 +14561,7 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11475,13 +14590,6 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11498,14 +14606,42 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11516,7 +14652,7 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 앱 관계에 대한 단일 SSH 터널 열기
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -11540,7 +14676,7 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11575,13 +14711,6 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11598,14 +14727,42 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11616,7 +14773,7 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 프로젝트에 사용자 추가
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -11640,7 +14797,7 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11665,13 +14822,6 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11688,14 +14838,42 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11706,7 +14884,7 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 프로젝트에서 사용자 삭제
 
 ```bash
-magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 
@@ -11724,7 +14902,7 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11749,13 +14927,6 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11772,14 +14943,42 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11790,7 +14989,7 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 사용자의 역할 보기
 
 ```bash
-magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 
@@ -11825,7 +15024,7 @@ user:role
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -11862,13 +15061,6 @@ user:role
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -11885,14 +15077,42 @@ user:role
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11903,7 +15123,7 @@ user:role
 프로젝트 사용자 나열
 
 ```bash
-magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -11913,14 +15133,14 @@ users
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 이메일, id, 이름, 역할. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -11940,20 +15160,13 @@ users
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11974,14 +15187,42 @@ users
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -11992,7 +15233,7 @@ users
 프로젝트에서 사용자 역할 업데이트
 
 ```bash
-magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -12016,7 +15257,7 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12041,13 +15282,6 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12064,14 +15298,42 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12082,7 +15344,7 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 변수 만들기
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -12165,7 +15427,7 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12196,13 +15458,6 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12219,14 +15474,42 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12237,7 +15520,7 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 변수 삭제
 
 ```bash
-magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12261,7 +15544,7 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12292,13 +15575,6 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12315,14 +15591,42 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12333,7 +15637,7 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 사용되지 않음 ]&lt;/> 활성화된 환경 수준 변수 비활성화
 
 ```bash
-magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12351,7 +15655,7 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12382,13 +15686,6 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12405,14 +15702,42 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12423,7 +15748,7 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 사용되지 않음 ]&lt;/> 비활성화된 환경 수준 변수를 활성화합니다
 
 ```bash
-magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12441,7 +15766,7 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12472,13 +15797,6 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12495,14 +15813,42 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12513,7 +15859,7 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 변수 보기
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -12541,14 +15887,14 @@ vget
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -12568,7 +15914,7 @@ vget
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12592,13 +15938,6 @@ vget
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12615,14 +15954,42 @@ vget
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12633,7 +16000,7 @@ vget
 목록 변수
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -12654,14 +16021,14 @@ var
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: is_enabled, level, name, value. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -12681,7 +16048,7 @@ var
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12694,13 +16061,6 @@ var
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12721,14 +16081,42 @@ var
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12739,7 +16127,7 @@ var
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 사용되지 않음 ]&lt;/> 환경에 대한 변수 설정
 
 ```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -12782,7 +16170,7 @@ vset
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12813,13 +16201,6 @@ vset
 - 기본값: `false`
 - 값을 허용하지 않음
 
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 메시지 세부 정보 증가
@@ -12836,14 +16217,42 @@ vset
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12854,7 +16263,7 @@ vset
 변수 업데이트
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12925,7 +16334,7 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -12956,9 +16365,118 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 - 기본값: `false`
 - 값을 허용하지 않음
 
+### `--verbose`, `-v|-vv|-vvv`
+
+메시지 세부 정보 증가
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--yes`, `-y`
+
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no`, `-n`
+
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
 ### `--quiet`, `-q`
 
 메시지를 출력하지 않음
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+
+## `version:list`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 알파 ]&lt;/> 환경 버전 나열
+
+```bash
+magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+
+```bash
+versions
+```
+
+### `--project`, `-p`
+
+프로젝트 ID 또는 URL
+
+- 값 필요
+
+### `--host`
+
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
+
+- 값 필요
+
+### `--environment`, `-e`
+
+환경 ID
+
+- 값 필요
+
+### `--format`
+
+출력 형식: 테이블, csv, tsv 또는 일반
+
+- 기본값: `table`
+- 값 필요
+
+### `--columns`, `-c`
+
+표시할 열. 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
+
+- 기본값: `[]`
+- 값 필요
+
+### `--no-header`
+
+테이블 헤더를 출력하지 마십시오
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--help`, `-h`
+
+이 도움말 메시지 표시
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12979,14 +16497,42 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -12997,7 +16543,7 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 배치된 모든 작업자 목록 가져오기
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -13020,7 +16566,7 @@ workers
 
 ### `--host`
 
-프로젝트의 API 호스트 이름
+사용되지 않는 옵션, 더 이상 사용되지 않습니다.
 
 - 값 필요
 
@@ -13032,14 +16578,14 @@ workers
 
 ### `--format`
 
-출력 형식(&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot; 또는 &quot;plain&quot;)
+출력 형식: 테이블, csv, tsv 또는 일반
 
 - 기본값: `table`
 - 값 필요
 
-### `--columns`
+### `--columns`, `-c`
 
-표시할 열(쉼표로 구분된 목록 또는 여러 값)
+표시할 열. 사용 가능한 열: 명령, 이름, 유형 목록이 단일 값으로 제공되는 경우(예: &quot;a,b,c&quot;)는 쉼표 및/또는 공백으로 분할됩니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -13054,13 +16600,6 @@ workers
 ### `--help`, `-h`
 
 이 도움말 메시지 표시
-
-- 기본값: `false`
-- 값을 허용하지 않음
-
-### `--quiet`, `-q`
-
-메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
@@ -13081,14 +16620,42 @@ workers
 
 ### `--yes`, `-y`
 
-예/아니오 질문에 &quot;예&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;예&quot;라고 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-interaction`
+
+대화형 질문을 하지 마십시오. 기본값을 허용합니다. 환경 변수를 사용하는 것과 같습니다. &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--ansi`
+
+ANSI 출력 강제 적용
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--no-ansi`
+
+ANSI 출력 사용 안 함
 
 - 기본값: `false`
 - 값을 허용하지 않음
 
 ### `--no`, `-n`
 
-예/아니오 질문에 &quot;아니오&quot;라고 대답하십시오. 상호 작용 비활성화
+확인 질문에 &quot;아니요&quot;로 답합니다. 기타 질문에 대한 기본값을 사용합니다. 상호 작용 비활성화
+
+- 기본값: `false`
+- 값을 허용하지 않음
+
+### `--quiet`, `-q`
+
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 허용하지 않음
