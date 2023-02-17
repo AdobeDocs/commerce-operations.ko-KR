@@ -1,11 +1,10 @@
 ---
 title: 데이터베이스 프로파일러 구성
 description: 데이터베이스 프로파일러에 대한 출력을 구성하는 방법에 대한 예를 참조하십시오.
-contributor_name: Atish Goswami
-contributor_link: http://atishgoswami.com
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+badge: label="Consolidty Goswami에 의해 기여" type="Consolident" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---

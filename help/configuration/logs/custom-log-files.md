@@ -1,11 +1,10 @@
 ---
 title: 사용자 정의 로그 파일에 쓰기
 description: 사용자 지정 로그 파일을 설정하는 방법을 알아봅니다.
-contributor_name: Atwix
-contributor_link: https://www.atwix.com/
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+badge: label="Contributed by Atwix" type="Consolident" url="https://www.atwix.com/" tooltip="Atwix"
+source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
