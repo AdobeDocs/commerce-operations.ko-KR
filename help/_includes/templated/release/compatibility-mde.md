@@ -1,7 +1,7 @@
 ---
-source-git-commit: a72453e2d16932be7fb84232f584231b8584239e
+source-git-commit: 608c98818243557fe9c1f7dffceb23641b858fa5
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2197'
 ht-degree: 0%
 
 ---
@@ -1967,6 +1967,37 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="15">결제 서비스</th>
+    </tr>
+    <tr>
+      <td>결제 서비스 1.6.0</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
     </tr>
     <tr>
       <td>결제 서비스 1.5.4</td>
