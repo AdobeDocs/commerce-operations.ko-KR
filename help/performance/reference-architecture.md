@@ -1,7 +1,7 @@
 ---
 title: 참조 아키텍처
 description: Adobe Commerce 및 Magento Open Source 배포에 대한 권장 참조 아키텍처의 다이어그램을 검토합니다.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 * 슬레이브 DB를 사용하여 빠른 복구 및 데이터 백업을 수행할 수 있습니다
 * 낮은 트래픽 사이트는 DB에 이미지를 저장할 수 있습니다
 
-### 검색
+### 검색 {#search-heading}
 
 * 검색 트래픽을 기반으로 인스턴스 수 조정
 

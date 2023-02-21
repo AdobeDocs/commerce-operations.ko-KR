@@ -2,7 +2,7 @@
 title: 성능 최적화 Recommendations
 description: 다음 권장 사항을 수행하여 Adobe Commerce 구현의 성능을 최적화합니다.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -105,7 +105,7 @@ MQF(메시지 큐 프레임워크)는 모듈이 메시지를 큐에 게시할 �
 >
 > 클라우드 인프라의 Adobe Commerce은 범위를 벗어나서 DNS 조회를 제외하고 위의 모든 인프라 및 아키텍처 최적화를 이미 적용합니다.
 
-### 검색
+### 검색 {#search-heading}
 
 Adobe Commerce 버전 2.4에서는 Elasticsearch이 필요하지만 2.4 이전 버전에서 활성화하는 것이 가장 좋습니다.
 
