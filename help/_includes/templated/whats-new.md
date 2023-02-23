@@ -1,7 +1,7 @@
 ---
-source-git-commit: e7c10f28e241e47af8722fd41da0a9e86709b871
+source-git-commit: 5014cdc2ce236798a57d1c537aeefab135d03559
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,112 @@ ht-degree: 0%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
+
+### 2023년 2월 23일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>업데이트 날짜: <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">제품 호환성</a> 다음에서 최신 릴리스가 있는 표 <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=en">상거래 서비스</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6358853d1bbd2b021b755750b1719cf270d98b39">635885</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 2월 17일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>추가됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/use-varnish-esi.html">배지 메타데이터</a> 외부 기여자가 제출한 항목을 인식하기 위해</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/93fcef7b8c3dd152362978412929b9f1912eb3a9">93fcef</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>업데이트 날짜: <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html#compatibility">호환성 테이블</a> 을 참조하십시오.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b0ccab209113308c2be79197247a43805d85e269">b0ccab</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 2월 15일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>업데이트 날짜: <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">magento-cloud CLI 참조</a> v1.42.0 릴리스 이후 설명서.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bd61e9766656df422ba9222283b04e700e8a762b">bd61e9</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 2월 14일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>베타 6에 대한 Adobe Commerce 2.4.6 릴리스 노트를 업데이트했습니다. 자세한 내용은 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Adobe Commerce 2.4.6 릴리스 노트</a></p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e0007088fecc1bb59272508ad19ce782f4b741d">8e0007</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 2월 9일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 노트</a> 1.1.27 QPT(Quality Patches Tool) 패키지 릴리스의 경우</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/64cb70ebc9f2bd6533581a302e15aa6301ae4869">64cb70</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023년 1월 27일
 
@@ -127,86 +233,6 @@ ht-degree: 0%
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0ffc4e9c9b0bb4fe629d0f0fb46bfbb287d5fdcc">0ffc4e</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group --><!-- month_group -->
-
-### 2022년 12월 20일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 노트</a> 1.1.25 QPT(Quality Patches Tool) 패키지 릴리스의 경우</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fb34939dcfb754175148538faf83033f165e7d11">fb3493</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2022년 12월 16일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>를 추가했습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">참조</a> 모든 메시지 큐 소비자의 기능을 설명하는 중입니다.</p>
-</td>
-      <td>새로운 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d5683e80746bf346048e36627f9901bc359ddd81">d5683e</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2022년 12월 2일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>추가됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html&lt;br/&gt;">지침</a> Adobe Commerce Pro 프로젝트의 데이터베이스 테이블 저장소 형식을 변환하는 중입니다.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e023c47548a8dac6a4c3ed2dcfc7557af27a25a2">e023c4</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2022년 12월 1일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>를 추가했습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">참고</a> 지원 센터에 연락하여 클라우드 인프라에서 서비스 업그레이드를 요청하는 정보.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/396274c0b22534977cf6efeb222634e470b39f6f">396274</a> (커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
