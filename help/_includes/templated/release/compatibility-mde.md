@@ -1,7 +1,7 @@
 ---
-source-git-commit: 608c98818243557fe9c1f7dffceb23641b858fa5
+source-git-commit: 9b27ce148570b9480c4a1373c6b82c401742fd88
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -828,18 +828,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">카탈로그 서비스</th>
     </tr>
     <tr>
+      <td>카탈로그 서비스 1.4</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>카탈로그 서비스 1.3</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
       <td>카탈로그 서비스 1.1</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
       </td>
@@ -864,13 +926,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>지원됨</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
       </td>
@@ -1401,18 +1463,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">라이브 검색</th>
     </tr>
     <tr>
+      <td>라이브 검색 2.0.5</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>라이브 검색 2.0.4</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
       <td>라이브 검색 2.0.3</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
       </td>
@@ -1437,13 +1561,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>지원됨</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
       </td>
@@ -2377,18 +2501,173 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">빠른 체크아웃</th>
     </tr>
     <tr>
+      <td>빠른 체크아웃 1.7.0</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>빠른 체크아웃 1.6.0</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>빠른 체크아웃 1.5.0</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>빠른 체크아웃 1.4.0</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>빠른 체크아웃 1.3.0</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
       <td>빠른 체크아웃 1.2.0</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
       </td>
-      <td>지원됨</span>
+      <td>호환 가능</span>
       </td>
-      <td>지원됨</span>
+      <td>호환 가능</span>
       </td>
-      <td>지원됨</span>
+      <td>호환 가능</span>
       </td>
-      <td>지원되지 않음</span>
+      <td>호환 가능</span>
       </td>
       <td>지원되지 않음</span>
       </td>
@@ -2511,34 +2790,65 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">제품 Recommendations</th>
     </tr>
     <tr>
+      <td>제품 Recommendations 4.0.1</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
       <td>제품 Recommendations 4.0.0</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
-      <td>지원됨</span>
+      <td>지원되지 않음</span>
       </td>
     </tr>
     <tr>
