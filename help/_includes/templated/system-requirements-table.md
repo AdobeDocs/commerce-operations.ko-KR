@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
+source-git-commit: 8f4575e529cff1e11544f6df66bd486709e3d826
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 63%
+source-wordcount: '238'
+ht-degree: 62%
 
 ---
 # 시스템 요구 사항
@@ -123,7 +123,7 @@ ht-degree: 63%
             1.2
       </td>
       <td>
-          —
+          --
       </td>
       <td>
           --
@@ -644,4 +644,4 @@ ht-degree: 63%
 
 >[!IMPORTANT]
 >
->클라우드 기반의 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며, Adobe Commerce 온프레미스 배포에서 지원하는 버전과 가끔 다릅니다. 자세한 내용은 [지원되는 소프트웨어 및 서비스](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software) 에서 _클라우드 안내서_.
+>클라우드 기반의 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며, Adobe Commerce 온프레미스 배포에서 지원하는 버전과 가끔 다릅니다. 자세한 내용은 [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 에서 _클라우드 안내서_.
