@@ -1,10 +1,10 @@
 ---
 title: 소프트웨어 수명 주기 정책
-description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
+description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 주요 날짜에 대해 알아보십시오.
 source-git-commit: 2612405bed470c4b0e0d501ab36bcfb09ac50e92
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 14%
+ht-degree: 10%
 
 ---
 
