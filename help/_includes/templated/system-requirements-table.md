@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8f4575e529cff1e11544f6df66bd486709e3d826
+source-git-commit: b29d19aefcea15e2242f5ac6d5850aff063a68c8
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 62%
+source-wordcount: '214'
+ht-degree: 69%
 
 ---
 # 시스템 요구 사항
@@ -28,7 +28,7 @@ ht-degree: 62%
   </thead>
   <tbody>
     <tr>
-      <td><span class="uicontrol">작성기</span></td>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
             2.2
       </td>
@@ -64,7 +64,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Elasticsearch</span></td>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
             7.17
       </td>
@@ -100,7 +100,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">OpenSearch</span></td>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
             1.2
       </td>
@@ -136,7 +136,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">MariaDB</span></td>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10.4
       </td>
@@ -172,7 +172,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">MySQL</span></td>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
             8.0
       </td>
@@ -208,7 +208,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">PHP</span></td>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             8.1
       </td>
@@ -244,7 +244,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">RabbitMQ</span></td>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
             3.9
       </td>
@@ -280,7 +280,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">레디스</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
             6.2
       </td>
@@ -316,7 +316,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">바니쉬</span></td>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
             7.0
       </td>
@@ -352,7 +352,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Apache</span></td>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
       <td>
             2.4
       </td>
@@ -388,7 +388,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">nginx</span></td>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
             1.18
       </td>
@@ -424,7 +424,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS Aurora(MySQL)</span></td>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
             8.0
       </td>
@@ -460,7 +460,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS S3</span></td>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
             ✔️
       </td>
@@ -496,7 +496,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS MQ</span></td>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
             3.9.13
       </td>
@@ -532,66 +532,30 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS ElastiCache</span></td>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
+            레디스
       </td>
       <td>
-            레디스 6
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">AWS Elasticsearch</span></td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
-      </td>
-      <td>
-            7.9
+            레디스
       </td>
       <td>
           --
@@ -604,7 +568,43 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS OpenSearch</span></td>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
             1.2
       </td>
@@ -644,4 +644,4 @@ ht-degree: 62%
 
 >[!IMPORTANT]
 >
->클라우드 기반의 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며, Adobe Commerce 온프레미스 배포에서 지원하는 버전과 가끔 다릅니다. 자세한 내용은 [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 에서 _클라우드 안내서_.
+>클라우드 인프라에서 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며 Adobe Commerce 온프레미스 배포에서 지원하는 버전과 다른 경우가 있습니다. 다음을 참조하십시오 [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 다음에서 _Cloud 안내서_.
