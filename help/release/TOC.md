@@ -1,9 +1,9 @@
 ---
 user-guide-title: 릴리스 정보
-user-guide-description: Adobe Commerce 및 Magento Open Source 릴리스에 대해 알아봅니다.
-source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
+user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 한 곳에서 액세스할 수 있습니다.
+source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '92'
 ht-degree: 15%
 
 ---
@@ -43,8 +43,7 @@ ht-degree: 15%
 - [릴리스된 버전](versions.md)
 - [버전별 기능](features.md)
 - [제품 가용성](product-availability.md)
-- [제품 로드맵](product-roadmap.md)
-- [베타 프로그램](beta-program.md)
+- [베타 릴리스](beta.md)
 - 계획 및 정책 {#planning}
    - [라이프사이클 정책](lifecycle-policy.md)
    - [버전 관리 정책](versioning-policy.md)

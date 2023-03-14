@@ -1,11 +1,11 @@
 ---
-source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
+source-git-commit: 0feb0124cfa375a8ebfd17ad88b1b1eaec99e0e5
 workflow-type: tm+mt
 source-wordcount: '15'
 ht-degree: 0%
 
 ---
-# PHP 확장
+# 확장 프로그램
 
 Adobe Commerce에는 다음이 필요합니다.
 
@@ -14,6 +14,7 @@ Adobe Commerce에는 다음이 필요합니다.
 - `ext-curl`
 - `ext-dom`
 - `ext-fileinfo`
+- `ext-filter`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -33,16 +34,17 @@ Adobe Commerce에는 다음이 필요합니다.
 - `ext-xmlwriter`
 - `ext-xsl`
 - `ext-zip`
+- `ext-zlib`
 - `lib-libxml`
-- `lib-openssl`
 
-Adobe Commerce용 B2B에는 다음이 필요합니다.
+Adobe Commerce용 B2B는 다음 조건을 충족해야 합니다.
 
 - `ext-bcmath`
 - `ext-ctype`
 - `ext-curl`
 - `ext-dom`
 - `ext-fileinfo`
+- `ext-filter`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -62,16 +64,17 @@ Adobe Commerce용 B2B에는 다음이 필요합니다.
 - `ext-xmlwriter`
 - `ext-xsl`
 - `ext-zip`
+- `ext-zlib`
 - `lib-libxml`
-- `lib-openssl`
 
-Magento Open Source 필요:
+Magento Open Source에 필요한 사항:
 
 - `ext-bcmath`
 - `ext-ctype`
 - `ext-curl`
 - `ext-dom`
 - `ext-fileinfo`
+- `ext-filter`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -90,5 +93,5 @@ Magento Open Source 필요:
 - `ext-xmlwriter`
 - `ext-xsl`
 - `ext-zip`
+- `ext-zlib`
 - `lib-libxml`
-- `lib-openssl`

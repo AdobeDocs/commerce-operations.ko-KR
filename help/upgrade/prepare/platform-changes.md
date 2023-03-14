@@ -1,9 +1,9 @@
 ---
 title: 플랫폼 변경 사항 검토
-description: Adobe Commerce 또는 Magento Open Source 프로젝트 업그레이드를 준비할 때 릴리스의 주요 플랫폼 변경 사항을 숙지하십시오.
-source-git-commit: 2b6410781d4ebb4815ff81c9719612692d176fff
+description: Adobe Commerce 프로젝트 업그레이드를 준비할 때 릴리스의 주요 플랫폼 변경 사항을 숙지하십시오.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '97'
 ht-degree: 0%
 
 ---
@@ -11,23 +11,10 @@ ht-degree: 0%
 
 # 업그레이드하기 전에 플랫폼 변경 사항 검토
 
-Adobe Commerce 2.4.4는 일반적으로 2022년 4월 12일에 사용할 수 있으며, 3월 29일부터 Adobe Commerce 고객 및 파트너에 대한 사전 릴리스 액세스가 제공됩니다. 2.4.4 릴리스는 많은 플랫폼 업데이트가 포함되어 있으므로 고유합니다. PHP 8.1과 다음을 포함한 몇 가지 주요 프레임워크 업그레이드가 함께 제공됩니다.
+의 기술 플랫폼 변경 사항에 대해 자세히 알아보십시오. [릴리스 정보](../../release/release-notes/overview.md) 및 [시스템 요구 사항](../../installation/system-requirements.md).
 
-- PHP 7.3에 대한 지원을 제거하는 중
-- Elasticsearch 대신 OpenSearch 지원
-- Elasticsearch, Redis, MySQL, JavaScript 라이브러리 및 작성기 종속성을 포함하여 여러 시스템 종속성에 대한 최신 버전을 지원합니다
-- 이전 JavaScript 라이브러리, 중복 Laminas 라이브러리 및 NPM 종속성 제거
+Adobe Commerce 고객 및 파트너는 [Adobe Commerce 베타 릴리스](../../release/beta.md) GA(일반 배포)를 앞둔 코드를 일찍 액세스할 수 있습니다.
 
-의 기술 플랫폼 변경 사항에 대해 자세히 알아보십시오 [Adobe Commerce Devblog](https://community.magento.com/t5/Magento-DevBlog/Technical-platform-changes-to-expect-in-Adobe-Commerce-2-4-4/ba-p/485506).
-
-## 지금 계획 시작
-
-파트너는 2021년 10월부터 2022년 2월까지 [Adobe Commerce 베타 프로그램](https://devdocs.magento.com/release/beta-program.html) 2022년 3월 8일에 2.4.4 GA(General Availability) 릴리스를 준비하기 위한 것입니다.
-
-2.4.4 베타 프로그램 예약에서 다음 주요 날짜를 참조하십시오.
-
-- **2.4.4 베타 1**: 2021년 10월 18일
-- **2.4.4 베타 2**: 2021년 11월 22일
-- **2.4.4 베타 3**: 2021년 12월 14일
-- **2.4.4 베타 4**: 2022년 1월 10일
-- **2.4.4GA**: 2022년 3월 8일
+>[!NOTE]
+>
+>Adobe Commerce 2.4.6은 Beta 프로그램이 지원하는 마지막 릴리스입니다. 2023년 6월부터 Adobe은 Adobe Commerce에 대한 공개 베타를 출시할 예정입니다. 다음을 참조하십시오. [출시 일정](../../release/schedule.md) 공개 베타 릴리스 날짜 목록입니다.

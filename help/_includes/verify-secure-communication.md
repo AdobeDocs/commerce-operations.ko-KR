@@ -1,18 +1,18 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 # 통신이 안전한지 확인
 
-이 섹션에서는 HTTP Basic 인증이 작동하는지 확인하는 두 가지 방법에 대해 설명합니다.
+이 섹션에서는 HTTP 기본 인증이 작동하는지 확인하는 두 가지 방법에 대해 설명합니다.
 
-* 사용 `curl` 클러스터 상태를 가져오려면 사용자 이름과 암호를 입력해야 합니다.
-* 관리자에서 HTTP Basic 인증 구성
+* 사용 `curl` 클러스터 상태를 가져오려면 사용자 이름과 암호를 입력해야 하는지 확인하는 명령
+* Admin에서 HTTP 기본 인증 구성
 
-## 다음 작업 `curl` 클러스터 상태를 확인하는 명령
+## 사용 `curl` 클러스터 상태를 확인하는 명령
 
 다음 명령을 입력합니다.
 
@@ -20,13 +20,13 @@ ht-degree: 1%
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
-예를 들어, 검색 엔진 서버에 명령을 입력하고 프록시가 포트 8080을 사용하는 경우
+예를 들어 검색 엔진 서버에서 명령을 입력하고 프록시가 포트 8080을 사용하는 경우:
 
 ```bash
 curl -i http://localhost:8080/_cluster/health
 ```
 
-인증에 실패했음을 나타내는 메시지가 표시됩니다.
+인증 실패를 나타내는 다음 메시지가 표시됩니다.
 
 ```terminal
 HTTP/1.1 401 Unauthorized
@@ -49,13 +49,13 @@ WWW-Authenticate: Basic realm="Restricted"
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
-For example:
+예:
 
 ```bash
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
-이번에는 명령과 유사한 메시지가 나타납니다.
+이번에는 다음과 유사한 메시지로 명령이 성공합니다.
 
 ```terminal
 HTTP/1.1 200 OK
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 관리자에서 HTTP 기본 인증 구성
 
-에 설명된 것과 동일한 작업을 수행합니다. [검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외* click **[!UICONTROL Yes]** 에서 **[!UICONTROL Enable Elasticsearch HTTP Auth]** 을 나열하고 제공된 필드에 사용자 이름과 암호를 입력합니다.
+에 설명된 것과 동일한 작업 수행 [검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외* 클릭 **[!UICONTROL Yes]** 다음에서 **[!UICONTROL Enable HTTP Auth]** 제공된 필드에 사용자 이름과 암호를 나열하고 입력합니다.
 
-클릭 **[!UICONTROL Test Connection]** 제대로 작동하는지 확인한 후 **[!UICONTROL Save Config]**.
+클릭 **[!UICONTROL Test Connection]** 제대로 작동하는지 확인한 다음 **[!UICONTROL Save Config]**.
 
-계속하기 전에 Magento 캐시를 플러시하고 다시 색인화해야 합니다.
+계속하기 전에 캐시를 플러시하고 다시 인덱싱해야 합니다.
