@@ -46,7 +46,7 @@ ht-degree: 0%
       - [작성기 패키지 다운로드](sample-data/composer-packages.md)
       - [Git 리포지토리 복제](sample-data/git-repositories.md)
       - [모듈 제거 또는 업데이트](sample-data/remove-or-update.md)
-- 튜토리얼 {#tutorials}
+- Tutorials {#tutorials}
    - [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](tutorials/backup.md)
    - [데이터베이스 상태 확인](tutorials/database-status.md)
    - [메시지 소비자 동작 구성](tutorials/message-consumers.md)

@@ -60,7 +60,7 @@ ht-degree: 0%
       - [전제 조건](data-migration-tool/prerequisites.md)
       - [설치](data-migration-tool/install.md)
       - [업그레이드](data-migration-tool/upgrade.md)
-      - [Configure](data-migration-tool/configure.md)
+      - [구성](data-migration-tool/configure.md)
       - [사용자 지정](data-migration-tool/customize.md)
       - [기술 사양](data-migration-tool/technical-specification.md)
    - 데이터 마이그레이션 {#migrate-data}
