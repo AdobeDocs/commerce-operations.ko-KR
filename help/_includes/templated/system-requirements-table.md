@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+source-git-commit: 4117662e4b3686388d578ae3e620ee6478216a98
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 70%
@@ -78,7 +78,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.4, 7.17
       </td>
       <td>
             7.17
@@ -258,7 +258,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+            8.1, 8.2
       </td>
       <td>
             8.1
@@ -666,34 +666,34 @@ ht-degree: 70%
             Redis 6.2
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
-            레디스
+            레디스 6
       </td>
       <td>
           --
@@ -800,7 +800,7 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->클라우드 인프라에서 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며 Adobe Commerce 온프레미스 배포에서 지원하는 버전과 다른 경우가 있습니다. 다음을 참조하십시오 [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 다음에서 _Cloud 안내서_.
+>클라우드 기반의 Adobe Commerce에 대한 서비스 버전 및 호환성 지원은 클라우드 인프라에 배포된 버전에 따라 결정되며, Adobe Commerce 온프레미스 배포에서 지원하는 버전과 가끔 다릅니다. 자세한 내용은 [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 에서 _클라우드 안내서_.
 
 >[!NOTE]
 >
