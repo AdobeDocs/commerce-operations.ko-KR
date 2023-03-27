@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f9dc61a7cf10b3b1890878dc774e95a0adff27a
+source-git-commit: e1c40ccea2524704abd4d6b0f0a627f8809f6fa8
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
+
+### 2023년 3월 23일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 노트</a> 1.1.29 QPT(Quality Patches Tool) 패키지 릴리스의 경우</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c720c867eecfce0ba584da55aefd8f09ccb3b9f6">c720c8</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 3월 17일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>새로운 정보에 대한 정보가 추가되었습니다 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html#known-issue">알려진 문제</a> Adobe Commerce 2.4.6용.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cf389ad5aaa198cdffb0a32adab3774a613bdc1">2cf389</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 3월 16일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>업데이트됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html&lt;br/&gt;">릴리스된 버전</a>.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e0a497aec1f4fc5d0ce7226b4406ef756e8359">07e0a4</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 3월 14일
 
