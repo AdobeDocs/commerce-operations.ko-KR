@@ -1,9 +1,9 @@
 ---
 title: 카탈로그 구성 경로 참조
 description: 카탈로그 구성 값 목록을 참조하십시오.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ ht-degree: 0%
 | Recommendations 검색 수 | `catalog/search/search_recommendations_count` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |
 | 각 권장 사항에 대한 결과 수 표시 | `catalog/search/search_recommendations_count_results_enabled` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |
 | 일치하는 최소 용어 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| &quot;카테고리/제품&quot; URL 재작성 생성 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 인기 있는 검색어 | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제품 URL 접미사 | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 카테고리 URL 접미사 | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ ht-degree: 0%
 | 업셀 제품 표시 | `catalog/magento_targetrule/upsell_position_behavior` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |
 | 업셀 제품 목록의 제품에 대한 순환 모드 | `catalog/magento_targetrule/upsell_rotation_mode` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 인벤토리 경로
 
@@ -145,7 +146,7 @@ ht-degree: 0%
 | 계산 모드 | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 값 | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 시각적 머천다이징 경로
 
@@ -158,7 +159,7 @@ ht-degree: 0%
 | 색상 특성 코드 | `visualmerchandiser/options/color_attribute_code` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |
 | 색상 순서 | `visualmerchandiser/options/color_order` | ![상거래 전용](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## XML 사이트 맵 경로
 
@@ -182,7 +183,7 @@ ht-degree: 0%
 | 최대 파일 크기 | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Robots.txt 제출 활성화 | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## RSS 피드 경로
 
@@ -198,7 +199,7 @@ ht-degree: 0%
 | 최상위 수준 카테고리 | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 고객 주문 상태 통지 | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 친구 경로에 전자 메일 보내기
 
@@ -213,4 +214,4 @@ ht-degree: 0%
 | 1시간 내에 전송된 최대 제품 | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 보내는 사람 제한 | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
