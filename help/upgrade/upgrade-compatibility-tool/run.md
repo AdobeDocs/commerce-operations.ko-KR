@@ -1,9 +1,9 @@
 ---
 title: "실행 [!DNL Upgrade Compatibility Tool]"
 description: 다음 단계에 따라 을(를) 실행합니다 [!DNL Upgrade Compatibility Tool] ( Adobe Commerce 프로젝트에 대한 명령줄 인터페이스 사용)을 참조하십시오.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -207,7 +207,7 @@ bin/uct graphql:compare <schema1> <schema2>
 bin/uct list
 ```
 
-## 를 사용하십시오 `--help` 명령
+## 를 사용하십시오 `help` 명령
 
 를 보려면 [!DNL Upgrade Compatibility Tool] 명령 일반 옵션 및 도움말:
 
@@ -260,6 +260,7 @@ bin/uct upgrade:check --help
 - 동일한 이름의 모듈이 두 개 있지 않도록 합니다.
 - Adobe Commerce 팔로우 [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) 모범 사례에 따라 태깅합니다.
+- 를 실행합니다. [!DNL Upgrade Compatibility Tool] 에서 [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) 대상 [Adobe Commerce on cloud 인프라](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} 프로젝트를 참조하십시오.
 
 ## 결과 최적화
 
