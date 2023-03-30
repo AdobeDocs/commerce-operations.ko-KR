@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Adobe Commerce 사용 설명서
+# Adobe Commerce 기술 설명서
 
 Adobe는 설명서 팀 외부 Adobe 직원뿐만 아니라 커뮤니티 기여를 환영합니다.
 
 ## Adobe 오픈소스 행동 수칙
 
-이 프로젝트에서는 [Adobe OOCT(Open Source Code of Conduct)](code-of-conduct.md) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)가 채택되었습니다. 자세한 내용은 [기여](contributing.md) 문서를 참조하십시오.
+이 프로젝트는 [Adobe 오픈소스 행동 수칙](code-of-conduct.md) 또는 [.NET Foundation 행동 수칙](https://dotnetfoundation.org/code-of-conduct). 자세한 내용은 [기여](contributing.md) 문서.
 
 ## Adobe 컨텐츠에 대한 귀하의 기여 정보
 
@@ -51,13 +51,6 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 * [Markdown 기본 사항](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [인쇄 가능 Markdown 치트시트](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## 레이블
-
-공용 리포지토리에서는 당사가 끌어오기 요청 워크플로우를 관리하고 끌어오기 요청에 대한 진행 상황을 사용자에게 알리는 데 도움이 되도록 끌어오기 요청에 자동화된 레이블이 지정됩니다.
-
-* **작성자에게 보낸 변경 사항**: 보류 중인 끌어오기 요청에 대한 알림을 작성자가 받았습니다.
-* **병합 준비 완료**: 끌어오기 요청 검토 팀에서 검토할 준비가 되었습니다.
 
 ## 템플릿
 
