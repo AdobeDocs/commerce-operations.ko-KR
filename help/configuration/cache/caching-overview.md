@@ -1,9 +1,9 @@
 ---
 title: 캐싱 구성
 description: Adobe Commerce 및 Magento Open Source 애플리케이션의 캐시 메커니즘 캐싱 및 구성 방법에 대해 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 [!DNL Commerce] 기본 파일 시스템 캐싱에 대한 대체 요소를 구성할 수 있습니다. 이 안내서에서는 이러한 대체 요소 중 일부를 설명합니다. 즉,
 
-- 다음을 설정합니다 [캐시](https://glossary.magento.com/cache) 의 메커니즘 [!DNL Commerce] 구성:
+- 에서 다음 캐시 메커니즘을 설정합니다. [!DNL Commerce] 구성:
 
    - [데이터베이스](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [레디스](config-redis.md)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - 제공된 수정 `default` 캐시 프론트엔드—
 
-   만 수정합니다 `<magento_root>/app/etc/di.xml` 파일, 상거래 애플리케이션의 전역 [종속성 주입](https://glossary.magento.com/dependency-injection) 구성.
+   만 수정합니다 `<magento_root>/app/etc/di.xml` 파일, 상거래 응용 프로그램의 전역 종속성 삽입 구성입니다.
 
 - 고유한 사용자 지정 캐시 프론트엔드 구성 -
 

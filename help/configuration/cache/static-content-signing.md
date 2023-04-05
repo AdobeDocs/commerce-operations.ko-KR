@@ -1,9 +1,9 @@
 ---
 title: 정적 콘텐츠 캐시
 description: 정적 콘텐츠 서명 및 기능을 활성화하거나 비활성화하는 방법을 이해합니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 이것은 흔한 일이다 [모범 사례](https://developer.yahoo.com/performance/rules.html#expires=) 정적 리소스를 캐시하는 데 사용됩니다.
 
 브라우저가 정적 리소스를 캐시하고 서버에서 해당 리소스가 변경되면 새 버전을 다운로드할 수 있도록 브라우저 캐시를 지워야 합니다.
-브라우저 캐시를 수동으로 지우는 것은 [웹 사이트](https://glossary.magento.com/website) 관리자이지, 사용자가 새로운 버전의 정적 리소스를 다운로드하도록 할 때 사용자에게 적합한 요청은 아닙니다.
+웹 사이트 관리자라면 브라우저 캐시를 수동으로 지우는 것이 작동하지만, 새 버전의 정적 리소스를 다운로드하려는 경우 사용자에게 적합한 요청이 아닙니다.
 
 ## 정적 콘텐츠 서명
 
-[정적 콘텐츠](https://glossary.magento.com/static-content) 서명은 정적 리소스에 대한 브라우저 캐시를 무효화할 수 있는 상거래 기능입니다.
-상거래 URL에 배포 버전을 추가하여 이 작업을 완수합니다 [정적 파일](https://glossary.magento.com/static-files).
+정적 콘텐츠 서명은 정적 리소스에 대한 브라우저 캐시를 무효화할 수 있는 상거래 기능입니다.
+Commerce에서는 정적 파일의 URL에 배포 버전을 추가하여 이 작업을 수행합니다.
 
 다음은 버전으로 서명된 URL의 예입니다.
 

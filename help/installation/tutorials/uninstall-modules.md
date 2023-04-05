@@ -1,9 +1,9 @@
 ---
 title: 모듈 제거
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 모듈을 제거합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 명령은 `composer.json` 파일. 를 제거하는 경우 [모듈](https://glossary.magento.com/module) 그건 _not_ 에 정의됨 `composer.json` 파일에서 이 명령은 종속성을 확인하지 않고 모듈을 제거합니다. 이 명령은 다음을 수행합니다 _not_&#x200B;그러나 파일 시스템에서 모듈의 코드를 제거합니다. 파일 시스템 도구를 사용하여 모듈의 코드를 제거해야 합니다(예: `rm -rf <path to module>`). 다른 방법으로는 다음을 수행할 수 있습니다 [disable](manage-modules.md) 비작성기 모듈입니다.
+>이 명령은 `composer.json` 파일. 모듈을 제거할 경우 _not_ 에 정의됨 `composer.json` 파일에서 이 명령은 종속성을 확인하지 않고 모듈을 제거합니다. 이 명령은 다음을 수행합니다 _not_&#x200B;그러나 파일 시스템에서 모듈의 코드를 제거합니다. 파일 시스템 도구를 사용하여 모듈의 코드를 제거해야 합니다(예: `rm -rf <path to module>`). 다른 방법으로는 다음을 수행할 수 있습니다 [disable](manage-modules.md) 비작성기 모듈입니다.
 
 명령 사용:
 
@@ -30,7 +30,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 모듈 제거 명령은 다음 작업을 수행합니다.
 
-1. 지정된 모듈이 코드 베이스에 있고 [작성기](https://glossary.magento.com/composer).
+1. 지정된 모듈이 코드 베이스에 있고 작성기에 의해 설치된 패키지인지 확인합니다.
 
    이 명령은 작동합니다 _전용_ 를 작성기 패키지로 정의한 모듈과 함께 사용합니다.
 
@@ -60,7 +60,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
    >
    >모듈 제거 _항상_ 실행 `composer remove`. 다음 `--remove-data` 옵션을 사용하면 모듈의 `Uninstall` 클래스 이름을 지정합니다.
 
-1. 를 삭제합니다. [캐시](https://glossary.magento.com/cache).
+1. 캐시를 삭제합니다.
 1. 생성된 클래스를 업데이트합니다.
 1. If `--clear-static-content` 이(가) 지정되면, [생성된 정적 보기 파일](../../configuration/cli/static-view-file-deployment.md).
 1. 저장소를 유지 관리 모드에서 해제합니다.
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-한 가지 방법은 모듈 파일 시스템을 백업한 후 두 모듈을 제거하는 것입니다. `pub/media` 파일 및 데이터베이스 테이블 _not_ 모듈 제거 [데이터베이스 스키마](https://glossary.magento.com/database-schema) 또는 데이터:
+한 가지 방법은 모듈 파일 시스템을 백업한 후 두 모듈을 제거하는 것입니다. `pub/media` 파일 및 데이터베이스 테이블 _not_ 모듈의 데이터베이스 스키마 또는 데이터 제거:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db

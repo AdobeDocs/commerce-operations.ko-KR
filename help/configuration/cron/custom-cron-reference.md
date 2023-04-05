@@ -1,9 +1,9 @@
 ---
 title: 사용자 지정 크론 작업 및 크론 그룹 참조
 description: 크론 그룹을 사용하여 크론을 사용자 지정하는 방법을 알아봅니다.
-source-git-commit: 24f6d30fb42c2bed6dbb85a4ce7acf9145a74162
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 기준 참조 사용자 정의
 
-이 항목은 사용자 정의 모듈에 대한 crontab 및 선택적으로 cron 그룹을 설정하는 데 도움이 됩니다. 사용자 지정 [모듈](https://glossary.magento.com/module) 작업을 주기적으로 예약해야 하며 해당 모듈에 대해 crontab을 설정해야 합니다. A _crontab_ 는 cron 작업 구성입니다.
+이 항목은 사용자 정의 모듈에 대한 crontab 및 선택적으로 cron 그룹을 설정하는 데 도움이 됩니다. 사용자 지정 모듈에서 작업을 주기적으로 예약해야 하는 경우 해당 모듈에 대한 crontab을 설정해야 합니다. A _crontab_ 는 cron 작업 구성입니다.
 
 선택적으로 사용자 지정 그룹을 설정할 수 있으며, 이 그룹 중 다른 클론 작업과 독립적으로 해당 그룹에 정의된 크론 작업을 실행할 수 있습니다.
 
@@ -86,7 +86,7 @@ A _클론 그룹_ 는 한 번에 두 개 이상의 프로세스에 대해 쉽게
 
 ### 크론 그룹 옵션 지정
 
-새 그룹을 선언하고 구성 옵션(모두 [저장소 보기](https://glossary.magento.com/store-view) 범위) `cron_groups.xml` 다음 위치에 있습니다.
+새 그룹을 선언할 수 있으며, `cron_groups.xml` 다음 위치에 있습니다.
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml

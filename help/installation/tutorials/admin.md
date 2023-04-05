@@ -1,9 +1,9 @@
 ---
 title: 관리자 계정 만들기, 편집 또는 잠금 해제
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 관리 애플리케이션의 관리자 계정을 관리합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - [배포 구성 만들기](deployment.md)
 - [최소한 Magento_Authorization 및 Magento_User 모듈을 사용합니다](manage-modules.md)
-- 만들기 [데이터베이스 스키마](https://glossary.magento.com/database-schema)
+- 데이터베이스 스키마 만들기
 
 >[!NOTE]
 >

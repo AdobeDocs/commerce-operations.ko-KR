@@ -1,9 +1,9 @@
 ---
 title: 구성 설정 무시
 description: 환경 변수를 사용하여 구성 설정을 재정의하는 방법을 알아봅니다.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 데이터베이스에서 이러한 값을 가져오려면 다음을 수행하십시오.
 
-1. 다음 방법으로 개발 시스템에 로그인합니다. [파일 시스템 소유자](https://glossary.magento.com/magento-file-system-owner) 아직 안 하셨다면
+1. 아직 파일 시스템 소유자로서 개발 시스템에 로그인합니다.
 1. 다음 명령을 입력합니다.
 
    ```bash
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- 에서 설정한 값을 사용하려면 `$_ENV` 배열, 설정해야 합니다. `variables_order = "EGPCS"`(환경, Get, Post, Cookie 및 서버)를 `php.ini` 파일. 자세한 내용은 [PHP 설명서](https://www.php.net/manual/en/ini.core.php).
 >
->- 클라우드 기반의 Adobe Commerce의 경우, [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)를 채울 때는 변수 이름을 `env:`. For example:
+>- 클라우드 기반의 Adobe Commerce의 경우, [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)를 채울 때는 변수 이름을 `env:`. 예:
 >
 >![환경 변수 예](../../assets/configuration/cloud-console-envvariable.png)

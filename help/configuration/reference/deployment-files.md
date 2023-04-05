@@ -1,9 +1,9 @@
 ---
 title: 배포용 구성 파일
 description: Commerce 응용 프로그램 설치에 구성 파일이 작동하는 방식을 이해합니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Adobe Commerce에서는 구성 요소를 쉽게 사용자 지정하고 구성 �
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) 는 이러한 섹션에 대한 액세스 권한만 제공하며 확장을 허용하지 않습니다.
 
-다음 계층 수준에서 각 세그먼트의 항목은 [모듈](https://glossary.magento.com/module) 비활성화된 모듈을 제외하고 모든 모듈의 구성 파일을 병합하여 얻은 시퀀스 정의입니다.
+다음 계층 수준에서, 각 세그먼트의 항목은 비활성화된 모듈을 제외하고 모든 모듈의 구성 파일을 병합하여 획득되는 모듈 순서 정의에 따라 순서가 지정됩니다.
 
 다음 섹션에서는 배포 구성의 구조 및 내용에 대해 설명합니다.
 
@@ -78,6 +78,6 @@ return array (
 
 값 `1` 또는 `0` 모듈의 활성화 여부를 나타냅니다.
 
-비활성화된 모듈이 상거래 응용 프로그램에서 인식되지 않습니다. 즉, 종속성 주입, 이벤트, 플러그인 등에서 병합 구성에 참여하지 않습니다. 비활성화된 모듈은 [상점](https://glossary.magento.com/storefront) 또는 [관리](https://glossary.magento.com/admin) 라우팅에는 영향을 주지 않습니다.
+비활성화된 모듈이 상거래 응용 프로그램에서 인식되지 않습니다. 즉, 종속성 주입, 이벤트, 플러그인 등에서 병합 구성에 참여하지 않습니다. 비활성화된 모듈은 storfront 또는 Admin을 수정하지 않으며 라우팅에는 영향을 주지 않습니다.
 
 상기 코드 베이스에 있는 비활성화된 모듈과 결석모듈의 유일한 실용적 차이는 자동로드기에 의해 비활성화된 모듈을 찾고, 상수를 다른 코드에서 재사용할 수 있다는 것이다.

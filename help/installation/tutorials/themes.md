@@ -1,9 +1,9 @@
 ---
 title: 테마 제거
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 테마를 제거합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 테마 제거
 
-이 명령을 사용하기 전에 테마의 상대 경로를 알아야 합니다. 테마는 의 하위 디렉토리에 있습니다 `<magento_root>/app/design/<area name>`. 영역을 시작하는 테마 경로를 지정해야 합니다. `frontend` (상점 테마) 또는 `adminhtml` (으)로 [관리](https://glossary.magento.com/magento-admin) 테마)를 참조하십시오.
+이 명령을 사용하기 전에 테마의 상대 경로를 알아야 합니다. 테마는 의 하위 디렉토리에 있습니다 `<magento_root>/app/design/<area name>`. 영역을 시작하는 테마 경로를 지정해야 합니다. `frontend` (상점 테마) 또는 `adminhtml` (관리자 테마의 경우)
 
-예를 들어, Luma에 대한 경로 [테마](https://glossary.magento.com/theme) Adobe Commerce 및 Magento Open Source과 함께 제공됩니다 `frontend/Magento/luma`.
+예를 들어 Adobe Commerce 및 Magento Open Source과 함께 제공되는 Luma 테마의 경로는 입니다 `frontend/Magento/luma`.
 
 주제에 대한 자세한 내용은 다음을 참조하십시오 [테마 구조](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 이 섹션에서는 파일 시스템에서 테마 코드를 포함하여 하나 이상의 테마를 제거하는 방법을 설명합니다. 백업을 먼저 만들어 나중에 데이터를 복원할 수 있습니다.
 
-이 명령은 제거 *전용* 에 지정된 테마 `composer.json`; 즉, [작성기](https://glossary.magento.com/composer) 패키지. 테마가 작성기 패키지가 아닌 경우 다음을 통해 수동으로 제거해야 합니다.
+이 명령은 제거 *전용* 에 지정된 테마 `composer.json`; 즉, 작성기 패키지로 제공되는 테마를 참조하십시오. 테마가 작성기 패키지가 아닌 경우 다음을 통해 수동으로 제거해야 합니다.
 
 * 업데이트 `parent` 노드 정보 `theme.xml` 테마에 대한 참조를 제거하려면
 * 파일 시스템에서 테마 코드를 제거하는 중입니다.
@@ -61,7 +61,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 1. 에서 테마 제거 `theme` 데이터베이스 테이블.
 1. 다음을 사용하여 코드 베이스에서 테마 제거 `composer remove`.
-1. 를 삭제합니다. [캐시](https://glossary.magento.com/cache).
+1. 캐시를 삭제합니다.
 1. 생성된 클래스를 정리합니다.
 1. If `--clear-static-content` 이(가) 지정되면, [생성된 정적 보기 파일](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->를 제거하려면 [관리](https://glossary.magento.com/admin) 테마 구성 요소의 [종속성 주입](https://glossary.magento.com/dependency-injection) 구성, `<component root directory>/etc/di.xml`.
+>관리 테마를 제거하려면 구성 요소의 종속성 삽입 구성에서도 제거해야 합니다. `<component root directory>/etc/di.xml`.

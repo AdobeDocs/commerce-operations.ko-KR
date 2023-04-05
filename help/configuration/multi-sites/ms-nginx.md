@@ -1,9 +1,9 @@
 ---
 title: Nginx를 사용하여 여러 웹 사이트 설정
 description: Nginx를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 2단계: Nginx 가상 호스트 만들기
 
-이 절차에서는 웹 사이트에서 웹 사이트를 로드하는 방법을 설명합니다. [상점](https://glossary.magento.com/storefront). 웹 사이트를 사용하거나 보기를 저장할 수 있습니다. 저장소 뷰를 사용하는 경우 그에 따라 매개변수 값을 조정해야 합니다. 이 섹션의 작업을 `sudo` 권한.
+이 단계에서는 저장소 내 웹 사이트를 로드하는 방법을 설명합니다. 웹 사이트를 사용하거나 보기를 저장할 수 있습니다. 저장소 뷰를 사용하는 경우 그에 따라 매개변수 값을 조정해야 합니다. 이 섹션의 작업을 `sudo` 권한.
 
 하나만 사용하면 [nginx 가상 호스트 파일](#step-2-create-nginx-virtual-hosts)nginx 구성을 간단하고 깔끔하게 유지할 수 있습니다. 여러 가상 호스트 파일을 사용하여 각 저장소를 사용자 지정할 수 있습니다(사용자 지정 위치 사용). `french.mysite.mg` 예).
 

@@ -1,16 +1,16 @@
 ---
 title: 캐시 옵션
 description: 낮은 수준의 캐시 스토리지에 대한 액세스를 구성합니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # 낮은 수준의 캐시 옵션
 
-상거래 응용 프로그램은 낮은 수준을 사용합니다 [캐시](https://glossary.magento.com/cache) [프론트엔드](https://glossary.magento.com/frontend) 및 [백엔드](https://glossary.magento.com/backend) 캐시 저장소에 대한 액세스를 제공합니다.
+상거래 응용 프로그램은 낮은 수준의 캐시 프론트엔드 및 백엔드를 사용하여 캐시 저장소에 대한 액세스를 제공합니다.
 
 ## 낮은 수준의 프런트 엔드 캐시
 

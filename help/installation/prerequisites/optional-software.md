@@ -1,9 +1,9 @@
 ---
 title: 소프트웨어 옵션
 description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치를 지원하기 위해 설치할 수 있는 선택적 소프트웨어에 대해 자세히 알아보십시오.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ NTP 설치 및 구성 방법:
    yum search ntp
    ```
 
-1. 설치할 패키지를 선택합니다. For example, `ntp.x86_64`.
+1. 설치할 패키지를 선택합니다. 예, `ntp.x86_64`.
 
 1. 패키지를 설치합니다.
 
@@ -99,7 +99,7 @@ NTP 설치 및 구성 방법:
 
 ## phpinfo.php 만들기
 
-다음 [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) 파일에는 [PHP](https://glossary.magento.com/php) 및 확장.
+다음 [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) 파일에는 PHP 및 해당 확장에 대한 많은 정보가 표시됩니다.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ phpinfo();
 
 자세한 내용은 [phpinfo 설명서 페이지](https://www.php.net/manual/en/function.phpinfo.php).
 
-결과를 보려면 다음을 입력합니다 [URL](https://glossary.magento.com/url) 브라우저의 위치 또는 주소 필드에서 다음을 수행합니다.
+결과를 보려면 브라우저의 위치 또는 주소 필드에 다음 URL을 입력합니다.
 
 ```http
 http://<web server host or IP>/phpinfo.php

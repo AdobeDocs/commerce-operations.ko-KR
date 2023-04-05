@@ -1,9 +1,9 @@
 ---
 title: 구성 유형
 description: 구성 유형을 만들거나 확장합니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## 구성 유형 확장
 
-기존 구성 유형을 확장하려면 [모듈](https://glossary.magento.com/module).
+기존 구성 유형을 확장하려면 모듈에 구성 파일만 만들어야 합니다.
 
 예를 들어, 이벤트 관찰자를 추가하려면 `app/code/{VendorName}/{ModuleName}/etc/events.xml` 새 관찰자를 선언합니다.
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 - XSD 유효성 검사 스키마
 - XML 구성 파일
 
-예를 들어 [어댑터](https://glossary.magento.com/adapter) 확장이 해당 서버에서 엔티티가 인덱싱되는 방식을 구성할 수 있도록 해주는 새 검색 서버의 경우 다음을 생성합니다.
+예를 들어, 확장이 해당 서버에서 엔티티가 인덱싱되는 방식을 구성할 수 있도록 해주는 새 검색 서버에 대한 어댑터를 도입하려면 다음을 생성합니다.
 
 - 로더
 - XSD 스키마 파일
-- 이름이 적절하게 지정된 구성 파일입니다. For example, `search.xml`. 이 파일은 스키마에 대해 읽기 및 유효성 검사됩니다.
+- 이름이 적절하게 지정된 구성 파일입니다. 예, `search.xml`. 이 파일은 스키마에 대해 읽기 및 유효성 검사됩니다.
 - 작업에 필요한 기타 모든 클래스입니다.
 
 >[!INFO]
@@ -132,7 +132,7 @@ class Reader extends Filesystem
 
 단일 XML 파일에 두 개의 XSD 파일을 사용해야 하는 경우 스키마 이름을 인식할 수 있고 XML 파일과 연결해야 합니다.
 만약 `events.xml` 파일 및 첫 번째 `events.xsd` 파일, 병합된 파일에 대한 XSD 파일 `events.xml` 파일 이름을 지정할 수 있습니다. `events_merged.xsd`.
-적절한 XSD 파일을 통해 XML 파일의 유효성을 검사하려면 XML 파일의 XSD 파일에 URN(Uniform Resource Name)을 추가해야 합니다. For example:
+적절한 XSD 파일을 통해 XML 파일의 유효성을 검사하려면 XML 파일의 XSD 파일에 URN(Uniform Resource Name)을 추가해야 합니다. 예:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager:etc/config.xsd">

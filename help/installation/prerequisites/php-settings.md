@@ -1,9 +1,9 @@
 ---
 title: PHP 설정
 description: 다음 단계에 따라 필요한 PHP 확장을 설치하고 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 필요한 PHP 설정을 구성합니다.
-source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # PHP 설정
 
-이 항목에서는 필요한 설정을 지정하는 방법에 대해 설명합니다 [PHP](https://glossary.magento.com/php) 옵션.
+이 항목에서는 필요한 PHP 옵션을 설정하는 방법을 설명합니다.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 0%
 php -v
 ```
 
-If [PHP](https://glossary.magento.com/php) 이 설치되어 있으면 다음과 유사한 메시지가 표시됩니다.
+PHP가 설치되어 있으면 다음과 유사한 메시지가 표시됩니다.
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
@@ -156,7 +156,7 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 
 1. 값 변경 `memory_limit` 이 섹션의 시작 부분에서 권장되는 값 중 하나로 이동합니다.
 
-   For example,
+   예,
 
    ```conf
    memory_limit=2G

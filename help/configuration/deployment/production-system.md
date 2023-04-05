@@ -1,9 +1,9 @@
 ---
 title: 프로덕션 시스템 설정
 description: Commerce 응용 프로그램에 대한 프로덕션 시스템을 설정하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 프로덕션 시스템을 설정하려면 다음을 수행하십시오.
 
-1. Commerce를 설치하거나 소스 제어에서 가져온 후 프로덕션 서버에 로그인하거나 [파일 시스템 소유자](https://glossary.magento.com/magento-file-system-owner).
+1. Commerce를 설치하거나 소스 제어에서 가져온 후 파일 시스템 소유자로 프로덕션 서버에 로그인하거나 로 전환합니다.
 1. 만들기 `~/.ssh/.composer/auth.json` 아직 안 하셨다면
 
    디렉토리를 만듭니다.

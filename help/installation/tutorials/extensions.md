@@ -1,9 +1,9 @@
 ---
 title: 확장 설치
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 확장을 설치합니다.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ Adobe Commerce 및 Magento Open Source 동작을 확장 또는 사용자 지정�
 확장에는 다음이 포함됩니다.
 
 - 모듈(Adobe Commerce 및 Magento Open Source 기능 확장)
-- 테마(모양과 느낌을 변경합니다. [상점](https://glossary.magento.com/storefront) 및 관리자)
+- 테마(상점 및 관리자의 모양 및 느낌 변경)
 - 언어 패키지(storefront 및 관리자 현지화)
 
 >[!TIP]
 >
->이 항목에서는 명령줄을 사용하여 Commerce Marketplace에서 구입한 확장을 설치하는 방법을 설명합니다. 동일한 절차를 사용하여 _임의_ 확장; 확장만 있으면 됩니다. [작성기](https://glossary.magento.com/composer) 이름 및 버전. 이를 찾으려면 확장 프로그램의 `composer.json` 파일에 대한 값을 기록하고 `"name"` 및 `"version"`.
+>이 항목에서는 명령줄을 사용하여 Commerce Marketplace에서 구입한 확장을 설치하는 방법을 설명합니다. 동일한 절차를 사용하여 _임의_ 확장; 확장의 작성기 이름 및 버전만 필요합니다. 이를 찾으려면 확장 프로그램의 `composer.json` 파일에 대한 값을 기록하고 `"name"` 및 `"version"`.
 
 설치 전에 다음을 수행할 수 있습니다.
 
@@ -85,7 +85,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
    composer require <component-name>:<version>
    ```
 
-   For example,
+   예,
 
    ```bash
    composer require j2t/module-payplug:2.0.2

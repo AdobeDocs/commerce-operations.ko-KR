@@ -1,9 +1,9 @@
 ---
 title: 데이터베이스 스키마 및 데이터 업그레이드
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 데이터베이스 스키마를 업그레이드하십시오.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 데이터베이스 스키마 및 데이터 업그레이드
 
-작업을 수행할 때마다 [데이터베이스 스키마](https://glossary.magento.com/database-schema) 또는 변경할 데이터는 이 섹션에서 설명한 명령을 실행하여 업데이트해야 합니다. 다음과 같은 이유 중 일부 목록이 있습니다.
+데이터베이스 스키마나 데이터가 변경되는 작업을 수행할 때마다 이 섹션에 설명된 명령을 실행하여 업데이트해야 합니다. 다음과 같은 이유 중 일부 목록이 있습니다.
 
 * 명령줄을 사용하여 응용 프로그램을 업그레이드했습니다
 * 명령줄을 사용하여 구성 요소를 설치하거나 업데이트했습니다

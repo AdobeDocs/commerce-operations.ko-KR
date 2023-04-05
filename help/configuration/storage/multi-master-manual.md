@@ -1,9 +1,9 @@
 ---
 title: 수동으로 마스터 데이터베이스 구성
 description: 분할 데이터베이스 솔루션 수동 구성에 대한 지침을 참조하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 수동으로 데이터베이스 분할에는 다음이 포함됩니다.
 
-- 만들기 [체크아웃](https://glossary.magento.com/checkout) 및 주문 관리 시스템(OMS) 데이터베이스
+- OMS(체크아웃 및 주문 관리 시스템) 데이터베이스를 만듭니다
 - 다음과 같은 일련의 SQL 스크립트를 실행합니다.
 
    - 외래 키 삭제
@@ -62,7 +62,7 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
 
 ## 추가 마스터 데이터베이스 설정
 
-이 섹션에서는 영업 및 [견적](https://glossary.magento.com/quote) 표.
+이 섹션에서는 영업 및 견적 테이블에 대한 데이터베이스 인스턴스를 생성하는 방법을 설명합니다.
 
 **영업 및 OMS 견적 데이터베이스를 생성하려면**:
 
@@ -211,7 +211,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source <path>/<script>.sql
    ```
 
-   For example,
+   예,
 
    ```shell
    source /root/sql-scripts/1_foreign-sales.sql
@@ -549,7 +549,7 @@ SET foreign_key_checks = 1;
 
 ## 참조 스크립트
 
-이 섹션에서는 영향을 받는 테이블의 전체 목록을 인쇄하는 스크립트를 실행할 수 있으며, 이 목록은 작업을 수행하지 않습니다. 데이터베이스를 수동으로 분할하기 전에 이 테이블을 사용하여 영향을 받는 테이블을 확인할 수 있습니다. 이 작업은 데이터베이스를 사용자 지정하는 확장을 사용하는 경우에 유용합니다 [데이터베이스 스키마](https://glossary.magento.com/database-schema).
+이 섹션에서는 영향을 받는 테이블의 전체 목록을 인쇄하는 스크립트를 실행할 수 있으며, 이 목록은 작업을 수행하지 않습니다. 데이터베이스를 수동으로 분할하기 전에 영향을 받는 테이블을 확인하는 데 이 테이블을 사용할 수 있으며, 데이터베이스 스키마를 사용자 지정하는 확장을 사용하는 경우에 유용합니다.
 
 다음 스크립트를 사용하려면
 

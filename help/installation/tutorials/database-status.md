@@ -1,9 +1,9 @@
 ---
 title: 데이터베이스 상태 확인
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 데이터베이스 상태를 확인합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '108'
 ht-degree: 2%
 
 ---
@@ -35,4 +35,4 @@ All modules are up to date.
 |--------------|--------------|---------------|
 | 0 | 일반 | 없음 |
 | 1 | 일부 모듈은 데이터베이스보다 최신 또는 이전 버전의 코드를 사용합니다 | 실행 [`magento setup:upgrade`](database-upgrade.md) 데이터베이스 스키마를 업데이트하고 를 실행하려면 `composer update` 구성 요소 종속성을 업데이트하려면 응용 프로그램 루트 디렉터리에서 |
-| 2개 | `magento setup:upgrade` 필수 여부 | [`magento setup:upgrade`](database-upgrade.md) 를 업데이트하려면 [데이터베이스 스키마](https://glossary.magento.com/database-schema) |
+| 2 | `magento setup:upgrade` 필수 여부 | [`magento setup:upgrade`](database-upgrade.md) 데이터베이스 스키마를 업데이트하려면 |

@@ -1,9 +1,9 @@
 ---
 title: 검색 중지 구성
 description: CSV 파일을 사용하여 Adobe Commerce에 대한 스토어를 관리하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Elasticsearch 및 OpenSearch에서 단어를 사용하는 방법에 대한 자�
 
 스토워드는 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리. Adobe Commerce 및 Magento Open Source은 기본 로케일에 대한 단어와 추가 파일이 포함된 하나의 CSV 파일과 함께 제공됩니다. `stopwords.csv`: 다른 CSV 파일로 표현되지 않는 모든 로케일에 대한 중지 단어를 포함합니다.
 
-stopwords 파일의 기본 수명 [캐시](https://glossary.magento.com/cache) 은 15분입니다.
+stopwords 파일 캐시의 기본 수명은 15분입니다.
 
 ### 기존 로케일의 중지 단어 편집
 
@@ -54,7 +54,7 @@ stopwords 파일의 기본 수명 [캐시](https://glossary.magento.com/cache) �
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. 다음 항목에서 용어를 검색하여 결과를 확인합니다. [상점](https://glossary.magento.com/storefront).
+1. 상점에서 용어를 검색하여 결과를 확인합니다.
 
 ### 새 로케일에 대한 중지 단어 만들기
 

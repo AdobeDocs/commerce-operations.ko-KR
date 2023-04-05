@@ -1,9 +1,9 @@
 ---
 title: 설치 [!DNL Data Migration Tool]
 description: 설치 방법 알아보기 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하려면 다음을 수행하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Magento 버전을 확인하려면 다음 방법을 사용하십시오.
 
 ### 작성기 메타카지
 
-Magento 소프트웨어를 [작성기](https://glossary.magento.com/composer) methoxackage에서 다음 명령을 입력합니다.
+작성기 메타 패키지를 사용하여 Magento 소프트웨어를 다운로드한 경우 다음 명령을 입력합니다.
 
 ```bash
 php <magento_root>/bin/magento --version

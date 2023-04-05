@@ -1,9 +1,9 @@
 ---
 title: 구성 [!DNL Data Migration Tool]
 description: 을 구성하는 두 가지 방법에 대해 알아봅니다 [!DNL Data Migration Tool] Magento 1과 Magento 2 사이의 데이터를 전송하려면 다음을 수행하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ TLS 프로토콜(예: 공개/개인 암호화 키 사용)을 사용하여 데이
 * `ssl_cert`
 * `ssl_key`
 
-For example:
+예:
 
 ```xml
 <source>
@@ -203,7 +203,7 @@ For example:
 
 매핑 파일을 사용하려면
 
-1. 다음에서 복사 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` to `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` 그리고 제거 `.dist` [확장](https://glossary.magento.com/extension).
+1. 다음에서 복사 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` to `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` 그리고 제거 `.dist` 확장.
 
 1. 에서 새로 복사한 파일의 경로를 업데이트합니다 `<options>` 노드 `config.xml`. 업데이트된 경로는 다음 중 하나여야 합니다.
 

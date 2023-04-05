@@ -1,9 +1,9 @@
 ---
 title: CentOS에서 캐시 설정
 description: CentOS에서 캐시된 멤버를 설치 및 구성합니다.
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ CentOS에 캐시된 멤버를 설치하려면 다음 작업을 사용자로 수�
 1. 다음에 대한 memcached 구성 설정 변경 `CACHESIZE` 및 `OPTIONS`:
 
    1. 열기 `/etc/sysconfig/memcached` 텍스트 편집기에서 을 참조하십시오.
-   1. 에 대한 값을 찾습니다. `CACHESIZE` 1GB 이상으로 변경합니다. For example:
+   1. 에 대한 값을 찾습니다. `CACHESIZE` 1GB 이상으로 변경합니다. 예:
 
       ```config
       CACHESIZE="1GB"
@@ -101,7 +101,7 @@ Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하�
 
 1. 웹 브라우저에서 해당 페이지로 이동합니다.
 
-   For example, `http://192.0.2.1/phpinfo.php`
+   예, `http://192.0.2.1/phpinfo.php`
 
 1. memcache가 다음과 같이 표시되는지 확인하십시오.
 
@@ -113,7 +113,7 @@ memcache가 표시되지 않으면 웹 서버를 다시 시작하고 브라우�
 
 ### MySQL 데이터베이스 및 PHP 스크립트로 구성된 멤버 캐시 테스트 만들기
 
-테스트는 MySQL 데이터베이스, 테이블 및 데이터를 사용하여 데이터베이스 데이터를 검색하고 memcache에 저장할 수 있는지 확인합니다. PHP 스크립트는 먼저 [캐시](https://glossary.magento.com/cache). 결과가 없으면 스크립트는 데이터베이스를 쿼리합니다. 원래 데이터베이스에 의해 쿼리가 이행되면 스크립트는 다음을 사용하여 memcache에 결과를 저장합니다 `set` 명령.
+테스트는 MySQL 데이터베이스, 테이블 및 데이터를 사용하여 데이터베이스 데이터를 검색하고 memcache에 저장할 수 있는지 확인합니다. PHP 스크립트는 먼저 캐시를 검색합니다. 결과가 없으면 스크립트는 데이터베이스를 쿼리합니다. 원래 데이터베이스에 의해 쿼리가 이행되면 스크립트는 다음을 사용하여 memcache에 결과를 저장합니다 `set` 명령.
 
 [이 테스트에 대한 자세한 내용](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

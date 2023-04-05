@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce 제거 또는 다시 설치
 description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 제거하고 다시 설치합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:uninstall
 
 기본적으로 `bin/magento setup:upgrade` 컴파일된 코드와 캐시를 지웁니다. 일반적으로 `bin/magento setup:upgrade` 구성 요소 및 각 구성 요소를 업데이트하려면 서로 다른 컴파일된 클래스가 필요할 수 있습니다.
 
-그러나 일부 경우(특히 프로덕션에 배포) 시간이 걸릴 수 있으므로 컴파일된 코드를 지우지 않을 수 있습니다. (다음 [캐시](https://glossary.magento.com/cache) 가 아직 지워지지 않았습니다.) 를 업데이트하려면 [데이터베이스 스키마](https://glossary.magento.com/database-schema) 및 데이터 *사용 안 함* 컴파일된 코드를 지우려면 다음을 입력하십시오.
+그러나 일부 경우(특히 프로덕션에 배포) 시간이 걸릴 수 있으므로 컴파일된 코드를 지우지 않을 수 있습니다. (캐시가 아직 지워졌습니다.) 데이터베이스 스키마 및 데이터를 업데이트하려면 *사용 안 함* 컴파일된 코드를 지우려면 다음을 입력하십시오.
 
 ```bash
 bin/magento setup:upgrade --keep-generated

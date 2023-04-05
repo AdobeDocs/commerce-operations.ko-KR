@@ -1,10 +1,10 @@
 ---
 title: 성능 테스트를 위한 데이터 생성
 description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 를 사용하여 만드는 데이터의 양을 조정할 수 있습니다 _프로필_ (작은, 중간, 큰, 아주 큰). 프로필은 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 디렉토리.
 
-For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+예, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 다음 그림은 _작음_ 프로필:
 
@@ -29,20 +29,20 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 | 매개 변수 | 작은 프로필 | 미디어 프로필 | 미디어 다중 사이트 프로필 | 큰 프로필 | 매우 큰 프로필 |
 | --- | --- | --- | --- | --- | --- |
-| `websites` | 1 | 3 | 25년 | 5개 | 5개 |
-| `store_groups` | 1 | 3 | 25년 | 5개 | 5개 |
-| `store_views` | 1 | 3 | 50 | 5개 | 5개 |
-| `simple_products` | 800년 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `websites` | 1 | 3 | 25 | 5 | 5 |
+| `store_groups` | 1 | 3 | 25 | 5 | 5 |
+| `store_views` | 1 | 3 | 50 | 5 | 5 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 및 24개 옵션 | 640(24개 옵션 포함) | 800(24개 옵션 포함) 및 79개(200개 옵션 포함) | 8,000(24개 옵션 포함) | 16,000(24개 옵션 포함) |
 | `product_images` | 제품당 이미지 100개 / 이미지 3개 | 1000개 이미지 / 제품당 3개 이미지 | 1000개 이미지 / 제품당 3개 이미지 | 2000개 이미지 / 제품당 3개 이미지 | 2000개 이미지 / 제품당 3개 이미지 |
-| `categories` | 30 | 300년 | 100년 | 3,000 | 6,000 |
-| `categories_nesting_level` | 3 | 3 | 3 | 5개 | 5개 |
-| `catalog_price_rules` | 20년 | 20년 | 20년 | 20년 | 20년 |
-| `catalog_target_rules` | 5개 | 5개 | 5개 | 5개 | 5개 |
-| `cart_price_rules` | 20년 | 20년 | 20년 | 20년 | 20년 |
-| `cart_price_rules_floor` | 2개 | 2개 | 2개 | 2개 | 2개 |
-| `customers` | 200년 | 2,000 | 2,000 | 5,000 | 10,000 |
-| `tax rates` | 130년 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
+| `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
+| `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
+| `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
+| `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
+| `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### 데이터 생성기 실행
@@ -61,7 +61,7 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 위치 `<path-to-profile>` 프로필의 절대 파일 시스템 경로 및 이름을 지정합니다.
 
-For example,
+예,
 
 ```bash
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### 관리자 사용자
 
-생성 [관리](https://glossary.magento.com/admin) 사용자 참조. [XML](https://glossary.magento.com/xml) 프로필 노드:
+관리자 사용자를 생성합니다. XML 프로필 노드:
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Generating simple products...  done in <time>
 
 ### 번들 제품
 
-번들 제품을 생성합니다. 생성된 번들 선택 사항은 [카탈로그](https://glossary.magento.com/catalog). 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If  `assign_entities_to_all_websites` 이 프로필에서 로 설정되어 있습니다. `1`. 제품은 모든 웹 사이트에 할당됩니다.
+번들 제품을 생성합니다. 생성된 번들 선택은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If  `assign_entities_to_all_websites` 이 프로필에서 로 설정되어 있습니다. `1`. 제품은 모든 웹 사이트에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -162,7 +162,7 @@ XML 프로필 노드:
 
 ### 카테고리
 
-카테고리를 생성합니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `0`, 모든 카테고리는 루트 카테고리별로 균일하게 분포됩니다. 그렇지 않으면 모든 카테고리가 하나의 루트에 할당됩니다 [카테고리](https://glossary.magento.com/category).
+카테고리를 생성합니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `0`, 모든 카테고리는 루트 카테고리별로 균일하게 분포됩니다. 그렇지 않으면 모든 카테고리가 하나의 루트 카테고리에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -231,7 +231,7 @@ XML 프로필 노드:
    </configurable_products>
    ```
 
-- 동적으로 생성된 를 기반으로 제품 생성 [속성 세트](https://glossary.magento.com/attribute-set) 지정된 개수의 속성 및 옵션이 있는 경우:
+- 지정된 수의 속성 및 옵션을 사용하여 동적으로 생성된 속성 세트를 기반으로 제품을 생성합니다.
 
    ```xml
    <configurable_products>

@@ -1,9 +1,9 @@
 ---
 title: 수동 마이그레이션이 필요한 데이터
 description: Magento 1에서 Magento 2 데이터 마이그레이션으로 수동으로 마이그레이션해야 하는 데이터와 그 방법을 알아봅니다.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 * 미디어
 
-* [상점](https://glossary.magento.com/storefront) 디자인
+* Storefront 디자인
 
-* [관리](https://glossary.magento.com/admin) 사용자 계정
+* 관리자 사용자 계정
 
 * ACL(액세스 제어 목록)
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 1. 오른쪽 창에서 **미디어에 대한 스토리지 구성**.
 
-1. 에서 **미디어 데이터베이스 선택** 목록에서 이름을 클릭합니다 [미디어 저장소](https://glossary.magento.com/media-storage) 데이터베이스.
+1. 에서 **미디어 데이터베이스 선택** 목록에서 미디어 저장소 데이터베이스 이름을 클릭합니다.
 
 1. 클릭 **동기화**.
 
@@ -48,15 +48,15 @@ ht-degree: 0%
 
 ### 파일 시스템의 미디어 파일
 
-모든 미디어 파일(제품, 카테고리, [WYSIWYG](https://glossary.magento.com/wysiwyg) 편집자 등)은 `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
+모든 미디어 파일(제품, 카테고리, WYSIWYG 편집기 등의 이미지)은에서 수동으로 복사해야 합니다 `<your Magento 1 install dir>/media` to `<your Magento 2 install dir>/pub/media`.
 
 하지만, *not* 복사 `.htaccess` Magento 1에 있는 파일 `media` 폴더를 입력합니다. Magento 2에는 자체 코드가 있습니다 `.htaccess` 그건 보존되어야 합니다.
 
 ## Storefront 디자인
 
-* 파일(CSS, JS, 템플릿, [XML](https://glossary.magento.com/xml) 레이아웃) 위치 및 서식을 변경했습니다.
+* 파일(CSS, JS, 템플릿, XML 레이아웃)의 디자인 시 위치 및 형식이 변경되었습니다
 
-* [레이아웃](https://glossary.magento.com/layout) 데이터베이스에 저장된 업데이트. 의 Magento 1 관리자를 통해 배치됨 [CMS](https://glossary.magento.com/cms) 페이지, CMS 위젯, [카테고리](https://glossary.magento.com/category) 페이지 및 제품 페이지
+* 데이터베이스에 저장된 레이아웃 업데이트. CMS 페이지, CMS 위젯, 카테고리 페이지 및 제품 페이지에서 Magento 1 관리자를 통해 배치되었습니다
 
 ## ACL(액세스 제어 목록)
 

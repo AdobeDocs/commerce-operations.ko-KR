@@ -1,9 +1,9 @@
 ---
 title: 코드 컴파일러
 description: 명령줄에서 코드 컴파일러를 실행하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 코드 컴파일에는 다음 항목이 포함되어 있습니다(특정 순서 없음).
 
 - 애플리케이션 코드 생성(공장, 프록시)
-- 영역 구성 집계(최적화됨) [종속성 주입](https://glossary.magento.com/dependency-injection) 영역별 구성
+- 영역 구성 집계(영역당 최적화된 종속성 삽입 구성)
 - 인터셉터 생성(인터셉터의 최적화된 코드 생성)
 - 차단 캐시 생성
 - 저장소 코드 생성(API에 대해 생성된 코드)
-- 서비스 데이터 속성 생성(생성됨) [확장](https://glossary.magento.com/extension) 데이터 개체의 클래스
+- 서비스 데이터 속성 생성(데이터 객체에 대해 생성된 확장 클래스)
 
 코드 컴파일 클래스는 [\Magento\Setup\Module\Di\App\Task\Operation][operation] 네임스페이스.
 
@@ -44,7 +44,7 @@ Commerce 응용 프로그램을 설치하기 전에 코드를 컴파일하려면
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   를 사용하십시오 `[-c|--clear-static-content]` 지우기 옵션 [정적 콘텐츠](https://glossary.magento.com/static-content). 이전에 모듈을 활성화하거나 비활성화하고 이전에 모듈에 대해 생성된 정적 콘텐츠를 지워야 하는 경우에 필요합니다.
+   를 사용하십시오 `[-c|--clear-static-content]` 정적 콘텐츠를 지우기 위한 옵션입니다. 이전에 모듈을 활성화하거나 비활성화하고 이전에 모듈에 대해 생성된 정적 콘텐츠를 지워야 하는 경우에 필요합니다.
 
    자세한 내용은 [모듈 사용](../../installation/tutorials/manage-modules.md).
 

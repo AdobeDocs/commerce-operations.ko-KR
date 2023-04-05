@@ -1,9 +1,9 @@
 ---
 title: 마이그레이션 개요
 description: 를 사용하여 Magento 1에서 Magento 2으로 데이터를 마이그레이션하는 방법을 배웁니다. [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. **금지** 주문 관리(출하, 송장 생성 및 대변 메모 작성)를 제외하고 Magento 1 관리자를 변경합니다.
 1. **금지** 모든 코드 변경
-1. **금지** Magento 2 관리자 및 [상점](https://glossary.magento.com/storefront)
+1. **금지** Magento 2 관리자 및 storfront에서 변경
 
 >[!TIP]
 >

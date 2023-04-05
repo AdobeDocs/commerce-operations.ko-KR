@@ -1,9 +1,9 @@
 ---
 title: 웹 서버 구성
 description: Varnish에서 작동하도록 웹 서버를 구성하는 방법을 알아봅니다.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## HTTP 응답 헤더 확인
 
-이제 Varnish가 페이지를 [HTML](https://glossary.magento.com/html) 페이지에서 반환된 응답 헤더입니다.
+이제 모든 페이지에서 반환된 HTML 응답 헤더를 확인하여 Varnish가 페이지를 제공하는지 확인할 수 있습니다.
 
 헤더를 보려면 먼저 개발자 모드에 대해 상거래를 설정해야 합니다. 여러 가지 방법을 사용할 수 있으며 가장 간단한 방법은 를 수정하는 것입니다 `.htaccess` ( Commerce Application root)를 참조하십시오. 를 사용할 수도 있습니다 [`magento deploy:mode:set`](../cli/set-mode.md) 명령.
 
@@ -235,7 +235,7 @@ varnishlog
 
 ### HTML 응답 헤더 보기
 
-브라우저 사용을 포함하여 응답 헤더를 확인하는 방법에는 몇 가지가 있습니다 [플러그인](https://glossary.magento.com/plug-in) 또는 브라우저 관리자
+브라우저 플러그인 또는 브라우저 관리자 사용을 포함하여 응답 헤더를 확인하는 방법에는 여러 가지가 있습니다.
 
 다음 예제에서는 를 사용합니다 `curl`. HTTP를 사용하여 상거래 서버에 액세스할 수 있는 모든 컴퓨터에서 이 명령을 입력할 수 있습니다.
 
@@ -243,7 +243,7 @@ varnishlog
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
-For example,
+예,
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

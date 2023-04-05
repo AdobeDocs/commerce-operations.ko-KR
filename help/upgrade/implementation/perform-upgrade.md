@@ -1,9 +1,9 @@
 ---
 title: 업그레이드 수행
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 프로젝트를 업그레이드하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 방법으로 소프트웨어를 설치한 경우 명령줄에서 Adobe Commerce 또는 Magento Open Source 응용 프로그램을 업그레이드할 수 있습니다.
 
-- 다운로드 [메타카지](https://glossary.magento.com/metapackage) 사용 `composer create-project` 명령.
+- 를 사용하여 메타패키지 다운로드 `composer create-project` 명령.
 - 압축된 아카이브 설치
 
 >[!NOTE]
@@ -108,7 +108,7 @@ ht-degree: 0%
 
    - `<product>` — (필수) 업그레이드할 패키지입니다. 온-프레미스 설치의 경우 이 값은 다음 중 하나여야 합니다 `product-community-edition` 또는 `product-enterprise-edition`.
 
-   - `<version>` —(필수) 업그레이드할 Adobe Commerce 또는 Magento Open Source 버전입니다. For example, `2.4.3`.
+   - `<version>` —(필수) 업그레이드할 Adobe Commerce 또는 Magento Open Source 버전입니다. 예, `2.4.3`.
 
    - `--no-update` —(필수) 종속성을 자동으로 업데이트합니다.
 

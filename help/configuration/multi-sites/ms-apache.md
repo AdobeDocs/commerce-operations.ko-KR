@@ -1,9 +1,9 @@
 ---
 title: Apache를 사용하여 여러 웹 사이트 설정
 description: Apache를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 우리는 다음과 같이 가정합니다.
 
-필요한 경우 기존 `index.php` 웹 사이트 또는 [저장소 보기](https://glossary.magento.com/store-view) 을 추가하고 다음을 추가합니다.
+필요한 경우 기존 `index.php` 웹 사이트 또는 스토어 보기에 대한 시작 지점 스크립트 및 다음에 추가합니다.
 
 - 개발 시스템(랩톱, 가상 시스템 등)에서 작업 중입니다.
 

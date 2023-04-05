@@ -1,9 +1,9 @@
 ---
 title: 보안을 향상하기 위해 docroot 수정
 description: Adobe Commerce 또는 Magento Open Source 온-프레미스 파일 시스템에 대한 권한 없는 브라우저 기반 액세스를 차단합니다.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,9 @@ server {
 
 ## 5. 상점 전면 확인
 
-로 이동합니다. [상점](https://glossary.magento.com/storefront) 웹 브라우저에서 모든 것이 제대로 작동하는지 확인하십시오.
+웹 브라우저의 스토어로 이동하여 모든 것이 제대로 작동하는지 확인합니다.
 
-1. 웹 브라우저를 열고 주소 표시줄에 서버의 호스트 이름 또는 IP 주소를 입력합니다. For example, `http://192.168.33.10`.
+1. 웹 브라우저를 열고 주소 표시줄에 서버의 호스트 이름 또는 IP 주소를 입력합니다. 예, `http://192.168.33.10`.
 
    다음 그림은 샘플 저장소 전면 페이지를 보여줍니다. 다음과 같이 표시되는 경우 설치가 성공했습니다!
 

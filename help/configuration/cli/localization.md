@@ -1,9 +1,9 @@
 ---
 title: 번역 사전 및 언어 패키지
 description: 번역 사전을 생성하고 언어 패키지를 빌드하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 번역 사전 생성
 
-다음을 생성할 수 있습니다 [번역 사전] 기존 문자열을 사용자 지정하려면 사용자 지정 모듈에서 단어 및 구문을 번역하거나 테마를 현지화하거나 [언어 패키지](https://glossary.magento.com/language-package).
+다음을 생성할 수 있습니다 [번역 사전] 기존 문자열을 사용자 지정하려면 사용자 지정 모듈에서 단어 및 구문을 번역하거나 테마를 현지화하거나 언어 패키지를 만듭니다.
 
 번역을 시작하려면 명령을 사용하여 기존의 모든 구문과 단어에 대한 수집된 목록을 포함하는 사전 CSV 파일을 생성합니다.
 
@@ -63,7 +63,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 - 로케일에 대한 사전을 만들 때 기본 상거래 문자열을 사용하십시오.
 - 번역할 때 자리 표시자에 주의하십시오. `%1`, `%2`
 
-상거래 에서는 자리 표시자를 사용하여 컨텍스트 값을 삽입합니다. 그들은 _not_ 번역에 사용됩니다. For example:
+상거래 에서는 자리 표시자를 사용하여 컨텍스트 값을 삽입합니다. 그들은 _not_ 번역에 사용됩니다. 예:
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -139,7 +139,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 에서 언어 패키지를 선언할 때 `language.xml` 구성 파일에서 이 패키지의 언어 상속 시퀀스를 지정해야 합니다.
 
-언어 상속을 사용하면 _하위_ 라는 기존 번역을 기반으로 함 _상위_. 하위 번역은 상위를 덮어씁니다. 그러나 하위 번역이 업로드 또는 표시되지 않거나 구 또는 단어가 없는 경우 Commerce에서는 상위 항목을 사용합니다 [로케일](https://glossary.magento.com/locale). [언어 패키지 상속의 예](#example-of-language-inheritance).
+언어 상속을 사용하면 _하위_ 라는 기존 번역을 기반으로 함 _상위_. 하위 번역은 상위를 덮어씁니다. 그러나 하위 번역에서 업로드하거나 표시하지 않거나 구문 또는 단어가 없는 경우 Commerce에서는 상위 로케일을 사용합니다. [언어 패키지 상속의 예](#example-of-language-inheritance).
 
 패키지를 선언하려면 다음 정보를 지정합니다.
 
@@ -247,7 +247,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 1. 언어 패키지의 디렉터리를 만듭니다.
 
-   For example, `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
+   예, `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
 
 1. 해당 디렉토리에 다음 항목을 모두 추가합니다.
 

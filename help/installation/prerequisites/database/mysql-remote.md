@@ -1,9 +1,9 @@
 ---
 title: 원격 MySQL 데이터베이스 연결 설정
 description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 대한 원격 데이터베이스 연결을 구성하십시오.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
    GRANT ALL ON <local database name>.* TO <remote web node username>@<remote web node server ip address> IDENTIFIED BY '<database user password>';
    ```
 
-   For example,
+   예,
 
    ```shell
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';
@@ -154,7 +154,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Adobe Commerce 또는 Magento Open Source을 설치할 때 다음을 지정해야 합니다.
 
-* 기본 [URL](https://glossary.magento.com/url) (이하 *스토어 주소*) 의 호스트 이름 또는 IP 주소를 지정합니다 *웹 노드*
+* 기본 URL( *스토어 주소*) 의 호스트 이름 또는 IP 주소를 지정합니다 *웹 노드*
 * 데이터베이스 호스트는 *원격 데이터베이스 서버* IP 주소(또는 데이터베이스 서버가 클러스터링된 경우 로드 밸런서)
 * 데이터베이스 사용자 이름은 *로컬 웹 노드* 액세스 권한을 제공한 데이터베이스 사용자
 * 데이터베이스 암호는 로컬 웹 노드 사용자의 암호입니다

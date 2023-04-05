@@ -1,9 +1,9 @@
 ---
 title: 구성 값 설정
 description: 관리자에서 잠긴 구성 값을 설정하고 값을 변경하는 방법을 알아봅니다.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 - 상거래를 설치하기 전에 기본 범위에 대한 구성 값만 설정할 수 있습니다. 기본 범위가 유일하게 유효한 범위이기 때문입니다.
 
-- Commerce를 설치한 후 웹 사이트 또는 [저장소 보기](https://glossary.magento.com/store-view) 범위.
+- Commerce를 설치한 후 모든 웹 사이트 또는 저장소 보기 범위에 대한 구성 값을 설정할 수 있습니다.
 
 다음 명령을 사용합니다.
 

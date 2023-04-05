@@ -1,9 +1,9 @@
 ---
 title: 애플리케이션 구성
 description: Adobe Commerce 및 Magento Open Source 온프레미스 배포에 필요한 설치 후 구성에 대해 알아봅니다.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Apache 웹 서버를 사용하는 경우 페이지가 제대로 표시되려면 
 
 여러 웹 노드가 있는 경우 *사용할 수 없음* 웹 노드 간에 동기화가 없으므로 응용 프로그램의 기본 파일 캐싱을 사용합니다. 즉, 한 웹 노드의 활동이 해당 웹 노드의 파일 시스템에만 기록됩니다. 후속 활동을 수행하면 다른 웹 노드에서 수행되는 경우 불필요한 파일이 작성되거나 오류가 발생할 수 있습니다.
 
-대신, [레디스](../../configuration/cache/config-redis.md) 두 기본값 모두에 대해 [캐시](https://glossary.magento.com/cache) 그리고 페이지 캐시를 구성합니다.
+대신, [레디스](../../configuration/cache/config-redis.md) 기본 캐시 및 페이지 캐시 둘 다에 사용됩니다.
 
 ## 서버 설정
 

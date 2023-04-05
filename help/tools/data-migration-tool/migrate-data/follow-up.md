@@ -1,9 +1,9 @@
 ---
 title: 데이터 마이그레이션 후속 조치
 description: Magento 1에서 Magento 2 데이터 마이그레이션이 성공했는지 그리고 모든 기능이 예상대로 작동하는지 확인하는 방법을 알아봅니다.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Magento 1의 일부 동작 및 논리가 Magento 2에서 다르게 구현되었�
 
 ### 고객 세그먼트 다시 저장 [Adobe Commerce 전용]
 
-마이그레이션 후 고객 세그먼트를 [관리](https://glossary.magento.com/admin) 패널을 구성 및 실행할 수 있습니다.
+마이그레이션 후 고객 세그먼트를 작성하고 실행하려면 관리 패널에서 다시 저장해야 합니다.
 
 ### 시간대 구성
 

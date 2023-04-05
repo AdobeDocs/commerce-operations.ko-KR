@@ -1,9 +1,9 @@
 ---
 title: 데이터베이스 복제
 description: 데이터베이스 복제 구성의 이점을 참조하십시오.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Commerce에서는 슬레이브 데이터베이스에 대한 샘플 MySQL 구성�
 
 ## 성능 개선
 
-마스터 슬레이브 복제 성능을 향상시키기 위해 슬레이브 인스턴스에 일부 테이블을 필터링할 수 있습니다. 이름 패턴으로 모든 임시 테이블을 필터링하는 것이 좋습니다 `search\_tmp\_%` 에 사용됩니다 [카탈로그](https://glossary.magento.com/catalog) 검색.
+마스터 슬레이브 복제 성능을 향상시키기 위해 슬레이브 인스턴스에 일부 테이블을 필터링할 수 있습니다. 이름 패턴으로 모든 임시 테이블을 필터링하는 것이 좋습니다 `search\_tmp\_%` 카탈로그 검색에 사용됩니다.
 
 이렇게 하려면 다음 줄을 `my.cnf` 파일을 슬레이브 인스턴스에 저장합니다.
 

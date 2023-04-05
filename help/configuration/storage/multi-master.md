@@ -1,9 +1,9 @@
 ---
 title: 데이터베이스 성능 솔루션 분할
 description: Adobe Commerce 및 Magento Open Source을 위한 데이터베이스 분할 솔루션에 대해 읽어 보십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce에서는 세 개의 마스터 데이터베이스와 복제 데이
 분할 데이터베이스 성능 솔루션을 설계하는 방식 때문에 사용자 지정 코드와 설치된 구성 요소 _사용할 수 없음_ 다음 중 하나를 수행합니다.
 
 - 데이터베이스에 직접 쓰기(대신 Adobe Commerce 데이터베이스 인터페이스를 사용해야 함)
-- 매출에 영향을 주는 JOIN 사용 또는 [견적](https://glossary.magento.com/quote) 데이터베이스
+- 판매 또는 견적 데이터베이스에 영향을 주는 JOIN 사용
 - 체크 아웃, 판매 또는 기본 데이터베이스의 테이블에 외래 키를 사용합니다
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Adobe Commerce에서는 세 개의 마스터 데이터베이스와 복제 데이
 
 분할 데이터베이스를 사용하려면 모든 호스트에 세 개의 MySQL 마스터 데이터베이스(상거래 서버의 세 개, 별도의 서버의 각 데이터베이스 등)를 설정해야 합니다. 다음은 _마스터_ 데이터베이스 및 이러한 데이터베이스는 다음과 같이 사용됩니다.
 
-- 하나의 마스터 데이터베이스 [체크아웃](https://glossary.magento.com/checkout) 표
+- 체크 아웃 테이블에 대한 하나의 마스터 데이터베이스
 - 판매 테이블에 대한 하나의 마스터 데이터베이스(즉, _Order Management 시스템_, 또는 _OMS_, 표)
 - 상거래 2 응용 프로그램 테이블의 나머지 부분에 대한 하나의 마스터 데이터베이스
 

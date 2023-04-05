@@ -1,9 +1,9 @@
 ---
 title: Ubuntu에 캐시된 구성원 설정
 description: Ubuntu에 캐시된 멤버를 설치 및 구성합니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하�
    phpinfo();
    ```
 
-1. 웹 브라우저에서 해당 페이지로 이동합니다. For example:
+1. 웹 브라우저에서 해당 페이지로 이동합니다. 예:
 
    ```http
    http://192.0.2.1/phpinfo.php
@@ -94,7 +94,7 @@ Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하�
 
 ### memcached에서 데이터를 캐시할 수 있는지 확인
 
-이 테스트에서는 PHP 스크립트를 사용하여 memcached가 저장 및 검색할 수 있는지 확인합니다 [캐시](https://glossary.magento.com/cache) 데이터.
+이 테스트에서는 PHP 스크립트를 사용하여 memcached가 캐시 데이터를 저장하고 검색할 수 있는지 확인합니다.
 
 이 테스트에 대한 자세한 내용은 [Ubuntu에서 Memcache 설치 및 사용 방법 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
@@ -117,7 +117,7 @@ if ($result) {
 
 위치 `<memcached hostname or ip>` 다음 중 하나입니다. `localhost`, `127.0.0.1`또는 memcache 호스트 이름 또는 IP 주소입니다. 다음 `<memcached port>` 은 수신 포트입니다. 기본적으로 `11211`.
 
-웹 브라우저에서 해당 페이지로 이동합니다. For example
+웹 브라우저에서 해당 페이지로 이동합니다. 예
 
 ```http
 http://192.0.2.1/cache-test.php

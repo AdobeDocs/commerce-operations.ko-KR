@@ -1,9 +1,9 @@
 ---
 title: 배포를 위한 사전 요구 사항
 description: 개발, 빌드 또는 프로덕션 시스템에 Commerce를 배포하기 위한 사전 요구 사항 목록을 참조하십시오.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - 다음을 모두 수행합니다.
 
-   - 동일한 설정 [파일 시스템 소유자](https://glossary.magento.com/magento-file-system-owner) 모든 시스템의 사용자 이름
+   - 모든 시스템에 동일한 파일 시스템 소유자 사용자 이름을 설정합니다
    - 웹 서버가 모든 시스템에서 동일한 사용자로 실행되는지 확인하십시오
    - 파일 시스템 소유자가 모든 시스템의 웹 서버 그룹에 있는지 확인합니다
 

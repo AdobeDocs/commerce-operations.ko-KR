@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Data Migration Tool] 기술 사양"
 description: 의 구현 세부 사항에 대해 알아봅니다. [!DNL Data Migration Tool] Magento 1과 Magento 2 간에 데이터를 전송할 때 확장 방법을 지정합니다."
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ ht-degree: 0%
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -209,7 +209,7 @@ TLS 프로토콜(예: 공개/개인 암호화 키 사용)을 사용하여 데이
 * `ssl_cert`
 * `ssl_key`
 
-For example:
+예:
 
 ```xml
 <source>
@@ -342,7 +342,7 @@ $this->progress->finish();
 
 #### 맵 단계
 
-맵 단계는 Magento 1에서 Magento 2으로 대부분의 데이터를 전송합니다. 이 단계에서는 map.xml 파일( `etc/` 디렉토리). 이 파일은 소스(Magento 1)와 대상(Magento 2)의 데이터 구조 간의 차이점을 설명합니다. Magento 1에 일부 항목에 속하는 테이블이나 필드가 포함된 경우 [확장](https://glossary.magento.com/extension) Magento 2에 존재하지 않는 경우 맵 단계에서 이를 무시하도록 이러한 엔티티를 여기에 배치할 수 있습니다. 그렇지 않으면 오류 메시지가 표시됩니다.
+맵 단계는 Magento 1에서 Magento 2으로 대부분의 데이터를 전송합니다. 이 단계에서는 map.xml 파일( `etc/` 디렉토리). 이 파일은 소스(Magento 1)와 대상(Magento 2)의 데이터 구조 간의 차이점을 설명합니다. Magento 1에 Magento 2에 없는 일부 확장에 속하는 테이블이나 필드가 포함된 경우 이러한 엔터티를 여기에 놓아 맵 단계에서 무시할 수 있습니다. 그렇지 않으면 오류 메시지가 표시됩니다.
 
 맵 파일의 형식은 다음과 같습니다.
 
@@ -464,7 +464,7 @@ Magento 1 및 Magento 2의 데이터 소스에 연결하고 해당 데이터(선
 
 ## 로깅
 
-마이그레이션 프로세스의 출력을 구현하고 Magento에 사용되는 모든 가능한 수준의 PSR 로거가 적용됩니다. `\Migration\Logger\Logger` 로깅 기능을 제공하기 위해 클래스가 구현되었습니다. 로거를 사용하려면 생성자를 통해 주입해야 합니다 [종속성 주입](https://glossary.magento.com/dependency-injection).
+마이그레이션 프로세스의 출력을 구현하고 Magento에 사용되는 모든 가능한 수준의 PSR 로거가 적용됩니다. `\Migration\Logger\Logger` 로깅 기능을 제공하기 위해 클래스가 구현되었습니다. 로거를 사용하려면 생성자 종속성 주입을 통해 로거를 주입해야 합니다.
 
 ```php
 class SomeClass
@@ -532,7 +532,7 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 * 단위
 * 통합
 
-도구 `tests/` 디렉토리(테스트 유형과 동일한 단위 테스트)는 `tests/unit` 디렉토리). 테스트를 시작하려면 Punit가 설치되어 있어야 합니다. 현재 디렉터리를 테스트 디렉터리로 변경하고 시작 경로를 실행합니다. For example:
+도구 `tests/` 디렉토리(테스트 유형과 동일한 단위 테스트)는 `tests/unit` 디렉토리). 테스트를 시작하려면 Punit가 설치되어 있어야 합니다. 현재 디렉터리를 테스트 디렉터리로 변경하고 시작 경로를 실행합니다. 예:
 
 ```bash
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]

@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce 소프트웨어 가져오기
 description: Adobe Commerce 및 Magento Open Source 소프트웨어를 다운로드하는 방법을 학습합니다.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ UNIX 시스템의 경우 `root` 웹 서버인 PHP와 같은 소프트웨어를 �
 
 작업 *not* 웹 서버 docroot에 응용 프로그램을 `root` 웹 서버가 해당 파일과 상호 작용할 수 없기 때문입니다.
 
-필요한 경우 `root` 생성 권한 [파일 시스템 소유자](file-system/overview.md) 그리고 해당 소유자를 웹 서버의 그룹에 추가합니다. 를 사용합니다 [파일 시스템 소유자](https://glossary.magento.com/magento-file-system-owner) 를 실행합니다. `bin/magento` 명령줄에 있는 명령 및 cron 작업을 설정하여 작업을 예약합니다.
+필요한 경우 `root` 생성 권한 [파일 시스템 소유자](file-system/overview.md) 그리고 해당 소유자를 웹 서버의 그룹에 추가합니다. 파일 시스템 소유자를 사용하여 `bin/magento` 명령줄에 있는 명령 및 cron 작업을 설정하여 작업을 예약합니다.

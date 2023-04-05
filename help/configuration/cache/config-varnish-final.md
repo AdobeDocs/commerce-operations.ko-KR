@@ -1,9 +1,9 @@
 ---
 title: 최종 확인
 description: Adobe Commerce 애플리케이션에서 작동하도록 Varnish 구성이 제대로 설정되어 있는지 확인합니다.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 먼저 다음을 사용 중인지 확인하십시오 [개발자 모드](../cli/set-mode.md#change-to-developer-mode); 그렇지 않으면 헤더가 표시되지 않습니다.
 
-For example,
+예,
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
@@ -39,7 +39,7 @@ X-Magento-Cache-Debug: MISS
 
 ## 페이지 로드 시간 확인
 
-Varnish가 작동하는 경우 캐시 가능한 블록이 있는 모든 상거래 페이지가 150ms 이내에 로드되어야 합니다. 그러한 페이지들의 예는 앞문이고, [상점](https://glossary.magento.com/storefront) [카테고리](https://glossary.magento.com/category) 페이지.
+Varnish가 작동하는 경우 캐시 가능한 블록이 있는 모든 상거래 페이지가 150ms 이내에 로드되어야 합니다. 그러한 페이지의 예로는 전면 도어와 상점 카테고리 페이지가 있습니다.
 
 브라우저 관리자를 사용하여 페이지 로드 시간을 측정합니다.
 
@@ -66,7 +66,7 @@ Varnish가 작동하는 경우 캐시 가능한 블록이 있는 모든 상거�
 
 다음을 확인합니다. `<magento_root>/var/page_cache` 디렉터리가 비어 있습니다.
 
-1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](https://glossary.magento.com/magento-file-system-owner).
+1. Commerce 서버에 로그인하거나 파일 시스템 소유자로 전환합니다.
 1. 다음 명령을 입력합니다.
 
    ```bash

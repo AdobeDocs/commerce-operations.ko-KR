@@ -1,7 +1,7 @@
 ---
 title: 작업 모드 설정
 description: Adobe Commerce 작업 모드 설정에 대해 읽어보십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -111,8 +111,8 @@ Successful: 897 files modified
 New version of deployed files: 1440461332
 Static content deployment complete
 Gathering css/styles-m.less sources.
-Successfully processed LESS and/or [Sass](https://glossary.magento.com/sass) files
-[CSS](https://glossary.magento.com/css) deployment complete
+Successfully processed LESS and/or Sass files
+CSS deployment complete
 Generated classes:
       Magento\Sales\Api\Data\CreditmemoCommentInterfacePersistor
       Magento\Sales\Api\Data\CreditmemoCommentInterfaceFactory

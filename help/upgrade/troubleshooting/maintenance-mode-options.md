@@ -1,9 +1,9 @@
 ---
 title: 업그레이드를 위한 유지 관리 모드 옵션
 description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 또는 Magento Open Source 저장소에 표시되는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ body
 
 트래픽을 사용자 지정 유지 관리 페이지로 리디렉션하려면
 
-1. 텍스트 편집기를 사용하여 [nginx](https://glossary.magento.com/nginx) 서버 블록을 포함하는 구성 파일입니다.
+1. 텍스트 편집기를 사용하여 서버 블록이 포함된 nginx 구성 파일을 엽니다.
 1. 서버 블록에 다음을 추가합니다(`server` 은 명확성을 위해서만 표시됩니다. 두 번째 서버 블록을 추가하지 마십시오.)
 
    Magento이 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.110 및 192.0.2.115 `/var/www/html/magento2`:

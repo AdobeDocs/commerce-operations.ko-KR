@@ -1,9 +1,9 @@
 ---
 title: 관리자 URI 표시 또는 변경
 description: Adobe Commerce 또는 Magento Open Source 관리 애플리케이션의 URI를 보고 수정하려면 다음 단계를 수행합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 관리 URI 표시
 
-이 섹션에서는 명령줄을 사용하여 [관리](https://glossary.magento.com/admin) Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+이 섹션에서는 명령줄을 사용하여 관리 Uniform Resource Identifier([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 명령 옵션:
 

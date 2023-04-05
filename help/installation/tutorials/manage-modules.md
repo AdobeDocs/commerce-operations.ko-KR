@@ -1,9 +1,9 @@
 ---
 title: 모듈 활성화 또는 비활성화
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 모듈을 관리합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 * `--enabled` 모든 활성화된 모듈을 나열합니다.
 * `--disabled` 비활성화된 모듈을 모두 나열합니다.
-* `<module-list>` 는 상태를 확인할 모듈의 공백으로 구분된 목록입니다. 있는 경우 [모듈](https://glossary.magento.com/module) 이름에 특수 문자가 포함되어 있으며 이름을 작은 따옴표나 큰 따옴표로 묶습니다.
+* `<module-list>` 는 상태를 확인할 모듈의 공백으로 구분된 목록입니다. 모듈 이름에 특수 문자가 포함되어 있으면 이름을 작은 따옴표나 큰 따옴표로 묶습니다.
 
 ## 모듈 활성화, 비활성화
 
@@ -41,7 +41,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 위치
 
-* `<module-list>` 는 활성화하거나 비활성화할 모듈의 공백으로 구분된 목록입니다. 있는 경우 [모듈](https://glossary.magento.com/module) 이름에 특수 문자가 포함되어 있으며 이름을 작은 따옴표나 큰 따옴표로 묶습니다.
+* `<module-list>` 는 활성화하거나 비활성화할 모듈의 공백으로 구분된 목록입니다. 모듈 이름에 특수 문자가 포함되어 있으면 이름을 작은 따옴표나 큰 따옴표로 묶습니다.
 * `--all` 모든 모듈을 동시에 활성화하거나 비활성화합니다.
 * `-f` 또는 `--force` 종속성 없이 모듈을 활성화하거나 비활성화하도록 강제합니다. 이 옵션을 사용하기 전에 [모듈 활성화 및 비활성화 정보](#about-enabling-and-disabling-modules).
 * `-c` 또는 `--clear-static-content` 청소기 [생성된 정적 보기 파일](../../configuration/cli/static-view-file-deployment.md).

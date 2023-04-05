@@ -1,9 +1,9 @@
 ---
 title: Varnish를 사용하여 캐시 지우기
 description: 캐시 지우기가 Varnish에서 작동하는 방식과 Adobe Commerce 애플리케이션의 웹 캐싱 가속기로 사용하는 방법을 알아봅니다.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 바니쉬 퍼징
 
-에 따라 [Varnish 설명서](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *제거* 에서 객체를 선택하면 [캐시](https://glossary.magento.com/cache) 그리고 그것의 변형과 함께 그것을 버립니다.&quot; Varnish 제거 기능은 캐시 정리 명령과 유사하거나 **플러시 Magento 캐시** ( 관리자).
+에 따라 [Varnish 설명서](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *제거* 캐시에서 객체를 선택하고 해당 변형과 함께 객체를 폐기할 때 발생하는 작업입니다.&quot; Varnish 제거 기능은 캐시 정리 명령과 유사하거나 **플러시 Magento 캐시** ( 관리자).
 
 실제로 상거래 캐시를 정리, 플러시 또는 새로 고치면 Varnish도 삭제됩니다.
 
 Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업으로 인해 Varnish 제거가 발생할 수 있습니다.
 
-- 유지 관리 [웹 사이트](https://glossary.magento.com/website).
+- 웹 사이트 유지 관리.
 
    예를 들어 의 관리자에서 수행하는 모든 작업:
 
@@ -47,7 +47,7 @@ Commerce에서는 [`magento setup:config:set`](https://devdocs.magento.com/guide
 
 매개 변수 형식은 다음과 같아야 합니다. `<hostname or ip>:<listen port>`를 생략할 수 있는 위치 `<listen port>` 포트 80이면
 
-For example,
+예,
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081

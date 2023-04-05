@@ -1,9 +1,9 @@
 ---
 title: Varnish 구성 및 사용
 description: Varnish가 파일을 저장하고 HTTP 트래픽을 향상시키는 방법을 이해합니다.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Varnish에 대한 자세한 내용은 다음을 참조하십시오.
 
 웹 서버가 자산을 반환하면 캐시 가능한 자산이 Varnish에 저장됩니다. 이러한 자산에 대한 후속 요청은 Varnish에 의해 이행됩니다(즉, 요청이 웹 서버에 도달하지 않음). Varnish는 캐시된 컨텐츠를 매우 빠르게 반환합니다. 따라서 사용자에게 콘텐츠를 반환하기 위한 응답 시간이 빨라지고 상거래를 통해 충족해야 하는 요청 수가 줄어듭니다.
 
-Varnish로 캐시된 자산은 구성 가능한 간격으로 만료되거나, 동일한 자산의 최신 버전으로 대체됩니다. 또는 [관리](https://glossary.magento.com/magento-admin) 또는 [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) 명령.
+Varnish로 캐시된 자산은 구성 가능한 간격으로 만료되거나, 동일한 자산의 최신 버전으로 대체됩니다. 또는 관리자를 사용하여 수동으로 캐시를 지울 수도 있습니다. [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) 명령.
 
 ## 프로세스 개요
 
@@ -97,7 +97,7 @@ Varnish 캐싱은 다음을 사용하여 Commerce에서 작동합니다.
 
 첫 번째 브라우저 요청에서 캐시 가능한 자산은 Varnish에서 클라이언트 브라우저에 전달되고 브라우저에서 캐시됩니다.
 
-또한 Varnish는 [엔티티](https://glossary.magento.com/entity) 정적 자산에 대한 태그(ETag)입니다. ETag는 [정적 파일](https://glossary.magento.com/static-files) 서버에서 변경합니다. 따라서 정적 자산은 서버에서 변경될 때 클라이언트로 전송됩니다. 새로운 브라우저에서 요청하거나 클라이언트가 브라우저 캐시를 새로 고칠 때, 일반적으로 F5 또는 Control+F5를 눌러 전송합니다.
+또한 Varnish는 정적 자산에 엔티티 태그(ETag)를 사용합니다. ETag를 사용하면 서버에서 정적 파일이 변경되는 시점을 확인할 수 있습니다. 따라서 정적 자산은 서버에서 변경될 때 클라이언트로 전송됩니다. 새로운 브라우저에서 요청하거나 클라이언트가 브라우저 캐시를 새로 고칠 때, 일반적으로 F5 또는 Control+F5를 눌러 전송합니다.
 
 자세한 내용은 다음에 나오는 섹션에서 제공됩니다.
 

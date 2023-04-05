@@ -1,9 +1,9 @@
 ---
 title: 구성 파일에서 데이터 가져오기
 description: 구성 파일에서 Adobe Commerce 구성 설정을 가져옵니다.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Nothing to import
 
 상거래 코드에서는 `system` 의 배열 `config.php` 또는 `env.php` 파일을 데이터베이스로 가져오는 대신 이전 및 사후 처리 작업이 필요하므로 파일을 가져옵니다.
 
-예를 들어, 구성 경로의 값 `web/secure/base_url` 다음 방법으로 유효성을 검사해야 함 [백엔드](https://glossary.magento.com/backend) 모델.
+예를 들어, 구성 경로의 값 `web/secure/base_url` 백엔드 모델을 사용하여 유효성을 검사해야 합니다.
 
 #### 백엔드 모델
 
@@ -94,7 +94,7 @@ Nothing to import
 
 >[!INFO]
 >
->루트는 가져오지 않습니다 [카테고리](https://glossary.magento.com/category) 와(과) 관련이 있습니다. 상거래를 사용하여 루트 카테고리를 스토어에 연결해야 합니다 [관리](https://glossary.magento.com/admin).
+>스토어와 연결된 루트 카테고리는 가져오지 않습니다. 상거래 관리자를 사용하여 루트 카테고리를 스토어에 연결해야 합니다.
 
 ### 테마 구성
 
@@ -104,8 +104,8 @@ Nothing to import
 
 배열의 키는 전체 테마 경로입니다. `area` + `theme path`
 
-For example, `frontend/Magento/luma`.
-`frontend` 는 영역이며 `Magento/luma` is [테마](https://glossary.magento.com/theme) 경로.
+예, `frontend/Magento/luma`.
+`frontend` 는 영역이며 `Magento/luma` 은 테마 경로입니다.
 
 배열 값은 테마에 대한 데이터입니다. 코드, 제목, 경로, 상위 id
 

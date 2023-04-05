@@ -1,9 +1,9 @@
 ---
 title: 캐시 중독 방지
 description: Commerce Store에 대한 페이지 캐시 중독을 방지하는 방법을 알아봅니다.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 캐시 중독 방지
 
-이 항목에서는 다음을 방지하는 방법을 설명합니다 [캐시](https://glossary.magento.com/cache) Microsoft IIS(인터넷 정보 서버) 웹 서버를 사용하는 경우 중독 _캐시 중독_ 은 동일한 사이트의 다른 페이지를 포함하도록 캐시 콘텐츠를 변경하는 방법입니다. 예를 들어 일부 양성 페이지(예: [상점](https://glossary.magento.com/storefront) 홈 페이지)로 설정될 수도 있습니다. 악성 페이지 URL은 Varnish 또는 Redis에 의해 캐시되므로 이름이 됩니다 _페이지 캐시 중독_.
+이 항목에서는 Microsoft IIS(인터넷 정보 서버) 웹 서버를 사용하는 경우 캐시 중독을 방지하는 방법에 대해 설명합니다. _캐시 중독_ 은 동일한 사이트의 다른 페이지를 포함하도록 캐시 콘텐츠를 변경하는 방법입니다. 예를 들어, 임의의 페이지(예: storefront home page) 대신 HTTP 404(찾을 수 없음) 오류 페이지를 주입할 수 있으므로 잠재적인 서비스 거부(DoS)가 발생할 수 있습니다. 악성 페이지 URL은 Varnish 또는 Redis에 의해 캐시되므로 이름이 됩니다 _페이지 캐시 중독_.
 
 이러한 유형의 공격은 웹 서버 로그에 오류가 발생하지 않으므로 검색하기 어려울 수 있습니다.
 

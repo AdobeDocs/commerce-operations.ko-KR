@@ -1,9 +1,9 @@
 ---
 title: 애플리케이션 초기화 및 부트스트랩
 description: Commerce 응용 프로그램의 초기화 및 부트스트랩 로직에 대해 읽어 보십시오.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### 미디어 리소스 진입점
 
-[Magento\MediaStorage\App\Media][media] 데이터베이스에서 미디어 리소스(즉, 미디어 저장소에 업로드된 모든 파일)를 검색합니다. 데이터베이스가 [미디어 저장소](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] 데이터베이스에서 미디어 리소스(즉, 미디어 저장소에 업로드된 모든 파일)를 검색합니다. 데이터베이스가 미디어 저장소로 구성될 때마다 사용됩니다.
 
 `\Magento\Core\App\Media` 구성된 데이터베이스 저장소에서 미디어 파일을 찾아서 `pub/static` 디렉토리 안에 있는 다음 해당 컨텐츠를 반환합니다. 오류가 발생하면 헤더에서 내용이 없는 HTTP 404(찾을 수 없음) 상태 코드를 반환합니다.
 

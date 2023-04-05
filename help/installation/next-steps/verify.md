@@ -1,9 +1,9 @@
 ---
 title: 설치 확인
 description: 다음 단계에 따라 온-프레미스 Adobe Commerce 또는 Magento Open Source 설치가 성공했는지 확인합니다.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 설치 확인
 
-로 이동합니다. [상점](https://glossary.magento.com/storefront) 참조하십시오. 예를 들어, 설치 기반인 경우 [URL](https://glossary.magento.com/url) is `http://www.example.com`을 눌러 브라우저의 주소 또는 위치 표시줄에 입력합니다.
+웹 브라우저에 있는 저장소로 이동합니다. 예를 들어 설치 기본 URL이 `http://www.example.com`을 눌러 브라우저의 주소 또는 위치 표시줄에 입력합니다.
 
 다음 그림은 샘플 저장소 전면 페이지를 보여줍니다. 다음과 같이 표시되는 경우 설치가 성공했습니다!
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## 관리자 확인
 
-로 이동합니다. [관리](https://glossary.magento.com/magento-admin) 참조하십시오. 예를 들어 설치 기본 URL이 `http://www.example.com`, 그리고 관리자 URI는 `admin_au1nT`, 입력 `http://www.example.com/admin_au1nT` 를 클릭합니다.
+웹 브라우저에서 관리자로 이동합니다. 예를 들어 설치 기본 URL이 `http://www.example.com`, 그리고 관리자 URI는 `admin_au1nT`, 입력 `http://www.example.com/admin_au1nT` 를 클릭합니다.
 
-(다음 [관리](https://glossary.magento.com/admin) URI는 `backend-frontname` 설치 매개 변수)
+(관리자 URI는 `backend-frontname` 설치 매개 변수)
 
 메시지가 표시되면 관리자로 로그인합니다.
 

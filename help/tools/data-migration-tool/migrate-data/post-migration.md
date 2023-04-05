@@ -1,9 +1,9 @@
 ---
 title: 데이터 후 마이그레이션 단계
 description: 를 사용한 후 수행할 단계를 알아봅니다. [!DNL Data Migration Tool] Magento 1에서 Magento 2으로 데이터를 마이그레이션하려면 다음을 수행하십시오.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 마이그레이션을 완료하고 새 Magento 2 사이트를 철저히 테스트한 후 다음 작업을 수행하십시오.
 
-* Magento 1을 유지 관리 모드로 전환하고 모두 영구적으로 정지 [관리](https://glossary.magento.com/admin) 활동
+* Magento 1을 유지 관리 모드로 전환하고 모든 관리 활동을 영구적으로 중지합니다
 
 * Magento 2 cron 작업 시작
 
