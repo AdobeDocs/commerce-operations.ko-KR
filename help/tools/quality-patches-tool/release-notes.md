@@ -1,9 +1,9 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
+source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
 workflow-type: tm+mt
-source-wordcount: '11561'
+source-wordcount: '11914'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,25 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.30 {#v1-1-30}
+
+* **ACSD-50336** (Adobe Commerce 및 Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - 제품이 재판매되거나 가격이 변경될 때 제품 경고 이메일이 전송되지 않는 문제를 수정했습니다.
+* **ACSD-50367** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7)에 대해 값 없이 다중 선택 고객 주소 속성을 만들 때 고객 주소 내보내기가 작동하지 않는 문제를 수정했습니다.
+* **ACSD-49877** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7)에 대해) - 비디오 자동 재생이 모바일에서 작동하지 않는 문제를 수정합니다 [!DNL Safari] 비디오가 스트리밍 서비스가 아닌 원격 비디오 파일에 직접 연결되어 있는 경우.
+* **ACSD-50165** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 오류가 수정되었습니다 *파일을 삭제할 수 없습니다. 경고! 연결 해제: 해당 파일 또는 디렉터리가 없습니다.* 관리자에서 JS/CSS 캐시를 플러시할 때.
+* **ACSD-49737** (Adobe Commerce 및 Magento Open Source >=2.4.1-p1 &lt;2.4.7)에 대해 - 카드 결제 실패 후 쿠폰이 사용된 것으로 잘못 표시되는 문제를 수정합니다.
+* **ACSD-50814** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7)에 대해) - 관리자가 대변 메모를 만들 수 없는 문제를 수정합니다.
+* **ACSD-50116** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7)에 대해 - 관리자가 하위 카테고리 수준 3 이하에 대한 URL 재작성을 만들 수 없는 문제가 수정되었습니다.
+* **ACSD-49513** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5)의 경우 - 0바이트 파일로 인해 원격 스토리지 동기화가 실패하는 문제를 해결했습니다.
+* **ACSD-46683** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7)에 대해) - 배송 가격이 표시되는 문제를 수정합니다 *아직 계산되지 않음*.
+* **ACSD-49129** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - *[!UICONTROL content]* 특성(base64 이미지 코드)이 `rest/V1/products/sku/media` 제품 미디어 API 응답.
+* **ACSD-50276** (Adobe Commerce >=2.4.0 &lt;2.4.7)에 대해 다중 선택 고객 속성을 만드는 경우 고객 등록 양식이 상점 전방에서 작동하지 않는 문제를 수정합니다.
+* **ACSD-50527** (Adobe Commerce >=2.3.7 &lt;2.4.7)에 대해) - 빈 동적 블록이 있는 페이지를 저장할 때 발생하는 오류를 수정합니다.
+* **ACSD-49973** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5)의 경우) - GraphQL을 통해 번들 제품을 가져오는 성능이 향상되었습니다.
+* **BB2B-2598** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7)의 경우 - 캐싱 기능을 [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], 및 [!UICONTROL storeConfig] GraphQL 쿼리
+* MDVA-42806, ACSD-48627, ACSD-46815용 새 버전이 추가되었습니다.
+* ACSD-49773, ACSD-47179, ACSD-48300용 패치 메타데이터가 업데이트되었습니다.
 
 ## v1.1.29 {#v1-1-29}
 
@@ -410,7 +429,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 을 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
+* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 를 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce >=2.3.0 &lt;2.4.3>*) - 그룹화된 제품의 사용자 지정 재고를 저장할 때 문제가 해결되어 제품이 프론트런트에 재고가 없습니다.
 * **MDVA-36572** (*Adobe Commerce >=2.3.5 &lt;2.4.3>*) - 대변 메모 업데이트로 인해 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 경우 문제를 수정합니다.
 * **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3>*) - Admin Console에 연결할 수 없는 *리디렉션이 너무 많음* 오류가 발생했습니다.
