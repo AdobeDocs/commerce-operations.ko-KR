@@ -1,9 +1,9 @@
 ---
 title: 인덱서 관리
 description: 상거래 인덱스를 보고 관리하는 방법에 대한 예를 참조하십시오.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Catalog Search index has been rebuilt successfully in <time>
 - `Category Product` 는 스토어 보기를 따라 다를 수 있습니다.
 - `Catalog Price` 는 웹 사이트 및 고객 그룹과 병행할 수 있습니다.
 - `Catalog Permissions` 는 고객 그룹과 병행할 수 있습니다.
+
+>[!INFO]
+>
+>카탈로그 검색 전체 텍스트 및 범주 제품에 대한 병렬화는 기본적으로 활성화되어 있습니다.
 
 병렬화를 사용하려면 제품 가격 인덱서에 사용할 수 있는 차원 모드 중 하나를 설정합니다.
 
