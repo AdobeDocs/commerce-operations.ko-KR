@@ -1,7 +1,7 @@
 ---
-source-git-commit: fb62494e65bde8a35c7ff06e4ab83a7e53d5ebc2
+source-git-commit: ce2bb441829c81a032142182dcf84515e76c91b4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -349,6 +349,44 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="9">카탈로그 서비스</th>
+    </tr>
+    <tr>
+      <td>카탈로그 서비스 1.7</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>카탈로그 서비스 1.6</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
     </tr>
     <tr>
       <td>카탈로그 서비스 1.5</td>
