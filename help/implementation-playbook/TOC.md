@@ -2,9 +2,9 @@
 user-guide-title: 구현 Playbook
 user-guide-description: 성공적인 Adobe Commerce 사이트를 계획 및 구현하는 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [헤드리스 아키텍처](architecture/headless/adobe-commerce.md)
 - 인프라 및 배포 {#infrastructure}
    - [개요](infrastructure/overview.md)
-   - [온프레미스 인프라](infrastructure/on-premises.md)
+   - 자체 호스팅 {#self-hosting}
+      - [개요](infrastructure/self-hosting/overview.md)
+      - [온프레미스 인프라](infrastructure/self-hosting/on-premises.md)
+      - [보안 개념](infrastructure/self-hosting/security-concepts.md)
+      - [원격 분석 및 도구 모니터링](infrastructure/self-hosting/monitoring-tools.md)
+      - [재해 복구 아이디어](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [성능 팁](infrastructure/self-hosting/performance-tips.md)
    - 클라우드 인프라 {#cloud}
       - [개요](infrastructure/cloud/overview.md)
       - [지역](infrastructure/cloud/regions.md)
