@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ CDN은 Adobe Commerce 프로젝트에 최적화된 보안 전달 컨텐츠를 �
 
 ## 모든 끌어오기 요청에 대해 Adobe Commerce 및 PHP 코딩 표준을 준수해야 합니다.
 
-Adobe Commerce에는 [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. 이러한 기능은 소프트웨어 개발 유형에 관계없이 유사한 패턴, 스타일 및 예상 디자인을 따를 수 있도록 해줍니다. 다음은 Adobe Commerce 코드 베이스에 기여할 때 따라야 할 비솔루션 요구 사항입니다. 그러나 사용자 정의 개발을 위한 이러한 방법론을 따르면 모든 개발자, 현재 및 향후 목표를 위한 견고한 초석도 만들 수 있습니다. 모든 가져오기 요청이 코드 표준을 전달하도록 할 때는 모든 사람이 동일한 일관된 개발 패턴을 이해하고 예상할 수 있도록 하는 데 도움이 됩니다.
+Adobe Commerce에는 [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. 이러한 기능은 소프트웨어 개발 유형에 관계없이 유사한 패턴, 스타일 및 예상 디자인을 따를 수 있도록 해줍니다. Adobe Commerce 코드 베이스에 기여할 때 이것은 요구 사항입니다. 그러나 사용자 정의 개발을 위한 이러한 방법을 따르도록 선택하면 현재 및 미래 모든 개발자를 위한 견고한 초석이 설정됩니다. 모든 가져오기 요청이 코드 표준을 전달하도록 할 때는 모든 사람이 동일한 일관된 개발 패턴을 이해하고 예상할 수 있도록 하는 데 도움이 됩니다.
 
 Adobe Commerce 코딩 표준을 준수하기 위해 사용되는 다른 기본 코딩 표준은 PHP입니다. 개발자 가이드에서 따라야 하는 표준 및 수락할 수 있는 모든 장치를 명확히 정의해야 합니다. 그러나 다음에 있는 공개 유지 관리 안내서에 대한 대체 방법을 사용해야 합니다. [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 

@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 읽기 전용 파일 시스템
 
-읽기 전용 파일 시스템 개념은 [Adobe Commerce on cloud infrastructure](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. 이것은 나쁜 배우가 사용하는 하나의 주요 영역을 완전히 제거한다. 많은 이점이 검색을 방지하기 위해 상거래 애플리케이션에 있을 것으로 예상되는 파일을 변경하는 것을 활용합니다. 잘못된 작업자는 파일을 만드는 대신 기존 파일의 내용을 변경하여 예기치 않은 작업을 수행합니다. 파일 시스템을 읽기 전용으로 설정하면 이 공격 벡터가 크게 줄어듭니다.
+읽기 전용 파일 시스템 개념은 [Adobe Commerce on cloud 인프라](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. 이것은 나쁜 배우가 사용하는 하나의 주요 영역을 완전히 제거한다. 많은 이점이 검색을 방지하기 위해 상거래 애플리케이션에 있을 것으로 예상되는 파일을 변경하는 것을 활용합니다. 잘못된 작업자는 파일을 만드는 대신 기존 파일의 내용을 변경하여 예기치 않은 작업을 수행합니다. 파일 시스템을 읽기 전용으로 설정하면 이 공격 벡터가 크게 줄어듭니다.
 
 ## 2단계 인증 및 암호 관리자 사용
 
