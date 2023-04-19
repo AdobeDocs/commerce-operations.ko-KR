@@ -1,7 +1,7 @@
 ---
-source-git-commit: ce2bb441829c81a032142182dcf84515e76c91b4
+source-git-commit: aa37cc2dff54825f21b0358be540cb954dd5c598
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -489,7 +489,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">채널 관리자</th>
     </tr>
     <tr>
-      <td>채널 관리자 1.4.0</td>
+      <td>채널 관리자 2.0.0</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
@@ -1364,6 +1364,106 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>지원됨</span>
       </td>
       <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Adobe Commerce에 대한 주문 처리 저장</th>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.4.0용 저장 주문 처리</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.3.0용 저장 주문 처리</td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.2.0용 저장 주문 처리</td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0용 저장 주문 처리</td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0용 저장 주문 처리</td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
       </td>
       <td>지원되지 않음</span>
       </td>
