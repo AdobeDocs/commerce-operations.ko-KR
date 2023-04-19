@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Site-Wide Analysis Tool]"
 description: 에 대해 알아보기 [!DNL Site-Wide Analysis] 도구, 용도, 설치 프로세스 및 액세스 방법
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 3801cb9cf8cdf00d450347e8fd023a18ec60bf54
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,14 @@ ht-degree: 0%
 
 ## 도구 개요
 
-- **대시보드** - 감지된 문제와 특정 권장 사항에 대한 우선 순위 알림을 통해 시스템의 전체 상태를 표시합니다. 또한 시간에 따라 웹 사이트의 상태가 어떻게 변화하는지를 추적하는 기록 차트가 포함되어 있습니다.
+- **대시보드**
+   - 감지된 문제 알림과 우선 순위별 특정 권장 사항에 대한 시스템 전체 상태를 표시합니다.<br>
+또한 시간에 따라 웹 사이트의 상태가 어떻게 변화하는지를 추적하는 기록 차트가 포함되어 있습니다.
+   - 를 표시합니다 **[!UICONTROL Security Center Widget]** 여기에서 다음을 액세스할 수 있습니다.
+      - [기술 [!DNL Stack] 버전 준수 [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+      - [Adobe 보안 공지](https://helpx.adobe.com/security/security-bulletin.html)
+      - [Recommendations [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
+      - [[!DNL Site-Wide Analysis Tool] 우수 사례 보안 Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
 
 - **정보** - 설치된 각 Adobe Commerce 제품에 대한 자세한 정보를 통해 고객 연락처 정보 및 현재 티켓의 요약을 제공합니다.
 
@@ -34,9 +41,11 @@ ht-degree: 0%
 
 ## 다른 Adobe Commerce 지원 도구와의 통합
 
-사이트에 대한 모든 중요한 인사이트를 한 곳에서 볼 수 있습니다. [!DNL Site-Wide Analysis Tool] 을 통해 및 를 직접 액세스할 수 있습니다. [!DNL Security Scan Tool], [!DNL Upgrade Compatability Tool], 및 [!DNL Managed Alerts].
+사이트에 대한 모든 중요한 인사이트를 한 곳에서 볼 수 있습니다. [!DNL Site-Wide Analysis Tool] 을 통해 및 를 직접 액세스할 수 있습니다. [!UICONTROL Security Center Widget], [!DNL Upgrade Compatability Tool], 및 [!DNL Managed Alerts].
 
-- [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Adobe Commerce 및 Magento 오픈 소스 고객은 맬웨어를 사전 예방적으로 감지하고 스토어가 손상되었을 경우 이를 알려줌으로써 스토어의 보안 상태에 대한 실시간 통찰력을 제공합니다.
+- [**[!UICONTROL Security Center Widget]**] - 사이트에 대한 보안 인사이트를 표시합니다.<br>
+표시되는 보안 정보는 다음과 같습니다 [기술 [!DNL Stack] 버전 준수 [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] 우수 사례 보안 Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
+다음 [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) 은 Adobe Commerce 및 Magento 오픈 소스 고객에게 맬웨어를 사전 예방적으로 감지하고 스토어가 손상되었는지 여부를 알려 줌으로써 저장소의 보안 상태에 대한 실시간 인사이트를 제공합니다.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Target 업그레이드 버전에 대해 Adobe Commerce의 사용자 지정 인스턴스를 실행하고 해결해야 하는 중요한 문제, 오류 및 경고의 요약을 반환하여 업그레이드 분석 프로세스를 보다 쉽고 빠르고 저렴하게 수행할 수 있습니다.
 
