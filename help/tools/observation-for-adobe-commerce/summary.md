@@ -1,9 +1,9 @@
 ---
 title: "다음 [!UICONTROL Summary] tab"
 description: 에 대해 알아보기 [!UICONTROL Summary] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -363,7 +363,7 @@ PHP 프로세스의 동작 방식은 [구성](https://www.php.net/manual/en/inst
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch 색인 정보](../../assets/tools/elasticsearch-index-information.jpg)
+![elasticsearch 색인 정보](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearch 상태:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
