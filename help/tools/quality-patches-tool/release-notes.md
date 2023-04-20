@@ -1,7 +1,7 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: ab9d80140833e2d21feffe04a73fcd8ac5f1e980
+source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
 workflow-type: tm+mt
 source-wordcount: '11946'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 * **ACSD-50527** (Adobe Commerce >=2.3.7 &lt;2.4.7)에 대해) - 빈 동적 블록이 있는 페이지를 저장할 때 발생하는 오류를 수정합니다.
 * **ACSD-49973** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5)의 경우) - GraphQL을 통해 번들 제품을 가져오는 성능이 향상되었습니다.
 * **ACSD-51114** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7)의 경우 - 비동기 색인화가 활성화되면 큰 카탈로그에서 무작위 제품이 사라지는 문제를 수정합니다. 대형 카탈로그에 대한 비동기 재인덱싱 성능을 향상시킵니다.
-* **BB2B-2598** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7)의 경우 - 캐싱 기능을 [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], 및 [!UICONTROL storeConfig] GraphQL 쿼리
+* **B2B-2598** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7)의 경우 - 캐싱 기능을 [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency], 및 [!UICONTROL storeConfig] GraphQL 쿼리
 * MDVA-42806, ACSD-48627, ACSD-46815용 새 버전이 추가되었습니다.
 * ACSD-49773, ACSD-47179, ACSD-48300용 패치 메타데이터가 업데이트되었습니다.
 
