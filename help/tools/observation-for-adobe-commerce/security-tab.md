@@ -1,9 +1,9 @@
 ---
 title: "다음 [!UICONTROL Security] tab"
 description: 에 대해 알아보기 [!UICONTROL Security] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
+source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
