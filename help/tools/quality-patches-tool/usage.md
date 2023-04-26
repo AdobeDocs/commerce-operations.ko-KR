@@ -1,9 +1,10 @@
 ---
 title: 사용
 description: 사용 방법을 알아봅니다 [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->자세한 내용은 [개별 패치 적용](#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [사용 가능한 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리즈된 패치 전체 목록 검토
+>자세한 내용은 [개별 패치 적용](#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리즈된 패치 전체 목록 검토
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5.
 상태 테이블에는 다음이 포함됩니다.
 
 - **유형**:
-   - `Optional` — [!DNL Quality Patches Tool] 그리고 [클라우드 패치](https://devdocs.magento.com/cloud/project/project-patch.html) 패키지는 Adobe Commerce 및 Magento Open Source 설치에 선택 사항입니다.
+   - `Optional` — [!DNL Quality Patches Tool] 그리고 [Commerce on Cloud Infrastructure Guide > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) 패키지는 Adobe Commerce 및 Magento Open Source 설치에 선택 사항입니다.
    - `Deprecated` — Adobe은 개별 패치를 더 이상 사용하지 않습니다. 패치를 적용한 경우에는 되돌릴 것을 권장합니다. 되돌리기 작업은 상태 테이블에서 패치를 제거합니다.
 
 - **상태**:
@@ -81,7 +82,7 @@ Adobe Commerce 2.3.5.
 
 >[!WARNING]
 >
->프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. 자세한 내용은 [파일 시스템 백업 및 롤백](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. 자세한 내용은 [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 단일 패치를 적용하려면 다음 명령을 `MAGETWO-XXXX` 상태 테이블에 지정된 패치 ID입니다.
 
@@ -109,7 +110,7 @@ Adobe Commerce 응용 프로그램에서 변경 사항을 보려면 패치를 �
 
 >[!WARNING]
 >
->프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. 자세한 내용은 [파일 시스템 백업 및 롤백](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. 자세한 내용은 [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 단일 패치를 되돌리려면 다음 명령을 `MAGETWO-XXXX` 상태 테이블에 지정된 패치 ID입니다.
 

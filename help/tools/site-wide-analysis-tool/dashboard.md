@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Dashboard]"
+title: '[!DNL Dashboard]'
 description: 에 대해 알아보기 [!DNL Dashboard] 탭에서 다음을 수행합니다. [!DNL Site-Wide Analysis Tool], 요소, 사용할 시기, 이점 및 우수 사례
-source-git-commit: 78cc20b7a65bff641f6849f6c2566cf5ad2afbd1
+exl-id: 37d848ff-2cff-48b1-8391-520531300bbc
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -11,7 +12,7 @@ ht-degree: 0%
 # [!UICONTROL Dashboard]
 
 다음 [!UICONTROL Dashboard] 페이지 표시 개요 [!DNL widgets] Adobe Commerce 웹 사이트의 상태 및 현재 상태에 대한 &quot;단일 창&quot;을 제공합니다. 각 [!DNL widget] 에는 각 기능의 페이지, 각 도구 자체에 대한 액세스 링크 또는 보고서에 대한 액세스 링크가 포함되어 있습니다 [!DNL widget]).
-다음 목록도 있습니다 [!UICONTROL External Resources] 다음을 포함한 Adobe Commerce 링크 [Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터)](https://support.magento.com/), [Adobe Commerce 개발자 설명서(DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [보안 센터](https://magento.com/security), 및 [Adobe Commerce(OAC)에 대한 관찰](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+다음 목록도 있습니다 [!UICONTROL External Resources] 다음을 포함한 Adobe Commerce 링크 [Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), [Adobe Commerce 개발자 설명서(DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [보안 센터](https://helpx.adobe.com/security.html), 및 [Adobe Commerce(OAC)에 대한 관찰](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
 
 ## 요소
 
@@ -27,11 +28,11 @@ Recommendations에는 사용된 설명, 권장 사항, 사이트 영향, 근본 
 
 * **[!UICONTROL Extensions]**: Adobe Commerce 인스턴스에 현재 설치된 확장을 표시합니다. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) 여기에 나열된 확장에 대한 정보가 제공된 경우 사용할 수 있습니다.
 
-* **[!UICONTROL Alerts]**: 최신 항목을 표시합니다 [!DNL New Relic Managed Alerts] 참조하십시오. 추가 정보 [Adobe Commerce에 대한 관리 경고](https://support.magento.com/hc/en-us/articles/360045806832) 그리고 방법 [New Relic 서비스 액세스](https://support.magento.com/hc/en-us/articles/360039127712) ( Adobe Commerce 지원 기술 자료) 를 참조하십시오.
+* **[!UICONTROL Alerts]**: 최신 항목을 표시합니다 [!DNL New Relic Managed Alerts] 참조하십시오. 추가 정보 [Adobe Commerce에 대한 관리 경고](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) 그리고 방법 [New Relic 서비스 액세스](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) ( Adobe Commerce 지원 기술 자료) 를 참조하십시오.
 
 * **[!UICONTROL Non-recommended software in use]**: Adobe Commerce 버전을 기반으로 Adobe Commerce 인스턴스가 현재 사용하고 있는 비권장 소프트웨어를 표시합니다. 권장되지 않는 소프트웨어는 [!UICONTROL Name], [!UICONTROL Installed Version], 및 [!UICONTROL Recommended Version].
 
-* **[!UICONTROL Recommended Patches]**: 이미 설치했을 수 있는 패치와 Adobe Commerce 버전을 모두 기준으로 권장되는 패치에 대한 간단한 목록을 표시합니다. 권장 패치 전체 목록은 **[!UICONTROL Patches]** 기능 탭 - [!DNL Site-Wide Analysis Tool]. 패치는 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. 나열된 모든 패치는 현재 Adobe Commerce 인스턴스와 호환됩니다.
+* **[!UICONTROL Recommended Patches]**: 이미 설치했을 수 있는 패치와 Adobe Commerce 버전을 모두 기준으로 권장되는 패치에 대한 간단한 목록을 표시합니다. 권장 패치 전체 목록은 **[!UICONTROL Patches]** 기능 탭 - [!DNL Site-Wide Analysis Tool]. 패치는 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. 나열된 모든 패치는 현재 Adobe Commerce 인스턴스와 호환됩니다.
 Adobe Commerce 인스턴스에 표시할 권장 패치가 없는 경우 다음을 수행합니다 [!DNL widget] 표시됩니다. **[!UICONTROL No Recommended Patches]**.
 
 ## 사용 시기
@@ -56,4 +57,4 @@ Adobe Commerce 인스턴스에 표시할 권장 패치가 없는 경우 다음�
 
 * 로 이동합니다. [!UICONTROL Security Scan Tool] [!DNL widget] 을(를) 클릭합니다. [!UICONTROL View Report] 를 보려면 [!UICONTROL Recommendations] 사이트에 대해 보고합니다.
 
-* 를 사용하십시오 [!DNL External Resources] 추가 정보, 보안 패치, 업데이트 및 모범 사례에 대한 최신 정보를 확인하거나 이러한 통찰력을 활용할 수 있는 링크 [Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터)](https://support.magento.com/), [Adobe Commerce 개발자 설명서(DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [보안 센터](https://helpx.adobe.com/security.html), 및 [Adobe Commerce(OAC)에 대한 관찰](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+* 를 사용하십시오 [!DNL External Resources] 추가 정보, 보안 패치, 업데이트 및 모범 사례에 대한 최신 정보를 확인하거나 이러한 통찰력을 활용할 수 있는 링크 [Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), [Adobe Commerce 개발자 설명서(DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [보안 센터](https://helpx.adobe.com/security.html), 및 [Adobe Commerce(OAC)에 대한 관찰](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).

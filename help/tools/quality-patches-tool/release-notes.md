@@ -1,9 +1,10 @@
 ---
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
-source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '11946'
+source-wordcount: '11947'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->자세한 내용은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [사용 가능한 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 소프트웨어 업데이트 가이드에서 릴리즈된 패치의 전체 목록을 검토합니다.
+>자세한 내용은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침을 참조하십시오. 자세한 내용은 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 소프트웨어 업데이트 가이드에서 릴리즈된 패치의 전체 목록을 검토합니다.
 
 >[!INFO]
 >
