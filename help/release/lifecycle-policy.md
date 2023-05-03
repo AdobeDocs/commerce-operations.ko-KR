@@ -1,13 +1,13 @@
 ---
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 주요 날짜에 대해 알아보십시오.
-source-git-commit: 2612405bed470c4b0e0d501ab36bcfb09ac50e92
+exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '315'
 ht-degree: 10%
 
 ---
-
 
 # Adobe Commerce 라이프사이클 정책
 
@@ -27,7 +27,7 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
 | Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | PHP 8.1 |
 | Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 3월 14일 | PHP 8.1 및 PHP 8.2 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>1 소프트웨어 지원 종료에는 품질 수정 사항 및 보안 수정 사항 종료가 모두 포함되어 있습니다.</sup><br>
 
