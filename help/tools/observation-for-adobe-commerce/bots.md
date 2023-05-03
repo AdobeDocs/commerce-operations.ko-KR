@@ -1,9 +1,10 @@
 ---
-title: "다음 [!UICONTROL bots] tab"
+title: 다음 [!UICONTROL bots] 탭
 description: 에 대해 알아보기 [!UICONTROL bots] 탭 [!DNL Observation for Adobe Commerce].
-source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
+exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -150,3 +151,11 @@ ht-degree: 0%
 ![페이지 보기 지연은 이 그래프에 스파이크로 표시됩니다.](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
 * 다음 **[!UICONTROL Pageview Latency will show as spikes on this graph:]** 프레임은 페이지 로드/API 응답 지연을 보여주며, [!DNL bot] 트래픽.
+
+## [!UICONTROL Experimental Potential Malicious Bots] 프레임
+
+![실험 잠재적 악성 보트 프레임](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+
+다음 **[!UICONTROL Experimental Potential Malicious Bots]** 프레임은 복잡한 10개의 별도 쿼리를 실행합니다. 악성 IP 요청 서명을 감지한 다음 결과를 집계하고 내림차순으로 합하여 정렬합니다. 이 쿼리에는 CVE 악용 및 기타 악의적인 요청의 다양한 데이터 서명이 포함되어 있습니다. 보안 수정 사항/패치에 의해 사용이 차단되고 사이트에 위협이 되지 않는 경우에도 웹 사이트에서 여전히 요청을 처리해야 합니다. 요청 양은 짧은 시간 내에 매우 중요할 수 있습니다. 이 프레임은 IP 주소의 전체 요청을 표시하지 않고, 요청에 의심스러운 의도가 있음을 나타내는 신호가 있는 요청만 표시합니다.
+
+트래픽이 의심스러우며 올바른 요청을 전달할 수 있는 CDN(Content Distributed Network) 주소에서 트래픽이 발생하지 않는지 확인합니다. 요청이 CDN IP 주소에서 온 것으로 확인되는 경우 해당 서비스 공급업체에 문의하여 의심스런 네트워크를 통한 트래픽 차단에 도움을 받으십시오. 주소 또는 요청 URL을 차단해야 하는 경우 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) Adobe Commerce 지원 기술 자료에서 참조.
