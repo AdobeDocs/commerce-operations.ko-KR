@@ -2,9 +2,9 @@
 title: 릴리스 노트
 description: Adobe Commerce에 사용할 수 있는 패치와 해결된 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
 workflow-type: tm+mt
-source-wordcount: '11947'
+source-wordcount: '12066'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >에 대한 자세한 정보 [!DNL quality patches] 커뮤니티에서 만든 Magento Open Source은 [릴리스 노트](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.31 {#v1-1-31}
+
+* **ACSD-50345** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) - 실패한 지급을 제출한 후 Recaptcha v2가 다시 로드되지 않는 문제를 수정합니다.
+* **ACSD-50817** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - Cron 작업 최적화 `sales_clean_quotes` 더 빠르게 실행할 수 있습니다.
+* **ACSD-49392** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - 번들로 제공된 제품에 대한 부분 환불 후 주문 상태가 닫힘 상태로 변경되는 문제를 수정합니다.
+* **ACSD-51036** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5)의 경우 - 동시 REST API 호출 시 경합 조건이 의 배송 상태 정보를 덮어쓰는 문제가 해결되었습니다. [!UICONTROL Items Ordered] 테이블.
+* **ACSD-50858** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 배너 내용 로드 성능이 개선되었습니다.
+* MDVA-39305-v2, ACSD-45169용 새 버전이 추가되었습니다.
+* ACSD-50260-v2 패치를 업데이트했습니다.
 
 ## v1.1.30 {#v1-1-30}
 
@@ -431,7 +441,7 @@ ht-degree: 0%
 
 ## v1.0.25 {#v1-0-25}
 
-* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 을 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
+* **MDVA-37916** (*Adobe Commerce >=2.3.6 &lt;2.4.3>*) - 를 사용할 때 고객이 지급 확인 페이지로 이동하지 않는 문제를 수정합니다 [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce >=2.3.0 &lt;2.4.3>*) - 그룹화된 제품의 사용자 지정 재고를 저장할 때 문제가 해결되어 제품이 프론트런트에 재고가 없습니다.
 * **MDVA-36572** (*Adobe Commerce >=2.3.5 &lt;2.4.3>*) - 대변 메모 업데이트로 인해 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 경우 문제를 수정합니다.
 * **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3>*) - Admin Console에 연결할 수 없는 *리디렉션이 너무 많음* 오류가 발생했습니다.
