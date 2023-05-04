@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
+source-git-commit: 0b9213db01cce14938e560ae576cf8ea543e4da7
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서에 대한 중요한 업데이트에 대해 알아봅니다.
+
+### 2023년 4월 20일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>가 추가되었습니다. <code class="language-plaintext highlighter-rouge">commerce.eventing.event.publish</code> 소비자에 대한 메시지 큐 <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">참조 테이블</a>.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c">2f9bfc</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 4월 19일
 
