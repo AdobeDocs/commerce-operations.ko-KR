@@ -1,7 +1,9 @@
 ---
 user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 한 곳에서 액세스할 수 있습니다.
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+feature: Release Notes
+recommendations: noDisplay, noCatalog
+source-git-commit: 3ecac271a4c86162c07ce89b9e5664c2293ad07b
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 15%
@@ -11,9 +13,9 @@ ht-degree: 15%
 
 # 릴리스 정보 {#release}
 
-- 릴리스 정보 {#notes}
+- 릴리스 노트 {#notes}
    - [개요](release-notes/overview.md)
-   - [이전 버전과 호환 불가능한 변경 사항](backward-incompatible-changes.md)
+   - [호환되지 않는 변경 사항](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -52,4 +54,4 @@ ht-degree: 15%
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Adobe Commerce용 클라우드 패키지](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,7 +1,8 @@
 ---
 user-guide-title: 보안 및 규정 준수
 user-guide-description: Adobe Commerce 및 Magento Open Source 판매자가 보안 환경을 유지하고 관할 지역의 온라인 상인들을 위한 법적 요구 사항과 모범 사례를 충족해야 하는 책임이 있는지 알아봅니다.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Security
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%

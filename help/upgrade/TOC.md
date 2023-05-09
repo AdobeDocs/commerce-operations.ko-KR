@@ -1,7 +1,8 @@
 ---
 user-guide-title: 업그레이드 안내서
 user-guide-description: Adobe Commerce 애플리케이션 업그레이드가 중요한 이유와 업그레이드를 성공적으로 계획 및 실행하는 방법을 알아봅니다.
-source-git-commit: 6965e8213a7293f55c9b51e3e556715ccdad9daf
+feature: Upgrade
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

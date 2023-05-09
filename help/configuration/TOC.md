@@ -1,7 +1,8 @@
 ---
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 기능 및 서비스를 구성합니다.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Configuration
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
