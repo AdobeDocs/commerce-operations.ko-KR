@@ -1,13 +1,13 @@
 ---
 title: 배포용 구성 파일
 description: Commerce 응용 프로그램 설치에 구성 파일이 작동하는 방식을 이해합니다.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # 배포용 구성 파일
 
@@ -17,9 +17,6 @@ Adobe Commerce에서는 구성 요소를 쉽게 사용자 지정하고 구성 �
 이 파일에는 설치된 모듈, 테마 및 언어 패키지 목록이 들어 있습니다. 및 공유 구성 설정을 구성합니다.
 
    이 파일을 체크 인하여 소스 제어 및 개발, 스테이징 및 프로덕션 시스템에서 사용합니다.
-
-   2.2 릴리스부터 `app/etc/config.php` 파일이 더 이상 `.gitignore` 파일.
-이것은 용이하게 하기 위해 행해졌다 [파이프라인 배포](../deployment/technical-details.md).
 
 - `app/etc/env.php` 설치 환경에 해당하는 설정이 포함되어 있습니다.
 
