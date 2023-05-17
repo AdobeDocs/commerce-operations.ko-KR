@@ -2,9 +2,9 @@
 title: 성능 벤치마크
 description: Adobe 클라우드 인프라에서 호스팅되는 Adobe Commerce 구현의 성능 벤치마크 결과를 검토합니다.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Adobe Commerce 인스턴스에 대해 실행된 JMeter 로드 프로필을 사�
    - vCPU 216(3 노드 72개)
    - 메모리 432 GiB(144 x 3 노드)
    - 네트워크 대역폭 768Gbps(256x3노드)
+   - EBS 대역폭 57000 Mbps(19000 x 3 노드)
    - 프로비저닝된 스토리지 100GB
 
 - **서비스 노드 사양**
