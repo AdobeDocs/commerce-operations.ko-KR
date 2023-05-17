@@ -1,13 +1,13 @@
 ---
 title: 메시지 큐 관리
 description: Adobe Commerce용 명령줄에서 메시지 큐를 관리하는 방법을 알아봅니다.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # 메시지 큐 관리
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 - `cron_run` - 를 활성화하거나 비활성화하는 부울 값 `consumers_runner` cron 작업(기본값 = `true`).
 - `max_messages` - 종료하기 전에 각 소비자가 처리해야 하는 최대 메시지 수(기본값 = `10000`). 권장하지는 않지만 0을 사용하여 소비자가 종료되지 않도록 할 수 있습니다. 자세한 내용은 [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) 소비자가 메시지 큐에서 메시지를 처리하는 방법을 구성하려면 다음을 수행하십시오.
 - `consumers` - 실행할 소비자를 지정하는 문자열 배열입니다. 빈 배열이 실행됩니다 *모두* 소비자.
-- `multiple_processes` - 몇 개의 프로세스에서 실행할 소비자를 지정하는 키-값 쌍의 배열입니다.
+- `multiple_processes` - 몇 개의 프로세스에서 실행할 소비자를 지정하는 키-값 쌍의 배열입니다. Commerce 2.4.4 이상에서 지원됩니다.
 
    >[!INFO]
    >
