@@ -1,13 +1,13 @@
 ---
 title: 업그레이드 범위 이해
 description: Adobe Commerce, Magento Open Source 사용자 지정 모듈 또는 서드파티 확장에 영향을 줄 수 있는 릴리스의 이전 버전과 호환되지 않는 변경 사항에 대해 알아봅니다.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
 
 ---
-
 
 # 업그레이드 범위 이해
 

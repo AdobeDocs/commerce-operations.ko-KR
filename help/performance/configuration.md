@@ -1,13 +1,13 @@
 ---
 title: 구성 모범 사례
 description: 다음 모범 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # 구성 모범 사례
 
@@ -122,4 +122,3 @@ Commerce는 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 * 관리자: 주문 생성 페이지
 
 제품 그리드를 제한하지 않으려는 경우 필터를 보다 정확하게 사용하여 결과 컬렉션에 보다 적은 항목을 포함할 수 있습니다. **[!UICONTROL Records Limit]**.
-

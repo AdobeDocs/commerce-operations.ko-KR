@@ -1,13 +1,13 @@
 ---
 title: 업그레이드 프로세스 개요
 description: Adobe Commerce 프로젝트를 업그레이드하여 스토어를 안전하게 보호하고 효율적으로 운영하는 방법에 대해 알아봅니다.
-source-git-commit: 015997bf9aab32c443dd2cc198f2ed41018d7a49
+exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
 
 ---
-
 
 # 업그레이드 프로세스 개요
 

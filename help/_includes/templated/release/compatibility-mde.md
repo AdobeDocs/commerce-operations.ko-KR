@@ -14,7 +14,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
 
 **지원됨** - Adobe에서 완전히 테스트하고 지원되는 버전입니다.
 
-**호환 가능** - Adobe Commerce 또는 Magento Open Source과 호환된다고 확인되지만 지원되지 않는 버전입니다.
+**호환 가능** - Adobe Commerce 또는 Magento Open Source과 호환되지만 지원되지 않는 버전입니다.
 
 **지원되지 않음** - Adobe Commerce 또는 Magento Open Source 릴리스와 호환되지 않는 버전입니다.
 
@@ -708,7 +708,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">라이브 검색</th>
     </tr>
     <tr>
-      <td>라이브 검색 3.0.1</td>
+      <td>Live Search 3.0.1</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
@@ -727,7 +727,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>라이브 검색 2.0.5</td>
+      <td>Live Search 2.0.5</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
@@ -746,7 +746,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>라이브 검색 2.0.4</td>
+      <td>Live Search 2.0.4</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
@@ -765,7 +765,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>라이브 검색 2.0.3</td>
+      <td>Live Search 2.0.3</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
@@ -822,7 +822,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>라이브 검색 1.2.0</td>
+      <td>Live Search 1.2.0</td>
       <td>호환 가능</span>
       </td>
       <td>호환 가능</span>
@@ -865,7 +865,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">페이지 빌더</th>
     </tr>
     <tr>
-      <td>Page Builder 1.7.3</td>
+      <td>페이지 빌더 1.7.3</td>
       <td>지원됨</span>
       </td>
       <td>지원되지 않음</span>
@@ -884,7 +884,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.7.2</td>
+      <td>페이지 빌더 1.7.2</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원됨</span>
@@ -903,7 +903,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.7.1</td>
+      <td>페이지 빌더 1.7.1</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -922,7 +922,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.7.0</td>
+      <td>페이지 빌더 1.7.0</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -941,7 +941,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.6.0</td>
+      <td>페이지 빌더 1.6.0</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -960,7 +960,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.5.0</td>
+      <td>페이지 빌더 1.5.0</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -979,7 +979,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.4.0</td>
+      <td>페이지 빌더 1.4.0</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -998,7 +998,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Page Builder 1.3.6</td>
+      <td>페이지 빌더 1.3.6</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -1371,10 +1371,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Adobe Commerce에 대한 주문 처리 저장</th>
+      <th colspan="9">Adobe Commerce에 대한 스토어 이행</th>
     </tr>
     <tr>
-      <td>Adobe Commerce 1.4.0용 저장 주문 처리</td>
+      <td>Adobe Commerce 1.4.0용 스토어 이행</td>
       <td>지원됨</span>
       </td>
       <td>지원됨</span>
@@ -1393,26 +1393,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Adobe Commerce 1.3.0용 저장 주문 처리</td>
-      <td>지원되지 않음</span>
-      </td>
-      <td>지원됨</span>
-      </td>
-      <td>지원됨</span>
-      </td>
-      <td>지원됨</span>
-      </td>
-      <td>지원됨</span>
-      </td>
-      <td>지원됨</span>
-      </td>
-      <td>지원됨</span>
-      </td>
-      <td>지원되지 않음</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Adobe Commerce 1.2.0용 저장 주문 처리</td>
+      <td>Adobe Commerce 1.3.0용 스토어 이행</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원됨</span>
@@ -1431,7 +1412,26 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Adobe Commerce 1.1.0용 저장 주문 처리</td>
+      <td>Adobe Commerce 1.2.0용 스토어 이행</td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0용 스토어 이행</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>
@@ -1450,7 +1450,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Adobe Commerce 1.1.0용 저장 주문 처리</td>
+      <td>Adobe Commerce 1.1.0용 스토어 이행</td>
       <td>지원되지 않음</span>
       </td>
       <td>지원되지 않음</span>

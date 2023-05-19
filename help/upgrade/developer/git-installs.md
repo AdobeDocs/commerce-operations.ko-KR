@@ -1,25 +1,25 @@
 ---
 title: Git 기반 설치 업그레이드
-description: Git 리포지토리에서 복제한 Adobe Commerce 또는 Magento Open Source 설치를 업그레이드합니다.
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+description: git 저장소에서 복제한 Adobe Commerce 또는 Magento Open Source 설치를 업그레이드합니다.
+exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
-
 # Git 기반 설치 업그레이드
 
-이 항목에서는 기여 개발자가 Adobe Commerce 또는 Magento Open Source을 재설치하지 않고 업데이트할 수 있는 방법에 대해 설명합니다. 기여하고 있는 개발자가 아닌 경우 다음을 참조하십시오 [업그레이드 수행](../implementation/perform-upgrade.md).
+이 항목에서는 기여 개발자가 Adobe Commerce 또는 Magento Open Source을 다시 설치하지 않고 업데이트하는 방법에 대해 설명합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
 
 기여 개발자인 경우 업그레이드하려면 다음을 수행하십시오.
 
 {{$include /help/_includes/server-login.md}}
 
-1. 변경한 내용을 `composer.json` 파일을 덮어쓸 수 있습니다.
+1. 에 대한 변경 사항을 모두 저장합니다. `composer.json` 다음 단계에서 덮어쓰기이므로 파일입니다.
 
-1. 백업 만들기 `composer.json` 파일.
+1. 의 백업 만들기 `composer.json` 파일.
 
    ```bash
    cp composer.json composer.json.old
@@ -33,9 +33,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >If `git pull origin develop` 실패: [문제 해결](https://support.magento.com/hc/en-us/articles/360034229872).
+   >If `git pull origin develop` 실패, 참조 [문제 해결](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. 비교 및 병합 `composer.json.old` 다음 파일을 사용하여 `composer.json` 파일.
+1. 차이점 및 병합 `composer.json.old` 파일이 포함된 파일 `composer.json` 파일.
 
 1. 종속성을 해결하고 정확한 버전을 `composer.lock` 파일.
 
@@ -43,13 +43,13 @@ ht-degree: 0%
    composer update
    ```
 
-1. 데이터베이스를 업데이트합니다.
+1. 데이터베이스 업데이트:
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. 캐시 정리:
+1. 캐시를 정리합니다.
 
    ```bash
    bin/magento cache:clean

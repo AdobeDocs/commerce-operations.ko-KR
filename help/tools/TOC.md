@@ -1,6 +1,6 @@
 ---
 user-guide-title: 도구
-user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 도구 사용, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
+user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
 source-wordcount: '191'
@@ -28,28 +28,28 @@ ht-degree: 0%
 - 품질 패치 도구 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
-   - [릴리스 노트](quality-patches-tool/release-notes.md)
+   - [릴리스 정보](quality-patches-tool/release-notes.md)
 - Adobe Commerce 관찰 {#observation-for-adobe-commerce}
    - [소개](observation-for-adobe-commerce/intro.md)
    - [액세스 방법](observation-for-adobe-commerce/access.md)
-   - [계정 및 기간 선택](observation-for-adobe-commerce/selecting-the-account.md)
+   - [계정 및 일정 선택](observation-for-adobe-commerce/selecting-the-account.md)
    - [포커스 탭 선택](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [요약 탭](observation-for-adobe-commerce/summary.md)
    - [Elasticsearch 탭](observation-for-adobe-commerce/elasticsearch.md)
    - [Redis 탭](observation-for-adobe-commerce/redis-tab.md)
    - [MySQL 탭](observation-for-adobe-commerce/mysql-tab.md)
    - [PHP 탭](observation-for-adobe-commerce/php-tab.md)
-   - [보트 탭](observation-for-adobe-commerce/bots.md)
+   - [봇 탭](observation-for-adobe-commerce/bots.md)
    - [배포 탭](observation-for-adobe-commerce/deploy-tab.md)
    - [경고 탭](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF 탭](observation-for-adobe-commerce/waf-tab.md)
    - [CDN 탭](observation-for-adobe-commerce/cdn-tab.md)
    - [다음 [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [크론 탭](observation-for-adobe-commerce/cron-tab.md)
-   - [색인 지정 탭](observation-for-adobe-commerce/indexing-tab.md)
-   - [QuickView 탭](observation-for-adobe-commerce/oac-quickview-tab.md)
+   - [색인화 탭](observation-for-adobe-commerce/indexing-tab.md)
+   - [빠른 보기 탭](observation-for-adobe-commerce/oac-quickview-tab.md)
    - [보안 탭](observation-for-adobe-commerce/security-tab.md)
-   - [Infra 탭](observation-for-adobe-commerce/oac-infra.md)
+   - [인프라 탭](observation-for-adobe-commerce/oac-infra.md)
    - [Adobe Commerce에 대한 Observation 사용 방법](observation-for-adobe-commerce/how-to-use.md)
 - 데이터 마이그레이션 도구 {#data-migration}
    - [마이그레이션 작동 방식](data-migration-tool/how-migration-works.md)
@@ -68,10 +68,10 @@ ht-degree: 0%
       - [설정](data-migration-tool/migrate-data/settings.md)
       - [데이터](data-migration-tool/migrate-data/data.md)
       - [변경 사항](data-migration-tool/migrate-data/delta.md)
-      - [후속 작업](data-migration-tool/migrate-data/follow-up.md)
+      - [추가 작업](data-migration-tool/migrate-data/follow-up.md)
       - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
-      - [데이터 후 마이그레이션 단계](data-migration-tool/migrate-data/post-migration.md)
+      - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
    - 리소스 {#resources}
       - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-      - [창로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+      - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

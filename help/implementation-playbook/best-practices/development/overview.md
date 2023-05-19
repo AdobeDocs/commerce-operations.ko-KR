@@ -1,13 +1,13 @@
 ---
 title: 구현 개발 단계
 description: Adobe Commerce 프로젝트의 개발 단계에 대한 구현 모범 사례에 대해 알아봅니다.
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
-
 
 # 개발 단계
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 - 스프린트 검토
 - 고객 승인
 
-다음 섹션에는 개발 단계에 대한 우수 사례 정보가 포함되어 있습니다.
+다음 섹션에는 개발 단계에 대한 모범 사례 정보가 포함되어 있습니다.
 
 ## 애플리케이션 개발
 
@@ -54,17 +54,17 @@ ht-degree: 0%
 
 ## 플랫폼 및 서비스
 
-- [이미지 최적화를 위한 기본 사용](image-optimization.md)
+- [이미지 최적화에 Fastly 사용](image-optimization.md)
 
 ### 로컬 및 스테이징 환경 설정
 
-- [클라우드 인프라 개발 워크플로우](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
+- [클라우드 인프라의 개발 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## 코드, 병합, 테스트
 
 - [빌드 및 배포에 대한 우수 사례](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [정적 콘텐츠 배포 - 클라우드](static-content-deployment.md)
 - [CSS 및 JS 파일 최적화](optimize-css-js-files.md)
-- [응답형 사이트를 위한 이미지 최적화](image-optimization.md)
-- [클라우드 인프라 관련 Adobe Commerce 우수 사례 문제 해결](troubleshooting.md)
-- [데이터베이스 테이블을 수정하는 시기와 방법을 알아봅니다.](modifying-core-and-third-party-tables.md)
+- [더 반응형 사이트를 위해 이미지 최적화](image-optimization.md)
+- [클라우드 인프라에서 Adobe Commerce에 대한 문제 해결 우수 사례](troubleshooting.md)
+- [데이터베이스 테이블 수정 시기 및 방법 이해](modifying-core-and-third-party-tables.md)

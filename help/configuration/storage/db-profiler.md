@@ -1,14 +1,14 @@
 ---
 title: 데이터베이스 프로파일러 구성
-description: 데이터베이스 프로파일러에 대한 출력을 구성하는 방법에 대한 예를 참조하십시오.
-badge: label="Consolidty Goswami에 의해 기여" type="Consolident" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+description: 데이터베이스 프로파일러에 대한 출력을 구성하는 방법의 예를 참조하십시오.
+badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # 데이터베이스 프로파일러 구성
 
@@ -16,7 +16,7 @@ Commerce 데이터베이스 프로파일러는 각 쿼리의 시간 및 적용�
 
 ## 1단계: 배포 구성 수정
 
-수정 `<magento_root>/app/etc/env.php` 에 다음 참조를 추가하려면 [데이터베이스 프로파일러 클래스](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+수정 `<magento_root>/app/etc/env.php` 에 다음 참조를 추가하려면 [database profiler 클래스](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [
@@ -25,7 +25,7 @@ Commerce 데이터베이스 프로파일러는 각 쿼리의 시간 및 적용�
         ],
 ```
 
-예는 다음과 같습니다.
+예제는 다음과 같습니다.
 
 ```php?start_inline=1
  'db' =>
@@ -54,15 +54,15 @@ Commerce 데이터베이스 프로파일러는 각 쿼리의 시간 및 적용�
 
 ## 2단계: 출력 구성
 
-Commerce 응용 프로그램 부트스트랩 파일에서 출력을 구성합니다. 아마 `<magento_root>/pub/index.php` 웹 서버 가상 호스트 구성에 있을 수도 있습니다.
+Commerce 애플리케이션 부트스트랩 파일에서 출력을 구성합니다. 다음과 같을 수 있습니다. `<magento_root>/pub/index.php` 또는 웹 서버 가상 호스트 구성에 있을 수 있습니다.
 
-다음 예제에서는 3열 테이블의 결과를 표시합니다.
+다음 예에서는 결과를 3열 테이블에 표시합니다.
 
-- 총 시간(페이지에서 모든 쿼리를 실행하는 총 시간 표시)
-- SQL(모든 SQL 쿼리를 표시합니다.) 행 헤더에 쿼리 개수가 표시됩니다.)
-- 쿼리 매개 변수(각 SQL 쿼리에 대한 매개 변수를 표시합니다.)
+- 총 시간(페이지에서 모든 쿼리를 실행하는 데 걸리는 총 시간을 표시함)
+- SQL(모든 SQL 쿼리 표시, 행 머리글에 쿼리 개수 표시)
+- 쿼리 매개 변수(각 SQL 쿼리에 대한 매개 변수 표시)
 
-출력을 구성하려면 다음에 다음을 추가합니다. `$bootstrap->run($app);` 부트스트랩 파일의 줄:
+출력을 구성하려면 다음 항목 뒤에 다음을 추가합니다. `$bootstrap->run($app);` 부트스트랩 파일의 줄:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -88,6 +88,6 @@ echo "</table>";
 
 ## 3단계: 결과 보기
 
-결과를 보려면 상점 또는 관리자로 이동합니다. 샘플은
+결과를 보려면 상점 또는 관리자의 페이지로 이동하십시오. 샘플은 다음과 같습니다.
 
-![예제 데이터베이스 프로파일러 결과](../../assets/configuration/db-profiler-results.png)
+![샘플 데이터베이스 프로파일러 결과](../../assets/configuration/db-profiler-results.png)

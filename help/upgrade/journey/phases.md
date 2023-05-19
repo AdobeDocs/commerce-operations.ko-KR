@@ -1,15 +1,15 @@
 ---
 title: 업그레이드 여정 단계
-description: Adobe Commerce 및 Magento Open Source 프로젝트를 위한 업그레이드 여정의 여러 단계에 대해 알아봅니다.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+description: Adobe Commerce 및 Magento Open Source 프로젝트에 대한 업그레이드 여정의 여러 단계에 대해 알아봅니다.
+exl-id: c0e39102-5f37-47cb-9792-9eeb50707ec8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 0%
 
 ---
 
-
-# 여정 단계 업그레이드
+# 업그레이드 여정 단계
 
 업그레이드는 세심한 주의, 계획 및 관리가 필요합니다. Adobe Commerce 및 Magento Open Source의 업그레이드 여정을 이해하는 데 도움이 되도록 다음 세 가지 주요 단계로 프로세스를 설명합니다.
 

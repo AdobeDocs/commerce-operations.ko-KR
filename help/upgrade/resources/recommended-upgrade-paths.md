@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerce을 통한 플랫폼 현대화
 description: Adobe Commerce 업그레이드 계획을 위한 권장 사항을 검토하십시오.
-source-git-commit: 4a78c2d2a215d1b58b2f07b7a961849321f82318
+exl-id: f776b000-0085-4b77-860f-623837c3c902
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
-
 
 # 권장 업그레이드 경로
 

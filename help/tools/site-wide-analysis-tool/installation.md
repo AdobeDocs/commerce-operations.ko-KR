@@ -1,7 +1,8 @@
 ---
 title: 설치 안내서
-description: "이 안내서를 사용하여 설치 [!DNL Site-Wide Analysis Tool] 웹 사이트용"
-source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
+description: 이 안내서를 사용하여 설치하십시오. [!DNL Site-Wide Analysis Tool] 웹 사이트용
+exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -10,25 +11,25 @@ ht-degree: 0%
 
 # 설치 안내서
 
-다음 [!DNL Site-Wide Analysis Tool] 에서는 24/7 클라우드 인프라 설치에서 Adobe Commerce의 보안 및 운영을 보장하기 위한 실시간 성능 모니터링, 보고서 및 권장 사항을 제공합니다. 또한 사용 가능하고 설치된 패치, 타사 확장 및 Adobe Commerce 설치에 대한 자세한 정보도 제공합니다.
+다음 [!DNL Site-Wide Analysis Tool] 는 클라우드 인프라 설치에서 Adobe Commerce의 보안 및 운영을 보장하기 위해 연중무휴 실시간 성능 모니터링, 보고서 및 권장 사항을 제공합니다. 또한 사용 가능하고 설치된 패치, 타사 확장 및 Adobe Commerce 설치에 대한 자세한 정보를 제공합니다.
 
 >[!INFO]
 >
->학습 [사용 방법](../site-wide-analysis-tool/access.md) a [!DNL Site-Wide Analysis Tool] 보고서를 생성합니다.
+>학습 [활성화 방법](../site-wide-analysis-tool/access.md) 다음 [!DNL Site-Wide Analysis Tool] 보고서를 생성합니다.
 
-Adobe Commerce에 대한 온-프레미스 설치가 있는 경우 도구를 사용하려면 인프라에 에이전트를 설치하십시오. 클라우드 인프라 프로젝트에서 Adobe Commerce에 에이전트를 설치할 필요가 없습니다.
+Adobe Commerce을 온-프레미스에 설치한 경우 인프라에 에이전트를 설치하여 도구를 사용합니다. 클라우드 인프라 프로젝트의 Adobe Commerce에 에이전트를 설치할 필요가 없습니다.
 
 ## 에이전트
 
-다음 [!DNL Site-Wide Analysis Tool] 에이전트를 사용하면 [!DNL Site-Wide Analysis Tool] Adobe Commerce의 온프레미스 설치에 대한 고객
+다음 [!DNL Site-Wide Analysis Tool] 에이전트를 사용하면 다음을 사용할 수 있습니다 [!DNL Site-Wide Analysis Tool] Adobe Commerce 온-프레미스 설치용
 
-다음 [!DNL Site-Wide Analysis Tool] 에이전트는 응용 프로그램 및 비즈니스 데이터를 수집하고 분석하여 설치 상태에 대한 추가 인사이트를 제공하므로 고객 경험을 향상시킬 수 있습니다. 애플리케이션을 모니터링하고 성능, 보안, 가용성 및 애플리케이션 문제를 식별하는 데 도움이 됩니다.
+다음 [!DNL Site-Wide Analysis Tool] 에이전트는 애플리케이션 및 비즈니스 데이터를 수집하고, 분석하여, 고객 경험을 개선할 수 있도록 설치 상태에 대한 추가 통찰력을 제공합니다. 애플리케이션을 모니터링하고 성능, 보안, 가용성 및 애플리케이션 문제를 식별하는 데 도움이 됩니다.
 
 에이전트를 설치하려면 다음 단계가 필요합니다.
 
 1. 시스템 요구 사항을 확인합니다.
 
-1. 에서 API 키 구성 [!UICONTROL Commerce Services Connector] 확장.
+1. 에서 API 키 구성 [!UICONTROL Commerce Services Connector] 확장명.
 
 1. 에이전트를 설치합니다.
 
@@ -44,10 +45,10 @@ Adobe Commerce에 대한 온-프레미스 설치가 있는 경우 도구를 사�
 
 - 운영 체제
 
-   - [!DNL Linux x86-64] 배포와 같은 [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], 및 유사
+   - [!DNL Linux x86-64] 배포(예: ) [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian]및 이와 유사한 것
    >[!IMPORTANT]
    >
-   >Adobe Commerce은 [!DNL Microsoft Windows] 또는 [!DNL macOS].
+   >Adobe Commerce은에서 지원되지 않습니다. [!DNL Microsoft Windows] 또는 [!DNL macOS].
 
 - Adobe Commerce 2.4.1 이상
 
@@ -71,21 +72,21 @@ Adobe Commerce에 대한 온-프레미스 설치가 있는 경우 도구를 사�
 
 ## [!DNL Commerce Services Connector]
 
-에이전트에는 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 시스템 및 [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) API 키 사용. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행하십시오.
+에이전트에는 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 시스템에 설치할 확장 프로그램 및 [구성됨](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) API 키 사용. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행합니다.
 
 ```bash
 bin/magento module:status Magento_ServicesId
 ```
 
-확장을 설치하고 다른 서비스에 대한 기존 API 키를 사용하여 구성한 경우, **API 키를 다시 생성해야 합니다.** 에이전트의 Adobe Commerce 관리에서 업데이트합니다.
+확장을 설치하고 다른 서비스에 대한 기존 API 키를 사용하여 구성한 경우 **API 키를 다시 생성해야 함** 에이전트의 Adobe Commerce 관리에서 업데이트합니다.
 
-1. 웹 사이트를 [유지 모드](../../installation/tutorials/maintenance-mode.md).
+1. 웹 사이트 입력 [유지 관리 모드](../../installation/tutorials/maintenance-mode.md).
 
-1. 에 로그인합니다. [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. 에 로그인 [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
    >[!NOTE]
    >
-   > 계정에 액세스하는 데 문제가 있으면 [Adobe Commerce 지원 또는 클라우드 계정에 로그인할 수 없습니다.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 문제 해결 도움말 을 참조하십시오.
+   > 계정에 액세스하는 데 문제가 있는 경우 다음을 참조하십시오. [Adobe Commerce 지원 또는 클라우드 계정에 로그인할 수 없음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 문제 해결 도움말입니다.
 
 1. 클릭 **[!UICONTROL API Portal]**.
 
@@ -95,11 +96,11 @@ bin/magento module:status Magento_ServicesId
 
 >[!IMPORTANT]
 >
-> API 포털에서 새 키를 생성하는 경우 즉시 의 API 키를 업데이트합니다 [!DNL Admin configuration]. 새 키를 생성하고 [!DNL Admin]로 설정하면 SaaS 확장이 더 이상 작동하지 않으며 중요한 데이터를 잃게 됩니다.
+> API 포털에서 새 키를 생성하는 경우 [!DNL Admin configuration]. 새 키를 생성하고 의 키를 업데이트하지 않으면 [!DNL Admin], SaaS 확장이 더 이상 작동하지 않으며 중요한 데이터를 잃게 됩니다.
 
-확장이 설치되어 있지 않은 경우 다음 지침을 사용하여 설치합니다.
+확장이 설치되지 않은 경우 다음 지침에 따라 설치하십시오.
 
-1. 확장을 `composer.json` 파일을 설치하고 설치합니다.
+1. 에 확장 추가 `composer.json` 파일을 만든 다음 설치합니다.
 
    ```bash
    composer require magento/services-id
@@ -123,19 +124,19 @@ bin/magento module:status Magento_ServicesId
    bin/magento cache:clean
    ```
 
-1. [API 키 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 확장을 시스템에 연결하기 위해
+1. [API 키 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 확장을 시스템에 연결합니다.
 
 ## 에이전트 설치
 
-Adobe에서 [쉘 스크립트](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 설치를 단순화하는 데 도움이 됩니다. 셸 스크립트를 사용하는 것이 좋지만, [수동 설치](#manual) 필요한 경우 메서드를 사용합니다.
+다음을 생성했습니다. [쉘 스크립트](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 설치를 단순화합니다. 셸 스크립트를 사용하는 것이 좋지만 [수동 설치](#manual) 필요한 경우 방법.
 
 >[!INFO]
 >
->에이전트가 설치되면 새 릴리스를 사용할 수 있으면 자체 업데이트됩니다.
+>에이전트가 설치되면 새 릴리스를 사용할 수 있을 때 자동으로 업데이트됩니다.
 
-### 스크립트 작성
+### 스크립팅됨
 
-1. 셸 스크립트를 다운로드하여 실행합니다.
+1. 셸 스크립트를 다운로드하고 실행합니다.
 
    ```bash
    bash -c "$(wget -qO - https://raw.githubusercontent.com/magento-swat/install-agent-helpers/main/install.sh)"
@@ -143,7 +144,7 @@ Adobe에서 [쉘 스크립트](https://github.com/magento-swat/install-agent-hel
 
    >[!TIP]
    >
-   >루트 Adobe Commerce 프로젝트 디렉토리 외부에 에이전트를 설치하는 것이 좋습니다.
+   >에이전트를 루트 Adobe Commerce 프로젝트 디렉터리 외부에 설치하는 것이 좋습니다.
 
 1. 설치를 확인합니다.
 
@@ -156,29 +157,29 @@ Adobe에서 [쉘 스크립트](https://github.com/magento-swat/install-agent-hel
    Success exit.
    ```
 
-1. 에이전트를 다운로드하여 설치한 후 [실행할 구성](#run-the-agent) 다음 방법 중 하나를 사용합니다.
+1. 에이전트를 다운로드하여 설치한 후, [실행되도록 구성](#run-the-agent) 다음 방법 중 하나를 사용합니다.
 
-   - [서비스](#service) (루트 액세스 권한이 있는 경우 기본 설정)
+   - [서비스](#service) (루트 액세스 권한이 있는 경우 선호됨)
 
    - [크론](#cron)
 
 ### 수동 {#manual}
 
-Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 에이전트를 설치하려면 다음 단계를 수행하여 수동으로 설치해야 합니다.
+을(를) 사용하지 않으려면 [쉘 스크립트](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 에이전트를 설치하려면 다음 단계를 수행하여 수동으로 설치해야 합니다.
 
 1. 에이전트를 다운로드할 디렉토리를 만듭니다.
 
    >[!TIP]
    >
-   >루트 Adobe Commerce 프로젝트 디렉토리 외부에 에이전트를 설치하는 것이 좋습니다.
+   >에이전트를 루트 Adobe Commerce 프로젝트 디렉터리 외부에 설치하는 것이 좋습니다.
 
-1. 이진 파일을 다운로드하여 압축을 해제합니다.
+1. 이진 파일을 다운로드하고 압축을 풉니다.
 
    >[!INFO]
    >
-   >를 사용하려면 [!DNL Site-Wide Analysis Tool], 먼저 Adobe Commerce 관리자에서 대시보드에 액세스할 때 표시되는 사용 약관을 읽고 동의해야 합니다.
+   >을(를) 사용하려면 [!DNL Site-Wide Analysis Tool], 먼저 Adobe Commerce 관리자에서 대시보드에 액세스할 때 표시되는 사용 약관을 읽고 동의해야 합니다.
 
-   대상 **AMD64** 아키텍처:
+   의 경우 **AMD64** 아키텍처:
 
    1. 런처 아카이브를 다운로드합니다.
 
@@ -186,12 +187,12 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
-   1. 런처 아카이브를 압축 해제합니다.
+   1. 런처 아카이브 압축을 풉니다.
 
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
-   대상 **ARM64** 아키텍처:
+   의 경우 **ARM64** 아키텍처:
 
    1. 런처 아카이브를 다운로드합니다.
 
@@ -199,14 +200,14 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. 런처 아카이브를 압축 해제합니다.
+   1. 런처 아카이브 압축을 풉니다.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
 
 
-1. *(선택 사항)* 체크섬 파일에 대한 서명을 확인합니다.
+1. *(선택 사항)* 체크섬 파일의 서명을 확인합니다.
 
    ```bash
    echo -n "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE0M2FBTk1WRXR3eEZBdTd4TE91dQpacG5FTk9pV3Y2aXpLS29HendGRitMTzZXNEpOR3lRS1Jha0MxTXRsU283VnFPWnhUbHZSSFhQZWt6TG5vSHVHCmdmNEZKa3RPUEE2S3d6cjF4WFZ3RVg4MEFYU1JNYTFadzdyOThhenh0ZHdURVh3bU9GUXdDcjYramFOM3ErbUoKbkRlUWYzMThsclk0NVJxWHV1R294QzBhbWVoakRnTGxJUSs1d1kxR1NtRGRiaDFJOWZqMENVNkNzaFpsOXFtdgorelhjWGh4dlhmTUU4MUZsVUN1elRydHJFb1Bsc3dtVHN3ODNVY1lGNTFUak8zWWVlRno3RFRhRUhMUVVhUlBKClJtVzdxWE9kTGdRdGxIV0t3V2ppMFlrM0d0Ylc3NVBMQ2pGdEQzNytkVDFpTEtzYjFyR0VUYm42V3I0Nno4Z24KY1Q4cVFhS3pYRThoWjJPSDhSWjN1aFVpRHhZQUszdmdsYXJSdUFacmVYMVE2ZHdwYW9ZcERKa29XOXNjNXlkWApBTkJsYnBjVXhiYkpaWThLS0lRSURnTFdOckw3SVNxK2FnYlRXektFZEl0Ni9EZm1YUnJlUmlMbDlQMldvOFRyCnFxaHNHRlZoRHZlMFN6MjYyOU55amgwelloSmRUWXRpdldxbGl6VTdWbXBob1NrVnNqTGtwQXBiUUNtVm9vNkgKakJmdU1sY1JPeWI4TXJCMXZTNDJRU1MrNktkMytwR3JyVnh0akNWaWwyekhSSTRMRGwrVzUwR1B6LzFkeEw2TgprZktZWjVhNUdCZm00aUNlaWVNa3lBT2lKTkxNa1cvcTdwM200ejdUQjJnbWtldm1aU3Z5MnVMNGJLYlRoYXRlCm9sdlpFd253WWRxaktkcVkrOVM1UlNVQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==" | base64 -d > release.pub
@@ -222,7 +223,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
    shasum -a 512 -c launcher.checksum
    ```
 
-1. 만들기 `config.yaml` 다음 내용을 포함하는 파일입니다.
+1. 만들기 `config.yaml` 다음 내용이 포함된 파일입니다.
 
    ```yaml
    project:
@@ -255,19 +256,19 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
    Success exit.
    ```
 
-1. 에이전트를 다운로드하여 설치한 후에는 다음을 수행해야 합니다 [실행할 구성](#run-the-agent) 다음 방법 중 하나를 사용합니다.
+1. 에이전트를 다운로드하여 설치한 후에는 다음을 수행해야 합니다. [실행되도록 구성](#run-the-agent) 다음 방법 중 하나를 사용합니다.
 
-   - [서비스](#service) (루트 액세스 권한이 있는 경우 기본 설정)
+   - [서비스](#service) (루트 액세스 권한이 있는 경우 선호됨)
 
    - [크론](#cron)
 
 ## 에이전트 실행 {#run-the-agent}
 
-서비스로 실행되도록 에이전트를 구성하는 것이 좋습니다. 인프라에 대한 액세스 권한이 제한되어 있고 루트 사용 권한이 없는 경우 [cron](#cron) 을 가리키도록 업데이트하는 것이 좋습니다.
+서비스로 실행되도록 에이전트를 구성하는 것이 좋습니다. 인프라에 대한 액세스가 제한되어 있고 루트 권한이 없는 경우 다음을 사용해야 합니다. [cron](#cron) 대신,
 
 ### 서비스 {#service}
 
-1. 시스템 단위 파일 만들기 `(/etc/systemd/system/scheduler.service)` 다음 구성으로 대체합니다(바꾸기 `<filesystemowner>` 에이전트 및 Adobe Commerce 소프트웨어가 설치된 디렉토리를 소유하는 UNIX® 사용자 사용) 에이전트를 루트 사용자로 다운로드한 경우 디렉토리 및 중첩 파일 소유자를 변경합니다.
+1. 시스템 단위 파일 만들기 `(/etc/systemd/system/scheduler.service)` 다음 구성 포함(바꾸기) `<filesystemowner>` (에이전트 및 Adobe Commerce 소프트웨어가 설치된 디렉터리를 소유하는 UNIX® 사용자). 에이전트를 루트 사용자로 다운로드한 경우 디렉터리 및 중첩된 파일 소유자를 변경합니다.
 
    ```config
    [Unit]
@@ -299,7 +300,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
    systemctl enable scheduler
    ```
 
-1. 서비스가 작동 중인지 확인합니다.
+1. 서비스가 작동 및 실행 중인지 확인합니다.
 
    ```bash
    journalctl -u scheduler | grep "Application is going to update" | tail -1 && echo "Agent is successfully installed"
@@ -307,9 +308,9 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
 
 ### 크론 {#cron}
 
-루트 권한이 없거나 서비스를 루트로 구성할 수 있는 권한이 없는 경우 대신 cron을 사용할 수 있습니다.
+루트 권한이 없거나 서비스를 루트로 구성할 수 있는 권한이 없는 경우 cron 을 대신 사용할 수 있습니다.
 
-계획 일정을 업데이트합니다.
+cron 일정 업데이트:
 
 ```bash
 ( crontab -l ; echo "* * * * * flock -n /tmp/swat-agent.lockfile -c '/path/to/agent/scheduler' >> /path/to/agent/errors.log 2>&1" ) | sort - | uniq - | crontab -
@@ -317,7 +318,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
 
 ## 제거
 
-시스템에서 서비스를 제거하고 생성된 파일을 모두 제거하려면 다음 명령을 실행하십시오.
+다음 명령을 실행하여 시스템에서 서비스를 제거하고 생성된 모든 파일을 제거합니다.
 
 1. 스케줄러를 중지합니다.
 
@@ -331,19 +332,19 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
    systemctl disable scheduler
    ```
 
-1. 스케줄러 서비스의 `systemd` 단위 파일입니다.
+1. 스케줄러 서비스 제거 `systemd` 단위 파일입니다.
 
    ```bash
    rm /etc/systemd/system/scheduler.service
    ```
 
-1. 를 다시 로드합니다. `systemd` 관리자 구성.
+1. 다시 로드 `systemd` 관리자 구성.
 
    ```bash
    systemctl daemon-reload
    ```
 
-1. 임의 재설정 `systemd` 실패 상태의 단위입니다.
+1. 모두 재설정 `systemd` 실패 상태의 장치.
 
    ```bash
    systemctl reset-failed
@@ -361,7 +362,7 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
    rm /usr/local/bin/scheduler
    ```
 
-에이전트를 대신 cron으로 실행하도록 구성한 경우 다음 지침을 사용하십시오.
+대신 cron을 사용하여 실행되도록 에이전트를 구성한 경우 다음 지침을 따르십시오.
 
 1. crontab 목록에서 에이전트를 제거합니다.
 
@@ -383,9 +384,9 @@ Adobe의 [쉘 스크립트](https://github.com/magento-swat/install-agent-helper
 
 ## 문제 해결
 
-### 액세스 키가 제대로 구문 분석되지 않았습니다.
+### 액세스 키가 제대로 구문 분석되지 않음
 
-액세스 키를 제대로 구문 분석하지 않으면 다음 오류가 표시될 수 있습니다.
+액세스 키가 제대로 구문 분석되지 않으면 다음 오류가 표시될 수 있습니다.
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
@@ -394,15 +395,15 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/
 
 이 오류를 해결하려면 다음 단계를 수행하십시오.
 
-1. 작업 [스크립트 설치](#scripted)를 눌러 출력을 저장하고 출력에 오류를 검토합니다.
-1. 생성된 를 검토합니다 `config.yaml` 파일을 작성하고 Commerce 인스턴스와 PHP의 경로가 올바른지 확인합니다.
-1. 스케줄러를 실행 중인 사용자가 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md) Unix 그룹 또는 는 파일 시스템 소유자와 동일한 사용자입니다.
-1. 다음을 확인합니다. [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 키가 올바르게 설치되어 있고 해당 키를 업데이트하여 확장을 시스템에 연결해 보십시오.
-1. [제거](#uninstall) 키를 업데이트한 후 에이전트를 사용하여 다시 설치합니다. [스크립트 설치](#scripted).
-1. 스케줄러를 실행하고 동일한 오류가 계속 표시되는지 확인합니다.
-1. 여전히 동일한 오류가 표시되면 `config.yaml` 지원 티켓을 디버깅하여 엽니다.
+1. 수행 [스크립팅된 설치](#scripted)을 클릭하고, 출력을 저장하고 출력에 오류가 있는지 검토합니다.
+1. 생성된 항목 검토 `config.yaml` 파일을 만들고 Commerce 인스턴스와 PHP의 경로가 올바른지 확인합니다.
+1. 스케줄러를 실행하는 사용자가에 있는지 확인합니다. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md) Unix 그룹 또는 는 파일 시스템 소유자와 동일한 사용자입니다.
+1. 다음을 확인하십시오. [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 키가 올바르게 설치되고 업데이트를 시도하여 확장을 시스템에 연결하십시오.
+1. [제거](#uninstall) 키를 업데이트한 다음 를 사용하여 다시 설치한 후 에이전트 [설치 스크립트](#scripted).
+1. 스케줄러를 실행하여 동일한 오류가 계속 표시되는지 확인합니다.
+1. 동일한 오류가 계속 표시되면 `config.yaml` 을 클릭하여 지원 티켓을 디버깅하고 엽니다.
 
 
 >[!INFO]
 >
->자세한 내용은 [액세스 방법 [!DNL Site-Wide Analysis Tool] 보고서를 생성합니다](../site-wide-analysis-tool/access.md).
+>다음을 참조하십시오 [액세스 방법 [!DNL Site-Wide Analysis Tool] 보고서 생성](../site-wide-analysis-tool/access.md).

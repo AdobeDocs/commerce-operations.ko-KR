@@ -9,14 +9,14 @@ ht-degree: 0%
 
 **빌드 시스템을 업데이트하려면**:
 
-1. 파일 시스템 소유자로서 빌드 시스템에 로그인합니다.
-1. 응용 프로그램 루트 디렉토리로 변경합니다.
+1. 빌드 시스템에 파일 시스템 소유자로 로그인합니다.
+1. 애플리케이션 루트 디렉토리로 변경합니다.
 
    ```bash
    cd <Magento root dir>
    ```
 
-1. 변경 내용을 `app/etc/config.php` 소스 제어.
+1. 변경 사항을 다음으로 가져오기 `app/etc/config.php` 소스 제어에서 가져왔습니다.
 
    ```bash
    git pull mconfig m2.2_deploy
@@ -34,7 +34,7 @@ ht-degree: 0%
    bin/magento setup:static-content:deploy -f
    ```
 
-1. 소스 컨트롤에 변경 내용을 확인합니다.
+1. 소스 제어에 대한 변경 내용을 확인합니다.
 
    ```bash
    git add -A && git commit -m "Updated files on build system" && git push mconfig m2.2_deploy

@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create an issue about a bug on the Experience League website
-title: 버그 보고서
+title: 버그 보고
 labels: bug
 assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 <!-- (REQUIRED) What is the issue or current behavior? -->
 
-### 재현할 절차
+### 재현 단계
 
 <!-- (OPTIONAL) What needs to be done to replicate this issue? You can provide your scenario in a Gist. -->
 
 1. 첫 단계
 1. 두 번째 단계
-1. 기타
+1. 등
 
 ## 예상 결과
 
 <!-- (REQUIRED) What is the expected result or behavior after resolving this issue? -->
 
-## 가능한 솔루션
+## 가능한 해결 방법
 
 <!-- (OPTIONAL) What would a solution for this issue look like? -->
 

@@ -1,40 +1,40 @@
 ---
 title: 성능 테스트를 위한 데이터 생성
 description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 8%
 
 ---
 
-
 # 성능 테스트 데이터
 
-를 사용하려면 [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 성능 테스트를 위한 다른 도구는 저장소, 카테고리 및 제품과 같은 많은 양의 데이터를 생성해야 합니다.
+을(를) 사용하려면 [성능 툴킷](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 또는 성능 테스트를 위한 다른 도구에서 저장소, 카테고리 및 제품과 같은 많은 양의 데이터를 생성해야 합니다.
 
 {{file-system-owner}}
 
 ## 프로필
 
-를 사용하여 만드는 데이터의 양을 조정할 수 있습니다 _프로필_ (작은, 중간, 큰, 아주 큰). 프로필은 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 디렉토리.
+을 사용하여 만드는 데이터의 양을 조정할 수 있습니다 _프로필_ (small, medium, large 및 extra large). 프로필은 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 디렉토리.
 
-예, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+예를 들어, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-다음 그림은 _작음_ 프로필:
+다음 그림은 를 사용하여 제품이 상점 정면에 표시되는 방식을 보여 줍니다. _작음_ 프로필:
 
-![생성된 데이터가 있는 샘플 저장소](../../assets/configuration/generate-data.png)
+![생성된 데이터가 있는 샘플 상점](../../assets/configuration/generate-data.png)
 
-다음 표에는 데이터 생성기 프로필에 대한 세부 사항이 나와 있습니다. 작은, 중간, 큰, 아주 큰.
+다음 표는 데이터 생성기 프로필에 대한 세부 사항을 제공합니다. small, medium, large 및 extra large.
 
-| 매개 변수 | 작은 프로필 | 미디어 프로필 | 미디어 다중 사이트 프로필 | 큰 프로필 | 매우 큰 프로필 |
+| 매개 변수 | 작은 프로필 | 미디어 프로필 | 중간 다중 사이트 프로필 | 큰 프로필 | 매우 큰 프로필 |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
 | `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
-| `configurable_products` | 16 및 24개 옵션 | 640(24개 옵션 포함) | 800(24개 옵션 포함) 및 79개(200개 옵션 포함) | 8,000(24개 옵션 포함) | 16,000(24개 옵션 포함) |
-| `product_images` | 제품당 이미지 100개 / 이미지 3개 | 1000개 이미지 / 제품당 3개 이미지 | 1000개 이미지 / 제품당 3개 이미지 | 2000개 이미지 / 제품당 3개 이미지 | 2000개 이미지 / 제품당 3개 이미지 |
+| `configurable_products` | 16개(옵션 24개) | 640 및 24개 옵션 | 800(24개 옵션) 및 79(200개 옵션) | 8,000개(옵션 24개) | 16,000 및 24 개 옵션 |
+| `product_images` | 제품당 이미지 100개 / 이미지 3개 | 제품당 이미지 1000개 / 이미지 3개 | 제품당 이미지 1000개 / 이미지 3개 | 2000개 이미지/제품당 3개 이미지 | 2000개 이미지/제품당 3개 이미지 |
 | `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
@@ -49,9 +49,9 @@ ht-degree: 8%
 
 >[!WARNING]
 >
->데이터 생성기를 실행하기 전에 서버에서 실행 중인 모든 크론 작업을 비활성화합니다. 크론 작업을 비활성화하면 데이터 생성기가 활성 크론 작업과 충돌하는 작업을 수행하지 못하도록 하여 불필요한 오류를 방지합니다.
+>데이터 생성기를 실행하기 전에 서버에서 실행 중인 모든 cron 작업을 비활성화하십시오. cron 작업을 비활성화하면 데이터 생성기가 활성 cron 작업과 충돌하는 작업을 수행하지 못하고 불필요한 오류가 발생하지 않습니다.
 
-이 섹션에 설명된 대로 명령을 실행합니다. 명령이 실행되면 다음을 수행해야 합니다 [모든 인덱스 다시 색인화](../cli/manage-indexers.md).
+이 섹션에서 설명한 대로 명령을 실행합니다. 명령이 실행되면 다음을 수행해야 합니다. [모든 인덱서 다시 인덱싱](../cli/manage-indexers.md).
 
 명령 옵션:
 
@@ -61,7 +61,7 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 위치 `<path-to-profile>` 프로필의 절대 파일 시스템 경로 및 이름을 지정합니다.
 
-예,
+예를 들어,
 
 ```bash
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
@@ -96,7 +96,7 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-## 성능 고정장치
+## 성능 고정 장치
 
 ### 관리자 사용자
 
@@ -107,7 +107,7 @@ Generating simple products...  done in <time>
 <admin_users>{int}</admin_users>
 ```
 
-### 속성 세트
+### 속성 집합
 
 지정된 구성으로 속성 세트를 생성합니다. XML 프로필 노드:
 
@@ -124,7 +124,7 @@ Generating simple products...  done in <time>
 
 ### 번들 제품
 
-번들 제품을 생성합니다. 생성된 번들 선택은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If  `assign_entities_to_all_websites` 이 프로필에서 로 설정되어 있습니다. `1`. 제품은 모든 웹 사이트에 할당됩니다.
+번들 제품을 생성합니다. 생성된 번들 선택 사항은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If  `assign_entities_to_all_websites` 프로필이 (으)로 설정됨 `1`. 제품은 모든 웹 사이트에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -162,7 +162,7 @@ XML 프로필 노드:
 
 ### 카테고리
 
-카테고리를 생성합니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `0`, 모든 카테고리는 루트 카테고리별로 균일하게 분포됩니다. 그렇지 않으면 모든 카테고리가 하나의 루트 카테고리에 할당됩니다.
+카테고리를 생성합니다. If `assign_entities_to_all_websites` 이(가) (으)로 설정됨 `0`, 모든 카테고리는 루트 카테고리별로 균일하게 배포됩니다. 그렇지 않으면 모든 카테고리가 하나의 루트 카테고리에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -176,7 +176,7 @@ XML 프로필 노드:
 
 ### 구성
 
-구성 필드의 값을 설정합니다. XML 프로필 노드:
+구성 필드에 대한 값을 설정합니다. XML 프로필 노드:
 
 ```xml
 <!-- Config variables and values for change -->
@@ -194,11 +194,11 @@ XML 프로필 노드:
 
 ### 구성 가능한 제품
 
-구성 가능한 제품을 생성합니다. 생성된 구성 가능한 옵션은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `1`, 제품은 모든 웹 사이트에 할당됩니다.
+구성 가능한 제품을 생성합니다. 생성된 구성 가능한 옵션은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 이(가) (으)로 설정됨 `1`, 제품이 모든 웹 사이트에 할당됩니다.
 
 지원되는 XML 노드 형식은 다음과 같습니다.
 
-- 기본 및 사전 정의된 속성 세트당 배포:
+- 기본 및 사전 정의된 속성 세트당 분배:
 
    ```xml
    <!-- Number of configurable products -->
@@ -231,7 +231,7 @@ XML 프로필 노드:
    </configurable_products>
    ```
 
-- 지정된 수의 속성 및 옵션을 사용하여 동적으로 생성된 속성 세트를 기반으로 제품을 생성합니다.
+- 지정된 수의 특성 및 옵션을 사용하여 동적으로 작성된 특성 세트를 기반으로 제품을 생성합니다.
 
    ```xml
    <configurable_products>
@@ -260,7 +260,7 @@ XML 프로필 노드:
    </configurable_products>
    ```
 
-- 각 속성마다 지정된 구성을 사용하여 동적으로 생성된 속성 세트를 기반으로 제품을 생성합니다.
+- 각 속성에 대해 지정된 구성을 사용하여 동적으로 작성된 속성 세트를 기반으로 제품을 생성합니다.
 
    ```xml
    <configurable_products>
@@ -299,7 +299,7 @@ XML 프로필 노드:
 
 ### 고객
 
-고객을 생성합니다. 고객은 사용 가능한 모든 웹 사이트에 정상적으로 배포됩니다. 고객 이메일, 고객 그룹 및 고객 주소를 제외한 각 고객의 데이터는 동일합니다.
+고객을 생성합니다. 고객은 사용 가능한 모든 웹 사이트에 대해 정상적인 배포를 합니다. 각 고객은 고객 이메일, 고객 그룹 및 고객 주소를 제외하고 동일한 데이터를 갖습니다.
 
 XML 프로필 노드:
 
@@ -319,7 +319,7 @@ XML 프로필 노드:
 
 ### 제품 이미지
 
-제품 이미지를 생성합니다. 생성에는 크기 조정이 포함되지 않습니다.
+제품 이미지를 생성합니다. 크기 조정은 생성에 포함되지 않습니다.
 
 XML 프로필 노드:
 
@@ -333,7 +333,7 @@ XML 프로필 노드:
 </product-images>
 ```
 
-### 인덱스 상태
+### 인덱서 상태
 
 인덱서의 상태를 업데이트합니다. XML 프로필 노드:
 
@@ -345,9 +345,9 @@ XML 프로필 노드:
 </indexer>
 ```
 
-### 주문
+### 주문 수
 
-구성 가능한 수의 다양한 유형의 주문 품목을 사용하여 주문을 생성합니다. 생성된 주문에 대해 비활성 견적을 생성합니다(선택적).
+다양한 유형의 주문 품목을 구성 가능한 수만큼 사용하여 주문을 생성합니다. 선택적으로 생성된 주문에 대해 비활성 견적을 생성합니다.
 
 XML 프로필 노드:
 
@@ -379,9 +379,9 @@ XML 프로필 노드:
 
 ### 단순 제품
 
-간단한 제품을 생성합니다. 제품은 기본 및 사전 정의된 속성 세트별로 배포됩니다. 프로파일에 추가 속성 세트가 다음과 같이 지정된 경우: `<product_attribute_sets>{int}</product_attribute_sets>`, 제품은 추가 속성 세트마다 배포됩니다.
+간단한 제품을 생성합니다. 제품은 기본 및 사전 정의된 속성 세트별로 배포됩니다. 추가 속성 세트가 프로필에 다음과 같이 지정된 경우: `<product_attribute_sets>{int}</product_attribute_sets>`, 제품은 추가 속성 세트에 따라서도 배포됩니다.
 
-제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 가 로 설정되어 있습니다. `1`, 제품은 모든 웹 사이트에 할당됩니다.
+제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 이(가) (으)로 설정됨 `1`, 제품이 모든 웹 사이트에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -401,7 +401,7 @@ XML 프로필 노드:
 
 ### 그룹 저장
 
-저장소 그룹(관리에서 다음과 같이 지칭됨)을 생성합니다 _상점_). 저장소 그룹은 웹 사이트 간에 정상적으로 배포됩니다.
+저장소 그룹 생성(관리에서는 로 지칭됨) _스토어_). 스토어 그룹은 웹 사이트 간에 정상적으로 배포됩니다.
 
 XML 프로필 노드:
 
@@ -412,7 +412,7 @@ XML 프로필 노드:
 
 ### 보기 저장
 
-저장소 보기를 생성합니다. 저장소 보기는 저장소 그룹 간에 정상적으로 배포됩니다. XML 프로필 노드:
+저장소 보기를 생성합니다. 스토어 보기는 일반적으로 스토어 그룹 간에 배포됩니다. XML 프로필 노드:
 
 ```xml
 <!-- Number of store views to be generated -->
@@ -439,10 +439,10 @@ XML 프로필 노드:
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—제품 전체 설명 구성
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`- 제품 간략한 설명 구성
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—제품 설명 구성
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`- 제품 간략한 및 전체 설명에 대한 구성 이 이전 구현은 이전 버전과의 호환성을 위해 제공됩니다.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`- 제품 요약 및 전체 설명 구성 이 이전 구현은 이전 버전과의 호환성을 위해 제공됩니다.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`- 짧은 검색어와 전체 설명에서 사용할 검색어 수가 적습니다.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`- 짧고 전체 설명에 대한 적은 수의 검색어
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- 짧고 전체 설명에 사용할 검색어의 수가 큽니다.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- 짧고 전체 설명에 사용할 검색어의 수가 많습니다.

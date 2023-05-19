@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # 도구
 
-이 안내서의 목적은 효율적이고 최적화된 건강한 Adobe Commerce 사이트를 실행하는 데 필요한 도구를 제공하는 것입니다.
+이 안내서의 목적은 성공적이고 최적화되고 건강한 Adobe Commerce 사이트를 실행하는 데 필요한 도구를 제공하는 것입니다.
 
-## 이 가이드는 누구인가요?
+## 이 가이드는 누구의 것인가요?
 
-이 안내서는 Adobe Commerce 스토어의 최적 성능을 지원하기 위해 상인, 개발자 및 통합자를 위해 고안되었습니다.
+이 안내서는 판매자, 개발자 및 통합자가 Adobe Commerce 스토어의 최적의 성능을 용이하게 할 수 있도록 설계되었습니다.
 
-## 가이드에 뭐가 있어요?
+## 가이드에는 무엇이 있나요?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
 * [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}

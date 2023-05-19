@@ -1,13 +1,13 @@
 ---
 title: 플랫폼 변경 사항 검토
 description: Adobe Commerce 프로젝트 업그레이드를 준비할 때 릴리스의 주요 플랫폼 변경 사항을 숙지하십시오.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
-
 
 # 업그레이드하기 전에 플랫폼 변경 사항 검토
 

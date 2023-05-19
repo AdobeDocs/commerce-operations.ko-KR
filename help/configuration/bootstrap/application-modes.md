@@ -1,13 +1,13 @@
 ---
 title: 애플리케이션 모드
 description: Commerce 응용 프로그램은 필요에 따라 다른 모드에서 작동 할 수 있습니다. 사용 가능한 애플리케이션 모드의 세부 목록을 봅니다.
-source-git-commit: e7c325aef90d4135218b984cc57df2c8d1d921d2
+exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
-
 
 # 애플리케이션 모드
 

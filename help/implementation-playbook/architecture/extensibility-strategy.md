@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 확장성 전략
 
-Adobe Commerce의 확장성 플랫폼을 사용하면 SaaS와 같은 업그레이드 기능을 유지하면서 프로세스를 효율적으로 사용자 지정하고 시스템을 통합하고 새로운 기능을 배포할 수 있습니다.
+Adobe Commerce의 확장성 플랫폼을 통해 SaaS와 유사한 업그레이드 능력을 유지하면서 프로세스를 효율적으로 사용자 정의하고 시스템을 통합하며 새로운 기능을 배포할 수 있습니다.
 
 ![Adobe Commerce 확장성 전략 다이어그램](../../assets/playbooks/extensibility-strategy-1.svg)
 

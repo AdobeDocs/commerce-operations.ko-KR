@@ -1,13 +1,13 @@
 ---
 title: 검색 엔진에 대한 Apache 구성
 description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Apache 웹 서버를 사용하여 검색 엔진을 구성합니다.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # 검색 엔진에 대한 Apache 구성
 

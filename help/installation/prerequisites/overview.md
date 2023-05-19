@@ -1,13 +1,13 @@
 ---
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아봅니다.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
 
 ---
-
 
 # 온-프레미스 설치 사전 요구 사항
 

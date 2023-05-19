@@ -1,13 +1,13 @@
 ---
 title: MySQL 지침
 description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 MySQL 및 MariaDB를 설치하고 구성하려면 다음 단계를 따르십시오.
-source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
+exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
 
 ---
-
 
 # 일반 MySQL 지침
 

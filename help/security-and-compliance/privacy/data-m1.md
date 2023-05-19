@@ -1,70 +1,70 @@
 ---
 title: 고객 개인 정보 참조(버전 1.x)
 description: Magento 1.x에서 고객 개인 정보에 대한 데이터 흐름 및 데이터베이스 엔티티 매핑에 대해 알아봅니다.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
-
 # 고객 개인 정보 참조(버전 1.x)
 
 >[!NOTE]
 >
->Adobe Commerce 및 Magento Open Source 판매자와 개발자가 개인 정보 보호 규정을 준수할 수 있도록 준비하는 데 도움이 되는 일련의 주제입니다. 법적 의무를 준수해야 하는지 및 어떻게 준수해야 하는지 확인하려면 법률 자문을 구하십시오.
+>이는 Adobe Commerce 및 Magento Open Source 판매자와 개발자가 개인 정보 보호 규정 준수를 준비하는 데 도움이 되는 일련의 항목 중 하나입니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
 
-다음과 같은 개인 정보 보호 규정에 대한 규정 준수 프로그램을 개발할 때 참조할 수 있도록 다음 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 사용하십시오.
+다음과 같은 개인 정보 보호 규정을 위한 준수 프로그램을 개발할 때 참조할 수 있도록 다음 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 사용하십시오.
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## 데이터 흐름 다이어그램
 
-데이터 흐름 다이어그램은 고객과 관리자가 상점 및 관리자에서 입력하고 검색할 수 있는 데이터 유형을 보여줍니다.
+데이터 흐름 다이어그램은 고객 및 관리자가 상점 및 관리자에서 입력하고 검색할 수 있는 데이터 유형을 보여 줍니다.
 
-### 프런트 엔드 데이터 시작 지점
+### 프론트엔드 데이터 진입점
 
-사용자는 계정 등록, 체크아웃 중 및 유사한 이벤트에 고객, 주소 및 결제 정보를 입력할 수 있습니다.
+사용자는 계정 등록 시, 체크아웃 시, 유사한 이벤트 시 고객, 주소, 결제 정보를 입력할 수 있다.
 
-![프런트 엔드 데이터 시작 지점](../../assets/security-compliance/frontend-data-entry-points.svg)
+![프론트엔드 데이터 진입점](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### 프런트 엔드 데이터 액세스 포인트
+### 프론트엔드 데이터 액세스 포인트
 
-고객이 로그인하고 여러 다른 페이지를 보거나 체크 아웃하면 상거래에 고객 정보가 로드됩니다.
+Commerce는 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
 
-![프런트 엔드 데이터 액세스 포인트](../../assets/security-compliance/frontend-data-access-points.svg)
+![프론트엔드 데이터 액세스 포인트](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### 백엔드 데이터 시작 지점
+### 백엔드 데이터 진입점
 
-상인은 관리자의 고객, 주소 및 결제 정보를 입력하여 고객 또는 주문을 생성할 수 있습니다.
+판매자는 관리자로부터 고객, 주소 및 결제 정보를 입력하여 고객 또는 주문을 생성할 수 있습니다.
 
-![백엔드 데이터 시작 지점](../../assets/security-compliance/backend-data-entry-points.svg)
+![백엔드 데이터 진입점](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### 백엔드 데이터 액세스 포인트
 
-상거래(Commerce)는 상인이 여러 유형의 그리드를 보고, 그리드를 클릭하여 세부 정보를 확인하고, 다양한 기타 작업을 수행할 때 고객 정보를 로드합니다.
+Commerce는 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고, 그리드를 클릭하여 자세한 정보를 확인하고, 기타 다양한 작업을 수행합니다.
 
 ![백엔드 데이터 액세스 포인트](../../assets/security-compliance/backend-data-access-points.svg)
 
-## 데이터베이스 엔터티
+## 데이터베이스 엔티티
 
 Magento 1은 고객, 판매 및 기타 데이터베이스 테이블에 고객 정보를 저장합니다.
 
 ### 고객 데이터
 
-Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이블 모두 사용자 지정 고객 속성을 포함할 수 있는 여러 참조 테이블이 있습니다.
+Magento 1은 고객 정보를 `customer_entity` 및 `customer_address_entity` 테이블. 이 두 테이블에는 모두 사용자 지정 고객 속성을 포함할 수 있는 여러 참조 테이블이 있습니다.
 
 #### `customer_entity` 및 참조 테이블
 
-다음 열 `customer_entity`에는 고객 정보가 들어 있습니다.
+의 다음 열 `customer_entity`표에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
 | `email` | varchar(255) |
 
-다음 표에서는 `customer_entity` 및 은 사용자 지정 고객 속성을 포함할 수 있습니다.
+다음 표는 다음을 참조합니다. `customer_entity` 및 에는 사용자 지정 고객 특성이 포함될 수 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 #### `customer_address_entity` 및 참조 테이블
 
-다음 표 참조 `customer_address_entity` 및 은 사용자 지정 고객 속성을 포함할 수 있습니다.
+다음 표 참조 `customer_address_entity` 및 에는 사용자 지정 고객 특성이 포함될 수 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | --- | --- | --- |
@@ -86,13 +86,13 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 | `customer_address_entity_text` | `value` | 텍스트 |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
-### 데이터 순서 지정
+### 주문 데이터
 
-다음 `sales_flat_order` 및 관련 테이블에는 고객의 이름, 청구 및 배송 주소 및 관련 정보가 포함됩니다.
+다음 `sales_flat_order` 및 관련 테이블에는 고객 이름, 청구 및 운송 주소 및 관련 정보가 포함되어 있습니다.
 
 #### `sales_flat_order` 표
 
-다음 열 `sales_order` 에는 고객 정보가 들어 있습니다.
+의 다음 열 `sales_order` 표에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
@@ -109,7 +109,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 #### `sales_flat_order_address` 표
 
-다음 `sales_flat_order_address` 테이블에는 고객의 주소가 포함되어 있습니다.
+다음 `sales_flat_order_address` 테이블에는 고객의 주소가 들어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
@@ -131,7 +131,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 #### `sales_flat_order_grid` 표
 
-다음 열 `sales_flat_order_grid` 에는 고객 정보가 들어 있습니다.
+의 다음 열 `sales_flat_order_grid` 표에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
@@ -141,7 +141,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 #### `sales_flat_order_payment` 표
 
-다음 열 `sales_flat_order_payment` 에는 고객 정보가 들어 있습니다.
+의 다음 열 `sales_flat_order_payment` 표에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
@@ -157,11 +157,11 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 ### 견적 데이터
 
-따옴표에는 고객 이름, 이메일, 주소 및 관련 정보가 포함되어 있습니다.
+견적에는 고객의 이름, 이메일, 주소 및 관련 정보가 포함되어 있습니다.
 
 #### `sales_flat_quote` 표
 
-다음 열 `sales_flat_quote` 에는 고객 정보가 들어 있습니다.
+의 다음 열 `sales_flat_quote` 표에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
@@ -181,7 +181,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 #### `sales_flat_quote_address` 표
 
-다음 열 `sales_flat_quote_address` 에는 고객 정보가 들어 있습니다.
+의 다음 열 `sales_flat_quote_address` 표에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --- | --- |
@@ -212,9 +212,9 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 | `cc_ss_start_month` | smallint(5) |
 | `cc_ss_start_year` | smallint(5) |
 
-### 데이터 아카이브
+### 데이터 보관
 
-다음 표 및 열에는 고객 정보가 포함됩니다.
+다음 테이블과 열에는 고객 정보가 포함되어 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | --- | --- | --- |
@@ -225,9 +225,9 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 | `enterprise_sales_order_grid_archive` | `shipping_name` | varchar(255) |
 | `enterprise_sales_shipment_grid_archive` | `shipping_name` | varchar(255) |
 
-### 영업 데이터
+### 판매 데이터
 
-다음 표 및 열에는 고객 정보가 포함됩니다.
+다음 테이블과 열에는 고객 정보가 포함되어 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 ### RMA 데이터
 
-다음 RMA 테이블 및 열에는 고객 정보가 포함됩니다.
+다음 RMA 테이블 및 열에는 고객 정보가 포함되어 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | --- | --- | --- |
@@ -246,7 +246,7 @@ Magento 1은 `customer_entity` 및 `customer_address_entity` 표. 이 두 테이
 
 ### 기타 데이터
 
-다음 표 및 열에는 고객 정보가 포함됩니다.
+다음 테이블과 열에는 고객 정보가 포함되어 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | --- | --- | --- |

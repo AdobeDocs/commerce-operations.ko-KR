@@ -1,13 +1,13 @@
 ---
 title: 고급 온-프레미스 설치
 description: 소유한 인프라의 Adobe Commerce 또는 Magento Open Source에 대한 고급 설치 시나리오에 대해 알아봅니다.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2406'
 ht-degree: 0%
 
 ---
-
 
 # 고급 온-프레미스 설치
 

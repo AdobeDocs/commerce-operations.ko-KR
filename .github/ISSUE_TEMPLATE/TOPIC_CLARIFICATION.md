@@ -1,7 +1,7 @@
 ---
 name: Topic clarification/correction
 about: Create a request to clarify or correct a documentation topic
-title: '''항목 업데이트 요청'''
+title: '항목 업데이트 요청'
 labels: ''
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 <!-- (REQUIRED) What needs to be clarified or corrected in this topic? -->
 
-## 가능한 솔루션
+## 가능한 해결 방법
 
 <!-- (OPTIONAL) What would a solution for this issue look like? -->
 

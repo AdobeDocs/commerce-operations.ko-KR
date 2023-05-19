@@ -1,13 +1,13 @@
 ---
 title: 모듈 및 확장 업그레이드
 description: 명령줄 인터페이스와 작성기를 사용하여 Adobe Commerce 및 Magento Open Source 모듈과 확장을 업그레이드합니다.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # 모듈 및 확장 업그레이드
 
@@ -58,4 +58,3 @@ Adobe Commerce 2.4.4 이상에서 이러한 확장을 계속 사용하려면 의
 - [클라르나](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [정점](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
 - [요트포](https://marketplace.magento.com/yotpo-module-yotpo.html)
-

@@ -951,7 +951,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--username`
 
-데이터베이스 사용자 이름. 읽기 액세스 권한이 있어야 합니다.
+데이터베이스 사용자 이름. 읽기 권한이 있어야 합니다.
 
 - 값 필요
 

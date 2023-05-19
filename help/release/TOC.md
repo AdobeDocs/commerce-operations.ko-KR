@@ -13,9 +13,9 @@ ht-degree: 15%
 
 # 릴리스 정보 {#release}
 
-- 릴리스 노트 {#notes}
+- 릴리스 정보 {#notes}
    - [개요](release-notes/overview.md)
-   - [호환되지 않는 변경 사항](backward-incompatible-changes.md)
+   - [이전 버전과 호환 불가능한 변경 사항](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -54,4 +54,4 @@ ht-degree: 15%
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Adobe Commerce용 클라우드 패키지](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

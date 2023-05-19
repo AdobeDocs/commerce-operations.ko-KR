@@ -24,7 +24,7 @@ ht-degree: 0%
 
 <!-- (REQUIRED) How does this feature improve the docs experience? -->
 
-## 가능한 솔루션
+## 가능한 해결 방법
 
 <!-- (OPTIONAL) What would a solution for this issue look like? -->
 

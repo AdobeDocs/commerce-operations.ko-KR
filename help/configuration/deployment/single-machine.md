@@ -1,7 +1,8 @@
 ---
-title: 단일 시스템 배포
-description: 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법을 알아봅니다.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+title: 단일 컴퓨터 배포
+description: 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법에 대해 알아봅니다.
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -10,23 +11,23 @@ ht-degree: 0%
 
 # 단일 시스템 배포
 
-이 항목에서는 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법에 대한 지침을 제공합니다. 이 프로세스는 일부 테마 및 로케일이 설치된 단일 시스템에서 실행되는 스토어를 담당하는 기술 사용자에게 적용됩니다.
+이 항목에서는 명령줄을 사용하여 프로덕션 서버의 Commerce에 업데이트를 배포하는 방법에 대해 설명합니다. 이 프로세스는 일부 테마와 로케일이 설치된 단일 시스템에서 실행되는 스토어를 담당하는 기술 사용자에게 적용됩니다.
 
 ## 가정
 
 - 다음을 사용하여 Commerce를 설치했습니다. [작성기](../../installation/composer.md).
-- 서버에 업데이트를 직접 적용합니다.
+- 서버에 직접 업데이트를 적용하고 있습니다.
 
 >[!WARNING]
 >
->이 안내서는 `git clone` 상거래 설치
->기여 개발자는 [이 안내서][install] 전자 상거래 설치를 업데이트하려면
+>사용한 경우에는 이 안내서가 적용되지 않습니다. `git clone` 상거래 설치.
+>기여 개발자는 [이 안내서][install] Commerce 설치를 업데이트합니다.
 
 ## 배포 단계
 
-1. 프로덕션 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. 프로덕션 서버에 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
 
-1. 전자 상거래 기본 디렉터리로 디렉터리를 변경합니다.
+1. 디렉터리를 Commerce 기본 디렉터리로 변경합니다.
 
    ```bash
    cd <Commerce base directory>
@@ -38,7 +39,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-1. 다음 명령 패턴을 사용하여 상거래 또는 해당 구성 요소에 업데이트를 적용합니다.
+1. 다음 명령 패턴을 사용하여 Commerce 또는 해당 구성 요소에 업데이트를 적용합니다.
 
    ```bash
    composer require-commerce <package> <version> --no-update
@@ -77,7 +78,7 @@ ht-degree: 0%
    bin/magento setup:static-content:deploy
    ```
 
-1. 캐시 정리:
+1. 캐시를 정리합니다.
 
    ```bash
    bin/magento cache:clean

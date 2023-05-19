@@ -4,13 +4,13 @@ description: 업그레이드 체크리스트를 만들고 사용하여 Adobe Com
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # 업그레이드 체크리스트 모범 사례
 

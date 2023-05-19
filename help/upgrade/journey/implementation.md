@@ -1,13 +1,13 @@
 ---
 title: 구현 업그레이드
 description: Adobe Commerce 프로젝트에 대한 다양한 업그레이드 구현 단계에 대해 알아봅니다.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 1%
 
 ---
-
 
 # 구현 업그레이드
 

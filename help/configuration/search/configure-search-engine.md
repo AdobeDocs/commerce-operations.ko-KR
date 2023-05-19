@@ -1,13 +1,13 @@
 ---
 title: 검색 엔진 구성
 description: Adobe Commerce 및 Magento Open Source의 온-프레미스 배포에 대한 검색 엔진을 구성합니다.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # 검색 엔진 구성
 
@@ -114,4 +114,3 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
    >[!INFO]
    >
    >인덱서는 캐시와 달리 cron 작업에 의해 업데이트됩니다. 다음을 확인하십시오. [cron이 활성화되었습니다.](../cli/configure-cron-jobs.md) 검색 엔진 사용을 시작하기 전에
-

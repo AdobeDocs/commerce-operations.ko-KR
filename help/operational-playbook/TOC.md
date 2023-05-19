@@ -1,6 +1,6 @@
 ---
-user-guide-title: Operational Playbook
-user-guide-description: 성공적인 전자 상거래 사이트를 운영할 수 있도록 비즈니스를 운영할 준비가 된 방법을 알아봅니다.
+user-guide-title: 운영 플레이북
+user-guide-description: 비즈니스가 성공적인 전자 상거래 사이트를 운영할 수 있도록 하는 방법에 대해 알아봅니다.
 source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
 workflow-type: tm+mt
 source-wordcount: '143'
@@ -9,53 +9,53 @@ ht-degree: 0%
 ---
 
 
-# Operational Playbook {#operational-playbook}
+# 운영 플레이북 {#operational-playbook}
 
 - [개요](overview.md)
 - 상거래 {#intro}
    - [Adobe Commerce](intro/commerce.md)
-   - [ecommerce란?](intro/ecommerce.md)
+   - [전자 상거래(ecommerce)란?](intro/ecommerce.md)
    - [비즈니스 모델](intro/business-model.md)
    - [상거래 작업](intro/operations.md)
-   - [상거래 기능](intro/features.md)
+   - [Commerce 기능](intro/features.md)
 - 리더십 {#leadership}
    - [원칙](leadership/principles.md)
    - [목표](leadership/goals.md)
    - [비전](leadership/vision.md)
-   - [계획](leadership/planning.md)
+   - [계획 수립](leadership/planning.md)
 - 솔루션 {#solution}
    - [SaaS(Software-as-a-service)](solution/software-service.md)
    - [PaaS(Platform-as-a-service)](solution/platform-service.md)
    - [온-프레미스 호스팅](solution/on-premises.md)
-   - [클라우드와 온프레미스 비교](solution/hosting-comparison.md)
+   - [클라우드와 온-프레미스](solution/hosting-comparison.md)
    - [타사 통합](solution/integrations.md)
    - [업그레이드, 백업 및 유지 관리](solution/maintenance.md)
 - 전략 {#strategy}
    - [상거래 전략](strategy/commerce.md)
    - [포커스](strategy/focus.md)
-   - [컨텐츠 전략](strategy/content.md)
-   - [성숙도](strategy/maturity.md)
+   - [콘텐츠 전략](strategy/content.md)
+   - [완성도](strategy/maturity.md)
 - 프로세스 {#process}
    - [주문 관리](process/order-management.md)
    - [프로젝트 계획](process/project-plan.md)
    - [프로젝트 범위](process/project-scope.md)
    - [프로젝트 관리](process/project-management.md)
    - [DACI 모델](process/project-management-framework.md)
-   - [애자일 스크럼 방법론](process/agile-scrum.md)
-   - [일반적인 프로젝트 워크샵](process/project-workshops.md)
+   - [애자일 스크럼 방식](process/agile-scrum.md)
+   - [일반 프로젝트 워크숍](process/project-workshops.md)
    - [테스트](process/testing.md)
 - 사람 {#people}
    - [팀](people/teams.md)
    - [팀 구조](people/team-structure.md)
    - [조직 구조](people/organizational-structure.md)
-   - [통신](people/communication.md)
+   - [커뮤니케이션](people/communication.md)
    - [역할 및 책임](people/roles-responsibilities.md)
    - [리소스](people/resources.md)
    - [문화](people/culture.md)
    - [프로젝트 팀](people/project-teams.md)
 - 제품 {#product}
    - [주문 관리 시스템](product/order-management-systems.md)
-   - [배송 및 이행](product/shipping-fulfillment.md)
+   - [배송 및 주문 처리](product/shipping-fulfillment.md)
    - [결제 게이트웨이](product/payment-gateways.md)
    - [가격 책정](product/pricing.md)
    - [제품 이미지](product/images.md)
@@ -71,6 +71,6 @@ ht-degree: 0%
    - [개인화](product/personalization.md)
    - [클릭 및 수집](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
-- [확인 목록 및 템플릿](checklists-templates/home.md)
-- [용어 설명](glossary.md)
-- [운영 지침으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [체크리스트 및 템플릿](checklists-templates/home.md)
+- [용어집](glossary.md)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
