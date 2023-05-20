@@ -108,7 +108,7 @@ ht-degree: 0%
 
 구성에 대한 스키마 `config.xsd` 파일은에 있습니다. `etc/` 디렉토리. 기본 구성 파일(`config.xml.dist`)는 Magento 1.x의 각 버전에 대해 만들어집니다. 이 디렉터리는 아래에 있는 별도의 디렉터리에 있습니다. `etc/`.
 
-기본 구성 파일은 사용자 지정 구성 파일로 대체할 수 있습니다(참조) [명령 구문](migrate-data/overview.md#command-syntax)).
+기본 구성 파일은 사용자 지정 파일로 대체할 수 있습니다(참조) [명령 구문](migrate-data/overview.md#command-syntax)).
 
 구성 파일의 구조는 다음과 같습니다.
 
@@ -334,7 +334,7 @@ $this->progress->finish();
 
 노드 아래 `<key>` 에서 &#39;경로&#39; 열과 함께 작동하는 규칙이 있습니다. `core_config_data` 테이블. `<ignore>` 규칙은 도구가 일부 설정을 전송하지 못하도록 합니다. 이 노드에서는 와일드카드를 사용할 수 있습니다. 목록에 없는 다른 모든 설정 `<ignore>` 노드가 마이그레이션됩니다. Magento 2에서 설정의 경로를 변경한 경우 를 추가해야 합니다. `//key/rename` 노드. 여기서 이전 경로는 `//key/rename/path` 노드 및 새 경로가에 표시 `//key/rename/to` 노드.
 
-노드 아래 `<value>`에서 &#39;value&#39; 열과 함께 작동하는 규칙이 있습니다. `core_config_data` 테이블. 이러한 규칙은 핸들러(를 구현하는 클래스)별로 설정 값을 변환하는 것을 목표로 합니다 `Migration\Handler\HandlerInterface`)를 만들고 Magento 2에 맞게 조정합니다.
+노드 아래 `<value>`, 의 &#39;value&#39; 열과 함께 작동하는 규칙이 있습니다. `core_config_data` 테이블. 이러한 규칙은 핸들러(를 구현하는 클래스)별로 설정 값을 변환하는 것을 목표로 합니다 `Migration\Handler\HandlerInterface`)를 만들고 Magento 2에 맞게 조정합니다.
 
 ### 데이터 마이그레이션 모드
 

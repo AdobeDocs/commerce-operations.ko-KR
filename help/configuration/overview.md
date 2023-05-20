@@ -29,4 +29,4 @@ ht-degree: 0%
 
 ## 클라우드 구성
 
-[!DNL Commerce on cloud infrastructure] 를 사용합니다. [구성 파일 세트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) 를 사용하여 호스팅되는 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트할 수 있습니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 을 검토해야 합니다. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 추가 구성 요구 사항
+[!DNL Commerce on cloud infrastructure] 를 사용합니다. [구성 파일 세트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) 를 사용하여 호스팅된 환경에서 Commerce 애플리케이션 기능 및 서비스를 업데이트할 수 있습니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 을 검토해야 합니다. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 추가 구성 요구 사항

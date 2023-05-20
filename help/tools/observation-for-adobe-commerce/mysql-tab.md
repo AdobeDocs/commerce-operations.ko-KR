@@ -115,7 +115,7 @@ MySQL에 할당된 스토리지의 스토리지가 MySQL에서 부족하여 많�
 
 ![크론 테이블 변경](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-다음 **[!UICONTROL Cron table change]** frame은 &quot;cron job에 대한 잠금을 획득할 수 없습니다:&quot; 오류 메시지와 함께 특정 PHP 메모리 오류 및 `cron_schedule` 테이블. 다음과 같은 경우 `cron_schedule` 테이블이 잠겨 있습니다(예: `DELETE` 쿼리가 실행 중입니다). 다른 cron이 실행되지 않도록 차단합니다.
+다음 **[!UICONTROL Cron table change]** frame은 &quot;cron job에 대해 잠금을 획득할 수 없습니다:&quot; 오류 메시지와 함께 특정 PHP 메모리 오류 및 `cron_schedule` 테이블. 다음과 같은 경우 `cron_schedule` 테이블이 잠겨 있습니다(예: `DELETE` 쿼리가 실행 중입니다). 다른 cron이 실행되지 않도록 차단합니다.
 
 ## [!UICONTROL Deadlocks]
 

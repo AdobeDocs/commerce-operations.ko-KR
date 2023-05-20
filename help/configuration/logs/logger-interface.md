@@ -48,6 +48,6 @@ class SomeModel
  }
 ```
 
-위의 예에서는 다음을 보여 줍니다. `SomeModel` 수신: `\Psr\Log\LoggerInterface` 생성자 삽입을 사용하는 개체입니다. 메서드에서 `doSomething`, 오류가 발생하면 메서드에 기록됩니다 `critical` (`$this->logger->critical($e);`).
+앞의 예제에서는 를 `SomeModel` 수신: `\Psr\Log\LoggerInterface` 생성자 삽입을 사용하는 개체입니다. 메서드에서 `doSomething`, 오류가 발생하면 메서드에 기록됩니다 `critical` (`$this->logger->critical($e);`).
 
 [RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 는 8개의 로그 수준(디버그, 정보, 알림, 경고, 오류, 중요, 경고 및 긴급)을 정의합니다.

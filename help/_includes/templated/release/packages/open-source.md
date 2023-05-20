@@ -646,7 +646,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-recaptcha.git">laminas/laminas-recaptcha</a>
+      <a href="https://github.com/laminas/laminas-recaptcha.git">라미나스/라미나스-레캅차</a>
     </td>
     <td>라이브러리</td>
     <td>ReCaptcha 웹 서비스에 대한 OOP 래퍼</td>

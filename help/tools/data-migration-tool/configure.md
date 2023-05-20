@@ -103,7 +103,7 @@ ht-degree: 0%
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
-1. 다음에서 `config.xml` 파일에 액세스 세부 사항을 M1 및 M2 데이터베이스 및 암호화 키로 설정해야 합니다.
+1. 다음에서 `config.xml` 파일에서 액세스 세부 사항을 M1 및 M2 데이터베이스 및 암호화 키로 설정해야 합니다.
 
 1. M1 저장소에 사용자 지정 변경 사항이 있는 경우 나머지 구성 파일을 Magento 1 저장소 사용자 지정에 매핑해야 합니다. 다음을 참조하십시오 [구성 및 매핑 파일 작업](#migration-config).
 
