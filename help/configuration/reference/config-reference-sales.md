@@ -1,8 +1,9 @@
 ---
 title: 영업 구성 경로 참조
 description: 판매 구성 값 목록을 참조하십시오.
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
@@ -208,7 +209,7 @@ ht-degree: 0%
 | 장바구니 요약 표시 | `checkout/cart_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 장바구니 사이드바 표시 | `checkout/sidebar/display` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 최근에 추가된 최대 표시 항목 | `checkout/sidebar/count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 결제 실패 이메일 발신자 | `checkout/payment_failed/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 결제 실패 전자 메일 보낸 사람 | `checkout/payment_failed/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 결제 실패 이메일 수신자 | `checkout/payment_failed/receiver` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 결제 실패 템플릿 | `checkout/payment_failed/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 전송 결제 실패 이메일 복사 방법 | `checkout/payment_failed/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -397,7 +398,7 @@ ht-degree: 0%
 | 업셀 블록의 목록 속성 | `google/analytics/upsell_block_list_value` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 관련 제품 블록의 목록 속성 | `google/analytics/related_block_list_value` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 검색 결과 페이지의 목록 속성 | `google/analytics/search_page_list_value` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
-| 프로모션 필드 &quot;레이블&quot;에 대한 &#39;내부 프로모션&#39;입니다. | `google/analytics/promotions_list_value` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
+| 프로모션 필드 &quot;레이블&quot;에 대한 &#39;내부 프로모션&#39;. | `google/analytics/promotions_list_value` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 사용 | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 전환 ID | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 전환 언어 | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

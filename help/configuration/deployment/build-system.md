@@ -1,8 +1,9 @@
 ---
 title: 시스템 설치 빌드
 description: 빌드 시스템에 Commerce를 배포하는 방법에 대해 알아봅니다.
+feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

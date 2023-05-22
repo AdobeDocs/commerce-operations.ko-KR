@@ -1,8 +1,9 @@
 ---
 title: 웹 서버 구성
 description: Vannish에서 작동하도록 웹 서버를 구성하는 방법에 대해 알아봅니다.
+feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%

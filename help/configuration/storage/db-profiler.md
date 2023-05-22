@@ -1,9 +1,10 @@
 ---
 title: 데이터베이스 프로파일러 구성
 description: 데이터베이스 프로파일러에 대한 출력을 구성하는 방법의 예를 참조하십시오.
+feature: Configuration, Storage
 badge: label="Contributed by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

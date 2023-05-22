@@ -1,8 +1,9 @@
 ---
 title: 마스터 데이터베이스 자동 구성
 description: 데이터베이스 분할 솔루션을 자동으로 구성하는 방법에 대한 지침을 참조하십시오.
+recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

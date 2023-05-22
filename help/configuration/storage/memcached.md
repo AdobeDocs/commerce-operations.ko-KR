@@ -1,8 +1,9 @@
 ---
 title: 세션 스토리지에 memcached 사용
 description: Commerce 세션 스토리지용 memcached 사용에 대해 알아봅니다.
+feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%

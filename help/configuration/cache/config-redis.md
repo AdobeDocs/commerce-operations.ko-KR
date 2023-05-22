@@ -1,8 +1,9 @@
 ---
 title: Redis 구성
 description: Redis 기능에 대한 개요를 확인하고 Redis 구성을 시작하십시오.
+feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

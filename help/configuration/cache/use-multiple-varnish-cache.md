@@ -1,8 +1,9 @@
 ---
 title: 여러 Varnish 인스턴스를 사용하여 캐시 지우기
 description: 여러 Varnish 인스턴스에서 캐시 지우기가 작동하는 방식을 알아봅니다.
+feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%

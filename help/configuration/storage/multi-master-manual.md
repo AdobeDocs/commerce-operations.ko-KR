@@ -1,8 +1,9 @@
 ---
 title: 수동으로 마스터 데이터베이스 구성
 description: 분할 데이터베이스 솔루션을 수동으로 구성하는 방법에 대한 지침을 참조하십시오.
+recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%

@@ -1,10 +1,11 @@
 ---
 title: 최종 확인
 description: Adobe Commerce 애플리케이션에서 작동하도록 Varnish 구성이 제대로 설정되어 있는지 확인합니다.
+feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -82,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503(백엔드 가져오기 실패) 오류가 발생하는 경우 다음을 참조하십시오. [503(서비스를 사용할 수 없음) 오류 문제 해결](https://support.magento.com/hc/en-us/articles/360034631211) 다음에서 _Adobe Commerce 도움말 센터_.
+>503(백엔드 가져오기 실패) 오류가 발생하는 경우 다음을 참조하십시오. [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) 다음에서 _Adobe Commerce 도움말 센터_.

@@ -1,9 +1,10 @@
 ---
 title: system.xml 참조
 description: 시스템 XML 파일이 상거래 애플리케이션 구성을 관리하는 방법에 대해 알아봅니다.
+feature: Configuration, System
 badge: label="Contributed by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 0%

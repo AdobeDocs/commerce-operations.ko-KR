@@ -1,8 +1,9 @@
 ---
 title: 암호 해싱
 description: 암호 해싱 전략 및 구현에 대해 알아보십시오.
+feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

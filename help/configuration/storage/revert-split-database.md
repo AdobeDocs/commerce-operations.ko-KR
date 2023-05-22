@@ -1,8 +1,9 @@
 ---
 title: 분할 데이터베이스 되돌리기
 description: 더 이상 사용되지 않는 분할 데이터베이스 구현에서 단일 데이터베이스 구현으로 되돌립니다.
+feature: Configuration, Storage
 exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%

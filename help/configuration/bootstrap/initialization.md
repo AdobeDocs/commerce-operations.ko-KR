@@ -1,8 +1,9 @@
 ---
 title: 응용 프로그램 초기화 및 부트스트랩
 description: Commerce 애플리케이션의 초기화 및 부트스트랩 논리에 대해 읽어보십시오.
+feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%

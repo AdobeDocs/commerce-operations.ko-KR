@@ -1,8 +1,9 @@
 ---
 title: 원격 스토리지에 대한 이미지 크기 조정 구성
 description: 서버측 이미지 크기 조정을 구성하여 디스크 리소스를 최적화합니다.
+feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

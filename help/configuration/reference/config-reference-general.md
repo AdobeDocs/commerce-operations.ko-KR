@@ -1,8 +1,9 @@
 ---
 title: 일반 구성 경로 참조
 description: 일반 및 고급 구성 값 목록을 참조하십시오.
+feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%

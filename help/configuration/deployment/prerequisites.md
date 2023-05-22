@@ -1,8 +1,9 @@
 ---
 title: 배포 사전 요구 사항
 description: 개발, 빌드 또는 프로덕션 시스템에 Commerce를 배포하기 위한 사전 요구 사항 목록을 참조하십시오.
+feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%

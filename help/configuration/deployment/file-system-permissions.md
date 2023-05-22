@@ -1,8 +1,9 @@
 ---
 title: 파일 시스템 액세스 권한
 description: 개발 및 프로덕션 시스템에 대한 Commerce 애플리케이션 파일 시스템의 소유자 또는 소유자를 설정하는 방법을 참조하십시오.
+feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%

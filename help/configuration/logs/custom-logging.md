@@ -1,8 +1,9 @@
 ---
 title: 사용자 정의 로깅
 description: 사용자 정의 로깅을 사용하여 오류를 조사하는 방법에 대해 알아봅니다.
+feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

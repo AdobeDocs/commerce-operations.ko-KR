@@ -1,8 +1,9 @@
 ---
 title: 배포용 구성 파일
 description: Commerce 응용 프로그램을 설치하기 위해 구성 파일이 작동하는 방식을 이해합니다.
+feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
+source-git-commit: b40d2bd4d466782ba5bc1b29ee8681756d9e85cc
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%

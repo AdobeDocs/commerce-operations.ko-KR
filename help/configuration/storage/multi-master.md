@@ -1,8 +1,9 @@
 ---
 title: 분할 데이터베이스 성능 솔루션
 description: Adobe Commerce 및 Magento Open Source용 분할 데이터베이스 솔루션에 대해 알아보십시오.
+recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%

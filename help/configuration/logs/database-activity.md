@@ -1,8 +1,9 @@
 ---
 title: 데이터베이스 작업 기록
 description: Logger 인터페이스를 사용하여 데이터베이스 작업을 기록하도록 Commerce를 구성합니다.
+feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%

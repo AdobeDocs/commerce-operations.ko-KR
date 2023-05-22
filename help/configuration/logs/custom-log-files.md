@@ -1,9 +1,10 @@
 ---
 title: 사용자 지정 로그 파일에 쓰기
 description: 사용자 지정 로그 파일을 설정하는 방법에 대해 알아봅니다.
+feature: Configuration, Logs
 badge: label="기여자 Atwix" type="정보" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%

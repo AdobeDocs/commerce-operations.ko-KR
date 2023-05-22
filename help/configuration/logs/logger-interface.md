@@ -1,8 +1,9 @@
 ---
 title: 로거 인터페이스
 description: 로거 인터페이스를 시작합니다.
+feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -48,6 +49,6 @@ class SomeModel
  }
 ```
 
-앞의 예제에서는 를 `SomeModel` 수신: `\Psr\Log\LoggerInterface` 생성자 삽입을 사용하는 개체입니다. 메서드에서 `doSomething`, 오류가 발생하면 메서드에 기록됩니다 `critical` (`$this->logger->critical($e);`).
+위의 예에서는 다음을 보여 줍니다. `SomeModel` 수신: `\Psr\Log\LoggerInterface` 생성자 삽입을 사용하는 개체입니다. 메서드에서 `doSomething`, 오류가 발생하면 메서드에 기록됩니다 `critical` (`$this->logger->critical($e);`).
 
 [RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 는 8개의 로그 수준(디버그, 정보, 알림, 경고, 오류, 중요, 경고 및 긴급)을 정의합니다.

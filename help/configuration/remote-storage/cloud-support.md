@@ -1,8 +1,9 @@
 ---
 title: 클라우드 인프라의 Commerce를 위한 원격 스토리지
 description: 클라우드 인프라에서 Adobe Commerce용 원격 스토리지를 설정하는 방법에 대한 지침을 참조하십시오.
+feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%

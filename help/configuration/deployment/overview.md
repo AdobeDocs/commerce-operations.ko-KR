@@ -1,8 +1,9 @@
 ---
 title: 배포 개요
 description: Commerce 애플리케이션의 배포 전략에 대해 알아보십시오.
+feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%

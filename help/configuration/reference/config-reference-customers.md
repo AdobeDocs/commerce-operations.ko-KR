@@ -1,8 +1,9 @@
 ---
 title: 고객 구성 경로 참조
 description: 고객 구성 값 목록을 참조하십시오.
+feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 0%
@@ -76,7 +77,7 @@ ht-degree: 0%
 | 가운데 이름 표시(초기) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 접미어 표시 | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 접미사 드롭다운 옵션 | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 생년월일 표시 | `customer/address/dob_show`<br>현재의 보안 및 개인 정보 보호 모범 사례를 준수하면서 이러한 데이터를 수집하거나 처리하기 전에 고객의 전체 생년월일(월, 일, 년) 저장과 관련된 모든 잠재적 법적 및 보안 위험과 전체 이름 등의 기타 개인 식별자를 알고 있는지 확인하십시오. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 생년월일 표시 | `customer/address/dob_show`<br>최신 보안 및 개인 정보 보호 모범 사례를 준수하면서 이러한 데이터를 수집하거나 처리하기 전에 고객의 전체 생년월일(월, 일, 년)과 전체 이름 등의 기타 개인 식별자 저장과 관련된 잠재적 법적 및 보안 위험을 알고 있어야 합니다. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 세금/VAT 번호 표시 | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 성별 표시 | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 스토어 신용 기능 활성화 | `customer/magento_customerbalance/is_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |

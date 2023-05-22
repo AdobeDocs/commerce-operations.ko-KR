@@ -1,8 +1,9 @@
 ---
 title: 검색 중지 단어 구성
 description: CSV 파일을 사용하여 Adobe Commerce에 대한 중지 단어를 관리하는 방법을 알아봅니다.
+feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%

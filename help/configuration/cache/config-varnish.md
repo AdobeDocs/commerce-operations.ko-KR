@@ -1,8 +1,9 @@
 ---
 title: 바니시 구성 및 사용
 description: Vannish가 파일을 저장하고 HTTP 트래픽을 개선하는 방법을 이해합니다.
+feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
