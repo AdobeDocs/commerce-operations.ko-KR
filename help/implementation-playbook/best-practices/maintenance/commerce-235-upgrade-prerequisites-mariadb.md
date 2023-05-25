@@ -1,26 +1,26 @@
 ---
-title: Adobe Commerce 2.3.5 MariaDB 업그레이드 사전 요구 사항
-description: Adobe Commerce 2.3.5에서 업그레이드할 Adobe Commerce 데이터베이스를 준비하는 방법에 대해 알아봅니다.
+title: Adobe Commerce MariaDB 업그레이드 사전 요구 사항
+description: Adobe Commerce 데이터베이스를 준비하여 이전 버전에서 MariaDB를 업그레이드하는 방법에 대해 알아봅니다.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # MariaDB에 대한 업그레이드 사전 요구 사항
 
-Adobe Commerce 2.3.4 이전 버전에서 최신 버전으로 업그레이드하려면 클라우드 인프라의 MariaDB 서비스를 버전 10.0 또는 10.2에서 버전 10.3 또는 10.4로 업그레이드해야 합니다. MariaDB 버전 10.3 이상 버전에서는 데이터베이스가 동적 테이블 행 형식을 사용해야 하며 Adobe Commerce에서는 테이블에 InnoDB 스토리지 엔진을 사용해야 합니다. 이 문서에서는 이러한 MariaDB 요구 사항을 준수하도록 데이터베이스를 업데이트하는 방법에 대해 설명합니다.
+클라우드 인프라의 MariaDB 서비스를 버전 10.0 또는 10.2에서 버전 10.3, 10.4 또는 10.5로 업그레이드합니다. MariaDB 버전 10.3 이상에서는 데이터베이스가 동적 테이블 행 형식을 사용해야 하며 Adobe Commerce에서는 테이블에 InnoDB 스토리지 엔진을 사용해야 합니다. 이 문서에서는 이러한 MariaDB 요구 사항을 준수하도록 데이터베이스를 업데이트하는 방법에 대해 설명합니다.
 
 데이터베이스를 준비한 후에는 Adobe Commerce 업그레이드 프로세스를 진행하기 전에 클라우드 인프라에서 MariaDB 서비스 버전을 업데이트하기 위한 Adobe Commerce 지원 티켓을 제출하십시오.
 
 ## 영향을 받는 제품 및 버전
 
-Adobe Commerce 버전 2.3.4 이하 및 MariaDB 버전 10.0 이하의 클라우드 인프라에 대한 Adobe Commerce.
+MariaDB 버전 10.3 이전 버전을 사용하는 클라우드 인프라의 Adobe Commerce.
 
 ## 업그레이드를 위해 데이터베이스 준비
 
@@ -119,7 +119,7 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
 
 ### 데이터베이스 변환 확인
 
-MariaDB 버전 10.2로 업그레이드하기 하루 전에 모든 테이블에 올바른 행 형식 및 스토리지 엔진이 있는지 확인하십시오. 변환을 완료한 후 코드 배포를 수행하면 일부 테이블이 원래 구성으로 되돌아갈 수 있으므로 확인이 필요합니다.
+MariaDB 버전 10.3, 10.4 또는 10.6으로 업그레이드하기 하루 전에 모든 테이블에 올바른 행 형식 및 스토리지 엔진이 있는지 확인합니다. 변환을 완료한 후 코드 배포를 수행하면 일부 테이블이 원래 구성으로 되돌아갈 수 있으므로 확인이 필요합니다.
 
 1. 데이터베이스에 로그인합니다.
 
