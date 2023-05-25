@@ -1,5 +1,5 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
 source-wordcount: '19443'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 **버전**: 2.4.6
 
 이 참조는 다음을 통해 사용할 수 있는 130개의 명령을 포함합니다. `bin/magento` 명령줄 도구입니다.
-초기 목록은 다음을 사용하여 자동으로 생성됩니다. `bin/magento list` 에디션에서 명령입니다.
+초기 목록은 다음을 사용하여 자동으로 생성됩니다. `bin/magento list` Adobe Commerce의 명령.
 사용 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 사용자 지정 CLI 명령을 추가하는 방법 안내서를 참조하십시오.
 
 >[!NOTE]
@@ -951,7 +951,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--username`
 
-데이터베이스 사용자 이름. 읽기 액세스 권한이 있어야 합니다.
+데이터베이스 사용자 이름. 읽기 권한이 있어야 합니다.
 
 - 값 필요
 

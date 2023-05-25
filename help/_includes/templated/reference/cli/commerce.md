@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **버전**: 1.42.0
 
 이 참조는 다음을 통해 사용할 수 있는 134개의 명령을 포함합니다. `magento-cloud` 명령줄 도구입니다.
-초기 목록은 다음을 사용하여 자동으로 생성됩니다. `magento-cloud list` 에디션에서 명령입니다.
+초기 목록은 다음을 사용하여 자동으로 생성됩니다. `magento-cloud list` cloud infrastructure의 Adobe Commerce 명령.
 
 >[!NOTE]
 >
