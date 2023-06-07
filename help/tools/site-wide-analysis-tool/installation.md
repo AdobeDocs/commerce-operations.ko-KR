@@ -2,9 +2,9 @@
 title: 설치 안내서
 description: 이 안내서를 사용하여 설치하십시오. [!DNL Site-Wide Analysis Tool] 웹 사이트용
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ bin/magento module:status Magento_ServicesId
    1. 런처 아카이브를 다운로드합니다.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. 런처 아카이브 압축을 풉니다.
@@ -197,7 +197,7 @@ bin/magento module:status Magento_ServicesId
    1. 런처 아카이브를 다운로드합니다.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. 런처 아카이브 압축을 풉니다.
@@ -390,7 +390,7 @@ cron 일정 업데이트:
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 이 오류를 해결하려면 다음 단계를 수행하십시오.
@@ -403,6 +403,12 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/
 1. 스케줄러를 실행하여 동일한 오류가 계속 표시되는지 확인합니다.
 1. 동일한 오류가 계속 표시되면 `config.yaml` 을 클릭하여 지원 티켓을 디버깅하고 엽니다.
 
+### *SIGFAULT* 오류
+
+다음 항목이 표시되면 *SIGFAULT* 바이너리를 실행할 때 오류가 발생하면 Adobe Commerce 및 에이전트 파일의 파일 소유자로 실행되지 않을 수 있습니다.
+해결하려면 에이전트 디렉터리에 있는 모든 파일 중 Adobe Commerce 파일이 가진 파일 소유자와 동일한 사용자가 있고 바이너리가 해당 사용자에서도 실행되어야 하는지 확인하십시오.
+다음을 사용할 수 있습니다. `chown` 파일 소유자를 변경하고 적절한 사용자로 전환하는 명령.
+데몬화 메커니즘(Cron 또는 System.d)이 적절한 사용자 아래에서 프로세스를 실행하는지 확인합니다.
 
 >[!INFO]
 >
