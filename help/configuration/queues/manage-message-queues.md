@@ -2,9 +2,9 @@
 title: 메시지 대기열 관리
 description: Adobe Commerce의 명령줄에서 메시지 대기열을 관리하는 방법을 알아봅니다.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 >
 >다음을 참조하십시오 [cron 구성 및 실행](../cli/configure-cron-jobs.md) 사용에 대한 자세한 내용 `cron` Commerce와 함께 사용됩니다.
 
-다음과 같은 프로세스 관리자를 사용할 수도 있습니다. [감독자](http://supervisord.org/index.html) 프로세스 상태를 모니터링합니다. 관리자는 명령줄을 사용하여 필요에 따라 프로세스를 재시작할 수 있습니다.
+다음과 같은 프로세스 관리자를 사용할 수도 있습니다. [감독자](https://supervisord.readthedocs.io/en/latest/) 프로세스 상태를 모니터링합니다. 관리자는 명령줄을 사용하여 필요에 따라 프로세스를 재시작할 수 있습니다.
 
 ## 구성
 
@@ -76,12 +76,12 @@ ht-degree: 0%
 - `consumers` - 실행할 소비자를 지정하는 문자열 배열. 빈 배열이 실행됩니다. *모두* 소비자.
 - `multiple_processes` - 몇 개의 프로세스에서 실행할 소비자를 지정하는 키-값 쌍의 배열입니다. Commerce 2.4.4 이상에서 지원됩니다.
 
-   >[!INFO]
-   >
-   >MySQL 작업 큐에서 여러 소비자를 실행하는 것은 권장되지 않습니다. 다음을 참조하십시오 [메시지 대기열을 MySQL에서 AMQP로 변경](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) 추가 정보.
+  >[!INFO]
+  >
+  >MySQL 작업 큐에서 여러 소비자를 실행하는 것은 권장되지 않습니다. 다음을 참조하십시오 [메시지 대기열을 MySQL에서 AMQP로 변경](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) 추가 정보.
 
-   >[!INFO]
-   >
-   >Adobe Commerce 스토어가 Cloud 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) 소비자가 메시지 큐의 메시지를 처리하는 방법을 구성합니다.
+  >[!INFO]
+  >
+  >Adobe Commerce 스토어가 Cloud 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) 소비자가 메시지 큐의 메시지를 처리하는 방법을 구성합니다.
 
 다음을 참조하십시오 [메시지 큐 소비자 시작](../cli/start-message-queues.md).
