@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. [!UICONTROL Page Builder's] 여러 오류로 인해 관리자는 콘텐츠 권한 없이 제품을 저장할 수 없습니다.
+* **ACSD-51305** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - GraphQL 응답에서 품절 구성 가능한 하위 제품을 사용할 수 없는 문제를 수정합니다.
+* **ACSD-50621** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 다음 문제를 수정합니다. [!UICONTROL Tier Prices] 공유 카탈로그의 다른 웹 사이트의 경우 다중 웹 사이트 환경에서 편집하려고 하면 표시되지 않습니다.
+* **ACSD-51041** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.6) - 가격 인덱서의 성능이 향상됩니다.
+* **ACSD-51379** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 를 통해 페이지 텍스트 콘텐츠에 수행된 변경 사항의 문제를 수정합니다. [!UICONTROL Page Builder] 저장되지 않았습니다.
+* **ACSD-49480** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6) - 장바구니에 하나의 장바구니 가격 규칙만 적용되는 문제가 수정되었습니다.
+* **ACSD-51230** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 주문에서 간단한 제품의 일부 환급이 처리될 때 기프트 카드 계정이 삭제되는 문제를 수정합니다.
+* **ACSD-51238** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 구성 가능한 제품을 업데이트하고 가격을 편집할 때 인벤토리 소스가 제거되는 문제를 수정합니다.
+* **ACSD-50794** (Adobe Commerce >=2.4.1 &lt;2.4.7) - GraphQL을 통해 제거할 때 선물 메시지 또는 선물 포장 세부 사항이 데이터베이스에서 업데이트되지 않는 문제를 수정합니다.
+* **ACSD-51528** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. *x_forwarded_for* 열에 null 값이 있습니다. *sales_order* 테이블.
+* **ACSD-50849** (Adobe Commerce >=2.4.4 &lt;2.4.6) - 캐시를 지운 후 새 제품을 카테고리에 추가하면 기존 제품의 위치와 선택이 일치하지 않는 문제가 해결됩니다.
+* **ACSD-51294** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - GTM/GA 가격, 수량, 세금, 배송 및 수익이 문자열로 전송되는 문제를 수정합니다. [!DNL Google Analytics] 및 GTM을 참조하십시오.
+* **ACSD-51204** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 대변 메모를 작성한 후 완전히 판매된 제품이 재고로 돌아오지 않는 문제를 수정합니다.
+* **ACSD-51291** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.4-p4의 경우) || >=2.4.5 &lt;2.4.5-p3) - 한 웹 사이트에 대한 액세스 권한이 있는 제한된 관리자가 여러 웹 사이트에 할당된 제품에 이미지/비디오를 추가할 수 있는 문제를 해결했습니다.
+* ACSD-50336용 새 버전이 추가되었습니다.
+* ACSD-49970 패치를 교체했습니다.
 
 ## v1.1.31 {#v1-1-31}
 
