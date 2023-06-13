@@ -2,9 +2,9 @@
 title: 제품 가용성
 description: 현재 사용 가능한 Adobe Commerce 기능, 기능에 액세스하는 방법 및 특정 Adobe Commerce 릴리스와의 호환성을 확인하는 방법에 대해 알아봅니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dc5a36dc9bc6cee0e9708bb24d3c5ab4b8be5186
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -15,20 +15,22 @@ ht-degree: 0%
 
 | 제품 | 사용 가능 | 다운로드 방법 |
 |-|-|-|
-| **Adobe Commerce 2.4.6** | 현재 사용 가능 | [작성기](../installation/composer.md) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html) |
+| **Adobe Commerce 2.4.7-beta1** | 현재 사용 가능 | [작성기](../installation/composer.md) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html) |
 | **클라우드 인프라 도구의 Adobe Commerce(ECE-Tools라고도 함)** | 현재 사용 가능 | [작성기](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html) |
 | **Adobe Commerce에 대한 이벤트 Adobe I/O** | 현재 사용 가능 | [작성기](https://developer.adobe.com/commerce/events/get-started/installation/) \| [릴리스 정보](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| **Adobe Developer 앱 빌더용 API Mesh** | 현재 사용 가능 | [Node.js](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) \| [릴리스 정보](https://developer.adobe.com/graphql-mesh-gateway/gateway/release-notes/) |
-| **라이브 검색** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-live-search.html) \| [개발자 설명서](https://developer.adobe.com/commerce/services/live-search/) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html) |
-| **Adobe Commerce용 카탈로그 서비스** | 현재 사용 가능 | [개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html?lang=en) \| |
-| **결제 서비스** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) |
-| **빠른 체크아웃** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-quick-checkout.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) |
-| **Adobe Commerce에 대한 스토어 이행** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/store-fulfillment-magento-walmart.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/introduction.html) |
-| **제품 Recommendations** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-product-recommendations.html) \| [개발자 설명서](https://devdocs.magento.com/recommendations/product-recs.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html) |
-| **PWA Studio** | 현재 사용 가능 | [설명서](https://developer.adobe.com/commerce/pwa-studio/) 및 [GitHub](https://github.com/magento/pwa-studio) |
-| **채널 관리자** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-channel-manager.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) |
 | **Amazon Sales Channel** | 현재 Adobe Commerce 버전 2.4.x 및 2.3.x(미국, 캐나다, 멕시코, 영국)에서 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-module-amazon.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-channels/amazon/overview.html) |
+| **Adobe Developer 앱 빌더용 API Mesh** | 현재 사용 가능 | [Node.js](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) \| [릴리스 정보](https://developer.adobe.com/graphql-mesh-gateway/gateway/release-notes/) |
+| **Audience Activation** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-audiences.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) |
+| **Adobe Commerce용 카탈로그 서비스** | 현재 사용 가능 | [개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html?lang=en) |
+| **채널 관리자** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-channel-manager.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) |
 | **Experience Platform 커넥터** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html?lang=en) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=en) |
+| **라이브 검색** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-live-search.html) \| [개발자 설명서](https://developer.adobe.com/commerce/services/live-search/) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html) |
+| **결제 서비스** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html) |
+| **제품 Recommendations** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-product-recommendations.html) \| [개발자 설명서](https://devdocs.magento.com/recommendations/product-recs.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html) |
+| **PWA Studio** | 현재 사용 가능 | [GitHub](https://github.com/magento/pwa-studio) \| [릴리스 정보](https://github.com/magento/pwa-studio/releases) \| [개발자 설명서](https://developer.adobe.com/commerce/pwa-studio/) |
+| **빠른 체크아웃** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/magento-quick-checkout.html) \| [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html) |
+| **SaaS 가격 인덱싱** | 현재 사용 가능 | [작성기](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html#modules) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html) |
+| **Adobe Commerce에 대한 스토어 이행** | 현재 사용 가능 | [Commerce Marketplace](https://marketplace.magento.com/store-fulfillment-magento-walmart.html) \| [사용 안내서](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/introduction.html) |
 
 ## 호환성
 

@@ -2,9 +2,9 @@
 title: Adobe Commerce 및 Magento Open Source 릴리스 노트
 description: 특정 Adobe Commerce 및 Magento Open Source 릴리스에 대한 정보를 찾을 수 있는 위치를 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
         <p>개선 사항, 보안, 버그 수정 및 알려진 문제를 포함하여 Adobe Commerce 및 Magento Open Source의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">이전 버전과 호환 불가능한 변경 사항</a></li>
-            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p2.md">보안 패치</a></li>
+            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-6-p1.md">보안 패치</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe 보안 공지</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Adobe Commerce용 B2B</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
@@ -47,6 +47,7 @@ ht-degree: 0%
       <td><strong>Adobe Commerce용 서비스</strong>
         <p>Adobe Commerce 및 Magento Open Source 확장으로 사용할 수 있는 혁신적인 Commerce 서비스의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">카탈로그 서비스</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">채널 관리자(Walmart Marketplace 판매)</a></li>
@@ -64,6 +65,7 @@ ht-degree: 0%
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Adobe APP Builder 개발자용 API Mesh</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe Commerce에 대한 이벤트 Adobe I/O</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">관리자 UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">품질 패치 도구</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">사이트 전체 분석 도구</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">업그레이드 호환성 도구</a></li>

@@ -2,16 +2,16 @@
 title: Ngix
 description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Nginx 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
 # Ngix
 
-Adobe Commerce은 nginx 1.18(또는 [최신 메인라인 버전](https://nginx.org/en/linux_packages.html#mainline)). 최신 버전의 도 설치해야 합니다. `php-fpm`.
+Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.org/en/linux_packages.html#mainline)). 최신 버전의 도 설치해야 합니다. `php-fpm`.
 
 설치 지침은 사용 중인 운영 체제에 따라 다릅니다. 다음을 참조하십시오 [PHP](../php-settings.md) 을 참조하십시오.
 

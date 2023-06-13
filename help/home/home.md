@@ -3,7 +3,7 @@ keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 시스템 관리 및 운영 제품 설명서의 색인을 찾아봅니다.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
+source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -64,11 +64,11 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
        <img alt="명령줄 도구 참조" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>명령줄 도구 참조</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>명령줄 도구 참조</strong></a>
       <p>Adobe Commerce 명령줄 도구의 명령, 인수 및 옵션에 대해 알아봅니다.</p>
     </div>
   </td>
