@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
+source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -75,4 +75,4 @@ _scripts/render
 
 스크립트는 렌더링을 실행하고 렌더링된 템플릿을 `help/_includes/templated` 디렉토리.
 
-에 대한 자세한 내용은 Jekyll 설명서 를 참조하십시오. [데이터 파일](https://jekyllrb.com/docs/datafiles, [액체 필터](https://jekyllrb.com/docs/liquid/filters/)및 기타 기능.
+에 대한 자세한 내용은 Jekyll 설명서 를 참조하십시오. [데이터 파일](https://jekyllrb.com/docs/datafiles), [액체 필터](https://jekyllrb.com/docs/liquid/filters/)및 기타 기능.
