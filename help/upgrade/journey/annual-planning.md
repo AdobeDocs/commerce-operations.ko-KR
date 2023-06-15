@@ -2,7 +2,7 @@
 title: 연간 업그레이드 계획
 description: Adobe Commerce 또는 Magento Open Source 프로젝트에 대한 연간 업그레이드 계획 수립을 위한 팁을 검토하십시오.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: d81283491447dcad5f38ddf55acea7d94889ef35
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 - 이러한 사용자 지정 및 확장이 Adobe에서 기본적으로 제공되지 않으며 향후 릴리스에 제공되지 않는지 확인하고 있습니까? 만약 그렇다면, 나는 우리 회사의 설치 시간과 비용을 절약할 수 있을지도 몰라.
 - 향후 연도 중에 유지 관리가 필요할 수 있는 타사 통합이 있습니까?
 
-팀이 올바른 방향으로 진행할 수 있도록 연중 업그레이드 체크포인트를 계획하여 계획, 예산, 타임라인 및 팀 용량을 검토하십시오.
+팀이 올바른 방향으로 진행할 수 있도록 연중 업그레이드 체크포인트를 계획하여 계획, 예산, 타임라인 및 팀의 역량을 검토하십시오.

@@ -1,8 +1,9 @@
 ---
 title: Elasticsearch에서 OpenSearch로 마이그레이션
 description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 사용되는 검색 엔진 교체에 대해 알아봅니다.
+feature: Upgrade, Search
 exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%

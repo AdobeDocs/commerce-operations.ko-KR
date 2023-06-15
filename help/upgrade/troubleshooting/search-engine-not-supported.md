@@ -1,8 +1,9 @@
 ---
 title: 현재 검색 엔진이 지원되지 않음
 description: 지원되지 않는 검색 엔진에 대한 오류가 발생한 후 Adobe Commerce 또는 Magento Open Source 업그레이드 문제를 해결합니다.
+feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -34,13 +35,11 @@ bin/magento config:show catalog/search/engine
 >
 >이 오류가 발생한 경우 설치가 일관되지 않은 상태이며 관리자에 액세스할 수 없습니다. 이 오류를 해결하는 동안 이전 버전으로 되돌리는 것이 좋습니다. 이렇게 하려면 다음 명령 중 하나를 실행합니다.
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

@@ -1,8 +1,9 @@
 ---
 title: 모듈 및 확장 관리(개발자)
 description: 명령줄 인터페이스와 Composer 패키지 관리자를 사용하여 Adobe Commerce 및 Magento Open Source 모듈과 확장을 관리합니다.
+feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%

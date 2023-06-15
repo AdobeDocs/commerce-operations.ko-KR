@@ -1,8 +1,9 @@
 ---
 title: 모듈 및 확장 관리
 description: 명령줄 인터페이스를 사용하여 Adobe Commerce 및 Magento Open Source 모듈과 확장을 활성화, 비활성화 및 제거합니다.
+feature: Upgrade, Extensions
 exl-id: a71de7c6-395a-4734-b3ad-b2879809be0b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
