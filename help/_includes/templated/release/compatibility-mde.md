@@ -1,7 +1,7 @@
 ---
-source-git-commit: f98c0edd3ca2b8b907974717bb5d81304097f46a
+source-git-commit: 819db1df2e00a9084f62c99a58dd835d5da04dbd
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -209,6 +209,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="10">Audience Activation</th>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.1.0</td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
     </tr>
     <tr>
       <td>Audience Activation 1.0.1</td>
@@ -452,6 +473,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="10">카탈로그 서비스</th>
     </tr>
     <tr>
+      <td>카탈로그 서비스 1.9</td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+    </tr>
+    <tr>
       <td>카탈로그 서비스 1.7</td>
       <td>호환 가능</span>
       </td>
@@ -670,6 +712,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="10">Experience Platform 커넥터</th>
+    </tr>
+    <tr>
+      <td>Experience Platform 커넥터 3.0.0-Beta1</td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
     </tr>
     <tr>
       <td>Experience Platform 커넥터 2.2.0</td>
@@ -1362,6 +1425,27 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="10">결제 서비스</th>
+    </tr>
+    <tr>
+      <td>결제 서비스 2.1.0</td>
+      <td>호환 가능</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>지원됨</span>
+      </td>
+      <td>호환되지 않음</span>
+      </td>
+      <td>호환되지 않음</span>
+      </td>
+      <td>호환되지 않음</span>
+      </td>
+      <td>호환되지 않음</span>
+      </td>
+      <td>지원되지 않음</span>
+      </td>
     </tr>
     <tr>
       <td>결제 서비스 2.0.0</td>
