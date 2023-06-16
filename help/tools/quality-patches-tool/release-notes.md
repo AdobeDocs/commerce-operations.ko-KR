@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
+source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
 workflow-type: tm+mt
-source-wordcount: '12426'
+source-wordcount: '12912'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.33 {#v1-1-33}
+
+* **ACSD-50478** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.5) - DB 덤프에 트리거 및 가 포함된 경우에 대한 데이터베이스 롤백 명령을 수정합니다. *구분 기호* SQL 명령.
+* **ACSD-50512** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 수정 사항 *오류: 다운로드 가능한 링크가 제품과 관련이 없습니다. 링크를 확인하고 다시 시도하십시오.* 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 발생하는 오류입니다.
+* **ACSD-50949** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - SKU 필터와 함께 사용할 때 고급 검색의 가격 필터가 적절한 결과를 반환하지 않는 문제를 수정합니다.
+* **ACSD-51645** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 확장 프로그램인 경우 새 장바구니 가격 규칙을 저장할 때 발생하는 오류를 수정합니다 `Magento_OfflineShipping` 이(가) 비활성화되었습니다.
+* **ACSD-50895** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 다음 문제를 수정합니다. [!DNL Google Analytics] 3 다음과 같은 경우에는 GTM 태그가 실행되지 않습니다 [!DNL Google Analytics] 4 GTM이 구성되지 않았습니다.
+* **ACSD-51102** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 예약된 업데이트로 인해 규칙이 활성화될 때 많은 수의 제품에 적용되는 카탈로그 규칙이 올바르게 인덱싱되지 않는 문제가 수정되었습니다.
+* **ACSD-50368** (Adobe Commerce 및 Magento Open Source >= 2.4.3 &lt;2.4.5) - 고객의 `group_id` 비동기 REST API 또는 비동기 벌크 REST API를 통해 고객을 만들면 이 무시됩니다.
+* **ACSD-51497** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - 고객이 드롭다운 유형의 사용자 지정 특성으로 카탈로그 페이지를 정렬할 수 없는 문제를 수정합니다.
+* **ACSD-51408** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt; 2.4.7의 경우) - 주문 항목 상태가 로 잘못 설정되는 문제가 수정되었습니다. *[!UICONTROL Backordered]*.
+* **ACSD-51735** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5) - 주문 항목 상태가 로 잘못 설정되는 문제가 수정되었습니다. *[!UICONTROL Ordered]* 제품 재고 *0*.
+* **ACSD-51792** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 다음과 같은 경우 페이지에 노출 이벤트가 없는 문제가 해결됩니다. [!DNL Google Tag Manager] 4가 활성화되었습니다.
+* **ACSD-51471** (Adobe Commerce >=2.4.3 &lt;2.4.7) - 관리자가 자체적으로 예약된 업데이트가 있는 간단한 제품을 사용하는 번들 제품에 대해 예약된 업데이트를 저장할 수 없는 문제를 수정합니다.
+* **ACSD-51700** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 관리자의 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환할 때 발생하는 오류를 수정합니다.
+* **ACSD-51120** (Adobe Commerce >=2.3.7 &lt;2.4.3) - 스테이징 업데이트를 통해 업데이트된 CMS 블록이 포함된 CMS 페이지에 대해 GraphQL GET 요청 캐시가 지워지지 않는 문제를 수정합니다.
+* **ACSD-51240** (Adobe Commerce >=2.4.4 &lt;2.4.6) - 회사 등록 양식을 통해 등록한 경우 업로드된 파일이 누락되는 문제를 수정합니다.
+* **ACSD-51907** (Adobe Commerce >=2.4.2 &lt;2.4.3) - 제한된 관리 사용자가 오프라인 환불로 대변 메모를 만들 수 없는 문제를 해결했습니다.
+* **ACSD-52148** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - 다음과 같은 문제를 수정합니다. [!DNL Google V3 reCAPTCHA] 관리자 로그인이 가끔 실패했습니다.
+* **ACSD-51431** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 인덱서 상태가 인 문제를 수정합니다. *작업 중* 변경 로그에 새 항목이 없더라도
+* **ACSD-51892** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 배포 중에 구성 파일이 여러 번 로드되는 성능 문제를 수정합니다.
+* 사용되지 않는 ACSD-51114.
 
 ## v1.1.32 {#v1-1-32}
 
