@@ -1,8 +1,9 @@
 ---
 title: 테마 제거
 description: Adobe Commerce 또는 Magento Open Source 테마를 제거하려면 다음 단계를 따르십시오.
+feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 * 업데이트 중 `parent` 의 노드 정보 `theme.xml` 를 클릭하여 테마에 대한 참조를 제거합니다.
 * 파일 시스템에서 테마 코드 제거.
 
-   [테마 상속에 대한 자세한 정보](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [테마 상속에 대한 자세한 정보](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## 테마 제거
 

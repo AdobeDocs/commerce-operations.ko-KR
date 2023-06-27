@@ -1,8 +1,9 @@
 ---
 title: 마스크 설정(선택 사항)
 description: 파일 시스템 권한을 제한하여 Adobe Commerce 또는 Magento Open Source 온프레미스 설치의 보안 자세를 개선합니다.
+feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%

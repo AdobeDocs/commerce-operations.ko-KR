@@ -1,8 +1,9 @@
 ---
 title: 검색 엔진에 대한 Apache 구성
 description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Apache 웹 서버를 사용하여 검색 엔진을 구성합니다.
+feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -131,10 +132,9 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
    * cron 설정: 웹 서버 사용자 또는 다른 사용자.
 
-   이 예제에서는 웹 서버 사용자를 사용하지만 사용자의 선택은 사용자가 결정합니다.
+  이 예제에서는 웹 서버 사용자를 사용하지만 사용자의 선택은 사용자가 결정합니다.
 
    * Elasticsearch 설정: 사용자의 이름이 다음과 같습니다. `magento_elasticsearch` 이 예에서
-
 
 * `<password file name>` 은(는) 숨겨진 파일이어야 합니다(다음으로 시작). `.`) 및 에는 사용자의 이름이 반영되어야 합니다. 자세한 내용은 이 섹션의 뒷부분에서 예를 참조하십시오.
 

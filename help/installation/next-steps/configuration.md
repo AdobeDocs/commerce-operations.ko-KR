@@ -1,8 +1,9 @@
 ---
 title: 애플리케이션 구성
 description: Adobe Commerce 및 Magento Open Source 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
+feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%

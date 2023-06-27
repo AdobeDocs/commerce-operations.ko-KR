@@ -1,8 +1,9 @@
 ---
 title: 검색 엔진에 대한 Nginx 구성
 description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Nginx 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
+feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: 관리자 계정 만들기, 편집 또는 잠금 해제
 description: Adobe Commerce 또는 Magento Open Source 관리 애플리케이션의 관리자 계정을 관리하려면 다음 단계를 따르십시오.
+feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

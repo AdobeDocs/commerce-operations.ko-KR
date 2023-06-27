@@ -1,8 +1,9 @@
 ---
 title: 샘플 데이터 작성기 패키지 다운로드
 description: 다음 단계에 따라 Composer PHP Package Manager를 사용하여 Adobe Commerce 및 Magento Open Source 샘플 데이터를 설치합니다.
+feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 * 에서 압축된 아카이브를 다운로드했습니다. `https://magento.com/tech-resources/download`.
 
-   GitHub에서 아카이브를 다운로드한 경우 다음과 같은 이유로 이 메서드가 작동하지 않습니다. `composer.json` 파일에 `repo.magento.com` URL.
+  GitHub에서 아카이브를 다운로드한 경우 다음과 같은 이유로 이 메서드가 작동하지 않습니다. `composer.json` 파일에 `repo.magento.com` URL.
 
 * 사용됨 `composer create-project`
 
