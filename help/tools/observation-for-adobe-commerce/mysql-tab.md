@@ -2,7 +2,8 @@
 title: 다음 [!UICONTROL MySQL] 탭
 description: 에 대해 알아보기 [!UICONTROL MySQL] 탭 / [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -115,7 +116,7 @@ MySQL에 할당된 스토리지의 스토리지가 MySQL에서 부족하여 많�
 
 ![크론 테이블 변경](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-다음 **[!UICONTROL Cron table change]** frame은 &quot;cron job에 대해 잠금을 획득할 수 없습니다:&quot; 오류 메시지와 함께 특정 PHP 메모리 오류 및 `cron_schedule` 테이블. 다음과 같은 경우 `cron_schedule` 테이블이 잠겨 있습니다(예: `DELETE` 쿼리가 실행 중입니다). 다른 cron이 실행되지 않도록 차단합니다.
+다음 **[!UICONTROL Cron table change]** frame은 &quot;cron job에 대한 잠금을 획득할 수 없습니다:&quot; 오류 메시지와 함께 특정 PHP 메모리 오류 및 `cron_schedule` 테이블. 다음과 같은 경우 `cron_schedule` 테이블이 잠겨 있습니다(예: `DELETE` 쿼리가 실행 중입니다). 다른 cron이 실행되지 않도록 차단합니다.
 
 ## [!UICONTROL Deadlocks]
 

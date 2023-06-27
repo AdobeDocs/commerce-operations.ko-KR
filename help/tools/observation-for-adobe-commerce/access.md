@@ -2,7 +2,8 @@
 title: 액세스 [!DNL Observation for Adobe Commerce] nerdlet
 description: 에 액세스하는 방법 알아보기 [!DNL Observation for Adobe Commerce] nerdlet.
 exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%

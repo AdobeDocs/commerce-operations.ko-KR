@@ -2,7 +2,8 @@
 title: Order Management
 description: 주문 관리 시스템이 전자 상거래 비즈니스에 어떻게 필수적인지 알아봅니다.
 exl-id: 62edc895-d725-4252-9a43-e03427579444
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Orders, Shipping/Delivery
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%

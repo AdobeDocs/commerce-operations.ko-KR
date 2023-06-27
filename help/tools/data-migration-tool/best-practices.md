@@ -2,7 +2,9 @@
 title: 데이터 마이그레이션 모범 사례
 description: 다음 데이터 마이그레이션 모범 사례를 따라 Magento 1에서 Magento 2로 성공적으로 업그레이드하십시오.
 exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Best Practices, Configuration
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -23,9 +25,9 @@ ht-degree: 0%
 
 * 성능을 향상시키려면 **활성화 `direct_document_copy` 옵션** (으)로 `config.xml` 파일:
 
-   ```xml
-   <direct_document_copy>1</direct_document_copy>
-   ```
+  ```xml
+  <direct_document_copy>1</direct_document_copy>
+  ```
 
 >[!NOTE]
 >

@@ -2,7 +2,8 @@
 title: 배송 및 주문 처리
 description: 전자 상거래 프로젝트를 완료하기 전에 배송 방법 및 비용을 결정하십시오.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Shipping/Delivery
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%

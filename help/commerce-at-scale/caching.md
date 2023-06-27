@@ -2,7 +2,8 @@
 title: 효과적인 캐시 계획
 description: 로드 중인 사이트의 성공을 보장하려면 캐싱에 대한 권장 벤치마크 를 참조하십시오.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Integration, Cache
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

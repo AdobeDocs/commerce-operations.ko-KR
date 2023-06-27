@@ -2,7 +2,8 @@
 title: 수동 마이그레이션이 필요한 데이터
 description: Magento 1에서 Magento 2로 데이터 마이그레이션 중에 수동으로 마이그레이션해야 하는 데이터와 그 방법에 대해 알아봅니다.
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%

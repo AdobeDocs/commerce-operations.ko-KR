@@ -2,7 +2,8 @@
 title: 상거래 호스팅 비교
 description: 이 비교 표를 검토하여 전자 상거래 프로젝트 호스팅에 대한 최상의 결정을 내리십시오.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Cloud, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -106,7 +107,7 @@ ht-degree: 0%
         <tr>
             <td>IT 지원</td>
             <td>인프라 및 애플리케이션 전문 지식 활용 가능</td>
-            <td>특히 기업의 고유한 요구 사항에 맞게 애플리케이션을 조정할 경우 전담 IT 팀이 필요합니다.</td>
+            <td>특히 기업의 고유한 요구 사항에 맞게 애플리케이션을 조정할 때는 전담 IT 팀이 필요합니다.</td>
             <td>클라우드 배포에 내재된 규모의 주의는 IT 지원이 적은 시간과 노력으로 더 많은 것을 관리할 수 있음을 의미합니다.</td>
             <td>클라우드에 대한 학습 곡선은 중요하고 적절한 교육을 받은 직원은 비용이 많이 듭니다</td>
         </tr>

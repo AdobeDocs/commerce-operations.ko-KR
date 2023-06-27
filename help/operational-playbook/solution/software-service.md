@@ -2,7 +2,8 @@
 title: Commerce 소프트웨어 서비스
 description: SaaS 애플리케이션과 기타 자체 호스팅되는(온-프레미스) 오픈 소스 전자 상거래 옵션 간의 주요 차이점에 대해 알아봅니다.
 exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Saas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%

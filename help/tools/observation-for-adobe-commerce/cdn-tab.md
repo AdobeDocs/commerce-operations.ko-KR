@@ -2,7 +2,8 @@
 title: 다음 [!UICONTROL CDN] 탭
 description: 에 대해 알아보기 [!UICONTROL CDN] 탭 / [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%

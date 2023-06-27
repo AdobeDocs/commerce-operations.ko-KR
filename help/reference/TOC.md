@@ -1,7 +1,8 @@
 ---
 user-guide-title: 명령줄 도구 참조
 user-guide-description: Adobe Commerce 및 Magento Open Source 명령줄 도구에 사용할 수 있는 모든 명령, 인수 및 옵션에 대해 알아봅니다.
-source-git-commit: 78ef0e6343601f06d1d2f4a0d90dcb492ed8ca84
+feature: Configuration
+source-git-commit: 3b8b9d88e72722e5c72ab94f7d3e61b78a2cb136
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%

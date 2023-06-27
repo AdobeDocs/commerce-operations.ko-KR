@@ -1,7 +1,8 @@
 ---
 user-guide-title: 운영 플레이북
 user-guide-description: 비즈니스가 성공적인 전자 상거래 사이트를 운영할 수 있도록 하는 방법에 대해 알아봅니다.
-source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
+feature: Best Practices
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%

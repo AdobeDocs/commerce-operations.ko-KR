@@ -2,7 +2,8 @@
 title: 데이터 마이그레이션 작동 방식
 description: 용어, 워크플로 다이어그램, 단계를 포함하여 Magento 1과 Magento 2 간의 데이터 마이그레이션 프로세스에 대해 알아봅니다.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%

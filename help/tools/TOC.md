@@ -1,7 +1,8 @@
 ---
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+feature: Configuration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: '[!DNL Data Migration Tool] 기술 사양'
 description: 의 구현 세부 사항에 대해 알아보기 [!DNL Data Migration Tool] 및 Magento 1과 Magento 2 간에 데이터를 전송할 때 확장하는 방법을 참조하십시오.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%
@@ -334,7 +335,7 @@ $this->progress->finish();
 
 노드 아래 `<key>` 에서 &#39;경로&#39; 열과 함께 작동하는 규칙이 있습니다. `core_config_data` 테이블. `<ignore>` 규칙은 도구가 일부 설정을 전송하지 못하도록 합니다. 이 노드에서는 와일드카드를 사용할 수 있습니다. 목록에 없는 다른 모든 설정 `<ignore>` 노드가 마이그레이션됩니다. Magento 2에서 설정의 경로를 변경한 경우 를 추가해야 합니다. `//key/rename` 노드. 여기서 이전 경로는 `//key/rename/path` 노드 및 새 경로가에 표시 `//key/rename/to` 노드.
 
-노드 아래 `<value>`, 의 &#39;value&#39; 열과 함께 작동하는 규칙이 있습니다. `core_config_data` 테이블. 이러한 규칙은 핸들러(를 구현하는 클래스)별로 설정 값을 변환하는 것을 목표로 합니다 `Migration\Handler\HandlerInterface`)를 만들고 Magento 2에 맞게 조정합니다.
+노드 아래 `<value>`에서 &#39;value&#39; 열과 함께 작동하는 규칙이 있습니다. `core_config_data` 테이블. 이러한 규칙은 핸들러(를 구현하는 클래스)별로 설정 값을 변환하는 것을 목표로 합니다 `Migration\Handler\HandlerInterface`)를 만들고 Magento 2에 맞게 조정합니다.
 
 ### 데이터 마이그레이션 모드
 

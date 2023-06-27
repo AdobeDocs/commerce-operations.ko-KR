@@ -2,7 +2,8 @@
 title: Commerce 호스팅 온-프레미스
 description: 클라우드 기반 호스팅 솔루션은 매우 인기 있지만, 온프레미스 호스팅은 전자 상거래 프로젝트에 적절할 수 있습니다.
 exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%

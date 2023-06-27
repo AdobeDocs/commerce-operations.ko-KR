@@ -2,8 +2,7 @@
 title: 규모에 맞게 경험 제공
 description: Adobe Commerce 및 Adobe Experience Manager을 통해 규모에 맞게 경험을 전달하는 방법을 알아봅니다.
 exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
-debug: true
-source-git-commit: 442bb3f2c448de2ed70a3033d399025cc39e8744
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -18,7 +17,7 @@ AEM/CIF/Adobe Commerce 환경에서는 전자 상거래 사이트 방문자가 �
 
 ![Adobe Experience Manager 및 Adobe Commerce 아키텍처 개요 다이어그램](../assets/commerce-at-scale/overview.png)
 
-AEM/CIF/Adobe Commerce 모델에서는 서버측 렌더링과 클라이언트측 렌더링을 결합하여 사용할 수 있습니다. 서버측 렌더링은 정적 콘텐츠를 전달하고 클라이언트측 렌더링은 자주 변경되거나 개인 다이내믹 콘텐츠를 전달하며, 사용자의 브라우저 내에서 특정 구성 요소에 대해 Adobe Commerce을 직접 호출합니다.
+AEM/CIF/Adobe Commerce 모델에서는 서버측 렌더링과 클라이언트측 렌더링을 결합하여 사용할 수 있습니다. 서버측 렌더링은 정적 콘텐츠를 전달하고 클라이언트측 렌더링은 자주 변경되거나 개인 다이내믹 콘텐츠를 전달하며, 사용자 브라우저 내에서 특정 구성 요소에 대해 Adobe Commerce을 직접 호출합니다.
 
 제품 세부 사항 페이지의 AEM 전자 상거래 상점 예제의 여러 구성 요소에 대한 예는 아래 예에서 확인할 수 있습니다.
 

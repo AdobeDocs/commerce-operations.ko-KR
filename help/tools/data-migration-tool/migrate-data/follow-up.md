@@ -2,7 +2,8 @@
 title: 데이터 마이그레이션 후속 조치
 description: Magento 1에서 Magento 2 로의 데이터 마이그레이션이 성공적이었는지와 모든 기능이 예상대로 작동하는지 확인하는 방법을 알아봅니다.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 0%

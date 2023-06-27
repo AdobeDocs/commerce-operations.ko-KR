@@ -2,7 +2,9 @@
 title: AEM 성능 최적화
 description: Adobe Commerce에서 높은 로드를 지원하도록 기본 Adobe Experience Manager 구성을 최적화합니다.
 exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration, Cache
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
@@ -25,7 +27,7 @@ TTL 캐싱 기능은 ACS AEM Commons 패키지 내에서 &quot;Dispatcher TTL&qu
 
 ## 브라우저 캐싱
 
-위의 Dispatcher TTL 접근 방식은 요청과 게시자에 대한 로드를 크게 줄여주지만 변경할 가능성이 매우 낮은 일부 자산이 있으므로 사용자의 브라우저에서 로컬로 관련 파일을 캐싱하여 Dispatcher에 대한 요청도 줄일 수 있습니다. 예를 들어 사이트 템플릿의 사이트에 있는 모든 페이지에 표시되는 사이트 로고는 Dispatcher에 매번 요청하지 않아도 됩니다. 대신 사용자의 브라우저 캐시에 저장할 수 있습니다. 각 페이지 로드에 대한 대역폭 요구 사항 감소는 사이트 응답성 및 페이지 로드 시간에 큰 영향을 줍니다.
+위의 Dispatcher TTL 접근 방식은 요청과 게시자에 대한 로드를 크게 줄여주지만 변경할 가능성이 매우 낮은 일부 자산이 있으므로 사용자의 브라우저에서 로컬로 관련 파일을 캐싱하여 Dispatcher에 대한 요청도 줄일 수 있습니다. 예를 들어 사이트 템플릿의 사이트에 있는 모든 페이지에 표시되는 사이트 로고는 Dispatcher에 매번 요청할 필요가 없습니다. 대신 사용자의 브라우저 캐시에 저장할 수 있습니다. 각 페이지 로드에 대한 대역폭 요구 사항 감소는 사이트 응답성 및 페이지 로드 시간에 큰 영향을 줍니다.
 
 브라우저 수준에서 캐싱은 일반적으로 &quot;Cache-Control: max-age=&quot; 응답 헤더를 통해 수행됩니다. maxage 설정은 사이트에서 파일 &quot;다시 유효성 검사&quot; 또는 요청을 다시 시도하기 전까지 파일을 캐시해야 하는 시간(초)을 브라우저에 알려줍니다. 이러한 캐시 max-age 개념을 일반적으로 &quot;캐시 만료&quot; 또는 TTL(&quot;Time to Live&quot;)이라고 합니다. 규모에 맞게 상거래 경험 제공 - Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
@@ -50,7 +52,7 @@ TTL 캐싱 기능은 ACS AEM Commons 패키지 내에서 &quot;Dispatcher TTL&qu
 content/ecommerce/us/en/products/product-page.html
 ```
 
-각 폴더 수준에는 위 표에 분류된 대로 &#39;통계 수준&#39;이 있습니다.
+각 폴더 수준에는 위 표에 분류된 대로 &#39;stat 수준&#39;이 있습니다.
 
 | content (docroot) | ecommerce | us | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
@@ -89,7 +91,7 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 위의 캐싱 옵션은 &quot;GraphQL Client Configuration Factory&quot;의 AEM OSGi 구성 콘솔을 사용하여 설정할 수 있습니다. 각 캐시 구성 항목은 다음 형식으로 지정할 수 있습니다.
 
 ```
-• NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
+* NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
     › NAME (String): name of the cache
     › ENABLE (true|false): enables or disables that cache entry
     › MAXSIZE (Integer): maximum size of the cache (in number of entries)
@@ -100,13 +102,13 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 또한 페이지의 캐싱에 대한 하이브리드 접근 방식이 가능합니다. CIF 페이지에는 항상 고객의 브라우저에서 직접 Adobe Commerce의 최신 정보를 요청하는 구성 요소가 포함될 수 있습니다. 이 기능은 예를 들어 PDP 내의 제품 가격과 같은 실시간 정보를 사용하여 최신 상태로 유지해야 하는 템플릿 내의 특정 페이지 영역에 유용합니다. 동적 가격 일치로 인해 가격이 자주 변경되는 경우 해당 정보는 Dispatcher에 캐시되지 않도록 구성할 수 있으며, 오히려 AEM CIF 웹 구성 요소가 있는 GraphQL API를 통해 직접 Adobe Commerce에서 고객의 브라우저에서 클라이언트측에서 가격을 가져올 수 있습니다.
 
-AEM 구성 요소 설정 을 통해 구성할 수 있습니다. 제품 목록 페이지의 가격 정보에 대해 이 구성 요소는 제품 목록 템플릿에서 구성하고 페이지 설정에서 제품 목록 구성 요소를 선택한 다음 &quot;가격 로드&quot; 옵션을 선택할 수 있습니다. 동일한 방식이 재고 수준에 적용됩니다.
+AEM 구성 요소 설정 을 통해 구성할 수 있습니다. 제품 목록 페이지의 가격 정보에 대해 페이지 설정에서 제품 목록 구성 요소를 선택하고 &quot;가격 로드&quot; 옵션을 선택하여 제품 목록 템플릿에서 구성할 수 있습니다. 동일한 방식이 재고 수준에 적용됩니다.
 
 상기 방법들은 실시간, 지속적으로 최신 정보를 요구하는 경우에만 사용되어야 한다. 가격 책정 시 위의 예에서 비즈니스 이해 당사자와 협력하여 낮은 트래픽 시간에만 가격을 매일 업데이트하고 캐시 플러시 작업을 수행할 수 있습니다. 이렇게 하면 가격 정보를 표시하는 각 페이지를 작성할 때 실시간 가격 정보 요청과 그에 따른 Adobe Commerce 추가 로드에 대한 필요성이 제거됩니다.
 
 ## 캐시 불가능 GraphQL 요청
 
-페이지 내의 특정 동적 데이터 구성 요소는 캐시해서는 안 되며, 장바구니 및 체크아웃 페이지 전체의 호출과 같이 항상 Adobe Commerce에 대한 GraphQL 호출이 필요합니다. 이 정보는 사용자별로 다르며, 장바구니에 제품을 추가하는 등의 사이트 고객 활동으로 인해 지속적으로 변경됩니다.
+페이지 내의 특정 동적 데이터 구성 요소는 캐시해서는 안 되며, 장바구니 및 체크아웃 페이지 전체의 호출과 같이 항상 Adobe Commerce에 대한 GraphQL 호출이 필요합니다. 이 정보는 사용자에게만 해당되며 장바구니에 제품을 추가하는 등의 사이트 고객 활동으로 인해 지속적으로 변경됩니다.
 
 사이트 디자인이 사용자의 역할에 따라 다른 응답을 제공하는 경우 로그인한 고객에 대해 GraphQL 쿼리 결과를 캐시해서는 안 됩니다. 예를 들어 여러 고객 그룹을 만들고 각 그룹에 대해 다른 제품 가격 또는 다른 제품 범주 가시성을 설정할 수 있습니다. 이러한 결과를 캐시하면 고객이 다른 고객 그룹의 가격을 보거나 잘못된 카테고리가 표시될 수 있습니다.
 
@@ -132,6 +134,6 @@ gclid 및 fbclid는 광고를 클릭하는 모든 사용자에 대해 변경되�
 
 ## MPM 작업자 디스패처 제한
 
-MPM 작업자 설정은 Dispatcher의 사용 가능한 CPU 및 RAM을 기반으로 최적화하기 위해 철저한 테스트가 필요한 고급 Apache HTTP 서버 구성입니다. 그러나 이 백서의 범위에서는 ServerLimit 및 MaxRequestWorkers를 서버의 사용 가능한 CPU 및 RAM이 지원하는 수준으로 늘린 다음 MinSpareThreads 및 MaxSpareThreads를 모두 MaxRequestWorkers와 일치하는 수준으로 늘려야 한다고 제안합니다.
+MPM 작업자 설정은 Dispatcher의 사용 가능한 CPU 및 RAM을 기반으로 최적화하기 위해 철저한 테스트가 필요한 고급 Apache HTTP 서버 구성입니다. 그러나 이 백서의 범위에서는 ServerLimit 및 MaxRequestWorkers를 서버의 사용 가능한 CPU와 RAM이 지원하는 수준으로 늘린 다음 MinSpareThreads 및 MaxSpareThreads를 모두 MaxRequestWorkers와 일치하는 수준으로 늘려야 한다고 제안합니다.
 
-이 구성을 사용하면 Apache HTTP가 &quot;전체 준비 설정&quot;에 남게 됩니다. 이는 상당한 RAM 및 여러 CPU 코어를 가진 서버의 고성능 구성입니다. 이 구성은 요청을 처리할 준비가 된 지속적인 오픈 연결을 유지함으로써 Apache HTTP에서 가능한 최상의 응답 시간을 생성하고 플래시 판매 중과 같은 갑작스러운 트래픽 급증에 대한 응답으로 새 프로세스를 생성하는 데 있어 지연을 제거합니다.
+이 구성에서는 상당한 RAM 및 여러 CPU 코어를 가진 서버의 고성능 구성인 &quot;전체 준비 설정&quot;에 Apache HTTP가 남게 됩니다. 이 구성은 요청을 처리할 준비가 된 지속적인 오픈 연결을 유지함으로써 Apache HTTP에서 가능한 최상의 응답 시간을 생성하고 플래시 판매 중과 같은 갑작스러운 트래픽 급증에 대한 응답으로 새 프로세스를 생성하는 데 있어 지연을 제거합니다.

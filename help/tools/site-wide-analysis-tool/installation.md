@@ -2,7 +2,8 @@
 title: 설치 안내서
 description: 이 안내서를 사용하여 설치하십시오. [!DNL Site-Wide Analysis Tool] 웹 사이트용
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 0%
@@ -46,9 +47,10 @@ Adobe Commerce을 온-프레미스에 설치한 경우 인프라에 에이전트
 - 운영 체제
 
    - [!DNL Linux x86-64] 배포(예: ) [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian]및 이와 유사한 것
-   >[!IMPORTANT]
-   >
-   >Adobe Commerce은에서 지원되지 않습니다. [!DNL Microsoft Windows] 또는 [!DNL macOS].
+
+  >[!IMPORTANT]
+  >
+  >Adobe Commerce은에서 지원되지 않습니다. [!DNL Microsoft Windows] 또는 [!DNL macOS].
 
 - Adobe Commerce 2.4.1 이상
 
@@ -192,6 +194,7 @@ bin/magento module:status Magento_ServicesId
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
+
    의 경우 **ARM64** 아키텍처:
 
    1. 런처 아카이브를 다운로드합니다.
@@ -205,7 +208,6 @@ bin/magento module:status Magento_ServicesId
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
-
 
 1. *(선택 사항)* 체크섬 파일의 서명을 확인합니다.
 

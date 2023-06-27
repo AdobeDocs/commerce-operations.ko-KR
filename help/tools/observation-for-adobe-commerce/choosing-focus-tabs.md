@@ -2,7 +2,8 @@
 title: 선택 [!UICONTROL focus] 탭
 description: 을(를) 선택하는 방법 알아보기 [!UICONTROL focus] 문제를 일으키는 영역을 관찰하기 위한 탭입니다.
 exl-id: 6c0a7d81-09cf-49ce-888a-9ecaaad2b7ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%

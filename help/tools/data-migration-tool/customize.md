@@ -2,7 +2,8 @@
 title: 사용자 지정 [!DNL Data Migration Tool]
 description: 을(를) 사용자 지정하는 방법 알아보기 [!DNL Data Migration Tool] 확장에서 만든 데이터를 Magento 1과 Magento 2 간에 전송합니다.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%

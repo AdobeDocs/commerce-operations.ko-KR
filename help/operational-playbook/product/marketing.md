@@ -2,7 +2,8 @@
 title: 마케팅
 description: 전자 상거래 마케팅 캠페인을 통해 제품을 홍보하고 고객을 유치하십시오.
 exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Promotions/Events
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%

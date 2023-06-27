@@ -2,7 +2,8 @@
 title: Commerce 플랫폼 서비스
 description: 호스팅 인프라에 PaaS 솔루션을 사용할 때의 장점과 단점을 검토하여 전자 상거래 프로젝트에 적합한 사항을 결정하십시오.
 exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
