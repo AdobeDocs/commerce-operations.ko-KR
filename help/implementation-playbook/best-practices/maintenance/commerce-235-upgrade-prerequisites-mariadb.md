@@ -2,10 +2,9 @@
 title: Adobe Commerce MariaDB 업그레이드 사전 요구 사항
 description: Adobe Commerce 데이터베이스를 준비하여 이전 버전에서 MariaDB를 업그레이드하는 방법에 대해 알아봅니다.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -88,15 +87,15 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
 
    - 이름 충돌을 방지하기 위해 기존 테이블의 이름을 변경합니다.
 
-      ```mysql
-      RENAME TABLE <existing_table> <table_old>;
-      ```
+     ```mysql
+     RENAME TABLE <existing_table> <table_old>;
+     ```
 
    - 를 사용하는 표 만들기 `InnoDB` 기존 테이블의 데이터를 사용하는 저장소입니다.
 
-      ```mysql
-      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
-      ```
+     ```mysql
+     CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+     ```
 
    - 새 테이블에 모든 필수 데이터가 있는지 확인합니다.
 

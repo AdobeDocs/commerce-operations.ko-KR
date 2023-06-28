@@ -3,9 +3,8 @@ title: 비공개 콘텐츠 블록에 대한 우수 사례
 description: 상점 성능을 최적화하기 위해 개인 콘텐츠 블록을 구성하는 모범 사례에 대해 알아봅니다.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%

@@ -2,10 +2,9 @@
 title: 프로모션 구성에 대한 우수 사례
 description: Commerce 스토어 성과를 최적화하기 위해 판매 규칙 및 쿠폰 코드를 구성하는 모범 사례에 대해 알아봅니다.
 role: User
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Price Rules, Shopping Cart
 exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

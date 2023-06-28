@@ -2,10 +2,9 @@
 title: 보안 사고 예방 및 대응
 description: Adobe Commerce on cloud infrastructure 프로젝트의 보안 사고를 방지하고 대응하기 위한 모범 사례에 대해 알아봅니다.
 role: Admin, Developer, Leader, User
-feature-set: Commerce
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%

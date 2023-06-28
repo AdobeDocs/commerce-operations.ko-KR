@@ -2,7 +2,8 @@
 title: 실행 후 단계
 description: 원활한 Adobe Commerce 사이트 구현을 위해 출시 후 체크리스트를 사용합니다.
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%

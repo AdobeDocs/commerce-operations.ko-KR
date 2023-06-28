@@ -2,7 +2,8 @@
 title: Adobe Commerce 통합 전략
 description: Adobe Commerce 구현을 위한 통합 전략 및 옵션을 검토하십시오.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce 통합 전략
 
-플랫폼을 통합할 수 있는 기능은 &quot;협상 불가&quot; 상태입니다. 기업들은 다양한 접점에서 전자 상거래 플랫폼을 액세스하여 기술 시스템, 특히 ERP에 원활하게 통합되기를 원합니다. 최종 플랫폼 구매에는 맞춤화, 글로벌 확장성 및 경제성도 한 몫을 차지합니다.
+플랫폼을 통합할 수 있는 기능은 &quot;협상 불가&quot;입니다. 기업들은 다양한 접점에서 전자 상거래 플랫폼을 액세스하여 기술 시스템, 특히 ERP에 원활하게 통합되기를 원합니다. 최종 플랫폼 구매에는 맞춤화, 글로벌 확장성 및 경제성도 한 몫을 차지합니다.
 
 상점 및 백엔드 시스템에 대한 전체적인 통합 접근 방식은 성능이 뛰어난 GraphQL API, 포괄적인 REST API 및 Adobe Commerce과 다른 시스템 또는 서비스 간의 배치 파일 가져오기를 통해 지원됩니다.
 

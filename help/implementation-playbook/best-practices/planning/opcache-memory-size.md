@@ -3,9 +3,8 @@ title: OPcache 메모리 크기에 대한 우수 사례
 description: Adobe Commerce 프로젝트에서 특정 OPcache 메모리 사용량 설정에 의한 성능 저하를 방지하는 방법을 설명합니다.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%

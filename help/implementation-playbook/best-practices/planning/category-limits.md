@@ -3,9 +3,8 @@ title: 범주 구성 모범 사례
 description: 카탈로그의 카테고리 수를 제한하여 사이트 성능을 극대화하는 모범 사례에 대해 알아봅니다.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
 exl-id: c6834b32-9ee8-4a4a-932c-9726f3feee3f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: 헤드리스 상거래
 description: Headless Commerce의 의미와 Adobe Commerce이 Headless 아키텍처를 지원하는 방법에 대해 알아봅니다.
 exl-id: acf66714-c10e-4c8b-b7ca-04cb2ca2fcf9
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

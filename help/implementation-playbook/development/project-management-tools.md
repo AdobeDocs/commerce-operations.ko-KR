@@ -2,7 +2,8 @@
 title: 프로젝트 관리 도구
 description: Adobe Commerce 구현에 권장되는 프로젝트 관리 도구를 선택합니다.
 exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: System
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -31,7 +32,7 @@ Jira Service Management는 비즈니스 변화에 대응하고 우수한 고객 
 
 ## 문서 관리
 
-Confluence는 사실상 어디에서나 한 곳에서 작업을 구축하고, 구성하고, 협업할 수 있는 훌륭한 도구입니다. Confluence에는 모범 사례 템플릿이 함께 제공되므로 시간을 절약할 필요가 없습니다. 쉽게 시작하고 팀 및 프로젝트 간 일관성을 유지합니다.
+Confluence는 사실상 어디에서나 한 곳에서 작업을 구축하고, 구성하고, 협업할 수 있는 훌륭한 도구입니다. Confluence에는 모범 사례 템플릿이 포함되어 있으므로 시간을 절약할 필요가 없습니다. 쉽게 시작하고 팀 및 프로젝트 간 일관성을 유지합니다.
 
 ## 티켓 관리
 

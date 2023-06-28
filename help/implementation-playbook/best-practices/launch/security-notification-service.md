@@ -3,9 +3,8 @@ title: Adobe 보안 알림 서비스
 description: Adobe 제품에 대한 최신 보안 업데이트를 받는 방법에 대해 알아봅니다.
 role: User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 9d9521c3-d429-455a-ae28-f49a486eafe0
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 0%

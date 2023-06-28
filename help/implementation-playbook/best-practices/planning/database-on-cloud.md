@@ -2,10 +2,9 @@
 title: 클라우드 배포를 위한 데이터베이스 구성 모범 사례
 description: 클라우드 인프라에 Adobe Commerce을 배포할 때 성능을 개선하기 위해 데이터베이스 및 애플리케이션 설정을 구성하는 방법에 대해 알아봅니다.
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%

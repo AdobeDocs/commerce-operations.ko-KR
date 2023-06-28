@@ -2,10 +2,9 @@
 title: 제품 제한 우수 사례
 description: 사이트 성능을 최대화하기 위해 제품 SKU(Stock Keeping Unit)를 구성하는 모범 사례에 대해 알아봅니다.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

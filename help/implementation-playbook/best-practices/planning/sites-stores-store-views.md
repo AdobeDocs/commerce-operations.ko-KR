@@ -3,9 +3,8 @@ title: 사이트, 스토어 및 스토어 조회수 구성에 대한 우수 사�
 description: 사이트 성능을 극대화하기 위한 사이트, 스토어 및 스토어 보기 구성 모범 사례에 대해 알아봅니다.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -40,7 +39,7 @@ ht-degree: 0%
 웹 사이트 및 저장소는 카탈로그 데이터의 승수이므로, 많은 웹 사이트 및 저장소가 있으면 다음과 같은 방식으로 사이트 성능에 부정적인 영향을 줄 수 있습니다.
 
 - 인덱스 테이블이 클수록 인덱싱 작업을 완료하는 데 필요한 시간이 늘어남 [물가지수].
-- 애플리케이션 구성을 검색하는 시간이 늘어나면 캐시되지 않은 카탈로그 페이지에 대한 storefront 응답 시간이 감소합니다.
+- 애플리케이션 구성 검색 시간이 늘어나면 캐시되지 않은 카탈로그 페이지에 대한 Storefront 응답 시간이 감소합니다.
 - 각 웹 사이트에 대해 데이터가 별도로 저장되므로 관리자에서 저장 작업을 완료하는 데 필요한 시간이 크게 증가합니다.
 
 

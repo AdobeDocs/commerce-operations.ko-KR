@@ -2,7 +2,8 @@
 title: Managed Services
 description: Adobe Commerce on cloud infrastructure 구현에 대한 Adobe 관리 서비스, 고객 및 클라우드 서비스 공급자의 책임을 검토하십시오.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Services
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%

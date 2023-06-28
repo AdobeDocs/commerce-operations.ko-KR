@@ -2,7 +2,8 @@
 title: 구현 프로세스 및 타임라인
 description: 일반적인 Adobe Commerce 구현 타임라인 및 타임라인 활동의 예를 참조하십시오.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

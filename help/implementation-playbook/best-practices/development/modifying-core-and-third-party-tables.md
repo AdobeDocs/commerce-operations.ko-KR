@@ -3,10 +3,9 @@ title: 데이터베이스 테이블 수정 우수 사례
 description: Adobe Commerce 및 타사 데이터베이스 테이블을 수정하는 방법과 시기를 알아봅니다.
 role: Developer, Architect
 feature: Best Practices
-feature-set: Commerce
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1438'
 ht-degree: 0%

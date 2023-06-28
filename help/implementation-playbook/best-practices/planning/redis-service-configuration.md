@@ -2,10 +2,9 @@
 title: Redis 서비스 구성에 대한 우수 사례
 description: Adobe Commerce용 확장된 Redis 캐시 구현을 사용하여 캐싱 성능을 향상시키는 방법에 대해 알아봅니다.
 role: Developer, Admin
-feature-set: Commerce
-feature: Best Practices
+feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -98,6 +97,7 @@ Redis 캐시와 Redis 세션을 분리하면 캐시 문제가 세션에 영향�
 
    >[!NOTE]
    >`disable_locking` 은(는) 로 설정되어야 합니다. `1`.
+   >   
 
    ```yaml
    SESSION_CONFIGURATION:

@@ -2,10 +2,9 @@
 title: 제품 특성 구성 모범 사례
 description: 제품 속성, 속성 옵션 및 속성 세트의 수를 제한하여 Adobe Commerce 성능을 최적화하는 방법에 대해 알아봅니다
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -21,7 +20,6 @@ ht-degree: 0%
    - Adobe Commerce 버전 2.4.2 이상의 경우 최대 1500개의 제품 속성을 구성합니다
 - **제품 속성 옵션**-각 속성에 대해 최대 100개의 속성 옵션 구성
 - **제품 속성 집합**-최대 1000개의 속성 세트 구성 _
-
 >[!NOTE]
 >
 >제품 속성은 모든 제품에 전역적으로 적용되는 기능을 지정합니다. 제품 속성 옵션은 특정 제품에 적용되는 기능을 지정하는 사용자 정의입니다.

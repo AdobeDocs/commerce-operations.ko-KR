@@ -2,7 +2,8 @@
 title: 요구 사항 확인 목록
 description: 이 포괄적인 질문 목록을 사용하여 Adobe Commerce 구현을 준비하는 데 도움이 됩니다.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -285,7 +286,7 @@ ht-degree: 0%
 
 - 보상 포인트
 
-- &quot;나중에 청구&quot; - 일반적으로 &quot;지금 구입, 나중에 지불&quot;이라고 합니다. 즉시 청구되지만 아직 지불되지 않았습니다.
+- &quot;나중에 청구하기&quot; - 일반적으로 &quot;지금 구입, 나중에 지불&quot;이라고 합니다. 즉시 청구되지만 아직 지불되지 않았기 때문입니다.
 
 - 웹 사이트마다 제품 가격이 다릅니까?
 

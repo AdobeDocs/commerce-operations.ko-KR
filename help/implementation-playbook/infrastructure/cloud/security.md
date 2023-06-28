@@ -2,7 +2,8 @@
 title: 클라우드 인프라 보안
 description: 클라우드 인프라에서 Adobe Commerce을 안전하게 유지하는 방법에 대해 알아봅니다.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
+feature: Cloud, Security
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Adobe Commerce Pro 플랜 아키텍처는 매우 안전한 환경을 제공하�
 
 ## 웹 브라우저
 
-클라우드 환경으로 들어오고 나가는 트래픽의 대부분은 소비자의 웹 브라우저에서 발생합니다. 소비자 트래픽은 웹 사이트의 모든 페이지에 대해 HTTPS를 사용하여 보안을 설정할 수 있습니다(추가 요금으로 공유 SSL 인증 또는 고객 고유의 SSL 인증서 사용). 체크아웃 및 계정 페이지는 항상 HTTPS를 사용하여 제공됩니다. 가장 좋은 방법은 HTTPS에서 모든 페이지를 제공하는 것입니다.
+클라우드 환경으로 들어오고 나가는 트래픽의 대부분은 소비자의 웹 브라우저에서 발생합니다. 소비자 트래픽은 웹 사이트의 모든 페이지에 대해 HTTPS를 사용하여 보호할 수 있습니다(추가 요금으로 공유 SSL 인증 또는 고객 고유의 SSL 인증서 사용). 체크아웃 및 계정 페이지는 항상 HTTPS를 사용하여 제공됩니다. 가장 좋은 방법은 HTTPS에서 모든 페이지를 제공하는 것입니다.
 
 ## CDN(콘텐츠 전달 네트워크)
 
@@ -25,7 +26,7 @@ Fastly는 CDN 및 DDoS(Distributed Denial of Service) 보호를 제공합니다.
 
 Fastly Web Application Firewall(WAF) 은 추가적인 보호를 제공하는 데 사용됩니다. Fastly의 클라우드 기반 WAF는 OWASP 핵심 규칙 세트와 같은 상용 및 오픈 소스 소스의 타사 규칙을 사용합니다. 또한 Adobe Commerce 관련 규칙이 사용됩니다. 주입 공격과 악의적인 입력, 교차 사이트 스크립팅, 데이터 내보내기, HTTP 프로토콜 위반 및 기타 OWASP Top 10 위협을 포함한 주요 애플리케이션 계층 공격으로부터 고객을 보호합니다.
 
-WAF 규칙은 Adobe Commerce에서 소프트웨어 패치 전에 Managed Services에서 보안 문제를 &quot;가상으로 패치&quot;할 수 있는 새로운 취약점을 감지해야 하기 때문에 업데이트됩니다. Fastly WAF는 속도 제한 또는 봇 탐지 서비스를 제공하지 않습니다. 원하는 경우 고객은 Fastly와 호환되는 서드파티 봇 탐지 서비스에 라이선스를 부여할 수 있습니다.
+WAF 규칙은 Adobe Commerce이 소프트웨어 패치 전에 Managed Services에서 보안 문제를 &quot;가상으로 패치&quot;할 수 있는 새로운 취약점을 감지해야 하기 때문에 업데이트됩니다. Fastly WAF는 속도 제한 또는 봇 탐지 서비스를 제공하지 않습니다. 원하는 경우 고객은 Fastly와 호환되는 서드파티 봇 탐지 서비스에 라이선스를 부여할 수 있습니다.
 
 ## Virtual Private Cloud(VPC)
 

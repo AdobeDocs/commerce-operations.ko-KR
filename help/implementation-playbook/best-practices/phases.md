@@ -2,7 +2,8 @@
 title: 구현 단계
 description: Adobe Commerce 프로젝트의 구현 단계에 대한 모범 사례에 대해 알아봅니다.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Adobe Commerce 프로젝트를 구현하는 방법에는 여러 가지가 있습니다. 이 섹션에 제공된 모범 사례에서는 Adobe이 고객과 파트너가 특정 사용 사례를 구현할 것으로 기대하는 방법을 설명합니다. 이러한 권장 사항은 사이트 구성 및 사용자 지정, 배포, 작업, 성능 및 업그레이드와 관련된 일반적인 문제와 잠재적 문제를 방지하는 데 도움이 되도록 설계되었습니다.
 
-이러한 우수 사례는 구현 단계별로 정리되므로 사용 사례에 적용되는 권장 사항을 찾을 수 있습니다.
+이러한 모범 사례는 구현 단계별로 구성되어 있으므로 사용 사례에 적용되는 권장 사항을 찾을 수 있습니다.
 
 <table style="table-layout:fixed">
 <tr>

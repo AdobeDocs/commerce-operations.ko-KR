@@ -3,9 +3,8 @@ title: 감사 프론트엔드 성능
 description: 웹 성능 도구를 사용하여 Adobe Commerce 상점 운영을 감사함으로써 사이트 성능에 부정적인 영향을 미치는 문제를 식별하고 해결합니다.
 role: Admin, User, Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%

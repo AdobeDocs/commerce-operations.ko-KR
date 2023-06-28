@@ -2,7 +2,8 @@
 title: 클라우드 인프라 개요
 description: 클라우드 인프라의 Adobe Commerce에 대해 알아봅니다.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%

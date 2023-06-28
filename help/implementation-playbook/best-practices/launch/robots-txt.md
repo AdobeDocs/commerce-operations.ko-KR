@@ -2,10 +2,9 @@
 title: '''robots.txt'' 및 ''sitemap.xml'' 파일 구성 우수 사례'
 description: Adobe Commerce 사이트에 대한 지침을 웹 크롤러에 전달하는 방법을 알아봅니다.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -38,27 +37,27 @@ ht-degree: 0%
 - 프로젝트가 다음을 사용하고 있는지 확인합니다. [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) 버전 2002.0.12 이상
 - 관리 애플리케이션을 사용하여에 콘텐츠를 추가합니다. `robots.txt` 파일.
 
-   >[!TIP]
-   >
-   >자동 생성 보기 `robots.txt` 다음 위치에 저장소용 파일: `<domain.your.project>/robots.txt`.
+  >[!TIP]
+  >
+  >자동 생성 보기 `robots.txt` 다음 위치에 저장소용 파일: `<domain.your.project>/robots.txt`.
 
 - 관리 애플리케이션을 사용하여 다음을 생성합니다. `sitemap.xml` 파일.
 
-   >[!IMPORTANT]
-   >
-   >클라우드 인프라 프로젝트의 Adobe Commerce에서 읽기 전용 파일 시스템으로 인해 `pub/media` 파일을 생성하기 전 경로입니다.
+  >[!IMPORTANT]
+  >
+  >클라우드 인프라 프로젝트의 Adobe Commerce에서 읽기 전용 파일 시스템으로 인해 `pub/media` 파일을 생성하기 전 경로입니다.
 
 - 사용자 지정 Fastly VCL 코드 조각을 사용하여 사이트 루트에서 `pub/media/` 두 파일의 위치:
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
+  }
+  ```
 
 - 웹 브라우저에서 파일을 보고 리디렉션을 테스트합니다. 예를 들어, `<domain.your.project>/robots.txt` 및 `<domain.your.project>/sitemap.xml`. 다른 경로가 아닌 리디렉션을 구성한 루트 경로를 사용하고 있는지 확인하십시오.
 
@@ -81,15 +80,15 @@ ht-degree: 0%
 
 - 사이트 루트에서 로 리디렉션하려면 약간 수정된 사용자 지정 Fastly VCL 코드 조각을 사용하십시오. `pub/media` 사이트에서 두 파일의 위치:
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
+  }
+  ```
 
 ## Adobe Commerce 온-프레미스
 

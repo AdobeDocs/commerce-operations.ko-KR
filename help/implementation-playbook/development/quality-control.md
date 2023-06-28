@@ -2,7 +2,8 @@
 title: 품질 관리
 description: 구현 프로젝트와 관련된 Adobe Commerce 품질 관리 프로세스에 대해 알아봅니다.
 exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Build
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%

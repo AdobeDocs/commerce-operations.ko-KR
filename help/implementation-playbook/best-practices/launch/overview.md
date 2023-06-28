@@ -2,7 +2,8 @@
 title: 구현 시작 단계
 description: Adobe Commerce 프로젝트의 시작 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%

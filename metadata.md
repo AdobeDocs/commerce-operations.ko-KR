@@ -1,15 +1,18 @@
 ---
-product: magento
+cloud: Experience Cloud
 description: Adobe Commerce 운영 안내서
+feature-set: Commerce
 git-repo: https://github.com/AdobeDocs/commerce-operations.ko-KR
 index: true
+level: Experienced
 mini-toc-levels: 2
-feature-set: Commerce
-type: Documentation
-cloud: Experience Cloud
-solution-title: Commerce
+product: magento
+role: Admin, Developer
 solution: Commerce
-source-git-commit: a45baaede0cce30f98a7d988af804e2b5108fdf8
+solution-title: Commerce
+topic: Administration, Commerce, Development
+type: Documentation
+source-git-commit: aaca7ead9923b676718f6e371caa797d6c0d412f
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%

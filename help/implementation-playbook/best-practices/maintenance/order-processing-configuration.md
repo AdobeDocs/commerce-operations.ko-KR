@@ -3,9 +3,8 @@ title: 주문 처리를 위한 구성 모범 사례
 description: 체크아웃 및 주문 처리 성능을 개선하기 위한 구성 모범 사례에 대해 알아봅니다.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -33,17 +32,17 @@ ht-degree: 0%
 
 - 프로덕션 모드의 Adobe Commerce 온 클라우드 인프라 및 온프레미스 사이트의 경우 다음 Magento CLI 명령을 사용하여 비동기 인덱싱을 활성화합니다.
 
-   ```php
-   php bin/magento config:set dev/grid/async_indexing 1
-   ```
+  ```php
+  php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
 - 기본 또는 프로덕션 모드의 Adobe Commerce 온-프레미스 사이트의 경우 관리에서 그리드 설정 구성을 업데이트하여 비동기 인덱싱을 활성화합니다.
 
-   다음을 참조하십시오 [예약된 그리드 업데이트 및 리인덱싱 활성화](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  다음을 참조하십시오 [예약된 그리드 업데이트 및 리인덱싱 활성화](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
-   >[!WARNING]
-   >
-   >프로덕션 환경을 업데이트하기 전에 항상 스테이징 환경에서 구성 변경 사항을 테스트하십시오.
+  >[!WARNING]
+  >
+  >프로덕션 환경을 업데이트하기 전에 항상 스테이징 환경에서 구성 변경 사항을 테스트하십시오.
 
 ## 추가 정보
 
