@@ -1,7 +1,7 @@
 ---
-source-git-commit: 36ebf825705e3ffb26d595d39df8339ab1ca3c6f
+source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2023년 6월 23일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 업데이트함 <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">시스템 요구 사항</a> 페이지의 <em>설치 안내서</em> Cloud와 온-프레미스 종속성 간을 전환할 수 있는 탭이 있습니다.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3d56a01b91a71b1c615a28588e726f0b9e58abb0">3d56a0</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 6월 13일
 
@@ -22,6 +42,12 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>2023년 6월 릴리스 추가 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">릴리스된 버전</a>.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d7329c2496f4d322a83ec6bcf71ef956f4284c3">8d7329</a> (커밋)</td>
+    </tr>
     <tr>
       <td><p>Beta에 대해 다음 문서를 추가했습니다.<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI(온-프레미스, 베타)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open Source CLI(베타)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerce 패키지(베타)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Adobe Commerce용 클라우드 패키지(베타)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Source 패키지(베타)</a></p>
 </td>
