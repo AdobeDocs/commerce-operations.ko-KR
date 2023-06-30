@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
+source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
 workflow-type: tm+mt
-source-wordcount: '12912'
+source-wordcount: '13230'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.34 {#v1-1-34}
+
+* **ACSD-52277** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - Admin에서 새 주문을 만들 때 스토어 보기를 선택한 후 관리자 사용자가 제대로 리디렉션되지 않는 문제를 해결했습니다.
+* **ACSD-50813** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 관리자가 SKU에서 [!UICONTROL Add Products by SKU] 관리 순서에 대한 기능입니다.
+* **ACSD-51630** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 대량의 시스템 메시지가 관리 페이지의 다운로드를 지연시키는 문제를 해결합니다.
+* **ACSD-51853** (Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.7) - 를 사용할 때 복사된 텍스트 스타일이 적용되지 않는 문제를 해결합니다. [!UICONTROL Page Builder].
+* **ACSD-52160** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 규칙 조건 &#39;이 모든 조건 중 하나/하나가 참인 장바구니에서 항목을 찾을 수 없음/찾을 수 없음&#39;을 기반으로 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 제대로 평가되지 않는 문제를 수정합니다.
+* **ACSD-51636** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 필요한 모든 역할과 권한이 있음에도 불구하고 회사 관리자가 고객 계정 섹션에서 새 사용자를 추가할 수 없는 문제를 해결했습니다.
+* **ACSD-51739** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 다음과 같은 경우 오류가 반환되는 문제가 해결됩니다. `structure_id` 은(는) CompanyTeam GraphQL 요청에서 요청됩니다.
+* **ACSD-51857** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 의 성능이 저하되는 문제가 해결되었습니다. `aggregate_sales_report_bestsellers_data` 큰 sales_order에 대한 cron 보고서 및 `sales_order_item` 데이터베이스 테이블은 기본 데이터 쿼리가 작성된 방식 때문이었습니다.
+* **ACSD-48448** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 주문 취소 중에 경합 조건 문제가 발생하여 `inventory_reservation` 테이블.
+* **ACSD-52689** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.6) - REST API를 사용하여 이미지를 Amazon S3 스토리지에 업로드할 수 없는 문제를 해결했습니다.
+* **B2B-2674** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 1customAttributeMetadata1 GraphQL 쿼리에 캐싱 기능을 추가합니다.
+* ACSD-44938용 새 버전이 추가되었습니다.
+* ACSD-46988에 대한 요구 사항이 추가되었습니다.
 
 ## v1.1.33 {#v1-1-33}
 
@@ -211,7 +227,7 @@ ht-degree: 0%
 
 * **ACSD-46809** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - 많은 수의 제품 소스를 할당할 때 사용자에게 오류가 발생하는 문제를 수정합니다.
 * **ACSD-46856** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 시스템 > 구성 > 가져오기 > 고급 가격을 통해 계층 가격 업데이트 성능을 개선합니다.
-* **ACSD-46541** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - 주문 항목이 삭제될 경우 관리 사용자가 대변 메모를 만들 수 없는 문제를 수정합니다.
+* **ACSD-46541** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - 주문 항목이 삭제될 경우 관리자가 대변 메모를 만들 수 없는 문제를 해결했습니다.
 * **ACSD-46581** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 장바구니에서 국가를 선택한 후 예상 총 세액이 업데이트되지 않는 문제를 수정합니다.
 * **ACSD-46618** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 로그인한 고객에 대해 제품 목록 위젯에 잘못된 캐시된 가격이 표시되는 문제를 수정합니다.
 * **ACSD-46674** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 고객 이메일에서 이미지 유형의 사용자 지정 옵션이 HTML으로 표시되는 문제를 수정합니다.
