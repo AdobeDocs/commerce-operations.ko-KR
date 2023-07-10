@@ -2,9 +2,9 @@
 title: 캐시 관리
 description: 캐시 유형을 관리하고 캐시 상태를 확인합니다.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -119,15 +119,19 @@ bin/magento cache:disable db_ddl full_page
 
 ## 캐시 유형 정리 및 플러시
 
+>[!NOTE]
+>
+>여러 페이지 캐시를 동시에 자동으로 무효화할 수 있습니다. **_없이_** 이러한 엔티티는 편집 중입니다. 예를 들어, 카탈로그의 제품이 어떤 범주에 할당되거나 [!UICONTROL related product rule] 이(가) 수정되었습니다.
+
 캐시에서 오래된 항목을 제거하려면 _clean_ 또는 _플러시_ 캐시 유형:
 
 - 캐시 유형을 정리하면 활성화된 Commerce 캐시 유형에서만 모든 항목이 삭제됩니다. 즉, 이 옵션은 Commerce에서 사용하는 캐시만 정리하므로 다른 프로세스나 애플리케이션에는 영향을 주지 않습니다.
 
-   비활성화된 캐시 유형은 정리되지 않습니다.
+  비활성화된 캐시 유형은 정리되지 않습니다.
 
-   >[!TIP]
-   >
-   >Magento Open Source 또는 Adobe Commerce 버전을 업그레이드하거나, Magento Open Source에서 Adobe Commerce으로 업그레이드하거나, Adobe Commerce용 B2B 또는 임의의 모듈을 설치한 후 항상 캐시를 정리하십시오.
+  >[!TIP]
+  >
+  >Magento Open Source 또는 Adobe Commerce 버전을 업그레이드하거나, Magento Open Source에서 Adobe Commerce으로 업그레이드하거나, Adobe Commerce용 B2B 또는 임의의 모듈을 설치한 후 항상 캐시를 정리하십시오.
 
 - 캐시 유형을 플러시하면 캐시 저장소가 지워지므로 동일한 저장소를 사용하는 다른 프로세스 애플리케이션에 영향을 줄 수 있습니다.
 
