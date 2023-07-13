@@ -1,15 +1,15 @@
 ---
-source-git-commit: 835978334ed5b481744b8eb8d28716e3b41826db
+source-git-commit: 760e03cbeebbd7b457703e224093c233f7b6bab3
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 86%
+source-wordcount: '284'
+ht-degree: 87%
 
 ---
 # 시스템 요구 사항
 
 >[!NOTE]
 >
-><sup>*</sup>버전 2.4.5 및 이전 버전은 MySQL 8.0.28 및 이전 버전만 지원합니다.
+><sup>*</sup>버전 2.4.4 및 2.4.5는 MySQL 8.0.0에서 8.0.28까지만 지원합니다.
 
 <table style="table-layout:auto">
   <thead>
@@ -278,9 +278,6 @@ ht-degree: 86%
             8.0
       </td>
       <td>
-            8.0
-      </td>
-      <td>
             8.0*
       </td>
       <td>
@@ -290,7 +287,10 @@ ht-degree: 86%
             8.0*
       </td>
       <td>
-            8.0
+            8.0*
+      </td>
+      <td>
+            8.0*
       </td>
       <td>
             8.0*
