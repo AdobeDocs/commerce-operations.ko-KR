@@ -1,7 +1,7 @@
 ---
-source-git-commit: e790327231f6d6ad97a03460f361e5fb63b27a37
+source-git-commit: 835978334ed5b481744b8eb8d28716e3b41826db
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 86%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
-><sup>*</sup>Adobe Commerce 2.4.5 및 이전 버전은 MySQL 8.0.28 및 이전 버전만 지원합니다.
+><sup>*</sup>버전 2.4.5 및 이전 버전은 MySQL 8.0.28 및 이전 버전만 지원합니다.
 
 <table style="table-layout:auto">
   <thead>
