@@ -3,9 +3,9 @@ title: 설치 안내서
 description: 이 안내서를 사용하여 설치하십시오. [!DNL Site-Wide Analysis Tool] 웹 사이트용
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 163d12b1f30a3098932c62e11f24784422002c67
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Adobe Commerce을 온-프레미스에 설치한 경우 인프라에 에이전트
   >
   >Adobe Commerce은에서 지원되지 않습니다. [!DNL Microsoft Windows] 또는 [!DNL macOS].
 
-- Adobe Commerce 2.4.1 이상
+- Adobe Commerce 2.4.5-p1 이상(서비스 커넥터의 종속성으로 인해)
 
 - [!DNL Commerce Services Connector extension]
 
