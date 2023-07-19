@@ -2,9 +2,9 @@
 title: 관리자에서 여러 웹 사이트, 스토어 및 스토어 보기 설정
 description: Commerce 관리에서 추가 웹 사이트, 스토어 및 스토어 보기를 구성합니다.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5860f5327003372909c425c13c6d03166288d903
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -172,3 +172,8 @@ Commerce는 사이트 기본 URL에 스토어 코드를 추가할 수 있는 옵
    >클라우드 인프라에서 Adobe Commerce에 대한 기본 URL을 설정하는 경우 첫 번째 기간을 세 개의 대시로 바꾸어야 합니다. 예를 들어 기본 URL이 `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, 입력 `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. 클릭 **구성 저장**.
+
+
+>[!INFO]
+>
+>웹 사이트, 스토어 및 스토어 보기 코드에는 문자(a-z 또는 A-Z), 숫자(0-9) 및 밑줄(_)만 포함될 수 있습니다. 또한 첫 번째 문자는 문자여야 합니다. 대문자 또는 대소문자를 사용하는 경우 환경 변수를 통해 구성 설정을 재정의할 수 있도록 내부적으로 일치 항목이 대소문자를 구분하지 않습니다. 다음을 참조하십시오 [환경 변수를 사용하여 구성 설정을 재정의합니다.](../reference/override-config-settings.md#environment-variables).

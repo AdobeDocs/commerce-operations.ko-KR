@@ -2,9 +2,9 @@
 title: 구성 값 설정
 description: 구성 값을 설정하고 관리자에서 잠긴 값을 변경하는 방법을 알아봅니다.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 - 구성 경로
 - 특정 범위에 대한 구성 값을 설정하려면 범위 코드를 알고 있어야 합니다.
 
-   기본 범위에 대한 구성 값을 설정하려면 아무 작업도 수행하지 않아도 됩니다.
+  기본 범위에 대한 구성 값을 설정하려면 아무 작업도 수행하지 않아도 됩니다.
 
 ### 구성 경로 찾기
 
@@ -289,3 +289,8 @@ bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_ur
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>범위 코드에는 문자(a-z 또는 A-Z), 숫자(0-9) 및 밑줄(_)만 포함될 수 있습니다. 또한 첫 번째 문자는 문자여야 합니다. 새 웹 사이트 또는 스토어 보기를 만들 때 대문자 또는 대소문자를 사용하는 경우, 환경 변수를 통해 구성 설정을 재정의할 수 있도록 내부적으로 일치 항목이 대소문자를 구분하지 않습니다. 다음을 참조하십시오 [환경 변수를 사용하여 구성 설정을 재정의합니다.](../reference/override-config-settings.md#environment-variables).
+
