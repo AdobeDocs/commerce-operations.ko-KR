@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 체크아웃 배송 단계의 기본 배송 주소가 이전에 선택한 매장 픽업 주소로 자동 채워지는 문제를 수정합니다.
+* **ACSD-52041** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 오류 메시지가 표시되는 문제를 수정합니다. *[오류] [!DNL Page Builder] 은(는) 잠금을 해제하지 않고 5초 동안 렌더링했습니다.* 을 사용하여 편집한 컨텐츠를 저장할 때 Chrome 브라우저에 표시 [!DNL Page Builder].
+* **ACSD-52095** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.6) - 다음과 같은 문제를 수정합니다. `manage_stock` 제품 내보내기 후 CSV 파일에서 값이 0으로 잘못 설정되었습니다.
+* **ACSD-51358** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 종료 날짜 없이 예약된 업데이트를 제거하면 동일한 엔터티에 대해 다른 예약된 업데이트가 제거되는 문제가 해결됩니다.
+* **ACSD-48070** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 예약된 업데이트를 편집하면 예외가 트리거되는 문제가 해결됩니다.
+* **ACSD-51890** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. [!UICONTROL Submit review] 단추를 여러 번 클릭할 수 있음 [!DNL Google reCAPTCHA] v3 유효성 검사.
+* **ACSD-51984** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 선택 취소되는 문제가 해결되었습니다. *[!UICONTROL Use Default Value]* 및 *[!UICONTROL non-default product field]* 두 번째 웹 사이트, 스토어 및 스토어 보기에 대한 값은 저장되지 않습니다.
+* **ACSD-52398** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 오류를 수정합니다. *요청한 수량을 사용할 수 없습니다.* 이 문제는 상점 앞의 장바구니에 있는 번들 제품의 수량을 업데이트하려고 할 때 발생합니다.
+* **ACSD-52786** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 카탈로그 규칙 조건이 발생하는 문제를 수정합니다. *SKU:* 은 제공된 SKU로 시작하는 모든 제품에 적용됩니다.
+* **ACSD-52921** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 장바구니에 품절 구성 가능한 제품이 있을 때 GraphQL에서 장바구니 세부 정보를 요청할 때 내부 오류가 발생하는 문제를 수정합니다.
+* **ACSD-51683** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 사용자 지정 가능한 옵션을 GraphQL을 사용하여 장바구니에 추가할 수 없는 문제를 해결했습니다.
+* **ACSD-52133** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 업그레이드 후 고객 계정을 저장할 수 없는 문제를 수정합니다.
+* **ACSD-52202** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 주문 이행 시 기본이 아닌 재고가 0으로 변경되면 기본 재고의 판매 가능 수량이 0으로 잘못 변경되는 문제가 해결됩니다.
+* **ACSD-51265** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 문제 해결 `catalog_product_price` 시스템에 번들 제품이 너무 많을 때 성능 리인덱싱
+* **ACSD-52831** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 다음과 같은 경우 고객이 협상 가능한 견적 주문을 할 수 없는 문제를 수정합니다. [!DNL Google reCAPTCHA v3 Invisible] 이(가) 활성화되었습니다.
+* **ACSD-51845** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 계층 가격과 다른 속성 세트가 있는 후속 제품을 비동기 대량 REST API를 통해 업데이트할 수 없는 문제를 수정합니다.
+* **ACSD-52815** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 기본 재고의 경우 8과 달리, 기본값이 아닌 출처의 수량 필드에 대한 입력이 최대 6자리를 지원하는 문제를 수정합니다.
+* **ACSD-51149** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 카탈로그 권한이 활성화된 예약된 ImportExport가 인덱서를 무효화한 다음 cron을 통해 캐시 플러시를 활성화하는 문제가 수정되었습니다.
+* **ACSD-50815** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 단순 제품의 십진수 수량을 새 번들 제품 옵션에 사용할 수 없는 문제를 수정합니다.
+* ACSD-47803용 버전이 업데이트되었습니다.
+* ACSD-51892의 제목을 업데이트했습니다.
+* ACSD-51379이 업데이트되었습니다.
+* ACSD-49970-v2를 업데이트했습니다.
 
 ## v1.1.34 {#v1-1-34}
 
