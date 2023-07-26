@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
+source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
 workflow-type: tm+mt
-source-wordcount: '13737'
+source-wordcount: '13735'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-51907** (Adobe Commerce >=2.4.2 &lt;2.4.3) - 제한된 관리 사용자가 오프라인 환불로 대변 메모를 만들 수 없는 문제를 해결했습니다.
 * **ACSD-52148** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - 다음과 같은 문제를 수정합니다. [!DNL Google V3 reCAPTCHA] 관리자 로그인이 가끔 실패했습니다.
 * **ACSD-51431** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 인덱서 상태가 인 문제를 수정합니다. *작업 중* 변경 로그에 새 항목이 없더라도
-* **ACSD-51892** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 배포 중에 구성 파일이 여러 번 로드되는 성능 문제를 수정합니다.
+* **ACSD-51892** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 구성 파일이 여러 번 로드되는 성능 문제를 수정합니다.
 * 사용되지 않는 ACSD-51114.
 
 ## v1.1.32 {#v1-1-32}
@@ -253,7 +253,7 @@ ht-degree: 0%
 
 * **ACSD-46809** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - 많은 수의 제품 소스를 할당할 때 사용자에게 오류가 발생하는 문제를 수정합니다.
 * **ACSD-46856** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 시스템 > 구성 > 가져오기 > 고급 가격을 통해 계층 가격 업데이트 성능을 개선합니다.
-* **ACSD-46541** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - 주문 항목이 삭제될 경우 관리자가 대변 메모를 만들 수 없는 문제를 해결했습니다.
+* **ACSD-46541** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - 주문 항목이 삭제될 경우 관리 사용자가 대변 메모를 만들 수 없는 문제를 수정합니다.
 * **ACSD-46581** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 장바구니에서 국가를 선택한 후 예상 총 세액이 업데이트되지 않는 문제를 수정합니다.
 * **ACSD-46618** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 로그인한 고객에 대해 제품 목록 위젯에 잘못된 캐시된 가격이 표시되는 문제를 수정합니다.
 * **ACSD-46674** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 고객 이메일에서 이미지 유형의 사용자 지정 옵션이 HTML으로 표시되는 문제를 수정합니다.
@@ -385,7 +385,7 @@ ht-degree: 0%
 * **MDVA-41350** (*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5의 경우*) - 제한된 액세스 권한을 가진 관리자가 SKU로 역할 범위를 벗어난 제품을 주문에 추가하면 예외가 throw되는 문제를 수정합니다.
 * **MDVA-42269** (*Adobe Commerce 및 Magento Open Source >=2.4.3-p1 &lt;2.4.5*) - 다음과 같은 이유로 관리자가 관리자에 로그인할 수 없는 문제가 해결됩니다. *TypeError: strtotime()에서는 매개 변수 1이 문자열이어야 하고 null이 주어져야 합니다.* 오류.
 * **MDVA-40830** (*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5의 경우*) - 주문 배치 중에 스토어 크레딧이 여러 번 적용되는 문제를 수정합니다.
-* **MDVA-42237** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.5*) - 하위 제품 가격이 변경된 후 구성 가능한 제품 특별 가격이 업데이트되지 않는 문제를 수정합니다.
+* **MDVA-42237** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.5*) - 하위 제품 가격이 변경된 후 구성 가능한 제품 특별 가격이 업데이트되지 않는 문제를 해결합니다.
 * **MDVA-42520** (*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 다음과 같은 경우 세율이 두 번 적용되는 문제를 수정합니다. *국경 간 무역 사용* 를 사용합니다.
 * 업데이트된 패치: MDVA-27239, MDVA-39305, MDVA-41236, MDVA-36832.
 * 사용되지 않는 패치: MDVA-37725.
@@ -505,7 +505,7 @@ ht-degree: 0%
 * **MDVA-36021** (*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4의 경우*) - 다음과 같은 문제가 해결되었습니다. *멤버 함수 getId() 호출* 관리자의 주문 세부 사항 페이지에 오류가 표시됩니다.
 * **MDVA-34948** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.6 &lt;=2.3.6-p1 || >=2.4.0 &lt;=2.4.0-p1*) - 다음과 같이 오래 실행되는 쿼리의 문제를 수정합니다. `GET_LOCK`.
 * **MDVA-39305** (*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;=2.4.2-p1의 경우*) - 등록된 고객이 활성화된 Google ReCaptcha로 로그인할 수 없는 문제가 수정되었습니다.
-* **MDVA-37897** (*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.4의 경우*) - 고객이 최근에 본 위젯의 옵션이 있는 제품을 추가하려고 할 때 잘못된 리디렉션으로 문제를 수정합니다.
+* **MDVA-37897** (*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.4의 경우*) - 고객이 최근에 본 위젯의 옵션을 사용하여 제품을 추가하려고 할 때 잘못된 리디렉션 문제가 수정됩니다.
 
 ## v1.1.0 {#v1-1-0}
 
