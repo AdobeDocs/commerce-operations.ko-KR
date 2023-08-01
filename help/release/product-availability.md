@@ -2,7 +2,7 @@
 title: 제품 가용성
 description: 현재 지원되는 Adobe Commerce 기능에 대해 알아보고 특정 Adobe Commerce 릴리스와의 호환성을 확인합니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: ca9b786cdaa8b2122d94c24b9edad02d43128c42
+source-git-commit: 376c236f6bd4979daf896e1a49d7c6092a1c2661
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 10%
@@ -26,7 +26,7 @@ ht-degree: 10%
 | **Adobe Commerce 버전** | 2.4.7-베타1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
 |-|-|-|-|-|-|-|
 | _Adobe Commerce에 대한 이벤트 Adobe I/O_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [작성기](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[릴리스 정보](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| _B2B_ | 1.3.5 | 1.4.0 | 1.3.4 | 1.3.3 | 1.3.2 | [작성기](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _B2B_ | 1.4.0 | 1.3.5 | 1.3.4 | 1.3.3 | 1.3.2 | [작성기](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
 | _채널 관리자_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Amazon Sales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platform 커넥터_ | 3.0.0-Beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
