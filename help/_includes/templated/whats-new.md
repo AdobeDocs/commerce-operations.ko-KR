@@ -1,7 +1,7 @@
 ---
-source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
+source-git-commit: 2c196e0a0522dc12cc53fdad4ffec66f8e1f6e22
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,86 @@ ht-degree: 0%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2023년 7월 27일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>재설계 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">제품 가용성</a> 레이아웃 및 가독성을 개선하기 위한 페이지입니다.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ed2a3e42cd0b85aae29652b8e36acbbda1b9e72">6ed2a3</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 7월 25일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.35 QPT(Quality Patches Tool) 패키지 릴리스의 경우.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac0f04b7a04c5c7d3b3880b8231ffece05718558">ac0f04</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 7월 11일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce의 단계적 판매 규칙 레이블에 영향을 주는 새로운 알려진 문제에 대한 설명을 추가했습니다 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5</a> 및 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9e833dad884fa6146bb5e6ce6dd5ebcb23208b80">9e833d</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
+
+### 2023년 6월 30일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.34 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9fcbc03a1b52f8aad35f2347868b266228264fad">9fcbc0</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 6월 23일
 
@@ -129,66 +209,6 @@ ht-degree: 0%
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/051fe7707cef593027bcff93ae39adfc5cf1af3c">051fe7</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023년 5월 25일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>을(를) 추가함 <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html"><code class="language-plaintext highlighter-rouge">bin/uct</code> CLI 참조</a>.</p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d00e8cb4ebce9cbda0218ef75f44d2ff0ec45bad">d00e8c</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023년 5월 12일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>에 인프라 세부 정보가 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html">성능 벤치마크</a>.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/762bc2b9bdd19d92707525044a4178b6e89e4a3d">762bc2</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023년 5월 4일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.31 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7f30857b612d027dfce26fac1f947006f28ecfa6">7f3085</a> (커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
