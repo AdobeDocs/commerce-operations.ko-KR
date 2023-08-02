@@ -3,9 +3,9 @@ title: 보안을 향상하도록 docroot 수정
 description: Adobe Commerce 또는 Magento Open Source 온-프레미스 파일 시스템에 대한 무단 브라우저 기반 액세스를 차단합니다.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ server {
 
 ## 시작하기 전에
 
-이 자습서를 완료하려면 [램프](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) 스택:
+이 자습서를 완료하려면 LAMP 스택에서 실행되는 작업 설치에 액세스해야 합니다.
 
 - 리눅스
 - Apache (2.4+)
