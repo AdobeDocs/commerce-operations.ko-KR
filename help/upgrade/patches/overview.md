@@ -2,9 +2,9 @@
 title: 패치 작동 방식
 description: Adobe Commerce 및 Magento Open Source에 대한 다양한 유형의 패치와 그 작동 방식에 대해 알아봅니다.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 Adobe 엔지니어링 팀이 Adobe Commerce 또는 Magento Open Source 작성기 릴리스의 GitHub에서 버그 수정을 포함하는 데 시간이 걸릴 수 있습니다. 그동안 GitHub에서 패치를 만들고 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 작성기 기반 설치에 적용할 플러그인입니다.
 
-사용 [명령줄] 또는 [작성기] 사용자 지정 패치를 적용합니다.
+사용 [명령줄](apply.md#command-line) 또는 [작성기](apply.md#composer) 사용자 지정 패치를 적용합니다.
 
 사용자 지정 패치 파일을 만드는 방법은 여러 가지가 있습니다. 다음 예제는 알려진 git 커밋에서 패치를 만드는 데 중점을 둡니다.
 
@@ -96,4 +96,4 @@ index c8a6fef58d31..7d01c195791e 100644
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure 프로젝트에 패치를 적용하려면 다음을 참조하십시오. [패치 적용](https://devdocs.magento.com/cloud/project/project-patch.html) 다음에서 _Cloud 안내서_.
+>Adobe Commerce on cloud infrastructure 프로젝트에 패치를 적용하려면 다음을 참조하십시오. [패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) 다음에서 _Commerce on Cloud 안내서_.
