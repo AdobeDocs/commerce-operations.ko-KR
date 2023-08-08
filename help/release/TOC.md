@@ -3,10 +3,10 @@ user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 한 곳에서 액세스할 수 있습니다.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 4effc88e387f6e8459573aa6eb1a5931e0f9a327
+source-git-commit: 4ba7e3dd660253079d4c8734e99db59c1205b318
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 14%
+source-wordcount: '105'
+ht-degree: 13%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 14%
    - [개요](release-notes/overview.md)
    - [이전 버전과 호환 불가능한 변경 사항](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
+      - [개요](release-notes/commerce/overview.md)
       - [2.4.7-베타1](release-notes/commerce/2-4-7.md)
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -26,6 +27,7 @@ ht-degree: 14%
       - [2.4.1](release-notes/commerce/2-4-1.md)
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
+      - [개요](release-notes/open-source/overview.md)
       - [2.4.7-베타1](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
       - [2.4.5](release-notes/open-source/2-4-5.md)
@@ -35,10 +37,14 @@ ht-degree: 14%
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - 보안 패치 릴리스 {#security-patches}
+      - [개요](release-notes/security/overview.md)
+      - [2.4.6-p2](release-notes/security/2-4-6-p2.md)
       - [2.4.6-p1](release-notes/security/2-4-6-p1.md)
+      - [2.4.5-p4](release-notes/security/2-4-5-p4.md)
       - [2.4.5-p3](release-notes/security/2-4-5-p3.md)
       - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
       - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p5](release-notes/security/2-4-4-p5.md)
       - [2.4.4-p4](release-notes/security/2-4-4-p4.md)
       - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
       - [2.4.4-p2](release-notes/security/2-4-4-p2.md)

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 74cb55f4552bc1b2dace37d9a6f7e68939d1c262
+source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -52,3 +52,9 @@ ht-degree: 0%
 >[!NOTE]
 >
 >2.3.2 릴리스부터 외부 파티가 보고하는 각 보안 버그와 함께 인덱싱된 CVE(Common Vulnerabilities and Exposes) 번호를 할당하고 게시합니다. 이를 통해 사용자는 배포에서 해결되지 않은 취약점을 보다 쉽게 식별할 수 있습니다. 다음에서 CVE 식별자에 대해 자세히 알아볼 수 있습니다. [CVE](https://cve.mitre.org/).
+
+## 기타 릴리스 정보 {#other-release-info}
+
+>[!NOTE]
+>
+>이 릴리스 노트에 설명된 개선 사항 및 버그 수정에 대한 코드가 Adobe Commerce과 번들로 제공되지만 이러한 프로젝트 중 일부(예: B2B, Page Builder 및 Progressive Web Application(PWA) Studio)도 독립적으로 릴리스됩니다. 이러한 프로젝트에 대한 버그 수정은 각 프로젝트에 대한 설명서에서 사용할 수 있는 별도의 프로젝트별 릴리스 정보에 설명되어 있습니다. 다음을 참조하십시오 [제품 릴리스 개요](/help/release/release-notes/overview.md).

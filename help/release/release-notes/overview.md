@@ -2,7 +2,7 @@
 title: Adobe Commerce 및 Magento Open Source 릴리스 노트
 description: 특정 Adobe Commerce 및 Magento Open Source 릴리스에 대한 정보를 찾을 수 있는 위치를 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
+source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
         <p>개선 사항, 보안, 버그 수정 및 알려진 문제를 포함하여 Adobe Commerce 및 Magento Open Source의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">이전 버전과 호환 불가능한 변경 사항</a></li>
-            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-6-p1.md">보안 패치</a></li>
+            <li><a href="commerce/overview.md">Adobe Commerce</a></li>
+            <li><a href="open-source/overview.md">Magento Open Source</a></li>
+            <li><a href="security/overview.md">보안 패치</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe 보안 공지</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Adobe Commerce용 B2B</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>

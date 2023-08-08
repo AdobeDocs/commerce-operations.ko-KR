@@ -2,10 +2,10 @@
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 주요 날짜에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 10%
+source-wordcount: '326'
+ht-degree: 12%
 
 ---
 
@@ -22,10 +22,11 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
 ## 소프트웨어 지원 종료
 
 | 릴리스 | 일반 가용성 | 소프트웨어 지원 종료<sup>1</sup> | 종속 PHP 버전 |
-|----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 24일 | PHP 8.1 |
-| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | PHP 8.1 |
-| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 3월 14일 | PHP 8.1 및 PHP 8.2 |
+|----------------------|----------------------|-------------------------------------|-----------------------|
+| Adobe Commerce 2.4.7 | 2024년 4월 19일 | 2027년 4월 19일 | 8.2 및 8.3 |
+| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 3월 14일 | 8.1 및 8.2 |
+| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | 8.1 |
+| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 24일 | 8.1 |
 
 {style="table-layout:auto"}
 
@@ -44,6 +45,7 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
     <th colspan="4">2024</th>
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
+    <th colspan="4">2027</th>
   </tr>
 </thead>
 <tbody>
@@ -70,32 +72,49 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
     <td>Q2</td>
     <td>Q3</td>
     <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.4</td>
     <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="5"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td rowspan="2">2.4.6</td>
     <td>8.1</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
+    <td colspan="8"></td>
   </tr>
   <tr>
     <td>8.2</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="8"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">2.4.7</td>
+    <td>8.2</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td>8.3</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>
