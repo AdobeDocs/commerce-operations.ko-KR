@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt; 2.4.6의 경우) - 인벤토리 인덱서가 업데이트 시 예약 모드에서 모든 캐시를 정리하는 문제를 수정합니다.
+* **ACSD-50887** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 제품 속성 속성이 발생하는 문제를 해결합니다. *[!UICONTROL Use in Search Results Layered Navigation]* 을 로 설정할 수 있습니다. *예* 없이 *[!UICONTROL Use in search]* 옵션이 로 설정됨 *예*.
+* **ACSD-51846** (Adobe Commerce 및 Magento Open Source >=2.4.3-p2 &lt;2.4.6) - 수정 사항 *내부 오류* 모든 수준의 REST API 페이로드의 유효성을 검사하지 않았기 때문에 발생하는 문제입니다.
+* **ACSD-52906** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 동일한 고객 세그먼트에 속하는 로그인한 고객이 일부 페이지에 부적절한 캐싱을 방지하기 위해 X-Magento-Vary 쿠키가 잘못 설정되는 문제가 수정되었습니다.
+* **ACSD-52736** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.6) - 다음과 같은 문제가 해결되었습니다. *장바구니 가격 규칙* 구성 가능한 제품 수량에 대한 요구 사항이 포함된 이 예상대로 작동하지 않습니다.
+* **ACSD-47875** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 재고 관리를 사용하는 특정 스토어 보기 범위에 대해 관리자 사용자가 관리자의 고객 장바구니에 제품을 추가할 수 없는 문제를 해결했습니다.
+* **ACSD-53176** (Adobe Commerce >=2.3.7 &lt;2.4.5) - 다음 문제를 수정합니다. *관련 제품 규칙* 포함 *다음 중 하나* 조건이 제품과 일치하지 않습니다.
+* **ACSD-51666** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 오류를 수정합니다. *세션이 만료되었습니다. 다시 로그인하십시오.* 이는 고객이 로그인을 시도한 후 발생합니다.
+* MDVA-39305-v2에 대한 새 버전이 추가되었습니다.
+* ACSD-19640에 대한 요구 사항이 업데이트되었습니다.
 
 ## v1.1.35 {#v1-1-35}
 
