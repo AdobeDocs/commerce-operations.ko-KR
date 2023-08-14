@@ -1,7 +1,7 @@
 ---
-source-git-commit: e3d65a1dcb377d9bed9b27d16e057cfbb1522644
+source-git-commit: 34a0a124aeacce6cc905f979cf3f18cb2405f76e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2023년 8월 10일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.36 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/778890d5840669df958e84381c2aade70a492454">778890</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 8월 8일
 
@@ -22,6 +42,18 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>업데이트됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">릴리스된 버전</a> 와 함께 2023년 8월 보안 패치.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9abed3c6ca156cdc19e7231f97cf2a8bd8ab100">c9abed</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce 2.4.4-p4, 2.4.4-p5, 2.4.5-p3, 2.4.5-p4, 2.4.6-p1 및 2.4.6-p2의 릴리스 정보에 Adobe Commerce 2023년 8월 8일 보안 핫픽스에 대한 정보가 추가되었습니다.  다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce 및 Magento Open Source 릴리스 정보</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/623ada901bad9f766451d9c9166e82f1cee85c0d">623ada</a> (커밋)</td>
+    </tr>
     <tr>
       <td><p>Adobe Commerce 2.4.6-p2, 2.4.5-p4 및 2.4.4-p5에 대한 릴리스 정보가 추가되었습니다. 다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce 및 Magento Open Source 릴리스 정보</a>.</p>
 </td>
@@ -39,6 +71,26 @@ ht-degree: 0%
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7373980a0648be5e0f7dc4a307074d934f646b24">737398</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 8월 7일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>에 대한 정보가 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/security.html">엔드포인트 감지 및 응답</a> 클라우드 인프라에서.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> (커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
