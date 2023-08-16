@@ -59,7 +59,7 @@ sudo apt install -y rabbitmq-server
 
 을(를) 참조하십시오 [RPM 기반 Linux에 설치](https://www.rabbitmq.com/install-rpm.html) 추가 정보.
 
-## 구성 [!DNL RabbitMQ]
+## Configure [!DNL RabbitMQ]
 
 공식 검토 [!DNL RabbitMQ] 구성 및 관리 설명서 [!DNL RabbitMQ]. 다음 항목에 주의하십시오.
 

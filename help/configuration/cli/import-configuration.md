@@ -104,7 +104,7 @@ Commerce는에서 값을 직접 사용합니다. `system` 배열에서 `config.p
 
 배열의 핵심은 전체 테마 경로입니다. `area` + `theme path`
 
-예를 들어, `frontend/Magento/luma`.
+For example, `frontend/Magento/luma`.
 `frontend` 영역 및 `Magento/luma` 테마 경로입니다.
 
 배열의 값은 코드, 제목, 경로, 상위 ID 등 테마에 대한 데이터입니다.
@@ -128,4 +128,3 @@ Commerce는에서 값을 직접 사용합니다. `system` 배열에서 `config.p
 >
 >- _테마 등록_. 테마 데이터가에 정의된 경우 `config.php` 그러나 테마의 소스 코드가 파일 시스템에 없으면 테마는 무시됩니다(즉, 등록되지 않음).
 >- _테마 제거_. 에 테마가 없는 경우 `config.php` 그러나 소스 코드가 파일 시스템에 있으면 테마가 제거되지 않습니다.
-

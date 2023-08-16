@@ -20,7 +20,7 @@ Adobe Commerce 및 Magento Open Source 사용 [유지 관리 모드](../../confi
 * If `var/.maintenance.flag` 이(가) 없으며 유지 관리 모드가 꺼져 있고 응용 프로그램이 정상적으로 작동합니다.
 * 그렇지 않으면 유지 관리 모드는 `var/.maintenance.ip` 존재함.
 
-   `var/.maintenance.ip` 에는 IP 주소 목록이 포함될 수 있습니다. HTTP를 사용하여 진입점에 액세스하고 클라이언트 IP 주소가 해당 목록의 항목 중 하나에 해당하는 경우 유지 관리 모드는 해제됩니다.
+  `var/.maintenance.ip` 에는 IP 주소 목록이 포함될 수 있습니다. HTTP를 사용하여 진입점에 액세스하고 클라이언트 IP 주소가 해당 목록의 항목 중 하나에 해당하는 경우 유지 관리 모드는 해제됩니다.
 
 ## 애플리케이션 설치
 

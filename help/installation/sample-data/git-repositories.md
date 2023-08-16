@@ -69,7 +69,7 @@ SSH 프로토콜을 사용하여 샘플 데이터 GitHub 리포지토리를 복�
 
 1. 본에서 사용한 분기에 해당하는 샘플 데이터 저장소의 분기를 체크아웃해야 합니다 `magento2` 리포지토리.
 
-   예:
+   For example:
 
    를 사용한 경우 `2.4-develop` Magento Open Source GitHub 리포지토리의 분기입니다. 샘플 데이터 분기는 다음과 같아야 합니다 `2.4-develop`.
 
@@ -123,7 +123,7 @@ HTTPS 프로토콜을 사용하여 샘플 데이터 GitHub 저장소를 복제�
 1. 서버에서 저장소가 복제될 때까지 기다립니다.
 1. 본에서 사용한 분기에 해당하는 샘플 데이터 저장소의 분기를 체크아웃해야 합니다 `magento2` 리포지토리.
 
-   예:
+   For example:
 
    를 사용한 경우 `2.4-develop` Magento Open Source GitHub 리포지토리의 분기입니다. 샘플 데이터 분기는 다음과 같아야 합니다 `2.4-develop`.
 
@@ -140,7 +140,7 @@ HTTPS 프로토콜을 사용하여 샘플 데이터 GitHub 저장소를 복제�
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
-   예를 들어,
+   For example,
 
    ```bash
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
@@ -153,8 +153,7 @@ HTTPS 프로토콜을 사용하여 샘플 데이터 GitHub 저장소를 복제�
 >
 >샘플 데이터를 설치하는 경우 *이후* Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 명령을 실행하여 데이터베이스와 스키마를 업데이트해야 합니다.
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 

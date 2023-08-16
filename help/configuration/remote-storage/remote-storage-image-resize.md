@@ -6,7 +6,7 @@ exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 0%
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 만들기 `nginx.conf` 포함된 템플릿을 기반으로 하는 파일 `nginx.conf.sample` 파일. 예:
+1. 만들기 `nginx.conf` 포함된 템플릿을 기반으로 하는 파일 `nginx.conf.sample` 파일. For example:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

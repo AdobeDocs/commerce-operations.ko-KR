@@ -6,7 +6,7 @@ exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Commerce는 다음을 사용하여 Varnish 호스트를 구성한 후 Varnish �
 
 매개 변수 형식은 다음과 같아야 합니다. `<hostname or ip>:<listen port>`, 여기서 을 생략할 수 있습니다. `<listen port>` 80번 포트면
 
-예를 들어,
+For example,
 
 ```bash
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080

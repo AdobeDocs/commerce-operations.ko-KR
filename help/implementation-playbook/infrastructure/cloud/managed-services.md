@@ -1,6 +1,6 @@
 ---
 title: Managed Services
-description: Adobe Commerce on cloud infrastructure 구현에 대한 Adobe 관리 서비스, 고객 및 클라우드 서비스 공급자의 책임을 검토하십시오.
+description: Adobe Commerce on cloud infrastructure 구현에 대한 Managed Services, 고객 및 클라우드 서비스 공급자 Adobe의 책임을 검토하십시오.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 feature: Cloud, Services
 source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
@@ -22,9 +22,9 @@ Adobe Commerce Pro 플랜은 공유 책임 보안 모델을 사용합니다. 이
 
 ![Adobe Commerce 공유 책임 모델을 보여 주는 다이어그램](../../../assets/playbooks/shared-responsibility.svg)
 
-### Adobe Managed Services 책임
+### Managed Services 책임 Adobe
 
-Adobe Managed Services는 Adobe Commerce Pro 클라우드 환경, 핵심 Adobe Commerce Pro 애플리케이션 코드 및 내부 상거래 시스템의 보안 및 가용성을 담당합니다. 여기에는 다음이 포함되지만 이에 국한되지 않습니다.
+Adobe Managed Services은 Adobe Commerce Pro 클라우드 환경, 핵심 Adobe Commerce Pro 애플리케이션 코드 및 내부 상거래 시스템의 보안 및 가용성을 담당합니다. 여기에는 다음이 포함되지만 이에 국한되지 않습니다.
 
 - 서버 수준 패치
 - Adobe Commerce Pro 플랜을 제공하는 데 필요한 서비스 운영
@@ -35,11 +35,11 @@ Adobe Managed Services는 Adobe Commerce Pro 클라우드 환경, 핵심 Adobe C
 - 연중무휴 24시간 지원
 - SLA에 따라 고객 인프라를 사용할 수 있도록 보장
 
-Adobe Managed Services는 서버 방화벽 구성(iptables) 및 경계 방화벽 구성(보안 그룹)을 관리하는 역할도 담당합니다. Adobe은 또한 주기적으로 코어 애플리케이션에 대한 보안 업데이트를 릴리스할 수 있습니다. 이러한 패치를 적용하는 것은 고객의 책임입니다. 이러한 영역은 모두 Adobe Commerce on cloud infrastructure system의 PCI 인증이 적용됩니다.
+Adobe Managed Services은 서버 방화벽 구성(iptables) 및 경계 방화벽 구성(보안 그룹)도 관리합니다. Adobe은 또한 주기적으로 코어 애플리케이션에 대한 보안 업데이트를 릴리스할 수 있습니다. 이러한 패치를 적용하는 것은 고객의 책임입니다. 이러한 영역은 모두 Adobe Commerce on cloud infrastructure system의 PCI 인증이 적용됩니다.
 
 ### AWS 책임
 
-Adobe Managed Services는 클라우드 서버 인프라용으로 Amazon Web Services(AWS)를 사용합니다. AWS은 방화벽 시스템 및 침입 탐지 시스템(ID)을 통한 라우팅, 스위칭 및 경계 네트워크 보안을 포함하여 네트워크 보안을 담당합니다. AWS은 Adobe Commerce 클라우드 환경을 관리하는 데이터 센터에 대한 물리적 보안과 적절한 전원, 냉각 및 메커니즘 제어가 이루어지도록 하는 환경 보안을 담당합니다.
+Adobe Managed Services은 클라우드 서버 인프라에 Amazon Web Services(AWS)를 사용합니다. AWS은 방화벽 시스템 및 침입 탐지 시스템(ID)을 통한 라우팅, 스위칭 및 경계 네트워크 보안을 포함하여 네트워크 보안을 담당합니다. AWS은 Adobe Commerce 클라우드 환경을 관리하는 데이터 센터에 대한 물리적 보안과 적절한 전원, 냉각 및 메커니즘 제어가 이루어지도록 하는 환경 보안을 담당합니다.
 
 Adobe Commerce Pro는 다음을 사용할 계획입니다.
 

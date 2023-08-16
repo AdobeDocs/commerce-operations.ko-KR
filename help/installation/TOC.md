@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 0%
       - [작성기 패키지 다운로드](sample-data/composer-packages.md)
       - [Git 저장소 복제](sample-data/git-repositories.md)
       - [모듈 제거 또는 업데이트](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- 튜토리얼 {#tutorials}
    - [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](tutorials/backup.md)
    - [데이터베이스 상태 확인](tutorials/database-status.md)
    - [메시지 소비자 행동 구성](tutorials/message-consumers.md)

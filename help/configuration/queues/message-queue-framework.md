@@ -21,7 +21,7 @@ MQF(메시지 대기열 프레임워크)는 모듈이 메시지를 대기열에 
 
 - 거래소는 게시자로부터 메시지를 수신하여 대기열로 보냅니다. 그러나 [!DNL RabbitMQ] 는 여러 유형의 교환을 지원하며, Commerce는 주제 교환만 사용합니다. 항목에는 점으로 구분된 텍스트 문자열이 들어 있는 라우팅 키가 포함되어 있습니다. 항목 이름의 형식은 다음과 같습니다. `string1.string2`: 예: `customer.created` 또는 `customer.sent.email`.
 
-   브로커를 사용하면 메시지 전달 규칙을 설정할 때 와일드카드를 사용할 수 있습니다. 별표(`*`)을 클릭하여 대체합니다 _1_ 문자열 또는 파운드 기호(`#`)을 클릭하여 0개 이상의 문자열을 바꿀 수 있습니다. 예를 들어, `customer.*` 이(가) 을(를) 필터링합니다. `customer.create` 및 `customer.delete`, 그러나 아님 `customer.sent.email`. 그러나 `customer.#` 이(가) 을(를) 필터링합니다. `customer.create`,  `customer.delete`, 및 `customer.sent.email`.
+  브로커를 사용하면 메시지 전달 규칙을 설정할 때 와일드카드를 사용할 수 있습니다. 별표(`*`)을 클릭하여 대체합니다 _1_ 문자열 또는 파운드 기호(`#`)을 클릭하여 0개 이상의 문자열을 바꿀 수 있습니다. 예를 들어, `customer.*` 이(가) 을(를) 필터링합니다. `customer.create` 및 `customer.delete`, 그러나 아님 `customer.sent.email`. 그러나 `customer.#` 이(가) 을(를) 필터링합니다. `customer.create`,  `customer.delete`, 및 `customer.sent.email`.
 
 - 큐는 메시지를 저장하는 버퍼입니다.
 

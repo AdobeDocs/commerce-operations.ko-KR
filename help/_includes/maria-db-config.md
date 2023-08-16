@@ -2,7 +2,7 @@
 source-git-commit: 631735eceb3609edd743c682291f373f6b01b399
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # MariaDB 구성 설정
@@ -12,7 +12,7 @@ MariaDB 10.4 및 10.6에서 리인덱싱하는 것은 이전 MariaDB 또는 MySQ
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-MariaDB 10.6으로 업그레이드한 후 인덱싱과 관련이 없는 성능 저하가 발생하는 경우 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 설정. 예를 들어, `--query-cache-type=ON`.
+MariaDB 10.6으로 업그레이드한 후 인덱싱과 관련이 없는 성능 저하가 발생하는 경우 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 설정. For example, `--query-cache-type=ON`.
 
 이러한 권장 사항 외에 다음 매개 변수를 구성하는 방법에 대해서는 데이터베이스 관리자에게 문의하십시오.
 

@@ -1,11 +1,11 @@
 ---
 user-guide-title: 구현 플레이북
-user-guide-description: 성공적인 Adobe Commerce 사이트를 계획하고 구현하기 위한 전략에 대해 알아봅니다.
+user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 0%
    - [실행 후 단계](launch/post-launch-steps.md)
 - 유지 관리 및 지원 {#maintenance}
    - [개요](maintenance/overview.md)
-   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+   - [Managed Services Adobe](maintenance/adobe-managed-services.md)
 - 우수 사례 {#best-practices}
    - [개요](best-practices/phases.md)
    - 계획 수립 {#planning}

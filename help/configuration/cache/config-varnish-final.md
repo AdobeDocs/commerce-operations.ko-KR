@@ -20,7 +20,7 @@ ht-degree: 0%
 
 먼저 다음을 사용하고 있는지 확인합니다. [개발자 모드](../cli/set-mode.md#change-to-developer-mode); 그렇지 않으면 헤더가 표시되지 않습니다.
 
-예를 들어,
+For example,
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

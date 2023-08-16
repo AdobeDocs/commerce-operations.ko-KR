@@ -27,19 +27,19 @@ ht-degree: 0%
 
 * `setup:di:compile` 자동 생성된 클래스와 최적화된 구성 캐시를 생성합니다.
 
-   ```bash
-   bin/magento setup:di:compile
-   ```
+  ```bash
+  bin/magento setup:di:compile
+  ```
 
-   개발 모드에서 Magento은 주문형 생성을 수행하므로 실행할 필요가 없습니다. 클래스의 서명을 수정했으며 자동 생성된 서명을 다시 생성해야 하는 경우 `factories/proxies/interceptors`, 해당 클래스 제거 또는 _생성됨_ 폴더를 삭제합니다.
+  개발 모드에서 Magento은 주문형 생성을 수행하므로 실행할 필요가 없습니다. 클래스의 서명을 수정했으며 자동 생성된 서명을 다시 생성해야 하는 경우 `factories/proxies/interceptors`, 해당 클래스 제거 또는 _생성됨_ 폴더를 삭제합니다.
 
 * `setup:static-content:deploy` 저장소에 대한 정적 콘텐츠를 배포합니다.
 
-   ```bash
-   bin/magento setup:static-content:deploy
-   ```
+  ```bash
+  bin/magento setup:static-content:deploy
+  ```
 
-   개발 모드에서 Magento은 온디맨드로 이를 수행하므로 실행할 필요가 없습니다.
+  개발 모드에서 Magento은 온디맨드로 이를 수행하므로 실행할 필요가 없습니다.
 
 ## 가상 컴퓨터의 일반 페이지 로드 시간
 

@@ -157,7 +157,7 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 
 1. 값 변경 `memory_limit` 이 섹션의 시작 부분에서 권장되는 값 중 하나를 사용합니다.
 
-   예를 들어,
+   For example,
 
    ```conf
    memory_limit=2G

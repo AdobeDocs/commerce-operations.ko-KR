@@ -71,7 +71,7 @@ Adobe 코어 데이터베이스 테이블 또는 서드파티 테이블에 열�
 
 1. 업데이트 중인 항목을 나타내는 이름으로 네임스페이스에 모듈을 만듭니다.
 
-   예: `app/code/YourCompany/Customer`
+   For example: `app/code/YourCompany/Customer`
 
 1. 모듈을 활성화할 적절한 파일을 만듭니다(참조). [모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 

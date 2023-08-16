@@ -41,7 +41,7 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
    yum search ntp
    ```
 
-1. 설치할 패키지를 선택하십시오. 예를 들어, `ntp.x86_64`.
+1. 설치할 패키지를 선택하십시오. For example, `ntp.x86_64`.
 
 1. 패키지를 설치합니다.
 
@@ -126,9 +126,9 @@ http://<web server host or IP>/phpinfo.php
 * 필요한 경우 웹 서버를 시작합니다.
 * 방화벽이 포트 80에서 트래픽을 허용하는지 확인하십시오.
 
-   [Ubuntu 도움말](https://help.ubuntu.com/community/UFW)
+  [Ubuntu 도움말](https://help.ubuntu.com/community/UFW)
 
-   [CentOS용 도움말](https://wiki.centos.org/HowTos/Network/IPTables)
+  [CentOS용 도움말](https://wiki.centos.org/HowTos/Network/IPTables)
 
 ## phpMyAdmin
 

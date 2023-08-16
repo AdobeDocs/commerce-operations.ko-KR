@@ -1,6 +1,6 @@
 ---
-title: Adobe Managed Services
-description: Adobe Managed Services가 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
+title: Managed Services Adobe
+description: Managed Services Adobe이 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -11,19 +11,19 @@ ht-degree: 0%
 ---
 
 
-# Adobe Managed Services
+# Managed Services Adobe
 
 Adobe Commerce은 강력한 기본 기능, 광범위한 사용자 지정 옵션 및 서드파티 통합을 포함하는 전자 상거래 기능을 제공하는 플랫폼입니다.
 
-Adobe Managed Services는 Adobe Commerce on cloud infrastructure Pro 플랜에 호스팅 및 관리되는 애플리케이션 및 인프라를 제공합니다.
+Adobe Managed Services은 Adobe Commerce on cloud infrastructure Pro 플랜에 호스팅 및 관리되는 애플리케이션 및 인프라를 제공합니다.
 
 ## 이점
 
-![Adobe Managed Services의 이점을 보여주는 인포그래픽](../../assets/playbooks/managed-services-benefits.png)
+![Managed Services Adobe의 이점을 보여주는 인포그래픽](../../assets/playbooks/managed-services-benefits.png)
 
 ### 구현 옵션 비교
 
-Adobe Managed Services는 온-프레미스 및 비관리 클라우드 구현에 비해 다음과 같은 주요 이점을 제공합니다.
+Adobe Managed Services은 온-프레미스 및 관리되지 않는 클라우드 구현에 비해 다음과 같은 주요 이점을 제공합니다.
 
 - **향상된 서비스 수준 대상(SLT)**—표준 Adobe Commerce 지원보다 빠른 응답 시간.
 - **향상된 SLA(서비스 수준 계약)**—클라우드 인프라의 일반 Adobe Commerce 고객이 99.99% 인프라 수준을 능가하는 애플리케이션 수준
@@ -37,7 +37,7 @@ Adobe Managed Services는 온-프레미스 및 비관리 클라우드 구현에 
 
 주요 Managed Services 이점을 보다 자세히 비교하려면 다음 인포그래픽을 검토하십시오.
 
-![Adobe Managed Services와 다른 Adobe Commerce 구현 옵션의 비교를 보여 주는 인포그래픽](../../assets/playbooks/managed-services-compare.png)
+![Managed Services Adobe과 다른 Adobe Commerce 구현 옵션의 비교를 보여 주는 인포그래픽](../../assets/playbooks/managed-services-compare.png)
 
 ## 역할 및 책임
 

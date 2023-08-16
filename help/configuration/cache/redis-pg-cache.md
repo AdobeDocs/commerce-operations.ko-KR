@@ -35,7 +35,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 | `cache-backend-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은 Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
 | `cache-backend-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
 | `cache-backend-redis-db` | 데이터베이스 | 기본 및 전체 페이지 캐시 모두에 Redis를 사용하는 경우 필수입니다. 캐시 중 하나의 데이터베이스 번호를 지정해야 합니다. 다른 캐시는 기본적으로 0을 사용합니다.<br><br>**중요 사항**: 둘 이상의 캐싱 유형에 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | `0` |
-| `cache-backend-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나를 사용할 수 있습니다. `auth` 명령입니다. 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. 암호는 Redis의 구성 파일에 직접 구성됩니다. `/etc/redis/redis.conf` |  |
+| `cache-backend-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나를 사용할 수 있습니다. `auth` 명령입니다. 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. 암호는 Redis의 구성 파일에 직접 구성됩니다. `/etc/redis/redis.conf` | |
 
 ### 예제 명령
 
@@ -64,7 +64,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 | `page-cache-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은 Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
 | `page-cache-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
 | `page-cache-redis-db` | 데이터베이스 | 기본 및 전체 페이지 캐시 모두에 Redis를 사용하는 경우 필수입니다. 캐시 중 하나의 데이터베이스 번호를 지정해야 합니다. 다른 캐시는 기본적으로 0을 사용합니다.<br/>**중요 사항**: 둘 이상의 캐싱 유형에 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | `0` |
-| `page-cache-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나를 사용할 수 있습니다. `auth` 명령입니다. 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. Redis 구성 파일 내에서 암호를 구성합니다. `/etc/redis/redis.conf` |  |
+| `page-cache-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나를 사용할 수 있습니다. `auth` 명령입니다. 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. Redis 구성 파일 내에서 암호를 구성합니다. `/etc/redis/redis.conf` | |
 
 ### 예제 명령
 
@@ -120,17 +120,17 @@ Commerce 2.4.3부터 Amazon EC2에서 호스팅되는 인스턴스는 로컬 Red
    - EC2 인스턴스에 대한 SSH 연결 열기
    - EC2 인스턴스에서 Redis 클라이언트를 설치합니다.
 
-      ```bash
-      sudo apt-get install redis
-      ```
+     ```bash
+     sudo apt-get install redis
+     ```
 
    - EC2 보안 그룹에 인바운드 규칙 추가: 유형 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - ElastiCache 클러스터 보안 그룹에 인바운드 규칙 추가: 유형 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Redis CLI에 연결:
 
-      ```bash
-      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-      ```
+     ```bash
+     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
+     ```
 
 ### 클러스터를 사용하도록 Commerce 구성
 

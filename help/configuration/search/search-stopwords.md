@@ -51,9 +51,9 @@ Elasticsearch 및 OpenSearch에서 중지 단어를 사용하는 방법에 대�
 
    - 명령줄: 파일 시스템 소유자로서 다음 명령을 입력합니다.
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. 상점에서 용어를 검색하여 결과를 확인합니다.
 
@@ -89,9 +89,9 @@ Elasticsearch 및 OpenSearch에서 중지 단어를 사용하는 방법에 대�
 
    - 명령줄: 파일 시스템 소유자로서 다음 명령을 입력합니다.
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. 상점에서 용어를 검색하여 결과를 확인합니다.
 

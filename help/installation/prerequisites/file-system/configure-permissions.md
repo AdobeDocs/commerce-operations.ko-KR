@@ -133,15 +133,15 @@ sudo passwd magento_user
 
 * CentOS:
 
-   ```bash
-   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
-   또는
+  또는
 
-   ```bash
-   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
 일반적으로 사용자 및 그룹 이름은 모두 `apache`.
 
@@ -240,7 +240,7 @@ cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media
 * 우분투: `su <username>`
 * CentOS: `su - <username>`
 
-예를 들어,
+For example,
 
 ```bash
 su magento_user

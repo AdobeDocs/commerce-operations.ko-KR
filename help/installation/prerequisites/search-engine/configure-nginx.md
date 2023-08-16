@@ -131,7 +131,7 @@ Apache를 사용하는 것이 좋습니다 `htpasswd` Elasticsearch 또는 OpenS
    >
    >보안상의 이유로, `<filename>` 은 숨겨야 합니다. 즉, 마침표로 시작해야 합니다.
 
-1. *(선택 사항).* 암호 파일에 다른 사용자를 추가하려면 `-c` (만들기) 옵션:
+1. *(선택 사항입니다).* 암호 파일에 다른 사용자를 추가하려면 `-c` (만들기) 옵션:
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>

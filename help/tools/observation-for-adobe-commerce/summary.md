@@ -186,7 +186,7 @@ ht-degree: 0%
 * &#39;%members = 1/1%&#39;)을(를) &#39;1of1&#39;(으)로 설정
 * &#39;%\[참고\] /usr/sbin/mysqld(mysqld 10.%&#39;)를 &#39;sql_restart&#39;로
 * &#39;%Quorum: 완료 상태:%&#39;인 노드가 없음) &#39;no_node_count&#39;
-* &#39;%WSREP: 멤버 0%&#39;)이 &#39;mem_0&#39;인 경우
+* &#39;%WSREP: 멤버 0%&#39;)이 &#39;mem_0&#39;이 되었습니다.
 * &#39;%WSREP: 멤버 1.0%&#39;)이 &#39;mem_1&#39;인 경우
 * &#39;%WSREP: 멤버 2%&#39;)이 &#39;mem2&#39;인 경우
 * &#39;%WSREP: 그룹과 동기화됨, 연결 준비%&#39;)이 &#39;준비&#39;입니다.
@@ -381,7 +381,7 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39;을 &#39;no_alive_nodes&#39;로 설정
 * &#39;%PHP 치명적인 오류: 알 수 없는 오류: &#39;wrong_param&#39;으로 표시되는 Elasticsearch%&#39;에 대한 잘못된 매개 변수
-* &#39;%Magento 클라우드 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 &#39;ver_err&#39;로서 이 문제를 해결할 수 있습니다.
+* &#39;%Magento 클라우드 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 이 문제를 &#39;ver_err&#39;로 해결할 수 있습니다.
 * &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\](이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
 * &#39;%no_space&#39;(으)로 장치%&#39;에 남은 공간 없음
 * &#39;% &#39;failed_query&#39;로 [SearchRequest{searchType=%&#39;을(를) 실행하지 못했습니다.

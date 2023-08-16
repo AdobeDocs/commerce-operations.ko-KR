@@ -43,7 +43,7 @@ bin/magento setup:config:set [--<parameter>=<value>, ...]
 | `--session-save` | 다음 중 하나를 사용하십시오.<br><br>- `db` 세션 데이터를에 저장하려면 [데이터베이스](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). 클러스터된 데이터베이스가 있는 경우 데이터베이스 저장소를 선택하십시오. 그렇지 않으면 파일 기반 저장소에 비해 이점이 별로 없을 수 있습니다.<br><br>- `files` 파일 시스템에 세션 데이터를 저장합니다. 파일 시스템 액세스가 느리거나 클러스터된 데이터베이스가 있거나 세션 데이터를 Redis에 저장하려는 경우가 아니면 파일 기반 세션 저장소가 적절합니다.<br><br>- `redis` 세션 데이터를에 저장하려면 [세션 스토리지에 Redis 사용](../../configuration/cache/config-redis.md). 기본 또는 페이지 캐싱에 Redis를 사용하는 경우 Redis가 이미 설치되어 있어야 합니다. | 아니요 |
 | `--key` | 키가 있는 경우 암호화할 키를 지정합니다 [중요 데이터](#sensitive-data) 데이터베이스. 없는 경우 애플리케이션에서 자동으로 생성합니다. | 아니요 |
 | `--db-init-statements` | 고급 MySQL 구성 매개 변수. MySQL 데이터베이스에 연결할 때 데이터베이스 초기화 문을 사용하여 실행합니다.<br><br>기본값은 입니다 `SET NAMES utf8;`.<br><br>과 유사한 참조 자료 참조 [이 항목](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) 값을 설정하기 전에 | 아니요 |
-| `--http-cache-hosts` | 제거 요청을 전송할 HTTP 캐시 게이트웨이 호스트를 쉼표로 구분한 목록입니다. (예: 바니시 서버) 이 매개변수를 사용하여 동일한 요청에서 제거할 호스트를 지정합니다. (호스트가 하나만 있거나 여러 개 있는 경우에는 문제가 되지 않습니다.)<br><br>형식은 다음과 같아야 합니다. `<hostname or ip>:<listen port>`, 여기서 을 생략할 수 있습니다. `<listen port>` 80번 포트라면 예를 들어, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. 공백 문자로 호스트를 구분하지 마십시오. | 아니요 |
+| `--http-cache-hosts` | 제거 요청을 전송할 HTTP 캐시 게이트웨이 호스트를 쉼표로 구분한 목록입니다. (예: 바니시 서버) 이 매개변수를 사용하여 동일한 요청에서 제거할 호스트를 지정합니다. (호스트가 하나만 있거나 여러 개 있는 경우에는 문제가 되지 않습니다.)<br><br>형식은 다음과 같아야 합니다. `<hostname or ip>:<listen port>`, 여기서 을 생략할 수 있습니다. `<listen port>` 80번 포트라면 For example, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. 공백 문자로 호스트를 구분하지 마십시오. | 아니요 |
 
 ## 구성 데이터 가져오기
 

@@ -29,19 +29,19 @@ bin/magento app:config:dump scopes themes
 
 - `app/etc/config.php`
 
-   모든 상거래 인스턴스에 대한 공유 구성 파일입니다.
+  모든 상거래 인스턴스에 대한 공유 구성 파일입니다.
 소스 제어에 포함시켜 개발, 빌드 및 프로덕션 시스템 간에 공유할 수 있도록 합니다.
 
-   다음을 참조하십시오 [config.php 참조](../reference/config-reference-configphp.md).
+  다음을 참조하십시오 [config.php 참조](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
-   이는 환경별 구성 파일입니다.
+  이는 환경별 구성 파일입니다.
 여기에는 개별 환경에 대한 민감하고 시스템별 설정이 포함되어 있습니다.
 
-   실행 _아님_ 이 파일을 소스 제어에 포함하십시오.
+  실행 _아님_ 이 파일을 소스 제어에 포함하십시오.
 
-   다음을 참조하십시오 [env.php 참조](../reference/config-reference-envphp.md).
+  다음을 참조하십시오 [env.php 참조](../reference/config-reference-envphp.md).
 
 ## 중요 또는 시스템별 설정
 

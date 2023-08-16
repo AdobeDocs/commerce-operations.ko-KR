@@ -40,7 +40,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 더 좋지만 브라우저가 여전히 모든 [!DNL JavaScript] 필요한 번들 뿐만 아니라 번들.
 
-[!DNL Commerce] 번들링은 페이지당 연결 수를 줄이지만, 요청된 페이지가 번들 중 하나 또는 두 개 내의 파일에만 의존할 수 있는 경우에도 각 페이지 요청에 대해 모든 번들을 로드합니다. 브라우저가 번들을 캐시한 후 성능이 향상됩니다. 하지만 브라우저가 이러한 번들을 동기식으로 로드하기 때문에 사용자가 [!DNL Commerce] storefront는 렌더링하고 사용자 경험을 손상시키는 데 시간이 걸릴 수 있습니다.
+[!DNL Commerce] 번들링은 페이지당 연결 수를 줄이지만 요청된 페이지가 번들 중 하나 또는 두 개 내의 파일에만 의존할 수 있는 경우에도 각 페이지 요청에 대해 모든 번들을 로드합니다. 브라우저가 번들을 캐시한 후 성능이 향상됩니다. 하지만 브라우저가 이러한 번들을 동기식으로 로드하기 때문에 사용자가 [!DNL Commerce] storefront는 렌더링하고 사용자 경험을 손상시키는 데 시간이 걸릴 수 있습니다.
 
 ### 기본 병합
 
@@ -58,7 +58,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 이전의 번들 및 병합된 로드 시간은 개발 환경에서 훌륭하게 표시됩니다. 그러나 실제 환경에서는 느린 연결, 큰 연결 임계값, 제한된 네트워크 등 많은 것들이 렌더링 속도를 늦출 수 있습니다. 또한 모바일 장치는 데스크톱만큼 빠르게 렌더링되지 않습니다.
 
-실제 환경에 맞게 상점 배포를 테스트하고 준비하려면 Chrome의 기본 조절 프로필인 &quot;Slow 3G&quot;로 테스트하는 것이 좋습니다. 슬로우 3G를 통해 이전 번들 출력 시간은 이제 많은 사용자의 연결 현실을 반영합니다.
+실제 환경에 맞게 상점 배포를 테스트하고 준비하려면 Chrome의 기본 조절 프로필인 &quot;Slow 3G&quot;로 테스트하는 것이 좋습니다. 슬로우 3G를 사용하면 이전 번들 출력 시간에 많은 사용자의 연결 현실이 반영됩니다.
 
 ![실제 번들](../assets/performance/images/magentoBundlingRealWorld.png)
 
@@ -405,7 +405,7 @@ php -f bin/magento setup:static-content:deploy -f -a frontend
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
-예:
+For example:
 
 ```bash
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp

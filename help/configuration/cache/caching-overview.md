@@ -31,19 +31,19 @@ ht-degree: 0%
 - **백엔드**- 다음에 대한 세부 사항을 지정합니다. [캐시 스토리지](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), 구현 [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
 - **2단계 백엔드**- 캐시 레코드를 더 빠른 레코드와 더 느린 백엔드, 이렇게 두 개의 백엔드에 저장합니다.
 
-   >[!INFO]
-   >
-   >2수준 백엔드 캐시 구성은 이 안내서의 범위를 벗어납니다.
+  >[!INFO]
+  >
+  >2수준 백엔드 캐시 구성은 이 안내서의 범위를 벗어납니다.
 
 ## 구성 옵션
 
 - 제공된 항목 수정 `default` 캐시 프론트엔드—
 
-   다음 항목만 수정합니다. `<magento_root>/app/etc/di.xml` 상거래 애플리케이션의 전역 종속성 삽입 구성입니다.
+  다음 항목만 수정합니다. `<magento_root>/app/etc/di.xml` 상거래 애플리케이션의 전역 종속성 삽입 구성입니다.
 
 - 사용자 지정 캐시 프론트엔드 구성—
 
-   다음 항목만 수정합니다. `<magento_root>/app/etc/env.php` 이 파일은 의 동일한 구성을 무시하므로 `di.xml` 파일.
+  다음 항목만 수정합니다. `<magento_root>/app/etc/env.php` 이 파일은 의 동일한 구성을 무시하므로 `di.xml` 파일.
 
 >[!TIP]
 >

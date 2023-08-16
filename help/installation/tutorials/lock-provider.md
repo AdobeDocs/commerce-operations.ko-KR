@@ -40,6 +40,6 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 |--- |--- |--- |
 | `--lock-provider` | 공급자 이름 잠금: `db`, `zookeeper`, 또는 `file`.<br><br>기본 잠금 공급자: `db` | 아니요 |
 | `--lock-db-prefix` | 를 사용할 때 잠금 충돌을 방지하기 위한 특정 DB 접두사 `db` 공급자 잠금.<br><br>기본값: `NULL` | 아니요 |
-| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>예: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>For example: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Zookeeper가 잠금을 저장하는 경로입니다.<br><br>기본 경로는 다음과 같습니다. `/magento/locks` | 아니요 |
 | `--lock-file-path` | 파일 잠금이 저장되는 경로입니다. | 예, 다음을 설정하면 `--lock-provider=file` |

@@ -133,7 +133,7 @@ MAGENTO 2 `greatblog_post` 이제 표는 다음과 같습니다.
 | author_id | SMALLINT |
 ```
 
-이전 테이블 구조에서 새 데이터 구조로 모든 데이터를 마이그레이션하려면 `config.xml` 파일. 예:
+이전 테이블 구조에서 새 테이블 구조로 모든 데이터를 마이그레이션하려면 `config.xml` 파일. For example:
 
 ```xml
 <steps mode="data">

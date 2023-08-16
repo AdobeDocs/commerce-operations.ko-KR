@@ -23,11 +23,11 @@ PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려�
 - `memcache` (_d 없음_) - 정기적으로 유지되지 않는 오래되었지만 인기 있는 확장입니다.
 다음 `memcache` 현재 확장 _다음이 아님_ PHP 7을 사용하여 작업합니다. 다음을 참조하십시오 [memcache용 PHP 설명서](https://www.php.net/manual/en/book.memcache.php).
 
-   정확한 이름은 다음과 같습니다. `php5-memcache` 우분투를 위해서
+  정확한 이름은 다음과 같습니다. `php5-memcache` 우분투를 위해서
 
 - `memcached` (_포함`d`_) - PHP 7과 호환되는 최신 버전 및 유지 관리 확장입니다. 다음을 참조하십시오 [memcached용 PHP 설명서](https://www.php.net/manual/en/book.memcached.php).
 
-   정확한 이름은 다음과 같습니다. `php5-memcached` 우분투를 위해서
+  정확한 이름은 다음과 같습니다. `php5-memcached` 우분투를 위해서
 
 ## Ubuntu에서 memcached 설치 및 구성
 
@@ -79,7 +79,7 @@ Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하�
    phpinfo();
    ```
 
-1. 웹 브라우저의 해당 페이지로 이동합니다. 예:
+1. 웹 브라우저의 해당 페이지로 이동합니다. For example:
 
    ```http
    http://192.0.2.1/phpinfo.php
@@ -118,7 +118,7 @@ if ($result) {
 
 위치 `<memcached hostname or ip>` 다음 중 하나 `localhost`, `127.0.0.1`또는 memcache 호스트 이름 또는 IP 주소입니다. 다음 `<memcached port>` 는 수신 포트입니다. 기본적으로 `11211`.
 
-웹 브라우저의 해당 페이지로 이동합니다. 예
+웹 브라우저의 해당 페이지로 이동합니다. For example
 
 ```http
 http://192.0.2.1/cache-test.php

@@ -60,7 +60,7 @@ Commerce는 세션 스토리지에 memcached를 사용하지만 페이지 캐싱
 
    HTTP 500(내부 서버 오류)과 같은 오류가 표시되면 개발자 모드를 활성화하고 문제를 진단합니다. memcached가 실행 중인지, 제대로 구성되어 있는지, `env.php` 에 구문 오류가 없습니다.
 
-1. (선택 사항.) 텔넷을 사용하여 memcached 스토리지를 확인합니다.
+1. (선택 사항입니다.) 텔넷을 사용하여 memcached 스토리지를 확인합니다.
 
    ```bash
    telnet <memcached host or ip> <memcached port>

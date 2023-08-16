@@ -5,7 +5,7 @@ exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 0%
 >
 >- 일부 부트스트랩 매개 변수가 문서화되어 있지는 않습니다.
 >- 이제 를 사용하여 애플리케이션 모드(개발자, 기본값, 프로덕션)를 설정합니다. [`magento deploy:mode:set {mode}`](../cli/set-mode.md) 명령입니다.
-
 
 ## 환경 변수를 사용하여 매개 변수 설정
 
@@ -116,7 +115,7 @@ Apache `mod_env` 지시문은에서 약간 다릅니다. [Apache 버전 2.2] 및
    SetEnv "<variable name>" "<variable value>"
    ```
 
-   예를 들어,
+   For example,
 
    ```conf
    SetEnv "MAGE_PROFILER" "firebug"
@@ -129,7 +128,7 @@ Apache `mod_env` 지시문은에서 약간 다릅니다. [Apache 버전 2.2] 및
    a2ensite <virtual host config file name>
    ```
 
-   예를 들어,
+   For example,
 
    ```bash
    a2ensite my.magento.conf
@@ -154,7 +153,7 @@ Apache `mod_env` 지시문은에서 약간 다릅니다. [Apache 버전 2.2] 및
    SetEnv "<variable name>" "<variable value>"
    ```
 
-   예를 들어,
+   For example,
 
    ```conf
    SetEnv "MAGE_PROFILER" "firebug"

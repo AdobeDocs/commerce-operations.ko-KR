@@ -63,7 +63,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 1. Adobe 열기 추천 `default.vcl` 및 값 변경 `acl purge` - Varnish 호스트의 IP 주소입니다. (여러 호스트를 별도의 줄에 지정하거나 CIDR 표기법을 사용할 수도 있습니다.)
 
-   예를 들어,
+   For example,
 
    ```conf
     acl purge {

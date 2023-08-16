@@ -50,7 +50,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 * 각 웹 서버 노드에 대한 연결을 구성해야 합니다.
 * 일반적으로 데이터베이스 로드 밸런서에 대한 데이터베이스 연결을 구성합니다. 그러나 데이터베이스 클러스터링은 복잡할 수 있으며 구성하는 것은 사용자가 결정합니다. Adobe은 데이터베이스 클러스터링에 대한 특정 권장 사항을 제공하지 않습니다.
 
-   자세한 내용은 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  자세한 내용은 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### 연결 문제 해결
 
@@ -97,6 +97,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
    * CentOS: `service mysqld restart`
 
    * 우분투: `service mysql restart`
+
    >[!NOTE]
    >
    >MySQL을 시작하지 못하면 syslog에서 문제의 원인을 찾습니다. 다음을 사용하여 문제 해결 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) 또는 다른 신뢰할 수 있는 소스입니다.
@@ -117,7 +118,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
    GRANT ALL ON <local database name>.* TO <remote web node username>@<remote web node server ip address> IDENTIFIED BY '<database user password>';
    ```
 
-   예를 들어,
+   For example,
 
    ```shell
    GRANT ALL ON magento_remote.* TO dbuser@192.0.2.50 IDENTIFIED BY 'dbuserpassword';

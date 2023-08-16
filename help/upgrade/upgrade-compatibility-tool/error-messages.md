@@ -103,7 +103,7 @@ ht-degree: 4%
 
 {style="table-layout:auto"}
 
-## 오류
+## 오류수
 
 ### 사용자 지정 코드
 
@@ -146,7 +146,7 @@ ht-degree: 4%
 | 5020 | 사용되지 않는 노드: `<supported_blocks>` | 교체: `<supported_containers>`. |
 | 5021 | 사용되지 않는 노드: `<block_name>` | 교체: `<container_name>`. |
 | 5022 | 공장 이름 감지됨 | 위젯 유형은 /로 시작하면 안 됩니다. |
-| 5023 | 사용되지 않는 ACL 구조가 줄에서 감지되었습니다. | lib/internal/Magento/Framework/Acl/etc/acl.xsd을 확인하십시오. |
+| 5023 | 사용되지 않는 ACL 구조가 줄에서 감지됨 | lib/internal/Magento/Framework/Acl/etc/acl.xsd을 확인하십시오. |
 | 5024 | 사용되지 않는 메뉴 구조가 라인에서 감지되었습니다. | app/code/Magento/Backend/etc/menu.xsd을 확인하십시오. |
 | 5025 | 파일에서 사용되지 않는 시스템 구성 구조가 감지되었습니다. | app/code/Magento/Config/etc/system_file.xsd을 확인하십시오. |
 | 5026 | 사용하지 않음 `"text/javascript"` type 속성 | 공용 멤버만 사용합니다. |

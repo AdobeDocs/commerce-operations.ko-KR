@@ -54,6 +54,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 ```
 
 >[!INFO]
+>
 중요: 새 증분 값은 현재 증분 값보다 커야 합니다.
 
 다음 쿼리를 실행한 후:

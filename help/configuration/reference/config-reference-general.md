@@ -32,28 +32,28 @@ ht-degree: 0%
 | 유럽 연합 국가 | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 주요 대상 | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 에는 상태가 필요합니다. | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 국가에 대해 선택 사항인 경우 주 선택 허용 | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 시간대 | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 로케일 | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 가중치 단위 | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 주의 첫째 요일 | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 주말 | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 액세스 제한 | `general/restriction/is_active` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |  |
-| 제한 모드 | `general/restriction/mode` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |  |
-| 시작 페이지 | `general/restriction/http_redirect` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |  |
-| 랜딩 페이지 | `general/restriction/cms_page` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |  |
-| HTTP 응답 | `general/restriction/http_status` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |  |
-| 저장소 이름 | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 스토어 전화 번호 | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 작업 시간 저장 | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 국가 | `general/store_information/country_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 지역/주 | `general/store_information/region_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| ZIP/우편 번호 | `general/store_information/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 도시 | `general/store_information/city` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 상세 주소 | `general/store_information/street_line1` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 상세 주소 2 | `general/store_information/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| VAT 번호 | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| 단일 스토어 모드 활성화 | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
+| 국가에 대해 선택 사항인 경우 주 선택 허용 | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 시간대 | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 로케일 | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 가중치 단위 | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 주의 첫째 요일 | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 주말 | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 액세스 제한 | `general/restriction/is_active` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) | |
+| 제한 모드 | `general/restriction/mode` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) | |
+| 시작 페이지 | `general/restriction/http_redirect` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) | |
+| 랜딩 페이지 | `general/restriction/cms_page` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) | |
+| HTTP 응답 | `general/restriction/http_status` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) | |
+| 저장소 이름 | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 스토어 전화 번호 | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 작업 시간 저장 | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 국가 | `general/store_information/country_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 지역/주 | `general/store_information/region_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| ZIP/우편 번호 | `general/store_information/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 도시 | `general/store_information/city` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 상세 주소 | `general/store_information/street_line1` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 상세 주소 2 | `general/store_information/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| VAT 번호 | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 단일 스토어 모드 활성화 | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 
 {style="table-layout:auto"}
 
@@ -98,9 +98,9 @@ ht-degree: 0%
 | 기본 통화 | `currency/options/base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 기본 표시 통화 | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 허용된 통화 | `currency/options/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 야후 파이낸스 익스체인지 | `TBD` |  |
-| Fixer.io | `TBD` |  |
-| 웹 서비스 | `TBD` |  |
+| 야후 파이낸스 익스체인지 | `TBD` | |
+| Fixer.io | `TBD` | |
+| 웹 서비스 | `TBD` | |
 | 연결 시간 제한(초) | `currency/yahoofinance/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 연결 시간 제한(초) | `currency/fixerio/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 연결 시간 제한(초) | `currency/webservicex/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

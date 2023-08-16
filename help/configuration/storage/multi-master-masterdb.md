@@ -6,7 +6,7 @@ exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -102,7 +102,7 @@ Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-예를 들어,
+For example,
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
@@ -122,7 +122,7 @@ Migration has been finished successfully!
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
-예를 들어,
+For example,
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"

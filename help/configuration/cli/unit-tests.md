@@ -21,11 +21,11 @@ ht-degree: 0%
 
 - 다음 `Magento_Developer` 모듈을 활성화해야 합니다. 다음과 같이 활성화할 수 있습니다.
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   사용 `--force` 필요한 경우에만 옵션을 선택합니다.
+  사용 `--force` 필요한 경우에만 옵션을 선택합니다.
 
 - 원하는 테스트를 실행하도록 시스템을 설정해야 합니다.
 

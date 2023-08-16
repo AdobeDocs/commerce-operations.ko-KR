@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce 릴리스 정책
 
-Adobe Commerce 및 Magento Open Source 사용 [시맨틱 버전 관리](https://semver.org/) 개별 모듈 수준에서(예: `magento/framework 101.1.1`)를 사용할 수 있지만 마케팅 버전 번호에는 사용할 수 없습니다. 예:
+Adobe Commerce 및 Magento Open Source 사용 [시맨틱 버전 관리](https://semver.org/) 개별 모듈 수준에서(예: `magento/framework 101.1.1`)를 사용할 수 있지만 마케팅 버전 번호에는 사용할 수 없습니다. For example:
 
 - **주요 릴리스**- 2
 - **마이너 릴리스**—2.4

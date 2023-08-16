@@ -33,7 +33,7 @@ ht-degree: 0%
 
 - 로더
 - XSD 스키마 파일
-- 이름이 적절하게 지정된 구성 파일입니다. 예를 들어, `search.xml`. 이 파일은 스키마에 대해 읽고 유효성이 검사됩니다.
+- 이름이 적절하게 지정된 구성 파일입니다. For example, `search.xml`. 이 파일은 스키마에 대해 읽고 유효성이 검사됩니다.
 - 귀하의 작업에 필요한 기타 모든 클래스.
 
 >[!INFO]
@@ -132,7 +132,7 @@ class Reader extends Filesystem
 
 단일 XML 파일에 두 개의 XSD 파일을 사용해야 하는 경우 스키마 이름을 인식할 수 있고 XML 파일과 연결해야 합니다.
 다음 항목이 있는 경우 `events.xml` 파일 및 첫 번째 `events.xsd` 파일(병합할 XSD 파일) `events.xml` 파일 이름을 지정할 수 있음 `events_merged.xsd`.
-적절한 XSD 파일을 사용하여 XML 파일의 유효성을 검사하려면 XML 파일의 XSD 파일에 URN(Uniform Resource Name)을 추가해야 합니다. 예:
+적절한 XSD 파일을 사용하여 XML 파일의 유효성을 검사하려면 XML 파일의 XSD 파일에 URN(Uniform Resource Name)을 추가해야 합니다. For example:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager:etc/config.xsd">

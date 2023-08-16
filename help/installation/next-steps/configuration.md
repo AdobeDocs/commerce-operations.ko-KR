@@ -79,7 +79,7 @@ SELinux 사용 여부에 대한 권장 사항은 없습니다. 그러나 SELinux
 
 ### 전자 메일 서버 설정
 
-Adobe Commerce 및 Magento Open Source에 이메일 서버가 필요합니다. 특정 서버는 권장하지 않지만 다음 중 하나를 시도할 수 있습니다.
+Adobe Commerce 및 Magento Open Source은 이메일 서버가 필요합니다. 특정 서버는 권장하지 않지만 다음 중 하나를 시도할 수 있습니다.
 
 * CentOS용 후위([Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS 설명서](https://www.centos.org))
 * Ubuntu용 후위([Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu 설명서](https://help.ubuntu.com/community/MailServer))

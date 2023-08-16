@@ -67,15 +67,15 @@ mysql 8.19에서 admin_user 설명
 | 필드 | 유형 | Null | 키 | 기본값 | 추가 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | 아니요 | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | 예 |  | `NULL` |  |
-| `lastname` | `varchar(32`) | 예 |  | `NULL` |  |
-| `email` | `varchar(128)` | 예 |  | `NULL` |  |
-| `username` | `varchar(40)` | 예 | 유니 | `NULL` |  |
-| `password` | `varchar(255)` | 아니요 |  | `NULL` |  |
-| `created` | `timestamp` | 아니요 |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | 아니요 |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` 업데이트 시 `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | 예 |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | 아니요 |  | `0` |  |
+| `firstname` | `varchar(32)` | 예 | | `NULL` | |
+| `lastname` | `varchar(32`) | 예 | | `NULL` | |
+| `email` | `varchar(128)` | 예 | | `NULL` | |
+| `username` | `varchar(40)` | 예 | 유니 | `NULL` | |
+| `password` | `varchar(255)` | 아니요 | | `NULL` | |
+| `created` | `timestamp` | 아니요 | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | 아니요 | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` 업데이트 시 `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | 예 | | `NULL` | |
+| `lognum` | `smallint unsigned` | 아니요 | | `0` | |
 
 를 제외하고 _TINYINT(1)_, 모든 정수 패딩(TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT)은 `db_schema.xml` 파일.
 

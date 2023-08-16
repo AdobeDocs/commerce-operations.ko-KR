@@ -62,7 +62,7 @@ Adobe 엔지니어링 팀이 Adobe Commerce 또는 Magento Open Source 작성기
 1. 만들기 `patches/composer` 로컬 프로젝트에 있는 디렉터리입니다.
 1. 패치에 사용할 GitHub 커밋 또는 가져오기 요청을 식별합니다. 이 예에서는 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) 커밋, GitHub 문제에 연결됨 [#6474](https://github.com/magento/magento2/issues/6474).
 1. 추가 `.patch` 또는 `.diff` 확장을 커밋 URL에 추가합니다. 사용 `.diff` 를 사용하십시오. 예: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. 페이지를 의 파일로 저장 `patches/composer` 디렉토리. 예를 들어, `github-issue-6474.diff`.
+1. 페이지를 의 파일로 저장 `patches/composer` 디렉토리. For example, `github-issue-6474.diff`.
 1. 파일 편집 및 제거 `app/code/<VENDOR>/<PACKAGE>` 를 기준으로 모든 경로에서 `vendor/<VENDOR>/<PACKAGE>` 디렉토리.
 
    >[!NOTE]

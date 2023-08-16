@@ -36,11 +36,11 @@ Commerce 응용 프로그램이 이미 프로덕션에 있거나 사용자 지�
 - 기본 데이터베이스 이름은 입니다. `magento` 사용자 이름과 암호는 둘 다 `magento`
 - 견적 데이터베이스 이름은 입니다. `magento_quote` 사용자 이름과 암호는 둘 다 `magento_quote`
 
-   Quote 데이터베이스도 _체크아웃_ 데이터베이스.
+  Quote 데이터베이스도 _체크아웃_ 데이터베이스.
 
 - 판매 데이터베이스 이름은 입니다. `magento_sales` 사용자 이름과 암호는 둘 다 `magento_sales`
 
-   영업 데이터베이스를 OMS 데이터베이스라고도 합니다.
+  영업 데이터베이스를 OMS 데이터베이스라고도 합니다.
 
 >[!INFO]
 >
@@ -143,7 +143,7 @@ Commerce 서버에 로그인할 때 사용자가 액세스할 수 있는 위치�
 
 #### 외래 키 제거
 
-이 스크립트는 판매 데이터베이스에서 비판매 테이블을 참조하는 외래 키를 제거합니다.
+이 스크립트는 영업 데이터베이스에서 비영업 테이블을 참조하는 외래 키를 제거합니다.
 
 다음 스크립트를 만들고 다음과 같은 이름을 지정합니다 `1_foreign-sales.sql`. 바꾸기 `<your main DB name>` (데이터베이스 이름 포함)
 
@@ -212,7 +212,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source <path>/<script>.sql
    ```
 
-   예를 들어,
+   For example,
 
    ```shell
    source /root/sql-scripts/1_foreign-sales.sql
@@ -226,7 +226,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 현재 다음 위치에 있는 경우: `mysql>` 프롬프트, 입력 `exit` 를 입력하여 명령 셸로 돌아갑니다.
 
-다음 실행 `mysqldump` 명령 셸에서 한 번에 하나씩 명령을 실행합니다. 각 변수에서 다음을 대체합니다.
+다음 실행 `mysqldump` 명령 셸에서 한 번에 하나씩 명령. 각 변수에서 다음을 대체합니다.
 
 - `<your database root username>` 데이터베이스 루트 사용자 이름 사용
 - `<your database root user password>` 사용자 암호 사용
@@ -297,7 +297,7 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 - `<your sales DB name>` (판매 데이터베이스 이름 포함)
 
-   이 항목에서 샘플 데이터베이스 이름은 `magento_sales`.
+  이 항목에서 샘플 데이터베이스 이름은 `magento_sales`.
 
 - `<root username>` MySQL 루트 사용자 이름 사용
 - `<root user password>` 사용자 암호 사용
@@ -337,7 +337,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 1. 위치: `mysql >` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
    `source <path>/<script>.sql`
 
-   예를 들어,
+   For example,
 
    ```shell
    source /root/sql-scripts/2_foreign-key-quote.sql
@@ -463,7 +463,7 @@ SET foreign_key_checks = 1;
    source <path>/<script>.sql
    ```
 
-   예를 들어,
+   For example,
 
    ```shell
    source /root/sql-scripts/3_drop-tables.sql
@@ -568,7 +568,7 @@ SET foreign_key_checks = 1;
 
 ### 외래 키(판매 테이블) 제거
 
-이 스크립트는 판매 데이터베이스에서 비판매 테이블을 참조하는 외래 키를 제거합니다.
+이 스크립트는 영업 데이터베이스에서 비영업 테이블을 참조하는 외래 키를 제거합니다.
 
 ```sql
 select concat(

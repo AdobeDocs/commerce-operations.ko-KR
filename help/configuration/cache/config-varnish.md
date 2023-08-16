@@ -52,9 +52,10 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
    에 아무 것도 없는 경우 `<magento_root>/var/page_cache` directory, Vannish를 Commerce로 성공적으로 구성했습니다!
 
 >[!NOTE]
+>
 - 언급된 경우를 제외하고 이 주제에서 설명한 모든 명령을 `root` 권한.
+>
 - 이 항목은 CentOS 및 Apache 2.4의 Varnish용으로 작성되었습니다. 다른 환경에서 바니시를 설정하는 경우 일부 명령이 다를 수 있습니다. 자세한 내용은 Vanish 설명서 를 참조하십시오.
-
 
 ## 알려진 문제
 
@@ -62,28 +63,28 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 
 - [바니시가 SSL을 지원하지 않음]
 
-   또는 SSL 종료 또는 SSL 종료 프록시를 사용합니다.
+  또는 SSL 종료 또는 SSL 종료 프록시를 사용합니다.
 
 - 의 내용을 수동으로 삭제하는 경우 `<magento_root>/var/cache` 디렉토리, Varnish를 다시 시작해야 합니다.
 
 - Commerce를 설치하는 동안 발생할 수 있는 오류:
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   이 오류가 발생하는 경우 다음을 편집합니다. `default.vcl` 에 시간 제한 추가 `backend` stanza는 다음과 같습니다.
+  이 오류가 발생하는 경우 다음을 편집합니다. `default.vcl` 에 시간 제한 추가 `backend` stanza는 다음과 같습니다.
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## 니스 캐싱 개요
 
@@ -94,6 +95,7 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 - `default.vcl` 를 사용하여 생성된 바니시 구성 [관리자](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
+>
 이 항목에서는 이전 목록의 기본 옵션만 다룹니다. 다른 여러 가지 방법으로 복잡한 시나리오(예: 콘텐츠 전달 네트워크 사용)에서 캐싱을 구성할 수 있습니다. 이러한 메서드는 이 안내서의 범위를 벗어납니다.
 
 첫 번째 브라우저 요청에서 캐시 가능한 자산은 Varnish에서 클라이언트 브라우저로 전달되고 브라우저에 캐시됩니다.
@@ -117,6 +119,7 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 앞의 예제에서는 storefront 기본 페이지에 대한 요청을 보여 줍니다(`m2_ce_my`). CSS 및 JavaScript 자산은 클라이언트 브라우저에 캐시됩니다.
 
 >[!NOTE]
+>
 대부분의 정적 에셋에는 서버에서 에셋을 검색했음을 나타내는 HTTP 200(OK) 상태 코드가 있습니다.
 
 ### 두 번째 브라우저 요청

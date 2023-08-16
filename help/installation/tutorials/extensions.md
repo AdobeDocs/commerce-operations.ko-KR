@@ -85,7 +85,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
    composer require <component-name>:<version>
    ```
 
-   예를 들어,
+   For example,
 
    ```bash
    composer require j2t/module-payplug:2.0.2

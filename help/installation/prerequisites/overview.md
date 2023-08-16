@@ -5,7 +5,7 @@ exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,23 +27,23 @@ Adobe Commerce 또는 Magento Open Source을 설치하기 전에 다음을 수�
 
 * 우분투
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * 센트OS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## 전제 조건 확인
 
@@ -74,7 +74,7 @@ Apache를 설치 또는 업그레이드하려면 다음을 참조하십시오. [
 mysql -u <database root user or database owner name> -p
 ```
 
-예:
+For example:
 
 ```bash
 mysql -u magento -p
@@ -114,7 +114,7 @@ Elasticsearch 설치를 확인하려면:
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
-예:
+For example:
 
 ```bash
 curl -XGET 'localhost:9200'

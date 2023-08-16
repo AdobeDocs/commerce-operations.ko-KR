@@ -41,7 +41,7 @@ ht-degree: 0%
 * **ACSD-52095** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.6) - 다음과 같은 문제를 수정합니다. `manage_stock` 제품 내보내기 후 CSV 파일에서 값이 0으로 잘못 설정되었습니다.
 * **ACSD-51358** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 종료 날짜 없이 예약된 업데이트를 제거하면 동일한 엔터티에 대해 다른 예약된 업데이트가 제거되는 문제가 해결됩니다.
 * **ACSD-48070** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 예약된 업데이트를 편집하면 예외가 트리거되는 문제가 해결됩니다.
-* **ACSD-51890** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. [!UICONTROL Submit review] 단추를 여러 번 클릭할 수 있음 [!DNL Google reCAPTCHA] v3 유효성 검사.
+* **ACSD-51890** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. [!UICONTROL Submit review] 없이 단추를 여러 번 클릭할 수 있습니다. [!DNL Google reCAPTCHA] v3 유효성 검사.
 * **ACSD-51984** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 선택 취소되는 문제가 해결되었습니다. *[!UICONTROL Use Default Value]* 및 *[!UICONTROL non-default product field]* 두 번째 웹 사이트, 스토어 및 스토어 보기에 대한 값은 저장되지 않습니다.
 * **ACSD-52398** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 오류를 수정합니다. *요청한 수량을 사용할 수 없습니다.* 이 문제는 상점 앞의 장바구니에 있는 번들 제품의 수량을 업데이트하려고 할 때 발생합니다.
 * **ACSD-52786** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 카탈로그 규칙 조건이 발생하는 문제를 수정합니다. *SKU:* 은 제공된 SKU로 시작하는 모든 제품에 적용됩니다.
@@ -453,7 +453,7 @@ ht-degree: 0%
 * **MDVA-40550** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.5 &lt;2.4.4*) - 리인덱싱하는 동안 프론트엔드에 제품이 누락된 문제를 수정합니다.
 * **MDVA-40120** (*Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.4*) - DESC/ASC별 GraphQL 정렬이 동일한 관련성 또는 가격을 갖는 제품에서 작동하지 않는 문제를 수정합니다.
 * **MDVA-41399** (*Adobe Commerce 및 Magento Open Source >=2.3.3 &lt;2.4.2*) - 관리 사용자가 다음에 액세스할 수 없는 문제를 수정합니다. *장바구니 관리* 고객이 위시리스트에 제품을 추가하는 경우 페이지를 표시합니다.
-* **MDVA-40609** (*Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.3*) - 비활성화된 제품 데이터가 `cataloginventory_stock_status` 색인 테이블, 부정확한 사용 불능 제품 수량 표시
+* **MDVA-40609** (*Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.3*) - 비활성화된 제품 데이터가 `cataloginventory_stock_status` 색인 테이블, 부정확한 사용 불능 제품 수량 표시.
 * **MDVA-39031** (*Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.4*) - 대상 웹 사이트에 할당되지 않은 경우에도 GraphQL을 통해 장바구니에 제품을 추가할 수 있는 문제를 수정합니다.
 * **MDVA-41597** (*Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.4*) - GraphQL을 사용하여 구성 가능한 제품을 장바구니에 둘 이상 추가할 때 사용자에게 오류가 발생하는 문제를 수정합니다.
 * **MDVA-27456** (*Adobe Commerce 및 Magento Open Source의 경우 >=2.3.5 &lt;2.3.7*) - 사용자가 로드하려고 할 때 오류가 발생하는 문제를 수정합니다 [!DNL Swagger].
@@ -541,7 +541,7 @@ ht-degree: 0%
 * **MDVA-37916** (*Adobe Commerce의 경우 >=2.3.6 &lt;2.4.3*) - 를 사용할 때 고객이 결제 확인 페이지로 이동하지 않는 문제를 수정합니다. [!DNL Paypal Payment Advanced] 메서드를 사용합니다.
 * **MDVA-37082** (*Adobe Commerce의 경우 >=2.3.0 &lt;2.4.3*) - 그룹화된 제품의 사용자 정의 스톡을 저장할 때 제품이 프론트엔드에 품절되는 문제를 수정합니다.
 * **MDVA-36572** (*Adobe Commerce의 경우 >=2.3.5 &lt;2.4.3*) - 대변 메모 업데이트로 인해 더 이상 데이터베이스에서 중복 제품 예약 업데이트가 발생하지 않는 문제를 수정합니다.
-* **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3*) - (으)로 인해 관리자 패널에 연결할 수 없는 문제를 수정합니다. *리디렉션이 너무 많음* 오류.
+* **MDVA-38132** (*Adobe Commerce >=2.3.3 &lt;2.4.3*) - 다음 이유로 인해 관리자 패널에 연결할 수 없는 문제를 수정합니다. *리디렉션이 너무 많음* 오류.
 * **MDVA-38270** (*Adobe Commerce의 경우 >=2.4.1 &lt;2.4.3*) - GraphQL의 주문 합계에서 기프트 카드 정보가 누락되는 문제를 수정합니다.
 
 ## v1.0.24 {#v1-0-24}

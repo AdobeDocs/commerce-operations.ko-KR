@@ -6,7 +6,7 @@ exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
    **패키지**: 업데이트할 패키지의 이름입니다.
 
-   예:
+   For example:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`

@@ -23,11 +23,11 @@ PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려�
 - `memcache` (_d 없음_) - 정기적으로 유지되지 않는 오래되었지만 인기 있는 확장입니다.
 다음 `memcache` 현재 확장 _다음이 아님_ PHP 7을 사용하여 작업합니다. 다음을 참조하십시오 [memcache용 PHP 설명서](https://www.php.net/manual/en/book.memcache.php).
 
-   정확한 이름은 다음과 같습니다. `php-pecl-memcache` CentOS용
+  정확한 이름은 다음과 같습니다. `php-pecl-memcache` CentOS용
 
 - `memcached` (_포함`d`_) - PHP 7과 호환되는 최신 버전 및 유지 관리 확장입니다. 다음을 참조하십시오 [memcached용 PHP 설명서](https://www.php.net/manual/en/book.memcached.php).
 
-   정확한 이름은 다음과 같습니다. `php-pecl-memcached` CentOS용
+  정확한 이름은 다음과 같습니다. `php-pecl-memcached` CentOS용
 
 ## CentOS에서 memcached 설치 및 구성
 
@@ -59,7 +59,7 @@ CentOS에 memcached를 설치하려면 다음을 사용하여 사용자로 다�
 1. 에 대한 memcached 구성 설정 변경 `CACHESIZE` 및 `OPTIONS`:
 
    1. 열기 `/etc/sysconfig/memcached` 텍스트 편집기에서.
-   1. 다음 값 찾기 `CACHESIZE` 최소 1GB로 변경합니다. 예:
+   1. 다음 값 찾기 `CACHESIZE` 최소 1GB로 변경합니다. For example:
 
       ```config
       CACHESIZE="1GB"
@@ -102,7 +102,7 @@ Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하�
 
 1. 웹 브라우저의 해당 페이지로 이동합니다.
 
-   예를 들어, `http://192.0.2.1/phpinfo.php`
+   For example, `http://192.0.2.1/phpinfo.php`
 
 1. memcache가 다음과 같이 표시되는지 확인합니다.
 

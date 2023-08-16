@@ -67,17 +67,17 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 - 값 확인 **[!UICONTROL Server Hostname]** 필드. 서버를 사용할 수 있는지 확인합니다. 대신 서버의 IP 주소를 시도할 수 있습니다.
 - 사용 `netstat -an | grep <listen-port>` 에 지정된 포트를 확인하는 명령 **[!UICONTROL Server Port]** 다른 프로세스에서 필드를 사용하고 있지 않습니다.
 
-   예를 들어 검색 엔진이 기본 포트에서 실행 중인지 확인하려면 다음 명령을 사용합니다.
+  예를 들어 검색 엔진이 기본 포트에서 실행 중인지 확인하려면 다음 명령을 사용합니다.
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   포트 9200에서 실행 중인 경우 다음과 유사하게 표시됩니다.
+  포트 9200에서 실행 중인 경우 다음과 유사하게 표시됩니다.
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
 ## 카탈로그 검색 색인 재지정 및 전체 페이지 캐시 새로 고침
 

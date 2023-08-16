@@ -44,7 +44,7 @@ Adobe Commerce 및 Magento Open Source에는 설치 및 구성 작업을 위한 
 
 * 다른 값 제공
 
-   예를 들어 SSL(Secure Sockets Layer)에 대해 웹 서버를 구성한 후 설치 관리자를 실행하여 SSL 옵션을 설정할 수 있습니다.
+  예를 들어 SSL(Secure Sockets Layer)에 대해 웹 서버를 구성한 후 설치 관리자를 실행하여 SSL 옵션을 설정할 수 있습니다.
 
 * 이전 설치에서의 실수 수정
 * 다른 데이터베이스 인스턴스에 Adobe Commerce 또는 Magento Open Source 설치
@@ -127,14 +127,14 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--admin-lastname` | 관리자 사용자의 성. | 예 |
 | `--admin-email` | 관리자 사용자의 이메일 주소입니다. | 예 |
 | `--admin-user` | 관리자 사용자 이름. | 예 |
-| `--admin-password` | 관리자 사용자 암호입니다. 암호는 길이가 7자 이상이어야 하며 최소 하나의 영문자와 최소 하나의 숫자를 포함해야 합니다. 보다 길고 복잡한 암호를 사용하는 것이 좋습니다. 전체 암호 문자열을 작은 따옴표로 묶습니다. 예를 들어, `--admin-password='A0b9%t3g'` | 예 |
+| `--admin-password` | 관리자 사용자 암호입니다. 암호는 길이가 7자 이상이어야 하며 최소 하나의 영문자와 최소 하나의 숫자를 포함해야 합니다. 보다 길고 복잡한 암호를 사용하는 것이 좋습니다. 전체 암호 문자열을 작은 따옴표로 묶습니다. For example, `--admin-password='A0b9%t3g'` | 예 |
 
 **사이트 및 데이터베이스 구성 옵션:**
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
 | `--base-url` | 관리자 및 상점 첫 화면에 다음 형식 중 하나로 액세스하는 데 사용할 기본 URL:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**참고:** 체계(http:// 또는 https://)와 후행 슬래시가 모두 필요합니다.<br><br>`<your install dir>` 는 Adobe Commerce 또는 Magento Open Source 소프트웨어를 설치할 docroot 상대 경로입니다. 웹 서버와 가상 호스트를 설정하는 방법에 따라 경로가 magento2이거나 비어 있을 수 있습니다.<br><br>localhost에서 Adobe Commerce 또는 Magento Open Source에 액세스하려면 다음 중 하나를 사용할 수 있습니다. `http://127.0.0.1/<your install dir>/` 또는 `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` 가상 호스트 설정 또는 Docker와 같은 가상화 환경으로 정의된 기본 URL을 나타냅니다. 예를 들어 호스트 이름으로 가상 호스트를 설정하는 경우 `magento.example.com`, 다음을 사용하여 소프트웨어를 설치할 수 있습니다. `--base-url={{base_url}}` 과 같은 URL을 사용하여 관리자에 액세스 `http://magento.example.com/admin`. | 예 |
-| `--backend-frontname` | 관리자에 액세스할 수 있는 URI(Uniform Resource Identifier)입니다. 이 매개 변수를 생략하면 애플리케이션이 admin_jkgdfq 패턴을 사용하여 임의의 URI를 생성하도록 할 수 있습니다</code>.<br><br>보안을 위해 무작위 URI를 사용하는 것이 좋습니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다.<br><br>설치 종료 시 URI가 표시됩니다. 를 사용하여 언제든지 나중에 표시할 수 있습니다. `bin/magento info:adminuri` 명령입니다.<br><br>값을 입력하도록 선택하는 경우 admin, backend와 같은 일반적인 단어를 사용하지 않는 것이 좋습니다. 관리자 URI에는 영숫자 값과 밑줄 문자(`_`)만 사용할 수 있습니다. | 아니요 |
+| `--backend-frontname` | 관리자에 액세스할 수 있는 URI(Uniform Resource Identifier)입니다. 이 매개 변수를 생략하면 응용 프로그램에서 다음 패턴의 임의 URI를 생성할 수 있습니다 <code>admin_jkhgdfq</code>.<br><br>보안을 위해 무작위 URI를 사용하는 것이 좋습니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다.<br><br>설치 종료 시 URI가 표시됩니다. 를 사용하여 언제든지 나중에 표시할 수 있습니다. `bin/magento info:adminuri` 명령입니다.<br><br>값을 입력하도록 선택하는 경우 admin, backend와 같은 일반적인 단어를 사용하지 않는 것이 좋습니다. 관리자 URI에는 영숫자 값과 밑줄 문자(`_`)만 사용할 수 있습니다. | 아니요 |
 | `--db-host` | 다음 중 하나를 사용하십시오.<br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소입니다.<br><br>- `localhost` (기본값) 또는 `127.0.0.1` 데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우 localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1` 클라이언트 라이브러리가 TCP 프로토콜을 사용하게 합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**참고:** www.example.com:9000과 같은 호스트 이름에 데이터베이스 서버 포트를 선택적으로 지정할 수 있습니다. | 예 |
 | `--db-name` | 데이터베이스 테이블을 설치할 데이터베이스 인스턴스의 이름입니다.<br><br>기본값은 입니다 `magento2`. | 예 |
 | `--db-user` | 데이터베이스 인스턴스 소유자의 사용자 이름.<br><br>기본값은 입니다 `root`. | 예 |
@@ -195,7 +195,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--lock-provider` | 공급자 이름 잠금<br><br>사용 가능한 잠금 공급자: `db`, `zookeeper`, `file`.<br><br>기본 잠금 공급자: `db` | 아니요 |
 | `--lock-db-prefix` | 을 사용할 때 잠금 충돌을 방지하기 위한 특정 DB 접두사 `db` 공급자 잠금.<br><br>기본값: `NULL` | 아니요 |
-| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>예: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>For example: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Zookeeper가 잠금을 저장하는 경로입니다.<br><br>기본 경로는 다음과 같습니다. `/magento/locks` | 아니요 |
 | `--lock-file-path` | 파일 잠금이 저장되는 경로입니다. | 예, 다음을 설정하면 `--lock-provider=file` |
 
@@ -221,11 +221,11 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 * 응용 프로그램이 설치된에 `magento2` 의 웹 서버 docroot에 상대적인 디렉토리 `localhost` 관리자로의 경로는 다음과 같습니다. `admin`; 그러므로:
 
-   상점 URL은 `http://127.0.0.1`
+  상점 URL은 `http://127.0.0.1`
 
 * 데이터베이스 서버가 웹 서버와 동일한 호스트에 있습니다.
 
-   데이터베이스 이름은 입니다. `magento`, 그리고 사용자 이름과 암호는 둘 다 `magento`
+  데이터베이스 이름은 입니다. `magento`, 그리고 사용자 이름과 암호는 둘 다 `magento`
 
 * 서버 재작성 사용
 
@@ -291,11 +291,11 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 응용 프로그램이 설치된에 `magento2` 의 웹 서버 docroot에 상대적인 디렉토리 `localhost` 관리자로의 경로는 다음과 같습니다. `admin`; 그러므로:
 
-   상점 URL은 `http://127.0.0.1`
+  상점 URL은 `http://127.0.0.1`
 
 * 데이터베이스 서버가 웹 서버와 동일한 호스트에 있습니다.
 
-   데이터베이스 이름은 입니다. `magento`, 그리고 사용자 이름과 암호는 둘 다 `magento`
+  데이터베이스 이름은 입니다. `magento`, 그리고 사용자 이름과 암호는 둘 다 `magento`
 
 * 관리자는 다음과 같은 속성을 갖습니다.
 

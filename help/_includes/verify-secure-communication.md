@@ -2,7 +2,7 @@
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # 통신이 안전한지 확인
@@ -49,7 +49,7 @@ WWW-Authenticate: Basic realm="Restricted"
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
-예:
+For example:
 
 ```bash
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health

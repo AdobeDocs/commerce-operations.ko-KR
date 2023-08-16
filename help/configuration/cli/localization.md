@@ -63,7 +63,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 - 로케일에 대한 사전을 만들 때 기본 상거래 문자열을 사용합니다.
 - 번역할 때 자리 표시자에 주의하십시오. `%1`, `%2`
 
-Commerce에서는 자리 표시자를 사용하여 컨텍스트 값을 삽입합니다. _아님_ 번역에 사용됩니다. 예:
+Commerce에서는 자리 표시자를 사용하여 컨텍스트 값을 삽입합니다. _아님_ 번역에 사용됩니다. For example:
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -92,7 +92,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 1. [단어와 구 수집 및 번역](#generate-a-translation-dictionary). (다음 `--magento` 매개 변수가 필요합니다.)
 1. [언어 패키지 명령 실행](#run-the-language-package-command).
 1. [디렉터리 및 파일 만들기](#create-directories-and-files).
-1. (선택 사항.) [한 언어에 대한 여러 패키지 구성](#configure-multiple-packages-for-a-language).
+1. (선택 사항입니다.) [한 언어에 대한 여러 패키지 구성](#configure-multiple-packages-for-a-language).
 
 ### 언어 패키지 명령 실행
 
@@ -247,7 +247,7 @@ Commerce 응용 프로그램에서 단어 또는 구를 찾을 수 없는 경우
 
 1. 언어 패키지의 디렉토리를 만듭니다.
 
-   예를 들어, `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
+   For example, `/var/www/html/magento2/app/i18n/ExampleCorp/xx_yy`
 
 1. 해당 디렉터리에 다음 내용을 모두 추가합니다.
 

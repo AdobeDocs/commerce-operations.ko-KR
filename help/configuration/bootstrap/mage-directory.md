@@ -22,31 +22,31 @@ ht-degree: 0%
 - [부트스트랩 매개 변수 값 설정](../bootstrap/set-parameters.md)
 - 다음과 같은 사용자 지정 진입점 스크립트를 사용합니다.
 
-   ```php
-   <?php
-   /**
-    * Copyright © Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
-    */
-   
-   use Magento\Framework\App\Bootstrap;
-   use Magento\Framework\App\Filesystem\DirectoryList;
-   use Magento\Framework\App\Http;
-   
-   require __DIR__ . '/app/bootstrap.php';
-   $params = $_SERVER;
-   $params[Bootstrap::INIT_PARAM_FILESYSTEM_DIR_PATHS] = [
-        DirectoryList::PUB => [DirectoryList::URL_PATH => ''],
-        DirectoryList::MEDIA => [DirectoryList::PATH => '/mnt/nfs/media', DirectoryList::URL_PATH => ''],
-        DirectoryList::STATIC_VIEW => [DirectoryList::URL_PATH => 'static'],
-        DirectoryList::UPLOAD => [DirectoryList::URL_PATH => '/mnt/nfs/media/upload'],
-        DirectoryList::CACHE => [DirectoryList::PATH => '/mnt/nfs/cache'],
-   ];
-   $bootstrap = Bootstrap::create(BP, $params);
-   /** @var Http $app */
-   $app = $bootstrap->createApplication(Http::class);
-   $bootstrap->run($app);
-   ```
+  ```php
+  <?php
+  /**
+   * Copyright © Magento, Inc. All rights reserved.
+   * See COPYING.txt for license details.
+   */
+  
+  use Magento\Framework\App\Bootstrap;
+  use Magento\Framework\App\Filesystem\DirectoryList;
+  use Magento\Framework\App\Http;
+  
+  require __DIR__ . '/app/bootstrap.php';
+  $params = $_SERVER;
+  $params[Bootstrap::INIT_PARAM_FILESYSTEM_DIR_PATHS] = [
+       DirectoryList::PUB => [DirectoryList::URL_PATH => ''],
+       DirectoryList::MEDIA => [DirectoryList::PATH => '/mnt/nfs/media', DirectoryList::URL_PATH => ''],
+       DirectoryList::STATIC_VIEW => [DirectoryList::URL_PATH => 'static'],
+       DirectoryList::UPLOAD => [DirectoryList::URL_PATH => '/mnt/nfs/media/upload'],
+       DirectoryList::CACHE => [DirectoryList::PATH => '/mnt/nfs/cache'],
+  ];
+  $bootstrap = Bootstrap::create(BP, $params);
+  /** @var Http $app */
+  $app = $bootstrap->createApplication(Http::class);
+  $bootstrap->run($app);
+  ```
 
 위의 예에서는 다음 경로를 설정합니다. `[cache]` 및 `[media]` 디렉터리 대상 `/mnt/nfs/cache` 및 `/mnt/nfs/media`, 각각
 

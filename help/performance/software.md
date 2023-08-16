@@ -122,7 +122,7 @@ Magento Open Source 및 Adobe Commerce:
 
 ### PHP 설정
 
-모든 작업의 성공적인 실행을 보장 [!DNL Commerce] 데이터 또는 코드를 디스크에 덤프하지 않는 경우 다음과 같이 메모리 제한을 설정하십시오.
+모든 작업의 성공적인 실행을 보장하려면 [!DNL Commerce] 데이터 또는 코드를 디스크에 덤프하지 않는 경우 다음과 같이 메모리 제한을 설정하십시오.
 
 ```text
 memory_limit=1G

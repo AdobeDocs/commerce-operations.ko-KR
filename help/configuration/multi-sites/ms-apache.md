@@ -17,13 +17,13 @@ ht-degree: 0%
 
 - 개발 컴퓨터(랩톱, 가상 컴퓨터 등)에서 작업 중입니다.
 
-   호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
+  호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 
-   클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료한 후 다음을 참조하십시오. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 다음에서 _클라우드 인프라의 Commerce 안내서_.
+  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료한 후 다음을 참조하십시오. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 다음에서 _클라우드 인프라의 Commerce 안내서_.
 
 - 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`
 
-   다른 운영 체제에 있는 다른 버전의 Apache는 가상 호스트를 다르게 설정합니다. 다음을 참조하십시오. [Apache 설명서](https://httpd.apache.org/docs/2.4/vhosts) 또는 가상 호스트를 설정하는 방법을 잘 모를 경우 네트워크 관리자 가 필요합니다.
+  다른 운영 체제에 있는 다른 버전의 Apache는 가상 호스트를 다르게 설정합니다. 다음을 참조하십시오. [Apache 설명서](https://httpd.apache.org/docs/2.4/vhosts) 또는 가상 호스트를 설정하는 방법을 잘 모를 경우 네트워크 관리자 가 필요합니다.
 
 - Commerce 소프트웨어는 `/var/www/html/magento2`
 - 기본 이외의 두 개의 웹 사이트가 있습니다.
@@ -111,7 +111,6 @@ ht-degree: 0%
 >
 >- 호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 >- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 다음을 참조하십시오. [여러 클라우드 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 다음에서 _클라우드 인프라의 Commerce 안내서_.
-
 
 ### 문제 해결
 

@@ -244,7 +244,7 @@ varnishlog
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
-예를 들어,
+For example,
 
 ```bash
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'

@@ -1400,6 +1400,6 @@ ht-degree: 0%
 | 신용 카드 유형 | `payment_us/eway/cctypes` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 해당 국가의 결제 | `payment_us/eway/allowspecific` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 특정 국가에서 결제 | `payment_us/eway/specificcountry` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
-| 정렬 순서 | `payment_us/eway/sort_order` |  |
+| 정렬 순서 | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

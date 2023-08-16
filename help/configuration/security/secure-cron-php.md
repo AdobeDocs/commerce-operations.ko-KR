@@ -6,7 +6,7 @@ exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -181,7 +181,7 @@ systemctl restart nginx
 
 1. Commerce 데이터베이스 사용자 또는 로 데이터베이스에 로그인합니다. `root`.
 
-   예를 들어,
+   For example,
 
    ```bash
    mysql -u magento -p
@@ -193,7 +193,7 @@ systemctl restart nginx
    use <database-name>;
    ```
 
-   예를 들어,
+   For example,
 
    ```shell
    use magento;
@@ -211,7 +211,7 @@ systemctl restart nginx
    http[s]://<Commerce hostname or ip>/cron.php?group=default
    ```
 
-   예:
+   For example:
 
    ```shell
    http://magento.example.com/cron.php?group=default
@@ -276,7 +276,7 @@ Apache 웹 서버를 사용하는 경우 `.htaccess` 브라우저에서 cron을 
      </Files>
    ```
 
-   예를 들어,
+   For example,
 
    ```conf
    ## Deny access to cron.php
@@ -299,11 +299,11 @@ Apache 웹 서버를 사용하는 경우 `.htaccess` 브라우저에서 cron을 
 - `<your hostname or IP>` 는 Commerce 설치의 호스트 이름 또는 IP 주소입니다
 - `<Commerce root>` 는 Commerce 소프트웨어를 설치한 웹 서버 docroot 관련 디렉토리입니다
 
-   Commerce 응용 프로그램을 실행하는 데 사용하는 정확한 URL은 웹 서버와 가상 호스트를 구성한 방식에 따라 다릅니다.
+  Commerce 응용 프로그램을 실행하는 데 사용하는 정확한 URL은 웹 서버와 가상 호스트를 구성한 방식에 따라 다릅니다.
 
 - `<group name>` 은(는) 모든 유효한 cron 그룹 이름입니다(선택 사항).
 
-예를 들어,
+For example,
 
 ```http
 https://magento.example.com/magento2/pub/cron.php?group=index

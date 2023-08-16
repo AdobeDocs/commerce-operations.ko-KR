@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 제품 목록 구성 업데이트
 
-모든 카테고리에 48개가 넘는 제품이 있는 경우 옵션을 비활성화하도록 상점 카탈로그 구성을 업데이트하십시오. **페이지당 모든 제품 허용**.
+범주에 48개가 넘는 제품이 있는 경우 옵션을 비활성화하도록 상점 카탈로그 구성을 업데이트하십시오. **페이지당 모든 제품 허용**.
 
 이 옵션을 비활성화하면 Adobe Commerce은 제품 목록 상점 페이지 매김 컨트롤을 사용하여 상점 첫 번째 구성 요소에 표시되는 제품 수를 관리합니다. 자세한 내용은 [페이지 매김 컨트롤 구성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 

@@ -49,17 +49,17 @@ ht-degree: 0%
 
 - 전역 범위(즉, 의 전역 설정) _모두_ 범위)
 
-   전역 범위 변수의 형식은 다음과 같습니다.
+  전역 범위 변수의 형식은 다음과 같습니다.
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
 - 특정 범위(즉, 이 설정은 지정된 스토어 보기 또는 웹 사이트에만 영향을 줌)
 
-   예를 들어 스토어 뷰 범위 변수는 다음 형식을 갖습니다.
+  예를 들어 스토어 뷰 범위 변수는 다음 형식을 갖습니다.
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   범위에 대한 자세한 내용은 다음을 참조하십시오.
+  범위에 대한 자세한 내용은 다음을 참조하십시오.
 
    - [1단계: 웹 사이트 또는 스토어 보기 범위 값 찾기](#step-1-find-the-website-or-store-view-scope-value)
    - [범위에 대한 Commerce 사용 안내서 주제](https://docs.magento.com/user-guide/configuration/scope.html)
@@ -97,11 +97,11 @@ ht-degree: 0%
 
 - `Path in Admin` 열
 
-   쉼표 앞의 값은 관리자 탐색의 경로입니다. 쉼표 뒤의 값은 오른쪽 창의 옵션입니다.
+  쉼표 앞의 값은 관리자 탐색의 경로입니다. 쉼표 뒤의 값은 오른쪽 창의 옵션입니다.
 
 - `Variable name` 열은 해당 환경 변수의 이름입니다.
 
-   원할 경우 이러한 구성 매개변수에 대한 시스템 값을 환경 변수로 지정할 수 있습니다.
+  원할 경우 이러한 구성 매개변수에 대한 시스템 값을 환경 변수로 지정할 수 있습니다.
 
    - 전체 변수 이름은 항상 모두 대문자입니다.
    - 변수 이름 시작 `CONFIG__` (밑줄 문자 2개를 참고하십시오)
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- 에 설정한 값을 사용하려면 `$_ENV` array, 다음을 설정해야 합니다. `variables_order = "EGPCS"`(환경, Get, Post, 쿠키 및 서버) `php.ini` 파일. 자세한 내용은 [PHP 설명서](https://www.php.net/manual/en/ini.core.php).
 >
->- 클라우드 인프라의 Adobe Commerce에 대해 다음을 사용하여 구성 설정을 재정의하려고 하는 경우 [프로젝트 웹 인터페이스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), 변수 이름 앞에 을 추가해야 합니다. `env:`. 예:
+>- 클라우드 인프라의 Adobe Commerce에 대해 다음을 사용하여 구성 설정을 재정의하려고 하는 경우 [프로젝트 웹 인터페이스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), 변수 이름 앞에 을 추가해야 합니다. `env:`. For example:
 >
 >![환경 변수 예](../../assets/configuration/cloud-console-envvariable.png)

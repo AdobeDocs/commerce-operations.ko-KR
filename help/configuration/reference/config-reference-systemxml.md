@@ -2,11 +2,11 @@
 title: system.xml 참조
 description: 시스템 XML 파일이 상거래 애플리케이션 구성을 관리하는 방법에 대해 알아봅니다.
 feature: Configuration, System
-badge: label="Contributed by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+badge: label="데이비드 램바우어에 의해 기여" type="Informative" url="https://github.com/DavidLambauer" tooltip="데이비드 램바우어"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -385,7 +385,7 @@ A `<field>`-태그에 다음과 같은 하위 항목이 있을 수 있습니다.
 | `integer` | 소수가 아닌 양수 또는 음수를 허용합니다. |
 | `ipv4` | 유효한 IP v4 주소를 허용합니다. |
 | `ipv6` | 유효한 IP v6 주소를 허용합니다. |
-| `letters-only` | 문자만 허용합니다. 예를 들어, `abcABC`. |
+| `letters-only` | 문자만 허용합니다. For example, `abcABC`. |
 | `letters-with-basic-punc` | 문자 또는 구두점만 허용합니다.<br>다음 표현식을 전달해야 합니다. `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | (영국) 휴대폰 번호를 허용합니다. |
 | `no-marginal-whitespace` | 값의 시작 또는 끝에 공백을 사용할 수 없습니다. |
@@ -394,7 +394,7 @@ A `<field>`-태그에 다음과 같은 하위 항목이 있을 수 있습니다.
 | `phoneUS` | 미국 전화 번호를 허용합니다. |
 | `required-entry` | 빈 값 허용 안 함(동등한 유효성 검사 `validate-no-empty`).<br>유효성 검사 실패 메시지: &quot;필수 필드입니다.&quot; |
 | `time` | 00:00에서 23:59 사이의 24시간 형식으로 유효한 시간을 허용합니다. 예 `15`, `15:05` 또는 `15:05:48`. |
-| `time12h` | 오전 12:00에서 11 사이의 12시간 형식으로 유효한 시간을 허용합니다.:59:오후 59시 예 `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time12h` | 오전 12:00에서 11 사이의 12시간 형식으로 유효한 시간을 허용합니다.:59:오후 59시 For example `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | 숫자와 영문자를 모두 사용하여 7자 이상을 허용합니다. |
 | `validate-alphanum-with-spaces` | 문자(a-z 또는 A-Z), 숫자(0-9) 또는 공백만 사용할 수 있습니다. |
 | `validate-clean-url` | 유효한 URL을 허용합니다. 예를 들어, `https://www.example.com` 또는 `www.example.com`. |

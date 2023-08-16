@@ -72,7 +72,7 @@ ht-degree: 0%
 
 를 구성하는 것과 동일한 모범 사례 `robots.txt` 및 `sitemap.xml` 다음에 대한 파일 [단일 사이트 상점](#single-site-storefronts) 다음 두 가지 중요한 차이점이 있는 다중 사이트 상점에 적용됩니다.
 
-- 다음을 확인하십시오. `robots.txt` 및 `sitemap.xml` 파일 이름에는 해당 사이트의 이름이 들어 있습니다. 예:
+- 다음을 확인하십시오. `robots.txt` 및 `sitemap.xml` 파일 이름에는 해당 사이트의 이름이 들어 있습니다. For example:
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`

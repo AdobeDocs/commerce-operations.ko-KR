@@ -22,7 +22,6 @@ Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 �
 >* 귀하가 계정에서 기본 담당자 사용자인 경우 계정에 미결 송장이 나열되어 있지 않은지 확인하십시오.
 >* 기본 담당자가 제공한 키가 작동하지 않고 계정에 미결 청구서가 없는 경우 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 기본 연락처의 MAGEID 사용에 대한 지원이 필요합니다.
 
-
 인증 키를 만들려면 다음을 수행하십시오.
 
 1. 에 로그인합니다 [Commerce Marketplace](https://marketplace.magento.com). 계정이 없는 경우 **등록**.
@@ -58,7 +57,7 @@ SSH를 사용하여 Adobe Commerce 릴리스를 다운로드하려면 다운로�
 
 릴리스를 다운로드하려면 MAGEID와 토큰을 사용해야 합니다. MAGEID는 계정 페이지의 왼쪽 상단에 표시됩니다.
 
-예:
+For example:
 
 ```bash
 curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/help

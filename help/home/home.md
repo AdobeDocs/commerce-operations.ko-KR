@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -98,7 +98,7 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>구현 플레이북</strong></a>
-      <p>성공적인 Adobe Commerce 사이트를 계획하고 구현하기 위한 전략에 대해 알아봅니다.</p>
+      <p>성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.</p>
     </div>
   </td>
   <td valign="top">
@@ -116,7 +116,7 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>규모에 맞는 상거래</strong></a>
-      <p>Adobe Experience Manager과 함께 Adobe Commerce을 사용하여 규모에 맞게 경험을 전달하는 방법을 알아봅니다.</p>
+      <p>Adobe Commerce와 Adobe Experience Manager를 사용하여 규모에 맞게 경험을 제공하는 방법에 대해 알아봅니다.</p>
     </div>
   </td>
   <td valign="top">

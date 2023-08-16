@@ -43,7 +43,7 @@ bin/magento config:show catalog/search/engine
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->위치 `<version>` 실행 중인 Magento 버전입니다. **다음 이전** 업그레이드. 예를 들어, `2.3.5`.
+>위치 `<version>` 실행 중인 Magento 버전입니다. **다음 이전** 업그레이드. For example, `2.3.5`.
 
 다음 섹션에 설명된 지침에 따라 일관되지 않은 상태에서 복구하십시오.
 

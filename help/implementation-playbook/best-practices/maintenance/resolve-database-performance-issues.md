@@ -1,5 +1,5 @@
 ---
-title: 데이터베이스 성능 문제를 해결하는 우수 사례
+title: 데이터베이스 성능 문제 해결 모범 사례
 description: 클라우드 인프라에 배포된 Adobe Commerce 사이트에서 성능을 저하시키는 데이터베이스 문제를 해결하는 방법에 대해 알아봅니다.
 role: Developer, Admin
 feature: Best Practices
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 <!--Consider moving this topic to the Maintenance section-->
 
-# 데이터베이스 성능 문제를 해결하는 우수 사례
+# 데이터베이스 성능 문제 해결 모범 사례
 
 이 문서에서는 클라우드 인프라 사이트에서 Adobe Commerce의 데이터베이스 성능에 부정적인 영향을 주는 데이터베이스 문제를 해결하는 방법에 대해 설명합니다.
 

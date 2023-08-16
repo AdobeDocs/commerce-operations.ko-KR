@@ -59,7 +59,7 @@ bin/uct upgrade:check <dir>
 
 | **명령** | **사용 가능한 옵션** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—current-version: 현재 Adobe Commerce 버전. 이 매개 변수는 필수이며 항상 사용해야 합니다.</li><li>—최소 문제 수준: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에 현재 버전의 중요한 문제, 오류 및 경고를 포함하지 않으려는 경우.</li><li>—coming-version(또는 -c): 특정 Adobe Commerce 버전을 Target 합니다. 생략하면 사용 가능한 최신 버전이 사용됩니다.</li></ul> |
+| `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—current-version: 현재 Adobe Commerce 버전. 이 매개 변수는 필수이며 항상 사용해야 합니다.</li><li>—최소 문제 수준: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에 현재 버전의 중요한 문제, 오류 및 경고를 포함하지 않으려는 경우.</li><li>—coming-version(또는 -c): 특정 Adobe Commerce 버전을 타깃팅합니다. 생략하면 사용 가능한 최신 버전이 사용됩니다.</li></ul> |
 
 다음 [!DNL Upgrade Compatibility Tool] 을(를) 실행할 수 있도록 허용 `upgrade:check` 이 있는 명령 `--ignore-current-version-compatibility-issues` 옵션을 선택합니다. 현재 버전에서 의 타겟팅된 버전으로 업데이트하면서 새로 도입되는 문제만 가져오려면 이 옵션을 사용하십시오. [!DNL Upgrade Compatibility Tool] 보고서:
 
@@ -163,7 +163,7 @@ A _바닐라_ 설치는 특정 릴리스 버전에 대해 지정된 버전 태�
 다음 [!DNL Upgrade Compatibility Tool] 은(는) 축소된 문제 세트를 자동으로 해결하는 기능을 제공합니다.
 
 - 인수를 전달하지 않고 사용할 수 있도록 허용된 함수지만, 이러한 사용을 사용하면 더 이상 사용되지 않습니다.
-- 사용 `$this` Magento 템플릿에서 참조할 수 있습니다.
+- 사용 `$this` Magento 템플릿에서 사용할 수 있습니다.
 - PHP 키워드 사용 `final` 개인 메서드에서 사용할 수 있습니다.
 
 이를 위해 다음을 실행합니다. `refactor` 명령:

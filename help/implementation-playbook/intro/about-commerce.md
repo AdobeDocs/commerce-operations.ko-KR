@@ -6,7 +6,7 @@ feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Deli
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Commerce은 상인들이 독특하고 매력적인 쇼핑 경험을 만들
 - B2B 전자 상거래
 - PWA Studio
 - 전역 확장
-- Amazon 판매 채널
+- Amazon Sales Channel
 - ERP 통합
 - 헤드리스 상거래 아키텍처
 

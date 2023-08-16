@@ -101,4 +101,4 @@ DDL 문을 실행해야 하는 경우 웹 사이트를 유지 관리 모드로 �
 
 - [MySQL 스토리지 엔진](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5 MariaDB 업그레이드 사전 요구 사항](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
-- [데이터베이스 성능 문제를 해결하는 우수 사례](../maintenance/resolve-database-performance-issues.md)
+- [데이터베이스 성능 문제 해결 모범 사례](../maintenance/resolve-database-performance-issues.md)

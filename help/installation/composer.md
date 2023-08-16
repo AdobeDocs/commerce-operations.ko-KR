@@ -186,7 +186,7 @@ bin/magento list
 bin/magento help <command>
 ```
 
-예:
+For example:
 
 ```bash
 bin/magento help setup:install

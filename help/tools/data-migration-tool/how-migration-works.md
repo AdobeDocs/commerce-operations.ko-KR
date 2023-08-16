@@ -16,7 +16,7 @@ ht-degree: 0%
 
 다음 [!DNL Data Migration Tool] 는 Magento 1에서 Magento 2로 데이터를 전송하는 데 사용되는 CLI(Command-Line Interface) 툴입니다. 이 도구는 Magento 1과 2 데이터베이스 구조(테이블 및 필드) 간의 일관성을 확인하고, 데이터 전송 진행률을 추적하고, 로그를 만들고, 데이터 확인 테스트를 실행합니다.
 
-## 용어
+## Terminology
 
 * **모드** - Magento 1.x에서 Magento 2.x로 데이터를 마이그레이션하는 순서가 지정된 작업 세트입니다.
 * **단계** - 마이그레이션할 데이터 종류를 정의하는 모드의 작업.
@@ -87,5 +87,5 @@ Magento 2는 상인들에게 혁신적인 쇼핑 경험을 만들고 새로운 �
 
 ## 마이그레이션 작업
 
-1.x 버전(예: v1.12에서 v1.14로) 간의 업그레이드처럼, Magento 1에서 Magento 2로 마이그레이션하기 위한 작업 수준은 사이트를 빌드한 방법과 사용자 지정 수준에 따라 다릅니다.
+1.x 버전(예: v1.12에서 v1.14로) 간의 업그레이드처럼, Magento 1에서 Magento 2로 마이그레이션하는 작업 수준은 사이트를 빌드한 방법과 사용자 지정 수준에 따라 다릅니다.
 그러나 지속적으로 을 개선하고 있습니다. [!DNL Data Migration Tool] (다음을 참조하십시오. [변경 로그](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) 추가 세부 정보). 따라서 마이그레이션 노력이 지속적으로 감소하고 있습니다.

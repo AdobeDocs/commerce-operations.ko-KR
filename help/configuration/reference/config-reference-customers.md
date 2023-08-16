@@ -49,7 +49,7 @@ ht-degree: 0%
 | 잘못된 VAT ID에 대한 그룹 | `customer/create_account/viv_invalid_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 유효성 검사 오류 그룹 | `customer/create_account/viv_error_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 각 트랜잭션에 대한 유효성 검사 | `customer/create_account/viv_on_each_transaction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| VAT ID를 기반으로 자동 그룹 변경 비활성화를 위한 기본값 | `customer/create_account/viv_disable_auto_group_assign_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| VAT ID에 따라 자동 그룹 변경 비활성화 기본값 | `customer/create_account/viv_disable_auto_group_assign_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Storefront에 VAT 번호 표시 | `customer/create_account/vat_frontend_visibility` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 기본 환영 전자 메일 | `customer/create_account/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 암호 없는 기본 환영 이메일 | `customer/create_account/email_no_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

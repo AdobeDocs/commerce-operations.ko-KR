@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. Amazon Aurora 또는 AmazonRDS를 사용하여 데이터베이스 관리(고가용성 및 멀티 마스터 구성 포함)를 단순화합니다.
 
-1. EFSMount Target을 사용하면 Amazon Elastic File System(AmazonEFS)을 Vannish 및 Adobe Commerce 인스턴스에 쉽게 매핑할 수 있습니다.
+1. EFSMount Target을 사용하면 Amazon Elastic File System(AmazonEFS)을 Varnish 및 Adobe Commerce 인스턴스에 쉽게 매핑할 수 있습니다.
 
 1. Amazon EFS를 사용하여 Adobe Commerce 인스턴스의 니스 및 공유 미디어 에셋에 대한 공유 구성에 액세스합니다.
 

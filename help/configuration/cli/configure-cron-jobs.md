@@ -49,7 +49,6 @@ Commerce 응용 프로그램에서는 다른 구성으로 실행할 수 있는 c
 >- 설치 및 업그레이드 중 문제가 발생하지 않도록 PHP 명령줄 구성과 PHP 웹 서버 플러그인 구성에 동일한 PHP 설정을 적용하는 것이 좋습니다. 자세한 내용은 [필수 PHP 설정](../../installation/prerequisites/php-settings.md).
 >- 다중 노드 시스템에서 crontab은 한 노드에서만 실행할 수 있습니다. 성능 또는 확장성과 관련된 이유로 둘 이상의 웹 노드를 설정한 경우에만 적용됩니다.
 
-
 ### Commerce crontab 만들기
 
 버전 2.2부터 Commerce에서 crontab을 만듭니다. Commerce 파일 시스템 소유자를 위해 구성된 crontab에 Commerce crontab을 추가합니다. 즉, 다른 확장 또는 애플리케이션에 대한 crontab을 이미 설정한 경우 Commerce crontab을 추가합니다.
@@ -72,7 +71,6 @@ Commerce crontab을 만들려면 다음을 수행하십시오.
 >
 >- `magento cron:install` 내부에 기존 crontab을 다시 쓰지 않음 `#~ MAGENTO START` 및 `#~ MAGENTO END` crontab의 댓글.
 >- `magento cron:install --force` 상거래 댓글 이외의 cron 작업에는 영향을 주지 않습니다.
-
 
 crontab을 보려면 다음 명령을 파일 시스템 소유자로 입력합니다.
 

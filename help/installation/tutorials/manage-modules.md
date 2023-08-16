@@ -46,9 +46,9 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 * `-f` 또는 `--force` 의존성에도 불구하고 모듈을 강제로 활성화 또는 비활성화합니다. 이 옵션을 사용하기 전에 다음을 참조하십시오 [모듈 활성화 및 비활성화 정보](#about-enabling-and-disabling-modules).
 * `-c` 또는 `--clear-static-content` 청소병 [생성된 정적 보기 파일](../../configuration/cli/static-view-file-deployment.md).
 
-   같은 이름의 파일이 여러 개 있고 모두 지우지 않으면 정적 보기 파일을 지우지 못할 경우 문제가 발생할 수 있습니다.
+  같은 이름의 파일이 여러 개 있고 모두 지우지 않으면 정적 보기 파일을 지우지 못할 경우 문제가 발생할 수 있습니다.
 
-   즉, 다음 이유로 인해 [정적 파일 대체](../../configuration/cli/static-view-file-deployment.md) 규칙: 정적 파일을 지우지 않고 이름이 인 파일이 두 개 이상인 경우 `logo.svg` 다른 경우입니다. 폴백으로 인해 잘못된 파일이 표시될 수 있습니다.
+  즉, 다음 이유로 인해 [정적 파일 대체](../../configuration/cli/static-view-file-deployment.md) 규칙: 정적 파일을 지우지 않고 이름이 인 파일이 두 개 이상인 경우 `logo.svg` 다른 경우입니다. 폴백으로 인해 잘못된 파일이 표시될 수 있습니다.
 
 예를 들어 를 비활성화하려면 `Magento_Weee` 모듈에서 다음을 입력합니다.
 

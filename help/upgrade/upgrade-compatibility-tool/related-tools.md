@@ -21,8 +21,8 @@ ht-degree: 0%
 
 - **[!DNL AmpersandHQ]**: 업그레이드의 일부로 수정된 파일을 찾고 사이트에 재정의가 있는지 확인합니다. 이를 통해 변경된 사이트별 항목에 집중할 수 있습니다. 다음을 참조하십시오. [[!DNL AmpersandHQ] 저장소 안내서](https://github.com/AmpersandHQ) 추가 정보.
 
-   >[!WARNING]
-   >
-   >[!DNL AmpersandHQ] 은(는) Adobe 공식 도구가 아닙니다.
+  >[!WARNING]
+  >
+  >[!DNL AmpersandHQ] 은(는) Adobe 공식 도구가 아닙니다.
 
 - **[!DNL Quality Patches Tool]**: Adobe Commerce 및 Magento Open Source을 위한 고품질 패치를 제공하는 명령줄 도구입니다. 다음을 참조하십시오. [[!DNL Quality patches tool] 사용 안내서](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} 추가 정보.

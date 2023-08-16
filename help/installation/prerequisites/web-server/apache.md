@@ -73,7 +73,6 @@ Adobe Commerce 및 Magento Open Source 사용 서버 재작성 및 `.htaccess` �
    >- 이전 Apache 버전에서 업그레이드한 경우 먼저 다음을 찾습니다. `<Directory "/var/www/html">` 또는 `<Directory "/var/www">` 위치: `000-default.conf`.
    >- 값을 변경해야 합니다. `AllowOverride` Adobe Commerce 또는 Magento Open Source 소프트웨어를 설치할 디렉토리의 지시문입니다. 예를 들어 웹 서버 docroot에 설치하려면 `<Directory /var/www>`.
 
-
 >[!NOTE]
 >
 >이러한 설정을 활성화하지 않으면 일반적으로 상점 또는 관리자에 스타일이 표시되지 않습니다.
@@ -232,7 +231,7 @@ Apache 설치 및 구성은 기본적으로 소프트웨어를 설치하고, 재
 
 1. 값 변경 `AllowOverride` 끝 `All`.
 
-   예를 들어,
+   For example,
 
    ```conf
    <Directory "/var/www/">
@@ -273,7 +272,7 @@ Apache 설치 및 구성은 기본적으로 소프트웨어를 설치하고, 재
 
 1. 값 변경 `AllowOverride` 끝 `All`.
 
-   예:
+   For example:
 
    ```conf
    <Directory "/var/www/html">
@@ -310,7 +309,7 @@ Apache 설치 및 구성은 기본적으로 소프트웨어를 설치하고, 재
 
 웹 사이트 방문자가 사이트에 액세스할 수 있도록 하려면 [지시문 필요](https://httpd.apache.org/docs/2.4/howto/access.html).
 
-예:
+For example:
 
 ```conf
 <Directory "/var/www/">

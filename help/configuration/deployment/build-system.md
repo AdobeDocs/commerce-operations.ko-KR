@@ -99,7 +99,7 @@ PHP 설치 [센트OS] 또는 [우분투].
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
-   예를 들어,
+   For example,
 
    ```bash
    chown -R commerce-username:apache .

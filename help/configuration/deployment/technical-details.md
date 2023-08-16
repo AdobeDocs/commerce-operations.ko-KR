@@ -76,15 +76,15 @@ ht-degree: 0%
    - 앞에서 설명한 대로 의 모든 구성 설정 `config.php` 또는 `env.php` 은(는) 잠겨 있으며 관리자에서 편집할 수 없습니다.
    - 관리 로케일을 배포된 테마에서 사용하는 언어로만 변경할 수 있습니다.
 
-      다음 그림은 의 예를 보여 줍니다. **계정 설정** > **인터페이스 로케일** 배포된 로케일 두 개만 표시하는 관리자의 목록:
+     다음 그림은 의 예를 보여 줍니다. **계정 설정** > **인터페이스 로케일** 배포된 로케일 두 개만 표시하는 관리자의 목록:
 
-      ![관리 로케일을 배포된 로케일로만 변경할 수 있습니다.](../../assets/configuration/split-deploy-admin-locale.png)
+     ![관리 로케일을 배포된 로케일로만 변경할 수 있습니다.](../../assets/configuration/split-deploy-admin-locale.png)
 
 - 관리자를 사용하여 어떤 범위에든 로케일 구성을 변경할 수 없습니다.
 
-   프로덕션 모드로 전환하기 전에 이러한 변경 작업을 수행하는 것이 좋습니다.
+  프로덕션 모드로 전환하기 전에 이러한 변경 작업을 수행하는 것이 좋습니다.
 
-   환경 변수 또는 를 사용하여 로케일을 구성할 수 있습니다 `config:set` 경로가 포함된 CLI 명령 `general/locale/code`.
+  환경 변수 또는 를 사용하여 로케일을 구성할 수 있습니다 `config:set` 경로가 포함된 CLI 명령 `general/locale/code`.
 
 ## cron 설치 및 제거
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ### 개발 시스템
 
-개발 시스템에서는 관리에서 구성을 변경하고 공유 구성을 생성합니다. `app/etc/config.php` 및 시스템별 구성, `app/etc/env.php`. 상거래 코드와 공유 구성을 소스 제어에 확인하고 빌드 서버로 푸시합니다.
+개발 시스템에서는 관리에서 구성을 변경하고 공유 구성을 생성합니다. `app/etc/config.php` 및 시스템별 구성 `app/etc/env.php`. 상거래 코드와 공유 구성을 소스 제어에 확인하고 빌드 서버로 푸시합니다.
 
 또한 개발 시스템에 확장을 설치하고 상거래 코드를 사용자 지정해야 합니다.
 
@@ -167,7 +167,7 @@ ht-degree: 0%
 - [`magento app:config:dump`](../cli/export-configuration.md) 에 관리자 구성 설정을 쓰려면 `config.php` 및 `env.php` (중요 설정 제외)
 - [`magento config:set`](../cli/set-configuration-values.md) 를 클릭하여 프로덕션 시스템에서 시스템별 설정의 값을 설정합니다.
 
-   선택 사항 사용 `--lock` 관리자 의 옵션을 잠그는 옵션(즉, 설정을 편집할 수 없도록 하는 옵션). 설정이 이미 잠겨 있으면 `--lock` 옵션을 사용하여 설정을 변경할 수 있습니다.
+  선택 사항 사용 `--lock` 관리자 의 옵션을 잠그는 옵션(즉, 설정을 편집할 수 없도록 하는 옵션). 설정이 이미 잠겨 있으면 `--lock` 옵션을 사용하여 설정을 변경할 수 있습니다.
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) 운영 시스템에서 중요 설정 값을 설정합니다.
 - [`magento app:config:import`](../cli/import-configuration.md) 구성 변경 사항을 가져올 위치 `config.php` 및 `env.php` 운영 시스템으로 이동합니다.
