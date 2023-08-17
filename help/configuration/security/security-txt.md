@@ -2,7 +2,7 @@
 title: Security.txt
 description: 보안 연구원이 취약점을 보고할 수 있도록 정보를 제공하는 방법에 대해 알아봅니다.
 feature: Configuration, Security
-badge: label="제공: Kalpesh Mehta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="칼페시 메타"
+badge: label="Contributed by Kalpesh Mehta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="칼페시 메타"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
