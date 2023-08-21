@@ -2,9 +2,9 @@
 title: 제품 목록 페이지 매김에 대한 우수 사례
 description: Storefront 카탈로그의 각 페이지에 표시되는 제품 수를 관리하여 Adobe Commerce 성능을 최적화하는 방법을 알아봅니다.
 role: User, Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 473f23a9-53fb-41a6-9b3a-af7bd1208be0
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

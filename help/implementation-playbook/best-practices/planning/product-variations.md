@@ -2,9 +2,9 @@
 title: 제품 변형 구성 모범 사례
 description: 구성된 제품 변형의 수를 제한하여 Adobe Commerce 성능을 최적화하는 방법을 알아봅니다.
 role: Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: a19dd8b4-23b8-498f-be51-a0adfcd12a11
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
