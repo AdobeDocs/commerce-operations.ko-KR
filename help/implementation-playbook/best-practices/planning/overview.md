@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트의 계획 단계에 대한 구현 모�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ ht-degree: 0%
 
 - **데이터베이스 구성**
    - [클라우드 배포를 위한 데이터베이스 구성 모범 &#x200B; 사례](database-on-cloud.md)
-   - [MySQL 슬레이브 연결 &#x200B; 구성](configure-mysql-slave-connection-on-cloud.md)
-   - [MySQL 트리거 사용](mysql-triggers-usage.md)
+   - [MySQL &#x200B; 구성](mysql-configuration.md)
 
 - **서비스 구성**
    - [Fastly 설정](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ ht-degree: 0%
 
 다음 항목에서는 카테고리 수에 대한 권장 최대 수, 제품 유효 SKU, 제품 변형, 제품 속성 및 옵션 등을 포함하여 Adobe Commerce 카탈로그를 구성하기 위한 성능 최적화 모범 사례에 대해 설명합니다.
 
-- [범주 구성](category-limits.md)
-- [제품 &#x200B; 구성](product-sku-limits.md)
-- [제품 변형 구성](product-variations.md)
-- [제품 옵션 구성](product-options.md)
-- [제품 속성 &#x200B; 구성](product-attributes-and-options.md)
-- [제품 목록의 페이지 매김 구성](product-listing-pagination.md)
+- [범주 구성](catalog-management.md#category-limits)
+- [제품 &#x200B; 구성](catalog-management.md#product-sku-limits)
+- [제품 변형 구성](catalog-management.md#product-variations)
+- [제품 옵션 구성](catalog-management.md#product-options)
+- [제품 속성 &#x200B; 구성](catalog-management.md#product-attributes)
+- [제품 목록의 페이지 매김 구성](catalog-management.md#product-listing-pagination)
 
 ## **영업 및 마케팅**
 
-- [제품 장바구니 제한에 대한 우수 사례](product-cart.md)
-- [프로모션 구성에 대한 우수 사례](product-cart-promotions.md)
+- [제품 장바구니 제한에 대한 우수 사례](catalog-management.md#cart-limits)
+- [프로모션 구성에 대한 우수 사례](catalog-management.md#promotions)
 
 ## **프로젝트 범위 지정**
 

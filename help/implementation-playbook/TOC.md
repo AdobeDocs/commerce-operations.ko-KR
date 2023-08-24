@@ -2,10 +2,10 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 10%
+source-wordcount: '254'
+ht-degree: 11%
 
 ---
 
@@ -76,22 +76,14 @@ ht-degree: 10%
    - [개요](best-practices/phases.md)
    - 계획 수립 {#planning}
       - [개요](best-practices/planning/overview.md)
+      - [카탈로그 관리](best-practices/planning/catalog-management.md)
       - [사이트, 스토어 및 스토어 보기 구성](best-practices/planning/sites-stores-store-views.md)
       - [보고 구성](best-practices/planning/reporting-configuration.md)
       - [클라우드 배포를 위한 데이터베이스 &#x200B; 구성](best-practices/planning/database-on-cloud.md)
-      - [MySQL 슬레이브 연결 &#x200B; 구성](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
-      - [MySQL 트리거 사용](best-practices/planning/mysql-triggers-usage.md)
+      - [MySQL 구성](best-practices/planning/mysql-configuration.md)
       - [Redis 서비스 구성](best-practices/planning/redis-service-configuration.md)
       - [OPcache 메모리 크기](best-practices/planning/opcache-memory-size.md)
       - [Realpath 캐시 크기](best-practices/planning/realpath-cache-size.md)
-      - [카테고리](best-practices/planning/category-limits.md)
-      - [제품](best-practices/planning/product-sku-limits.md)
-      - [제품 변형](best-practices/planning/product-variations.md)
-      - [제품 옵션](best-practices/planning/product-options.md)
-      - [제품 속성](best-practices/planning/product-attributes-and-options.md)
-      - [제품 목록 페이지 매김](best-practices/planning/product-listing-pagination.md)
-      - [제품 장바구니 제한](best-practices/planning/product-cart.md)
-      - [프로모션](best-practices/planning/product-cart-promotions.md)
       - [확장](best-practices/planning/extensions.md)
       - [파트너 에스컬레이션](best-practices/planning/partner-escalation.md)
       - [결제 저장 처리](best-practices/planning/payment-processing-storage.md)
@@ -112,10 +104,11 @@ ht-degree: 10%
       - [개요](best-practices/maintenance/overview.md)
       - [감사 프론트엔드 성능](best-practices/maintenance/frontend-performance.md)
       - [인덱서 구성](best-practices/maintenance/indexer-configuration.md)
+      - [규모에 맞게 패치](best-practices/maintenance/patching-at-scale.md)
       - [주문 처리](best-practices/maintenance/order-processing-configuration.md)
+      - [데이터베이스 성능 문제 해결](best-practices/maintenance/resolve-database-performance-issues.md)
       - [프로덕션 사이트에 대한 관리자 업데이트 예약](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [서비스 업데이트](best-practices/maintenance/update-services.md)
       - [업그레이드 체크리스트](best-practices/maintenance/upgrade-checklist.md)
-      - [데이터베이스 성능 문제 해결](best-practices/maintenance/resolve-database-performance-issues.md)
       - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 34a0a124aeacce6cc905f979cf3f18cb2405f76e
+source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2023년 8월 23일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 추가함 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">새 주제</a> Adobe Commerce 프로젝트에 대한 중앙 집중식 패치 전략 구현 정보.</p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 8월 10일
 

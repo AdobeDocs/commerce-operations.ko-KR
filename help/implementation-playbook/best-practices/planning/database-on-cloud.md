@@ -4,9 +4,9 @@ description: 클라우드 인프라에 Adobe Commerce을 배포할 때 성능을
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Adobe은 Adobe Commerce 애플리케이션에 대한 서드파티 Elasticsearch 
 - 트리거는 코드로 해석되며 MySQL은 트리거를 미리 컴파일하지 않습니다. 쿼리의 트랜잭션 공간에 후킹하면 테이블과 함께 수행되는 각 쿼리에 대한 파서 및 인터프리터에 오버헤드가 추가됩니다.
 - 트리거는 원래 쿼리와 동일한 트랜잭션 공간을 공유하고 해당 쿼리가 테이블에서 잠금에 대해 경쟁하는 동안 트리거는 다른 테이블에서 잠금에 대해 독립적으로 경쟁합니다.
 
-사용자 지정 트리거 사용에 대한 대안에 대해 알아보려면 다음을 참조하십시오. [MySQL 트리거를 효과적으로 사용](mysql-triggers-usage.md) 을 참조하십시오.
+사용자 지정 트리거 사용에 대한 대안에 대해 알아보려면 다음을 참조하십시오. [MySQL 트리거](mysql-configuration.md#triggers).
 
 ## 업그레이드 [!DNL ECE-Tools] 버전 2002.0.21 이상 {#ece-tools-version}
 
