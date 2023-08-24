@@ -3,9 +3,9 @@ title: 구현 유지 관리 단계
 description: Adobe Commerce 프로젝트의 유지 관리 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -73,5 +73,6 @@ ht-degree: 0%
 
 ### 업그레이드
 
+- [규모에 맞게 패치](patching-at-scale.md)
 - [서비스 및 구성 요소를 최신 버전으로 &#x200B; 업데이트](update-services.md)
 - [Adobe Commerce &#x200B; 업그레이드 체크리스트](upgrade-checklist.md)

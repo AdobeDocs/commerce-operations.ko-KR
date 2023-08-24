@@ -2,9 +2,9 @@
 title: 패치 적용
 description: Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대해 알아봅니다.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [명령줄](../patches/apply.md#command-line)
 - [작성기](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>다음을 참조하십시오 [우수 사례](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) Adobe Commerce을 엔터프라이즈 규모로 중앙 집중식으로 패치하는 방법에 대해 설명합니다.
 
 ## 작성기
 
