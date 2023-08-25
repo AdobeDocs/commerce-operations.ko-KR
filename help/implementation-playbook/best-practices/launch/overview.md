@@ -3,9 +3,9 @@ title: 구현 시작 단계
 description: Adobe Commerce 프로젝트의 시작 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 ## 보안 구성
 
-- [Adobe 보안 알림 &#x200B; 서비스](security-notification-service.md)
+- [Adobe 보안 알림 &#x200B; 서비스](https://www.adobe.com/subscription/adbeSecurityNotifications.html)
 - [보안 사고 예방 및 대응](prevent-respond-security-incident.md)
-- [Google recaptcha](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)
+- [Google recaptcha](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html)
 - [Adobe Commerce robots.txt 모범 &#x200B; 사례](robots-txt.md)
 <!-- - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck -->
-- [클라우드 인프라 프로젝트의 보안 구성 확인](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration)
+- [클라우드 인프라 프로젝트의 보안 구성 확인](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
 
 ## 성능 모니터링
 
