@@ -3,12 +3,14 @@ title: 구현 개발 단계
 description: Adobe Commerce 프로젝트의 개발 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+role: Developer
+source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
+
 
 # 개발 단계
 
@@ -22,50 +24,54 @@ ht-degree: 0%
 - 스프린트 검토
 - 고객 승인
 
+>[!TIP]
+>
+>다음을 참조하십시오 [일반 모범 사례](general.md) 개발 프로세스의 전반적인 관리에 대한 높은 수준의 권장 사항.
+
 다음 섹션에는 개발 단계에 대한 모범 사례 정보가 포함되어 있습니다.
 
-## 애플리케이션 개발
+## 코드 관리
 
-### 코드 검토, 병합 및 테스트
+| 모범 사례 | 설명 |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| [코드 검토](code-review.md) | 구현된 기능이 요구 사항을 충족하는지 확인하기 위한 권장 유효성 검사 프로세스 |
+| [작성기와 Git 비교](code-management.md) | 릴리스 관리, 코드 복잡성 및 종속성 관리를 고려하여 사용자 지정 코드를 배포하는 방법을 결정합니다. |
+| [분기 전략](git-branching.md) | Git 저장소에서 소스 코드 관리 |
+| [GRA 예](../../architecture/global-reference/examples.md) | 를 구성하는 일반적인 방법 이해 [글로벌 참조 아키텍처](../../architecture/global-reference/overview.md) 코드 베이스 |
 
-<!--Assets not yet integrated
-- Guidelines and standards
-  - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
-  - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
-  - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
--->
-- [CSS 및 JS 파일 최적화](optimize-css-js-files.md)
-- [비공개 콘텐츠 블록에 대한 우수 사례](private-content-block-configuration.md)
-- [확장 개발자를 위한 우수 사례](https://developer.adobe.com/commerce/php/best-practices/)
+## 데이터베이스
 
-<!--Assets not yet integrated
+| 모범 사례 | 설명 |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [표 수정](modifying-core-and-third-party-tables.md) | Adobe Commerce 및 타사 데이터베이스 테이블을 수정하는 방법과 시기를 결정합니다 |
 
-  - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
-  - [Module basis](https://wiki.corp.adobe.com/x/kz4ykw) (wiki) — Develop custom modules
-  - [Exception Handling](https://wiki.corp.adobe.com/x/nz4ykw)
-  - [Custom code copyrights](https://wiki.corp.adobe.com/x/lj4ykw)
-- Source control and package management - wiki articles
-  - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
-  - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
-  - [Composer development](https://wiki.corp.adobe.com/x/mD4ykw)
-  - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
-  - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
-  - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
--->
+## 파일 최적화
+
+| 모범 사례 | 설명 |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| [카탈로그 이미지 크기 조정](catalog-image-resizing.md) | 최적의 성능을 보장하기 위해 스토어가 운영되기 전에 이미지 크기 조정에 대한 지침을 제공합니다. |
+| [CSS 및 JS](optimize-css-js-files.md) | 관리자 또는 명령줄에서 CSS(계단식 스타일 시트) 및 JS(JavaScript) 파일 병합 및 축소 |
+| [이미지](image-optimization.md) | 이미지 최적화 및 Fastly 를 사용하여 응답 시간 최적화 |
+
+## 프론트엔드 개발
+
+| 모범 사례 | 설명 |
+|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| [테마 개발](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | 테마, 향후 Adobe Commerce 버전 및 사용자 지정 확장 간의 호환성을 보장하는 개발 패턴에 대해 설명합니다 |
+
+## PHP 개발
+
+| 모범 사례 | 설명 |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| [예외 처리](exception-handling.md) | 예외 로깅에 권장되는 방법을 설명합니다. |
+| [확장](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | 확장, Adobe Commerce의 향후 버전 및 기타 사용자 지정 확장 간의 호환성을 보장하는 개발 패턴에 대해 설명합니다 |
+| [비공개 콘텐츠 블록](private-content-block-configuration.md) | 상점 성능을 최적화하도록 비공개 콘텐츠 블록 구성 |
 
 ## 플랫폼 및 서비스
 
-- [이미지 최적화에 Fastly 사용](image-optimization.md)
-
-### 로컬 및 스테이징 환경 설정
-
-- [클라우드 인프라의 개발 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
-
-## 코드, 병합, 테스트
-
-- [빌드 및 배포에 대한 우수 사례](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
-- [정적 콘텐츠 배포 - 클라우드](static-content-deployment.md)
-- [CSS 및 JS 파일 최적화](optimize-css-js-files.md)
-- [더 반응형 사이트를 위해 이미지 최적화](image-optimization.md)
-- [클라우드 인프라에서 Adobe Commerce에 대한 문제 해결 우수 사례](troubleshooting.md)
-- [데이터베이스 테이블 수정 시기 및 방법 이해](modifying-core-and-third-party-tables.md)
+| 모범 사례 | 설명 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [빌드 및 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | 클라우드 인프라 프로젝트에서 Adobe Commerce의 빌드 및 배포 단계에 대한 모범 사례를 설명합니다 |
+| 디버깅 | Adobe Commerce 프레임워크를 체계적이고 효과적으로 디버그 |
+| [정적 콘텐츠 배포](static-content-deployment.md) | 스토어프론트에 정적 콘텐츠가 표시되지 않는 문제를 방지합니다. |
+| [문제 해결](troubleshooting.md) | 일반적인 Adobe Commerce 구현 문제 해결 |

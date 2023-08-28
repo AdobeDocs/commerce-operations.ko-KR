@@ -2,10 +2,10 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
+source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '278'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 11%
    - [통합 전략](architecture/integration-strategy.md)
    - [확장성 전략](architecture/extensibility-strategy.md)
    - [통합 옵션](architecture/integration-options.md)
-   - [글로벌 참조 아키텍처](architecture/global-reference.md)
+   - 글로벌 참조 아키텍처 {#global-reference-architecture}
+      - [개요](architecture/global-reference/overview.md)
+      - [예](architecture/global-reference/examples.md)
+      - 작성기 개발 {#composer}
+         - [개요](architecture/global-reference/composer/overview.md)
+         - [프로젝트 구조](architecture/global-reference/composer/project-structure.md)
+         - [팁과 트릭](architecture/global-reference/composer/tips-and-tricks.md)
    - Headless 상거래 {#headless}
       - [이점](architecture/headless/benefits.md)
       - [Headless에 여정](architecture/headless/journey-to-headless.md)
@@ -89,6 +95,13 @@ ht-degree: 11%
       - [결제 저장 처리](best-practices/planning/payment-processing-storage.md)
    - 개발 {#development}
       - [개요](best-practices/development/overview.md)
+      - [일반 모범 사례](best-practices/development/general.md)
+      - [코드 관리](best-practices/development/code-management.md)
+      - [코드 검토](best-practices/development/code-review.md)
+      - [디버깅](best-practices/development/debugging.md)
+      - [예외 처리](best-practices/development/exception-handling.md)
+      - [Git 분기](best-practices/development/git-branching.md)
+      - [카탈로그 이미지 크기 조정](best-practices/development/catalog-image-resizing.md)
       - [이미지 최적화](best-practices/development/image-optimization.md)
       - [문제 해결](best-practices/development/troubleshooting.md)
       - [CSS 및 JS 파일 최적화](best-practices/development/optimize-css-js-files.md)
