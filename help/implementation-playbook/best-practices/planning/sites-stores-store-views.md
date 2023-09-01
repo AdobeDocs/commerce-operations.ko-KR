@@ -4,20 +4,16 @@ description: 사이트 성능을 극대화하기 위한 사이트, 스토어 및
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # 사이트, 스토어 및 스토어 뷰 구성에 대한 우수 사례
 
-최상의 사이트 성능을 위해 클라우드 인프라 프로젝트에서 Adobe Commerce에 대해 최대 50개의 사이트, 50개의 스토어 및 50개의 스토어 보기를 구성합니다.
-
->[!NOTE]
->
->클라우드 인프라의 Adobe Commerce의 경우 모범 사례는 통합 및 개발 환경보다 더 많은 리소스를 보유하고 있는 프로덕션 환경(및 리소스 제한에 따라 Pro 아키텍처에서 스테이징)에 특히 적용됩니다. 통합(Pro 및 Starter)과 스테이징 환경(Starter)의 경우, 스토어 조회수를 5 또는 10 미만으로 줄이십시오(기술 검토에 따름).
+클라우드 인프라의 Adobe Commerce의 경우 모범 사례는 통합 및 개발 환경보다 더 많은 리소스를 보유하고 있는 프로덕션 환경(및 리소스 제한에 따라 Pro 아키텍처에서 스테이징)에 특히 적용됩니다.
 
 ## 영향을 받는 제품 및 버전
 
