@@ -3,10 +3,10 @@ title: 구현 유지 관리 단계
 description: Adobe Commerce 프로젝트의 유지 관리 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
+source-git-commit: aad06c1c2def87a319426860b47b8e5ff5e96780
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -14,65 +14,71 @@ ht-degree: 0%
 
 유지 관리 단계에는 다음 활동이 포함됩니다.
 
-- 사이트 모니터링
+- 버그 수정
 - 카탈로그 관리
-- 색인화
 - 구성
 - 향상된 기능
-- 버그 수정
-- 관리 서비스
+- 색인화
+- Managed Services
+- 사이트 모니터링
 - 업그레이드
 
 다음 섹션에는 유지 관리 단계에 대한 모범 사례 정보가 포함되어 있습니다.
 
-## 사이트 모니터링
+## 버그 수정
 
-- [감사 프론트엔드 성능](frontend-performance.md)
-- [준비, 설정, 유지 관리](https://business.adobe.com/blog/basics/ready-set-maintain)
-- [SWAT 도구를 사용하여 Adobe Commerce의 보안 및 작동 가능성 보장](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG 데크
-- [New Relic 및 상태 알림을 사용하여 클라우드 인프라에 배포된 Adobe Commerce 사이트의 성능, 디스크 공간 및 로그를 모니터링합니다](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
-
-## 데이터베이스 관리
-
-- [데이터베이스 성능 문제 &#x200B; 해결](resolve-database-performance-issues.md)
-- [Adobe Commerce 2.3.5 MariaDB용 업그레이드 사전 요구 &#x200B; 사항](commerce-235-upgrade-prerequisites-mariadb.md)
+| 모범 사례 | 설명 |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| [[!DNL Quality Patches Tool] 사용](../../../tools/quality-patches-tool/usage.md) | 모든 Adobe Commerce 패치에 대한 일반 정보를 적용, 되돌리기 및 봅니다. |
 
 ## 카탈로그 관리
 
-<!-- Asset not yet integrated
-- [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
--->
-- [제품 카탈로그 관리](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
-
-## 색인화
-
-<!-- Asset not yet integrated
-- [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
--->
-- [색인 재지정 방법](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [인덱서에 대한 구성 모범 &#x200B; 사례](indexer-configuration.md)
-- [주문 처리를 위한 구성 모범 사례](order-processing-configuration.md)
-<!-- Asset not yet integrated from CTAG deck:
-- Plan upsizing for planned traffic increases during promotions or holidays -->
+| 모범 사례 | 설명 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [제품 카탈로그 관리](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | 제품 카탈로그 관리 전략을 설명하는 상거래 및 커피 레코딩 |
 
 ## 구성
 
-- [프로덕션 사이트에 대한 관리자 업데이트 예약](scheduling-admin-updates-in-production.md)
+| 모범 사례 | 설명 |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [프로덕션 사이트에 대한 관리자 업데이트 예약](scheduling-admin-updates-in-production.md) | 중요한 Adobe Commerce 업데이트를 관리하여 성능 저하 및 중단을 방지합니다. |
 
-<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
+## 데이터베이스 관리
 
-## 버그 수정
-
-- [품질 패치 도구 사용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+| 모범 사례 | 설명 |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| [데이터베이스 성능 문제 &#x200B; 해결](resolve-database-performance-issues.md) | 클라우드 인프라에 배포된 Adobe Commerce 사이트에서 성능이 저하되는 데이터베이스 문제를 해결합니다. |
+| [Adobe Commerce 2.3.5 MariaDB용 업그레이드 사전 요구 &#x200B; 사항](commerce-235-upgrade-prerequisites-mariadb.md) | 업그레이드를 위해 MariaDB 데이터베이스를 준비합니다. |
 
 ## 향상된 기능
 
-- [개인화](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-- [전자 상거래 트렌드](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
-- [AI 자동화](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
+| 모범 사례 | 설명 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [개인화](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | 개인화 전략을 설명하는 상거래 및 커피 레코딩. |
+| [전자 상거래 트렌드](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | 전자 상거래 트렌드를 설명하는 상거래 및 커피 레코딩. |
+| [AI 자동화](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | 인공 지능 및 자동화를 통한 개인화 가능성을 설명하는 상거래 및 커피 레코딩 |
+
+## 색인화
+
+| 모범 사례 | 설명 |
+|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [색인 재지정 방법](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | cron 작업 또는 CLI 툴을 사용하여 리인덱싱을 실행합니다. |
+| [인덱서 &#x200B; 구성](indexer-configuration.md) | 인덱서 구성에 대한 모범 사례에 따라 사이트 성능을 최적화합니다. |
+| [주문 처리](order-processing-configuration.md) | 체크아웃 및 주문 처리 성능을 개선합니다. |
+
+## 사이트 모니터링
+
+| 모범 사례 | 설명 |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [감사 프론트엔드 성능](frontend-performance.md) | 웹 성능 도구를 사용하여 사이트 성능에 부정적인 영향을 주는 문제를 식별하고 해결합니다. |
+| [준비, 설정, 유지 관리](https://business.adobe.com/blog/basics/ready-set-maintain) | 비즈니스 가치 및 가동 시간을 극대화하기 위한 Adobe Commerce 사이트 유지 관리 팁입니다. |
+| [사용 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 한 곳에서 Adobe Commerce 사이트에 대한 중요한 통찰력을 볼 수 있습니다. |
+| [성능, 디스크 공간 및 로그 모니터링](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
 
 ### 업그레이드
 
-- [규모에 맞게 패치](patching-at-scale.md)
-- [서비스 및 구성 요소를 최신 버전으로 &#x200B; 업데이트](update-services.md)
-- [Adobe Commerce &#x200B; 업그레이드 체크리스트](upgrade-checklist.md)
+| 모범 사례 | 설명 |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [규모에 맞게 패치](patching-at-scale.md) | Adobe Commerce에 대한 중앙 집중식 패치가 엔터프라이즈 프로젝트 관리에 어떻게 도움이 되는지 알아봅니다. |
+| [서비스 및 구성 요소를 최신 버전으로 &#x200B; 업데이트](update-services.md) | Adobe Commerce on cloud infrastructure 기술 스택을 업데이트하십시오. |
+| [Adobe Commerce &#x200B; 업그레이드 체크리스트](upgrade-checklist.md) | 업그레이드 체크리스트를 만들고 사용하여 Adobe Commerce 업그레이드 전략을 계획합니다. |
