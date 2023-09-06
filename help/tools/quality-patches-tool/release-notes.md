@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
+source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
 workflow-type: tm+mt
-source-wordcount: '13965'
+source-wordcount: '14327'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.37 {#v1-1-37}
+
+* **ACSD-52613** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 업데이트가 없더라도 캐시 및 색인이 새로 고침되는 문제가 수정되었습니다. `Inventory_source` rest API별 항목.
+* **ACSD-51884** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - resize 명령을 실행한 후 제품 이미지 캐시 경로가 올바르지 않게 되는 문제를 수정합니다.
+* **ACSD-53628** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - CSV 판매 주문 보고서에 잘못된 특수 문자가 표시되는 문제가 수정되었습니다.
+* **ACSD-53148** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 구성 가능한 동일한 제품을 장바구니에 추가하기 위해 GraphQL에서 두 개의 병렬 요청이 결과적으로 동일한 제품 SKU를 사용하는 장바구니에 두 개의 개별 항목이 표시되는 문제를 해결합니다.
+* **ACSD-52606** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 오류 메시지가 표시되는 문제를 수정합니다 *주문하신 물건이 픽업 준비가 되지 않았습니다* 을 클릭하면 표시됩니다 **[!UICONTROL Notify Order is Ready for Pickup]**.
+* **ACSD-51574** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 이미지를 동일한 이름의 다른 이미지로 바꾼 후 프론트엔드에서 이미지가 업데이트되지 않는 문제를 수정합니다.
+* **ACSD-53728** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 제품 EAV 인덱서를 완료하는 데 시간이 더 오래 걸리는 문제를 해결했습니다.
+* **ACSD-53979** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 시작 메시지에 작은 따옴표가 포함된 경우 홈페이지에서 발생하는 JS 문제를 수정합니다.
+* **ACSD-52085** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 특별 가격이 있는 구성 가능한 제품이 제품의 슬라이드에 표시되지 않는 문제를 해결했습니다.
+* **ACSD-53795** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 의 잘못된 데이터 유형 문제를 수정합니다. `indexer_update_all_views` cron job.
+* **ACSD-52143** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 제품 가져오기 후 사용자 지정 옵션이 제거되는 문제를 수정합니다.
+* **ACSD-53750** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 수정 사항 *끊어진 파이프 또는 닫힌 연결* 다중 스레드 도중 오류 발생 `catalog_product_price` 색인 재지정.
+* **ACSD-49843** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.7) - 온라인 결제 방법으로 주문 품목이 자동 청구된 후 제품 다운로드에서 링크를 사용할 수 없는 문제를 해결합니다. **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** 설정이 활성화되었습니다.
+* **ACSD-47054** (Adobe Commerce >=2.4.2 &lt;2.4.6) - 미리보기 색인 재지정이 모든 스토어에 대해 색인 재지정을 실행하여 속도가 느려지는 문제를 수정합니다.
+* ACSD-46541, ACSD-47079용 새 버전이 추가되었습니다.
+* ACSD-49970-v3이 ACSD-54095으로 대체되었습니다.
 
 ## v1.1.36 {#v1-1-36}
 
