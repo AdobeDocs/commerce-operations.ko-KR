@@ -3,7 +3,7 @@ title: GraphQL API용 Application Server
 description: Adobe Commerce 배포에서 GraphQL API용 Application Server를 활성화하려면 다음 지침을 따르십시오.
 badgeCoreBeta: label="2.4.7-베타1" type="informative"
 exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
-source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
+source-git-commit: 4f83a2181f6a7880b77dc07729574365def71f1d
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Application Server를 실행하려면 Open Swool 확장을 설치하고 이 응�
 
 ### Nginx 구성
 
-특정 상거래 배포에 따라 Nginx를 구성하는 방법이 결정됩니다. 일반적으로 Nginx 구성 파일의 기본 이름은 입니다 `nginx.conf` 및 는 다음 디렉터리 중 하나에 배치됩니다. `/usr/local/nginx/conf`, `/etc/nginx`, 또는 `/usr/local/etc/nginx`. 다음을 참조하십시오 [초급자 안내서](http://nginx.org/en/docs/beginners_guide.html) nginx 구성에 대한 자세한 내용은 을 참조하십시오.
+특정 상거래 배포에 따라 Nginx를 구성하는 방법이 결정됩니다. 일반적으로 Nginx 구성 파일의 기본 이름은 입니다 `nginx.conf` 및 는 다음 디렉터리 중 하나에 배치됩니다. `/usr/local/nginx/conf`, `/etc/nginx`, 또는 `/usr/local/etc/nginx`. 다음을 참조하십시오 [초급자 안내서](https://nginx.org/en/docs/beginners_guide.html) nginx 구성에 대한 자세한 내용은 을 참조하십시오.
 
 샘플 Nginx 구성:
 

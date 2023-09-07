@@ -4,9 +4,9 @@ description: Adobe Commerce 사이트의 백엔드 성능을 최적화하는 방
 badge: label="Objectsource에 의해 기여됨" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe Commerce 프로젝트 테스트에 대해 자세히 알아보기:
 
 ### 성능 문제 파악 및 해결
 
-New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하여 병목 현상을 감지하고 상거래 사이트를 효과적으로 최적화하여 성능 문제를 해결합니다. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) 클라우드 인프라의 Adobe Commerce에 포함되어 있으며 [Adobe Commerce 관찰](/help/tools/observation-for-adobe-commerce/intro.md) 클라우드 및 온프레미스 배포에 모두 포함됩니다.
+New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하여 병목 현상을 감지하고 상거래 사이트를 효과적으로 최적화하여 성능 문제를 해결합니다. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) 클라우드 인프라의 Adobe Commerce에 포함되어 있으며 [Adobe Commerce 관찰](/help/tools/observation-for-adobe-commerce/intro.md) 클라우드 및 온프레미스 배포에 모두 포함됩니다.
 
 이러한 도구를 사용하여 사이트 성능을 분석하고 다음과 관련된 성능 문제를 식별합니다.
 
