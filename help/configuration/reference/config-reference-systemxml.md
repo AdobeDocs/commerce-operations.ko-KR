@@ -4,9 +4,9 @@ description: 시스템 XML 파일이 상거래 애플리케이션 구성을 관�
 feature: Configuration, System
 badge: label="데이비드 램바우어에 의해 기여" type="Informative" url="https://github.com/DavidLambauer" tooltip="데이비드 램바우어"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag에는 다음 속성이 있을 수 있습니다.
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | 섹션을 참조하는 데 사용되는 식별자를 정의합니다. | `typeId` | 필수 |
 | `translate` | 번역할 수 있는 필드를 정의합니다. 제공 `label` 레이블을 번역할 수 있도록 만들기 위해 | `string` | 선택 사항 |
-| `type` | 렌더링된 HTML 요소의 입력 유형을 정의합니다. 기본값은 입니다. `text`. | `string` | 선택 사항 |
 | `sortOrder` | 섹션의 정렬 순서를 정의합니다. 숫자가 높으면 섹션이 페이지 맨 아래로 밀리고, 숫자가 낮으면 섹션이 맨 위로 밀립니다. | `float` | 선택 사항 |
 | `class` | 정의된 CSS 클래스를 렌더링된 탭 HTML 요소에 추가합니다. | `string` | 선택 사항 |
 
