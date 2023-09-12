@@ -3,9 +3,9 @@ title: 실행 후 단계
 description: 원활한 Adobe Commerce 사이트 구현을 위해 출시 후 체크리스트를 사용합니다.
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ce41158f900fad27e3e7b8157f5c64ac988bbabf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 - 클러스터를 라이브로 태깅하고 지원 티켓을 만들어 높은 SLA 모니터링 활성화
 - CSE(Customer Success Engineer) 및 TAM(Technical Account Manager)은 컷오버가 완료되는 즉시 다음 작업을 수행합니다.
    - 클러스터를 Adobe Commerce 클라이언트에 대한 높은 SLA로 태깅하고 지원 티켓을 만들어 활성화합니다
-   - 도메인 이름에 대한 Pingdom 검사 활성화
+   - 활성화 **내부** Pingdom이 도메인 이름을 확인합니다(Pingdom에 대한 공개 액세스를 사용할 수 없음).
    - 모니터링 상태를 검토하고 모든 항목이 녹색인지 확인합니다.
    - 보증 기간 및 매개 변수에 대해 Go-Live 당일 이메일로 이해 당사자에게 계속 알립니다.
 
