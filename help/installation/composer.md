@@ -2,16 +2,18 @@
 title: 온프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
 # 온프레미스 설치 빠른 시작
 
-다음을 사용합니다. [작성기](https://getcomposer.org/) Adobe Commerce 및 Magento Open Source 구성 요소와 해당 종속성을 관리합니다. Composer를 사용하여 Adobe Commerce 및 Magento Open Source 메타 패키지를 가져오면 다음과 같은 이점이 있습니다.
+이 페이지의 지침은에 Adobe Commerce 및 Magento Open Source을 설치하는 방법을 설명합니다. [자체 호스팅](../implementation-playbook/infrastructure/self-hosting/overview.md) 인프라. 기존 설치 업그레이드에 대한 지침은 [_업그레이드 안내서_](../upgrade/overview.md).
+
+Adobe 사용 [작성기](https://getcomposer.org/) Adobe Commerce 및 Magento Open Source 구성 요소와 해당 종속성을 관리합니다. Composer를 사용하여 Adobe Commerce 및 Magento Open Source 메타 패키지를 가져오면 다음과 같은 이점이 있습니다.
 
 - 소스 코드로 번들로 묶지 않고 타사 라이브러리 재사용
 - 강력한 종속성 관리 기능을 갖춘 구성 요소 기반 아키텍처를 사용하여 확장 충돌 및 호환성 문제 감소
@@ -33,7 +35,7 @@ ht-degree: 0%
 
 ## 파일 시스템 소유자로 로그인
 
-의 소유권, 권한 및 파일 시스템 소유자에 대해 알아봅니다. [소유권 및 권한 항목 개요](prerequisites/file-system/overview.md).
+에서 소유권, 권한 및 파일 시스템 소유자에 대해 알아봅니다. [소유권 및 권한 항목 개요](prerequisites/file-system/overview.md).
 
 파일 시스템 소유자로 전환하려면 다음을 수행하십시오.
 
@@ -53,7 +55,7 @@ ht-degree: 0%
 
 1. 디렉토리에서 CLI 명령을 실행하려면 `<app_root>/bin` 내 시스템으로 `PATH`.
 
-   셸의 구문이 다르므로 다음과 같은 참조를 참조하십시오 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   조개껍질에는 다른 구문이 있으므로 다음과 같은 참조를 참조하십시오 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    CentOS용 샘플 bash 쉘:
 
@@ -87,40 +89,36 @@ Adobe Commerce 또는 Magento Open Source 메타 패키지를 가져오려면 �
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   메시지가 표시되면 인증 키를 입력합니다. 공개 및 비공개 키는 [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+   메시지가 표시되면 인증 키를 입력합니다. 공개 및 비공개 키는 [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    오류가 발생하면 다음과 같이 `Could not find package...` 또는 `...no matching package found`를 클릭하고, 명령에 오타가 없는지 확인합니다. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 연락처 [Adobe Commerce 지원](https://support.magento.com/hc/en-us) 도와주세요.
 
    다음을 참조하십시오 [문제 해결](https://support.magento.com/hc/en-us/articles/360033818091) 추가 오류에 대한 도움말을 봅니다.
 
-   >[!NOTE]
-   >
-   >Adobe Commerce 고객은 GA(General Availability) 날짜 2주 전에 패치에 액세스할 수 있습니다. 프리릴리스 패키지는 Composer를 통해서만 사용할 수 있습니다. GA될 때까지 개발자 포털 또는 GitHub에서 사전 릴리스에 액세스할 수 없습니다. Composer에서 이러한 패키지를 찾을 수 없는 경우 Adobe Commerce 지원에 문의하십시오.
-
 ### 예 - 마이너 릴리스
 
-마이너 릴리스에는 새로운 기능, 품질 수정 사항 및 보안 수정 사항이 포함되어 있습니다. 작성기를 사용하여 부 릴리스를 지정합니다. 예를 들어 Adobe Commerce 2.4.5 메타패키지를 지정하려면 다음을 수행합니다.
+마이너 릴리스에는 새로운 기능, 품질 수정 사항 및 보안 수정 사항이 포함되어 있습니다. 작성기를 사용하여 부 릴리스를 지정합니다. 예를 들어 Adobe Commerce 2.4.6 메타패키지를 지정하려면 다음을 수행합니다.
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### 예 - 품질 패치
 
-품질 패치에는 주로 기능이 포함됩니다 _및_ 보안 수정 사항. 그러나 이전 버전과 호환되는 새로운 기능이 포함되어 있는 경우도 있습니다. 작성기를 사용하여 품질 패치를 다운로드합니다. 예를 들어 Adobe Commerce 2.4.5 메타패키지를 지정하려면 다음을 수행합니다.
+품질 패치에는 주로 기능이 포함됩니다 _및_ 보안 수정 사항. 그러나 이전 버전과 호환되는 새로운 기능이 포함되어 있는 경우도 있습니다. 작성기를 사용하여 품질 패치를 다운로드합니다. 예를 들어 Adobe Commerce 2.4.6 메타패키지를 지정하려면 다음을 수행합니다.
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### 예 - 보안 패치
 
 보안 패치에는 보안 수정 사항만 포함됩니다. 업그레이드 프로세스를 더 빠르고 쉽게 할 수 있도록 설계되었습니다.
 
-보안 패치는 작성기 이름 지정 규칙을 사용합니다 `2.4.5-px`. 작성기를 사용하여 패치를 지정합니다. 예를 들어 Adobe Commerce 2.4.5-p1 메타패키지를 다운로드하려면 다음을 수행합니다.
+보안 패치는 작성기 이름 지정 규칙을 사용합니다 `2.4.6-px`. 작성기를 사용하여 패치를 지정합니다. 예를 들어 Adobe Commerce 2.4.6-p1 메타패키지를 다운로드하려면 다음을 수행합니다.
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## 파일 권한 설정
@@ -166,7 +164,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->다음을 사용하여 관리자 URI를 사용자 지정할 수 있습니다. `--backend-frontname` 옵션을 선택합니다. 그러나 이 옵션은 생략하고 설치 명령으로 임의의 URI를 자동으로 생성할 수 있도록 하는 것이 좋습니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다. 설치가 완료되면 콘솔에 URI가 표시됩니다.
+>다음을 사용하여 관리자 URI를 사용자 지정할 수 있습니다. `--backend-frontname` 옵션을 선택합니다. 그러나 Adobe은 이 옵션을 생략하고 설치 명령으로 무작위 URI를 자동으로 생성하도록 할 것을 권장합니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다. 설치가 완료되면 콘솔에 URI가 표시됩니다.
 
 >[!TIP]
 >

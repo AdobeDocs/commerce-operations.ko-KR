@@ -2,9 +2,9 @@
 title: 인증 키 받기
 description: repo.magento.com에서 Adobe Commerce 및 Magento Open Source 작성기 패키지에 액세스하기 위해 자격 증명을 검색하려면 다음 단계를 따르십시오.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 �
 
 인증 키를 만들려면 다음을 수행하십시오.
 
-1. 에 로그인합니다 [Commerce Marketplace](https://marketplace.magento.com). 계정이 없는 경우 **등록**.
+1. 에 로그인합니다 [Commerce Marketplace](https://commercemarketplace.adobe.com/). 계정이 없는 경우 **등록**.
+
 1. 페이지 오른쪽 상단에서 계정 이름을 클릭하고 을 선택합니다. **내 프로필**.
 
 1. 클릭 **액세스 키** 를 클릭합니다.
@@ -45,7 +46,7 @@ Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 �
 
 ### SSH 액세스 토큰 관리
 
-SSH를 사용하여 Adobe Commerce 릴리스를 다운로드하려면 다운로드 액세스 토큰을 생성해야 합니다. 토큰을 생성하려면:
+SSH를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스를 다운로드하려면 다운로드 액세스 토큰을 생성해야 합니다. 토큰을 생성하려면:
 
 1. 에 로그인 [magento.com 계정](https://account.magento.com/customer/account/login).
 1. 클릭 **내 계정** 을 클릭합니다.
