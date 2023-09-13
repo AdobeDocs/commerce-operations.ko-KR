@@ -4,9 +4,9 @@ description: 시스템 XML 파일이 상거래 애플리케이션 구성을 관�
 feature: Configuration, System
 badge: label="데이비드 램바우어에 의해 기여" type="Informative" url="https://github.com/DavidLambauer" tooltip="데이비드 램바우어"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-태그에 다음과 같은 하위 항목이 있을 수 있습니다.
 | `more_url` | 확장할 수 없습니다. 아래를 참조하십시오. | `typeUrl` |
 | `demo_url` | 확장할 수 없습니다. 아래를 참조하십시오. | `typeUrl` |
 | `hide_in_single_store_mode` | 그룹이 단일 저장소 모드로 표시되어야 하는지 여부입니다. `1` 그룹을 숨깁니다. `0` 그룹을 표시합니다. | `int` |
-| `source_service` | 선택 옵션을 채우는 데 사용되는 서비스입니다. | `complexType` |
 | `options` | 사용되지 않습니다. 더 이상 사용되지 않을 수 있습니다. | `complexType` |
 | `depends` | 를 사용하여 다른 필드에 종속성을 선언할 수 있습니다. 지정된 필드에 값이 인 경우 특정 필드/그룹만 표시하는 데 사용됩니다. `1`. 이 노드에는 `section/group/field`-string. | `complexType` |
 | `attribute` | 사용자 지정 특성은 프론트엔드 모델에서 사용할 수 있습니다. 일반적으로 는 주어진 프론트엔드 모델을 더 역동적으로 만드는 데 사용됩니다. | `complexType` |
