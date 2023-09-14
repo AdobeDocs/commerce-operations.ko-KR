@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
+source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
 workflow-type: tm+mt
-source-wordcount: '14327'
+source-wordcount: '14539'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4) - 부분 색인이 실행될 때 공유 카탈로그에 할당된 제품이 상점 앞에 표시되지 않는 문제를 수정합니다.
+* **ACSD-54018** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.6) - 의 성능 문제를 수정합니다. [!UICONTROL Product List] 위젯 조건에서 비전역 속성을 사용하는 위젯.
+* **ACSD-54111** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - 워터마크 이미지의 종횡비가 제품 이미지와 일치하지 않을 때 제품 썸네일 이미지가 상점 앞에 표시되지 않는 문제를 수정합니다.
+* **ACSD-47669** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - 수정 사항 *무결성 제약 조건 위반: 1452 하위 행을 추가하거나 업데이트할 수 없음: 외래 키 제약 조건이 실패합니다* 제품 CSV를 가져오는 중 오류가 발생했습니다.
+* **ACSD-53347** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 가격 인덱서를 실행하는 데 시간이 너무 오래 걸리는 문제를 해결했습니다.
+* **ACSD-52287** (Adobe Commerce >=2.3.7 &lt;2.4.7) - 비동기 그리드 인덱싱이 활성화되면 보관된 주문 그리드에서 잘못된 주문 상태가 발생하는 문제를 수정합니다.
+* **ACSD-52929** (Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 인벤토리 인덱서가 비동기 모드로 구성된 경우 기본 소스 항목의 인덱스를 다시 인덱싱하는 중복 요청 문제를 수정합니다.
+* **ACSD-53824** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 다음 문제를 수정합니다. `UpdateMultiselectAttributesBackendTypes` 다음 기간 동안 마이그레이션 데이터 패치가 데이터베이스 트랜잭션 크기 제한을 초과합니다. `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
