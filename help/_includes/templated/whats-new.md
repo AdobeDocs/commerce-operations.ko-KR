@@ -1,7 +1,7 @@
 ---
-source-git-commit: 366180602621742c40184192633863c5ce9a8e9f
+source-git-commit: 578b3a7813151406d6e12e5ebed4761f5edb6b49
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2023년 9월 14일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.38 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d1fac956ceb8f869b60accfe0180c593d659ec1">1d1fac</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023년 9월 11일
 
