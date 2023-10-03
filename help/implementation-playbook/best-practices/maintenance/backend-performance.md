@@ -4,7 +4,8 @@ description: Adobe Commerce 사이트의 백엔드 성능을 최적화하는 방
 badge: label="Objectsource에 의해 기여됨" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
+source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 트래픽이 많은 기간에 대한 Commerce 프로젝트 준비에 대해 자세히 알아보십시오.
 
-- [휴일 준비](https://experienceleague.adobe.com/docs/events/mbi-webinars-recordings/2021/holiday-readiness.html)
+- [휴일 준비](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [휴일 쇼핑 분석](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
 - [서지 용량 증가](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
