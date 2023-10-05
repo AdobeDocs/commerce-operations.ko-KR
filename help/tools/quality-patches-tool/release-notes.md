@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
+source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
 workflow-type: tm+mt
-source-wordcount: '14539'
+source-wordcount: '14811'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.39 {#v1-1-39}
+
+* **ACSD-53704** (Adobe Commerce >=2.4.0 &lt;2.4.7) - 보상 포인트 만료 후 보상 포인트 균형 내역이 잘못 계산되는 문제를 수정합니다.
+* **ACSD-53583** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 의 부분 색인 재지정 성능 개선 *범주 제품* 및 *제품 범주* 인덱서입니다.
+* **ACSD-54026** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 의 잘못된 오류 메시지를 수정합니다. `updateCompanyRole` 권한이 없는 사용자에 대한 GraphQL 요청입니다.
+* **ACSD-54106** (Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.5) - 터키어 악센트 부호가 있는 문자의 이름별 카테고리 제품 정렬이 올바르지 않은 문제를 수정합니다.
+* **ACSD-52219** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 책갈피 보기 사이를 자주 전환할 때 관리 그리드 저장 필터가 예상대로 작동하지 않는 문제를 해결했습니다.
+* **ACSD-54342** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 잘못된 오류 메시지 수정 *데이터 구조 오류: 값이 혼합되었습니다.* 유효한 데이터가 없는 CSV 파일을 가져올 때.
+* **ACSD-54660** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6) - 새 입력 속성이 추가되었습니다. *sort* GraphQL에서 고객 주문 정렬 기준 `sort_field` 및 `sort_direction`.
+* **ACSD-54776** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 선택 취소되는 문제가 해결되었습니다. *[!UICONTROL Use Default Value]* 및 기본값이 아닌 제품 필드 값은 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 저장되지 않습니다.
+* **ACSD-53998** (Adobe Commerce 및 Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - 다음 오류가 발생하는 문제가 해결되었습니다. **[!UICONTROL Dynamic Block]** 를 기반으로 함 **[!UICONTROL Customer Segment]** 은 고객 계정에서 로그아웃한 후 올바르게 작동하지 않습니다.
+* **ACSD-53204** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 수정 사항 *제품을 저장할 수 없습니다.* 을(를) 사용하여 제품 갤러리에 이미지를 추가하도록 동시에 요청할 때 오류 발생 `rest/V1/products/<sku>/media` 엔드포인트.
+* **ACSD-47657** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - AWS 자격 증명에 대한 캐싱 메커니즘을 추가했습니다. 이제 자격 증명 공급자는 Magento 캐시를 사용하여 EC2 구성을 위해 AWS에서 검색한 자격 증명을 캐시합니다.
+* 업데이트된 패치: ACSD-51984, ACSD-51574.
 
 ## v1.1.38 {#v1-1-38}
 
