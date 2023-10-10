@@ -3,9 +3,9 @@ title: Commerce용 바니시 구성
 description: Commerce 애플리케이션에 대한 Varnish 구성 파일을 업데이트하고 관리하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,8 @@ ht-degree: 0%
    | 액세스 목록 | 정규화된 호스트 이름, IP 주소 또는 [CIDR(Classless Inter-Domain Routing)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) 표기법 컨텐츠를 무효화할 IP 주소 범위입니다. 다음을 참조하십시오 [니스 캐시 삭제](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | 백엔드 호스트 | Varnish의 정규화된 호스트 이름 또는 IP 주소 및 수신 포트를 입력하십시오. _백엔드_ 또는 _원본 서버_&#x200B;즉, Varnish 컨텐츠를 제공하는 서버가 가속화됩니다. 일반적으로 웹 서버입니다. 다음을 참조하십시오 [Vannish 캐시 백엔드 서버](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | 백엔드 포트 | 원본 서버의 수신 포트입니다. |
-   | 유예 기간 | 유예 기간은 백엔드가 응답하지 않는 경우 Varnish가 오래된 콘텐츠를 제공하는 기간을 결정합니다. 기본값은 300초입니다. |
+   | 유예 기간 | 백엔드가 응답하지 않는 경우 Vannish가 오래된 콘텐츠를 제공하는 기간을 결정합니다. 기본값은 300초입니다. |
+   | 매개변수 크기 처리  [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 베타 버전에서만 사용 가능"} | 의 최대 수를 지정합니다. [레이아웃 핸들](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) 을(를) 처리하려면 [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) 전체 페이지 캐싱을 위한 HTTP 엔드포인트. 크기를 제한하면 보안과 성능을 향상시킬 수 있습니다. 기본값은 100입니다. |
 
 1. 클릭 **구성 저장**.
 

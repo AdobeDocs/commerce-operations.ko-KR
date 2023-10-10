@@ -3,7 +3,7 @@ title: 구성 모범 사례
 description: 다음 모범 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Commerce는 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 >
 >다음 **[!UICONTROL Developer]** 탭 및 옵션은 다음 위치에서만 사용할 수 있습니다. [개발자 모드](../configuration/cli/set-mode.md). [클라우드 인프라의 Adobe Commerce](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) 은(는) 을 지원하지 않습니다. `Developer` 모드.
 
-## 비동기 구성 저장 [!BADGE 2.4.7-베타1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta1에서만 사용 가능"}
+## 비동기 구성 저장 [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 베타 버전에서만 사용 가능"}
 
 저장소 수준 구성이 많은 프로젝트의 경우 저장소 구성을 저장하는 데 과도한 시간이 소요되거나 시간 초과가 발생할 수 있습니다. 다음 _비동기 구성_ 모듈은 소비자를 사용하여 메시지 큐의 저장을 처리하는 cron 작업을 실행하여 비동기 구성을 저장할 수 있습니다. 비동기 구성: **비활성화됨** 기본적으로.
 

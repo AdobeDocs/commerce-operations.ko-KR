@@ -2,9 +2,9 @@
 title: 제품 가용성
 description: 현재 지원되는 Adobe Commerce 기능에 대해 알아보고 특정 Adobe Commerce 릴리스와의 호환성을 확인합니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 9b09cd4d4934735a6fb06e4193dc652d65098f66
+source-git-commit: 3592b81b260eee7d3889f3f9cf702d8f13aacae3
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '553'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 15%
 
 서비스 및 확장은 제품 릴리스 당시 Commerce의 최신 릴리스 버전에서 테스트되었습니다.
 
-지원되는 버전은 Adobe에서 완전히 테스트되었습니다. 고객 지원 센터를 통해 지원되는 버전을 사용할 수 있습니다. 이전 버전은 제대로 작동할 수 있지만 공식적으로 지원되지 않습니다.
+지원되는 버전은 Adobe에서 완전히 테스트되었습니다. 지원되는 버전에 대한 지원은 Adobe 고객 지원에서 사용할 수 있습니다. 이전 버전은 제대로 작동할 수 있지만 공식적으로 지원되지 않습니다.
+
+>[!NOTE]
+>
+>Adobe Commerce 버전에 대한 지원에는 [사용 가능한 보안 패치](versions.md).
 
 ## Adobe 작성 확장
 
@@ -24,12 +28,12 @@ ht-degree: 15%
 
 다음 표는 Adobe Commerce 버전을 기준으로 각 확장에 대한 버전 지원을 보여 줍니다.
 
-| **Adobe Commerce 버전** | 2.4.7-베타1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                          |
-|----------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _Adobe Commerce에 대한 이벤트 Adobe I/O_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [작성기](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[릴리스 정보](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| _B2B_ | 1.4.0+ | 1.3.5+ | 1.3.4 | 1.3.3 | 1.3.2 | [작성기](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
-| _Experience Platform 커넥터_ | 3.0.0-Beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| _페이지 빌더_ | - | - | 1.7.2 | 1.7.1 | - | [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html) |
+| **Adobe Commerce 버전** | 2.4.7-베타2 | 2.4.7-베타1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                          |
+|---------------------------------------|-------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _Adobe Commerce에 대한 이벤트 Adobe I/O_ | 1.3.0 | 1.3.0 | 1.3.0 | 1.3.0 | 1.3.0 | - | [작성기](https://developer.adobe.com/commerce/extensibility/events/installation/) <br/>[릴리스 정보](https://developer.adobe.com/commerce/extensibility/events/release-notes/) |
+| _B2B_ | 1.4.2 | 1.4.0+ | 1.3.5+ | 1.3.4 | 1.3.3 | 1.3.2 | [작성기](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _Experience Platform 커넥터_ | 3.0.0-Beta1 | 3.0.0-Beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
+| _페이지 빌더_ | - | - | 1.7.3 | 1.7.2 | 1.7.1 | - | [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html) |
 
 ## 상거래 서비스
 
@@ -43,13 +47,13 @@ ht-degree: 15%
 
 다음 표는 Adobe Commerce 버전을 기준으로 각 서비스에 대한 버전 지원을 보여 줍니다.
 
-| **Adobe Commerce 버전** | 2.4.7-베타1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                                |
-|--------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _Amazon Sales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
-| _Adobe Commerce용 카탈로그 서비스_ | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 | - | [개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
-| _채널 관리자_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
-| _라이브 검색_ | 3.0.2 | 3.0.2 | 3.0.2 | 3.0.2 | - | [마켓플레이스](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
-| _결제 서비스_ | 2.2.0 | 2.2.0 | 2.2.0 (PHP 8.1) | 2.2.0 (PHP 8.1) | - | [마켓플레이스](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [릴리스 정보](https://commercemarketplace.adobe.com/magento-payment-services.html) |
-| _제품 Recommendations_ | 5.0 | 5.0 | 5.0 | 5.0 | - | [마켓플레이스](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
-| _빠른 체크아웃_ | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
-| _Adobe Commerce용 스토어 이행_ | - | 1.5.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+| **Adobe Commerce 버전** | 2.4.7-베타2 | 2.4.7-베타1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                                |
+|----------------------------------------|-------------|-------------|--------|-----------------|-----------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| _Amazon Sales Channel_ | - | - | 4.4.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
+| _Adobe Commerce용 카탈로그 서비스_ | 1.11 | 1.11 | 1.11 | 1.11 | 1.11 | - | [개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
+| _채널 관리자_ | - | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
+| _라이브 검색_ | 3.0.2 | 3.0.2 | 3.0.2 | 3.0.2 | 3.0.2 | - | [마켓플레이스](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
+| _결제 서비스_ | 2.2.0 | 2.2.0 | 2.2.0 | 2.2.0 (PHP 8.1) | 2.2.0 (PHP 8.1) | - | [마켓플레이스](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [릴리스 정보](https://commercemarketplace.adobe.com/magento-payment-services.html) |
+| _제품 Recommendations_ | 5.0 | 5.0 | 5.0 | 5.0 | 5.0 | - | [마켓플레이스](https://commercemarketplace.adobe.com/magento-product-recommendations.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
+| _빠른 체크아웃_ | - | - | 1.0.0+ | 1.2.0+ | 1.0.0+ | 1.2.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/magento-quick-checkout.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html) |
+| _Adobe Commerce용 스토어 이행_ | - | - | 1.5.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [마켓플레이스](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
