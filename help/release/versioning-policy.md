@@ -2,7 +2,7 @@
 title: 릴리스 정책
 description: 부, 패치, 보안 패치, 기능, 핫픽스, 개별 패치 및 사용자 정의 패치를 포함한 다양한 유형의 Adobe Commerce 릴리스에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Commerce 및 Magento Open Source 사용 [시맨틱 버전 관리](https://
    - **보안 패치 릴리스**—2.4.5-p1
       - 보안 버그 수정
       - 향상된 보안
-- **베타 패치 릴리스**—2.4.7-Beta1
+- **베타 패치 릴리스**—2.4.7-Beta2
 - **확장성, 인프라 및 서비스 릴리스**
 - **핫픽스**
 - **개별 패치**

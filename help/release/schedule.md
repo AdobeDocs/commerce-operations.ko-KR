@@ -2,10 +2,10 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 중요 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
+source-git-commit: 7edf6d5a8dfe58a86f27e97816e4d850bc21babc
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 1%
+source-wordcount: '623'
+ht-degree: 2%
 
 ---
 
@@ -17,10 +17,7 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
 
 >[!NOTE]
 >
->2024년부터 Adobe은 더 이상 패치에 대한 &quot;프리릴리스&quot; 액세스를 제공하지 않습니다. 대신 2.4.7 이상의 경우 Adobe Commerce 고객은 다음을 사용할 수 있습니다 [베타 릴리스](beta.md) 테스트 및 개발을 위해 사전 일반 가용성 코드에 액세스합니다. 다음 2023년 릴리스에 대한 프리릴리스 액세스가 계속 예약되어 있습니다.
->
-> - 2023년 8월 8일 프리릴리스 액세스는 2023년 7월 25일입니다
-> - 2023년 10월 10일 프리릴리스 액세스는 2023년 9월 26일입니다
+>2024년부터 Adobe은 더 이상 패치에 대한 &quot;프리릴리스&quot; 액세스를 제공하지 않습니다. 대신 2.4.7 이상의 경우 Adobe Commerce 고객은 다음을 사용할 수 있습니다 [베타 릴리스](beta.md) 테스트 및 개발을 위해 사전 일반 가용성 코드에 액세스합니다.
 
 다음 표에는 예약된 릴리스에 대한 날짜가 나와 있습니다(날짜는 변경될 수 있음).
 
@@ -46,16 +43,6 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
    </tr>
 </tfoot>
 <tbody>
-  <tr>
-    <td>2023년 8월 8일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.6-p2, 2.4.5-p4, 2.4.4-p5</td>
-  </tr>
-  <tr>
-    <td>2023년 10월 10일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">베타 패치</a>: 2.4.7-Beta2<br> <img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.6-p3, 2.4.5-p5, 2.4.4-p6</td>
-  </tr>
   <tr>
     <td>2024년 2월 13일</td>
     <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
