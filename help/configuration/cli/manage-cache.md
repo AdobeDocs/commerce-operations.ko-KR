@@ -2,9 +2,9 @@
 title: 캐시 관리
 description: 캐시 유형을 관리하고 캐시 상태를 확인합니다.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
+source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Commerce 2에는 다음과 같은 캐시 유형이 있습니다.
 | 통합 API 구성 | config_integration_api | 스토어 통합의 컴파일된 통합 API 구성입니다. |
 | 웹 서비스 구성 | config_webservice | 웹 API 구조 캐싱. |
 | 고객 알림 | customer_notification | 사용자 인터페이스에 표시되는 임시 알림입니다. |
+| 관리자 UI SDK 캐시 | admin_ui_sdk | 와 함께 추가된 캐시 관리자 사용자 지정 [Adobe Commerce 관리 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
 
 ## 캐시 상태 보기
 
