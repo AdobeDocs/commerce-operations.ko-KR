@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
+source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
 workflow-type: tm+mt
-source-wordcount: '14811'
+source-wordcount: '15145'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.40 {#v1-1-40}
+
+* **ACSD-54680** (Adobe Commerce >=2.4.0 &lt;2.4.6) - 여러 개의 할당된 소스가 있는 제품에 대해 제출된 B2B 견적을 처리할 수 없는 문제를 수정합니다.
+* **ACSD-54040** (Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6) - 다음과 같은 문제가 해결되었습니다. *[!UICONTROL Created]* B2B 모듈이 활성화되면 필드가 비어 있는 주문 세부 사항.
+* **ACSD-54319** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - 에서 제품 가격이 0으로 표시되는 문제를 수정합니다. *[!UICONTROL Product in Cart]* 보고서.
+* **ACSD-53378** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 주소록이 많은 고객의 체크아웃 페이지 로드 시간을 개선합니다.
+* **ACSD-52657** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 하위 도메인을 사용하는 보조 스토어뷰에서 미니 마트가 업데이트되지 않는 문제를 수정합니다.
+* **ACSD-53414** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 제한된 관리자가 권한 범위 외부에서 CMS 페이지를 볼 수 있는 문제를 해결했습니다.
+* **ACSD-54472** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 거부된 회사의 고객이 계속 인증할 수 있고, 차단되고 거부된 회사의 고객이 여전히 주문을 할 수 있는 문제를 수정합니다. 이 패치는 GraphQL 종단점에 대한 추가 유효성 검사를 추가합니다.
+* **ACSD-52801** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - GraphQL에서 제품을 검색할 때 부분 일치를 수행하는 옵션을 추가합니다.
+* **ACSD-55004** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 구성된 값보다 큰 가져오기 파일을 업로드하는 동안 유효성 검사기가 충돌하는 문제가 해결되었습니다. `php.ini`.
+* **ACSD-54989** (Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - 다음 경우에 회사 관리자가 주문할 수 없는 문제가 해결되었습니다. *[!UICONTROL Enable Purchase Orders]* 이(가) (으)로 설정됨 *[!UICONTROL Yes]* 및 *[!UICONTROL Purchase Order]* 이(가) (으)로 설정됨 *[!UICONTROL No]*.
+* **ACSD-54007** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 오류를 수정합니다. *&quot;정의되지 않은 배열 키 &quot;_scope&quot;&quot;* 고객 데이터 가져오기
+* **ACSD-55031** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 수정 사항 *&quot;mixed&quot; 형식은 null을 허용할 수 없습니다.* 컴파일 중 오류가 발생했습니다.
+* **ACSD-54961** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 제한된 관리자가 *제품 리뷰* 상태.
+* **ACSD-55256** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 이미지 슬라이더에 첫 번째 이미지만 표시되는 문제를 수정합니다.
+* 업데이트된 패치: ACSD-52041, ACSD-54106
 
 ## v1.1.39 {#v1-1-39}
 
