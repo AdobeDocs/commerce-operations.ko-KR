@@ -4,16 +4,16 @@ description: Adobe Commerce on cloud infrastructure 프로젝트의 보안 사�
 role: Admin, Developer, Leader, User
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 19ff1fee74e3c5ece13da49648252b32e549eafd
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
 
 # 보안 사고를 예방하고 대응하는 데 도움이 되는 모범 사례
 
-Adobe Commerce 보안은 [공동 책임](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) 모델. Adobe 및 기술 팀의 책임을 파악하는 것이 중요합니다. 아래에서는 다음을 요약합니다 [보안 모범 사례](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf) 프로젝트에 최상의 보안 제어 기능이 적용되어 있고 보안 문제에 대한 최적의 대응 방법을 보장하기 위해
+Adobe Commerce 보안은 [공동 책임](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) 모델. Adobe 및 기술 팀의 책임을 파악하는 것이 중요합니다. 다음 문서에서는 프로젝트에 최상의 보안 제어 기능이 있는지 확인하고 보안 문제에 대한 최상의 대응을 계획할 수 있도록 보안 모범 사례를 요약합니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -43,14 +43,14 @@ Adobe은 기본값 대신 고유한 사용자 지정 관리자 URL을 사용할 
 - 설정 및 실행 [Adobe Commerce 보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html).
 향상된 보안 검사를 통해 PWA을 포함한 각 Adobe Commerce 사이트를 모니터링하여 알려진 보안 위험 및 맬웨어를 확인하고 패치 업데이트 및 보안 알림을 받을 수 있습니다.
 - [관리자 액세스 검토 및 업데이트](https://docs.magento.com/user-guide/system/permissions-users-all.html) 및 [보안 설정](https://docs.magento.com/user-guide/stores/security-admin.html).
-   - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 관리자의 암호를 순환하는 것이 좋습니다.
-   - 프로젝트에 대한 고급 보안 설정 을 검토하고 업데이트합니다. 관리자 보안 구성을 사용하면 URL에 비밀 키를 추가하고, 암호는 대/소문자를 구분해야 하며, 관리자 사용자 계정이 잠기기 전에 시도할 수 있는 로그인 시도 횟수 및 암호 수명을 포함하여 관리자 세션 길이를 제한할 수 있습니다. 보안을 강화하기 위해 현재 세션이 만료되기 전에 키보드 비활성화 시간을 구성하고 사용자 이름과 암호를 대소문자를 구분해야 합니다.
+   - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 관리자의 암호를 회전합니다.
+   - 프로젝트에 대한 고급 보안 설정 을 검토하고 업데이트합니다. 관리자 보안 구성을 사용하면 URL에 비밀 키를 추가하고, 암호는 대/소문자를 구분해야 하며, 관리자 사용자 계정이 잠기기 전에 허용되는 로그인 시도 횟수 및 암호 수명을 포함하여 관리자 세션의 길이를 제한할 수 있습니다. 보안을 강화하기 위해 현재 세션이 만료되기 전에 키보드 비활성화 시간을 구성하고 사용자 이름과 암호를 대소문자를 구분해야 합니다.
 - Adobe Commerce 감사 [클라우드 프로젝트 사용자](https://devdocs.magento.com/cloud/project/user-admin.html).
-오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 사용자에게 암호 변경을 요청하는 것이 좋습니다.
+오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 사용자에게 암호 변경을 요청합니다.
 - 감사 [SSH 키](https://devdocs.magento.com/cloud/before/before-workspace-ssh.html) 클라우드 인프라의 Adobe Commerce용
-SSH 키를 검토, 삭제 및 회전시키는 것이 좋습니다.
+SSH 키를 검토, 삭제 및 회전합니다.
 - 관리자용 ACL(액세스 제어 목록)을 구현합니다.
-Fastly Edge ACL 목록을 사용자 정의와 함께 사용할 수 있습니다 [VCL 코드 조각](https://devdocs.magento.com/cloud/cdn/fastly-vcl-allowlist.html#vcl) 수신 요청을 필터링하고 IP 주소별 관리자 액세스를 허용합니다.
+사용자 지정 항목과 함께 Fastly Edge ACL 목록을 구현하여 수신 요청을 필터링하고 IP 주소별 관리자 액세스를 구성할 수 있습니다 [VCL 코드 조각](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 ## 문제 분석
 
