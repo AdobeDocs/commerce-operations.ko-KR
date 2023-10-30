@@ -2,9 +2,9 @@
 title: 애플리케이션 모드
 description: Commerce 응용 프로그램은 필요에 따라 다른 모드에서 작동 할 수 있습니다. 사용 가능한 애플리케이션 모드의 세부 목록을 봅니다.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 
 ## 클라우드 지원
 
-클라우드 인프라 프로젝트에 대한 애플리케이션 모드를 관리할 필요가 없습니다. 읽기 전용 파일 시스템으로 인해 원격 클라우드 환경에서는 모드를 변경할 수 없습니다. 클라우드 인프라의 Adobe Commerce은에서 애플리케이션을 자동으로 실행합니다. _유지 보수_ 배포 시 모드: 배포가 완료될 때까지 사이트를 오프라인으로 전환합니다. 그렇지 않으면 응용 프로그램은에 유지됩니다. _production_ 모드. 다음을 참조하십시오 [배포 프로세스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) 다음에서 _클라우드 인프라의 Commerce 안내서_.
+클라우드 인프라 프로젝트에 대한 애플리케이션 모드를 관리할 필요가 없습니다. 읽기 전용 파일 시스템으로 인해 원격 클라우드 환경에서는 모드를 변경할 수 없습니다. 를 수정하여 모드를 변경하려고 시도하지 마십시오. `app/etc/env.php` 다음 이유 때문에 파일: `ece-tools` 패키지는 여러 구성 소스를 기반으로 파일을 덮어씁니다.
+
+클라우드 인프라의 Adobe Commerce은에서 애플리케이션을 자동으로 실행합니다. _유지 보수_ 배포 시 모드: 배포가 완료될 때까지 사이트를 오프라인으로 전환합니다. 그렇지 않으면 응용 프로그램은에 유지됩니다. _production_ 모드. 다음을 참조하십시오 [배포 프로세스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) 다음에서 _클라우드 인프라의 Commerce 안내서_.
 
 Cloud Docker for Commerce를 개발 도구로 사용하는 경우 의 도커 환경에 클라우드 인프라 프로젝트를 배포할 수 있습니다. _개발자_ 모드이지만 추가 파일 동기화 작업으로 인해 성능이 느려집니다. 다음을 참조하십시오 [Docker 환경 배포](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) 다음에서 _Commerce용 Cloud Docker 안내서_.
 
