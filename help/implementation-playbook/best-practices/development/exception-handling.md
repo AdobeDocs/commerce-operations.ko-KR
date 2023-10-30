@@ -3,13 +3,13 @@ title: 예외 처리 우수 사례
 description: Adobe Commerce 프로젝트를 개발할 때 예외를 로깅하는 데 권장되는 방법에 대해 알아봅니다.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # 예외 처리 우수 사례
 
@@ -88,7 +88,7 @@ try {
 
 ### ![부정확해](../../../assets/no.svg) 로깅 전 논리
 
-로깅 전 로직은 또 다른 예외나 치명적인 오류를 발생시킬 수 있으므로 예외가 기록되지 않으며 로 대체해야 합니다. [정확한 예](#correct-logging-always-comes-first).
+로깅 전 로직은 또 다른 예외나 치명적인 오류를 발생시킬 수 있으므로 예외가 기록되지 않으며 로 대체해야 합니다. [정확한 예](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![부정확해](../../../assets/no.svg) 비어 있음 `catch`
 
-비어 있음 `catch` 블록은 의도하지 않은 뮤팅의 징후일 수 있으므로 [정확한 예](#correct-mute-signals).
+비어 있음 `catch` 블록은 의도하지 않은 뮤팅의 징후일 수 있으므로 [정확한 예](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 이 접근 방법에서는 PSR-3과 호환되지 않는 라인 구분을 메시지에 도입합니다. 스택 추적을 포함한 예외는 New Relic 또는 다른 PSR-3 모노로그 호환 로그 저장소에서 메시지와 함께 올바르게 저장되도록 메시지 컨텍스트의 일부여야 합니다.
 
-에 표시된 올바른 예제에 따라 코드를 교체하여 이 문제를 해결하십시오. [예외 로그에 쓰기](#correct-write-to-the-exception-log) 또는 [다운그레이드 예외](#correct-downgrade-exceptions).
+에 표시된 올바른 예제에 따라 코드를 교체하여 이 문제를 해결하십시오. [예외 로그에 쓰기](#write-to-the-exception-log) 또는 [다운그레이드 예외](#downgrade-exceptions).
 
 ### ![부정확해](../../../assets/no.svg) 컨텍스트가 없는 다운그레이드 예외
 
-이 예외는 오류로 다운그레이드되며, 이 오류는 객체를 전달할 수 없고 문자열만 허용하므로 `getMessage()`. 이렇게 하면 추적이 손실되므로 과 같은 올바른 예제로 대체해야 합니다. [예외 로그에 쓰기](#correct-write-to-the-exception-log) 또는 [다운그레이드 예외](#correct-downgrade-exceptions).
+이 예외는 오류로 다운그레이드되며, 이 오류는 객체를 전달할 수 없고 문자열만 허용하므로 `getMessage()`. 이렇게 하면 추적이 손실되므로 과 같은 올바른 예제로 대체해야 합니다. [예외 로그에 쓰기](#write-to-the-exception-log) 또는 [다운그레이드 예외](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![부정확해](../../../assets/no.svg) 예외 로그에 메시지만 기록
 
-개체 전달 대신 `$e`, 전용 `$e->getMessage()` 가 전달되었습니다. 이로 인해 추적이 손실되므로 표시된 올바른 예제로 대체해야 합니다 [예외 로그에 쓰기](#correct-write-to-the-exception-log) 또는 [다운그레이드 예외](#correct-downgrade-exceptions).
+개체 전달 대신 `$e`, 전용 `$e->getMessage()` 가 전달되었습니다. 이로 인해 추적이 손실되므로 표시된 올바른 예제로 대체해야 합니다 [예외 로그에 쓰기](#write-to-the-exception-log) 또는 [다운그레이드 예외](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![부정확해](../../../assets/no.svg) 누락 `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-생략 `phpcs:ignore` line은 PHPCS에서 경고를 트리거하며 CI를 전달해서는 안 됩니다. 이 옵션은에 표시된 올바른 예제로 대체해야 합니다. [신호 음소거](#correct-mute-signals).
+생략 `phpcs:ignore` line은 PHPCS에서 경고를 트리거하며 CI를 전달해서는 안 됩니다. 이 옵션은에 표시된 올바른 예제로 대체해야 합니다. [신호 음소거](#mute-signals).
 
 ```php
 try {
