@@ -2,10 +2,10 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 10%
+source-wordcount: '274'
+ht-degree: 11%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 10%
    - [통합 옵션](architecture/integration-options.md)
    - 글로벌 참조 아키텍처 {#global-reference-architecture}
       - [개요](architecture/global-reference/overview.md)
-      - [예](architecture/global-reference/examples.md)
+      - [예시](architecture/global-reference/examples.md)
       - 작성기 개발 {#composer}
          - [개요](architecture/global-reference/composer/overview.md)
          - [프로젝트 구조](architecture/global-reference/composer/project-structure.md)
@@ -108,7 +108,7 @@ ht-degree: 10%
       - [데이터베이스 테이블 수정](best-practices/development/modifying-core-and-third-party-tables.md)
    - 시작 {#launch}
       - [개요](best-practices/launch/overview.md)
-      - [robots.txt 파일 구성](best-practices/launch/robots-txt.md)
+      - [웹 크롤러 구성](best-practices/launch/robots-txt.md)
       - [보안 사고 예방 및 대응](best-practices/launch/prevent-respond-security-incident.md)
    - 유지 관리 {#maintenance}
       - [개요](best-practices/maintenance/overview.md)

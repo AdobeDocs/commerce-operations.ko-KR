@@ -1,19 +1,20 @@
 ---
-title: '''robots.txt'' 및 ''sitemap.xml'' 파일 구성 우수 사례'
-description: Adobe Commerce 사이트에 대한 지침을 웹 크롤러에 전달하는 방법을 알아봅니다.
+title: 웹 크롤러 구성에 대한 우수 사례
+description: '''robots.txt'' 및 ''sitemap.xml'' 파일을 사용하여 Adobe Commerce 사이트에 대한 지침을 웹 크롤러에 전달하는 방법을 알아봅니다.'
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# 구성을 위한 우수 사례 `robots.txt` 및 `sitemap.xml` 파일
 
-이 문서에서는 사용 모범 사례를 제공합니다. `robots.txt` 및 `sitemap.xml` 구성 및 보안을 포함한 Adobe Commerce의 파일. 이러한 파일은 웹 로봇(일반적으로 검색 엔진 로봇)에게 웹 사이트의 페이지를 크롤링하는 방법을 지시합니다. 이러한 파일을 구성하면 사이트 성능 및 검색 엔진 최적화를 향상시킬 수 있습니다.
+# 웹 크롤러 구성에 대한 우수 사례
+
+이 문서에서는 사용 모범 사례를 제공합니다. `robots.txt` 및 `sitemap.xml` 구성 및 보안을 포함한 Adobe Commerce의 파일. 이러한 파일은 웹 크롤러(일반적으로 검색 엔진 로봇)에게 웹 사이트의 페이지를 크롤링하는 방법을 지시합니다. 이러한 파일을 구성하면 사이트 성능 및 검색 엔진 최적화를 향상시킬 수 있습니다.
 
 >[!NOTE]
 >
