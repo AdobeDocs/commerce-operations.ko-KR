@@ -1,18 +1,18 @@
 ---
-title: X-Frame-Options 헤더
-description: X-Frame-Options를 사용하여 페이지 렌더링을 제어합니다.
+title: 클릭재킹 악용 방지
+description: '''X-Frame-Options'' 헤더를 사용하여 페이지 렌더링을 제어함으로써 클릭재킹 악용을 방지합니다.'
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# X-Frame-Options 헤더
+# 클릭재킹 악용 방지
 
-을 방지하는 데 도움이 됩니다 [클릭재킹](https://owasp.org/www-community/attacks/Clickjacking) 악용, 다음을 사용할 옵션을 추가했습니다. [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) storefront에 대한 요청의 HTTP 요청 헤더입니다.
+방지 [클릭재킹](https://owasp.org/www-community/attacks/Clickjacking) 다음을 포함한 활용: [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) storefront에 대한 요청의 HTTP 요청 헤더입니다.
 
 다음 `X-Frame-Options` 헤더를 사용하면 브라우저에서 페이지를 렌더링할 수 있는지 여부를 지정할 수 있습니다. `<frame>`, `<iframe>`, 또는 `<object>` 다음과 같이:
 

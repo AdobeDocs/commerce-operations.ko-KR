@@ -4,9 +4,9 @@ description: 결제 세부 정보를 안전하게 처리하고 저장하는 방�
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce에 카드 소지자 데이터 저장 **엄격하게 금지되어** PCI-DSS(Payment Card Industry Data Security Standard)에 따라 판매자로서의 의무를 위반할 수 있습니다. 상인 의무에 대한 공유 책임 모델과 지침에 대한 자세한 내용은 [Adobe Commerce 공유 책임 모델 안내서](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) Adobe 트러스트 센터에서.
 
-전자 상거래 사이트에서 결제 정보를 제대로 처리하고 있는지 확인하려면 아래 모범 사례를 따르십시오. 전반적인 보안 모범 사례에 대한 추가 지침은 [Adobe Commerce용 보안 모범 사례 안내서](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) Adobe 트러스트 센터에서
+전자 상거래 사이트에서 결제 정보를 제대로 처리하고 있는지 확인하려면 아래 모범 사례를 따르십시오. 보안 모범 사례에 대한 추가 지침은 [사이트 및 인프라 보안](../launch/security-best-practices.md).
 
 ## 영향을 받는 제품 및 버전
 

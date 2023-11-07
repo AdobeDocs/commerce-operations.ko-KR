@@ -2,9 +2,9 @@
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 기능과 서비스를 구성합니다.
 feature: Configuration
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
    + [시스템 설정 빌드](deployment/build-system.md)
    + [프로덕션 시스템 설정](deployment/production-system.md)
    + [파일 시스템 액세스 권한](deployment/file-system-permissions.md)
-   + 예 {#examples}
+   + 예시 {#examples}
       + [공유 구성 사용](deployment/example-shared-configuration.md)
       + [CLI 명령 사용](deployment/example-using-cli.md)
       + [환경 변수 사용](deployment/example-environment-variables.md)
@@ -126,7 +126,7 @@ ht-degree: 0%
    + [캐시 중독](security/cache-poisoning.md)
    + [보안 크론 PHP](security/secure-cron-php.md)
    + [보안 TXT](security/security-txt.md)
-   + [X-Frame-Options 헤더](security/xframe-options.md)
+   + [재킹 사용을 클릭합니다.](security/xframe-options.md)
 + 스토리지 {#storage}
    + [데이터베이스 프로파일러](storage/db-profiler.md)
    + 원격 스토리지 {#remote-storage}

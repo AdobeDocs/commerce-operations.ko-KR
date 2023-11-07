@@ -2,9 +2,9 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '277'
 ht-degree: 11%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 11%
    - 시작 {#launch}
       - [개요](best-practices/launch/overview.md)
       - [웹 크롤러 구성](best-practices/launch/robots-txt.md)
-      - [보안 사고 예방 및 대응](best-practices/launch/prevent-respond-security-incident.md)
+      - [사이트 및 인프라 보안](best-practices/launch/security-best-practices.md)
    - 유지 관리 {#maintenance}
       - [개요](best-practices/maintenance/overview.md)
       - [감사 프론트엔드 성능](best-practices/maintenance/frontend-performance.md)
@@ -118,6 +118,7 @@ ht-degree: 11%
       - [규모에 맞게 패치](best-practices/maintenance/patching-at-scale.md)
       - [주문 처리](best-practices/maintenance/order-processing-configuration.md)
       - [데이터베이스 성능 문제 해결](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [보안 인시던트에 응답](best-practices/maintenance/respond-to-security-incident.md)
       - [프로덕션 사이트에 대한 관리자 업데이트 예약](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [서비스 업데이트](best-practices/maintenance/update-services.md)
       - [업그레이드 체크리스트](best-practices/maintenance/upgrade-checklist.md)
