@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,18 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 제품이 장바구니에 이미 추가된 후 공유 카탈로그에서 제거될 때 장바구니에서 발생하는 문제를 수정합니다.
+* **ACSD-53722** (Adobe Commerce >=2.4.4 &lt;2.4.7) - 다른 범위에 대한 예약된 업데이트가 활성화되면 번들 제품 옵션의 가격이 $0로 변경되는 문제를 수정합니다.
+* **ACSD-53643** (Adobe Commerce >=2.4.3 &lt;2.4.7) - 비활성화 또는 재고 부족 제품으로 구매 주문을 할 때 주문 합계가 잘못된 문제를 수정합니다. 다음을 숨김으로써 수정됩니다. *[!UICONTROL Place Order]* 버튼을 클릭합니다.
+* **ACSD-54067** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 제품 비디오가 모바일 디바이스에서 재생되지 않는 문제를 수정합니다.
+* **ACSD-55414** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - MariaDB가 EAV entity_id를 문자열에서 정수로 캐스팅하려고 할 때 성능이 향상됩니다.
+* **ACSD-51819** (Adobe Commerce >=2.4.4 &lt;2.4.4-p4의 경우) - 동일한 견적 ID로 여러 주문을 할 수 있는 문제를 수정합니다.
+* **ACSD-53118** (Adobe Commerce >=2.4.0 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. *[!UICONTROL Cart Price Rule]* 은 제품에 빈 속성이 있는 동안 쿠폰 코드를 사용하여 적용됩니다.
+* **ACSD-54324** (Adobe Commerce >=2.4.5 &lt;2.4.7) - GraphQL 구매요청 목록 요청이 페이지 매김 설정을 고려하지 않고 모든 결과를 반환하는 문제를 수정합니다.
+* 업데이트된 패치: MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
