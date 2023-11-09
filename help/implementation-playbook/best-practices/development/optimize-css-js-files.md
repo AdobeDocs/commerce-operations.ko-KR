@@ -4,7 +4,7 @@ description: 관리자 또는 명령줄에서 Adobe Commerce 프로젝트에 대
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
+source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
@@ -34,7 +34,7 @@ CSS 및 JavaScript(JS) 파일을 로드하는 데 걸리는 시간을 별도의 
 >
 >클라우드 인프라의 Adobe Commerce은 항상 프로덕션 모드에서 실행되며, 달리 설정할 수 없으므로 명령줄 메서드를 사용하여 병합, 축소 및 번들링을 활성화해야 합니다.
 
-배포에서 HTTP2를 사용하는 경우 파일을 병합하거나 번들로 묶지 마십시오. HTTP2는 정적 파일을 비동기적으로 다운로드합니다. 브라우저는 파일 컨텐츠를 처리하기 전에 병합된 파일 전체를 다운로드해야 합니다.
+배포에서 HTTP/2를 사용하는 경우 파일을 병합하거나 번들로 묶지 마십시오. HTTP/2는 정적 파일을 비동기식으로 다운로드합니다. 브라우저는 파일 컨텐츠를 처리하기 전에 병합된 파일 전체를 다운로드해야 합니다.
 
 ### 관리자 사용
 

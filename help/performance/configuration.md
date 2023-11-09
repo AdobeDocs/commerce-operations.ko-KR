@@ -3,7 +3,7 @@ title: 구성 모범 사례
 description: 다음 모범 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -106,7 +106,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 ### 번들링 팁
 
 * 축소 및 번들링(예: [r.js](https://requirejs.org/)). [!DNL Commerce] 기본 제공 메커니즘은 최적의 상태가 아니며 대체 메커니즘으로 제공됩니다.
-* HTTP2 프로토콜을 활성화하면 JS 번들링을 사용하는 대신 사용할 수 있습니다. 그 프로토콜은 거의 같은 이점을 제공한다.
+* HTTP/2 프로토콜을 활성화하면 JS 번들링을 사용하는 대신 사용할 수 있습니다. 그 프로토콜은 거의 같은 이점을 제공한다.
 * JS 및 CSS 파일은 페이지의 HEAD 섹션에서 동기적으로 로드된 JS용으로만 설계되었으므로 병합과 같이 더 이상 사용되지 않는 설정을 사용하지 않는 것이 좋습니다. 이 기술을 사용하면 번들링 및 requireJS 논리가 제대로 작동하지 않을 수 있습니다.
 
 ## 고객 세그먼트 유효성 검사
