@@ -3,9 +3,9 @@ title: 온-프레미스 설치 보안
 description: Adobe Commerce 또는 Magento Open Source 온프레미스 설치의 보안 자세를 개선하는 방법에 대해 알아봅니다.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ SELinux가 활성화된 상태에서 Apache가 다른 호스트에 대한 연결
 보안 요구 사항에 따라 방화벽에서 포트 80 및 기타 포트를 열어야 할 수도 있습니다. 네트워킹 보안의 민감한 특성 때문에 Adobe은 계속하기 전에 IT 부서에 문의하는 것이 좋습니다. 다음은 몇 가지 제안된 참조입니다.
 
 * 우분투: [Ubuntu 설명서 페이지](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [CentOS 방법](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [CentOS 방법](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

@@ -2,9 +2,9 @@
 title: '''[!DNL Upgrade Compatibility Tool] 요구 사항'
 description: 시스템이 를 실행하는 데 필요한 요구 사항을 충족하는지 확인합니다. [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에 대한 명령줄 인터페이스에서 다음을 수행합니다.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 |----------------|-----------------|
 | PHP 버전 | >= 7.3 |
 | 작성기 | 알려진 요구 사항 없음. |
-| Node.js | Node.js 버전 `^12.22.0`, `^14.17.0`, 또는 `>=16.0.0` (참조 [Node.js 설치](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
+| Node.js | Node.js 버전 `^12.22.0`, `^14.17.0`, 또는 `>=16.0.0` (참조 [Node.js 설치](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
 | 메모리 제한 사항 | 최소 2GB RAM. |
 
 [!DNL Upgrade Compatibility Tool] 필수 [PCNTL](https://www.php.net/manual/en/book.pcntl.php) 및 실행을 위한 기타 PHP 확장. 다음을 사용하여 필요한 PHP 확장 확인 `composer check-platform-reqs` 명령:

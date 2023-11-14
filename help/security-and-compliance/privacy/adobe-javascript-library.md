@@ -4,9 +4,9 @@ description: Adobe Commerce 및 Magento Open Source에서 수집한 고객 개�
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-다음 [Adobe 개인 정보 JavaScript 라이브러리](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) 는 개인 데이터에 액세스하고 삭제하는 프로세스를 만드는 데 도움이 되는 도구 세트입니다.
+다음 [Adobe 개인 정보 JavaScript 라이브러리](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) 는 개인 데이터에 액세스하고 삭제하는 프로세스를 만드는 데 도움이 되는 도구 세트입니다.
 
 Adobe Commerce 및 Magento Open Source 데이터 추적 서비스는 다음과 같은 개인 정보 보호 규정에 적용할 수 있는 개인 정보를 저장할 수 있습니다. [GDPR(일반 데이터 보호 규정)](gdpr.md) 및 [CCPA(캘리포니아 소비자 개인 정보 보호법)](ccpa.md).
 
@@ -43,7 +43,7 @@ AdobePrivacy JS 라이브러리는 브라우저에 저장된 ID 데이터를 관
 `retrieveThenRemoveIdentities()`
 : 이 함수는 와 유사합니다 `removeIdentities()` 에서 ID 배열을 검색하고 브라우저에서 제거합니다.
 
-이러한 함수 사용에 대한 자세한 내용과 예제는 [공식 라이브러리 설명서](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+이러한 함수 사용에 대한 자세한 내용과 예제는 [공식 라이브러리 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### 초기화
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 생성자는 인스턴스화하는 동안 매개 변수가 있는 구성 개체를 수락합니다.
-다음을 참조하십시오. [공식 라이브러리 설명서](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) 를 참조하십시오.
+다음을 참조하십시오. [공식 라이브러리 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) 를 참조하십시오.

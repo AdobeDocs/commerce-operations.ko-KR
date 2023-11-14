@@ -2,9 +2,9 @@
 title: 옵션 소프트웨어
 description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치를 지원하기 위해 설치할 수 있는 선택적 소프트웨어에 대해 자세히 알아봅니다.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ http://<web server host or IP>/phpinfo.php
 
   [Ubuntu 도움말](https://help.ubuntu.com/community/UFW)
 
-  [CentOS용 도움말](https://wiki.centos.org/HowTos/Network/IPTables)
+  [CentOS용 도움말](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 

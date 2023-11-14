@@ -3,9 +3,9 @@ title: 애플리케이션 구성
 description: Adobe Commerce 및 Magento Open Source 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 추가 정보:
 
 * 우분투: [Ubuntu 설명서 페이지](https://help.ubuntu.com/community/IptablesHowTo).
-* CentOS: [CentOS 방법](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [CentOS 방법](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
 
 ### 보안 강화 Linux(SELinux) 규칙
 
