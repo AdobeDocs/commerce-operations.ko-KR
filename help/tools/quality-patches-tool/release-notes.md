@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
+source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
 workflow-type: tm+mt
-source-wordcount: '15346'
+source-wordcount: '15669'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.42 {#v1-1-42}
+
+* **ACSD-53658** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 다음 문제를 수정합니다. *[!UICONTROL Recently Viewed]* 스토어 보기에서 제품 데이터가 제대로 업데이트되지 않습니다.
+* **ACSD-54626** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 새 구매 주문 규칙을 만들 수 없는 문제를 수정합니다(`createPurchaseOrderApprovalRule`) `NUMBER_OF_SKUS` 속성 [!DNL GraphQL].
+* **ACSD-53845** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 수정 사항 [!DNL MySQL] 다음의 경우 연결 시간 초과 문제 `consumer max_messages` = 0.
+* **ACSD-54890** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 다음 문제를 수정합니다. `aggregate_sales_report_bestsellers_data` 원인 [!DNL MySQL] 오류로 인해 발생 `/tmp` 디스크 공간이 부족합니다.
+* **ACSD-55112** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. *[!UICONTROL Submit review]* 없이 단추를 여러 번 클릭할 수 있습니다. [!DNL Google reCAPTCHA v3] 유효성 검사.
+* **ACSD-54264** (Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - 오류 메시지가 표시되는 문제를 수정합니다 *&quot;요청한 특성을 업데이트할 수 없습니다. 행 ID: store_id&quot;* 고객이 다른 스토어 뷰에서 협상 가능한 견적을 사용하여 체크아웃하려고 할 때 표시됩니다.
+* **ACSD-54418** (Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 고정 할인 금액이 동적으로 가격이 책정된 번들의 각 하위 제품에 잘못 적용되는 문제를 수정합니다.
+* **ACSD-55238** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 빈 제품을 저장하는 수정 사항 *[!UICONTROL Meta Description]*.
+* **ACSD-54966** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 이전 주문이 실패한 경우 고객당 사용이 제한된 쿠폰 코드를 다시 사용할 수 없는 문제를 수정합니다.
+* **ACSD-54060** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 제한된 관리자가 다른 범위에 할당된 다른 제품의 하위 항목인 경우 제품을 저장할 수 없는 문제를 수정합니다.
+* **ACSD-48910** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 아직 수량이 0이 아닌 경우에도 주문이 송장발행되어 배송된 후 여러 출처에 할당된 번들 제품의 재고가 소진되는 문제가 해결되었습니다.
+* **ACSD-55381** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 쿼리할 때 내부 서버 오류 수정 `configurable_product_option_uid` 및 `configurable_product_option_value_uid` 의 필드 [!DNL B2B] *[!UICONTROL Requisition list]* 경유 [!DNL GraphQL].
+* **ACSD-55628** (Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) - 회사 등록 양식에 파일을 업로드하고 상점 첫 화면에서 고객 특성에 대한 파일을 바꾸는 수정 사항이 있습니다.
+* 업데이트된 패치: ACSD-51240, ACSD-51890, ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
