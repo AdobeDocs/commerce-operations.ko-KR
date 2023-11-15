@@ -2,9 +2,9 @@
 title: 온프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Adobe Commerce 또는 Magento Open Source 메타 패키지를 가져오려면 �
    ```
 
    메시지가 표시되면 인증 키를 입력합니다. 공개 및 비공개 키는 [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > 작성기 사용 시 `auth.json` 파일 또는 환경 변수는 인증 키를 입력하라는 메시지가 표시되지 않습니다.
 
    오류가 발생하면 다음과 같이 `Could not find package...` 또는 `...no matching package found`를 클릭하고, 명령에 오타가 없는지 확인합니다. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 연락처 [Adobe Commerce 지원](https://support.magento.com/hc/en-us) 도와주세요.
 
