@@ -1,7 +1,7 @@
 ---
-source-git-commit: 965d35bfc4150230d6f4bc3b3a45c951fc13ed2b
+source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,106 @@ ht-degree: 1%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2023년 11월 20일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>다음을 설명하는 새 주제가 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/shared-responsibility.html">공유 책임 보안 모델</a> Adobe Commerce on cloud infrastructure 프로젝트용</p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b1bf4ffa950bf426c9e769904f5587cad93add15">b1bf4f</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 11월 16일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 명확히 했습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">지원 정책</a> 서드파티 서비스 및 소프트웨어 종속성.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/010c625d2a00fda022b9e56098e74bb7b690479f">010c62</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 11월 15일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.42 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e89fcf5fb2aa750c34bcc9152be9ae53e673bb5c">e89fcf</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 11월 9일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.41 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fbc090e5fbd70ee4d594b8a813691abdddce9e20">fbc090</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023년 11월 7일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 추가함 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">보안 모범 사례</a> 다음에 대한 주제 <em>구현 플레이북</em>.</p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023년 10월 25일
 
@@ -111,66 +211,6 @@ ht-degree: 1%
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023년 9월 14일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.38 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d1fac956ceb8f869b60accfe0180c593d659ec1">1d1fac</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023년 9월 11일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>을(를) 업데이트함 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">확장성 전략</a> App Builder, API Mesh 및 Adobe I/O 이벤트에 대한 정보를 제공합니다.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023년 9월 6일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.37 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
