@@ -1,10 +1,10 @@
 ---
 user-guide-title: 보안 및 규정 준수
-user-guide-description: Adobe Commerce 및 Magento Open Source 판매자가 안전한 환경을 유지하고 관할 지역의 온라인 판매자를 위한 법적 요구 사항 및 모범 사례를 충족해야 하는 책임을 어떻게 충족하는지 알아봅니다.
+user-guide-description: 안전한 Adobe Commerce 프로젝트를 유지하기 위한 규정 준수 및 판매자 책임에 대해 알아봅니다.
 feature: Security
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '58'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 1%
 # 보안 및 규정 준수 {#security-and-compliance}
 
 - [개요](overview.md)
+- [공동 책임](shared-responsibility.md)
 - [콘텐츠 보안 정책](content-security-policy.md)
 - 개인 정보 보호 규정 {#privacy}
    - [CCPA](privacy/ccpa.md)
