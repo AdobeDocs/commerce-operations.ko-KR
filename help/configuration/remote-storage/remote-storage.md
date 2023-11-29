@@ -3,9 +3,9 @@ title: 원격 스토리지 구성
 description: 온-프레미스 Commerce 응용 프로그램에 대한 원격 저장소 모듈을 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->sync 명령은 `pub/media` 디렉토리, _아님_ 에서 파일 가져오기/내보내기 `var` 디렉토리. 다음을 참조하십시오 [예약된 가져오기/내보내기][import-export] 다음에서 _Commerce 2.4 사용 안내서_.
+>sync 명령은 `pub/media` 디렉토리, _아님_ 에서 파일 가져오기/내보내기 `var` 디렉토리. 다음을 참조하십시오 [예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) 다음에서 _Commerce 2.4 사용 안내서_.
 
 <!-- link definitions -->
 

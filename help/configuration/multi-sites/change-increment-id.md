@@ -2,9 +2,9 @@
 title: 증분 ID 변경
 description: 상거래 데이터베이스 엔터티의 증분 ID를 변경합니다.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. 다음을 참조하십시오 [PayPal 게이트웨이 거부 요청 - 중복 송장 문제] 다음에서 _기술 자료_.
+>또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. 다음을 참조하십시오 [PayPal 게이트웨이 거부 요청 - 중복 송장 문제](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) 다음에서 _기술 자료_.
 
 ## 전제 조건 단계
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-중요: 새 증분 값은 현재 증분 값보다 커야 합니다.
+>중요: 새 증분 값은 현재 증분 값보다 커야 합니다.
 
 다음 쿼리를 실행한 후:
 
@@ -74,6 +74,6 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 <!-- Link Definitions -->
 
-[PayPal 게이트웨이 거부 요청 - 중복 송장 문제]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [DB 백업 만들기]: https://support.magento.com/hc/en-us/articles/360003254334
 [지원되는 모든 버전]
