@@ -3,9 +3,9 @@ title: PHP 설정
 description: 필요한 PHP 확장을 설치하고 Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 필요한 PHP 설정을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >최신 버전의 Adobe Commerce 및 Magento Open Source은 PHP 8.1 이상이 필요합니다. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 모든 버전의 PHP용.
+
+클라우드 구성 지침은 다음을 참조하십시오. [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 다음에서 _클라우드 인프라의 상거래_ 가이드.
 
 ## PHP가 설치되었는지 확인
 

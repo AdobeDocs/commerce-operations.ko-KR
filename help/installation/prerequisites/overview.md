@@ -2,9 +2,9 @@
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아봅니다.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Apache를 설치 또는 업그레이드하려면 다음을 참조하십시오. [
 
 ### PHP
 
-다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 버전의 PHP 및 [PHP] PHP 요구 사항
+다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 버전의 PHP 및 [PHP](../system-requirements.md#php-settings) PHP 요구 사항
 
 ### MySQL
+
+설치 중인 Adobe Commerce 또는 Magento Open Source 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 버전용입니다.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ For example:
 mysql -u magento -p
 ```
 
-설치 중인 Adobe Commerce 또는 Magento Open Source 버전에 맞는 MySQL 버전이 있는지 확인합니다([지원되는 버전을 보려면 여기를 클릭하십시오.](../system-requirements.md). 다음 결과는 실행 중인 버전을 나타냅니다.)
+다음 결과는 실행 중인 버전을 나타냅니다.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
