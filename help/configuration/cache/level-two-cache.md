@@ -3,9 +3,9 @@ title: L2 캐시 구성
 description: L2 캐시를 구성하는 방법을 알아봅니다.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,7 @@ Commerce는 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
@@ -69,8 +68,7 @@ Commerce는 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39
    - `remote_backend_options` 는 원격 캐시 구성입니다.
    - `local_backend` 는 로컬 캐시 구현입니다. `Cm_Cache_Backend_File`
    - `local_backend_options` 는 로컬 캐시 구성입니다.
-      - `cache_dir` 는 로컬 캐시가 저장된 디렉토리에 대한 파일 캐시 관련 옵션입니다.
-   - `use_stale_cache` 는 부실 캐시의 사용을 활성화하거나 비활성화하는 플래그입니다.
+   - `cache_dir` 는 로컬 캐시가 저장된 디렉토리에 대한 파일 캐시 관련 옵션입니다.
 
 Adobe은 원격 캐싱에 Redis 사용을 권장합니다(`\Magento\Framework\Cache\Backend\Redis`) 및 `Cm_Cache_Backend_File` 공유 메모리에 있는 데이터의 로컬 캐싱을 위해 다음을 사용합니다. `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -94,6 +92,8 @@ Adobe은 `use_stale_cache` 다음을 포함하여 가장 많은 이점을 제공
 - `reflection`
 - `translate`
 
+Adobe은 를 활성화하지 않는 것이 좋습니다. `use_stale_cache` 옵션 `default` 캐시 유형.
+
 다음 코드는 구성의 예를 보여 줍니다.
 
 ```php
@@ -114,8 +114,7 @@ Adobe은 `use_stale_cache` 다음을 포함하여 가장 많은 이점을 제공
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
