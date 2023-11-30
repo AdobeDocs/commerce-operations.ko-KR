@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
+source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ### 사소한 변경 사항
 
-선의로 작은 업데이트를 제공하려면 문서를 방문하여 **편집** 문서에 해당하는 GitHub 소스로 이동하는 문서의 링크. 그런 다음 GitHub UI를 사용하여 업데이트를 만들면 됩니다. 일반 참조 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 추가 정보.
+부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 을 클릭합니다 **편집 제안** GitHub의 Markdown 소스 파일로 이동합니다. GitHub UI를 사용하여 업데이트를 만듭니다. 일반 참조 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 추가 정보.
 
 이 저장소의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
