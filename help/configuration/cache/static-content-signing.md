@@ -3,9 +3,9 @@ title: 정적 콘텐츠 캐시
 description: 정적 콘텐츠 서명 및 기능을 활성화하거나 비활성화하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerce에서는 기본적으로 이 기능을 사용할 수 있으며, Adobe은 브라우저가 이전 정적 리소스를 제공하는 것과 관련된 문제를 방지하기 위해 이 기능을 활성화 상태로 유지하는 것을 권장합니다.
 
-이 기능에 대한 구성은에서 찾을 수 있습니다. [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+정적 콘텐츠 서명에 대한 구성이에 있습니다. [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **온-프레미스 전용**: 이 구성은 사이트가 다음과 같은 경우에 사용할 수 있습니다. **아님** 위치: [프로덕션 모드](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **클라우드**: 이 구성은 프로덕션 모드가 엄격히 적용되기 때문에 숨겨져 있습니다. 따라서 아래 표시된 대로 명령줄을 사용해야 합니다.
 
 ![정적 파일 설정](../../assets/configuration/static-files-settings.png)
 
