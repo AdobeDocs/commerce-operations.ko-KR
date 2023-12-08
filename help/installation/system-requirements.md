@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ opensearch:
 온-프레미스의 경우 PHP OPcache가 설치되어 있는지 확인합니다. [PHP 설정](prerequisites/php-settings.md). 또는 성능 설정에 대한 특정 지침은 다음 소프트웨어 권장 사항 을 참조하십시오. [PHP 설정](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) 다음에서 _성능 모범 사례_ 가이드.
 
 OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://www.php.net/manual/en/opcache.setup.php).
+
+### PHP 프로세스 제어
+
+{{php-process-control}}
 
 ### PHPUnit
 

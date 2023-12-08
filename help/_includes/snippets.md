@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >이 릴리스 노트에 설명된 개선 사항 및 버그 수정에 대한 코드가 Adobe Commerce과 번들로 제공되지만 이러한 프로젝트 중 일부(예: B2B, Page Builder 및 Progressive Web Application(PWA) Studio)도 독립적으로 릴리스됩니다. 이러한 프로젝트에 대한 버그 수정은 각 프로젝트에 대한 설명서에서 사용할 수 있는 별도의 프로젝트별 릴리스 정보에 설명되어 있습니다. 다음을 참조하십시오 [제품 릴리스 개요](/help/release/release-notes/overview.md).
+
+## PHP 프로세스 제어 {#php-process-control}
+
+인덱서를 병렬 모드로 실행하려면 먼저 프로세스 제어 지원(`pcntl`PHP의 . 다음을 참조하십시오 [설치](https://www.php.net/manual/en/pcntl.installation.php) PHP 설명서에서 참조하십시오.

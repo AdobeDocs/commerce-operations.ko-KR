@@ -2,9 +2,9 @@
 title: 정적 보기 파일 배포
 description: 프로덕션 모드 중에 Commerce 파일 시스템에 정적 파일을 작성하는 방법에 대해 알아봅니다.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ ht-degree: 0%
 | 옵션 | 설명 | 필수? |
 | ------ | ----------- | --------- |
 | `<languages>` | 공백으로 구분된 목록 [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) 정적 보기 파일을 출력할 언어 코드입니다. (기본값은 입니다. `en_US`.)<br>다음을 실행하여 목록을 찾습니다. `bin/magento info:language:list` | 아니요 |
-| `--language (-l)` | 지정된 언어에 대한 파일만 생성합니다. 기본적으로 옵션이 지정되지 않으면 모든 ISO-639 언어 코드에 대한 파일을 생성합니다. 한 번에 하나의 언어 코드의 이름을 지정할 수 있습니다. 기본값은 입니다. **모두**.<br>For example: `--language en_US --language es_ES` | 아니요 |
+| `--language (-l)` | 지정된 언어에 대한 파일만 생성합니다. 기본적으로 옵션이 지정되지 않으면 모든 ISO-639 언어 코드에 대한 파일을 생성합니다. 한 번에 하나의 언어 코드의 이름을 지정할 수 있습니다. 기본값은 입니다. **모두**.<br>예: `--language en_US --language es_ES` | 아니요 |
 | `--exclude-language` | 지정된 언어 코드에 대한 파일을 생성합니다. 옵션이 지정되지 않은 기본값은 아무 것도 제외하지 않는 것입니다. 하나의 언어 코드의 이름이나 쉼표로 구분된 언어 코드 목록을 지정할 수 있습니다. 기본값은 입니다. **없음**. | 아니요 |
-| `--theme <theme>` | 정적 콘텐츠를 배포할 테마입니다. 기본값은 입니다. **모두**.<br>For example: `--theme Magento/blank --theme Magento/luma` | 아니요 |
-| `--exclude-theme <theme>` | 정적 콘텐츠를 배포할 때 제외할 테마입니다. 기본값은 입니다. **없음**.<br>For example, `--exclude-theme Magento/blank` | 아니요 |
-| `--area (-a)` | 지정된 영역에 대해서만 파일을 생성합니다. 기본적으로 모든 영역에 대한 파일을 생성합니다(옵션이 지정되지 않음). 유효한 값은 다음과 같습니다. `adminhtml` 및 `frontend`. 기본값은 입니다. **모두**.<br>For example: `--area adminhtml` | 아니요 |
+| `--theme <theme>` | 정적 콘텐츠를 배포할 테마입니다. 기본값은 입니다. **모두**.<br>예: `--theme Magento/blank --theme Magento/luma` | 아니요 |
+| `--exclude-theme <theme>` | 정적 콘텐츠를 배포할 때 제외할 테마입니다. 기본값은 입니다. **없음**.<br>예를 들어, `--exclude-theme Magento/blank` | 아니요 |
+| `--area (-a)` | 지정된 영역에 대해서만 파일을 생성합니다. 기본적으로 모든 영역에 대한 파일을 생성합니다(옵션이 지정되지 않음). 유효한 값은 다음과 같습니다. `adminhtml` 및 `frontend`. 기본값은 입니다. **모두**.<br>예: `--area adminhtml` | 아니요 |
 | `--exclude-area` | 지정된 영역에 대한 파일을 생성하지 마십시오. 옵션이 지정되지 않은 기본값은 아무 것도 제외하지 않는 것입니다. 기본값은 입니다. **없음**. | 아니요 |
-| `--jobs (-j)` | 지정된 작업 수를 사용하여 병렬 처리를 활성화합니다. 기본값은 0(병렬 프로세스에서 실행되지 않음)입니다. 기본값은 입니다. **0**. | 아니요 |
+| `--jobs (-j)` | 사용 [병렬 처리](manage-indexers.md#reindexing-in-parallel-mode) 지정된 작업 수를 사용합니다. 기본값은 0(병렬 프로세스에서 실행되지 않음)입니다. 기본값은 입니다. **0**. | 아니요 |
 | `--symlink-locale` | 배포를 위해 전달되지만 사용자 지정이 없는 해당 로케일의 파일에 대한 심볼릭 링크를 만듭니다. | 아니요 |
 | `--content-version=CONTENT-VERSION` | 정적 콘텐츠의 사용자 지정 버전은 정적 콘텐츠 버전이 동일하고 캐싱이 제대로 작동하도록 여러 노드에서 배포를 실행하는 경우 사용할 수 있습니다. | 아니요 |
 | `--no-javascript` | JavaScript 파일 배포 안 함 | 아니요 |
@@ -79,7 +79,7 @@ ht-degree: 0%
 >
 >두 값 모두에 대해 값을 지정하는 경우 `<languages>` 및 `--language`, `<languages>` 을 우선으로 합니다.
 
-## 예
+## 예시
 
 다음은 몇 가지 예제 명령입니다.
 

@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >모든 인덱서를 리인덱싱하는 것은 많은 수의 제품, 고객, 카테고리 및 프로모션 규칙이 있는 스토어에 시간이 오래 걸릴 수 있습니다.
 
 ### 병렬 모드로 리인덱싱
+
+{{php-process-control}}
 
 인덱서는 범위가 지정되고 다중 스레드가 제공되어 병렬 모드에서 리인덱싱을 지원합니다. 인덱서의 차원으로 병렬화하고 여러 스레드에서 실행하므로 처리 시간이 단축됩니다.
 
