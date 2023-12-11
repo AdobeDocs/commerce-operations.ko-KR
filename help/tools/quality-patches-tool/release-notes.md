@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
+source-git-commit: 3364434c37935285214451a7d242ae38815f3453
 workflow-type: tm+mt
-source-wordcount: '15669'
+source-wordcount: '19210'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.43 {#v1-1-43}
+
+* **ACSD-54972** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 범주 URL을 변경한 후 표준 범주 URL이 업데이트되지 않는 문제를 해결합니다.
+* **ACSD-53636** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5) - 특별 가격이 있는 하위 제품이 구성 가능한 제품의 제품 목록 페이지에 정기 가격이 표시되지 않는 문제를 수정합니다.
+* **ACSD-54885** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 관리 사용자가 를 사용할 때 여러 주소 체크아웃 문제를 수정합니다. *고객으로 로그인* 기능.
+* **ACSD-55610** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 부분적으로 취소된 주문에 잘못된 할인 금액이 있는 문제를 수정합니다.
+* **ACSD-55334** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - GraphQL 응답의 번역 사전을 통해 레이블에 대한 번역을 수정합니다.
+* **ACSD-54739** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 제품 재고 상태 조건이 관련 제품 규칙에 적용되지 않는 문제를 수정합니다.
+* **ACSD-53925** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 다음과 같은 경우 관리자가 제품 캐러셀에 CMS 블록을 저장할 수 없는 문제가 해결되었습니다. `catalog_product_price` 차원 모드가 다음으로 설정됨 *웹 사이트*.
+* **ACSD-52714** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 날짜 형식이 로 설정된 경우 관리 그리드에서 날짜 필터가 작동하지 않는 문제가 수정되었습니다. *Y-m-d*.
+* **ACSD-55055** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 장바구니에서 장바구니 가격 규칙에 제품 속성을 로드하는 성능을 개선합니다.
+* **ACSD-53790** (Adobe Commerce >=2.4.6 &lt;2.4.7) - REST API를 통해 단일 제품에 대한 여러 RMA를 만들 수 있는 문제를 수정합니다.
+* **ACSD-56090** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.5) - GraphQL 요청이 특별히 요청된 스토어 데이터가 아닌 모든 스토어의 데이터로 응답하는 문제를 수정합니다.
+* **ACSD-54983** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 사용자 상태가 (으)로 설정된 경우 GraphQL 요청으로 회사 사용자 UID를 가져올 수 없는 문제를 해결했습니다. *[!UICONTROL Inactive]*.
+* **ACSD-53309** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 세금이에서 완전히 적용되지 않는 문제를 수정합니다. *[!UICONTROL Regular Price]* 사용자 지정 가능 옵션을 선택한 경우 레이블로 표시합니다.
+* **ACSD-55305** (Adobe Commerce >=2.4.4 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. *[!UICONTROL Edit Company User]* 다음에 팝업 **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** 페이지가 화면에 로더로 고정되어 있습니다.
+* 업데이트된 패치: ACSD-49013
 
 ## v1.1.42 {#v1-1-42}
 
