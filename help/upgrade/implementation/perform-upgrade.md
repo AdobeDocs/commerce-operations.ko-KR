@@ -1,26 +1,28 @@
 ---
 title: 업그레이드 수행
-description: Adobe Commerce 또는 Magento Open Source 프로젝트를 업그레이드하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 배포를 업그레이드하려면 다음 단계를 따르십시오.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # 업그레이드 수행
 
-다음 방법으로 소프트웨어를 설치한 경우 명령줄에서 Adobe Commerce 또는 Magento Open Source 애플리케이션을 업그레이드할 수 있습니다.
+업그레이드할 수 있습니다 _온-프레미스_ 다음 방법으로 소프트웨어를 설치한 경우 명령줄에서 Adobe Commerce 또는 Magento Open Source 애플리케이션 배포:
 
-- 를 사용하여 메타패키지 다운로드 `composer create-project` 명령입니다.
+- 다음을 사용하여 작성기 메타패키지 다운로드 `composer create-project` 명령입니다.
 - 압축된 아카이브를 설치하는 중입니다.
 
 >[!NOTE]
 >
->GitHub 저장소를 복제한 경우 이 메서드를 사용하여 업그레이드하지 마십시오. 대신 를 참조하십시오. [Git 기반 설치 업그레이드](../developer/git-installs.md) 업그레이드 지침
+>- 클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 다음을 참조하십시오. [Commerce 버전 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) Cloud Guide에서 참조하십시오.
+>- GitHub 저장소를 복제한 경우 이 메서드를 사용하여 업그레이드하지 마십시오. 다음을 참조하십시오 [Git 기반 설치 업그레이드](../developer/git-installs.md).
 
-다음 지침은 Composer를 사용하여 업그레이드하는 방법을 보여줍니다. Adobe Commerce 2.4.2에서는 Composer 2에 대한 지원을 도입했습니다. &lt;2.4.1에서 업그레이드하려는 경우 먼저 Composer 1을 사용하여 Composer 2와 호환되는 버전(예: 2.4.2)으로 업그레이드해야 합니다 _다음 이전_ >2.4.2 업그레이드를 위해 Composer 2로 업그레이드. 또한 다음을 실행해야 합니다. [지원되는 버전](../../installation/system-requirements.md) PHP를 참조하십시오.
+다음 지침은 Composer 패키지 관리자를 사용하여 업그레이드하는 방법을 보여 줍니다. Adobe Commerce 2.4.2에서는 Composer 2에 대한 지원을 도입했습니다. &lt;2.4.1에서 업그레이드하려는 경우 먼저 Composer 1을 사용하여 Composer 2와 호환되는 버전(예: 2.4.2)으로 업그레이드해야 합니다 _다음 이전_ >2.4.2 업그레이드를 위해 Composer 2로 업그레이드. 또한 다음을 실행해야 합니다. [지원되는 버전](../../installation/system-requirements.md) PHP를 참조하십시오.
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다양한 릴리스 수준을 지정하는 데 도움이 필요하면 이 섹션 끝에 있는 예 를 참조하십시오. 예를 들어 마이너 릴리스, 품질 패치 및 보안 패치가 있습니다. Adobe Commerce 고객은 GA(General Availability) 날짜 2주 전에 패치에 액세스할 수 있습니다. 프리릴리스 패키지는 Composer를 통해서만 사용할 수 있습니다. GA될 때까지 다운로드 포털 또는 GitHub에서 찾을 수 없습니다. Composer에서 이러한 패키지를 찾을 수 없는 경우 Adobe Commerce 지원에 문의하십시오.
+>다양한 릴리스 수준을 지정하는 데 도움이 필요하면 이 섹션 끝에 있는 예 를 참조하십시오. 예를 들어 품질 패치와 보안 패치가 있습니다. Composer에서 이러한 패키지를 찾을 수 없는 경우 Adobe Commerce 지원에 문의하십시오.
 
 1. 업그레이드 프로세스 중에 스토어에 액세스할 수 없도록 유지 관리 모드로 전환합니다.
 
@@ -108,13 +110,13 @@ ht-degree: 0%
 
    - `<product>` —(필수) 업그레이드할 패키지입니다. 온-프레미스 설치의 경우 이 값은 다음 중 하나여야 합니다 `product-community-edition` 또는 `product-enterprise-edition`.
 
-   - `<version>` — (필수) 업그레이드 중인 Adobe Commerce 또는 Magento Open Source 버전입니다. For example, `2.4.3`.
+   - `<version>` — (필수) 업그레이드 중인 Adobe Commerce 또는 Magento Open Source 버전입니다. 예를 들어, `2.4.3`.
 
    - `--no-update` —(필수) 종속성에 대한 자동 업데이트를 비활성화합니다.
 
    - `--interactive-root-conflicts` — (선택 사항) 이전 버전의 오래된 값 또는 업그레이드하려는 버전과 일치하지 않는 사용자 정의된 값을 대화식으로 보고 업데이트할 수 있습니다.
 
-   - `--force-root-updates` —(선택 사항) 충돌하는 모든 사용자 지정 값을 예상 Magento 값으로 재정의합니다.
+   - `--force-root-updates` —(선택 사항) 충돌하는 모든 사용자 지정 값을 예상 Commerce 값으로 재정의합니다.
 
    - `--help` —(선택 사항) 플러그인에 대한 사용 세부 사항을 제공합니다.
 
@@ -142,58 +144,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### 예 - 마이너 릴리스
-
-마이너 릴리스에는 새로운 기능, 품질 수정 사항 및 보안 수정 사항이 포함되어 있습니다. 작성기를 사용하여 부 릴리스를 지정합니다. 예를 들어 Magento Open Source 2.4.3 메타패키지를 지정하려면 다음을 수행합니다.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### 예 - 품질 패치
 
-품질 패치에는 주로 기능이 포함됩니다 _및_ 보안 수정 사항. 그러나 이전 버전과 호환되는 새로운 기능이 포함될 수도 있습니다. 작성기를 사용하여 품질 패치를 다운로드합니다. 예를 들어 Magento Open Source 2.4.1 메타패키지를 지정하려면 다음을 수행합니다.
+품질 패치에는 주로 기능이 포함됩니다 _및_ 보안 수정 사항. 그러나 이전 버전과 호환되는 새로운 기능이 포함될 수도 있습니다. 작성기를 사용하여 품질 패치를 다운로드합니다.
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### 예 - 보안 패치
 
-보안 패치에는 보안 수정 사항만 포함됩니다. 업그레이드 프로세스를 더 빠르고 쉽게 할 수 있도록 설계되었습니다.
-
-보안 패치는 작성기 이름 지정 규칙을 사용합니다 `2.4.x-px`. 작성기를 사용하여 패치를 지정합니다.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+보안 패치에는 보안 수정 사항만 포함됩니다. 업그레이드 프로세스를 더 빠르고 쉽게 할 수 있도록 설계되었습니다. 보안 패치는 작성기 이름 지정 규칙을 사용합니다 `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## 메타데이터 업데이트
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## 작업 확인
 
-웹 브라우저에서 상점 URL을 열어 업그레이드가 성공했는지 확인합니다. 업그레이드에 실패한 경우 상점 전면이 제대로 로드되지 않습니다.
+업그레이드가 성공했는지 확인하려면 웹 브라우저에서 상점 URL을 여십시오. 업그레이드에 실패한 경우 상점이 제대로 로드되지 않습니다.
 
 다음 오류가 발생하여 애플리케이션이 실패하는 경우  `We're sorry, an error has occurred while generating this email.` 오류:
 
