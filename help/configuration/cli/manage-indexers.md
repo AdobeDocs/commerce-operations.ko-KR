@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -225,11 +225,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### 인덱서 구성
+### 인덱서 모드 설정
+
+>[!IMPORTANT]
+>
+>다음을 설정하십시오. [!DNL Customer Grid] 포함 `realtime` 대신 `schedule`. 다음 [!DNL Customer Grid] 를 사용해야만 다시 인덱싱할 수 있습니다. [!UICONTROL Update on Save] 옵션을 선택합니다. 이 인덱스는 다음을 지원하지 않습니다. `Update by Schedule` 옵션을 선택합니다. 다음 명령줄을 사용하여 저장 시 이 인덱서를 업데이트하도록 설정하십시오. `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>다음을 참조하십시오 [인덱서 구성에 대한 우수 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) 다음에서 _구현 플레이북_.
 
 >[!INFO]
 >
->인덱서 모드를 전환하기 전에 웹 사이트를 다음에 놓는 것이 좋습니다. [유지 보수](../../installation/tutorials/maintenance-mode.md) 모드 및 [cron 작업 비활성화](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
+>인덱서 모드를 전환하기 전에 웹 사이트를 로 설정합니다. [유지 보수](../../installation/tutorials/maintenance-mode.md) 모드 및 [cron 작업 비활성화](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
 
 인덱서 구성을 지정하려면 다음을 수행합니다.
 
