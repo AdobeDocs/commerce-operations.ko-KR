@@ -4,9 +4,9 @@ description: Adobe Commerce용 확장된 Redis 캐시 구현을 사용하여 캐
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ stage:
 >[!NOTE]
 >
 >최신 버전의 를 사용 중인지 확인합니다. `ece-tools` 패키지. 그렇지 않은 경우, [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). 를 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다. `composer show magento/ece-tools` CLI 명령입니다.
+
+
+### L2 캐시 메모리 크기 조정(Adobe Commerce Cloud)
+
+L2 캐시는 [임시 파일 시스템](https://en.wikipedia.org/wiki/Tmpfs) 저장 메커니즘으로 사용됩니다. 특수 키 값 데이터베이스 시스템과 비교하면 임시 파일 시스템에는 메모리 사용을 제어하는 키 제거 정책이 없습니다.
+
+메모리 사용 제어 부족으로 인해 오래된 캐시를 누적하여 L2 캐시 메모리 사용량이 늘어날 수 있습니다.
+
+L2 캐시 구현의 메모리 소진을 방지하기 위해 Adobe Commerce은 특정 임계값에 도달하면 저장소를 지웁니다. 기본 임계값은 95%입니다.
+
+캐시 저장을 위한 프로젝트 요구 사항에 따라 L2 캐시 메모리 최대 사용량을 조정하는 것이 중요합니다. 다음 방법 중 하나를 사용하여 메모리 캐시 크기 조정을 구성합니다.
+
+- 지원 티켓을 만들어 크기 변경 요청 `/dev/shm` 마운트.
+- 조정 `cleanup_percentage` 스토리지의 최대 충진 비율을 제한하는 애플리케이션 수준의 속성입니다. 나머지 여유 메모리는 다른 서비스에서 사용할 수 있습니다.
+캐시 구성 그룹 아래의 배포 구성에서 구성을 조정할 수 있습니다 `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>다음 `cleanup_percentage` 구성 가능한 옵션은 Adobe Commerce 2.4.4에 도입되었습니다.
+
+다음 코드는에서 예제 구성을 보여 줍니다. `.magento.env.yaml` 파일:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+캐시 요구 사항은 프로젝트 구성 및 사용자 지정 타사 코드에 따라 다를 수 있습니다. L2 캐시 메모리 크기 조정 범위를 사용하면 L2 캐시가 너무 많은 임계값 히트 없이 작동할 수 있습니다.
+이상적으로 L2 캐시 메모리 사용은 빈번한 스토리지 지우기를 방지하기 위해 임계값 아래의 특정 수준에서 안정되어야 합니다.
+
+다음 CLI 명령을 사용하여 클러스터의 각 노드에서 L2 캐시 스토리지 메모리 사용을 확인하고 `/dev/shm` 줄.
+사용은 서로 다른 노드에 걸쳐 다를 수 있지만 동일한 값으로 수렴해야 합니다.
+
+```bash
+df -h
+```
 
 ## Redis 슬레이브 연결 활성화
 
