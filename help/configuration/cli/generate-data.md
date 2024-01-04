@@ -3,10 +3,10 @@ title: 성능 테스트를 위한 데이터 생성
 description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -51,6 +51,8 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 >[!WARNING]
 >
 >데이터 생성기를 실행하기 전에 서버에서 실행 중인 모든 cron 작업을 비활성화하십시오. cron 작업을 비활성화하면 데이터 생성기가 활성 cron 작업과 충돌하는 작업을 수행하지 못하고 불필요한 오류가 발생하지 않습니다.
+>
+>를 사용하여 이벤트를 구현하려는 경우 [!DNL Adobe I/O Events for Adobe Commerce] 성능을 테스트하는 동안 구독하기 전에 이 명령을 실행하십시오. [events](https://developer.adobe.com/commerce/extensibility/events/). 먼저 이벤트를 구독하면 오류가 발생할 수 있습니다.
 
 이 섹션에서 설명한 대로 명령을 실행합니다. 명령이 실행되면 다음을 수행해야 합니다. [모든 인덱서 다시 인덱싱](../cli/manage-indexers.md).
 
