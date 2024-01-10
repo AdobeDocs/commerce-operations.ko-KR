@@ -2,9 +2,9 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 중요 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 7edf6d5a8dfe58a86f27e97816e4d850bc21babc
+source-git-commit: 7771c4f225f7f6f9729c432ad1bcb1dcd8b2dc40
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '505'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
 <tbody>
   <tr>
     <td>2024년 2월 13일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
+    <td><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
   </tr>
   <tr>
