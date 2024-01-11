@@ -2,9 +2,9 @@
 title: 샘플 데이터 개요
 description: Adobe Commerce 및 Magento Open Source 프로젝트에 샘플 데이터를 사용하는 방법에 대해 알아봅니다.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: decaac76955aaae011c308ed1295198abf791abe
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,15 @@ ht-degree: 0%
 
 샘플 데이터는 제품, 카테고리, 고객 등록 등을 갖춘 Luma 테마를 기반으로 스토어프론트를 제공합니다. 이것은 상거래 상점 과 같은 기능을 하며 관리자를 사용하여 가격, 인벤토리 및 프로모션 요금제 규칙을 조작할 수 있습니다.
 
+>[!NOTE]
+>
+>데이터베이스 및 다양한 기능을 검토하고 분석하려면 샘플 데이터 대신 실제 데이터를 사용하는 것이 좋습니다. 샘플 데이터는 테마 디자인과 기본 상점 행동을 보여 주기 위해, 미리 생성된 상점 시뮬레이션으로 설계되었습니다. 모든 샘플 데이터 엔티티는 샘플 데이터가 설치되는 동안 데이터베이스 테이블에 직접 기록됩니다.
+
 Commerce 소프트웨어를 설치하기 전이나 후에 샘플 데이터를 설치할 수 있습니다. 샘플 데이터를 완료하면에 설명된 대로 제거하거나 새로 설치할 수 있습니다. [샘플 데이터 모듈을 제거하거나 샘플 데이터 업데이트](remove-or-update.md).
 
 >[!WARNING]
 >
->샘플 데이터는 제거할 수 없습니다. 샘플 데이터는 Adobe Commerce 및 Magento Open Source 작동 방식에 대해서만 학습하는 것이 좋습니다. 샘플 데이터를 설치한 시스템에서 개발을 수행하지 마십시오.
+>샘플 데이터는 제거할 수 없습니다. 샘플 데이터만 사용하여 Adobe Commerce 및 Magento Open Source 작동 방식에 대해 알아보십시오. 샘플 데이터를 설치한 시스템에서 개발을 수행하지 마십시오.
 
 다음 방법 중 하나로 선택적 샘플 데이터를 설치할 수 있습니다.
 
