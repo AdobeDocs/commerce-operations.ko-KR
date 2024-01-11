@@ -3,9 +3,9 @@ title: 바니시 구성 및 사용
 description: Vannish가 파일을 저장하고 HTTP 트래픽을 개선하는 방법을 이해합니다.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [바니시 캐시] 는 오픈 소스 웹 응용 프로그램 가속기(또는 _HTTP 가속기_ 또는 _HTTP 역방향 프록시 캐싱_). Vannish는 파일 또는 파일 조각을 메모리에 저장(또는 캐시)하여 향후 동등한 요청에 대한 응답 시간 및 네트워크 대역폭 사용을 줄일 수 있습니다. Apache 및 nginx와 같은 웹 서버와 달리 Varnish는 HTTP 프로토콜에서만 사용하도록 설계되었습니다.
 
-상거래 2.4.2는 바니시 6.4로 테스트되었습니다. 상거래 2.4.x는 Varnish 6.x와 호환됩니다
+[시스템 요구 사항](../../installation/system-requirements.md) 지원되는 버전의 바니시를 나열합니다.
 
 >[!WARNING]
 >
->We _강력히 추천_ 바니쉬는 프로덕션에 사용합니다. 내장된 전체 페이지 캐싱 - 파일 시스템 또는 [데이터베이스]- 는 Vannish보다 훨씬 느리며, Vannish는 HTTP 트래픽을 가속화하도록 설계되었습니다.
+>We _강력히 추천_ 바니쉬는 프로덕션에 사용합니다. 내장된 전체 페이지 캐싱 - 파일 시스템 또는 [데이터베이스](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)- 는 Vannish보다 훨씬 느리며, Vannish는 HTTP 트래픽을 가속화하도록 설계되었습니다.
 
 Varnish에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -53,9 +53,9 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 
 >[!NOTE]
 >
-- 언급된 경우를 제외하고 이 주제에서 설명한 모든 명령을 `root` 권한.
+>- 언급된 경우를 제외하고 이 주제에서 설명한 모든 명령을 `root` 권한.
 >
-- 이 항목은 CentOS 및 Apache 2.4의 Varnish용으로 작성되었습니다. 다른 환경에서 바니시를 설정하는 경우 일부 명령이 다를 수 있습니다. 자세한 내용은 Vanish 설명서 를 참조하십시오.
+>- 이 항목은 CentOS 및 Apache 2.4의 Varnish용으로 작성되었습니다. 다른 환경에서 바니시를 설정하는 경우 일부 명령이 다를 수 있습니다. 자세한 내용은 Vanish 설명서 를 참조하십시오.
 
 ## 알려진 문제
 
@@ -96,7 +96,7 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 
 >[!INFO]
 >
-이 항목에서는 이전 목록의 기본 옵션만 다룹니다. 다른 여러 가지 방법으로 복잡한 시나리오(예: 콘텐츠 전달 네트워크 사용)에서 캐싱을 구성할 수 있습니다. 이러한 메서드는 이 안내서의 범위를 벗어납니다.
+>이 항목에서는 이전 목록의 기본 옵션만 다룹니다. 다른 여러 가지 방법으로 복잡한 시나리오(예: 콘텐츠 전달 네트워크 사용)에서 캐싱을 구성할 수 있습니다. 이러한 메서드는 이 안내서의 범위를 벗어납니다.
 
 첫 번째 브라우저 요청에서 캐시 가능한 자산은 Varnish에서 클라이언트 브라우저로 전달되고 브라우저에 캐시됩니다.
 
@@ -120,7 +120,7 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 
 >[!NOTE]
 >
-대부분의 정적 에셋에는 서버에서 에셋을 검색했음을 나타내는 HTTP 200(OK) 상태 코드가 있습니다.
+>대부분의 정적 에셋에는 서버에서 에셋을 검색했음을 나타내는 HTTP 200(OK) 상태 코드가 있습니다.
 
 ### 두 번째 브라우저 요청
 
@@ -148,7 +148,6 @@ Varnish에 의해 캐시된 에셋은 구성 가능한 간격으로 만료되거
 
 <!-- Link Definitions -->
 
-[데이터베이스]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [큰 바니시 그림]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [바니시 캐시]: https://varnish-cache.org
 [니스 시작 옵션]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

@@ -3,9 +3,9 @@ title: 고급 바니시 구성
 description: 상태 점검, 유예 및 saint 모드를 포함한 고급 바니시 기능을 구성합니다.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Vannish는 상거래 서버가 제대로 작동하지 않을 때 고객이 긴 지연 및 시간 초과를 겪지 않도록 하는 몇 가지 기능을 제공합니다. 이러한 기능은에서 구성할 수 있습니다 `default.vcl` 파일. 이 항목에서는 Commerce가 관리자로부터 다운로드한 VCL(Varnish 구성 언어) 파일에 제공하는 추가 기능에 대해 설명합니다.
 
-다음을 참조하십시오. [바니시 참조 설명서](https://varnish-cache.org/docs/6.3/reference/index.html) 바니시 구성 언어 사용에 대한 자세한 내용은 를 참조하십시오.
+다음을 참조하십시오. [바니시 참조 설명서](https://varnish-cache.org/docs/index.html) 바니시 구성 언어 사용에 대한 자세한 내용은 를 참조하십시오.
 
 ## 상태 검사
 
@@ -36,7 +36,7 @@ Commerce는 다음과 같은 기본 상태 검사를 정의합니다.
 
 다음 `health_check.php` 스크립트는에 있습니다 `pub` 디렉토리. 상거래 루트 디렉터리가 `pub`, 그런 다음 의 경로를 변경해야 합니다. `url` 매개 변수 `/pub/health_check.php` 끝 `health_check.php`.
 
-자세한 내용은 [니스 상태 검사](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) 설명서를 참조하십시오.
+자세한 내용은 [니스 상태 검사](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) 설명서를 참조하십시오.
 
 ## 유예 모드
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### 설치
 
-Saint 모드는 기본 Varnish 패키지의 일부가 아닙니다. 이 버전은 별도로 나와 있습니다 `vmod` 다운로드하여 설치해야 합니다. 따라서 다음 문서에 설명된 대로 소스에서 Varnish를 다시 컴파일해야 합니다.
-
-- [Vannish 6.4 설치](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Vanish 6.0 설치](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+Saint 모드는 기본 Varnish 패키지의 일부가 아닙니다. 이 버전은 별도로 나와 있습니다 `vmod` 다운로드하여 설치해야 합니다. 따라서 다음에 설명된 대로 소스에서 Varnish를 다시 컴파일해야 합니다. [설치 지침](https://varnish-cache.org/docs/index.html) 바니쉬의 버전을 위해.
 
 다시 컴파일한 후 Saint 모드 모듈을 설치할 수 있습니다. 일반적으로 다음 단계를 수행합니다.
 
