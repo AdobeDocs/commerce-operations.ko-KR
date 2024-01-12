@@ -3,9 +3,9 @@ title: 다음 [!UICONTROL CDN] 탭
 description: 에 대해 알아보기 [!UICONTROL CDN] 탭 / [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ ht-degree: 0%
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
 ![POP로 대체된 선택한 기간(초)의 Fastly 캐시 평균 응답](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
+
+*POP* 이 컨텍스트에서는 캐시 스토리지를 위한 풀로 작동하도록 구성된 POP(Point of Presence)를 참조합니다. 다음을 참조하십시오 [현재 위치](https://developer.fastly.com/learning/concepts/pop/).
 
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
