@@ -3,18 +3,14 @@ title: 성능 테스트를 위한 데이터 생성
 description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
+source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 8%
+source-wordcount: '762'
+ht-degree: 9%
 
 ---
 
 # 성능 테스트 데이터
-
-을(를) 사용하려면 [성능 툴킷](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 또는 성능 테스트를 위한 다른 도구에서 저장소, 카테고리 및 제품과 같은 많은 양의 데이터를 생성해야 합니다.
-
-{{file-system-owner}}
 
 ## 프로필
 
@@ -47,6 +43,8 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### 데이터 생성기 실행
+
+{{file-system-owner}}
 
 >[!WARNING]
 >
