@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 예약된 업데이트로 인해 두 개의 하위 제품 중 하나가 비활성화될 때 구성 가능한 제품이 품절되는 문제를 수정합니다.
+* **ACSD-56616** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 번들 제품이 단순 제품이 품절되었을 때 상점 앞에 재고로 표시되는 문제를 수정합니다.
+* **ACSD-56515** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 웹 사이트 수준 권한이 있는 관리자가 동적 블록을 추가하거나 편집할 수 없는 문제를 수정합니다.
+* **ACSD-56447** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 병렬 REST 웹 API 요청을 통해 동일한 제품을 장바구니에 추가하면 장바구니에 두 개의 개별 항목이 표시되는 문제를 수정합니다.
+* **ACSD-56415** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 다음 이유로 인해 부분 가격 인덱싱의 성능이 느려지는 문제가 해결되었습니다. `DELETE` 데이터베이스에 색인화할 부분 가격 데이터가 많은 경우 쿼리합니다.
+* **ACSD-54965** (Adobe Commerce >=2.4.5 &lt;2.4.6) - 제품이 사용자 지정 주식에만 할당된 경우 시각적 머천다이징 그리드에 올바른 재고가 표시되지 않는 문제가 수정되었습니다.
+* **ACSD-52824** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 회사 설정에서 결제 방법이 비활성화된 경우 회사 고객을 위해 PayPal Express, Google Pay 및 Apple Pay 버튼이 표시되는 문제를 수정합니다.
+* 업데이트된 패치: ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
