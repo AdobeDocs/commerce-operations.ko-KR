@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1e1899426416df8526e58a50ad1e58b67d5b4196
+source-git-commit: 4e836797fa021c16b24ca95ab8df096e0cdf5e7e
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 21%
+source-wordcount: '137'
+ht-degree: 6%
 
 ---
 # Commerce Services의 제품 가용성
@@ -55,10 +55,10 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>라이브 검색</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
+          <td>4.0.0</td>
+          <td>4.0.0</td>
+          <td>4.0.0</td>
+          <td>4.0.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">마켓플레이스</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">릴리스 정보</a><br/>
