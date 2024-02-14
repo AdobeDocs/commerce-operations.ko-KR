@@ -4,9 +4,9 @@ description: 클라우드 인프라에 Adobe Commerce을 배포할 때 성능을
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -100,5 +100,5 @@ DDL 문을 실행해야 하는 경우 웹 사이트를 유지 관리 모드로 �
 ## 추가 정보
 
 - [MySQL 스토리지 엔진](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
-- [Adobe Commerce 2.3.5 MariaDB 업그레이드 사전 요구 사항](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [Adobe Commerce 2.3.5 MariaDB 업그레이드 사전 요구 사항](../maintenance/mariadb-upgrade.md)
 - [데이터베이스 성능 문제 해결 모범 사례](../maintenance/resolve-database-performance-issues.md)

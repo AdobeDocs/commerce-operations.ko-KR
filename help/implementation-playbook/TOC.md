@@ -2,7 +2,7 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: a547653046fd1926c7fd587df19cb2209e263114
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 11%
@@ -123,5 +123,5 @@ ht-degree: 11%
       - [프로덕션 사이트에 대한 관리자 업데이트 예약](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [서비스 업데이트](best-practices/maintenance/update-services.md)
       - [업그레이드 체크리스트](best-practices/maintenance/upgrade-checklist.md)
-      - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+      - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/mariadb-upgrade.md)
 - [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

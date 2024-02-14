@@ -2,9 +2,9 @@
 title: 전제 조건 완료
 description: 다음 전제 조건 단계를 완료하여 Adobe Commerce 프로젝트를 업그레이드하도록 준비합니다.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에서 도입되었습
 
 ## 데이터베이스 테이블 형식 변환
 
-모든 데이터베이스 테이블의 형식을 `COMPACT` 끝 `DYNAMIC`. 또한 저장소 엔진 유형을에서 변환해야 합니다 `MyISAM` 끝 `InnoDB`. 다음을 참조하십시오 [우수 사례](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
+모든 데이터베이스 테이블의 형식을 `COMPACT` 끝 `DYNAMIC`. 또한 저장소 엔진 유형을에서 변환해야 합니다 `MyISAM` 끝 `InnoDB`. 다음을 참조하십시오 [우수 사례](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## 열린 파일 제한 설정
 

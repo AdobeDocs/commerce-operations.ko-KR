@@ -3,10 +3,10 @@ title: 구현 유지 관리 단계
 description: Adobe Commerce 프로젝트의 유지 관리 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 2%
+source-wordcount: '371'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 2%
 | 모범 사례 | 설명 |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [데이터베이스 성능 문제 &#x200B; 해결](resolve-database-performance-issues.md) | 클라우드 인프라에 배포된 Adobe Commerce 사이트에서 성능이 저하되는 데이터베이스 문제를 해결합니다. |
-| [Adobe Commerce 2.3.5 MariaDB용 업그레이드 사전 요구 &#x200B; 사항](commerce-235-upgrade-prerequisites-mariadb.md) | 업그레이드를 위해 MariaDB 데이터베이스를 준비합니다. |
+| [MariaDB에 대한 Adobe Commerce 업그레이드 사전 요구 &#x200B; 사항](mariadb-upgrade.md) | 업그레이드를 위해 MariaDB 데이터베이스를 준비합니다. |
 
 ## 향상된 기능
 
