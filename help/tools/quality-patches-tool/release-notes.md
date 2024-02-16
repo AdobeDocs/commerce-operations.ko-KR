@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6) - 제품이 아직 재고가 있더라도 재고 수량이 변경되면 카테고리 페이지가 캐시되는 문제가 해결됩니다.
+* **ACSD-54656** (Adobe Commerce >=2.4.5 &lt;2.4.6) - 체크아웃 중에 보이지 않는 Recaptcha가 실패하여 주문이 이루어지지 않는 문제를 수정합니다.
+* **ACSD-55100** (Adobe Commerce >=2.4.6 &lt;2.4.7) - GraphQL이 검색 결과에서 1만 개 이상의 제품을 반환하지 않는 문제를 해결합니다.
+* **ACSD-56621** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 회사 관리자의 경우 업데이트된 이름과 성이 인사말 헤더 섹션에 반영되지 않는 문제가 수정되었습니다.
+* **ACSD-56842** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 실행 후 지연된 프록시 및 지연된 프록시 팩토리가 누락된 문제를 수정합니다 `setup:di:compile`.
+* **ACSD-57003** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 주문 상태가 변경되는 문제를 수정합니다. *[!UICONTROL Complete]* 을 로 변경하지 않고 *[!UICONTROL Processing]* 주문이 일부 환불 및 일부 배송된 경우.
+* 업데이트된 패치: ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
