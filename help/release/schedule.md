@@ -1,11 +1,11 @@
 ---
 title: 릴리스 일정
-description: Adobe이 Adobe Commerce의 새로운 기능 릴리스를 발표할 계획을 세우는 시기를 알아봅니다.
+description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
