@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 다음 문제를 수정합니다. *[!UICONTROL Used]* 및 *[!UICONTROL Times Used]* 여러 주소가 있는 체크아웃 중에 사용할 경우 속성은 생성된 쿠폰에 대한 잘못된 값을 표시합니다.
+* **ACSD-56760** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 웹 스토어에 자체 루트 범주가 있는 경우 특정 웹 사이트로 제한된 관리 사용자가 범주 내에서 새 제품을 정렬하거나 추가할 수 없는 문제를 해결합니다.
+* **ACSD-56858** (Adobe Commerce >=2.4.2 &lt;2.4.7) - 제한된 회사 관리자에 대해 B2B 회사 역할 권한이 잘못 표시되는 문제가 수정되었습니다.
+* **ACSD-57074** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. *예/아니요* 이 있는 사용자 지정 속성 `attrbute_code` 다음으로 시작 `price_` 는 색인화에서 제대로 작동하지 않으며 이러한 속성을 사용하는 제품은 프런트 엔드에서 사용할 수 없습니다.
+* 업데이트된 패치: ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
