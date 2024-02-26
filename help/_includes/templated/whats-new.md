@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0cc92188c2af5aa37bb094921df86c703f6f0eb2
+source-git-commit: 0d6e2d58074b921466e5f4995a0c8e97a63e2d83
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '161'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 3%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2024년 2월 14일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>에 대한 모범 사례 추가 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">mariaDB 업그레이드</a> 10.5.1 이상</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024년 2월 13일
 
