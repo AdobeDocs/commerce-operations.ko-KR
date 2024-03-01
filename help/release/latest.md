@@ -4,7 +4,7 @@ description: Adobe Commerce의 최신 구성 가능한 개발 도구 및 AI 기�
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: b0cfe0ae73a2d65f205bfe874e080d56f195601b
+source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
 workflow-type: tm+mt
 source-wordcount: '3076'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Commerce 2월 제품 발표
+# Adobe Commerce 2월 제품 공지
 
 Adobe Commerce은 고객이 더 빠르게 움직이고 판매를 가속화할 수 있는 새로운 경험 주도 상거래 기능을 개발하기 위해 고객과 긴밀히 협력해 왔습니다. Hanesbrands와 같은 고객은 이미 이러한 새로운 기능을 사용하여 더 빠른 사이트, 더 높은 전환율 및 더 나은 성과를 창출하는 캠페인의 이점을 누리고 있습니다. 그리고 Nestle Purina는 통합 개발자 경험을 통해 구성 가능한 개발을 단순화하고 있습니다. 이러한 새로운 기능과 시작하는 방법에 대해 2월 제품 발표 개요에서 알아보십시오.
 
