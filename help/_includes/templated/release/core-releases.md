@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-2.4.7 릴리스 라인에 대한 지원은 2027년 4월 19일에 종료됩니다.
+2.4.7 릴리스 라인에 대한 지원은 2027년 4월 9일에 종료됩니다.
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 ## 2.4.4
 
-2.4.4 릴리스 라인에 대한 지원은 2025년 4월 12일에 종료됩니다.
+2.4.4 릴리스 라인에 대한 지원은 2025년 4월 24일에 종료됩니다.
 
 <table>
   <thead>
