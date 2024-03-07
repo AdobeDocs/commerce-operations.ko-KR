@@ -2,9 +2,9 @@
 title: 고급 온-프레미스 설치
 description: 소유한 인프라의 Adobe Commerce 또는 Magento Open Source에 대한 고급 설치 시나리오에 대해 알아봅니다.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Adobe Commerce 및 Magento Open Source에는 설치 및 구성 작업을 위한 
 
 | 설치 관리자 인수 | 명령 |
 | ------------------ | ------------------------------- |
-| 언어 | bin/magento 정보:language:목록 |
-| 통화 | bin/magento 정보:currency:목록 |
-| 시간대 | bin/magento 정보:timezone:목록 |
+| 언어 | `bin/magento info:language:list` |
+| 통화 | `bin/magento info:currency:list` |
+| 시간대 | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
@@ -195,7 +195,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--lock-provider` | 공급자 이름 잠금<br><br>사용 가능한 잠금 공급자: `db`, `zookeeper`, `file`.<br><br>기본 잠금 공급자: `db` | 아니요 |
 | `--lock-db-prefix` | 을 사용할 때 잠금 충돌을 방지하기 위한 특정 DB 접두사 `db` 공급자 잠금.<br><br>기본값: `NULL` | 아니요 |
-| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>For example: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>예: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Zookeeper가 잠금을 저장하는 경로입니다.<br><br>기본 경로는 다음과 같습니다. `/magento/locks` | 아니요 |
 | `--lock-file-path` | 파일 잠금이 저장되는 경로입니다. | 예, 다음을 설정하면 `--lock-provider=file` |
 

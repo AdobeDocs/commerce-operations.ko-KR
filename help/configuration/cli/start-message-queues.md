@@ -2,9 +2,9 @@
 title: 메시지 큐 소비자 시작
 description: 메시지 큐 소비자를 시작하는 방법을 알아봅니다.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-다음을 참조하십시오 [큐:consumers:시작](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) ( 의 상거래 섹션) _명령줄 도구 참조_ 명령 옵션, 매개 변수 및 값에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
+다음을 참조하십시오 [`queue:consumers:start`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) ( 의 상거래 섹션) _명령줄 도구 참조_ 명령 옵션, 매개 변수 및 값에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
 
 >[!INFO]
 >

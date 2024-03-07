@@ -2,7 +2,7 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>범례</strong>:
+      <td colspan="3"><strong>범례:</strong>
          <ul>
             <li><strong><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce용 B2B 확장의 새로운 기능, 개선 사항 및 버그 수정 사항.</li>
             <li><strong><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> 확장성</strong>—새로운 개발자 도구 및 서비스로 패치 릴리스와 별도로 제공되는 프로세스 종료 확장성 예: 관리자 UI SDK, 상업용 Adobe I/O 이벤트 및 API Mesh.</li>
