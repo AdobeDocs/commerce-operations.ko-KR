@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ Storefront 및 관리자:
 - Firefox(최신 및 이전 주요 버전, 모든 운영 체제)
 - Chrome(최신 및 이전 주요 버전, 모든 운영 체제)
 - Safari(최신 및 이전 주요 버전, macOS 전용)
-- iPad 2, iPad Mini, iPad 및 Retina 디스플레이(iOS 12 이상)용 Safari Mobile(데스크탑 상점)
-- iPhone 6 이상용 Safari Mobile; 모바일 상점 앞용 iOS 12 이상
-- 모바일용 Chrome(최신 및 이전 주요 버전) [Android™ 4 이상] 모바일 상점 용)
+- iOS용 Safari (storefront용 최신 및 이전 주요 버전)
+- Android용 Chrome(Storefront용 최신 및 이전 주요 버전)
 
 ### 메일 서버
 
