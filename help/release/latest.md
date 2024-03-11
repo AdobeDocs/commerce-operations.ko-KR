@@ -4,13 +4,13 @@ description: Adobe Commerce의 최신 구성 가능한 개발 도구 및 AI 기�
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce 2월 제품 공지
 
@@ -22,7 +22,7 @@ Adobe Commerce은 고객이 더 빠르게 움직이고 판매를 가속화할 �
 
 전자 상거래 리더 및 실무자로부터 Adobe Commerce에 대해 자세히 알아보려면 다음과 같은 직접 및 가상 이벤트에 참여하십시오.
 
-- **2024년 3월 15일**: Adobe Commerce: 경험 중심의 상거래 플랫폼 구축, 오전 10시(태평양 표준시) / 오후 6시(GMT) [라이브 웨비나 등록](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **2024년 3월 14일**: Adobe Commerce: 경험 중심의 상거래 플랫폼 구축, 오전 10시(태평양 표준시) / 오후 5시 GMT. [라이브 웨비나 등록](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **2024년 3월 26일~28일**: 라스베가스의 Adobe Summit에서 수천 명의 전자 상거래 리더와 실무자와 함께하십시오. 에 대해 자세히 알아보기 [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) 및 [Commerce 추적](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) 의 스피커 포함 [Hanesbrands](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [코카콜라](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [유니레버](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430), 및 [네슬레 퓨리나](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ Adobe Commerce의 Edge Delivery Services에 대한 자세한 내용은 다음 �
 
 [!BADGE 현재 사용 가능]{type=Informative tooltip="현재 사용 가능"}
 
-Adobe은 모든 규모의 의료 서비스 고객과 HIPAA 지원 서비스를 배포한 광범위한 경험을 보유하고 있습니다. 지불자에서 제공업체에 이르기까지 제약 및 의료 기술 공급업체에 이르기까지 Adobe은 책임 있는 소비자 데이터 관리의 표준을 설정합니다. 이러한 전문성은 이제 Adobe Commerce 클라우드 플랫폼의 HIPPA 지원 버전을 통해 빠르게 성장하고 있는 헬스케어 디지털 상거래 시장으로 확장되고 있습니다.
+Adobe은 모든 규모의 의료 서비스 고객과 HIPAA 지원 서비스를 배포한 광범위한 경험을 보유하고 있습니다. 지불자에서 제공업체에 이르기까지 제약 및 의료 기술 공급업체에 이르기까지 Adobe은 책임 있는 소비자 데이터 관리의 표준을 설정합니다. 이러한 전문 지식은 이제 HIPAA 지원 버전의 Adobe Commerce 클라우드 플랫폼을 통해 빠르게 성장하는 의료 디지털 상거래 시장으로 확장되고 있습니다.
 
 HIPAA 지원 오퍼링은 Adobe Commerce 클라우드 및 관리 서비스 고객이 사용할 수 있습니다. 여기에는 의료 및 생명 과학 조직이 규정 준수 의무를 보다 쉽게 이행할 수 있도록 전자 개인 건강 정보(ePHI)를 보호하기 위한 추가 보안 및 개인 정보 제어 기능이 포함됩니다. 이 솔루션은 헬스케어 보장의 빠르고 편리한 온라인 판매, 처방, 처방의료기기, 의료용품 등 다양한 활용 사례를 지원한다. Adobe Commerce이 이제 [Adobe Experience Cloud for Health](https://business.adobe.com/solutions/industries/healthcare.html) 고객이 소비자 선호도를 유지하면서 안전하고 탁월한 환자 경험을 제공할 수 있도록 하는 솔루션 제품군입니다.
 
