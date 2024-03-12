@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
+source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -263,3 +263,51 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 ```
 
 인덱서 모드가 로 설정되면 인덱서 관련 데이터베이스 트리거가 추가됩니다. `schedule` 인덱서 모드가 로 설정되면 제거 `realtime`. 인덱서가 로 설정된 동안 데이터베이스에서 트리거가 누락된 경우 `schedule`, 인덱서를 다음으로 변경 `realtime` 다시 다음으로 변경 `schedule`. 그러면 트리거가 재설정됩니다.
+
+### 인덱서 상태 설정 [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 베타 버전에서만 사용 가능"}
+
+이 명령을 사용하면 관리자가 하나 이상의 인덱서의 작동 상태를 수정하여 데이터 가져오기, 업데이트 또는 유지 관리와 같은 광범위한 작업 중에 시스템 성능을 최적화할 수 있습니다.
+
+명령 구문:
+
+```bash
+bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
+```
+
+위치:
+
+- `invalid`- 인덱서가 최신 상태가 아닌 것으로 표시하여 일시 중단되지 않는 한 다음 cron 실행 시 다시 인덱싱하도록 요청합니다.
+- `suspended`- 인덱서에 대한 자동 cron 트리거 업데이트를 일시적으로 중지합니다. 이 상태는 실시간 및 예약 모드 모두에 적용되므로 집중 작업 중에 자동 업데이트가 일시 중지되도록 할 수 있습니다.
+- `valid`- 인덱서 데이터가 최신 상태이며 다시 인덱싱할 필요가 없음을 나타냅니다.
+- `indexer`- 공백으로 구분된 인덱서 목록입니다. 생략 `indexer` 모든 인덱서를 동일한 방식으로 구성합니다.
+
+예를 들어 특정 인덱서를 일시 중단하려면 다음을 입력합니다.
+
+```bash
+bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
+```
+
+샘플 결과:
+
+```terminal
+Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
+Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
+```
+
+#### 일시 중단된 인덱서 상태 관리
+
+인덱서가 로 설정된 경우 `suspended` 상태는 주로 자동 재색인화 및 구체화된 뷰 갱신에 영향을 줍니다. 다음은 간단한 개요입니다.
+
+**리인덱싱 건너뜀**: 자동 리인덱싱은 다음에 대해 우회합니다. `suspended` 인덱서 및 이를 공유하는 모든 인덱서 `shared_index`. 이렇게 하면 중단된 프로세스와 관련된 데이터를 리인덱싱하지 않음으로써 시스템 자원이 보존됩니다.
+
+**구체화된 뷰 갱신 생략됨**: 리인덱싱과 유사하게 와 관련된 구체화된 뷰에 대한 업데이트입니다. `suspended` 인덱서 또는 공유 인덱스도 일시 중지됩니다. 이러한 동작은 서스펜션 기간 동안 시스템 부하를 더 감소시킨다.
+
+>[!INFO]
+>
+>다음 `indexer:reindex` 명령은 로 표시된 인덱서를 포함하여 모든 인덱서를 다시 인덱싱합니다. `suspended`자동 업데이트가 일시 중지된 경우 수동 업데이트에 유용합니다.
+
+>[!IMPORTANT]
+>
+>인덱서 상태 변경 `valid` 출처: `suspended` 또는 `invalid` 주의해야 합니다. 이렇게 하면 누적된 인덱싱되지 않은 데이터가 있는 경우 성능이 저하될 수 있습니다.
+>
+>상태를 수동으로 업데이트하기 전에 모든 데이터가 정확하게 색인화되도록 하는 것이 중요합니다 `valid` 시스템 성능 및 데이터 무결성을 유지 관리합니다.

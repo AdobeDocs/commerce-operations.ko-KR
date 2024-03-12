@@ -2,7 +2,7 @@
 title: 캐시 관리
 description: 캐시 유형을 관리하고 캐시 상태를 확인합니다.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## 캐시 유형
 
-Commerce 2에는 다음과 같은 캐시 유형이 있습니다.
+Commerce에는 다음과 같은 캐시 유형이 있습니다.
 
 | 캐시 유형 &quot;친숙한&quot; 이름 | 캐시 유형 코드 이름 | 설명 |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 구성 | config | Commerce는 모든 모듈에서 구성을 수집하고 병합한 다음 병합된 결과를 캐시에 저장합니다. 또한 이 캐시에는 파일 시스템 및 데이터베이스에 저장된 저장소 관련 설정이 포함되어 있습니다. 구성 파일을 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. |
 | 레이아웃 | 레이아웃 | 컴파일된 페이지 레이아웃(즉, 모든 구성 요소의 레이아웃 구성 요소). 레이아웃 파일을 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. |
 | HTML 출력 차단 | block_html | 블록당 HTML 페이지 조각. 보기 레이어를 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. |
@@ -31,10 +31,9 @@ Commerce 2에는 다음과 같은 캐시 유형이 있습니다.
 | 번역 | 번역 | 모든 모듈에서 번역을 병합한 후 병합 캐시가 정리됩니다. |
 | 통합 구성 | config_integration | 컴파일된 통합. 통합을 변경하거나 추가한 후 이 캐시를 지우거나 플러시합니다. |
 | 통합 API 구성 | config_integration_api | 스토어 통합의 컴파일된 통합 API 구성입니다. |
+| GraphQL Query Resolver 결과 [!BADGE 2.4.7-베타]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;2.4.7-beta에서만 사용 가능&quot;} | graphql_query_resolver_result | 고객, CMS 페이지, CMS 블록 및 제품 미디어 갤러리 엔터티를 위한 GraphQL 쿼리 확인자의 결과를 캐시합니다. GraphQL 성능을 향상시키기 위해 이 캐시를 활성화 상태로 유지합니다. |
 | 웹 서비스 구성 | config_webservice | 웹 API 구조 캐싱. |
 | 고객 알림 | customer_notification | 사용자 인터페이스에 표시되는 임시 알림입니다. |
-| 관리자 UI SDK 캐시 | admin_ui_sdk | 와 함께 추가된 캐시 관리자 사용자 지정 [Adobe Commerce 관리 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| Webhooks 응답 캐시 | webhooks_response | 다음에 대한 응답 캐시 [webhook 요청](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## 캐시 상태 보기
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ bin/magento cache:disable db_ddl full_page
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```

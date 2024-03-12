@@ -1,8 +1,8 @@
 ---
-source-git-commit: 28425dbea555b892a1f1ad47f1232ce28f96d269
+source-git-commit: 3e2c2898831c735b17d0c13712824621c0705ca2
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 18%
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
 # Adobe 작성 확장의 제품 가용성
@@ -12,7 +12,7 @@ ht-degree: 18%
   <thead>
     <tr>
       <th>Adobe Commerce 버전</th>
-      <th>2.4.7-베타2</th>
+      <th>2.4.7-베타3</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -22,13 +22,35 @@ ht-degree: 18%
   <tbody>
       <tr>
           <td>Adobe Commerce에 대한 이벤트 Adobe I/O</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">작성기</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">릴리스 정보</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Commerce 관리 UI SDK</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>-</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">작성기</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">릴리스 정보</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Commerce Webhooks</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">작성기</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -43,14 +65,14 @@ ht-degree: 18%
           </td>
       </tr>
       <tr>
-          <td>Experience Platform 커넥터</td>
-          <td>3.0.0-Beta1</td>
-          <td>1.0.0+</td>
+          <td>데이터 연결</td>
+          <td>3.2.0-베타3</td>
+          <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>

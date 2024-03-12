@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0d6e2d58074b921466e5f4995a0c8e97a63e2d83
+source-git-commit: 489cafa5fc2bc736ac873d1dd3008463c00b638a
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 3%
+source-wordcount: '128'
+ht-degree: 2%
 
 ---
 # 새로운 기능 템플릿
@@ -10,6 +10,44 @@ ht-degree: 3%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2024년 3월 12일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>에 대한 설정 지침이 업데이트되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">GraphQL API용 Application Server</a> 기능.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a4f907a793b4384cb7c162c032a153fafbbc6ff3">a4f907</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>에 대한 릴리스 정보 게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">Adobe Commerce 2.4.7-Beta3</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d5bd6e1e9af78b24c687554261a50d4dce9483d6">d5bd6e</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>에 2.4.7-Beta3을 추가했습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">시스템 요구 사항</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4c622c47862c61fc9e6587ff95b3ac45142c2318">4c622c</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>새 항목에 대한 정보가 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html"><code class="language-plaintext highlighter-rouge">indexer:set-status</code></a> CLI 명령입니다.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2024년 2월 14일
 
@@ -53,86 +91,6 @@ ht-degree: 3%
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2024년 1월 29일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.45 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ada0b7f8aaa727aebf86dca8b569eb71d41e5ded">ada0b7</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 1월 19일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>게시됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a> 1.1.44 QPT(Quality Patches Tool) 패키지 릴리스용.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6fdce049c64ff7e93bf4de497d7e61ad36b0064b">6fdce0</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 1월 11일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>추가됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/overview.html">설명</a> 해당 샘플 데이터는 데이터베이스 테스트에 사용해서는 안 됩니다.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b75884de62f0f4a9000f422a4b68870c5b30d803">b75884</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 1월 3일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>에 대한 세부 사항이 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2 캐시 메모리 크기 조정 구성 옵션</a> 클라우드 인프라의 Adobe Commerce용</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
