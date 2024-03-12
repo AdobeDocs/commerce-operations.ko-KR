@@ -2,7 +2,7 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: a7aa02cd47deaf7aebdfcf0b3e969cce990a962a
+source-git-commit: 5d4204b842151c0dac0091ab286ba769e421cdf4
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
   </tr>
   <tr>
-    <td>2024년 3월 19일</td>
+    <td>2024년 3월 12일</td>
     <td>—</td>
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">베타 패치</a>: 2.4.7-베타3</td>
   </tr>
