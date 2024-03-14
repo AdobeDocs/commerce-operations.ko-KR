@@ -31,7 +31,7 @@ Commerce에는 다음과 같은 캐시 유형이 있습니다.
 | 번역 | 번역 | 모든 모듈에서 번역을 병합한 후 병합 캐시가 정리됩니다. |
 | 통합 구성 | config_integration | 컴파일된 통합. 통합을 변경하거나 추가한 후 이 캐시를 지우거나 플러시합니다. |
 | 통합 API 구성 | config_integration_api | 스토어 통합의 컴파일된 통합 API 구성입니다. |
-| GraphQL Query Resolver 결과 [!BADGE 2.4.7-베타]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;2.4.7-beta에서만 사용 가능&quot;} | graphql_query_resolver_result | 고객, CMS 페이지, CMS 블록 및 제품 미디어 갤러리 엔터티를 위한 GraphQL 쿼리 확인자의 결과를 캐시합니다. GraphQL 성능을 향상시키기 위해 이 캐시를 활성화 상태로 유지합니다. |
+| GraphQL Query Resolver 결과 [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta에서만 사용 가능"} | graphql_query_resolver_result | 고객, CMS 페이지, CMS 블록 및 제품 미디어 갤러리 엔터티를 위한 GraphQL 쿼리 확인자의 결과를 캐시합니다. GraphQL 성능을 향상시키기 위해 이 캐시를 활성화 상태로 유지합니다. |
 | 웹 서비스 구성 | config_webservice | 웹 API 구조 캐싱. |
 | 고객 알림 | customer_notification | 사용자 인터페이스에 표시되는 임시 알림입니다. |
 
