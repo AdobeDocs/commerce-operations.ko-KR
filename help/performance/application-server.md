@@ -3,9 +3,9 @@ title: GraphQL API용 Application Server
 description: Adobe Commerce 배포에서 GraphQL API용 Application Server를 활성화하려면 다음 지침을 따르십시오.
 badgeCoreBeta: label="2.4.7-베타" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
+source-git-commit: 9d5795400880a65947b1b90c8806b9dcb14aba23
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Cloud Starter에서 애플리케이션 서버를 배포하기 전에 다음 작�
 1. 모든 Commerce 사용자 지정 및 확장이 Application Server와 호환되는지 확인합니다.
 1. 다음을 확인합니다. `CRYPT_KEY` 환경 변수가 인스턴스에 대해 설정됩니다. 클라우드 프로젝트 포털(온보딩 UI)에서 이 변수의 상태를 확인할 수 있습니다.
 1. Commerce Cloud 프로젝트를 복제합니다.
-1. 필요한 경우 &#39;application-server/.magento/.magento.app.yaml.sample&#39;의 이름을 &#39;application-server/.magento/.magento.app.yaml&#39;로 바꾸고 .magento.app.yaml에서 설정을 조정합니다.
+1. 이름 바꾸기 `application-server/.magento/.magento.app.yaml.sample` 끝 `application-server/.magento/.magento.app.yaml` 필요한 경우 .magento.app.yaml에서 설정을 조정합니다.
 1. 에서 다음 경로 구성의 주석 처리를 제거합니다. `project_root/.magento/routes.yaml` 리디렉션할 파일 `/graphql` 애플리케이션 서버에 대한 트래픽.
 
    ```yaml
@@ -108,6 +108,11 @@ Cloud Starter에서 애플리케이션 서버를 배포하기 전에 다음 작�
    ```bash
    git commit -m "AppServer Enabled"
    ```
+
+>[!NOTE]
+>
+> 루트에 있는 모든 사용자 지정 설정이 `.magento.app.yaml` 파일이 적절하게 `application-server/.magento/.magento.app.yaml` 파일. 한 번 `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되므로 루트와 함께 유지해야 합니다. `.magento.app.yaml` 파일.
+> 예를 들어, [rabbitmq 구성](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) 또는 [웹 속성 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 에 동일한 구성을 추가해야 합니다. `application-server/.magento/.magento.app.yaml` 또한.
 
 ### Cloud Starter에 애플리케이션 서버 배포
 
