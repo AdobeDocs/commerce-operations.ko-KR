@@ -2,10 +2,10 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
@@ -32,10 +32,7 @@ ht-degree: 11%
    - [책임 및 소유권](planning/ownership.md)
    - [프로젝트 거버넌스](planning/governance.md)
 - 아키텍처 및 통합 {#architecture}
-   - [기능](architecture/capabilities.md)
-   - [통합 전략](architecture/integration-strategy.md)
-   - [확장성 전략](architecture/extensibility-strategy.md)
-   - [통합 옵션](architecture/integration-options.md)
+   - [Enterprise 참조](architecture/enterprise-blueprint.md)
    - 글로벌 참조 아키텍처 {#global-reference-architecture}
       - [개요](architecture/global-reference/overview.md)
       - [예시](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 11%
          - [개요](architecture/global-reference/composer/overview.md)
          - [프로젝트 구조](architecture/global-reference/composer/project-structure.md)
          - [팁과 트릭](architecture/global-reference/composer/tips-and-tricks.md)
-   - Headless 상거래 {#headless}
-      - [이점](architecture/headless/benefits.md)
-      - [Headless에 여정](architecture/headless/journey-to-headless.md)
-      - [마이크로서비스](architecture/headless/microservices.md)
-      - [헤드리스의 진화](architecture/headless/evolution.md)
-      - [Storefront 아키텍처 결합](architecture/headless/legacy-storefront.md)
-      - [헤드리스 아키텍처](architecture/headless/adobe-commerce.md)
 - 인프라 및 구축 {#infrastructure}
    - [개요](infrastructure/overview.md)
    - 자체 호스팅 {#self-hosting}

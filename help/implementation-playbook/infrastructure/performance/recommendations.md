@@ -4,9 +4,9 @@ description: 다음 권장 사항에 따라 Adobe Commerce 구현의 성능을 �
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Adobe Commerce 버전 2.4부터는 Elasticsearch(또는 OpenSearch)가 필요하
 
 ### 헤드리스 아키텍처
 
-별도의 전용 섹션이 있습니다. [headless](../../architecture/headless/adobe-commerce.md). 요약하면, 플랫폼 자체와 상점 계층을 분리합니다. 여전히 동일한 백엔드이지만 Adobe Commerce은 더 이상 요청을 직접 처리하지 않고 대신 GraphQL API를 통해 사용자 지정 상점 만 지원합니다.
+별도의 전용 섹션이 있습니다. [headless](../../architecture/enterprise-blueprint.md#headless-storefront). 요약하면, 플랫폼 자체와 상점 계층을 분리합니다. 여전히 동일한 백엔드이지만 Adobe Commerce은 더 이상 요청을 직접 처리하지 않고 대신 GraphQL API를 통해 사용자 지정 상점 만 지원합니다.
 
 ### Adobe Commerce 업데이트 유지
 
