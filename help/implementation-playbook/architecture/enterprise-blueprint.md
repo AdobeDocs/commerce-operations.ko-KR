@@ -2,13 +2,13 @@
 title: 엔터프라이즈 참조 아키텍처
 description: Adobe의 최신 컴포저블 상거래 기술을 사용하여 Adobe Commerce을 구현하는 방법에 대해 알아봅니다.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce 엔터프라이즈 참조 아키텍처
 
@@ -78,3 +78,4 @@ Adobe은 주요 비즈니스 목표를 지원하는 데 도움이 되는 지능�
 Headless 거래는 API 우선 거래입니다. Adobe Commerce은 GraphQL API 계층을 통해 모든 상거래 서비스 및 데이터를 제공하는 분리된 아키텍처를 통해 완전히 headless입니다. 이 아키텍처를 통해 팀은 핵심 애플리케이션과 독립적으로 전면을 개발할 수 있으므로 새로운 기술을 통해 새로운 접점을 신속하게 구축하고 테스트할 수 있는 민첩성을 제공합니다.
 
 Adobe은 다음과 같은 기능과 이점을 제공하는 최신 헤드리스 상점 기술을 제공합니다. [Edge Delivery Services](https://www.aem.live/home) 문서 기반 작성, 성능 우선 아키텍처, 즉시 사용 가능한 기본 실험 Adobe Commerce의 규모와 성능을 활용합니다 [상점 첫 방문 서비스](#storefront-services) 및 의 유연성과 편의성 [드롭인 구성 요소](https://experienceleague.adobe.com/developer/commerce/storefront/) 상거래 기능을 제공합니다.
+
