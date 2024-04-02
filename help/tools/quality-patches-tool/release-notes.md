@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
+source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
 workflow-type: tm+mt
-source-wordcount: '20136'
+source-wordcount: '20493'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ ht-degree: 0%
 >[!INFO]
 >
 >다음에 대한 정보: [!DNL quality patches] 커뮤니티에서 Magento Open Source을 위해 만들었습니다. [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. `mergeCart` 돌연변이가 실패하고&#x200B;*내부 서버 오류*&#x200B;의 &quot; [!DNL GraphQL] 동일한 번들 항목이 있는 소스 및 대상 카트를 병합할 때 응답합니다.
+* **ACSD-56546** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 구성 및 번들 제품이 로 표시되는 문제를 해결했습니다. **품절** 다음 경우에 상점 앞에서 **제품 구성 중 표시** 은(는) *비활성화됨*.
+* **ACSD-56635** (Adobe Commerce >=2.4.6 &lt;2.4.7) - 가져오기를 와 함께 사용할 때 가져온 고객이 동일한 이메일 주소로 복제되는 문제를 수정합니다. **계정 공유** 을 로 설정 *글로벌*.
+* **ACSD-56741** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 오류 메시지 수정 &quot;*null 유형의 값에 대한 배열 오프셋에 액세스하려고 합니다.*&#x200B;다음 기간 동안 표시되는 &quot; `setup:upgrade` 데이터베이스에 사용자 지정 항목이 포함된 경우 [!DNL MySQL] 색인 지정 메커니즘과 관련이 없는 트리거 및 [!DNL MView].
+* **ACSD-57315** (Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 새 거래가에서 만들어질 때 문제를 해결합니다. [!DNL PayPal Payflow Pro] 매번 [!UICONTROL Fetch] 버튼을 클릭합니다. **[!UICONTROL View transaction]** 관리자의 화면입니다.
+* **ACSD-57337** (Adobe Commerce >=2.4.4 &lt;2.4.6) - 특정 웹 사이트에 대한 액세스 제한이 있는 관리자가 의 모든 웹 사이트에서 회사를 볼 수 있는 문제를 수정합니다. **[!UICONTROL Companies]** 그리드.
+* **ACSD-57394** (Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 의 여러 정렬 필드를 기준으로 잘못된 제품을 정렬하는 문제가 수정되었습니다. [!DNL GraphQL].
+* **ACSD-57565** (Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 다음과 같은 문제를 수정합니다. **[!UICONTROL Order]** 기간이 업데이트될 때까지 대시보드에 잘못된 주문 정보가 표시됩니다. 이제 대시보드에 첫 번째 로드 시 올바른 주문 통계가 표시됩니다.
+* **ACSD-57854** (Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 제품 사용 시 문제를 수정합니다. [!DNL GraphQL] 요청이 범주 집계에서 비활성화된 범주를 반환했습니다.
+* **ACSD-58008** (Adobe Commerce >=2.4.5 &lt;2.4.7) - 종료 날짜가 지정되지 않은 경우, 예약된 업데이트를 업데이트하면 이전 버전의 준비된 항목이 제거되는 문제가 해결됩니다.
+* 업데이트된 패치: MDVA-39305-V2, ACSD-48627, ACSD-54965
 
 ## v1.1.47 {#v1-1-47}
 
