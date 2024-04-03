@@ -3,7 +3,7 @@ title: 설치 안내서
 description: 이 안내서를 사용하여 설치하십시오. [!DNL Site-Wide Analysis Tool] 웹 사이트용
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: 2501630bdbeb9a80c247fd39dcbe57c327b3244d
+source-git-commit: f72316b3baee52ef6b000afa281a2e146f560ead
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->2024년 4월 23일부터 [!DNL Site-Wide Analysis Tool] 모든 Adobe Commerce On-Premise 고객에 대해 서비스 해제됩니다.
+>2024년 4월 23일부터 [!DNL Site-Wide Analysis Tool] 모든 Adobe Commerce 온-프레미스 고객에 대한 서비스가 중단됩니다.
 
 다음 [!DNL Site-Wide Analysis Tool] 는 클라우드 인프라 설치에서 Adobe Commerce의 보안 및 운영을 보장하기 위해 연중무휴 실시간 성능 모니터링, 보고서 및 권장 사항을 제공합니다. 또한 사용 가능하고 설치된 패치, 타사 확장 및 Adobe Commerce 설치에 대한 자세한 정보를 제공합니다.
 
