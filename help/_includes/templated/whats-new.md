@@ -1,8 +1,8 @@
 ---
-source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
+source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 2%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 # 새로운 기능 템플릿
@@ -10,6 +10,78 @@ ht-degree: 2%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2024년 4월 9일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>업데이트됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">릴리스된 버전</a>.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>의 릴리스 패키지 항목 업데이트 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br />- 의 릴리스 패키지 항목 추가 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B for Commerce</a>.</li>
+</ul>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>을(를) 업데이트함 <em>bin/magento</em> 에 대한 CLI 참조 설명서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>게시된 2.4.7GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">릴리스 정보</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>2024년 4월 Adobe Commerce 보안 릴리스(2.4.6-p5, 2.4.5-p7, 2.4.4-p8)에 대한 릴리스 정보를 추가합니다. 다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce 및 Magento Open Source 릴리스 정보</a></p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>의 릴리스 패키지 항목 업데이트 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento OpenSource</a>.<br />- 의 릴리스 패키지 항목 추가 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B for Commerce</a>.</li>
+</ul>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>을(를) 업데이트함 <em>bin/magento</em> 에 대한 CLI 참조 설명서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento OpenSource</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>게시된 2.4.7GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">릴리스 정보</a>.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>2024년 4월 Adobe Commerce 보안 릴리스(2.4.6-p5, 2.4.5-p7, 2.4.4-p8)에 대한 릴리스 정보를 추가합니다. 다음을 참조하십시오 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce 및 Magento Open Source 릴리스 정보</a></p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2024년 3월 24일
 
@@ -71,52 +143,6 @@ ht-degree: 2%
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2024년 2월 14일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>에 대한 모범 사례 추가 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">mariaDB 업그레이드</a> 10.5.1 이상</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 2월 13일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>소스</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>에 2024년 2월 보안 패치가 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">시스템 요구 사항</a>.</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/068eed591b461ba6c91b0e3d517dc712215c6b33">068ed</a> (커밋)</td>
-    </tr>
-    <tr>
-      <td><p>추가됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">릴리스 정보</a> 2024년 2월 보안 패치(2.4.4-p7, 2.4.5-p6 및 2.4.6-p4)의 경우</p>
-</td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> (커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
