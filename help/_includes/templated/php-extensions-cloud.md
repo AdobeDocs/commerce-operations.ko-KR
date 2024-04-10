@@ -1,7 +1,7 @@
 ---
-source-git-commit: c21077f9491d5d82f0673c5c20bec166ce843eaf
+source-git-commit: 551e3043f3f998f75c42a42f72d3e0fc6fdef149
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
@@ -31,21 +31,28 @@ ht-degree: 0%
                 gd<br>
                 gettext<br>
                 국제<br>
+                libxml<br>
                 mysqli<br>
+                opcache<br>
+                오픈스우울<br>
                 pcntl<br>
                 pdo_mysql<br>
+                반사<br>
                 비누<br>
                 소켓<br>
+                SPL<br>
+                표준<br>
                 sysvmsg<br>
                 sysvsem<br>
                 sysvshm<br>
-                opcache<br>
                 zip<br>
+                즐리브<br>
             </td>
             <td>
                 ctype<br>
                 컬<br>
                 날짜<br>
+                dba<br>
                 dom<br>
                 fileinfo<br>
                 필터<br>
@@ -75,7 +82,6 @@ ht-degree: 0%
                 igbinary<br>
                 이미지<br>
                 imap<br>
-                이온큐브<br>
                 ldap<br>
                 mailparse<br>
                 mcrypt<br>

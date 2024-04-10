@@ -2,9 +2,9 @@
 title: 메시지 대기열 소비자
 description: 관련된 기능 및 시스템 구성 설정을 포함하여 Adobe Commerce 및 Magento Open Source 메시지 대기열 소비자에 대해 알아봅니다.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 | 구매 주문 이메일을 보냅니다. 필요한 경우: [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 옵션은 관리 시스템 구성 설정에서 활성화됩니다. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | 관련성이 있는 구매 발주를 검증합니다. [승인 규칙](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). 필요한 경우: [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 옵션은 관리 시스템 구성 설정에서 활성화됩니다. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 베타 버전에서만 사용 가능"} | + |                         | + |
+| `saveConfigProcessor` | + |                         | + |
 | 저장 작업을 메시지 대기열에 배치하여 저장소 구성 변경 사항을 비동기적으로 저장하므로 많은 저장소 수준 구성을 포함하는 배포의 성능이 향상될 수 있습니다. 을(를) 사용하는 데 필요합니다. [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) 모듈. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | 다음을 방지합니다. [문제](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) 일회용 쿠폰을 여러 번 사용할 수 있는 경우. |                |                         |                     |

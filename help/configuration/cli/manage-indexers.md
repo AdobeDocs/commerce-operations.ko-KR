@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 인덱서 모드가 로 설정되면 인덱서 관련 데이터베이스 트리거가 추가됩니다. `schedule` 인덱서 모드가 로 설정되면 제거 `realtime`. 인덱서가 로 설정된 동안 데이터베이스에서 트리거가 누락된 경우 `schedule`, 인덱서를 다음으로 변경 `realtime` 다시 다음으로 변경 `schedule`. 그러면 트리거가 재설정됩니다.
 
-### 인덱서 상태 설정 [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7 베타 버전에서만 사용 가능"}
+### 인덱서 상태 설정
 
 이 명령을 사용하면 관리자가 하나 이상의 인덱서의 작동 상태를 수정하여 데이터 가져오기, 업데이트 또는 유지 관리와 같은 광범위한 작업 중에 시스템 성능을 최적화할 수 있습니다.
 

@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
+source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://
 
 ### PHPUnit
 
-PHPUnit(명령줄 도구) 9.0.0
+PHPUnit v9(명령줄 도구).
 
 ### 확장 프로그램
 

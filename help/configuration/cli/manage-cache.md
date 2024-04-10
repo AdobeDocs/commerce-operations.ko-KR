@@ -1,10 +1,10 @@
 ---
 title: 캐시 관리
-description: 캐시 유형을 관리하고 캐시 상태를 확인합니다.
+description: Commerce CLI를 사용하여 명령줄에서 캐시 유형 관리 및 캐시 상태 보기
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
+source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -15,29 +15,17 @@ ht-degree: 0%
 
 ## 캐시 유형
 
-Commerce에는 다음과 같은 캐시 유형이 있습니다.
+Adobe Commerce 캐시 관리 시스템을 사용하여 사이트의 성능을 향상시킬 수 있습니다. 이 항목에서는 Commerce 응용 프로그램 서버에 액세스할 수 있는 시스템 관리자 또는 개발자가 명령줄에서 캐시를 관리하는 방법을 설명합니다.
 
-| 캐시 유형 &quot;친숙한&quot; 이름 | 캐시 유형 코드 이름 | 설명 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 구성 | config | Commerce는 모든 모듈에서 구성을 수집하고 병합한 다음 병합된 결과를 캐시에 저장합니다. 또한 이 캐시에는 파일 시스템 및 데이터베이스에 저장된 저장소 관련 설정이 포함되어 있습니다. 구성 파일을 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. |
-| 레이아웃 | 레이아웃 | 컴파일된 페이지 레이아웃(즉, 모든 구성 요소의 레이아웃 구성 요소). 레이아웃 파일을 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. |
-| HTML 출력 차단 | block_html | 블록당 HTML 페이지 조각. 보기 레이어를 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. |
-| 컬렉션 데이터 | 컬렉션 | 데이터베이스 쿼리 결과. 필요한 경우 Commerce가 이 캐시를 자동으로 정리하지만 서드파티 개발자는 캐시의 모든 세그먼트에 데이터를 배치할 수 있습니다. 사용자 지정 모듈에서 Commerce에서 정리할 수 없는 캐시 항목을 생성하는 논리를 사용하는 경우 이 캐시 유형을 정리하거나 플러시합니다. |
-| DDL | db_ddl | 데이터베이스 스키마. 필요한 경우 Commerce가 이 캐시를 자동으로 정리하지만 서드파티 개발자는 캐시의 모든 세그먼트에 데이터를 배치할 수 있습니다. 데이터베이스 스키마를 사용자 지정 변경한 후 이 캐시 유형을 정리하거나 플러시합니다. 즉, Commerce가 자체적으로 만들지 않는 업데이트입니다. 데이터베이스 스키마를 자동으로 업데이트하는 한 가지 방법은 `magento setup:db-schema:upgrade` 명령입니다. |
-| 컴파일된 구성 | compiled_config | 컴파일 구성 |
-| 엔티티 속성 값(EAV) | eav | EAV 속성과 관련된 메타데이터(예: 스토어 레이블, 관련 PHP 코드에 대한 링크, 속성 렌더링, 검색 설정 등). 일반적으로 이 캐시 유형을 정리하거나 플러시할 필요가 없습니다. |
-| 페이지 캐시 | full_page | 생성된 HTML 페이지. 필요한 경우 Commerce가 이 캐시를 자동으로 정리하지만 서드파티 개발자는 캐시의 모든 세그먼트에 데이터를 배치할 수 있습니다. HTML 출력에 영향을 주는 코드 수준을 수정한 후 이 캐시 유형을 정리하거나 플러시합니다. 캐싱 HTML이 성능을 크게 향상시키므로 이 캐시를 활성 상태로 유지하는 것이 좋습니다. |
-| 반사 | 반사 | Webapi 모듈과 고객 모듈 간의 종속성을 제거합니다. |
-| 번역 | 번역 | 모든 모듈에서 번역을 병합한 후 병합 캐시가 정리됩니다. |
-| 통합 구성 | config_integration | 컴파일된 통합. 통합을 변경하거나 추가한 후 이 캐시를 지우거나 플러시합니다. |
-| 통합 API 구성 | config_integration_api | 스토어 통합의 컴파일된 통합 API 구성입니다. |
-| GraphQL Query Resolver 결과 [!BADGE 2.4.7-베타]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="2.4.7-beta에서만 사용 가능"} | graphql_query_resolver_result | 고객, CMS 페이지, CMS 블록 및 제품 미디어 갤러리 엔터티를 위한 GraphQL 쿼리 확인자의 결과를 캐시합니다. GraphQL 성능을 향상시키기 위해 이 캐시를 활성화 상태로 유지합니다. |
-| 웹 서비스 구성 | config_webservice | 웹 API 구조 캐싱. |
-| 고객 알림 | customer_notification | 사용자 인터페이스에 표시되는 임시 알림입니다. |
+>[!NOTE]
+>
+>
+>공동 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. 다음을 참조하십시오 [캐시 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) 다음에서 _관리 시스템 안내서_.
+
 
 ## 캐시 상태 보기
 
-캐시의 상태를 보려면
+Commerce 응용 프로그램 서버의 명령줄에서 `cache:status` Commerce CLI 명령.
 
 ```bash
    bin/magento cache:status
@@ -56,16 +44,23 @@ Current status:
                     reflection: 1
                         db_ddl: 1
                compiled_config: 1
+             webhooks_response: 1
                            eav: 1
          customer_notification: 1
-                     full_page: 1
+ graphql_query_resolver_result: 1
             config_integration: 1
         config_integration_api: 1
+                  admin_ui_sdk: 1
+                     full_page: 1
                    target_rule: 1
- graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
+
+>[!TIP]
+>
+>Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 을 참조하십시오. [캐시](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 다음에서 _관리 시스템 안내서_.
+
 
 ## 캐시 유형 활성화 또는 비활성화
 

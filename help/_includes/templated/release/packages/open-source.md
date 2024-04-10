@@ -1,7 +1,7 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,19 @@ Magento Open Source은 Composer를 사용하여 PHP 패키지를 관리합니다
 
 다음 `composer.json` 파일은 패키지 목록을 선언하지만 `composer.lock` 파일에는 Adobe Commerce 또는 Magento Open Source 설치를 빌드하는 데 사용되는 패키지의 전체 목록(각 패키지 및 해당 종속 항목의 전체 버전)이 저장됩니다.
 
-다음 참조 설명서는 `composer.lock` 파일 및 Magento Open Source 2.4.6에 포함된 필수 패키지가 포함됩니다.
+다음 참조 설명서는 `composer.lock` 파일 및 Magento Open Source 2.4.7에 포함된 필수 패키지가 포함됩니다.
 
 ## 종속성
 
-`magento/product-community-edition 2.4.6` 에는 다음과 같은 종속성이 있습니다.
+`magento/product-community-edition 2.4.7` 에는 다음과 같은 종속성이 있습니다.
 
 ```config
-adobe-commerce/adobe-ims-metapackage: ^2.2
+adobe-commerce/os-extensions-metapackage: ~1.0
 colinmollenhour/cache-backend-file: ^1.4
-colinmollenhour/cache-backend-redis: ^1.14
-colinmollenhour/credis: ^1.13
+colinmollenhour/cache-backend-redis: ^1.16
+colinmollenhour/credis: ^1.15
 colinmollenhour/php-redis-session-abstract: ^1.5
 composer/composer: ^2.0, !=2.2.16
-doctrine/annotations: ^1.13
 elasticsearch/elasticsearch: ~7.17.0 || ~8.5.0
 ext-bcmath: *
 ext-ctype: *
@@ -54,25 +53,26 @@ ext-soap: *
 ext-sodium: *
 ext-xsl: *
 ext-zip: *
-ezyang/htmlpurifier: ^4.16
+ezyang/htmlpurifier: ^4.17
 guzzlehttp/guzzle: ^7.5
-laminas/laminas-captcha: ^2.12
-laminas/laminas-code: ^4.5
-laminas/laminas-db: ^2.15
-laminas/laminas-di: ^3.7
-laminas/laminas-escaper: ^2.10
-laminas/laminas-eventmanager: ^3.5
-laminas/laminas-feed: ^2.17
-laminas/laminas-file: ^2.11
-laminas/laminas-filter: ^2.17
+laminas/laminas-captcha: ^2.17
+laminas/laminas-code: ^4.13
+laminas/laminas-db: ^2.19
+laminas/laminas-di: ^3.13
+laminas/laminas-escaper: ^2.13
+laminas/laminas-eventmanager: ^3.11
+laminas/laminas-feed: ^2.22
+laminas/laminas-file: ^2.13
+laminas/laminas-filter: ^2.33
 laminas/laminas-http: ^2.15
 laminas/laminas-i18n: ^2.17
 laminas/laminas-mail: ^2.16
 laminas/laminas-mime: ^2.9
 laminas/laminas-modulemanager: ^2.11
-laminas/laminas-mvc: ^3.3
-laminas/laminas-oauth: ^2.4
+laminas/laminas-mvc: ^3.6
+laminas/laminas-oauth: ^2.6
 laminas/laminas-permissions-acl: ^2.10
+laminas/laminas-server: ^2.16
 laminas/laminas-servicemanager: ^3.16
 laminas/laminas-soap: ^2.10
 laminas/laminas-stdlib: ^3.11
@@ -81,15 +81,13 @@ laminas/laminas-validator: ^2.23
 league/flysystem: ^2.4
 league/flysystem-aws-s3-v3: ^2.4
 lib-libxml: *
-magento/adobe-stock-integration: 2.1.5
-magento/composer: ^1.9.0
+magento/composer: ^1.10.0-beta1
 magento/composer-dependency-version-audit-plugin: ^0.1
-magento/framework: 103.0.6
-magento/framework-amqp: 100.4.4
-magento/framework-bulk: 101.0.2
-magento/framework-message-queue: 100.4.6
-magento/google-shopping-ads: 4.0.1
-magento/inventory-metapackage: 1.2.6
+magento/framework: 103.0.7
+magento/framework-amqp: 100.4.5
+magento/framework-bulk: 101.0.3
+magento/framework-message-queue: 100.4.7
+magento/inventory-metapackage: 1.2.7
 magento/language-de_de: 100.4.0
 magento/language-en_us: 100.4.0
 magento/language-es_es: 100.4.0
@@ -98,239 +96,249 @@ magento/language-nl_nl: 100.4.0
 magento/language-pt_br: 100.4.0
 magento/language-zh_hans_cn: 100.4.0
 magento/magento-composer-installer: >=0.4.0
-magento/magento2-base: 2.4.6
-magento/module-admin-analytics: 100.4.5
-magento/module-admin-notification: 100.4.5
-magento/module-advanced-pricing-import-export: 100.4.6
-magento/module-advanced-search: 100.4.4
-magento/module-amqp: 100.4.3
-magento/module-analytics: 100.4.6
-magento/module-asynchronous-operations: 100.4.6
-magento/module-authorization: 100.4.6
-magento/module-aws-s3: 100.4.4
-magento/module-backend: 102.0.6
-magento/module-backup: 100.4.6
-magento/module-bundle: 101.0.6
-magento/module-bundle-graph-ql: 100.4.6
-magento/module-bundle-import-export: 100.4.5
-magento/module-cache-invalidate: 100.4.4
-magento/module-captcha: 100.4.6
-magento/module-cardinal-commerce: 100.4.4
-magento/module-catalog: 104.0.6
-magento/module-catalog-analytics: 100.4.3
-magento/module-catalog-cms-graph-ql: 100.4.2
-magento/module-catalog-customer-graph-ql: 100.4.5
-magento/module-catalog-graph-ql: 100.4.6
-magento/module-catalog-import-export: 101.1.6
-magento/module-catalog-inventory: 100.4.6
-magento/module-catalog-inventory-graph-ql: 100.4.3
-magento/module-catalog-rule: 101.2.6
-magento/module-catalog-rule-configurable: 100.4.5
-magento/module-catalog-rule-graph-ql: 100.4.3
-magento/module-catalog-search: 102.0.6
-magento/module-catalog-url-rewrite: 100.4.6
-magento/module-catalog-url-rewrite-graph-ql: 100.4.4
-magento/module-catalog-widget: 100.4.6
-magento/module-checkout: 100.4.6
-magento/module-checkout-agreements: 100.4.5
-magento/module-checkout-agreements-graph-ql: 100.4.2
-magento/module-cms: 104.0.6
-magento/module-cms-graph-ql: 100.4.3
-magento/module-cms-url-rewrite: 100.4.5
-magento/module-cms-url-rewrite-graph-ql: 100.4.4
-magento/module-compare-list-graph-ql: 100.4.2
-magento/module-config: 101.2.6
-magento/module-configurable-import-export: 100.4.4
-magento/module-configurable-product: 100.4.6
-magento/module-configurable-product-graph-ql: 100.4.6
-magento/module-configurable-product-sales: 100.4.3
-magento/module-contact: 100.4.5
-magento/module-cookie: 100.4.6
-magento/module-cron: 100.4.6
-magento/module-csp: 100.4.5
-magento/module-currency-symbol: 100.4.4
-magento/module-customer: 103.0.6
-magento/module-customer-analytics: 100.4.3
-magento/module-customer-downloadable-graph-ql: 100.4.2
-magento/module-customer-graph-ql: 100.4.6
-magento/module-customer-import-export: 100.4.6
-magento/module-deploy: 100.4.6
-magento/module-developer: 100.4.6
-magento/module-dhl: 100.4.5
-magento/module-directory: 100.4.6
-magento/module-directory-graph-ql: 100.4.4
-magento/module-downloadable: 100.4.6
-magento/module-downloadable-graph-ql: 100.4.6
-magento/module-downloadable-import-export: 100.4.5
-magento/module-eav: 102.1.6
-magento/module-eav-graph-ql: 100.4.3
-magento/module-elasticsearch: 101.0.6
-magento/module-elasticsearch-7: 100.4.6
-magento/module-email: 101.1.6
-magento/module-encryption-key: 100.4.4
-magento/module-fedex: 100.4.4
-magento/module-gift-message: 100.4.5
-magento/module-gift-message-graph-ql: 100.4.4
-magento/module-google-adwords: 100.4.3
-magento/module-google-analytics: 100.4.2
-magento/module-google-gtag: 100.4.1
-magento/module-google-optimizer: 100.4.5
-magento/module-graph-ql: 100.4.6
-magento/module-graph-ql-cache: 100.4.3
-magento/module-grouped-catalog-inventory: 100.4.3
-magento/module-grouped-import-export: 100.4.4
-magento/module-grouped-product: 100.4.6
-magento/module-grouped-product-graph-ql: 100.4.6
-magento/module-import-export: 101.0.6
-magento/module-indexer: 100.4.6
-magento/module-instant-purchase: 100.4.5
-magento/module-integration: 100.4.6
-magento/module-jwt-framework-adapter: 100.4.2
-magento/module-jwt-user-token: 100.4.1
-magento/module-layered-navigation: 100.4.6
-magento/module-login-as-customer: 100.4.6
-magento/module-login-as-customer-admin-ui: 100.4.6
-magento/module-login-as-customer-api: 100.4.5
-magento/module-login-as-customer-assistance: 100.4.5
-magento/module-login-as-customer-frontend-ui: 100.4.5
-magento/module-login-as-customer-graph-ql: 100.4.3
-magento/module-login-as-customer-log: 100.4.4
-magento/module-login-as-customer-page-cache: 100.4.5
-magento/module-login-as-customer-quote: 100.4.4
-magento/module-login-as-customer-sales: 100.4.5
-magento/module-marketplace: 100.4.4
-magento/module-media-content: 100.4.4
-magento/module-media-content-api: 100.4.5
-magento/module-media-content-catalog: 100.4.4
-magento/module-media-content-cms: 100.4.4
-magento/module-media-content-synchronization: 100.4.5
-magento/module-media-content-synchronization-api: 100.4.4
-magento/module-media-content-synchronization-catalog: 100.4.3
-magento/module-media-content-synchronization-cms: 100.4.3
-magento/module-media-gallery: 100.4.5
-magento/module-media-gallery-api: 101.0.5
-magento/module-media-gallery-catalog: 100.4.3
-magento/module-media-gallery-catalog-integration: 100.4.3
-magento/module-media-gallery-catalog-ui: 100.4.3
-magento/module-media-gallery-cms-ui: 100.4.3
-magento/module-media-gallery-integration: 100.4.5
-magento/module-media-gallery-metadata: 100.4.4
-magento/module-media-gallery-metadata-api: 100.4.3
-magento/module-media-gallery-renditions: 100.4.4
-magento/module-media-gallery-renditions-api: 100.4.3
-magento/module-media-gallery-synchronization: 100.4.5
-magento/module-media-gallery-synchronization-api: 100.4.4
-magento/module-media-gallery-synchronization-metadata: 100.4.2
-magento/module-media-gallery-ui: 100.4.5
-magento/module-media-gallery-ui-api: 100.4.4
-magento/module-media-storage: 100.4.5
-magento/module-message-queue: 100.4.6
-magento/module-msrp: 100.4.5
-magento/module-msrp-configurable-product: 100.4.3
-magento/module-msrp-grouped-product: 100.4.3
-magento/module-multishipping: 100.4.6
-magento/module-mysql-mq: 100.4.4
-magento/module-new-relic-reporting: 100.4.4
-magento/module-newsletter: 100.4.6
-magento/module-newsletter-graph-ql: 100.4.3
-magento/module-offline-payments: 100.4.4
-magento/module-offline-shipping: 100.4.5
-magento/module-open-search: 100.4.0
-magento/module-page-cache: 100.4.6
-magento/module-payment: 100.4.6
-magento/module-payment-graph-ql: 100.4.1
-magento/module-paypal: 101.0.6
-magento/module-paypal-captcha: 100.4.3
-magento/module-paypal-graph-ql: 100.4.4
-magento/module-persistent: 100.4.6
-magento/module-product-alert: 100.4.5
-magento/module-product-video: 100.4.6
-magento/module-quote: 101.2.6
-magento/module-quote-analytics: 100.4.5
-magento/module-quote-bundle-options: 100.4.2
-magento/module-quote-configurable-options: 100.4.2
-magento/module-quote-downloadable-links: 100.4.2
-magento/module-quote-graph-ql: 100.4.6
-magento/module-related-product-graph-ql: 100.4.3
-magento/module-release-notification: 100.4.4
-magento/module-remote-storage: 100.4.4
-magento/module-reports: 100.4.6
-magento/module-require-js: 100.4.2
-magento/module-review: 100.4.6
-magento/module-review-analytics: 100.4.3
-magento/module-review-graph-ql: 100.4.2
-magento/module-robots: 101.1.2
-magento/module-rss: 100.4.4
-magento/module-rule: 100.4.5
-magento/module-sales: 103.0.6
-magento/module-sales-analytics: 100.4.3
-magento/module-sales-graph-ql: 100.4.6
-magento/module-sales-inventory: 100.4.3
-magento/module-sales-rule: 101.2.6
-magento/module-sales-sequence: 100.4.3
-magento/module-sample-data: 100.4.4
-magento/module-search: 101.1.6
-magento/module-security: 100.4.6
-magento/module-send-friend: 100.4.4
-magento/module-send-friend-graph-ql: 100.4.2
-magento/module-shipping: 100.4.6
-magento/module-sitemap: 100.4.5
-magento/module-store: 101.1.6
-magento/module-store-graph-ql: 100.4.4
-magento/module-swagger: 100.4.5
-magento/module-swagger-webapi: 100.4.2
-magento/module-swagger-webapi-async: 100.4.2
-magento/module-swatches: 100.4.6
-magento/module-swatches-graph-ql: 100.4.4
-magento/module-swatches-layered-navigation: 100.4.2
-magento/module-tax: 100.4.6
-magento/module-tax-graph-ql: 100.4.2
-magento/module-tax-import-export: 100.4.5
-magento/module-theme: 101.1.6
-magento/module-theme-graph-ql: 100.4.3
-magento/module-translation: 100.4.6
-magento/module-ui: 101.2.6
-magento/module-ups: 100.4.6
-magento/module-url-rewrite: 102.0.5
-magento/module-url-rewrite-graph-ql: 100.4.5
-magento/module-user: 101.2.6
-magento/module-usps: 100.4.5
-magento/module-variable: 100.4.4
-magento/module-vault: 101.2.6
-magento/module-vault-graph-ql: 100.4.2
-magento/module-version: 100.4.3
-magento/module-webapi: 100.4.5
-magento/module-webapi-async: 100.4.4
-magento/module-webapi-security: 100.4.3
-magento/module-weee: 100.4.6
-magento/module-weee-graph-ql: 100.4.3
-magento/module-widget: 101.2.6
-magento/module-wishlist: 101.2.6
-magento/module-wishlist-analytics: 100.4.4
-magento/module-wishlist-graph-ql: 100.4.6
-magento/page-builder: 1.7.3
-magento/security-package: 1.1.5
-magento/theme-adminhtml-backend: 100.4.6
-magento/theme-frontend-blank: 100.4.6
-magento/theme-frontend-luma: 100.4.6
+magento/magento2-base: 2.4.7
+magento/module-admin-analytics: 100.4.6
+magento/module-admin-notification: 100.4.6
+magento/module-advanced-pricing-import-export: 100.4.7
+magento/module-advanced-search: 100.4.5
+magento/module-amqp: 100.4.4
+magento/module-analytics: 100.4.7
+magento/module-application-performance-monitor: 100.4.0
+magento/module-application-performance-monitor-new-relic: 100.4.0
+magento/module-async-config: 100.4.0
+magento/module-asynchronous-operations: 100.4.7
+magento/module-authorization: 100.4.7
+magento/module-aws-s3: 100.4.5
+magento/module-backend: 102.0.7
+magento/module-backup: 100.4.7
+magento/module-bundle: 101.0.7
+magento/module-bundle-graph-ql: 100.4.7
+magento/module-bundle-import-export: 100.4.6
+magento/module-cache-invalidate: 100.4.5
+magento/module-captcha: 100.4.7
+magento/module-cardinal-commerce: 100.4.5
+magento/module-catalog: 104.0.7
+magento/module-catalog-analytics: 100.4.4
+magento/module-catalog-cms-graph-ql: 100.4.3
+magento/module-catalog-customer-graph-ql: 100.4.6
+magento/module-catalog-graph-ql: 100.4.7
+magento/module-catalog-import-export: 101.1.7
+magento/module-catalog-inventory: 100.4.7
+magento/module-catalog-inventory-graph-ql: 100.4.4
+magento/module-catalog-rule: 101.2.7
+magento/module-catalog-rule-configurable: 100.4.6
+magento/module-catalog-rule-graph-ql: 100.4.4
+magento/module-catalog-search: 102.0.7
+magento/module-catalog-url-rewrite: 100.4.7
+magento/module-catalog-url-rewrite-graph-ql: 100.4.5
+magento/module-catalog-widget: 100.4.7
+magento/module-checkout: 100.4.7
+magento/module-checkout-agreements: 100.4.6
+magento/module-checkout-agreements-graph-ql: 100.4.3
+magento/module-cms: 104.0.7
+magento/module-cms-graph-ql: 100.4.4
+magento/module-cms-url-rewrite: 100.4.6
+magento/module-cms-url-rewrite-graph-ql: 100.4.5
+magento/module-compare-list-graph-ql: 100.4.3
+magento/module-config: 101.2.7
+magento/module-configurable-import-export: 100.4.5
+magento/module-configurable-product: 100.4.7
+magento/module-configurable-product-graph-ql: 100.4.7
+magento/module-configurable-product-sales: 100.4.4
+magento/module-contact: 100.4.6
+magento/module-contact-graph-ql: 100.4.0
+magento/module-cookie: 100.4.7
+magento/module-cron: 100.4.7
+magento/module-csp: 100.4.6
+magento/module-currency-symbol: 100.4.5
+magento/module-customer: 103.0.7
+magento/module-customer-analytics: 100.4.4
+magento/module-customer-downloadable-graph-ql: 100.4.3
+magento/module-customer-graph-ql: 100.4.7
+magento/module-customer-import-export: 100.4.7
+magento/module-deploy: 100.4.7
+magento/module-developer: 100.4.7
+magento/module-dhl: 100.4.6
+magento/module-directory: 100.4.7
+magento/module-directory-graph-ql: 100.4.5
+magento/module-downloadable: 100.4.7
+magento/module-downloadable-graph-ql: 100.4.7
+magento/module-downloadable-import-export: 100.4.6
+magento/module-eav: 102.1.7
+magento/module-eav-graph-ql: 100.4.4
+magento/module-elasticsearch: 101.0.7
+magento/module-elasticsearch-7: 100.4.7
+magento/module-email: 101.1.7
+magento/module-encryption-key: 100.4.5
+magento/module-fedex: 100.4.5
+magento/module-gift-message: 100.4.6
+magento/module-gift-message-graph-ql: 100.4.5
+magento/module-google-adwords: 100.4.4
+magento/module-google-analytics: 100.4.3
+magento/module-google-gtag: 100.4.2
+magento/module-google-optimizer: 100.4.6
+magento/module-graph-ql: 100.4.7
+magento/module-graph-ql-cache: 100.4.4
+magento/module-graph-ql-new-relic: 100.4.0
+magento/module-graph-ql-resolver-cache: 100.4.0
+magento/module-grouped-catalog-inventory: 100.4.4
+magento/module-grouped-import-export: 100.4.5
+magento/module-grouped-product: 100.4.7
+magento/module-grouped-product-graph-ql: 100.4.7
+magento/module-import-export: 101.0.7
+magento/module-indexer: 100.4.7
+magento/module-instant-purchase: 100.4.6
+magento/module-integration: 100.4.7
+magento/module-integration-graph-ql: 100.4.0
+magento/module-jwt-framework-adapter: 100.4.3
+magento/module-jwt-user-token: 100.4.2
+magento/module-layered-navigation: 100.4.7
+magento/module-login-as-customer: 100.4.7
+magento/module-login-as-customer-admin-ui: 100.4.7
+magento/module-login-as-customer-api: 100.4.6
+magento/module-login-as-customer-assistance: 100.4.6
+magento/module-login-as-customer-frontend-ui: 100.4.6
+magento/module-login-as-customer-graph-ql: 100.4.4
+magento/module-login-as-customer-log: 100.4.5
+magento/module-login-as-customer-page-cache: 100.4.6
+magento/module-login-as-customer-quote: 100.4.5
+magento/module-login-as-customer-sales: 100.4.6
+magento/module-marketplace: 100.4.5
+magento/module-media-content: 100.4.5
+magento/module-media-content-api: 100.4.6
+magento/module-media-content-catalog: 100.4.5
+magento/module-media-content-cms: 100.4.5
+magento/module-media-content-synchronization: 100.4.6
+magento/module-media-content-synchronization-api: 100.4.5
+magento/module-media-content-synchronization-catalog: 100.4.4
+magento/module-media-content-synchronization-cms: 100.4.4
+magento/module-media-gallery: 100.4.6
+magento/module-media-gallery-api: 101.0.6
+magento/module-media-gallery-catalog: 100.4.4
+magento/module-media-gallery-catalog-integration: 100.4.4
+magento/module-media-gallery-catalog-ui: 100.4.4
+magento/module-media-gallery-cms-ui: 100.4.4
+magento/module-media-gallery-integration: 100.4.6
+magento/module-media-gallery-metadata: 100.4.5
+magento/module-media-gallery-metadata-api: 100.4.4
+magento/module-media-gallery-renditions: 100.4.5
+magento/module-media-gallery-renditions-api: 100.4.4
+magento/module-media-gallery-synchronization: 100.4.6
+magento/module-media-gallery-synchronization-api: 100.4.5
+magento/module-media-gallery-synchronization-metadata: 100.4.3
+magento/module-media-gallery-ui: 100.4.6
+magento/module-media-gallery-ui-api: 100.4.5
+magento/module-media-storage: 100.4.6
+magento/module-message-queue: 100.4.7
+magento/module-msrp: 100.4.6
+magento/module-msrp-configurable-product: 100.4.4
+magento/module-msrp-grouped-product: 100.4.4
+magento/module-multishipping: 100.4.7
+magento/module-mysql-mq: 100.4.5
+magento/module-new-relic-reporting: 100.4.5
+magento/module-newsletter: 100.4.7
+magento/module-newsletter-graph-ql: 100.4.4
+magento/module-offline-payments: 100.4.5
+magento/module-offline-shipping: 100.4.6
+magento/module-open-search: 100.4.1
+magento/module-order-cancellation: 100.4.0
+magento/module-order-cancellation-graph-ql: 100.4.0
+magento/module-order-cancellation-ui: 100.4.0
+magento/module-page-cache: 100.4.7
+magento/module-payment: 100.4.7
+magento/module-payment-graph-ql: 100.4.2
+magento/module-paypal: 101.0.7
+magento/module-paypal-captcha: 100.4.4
+magento/module-paypal-graph-ql: 100.4.5
+magento/module-persistent: 100.4.7
+magento/module-product-alert: 100.4.6
+magento/module-product-video: 100.4.7
+magento/module-quote: 101.2.7
+magento/module-quote-analytics: 100.4.6
+magento/module-quote-bundle-options: 100.4.3
+magento/module-quote-configurable-options: 100.4.3
+magento/module-quote-downloadable-links: 100.4.3
+magento/module-quote-graph-ql: 100.4.7
+magento/module-related-product-graph-ql: 100.4.4
+magento/module-release-notification: 100.4.5
+magento/module-remote-storage: 100.4.5
+magento/module-reports: 100.4.7
+magento/module-require-js: 100.4.3
+magento/module-review: 100.4.7
+magento/module-review-analytics: 100.4.4
+magento/module-review-graph-ql: 100.4.3
+magento/module-robots: 101.1.3
+magento/module-rss: 100.4.5
+magento/module-rule: 100.4.6
+magento/module-sales: 103.0.7
+magento/module-sales-analytics: 100.4.4
+magento/module-sales-graph-ql: 100.4.7
+magento/module-sales-inventory: 100.4.4
+magento/module-sales-rule: 101.2.7
+magento/module-sales-rule-graph-ql: 100.4.0
+magento/module-sales-sequence: 100.4.4
+magento/module-sample-data: 100.4.5
+magento/module-search: 101.1.7
+magento/module-security: 100.4.7
+magento/module-send-friend: 100.4.5
+magento/module-send-friend-graph-ql: 100.4.3
+magento/module-shipping: 100.4.7
+magento/module-sitemap: 100.4.6
+magento/module-store: 101.1.7
+magento/module-store-graph-ql: 100.4.5
+magento/module-swagger: 100.4.6
+magento/module-swagger-webapi: 100.4.3
+magento/module-swagger-webapi-async: 100.4.3
+magento/module-swatches: 100.4.7
+magento/module-swatches-graph-ql: 100.4.5
+magento/module-swatches-layered-navigation: 100.4.3
+magento/module-tax: 100.4.7
+magento/module-tax-graph-ql: 100.4.3
+magento/module-tax-import-export: 100.4.6
+magento/module-theme: 101.1.7
+magento/module-theme-graph-ql: 100.4.4
+magento/module-translation: 100.4.7
+magento/module-ui: 101.2.7
+magento/module-ups: 100.4.7
+magento/module-url-rewrite: 102.0.6
+magento/module-url-rewrite-graph-ql: 100.4.6
+magento/module-user: 101.2.7
+magento/module-usps: 100.4.6
+magento/module-variable: 100.4.5
+magento/module-vault: 101.2.7
+magento/module-vault-graph-ql: 100.4.3
+magento/module-version: 100.4.4
+magento/module-webapi: 100.4.6
+magento/module-webapi-async: 100.4.5
+magento/module-webapi-security: 100.4.4
+magento/module-weee: 100.4.7
+magento/module-weee-graph-ql: 100.4.4
+magento/module-widget: 101.2.7
+magento/module-wishlist: 101.2.7
+magento/module-wishlist-analytics: 100.4.5
+magento/module-wishlist-graph-ql: 100.4.7
+magento/page-builder: 1.7.4
+magento/security-package: 1.1.6
+magento/theme-adminhtml-backend: 100.4.7
+magento/theme-frontend-blank: 100.4.7
+magento/theme-frontend-luma: 100.4.7
 magento/zend-cache: ^1.16
 magento/zend-db: ^1.16
 magento/zend-pdf: ^1.16
 monolog/monolog: ^2.7
-opensearch-project/opensearch-php: ^1.0 || ^2.0, <2.0.1
-paypal/module-braintree: 4.5.0
+opensearch-project/opensearch-php: ^1.0 || ^2.0
 pelago/emogrifier: ^7.0
-php: ~8.1.0||~8.2.0
+php: ~8.1.0||~8.2.0||~8.3.0
 php-amqplib/php-amqplib: ^3.2
 phpseclib/mcrypt_compat: ^2.0
 phpseclib/phpseclib: ^3.0
+psr/log: ^2 || ^3
 ramsey/uuid: ^4.2
-symfony/console: ^5.4
-symfony/intl: ^5.4
-symfony/process: ^5.4
-symfony/string: ^5.4
+symfony/console: ^6.4
+symfony/intl: ^6.4
+symfony/process: ^6.4
+symfony/string: ^6.4
 tedivm/jshrink: ^1.4
-temando/module-shipping: 2.0.0
 tubalmartin/cssmin: ^4.1
 web-token/jwt-framework: ^3.1
 webonyx/graphql-php: ^15.0
@@ -352,7 +360,7 @@ wikimedia/less.php: ^3.2
   <tbody>
   <tr>
     <td>
-      elasticsearch/elasticsearch
+      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
     </td>
     <td>라이브러리</td>
     <td>Elasticsearch용 PHP 클라이언트</td>
@@ -436,13 +444,6 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/beberlei/assert.git">beberlei/assert</a>
-    </td>
-    <td>라이브러리</td>
-    <td>비즈니스 모델의 입력 유효성 검사를 위한 씬 어설션 라이브러리</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/DASPRiD/Enum.git">dasprid/enum</a>
     </td>
     <td>라이브러리</td>
@@ -482,6 +483,13 @@ wikimedia/less.php: ^3.2
     </td>
     <td>라이브러리</td>
     <td>낙관적 잠금을 사용하는 Redis 기반 세션 처리기</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/firebase/php-jwt.git">firebase/php-jwt</a>
+    </td>
+    <td>라이브러리</td>
+    <td>PHP에서 JSON 웹 토큰(JWT)을 인코딩하고 디코딩하는 간단한 라이브러리입니다. 현재 사양을 준수해야 합니다.</td>
   </tr>
   <tr>
     <td>
@@ -723,13 +731,6 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-zendframework-bridge.git">laminas/laminas-zendframework-bridge</a>
-    </td>
-    <td>라이브러리</td>
-    <td>이전 ZF 클래스 이름을 Laminas Project에 별칭으로 지정합니다.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/nikic/PHP-Parser.git">nikic/php-parser</a>
     </td>
     <td>라이브러리</td>
@@ -769,6 +770,27 @@ wikimedia/less.php: ^3.2
     </td>
     <td>magento-module</td>
     <td>태그에 대한 모든 지원을 제공하는 Redis를 사용하는 Zend_Cache 백엔드.</td>
+  </tr>
+  </tbody>
+</table>
+
+### ISC
+
+<table>
+  <thead>
+    <tr>
+      <th>이름</th>
+      <th>유형</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/paragonie/sodium_compat.git">파라고니/나트륨 콤파트</a>
+    </td>
+    <td>라이브러리</td>
+    <td>libsodium의 순수 PHP 구현; 존재하는 경우 PHP 확장을 사용합니다.</td>
   </tr>
   </tbody>
 </table>
@@ -905,27 +927,6 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/annotations.git">교리/주석</a>
-    </td>
-    <td>라이브러리</td>
-    <td>Dockblock 주석 파서</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/deprecations.git">교리/중단</a>
-    </td>
-    <td>라이브러리</td>
-    <td>trigger_error(E_USER_DEPRECATED) 또는 PSR-3 로깅 위에 모든 사용 중지를 비활성화하거나 패키지를 선택적으로 비활성화하는 옵션과 함께 작은 레이어가 있습니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/doctrine/lexer.git">교리/렉서</a>
-    </td>
-    <td>라이브러리</td>
-    <td>하향식 재귀 하강 파서에서 사용할 수 있는 PHP Doctrine 렉서 라이브러리.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/endroid/qr-code.git">엔드로이드/qr-코드</a>
     </td>
     <td>라이브러리</td>
@@ -1041,7 +1042,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/PhpGt/Dom.git">phpgt/dom</a>
     </td>
     <td>라이브러리</td>
-    <td>PHP 프로젝트를 위한 최신 DOM API입니다.</td>
+    <td>최신 DOM API.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/PhpGt/PropFunc.git">phpgt/propfunc</a>
+    </td>
+    <td>라이브러리</td>
+    <td>속성 접근자 및 변경자 함수.</td>
   </tr>
   <tr>
     <td>
@@ -1059,10 +1067,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+      <a href="https://github.com/php-fig/clock.git">psr/clock</a>
     </td>
     <td>라이브러리</td>
-    <td>라이브러리 캐싱을 위한 공통 인터페이스</td>
+    <td>시계를 읽기 위한 공통 인터페이스.</td>
   </tr>
   <tr>
     <td>
@@ -1136,7 +1144,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/sabberworm/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
+      <a href="https://github.com/MyIntervals/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
     </td>
     <td>라이브러리</td>
     <td>PHP로 작성된 CSS 파일용 파서</td>
@@ -1255,6 +1263,20 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/http-client.git">symfony/http 클라이언트</a>
+    </td>
+    <td>라이브러리</td>
+    <td>HTTP 리소스를 동기식으로 또는 비동기식으로 가져오는 강력한 방법 제공</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contract</a>
+    </td>
+    <td>라이브러리</td>
+    <td>HTTP 클라이언트와 관련된 일반 추상화</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/http-foundation.git">symfony/http-foundation</a>
     </td>
     <td>라이브러리</td>
@@ -1272,7 +1294,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/intl.git">교감/국제</a>
     </td>
     <td>라이브러리</td>
-    <td>ICU 라이브러리의 추가 데이터를 포함하는 C intl 확장에 대한 PHP 대체 레이어를 제공합니다.</td>
+    <td>ICU 라이브러리의 로컬라이제이션 데이터에 대한 액세스를 제공합니다.</td>
   </tr>
   <tr>
     <td>
@@ -1339,6 +1361,13 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/polyfill-php83.git">symfony/polyfill-php83</a>
+    </td>
+    <td>라이브러리</td>
+    <td>일부 PHP 8.3+ 기능을 더 낮은 PHP 버전으로 지원하는 Symfony polyfill</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/process.git">교감/과정</a>
     </td>
     <td>라이브러리</td>
@@ -1371,13 +1400,6 @@ wikimedia/less.php: ^3.2
     </td>
     <td>라이브러리</td>
     <td>직렬화할 수 있는 PHP 데이터 구조를 일반 PHP 코드로 내보낼 수 있습니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/thecodingmachine/safe.git">천장기계/안전장치</a>
-    </td>
-    <td>라이브러리</td>
-    <td>오류 시 FALSE를 반환하는 대신 예외를 발생시키는 PHP 코어 함수</td>
   </tr>
   <tr>
     <td>
@@ -1416,17 +1438,31 @@ wikimedia/less.php: ^3.2
   <tbody>
   <tr>
     <td>
-      paypal/module-braintree-graph-ql
+      paypal/module-braintree-customer-balance
     </td>
     <td>magento2-module</td>
     <td>해당 사항 없음</td>
   </tr>
   <tr>
     <td>
-      temando/module-shipping-remover
+      paypal/module-braintree-gift-card-account
     </td>
     <td>magento2-module</td>
-    <td>Magento 2에서 Temando 다중 통신사 배송 확장 제거</td>
+    <td>해당 사항 없음</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-gift-wrapping
+    </td>
+    <td>magento2-module</td>
+    <td>해당 사항 없음</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-graph-ql
+    </td>
+    <td>magento2-module</td>
+    <td>해당 사항 없음</td>
   </tr>
   </tbody>
 </table>
@@ -1442,13 +1478,6 @@ wikimedia/less.php: ^3.2
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>
-      temando/module-shipping
-    </td>
-    <td>메타패키지</td>
-    <td>Magento 2용 Temando 멀티 캐리어 배송 확장</td>
-  </tr>
   </tbody>
 </table>
 

@@ -3,9 +3,9 @@ keywords: Adobe Commerce;홈;인기 있는 주제
 title: 홈
 description: Adobe Commerce 시스템 관리 및 운영 제품 설명서의 색인을 찾아봅니다.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
+source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '225'
 ht-degree: 18%
 
 ---
@@ -17,7 +17,7 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
       <img alt="릴리스 정보" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>

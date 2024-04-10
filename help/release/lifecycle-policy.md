@@ -2,10 +2,10 @@
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: bb90d7903eafe01b42d8c056db771769f9e4e752
+source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 12%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
 
 - 제로 데이 취약성과 같은 중요한 보안 문제의 경우 Adobe은 다음을 제공합니다. [핫픽스](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) 최신 패치 또는 보안 패치 릴리스에 없는 경우에도 지원되는 버전의 모든 고객에 대해. 핫픽스는 다목적 서비스가 아니며 최신 릴리스로 업그레이드하여 수정되는 모든 보안 문제를 해결하지는 않습니다.
 
-- Adobe은 PHP와 같은 타사 서비스 및 소프트웨어 종속성에 대한 보안 및 품질 수정 사항을 제공하지 않습니다. 타사 소프트웨어 의존성의 보안 및 규정 준수(예: PCI, ISO, SOC)를 유지하는 것은 사용자의 책임입니다. Adobe은 가능한 한 빨리 Adobe Commerce에서 지원하는 최신 버전의 PHP를 사용하도록 환경을 업데이트할 것을 권장합니다. 지원이 종료되는 PHP 버전을 사용하지 마십시오.
+- Adobe은 고객이 Adobe Commerce에 대한 3년의 지원 기간을 사용하는 동안 수명이 종료될 수 있는 타사 서비스 및 소프트웨어 종속성(PHP 및 MySQL 등)에 대한 보안 및 품질 수정 사항을 제공하지 않습니다. 다음을 참조하십시오. [시스템 요구 사항](../installation/system-requirements.md) 테스트되고 지원되는 타사 기술에 대한 전체 목록입니다.
 
 ## 소프트웨어 지원 종료
 
@@ -56,27 +56,27 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
     <td>상거래</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>Q3</td>
+    <td>분기 3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>Q3</td>
+    <td>분기 3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>Q3</td>
+    <td>분기 3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>Q3</td>
+    <td>분기 3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>Q3</td>
+    <td>분기 3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>Q3</td>
+    <td>분기 3</td>
     <td>Q4</td>
   </tr>
   <tr>
