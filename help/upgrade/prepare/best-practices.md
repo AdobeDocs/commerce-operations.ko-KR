@@ -1,18 +1,18 @@
 ---
 title: 우수 사례
-description: Adobe Commerce 및 Magento Open Source 프로젝트에 대한 업그레이드 프로세스를 관리하려면 Adobe 권장 모범 사례를 사용하십시오.
+description: Adobe Commerce 프로젝트에 대한 업그레이드 프로세스를 관리하려면 Adobe 권장 모범 사례를 사용하십시오.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
 
 # 업그레이드 우수 사례
 
-이 항목에는 Adobe Commerce 및 Magento Open Source 프로젝트 업그레이드의 복잡성을 관리하기 위해 수행해야 하는 작업이 나열되어 있습니다. 팀은 프로젝트 개발이 시작되고 각 릴리스를 계속 진행하는 시점부터 업그레이드를 고려해야 합니다. 이러한 모범 사례를 따르면 업그레이드 프로세스가 훨씬 쉽고 빠르며 저렴해집니다.
+이 주제에서는 Adobe Commerce 프로젝트 업그레이드의 복잡성을 관리하기 위해 수행해야 하는 작업을 나열합니다. 팀은 프로젝트 개발이 시작되고 각 릴리스를 계속 진행하는 시점부터 업그레이드를 고려해야 합니다. 이러한 모범 사례를 따르면 업그레이드 프로세스가 훨씬 쉽고 빠르며 저렴해집니다.
 
 >[!TIP]
 >

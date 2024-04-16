@@ -3,16 +3,16 @@ title: 보안을 향상하도록 docroot 수정
 description: Adobe Commerce 또는 Magento Open Source 온-프레미스 파일 시스템에 대한 무단 브라우저 기반 액세스를 차단합니다.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 보안을 향상하도록 docroot 수정
 
-Apache 웹 서버가 있는 표준 설치에서 Adobe Commerce 및 Magento Open Source은 기본 웹 루트에 설치됩니다. `/var/www/html/magento2`.
+Apache 웹 서버가 있는 표준 설치에서 Adobe Commerce은 기본 웹 루트에 설치됩니다. `/var/www/html/magento2`.
 
 다음 `magento2/` 디렉터리에는 다음 항목이 포함되어 있습니다.
 
@@ -168,7 +168,7 @@ server {
 
 웹 브라우저의 상점 앞으로 이동하여 모든 것이 제대로 작동하는지 확인하십시오.
 
-1. 웹 브라우저를 열고 주소 표시줄에 서버의 호스트 이름 또는 IP 주소를 입력합니다. For example, `http://192.168.33.10`.
+1. 웹 브라우저를 열고 주소 표시줄에 서버의 호스트 이름 또는 IP 주소를 입력합니다. 예를 들어, `http://192.168.33.10`.
 
    다음 그림은 샘플 상점 첫 페이지를 보여줍니다. 다음과 같이 표시된다면 설치가 성공적으로 완료되었습니다.
 

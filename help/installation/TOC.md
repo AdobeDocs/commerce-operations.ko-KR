@@ -1,11 +1,11 @@
 ---
 user-guide-title: 설치 안내서
-user-guide-description: 온-프레미스 배포용 Adobe Commerce 및 Magento Open Source을 설치하는 방법에 대해 알아봅니다.
+user-guide-description: 온-프레미스 배포용 Adobe Commerce을 설치하는 방법에 대해 알아봅니다.
 feature: Install
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 3%
       - [작성기 패키지 다운로드](sample-data/composer-packages.md)
       - [Git 저장소 복제](sample-data/git-repositories.md)
       - [모듈 제거 또는 업데이트](sample-data/remove-or-update.md)
-- 튜토리얼 {#tutorials}
+- Tutorials {#tutorials}
    - [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](tutorials/backup.md)
    - [데이터베이스 상태 확인](tutorials/database-status.md)
    - [메시지 소비자 행동 구성](tutorials/message-consumers.md)

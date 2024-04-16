@@ -1,11 +1,11 @@
 ---
 title: PHP 설정
-description: 필요한 PHP 확장을 설치하고 Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 필요한 PHP 설정을 구성하려면 다음 단계를 따르십시오.
+description: 다음 단계에 따라 필요한 PHP 확장 프로그램을 설치하고 Adobe Commerce의 온프레미스 설치에 필요한 PHP 설정을 구성합니다.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->최신 버전의 Adobe Commerce 및 Magento Open Source은 PHP 8.1 이상이 필요합니다. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 모든 버전의 PHP용.
+>최신 버전의 Adobe Commerce은 PHP 8.1 이상이 필요합니다. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 모든 버전의 PHP용.
 
 클라우드 구성 지침은 다음을 참조하십시오. [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 다음에서 _클라우드 인프라의 상거래_ 가이드.
 
@@ -46,7 +46,7 @@ PHP가 설치되지 않은 경우(또는 업그레이드가 필요한 경우) Li
 
 ## 설치된 확장 확인
 
-Adobe Commerce과 Magento Open Source에는 특정 PHP 확장명이 필요합니다. 다음 목록은 각 Commerce 버전에 필요한 확장을 지정합니다. 이 목록은 각 버전의 최신 버전을 실행하는 배포에서 자동으로 생성됩니다.
+Adobe Commerce에는 특정 PHP 확장명이 필요합니다. 다음 목록은 각 Commerce 버전에 필요한 확장을 지정합니다. 이 목록은 각 버전의 최신 버전을 실행하는 배포에서 자동으로 생성됩니다.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -90,11 +90,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   이러한 설정을 사용하면 PHP 프로세스가 페이지 로드 시 경로를 조회하는 대신 파일에 경로를 캐시할 수 있습니다. 다음을 참조하십시오 [성능 조정](https://www.php.net/manual/en/ini.core.php) PHP 설명서에서 참조하십시오.
 
-- 사용 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments): Adobe Commerce 및 Magento Open Source 2.1 이상에 필요합니다.
+- 사용 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments): Adobe Commerce 2.1 이상에 필요합니다.
 
   Adobe은 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 성능상의 이유로. OPcache는 많은 PHP 배포에서 사용할 수 있습니다.
 
-  Adobe Commerce 및 Magento Open Source 2.1 이상 버전은 코드 생성을 위해 PHP 코드 주석을 사용합니다.
+  Adobe Commerce 2.1 이상 버전은 코드 생성에 PHP 코드 주석을 사용합니다.
 
 >[!NOTE]
 >

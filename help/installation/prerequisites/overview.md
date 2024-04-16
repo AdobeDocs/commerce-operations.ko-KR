@@ -1,10 +1,10 @@
 ---
 title: 온-프레미스 설치 사전 요구 사항
-description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아봅니다.
+description: Adobe Commerce 온-프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아보세요.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ CentOS: `httpd -v`
 
 우분투: `apache2 -v`
 
-Adobe Commerce 및 Magento Open Source은 다음 결과에 따라 Apache 버전 2.4를 지원합니다.
+Adobe Commerce은 다음 결과에 따라 Apache 버전 2.4를 지원합니다.
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)

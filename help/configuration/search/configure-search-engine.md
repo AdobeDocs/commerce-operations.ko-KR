@@ -1,18 +1,18 @@
 ---
 title: 검색 엔진 구성
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 배포에 대한 검색 엔진을 구성합니다.
+description: Adobe Commerce의 온-프레미스 배포에 대한 검색 엔진을 구성합니다.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # 검색 엔진 구성
 
-이 섹션에서는 Adobe Commerce 및 Magento Open Source의 온-프레미스 배포로 Elasticsearch 또는 OpenSearch를 테스트하도록 선택해야 하는 최소 설정에 대해 설명합니다.
+이 섹션에서는 Adobe Commerce의 온-프레미스 배포를 사용하여 Elasticsearch 또는 OpenSearch를 테스트하도록 선택해야 하는 최소 설정에 대해 설명합니다.
 
 >[!TIP]
 >
@@ -33,13 +33,13 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 1. 클릭 **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
 1. 다음에서 **[!UICONTROL Search Engine]** 목록에서 검색 엔진의 해당 버전을 선택합니다.
 
-   다음 표에는 Commerce와의 연결을 구성하고 테스트하는 데 필요한 옵션이 나열되어 있습니다. 검색 엔진의 서버 설정을 변경하지 않은 경우 기본값이 작동합니다. 다음 단계로 건너뜁니다.
+   다음 표에는 Commerce과의 연결을 구성하고 테스트하는 데 필요한 옵션이 나열되어 있습니다. 검색 엔진의 서버 설정을 변경하지 않은 경우 기본값이 작동합니다. 다음 단계로 건너뜁니다.
 
    | 옵션 | 설명 |
    |--- |--- |
    | **[!UICONTROL Server Hostname]** | Elasticsearch 또는 OpenSearch를 실행하는 컴퓨터의 정규화된 호스트 이름 또는 IP 주소를 입력합니다.<br>클라우드 인프라의 Adobe Commerce: 통합 시스템에서 이 가치를 얻으십시오. |
    | **[!UICONTROL Server Port]** | 웹 서버 프록시 포트를 입력합니다. 기본값은 9200입니다.<br>클라우드 인프라의 Adobe Commerce: 통합 시스템에서 이 가치를 얻으십시오. |
-   | **[!UICONTROL Index Prefix]** | 검색 엔진 색인 접두사를 입력합니다. 둘 이상의 상거래 설치(스테이징 및 프로덕션 환경)에 단일 인스턴스를 사용하는 경우 각 설치에 대해 고유한 접두사를 지정해야 합니다. 그렇지 않으면 기본 접두사 magento2를 사용할 수 있습니다. |
+   | **[!UICONTROL Index Prefix]** | 검색 엔진 색인 접두사를 입력합니다. 둘 이상의 Commerce 설치(스테이징 및 프로덕션 환경)에 단일 인스턴스를 사용하는 경우 각 설치에 대해 고유한 접두사를 지정해야 합니다. 그렇지 않으면 기본 접두사 magento2를 사용할 수 있습니다. |
    | **[!UICONTROL Enable HTTP Auth]** | 클릭 **[!UICONTROL Yes]** 검색 엔진 서버에 대한 인증을 사용하도록 설정한 경우에만 해당합니다. 그럴 경우 제공된 필드에 사용자 이름과 암호를 입력합니다. |
    | **[!UICONTROL Server Timeout]** | Elasticsearch 또는 OpenSearch 서버에 대한 연결을 설정할 때 대기할 시간(초)을 입력합니다. |
 
@@ -61,9 +61,9 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 이 경우 다음을 시도해 보십시오.
 
 - 검색 엔진 서버가 실행 중인지 확인하십시오.
-- 서버가 Commerce와 다른 호스트에 있는 경우 Commerce 서버에 로그인하고 검색 엔진 호스트를 ping합니다. 네트워크 연결 문제를 해결하고 연결을 다시 테스트하십시오.
+- 서버가 Commerce과 다른 호스트에 있는 경우 Commerce 서버에 로그인하고 검색 엔진 호스트에 ping을 실행합니다. 네트워크 연결 문제를 해결하고 연결을 다시 테스트하십시오.
 - Elasticsearch 또는 OpenSearch를 시작한 명령 창에서 스택 추적 및 예외를 검사합니다. 계속하려면 이러한 문제를 해결해야 합니다. 특히 를 사용하여 사용자로 검색 엔진을 시작했는지 확인하십시오. `root` 권한.
-- 다음을 확인합니다. [UNIX 방화벽 및 SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) 둘 다 비활성화되어 있거나 검색 엔진과 상거래 가 서로 통신할 수 있도록 규칙을 설정합니다.
+- 다음을 확인합니다. [UNIX 방화벽 및 SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) 둘 다 비활성화되어 있거나 검색 엔진과 Commerce이 서로 통신할 수 있도록 규칙을 설정합니다.
 - 값 확인 **[!UICONTROL Server Hostname]** 필드. 서버를 사용할 수 있는지 확인합니다. 대신 서버의 IP 주소를 시도할 수 있습니다.
 - 사용 `netstat -an | grep <listen-port>` 에 지정된 포트를 확인하는 명령 **[!UICONTROL Server Port]** 다른 프로세스에서 필드를 사용하고 있지 않습니다.
 

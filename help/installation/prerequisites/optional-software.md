@@ -1,10 +1,10 @@
 ---
 title: 옵션 소프트웨어
-description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치를 지원하기 위해 설치할 수 있는 선택적 소프트웨어에 대해 자세히 알아봅니다.
+description: Adobe Commerce의 온프레미스 설치를 지원하기 위해 설치할 수 있는 선택적 소프트웨어에 대해 자세히 알아봅니다.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
    yum search ntp
    ```
 
-1. 설치할 패키지를 선택하십시오. For example, `ntp.x86_64`.
+1. 설치할 패키지를 선택하십시오. 예를 들어, `ntp.x86_64`.
 
 1. 패키지를 설치합니다.
 

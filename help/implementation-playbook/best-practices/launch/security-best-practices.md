@@ -1,16 +1,16 @@
 ---
-title: 상거래 사이트 및 인프라 보호
+title: Commerce 사이트 및 인프라 보안
 description: Adobe Commerce 설치를 설정, 구성 및 업데이트할 때 보안 모범 사례를 구현하여 보안을 유지합니다.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
 
-# 상거래 사이트 및 인프라 보호
+# Commerce 사이트 및 인프라 보안
 
 클라우드 인프라에 배포된 Adobe Commerce 프로젝트에 대한 안전한 환경을 구축하고 유지 관리하는 것은 Adobe Commerce 고객, 솔루션 파트너 및 Adobe 간에 공유되는 책임입니다. 이 안내서의 목적은 방정식의 고객 측면에 대한 모범 사례를 제공하는 것입니다.
 
@@ -31,7 +31,7 @@ Adobe은 다음 권장 사항을 모든 고객에게 가장 높은 우선 순위
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **관리자 및 모든 SSH 연결에 대해 이중 인증 활성화**
 
-- [상거래 관리자의 보안](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
+- [Commerce 관리자에 대한 보안](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
 - [보안 SSH 연결](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) (클라우드 인프라)
 
@@ -49,17 +49,17 @@ Adobe은 다음 권장 사항을 모든 고객에게 가장 높은 우선 순위
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Adobe Commerce 최신 릴리스로 업그레이드**
 
-다음까지 코드 업데이트 유지: [상거래 프로젝트를 최신 릴리스로 업그레이드](#upgrade-to-the-latest-release) Adobe에서 제공하는 보안 패치, 핫픽스 및 기타 패치를 포함한 Adobe Commerce, Commerce Services 및 확장 프로그램의
+다음까지 코드 업데이트 유지: [Commerce 프로젝트를 최신 릴리스로 업그레이드](#upgrade-to-the-latest-release) Adobe에서 제공하는 보안 패치, 핫픽스 및 기타 패치를 포함한 Adobe Commerce, Commerce Services 및 확장 기능
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **보안 중요 구성 값**
 
 사용 [구성 관리](../../../configuration/cli/set-configuration-values.md) 중요 구성 값을 잠급니다.
 
-다음 `lock config` 및 `lock env` CLI 명령은 관리자가 환경 변수를 업데이트하지 못하도록 환경 변수를 구성합니다. 이 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일. 클라우드 인프라 프로젝트의 Commerce의 경우 다음을 참조하십시오. [저장소 구성 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
+다음 `lock config` 및 `lock env` CLI 명령은 관리자가 환경 변수를 업데이트하지 못하도록 환경 변수를 구성합니다. 이 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일. (클라우드 인프라 프로젝트에 대한 Commerce의 경우 다음을 참조하십시오. [저장소 구성 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **보안 검사 실행**
 
-사용 [Commerce 보안 검색 서비스](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) 모든 Adobe Commerce 및 Magento Open Source 사이트에서 알려진 보안 위험 및 맬웨어를 모니터링하고 등록하여 패치 업데이트 및 보안 알림을 받습니다.
+사용 [Commerce 보안 검색 서비스](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) 모든 Adobe Commerce 사이트에서 알려진 보안 위험 및 맬웨어를 모니터링하고, 등록하여 패치 업데이트 및 보안 알림을 받습니다.
 
 ## 확장 및 사용자 지정 코드의 보안 보장
 
@@ -67,13 +67,13 @@ Adobe Commerce Marketplace에서 타사 확장을 추가하여 Adobe Commerce을
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **보안에 정통한 파트너 또는 솔루션 통합자(SI) 선택**—보안 개발 방침을 따르고 보안 문제 예방 및 해결에 대한 실적이 탄탄한 조직을 선택하여 안전한 통합과 사용자 지정 코드 전달을 보장합니다.
 
-![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **보안 확장 사용**—솔루션 통합업체 또는 개발자와 상의하여 다음과 같이 Commerce 배포에 가장 적절하고 안전한 확장을 식별합니다. [Adobe 확장 우수 사례](../planning/extensions.md).
+![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **보안 확장 사용**—솔루션 통합자 또는 개발자와 상의하여 다음과 같이 Commerce 배포에 가장 적절하고 안전한 확장을 식별합니다. [Adobe 확장 우수 사례](../planning/extensions.md).
 
 - Adobe Commerce Marketplace 또는 솔루션 통합자를 통한 소스 확장만 해당됩니다. 확장 프로그램이 통합자를 통해 제공되는 경우 통합자가 변경되는 경우 확장 라이선스의 소유권을 양도할 수 있는지 확인합니다.
 
 - 확장 및 공급업체 수를 제한하여 위험 노출을 줄입니다.
 
-- 가능하면 Commerce 애플리케이션과 통합하기 전에 보안을 위해 확장 코드를 검토하십시오.
+- 가능한 경우 Commerce 애플리케이션과 통합하기 전에 보안을 위해 확장 코드를 검토하십시오.
 
 - PHP 확장 개발자가 Adobe Commerce 개발 지침, 프로세스 및 보안 모범 사례를 따르도록 하십시오. 특히, 개발자는 원격 코드 실행 또는 약한 암호화를 초래할 수 있는 PHP 기능의 사용을 피해야 합니다. 다음을 참조하십시오 [보안](https://developer.adobe.com/commerce/php/best-practices/security/) 다음에서 *확장 개발자 우수 사례 안내서*.
 
@@ -83,7 +83,7 @@ Adobe Commerce Marketplace에서 타사 확장을 추가하여 Adobe Commerce을
 
 Adobe은 보안을 강화하고 가능한 손상으로부터 고객을 더 잘 보호하기 위해 업데이트된 솔루션 구성 요소를 지속적으로 릴리스합니다. 최신 버전의 Adobe Commerce 애플리케이션, 설치된 서비스 및 확장으로 업그레이드하고 현재 패치를 적용하는 것은 보안 위협에 대한 첫 번째 및 최상의 방어선입니다.
 
-일반적으로 Commerce는 분기별로 보안 업데이트를 릴리스하지만 우선 순위 및 기타 요인에 따라 주요 보안 위협에 대한 핫픽스를 릴리스할 권한이 있습니다.
+Commerce은 일반적으로 분기별로 보안 업데이트를 릴리스하지만 우선 순위 및 기타 요소를 기반으로 주요 보안 위협에 대한 핫픽스를 릴리스할 수 있는 권한을 보유합니다.
 
 사용 가능한 Adobe Commerce 버전, 릴리스 주기 및 업그레이드 및 패치 프로세스에 대한 정보는 다음 리소스를 참조하십시오.
 
@@ -99,9 +99,9 @@ Adobe은 보안을 강화하고 가능한 손상으로부터 고객을 더 잘 �
 
 ## 재해 복구 계획 수립
 
-Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개발 및 구현하여 피해를 제어하고 정상적인 업무 운영을 신속하게 복구합니다.
+Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개발 및 구현하여 피해를 제어하고 정상적인 비즈니스 운영을 신속하게 복원하십시오.
 
-재해로 인해 고객이 Commerce 인스턴스를 복원해야 하는 경우 Adobe은 고객에게 백업 파일을 제공할 수 있습니다. 해당되는 경우 고객 및 솔루션 통합업체가 복원을 수행할 수 있습니다.
+재해로 인해 Commerce 인스턴스 복원이 필요한 경우 Adobe에서 고객에게 백업 파일을 제공할 수 있습니다. 해당되는 경우 고객 및 솔루션 통합업체가 복원을 수행할 수 있습니다.
 
 Adobe은 재해 복구 계획의 일환으로 고객에게 다음과 같은 사항을 적극 권장합니다 [Adobe Commerce 애플리케이션 구성 내보내기](../../../configuration/cli/export-configuration.md) 무중단 업무 운영을 위해 재구축이 필요한 경우 신속하게 재구축할 수 있습니다. 구성을 파일 시스템으로 내보내는 주된 이유는 시스템 구성이 데이터베이스 구성보다 우선하기 때문입니다. 읽기 전용 파일 시스템에서는 민감한 구성 설정을 변경하기 위해 응용 프로그램을 재배포해야 하므로 추가 보호 계층이 제공됩니다.
 
@@ -129,7 +129,7 @@ Adobe은 재해 복구 계획의 일환으로 고객에게 다음과 같은 사�
 
 이 섹션에서는 Adobe Commerce 설치를 위한 사이트 및 인프라 보안 유지 관리에 대한 모범 사례를 요약합니다. 이러한 모범 사례 중 대부분은 일반적으로 컴퓨터 인프라 보안에 중점을 두므로 일부 권장 사항이 이미 구현되었을 수 있습니다.
 
-![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **승인되지 않은 액세스 차단**—호스팅 파트너와 협력하여 상거래 사이트 및 고객 데이터에 대한 무단 액세스를 차단하는 VPN 터널을 설정합니다. Commerce 애플리케이션에 대한 무단 액세스를 차단하려면 SSH 터널을 설정하십시오.
+![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **승인되지 않은 액세스 차단**—호스팅 파트너와 협력하여 Commerce 사이트 및 고객 데이터에 대한 무단 액세스를 차단하는 VPN 터널을 설정합니다. Commerce 애플리케이션에 대한 무단 액세스를 차단하려면 SSH 터널을 설정하십시오.
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **웹 애플리케이션 방화벽 사용**—트래픽을 분석하고 웹 애플리케이션 방화벽을 사용하여 신용카드 정보가 알 수 없는 IP 주소로 전송되는 것과 같은 의심스러운 패턴을 찾아냅니다.
 
@@ -137,7 +137,7 @@ Adobe은 재해 복구 계획의 일환으로 고객에게 다음과 같은 사�
 
 ![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **고급 암호 보안 설정 구성**—섹션 8.2.4의 PCI 데이터 보안 표준에서 권장하는 대로 강력한 암호를 설정하고 최소 90일마다 변경합니다. 다음을 참조하십시오 [관리자 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS 사용**—상거래 사이트가 새로 구현된 경우 HTTPS를 사용하여 전체 사이트를 시작합니다. Google은 HTTPS를 등급 요소로 사용할 뿐만 아니라 많은 사용자가 HTTPS로 보안이 되지 않는 한 사이트에서 구매를 고려조차 하지 않고 있다.
+![체크리스트](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS 사용**—Commerce 사이트가 새로 구현된 경우 HTTPS를 사용하여 전체 사이트를 시작합니다. Google은 HTTPS를 등급 요소로 사용할 뿐만 아니라 많은 사용자가 HTTPS로 보안이 되지 않는 한 사이트에서 구매를 고려조차 하지 않고 있다.
 
 ## 맬웨어에 대한 Protect
 
@@ -156,15 +156,15 @@ Adobe은 재해 복구 계획의 일환으로 고객에게 다음과 같은 사�
 
 >[!TIP]
 >
->상거래 사이트가 맬웨어 공격의 영향을 받는 경우 다음 Adobe Commerce 모범 사례를 따르십시오. [보안 문제에 대한 응답](../maintenance/respond-to-security-incident.md).
+>Commerce 사이트가 맬웨어 공격의 영향을 받는 경우 다음 Adobe Commerce 모범 사례를 따르십시오. [보안 문제에 대한 응답](../maintenance/respond-to-security-incident.md).
 
 ### 가장 일반적인 공격 이해
 
-다음은 모든 커머스 고객에게 다음과 같은 공격을 인지하고 이를 방지하기 위한 조치를 취할 것을 권장하는 Adobe의 일반적인 공격 카테고리 목록입니다.
+다음은 모든 Commerce 고객에게 인지하고 보호 조치를 취할 것을 권장하는 Adobe의 일반적인 공격 카테고리 목록입니다.
 
 - **사이트 디페이싱**—공격자가 사이트의 시각적 모양을 변경하거나 자신의 메시지를 추가하여 웹 사이트를 손상시킵니다. 사이트 및 사용자 계정에 대한 액세스가 손상되었지만 결제 정보는 종종 안전하게 유지됩니다.
 
-- **보트네츠**—고객의 Commerce 서버가 스팸 이메일을 전송하는 봇넷의 일부가 됩니다. 사용자 데이터는 일반적으로 손상되지 않지만 스팸 필터를 통해 고객의 도메인 이름이 차단 목록에 추가된으로 제공되므로 도메인에서 이메일이 전달되지 않을 수 있습니다. 또는 고객의 사이트가 봇넷의 일부가 되어 다른 사이트에 대한 DDoS(분산 서비스 거부) 공격을 야기합니다. 봇넷은 상거래 서버에 대한 인바운드 IP 트래픽을 차단하여 고객이 쇼핑을 할 수 없도록 할 수 있습니다.
+- **보트네츠**—고객의 Commerce 서버가 스팸 이메일을 전송하는 봇넷의 일부가 됩니다. 사용자 데이터는 일반적으로 손상되지 않지만 스팸 필터를 통해 고객의 도메인 이름이 차단 목록에 추가된으로 제공되므로 도메인에서 이메일이 전달되지 않을 수 있습니다. 또는 고객의 사이트가 봇넷의 일부가 되어 다른 사이트에 대한 DDoS(분산 서비스 거부) 공격을 야기합니다. 봇넷은 Commerce 서버에 대한 인바운드 IP 트래픽을 차단하여 고객이 쇼핑을 할 수 없도록 할 수 있습니다.
 
 - **직접 서버 공격**—데이터가 손상되고, 백도어 및 맬웨어가 설치되고, 사이트 운영이 영향을 받습니다. 서버에 저장되지 않은 결제 정보는 이러한 공격을 통해 훼손될 가능성이 적다.
 
@@ -178,16 +178,16 @@ Adobe은 재해 복구 계획의 일환으로 고객에게 다음과 같은 사�
 
 - 외부에서 Commerce 설치에 액세스할 수 있는 모든 지점을 식별하고 보호합니다.
 
-  일반적으로 가장 많은 보호가 필요한 관리자의 액세스 권한을 Adobe에 따라 보호합니다. [우선 순위 권장 사항](#priority-recommendations) 상거래 프로젝트를 구성할 때.
+  일반적으로 가장 많은 보호가 필요한 관리자의 액세스 권한을 Adobe에 따라 보호합니다. [우선 순위 권장 사항](#priority-recommendations) Commerce 프로젝트를 구성할 때.
 
-- 지정된 IP 주소 또는 네트워크에서 온 사용자에게만 액세스를 허용하는 액세스 제어 목록을 설정하여 상거래 사이트에 대한 액세스를 제어합니다.
+- 지정된 IP 주소 또는 네트워크에서 온 사용자에게만 액세스를 허용하는 액세스 제어 목록을 설정하여 Commerce 사이트에 대한 액세스를 제어합니다.
 
   사용자 지정 VCL 코드 조각과 함께 Fastly Edge ACL을 사용하여 들어오는 요청을 필터링하고 IP 주소별 액세스를 허용할 수 있습니다. 다음을 참조하십시오 [요청을 허용하기 위한 사용자 지정 VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
   >[!TIP]
   >
-  >원격 인력을 사용하는 경우 Commerce 사이트에 액세스할 수 있는 권한이 있는 주소 목록에 원격 직원의 IP 주소가 포함되어 있는지 확인하십시오.
+  >원격 인력을 채용하는 경우, 원격 직원의 IP 주소가 Commerce 사이트에 액세스할 수 있는 권한이 있는 주소 목록에 포함되어 있는지 확인하십시오.
 
 ### 클릭재킹 악용 방지
 

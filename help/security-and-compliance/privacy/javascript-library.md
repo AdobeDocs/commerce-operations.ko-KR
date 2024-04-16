@@ -1,10 +1,10 @@
 ---
 title: 개인 정보 JavaScript 라이브러리
-description: Adobe Commerce 및 Magento Open Source에서 수집한 고객 개인 정보에 액세스하고 삭제하는 사용자 지정 도구를 사용하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에서 수집한 고객 개인 정보에 액세스하고 삭제하는 데 사용자 지정 도구를 사용하는 방법을 알아봅니다.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 개인 정보 JavaScript 라이브러리
 
-개인 정보 JavaScript 라이브러리는 Adobe Commerce 및 Magento Open Source에서 수집한 개인 데이터에 액세스하고 삭제하는 프로세스를 만드는 데 도움이 되는 도구 세트입니다.
+개인 정보 JavaScript 라이브러리는 Adobe Commerce에서 수집한 개인 데이터에 액세스하고 삭제하는 프로세스를 만드는 데 도움이 되는 도구 세트입니다.
 
-상거래 데이터 추적 서비스는 다음과 같은 개인 정보 보호 규정에 적용 가능한 개인 정보를 저장할 수 있습니다. [GDPR(일반 데이터 보호 규정)](gdpr.md) 및 [CCPA(캘리포니아 소비자 개인 정보 보호법)](ccpa.md).
+Commerce 데이터 추적 서비스는 다음과 같은 개인 정보 보호 규정에 적용할 수 있는 개인 정보를 저장할 수 있습니다. [GDPR(일반 데이터 보호 규정)](gdpr.md) 및 [CCPA(캘리포니아 소비자 개인 정보 보호법)](ccpa.md).
 
-이 라이브러리는 개인 정보 보호 데이터 요청을 만들고 해당 응답을 수집하기 위한 함수 집합을 제공합니다. 이 라이브러리를 사용하여 Adobe Commerce 및 Magento Open Source 데이터 추적 서비스에서 브라우저에 저장된 데이터를 검색하고 제거할 수 있습니다.
+이 라이브러리는 개인 정보 보호 데이터 요청을 만들고 해당 응답을 수집하기 위한 함수 집합을 제공합니다. 이 라이브러리를 사용하여 Adobe Commerce 데이터 추적 서비스에서 브라우저에 저장된 데이터를 검색하고 제거합니다.
 
 >[!NOTE]
 >
->If [쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 이 활성화되어 있으면 쇼핑객이 동의할 때까지 Commerce가 행동 데이터를 수집하지 않습니다. If [!UICONTROL **쿠키 제한 모드**] 이 비활성화되어 있으면 Commerce가 기본적으로 동작 데이터를 수집합니다.
+>If [쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 이 활성화되어 있으면 Commerce은 쇼핑객이 동의할 때까지 행동 데이터를 수집하지 않습니다. If [!UICONTROL **쿠키 제한 모드**] 이 비활성화되어 있으면 Commerce이 기본적으로 동작 데이터를 수집합니다.
 
 ## 설치
 

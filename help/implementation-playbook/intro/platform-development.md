@@ -3,9 +3,9 @@ title: 플랫폼 개발 원칙
 description: Adobe Commerce 작업 시 기본적인 플랫폼 개발 원칙을 이해합니다.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## 클라우드 인프라의 Adobe Commerce
 
-Adobe Commerce on cloud infrastructure는 Adobe Commerce 소프트웨어를 위한 관리되고 자동화된 호스팅 플랫폼입니다. Adobe Commerce on cloud infrastructure에는 온-프레미스 Adobe Commerce 및 Magento Open Source 구현과 구별되는 다양한 기능이 포함되어 있습니다. 다음을 참조하십시오. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on cloud infrastructure는 Adobe Commerce 소프트웨어를 위한 관리되고 자동화된 호스팅 플랫폼입니다. Adobe Commerce on cloud infrastructure에는 온-프레미스 Adobe Commerce 구현과 구별되는 다양한 기능이 포함되어 있습니다. 다음을 참조하십시오. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

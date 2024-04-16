@@ -1,11 +1,11 @@
 ---
 title: 검색 엔진에 대한 Apache 구성
-description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Apache 웹 서버를 사용하여 검색 엔진을 구성합니다.
+description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,7 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 화면의 지침에 따라 사용자의 암호를 생성합니다.
 
-#### 예
+#### 예시
 
 **예 1: cron**
 cron에 대해 한 명의 사용자에 대해서만 인증을 설정해야 합니다. 이 예제에서는 웹 서버 사용자를 사용합니다. 웹 서버 사용자의 암호 파일을 만들려면 다음 명령을 입력합니다.

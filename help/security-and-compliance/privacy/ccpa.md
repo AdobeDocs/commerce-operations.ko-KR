@@ -2,9 +2,9 @@
 title: CCPA(캘리포니아 소비자 개인 정보 보호법)
 description: 개인 정보의 수집, 저장 및 사용 방법을 결정하기 위해 캘리포니아 소비자의 권리를 확장하는 CCPA(캘리포니아 소비자 개인 정보 보호법)에 대해 알아봅니다.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이는 Adobe Commerce 및 Magento Open Source 판매자와 개발자가 CCPA(California Consumer Privacy Act)의 의미를 이해하는 데 도움이 되는 일련의 항목 중 하나입니다. 정보는 정보 제공 목적으로만 사용되며 법률적인 조언으로 해석되어서는 안 됩니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
+>이는 Adobe Commerce 판매자 및 개발자가 CCPA(California Consumer Privacy Act)의 의미를 이해하는 데 도움이 되는 일련의 항목 중 하나입니다. 정보는 정보 제공 목적으로만 사용되며 법률적인 조언으로 해석되어서는 안 됩니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
 
 다음 [CCPA](https://oag.ca.gov/privacy/ccpa) 무허가 판매 또는 교환 또는 개인 정보로부터 소비자를 보호하는 데 중점을 두고, 캘리포니아 내 소비자의 권리를 확장하여 개인 정보가 수집, 저장 및 사용되는 방법을 결정합니다. CCPA는 2018년에 제정되었으며, 2020년 1월 1일부터 유효합니다.
 

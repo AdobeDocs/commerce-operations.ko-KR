@@ -3,9 +3,9 @@ title: 테마 제거
 description: Adobe Commerce 또는 Magento Open Source 테마를 제거하려면 다음 단계를 따르십시오.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 이 명령을 사용하기 전에 테마의 상대 경로를 알고 있어야 합니다. 테마는 의 하위 디렉터리에 있습니다. `<magento_root>/app/design/<area name>`. 영역으로 시작하는 테마 경로를 지정해야 합니다. `frontend` (상점 첫 화면의 테마) 또는 `adminhtml` (관리자 테마용).
 
-예를 들어 Adobe Commerce 및 Magento Open Source과 함께 제공되는 Luma 테마의 경로는 입니다. `frontend/Magento/luma`.
+예를 들어 Adobe Commerce과 함께 제공되는 Luma 테마의 경로는 다음과 같습니다. `frontend/Magento/luma`.
 
 테마에 대한 자세한 내용은 [테마 구조](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -39,7 +39,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 위치
 
-* `{theme path}` 는 영역 이름으로 시작하는 테마의 상대 경로입니다. 예를 들어 Adobe Commerce 및 Magento Open Source과 함께 제공되는 빈 테마의 경로는 다음과 같습니다. `frontend/Magento/blank`.
+* `{theme path}` 는 영역 이름으로 시작하는 테마의 상대 경로입니다. 예를 들어 Adobe Commerce과 함께 제공되는 빈 테마의 경로는 다음과 같습니다. `frontend/Magento/blank`.
 * `--backup-code` 다음 단락에서 설명한 대로 코드 베이스를 백업합니다.
 * `--clear-static-content` 생성된 정리 [정적 보기 파일](../../configuration/cli/static-view-file-deployment.md)정적 보기 파일이 제대로 표시되도록 하는 데 필요합니다.
 

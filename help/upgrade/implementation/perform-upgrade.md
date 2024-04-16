@@ -2,9 +2,9 @@
 title: 업그레이드 수행
 description: Adobe Commerce의 온-프레미스 배포를 업그레이드하려면 다음 단계를 따르십시오.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobe Commerce 및 Magento Open Source 업그레이드 절차가 변경되었습니다. 의 새 버전을 설치해야 합니다. `magento/composer-root-update-plugin` 패키지(참조) [전제 조건](../prepare/prerequisites.md)). 또한 업그레이드 명령이에서 변경되었습니다 `composer require magento/<package_name>` 끝 `composer require-commerce magento/<package_name>`.
+>Adobe Commerce 업그레이드 절차가 변경되었습니다. 의 새 버전을 설치해야 합니다. `magento/composer-root-update-plugin` 패키지(참조) [전제 조건](../prepare/prerequisites.md)). 또한 업그레이드 명령이에서 변경되었습니다 `composer require magento/<package_name>` 끝 `composer require-commerce magento/<package_name>`.
 
 ## 시작하기 전에
 

@@ -3,9 +3,9 @@ title: 온-프레미스 설치 보안
 description: Adobe Commerce 또는 Magento Open Source 온프레미스 설치의 보안 자세를 개선하는 방법에 대해 알아봅니다.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe은 SELinux 사용에 대한 권장 사항이 없습니다. 원할 경우 향상된 보안을 위해 사용할 수 있습니다. SELinux를 사용하는 경우 올바르게 구성해야 합니다. 그렇지 않으면 Adobe Commerce 및 Magento Open Source이 예기치 않게 작동할 수 있습니다. SELinux를 사용하려면 [CentOS 위키](https://wiki.centos.org/HowTos/SELinux) 통신 활성화를 위한 규칙을 설정합니다.
+>Adobe은 SELinux 사용에 대한 권장 사항이 없습니다. 원할 경우 향상된 보안을 위해 사용할 수 있습니다. SELinux를 사용하는 경우 올바르게 구성해야 합니다. 그렇지 않으면 Adobe Commerce이 예기치 않게 작동할 수 있습니다. SELinux를 사용하려면 [CentOS 위키](https://wiki.centos.org/HowTos/SELinux) 통신 활성화를 위한 규칙을 설정합니다.
 
 ## Apache에 설치하기 위한 제안 사항
 

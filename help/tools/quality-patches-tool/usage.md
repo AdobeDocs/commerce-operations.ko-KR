@@ -3,19 +3,18 @@ title: 사용
 description: 사용 방법 알아보기 [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # 사용
 
-다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 은 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 버전의 Adobe Commerce 또는 Magento Open Source에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
+다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 은 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 버전의 Adobe Commerce 또는 Magento Open Source에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
-
-시청 [기술 비디오](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe Commerce 및 Magento Open Source용 품질 패치 도구 사용 방법을 살펴볼 수 있습니다.
+시청 [기술 비디오](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe Commerce용 품질 패치 도구 사용 방법을 살펴볼 수 있습니다.
 
 >[!INFO]
 >
@@ -47,22 +46,22 @@ composer require magento/quality-patches
 
 | Id | 제목 | 유형 | 상태 | 세부 사항 |
 |--- |--- |--- |--- |--- |
-| 매그클라우드 | 배포 중 FPC를 사용할 수 없습니다. | 선택 사항입니다 | 적용되지 않음 | 영향을 받는 구성 요소:<br> - magento/module-page-cache |
-| MCLOUD-5650 | 파일에서 읽은 후 배포 구성 보류 | 선택 사항입니다 | 적용되지 않음 | 영향을 받는 구성 요소:<br> - magento/framework |
-| MCLOUD-5684 | 페이지 매김이 작동하지 않음 - product_list_limit=all | 선택 사항입니다 | 적용되지 않음 | 영향을 받는 구성 요소: - magento/module-elasticsearch |
+| 매그클라우드 | 배포 중 FPC를 사용할 수 없습니다. | 선택 사항 | 적용되지 않음 | 영향을 받는 구성 요소:<br> - magento/module-page-cache |
+| MCLOUD-5650 | 파일에서 읽은 후 배포 구성 보류 | 선택 사항 | 적용되지 않음 | 영향을 받는 구성 요소:<br> - magento/framework |
+| MCLOUD-5684 | 페이지 매김이 작동하지 않음 - product_list_limit=all | 선택 사항 | 적용되지 않음 | 영향을 받는 구성 요소: - magento/module-elasticsearch |
 | MCLOUD-5837 | 로드 밸런서 문제 해결 | 더 이상 사용되지 않음 | 적용됨 | 권장 교체: MC-1 <br> 영향을 받는 구성 요소: - magento/framework |
-| BUNDLE-2554 | 결제 정보 버그 설정 | 선택 사항입니다 | 적용되지 않음 | 영향을 받는 구성 요소: <br>- amzn/amazon-pay-module |
-| - | 문제 1 수정 | 선택 사항입니다 | 적용됨 | 영향을 받는 구성 요소: <br> - magento/module-cms |
-| - | 문제 2 수정 | 선택 사항입니다 | 적용되지 않음 | 영향을 받는 구성 요소: <br> - magento/module-cms |
-| - | 문제 3 수정 | 선택 사항입니다 | 적용되지 않음 | 필요한 패치:<br> - MC-2 <br>영향을 받는 구성 요소: <br>- magento/module-cms |
-| MC-3-V2 | 문제 3에 대한 수정 사항이 업데이트되어 MC-3 패치를 대체합니다. | 선택 사항입니다 | 해당 사항 없음 | 영향을 받는 구성 요소:  <br>- magento/module-cms |
+| BUNDLE-2554 | 결제 정보 버그 설정 | 선택 사항 | 적용되지 않음 | 영향을 받는 구성 요소: <br>- amzn/amazon-pay-module |
+| - | 문제 1 수정 | 선택 사항 | 적용됨 | 영향을 받는 구성 요소: <br> - magento/module-cms |
+| - | 문제 2 수정 | 선택 사항 | 적용되지 않음 | 영향을 받는 구성 요소: <br> - magento/module-cms |
+| - | 문제 3 수정 | 선택 사항 | 적용되지 않음 | 필요한 패치:<br> - MC-2 <br>영향을 받는 구성 요소: <br>- magento/module-cms |
+| MC-3-V2 | 문제 3에 대한 수정 사항이 업데이트되어 MC-3 패치를 대체합니다. | 선택 사항 | 해당 사항 없음 | 영향을 받는 구성 요소:  <br>- magento/module-cms |
 
 Adobe Commerce 2.3.5.
 
 상태 테이블에는 다음이 포함됩니다.
 
 - **유형**:
-   - `Optional` — 의 모든 패치 [!DNL Quality Patches Tool] 및 [Commerce on Cloud Infrastructure 안내서 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) 패키지는 Adobe Commerce 및 Magento Open Source 설치에 선택 사항입니다.
+   - `Optional` — 의 모든 패치 [!DNL Quality Patches Tool] 및 [Commerce on Cloud Infrastructure 안내서 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) 패키지는 Adobe Commerce 설치에 선택 사항입니다.
    - `Deprecated` — Adobe에서 개별 패치를 더 이상 사용하지 않습니다. 패치를 적용한 경우에는 되돌리는 것이 좋습니다. 되돌리기 작업도 상태 테이블에서 패치를 제거합니다.
 
 - **상태**:

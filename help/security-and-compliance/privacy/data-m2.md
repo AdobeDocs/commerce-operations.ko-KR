@@ -1,10 +1,10 @@
 ---
 title: 고객 개인 정보 참조(버전 2.x)
-description: Adobe Commerce 및 Magento Open Source 2.x에서 고객 개인 정보에 대한 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑에 대해 알아봅니다.
+description: Adobe Commerce 2.x에서 고객 개인 정보에 대한 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑에 대해 알아봅니다.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이는 Adobe Commerce 및 Magento Open Source 판매자와 개발자가 개인 정보 보호 규정 준수를 준비하는 데 도움이 되는 일련의 항목 중 하나입니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
+>이는 Adobe Commerce 판매자 및 개발자가 개인 정보 보호 규정 준수를 준비하는 데 도움이 되는 일련의 항목 중 하나입니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
 
 다음과 같은 개인 정보 보호 규정을 위한 준수 프로그램을 개발할 때 참조할 수 있도록 다음 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 사용하십시오.
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ### 프론트엔드 데이터 액세스 포인트
 
-Adobe Commerce 및 Magento Open Source은 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
+Adobe Commerce은 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
 
 ![프론트엔드 데이터 액세스 포인트](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,17 +44,17 @@ Adobe Commerce 및 Magento Open Source은 고객이 로그인하고 여러 페�
 
 ### 백엔드 데이터 액세스 포인트
 
-Adobe Commerce 및 Magento Open Source은 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고, 그리드를 클릭하여 자세한 정보를 확인하고, 기타 다양한 작업을 수행할 수 있습니다.
+Adobe Commerce은 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고 그리드를 클릭하여 자세한 정보를 확인하고 기타 다양한 작업을 수행합니다.
 
 ![백엔드 데이터 액세스 포인트](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## 데이터베이스 엔티티
 
-Adobe Commerce 및 Magento Open Source은 주로 고객, 주소, 주문, 견적 및 결제 테이블에 고객별 정보를 저장합니다. 다른 표에는 고객 ID에 대한 참조가 포함되어 있습니다.
+Adobe Commerce은 주로 고객, 주소, 주문, 견적 및 결제 테이블에 고객별 정보를 저장합니다. 다른 표에는 고객 ID에 대한 참조가 포함되어 있습니다.
 
 ### 고객 데이터
 
-Adobe Commerce 및 Magento Open Source은 다음 고객 속성을 저장하도록 구성할 수 있습니다.
+Adobe Commerce은 다음 고객 속성을 저장하도록 구성할 수 있습니다.
 
 - 생일
 - 이메일
@@ -119,7 +119,7 @@ Adobe Commerce 및 Magento Open Source은 다음 고객 속성을 저장하도�
 
 ### 주소 데이터
 
-Adobe Commerce 및 Magento Open Source은 다음 고객 속성을 저장합니다.
+Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 - 도시
 - 회사
@@ -295,7 +295,7 @@ Adobe Commerce 및 Magento Open Source은 다음 고객 속성을 저장합니�
 
 ### 초대 데이터
 
-고객이 비공개 판매 및 이벤트에 초대장을 보낼 수 있도록 Adobe Commerce 및 Magento Open Source을 구성할 수 있습니다.
+고객이 비공개 판매 및 이벤트에 초대장을 보낼 수 있도록 Adobe Commerce을 구성할 수 있습니다.
 
 #### `magento_invitation` 표
 

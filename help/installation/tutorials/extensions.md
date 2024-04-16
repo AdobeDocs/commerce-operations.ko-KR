@@ -2,20 +2,20 @@
 title: 확장 설치
 description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 확장을 설치합니다.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # 확장 설치
 
-Adobe Commerce 및 Magento Open Source 동작을 확장하거나 사용자 지정하는 코드를 확장이라고 합니다. 에서 확장을 선택적으로 패키징하고 배포할 수 있습니다. [Commerce Marketplace](https://marketplace.magento.com) 또는 다른 확장 배포 시스템입니다.
+Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장이라고 합니다. 에서 확장을 선택적으로 패키징하고 배포할 수 있습니다. [Commerce Marketplace](https://marketplace.magento.com) 또는 다른 확장 배포 시스템입니다.
 
 확장에는 다음이 포함됩니다.
 
-- 모듈(Adobe Commerce 및 Magento Open Source 기능 확장)
+- 모듈(Adobe Commerce 기능 확장)
 - 테마(상점 및 관리자의 모양 및 느낌 변경)
 - 언어 패키지(상점 및 관리자 현지화)
 

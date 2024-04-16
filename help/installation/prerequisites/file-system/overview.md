@@ -1,10 +1,10 @@
 ---
 title: 파일 소유권 및 권한
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치 작업 시 파일 시스템 권한의 중요성에 대해 알아봅니다.
+description: Adobe Commerce의 온-프레미스 설치 작업 시 파일 시스템 권한의 중요성에 대해 알아봅니다.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 >
 >파일 시스템 보안은 복잡하고 중요합니다. 설정할 권한 수준을 결정하기 전에 숙련된 시스템 관리자 또는 네트워크 관리자에게 문의하는 것이 좋습니다. 사용할 수 있는 메커니즘을 제공하지만 권한 전략을 작성하는 것은 사용자의 책임입니다.
 
-Adobe Commerce 및 Magento Open Source은 3비트 기본 마스크를 사용합니다. `002`. UNIX 기본값인 파일의 경우 666, 디렉토리의 경우 777에서 기본 마스크를 뺍니다.
+Adobe Commerce에서는 3비트 기본 마스크를 사용합니다. `002`. UNIX 기본값인 파일의 경우 666, 디렉토리의 경우 777에서 기본 마스크를 뺍니다.
 
 For example:
 
@@ -53,7 +53,7 @@ For example:
 
 ## 권한, 소유권 및 애플리케이션 모드
 
-다양한 Adobe Commerce 및 Magento Open Source 애플리케이션 모드를 사용할 때는 다양한 권한과 소유권을 사용하는 것이 좋습니다.
+다양한 Adobe Commerce 애플리케이션 모드를 사용할 때는 다양한 권한과 소유권을 사용하는 것이 좋습니다.
 
 - 기본값
 - 개발자

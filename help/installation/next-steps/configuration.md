@@ -1,11 +1,11 @@
 ---
 title: 애플리케이션 구성
-description: Adobe Commerce 및 Magento Open Source 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
+description: Adobe Commerce 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 UNIX 작업 스케줄러 cron 은 애플리케이션의 일상적인 작업에 매우 중요합니다. 리인덱싱, 뉴스레터, 이메일, 사이트 맵 등의 일정을 수립합니다. A *crontab* 는 cron 구성입니다.
 
-에서 Adobe Commerce 및 Magento Open Source 서비스를 설치해야 합니다 *crontab*&#x200B;또는 일부 핵심 기능(및 일부 타사 확장)이 제대로 작동하지 않습니다.
+에서 Adobe Commerce 서비스를 설치해야 합니다. *crontab*&#x200B;또는 일부 핵심 기능(및 일부 타사 확장)이 제대로 작동하지 않습니다.
 
 crontab을 제거하고 명령줄에서 cron을 실행하는 방법을 포함하여 cron에 대한 자세한 내용은 [cron 구성 및 실행](../../configuration/cli/configure-cron-jobs.md).
 
@@ -79,7 +79,7 @@ SELinux 사용 여부에 대한 권장 사항은 없습니다. 그러나 SELinux
 
 ### 전자 메일 서버 설정
 
-Adobe Commerce 및 Magento Open Source은 이메일 서버가 필요합니다. 특정 서버는 권장하지 않지만 다음 중 하나를 시도할 수 있습니다.
+Adobe Commerce에는 이메일 서버가 필요합니다. 특정 서버는 권장하지 않지만 다음 중 하나를 시도할 수 있습니다.
 
 * CentOS용 후위([Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS 설명서](https://www.centos.org))
 * Ubuntu용 후위([Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu 설명서](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Adobe Commerce 및 Magento Open Source은 이메일 서버가 필요합니다. �
 
 ### 메시지 대기열 설정
 
-버전 2.3.0부터 Adobe Commerce 및 Magento Open Source에 메시지 큐 기능이 포함되어 있습니다. 이전 버전에서는 Adobe Commerce에서만 사용할 수 있었습니다.
+버전 2.3.0 이후 Adobe Commerce에는 메시지 대기열 기능이 포함되었습니다. 이전 버전에서는 Adobe Commerce에서만 사용할 수 있었습니다.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

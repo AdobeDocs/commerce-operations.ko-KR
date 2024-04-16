@@ -1,11 +1,11 @@
 ---
 title: Elasticsearch에서 OpenSearch로 마이그레이션
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 사용되는 검색 엔진 교체에 대해 알아봅니다.
+description: Adobe Commerce의 온-프레미스 설치에 사용되는 검색 엔진 교체에 대해 알아봅니다.
 feature: Upgrade, Search
 exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 OpenSearch는 Elasticsearch의 라이센스 변경 후에 생성된 Elasticsearch 7.10.2의 오픈 소스 포크입니다.
 
-2.4.4, 2.4.3-p2 및 2.3.7-p3부터 Adobe Commerce 및 Magento Open Source은 OpenSearch를 지원합니다. 클라우드 인프라의 Adobe Commerce에 대해 더 이상 지원되지 않지만 온프레미스 설치는 Elasticsearch을 계속 지원합니다. 버전 2.4.6부터 OpenSearch에는 관리 구성 설정에 고유한 모듈과 필드가 있습니다.
+2.4.4, 2.4.3-p2 및 2.3.7-p3부터 Adobe Commerce은 OpenSearch를 지원합니다. 클라우드 인프라의 Adobe Commerce에 대해 더 이상 지원되지 않지만 온프레미스 설치는 Elasticsearch을 계속 지원합니다. 버전 2.4.6부터 OpenSearch에는 관리 구성 설정에 고유한 모듈과 필드가 있습니다.
 
 ## 마이그레이션 경로
 

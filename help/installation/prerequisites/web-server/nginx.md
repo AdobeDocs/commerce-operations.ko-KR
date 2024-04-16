@@ -1,10 +1,10 @@
 ---
 title: Ngix
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Nginx 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 설치를 위한 Nginx 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.or
 
 ## 우분투
 
-다음 섹션에서는 nginx, PHP 및 MySQL을 사용하여 Ubuntu에 Adobe Commerce 및 Magento Open Source 2.x를 설치하는 방법에 대해 설명합니다.
+다음 섹션에서는 nginx, PHP 및 MySQL을 사용하여 Ubuntu에 Adobe Commerce 2.x를 설치하는 방법에 대해 설명합니다.
 
 ### nginx 설치
 
@@ -31,7 +31,7 @@ sudo apt -y install nginx
 
 ### php-fpm 설치 및 구성
 
-Adobe Commerce 및 Magento Open Source에 여러 개 필요 [확장 프로그램](../php-settings.md) 제대로 작동합니다. 이러한 확장 외에도 를 설치하고 구성해야 합니다. `php-fpm` nginx를 사용하는 경우 확장명.
+Adobe Commerce에는 여러 항목이 필요합니다 [확장 프로그램](../php-settings.md) 제대로 작동합니다. 이러한 확장 외에도 를 설치하고 구성해야 합니다. `php-fpm` nginx를 사용하는 경우 확장명.
 
 설치 및 구성 `php-fpm`:
 
@@ -65,7 +65,7 @@ Adobe Commerce 및 Magento Open Source에 여러 개 필요 [확장 프로그램
 
    >[!NOTE]
    >
-   >Adobe Commerce 및 Magento Open Source을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 을(를) 참조하십시오 [필수 PHP 설정](../php-settings.md) 추가 정보.
+   >Adobe Commerce을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 을(를) 참조하십시오 [필수 PHP 설정](../php-settings.md) 추가 정보.
 
 1. 저장하고 편집기를 종료합니다.
 
@@ -81,7 +81,7 @@ Adobe Commerce 및 Magento Open Source에 여러 개 필요 [확장 프로그램
 
 ### 설치 및 구성
 
-Adobe Commerce 및 Magento Open Source을 다운로드하는 방법에는 다음과 같은 몇 가지가 있습니다.
+Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가지가 있습니다.
 
 * [Composer 메타패키지 가져오기](../../composer.md)
 
@@ -235,7 +235,7 @@ Adobe Commerce 및 Magento Open Source을 다운로드하는 방법에는 다음
 
 ## 센트OS 7
 
-다음 섹션에서는 nginx, PHP 및 MySQL을 사용하여 CentOS 7에 Adobe Commerce 및 Magento Open Source 2.x를 설치하는 방법을 설명합니다.
+다음 섹션에서는 nginx, PHP 및 MySQL을 사용하여 CentOS 7에 Adobe Commerce 2.x를 설치하는 방법을 설명합니다.
 
 ### nginx 설치
 
@@ -261,7 +261,7 @@ systemctl enable nginx
 
 ### php-fpm 설치 및 구성
 
-Adobe Commerce 및 Magento Open Source에 여러 개 필요 [PHP](../php-settings.md) 확장이 제대로 작동합니다. 이러한 확장 외에도 를 설치하고 구성해야 합니다. `php-fpm` nginx를 사용하는 경우 확장명.
+Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 확장이 제대로 작동합니다. 이러한 확장 외에도 를 설치하고 구성해야 합니다. `php-fpm` nginx를 사용하는 경우 확장명.
 
 1. 설치 `php-fpm`:
 
@@ -360,7 +360,7 @@ Adobe Commerce 및 Magento Open Source에 여러 개 필요 [PHP](../php-setting
 
 ### 설치 및 구성
 
-Adobe Commerce 및 Magento Open Source을 다운로드하는 방법에는 다음과 같은 몇 가지가 있습니다.
+Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가지가 있습니다.
 
 * [Composer 메타패키지 가져오기](../../composer.md)
 

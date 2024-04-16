@@ -2,22 +2,22 @@
 title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 업그레이드 계획에 대한 권장 읽기를 검토합니다.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 # 업그레이드 계획에 대한 권장 읽기
 
-이 페이지의 리소스를 사용하여 Adobe Commerce 및 Magento Open Source 업그레이드에 대해 계속 학습합니다.
+이 페이지의 리소스를 사용하여 Adobe Commerce 업그레이드에 대해 계속 학습합니다.
 
 <table>
   <tbody>
     <tr>
       <td><strong>릴리스 노트 및 공지</strong>
-        <p>제품 전략, 보안, 버그 수정 및 알려진 문제를 포함하여 Adobe Commerce 및 Magento Open Source의 최신 개발에 대해 알아봅니다.</p>
+        <p>제품 전략, 보안, 버그 수정 및 알려진 문제 등 Adobe Commerce의 최신 개발 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe 블로그</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
@@ -28,7 +28,7 @@ ht-degree: 2%
           </ul>
         </td>
       <td><strong>도구</strong>
-        <p>Adobe Commerce 및 Magento Open Source 소프트웨어를 더 쉽게 찾고 사용할 수 있도록 설계된 도구를 찾아봅니다.</p>
+        <p>Adobe Commerce 소프트웨어를 더 쉽게 찾고 사용할 수 있도록 설계된 도구를 찾아봅니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">호환성 도구 PhpStorm 플러그인 업그레이드</a> (비디오)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">업그레이드 호환성 도구</a></li>
@@ -39,7 +39,7 @@ ht-degree: 2%
     </tr>
     <tr>
       <td><strong>캘린더 및 정책</strong>
-        <p>Adobe Commerce 및 Magento Open Source 릴리스 및 정책에 대한 세부 사항을 검토합니다.</p>
+        <p>Adobe Commerce 릴리스 및 정책에 대한 세부 사항을 검토합니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce 소프트웨어 지원 종료 FAQ</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace 정책</a></li>
@@ -50,7 +50,7 @@ ht-degree: 2%
           </ul>
         </td>
       <td><strong>기능 및 독립 서비스</strong>
-        <p>Adobe Commerce 및 Magento Open Source 확장으로 사용할 수 있는 혁신적인 상거래 서비스 및 이를 얻을 수 있는 위치를 살펴보십시오.</p>
+        <p>Adobe Commerce 확장으로 사용할 수 있는 혁신적인 Commerce 서비스와 이를 얻을 수 있는 위치를 살펴보십시오.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">라이브 검색</a></li>

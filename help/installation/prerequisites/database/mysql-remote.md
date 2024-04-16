@@ -1,10 +1,10 @@
 ---
 title: 원격 MySQL 데이터베이스 연결 설정
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 대한 원격 데이터베이스 연결을 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 설치에 대한 원격 데이터베이스 연결을 구성하려면 다음 단계를 따르십시오.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 데이터베이스 서버와 웹 서버를 동일한 컴퓨터에서 실행하는 대신 별도의 서버에서 데이터베이스를 호스팅할 수도 있습니다.
 
-Adobe이 다른 컴퓨터의 MySQL 서버에 연결하는 방법을 제공했습니다. Adobe Commerce 및 Magento Open Source 2.4.3부터는 코드 변경 없이 Amazon Web Services(AWS) Aurora 데이터베이스를 사용하도록 애플리케이션을 구성할 수도 있습니다.
+Adobe이 다른 컴퓨터의 MySQL 서버에 연결하는 방법을 제공했습니다. Adobe Commerce 2.4.3부터는 코드 변경 없이 Amazon Web Services(AWS) Aurora 데이터베이스를 사용하도록 애플리케이션을 구성할 수도 있습니다.
 
 Aurora는 AWS에서 호스팅되는 고성능 완전 준수 MySQL 서버입니다.
 
 ## AWS Aurora 데이터베이스에 연결
 
-Aurora를 데이터베이스로 사용하는 것은 기본 데이터베이스 커넥터를 사용하여 일반 Adobe Commerce 및 Magento Open Source 설정 구성에서 데이터베이스를 지정하는 것만큼 쉽습니다.
+Aurora를 데이터베이스로 사용하는 것은 기본 데이터베이스 커넥터를 사용하여 일반 Adobe Commerce 설정 구성에서 데이터베이스를 지정하는 것만큼 쉽습니다.
 
 실행 시 `bin/magento setup:install`, 의 Aurora 정보 사용 `db-` 필드:
 

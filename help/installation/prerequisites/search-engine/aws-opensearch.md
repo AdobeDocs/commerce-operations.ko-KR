@@ -1,18 +1,18 @@
 ---
 title: AWS OpenSearch
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치에 대한 AWS OpenSearch 웹 서비스를 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 설치에 대한 AWS OpenSearch 웹 서비스를 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # AWS OpenSearch
 
-Adobe Commerce 및 Magento Open Source 2.4.5는 Amazon OpenSearch Service 클러스터 사용을 지원합니다. 이 서비스는 Amazon Elasticsearch 서비스의 후속 서비스입니다. 이 항목에서는 AWS OpenSearch를 사용하도록 Commerce를 구성하는 방법과 로컬 Elasticsearch 또는 OpenSearch 인스턴스에서 AWS OpenSearch 클러스터로 데이터를 마이그레이션하는 방법에 대해 설명합니다.
+Adobe Commerce 2.4.5는 Amazon OpenSearch Service 클러스터 사용을 지원합니다. 이 서비스는 Amazon Elasticsearch 서비스의 후속 서비스입니다. 이 항목에서는 AWS OpenSearch를 사용하도록 Commerce을 구성하는 방법 및 로컬 Elasticsearch 또는 OpenSearch 인스턴스에서 AWS OpenSearch 클러스터로 데이터를 마이그레이션하는 방법에 대해 설명합니다.
 
 ## AWS OpenSearch 서비스 도메인 만들기
 

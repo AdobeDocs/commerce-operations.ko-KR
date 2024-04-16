@@ -1,11 +1,11 @@
 ---
 title: 캐싱 구성
-description: 캐싱과 Adobe Commerce 및 Magento Open Source 애플리케이션에 대한 캐시 메커니즘을 구성하는 방법에 대해 알아봅니다.
+description: 캐싱과 Adobe Commerce 애플리케이션에 대한 캐시 메커니즘을 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 - 제공된 항목 수정 `default` 캐시 프론트엔드—
 
-  다음 항목만 수정합니다. `<magento_root>/app/etc/di.xml` 상거래 애플리케이션의 전역 종속성 삽입 구성입니다.
+  다음 항목만 수정합니다. `<magento_root>/app/etc/di.xml` Commerce 애플리케이션의 전역 종속성 삽입 구성입니다.
 
 - 사용자 지정 캐시 프론트엔드 구성—
 

@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce 소프트웨어 다운로드
-description: Adobe Commerce 및 Magento Open Source 소프트웨어를 다운로드하는 방법을 알아봅니다.
+description: Adobe Commerce 소프트웨어를 다운로드하는 방법을 알아봅니다.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---

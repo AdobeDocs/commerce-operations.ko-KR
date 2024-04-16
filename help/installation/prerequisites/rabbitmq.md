@@ -1,10 +1,10 @@
 ---
 title: 메시지 브로커
-description: '다음 단계에 따라 필요한 메시지 브로커 소프트웨어(예: [!DNL RabbitMQ]) Adobe Commerce 및 Magento Open Source의 온-프레미스 설치용'
+description: '다음 단계에 따라 필요한 메시지 브로커 소프트웨어(예: [!DNL RabbitMQ]) Adobe Commerce의 온-프레미스 설치용'
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -55,11 +55,11 @@ sudo apt install -y rabbitmq-server
 
 다음 [!DNL RabbitMQ] 서버는 CentOS에 포함되어 있지만 버전은 오래된 경우가 많습니다. [!DNL RabbitMQ] 는 웹 사이트에서 패키지를 설치할 것을 권장합니다.
 
-다음을 참조하십시오. [!DNL RabbitMQ] 지원되는 최신 버전을 보려면 페이지를 설치하십시오. Adobe Commerce 및 Magento Open Source 2.3 및 2.4 지원 [!DNL RabbitMQ] 3.8.x
+다음을 참조하십시오. [!DNL RabbitMQ] 지원되는 최신 버전을 보려면 페이지를 설치하십시오. Adobe Commerce 2.3 및 2.4 지원 [!DNL RabbitMQ] 3.8.x
 
 을(를) 참조하십시오 [RPM 기반 Linux에 설치](https://www.rabbitmq.com/install-rpm.html) 추가 정보.
 
-## Configure [!DNL RabbitMQ]
+## 구성 [!DNL RabbitMQ]
 
 공식 검토 [!DNL RabbitMQ] 구성 및 관리 설명서 [!DNL RabbitMQ]. 다음 항목에 주의하십시오.
 

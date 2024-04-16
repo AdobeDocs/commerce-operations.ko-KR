@@ -2,16 +2,16 @@
 title: 릴리스 정책
 description: 부, 패치, 보안 패치, 기능, 핫픽스, 개별 패치 및 사용자 정의 패치를 포함한 다양한 유형의 Adobe Commerce 릴리스에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce 릴리스 정책
 
-Adobe Commerce 및 Magento Open Source 사용 [시맨틱 버전 관리](https://semver.org/) 개별 모듈 수준에서(예: `magento/framework 101.1.1`)를 사용할 수 있지만 마케팅 버전 번호에는 사용할 수 없습니다. For example:
+Adobe Commerce 사용 [시맨틱 버전 관리](https://semver.org/) 개별 모듈 수준에서(예: `magento/framework 101.1.1`)를 사용할 수 있지만 마케팅 버전 번호에는 사용할 수 없습니다. For example:
 
 - **주요 릴리스**- 2
 - **마이너 릴리스**—2.4

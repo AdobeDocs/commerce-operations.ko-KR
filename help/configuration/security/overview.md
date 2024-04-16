@@ -1,11 +1,11 @@
 ---
 title: 보안 개요
-description: Adobe Commerce 및 Magento Open Source 애플리케이션의 보안 설정에 대한 간략한 개요를 읽어 보십시오.
+description: Adobe Commerce 애플리케이션의 보안 설정에 대한 간략한 개요를 읽어 보십시오.
 feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 ## 보안 리소스
 
-구성 안내서의 보안 섹션에 있는 항목은 모든 상거래 기능에 대해 포괄적이지 않습니다. 다른 Commerce 안내서에는 다음과 같은 중요한 보안 관련 주제가 많이 있습니다.
+구성 안내서의 보안 섹션에 있는 항목이 모든 Commerce 기능에 대해 포괄적이지는 않습니다. 다른 Commerce 안내서에는 다음과 같은 중요한 보안 관련 주제가 많이 있습니다.
 
-- [PHP 개발자 안내서](https://developer.adobe.com/commerce/php/development/security/) Adobe Commerce 및 Magento Open Source 개발자가 빌드하는 구성 요소의 보안을 향상시키는 데 사용할 수 있는 정보의 경우.
+- [PHP 개발자 안내서](https://developer.adobe.com/commerce/php/development/security/) Adobe Commerce 개발자가 빌드하는 구성 요소의 보안을 향상시키는 데 사용할 수 있는 정보입니다.
 - [보안 및 규정 준수 안내서](https://devdocs.magento.com/security/security-and-compliance.html) 보안, 개인 정보 및 규정 준수에 대한 정보(기술 리소스 링크 포함)입니다.
 
 구성 안내서에 한 번에 포함되었던 여러 보안 관련 주제가 이제 다음 안내서에 나와 있습니다.

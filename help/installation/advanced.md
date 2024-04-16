@@ -1,10 +1,10 @@
 ---
 title: 고급 온-프레미스 설치
-description: 소유한 인프라의 Adobe Commerce 또는 Magento Open Source에 대한 고급 설치 시나리오에 대해 알아봅니다.
+description: 소유한 인프라의 Adobe Commerce에 대한 고급 설치 시나리오에 대해 알아봅니다.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 명령줄 인터페이스(CLI)
 
-Adobe Commerce 및 Magento Open Source에는 설치 및 구성 작업을 위한 단일 명령줄 인터페이스가 있습니다. `<magento_root>/bin/magento`. 인터페이스는 다음을 포함하여 여러 작업을 수행합니다.
+Adobe Commerce에는 설치 및 구성 작업을 위한 단일 명령줄 인터페이스가 있습니다. `<magento_root>/bin/magento`. 인터페이스는 다음을 포함하여 여러 작업을 수행합니다.
 
 * 설치(및 관련 작업(예: 데이터베이스 스키마 생성 또는 업데이트, 배포 구성 만들기)
 * 캐시를 지우는 중입니다.

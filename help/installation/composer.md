@@ -2,18 +2,18 @@
 title: 온프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # 온프레미스 설치 빠른 시작
 
-이 페이지의 지침은에 Adobe Commerce 및 Magento Open Source을 설치하는 방법을 설명합니다. [자체 호스팅](../implementation-playbook/infrastructure/self-hosting/overview.md) 인프라. 기존 설치 업그레이드에 대한 지침은 [_업그레이드 안내서_](../upgrade/overview.md).
+이 페이지의 지침은에 Adobe Commerce을 설치하는 방법을 설명합니다. [자체 호스팅](../implementation-playbook/infrastructure/self-hosting/overview.md) 인프라. 기존 설치 업그레이드에 대한 지침은 [_업그레이드 안내서_](../upgrade/overview.md).
 
-Adobe 사용 [작성기](https://getcomposer.org/) Adobe Commerce 및 Magento Open Source 구성 요소와 해당 종속성을 관리합니다. Composer를 사용하여 Adobe Commerce 및 Magento Open Source 메타 패키지를 가져오면 다음과 같은 이점이 있습니다.
+Adobe 사용 [작성기](https://getcomposer.org/) Adobe Commerce 구성 요소 및 해당 종속성을 관리합니다. Composer를 사용하여 Adobe Commerce 메타패키지를 가져오면 다음과 같은 이점이 있습니다.
 
 - 소스 코드로 번들로 묶지 않고 타사 라이브러리 재사용
 - 강력한 종속성 관리 기능을 갖춘 구성 요소 기반 아키텍처를 사용하여 확장 충돌 및 호환성 문제 감소
@@ -31,7 +31,7 @@ Adobe 사용 [작성기](https://getcomposer.org/) Adobe Commerce 및 Magento Op
 
 - 모두 완료 [전제 조건 작업](system-requirements.md).
 - [Composer 설치](https://getcomposer.org/download/).
-- Get [인증 키](prerequisites/authentication-keys.md) Adobe Commerce 및 Magento Open Source 작성기 저장소로 이동합니다.
+- Get [인증 키](prerequisites/authentication-keys.md) Adobe Commerce Composer 리포지토리에 매핑됩니다.
 
 ## 파일 시스템 소유자로 로그인
 

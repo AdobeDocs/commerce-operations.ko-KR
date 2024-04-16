@@ -3,9 +3,9 @@ title: 니스 설치
 description: Varnish 설치에 대한 조언을 참조하십시오.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Varnish 소프트웨어를 설치하는 것은 이 안내서의 범위를 벗어
 varnishd -V
 ```
 
-다음을 확인합니다. [Adobe Commerce 및 Magento Open Source 지원](../../installation/system-requirements.md) 계속하기 전에 설치된 Vannish 버전. 지원되지 않는 버전을 실행 중인 경우 지원되는 버전으로 업그레이드해야 합니다. 자세한 내용은 Varnish 설치 설명서를 참조하십시오.
+다음을 확인합니다. [Adobe Commerce 지원](../../installation/system-requirements.md) 계속하기 전에 설치된 Vannish 버전. 지원되지 않는 버전을 실행 중인 경우 지원되는 버전으로 업그레이드해야 합니다. 자세한 내용은 Varnish 설치 설명서를 참조하십시오.

@@ -1,10 +1,10 @@
 ---
 title: 샘플 데이터 모듈 제거 또는 업데이트
-description: 다음 단계에 따라 Adobe Commerce 및 Magento Open Source 샘플 데이터 모듈을 관리합니다.
+description: Adobe Commerce 샘플 데이터 모듈을 관리하려면 다음 단계를 따르십시오.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ bin/magento sampledata:remove
 
 샘플 데이터 모듈의 전체 목록은 다음과 같습니다.
 
-Adobe Commerce 및 Magento Open Source:
-
 * `magento/module-bundle-sample-data`
 * `magento/module-catalog-rule-sample-data`
 * `magento/module-catalog-sample-data`
@@ -50,14 +48,6 @@ Adobe Commerce 및 Magento Open Source:
 * `magento/module-widget-sample-data`
 * `magento/module-wishlist-sample-data`
 * `magento/sample-data-media`
-
-Adobe Commerce만:
-
-* `magento/module-customer-balance-sample-data`
-* `magento/module-gift-card-sample-data`
-* `magento/module-gift-registry-sample-data`
-* `magento/module-multiple-wishlist-sample-data`
-* `magento/module-target-rule-sample-data`
 
 ## 샘플 데이터 업데이트 준비
 

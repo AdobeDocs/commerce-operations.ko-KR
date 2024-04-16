@@ -2,9 +2,9 @@
 title: Adobe Commerce 설치
 description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2102'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 | `--db-name` | 데이터베이스 테이블을 설치할 데이터베이스 인스턴스의 이름입니다.<br><br>기본값은 입니다 `magento2`. | 예 |
 | `--db-user` | 데이터베이스 인스턴스 소유자의 사용자 이름.<br><br>기본값은 입니다 `root`. | 예 |
 | `--db-password` | 데이터베이스 인스턴스 소유자의 암호입니다. | 예 |
-| `--db-prefix` | Adobe Commerce 또는 Magento Open Source 테이블이 이미 있는 데이터베이스 인스턴스에 데이터베이스 테이블을 설치하는 경우에만 사용합니다.<br><br>이 경우 접두사를 사용하여 이 설치에 사용할 테이블을 식별합니다. 일부 고객은 모든 테이블이 동일한 데이터베이스에 있는 서버에서 두 개 이상의 Adobe Commerce 및 Magento Open Source 인스턴스를 실행하고 있습니다.<br><br>접두사는 최대 5자까지 사용할 수 있습니다. 문자로 시작해야 하며 문자, 숫자 및 밑줄 문자만 포함할 수 있습니다.<br><br>이 옵션을 사용하면 두 개 이상의 설치에서 데이터베이스 서버를 공유할 수 있습니다. | 아니요 |
+| `--db-prefix` | Adobe Commerce 또는 Magento Open Source 테이블이 이미 있는 데이터베이스 인스턴스에 데이터베이스 테이블을 설치하는 경우에만 사용합니다.<br><br>이 경우 접두사를 사용하여 이 설치에 사용할 테이블을 식별합니다. 일부 고객은 동일한 데이터베이스에 있는 모든 테이블이 있는 서버에서 두 개 이상의 Adobe Commerce 인스턴스를 실행하고 있습니다.<br><br>접두사는 최대 5자까지 사용할 수 있습니다. 문자로 시작해야 하며 문자, 숫자 및 밑줄 문자만 포함할 수 있습니다.<br><br>이 옵션을 사용하면 두 개 이상의 설치에서 데이터베이스 서버를 공유할 수 있습니다. | 아니요 |
 | `--db-ssl-key` | 클라이언트 키 경로. | 아니요 |
 | `--db-ssl-cert` | 클라이언트 인증서 경로. | 아니요 |
 | `--db-ssl-ca` | 서버 인증서 경로. | 아니요 |
@@ -161,7 +161,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 |--- |--- |--- |
 | `--lock-provider` | 공급자 이름 잠금<br><br>사용 가능한 잠금 공급자: `db`, `zookeeper`, `file`.<br><br>기본 잠금 공급자: `db` | 아니요 |
 | `--lock-db-prefix` | 을 사용할 때 잠금 충돌을 방지하기 위한 특정 DB 접두사 `db` 공급자 잠금.<br><br>기본값: `NULL` | 아니요 |
-| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>For example: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
+| `--lock-zookeeper-host` | 를 사용할 때 Zookeeper 클러스터에 연결할 호스트 및 포트 `zookeeper` 공급자 잠금.<br><br>예: `127.0.0.1:2181` | 예, 다음을 설정하면 `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Zookeeper가 잠금을 저장하는 경로입니다.<br><br>기본 경로는 다음과 같습니다. `/magento/locks` | 아니요 |
 | `--lock-file-path` | 파일 잠금이 저장되는 경로입니다. | 예, 다음을 설정하면 `--lock-provider=file` |
 

@@ -2,9 +2,9 @@
 title: 유지 관리 모드 활성화 또는 비활성화
 description: 유지 관리를 위해 Adobe Commerce 또는 Magento Open Source 배포가 중단될 때 고객이 볼 수 있는 내용을 사용자 지정하려면 다음 단계를 따르십시오.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 안내서는 표준 유지 관리 모드 페이지를 참조합니다. 사용자 지정 유지 관리 페이지를 사용해야 하는 경우 [사용자 지정 유지 관리 페이지 만들기](../../upgrade/troubleshooting/maintenance-mode-options.md) 주제.
 
-Adobe Commerce 및 Magento Open Source 사용 [유지 관리 모드](../../configuration/bootstrap/application-modes.md#maintenance-mode) 부트스트래핑을 비활성화합니다. 부트스트래핑을 비활성화하는 것은 사이트를 유지 관리, 업그레이드 또는 재구성하는 동안 유용합니다.
+Adobe Commerce 사용 [유지 관리 모드](../../configuration/bootstrap/application-modes.md#maintenance-mode) 부트스트래핑을 비활성화합니다. 부트스트래핑을 비활성화하는 것은 사이트를 유지 관리, 업그레이드 또는 재구성하는 동안 유용합니다.
 
 애플리케이션은 다음과 같이 유지 관리 모드를 감지합니다.
 

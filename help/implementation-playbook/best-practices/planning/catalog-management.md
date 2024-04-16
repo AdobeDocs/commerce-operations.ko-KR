@@ -3,13 +3,13 @@ title: 카탈로그 관리 우수 사례
 description: 장바구니 제한 및 제품 속성 구성, 페이지 매김, 옵션, 프로모션 및 변형을 나열하는 데 대한 권장 사항에 대해 알아봅니다.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # 카탈로그 관리 우수 사례
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 장바구니 제한
 
-최상의 성능을 얻으려면 다음 지침을 사용하여 Adobe Commerce 및 Magento Open Source에 대한 장바구니 제한을 관리하십시오.
+최상의 성능을 얻으려면 다음 지침을 사용하여 Adobe Commerce에 대한 장바구니 제한을 관리하십시오.
 
 ### 영향을 받는 제품 및 버전
 
@@ -262,4 +262,3 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 - 미니 마트를 로드하고 렌더링하는 데 시간이 늘어났습니다.
 - 장바구니 페이지를 렌더링하는 데 시간이 늘어났습니다.
 - 렌더링 시간 증가 **총계** 체크아웃 페이지에서 을(를) 차단합니다.
-

@@ -1,18 +1,18 @@
 ---
 title: 검색 엔진 사전 요구 사항
-description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 지원되는 검색 엔진 소프트웨어를 설치하고 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온프레미스 설치에 지원되는 검색 엔진 소프트웨어를 설치하고 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # 검색 엔진 사전 요구 사항
 
-Adobe Commerce 및 Magento Open Source 2.4부터 모든 설치는 를 사용하도록 구성해야 합니다 [Elasticsearch](https://www.elastic.co) 또는 [OpenSearch](https://opensearch.org/) 를 카탈로그 검색 솔루션으로 사용하십시오.
+Adobe Commerce 2.4부터 모든 설치는 를 사용하도록 구성해야 합니다 [Elasticsearch](https://www.elastic.co) 또는 [OpenSearch](https://opensearch.org/) 를 카탈로그 검색 솔루션으로 사용하십시오.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 
 앞의 다이어그램은 다음과 같습니다.
 
-* 상거래 애플리케이션과 검색 엔진은 다른 호스트에 설치됩니다.
+* Commerce 애플리케이션과 검색 엔진은 다른 호스트에 설치됩니다.
 
   별도의 호스트에서 실행하려면 프록시가 필요합니다. (검색 엔진 클러스터링은 이 안내서에서 다루지 않지만 자세한 내용은 [Elasticsearch 클러스터링 설명서](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * 각 호스트에는 자체 웹 서버가 있습니다. 웹 서버는 동일하지 않아도 됩니다.
 
-  예를 들어 상거래 애플리케이션은 Apache를 실행할 수 있으며 검색 엔진은 nginx를 실행할 수 있습니다.
+  예를 들어 Commerce 애플리케이션은 Apache를 실행할 수 있으며 검색 엔진은 nginx를 실행할 수 있습니다.
 
 * 두 웹 서버 모두 전송 계층 보안(TLS)을 사용합니다.
 
@@ -53,7 +53,7 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 
 검색 요청은 다음과 같이 처리됩니다.
 
-1. 사용자의 검색 요청은 Commerce 웹 서버에 의해 수신되며, 이 서버는 검색 엔진 서버에 이를 전달합니다.
+1. 사용자로부터 검색 요청을 Commerce 웹 서버가 수신하고 이를 검색 엔진 서버에 전달합니다.
 
    프록시의 호스트 및 포트에 연결하도록 검색 엔진을 구성합니다. 웹 서버의 SSL 포트(기본적으로 443)가 권장됩니다.
 

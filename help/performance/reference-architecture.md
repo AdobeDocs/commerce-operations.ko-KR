@@ -1,17 +1,17 @@
 ---
 title: 참조 아키텍처
-description: Adobe Commerce 및 Magento Open Source 배포에 대한 권장 참조 아키텍처의 다이어그램을 검토합니다.
+description: Adobe Commerce 배포에 권장되는 참조 아키텍처의 다이어그램을 검토합니다.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # 참조 아키텍처
 
-이 항목에서는 리소스가 다른 사용자와 공유되지 않는 데이터 센터(가상화되지 않음)에서 물리적으로 호스팅되는 일반 서버를 사용하는 Adobe Commerce 및 Magento Open Source 인스턴스에 대한 일반적인 권장 설정 방법에 대해 설명합니다. 호스팅 공급자는 특히 상거래 고성능 호스팅을 전문으로 하는 경우 요구 사항에 동등하거나 더 효과적인 다른 설정을 추천할 수 있습니다.
+이 항목에서는 리소스가 다른 사용자와 공유되지 않는 데이터 센터(가상화되지 않음)에서 물리적으로 호스팅되는 일반 서버를 사용하는 Adobe Commerce 인스턴스에 대한 일반적인 권장 설정 방법에 대해 설명합니다. 호스팅 공급자, 특히 Commerce 고성능 호스팅을 전문으로 하는 경우 요구 사항에 따라 동일하거나 더 효과적인 다른 설정을 추천할 수 있습니다.
 
 클라우드 인프라 환경의 Adobe Commerce은 다음을 참조하십시오. [스타터 아키텍처](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 * 회색 요소는 Magento Open Source 시 선택 사항입니다
 * 파란색 요소는 Adobe Commerce에서 선택 사항입니다
 
-![상거래 참조 아키텍처 다이어그램](../assets/performance/images/ref-architecture-2.3.png)
+![Commerce 참조 아키텍처 다이어그램](../assets/performance/images/ref-architecture-2.3.png)
 
 다음 섹션에서는 Commerce 참조 아키텍처 다이어그램의 각 섹션에 대한 권장 사항과 고려 사항을 제공합니다.
 

@@ -2,9 +2,9 @@
 title: 업그레이드 범위 이해
 description: Adobe Commerce, Magento Open Source 사용자 지정 모듈 또는 서드파티 확장에 영향을 줄 수 있는 릴리스의 이전 버전과 호환되지 않는 변경 사항에 대해 알아봅니다.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 이전 버전과 호환 불가능한 변경 사항
 
-Adobe Commerce 및 Magento Open Source 릴리스에는 이전 버전과 호환되지 않는 변경 사항이 포함될 수 있습니다. 이전 버전과 호환 불가능한 변경 사항 설명서를 검토하고 다음을 참조하십시오.
+Adobe Commerce 릴리스에는 이전 버전과 호환 불가능한 변경 사항이 포함될 수 있습니다. 이전 버전과 호환 불가능한 변경 사항 설명서를 검토하고 다음을 참조하십시오.
 
 - **[주요 변경 사항 하이라이트](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—중요한 영향을 미치는 변경 사항으로, 서드파티 모듈이 계속 작동할 수 있도록 자세한 설명과 특수 지침이 필요합니다.
 - **[사소한 변경 참조](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**—클래스, API 멤버십, 데이터베이스, 종속성 삽입, 인터페이스, 레이아웃, 시스템 및 XSD에 대한 사소한 변경 사항을 설명하는 코드 베이스에서 생성된 참조 설명서입니다.

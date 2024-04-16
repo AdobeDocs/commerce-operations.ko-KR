@@ -1,10 +1,10 @@
 ---
 title: Apache
-description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치용 Apache 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Adobe Commerce은 Apache 2.4.x를 지원합니다.
 
 이 항목에서는 Apache 2.4 재작성을 활성화하고 의 설정을 지정하는 방법에 대해 설명합니다. [분산 구성 파일, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce 및 Magento Open Source 사용 서버 재작성 및 `.htaccess` 를 사용하여 Apache에 디렉터리 수준 지침을 제공할 수 있습니다. 이 항목의 다른 모든 섹션에도 다음 지침이 포함되어 있습니다.
+Adobe Commerce은 서버 재작성 및 `.htaccess` 를 사용하여 Apache에 디렉터리 수준 지침을 제공할 수 있습니다. 이 항목의 다른 모든 섹션에도 다음 지침이 포함되어 있습니다.
 
 이 섹션을 사용하여 Apache 2.4 재작성을 활성화하고 다음에 대한 설정을 지정합니다. [분산 구성 파일, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce 및 Magento Open Source 사용 서버 재작성 및 `.htaccess` 를 사용하여 Apache에 디렉터리 수준 지침을 제공할 수 있습니다.
+Adobe Commerce은 서버 재작성 및 `.htaccess` 를 사용하여 Apache에 디렉터리 수준 지침을 제공할 수 있습니다.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Adobe Commerce 및 Magento Open Source 사용 서버 재작성 및 `.htaccess` �
 
 ## Apache 필수 모듈
 
-Adobe Commerce 및 Magento Open Source을 사용하려면 다음 Apache 모듈을 설치해야 합니다.
+Adobe Commerce을 사용하려면 다음 Apache 모듈이 설치되어 있어야 합니다.
 
 - [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 - [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -184,7 +184,7 @@ Apache 2.4로 업그레이드하려면 다음을 수행하십시오.
 
 ## CentOS에 Apache 설치
 
-Adobe Commerce 및 Magento Open Source은 Apache에서 서버를 다시 작성해야 합니다. 또한 사용할 수 있는 지시문 유형도 지정해야 합니다 `.htaccess`: 애플리케이션에서 재작성 규칙을 지정하는 데 사용합니다.
+Adobe Commerce은 Apache 서버 재쓰기가 필요합니다. 또한 사용할 수 있는 지시문 유형도 지정해야 합니다 `.htaccess`: 애플리케이션에서 재작성 규칙을 지정하는 데 사용합니다.
 
 Apache 설치 및 구성은 기본적으로 소프트웨어를 설치하고, 재작성을 활성화하고, 을 지정하는 3단계 프로세스입니다 `.htaccess` 지시문입니다.
 

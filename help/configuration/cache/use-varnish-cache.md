@@ -3,24 +3,24 @@ title: 바니시로 캐시 지우기
 description: 캐시 지우기가 Varnish에서 작동하는 방식과 Adobe Commerce 애플리케이션의 웹 캐싱 가속기로 사용하는 방법을 알아봅니다.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # 바니시로 캐시 지우기
 
-이 항목에서는 Adobe Commerce 및 Magento Open Source용 웹 캐싱 가속기로 Varnish를 사용하는 기본 사항에 대해 설명합니다.
+이 항목에서는 Adobe Commerce용 웹 캐싱 가속기로 Varnish를 사용하는 기본 사항에 대해 설명합니다.
 
 ## 니스 삭제
 
 에 따르면 [니스 설명서](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;a *삭제* 캐시에서 개체를 선택하여 변형과 함께 버리면 어떤 일이 발생합니까?&quot; 바니시 제거는 캐시 정리 명령(또는 클릭)과 유사합니다. **Magento 캐시 초기화** 을 참조하십시오.
 
-실제로 상거래 캐시를 정리하거나 플러시하거나 새로 고치면 바니쉬도 지워집니다.
+실제로 Commerce 캐시를 정리하거나 플러시하거나 새로 고치면 바니쉬도 지워집니다.
 
-Varnish를 Commerce와 함께 작동하도록 설치 및 구성한 후 다음 작업을 통해 Varnish를 제거할 수 있습니다.
+Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업을 통해 Varnish 제거를 수행할 수 있습니다.
 
 - 웹 사이트 유지 관리
 
@@ -42,7 +42,7 @@ Varnish를 Commerce와 함께 작동하도록 설치 및 구성한 후 다음 �
 
 ## 바니시를 제거하도록 Commerce 구성
 
-Commerce는 다음을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다. [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) 명령입니다.
+Commerce은 다음을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다. [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) 명령입니다.
 
 선택적 매개 변수를 사용할 수 있습니다 `--http-cache-hosts` 매개 변수를 사용하여 쉼표로 구분된 Varnish 호스트 및 수신 포트 목록을 지정합니다. 하나 또는 여러 개의 Vannish 호스트를 모두 구성합니다. ( 공백 문자로 호스트를 구분하지 마십시오.)
 

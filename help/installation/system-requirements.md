@@ -1,21 +1,21 @@
 ---
 title: 시스템 요구 사항
-description: 이 참조를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
+description: 이 참조를 사용하여 Adobe Commerce 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # 시스템 요구 사항
 
-다음은 Adobe Commerce 및 Magento Open Source에 대해 테스트한 소프트웨어 종속성 및 서비스를 요약합니다.
+다음은 Adobe Commerce에서 테스트한 소프트웨어 종속성 및 서비스를 요약한 것입니다.
 
 클라우드 인프라의 Commerce에 대한 종속성에는 몇 가지 차이점이 있습니다. Adobe Commerce on cloud infrastructure에 대한 서비스 버전 및 호환성 지원은 호스팅된 클라우드 환경에 테스트되고 배포된 서비스에 의해 결정되며, 경우에 따라 Adobe Commerce 온프레미스 배포에서 지원하는 버전과 다릅니다. 예를 들어 Elasticsearch 7.17은 Commerce 2.4.4에서 온-프레미스 배포에 대해 지원되지만 OpenSearch 1.2는 Cloud 인프라의 Commerce 2.4.4에 대해 지원됩니다.
 
-다음 표는 Adobe이 특정 Adobe Commerce 및 Magento Open Source 릴리스에서 테스트한 타사 소프트웨어 종속성 버전을 보여 줍니다.
+다음 표는 Adobe이 특정 Adobe Commerce 릴리스에서 테스트한 타사 소프트웨어 종속성을 보여줍니다.
 
 Adobe은 다음 표에 설명된 시스템 요구 사항의 조합만 지원합니다. 예를 들어 2.4.5는 MariaDB 10.4로 완전히 테스트됩니다. Adobe은 2.4.5로 업그레이드하기 전에 MariaDB 10.4로 업그레이드하는 것을 권장합니다.
 
@@ -52,7 +52,7 @@ opensearch:
 
 ## PHP 설정
 
-다음과 같은 특정 PHP 구성 설정이 있습니다. `memory_limit` 설정 - Adobe Commerce 및 Magento Open Source을 사용할 때 발생할 수 있는 일반적인 문제를 방지하는 데 도움이 됩니다. 다음을 참조하십시오 [필수 PHP 설정](prerequisites/php-settings.md).
+다음과 같은 특정 PHP 구성 설정이 있습니다. `memory_limit` 설정 - Adobe Commerce 사용 시 발생할 수 있는 일반적인 문제를 방지하는 데 도움이 됩니다. 다음을 참조하십시오 [필수 PHP 설정](prerequisites/php-settings.md).
 
 클라우드 구성 지침은 다음을 참조하십시오. [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 다음에서 _클라우드 인프라의 상거래_ 가이드.
 
@@ -102,7 +102,7 @@ PHPUnit v9(명령줄 도구).
 
 >[!NOTE]
 >
->다음 요구 사항은 Adobe Commerce 및 Magento Open Source의 최신 2.4.x 패치 릴리스에 적용됩니다. 관련성이 있는 경우 클라우드 인프라에 대한 Commerce 지침이 제공됩니다.
+>다음 요구 사항은 Adobe Commerce의 최신 2.4.x 패치 릴리스에 적용됩니다. 관련성이 있는 경우 클라우드 인프라에 대한 Commerce 지침이 제공됩니다.
 
 ### 브라우저
 
@@ -127,7 +127,7 @@ Commerce Marketplace 및 기타 소스에서 얻은 응용 프로그램 및 확�
 
 RedHat Enterprise Linux(RHEL), CentOS, Ubuntu, Debian 등과 같은 Linux 배포판 Microsoft Windows 및 macOS은 지원되지 않습니다.
 
-Adobe Commerce 및 Magento Open Source의 일부 작업을 위해서는 다음 시스템 도구가 필요합니다.
+Adobe Commerce의 일부 작업에는 다음 시스템 도구가 필요합니다.
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
 - [[!DNL gzip]](https://www.gzip.org/)
@@ -149,7 +149,7 @@ Adobe Commerce 및 Magento Open Source의 일부 작업을 위해서는 다음 �
 
 ### Xdebug
 
-Adobe Commerce 및 Magento Open Source의 경우 [php_xdebug 2.5.x](https://xdebug.org/download) 또는 이후 버전(개발 환경에만 해당되며 성능에 부정적인 영향을 미칠 수 있음)
+Adobe Commerce의 경우 다음을 사용합니다. [php_xdebug 2.5.x](https://xdebug.org/download) 또는 이후 버전(개발 환경에만 해당되며 성능에 부정적인 영향을 미칠 수 있음)
 
 클라우드의 Adobe Commerce에 대해서는 다음을 참조하십시오. [Xdebug 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) 다음에서 _클라우드 인프라의 상거래_ 가이드.
 

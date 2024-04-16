@@ -1,19 +1,19 @@
 ---
 title: 인증 키 받기
-description: repo.magento.com에서 Adobe Commerce 및 Magento Open Source 작성기 패키지에 액세스하기 위해 자격 증명을 검색하려면 다음 단계를 따르십시오.
+description: repo.magento.com에서 Adobe Commerce Composer 패키지에 액세스하기 위해 자격 증명을 검색하려면 다음 단계를 따르십시오.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # 인증 키 받기
 
-다음 `repo.magento.com` 저장소는 Adobe Commerce, Magento Open Source 및 서드파티 작성기 패키지가 저장되는 곳으로, 인증이 필요합니다. Commerce Marketplace 계정을 사용하여 32자 쌍을 생성합니다 *인증 키* 저장소에 액세스.
+다음 `repo.magento.com` 저장소는 Adobe Commerce 및 타사 작성기 패키지가 저장되는 곳으로, 인증이 필요합니다. Commerce Marketplace 계정을 사용하여 32자 쌍을 생성합니다 *인증 키* 저장소에 액세스.
 
-Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 얻으려면 해당 패키지에 대한 액세스 권한이 부여된 MAGEID와 연결된 키를 사용해야 합니다. MAGEID는 일반적으로 Adobe Commerce 계정의 기본 연락처이며 항상 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 소유자는 아닐 수 있습니다.
+Adobe Commerce 패키지에 대한 액세스 권한을 얻으려면 해당 패키지에 대한 액세스 권한이 부여된 MAGEID와 연결된 키를 사용해야 합니다. MAGEID는 일반적으로 Adobe Commerce 계정의 기본 연락처이며 항상 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 소유자는 아닐 수 있습니다.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ Adobe Commerce 및 Magento Open Source 패키지에 대한 액세스 권한을 �
 
 ### SSH 액세스 토큰 관리
 
-SSH를 사용하여 Adobe Commerce 및 Magento Open Source 릴리스를 다운로드하려면 다운로드 액세스 토큰을 생성해야 합니다. 토큰을 생성하려면:
+SSH를 사용하여 Adobe Commerce 릴리스를 다운로드하려면 다운로드 액세스 토큰을 생성해야 합니다. 토큰을 생성하려면:
 
 1. 에 로그인 [magento.com 계정](https://account.magento.com/customer/account/login).
 1. 클릭 **내 계정** 을 클릭합니다.

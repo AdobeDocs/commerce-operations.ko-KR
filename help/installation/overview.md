@@ -1,10 +1,10 @@
 ---
 title: 온프레미스 설치 개요
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 배포를 위한 설치 프로세스에 대해 알아봅니다.
+description: Adobe Commerce의 온-프레미스 배포를 위한 설치 프로세스에 대해 알아봅니다.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음 다이어그램은 의 높은 수준의 개요를 제공합니다. _**온-프레미스**_ Adobe Commerce 및 Magento Open Source 설치:
+>다음 다이어그램은 의 높은 수준의 개요를 제공합니다. _**온-프레미스**_ Adobe Commerce 설치:
 
 ![설치 작동 방식](../assets/installation/install-diagram-24.svg)
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
    PHP, Apache, MySQL, 검색 엔진 등 필수 구성 요소 소프트웨어를 설치합니다. 다음을 참조하십시오. [시스템 요구 사항](system-requirements.md) 추가 정보.
 
-1. Get [인증 키](prerequisites/authentication-keys.md) 를 사용하여 Commerce Composer 리포지토리에 액세스할 수 있습니다.
+1. Get [인증 키](prerequisites/authentication-keys.md) Commerce Composer 리포지토리에 매핑됩니다.
 
 1. Adobe Commerce 또는 Magento Open Source 소프트웨어를 가져옵니다.
 

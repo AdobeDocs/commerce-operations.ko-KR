@@ -1,12 +1,12 @@
 ---
 title: 업그레이드 체크리스트 모범 사례
-description: 업그레이드 체크리스트를 만들고 사용하여 Adobe Commerce 및 Magento Open Source 업그레이드 전략을 계획하는 방법을 알아봅니다.
+description: 업그레이드 체크리스트를 만들고 사용하여 Adobe Commerce 업그레이드 전략을 계획하는 방법을 알아봅니다.
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---

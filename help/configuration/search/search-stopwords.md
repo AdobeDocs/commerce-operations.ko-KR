@@ -3,9 +3,9 @@ title: 검색 중지 단어 구성
 description: CSV 파일을 사용하여 Adobe Commerce에 대한 중지 단어를 관리하는 방법을 알아봅니다.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 현재 스토리지가 더 많지만 성능은 여전히 중요합니다. Elasticsearch 및 OpenSearch는 다른 검색 엔진과 마찬가지로 여전히 성능을 향상시키기 위해 중지 단어를 사용합니다.
 
-에 있는 CSV 파일을 사용하여 중지 단어를 관리해야 합니다. `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리 또는 `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` directory(Commerce 소프트웨어를 설치한 방식에 따라 다름)
+에 있는 CSV 파일을 사용하여 중지 단어를 관리해야 합니다. `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리 또는 `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` 디렉토리(Commerce 소프트웨어를 설치한 방식에 따라 다름)
 
 Elasticsearch 및 OpenSearch에서 중지 단어를 사용하는 방법에 대한 자세한 내용은 다음 리소스를 참조하십시오.
 
@@ -27,7 +27,7 @@ Elasticsearch 및 OpenSearch에서 중지 단어를 사용하는 방법에 대�
 
 ## 정지어 구성
 
-정지어는 다음에 위치합니다. `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리. Adobe Commerce 및 Magento Open Source은 기본 로케일에 대한 정지어가 포함된 하나의 CSV 파일과 추가 파일, `stopwords.csv`다른 CSV 파일로 표시되지 않는 모든 로케일에 대한 중지 단어가 있습니다.
+정지어는 다음에 위치합니다. `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉토리. Adobe Commerce은 기본 로케일에 대한 중지 단어가 포함된 하나의 CSV 파일과 추가 파일, `stopwords.csv`다른 CSV 파일로 표시되지 않는 모든 로케일에 대한 중지 단어가 있습니다.
 
 중지 단어 파일 캐시의 기본 수명은 15분입니다.
 

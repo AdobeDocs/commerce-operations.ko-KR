@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce 제거 또는 재설치
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 제거하고 다시 설치하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 설치를 제거하고 다시 설치하려면 다음 단계를 따르십시오.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---

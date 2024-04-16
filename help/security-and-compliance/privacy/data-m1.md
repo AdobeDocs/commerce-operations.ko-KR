@@ -2,9 +2,9 @@
 title: 고객 개인 정보 참조(버전 1.x)
 description: Magento 1.x에서 고객 개인 정보에 대한 데이터 흐름 및 데이터베이스 엔티티 매핑에 대해 알아봅니다.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이는 Adobe Commerce 및 Magento Open Source 판매자와 개발자가 개인 정보 보호 규정 준수를 준비하는 데 도움이 되는 일련의 항목 중 하나입니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
+>이는 Adobe Commerce 판매자 및 개발자가 개인 정보 보호 규정 준수를 준비하는 데 도움이 되는 일련의 항목 중 하나입니다. 귀하의 비즈니스가 법적 의무를 준수하는지 여부와 그 방법을 결정하려면 법률 고문과 상의하십시오.
 
 다음과 같은 개인 정보 보호 규정을 위한 준수 프로그램을 개발할 때 참조할 수 있도록 다음 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 사용하십시오.
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ### 프론트엔드 데이터 액세스 포인트
 
-Commerce는 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
+Commerce은 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
 
 ![프론트엔드 데이터 액세스 포인트](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,7 +44,7 @@ Commerce는 고객이 로그인하고 여러 페이지를 보거나 체크아웃
 
 ### 백엔드 데이터 액세스 포인트
 
-Commerce는 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고, 그리드를 클릭하여 자세한 정보를 확인하고, 기타 다양한 작업을 수행합니다.
+Commerce은 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고 그리드를 클릭하여 자세한 정보를 확인하고 기타 다양한 작업을 수행합니다.
 
 ![백엔드 데이터 액세스 포인트](../../assets/security-compliance/backend-data-access-points.svg)
 

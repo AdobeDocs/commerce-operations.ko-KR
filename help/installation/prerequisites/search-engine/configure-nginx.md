@@ -1,11 +1,11 @@
 ---
 title: 검색 엔진에 대한 Nginx 구성
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 설치를 위한 Nginx 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온-프레미스 설치를 위한 Nginx 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Apache를 사용하는 것이 좋습니다 `htpasswd` Elasticsearch 또는 OpenS
    >
    >보안상의 이유로, `<filename>` 은 숨겨야 합니다. 즉, 마침표로 시작해야 합니다.
 
-1. *(선택 사항입니다).* 암호 파일에 다른 사용자를 추가하려면 `-c` (만들기) 옵션:
+1. *(선택 사항).* 암호 파일에 다른 사용자를 추가하려면 `-c` (만들기) 옵션:
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>

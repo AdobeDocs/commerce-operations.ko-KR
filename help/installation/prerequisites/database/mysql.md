@@ -1,10 +1,10 @@
 ---
 title: MySQL 지침
-description: Adobe Commerce 및 Magento Open Source의 온프레미스 설치에 MySQL 및 MariaDB를 설치하고 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce의 온프레미스 설치용 MySQL 및 MariaDB를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 Adobe _강력하게_ 는 데이터베이스를 설정할 때 다음 표준을 준수할 것을 권장합니다.
 
-* Adobe Commerce 및 Magento Open Source 사용 [MySQL 데이터베이스 트리거](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) 리인덱싱하는 동안 데이터베이스 액세스를 개선합니다. 이러한 속성은 인덱서 모드가 로 설정되면 생성됩니다. [예약](../../../configuration/cli/manage-indexers.md#configure-indexers). 사용자 지정 트리거는 향후 Adobe Commerce 및 Magento Open Source 버전과 호환되지 않을 수 있으므로 응용 프로그램은 데이터베이스에서 사용자 지정 트리거를 지원하지 않습니다.
+* Adobe Commerce 사용 [MySQL 데이터베이스 트리거](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) 리인덱싱하는 동안 데이터베이스 액세스를 개선합니다. 이러한 속성은 인덱서 모드가 로 설정되면 생성됩니다. [예약](../../../configuration/cli/manage-indexers.md#configure-indexers). 사용자 지정 트리거는 향후 Adobe Commerce 버전과 호환되지 않을 수 있으므로 응용 프로그램은 데이터베이스에서 사용자 지정 트리거를 지원하지 않습니다.
 * 다음 내용에 대해 숙지하십시오. [이러한 잠재적인 MySQL 트리거 제한 사항](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) 계속하기 전에
 * 데이터베이스 보안 상태를 향상시키려면 [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) 원하지 않는 데이터베이스 상호 작용이 발생할 수 있는 잘못된 데이터 값을 저장하지 않도록 하는 SQL 모드입니다.
-* Adobe Commerce 및 Magento Open Source 작업 _아님_ mySQL 문 기반 복제를 지원합니다. 다음을 사용해야 합니다. _전용_ [행 기반 복제](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Adobe Commerce은 _아님_ mySQL 문 기반 복제를 지원합니다. 다음을 사용해야 합니다. _전용_ [행 기반 복제](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Adobe _강력하게_ 는 데이터베이스를 설정할 때 다음 표준을 �
 
 ## Ubuntu에 MySQL 설치
 
-Adobe Commerce 및 Magento Open Source 2.4를 사용하려면 MySQL 8.0을 완전히 설치해야 합니다. 컴퓨터에 MySQL을 설치하는 방법은 아래 링크를 참조하십시오.
+Adobe Commerce 2.4를 사용하려면 MySQL 8.0을 완전히 설치해야 합니다. 컴퓨터에 MySQL을 설치하는 방법은 아래 링크를 참조하십시오.
 
 * [우분투](https://ubuntu.com/server/docs/databases-mysql)
 * [센트OS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
@@ -53,7 +53,7 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 
 ## MySQL 8 변경 사항
 
-Adobe Commerce 및 Magento Open Source 2.4에 대해 MySQL 8에 대한 지원이 추가되었습니다.
+Adobe Commerce 2.4에 대해 MySQL 8에 대한 지원이 추가되었습니다.
 이 섹션에서는 개발자가 알아야 하는 MySQL 8의 주요 변경 사항에 대해 설명합니다.
 
 ### 정수 유형(패딩)에 대한 너비가 제거됨
@@ -92,11 +92,11 @@ MySQL 8.0.13부터 사용되지 않음 `ASC` 또는 `DESC` 한정자 `GROUP BY` 
 
 ## Commerce 및 MySQL 8
 
-MySQL 8을 제대로 지원하기 위해 Adobe Commerce 및 Magento Open Source이 일부 변경되었습니다.
+MySQL 8을 제대로 지원하기 위해 Adobe Commerce이 일부 변경되었습니다.
 
 ### 쿼리 및 삽입 동작
 
-Adobe Commerce 및 Magento Open Source은에서 SET SQL_MODE=&#39;&#39;를 설정하여 일반 유효성 검사 동작을 비활성화했습니다. `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. 유효성 검사가 비활성화되어 있으면 MySQL에서 데이터를 잘라낼 수 있습니다. MySQL에서 쿼리 동작이 변경되었습니다. `Select * on my_table where IP='127.0.0.1'` 이제 IP 주소가 정수가 아닌 문자열로 제대로 표시되므로 가 더 이상 결과를 반환하지 않습니다.
+Adobe Commerce은에서 SET SQL_MODE=&#39;&#39;를 설정하여 일반 유효성 검사 동작을 비활성화했습니다. `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. 유효성 검사가 비활성화되어 있으면 MySQL에서 데이터를 잘라낼 수 있습니다. MySQL에서 쿼리 동작이 변경되었습니다. `Select * on my_table where IP='127.0.0.1'` 이제 IP 주소가 정수가 아닌 문자열로 제대로 표시되므로 가 더 이상 결과를 반환하지 않습니다.
 
 ## MySQL 5.7에서 MySQL 8로 업그레이드
 

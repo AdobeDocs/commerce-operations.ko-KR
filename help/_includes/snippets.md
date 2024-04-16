@@ -1,13 +1,13 @@
 ---
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
 # 코드 조각
 
-## 상거래 전용 {#commerce-only}
+## Commerce 전용 {#commerce-only}
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce 및 Magento Open Source 릴리스에는 이전 버전과 호환 불가능한 변경 사항(BIC)이 포함될 수 있습니다. 이전 버전과 호환 불가능한 변경 사항을 검토하려면 [BIC 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). 주요 이전 버전과 호환 불가능한 문제는에 설명되어 있습니다. [BIC 특징](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). 일부 릴리스에서는 주요 BIC가 제공되지 않습니다.
+>Adobe Commerce 릴리스에는 이전 버전과 호환 불가능한 변경 사항(BIC)이 포함될 수 있습니다. 이전 버전과 호환 불가능한 변경 사항을 검토하려면 [BIC 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). 주요 이전 버전과 호환 불가능한 문제는에 설명되어 있습니다. [BIC 특징](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). 일부 릴리스에서는 주요 BIC가 제공되지 않습니다.
 
 ## CVE 알림 {#cve-notice}
 
