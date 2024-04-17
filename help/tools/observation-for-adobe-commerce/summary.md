@@ -3,9 +3,9 @@ title: 다음 [!UICONTROL Summary] 탭
 description: 에 대해 알아보기 [!UICONTROL Summary] 탭 / [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 ![로그에서 redis 동기화](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) 는 데이터베이스, 캐시 및 메시지 브로커로 사용되는 오픈 소스(BSD 라이선스) 메모리 내 데이터 구조 저장소입니다. 구성된 경우 데이터베이스 및 세션 캐싱을 수행할 수 있습니다. 다음 **[!UICONTROL Redis synchronization from Log]** 프레임은 다음에 중점을 둡니다. [[!DNL Redis] 동기화](https://redis.io/docs/manual/replication/). 클수록 [!DNL Redis] 데이터 세트를 사용하면 동기화에 문제가 발생할 가능성이 높아집니다(동기화를 유지해야 하는 데이터가 더 많음).
+[[!DNL Redis]](https://redis.io/docs/about/) 는 데이터베이스, 캐시 및 메시지 브로커로 사용되는 오픈 소스(BSD 라이선스) 메모리 내 데이터 구조 저장소입니다. 구성된 경우 데이터베이스 및 세션 캐싱을 수행할 수 있습니다. 다음 **[!UICONTROL Redis synchronization from Log]** 프레임은 다음에 중점을 둡니다. [[!DNL Redis] 동기화](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). 클수록 [!DNL Redis] 데이터 세트를 사용하면 동기화에 문제가 발생할 가능성이 높아집니다(동기화를 유지해야 하는 데이터가 더 많음).
 
 **[!DNL Redis]오류 및 메시지:**
 
