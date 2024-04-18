@@ -3,7 +3,7 @@ title: 엔터프라이즈 참조 아키텍처
 description: Adobe의 최신 컴포저블 상거래 기술을 사용하여 Adobe Commerce을 구현하는 방법에 대해 알아봅니다.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
+source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Adobe Commerce은 기술 유연성과 사용 편의성을 고유하게 조화시킨 경험 중심의 플랫폼으로, 모든 것을 비즈니스 결과를 이끄는 탁월한 경험을 창출하기 위해 제공합니다.
 
-Commerce는 성능, 규모 및 보안에 대한 엔터프라이즈 요구 사항을 충족하도록 발전해 왔습니다. Adobe의 최신 컴포저블 상거래 솔루션을 사용하는 최신 구현 접근 방식을 채택하는 것은 기업 비즈니스의 성공에 매우 중요합니다. 이 페이지에서는 최신 Commerce 구현 접근 방식을 기술적인 세부 사항으로 설명합니다.
+Commerce은 성능, 규모 및 보안에 대한 엔터프라이즈 요구 사항을 충족하도록 발전해 왔습니다. Adobe의 최신 컴포저블 상거래 솔루션을 사용하는 최신 구현 접근 방식을 채택하는 것은 기업 비즈니스의 성공에 매우 중요합니다. 이 페이지에서는 최신 Commerce 구현 접근 방식에 대해 기술적인 세부 정보를 제공합니다.
 
 다음 아키텍처 다이어그램은 Adobe Commerce과 모든 Adobe Experience Cloud 솔루션 간의 데이터 흐름을 보여 줍니다.
 
-![Adobe Commerce이 Experience Cloud 솔루션에 연결하는 방법을 보여 주는 아키텍처 다이어그램](../../assets/playbooks/commerce-architecture-v2.svg){zoomable=&quot;yes&quot;}
+![Adobe Commerce이 Experience Cloud 솔루션에 연결하는 방법을 보여 주는 아키텍처 다이어그램](../../assets/playbooks/commerce-architecture-v3.svg){zoomable=&quot;yes&quot;}
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 �
 
 ## 서드파티 시스템과의 통합
 
-Adobe은 개발자에게 핵심 상거래 기능을 확장하고 Commerce를 서드파티 시스템(예: CRM, ERPS 및 PIMS)과 통합하는 애플리케이션을 빌드하는 포괄적인 확장 지점 및 도구를 제공합니다. 이러한 도구를 사용하면 다음과 같은 방법으로 플랫폼의 TCO를 절감할 수 있습니다.
+Adobe은 개발자에게 핵심 Commerce 기능을 확장하고 Commerce을 타사 시스템(예: CRM, ERPS 및 PIMS)과 통합하는 애플리케이션을 빌드하는 포괄적인 확장 지점 및 도구를 제공합니다. 이러한 도구를 사용하면 다음과 같은 방법으로 플랫폼의 TCO를 절감할 수 있습니다.
 
 - **확장성**—핵심 소프트웨어와 별도로 애플리케이션을 확장할 수 있으므로 효율성이 높아지고 업그레이드가 간단해집니다.
 - **격리**-격리된 환경은 개발자가 코어 릴리스에 의존하지 않고 재량에 따라 확장을 업그레이드하거나 수정할 수 있음을 의미합니다.
@@ -59,10 +59,10 @@ Adobe은 개발자에게 핵심 상거래 기능을 확장하고 Commerce를 서
 Adobe은 통합 및 사용자 지정을 빌드하기 위한 다음 개발자 도구를 제공합니다.
 
 - [**Adobe Developer 앱 빌더용 API Mesh**](https://developer.adobe.com/graphql-mesh-gateway/)- 여러 API, GraphQL, REST 및 기타 소스를 하나의 쿼리 가능한 GraphQL 엔드포인트로 조정하고 결합합니다.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Commerce 기능을 확장하고 타사 솔루션과 통합하는 안전하고 확장 가능한 웹 애플리케이션을 구축 및 배포합니다.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Commerce 기능을 확장하고 서드파티 솔루션과 통합하는 안전하고 확장 가능한 웹 애플리케이션을 구축 및 배포합니다.
 - [**이벤트**](https://developer.adobe.com/commerce/extensibility/events/)—사용자 지정 이벤트 트리거를 사용하여 확장 가능한 다른 개발 도구와 상호 작용합니다.
-- [**웹훅**](https://developer.adobe.com/commerce/extensibility/webhooks/)- 웹후크를 사용하여 Commerce와 서드파티 시스템 간의 상호 작용을 자동으로 트리거합니다.
-- [**관리자 UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)- 판매자를 위한 새 페이지 및 기능을 사용하여 Commerce Admin을 사용자 정의하고 향상시킬 수 있습니다.
+- [**웹훅**](https://developer.adobe.com/commerce/extensibility/webhooks/)—웹후크를 사용하여 Commerce과 서드파티 시스템 간의 상호 작용을 자동으로 트리거합니다.
+- [**관리자 UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)- 판매자를 위한 새 페이지 및 기능을 사용하여 Commerce 관리를 사용자 정의하고 향상시킬 수 있습니다.
 
 ## Storefront 서비스
 
