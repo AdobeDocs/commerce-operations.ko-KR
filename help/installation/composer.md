@@ -1,10 +1,10 @@
 ---
 title: 온프레미스 설치 빠른 시작
-description: 소유한 인프라에 Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 단계를 따르십시오.
+description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe 사용 [작성기](https://getcomposer.org/) Adobe Commerce 구성 요소 
 - 강력한 종속성 관리 기능을 갖춘 구성 요소 기반 아키텍처를 사용하여 확장 충돌 및 호환성 문제 감소
 - 준수 대상 [PHP-Framework 상호 운용성 그룹(그림)](https://www.php-fig.org/) 표준
 - 다른 구성 요소로 Magento Open Source 다시 패키지
-- 프로덕션 환경에서 Adobe Commerce 또는 Magento Open Source 소프트웨어 사용
+- 프로덕션 환경에서 Adobe Commerce 소프트웨어 사용
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ Adobe 사용 [작성기](https://getcomposer.org/) Adobe Commerce 구성 요소 
 
 ## 메타패키지 가져오기
 
-Adobe Commerce 또는 Magento Open Source 메타 패키지를 가져오려면 다음을 수행하십시오.
+Adobe Commerce 메타패키지를 가져오려면 다음을 수행하십시오.
 
 1. 응용 프로그램 서버에 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](prerequisites/file-system/overview.md).
 1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다.
-1. Adobe Commerce 또는 Magento Open Source 메타패키지를 사용하여 작성기 프로젝트를 만듭니다.
+1. Commerce 메타패키지를 사용하여 작성기 프로젝트를 만듭니다.
 
    **Magento Open Source**
 
@@ -127,7 +127,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## 파일 권한 설정
 
-Adobe Commerce 또는 Magento Open Source을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정해야 합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 해야 합니다.
+Adobe Commerce을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정해야 합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 해야 합니다.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 ## 애플리케이션 설치
 
-Adobe Commerce 또는 Magento Open Source을 설치하려면 명령줄을 사용해야 합니다.
+Adobe Commerce을 설치하려면 명령줄을 사용해야 합니다.
 
 이 예에서는 설치 디렉토리의 이름이 이라고 가정합니다 `magento2ee`, `db-host` 동일한 시스템에 있음(`localhost`) 및 `db-name`, `db-user`, 및 `db-password` 모두 `magento`:
 

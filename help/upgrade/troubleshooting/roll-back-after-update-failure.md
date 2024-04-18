@@ -1,10 +1,10 @@
 ---
 title: 모듈 업데이트 실패 후 롤백
-description: 모듈 업데이트 오류가 발생한 후 Adobe Commerce 또는 Magento Open Source 업그레이드 문제를 해결합니다.
+description: 모듈 업데이트 오류가 발생한 후 Adobe Commerce 업그레이드 문제를 해결합니다.
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: 샘플 데이터 Git 저장소 복제
 description: 다음 단계에 따라 Git 저장소를 복제하여 Adobe Commerce 샘플 데이터를 설치합니다.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ HTTPS 프로토콜을 사용하여 샘플 데이터 GitHub 저장소를 복제�
 
 >[!WARNING]
 >
->샘플 데이터를 설치하는 경우 *이후* Adobe Commerce 또는 Magento Open Source을 설치하려면 다음 명령을 실행하여 데이터베이스와 스키마를 업데이트해야 합니다.
+>샘플 데이터를 설치하는 경우 *이후* Adobe Commerce을 설치하는 동안 다음 명령도 실행하여 데이터베이스와 스키마를 업데이트해야 합니다.
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

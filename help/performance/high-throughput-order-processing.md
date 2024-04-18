@@ -1,11 +1,11 @@
 ---
 title: 높은 처리량 주문 처리
-description: Adobe Commerce 또는 Magento Open Source 배포에 대한 주문 배치 및 체크아웃 경험을 최적화합니다.
+description: Adobe Commerce 배포에 대한 주문 배치 및 체크아웃 경험을 최적화합니다.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ DeferredTotalCalculation이 활성화되면 제품을 장바구니에 추가한 
 
 MySQL 데이터베이스 및 Redis 인스턴스에 대한 보조 연결을 활성화하면 서로 다른 노드에 대한 로드 밸런스를 조정할 수 있습니다.
 
-Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce를 사용하는 경우 를 편집하여 보조 연결을 구성할 수 있습니다. [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 의 값 `.magento.env.yaml` 파일. 한 노드만 읽기-쓰기 트래픽을 처리해야 하므로 변수를 로 설정합니다. `true` 그러면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. 값을 다음으로 설정 `false` 에서 기존 읽기 전용 연결 배열을 제거하려면 `env.php` 파일.
+Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 를 편집하여 보조 연결을 구성할 수 있습니다. [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 의 값 `.magento.env.yaml` 파일. 한 노드만 읽기-쓰기 트래픽을 처리해야 하므로 변수를 로 설정합니다. `true` 그러면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. 값을 다음으로 설정 `false` 에서 기존 읽기 전용 연결 배열을 제거하려면 `env.php` 파일.
 
 의 예 `.magento.env.yaml` 파일:
 

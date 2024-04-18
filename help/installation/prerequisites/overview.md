@@ -2,16 +2,16 @@
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 온-프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아보세요.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '316'
 ht-degree: 1%
 
 ---
 
 # 온-프레미스 설치 사전 요구 사항
 
-Adobe Commerce 또는 Magento Open Source을 설치하기 전에 다음을 수행해야 합니다.
+Adobe Commerce을 설치하기 전에 다음을 수행해야 합니다.
 
 * 다음을 충족하는 호스트 하나 이상 설정 [시스템 요구 사항](../system-requirements.md).
 * 로드 밸런싱이 있는 웹 노드를 두 개 이상 설정하는 경우 시스템의 해당 부분을 설정하고 테스트합니다 _다음 이전_ 응용 프로그램을 설치합니다.
@@ -19,7 +19,7 @@ Adobe Commerce 또는 Magento Open Source을 설치하기 전에 다음을 수�
 
 >[!NOTE]
 >
->에 Adobe Commerce 또는 Magento Open Source을 설치한다고 가정합니다. **개발 환경**, 루트 사용자에게 컴퓨터에 대한 액세스 권한 부여, **및** 즉, 이 시스템은 높은 수준의 보안이 필요하지 않습니다. 보다 안전한 시스템을 설정하는 경우 네트워크 관리자에게 추가 지원을 요청하는 것이 좋습니다.
+>에 Adobe Commerce을 설치한다고 가정합니다. **개발 환경**, 루트 사용자에게 컴퓨터에 대한 액세스 권한 부여, **및** 즉, 이 시스템은 높은 수준의 보안이 필요하지 않습니다. 보다 안전한 시스템을 설정하는 경우 네트워크 관리자에게 추가 지원을 요청하는 것이 좋습니다.
 
 운영 체제 소프트웨어를 업데이트하고 업그레이드하는 것이 좋습니다. 이러한 업그레이드는 향후 문제를 방지할 수 있는 보안 및 소프트웨어 수정 사항을 제공할 수 있습니다. 이게 무슨 뜻인지 모르세요? 다음을 확인하십시오. [설치 개요 페이지](../overview.md).
 
@@ -70,7 +70,7 @@ Apache를 설치 또는 업그레이드하려면 다음을 참조하십시오. [
 
 ### MySQL
 
-설치 중인 Adobe Commerce 또는 Magento Open Source 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 버전용입니다.
+설치 중인 Adobe Commerce 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 버전용입니다.
 
 ```bash
 mysql -u <database root user or database owner name> -p

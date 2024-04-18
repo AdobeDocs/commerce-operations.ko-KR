@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 보안 정책 개요
-description: 컨텐츠 보안 정책을 사용하여 Adobe Commerce 또는 Magento Open Source 저장소의 보안 자세를 개선하는 방법을 알아봅니다.
+description: 컨텐츠 보안 정책을 사용하여 Adobe Commerce 스토어의 보안 상태를 개선하는 방법을 알아봅니다.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---

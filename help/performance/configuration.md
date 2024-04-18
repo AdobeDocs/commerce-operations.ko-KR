@@ -1,11 +1,11 @@
 ---
 title: 구성 모범 사례
-description: 다음 모범 사례를 사용하여 Adobe Commerce 또는 Magento Open Source 배포의 응답 시간을 최적화합니다.
+description: 다음 모범 사례를 사용하여 Adobe Commerce 배포의 응답 시간을 최적화합니다.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Commerce는 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 
 ## 비동기 이메일 알림
 
-&quot;비동기 이메일 알림&quot; 설정을 활성화하면 이메일 알림 체크 아웃 및 주문 처리를 처리하는 프로세스가 백그라운드로 이동합니다. 이 기능을 사용하려면 다음 위치로 이동하십시오. **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 다음을 참조하십시오 [영업 이메일](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) 다음에서 _Magento Open Source 사용 안내서_ 추가 정보.
+&quot;비동기 이메일 알림&quot; 설정을 활성화하면 이메일 알림 체크 아웃 및 주문 처리를 처리하는 프로세스가 백그라운드로 이동합니다. 이 기능을 사용하려면 다음 위치로 이동하십시오. **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 다음을 참조하십시오 [영업 이메일](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) 다음에서 _관리 사용 안내서_ 추가 정보.
 
 ## 비동기 주문 데이터 처리
 
-상점가의 집중 매물이 동시에 발생할 수 있습니다. [!DNL Commerce] 에서는 집중 주문 처리를 수행하고 있습니다. 다음을 구성할 수 있습니다. [!DNL Commerce] 데이터베이스 수준에서 이 두 트래픽 패턴을 구별하여 해당 테이블의 읽기 및 쓰기 작업 간의 충돌을 방지합니다. 주문 데이터를 비동기식으로 저장하고 인덱싱할 수 있습니다. 주문이 임시 저장소에 보관되고 충돌 없이 Order Management 그리드로 일괄 이동됩니다. 에서 이 옵션을 활성화할 수 있습니다. **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 다음을 참조하십시오 [예약된 그리드 업데이트](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) 다음에서 _Magento Open Source 사용 안내서_ 추가 정보.
+상점가의 집중 매물이 동시에 발생할 수 있습니다. [!DNL Commerce] 에서는 집중 주문 처리를 수행하고 있습니다. 다음을 구성할 수 있습니다. [!DNL Commerce] 데이터베이스 수준에서 이 두 트래픽 패턴을 구별하여 해당 테이블의 읽기 및 쓰기 작업 간의 충돌을 방지합니다. 주문 데이터를 비동기식으로 저장하고 인덱싱할 수 있습니다. 주문이 임시 저장소에 보관되고 충돌 없이 Order Management 그리드로 일괄 이동됩니다. 에서 이 옵션을 활성화할 수 있습니다. **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 다음을 참조하십시오 [예약된 그리드 업데이트](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) 다음에서 _관리 사용 안내서_ 추가 정보.
 
 >[!WARNING]
 >

@@ -2,9 +2,9 @@
 title: GDPR(일반 데이터 보호 규정)
 description: GDPR(General Data Protection Regulation)에 대해 알아봅니다. GDPR은 유럽 연합 및 유럽 경제 영역에서 모든 개인에 대한 데이터 보호 및 개인정보 보호를 규정하는 법입니다.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 개인 정보 참조
 
-기술 정보는 지원하는 각 버전의 Adobe Commerce 또는 Magento Open Source에 적용되는 개인 정보 참조의 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 참조하십시오.
+기술 정보는 지원하는 각 Adobe Commerce 버전에 적용되는 개인정보 참조의 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 참조하십시오.
 
 - [고객 개인 정보 참조(버전 2.x)](data-m2.md)
 - [고객 개인 정보 참조(버전) 1.x)](data-m1.md)

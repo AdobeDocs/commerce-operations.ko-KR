@@ -1,11 +1,11 @@
 ---
 title: 배포 구성 만들기 또는 업데이트
-description: Adobe Commerce 또는 Magento Open Source 배포 구성을 관리하려면 다음 단계를 따르십시오.
+description: Adobe Commerce 배포 구성을 관리하려면 다음 단계를 따르십시오.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ bin/magento setup:config:set [--<parameter>=<value>, ...]
 | `--db-name` | 데이터베이스 테이블을 설치할 데이터베이스 인스턴스의 이름입니다.<br><br>기본값은 입니다 `magento2`. | 아니요 |
 | `--db-user` | 데이터베이스 인스턴스 소유자의 사용자 이름.<br><br>기본값은 입니다 `root`. | 아니요 |
 | `--db-password` | 데이터베이스 인스턴스 소유자의 암호입니다. | 아니요 |
-| `--db-prefix` | Adobe Commerce 테이블이 이미 있는 데이터베이스 인스턴스에 데이터베이스 테이블을 설치하는 경우에만 사용합니다.<br><br>이 경우 접두사를 사용하여 이 설치에 사용할 테이블을 식별합니다. 일부 고객은 동일한 데이터베이스에 모든 테이블이 있는 서버에서 실행 중인 Adobe Commerce 또는 Magento Open Source 인스턴스를 두 개 이상 가지고 있습니다.<br><br>접두사는 최대 5자까지 사용할 수 있습니다. 문자로 시작해야 하며 문자, 숫자 및 밑줄 문자만 포함할 수 있습니다.<br><br>이 옵션을 사용하면 이러한 고객이 둘 이상의 Adobe Commerce 또는 Magento Open Source 설치와 데이터베이스 서버를 공유할 수 있습니다. | 아니요 |
+| `--db-prefix` | Adobe Commerce 테이블이 이미 있는 데이터베이스 인스턴스에 데이터베이스 테이블을 설치하는 경우에만 사용합니다.<br><br>이 경우 접두사를 사용하여 이 설치에 사용할 테이블을 식별합니다. 일부 고객은 동일한 데이터베이스에 있는 모든 테이블이 있는 서버에서 두 개 이상의 Adobe Commerce 인스턴스를 실행하고 있습니다.<br><br>접두사는 최대 5자까지 사용할 수 있습니다. 문자로 시작해야 하며 문자, 숫자 및 밑줄 문자만 포함할 수 있습니다.<br><br>이 옵션을 사용하면 이러한 고객이 둘 이상의 Adobe Commerce 설치와 데이터베이스 서버를 공유할 수 있습니다. | 아니요 |
 | `--session-save` | 다음 중 하나를 사용하십시오.<br><br>- `db` 세션 데이터를에 저장하려면 [데이터베이스](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). 클러스터된 데이터베이스가 있는 경우 데이터베이스 저장소를 선택하십시오. 그렇지 않으면 파일 기반 저장소에 비해 이점이 별로 없을 수 있습니다.<br><br>- `files` 파일 시스템에 세션 데이터를 저장합니다. 파일 시스템 액세스가 느리거나 클러스터된 데이터베이스가 있거나 세션 데이터를 Redis에 저장하려는 경우가 아니면 파일 기반 세션 저장소가 적절합니다.<br><br>- `redis` 세션 데이터를에 저장하려면 [세션 스토리지에 Redis 사용](../../configuration/cache/config-redis.md). 기본 또는 페이지 캐싱에 Redis를 사용하는 경우 Redis가 이미 설치되어 있어야 합니다. | 아니요 |
 | `--key` | 키가 있는 경우 암호화할 키를 지정합니다 [중요 데이터](#sensitive-data) 데이터베이스. 없는 경우 애플리케이션에서 자동으로 생성합니다. | 아니요 |
 | `--db-init-statements` | 고급 MySQL 구성 매개 변수. MySQL 데이터베이스에 연결할 때 데이터베이스 초기화 문을 사용하여 실행합니다.<br><br>기본값은 입니다 `SET NAMES utf8;`.<br><br>과 유사한 참조 자료 참조 [이 항목](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) 값을 설정하기 전에 | 아니요 |

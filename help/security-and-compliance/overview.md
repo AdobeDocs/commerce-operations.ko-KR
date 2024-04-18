@@ -1,10 +1,10 @@
 ---
 title: 보안 및 규정 준수
-description: Adobe Commerce 또는 Magento Open Source 프로젝트의 보안, 개인 정보 및 업계 규정 준수 리소스에 대해 알아보십시오.
+description: Adobe Commerce 프로젝트의 보안, 개인 정보 및 업계 규정 준수 리소스에 대해 알아봅니다.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---

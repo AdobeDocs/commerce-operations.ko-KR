@@ -1,10 +1,10 @@
 ---
 title: 개요
-description: 다음 모범 사례에 따라 Adobe Commerce 또는 Magento Open Source 배포의 성능을 최적화합니다.
+description: 다음 모범 사례에 따라 Adobe Commerce 배포의 성능을 최적화합니다.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '86'
 ht-degree: 1%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 1%
 
 ## 가정
 
-* 다음을 사용하여 Adobe Commerce 또는 Magento Open Source을 설치했습니다. [작성기](../installation/composer.md).
-* 이 설치를 사용하여 Adobe Commerce 또는 Magento Open Source의 라이브 프로덕션 인스턴스를 실행합니다.
+* 다음을 사용하여 Adobe Commerce을 설치했습니다. [작성기](../installation/composer.md).
+* 이 설치를 사용하여 Adobe Commerce의 라이브 프로덕션 인스턴스를 실행합니다.

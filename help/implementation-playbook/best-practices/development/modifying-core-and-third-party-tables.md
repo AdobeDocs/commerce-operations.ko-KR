@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ GraphQL에서 API mesh 사용에 대한 자세한 내용은 을 참조하십시�
 이전 데이터를 마이그레이션해야 하거나 새 데이터를 [!DNL Adobe Commerce], Adobe은 다음을 권장합니다 [확장 속성](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. 확장 속성을 사용하여 추가 데이터를 저장하면 다음과 같은 이점이 있습니다.
 
 - 지속되는 데이터와 데이터베이스 구조를 제어하여 데이터가 올바른 열 유형과 적절한 인덱스로 저장되도록 할 수 있습니다.
-- 의 가장 많은 엔티티 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 확장 특성 사용을 지원합니다.
+- 의 가장 많은 엔티티 [!DNL Adobe Commerce] 확장 특성 사용을 지원합니다.
 - 확장 속성은 프로젝트의 최적 위치에 데이터를 저장할 수 있는 유연성을 제공하는 스토리지 독립적인 메커니즘입니다.
 
 저장소 위치의 두 가지 예는 데이터베이스 테이블 및 [!DNL Redis]. 위치를 선택할 때 고려해야 할 핵심 사항은 위치가 복잡성을 초래하는지 또는 성능에 영향을 주는지에 대한 것입니다.
@@ -71,7 +71,7 @@ Adobe 코어 데이터베이스 테이블 또는 서드파티 테이블에 열�
 
 1. 업데이트 중인 항목을 나타내는 이름으로 네임스페이스에 모듈을 만듭니다.
 
-   For example: `app/code/YourCompany/Customer`
+   예: `app/code/YourCompany/Customer`
 
 1. 모듈을 활성화할 적절한 파일을 만듭니다(참조). [모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 

@@ -1,10 +1,10 @@
 ---
 title: 연간 업그레이드 계획
-description: Adobe Commerce 또는 Magento Open Source 프로젝트에 대한 연간 업그레이드 계획 수립을 위한 팁을 검토하십시오.
+description: Adobe Commerce 프로젝트에 대한 연간 업그레이드 계획 수립을 위한 팁을 검토하십시오.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: d81283491447dcad5f38ddf55acea7d94889ef35
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---

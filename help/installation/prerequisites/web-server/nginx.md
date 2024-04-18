@@ -2,9 +2,9 @@
 title: Ngix
 description: Adobe Commerce의 온-프레미스 설치를 위한 Nginx 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    cd /var/www/html
    ```
 
-1. Composer를 전체적으로 설치합니다. Composer는 Adobe Commerce 또는 Magento Open Source을 설치하기 전에 종속성을 업데이트해야 합니다.
+1. Composer를 전체적으로 설치합니다. Composer는 Adobe Commerce을 설치하기 전에 종속성을 업데이트해야 합니다.
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Magento Open Source 또는 Adobe Commerce 메타패키지를 사용하여 작성기 프로젝트를 만듭니다.
+1. Adobe Commerce 메타패키지를 사용하여 작성기 프로젝트를 만듭니다.
 
    **Magento Open Source**
 
@@ -207,7 +207,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    >
    >다음 `include` 지시문은 설치 디렉토리의 샘플 nginx 구성 파일을 가리켜야 합니다.
 
-1. 바꾸기 `www.magento-dev.com` 을 추가합니다. 이 URL은 Adobe Commerce 또는 Magento Open Source 설치 시 지정한 기본 URL과 일치해야 합니다.
+1. 바꾸기 `www.magento-dev.com` 을 추가합니다. 이 URL은 Adobe Commerce 설치 시 지정한 기본 URL과 일치해야 합니다.
 
 1. 저장하고 편집기를 종료합니다.
 
@@ -283,7 +283,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
 
    >[!NOTE]
    >
-   >Adobe Commerce 또는 Magento Open Source을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 을(를) 참조하십시오 [필수 PHP 설정](../php-settings.md) 추가 정보.
+   >Adobe Commerce을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 을(를) 참조하십시오 [필수 PHP 설정](../php-settings.md) 추가 정보.
 
 1. 세션 경로 디렉토리의 주석 처리를 제거하고 경로를 설정합니다.
 
@@ -376,13 +376,13 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    cd /var/www/html
    ```
 
-1. Composer를 전체적으로 설치합니다. Composer는 Adobe Commerce 또는 Magento Open Source을 설치하기 전에 종속성을 업데이트해야 합니다.
+1. Composer를 전체적으로 설치합니다. Composer는 Adobe Commerce을 설치하기 전에 종속성을 업데이트해야 합니다.
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Magento Open Source 또는 Adobe Commerce 메타패키지를 사용하여 작성기 프로젝트를 만듭니다.
+1. Adobe Commerce 메타패키지를 사용하여 작성기 프로젝트를 만듭니다.
 
    **Magento Open Source**
 

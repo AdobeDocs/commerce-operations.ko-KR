@@ -1,17 +1,17 @@
 ---
 title: Git 기반 설치 업그레이드
-description: git 저장소에서 복제한 Adobe Commerce 또는 Magento Open Source 설치를 업그레이드합니다.
+description: git 저장소에서 복제한 Adobe Commerce 설치를 업그레이드합니다.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
 # Git 기반 설치 업그레이드
 
-이 항목에서는 기여 개발자가 Adobe Commerce 또는 Magento Open Source을 다시 설치하지 않고 업데이트하는 방법에 대해 설명합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
+이 항목에서는 기여 개발자가 Adobe Commerce을 다시 설치하지 않고 업데이트하는 방법에 대해 설명합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
 
 기여 개발자인 경우 업그레이드하려면 다음을 수행하십시오.
 

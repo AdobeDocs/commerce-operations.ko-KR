@@ -2,9 +2,9 @@
 title: 개요 [!DNL Upgrade Compatibility Tool]
 description: 에 대해 알아보기 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에 어떤 도움을 줄 수 있는지 설명합니다.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-이 안내서는 Adobe Commerce의 관리자 및 소프트웨어 엔지니어를 대상으로 합니다. 여기에는 설치에 대한 자세한 정보가 포함되어 있습니다. [!DNL Upgrade Compatibility Tool], 구성 및 관리. 이는 핵심 상거래 구성 및 기능에 대한 기본적인 이해를 전제로 합니다.
+이 안내서는 Adobe Commerce의 관리자 및 소프트웨어 엔지니어를 대상으로 합니다. 여기에는 설치에 대한 자세한 정보가 포함되어 있습니다. [!DNL Upgrade Compatibility Tool], 구성 및 관리. 핵심 Commerce 구성 및 기능에 대한 기본적인 이해를 전제로 합니다.
 
 ## 개요 [!DNL Upgrade Compatibility Tool]
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 Adobe Commerce 업그레이드를 이해하는 데 도움이 되는 다음 리소스를 참조하십시오.
 
-- 다음 [업그레이드 안내서](../overview.md) 일반적인 Adobe Commerce 또는 Magento Open Source 업그레이드 여정과 해당 여정에 따른 모범 사례에 대한 개요를 제공합니다.
+- 다음 [업그레이드 안내서](../overview.md) 에서는 일반적인 Adobe Commerce 업그레이드 여정에 대한 개요와 해당 여정에 따른 모범 사례를 제공합니다.
 - 다음 [예정된 릴리스](https://devdocs.magento.com/release/) 페이지는 예정된 릴리스 및 예정된 릴리스에 대한 날짜를 제공합니다.
 - 다음 [커뮤니티 리소스](https://developer.adobe.com/commerce/contributor/community/) 페이지를 열어 토론을 시작하거나 추가 정보를 찾을 수 있습니다.
 - 다음 확인: [관련 도구](../upgrade-compatibility-tool/related-tools.md) 일반적인 업그레이드 여정에서 유용한 도구를 보려면 페이지를 참조하십시오.

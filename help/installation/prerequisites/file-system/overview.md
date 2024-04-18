@@ -2,16 +2,16 @@
 title: 파일 소유권 및 권한
 description: Adobe Commerce의 온-프레미스 설치 작업 시 파일 시스템 권한의 중요성에 대해 알아봅니다.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # 파일 소유권 및 권한
 
-개발 환경에서 Adobe Commerce 또는 Magento Open Source 설치를 보호하여 권한이 없는 사용자나 프로세스가 시스템에 액세스하고 경우에 따라 시스템에 피해를 주는 문제를 방지하는 것이 중요합니다. 다음 파일 시스템 소유권 및 권한 지침을 사용하여 설치를 보호하십시오.
+개발 환경에서 Adobe Commerce 설치를 보호하여 권한이 없는 사용자나 프로세스가 시스템에 액세스하고 경우에 따라 시스템에 피해를 주는 문제를 방지하는 것이 중요합니다. 다음 파일 시스템 소유권 및 권한 지침을 사용하여 설치를 보호하십시오.
 
 ## 파일 시스템 소유자
 
@@ -65,4 +65,4 @@ For example:
 
 >[!TIP]
 >
->Adobe Commerce 또는 Magento Open Source을 설치하기 전에 [파일 소유권 및 권한 구성](configure-permissions.md).
+>Adobe Commerce을 설치하기 전에 [파일 소유권 및 권한 구성](configure-permissions.md).

@@ -1,10 +1,10 @@
 ---
 title: 모듈 활성화 또는 비활성화
-description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 모듈을 관리합니다.
+description: Adobe Commerce 모듈을 관리하려면 다음 단계를 따르십시오.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---

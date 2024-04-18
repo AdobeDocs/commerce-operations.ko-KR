@@ -3,16 +3,16 @@ title: 샘플 데이터 작성기 패키지 다운로드
 description: 다음 단계에 따라 Composer PHP Package Manager를 사용하여 Adobe Commerce 샘플 데이터를 설치합니다.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # 샘플 데이터 작성기 패키지 다운로드
 
-이 섹션에서는 다음 방법 중 하나로 Adobe Commerce 또는 Magento Open Source 소프트웨어를 설치한 경우 샘플 데이터를 설치하는 방법에 대해 설명합니다.
+이 섹션에서는 다음 방법 중 하나로 Adobe Commerce 소프트웨어를 사용하는 경우 샘플 데이터를 설치하는 방법에 대해 설명합니다.
 
 * 에서 압축된 아카이브를 다운로드했습니다. `https://magento.com/tech-resources/download`.
 

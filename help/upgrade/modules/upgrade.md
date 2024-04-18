@@ -2,9 +2,9 @@
 title: 모듈 및 확장 업그레이드
 description: 명령줄 인터페이스와 작성기를 사용하여 Adobe Commerce 모듈 및 확장을 업그레이드합니다.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 1. Marketplace 또는 다른 확장 개발자로부터 업데이트된 파일을 다운로드합니다. 모듈 이름과 버전을 기록해 둡니다.
 
-1. 콘텐츠를 Adobe Commerce 또는 Magento Open Source 루트 설치 디렉토리로 내보냅니다.
+1. 콘텐츠를 Adobe Commerce 루트 설치 디렉토리로 내보냅니다.
 
 1. 모듈에 대한 Composer 패키지가 있는 경우 다음 중 하나를 실행합니다.
 

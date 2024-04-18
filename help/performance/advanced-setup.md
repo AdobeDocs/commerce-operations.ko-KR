@@ -2,9 +2,9 @@
 title: 고급 설정
 description: 대량의 데이터를 처리하도록 설계된 대규모 엔터프라이즈 시스템에 대한 Best Practice 및 권장 사항을 검토합니다.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 설정 [!DNL RabbitMQ]
 
-Magento Open Source 및 Adobe [!DNL Commerce] 다음을 통해 구현된 메시지 대기열 지원 [!DNL RabbitMQ]. [!DNL Commerce] 는 B2B 카탈로그 작업 및 비동기 스톡 업데이트를 포함하여 다양한 비동기 작업을 실행하는 데 이 서비스를 사용합니다. 작업 서버에 더 많은 작업을 추가하기 위한 모든 인터페이스는 제품과 함께 배포되며 서드파티 확장의 범위에서 사용자 지정 비동기 논리 구현에 사용할 수 있습니다. 다른 통합과 마찬가지로 [!DNL Commerce] 샘플 구성 파일 제공 [!DNL RabbitMQ] 는 모든 권장 설정을 포함하고 프로덕션을 사용할 준비가 되어 있습니다.
+Adobe Commerce은 다음을 통해 구현된 메시지 대기열을 지원합니다. [!DNL RabbitMQ]. [!DNL Commerce] 는 B2B 카탈로그 작업 및 비동기 스톡 업데이트를 포함하여 다양한 비동기 작업을 실행하는 데 이 서비스를 사용합니다. 작업 서버에 더 많은 작업을 추가하기 위한 모든 인터페이스는 제품과 함께 배포되며 서드파티 확장의 범위에서 사용자 지정 비동기 논리 구현에 사용할 수 있습니다. 다른 통합과 마찬가지로 [!DNL Commerce] 샘플 구성 파일 제공 [!DNL RabbitMQ] 는 모든 권장 설정을 포함하고 프로덕션을 사용할 준비가 되어 있습니다.
 
 ## 데이터베이스 분할
 

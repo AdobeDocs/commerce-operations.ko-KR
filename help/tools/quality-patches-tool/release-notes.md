@@ -2,20 +2,20 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '20493'
+source-wordcount: '20485'
 ht-degree: 0%
 
 ---
 
 # 릴리스 정보
 
-다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 은 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 버전의 Adobe Commerce 또는 Magento Open Source에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
+다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 은 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 버전에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
 >[!INFO]
 >
->다음을 참조하십시오 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침입니다. 다음을 참조하십시오 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 안내서를 참조하십시오.
+>다음을 참조하십시오 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) Adobe Commerce 프로젝트에 패치를 적용하는 방법에 대한 지침을 제공합니다. 다음을 참조하십시오 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 안내서를 참조하십시오.
 
 >[!INFO]
 >

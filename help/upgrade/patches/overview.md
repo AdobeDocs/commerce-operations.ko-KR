@@ -2,9 +2,9 @@
 title: 패치 작동 방식
 description: Adobe Commerce에 대한 다양한 유형의 패치와 그 작동 방식에 대해 알아봅니다.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 사용자 지정 패치
 
-Adobe 엔지니어링 팀이 Adobe Commerce 또는 Magento Open Source 작성기 릴리스의 GitHub에서 버그 수정을 포함하는 데 시간이 걸릴 수 있습니다. 그동안 GitHub에서 패치를 만들고 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 작성기 기반 설치에 적용할 플러그인입니다.
+Adobe 엔지니어링 팀이 Adobe Commerce Composer 릴리스의 GitHub에서 버그 수정을 포함하는 데 시간이 걸릴 수 있습니다. 그동안 GitHub에서 패치를 만들고 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 작성기 기반 설치에 적용할 플러그인입니다.
 
 사용 [명령줄](apply.md#command-line) 또는 [작성기](apply.md#composer) 사용자 지정 패치를 적용합니다.
 

@@ -1,10 +1,10 @@
 ---
 title: 모듈 제거
-description: Adobe Commerce 또는 Magento Open Source 모듈을 제거하려면 다음 단계를 따르십시오.
+description: Adobe Commerce 모듈을 제거하려면 다음 단계를 따르십시오.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---

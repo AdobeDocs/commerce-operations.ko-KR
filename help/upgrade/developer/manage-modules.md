@@ -3,16 +3,16 @@ title: 모듈 및 확장 관리(개발자)
 description: 명령줄 인터페이스와 Composer 패키지 관리자를 사용하여 Adobe Commerce 모듈 및 확장을 관리합니다.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
 # 모듈 및 확장 관리
 
-개발자는 Adobe Commerce 또는 Magento Open Source에서 해당 버전을 지정하여 모듈 및 확장을 업그레이드합니다 `composer.json` 파일. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
+개발자는 Adobe Commerce에서 해당 버전을 지정하여 모듈 및 확장을 업그레이드합니다 `composer.json` 파일. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
 
 다음을 추가할 수 있습니다. `require` 섹션에 대한 섹션 `composer.json` 파일을 참조하거나 `composer require` 다음과 같은 명령:
 

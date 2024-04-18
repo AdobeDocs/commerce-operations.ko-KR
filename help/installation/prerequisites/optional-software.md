@@ -2,9 +2,9 @@
 title: 옵션 소프트웨어
 description: Adobe Commerce의 온프레미스 설치를 지원하기 위해 설치할 수 있는 선택적 소프트웨어에 대해 자세히 알아봅니다.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 cron 관련 작업이 제대로 수행되도록 NTP를 설치하는 것이 좋습니다. (예를 들어 서버 날짜는 과거 또는 미래일 수 있습니다.)
 
-이 항목에서 설명하는 다른 선택적 유틸리티는 설치에 도움이 될 수 있지만 Adobe Commerce 또는 Magento Open Source을 설치하거나 사용할 필요는 없습니다.
+이 항목에서 설명하는 다른 선택적 유틸리티는 설치에 도움이 될 수 있지만 Adobe Commerce을 설치하거나 사용할 필요는 없습니다.
 
 ## NTP(Network Time Protocol) 설치 및 구성
 
 [NTP](https://www.ntp.org/) 를 사용하여 서버가 시스템 시계를 동기화할 수 있습니다. [전체적으로 사용 가능한 풀 서버](https://www.ntppool.org/en/). 신뢰할 수 있는 NTP 서버는 내부 네트워크나 외부 공용 서버에 대한 전용 하드웨어 솔루션이든 관계없이 사용하는 것이 좋습니다.
 
-여러 호스트에 Adobe Commerce 또는 Magento Open Source을 배포하는 경우 NTP를 사용하면 서버가 있는 시간대에 관계 없이 시계가 모두 동기화됩니다. 또한 서버 시계가 정확하기 때문에 cron 관련 작업(예: 인덱싱 및 트랜잭션 이메일)이 정확합니다.
+여러 호스트에 Adobe Commerce을 배포하는 경우 NTP를 사용하면 서버가 있는 시간대에 관계 없이 시계가 모두 동기화됩니다. 또한 서버 시계가 정확하기 때문에 cron 관련 작업(예: 인덱싱 및 트랜잭션 이메일)이 정확합니다.
 
 ### Ubuntu에서 NTP 설치 및 구성
 

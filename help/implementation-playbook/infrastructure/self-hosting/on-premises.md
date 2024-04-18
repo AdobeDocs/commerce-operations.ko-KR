@@ -4,9 +4,9 @@ description: Adobe Commerce 온프레미스 인프라 및 서드파티 클라우
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 두 번째 Elastic Load Balancing 애플리케이션 로드 밸런서는 Varnish Cache의 트래픽을 여러 가용 영역의 Adobe Commerce 인스턴스 AWS Auto Scaling 그룹에 분산합니다.
 
-1. Amazon EC2 인스턴스에 최신 버전의 Magento Open Source 또는 Adobe Commerce을 설치합니다. 설치는 Adobe Commerce 응용 프로그램, Nginx 웹 서버 및 PHP로 구성됩니다. Amazon 머신 이미지(AMI)를 구축하여 Auto Scaling 그룹에서 새 인스턴스를 시작합니다.
+1. Amazon EC2 인스턴스에 최신 버전의 Adobe Commerce을 설치합니다. 설치는 Adobe Commerce 응용 프로그램, Nginx 웹 서버 및 PHP로 구성됩니다. Amazon 머신 이미지(AMI)를 구축하여 Auto Scaling 그룹에서 새 인스턴스를 시작합니다.
 
 1. Amazon Elasticsearch 서비스는 Adobe Commerce 카탈로그 검색에 대한 관리되는 Elasticsearch 서비스입니다.
 
@@ -55,6 +55,6 @@ Adobe Commerce을 AWS으로 마이그레이션하는 데 대한 가치 제안은
 
 Adobe Commerce에서 AWS으로 설정하면 특정 애플리케이션 종속성이 클라우드에서 사용할 수 있는 완전히 관리되는 대체 요소로 대체될 수 있습니다. 예를 들어, EC2 인스턴스에서 관계형 데이터베이스를 직접 호스팅하지 않고, 여러 애플리케이션의 데이터베이스를 Amazon Relational Database Service(AmazonRDS)로 쉽게 대체할 수 있습니다. 이 전략의 이점은 핵심 애플리케이션을 크게 변경하지 않고도 미분화 구성 요소의 운영 책임을 AWS으로 오프로드할 수 있다는 것입니다.
 
-AWS에서 Adobe Commerce(Magento Open Source 및 Adobe Commerce 버전 모두)를 실행하는 데 사용할 수 있는 몇 가지 배포 옵션이 있습니다. 가장 적절한 선택은 비용, 규모, 가용성 및 유연성에 대한 요구 사항과 조직의 AWS 및 Adobe Commerce 기술에 따라 다릅니다.
+AWS에서 Adobe Commerce을 실행하는 데 사용할 수 있는 몇 가지 배포 옵션이 있습니다. 가장 적절한 선택은 비용, 규모, 가용성 및 유연성에 대한 요구 사항과 조직의 AWS 및 Adobe Commerce 기술에 따라 다릅니다.
 
 {{$include /help/_includes/hosting-related-links.md}}

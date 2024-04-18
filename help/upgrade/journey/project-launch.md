@@ -1,10 +1,10 @@
 ---
 title: 프로젝트 시작
-description: Adobe Commerce 또는 Magento Open Source 프로젝트 이해 당사자와 함께 업그레이드 프로세스에 대한 올바른 기대치를 설정하십시오.
+description: Adobe Commerce 프로젝트 이해 당사자와 함께 업그레이드 프로세스에 대한 올바른 기대치를 설정하십시오.
 exl-id: 8a5d9af2-e0e5-441c-976c-958a229ab933
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---

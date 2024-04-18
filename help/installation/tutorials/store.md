@@ -1,10 +1,10 @@
 ---
 title: 스토어 구성
-description: Adobe Commerce 또는 Magento Open Source 스토어를 구성하려면 다음 단계를 따르십시오.
+description: Adobe Commerce 스토어를 구성하려면 다음 단계를 따르십시오.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---

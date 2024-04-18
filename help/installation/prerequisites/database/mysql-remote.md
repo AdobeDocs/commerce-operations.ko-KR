@@ -2,9 +2,9 @@
 title: 원격 MySQL 데이터베이스 연결 설정
 description: Adobe Commerce의 온-프레미스 설치에 대한 원격 데이터베이스 연결을 구성하려면 다음 단계를 따르십시오.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 * [MySQL 서버 설치](mysql.md) 데이터베이스 서버에 있습니다.
 * [데이터베이스 인스턴스 만들기](mysql.md#configuring-the-database-instance) 데이터베이스 서버에 있습니다.
-* Adobe Commerce 또는 Magento Open Source 웹 노드에 MySQL 클라이언트를 설치합니다. 자세한 내용은 MySQL 설명서를 참조하십시오.
+* Adobe Commerce 웹 노드에 MySQL 클라이언트를 설치합니다. 자세한 내용은 MySQL 설명서를 참조하십시오.
 
 ### 고가용성
 
@@ -136,7 +136,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-MySQL 모니터가 다음과 같이 표시되면 데이터베이스가 Adobe Commerce 또는 Magento Open Source 준비가 된 것입니다.
+MySQL 모니터가 다음과 같이 표시되면 데이터베이스가 Adobe Commerce에 대한 준비가 된 것입니다.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 웹 서버가 클러스터된 경우 각 웹 서버 호스트에 명령을 입력합니다.
 
-## Adobe Commerce 또는 Magento Open Source 설치
+## Adobe Commerce 설치
 
-Adobe Commerce 또는 Magento Open Source을 설치할 때 다음을 지정해야 합니다.
+Adobe Commerce을 설치할 때 다음을 지정해야 합니다.
 
 * 기본 URL(이라고도 함) *저장소 주소*) 의 호스트 이름 또는 IP 주소를 지정합니다. *웹 노드*
 * 데이터베이스 호스트는 *원격 데이터베이스 서버* IP 주소(또는 데이터베이스 서버가 클러스터된 경우 로드 밸런서)

@@ -1,10 +1,10 @@
 ---
 user-guide-title: 구성 안내서
-user-guide-description: Adobe Commerce 또는 Magento Open Source 애플리케이션 기능과 서비스를 구성합니다.
+user-guide-description: Adobe Commerce 애플리케이션 기능 및 서비스를 구성합니다.
 feature: Configuration
-source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
    + [시스템 설정 빌드](deployment/build-system.md)
    + [프로덕션 시스템 설정](deployment/production-system.md)
    + [파일 시스템 액세스 권한](deployment/file-system-permissions.md)
-   + 예시 {#examples}
+   + 예 {#examples}
       + [공유 구성 사용](deployment/example-shared-configuration.md)
       + [CLI 명령 사용](deployment/example-using-cli.md)
       + [환경 변수 사용](deployment/example-environment-variables.md)
@@ -76,7 +76,7 @@ ht-degree: 0%
    + [단위 테스트 실행](cli/unit-tests.md)
    + [레이아웃 파일 변환](cli/convert-layout-files.md)
    + [성능 테스트를 위한 데이터 생성](cli/generate-data.md)
-   + [지원 유틸리티 실행(Commerce만 해당)](cli/run-support-utilities.md)
+   + [지원 유틸리티 실행(Commerce 전용)](cli/run-support-utilities.md)
 + 구성 파일 {#files}
    + [배포용 구성 파일](reference/deployment-files.md)
    + [구성 유형](reference/config-create-types.md)

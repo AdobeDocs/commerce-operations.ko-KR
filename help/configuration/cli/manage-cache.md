@@ -2,9 +2,9 @@
 title: 캐시 관리
 description: Commerce CLI를 사용하여 명령줄에서 캐시 유형 관리 및 캐시 상태 보기
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ bin/magento cache:disable db_ddl full_page
 
   >[!TIP]
   >
-  >Magento Open Source 또는 Adobe Commerce 버전을 업그레이드하거나, Magento Open Source에서 Adobe Commerce으로 업그레이드하거나, Adobe Commerce용 B2B 또는 임의의 모듈을 설치한 후 항상 캐시를 정리하십시오.
+  >Adobe Commerce의 버전을 업그레이드하거나, Magento Open Source에서 Adobe Commerce으로 업그레이드하거나, Adobe Commerce용 B2B 또는 임의의 모듈을 설치한 후 항상 캐시를 정리하십시오.
 
 - 캐시 유형을 플러시하면 캐시 저장소가 지워지므로 동일한 저장소를 사용하는 다른 프로세스 애플리케이션에 영향을 줄 수 있습니다.
 

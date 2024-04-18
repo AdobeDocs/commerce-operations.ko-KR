@@ -4,16 +4,16 @@ description: 관리자 또는 명령줄에서 Adobe Commerce 프로젝트에 대
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # 리소스 파일 최적화
 
-더 반응형 상거래 사이트의 경우 CSS 및 JavaScript(JS) 리소스 파일을 최적화하고 렌더링 차단 리소스를 제거합니다.
+보다 반응형 Commerce 사이트의 경우 CSS 및 JavaScript(JS) 리소스 파일을 최적화하고 렌더링 차단 리소스를 제거합니다.
 
 - **CSS 및 JS 파일 최적화**—Adobe Commerce에서 개별 파일을 하나의 파일로 병합, 축소 및 번들로 구성하여 CSS 및 JavaScript(JS) 파일을 로드하는 데 필요한 시간을 줄입니다.
 - **렌더링 차단 리소스 제거**—중요한 JS 및 CSS 기능을 인라인으로 제공하고 중요하지 않은 모든 JS/CSS 스타일을 연기합니다. 자세한 내용은 [렌더링 차단 리소스 제거](https://web.dev/render-blocking-resources/).
@@ -24,7 +24,6 @@ ht-degree: 0%
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
-- Magento Open Source
 
 ## CSS 파일 병합 또는 축소
 
@@ -82,7 +81,7 @@ CSS 병합 또는 축소를 활성화하려면 [!UICONTROL **관리자** > **스
 
 ## JS 파일 병합 및 번들
 
-Commerce 관리에서 병합 또는 번들링을 설정할 수 있습니다(병합과 번들링을 동시에 활성화할 수 없음). [!UICONTROL **스토어** > **설정** > **구성** > **고급** > **개발자** > **JavaScript 설정**].
+Commerce 관리에서 병합 또는 번들링을 활성화할 수 있습니다(병합과 번들링을 동시에 활성화할 수 없음). [!UICONTROL **스토어** > **설정** > **구성** > **고급** > **개발자** > **JavaScript 설정**].
 
 명령줄에서 Adobe Commerce 기본 제공 번들링(기본 번들링)을 활성화할 수도 있습니다.
 

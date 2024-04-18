@@ -3,16 +3,16 @@ title: 애플리케이션 구성
 description: Adobe Commerce 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # 애플리케이션 구성
 
-이제 Adobe Commerce 또는 Magento Open Source 설치를 완료했으므로 구성해야 합니다. 이 항목에서는 몇 가지 권장 구성 설정을 제공합니다.
+이제 Adobe Commerce 설치를 완료했으므로 구성해야 합니다. 이 항목에서는 몇 가지 권장 구성 설정을 제공합니다.
 
 ## cron 설정
 

@@ -1,10 +1,10 @@
 ---
 title: 파일 시스템, 미디어 및 데이터베이스 백업 및 롤백
-description: 다음 단계에 따라 Adobe Commerce 또는 Magento Open Source 애플리케이션을 백업하고 복원합니다.
+description: 다음 단계에 따라 Adobe Commerce 애플리케이션을 백업하고 복원합니다.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---

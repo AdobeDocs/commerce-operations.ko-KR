@@ -1,10 +1,10 @@
 ---
 title: 유지 관리 모드 활성화 또는 비활성화
-description: 유지 관리를 위해 Adobe Commerce 또는 Magento Open Source 배포가 중단될 때 고객이 볼 수 있는 내용을 사용자 지정하려면 다음 단계를 따르십시오.
+description: 유지 관리를 위해 Adobe Commerce 배포가 중단될 때 고객이 볼 수 있는 내용을 사용자 지정하려면 다음 단계를 따르십시오.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -155,4 +155,4 @@ Adobe Commerce의 경우 다음을 사용합니다. [php_xdebug 2.5.x](https://x
 
 >[!NOTE]
 >
->에 대해 알려진 문제 있음 `xdebug` 이는 Adobe Commerce 또는 Magento Open Source 설치 또는 설치 후 상점 또는 관리자에 대한 액세스에 영향을 줄 수 있습니다. 다음을 참조하십시오 [에 영향을 주는 알려진 문제 `xdebug` 설치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) 다음에서 _Commerce 지원 기술 자료_.
+>에 대해 알려진 문제 있음 `xdebug` 이는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 대한 액세스에 영향을 줄 수 있습니다. 다음을 참조하십시오 [에 영향을 주는 알려진 문제 `xdebug` 설치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) 다음에서 _Commerce 지원 기술 자료_.

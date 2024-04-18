@@ -1,11 +1,11 @@
 ---
 title: 온-프레미스 설치 보안
-description: Adobe Commerce 또는 Magento Open Source 온프레미스 설치의 보안 자세를 개선하는 방법에 대해 알아봅니다.
+description: Adobe Commerce 온프레미스 설치의 보안 상태를 개선하는 방법에 대해 알아봅니다.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---

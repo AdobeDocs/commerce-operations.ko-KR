@@ -3,22 +3,22 @@ title: 사용
 description: 사용 방법 알아보기 [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
 
 # 사용
 
-다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 은 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 버전의 Adobe Commerce 또는 Magento Open Source에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
+다음 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 은 Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 버전에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
 시청 [기술 비디오](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) Adobe Commerce용 품질 패치 도구 사용 방법을 살펴볼 수 있습니다.
 
 >[!INFO]
 >
->다음을 참조하십시오 [개별 패치 적용](#apply-individual-patches) Adobe Commerce 또는 Magento Open Source 프로젝트에 패치를 적용하는 방법에 대한 지침입니다. 다음을 참조하십시오 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리스된 패치의 전체 목록을 검토합니다.
+>다음을 참조하십시오 [개별 패치 적용](#apply-individual-patches) Adobe Commerce 프로젝트에 패치를 적용하는 방법에 대한 지침을 제공합니다. 다음을 참조하십시오 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 릴리스된 패치의 전체 목록을 검토합니다.
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ composer require magento/quality-patches
 
 ## 개별 패치 보기
 
-사용 중인 Adobe Commerce 버전 또는 Magento Open Source에 사용할 수 있는 개별 패치 목록을 보려면 다음과 같이 하십시오.
+Adobe Commerce 버전에 사용할 수 있는 개별 패치 목록을 보려면 다음을 수행합니다.
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -76,7 +76,7 @@ Adobe Commerce 2.3.5.
 
 >[!INFO]
 >
->새 버전의 Adobe Commerce 또는 Magento Open Source으로 업그레이드한 후 새 버전에 패치가 포함되지 않은 경우 패치를 다시 적용해야 합니다. 다음을 참조하십시오 [업그레이드 후 패치 재적용](#re-apply-patches-after-an-upgrade).
+>새 버전의 Adobe Commerce으로 업그레이드한 후 새 버전에 패치가 포함되지 않은 경우 패치를 다시 적용해야 합니다. 다음을 참조하십시오 [업그레이드 후 패치 재적용](#re-apply-patches-after-an-upgrade).
 
 ## 개별 패치 적용 {#apply-individual-patches}
 
@@ -104,7 +104,7 @@ Adobe Commerce 애플리케이션에서 변경 사항을 보려면 패치를 적
 
 >[!INFO]
 >
->적용된 패치 목록을 별도의 위치에 유지하는 것이 좋습니다. 새 버전의 Adobe Commerce 또는 Magento Open Source으로 업그레이드한 후 일부 버전을 다시 적용해야 할 수 있습니다. 다음을 참조하십시오 [업그레이드 후 패치 재적용](#re-apply-patches-after-an-upgrade).
+>적용된 패치 목록을 별도의 위치에 유지하는 것이 좋습니다. 새 버전의 Adobe Commerce으로 업그레이드한 후 일부를 다시 적용해야 할 수 있습니다. 다음을 참조하십시오 [업그레이드 후 패치 재적용](#re-apply-patches-after-an-upgrade).
 
 ## 개별 패치 되돌리기
 
@@ -156,7 +156,7 @@ composer update magento/quality-patches
 
 ## 업그레이드 후 패치 재적용 {#re-apply-patches-after-an-upgrade}
 
-새 버전의 Adobe Commerce 또는 Magento Open Source으로 업그레이드할 때 패치가 새 버전에 포함되지 않은 경우 패치를 다시 적용해야 합니다.
+새 버전의 Adobe Commerce으로 업그레이드할 때 패치가 새 버전에 포함되지 않은 경우 패치를 다시 적용해야 합니다.
 
 패치를 다시 적용하려면 다음을 수행합니다.
 

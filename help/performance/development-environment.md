@@ -1,17 +1,17 @@
 ---
 title: 개발 환경 Recommendations
-description: 로컬 Adobe Commerce 또는 Magento Open Source 개발 환경 설정을 위한 성능 권장 사항에 대해 알아봅니다.
+description: 로컬 Adobe Commerce 개발 환경 설정을 위한 성능 권장 사항에 대해 알아봅니다.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
 # 개발 환경 권장 사항
 
-이 페이지에서는 상거래 개발 환경에 대한 권장 사항을 제공합니다.
+이 페이지에서는 Commerce 개발 환경에 대한 권장 사항을 제공합니다.
 
 ## 비활성화 대신 캐시 정리
 

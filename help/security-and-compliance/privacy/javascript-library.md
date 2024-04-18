@@ -2,9 +2,9 @@
 title: 개인 정보 JavaScript 라이브러리
 description: Adobe Commerce에서 수집한 고객 개인 정보에 액세스하고 삭제하는 데 사용자 지정 도구를 사용하는 방법을 알아봅니다.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Commerce 데이터 추적 서비스는 다음과 같은 개인 정보 보호 규
 
 개인 정보 JavaScript 라이브러리는 다음 CDN 위치에서 사용할 수 있습니다. `commerce.adobe.net/magentoprivacy.js`
 
-파일이 있으면 Adobe Commerce 또는 Magento Open Source 인스턴스에 설치된 사용자 지정 모듈 또는 테마에 추가해야 합니다. 다음에 설명된 지침을 따르십시오. [사용자 지정 JavaScript 사용](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 항목 을(를) 참조하십시오.
+파일이 있으면 Adobe Commerce 인스턴스에 설치된 사용자 지정 모듈 또는 테마에 추가해야 합니다. 다음에 설명된 지침을 따르십시오. [사용자 지정 JavaScript 사용](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 항목 을(를) 참조하십시오.
 
 ### 초기화
 

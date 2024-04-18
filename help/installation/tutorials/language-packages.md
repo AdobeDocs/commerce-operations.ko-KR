@@ -1,10 +1,10 @@
 ---
 title: 언어 패키지 제거
-description: Adobe Commerce 또는 Magento Open Source 언어 패키지를 제거하려면 다음 단계를 따르십시오.
+description: Adobe Commerce 언어 패키지를 제거하려면 다음 단계를 따르십시오.
 exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---

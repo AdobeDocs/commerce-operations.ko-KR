@@ -4,9 +4,9 @@ description: 설치 방법 알아보기 [!DNL Data Migration Tool] Magento 1과 
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ git branch
 
 현재 다음 위치에 있는 경우: `develop` 분기, (으)로 변경해야 합니다. [릴리스된 분기](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) 계속하기 전에
 
-아직 Adobe Commerce 또는 Magento Open Source 소프트웨어를 설치하지 않았다면 [지금 설치](../../installation/prerequisites/commerce.md).
+아직 Adobe Commerce 소프트웨어를 설치하지 않았다면, [지금 설치](../../installation/prerequisites/commerce.md).
 GitHub 리포지토리를 복제하는 경우에서 설명한 대로 릴리스 태그를 체크아웃해야 합니다 [(기여자) GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## 의 릴리스된 버전 찾기 [!DNL Data Migration Tool]

@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트의 계획 단계에 대한 구현 모�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 1%
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">전체 페이지 캐싱</a></td>
-    <td>Adobe Commerce 또는 Magento Open Source 확장에서 캐싱을 구현할 때 공개 데이터로 작업하는 방법을 알아봅니다.</td>
+    <td>Adobe Commerce 확장에서 캐싱을 구현할 때 공용 데이터로 작업하는 방법을 알아봅니다.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">OPcache 메모리 크기</a></td>

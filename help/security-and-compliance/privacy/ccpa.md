@@ -2,9 +2,9 @@
 title: CCPA(캘리포니아 소비자 개인 정보 보호법)
 description: 개인 정보의 수집, 저장 및 사용 방법을 결정하기 위해 캘리포니아 소비자의 권리를 확장하는 CCPA(캘리포니아 소비자 개인 정보 보호법)에 대해 알아봅니다.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ CCPA 준수 계획을 개발하고 구현하려면 조율된 노력이 필요합
 
 ## 개인 정보 참조
 
-기술 정보는 지원하는 각 버전의 Adobe Commerce 또는 Magento Open Source에 적용되는 개인 정보 참조의 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 참조하십시오.
+기술 정보는 지원하는 각 Adobe Commerce 버전에 적용되는 개인정보 참조의 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑을 참조하십시오.
 
 - [고객 개인 정보 참조(버전 2.x)](data-m2.md)
 - [고객 개인 정보 참조(버전) 1.x)](data-m1.md)

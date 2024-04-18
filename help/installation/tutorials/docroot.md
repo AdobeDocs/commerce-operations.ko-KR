@@ -1,11 +1,11 @@
 ---
 title: 보안을 향상하도록 docroot 수정
-description: Adobe Commerce 또는 Magento Open Source 온-프레미스 파일 시스템에 대한 무단 브라우저 기반 액세스를 차단합니다.
+description: Adobe Commerce 온-프레미스 파일 시스템에 대한 무단 브라우저 기반 액세스를 차단합니다.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ server {
 - MySQL(5.7+)
 - PHP (7.4)
 - Elasticsearch(7.x) 또는 OpenSearch(1.2)
-- Adobe Commerce 또는 Magento Open Source(2.4+)
+- Adobe Commerce (2.4+)
 
 >[!NOTE]
 >

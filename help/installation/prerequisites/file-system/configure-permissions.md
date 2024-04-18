@@ -2,16 +2,16 @@
 title: 파일 소유권 및 권한 구성
 description: Adobe Commerce의 온-프레미스 설치에 대한 파일 시스템 권한을 구성하려면 다음 단계를 따르십시오.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
 # 파일 소유권 및 권한 구성
 
-이 항목에서는 Adobe Commerce 또는 Magento Open Source을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정하는 방법에 대해 설명합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 이 작업이 필요합니다.
+이 항목에서는 Adobe Commerce을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정하는 방법에 대해 설명합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 이 작업이 필요합니다.
 
 사용하는 절차는 사용 여부에 따라 다릅니다 [공유 호스팅](#set-permissions-for-one-user-on-shared-hosting) 사용자가 한 명 있거나 [비공개 서버](#set-ownership-and-permissions-for-two-users) 및 에는 두 명의 사용자가 있습니다.
 

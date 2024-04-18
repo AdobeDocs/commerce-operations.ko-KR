@@ -2,9 +2,9 @@
 title: 업그레이드 수행
 description: Adobe Commerce의 온-프레미스 배포를 업그레이드하려면 다음 단계를 따르십시오.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 업그레이드 수행
 
-업그레이드할 수 있습니다 _온-프레미스_ 다음 방법으로 소프트웨어를 설치한 경우 명령줄에서 Adobe Commerce 또는 Magento Open Source 애플리케이션 배포:
+업그레이드할 수 있습니다 _온-프레미스_ 다음 방법으로 소프트웨어를 설치한 경우 명령줄에서 Adobe Commerce 애플리케이션 배포:
 
 - 다음을 사용하여 작성기 메타패키지 다운로드 `composer create-project` 명령입니다.
 - 압축된 아카이브를 설치하는 중입니다.
@@ -110,7 +110,7 @@ ht-degree: 0%
 
    - `<product>` —(필수) 업그레이드할 패키지입니다. 온-프레미스 설치의 경우 이 값은 다음 중 하나여야 합니다 `product-community-edition` 또는 `product-enterprise-edition`.
 
-   - `<version>` — (필수) 업그레이드 중인 Adobe Commerce 또는 Magento Open Source 버전입니다. 예를 들어, `2.4.3`.
+   - `<version>` —(필수) 업그레이드 중인 Adobe Commerce 버전입니다. 예를 들어, `2.4.3`.
 
    - `--no-update` —(필수) 종속성에 대한 자동 업데이트를 비활성화합니다.
 

@@ -1,17 +1,17 @@
 ---
 title: 구성 안내서 개요
-description: Adobe Commerce 또는 Magento Open Source 애플리케이션에 대해 구성 가능한 모든 기능 및 서비스에 대해 알아봅니다.
+description: Adobe Commerce 애플리케이션의 구성 가능한 모든 기능 및 서비스에 대해 알아봅니다.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # 구성 안내서
 
-다음 _구성_ 안내서에서는 구성 가능한 Commerce 애플리케이션 기능 및 서비스를 관리하기 위한 참조 자료 및 제한된 지침을 제공합니다. Commerce 응용 프로그램을 구성하는 기술 사용자는 다음 영역에 대한 지침을 찾을 수 있습니다.
+다음 _구성_ 안내서에서는 구성 가능한 Commerce 애플리케이션 기능 및 서비스를 관리하기 위한 참조 자료 및 제한된 지침을 제공합니다. Commerce 애플리케이션 구성을 담당하는 기술 사용자는 다음 영역에 대한 지침을 찾을 수 있습니다.
 
 - [설치](../configuration/bootstrap/initialization.md)
 - [배포 메서드](../configuration/deployment/overview.md)
@@ -29,4 +29,4 @@ ht-degree: 0%
 
 ## 클라우드 구성
 
-[!DNL Commerce on cloud infrastructure] 를 사용합니다. [구성 파일 세트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) 를 사용하여 호스팅된 환경에서 Commerce 애플리케이션 기능 및 서비스를 업데이트할 수 있습니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 을 검토해야 합니다. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 추가 구성 요구 사항
+[!DNL Commerce on cloud infrastructure] 를 사용합니다. [구성 파일 세트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) : 호스팅된 환경에서 Commerce 애플리케이션 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 을 검토해야 합니다. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 추가 구성 요구 사항

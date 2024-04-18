@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 * 검색 엔진은 웹 서버와 동일한 호스트에서 실행됩니다. 다른 호스트에서 검색 엔진 및 웹 서버를 실행하는 것은 이 항목의 범위를 벗어납니다.
 
-  검색 엔진과 웹 서버를 동일한 호스트에 배치하는 장점은 암호화된 통신을 가로채는 것을 불가능하게 만든다는 것이다. 검색 엔진 웹 서버는 Adobe Commerce 또는 Magento Open Source 웹 서버와 동일하지 않아도 됩니다. 예를 들어 Adobe Commerce은 Apache를 실행할 수 있고 Elasticsearch/OpenSearch는 nginx를 실행할 수 있습니다.
+  검색 엔진과 웹 서버를 동일한 호스트에 배치하는 장점은 암호화된 통신을 가로채는 것을 불가능하게 만든다는 것이다. 검색 엔진 웹 서버는 Adobe Commerce 웹 서버와 동일하지 않아도 됩니다. 예를 들어 Adobe Commerce은 Apache를 실행할 수 있고 Elasticsearch/OpenSearch는 nginx를 실행할 수 있습니다.
 
   검색 엔진이 공개 웹에 노출되는 경우 인증을 구성해야 합니다. 검색 엔진 인스턴스가 네트워크 내에서 보호되는 경우 필요하지 않을 수 있습니다. 호스팅 공급자와 협력하여 인스턴스를 보호하기 위해 구현해야 하는 보안 조치를 결정하십시오.
 

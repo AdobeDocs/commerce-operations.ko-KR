@@ -2,9 +2,9 @@
 title: 메시지 브로커
 description: '다음 단계에 따라 필요한 메시지 브로커 소프트웨어(예: [!DNL RabbitMQ]) Adobe Commerce의 온-프레미스 설치용'
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Adobe Commerce은 [!DNL RabbitMQ] 오픈 소스 메시지 브로커. 신뢰할 �
 
 메시지 큐는 메시지의 발신자와 수신자가 서로 접촉하지 않는 비동기 통신 메커니즘을 제공한다. 메시지 대기열과 동시에 통신할 필요도 없습니다. 보낸 사람이 메시지를 대기열에 넣으면 받는 사람이 메시지를 받을 때까지 저장됩니다.
 
-Adobe Commerce 또는 Magento Open Source을 설치하기 전에 메시지 대기열 시스템을 설정해야 합니다. 기본 시퀀스는 다음과 같습니다.
+Adobe Commerce을 설치하기 전에 메시지 큐 시스템을 설정해야 합니다. 기본 시퀀스는 다음과 같습니다.
 
 1. 설치 [!DNL RabbitMQ] 및 모든 사전 요구 사항
-1. 연결 [!DNL RabbitMQ] Adobe Commerce 또는 Magento Open Source에 전송됩니다.
+1. 연결 [!DNL RabbitMQ] Adobe Commerce으로.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ sudo apt install -y rabbitmq-server
 
 ## 다음으로 설치 [!DNL RabbitMQ] 및 연결
 
-Adobe Commerce 또는 Magento Open Source을 설치하는 경우 _이후_ 을(를) 설치하는 중입니다. [!DNL RabbitMQ]를 클릭하고 설치하는 동안 다음 명령줄 매개 변수를 추가합니다.
+Adobe Commerce을 설치하는 경우 _이후_ 을(를) 설치하는 중입니다. [!DNL RabbitMQ]를 클릭하고 설치하는 동안 다음 명령줄 매개 변수를 추가합니다.
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -90,7 +90,7 @@ Adobe Commerce 또는 Magento Open Source을 설치하는 경우 _이후_ 을(�
 
 ## 연결 [!DNL RabbitMQ]
 
-이미 Adobe Commerce 또는 Magento Open Source이 설치되어 있고 이 파일을 연결하려는 경우 [!DNL RabbitMQ], 추가 `queue` 의 섹션 `<install_directory>/app/etc/env.php` 다음과 유사하도록 파일을 생성합니다.
+Adobe Commerce이 이미 설치되어 있고 연결하려는 경우 [!DNL RabbitMQ], 추가 `queue` 의 섹션 `<install_directory>/app/etc/env.php` 다음과 유사하도록 파일을 생성합니다.
 
 ```php
 'queue' =>

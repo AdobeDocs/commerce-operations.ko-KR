@@ -1,10 +1,10 @@
 ---
 title: 데이터베이스 스키마 및 데이터 업그레이드
-description: Adobe Commerce 또는 Magento Open Source 데이터베이스 스키마를 업그레이드하려면 다음 단계를 따르십시오.
+description: Adobe Commerce 데이터베이스 스키마를 업그레이드하려면 다음 단계를 따르십시오.
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 업그레이드를 위한 유지 관리 모드 옵션
-description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 또는 Magento Open Source 상점 전면에서 볼 수 있는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
+description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 상점 첫 화면에서 볼 수 있는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
