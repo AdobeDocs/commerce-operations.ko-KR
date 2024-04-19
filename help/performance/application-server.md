@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: a1e548c1b1bffd634e0d5b1df0a77ef65c5997f8
+source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -360,3 +360,40 @@ GraphQL Application Server가 비활성화된 후:
 ### 기능 테스트
 
 확장 개발자는 GraphQL Application Server를 배포하는 동안 GraphQL에 대한 WebAPI 기능 테스트와 GraphQL에 대한 사용자 지정 자동화된 기능 테스트 또는 수동 기능 테스트를 실행해야 합니다. 이러한 기능 테스트는 개발자가 잠재적인 오류나 호환성 문제를 식별하는 데 도움이 됩니다.
+
+#### 상태 모니터 모드
+
+기능 테스트(또는 수동 테스트)를 실행하는 동안 애플리케이션 서버는 `--state-monitor mode` 상태가 의도하지 않게 재사용되는 클래스를 찾는 데 도움이 되도록 활성화되었습니다. 응용 프로그램 서버를 정상적으로 시작합니다. 단, `--state-monitor` 매개 변수.
+
+```
+bin/magento server:run --state-monitor
+```
+
+각 요청이 처리되면 새 파일이에 추가됩니다 `tmp` 디렉토리(예: ) `var/tmp/StateMonitor-thread-output-50-6nmxiK`. 테스트를 마치면 이러한 파일을 `bin/magento server:state-monitor:aggregate-output` 명령: 하나는 병합된 파일 두 개를 `XML` 및 1인치 `JSON`.
+
+예:
+
+```
+/var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
+/var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
+```
+
+GraphQlStateTest와 같은 서비스 개체의 수정된 속성을 표시하는 XML 또는 JSON을 보는 데 사용하는 도구로 이러한 파일을 검사할 수 있습니다. 다음 `--state-monitor` 모드에서는 GraphQlStateTest와 동일한 건너뛰기 목록 및 필터 목록을 사용합니다.
+
+>[!NOTE]
+>
+>를 사용하지 마십시오. `--state-monitor` 프로덕션의 모드 개발 및 테스트용으로만 설계되었습니다. 많은 출력 파일을 만들고 평소보다 느리게 실행됩니다.
+
+>[!NOTE]
+>
+>`--state-monitor` 은(는) PHP 버전과 호환되지 않습니다. `8.3.0` - `8.3.4` PHP 가비지 수집기의 버그로 인해. PHP 8.3을 사용하는 경우 `8.3.5` 또는 이 기능을 사용하려면 그 이상이 필요합니다.
+
+## 알려진 문제
+
+### 작업자 스레드가 종료되는 경우 요청이 손실됩니다.
+
+작업자 스레드에 문제가 있어 작업자 스레드가 종료되는 경우 동일한 작업자 스레드에 이미 큐에 있는 모든 HTTP 요청은 TCP 소켓 연결을 재설정합니다. 서버 앞에 NGIX와 같은 역방향 프록시가 있으면 이러한 오류가 다음과 같이 표시됩니다. `502` 오류. 작업자는 충돌로 사망할 수 있습니다, 메모리 킬러 또는 서드파티 확장의 PHP 오류. Swool HTTP Server의 기본 동작으로 인해 이 문제가 발생합니다. 기본적으로 HTTP 서버는에서 시작됩니다 `SWOOLE_BASE` 모드. 이 모드에서 들어오는 HTTP 요청은 작업자 스레드가 여전히 이전 요청을 처리 중인 경우에도 큐의 작업자 스레드에 할당됩니다. 이 항목을 로 변경하면 `SWOOLE_PROCESS` 그러면 주요 프로세스에 의해 연결이 유지되고 훨씬 더 많은 프로세스 간 통신을 사용합니다. 에 대한 단점 `SWOOLE_PROCESS` 그것은 PHP ZTS를 지원하지 않는다는 것입니다. 읽기 [Swool 설명서](https://wiki.swoole.com/en/#/learn?id=swoole_process) 추가 정보.
+
+### 애플리케이션 서버는 특정 조건에서 이전 속성 구성을 사용할 수 있습니다.
+
+다음 `CatalogGraphQl\Model\Config\AttributeReader` 위치: `2.4.7` GraphQL 요청이 이전 특성 구성 상태를 사용하여 응답을 받게 하는 드문 버그가 포함되어 있습니다. 이에 대한 수정 사항이에 게재됨 `2.4-develop`, 하지만 다음 시간 내 아님: `2.4.7` 릴리스.
