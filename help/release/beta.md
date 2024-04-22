@@ -2,9 +2,9 @@
 title: 베타 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 07e616b26784a6e2e8994efc5816a5005619b5bb
+source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Adobe Commerce 베타 프로그램은 판매자가 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, Adobe Commerce의 미래를 안내할 수 있는 방법입니다. 베타 프로그램에는 두 가지 유형이 있습니다.
 
 - 공개 베타: 공개 베타 프로그램은 모든 Adobe Commerce 고객 및 파트너가 사용할 수 있습니다
-- 비공개 Bata: 비공개 베타 프로그램에 참여하려면 자격 기준에 따라 승인이 필요할 수 있습니다
+- 비공개 베타: 비공개 베타 프로그램에 참여하려면 자격 기준에 따른 승인이 필요할 수 있습니다
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ Adobe Commerce과 Adobe Experience Platform 간의 데이터 공유 기능을 �
 
 #### 명명 규칙 및 일정
 
-Adobe은 1년에 두 번 베타 패치를 출시할 예정입니다. 첫 번째 베타 패치는 일반적으로 새로운 핵심 애플리케이션 패치 릴리스의 공식 출시 후 3개월 후에 릴리스됩니다.
+Adobe은 일반적으로 1년에 두 번 베타 패치를 출시합니다.
 
 베타 릴리스 패키지에는 `-betaX` 접미사. 예를 들어 Adobe Commerce 2.4.7 베타 릴리스 패키지는 다음 명명 규칙을 사용합니다.
 
