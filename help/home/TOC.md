@@ -1,11 +1,11 @@
 ---
 user-guide-title: 운영 안내서
-user-guide-description: Adobe Commerce 애플리케이션 유지 관리의 운영 측면에 대해 알아봅니다.
+user-guide-description: Adobe Commerce 애플리케이션 유지 관리의 운영 방식에 대해 알아봅니다.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 5%
+ht-degree: 26%
 
 ---
 
