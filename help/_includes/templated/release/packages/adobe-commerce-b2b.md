@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 24c075622b569948292ca09136d4ac9225f33c18
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Commerce용 B2B는 Composer를 사용하여 PHP 패키지를 관리합니다.
 
-다음 `composer.json` 파일은 패키지 목록을 선언하지만 `composer.lock` 파일에는 Adobe Commerce 설치를 빌드하는 데 사용되는 패키지의 전체 목록(각 패키지 및 해당 종속 항목의 전체 버전)이 저장됩니다.
+다음 `composer.json` 파일은 패키지 목록을 선언하지만 `composer.lock` 파일은 Adobe Commerce용 B2B 설치를 빌드하는 데 사용되는 패키지의 전체 목록(각 패키지 및 해당 종속 항목의 전체 버전)을 저장합니다.
 
 다음 참조 설명서는 `composer.lock` 파일 및 Adobe Commerce 1.4.2용 B2B에 포함된 필수 패키지가 포함됩니다.
 
