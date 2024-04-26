@@ -1,80 +1,35 @@
 ---
-keywords: Adobe Commerce;홈;인기 있는 주제
-title: 홈
+title: 운영 안내서 홈
 description: Adobe Commerce 시스템 관리 및 운영 제품 설명서의 색인을 찾아봅니다.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
+source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 18%
+source-wordcount: '198'
+ht-degree: 20%
 
 ---
 
+
 # Adobe Commerce 운영 안내서
 
-Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개념, 프로세스, 도구 및 모범 사례에 대한 실용적인 정보를 얻을 수 있습니다.
+이 안내서 컬렉션을 사용하여 Adobe Commerce 프로젝트를 계획, 구성, 배포 및 유지 관리하기 위한 시스템 관리 개념, 프로세스, 도구 및 모범 사례에 대해 알아보십시오.
+
+## 계획 및 지침
 
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
-      <img alt="릴리스 정보" src="../assets/icons/promote.svg" width="40" height="40"/>
+    <a href="../release/latest.md">
+      <img alt="릴리스 정보" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>릴리스 정보</strong></a>
+      <a href="../release/latest.md"><strong>릴리스 정보</strong></a>
       <p>Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 검토하십시오.</p>
     </div>
   </td>
   <td valign="top">
-    <a href="../installation/overview.md">
-      <img alt="설치" src="../assets/icons/servers.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../installation/overview.md"><strong>설치</strong></a>
-      <p>온-프레미스 배포용 Adobe Commerce을 설치하는 방법에 대해 알아봅니다.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../configuration/overview.md">
-      <img alt="구성" src="../assets/icons/settings.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../configuration/overview.md"><strong>구성</strong></a>
-      <p>Adobe Commerce 애플리케이션에 대한 기능 및 서비스를 구성합니다.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="데이터 마이그레이션" src="../assets/icons/move-to.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>데이터 마이그레이션</strong></a>
-      <p>Magento 1과 Magento 2 간의 데이터 마이그레이션 프로세스에 대해 알아봅니다.</p>
-    </div>
-  </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../upgrade/overview.md">
-      <img alt="업그레이드" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="../upgrade/overview.md"><strong>업그레이드</strong></a>
-      <p>Adobe Commerce 프로젝트를 업그레이드하여 스토어를 안전하게 보호하고 효율적으로 운영하는 방법을 알아봅니다.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
-       <img alt="명령줄 도구 참조" src="../assets/icons/page-rule.svg" width="40" height="40"/>
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>명령줄 도구 참조</strong></a>
-      <p>Adobe Commerce 명령줄 도구의 명령, 인수 및 옵션에 대해 알아봅니다.</p>
-    </div>
-  </td>
-  <td valign="top">
     <a href="../performance/overview.md">
-       <img alt="성능" src="../assets/icons/gauge.svg" width="40" height="40"/>
+       <img alt="성능" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
       <a href="../performance/overview.md"><strong>성능 모범 사례</strong></a>
@@ -82,19 +37,19 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
     </div>
   </td>
   <td valign="top">
-    <a href="../tools/overview.md">
-       <img alt="도구" src="../assets/icons/wrench.svg" width="40" height="40"/>
+    <a href="../security-and-compliance/overview.md">
+       <img alt="엔터프라이즈" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>도구</strong></a>
-      <p>Adobe Commerce에서 사용할 수 있는 도구에 대해 알아봅니다.</p>
+      <a href="../security-and-compliance/overview.md"><strong>보안 및 규정 준수</strong></a>
+      <p>Adobe Commerce 판매자가 보안 환경을 유지 관리하는 방법을 알아봅니다.</p>
     </div>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="구현" src="../assets/icons/play.svg" width="40" height="40"/>
+      <img alt="구현" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>구현 플레이북</strong></a>
@@ -103,7 +58,7 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
   </td>
   <td valign="top">
     <a href="../operational-playbook/overview.md">
-       <img alt="작업" src="../assets/icons/refresh.svg" width="40" height="40"/>
+       <img alt="작업" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>운영 플레이북</strong></a>
@@ -111,21 +66,55 @@ Adobe Commerce 프로젝트를 개발, 배포 및 유지 관리하기 위한 개
     </div>
   </td>
   <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="엔터프라이즈" src="../assets/icons/enterprise.svg" width="40" height="40"/>
+    <a href="../commerce-at-scale/overview.md">
+       <img alt="엔터프라이즈" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>규모에 맞는 상거래</strong></a>
       <p>Adobe Commerce와 Adobe Experience Manager를 사용하여 규모에 맞게 경험을 제공하는 방법에 대해 알아봅니다.</p>
     </div>
   </td>
+</tr>
+</table>
+
+## 시스템 관리
+
+<table>
+<tr>
   <td valign="top">
-    <a href="../security-and-compliance/overview.md">
-       <img alt="엔터프라이즈" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    <a href="../installation/overview.md">
+      <img alt="설치(온-프레미스)" src="../assets/icons/servers.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>보안 및 규정 준수</strong></a>
-      <p>Adobe Commerce 판매자가 보안 환경을 유지 관리하는 방법을 알아봅니다.</p>
+      <a href="../installation/overview.md"><strong>설치</strong></a>
+      <p>온-프레미스 배포용 Adobe Commerce을 설치하는 방법에 대해 알아봅니다.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../configuration/overview.md">
+      <img alt="구성" src="../assets/icons/settings.svg" width="40"/>
+    </a>
+    <div>
+      <a href="../configuration/overview.md"><strong>구성</strong></a>
+      <p>Adobe Commerce 애플리케이션에 대한 기능 및 서비스를 구성합니다.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../upgrade/overview.md">
+      <img alt="업그레이드" src="../assets/icons/upload-cloud.svg" width="40"/>
+    </a>
+    <div>
+      <a href="../upgrade/overview.md"><strong>업그레이드</strong></a>
+      <p>Adobe Commerce 프로젝트를 업그레이드하여 스토어를 안전하게 보호하고 효율적으로 운영하는 방법을 알아봅니다.</p>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="../tools/overview.md">
+       <img alt="도구" src="../assets/icons/wrench.svg" width="40"/>
+    </a>
+    <div>
+      <a href="../tools/overview.md"><strong>도구</strong></a>
+      <p>Adobe Commerce에서 사용할 수 있는 도구에 대해 알아봅니다.</p>
     </div>
   </td>
 </tr>

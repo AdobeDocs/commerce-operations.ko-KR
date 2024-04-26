@@ -2,10 +2,10 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 2%
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 2%
    - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
+- 명령줄 도구 참조 {#cli-reference}
+   - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
+   - [Magento Open Source](reference/magento-open-source.md)
+   - [업그레이드 호환성 도구](reference/uct.md)
 - Adobe Commerce 관찰 {#observation-for-adobe-commerce}
    - [소개](observation-for-adobe-commerce/intro.md)
    - [액세스 방법](observation-for-adobe-commerce/access.md)
@@ -61,7 +65,7 @@ ht-degree: 2%
       - [전제 조건](data-migration-tool/prerequisites.md)
       - [설치](data-migration-tool/install.md)
       - [업그레이드](data-migration-tool/upgrade.md)
-      - [Configure](data-migration-tool/configure.md)
+      - [구성](data-migration-tool/configure.md)
       - [사용자 지정](data-migration-tool/customize.md)
       - [기술 사양](data-migration-tool/technical-specification.md)
    - 데이터 마이그레이션 {#migrate-data}
