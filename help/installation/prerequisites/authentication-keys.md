@@ -2,9 +2,9 @@
 title: 인증 키 받기
 description: repo.magento.com에서 Adobe Commerce Composer 패키지에 액세스하기 위해 자격 증명을 검색하려면 다음 단계를 따르십시오.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Commerce 패키지에 대한 액세스 권한을 얻으려면 해당 패�
 >만약 [오류](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), 패키지에 액세스할 수 있는 권한이 없거나 계정의 미결 송장으로 인해 액세스 권한이 만료되었을 수 있습니다.
 >
 >* 귀하가 계정에서 기본 담당자 사용자인 경우 계정에 미결 송장이 나열되어 있지 않은지 확인하십시오.
->* 기본 담당자가 제공한 키가 작동하지 않고 계정에 미결 청구서가 없는 경우 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 기본 연락처의 MAGEID 사용에 대한 지원이 필요합니다.
+>* 기본 담당자가 제공한 키가 작동하지 않고 계정에 미결 청구서가 없는 경우 기본 담당자가 연락해야 합니다. [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 도움이 필요하신가요?
 
 인증 키를 만들려면 다음을 수행하십시오.
 
