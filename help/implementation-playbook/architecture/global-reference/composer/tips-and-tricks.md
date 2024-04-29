@@ -3,13 +3,15 @@ title: 작성기 팁 및 요령
 description: 빠른 문제 해결을 위한 일반적인 Composer 개발 작업 및 지침에 대해 알아봅니다.
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 5ead5fb1-3bb3-4e77-a4f1-8e10c4f91efb
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
-
 
 # 작성기 팁 및 요령
 

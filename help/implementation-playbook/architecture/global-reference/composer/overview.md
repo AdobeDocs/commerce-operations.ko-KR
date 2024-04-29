@@ -3,13 +3,15 @@ title: 작성기 개발
 description: '''vendor/'' 디렉터리에서 바로 Composer 모듈을 개발하는 방법에 대해 알아봅니다.'
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 7664ffb5-2e46-49c3-b2e6-c133c35d2f6b
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
-
 
 # 작성기 개발
 
