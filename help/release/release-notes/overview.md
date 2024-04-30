@@ -2,9 +2,9 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: 466256a0dfd915fe0f0c02d377ce724cd311463c
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '291'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 3%
 
 >[!TIP]
 >
->업그레이드에 대한 자세한 내용은 [권장 읽기](../../upgrade/resources/recommended-reading.md).
+>- Adobe Commerce을 처음 사용하는 경우 다음을 참조하십시오. [엔터프라이즈 아키텍처](../../implementation-playbook/architecture/enterprise-blueprint.md) 및 [Adobe Commerce 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) 방향을 잡아야 할 주제입니다.
+>- 업그레이드에 대한 자세한 내용은 [권장 읽기](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>

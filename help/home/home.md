@@ -2,7 +2,7 @@
 title: 운영 안내서 홈
 description: Adobe Commerce 시스템 관리 및 운영 제품 설명서의 색인을 찾아봅니다.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 20%
@@ -19,11 +19,11 @@ ht-degree: 20%
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="릴리스 정보" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>릴리스 정보</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>릴리스 정보</strong></a>
       <p>Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 검토하십시오.</p>
     </div>
   </td>
