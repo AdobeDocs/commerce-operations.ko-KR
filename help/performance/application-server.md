@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 81320626a83e26a55f9ec14ce8cb706753b44269
+source-git-commit: 9ffcbaa9a16315fe9c7d8ac4c4351ebe3fb27612
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -391,13 +391,3 @@ GraphQlStateTest와 같은 서비스 개체의 수정된 속성을 표시하는 
 >[!NOTE]
 >
 >`--state-monitor` 은(는) PHP 버전과 호환되지 않습니다. `8.3.0` - `8.3.4` PHP 가비지 수집기의 버그로 인해. PHP 8.3을 사용하는 경우 `8.3.5` 또는 이 기능을 사용하려면 그 이상이 필요합니다.
-
-## 알려진 문제
-
-### 작업자 스레드가 종료되는 경우 요청이 손실됩니다.
-
-작업자 스레드에 문제가 있어 작업자 스레드가 종료되는 경우 동일한 작업자 스레드에 이미 큐에 있는 모든 HTTP 요청은 TCP 소켓 연결을 재설정합니다. 서버 앞에 NGIX와 같은 역방향 프록시가 있으면 이러한 오류가 다음과 같이 표시됩니다. `502` 오류. 작업자는 충돌로 사망할 수 있습니다, 메모리 킬러 또는 서드파티 확장의 PHP 오류. Swool HTTP Server의 기본 동작으로 인해 이 문제가 발생합니다. 기본적으로 HTTP 서버는에서 시작됩니다 `SWOOLE_BASE` 모드. 이 모드에서 들어오는 HTTP 요청은 작업자 스레드가 여전히 이전 요청을 처리 중인 경우에도 큐의 작업자 스레드에 할당됩니다. 이 항목을 로 변경하면 `SWOOLE_PROCESS` 그러면 주요 프로세스에 의해 연결이 유지되고 훨씬 더 많은 프로세스 간 통신을 사용합니다. 에 대한 단점 `SWOOLE_PROCESS` 그것은 PHP ZTS를 지원하지 않는다는 것입니다. 읽기 [Swool 설명서](https://wiki.swoole.com/en/#/learn?id=swoole_process) 추가 정보.
-
-### 애플리케이션 서버는 특정 조건에서 이전 속성 구성을 사용할 수 있습니다.
-
-다음 `CatalogGraphQl\Model\Config\AttributeReader` 위치: `2.4.7` GraphQL 요청이 이전 특성 구성 상태를 사용하여 응답을 받게 하는 드문 버그가 포함되어 있습니다. 이에 대한 수정 사항이에 게재됨 `2.4-develop`, 하지만 다음 시간 내 아님: `2.4.7` 릴리스.
