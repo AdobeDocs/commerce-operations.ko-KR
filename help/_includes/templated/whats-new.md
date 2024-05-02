@@ -1,7 +1,7 @@
 ---
-source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
+source-git-commit: ccc1c6451556ac721d331adebf02db8226e75699
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '303'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2024년 4월 29일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 업데이트함 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct">UCT CLI 참조</a>.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae9b29601953f25ca28f253f557d547b200616a0">ae9b29</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2024년 4월 26일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 재구성했습니다. <em>운영 안내서</em> 홈 페이지(이 페이지)에서 <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">명령줄 도구 참조</a></em> 에 대한 안내서 <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview">도구</a></em> 가이드.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/839b4e26a7c5d662093c7c1eec3fd5883ed7706a">839b4e</a> (커밋)</td>
+    </tr>
+    <tr>
+      <td><p>새 항목 추가됨 <a href="https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html">요약 페이지</a> Adobe Summit.</p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1c2c75da7cda0e3c38ea904c98932472b618a3e5">1c2c75</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2024년 4월 15일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>소스</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>을(를) 업데이트함 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">베타</a> Adobe Commerce에 대해 사용 가능한 모든 베타에 대한 정보를 포함하는 페이지입니다.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a362cad66d38a89bacda656d1520047e22262179">a362ca</a> (커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024년 4월 9일
 
@@ -29,7 +95,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> (커밋)</td>
     </tr>
     <tr>
-      <td><p>의 릴리스 패키지 항목을 업데이트했습니다. <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> 에 대한 릴리스 패키지 항목을 추가했습니다. <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B for Commerce</a>.</p>
+      <td><p>의 릴리스 패키지 항목을 업데이트했습니다. <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> 에 대한 릴리스 패키지 항목을 추가했습니다. <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">Commerce용 B2B</a>.</p>
 </td>
       <td>주요 업데이트</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (커밋)</td>
