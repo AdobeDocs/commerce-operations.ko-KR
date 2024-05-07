@@ -2,9 +2,9 @@
 title: 공동 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
+source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 0%
 
 ---
@@ -900,6 +900,6 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | CPU 리소스, 데이터 센터, 디스크 공간 가용성 | R |   |
 | 급증 용량 또는 긴급 업사이징의 가용성 및 실행 | R |   |
 | 서지 용량 요청 중 |     | R |
-| 제한 대비 vCPU 사용량 모니터링 | R |   |
+| 제한에 대한 vCPU 사용량 모니터링 | R |   |
 
 {style="table-layout:auto"}
