@@ -2,9 +2,9 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 466256a0dfd915fe0f0c02d377ce724cd311463c
+source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '288'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,6 @@ ht-degree: 3%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">라이브 검색</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">결제 서비스</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">제품 Recommendations</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">빠른 체크아웃</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">서비스 커넥터</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">주문 처리 저장</a></li>
           </ul>

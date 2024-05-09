@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8ec54f9a62c0afbbbb332ba23a9a97f9ce2a3187
+source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '129'
 ht-degree: 6%
 
 ---
@@ -83,17 +83,6 @@ ht-degree: 6%
           <td>6.0.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">릴리스 정보</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>빠른 체크아웃</td>
-          <td>-</td>
-          <td>1.0.0+</td>
-          <td>1.2.0+</td>
-          <td>1.0.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-quick-checkout.html">마켓플레이스</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">릴리스 정보</a><br/>
           </td>
       </tr>
