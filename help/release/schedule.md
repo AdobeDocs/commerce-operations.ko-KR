@@ -2,9 +2,9 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 5d4204b842151c0dac0091ab286ba769e421cdf4
+source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '498'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,9 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
    <tr>
       <td colspan="3"><strong>범례</strong>
          <ul>
-            <li><strong><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce용 B2B 확장의 새로운 기능, 개선 사항 및 버그 수정 사항.</li>
-            <li><strong><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> 확장성</strong>—새로운 개발자 도구 및 서비스로 패치 릴리스와 별도로 제공되는 프로세스 종료 확장성 예: 관리자 UI SDK, 상업용 Adobe I/O 이벤트 및 API Mesh.</li>
-            <li><strong><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> 인프라</strong>—Adobe Commerce on Cloud Infrastructure 및 Cloud Tools Suite for Commerce 패키지의 새로운 기능 및 개선 사항으로, Cloud Platform에서 Adobe Commerce 설치 및 업그레이드를 배포하고 관리하도록 설계되었습니다.</li>
+           <li><strong><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce용 B2B 확장의 새로운 기능, 개선 사항 및 버그 수정 사항. B2B 확장 릴리스에 대한 자세한 내용은 [B2B 릴리스 노트](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하십시오.</li>
+            <li><strong><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> 확장성</strong>—새로운 개발자 도구 및 서비스로 패치 릴리스와 별도로 제공되는 프로세스 종료 확장성 예: 관리자 UI SDK, Commerce용 Adobe I/O 이벤트 및 API Mesh.</li>
+            <li><strong><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> 인프라</strong>—Adobe Commerce on cloud infrastructure 및 Commerce용 Cloud Tools Suite 패키지를 위한 Adobe Commerce의 새로운 기능과 개선 사항입니다. 이 패키지는 클라우드 플랫폼에서 설치 및 업그레이드를 배포하고 관리하도록 설계되었습니다.</li>
             <li><strong><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> 패치</strong>—보안, 규정 준수, 성능 및 높은 우선 순위 품질 수정 사항이 포함된 핵심 Adobe Commerce PHP 애플리케이션 업데이트입니다.</li>
             <li><strong><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> 서비스</strong>- 패치 릴리스와 별도로 제공되는 새로운 SaaS 기능입니다. 예를 들어 Catalog Service, Live Search 및 Product Recommendations이 있습니다.</li>
          </ul>
@@ -55,22 +55,22 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
   </tr>
   <tr>
     <td>2024년 4월 9일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
+    <td><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.7</a></strong>:<ul><li>성능 향상</li><li>품질 개선 사항</li><li>향상된 보안 기능</li><li>타사 종속성 업데이트</li></ul><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.6-p5, 2.4.5-p7, 2.4.4-p8</td>
   </tr>
   <tr>
     <td>2024년 6월 11일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
+    <td><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7-p1, 2.4.6-p6, 2.4.5-p8, 2.4.4-p9</td>
   </tr>
   <tr>
     <td>2024년 8월 13일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
+    <td><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
   </tr>
   <tr>
     <td>2024년 10월 8일</td>
-    <td><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
+    <td><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">확장성</a><br><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">인프라</a><br><img alt="서비스 기능 아이콘" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">서비스</a></td>
     <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">베타 패치</a>: 2.4.8-beta1<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
   </tr>
 </tbody>
