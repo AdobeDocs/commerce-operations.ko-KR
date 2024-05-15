@@ -1,24 +1,32 @@
 ---
-title: 높은 처리량 주문 처리
-description: Adobe Commerce 배포에 대한 주문 배치 및 체크아웃 경험을 최적화합니다.
+title: 체크아웃 성능 모범 사례
+description: Adobe Commerce 사이트에서 체크아웃 경험의 성능을 최적화하는 방법을 알아봅니다.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
 
-# 높은 처리량 주문 처리
 
-다음 모듈 세트를 구성하여 주문 배치 및 체크아웃 경험을 최적화할 수 있습니다 **대량 주문 처리**:
+# 체크아웃 성능 모범 사례
+
+다음 [체크아웃](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) Adobe Commerce의 프로세스는 storefront 경험의 중요한 측면입니다. 기본 제공 [장바구니](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) 및 [체크아웃](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) 기능.
+
+성능은 사용자 경험을 좋게 유지하는 데 중요합니다. 리뷰 [성능 벤치마크 요약](../implementation-playbook/infrastructure/performance/benchmarks.md) 성능 기대치에 대해 자세히 알아보십시오. 에 대해 다음 옵션을 구성하여 체크아웃 성능을 최적화할 수 있습니다. **대량 주문 처리**:
 
 - [AsyncOrder](#asynchronous-order-placement)- 대기열을 사용하여 주문을 비동기적으로 처리합니다.
 - [지연된 합계 계산](#deferred-total-calculation)- 체크아웃이 시작될 때까지 주문 합계에 대한 계산을 연기합니다.
-- [견적 로드 시 인벤토리 검사](#disable-inventory-check)—장바구니 항목의 인벤토리 유효성 검사를 건너뛰도록 선택합니다.
+- [장바구니 로드 시 인벤토리 확인](#disable-inventory-check)—장바구니 항목의 인벤토리 유효성 검사를 건너뛰도록 선택합니다.
+- [로드 밸런싱](#load-balancing)- MySQL 데이터베이스 및 Redis 인스턴스에 대한 보조 연결을 활성화합니다.
 
-AsyncOrder, 지연된 합계 계산 및 재고 검사 등의 모든 기능은 독립적으로 작동합니다. 세 가지 기능을 동시에 사용하거나 모든 조합으로 기능을 활성화 및 비활성화할 수 있습니다.
+AsyncOrder, 지연된 합계 계산 및 장바구니 로드 구성 옵션에 대한 인벤토리 검사는 모두 독립적으로 작동합니다. 세 가지 기능을 동시에 사용하거나 모든 기능을 조합하여 활성화 및 비활성화할 수 있습니다.
+
+>[!NOTE]
+>
+>사용자 지정 PHP 코드를 사용하여 기본 제공 장바구니 및 체크아웃 기능을 사용자 지정하지 마십시오. 잠재적인 성능 문제 외에도 사용자 정의 PHP 코드를 사용하면 복잡한 업그레이드 및 유지 관리 문제가 발생할 수 있습니다. 이러한 문제는 TCO를 증가시킵니다. PHP 기반 장바구니 및 체크아웃 사용자 지정이 불가피한 경우 [Adobe Commerce 마켓플레이스](https://commercemarketplace.adobe.com/)-승인된 확장만. 모든 Marketplace 확장은 [광범위한 검토](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) Adobe Commerce 코딩 표준 및 모범 사례를 충족하는지 확인하기 위해.
 
 ## 비동기 주문 배치
 
@@ -29,7 +37,7 @@ AsyncOrder, 지연된 합계 계산 및 재고 검사 등의 모든 기능은 �
 - **사용 가능한 제품**- 주문 상태가 다음으로 변경됨 _보류 중_, 제품 수량이 조정되고 주문 세부 사항이 포함된 이메일이 고객에게 전송되며 성공적인 주문 세부 사항이에서 볼 수 있게 됩니다. **주문 및 반품** 순서 재지정과 같이 실행 가능한 옵션이 있는 목록
 - **제품 품절 또는 공급 부족**- 주문 상태가 다음으로 변경됨 _거부됨_, 제품 수량이 조정되지 않고 문제에 대한 주문 세부 사항이 포함된 이메일이 고객에게 전송되며 거부된 주문 세부 사항은 다음에서 사용할 수 있습니다. **주문 및 반품** 실행할 수 있는 옵션이 없는 목록입니다.
 
-명령줄 인터페이스를 사용하여 이러한 기능을 활성화하거나 `app/etc/env.php` 파일에 정의된 해당 추가 정보 파일에 따른 파일 [_모듈 참조 안내서_][mrg].
+명령줄 인터페이스를 사용하여 이러한 기능을 활성화하거나 `app/etc/env.php` 파일에 정의된 해당 추가 정보 파일에 따른 파일 [_모듈 참조 안내서_](https://developer.adobe.com/commerce/php/module-reference/).
 
 **AsyncOrder를 활성화하려면**:
 
@@ -48,7 +56,7 @@ bin/magento setup:config:set --checkout-async 1
    ]
 ```
 
-다음을 참조하십시오 [AsyncOrder] 다음에서 _모듈 참조 안내서_.
+다음을 참조하십시오 [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/) 다음에서 _모듈 참조 안내서_.
 
 **AsyncOrder를 비활성화하려면**:
 
@@ -73,7 +81,7 @@ bin/magento setup:config:set --checkout-async 0
 
 ### AsyncOrder 호환성
 
-AsyncOrder는 제한된 집합 [!DNL Commerce] 기능.
+AsyncOrder는 제한된 Adobe Commerce 기능 세트를 지원합니다.
 
 | 범주 | 지원되는 기능 |
 |------------------|--------------------------------------------------------------------------|
@@ -93,14 +101,14 @@ AsyncOrder 모듈이 활성화되면 다음 REST 끝점 및 GraphQL 돌연변이
 
 **REST:**
 
-- `POST /V1/carts/mine/payment-information`
-- `POST /V1/guest-carts/:cartId/payment-information`
-- `POST /V1/negotiable-carts/:cartId/payment-information`
+- [`POST /V1/carts/mine/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartsminepayment-information#operation/PostV1CartsMinePaymentinformation)
+- [`POST /V1/guest-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIdpayment-information#operation/PostV1GuestcartsCartIdPaymentinformation)
+- [`POST /V1/negotiable-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/negotiable-cartscartIdpayment-information#operation/PostV1NegotiablecartsCartIdPaymentinformation)
 
 **GraphQL:**
 
-- [`placeOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-order.html)
-- [`setPaymentMethodAndPlaceOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-payment-place-order.html)
+- [`placeOrder`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/place-order/)
+- [`setPaymentMethodAndPlaceOrder`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/set-payment-place-order/)
 
 >[!INFO]
 >
@@ -118,7 +126,7 @@ AsyncOrder 모듈이 활성화되면 다음 REST 끝점 및 GraphQL 돌연변이
 
 다음 _지연된 합계 계산_ 모듈은 장바구니에 대해 요청되거나 최종 체크아웃 단계 동안 총 계산을 연기하여 체크아웃 프로세스를 최적화합니다. 활성화되면 고객이 장바구니에 제품을 추가할 때 소계만 계산됩니다.
 
-DeferredTotalCalculation은 **비활성화됨** 기본적으로. 명령줄 인터페이스를 사용하여 이러한 기능을 활성화하거나 `app/etc/env.php` 파일에 정의된 해당 추가 정보 파일에 따른 파일 [_모듈 참조 안내서_][mrg].
+지연된 합계 계산: **비활성화됨** 기본적으로. 명령줄 인터페이스를 사용하여 이러한 기능을 활성화하거나 `app/etc/env.php` 파일에 정의된 해당 추가 정보 파일에 따른 파일 [_모듈 참조 안내서_](https://developer.adobe.com/commerce/php/module-reference/).
 
 **DeferredTotalCalculation을 사용하려면**:
 
@@ -154,11 +162,11 @@ bin/magento setup:config:set --deferred-total-calculating 0
    ]
 ```
 
-다음을 참조하십시오 [지연된 총계 계산] 다음에서 _모듈 참조 안내서_.
+다음을 참조하십시오 [지연된 총계 계산](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/) 다음에서 _모듈 참조 안내서_.
 
 ### 고정 제품세
 
-DeferredTotalCalculation이 활성화되면 제품을 장바구니에 추가한 후 고정 제품 세금(FPT)이 제품 가격 및 미니 장바구니의 장바구니 소계에 포함되지 않습니다. 제품을 미니 장바구니에 추가할 때 FPT 계산이 연기됩니다. 최종 체크아웃으로 이동한 후 장바구니에 FPT가 올바르게 표시됩니다.
+이연 합계 계산이 활성화된 경우 장바구니에 제품을 추가한 후 고정 제품 세금(FPT)이 제품 가격 및 미니 장바구니의 장바구니 소계에 포함되지 않습니다. 제품을 미니 장바구니에 추가할 때 FPT 계산이 연기됩니다. 최종 체크아웃으로 이동한 후 장바구니에 FPT가 올바르게 표시됩니다.
 
 ## 인벤토리 검사 비활성화
 
@@ -166,13 +174,13 @@ DeferredTotalCalculation이 활성화되면 제품을 장바구니에 추가한 
 
 비활성화되면 장바구니에 제품을 추가할 때 재고 확인이 발생하지 않습니다. 이 인벤토리 검사를 건너뛸 경우 일부 재고 부족 시나리오에서 다른 유형의 오류가 발생할 수 있습니다. 인벤토리 검사 _항상_ 비활성화된 경우에도 주문 배치 단계에서 발생합니다.
 
-**장바구니 로드 시 인벤토리 확인 활성화** 는 기본적으로 활성화되어 있습니다(예로 설정). 장바구니를 로드할 때 인벤토리 검사를 비활성화하려면 다음을 설정하십시오. **[!UICONTROL Enable Inventory Check On Cart Load]** 끝 `No` 관리자 UI에서 **스토어** > **구성** > **카탈로그** > **인벤토리** > **스톡 옵션** 섹션. 다음을 참조하십시오 [글로벌 옵션 구성][global] 및 [카탈로그 인벤토리][inventory] 다음에서 _사용 안내서_.
+**장바구니 로드 시 인벤토리 확인 활성화** 는 기본적으로 활성화되어 있습니다(예로 설정). 장바구니를 로드할 때 인벤토리 검사를 비활성화하려면 다음을 설정하십시오. **[!UICONTROL Enable Inventory Check On Cart Load]** 끝 `No` 관리자 UI에서 **스토어** > **구성** > **카탈로그** > **인벤토리** > **스톡 옵션** 섹션. 다음을 참조하십시오 [글로벌 옵션 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) 및 [카탈로그 인벤토리](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) 다음에서 _사용 안내서_.
 
 ## 로드 밸런싱
 
 MySQL 데이터베이스 및 Redis 인스턴스에 대한 보조 연결을 활성화하면 서로 다른 노드에 대한 로드 밸런스를 조정할 수 있습니다.
 
-Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 를 편집하여 보조 연결을 구성할 수 있습니다. [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 의 값 `.magento.env.yaml` 파일. 한 노드만 읽기-쓰기 트래픽을 처리해야 하므로 변수를 로 설정합니다. `true` 그러면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. 값을 다음으로 설정 `false` 에서 기존 읽기 전용 연결 배열을 제거하려면 `env.php` 파일.
+Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 를 편집하여 보조 연결을 구성할 수 있습니다. [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) 의 값 `.magento.env.yaml` 파일. 한 노드만 읽기-쓰기 트래픽을 처리해야 하므로 변수를 로 설정합니다. `true` 그러면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. 값을 다음으로 설정 `false` 에서 기존 읽기 전용 연결 배열을 제거하려면 `env.php` 파일.
 
 의 예 `.magento.env.yaml` 파일:
 
@@ -182,11 +190,3 @@ stage:
     MYSQL_USE_SLAVE_CONNECTION: true
     REDIS_USE_SLAVE_CONNECTION: true
 ```
-
-<!-- link definitions -->
-
-[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
-[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
-[mrg]: https://developer.adobe.com/commerce/php/module-reference/
-[AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
-[지연된 총계 계산]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

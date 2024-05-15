@@ -1,12 +1,12 @@
 ---
 user-guide-title: 성능 모범 사례
-user-guide-description: 권장 사항을 사용하여 Adobe Commerce 프로덕션 배포의 성능을 최적화합니다.
+user-guide-description: 이러한 권장 사항을 사용하여 Adobe Commerce 프로덕션 배포의 성능을 최적화합니다.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 2%
+source-wordcount: '46'
+ht-degree: 4%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 2%
 - [하드웨어 권장 사항](hardware.md)
 - [소프트웨어 권장 사항](software.md)
 - [참조 아키텍처](reference-architecture.md)
-- [개발 환경 권장 사항](development-environment.md)
-- [구성 모범 사례](configuration.md)
+- [개발 환경](development-environment.md)
+- [체크아웃 프로세스](high-throughput-order-processing.md)
+- [구성](configuration.md)
 - [배포 흐름](deployment-flow.md)
-- [높은 처리량 주문 처리](high-throughput-order-processing.md)
 - 고급 개념 {#concepts}
    - [고급 설정](advanced-setup.md)
    - [고급 [!DNL JavaScript] 묶음](advanced-js-bundling.md)
