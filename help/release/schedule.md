@@ -2,7 +2,7 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobe 릴리스 [패치](versioning-policy.md#patch-release) 코어 Adobe Commer
    <tr>
       <td colspan="3"><strong>범례</strong>
          <ul>
-           <li><strong><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce용 B2B 확장의 새로운 기능, 개선 사항 및 버그 수정 사항. B2B 확장 릴리스에 대한 자세한 내용은 [B2B 릴리스 노트](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하십시오.</li>
+           <li><strong><img alt="B2B 기능 아이콘" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce용 B2B 확장의 새로운 기능, 개선 사항 및 버그 수정 사항. B2B 확장 릴리스에 대한 자세한 내용은 [B2B 릴리스 노트](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html)를 참조하십시오.</li>
             <li><strong><img alt="확장성 기능 아이콘" src="../assets/icons/brackets.svg"></img> 확장성</strong>—새로운 개발자 도구 및 서비스로 패치 릴리스와 별도로 제공되는 프로세스 종료 확장성 예: 관리자 UI SDK, Commerce용 Adobe I/O 이벤트 및 API Mesh.</li>
             <li><strong><img alt="인프라 기능 아이콘" src="../assets/icons/servers.svg"></img> 인프라</strong>—Adobe Commerce on cloud infrastructure 및 Commerce용 Cloud Tools Suite 패키지를 위한 Adobe Commerce의 새로운 기능과 개선 사항입니다. 이 패키지는 클라우드 플랫폼에서 설치 및 업그레이드를 배포하고 관리하도록 설계되었습니다.</li>
             <li><strong><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> 패치</strong>—보안, 규정 준수, 성능 및 높은 우선 순위 품질 수정 사항이 포함된 핵심 Adobe Commerce PHP 애플리케이션 업데이트입니다.</li>
