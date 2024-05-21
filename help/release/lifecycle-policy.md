@@ -2,9 +2,9 @@
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
+source-git-commit: 7df5edf2acba706fb01f58cc3749c4a2bf136fc5
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '426'
 ht-degree: 5%
 
 ---
@@ -22,22 +22,25 @@ Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
 
 - Adobe은 고객이 Adobe Commerce에 대한 3년의 지원 기간을 사용하는 동안 수명이 종료될 수 있는 타사 서비스 및 소프트웨어 종속성(PHP 및 MySQL 등)에 대한 보안 및 품질 수정 사항을 제공하지 않습니다. 다음을 참조하십시오. [시스템 요구 사항](../installation/system-requirements.md) 테스트되고 지원되는 타사 기술에 대한 전체 목록입니다.
 
+- Adobe은 고객이 보안 전용 패치 릴리스의 범위에서 Adobe Commerce에 대한 지원 기간 3년을 진행하는 동안 타사 서비스 및 소프트웨어 종속성과의 호환성을 제공하지만, 이전 버전과 호환되지 않는 변경 사항을 도입하지 않고도 가능한 경우에만 가능합니다.
+
 ## 소프트웨어 지원 종료
 
-| 릴리스 | 일반 가용성 | 소프트웨어 지원 종료<sup>1</sup> | 종속 PHP 버전 |
-|----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 2024년 4월 9일 | 2027년 4월 9일 | 8.2 및 8.3 |
-| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 3월 14일 | 8.1 및 8.2 |
-| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | 8.1 |
-| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 24일 | 8.1 |
+| 릴리스 | 일반 가용성 | 소프트웨어 지원 종료<sup>1</sup> | 종속 PHP 버전 | 종속 MariaDB 버전 |
+|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | 2024년 4월 9일 | 2027년 4월 9일 | 8.2 및 8.3 | 10.6 |
+| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 3월 14일 | 8.1 및 8.2 | 10.6 |
+| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | 8.1 | 10.5<sup>2</sup> |
+| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 24일 | 8.1 | 10.5<sup>3</sup> |
 
 {style="table-layout:auto"}
 
-<sup>1 소프트웨어 지원 종료에는 품질 수정 및 보안 수정 종료가 모두 포함됩니다.</sup><br>
-
 >[!NOTE]
 >
->다음을 참조하십시오 [소프트웨어 수명 주기 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> 소프트웨어 지원 종료에는 품질 수정 및 보안 수정 종료가 모두 포함됩니다.
+>- <sup>2</sup> 2.4.5-p8 보안 패치부터
+>- <sup>3</sup> 2.4.4-p9 보안 패치부터 시작합니다.
+>- 다음을 참조하십시오 [소프트웨어 수명 주기 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
