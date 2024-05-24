@@ -1,11 +1,11 @@
 ---
 title: 구성 안내서 개요
-description: Adobe Commerce 애플리케이션의 구성 가능한 모든 기능 및 서비스에 대해 알아봅니다.
+description: Adobe Commerce 애플리케이션에 대해 구성 가능한 모든 기능 및 서비스에 대해 알아보십시오.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 

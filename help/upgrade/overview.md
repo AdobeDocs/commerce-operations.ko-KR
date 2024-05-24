@@ -1,11 +1,11 @@
 ---
 title: 업그레이드 프로세스 개요
-description: Adobe Commerce 프로젝트를 업그레이드하여 스토어를 안전하게 보호하고 효율적으로 운영하는 방법에 대해 알아봅니다.
+description: Adobe Commerce 프로젝트를 업그레이드하여 상점의 보안과 운영을 효율적으로 유지하는 방법에 대해 알아봅니다.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
