@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
+source-git-commit: 7cdaeec902235898bb27914a1b39a551f26d26e2
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,6 @@ ht-degree: 3%
    - [릴리스 정보](quality-patches-tool/release-notes.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
-   - [Magento Open Source](reference/magento-open-source.md)
    - [업그레이드 호환성 도구](reference/uct.md)
 - Adobe Commerce 관찰 {#observation-for-adobe-commerce}
    - [소개](observation-for-adobe-commerce/intro.md)
