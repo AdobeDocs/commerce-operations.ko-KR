@@ -1,7 +1,7 @@
 ---
-source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
+source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '719'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,12 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
    >**참고:** 다음에서 스크립트를 실행해야 합니다. `_jekyll` 디렉토리. 스크립트를 처음 실행하는 경우 먼저 Ruby 종속성을 `bundle install` 명령입니다.
 
+1. 다음으로 돌아가기 `root` 디렉토리.
+
+   ```
+   cd ..
+   ```
+
 1. 예상 값 확인 `help/_includes/templated` 파일이 수정되었습니다.
 
    ```
@@ -122,7 +128,15 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. 변경 사항을 푸시합니다.
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
    ```
 
 에 대한 자세한 내용은 Jekyll 설명서 를 참조하십시오. [데이터 파일](https://jekyllrb.com/docs/datafiles), [액체 필터](https://jekyllrb.com/docs/liquid/filters/)및 기타 기능.
