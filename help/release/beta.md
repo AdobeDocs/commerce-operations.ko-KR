@@ -2,9 +2,9 @@
 title: 베타 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
+source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,6 @@ Adobe Commerce과 Adobe Experience Platform 간의 데이터 공유 기능을 �
 - 여러 데이터 세트 및 데이터 스트림 지원
 
 이 Beta에 참여하려면 다음으로 이메일 요청을 전송하십시오. [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Backoffice Integration Starter Kit(Private Beta)
-
-백오피스 [통합 시작 키트](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) 는 개발자에게 ERP, CRM 및 OMS와 같은 시스템과의 이벤트 기반 통합을 구축할 수 있는 가속기를 제공합니다. 스타터 키트를 사용하면 개발 비용을 최대 50%까지 절감할 수 있습니다. 시작 키트는 유지 관리 비용을 크게 절감하는 Adobe Commerce 모범 사례도 따릅니다. 스타터 키트의 주요 특징:
-- 제품, 주문, 고객, 재고 및 배송과 같이 일반적으로 사용되는 객체에 대한 데이터 동기화
-- 모범 사례에 따른 아키텍처 블루프린트
-- 개발 속도를 높이는 온보딩 스크립트
-
-이 베타에 참여하려면 다음을 완료하십시오. [등록 양식](https://forms.office.com/r/YbYArqE3DT).
 
 ### Adobe Commerce Foundation(공개 베타)
 
