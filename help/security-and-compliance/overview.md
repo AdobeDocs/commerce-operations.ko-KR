@@ -2,9 +2,9 @@
 title: 보안 및 규정 준수
 description: Adobe Commerce 프로젝트의 보안, 개인 정보 및 업계 규정 준수 리소스에 대해 알아봅니다.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f5bcf5c875234875a61664214e50806cc6ba2119
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 0%
 
 ## 보안
 
-- [Adobe 제품 보안](https://helpx.adobe.com/security.html): Adobe Commerce에 대한 최신 패치, 보안 업데이트 및 우수 사례입니다.
-- [Adobe 트러스트 센터](https://www.adobe.com/trust.html): Adobe 클라우드 서비스의 운영 상태, 보안, 개인 정보 보호 및 규정 준수에 대해 사용할 수 있는 최신 정보입니다.
+- [Adobe 제품 보안](https://helpx.adobe.com/security.html): Adobe Commerce의 최신 패치, 보안 업데이트 및 모범 사례에 대해 알아봅니다.
+- [Adobe 트러스트 센터](https://www.adobe.com/trust.html): 모든 Adobe 클라우드 서비스의 운영 상태, 보안, 개인 정보 보호 및 규정 준수에 대해 사용 가능한 최신 정보에 액세스합니다.
+- [사이트 전체 분석 도구](../tools/site-wide-analysis-tool/dashboard.md): 보안 검색, 서비스 종료 및 보안 권장 사항을 포함하여 Adobe Commerce 사이트에 대한 간소화된 보안 통찰력을 봅니다.
 
 ## 규정 준수
 

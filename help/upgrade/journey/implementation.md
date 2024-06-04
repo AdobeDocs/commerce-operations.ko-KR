@@ -2,9 +2,9 @@
 title: 구현 업그레이드
 description: Adobe Commerce 프로젝트에 대한 다양한 업그레이드 구현 단계에 대해 알아봅니다.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 1%
    - 현재 설치된 버전
    - 대상 버전 업그레이드
    - 발견된 중요 오류 번호 및 세부 정보
+
+  >[!TIP]
+  >
+  >이 모든 정보(및 그 이상)는 사이트 전체 분석 도구에서 사용할 수 있습니다 [대시보드](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - 대상 버전을 지원하도록 서비스를 업그레이드하는 중입니다. 다음 표 템플릿을 사용하여 업그레이드해야 하는 서비스를 매핑합니다. 사용 [시스템 요구 사항](../../installation/system-requirements.md) 에 추가할 항목을 결정하려면 _다음으로 업그레이드_ 열.
 
