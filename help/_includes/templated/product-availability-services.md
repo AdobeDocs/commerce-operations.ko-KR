@@ -1,11 +1,11 @@
 ---
-source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
+source-git-commit: 112b096237741278be391d0e55e1195e199f29e8
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 6%
 
 ---
-# Commerce Services의 제품 가용성
+# Commerce 서비스의 제품 가용성
 
 
 <table style="table-layout:auto">
@@ -66,8 +66,8 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>결제 서비스</td>
-          <td>2.4.0 (PHP 8.3)</td>
-          <td>2.4.0 (PHP 8.2)</td>
+          <td>2.6.0 (PHP 8.3)</td>
+          <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
