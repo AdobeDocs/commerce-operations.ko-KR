@@ -1,17 +1,18 @@
 ---
-title: 확장 설치
-description: Adobe Commerce 확장을 설치하려면 다음 단계를 따르십시오.
+title: 타사 확장 관리
+description: Adobe Commerce 확장을 설치, 활성화, 업그레이드 및 제거하려면 다음 단계를 따르십시오.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# 확장 설치
 
-Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장이라고 합니다. 에서 확장을 선택적으로 패키징하고 배포할 수 있습니다. [Commerce Marketplace](https://marketplace.magento.com) 또는 다른 확장 배포 시스템입니다.
+# 타사 확장 관리
+
+Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장이라고 합니다. 에서 확장을 선택적으로 패키징하고 배포할 수 있습니다. [Commerce Marketplace](https://commercemarketplace.adobe.com/) 또는 다른 확장 배포 시스템입니다.
 
 확장에는 다음이 포함됩니다.
 
@@ -21,7 +22,9 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 
 >[!TIP]
 >
->이 항목에서는 명령줄을 사용하여 Commerce Marketplace에서 구입한 확장을 설치하는 방법을 설명합니다. 동일한 절차를 사용하여 설치할 수 있습니다 _임의_ 확장, 확장의 작성기 이름과 버전만 있으면 됩니다. 찾으려면 확장을 엽니다. `composer.json` 파일을 참조하고 다음에 대한 값을 확인합니다. `"name"` 및 `"version"`.
+>이 항목에서는 명령줄 인터페이스를 사용하여 Commerce Marketplace에서 구입한 타사 확장을 관리하는 방법을 설명합니다. 동일한 절차를 사용하여 설치할 수 있습니다 _임의_ 확장, 확장의 작성기 이름과 버전만 있으면 됩니다. 찾으려면 확장을 엽니다. `composer.json` 파일을 참조하고 다음에 대한 값을 확인합니다. `"name"` 및 `"version"`.
+
+## 설치
 
 설치하기 전에 다음을 수행할 수 있습니다.
 
@@ -51,13 +54,13 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 1. 확장이 제대로 설치되었는지 확인합니다.
 1. 확장을 활성화하고 구성합니다.
 
-## 확장 작성기 이름 및 버전 가져오기
+### 확장 정보 가져오기
 
-확장의 작성기 이름 및 버전을 이미 알고 있는 경우 이 단계를 건너뛰고 을 계속 진행합니다. [업데이트 `composer.json` 파일](#update-your-composer-file).
+확장의 작성기 이름 및 버전을 이미 알고 있는 경우 이 단계를 건너뛰고 을 계속 진행합니다. [업데이트 `composer.json` 파일](#update-composer-dependencies).
 
 Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려면 다음을 수행하십시오.
 
-1. 에 로그인 [Commerce Marketplace](https://marketplace.magento.com) 확장을 구입할 때 사용한 사용자 이름과 암호로.
+1. 에 로그인 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 확장을 구입할 때 사용한 사용자 이름과 암호로.
 
 1. 오른쪽 위 모서리에서 을(를) 클릭합니다. **사용자 이름** > **내 프로필**.
 
@@ -75,7 +78,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 >
 >또는 의 작성기 이름 및 버전을 찾을 수 있습니다. _임의_ 확장 프로그램(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)의 `composer.json` 파일.
 
-## 작성기 파일 업데이트
+### 작성기 종속성 업데이트
 
 확장 이름 및 버전을 `composer.json` 파일:
 
@@ -103,7 +106,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
    Generating autoload files
    ```
 
-## 확장 확인
+### 설치 확인
 
 확장이 제대로 설치되었는지 확인하려면 다음 명령을 실행합니다.
 
@@ -125,7 +128,7 @@ bin/magento module:status
 
 그리고 &quot;비활성화된 모듈 목록&quot;에서 확장을 찾습니다.
 
-## 확장 활성화
+### 사용
 
 생성된 정적 보기 파일을 먼저 지우지 않으면 일부 확장이 제대로 작동하지 않습니다. 사용 `--clear-static-content` 확장을 활성화할 때 정적 보기 파일을 지우는 옵션입니다.
 
@@ -183,7 +186,7 @@ bin/magento module:status
 >
 >브라우저에서 Storefront를 로드할 때 오류가 발생하면 다음 명령을 사용하여 캐시를 지웁니다. `bin/magento cache:flush`.
 
-## 확장 업그레이드
+## 업그레이드
 
 모듈 또는 확장을 업데이트하거나 업그레이드하려면 다음 작업을 수행하십시오.
 
@@ -218,3 +221,39 @@ bin/magento module:status
    ```bash
    bin/magento cache:clean
    ```
+
+## 제거
+
+타사 확장을 제거하는 방법은 확장 공급업체에 문의하십시오. 지침은 다음 정보를 제공해야 합니다.
+
+- 데이터베이스 테이블 변경 사항을 되돌리는 방법
+- 데이터베이스 데이터 변경 사항을 되돌리는 방법
+- 제거 또는 되돌려야 하는 파일
+
+>[!CAUTION]
+>
+>비프로덕션 환경에서 제거 단계 수행 _첫 번째_ 프로덕션 환경에 배포하기 전에 철저하게 테스트합니다.
+
+다음은 타사 확장 제거에 대한 일반적인 정보입니다.
+
+1. Adobe Commerce 프로젝트 저장소에서 확장을 제거합니다.
+
+   - 작성기 기반 확장의 경우 Adobe Commerce에서 확장을 제거합니다 `composer.json` 파일.
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - 작성기 기반이 아닌 확장의 경우 Adobe Commerce 프로젝트 저장소에서 물리적 파일을 제거합니다.
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. 다음과 같은 경우 `config.php` 파일이 Adobe Commerce 프로젝트 저장소의 소스 제어에서 사용 중이므로 `config.php` 파일.
+
+1. 로컬 데이터베이스를 테스트하여 공급업체에서 제공한 지침이 예상대로 작동하는지 확인합니다.
+
+1. 확장이 제대로 비활성화되어 있고 웹 사이트가 스테이징 환경에서 예상대로 작동하는지 확인하십시오.
+
+1. 프로덕션 환경에 변경 사항을 배포합니다.
