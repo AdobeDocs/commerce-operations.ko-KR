@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.5의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,16 @@ ht-degree: 0%
 # Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+Adobe Commerce 2.4.5-p7 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+
+보안 버그 수정에 대한 최신 정보는 다음을 참조하십시오. [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### 플랫폼 업그레이드
+
+* **MariaDB 10.5 지원**. 이 패치 릴리스는 MariaDB 버전 10.5와의 호환성을 제공합니다. Adobe CommerceAdobe 는 여전히 MariaDB 버전 10.4와 호환되지만, MariaDB 10.4 유지 보수는 2024년 6월 18일에 종료되므로 Adobe Commerce 2.4.5-p8 및 예정된 모든 2.4.5 보안 전용 패치 릴리스를 MariaDB 버전 10.5와만 사용하는 것이 좋습니다. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ Adobe Commerce 2.4.5-p1 보안 릴리스는 이전 릴리스(Adobe Commerce 2.4.
 보안 버그 수정에 대한 최신 정보는 다음을 참조하십시오. [Adobe 보안 게시판 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 보안 버그 수정 중 하나에 새 구성 설정 생성이 포함되었습니다. 다음 **이메일이 변경된 경우 이메일 확인 필요** 구성 설정을 사용하면 관리자가 전자 메일 주소를 변경할 때 전자 메일 확인이 필요합니다. <!-- AC-6292-->
-
-
