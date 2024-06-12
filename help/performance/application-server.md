@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. M
 
 ## 아키텍처
 
-GraphQL Application Server는 Commerce GraphQL API 요청 간 상태를 유지하고 부트스트래핑을 사용하지 않습니다. 프로세스 간에 애플리케이션 상태를 공유하면 GraphQL 요청의 효율성이 크게 향상되어 응답 시간이 최대 30%까지 줄어듭니다.
+GraphQL Application Server는 Commerce GraphQL API 요청 간 상태를 유지하므로 부트스트래핑이 필요하지 않습니다. 프로세스 간에 애플리케이션 상태를 공유하면 GraphQL 요청의 효율성이 크게 향상되어 응답 시간이 최대 30%까지 줄어듭니다.
 
 공유 없는 PHP 실행 모델은 각 요청이 프레임워크의 부트스트래핑을 요구하기 때문에 지연의 관점에서 도전을 제공합니다. 이 부트스트랩 프로세스에는 구성 읽기, 부트스트랩 프로세스 설정, 서비스 클래스 객체 작성 등 시간이 많이 소요되는 작업이 포함됩니다.
 
@@ -53,7 +53,7 @@ GraphQL Application Server를 실행하려면 다음이 필요합니다.
 Pro 프로젝트에서 Application Server 기능을 활성화한 후 GraphQL Application Server를 배포하기 전에 다음 단계를 완료하십시오.
 
 1. 에서 클라우드 템플릿을 사용하여 클라우드 인프라에 Adobe Commerce 배포 [2.4.7-appserver 분기](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. 모든 상거래 사용자 지정 및 확장이 [호환 가능](https://developer.adobe.com/commerce/php/development/components/app-server/) GraphQL Application Server를 사용하는 경우입니다.
+1. 모든 Commerce 사용자 지정 및 확장이 [호환 가능](https://developer.adobe.com/commerce/php/development/components/app-server/) GraphQL Application Server를 사용하는 경우입니다.
 1. Commerce Cloud 프로젝트를 복제합니다.
 1. 필요한 경우 &#39;application-server/nginx.conf.sample&#39; 파일에서 설정을 조정합니다.
 1. 의 활성 &#39;웹&#39; 섹션에 주석 달기 `project_root/.magento.app.yaml` 전체 파일입니다.
@@ -66,6 +66,12 @@ Pro 프로젝트에서 Application Server 기능을 활성화한 후 GraphQL App
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. 다음을 확인합니다. `/application-server/start.sh` 는 다음 명령을 실행하여 실행할 수 있습니다.
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. 다음 명령을 사용하여 업데이트된 파일을 git 인덱스에 추가합니다.
@@ -176,7 +182,7 @@ GraphQL Application Server를 로컬에서 실행하려면 Swool 확장을 설�
 
 #### Nginx 구성
 
-특정 상거래 배포에 따라 Nginx를 구성하는 방법이 결정됩니다. 일반적으로 Nginx 구성 파일의 기본 이름은 입니다 `nginx.conf` 및 는 다음 디렉터리 중 하나에 배치됩니다. `/usr/local/nginx/conf`, `/etc/nginx`, 또는 `/usr/local/etc/nginx`. 다음을 참조하십시오 [초급자 안내서](https://nginx.org/en/docs/beginners_guide.html) nginx 구성에 대한 자세한 내용은 을 참조하십시오.
+특정 Commerce 배포에 따라 Nginx 구성 방법이 결정됩니다. 일반적으로 Nginx 구성 파일의 기본 이름은 입니다 `nginx.conf` 및 는 다음 디렉터리 중 하나에 배치됩니다. `/usr/local/nginx/conf`, `/etc/nginx`, 또는 `/usr/local/etc/nginx`. 다음을 참조하십시오 [초급자 안내서](https://nginx.org/en/docs/beginners_guide.html) nginx 구성에 대한 자세한 내용은 을 참조하십시오.
 
 샘플 Nginx 구성:
 
