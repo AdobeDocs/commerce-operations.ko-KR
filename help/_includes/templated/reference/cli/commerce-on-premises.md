@@ -1,7 +1,7 @@
 ---
-source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
+source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
 workflow-type: tm+mt
-source-wordcount: '21169'
+source-wordcount: '21185'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**버전**: 2.4.7
+**버전**: 2.4.7-p1
 
 이 참조는 다음을 통해 사용할 수 있는 141개의 명령을 포함합니다. `bin/magento` 명령줄 도구입니다.
 초기 목록은 다음을 사용하여 자동으로 생성됩니다. `bin/magento list` Adobe Commerce의 명령.
@@ -3996,7 +3996,7 @@ ANSI 출력 강제(또는 비활성화 —no-ansi)
 ## `events:subscribe`
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
 이벤트 구독
@@ -4049,6 +4049,13 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 - 기본값: `default`
 - 값 필요
+
+### `--hipaaAuditRequired`
+
+이벤트에 HIPAA 감사의 대상인 데이터가 포함되어 있음을 나타냅니다.
+
+- 기본값: `false`
+- 값을 수락하지 않음
 
 ### `--help`, `-h`
 
