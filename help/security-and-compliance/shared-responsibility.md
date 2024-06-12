@@ -2,9 +2,9 @@
 title: 공동 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
+source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 #### 환경 동기화
 
-판매자는 프로덕션 환경과 스테이징 환경 간에 데이터를 동기화할 책임이 있습니다.
+판매자는 환경 간에 데이터를 동기화할 책임이 있습니다.
 
 #### 패치 중
 
