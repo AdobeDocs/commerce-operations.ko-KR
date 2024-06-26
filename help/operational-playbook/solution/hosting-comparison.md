@@ -1,9 +1,11 @@
 ---
-title: 상거래 호스팅 비교
+title: Commerce 호스팅 비교
 description: 이 비교 표를 검토하여 전자 상거래 프로젝트 호스팅에 대한 최상의 결정을 내리십시오.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
 feature: Best Practices, Cloud, Paas
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+hide: true
+hidefromtoc: true
+source-git-commit: 26284eea58151929c9ac5e72b0fb6cd5b02a3384
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
