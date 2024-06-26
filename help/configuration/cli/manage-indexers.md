@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Catalog Search index has been rebuilt successfully in <time>
 
 이 맥락에서, `dimension` 는 리인덱싱 범위입니다(예: a). `website` 또는 특정 `customer_group`.
 
-인덱스 병렬 처리는 범위가 지정된 인덱서에만 영향을 줍니다. 즉, Commerce는 모든 데이터를 한 테이블에 보관하는 대신 인덱서를 범위로 사용하여 데이터를 여러 테이블로 분할합니다.
+인덱스 병렬 처리는 범위가 지정된 인덱서에만 영향을 줍니다. 즉, Commerce은 모든 데이터를 한 테이블에 보관하는 대신 인덱서를 범위로 사용하여 데이터를 여러 테이블로 분할합니다.
 
 다음 인덱스를 병렬 모드로 실행할 수 있습니다.
 
@@ -266,7 +266,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 ### 인덱서 상태 설정
 
-이 명령을 사용하면 관리자가 하나 이상의 인덱서의 작동 상태를 수정하여 데이터 가져오기, 업데이트 또는 유지 관리와 같은 광범위한 작업 중에 시스템 성능을 최적화할 수 있습니다.
+다음 `bin/magento indexer:set-status` 명령이 Adobe Commerce 2.4.7에 도입되었습니다. 이를 통해 관리자는 하나 이상의 인덱서의 작동 상태를 수정할 수 있으므로 데이터 가져오기, 업데이트 또는 유지 관리와 같은 광범위한 작업 중에 시스템 성능을 최적화할 수 있습니다.
 
 명령 구문:
 
