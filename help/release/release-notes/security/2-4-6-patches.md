@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.6의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
+source-git-commit: e5f659cc3bee2d116222c15549fb3d6094644531
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 0%
 Adobe Commerce 2.4.6-p6 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
 보안 버그 수정에 대한 최신 정보는 다음을 참조하십시오. [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### 보안 강조 표시등
+
+Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장이 있는 판매자는 로 업그레이드해야 합니다. [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
+
 
 ### 추가적인 보안 개선 사항
 
@@ -55,7 +60,7 @@ Adobe Commerce 2.4.6-p3 보안 릴리스는 이전 릴리스에서 식별된 취
 
 ### 보안 주요 사항
 
-이 릴리스에는 와 관련된 위험을 완화하는 데 도움이 되는 새로운 전체 페이지 캐시 구성 설정이 도입되었습니다. `{BASE-URL}/page_cache/block/esi HTTP` 엔드포인트. 이 끝점은 상거래 레이아웃 핸들 및 블록 구조에서 제한되지 않고 동적으로 로드된 콘텐츠 조각을 지원합니다. 새로운 **[!UICONTROL Handles Param]** 구성 설정은 이 끝점의 값을 설정합니다. `handles` API당 허용되는 최대 핸들 수를 결정하는 매개 변수입니다. 이 속성의 기본값은 100입니다. 판매자는 관리자( )에서 이 값을 변경할 수 있습니다.**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
+이 릴리스에는 와 관련된 위험을 완화하는 데 도움이 되는 새로운 전체 페이지 캐시 구성 설정이 도입되었습니다. `{BASE-URL}/page_cache/block/esi HTTP` 엔드포인트. 이 끝점은 Commerce 레이아웃 핸들과 블록 구조에서 제한되지 않고 동적으로 로드된 콘텐츠 조각을 지원합니다. 새로운 **[!UICONTROL Handles Param]** 구성 설정은 이 끝점의 값을 설정합니다. `handles` API당 허용되는 최대 핸들 수를 결정하는 매개 변수입니다. 이 속성의 기본값은 100입니다. 판매자는 관리자( )에서 이 값을 변경할 수 있습니다.**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**. <!-- AC-9113 -->
 
 ### 이 릴리스에 포함된 핫픽스
 
