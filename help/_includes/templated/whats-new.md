@@ -1,7 +1,7 @@
 ---
-source-git-commit: 87fa1874f25e58da103efb073078fa8d930b1265
+source-git-commit: 583d52a24add39bed3adc981aa0d254bf5122c9b
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '159'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2024년 6월 12일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">패키지</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">필수 PHP 확장</a>을 업데이트했습니다.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de91db690b6297dc8857807acec5d33c14e60478">de91db</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024년 6월 11일
 
@@ -22,6 +42,12 @@ ht-degree: 2%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 업데이트했습니다.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a>(커밋)</td>
+    </tr>
     <tr>
       <td><p>2024년 6월 보안 패치에 대한 릴리스 정보 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
 </td>
@@ -39,12 +65,6 @@ ht-degree: 2%
 </td>
       <td>기술</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 업데이트했습니다.</p>
-</td>
-      <td>기술</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a>(커밋)</td>
     </tr>
   </tbody>
 </table>
