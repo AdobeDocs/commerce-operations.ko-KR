@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.6 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.6의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: e5f659cc3bee2d116222c15549fb3d6094644531
+source-git-commit: 5c361b0cdd0f06aed394acf2d811db35ec1d8471
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -22,8 +22,7 @@ Adobe Commerce 2.4.6-p6 보안 릴리스는 이전 릴리스 2.4.6에서 식별�
 
 ### 보안 강조 표시등
 
-Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html)(으)로 업그레이드해야 합니다.
-
+Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)(으)로 업그레이드해야 합니다.
 
 ### 추가적인 보안 개선 사항
 
