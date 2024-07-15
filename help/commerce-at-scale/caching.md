@@ -5,7 +5,7 @@ exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
 feature: Integration, Cache
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 이 초기 계획 완료를 통해 이러한 요구 사항을 기반으로 캐시를 구성하기 위해 기술 구성을 적용할 수 있습니다.
 
-콘텐츠가 업데이트되고 캐싱 TTL 내에서 라이브로 만들어야 하는 경우에도 대부분의 경우 의 캐시를 수동으로 지울 수 있습니다. [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) 및 [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) 해당 콘텐츠에 대해 선택적으로 캐시합니다. 즉, 긴급한 변경 사항이 즉시 반영됩니다. 수동 캐시 지우기에 대한 프로세스도 미리 계획 및 테스트해야 하므로 일부 콘텐츠를 수동으로 업데이트해야 하는 경우 사이트 작업 Runbook에 문서화하고 이를 수행하는 방법과 누가 참여해야 하는지 확인해야 합니다.
+콘텐츠가 업데이트되고 캐싱 TTL 내에서 라이브로 만들어야 하는 경우에도 대부분의 경우 해당 콘텐츠에 대해 [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) 및 [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) 캐시의 캐시를 선택적으로 수동으로 지울 수 있습니다. 즉, 긴급한 변경 사항이 즉시 반영됩니다. 수동 캐시 지우기에 대한 프로세스도 미리 계획 및 테스트해야 하므로 일부 콘텐츠를 수동으로 업데이트해야 하는 경우 사이트 작업 Runbook에 문서화하고 이를 수행하는 방법과 누가 참여해야 하는지 확인해야 합니다.

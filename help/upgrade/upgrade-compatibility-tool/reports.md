@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Upgrade Compatibility Tool] 보고서'
-description: 다음 단계에 따라 [!DNL Upgrade Compatibility Tool] Adobe Commerce 프로젝트에서.
+title: '[!DNL Upgrade Compatibility Tool]개 보고서'
+description: 다음 단계에 따라 Adobe Commerce 프로젝트에서  [!DNL Upgrade Compatibility Tool] 을(를) 실행합니다.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-분석 결과 [!DNL Upgrade Compatibility Tool] 심각도, 오류 코드 및 오류 설명을 지정하는 각 파일의 문제 목록이 포함된 보고서를 내보낼 수 있습니다. 다음 [!DNL Upgrade Compatibility Tool] 보고서를 다음 두 가지 형식으로 내보냅니다.
+분석 결과 [!DNL Upgrade Compatibility Tool]은(는) 심각도, 오류 코드 및 오류 설명을 지정하는 각 파일에 대한 문제 목록이 포함된 보고서를 내보낼 수 있습니다. [!DNL Upgrade Compatibility Tool]에서 보고서를 두 가지 형식으로 내보냅니다.
 
-- A [JSON 파일](reports.md#json-file).
-- An [HTML 보고서](reports.md#html-report).
+- [JSON 파일](reports.md#json-file).
+- [HTML 보고서](reports.md#html-report).
 
 보고서의 다음 명령줄 인터페이스 예를 참조하십시오.
 
@@ -27,19 +27,19 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
  * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-다음 확인: [오류 메시지 참조](../upgrade-compatibility-tool/error-messages.md) 항목 이 보고서에서 생성할 수 있는 다양한 오류에 대한 자세한 내용을 참조하십시오.
+이 보고서에서 생성할 수 있는 다양한 오류에 대한 자세한 내용은 [오류 메시지 참조](../upgrade-compatibility-tool/error-messages.md) 항목을 확인하십시오.
 
 이 보고서에는 다음을 보여주는 자세한 요약도 포함되어 있습니다.
 
 - *현재 버전*: 현재 설치된 버전입니다.
 - *대상 버전*: 업그레이드할 버전입니다.
-- *실행 시간*: 분석이 보고서를 작성하는 데 걸린 시간(mm:ss)입니다.
-- *업데이트가 필요한 모듈*: 호환성 문제가 포함되어 있고 업데이트가 필요한 모듈의 비율입니다.
-- *업데이트가 필요한 파일*: 호환성 문제가 포함되어 있고 업데이트가 필요한 파일의 비율입니다.
-- *총 중대 오류 수*: 발견된 중요 오류 수입니다.
-- *총 오류 수*: 발견된 오류 수
-- *총 경고 수*: 발견된 경고 수
-- *메모리 피크 사용*: 의 최대 메모리 양 [!DNL Upgrade Compatibility Tool] 이(가) 실행 중에 도달했습니다.
+- *실행 시간*: 분석이 보고서를 작성하는 데 걸린 시간(mm:ss).
+- *업데이트가 필요한 모듈*: 호환성 문제가 있고 업데이트가 필요한 모듈의 비율입니다.
+- *업데이트가 필요한 파일*: 호환성 문제가 있고 업데이트가 필요한 파일의 비율입니다.
+- *총 중대 오류*: 발견된 중대 오류 수입니다.
+- *총 오류*: 발견된 오류 수
+- *총 경고*: 발견된 경고 수.
+- *메모리 피크 사용*: 실행 중에 [!DNL Upgrade Compatibility Tool]의 최대 메모리 양에 도달했습니다.
 
 다음 명령줄 인터페이스 예를 참조하십시오.
 
@@ -59,14 +59,14 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 ## JSON 파일
 
-를 실행하는 동안 JSON 파일 출력을 가져올 수 있습니다. [!DNL Upgrade Compatibility Tool] 명령줄 인터페이스에 있습니다. 다음 `JSON` 파일에 표시된 것과 정확히 동일한 정보가 포함되어 있습니다. [!DNL Upgrade Compatibility Tool] 출력:
+명령줄 인터페이스에서 [!DNL Upgrade Compatibility Tool]을(를) 실행하는 동안 JSON 파일 출력을 가져올 수 있습니다. `JSON` 파일에 [!DNL Upgrade Compatibility Tool] 출력에 표시된 것과 동일한 정보가 포함되어 있습니다.
 
 - 식별된 문제 목록.
 - 분석 요약입니다.
 
 발견된 각 문제에 대해, 보고서는 문제의 심각도 및 설명과 같은 자세한 정보를 제공합니다.
 
-내보내려면 `JSON` 파일을 다른 출력 폴더로:
+이 `JSON` 파일을 다른 출력 폴더로 내보내려면 다음을 수행하십시오.
 
 ```bash
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
@@ -74,25 +74,25 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 
 여기서 인수는 다음과 같습니다.
 
-- `<dir>`: Adobe Commerce 설치 디렉토리
-- `[=JSON-OUTPUT-PATH]`: 를 내보낼 경로 디렉토리 `JSON` 출력 파일입니다.
+- `<dir>`: Adobe Commerce 설치 디렉터리.
+- `[=JSON-OUTPUT-PATH]`: `JSON` 출력 파일을 내보낼 경로 디렉터리입니다.
 
 >[!NOTE]
 >
-> 출력 폴더의 기본 경로는 입니다. `var/output/[TIME]-results.json`.
+> 출력 폴더의 기본 경로는 `var/output/[TIME]-results.json`입니다.
 
 ## HTML 보고서
 
-명령줄 인터페이스 또는 를 통해 도구를 실행하는 동안 HTML 보고서를 가져올 수 있습니다 [!DNL Site-Wide Analysis Tool]. HTML 보고서에는 다음도 포함되어 있습니다.
+명령줄 인터페이스 또는 [!DNL Site-Wide Analysis Tool]을(를) 통해 도구를 실행하는 동안 HTML 보고서를 가져올 수 있습니다. HTML 보고서에는 다음도 포함되어 있습니다.
 
 - 식별된 문제 목록.
 - 분석 요약입니다.
 
 ![HTML 보고서 - 요약](../../assets/upgrade-guide/uct-html-summary.png)
 
-다음 작업 중에 식별된 문제를 쉽게 탐색할 수 있습니다. [!DNL Upgrade Compatibility Tool] 분석.
+[!DNL Upgrade Compatibility Tool] 분석 중에 식별된 문제를 쉽게 탐색할 수 있습니다.
 
-최소 문제 수준에 따라 보고서에 표시되는 문제를 필터링할 수 있습니다(기본값: `WARNING`).
+보고서에 표시된 문제를 최소 문제 수준에 따라 필터링할 수 있습니다(기본값은 `WARNING`).
 
 오른쪽 상단 모서리에는 다른 수준을 선택할 수 있는 드롭다운이 있습니다. 식별된 문제 목록은 그에 따라 필터링됩니다.
 
@@ -113,9 +113,9 @@ HTML 보고서에는 네 개의 다른 차트가 포함됩니다.
 
 ![HTML 보고서 - 다이어그램](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-HTML 보고서 다이어그램도 이에 따라 업데이트됩니다. 단, `Modules with relative sizes and issues`: 와 함께 생성됩니다. `min-issue-level` 원래 설정된 것입니다.
+HTML 보고서 다이어그램도 이에 따라 업데이트됩니다. `Modules with relative sizes and issues`은(는) 원래 설정된 `min-issue-level`과(와) 함께 생성됩니다.
 
-다음에 대한 다른 결과를 보려면 `Modules with relative sizes and issues` 다이어그램에 대해 다른 값을 제공하는 명령을 다시 실행해야 합니다. `--min-issue-level` 옵션을 선택합니다.
+`Modules with relative sizes and issues` 다이어그램에 대해 다른 결과를 보려면 `--min-issue-level` 옵션에 대해 다른 값을 제공하는 명령을 다시 실행해야 합니다.
 
 ![HTML 보고서 - 버블 차트 다이어그램](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
@@ -127,9 +127,9 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 여기서 인수는 다음과 같습니다.
 
-- `<dir>`: Adobe Commerce 설치 디렉토리
-- `[=HTML-OUTPUT-PATH]`: 를 내보낼 경로 디렉토리 `.html` 출력 파일입니다.
+- `<dir>`: Adobe Commerce 설치 디렉터리.
+- `[=HTML-OUTPUT-PATH]`: `.html` 출력 파일을 내보낼 경로 디렉터리입니다.
 
 >[!NOTE]
 >
-> 출력 폴더의 기본 경로는 입니다. `var/output/[TIME]-results.html`.
+> 출력 폴더의 기본 경로는 `var/output/[TIME]-results.html`입니다.

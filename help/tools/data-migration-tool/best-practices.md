@@ -6,7 +6,7 @@ feature: Best Practices, Configuration
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 이 섹션에서는 마이그레이션을 가속화하고 단순화하는 최상의 권장 사항과 소요 시간에 대한 지침을 제공합니다.
 
-* **Magento 1 인스턴스에서 데이터베이스 복사본 사용** 마이그레이션 테스트를 수행할 때. Magento 1 저장소 데이터베이스의 프로덕션 인스턴스를 사용하지 마십시오.
+* 마이그레이션 테스트를 수행할 때 **Magento 1 인스턴스에서 데이터베이스 복사본을 사용합니다**. Magento 1 저장소 데이터베이스의 프로덕션 인스턴스를 사용하지 마십시오.
 
-* **오래되고 중복된 데이터 제거** 마이그레이션 전에 Magento 1 데이터베이스에서.
+* 마이그레이션 전에 Magento 1 데이터베이스에서 **오래된 중복 데이터를 제거합니다**.
 
 이러한 데이터에는 로그, 주문 견적, 최근에 본 제품 또는 비교한 제품, 방문자, 이벤트별 카테고리 및 프로모션 규칙이 포함될 수 있습니다.
 
-* **다음 [성공적인 마이그레이션을 위한 일반 규칙](migrate-data/overview.md#migration-overview)**.
+* **마이그레이션을 성공적으로 수행하려면 [일반 규칙을 따르십시오](migrate-data/overview.md#migration-overview)**.
 
-* 성능을 향상시키려면 **활성화 `direct_document_copy` 옵션** (으)로 `config.xml` 파일:
+* 성능을 향상시키려면 `config.xml` 파일에서 **`direct_document_copy` 옵션을 사용하도록 설정**&#x200B;하세요.
 
   ```xml
   <direct_document_copy>1</direct_document_copy>

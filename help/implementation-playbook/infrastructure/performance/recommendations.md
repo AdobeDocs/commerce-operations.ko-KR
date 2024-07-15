@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->다음을 참조하십시오. [_성능 모범 사례 안내서_](../../../performance/overview.md) 성능 최적화에 대한 자세한 정보를 제공합니다.
+>성능 최적화에 대한 자세한 내용은 [_성능 모범 사례 안내서_](../../../performance/overview.md)&#x200B;를 참조하세요.
 
 ## 인프라
 
@@ -58,15 +58,15 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 이러한 설정을 최적화하는 것은 다양한 프로젝트에 대한 성능 테스트 결과에 따라 다릅니다.
 
-- **바이트 코드**- PHP 7에서 Adobe Commerce의 최대 속도를 얻으려면 다음을 활성화해야 합니다. `opcache` 모듈을 지정하고 올바로 구성합니다.
+- **ByteCode**—PHP 7에서 Adobe Commerce의 최대 속도를 얻으려면 `opcache` 모듈을 활성화하고 올바르게 구성해야 합니다.
 
-- **APCU** Adobe —PHP APCu 확장을 활성화하고 최대 성능을 최적화하도록 Composer를 구성하는 것이 좋습니다. 이 확장은 열린 파일의 파일 위치를 캐시하므로 페이지, Ajax 호출 및 끝점을 비롯한 Adobe Commerce 서버 호출의 성능이 향상됩니다.
+- Adobe **APCU**—PHP APCu 확장을 사용하도록 설정하고 최대 성능을 최적화하도록 작성기를 구성하는 것이 좋습니다. 이 확장은 열린 파일의 파일 위치를 캐시하므로 페이지, Ajax 호출 및 끝점을 비롯한 Adobe Commerce 서버 호출의 성능이 향상됩니다.
 
-- **Realpath_cacheconfiguration**- 최적화 `realpath_cache` 에서는 PHP 프로세스가 페이지를 로드할 때마다 경로를 조회하는 대신 파일에 경로를 캐시할 수 있습니다.
+- **Realpath_cacheconfiguration**—PHP 프로세스가 `realpath_cache`을(를) 최적화하면 페이지가 로드될 때마다 경로를 조회하지 않고 파일에 경로를 캐시할 수 있습니다.
 
 ### 웹 서버
 
-nginx를 웹 서버로 사용하려면 약간의 재구성만 필요합니다. Nginx 웹 서버는 더 나은 성능을 제공하며 Adobe Commerce의 샘플 구성 파일을 사용하여 쉽게 구성할 수 있습니다([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
+nginx를 웹 서버로 사용하려면 약간의 재구성만 필요합니다. nginx 웹 서버는 더 나은 성능을 제공하며 Adobe Commerce([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample))의 샘플 구성 파일을 사용하여 쉽게 구성할 수 있습니다.
 
 - TCP를 사용하여 PHP-FPM 설정
 
@@ -80,7 +80,7 @@ nginx를 웹 서버로 사용하려면 약간의 재구성만 필요합니다. N
 
 Adobe Commerce 데이터베이스(및 기타 데이터베이스)는 데이터 및 인덱스를 저장하는 데 사용할 수 있는 메모리 양에 따라 다릅니다. MySQL 데이터 인덱싱을 효과적으로 사용하려면 사용 가능한 메모리 크기가 데이터베이스에 저장된 데이터 크기의 절반 이상이어야 합니다.
 
-최적화 `innodb_buffer_pool_instances` 동일한 인스턴스에 액세스하려는 여러 스레드의 문제를 방지하기 위해 를 설정합니다. 값 `max_connections` 매개 변수는 응용 프로그램 서버에 구성된 총 PHP 스레드 수와 상호 연관되어야 합니다. 다음 공식을 사용하여 다음에 대한 최상의 값을 계산합니다. `innodb-thread-concurrency`:
+동일한 인스턴스에 액세스하려는 여러 스레드에 문제가 발생하지 않도록 `innodb_buffer_pool_instances` 설정을 최적화합니다. `max_connections` 매개 변수의 값은 응용 프로그램 서버에 구성된 총 PHP 스레드 수와 상관 관계가 있어야 합니다. 다음 수식을 사용하여 `innodb-thread-concurrency`에 가장 적합한 값을 계산하십시오.
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -94,7 +94,7 @@ Redis에는 최적의 성능을 위해 다른 모든 캐시를 메모리에 보�
 
 ### 페이지 캐싱
 
-Adobe은 Adobe Commerce 스토어의 전체 페이지 캐시에 Varnish 를 사용하는 것이 좋습니다. 다음 `PageCache` 모듈이 코드 베이스에 여전히 있지만 개발 목적으로만 사용해야 합니다.
+Adobe은 Adobe Commerce 스토어의 전체 페이지 캐시에 Varnish 를 사용하는 것이 좋습니다. `PageCache` 모듈이 코드 베이스에 계속 있지만 개발 목적으로만 사용해야 합니다.
 
 웹 계층 앞에 있는 별도의 서버에 Vannish를 설치합니다. 모든 수신 요청을 수락하고 캐시된 페이지 복사본을 제공해야 합니다. Varnish가 보안 페이지에서 효과적으로 작동할 수 있도록 하기 위해 SSL 종료 프록시를 Varnish 앞에 배치할 수 있습니다. Nginx를 이 용도로 사용할 수 있습니다.
 
@@ -102,7 +102,7 @@ Varnish 전체 페이지 캐시 메모리 무효화가 효과적이지만, Adobe
 
 ### 메시지 큐
 
-MQF(메시지 대기열 프레임워크)는 모듈이 메시지를 대기열에 게시할 수 있도록 하는 시스템입니다. 또한 비동기적으로 메시지를 수신하는 소비자도 정의합니다. Adobe Commerce 지원 [!DNL RabbitMQ] 는 메시지를 보내고 받는 확장 가능한 플랫폼을 제공하는 메시징 브로커입니다.
+MQF(메시지 대기열 프레임워크)는 모듈이 메시지를 대기열에 게시할 수 있도록 하는 시스템입니다. 또한 비동기적으로 메시지를 수신하는 소비자도 정의합니다. Adobe Commerce은 메시지를 보내고 받는 확장 가능한 플랫폼을 제공하는 메시징 브로커로 [!DNL RabbitMQ]을(를) 지원합니다.
 
 ### 성능 테스트 및 모니터링
 
@@ -122,11 +122,11 @@ Adobe Commerce 버전 2.4부터는 Elasticsearch(또는 OpenSearch)가 필요하
 
 ### 헤드리스 아키텍처
 
-별도의 전용 섹션이 있습니다. [headless](../../architecture/enterprise-blueprint.md#headless-storefront). 요약하면, 플랫폼 자체와 상점 계층을 분리합니다. 여전히 동일한 백엔드이지만 Adobe Commerce은 더 이상 요청을 직접 처리하지 않고 대신 GraphQL API를 통해 사용자 지정 상점 만 지원합니다.
+[headless](../../architecture/enterprise-blueprint.md#headless-storefront)에 대한 별도의 섹션이 있습니다. 요약하면, 플랫폼 자체와 상점 계층을 분리합니다. 여전히 동일한 백엔드이지만 Adobe Commerce은 더 이상 요청을 직접 처리하지 않고 대신 GraphQL API를 통해 사용자 지정 상점 만 지원합니다.
 
 ### Adobe Commerce 업데이트 유지
 
-Adobe Commerce은 최신 버전을 실행할 때 항상 성능이 향상됩니다. 각 새 버전이 릴리스된 후 Adobe Commerce을 최신 상태로 유지할 수 없더라도 [업그레이드](../../../upgrade/overview.md) Adobe Commerce에서 상당한 성능 최적화를 도입한 경우.
+Adobe Commerce은 최신 버전을 실행할 때 항상 성능이 향상됩니다. 각 새 버전이 출시된 후에도 Adobe Commerce을 최신 상태로 유지할 수 없더라도 Adobe Commerce에서 상당한 성능 최적화를 도입할 경우 [업그레이드](../../../upgrade/overview.md)하는 것이 좋습니다.
 
 예를 들어, 2020년에 Adobe은 Redis에 대한 최적화를 발표하여 많은 비효율성, 연결 문제, Redis와 Adobe Commerce 간의 불필요한 데이터 전송을 해결했습니다. 2.3과 2.4 사이의 전반적인 성능은 밤낮이 아니며 Redis 최적화를 통해 장바구니, 체크아웃, 동시 사용자를 크게 개선했습니다.
 

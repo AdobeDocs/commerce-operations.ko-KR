@@ -21,26 +21,26 @@ Aurora는 AWS에서 호스팅되는 고성능 완전 준수 MySQL 서버입니�
 
 Aurora를 데이터베이스로 사용하는 것은 기본 데이터베이스 커넥터를 사용하여 일반 Adobe Commerce 설정 구성에서 데이터베이스를 지정하는 것만큼 쉽습니다.
 
-실행 시 `bin/magento setup:install`, 의 Aurora 정보 사용 `db-` 필드:
+`bin/magento setup:install`을(를) 실행할 때 `db-` 필드에 Aurora 정보를 사용하십시오.
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-다음 `db-host` 값은 Aurora URL이고 `https://` 및 후행 `:portnumber`  을(를) 제거했습니다.
+`db-host` 값은 `https://` 및 `:portnumber` 후행이 제거된 Aurora URL입니다.
 
 ## 원격 데이터베이스 연결 설정
 
 >[!NOTE]
 >
->숙련된 네트워크 관리자나 데이터베이스 관리자만 사용해야 하는 고급 항목입니다. 다음을 수행해야 합니다. `root` 파일 시스템에 액세스하고 다음으로 MySQL에 로그인할 수 있어야 합니다. `root`.
+>숙련된 네트워크 관리자나 데이터베이스 관리자만 사용해야 하는 고급 항목입니다. 파일 시스템에 대한 `root` 액세스 권한이 있어야 하며 MySQL에 `root`(으)로 로그인할 수 있어야 합니다.
 
 ### 전제 조건
 
 시작하기 전에 다음을 수행해야 합니다.
 
-* [MySQL 서버 설치](mysql.md) 데이터베이스 서버에 있습니다.
-* [데이터베이스 인스턴스 만들기](mysql.md#configuring-the-database-instance) 데이터베이스 서버에 있습니다.
+* 데이터베이스 서버에 [MySQL 서버 설치](mysql.md)
+* 데이터베이스 서버에 [데이터베이스 인스턴스를 만듭니다](mysql.md#configuring-the-database-instance).
 * Adobe Commerce 웹 노드에 MySQL 클라이언트를 설치합니다. 자세한 내용은 MySQL 설명서를 참조하십시오.
 
 ### 고가용성
@@ -50,7 +50,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 * 각 웹 서버 노드에 대한 연결을 구성해야 합니다.
 * 일반적으로 데이터베이스 로드 밸런서에 대한 데이터베이스 연결을 구성합니다. 그러나 데이터베이스 클러스터링은 복잡할 수 있으며 구성하는 것은 사용자가 결정합니다. Adobe은 데이터베이스 클러스터링에 대한 특정 권장 사항을 제공하지 않습니다.
 
-  자세한 내용은 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  자세한 내용은 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)를 참조하세요.
 
 ### 연결 문제 해결
 
@@ -60,7 +60,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 원격 연결을 만들려면:
 
-1. 를 사용하는 사용자로 데이터베이스 서버에서 `root` 권한, MySQL 구성 파일을 엽니다.
+1. 데이터베이스 서버에서 `root` 권한을 가진 사용자로 MySQL 구성 파일을 엽니다.
 
    찾으려면 다음 명령을 입력합니다.
 
@@ -77,19 +77,19 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
    >[!NOTE]
    >
-   >Ubuntu 16에서 경로는 일반적으로 `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >Ubuntu 16에서 경로는 일반적으로 `/etc/mysql/mysql.conf.d/mysqld.cnf`입니다.
 
-1. 구성 파일 검색 `bind-address`.
+1. 구성 파일에서 `bind-address`을(를) 검색합니다.
 
    있는 경우 값을 다음과 같이 변경합니다.
 
-   존재하지 않는 경우 `[mysqld]` 섹션.
+   존재하지 않는 경우 `[mysqld]` 섹션에 추가하십시오.
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   다음을 참조하십시오 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)특히 클러스터된 웹 서버가 있는 경우 더욱 그렇습니다.
+   특히 클러스터된 웹 서버가 있는 경우 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)를 참조하십시오.
 
 1. 구성 파일에 변경 사항을 저장하고 텍스트 편집기를 종료합니다.
 1. MySQL 서비스를 다시 시작합니다.
@@ -100,18 +100,18 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
    >[!NOTE]
    >
-   >MySQL을 시작하지 못하면 syslog에서 문제의 원인을 찾습니다. 다음을 사용하여 문제 해결 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) 또는 다른 신뢰할 수 있는 소스입니다.
+   >MySQL을 시작하지 못하면 syslog에서 문제의 원인을 찾습니다. [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) 또는 다른 신뢰할 수 있는 원본을 사용하여 문제를 해결하십시오.
 
 ## 데이터베이스 사용자에게 액세스 권한 부여
 
 웹 노드가 데이터베이스 서버에 접속할 수 있도록 하려면 웹 노드 데이터베이스 사용자에게 원격 서버의 데이터베이스에 대한 액세스 권한을 부여해야 합니다.
 
-이 예에서는 `root` 데이터베이스 사용자가 원격 호스트의 데이터베이스에 대한 전체 액세스 권한을 갖습니다.
+이 예제에서는 `root` 데이터베이스 사용자에게 원격 호스트의 데이터베이스에 대한 전체 액세스 권한을 부여합니다.
 
 데이터베이스 사용자에게 액세스 권한을 부여하려면 다음을 수행합니다.
 
 1. 데이터베이스 서버에 로그인합니다.
-1. MySQL 데이터베이스에 연결 `root` 사용자.
+1. `root` 사용자로 MySQL 데이터베이스에 연결합니다.
 1. 다음 명령을 입력합니다.
 
    ```shell
@@ -155,8 +155,8 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Adobe Commerce을 설치할 때 다음을 지정해야 합니다.
 
-* 기본 URL(이라고도 함) *저장소 주소*) 의 호스트 이름 또는 IP 주소를 지정합니다. *웹 노드*
-* 데이터베이스 호스트는 *원격 데이터베이스 서버* IP 주소(또는 데이터베이스 서버가 클러스터된 경우 로드 밸런서)
-* 데이터베이스 사용자 이름은 입니다. *로컬 웹 노드* 액세스 권한을 부여한 데이터베이스 사용자
+* 기본 URL(*스토어 주소*&#x200B;라고도 함)은 *웹 노드*&#x200B;의 호스트 이름 또는 IP 주소를 지정합니다
+* 데이터베이스 호스트가 *원격 데이터베이스 서버* IP 주소입니다(또는 데이터베이스 서버가 클러스터된 경우 로드 밸런서).
+* 데이터베이스 사용자 이름은 액세스한 *로컬 웹 노드* 데이터베이스 사용자입니다.
 * 데이터베이스 암호는 로컬 웹 노드 사용자의 암호입니다.
 * 데이터베이스 이름은 원격 서버에 있는 데이터베이스의 이름입니다

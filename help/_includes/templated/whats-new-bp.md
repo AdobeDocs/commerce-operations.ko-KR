@@ -18,15 +18,15 @@ ht-degree: 2%
     <tr>
       <th>설명</th>
       <th>유형</th>
-      <th>소스</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>에 대한 모범 사례 추가 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">mariaDB 업그레이드</a> 10.5.1 이상</p>
+      <td><p><a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">MariaDB를 10.5.1 이상으로 업그레이드</a>하는 모범 사례를 추가했습니다.</p>
 </td>
       <td>우수 사례</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a>(커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
@@ -38,15 +38,15 @@ ht-degree: 2%
     <tr>
       <th>설명</th>
       <th>유형</th>
-      <th>소스</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>에 대한 세부 사항이 추가되었습니다. <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2 캐시 메모리 크기 조정 구성 옵션</a> 클라우드 인프라의 Adobe Commerce용</p>
+      <td><p>클라우드 인프라의 Adobe Commerce에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2 캐시 메모리 크기 조정 구성 옵션</a>에 대한 세부 정보가 추가되었습니다.</p>
 </td>
       <td>우수 사례</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a>(커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

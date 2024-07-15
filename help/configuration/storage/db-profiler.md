@@ -6,7 +6,7 @@ badge: label="에이티쉬 고스와미 기여" type="Informative" url="https://
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Commerce 데이터베이스 프로파일러는 각 쿼리의 시간 및 적용�
 
 ## 1단계: 배포 구성 수정
 
-수정 `<magento_root>/app/etc/env.php` 에 다음 참조를 추가하려면 [database profiler 클래스](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+`<magento_root>/app/etc/env.php`을(를) 수정하여 [데이터베이스 프로파일러 클래스](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)에 다음 참조를 추가합니다.
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Commerce 데이터베이스 프로파일러는 각 쿼리의 시간 및 적용�
 
 ## 2단계: 출력 구성
 
-Commerce 애플리케이션 부트스트랩 파일에서 출력을 구성합니다. 다음과 같을 수 있습니다. `<magento_root>/pub/index.php` 또는 웹 서버 가상 호스트 구성에 있을 수 있습니다.
+Commerce 응용 프로그램 부트스트랩 파일에서 출력을 구성하십시오. `<magento_root>/pub/index.php`이거나 웹 서버 가상 호스트 구성에 있을 수 있습니다.
 
 다음 예에서는 결과를 3열 테이블에 표시합니다.
 
@@ -63,7 +63,7 @@ Commerce 애플리케이션 부트스트랩 파일에서 출력을 구성합니�
 - SQL(모든 SQL 쿼리 표시, 행 머리글에 쿼리 개수 표시)
 - 쿼리 매개 변수(각 SQL 쿼리에 대한 매개 변수 표시)
 
-출력을 구성하려면 다음 항목 뒤에 다음을 추가합니다. `$bootstrap->run($app);` 부트스트랩 파일의 줄:
+출력을 구성하려면 부트스트랩 파일에서 `$bootstrap->run($app);` 줄 뒤에 다음을 추가하십시오.
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */

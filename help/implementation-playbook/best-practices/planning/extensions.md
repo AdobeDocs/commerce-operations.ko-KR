@@ -6,8 +6,8 @@ feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 0%
+source-wordcount: '176'
+ht-degree: 1%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 0%
 
 Adobe Commerce 타사 확장(모듈)은 상점 성능에 부정적인 영향을 줄 수 있는 다양한 문제를 일으킬 수 있는 잠재력이 있습니다. 다음 모범 사례를 따라 이러한 문제를 방지할 수 있습니다.
 
-- 다음과 같은 신뢰할 수 있는 소스에서 타사 확장을 다운로드하고 구매합니다. [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+- [Commerce Marketplace](https://marketplace.magento.com/extensions.html)과 같은 신뢰할 수 있는 소스에서 타사 확장을 다운로드하고 구입합니다.
 - 모든 타사 확장을 최신 버전으로 업데이트합니다.
 - 타사 확장을 계속 업데이트할 수 없는 경우에는 다른 확장을 사용하는 것이 좋습니다.
 - 새 버전의 Adobe Commerce으로 업그레이드하려는 경우 설치된 타사 확장이 새 버전과 호환되는지 확인하고 필요한 경우 확장을 업그레이드하십시오.
 
 >[!NOTE]
 >
-> Adobe Commerce Marketplace에서 사용할 수 있는 모든 확장은 새 Commerce 릴리스와의 호환성을 유지하는 데 필요합니다. 다음을 참조하십시오 [릴리스 호환성](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
+> Adobe Commerce Marketplace에서 사용할 수 있는 모든 확장은 새 Commerce 릴리스와의 호환성을 유지해야 합니다. [릴리스 호환성](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/)을 참조하세요.
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스

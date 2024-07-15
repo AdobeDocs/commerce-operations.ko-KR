@@ -5,7 +5,7 @@ feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobe은 위협 행위자가 Commerce 애플리케이션 및 인프라 구성에서 기존의 패치되지 않은 취약성, 낮은 암호, 취약한 소유권 및 권한 설정을 이용할 때 대부분의 보안 사고가 발생한다는 것을 발견했습니다. Adobe Commerce 설치 설정, 구성 및 업데이트 시 Adobe 보안 모범 사례를 검토하고 준수하여 보안 사고의 발생을 최소화합니다. 다음을 참조하십시오 [상거래 사이트 및 인프라 보호](../launch/security-best-practices.md).
+>Adobe은 위협 행위자가 Commerce 애플리케이션 및 인프라 구성에서 기존의 패치되지 않은 취약성, 낮은 암호, 취약한 소유권 및 권한 설정을 이용할 때 대부분의 보안 사고가 발생한다는 것을 발견했습니다. Adobe Commerce 설치 설정, 구성 및 업데이트 시 Adobe 보안 모범 사례를 검토하고 준수하여 보안 사고의 발생을 최소화합니다. [Commerce 사이트 및 인프라 보호](../launch/security-best-practices.md)를 참조하십시오.
 
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
@@ -63,43 +63,43 @@ ht-degree: 0%
 
 사건 분석의 첫 단계는 최대한 많은 사실을 가능한 한 빨리 수집하는 것이다. 인시던트에 대한 정보를 수집하면 인시던트의 잠재적 원인을 파악하는 데 도움이 될 수 있습니다. Adobe Commerce은 사고 분석을 지원하는 아래 도구를 제공합니다.
 
-- [감사 관리자 작업 로그](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [관리 작업 로그 감사](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   작업 로그 보고서에는 로깅이 활성화된 모든 관리자 작업에 대한 자세한 레코드가 표시됩니다. 각 레코드는 타임스탬프를 지정하고 사용자의 IP 주소와 이름을 등록합니다. 로그 세부 사항에는 작업 중에 수행된 관리 사용자 데이터 및 관련 변경 사항이 포함됩니다.
 
-- 를 사용하여 이벤트 분석 [Adobe Commerce 도구에 대한 관찰](../../../tools/observation-for-adobe-commerce/intro.md).
+- [Adobe Commerce에 대한 관찰 도구](../../../tools/observation-for-adobe-commerce/intro.md)를 사용하여 이벤트를 분석합니다.
 
   Adobe Commerce 관찰 도구를 사용하면 복잡한 문제를 분석하여 근본 원인을 식별할 수 있습니다. 서로 다른 데이터를 추적하는 대신 이벤트와 오류의 상관 관계를 파악하여 성능 병목 현상의 원인에 대한 심층적인 통찰력을 얻을 수 있습니다.
 
-  사용 **보안** 도구의 탭에서는 잠재적인 보안 문제를 명확하게 확인하여 근본 원인을 파악하고 사이트의 성능을 최적으로 유지할 수 있습니다.
+  도구의 **보안** 탭을 사용하여 잠재적인 보안 문제를 명확하게 확인하여 근본 원인을 파악하고 사이트의 성능을 최적으로 유지할 수 있습니다.
 
-- 로그 분석 [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
+- [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)로 로그 분석
 
-  Adobe Commerce on cloud infrastructure Pro 프로젝트에는 [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) 서비스. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 집계된 데이터를 검색하고 시각화할 수 있는 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
+  cloud infrastructure Pro 프로젝트의 Adobe Commerce에는 [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) 서비스가 포함됩니다. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 집계된 데이터를 검색하고 시각화할 수 있는 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
 
-  다른 상거래 프로젝트의 경우 [New Relic 로그](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) 다음 작업을 완료하는 서비스:
-   - 사용 [New Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) 집계된 로그 데이터를 검색합니다.
+  다른 Commerce 프로젝트의 경우 [New Relic 로그](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) 서비스를 설정하고 사용하여 다음 작업을 완료할 수 있습니다.
+   - 집계된 로그 데이터를 검색하려면 [New Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)를 사용하십시오.
    - New Relic 로그 애플리케이션을 통해 로그 데이터를 시각화합니다.
 
 ## 계정, 코드 및 데이터베이스 감사
 
-상거래 관리 및 사용자 계정, 애플리케이션 코드, 데이터베이스 구성 및 로그를 검토하여 의심스러운 코드를 식별 및 정리하고 계정, 사이트 및 데이터베이스 액세스의 보안을 보장합니다. 그런 다음 필요에 따라 재배포합니다.
+Commerce 관리 및 사용자 계정, 애플리케이션 코드, 데이터베이스 구성 및 로그를 검토하여 의심스러운 코드를 식별 및 정리하고 계정, 사이트 및 데이터베이스 액세스의 보안을 보장합니다. 그런 다음 필요에 따라 재배포합니다.
 
 많은 사이트가 수 시간 내에 다시 손상될 수 있으므로 사고 후 사이트를 계속 면밀히 모니터링합니다. 지속적인 로그 검토 및 파일 무결성 모니터링을 통해 새로운 손상 징후를 신속하게 감지할 수 있습니다.
 
 ### 관리자 계정 감사
 
-- [관리자 액세스 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)- 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 관리자의 암호를 회전합니다.
+- [관리자 사용자 액세스 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 관리자 사용자의 암호를 회전합니다.
 
-- [관리자 보안 설정 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—관리자 보안 설정이 보안 모범 사례를 따르는지 확인합니다.
+- [관리자 보안 설정 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—관리자 보안 설정이 보안 모범 사례를 따르는지 확인하십시오.
 
-- [클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 사용자 계정 검토](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)—오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 클라우드 프로젝트 관리자의 암호를 회전합니다. 계정 보안 설정이 올바르게 구성되었는지 확인하십시오.
+- [클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 사용자 계정 검토](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 클라우드 프로젝트 관리자 사용자의 암호를 회전합니다. 계정 보안 설정이 올바르게 구성되었는지 확인하십시오.
 
-- [SSH 키 감사](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) 클라우드 인프라의 Adobe Commerce - SSH 키를 검토, 삭제 및 회전합니다.
+- 클라우드 인프라의 Adobe Commerce에 대한 [SSH 키 감사](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) - SSH 키를 검토, 삭제 및 회전합니다.
 
 ### 감사 코드
 
-- 책임자로부터 [HTML 머리글 및 바닥글 구성](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) 모든 범위 수준에서 다음을 포함 `website` 및 `store view`. 스크립트, 스타일 시트 및 기타 HTML 설정에서 알 수 없는 JavaScript 코드를 제거합니다. 코드 조각 추적과 같이 인식된 코드만 유지합니다.
+- 관리자의 `website` 및 `store view`을(를) 포함한 모든 범위 수준에서 [HTML 머리글 및 바닥글 구성](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html)을 검토하십시오. 스크립트, 스타일 시트 및 기타 HTML 설정에서 알 수 없는 JavaScript 코드를 제거합니다. 코드 조각 추적과 같이 인식된 코드만 유지합니다.
 
 - 현재 프로덕션 코드 베이스를 버전 제어 시스템(VCS)에 저장된 코드 베이스와 비교합니다.
 
@@ -115,13 +115,13 @@ ht-degree: 0%
 
 - 공개적으로 사용 가능한 맬웨어 검색 도구를 사용하여 사이트를 스캔하여 맬웨어가 더 이상 존재하지 않는지 확인합니다.
 
-- 이름을 변경하고 사이트를 확인하여 관리 패널의 보안을 설정합니다. `app/etc/local.xml` 및 `var` URL은 공개적으로 액세스할 수 없습니다.
+- 이름을 변경하고 사이트 `app/etc/local.xml` 및 `var` URL에 공개적으로 액세스할 수 없는지 확인하여 관리 패널의 보안을 유지하십시오.
 
 - 많은 사이트가 수 시간 내에 다시 손상될 수 있으므로 사고 후 사이트를 계속 면밀히 모니터링합니다. 지속적인 로그 검토 및 파일 무결성 모니터링을 통해 새로운 손상 징후를 신속하게 감지할 수 있습니다.
 
 ## Google 경고 제거
 
-사이트에 악성 코드가 포함되어 있는 것으로 Google에 의해 플래그가 지정된 경우 사이트를 정리한 후 검토를 요청합니다. 맬웨어에 감염된 사이트에 대한 리뷰는 며칠 걸립니다. Google에서 사이트가 깨끗하다고 결정하면 검색 결과와 브라우저의 경고가 72시간 이내에 사라집니다. 다음을 참조하십시오 [리뷰 요청](https://web.dev/articles/request-a-review).
+사이트에 악성 코드가 포함되어 있는 것으로 Google에 의해 플래그가 지정된 경우 사이트를 정리한 후 검토를 요청합니다. 맬웨어에 감염된 사이트에 대한 리뷰는 며칠 걸립니다. Google에서 사이트가 깨끗하다고 결정하면 검색 결과와 브라우저의 경고가 72시간 이내에 사라집니다. [검토 요청](https://web.dev/articles/request-a-review)을 참조하세요.
 
 ## 맬웨어 결과 검사 목록 검토
 

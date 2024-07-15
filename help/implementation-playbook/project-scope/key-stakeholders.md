@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # 주요 이해 당사자
 
-2021년의 많은 기업들은 &#39;팬데믹 방지&#39;가 조직의 디지털 강점과 직결된다는 사실을 깨닫게 되었습니다. Forrester 데이터를 기반으로[매킨지](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)ecommerce는 불과 3개월 만에 10년 동안 성장세를 보였으며, 이 기간 동안 고객은 오프라인 매장 문을 잠근 채 디지털 방식으로 고객을 연결해야 하는 상황으로 성장했습니다.
+2021년의 많은 기업들은 &#39;팬데믹 방지&#39;가 조직의 디지털 강점과 직결된다는 사실을 깨닫게 되었습니다. Forrester 데이터를 기반으로 [McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)전자 상거래 기업이 불과 3개월 만에 10년 동안 성장을 보였으며, 이러한 성장은 오프라인 매장 문이 잠겨 있는 동안 고객과 디지털 방식으로 연결할 필요성에 의해 이루어졌습니다.
 
 상거래의 전환에 투자하기로 결정할 때, 가장 중요한 단계 중 하나는 그 과정에 누가 조직으로부터 참여하는지를 결정하는 것이다. 소규모 기업의 경우 전자 상거래 또는 디지털 팀이 소수의 인원일 때도 있으므로 팀 전체가 그 업무를 맡는다. 그러나 규모가 큰 조직의 경우 한 가지 접근 방식은 다음을 포함하여 세 가지 다른 영역으로 나누는 것입니다.
 
@@ -39,6 +39,6 @@ ht-degree: 0%
 
 ## 경영 스폰서는 누구입니까?
 
-Digital Commerce 360은 조직에서 새로운 상거래 전환에 아직 투자하지 않은 가장 큰 이유는 리더십 지원이 부족하기 때문이라고 보고했습니다. 브랜드의 성공에는 리더십 팀의 참여도가 매우 중요합니다. 상거래 구현 기간 동안 반복되는 체크포인트 회의를 포함하여 다음 역할의 모든 지원을 권장합니다.
+디지털 Commerce 360은 조직이 아직 새로운 상거래 전환에 투자하지 못한 가장 큰 이유는 리더십 지원이 부족하기 때문이라고 보고했다. 브랜드의 성공에는 리더십 팀의 참여도가 매우 중요합니다. 상거래 구현 기간 동안 반복되는 체크포인트 회의를 포함하여 다음 역할의 모든 지원을 권장합니다.
 
 - 전체 C-suite

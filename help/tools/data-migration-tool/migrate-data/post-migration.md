@@ -1,16 +1,16 @@
 ---
-title: 데이터 마이그레이션 후 단계
-description: 사용 후 취할 조치에 대해 알아보기 [!DNL Data Migration Tool] Magento 1에서 Magento 2로 데이터를 마이그레이션합니다.
+title: Post 데이터 마이그레이션 단계
+description: ' [!DNL Data Migration Tool] 을(를) 사용하여 Magento 1에서 Magento 2로 데이터를 마이그레이션한 후 수행해야 할 단계를 알아봅니다.'
 exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
 
-# 데이터 마이그레이션 후 단계
+# Post 데이터 마이그레이션 단계
 
 마이그레이션을 완료하고 새 Magento 2 사이트를 철저히 테스트한 후 다음 작업을 수행하십시오.
 

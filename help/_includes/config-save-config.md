@@ -18,14 +18,14 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   예를 들어 Commerce가에 설치된 경우 `/var/www/html/magento2`, 다음을 입력합니다.
+   예를 들어 Commerce이 `/var/www/html/magento2`에 설치되어 있으면 다음을 입력하십시오.
 
    ```bash
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
-1. 다음을 확인합니다 `app/etc/config.php` 이(가) 업데이트되었습니다.
+1. `app/etc/config.php`이(가) 업데이트되었는지 확인합니다.
 
    ```bash
    git status
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >실행 _아님_ 에 변경 사항 제출 `generated`, `pub/media`, 또는 `pub/static` 소스 제어의 디렉터리. 빌드 시스템에서 이러한 파일을 생성합니다. 개발 시스템에는 프로덕션 시스템에서 사용할 준비가 되지 않은 코드, 테마 등이 있을 수 있습니다.
+   >`generated`, `pub/media` 또는 `pub/static` 디렉터리에 대한 변경 내용을 소스 제어에 제출하지 _마십시오_. 빌드 시스템에서 이러한 파일을 생성합니다. 개발 시스템에는 프로덕션 시스템에서 사용할 준비가 되지 않은 코드, 테마 등이 있을 수 있습니다.
 
-1. 변경 내용을 체크 인합니다. `app/etc/config.php` 소스 제어에만 적용됩니다.
+1. `app/etc/config.php`에 대한 변경 내용을 소스 제어에만 체크 인합니다.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

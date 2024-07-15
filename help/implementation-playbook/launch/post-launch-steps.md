@@ -1,16 +1,16 @@
 ---
-title: 실행 후 단계
+title: Post-launch 단계
 description: 원활한 Adobe Commerce 사이트 구현을 위해 출시 후 체크리스트를 사용합니다.
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 feature: Deploy
 source-git-commit: ce41158f900fad27e3e7b8157f5c64ac988bbabf
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
 
-# 실행 후 단계
+# Post-launch 단계
 
 웹 사이트가 활성 상태가 되면 사이트가 제대로 시작되었는지 확인하기 위해 가능한 한 빨리 다음 활동을 수행합니다.
 
@@ -19,8 +19,8 @@ ht-degree: 0%
 - 클러스터를 라이브로 태깅하고 지원 티켓을 만들어 높은 SLA 모니터링 활성화
 - CSE(Customer Success Engineer) 및 TAM(Technical Account Manager)은 컷오버가 완료되는 즉시 다음 작업을 수행합니다.
    - 클러스터를 Adobe Commerce 클라이언트에 대한 높은 SLA로 태깅하고 지원 티켓을 만들어 활성화합니다
-   - 활성화 **내부** Pingdom이 도메인 이름을 확인합니다(Pingdom에 대한 공개 액세스를 사용할 수 없음).
+   - **내부** Pingdom에서 도메인 이름을 확인합니다(Pingdom에 대한 공개 액세스를 사용할 수 없음).
    - 모니터링 상태를 검토하고 모든 항목이 녹색인지 확인합니다.
    - 보증 기간 및 매개 변수에 대해 Go-Live 당일 이메일로 이해 당사자에게 계속 알립니다.
 
-![실행 프로세스의 4단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-4.svg)
+![시작 프로세스의 4단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-4.svg)

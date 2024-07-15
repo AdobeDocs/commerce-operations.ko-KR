@@ -5,7 +5,7 @@ exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 feature: System
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 | 티켓 관리 | 아틀라시안 JIRA |
 | SLA 관리 | Atlassian JIRA 서비스 관리 |
 | 문서 관리 | 아틀라시안 컨플루언스 |
-| 소스 코드 관리 | Atlassian Bitbucket, GitHub |
+| Source 코드 관리 | Atlassian Bitbucket, GitHub |
 | CI(지속적 통합)/CD(지속적 배포) | 젱킨스 |
 | 커뮤니케이션 | 이메일, Microsoft Teams, 전화, Slack |
 | 회의 | 확대/축소, Microsoft Teams |
@@ -43,7 +43,7 @@ Jira는 다음과 같은 강력한 기능을 갖춘 티켓 추적 및 관리 시
 - 애자일/스크럼으로 간편한 티켓 시각화 및 이동
 - 클라이언트 팀과 개발 팀 간의 투명한 정보
 
-## 소스 코드 관리
+## Source 코드 관리
 
 Bitbucket은 Git 코드 관리 그 이상입니다. Bitbucket을 통해 팀은 프로젝트를 계획하고, 코드에 대해 공동 작업하고, 테스트하고, 배포할 수 있는 한 공간을 얻을 수 있습니다. Bitbucket을 사용하면 끌어오기 요청으로 코드 검토를 더 효율적으로 승인할 수 있습니다. 지정된 승인자와 병합된 체크리스트를 만들고 인라인 메모로 소스 코드에서 바로 토론을 열 수도 있습니다.
 

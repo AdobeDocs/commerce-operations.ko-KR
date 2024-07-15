@@ -6,8 +6,8 @@ labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 - [ ] 이 항목에서는 ____ 작동 방식에 대한 설명을 제공합니다.
 - [ ] 이 항목에서는 ____ 단계를 제공합니다.
-- [ ] 이 항목에는 ____을 보여 주는 코드 샘플이 포함되어 있습니다.
-- [ ] 기타(구체적으로 명시)
+- [ ] 항목에는 코드를 표시하는 코드 샘플이 포함되어 ____.
+- [ ] 기타(구체적으로 지정)
 
 ## 추가 정보
 

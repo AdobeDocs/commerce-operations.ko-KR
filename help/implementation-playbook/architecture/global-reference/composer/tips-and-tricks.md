@@ -19,17 +19,17 @@ Composer를 사용하여 Adobe Commerce 모듈을 개발할 때 문제가 발생
 
 >[!NOTE]
 >
->이 지침은 주로 다음에 적용됩니다. [글로벌 참조 아키텍처(GRA)](../overview.md) 프로젝트.
+>이 지침은 주로 [GRA(전역 참조 아키텍처)](../overview.md) 프로젝트에 적용됩니다.
 
 ## 작성기 속도 높이기
 
-설치 [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) 비동기 패키지 다운로드를 통해 Composer의 속도를 높이십시오.
+비동기 패키지 다운로드를 통해 Composer의 속도를 높이려면 [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo)을(를) 설치하십시오.
 
 ```bash
 composer global require hirak/prestissimo
 ```
 
-문제가 발생하면 제거합니다. `prestissimo`:
+문제가 발생하면 `prestissimo`을(를) 제거하십시오.
 
 ```bash
 composer global remove hirak/prestissimo
@@ -45,7 +45,7 @@ Composer가 패키지 버전으로 인해 교착 상태가 되는 경우가 있�
    composer clearcache
    ```
 
-1. 제거 `composer.lock` 모든 패키지의 파일입니다.
+1. 모든 패키지의 `composer.lock` 파일을 제거합니다.
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Composer가 패키지 버전으로 인해 교착 상태가 되는 경우가 있�
 
 >[!TIP]
 >
->이 단계는 모든 패키지를 사용 가능한 최신 버전으로 업데이트합니다. 되돌리기 `composer.lock` git에서 파일을 다운로드하여 업그레이드를 취소할 수 있습니다.
+>이 단계는 모든 패키지를 사용 가능한 최신 버전으로 업데이트합니다. Git에서 `composer.lock` 파일을 되돌려 이러한 업그레이드를 실행 취소합니다.
 
 ## 클라이언트 패키지에서 가능한 업데이트 확인
 
@@ -69,7 +69,7 @@ Composer가 패키지 버전으로 인해 교착 상태가 되는 경우가 있�
    composer outdated
    ```
 
-1. 와일드카드 및/또는 을 사용하여 필터링 `--minor-only` 이전 버전과 호환되지 않는 업그레이드를 건너뛰는 옵션:
+1. 호환되지 않는 이전 업그레이드를 건너뛰려면 와일드카드 및/또는 `--minor-only` 옵션을 사용하여 필터링하십시오.
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Git 분기에 설치된 모든 패키지에 대한 세부 사항을 확인합니
 composer info
 ```
 
-실행 `composer install` git 분기 전환 후 실행 전 `composer info`. 그렇지 않으면 체크아웃한 이전 분기에 대한 세부 정보가 Composer에 표시됩니다.
+Git 분기를 전환한 후 `composer info`을(를) 실행하기 전에 `composer install`을(를) 실행하십시오. 그렇지 않으면 체크아웃한 이전 분기에 대한 세부 정보가 Composer에 표시됩니다.
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## 개인 작성기 저장소 호스팅
 
-개인 Composer 저장소가 필요한 경우 [비공개 패키지 사용자](https://packagist.com/) 또는 [JFrog 아티팩토리](https://jfrog.com/integration/php-composer-repository/). 사용하지 않음 [사티스](https://github.com/composer/satis).
+개인 Composer 저장소가 필요한 경우 [개인 Packagist](https://packagist.com/) 또는 [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/)를 사용하십시오. [Satis](https://github.com/composer/satis)를 사용하지 마십시오.
 
-- **비공개 패키지 사용자** 는 안전하며, 세 명의 관리 사용자와 함께 연간 약 $600 USD가 소요되고 호스팅됩니다.
+- **Private Packagist**&#x200B;은(는) 안전하며 세 명의 관리 사용자와 함께 연간 600달러 정도 비용이 들며 호스팅됩니다.
 
-- **JFrog 아티팩토리** 1년에 미화 1,176달러부터 시작합니다. 이것은 Packagist만큼 일반적으로 사용되는 것은 아니지만, PHP보다 더 많은 언어를 지원합니다.
+- **JFrog Artifactory**&#x200B;는 연간 미화 1,176달러부터 시작합니다. 이것은 Packagist만큼 일반적으로 사용되는 것은 아니지만, PHP보다 더 많은 언어를 지원합니다.
 
-- **사티스** 에는 내장된 보안 및 자동화가 없으며 추가 호스팅이 필요합니다. 당신의 시간도 자유로워야 비로소 무료입니다.
+- **Satis**&#x200B;에는 기본 제공 보안 및 자동화가 없으며 추가 호스팅이 필요합니다. 당신의 시간도 자유로워야 비로소 무료입니다.
 
 ## 패키지 버전 관리
 
-사용 [시맨틱 버전 관리 2.0.0](https://semver.org/spec/v2.0.0.html) Adobe Commerce에 설명된 대로 [버전 관리 스키마](https://developer.adobe.com/commerce/php/development/versioning/). 헛수고를 하지 마라.
+Adobe Commerce [버전 관리 스키마](https://developer.adobe.com/commerce/php/development/versioning/)에 설명된 대로 [시맨틱 버전 관리 2.0.0](https://semver.org/spec/v2.0.0.html)을 사용하십시오. 헛수고를 하지 마라.
 
-Adobe Commerce 모듈 종속성에 대해 다음을 수행합니다. [모듈 버전 종속성](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) 설명서를 참조하십시오.
+Adobe Commerce 모듈 종속성에 대해서는 [모듈 버전 종속성](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) 설명서를 따르십시오.
 
-내에서 버전 정의를 사용하지 마십시오. `composer.json` 파일. 대신 버전에 Git 태그를 사용하십시오. 다음을 참조하십시오 [작성기 버전 및 제한](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+`composer.json` 파일 내에서 버전 정의를 사용하지 마십시오. 대신 버전에 Git 태그를 사용하십시오. [작성기 버전 및 제약 조건](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints)을 참조하세요.
 
 ## Composer가 아닌 아카이브 파일에 모듈을 배치하는 위치
 
-아카이브의 모듈에 대한 Git 저장소를 생성하고 직접 호스팅합니다. 모든 Adobe Commerce 모듈에는 `composer.json` 파일. Git에서 호스팅하고 Private Packagist와 동기화한 후 Composer를 사용하여 설치할 수 있습니다.
+아카이브의 모듈에 대한 Git 저장소를 생성하고 직접 호스팅합니다. 모든 Adobe Commerce 모듈에는 `composer.json` 파일이 있습니다. Git에서 호스팅하고 Private Packagist와 동기화한 후 Composer를 사용하여 설치할 수 있습니다.
 
 새 버전의 패키지를 받으면 코드를 Git에 업로드하고 태그를 지정한 다음 작성기로 새 버전을 설치합니다.

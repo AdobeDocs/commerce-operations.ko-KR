@@ -4,14 +4,14 @@ description: config.php 파일의 값 목록을 참조하십시오.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
 
 # config.php 참조
 
-다음 `config.php` 파일에는 다음 섹션이 포함되어 있습니다.
+`config.php` 파일에는 다음 섹션이 포함되어 있습니다.
 
 | 이름 | 설명 |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-자세히 알아보기 [모듈].
+[모듈]에 대해 자세히 알아보세요.
 
 ## 범위
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-자세히 알아보기 [상거래 범위][scopes].
+[Commerce 범위][scopes]에 대해 자세히 알아보세요.
 
 ## 시스템
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-자세히 알아보기 [시스템별 구성](config-reference-sens.md).
+[시스템별 구성](config-reference-sens.md)에 대해 자세히 알아보세요.
 
 ## 테마
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 ]
 ```
 
-자세히 알아보기 [테마].
+[테마]에 대해 자세히 알아보세요.
 
 <!-- link definitions -->
 

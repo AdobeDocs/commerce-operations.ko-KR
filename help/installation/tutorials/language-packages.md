@@ -13,9 +13,9 @@ ht-degree: 0%
 
 이 섹션에서는 하나 이상의 언어 패키지를 제거하는 방법에 대해 설명합니다(필요한 경우 파일 시스템에서 언어 패키지의 코드 포함). 나중에 데이터를 복원할 수 있도록 백업을 먼저 만들 수 있습니다.
 
-이 명령은 제거됩니다. *전용* 에 지정된 언어 패키지 `composer.json`: 즉, 작성기 패키지로 제공되는 언어 패키지입니다. 언어 패키지가 작성기 패키지가 아닌 경우 파일 시스템에서 언어 패키지 코드를 제거하여 수동으로 제거해야 합니다.
+이 명령은 `composer.json`에 지정된 *only* 언어 패키지, 즉 Composer 패키지로 제공되는 언어 패키지를 제거합니다. 언어 패키지가 작성기 패키지가 아닌 경우 파일 시스템에서 언어 패키지 코드를 제거하여 수동으로 제거해야 합니다.
 
-다음을 사용하여 언제든지 백업을 복원할 수 있습니다. [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 명령입니다.
+[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 명령을 사용하여 언제든지 백업을 복원할 수 있습니다.
 
 명령 사용:
 
@@ -29,8 +29,8 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
    이 문제를 해결하려면 모든 종속 언어 패키지를 동시에 제거하거나 먼저 종속 언어 패키지를 제거할 수 있습니다.
 
-1. If `--backup code` 을(를) 지정한 경우 파일 시스템을 백업합니다(제외). `var` 및 `pub/static` 디렉토리)에서 로 `var/backups/<timestamp>_filesystem.tgz`
-1. 다음을 사용하여 코드 베이스에서 언어 패키지 파일 제거 `composer remove`.
+1. `--backup code`이(가) 지정된 경우 `var` 및 `pub/static` 디렉터리를 제외한 파일 시스템을 `var/backups/<timestamp>_filesystem.tgz`에 백업하십시오.
+1. `composer remove`을(를) 사용하여 코드 베이스에서 언어 패키지 파일을 제거합니다.
 1. 캐시를 지웁니다.
 
 예를 들어 다른 언어 패키지가 종속된 언어 패키지를 제거하려고 하면 다음 메시지가 표시됩니다.

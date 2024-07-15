@@ -5,7 +5,7 @@ exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 - 성능 모니터 도구 사용(새로운 유물)
 - 리허설 중 데이터 마이그레이션 활동(있는 경우)
 
-![실행 프로세스의 1단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-1.svg)
+![시작 프로세스의 1단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-1.svg)
 
 Adobe Commerce 온-프레미스와 클라우드 구현의 주요 차이점은 배포 스크립트 및 도구와 SSL, 메일 서비스 및 CDN의 설정입니다. 그러나 그 과정은 여전히 같다.
 
@@ -57,4 +57,4 @@ Adobe Commerce on cloud infrastructure는 트랜잭션 이메일에 SendGrid Mai
 - 프로덕션 환경에 대한 결제 구성(예를 들어, 결제가 테스트를 위해 샌드박스 모드를 사용)
 - 프로덕션 데이터베이스의 테스트 데이터(고객, 위시리스트, 검토, 주문 및 관련 데이터)가 지워집니다.
 
-![실행 프로세스의 2단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-2.svg)
+![시작 프로세스의 2단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-2.svg)

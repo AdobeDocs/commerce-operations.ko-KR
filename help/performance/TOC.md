@@ -23,6 +23,6 @@ ht-degree: 4%
 - [배포 흐름](deployment-flow.md)
 - 고급 개념 {#concepts}
    - [고급 설정](advanced-setup.md)
-   - [고급 [!DNL JavaScript] 묶음](advanced-js-bundling.md)
+   - [고급 [!DNL JavaScript] 번들](advanced-js-bundling.md)
    - [GraphQL 애플리케이션 서버](application-server.md)
 - [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

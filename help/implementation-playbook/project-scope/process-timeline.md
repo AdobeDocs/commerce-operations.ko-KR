@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 일반적인 타임라인 예
 
-![일반적인 상거래 구현 타임라인 예](../../assets/playbooks/timeline-example.svg)
+![일반적인 상거래 구현 타임라인 예제](../../assets/playbooks/timeline-example.svg)
 
 ## 샘플 타임라인 활동
 

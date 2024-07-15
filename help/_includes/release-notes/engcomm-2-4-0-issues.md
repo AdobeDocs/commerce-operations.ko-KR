@@ -1,8 +1,8 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '6434'
-ht-degree: 12%
+source-wordcount: '3292'
+ht-degree: 0%
 
 ---
 # 커뮤니티 기여
@@ -69,7 +69,7 @@ ht-degree: 12%
 | 에덴 두옹 | [#26060](https://github.com/magento/magento2/pull/26060) | 해당 사항 없음 |
 | 에덴 두옹 | [#26059](https://github.com/magento/magento2/pull/26059) | 해당 사항 없음 |
 | 마테우스 곤티호 | [#26058](https://github.com/magento/magento2/pull/26058) | 해당 사항 없음 |
-| divyajyothi5321 | [#26011](https://github.com/magento/magento2/pull/26011) | [25930](https://github.com/magento/magento2/issues/25930) |
+| 디뱌요티5321 | [#26011](https://github.com/magento/magento2/pull/26011) | [25930](https://github.com/magento/magento2/issues/25930) |
 | 에덴 두옹 | [#26004](https://github.com/magento/magento2/pull/26004) | 해당 사항 없음 |
 | 사티시 수프라마니아어 | [#25920](https://github.com/magento/magento2/pull/25920) | 해당 사항 없음 |
 | 에덴 두옹 | [#26082](https://github.com/magento/magento2/pull/26082) | 해당 사항 없음 |
@@ -131,17 +131,17 @@ ht-degree: 12%
 | 마크 로드리게스 | [#25315](https://github.com/magento/magento2/pull/25315) | [13136](https://github.com/magento/magento2/issues/13136) |
 | 루카시 바이사로비치 | [#25957](https://github.com/magento/magento2/pull/25957) | [22047](https://github.com/magento/magento2/issues/22047) |
 | 데이비드 램바우어 | [#24103](https://github.com/magento/magento2/pull/24103) | 해당 사항 없음 |
-| divyajyothi5321 | [#26173](https://github.com/magento/magento2/pull/26173) | [26164](https://github.com/magento/magento2/issues/26164) |
+| 디뱌요티5321 | [#26173](https://github.com/magento/magento2/pull/26173) | [26164](https://github.com/magento/magento2/issues/26164) |
 | 라비 찬드라 | [#26170](https://github.com/magento/magento2/pull/26170) | [24972](https://github.com/magento/magento2/issues/24972) |
 | 아삼본 | [#25876](https://github.com/magento/magento2/pull/25876) | [25659](https://github.com/magento/magento2/issues/25659) |
 | 아다쉬 마니캄 | [#25428](https://github.com/magento/magento2/pull/25428) | 해당 사항 없음 |
 | 안드레이 레가예프 | [#25125](https://github.com/magento/magento2/pull/25125) | 해당 사항 없음 |
 | 루카시 바이사로비치 | [#26225](https://github.com/magento/magento2/pull/26225) | 해당 사항 없음 |
 | 알렉세이 아렌다렌코 | [#25603](https://github.com/magento/magento2/pull/25603) | [18717](https://github.com/magento/magento2/issues/18717) |
-| divyajyothi5321 | [#26182](https://github.com/magento/magento2/pull/26182) | [26176](https://github.com/magento/magento2/issues/26176) |
+| 디뱌요티5321 | [#26182](https://github.com/magento/magento2/pull/26182) | [26176](https://github.com/magento/magento2/issues/26176) |
 | 바르트워미에즈 슈베르 | [#26130](https://github.com/magento/magento2/pull/26130) | [25390](https://github.com/magento/magento2/issues/25390) |
 | 마르코 올리베이라 | [#26084](https://github.com/magento/magento2/pull/26084) | [26083](https://github.com/magento/magento2/issues/26083) |
-| divyajyothi5321 | [#26066](https://github.com/magento/magento2/pull/26066) | [26064](https://github.com/magento/magento2/issues/26064) |
+| 디뱌요티5321 | [#26066](https://github.com/magento/magento2/pull/26066) | [26064](https://github.com/magento/magento2/issues/26064) |
 | MaxRomanov4669 | [#25958](https://github.com/magento/magento2/pull/25958) | [14663](https://github.com/magento/magento2/issues/14663) |
 | 안톤 카플야 | [#25479](https://github.com/magento/magento2/pull/25479) | 해당 사항 없음 |
 | 토르벤 혼 | [#25640](https://github.com/magento/magento2/pull/25640) | 해당 사항 없음 |
@@ -155,12 +155,12 @@ ht-degree: 12%
 | 바르트워미에즈 슈베르 | [#26268](https://github.com/magento/magento2/pull/26268) | [14001](https://github.com/magento/magento2/issues/14001) |
 | aleromano89 | [#26264](https://github.com/magento/magento2/pull/26264) | [23521](https://github.com/magento/magento2/issues/23521) |
 | 루카시 바이사로비치 | [#26259](https://github.com/magento/magento2/pull/26259) | 해당 사항 없음 |
-| divyajyothi5321 | [#26237](https://github.com/magento/magento2/pull/26237) | [25936](https://github.com/magento/magento2/issues/25936) |
+| 디뱌요티5321 | [#26237](https://github.com/magento/magento2/pull/26237) | [25936](https://github.com/magento/magento2/issues/25936) |
 | 히테시 | [#26234](https://github.com/magento/magento2/pull/26234) | [26227](https://github.com/magento/magento2/issues/26227) |
 | 사티시 수프라마니아어 | [#26215](https://github.com/magento/magento2/pull/26215) | [26208](https://github.com/magento/magento2/issues/26208) |
 | 루카시 바이사로비치 | [#26207](https://github.com/magento/magento2/pull/26207) | [26206](https://github.com/magento/magento2/issues/26206) |
-| divyajyothi5321 | [#26183](https://github.com/magento/magento2/pull/26183) | [26181](https://github.com/magento/magento2/issues/26181) |
-| divyajyothi5321 | [#26169](https://github.com/magento/magento2/pull/26169) | [26168](https://github.com/magento/magento2/issues/26168) |
+| 디뱌요티5321 | [#26183](https://github.com/magento/magento2/pull/26183) | [26181](https://github.com/magento/magento2/issues/26181) |
+| 디뱌요티5321 | [#26169](https://github.com/magento/magento2/pull/26169) | [26168](https://github.com/magento/magento2/issues/26168) |
 | 야로슬라프 로고사 | [#26029](https://github.com/magento/magento2/pull/26029) | 해당 사항 없음 |
 | 로라 폴코 | [#25946](https://github.com/magento/magento2/pull/25946) | [19093](https://github.com/magento/magento2/issues/19093) |
 | 미즈맨 | [#25250](https://github.com/magento/magento2/pull/25250) | [23350](https://github.com/magento/magento2/issues/23350) |
@@ -189,7 +189,7 @@ ht-degree: 12%
 | 벤저민 로젠베르거 | [#25716](https://github.com/magento/magento2/pull/25716) | 해당 사항 없음 |
 | 마티 바파 | [#25375](https://github.com/magento/magento2/pull/25375) | [25373](https://github.com/magento/magento2/issues/25373) |
 | 미차일로 | [#25333](https://github.com/magento/magento2/pull/25333) | [25278](https://github.com/magento/magento2/issues/25278) |
-| dhoang89 | [#25194](https://github.com/magento/magento2/pull/25194) | [25188](https://github.com/magento/magento2/issues/25188) |
+| 다낭89 | [#25194](https://github.com/magento/magento2/pull/25194) | [25188](https://github.com/magento/magento2/issues/25188) |
 | 토머스 클라인 | [#25083](https://github.com/magento/magento2/pull/25083) | 해당 사항 없음 |
 | 지호바니 필리프 페레이라 데메트리오 | [#24955](https://github.com/magento/magento2/pull/24955) | [22304](https://github.com/magento/magento2/issues/22304) |
 | 존 휴스 | [#23313](https://github.com/magento/magento2/pull/23313) | [22909](https://github.com/magento/magento2/issues/22909) |
@@ -292,7 +292,7 @@ ht-degree: 12%
 | 톡신스 | [#25488](https://github.com/magento/magento2/pull/25488) | [25487](https://github.com/magento/magento2/issues/25487) |
 | 니키타 사리체프 | [#25249](https://github.com/magento/magento2/pull/25249) | 해당 사항 없음 |
 | 비샬 웹쿨 | [#25246](https://github.com/magento/magento2/pull/25246) | [25245](https://github.com/magento/magento2/issues/25245) |
-| adrian-martinez-interactiv4 | [#24843](https://github.com/magento/magento2/pull/24843) | [24842](https://github.com/magento/magento2/issues/24842) |
+| 아드리안 마르티네즈-인터액티브4 | [#24843](https://github.com/magento/magento2/pull/24843) | [24842](https://github.com/magento/magento2/issues/24842) |
 | 사티시 수프라마니아어 | [#26820](https://github.com/magento/magento2/pull/26820) | 해당 사항 없음 |
 | 카리나 탐바알 | [#26816](https://github.com/magento/magento2/pull/26816) | 해당 사항 없음 |
 | 아지트 | [#26771](https://github.com/magento/magento2/pull/26771) | 해당 사항 없음 |

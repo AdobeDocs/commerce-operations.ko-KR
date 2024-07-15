@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # 검색 엔진 사전 요구 사항
 
-Adobe Commerce 2.4부터 모든 설치는 를 사용하도록 구성해야 합니다 [Elasticsearch](https://www.elastic.co) 또는 [OpenSearch](https://opensearch.org/) 를 카탈로그 검색 솔루션으로 사용하십시오.
+Adobe Commerce 2.4부터는 카탈로그 검색 솔루션으로 [Elasticsearch](https://www.elastic.co) 또는 [OpenSearch](https://opensearch.org/)을 사용하도록 모든 설치를 구성해야 합니다.
 
 >[!NOTE]
 >
->2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 호환 가능한 Elasticsearch 포크입니다. Elasticsearch 7을 구성하는 모든 지침은 OpenSearch에 적용됩니다. [Elasticsearch에서 OpenSearch로 마이그레이션](../../../upgrade/prepare/opensearch-migration.md) 에서는 OpenSearch로 전환하는 방법에 대한 지침을 제공합니다.
+>2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 호환 가능한 Elasticsearch 포크입니다. Elasticsearch 7을 구성하는 모든 지침은 OpenSearch에 적용됩니다. [Elasticsearch에서 OpenSearch로 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)에서 OpenSearch로 전환하는 방법에 대한 지침을 제공합니다.
 
 ## 지원되는 버전
 
 Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSearch를 설치하고 구성해야 합니다.
 
-다음을 참조하십시오. [시스템 요구 사항](../../system-requirements.md) 특정 버전 정보.
+특정 버전 정보는 [시스템 요구 사항](../../system-requirements.md)을 참조하세요.
 
 ## 권장 구성
 
@@ -41,7 +41,7 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 
 * Commerce 애플리케이션과 검색 엔진은 다른 호스트에 설치됩니다.
 
-  별도의 호스트에서 실행하려면 프록시가 필요합니다. (검색 엔진 클러스터링은 이 안내서에서 다루지 않지만 자세한 내용은 [Elasticsearch 클러스터링 설명서](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  별도의 호스트에서 실행하려면 프록시가 필요합니다. (검색 엔진 클러스터링은 이 안내서의 범위를 벗어나지만 [Elasticsearch 클러스터링 설명서](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html)에서 자세한 정보를 찾을 수 있습니다.)
 
 * 각 호스트에는 자체 웹 서버가 있습니다. 웹 서버는 동일하지 않아도 됩니다.
 
@@ -59,7 +59,7 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 
 1. 검색 엔진 웹 서버(포트 443에서 수신)는 검색 엔진 서버로 요청을 프록시합니다(기본적으로 포트 9200에서 수신).
 
-1. 검색 엔진에 대한 액세스는 HTTP 기본 인증을 통해 추가로 보호됩니다. 검색 엔진에 연결하는 요청의 경우 SSL을 통해 이동해야 합니다 *및* 유효한 사용자 이름과 암호를 제공하십시오.
+1. 검색 엔진에 대한 액세스는 HTTP 기본 인증을 통해 추가로 보호됩니다. 검색 엔진에 연결하려면 SSL *및*&#x200B;을 통해 올바른 사용자 이름과 암호를 제공해야 합니다.
 
 1. 검색 엔진은 요청을 처리합니다.
 
@@ -83,9 +83,9 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 방화벽 또는 SELinux와의 통신을 허용하는 규칙을 설정하려면 다음 리소스를 참조하십시오.
 
 * [입력 방법](https://help.ubuntu.com/community/IptablesHowTo)
-* [Iptables 규칙을 편집하는 방법(fedora 프로젝트)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+* [테이블 규칙을 편집하는 방법(fedora 프로젝트)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [SELinux 소개(CentOS.org)](https://www.centos.org)
-* [SELinux 방법 위키(CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [SELinux 사용 방법 Wiki(CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Java Software Development Kit 설치
 
@@ -95,7 +95,7 @@ Java가 이미 설치되어 있는지 확인하려면 다음 명령을 입력합
 java -version
 ```
 
-메시지가 다음과 같은 경우 `java: command not found` 에서는 다음 섹션에서 설명한 대로 Java SDK를 설치해야 합니다.
+`java: command not found` 메시지가 표시되면 다음 섹션에서 설명한 대로 Java SDK를 설치해야 합니다.
 
 다음 섹션 중 하나를 참조하십시오.
 
@@ -104,9 +104,9 @@ java -version
 
 #### CentOS에 JDK 설치
 
-이 항목 보기 [Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+이 [Digital Ocean 튜토리얼](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)을 참조하세요.
 
-JDK를 설치하고 *아님* JRE.
+JDK를 설치하고 JRE를 *하지*&#x200B;하십시오.
 
 ```bash
 yum -y install java-1.8.0-openjdk
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->일부 운영 체제에서는 Java 버전 8을 사용할 수 없습니다. 예를 들어 다음과 같은 작업을 수행할 수 있습니다 [사용 가능한 Ubuntu 패키지 목록 검색](https://packages.ubuntu.com/).
+>일부 운영 체제에서는 Java 버전 8을 사용할 수 없습니다. 예를 들어 [Ubuntu에서 사용 가능한 패키지 목록을 검색](https://packages.ubuntu.com/)할 수 있습니다.
 
 #### Ubuntu에 JDK 설치
 
-Ubuntu에 JDK 1.8을 설치하려면 `root` 권한:
+Ubuntu에 JDK 1.8을 설치하려면 `root` 권한을 가진 사용자로 다음 명령을 입력하십시오.
 
 ```bash
 apt-get -y update
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-기타 옵션은 다음을 참조하십시오. [Oracle 설명서](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+다른 옵션은 [Oracle 설명서](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)를 참조하세요.
 
 ### 검색 엔진 설치
 
-팔로우 [설치 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) 또는 [OpenSearch 설치 및 구성](https://opensearch.org/docs/latest/opensearch/install/index/) 플랫폼별 단계에 대해 설명합니다.
+플랫폼별 단계는 [Elasticsearch 설치](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) 또는 [OpenSearch 설치 및 구성](https://opensearch.org/docs/latest/opensearch/install/index/)을 따르십시오.
 
 Elasticsearch이 작동하는지 확인하려면 실행 중인 서버에서 다음 명령을 입력합니다.
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## 업그레이드 Elasticsearch
 
-을(를) 참조하십시오 [업그레이드 Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 프로덕션에 배포하기 전에 데이터 백업, 잠재적인 마이그레이션 문제 감지 및 업그레이드 테스트에 대한 전체 지침 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작해야 할 수도 있고 필요하지 않을 수도 있습니다.
+프로덕션에 배포하기 전에 데이터 백업, 잠재적인 마이그레이션 문제 감지 및 업그레이드 테스트에 대한 전체 지침은 [Elasticsearch 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)를 참조하십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작해야 할 수도 있고 필요하지 않을 수도 있습니다.
 
-Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 다음을 참조하십시오 [Java Software Development Kit 설치](#install-the-java-software-development-kit) 설치된 JDK 버전을 확인하려면 다음을 수행하십시오.
+Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 설치된 JDK 버전을 확인하려면 [Java Software Development Kit 설치](#install-the-java-software-development-kit)를 참조하십시오.
 
 ## 추가 리소스
 
-다음을 참조하십시오. [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) 또는 [OpenSearch](https://opensearch.org/docs/latest/) 설명서를 참조하십시오.
+[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) 또는 [OpenSearch](https://opensearch.org/docs/latest/) 설명서를 참조하세요.

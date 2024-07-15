@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Ngix
 
-Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.org/en/linux_packages.html#mainline)). 최신 버전의 도 설치해야 합니다. `php-fpm`.
+Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.org/en/linux_packages.html#mainline))를 지원합니다. 최신 버전의 `php-fpm`도 설치해야 합니다.
 
-설치 지침은 사용 중인 운영 체제에 따라 다릅니다. 다음을 참조하십시오 [PHP](../php-settings.md) 을 참조하십시오.
+설치 지침은 사용 중인 운영 체제에 따라 다릅니다. 자세한 내용은 [PHP](../php-settings.md)을 참조하세요.
 
 ## 우분투
 
@@ -25,17 +25,17 @@ Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.or
 sudo apt -y install nginx
 ```
 
-다음을 수행할 수도 있습니다. [소스에서 nginx 빌드](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+[소스에서 nginx를 빌드](https://www.armanism.com/blog/install-nginx-on-ubuntu)할 수도 있습니다.
 
-다음 섹션을 완료하고 애플리케이션을 설치한 후에는 샘플 구성 파일을 사용하여 [nginx 구성](#configure-nginx).
+다음 섹션을 완료하고 응용 프로그램을 설치한 후 샘플 구성 파일을 사용하여 [nginx를 구성](#configure-nginx)합니다.
 
 ### php-fpm 설치 및 구성
 
-Adobe Commerce에는 여러 항목이 필요합니다 [확장 프로그램](../php-settings.md) 제대로 작동합니다. 이러한 확장 외에도 를 설치하고 구성해야 합니다. `php-fpm` nginx를 사용하는 경우 확장명.
+Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.md)이 필요합니다. nginx를 사용하는 경우 이러한 확장 외에도 `php-fpm` 확장 프로그램을 설치하고 구성해야 합니다.
 
-설치 및 구성 `php-fpm`:
+`php-fpm`을(를) 설치하고 구성하려면:
 
-1. 설치 `php-fpm` 및 `php-cli`:
+1. `php-fpm` 및 `php-cli` 설치:
 
    ```bash
    apt-get -y install php7.2-fpm php7.2-cli
@@ -43,9 +43,9 @@ Adobe Commerce에는 여러 항목이 필요합니다 [확장 프로그램](../p
 
    >[!NOTE]
    >
-   >이 명령은 사용 가능한 최신 버전의 PHP 7.2.X를 설치합니다. 다음을 참조하십시오 [시스템 요구 사항](../../system-requirements.md) 지원되는 PHP 버전용입니다.
+   >이 명령은 사용 가능한 최신 버전의 PHP 7.2.X를 설치합니다. 지원되는 PHP 버전은 [시스템 요구 사항](../../system-requirements.md)을 참조하십시오.
 
-1. 를 엽니다. `php.ini` 편집기의 파일:
+1. 편집기에서 `php.ini` 파일을 엽니다.
 
    ```bash
    vim /etc/php/7.2/fpm/php.ini
@@ -65,11 +65,11 @@ Adobe Commerce에는 여러 항목이 필요합니다 [확장 프로그램](../p
 
    >[!NOTE]
    >
-   >Adobe Commerce을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 을(를) 참조하십시오 [필수 PHP 설정](../php-settings.md) 추가 정보.
+   >Adobe Commerce을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 자세한 내용은 [필수 PHP 설정](../php-settings.md)을 참조하세요.
 
 1. 저장하고 편집기를 종료합니다.
 
-1. 다시 시작 `php-fpm` 서비스:
+1. `php-fpm` 서비스 다시 시작:
 
    ```bash
    systemctl restart php7.2-fpm
@@ -77,7 +77,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [확장 프로그램](../p
 
 ### MySQL 설치 및 구성
 
-을(를) 참조하십시오 [MySQL](../database/mysql.md) 추가 정보.
+자세한 내용은 [MySQL](../database/mysql.md)을 참조하세요.
 
 ### 설치 및 구성
 
@@ -89,9 +89,9 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 이 예에서는 명령줄을 사용한 작성기 기반 설치를 보여 줍니다.
 
-1. 다음으로: [파일 시스템 소유자](../file-system/overview.md)애플리케이션 서버에 로그인합니다.
+1. [파일 시스템 소유자](../file-system/overview.md)(으)로 응용 프로그램 서버에 로그인합니다.
 
-1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다. 이 예에서는 Ubuntu 기본값을 사용합니다. `/var/www/html`.
+1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다. 이 예제에서는 Ubuntu 기본 `/var/www/html`을(를) 사용합니다.
 
    ```bash
    cd /var/www/html
@@ -117,7 +117,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   메시지가 표시되면 [인증 키](../authentication-keys.md). 사용자 _공개 키_ 은 사용자 이름입니다. 는 _개인 키_ 는 암호입니다.
+   메시지가 표시되면 [인증 키](../authentication-keys.md)를 입력하십시오. _공개 키_&#x200B;은(는) 사용자 이름이고 _개인 키_&#x200B;은(는) 암호입니다.
 
 1. 응용 프로그램을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 해야 합니다.
 
@@ -141,7 +141,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    chmod u+x bin/magento
    ```
 
-1. 다음에서 설치 [명령줄](../../advanced.md). 이 예에서는 설치 디렉토리의 이름이 이라고 가정합니다 `magento2ee`, `db-host` 동일한 시스템에 있음(`localhost`) 및 `db-name`, `db-user`, 및 `db-password` 모두 `magento`:
+1. [명령줄](../../advanced.md)에서 설치합니다. 이 예제에서는 설치 디렉터리 이름이 `magento2ee`이고 `db-host`이(가) 같은 컴퓨터(`localhost`)에 있으며 `db-name`, `db-user` 및 `db-password`이(가) 모두 `magento`이라고 가정합니다.
 
    ```bash
    bin/magento setup:install \
@@ -177,9 +177,9 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 ### nginx 구성
 
-다음을 사용하여 nginx를 구성하는 것이 좋습니다. `nginx.conf.sample` 설치 디렉터리 및 nginx 가상 호스트에 제공된 구성 파일입니다.
+설치 디렉터리 및 nginx 가상 호스트에 제공된 `nginx.conf.sample` 구성 파일을 사용하여 nginx를 구성하는 것이 좋습니다.
 
-이 지침은 nginx 가상 호스트에 대해 Ubuntu 기본 위치를 사용하고 있다고 가정합니다(예: `/etc/nginx/sites-available`) 및 Ubuntu 기본 docroot(예: `/var/www/html`) 그러나 사용자 환경에 맞게 이러한 위치를 변경할 수 있습니다.
+이 지침은 nginx 가상 호스트(예: `/etc/nginx/sites-available`)에 대해 Ubuntu 기본 위치를 사용하고 있고 Ubuntu 기본 docroot(예: `/var/www/html`)도 사용하고 있다고 가정하지만, 사용자 환경에 맞게 이러한 위치를 변경할 수 있습니다.
 
 1. 사이트에 대한 새 가상 호스트를 만듭니다.
 
@@ -205,13 +205,13 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
    >[!NOTE]
    >
-   >다음 `include` 지시문은 설치 디렉토리의 샘플 nginx 구성 파일을 가리켜야 합니다.
+   >`include` 지시문은 설치 디렉터리의 샘플 nginx 구성 파일을 가리켜야 합니다.
 
-1. 바꾸기 `www.magento-dev.com` 을 추가합니다. 이 URL은 Adobe Commerce 설치 시 지정한 기본 URL과 일치해야 합니다.
+1. `www.magento-dev.com`을(를) 도메인 이름으로 바꾸십시오. 이 URL은 Adobe Commerce 설치 시 지정한 기본 URL과 일치해야 합니다.
 
 1. 저장하고 편집기를 종료합니다.
 
-1. 에서 symlink를 생성하여 새로 생성된 가상 호스트를 활성화합니다. `/etc/nginx/sites-enabled` 디렉터리:
+1. `/etc/nginx/sites-enabled` 디렉터리에 symlink를 만들어 새로 만든 가상 호스트를 활성화합니다.
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
@@ -231,7 +231,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 ### 설치 확인
 
-웹 브라우저를 열고 사이트의 기본 URL로 이동하여 [설치 확인](../../next-steps/verify.md).
+웹 브라우저를 열고 사이트의 기본 URL로 이동하여 [설치를 확인](../../next-steps/verify.md)합니다.
 
 ## 센트OS 7
 
@@ -261,17 +261,17 @@ systemctl enable nginx
 
 ### php-fpm 설치 및 구성
 
-Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 확장이 제대로 작동합니다. 이러한 확장 외에도 를 설치하고 구성해야 합니다. `php-fpm` nginx를 사용하는 경우 확장명.
+Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확장이 필요합니다. nginx를 사용하는 경우 이러한 확장 외에도 `php-fpm` 확장 프로그램을 설치하고 구성해야 합니다.
 
-1. 설치 `php-fpm`:
+1. `php-fpm` 설치:
 
    ```bash
    yum -y install php70w-fpm
    ```
 
-1. 를 엽니다. `/etc/php.ini` 파일을 편집기에 넣습니다.
+1. 편집기에서 `/etc/php.ini` 파일을 엽니다.
 
-1. 주석 제거 `cgi.fix_pathinfo` 라인 및 값 변경 `0`.
+1. `cgi.fix_pathinfo` 줄의 주석 처리를 제거하고 값을 `0`(으)로 변경합니다.
 
 1. 다음 행과 일치하도록 파일을 편집합니다.
 
@@ -283,7 +283,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
 
    >[!NOTE]
    >
-   >Adobe Commerce을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 을(를) 참조하십시오 [필수 PHP 설정](../php-settings.md) 추가 정보.
+   >Adobe Commerce을 테스트할 때 메모리 제한을 2G로 설정하는 것이 좋습니다. 자세한 내용은 [필수 PHP 설정](../php-settings.md)을 참조하세요.
 
 1. 세션 경로 디렉토리의 주석 처리를 제거하고 경로를 설정합니다.
 
@@ -293,7 +293,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
 
 1. 저장하고 편집기를 종료합니다.
 
-1. 열기 `/etc/php-fpm.d/www.conf` 를 입력합니다.
+1. 편집기에서 `/etc/php-fpm.d/www.conf` 열기
 
 1. 다음 행과 일치하도록 파일을 편집합니다.
 
@@ -318,7 +318,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
 
 1. 저장하고 편집기를 종료합니다.
 
-1. PHP 세션 경로에 대한 디렉터리를 만들고 소유자를 로 변경합니다. `apache` 사용자 및 그룹:
+1. PHP 세션 경로에 대한 디렉터리를 만들고 소유자를 `apache` 사용자 및 그룹으로 변경합니다.
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
    chown -R apache:apache /var/lib/php/
    ```
 
-1. PHP 세션 경로에 대한 디렉터리를 만들고 소유자를 로 변경합니다. `apache` 사용자 및 그룹:
+1. PHP 세션 경로에 대한 디렉터리를 만들고 소유자를 `apache` 사용자 및 그룹으로 변경합니다.
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -338,7 +338,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
    chown -R apache:apache /run/php-fpm/
    ```
 
-1. 시작 `php-fpm` 부팅할 때 시작할 수 있도록 서비스 및 구성:
+1. `php-fpm` 서비스를 시작하고 부팅 시 시작되도록 구성하십시오.
 
    ```bash
    systemctl start php-fpm
@@ -348,7 +348,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
    systemctl enable php-fpm
    ```
 
-1. 다음을 확인합니다 `php-fpm` 서비스가 실행 중입니다.
+1. `php-fpm` 서비스가 실행 중인지 확인합니다.
 
    ```bash
    netstat -pl | grep php-fpm.sock
@@ -356,7 +356,7 @@ Adobe Commerce에는 여러 항목이 필요합니다 [PHP](../php-settings.md) 
 
 ### MySQL 설치 및 구성
 
-을(를) 참조하십시오 [MySQL](..//database/mysql.md) 추가 정보.
+자세한 내용은 [MySQL](..//database/mysql.md)을 참조하세요.
 
 ### 설치 및 구성
 
@@ -368,9 +368,9 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 이 예에서는 명령줄을 사용한 작성기 기반 설치를 보여 줍니다.
 
-1. 다음으로: [파일 시스템 소유자](../file-system/overview.md)애플리케이션 서버에 로그인합니다.
+1. [파일 시스템 소유자](../file-system/overview.md)(으)로 응용 프로그램 서버에 로그인합니다.
 
-1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다. 이 예에서는 Ubuntu 기본값을 사용합니다. `/var/www/html`.
+1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다. 이 예제에서는 Ubuntu 기본 `/var/www/html`을(를) 사용합니다.
 
    ```bash
    cd /var/www/html
@@ -396,7 +396,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   메시지가 표시되면 [인증 키](../authentication-keys.md). 사용자 _공개 키_ 은 사용자 이름입니다. 는 _개인 키_ 는 암호입니다.
+   메시지가 표시되면 [인증 키](../authentication-keys.md)를 입력하십시오. _공개 키_&#x200B;은(는) 사용자 이름이고 _개인 키_&#x200B;은(는) 암호입니다.
 
 1. 응용 프로그램을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 해야 합니다.
 
@@ -420,7 +420,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    chmod u+x bin/magento
    ```
 
-1. 다음에서 설치 [명령줄](../../advanced.md). 이 예에서는 설치 디렉토리의 이름이 이라고 가정합니다 `magento2ee`, `db-host` 동일한 시스템에 있음(`localhost`) 및 `db-name`, `db-user`, 및 `db-password` 모두 `magento`:
+1. [명령줄](../../advanced.md)에서 설치합니다. 이 예제에서는 설치 디렉터리 이름이 `magento2ee`이고 `db-host`이(가) 같은 컴퓨터(`localhost`)에 있으며 `db-name`, `db-user` 및 `db-password`이(가) 모두 `magento`이라고 가정합니다.
 
    ```bash
    bin/magento setup:install \
@@ -453,9 +453,9 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 ### nginx 구성
 
-다음을 사용하여 nginx를 구성하는 것이 좋습니다. `nginx.conf.sample` 설치 디렉터리 및 nginx 가상 호스트에 제공된 구성 파일입니다.
+설치 디렉터리 및 nginx 가상 호스트에 제공된 `nginx.conf.sample` 구성 파일을 사용하여 nginx를 구성하는 것이 좋습니다.
 
-이 지침은 nginx 가상 호스트에 대해 CentOS 기본 위치를 사용하고 있다고 가정합니다(예: `/etc/nginx/conf.d`) 및 기본 docroot(예: `/usr/share/nginx/html`) 그러나 사용자 환경에 맞게 이러한 위치를 변경할 수 있습니다.
+이러한 지침에서는 nginx 가상 호스트(예: `/etc/nginx/conf.d`)와 기본 docroot(예: `/usr/share/nginx/html`)에 대해 CentOS 기본 위치를 사용하고 있다고 가정하지만 환경에 맞게 이러한 위치를 변경할 수 있습니다.
 
 1. 사이트에 대한 새 가상 호스트를 만듭니다.
 
@@ -481,9 +481,9 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
    >[!NOTE]
    >
-   >다음 `include` 지시문은 설치 디렉토리의 샘플 nginx 구성 파일을 가리켜야 합니다.
+   >`include` 지시문은 설치 디렉터리의 샘플 nginx 구성 파일을 가리켜야 합니다.
 
-1. 바꾸기 `www.magento-dev.com` 을 추가합니다.
+1. `www.magento-dev.com`을(를) 도메인 이름으로 바꾸십시오.
 
 1. 저장하고 편집기를 종료합니다.
 
@@ -569,4 +569,4 @@ SELinux 및 firewall을 구성하려면 다음을 수행합니다.
 
 ### 설치 확인
 
-웹 브라우저를 열고 사이트의 기본 URL로 이동하여 [설치 확인](../../next-steps/verify.md).
+웹 브라우저를 열고 사이트의 기본 URL로 이동하여 [설치를 확인](../../next-steps/verify.md)합니다.

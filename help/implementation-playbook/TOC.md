@@ -13,7 +13,7 @@ ht-degree: 12%
 # 구현 플레이북 {#implementation-playbook}
 
 - [개요](overview.md)
-- 상거래 {#intro}
+- Commerce {#intro}
    - [Adobe Commerce 정보](intro/about-commerce.md)
    - [플랫폼 개발 원칙](intro/platform-development.md)
 - 프로젝트 범위 {#project-scope}
@@ -33,18 +33,18 @@ ht-degree: 12%
    - [프로젝트 거버넌스](planning/governance.md)
 - 아키텍처 및 통합 {#architecture}
    - [Enterprise 참조](architecture/enterprise-blueprint.md)
-   - 글로벌 참조 아키텍처 {#global-reference-architecture}
+   - 전역 참조 아키텍처 {#global-reference-architecture}
       - [개요](architecture/global-reference/overview.md)
       - [예시](architecture/global-reference/examples.md)
       - 작성기 개발 {#composer}
          - [개요](architecture/global-reference/composer/overview.md)
          - [프로젝트 구조](architecture/global-reference/composer/project-structure.md)
          - [팁과 트릭](architecture/global-reference/composer/tips-and-tricks.md)
-- 인프라 및 구축 {#infrastructure}
+- 인프라 및 배포 {#infrastructure}
    - [개요](infrastructure/overview.md)
    - 자체 호스팅 {#self-hosting}
       - [개요](infrastructure/self-hosting/overview.md)
-      - [온프레미스 인프라](infrastructure/self-hosting/on-premises.md)
+      - [온-프레미스 인프라](infrastructure/self-hosting/on-premises.md)
       - [보안 개념](infrastructure/self-hosting/security-concepts.md)
       - [원격 분석 및 도구 모니터링](infrastructure/self-hosting/monitoring-tools.md)
       - [재해 복구 아이디어](infrastructure/self-hosting/disaster-recovery-ideas.md)
@@ -58,17 +58,17 @@ ht-degree: 12%
       - [일반적인 문제](infrastructure/performance/optimization.md)
       - [벤치마크](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- 출시 준비 {#launch}
+- 시작 준비 {#launch}
    - [개요](launch/overview.md)
    - [실행 전 단계](launch/pre-launch-steps.md)
    - [시작 단계](launch/launch-steps.md)
-   - [실행 후 단계](launch/post-launch-steps.md)
-- 유지 관리 및 지원 {#maintenance}
+   - [Post-launch 단계](launch/post-launch-steps.md)
+- {#maintenance} 유지 관리 및 지원
    - [개요](maintenance/overview.md)
    - [Managed Services Adobe](maintenance/adobe-managed-services.md)
-- 우수 사례 {#best-practices}
+- 모범 사례 {#best-practices}
    - [개요](best-practices/phases.md)
-   - 계획 수립 {#planning}
+   - {#planning} 계획 중
       - [개요](best-practices/planning/overview.md)
       - [카탈로그 관리](best-practices/planning/catalog-management.md)
       - [사이트, 스토어 및 스토어 보기 구성](best-practices/planning/sites-stores-store-views.md)
@@ -96,8 +96,8 @@ ht-degree: 12%
       - [비공개 콘텐츠 블록](best-practices/development/private-content-block-configuration.md)
       - [정적 콘텐츠 배포](best-practices/development/static-content-deployment.md)
       - [데이터베이스 테이블 수정](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [핵심 및 타사 코드 수정](best-practices/development/modifying-core-and-third-party-code.md)
-   - 시작 {#launch}
+      - [코어 및 타사 코드 수정](best-practices/development/modifying-core-and-third-party-code.md)
+   - {#launch} 시작
       - [개요](best-practices/launch/overview.md)
       - [웹 크롤러 구성](best-practices/launch/robots-txt.md)
       - [사이트 및 인프라 보안](best-practices/launch/security-best-practices.md)

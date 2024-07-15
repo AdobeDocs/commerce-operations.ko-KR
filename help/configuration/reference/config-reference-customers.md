@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 고객 구성 경로 참조
 
-이 섹션에는 아래 관리자의 옵션에 사용할 수 있는 변수 이름 및 구성 경로가 나열됩니다. **스토어** > 설정 > **구성** > **고객**.
+이 섹션에는 **스토어** > 설정 > **구성** > **고객**&#x200B;에서 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
-다음 [`magento app:config:dump` 명령](../cli/export-configuration.md) 공유 구성 파일에 이러한 값을 씁니다. `app/etc/config.php`: 소스 제어에 있어야 합니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 다음을 참조하십시오. [환경 변수를 사용하여 구성 설정을 재정의합니다.](override-config-settings.md#environment-variables). 이 주제에서는 다음을 수행합니다. _아님_ 목록 [중요 및 시스템별 값](config-reference-sens.md).
+[`magento app:config:dump` 명령](../cli/export-configuration.md)은(는) 이러한 값을 소스 제어에 있어야 하는 공유 구성 파일 `app/etc/config.php`에 씁니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 [환경 변수를 사용하여 구성 설정을 무시하십시오](override-config-settings.md#environment-variables). 이 항목은 _not_&#x200B;에 [중요 및 시스템 특정 값을 나열합니다](config-reference-sens.md).
 
 ## 뉴스레터 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **뉴스레터**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **뉴스레터**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 게스트 구독 허용 | `newsletter/subscription/allow_guest_subscribe` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 확인해야 함 | `newsletter/subscription/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ## 고객 구성 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **고객 구성**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **고객 구성**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 온라인 시간(분) 간격 | `customer/online_customers/online_minutes_interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 고객 계정 공유 | `customer/account_share/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -77,7 +77,7 @@ ht-degree: 0%
 | 가운데 이름 표시(초기) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 접미어 표시 | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 접미사 드롭다운 옵션 | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 생년월일 표시 | `customer/address/dob_show`<br>최신 보안 및 개인 정보 보호 모범 사례를 준수하면서 이러한 데이터를 수집하거나 처리하기 전에 고객의 전체 생년월일(월, 일, 년)과 전체 이름 등의 기타 개인 식별자 저장과 관련된 잠재적 법적 및 보안 위험을 알고 있어야 합니다. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 생년월일 표시 | `customer/address/dob_show`<br>최신 보안 및 개인 정보 보호 모범 사례를 준수하면서 이러한 데이터를 수집하거나 처리하기 전에 고객의 전체 생년월일(월, 일, 연도)과 전체 이름 등의 다른 개인 식별자 저장과 관련된 법적 및 보안 위험에 대해 알고 있는지 확인하십시오. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 세금/VAT 번호 표시 | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 성별 표시 | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 스토어 신용 기능 활성화 | `customer/magento_customerbalance/is_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
@@ -105,9 +105,9 @@ ht-degree: 0%
 
 ## 위시리스트 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **위시리스트**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **위시리스트**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 활성화됨 | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 여러 위시 목록 활성화 | `wishlist/general/multiple_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
@@ -122,9 +122,9 @@ ht-degree: 0%
 
 ## 초대 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **초대**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **초대**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 초대 기능 활성화 | `magento_invitation/general/enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | Storefront에서 초대 활성화 | `magento_invitation/general/enabled_on_front` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
@@ -139,9 +139,9 @@ ht-degree: 0%
 
 ## 보상 포인트 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **보상 점수**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **보상 포인트**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 보상 포인트 기능 활성화 | `magento_reward/general/is_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | Storefront에서 보상 포인트 기능 활성화 | `magento_reward/general/is_enabled_on_front` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
@@ -173,9 +173,9 @@ ht-degree: 0%
 
 ## 프로모션 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **프로모션**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **프로모션**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 미리 알림 이메일 활성화 | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 빈도 | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -195,9 +195,9 @@ ht-degree: 0%
 
 ## 선물 레지스트리 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **선물 등록**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **선물 레지스트리**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 선물 레지스트리 활성화 | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 최대 등록자 수 | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -213,9 +213,9 @@ ht-degree: 0%
 
 ## 지속적인 장바구니 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **지속적인 장바구니**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **지속적인 장바구니**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 지속성 활성화 | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 지속성 수명(초) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

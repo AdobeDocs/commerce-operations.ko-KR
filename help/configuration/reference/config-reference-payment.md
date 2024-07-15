@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 결제 구성 경로 참조
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **판매** > **결제 방법**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **판매** > **결제 방법**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-다음 [`magento app:config:dump` 명령](../cli/export-configuration.md) 공유 구성 파일에 이러한 값을 씁니다. `app/etc/config.php`: 소스 제어에 있어야 합니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 다음을 참조하십시오. [환경 변수를 사용하여 구성 설정을 재정의합니다.](override-config-settings.md#environment-variables). 이 주제에서는 다음을 수행합니다. _아님_ 목록 [중요 및 시스템별 값](config-reference-sens.md).
+[`magento app:config:dump` 명령](../cli/export-configuration.md)은(는) 이러한 값을 소스 제어에 있어야 하는 공유 구성 파일 `app/etc/config.php`에 씁니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 [환경 변수를 사용하여 구성 설정을 무시하십시오](override-config-settings.md#environment-variables). 이 항목은 _not_&#x200B;에 [중요 및 시스템 특정 값을 나열합니다](config-reference-sens.md).
 
 설정은 결제 방법으로 추가로 구성됩니다.
 
 ## PayPal 경로
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 이 솔루션 사용 | `payment/payflowpro/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 컨텍스트 내 체크아웃 경험 활성화 | `payment/paypal_express/in_context` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## PayPal 결제 프로
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | API 인증 방법 | `paypal/wpp/api_authentication` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | API에서 프록시 사용 | `paypal/wpp/use_proxy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -100,9 +100,9 @@ ht-degree: 0%
 
 ## Payments Pro Hosted Solution(영국)
 
-이러한 옵션은 영국을 로 선택한 경우에만 사용할 수 있습니다. [상선 국가](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+이러한 옵션은 영국을 [판매자 국가](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths)(으)로 선택한 경우에만 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 이 솔루션 사용 | `payment/hosted_pro/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/hosted_pro/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 ## Paypal Payflow Pro
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 자격 증명 모음 사용 | `payment/payflowpro_cc_vault/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/payflowpro/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -159,7 +159,7 @@ ht-degree: 0%
 
 ## PayPal 결제 링크
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 파트너 | `payment/payflow_link/partner` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 공급업체 | `payment/payflow_link/vendor` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -181,7 +181,7 @@ ht-degree: 0%
 
 ## 제로 소계 체크아웃 경로
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 활성화됨 | `payment/free/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/free/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 ## 게재 결제 경로 현금
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 활성화됨 | `payment/cashondelivery/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/cashondelivery/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -211,7 +211,7 @@ ht-degree: 0%
 
 ## 은행 이체 지급 경로
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 활성화됨 | `payment/banktransfer/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/banktransfer/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -227,7 +227,7 @@ ht-degree: 0%
 
 ## 주문 경로 확인 또는 금액
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 활성화됨 | `payment/checkmo/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/checkmo/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -243,7 +243,7 @@ ht-degree: 0%
 
 ## 구매 주문 경로
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | 활성화됨 | `payment/purchaseorder/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 제목 | `payment/purchaseorder/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -260,9 +260,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
->사용 가능한 경로는 다음 중 하나를 선택하여 결정됩니다. [상선 국가](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+>사용 가능한 경로는 [판매자 국가](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths)의 선택에 따라 결정됩니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 암호화되었습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? | 암호화되었습니까? |
 |--------------|--------------|--------------|--------------|
 | SFTP 자격 증명 | `payment_nz/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 예약된 가져오기 | `payment_nz/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

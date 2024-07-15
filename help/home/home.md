@@ -70,7 +70,7 @@ ht-degree: 20%
        <img alt="엔터프라이즈" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>규모에 맞는 상거래</strong></a>
+      규모에 맞는 <a href="../commerce-at-scale/overview.md"><strong>Commerce</strong></a>
       <p>Adobe Commerce와 Adobe Experience Manager를 사용하여 규모에 맞게 경험을 제공하는 방법에 대해 알아봅니다.</p>
     </div>
   </td>

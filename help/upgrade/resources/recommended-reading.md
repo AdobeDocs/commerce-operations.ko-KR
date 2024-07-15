@@ -30,7 +30,7 @@ ht-degree: 4%
       <td><strong>도구</strong>
         <p>Adobe Commerce 소프트웨어를 더 쉽게 찾고 사용할 수 있도록 설계된 도구를 찾아봅니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">호환성 도구 PhpStorm 플러그인 업그레이드</a> (비디오)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">호환성 도구 PhpStorm 플러그인 업그레이드</a>(비디오)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">업그레이드 호환성 도구</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack 채널</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">품질 패치 도구</a></li>
@@ -38,7 +38,7 @@ ht-degree: 4%
       </td>
     </tr>
     <tr>
-      <td><strong>캘린더 및 정책</strong>
+      <td><strong>일정 및 정책</strong>
         <p>Adobe Commerce 릴리스 및 정책에 대한 세부 사항을 검토합니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce 소프트웨어 지원 종료 FAQ</a></li>
@@ -60,13 +60,13 @@ ht-degree: 4%
       </td>
     </tr>
     <tr>
-      <td><strong>업그레이드 리소스</strong>
+      <td><strong>리소스 업그레이드</strong>
         <p>상점의 보안을 유지하고 효율적으로 운영하십시오. Adobe의 광범위한 기술 설명서를 검토하여 Adobe Commerce 업그레이드를 준비합니다.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">권장 업그레이드 경로</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 기술 업그레이드 워크숍 녹화</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">사전 릴리스 액세스</a></li>
-            <li><a href="../../release/beta.md">베타 릴리스 개요</a></li>
+            <li><a href="../../release/beta.md">Beta 릴리스 개요</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">이전 버전과 호환 불가능한 개발</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">이전 버전과 호환 불가능한 변경 사항</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">업그레이드 계획 검사 목록</a></li>
@@ -74,7 +74,7 @@ ht-degree: 4%
             <li><a href="../../release/product-availability.md">소프트웨어 가용성</a></li>
           </ul>
       </td>
-      <td><strong>Storefront 경험</strong>
+      <td><strong>상점 환경</strong>
         <p>고객을 위한 고유한 경험을 구축하는 데 사용할 수 있는 최신 상점 기술에 대해 알아보십시오.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>

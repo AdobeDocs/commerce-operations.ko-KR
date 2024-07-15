@@ -5,7 +5,7 @@ exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 * 새 사이트에서 이러한 모든 확장이 필요한지 확인했습니까? 안전하게 제거할 수 있는 오래된 것이 있을 수 있습니다.
 
-* 확장의 Magento 2 버전이 있는지 확인했습니까? 방문 [Commerce Marketplace] 최신 버전을 찾거나 확장 공급자에게 문의하십시오.
+* 확장의 Magento 2 버전이 있는지 확인했습니까? [Commerce Marketplace](으)로 이동하여 최신 버전을 찾거나 확장 공급자에게 문의하십시오.
 
 * 어떤 데이터베이스 자산을 확장에서 마이그레이션하시겠습니까?
 
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 * 기존 Magento 1 시스템과 적어도 일치하는 토폴로지 및 설계를 사용하여 Magento 2 하드웨어 시스템 설정
 
-* Magento 2.x(이 릴리스의 모든 모듈 포함) 및 [!DNL Data Migration Tool] 다음을 충족하는 시스템에서 [시스템 요구 사항](../../installation/system-requirements.md)
+* [시스템 요구 사항](../../installation/system-requirements.md)을 충족하는 시스템에 Magento 2.x(이 릴리스의 모든 모듈 포함) 및 [!DNL Data Migration Tool]을(를) 설치합니다.
 
-* 을(를) 사용자 지정 조정하여 [!DNL Data Migration Tool] 일부 데이터(예: CMS 페이지, 영업 규칙)를 마이그레이션할 필요가 없거나 마이그레이션하는 동안 Magento 사용자 지정을 전환하려는 경우의 코드. 읽기 [!DNL Data Migration Tool]의 [기술 사양](technical-specification.md) 내부에서 마이그레이션이 작동하는 방식을 더 잘 이해합니다.
+* 일부 데이터(예: CMS 페이지, 영업 규칙)를 마이그레이션할 필요가 없거나 마이그레이션하는 동안 Magento 사용자 지정을 전환하려는 경우 [!DNL Data Migration Tool] 코드를 사용자 지정 조정하십시오. 내부에서 마이그레이션이 작동하는 방식을 더 잘 이해하려면 [!DNL Data Migration Tool]의 [기술 사양](technical-specification.md)을 읽어 보십시오
 
 ## 3단계: 시험 실행
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 ## 4단계: 마이그레이션 시작
 
-1. 다음을 확인하십시오. [!DNL Data Migration Tool] 에는 Magento 1 및 Magento 2 데이터베이스에 연결하기 위한 네트워크 액세스 권한이 있습니다. 방화벽에서 해당 포트를 엽니다.
+1. [!DNL Data Migration Tool]에 Magento 1 및 Magento 2 데이터베이스에 연결할 수 있는 네트워크 액세스 권한이 있는지 확인하십시오. 방화벽에서 해당 포트를 엽니다.
 
-1. 출하, 송장 및 대변 메모 생성과 같은 Magento 1.x 관리 패널의 모든 활동(주문 관리 제외)을 중지합니다. 에서 델타 모드 설정을 조정하여 허용된 활동 목록을 확장할 수 있습니다. [!DNL Data Migration Tool].
+1. 출하, 송장 및 대변 메모 생성과 같은 Magento 1.x 관리 패널의 모든 활동(주문 관리 제외)을 중지합니다. [!DNL Data Migration Tool]에서 델타 모드의 설정을 조정하여 허용된 활동 목록을 확장할 수 있습니다.
 
    >[!NOTE]
    >
@@ -64,17 +64,17 @@ ht-degree: 0%
 
    예를 들어 `enterprise_salesarchive_archive_orders` cron 작업은 이전 주문을 보관으로 이동합니다. 델타 모드는 이 작업을 인식하고 보관된 주문을 적절하게 처리하므로 마이그레이션 중에 이 작업을 실행하면 안전합니다.
 
-1. 사용 [!DNL Data Migration Tool] 설정 및 웹 사이트를 마이그레이션할 수 있습니다.
+1. [!DNL Data Migration Tool]을(를) 사용하여 설정 및 웹 사이트를 마이그레이션합니다.
 
 1. Magento 1.x 미디어 파일을 Magento 2.x에 복사합니다.
 
-   다음 파일에서 이러한 파일을 수동으로 복사해야 합니다. `magento1-root/media` 디렉토리 대상 `magento2-root/pub/media`.
+   이러한 파일을 `magento1-root/media` 디렉터리에서 `magento2-root/pub/media`(으)로 수동으로 복사해야 합니다.
 
-1. 사용 [!DNL Data Migration Tool] Magento 1 데이터베이스에서 Magento 2 데이터베이스로 데이터를 대량 복사하려면
+1. [!DNL Data Migration Tool]을(를) 사용하여 Magento 1 데이터베이스에서 Magento 2 데이터베이스로 데이터를 대량 복사합니다.
 
-   일부 확장에 마이그레이션할 데이터가 있는 경우 Magento 2에 맞게 조정된 이러한 확장을 설치해야 할 수 있습니다. Magento 2 데이터베이스에서 확장의 구조가 다른 경우, [!DNL Data Migration Tool].
+   일부 확장에 마이그레이션할 데이터가 있는 경우 Magento 2에 맞게 조정된 이러한 확장을 설치해야 할 수 있습니다. Magento 2 데이터베이스에서 확장의 구조가 다른 경우 [!DNL Data Migration Tool]과(와) 함께 제공된 매핑 파일을 사용하십시오.
 
-1. 모든 Magento 2.x 인덱서를 다시 인덱싱합니다. 자세한 내용은 [인덱서 관리](../../configuration/cli/manage-indexers.md) 다음에서 _구성 안내서_.
+1. 모든 Magento 2.x 인덱서를 다시 인덱싱합니다. 자세한 내용은 _구성 가이드_&#x200B;에서 [인덱서 관리](../../configuration/cli/manage-indexers.md)를 참조하세요.
 
 ## 5단계: 마이그레이션된 데이터를 변경합니다(필요한 경우).
 
@@ -82,15 +82,15 @@ ht-degree: 0%
 
 수동 데이터 변경을 통해 작업하는 동안 주의해야 합니다. 다음에 이어지는 증분 데이터 마이그레이션 단계에서 오류가 발생합니다.
 
-예를 들어, Magento 2에서 삭제된 제품: 라이브 Magento 1 스토어에서 구매되었으며 Magento 2 스토어에서 더 이상 사용할 수 없는 제품입니다. 이러한 구매에 대한 데이터를 전송하면 를 실행하는 동안 오류가 발생할 수 있습니다. [!DNL Data Migration Tool] 델타 모드에서.
+예를 들어, Magento 2에서 삭제된 제품: 라이브 Magento 1 스토어에서 구매되었으며 Magento 2 스토어에서 더 이상 사용할 수 없는 제품입니다. 이러한 구매에 대한 데이터를 전송하면 델타 모드에서 [!DNL Data Migration Tool]을(를) 실행하는 동안 오류가 발생할 수 있습니다.
 
 ## 6단계: 증분 데이터 업데이트
 
 데이터를 마이그레이션한 후 Magento 1 스토어에 추가된 데이터 업데이트(예: 새 주문, 검토 및 고객 프로필 변경)를 증분 캡처하고 델타 모드를 사용하여 이러한 업데이트를 Magento 2 스토어로 전송해야 합니다.
 
-* 증분 마이그레이션을 시작하여 업데이트가 계속 실행됩니다. 언제든지 을 눌러 업데이트 전송을 중지할 수 있습니다. `Ctrl+C`.
+* 증분 마이그레이션을 시작하여 업데이트가 계속 실행됩니다. `Ctrl+C`을(를) 눌러 언제든지 업데이트 전송을 중지할 수 있습니다.
 
-* 이 시간 동안 Magento 2 사이트를 테스트하여 가능한 한 빨리 문제를 파악하십시오. 문제가 발생하면 `Ctrl+C` 증분 마이그레이션을 중지하고 문제를 해결한 후 다시 시작하십시오.
+* 이 시간 동안 Magento 2 사이트를 테스트하여 가능한 한 빨리 문제를 파악하십시오. 문제가 발생하면 `Ctrl+C`을(를) 눌러 증분 마이그레이션을 중지하고 문제를 해결한 후 다시 시작하십시오.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. Magento 2 cron 작업을 시작합니다.
 
-1. Magento 2 시스템에서 주식 인덱서를 다시 인덱싱합니다. 자세한 내용은 [구성 안내서].
+1. Magento 2 시스템에서 주식 인덱서를 다시 인덱싱합니다. 자세한 내용은 [구성 가이드]를 참조하세요.
 
 1. 원하는 도구를 사용하여 Magento 2 시스템의 페이지를 히트시켜 상점을 사용하는 고객보다 먼저 페이지를 캐시합니다.
 

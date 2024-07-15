@@ -5,7 +5,7 @@ exl-id: d7807b2f-85c0-4e3e-a473-c65dbec44d28
 feature: Configuration, Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Adobe Commerce 지원 팀은 프로세스 전반에 걸쳐 귀하와 함께 작�
 
 - 문제가 발생하여 실행이 차단되는 경우 Adobe Commerce 핫라인으로 문의하십시오.
 
-![실행 프로세스의 3단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-3.svg)
+![시작 프로세스의 3단계를 보여 주는 다이어그램](../../assets/playbooks/launch-steps-3.svg)

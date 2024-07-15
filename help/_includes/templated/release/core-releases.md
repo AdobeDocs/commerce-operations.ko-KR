@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-2.4.7 릴리스 라인에 대한 지원은 2027년 4월 9일에 종료됩니다.
+2.4.7 릴리스 라인에 대한 지원은 4월에 종료됩니다  9, 2027년.
 
 <table>
   <thead>
@@ -29,7 +29,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7</a>
         </td>
-        <td>2024년 4월 9일</td>
+        <td>4월  2024년 9월</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -56,7 +56,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p5">2.4.6-p5</a>
         </td>
-        <td>2024년 4월 9일</td>
+        <td>4월  2024년 9월</td>
     </tr>
     <tr>
         <td>
@@ -74,7 +74,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p2">2.4.6-p2</a>
         </td>
-        <td>2023년 8월 8일</td>
+        <td>8월  2023년 8월</td>
     </tr>
     <tr>
         <td>
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 ## 2.4.5
 
-2.4.5 릴리스 라인에 대한 지원은 2025년 8월 9일에 종료됩니다.
+2.4.5 릴리스 라인에 대한 지원은 8월에 종료됩니다  9, 2025년.
 
 <table>
   <thead>
@@ -113,7 +113,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p7">2.4.5-p7</a>
         </td>
-        <td>2024년 4월 9일</td>
+        <td>4월  2024년 9월</td>
     </tr>
     <tr>
         <td>
@@ -131,7 +131,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p4">2.4.5-p4</a>
         </td>
-        <td>2023년 8월 8일</td>
+        <td>8월  2023년 8월</td>
     </tr>
     <tr>
         <td>
@@ -155,7 +155,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2.4.5</a>
         </td>
-        <td>2022년 8월 9일</td>
+        <td>8월  2022년 9월</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -182,7 +182,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
-        <td>2024년 4월 9일</td>
+        <td>4월  2024년 9월</td>
     </tr>
     <tr>
         <td>
@@ -200,7 +200,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5">2.4.4-p5</a>
         </td>
-        <td>2023년 8월 8일</td>
+        <td>8월  2023년 8월</td>
     </tr>
     <tr>
         <td>
@@ -224,7 +224,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p1">2.4.4-p1</a>
         </td>
-        <td>2022년 8월 9일</td>
+        <td>8월  2022년 9월</td>
     </tr>
     <tr>
         <td>
@@ -251,7 +251,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
         </td>
-        <td>2022년 8월 9일</td>
+        <td>8월  2022년 9월</td>
     </tr>
     <tr>
         <td>
@@ -287,13 +287,13 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2.4.2</a>
         </td>
-        <td>2021년 2월 9일</td>
+        <td>2월  2021년 9월</td>
     </tr>
     <tr>
         <td>
           2.4.1-p1
         </td>
-        <td>2021년 2월 9일</td>
+        <td>2월  2021년 9월</td>
     </tr>
     <tr>
         <td>
@@ -318,7 +318,7 @@ ht-degree: 0%
 
 ## 2.3
 
-2.3 릴리스 라인에 대한 지원은 2022년 9월 8일에 종료되었습니다.
+2.3 릴리스 라인에 대한 지원은 9월에 종료되었습니다.  2022년 8월
 
 <table>
   <thead>
@@ -332,7 +332,7 @@ ht-degree: 0%
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
         </td>
-        <td>2022년 8월 9일</td>
+        <td>8월  2022년 9월</td>
     </tr>
     <tr>
         <td>
@@ -362,7 +362,7 @@ ht-degree: 0%
         <td>
           2.3.6-p1
         </td>
-        <td>2021년 2월 9일</td>
+        <td>2월  2021년 9월</td>
     </tr>
     <tr>
         <td>
@@ -410,13 +410,13 @@ ht-degree: 0%
         <td>
           2.3.2-p2
         </td>
-        <td>2019년 10월 9일</td>
+        <td>10  2019년 9월</td>
     </tr>
     <tr>
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
         </td>
-        <td>2019년 10월 8일</td>
+        <td>10  2019년 8월</td>
     </tr>
     <tr>
         <td>
@@ -441,7 +441,7 @@ ht-degree: 0%
 
 ## 2.2
 
-2.2 릴리스 라인에 대한 지원은 2019년 12월 1일에 종료되었습니다.
+2.2 릴리스 라인에 대한 지원은 12월에 종료되었습니다  1, 2019.
 
 <table>
   <thead>
@@ -461,7 +461,7 @@ ht-degree: 0%
         <td>
           2.2.10
         </td>
-        <td>2019년 10월 8일</td>
+        <td>10  2019년 8월</td>
     </tr>
     <tr>
         <td>
@@ -497,7 +497,7 @@ ht-degree: 0%
         <td>
           2.2.4
         </td>
-        <td>2018년 5월 2일</td>
+        <td>5월  2, 2018</td>
     </tr>
     <tr>
         <td>
@@ -515,7 +515,7 @@ ht-degree: 0%
         <td>
           2.2.1
         </td>
-        <td>2017년 11월 7일</td>
+        <td>11월  2017년 7월</td>
     </tr>
     <tr>
         <td>
@@ -572,7 +572,7 @@ ht-degree: 0%
         <td>
           2.1.13
         </td>
-        <td>2018년 5월 2일</td>
+        <td>5월  2, 2018</td>
     </tr>
     <tr>
         <td>
@@ -590,7 +590,7 @@ ht-degree: 0%
         <td>
           2.1.10
         </td>
-        <td>2017년 11월 7일</td>
+        <td>11월  2017년 7월</td>
     </tr>
     <tr>
         <td>
@@ -602,7 +602,7 @@ ht-degree: 0%
         <td>
           2.1.8
         </td>
-        <td>2017년 8월 9일</td>
+        <td>8월  2017년 9월</td>
     </tr>
     <tr>
         <td>
@@ -626,7 +626,7 @@ ht-degree: 0%
         <td>
           2.1.4
         </td>
-        <td>2017년 2월 7일</td>
+        <td>2월  2017년 7월</td>
     </tr>
     <tr>
         <td>
@@ -677,7 +677,7 @@ ht-degree: 0%
         <td>
           2.0.17
         </td>
-        <td>2017년 11월 7일</td>
+        <td>11월  2017년 7월</td>
     </tr>
     <tr>
         <td>
@@ -707,7 +707,7 @@ ht-degree: 0%
         <td>
           2.0.12
         </td>
-        <td>2017년 2월 7일</td>
+        <td>2월  2017년 7월</td>
     </tr>
     <tr>
         <td>

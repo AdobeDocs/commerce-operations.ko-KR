@@ -4,7 +4,7 @@ description: Apache를 사용하여 여러 웹 사이트를 설정하려면 이 
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -13,51 +13,51 @@ ht-degree: 0%
 
 다음과 같이 가정합니다.
 
-필요한 경우 기존 을 복사합니다. `index.php` 웹 사이트 또는 스토어 보기에 대한 진입점 스크립트를 작성하고 여기에 다음을 추가합니다.
+필요한 경우 웹 사이트 또는 스토어 보기에 대한 기존 `index.php` 진입점 스크립트를 복사하고 다음에 추가하십시오.
 
 - 개발 컴퓨터(랩톱, 가상 컴퓨터 등)에서 작업 중입니다.
 
   호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 
-  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료한 후 다음을 참조하십시오. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 다음에서 _클라우드 인프라의 Commerce 안내서_.
+  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)을 참조하십시오.
 
-- 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`
+- 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`입니다.
 
-  다른 운영 체제에 있는 다른 버전의 Apache는 가상 호스트를 다르게 설정합니다. 다음을 참조하십시오. [Apache 설명서](https://httpd.apache.org/docs/2.4/vhosts) 또는 가상 호스트를 설정하는 방법을 잘 모를 경우 네트워크 관리자 가 필요합니다.
+  다른 운영 체제에 있는 다른 버전의 Apache는 가상 호스트를 다르게 설정합니다. 가상 호스트를 설정하는 방법을 잘 모를 경우 [Apache 설명서](https://httpd.apache.org/docs/2.4/vhosts) 또는 네트워크 관리자에게 문의하십시오.
 
-- Commerce 소프트웨어는 `/var/www/html/magento2`
+- Commerce 소프트웨어가 `/var/www/html/magento2`에 설치되어 있습니다.
 - 기본 이외의 두 개의 웹 사이트가 있습니다.
 
-   - `french.mysite.mg` 웹 사이트 코드 사용 `french` 및 스토어 보기 코드 `fr`
-   - `german.mysite.mg` 웹 사이트 코드 사용 `german` 및 스토어 보기 코드 `de`
+   - `french.mysite.mg`(웹 사이트 코드 `french` 및 스토어 보기 코드 `fr` 포함)
+   - `german.mysite.mg`(웹 사이트 코드 `german` 및 스토어 보기 코드 `de` 포함)
 
 ## Apache를 사용하여 여러 웹 사이트를 설정하는 로드맵
 
 여러 스토어를 설정하는 작업은 다음 작업으로 구성됩니다.
 
-1. [웹 사이트, 스토어 및 스토어 조회수 설정](ms-admin.md) 관리에서.
-1. 1개 만들기 [Apache 가상 호스트](#step-2-create-apache-virtual-hosts) Commerce 웹 사이트당.
+1. 관리자의 [웹 사이트, 스토어 및 스토어 보기 설정](ms-admin.md).
+1. Commerce 웹 사이트당 하나의 [Apache 가상 호스트](#step-2-create-apache-virtual-hosts)를 만듭니다.
 
 ## 1단계: 관리자에서 웹 사이트, 스토어 및 스토어 보기 만들기
 
-다음을 참조하십시오 [관리자에서 여러 웹 사이트, 스토어 및 스토어 보기 설정](ms-admin.md).
+[관리에서 여러 웹 사이트, 스토어 및 스토어 보기 설정](ms-admin.md)을 참조하십시오.
 
 ## 2단계: Apache 가상 호스트 생성
 
-이 섹션에서는 다음에 대한 값을 설정하는 방법을 설명합니다. `MAGE_RUN_TYPE` 및 `MAGE_RUN_CODE` apache 서버 변수 사용 `SetEnvIf` 가상 호스트에 있습니다.
+이 섹션에서는 가상 호스트에서 Apache 서버 변수 `SetEnvIf`을(를) 사용하여 `MAGE_RUN_TYPE` 및 `MAGE_RUN_CODE`에 대한 값을 설정하는 방법에 대해 설명합니다.
 
-에 대한 자세한 내용 `SetEnvIf`를 참조하십시오.
+`SetEnvIf`에 대한 자세한 내용은 다음을 참조하십시오.
 
 - [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
 - [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
-**Apache 가상 호스트를 생성하는 방법**:
+**Apache 가상 호스트를 만들려면**:
 
-1. 을 사용하는 사용자로서 `root` 권한은 텍스트 편집기에서 가상 호스트 구성 파일을 엽니다.
+1. `root` 권한이 있는 사용자는 텍스트 편집기에서 가상 호스트 구성 파일을 여십시오.
 
-   예: open `/etc/httpd/conf/httpd.conf`
+   예: `/etc/httpd/conf/httpd.conf` 열기
 
-1. 다음으로 시작하는 섹션 찾기 `<VirtualHost *:80>`.
+1. `<VirtualHost *:80>`(으)로 시작하는 섹션을 찾습니다.
 1. 기존 가상 호스트 뒤에 다음 가상 호스트를 만듭니다.
 
    ```conf
@@ -81,7 +81,7 @@ ht-degree: 0%
    </VirtualHost>
    ```
 
-1. 변경 내용 저장 `httpd.conf` 텍스트 편집기를 종료합니다.
+1. 변경 내용을 `httpd.conf`에 저장하고 텍스트 편집기를 종료합니다.
 1. Apache 다시 시작:
 
    - CentOS: `service httpd restart`
@@ -89,9 +89,9 @@ ht-degree: 0%
 
 ## 사이트 확인
 
-스토어의 URL에 대해 DNS를 설정하지 않은 경우 `hosts` 파일:
+스토어의 URL에 대해 DNS를 설정하지 않은 경우 `hosts` 파일의 호스트에 정적 경로를 추가해야 합니다.
 
-1. 운영 체제 찾기 `hosts` 파일.
+1. 운영 체제 `hosts` 파일을 찾습니다.
 1. 정적 경로를 다음 형식으로 추가합니다.
 
    ```conf
@@ -110,10 +110,10 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
->- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 다음을 참조하십시오. [여러 클라우드 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 다음에서 _클라우드 인프라의 Commerce 안내서_.
+>- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 클라우드 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)을 참조하십시오.
 
 ### 문제 해결
 
-- 프랑스어 및 독일어 사이트가 404를 반환하지만 관리자가 로드되는 경우 을 완료했는지 확인합니다. [6단계: 기본 URL에 스토어 코드 추가](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- 프랑스어 및 독일어 사이트가 404를 반환하지만 관리자가 로드되는 경우 [6단계: 기본 URL에 스토어 코드를 추가](ms-admin.md#step-6-add-the-store-code-to-the-base-url)를 완료했는지 확인하십시오.
 - 모든 URL이 404를 반환하는 경우 웹 서버를 다시 시작했는지 확인하십시오.
 - 관리자가 제대로 작동하지 않는 경우 가상 호스트를 제대로 설정했는지 확인하십시오.

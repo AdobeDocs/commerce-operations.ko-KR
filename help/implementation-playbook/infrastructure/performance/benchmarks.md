@@ -5,7 +5,7 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 feature: Cloud
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -13,8 +13,8 @@ ht-degree: 0%
 # 벤치마크 요약
 
 Adobe Commerce 2.4.5 성능 벤치마크 결과는 다음 인프라 및 추가 구성 요소와 함께 배포된 Adobe Commerce 인스턴스에서 측정한 성능을 반영합니다.
-- [Pro 클라우드 환경](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) 포함 [확장 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
-- [Adobe Commerce용 B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
+- [Pro 클라우드 환경](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html), [크기 조정된 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- Adobe Commerce용 [B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
 - [Adobe Commerce Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
 
@@ -24,7 +24,7 @@ Adobe Commerce 2.4.5 성능 벤치마크 결과는 다음 인프라 및 추가 �
 
 ## 주요 성능 지표
 
-다음 그림은 성능 벤치마크에 대한 상거래 저장소 구성과 테스트 결과의 주요 성능 지표를 보여 줍니다.
+다음 그림은 성능 벤치마크에 대한 Commerce 스토어 구성과 테스트 결과의 주요 성능 지표를 보여 줍니다.
 
 ![성능 벤치마크 JMeter 및 프로덕션 인프라](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
 
@@ -32,27 +32,27 @@ Adobe Commerce 2.4.5 성능 벤치마크 결과는 다음 인프라 및 추가 �
 
 ### 성능 특징
 
-- **주문 수**—99번째 백분위수에 대해 2초 미만의 응답 시간을 유지하면서 분당 3,481건의 주문을 처리했습니다(요청의 99%가 2초 미만의 응답 시간으로 서비스됨).
-- **페이지 보기 수**—99번째 백분위수에 대해 2초 미만의 응답 시간을 유지하면서 시간당 2백만 페이지 보기 수를 처리했습니다.
-- **유효 SKU**—고객 프로필에 2억 4천 2백만 가지의 다양한 가격 변동이 포함되었습니다(<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>)를 참조하십시오.
-- **GraphQL 요청**—99번째 백분위수에 대한 응답 시간을 2초 미만으로 유지하면서 시스템은 분당 10,500개의 GraphQL 캐시되지 않은 요청으로 확장되었습니다.
-- **동시 관리자 사용자**—99번째 백분위수에 대한 응답 시간을 2초 미만으로 유지하면서 동시 관리 사용자 500명을 지원하도록 시스템 확장이 가능합니다.
+- **주문** - 99번째 백분위수에 대해 2초 미만의 응답 시간을 유지하면서 분당 3,481건의 주문을 처리했습니다(요청의 99%가 2초 미만의 응답 시간으로 처리됨).
+- **페이지 보기 수** - 99번째 백분위수에 대한 응답 시간을 2초 미만으로 유지하면서 시간당 2백만 페이지 보기 수를 처리했습니다.
+- **유효 SKU** - 고객 프로필에는 250,000개 제품에 대한 2억 4,200만 개의 다양한 가격 변동(<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>)이 포함되어 있습니다.
+- **GraphQL 요청**—99번째 백분위수에 대해 2초 미만의 응답 시간을 유지하면서 시스템은 분당 10,500개의 GraphQL 캐시되지 않은 요청으로 크기가 조정되었습니다.
+- **동시 관리자 사용자**—99번째 백분위수에 대해 2초 미만의 응답 시간을 유지하면서 500명의 동시 관리자 사용자를 지원하도록 시스템 크기가 조정되었습니다.
 
 ## 테스트 환경
 
 조정된 아키텍처를 사용하여 Pro 클라우드 환경에 배포된 Adobe Commerce 2.4.5 인스턴스에 대해 테스트하여 성능 벤치마크 결과를 얻었습니다. 또한 인스턴스에는 Adobe Commerce B2B, Inventory management 및 Adobe Stock 통합 모듈이 설치, 구성 및 활성화되어 있었습니다.
 
-테스트 프로필에 대한 성능 테스트 데이터는 <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">성능 툴킷</a>.
+테스트 프로필에 대한 성능 테스트 데이터는 <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">성능 도구 키트</a>를 사용하여 생성되었습니다.
 
 성과 측정은 고객 및 비즈니스 사용자를 위한 시뮬레이션된 일상적인 매장 활동을 기반으로 합니다. 이 값은 각 사례에 대해 최대 처리량에 가까운 처리량을 반영하지만 개인 판매 또는 플래시 판매와 같은 고유한 비즈니스 모델을 반영하지 않습니다.
 
-- **LUMA Storefront**
+- **LUMA 상점 첫 화면**
    - storefront에서 3000명의 동시 사용자
    - 30% CDN 캐시 적중률로 설정
 
      캐시 레이어를 효과적으로 사용하면 시간당 페이지 보기 수가 증가합니다.
 
-- **GRAPHQL API**
+- **GraphQL API**
    - 250개의 동시 스레드
    - 0% CDN 캐시 적중률로 설정
 
@@ -70,11 +70,11 @@ Adobe Commerce 인스턴스에 대해 실행된 JMeter 로드 프로필을 사�
 
 ### 애플리케이션
 
-<a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> Pro 아키텍처를 사용하여 클라우드 인프라에 배포됩니다.
+Pro 아키텍처를 사용하여 클라우드 인프라에 배포된 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a>.
 
 ### 인프라
 
-성능 벤치마크의 경우 Adobe Commerce 2.4.5가 [확장 가능한 인프라](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) 다음 용량.
+성능 벤치마크의 경우, Adobe Commerce 2.4.5는 다음 용량의 [확장 가능한 인프라](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)에 배포되었습니다.
 
 - **웹 노드 사양**
    - vCPU 216(72 x 3 노드)

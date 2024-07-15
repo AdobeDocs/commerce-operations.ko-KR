@@ -4,7 +4,7 @@ user-guide-description: 안전한 Adobe Commerce 프로젝트를 유지하기 �
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 - 개인 정보 보호 규정 {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [GDPR](privacy/gdpr.md)
-   - [Adobe 개인 정보 JavaScript 라이브러리](privacy/adobe-javascript-library.md)
+   - [Adobe 개인 정보 보호 JavaScript 라이브러리](privacy/adobe-javascript-library.md)
    - [개인 정보 JavaScript 라이브러리](privacy/javascript-library.md)
 - 참조 {#reference}
    - [고객 개인 정보(버전 2.x)](privacy/data-m2.md)

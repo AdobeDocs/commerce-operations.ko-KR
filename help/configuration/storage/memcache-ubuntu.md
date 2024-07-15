@@ -5,7 +5,7 @@ feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -20,20 +20,20 @@ ht-degree: 0%
 
 PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려면 PHP용 확장을 설치해야 합니다. 사용 가능한 두 개의 PHP 확장명이 있으며, 어떤 것을 사용할지 디코딩하는 것이 중요합니다.
 
-- `memcache` (_d 없음_) - 정기적으로 유지되지 않는 오래되었지만 인기 있는 확장입니다.
-다음 `memcache` 현재 확장 _다음이 아님_ PHP 7을 사용하여 작업합니다. 다음을 참조하십시오 [memcache용 PHP 설명서](https://www.php.net/manual/en/book.memcache.php).
+- `memcache`(_no d_)—정기적으로 유지되지 않는 오래되었지만 인기 있는 확장입니다.
+`memcache` 확장 프로그램은 현재 _PHP 7에서 작동하지 않습니다_. memcache에 대한 [PHP 설명서](https://www.php.net/manual/en/book.memcache.php)를 참조하십시오.
 
-  정확한 이름은 다음과 같습니다. `php5-memcache` 우분투를 위해서
+  Ubuntu의 정확한 이름은 `php5-memcache`입니다.
 
-- `memcached` (_포함`d`_) - PHP 7과 호환되는 최신 버전 및 유지 관리 확장입니다. 다음을 참조하십시오 [memcached용 PHP 설명서](https://www.php.net/manual/en/book.memcached.php).
+- `memcached`(_(`d`_&#x200B;을(를) 사용하는 경우)—PHP 7과 호환되는 최신 버전 및 유지 관리된 확장입니다. memcached에 대한 [PHP 설명서](https://www.php.net/manual/en/book.memcached.php)를 참조하세요.
 
-  정확한 이름은 다음과 같습니다. `php5-memcached` 우분투를 위해서
+  Ubuntu의 정확한 이름은 `php5-memcached`입니다.
 
 ## Ubuntu에서 memcached 설치 및 구성
 
-**Ubuntu에서 memcached를 설치하고 구성하려면**:
+**Ubuntu에 memcached를 설치하고 구성하려면**:
 
-1. 을 사용하는 사용자로서 `root` privileges에서 다음 명령을 입력합니다.
+1. `root` 권한이 있는 사용자는 다음 명령을 입력하십시오.
 
    ```bash
    apt-get -y update
@@ -43,14 +43,14 @@ PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려�
    apt-get -y install php5-memcached memcached
    ```
 
-1. 에 대한 memcached 구성 설정 변경 `CACHESIZE` 및 `-l`:
+1. `CACHESIZE` 및 `-l`에 대한 memcached 구성 설정 변경:
 
-   1. 열기 `/etc/memcached.conf` 텍스트 편집기에서.
-   1. 를 찾습니다. `-m` 매개 변수.
-   1. 최소한 값을 로 변경 `1GB`
-   1. 를 찾습니다. `-l` 매개 변수.
-   1. 값을 다음으로 변경 `127.0.0.1` 또는 `localhost`
-   1. 변경 내용 저장 `memcached.conf` 텍스트 편집기를 종료합니다.
+   1. 텍스트 편집기에서 `/etc/memcached.conf` 열기
+   1. `-m` 매개 변수를 찾습니다.
+   1. 값을 `1GB` 이상으로 변경합니다.
+   1. `-l` 매개 변수를 찾습니다.
+   1. 값을 `127.0.0.1` 또는 `localhost`(으)로 변경
+   1. 변경 내용을 `memcached.conf`에 저장하고 텍스트 편집기를 종료합니다.
    1. memcached를 다시 시작합니다.
 
       ```bash
@@ -65,13 +65,13 @@ PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려�
 
 ## Magento 설치 전 memcached 작업 확인
 
-Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하는지 확인할 것을 권장합니다. 이렇게 하면 몇 분 밖에 걸리지 않으며 나중에 문제 해결을 단순화할 수 있습니다.
+Adobe은 Commerce을 설치하기 전에 memcached를 테스트하여 작동하는지 확인할 것을 권장합니다. 이렇게 하면 몇 분 밖에 걸리지 않으며 나중에 문제 해결을 단순화할 수 있습니다.
 
 ### 웹 서버에서 memcached를 인식하는지 확인
 
 웹 서버에서 memcached를 인식하는지 확인하려면:
 
-1. 만들기 `phpinfo.php` 웹 서버의 docroot에 있는 파일:
+1. 웹 서버의 docroot에 `phpinfo.php` 파일을 만듭니다.
 
    ```php
    <?php
@@ -91,15 +91,15 @@ Adobe은 Commerce를 설치하기 전에 memcached를 테스트하여 작동하�
 
    memcached 버전 3.0.5 이상을 사용 중인지 확인하십시오.
 
-   memcached가 표시되지 않으면 웹 서버를 다시 시작하고 브라우저 페이지를 새로 고칩니다. 여전히 표시되지 않으면 다음을 설치했는지 확인합니다. `php-pecl-memcached` 확장명.
+   memcached가 표시되지 않으면 웹 서버를 다시 시작하고 브라우저 페이지를 새로 고칩니다. 그래도 표시되지 않으면 `php-pecl-memcached` 확장을 설치했는지 확인하십시오.
 
 ### memcached가 데이터를 캐시할 수 있는지 확인
 
 이 테스트에서는 PHP 스크립트를 사용하여 memcached가 캐시 데이터를 저장하고 검색할 수 있는지 확인합니다.
 
-이 테스트에 대한 자세한 내용은 [Ubuntu 자습서에서 Memcache를 설치하고 사용하는 방법](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
+이 테스트에 대한 자세한 내용은 [Ubuntu에서 Memcache를 설치하고 사용하는 방법](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)을 참조하십시오.
 
-만들기 `cache-test.php` 다음 내용이 포함된 웹 서버의 docroot에서
+다음 내용으로 웹 서버의 docroot에 `cache-test.php`을(를) 만듭니다.
 
 ```php
 $meminstance = new Memcached();
@@ -116,9 +116,9 @@ if ($result) {
 }
 ```
 
-위치 `<memcached hostname or ip>` 다음 중 하나 `localhost`, `127.0.0.1`또는 memcache 호스트 이름 또는 IP 주소입니다. 다음 `<memcached port>` 는 수신 포트입니다. 기본적으로 `11211`.
+여기서 `<memcached hostname or ip>`은(는) `localhost`, `127.0.0.1`이거나 memcache 호스트 이름 또는 IP 주소입니다. `<memcached port>`은(는) 수신 포트입니다. 기본적으로 `11211`입니다.
 
-웹 브라우저의 해당 페이지로 이동합니다. For example
+웹 브라우저의 해당 페이지로 이동합니다. 예
 
 ```http
 http://192.0.2.1/cache-test.php
@@ -126,7 +126,7 @@ http://192.0.2.1/cache-test.php
 
 페이지로 처음 이동하면 다음과 같이 표시됩니다. `No matching key found. Refresh the browser to add it!`
 
-브라우저를 새로 고칩니다. 메시지가 다음으로 변경됨: `Successfully retrieved the data!`
+브라우저를 새로 고칩니다. 메시지가 `Successfully retrieved the data!`(으)로 변경됩니다.
 
 마지막으로 텔넷을 사용하여 memcache 키를 볼 수 있습니다.
 

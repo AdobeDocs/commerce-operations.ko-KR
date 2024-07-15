@@ -4,7 +4,8 @@ description: 핵심 Adobe Commerce 및 타사 PHP 코드를 수정하는 방법�
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### 패치를 사용하여 변경할 수 있는 사항
 
-아무거나 문자 그대로 타겟팅된 파일 내의 모든 문자를 변경할 수 있습니다. 패치는 특정 파일 형식이나 코드 언어로 제한되지 않습니다. 일반적으로 패치를 사용하여 내에서 파일을 타겟팅합니다 `vendor` 디렉토리. 
+아무거나 문자 그대로 타겟팅된 파일 내의 모든 문자를 변경할 수 있습니다. 패치는 특정 파일 형식이나 코드 언어로 제한되지 않습니다. 일반적으로 패치를 사용하여 `vendor` 디렉터리 내의 파일을 타겟팅합니다. 
 
 #### 패치 사용 시기
 
@@ -69,7 +70,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### 환경 설정 선언
 
-환경 설정을 선언하는 것은 매우 간단한 프로세스입니다. 단일 코드 행을 `di.xml` 모듈 내의 파일입니다. 전역적으로 또는 다음과 같은 Adobe Commerce &quot;영역&quot; 내에서 수행할 수 있습니다. `frontend`, `adminhtml`, `graphql`, `webapi_rest`, 및 `crontab`.
+환경 설정을 선언하는 것은 매우 간단한 프로세스입니다. 단일 코드 행을 모듈 내의 `di.xml` 파일에 추가해야 합니다. 이 작업은 전역적으로 수행하거나 `frontend`, `adminhtml`, `graphql`, `webapi_rest` 및 `crontab`과(와) 같은 모든 Adobe Commerce &quot;영역&quot; 내에서 수행할 수 있습니다.
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ PHP 클래스만 기본 설정으로 재정의할 수 있습니다. PHP 클래�
 
 관찰자는 많은 애플리케이션, 플랫폼, 라이브러리 및 코딩 언어에서 볼 수 있는 이벤트 리스너의 개념입니다. 이 개념은 Adobe Commerce 플랫폼에만 국한되지 않습니다. 관찰자는 Magento 1 이후 플랫폼에 통합되었으며 핵심 코드와 타사 코드를 수정하는 방법에 대한 주요 선택으로 간주됩니다. 
 
-코어 코드 베이스 및 모든 서드파티 모듈은 코드에서 선택한 위치에 이벤트를 발송할 수 있습니다. 에서 선언되는 관찰자 `events.xml` 파일 및 는 이름별로 발송된 이벤트를 수신하고 있으며, 글로벌 수준에서 작동하거나 다음과 같은 Adobe Commerce &quot;영역&quot;으로 제한될 수 있습니다. `frontend`, `adminhtml`, `graphql`, `webapi_rest`, 및 `crontab`.
+코어 코드 베이스 및 모든 서드파티 모듈은 코드에서 선택한 위치에 이벤트를 발송할 수 있습니다. `events.xml` 파일에서 선언되고 이름으로 발송된 이벤트를 수신 중인 관찰자는 전역 수준에서 작동하거나 `frontend`, `adminhtml`, `graphql`, `webapi_rest` 및 `crontab`과(와) 같은 Adobe Commerce &quot;영역&quot;으로 제한될 수 있습니다.
 
 #### 관찰자를 선언하는 방법
 
-관찰자는 전역 또는 영역별로 구성할 수 있습니다 `events.xml` 파일.
+전역 또는 영역별 `events.xml` 파일에서 관찰자를 구성할 수 있습니다.
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ class SetOrderRewardFlag implements ObserverInterface
 
 ### 플러그인
 
-플러그인은 Adobe Commerce 플랫폼에 도입된 유연한 개념입니다. 이를 통해 모든 공개 PHP 메서드를 가로채고, 바꾸고, 수정할 수 있습니다. 플러그인을 사용하면 타깃팅된 메서드가 실행되기 전에 메서드로 이동하는 인수를 수정하거나, 타깃팅된 메서드가 실행된 후에 결과를 수정하거나, 타깃팅된 메서드를 완전히 대체할 수 있습니다. 단일 플러그인 파일 내에서 타깃팅된 PHP 클래스의 여러 메서드를 수정할 수 있습니다. 또한 `$subject` 대상 PHP 클래스에 있는 모든 공용 메서드를 실행하는 인수입니다.
+플러그인은 Adobe Commerce 플랫폼에 도입된 유연한 개념입니다. 이를 통해 모든 공개 PHP 메서드를 가로채고, 바꾸고, 수정할 수 있습니다. 플러그인을 사용하면 타깃팅된 메서드가 실행되기 전에 메서드로 이동하는 인수를 수정하거나, 타깃팅된 메서드가 실행된 후에 결과를 수정하거나, 타깃팅된 메서드를 완전히 대체할 수 있습니다. 단일 플러그인 파일 내에서 타깃팅된 PHP 클래스의 여러 메서드를 수정할 수 있습니다. 또한 `$subject` 인수를 사용하여 대상 PHP 클래스에 있는 모든 공용 메서드를 실행할 수 있습니다.
 
 #### 플러그인을 선언하는 방법
 
-전역 또는 영역별로 플러그인을 구성할 수 있습니다. `di.xml` 파일.
+전역 또는 영역별 `di.xml` 파일에서 플러그인을 구성할 수 있습니다.
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

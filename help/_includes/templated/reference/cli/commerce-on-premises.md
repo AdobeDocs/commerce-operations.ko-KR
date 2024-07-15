@@ -13,17 +13,17 @@ ht-degree: 0%
 
 **버전**: 2.4.7-p1
 
-이 참조는 다음을 통해 사용할 수 있는 141개의 명령을 포함합니다. `bin/magento` 명령줄 도구입니다.
-초기 목록은 다음을 사용하여 자동으로 생성됩니다. `bin/magento list` Adobe Commerce의 명령.
-사용 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 사용자 지정 CLI 명령을 추가하는 방법 안내서를 참조하십시오.
+이 참조에는 `bin/magento` 명령줄 도구를 통해 사용할 수 있는 141개의 명령이 포함되어 있습니다.
+Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 자동으로 생성됩니다.
+사용자 지정 CLI 명령을 추가하려면 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 가이드를 사용하십시오.
 
 >[!NOTE]
 >
->다음을 호출할 수 있습니다. `bin/magento` 전체 명령 이름 대신 바로 가기를 사용하는 CLI 명령. 예를 들어 `bin/magento setup:upgrade` 사용 `bin/magento s:up`, `bin/magento s:upg`. 다음을 참조하십시오 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) CLI 명령을 사용하여 바로 가기를 사용하는 방법에 대해 알아봅니다.
+>전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
 
 >[!NOTE]
 >
->이 참조는 응용 프로그램 코드베이스에서 생성됩니다. 콘텐츠를 변경하기 위해에서 해당 명령 구현에 대한 소스 코드를 업데이트할 수 있습니다 [코드베이스](https://github.com/magento) 검토를 위해 변경 사항을 보관하고 제출합니다. 다른 방법은 _피드백 제공_ (오른쪽 상단에서 링크를 찾습니다.). 기여도 가이드라인은 를 참조하십시오. [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>이 참조는 응용 프로그램 코드베이스에서 생성됩니다. 내용을 변경하려면 [codebase](https://github.com/magento) 리포지토리에서 해당 명령 구현의 소스 코드를 업데이트한 다음 변경 내용을 제출하여 검토할 수 있습니다. 다른 방법은 _피드백을 제공_&#x200B;하는 것입니다(오른쪽 상단에서 링크 찾기). 기여도 지침이 필요하면 [코드 기여도](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
 ## `_complete`
 
@@ -42,7 +42,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--input`, `-i`
 
-입력 토큰의 배열(예: COMP_WORDS 또는 argv)
+입력 토큰 배열(예: COMP_WORDS 또는 argv)
 
 - 기본값: `[]`
 - 값 필요
@@ -706,7 +706,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -842,7 +842,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `config-types`
 
-공백으로 구분된 구성 형식 목록 또는 모두 덤프하지 않음 [범위, 시스템, 테마, i18n]
+모든 [범위, 시스템, 테마, i18n]을(를) 덤프하려면 공백으로 구분된 구성 형식 목록 또는 생략합니다.
 
 - 기본값: `[]`
 
@@ -1865,7 +1865,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--scope-code`
 
-범위 코드(범위가 아닌 경우에만 필요) `default`)
+범위 코드(범위가 `default`이(가) 아닌 경우에만 필요)
 
 - 기본값: &quot;
 - 값을 허용합니다.
@@ -2774,7 +2774,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--type`
 
-소스 파일 유형: [간단히]
+원본 파일 형식: [less]
 
 - 기본값: `less`
 - 값 필요
@@ -4682,7 +4682,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `mode`
 
-인덱서 차원 모드 catalog_product_price none,website,customer_group,website_and_customer_group catalogpermissions_category none,customer_group
+인덱서 차원 모드 catalog_product_price          없음,website,customer_group,website_and_customer_group catalogpermissions_category    none,customer_group
 
 
 ### `--help`, `-h`
@@ -4746,7 +4746,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `mode`
 
-인덱서 모드 유형 [실시간|예약]
+인덱서 모드 유형 [실시간|일정]
 
 
 ### `index`
@@ -5827,7 +5827,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -5898,7 +5898,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -5969,7 +5969,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -6033,7 +6033,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -6301,7 +6301,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -6395,7 +6395,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -6482,7 +6482,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -6598,7 +6598,7 @@ Composer에서 설치한 모듈 제거
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -7867,7 +7867,7 @@ Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스의
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -8355,7 +8355,7 @@ Redis 서버 암호
 
 ### `--cache-backend-redis-compression-lib`
 
-사용할 압축 라이브러리 [snappy,lzf,l4z,zstd,gzip] (자동으로 결정하려면 비워 둡니다.)
+[snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
@@ -8416,7 +8416,7 @@ Redis 서버 암호
 
 ### `--page-cache-redis-compression-lib`
 
-사용할 압축 라이브러리 [snappy,lzf,l4z,zstd,gzip] (자동으로 결정하려면 비워 둡니다.)
+[snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
@@ -8518,7 +8518,7 @@ Redis 서버 사용자
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -8582,7 +8582,7 @@ DB에 데이터 설치 및 업그레이드
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -8843,7 +8843,7 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -8945,7 +8945,7 @@ DB 사용자 암호 확인
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -9047,7 +9047,7 @@ Sales DB Server 호스트
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -9118,7 +9118,7 @@ DB 스키마 설치 및 업그레이드
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -9182,7 +9182,7 @@ DB 스키마 또는 데이터에 업그레이드가 필요한지 확인
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -9728,7 +9728,7 @@ Redis 서버 암호
 
 ### `--cache-backend-redis-compression-lib`
 
-사용할 압축 라이브러리 [snappy,lzf,l4z,zstd,gzip] (자동으로 결정하려면 비워 둡니다.)
+[snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
@@ -9789,7 +9789,7 @@ Redis 서버 암호
 
 ### `--page-cache-redis-compression-lib`
 
-사용할 압축 라이브러리 [snappy,lzf,l4z,zstd,gzip] (자동으로 결정하려면 비워 둡니다.)
+[snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
@@ -10130,7 +10130,7 @@ Magento 설치는 시험 실행 모드에서 실행됩니다.
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -10284,7 +10284,7 @@ Var/backups의 DB 백업 파일 기본 이름
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -10629,7 +10629,7 @@ Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할�
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -10693,7 +10693,7 @@ Magento 애플리케이션 제거
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -10790,7 +10790,7 @@ Magento 설치는 시험 실행 모드에서 실행됩니다.
 
 ### `--magento-init-params`
 
-Magento 초기화 매개변수를 사용자 정의하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[기본][path]=/var/www/example.com&amp;MAGE_DIRS[캐시][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 

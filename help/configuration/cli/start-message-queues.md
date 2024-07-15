@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-다음을 시작해야 합니다. [메시지 큐 소비자](../queues/consumers.md) Inventory management 대량 작업, REST 벌크 및 비동기 엔드포인트와 같은 비동기 작업을 활성화합니다. B2B 기능을 활성화하려면 여러 소비자를 시작해야 합니다. 서드파티 모듈에서는 사용자 지정 소비자를 시작해야 할 수도 있습니다.
+Inventory management 대량 작업 및 REST 대량/비동기 끝점과 같은 비동기 작업을 사용하려면 [메시지 큐 소비자](../queues/consumers.md)를 시작해야 합니다. B2B 기능을 활성화하려면 여러 소비자를 시작해야 합니다. 서드파티 모듈에서는 사용자 지정 소비자를 시작해야 할 수도 있습니다.
 
 모든 소비자 목록을 보려면
 
@@ -27,14 +27,14 @@ bin/magento queue:consumers:list
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
-사용 가능한 모든 메시지를 사용한 후 명령이 종료됩니다. 수동으로 또는 cron 작업을 사용하여 명령을 다시 실행할 수 있습니다. 의 여러 인스턴스를 실행할 수도 있습니다. `magento queue:consumers:start` 큰 메시지 대기열을 처리하는 명령입니다. 예를 들어 다음을 추가할 수 있습니다 `&` 백그라운드에서 실행할 명령에 따라 프롬프트로 돌아가서 명령을 계속 실행합니다.
+사용 가능한 모든 메시지를 사용한 후 명령이 종료됩니다. 수동으로 또는 cron 작업을 사용하여 명령을 다시 실행할 수 있습니다. `magento queue:consumers:start` 명령의 여러 인스턴스를 실행하여 큰 메시지 큐를 처리할 수도 있습니다. 예를 들어 `&`을(를) 명령에 추가하여 백그라운드에서 실행하고 프롬프트로 돌아가서 명령을 계속 실행할 수 있습니다.
 
 ```bash
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-다음을 참조하십시오 [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) 의 Commerce 섹션에서 다음을 수행합니다 _명령줄 도구 참조_ 명령 옵션, 매개 변수 및 값에 대한 자세한 내용을 보려면 여기를 클릭하십시오.
+명령 옵션, 매개 변수 및 값에 대한 자세한 내용은 _명령줄 도구 참조_&#x200B;의 Commerce 섹션에서 [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart)을(를) 참조하십시오.
 
 >[!INFO]
 >
->다음 `--multi-process` 옵션이에 있음 `queue:consumers:start` 명령을 실행하되, 병렬 프로세스로 소비자를 실행하려면 [`multiple_processes`](../queues/manage-message-queues.md#configuration) 의 옵션 `/app/etc/env.php`. 그렇지 않은 경우 `queue:consumers:start` 을(를) 사용하여 호출합니다. `--multi-process` 옵션을 선택하면 단일 스레드에서만 작동합니다.
+>`--multi-process` 옵션이 `queue:consumers:start` 명령에 있지만 병렬 프로세스로 소비자를 실행하려면 `/app/etc/env.php`에서 [`multiple_processes`](../queues/manage-message-queues.md#configuration) 옵션을 구성하십시오. 그렇지 않으면 `--multi-process` 옵션을 사용하여 `queue:consumers:start`을(를) 호출하는 경우 단일 스레드에서만 작동합니다.

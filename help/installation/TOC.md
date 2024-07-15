@@ -14,7 +14,7 @@ ht-degree: 2%
 
 - [개요](overview.md)
 - [시스템 요구 사항](system-requirements.md)
-- 전제 조건 {#prerequisites}
+- 필수 구성 요소 {#prerequisites}
    - [개요](prerequisites/overview.md)
    - 파일 시스템 {#file-system}
       - [개요](prerequisites/file-system/overview.md)
@@ -38,7 +38,7 @@ ht-degree: 2%
    - [옵션 소프트웨어](prerequisites/optional-software.md)
 - [빠른 시작 설치](composer.md)
 - [고급 설치](advanced.md)
-- 설치 후 단계 {#next-steps}
+- Post 설치 단계 {#next-steps}
    - [설치 확인](next-steps/verify.md)
    - [애플리케이션 구성](next-steps/configuration.md)
    - [마스크 설정(선택 사항)](next-steps/set-umask.md)

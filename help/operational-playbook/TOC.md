@@ -4,8 +4,8 @@ user-guide-description: 비즈니스가 성공적인 전자 상거래 사이트�
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 13%
 # 운영 플레이북 {#operational-playbook}
 
 - [개요](overview.md)
-- 상거래 {#intro}
+- Commerce {#intro}
    - [Adobe Commerce](intro/commerce.md)
    - [전자 상거래(ecommerce)란?](intro/ecommerce.md)
    - [비즈니스 모델](intro/business-model.md)
-   - [상거래 작업](intro/operations.md)
+   - [Commerce 작업](intro/operations.md)
    - [Commerce 기능](intro/features.md)
 - 리더십 {#leadership}
    - [원칙](leadership/principles.md)
@@ -32,7 +32,7 @@ ht-degree: 13%
    - [타사 통합](solution/integrations.md)
    - [업그레이드, 백업 및 유지 관리](solution/maintenance.md)
 - 전략 {#strategy}
-   - [상거래 전략](strategy/commerce.md)
+   - [Commerce 전략](strategy/commerce.md)
    - [포커스](strategy/focus.md)
    - [콘텐츠 전략](strategy/content.md)
    - [완성도](strategy/maturity.md)
@@ -45,7 +45,7 @@ ht-degree: 13%
    - [애자일 스크럼 방식](process/agile-scrum.md)
    - [일반 프로젝트 워크숍](process/project-workshops.md)
    - [테스트](process/testing.md)
-- 사람 {#people}
+- 직원 {#people}
    - [팀](people/teams.md)
    - [팀 구조](people/team-structure.md)
    - [조직 구조](people/organizational-structure.md)

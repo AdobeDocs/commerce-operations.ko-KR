@@ -3,13 +3,13 @@ title: 코드 검토 모범 사례
 description: Adobe Commerce 프로젝트의 개발 단계에 대한 코드 검토 모범 사례에 대해 알아봅니다.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce에 대한 코드 검토 모범 사례
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 PhpStorm 검사를 실행하여 스타일을 자동으로 테스트할 수 있습니다(아래 참조).
 
-다음을 구성해야 합니다. [PHPMD 및 PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) 을(를) 실행하려면 [코딩 표준](https://github.com/magento/magento-coding-standard) CLI의 툴(아래 참조)입니다. 겹치는 부분이 있지만 두 가지 모두 독특한 검사도 있다.
+[PHPMD 및 PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/)을(를) 구성하고 CLI에서 [코딩 표준](https://github.com/magento/magento-coding-standard) 도구를 실행하십시오(아래). 겹치는 부분이 있지만 두 가지 모두 독특한 검사도 있다.
 
 ### 규칙 및 구조
 
@@ -69,7 +69,7 @@ PhpStorm 검사를 실행하여 스타일을 자동으로 테스트할 수 있�
 
 - 구성에 따라 코드를 활성화하거나 비활성화할 수 있으며 필요한 모든 코드가 예상대로 작동합니까?
 - 티켓에 언급된 모든 구성이 있습니까? 범위, 데이터 유형, 유효성 검사, 번역 및 기본값을 확인합니다.
-- 구성은 항상 가능한 가장 낮은 수준(스토어 보기 수준, 웹 사이트 수준 또는 글로벌 수준)에서 검색됩니까? 구성 검색은 의 범위 정의와 일치해야 합니다 `system.xml` 파일.
+- 구성은 항상 가능한 가장 낮은 수준(스토어 보기 수준, 웹 사이트 수준 또는 글로벌 수준)에서 검색됩니까? 구성 검색은 `system.xml` 파일의 범위 정의와 일치해야 합니다.
 - 기술 사양의 순서도에 있는 모든 경로가 적용됩니까? 다른 기술 사양은 모두 다룹니까?
 - 새 기능에 대해 ACL이 정의됩니까?
 - PhpDocs가 명확합니까? 커밋 메시지가 명확합니까?
@@ -80,14 +80,14 @@ PhpStorm 검사를 실행하여 스타일을 자동으로 테스트할 수 있�
 성능에 대한 검토는 수동으로 수행되며, 이는 확실하지 않은 경우 코드 실행에 의해 도움이 될 수 있습니다.
 
 - 쿼리가 루프로 실행됩니까? 이 루프는 편집된 파일 외부에 있을 수 있습니다.
-- 뭐 좀 찾아주시겠어요 `cachable="false"` 속성? 제대로 붙어있나요?
+- `cachable="false"` 특성을 찾을 수 있습니까? 제대로 붙어있나요?
 
 ### 보안
 
 보안을 위한 검토는 수동으로 수행되며, 텍스트 검색으로 도움을 받을 수 있습니다. 보안 검사의 일부는 자동화된 테스트를 통해 처리됩니다.
 
 - 필요한 경우 예외가 기록됩니까? 올바른 유형의 예외가 사용됩니까?
-- 할 수 있음 `around` 플러그인은 피해야 합니까?
+- `around`개의 플러그인을 사용하지 않을 수 있습니까?
 - 플러그인이 올바른 유형의 데이터를 반환합니까?
 - 데이터베이스 추상화 계층을 사용하여 빌드해야 하는 원시 SQL 쿼리를 찾을 수 있습니까?
 - 새로운 유형의 데이터가 모든 유형의 사용자, 관리자 또는 프론트엔드에 노출됩니까? 그것이 보안상의 위험입니까?
@@ -95,7 +95,7 @@ PhpStorm 검사를 실행하여 스타일을 자동으로 테스트할 수 있�
 
 ### 개인 정보 및 GDPR
 
-개인 정보 및 [GDPR](../../../security-and-compliance/privacy/gdpr.md) 수동으로 수행됩니다.
+개인 정보 및 [GDPR](../../../security-and-compliance/privacy/gdpr.md)에 대한 검토는 수동으로 수행됩니다.
 
 - 이 코드는 고객 데이터 또는 이메일을 처리합니까? 각별히 주의하세요.
 - 이 코드가 루프에서 실행될 수 있으면 한 루프 주기에서 다른 루프 주기로 고객 데이터를 유출할 수 있습니까?
@@ -131,19 +131,19 @@ PhpStorm 검사를 실행하여 스타일을 자동으로 테스트할 수 있�
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- 데이터베이스 스키마 `whitelist.json`—다음 CLI 명령을 실행하고 `db_schema_whitelist.json` 파일이 추가되거나 변경되지 않았습니다.
+- 데이터베이스 스키마 `whitelist.json` - 다음 CLI 명령을 실행하고 `db_schema_whitelist.json` 파일이 추가되거나 변경되지 않았는지 확인합니다.
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- 작성기 유효성 검사 - `composer.json` 파일이 들어 있는 디렉토리에서 다음 CLI 명령을 실행하여 파일을 생성합니다. `composer.json` 파일.
+- 작성기 유효성 검사 - `composer.json` 파일이 포함된 디렉터리에서 다음 CLI 명령을 실행하여 `composer.json` 파일의 유효성을 검사합니다.
 
   ```bash
   composer validate
   ```
 
-- 코딩 표준(Coding Standard) - 코딩 표준 도구를 설치 및 실행하고 모듈에 대해 실행합니다. 다음 파일은 를 입력하여 어디에서나 실행할 수 있도록 하는 방법을 보여 줍니다 `mcs ./app/code/Vendor/Module/`.
+- 코딩 표준(Coding Standard) - 코딩 표준 도구를 설치 및 실행하고 모듈에 대해 실행합니다. 다음 파일은 `mcs ./app/code/Vendor/Module/`을(를) 입력하여 어디에서나 실행할 수 있도록 하는 방법을 보여 줍니다.
 
   ```bash
   #!/usr/bin/env bash

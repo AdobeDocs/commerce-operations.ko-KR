@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5는 Amazon OpenSearch Service 클러스터 사용을 지원�
 ## AWS OpenSearch 서비스 도메인 만들기
 
 먼저 AWS에서 OpenSearch 인스턴스를 설정해야 합니다.
-읽기 [Amazon OpenSearch Service 도메인 만들기 및 관리](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) 자세한 지침은 을 참조하십시오.
+자세한 지침은 [Amazon OpenSearch Service 도메인 만들기 및 관리](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html)를 참조하십시오.
 
 ## AWS OpenSearch로 데이터 가져오기
 
@@ -33,11 +33,11 @@ AWS에서 모든 것이 준비되면 데이터로 채워야 할 때입니다.
 색인은 AWS 인스턴스에서 쉽게 다시 만들 수 있으므로 마이그레이션할 필요가 없습니다.
 그러나 데이터 인덱스를 마이그레이션할 때 Elasticsearch/OpenSearch 버전이 호환되는지 확인하십시오.
 
-Amazon 보기 [Amazon OpenSearch Service로 마이그레이션](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 지침 을 참조하십시오.
+자세한 내용은 Amazon의 [Amazon OpenSearch Service로 마이그레이션](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 지침을 참조하십시오.
 
 ### OpenSearch용 Commerce 구성
 
-OpenSearch 구성 단계는 [고급 설치](../../advanced.md) 주제.
+OpenSearch 구성 단계는 [고급 설치](../../advanced.md) 항목에서 다룹니다.
 
 새 구성이 작동하는지 테스트하려면 OpenSearch 끝점을 직접 테스트합니다.
 
@@ -45,12 +45,12 @@ OpenSearch 구성 단계는 [고급 설치](../../advanced.md) 주제.
 1. 관리자를 통해 다시 색인화합니다.
 1. OpenSearch 엔드포인트 쿼리(AWS UI에 있음):
 
-   인덱스를 가져오려면 다음을 추가합니다. `/_cat/indices/*?v=true` 다음 URL로:
+   인덱스를 가져오려면 URL에 `/_cat/indices/*?v=true`을(를) 추가하십시오.
    `<AWS OS endpoint>/_cat/indices/*?v=true`
 
-색인에서 제품을 가져오려면 다음을 추가합니다. `/magento2docker_product_1/_search?q=*` 다음 URL로:
+인덱스에서 제품을 가져오려면 URL에 `/magento2docker_product_1/_search?q=*`을(를) 추가합니다.
 `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
 ## 추가 리소스
 
-자세한 내용은 [OpenSearch AWS 설명서](https://docs.aws.amazon.com/opensearch-service/index.html).
+자세한 내용은 [OpenSearch AWS 설명서](https://docs.aws.amazon.com/opensearch-service/index.html)를 참조하십시오.

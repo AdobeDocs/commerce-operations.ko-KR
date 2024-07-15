@@ -5,8 +5,8 @@ feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -20,39 +20,39 @@ ht-degree: 1%
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 다음을 참조하십시오. [클라우드 인프라에서 Commerce를 위한 원격 스토리지 구성](cloud-support.md)
+>클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 [클라우드 인프라의 Commerce에 대한 원격 저장소 구성](cloud-support.md)을 참조하십시오.
 
 ## Adobe Commerce에서 URL 형식 구성
 
 서버측에서 이미지 크기를 조정하려면 이미지의 높이, 너비 및 위치(URL)에 대한 인수를 제공하도록 Adobe Commerce을 구성해야 합니다.
 
-**서버측 이미지 크기 조정을 위해 Commerce를 구성하려면**:
+**서버측 이미지 크기 조정을 위해 Commerce을 구성하려면**:
 
-1. 다음에서 _관리자_ 패널, 클릭 **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. _관리자_ 패널에서 **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**&#x200B;을(를) 클릭합니다.
 
-1. 오른쪽 창에서 를 확장합니다. **[!UICONTROL Url options]**.
+1. 오른쪽 창에서 **[!UICONTROL Url options]**&#x200B;을(를) 확장합니다.
 
-1. 다음에서 _카탈로그 미디어 URL 형식_ 섹션, 지우기 **[!UICONTROL Use system value]**.
+1. _카탈로그 미디어 URL 형식_ 섹션에서 **[!UICONTROL Use system value]**&#x200B;을(를) 지웁니다.
 
-1. 다음 항목 선택 `Image optimization based on query parameters` 의 URL **_카탈로그 미디어 URL 형식_** 필드.
+1. **_카탈로그 미디어 URL 형식_** 필드에서 `Image optimization based on query parameters` URL을 선택합니다.
 
-1. 클릭 **[!UICONTROL Save Config]**.
+1. **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 
-1. 다음 단계로 이동 [Nginx 구성](#configure-nginx).
+1. [Nginx 구성](#configure-nginx)을 계속합니다.
 
 ## Nginx 구성
 
-서버측 이미지 크기 조정을 계속 구성하려면 다음을 준비해야 합니다 `nginx.conf` 파일 및 제공 `proxy_pass` 선택한 어댑터에 대한 값입니다.
+서버측 이미지 크기 조정을 계속 구성하려면 `nginx.conf` 파일을 준비하고 선택한 어댑터에 대해 `proxy_pass` 값을 제공해야 합니다.
 
 **Nginx에서 이미지 크기를 조정하려면**:
 
-1. 설치 [Nginx 이미지 필터 모듈][nginx-module].
+1. [Nginx 이미지 필터 모듈][nginx-module]을 설치하십시오.
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 만들기 `nginx.conf` 포함된 템플릿을 기반으로 하는 파일 `nginx.conf.sample` 파일. For example:
+1. 포함된 템플릿 `nginx.conf.sample` 파일을 기반으로 `nginx.conf` 파일을 만듭니다. For example:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ ht-degree: 1%
    }
    ```
 
-1. [_선택 사항_] 구성 `proxy_pass` 특정 어댑터에 대한 값입니다.
+1. [_선택 사항_] 특정 어댑터에 대해 `proxy_pass` 값을 구성합니다.
 
    - [Amazon Simple Storage Service(Amazon S3)](remote-storage-aws-s3.md)
 

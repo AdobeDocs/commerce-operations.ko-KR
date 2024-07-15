@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 배포 흐름
 
-다음 [!DNL Commerce] 프로덕션 배포 흐름은 저장소가 최대 성능에 도달하도록 지원합니다.
+[!DNL Commerce] 프로덕션 배포 흐름은 스토어가 최대 성능에 도달하도록 도와줍니다.
 
 ## 종속성 설치
 
-다음 `composer.json` 및 `composer.lock` 파일 관리 [!DNL Commerce] 종속성 을(를) 확인하고 각 패키지에 적절한 버전을 설치합니다. 먼저 종속성을 설치해야 합니다. [전처리 종속성 삽입 지침](#preprocess-dependency-injection-instructions) 을(를) 업데이트하려는 경우 [자동 로더](#update-the-autoloader).
+`composer.json` 및 `composer.lock` 파일은 [!DNL Commerce] 종속성을 관리하고 각 패키지에 적절한 버전을 설치합니다. [자동 로더](#update-the-autoloader)를 업데이트하려면 [사전 처리 종속성 삽입 지침](#preprocess-dependency-injection-instructions) 전에 종속성을 설치해야 합니다.
 
-설치하려면 [!DNL Commerce] 종속성:
+[!DNL Commerce] 종속성을 설치하려면:
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## 자동 로더 업데이트
 
-컴파일이 완료된 후 다음을 확인합니다. [APCu가 활성화됨](../performance/software.md#php-settings) 및 자동로더를 업데이트합니다.
+컴파일이 완료된 후 [APCu가 활성화되었는지 확인](../performance/software.md#php-settings)하고 자동 로더를 업데이트하십시오.
 
 자동로더를 갱신하려면
 
 >[!INFO]
 >
->다음 `-o` 옵션은 PSR-0/4 자동 로드를 classmap으로 전환하여 더 빠른 자동 로더를 가져옵니다. 다음 `--apcu` option은 APCu를 사용하여 찾은 클래스/찾을 수 없는 클래스를 캐시합니다.
+>`-o` 옵션은 PSR-0/4 자동 로드를 classmap으로 전환하여 더 빠른 자동 로더를 가져옵니다. `--apcu` 옵션은 APCu를 사용하여 찾은 클래스/찾을 수 없는 클래스를 캐시합니다.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## 정적 콘텐츠 배포
 
-정적 콘텐츠 배포의 원인 [!DNL Commerce] 다음 작업을 수행하려면 다음과 같이 하십시오.
+정적 콘텐츠를 배포하면 [!DNL Commerce]에서 다음 작업을 수행합니다.
 
 * 모든 정적 리소스 분석
 * 콘텐츠 병합, 최소화 및 번들링 수행
@@ -81,9 +81,9 @@ bin/magento setup:static-content:deploy
 * 테마 대체 분석
 * 추가 사용을 위해 처리된 모든 콘텐츠 및 구체화된 콘텐츠를 특정 폴더에 저장
 
-정적 콘텐츠가 배포되지 않은 경우 [!DNL Commerce] 나열된 모든 작업을 즉시 수행하여 응답 시간이 크게 증가합니다.
+정적 콘텐츠가 배포되지 않으면 [!DNL Commerce]에서 나열된 모든 작업을 즉시 수행하여 응답 시간이 크게 늘어납니다.
 
-다양한 옵션을 사용하여 저장소 크기 및 이행 요구 사항에 따라 배포 작업을 사용자 지정할 수 있습니다. 가장 일반적인 방법은 소규모 배포 전략입니다. 다음을 참조하십시오 [정적 파일 배포 전략](../configuration/cli/static-view-file-strategy.md)
+다양한 옵션을 사용하여 저장소 크기 및 이행 요구 사항에 따라 배포 작업을 사용자 지정할 수 있습니다. 가장 일반적인 방법은 소규모 배포 전략입니다. [정적 파일 배포 전략](../configuration/cli/static-view-file-strategy.md)을 참조하세요.
 
 정적 콘텐츠를 배포하려면
 
@@ -97,9 +97,9 @@ bin/magento setup:static-content:deploy
 
 >[!INFO]
 >
->모드를 프로덕션으로 설정하면 자동으로 실행됩니다 `setup:di:compile` 및 `setup:static-content:deploy`.
+>모드를 프로덕션으로 설정하면 `setup:di:compile` 및 `setup:static-content:deploy`이(가) 자동으로 실행됩니다.
 
-마지막으로 스토어를 프로덕션 모드로 전환해야 합니다. 프로덕션 모드는 특히 스토어의 최대 성능에 최적화되었습니다. 또한 모든 개발자별 기능을 비활성화합니다. 이 작업은 다음 위치에서 수행할 수 있습니다. `.htaccess` 또는 `nginx.conf` 파일:
+마지막으로 스토어를 프로덕션 모드로 전환해야 합니다. 프로덕션 모드는 특히 스토어의 최대 성능에 최적화되었습니다. 또한 모든 개발자별 기능을 비활성화합니다. 이 작업은 `.htaccess` 또는 `nginx.conf` 파일에서 수행할 수 있습니다.
 
 `SetEnv MAGE_MODE production`
 

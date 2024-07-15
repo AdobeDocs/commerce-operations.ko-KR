@@ -1,5 +1,5 @@
 ---
-title: 상거래 비전
+title: Commerce 비전
 description: Adobe Commerce 프로젝트에 대한 비전을 수립하여 팀에 영감을 줍니다.
 exl-id: 0eed719a-50fe-4ed7-9838-ec51d9b222b4
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

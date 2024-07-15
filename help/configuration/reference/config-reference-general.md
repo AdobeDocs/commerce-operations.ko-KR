@@ -5,26 +5,26 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # 일반 및 고급 구성 경로 참조
 
-이 항목에는 일반 및 고급 구성 경로 및 _아님_ [중요 및 시스템별 값](config-reference-sens.md). 다음 [`magento app:config:dump` 명령](../cli/export-configuration.md) 공유 구성 파일에 이러한 값을 씁니다. `app/etc/config.php`: 소스 제어에 있어야 합니다.
+이 항목에는 일반 및 고급 구성 경로와 _not_ [중요 및 시스템별 값](config-reference-sens.md)이 나열됩니다. [`magento app:config:dump` 명령](../cli/export-configuration.md)은(는) 이러한 값을 소스 제어에 있어야 하는 공유 구성 파일 `app/etc/config.php`에 씁니다.
 
-선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 다음을 참조하십시오. [환경 변수를 사용하여 구성 설정을 재정의합니다.](override-config-settings.md#environment-variables).
+선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 [환경 변수를 사용하여 구성 설정을 무시하십시오](override-config-settings.md#environment-variables).
 
 ## 일반 범주
 
-이 섹션에는 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다. **스토어** > 설정 > **구성** > **일반**.
+이 섹션에는 **스토어** > 설정 > **구성** > **일반**&#x200B;에서 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
 ### 일반 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > 일반 > **일반**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > 일반 > **일반**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? | 민감한? |
+| 이름 | 구성 경로 | Commerce만 해당? | 민감한? |
 |--------------|--------------|--------------|--------------|
 | 기본 국가 | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 국가 허용 | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![중요](/help/assets/configuration/cloud-sens.png) |
@@ -59,9 +59,9 @@ ht-degree: 0%
 
 ### 웹 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **일반** > **웹**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **일반** > **웹**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | Url에 스토어 코드 추가 | `web/url/use_store` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 기본 URL로 자동 리디렉션 | `web/url/redirect_to_base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -84,16 +84,16 @@ ht-degree: 0%
 | HTTP_USER_AGENT 유효성 검사 | `web/session/use_http_user_agent` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Storefront에서 SID 사용 | `web/session/use_frontend_sid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 쿠키가 비활성화된 경우 CMS-페이지로 리디렉션합니다. | `web/browser_capabilities/cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| JavaScript가 비활성화된 경우 알림 표시 | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| JavaScript이 비활성화된 경우 알림 표시 | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 로컬 저장소가 비활성화된 경우 알림 표시 | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 
 ### 통화 설정 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **일반** > **통화 설정**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **일반** > **통화 설정**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 기본 통화 | `currency/options/base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 기본 표시 통화 | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -116,9 +116,9 @@ ht-degree: 0%
 
 ### 연락처 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **일반** > **연락처**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **일반** > **연락처**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 연락처 활성화 | `contact/contact/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 이메일 발송 대상 | `contact/email/recipient_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -129,9 +129,9 @@ ht-degree: 0%
 
 ### 보고서 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **일반** > **보고서**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **일반** > **보고서**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 연간 누계 시작 | `reports/dashboard/ytd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 현재 월 시작 | `reports/dashboard/mtd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -140,9 +140,9 @@ ht-degree: 0%
 
 ### 콘텐츠 관리 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **일반** > **콘텐츠 관리**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **일반** > **콘텐츠 관리**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | WYSIWYG 편집기 활성화 | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 카탈로그에 대한 WYSIWYG에서 미디어 콘텐츠에 정적 URL 사용 | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -154,9 +154,9 @@ ht-degree: 0%
 
 ### New Relic 보고 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **일반** > **New Relic 보고**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **일반** > **New Relic 보고**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | New Relic 통합 활성화 | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | New Relic 애플리케이션 이름 | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -166,13 +166,13 @@ ht-degree: 0%
 
 ## 고급 범주
 
-이 섹션에는 아래 관리자의 옵션에 사용할 수 있는 변수 이름 및 구성 경로가 나열됩니다. **스토어** > 설정 > **구성** > **고급**.
+이 섹션에는 **스토어** > 설정 > **구성** > **고급**&#x200B;에서 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
 ### 관리자 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고급** > **관리자**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고급** > **관리자**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 암호 찾기 이메일 템플릿 | `admin/emails/forgot_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 이메일 발신자 찾기 및 재설정 | `admin/emails/forgot_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -208,9 +208,9 @@ ht-degree: 0%
 
 ### 시스템 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고급** > **시스템**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고급** > **시스템**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 성공한 메시지 수명 | `system/mysqlmq/successful_messages_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 다음 시간 이후에 진행 중인 메시지 다시 시도 | `system/mysqlmq/retry_inprogress_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -264,7 +264,7 @@ ht-degree: 0%
 | 구성 내보내기 | `system/full_page_cache/varnish/export_button_version4` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 일수가 로그에 저장됨 | `system/bulk/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 미디어 스토리지 | `system/media_storage_configuration/media_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 미디어 데이터베이스 선택 | `system/media_storage_configuration/media_database` (Commerce 2.4.3에서 더 이상 사용되지 않음) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 미디어 데이터베이스 선택 | `system/media_storage_configuration/media_database`(Commerce 2.4.3에서 더 이상 사용되지 않음) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 환경 업데이트 시간 | `system/media_storage_configuration/configuration_update_time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 파일 저장, 일 | `system/magento_scheduled_import_export_log/save_days` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 예약된 파일 기록 정리 사용 | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -276,9 +276,9 @@ ht-degree: 0%
 
 ### 개발자 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고급** > **개발자**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고급** > **개발자**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 워크플로 유형 | `dev/front_end_development_workflow/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 심볼릭 링크 허용 | `dev/template/allow_symlink` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

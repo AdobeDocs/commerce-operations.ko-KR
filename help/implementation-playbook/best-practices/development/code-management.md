@@ -3,13 +3,13 @@ title: 코드 관리 우수 사례
 description: Adobe Commerce 프로젝트의 개발 단계에 대한 코드 관리 모범 사례에 대해 알아봅니다.
 feature: Best Practices
 role: Developer
-source-git-commit: 0902997fb0bf862b37a5e29026f462bf8c86c96b
+exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce을 위한 코드 관리 우수 사례
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
 
-이 호에는 다음의 것이 포함된다. [글로벌 참조 아키텍처(GRA)](../../architecture/global-reference/overview.md) 및 단일 인스턴스 설치
+[GRA(전역 참조 아키텍처)](../../architecture/global-reference/overview.md)과(와) 단일 인스턴스 설치를 모두 다룹니다.
 
 ## 정의
 
@@ -80,11 +80,11 @@ ht-degree: 0%
 
 | 기능 | Git | 작성기 |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| 주 코드 저장소 | 모든 코드는 단일 또는 몇 개의 Git 저장소에 있습니다 | 모든 코드는 작성기 저장소의 패키지에 있습니다<br>각 단일 Composer 패키지는 Git 저장소로 표시됩니다 |
-| 코드 위치 | 개발은 `app/` 디렉터리 | 개발은 `vendor/` 디렉터리 |
+| 주 코드 저장소 | 모든 코드는 단일 또는 몇 개의 Git 저장소에 있습니다 | 모든 코드는 Composer 저장소의 패키지에 있습니다<br>각 단일 Composer 패키지는 Git 저장소로 표시됩니다 |
+| 코드 위치 | 개발은 `app/` 디렉터리에서 수행됩니다. | 개발은 `vendor/` 디렉터리에서 수행됩니다. |
 | 핵심 업그레이드 관리 | Adobe Commerce core가 Composer를 사용하여 설치 및 업그레이드되면 결과는 Git에 커밋됩니다. | Adobe Commerce core는 Composer를 사용하여 설치 및 업그레이드됩니다. 결과는 Git에 커밋됩니다. |
-| 타사 모듈 관리 | 타사 모듈이에 설치됨 `vendor/` 마켓플레이스 또는 packagist.org을 통해 설치한 경우. 그렇지 않으면 다음 위치에 설치됩니다. `app/` | 모든 타사 모듈은 `vendor/` 디렉터리 |
-| 릴리스 | 방출은 다음과 같은 특징이 있습니다. `git merge` 및 `git pull` 또는 `git checkout` 명령 | 방출은 다음과 같은 특징이 있습니다. `composer update` 및 `git pull` 또는 `git checkout` 명령 |
+| 타사 모듈 관리 | 타사 모듈은 마켓플레이스 또는 packagist.org을 통해 설치된 경우 `vendor/`에 설치됩니다. 그렇지 않으면 `app/`에 설치됩니다. | 모든 타사 모듈은 `vendor/` 디렉터리에 설치됩니다. |
+| 릴리스 | 해제는 `git merge` 및 `git pull` 또는 `git checkout` 명령으로 특징지어집니다. | 해제는 `composer update` 및 `git pull` 또는 `git checkout` 명령으로 특징지어집니다. |
 | Git 저장소 수 | 몇 개 | 많음 |
 | 개발 복잡성 | 단순 | 복합 |
 | 끌어오기 요청 복잡성 | 단순 | 복합 |
@@ -93,24 +93,24 @@ ht-degree: 0%
 | GRA 지원 | ![예 아이콘](../../../assets/yes.svg) | ![예 아이콘](../../../assets/yes.svg) |
 | 모듈은 자동으로 외부 라이브러리를 설치할 수 있습니다. | ![아이콘 없음](../../../assets/no.svg) | ![예 아이콘](../../../assets/yes.svg) |
 | GRA 구성의 유연성 | ![아이콘 없음](../../../assets/no.svg) | ![예 아이콘](../../../assets/yes.svg) |
-| 모듈 종속성 관리 | ![예 아이콘](../../../assets/yes.svg) 다음을 통해서만 `module.xml`, 제한된 기능 | ![예 아이콘](../../../assets/yes.svg) 다음을 통한 전체 종속성 관리 `composer.json` |
-| 모듈 버전 관리 | ![예 아이콘](../../../assets/yes.svg) 버전을 정의할 수는 있지만 특정 버전을 설치할 수는 없습니다 | ![예 아이콘](../../../assets/yes.svg) 전체 버전 지원 |
+| 모듈 종속성 관리 | ![예 아이콘](../../../assets/yes.svg)은(는) `module.xml`을(를) 통해서만 사용할 수 있으며 기능이 제한됩니다. | ![예 아이콘](../../../assets/yes.svg) `composer.json`을(를) 통한 전체 종속성 관리 |
+| 모듈 버전 관리 | ![예 아이콘](../../../assets/yes.svg) 버전을 정의할 수 있지만 특정 버전을 설치할 수는 없습니다 | ![예 아이콘](../../../assets/yes.svg) 전체 버전 지원 |
 | 유료 서비스 필요 | Git 저장소 | Git 저장소, 비공개 패키지 목록(연간 ± €600) |
 | Jira와 Bitbucket 통합 가능 | ![예 아이콘](../../../assets/yes.svg) | ![예 아이콘](../../../assets/yes.svg) |
 | 코드 변경 사항이 즉시 설치 가능 | ![예 아이콘](../../../assets/yes.svg) | ![예 아이콘](../../../assets/yes.svg) |
 
 ## 피해야 할 솔루션
 
-1. **작성기 및 결합 `app/code` 모듈용**
+1. **모듈에 대해 작성기와 `app/code`을(를) 결합**
 
    결과적으로 두 코드 관리 스타일의 모든 단점이 프로젝트에 결합됩니다. 불필요한 복잡성, 불안정, 유연성 부족을 가중시킨다.
 
    For example:
    - 개발 팀에 Git 및 Composer 워크플로우(둘 중 하나만 아님)를 모두 설명합니다.
-   - 호환되지 않는 모듈 설치 `app/code` 그것을 막을 방법이 없기 때문에.
-   - 에서 모듈 이동 `app/code` to Composer(또는 반대로)는 특히 지속적인 개발로 인해 번거롭습니다.
+   - `app/code`에 호환되지 않는 모듈을 설치하십시오. 이를 중지하는 방법은 없습니다.
+   - 모듈을 `app/code`에서 Composer로(또는 반대로) 이동하는 것은 특히 지속적인 개발로 인해 번거롭습니다.
 
-1. **Satis 패키지 관리자**
+1. **패키지 관리자 저장**
 
    프라이빗 패커니스트± 연간 600유로입니다. 이 비용은 브랜드당 비용이 아니라 전체 GRA를 합한 비용입니다. 무료 솔루션 Satis를 사용하여 이러한 비용을 방지 하려고 하지 마십시오. Satis는 git에 커밋을 푸시할 때마다 패키지를 자동으로 업데이트하지 않습니다. 또한 Satis는 내장 된 권한 없습니다. Satis를 실행하려면 웹 서버를 유지 관리해야 합니다. Satis를 유지 하는 개인 Packagist 구독 수수료의 다수를 지출하게 됩니다.
 

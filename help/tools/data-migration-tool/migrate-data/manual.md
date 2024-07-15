@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -33,25 +33,25 @@ ht-degree: 0%
 >데이터베이스 미디어 저장 방법은 Magento 2.4.3부터 더 이상 사용되지 않습니다.
 
 
-이 섹션은 사용자에게 적용됩니다. *전용* Magento 데이터베이스에 미디어 파일을 저장하는 경우. 이 단계는 이전에 수행해야 합니다. [데이터 마이그레이션](data.md):
+이 섹션은 Magento 데이터베이스에 미디어 파일을 저장하는 경우 *만*&#x200B;이 적용됩니다. 이 단계는 [데이터 마이그레이션](data.md) 전에 수행해야 합니다.
 
 1. 관리자로 Magento 1 관리 패널에 로그인합니다.
 
-1. 클릭 **시스템** > **구성** > 고급 > **시스템**.
+1. **시스템** > **구성** > 고급 > **시스템**&#x200B;을 클릭합니다.
 
-1. 오른쪽 창에서 다음 위치로 스크롤합니다 **미디어에 대한 저장소 구성**.
+1. 오른쪽 창에서 **미디어에 대한 저장소 구성**&#x200B;으로 스크롤합니다.
 
-1. 다음에서 **미디어 데이터베이스 선택** 목록에서 미디어 스토리지 데이터베이스의 이름을 클릭합니다.
+1. **미디어 데이터베이스 선택** 목록에서 미디어 저장소 데이터베이스의 이름을 클릭합니다.
 
-1. 클릭 **동기화**.
+1. **동기화**&#x200B;를 클릭합니다.
 
 그런 다음 Magento 2 관리 패널에서 동일한 단계를 반복합니다.
 
 ### 파일 시스템의 미디어 파일
 
-모든 미디어 파일(제품, 카테고리, WYSIWYG 편집기 등의 이미지)은에서 수동으로 복사해야 합니다. `<your Magento 1 install dir>/media` 끝 `<your Magento 2 install dir>/pub/media`.
+모든 미디어 파일(제품, 카테고리, WYSIWYG 편집기 등의 이미지)은 `<your Magento 1 install dir>/media`에서 `<your Magento 2 install dir>/pub/media`(으)로 수동으로 복사해야 합니다.
 
-그러나 다음을 수행합니다 *아님* 다음을 복사합니다. `.htaccess` Magento 1에 있는 파일 `media` 폴더를 삭제합니다. Magento 2에는 자체 있음 `.htaccess` 보존해야 합니다.
+그러나 Magento 1 `media` 폴더에 있는 `.htaccess` 파일을 *복사하지*&#x200B;마십시오. Magento 2에는 유지해야 하는 자체 `.htaccess`이(가) 있습니다.
 
 ## Storefront 디자인
 
@@ -69,4 +69,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->다음을 사용하여 데이터베이스 엔티티의 시간대를 조정할 수 있습니다. `\Migration\Handler\Timezone` 핸들러입니다. 다음을 참조하십시오. [후속 작업](follow-up.md) 섹션에 자세히 설명되어 있습니다.
+>`\Migration\Handler\Timezone` 처리기를 사용하여 데이터베이스 엔터티의 시간대를 조정할 수 있습니다. 자세한 내용은 [후속 작업](follow-up.md) 섹션을 참조하십시오.

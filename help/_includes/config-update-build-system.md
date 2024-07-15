@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. 변경 사항을 다음으로 가져오기 `app/etc/config.php` 소스 제어에서 가져왔습니다.
+1. 소스 제어에서 `app/etc/config.php`에 대한 변경 내용을 가져옵니다.
 
    ```bash
    git pull mconfig m2.2_deploy

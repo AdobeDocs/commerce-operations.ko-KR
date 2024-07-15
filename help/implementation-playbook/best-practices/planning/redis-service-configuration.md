@@ -6,7 +6,7 @@ feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 0%
 - 미리 로드 키
 - 부실 캐시 활성화
 - Redis 캐시와 Redis 세션 분리
-- Redis 캐시 압축 및 사용 `gzip` 높은 압축률을 위해
+- Redis 캐시를 압축하고 더 높은 압축을 위해 `gzip`을(를) 사용합니다.
 
 ## Redis L2 캐시 구성
 
-다음을 설정하여 Redis L2 캐시 구성 `REDIS_BACKEND` 의 배포 변수 `.magento.env.yaml` 구성 파일입니다.
+`.magento.env.yaml` 구성 파일에서 `REDIS_BACKEND` 배포 변수를 설정하여 Redis L2 캐시를 구성합니다.
 
 ```yaml
 stage:
@@ -30,18 +30,18 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 다음에서 _클라우드 인프라의 Commerce 안내서_.
+클라우드 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)을(를) 참조하십시오.
 
-온-프레미스 설치의 경우 [Redis 페이지 캐싱 구성](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) 다음에서 _구성 안내서_.
+온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Redis 페이지 캐싱 구성](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)을 참조하십시오.
 
 >[!NOTE]
 >
->최신 버전의 를 사용 중인지 확인합니다. `ece-tools` 패키지. 그렇지 않은 경우, [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). 를 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다. `composer show magento/ece-tools` CLI 명령입니다.
+>최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 
 ### L2 캐시 메모리 크기 조정(Adobe Commerce Cloud)
 
-L2 캐시는 [임시 파일 시스템](https://en.wikipedia.org/wiki/Tmpfs) 저장 메커니즘으로 사용됩니다. 특수 키 값 데이터베이스 시스템과 비교하면 임시 파일 시스템에는 메모리 사용을 제어하는 키 제거 정책이 없습니다.
+L2 캐시는 [임시 파일 시스템](https://en.wikipedia.org/wiki/Tmpfs)을(를) 저장소 메커니즘으로 사용합니다. 특수 키 값 데이터베이스 시스템과 비교하면 임시 파일 시스템에는 메모리 사용을 제어하는 키 제거 정책이 없습니다.
 
 메모리 사용 제어 부족으로 인해 오래된 캐시를 누적하여 L2 캐시 메모리 사용량이 늘어날 수 있습니다.
 
@@ -49,15 +49,15 @@ L2 캐시 구현의 메모리 소진을 방지하기 위해 Adobe Commerce은 �
 
 캐시 저장을 위한 프로젝트 요구 사항에 따라 L2 캐시 메모리 최대 사용량을 조정하는 것이 중요합니다. 다음 방법 중 하나를 사용하여 메모리 캐시 크기 조정을 구성합니다.
 
-- 지원 티켓을 만들어 크기 변경 요청 `/dev/shm` 마운트.
-- 조정 `cleanup_percentage` 스토리지의 최대 충진 비율을 제한하는 애플리케이션 수준의 속성입니다. 나머지 여유 메모리는 다른 서비스에서 사용할 수 있습니다.
-캐시 구성 그룹 아래의 배포 구성에서 구성을 조정할 수 있습니다 `cache/frontend/default/backend_options/cleanup_percentage`.
+- `/dev/shm` 마운트의 크기 변경을 요청하려면 지원 티켓을 만드십시오.
+- 저장소의 최대 채움 비율을 제한하려면 응용 프로그램 수준에서 `cleanup_percentage` 속성을 조정하십시오. 나머지 여유 메모리는 다른 서비스에서 사용할 수 있습니다.
+캐시 구성 그룹 `cache/frontend/default/backend_options/cleanup_percentage` 아래의 배포 구성에서 구성을 조정할 수 있습니다.
 
 >[!NOTE]
 >
->다음 `cleanup_percentage` 구성 가능한 옵션은 Adobe Commerce 2.4.4에 도입되었습니다.
+>구성 가능한 `cleanup_percentage` 옵션이 Adobe Commerce 2.4.4에 도입되었습니다.
 
-다음 코드는에서 예제 구성을 보여 줍니다. `.magento.env.yaml` 파일:
+다음 코드는 `.magento.env.yaml` 파일의 예제 구성을 보여 줍니다.
 
 ```yaml
 stage:
@@ -74,7 +74,7 @@ stage:
 캐시 요구 사항은 프로젝트 구성 및 사용자 지정 타사 코드에 따라 다를 수 있습니다. L2 캐시 메모리 크기 조정 범위를 사용하면 L2 캐시가 너무 많은 임계값 히트 없이 작동할 수 있습니다.
 이상적으로 L2 캐시 메모리 사용은 빈번한 스토리지 지우기를 방지하기 위해 임계값 아래의 특정 수준에서 안정되어야 합니다.
 
-다음 CLI 명령을 사용하여 클러스터의 각 노드에서 L2 캐시 스토리지 메모리 사용을 확인하고 `/dev/shm` 줄.
+다음 CLI 명령을 사용하여 클러스터의 각 노드에서 L2 캐시 저장소 메모리 사용을 확인하고 `/dev/shm` 줄을 찾을 수 있습니다.
 사용은 서로 다른 노드에 걸쳐 다를 수 있지만 동일한 값으로 수렴해야 합니다.
 
 ```bash
@@ -83,7 +83,7 @@ df -h
 
 ## Redis 슬레이브 연결 활성화
 
-에서 Redis 슬레이브 연결 활성화 `.magento.env.yaml` 한 노드만 읽기-쓰기 트래픽을 처리하고 다른 노드는 읽기 전용 트래픽을 처리하도록 구성 파일입니다.
+`.magento.env.yaml` 구성 파일에서 Redis 슬레이브 연결을 활성화하여 한 노드만 읽기-쓰기 트래픽을 처리하고 다른 노드는 읽기 전용 트래픽을 처리하도록 합니다.
 
 ```yaml
 stage:
@@ -91,17 +91,17 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-다음을 참조하십시오 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 다음에서 _클라우드 인프라의 Commerce 안내서_.
+_Cloud Infrastructure의 Commerce_&#x200B;에서 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)을(를) 참조하십시오.
 
-Adobe Commerce 온-프레미스 설치의 경우 `bin/magento:setup` 명령입니다. 다음을 참조하십시오 [기본 캐시에 Redis 사용](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) 다음에서 _구성 안내서_.
+Adobe Commerce 온-프레미스 설치의 경우 `bin/magento:setup` 명령을 사용하여 새 Redis 캐시 구현을 구성합니다. _구성 가이드_&#x200B;에서 [기본 캐시에 Redis 사용](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)을 참조하십시오.
 
 >[!WARNING]
 >
->실행 _아님_ 를 사용하여 클라우드 인프라 프로젝트에 대한 Redis 슬레이브 연결 구성 [크기 조정/분할 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). 이로 인해 Redis 연결 오류가 발생합니다. 다음을 참조하십시오 [Redis 구성 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 다음에서 _클라우드 인프라의 상거래_ 가이드.
+>[크기 조정/분할 아키텍처를 사용하여 클라우드 인프라 프로젝트에 대한 Redis 슬레이브 연결을 구성하지 _마십시오_.](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) 이로 인해 Redis 연결 오류가 발생합니다. _클라우드 인프라의 Commerce_ 안내서에서 [Redis 구성 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)을 참조하십시오.
 
 ## 미리 로드 키
 
-페이지 간에 데이터를 재사용하려면 `.magento.env.yaml` 구성 파일입니다.
+페이지 간에 데이터를 다시 사용하려면 미리 로드할 키를 `.magento.env.yaml` 구성 파일에 나열합니다.
 
 ```yaml
 stage:
@@ -120,11 +120,11 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-온-프레미스 설치의 경우 [Redis 미리 로드 기능](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) 다음에서 _구성 안내서_.
+온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Redis 미리 로드 기능](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature)을 참조하세요.
 
 ## 부실 캐시 활성화
 
-특히 오래된 캐시를 사용하여 새로운 캐시를 동시에 생성함으로써 잠금 대기 시간을 줄이고 성능을 향상시킬 수 있습니다. 부실 캐시를 활성화하고 `.magento.env.yaml` 구성 파일:
+특히 오래된 캐시를 사용하여 새로운 캐시를 동시에 생성함으로써 잠금 대기 시간을 줄이고 성능을 향상시킬 수 있습니다. 오래된 캐시를 사용하도록 설정하고 `.magento.env.yaml` 구성 파일에서 캐시 형식을 정의합니다.
 
 ```yaml
 stage:
@@ -157,13 +157,13 @@ stage:
           frontend: "stale_cache_enabled"
 ```
 
-온-프레미스 설치 구성에 대해서는 [부실 캐시 옵션](../../../configuration/cache/level-two-cache.md#stale-cache-options) 다음에서 _구성 안내서_.
+온-프레미스 설치를 구성하려면 _구성 가이드_&#x200B;에서 [오래된 캐시 옵션](../../../configuration/cache/level-two-cache.md#stale-cache-options)을 참조하십시오.
 
 ## 별도의 Redis 캐시 및 세션 인스턴스
 
 Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로 관리할 수 있습니다. 이는 캐시 문제가 세션에 영향을 주지 않도록 하여 매출에 영향을 줄 수 있습니다. 각 Redis 인스턴스는 자체 코어에서 실행되므로 성능이 향상됩니다.
 
-1. 업데이트 `.magento/services.yaml` 구성 파일입니다.
+1. `.magento/services.yaml` 구성 파일을 업데이트합니다.
 
    ```yaml
    mysql:
@@ -185,7 +185,7 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
       disk: 2048
    ```
 
-1. 업데이트 `.magento.app.yaml` 구성 파일입니다.
+1. `.magento.app.yaml` 구성 파일을 업데이트합니다.
 
    ```yaml
    relationships:
@@ -196,7 +196,7 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. 제출 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 운영 및 스테이징 환경에서 세션 전용 새 Redis 인스턴스의 프로비저닝을 요청합니다. 업데이트된 항목 포함 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일입니다. 이 경우 다운타임이 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
+1. [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)을 제출하여 프로덕션 및 스테이징 환경에서 세션 전용 새 Redis 인스턴스의 프로비저닝을 요청합니다. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다. 이 경우 다운타임이 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
 
 1. 새 인스턴스가 실행 중인지 확인하고 포트 번호를 기록합니다.
 
@@ -204,10 +204,10 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
-1. 포트 번호를 `.magento.env.yaml` 구성 파일입니다.
+1. `.magento.env.yaml` 구성 파일에 포트 번호를 추가합니다.
 
    >[!NOTE]
-   >`disable_locking` 은(는) 로 설정되어야 합니다. `1`.
+   >`disable_locking`을(를) `1`(으)로 설정해야 합니다.
    >   
 
    ```yaml
@@ -223,13 +223,13 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
        min_lifetime: 60
    ```
 
-1. 에서 세션 제거 [기본 데이터베이스](../../../configuration/cache/redis-pg-cache.md) (`db 0`)을 클릭하여 Redis Cache 인스턴스를 검색합니다.
+1. Redis 캐시 인스턴스의 [기본 데이터베이스](../../../configuration/cache/redis-pg-cache.md)(`db 0`)에서 세션을 제거합니다.
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-배포하는 동안 [로그 작성 및 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+배포 중에 [빌드 및 배포 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs)에 다음 줄이 표시됩니다.
 
 ```terminal
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -245,7 +245,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## 캐시 압축
 
-6GB 이상의 Redis를 사용하는 경우 `maxmemory`, 캐시 압축을 사용하여 키에서 사용하는 공간을 줄일 수 있습니다. 클라이언트측 성능이 저하됩니다. 예비 CPU가 있는 경우 활성화합니다. 다음을 참조하십시오 [세션 스토리지에 Redis 사용](../../../configuration/cache/redis-session.md) 다음에서 _구성 안내서_.
+6GB가 넘는 Redis `maxmemory`을(를) 사용하는 경우 캐시 압축을 사용하여 키에서 사용하는 공간을 줄일 수 있습니다. 클라이언트측 성능이 저하됩니다. 예비 CPU가 있는 경우 활성화합니다. _구성 가이드_&#x200B;에서 [세션 저장소에 Redis 사용](../../../configuration/cache/redis-session.md)을 참조하십시오.
 
 ```yaml
 stage:

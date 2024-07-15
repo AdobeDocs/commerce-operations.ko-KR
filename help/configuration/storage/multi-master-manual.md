@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Commerce 응용 프로그램이 이미 프로덕션에 있거나 사용자 지정 코드 또는 구성 요소를 이미 설치한 경우 분할 데이터베이스를 수동으로 구성해야 할 수 있습니다. 계속하기 전에 Adobe Commerce 지원 센터에 문의하여 이 작업이 필요한지 확인하십시오.
+Commerce 애플리케이션이 이미 프로덕션에 있거나 사용자 지정 코드 또는 구성 요소를 이미 설치한 경우 분할 데이터베이스를 수동으로 구성해야 할 수 있습니다. 계속하기 전에 Adobe Commerce 지원 센터에 문의하여 이 작업이 필요한지 확인하십시오.
 
 데이터베이스 수동 분할에는 다음이 포함됩니다.
 
@@ -29,30 +29,30 @@ Commerce 응용 프로그램이 이미 프로덕션에 있거나 사용자 지�
 
 >[!WARNING]
 >
->사용자 정의 코드가 Sales 및 Quote 데이터베이스의 테이블과 함께 JOIN을 사용하는 경우 _할 수 없음_ 분할 데이터베이스를 사용합니다. 사용자 지정 코드 또는 확장 작성자에게 문의하여 코드에서 JOIN을 사용하지 않는지 확인하십시오.
+>사용자 지정 코드에서 Sales 및 Quote 데이터베이스의 테이블에 JOIN을 사용하는 경우 _분할 데이터베이스를 사용할 수 없습니다_. 사용자 지정 코드 또는 확장 작성자에게 문의하여 코드에서 JOIN을 사용하지 않는지 확인하십시오.
 
 이 항목에서는 다음 이름 지정 규칙을 사용합니다.
 
-- 기본 데이터베이스 이름은 입니다. `magento` 사용자 이름과 암호는 둘 다 `magento`
-- 견적 데이터베이스 이름은 입니다. `magento_quote` 사용자 이름과 암호는 둘 다 `magento_quote`
+- 기본 데이터베이스 이름은 `magento`이고 사용자 이름과 암호는 모두 `magento`입니다.
+- 인용 데이터베이스 이름은 `magento_quote`이고 사용자 이름과 암호는 모두 `magento_quote`입니다.
 
-  Quote 데이터베이스도 _체크아웃_ 데이터베이스.
+  견적 데이터베이스를 _checkout_ 데이터베이스라고도 합니다.
 
-- 판매 데이터베이스 이름은 입니다. `magento_sales` 사용자 이름과 암호는 둘 다 `magento_sales`
+- 판매 데이터베이스 이름은 `magento_sales`이고 해당 사용자 이름과 암호는 모두 `magento_sales`입니다.
 
   영업 데이터베이스를 OMS 데이터베이스라고도 합니다.
 
 >[!INFO]
 >
->이 안내서에서는 세 데이터베이스 모두 Commerce 응용 프로그램과 동일한 호스트에 있다고 가정합니다. 그러나 데이터베이스 위치와 이름을 선택할 수 있는 권한은 사용자에게 있습니다. 우리는 우리의 예제가 지침을 따르기 쉽게 만들었으면 합니다.
+>이 안내서에서는 세 개의 데이터베이스 모두 Commerce 애플리케이션과 동일한 호스트에 있다고 가정합니다. 그러나 데이터베이스 위치와 이름을 선택할 수 있는 권한은 사용자에게 있습니다. 우리는 우리의 예제가 지침을 따르기 쉽게 만들었으면 합니다.
 
-## 상거래 시스템 백업
+## Commerce 시스템 백업
 
 Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도록 현재 데이터베이스와 파일 시스템을 백업하는 것을 강력히 권장합니다.
 
 **시스템을 백업하려면**:
 
-1. Commerce 서버에 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)(으)로 Commerce 서버에 로그인하거나 (으)로 전환합니다.
 1. 다음 명령을 입력합니다.
 
    ```bash
@@ -65,7 +65,7 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
 
 이 섹션에서는 판매 및 견적 테이블에 대한 데이터베이스 인스턴스를 생성하는 방법에 대해 설명합니다.
 
-**판매 및 OMS 견적 데이터베이스를 생성하려면**:
+**판매 및 OMS 견적 데이터베이스를 만들려면**:
 
 1. 데이터베이스 서버에 사용자로 로그인합니다.
 1. MySQL 명령 프롬프트에 액세스하려면 다음 명령을 입력합니다.
@@ -74,8 +74,8 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
    mysql -u root -p
    ```
 
-1. MySQL 입력 `root` 메시지가 표시되면 사용자의 암호.
-1. 표시된 순서대로 다음 명령을 입력하여 데이터베이스 인스턴스를 생성합니다. `magento_quote` 및 `magento_sales` 사용자 이름과 암호가 동일한 경우:
+1. 메시지가 표시되면 MySQL `root` 사용자의 암호를 입력하십시오.
+1. 같은 사용자 이름과 암호를 사용하여 `magento_quote` 및 `magento_sales`(이)라는 데이터베이스 인스턴스를 만들려면 다음 명령을 표시된 순서대로 입력하십시오.
 
    ```shell
    create database magento_quote;
@@ -87,7 +87,7 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. 입력 `exit` 를 클릭하여 명령 프롬프트를 종료합니다.
+1. 명령 프롬프트를 종료하려면 `exit`을(를) 입력하십시오.
 
 1. 한 번에 하나씩 데이터베이스를 확인합니다.
 
@@ -126,11 +126,11 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- 다음 `magento_customercustomattributes_sales_flat_order` 테이블도 영향을 받습니다
+- `magento_customercustomattributes_sales_flat_order` 테이블도 영향을 받습니다
 
 >[!INFO]
 >
->이 섹션에는 특정 데이터베이스 테이블 이름이 있는 스크립트가 포함되어 있습니다. 사용자 지정을 수행했거나 사용자 지정에 대한 작업을 수행하기 전에 전체 테이블 목록을 보려면 [참조 스크립트](#reference-scripts).
+>이 섹션에는 특정 데이터베이스 테이블 이름이 있는 스크립트가 포함되어 있습니다. 사용자 지정을 수행했거나 사용자 지정에 대한 작업을 수행하기 전에 전체 테이블 목록을 보려면 [참조 스크립트](#reference-scripts)를 참조하십시오.
 
 자세한 내용은 다음을 참조하십시오.
 
@@ -139,13 +139,13 @@ Adobe은 프로세스 중에 문제가 발생하는 경우 복원할 수 있도�
 
 ### 판매 데이터베이스 SQL 스크립트 생성
 
-Commerce 서버에 로그인할 때 사용자가 액세스할 수 있는 위치에 다음 SQL 스크립트를 만듭니다. 예를 들어, 다음 계정으로 로그인하거나 명령을 실행하는 경우 `root`에서 스크립트를 만들 수 있습니다. `/root/sql-scripts` 디렉토리.
+Commerce 서버에 로그인한 사용자가 액세스할 수 있는 위치에 다음 SQL 스크립트를 만듭니다. 예를 들어 `root`(으)로 로그인하거나 명령을 실행하는 경우 `/root/sql-scripts` 디렉터리에 스크립트를 만들 수 있습니다.
 
 #### 외래 키 제거
 
 이 스크립트는 영업 데이터베이스에서 비영업 테이블을 참조하는 외래 키를 제거합니다.
 
-다음 스크립트를 만들고 다음과 같은 이름을 지정합니다 `1_foreign-sales.sql`. 바꾸기 `<your main DB name>` (데이터베이스 이름 포함)
+다음 스크립트를 만들고 `1_foreign-sales.sql`과(와) 같은 이름을 지정하십시오. `<your main DB name>`을(를) 데이터베이스의 이름으로 바꾸십시오.
 
 ```sql
 use <your main DB name>;
@@ -200,13 +200,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 이전 스크립트를 실행합니다.
 
-1. MySQL 데이터베이스에 다음으로 로그인 `root` 또는 관리 사용자:
+1. MySQL 데이터베이스에 `root` 또는 관리 사용자로 로그인합니다.
 
    ```bash
    mysql -u root -p
    ```
 
-1. 위치: `mysql>` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
+1. `mysql>` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
 
    ```shell
    source <path>/<script>.sql
@@ -218,20 +218,20 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source /root/sql-scripts/1_foreign-sales.sql
    ```
 
-1. 스크립트를 실행한 후 다음을 입력합니다. `exit`.
+1. 스크립트를 실행한 후 `exit`을(를) 입력하십시오.
 
 ### 영업 데이터 백업
 
 이 섹션에서는 별도의 판매 데이터베이스에서 복원할 수 있도록 기본 Commerce 데이터베이스에서 판매 테이블을 백업하는 방법에 대해 설명합니다.
 
-현재 다음 위치에 있는 경우: `mysql>` 프롬프트, 입력 `exit` 를 입력하여 명령 셸로 돌아갑니다.
+현재 `mysql>` 프롬프트에 있는 경우 `exit`을(를) 입력하여 명령 셸로 돌아갑니다.
 
-다음 실행 `mysqldump` 명령 셸에서 한 번에 하나씩 명령. 각 변수에서 다음을 대체합니다.
+명령 셸에서 다음 `mysqldump` 명령을 한 번에 하나씩 실행합니다. 각 변수에서 다음을 대체합니다.
 
-- `<your database root username>` 데이터베이스 루트 사용자 이름 사용
-- `<your database root user password>` 사용자 암호 사용
-- `<your main Commerce DB name>` 상거래 데이터베이스 이름 사용
-- `<path>` 쓰기 가능한 파일 시스템 경로 사용
+- 데이터베이스 루트 사용자 이름을 가진 `<your database root username>`
+- 사용자 암호가 있는 `<your database root user password>`
+- Commerce 데이터베이스 이름의 `<your main Commerce DB name>`
+- 쓰기 가능한 파일 시스템 경로가 있는 `<path>`
 
 #### 스크립트 1
 
@@ -263,7 +263,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 #### NDB 요구 사항
 
-를 사용하는 경우 [네트워크 데이터베이스(NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 클러스터:
+[NDB(네트워크 데이터베이스)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 클러스터를 사용하는 경우:
 
 1. 덤프 파일에서 테이블을 InnoDb에서 NDB 유형으로 변환:
 
@@ -295,13 +295,13 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 위치
 
-- `<your sales DB name>` (판매 데이터베이스 이름 포함)
+- `<your sales DB name>`(판매 데이터베이스 이름)입니다.
 
-  이 항목에서 샘플 데이터베이스 이름은 `magento_sales`.
+  이 항목에서 샘플 데이터베이스 이름은 `magento_sales`입니다.
 
-- `<root username>` MySQL 루트 사용자 이름 사용
-- `<root user password>` 사용자 암호 사용
-- 이전에 만든 백업 파일의 위치를 확인합니다(예: `/var/sales.sql`)
+- MySQL 루트 사용자 이름이 있는 `<root username>`
+- 사용자 암호가 있는 `<root user password>`
+- 이전에 만든 백업 파일의 위치를 확인합니다(예: `/var/sales.sql`).
 
 ## 견적 데이터베이스 구성
 
@@ -309,15 +309,15 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 >[!INFO]
 >
->이 섹션에는 특정 데이터베이스 테이블 이름이 있는 스크립트가 포함되어 있습니다. 사용자 지정을 수행했거나 사용자 지정에 대한 작업을 수행하기 전에 전체 테이블 목록을 보려면 [참조 스크립트](#reference-scripts).
+>이 섹션에는 특정 데이터베이스 테이블 이름이 있는 스크립트가 포함되어 있습니다. 사용자 지정을 수행했거나 사용자 지정에 대한 작업을 수행하기 전에 전체 테이블 목록을 보려면 [참조 스크립트](#reference-scripts)를 참조하십시오.
 
-따옴표 데이터베이스 테이블 이름 시작 문자 `quote`. 다음 `magento_customercustomattributes_sales_flat_quote` 및 `magento_customercustomattributes_sales_flat_quote_address` 테이블도 영향을 받습니다
+따옴표 데이터베이스 테이블 이름이 `quote`(으)로 시작합니다. `magento_customercustomattributes_sales_flat_quote` 및 `magento_customercustomattributes_sales_flat_quote_address` 테이블도 영향을 받습니다
 
 ### 견적 테이블에서 외래 키 삭제
 
-이 스크립트는 견적 테이블에서 비견적 테이블을 참조하는 외래 키를 제거합니다. 바꾸기 `<your main Commerce DB name>` Commerce 데이터베이스의 이름으로 바꿉니다.
+이 스크립트는 견적 테이블에서 비견적 테이블을 참조하는 외래 키를 제거합니다. `<your main Commerce DB name>`을(를) Commerce 데이터베이스의 이름으로 바꾸십시오.
 
-다음 스크립트를 만들고 다음과 같은 이름을 지정합니다 `2_foreign-key-quote.sql`:
+다음 스크립트를 만들고 `2_foreign-key-quote.sql`과(와) 같은 이름을 지정하십시오.
 
 ```sql
 use <your main DB name>;
@@ -334,7 +334,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
    mysql -u root -p
    ```
 
-1. 위치: `mysql >` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
+1. `mysql >` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
    `source <path>/<script>.sql`
 
    For example,
@@ -343,7 +343,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
    source /root/sql-scripts/2_foreign-key-quote.sql
    ```
 
-1. 스크립트가 실행된 후 을 입력합니다. `exit`.
+1. 스크립트가 실행된 후 `exit`을(를) 입력하십시오.
 
 ### 견적 테이블 백업
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB 요구 사항
 
-를 사용하는 경우 [네트워크 데이터베이스(NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 클러스터:
+[NDB(네트워크 데이터베이스)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 클러스터를 사용하는 경우:
 
 1. 덤프 파일에서 테이블을 InnoDb에서 NDB 유형으로 변환:
 
@@ -375,9 +375,9 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## 데이터베이스에서 판매 및 견적 테이블 삭제
 
-Commerce 데이터베이스의 Sales 및 Quote 테이블을 스크립팅합니다. 바꾸기 `<your main DB name>` Commerce 데이터베이스의 이름으로 바꿉니다.
+이 스크립트는 Commerce 데이터베이스의 영업 및 견적 테이블을 나타냅니다. `<your main DB name>`을(를) Commerce 데이터베이스의 이름으로 바꾸십시오.
 
-다음 스크립트를 만들고 다음과 같은 이름을 지정합니다 `3_drop-tables.sql`:
+다음 스크립트를 만들고 `3_drop-tables.sql`과(와) 같은 이름을 지정하십시오.
 
 ```sql
 use <your main DB name>;
@@ -457,7 +457,7 @@ SET foreign_key_checks = 1;
    mysql -u root -p
    ```
 
-1. 위치: `mysql>` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
+1. `mysql>` 프롬프트에서 다음과 같이 스크립트를 실행합니다.
 
    ```shell
    source <path>/<script>.sql
@@ -469,26 +469,26 @@ SET foreign_key_checks = 1;
    source /root/sql-scripts/3_drop-tables.sql
    ```
 
-1. 스크립트가 실행된 후 을 입력합니다. `exit`.
+1. 스크립트가 실행된 후 `exit`을(를) 입력하십시오.
 
 ## 배포 구성 업데이트
 
-데이터베이스를 수동으로 분할하는 마지막 단계는 Commerce의 배포 구성에 연결 및 리소스 정보를 추가하는 것입니다. `env.php`.
+데이터베이스를 수동으로 분할하는 마지막 단계는 Commerce의 배포 구성 `env.php`에 연결 및 리소스 정보를 추가하는 것입니다.
 
 배포 구성을 업데이트하려면 다음을 수행하십시오.
 
-1. Commerce 서버에 로 로그인하거나 로 전환합니다. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md).
+1. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)(으)로 Commerce 서버에 로그인하거나 (으)로 전환합니다.
 1. 배포 구성 백업:
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. 열기 `<magento_root>/app/etc/env.php` 텍스트 편집기에서 다음 섹션에서 설명한 지침을 사용하여 업데이트합니다.
+1. 텍스트 편집기에서 `<magento_root>/app/etc/env.php`을(를) 열고 다음 섹션에서 설명한 지침을 사용하여 업데이트합니다.
 
 ### 데이터베이스 연결 업데이트
 
-다음으로 시작하는 블록 찾기 `'default'` (아래) `'connection'`) 및 추가 `'checkout'` 및 `'sales'` 섹션. 샘플 값을 사이트에 적합한 값으로 바꿉니다.
+`'connection'`에서 `'default'`(으)로 시작하는 블록을 찾아 `'checkout'` 및 `'sales'` 섹션을 추가합니다. 샘플 값을 사이트에 적합한 값으로 바꿉니다.
 
 ```php
  'default' =>
@@ -529,7 +529,7 @@ SET foreign_key_checks = 1;
 
 ### 리소스 업데이트
 
-다음으로 시작하는 블록 찾기 `'resource'` 및 추가 `'checkout'` 및 `'sales'` 섹션에 다음과 같이 설명되어 있습니다.
+`'resource'`(으)로 시작하는 블록을 찾아 다음과 같이 `'checkout'` 및 `'sales'` 섹션을 추가합니다.
 
 ```php
 'resource' =>
@@ -555,16 +555,16 @@ SET foreign_key_checks = 1;
 이러한 스크립트를 사용하려면:
 
 1. 이 섹션에서 각 스크립트의 내용으로 SQL 스크립트를 만듭니다.
-1. 각 스크립트에서 `<your main DB name>` Commerce 데이터베이스의 이름으로 바꿉니다.
+1. 각 스크립트에서 `<your main DB name>`을(를) Commerce 데이터베이스 이름으로 바꾸십시오.
 
-   이 항목에서 샘플 데이터베이스 이름은 `magento`.
+   이 항목에서 샘플 데이터베이스 이름은 `magento`입니다.
 
-1. 다음에서 각 스크립트 실행 `mysql>` 다음으로 프롬프트 작성 `source <script name>`
+1. `mysql>` 프롬프트에서 각 스크립트를 `source <script name>`(으)로 실행
 1. 출력을 검사합니다.
-1. 각 스크립트의 결과를 다른 SQL 스크립트에 복사하여 파이프 문자 제거(`|`).
-1. 다음에서 각 스크립트 실행 `mysql>` 다음으로 프롬프트 작성 `source <script name>`.
+1. 각 스크립트의 결과를 다른 SQL 스크립트에 복사하여 파이프 문자(`|`)를 제거합니다.
+1. `mysql>` 프롬프트에서 각 스크립트를 `source <script name>`(으)로 실행합니다.
 
-   이 두 번째 스크립트를 실행하면 기본 상거래 데이터베이스에서 작업이 수행됩니다.
+   이 두 번째 스크립트를 실행하면 기본 Commerce 데이터베이스에서 작업이 수행됩니다.
 
 ### 외래 키(판매 테이블) 제거
 
@@ -637,7 +637,7 @@ where for_name like '<your main DB name>/%'
 
 ### 판매 테이블 삭제
 
-이 스크립트는 상거래 데이터베이스에서 판매 테이블을 삭제합니다.
+이 스크립트는 Commerce 데이터베이스에서 판매 테이블을 삭제합니다.
 
 ```sql
 use <your main DB name>;
@@ -672,4 +672,4 @@ select 'SET foreign_key_checks = 1;';
 
 ### 견적 테이블 삭제
 
-다음으로 시작하는 모든 테이블 끌어 놓기 `quote_`.
+`quote_`(으)로 시작하는 모든 테이블을 삭제합니다.

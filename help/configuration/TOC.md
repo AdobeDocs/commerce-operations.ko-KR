@@ -28,7 +28,7 @@ ht-degree: 0%
    + [시스템 설정 빌드](deployment/build-system.md)
    + [프로덕션 시스템 설정](deployment/production-system.md)
    + [파일 시스템 액세스 권한](deployment/file-system-permissions.md)
-   + 예 {#examples}
+   + 예제 {#examples}
       + [공유 구성 사용](deployment/example-shared-configuration.md)
       + [CLI 명령 사용](deployment/example-using-cli.md)
       + [환경 변수 사용](deployment/example-environment-variables.md)
@@ -37,11 +37,11 @@ ht-degree: 0%
    + [캐시 유형](cache/cache-types.md)
    + [캐시 옵션](cache/cache-options.md)
    + [L2 캐시](cache/level-two-cache.md)
-   + 레디스 {#redis}
+   + Redis {#redis}
       + [Redis 구성](cache/config-redis.md)
       + [기본 캐시에 Redis 사용](cache/redis-pg-cache.md)
       + [세션 스토리지에 Redis 사용](cache/redis-session.md)
-   + 니스 {#varnish}
+   + {#varnish} 바니시
       + [니스 개요](cache/config-varnish.md)
       + [니스 설치](cache/config-varnish-install.md)
    + [웹 서버](cache/config-varnish-server.md)
@@ -127,9 +127,9 @@ ht-degree: 0%
    + [보안 크론 PHP](security/secure-cron-php.md)
    + [보안 TXT](security/security-txt.md)
    + [재킹 사용을 클릭합니다.](security/xframe-options.md)
-+ 스토리지 {#storage}
++ 저장소 {#storage}
    + [데이터베이스 프로파일러](storage/db-profiler.md)
-   + 원격 스토리지 {#remote-storage}
+   + 원격 저장소 {#remote-storage}
       + [원격 스토리지 모듈](remote-storage/remote-storage.md)
       + [AWS S3 버킷](remote-storage/remote-storage-aws-s3.md)
       + [이미지 크기 조정](remote-storage/remote-storage-image-resize.md)
@@ -139,7 +139,7 @@ ht-degree: 0%
       + [세션 스토리지용 memcached](storage/memcached.md)
       + [CentOS에서 memcached](storage/memcache-centos.md)
       + [우분투에서 memcached](storage/memcache-ubuntu.md)
-   + 데이터베이스 분할 {#split-db}
+   + 데이터베이스 {#split-db} 분할
       + [데이터베이스 분할 개요](storage/multi-master.md)
       + [자동 구성](storage/multi-master-masterdb.md)
       + [수동 구성](storage/multi-master-manual.md)

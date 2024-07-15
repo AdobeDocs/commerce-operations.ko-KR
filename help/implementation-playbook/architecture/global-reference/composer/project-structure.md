@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 작성기 프로젝트 구조
 
-이 안내서에서는 를 설정하고 유지 관리하는 방법을 설명합니다. [개별 패키지 옵션](../examples.md#option-1-separate-packages) 글로벌 참조 아키텍처(GRA) 예제에 설명되어 있습니다.
+이 안내서에서는 GRA(전역 참조 아키텍처) 예제에 설명된 [개별 패키지 옵션](../examples.md#option-1-separate-packages)을 설정하고 유지 관리하는 방법을 설명합니다.
 
 ## 전제 조건
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - Git 저장소가 있습니다.
 - 작성기 저장소가 있습니다(이 항목에서는 개인 패키지 목록을 강조 표시함).
-- 를 미러링하도록 작성기 저장소를 구성했습니다. `repo.magento.com` 및 `packagist.org` 저장소
+- `repo.magento.com` 및 `packagist.org` 저장소를 미러링하도록 작성기 저장소를 구성했습니다.
 
 ## 기본 Git 프로젝트 저장소
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 └─ composer.lock
 ```
 
-에 다음 콘텐츠 추가 `.gitignore` 파일:
+`.gitignore` 파일에 다음 내용을 추가하십시오.
 
 ```tree
 /*
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 ## 기본 프로젝트 초기화
 
-1. 라는 Git 저장소 만들기 `project-<region/country/brand>`.
+1. Git 저장소 `project-<region/country/brand>`을(를) 만듭니다.
 
-1. 만들기 `composer.json` 및 `composer.lock` 파일:
+1. `composer.json` 및 `composer.lock` 파일 만들기:
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ ht-degree: 0%
 
 ## 모듈이 아닌 파일 저장
 
-1. 추가 `app/etc/config.xml` 파일을 Git 저장소에 저장합니다.
+1. Git 저장소에 `app/etc/config.xml` 파일을 추가합니다.
 
-   만들려는 모듈을 사용하여 다음과 같은 다른 지역 또는 브랜드별 파일을 설치할 수 있습니다. `.htaccess`, Google 또는 Bing 인증 텍스트 파일, 실행 파일 또는 Adobe Commerce 모듈에서 관리되지 않는 기타 정적 파일.
+   만들려는 모듈을 사용하여 `.htaccess`, Google 또는 Bing 인증 텍스트 파일, 실행 파일 또는 Adobe Commerce 모듈에서 관리되지 않는 기타 정적 파일과 같은 다른 지역 또는 브랜드별 파일을 설치할 수 있습니다.
 
-   사용 `magento2-component` 다음 기간 동안 주 Git 저장소에 파일을 복사하기 위한 파일 매핑을 생성하려면 패키지를 입력하십시오. `composer install` 및 `composer update` 작업.
+   `composer install` 및 `composer update` 작업 중에 기본 Git 저장소에 파일을 복사하기 위한 파일 매핑을 만들려면 `magento2-component` 형식 패키지를 사용하십시오.
 
-1. 명명 규칙을 따르는 Git 저장소 만들기 `component-environment-<region/country/brand>`:
+1. 명명 규칙 `component-environment-<region/country/brand>`을(를) 따르는 Git 저장소를 만듭니다.
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ ht-degree: 0%
    composer config -e
    ```
 
-1. 추가 `app/etc/config.php` 에서 매핑으로 파일 사용 `extra.map` 속성 `composer.json` 파일:
+1. `app/etc/config.php` 파일을 `composer.json` 파일의 `extra.map` 특성에 매핑으로 추가합니다.
 
    ```json
    {
@@ -115,7 +115,7 @@ ht-degree: 0%
    }
    ```
 
-1. 유효성 검사 `composer.json` 파일을 만들어 Git 저장소에 커밋합니다.
+1. `composer.json` 파일의 유효성을 검사하고 Git 저장소에 커밋합니다.
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ ht-degree: 0%
    git push --tags
    ```
 
-1. Composer가 `app/etc/config.php` 파일 출처: `<client>/component-environment-<region/country/brand>`.
+1. 작성기가 `<client>/component-environment-<region/country/brand>`에서 `app/etc/config.php` 파일을 복사했는지 확인하십시오.
 
 ## 코드 배포
 
@@ -211,24 +211,24 @@ ht-degree: 0%
 
 ## 다른 인스턴스 및 패키지 추가
 
-각 인스턴스(지역, 브랜드 또는 기타 고유한 Adobe Commerce 설치)는 자체 인스턴스를 가져와야 합니다 **주요 프로젝트** 인스턴스, **특정 메타패키지**, 및 **환경 구성 요소 패키지**. 다음 **GRA 메타패키지** 다음이어야 함: **공유됨** 모든 인스턴스에 적용.
+각 인스턴스(지역, 브랜드 또는 기타 고유한 Adobe Commerce 설치)는 자체 **기본 프로젝트** 인스턴스, **특정 메타패키지** 및 **환경 구성 요소 패키지**&#x200B;를 받아야 합니다. **GRA 메타패키지**&#x200B;는 모든 인스턴스에서 **공유**&#x200B;되어야 합니다.
 
 기능 패키지(예: Adobe Commerce 모듈, 테마, 언어 팩 및 라이브러리)와 서드파티 패키지는 다음 중 하나에 필요합니다.
 
-- **GRA 메타패키지**- 다음 위치에 설치 _모두_ 인스턴스
-- **인스턴스별 메타패키지**- 단일 브랜드 또는 지역에 설치
+- **GRA 메타패키지**—_모든_ 인스턴스에 설치
+- **인스턴스별 메타패키지**—단일 브랜드 또는 지역에 설치용
 
 >[!IMPORTANT]
 >
->기본 프로젝트의 패키지에 패키지가 필요하지 않음 `composer.json` 파일 위치: `main` 또는 `release` 분기.
+>`main` 또는 `release` 분기에 있는 기본 프로젝트의 `composer.json` 파일에 패키지가 필요하지 않습니다.
 
 ## 개발 준비
 
-개발의 경우 설치 `develop` 유지 관리하는 모든 모듈의 버전입니다.
+개발을 위해 유지 관리하는 모든 모듈의 `develop` 버전을 설치하십시오.
 
-분기 전략에 따라 다음을 수행할 수 있습니다. `develop`, `qa`, `uat`, 및 `main` 분기. 각 분기는 Composer에 있고 `dev-` 접두사입니다. 그래서 `develop` Composer를 통해 분기를 버전으로 요구할 수 있음 `dev-develop`.
+분기 전략에 따라 `develop`, `qa`, `uat` 및 `main` 분기가 있을 수 있습니다. 각 분기가 `dev-` 접두사가 있는 Composer에 있습니다. 따라서 Composer를 통해 `dev-develop` 버전으로 `develop` 분기가 필요할 수 있습니다.
 
-1. 만들기 `develop` 모든 모듈 및 프로젝트 저장소의 분기.
+1. 모든 모듈 및 프로젝트 저장소에 `develop` 분기를 만듭니다.
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ ht-degree: 0%
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   이전 단계에서는 다음 줄을 생성합니다. `composer.json` 파일:
+   이전 단계에서는 `composer.json` 파일에 다음 줄을 생성합니다.
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >**병합 안 함** 다음 `composer.json` 프로덕션 분기에 대한 파일 변경 사항. 의 안정적인 패키지 버전만 설치 `release` 및 `main` 분기. 다음에 대한 이러한 종속성을 정의할 수 있습니다. `qa` 분기 및 기타 주 지점이 아닌 분기.
+   >이 `composer.json`개 파일 변경 내용을 프로덕션 분기에 **병합하지 마십시오**. `release` 및 `main` 분기에 안정적인 버전의 패키지만 설치하십시오. `qa` 분기 및 다른 주 분기가 아닌 분기에 대해 이러한 종속성을 정의할 수 있습니다.

@@ -98,7 +98,7 @@ ht-degree: 1%
 
 | 모범 사례 | 설명 |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [글로벌 참조 아키텍처(GRA)](../../architecture/global-reference/examples.md) | GRA 코드 베이스를 구성하는 일반적인 방법을 이해합니다. |
+| [GRA(전역 참조 아키텍처)](../../architecture/global-reference/examples.md) | GRA 코드 베이스를 구성하는 일반적인 방법을 이해합니다. |
 
 ## 카탈로그 디자인
 
@@ -108,8 +108,8 @@ ht-degree: 1%
 | [제품 &#x200B; 구성](catalog-management.md#product-sku-limits) | 최적의 성능을 위해 제품 SKU를 구성합니다. |
 | [제품 변형 구성](catalog-management.md#product-variations) | 최적의 성능을 위해 제품 변형을 구성합니다. |
 | [제품 옵션 구성](catalog-management.md#product-options) | 최적의 성능을 위해 제품 옵션을 구성합니다. |
-| [제품 속성 &#x200B; 구성](catalog-management.md#product-attributes) | 최적의 성능을 위해 제품 속성을 구성합니다. |
-| [제품 목록의 페이지 매김 구성](catalog-management.md#product-listing-pagination) | 최적의 성능을 위한 제품 목록 페이지 매김 구성 |
+| [제품 특성 &#x200B; 구성](catalog-management.md#product-attributes) | 최적의 성능을 위해 제품 속성을 구성합니다. |
+| [제품 목록에 대한 페이지 매김 구성](catalog-management.md#product-listing-pagination) | 최적의 성능을 위한 제품 목록 페이지 매김 구성 |
 
 ## 확장
 
@@ -122,7 +122,7 @@ ht-degree: 1%
 | 모범 사례 | 설명 |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | [파트너 에스컬레이션](partner-escalation.md) | Adobe 계정 팀과 파트너 문제를 에스컬레이션할 준비를 하거나 에스컬레이션을 방지하는 방법을 알아봅니다. |
-| [결제 저장 처리](payment-processing-storage.md) | 결제 세부 정보를 안전하게 처리하고 저장합니다. |
+| [결제 저장소 처리](payment-processing-storage.md) | 결제 세부 정보를 안전하게 처리하고 저장합니다. |
 
 ## 영업 및 마케팅
 

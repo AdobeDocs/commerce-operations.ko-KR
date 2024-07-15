@@ -4,7 +4,7 @@ description: Adobe Commerce 및 Adobe Experience Manager 인프라를 조정하�
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ AEM 및 Adobe Commerce의 설정과 로드 밸런서와 같이 맞춤이 필요�
 
 시간 초과 설정의 경우 로드 중에 503 시간 초과 오류가 표시되지 않도록 설정을 검토하고 정렬해야 합니다. 검토할 몇 가지 인프라 및 애플리케이션 시간 초과 설정이 있습니다.
 
-![AEM의 시간 초과 및 연결 제한을 설명하는 번호 매기기 다이어그램](../assets/commerce-at-scale/timeout-settings.svg)
+![AEM에 대한 시간 초과 및 연결 제한을 설명하는 번호 매기기 다이어그램](../assets/commerce-at-scale/timeout-settings.svg)
 
 ## AEM 로드 밸런서
 
@@ -25,11 +25,11 @@ AEM 및 Adobe Commerce의 설정과 로드 밸런서와 같이 맞춤이 필요�
 
 1. Dispatcher가 로드 급증에서 불필요하게 일찍 서비스를 중단하지 않도록 게시자 상태 검사를 검토해야 합니다. 로드 밸런서 상태 검사의 시간 제한 설정은 게시자 시간 제한 설정과 일치해야 합니다.
 
-   ![AEM 로드 밸런서 상태 검사를 보여 주는 스크린샷](../assets/commerce-at-scale/health-checks.png)
+   ![AEM 부하 분산 장치 상태 검사를 보여 주는 스크린샷](../assets/commerce-at-scale/health-checks.png)
 
 1. Dispatcher 대상 그룹 고착성을 비활성화하고 라운드 로빈 로드 밸런싱 알고리즘을 사용할 수 있습니다. 이는 세션 고착성을 설정해야 하는 AEM 특정 기능이나 AEM 사용자 세션이 사용되지 않는다고 가정합니다. 사용자 로그인 및 세션 관리가 GraphQL을 통해 Adobe Commerce에서만 이루어진다고 가정합니다.
 
-   ![AEM 세션 고정 속성을 보여 주는 스크린샷](../assets/commerce-at-scale/session-stickiness.png)
+   ![AEM 세션 연결 특성을 보여 주는 스크린샷](../assets/commerce-at-scale/session-stickiness.png)
 
 1. 세션 연결을 활성화하면 Fastly에 대한 요청이 캐시되지 않을 수 있습니다. 기본적으로 Fastly는 Set-Cookies 헤더가 있는 페이지를 캐시하지 않습니다. Adobe Commerce은 캐시 가능한 페이지에서도 쿠키를 설정하지만(TTL > 0), 기본 Fastly VCL은 Fastly 캐싱이 작동하도록 캐시 가능한 페이지에서 해당 쿠키를 제거합니다. 페이지가 캐싱하지 않는 경우 사용 중인 사용자 지정 쿠키를 확인하고 Fastly VCL을 업로드한 다음 사이트를 다시 확인하십시오.
 
@@ -49,8 +49,8 @@ http 연결 시간 제한 및 http 소켓 시간 제한을 Fastly 시간 제한�
 
 다음 이미지는 Magento CIF GraphQL 클라이언트 구성 팩토리를 보여 줍니다. 여기에 표시된 설정은 예제일 뿐이며 사례별로 조정해야 합니다.
 
-![Commerce 통합 프레임워크 구성 설정 스크린샷](../assets/commerce-at-scale/cif-config.png)
+![Commerce integration framework 구성 설정의 스크린샷](../assets/commerce-at-scale/cif-config.png)
 
 다음 이미지는 Fastly 백엔드 구성을 보여 줍니다. 여기에 표시된 설정은 예제일 뿐이며 사례별로 조정해야 합니다.
 
-![Fastly용 Commerce 관리자 구성 설정 스크린샷](../assets/commerce-at-scale/cif-config-advanced.png)
+Fastly에 대한 Commerce 관리자 구성 설정의 ![스크린샷](../assets/commerce-at-scale/cif-config-advanced.png)

@@ -5,7 +5,7 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -14,26 +14,26 @@ ht-degree: 0%
 
 _Adobe Commerce용 B2B가 설치된 인스턴스에 사용할 수 있습니다._
 
-이 항목에서는 Commerce Enterprise B2B 확장에 대한 구성 경로를 나열합니다. 다음 [`magento app:config:dump` 명령](../cli/export-configuration.md) 공유 구성 파일에 이러한 값을 씁니다. `app/etc/config.php`: 소스 제어에 있어야 합니다.
+이 항목에서는 Commerce Enterprise B2B 확장에 대한 구성 경로를 나열합니다. [`magento app:config:dump` 명령](../cli/export-configuration.md)은(는) 이러한 값을 소스 제어에 있어야 하는 공유 구성 파일 `app/etc/config.php`에 씁니다.
 
 >[!INFO]
 >
->이 참조 목록 _전용_ Adobe Commerce용 B2B에 고유한 구성 경로. 이 확장에는 Adobe Commerce에 대한 모든 구성 경로가 포함됩니다.
+>이 참조에는 Adobe Commerce용 B2B에 고유한 _only_ 구성 경로가 나열됩니다. 이 확장에는 Adobe Commerce에 대한 모든 구성 경로가 포함됩니다.
 
 이러한 구성 경로에 대해서는 다음을 참조하십시오.
 
 - [결제 구성 경로](config-reference-payment.md)
 - [중요한 시스템별 구성 경로 참조](config-reference-sens.md)
 
-선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 다음을 참조하십시오. [환경 변수를 사용하여 구성 설정을 재정의합니다.](override-config-settings.md#environment-variables).
+선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 [환경 변수를 사용하여 구성 설정을 무시하십시오](override-config-settings.md#environment-variables).
 
 ## 일반 범주
 
-이 섹션에는 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다. **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+이 섹션에는 관리자의 **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL General]** 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
 ### B2B 기능 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+이러한 구성 값은 **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | 암호화되었습니까? | 시스템별? | 민감한? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,11 +49,11 @@ _Adobe Commerce용 B2B가 설치된 인스턴스에 사용할 수 있습니다._
 
 ## 고객 범주
 
-이 섹션에는 아래 관리자의 옵션에 사용할 수 있는 변수 이름 및 구성 경로가 나열됩니다. **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+이 섹션에는 관리자의 **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
 ### 회사 구성 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+이러한 구성 값은 **[!UICONTROL Stores]** > 설정 > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | 암호화되었습니까? | 시스템별? | 민감한? |
 |--------------|--------------|--------------|--------------|--------------|
@@ -93,7 +93,7 @@ _Adobe Commerce용 B2B가 설치된 인스턴스에 사용할 수 있습니다._
 
 ### 구매요청 목록 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **고객** > **구매요청 목록**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **고객** > **구매요청 목록**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | 암호화되었습니까? | 시스템별? | 민감한? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ _Adobe Commerce용 B2B가 설치된 인스턴스에 사용할 수 있습니다._
 
 ## 판매 범주
 
-이 섹션에는 아래 관리자의 옵션에 사용할 수 있는 변수 이름 및 구성 경로가 나열됩니다. **스토어** > 설정 > **구성** > **판매**.
+이 섹션에는 **스토어** > 설정 > **구성** > **판매**&#x200B;에서 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
 ### 영업 이메일 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **판매** > **영업 이메일**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **판매** > **판매 이메일**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | 암호화되었습니까? | 시스템별? | 민감한? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -126,7 +126,7 @@ _Adobe Commerce용 B2B가 설치된 인스턴스에 사용할 수 있습니다._
 
 ### 따옴표 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **판매** > **따옴표**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **판매** > **견적**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | 암호화되었습니까? | 시스템별? | 민감한? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ _Adobe Commerce용 B2B가 설치된 인스턴스에 사용할 수 있습니다._
 
 ## 결제 방법 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **판매** > **결제 방법**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **판매** > **결제 방법**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 >[!INFO]
 >

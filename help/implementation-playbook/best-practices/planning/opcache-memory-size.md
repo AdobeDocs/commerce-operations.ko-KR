@@ -6,14 +6,14 @@ feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 # Adobe Commerce의 OPcache 메모리 크기에 대한 우수 사례
 
-Adobe Commerce on cloud infrastructure Pro 플랜 아키텍처 2.3.x의 경우 다음을 설정하는 것이 좋습니다. `opcache.memory_consumption` 성능 저하를 방지하려면 최소 2GB를 사용해야 합니다.
+Adobe Commerce on cloud infrastructure Pro 플랜 아키텍처 2.3.x의 경우 성능 저하를 방지하려면 `opcache.memory_consumption`을(를) 2GB 이상으로 설정하는 것이 좋습니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -22,7 +22,7 @@ Adobe Commerce on cloud infrastructure Pro 플랜 아키텍처 2.3.x의 경우 �
 
 ## 메모리 구성
 
-최소 할당 **2GB** 의 메모리 [OPcache PHP 모듈](https://www.php.net/manual/en/book.opcache.php). OPcache 모듈은 `php.ini` 파일. 2048MB의 메모리를 할당하려면 `opcache.memory_consumption = 2048`.
+[OPcache PHP 모듈](https://www.php.net/manual/en/book.opcache.php)에 최소 **2GB**&#x200B;의 메모리를 할당하십시오. OPcache 모듈이 `php.ini` 파일에 구성되어 있습니다. 2048MB의 메모리를 할당하려면 `opcache.memory_consumption = 2048`을(를) 설정합니다.
 
 ## 추가 정보
 

@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # 작성기 개발
 
-이 항목에서는 그 자리에서 (의 Git 저장소로) 작성기 모듈을 개발하는 데 권장되는 접근 방식을 설명합니다. `vendor/` 디렉토리) 및 기본 Git 프로젝트에 이러한 모듈을 추가합니다.
+이 항목에서는 작성기 모듈을 바로 개발(`vendor/` 디렉터리에 Git 저장소로)하고 이러한 모듈을 기본 Git 프로젝트에 추가하는 권장 방법에 대해 설명합니다.
 
 >[!NOTE]
 >
->이 지침은 주로 다음에 적용됩니다. [글로벌 참조 아키텍처(GRA)](../overview.md) 프로젝트.
+>이 지침은 주로 [GRA(전역 참조 아키텍처)](../overview.md) 프로젝트에 적용됩니다.
 
 ## 개발 분기 준비
 
 1. 주 Git 저장소에서 개발 분기를 생성하거나 체크아웃합니다.
 1. 유지 관리하는 각 모듈에 대한 개발 버전이 필요합니다.
 
-   이 예에서 기본 Git 저장소의 모든 분기는 Composer 패키지 버전을 나타냅니다. 이 시나리오에서 작성기 버전에 권장되는 이름 지정 규칙은 다음과 같습니다. `dev-` 뒤에 지점 이름이 옵니다. For example:
+   이 예에서 기본 Git 저장소의 모든 분기는 Composer 패키지 버전을 나타냅니다. 이 시나리오에서 작성기 버전에 권장되는 이름 지정 규칙은 `dev-`이고 뒤에 분기 이름이 옵니다. For example:
 
    - `dev-develop`
    - `dev-qa`
@@ -35,25 +35,25 @@ ht-degree: 0%
    composer require client/module-example:dev-develop
    ```
 
-1. 다른 Composer 패키지에 특정 버전의 모듈이 필요한 경우(예: `client/module-example 1.0.12`), 별칭을 사용하여 설치합니다.
+1. 다른 Composer 패키지에 특정 버전의 모듈(예: `client/module-example 1.0.12`)이 필요한 경우 별칭을 사용하여 설치하십시오.
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   의 경우 `qa` 분기, 바꾸기 `dev-develop` 포함 `dev-qa`.
+   `qa` 분기의 경우 `dev-develop`을(를) `dev-qa`(으)로 바꾸십시오.
 
 ## 패키지를 Git 저장소로 변환
 
-기본적으로 패키지에는 `.git/` 디렉토리. 작성기는 사전 빌드된 작성기 패키지를 사용하는 대신 Git에서 패키지를 체크아웃할 수 있습니다. 이 접근 방식의 장점은 개발 중에 패키지를 쉽게 수정할 수 있다는 것입니다.
+기본적으로 패키지에는 `.git/` 디렉터리가 없습니다. 작성기는 사전 빌드된 작성기 패키지를 사용하는 대신 Git에서 패키지를 체크아웃할 수 있습니다. 이 접근 방식의 장점은 개발 중에 패키지를 쉽게 수정할 수 있다는 것입니다.
 
-1. 에서 모듈 제거 `vendor/` 디렉토리.
+1. `vendor/` 디렉터리에서 모듈을 제거합니다.
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. 를 사용하여 모듈을 다시 설치합니다. [지정된 Git 소스](#prepare-a-development-branch).
+1. [지정된 Git 소스](#prepare-a-development-branch)를 사용하여 모듈을 다시 설치합니다.
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 개발로 기본 프로젝트 업데이트
 
-를 수정하여 기본 Git 저장소 업데이트 `composer.lock` 파일. 새 모듈인 경우 활성화합니다.
+`composer.lock` 파일을 수정하여 기본 Git 저장소를 업데이트합니다. 새 모듈인 경우 활성화합니다.
 
 ```bash
 # to update your packages and all dependencies of the package

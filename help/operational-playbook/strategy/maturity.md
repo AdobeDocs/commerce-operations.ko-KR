@@ -4,7 +4,7 @@ description: 이 성숙도 모델을 기반으로 비즈니스의 현재 단계�
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 다음 다이어그램은 성숙도 레벨의 다양한 요구를 요약합니다.
 
-![성숙도 수준 다이어그램에 걸친 요구 사항](../../assets/playbooks/maturity-levels.png)
+![성숙도 수준 다이어그램에 필요한 항목](../../assets/playbooks/maturity-levels.png)
 
 ## 완성도 수준
 

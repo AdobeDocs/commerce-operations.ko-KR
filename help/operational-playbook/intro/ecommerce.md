@@ -4,7 +4,7 @@ description: 전자 상거래 설명
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 - 전자 상거래 상공은 벽돌과 회반죽에 비해 낮다
 - 온라인 상점은 연중무휴 영업합니다
 - 즉시 구매
-- 개인화 및 맞춤화된 사용자 경험
+- Personalization 및 사용자 지정 사용자 경험
 - 글로벌 고객 도달 가능성
 
 ### 단점
@@ -73,6 +73,6 @@ ht-degree: 0%
 
 ![상거래 기술의 가치](../../assets/playbooks/commerce-tech.png)
 
-## 상거래 산업
+## Commerce 인더스트리
 
 ![상거래 기술의 가치](../../assets/playbooks/commerce-industries.png)

@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 스토리보드 및 속도
 
-![예제 Kanban 보드](../../assets/playbooks/kanban-board-chart.svg)
+![Kanban 보드 예제](../../assets/playbooks/kanban-board-chart.svg)
 
 ## 스프린트 및 릴리스 번다운
 

@@ -12,9 +12,9 @@ MariaDB 10.4 및 10.6에서 리인덱싱하는 것은 이전 MariaDB 또는 MySQ
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-MariaDB 10.6으로 업그레이드한 후 인덱싱과 관련이 없는 성능 저하가 발생하는 경우 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 설정. 예를 들어, `--query-cache-type=ON`.
+MariaDB 10.6으로 업그레이드한 후 인덱싱과 관련이 없는 성능 저하가 발생하는 경우 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 설정을 사용하도록 설정하는 것이 좋습니다. 예: `--query-cache-type=ON`.
 
-클라우드 인프라 프로젝트에서 Adobe Commerce을 업그레이드하기 전에 MariaDB를 업그레이드해야 할 수도 있습니다([mariaDB 업그레이드 우수 사례 를 참조하십시오.](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)).
+클라우드 인프라 프로젝트에서 Adobe Commerce을 업그레이드하기 전에 MariaDB를 업그레이드해야 할 수도 있습니다([MariaDB 업그레이드 모범 사례](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md) 참조).
 
 For example:
 

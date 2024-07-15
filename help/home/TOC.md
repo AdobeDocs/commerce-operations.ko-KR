@@ -18,7 +18,7 @@ ht-degree: 27%
 - [보안 및 규정 준수](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [구현 플레이북](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
 - [운영 플레이북](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [규모에 맞는 상거래](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- 규모에 맞는 [Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
 - [설치(온-프레미스)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [구성](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [업그레이드](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)

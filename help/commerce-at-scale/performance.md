@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 AEM Dispatcher는 빠르고 동적인 환경을 제공하는 데 도움이 되는 역방향 프록시입니다. Apache HTTP Server와 같은 정적 HTML 서버의 일부로 작동하며 가능한 한 많은 사이트 콘텐츠를 정적 리소스 형태로 저장(또는 &quot;캐싱&quot;)하는 것을 목적으로 합니다. 이 접근 방식은 AEM 페이지 렌더링 기능과 Adobe Commerce GraphQL 서비스에 최대한 액세스해야 하는 필요성을 최소화하는 데 목적이 있습니다. 많은 페이지를 정적 HTML, CSS 및 JS로 제공하여 사용자에게 성능 이점을 제공하고 환경의 인프라 요구 사항을 줄입니다. 사용자 간에 동일하게 반복될 수 있는 모든 페이지 또는 쿼리는 캐싱을 위해 고려되어야 합니다.
 
-다음 섹션은 CIF/Adobe Commerce 환경에서 AEM에 효과적으로 캐싱을 활성화하기 위해 검토해야 하는 권장 기술 포커스 영역을 개략적으로 보여 줍니다.
+다음 섹션은 CIF/Adobe Commerce 환경에서 AEM에 효과적으로 캐싱을 활성화하기 위해 검토할 권장 기술 포커스 영역을 높은 수준에서 보여 줍니다.
 
 ## AEM dispatchers를 기반으로 한 TTL 기반 캐싱
 
 디스패처에 가능한 한 많은 사이트를 캐시하는 것은 모든 AEM 프로젝트에 모범 사례입니다. 시간 기반 캐시 무효화를 사용하면 지정된 제한된 시간 동안 서버측에서 렌더링된 CIF 페이지를 캐시합니다. 설정된 시간이 만료되면 다음 요청은 AEM 게시자와 Adobe Commerce GraphQL에서 페이지를 다시 빌드하고 다음 무효화될 때까지 Dispatcher 캐시에 다시 저장합니다.
 
-TTL 캐싱 기능은 ACS AEM Commons 패키지 내에서 &quot;Dispatcher TTL&quot; 구성 요소를 사용하고 dispatcher.any 구성 파일에서 /enableTTL &quot;1&quot;을 설정하여 AEM에서 구성할 수 있습니다.
+TTL 캐싱 기능은 AEM에서 ACS AEM Commons 패키지 내에서 &quot;Dispatcher TTL&quot; 구성 요소를 사용하고 dispatcher.any 구성 파일에서 /enableTTL &quot;1&quot;을 설정하여 구성할 수 있습니다.
 
 활성화되면 Dispatcher는 백엔드의 응답 헤더를 평가하고 Cache-Control 최대 기간 또는 만료 날짜가 포함된 경우 캐시 파일 옆에 수정 시간이 만료 날짜와 동일한 보조 빈 파일이 생성됩니다. 캐시된 파일이 수정 시간 이후에 요청되면 백엔드에서 자동으로 다시 요청됩니다. 비즈니스 이해 당사자가 제품 업데이트 지연(TTL)을 승인하고 수락하면 효과적인 캐싱 메커니즘을 제공하여 수동 개입이나 유지 관리가 필요하지 않습니다.
 
@@ -29,7 +29,7 @@ TTL 캐싱 기능은 ACS AEM Commons 패키지 내에서 &quot;Dispatcher TTL&qu
 
 위의 Dispatcher TTL 접근 방식은 요청과 게시자에 대한 로드를 크게 줄여주지만 변경할 가능성이 매우 낮은 일부 자산이 있으므로 사용자의 브라우저에서 로컬로 관련 파일을 캐싱하여 Dispatcher에 대한 요청도 줄일 수 있습니다. 예를 들어 사이트 템플릿의 사이트에 있는 모든 페이지에 표시되는 사이트 로고는 Dispatcher에 매번 요청할 필요가 없습니다. 대신 사용자의 브라우저 캐시에 저장할 수 있습니다. 각 페이지 로드에 대한 대역폭 요구 사항 감소는 사이트 응답성 및 페이지 로드 시간에 큰 영향을 줍니다.
 
-브라우저 수준에서 캐싱은 일반적으로 &quot;Cache-Control: max-age=&quot; 응답 헤더를 통해 수행됩니다. maxage 설정은 사이트에서 파일 &quot;다시 유효성 검사&quot; 또는 요청을 다시 시도하기 전까지 파일을 캐시해야 하는 시간(초)을 브라우저에 알려줍니다. 이러한 캐시 max-age 개념을 일반적으로 &quot;캐시 만료&quot; 또는 TTL(&quot;Time to Live&quot;)이라고 합니다. 규모에 맞게 상거래 경험 제공 - Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+브라우저 수준에서 캐싱은 일반적으로 &quot;Cache-Control: max-age=&quot; 응답 헤더를 통해 수행됩니다. maxage 설정은 사이트에서 파일 &quot;다시 유효성 검사&quot; 또는 요청을 다시 시도하기 전까지 파일을 캐시해야 하는 시간(초)을 브라우저에 알려줍니다. 이러한 캐시 max-age 개념을 일반적으로 &quot;캐시 만료&quot; 또는 TTL(&quot;Time to Live&quot;)이라고 합니다. 규모에 맞춰 상거래 경험 제공 - Adobe Experience Manager, Commerce integration framework, Adobe Commerce 7
 
 클라이언트의 브라우저에서 캐시되도록 설정할 수 있는 AEM/CIF/Adobe Commerce 사이트의 일부 영역은 다음과 같습니다.
 
@@ -38,9 +38,9 @@ TTL 캐싱 기능은 ACS AEM Commons 패키지 내에서 &quot;Dispatcher TTL&qu
 - CSS 파일
 - 모든 사이트 JavaScript 파일 - CIF JavaScript 파일 포함
 
-## Dispatcher 통계파일레벨 비활성화 유예 기간 최적화
+## Dispatcher statfilelevel anbd 유예 기간 최적화
 
-기본 Dispatcher 구성은 /statfilelevel &quot;0&quot; 설정을 사용합니다. 즉, 단일 &quot;.stat&quot; 파일이 htdocs 디렉터리(문서 루트 디렉터리)의 루트에 배치됩니다. AEM의 페이지나 파일이 변경되면 이 단일 통계 파일의 수정 시간이 변경 시간으로 업데이트됩니다. 시간이 리소스의 수정 시간보다 최신인 경우 Dispatcher는 모든 리소스가 무효화된 것으로 간주하고 무효화된 리소스에 대한 후속 요청은 게시 인스턴스에 대한 호출을 트리거합니다. 따라서 기본적으로 이 설정을 사용하면 모든 활성화가 전체 캐시를 무효화합니다.
+기본 Dispatcher 구성은 /statfilelevel &quot;0&quot; 설정을 사용합니다. 즉, 단일 &quot;.stat&quot; 파일이 htdocs 디렉터리(문서 루트 디렉터리)의 루트에 배치됩니다. AEM의 페이지나 파일이 변경되면 이 단일 통계 파일의 수정 시간이 변경 시간으로 업데이트됩니다. 시간이 리소스의 수정 시간보다 최신인 경우 Dispatcher는 모든 리소스가 무효화된 것으로 간주하고 무효화된 리소스에 대한 후속 요청은 Publish 인스턴스에 대한 호출을 트리거합니다. 따라서 기본적으로 이 설정을 사용하면 모든 활성화가 전체 캐시를 무효화합니다.
 
 모든 사이트, 특히 부하가 큰 상거래 사이트의 경우, 전체 사이트 구조가 단일 페이지 업데이트만으로 무효화되려면 AEM Publish 계층에 불필요한 부하가 걸립니다.
 
@@ -68,11 +68,12 @@ content/ecommerce/us/en/products/product-page.html
 
 >[!NOTE]
 >
-> 이 주제에 대한 자세한 내용은 [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) GitHub 리포지토리.
+> 이 주제에 대한 자세한 읽기는 [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) GitHub 리포지토리에서 사용할 수 있습니다.
 
 ## CIF - 구성 요소를 통한 GraphQL 캐싱
 
-AEM 내의 개별 구성 요소를 캐시되도록 설정할 수 있습니다. 즉, Adobe Commerce에 대한 GraphQL 요청을 한 번 호출한 다음 구성된 시간 제한까지 후속 요청을 AEM 캐시에서 검색하고 Adobe Commerce에 더 이상 로드하지 않습니다. 예제는 모든 페이지에 표시되는 카테고리 트리를 기반으로 하는 사이트 탐색과 패싯된 검색 기능 내의 옵션입니다. 이는 Adobe Commerce에서 리소스를 많이 사용하는 쿼리를 빌드해야 하는 두 가지 영역이지만 정기적으로 변경되지는 않으므로 캐싱에 적합합니다. 이러한 방식으로, 예를 들어 게시자가 PDP 또는 PLP를 다시 작성하는 경우에도 탐색 빌드에 대한 리소스 집약적인 GraphQL 요청이 Adobe Commerce에 도달하지 않고 AEM CIF의 GraphQL 캐시에서 검색할 수 있습니다.
+AEM 내의 개별 구성 요소는 캐시되도록 설정할 수 있습니다. 즉, GraphQL에서 Adobe을 요청합니다
+Commerce을 한 번 호출한 다음 구성된 시간 제한까지 후속 요청을 AEM 캐시에서 검색하고 Adobe Commerce에 추가 로드를 배치하지 않습니다. 예제는 모든 페이지에 표시되는 카테고리 트리를 기반으로 하는 사이트 탐색과 패싯된 검색 기능 내의 옵션입니다. 이는 Adobe Commerce에서 리소스를 많이 사용하는 쿼리를 빌드해야 하는 두 가지 영역이지만 정기적으로 변경되지는 않으므로 캐싱에 적합합니다. 예를 들어 게시자가 PDP 또는 PLP를 재작성하는 경우에도 탐색 빌드에 대한 리소스 집약적인 GraphQL 요청이 Adobe Commerce에 도달하지 않고 AEM CIF의 GraphQL 캐시에서 검색할 수 있습니다.
 
 아래 예제는 탐색 구성 요소가 사이트의 모든 페이지에서 동일한 GraphQL 쿼리를 보내기 때문에 캐시되는 것입니다. 아래 요청은 탐색 구조에 대해 10분 동안 지난 100개의 항목을 캐시합니다.
 
@@ -88,7 +89,8 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 캐시가 &#39;히트&#39;가 되고 Adobe Commerce에 대한 반복 호출이 수행되지 않도록 하려면 모든 사용자 지정 http 헤더와 변수를 포함한 요청이 정확히 일치해야 합니다. 일단 설정되면 이 캐시를 수동으로 무효화하는 쉬운 방법이 없다는 점에 유의해야 합니다. 따라서 Adobe Commerce에 새 카테고리가 추가되면 위의 캐시에 설정된 만료 시간이 만료되고 GraphQL 요청이 새로 고쳐질 때까지 탐색에 표시되지 않을 수 있습니다. 검색 패싯에 대해서도 동일합니다. 그러나 이 캐싱을 통해 얻을 수 있는 성능 이점을 고려한다면 일반적으로 이는 적절한 대안입니다.
 
-위의 캐싱 옵션은 &quot;GraphQL Client Configuration Factory&quot;의 AEM OSGi 구성 콘솔을 사용하여 설정할 수 있습니다. 각 캐시 구성 항목은 다음 형식으로 지정할 수 있습니다.
+위의 캐싱 옵션은 &quot;GraphQL Client&quot;의 AEM OSGi 구성 콘솔을 사용하여 설정할 수 있습니다
+Configuration Factory&quot;. 각 캐시 구성 항목은 다음 형식으로 지정할 수 있습니다.
 
 ```
 * NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
@@ -100,7 +102,7 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 ## 하이브리드 캐싱 - 캐시된 Dispatcher 페이지 내의 클라이언트측 GraphQL 요청
 
-또한 페이지의 캐싱에 대한 하이브리드 접근 방식이 가능합니다. CIF 페이지에는 항상 고객의 브라우저에서 직접 Adobe Commerce의 최신 정보를 요청하는 구성 요소가 포함될 수 있습니다. 이 기능은 예를 들어 PDP 내의 제품 가격과 같은 실시간 정보를 사용하여 최신 상태로 유지해야 하는 템플릿 내의 특정 페이지 영역에 유용합니다. 동적 가격 일치로 인해 가격이 자주 변경되는 경우 해당 정보는 Dispatcher에 캐시되지 않도록 구성할 수 있으며, 오히려 AEM CIF 웹 구성 요소가 있는 GraphQL API를 통해 직접 Adobe Commerce에서 고객의 브라우저에서 클라이언트측에서 가격을 가져올 수 있습니다.
+페이지 캐싱에 대한 하이브리드 접근 방법도 가능합니다. CIF 페이지에는 항상 고객의 브라우저에서 직접 Adobe Commerce의 최신 정보를 요청하는 구성 요소가 포함될 수 있습니다. 이 기능은 예를 들어 PDP 내의 제품 가격과 같은 실시간 정보를 사용하여 최신 상태로 유지해야 하는 템플릿 내의 특정 페이지 영역에 유용합니다. 동적 가격 일치로 인해 가격이 자주 변경되는 경우 해당 정보는 Dispatcher에 캐시되지 않도록 구성할 수 있으며, 대신 AEM CIF 웹 구성 요소가 포함된 GraphQL API를 통해 직접 Adobe Commerce에서 고객의 브라우저에서 클라이언트측에서 가격을 가져올 수 있습니다.
 
 AEM 구성 요소 설정 을 통해 구성할 수 있습니다. 제품 목록 페이지의 가격 정보에 대해 페이지 설정에서 제품 목록 구성 요소를 선택하고 &quot;가격 로드&quot; 옵션을 선택하여 제품 목록 템플릿에서 구성할 수 있습니다. 동일한 방식이 재고 수준에 적용됩니다.
 
@@ -128,7 +130,7 @@ gclid 및 fbclid는 광고를 클릭하는 모든 사용자에 대해 변경되�
 
 >[!NOTE]
 >
->설정의 중요성에 대한 추가 읽기 `ignoreUrlParams` 다음에서 사용할 수 있습니다. [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub 리포지토리.
+>`ignoreUrlParams` 설정의 중요성에 대한 자세한 내용은 [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub 리포지토리에서 확인할 수 있습니다.
 
 따라서 페이지의 HTML 구조를 변경하는 GET 매개 변수가 사용되는 경우를 제외하고 &quot;ignoreUrlParams&quot;에서 기본적으로 모든 매개 변수를 무시하도록 구성해야 합니다. 예를 들어 검색어가 URL에 GET 매개 변수로 포함되어 있는 검색 페이지를 사용하면 됩니다. 이 경우 gclid, fbclid 및 광고 채널에서 사용 중인 기타 추적 매개 변수와 같은 매개 변수를 무시하도록 ignoreUrlParams를 수동으로 구성해야 일반 사이트 작업에 필요한 GET 매개 변수는 영향을 받지 않습니다.
 

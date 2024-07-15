@@ -4,7 +4,7 @@ description: 기본 지표를 수용하여 데이터 중심의 결정을 내릴 
 exl-id: 5b946cce-25cd-4a69-b565-235acb16cad4
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---

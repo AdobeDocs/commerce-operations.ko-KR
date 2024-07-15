@@ -5,7 +5,7 @@ feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 0%
 정적 보기 파일을 배포할 때 사용 가능한 세 가지 전략 중 하나를 선택할 수 있습니다. 각 CSR은 다양한 사용 사례에 대해 최적의 배포 결과를 제공합니다.
 
 - [표준](#standard-strategy): 일반 배포 프로세스입니다.
-- [빠름](#quick-strategy) (_기본값_): 두 개 이상의 로케일에 대한 파일을 배포할 때 배포에 필요한 시간을 최소화합니다.
-- [콤팩트](#compact-strategy): 게시된 보기 파일에서 사용하는 공간을 최소화합니다.
+- [빠른](#quick-strategy)(_기본_): 두 개 이상의 로케일에 대한 파일을 배포할 때 배포에 필요한 시간을 최소화합니다.
+- [작게](#compact-strategy): 게시된 보기 파일에서 사용하는 공간을 최소화합니다.
 
 다음 섹션에서는 각 전략의 구현 세부 사항 및 기능에 대해 설명합니다.
 
 ## 표준 전략
 
-Standard 전략을 사용하면 모든 패키지에 대한 모든 정적 보기 파일이 배포됩니다. 즉,에서 처리합니다. [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+표준 전략을 사용하면 모든 패키지에 대한 모든 정적 보기 파일이 배포됩니다. 즉, [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php)에서 처리합니다.
 
-자세한 내용은 [정적 보기 파일 배포](../cli/static-view-file-deployment.md).
+자세한 내용은 [정적 보기 파일 배포](../cli/static-view-file-deployment.md)를 참조하십시오.
 
 ## 빠른 전략
 
@@ -38,15 +38,15 @@ Standard 전략을 사용하면 모든 패키지에 대한 모든 정적 보기 
 
 >[!INFO]
 >
->작성자: _유사_&#x200B;는 로케일, 테마 또는 영역에 독립적인 파일을 의미합니다. 이러한 파일에는 CSS, 이미지 및 글꼴이 포함될 수 있습니다.
+>_유사_&#x200B;이면 로케일, 테마 또는 영역에 독립적인 파일을 의미합니다. 이러한 파일에는 CSS, 이미지 및 글꼴이 포함될 수 있습니다.
 
 이 방법을 사용하면 많은 파일이 복제되더라도 여러 로케일에 필요한 배포 시간을 최소화할 수 있습니다.
 
 ## 콤팩트 전략
 
-컴팩트 전략은 유사한 파일을에 저장하여 파일 중복을 방지합니다. `base` 하위 디렉토리.
+압축 전략은 유사한 파일을 `base` 하위 디렉터리에 저장하여 파일 중복을 방지합니다.
 
-가장 최적화된 결과를 위해 가능한 유사성에 대한 세 가지 범위(영역, 테마 및 로케일)가 할당됩니다. 다음 `base` 이러한 범위의 모든 조합에 대해 하위 디렉터리가 만들어집니다.
+가장 최적화된 결과를 위해 가능한 유사성에 대한 세 가지 범위(영역, 테마 및 로케일)가 할당됩니다. 이러한 범위의 모든 조합에 대해 `base` 하위 디렉터리가 만들어집니다.
 
 파일은 다음 패턴에 따라 이러한 하위 디렉토리에 배포됩니다.
 
@@ -66,11 +66,11 @@ Standard 전략을 사용하면 모든 패키지에 대한 모든 정적 보기 
 - `map.php`
 - `requirejs-map.js`
 
-다음 `map.php` 파일 사용 주체: [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) 를 클릭하여 올바른 URL을 작성합니다.
+[`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php)이(가) 올바른 URL을 빌드하는 데 `map.php` 파일을 사용합니다.
 
-다음 `requirejs-map.js` 은(는) 다음에 의해 사용됩니다. `baseUrlResolver` RequireJS용 플러그인.
+`requirejs-map.js`은(는) RequireJS에 대한 `baseUrlResolver` 플러그인에서 사용됩니다.
 
-예 `map.php`:
+`map.php`의 예:
 
 ```php?start_inline=1
 return [
@@ -87,7 +87,7 @@ return [
 ];
 ```
 
-예 `requirejs-map.js`:
+`requirejs-map.js`의 예:
 
 ```js
 require.config({
@@ -101,6 +101,6 @@ require.config({
 
 ## 확장 개발자를 위한 팁
 
-정적 보기 파일에 대한 URL을 작성하려면 [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+정적 보기 파일에 대한 URL을 작성하려면 [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244)을(를) 사용합니다.
 
 페이지 렌더링 중에 정적 파일을 찾을 수 없고 표시되지 않는 문제를 방지하기 위해 URL 연결을 사용하지 마십시오.

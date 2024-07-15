@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->최신 버전의 Adobe Commerce은 PHP 8.1 이상이 필요합니다. 다음을 참조하십시오 [시스템 요구 사항](../system-requirements.md) 지원되는 모든 버전의 PHP용.
+>최신 버전의 Adobe Commerce은 PHP 8.1 이상이 필요합니다. 지원되는 모든 PHP 버전에 대해서는 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
 
-클라우드 구성 지침은 다음을 참조하십시오. [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 다음에서 _클라우드 인프라의 상거래_ 가이드.
+클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)을 참조하십시오.
 
 ## PHP 프로세스 제어
 
@@ -65,7 +65,7 @@ Adobe Commerce에는 특정 PHP 확장명이 필요합니다. 다음 목록은 �
 
 >[!WARNING]
 >
->PHP 7.4.20을 사용하는 경우 `pcre.jit=0` (으)로 `php.ini` 파일. 이것은 PHP를 이해합니다 [버그](https://bugs.php.net/bug.php?id=81101) CSS를 로드할 수 없습니다.
+>PHP 7.4.20을 사용하는 경우 `php.ini` 파일에서 `pcre.jit=0`을(를) 설정합니다. CSS를 로드할 수 없는 PHP [bug](https://bugs.php.net/bug.php?id=81101)을(를) 알아봅니다.
 
 - PHP에 대한 시스템 시간대를 설정합니다. 그렇지 않으면 설치 중에 다음과 같은 오류가 표시되고 cron과 같은 시간 관련 작업이 작동하지 않을 수 있습니다.
 
@@ -79,20 +79,20 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
    - 코드 컴파일 또는 정적 자산 배포, `1G`
    - 디버깅, `2G`
-   - 테스트, `~3-4G`
+   - 테스트 중, `~3-4G`
 
-- PHP 값 늘리기 `realpath_cache_size` 및 `realpath_cache_ttl` 권장 설정:
+- PHP `realpath_cache_size` 및 `realpath_cache_ttl`의 값을 권장 설정으로 늘립니다.
 
   ```conf
   realpath_cache_size=10M
   realpath_cache_ttl=7200
   ```
 
-  이러한 설정을 사용하면 PHP 프로세스가 페이지 로드 시 경로를 조회하는 대신 파일에 경로를 캐시할 수 있습니다. 다음을 참조하십시오 [성능 조정](https://www.php.net/manual/en/ini.core.php) PHP 설명서에서 참조하십시오.
+  이러한 설정을 사용하면 PHP 프로세스가 페이지 로드 시 경로를 조회하는 대신 파일에 경로를 캐시할 수 있습니다. PHP 설명서에서 [성능 조정](https://www.php.net/manual/en/ini.core.php)을 참조하십시오.
 
-- 사용 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments): Adobe Commerce 2.1 이상에 필요합니다.
+- Adobe Commerce 2.1 이상에 필요한 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)을(를) 사용하도록 설정합니다.
 
-  Adobe은 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 성능상의 이유로. OPcache는 많은 PHP 배포에서 사용할 수 있습니다.
+  Adobe 성능상의 이유로 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php)을(를) 사용하도록 설정하는 것이 좋습니다. OPcache는 많은 PHP 배포에서 사용할 수 있습니다.
 
   Adobe Commerce 2.1 이상 버전은 코드 생성에 PHP 코드 주석을 사용합니다.
 
@@ -104,9 +104,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 이 섹션에서는 필요한 설정을 업데이트하는 데 필요한 구성 파일을 찾는 방법에 대해 설명합니다.
 
-### 찾기 `php.ini` 구성 파일
+### `php.ini` 구성 파일 찾기
 
-웹 서버 구성을 찾으려면 [`phpinfo.php` 파일](optional-software.md#create-phpinfophp) 웹 브라우저에서 다음을 찾습니다. `Loaded Configuration File` 다음과 같이:
+웹 서버 구성을 찾으려면 웹 브라우저에서 [`phpinfo.php` 파일](optional-software.md#create-phpinfophp)을 실행하고 다음과 같이 `Loaded Configuration File`을(를) 찾으십시오.
 
 ![PHP 정보 페이지](../../assets/installation/config_phpini-webserver.png)
 
@@ -118,19 +118,19 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->하나밖에 없다면 `php.ini` 파일, 파일을 변경합니다. 두 개 있으면 `php.ini` 파일, 변경 *모두* 파일. 이렇게 하지 않으면 예기치 않은 성능이 발생할 수 있습니다.
+>`php.ini` 파일이 하나만 있는 경우 해당 파일을 변경하십시오. `php.ini`개 파일이 두 개 있는 경우 *둘 다*&#x200B;개 파일을 변경하십시오. 이렇게 하지 않으면 예기치 않은 성능이 발생할 수 있습니다.
 
 ### OPcache 구성 설정 찾기
 
-PHP OPcache 설정은 일반적으로 다음 중 하나에 있습니다 `php.ini` 또는 `opcache.ini`. 위치는 운영 체제와 PHP 버전에 따라 달라질 수 있습니다. OPcache 구성 파일에는 `opcache` 섹션 또는 설정 `opcache.enable`.
+PHP OPcache 설정은 일반적으로 `php.ini` 또는 `opcache.ini`에 있습니다. 위치는 운영 체제와 PHP 버전에 따라 달라질 수 있습니다. OPcache 구성 파일에 `opcache` 섹션이나 `opcache.enable` 같은 설정이 있을 수 있습니다.
 
 다음 지침을 사용하여 찾습니다.
 
 - Apache 웹 서버:
 
-  Apache가 있는 Ubuntu의 경우, OPcache 설정은 일반적으로 `php.ini` 파일.
+  Apache가 있는 Ubuntu의 경우, OPcache 설정은 일반적으로 `php.ini` 파일에 있습니다.
 
-  Apache 또는 nginx가 있는 CentOS의 경우 OPcache 설정은 일반적으로 `/etc/php.d/opcache.ini`
+  Apache 또는 nginx가 있는 CentOS의 경우 OPcache 설정은 일반적으로 `/etc/php.d/opcache.ini`에 있습니다.
 
   그렇지 않은 경우 다음 명령을 사용하여 찾습니다.
 
@@ -140,14 +140,14 @@ PHP OPcache 설정은 일반적으로 다음 중 하나에 있습니다 `php.ini
 
 - nginx 웹 서버(PHP-FPM 포함): `/etc/php/8.1/fpm/php.ini`
 
-두 개 이상 있으면 `opcache.ini`, 모든 을 수정합니다.
+`opcache.ini`이(가) 두 개 이상인 경우 모두 수정하십시오.
 
 ## PHP 옵션을 설정하는 방법
 
 PHP 옵션을 설정하려면 다음을 수행합니다.
 
-1. 열기 `php.ini` 텍스트 편집기에서.
-1. 사용 가능한 시간대에서 서버 시간대 찾기 [시간대 설정](https://www.php.net/manual/en/timezones.php)
+1. 텍스트 편집기에서 `php.ini`을(를) 엽니다.
+1. 사용 가능한 [표준 시간대 설정](https://www.php.net/manual/en/timezones.php)에서 서버의 표준 시간대를 찾습니다
 1. 다음 설정을 찾아 필요한 경우 주석 처리를 제거합니다.
 
    ```conf
@@ -156,7 +156,7 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 
 1. 2단계에서 찾은 시간대 설정을 추가합니다.
 
-1. 값 변경 `memory_limit` 이 섹션의 시작 부분에서 권장되는 값 중 하나를 사용합니다.
+1. `memory_limit`의 값을 이 섹션의 시작 부분에서 권장되는 값 중 하나로 변경합니다.
 
    For example,
 
@@ -164,7 +164,7 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
    memory_limit=2G
    ```
 
-1. 추가 또는 업데이트 `realpath_cache` 다음 값과 일치하는 구성:
+1. 다음 값과 일치하도록 `realpath_cache` 구성을 추가하거나 업데이트하십시오.
 
    ```conf
    ;
@@ -180,24 +180,24 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 
 1. 변경 사항을 저장하고 텍스트 편집기를 종료합니다.
 
-1. 다른 항목 열기 `php.ini` (다른 경우) 및에서 동일한 변경을 수행합니다.
+1. 다른 `php.ini`을(를) 열고 같은 변경 내용을 적용합니다.
 
 ## OPcache 옵션 설정
 
-설정 `opcache.ini` 옵션:
+`opcache.ini` 옵션을 설정하려면:
 
 1. 텍스트 편집기에서 OPcache 구성 파일을 엽니다.
 
-   - `opcache.ini` (CentOS)
-   - `php.ini` (우분투)
-   - `/etc/php/8.1/fpm/php.ini` (nginx 웹 서버(CentOS 또는 Ubuntu))
+   - `opcache.ini`(CentOS)
+   - `php.ini`(Ubuntu)
+   - `/etc/php/8.1/fpm/php.ini`(nginx 웹 서버(CentOS 또는 Ubuntu))
 
-1. 찾기 `opcache.save_comments` 필요한 경우 주석 처리를 제거합니다.
-1. 해당 값이 로 설정되어 있는지 확인합니다. `1`.
+1. `opcache.save_comments`을(를) 찾아 필요한 경우 주석 처리를 제거합니다.
+1. 해당 값이 `1`(으)로 설정되어 있는지 확인하십시오.
 1. 변경 사항을 저장하고 텍스트 편집기를 종료합니다.
 1. 웹 서버를 다시 시작합니다.
 
-   - 아파치, 우분투: `service apache2 restart`
+   - Apache, Ubuntu: `service apache2 restart`
    - Apache, CentOS: `service httpd restart`
    - nginx, Ubuntu 및 CentOS: `service nginx restart`
 
@@ -205,8 +205,8 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 
 PHP 문제 해결에 대한 도움말은 다음 Adobe Commerce 지원 문서를 참조하십시오.
 
-- [브라우저에서 Adobe Commerce에 액세스할 때 PHP 버전 오류 또는 404 오류 발생](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- 브라우저에서 Adobe Commerce에 액세스할 때 [PHP 버전 오류 또는 404 오류 발생](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 - [PHP 설정 오류](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [PHP mcrypt 확장이 제대로 설치되지 않았습니다.](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [PHP mcrypt 확장이 제대로 설치되지 않았습니다](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [PHP 버전 준비 확인 문제](https://support.magento.com/hc/en-us/articles/360033546411)
-- [일반적인 PHP 치명적인 오류 및 솔루션](https://support.magento.com/hc/en-us/articles/360030568432)
+- [일반적인 PHP 치명적인 오류 및 해결 방법](https://support.magento.com/hc/en-us/articles/360030568432)

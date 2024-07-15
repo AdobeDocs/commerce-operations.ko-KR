@@ -5,7 +5,7 @@ exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -28,25 +28,25 @@ ht-degree: 0%
 
 전자 상거래 사업에서는 첫인상을 마지막으로 남기는 것이 필수적이다. 새 고객에게 보내는 첫 번째 이메일이 효과적이라면 고객의 기억에 오래 남는 인상을 남길 것입니다. 디자인은 단순하고 독창적인 것으로 유지하세요. 예를 들어, 일부 브랜드는 고객이 가입할 때 이메일에 할인을 제공합니다.
 
-![환영 마케팅 이메일 예](../../assets/playbooks/marketing-email-welcome.png)
+![환영 마케팅 이메일](../../assets/playbooks/marketing-email-welcome.png)
 
 ## 큐레이트된 이메일
 
 큐레이트된 이메일은 구독자가 제품에 대해 자세히 알 수 있도록 해 주는 최고의 이메일 양식 중 하나입니다. 고객 세그멘테이션을 기반으로 엄선된 이메일을 보낼 수도 있습니다.
 
-![큐레이트된 마케팅 이메일 예](../../assets/playbooks/marketing-email-curated.png)
+![조정된 마케팅 이메일 예제](../../assets/playbooks/marketing-email-curated.png)
 
 ## 참여 이메일
 
 고객은 이메일을 쉽게 간과할 수 있지만 이메일이 참여 이메일로 전송되는 경우 고객이 보지 않고 삭제할 확률은 더 낮습니다. 참여 이메일은 무료 배송과 같은 프로모션을 사용자에게 제공하는 캠페인 형태일 수 있습니다.
 
-![참여 마케팅 이메일 예](../../assets/playbooks/marketing-email-engagement.png)
+![참여 마케팅 이메일 예제](../../assets/playbooks/marketing-email-engagement.png)
 
 ## 참조 이메일
 
 입소문은 최고의 마케팅 전략 중 하나입니다. (예: 기존 고객에게 참조 이메일 보내기) 예를 들어 &quot;친구를 추천하고 $10를 받습니다!&quot; 리퍼러 이메일은 고객이 유기적으로 단어를 확산하도록 동기를 부여하여 더 많은 고객을 확보하는 데 도움이 됩니다.
 
-![추천 마케팅 이메일 예](../../assets/playbooks/marketing-email-referral.png)
+![추천 마케팅 이메일 예제](../../assets/playbooks/marketing-email-referral.png)
 
 ## 할인 이메일
 
@@ -58,16 +58,16 @@ ht-degree: 0%
 
 고객들은 높은 배송비나 불만족스러운 반품 정책 등 다양한 이유로 카트를 포기하게 된다. 해당 고객이 장바구니에 남긴 제품에 대한 미리 알림 이메일을 보내어 이러한 고객을 성공적인 쇼핑객으로 전환할 수 있습니다. 또한 무료 배송, 할인 또는 다음 구매 바우처를 포함하여 체크아웃을 완료할 수 있는 인센티브를 제공할 수 있습니다. 이는 전환율을 높이는 데 도움이 됩니다.
 
-![포기 마케팅 이메일 예](../../assets/playbooks/marketing-email-abandon.png)
+![마케팅 이메일 포기 예](../../assets/playbooks/marketing-email-abandon.png)
 
 ## 주문 확인 이메일
 
 주문 확인 이메일은 판매 활성화에 도움이 될 뿐만 아니라 고객이 주문을 했다는 확신을 갖게 하여 고객 경험과 충성도를 높입니다.
 
-![주문 확인 마케팅 이메일 예](../../assets/playbooks/marketing-email-order-confirmation.png)
+![주문 확인 마케팅 이메일 예제](../../assets/playbooks/marketing-email-order-confirmation.png)
 
 ## 설문 조사 전자 메일
 
 고객이 주문을 받으면 사후 설문 조사 이메일을 보내 고객의 경험과 개선 사항에 대해 문의해야 합니다. 일부 유통업체들은 고객이 설문을 완료하지 않을 경우 동기가 없어 설문을 완료하지 않는 경우가 대부분이어서 상품권을 제공하는 경우도 있다.
 
-![설문 조사 마케팅 이메일 예](../../assets/playbooks/marketing-email-survey.png)
+![설문 조사 마케팅 이메일 예제](../../assets/playbooks/marketing-email-survey.png)

@@ -45,7 +45,7 @@ ht-degree: 3%
       - [2.4.3](release-notes/security/2-4-3-patches.md)
       - [2.4.2](release-notes/security/2-4-2-patches.md)
 - [제품 가용성](product-availability.md)
-- [베타 릴리스](beta.md)
+- [Beta 릴리스](beta.md)
 - 계획 및 정책 {#planning}
    - [라이프사이클 정책](lifecycle-policy.md)
    - [버전 관리 정책](versioning-policy.md)

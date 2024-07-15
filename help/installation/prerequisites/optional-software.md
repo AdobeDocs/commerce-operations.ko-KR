@@ -17,7 +17,7 @@ cron 관련 작업이 제대로 수행되도록 NTP를 설치하는 것이 좋�
 
 ## NTP(Network Time Protocol) 설치 및 구성
 
-[NTP](https://www.ntp.org/) 를 사용하여 서버가 시스템 시계를 동기화할 수 있습니다. [전체적으로 사용 가능한 풀 서버](https://www.ntppool.org/en/). 신뢰할 수 있는 NTP 서버는 내부 네트워크나 외부 공용 서버에 대한 전용 하드웨어 솔루션이든 관계없이 사용하는 것이 좋습니다.
+[NTP](https://www.ntp.org/)을(를) 사용하면 서버가 [전역적으로 사용 가능한 풀 서버](https://www.ntppool.org/en/)를 사용하여 시스템 시계를 동기화할 수 있습니다. 신뢰할 수 있는 NTP 서버는 내부 네트워크나 외부 공용 서버에 대한 전용 하드웨어 솔루션이든 관계없이 사용하는 것이 좋습니다.
 
 여러 호스트에 Adobe Commerce을 배포하는 경우 NTP를 사용하면 서버가 있는 시간대에 관계 없이 시계가 모두 동기화됩니다. 또한 서버 시계가 정확하기 때문에 cron 관련 작업(예: 인덱싱 및 트랜잭션 이메일)이 정확합니다.
 
@@ -29,7 +29,7 @@ NTP를 설치하려면 다음 명령을 입력합니다.
 apt-get install ntp
 ```
 
-계속 [NTP 풀 서버 사용](#use-ntp-pool-servers).
+[NTP 풀 서버 사용](#use-ntp-pool-servers)을 계속합니다.
 
 ### CentOS에서 NTP 설치 및 구성
 
@@ -41,7 +41,7 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
    yum search ntp
    ```
 
-1. 설치할 패키지를 선택하십시오. 예를 들어, `ntp.x86_64`.
+1. 설치할 패키지를 선택하십시오. 예: `ntp.x86_64`.
 
 1. 패키지를 설치합니다.
 
@@ -59,9 +59,9 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
 
 ### NTP 풀 서버 사용
 
-풀 서버 선택은 사용자가 결정합니다. NTP 풀 서버를 사용하는 경우 ntp.org 를 사용하는 것이 좋습니다. [풀 서버](https://www.ntppool.org/en/) 에 설명된 대로 서버의 시간대에 가깝습니다. [NTP 풀 프로젝트 페이지](https://www.ntppool.org/en/use.html). 배포의 모든 호스트에서 사용할 수 있는 개인 NTP 서버가 있는 경우 해당 서버를 대신 사용할 수 있습니다.
+풀 서버 선택은 사용자가 결정합니다. ntp.org NTP 풀 서버를 사용하는 경우 [NTP 풀 프로젝트 페이지](https://www.ntppool.org/en/use.html)에서 설명한 대로 서버의 시간대에 가까운 [풀 서버](https://www.ntppool.org/en/)를 사용하는 것이 좋습니다. 배포의 모든 호스트에서 사용할 수 있는 개인 NTP 서버가 있는 경우 해당 서버를 대신 사용할 수 있습니다.
 
-1. 열기 `/etc/ntp.conf` 텍스트 편집기에서.
+1. 텍스트 편집기에서 `/etc/ntp.conf` 열기
 
 1. 다음과 유사한 행을 찾습니다.
 
@@ -81,7 +81,7 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
    server 2.us.pool.ntp.org
    ```
 
-1. 변경 내용 저장 `/etc/ntp.conf` 텍스트 편집기를 종료합니다.
+1. 변경 내용을 `/etc/ntp.conf`에 저장하고 텍스트 편집기를 종료합니다.
 
 1. 서비스를 다시 시작합니다.
 
@@ -89,21 +89,21 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
 
    * CentOS: `service ntpd restart`
 
-1. 입력 `date` 서버의 날짜를 확인합니다.
+1. 서버의 날짜를 확인하려면 `date`을(를) 입력하십시오.
 
    날짜가 올바르지 않으면 방화벽에서 NTP 클라이언트 포트(일반적으로 UDP 123)가 열려 있는지 확인하십시오.
 
-   다음을 시도해 보십시오. `ntpdate _[pool server hostname]_` 명령입니다. 실패하면 반환되는 오류를 검색합니다.
+   `ntpdate _[pool server hostname]_` 명령을 사용해보십시오. 실패하면 반환되는 오류를 검색합니다.
 
    다른 작업이 모두 실패하면 서버를 재부팅해 보십시오.
 
 ## phpinfo.php 만들기
 
-다음 [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) 파일에는 PHP와 그 확장자에 대한 많은 정보가 표시됩니다.
+[`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) 파일에는 PHP와 그 확장에 대한 많은 정보가 표시됩니다.
 
 >[!NOTE]
 >
->사용 `phpinfo.php` 개발 시스템에서 _전용_. 프로덕션에서 보안 문제가 될 수 있습니다.
+>개발 시스템 _only_&#x200B;에서 `phpinfo.php`을(를) 사용합니다. 프로덕션에서 보안 문제가 될 수 있습니다.
 
 웹 서버의 docroot에 다음 코드를 추가합니다.
 
@@ -113,7 +113,7 @@ NTP를 설치하고 구성하려면 다음을 수행하십시오.
 phpinfo();
 ```
 
-자세한 내용은 [phpinfo 수동 페이지](https://www.php.net/manual/en/function.phpinfo.php).
+자세한 내용은 [phpinfo 매뉴얼 페이지](https://www.php.net/manual/en/function.phpinfo.php)를 참조하십시오.
 
 결과를 보려면 브라우저의 위치 또는 주소 필드에 다음 URL을 입력합니다.
 
@@ -134,13 +134,13 @@ http://<web server host or IP>/phpinfo.php
 
 phpMyAdmin 응용 프로그램은 사용하기 쉬운 무료 데이터베이스 관리 유틸리티입니다. 이 옵션을 사용하여 데이터베이스의 내용을 확인하고 조작할 수 있습니다. phpMyAdmin에 MySQL 데이터베이스 관리 사용자로 로그인해야 합니다.
 
-phpMyAdmin에 대한 자세한 내용은 [phpMyAdmin 홈 페이지](https://www.phpmyadmin.net/).
+phpMyAdmin에 대한 자세한 내용은 [phpMyAdmin 홈 페이지](https://www.phpmyadmin.net/)를 참조하십시오.
 
-설치에 대한 자세한 내용은 [phpMyAdmin 설치 설명서](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+설치에 대한 자세한 내용은 [phpMyAdmin 설치 설명서](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install)를 참조하십시오.
 
 >[!NOTE]
 >
->개발 시스템에서 phpMyAdmin 사용 _전용_. 프로덕션에서 보안 문제가 될 수 있습니다.
+>개발 시스템 _only_&#x200B;에서 phpMyAdmin을 사용합니다. 프로덕션에서 보안 문제가 될 수 있습니다.
 
 1. phpMyAdmin을 사용하려면 브라우저의 주소 또는 위치 필드에 다음 명령을 입력합니다.
 
@@ -148,4 +148,4 @@ phpMyAdmin에 대한 자세한 내용은 [phpMyAdmin 홈 페이지](https://www.
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. 메시지가 표시되면 MySQL 데이터베이스를 사용하여 로그인합니다. `root` 또는 관리 사용자의 사용자 이름과 암호를 입력합니다.
+1. 메시지가 표시되면 MySQL 데이터베이스 `root` 또는 관리 사용자의 사용자 이름과 암호를 사용하여 로그인합니다.

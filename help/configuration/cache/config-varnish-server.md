@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
 **Apache 2.4 수신 포트를 변경하려면**:
 
-1. 열기 `/etc/httpd/conf/httpd.conf` 텍스트 편집기에서.
-1. 를 찾습니다. `Listen` 지시문입니다.
-1. 수신 포트의 값을 다음으로 변경 `8080`. 사용 가능한 수신 포트를 사용할 수 있습니다.
-1. 변경 내용 저장 `httpd.conf` 텍스트 편집기를 종료합니다.
+1. 텍스트 편집기에서 `/etc/httpd/conf/httpd.conf` 열기
+1. `Listen` 지시문을 찾습니다.
+1. 수신 포트의 값을 `8080`(으)로 변경합니다. 사용 가능한 수신 포트를 사용할 수 있습니다.
+1. 변경 내용을 `httpd.conf`에 저장하고 텍스트 편집기를 종료합니다.
 
 ## 바니시 시스템 구성 수정
 
 바니시 시스템 구성을 수정하려면
 
-1. 을 사용하는 사용자로서 `root` 권한은 텍스트 편집기에서 Vanish 구성 파일을 엽니다.
+1. `root` 권한을 가진 사용자는 텍스트 편집기에서 Vanish 구성 파일을 엽니다.
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
    VARNISH_LISTEN_PORT=80
    ```
 
-   Vannish 4.x의 경우 DAEMON_OPTS에 `-a` 매개 변수(VARNISH_LISTEN_PORT가 올바른 값으로 설정된 경우에도):
+   Varnish 4.x의 경우 DAEMON_OPTS에 `-a` 매개 변수에 대한 올바른 수신 포트가 포함되어 있는지 확인합니다(VARNISH_LISTEN_PORT가 올바른 값으로 설정되어 있더라도).
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
 ### 기본 VCL 수정
 
-이 섹션에서는 Varnish가 HTTP 응답 헤더를 반환하도록 최소 구성을 제공하는 방법에 대해 설명합니다. 이렇게 하면 를 구성하기 전에 바니시가 작동하는지 확인할 수 있습니다. [!DNL Commerce] 바니쉬 사용.
+이 섹션에서는 Varnish가 HTTP 응답 헤더를 반환하도록 최소 구성을 제공하는 방법에 대해 설명합니다. 이를 통해 Vannish를 사용하도록 [!DNL Commerce] 응용 프로그램을 구성하기 전에 Vannish가 작동하는지 확인할 수 있습니다.
 
 바니시를 최소한으로 구성하려면
 
-1. 백업 `default.vcl`:
+1. `default.vcl` 백업:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. 열기 `/etc/varnish/default.vcl` 텍스트 편집기에서.
+1. 텍스트 편집기에서 `/etc/varnish/default.vcl` 열기
 1. 다음 별표를 찾습니다.
 
    ```conf
@@ -74,11 +74,11 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
    }
    ```
 
-1. 값 바꾸기 `.host` Varnish 의 정규화된 호스트 이름 또는 IP 주소 및 수신 포트 사용 _백엔드_ 또는 _원본 서버_&#x200B;즉, Varnish 컨텐츠를 제공하는 서버가 가속화됩니다.
+1. `.host`의 값을 Varnish _백엔드_ 또는 _원본 서버_&#x200B;의 정규화된 호스트 이름 또는 IP 주소 및 수신 대기 포트로 바꾸십시오. 즉, Varnish 콘텐츠를 제공하는 서버는 속도가 빨라집니다.
 
-   일반적으로 웹 서버입니다. 다음을 참조하십시오 [백엔드 서버](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) 다음에서 _니시 가이드_.
+   일반적으로 웹 서버입니다. _바니시 가이드_&#x200B;에서 [백엔드 서버](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)를 참조하십시오.
 
-1. 값 바꾸기 `.port` 웹 서버의 수신 포트(이 예제에서는 8080)와 함께 사용할 수 있습니다.
+1. `.port`의 값을 웹 서버의 수신 포트(이 예제에서는 8080)로 바꿉니다.
 
    예: Apache가 호스트 192.0.2.55에 설치되고 Apache가 포트 8080에서 수신 대기합니다.
 
@@ -91,9 +91,9 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
    >[!INFO]
    >
-   >Varnish 와 Apache 가 동일한 호스트에서 실행 중인 경우 Adobe은 IP 주소 또는 호스트 이름을 사용하고 사용하지 않는 것을 권장합니다 `localhost`.
+   >Adobe Varnish와 Apache가 동일한 호스트에서 실행 중인 경우 `localhost`이(가) 아닌 IP 주소 또는 호스트 이름을 사용하는 것이 좋습니다.
 
-1. 변경 내용 저장 `default.vcl` 텍스트 편집기를 종료합니다.
+1. 변경 내용을 `default.vcl`에 저장하고 텍스트 편집기를 종료합니다.
 
 1. 니시 다시 시작:
 
@@ -116,7 +116,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
 ## 바니시가 작동하는지 확인
 
-다음 섹션에서는 Varnish가 작동하는지 확인하는 방법에 대해 설명합니다. _없이_ 이를 사용하도록 Commerce를 구성합니다. Commerce를 구성하기 전에 이를 시도해야 합니다.
+다음 단원에서는 Vannish가 작동하지만 이를 사용하도록 Commerce을 구성하지 않고 _확인하는 방법에 대해 설명합니다._ Commerce을 구성하기 전에 이 작업을 시도해야 합니다.
 
 다음 섹션에서 설명한 작업을 표시된 순서대로 수행합니다.
 
@@ -125,7 +125,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
 ### 니스 시작
 
-다음을 입력합니다. `service varnish start`
+입력: `service varnish start`
 
 Vannish가 서비스로 시작되지 않으면 다음과 같이 명령줄에서 시작합니다.
 
@@ -137,7 +137,7 @@ Vannish가 서비스로 시작되지 않으면 다음과 같이 명령줄에서 
 
 1. Vanish 하위 프로세스를 시작합니다.
 
-   메시지가 표시되면 을 입력합니다. `start`
+   메시지가 표시되면 `start`을(를) 입력하십시오.
 
    성공적인 시작을 확인하기 위해 다음 메시지가 표시됩니다.
 
@@ -168,15 +168,15 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 위의 예는 포트 80에서 실행되는 Varnish와 포트 8080에서 실행되는 Apache를 보여줍니다.
 
-다음에 대한 출력이 표시되지 않는 경우 `varnishd`, Varnish 가 실행 중인지 확인합니다.
+`varnishd`에 대한 출력이 표시되지 않으면 Vannish가 실행 중인지 확인하십시오.
 
-다음을 참조하십시오 [`netstat` 옵션](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+[`netstat`개 옵션](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)을 참조하세요.
 
 ## Commerce 소프트웨어 설치
 
 아직 설치하지 않았다면 Commerce 소프트웨어를 설치합니다. 기본 URL을 입력하라는 메시지가 표시되면 Varnish는 모든 수신 HTTP 요청을 수신하므로 Varnish 호스트와 포트 80(Varnish용)을 사용합니다.
 
-Commerce를 설치하는 동안 발생할 수 있는 오류:
+Commerce 설치 시 발생할 수 있는 오류:
 
 ```terminal
 Error 503 Service Unavailable
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-이 오류가 발생하는 경우 다음을 편집합니다. `default.vcl` 에 시간 제한 추가 `backend` stanza는 다음과 같습니다.
+이 오류가 발생하는 경우 `default.vcl`을(를) 편집하고 다음과 같이 `backend` 스타자에 시간 제한을 추가하십시오.
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 이제 모든 페이지에서 반환된 HTML 응답 헤더를 확인하여 Varnish가 페이지를 제공하는지 확인할 수 있습니다.
 
-머리글을 보려면 개발자 모드용 Commerce를 설정해야 합니다. 이를 수행하는 방법에는 몇 가지가 있으며 그중 가장 간단한 방법은 수정하는 것입니다 `.htaccess` Commerce 애플리케이션 루트에 있습니다. 다음을 사용할 수도 있습니다 [`magento deploy:mode:set`](../cli/set-mode.md) 명령입니다.
+헤더를 보려면 먼저 Commerce을 개발자 모드로 설정해야 합니다. 몇 가지 방법이 있습니다. 그 중 가장 간단한 방법은 Commerce 응용 프로그램 루트에서 `.htaccess`을(를) 수정하는 것입니다. [`magento deploy:mode:set`](../cli/set-mode.md) 명령을 사용할 수도 있습니다.
 
 ### 개발자 모드용 Commerce 설정
 
-개발자 모드용 Commerce를 설정하려면 [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) 명령입니다.
+Commerce을 개발자 모드로 설정하려면 [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) 명령을 사용합니다.
 
 ### Varnish 로그 보기
 
@@ -213,7 +213,7 @@ Varnish가 실행 중인지 확인한 다음 Varnish 서버에 다음 명령을 
 varnishlog
 ```
 
-웹 브라우저에서 임의의 상거래 페이지로 이동합니다.
+웹 브라우저에서 임의의 Commerce 페이지로 이동합니다.
 
 명령 프롬프트 창에 긴 응답 헤더 목록이 표시됩니다. 다음과 같은 헤더를 찾습니다.
 
@@ -232,13 +232,13 @@ varnishlog
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-이러한 헤더가 _아님_ 디스플레이, 바니시 중지, 확인 `default.vcl`을(를) 클릭하고 다시 시도하십시오.
+이러한 헤더가 _표시되지 않음_&#x200B;인 경우 바니시를 중지하고 `default.vcl`을(를) 확인한 다음 다시 시도하십시오.
 
 ### HTML 응답 헤더 확인
 
 응답 헤더를 확인하는 방법에는 브라우저 플러그인 또는 브라우저 관리자 사용을 비롯한 여러 가지가 있습니다.
 
-다음 예제에서는 를 사용합니다 `curl`. HTTP를 사용하여 Commerce 서버에 액세스할 수 있는 모든 컴퓨터에서 이 명령을 입력할 수 있습니다.
+다음 예제에서는 `curl`을(를) 사용합니다. HTTP를 사용하여 Commerce 서버에 액세스할 수 있는 모든 컴퓨터에서 이 명령을 입력할 수 있습니다.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

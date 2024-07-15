@@ -1,29 +1,29 @@
 ---
 title: 데이터베이스 작업 기록
-description: Logger 인터페이스를 사용하여 데이터베이스 작업을 기록하도록 Commerce를 구성합니다.
+description: 로거 인터페이스를 사용하여 데이터베이스 작업을 기록하도록 Commerce을 구성합니다.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # 데이터베이스 작업 기록
 
-다음 예에서는 다음을 사용하여 데이터베이스 작업을 기록하는 방법을 보여 줍니다. [`Magento\Framework\DB\LoggerInterface`][interface]: 두 가지 구현이 있습니다.
+다음 예제에서는 두 개의 구현이 있는 [`Magento\Framework\DB\LoggerInterface`][interface]을(를) 사용하여 데이터베이스 활동을 기록하는 방법을 보여 줍니다.
 
 - 아무것도 기록하지 않음(기본값): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- 에 로그 `var/log` 디렉터리: [`Magento\Framework\DB\Logger\File`][file]
+- `var/log` 디렉터리에 대한 로그: [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->Commerce CLI를 사용하여 다음을 수행할 수 있습니다. [데이터베이스 로깅 활성화 및 비활성화](../cli/enable-logging.md#database-logging).
+>Commerce CLI를 사용하여 [데이터베이스 로깅을 활성화 및 비활성화](../cli/enable-logging.md#database-logging)할 수 있습니다.
 
-의 기본 구성을 변경하려면 `\Magento\Framework\DB\Logger\LoggerProxy`, 편집 `app/etc/di.xml`.
+`\Magento\Framework\DB\Logger\LoggerProxy`의 기본 구성을 변경하려면 `app/etc/di.xml`을(를) 편집하세요.
 
-먼저 의 기본값을 변경합니다. `loggerAlias` 및 `logCallStack` 인수:
+먼저 `loggerAlias` 및 `logCallStack` 인수의 기본값을 다음으로 변경합니다.
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -36,7 +36,7 @@ ht-degree: 0%
 </type>
 ```
 
-그런 다음 의 파일 경로를 제공합니다. `Magento\Framework\DB\Logger\File`:
+그 후에 `Magento\Framework\DB\Logger\File`의 파일 경로를 제공하십시오.
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">

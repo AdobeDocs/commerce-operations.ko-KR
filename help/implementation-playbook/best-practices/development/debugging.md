@@ -3,13 +3,13 @@ title: 디버깅 모범 사례
 description: 일반적인 Adobe Commerce 개발 문제를 해결하기 위한 기술에 대해 알아봅니다.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce에 대한 디버깅 모범 사례
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 ### 캐시
 
 - 추가 조사 전에 캐시 초기화
-- APC 캐시, CDN, Vannish, 생성된 코드 및 `var/view_preprocessed` 및 `pub/static/` 디렉터리
+- APC 캐시, CDN, Varnish, 생성된 코드 및 `var/view_preprocessed` 및 `pub/static/` 디렉터리를 고려하십시오.
 - 캐시를 플러시하거나 코드를 수정한 후 큐 핸들러를 중지했다가 다시 시작합니다.
 
 다음 코드 샘플은 캐시 관리와 관련된 유용한 명령을 제공합니다(프로덕션 환경에서는 실행하지 마십시오).
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### 개발자 모드
 
-로컬 설치가에 있는지 확인합니다. `developer` 모드.
+로컬 설치가 `developer` 모드에 있는지 확인하십시오.
 
 ### 새 모듈
 
@@ -108,9 +108,9 @@ bin/magento cache:flush
   bin/magento module --enable Your_Module
   ```
 
-  다음 확인: `app/etc/config.php` 새 모듈에 대한 파일입니다.
+  새 모듈에 대한 `app/etc/config.php` 파일을 확인하십시오.
 
-- 파일 및 디렉터리 구조 중첩을 확인합니다. 예를 들어 은 `view/layout/` 디렉토리 대신 `view/frontend/layout` 디렉토리? 다음에 템플릿이 있음 `view/frontend/template` 디렉토리 대신 `view/frontend/templates` 디렉토리?
+- 파일 및 디렉터리 구조 중첩을 확인합니다. 예를 들어 레이아웃 파일이 `view/frontend/layout` 디렉터리 대신 `view/layout/` 디렉터리에 있습니까? 템플릿이 `view/frontend/templates` 디렉터리 대신 `view/frontend/template` 디렉터리에 있습니까?
 
 ## 문제 해결: 절반 분할
 
@@ -118,9 +118,9 @@ bin/magento cache:flush
 
 다음 다이어그램을 참조하십시오.
 
-![이등분 다이어그램](../../../assets/playbooks/bisect.png)
+![양방향 다이어그램](../../../assets/playbooks/bisect.png)
 
-![이등분 다이어그램](../../../assets/playbooks/bisect2.png)
+![양방향 다이어그램](../../../assets/playbooks/bisect2.png)
 
 몇 가지 방법으로 양분할 수 있지만 Adobe은 다음 순서를 따를 것을 권장합니다.
 
@@ -132,12 +132,12 @@ bin/magento cache:flush
 
 코드와 관련이 없는 문제인 경우 먼저 큰 청크를 제거하십시오. 생각해 볼 수 있는 큰 덩어리 중 일부는 다음과 같습니다.
 
-- **Adobe Commerce 프레임워크**—Adobe Commerce과 관련된 문제입니까? 아니면 연결된 다른 시스템과 관련된 문제입니까?
-- **서버 및 클라이언트**- 브라우저 캐시와 저장소를 지웁니다. 문제가 해결되었습니까? 이로 인해 서버 관련 문제가 발생할 수 있습니다. 문제가 여전히 존재합니까? 브라우저 디버깅에 더 이상 시간을 낭비할 필요가 없습니다.
+- **Adobe Commerce 프레임워크**—Adobe Commerce과 관련된 문제이거나 연결된 다른 시스템과 관련된 문제일 수 있습니까?
+- **서버 및 클라이언트**—브라우저 캐시와 저장소를 지웁니다. 문제가 해결되었습니까? 이로 인해 서버 관련 문제가 발생할 수 있습니다. 문제가 여전히 존재합니까? 브라우저 디버깅에 더 이상 시간을 낭비할 필요가 없습니다.
 - **세션**—모든 사용자에 대해 문제가 발생합니까? 그렇지 않으면 세션 또는 브라우저 관련 주제로 문제를 제한할 수 있습니다.
-- **캐시**—모든 캐시를 비활성화하면 변경 사항이 있습니까? 이 경우 캐시 관련 항목에 중점을 둘 수 있습니다.
-- **데이터베이스**—동일한 코드를 실행하는 모든 환경에서 문제가 발생합니까? 그렇지 않은 경우 구성 및 기타 데이터베이스 관련 항목에서 문제를 찾습니다.
-- **코드**—위의 방법 중 어느 방법으로도 문제가 해결되지 않은 경우 코드 문제를 찾습니다.
+- **캐시**—모든 캐시를 해제하면 변경 사항이 있습니까? 이 경우 캐시 관련 항목에 중점을 둘 수 있습니다.
+- **데이터베이스**—같은 코드를 실행하는 모든 환경에서 문제가 발생합니까? 그렇지 않은 경우 구성 및 기타 데이터베이스 관련 항목에서 문제를 찾습니다.
+- **코드**—위의 방법 중 어느 방법으로도 문제가 해결되지 않으면 코드 문제를 찾습니다.
 
 ### 2단계: 커밋별 이등분
 
@@ -148,7 +148,7 @@ bin/magento cache:flush
 ### 3단계: 파일별 이등분
 
 - Adobe Commerce을 파일 형식(코어 및 비코어)으로 나눕니다. 먼저 모든 고객 및 마켓 플레이스 모듈을 비활성화합니다. 문제가 여전히 존재합니까? 이는 핵심 문제가 아닌 문제일 가능성이 높습니다.
-- 에서 모듈의 절반(대략)을 다시 활성화합니다. `app/etc/config.php` 파일. 종속성에 유의하십시오. 한 번에 동일한 주제의 모듈 클러스터를 활성화하는 것이 가장 좋습니다. 문제가 여전히 존재합니까?
+- `app/etc/config.php` 파일에서 모듈 중 절반만 다시 사용하도록 설정합니다. 종속성에 유의하십시오. 한 번에 동일한 주제의 모듈 클러스터를 활성화하는 것이 가장 좋습니다. 문제가 여전히 존재합니까?
 - 나머지 모듈의 1/4을 활성화합니다. 문제가 여전히 존재합니까? 활성화한 항목의 절반을 비활성화합니다. 이 방법을 사용하면 근본 원인을 단일 모듈로 분리할 수 있습니다.
 
 ## 시간 절약
@@ -169,7 +169,7 @@ bin/magento cache:flush
 
 ### 인터넷 검색
 
-문제와 관련된 용어를 사용하여 인터넷 검색을 수행합니다. 다른 사용자가 이미 동일한 문제를 겪었을 가능성이 있습니다. 다음을 통해 검색 [Adobe Commerce GitHub 문제](https://github.com/magento/magento2/issues).
+문제와 관련된 용어를 사용하여 인터넷 검색을 수행합니다. 다른 사용자가 이미 동일한 문제를 겪었을 가능성이 있습니다. [Adobe Commerce GitHub 문제](https://github.com/magento/magento2/issues)를 검색합니다.
 
 ### 휴식을 취하세요
 
@@ -177,7 +177,7 @@ bin/magento cache:flush
 
 ## 도구
 
-n98 magerun CLI 도구([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2))는 명령줄에서 Adobe Commerce을 사용하는 데 유용한 기능을 제공합니다. 특히 다음 명령을 사용합니다.
+n98 magerun CLI 도구([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2))는 명령줄에서 Adobe Commerce을 사용하여 작업하는 데 유용한 기능을 제공합니다. 특히 다음 명령을 사용합니다.
 
 ```bash
 n98-magerun2.phar dev:console
@@ -213,14 +213,14 @@ XML 파일에 명백한 구문 오류를 추가하여 사용 여부를 확인합
     ->get(\Psr\Log\LoggerInterface::class)->debug('message');
 ```
 
->[!TAB 독백]
+>[!TAB Monolog]
 
 ```php
 $log = new \Monolog\Logger('custom', [new \Monolog\Handler\StreamHandler(BP.'/var/log/test.log')]);
 $log->info('Your Logging Message', ['context' => ['email' => 'john@example.com']]);
 ```
 
->[!TAB 젠드]
+>[!TAB Zend]
 
 ```php
 $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');

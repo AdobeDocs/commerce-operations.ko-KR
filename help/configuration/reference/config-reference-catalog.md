@@ -5,22 +5,22 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # 카탈로그 구성 경로 참조
 
-이 섹션에는 아래 관리자의 옵션에 사용할 수 있는 변수 이름 및 구성 경로가 나열됩니다. **스토어** > 설정 > **구성** > **카탈로그**.
+이 섹션에는 **스토어** > 설정 > **구성** > **카탈로그**&#x200B;에서 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
-다음 [`magento app:config:dump` 명령](../cli/export-configuration.md) 공유 구성 파일에 이러한 값을 씁니다. `app/etc/config.php`: 소스 제어에 있어야 합니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 다음을 참조하십시오. [환경 변수를 사용하여 구성 설정을 재정의합니다.](override-config-settings.md#environment-variables). 이 주제에서는 다음을 수행합니다. _아님_ 목록 [중요 및 시스템별 값](config-reference-sens.md).
+[`magento app:config:dump` 명령](../cli/export-configuration.md)은(는) 이러한 값을 소스 제어에 있어야 하는 공유 구성 파일 `app/etc/config.php`에 씁니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 [환경 변수를 사용하여 구성 설정을 무시하십시오](override-config-settings.md#environment-variables). 이 항목은 _not_&#x200B;에 [중요 및 시스템 특정 값을 나열합니다](config-reference-sens.md).
 
 ## 카탈로그 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **카탈로그** > **카탈로그**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **카탈로그**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | SKU용 마스크 | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 메타 제목 마스크 | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -121,9 +121,9 @@ ht-degree: 0%
 
 ## 인벤토리 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **카탈로그** > **인벤토리**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **인벤토리**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 주문 시 재고 감소 | `cataloginventory/options/can_subtract` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 주문이 취소될 경우 품목 상태를 재고로 설정 | `cataloginventory/options/can_back_in_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,9 +151,9 @@ ht-degree: 0%
 
 ## 시각적 머천다이저 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **카탈로그** > **Visual Merchandiser**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **시각적 머천다이저**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 범주 규칙에 대한 표시 속성 | `visualmerchandiser/options/smart_attributes` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 최소 재고 임계값 | `visualmerchandiser/options/minimum_stock_threshold` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
@@ -164,9 +164,9 @@ ht-degree: 0%
 
 ## XML 사이트 맵 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **카탈로그** > **XML 사이트 맵**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **XML 사이트 맵**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 빈도 | `sitemap/category/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 우선 순위 | `sitemap/category/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -188,9 +188,9 @@ ht-degree: 0%
 
 ## RSS 피드 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **카탈로그** > **RSS 피드**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **RSS 피드**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | RSS 활성화 | `rss/config/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | RSS 활성화 | `rss/wishlist/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -204,9 +204,9 @@ ht-degree: 0%
 
 ## 친구에게 이메일 보내기
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **카탈로그** > **친구에게 이메일 보내기**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **친구에게 전자 메일**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 활성화됨 | `sendfriend/email/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 이메일 템플릿 선택 | `sendfriend/email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

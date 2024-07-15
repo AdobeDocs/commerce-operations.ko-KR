@@ -9,15 +9,16 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce, Commerce Integration Framework 및 Adobe Experience Manager을 통해 규모에 맞게 경험을 제공합니다
+# Adobe Commerce, Commerce integration framework 및 Adobe Experience Manager을 통해 규모에 맞게 경험 제공
 
-CIF를 커넥터로 사용하는 AEM과 Adobe Commerce 간의 권장 통합 패턴은 AEM이 프레젠테이션 레이어(&quot;유리&quot;)를 소유하고 Adobe Commerce이 상거래 백엔드를 &quot;headless&quot; 백엔드로 제공하는 것입니다. 이 통합 접근 방식은 AEM의 작성, 개인화 및 옴니채널 기능과 Adobe Commerce의 전자 상거래 작업 등 각 애플리케이션의 장점을 활용합니다.
+CIF을 커넥터로 사용하는 AEM과 Adobe Commerce 간의 권장 통합 패턴은 AEM이 프레젠테이션 레이어(&quot;유리&quot;)를 소유하고 Adobe Commerce이 상거래 백엔드를 &quot;headless&quot; 백엔드로 제공하는 것입니다. 이 통합 접근 방식은 AEM의 작성, 개인화 및 옴니채널 기능과 Adobe Commerce의 전자 상거래 작업 등 각 애플리케이션의 장점을 활용합니다.
 
 AEM/CIF/Adobe Commerce 환경에서는 전자 상거래 사이트 방문자가 처음에 AEM에 도착합니다. AEM은 요청된 페이지를 디스패처 캐시에 사용할 수 있는지 확인합니다. 페이지가 존재하면 이 캐시된 페이지가 방문자에게 제공되며 추가 처리가 필요하지 않습니다. Dispatcher에 요청된 페이지가 포함되어 있지 않거나 만료된 경우 Dispatcher는 AEM 게시자에게 페이지 작성을 요청하고, 게시자는 필요한 경우 전자 상거래 데이터에 대해 Adobe Commerce을 호출하여 페이지를 작성합니다. 그런 다음 빌드된 페이지가 방문자에게 제공될 디스패처에 전달되고 캐시되므로 다른 방문자의 동일한 페이지에 대한 후속 요청 시 서버에 추가 로드가 배치될 필요가 없습니다.
 
 ![Adobe Experience Manager 및 Adobe Commerce 아키텍처 개요 다이어그램](../assets/commerce-at-scale/overview.png)
 
-AEM/CIF/Adobe Commerce 모델에서는 서버측 렌더링과 클라이언트측 렌더링을 결합하여 사용할 수 있습니다. 서버측 렌더링은 정적 콘텐츠를 전달하고 클라이언트측 렌더링은 자주 변경되거나 개인 다이내믹 콘텐츠를 전달하며, 사용자 브라우저 내에서 특정 구성 요소에 대해 Adobe Commerce을 직접 호출합니다.
+AEM/CIF/Adobe Commerce 모델에서 서버측 렌더링과 클라이언트측 렌더링을 결합하여 사용할 수 있습니다. 서버측 렌더링은 정적 콘텐츠를 전달하고 클라이언트측 렌더링은 특정 구성 요소에 대해 Adobe Commerce을 직접 호출하여 자주 변경되거나 개인 다이내믹 콘텐츠를 전달합니다
+을 참조하십시오.
 
 제품 세부 사항 페이지의 AEM 전자 상거래 상점 예제의 여러 구성 요소에 대한 예는 아래 예에서 확인할 수 있습니다.
 

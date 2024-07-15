@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Adobe Commerce 릴리스 정책
 
-Adobe Commerce 사용 [시맨틱 버전 관리](https://semver.org/) 개별 모듈 수준에서(예: `magento/framework 101.1.1`)를 사용할 수 있지만 마케팅 버전 번호에는 사용할 수 없습니다. For example:
+Adobe Commerce에서는 개별 모듈 수준(예: `magento/framework 101.1.1`)에서 [시맨틱 버전 관리](https://semver.org/)를 사용하지만 마케팅 버전 번호에는 사용하지 않습니다. For example:
 
-- **주요 릴리스**- 2
+- **주요 릴리스**—2
 - **마이너 릴리스**—2.4
 - **PATCH 릴리스**—2.4.5
    - **보안 패치 릴리스**—2.4.5-p1
       - 보안 버그 수정
       - 향상된 보안
-- **베타 패치 릴리스**—2.4.7-Beta2
+- **BETA 패치 릴리스**—2.4.7-beta2
 - **확장성, 인프라 및 서비스 릴리스**
 - **핫픽스**
 - **개별 패치**
-- **사용자 정의 패치**
+- **사용자 지정 패치**
 
 ## 마이너 릴리스
 
@@ -48,11 +48,11 @@ Adobe Commerce 사용 [시맨틱 버전 관리](https://semver.org/) 개별 모�
 
 {{$include /help/_includes/security-patch-release-overview.md}}
 
-## 베타 패치 릴리스
+## BETA 패치 릴리스
 
 Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객 및 Adobe 파트너가 공개적으로 사용할 수 있습니다. 이를 통해 일반 공급 전에 코드 및 영향을 받는 구성 요소를 검토할 수 있습니다.
 
-베타 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 지원(Adobe 지원 서비스 등을 통해)할 의무가 없습니다. 고객은 베타 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의하는 것이 좋습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
+Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 Beta 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 지원(Adobe 지원 서비스 또는 기타 수단을 통해)할 의무가 없습니다. 고객은 Beta 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의하는 것이 좋습니다. 따라서 Beta 릴리스의 모든 사용은 전적으로 고객 자신의 책임입니다.
 
 ## 확장성, 인프라 및 서비스 릴리스
 
@@ -60,7 +60,7 @@ Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객 및 Ad
 
 ## 핫픽스
 
-핫픽스는 영향력이 큰 보안 또는 품질 수정 사항(예: 제로데이 취약점에 대한 수정 사항)이 포함되어 있는 패치로, 많은 판매자에게 영향을 줍니다. Adobe은 필요한 경우 여전히 지원되며 중요한 보안 또는 품질 문제의 영향을 받는 Adobe Commerce 버전에 대한 핫픽스를 릴리스합니다. 핫픽스가 다음에 게시됨 [알려진 문제 섹션](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) 기술 자료. 이러한 수정 사항은 다음에 계획된 패치 릴리스에 포함되어 있습니다.
+핫픽스는 영향력이 큰 보안 또는 품질 수정 사항(예: 제로데이 취약점에 대한 수정 사항)이 포함되어 있는 패치로, 많은 판매자에게 영향을 줍니다. Adobe은 필요한 경우 여전히 지원되며 중요한 보안 또는 품질 문제의 영향을 받는 Adobe Commerce 버전에 대한 핫픽스를 릴리스합니다. 핫픽스가 기술 자료의 [알려진 문제 섹션](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)에 게시되었습니다. 이러한 수정 사항은 다음에 계획된 패치 릴리스에 포함되어 있습니다.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객 및 Ad
 
 ## 개별 패치
 
-개별 패치에는 특정 문제에 대한 영향이 적은 품질 수정 사항이 포함되어 있습니다. 이러한 수정 사항은 지원되는 Adobe Commerce 부 버전에 적용됩니다. Adobe은 필요에 따라 Adobe Commerce에 대해 개별 패치를 릴리스합니다 [소프트웨어 수명 주기 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+개별 패치에는 특정 문제에 대한 영향이 적은 품질 수정 사항이 포함되어 있습니다. 이러한 수정 사항은 지원되는 Adobe Commerce 부 버전에 적용됩니다. Adobe은 [소프트웨어 수명 주기 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)에 따라 Adobe Commerce에 필요한 개별 패치를 릴리스합니다.
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객 및 Ad
 
 ## 사용자 정의 패치
 
-문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 정의 패치는 [품질 패치 도구](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)를 통해 제공됩니다.
 
 ## 관련 항목
 

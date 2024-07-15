@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+exl-id: f76a8906-af31-4a61-be68-f5dad87161e2
 feature: Install, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 읽기 전용 파일 시스템
 
-읽기 전용 파일 시스템 개념은에서 차용되었습니다. [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. 이는 나쁜 배우가 사용하는 한 가지 주요 영역을 완전히 제거한다. 많은 악용은 검색을 방지하기 위해 Commerce 애플리케이션에 있을 것으로 예상되는 파일을 변경하는 데 사용되었습니다. 불량 액터는 파일을 만드는 대신 기존 파일의 내용을 변경하여 예기치 않은 작업을 수행합니다. 파일 시스템을 읽기 전용으로 만들면 이 공격 벡터가 크게 줄어듭니다.
+클라우드 인프라의 [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}에서 읽기 전용 파일 시스템 개념을 빌렸습니다. 이는 나쁜 배우가 사용하는 한 가지 주요 영역을 완전히 제거한다. 많은 악용은 검색을 방지하기 위해 Commerce 애플리케이션에 있을 것으로 예상되는 파일을 변경한다는 이점이 있습니다. 불량 액터는 파일을 만드는 대신 기존 파일의 내용을 변경하여 예기치 않은 작업을 수행합니다. 파일 시스템을 읽기 전용으로 만들면 이 공격 벡터가 크게 줄어듭니다.
 
 ## 2단계 인증 및 암호 관리자 사용
 
@@ -36,11 +36,11 @@ ht-degree: 0%
 
 ## Commerce용 사이트 전체 분석 도구
 
-다음 [사이트 전체 분석 도구](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} 는 Adobe Commerce 설치의 보안 및 운영을 보장하기 위한 자세한 시스템 통찰력과 권장 사항이 포함된 사전 예방적 셀프서비스 도구이자 중앙 저장소입니다. 24시간 연중무휴 실시간 성능 모니터링, 보고서 및 조언을 제공하여 잠재적인 문제를 식별하고 사이트 상태, 안전 및 애플리케이션 구성에 대한 가시성을 향상시킵니다. 이는 해결 시간을 줄이고 사이트 안정성과 성능을 개선하는 데 도움이 됩니다.
+[사이트 전체 분석 도구](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"}는 Adobe Commerce 설치의 보안 및 운영을 보장하기 위한 자세한 시스템 통찰력과 권장 사항이 포함된 사전 예방적 셀프서비스 도구이자 중앙 저장소입니다. 24시간 연중무휴 실시간 성능 모니터링, 보고서 및 조언을 제공하여 잠재적인 문제를 식별하고 사이트 상태, 안전 및 애플리케이션 구성에 대한 가시성을 향상시킵니다. 이는 해결 시간을 줄이고 사이트 안정성과 성능을 개선하는 데 도움이 됩니다.
 
 ## 관리자 작업 로깅에 대한 설정 활성화 및 확인
 
-이 로그는 Adobe Commerce 관리자에 로그인하고 스토어 > 구성 > 고급 > 관리 > 관리자 작업 로깅으로 이동한 후 찾을 수 있습니다. 이렇게 하면 모니터링 및 기록되는 이벤트 목록이 제공됩니다. 혐의가 Commerce 관리자에 대한 액세스 권한을 얻은 경우 악용된 사이트에서 법의학 분석을 수행할 때 유용합니다. 이 로깅 및 보고서는 잘못된 액터가 수행한 이벤트를 확인하는 데 도움이 될 수 있습니다. 관리자 작업 로깅이 비활성화된 경우, 즉 특정 작업을 수행할 때 다른 사용자가 관리자 작업 로깅을 비활성화했을 수 있다는 표시입니다.
+이 로그는 Adobe Commerce 관리자에 로그인하고 스토어 > 구성 > 고급 > 관리 > 관리자 작업 로깅으로 이동한 후 찾을 수 있습니다. 이렇게 하면 모니터링 및 기록되는 이벤트 목록이 제공됩니다. 혐의가 Commerce 관리자에 대한 액세스 권한을 얻은 경우, 악용된 사이트에서 법의학 분석을 수행할 때 유용합니다. 이 로깅 및 보고서는 잘못된 액터가 수행한 이벤트를 확인하는 데 도움이 될 수 있습니다. 관리자 작업 로깅이 비활성화된 경우, 즉 특정 작업을 수행할 때 다른 사용자가 관리자 작업 로깅을 비활성화했을 수 있다는 표시입니다.
 
 ## ssh 액세스용 Bastion Server
 
@@ -58,7 +58,8 @@ Adobe Commerce의 모든 관리 사용자에게는 ACL 역할이 할당됩니다
 
 프로덕션 데이터에 대한 액세스 제한. 이러한 지정된 팀원은 운영 데이터베이스를 삭제하고 실제 데이터를 정리할 수 있어야 합니다. 데이터를 제거하는 것이 선택 사항인 경우 주문, 견적 및 고객과 같은 해당 테이블을 자릅니다. 그러나 경우에 따라 전체 데이터 세트를 원하지만 값은 익명으로 지정할 수 있습니다. 이는 일반적으로 스테이징 환경에서 적용됩니다. 또한 업그레이드 전에 유용합니다. 실제 양의 데이터가 있지만 익명으로 처리하면 업그레이드를 위한 배포 실행 시간을 테스트하고 확인할 수 있습니다. 제한된 데이터 세트가 있는 경우 업그레이드 프로세스 및 타이밍을 과소평가할 수 있습니다.
 
-+++고객 정보 무작위 지정 예 다음은 Adobe Commerce이 데이터를 저장하는 일부 표준 테이블에서 임의의 문자열과 모든 이름 및 성 필드를 사용하여 고객 이메일 주소를 변경하는 방법에 대한 예입니다. **모든 테이블에서 중요한 데이터를 확인해야 합니다. 이 목록은 고객 데이터를 저장할 수 있는 테이블에 포함되지 않습니다**
++++고객 정보 무작위 지정 예
+다음은 Adobe Commerce이 데이터를 저장하는 일부 표준 테이블에서 임의의 문자열과 모든 이름 및 성 필드를 사용하여 고객 이메일 주소를 변경하는 방법에 대한 예입니다. **모든 테이블에서 중요한 데이터를 확인해야 합니다. 이 목록은 고객 데이터를 저장할 수 있는 테이블에 포함되지 않습니다.**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++정보 완전히 제거 예 다음은 모든 주문, 견적, 대변 메모 등을 실행하기 전에 또는 더 낮은 개발 환경에서 제거하는 예입니다.
++++정보 완전히 제거 예
+다음은 실행 전 또는 개발 환경이 낮은 경우 모든 주문, 견적, 대변 메모 등을 제거하는 예입니다
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -210,11 +212,11 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## 환경 변수 사용
 
-[!BADGE Adobe Commerce on cloud only]{type=Informative}
+클라우드에서만 [!BADGE Adobe Commerce]{type=Informative}
 
 환경 변수를 사용하면 각 환경에 대해 변경할 수 있고 변경해야 하는 특정 값을 설정할 수 있습니다. 예를 들어 모든 환경에 대해 서로 다른 관리자 URL을 보유할 수 있습니다. 이 값을 환경 변수로 설정하면 필요한 경우 Cloud UI에서 이 값을 구성하고 빠르게 참조할 수 있습니다.
 
-Experience League에서 이 주제에 대해 자세히 읽어볼 수 있습니다. [클라우드 인프라의 Commerce 환경 변수](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+이 주제에 대한 자세한 내용은 클라우드 인프라 환경 변수의 Experience League [Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}에서 확인할 수 있습니다.
 
 ## 소프트웨어 취약성 검색 도구
 
@@ -232,6 +234,6 @@ WAF는 웹 및 관리자 트래픽을 검사하여 의심되는 활동을 식별
 
 클라우드 기반 서비스로서 WAF는 설치 또는 유지 관리에 필요한 하드웨어나 소프트웨어가 필요하지 않습니다. 기존 기술 파트너인 Fastly는 소프트웨어와 전문 지식을 제공합니다. Fastly의 글로벌 전달 네트워크에 있는 각 캐시 노드에는 항상 실행되는 고성능 WAF가 있습니다.
 
-Fastly에서 제공하는 Adobe Commerce on cloud의 WAF에 대한 자세한 내용은 [Adobe Commerce 기술 자료 FAQ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Fastly에서 제공하는 Adobe Commerce on cloud의 WAF에 대한 자세한 내용은 [Adobe Commerce 기술 자료 FAQ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}를 참조하십시오.
 
 {{$include /help/_includes/hosting-related-links.md}}

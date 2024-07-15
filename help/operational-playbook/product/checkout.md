@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 소매업체는 서로 다른 고객의 요구를 충족시키기 위해 서로 다른 배송 방법을 제공해야 합니다.
 
-결제 옵션 외에도 소매업체는 다음과 같은 옵션을 제공할 수 있습니다. [클릭 및 수집](click-collect.md).
+결제 옵션 외에도 소매업체는 [클릭 및 수집](click-collect.md)과 같은 옵션을 제공할 수 있습니다.
 
 ## 결제 세부 정보
 

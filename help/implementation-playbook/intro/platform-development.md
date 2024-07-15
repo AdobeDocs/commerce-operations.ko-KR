@@ -26,8 +26,8 @@ ht-degree: 0%
 
 일부 솔루션 구현자는 방법론, 프로세스 및 도구에서 고유한 환경 설정을 가질 수 있지만, 이 플레이북은 대부분의 구현에서 공유할 수 있는 허용되는 모범 사례 및 방법론에 중점을 둡니다.
 
-모든 대형 IT 프로젝트와 마찬가지로 Adobe Commerce은 모범 사례 및 표준화를 사용하는 코딩 표준 및 Adobe Commerce 내에 제정된 표준을 기반으로 구축됩니다 [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/). 이러한 표준을 따르는 것은 버그를 제거하고 사용자 지정 코드 품질 및 유지 관리를 개선하는 데 중요합니다.
+Adobe Commerce은 모든 대형 IT 프로젝트와 마찬가지로 모범 사례 및 표준화를 사용하는 코딩 표준 및 Adobe Commerce [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/) 내에서 설정된 표준을 기반으로 구축됩니다. 이러한 표준을 따르는 것은 버그를 제거하고 사용자 지정 코드 품질 및 유지 관리를 개선하는 데 중요합니다.
 
 ## 클라우드 인프라의 Adobe Commerce
 
-Adobe Commerce on cloud infrastructure는 Adobe Commerce 소프트웨어를 위한 관리되고 자동화된 호스팅 플랫폼입니다. Adobe Commerce on cloud infrastructure에는 온-프레미스 Adobe Commerce 구현과 구별되는 다양한 기능이 포함되어 있습니다. 다음을 참조하십시오. [Cloud 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on cloud infrastructure는 Adobe Commerce 소프트웨어를 위한 관리되고 자동화된 호스팅 플랫폼입니다. Adobe Commerce on cloud infrastructure에는 온-프레미스 Adobe Commerce 구현과 구별되는 다양한 기능이 포함되어 있습니다. [클라우드 가이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)를 참조하세요.

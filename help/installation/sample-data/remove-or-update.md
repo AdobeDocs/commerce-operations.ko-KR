@@ -13,9 +13,9 @@ ht-degree: 0%
 
 이 항목에서는 다음 방법을 설명합니다.
 
-* [샘플 데이터 모듈 제거](#remove-sample-data-modules) Adobe Commerce 설치에서 `composer.json`. 이 옵션은 다음을 수행합니다 *아님* 데이터베이스에서 샘플 데이터를 제거합니다.
+* Adobe Commerce 설치 `composer.json`에서 [샘플 데이터 모듈을 제거](#remove-sample-data-modules)합니다. 이 옵션은 데이터베이스에서 샘플 데이터를 *제거하지*&#x200B;않습니다.
 
-* [샘플 데이터 업데이트 준비](#prepare-to-update-sample-data) (예: Magento 응용 프로그램을 업데이트하기 전).
+* [샘플 데이터 업데이트를 준비합니다](#prepare-to-update-sample-data)(예: Magento 응용 프로그램을 업데이트하기 전).
 
 ## 샘플 데이터 모듈 제거
 
@@ -59,4 +59,4 @@ bin/magento sampledata:remove
 bin/magento sampledata:reset
 ```
 
-그 이후에, [애플리케이션 업데이트](../tutorials/uninstall.md#update-the-application).
+그런 다음 [응용 프로그램을 업데이트](../tutorials/uninstall.md#update-the-application)합니다.

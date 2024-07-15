@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **버전**: 3.0.17
 
-이 참조에는 `bin/uct` 명령줄 도구입니다.
-초기 목록은 다음을 사용하여 자동으로 생성됩니다. `bin/uct list` Adobe Commerce의 명령.
+이 참조에는 `bin/uct` 명령줄 도구를 통해 사용할 수 있는 9개의 명령이 포함되어 있습니다.
+Adobe Commerce에서 `bin/uct list` 명령을 사용하여 초기 목록이 자동으로 생성됩니다.
 
-에서 도구에 대해 자세히 알아보기 [개요](/help/upgrade/upgrade-compatibility-tool/overview.md).
+[개요](/help/upgrade/upgrade-compatibility-tool/overview.md)에서 도구에 대해 자세히 알아보세요.
 
 >[!NOTE]
 >
->이 참조는 응용 프로그램 코드베이스에서 생성됩니다. 콘텐츠를 변경하기 위해에서 해당 명령 구현에 대한 소스 코드를 업데이트할 수 있습니다 [코드베이스](https://github.com/magento) 검토를 위해 변경 사항을 보관하고 제출합니다. 다른 방법은 _피드백 제공_ (오른쪽 상단에서 링크를 찾습니다.). 기여도 가이드라인은 를 참조하십시오. [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>이 참조는 응용 프로그램 코드베이스에서 생성됩니다. 내용을 변경하려면 [codebase](https://github.com/magento) 리포지토리에서 해당 명령 구현의 소스 코드를 업데이트한 다음 변경 내용을 제출하여 검토할 수 있습니다. 다른 방법은 _피드백을 제공_&#x200B;하는 것입니다(오른쪽 상단에서 링크 찾기). 기여도 지침이 필요하면 [코드 기여도](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
 ## `_complete`
 
@@ -38,7 +38,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--input`, `-i`
 
-입력 토큰의 배열(예: COMP_WORDS 또는 argv)
+입력 토큰 배열(예: COMP_WORDS 또는 argv)
 
 - 기본값: `[]`
 - 값 필요

@@ -1,11 +1,11 @@
 ---
 title: B2B와 B2C란 무엇입니까?
-description: 다양한 상거래 비즈니스 모델에 대해 알아봅니다.
+description: 다양한 Commerce 비즈니스 모델에 대해 알아봅니다.
 exl-id: d66b4a7f-d54b-4902-8791-7a8f67fa4b43
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
 
@@ -52,10 +52,10 @@ B2B 고객 서비스:
 B2C 고객 서비스:
 
 - 연중무휴 24시간 고객 서비스
-- 판매 후 반환
-- 판매 후 교환
-- 판매 후 문제
-- 사용 가능
+- Post 판매 수익
+- Post-sale exchange
+- Post 판매 문제
+- 가용성
 
 ## B2B와 B2C의 차이점 요약
 

@@ -13,11 +13,11 @@ ht-degree: 0%
 
 이 항목에서는 리소스가 다른 사용자와 공유되지 않는 데이터 센터(가상화되지 않음)에서 물리적으로 호스팅되는 일반 서버를 사용하는 Adobe Commerce 인스턴스에 대한 일반적인 권장 설정 방법에 대해 설명합니다. 호스팅 공급자, 특히 Commerce 고성능 호스팅을 전문으로 하는 경우 요구 사항에 따라 동일하거나 더 효과적인 다른 설정을 추천할 수 있습니다.
 
-클라우드 인프라 환경의 Adobe Commerce은 다음을 참조하십시오. [스타터 아키텍처](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+클라우드 인프라 환경에 대한 Adobe Commerce의 경우 [Starter 아키텍처](https://devdocs.magento.com/cloud/architecture/starter-architecture.html)를 참조하십시오.
 
 ## [!DNL Commerce] 참조 아키텍처 다이어그램
 
-다음 [!DNL Commerce] 참조 아키텍처 다이어그램은 확장 가능한 아키텍처를 설정하는 모범 사례 접근 방식을 나타냅니다. [!DNL Commerce] 사이트.
+[!DNL Commerce] 참조 아키텍처 다이어그램은 확장 가능한 [!DNL Commerce] 사이트를 설정하는 모범 사례 방법을 나타냅니다.
 
 다이어그램의 각 요소 색상은 요소가 Magento Open Source의 일부인지 Adobe Commerce의 일부인지 여부와 필요한 경우 이 요소를 나타냅니다.
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 ### [!DNL Varnish]
 
-* A [!DNL Varnish] 클러스터는 사이트의 트래픽으로 확장할 수 있습니다.
+* [!DNL Varnish] 클러스터는 사이트의 트래픽으로 확장할 수 있습니다.
 * 필요한 캐시 페이지 수에 따라 인스턴스 크기를 조정합니다
-* 트래픽이 많은 사이트에서 [!DNL Varnish] 기본: 웹 계층당 하나의 요청(최대)을 캐시에서 플러시할 수 있음
+* 트래픽이 많은 사이트에서 [!DNL Varnish]을(를) 기본으로 사용하여 웹 계층당 하나의 요청을 캐시에서 플러시합니다
 
 ### 웹
 
@@ -62,14 +62,14 @@ ht-degree: 0%
 * GFS 또는 GlusterFS를 사용하여 Pub/Media 스토리지를 사용하는 것이 좋습니다.
 * 또는 트래픽이 적은 사이트에 DB 스토리지 사용
 
-### 추천 [!DNL Varnish] 참조 아키텍처
+### 권장 [!DNL Varnish] 참조 아키텍처
 
-Magento은 여러 전체 페이지 캐싱 엔진(File, Memcache, Redis, [!DNL Varnish])를 즉시 사용할 수 있으며 확장을 통한 확장된 적용 범위도 함께 사용할 수 있습니다. [!DNL Varnish] 는 권장되는 전체 페이지 캐시 엔진입니다.  [!DNL Commerce] 은 다양한 을 지원합니다. [!DNL Varnish] 구성.
+Magento은 확장을 통해 확장된 범위와 함께 여러 전체 페이지 캐싱 엔진(File, Memcache, Redis, [!DNL Varnish])을 기본적으로 지원합니다. [!DNL Varnish]은(는) 권장되는 전체 페이지 캐시 엔진입니다.  [!DNL Commerce]은(는) 다양한 [!DNL Varnish] 구성을 지원합니다.
 
-고가용성을 필요로 하지 않는 사이트의 경우 단순 키를 사용하는 것이 좋습니다 [!DNL Varnish] nginx SSL 종료로 설정합니다.
+고가용성이 필요하지 않은 사이트의 경우 Nginx SSL 종료와 함께 간단한 [!DNL Varnish] 설정을 사용하는 것이 좋습니다.
 
-![단순 [!DNL Varnish] SSL 종료를 사용한 구성](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![SSL 종료를 사용한 간단한 [!DNL Varnish] 구성](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-고가용성이 필요한 사이트의 경우 2계층을 사용하는 것이 좋습니다 [!DNL Varnish] ssl 종료 로드 밸런서를 사용한 구성
+고가용성이 필요한 사이트의 경우 SSL 종료 로드 밸런서와 함께 2계층 [!DNL Varnish] 구성을 사용하는 것이 좋습니다.
 
-![2계층 고가용성 [!DNL Varnish] ssl 종료 로드 밸런서를 사용한 구성](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+SSL이 부하 분산 장치를 종료하는 ![고가용성 2계층 [!DNL Varnish] 구성](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

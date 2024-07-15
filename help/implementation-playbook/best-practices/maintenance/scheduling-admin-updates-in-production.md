@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 0%
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 0%
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
 
 ## 추가 정보
 
-- [캐싱 우수 사례](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
+- [캐싱 모범 사례](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
 - [비공개 콘텐츠: 비공개 콘텐츠 무효화](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [하드웨어 권장 사항: 캐시](../../../performance/hardware.md#caches)
 - [고급 설정: Redis 설정](../../../performance/advanced-setup.md#set-up-redis)

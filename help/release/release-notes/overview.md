@@ -16,8 +16,8 @@ ht-degree: 3%
 
 >[!TIP]
 >
->- Adobe Commerce을 처음 사용하는 경우 다음을 참조하십시오. [엔터프라이즈 아키텍처](../../implementation-playbook/architecture/enterprise-blueprint.md) 및 [Adobe Commerce 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) 방향을 잡아야 할 주제입니다.
->- 업그레이드에 대한 자세한 내용은 [권장 읽기](../../upgrade/resources/recommended-reading.md).
+>- Adobe Commerce을 처음 사용하는 경우 [엔터프라이즈 아키텍처](../../implementation-playbook/architecture/enterprise-blueprint.md) 및 [Adobe Commerce 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) 항목을 참조하여 알아보십시오.
+>- 업그레이드에 대한 자세한 내용은 [권장 읽기](../../upgrade/resources/recommended-reading.md)를 참조하세요.
 
 <table>
   <tbody>
@@ -32,19 +32,19 @@ ht-degree: 3%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Adobe Commerce용 B2B</a></li>
           </ul>
         </td>
-      <td><strong>클라우드 인프라의 Adobe Commerce</strong>
+      <td>클라우드 인프라의 <strong>Adobe Commerce</strong>
         <p>클라우드 플랫폼에서 Adobe Commerce 설치 및 업그레이드를 배포하고 관리하도록 설계된 Adobe Commerce용 Cloud Suite 패키지의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">이전 버전과 호환 불가능한 변경 사항</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Commerce용 클라우드 패치</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Commerce용 Cloud Docker</a></li>
+            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Commerce용 클라우드 도커</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Commerce용 클라우드 구성 요소</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html">ece-tools</a></li>
           </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>Adobe Commerce용 서비스</strong>
+      <td>Adobe Commerce용 <strong>서비스</strong>
         <p>혁신적인 Commerce 머천다이징 서비스의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
@@ -62,7 +62,7 @@ ht-degree: 3%
       <td><strong>도구</strong>
         <p>Adobe Commerce 소프트웨어를 더 쉽게 찾고 사용할 수 있도록 설계된 도구의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Adobe APP Builder 개발자용 API Mesh</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">App Builder 개발자 Adobe을 위한 API Mesh</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe Commerce에 대한 이벤트 Adobe I/O</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">관리자 UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">품질 패치 도구</a></li>
@@ -72,7 +72,7 @@ ht-degree: 3%
       </td>
     </tr>
     <tr>
-       <td><strong>Storefront 경험</strong>
+       <td><strong>상점 환경</strong>
         <p>고객을 위한 고유한 경험을 구축하는 데 사용할 수 있는 Storefront 기술의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce 상점 첫 화면</a></li>

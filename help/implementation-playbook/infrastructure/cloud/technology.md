@@ -5,7 +5,7 @@ exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
 source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 # 기술
 
-Adobe Commerce on cloud infrastructure는 여러 소프트웨어 솔루션을 사용하여 플랫폼을 지원합니다. 에서 다음 항목을 참조하십시오. _Cloud 안내서_ 자세한 내용은:
+Adobe Commerce on cloud infrastructure는 여러 소프트웨어 솔루션을 사용하여 플랫폼을 지원합니다. 자세한 내용은 _Cloud Guide_&#x200B;에서 다음 항목을 참조하십시오.
 
 - [Pro 환경 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
-- [초보자 환경 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
+- [Starter 환경 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## 기능 및 이점
 

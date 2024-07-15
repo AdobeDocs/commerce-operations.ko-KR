@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Adobe Commerce은 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
 
-![프론트엔드 데이터 액세스 포인트](../../assets/security-compliance/frontend-data-access-points.svg)
+![프론트엔드 데이터 액세스 지점](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### 백엔드 데이터 진입점
 
@@ -46,7 +46,7 @@ Adobe Commerce은 고객이 로그인하고 여러 페이지를 보거나 체크
 
 Adobe Commerce은 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고 그리드를 클릭하여 자세한 정보를 확인하고 기타 다양한 작업을 수행합니다.
 
-![백엔드 데이터 액세스 포인트](../../assets/security-compliance/backend-data-access-points.svg)
+![백엔드 데이터 액세스 지점](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## 데이터베이스 엔티티
 
@@ -71,7 +71,7 @@ Adobe Commerce은 다음 고객 속성을 저장하도록 구성할 수 있습�
 
 #### `customer_entity` 및 &#39;customer_entity&#39; 참조
 
-의 다음 열 `customer_entity` 표에는 고객 정보가 포함되어 있습니다.
+`customer_entity` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | ------------ | ------------ |
@@ -84,7 +84,7 @@ Adobe Commerce은 다음 고객 속성을 저장하도록 구성할 수 있습�
 | `dob` | 날짜 |
 | `gender` | smallint(5) |
 
-다음 표는 다음을 참조합니다. `customer_entity` 및 에는 사용자 지정 고객 특성이 포함될 수 있습니다.
+다음 테이블은 `customer_entity`을(를) 참조하며 사용자 지정 고객 특성을 포함할 수 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | -------------------------- | ------- | ------------- |
@@ -94,9 +94,9 @@ Adobe Commerce은 다음 고객 속성을 저장하도록 구성할 수 있습�
 | `customer_entity_text` | `value` | 텍스트 |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_grid_flat` 표
+#### `customer_grid_flat` 테이블
 
-의 다음 열 `customer_grid_flat` 표에는 고객 정보가 포함되어 있습니다.
+`customer_grid_flat` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | -------------------- | ------------ |
@@ -139,7 +139,7 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 #### `customer_address_entity` 및 `customer_address_entity` 참조
 
-의 다음 열 `customer_address_entity` 표에는 고객 정보가 포함되어 있습니다.
+`customer_address_entity` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | ------------ | ------------ |
@@ -158,7 +158,7 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-다음 표는 다음을 참조합니다. `customer_address_entity` 및 에는 사용자 지정 고객 특성이 포함될 수 있습니다.
+다음 테이블은 `customer_address_entity`을(를) 참조하며 사용자 지정 고객 특성을 포함할 수 있습니다.
 
 | 표 | 열 | 데이터 유형 |
 | ---------------------------------- | ------- | ------------- |
@@ -170,11 +170,11 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 ### 주문 데이터
 
-다음 `sales_order` 및 관련 테이블에는 고객 이름, 청구 및 배송 주소 및 관련 데이터가 포함되어 있습니다.
+`sales_order` 및 관련 테이블에는 고객 이름, 청구 및 배송 주소 및 관련 데이터가 포함되어 있습니다.
 
-#### `sales_order` 표
+#### `sales_order` 테이블
 
-의 다음 열 `sales_order` 표에는 고객 정보가 포함되어 있습니다.
+`sales_order` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --------------------- | ------------ |
@@ -193,9 +193,9 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 | `remote_ip` | varchar(32) |
 | `x_forwarded_for` | varchar(32) |
 
-#### `sales_order_address` 표
+#### `sales_order_address` 테이블
 
-다음 `sales_order_address` 테이블에는 고객의 주소가 들어 있습니다.
+`sales_order_address` 테이블에는 고객의 주소가 들어 있습니다.
 
 | 열 | 데이터 유형 |
 | --------------------- | ------------ |
@@ -216,9 +216,9 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 | `suffix` | varchar(255) |
 | `company` | varchar(255) |
 
-#### `sales_order_grid` 표
+#### `sales_order_grid` 테이블
 
-의 다음 열 `sales_order_grid` 표에는 고객 정보가 포함되어 있습니다.
+`sales_order_grid` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | ---------------------- | ------------ |
@@ -235,9 +235,9 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 견적에는 고객의 이름, 이메일, 주소 및 관련 정보가 포함되어 있습니다.
 
-#### `quote` 표
+#### `quote` 테이블
 
-의 다음 열 `quote` 표에는 고객 정보가 포함되어 있습니다.
+`quote` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | --------------------- | ------------ |
@@ -252,9 +252,9 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 | `customer_taxvat` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
-#### `quote_address` 표
+#### `quote_address` 테이블
 
-의 다음 열 `quote_address` 표에는 고객 정보가 포함되어 있습니다.
+`quote_address` 테이블의 다음 열에는 고객 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 ### 결제 데이터
 
-다음 `sales_order_payment` 표에는 신용 카드 정보 및 기타 트랜잭션 정보가 포함되어 있습니다.
+`sales_order_payment` 테이블에는 신용 카드 정보 및 기타 트랜잭션 정보가 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | ------------------------ | ------------ |
@@ -297,9 +297,9 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 고객이 비공개 판매 및 이벤트에 초대장을 보낼 수 있도록 Adobe Commerce을 구성할 수 있습니다.
 
-#### `magento_invitation` 표
+#### `magento_invitation` 테이블
 
-다음 `magento_invitation` 표에는 고객 ID, 이메일 및 참조 ID가 포함되어 있습니다.
+`magento_invitation` 테이블에는 고객 ID, 전자 메일 및 참조 ID가 있습니다.
 
 | 열 | 데이터 유형 |
 | ------------- | ------------ |
@@ -307,9 +307,9 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 | `email` | varchar(255) |
 | `referral_id` | int(10) |
 
-#### `magento_invitation_track` 표
+#### `magento_invitation_track` 테이블
 
-다음 `magento_invitation_track` 표에는 고객 정보도 포함되어 있습니다.
+`magento_invitation_track` 표에는 고객 정보도 포함되어 있습니다.
 
 | 열 | 데이터 유형 |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ Adobe Commerce은 다음 고객 속성을 저장합니다.
 
 ### 고객을 참조하는 기타 테이블
 
-다음 표에는 `customer_id` 열:
+다음 표에는 `customer_id` 열이 있습니다.
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

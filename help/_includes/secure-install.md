@@ -9,8 +9,8 @@ ht-degree: 0%
 
 HTTPS라고도 하는 SSL(Secure Sockets Layer)을 관리자 및 상점 모두에 사용하려면 다음 매개 변수를 모두 설정해야 합니다.
 
-* `--use-secure`: 다음으로 설정 `1`
-* `--base-url-secure`: 보안 URL(즉, 다음으로 시작)로 설정합니다. `https://`)
-* `--use-secure-admin` 다음으로 설정 `1`
+* `--use-secure`: `1`(으)로 설정
+* `--base-url-secure`: 보안 URL로 설정(즉, `https://`(으)로 시작)
+* `--use-secure-admin`을(를) `1`(으)로 설정
 
 이러한 매개 변수에 대한 자세한 내용은 이 항목의 뒷부분에서 확인할 수 있습니다.

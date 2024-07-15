@@ -45,7 +45,7 @@ Adobe Commerce은 PHP 기반 응용 프로그램이며 최신 릴리스는 항�
 
 Adobe Commerce은 Nginx 및 Apache 웹 서버를 완전히 지원합니다. Adobe Commerce은 다음 두 가지 모두에 대한 샘플 권장 구성 파일을 제공합니다.
 
-- **Ngix**—`<magento_home>/nginx.conf.sample`
+- **Nginx**—`<magento_home>/nginx.conf.sample`
 - **Apache**—`<magento_home>.htaccess.sample`
 
 Nginx 샘플에는 성능 향상을 위한 설정이 포함되어 있으며 재구성이 거의 필요하지 않도록 설계되었습니다.
@@ -62,11 +62,11 @@ Adobe Commerce 버전 2.4 이상의 경우, 모든 설치는 Elasticsearch 또�
 
 ## 메시지 큐 서비스
 
-메시지 큐들은 메시지의 발신자와 수신자가 서로 접촉하지 않는 비동기 통신 메커니즘을 제공한다. [!DNL RabbitMQ] 는 안정적이고 가용성이 높으며 확장 가능하고 휴대성이 뛰어난 메시징 시스템을 제공하는 오픈 소스 메시지 브로커입니다.
+메시지 큐들은 메시지의 발신자와 수신자가 서로 접촉하지 않는 비동기 통신 메커니즘을 제공한다. [!DNL RabbitMQ]은(는) 신뢰할 수 있고 가용성이 높으며 확장 가능한 휴대용 메시징 시스템을 제공하는 오픈 소스 메시지 브로커입니다.
 
 ## 보안 도구
 
-다음 [Adobe Commerce 보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html) 을 사용하면 스토어 웹 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 오래된 소프트웨어에 대한 업데이트를 받을 수 있습니다. 일반적으로 UAT(사용자 승인 테스트)를 시작할 때 이 도구를 사용하기 시작합니다. 무료로 Adobe Commerce의 모든 구현 및 버전에서 사용할 수 있는 Adobe Commerce 보안 검색 도구 외에도 CI/CD 프로세스 중 및 각 릴리스 전에 사용할 수 있는 다른 선택 사항이 있습니다.
+[Adobe Commerce 보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html)를 사용하면 저장소 웹 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 오래된 소프트웨어에 대한 업데이트를 받을 수 있습니다. 일반적으로 UAT(사용자 승인 테스트)를 시작할 때 이 도구를 사용하기 시작합니다. 무료로 Adobe Commerce의 모든 구현 및 버전에서 사용할 수 있는 Adobe Commerce 보안 검색 도구 외에도 CI/CD 프로세스 중 및 각 릴리스 전에 사용할 수 있는 다른 선택 사항이 있습니다.
 
 SonarQube는 코드의 기술 품질을 분석하고 측정하도록 설계된 오픈 소스 품질 관리 플랫폼입니다. SonarQube는 코드 버그, 구문 오류 및 취약점에 대한 전체 보고서를 제공할 뿐만 아니라 코드 수정에 대한 제안과 예제를 제공합니다. SonarQube는 코드를 배포하기 전에 분석할 수 있는 도구로 CI/CD 환경에서 사용하기에 적합합니다.
 

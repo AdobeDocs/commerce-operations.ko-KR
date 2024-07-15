@@ -1,79 +1,79 @@
 ---
 title: 액세스 방법 [!DNL Site-Wide Analysis Tool]
-description: 에 액세스하는 방법 알아보기 [!DNL Site-Wide Analysis Tool]
+description: ' [!DNL Site-Wide Analysis Tool]에 액세스하는 방법 알아보기'
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
 source-git-commit: 5f9f81b930a3b23c0b334ccbea94d296338a0048
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-# 액세스 방법 [!DNL Site-Wide Analysis Tool]
+# [!DNL Site-Wide Analysis Tool]에 액세스하는 방법
 
-다음 두 가지 방법으로 액세스할 수 있습니다. [!DNL Site-Wide Analysis Tool Dashboard].
+[!DNL Site-Wide Analysis Tool Dashboard]에 액세스하는 방법에는 두 가지가 있습니다.
 
-다음에 액세스할 수 있습니다. [!DNL dashboard] 다음 중 하나에서 [[!DNL Site-Wide Analysis Tool] 웹 사이트](https://supportinsights.adobe.com/commerce) 직접 **(클라우드 인프라의 Adobe Commerce 전용)** Adobe ID에 로그인하거나 [!DNL dashboard] 스토어에서 [!DNL Admin Panel].
+[[!DNL Site-Wide Analysis Tool] 웹 사이트](https://supportinsights.adobe.com/commerce)에서 [!DNL dashboard]에 직접 **(클라우드 인프라의 Adobe Commerce 전용)**&#x200B;에 액세스하여 Adobe ID으로 로그인하거나 스토어의 [!DNL Admin Panel]에서 [!DNL dashboard]을(를) 통해 액세스할 수 있습니다.
 
-다음 [!DNL Site-Wide Analysis Tool] 다음에서 서비스를 사용할 수 있습니다. [프로덕션 모드](https://docs.magento.com/user-guide/magento/installation-modes.html) 대상 [!DNL Admin] 사용자 액세스 권한이 있는 사용자 [역할 리소스](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+[!DNL Site-Wide Analysis Tool] 서비스는 [역할 리소스](https://docs.magento.com/user-guide/system/permissions-user-roles.html)에 액세스할 수 있는 권한이 있는 [!DNL Admin] 사용자에 대해 [프로덕션 모드](https://docs.magento.com/user-guide/magento/installation-modes.html)에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
->Adobe Commerce을 온-프레미스에 설치한 경우 [에이전트](../site-wide-analysis-tool/installation.md) 을 참조하십시오.
+>Adobe Commerce을 온-프레미스로 설치한 경우 이 도구를 사용하려면 인프라에 [에이전트](../site-wide-analysis-tool/installation.md)을(를) 설치해야 합니다.
 
 ![사이트 전체 분석 대시보드](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]대시보드*
 
-## 옵션 1: 다음에 로그인 [!DNL Site-Wide Analysis Tool Dashboard] 에서 직접 [!DNL Site-Wide Analysis Tool] 도메인(클라우드 인프라의 Adobe Commerce 전용)
+## 옵션 1: [!DNL Site-Wide Analysis Tool] 도메인에서 직접 [!DNL Site-Wide Analysis Tool Dashboard]에 로그인(클라우드 인프라의 Adobe Commerce 전용)
 
-An **[!DNL Adobe ID]필수** 에 액세스 [!DNL Commerce] 계정입니다.
-이미 다음 항목이 있는 경우: [!DNL Commerce] 계정이 있지만 [!DNL Adobe ID], 로그인 프로세스 중에 만들 수 있습니다.
+[!DNL Commerce] 계정에 액세스하려면 **[!DNL Adobe ID]이(가) 필요합니다**.
+이미 [!DNL Commerce] 계정이 있지만 [!DNL Adobe ID]이(가) 없는 경우 로그인 프로세스 중에 계정을 만들 수 있습니다.
 
-1. 다음으로 이동 [https://supportinsights.adobe.com/commerce](https://supportinsights.adobe.com/commerce).
+1. [https://supportinsights.adobe.com/commerce](https://supportinsights.adobe.com/commerce)(으)로 이동합니다.
 
-1. 다음을 클릭합니다. **[!UICONTROL Sign in with Adobe ID]** 버튼을 클릭하고 프롬프트를 따릅니다.
+1. **[!UICONTROL Sign in with Adobe ID]** 단추를 클릭하고 나타나는 메시지를 따릅니다.
 
    ![사이트 전체 분석 대시보드](../../assets/tools/adobe-id-login.jpg)
    *[!DNL Adobe ID]로그인 화면*
 
 1. 약관에 동의합니다.
 
-1. **<u>참고</u>:** 귀하의 계정에 대한 권한이 부여되어야 합니다. **[!DNL Support Permissions]** 액세스하려면 [!DNL Site-Wide Analysis Tool Dashboard].
-자세한 내용은에서 확인하십시오. [공유 [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) 사용 안내서에서 참조하십시오.
+1. **<u>참고</u>:** [!DNL Site-Wide Analysis Tool Dashboard]에 액세스하려면 귀하의 계정에 **[!DNL Support Permissions]** 권한이 있어야 합니다.
+자세한 내용은 사용 안내서의 [계정 공유 [!DNL Commerce] 에서 확인하세요](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html).
 
-## 옵션 2: 다음에 로그인 [!DNL Site-Wide Analysis Tool Dashboard] 스토어에서 [!DNL Admin Panel]
+## 옵션 2: 스토어의 [!DNL Admin Panel]에서 [!DNL Site-Wide Analysis Tool Dashboard]에 로그인
 
 ### 1단계: 권한 확인
 
-다음을 확인합니다 [!DNL Admin] 사용자 계정에는 액세스 권한이 있습니다. [!DNL Site-Wide Analysis Tool] 을 통해 [할당된 사용자 역할](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+[!DNL Admin] 사용자 계정에 [할당된 사용자 역할](https://docs.magento.com/user-guide/system/permissions-user-roles.html)을(를) 통해 [!DNL Site-Wide Analysis Tool]에 액세스할 수 있는 권한이 있는지 확인하십시오.
 
 >[!IMPORTANT]
 >
->다음 [!DNL Site-Wide Analysis Tool] 역할 리소스(권한)는 **아님** 자동 할당됨. 사용자 역할 및 의 각 사용자 계정에 개별적으로 할당된 역할에 대해 활성화해야 합니다. [!UICONTROL Admin].
+>[!DNL Site-Wide Analysis Tool] 역할 리소스(권한)가 **자동 할당되지 않음**. [!UICONTROL Admin]의 각 사용자 계정에 개별적으로 할당된 사용자 역할 및 역할에 대해 활성화해야 합니다.
 
-필요한 사용자 정의 역할에 대해 [!DNL Site-Wide Analysis Tool] 액세스, 다음을 수행합니다.
+[!DNL Site-Wide Analysis Tool] 액세스 권한이 필요한 사용자 지정 역할에 대해 다음을 수행하십시오.
 
-1. 다음 항목 선택 **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]** 역할 리소스.
+1. **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]** 역할 리소스를 선택합니다.
 
    ![사이트 전체 분석 대시보드](../../assets/tools/swat-role-access.png)
-   *[!DNL Site-Wide Analysis Tool]역할에 대해 선택된 권한*
+   *역할에 대해*[!DNL Site-Wide Analysis Tool] 권한이 선택됨
 
-1. 클릭 **[!UICONTROL Save Role]**.
+1. **[!UICONTROL Save Role]**&#x200B;을(를) 클릭합니다.
 
-1. 해당 역할이 할당된 모든 사용자에게 로그아웃하도록 알림 [!DNL Admin]을 클릭하고 다시 로그인합니다.
+1. 해당 역할이 할당된 사용자에게 [!DNL Admin]에서 로그아웃하도록 알리고 다시 로그인하세요.
 
 >[!NOTE]
 >
->사용자 계정에 액세스할 수 있는 권한이 있는지 확인한 경우 [!DNL Site-Wide Analysis Tool] 및에서 도구에 액세스하려고 하면 403 오류가 표시됩니다. [!DNL Admin]: 클라우드 인프라의 Adobe Commerce 인스턴스에서 HTTP 액세스 제어를 활성화할 수 있습니다. 다음 [!DNL Site-Wide Analysis Tool] HTTP 인증이 활성화된 경우 대시보드가 지원되지 않습니다. 이 문제 해결에 대한 자세한 내용은 [지원 문서](https://support.magento.com/hc/en-us/articles/360057400172-403-errors-when-accessing-Site-Wide-Analysis-Tool-on-Magento?_ga=2.168901729.117144580.1649172612-1623400270.1640858671).
+>사용자 계정에 [!DNL Site-Wide Analysis Tool]에 액세스할 수 있는 권한이 있고 사용자가 [!DNL Admin]에서 도구에 액세스하려고 할 때 403 오류가 발생하는 경우 클라우드 인프라의 Adobe Commerce 인스턴스에서 HTTP 액세스 제어를 사용하도록 설정할 수 있습니다. HTTP 인증을 사용하도록 설정한 경우 [!DNL Site-Wide Analysis Tool] 대시보드가 지원되지 않습니다. 이 문제를 해결하는 방법에 대한 자세한 내용은 [지원 문서](https://support.magento.com/hc/en-us/articles/360057400172-403-errors-when-accessing-Site-Wide-Analysis-Tool-on-Magento?_ga=2.168901729.117144580.1649172612-1623400270.1640858671)를 참조하세요.
 
-### 2단계: 액세스 [!DNL Site-Wide Analysis Tool]
+### 2단계: [!DNL Site-Wide Analysis Tool]에 액세스
 
-1. 다음에서 *[!UICONTROL Admin]* 사이드바, 이동 **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**.
+1. *[!UICONTROL Admin]* 사이드바에서 **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**(으)로 이동합니다.
 
    ![사이트 전체 분석 대시보드](../../assets/tools/ac-admin-panel-marked.jpg)
-   *[!DNL Site-Wide Analysis Tool]위치 [!DNL Admin Panel] Adobe Commerce에서*
+   Adobe Commerce에서 [!DNL Admin Panel]의 *[!DNL Site-Wide Analysis Tool]위치*
 
-1. 읽기 *사용 약관* 대상: [!DNL Site-Wide Analysis Tool] 및 클릭 **[!UICONTROL Accept]** 계속합니다.
+1. [!DNL Site-Wide Analysis Tool]의 *사용 약관*&#x200B;을 읽고 계속하려면 **[!UICONTROL Accept]**&#x200B;을(를) 클릭하십시오.
 
    각 사용자는 세션에 대한 사용 약관에 동의해야 합니다. 이 단계는 로그인한 각 세션에 대해 반복됩니다.
 
@@ -83,13 +83,13 @@ An **[!DNL Adobe ID]필수** 에 액세스 [!DNL Commerce] 계정입니다.
    ![사이트 전체 분석 대시보드](../../assets/tools/swat-information-tab.png)
    *[!DNL Site-Wide Analysis Tool]정보*
 
-## 에서 보고서 생성 [!DNL Site-Wide Analysis Tool Dashboard]
+## [!DNL Site-Wide Analysis Tool Dashboard]에서 보고서 생성
 
-1. 대시보드의 오른쪽 위 모서리에서 을(를) 클릭합니다. **[!UICONTROL Generate Report]**.
+1. 대시보드의 오른쪽 위 모서리에서 **[!UICONTROL Generate Report]**&#x200B;을(를) 클릭합니다.
 
-1. 각각에 대한 확인란을 선택합니다. **[!UICONTROL Type]** 및 **[!UICONTROL Priority]** 보고서에 포함할 설정입니다.
+1. 보고서에 포함할 각 **[!UICONTROL Type]** 및 **[!UICONTROL Priority]** 설정에 대한 확인란을 선택하십시오.
 
-1. 클릭 **[!UICONTROL Generate Report]**.
+1. **[!UICONTROL Generate Report]**&#x200B;을(를) 클릭합니다.
 
    ![사이트 전체 분석 대시보드](../../assets/tools/swat-report-settings.png)
    *보고서 설정*
@@ -104,4 +104,4 @@ An **[!DNL Adobe ID]필수** 에 액세스 [!DNL Commerce] 계정입니다.
 
 >[!NOTE]
 >
->권장 사항을 적용한 후에서 업데이트되기까지 며칠이 걸릴 수 있습니다. [!DNL Site-Wide Analysis Tool Dashboard] 또는 생성된 보고서입니다.
+>권장 사항을 적용한 후 [!DNL Site-Wide Analysis Tool Dashboard] 또는 생성된 보고서에서 업데이트되는 데 며칠이 걸릴 수 있습니다.

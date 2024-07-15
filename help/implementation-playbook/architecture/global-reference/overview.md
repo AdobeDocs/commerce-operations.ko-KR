@@ -19,7 +19,7 @@ ht-degree: 0%
 
 지역화된 통화, 언어, 미디어, 공유 카탈로그 및 고유 장바구니와 함께 여러 로컬 시장에서 여러 브랜드를 위한 여러 사이트를 운영하고 동일한 기능 및 통합을 구현하기 위한 불필요한 비용을 방지하려는 비즈니스를 운영하는 경우, 글로벌 참조 아키텍처(GRA)는 항상 좋은 옵션입니다.
 
-![건축에서 발산의 비용을 설명하는 표](../../../assets/playbooks/divergent-architecture.svg)
+![아키텍처의 분산 비용을 설명하는 표](../../../assets/playbooks/divergent-architecture.svg)
 
 ![아키텍처 통합 비용을 설명하는 표](../../../assets/playbooks/consolidated-architecture.svg)
 
@@ -55,4 +55,4 @@ GRA의 영향:
 
 >[!TIP]
 >
->다음을 참조하십시오 [GRA 예](examples.md).
+>[GRA 예제](examples.md)를 참조하십시오.

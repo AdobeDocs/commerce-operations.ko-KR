@@ -5,7 +5,7 @@ exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 6개의 P의 각 P도 마찬가지로 중요하지만, 제품 판매업체는 사이트 트래픽을 높이고 전환율을 높이기 위한 전술로 프로모션을 사용할 필요가 있습니다. 프로모션은 브랜드가 제공하는 제품 및 서비스의 마케팅을 지원합니다. 배송, 제품, 주문 등 다양한 홍보 수준이 있다.
 
-![판촉 광고 예](../../assets/playbooks/promotion-example.png)
+![프로모션 광고 예시](../../assets/playbooks/promotion-example.png)
 
 ## 프로모션 유형
 

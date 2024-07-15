@@ -1,15 +1,15 @@
 ---
-title: 상거래 전략
+title: Commerce 전략
 description: 권장 전략 프레임워크를 사용하여 핵심 전자 상거래 기능을 잠금 해제합니다.
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# 상거래 전략
+# Commerce 전략
 
 디지털 상거래는 매해 빠르게 진화하는 급속한 이동 세력이다. 이것은 개인에게는 흥미로울 수 있지만, 전자상거래인 이 땅의 지형을 헤쳐나가려는 조직에게는 또한 많은 도전이 따른다.
 
@@ -79,4 +79,4 @@ B2B와 B2C 모두에서 전자 상거래가 발전함에 따라 기업은 제품
 
 제안되는 전자 상거래 전략 프레임워크에 대해서는 다음 다이어그램을 참조하십시오.
 
-![상거래 전략 프레임워크 다이어그램](../../assets/playbooks/commerce-strategy-framework.png)
+![Commerce 전략 프레임워크 다이어그램](../../assets/playbooks/commerce-strategy-framework.png)

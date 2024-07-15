@@ -47,14 +47,14 @@ ht-degree: 0%
 
 ## 공급업체 번들 확장 프로그램(VBE)
 
-Adobe이 모두 제거됨 [VBE](https://devdocs.magento.com/extensions/vendor/) 2.4.4의 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
+Adobe이 2.4.4에서 모든 [VBE](https://devdocs.magento.com/extensions/vendor/)을(를) 제거했습니다. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
 
-Adobe Commerce 2.4.4 이상에서 이러한 확장을 계속 사용하려면 의 해당 패키지 종속성을 업데이트해야 합니다 `composer.json` 파일 _다음 이전_ 2.4.4로 업그레이드 사용할 패키지 이름 및 버전에 대해서는 공급업체에 문의하십시오.
+Adobe Commerce 2.4.4 이상에서 이러한 확장을 계속 사용하려면 2.4.4로 업그레이드하기 전에 `composer.json` 파일 _이전_&#x200B;에서 해당 패키지 종속성을 업데이트해야 합니다. 사용할 패키지 이름 및 버전에 대해서는 공급업체에 문의하십시오.
 
 자세한 내용은 다음 Adobe Commerce 마켓플레이스 목록을 참조하십시오.
 
-- [Amazon 페이](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Amazon 결제](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [클라르나](https://marketplace.magento.com/klarna-m2-klarna.html)
-- [정점](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
-- [요트포](https://marketplace.magento.com/yotpo-module-yotpo.html)
+- [클라나](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [꼭짓점](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)

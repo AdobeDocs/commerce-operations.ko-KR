@@ -1,12 +1,12 @@
 ---
 title: 바니시 ESI 차단
-description: Edge Side 포함 및 이를 사용하여 웹 페이지를 포함하는 방법에 대해 알아봅니다.
+description: Edge Side Includes 및 이를 사용하여 웹 페이지를 포함하는 방법에 대해 알아봅니다.
 badge: label="콘스탄틴 G 기여." type="Informative" url="https://github.com/goivvy" tooltip="콘스탄틴"
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ ESI(Edge Side Includes)는 다른 웹 페이지에 웹 페이지를 포함하는
 </div>
 ```
 
-니스 페치 내용물 `http://domain.com/index.php/page_cache/block/esi/blocks` 및 바꾸기 `<esi>` 태그로 묶습니다.
+바니시는 `http://domain.com/index.php/page_cache/block/esi/blocks`의 콘텐츠를 가져와서 `<esi>` 태그를 이 태그로 바꿉니다.
 
-## 상거래 및 바니시 ESI
+## Commerce 및 바니시 ESI
 
-상거래 프레임워크는 다음 조건이 충족되면 ESI 태그를 생성합니다.
+Commerce 프레임워크는 다음 조건이 충족되면 ESI 태그를 생성합니다.
 
-- 캐싱 응용 프로그램이 로 설정되어 있습니다. `Varnish Cache`
-- XML 레이아웃 `block` 요소가 와 함께 추가됨 `ttl` 속성
+- 캐싱 응용 프로그램이 `Varnish Cache`(으)로 설정되어 있습니다.
+- XML 레이아웃 `block` 요소가 `ttl` 특성과 함께 추가되었습니다.
 
 ### 예
 
@@ -42,7 +42,7 @@ ESI(Edge Side Includes)는 다른 웹 페이지에 웹 페이지를 포함하는
    </referenceContainer>
 ```
 
-위의 예에서 `block` 요소가 다음에서 컨텐츠를 추가합니다. `esi.phtml` 템플릿을 홈 페이지에 추가하고 Vannish에서 30초마다 자동으로 업데이트합니다.
+위의 예에서 `block` 요소는 `esi.phtml` 템플릿의 콘텐츠를 홈 페이지에 추가하고 Vannish는 30초마다 자동으로 업데이트합니다.
 
 ## 제한 사항
 

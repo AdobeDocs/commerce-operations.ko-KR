@@ -1,7 +1,7 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 | 드미트리 푸스 | [magento/magento2#33922](https://github.com/magento/magento2/pull/33922) | [magento/magento2#33924](https://github.com/magento/magento2/issues/33924) |
 | 이호르-스비지예프 | [magento/magento2#33903](https://github.com/magento/magento2/pull/33903) | [magento/magento2#33928](https://github.com/magento/magento2/issues/33928) [magento/magento2#23324](https://github.com/magento/magento2/issues/23324) |
 | 수세 | [magento/magento2#33886](https://github.com/magento/magento2/pull/33886) | [magento/magento2#33680](https://github.com/magento/magento2/issues/33680) [magento/magento2#33755](https://github.com/magento/magento2/issues/33755) [magento/magento2#33945](https://github.com/magento/magento2/issues/33945) |
-| NetStorm84 | [magento/magento2#33874](https://github.com/magento/magento2/pull/33874) | [magento/magento2#34008](https://github.com/magento/magento2/issues/34008) [magento/merchdocs#1686](https://github.com/magento/merchdocs/issues/1686) |
+| 넷스톰 | [magento/magento2#33874](https://github.com/magento/magento2/pull/33874) | [magento/magento2#34008](https://github.com/magento/magento2/issues/34008) [magento/merchdocs#1686](https://github.com/magento/merchdocs/issues/1686) |
 | 보바야추크 | [magento/magento2#33851](https://github.com/magento/magento2/pull/33851) | [magento/magento2#34483](https://github.com/magento/magento2/issues/34483) |
 | 안나팍 | [magento/magento2#33727](https://github.com/magento/magento2/pull/33727) | [magento/magento2#33747](https://github.com/magento/magento2/issues/33747) |
 | 마르빈힌츠 | [magento/magento2#33726](https://github.com/magento/magento2/pull/33726) | [magento/magento2#33760](https://github.com/magento/magento2/issues/33760) [magento/magento2#33908](https://github.com/magento/magento2/issues/33908) |
@@ -70,7 +70,7 @@ ht-degree: 0%
 | 차단 | [magento/magento2#32818](https://github.com/magento/magento2/pull/32818) | [magento/magento2#33434](https://github.com/magento/magento2/issues/33434) |
 | MJTheOne | [magento/magento2#32814](https://github.com/magento/magento2/pull/32814) | [magento/magento2#32819](https://github.com/magento/magento2/issues/32819) |
 | 이호르-스비지예프 | [magento/magento2#32808](https://github.com/magento/magento2/pull/32808) | [magento/magento2#32954](https://github.com/magento/magento2/issues/32954) |
-| Usik2203 | [magento/magento2#32792](https://github.com/magento/magento2/pull/32792) | [magento/magento2#32821](https://github.com/magento/magento2/issues/32821) |
+| 우식 | [magento/magento2#32792](https://github.com/magento/magento2/pull/32792) | [magento/magento2#32821](https://github.com/magento/magento2/issues/32821) |
 | 프레든 | [magento/magento2#32720](https://github.com/magento/magento2/pull/32720) | [magento/magento2#34356](https://github.com/magento/magento2/issues/34356) |
 | 브고르스키 | [magento/magento2#32637](https://github.com/magento/magento2/pull/32637) | [magento/magento2#32636](https://github.com/magento/magento2/issues/32636) |
 | 계단 | [magento/magento2#32286](https://github.com/magento/magento2/pull/32286) | [magento/magento2#32289](https://github.com/magento/magento2/issues/32289) [magento/magento2#28326](https://github.com/magento/magento2/issues/28326) |
@@ -83,9 +83,9 @@ ht-degree: 0%
 | 니그원 | [magento/magento2#31654](https://github.com/magento/magento2/pull/31654) | [magento/magento2#30948](https://github.com/magento/magento2/issues/30948) |
 | 키르모로조프 | [magento/magento2#31613](https://github.com/magento/magento2/pull/31613) | [magento/magento2#33809](https://github.com/magento/magento2/issues/33809) |
 | mrtuvn | [magento/magento2#31413](https://github.com/magento/magento2/pull/31413) | [magento/magento2#31379](https://github.com/magento/magento2/issues/31379) |
-| dani97 | [magento/magento2#30995](https://github.com/magento/magento2/pull/30995) | [magento/magento2#31019](https://github.com/magento/magento2/issues/31019) [magento/magento2#32625](https://github.com/magento/magento2/issues/32625) [magento/magento2#33696](https://github.com/magento/magento2/issues/33696) |
+| 다니 | [magento/magento2#30995](https://github.com/magento/magento2/pull/30995) | [magento/magento2#31019](https://github.com/magento/magento2/issues/31019) [magento/magento2#32625](https://github.com/magento/magento2/issues/32625) [magento/magento2#33696](https://github.com/magento/magento2/issues/33696) |
 | 안나팍 | [magento/magento2#30803](https://github.com/magento/magento2/pull/30803) | [magento/magento2#30828](https://github.com/magento/magento2/issues/30828) |
 | 케이트 키지마 | [magento/magento2#30562](https://github.com/magento/magento2/pull/30562) | [magento/magento2#33774](https://github.com/magento/magento2/issues/33774) |
-| Usik2203 | [magento/magento2#30526](https://github.com/magento/magento2/pull/30526) | [magento/magento2#33773](https://github.com/magento/magento2/issues/33773) |
+| 우식 | [magento/magento2#30526](https://github.com/magento/magento2/pull/30526) | [magento/magento2#33773](https://github.com/magento/magento2/issues/33773) |
 | hws47a | [magento/magento2#30001](https://github.com/magento/magento2/pull/30001) | [magento/magento-semver#50](https://github.com/magento/magento-semver/issues/50) |
 | 필립 샌더 | [magento/magento2#27212](https://github.com/magento/magento2/pull/27212) | [magento/magento2#29609](https://github.com/magento/magento2/issues/29609) |

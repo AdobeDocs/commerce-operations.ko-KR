@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 웹 사이트 및 저장소는 카탈로그 데이터의 승수이므로, 많은 웹 사이트 및 저장소가 있으면 다음과 같은 방식으로 사이트 성능에 부정적인 영향을 줄 수 있습니다.
 
-- 인덱스 테이블이 클수록 인덱싱 작업을 완료하는 데 필요한 시간이 늘어남 [물가지수].
+- 색인 테이블이 클수록 색인 작업을 완료하는 데 필요한 시간이 늘어납니다. [가격 색인].
 - 애플리케이션 구성을 검색하는 시간이 늘어나면 캐시되지 않은 카탈로그 페이지에 대한 storefront 응답 시간이 감소합니다.
 - 각 웹 사이트에 대해 데이터가 별도로 저장되므로 관리자에서 저장 작업을 완료하는 데 필요한 시간이 크게 증가합니다.
 

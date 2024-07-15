@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # 모듈 및 확장 관리
 
-개발자는 Adobe Commerce에서 해당 버전을 지정하여 모듈 및 확장을 업그레이드합니다 `composer.json` 파일. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
+기여 개발자는 Adobe Commerce `composer.json` 파일에서 해당 버전을 지정하여 모듈 및 확장을 업그레이드합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md)을 참조하세요.
 
-다음을 추가할 수 있습니다. `require` 섹션에 대한 섹션 `composer.json` 파일을 참조하거나 `composer require` 다음과 같은 명령:
+`composer.json` 파일에 `require` 섹션을 추가하거나 다음과 같이 `composer require` 명령을 사용할 수 있습니다.
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ For example:
 composer show --all example/module
 ```
 
-## 사용 `composer require` 명령
+## `composer require` 명령 사용
 
 명령 사용:
 
@@ -50,11 +50,11 @@ composer require example/module:1.0.0
 
 Composer가 종속성을 업데이트하고 모듈을 설치하는 동안 잠시 기다려 주십시오.
 
-## 추가 `require` composer.json 파일에 대한 섹션
+## composer.json 파일에 `require` 섹션 추가
 
-1. 를 엽니다. `composer.json` 텍스트 편집기에서.
+1. 텍스트 편집기에서 `composer.json`을(를) 엽니다.
 
-1. 추가 `require` 섹션.
+1. `require` 섹션을 추가합니다.
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Composer가 종속성을 업데이트하고 모듈을 설치하는 동안 잠시
    }
    ```
 
-1. 변경 내용을 `composer.json` 파일을 만들고 텍스트 편집기를 종료합니다.
+1. `composer.json` 파일에 변경 내용을 저장하고 텍스트 편집기를 종료합니다.
 
-1. 종속성을 해결하고 정확한 버전을 `composer.lock` 파일.
+1. 종속성을 해결하고 `composer.lock` 파일에 정확한 버전을 쓰십시오.
 
    ```bash
    composer update

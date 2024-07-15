@@ -16,22 +16,22 @@ ht-degree: 0%
 
 ## cron 설정
 
-UNIX 작업 스케줄러 cron 은 애플리케이션의 일상적인 작업에 매우 중요합니다. 리인덱싱, 뉴스레터, 이메일, 사이트 맵 등의 일정을 수립합니다. A *crontab* 는 cron 구성입니다.
+UNIX 작업 스케줄러 cron 은 애플리케이션의 일상적인 작업에 매우 중요합니다. 리인덱싱, 뉴스레터, 이메일, 사이트 맵 등의 일정을 수립합니다. *crontab*&#x200B;은(는) cron 구성입니다.
 
-에서 Adobe Commerce 서비스를 설치해야 합니다. *crontab*&#x200B;또는 일부 핵심 기능(및 일부 타사 확장)이 제대로 작동하지 않습니다.
+*crontab*&#x200B;에 Adobe Commerce 서비스를 설치해야 합니다. 그렇지 않으면 일부 핵심 기능(및 일부 타사 확장)이 제대로 작동하지 않습니다.
 
-crontab을 제거하고 명령줄에서 cron을 실행하는 방법을 포함하여 cron에 대한 자세한 내용은 [cron 구성 및 실행](../../configuration/cli/configure-cron-jobs.md).
+crontab을 제거하고 명령줄에서 cron을 실행하는 방법을 포함하여 cron에 대한 자세한 내용은 [cron 구성 및 실행](../../configuration/cli/configure-cron-jobs.md)을 참조하십시오.
 
 ## 보안 설정 및 권장 사항
 
 설치 후 다음 사항을 권장합니다.
 
 * 파일 소유권 및 권한이 제대로 설정되어 있는지 확인하십시오.
-* 다음을 강력히 권장합니다. [기본 관리자 URI 변경](../tutorials/admin-uri.md) 출처: `admin` 다른 이름으로
-* 다음을 확인합니다. [`X-Frame-Option` HTTP 헤더](../../configuration/security/xframe-options.md) 가 제대로 설정되었습니다.
-* 다음의 방법으로 크로스 사이트 스크립팅(XSS)에 대한 예방 조치를 취합니다. [템플릿 보호](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+* [기본 관리자 URI](../tutorials/admin-uri.md)을(를) `admin`에서 다른 이름으로 변경하는 것이 좋습니다.
+* [`X-Frame-Option` HTTP 헤더](../../configuration/security/xframe-options.md)이(가) 제대로 설정되어 있는지 확인하십시오.
+* [템플릿 보호](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)를 통해 XSS(교차 사이트 스크립팅)에 대한 예방 조치를 취하십시오.
 
-다음을 설치한 경우 [gitHub 저장소 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)를 사용하여 애플리케이션을 배포할 때에는 프로덕션 환경에 필요한 파일과 폴더만 포함해야 합니다. 필요하지 않은 파일 및 폴더는 보안 위험을 초래할 수 있습니다.
+[GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)에서 설치한 경우 응용 프로그램을 배포할 때는 프로덕션 환경에 필요한 파일과 폴더만 포함해야 합니다. 필요하지 않은 파일 및 폴더는 보안 위험을 초래할 수 있습니다.
 
 ## Apache 서버 재작성 사용
 
@@ -41,9 +41,9 @@ Apache 웹 서버를 사용하는 경우 페이지가 제대로 표시되도록 
 
 ## 다중 웹 노드 환경에서 캐싱
 
-웹 노드가 여러 개 있는 경우 *할 수 없음* 웹 노드 간에 동기화가 없으므로 애플리케이션의 기본 파일 캐싱을 사용합니다. 즉, 한 웹 노드의 활동은 해당 웹 노드의 파일 시스템에만 기록됩니다. 후속 활동이 다른 웹 노드에서 수행되는 경우 불필요한 파일이 작성되거나 오류가 발생할 수 있습니다.
+웹 노드가 여러 개 있는 경우 웹 노드 간에 동기화가 없으므로 응용 프로그램의 기본 파일 캐싱을 *사용할 수 없습니다*. 즉, 한 웹 노드의 활동은 해당 웹 노드의 파일 시스템에만 기록됩니다. 후속 활동이 다른 웹 노드에서 수행되는 경우 불필요한 파일이 작성되거나 오류가 발생할 수 있습니다.
 
-대신, [레디스](../../configuration/cache/config-redis.md) 기본 캐시와 페이지 캐시 둘 다에 사용됩니다.
+대신 기본 캐시와 페이지 캐시 모두에 [Redis](../../configuration/cache/config-redis.md)을(를) 사용합니다.
 
 ## 서버 설정
 
@@ -55,7 +55,7 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 
 자세한 내용은 다음 중 하나를 참조하십시오.
 
-* [방법: 10가지 예를 포함하는 최종 로그 회전 명령 자습서](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [방법: 10개의 예제를 포함하는 최종 로그 회전 명령 자습서](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [스택 교환](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` 매뉴얼 페이지](https://linuxconfig.org/logrotate-8-manual-page)
 
@@ -65,8 +65,8 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 
 추가 정보:
 
-* 우분투: [Ubuntu 설명서 페이지](https://help.ubuntu.com/community/IptablesHowTo).
-* CentOS: [CentOS 방법](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* Ubuntu: [Ubuntu 설명서 페이지](https://help.ubuntu.com/community/IptablesHowTo).
+* CentOS: [CentOS 사용 방법](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
 
 ### 보안 강화 Linux(SELinux) 규칙
 
@@ -81,7 +81,7 @@ SELinux 사용 여부에 대한 권장 사항은 없습니다. 그러나 SELinux
 
 Adobe Commerce에는 이메일 서버가 필요합니다. 특정 서버는 권장하지 않지만 다음 중 하나를 시도할 수 있습니다.
 
-* CentOS용 후위([Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS 설명서](https://www.centos.org))
+* CentOS용 포스트픽스([Digital Ocean 튜토리얼](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [CentOS 설명서](https://www.centos.org))
 * Ubuntu용 후위([Digital Ocean 자습서](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu 설명서](https://help.ubuntu.com/community/MailServer))
 
 ### 향상된 성능을 위해 검색 엔진 세분화:

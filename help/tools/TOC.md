@@ -33,7 +33,7 @@ ht-degree: 3%
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
    - [업그레이드 호환성 도구](reference/uct.md)
-- Adobe Commerce 관찰 {#observation-for-adobe-commerce}
+- Adobe Commerce {#observation-for-adobe-commerce}에 대한 관찰
    - [소개](observation-for-adobe-commerce/intro.md)
    - [액세스 방법](observation-for-adobe-commerce/access.md)
    - [계정 및 일정 선택](observation-for-adobe-commerce/selecting-the-account.md)
@@ -48,7 +48,7 @@ ht-degree: 3%
    - [경고 탭](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF 탭](observation-for-adobe-commerce/waf-tab.md)
    - [CDN 탭](observation-for-adobe-commerce/cdn-tab.md)
-   - [다음 [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [ [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [크론 탭](observation-for-adobe-commerce/cron-tab.md)
    - [색인화 탭](observation-for-adobe-commerce/indexing-tab.md)
    - [빠른 보기 탭](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -74,7 +74,7 @@ ht-degree: 3%
       - [변경 사항](data-migration-tool/migrate-data/delta.md)
       - [추가 작업](data-migration-tool/migrate-data/follow-up.md)
       - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
-      - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
+      - [Post 데이터 마이그레이션 단계](data-migration-tool/migrate-data/post-migration.md)
    - 리소스 {#resources}
       - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)

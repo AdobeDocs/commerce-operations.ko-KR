@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Adobe Commerce은 상인들이 독특하고 매력적인 쇼핑 경험을 만들
 
 ## 어디에서나 원활한 쇼핑 수행
 
-상거래의 성장은 고객의 요구에 부응함으로써 촉진됩니다. 범위를 확장하고 새로운 채널, 지역으로 확장하며 하나의 플랫폼에서 비즈니스와 소비자 모두에게 온라인으로 판매합니다. 언제 어디서나 고객이 쇼핑을 선호한다면 고객에게 상거래를 제공하십시오.
+Commerce의 성장은 고객의 요구 사항을 충족함으로써 이루어집니다. 범위를 확장하고 새로운 채널, 지역으로 확장하며 하나의 플랫폼에서 비즈니스와 소비자 모두에게 온라인으로 판매합니다. 언제 어디서나 고객이 쇼핑을 선호한다면 고객에게 상거래를 제공하십시오.
 
 - Mobile commerce
 - B2B 전자 상거래

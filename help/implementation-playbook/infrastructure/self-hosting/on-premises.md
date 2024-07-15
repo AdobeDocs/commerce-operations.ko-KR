@@ -17,7 +17,7 @@ ht-degree: 0%
 
 다음 다이어그램은 AWS 인프라에 Adobe Commerce 온프레미스를 배포하기 위한 참조 아키텍처를 보여 줍니다. Azure, Google Cloud 및 Alibaba Cloud와 같은 다른 클라우드 공급업체는 유사한 인프라 설계와 상동 서비스를 공유합니다.
 
-![서드파티 클라우드 서비스의 자체 호스팅 Adobe Commerce 인프라를 보여주는 다이어그램](/help/assets/playbooks/on-premises-infrastructure.svg)
+![타사 클라우드 서비스에서 자체 호스팅 Adobe Commerce 인프라를 보여 주는 다이어그램](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 위에 표시된 인프라의 각 측면에 대한 역할과 기능에 대해 자세히 살펴보겠습니다.
 

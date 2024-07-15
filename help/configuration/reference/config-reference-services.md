@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 서비스 구성 경로 참조
 
-이 섹션에는 아래 관리자의 옵션에 사용할 수 있는 변수 이름 및 구성 경로가 나열됩니다. **스토어** > 설정 > **구성** > **서비스**.
+이 섹션에는 **스토어** > 설정 > **구성** > **서비스**&#x200B;에서 관리자의 옵션에 사용할 수 있는 변수 이름과 구성 경로가 나열됩니다.
 
-다음 [`magento app:config:dump` 명령](../cli/export-configuration.md) 공유 구성 파일에 이러한 값을 씁니다. `app/etc/config.php`: 소스 제어에 있어야 합니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 다음을 참조하십시오. [환경 변수를 사용하여 구성 설정을 재정의합니다.](override-config-settings.md#environment-variables). 이 주제에서는 다음을 수행합니다. _아님_ 목록 [중요 및 시스템별 값](config-reference-sens.md).
+[`magento app:config:dump` 명령](../cli/export-configuration.md)은(는) 이러한 값을 소스 제어에 있어야 하는 공유 구성 파일 `app/etc/config.php`에 씁니다. 선택적으로 구성 설정을 무시하거나 중요한 설정을 설정하려면 [환경 변수를 사용하여 구성 설정을 무시하십시오](override-config-settings.md#environment-variables). 이 항목은 _not_&#x200B;에 [중요 및 시스템 특정 값을 나열합니다](config-reference-sens.md).
 
 ## Commerce 웹 API 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **서비스** > **웹 API**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **서비스** > **웹 API**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 기본 응답 문자 집합 | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 익명 게스트 액세스 허용 | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## OAuth 경로
 
-이러한 구성 값은 다음 위치의 관리자에서 사용할 수 있습니다. **스토어** > 설정 > **구성** > **서비스** > **OAuth**.
+이러한 구성 값은 **스토어** > 설정 > **구성** > **서비스** > **OAuth**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | 상업용으로만 사용할 수 있습니까? |
+| 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 고객 토큰 라이프타임(시간) | `oauth/access_token_lifetime/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 관리 토큰 라이프타임(시간) | `oauth/access_token_lifetime/admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

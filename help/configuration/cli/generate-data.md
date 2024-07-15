@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## 프로필
 
-을 사용하여 만드는 데이터의 양을 조정할 수 있습니다 _프로필_ (small, medium, large 및 extra large). 프로필은 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 디렉토리.
+_프로필_&#x200B;을(를) 사용하여 만드는 데이터의 양(작음, 중간, 큼 및 특대)을 조정할 수 있습니다. 프로필이 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 디렉터리에 있습니다.
 
 For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-다음 그림은 를 사용하여 제품이 상점 정면에 표시되는 방식을 보여 줍니다. _작음_ 프로필:
+다음 그림은 _small_ 프로필을 사용하여 제품이 상점 앞에 표시되는 방식을 보여 줍니다.
 
 ![생성된 데이터가 있는 샘플 상점](../../assets/configuration/generate-data.png)
 
 다음 표는 데이터 생성기 프로필에 대한 세부 사항을 제공합니다. small, medium, large 및 extra large.
 
-| 매개 변수 | 작은 프로필 | 미디어 프로필 | 중간 다중 사이트 프로필 | 큰 프로필 | 매우 큰 프로필 |
+| 매개 변수 | 작은 프로필 | Medium 프로필 | Medium 다중 사이트 프로필 | 큰 프로필 | 매우 큰 프로필 |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 >
 >데이터 생성기를 실행하기 전에 서버에서 실행 중인 모든 cron 작업을 비활성화하십시오. cron 작업을 비활성화하면 데이터 생성기가 활성 cron 작업과 충돌하는 작업을 수행하지 못하고 불필요한 오류가 발생하지 않습니다.
 >
->를 사용하여 이벤트를 구현하려는 경우 [!DNL Adobe I/O Events for Adobe Commerce] 성능을 테스트하는 동안 구독하기 전에 이 명령을 실행하십시오. [events](https://developer.adobe.com/commerce/extensibility/events/). 먼저 이벤트를 구독하면 오류가 발생할 수 있습니다.
+>성능을 테스트하는 동안 [!DNL Adobe I/O Events for Adobe Commerce]을(를) 사용하여 이벤트를 구현하려면 [events](https://developer.adobe.com/commerce/extensibility/events/)을(를) 구독하기 전에 이 명령을 실행하십시오. 먼저 이벤트를 구독하면 오류가 발생할 수 있습니다.
 
-이 섹션에서 설명한 대로 명령을 실행합니다. 명령이 실행되면 다음을 수행해야 합니다. [모든 인덱서 다시 인덱싱](../cli/manage-indexers.md).
+이 섹션에서 설명한 대로 명령을 실행합니다. 명령이 실행되면 [모든 인덱서를 다시 인덱싱](../cli/manage-indexers.md)해야 합니다.
 
 명령 옵션:
 
@@ -60,7 +60,7 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-위치 `<path-to-profile>` 프로필의 절대 파일 시스템 경로 및 이름을 지정합니다.
+여기서 `<path-to-profile>`은(는) 프로필의 절대 파일 시스템 경로 및 이름을 지정합니다.
 
 For example,
 
@@ -125,7 +125,7 @@ Generating simple products...  done in <time>
 
 ### 번들 제품
 
-번들 제품을 생성합니다. 생성된 번들 선택 사항은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If  `assign_entities_to_all_websites` 프로필이 (으)로 설정됨 `1`. 제품은 모든 웹 사이트에 할당됩니다.
+번들 제품을 생성합니다. 생성된 번들 선택 사항은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. 프로필의 `assign_entities_to_all_websites`이(가) `1`(으)로 설정된 경우. 제품은 모든 웹 사이트에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -163,7 +163,7 @@ XML 프로필 노드:
 
 ### 카테고리
 
-카테고리를 생성합니다. If `assign_entities_to_all_websites` 이(가) (으)로 설정됨 `0`, 모든 카테고리는 루트 카테고리별로 균일하게 배포됩니다. 그렇지 않으면 모든 카테고리가 하나의 루트 카테고리에 할당됩니다.
+카테고리를 생성합니다. `assign_entities_to_all_websites`이(가) `0`(으)로 설정되어 있으면 모든 범주가 루트 범주별로 균일하게 배포됩니다. 그렇지 않으면 모든 범주가 하나의 루트 범주에 할당됩니다.
 
 XML 프로필 노드:
 
@@ -195,7 +195,7 @@ XML 프로필 노드:
 
 ### 구성 가능한 제품
 
-구성 가능한 제품을 생성합니다. 생성된 구성 가능한 옵션은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 이(가) (으)로 설정됨 `1`, 제품이 모든 웹 사이트에 할당됩니다.
+구성 가능한 제품을 생성합니다. 생성된 구성 가능한 옵션은 카탈로그에 개별적으로 표시되지 않습니다. 제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. `assign_entities_to_all_websites`을(를) `1`(으)로 설정하면 모든 웹 사이트에 제품이 할당됩니다.
 
 지원되는 XML 노드 형식은 다음과 같습니다.
 
@@ -380,9 +380,9 @@ XML 프로필 노드:
 
 ### 단순 제품
 
-간단한 제품을 생성합니다. 제품은 기본 및 사전 정의된 속성 세트별로 배포됩니다. 추가 속성 세트가 프로필에 다음과 같이 지정된 경우: `<product_attribute_sets>{int}</product_attribute_sets>`, 제품은 추가 속성 세트에 따라서도 배포됩니다.
+간단한 제품을 생성합니다. 제품은 기본 및 사전 정의된 속성 세트별로 배포됩니다. 프로필에 `<product_attribute_sets>{int}</product_attribute_sets>`(으)로 추가 특성 집합이 지정된 경우 추가 특성 집합별로 제품도 배포됩니다.
 
-제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. If `assign_entities_to_all_websites` 이(가) (으)로 설정됨 `1`, 제품이 모든 웹 사이트에 할당됩니다.
+제품은 카테고리 및 웹 사이트별로 균일하게 배포됩니다. `assign_entities_to_all_websites`을(를) `1`(으)로 설정하면 모든 웹 사이트에 제품이 할당됩니다.
 
 XML 프로필 노드:
 
@@ -402,7 +402,7 @@ XML 프로필 노드:
 
 ### 그룹 저장
 
-저장소 그룹 생성(관리에서는 로 지칭됨) _스토어_). 스토어 그룹은 웹 사이트 간에 정상적으로 배포됩니다.
+저장소 그룹(_스토어_(으)로 관리자 참조)을 생성합니다. 스토어 그룹은 웹 사이트 간에 정상적으로 배포됩니다.
 
 XML 프로필 노드:
 
@@ -434,16 +434,16 @@ XML 프로필 노드:
 
 ## 추가 구성 정보:
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`- 기본 속성 세트
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` - 기본 특성 집합
 
 - `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—고객 구성
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—제품 전체 설명 구성
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml` - 제품 전체 설명 구성
 
 - `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—제품 설명 구성
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`- 제품 요약 및 전체 설명 구성 이 이전 구현은 이전 버전과의 호환성을 위해 제공됩니다.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` - 제품 요약 및 전체 설명에 대한 구성 이 이전 구현은 이전 버전과의 호환성을 위해 제공됩니다.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`- 짧고 전체 설명에 대한 적은 수의 검색어
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` - 짧고 전체 설명의 검색어 수가 적음
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`- 짧고 전체 설명에 사용할 검색어의 수가 많습니다.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` - 짧고 전체 설명에 사용할 검색어의 수가 많습니다.

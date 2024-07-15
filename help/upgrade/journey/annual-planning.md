@@ -13,7 +13,7 @@ ht-degree: 0%
 
 많은 회사들이 연간 예산과 로드맵으로 일하고 있다. 이러한 연간 토론에서는 비즈니스의 전반적인 목표 및 주요 성과 지표(KPI)에 어떻게 적합한지 그 해의 플랫폼 상태, 방향 및 업그레이드 전략에 대해 언급하는 것이 중요합니다.
 
-팔로우 중 [출시 일정](https://devdocs.magento.com/release/), 예산을 할당하고 업그레이드 기간을 해제하여 휴일, 회사 휴무, 피크 타임이 발생하지 않도록 합니다. Adobe 릴리스 일정을 이해하고 를 통해 각 릴리스의 일부인 변경 사항 및 개선 사항을 지속적으로 숙지합니다. [릴리스 정보](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), 연도를 더 잘 계획할 수 있습니다.
+[릴리스 일정](https://devdocs.magento.com/release/)에 따라, 휴일, 회사 휴무 및 피크 시간을 피하고 업그레이드를 위한 예산 및 릴리스 기간을 할당하십시오. [릴리스 정보](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)를 통해 Adobe 릴리스 일정을 이해하고 각 릴리스의 변경 사항 및 개선 사항에 대한 최신 정보를 숙지하면 연도를 더 잘 계획할 수 있습니다.
 
 계획 수립 시 자문해 볼 수 있는 사항은 다음과 같습니다.
 

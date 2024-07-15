@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->다음을 수행해야 합니다. [redis 설치](config-redis.md#install-redis) 계속하기 전에.
+>계속하려면 [Redis를 설치](config-redis.md#install-redis)해야 합니다.
 
 
-이제 Commerce에서 Redis 세션 저장소를 구성하는 명령줄 옵션을 제공합니다. 이전 릴리스에서는 `<Commerce install dir>app/etc/env.php` 파일. 명령줄은 유효성 검사를 제공하며 이 구성 방법을 사용하는 것이 좋지만, `env.php` 파일.
+Commerce은 이제 Redis 세션 저장소를 구성하는 명령줄 옵션을 제공합니다. 이전 릴리스에서는 `<Commerce install dir>app/etc/env.php` 파일을 편집했습니다. 명령줄은 유효성 검사를 제공하며 권장 구성 방법이지만 `env.php` 파일을 편집할 수 있습니다.
 
-실행 `setup:config:set` 명령을 실행하고 Redis 관련 매개 변수를 지정합니다.
+`setup:config:set` 명령을 실행하고 Redis 관련 매개 변수를 지정하십시오.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -27,9 +27,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 위치
 
-`--session-save=redis` redis 세션 저장소를 활성화합니다. 이 기능을 이미 활성화한 경우에는 이 매개변수를 생략합니다.
+`--session-save=redis`에서 Redis 세션 저장소를 사용할 수 있습니다. 이 기능을 이미 활성화한 경우에는 이 매개변수를 생략합니다.
 
-`--session-save-redis-<parameter_name>=<parameter_value>` 는 세션 저장소를 구성하는 매개 변수/값 쌍 목록입니다.
+`--session-save-redis-<parameter_name>=<parameter_value>`은(는) 세션 저장소를 구성하는 매개 변수/값 쌍의 목록입니다.
 
 | 명령줄 매개 변수 | 매개 변수 이름 | 의미 | 기본값 |
 |--- |--- |--- |--- |
@@ -37,9 +37,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-port | 포트 | Redis 서버 수신 포트입니다. | 6379 |
 | session-save-redis-password | 암호 | Redis 서버에 인증이 필요한 경우 암호를 지정합니다. | 비어 있음 |
 | session-save-redis-timeout | timeout | 연결 시간 제한(초)입니다. | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유 문자열(예: sess-db0).<br>[phpredis 및 php-fpm의 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | 데이터베이스 | 데이터 손실을 방지하는 데 권장되는 고유한 Redis 데이터베이스 번호입니다.<br><br>**중요 사항**: 둘 이상의 캐싱 유형에 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | 압축을 비활성화하려면 0으로 설정합니다(다음 경우에 권장됨). `suhosin.session.encrypt = On`).<br>[64KB를 초과하는 문자열의 알려진 문제](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유 문자열(예: sess-db0).<br>[phpredis 및 php-fpm과 관련된 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-db | 데이터베이스 | 데이터 손실을 방지하는 데 권장되는 고유한 Redis 데이터베이스 번호입니다.<br><br>**중요**: 둘 이상의 캐싱 형식에 대해 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | 0 |
+| session-save-redis-compression-threshold | compression_threshold | 압축을 비활성화하려면 0으로 설정합니다(`suhosin.session.encrypt = On`일 때 권장됨).<br>[문자열이 64KB를 초과하는 알려진 문제](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | 옵션: gzip, lzf, lz4 또는 snappy. | gzip |
 | session-save-redis-log-level | log_level | 세부 정보(verbose)부터 세부 정보(verbose)까지 순서대로 나열되는 다음 중 하나로 설정합니다.<ul><li>0(긴급: 가장 심각한 오류만)<li>1(경고: 즉각적인 조치 필요)<li>2 (중요: 애플리케이션 구성 요소를 사용할 수 없음)<li>3 (오류: 런타임 오류, 중요하지 않지만 모니터링해야 함)<li>4(경고: 추가 정보, 권장)<li>5(알림: 정상이지만 중대한 상태)<li>6 (정보: 정보 메시지)<li>7(디버그: 개발 또는 테스트용으로만 사용되는 가장 많은 정보)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | 한 세션에 대한 잠금을 기다릴 수 있는 최대 프로세스 수. 대규모 생산 클러스터의 경우 이를 PHP 프로세스 수의 10% 이상으로 설정합니다. | 6 |
@@ -58,7 +58,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 ## 예
 
-다음 예제에서는 Redis를 세션 데이터 저장소로 설정하고 호스트를 로 설정합니다. `127.0.0.1`는 로그 레벨을 4로 설정하고 데이터베이스 번호를 2로 설정합니다. 다른 모든 매개변수는 기본값으로 설정됩니다.
+다음 예제에서는 Redis를 세션 데이터 저장소로 설정하고 호스트를 `127.0.0.1`(으)로 설정하고 로그 수준을 4로 설정하고 데이터베이스 번호를 2로 설정합니다. 다른 모든 매개변수는 기본값으로 설정됩니다.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### 결과
 
-Commerce는에 다음과 유사한 행을 추가합니다. `<magento_root>app/etc/env.php`:
+Commerce이 `<magento_root>app/etc/env.php`에 다음과 유사한 줄을 추가합니다.
 
 ```php
     'session' =>
@@ -102,7 +102,7 @@ Commerce는에 다음과 유사한 행을 추가합니다. `<magento_root>app/et
 
 ## Redis 연결 확인
 
-Redis와 Commerce가 함께 작동하는지 확인하려면 Redis를 실행하는 서버에 로그인하고 터미널을 열고 Redis 모니터 명령 또는 ping 명령을 사용합니다.
+Redis와 Commerce이 함께 작동하는지 확인하려면 Redis를 실행하는 서버에 로그인하고 터미널을 열고 Redis 모니터 명령 또는 ping 명령을 사용합니다.
 
 ### Redis 모니터 명령
 
@@ -127,10 +127,10 @@ redis-cli monitor
 redis-cli ping
 ```
 
-`PONG` 는 응답이어야 합니다.
+`PONG`은(는) 응답이어야 합니다.
 
 두 명령이 모두 성공하면 Redis가 제대로 설정됩니다.
 
 ### 압축된 데이터 검사
 
-압축된 세션 데이터 및 페이지 캐시를 검사하려면 [RESP.app](https://flathub.org/apps/details/app.resp.RESP) 는 Commerce 2 세션 및 페이지 캐시의 자동 압축 해제를 지원하며 사람이 읽을 수 있는 형식으로 PHP 세션 데이터를 표시합니다.
+압축된 세션 데이터와 페이지 캐시를 검사하기 위해 [RESP.app](https://flathub.org/apps/details/app.resp.RESP)은(는) Commerce 2 세션 및 페이지 캐시의 자동 압축 해제를 지원하고 사람이 읽을 수 있는 형식으로 PHP 세션 데이터를 표시합니다.

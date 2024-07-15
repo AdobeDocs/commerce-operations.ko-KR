@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ ht-degree: 0%
 
 ## Adobe Commerce의 GraphQL 캐싱
 
-사용자의 브라우저 또는 AEM 게시자가 Adobe Commerce의 GraphQL을 호출하면 특정 호출이 Fastly에서 캐시됩니다. 캐시된 쿼리는 일반적으로 개인적이지 않은 데이터를 포함하고 있으며 자주 변경되지 않는 쿼리입니다. 예를 들어 categories, categoryList 및 products가 있습니다. 명시적으로 캐시되지 않는 항목은 정기적으로 변경되며 캐시되는 경우 장바구니 및 customerPaymentTokens와 같은 쿼리와 같은 개인 데이터 및 사이트 운영에 위험을 초래할 수 있는 항목입니다.
+사용자의 브라우저 또는 AEM 게시자가 Adobe Commerce의 GraphQL을 호출하면 특정 호출이 캐시됩니다
+Fastly에서. 캐시된 쿼리는 일반적으로 개인적이지 않은 데이터를 포함하고 있으며 자주 변경되지 않는 쿼리입니다. 예를 들어 categories, categoryList 및 products가 있습니다. 명시적으로 캐시되지 않는 항목은 정기적으로 변경되며 캐시되는 경우 장바구니 및 customerPaymentTokens와 같은 쿼리와 같은 개인 데이터 및 사이트 운영에 위험을 초래할 수 있는 항목입니다.
 
 GraphQL을 사용하면 한 번의 호출로 여러 쿼리를 만들 수 있습니다. Adobe Commerce이 캐시할 수 없는 다른 많은 쿼리와 함께 캐시하지 않는 한 개의 쿼리라도 지정하는 경우 Adobe Commerce은 호출의 모든 쿼리에 대해 캐시를 무시합니다. 잠재적 캐시 가능한 쿼리가 의도하지 않게 우회되지 않도록 여러 쿼리를 결합할 때 개발자가 이를 고려해야 합니다‡
 
 >[!NOTE]
 >
-> 캐시 가능 및 캐시 불가능 쿼리에 대한 자세한 내용은 Adobe Commerce 를 참조하십시오. [개발자 설명서](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> 캐시 가능 쿼리와 캐시 불가능 쿼리에 대한 자세한 내용은 Adobe Commerce [개발자 설명서](https://devdocs.magento.com/guides/v2.4/graphql/caching.html)를 참조하세요.
 
 ## 카탈로그 플랫 테이블
 
@@ -41,7 +42,7 @@ Fastly 원본 차폐는 Adobe Commerce 관리 Fastly 구성 백엔드 설정에�
 
 Fastly 원본 차폐가 활성화되면 Fastly Image Optimizer를 활성화할 수도 있습니다. 제품 카탈로그 이미지가 Adobe Commerce에 저장되는 경우, 이 서비스를 통해 리소스 집약적인 제품 카탈로그 이미지 변환 처리를 Adobe Commerce 오리진에서 Fastly로 오프로드할 수 있습니다. 이미지가 에지 위치에서 변환되므로 Adobe Commerce 오리진으로의 요청 수가 감소하여 지연 시간이 제거되므로 페이지 로드 시간에 대한 최종 사용자 응답 시간이 향상됩니다.
 
-Fastly 이미지 최적화는 원본 실드가 활성화된 후에만 관리자의 Fastly 구성에서 &quot;딥 이미지 최적화 활성화&quot;를 통해 활성화할 수 있습니다. Fastly 이미지 최적화를 위한 구성에 대한 자세한 내용은 Adobe Commerce에서 확인하십시오 [개발자 설명서](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+Fastly 이미지 최적화는 원본 실드가 활성화된 후에만 관리자의 Fastly 구성에서 &quot;딥 이미지 최적화 활성화&quot;를 통해 활성화할 수 있습니다. Fastly 이미지 최적화를 위한 구성에 대한 자세한 내용은 Adobe Commerce [개발자 설명서](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)를 참조하세요.
 
 ![Adobe Commerce 관리자의 Fastly 이미지 최적화 설정 스크린샷](../assets/commerce-at-scale/image-optimization.svg)
 
@@ -57,7 +58,7 @@ Adobe Commerce 인스턴스에서 로드가 많이 발생할 것으로 예상되
 
 정상 부하가 있는 환경에서 슬레이브 연결을 활성화하면 성능이 10~15% 느려집니다. 그러나 부하가 많고 트래픽이 많은 클러스터에서는 약 10~15%의 성능 향상이 이루어집니다. 따라서 이 설정이 로드 중 성능 시간에 도움이 되는지 평가하기 위해 예상 트래픽 수준으로 환경을 부하 테스트하는 것이 중요합니다.
 
-mysql 및 redis에 대한 슬레이브 연결을 활성화/비활성화하려면 `.magento.env.yaml` 다음을 포함할 파일:
+mysql 및 redis에 대한 슬레이브 연결을 활성화/비활성화하려면 다음을 포함하도록 `.magento.env.yaml` 파일을 편집해야 합니다.
 
 ```
 stage:

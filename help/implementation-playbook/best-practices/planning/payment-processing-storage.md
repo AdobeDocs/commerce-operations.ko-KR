@@ -6,22 +6,22 @@ feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # 결제 처리 및 보관 모범 사례
 
-유지 관리의 주요 원칙 중 하나 [PCI 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) 는 신용카드 결제를 적절히 처리하고 저장하는 전략을 가지고 있다.
+[PCI 규정 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)를 유지 관리하는 주요 원칙 중 하나는 신용카드 결제를 올바르게 처리하고 저장하는 전략을 가지고 있습니다.
 
-Adobe Commerce에 카드 소지자 데이터 저장 **엄격하게 금지되어** PCI-DSS(Payment Card Industry Data Security Standard)에 따라 판매자로서의 의무를 위반할 수 있습니다. 상인 의무에 대한 공유 책임 모델과 지침에 대한 자세한 내용은 [Adobe Commerce 공유 책임 모델 안내서](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) Adobe 트러스트 센터에서.
+Adobe Commerce에 카드 소지자 데이터를 저장하는 것은 **엄격하게 금지됨**. 그렇게 하는 것은 PCI-DSS(Payment Card Industry Data Security Standard)에 따른 판매자로서의 의무를 위반할 수 있습니다. 상인 의무에 대한 공유 책임 모델 및 지침에 대한 자세한 내용은 Adobe 트러스트 센터의 [Adobe Commerce 공유 책임 모델 안내서](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)에서 확인할 수 있습니다.
 
-전자 상거래 사이트에서 결제 정보를 제대로 처리하고 있는지 확인하려면 아래 모범 사례를 따르십시오. 보안 모범 사례에 대한 추가 지침은 [사이트 및 인프라 보안](../launch/security-best-practices.md).
+전자 상거래 사이트에서 결제 정보를 제대로 처리하고 있는지 확인하려면 아래 모범 사례를 따르십시오. 보안 모범 사례에 대한 추가 지침은 [사이트 및 인프라 보안](../launch/security-best-practices.md)을 참조하세요.
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 * 클라우드 인프라의 Adobe Commerce
 * Adobe Commerce 온-프레미스
@@ -32,7 +32,7 @@ Adobe Commerce에 카드 소지자 데이터 저장 **엄격하게 금지되어*
 
 암호화 키에 대한 보호는 데이터 보호 전략에 필수적입니다. 이러한 키를 관리하는 숙련되고 신뢰할 수 있는 관리자를 확보하는 것이 중요합니다.
 
-마지막으로, 기본 계정 번호(PAN)는 저장 중에 읽을 수 없어야 합니다(예: `XXX`. 여기에는 휴대용 저장소와 플래시 드라이브, USB, 외장형 하드 드라이브, 감사 로그 등의 백업 미디어가 포함됩니다.
+마지막으로 PAN(기본 계정 번호)은 저장 중에 읽을 수 없습니다. 예를 들어 `XXX`(으)로 마스킹됩니다. 여기에는 휴대용 저장소와 플래시 드라이브, USB, 외장형 하드 드라이브, 감사 로그 등의 백업 미디어가 포함됩니다.
 
 ## 카드 소지자 데이터 전송 암호화
 
@@ -53,4 +53,4 @@ Adobe Commerce에 카드 소지자 데이터 저장 **엄격하게 금지되어*
 
 ## 추가 정보
 
-Adobe으로 추천 결제 솔루션을 찾고 있다면 다음을 고려하십시오. [Adobe 결제 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Adobe에서 권장하는 결제 솔루션을 찾고 있다면 [결제 서비스 Adobe](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html)을 고려해 보세요.

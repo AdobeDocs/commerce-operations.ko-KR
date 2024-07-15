@@ -4,7 +4,7 @@ description: 기본 제공 지원 유틸리티를 사용하여 Commerce 프로�
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce 지원 유틸리티(또는 [데이터 수집기](https://docs.magento.com/user-guide/system/support-data-collector.html)—사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
+Adobe Commerce 지원 유틸리티([데이터 수집기](https://docs.magento.com/user-guide/system/support-data-collector.html))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
 
-Adobe Commerce은 이러한 백업을 사용합니다(또한 _덤프_&#x200B;코드에 액세스해야 하는 문제를 분석합니다. 일반적인 시나리오는 다음과 같습니다.
+Adobe Commerce은 이러한 백업을 사용하여 코드에 액세스해야 하는 문제를 분석합니다. _덤프_&#x200B;라고도 합니다. 일반적인 시나리오는 다음과 같습니다.
 
 1. Commerce 스토어에 문제가 있으므로 Adobe Commerce 지원 센터에 문의하십시오.
 1. 지원 팀은 문제를 재현하기 위해 코드 또는 데이터베이스를 확인해야 한다고 판단합니다.
-1. 코드를 로 백업합니다. `.tar.gz` 파일.
+1. `.tar.gz` 파일에 코드를 백업합니다.
 
    이 백업은 프로세스 속도를 높이고 파일이 훨씬 작아지도록 미디어 파일을 제외합니다(_R).
 
-1. 데이터베이스를 `.tar.gz` 파일.
+1. 데이터베이스를 `.tar.gz` 파일로 백업합니다.
 
    기본적으로 중요한 데이터는 백업을 만들 때 해시됩니다.
 
@@ -36,7 +36,7 @@ Adobe Commerce은 이러한 백업을 사용합니다(또한 _덤프_&#x200B;코
 
 ## 코드 백업 만들기
 
-이 명령은 코드를 백업하고 `tar.gz` 포맷.
+이 명령은 코드를 백업하고 `tar.gz` 형식으로 압축합니다.
 
 {{tip-backup-command}}
 
@@ -48,11 +48,11 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 위치:
 
-- **`--name`** 덤프 파일 이름을 지정합니다(선택 사항). 이 매개 변수를 생략하면 덤프 파일에 타임스탬프가 지정됩니다.
-- **`-o|--output=<path>`** 는 백업을 저장할 절대 파일 시스템 경로입니다(필수).
-- **`-l|--logs`** 로그 파일을 포함합니다(선택 사항).
+- **`--name`**&#x200B;이(가) 덤프 파일 이름을 지정합니다(선택 사항). 이 매개 변수를 생략하면 덤프 파일에 타임스탬프가 지정됩니다.
+- **`-o|--output=<path>`**&#x200B;은(는) 백업을 저장할 절대 파일 시스템 경로입니다(필수).
+- **`-l|--logs`**&#x200B;에 로그 파일이 포함되어 있습니다(선택 사항).
 
-예를 들어 이라는 코드 백업을 만들려면 `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
+예를 들어, 이름이 `/var/www/html/magento2/var/log/mycodebackup.tar.gz`인 코드 백업을 만들려면 다음을 수행하십시오.
 
 ```bash
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
@@ -62,7 +62,7 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 
 ## 데이터베이스 백업 만들기
 
-이 명령은 Commerce 데이터베이스를 백업하고 압축합니다. `tar.gz` 포맷.
+이 명령은 Commerce 데이터베이스를 백업하고 `tar.gz` 형식으로 압축합니다.
 
 {{tip-backup-command}}
 
@@ -74,10 +74,10 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 위치:
 
-- **`--name`** 덤프 파일 이름을 지정합니다(선택 사항). 이 매개 변수를 생략하면 덤프 파일에 타임스탬프가 지정됩니다.
-- **`-o|--output=<path>` 는 백업을 저장할 절대 파일 시스템 경로입니다(필수).
-- **`-l|--logs`** 로그 파일을 포함합니다(선택 사항).
-- **`-i|--ignore-sanitize`** 는 데이터가 보존됨을 의미합니다. 백업을 작성할 때 데이터베이스에 저장된 중요한 데이터를 해시하려면 플래그를 생략하십시오(선택 사항).
+- **`--name`**&#x200B;이(가) 덤프 파일 이름을 지정합니다(선택 사항). 이 매개 변수를 생략하면 덤프 파일에 타임스탬프가 지정됩니다.
+- **`-o|--output=<path>`은(는) 백업을 저장할 절대 파일 시스템 경로입니다(필수).
+- **`-l|--logs`**&#x200B;에 로그 파일이 포함되어 있습니다(선택 사항).
+- **`-i|--ignore-sanitize`**&#x200B;은(는) 데이터가 보존됨을 의미합니다. 백업을 만들 때 데이터베이스에 저장된 중요한 데이터를 해시하려면 플래그를 생략하십시오(선택 사항).
 
 중요한 데이터에는 다음 데이터베이스 테이블의 고객 정보가 포함됩니다.
 
@@ -112,10 +112,10 @@ Utility lsof not found
 
    >[!INFO]
    >
-   >명령이 제대로 실행됩니다. _전용_ 설치 디렉토리에서 가져옵니다.
+   >명령은 설치 디렉터리에서 _only_ 올바르게 실행됩니다.
 
-1. `bin/magento support:utility:paths` 생성 `<magento_root>/var/support/Paths.php`: 유틸리티에서 사용하는 모든 애플리케이션에 대한 경로를 나열합니다.
-1. `bin/magento support:utility:check` 파일 시스템 경로를 표시합니다.
+1. `bin/magento support:utility:paths`은(는) 유틸리티에서 사용하는 모든 응용 프로그램의 경로를 나열하는 `<magento_root>/var/support/Paths.php`을(를) 만듭니다.
+1. `bin/magento support:utility:check`에 파일 시스템 경로가 표시됩니다.
 
 샘플은 다음과 같습니다.
 
@@ -131,4 +131,4 @@ Utility lsof not found
    mysql => /usr/bin/mysql
 ```
 
-도구 실행 문제를 해결하려면 이러한 응용 프로그램이 설치되어 있고 웹 서버 사용자의 `$PATH` 환경 변수입니다.
+도구 실행 문제를 해결하려면 이러한 응용 프로그램이 설치되어 있고 웹 서버 사용자의 `$PATH` 환경 변수에 있는지 확인하십시오.

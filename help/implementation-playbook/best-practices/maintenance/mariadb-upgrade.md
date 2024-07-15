@@ -21,7 +21,7 @@ MariaDB를 사용하는 경우 클라우드 인프라에서 Adobe Commerce을 �
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1부터 이전 임시 형식의 열에는 `/* mariadb-5.3 */` 의 출력에 주석 달기 `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` 구문 및 `COLUMN_TYPE` 열 `INFORMATION_SCHEMA.COLUMNS` 테이블. [MariaDB 설명서 를 참조하십시오](https://mariadb.com/kb/en/datetime/#internal-format).
+MariaDB 10.5.1부터 이전 임시 형식의 열은 `INFORMATION_SCHEMA.COLUMNS` 테이블의 `COLUMN_TYPE` 열뿐만 아니라 `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` 문의 출력에서도 `/* mariadb-5.3 */` 주석으로 표시됩니다. [MariaDB 설명서를 참조하십시오](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce은 MariaDB 주석으로 인해 날짜 열을 적절한 데이터 형식에 매핑할 수 없으므로 사용자 지정 코드에 예기치 않은 동작이 발생할 수 있습니다.
 
@@ -29,7 +29,7 @@ Adobe 이전 버전에서 버전 10.6으로 MariaDB를 업그레이드할 때 �
 
 ### 기본 구성
 
-MariaDB 10.1.2에서는 MySQL 5.6에서 새로운 임시 형식을 도입하였다. 다음 `mysql56_temporal_format` system 변수를 사용하면 alter table을 실행하거나 데이터베이스를 가져올 때 데이터베이스가 이전 날짜 형식을 새 날짜 형식으로 자동 변환할 수 있습니다. 의 기본 구성 `mysql56_temporal_format` 는 항상 클라우드 인프라의 Adobe Commerce에서 활성화됩니다.
+MariaDB 10.1.2에서는 MySQL 5.6에서 새로운 임시 형식을 도입하였다. `mysql56_temporal_format` 시스템 변수를 사용하면 변경 테이블을 실행하거나 데이터베이스를 가져올 때 데이터베이스가 이전 날짜 형식을 새 날짜 형식으로 자동 변환할 수 있습니다. 클라우드 인프라의 Adobe Commerce에서 `mysql56_temporal_format`에 대한 기본 구성이 항상 활성화되어 있습니다.
 
 ### 날짜 열 마이그레이션
 
@@ -47,7 +47,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 >[!NOTE]
 >
->열을 새로운 내부 날짜 형식으로 마이그레이션하는 것이 중요합니다 _다음 이전_ 예기치 않은 비헤이비어를 방지하기 위해 새 코드를 배포합니다.
+>예기치 않은 동작이 발생하지 않도록 새 코드를 배포하려면 열을 새 내부 날짜 형식 _이전_(으)로 마이그레이션해야 합니다.
 
 ## Adobe Commerce 2.3.5
 
@@ -59,18 +59,18 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에 데이터베이스 테이블을 변환하여 데이터베이스를 준비합니다.
 
-- 행 형식 변환 `COMPACT` 끝 `DYNAMIC`
-- 다음에서 저장소 엔진 변경 `MyISAM` 끝 `InnoDB`
+- 행 형식을 `COMPACT`에서 `DYNAMIC`(으)로 변환
+- 저장소 엔진을 `MyISAM`에서 `InnoDB`(으)로 변경
 
 변환을 계획하고 예약할 때 다음 고려 사항을 염두에 두십시오.
 
-- 변환 출처 `COMPACT` 끝 `DYNAMIC` 큰 데이터베이스가 있는 테이블은 몇 시간 정도 걸릴 수 있습니다.
+- `COMPACT`에서 `DYNAMIC` 테이블로 변환하는 데 큰 데이터베이스가 있으면 몇 시간이 걸릴 수 있습니다.
 
 - 데이터 손상을 방지하려면 라이브 사이트에서 변환 작업을 완료하지 마십시오.
 
 - 사이트의 낮은 트래픽 기간 동안 전환 작업을 완료합니다.
 
-- 사이트 전환 [유지 관리 모드](../../../installation/tutorials/maintenance-mode.md) 데이터베이스 테이블을 변환하는 명령을 실행하기 전에.
+- 데이터베이스 테이블을 변환하는 명령을 실행하기 전에 사이트를 [유지 관리 모드](../../../installation/tutorials/maintenance-mode.md)(으)로 전환하십시오.
 
 #### 데이터베이스 테이블 행 형식 변환
 
@@ -106,18 +106,18 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
 
 저장소 형식을 변환하는 프로세스는 Adobe Commerce Starter 및 Adobe Commerce Pro 프로젝트에 따라 다릅니다.
 
-- Starter 아키텍처의 경우 MySQL 사용 `ALTER` 형식을 변환하는 명령입니다.
-- Pro 아키텍처에서 MySQL 사용 `CREATE` 및 `SELECT` 데이터베이스 테이블을 만들기 위한 명령 `InnoDB` 기존 테이블의 데이터를 저장하고 새 테이블에 복사합니다. 이 방법을 사용하면 변경 사항이 클러스터의 모든 노드에 복제됩니다.
+- Starter 아키텍처의 경우 MySQL `ALTER` 명령을 사용하여 형식을 변환합니다.
+- Pro 아키텍처에서 MySQL `CREATE` 및 `SELECT` 명령을 사용하여 `InnoDB` 저장소가 있는 데이터베이스 테이블을 만들고 기존 테이블의 데이터를 새 테이블로 복사합니다. 이 방법을 사용하면 변경 사항이 클러스터의 모든 노드에 복제됩니다.
 
-**Adobe Commerce Pro 프로젝트를 위한 테이블 스토리지 형식 변환**
+**Adobe Commerce Pro 프로젝트에 대한 테이블 저장소 형식 변환**
 
-1. 를 사용하는 테이블 식별 `MyISAM` 스토리지.
+1. `MyISAM` 저장소를 사용하는 테이블을 식별합니다.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. 모든 표를 다음으로 변환 `InnoDB` 한 번에 하나씩 스토리지 포맷.
+1. 모든 표를 한 번에 하나씩 `InnoDB` 저장소 형식으로 변환합니다.
 
    - 이름 충돌을 방지하기 위해 기존 테이블의 이름을 변경합니다.
 
@@ -125,7 +125,7 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
      RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - 를 사용하는 표 만들기 `InnoDB` 기존 테이블의 데이터를 사용하는 저장소입니다.
+   - 기존 테이블의 데이터를 사용하여 `InnoDB` 저장소를 사용하는 테이블을 만듭니다.
 
      ```mysql
      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -136,15 +136,15 @@ Adobe Commerce 지원 팀이 업그레이드 프로세스를 시작하기 전에
    - 이름을 변경한 원래 테이블을 삭제합니다.
 
 
-**Adobe Commerce 스타터 프로젝트의 테이블 스토리지 형식 변환**
+**Adobe Commerce 스타터 프로젝트에 대한 테이블 저장소 형식 변환**
 
-1. 를 사용하는 테이블 식별 `MyISAM` 스토리지.
+1. `MyISAM` 저장소를 사용하는 테이블을 식별합니다.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. 를 사용하는 표 변환 `MyISAM` 스토리지 대상 `InnoDB` 스토리지.
+1. `MyISAM` 저장소를 사용하는 테이블을 `InnoDB` 저장소로 변환합니다.
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -156,13 +156,13 @@ MariaDB 버전 10.3, 10.4 또는 10.6으로 업그레이드하기 하루 전에 
 
 1. 데이터베이스에 로그인합니다.
 
-1. 테이블이 있는지 확인합니다. `COMPACT` 행 형식입니다.
+1. `COMPACT` 행 형식이 아직 있는 테이블을 확인합니다.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
-1. 여전히 를 사용하는 테이블을 확인합니다. `MyISAM` 저장소 형식
+1. 여전히 `MyISAM` 저장소 형식을 사용하는 테이블을 확인합니다.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
@@ -172,4 +172,4 @@ MariaDB 버전 10.3, 10.4 또는 10.6으로 업그레이드하기 하루 전에 
 
 ### 저장소 엔진 변경
 
-다음을 참조하십시오 [MyISAM 테이블을 InnoDB로 변환](../planning/database-on-cloud.md).
+[MyISAM 테이블을 InnoDB로 변환](../planning/database-on-cloud.md)을 참조하세요.

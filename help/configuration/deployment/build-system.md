@@ -1,11 +1,11 @@
 ---
 title: 시스템 설치 빌드
-description: 빌드 시스템에 Commerce를 배포하는 방법에 대해 알아봅니다.
+description: Commerce을 빌드 시스템에 배포하는 방법에 대해 알아봅니다.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 다음 요구 사항을 충족하는 빌드 시스템을 한 개 가질 수 있습니다.
 
-- 모든 상거래 코드는 개발 및 프로덕션 시스템과 동일한 저장소에서 소스를 제어합니다
-- 다음 사항을 모두 확인합니다. _포함됨_ 소스 제어에서:
+- 모든 Commerce 코드는 개발 및 프로덕션 시스템과 동일한 저장소에서 소스 제어 하에 있습니다
+- 소스 제어에 다음 항목이 모두 _포함_&#x200B;되어 있는지 확인하십시오.
 
    - `app/etc/config.php`
    - `generated` 디렉터리(및 하위 디렉터리)
@@ -25,12 +25,12 @@ ht-degree: 0%
 
 - 호환되는 PHP 버전이 설치되어 있어야 합니다.
 - 작성기가 설치되어 있어야 합니다.
-- 에 설명된 대로 파일 시스템 소유권 및 권한이 설정되어 있습니다. [개발, 빌드 및 프로덕션 시스템의 사전 요구 사항](../deployment/technical-details.md).
-- 빌드 시스템에는 Commerce를 설치할 필요가 없지만 코드가 있어야 설치할 수 있습니다.
+- [개발, 빌드 및 프로덕션 시스템에 대한 필수 구성 요소](../deployment/technical-details.md)에서 설명한 대로 파일 시스템 소유권 및 사용 권한이 설정되어 있습니다.
+- 빌드 시스템은 Commerce을 설치할 필요는 없지만 해당 시스템에서 코드를 사용할 수 있어야 합니다.
 
 >[!WARNING]
 >
->데이터베이스에 이미 포함되어 있는 경우에는 데이터베이스 연결이 필요하지 않습니다. `config.php`; 참조 [구성 내보내기](../cli/export-configuration.md). 그렇지 않으면 데이터베이스 연결이 필요합니다.
+>데이터베이스 연결이 `config.php`에 이미 포함되어 있으면 필요하지 않습니다. [구성 내보내기](../cli/export-configuration.md)를 참조하십시오. 그렇지 않으면 데이터베이스 연결이 필요합니다.
 
 >[!INFO]
 >
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 Composer를 설치하려면:
 
-1. Commerce 서버에서 를 로 변경하거나 빈 디렉토리를 만듭니다.
+1. 로 변경하거나 Commerce 서버에서 빈 디렉토리를 만듭니다.
 
 1. 다음 명령을 입력합니다.
 
@@ -67,18 +67,18 @@ Composer를 설치하려면:
    mv composer.phar /usr/local/bin/composer
    ```
 
-추가 설치 옵션은 [Composer 설치 설명서][composer].
+추가 설치 옵션은 [작성기 설치 설명서][composer]를 참조하십시오.
 
 ### PHP 설치
 
-PHP 설치 [센트OS] 또는 [우분투].
+[CentOS] 또는 [Ubuntu]에 PHP를 설치합니다.
 
 ### 빌드 시스템 설정
 
 빌드 시스템을 설정하려면 다음을 수행하십시오.
 
 1. 파일 시스템 소유자로 빌드 시스템에 로그인하거나 파일 시스템 소유자로 전환합니다.
-1. 소스 제어에서 상거래 코드를 검색합니다.
+1. 소스 제어에서 Commerce 코드를 검색합니다.
 
    Git을 사용하는 경우 다음 명령을 사용합니다.
 
@@ -86,7 +86,7 @@ PHP 설치 [센트OS] 또는 [우분투].
    git clone [-b <branch name>] <repository URL>
    ```
 
-1. Commerce 루트 디렉터리로 변경하고 다음을 입력합니다.
+1. Commerce 루트 디렉토리로 변경하고 다음을 입력합니다.
 
    ```bash
    composer install
@@ -105,8 +105,8 @@ PHP 설치 [센트OS] 또는 [우분투].
    chown -R commerce-username:apache .
    ```
 
-1. Git을 사용하는 경우 를 엽니다. `.gitignore` 텍스트 편집기에서.
-1. 다음 각 줄을 `#` 주석을 달 수 있는 문자:
+1. Git을 사용하는 경우 텍스트 편집기에서 `.gitignore`을(를) 엽니다.
+1. 다음 각 줄을 `#` 문자로 시작하여 주석 처리하십시오.
 
    ```conf
    # app/etc/config.php
@@ -117,22 +117,22 @@ PHP 설치 [센트OS] 또는 [우분투].
    # pub/static/*
    ```
 
-1. 변경 내용 저장 `.gitignore` 텍스트 편집기를 종료합니다.
+1. 변경 내용을 `.gitignore`에 저장하고 텍스트 편집기를 종료합니다.
 1. Git을 사용하는 경우 다음 명령을 사용하여 변경 사항을 커밋합니다.
 
    ```bash
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   다음을 참조하십시오. [`.gitignore` 참조](../reference/config-reference-gitignore.md) 추가 정보.
+   자세한 내용은 [`.gitignore` 참조](../reference/config-reference-gitignore.md)을(를) 참조하십시오.
 
-1. 빌드 시스템은 [기본 모드](../bootstrap/application-modes.md#default-mode) 또는 [개발자 모드](../bootstrap/application-modes.md#developer-mode):
+1. 빌드 시스템은 [기본 모드](../bootstrap/application-modes.md#default-mode) 또는 [개발자 모드](../bootstrap/application-modes.md#developer-mode)를 사용해야 합니다.
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` 필수 항목입니다. 다음 중 하나일 수 있습니다. `default` 또는 `developer`.
+   `<mode>`은(는) 필수입니다. `default` 또는 `developer`일 수 있습니다.
 
 <!-- Link Definitions -->
 

@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Git 기반 설치 업그레이드
 
-이 항목에서는 기여 개발자가 Adobe Commerce을 다시 설치하지 않고 업데이트하는 방법에 대해 설명합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md).
+이 항목에서는 기여 개발자가 Adobe Commerce을 다시 설치하지 않고 업데이트하는 방법에 대해 설명합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md)을 참조하세요.
 
 기여 개발자인 경우 업그레이드하려면 다음을 수행하십시오.
 
 {{$include /help/_includes/server-login.md}}
 
-1. 에 대한 변경 사항을 모두 저장합니다. `composer.json` 다음 단계에서 덮어쓰기이므로 파일입니다.
+1. 다음 단계를 통해 덮어쓰기되므로 `composer.json` 파일에 대한 변경 내용을 모두 저장하십시오.
 
-1. 의 백업 만들기 `composer.json` 파일.
+1. `composer.json` 파일의 백업을 만듭니다.
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >If `git pull origin develop` 실패, 참조 [문제 해결](https://support.magento.com/hc/en-us/articles/360034229872).
+   >`git pull origin develop`이(가) 실패하면 [문제 해결](https://support.magento.com/hc/en-us/articles/360034229872)을 참조하세요.
 
-1. 차이점 및 병합 `composer.json.old` 파일이 포함된 파일 `composer.json` 파일.
+1. `composer.json.old` 파일을 `composer.json` 파일과 비교하고 병합합니다.
 
-1. 종속성을 해결하고 정확한 버전을 `composer.lock` 파일.
+1. 종속성을 해결하고 `composer.lock` 파일에 정확한 버전을 쓰십시오.
 
    ```bash
    composer update

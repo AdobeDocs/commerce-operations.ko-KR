@@ -1,7 +1,7 @@
 ---
 source-git-commit: d945ba1a06c691ba52b7caa89afc71d4a3d69815
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 | pmzandbergen | [magento/magento2#35572](https://github.com/magento/magento2/pull/35572) | [magento/magento2#35579](https://github.com/magento/magento2/issues/35579) [Smile-SA/magento2-module-store-locator#134](https://github.com/Smile-SA/magento2-module-store-locator/issues/134) |
 | 오레시오 | [magento/magento2#35564](https://github.com/magento/magento2/pull/35564) | [magento/magento2#35568](https://github.com/magento/magento2/issues/35568) |
 | 프레든 | [magento/magento2#35540](https://github.com/magento/magento2/pull/35540) | [magento/magento2#35325](https://github.com/magento/magento2/issues/35325) [magento/magento2#35711](https://github.com/magento/magento2/issues/35711) |
-| nicka101 | [magento/magento2#35524](https://github.com/magento/magento2/pull/35524) | [magento/magento2#35719](https://github.com/magento/magento2/issues/35719) |
+| 니카 | [magento/magento2#35524](https://github.com/magento/magento2/pull/35524) | [magento/magento2#35719](https://github.com/magento/magento2/issues/35719) |
 | 나자르클로바니치 | [magento/magento2#35441](https://github.com/magento/magento2/pull/35441) | [magento/magento2#35558](https://github.com/magento/magento2/issues/35558) |
 | pyketk | [magento/magento2#35436](https://github.com/magento/magento2/pull/35436) | [magento/magento2#35488](https://github.com/magento/magento2/issues/35488) |
 | 블라디슬라브 시카일로 | [magento/magento2#35216](https://github.com/magento/magento2/pull/35216) | [magento/magento2#35417](https://github.com/magento/magento2/issues/35417) |
@@ -51,8 +51,8 @@ ht-degree: 0%
 | 에르파니마니 | [magento/magento2#34232](https://github.com/magento/magento2/pull/34232) | [magento/magento2#34246](https://github.com/magento/magento2/issues/34246) [magento/magento2#34247](https://github.com/magento/magento2/issues/34247) |
 | 프레든 | [magento/magento2#34186](https://github.com/magento/magento2/pull/34186) | [magento/magento2#34321](https://github.com/magento/magento2/issues/34321) |
 | 편리하 | [magento/magento2#34117](https://github.com/magento/magento2/pull/34117) | [magento/magento2#36628](https://github.com/magento/magento2/issues/36628) |
-| khoimm92 | [magento/magento2#34061](https://github.com/magento/magento2/pull/34061) | [magento/magento2#35481](https://github.com/magento/magento2/issues/35481) |
-| dudzio12 | [magento/magento2#33892](https://github.com/magento/magento2/pull/33892) | [magento/magento2#33820](https://github.com/magento/magento2/issues/33820) |
+| 호임92 | [magento/magento2#34061](https://github.com/magento/magento2/pull/34061) | [magento/magento2#35481](https://github.com/magento/magento2/issues/35481) |
+| 뒤지오 | [magento/magento2#33892](https://github.com/magento/magento2/pull/33892) | [magento/magento2#33820](https://github.com/magento/magento2/issues/33820) |
 | 카스너 | [magento/magento2#33859](https://github.com/magento/magento2/pull/33859) | [magento/magento2#34439](https://github.com/magento/magento2/issues/34439) |
 | 뒤사빌리 | [magento/magento2#33841](https://github.com/magento/magento2/pull/33841) | [magento/magento2#35187](https://github.com/magento/magento2/issues/35187) |
 | 세르게이네즈브리츠키 | [magento/magento2#33803](https://github.com/magento/magento2/pull/33803) | [magento/magento2#33802](https://github.com/magento/magento2/issues/33802) |
@@ -62,4 +62,4 @@ ht-degree: 0%
 | lbajsarowich | [magento/magento2#31360](https://github.com/magento/magento2/pull/31360) | [magento/magento2#31443](https://github.com/magento/magento2/issues/31443) |
 | lbajsarowich | [magento/magento2#31355](https://github.com/magento/magento2/pull/31355) | [magento/magento2#31373](https://github.com/magento/magento2/issues/31373) [magento/magento2#32625](https://github.com/magento/magento2/issues/32625) |
 | 크르츠크시 | [magento/magento2#30647](https://github.com/magento/magento2/pull/30647) | [magento/magento2#30672](https://github.com/magento/magento2/issues/30672) [magento/magento2#32985](https://github.com/magento/magento2/issues/32985) [magento/magento2#30613](https://github.com/magento/magento2/issues/30613) |
-| Usik2203 | [magento/magento2#29417](https://github.com/magento/magento2/pull/29417) | [magento/magento2#29418](https://github.com/magento/magento2/issues/29418) |
+| 우식 | [magento/magento2#29417](https://github.com/magento/magento2/pull/29417) | [magento/magento2#29418](https://github.com/magento/magento2/issues/29418) |

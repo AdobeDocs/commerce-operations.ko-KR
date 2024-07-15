@@ -23,7 +23,7 @@ Adobe Commerce 프로젝트를 구현하는 방법에는 여러 가지가 있습
     <img alt="계획 수립" src="../../assets/icons/enterprise.svg" width="80" height="80"/>
     </a>
     <div>
-    <a href="planning/overview.md"><strong>계획 수립</strong></a>
+    <a href="planning/overview.md"><strong>계획</strong></a>
     </div>
     요구 사항 수집, 아키텍처 설계, 카탈로그 설계, 프로젝트 범위, 계정 프로비저닝, 사용자 액세스, 확장 구매
     <br>

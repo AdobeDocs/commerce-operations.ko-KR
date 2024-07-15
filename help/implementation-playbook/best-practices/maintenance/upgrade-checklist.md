@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->업그레이드를 성공적으로 수행하는 기술 단계에 대한 자세한 설명은 을 참조하십시오. [업그레이드 사전 요구 사항 완료](../../../upgrade/prepare/prerequisites.md) 사용 설명서에서 참조하십시오.
+>업그레이드하기 위한 기술 단계에 대한 자세한 설명은 사용자 설명서에서 [업그레이드 필수 구성 요소 완료](../../../upgrade/prepare/prerequisites.md)를 참조하세요.
 
 ## 영향을 받는 제품 및 버전
 
-[지원되는 모든 버전](../../../release/versions.md) /:
+[지원되는 모든 버전](../../../release/versions.md):
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 예산 및 시간
 
-▢ Adobe Commerce 사용 [출시 일정](../../../release/schedule.md) 다음 업그레이드를 계획하고 미리 준비하십시오.
+▢ Adobe Commerce [릴리스 일정](../../../release/schedule.md)을(를) 사용하여 다음 업그레이드를 계획하고 미리 준비하십시오.
 
 ▢ 예상되는 요구 사항에 따라 채택할 버전(전체 또는 보안 전용)에 대해 논의합니다.
 
@@ -60,14 +60,14 @@ ht-degree: 0%
 
 ▢ 액세스 활동 만들기
 
-- 파트너가 참여 [베타](../../../release/beta.md)
-- 베타 릴리스 노트 검토.
+- 파트너가 [Beta](../../../release/beta.md)에 참여함
+- Beta 릴리스 노트 검토.
 
 ▢ 예산, 일정, 범위에 동의합니다.
 
-▢ 실행 [업그레이드 호환성 도구](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢0}호환성 업그레이드 도구](../../../upgrade/upgrade-compatibility-tool/overview.md)를 실행하십시오.[
 
-▢ 업그레이드로 인해 식별된 문제를 해결하는 것이 좋습니다. [사이트 전체 분석 도구](../../../tools/site-wide-analysis-tool/intro.md).
+▢ [사이트 전체 분석 도구](../../../tools/site-wide-analysis-tool/intro.md)에서 식별된 문제를 해결하려면 업그레이드를 사용하는 것이 좋습니다.
 
 ▢ 문서 종속성과 PHP 또는 Elastic Search 버전과 같은 기술 스택 변경 사항이 필요합니다.
 
@@ -77,17 +77,17 @@ ht-degree: 0%
 
 ▢이 예상되는 경우 계획 유지 관리 창을 엽니다.
 
-▢ 테스트 전략을 검토하고 승인합니다. Adobe Commerce 사용을 고려해 보십시오. [테스트 프레임워크](https://developer.adobe.com/commerce/testing/) 또는 서드파티 자동화 제품군입니다.
+▢ 테스트 전략을 검토하고 승인합니다. Adobe Commerce [테스트 프레임워크](https://developer.adobe.com/commerce/testing/) 또는 타사 자동화 제품군을 사용하는 것이 좋습니다.
 
 ▢ 모든 확장 및 사용자 지정이 호환되는지 확인합니다.
 
 ▢ 업그레이드 도중 또는 업그레이드 후에 문제가 발견되는 경우 사용할 실행 후 플레이북을 검토하고 업데이트합니다.
 
-## 배포 후
+## Post 배포
 
 ▢ 성능, 주문 처리, 분석 등의 문제에 대한 사이트 모니터링
 
-▢ Adobe Commerce 수행 [보안 검사](https://account.magento.com/scanner/dashboard/) 또는 기타 서드파티 스캔 및 잠재적인 보안 취약점을 검토합니다.
+▢ Adobe Commerce [보안 검사](https://account.magento.com/scanner/dashboard/) 또는 기타 타사 검사를 수행하고 잠재적인 보안 취약점을 검토하십시오.
 
 ▢ 모든 이해 당사자와 회고전을 수행하고 무엇이 잘 진행되었고 무엇이 실패했으며 어떻게 개선되었는지 문서화합니다.
 

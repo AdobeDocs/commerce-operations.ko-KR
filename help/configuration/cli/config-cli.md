@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 명령줄 도구
 
-Commerce에는 하나의 CLI(명령줄 인터페이스)가 있습니다.`<magento_root>/bin/magento`—다음을 포함한 설치 및 구성 작업을 실행합니다.
+Commerce에는 다음과 같은 설치 및 구성 작업을 실행하는 CLI(명령줄 인터페이스)—`<magento_root>/bin/magento`이(가) 하나 있습니다.
 
 - Commerce 설치(및 데이터베이스 스키마 업데이트, 배포 구성 만들기 등 관련 작업)
 - 캐시 지우기
@@ -23,20 +23,20 @@ Commerce에는 하나의 CLI(명령줄 인터페이스)가 있습니다.`<magent
 
 추가 이점은 다음과 같습니다.
 
-- 단일 명령(`<magento_root>/bin/magento list`) 사용 가능한 모든 설치 및 구성 명령을 나열합니다.
+- 사용 가능한 모든 설치 및 구성 명령이 하나의 명령(`<magento_root>/bin/magento list`)에 나열됩니다.
 - Symfony 기반의 일관된 사용자 인터페이스.
 - CLI는 타사 개발자가 &quot;플러그인&quot;할 수 있도록 확장 가능합니다. 이는 사용자의 학습곡선을 제거할 수 있다는 추가적인 이점이 있다.
 - 비활성화된 모듈에 대한 명령이 표시되지 않습니다.
 
-이 항목에서는 CLI를 사용하여 Adobe Commerce 소프트웨어를 구성하는 방법에 대해 설명합니다. Commerce 설치에 대한 자세한 내용은 [설치 흐름](../../installation/overview.md) 다음에서 _설치 안내서_.
+이 항목에서는 CLI를 사용하여 Adobe Commerce 소프트웨어를 구성하는 방법에 대해 설명합니다. Commerce 설치에 대한 자세한 내용은 _설치 안내서_&#x200B;의 [설치 흐름](../../installation/overview.md)을 참조하십시오.
 
 ## 전제 조건
 
 CLI를 사용하기 전에 다음을 확인하십시오.
 
-1. 시스템에서 설명한 요구 사항을 충족합니다. [시스템 요구 사항](../../installation/system-requirements.md) 다음에서 _설치 안내서_.
-1. 에서 논의한 모든 전제 조건 작업을 완료했습니다. [전제 조건](../../installation/prerequisites/overview.md) 다음에서 _설치 안내서_.
-1. Commerce 서버에 로그인한 후 Commerce 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환합니다. 다음을 참조하십시오 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md) 다음에서 _설치 안내서_.
+1. 시스템이 _설치 가이드_&#x200B;의 [시스템 요구 사항](../../installation/system-requirements.md)에서 설명한 요구 사항을 충족합니다.
+1. _설치 가이드_&#x200B;의 [필수 구성 요소](../../installation/prerequisites/overview.md)에서 설명한 모든 필수 구성 요소 작업을 완료했습니다.
+1. Commerce 서버에 로그인한 후 Commerce 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환합니다. _설치 안내서_&#x200B;에서 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)을 참조하십시오.
 
 ## 명령 실행
 
@@ -52,9 +52,9 @@ su <file system owner> -s /bin/bash -c <command>
 sudo -u <file system owner> <command>
 ```
 
-**디렉토리에서 CLI 명령을 실행하려면**:
+**모든 디렉터리에서 CLI 명령을 실행하려면**:
 
-추가 `<magento_root>/bin` 내 시스템으로 `PATH`.
+`PATH` 시스템에 `<magento_root>/bin`을(를) 추가합니다.
 
 CentOS용 샘플 bash 쉘:
 
@@ -64,6 +64,6 @@ export PATH=$PATH:/var/www/html/magento2/bin
 
 선택적으로 다음을 실행할 수 있습니다.
 
-- `cd <magento_root>/bin` 다음 계정으로 실행 `./magento <command name>`
+- `cd <magento_root>/bin` 및 `./magento <command name>`(으)로 실행
 - `<magento_root>/bin/magento <command name>`
-- `<magento_root>` 는 웹 서버 docroot의 하위 디렉토리입니다.
+- `<magento_root>`은(는) 웹 서버 docroot의 하위 디렉터리입니다.

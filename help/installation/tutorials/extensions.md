@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 타사 확장 관리
 
-Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장이라고 합니다. 에서 확장을 선택적으로 패키징하고 배포할 수 있습니다. [Commerce Marketplace](https://commercemarketplace.adobe.com/) 또는 다른 확장 배포 시스템입니다.
+Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장이라고 합니다. 선택적으로 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 또는 다른 확장 배포 시스템에서 확장을 패키징하고 배포할 수 있습니다.
 
 확장에는 다음이 포함됩니다.
 
@@ -22,7 +22,7 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 
 >[!TIP]
 >
->이 항목에서는 명령줄 인터페이스를 사용하여 Commerce Marketplace에서 구입한 타사 확장을 관리하는 방법을 설명합니다. 동일한 절차를 사용하여 설치할 수 있습니다 _임의_ 확장, 확장의 작성기 이름과 버전만 있으면 됩니다. 찾으려면 확장을 엽니다. `composer.json` 파일을 참조하고 다음에 대한 값을 확인합니다. `"name"` 및 `"version"`.
+>이 항목에서는 명령줄 인터페이스를 사용하여 Commerce Marketplace에서 구입한 타사 확장을 관리하는 방법을 설명합니다. 동일한 절차를 사용하여 _any_ 확장을 설치할 수 있습니다. 필요한 것은 확장의 작성기 이름과 버전입니다. 찾으려면 확장의 `composer.json` 파일을 열고 `"name"` 및 `"version"`의 값을 확인합니다.
 
 ## 설치
 
@@ -38,7 +38,7 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 확장을 설치하려면 다음을 수행해야 합니다.
 
 1. Commerce Marketplace 또는 다른 확장 개발자로부터 확장을 가져옵니다.
-1. Commerce Marketplace에서 확장을 설치하는 경우 `repo.magento.com` 저장소가 다음 위치에 있음: `composer.json` 파일:
+1. Commerce Marketplace에서 확장을 설치하는 경우 `composer.json` 파일에 `repo.magento.com` 저장소가 있는지 확인하십시오.
 
    ```bash
    "repositories": [
@@ -50,39 +50,39 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
    ```
 
 1. 확장의 작성기 이름 및 버전을 가져옵니다.
-1. 업데이트 `composer.json` 확장의 이름 및 버전을 사용하여 프로젝트에 있는 파일입니다.
+1. 확장의 이름과 버전으로 프로젝트의 `composer.json` 파일을 업데이트합니다.
 1. 확장이 제대로 설치되었는지 확인합니다.
 1. 확장을 활성화하고 구성합니다.
 
 ### 확장 정보 가져오기
 
-확장의 작성기 이름 및 버전을 이미 알고 있는 경우 이 단계를 건너뛰고 을 계속 진행합니다. [업데이트 `composer.json` 파일](#update-composer-dependencies).
+확장의 작성기 이름과 버전을 이미 알고 있는 경우 이 단계를 건너뛰고 [`composer.json` 파일을 업데이트](#update-composer-dependencies)합니다.
 
 Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려면 다음을 수행하십시오.
 
-1. 에 로그인 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 확장을 구입할 때 사용한 사용자 이름과 암호로.
+1. 확장을 구입할 때 사용한 사용자 이름과 암호로 [Commerce Marketplace](https://commercemarketplace.adobe.com/)에 로그인합니다.
 
-1. 오른쪽 위 모서리에서 을(를) 클릭합니다. **사용자 이름** > **내 프로필**.
+1. 오른쪽 상단 모서리에서 **내 이름** > **내 프로필**&#x200B;을 클릭합니다.
 
-   ![Marketplace 계정에 액세스](../../assets/installation/marketplace-my-profile.png)
+   ![마켓플레이스 계정에 액세스](../../assets/installation/marketplace-my-profile.png)
 
-1. 클릭 **내 구매**.
+1. **내 구매**&#x200B;를 클릭합니다.
 
-   ![마켓플레이스 구매 내역](../../assets/installation//marketplace-my-purchases.png)
+   ![마켓플레이스 구매 기록](../../assets/installation//marketplace-my-purchases.png)
 
-1. 설치할 확장을 찾아 를 클릭합니다 **기술 세부 정보**.
+1. 설치할 확장을 찾아 **기술 정보**&#x200B;를 클릭합니다.
 
-   ![기술 세부 사항에 확장의 작성기 이름이 표시됩니다.](../../assets/installation/marketplace-extension-technical-details.png)
+   ![기술적 세부 정보에 확장의 작성기 이름이 표시됨](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->또는 의 작성기 이름 및 버전을 찾을 수 있습니다. _임의_ 확장 프로그램(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)의 `composer.json` 파일.
+>또는 확장 프로그램의 `composer.json` 파일에서 _any_ 확장의 작성기 이름과 버전(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)을 찾을 수 있습니다.
 
 ### 작성기 종속성 업데이트
 
-확장 이름 및 버전을 `composer.json` 파일:
+`composer.json` 파일에 확장 이름 및 버전을 추가합니다.
 
-1. 프로젝트 디렉터리로 이동하여 `composer.json` 파일.
+1. 프로젝트 디렉터리로 이동하여 `composer.json` 파일을 업데이트하십시오.
 
    ```bash
    composer require <component-name>:<version>
@@ -94,7 +94,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. 다음을 입력하십시오. [인증 키](../prerequisites/authentication-keys.md). 공개 키는 사용자 이름이고 개인 키는 암호입니다.
+1. [인증 키](../prerequisites/authentication-keys.md)를 입력하십시오. 공개 키는 사용자 이름이고 개인 키는 암호입니다.
 
 1. 작성기가 프로젝트 종속성 업데이트를 완료하고 오류가 없는지 확인할 때까지 기다립니다.
 
@@ -120,7 +120,7 @@ bin/magento module:status J2t_Payplug
 Module is disabled
 ```
 
-확장 이름 형식은 다음과 같습니다 `<VendorName>_<ComponentName>`; 작성기 이름과 다른 형식입니다. 이 형식을 사용하여 확장을 활성화합니다. 확장 이름을 잘 모를 경우 다음을 실행합니다.
+확장 이름이 `<VendorName>_<ComponentName>` 형식입니다. 이 형식은 Composer 이름과 다른 형식입니다. 이 형식을 사용하여 확장을 활성화합니다. 확장 이름을 잘 모를 경우 다음을 실행합니다.
 
 ```bash
 bin/magento module:status
@@ -130,7 +130,7 @@ bin/magento module:status
 
 ### 사용
 
-생성된 정적 보기 파일을 먼저 지우지 않으면 일부 확장이 제대로 작동하지 않습니다. 사용 `--clear-static-content` 확장을 활성화할 때 정적 보기 파일을 지우는 옵션입니다.
+생성된 정적 보기 파일을 먼저 지우지 않으면 일부 확장이 제대로 작동하지 않습니다. 확장을 사용할 때 정적 보기 파일을 지우려면 `--clear-static-content` 옵션을 사용하십시오.
 
 1. 확장을 활성화하고 정적 보기 파일을 지웁니다.
 
@@ -184,7 +184,7 @@ bin/magento module:status
 
 >[!TIP]
 >
->브라우저에서 Storefront를 로드할 때 오류가 발생하면 다음 명령을 사용하여 캐시를 지웁니다. `bin/magento cache:flush`.
+>브라우저에서 Storefront를 로드할 때 오류가 발생하면 다음 명령을 사용하여 캐시를 지우십시오. `bin/magento cache:flush`.
 
 ## 업그레이드
 
@@ -232,13 +232,13 @@ bin/magento module:status
 
 >[!CAUTION]
 >
->비프로덕션 환경에서 제거 단계 수행 _첫 번째_ 프로덕션 환경에 배포하기 전에 철저하게 테스트합니다.
+>프로덕션 환경에 배포하기 전에 비프로덕션 환경 _먼저_&#x200B;에서 제거 단계를 수행하고 철저히 테스트하십시오.
 
 다음은 타사 확장 제거에 대한 일반적인 정보입니다.
 
 1. Adobe Commerce 프로젝트 저장소에서 확장을 제거합니다.
 
-   - 작성기 기반 확장의 경우 Adobe Commerce에서 확장을 제거합니다 `composer.json` 파일.
+   - 작성기 기반 확장의 경우 Adobe Commerce `composer.json` 파일에서 확장을 제거합니다.
 
      ```bash
      composer remove <package-name>
@@ -250,7 +250,7 @@ bin/magento module:status
      rm -rf app/code/<vendor-name>/<module-name>
      ```
 
-1. 다음과 같은 경우 `config.php` 파일이 Adobe Commerce 프로젝트 저장소의 소스 제어에서 사용 중이므로 `config.php` 파일.
+1. `config.php` 파일이 Adobe Commerce 프로젝트 리포지토리에서 소스 제어에서 사용 중인 경우 `config.php` 파일에서 확장을 제거하십시오.
 
 1. 로컬 데이터베이스를 테스트하여 공급업체에서 제공한 지침이 예상대로 작동하는지 확인합니다.
 

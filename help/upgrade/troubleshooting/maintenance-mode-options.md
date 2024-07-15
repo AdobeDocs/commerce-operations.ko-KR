@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->사용자로 이 섹션의 작업을 수행해야 합니다. `root` 권한. 개발자 모드에서는 사용자 지정 유지 관리 페이지를 설정할 수 없습니다.
+>`root` 권한이 있는 사용자로 이 섹션의 작업을 수행해야 합니다. 개발자 모드에서는 사용자 지정 유지 관리 페이지를 설정할 수 없습니다.
 
 ## 사용자 지정 유지 관리 페이지 만들기
 
@@ -59,7 +59,7 @@ body
 이 섹션의 예에서는 유지 관리 페이지를 설정하는 한 가지 방법인 다음 파일을 수정하는 방법을 보여 줍니다.
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2: `/etc/apache2/sites-available/default` (우분투), `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2: `/etc/apache2/sites-available/default`(Ubuntu), `/etc/httpd/conf/httpd.conf`(CentOS)
 
 트래픽을 사용자 지정 유지 관리 페이지로 리디렉션하려면 다음을 수행하십시오.
 
@@ -94,9 +94,9 @@ body
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [시스템 업그레이드](../implementation/perform-upgrade.md).
+1. [시스템을 업그레이드합니다](../implementation/perform-upgrade.md).
 1. 사이트가 올바르게 작동하는지 테스트합니다.
-1. 업그레이드가 완료되면 를 삭제합니다. `maintenance.enable`.
+1. 업그레이드가 완료되면 `maintenance.enable`을(를) 삭제합니다.
 
 ## nginx에 대한 사용자 지정 유지 관리 페이지
 
@@ -105,9 +105,9 @@ body
 트래픽을 사용자 지정 유지 관리 페이지로 리디렉션하려면 다음을 수행하십시오.
 
 1. 텍스트 편집기를 사용하여 서버 블록이 포함된 nginx 구성 파일을 엽니다.
-1. 서버 블록에 다음 내용을 추가합니다(`server` 은 명확성을 위해 만 표시되며, 두 번째 서버 블록은 추가하지 마십시오.
+1. 서버 블록에 다음 내용을 추가하십시오. `server`은(는) 명확하게 하기 위해서만 표시되며, 두 번째 서버 블록은 추가하지 마십시오.
 
-   Magento이 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.110 및 192.0.2.115 `/var/www/html/magento2`:
+   `/var/www/html/magento2`에 Magento이 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.110 및 192.0.2.115:
 
    ```conf
    server {
@@ -154,9 +154,9 @@ body
    service nginx reload
    ```
 
-1. [시스템 업그레이드](../implementation/perform-upgrade.md).
+1. [시스템을 업그레이드합니다](../implementation/perform-upgrade.md).
 1. 사이트가 올바르게 작동하는지 테스트합니다.
-1. 업그레이드가 완료되면 를 삭제하거나 이름을 변경합니다 `maintenance.enable`
+1. 업그레이드가 완료되면 `maintenance.enable`을(를) 삭제하거나 이름을 바꾸십시오.
 1. nginx 구성을 다시 로드합니다.
 
    ```bash

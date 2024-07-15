@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   IP 주소 허용 목록 설정 기능과 같은 추가 옵션에 대해서는 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   IP 주소 허용 목록 설정 기능과 같은 추가 옵션을 보려면 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md)을(를) 참조하십시오.
 
-1. 다음을 설정하여 실행 중인 대기열 작업자 중지 `cron_run` 끝 `false` 위치: `app/etc/env.php` 다음과 같이:
+1. 다음과 같이 `app/etc/env.php`에서 `cron_run`을(를) `false`(으)로 설정하여 실행 중인 큐 작업자를 중지합니다.
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,13 +36,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. 마지막으로, `kill` 모든 활성 소비자 프로세스
+1. 마지막으로 모든 활성 소비자 프로세스를 `kill`합니다.
 
    ```bash
    kill <PID>
    ```
 
-   위치 `PID` 는 제거할 프로세스 ID입니다. 예:
+   여기서 `PID`은(는) 삭제할 프로세스 ID입니다. 예:
 
    ```bash
    kill 1234

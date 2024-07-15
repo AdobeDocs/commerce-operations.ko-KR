@@ -1,29 +1,29 @@
 ---
-title: 사용자 지정 [!DNL Data Migration Tool]
-description: 을(를) 사용자 지정하는 방법 알아보기 [!DNL Data Migration Tool] 확장에서 만든 데이터를 Magento 1과 Magento 2 간에 전송합니다.
+title: ' [!DNL Data Migration Tool] 사용자 지정'
+description: Magento 1과 Magento 2 간에 확장에서 만든 데이터를 전송하기 위해  [!DNL Data Migration Tool] 을(를) 사용자 지정하는 방법을 알아봅니다.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
-# 구성 [!DNL Data Migration Tool]
+# [!DNL Data Migration Tool] 구성
 
-경우에 따라 만든 데이터 형식 및 구조 [확장](https://marketplace.magento.com/extensions.html) 또는 사용자 지정 코드는 Magento 1과 Magento 2에서 다릅니다. 내에서 확장 지점 사용 [!DNL Data Migration Tool] 이 데이터를 마이그레이션하는 데 사용됩니다. 데이터 형식 및 구조가 동일한 경우 사용자 개입 없이 이 툴이 데이터를 자동으로 마이그레이션할 수 있습니다.
+경우에 따라 [확장](https://marketplace.magento.com/extensions.html) 또는 사용자 지정 코드에서 만든 데이터 형식 및 구조가 Magento 1과 Magento 2에 따라 다릅니다. [!DNL Data Migration Tool] 내의 확장 지점을 사용하여 이 데이터를 마이그레이션하십시오. 데이터 형식 및 구조가 동일한 경우 사용자 개입 없이 이 툴이 데이터를 자동으로 마이그레이션할 수 있습니다.
 
-마이그레이션 도중 [맵 단계](technical-specification.md#map-step) 확장에서 만든 테이블을 포함하여 모든 Magento 1과 Magento 2 테이블을 검색하고 비교합니다. 테이블이 동일하면 도구에서 데이터를 자동으로 마이그레이션합니다. 테이블이 다른 경우 도구가 종료되고 사용자에게 알립니다.
+마이그레이션하는 동안 [맵 단계](technical-specification.md#map-step)에서 확장에서 만든 테이블을 포함하여 모든 Magento 1과 Magento 2 테이블을 검색하고 비교합니다. 테이블이 동일하면 도구에서 데이터를 자동으로 마이그레이션합니다. 테이블이 다른 경우 도구가 종료되고 사용자에게 알립니다.
 
 >[!NOTE]
 >
->읽기 [기술 사양](technical-specification.md) 확장을 시도하기 전에 [!DNL Data Migration Tool]. 또한 다음을 검토합니다. [마이그레이션 안내서](../overview.md) 마이그레이션 도구 사용에 대한 일반적인 정보를 제공합니다.
+>[!DNL Data Migration Tool]을(를) 확장하기 전에 [기술 사양](technical-specification.md)을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
 
 
 ## 사소한 데이터 형식 및 구조 변경
 
-대부분의 경우 [맵 단계](technical-specification.md#map-step) 에서 다음 방법을 사용하여 사소한 데이터 형식 및 구조 변경 사항을 충분히 해결합니다. `map.xml` 파일:
+대부분의 경우 [맵 단계](technical-specification.md#map-step)는 `map.xml` 파일에서 다음 방법을 사용하여 사소한 데이터 형식 및 구조 변경을 충분히 확인합니다.
 
 - 매핑 규칙을 사용하여 테이블 또는 필드 이름 변경
 - 기존 처리기 또는 사용자 지정 처리기로 데이터 형식 변환
@@ -71,28 +71,28 @@ ht-degree: 0%
 </destination>
 ```
 
-- 에서 불필요한 데이터를 마이그레이션하지 않음 `great_blog_index` 색인 테이블.
-- 테이블 `great_blog_publication` 이름이 로 변경되었습니다. `great_blog_post` Magento 2에 있으므로 데이터가 새 테이블로 마이그레이션됩니다.
-   - 다음 `summary` 필드 이름이 (으)로 변경됨 `title`, 따라서 데이터가 새 필드로 마이그레이션됩니다.
-   - 다음 `priority` 필드가 제거되어 Magento 2에 더 이상 존재하지 않습니다.
-   - 의 데이터 `body` 필드의 형식이 변경되어 사용자 지정 처리기에서 처리해야 합니다. `\Migration\Handler\GreatBlog\NewFormat`.
+- `great_blog_index` 인덱스 테이블에서 불필요한 데이터를 마이그레이션하지 마십시오.
+- Magento 2에서 테이블 `great_blog_publication`의 이름이 `great_blog_post`(으)로 변경되었으므로 데이터가 새 테이블로 마이그레이션됩니다.
+   - `summary` 필드의 이름이 `title`(으)로 변경되었으므로 데이터가 새 필드로 마이그레이션됩니다.
+   - `priority` 필드가 제거되어 Magento 2에 더 이상 존재하지 않습니다.
+   - `body` 필드의 데이터 형식이 변경되었으므로 사용자 지정 처리기에서 처리해야 합니다. `\Migration\Handler\GreatBlog\NewFormat`.
 - Magento 2에서 &quot;GreatBlog&quot; 확장을 위해 새로운 등급 기능이 개발되었습니다.
-   - 새 항목 `great_blog_rating` 테이블이 생성되었습니다.
-   - 새 항목 `great_blog_post.rating` 필드가 만들어졌습니다.
+   - 새 `great_blog_rating` 테이블을 만들었습니다.
+   - 새 `great_blog_post.rating` 필드가 만들어졌습니다.
 
 ### 다른 단계에서 매핑 확장
 
-기타 단계는 다음과 같은 매핑을 지원합니다. [EAV 단계](technical-specification.md#eav-step) 및 고객 속성 단계입니다. 이 단계는 사전 정의된 Magento 테이블 목록을 마이그레이션합니다. 예를 들어 &quot;GreatBlog&quot; 확장에 `eav_attribute` Magento 2에서 테이블 및 이름이 변경되었습니다. 테이블이 다음에 의해 처리됩니다. [EAV 단계](technical-specification.md#eav-step), 매핑 규칙은 다음에 대한 `map-eav.xml` 파일. 다음 `map.xml` 및 `map-eav.xml` 파일이 동일한 `map.xsd` 스키마이므로 매핑 규칙은 동일하게 유지됩니다.
+[EAV 단계](technical-specification.md#eav-step) 및 고객 특성 단계와 같은 다른 단계는 매핑을 지원합니다. 이 단계는 사전 정의된 Magento 테이블 목록을 마이그레이션합니다. 예를 들어, &quot;GreatBlog&quot; 확장에 `eav_attribute` 테이블에 추가 필드가 있고 Magento 2에서 이름이 변경되었다고 가정해 봅시다. 테이블이 [EAV 단계](technical-specification.md#eav-step)에 의해 처리되므로 `map-eav.xml` 파일에 대해 매핑 규칙을 작성해야 합니다. `map.xml` 및 `map-eav.xml` 파일에서 동일한 `map.xsd` 스키마를 사용하므로 매핑 규칙은 동일하게 유지됩니다.
 
 ## 주요 데이터 형식 및 구조 변경
 
-맵 단계 외에도 에는 다른 단계가 있습니다. `config.xml` 다음과 같은 주요 형식 및 구조 변경으로 데이터를 마이그레이션하는 파일:
+`config.xml` 파일에는 맵 단계 외에도 다음과 같은 주요 형식 및 구조 변경 사항으로 데이터를 마이그레이션하는 다른 단계가 있습니다.
 
 - [Url 다시 작성 단계](technical-specification.md#url-rewrite-step)
 - OrderGrid 단계
 - [EAV 단계](technical-specification.md#eav-step)
 
-와(과) 달리 [맵 단계](technical-specification.md#map-step)이 단계에서는 모든 테이블 대신 사전 정의된 테이블 목록을 스캔합니다.
+[맵 단계](technical-specification.md#map-step)와 달리 이 단계는 모든 테이블 대신 미리 정의된 테이블 목록을 검사합니다.
 
 주요 데이터 형식 및 구조 변경의 경우 사용자 지정 단계를 만듭니다.
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 동일한 &quot;GreatBlog&quot; 예를 사용하여, 확장에 Magento 1에 테이블이 하나 있지만 Magento 2에 테이블이 두 개 있도록 다시 디자인되었다고 가정해 봅시다.
 
-Magento 1에는 1개가 있었습니다 `greatblog_post` 표:
+Magento 1에 단일 `greatblog_post` 테이블이 있습니다.
 
 ```text
 | Field     | Type     |
@@ -112,7 +112,7 @@ Magento 1에는 1개가 있었습니다 `greatblog_post` 표:
 | tags      | TEXT     |
 ```
 
-Magento 2에서 태그에 대한 새 테이블 `greatblog_post_tags` 이(가) 도입되었습니다.
+Magento 2에 태그 `greatblog_post_tags`에 대한 새 테이블이 도입되었습니다.
 
 ```text
 | Field      | Type     |
@@ -122,7 +122,7 @@ Magento 2에서 태그에 대한 새 테이블 `greatblog_post_tags` 이(가) �
 | sort_order | SMALLINT |
 ```
 
-MAGENTO 2 `greatblog_post` 이제 표는 다음과 같습니다.
+Magento 2 `greatblog_post` 테이블은 이제 다음과 같습니다.
 
 ```text
 | Field     | Type     |
@@ -133,7 +133,7 @@ MAGENTO 2 `greatblog_post` 이제 표는 다음과 같습니다.
 | author_id | SMALLINT |
 ```
 
-이전 테이블 구조에서 새 테이블 구조로 모든 데이터를 마이그레이션하려면 `config.xml` 파일. For example:
+이전 테이블 구조에서 새 테이블 구조로 모든 데이터를 마이그레이션하려면 `config.xml` 파일에 사용자 지정 단계를 만들 수 있습니다. For example:
 
 ```xml
 <steps mode="data">
@@ -153,7 +153,7 @@ MAGENTO 2 `greatblog_post` 이제 표는 다음과 같습니다.
 </steps>
 ```
 
-도구는에서 해당 위치에 따라 단계를 실행합니다. `config.xml` 파일: 위쪽에서 아래쪽으로. 이 예에서는 `GreatBlog Step` 마지막 실행.
+이 도구는 `config.xml` 파일에서 위쪽에서 아래쪽으로 위치에 따라 단계를 실행합니다. 이 예제에서는 `GreatBlog Step`이(가) 마지막으로 실행됩니다.
 
 단계에는 네 가지 유형의 클래스가 포함될 수 있습니다.
 
@@ -164,12 +164,12 @@ MAGENTO 2 `greatblog_post` 이제 표는 다음과 같습니다.
 
 >[!NOTE]
 >
->을(를) 참조하십시오 [구성](technical-specification.md#configuration), [단계 내부](technical-specification.md#step-internals), [단계](technical-specification.md#step-stages), 및 [실행 모드](technical-specification.md#running-modes) 추가 정보.
+>자세한 내용은 [구성](technical-specification.md#configuration), [단계 내부](technical-specification.md#step-internals), [단계](technical-specification.md#step-stages) 및 [실행 모드](technical-specification.md#running-modes)를 참조하세요.
 
 
-이러한 클래스 내에서 복잡한 SQL 쿼리를 취합하여 데이터를 가져오고 마이그레이션할 수 있습니다. 또한,에서 이러한 테이블은 &quot;무시&quot;되어야 합니다. [맵 단계](technical-specification.md#map-step) 기존 테이블을 모두 스캔하고 데이터가 `<ignore>` 의 태그 `map.xml` 파일.
+이러한 클래스 내에서 복잡한 SQL 쿼리를 취합하여 데이터를 가져오고 마이그레이션할 수 있습니다. 또한 [맵 단계](technical-specification.md#map-step)에서 이러한 테이블을 &quot;무시해야&quot; 합니다. 기존의 모든 테이블을 검사하고 데이터가 `map.xml` 파일의 `<ignore>` 태그에 없으면 데이터를 마이그레이션하려고 시도하기 때문입니다.
 
-무결성 검사를 위해 `config.xml` 파일이 테이블 구조가 예상대로 작동하는지 확인합니다.
+무결성 검사를 위해 `config.xml` 파일에 추가 맵 파일을 정의하여 테이블 구조가 예상과 같은지 확인합니다.
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
@@ -205,7 +205,7 @@ MAGENTO 2 `greatblog_post` 이제 표는 다음과 같습니다.
 </map>
 ```
 
-무결성 검사 클래스 `Vendor\Migration\Step\GreatBlog\Integrity` 확장 `Migration\App\Step\AbstractIntegrity` 및 포함 `perform` 테이블 구조를 확인하는 방법:
+무결성 검사 클래스 `Vendor\Migration\Step\GreatBlog\Integrity`이(가) `Migration\App\Step\AbstractIntegrity`을(를) 확장하고 테이블 구조를 확인하는 `perform` 메서드를 포함합니다.
 
 ```php
 class Integrity extends \Migration\App\Step\AbstractIntegrity
@@ -248,7 +248,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-그런 다음 Magento 2 데이터베이스에 데이터를 처리하고 저장하는 클래스를 만들어야 합니다 `Vendor\Migration\Step\GreatBlog\Data`:
+그런 다음 데이터를 처리하고 Magento 2 데이터베이스 `Vendor\Migration\Step\GreatBlog\Data`에 저장할 클래스를 만들어야 합니다.
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -326,7 +326,7 @@ class Data implements \Migration\App\Step\StageInterface
 }
 ```
 
-Volume 클래스에서 `Vendor\Migration\Step\GreatBlog\Volume`데이터가 완전히 마이그레이션되었는지 확인합니다.
+볼륨 클래스 `Vendor\Migration\Step\GreatBlog\Volume`에서 데이터가 완전히 마이그레이션되었는지 확인합니다.
 
 ```php
 class Volume extends \Migration\App\Step\AbstractVolume
@@ -355,7 +355,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 }
 ```
 
-델타 마이그레이션 기능을 추가하려면 새 그룹을 `deltalog.xml` 파일. 위치 `group`변경 사항을 확인해야 하는 테이블의 이름을 지정합니다.
+델타 마이그레이션 기능을 추가하려면 `deltalog.xml` 파일에 새 그룹을 추가하십시오. `group`에서 변경 내용을 확인해야 하는 테이블의 이름을 지정합니다.
 
 ```xml
 <groups>
@@ -366,7 +366,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 </groups>
 ```
 
-그런 다음 `Delta` 클래스 `Vendor\Migration\Step\GreatBlog\Delta` 확장됩니다. `Migration\App\Step\AbstractDelta`:
+그런 다음 `Migration\App\Step\AbstractDelta`을(를) 확장하는 `Delta` 클래스 `Vendor\Migration\Step\GreatBlog\Delta`을(를) 만듭니다.
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta
@@ -406,10 +406,11 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-예에 제공된 사용자 지정 단계 구현 후 시스템은 단일 Magento 1 테이블에서 데이터를 가져와 다음을 사용하여 처리합니다. `Vendor\Migration\Step\GreatBlog\Data` 클래스를 만들고 두 개의 Magento 2 테이블에 데이터를 저장합니다. 새 레코드와 변경된 레코드는 다음을 사용하여 델타 마이그레이션 시 전달됩니다. `Vendor\Migration\Step\GreatBlog\Delta` 클래스.
+예에 제공된 사용자 지정 단계 구현 후 시스템은 단일 Magento 1 테이블에서 데이터를 가져옵니다.
+`Vendor\Migration\Step\GreatBlog\Data` 클래스를 사용하여 처리하고 두 개의 Magento 2 테이블에 데이터를 저장합니다. 새 레코드와 변경된 레코드는 `Vendor\Migration\Step\GreatBlog\Delta` 클래스를 사용하여 델타 마이그레이션 시 전달됩니다.
 
 ## 금지된 확장 메서드
 
-다음 이후 [!DNL Data Migration Tool] 및 Magento 2는 지속적으로 발전하고 있으며 기존 단계 및 처리기는 변경될 수 있습니다. 다음과 같은 단계의 동작을 재정의하지 않는 것이 좋습니다. [맵 단계](technical-specification.md#map-step), [URL 재작성 단계](technical-specification.md#url-rewrite-step)및 처리기는 클래스를 확장하여 사용할 수 있습니다.
+[!DNL Data Migration Tool] 및 Magento 2는 계속 발전하고 있으므로 기존 단계 및 처리기는 변경될 수 있습니다. 클래스를 확장하여 [맵 단계](technical-specification.md#map-step), [URL 다시 작성 단계](technical-specification.md#url-rewrite-step) 및 처리기와 같은 단계의 동작을 재정의하지 않는 것이 좋습니다.
 
-일부 단계는 매핑을 지원하지 않으며 코드를 변경하지 않고 변경할 수 없습니다. 마이그레이션이 끝날 때 데이터를 변경하는 추가 단계를 작성하거나 [GitHub 문제](https://github.com/magento/data-migration-tool/issues) 기존 단계에서 새 확장 지점을 요청합니다.
+일부 단계는 매핑을 지원하지 않으며 코드를 변경하지 않고 변경할 수 없습니다. 마이그레이션 종료 시 데이터를 변경하는 추가 단계를 작성하거나 [GitHub 문제](https://github.com/magento/data-migration-tool/issues)를 만들고 기존 단계에서 새 확장 지점을 요청할 수 있습니다.

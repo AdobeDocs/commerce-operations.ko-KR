@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # 보안 웹 서버 통신
 
-이 항목에서는 TLS(전송 계층 보안) 암호화 및 의 조합을 사용하여 웹 서버와 검색 엔진(Elasticsearch 또는 OpenSearch) 간의 통신을 보호하는 예를 설명합니다. [HTTP 기본 인증](https://datatracker.ietf.org/doc/html/rfc2617). 다른 유형의 인증도 선택적으로 구성할 수 있습니다. 해당 정보에 대한 참조를 제공합니다.
+이 항목에서는 TLS(전송 계층 보안) 암호화와 [HTTP 기본 인증](https://datatracker.ietf.org/doc/html/rfc2617)을 함께 사용하여 웹 서버와 검색 엔진(Elasticsearch 또는 OpenSearch) 간의 통신을 보호하는 예를 설명합니다. 다른 유형의 인증도 선택적으로 구성할 수 있습니다. 해당 정보에 대한 참조를 제공합니다.
 
-(이전 용어인 SSL(Secure Sockets Layer)은 TLS와 혼용하여 자주 사용됩니다. 이 항목에서는 을(를) 참조합니다. *TLS*.)
+(이전 용어인 SSL(Secure Sockets Layer)은 TLS와 혼용하여 자주 사용됩니다. 이 항목에서는 *TLS*&#x200B;을 참조합니다.
 
 >[!WARNING]
 >
->별도로 지정하지 않는 한 이 항목의 모든 명령은 `root` 권한.
+>별도로 지정하지 않는 한 이 항목의 모든 명령은 `root` 권한이 있는 사용자로 입력해야 합니다.
 
 ## Recommendations
 
@@ -36,11 +36,11 @@ ht-degree: 0%
 * Apache
 
    * [Apache 2.4 강력한 암호화 방법](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
-   * [Ubuntu 14.04용 Apache에 SSL 인증서를 만드는 방법(Digitalocean 튜토리얼)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
+   * [Ubuntu 14.04용 Apache에 SSL 인증서를 만드는 방법(Digitalocean 자습서)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
    * [CentOS(CentOS wiki)를 사용하여 SSL 보안 웹 서버 설정](https://wiki.centos.org/HowTos/Https)
 
 * Ngix
 
    * [Nginx SSL 종료](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [Ubuntu 14.04용 Nginx에서 SSL 인증서를 만드는 방법(Digitalocean 튜토리얼)](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+   * [Ubuntu 14.04(Digitalocean 자습서)용 Nginx에서 SSL 인증서를 만드는 방법](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
    * [Nginx SSL 인증서 설치(digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

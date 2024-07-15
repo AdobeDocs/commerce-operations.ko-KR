@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->데이터베이스를 만드는 가장 간단한 방법은 명령을 사용하는 것입니다 `magento setup:upgrade`.
+>데이터베이스를 만드는 가장 간단한 방법은 `magento setup:upgrade` 명령을 사용하는 것입니다.
 
 ## 관리자 만들기 또는 편집
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->관리자를 편집하는 경우 `first name`, `last name`, 및 `password` 편집할 수 있습니다.
+>관리자를 편집하는 경우 `first name`, `last name` 및 `password`만 편집할 수 있습니다.
 
 명령 사용:
 
@@ -45,7 +45,7 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 | `--admin-email` | 관리자 사용자의 이메일 주소입니다. | 예 |
 | `--admin-user` | 관리자 사용자 이름. | 예 |
 | `--admin-password` | 관리자 사용자 암호입니다. 암호는 길이가 7자 이상이어야 하며 최소 하나의 영문자와 최소 하나의 숫자를 포함해야 합니다. <br><br>보다 길고 복잡한 암호를 사용하는 것이 좋습니다. 암호 문자열에 리터럴 해석이 필요한 특수 문자(예: 백슬래시 또는 공백)가 포함된 경우 암호를 작은 따옴표로 묶습니다. | 예 |
-| `--magento-init-params` | 응용 프로그램 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다.<br/><br/>예: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | 아니요 |
+| `--magento-init-params` | 응용 프로그램 초기화 매개 변수를 사용자 지정하는 명령에 추가하십시오.<br/><br/>예: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | 아니요 |
 
 사용의 예:
 
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-다음 업데이트 예 `first name`, `last name`, 및 `password` / `j.doe` 관리 사용자:
+다음 예제는 `j.doe` 관리 사용자의 `first name`, `last name` 및 `password`을(를) 업데이트합니다.
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
@@ -109,7 +109,7 @@ The user account "admin" has been unlocked
 The user account "admin" was not locked or could not be unlocked
 ```
 
-사용자가 관리자이고, 사용자가 활성 상태이며, 계정이 잠겨 있는지 확인합니다. 관리자에서 잠긴 사용자 목록을 보려면 관리자로 로그인하고 을 클릭합니다. **시스템** > **권한** > **잠긴 사용자**.
+사용자가 관리자이고, 사용자가 활성 상태이며, 계정이 잠겨 있는지 확인합니다. 관리자의 잠긴 사용자 목록을 보려면 관리자로 로그인하고 **시스템** > **권한** > **잠긴 사용자**&#x200B;를 클릭하십시오.
 
 계정이 존재하지 않으면 다음 메시지가 표시됩니다.
 

@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,17 @@ MySQL 쿼리가 느리게 실행되고 있는지 확인합니다. Adobe Commerce
 
 MySQL을 사용하여 Adobe Commerce on cloud infrastructure 프로젝트에서 장기 실행 쿼리를 식별하고 해결할 수 있습니다.
 
-1. 실행 [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) 명령문입니다.
-1. 장기 실행 쿼리가 표시되면 다음을 실행합니다 [MySQL `EXPLAIN` 및 `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) 각 쿼리에 대해 오랫동안 쿼리를 실행하는 이유를 알아봅니다.
+1. [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) 문을 실행합니다.
+1. 오래 실행되는 쿼리가 표시되면 각 쿼리에 대해 [MySQL `EXPLAIN` 및 `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/)을(를) 실행하여 쿼리가 오래 실행되는 이유를 확인하세요.
 1. 발견된 문제를 기반으로, 쿼리를 더 빨리 실행할 수 있도록 수정하는 단계를 수행하십시오.
 
 ### Percona Toolkit을 사용하여 쿼리 분석(Pro 아키텍처에만 해당)
 
 Adobe Commerce 프로젝트가 Pro 아키텍처에 배포된 경우 Percona Toolkit을 사용하여 쿼리를 분석할 수 있습니다.
 
-1. 실행 `pt-query-digest --type=slowlog` MySQL 느린 쿼리 로그에 대한 명령입니다.
-   * 느린 쿼리 로그의 위치를 찾으려면 **[!UICONTROL Log locations > Service Logs]**&#x200B;개발자 설명서에서 (https://devdocs.magento.com/cloud/project/log-locations.html#service-logs).
-   * 다음을 참조하십시오. [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) 설명서를 참조하십시오.
+1. MySQL 느린 쿼리 로그에 대해 `pt-query-digest --type=slowlog` 명령을 실행합니다.
+   * 느린 쿼리 로그의 위치를 찾으려면 개발자 설명서에서 **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs)을 참조하십시오.
+   * [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) 설명서를 참조하십시오.
 1. 발견된 문제를 기반으로, 쿼리를 더 빨리 실행할 수 있도록 수정하는 단계를 수행하십시오.
 
 ## 모든 테이블에 기본 키가 있는지 확인합니다.
@@ -58,15 +58,15 @@ Adobe Commerce 프로젝트가 Pro 아키텍처에 배포된 경우 Percona Tool
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. 기본 키가 없는 테이블의 경우 `db_schema.xml` (선언 스키마) 다음과 유사한 노드가 있습니다.
+1. 기본 키가 없는 테이블의 경우 다음과 유사한 노드로 `db_schema.xml`(선언 스키마)을 업데이트하여 기본 키를 추가하십시오.
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
    ```
 
-   노드를 추가할 때 `referenceID` 및 `column name` 변수를 사용자 지정 사용자 지정 값으로 채웁니다.
+   노드를 추가할 때 `referenceID` 및 `column name` 변수를 사용자 지정 사용자 지정 값으로 바꾸십시오.
 
-자세한 내용은 [선언적 스키마 구성](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) 개발자 설명서에서 확인할 수 있습니다.
+자세한 내용은 개발자 설명서에서 [선언적 스키마 구성](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)을 참조하십시오.
 
 ## 중복 인덱스 식별 및 제거
 
@@ -82,11 +82,11 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 이 쿼리는 열 이름과 중복 인덱스의 이름을 반환합니다.
 
-Pro 아키텍처 판매자는 Percona Toolkit을 사용하여 검사를 실행할 수도 있습니다  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` 명령입니다.
+Pro 아키텍처 판매자는 Percona Toolkit `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` 명령을 사용하여 검사를 실행할 수도 있습니다.
 
 ### 중복 인덱스 제거
 
-SQL 사용 [인덱스 삭제 문](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) 중복 인덱스를 제거합니다.
+중복 인덱스를 제거하려면 SQL [DROP INDEX 문](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html)을(를) 사용하십시오.
 
 ```SQL
 DROP INDEX

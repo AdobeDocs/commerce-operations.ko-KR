@@ -5,7 +5,7 @@ exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
 source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 보안
 
-더 Adobe Commerce [Pro 플랜 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) 는 매우 안전한 환경을 제공하도록 설계되었습니다. 각 고객은 다른 고객과 분리된 고유한 서버 환경에 배포됩니다. 프로덕션 환경의 보안 세부 정보는 아래에 설명되어 있습니다.
+Adobe Commerce [Pro 플랜 아키텍처](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html)는 안전한 환경을 제공하도록 설계되었습니다. 각 고객은 다른 고객과 분리된 고유한 서버 환경에 배포됩니다. 프로덕션 환경의 보안 세부 정보는 아래에 설명되어 있습니다.
 
 ## 웹 브라우저
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Fastly는 CDN(Content Delivery Network) 및 DDoS(Distributed Denial of Service) 보호 기능을 제공합니다. Fastly CDN은 원본 서버에 대한 직접 액세스를 격리하는 데 도움이 됩니다. 공용 DNS는 Fastly 네트워크를 가리킬 뿐입니다. Fastly DDoS 솔루션은 시스템 중단을 일으키는 L3 및 L4 공격과 복잡한 L7 공격으로부터 보호합니다. 레이어 7 공격은 전체 HTTP/HTTPS 요청을 기반으로 하고 헤더, 쿠키, 요청 경로, 클라이언트 IP를 포함한 클라이언트 및 요청 기준이나 지리적 위치와 같은 지표를 기반으로 하는 사용자 지정 규칙을 사용하여 차단할 수 있습니다.
 
-다음을 참조하십시오 [Fastly 서비스 개요](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) 다음에서 _Cloud 안내서_.
+_Cloud Guide_&#x200B;에서 [Fastly 서비스 개요](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)를 참조하십시오.
 
 ## 웹 애플리케이션 방화벽
 
@@ -31,7 +31,7 @@ Fastly Web Application Firewall(WAF) 은 추가적인 보호를 제공하는 데
 
 Adobe Commerce에서 소프트웨어 패치 전에 Managed Services에서 보안 문제를 &quot;가상으로 패치&quot;할 수 있는 새로운 취약점을 감지해야 하는 경우 WAF 규칙이 업데이트됩니다. Fastly WAF는 속도 제한 또는 봇 탐지 서비스를 제공하지 않습니다. 원하는 경우 고객은 Fastly와 호환되는 서드파티 봇 탐지 서비스에 라이선스를 부여할 수 있습니다.
 
-다음을 참조하십시오 [WAF(Web Application Firewall)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) 다음에서 _Cloud 안내서_.
+_Cloud Guide_&#x200B;에서 [WAF(웹 응용 프로그램 방화벽)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html)을(를) 참조하십시오.
 
 ## 가상 사설 클라우드
 
@@ -47,7 +47,7 @@ Adobe Commerce 애플리케이션은 데이터가 유휴 상태이거나 서버 
 
 ## 엔드포인트 감지 및 응답
 
-[!DNL CrowdStrike Falcon], 경량의 차세대 EDR(Endpoint Detection and Response) 에이전트가 Adobe 내의 모든 엔드포인트(서버 포함)에 설치됩니다. EDR 에이전트는 실시간 연속 모니터링 및 수집을 통해 Adobe 데이터와 시스템을 보호하므로 신속한 위협 식별 및 대처가 가능합니다.
+[!DNL CrowdStrike Falcon], 경량의 차세대 EDR(Endpoint Detection and Response) 에이전트가 Adobe 내의 모든 끝점(서버 포함)에 설치됩니다. EDR 에이전트는 실시간 연속 모니터링 및 수집을 통해 Adobe 데이터와 시스템을 보호하므로 신속한 위협 식별 및 대처가 가능합니다.
 
 ## 침투 테스트
 
@@ -68,11 +68,11 @@ Adobe은 핵심 애플리케이션 코드에서 보안 취약점을 정기적으
 - 오와십자프
 - andSqlMap
 
-전체 코드 베이스는 이러한 도구를 사용하여 격주로 검사됩니다. 고객은 직접 이메일, 애플리케이션 및 을 통해 보안 패치에 대한 알림을 받게 됩니다. [보안 센터](https://helpx.adobe.com/security.html).
+전체 코드 베이스는 이러한 도구를 사용하여 격주로 검사됩니다. 고객은 직접 전자 메일, 응용 프로그램 및 [보안 센터](https://helpx.adobe.com/security.html)에서 알림을 통해 보안 패치에 대한 알림을 받습니다.
 
-고객은 PCI 지침에 따라 릴리스 후 30일 이내에 이러한 패치가 사용자 정의 애플리케이션에 적용되었는지 확인해야 합니다. Adobe은 [보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html) 이를 통해 판매자는 정기적으로 사이트를 모니터링하고 알려진 보안 위험, 맬웨어 및 무단 액세스에 대한 업데이트를 받을 수 있습니다. 보안 검색 도구는 무료 서비스이며 모든 버전의 Adobe Commerce에서 실행할 수 있습니다.
+고객은 PCI 지침에 따라 릴리스 후 30일 이내에 이러한 패치가 사용자 정의 애플리케이션에 적용되었는지 확인해야 합니다. Adobe은 또한 가맹점이 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 무단 액세스에 대한 업데이트를 받을 수 있도록 하는 [보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html)를 제공합니다. 보안 검색 도구는 무료 서비스이며 모든 버전의 Adobe Commerce에서 실행할 수 있습니다.
 
-보안 연구원이 취약점을 식별하고 보고하도록 장려하기 위해 Adobe Commerce에는 [버그 보상 프로그램](https://hackerone.com/magento) 내부 테스트 외에. 또한 고객은 원하는 경우 자체 검토를 위해 애플리케이션의 전체 소스 코드를 제공받습니다.
+보안 연구원이 취약점을 식별하고 보고하도록 장려하기 위해 Adobe Commerce에는 내부 테스트 외에 [버그 바운티 프로그램](https://hackerone.com/magento)이 있습니다. 또한 고객은 원하는 경우 자체 검토를 위해 애플리케이션의 전체 소스 코드를 제공받습니다.
 
 ## 읽기 전용 파일 시스템
 
@@ -84,15 +84,15 @@ Managed Services 프로덕션 환경으로 실행 코드를 가져오는 유일�
 
 ## 로깅
 
-모든 AWS 활동이 AWS CloudTrail에 기록됩니다. 운영 체제, 애플리케이션 서버 및 데이터베이스 로그는 운영 서버에 저장되고 백업에 저장됩니다. 모든 소스 코드 변경 사항은 Git 저장소에 기록됩니다. 배포 기록은 Adobe Commerce에서 사용할 수 있습니다. [프로젝트 웹 인터페이스](https://devdocs.magento.com/cloud/project/projects.html#login). 모든 지원 액세스가 기록되고 지원 세션이 기록됩니다.
+모든 AWS 활동이 AWS CloudTrail에 기록됩니다. 운영 체제, 애플리케이션 서버 및 데이터베이스 로그는 운영 서버에 저장되고 백업에 저장됩니다. 모든 소스 코드 변경 사항은 Git 저장소에 기록됩니다. 배포 기록은 Adobe Commerce [Project 웹 인터페이스](https://devdocs.magento.com/cloud/project/projects.html#login)에서 사용할 수 있습니다. 모든 지원 액세스가 기록되고 지원 세션이 기록됩니다.
 
-다음을 참조하십시오 [로그 보기 및 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) 다음에서 _Cloud 안내서_.
+_Cloud Guide_&#x200B;에서 [로그 보기 및 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)를 참조하십시오.
 
 ## 중요 데이터
 
 중요한 데이터는 소비자의 개인 정보나 Managed Services 고객의 기밀 데이터를 포괄할 수 있습니다. 민감한 고객 및 소비자 데이터를 보호하는 것은 Adobe Commerce Managed Services에 있어 중요한 의무입니다. Managed Services 및 Adobe 고객 모두 개인 식별 정보에 대한 법적 의무가 있습니다. 아키텍처의 보안 기능 외에도 중요한 데이터에 대한 배포 및 액세스를 제한하는 다른 제어 기능이 있습니다.
 
-고객은 자신의 데이터를 소유하고 해당 데이터가 있는 위치를 제어합니다. 고객은 프로덕션 및 개발 인스턴스가 상주하는 위치를 지정합니다. 또한 Commerce가 있는 Adobe Commerce 보고 환경에 사용되는 위치와 해당 Adobe Commerce 보고 애플리케이션이 개인 식별 정보에 액세스할 수 있는지 여부도 지정합니다. 프로덕션 인스턴스는 대부분의 AWS 지역에 있을 수 있지만 개발 및 Adobe Commerce 보고 환경은 현재 미국 또는 유럽 연합에서 찾을 수 있습니다.
+고객은 자신의 데이터를 소유하고 해당 데이터가 있는 위치를 제어합니다. 고객은 프로덕션 및 개발 인스턴스가 상주하는 위치를 지정합니다. 또한 Commerce을 사용하는 Adobe Commerce 보고 환경에 사용되는 위치와 해당 Adobe Commerce 보고 애플리케이션이 개인 식별 정보에 액세스할 수 있는지 여부도 지정합니다. 프로덕션 인스턴스는 대부분의 AWS 지역에 있을 수 있지만 개발 및 Adobe Commerce 보고 환경은 현재 미국 또는 유럽 연합에서 찾을 수 있습니다.
 
 중요한 데이터는 Fastly CDN 서버 네트워크를 통과할 수 있지만 Fastly 네트워크에 저장되지 않습니다. Managed Services에 포함된 모든 파트너는 민감한 데이터를 보호하기 위한 계약상의 의무를 지닙니다. Managed Services은 고객이 지정한 위치에서 중요한 고객 또는 소비자 데이터를 이동하지 않습니다.
 
@@ -110,14 +110,14 @@ GDPR은 수집된 개인 식별 정보(이름, 인종, 생년월일 등)가 익�
 
 >[!NOTE]
 >
->이 페이지에서는 GDPR에 대해 고려해야 할 사항에 대한 일반적인 개요를 제공합니다. 다음을 참조하십시오. _[보안 및 규정 준수 안내서](../../../security-and-compliance/privacy/gdpr.md)_ Adobe Commerce이 개인 정보를 저장하는 방법에 대한 자세한 내용. 비즈니스가 법적 의무를 준수하는 방법을 결정하려면 법률 고문과 상담하거나 다음을 참조하십시오. [공식 텍스트](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>이 페이지에서는 GDPR에 대해 고려해야 할 사항에 대한 일반적인 개요를 제공합니다. Adobe Commerce에서 개인 정보를 저장하는 방법에 대한 자세한 내용은 _[보안 및 규정 준수 안내서](../../../security-and-compliance/privacy/gdpr.md)_&#x200B;를 참조하세요. 비즈니스가 법적 의무를 준수하는 방법을 결정하려면 법률 고문과 상의하거나 [공식 텍스트](https://eur-lex.europa.eu/eli/reg/2016/679/oj)를 참조하십시오.
 
 ## 백업
 
-백업은 지난 24시간 동안 매 시간마다 수행됩니다. 24시간 이후에는 AWS EBS 스냅샷 서비스를 사용하여 일정에 따라 백업이 유지됩니다. 다음을 참조하십시오 [보존 정책](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) 다음에서 _Cloud 안내서_.
+백업은 지난 24시간 동안 매 시간마다 수행됩니다. 24시간 이후에는 AWS EBS 스냅샷 서비스를 사용하여 일정에 따라 백업이 유지됩니다. _Cloud Guide_&#x200B;에서 [보존 정책](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy)을 참조하십시오.
 
 이 서비스는 중복 스토리지에 독립적인 백업을 만듭니다. EBS 볼륨은 암호화되므로 백업도 암호화됩니다. 또한 Managed Services은 고객 요청에 따라 온디맨드 백업을 수행합니다.
 
 Managed Services 백업 및 복구 방식에서는 전체 시스템 백업과 함께 고가용성 아키텍처를 사용합니다. 각 프로젝트는 세 개의 별도 AWS 가용 영역(각 영역은 별도의 데이터 센터)에 걸쳐 모든 데이터, 코드 및 에셋으로 복제됩니다.
 
-다음을 참조하십시오 [스냅샷 및 백업 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) 다음에서 _Cloud 안내서_.
+_Cloud Guide_&#x200B;에서 [스냅샷 및 백업 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html)를 참조하십시오.

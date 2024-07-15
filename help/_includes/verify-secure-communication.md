@@ -1,7 +1,7 @@
 ---
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
@@ -9,10 +9,10 @@ ht-degree: 1%
 
 이 섹션에서는 HTTP 기본 인증이 작동하는지 확인하는 두 가지 방법에 대해 설명합니다.
 
-* 사용 `curl` 클러스터 상태를 가져오려면 사용자 이름과 암호를 입력해야 하는지 확인하는 명령
+* 확인하기 위해 `curl` 명령을 사용하여 클러스터 상태를 가져오려면 사용자 이름과 암호를 입력해야 합니다.
 * Admin에서 HTTP 기본 인증 구성
 
-## 사용 `curl` 클러스터 상태를 확인하는 명령
+## `curl` 명령을 사용하여 클러스터 상태 확인
 
 다음 명령을 입력합니다.
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 관리자에서 HTTP 기본 인증 구성
 
-에 설명된 것과 동일한 작업 수행 [검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외* 클릭 **[!UICONTROL Yes]** 다음에서 **[!UICONTROL Enable HTTP Auth]** 제공된 필드에 사용자 이름과 암호를 나열하고 입력합니다.
+[검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외*&#x200B;에서 설명한 것과 동일한 작업을 수행하고 **[!UICONTROL Enable HTTP Auth]** 목록에서 **[!UICONTROL Yes]**&#x200B;을(를) 클릭한 다음 제공된 필드에 사용자 이름과 암호를 입력합니다.
 
-클릭 **[!UICONTROL Test Connection]** 제대로 작동하는지 확인한 다음 **[!UICONTROL Save Config]**.
+**[!UICONTROL Test Connection]**&#x200B;을(를) 클릭하여 작동하는지 확인한 다음 **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 
 계속하기 전에 캐시를 플러시하고 다시 인덱싱해야 합니다.

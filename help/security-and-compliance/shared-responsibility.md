@@ -106,10 +106,10 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 다음 요약 테이블은 RACI 모델을 사용하여 Adobe, 판매자 및 클라우드 서비스 공급자 간에 공유된 보안 권한을 표시합니다.
 
-**R** — 책임
+**R** — 담당
 **A** — 책임 있음
-**C** — 컨설팅됨
-**I** — 정보 제공
+**C** — 참조됨
+**I** — 알림
 
 >[!ENDSHADEBOX]
 
@@ -132,7 +132,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
     <td></td>
   </tr>
   <tr>
-    <td>지원 서비스에 패치 적용<br>(예: Nginx 또는 MySQL)</td>
+    <td>지원 서비스 <br>에 패치 적용(예: Nginx 또는 MySQL)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
     <td></td>
   </tr>
   <tr>
-    <td>소스 리포지토리 구성<sup>1</sup></td>
+    <td>원본 리포지토리 구성<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -328,7 +328,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
     <td></td>
   </tr>
   <tr>
-    <td>CDN 지원<sup>2</sup></td>
+    <td>CDN<sup>2</sup> 지원</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -520,9 +520,9 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> 클라우드 인프라 저장소의 Adobe Commerce이 주 리포지토리로 사용되는 경우에만 해당합니다. 다른 외부 리포지토리를 사용하는 것은 판매자의 유일한 책임입니다.</p>
-      <p><sup><strong>2</strong></sup> Adobe은 CDN 공급자 문제에 대한 레벨 1 지원을 제공합니다.</p>
-      <p><sup><strong>3</strong></sup> 판매자는 애플리케이션에 대해 구성하는 모든 Ngnix 제어 기능을 담당합니다.</p>
+      <p><sup><strong>1</strong></sup> 클라우드 인프라 저장소의 Adobe Commerce이 주 리포지토리로 사용되는 경우에만 해당됩니다. 다른 외부 리포지토리를 사용하는 것은 판매자의 유일한 책임입니다.</p>
+      <p><sup><strong>2</strong></sup> Adobe은 CDN 공급자 문제에 대한 수준 1 지원을 제공합니다.</p>
+      <p><sup><strong>3</strong></sup> 판매자는 응용 프로그램에 대해 구성하는 모든 Ngnix 컨트롤을 담당합니다.</p>
       <p><sup><strong>4</strong></sup> PCI의 경우 침투 테스트 요구 사항이 Adobe과 판매자 간에 공유됩니다.</p>
     </td>
   </tr>
@@ -639,7 +639,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | --- | --- | --- |
 | 회전 로그 | R |   |
 | 사용자 지정 Adobe Commerce 애플리케이션 | | R |
-| New Relic 서비스 가용성:<br>APM 애플리케이션 및 에이전트 통합, 인프라 애플리케이션,<br>로깅 및 통합 | R |   |
+| New Relic 서비스 가용성:<br>APM 응용 프로그램 및 에이전트 통합, 인프라 응용 프로그램,<br>로깅 및 통합 | R |   |
 | New Relic 경고 설정 |     | R |
 | PaaS 서버에 New Relic 에이전트 배포 |     | R |
 
@@ -662,7 +662,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | --- | --- | --- |
 | 애플리케이션 구성 |     | R |
 | Adobe Commerce 애플리케이션에 도메인 추가(기본 URL) |     | R |
-| 배포된 Adobe Commerce 버전에서 지원하는 서비스 버전을 사용하도록 PaaS 구성<br><br>예를 들어 다른 Commerce 버전은 PHP, Redis 등의 특정 버전과 호환됩니다. |     | R |
+| 배포된 Adobe Commerce 버전에서 지원하는 서비스 버전을 사용하도록 PaaS 구성<br><br>예를 들어 다른 Commerce 버전이 PHP, Redis 등의 특정 버전과 호환됩니다. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 |     | Adobe | 판매자 |
 | --- | --- | --- |
 | Galera 및 MariaDB 서비스 가용성 | R | |
-| 기본 데이터베이스 설정의 지속적인 유지 관리<br><br>(코어 테이블 색인화 및 최적화, 기본 시스템 관리자 설정 최적화) | R |   |
-| 판매자 데이터 및 수정된 설정에 대한 지속적인 유지 관리<br><br>(정규화된 테이블과 플랫 테이블 구성, 사용자 지정 및 타사 테이블 인덱싱 및 최적화, 데이터 보관 또는 제거, 시스템 관리 설정 구성) |     | R |
+| 기본 데이터베이스 설정 <br><br>의 유지 관리 진행 중(핵심 테이블 인덱싱 및 최적화, 기본 시스템 관리자 설정 최적화) | R |   |
+| 판매자 데이터 및 수정된 설정의 지속적인 유지 관리<br><br>(정규화된 테이블과 플랫 테이블 구성, 사용자 지정 및 타사 테이블 인덱싱 및 최적화, 데이터 보관 또는 제거, 시스템 관리 설정 구성) |     | R |
 | Galera 및 MySQL의 구성 | R |   |
 | Galera 및 MariaDB의 지속적인 품질 및 패치 | R |   |
 | 지속적인 인프라 최적화 | R |   |
@@ -755,7 +755,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | --- | --- | --- |
 | SendGrid 이메일 서비스 및 통합 가용성 | R |   |
 | 판매자의 SendGrid 사용 제한 모니터링 | R |   |
-| 판매자는 발신 트랜잭션 이메일에 대해서만 서비스를 사용할 책임이 있습니다.<br>이 서비스는 마케팅 이메일 전송을 지원하지 않습니다. |     | R |
+| 판매자는 보내는 트랜잭션 전자 메일에 대해서만 서비스를 사용할 책임이 있습니다<br>이 서비스는 마케팅 전자 메일 전송을 지원하지 않습니다. |     | R |
 | 선택적 서드파티 이메일 서비스 구성 |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | Adobe Commerce Business Intelligence 서비스 가용성 | R |   |
 | MBI 데이터 동기화 프로세스 | R |   |
 | MBI 동기화 문제 감지 | R |   |
-| Adobe Commerce Cloud Pro, Starter, On Premise 또는 비 Adobe Commerce으로 MBI 데이터 동기화 구성<br>(API, 데이터 품질 및 형식 지정, 판매자 네트워크,<br>데이터 임계값을 통해 Adobe Commerce Cloud DB 내부 및 외부에서 DB 연결 |     | R |
-| Adobe Commerce Cloud Pro에 MBI 데이터 동기화 구성<br>(Adobe Commerce Cloud 데이터베이스 구성) | R |   |
+| Adobe Commerce Cloud Pro, Starter, On Premise 또는 비 Adobe Commerce에 MBI 데이터 동기화 구성<br>(API, 데이터 품질 및 형식 지정, 판매자 네트워크,<br>데이터 임계값을 통한 Adobe Commerce Cloud DB 내부 및 외부 모두 DB 연결) |     | R |
+| Adobe Commerce Cloud Pro<br>에 대한 MBI 데이터 동기화 구성(Adobe Commerce Cloud 데이터베이스 구성) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | 판매자의 VPC 서비스 엔드포인트에 대한 PrivateLink 인바운드 구성 |     | R |
 | 판매자의 VPC 서비스 엔드포인트에 대한 PrivateLink 인바운드 수락 | R |   |
 | PrivateLink 통합 구성(엔드포인트-계정) |     | R |
-| PrivateLink 종단점용 판매자 소유 VPC 구성<br><br> (모든 VPN 연결 포함) |     | R |
+| PrivateLink 끝점<br><br>에 대한 판매자 소유 VPC 구성(VPN 연결 포함) |     | R |
 
 {style="table-layout:auto"}
 
