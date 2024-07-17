@@ -21,7 +21,7 @@ Adobe은 다음 표에 설명된 시스템 요구 사항의 조합만 지원합�
 
 >[!BEGINTABS]
 
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의 Commerce]
 
 [Commerce on Cloud 템플릿](https://github.com/magento/magento-cloud)은(는) 특정 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
@@ -82,7 +82,7 @@ PHPUnit v9(명령줄 도구).
 
 >[!BEGINTABS]
 
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의 Commerce]
 
 다음 표에서는 Adobe Commerce을 클라우드 플랫폼에 배포할 때 지원되는 PHP 확장을 보여 줍니다.
 
