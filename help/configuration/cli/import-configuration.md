@@ -2,7 +2,7 @@
 title: 구성 파일에서 데이터 가져오기
 description: 구성 파일에서 Adobe Commerce 구성 설정을 가져옵니다.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -36,7 +36,7 @@ bin/magento app:config:import [-n, --no-interaction]
 
 예를 들어 구성 파일에 새 웹 사이트와 새 저장소가 하나씩 포함되어 있으면 다음 메시지가 표시됩니다.
 
-```terminal
+```
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Do you want to continue [yes/no]?
 
 배포 구성 파일에 가져올 데이터가 포함된 경우 다음과 유사한 메시지가 표시됩니다.
 
-```terminal
+```
 Start import:
 Some information about importing
 ```
 
 배포 구성 파일에 가져올 데이터가 없으면 다음과 유사한 메시지가 표시됩니다.
 
-```terminal
+```
 Start import:
 Nothing to import
 ```

@@ -2,7 +2,7 @@
 title: 업그레이드를 위한 유지 관리 모드 옵션
 description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 상점 첫 화면에서 볼 수 있는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -72,7 +72,7 @@ body
 
    Apache 구성 파일의 끝에 다음 내용을 추가합니다.
 
-   ```terminal
+   ```
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f

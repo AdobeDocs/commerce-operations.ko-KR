@@ -2,7 +2,7 @@
 title: Apache
 description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Adobe Commerce은 서버 재작성 및 `.htaccess`을(를) 사용하여 Apache�
 
    예를 들어 `000-default.conf`의 끝에 다음을 추가할 수 있습니다.
 
-   ```terminal
+   ```
    <Directory "/var/www/html">
        AllowOverride All
    </Directory>
@@ -98,7 +98,7 @@ apache2 -v
 
 결과는 다음과 유사하게 표시됩니다.
 
-```terminal
+```
 Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
@@ -132,7 +132,7 @@ Apache의 기본 버전을 설치하려면
 
    결과는 다음과 유사하게 표시됩니다.
 
-   ```terminal
+   ```
    Server version: Apache/2.4.18 (Ubuntu)
    Server built: 2020-04-15T18:00:57
    ```
@@ -175,7 +175,7 @@ Apache 2.4로 업그레이드하려면 다음을 수행하십시오.
 
    다음과 유사한 메시지가 표시되어야 합니다.
 
-   ```terminal
+   ```
    Server version: Apache/2.4.10 (Ubuntu)
    Server built: Jul 22 2020 22:46:25
    ```
@@ -204,7 +204,7 @@ Apache 설치 및 구성은 기본적으로 소프트웨어를 설치하고, 다
 
    설치가 성공했는지 확인하는 다음 디스플레이와 유사한 메시지:
 
-   ```terminal
+   ```
    Server version: Apache/2.4.40 (Unix)
    Server built: Oct 16 2020 14:48:21
    ```

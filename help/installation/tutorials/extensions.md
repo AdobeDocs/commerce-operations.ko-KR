@@ -2,7 +2,7 @@
 title: 타사 확장 관리
 description: Adobe Commerce 확장을 설치, 활성화, 업그레이드 및 제거하려면 다음 단계를 따르십시오.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -98,7 +98,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
 1. 작성기가 프로젝트 종속성 업데이트를 완료하고 오류가 없는지 확인할 때까지 기다립니다.
 
-   ```terminal
+   ```
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -116,7 +116,7 @@ bin/magento module:status J2t_Payplug
 
 기본적으로 확장은 비활성화되어 있을 수 있습니다.
 
-```terminal
+```
 Module is disabled
 ```
 
@@ -140,7 +140,7 @@ bin/magento module:status
 
    다음 출력이 표시됩니다.
 
-   ```terminal
+   ```
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -170,7 +170,7 @@ bin/magento module:status
 
    확장이 더 이상 비활성화되지 않았는지 확인하는 출력이 표시됩니다.
 
-   ```terminal
+   ```
    Module is enabled
    ```
 

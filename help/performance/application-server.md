@@ -2,7 +2,7 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -147,7 +147,7 @@ git push
 
    예상 응답은 다음 예제와 유사해야 합니다.
 
-   ```terminal
+   ```json
    {    
     "data": {        
         "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    

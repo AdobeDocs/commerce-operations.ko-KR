@@ -2,7 +2,7 @@
 title: 고급 [!DNL JavaScript] 번들
 description: JavaScript 번들링을 통해 서버 요청의 크기와 빈도를 줄이는 방법에 대해 알아봅니다.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -212,7 +212,7 @@ phantomjs deps.js <i>url과 특정 페이지 간</i> &gt; <i>text-file-represent
 
 예를 들어 4개의 번들(홈 페이지, 카테고리, 제품, 장바구니)을 만드는 데 사용할 4개의 페이지 유형을 나타내는 Luma 테마 샘플 저장소의 4개 페이지가 여기에 있습니다.
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -234,7 +234,7 @@ Object.keys(window.require.s.contexts._.defined)
 
 [!DNL RequireJS] 종속성을 페이지 유형 텍스트 파일에 병합한 후 각 페이지 유형 종속성 파일에서 다음 명령을 사용하여 파일의 쉼표를 새 줄로 바꿀 수 있습니다.
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -243,7 +243,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 mixin은 종속성이 중복되므로 각 파일에 대한 모든 mixin도 제거해야 합니다. 각 종속성 파일에 다음 명령을 사용합니다.
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -262,7 +262,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 이 명령은 `bundle/*.txt` 파일에 있는 종속성을 병합하고 정렬합니다.  또한 출력에는 각 종속성이 포함된 파일 수가 표시됩니다.
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -317,7 +317,7 @@ bash deps-map.sh
 
 세 가지 예제 페이지 유형에 적용되는 이 스크립트의 출력은 다음과 같아야 합니다(하지만 훨씬 더 오래).
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -427,7 +427,7 @@ r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/stat
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

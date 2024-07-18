@@ -2,7 +2,7 @@
 title: '[!DNL Upgrade Compatibility Tool]개 보고서'
 description: 다음 단계에 따라 Adobe Commerce 프로젝트에서  [!DNL Upgrade Compatibility Tool] 을(를) 실행합니다.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 보고서의 다음 명령줄 인터페이스 예를 참조하십시오.
 
-```terminal
+```
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
  * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
@@ -43,7 +43,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 다음 명령줄 인터페이스 예를 참조하십시오.
 
-```terminal
+```
  ----------------------------- ----------------- 
   Current version               2.4.1            
   Target version                2.4.4            

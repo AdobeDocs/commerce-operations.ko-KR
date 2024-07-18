@@ -3,7 +3,7 @@ title: 바니시 구성 및 사용
 description: Vannish가 파일을 저장하고 HTTP 트래픽을 개선하는 방법을 이해합니다.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 - Commerce 설치 시 발생할 수 있는 오류:
 
-  ```terminal
+  ```
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517

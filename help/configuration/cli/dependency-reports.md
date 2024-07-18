@@ -2,7 +2,7 @@
 title: 종속성 보고서
 description: 모듈, 순환 및 프레임워크 종속성의 합계를 표시하는 보고서를 만듭니다.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 다음은 샘플 모듈 종속성 보고서에 대한 출력의 일부입니다.
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 다음은 샘플 순환 종속성 보고서에 대한 출력의 일부입니다.
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 다음은 샘플 프레임워크 종속성 보고서에 대한 출력의 일부입니다.
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

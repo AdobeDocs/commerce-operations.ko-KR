@@ -3,7 +3,7 @@ title: CentOS에서 memcached 설정
 description: CentOS에서 memcached를 설치하고 구성합니다.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -193,7 +193,7 @@ stats items
 
 그 결과는 다음과 비슷합니다.
 
-```terminal
+```
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0

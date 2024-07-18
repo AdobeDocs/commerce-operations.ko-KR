@@ -2,7 +2,7 @@
 title: 단위 테스트 실행
 description: Adobe Commerce 코드 베이스에 정의된 단위 테스트를 실행합니다.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -47,7 +47,7 @@ bin/magento dev:tests:run --help
 
 샘플 반환:
 
-```terminal
+```
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 

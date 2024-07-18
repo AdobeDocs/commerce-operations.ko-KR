@@ -3,7 +3,7 @@ title: 테마 제거
 description: Adobe Commerce 테마를 제거하려면 다음 단계를 따르십시오.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -68,7 +68,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 예를 들어 다른 테마가 종속된 테마를 제거하려고 하면 다음 메시지가 표시됩니다.
 
-```terminal
+```
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
@@ -81,7 +81,7 @@ bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/Exam
 
 다음 디스플레이와 유사한 메시지:
 
-```terminal
+```
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

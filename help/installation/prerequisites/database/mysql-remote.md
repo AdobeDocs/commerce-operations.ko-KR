@@ -2,7 +2,7 @@
 title: 원격 MySQL 데이터베이스 연결 설정
 description: Adobe Commerce의 온-프레미스 설치에 대한 원격 데이터베이스 연결을 구성하려면 다음 단계를 따르십시오.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -70,7 +70,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
    위치는 다음과 유사하게 표시됩니다.
 
-   ```terminal
+   ```
    Default options are read from the following files in the given order:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
@@ -138,7 +138,7 @@ mysql -u <local database username> -h <database server ip address> -p
 
 MySQL 모니터가 다음과 같이 표시되면 데이터베이스가 Adobe Commerce에 대한 준비가 된 것입니다.
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 

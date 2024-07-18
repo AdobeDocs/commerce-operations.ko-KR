@@ -3,7 +3,7 @@ title: Ubuntu에서 memcached 설정
 description: Ubuntu에서 memcached를 설치하고 구성합니다.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -142,7 +142,7 @@ stats items
 
 그 결과는 다음과 비슷합니다.
 
-```terminal
+```
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0

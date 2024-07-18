@@ -3,7 +3,7 @@ title: 현재 검색 엔진이 지원되지 않음
 description: 지원되지 않는 검색 엔진에 대한 오류가 발생한 후 Adobe Commerce 업그레이드 문제를 해결합니다.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 다음 오류 메시지는 업그레이드 중인 Adobe Commerce 버전이 업그레이드 중인 버전에서 지원되지 않는 카탈로그 검색 엔진을 사용하도록 구성되어 있음을 나타냅니다.
 
-```terminal
+```
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 

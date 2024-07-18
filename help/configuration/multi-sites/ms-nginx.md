@@ -2,7 +2,7 @@
 title: Nginx를 사용하여 여러 웹 사이트 설정
 description: Nginx를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 0%
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 1. 성공하면 다음 메시지가 표시됩니다.
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -147,7 +147,7 @@ map 지시문에 대한 자세한 내용은 map 지시문에서 [nginx 설명서
 
 1. 성공하면 다음 메시지가 표시됩니다.
 
-   ```terminal
+   ```
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 

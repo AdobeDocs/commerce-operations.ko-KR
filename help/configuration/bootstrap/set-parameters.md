@@ -2,7 +2,7 @@
 title: 부트스트랩 매개 변수 값 설정
 description: Commerce 애플리케이션에 대한 부트스트랩 매개 변수를 설정하는 방법에 대해 알아봅니다.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 예를 들어 `MAGE_PROFILER` 시스템 환경 변수를 사용하여 다음과 같이 모드를 지정할 수 있습니다.
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ Commerce 응용 프로그램의 시작 지점에 따라 다음 위치에서 `.ht
 
 1. `MAGE_PROFILER`의 값을 다음 중 하나로 설정하십시오.
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

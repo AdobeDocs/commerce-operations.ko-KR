@@ -3,7 +3,7 @@ title: 검색 엔진 구성
 description: Adobe Commerce의 온-프레미스 배포에 대한 검색 엔진을 구성합니다.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 
   포트 9200에서 실행 중인 경우 다음과 유사하게 표시됩니다.
 
-  ```terminal
+  ```
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 

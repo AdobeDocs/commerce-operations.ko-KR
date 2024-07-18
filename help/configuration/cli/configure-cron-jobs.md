@@ -2,7 +2,7 @@
 title: cron 작업 구성 및 실행
 description: cron 작업을 관리하는 방법을 알아봅니다.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 0%
@@ -80,7 +80,7 @@ crontab -l
 
 샘플은 다음과 같습니다.
 
-```terminal
+```
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b

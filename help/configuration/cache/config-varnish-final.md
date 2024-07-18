@@ -3,7 +3,7 @@ title: 최종 확인
 description: Adobe Commerce 애플리케이션에서 작동하도록 Varnish 구성이 제대로 설정되어 있는지 확인합니다.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -28,7 +28,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 중요 헤더:
 
-```terminal
+```
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS

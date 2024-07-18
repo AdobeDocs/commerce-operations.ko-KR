@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.6 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.6의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Adobe Commerce 2.4.6-p1 보안 릴리스는 이전 릴리스에서 식별된 취
 
 * B2B 보안 패키지에 대한 종속성이 없으면 B2B 확장을 1.4.0으로 설치하거나 업그레이드할 때 다음 설치 오류가 발생합니다.
 
-  ```terminal
+  ```
   Your requirements could not be resolved to an installable set of packages.
   
     Problem 1

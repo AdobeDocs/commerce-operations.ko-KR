@@ -2,7 +2,7 @@
 title: 샘플 데이터 Git 저장소 복제
 description: 다음 단계에 따라 Git 저장소를 복제하여 Adobe Commerce 샘플 데이터를 설치합니다.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ SSH 프로토콜을 사용하여 샘플 데이터 GitHub 리포지토리를 복�
    >
    >다음 오류가 표시되면 [SSH 키를 공유](https://docs.github.com/articles/generating-ssh-keys/)하여 GitHub를 사용하도록 합니다.<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

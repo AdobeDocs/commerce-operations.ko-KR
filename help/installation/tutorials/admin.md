@@ -3,7 +3,7 @@ title: 관리자 계정 만들기, 편집 또는 잠금 해제
 description: Adobe Commerce 관리 애플리케이션의 관리자 계정을 관리하려면 다음 단계를 따르십시오.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -53,7 +53,7 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -63,7 +63,7 @@ Created Magento administrator user named j.doe
 bin/magento admin:user:create
 ```
 
-```terminal
+```
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,7 +71,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```terminal
+```
 Created Magento administrator user named John
 ```
 
@@ -81,7 +81,7 @@ Created Magento administrator user named John
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -99,13 +99,13 @@ bin/magento admin:user:unlock {username}
 bin/magento admin:user:unlock admin
 ```
 
-```terminal
+```
 The user account "admin" has been unlocked
 ```
 
 계정이 잠금 해제되지 않았거나 문제가 있는 경우 다음 메시지가 표시됩니다.
 
-```terminal
+```
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ The user account "admin" was not locked or could not be unlocked
 
 계정이 존재하지 않으면 다음 메시지가 표시됩니다.
 
-```terminal
+```
 Couldn't find the user account "bob"
 ```

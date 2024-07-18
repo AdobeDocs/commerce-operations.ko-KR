@@ -2,7 +2,7 @@
 title: 코드 컴파일러
 description: 명령줄에서 코드 컴파일러를 실행하는 방법에 대해 알아봅니다.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
 bin/magento setup:di:compile
 ```
 
-```terminal
+```
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -54,7 +54,7 @@ Commerce 응용 프로그램을 설치하기 전에 코드를 컴파일하려면
    bin/magento setup:di:compile
    ```
 
-   ```terminal
+   ```
    Generated code and dependency injection configuration successfully.
    ```
 

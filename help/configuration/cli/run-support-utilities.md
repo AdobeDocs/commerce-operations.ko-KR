@@ -2,7 +2,7 @@
 title: 지원 유틸리티 실행
 description: 기본 제공 지원 유틸리티를 사용하여 Commerce 프로젝트 문제를 해결합니다.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 중요한 데이터에는 다음 데이터베이스 테이블의 고객 정보가 포함됩니다.
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 데이터 수집기와 명령줄에 필요한 유틸리티의 경로를 표시하는 명령을 제공합니다. 예를 들어 다음과 같은 오류가 관리자 또는 명령줄에 표시되는 경우 이러한 명령을 사용할 수 있습니다.
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Utility lsof not found
 
 샘플은 다음과 같습니다.
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

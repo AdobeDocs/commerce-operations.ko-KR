@@ -3,7 +3,7 @@ title: 검색 엔진에 대한 Apache 구성
 description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 0%
@@ -72,7 +72,7 @@ ht-degree: 0%
 
    성공을 나타내는 다음 디스플레이와 유사한 메시지:
 
-   ```terminal
+   ```
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8

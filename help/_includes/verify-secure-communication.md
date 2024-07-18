@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -28,7 +28,7 @@ curl -i http://localhost:8080/_cluster/health
 
 인증 실패를 나타내는 다음 메시지가 표시됩니다.
 
-```terminal
+```
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -57,7 +57,7 @@ curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/healt
 
 이번에는 다음과 유사한 메시지로 명령이 성공합니다.
 
-```terminal
+```
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8

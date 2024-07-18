@@ -2,7 +2,7 @@
 title: 작업 모드 설정
 description: Adobe Commerce 작업 모드 설정에 대해 읽어 보십시오.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 개발자 또는 프로덕션 모드로 변경하면 다음 디렉토리의 내용이 지워집니다.
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 다음과 유사한 메시지가 표시됩니다.
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 다음 디스플레이와 유사한 메시지:
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Enabled production mode.
 
    다음 메시지가 표시됩니다.
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 다음 메시지가 표시됩니다.
 
-```terminal
+```
 Enabled default mode.
 ```
 

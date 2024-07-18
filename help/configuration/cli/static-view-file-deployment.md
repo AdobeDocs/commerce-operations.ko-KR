@@ -2,7 +2,7 @@
 title: 정적 보기 파일 배포
 description: 프로덕션 모드 중에 Commerce 파일 시스템에 정적 파일을 작성하는 방법에 대해 알아봅니다.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -93,7 +93,7 @@ bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-
 
 샘플 출력:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -132,7 +132,7 @@ bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magen
 
 샘플 출력:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ New version of deployed files: 1466711110
 
 **증상**: 정적 보기 파일 배포 도구를 실행할 때 다음 오류가 표시됩니다.
 
-```terminal
+```
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

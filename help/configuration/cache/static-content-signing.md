@@ -3,7 +3,7 @@ title: 정적 콘텐츠 캐시
 description: 정적 콘텐츠 서명 및 기능을 활성화하거나 비활성화하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Commerce은 정적 파일의 URL에 배포 버전을 추가하여 이 작업을 
 
 다음은 버전으로 서명된 URL의 예입니다.
 
-```terminal
+```
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 

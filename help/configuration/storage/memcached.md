@@ -3,7 +3,7 @@ title: 세션 스토리지에 memcached 사용
 description: Commerce 세션 스토리지용 memcached 사용에 대해 알아봅니다.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Commerce은 세션 스토리지에는 memcached를 사용하지만 페이지 캐
 
    결과는 다음과 유사하게 표시됩니다.
 
-   ```terminal
+   ```
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

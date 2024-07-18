@@ -2,7 +2,7 @@
 title: 고급 온-프레미스 설치
 description: 소유한 인프라의 Adobe Commerce에 대한 고급 설치 시나리오에 대해 알아봅니다.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -252,7 +252,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 성공적인 설치를 나타내는 다음 디스플레이와 유사한 메시지:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -274,7 +274,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 설치가 완료되면 다음과 같은 메시지가 표시됩니다.
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -329,7 +329,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 설치가 완료되면 다음과 같은 메시지가 표시됩니다.
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]

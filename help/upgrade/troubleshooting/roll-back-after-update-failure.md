@@ -2,7 +2,7 @@
 title: 모듈 업데이트 실패 후 롤백
 description: 모듈 업데이트 오류가 발생한 후 Adobe Commerce 업그레이드 문제를 해결합니다.
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 모듈 업데이트가 실패하면 콘솔 로그에 다음과 유사한 메시지가 표시됩니다.
 
-```terminal
+```
 [2015-08-14 12:12:02 CDT] Job "update {"components":[{"name":"example/module","version":"1.1.0"}]}" has been started
 [2015-08-14 12:12:02 CDT] Starting composer update...
 [2015-08-14 12:12:02 CDT] An error occurred while executing job "update {"components":

@@ -2,7 +2,7 @@
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 온-프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아보세요.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 1%
@@ -57,7 +57,7 @@ CentOS: `httpd -v`
 
 Adobe Commerce은 다음 결과에 따라 Apache 버전 2.4를 지원합니다.
 
-```terminal
+```
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -84,7 +84,7 @@ mysql -u magento -p
 
 다음 결과는 실행 중인 버전을 나타냅니다.
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: 5.7.9 MySQL Community Server (GPL)
@@ -122,7 +122,7 @@ For example:
 curl -XGET 'localhost:9200'
 ```
 
-```terminal
+```
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

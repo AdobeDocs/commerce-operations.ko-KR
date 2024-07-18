@@ -3,7 +3,7 @@ title: 성능 테스트를 위한 데이터 생성
 description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 9%
@@ -70,7 +70,7 @@ bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performanc
 
 작은 프로필에 대한 샘플 출력:
 
-```terminal
+```
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

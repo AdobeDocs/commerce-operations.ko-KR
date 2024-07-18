@@ -3,7 +3,7 @@ title: 관리자 URI 표시 또는 변경
 description: Adobe Commerce 관리 애플리케이션의 URI를 보고 수정하려면 다음 단계를 따르십시오.
 feature: Install, Configuration
 exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -26,7 +26,7 @@ bin/magento info:adminuri
 
 샘플 결과는 다음과 같습니다.
 
-```terminal
+```
 Admin Panel URI: /admin_1wgrah
 ```
 
