@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 9d855fca840f081a4b0faa0170eb0e950a7cd7ad
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ ht-degree: 0%
 보안 패치 릴리스에 대해 자세히 알아보기:
 
 * [Adobe Commerce 보안 패치 릴리스 개요](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* [보안 패치 다운로드 및 적용 지침](/help/installation/composer.md)
+* 보안 패치 릴리스 다운로드 및 적용 지침은 [업그레이드 안내서](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)에서 확인할 수 있습니다

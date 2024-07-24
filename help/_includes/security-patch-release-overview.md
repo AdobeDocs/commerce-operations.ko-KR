@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 각 보안 패치 릴리스는 이전 전체 패치 릴리스를 기반으로 합니다. 여기에는 이전 패치 릴리스의 품질 및 보안 수정 사항과 이전 전체 패치 릴리스와 보안 패치 릴리스 간에 생성된 보안 수정 사항이 포함되어 있습니다.
 
-보안 패치를 다운로드하고 적용하는 방법은 [빠른 시작 설치](../installation/composer.md#example---security-patch)를 참조하십시오.
+보안 패치를 다운로드하고 적용하는 방법에 대한 지침은 _업그레이드 안내서_&#x200B;의 [업그레이드 및 구현](../installation/composer.md#example---security-patch)을 참조하십시오.
