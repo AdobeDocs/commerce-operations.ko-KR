@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
+source-git-commit: a6086afc0a1f099b62014ad61098a5a1dc9d4675
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -9,19 +9,19 @@ ht-degree: 3%
 
 커뮤니티의 콘텐츠 제공은 물론 문서 팀 외부 Adobe 직원의 콘텐츠 제공도 환영합니다.
 
-## Adobe 오픈 소스 행동 수칙
+## Source 행동 수칙 Adobe
 
 이 프로젝트에서는 [Adobe OOCT(Open Source Code of Conduct)](code-of-conduct.md) 또는 [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)가 채택되었습니다. 자세한 내용은 [기여](contributing.md) 문서를 참조하십시오.
 
 ## Adobe 콘텐츠에 대한 귀하의 기여에 대해
 
-다음을 참조하십시오. [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하세요.
 
 기여 방식은 기여자 및 기여 하고자 하는 변경 사항의 종류에 따라 다릅니다.
 
 ### 사소한 변경 사항
 
-부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 을 클릭합니다 **편집 제안** GitHub의 Markdown 소스 파일로 이동합니다. GitHub UI를 사용하여 업데이트를 만듭니다. 일반 참조 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 추가 정보.
+부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 **편집 제안**&#x200B;을 클릭하여 GitHub의 Markdown 소스 파일로 이동하십시오. GitHub UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 콘텐츠 작가 가이드](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 이 저장소의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 직원의 주요 변경 사항
 
-Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터, 프로그램 관리자 또는 개발자이고 기술 문서에 기여하거나 기술 문서를 작성하는 것이 본인의 직무인 경우 개인 리포지토리( )를 사용해야 합니다. `https://git.corp.adobe.com/AdobeDocs`.
+Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터, 프로그램 관리자 또는 개발자이고 기술 문서에 기여하거나 기술 문서를 작성하는 것이 본인의 직무인 경우 개인 리포지토리(`https://git.corp.adobe.com/AdobeDocs`)를 사용해야 합니다.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +43,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 커뮤니티 기여자는 기본 편집에 GitHub UI를 사용하거나 리포지토리를 포크하여 크게 기여할 수 있습니다.
 
-다음을 참조하십시오. [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 을 참조하십시오.
+자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 ## Markdown을 사용하여 주제 서식을 지정하는 방법
 
@@ -61,7 +61,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 템플릿 컨텐츠의 예로는 다음이 포함됩니다(이에 제한되지 않음).
 
-* [CLI 툴 참조](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [CLI 도구 참조](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 * [제품 가용성 테이블](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
 * [시스템 요구 사항 테이블](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
@@ -72,25 +72,25 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 >**참고:**
 >
 >* 템플릿화된 콘텐츠를 생성하려면 터미널의 명령줄에서 작업해야 합니다.
->* 렌더링 스크립트를 실행하려면 루비가 설치되어 있어야 합니다. 다음을 참조하십시오 [_jekyll/.ruby-version](_jekyll/.ruby-version) 필요한 버전용입니다.
+>* 렌더링 스크립트를 실행하려면 루비가 설치되어 있어야 합니다. 필요한 버전은 [_jekyll/.ruby-version](_jekyll/.ruby-version)을(를) 참조하십시오.
 
 템플릿 컨텐츠의 파일 구조에 대한 설명은 다음을 참조하십시오.
 
-* `_jekyll`- 템플릿화된 주제 및 필수 에셋을 포함합니다.
-* `_jekyll/_data`- 템플릿을 렌더링하는 데 사용되는 시스템에서 읽을 수 있는 파일 형식을 포함합니다.
-* `_jekyll/templated`- Liquid 템플릿 언어를 사용하는 HTML 기반 템플릿 파일이 포함됩니다.
-* `help/_includes/templated`- 템플릿으로 만들어진 콘텐츠에 대해 생성된 출력을 포함합니다. `.md` 파일 형식이므로 Experience League 주제에 게시할 수 있습니다. 렌더링 스크립트는 생성된 출력을 자동으로 이 디렉터리에 기록합니다
+* `_jekyll` - 템플릿화된 주제 및 필수 자산을 포함합니다.
+* `_jekyll/_data` - 템플릿을 렌더링하는 데 사용되는 컴퓨터에서 읽을 수 있는 파일 형식을 포함합니다.
+* `_jekyll/templated` - Liquid 템플릿 언어를 사용하는 HTML 기반 템플릿 파일이 포함되어 있습니다.
+* `help/_includes/templated` - 템플릿화된 콘텐츠에 대해 생성된 출력을 `.md` 파일 형식으로 포함하므로 Experience League 주제에 게시할 수 있습니다. 렌더링 스크립트는 생성된 출력을 자동으로 이 디렉터리에 기록합니다
 
 템플릿 컨텐츠를 업데이트하려면 다음을 수행합니다.
 
-1. 텍스트 편집기에서 `/jekyll/_data` 디렉토리. For example:
+1. 텍스트 편집기에서 `/jekyll/_data` 디렉터리에서 데이터 파일을 엽니다. For example:
 
    * [제품 가용성 테이블](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
    * [시스템 요구 사항 테이블](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. 기존 YAML 구조를 사용하여 엔트리를 작성합니다.
 
-   예를 들어 제품 가용성 테이블에 Adobe Commerce 버전을 추가하려면 의 각 항목에 다음을 추가합니다. `extensions` 및 `services` 의 섹션 `/jekyll/_data/product-availability.yml` 파일(필요에 따라 버전 번호 수정):
+   예를 들어, 제품 가용성 테이블에 Adobe Commerce 버전을 추가하려면 `/jekyll/_data/product-availability.yml` 파일의 `extensions` 및 `services` 섹션의 각 항목에 다음을 추가하십시오(필요에 따라 버전 번호를 수정하십시오).
 
    ```
    support:
@@ -98,27 +98,27 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
         version: 4.5.6
    ```
 
-1. 다음 위치로 이동 `_jekyll` 디렉토리.
+1. `_jekyll` 디렉터리로 이동합니다.
 
    ```
    cd _jekyll
    ```
 
-1. 템플릿화된 콘텐츠를 생성하고 출력을 `help/_includes/templated` 디렉토리.
+1. 템플릿화된 콘텐츠를 생성하고 출력을 `help/_includes/templated` 디렉터리에 씁니다.
 
    ```
    rake render
    ```
 
-   >**참고:** 다음에서 스크립트를 실행해야 합니다. `_jekyll` 디렉토리. 스크립트를 처음 실행하는 경우 먼저 Ruby 종속성을 `bundle install` 명령입니다.
+   >**참고:** `_jekyll` 디렉터리에서 스크립트를 실행해야 합니다. 스크립트를 처음 실행하는 경우에는 먼저 `bundle install` 명령을 사용하여 Ruby 종속성을 설치해야 합니다.
 
-1. 다음으로 돌아가기 `root` 디렉토리.
+1. `root` 디렉터리로 다시 이동합니다.
 
    ```
    cd ..
    ```
 
-1. 예상 값 확인 `help/_includes/templated` 파일이 수정되었습니다.
+1. 필요한 `help/_includes/templated`개의 파일이 수정되었는지 확인합니다.
 
    ```
    git status
@@ -134,9 +134,9 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 1. 변경 사항을 푸시합니다.
 
    ```
-   git add
-   git commit -m "_descriptive message of the intended commit_"
+   git add .
+   git commit -m "descriptive message of the intended commit"
    git push
    ```
 
-에 대한 자세한 내용은 Jekyll 설명서 를 참조하십시오. [데이터 파일](https://jekyllrb.com/docs/datafiles), [액체 필터](https://jekyllrb.com/docs/liquid/filters/)및 기타 기능.
+[데이터 파일](https://jekyllrb.com/docs/datafiles), [액체 필터](https://jekyllrb.com/docs/liquid/filters/) 및 기타 기능에 대한 자세한 내용은 Jekyll 설명서를 참조하세요.
