@@ -2,7 +2,7 @@
 title: 일반 명령
 description: 일반적인 Commerce CLI 명령 및 사용법의 샘플을 확인합니다.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ bin/magento help cache:enable
 
 ## 일반 인수
 
-다음 인수는 모든 명령에 공통됩니다. 이러한 명령은 Commerce 소프트웨어를 설치하기 전이나 설치한 후에 실행할 수 있습니다.
+다음 인수는 [모든 명령](/help/tools/reference/commerce-on-premises.md)에 공통됩니다. 이러한 명령은 Commerce 소프트웨어를 설치하기 전이나 설치한 후에 실행할 수 있습니다.
 
 | 긴 버전 | 짧은 버전 | 의미 |
 |--- |--- |--- |
