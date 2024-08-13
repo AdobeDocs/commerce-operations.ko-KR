@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2ffc16a7bbe2333c749f0bfeb57b1cbffd3ec474
+source-git-commit: 3ee39b766bbad8d0b3a80cd2305dd8323eadf17f
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '118'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,32 @@ ht-degree: 2%
 ## 새로운 기능
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
+
+### 2024년 8월 13일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2024년 8월 보안 패치에 대한 릴리스 정보 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p7</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p10</a></p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bfe3444c045bbfacf63e59e609d75d43e9c44a0">0bfe34</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce 기능 및 패치 릴리스에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">2025 공지 날짜</a>가 추가되었습니다.</p>
+</td>
+      <td>주요 업데이트</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7">6e499d</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024년 8월 5일
 

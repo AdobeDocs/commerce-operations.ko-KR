@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,21 @@ ht-degree: 0%
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.7-p1
+## 2.4.7-p2
+
+Adobe Commerce 2.4.7-p2 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)을 참조하십시오.
+
+### 강조 표시
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### 이 릴리스에 포함된 핫픽스
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2.4.7-p1
 
 Adobe Commerce 2.4.7-p1 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
@@ -23,7 +37,9 @@ Adobe Commerce 2.4.7-p1 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 {{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
-### 보안 주요 사항
+### 강조 표시
+
+이번 릴리스에는 다음과 같은 주요 사항이 포함됩니다.
 
 * **Google Authenticator에 대한 [OTP(일회성 암호) 설정](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google)을 업데이트합니다**-이 업데이트는 2.4.7에서 [이전 버전과 호환되지 않는 변경](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value)으로 인해 발생한 오류를 해결하는 데 필요합니다. 이제 **[!UICONTROL OTP Window]** 필드에 대한 설명에 설정에 대한 정확한 설명이 있으며 기본값이 `1`에서 `29`(으)로 변경되었습니다.
 
