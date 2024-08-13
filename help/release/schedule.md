@@ -2,9 +2,9 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
+source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Adobe은 또한 핵심 Adobe Commerce PHP 응용 프로그램의 지원되는 �
   </tr>
   <tr>
     <td>2025년 10월 14일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
+    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7 및 2.4.6용</td>
   </tr>
 </tbody>
 </table>
