@@ -3,12 +3,13 @@ title: 클라우드 인프라 지역
 description: Adobe Commerce에서 사용할 수 있는 AWS 및 Azure 지역을 보여 주는 다이어그램을 검토하십시오.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 4b42fc5deb12c97c2c078d0a25992ba23735747e
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
+
 
 # 클라우드 영역
 
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ## AWS 지역
 
-![AWS 지역을 보여 주는 다이어그램](../../../assets/playbooks/aws-regions.png)
+![AWS 지역을 보여 주는 다이어그램](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -24,8 +25,8 @@ ht-degree: 0%
 
 ## Azure 지역
 
-![Azure 지역을 보여 주는 다이어그램](../../../assets/playbooks/azure-regions.png)
+![Azure 지역을 보여 주는 다이어그램](../../../assets/playbooks/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
-> 중국과 러시아에만 온프레미스. 통합 환경이 필요한 모든 가맹점은 미국 지역을 사용해야 한다.
+> 중국과 러시아에만 온프레미스. 통합 환경이 필요한 모든 판매자는 미국 지역을 사용해야 합니다.
