@@ -3,9 +3,9 @@ title: 중요 및 시스템별 경로
 description: 시스템별 및 중요 구성 값 목록을 참조하십시오.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 5a8e52d8eee1619697db40accb9775b92b4e8a9d
+source-git-commit: e5a1c5634124831c8d5a95df6818ec30c372e8dd
 workflow-type: tm+mt
-source-wordcount: '3696'
+source-wordcount: '3676'
 ht-degree: 0%
 
 ---
@@ -150,16 +150,16 @@ ht-degree: 0%
 | Elasticsearch HTTP 사용자 이름 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP 암호 | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch 서버 시간 초과 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP 사용자 이름 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Elasticsearch HTTP 암호 | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Elasticsearch 서버 시간 초과 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| OpenSearch 서버 호스트 이름 | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch 서버 포트 | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch 색인 접두사 | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
-| OpenSearch HTTP 인증 활성화 | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| OpenSearch HTTP 사용자 이름 | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| OpenSearch HTTP 암호 | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| OpenSearch 서버 시간 초과 | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
+| Elasticsearch HTTP 사용자 이름 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP 암호 | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch 서버 시간 초과 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
+| OpenSearch 서버 호스트 이름 | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch 서버 포트 | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch 색인 접두사 | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) | ![중요](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch HTTP 인증 활성화 | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
+| OpenSearch HTTP 사용자 이름 | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
+| OpenSearch HTTP 암호 | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
+| OpenSearch 서버 시간 초과 | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys별](/help/assets/configuration/cloud-env.png) |
 
 {style="table-layout:auto"}
 
