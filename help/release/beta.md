@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
+source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,7 @@ Beta에 참여하려면 [Shaun McCran](mailto:mccran@adobe.com)에게 전자 메
 ### IBM Sterling Order Management 시스템 통합(Private Beta)
 
 이 IBM Sterling Order Management용 통합 가속기를 통해 Adobe Commerce 고객은 IBM Sterling OMS에서 제공하는 고급 주문 관리 기능을 시작할 수 있습니다. 이 통합을 통해 판매자는 다음과 같은 이점을 얻을 수 있습니다.
+
 - 고객의 재고 수준과 정확한 납품 일자에 대한 실시간 가시성.
 - 구성 가능한 규칙을 기반으로 한 주문의 자동 소싱을 통해 이행 네트워크 및 재고를 최적화할 수 있습니다.
 - 지원 팀이 탁월한 서비스를 제공하고 예외를 신속하게 식별하고 처리할 수 있도록 단일 대시보드의 채널 전체에 대한 주문 보편적 보기.
@@ -57,10 +58,9 @@ Beta에 참여하려면 [Shaun McCran](mailto:mccran@adobe.com)에게 전자 메
 ### 데이터 연결 및 Audience Activation(공개 Beta)
 
 Adobe Commerce과 Adobe Experience Platform 간의 데이터 공유 기능을 확장하여 보다 강력한 개인화된 경험을 제공합니다. 이 기능을 통해 판매자는 다음과 같은 작업을 수행할 수 있습니다.
+
 - Commerce 고객 프로필 공유
 - 사용자 지정 속성 만들기
-- Real-Time CDP 및 Adobe Journey Optimizer에서 Commerce 통찰력 얻기
-- 여러 데이터 세트 및 데이터 스트림 지원
 
 이 Beta에 참여하려면 [DataConnection@adobe.com](mailto:DataConnection@adobe.com)(으)로 전자 메일 요청을 보내십시오.
 
