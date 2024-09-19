@@ -2,9 +2,9 @@
 title: 액세스 방법 [!DNL Site-Wide Analysis Tool]
 description: ' [!DNL Site-Wide Analysis Tool]에 액세스하는 방법 알아보기'
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 5f9f81b930a3b23c0b334ccbea94d296338a0048
+source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce을 온-프레미스로 설치한 경우 이 도구를 사용하려면 인프라에 [에이전트](../site-wide-analysis-tool/installation.md)을(를) 설치해야 합니다.
+>2024년 4월 23일부터 [!DNL Site-Wide Analysis Tool]이(가) 서비스 해제되어 Adobe Commerce 온-프레미스 고객이 더 이상 사용할 수 없습니다.
+
 
 ![사이트 전체 분석 대시보드](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]대시보드*
