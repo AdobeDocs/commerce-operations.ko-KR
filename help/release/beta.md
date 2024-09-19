@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
+source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,32 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 ## 최신 Beta 프로그램
 
 활성 베타 프로그램 목록은 다음 섹션을 참조하십시오.
+
+### 라이브 검색에 대한 검색 기능 향상(공개 Beta)
+
+이 베타는 [`productSearch` 쿼리](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)에서 세 가지 새로운 기능을 지원합니다.
+
+- **계층화된 검색** - 다른 검색 컨텍스트에서 검색 - 이 기능을 사용하면 검색 쿼리에 대해 최대 두 개의 계층을 검색할 수 있습니다. For example:
+
+   - **계층 1 검색** - &quot;product_attribute_1&quot;에서 &quot;motor&quot;를 검색합니다.
+   - **계층 2 검색** - &quot;product_attribute_2&quot;에서 &quot;부품 번호 123&quot;을 검색합니다. 이 예제에서는 결과 내에서 &quot;motor&quot;에 대해 &quot;part number 123&quot;을 검색합니다.
+
+  아래에 설명된 대로 `startsWith` 검색 인덱싱과 `contains` 검색 인덱싱에 모두 계층화된 검색을 사용할 수 있습니다.
+
+- **검색 인덱싱으로 시작** - `startsWith` 인덱싱을 사용하여 검색 이 새로운 기능을 통해 다음과 같은 작업을 수행할 수 있습니다.
+
+   - 속성 값이 특정 문자열로 시작하는 제품을 검색합니다.
+   - 구매자가 속성 값이 특정 문자열로 끝나는 제품을 검색할 수 있도록 &quot;다음으로 끝남&quot; 검색을 구성합니다. &quot;다음으로 끝남&quot; 검색을 활성화하려면 제품 속성을 역순으로 수집해야 하며 API 호출도 역순 문자열이어야 합니다.
+
+- **검색 인덱싱을 포함** -포함 인덱싱을 사용하여 특성을 검색합니다. 이 새로운 기능을 통해 다음과 같은 작업을 수행할 수 있습니다.
+
+   - 더 큰 문자열 내에서 쿼리를 검색하고 있습니다. 예를 들어 구매자가 문자열 &quot;HAPE-123&quot;에서 제품 번호 &quot;PE-123&quot;을 검색하는 경우,
+
+      - 참고: 이 검색 유형은 자동 완성 검색을 수행하는 기존 [구 검색](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase)과(와) 다릅니다. 예를 들어 제품 속성 값이 &quot;outdoor pants&quot;인 경우 구문 검색은 &quot;out pan&quot;에 대한 응답을 반환하지만 &quot;or ants&quot;에 대한 응답은 반환하지 않습니다. 그러나 에는 검색이 포함되어 있으며 &quot;or ants&quot;에 대한 응답을 반환합니다.
+
+이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다. Beta 액세스를 위해 `sagonzal@adobe.com` 또는 `alexj@adobe.com`(으)로 이메일을 보내십시오.
+
+Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta)를 참조하세요.
 
 ### Commerce(Private Beta)용 Experience Manager Assets 통합
 
