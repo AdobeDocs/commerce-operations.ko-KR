@@ -2,9 +2,9 @@
 title: 유지 관리 모드 활성화 또는 비활성화
 description: 유지 관리를 위해 Adobe Commerce 배포가 중단될 때 고객이 볼 수 있는 내용을 사용자 지정하려면 다음 단계를 따르십시오.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,8 @@ Adobe Commerce은 [유지 관리 모드](../../configuration/bootstrap/applicati
 
 애플리케이션은 다음과 같이 유지 관리 모드를 감지합니다.
 
-* `var/.maintenance.flag`이(가) 없으면 유지 관리 모드가 꺼지고 응용 프로그램이 정상적으로 작동합니다.
-* 그렇지 않으면 `var/.maintenance.ip`이(가) 없는 한 유지 관리 모드가 설정됩니다.
-
-  `var/.maintenance.ip`에는 IP 주소 목록이 포함될 수 있습니다. HTTP를 사용하여 진입점에 액세스하고 클라이언트 IP 주소가 해당 목록의 항목 중 하나에 해당하는 경우 유지 관리 모드는 해제됩니다.
+* `var/.maintenance.flag`이(가) 있으면 유지 관리 모드가 켜져 있으며 응용 프로그램에서 503 유지 관리 페이지를 반환합니다.
+* `var/.maintenance.ip`이(가) 있고 클라이언트 IP가 이 파일 내의 IP 주소 항목 중 하나에 해당하는 경우 요청에 대한 유지 관리 페이지가 무시됩니다.
 
 ## 애플리케이션 설치
 
