@@ -4,9 +4,9 @@ description: Adobe Commerce용 확장된 Redis 캐시 구현을 사용하여 캐
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,10 @@ stage:
         translate:
           frontend: "stale_cache_enabled"
 ```
+
+>[!NOTE]
+>
+>앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
 
 온-프레미스 설치를 구성하려면 _구성 가이드_&#x200B;에서 [오래된 캐시 옵션](../../../configuration/cache/level-two-cache.md#stale-cache-options)을 참조하십시오.
 
