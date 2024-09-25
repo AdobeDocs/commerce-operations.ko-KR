@@ -2,7 +2,7 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 582f36f9f38394d8af9aaf660847be15372fd815
+source-git-commit: 9c9001f28c4cb28ad881bb9a3c78e875fcbef607
 workflow-type: tm+mt
 source-wordcount: '5878'
 ht-degree: 0%
@@ -129,7 +129,7 @@ ht-degree: 0%
          - [MDVA-42507: 장바구니 규칙에 대한 스테이징 업데이트를 적용하면 전체 페이지 캐시가 정리됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
          - [MDVA-42657: 고객 세그먼트 조건에서 범주를 선택할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
          - [MDVA-42806: 기존 회사가 업데이트될 때마다 새 회사 등록 이메일이 전송됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
-      - v1-1-10 {#v1-1-10}
+      - v1.1.10 {#v1-1-10}
          - [개요: 품질 패치 도구(QPT) v1.1.10](quality-patches-tool/patches-available-in-qpt/v1-1-10/overview.md)
          - [MDVA-38728: 제품 가시성을 변경하면 기본 웹 사이트에 대한 URL 다시 쓰기가 생성됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
          - [MDVA-39181: 관련 제품 규칙에 규칙에 정의되지 않은 범주의 제품이 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
@@ -148,7 +148,7 @@ ht-degree: 0%
          - [MDVA-42269: &quot;TypeError&quot; 오류로 인해 관리자가 Admin에 로그인할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
          - [MDVA-42520: &quot;국경 간 거래 활성화&quot;를 사용할 때 세율이 두 번 적용됨](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
          - [MDVA-42790: REST API를 통해 특정 웹 사이트에 대해 제품 가격 특성을 업데이트할 수 없습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
-      - v1-1-12 {#v1-1-12}
+      - v1.1.12 {#v1-1-12}
          - [개요: 품질 패치 도구(QPT) v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
          - [MDVA-39546: 스테이징 업데이트 시작 날짜를 현재 날짜보다 이전 날짜로 설정할 수 있습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
          - [MDVA-39713: 사용자가 활성 예약 업데이트 시작 시간을 편집할 수 있음](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39713-user-able-to-edit-start-time-for-active-scheduled-update.md)
@@ -623,6 +623,8 @@ ht-degree: 0%
          - [ACSD-48210: 저장소 보기 특정 범위 특성이 전역 값을 무시합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280: 2.4.4-pX 설치에서 ReflectionUnionType::getName() 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          - [ACSD-60303: HTML 축소가 활성화된 상태에서 관리자 주문 배치 문제가 해결됨](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
+      - v1.1.51 {#v1-1-51}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 명령줄 도구 참조 {#cli-reference}
