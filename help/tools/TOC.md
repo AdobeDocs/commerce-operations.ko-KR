@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: af567e6643ef977671f8ba27dbb961bcc4c7d472
+source-git-commit: d9354e2d63701f402adc4693785a50aa720fce67
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5904'
 ht-degree: 0%
 
 ---
@@ -625,6 +625,7 @@ ht-degree: 0%
          - [ACSD-60303: HTML 축소가 활성화된 상태에서 관리자 주문 배치 문제가 해결됨](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+         - [ACSD-61195: 장바구니 GraphQL 요청이 최종 페이지에 항목을 반환하지 못함](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: 제품이 비활성화된 경우 특성이 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
       - v1.1.52 {#v1-1-52}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
