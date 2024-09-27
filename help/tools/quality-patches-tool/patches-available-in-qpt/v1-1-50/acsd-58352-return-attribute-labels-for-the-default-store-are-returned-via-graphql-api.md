@@ -3,9 +3,9 @@ title: 'ACSD-58352: 기본 저장소에 대한 반환 특성 레이블이  [!DNL
 description: ACSD-58352 패치를 적용하여 요청 헤더에 기본이 아닌 저장소 보기가 지정된 경우 기본 저장소에 대한 반환 특성 레이블이  [!DNL GraphQL] API를 통해 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ACSD-58352 패치는 요청 헤더에 기본이 아닌 저장소 보기가 지�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

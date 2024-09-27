@@ -3,9 +3,9 @@ title: "ACSD-55231: 빠른 주문 기능을 사용하는 동안 SKU를 찾을 �
 description: 빠른 주문 기능을 사용하여 장바구니에 제품을 추가하려고 할 때 *'카탈로그에서 SKU를 찾을 수 없음'* 오류가 발생하는 Adobe Commerce 문제를 해결하려면 ACSD-55231 패치를 적용합니다.
 feature: Products, Checkout, B2B
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ACSD-55231 패치는 빠른 주문 기능을 사용하여 장바구니에 제품
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

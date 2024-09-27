@@ -3,9 +3,9 @@ title: 'ACSD-48910: 송장 및 배송 후 여러 소스가 할당된 번들 제�
 description: ACSD-48910 패치를 적용하면 주문이 청구되고 배송된 후 여러 소스에 할당된 번들 제품의 재고가 부족한 Adobe Commerce 문제를 해결할 수 있습니다. 아직 수량이 0이 아닌 경우에도 마찬가지입니다.
 feature: Products, Inventory
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ACSD-48910 패치는 주문이 송장 발행되어 배송된 후 여러 출처�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

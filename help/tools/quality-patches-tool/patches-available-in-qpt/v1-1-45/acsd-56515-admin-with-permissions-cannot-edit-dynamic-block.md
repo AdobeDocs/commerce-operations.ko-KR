@@ -3,9 +3,9 @@ title: 'ACSD-56515: 웹 사이트 수준 권한이 있는 관리자가 [!UICONTR
 description: 웹 사이트 수준 권한이 있는 관리자가 [!UICONTROL Dynamic Block]을(를) 추가하거나 편집할 수 없는 Adobe Commerce 문제를 해결하려면 ACSD-56515 패치를 적용하십시오.
 feature: Roles/Permissions, Admin Workspace
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ACSD-56515 패치는 웹 사이트 수준 권한이 있는 관리자가 [!UICONT
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

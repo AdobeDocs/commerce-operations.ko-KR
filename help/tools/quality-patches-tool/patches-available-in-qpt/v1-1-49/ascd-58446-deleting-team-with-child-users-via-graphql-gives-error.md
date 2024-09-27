@@ -3,9 +3,9 @@ title: 'ACSD-58446: GraphQL을 통해 하위 사용자 또는 팀이 있는 팀�
 description: ACSD-58446 패치를 적용하여 GraphQL을 통해 하위 사용자 또는 팀이 있는 팀을 삭제하면 UI와 일치하지 않는 정보 불가능한 오류 메시지가 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ UI와 일치하지 않는 일반 내부 서버 오류 메시지가 반환됩니�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

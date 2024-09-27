@@ -3,9 +3,9 @@ title: 'ACSD-46520: 스토어 크레딧을 사용하여 환불할 때 잘못된 
 description: 이 문서에서는 스토어 크레딧을 사용하여 환불할 때 사용자가 잘못된 주문 상태를 얻게 되는 문제에 대한 해결 방법을 제공합니다.
 feature: Orders, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ACSD-46520 패치는 스토어 크레딧을 사용하여 환불할 때 사용자
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 [!DNL Magento Open Source] 온-프레미스: 품질 패치 도구 안내서의 [품질 패치 도구 > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+* Adobe Commerce 또는 [!DNL Magento Open Source] 온-프레미스: 품질 패치 도구 안내서의 [품질 패치 도구 > 사용량](/help/tools/quality-patches-tool/usage.md).
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

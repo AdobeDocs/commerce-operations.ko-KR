@@ -3,9 +3,9 @@ title: "ACSD-50512: 다운로드 가능한 제품 스테이징 업데이트의 �
 description: ACSD-51892 패치를 적용하여 *다운로드 가능한 링크가 제품과 관련이 없는 경우 발생하는 Adobe Commerce 성능 문제를 해결합니다.링크를 확인하고 다시 시도하십시오*. 이 오류는 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 발생합니다.
 feature: Products, Staging
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ACSD-50512 패치를 사용하면 오류 *다운로드 가능한 링크가 제�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

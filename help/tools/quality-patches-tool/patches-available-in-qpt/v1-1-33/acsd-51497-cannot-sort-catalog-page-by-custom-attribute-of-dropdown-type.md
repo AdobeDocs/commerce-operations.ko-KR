@@ -3,9 +3,9 @@ title: 'ACSD-51497: 드롭다운 유형의 사용자 지정 특성별로 카탈�
 description: ACSD-51497 패치를 적용하여 고객이 드롭다운 유형의 사용자 지정 특성별로 카탈로그 페이지를 정렬할 수 없는 Adobe Commerce 문제를 수정합니다.
 feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ACSD-51497 패치는 고객이 *드롭다운* 유형의 사용자 지정 특성�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

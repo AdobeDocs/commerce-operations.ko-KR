@@ -3,16 +3,16 @@ title: "ACSD-45049: 관리자의 웹 사이트 범위에 따라 고객 '필수' 
 description: ACSD-45049 패치를 적용하여 Admin의 웹 사이트 범위에 따라 고객 "[!UICONTROL Is required]" 특성이 제대로 재정의되지 않은 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # ACSD-45049: 고객 *[!UICONTROL Is required]* 특성 설정이 관리자의 웹 사이트 범위에 따라 작동하지 않습니다.
 
-ACSD-45049 패치는 관리자의 웹 사이트 범위에 따라 고객 *[!UICONTROL Is required]* 특성 설정이 제대로 작동하지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.50이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-45049입니다. 이 문제는 Adobe Commerce 2.4.6에서 해결되었습니다.
+ACSD-45049 패치는 관리자의 웹 사이트 범위에 따라 고객 *[!UICONTROL Is required]* 특성 설정이 제대로 작동하지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/usage.md) 1.1.50이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-45049입니다. 이 문제는 Adobe Commerce 2.4.6에서 해결되었습니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -53,7 +53,7 @@ Admin의 웹 사이트 범위에 따라 고객 *[!UICONTROL Is required]* 특성
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

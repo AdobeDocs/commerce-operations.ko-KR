@@ -3,9 +3,9 @@ title: 'ACSD-50887: *[!UICONTROL Use in Search]* 옵션 없이 *[!UICONTROL Use 
 description: ACSD-50887 패치를 적용하여 제품 속성 *[!UICONTROL Use in Search Results Layered Navigation]*을(를) *예*로 설정할 수 있고 *[!UICONTROL Use in Search]* 옵션도 *예*로 설정되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ ACSD-50887 패치는 *[!UICONTROL Use in Search]* 옵션도 *예*(으)로 설정
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

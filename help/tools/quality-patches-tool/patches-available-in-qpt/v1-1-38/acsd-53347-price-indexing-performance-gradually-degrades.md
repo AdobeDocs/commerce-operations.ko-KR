@@ -3,9 +3,9 @@ title: 'ACSD-53347: 가격 인덱싱 성능은 점진적으로 초과 작업 시
 description: ACSD-53347 패치를 적용하면 대규모 제품 카탈로그의 가격을 리인덱싱할 때 성능이 점차 저하되는 Adobe Commerce 문제를 해결할 수 있습니다.
 feature: Price Indexer
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ACSD-53347 패치는 대형 제품 카탈로그의 가격을 다시 색인화할
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
