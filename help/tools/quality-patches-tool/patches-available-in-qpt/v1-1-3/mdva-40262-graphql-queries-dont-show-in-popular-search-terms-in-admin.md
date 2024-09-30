@@ -3,9 +3,9 @@ title: "MDVA-40262: GraphQL 쿼리가 관리자의 인기 검색어에 표시되
 description: MDVA-40262 Adobe Commerce 품질 패치는 GraphQL 검색 쿼리가 관리자의 인기 검색어에 표시되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40262입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Admin Workspace, GraphQL, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ GraphQL 쿼리를 실행하여 제품을 검색한 후에는 검색 쿼리를 �
 
 Adobe Commerce용 품질 패치에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [품질 패치 도구 릴리스: 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
+* [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html-) 섹션을 참조하십시오.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 섹션을 참조하십시오.

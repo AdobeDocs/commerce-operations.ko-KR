@@ -3,7 +3,7 @@ title: 'MDVA-40101: 상품은 주문 배치 후 미니 장바구니로 남음 Pa
 description: MDVA-40101 패치는 PayPal Express Checkout을 사용하여 주문을 성공적으로 배치한 후 미니 장바구니에서 항목이 제거되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40101입니다. 이 문제는 Adobe Commerce 2.4.0에서 해결되었습니다.
 feature: Checkout, Orders, Payments, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -60,4 +60,4 @@ PayPal Express Checkout을 사용하여 주문을 성공적으로 배치한 후�
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
 * [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html-) 섹션을 참조하십시오.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 섹션을 참조하십시오.

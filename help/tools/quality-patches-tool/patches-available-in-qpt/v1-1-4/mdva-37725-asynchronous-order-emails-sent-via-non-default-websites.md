@@ -3,7 +3,7 @@ title: "MDVA-37725: 기본이 아닌 사이트를 통해 전송된 이메일에�
 description: MDVA-37725 패치는 기본 웹 사이트의 로고 URL이 포함된 비기본 웹 사이트를 통해 비동기 주문 이메일이 전송되는 문제를 해결합니다.
 feature: Communications, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -70,4 +70,4 @@ Adobe Commerce(모든 배포 방법) 2.3.0 - 2.4.3
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
 * [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html-) 섹션을 참조하십시오.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 섹션을 참조하십시오.
