@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: dff811bbb4b70895f57d37b19c434e88b6f88dad
+source-git-commit: 0394a126e801c53acf744cdbca6f411919accd48
 workflow-type: tm+mt
-source-wordcount: '5909'
+source-wordcount: '5919'
 ht-degree: 0%
 
 ---
@@ -629,6 +629,7 @@ ht-degree: 0%
          - [ACSD-60538: 제품이 비활성화된 경우 특성이 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
       - v1.1.52 {#v1-1-52}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
+         - [ACSD-60590: 집계된 베스트셀러 일일 보고서 생성 성능 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: [!UICONTROL Media Gallery]에서 항목 정렬](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
