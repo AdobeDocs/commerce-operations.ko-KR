@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: a6c0a7f8c2a2bd6156f19838e05f8046209177e4
+source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
       - 참고: 이 검색 유형은 자동 완성 검색을 수행하는 기존 [구 검색](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase)과(와) 다릅니다. 예를 들어 제품 속성 값이 &quot;outdoor pants&quot;인 경우 구문 검색은 &quot;out pan&quot;에 대한 응답을 반환하지만 &quot;or ants&quot;에 대한 응답은 반환하지 않습니다. 그러나 에는 검색이 포함되어 있으며 &quot;or ants&quot;에 대한 응답을 반환합니다.
 
-이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다. Beta에 참여하려면 [Sandra Gonzales Mangana](mailto:sagonzal@adobe.com) 또는 [Alex Jose](mailto:alexj@adobe.com)에게 전자 메일 요청을 보냅니다.
+이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다. Beta에 참여하려면 [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)에 전자 메일 요청을 보내십시오.
 
 Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta)를 참조하세요.
 
