@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1b7152caa8a9f04ee779e4483c6b82d2002fcc7
+source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
 workflow-type: tm+mt
-source-wordcount: '21646'
+source-wordcount: '21987'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >커뮤니티에서 Magento Open Source을 위해 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.52 {#v1-1-52}
+
+* **BUNDLE-3375**(Adobe Commerce 및 Magento Open Source의 경우) - [!DNL Braintree]을(를) 결제 게이트웨이로 사용할 때 3DS VISA 위임 요구 사항을 이행하는 데 필요한 모든 필드를 추가합니다.
+* **ACSD-59366**(Adobe Commerce >=2.4.6 &lt;2.4.8) - 팀 목록에 표시되지 않는 비활성화된 사용자가 포함된 팀을 삭제하려고 할 때 오류가 발생하는 문제를 수정합니다.
+* **ACSD-59865**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 장바구니에 있는 제품의 수량이 규칙을 적용하기에 충분하지 않은 경우 [!UICONTROL Cart Price Rule]이(가) 이전에 적용된 규칙을 취소하지 않는 문제를 해결합니다.
+* **ACSD-59925**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - GraphQL에서 위치별로 [!UICONTROL Media Gallery]의 항목을 정렬하는 문제를 해결했습니다.
+* **ACSD-59952**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 기존 [!UICONTROL Shared Catalog]에 할당된 그룹 ID로 [!UICONTROL Shared Catalog]을(를) 만들 때 오류가 발생하는 문제를 해결했습니다.
+* **ACSD-60590**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 대량의 주문에 대해 [!UICONTROL Bestsellers Aggregated Daily Reports]을(를) 생성하는 성능을 개선합니다.
+* **ACSD-60673**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 체크아웃 시 여러 결제 방법에 대한 [!UICONTROL Cart Price Rule]이(가) 특정 결제 방법에 적합하지 않는 문제를 해결했습니다.
+* **ACSD-60684**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 여러 필드를 기준으로 한 GraphQL 제품 정렬이 예상대로 작동하지 않는 문제를 해결했습니다.
+* **ACSD-60788**(Adobe Commerce >=2.4.7 &lt;2.4.8) - CSP(콘텐츠 보안 정책) 오류로 인해 [!DNL Google Tag Manager]에 대한 사용자 지정 스크립트가 실행되지 않는 문제를 해결합니다.
+* **ACSD-61322**(Adobe Commerce >=2.4.6 &lt;2.4.8) - [!UICONTROL Products/Categories]이(가) 기본값(일반 그룹)의 [!UICONTROL Shared Catalog]에 할당되지 않은 문제가 여전히 XML 사이트 맵에 포함되어 있는 문제를 해결했습니다.
+* **ACSD-61366**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - DB 연결에 대해 포트를 지정한 경우 *Port가 호스트 매개 변수 내에서 구성되어야 함* 오류로 인해 실패한 여러 작업에서 `setup:static-content:deploy --jobs 4` 명령이 실행되는 문제를 해결했습니다.
+* 업데이트된 패치: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
@@ -103,19 +118,19 @@ ht-degree: 0%
 
 ## v1.1.45 {#v1-1-45}
 
-* **ACSD-56886** (Adobe Systems Commerce 및 Magento Open Source >=2.4.2의 경우 &lt;2.4.7) - Fixes the issue where a configurable product becomes out of stock when one of two child products is disabled by a scheduled update.
-* **ACSD-56616** (Adobe Systems Commerce 및 Magento Open Source >=2.4.5의 경우 &lt;2.4.6) - Fixes the issue where bundled products display as in stock on the storefront when their simple products are out of stock.
+* **ACSD-56886**(Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 예약된 업데이트로 인해 두 개의 하위 제품 중 하나가 비활성화될 때 구성 가능한 제품이 품절되는 문제를 해결했습니다.
+* **ACSD-56616**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 간단한 제품의 재고가 없을 때 번들 제품이 상점 앞에 재고로 표시되는 문제를 해결했습니다.
 * **ACSD-56515**(Adobe Commerce >=2.4.2 &lt;2.4.7) - 웹 사이트 수준 권한이 있는 관리자가 동적 블록을 추가하거나 편집할 수 없는 문제가 해결되었습니다.
 * **ACSD-56447**(Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 병렬 REST 웹 API 요청을 통해 동일한 제품을 장바구니에 추가하면 장바구니에 두 개의 개별 항목이 표시되는 문제를 해결합니다.
 * **ACSD-56415**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 데이터베이스에 인덱싱할 부분 가격 데이터가 많을 때 `DELETE` 쿼리로 인해 부분 가격 인덱싱의 성능이 느려지는 문제를 해결했습니다.
-* **ACSD-54965** (Adobe Systems Commerce >=2.4.5의 경우 &lt;2.4.6) - Fixes the issue where the Visual Merchandising grid does not display the correct stock when a product is assigned to custom stock only.
-* **ACSD-52824** (Adobe Systems Commerce >=2.4.5의 경우 &lt;2.4.7) - Fixes the issue where PayPal Express, Google Pay, and Apple Pay buttons are displayed for company customers when such payment methods are disabled in company settings.
-* 패치 업데이트: ACSD-56193
+* **ACSD-54965**(Adobe Commerce >=2.4.5 &lt;2.4.6) - 제품이 사용자 지정 주식에만 할당된 경우 시각적 머천다이징 그리드에 올바른 재고가 표시되지 않는 문제를 해결했습니다.
+* **ACSD-52824**(Adobe Commerce >=2.4.5 &lt;2.4.7) - 회사 설정에서 해당 결제 방법을 사용하지 않도록 설정한 경우 회사 고객에 대해 PayPal Express, Google Pay 및 Apple Pay 단추가 표시되는 문제를 해결합니다.
+* 업데이트된 패치: ACSD-56193
 
-## v1.1.44 버전 {#v1-1-44}
+## v1.1.44 {#v1-1-44}
 
-* **ACSD-56790**(Adobe Systems Commerce 및 Magento Open Source >=2.4.6 **&lt;2.4.7) - Fixes the issue where a user is redirected to the Admin Dashboard when sorting category products using the 의 경우 맨 아래로** Stock 이동 옵션을 선택하면 `Invalid security or form key. Please refresh the page` 화면 상단에 오류가 나타납니다.
-* **ACSD-56280** (Adobe Systems Commerce >=2.4.4의 경우 &lt;2.4.7) - Fixes the issue where ordering items from a gift registry leads to an exception.
+* **ACSD-56790**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - **재고 부족 상태에서 하단으로 이동** 옵션을 사용하여 범주 제품을 정렬할 때 사용자가 관리 대시보드로 리디렉션되고 `Invalid security or form key. Please refresh the page` 오류가 화면 위에 표시되는 문제를 해결합니다.
+* **ACSD-56280**(Adobe Commerce >=2.4.4 &lt;2.4.7) - 선물 레지스트리에서 항목 순서를 지정하면 예외가 발생하는 문제를 수정합니다.
 * **ACSD-56246**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 제품에 대해 예약된 업데이트가 활성화될 때 사용자 지정 다중 선택 특성에서 데이터가 제거되는 문제를 해결합니다.
 * **ACSD-56193**(Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.4)의 경우) - 예약된 블록이 페이지 빌더를 사용하여 범주 설명에 사용될 때 바니시/Fastly 캐시가 업데이트되지 않는 문제를 수정합니다.
 * **ACSD-56158**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - &quot;장바구니&quot; 쿼리가 각 세금 규칙에 대한 총 세금 값을 반환하는 문제를 수정합니다.
@@ -582,19 +597,19 @@ ht-degree: 0%
 * **MDVA-42046**(*Adobe Commerce 및 Magento Open Source >=2.3.4 &lt;=2.3.5-p2 || >=2.4.0 &lt;2.4.5*) - 제품을 업데이트하는 동안 날짜 입력 필드가 있는 제품 특성에 잘못된 값이 지정되는 문제를 수정합니다.
 * **MDVA-43935**(*Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.5*) - 업셀 제품이 두 번 표시되는 문제를 해결했습니다.
 * **MDVA-44188**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5*) - 주소에 `.-`이(가) 있는 시스템에서 발급한 전자 메일이 전송되지 않는 문제를 해결했습니다.
-* **MDVA-42283** (*Adobe Systems Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*&#x200B;의 경우) - 프랑스어 로케일에 대한 관리 순서 표의 날짜-시간 포맷 잘못된되는 문제를 수정합니다.
+* **MDVA-42283**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - 프랑스어 로케일에 대한 관리 순서 그리드의 날짜-시간 형식이 잘못된 문제를 수정합니다.
 * 업데이트된 패치: MDVA-41061-V2, MDVA-36309, MDVA-30862, MDVA-39713.
-* 에 대한 [!DNL Site-Wide Analysis Tool]패치 메타데이터 가 추가되었습니다.
+* [!DNL Site-Wide Analysis Tool]에 대한 패치 메타데이터를 추가했습니다.
 
 ## v1.1.12 {#v1-1-12}
 
 * **MDVA-39713**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.3.6*) - 사용자가 활성 예약 업데이트의 시작 시간을 편집할 수 있는 문제를 해결했습니다.
 * **MDVA-42410**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - 쿠폰 보고서에 기본 통화만 표시되는 문제를 해결했습니다.
 * **MDVA-41136**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - `mage-cache-sessid`의 만료 날짜가 연장되지 않아 고객 데이터가 정리되는 문제를 해결했습니다.
-* **MDVA-39993** (*Adobe Systems Commerce 및 Magento Open Source >=2.3.5 &lt;=2.3.7-p2 ||=&quot;&quot;>=2.4.0 &lt;2.4.4*&#x200B;의 경우) - API를 통해 수행된 인벤토리 변경이 프런트 엔드의 제품 페이지에 반영되지 않는 문제를 수정합니다.&lt;/=2.3.7-p2>
-* **MDVA-42855** (*Adobe Systems Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5*&#x200B;의 경우) - 결제 시 새 고객 주소가 주소록에 저장되지 않는 문제를 수정합니다.
-* **MDVA-42645** (*Adobe Systems Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5*&#x200B;의 경우) - 크레딧 기능이 비활성화된 경우 관리자가 보상 포인트를 환불할 수 없는 문제를 수정스토어.
-* **MDVA-43414**(*Adobe Systems Commerce 및 Magento Open Source >=2.3.6*&lt;=2.3.7-p2의 경우) - 숫자 SKU에서 큐 소비자를 `inventory.reservations.updateSalabilityStatus` 실행할 때 발생하는 PHP 치명적 오류를 수정합니다.
+* **MDVA-39993**(*Adobe Commerce 및 Magento Open Source >=2.3.5 &lt;=2.3.7-p2 || >=2.4.0 &lt;2.4.4*) - API를 통해 수행된 인벤토리 변경이 프론트엔드의 제품 페이지에 반영되지 않는 문제를 수정합니다.
+* **MDVA-42855**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5*) - 체크아웃 중에 새 고객 주소가 주소록에 저장되지 않는 문제를 해결했습니다.
+* **MDVA-42645**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.5*) - 저장소 크레딧 기능을 사용하지 않도록 설정한 경우 관리자가 보상 포인트를 환불할 수 없는 문제를 해결했습니다.
+* **MDVA-43414**(*Adobe Commerce 및 Magento Open Source >=2.3.6 &lt;=2.3.7-p2*&#x200B;의 경우) - 숫자 SKU에서 `inventory.reservations.updateSalabilityStatus` 큐 소비자를 실행할 때 발생하는 PHP 치명적인 오류를 수정합니다.
 * **MDVA-41628**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.5*) - 새 모듈을 추가할 때 기존의 제한된 관리 사용자가 새 리소스에 액세스할 수 있는 문제를 해결했습니다.
 * **MDVA-43348**(*Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.5*) - `gift_card_options`에 *uid*&#x200B;이(가) 포함된 경우 기프트 카드 GraphQL 요청에 오류가 표시되는 문제를 해결했습니다.
 * **MDVA-39546**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - 스테이징 업데이트 시작 날짜를 편집하는 동안 현재 날짜보다 이전 날짜로 설정할 수 있는 문제를 해결했습니다.
@@ -724,21 +739,21 @@ ht-degree: 0%
 * **MDVA-39966**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;=2.3.5-p2 || >=2.4.0 &lt;=2.4.0-p1*) - 잘못된 로케일 배포 문제를 해결했습니다.
 * **MDVA-38852**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;=2.3.5-p2*&#x200B;의 경우) - 디자인을 통한 카탈로그 인벤토리가 여러 병렬 주문의 경우 성능을 크게 저하시키는 업데이트에 대해 테이블을 잠그는 문제를 해결합니다.
 * **MDVA-39986**(*Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.3*) - 사용자가 Safari 브라우저를 사용하여 MacOS의 관리자에 순서를 지정할 수 없는 문제를 해결했습니다.
-* **MDVA-38447**(*Adobe Systems Commerce 및 Magento Open Source >=2.4.2&lt;2.4.4*&#x200B;의 경우) - GraphQL 응답에서 개별적으로&#x200B;*구성할 수 없는 하위 제품이 반환되고 범주 필터를 사용하여 GraphQL 제품에 대한 MySQL 쿼리를 최적화하는 두 가지 문제를*&#x200B;해결합니다.
-* **MDVA-40134** (*Adobe Systems Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.3*&#x200B;용) - 공유 카탈로그가 활성화된 경우 GraphQL이 관련 제품을 반환하지 않는 문제를 수정합니다.
-* **MDVA-39935** (*Adobe Systems Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.4*&#x200B;용) - GraphQL이 웹 사이트 수준에서 비활성화된 구성 가능한 하위 제품을 반환하는 문제를 수정합니다.
+* **MDVA-38447**(*Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.4*) - 두 가지 문제가 해결되었습니다. *개별적으로 표시되지 않음* 구성 가능한 하위 제품이 GraphQL 응답에 반환되고 범주 필터를 사용하여 GraphQL 제품 쿼리에 대해 MySQL 쿼리가 최적화됩니다.
+* **MDVA-40134**(*Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.3*) - 공유 카탈로그가 활성화되면 GraphQL에서 관련 제품을 반환하지 않는 문제를 해결했습니다.
+* **MDVA-39935**(*Adobe Commerce 및 Magento Open Source >=2.4.1 &lt;2.4.4*) - GraphQL에서 웹 사이트 수준에서 비활성화된 구성 가능한 하위 제품을 반환하는 문제를 해결했습니다.
 
 ## v1.1.1 {#v1-1-1}
 
 * **MDVA-36021**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4*) - 관리자의 주문 세부 사항 페이지에 *멤버 함수 getId()* 호출이 표시되는 문제를 해결했습니다.
 * **MDVA-34948** (*Adobe Commerce 및 Magento Open Source >=2.3.6 &lt;=2.3.6-p1 || >=2.4.0 &lt;=2.4.0-p1*) - `GET_LOCK`과(와) 같이 오래 실행되는 쿼리와 관련된 문제를 수정합니다.
-* **MDVA-39305** (*Adobe Systems Commerce 및 Magento Open Source >=2.4.0 &lt;=2.4.2-p1*&#x200B;의 경우) - 등록된 고객이 활성화된 Google ReCaptcha로 로그인할 수 없는 문제를 수정합니다.
-* **MDVA-37897** (*Adobe Systems Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.4*&#x200B;의 경우) - 고객이 최근에 본 위젯의 옵션을 사용하여 제품을 추가하려고 할 때 잘못된 리디렉션 문제를 수정합니다.
+* **MDVA-39305**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;=2.4.2-p1*&#x200B;의 경우) - 등록된 고객이 활성화된 Google ReCaptcha로 로그인할 수 없는 문제를 해결합니다.
+* **MDVA-37897**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.4*) - 고객이 최근에 본 위젯의 옵션이 있는 제품을 추가하려고 할 때 잘못된 리디렉션으로 문제를 수정합니다.
 
-## v1.1.0 버전 {#v1-1-0}
+## v1.1.0 {#v1-1-0}
 
-* 패치 카테고리는 사용자 경험 경험을 개선하고 고객이 필요한 패치를 더 쉽게 검색할 수 있도록 하기 위해 도입되었습니다.
-* `patches.json` 파일 이름이 (으`support-patches.json`)로 변경되었습니다.
+* 고객이 사용자 경험을 개선하고 필요한 패치를 쉽게 검색할 수 있도록 패치 카테고리가 도입됐다.
+* `patches.json` 파일의 이름이 `support-patches.json`(으)로 바뀌었습니다.
 * **MDVA-38799**(*Adobe Commerce >=2.3.0 &lt;2.4.3*) - 스테이징 업데이트를 만든 후 다운로드 가능한 제품이 저장되지 않은 문제를 해결했습니다.
 * **MDVA-37592**(*Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*&#x200B;의 경우) - 공유 카탈로그에 가격이 0으로 할당된 제품에 대해 가격별 정렬이 제대로 작동하지 않는 문제를 해결했습니다.
 * **MDVA-38827**(*Adobe Commerce >=2.3.3-p1 &lt;2.4.4*) - 고객이 오류 메시지가 포함된 주문 배송 이메일을 받는 문제를 해결합니다.
@@ -874,8 +889,8 @@ ht-degree: 0%
 
 * **MDVA-31969**(*Adobe Commerce >=2.3.3 &lt;2.3.5, >=2.4.0 &lt;2.4.2*) - CSV 파일에서 제품을 가져온 후 이미지가 중복되는 문제를 해결합니다.
 * **MDVA-33382**(*Adobe Commerce >=2.3.0 &lt;2.4.2*) - 범주에서 제품을 제거한 후 인덱서 무효화 문제를 해결했습니다.
-* **MDVA-28511**(*Adobe Systems Commerce용>=2.3.5*&lt;2.3.6 ) - 이름 필드에 특정 문자(악센트 부호가 있는 대문자 좋아요)가 포함된 경우 체크아웃을 완료 [!DNL PayPal] 할 수 없는 문제를 수정합니다.
-* **MDVA-31519** (*Adobe Systems Commerce >=2.3.5 &lt;2.3.6*&#x200B;용) - 사이트 전체 판매 규칙 사용 중일 때 게스트 체크아웃의 대기 시간 제한 문제를 수정합니다.
+* **MDVA-28511**(*Adobe Commerce >=2.3.5 &lt;2.3.6*) - 이름 필드에 특정 문자(예: 악센트 부호 대문자)가 포함된 경우 [!DNL PayPal] 체크아웃을 완료할 수 없는 문제를 해결했습니다.
+* **MDVA-31519**(*Adobe Commerce >=2.3.5 &lt;2.3.6*&#x200B;의 경우) - 사이트 전체 판매 규칙이 사용 중일 때 게스트 체크아웃에서 대기 시간 초과 문제를 해결합니다.
 * **MDVA-33281**(*Adobe Commerce >=2.3.4 &lt;2.3.6*) - 잘못된 SKU 매개 변수 유형으로 인해 `inventory:reservation:list-inconsistencies`에 치명적인 오류가 발생하는 문제를 해결했습니다.
 * **MDVA-24201**(*Adobe Commerce >=2.3.0 &lt;2.3.5*) - 수동으로 다시 인덱싱할 때까지 가격이 예약된 장바구니 가격 규칙을 반영하지 않는 문제를 해결했습니다.
 * **MDVA-32694** (*Adobe Commerce >=2.3.0 &lt;2.3.6 || >= 2.4.0 &lt;2.4.2*) - 기본 스토어가 아닌 제품과 관련된 경우 관리자가 협상 가능한 견적에 제품을 추가할 수 없는 문제를 해결했습니다.
