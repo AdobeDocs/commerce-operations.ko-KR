@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ee39b766bbad8d0b3a80cd2305dd8323eadf17f
+source-git-commit: 0fab2989afbf65c32ad41667a7e26ec235cb0eae
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '120'
 ht-degree: 2%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 새 설명서 및 기존 설명서의 중요 업데이트에 대해 알아봅니다.
 
-### 2024년 8월 13일
+### 2024년 10월 8일
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,21 +23,33 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2024년 8월 보안 패치에 대한 릴리스 정보 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p7</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p10</a></p>
+      <td><p>2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 버전에 대해 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>이 추가되었습니다.</p>
 </td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bfe3444c045bbfacf63e59e609d75d43e9c44a0">0bfe34</a>(커밋)</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce5bbafb3887c8bfb803f37fe33133fed9a23783">ce5bba</a>(커밋)</td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce 기능 및 패치 릴리스에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">2025 공지 날짜</a>가 추가되었습니다.</p>
+      <td><p>2024년 10월 패치 릴리스 정보 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p3</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p10</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p11</a></p>
 </td>
       <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7">6e499d</a>(커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/93649180699470370f8e4de4f5d544689bb385bc">936491</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p>릴리스 정보에서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues">해결된 문제</a>를 업데이트했습니다.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03d7916aed86aa3869a0abaf32a9c2678add9bd2">03d791</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">새로운 릴리스 버전</a>을 추가했습니다.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/295f801219885c6908faea35648878fb7a4d8ec1">295f80</a>(커밋)</td>
     </tr>
   </tbody>
 </table>
 
-### 2024년 8월 5일
+### 2024년 10월 4일
 
 <table style="table-layout:auto;">
   <thead>
@@ -49,15 +61,15 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.49 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a>를 게시했습니다.</p>
+      <td><p>1.1.52 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a>를 게시했습니다.</p>
 </td>
-      <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/abd006da0182057336ba5adcd8ef198eb27e3319">abd006</a>(커밋)</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c2cbbf8032ea9d29dc3c17e146ced81d7137bf77">c2cbbf</a>(커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
 
-### 2024년 7월 18일
+### 2024년 9월 12일
 
 <table style="table-layout:auto;">
   <thead>
@@ -69,10 +81,10 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>6월 보안 패치 릴리스 정보:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a>에서 <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-34102">CVE-2024-34102</a>과(와) 관련된 JSON 웹 토큰(JWT) 유효성 검사 핫픽스에 대한 긴급 정보가 추가되었습니다.</p>
+      <td><p>1.1.51 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a>를 게시했습니다.</p>
 </td>
       <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3def61189269c39102e5dba289b8e04c1cb68a23">3def61</a>(커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a7cd214422842e321284f1ddc62fdab2796078d2">a7cd21</a>(커밋)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
