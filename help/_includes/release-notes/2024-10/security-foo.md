@@ -1,5 +1,5 @@
 ---
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: cbb880010fa907592f87b42ecd4da8fdf06bc5fe
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
    * TinyMCE 7.3은 향상된 사용자 경험, 향상된 공동 작업 및 향상된 효율성을 제공합니다. TinyMCE 5는 2.4.8 릴리스 라인에서 제거되었습니다&#x200B;.
 
-   * TinyMCE 5.10에서 보안 취약성([CVE-2024-38357](https://nvd.nist.gov/vuln/detail/CVE-2024-38357))이 보고되었으므로 현재 지원되는 모든 릴리스 라인에 대해 종속성도 업그레이드되었으며 2024년 10월 모든 보안 패치에 포함되었습니다.
+   * TinyMCE 5.10에서 보안 취약성([CVE-2024-38357](https://nvd.nist.gov/vuln/detail/CVE-2024-38357))이 보고되었으므로 현재 지원되는 모든 릴리스 라인에 대해 종속성도 업그레이드되었으며 모든 2024년 10월 보안 패치에 포함되었습니다.
 
       * 2.4.7-p3
       * 2.4.6-p8
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * **Require.js 업그레이드**—이제 Adobe Commerce에서 최신 버전의 Require.js(2.3.7)를 사용합니다.
 
-   * Require.js 2.3.6에 보안 취약성([CVE-2024-38999](https://nvd.nist.gov/vuln/detail/CVE-2024-38999))이 보고되었기 때문에 현재 지원되는 모든 릴리스 라인에 대해 종속성도 업그레이드되었으며 모든 2024년 10월 보안 패치에 포함되었습니다.
+   * Require.js 2.3.6에 보안 취약성([CVE-2024-38999](https://nvd.nist.gov/vuln/detail/CVE-2024-38999))이 보고되었으므로 현재 지원되는 모든 릴리스 라인에 대해 종속성도 업그레이드되었으며 모든 2024년 10월 보안 패치에 포함되었습니다.
 
       * 2.4.7-p3
       * 2.4.6-p8
