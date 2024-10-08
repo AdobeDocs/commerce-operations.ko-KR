@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ laminas/laminas-validator
 
 ## 해결된 문제
 
-Magento Open Source 2.4.8 코어 코드에서 253개 문제를 해결했습니다. 이 릴리스에 포함된 해결된 문제의 하위 집합은 아래에 설명되어 있습니다.
+Magento Open Source 2.4.8 코어 코드에서 254개의 문제를 해결했습니다. 이 릴리스에 포함된 해결된 문제의 하위 집합은 아래에 설명되어 있습니다.
 
 ### API
 
@@ -207,6 +207,10 @@ Magento Open Source 2.4.8 코어 코드에서 253개 문제를 해결했습니�
    * _참고 사항 수정_: 이제 시스템에서 대문자 파일 확장자를 사용하는 제품 이미지 업로드를 허용하여 제품 만들기 프로세스를 원활하게 수행할 수 있습니다. 이전에는 대문자로 된 파일 확장자를 사용한 이미지 업로드가 거부되어 사용자가 파일 확장자를 소문자로 변경해야 했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38831>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [문제] 기본 인덱서 모드를 &#39;일정&#39;으로 설정
+   * _참고 사항 수정_: 모든 새 인덱서는 기본적으로 **[!UICONTROL Update by Schedule]** 모드에 있습니다.  이전에는 기본 모드가 **[!UICONTROL Update on Save]**&#x200B;이었습니다. 기존 인덱서는 영향을 받지 않습니다. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _GitHub 문제_: <https://github.com/magento/magento2/issues/36419>
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [문제] mview 구독 취소에 인덱서 변경 로그 테이블 삭제
    * _참고 사항 수정_: 이제 인덱스가 &#39;일정에 따라 업데이트&#39;에서 &#39;저장 시 업데이트&#39;로 전환될 때 사용되지 않은 변경 로그 테이블이 자동으로 제거되며, 누락된 항목이 없도록 인덱스가 잘못된 것으로 표시됩니다. 이전에는 색인을 &#39;저장 시 업데이트&#39;로 전환하면 시스템에 사용되지 않은 변경 로그 테이블이 남고 변경된 모든 색인이 &#39;유효함&#39;으로 표시되었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Magento Open Source 2.4.8 코어 코드에서 253개 문제를 해결했습니�
 ### Braintree
 
 * _BUNDLE-3367_: LPM으로 결제
+   * _참고 사항 수정_: 이제 시스템은 로그인한 고객의 배송 및 청구 주소가 일치하지 않더라도 초기 로드 시 LPM(로컬 결제 방법)을 올바르게 렌더링하여 원활한 체크아웃 프로세스를 보장합니다. 이전에는 고객의 배송 주소와 청구 주소가 일치하지 않으면 LPM이 렌더링되지 않아 체크아웃 중에 잠재적인 지장이 있었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: 가상 제품을 하위 제품으로 구성할 수 있습니다.
+   * _참고 사항 수정_: 이제 시스템에서 가상 하위 제품이 있는 구성 가능한 제품에 대해 빠른 결제 방법을 허용하여 원활한 체크아웃 프로세스를 보장합니다. 기존에는 가상 하위 제품이 포함된 구성 가능한 제품을 장바구니에 추가할 때 빠른 결제 방법을 사용할 수 없었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV 확인 실패 오류
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: 계정 영역 문제 247을 통해 보관
+   * _참고 사항 수정_: 이제 시스템에서 고객이 인증 오류가 발생하지 않고 여러 웹 사이트에서 새 카드 또는 PayPal 계정 정보를 저장할 수 있습니다. 이전에는 고객이 다른 웹 사이트에서 새로운 결제 방법을 저장할 수 없었고 인증 오류 메시지가 표시되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: 다른 국가의 주소로 배송
+   * _참고 사항 수정_: 이제 시스템에서 다른 국가의 주소로 배송 시 오류 없이 트랜잭션을 처리할 수 있으므로 원활한 체크아웃 프로세스가 보장됩니다. 이전에는 다른 국가의 주소로 배송하려고 하면 프론트엔드에 오류가 표시되지 않더라도 콘솔 오류가 발생합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: 신용 카드 - 해체 기능
+   * _참고 사항 수정_: 이제 시스템에서 고객이 결제 페이지에서 배송 페이지로 다시 이동할 때 Braintree PayPal 구성 요소의 분해를 올바르게 처리하여 오류를 방지하고 PayPal Express 버튼이 올바르게 렌더링되도록 합니다. 이전에는 결제 페이지에서 배송 페이지로 다시 이동하면 Braintree PayPal 구성 요소를 분리하려고 할 때 오류가 발생하는 경우가 있었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: PayPal Express에 대한 배송 콜백
+   * _참고 사항 수정_: 이제 시스템에서 사용 가능한 배송 방법을 PayPal Express 모달에 올바르게 표시하므로 고객이 검토 페이지로 진행하거나 거래를 완료하기 전에 선호하는 배송 방법을 선택할 수 있습니다. 이전에는 PayPal Express 모달에서 선택할 수 있는 배송 방법이 없었으므로 고객이 거래를 완료하기 전에 별도의 검토 페이지에서 배송 방법을 선택해야 했습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### 장바구니 및 체크아웃
