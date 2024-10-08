@@ -4,9 +4,9 @@ description: 인덱서 구성에 대한 모범 사례를 따라 사이트 성능
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 일정에 따라 업데이트할 인덱서 설정
 
-Adobe Commerce에는 두 가지 유형의 인덱서 모드가 있습니다. [!UICONTROL Update on Save](기본 설정) 및 [!DNL Update on Schedule].
+Adobe Commerce에는 두 가지 유형의 인덱서 모드가 있습니다. [!UICONTROL Update on Save] 및 [!DNL Update on Schedule].
 
 - **[!UICONTROL Update on Save]** 모드는 카탈로그 또는 다른 데이터가 변경될 때마다 인덱스를 즉시 업데이트합니다. 예를 들어 관리자 사용자가 카테고리에 새 제품을 추가하면 업데이트가 저장될 때 카테고리 제품 인덱스가 즉시 다시 인덱싱됩니다.
 

@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 이 명령을 사용하여 다음 인덱서 옵션을 설정합니다.
 
-- **저장 시 업데이트(`realtime`)**: 관리자가 변경되면 인덱싱된 데이터가 업데이트됩니다. (예를 들어, 관리자 권한으로 제품을 카테고리에 추가한 후 카테고리 제품 색인이 다시 색인화됩니다.) 이것이 기본값입니다.
+- **저장 시 업데이트(`realtime`)**: 관리자가 변경되면 인덱싱된 데이터가 업데이트됩니다. (예를 들어, 관리자 권한으로 제품을 카테고리에 추가한 후 카테고리 제품 색인이 다시 색인화됩니다.)
 - **일정별 업데이트(`schedule`)**: 데이터는 cron 작업에서 설정한 일정에 따라 인덱싱됩니다.
 
 [색인화에 대해 자세히 알아보기](https://developer.adobe.com/commerce/php/development/components/indexing/).

@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
+source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,22 @@ ht-degree: 0%
 # Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## 2.4.7-p3
+
+Adobe Commerce 2.4.7-p3 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
+
+{{b2b-patches}}
+
+### 강조 표시
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+
+### 이 릴리스에 포함된 핫픽스
+
+{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
 
 ## 2.4.7-p2
 

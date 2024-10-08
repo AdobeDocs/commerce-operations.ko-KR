@@ -1,11 +1,146 @@
 ---
-source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
+source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
 workflow-type: tm+mt
-source-wordcount: '13175'
+source-wordcount: '14443'
 ht-degree: 0%
 
 ---
-# Magento Open Source 해결 문제(v2.4.8-beta1)
+# Magento Open Source 릴리스 노트(v2.4.8-beta1)
+
+## 강조 표시
+
+다음 49개의 강조 표시가 Magento Open Source 2.4.8 릴리스에 적용됩니다.
+
+### 프레임워크
+
+* _AC-10721_: league/flysystem Composer 종속성을 최신 버전으로 업그레이드합니다.
+   * _참고 사항 수정_: 2.x league/flysystem Composer 종속성을 최신 버전 3.x로 업그레이드하십시오.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_: 2.4.8-beta1 플랫폼 구성 요소 업그레이드
+* _AC-11673_: php-amqplib/php-amqplib 최신 버전 조사
+   * _참고 사항_: 최신 버전 php-amqplib/php-amqplib :^3.x을(를) 업데이트했습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_: phpunit 10 호환성에 대한 통합 테스트 프레임워크 리팩터링 - IntegrationTest.php를 찾을 수 없음
+   * _참고 사항 수정_: Adobe Commerce의 통합 및 WebAPI 테스트 프레임워크 변경 사항으로 PHPUnit 9가 PHPUnit 10으로 업그레이드되었습니다. PHPUnit 10 변경 사항은 이전 버전과 호환됩니다.
+   * _GitHub 코드 기여_: &lt;https://github.com/magento/magento2/ (내부, 병합되지 않음)>
+* _AC-11813_: phpunit 10 호환성을 위한 WebApi 테스트 프레임워크 - SOAP 및 B2B 모듈과의 RabbitMQ 연결과 관련된 문제
+   * _참고 사항 수정_: Adobe Commerce의 통합 및 WebAPI 테스트 프레임워크 변경 사항으로 PHPUnit 9가 PHPUnit 10으로 업그레이드되었습니다. PHPUnit 10 변경 사항은 이전 버전과 호환됩니다.
+   * _GitHub 코드 기여_: &lt;https://github.com/magento/magento2/ (내부, 병합되지 않음)>
+* _AC-11816_: MySQL 8.4 LTS와의 호환성 추가
+* _AC-11911_: 업그레이드 라이브러리로 마이그레이션한 후 jQuery/fileuploader css 정리
+   * _참고 사항 수정_: jQuery/fileUploader 라이브러리가 Uppy 라이브러리로 마이그레이션되어 제거되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_: Magento CE용 MySQL 8.4 LTS와의 호환성 추가
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_: elasticsearch 8 모듈을 더 이상 사용되지 않는 것으로 표시합니다.
+* _AC-12015_: jsTree 라이브러리로 마이그레이션한 후 ExtJs 폴더 정리
+   * _참고 사항 수정_: 관련 기능이 jsTree로 마이그레이션되었으므로 extJs 폴더가 제거되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_: Monolog/Monolog 시스템 종속성을 최신 주요 버전으로 업그레이드합니다.
+   * _참고 사항 수정_: 시스템이 &quot;monolog/monolog:^3.x&quot; 라이브러리의 최신 주요 버전을 사용하도록 업데이트되어 호환성이 보장되고 성능이 향상되었습니다. 이전에는 시스템에서 잠재적인 문제 및 제한을 초래할 수 있는 &quot;monolog/monolog&quot; 라이브러리의 이전 버전을 사용했습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_: wikimedia/less.php 종속성을 최신 주요 버전으로 업그레이드합니다.
+   * _참고 사항 수정_: &quot;wikimedia/less.php&quot; 라이브러리의 최신 주요 버전 5.x을 사용하도록 시스템이 업데이트되어 호환성과 최신 기능을 보장합니다. 이전에는 시스템에서 보안 문제가 발생할 수 있는 오래된 버전의 라이브러리를 사용하고 있었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_: jquery/validate 라이브러리 종속성을 최신 부 버전으로 업그레이드합니다.
+   * _참고 사항 수정_: jquery/validate 라이브러리 종속성을 최신 부 버전 1.20.0으로 업그레이드합니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_: moment.js 시스템 종속성을 최신 부 버전으로 업그레이드합니다.
+   * _참고 사항 수정_: moment.js 시스템 종속성을 최신 부 버전 2.30.1로 업그레이드하십시오.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_: EE용 MySQL 8.4 LTS와의 호환성 추가
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_: B2B용 MySQL 8.4 LTS와의 호환성 추가
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_: 번들 확장용 MySQL 8.4 LTS와의 호환성 추가
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_: CE용 MariaDB 11.4 LTS와 호환성 추가
+   * _참고 사항 수정_: Adobe Commerce 및 확장에 MariaDB 11.4 지원이 추가되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_: 구독자 최적화 - PhpUnit10
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_: Redis 세션에 대한 연결 다시 시도를 지원하고 colinmollenhour/php-redis-session-abstract v2.0.0과 호환됩니다.
+   * _참고 사항 수정_: adobe commerce와 호환되는 colinmollenhour/php-redis-session-abstract v2.0.0의 최신 버전을 업데이트했습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_: league/flysystem Composer 종속성을 최신 버전으로 업그레이드하십시오.
+   * _참고 사항 수정_: 2.x league/flysystem Composer 종속성을 최신 버전 3.x로 업그레이드하십시오.
+* _AC-12576_: MySQL 8.4 LTS를 사용하여 자동화 테스트 오류를 조사합니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_: EE용 MariaDB 11.4 LTS와 호환성 추가
+   * _참고 사항 수정_: Adobe Commerce 및 확장에 MariaDB 11.4 지원이 추가되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_: MySQL 8.4 LTS를 사용하여 DMT(데이터 마이그레이션 도구)를 조사합니다.
+* _AC-12715_: Laminas 작성기 종속성을 최신 버전으로 업그레이드하는 중입니다.
+   * _참고 사항 수정_: 이제 시스템에서 최신 버전의 laminas 작성기 종속성을 지원합니다.
+laminas/laminas-servicemanager
+라미나스/라미나스 서버
+laminas/laminas-stdlib
+laminas/laminas-validator
+호환성 및 최신 기능 보장. 이전에는 이러한 종속 항목의 최신 버전으로 업데이트하면 이전 버전과의 호환성 문제 및 테스트 오류가 발생할 수 있었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_: 데이터 마이그레이션 도구용 MariaDB 11.4 LTS와의 호환성 추가
+   * _참고 사항 수정_: Adobe Commerce 및 확장에 MariaDB 11.4 지원이 추가되었습니다.
+* _AC-12823_: 구성 요소를 업그레이드하는 동안 phpunit 패치 업데이트로 인해 단위 테스트 실패를 조사합니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_: MySQL 8.4와 SVC 및 EAT 도구 호환성
+* _AC-12898_: MySQL 8.4와의 UCT 도구 호환성
+   * _참고 사항 수정_: 이제 UCT(업그레이드 호환성 도구)가 MySQL 8.4와 호환되므로 이 버전에서 실행 중인 인스턴스에 대해 원활한 작업과 호환성 검사를 수행할 수 있습니다. 이전에는 UCT 도구가 MySQL 8.4와의 호환성을 테스트 및 확인하지 않았습니다.
+* _AC-9749_: PHPUnit 10 업그레이드
+   * _참고 사항 수정_: phpunit/phpunit 작성기 종속성을 호환 가능한 버전 &quot;phpunit/phpunit&quot;:&quot;10.x&quot;로 업데이트했습니다.
+
+### 설치 및 관리
+
+* _AC-6819_: 기본적으로 인덱서를 &quot;일정에 따라 업데이트&quot;로 설정합니다.
+
+### 주문
+
+* _ACP2E-2709_: [기능 요청] 고객이 [주문 세부 사항] 페이지의 [주석 제출] 단추가 혼동되어 있으므로 다른 것으로 변경해야 한다고 제안함
+   * _메모 수정_: 혼동을 최소화하기 위해 주문 세부 사항 페이지에서 &quot;댓글 제출&quot; 단추 레이블이 &quot;업데이트&quot;로 변경되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/488c1034>
+
+### 기타
+
+* _AC-11420_: 새 버전의 Adobe Commerce이 설치되면 인덱서 설정이 [준비] 상태 기본값으로 나타납니다
+   * _참고 사항 수정_: 설치 Magento 후 인덱서의 상태는 기본적으로 *준비* 상태여야 합니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_: 타사 인덱서 모듈을 설치할 때 기존 Magento 설치에서 기본적으로 일정에 따라 인덱서를 업데이트로 설정했습니다.
+   * _참고 사항 수정_: 모든 새 인덱서는 기본적으로 [일정별로 업데이트] 모드에 있습니다. 이전에는 기본 모드가 [저장 시 업데이트]였습니다. 사용자 지정 인덱서와도 동일합니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_: Elasticsearch 7 및 8 옵션은 관리자 구성에서 더 이상 사용되지 않습니다.
+   * _참고 사항 수정_: [관리 구성] 옵션의 [Elasticsearch 8] 옵션이 더 이상 사용하지 않는 텍스트로 표시되어 사용자에게 Elasticsearch 8을 더 이상 사용하지 않는 것이 좋습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_: 관리자 구성에서 Elasticsearch 옵션을 선택한 경우 텍스트 메모를 추가합니다.
+   * _참고 사항 수정_: elasticsearch가 더 이상 Adobe에서 지원되지 않으며 더 이상 사용되지 않음을 Adobe Commerce 관리자 사용자에게 알리는 텍스트 메모가 추가되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_: MariaDB 11.4와의 SVC 및 EAT 도구 호환성
+   * _메모 수정_: MariaDB 11.4와 SVC 및 EAT 도구 호환성
+* _AC-12876_: MariaDB 11.4와의 UCT 도구 호환성
+* _LYNX-374_: GraphQL을 통해 전자 메일 확인 문서
+* _LYNX-376_: GraphQL에서 reCAPTCHA에 대한 구성을 가져오는 문서
+* _LYNX-409_: 업데이트 장바구니 항목 돌연변이에 대한 DB 쿼리 최적화
+
+### 보안
+
+* _AC-11041_: 2024년 6월 릴리스의 2.4.8-beta1에 대한 보안 개선 사항
+* _AC-11864_: 2024년 8월 릴리스의 2.4.8-beta1에 대한 보안 개선 사항
+* _AC-12346_: 2024년 10월 릴리스의 2.4.8-beta1에 대한 보안 개선 사항
+* _AC-12691_: [2.4.8-beta1] 고객 업데이트 REST API 끝점이 작동하지 않습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a4102373>, <https://github.com/magento/magento2/commit/a4102373>
+
+### UI 프레임워크
+
+* _AC-12726_: [2.4.8-beta1] TinyMCE 5에서 TinyMCE 7로 마이그레이션
+   * _참고 사항 수정_: TinyMCE 5를 TinyMCE 7.3.0으로 마이그레이션하여 Adobe Commerce에서 지원되는 버전입니다. 이전 시스템에서는 오래되어 보안 취약성이 보고된 5.10.2를 사용하고 있었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_: [2.4.8-beta1] TinyMCE 5에서 TinyMCE 7 페이지 빌더로 마이그레이션
+   * _참고 사항 수정_: TinyMCE 5를 TinyMCE 7.3.0으로 마이그레이션하여 Adobe Commerce에서 지원되는 버전입니다. 이전 시스템에서는 오래되어 보안 취약성이 보고된 5.10.2를 사용하고 있었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_: [2.4.8-beta1] TinyMCE 5에서 TinyMCE 7 - Magento2-infra로 마이그레이션 - 금지된 단어
+   * _참고 사항 수정_: TinyMCE 5를 TinyMCE 7.3.0으로 마이그레이션하여 Adobe Commerce에서 지원되는 버전입니다. 이전 시스템에서는 오래되어 보안 취약성이 보고된 5.10.2를 사용하고 있었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_: .js를 최신 버전 2.3.7로 업그레이드해야 합니다(보안 취약점 CVE-2024-38999)
+   * _참고 사항 수정_: require.js를 최신 버전 2.3.7로 업데이트했습니다. 이전 버전에서 보안 취약성이 보고되었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
 
 ## 해결된 문제
 
