@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: a19b19560a84dcbc308c1f778262689bce0bdb65
+source-git-commit: 07d7aafc25c9d9cdf9b6adfe6ff09f1088c53749
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -628,6 +628,7 @@ ht-degree: 0%
          - [ACSD-60632: 모든 주문 시도와 함께 저장된 주소](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195: 장바구니 GraphQL 요청이 최종 페이지에 항목을 반환하지 못함](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: 제품이 비활성화된 경우 특성이 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+         - [ACSD-60326: 고객 [!UICONTROL Returns] 상태의 GraphQL 쿼리에서 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52 {#v1-1-52}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61322: [!UICONTROL Shared Catalogue]에 할당되지 않은 제품이 XML 사이트 맵에 포함되어 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
