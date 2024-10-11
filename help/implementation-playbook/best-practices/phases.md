@@ -1,6 +1,6 @@
 ---
 title: 구현 단계
-description: Adobe Commerce 프로젝트의 구현 단계에 대한 모범 사례에 대해 알아보십시오.
+description: Adobe Commerce 프로젝트의 구현 단계에 대한 모범 사례에 대해 알아봅니다.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

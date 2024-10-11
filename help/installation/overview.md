@@ -1,6 +1,6 @@
 ---
 title: 온프레미스 설치 개요
-description: Adobe Commerce 및 Magento Open Source의 온-프레미스 배포를 위한 설치 프로세스에 대해 알아보십시오.
+description: Adobe Commerce 및 Magento Open Source의 온-프레미스 배포를 위한 설치 프로세스에 대해 알아봅니다.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
