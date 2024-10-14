@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 07d7aafc25c9d9cdf9b6adfe6ff09f1088c53749
+source-git-commit: d53bc380e3bb0a2e6e510f8e73f327c035088aab
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '5959'
 ht-degree: 0%
 
 ---
@@ -634,6 +634,7 @@ ht-degree: 0%
          - [ACSD-61322: [!UICONTROL Shared Catalogue]에 할당되지 않은 제품이 XML 사이트 맵에 포함되어 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590: 집계된 베스트셀러 일일 보고서 생성 성능 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: [!UICONTROL Media Gallery]에서 항목 정렬](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
+         - [ACSD-59865: [!UICONTROL Cart Price Rule]이(가) 수량 부족으로 인해 이전 규칙을 취소하지 못했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 명령줄 도구 참조 {#cli-reference}
