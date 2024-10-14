@@ -1,5 +1,5 @@
 ---
-source-git-commit: b30fe4ed4d910ac3a99d3bcf4ff94103bcbd1369
+source-git-commit: 00b8e1bb5ee259763ddb2c52065cee2af98641e0
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>설정</strong></td>
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 이 릴리스에 대한 다음의 플랫폼 업그레이드는 Adobe Commerce이 최신 상거래 환경의 요구 사항을 충족할 수 있는 강력하고 안정적인 플랫폼으로 남을 수 있도록 합니다.
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>데이터베이스</strong></td>
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 이번 릴리스에는 다음과 같은 성능 개선 사항이 포함됩니다.
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>인덱서</strong></td>
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 이번 릴리스에는 다음과 같은 품질 개선 사항이 포함됩니다.
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>인벤토리</strong></td>
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 이번 릴리스에는 다음과 같은 GraphQL 개선 사항이 포함됩니다.
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>일반 개선 사항</strong></td>
