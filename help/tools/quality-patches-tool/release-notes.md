@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
+source-git-commit: f10eb87efbda20899574486f1e9db01f2a66f855
 workflow-type: tm+mt
-source-wordcount: '21987'
+source-wordcount: '22258'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ ht-degree: 0%
 >[!INFO]
 >
 >커뮤니티에서 Magento Open Source을 위해 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.53 {#v1-1-53}
+
+* **ACSD-48318**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 환경 에뮬레이션 중첩이 허용되지 않는 문제를 해결했습니다. 이제 `getInfoBlockHtml()` 호출 동안 에뮬레이션이 중지되면 `send()` 호출 동안 에뮬레이션이 시작됩니다.
+* **ACSD-59930**(Adobe Commerce >=2.4.6 &lt;2.4.8) - 회사 **[!UICONTROL Create]**, **[!UICONTROL Save]** 및 **[!UICONTROL Delete]** 흐름의 성능을 개선합니다.
+* **ACSD-60584**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 한 웹 사이트에서 사용자에 대해 만든 액세스 토큰이 다른 웹 사이트의 고객 정보에 액세스하거나 변경할 수 있는 문제를 수정합니다.
+* **ACSD-60804**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 삭제된 회사에 연결된 고객을 편집하면 *null에서 멤버 함수 `getSuperUserId()`에 대한 호출 오류 이(가) 발생하는 문제를 해결했습니다*.
+* **ACSD-61133**(Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8) - `sales_clean_quotes` [!DNL cron]이(가) 승인되지 않은 구매 주문에서 견적을 삭제하는 문제를 해결합니다.
+* **ACSD-61528**(Adobe Commerce >=2.4.6 &lt;2.4.8) - [!DNL GraphQL]을(를) 사용하여 [!UICONTROL Admin]에서 역할을 검색해도 결과가 반환되지 않는 문제를 해결했습니다.
+* **ACSD-61553**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 우선 순위가 다른 여러 할인 및 **[!UICONTROL Maximum Qty Discount is Applied To]**&#x200B;이(가) 제품에 적용될 때 **[!UICONTROL Cart Price Rule]** 할인이 잘못 계산되는 문제가 수정되었습니다.
+* **ACSD-61667**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 매장 내 픽업이 많은 소스의 경우 배송 만들기에 대한 인벤토리 성능을 향상시킵니다.
+* **ACSD-61969**(Adobe Commerce >=2.4.7 &lt;2.4.8) - 사용자가 쿠폰 코드가 구성된 것과 정확히 일치하도록 대/소문자 구분 쿠폰 코드를 입력해야 하는 문제를 해결했습니다.
+* 업데이트된 패치: ACSD-54989, ACSD-60632
 
 ## v1.1.52 {#v1-1-52}
 
