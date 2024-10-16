@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
+source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
 workflow-type: tm+mt
-source-wordcount: '21185'
+source-wordcount: '8072'
 ht-degree: 0%
 
 ---
@@ -9,21 +9,73 @@ ht-degree: 0%
 
 <!-- All the assigned and captured content is used in the included template -->
 
+
+
 <!-- The template to render with above values -->
 
 **버전**: 2.4.7-p1
 
 이 참조에는 `bin/magento` 명령줄 도구를 통해 사용할 수 있는 141개의 명령이 포함되어 있습니다.
 Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 자동으로 생성됩니다.
+
+## 일반
+
 사용자 지정 CLI 명령을 추가하려면 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 가이드를 사용하십시오.
 
->[!NOTE]
->
->전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
+전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
 
->[!NOTE]
->
->이 참조는 응용 프로그램 코드베이스에서 생성됩니다. 내용을 변경하려면 [codebase](https://github.com/magento) 리포지토리에서 해당 명령 구현의 소스 코드를 업데이트한 다음 변경 내용을 제출하여 검토할 수 있습니다. 다른 방법은 _피드백을 제공_&#x200B;하는 것입니다(오른쪽 상단에서 링크 찾기). 기여도 지침이 필요하면 [코드 기여도](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
+이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
+
+### 글로벌 옵션
+
+#### `--help`, `-h`
+
+해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
+
+- 기본값: `false`
+- 값을 수락하지 않음
+
+#### `--quiet`, `-q`
+
+메시지 출력 안 함
+
+- 기본값: `false`
+- 값을 수락하지 않음
+
+#### `--verbose`, `-v|-vv|-vvv`
+
+메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
+
+- 기본값: `false`
+- 값을 수락하지 않음
+
+#### `--version`, `-V`
+
+이 응용 프로그램 버전 표시
+
+- 기본값: `false`
+- 값을 수락하지 않음
+
+#### `--ansi`
+
+ANSI 출력 강제(또는 비활성화 —no-ansi)
+
+- 값을 수락하지 않음
+
+#### `--no-ansi`
+
+&quot;—ansi&quot; 옵션 무시
+
+- 기본값: `false`
+- 값을 수락하지 않음
+
+#### `--no-interaction`, `-n`
+
+대화식 질문하지 않음
+
+- 기본값: `false`
+- 값을 수락하지 않음
+
 
 ## `_complete`
 
@@ -33,85 +85,40 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 셸 완료 제안을 제공하는 내부 명령
 
+### 옵션
 
-### `--shell`, `-s`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--shell`, `-s`
 
 껍질 유형(&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - 값 필요
 
-### `--input`, `-i`
+#### `--input`, `-i`
 
-입력 토큰 배열(예: COMP_WORDS 또는 argv)
+입력 토큰의 배열(예: COMP_WORDS 또는 argv)
 
 - 기본값: `[]`
 - 값 필요
 
-### `--current`, `-c`
+#### `--current`, `-c`
 
 커서가 있는 &quot;입력&quot; 배열의 인덱스(예: COMP_CWORD)
 
 - 값 필요
 
-### `--api-version`, `-a`
+#### `--api-version`, `-a`
 
 완료 스크립트의 API 버전
 
 - 값 필요
 
-### `--symfony`, `-S`
+#### `--symfony`, `-S`
 
 더 이상 사용되지 않음
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `completion`
@@ -121,7 +128,6 @@ bin/magento completion [--debug] [--] [<shell>]
 ```
 
 셸 완료 스크립트 덤프
-
 
 ```
 The completion command dumps the shell completion script required
@@ -152,63 +158,19 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
     eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
+### 인수
 
-### `shell`
+#### `shell`
 
 셸 유형(예: &quot;bash&quot;), &quot;$SHELL&quot; 환경 변수 값이 제공되지 않으면 사용됩니다.
 
+### 옵션
 
-### `--debug`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--debug`
 
 완료 디버그 로그 추적
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -222,7 +184,6 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 명령에 대한 도움말 표시
 
-
 ```
 The help command displays help for a given command:
 
@@ -235,72 +196,28 @@ You can also output the help in other formats by using the --format option:
 To display the list of available commands, please use the list command.
 ```
 
+### 인수
 
-### `command_name`
+#### `command_name`
 
 명령 이름
 
 - 기본값: `help`
 
+### 옵션
 
-### `--format`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--format`
 
 출력 형식(txt, xml, json 또는 md)
 
 - 기본값: `txt`
 - 값 필요
 
-### `--raw`
+#### `--raw`
 
 원시 명령 도움말을 출력하려면
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -313,7 +230,6 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 목록 명령
-
 
 ```
 The list command lists all commands:
@@ -333,77 +249,33 @@ It's also possible to get raw list of commands (useful for embedding command run
   bin/magento list --raw
 ```
 
+### 인수
 
-### `namespace`
+#### `namespace`
 
 네임스페이스 이름
 
+### 옵션
 
-### `--raw`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--raw`
 
 원시 명령 목록을 출력하려면
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--format`
+#### `--format`
 
 출력 형식(txt, xml, json 또는 md)
 
 - 기본값: `txt`
 - 값 필요
 
-### `--short`
+#### `--short`
 
 명령의 인수 설명을 건너뛰려면
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -417,54 +289,9 @@ bin/magento admin:adobe-ims:disable
 
 Adobe IMS 모듈 비활성화
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `admin:adobe-ims:enable`
@@ -475,78 +302,33 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 Adobe IMS 모듈을 활성화합니다.
 
+### 옵션
 
-### `--organization-id`, `-o`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--organization-id`, `-o`
 
 Adobe IMS 구성에 대한 조직 ID를 설정합니다. 모듈을 활성화할 때 필요합니다.
 
 - 값을 허용합니다.
 
-### `--client-id`, `-c`
+#### `--client-id`, `-c`
 
 Adobe IMS 구성에 대한 클라이언트 ID를 설정합니다. 모듈을 활성화할 때 필요합니다.
 
 - 값을 허용합니다.
 
-### `--client-secret`, `-s`
+#### `--client-secret`, `-s`
 
 Adobe IMS 구성을 위한 클라이언트 암호 를 설정합니다. 모듈을 활성화할 때 필요합니다.
 
 - 값을 허용합니다.
 
-### `--2fa`, `-t`
+#### `--2fa`, `-t`
 
 Adobe Admin Console의 조직에 대해 2FA가 활성화되어 있는지 확인합니다. 모듈을 활성화할 때 필요합니다.
 
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `admin:adobe-ims:info`
@@ -557,54 +339,9 @@ bin/magento admin:adobe-ims:info
 
 Adobe IMS 모듈 구성 정보
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `admin:adobe-ims:status`
@@ -615,54 +352,9 @@ bin/magento admin:adobe-ims:status
 
 Adobe IMS 모듈 상태
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `admin:user:create`
@@ -673,90 +365,45 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 관리자 만들기
 
+### 옵션
 
-### `--admin-user`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--admin-user`
 
 (필수) 관리자
 
 - 값 필요
 
-### `--admin-password`
+#### `--admin-password`
 
 (필수) 관리자 암호
 
 - 값 필요
 
-### `--admin-email`
+#### `--admin-email`
 
 (필수) 관리자 전자 메일
 
 - 값 필요
 
-### `--admin-firstname`
+#### `--admin-firstname`
 
 (필수) 관리자 이름
 
 - 값 필요
 
-### `--admin-lastname`
+#### `--admin-lastname`
 
 (필수) 관리자 성
 
 - 값 필요
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `admin:user:unlock`
@@ -767,67 +414,23 @@ bin/magento admin:user:unlock <username>
 
 관리자 계정 잠금 해제
 
-
 ```
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
 ```
 
+### 인수
 
-### `username`
+#### `username`
 
 잠금 해제할 관리자 사용자 이름
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `app:config:dump`
@@ -838,63 +441,18 @@ bin/magento app:config:dump [<config-types>...]
 
 애플리케이션 덤프 만들기
 
+### 인수
 
-
-### `config-types`
+#### `config-types`
 
 모든 [범위, 시스템, 테마, i18n]을(를) 덤프하려면 공백으로 구분된 구성 형식 목록 또는 생략합니다.
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `app:config:import`
@@ -905,54 +463,9 @@ bin/magento app:config:import
 
 공유 구성 파일에서 적절한 데이터 저장소로 데이터 가져오기
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `app:config:status`
@@ -963,54 +476,9 @@ bin/magento app:config:status
 
 구성 전파에 업데이트가 필요한지 확인합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `braintree:migrate`
@@ -1021,78 +489,33 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 Magento 1 데이터베이스에서 저장된 카드 마이그레이션
 
+### 옵션
 
-### `--host`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--host`
 
 호스트 이름/IP. 포트는 선택 사항입니다.
 
 - 값 필요
 
-### `--dbname`
+#### `--dbname`
 
 데이터베이스 이름
 
 - 값 필요
 
-### `--username`
+#### `--username`
 
 데이터베이스 사용자 이름. 읽기 액세스 권한이 있어야 합니다.
 
 - 값 필요
 
-### `--password`
+#### `--password`
 
 암호
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `cache:clean`
@@ -1103,69 +526,24 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 캐시 유형을 지웁니다.
 
+### 인수
 
-
-### `types`
+#### `types`
 
 공백으로 구분된 캐시 유형 목록 또는 모든 캐시 유형에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--bootstrap`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--bootstrap`
 
 부트스트랩의 매개 변수 추가 또는 재정의
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `cache:disable`
@@ -1176,69 +554,24 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 캐시 유형 비활성화
 
+### 인수
 
-
-### `types`
+#### `types`
 
 공백으로 구분된 캐시 유형 목록 또는 모든 캐시 유형에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--bootstrap`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--bootstrap`
 
 부트스트랩의 매개 변수 추가 또는 재정의
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `cache:enable`
@@ -1249,69 +582,24 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 캐시 유형 활성화
 
+### 인수
 
-
-### `types`
+#### `types`
 
 공백으로 구분된 캐시 유형 목록 또는 모든 캐시 유형에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--bootstrap`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--bootstrap`
 
 부트스트랩의 매개 변수 추가 또는 재정의
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `cache:flush`
@@ -1322,69 +610,24 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 캐시 유형에서 사용하는 캐시 저장소를 플러시합니다.
 
+### 인수
 
-
-### `types`
+#### `types`
 
 공백으로 구분된 캐시 유형 목록 또는 모든 캐시 유형에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--bootstrap`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--bootstrap`
 
 부트스트랩의 매개 변수 추가 또는 재정의
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `cache:status`
@@ -1395,60 +638,15 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 캐시 상태 확인
 
+### 옵션
 
-### `--bootstrap`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--bootstrap`
 
 부트스트랩의 매개 변수 추가 또는 재정의
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `catalog:images:resize`
@@ -1459,65 +657,20 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 크기 조정된 제품 이미지 만들기
 
+### 옵션
 
-### `--async`, `-a`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--async`, `-a`
 
 비동기 모드에서 이미지 크기 조정
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--skip_hidden_images`
+#### `--skip_hidden_images`
 
 제품 페이지에서 숨김으로 표시된 이미지 처리 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -1531,54 +684,9 @@ bin/magento catalog:product:attributes:cleanup
 
 사용하지 않는 제품 속성을 제거합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `cms:wysiwyg:restrict`
@@ -1589,61 +697,17 @@ bin/magento cms:wysiwyg:restrict <restrict>
 
 사용자 HTML 컨텐츠 유효성 검사를 적용할지 또는 대신 경고를 표시할지 여부를 설정합니다.
 
+### 인수
 
-
-### `restrict`
+#### `restrict`
 
 y\n
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `config:sensitive:set`
@@ -1654,86 +718,41 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 중요 구성 값 설정
 
+### 인수
 
-
-### `path`
+#### `path`
 
 group/section/field_name과 같은 구성 경로
 
 
-### `value`
+#### `value`
 
 구성 값
 
+### 옵션
 
-### `--interactive`, `-i`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--interactive`, `-i`
 
 모든 중요 변수를 설정하려면 대화형 모드를 활성화하십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--scope`
+#### `--scope`
 
 구성 범위, 설정하지 않은 경우 &quot;기본값&quot; 사용
 
 - 기본값: `default`
 - 값을 허용합니다.
 
-### `--scope-code`
+#### `--scope-code`
 
 구성을 위한 범위 코드, 기본적으로 빈 문자열
 
 - 기본값: &quot;
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `config:set`
@@ -1744,98 +763,55 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 시스템 구성 변경
 
+### 인수
 
-
-### `path`
+#### `path`
 
 format section/group/field_name의 구성 경로
 
 - 필수
 
-### `value`
+
+#### `value`
 
 구성 값
 
 - 필수
 
-### `--scope`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--scope`
 
 구성 범위(기본값, 웹 사이트 또는 스토어)
 
 - 기본값: `default`
 - 값 필요
 
-### `--scope-code`
+#### `--scope-code`
 
 범위 코드(범위가 &#39;기본값&#39;이 아닌 경우에만 필요)
 
 - 값 필요
 
-### `--lock-env`, `-e`
+#### `--lock-env`, `-e`
 
 관리자에서 수정할 수 없는 잠금 값(app/etc/env.php에 저장됨)
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--lock-config`, `-c`
+#### `--lock-config`, `-c`
 
 값을 잠그고 다른 설치와 공유하여 관리자의 수정을 방지합니다(app/etc/config.php에 저장됨).
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--lock`, `-l`
+#### `--lock`, `-l`
 
 사용하지 않음, 대신 —lock-env 옵션을 사용하십시오.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -1849,74 +825,29 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 지정된 경로에 대한 구성 값을 표시합니다. 경로를 지정하지 않으면 저장된 값이 모두 표시됩니다
 
+### 인수
 
-
-### `path`
+#### `path`
 
 구성 경로(예: section_id/group_id/field_id)
 
+### 옵션
 
-### `--scope`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--scope`
 
 구성 범위, 지정하지 않으면 &#39;기본&#39; 범위가 사용됩니다.
 
 - 기본값: `default`
 - 값을 허용합니다.
 
-### `--scope-code`
+#### `--scope-code`
 
 범위 코드(범위가 `default`이(가) 아닌 경우에만 필요)
 
 - 기본값: &quot;
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `cron:install`
@@ -1927,65 +858,20 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 현재 사용자에 대한 crontab 생성 및 설치
 
+### 옵션
 
-### `--force`, `-f`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--force`, `-f`
 
 설치 작업 강제 실행
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--non-optional`, `-d`
+#### `--non-optional`, `-d`
 
 선택 사항이 아닌 (기본) 작업만 설치
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -1999,54 +885,9 @@ bin/magento cron:remove
 
 crontab에서 작업 제거
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `cron:run`
@@ -2057,73 +898,28 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 일정별 작업 실행
 
+### 옵션
 
-### `--group`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--group`
 
 지정된 그룹에서만 작업 실행
 
 - 값 필요
 
-### `--exclude-group`
+#### `--exclude-group`
 
 지정된 그룹에서 작업 제외
 
 - 기본값: `[]`
 - 여러 값을 허용합니다.
 
-### `--bootstrap`
+#### `--bootstrap`
 
 부트스트랩의 매개 변수 추가 또는 재정의
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `customer:hash:upgrade`
@@ -2134,54 +930,9 @@ bin/magento customer:hash:upgrade
 
 고객의 해시를 최신 알고리즘에 따라 업그레이드
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `deploy:mode:set`
@@ -2192,65 +943,21 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 응용 프로그램 모드를 설정합니다.
 
+### 인수
 
-
-### `mode`
+#### `mode`
 
 설정할 애플리케이션 모드입니다. 사용 가능한 옵션은 &quot;developer&quot; 또는 &quot;production&quot;입니다.
 
 - 필수
 
-### `--skip-compilation`, `-s`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--skip-compilation`, `-s`
 
 정적 콘텐츠(생성된 코드, 사전 처리된 CSS 및 pub/static/의 자산)의 지우기 및 재생성을 건너뜁니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2264,54 +971,9 @@ bin/magento deploy:mode:show
 
 현재 응용 프로그램 모드를 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:di:info`
@@ -2322,61 +984,17 @@ bin/magento dev:di:info <class>
 
 명령의 종속성 삽입 구성에 대한 정보를 제공합니다.
 
+### 인수
 
-
-### `class`
+#### `class`
 
 클래스 이름
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -2387,54 +1005,9 @@ bin/magento dev:email:newsletter-compatibility-check
 
 뉴스레터 템플릿에서 잠재적인 변수 사용 호환성 문제를 검색합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:email:override-compatibility-check`
@@ -2445,54 +1018,9 @@ bin/magento dev:email:override-compatibility-check
 
 이메일 템플릿 재정의에서 잠재적인 변수 사용 호환성 문제를 검색합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:profiler:disable`
@@ -2503,54 +1031,9 @@ bin/magento dev:profiler:disable
 
 프로파일러를 비활성화합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:profiler:enable`
@@ -2561,60 +1044,15 @@ bin/magento dev:profiler:enable [<type>]
 
 프로파일러를 활성화합니다.
 
+### 인수
 
-
-### `type`
+#### `type`
 
 프로파일러 유형
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:query-log:disable`
@@ -2625,54 +1063,9 @@ bin/magento dev:query-log:disable
 
 DB 쿼리 로깅 비활성화
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:query-log:enable`
@@ -2683,75 +1076,30 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 DB 쿼리 로깅 활성화
 
+### 옵션
 
-### `--include-all-queries`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--include-all-queries`
 
 모든 쿼리를 기록합니다. [true\|false]
 
 - 기본값: `true`
 - 값을 허용합니다.
 
-### `--query-time-threshold`
+#### `--query-time-threshold`
 
 시간 임계값을 쿼리합니다.
 
 - 기본값: `0.001`
 - 값을 허용합니다.
 
-### `--include-call-stack`
+#### `--include-call-stack`
 
 호출 스택을 포함합니다. [true\|false]
 
 - 기본값: `true`
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `dev:source-theme:deploy`
@@ -2762,9 +1110,9 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 테마의 소스 파일을 수집하고 게시합니다.
 
+### 인수
 
-
-### `file`
+#### `file`
 
 사전 처리할 파일(확장명 없이 파일을 지정해야 함)
 
@@ -2772,81 +1120,37 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 - 배열
 
-### `--type`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--type`
 
 원본 파일 형식: [less]
 
 - 기본값: `less`
 - 값 필요
 
-### `--locale`
+#### `--locale`
 
 로케일: [en_US]
 
 - 기본값: `en_US`
 - 값 필요
 
-### `--area`
+#### `--area`
 
 영역: [frontend\|adminhtml]
 
 - 기본값: `frontend`
 - 값 필요
 
-### `--theme`
+#### `--theme`
 
 테마: [공급업체/테마]
 
 - 기본값: `Magento/luma`
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `dev:template-hints:disable`
@@ -2857,54 +1161,9 @@ bin/magento dev:template-hints:disable
 
 프론트엔드 템플릿 힌트를 비활성화합니다. 캐시 플러시가 필요할 수 있습니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:template-hints:enable`
@@ -2915,54 +1174,9 @@ bin/magento dev:template-hints:enable
 
 프론트엔드 템플릿 힌트를 활성화합니다. 캐시 플러시가 필요할 수 있습니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:template-hints:status`
@@ -2973,54 +1187,9 @@ bin/magento dev:template-hints:status
 
 프론트엔드 템플릿 힌트 상태를 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:tests:run`
@@ -3031,69 +1200,24 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 테스트 실행
 
+### 인수
 
-
-### `type`
+#### `type`
 
 실행할 테스트의 유형입니다. 사용 가능한 유형: all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 
 - 기본값: `default`
 
+### 옵션
 
-### `--arguments`, `-c`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--arguments`, `-c`
 
 PHPUnit에 대한 추가 인수. 예: &quot;-c&#39;—filter=MyTest&#39;&quot; (공백 없음)
 
 - 기본값: &quot;
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `dev:urn-catalog:generate`
@@ -3104,68 +1228,24 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 IDE에서 xml을 강조 표시하는 *.xsd 매핑에 대한 URN 카탈로그를 생성합니다.
 
+### 인수
 
-
-### `path`
+#### `path`
 
 카탈로그를 출력할 파일의 경로입니다. PhpStorm의 경우 .idea/misc.xml 를 사용합니다.
 
 - 필수
 
-### `--ide`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--ide`
 
 카탈로그가 생성되는 형식입니다. 지원됨: [phpstorm, vscode]
 
 - 기본값: `phpstorm`
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `dev:xml:convert`
@@ -3176,71 +1256,28 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 XSL 스타일 시트를 사용하여 XML 파일 변환
 
+### 인수
 
-
-### `xml-file`
+#### `xml-file`
 
 변환할 XML 파일의 경로
 
 - 필수
 
-### `processor`
+
+#### `processor`
 
 XML 파일에 적용할 XSL 스타일 시트의 경로
 
 - 필수
 
-### `--overwrite`, `-o`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--overwrite`, `-o`
 
 XML 파일 덮어쓰기
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -3254,63 +1291,18 @@ bin/magento downloadable:domains:add [<domains>...]
 
 다운로드 가능한 도메인 허용 목록에 도메인 추가
 
+### 인수
 
-
-### `domains`
+#### `domains`
 
 도메인 이름
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `downloadable:domains:remove`
@@ -3321,63 +1313,18 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 다운로드 가능한 도메인 허용 목록에서 도메인 제거
 
+### 인수
 
-
-### `domains`
+#### `domains`
 
 도메인 이름
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `downloadable:domains:show`
@@ -3388,54 +1335,9 @@ bin/magento downloadable:domains:show
 
 다운로드 가능한 도메인을 허용 목록에 표시
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `encryption:payment-data:update`
@@ -3446,54 +1348,9 @@ bin/magento encryption:payment-data:update
 
 암호화된 신용 카드 데이터를 최신 암호화 암호로 다시 암호화합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:create-event-provider`
@@ -3504,66 +1361,21 @@ bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCR
 
 이 인스턴스에 대한 이벤트 Adobe I/O에서 사용자 지정 이벤트 공급자를 만듭니다. 레이블 및 설명 옵션을 지정하지 않으면 시스템 app/etc/event-types.json 파일에 정의해야 합니다.
 
+### 옵션
 
-### `--label`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--label`
 
 사용자 정의 공급자를 정의하는 레이블입니다.
 
 - 값을 허용합니다.
 
-### `--description`
+#### `--description`
 
 공급자에 대한 설명.
 
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `events:generate:module`
@@ -3574,54 +1386,9 @@ bin/magento events:generate:module
 
 플러그인 목록을 기반으로 모듈 생성
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:info`
@@ -3632,68 +1399,24 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 
 지정된 이벤트의 페이로드를 반환합니다.
 
+### 인수
 
-
-### `event-code`
+#### `event-code`
 
 이벤트 코드
 
 - 필수
 
-### `--depth`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--depth`
 
 반환할 이벤트 페이로드의 레벨 수
 
 - 기본값: `2`
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `events:list`
@@ -3704,54 +1427,9 @@ bin/magento events:list
 
 구독한 이벤트 목록 표시
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:list:all`
@@ -3762,61 +1440,17 @@ bin/magento events:list:all <module_name>
 
 지정된 모듈에 정의된 가입 가능한 이벤트 목록을 반환합니다.
 
+### 인수
 
-
-### `module_name`
+#### `module_name`
 
 모듈 이름
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:metadata:populate`
@@ -3827,54 +1461,9 @@ bin/magento events:metadata:populate
 
 구성 목록(XML 및 응용 프로그램 구성)에서 Adobe I/O에 메타데이터를 만듭니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:provider:info`
@@ -3885,54 +1474,9 @@ bin/magento events:provider:info
 
 구성된 이벤트 공급자에 대한 세부 정보를 반환합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:registrations:list`
@@ -3943,54 +1487,9 @@ bin/magento events:registrations:list
 
 App Builder 프로젝트의 이벤트 등록을 나열합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:subscribe`
@@ -4001,106 +1500,62 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 이벤트 구독
 
+### 인수
 
-
-### `event-code`
+#### `event-code`
 
 이벤트 코드
 
 - 필수
 
-### `--force`, `-f`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--force`, `-f`
 
 지정한 이벤트가 로컬로 정의되지 않은 경우에도 강제로 구독됩니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--fields`
+#### `--fields`
 
 이벤트 데이터 페이로드의 필드 목록입니다.
 
 - 기본값: `[]`
 - 값 필요
 
-### `--parent`
+#### `--parent`
 
 규칙이 있는 이벤트 구독의 상위 이벤트 코드.
 
 - 값 필요
 
-### `--rules`
+#### `--rules`
 
 각 규칙의 형식이 &quot;field\|operator\|value&quot;인 이벤트 구독에 대한 규칙 목록입니다.
 
 - 기본값: `[]`
 - 값 필요
 
-### `--priority`, `-p`
+#### `--priority`, `-p`
 
 이 이벤트의 전송을 가속화합니다. 즉시 전달해야 하는 이벤트에 대해 이 옵션을 지정합니다. 기본적으로 이벤트는 분당 한 번씩 cron을 통해 전송됩니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--destination`, `-d`
+#### `--destination`, `-d`
 
 이 이벤트의 대상입니다. 사용자 지정 대상에 전달해야 하는 이벤트에 대해 이 옵션을 지정합니다.
 
 - 기본값: `default`
 - 값 필요
 
-### `--hipaaAuditRequired`
+#### `--hipaaAuditRequired`
 
 이벤트에 HIPAA 감사의 대상인 데이터가 포함되어 있음을 나타냅니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4114,58 +1569,13 @@ bin/magento events:sync-events-metadata [-d|--delete]
 
 이 인스턴스에 대한 이벤트 메타데이터 동기화
 
+### 옵션
 
-### `--delete`, `-d`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--delete`, `-d`
 
 이벤트 메타데이터 삭제가 더 이상 필요하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4179,61 +1589,17 @@ bin/magento events:unsubscribe <event-code>
 
 제공된 이벤트에 대한 구독 제거
 
+### 인수
 
-
-### `event-code`
+#### `event-code`
 
 구독을 취소할 이벤트 코드
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `i18n:collect-phrases`
@@ -4244,70 +1610,25 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 코드베이스에서 구 검색
 
+### 인수
 
-
-### `directory`
+#### `directory`
 
 구문 분석할 디렉터리 경로. —magento 플래그가 설정된 경우 필요 없음
 
+### 옵션
 
-### `--output`, `-o`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--output`, `-o`
 
 출력 파일 경로(파일 이름 포함). 지정된 파일이 없으면 기본값은 stdout입니다.
 
 - 값 필요
 
-### `--magento`, `-m`
+#### `--magento`, `-m`
 
 —magento 매개 변수를 사용하여 현재 Magento 코드베이스를 구문 분석합니다. 디렉토리가 지정된 경우 매개변수를 생략합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4321,78 +1642,35 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 언어 패키지를 저장합니다.
 
+### 인수
 
-
-### `source`
+#### `source`
 
 번역이 있는 소스 사전 파일의 경로
 
 - 필수
 
-### `locale`
+
+#### `locale`
 
 사전의 대상 로케일(예: &quot;de_DE&quot;)
 
 - 필수
 
-### `--mode`, `-m`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--mode`, `-m`
 
 사전의 저장 모드 - &quot;바꾸기&quot; - 새 언어 팩으로 바꾸기 - &quot;병합&quot; - 언어 패키지 병합, 기본적으로 &quot;바꾸기&quot;
 
 - 기본값: `replace`
 - 값 필요
 
-### `--allow-duplicates`, `-d`
+#### `--allow-duplicates`, `-d`
 
 —allow-duplicates 매개 변수를 사용하여 번역의 중복을 저장할 수 있습니다. 그렇지 않으면 매개 변수를 생략합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4406,68 +1684,24 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 언어 패키지를 제거합니다.
 
+### 인수
 
-
-### `package`
+#### `package`
 
 언어 패키지 이름
 
 - 기본값: `[]`
-
 - 필수
+
 - 배열
 
-### `--backup-code`, `-b`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--backup-code`, `-b`
 
 코드 및 구성 파일 백업 수행(임시 파일 제외)
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4481,54 +1715,9 @@ bin/magento indexer:info
 
 허용된 인덱서를 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:reindex`
@@ -4539,63 +1728,18 @@ bin/magento indexer:reindex [<index>...]
 
 데이터 다시 인덱싱
 
+### 인수
 
-
-### `index`
+#### `index`
 
 공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:reset`
@@ -4606,63 +1750,18 @@ bin/magento indexer:reset [<index>...]
 
 인덱서 상태를 잘못된 상태로 다시 설정합니다.
 
+### 인수
 
-
-### `index`
+#### `index`
 
 공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:set-dimensions-mode`
@@ -4673,65 +1772,20 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 인덱서 Dimension 모드 설정
 
+### 인수
 
-
-### `indexer`
+#### `indexer`
 
 인덱서 이름 [catalog_product_price|catalogpermissions_category]
 
 
-### `mode`
+#### `mode`
 
 인덱서 차원 모드 catalog_product_price          없음,website,customer_group,website_and_customer_group catalogpermissions_category    none,customer_group
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:set-mode`
@@ -4742,68 +1796,23 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 인덱스 모드 유형 설정
 
+### 인수
 
-
-### `mode`
+#### `mode`
 
 인덱서 모드 유형 [실시간|일정]
 
 
-### `index`
+#### `index`
 
 공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:set-status`
@@ -4814,69 +1823,25 @@ bin/magento indexer:set-status <status> [<index>...]
 
 지정된 인덱서 상태를 설정합니다.
 
+### 인수
 
-
-### `status`
+#### `status`
 
 인덱서 상태 유형 [잘못됨|일시 중단됨|유효]
 
 - 필수
 
-### `index`
+
+#### `index`
 
 공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:show-dimensions-mode`
@@ -4887,63 +1852,18 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 인덱서 Dimension 모드 표시
 
+### 인수
 
-
-### `indexer`
+#### `indexer`
 
 공간으로 구분된 인덱스 유형 목록 또는 모든 인덱스에 적용할 생략(catalog_product_price,catalogpermissions_category)
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:show-mode`
@@ -4954,63 +1874,18 @@ bin/magento indexer:show-mode [<index>...]
 
 색인 모드 표시
 
+### 인수
 
-
-### `index`
+#### `index`
 
 공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:status`
@@ -5021,63 +1896,18 @@ bin/magento indexer:status [<index>...]
 
 인덱서의 상태를 표시합니다.
 
+### 인수
 
-
-### `index`
+#### `index`
 
 공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
-
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `info:adminuri`
@@ -5088,54 +1918,9 @@ bin/magento info:adminuri
 
 Magento 관리자 URI를 표시합니다
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `info:backups:list`
@@ -5146,54 +1931,9 @@ bin/magento info:backups:list
 
 사용 가능한 백업 파일 목록을 인쇄합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `info:currency:list`
@@ -5204,54 +1944,9 @@ bin/magento info:currency:list
 
 사용 가능한 통화 목록을 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `info:dependencies:show-framework`
@@ -5262,61 +1957,16 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 Magento 프레임워크의 종속성 수를 표시합니다.
 
+### 옵션
 
-### `--output`, `-o`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--output`, `-o`
 
 보고서 파일 이름
 
 - 기본값: `framework-dependencies.csv`
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `info:dependencies:show-modules`
@@ -5327,61 +1977,16 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 모듈 간 종속성 수를 표시합니다.
 
+### 옵션
 
-### `--output`, `-o`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--output`, `-o`
 
 보고서 파일 이름
 
 - 기본값: `modules-dependencies.csv`
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `info:dependencies:show-modules-circular`
@@ -5392,61 +1997,16 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 모듈 간 순환 종속성 수를 표시합니다.
 
+### 옵션
 
-### `--output`, `-o`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--output`, `-o`
 
 보고서 파일 이름
 
 - 기본값: `modules-circular-dependencies.csv`
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `info:language:list`
@@ -5457,54 +2017,9 @@ bin/magento info:language:list
 
 사용 가능한 언어 로케일 목록을 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `info:timezone:list`
@@ -5515,54 +2030,9 @@ bin/magento info:timezone:list
 
 사용 가능한 시간대 목록을 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `inventory:reservation:create-compensations`
@@ -5573,67 +2043,22 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 제공된 보상 인수로 예약 만들기
 
+### 인수
 
-
-### `compensations`
+#### `compensations`
 
 &quot;:::&quot; 형식의 보상 인수 목록
 
 - 기본값: `[]`
-
 - 배열
 
-### `--raw`, `-r`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--raw`, `-r`
 
 원시 출력
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -5647,79 +2072,34 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 판매 가능한 수량이 일치하지 않는 모든 주문 및 제품 표시
 
+### 옵션
 
-### `--complete-orders`, `-c`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--complete-orders`, `-c`
 
 전체 주문에 대한 불일치만 표시
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--incomplete-orders`, `-i`
+#### `--incomplete-orders`, `-i`
 
 미완료 주문에 대한 불일치만 표시
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--bunch-size`, `-b`
+#### `--bunch-size`, `-b`
 
 한 번에 로드할 주문 수를 정의합니다.
 
 - 기본값: `50`
 - 값을 허용합니다.
 
-### `--raw`, `-r`
+#### `--raw`, `-r`
 
 원시 출력
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -5733,64 +2113,20 @@ bin/magento inventory-geonames:import <countries>...
 
 소스 선택 알고리즘에 대한 지역 이름 다운로드 및 가져오기
 
+### 인수
 
-
-### `countries`
+#### `countries`
 
 가져올 국가 코드 목록
 
 - 기본값: `[]`
-
 - 필수
+
 - 배열
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `maintenance:allow-ips`
@@ -5801,83 +2137,38 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 유지 관리 모드 제외 IP 설정
 
+### 인수
 
-
-### `ip`
+#### `ip`
 
 허용된 IP 주소
 
 - 기본값: `[]`
-
 - 배열
 
-### `--none`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--none`
 
 허용된 IP 주소 지우기
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--add`
+#### `--add`
 
 기존 목록에 IP 주소 추가
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `maintenance:disable`
@@ -5888,67 +2179,22 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 유지 관리 모드 비활성화
 
+### 옵션
 
-### `--ip`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--ip`
 
 허용된 IP 주소(허용된 IP 목록을 지우려면 &#39;없음&#39;을 사용)
 
 - 기본값: `[]`
 - 값 필요
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `maintenance:enable`
@@ -5959,67 +2205,22 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 유지 관리 모드 활성화
 
+### 옵션
 
-### `--ip`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--ip`
 
 허용된 IP 주소(허용된 IP 목록을 지우려면 &#39;없음&#39;을 사용)
 
 - 기본값: `[]`
 - 값 필요
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `maintenance:status`
@@ -6030,60 +2231,15 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 유지 관리 모드 상태 표시
 
+### 옵션
 
-### `--magento-init-params`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `media-content:sync`
@@ -6094,54 +2250,9 @@ bin/magento media-content:sync
 
 컨텐츠를 자산과 동기화
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `media-gallery:sync`
@@ -6152,54 +2263,9 @@ bin/magento media-gallery:sync
 
 데이터베이스의 미디어 저장소 및 미디어 자산 동기화
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `module:config:status`
@@ -6210,54 +2276,9 @@ bin/magento module:config:status
 
 &#39;app/etc/config.php&#39; 파일에서 모듈 구성을 확인하고 최신 상태인지 보고합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `module:disable`
@@ -6268,90 +2289,45 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 지정된 모듈 비활성화
 
+### 인수
 
-
-### `module`
+#### `module`
 
 모듈 이름
 
 - 기본값: `[]`
-
 - 배열
 
-### `--force`, `-f`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--force`, `-f`
 
 종속성 확인 무시
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--all`
+#### `--all`
 
 모든 모듈 비활성화
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `module:enable`
@@ -6362,90 +2338,45 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 지정된 모듈 활성화
 
+### 인수
 
-
-### `module`
+#### `module`
 
 모듈 이름
 
 - 기본값: `[]`
-
 - 배열
 
-### `--force`, `-f`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--force`, `-f`
 
 종속성 확인 무시
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--all`
+#### `--all`
 
 모든 모듈 활성화
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `module:status`
@@ -6456,83 +2387,38 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 모듈 상태 표시
 
+### 인수
 
-
-### `module-names`
+#### `module-names`
 
 선택적 모듈 이름
 
 - 기본값: `[]`
-
 - 배열
 
-### `--enabled`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--enabled`
 
 활성화된 모듈만 인쇄
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--disabled`
+#### `--disabled`
 
 비활성화된 모듈만 인쇄
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `module:uninstall`
@@ -6543,112 +2429,68 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 Composer에서 설치한 모듈 제거
 
+### 인수
 
-
-### `module`
+#### `module`
 
 모듈 이름
 
 - 기본값: `[]`
-
 - 필수
+
 - 배열
 
-### `--remove-data`, `-r`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--remove-data`, `-r`
 
 모듈이 설치한 데이터 제거
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--backup-code`
+#### `--backup-code`
 
 코드 및 구성 파일 백업 수행(임시 파일 제외)
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--backup-media`
+#### `--backup-media`
 
 미디어 백업 수행
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--backup-db`
+#### `--backup-db`
 
 전체 데이터베이스 백업 수행
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--non-composer`
+#### `--non-composer`
 
 여기에서 지나간 모든 모듈은 작성기를 기반으로 하지 않습니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `newrelic:create:deploy-marker`
@@ -6659,77 +2501,34 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 배포 큐에서 항목을 확인하고 적절한 배포 마커를 만듭니다.
 
+### 인수
 
-
-### `message`
+#### `message`
 
 메시지를 배포하시겠습니까?
 
 - 필수
 
-### `change_log`
+
+#### `change_log`
 
 변경 로그?
 
 - 필수
 
-### `user`
+
+#### `user`
 
 배포 사용자
 
 
-### `revision`
+#### `revision`
 
 개정
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `queue:consumers:list`
@@ -6740,58 +2539,13 @@ bin/magento queue:consumers:list
 
 MessageQueue 소비자 목록
 
-
 ```
 This command shows list of MessageQueue consumers.
 ```
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `queue:consumers:restart`
@@ -6802,58 +2556,13 @@ bin/magento queue:consumers:restart
 
 MessageQueue 소비자 다시 시작
 
-
 ```
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
 ```
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `queue:consumers:start`
@@ -6863,7 +2572,6 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 ```
 
 MessageQueue 소비자 시작
-
 
 ```
 This command starts MessageQueue consumer by its name.
@@ -6897,97 +2605,54 @@ To define the number of processes per consumer:
     bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
+### 인수
 
-### `consumer`
+#### `consumer`
 
 시작할 소비자의 이름입니다.
 
 - 필수
 
-### `--max-messages`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--max-messages`
 
 프로세스 종료 전 소비자가 처리한 메시지 수입니다. 지정하지 않은 경우 - 큐에 있는 모든 메시지를 처리한 후 종료합니다.
 
 - 값 필요
 
-### `--batch-size`
+#### `--batch-size`
 
 일괄 처리당 메시지 수. 배치 소비자에 대해서만 적용할 수 있습니다.
 
 - 값 필요
 
-### `--area-code`
+#### `--area-code`
 
 기본 설정 영역(전역, adminhtml 등) 기본값은 전역입니다.
 
 - 값 필요
 
-### `--single-thread`
+#### `--single-thread`
 
 이 옵션은 한 소비자의 여러 복사본을 동시에 실행하지 않도록 합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--multi-process`
+#### `--multi-process`
 
 소비자당 프로세스 수.
 
 - 값을 허용합니다.
 
-### `--pid-file-path`
+#### `--pid-file-path`
 
 PID 저장을 위한 파일 경로(이 옵션은 더 이상 사용되지 않으며 대신 —단일 스레드 사용)
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `remote-storage:sync`
@@ -6998,54 +2663,9 @@ bin/magento remote-storage:sync
 
 미디어 파일을 원격 스토리지와 동기화합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `saas:resync`
@@ -7056,97 +2676,52 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 피드 데이터를 SaaS 서비스에 다시 동기화합니다.
 
+### 옵션
 
-### `--feed`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--feed`
 
 SaaS 서비스에 완전히 다시 동기화하기 위한 피드 이름입니다. 사용 가능한 피드: 결제 서비스 주문 프로덕션, 결제 서비스 주문 샌드박스, 결제 서비스 주문 상태 프로덕션, 결제 서비스 주문 상태 샌드박스, 결제 서비스 스토어 프로덕션, 결제 서비스 스토어 샌드박스
 
 - 값 필요
 
-### `--no-reindex`
+#### `--no-reindex`
 
 피드 데이터를 SaaS 서비스로만 다시 제출합니다. 다시 색인화하지 않습니다. (이 옵션은 제품, 제품, 제품, 제품 및 가격 피드에 적용되지 않습니다.)
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--cleanup-feed`
+#### `--cleanup-feed`
 
 동기화하기 전에 피드 인덱서 테이블을 강제로 정리합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--dry-run`
+#### `--dry-run`
 
 시험 실행. 데이터를 내보내지 않습니다. 페이로드를 로그 파일에 저장하려면 var/log/saas-export.log env 변수 EXPORTER_EXTENDED_LOG=1로 실행합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--thread-count`
+#### `--thread-count`
 
 동기화 스레드 수를 설정합니다.
 
 - 값 필요
 
-### `--batch-size`
+#### `--batch-size`
 
 동기화 배치 크기 설정
 
 - 값 필요
 
-### `--continue-resync`
+#### `--continue-resync`
 
 마지막으로 저장된 위치에서 재동기화 계속(이 옵션은 제품, 제품, 제품, 제품, 가격 피드에 적용할 수 있음)
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -7160,58 +2735,13 @@ bin/magento sampledata:deploy [--no-update]
 
 작성기 기반 Magento 설치를 위한 샘플 데이터 모듈 배포
 
+### 옵션
 
-### `--no-update`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--no-update`
 
 작성기 업데이트를 실행하지 않고 composer.json 업데이트
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -7225,58 +2755,13 @@ bin/magento sampledata:remove [--no-update]
 
 composer.json에서 모든 샘플 데이터 패키지 제거
 
+### 옵션
 
-### `--no-update`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--no-update`
 
 작성기 업데이트를 실행하지 않고 composer.json 업데이트
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -7290,54 +2775,9 @@ bin/magento sampledata:reset
 
 재설치를 위해 모든 샘플 데이터 모듈 재설정
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:recaptcha:disable-for-user-forgot-password`
@@ -7348,54 +2788,9 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 관리자가 암호 찾기 양식에 대해 reCAPTCHA 비활성화
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:recaptcha:disable-for-user-login`
@@ -7406,54 +2801,9 @@ bin/magento security:recaptcha:disable-for-user-login
 
 관리자 로그인 양식에 대해 reCAPTCHA 비활성화
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:tfa:google:set-secret`
@@ -7464,67 +2814,24 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 Google OTP 생성에 사용되는 암호를 설정합니다.
 
+### 인수
 
-
-### `user`
+#### `user`
 
 사용자 이름
 
 - 필수
 
-### `secret`
+
+#### `secret`
 
 암호
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:tfa:providers`
@@ -7535,54 +2842,9 @@ bin/magento security:tfa:providers
 
 사용 가능한 모든 공급자 나열
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:tfa:reset`
@@ -7593,67 +2855,24 @@ bin/magento security:tfa:reset <user> <provider>
 
 한 명의 사용자에 대한 구성 재설정
 
+### 인수
 
-
-### `user`
+#### `user`
 
 사용자 이름
 
 - 필수
 
-### `provider`
+
+#### `provider`
 
 공급자 코드
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `server:run`
@@ -7664,114 +2883,69 @@ bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--
 
 응용 프로그램 서버 실행
 
+### 옵션
 
-### `--port`, `-p`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--port`, `-p`
 
 에서 서비스할 포트
 
 - 기본값: `9501`
 - 값을 허용합니다.
 
-### `--background`, `-b`
+#### `--background`, `-b`
 
 백그라운드 모드 플래그
 
 - 기본값: `0`
 - 값을 허용합니다.
 
-### `--workerNum`, `-wn`
+#### `--workerNum`, `-wn`
 
 시작할 작업자 프로세스 수
 
 - 기본값: `4`
 - 값을 허용합니다.
 
-### `--dispatchMode`, `-dm`
+#### `--dispatchMode`, `-dm`
 
 작업자 프로세스에 대한 연결 발송 모드
 
 - 기본값: `3`
 - 값을 허용합니다.
 
-### `--maxRequests`, `-mr`
+#### `--maxRequests`, `-mr`
 
 작업자 프로세스가 다시 시작되기 전까지의 최대 요청
 
 - 기본값: `10000`
 - 값을 허용합니다.
 
-### `--area`, `-a`
+#### `--area`, `-a`
 
 응용 프로그램 서버 영역
 
 - 기본값: `graphql`
 - 값을 허용합니다.
 
-### `--magento-init-params`, `-mip`
+#### `--magento-init-params`, `-mip`
 
 magento bootstrap init params
 
 - 기본값: &quot;
 - 값을 허용합니다.
 
-### `--maxWaitTime`, `-mwt`
+#### `--maxWaitTime`, `-mwt`
 
 다시 로드 후 작업자를 기다리는 시간(예: 구성 변경)를 취소하기 전에
 
 - 기본값: `3600`
 - 값을 허용합니다.
 
-### `--state-monitor`
+#### `--state-monitor`
 
 상태 모니터링을 활성화합니다. 디버깅 상태 문제에만 사용하십시오!
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -7785,54 +2959,9 @@ bin/magento server:state-monitor:aggregate-output
 
 ApplicationServer의 상태 모니터에서 출력 집계
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `setup:backup`
@@ -7843,81 +2972,36 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스의 백업 수행
 
+### 옵션
 
-### `--code`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--code`
 
 코드 및 구성 파일 백업 수행(임시 파일 제외)
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--media`
+#### `--media`
 
 미디어 백업 수행
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--db`
+#### `--db`
 
 전체 데이터베이스 백업 수행
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:config:set`
@@ -7928,647 +3012,602 @@ bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--en
 
 배포 구성을 만들거나 수정합니다.
 
+### 옵션
 
-### `--enable-debug-logging`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--enable-debug-logging`
 
 디버그 로깅 활성화
 
 - 값 필요
 
-### `--enable-syslog-logging`
+#### `--enable-syslog-logging`
 
 syslog 로깅 활성화
 
 - 값 필요
 
-### `--backend-frontname`
+#### `--backend-frontname`
 
 백엔드 프론트이름(누락된 경우 자동 생성됨)
 
 - 값 필요
 
-### `--remote-storage-driver`
+#### `--remote-storage-driver`
 
 원격 스토리지 드라이버
 
 - 값 필요
 
-### `--remote-storage-prefix`
+#### `--remote-storage-prefix`
 
 원격 저장소 접두사
 
 - 기본값: &quot;
 - 값 필요
 
-### `--remote-storage-endpoint`
+#### `--remote-storage-endpoint`
 
 원격 저장소 끝점
 
 - 값 필요
 
-### `--remote-storage-bucket`
+#### `--remote-storage-bucket`
 
 원격 저장소 버킷
 
 - 값 필요
 
-### `--remote-storage-region`
+#### `--remote-storage-region`
 
 원격 스토리지 영역
 
 - 값 필요
 
-### `--remote-storage-key`
+#### `--remote-storage-key`
 
 원격 저장소 액세스 키
 
 - 기본값: &quot;
 - 값 필요
 
-### `--remote-storage-secret`
+#### `--remote-storage-secret`
 
 원격 저장소 비밀 키
 
 - 기본값: &quot;
 - 값 필요
 
-### `--remote-storage-path-style`
+#### `--remote-storage-path-style`
 
 원격 스토리지 경로 스타일
 
 - 기본값: `0`
 - 값 필요
 
-### `--id_salt`
+#### `--id_salt`
 
 GraphQl Salt
 
 - 값 필요
 
-### `--config-async`
+#### `--config-async`
 
 비동기 관리 구성 저장을 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--checkout-async`
+#### `--checkout-async`
 
 비동기 주문 처리를 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--amqp-host`
+#### `--amqp-host`
 
 Amqp 서버 호스트
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-port`
+#### `--amqp-port`
 
 Amqp 서버 포트
 
 - 기본값: `5672`
 - 값 필요
 
-### `--amqp-user`
+#### `--amqp-user`
 
 Amqp 서버 사용자 이름
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-password`
+#### `--amqp-password`
 
 Amqp 서버 암호
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-virtualhost`
+#### `--amqp-virtualhost`
 
 Amqp virtualhost
 
 - 기본값: `/`
 - 값 필요
 
-### `--amqp-ssl`
+#### `--amqp-ssl`
 
 Amqp SSL
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-ssl-options`
+#### `--amqp-ssl-options`
 
 Amqp SSL 옵션(JSON)
 
 - 기본값: &quot;
 - 값 필요
 
-### `--consumers-wait-for-messages`
+#### `--consumers-wait-for-messages`
 
 소비자는 대기열에서 메시지를 기다려야 합니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--queue-default-connection`
+#### `--queue-default-connection`
 
 메시지 큐 기본 연결. &#39;db&#39;, &#39;amqp&#39; 또는 사용자 지정 대기열 시스템일 수 있습니다. 대기열 시스템을 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
 
 - 값 필요
 
-### `--deferred-total-calculating`
+#### `--deferred-total-calculating`
 
 지연된 합계 계산을 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--key`
+#### `--key`
 
 암호화 키
 
 - 값 필요
 
-### `--db-host`
+#### `--db-host`
 
 데이터베이스 서버 호스트
 
 - 값 필요
 
-### `--db-name`
+#### `--db-name`
 
 데이터베이스 이름
 
 - 값 필요
 
-### `--db-user`
+#### `--db-user`
 
 데이터베이스 서버 사용자 이름
 
 - 값 필요
 
-### `--db-engine`
+#### `--db-engine`
 
 데이터베이스 서버 엔진
 
 - 값 필요
 
-### `--db-password`
+#### `--db-password`
 
 데이터베이스 서버 암호
 
 - 값 필요
 
-### `--db-prefix`
+#### `--db-prefix`
 
 데이터베이스 테이블 접두사
 
 - 값 필요
 
-### `--db-model`
+#### `--db-model`
 
 데이터베이스 유형
 
 - 값 필요
 
-### `--db-init-statements`
+#### `--db-init-statements`
 
 데이터베이스 초기 명령 집합
 
 - 값 필요
 
-### `--skip-db-validation`, `-s`
+#### `--skip-db-validation`, `-s`
 
 지정하면 DB 연결 유효성 검사를 건너뜁니다
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--http-cache-hosts`
+#### `--http-cache-hosts`
 
 http 캐시 호스트
 
 - 값 필요
 
-### `--db-ssl-key`
+#### `--db-ssl-key`
 
 SSL을 통해 DB 연결을 설정하기 위한 클라이언트 키 파일의 전체 경로
 
 - 기본값: &quot;
 - 값 필요
 
-### `--db-ssl-cert`
+#### `--db-ssl-cert`
 
 SSL을 통해 DB 연결을 설정하기 위한 클라이언트 인증서 파일의 전체 경로
 
 - 기본값: &quot;
 - 값 필요
 
-### `--db-ssl-ca`
+#### `--db-ssl-ca`
 
 SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체 경로
 
 - 기본값: &quot;
 - 값 필요
 
-### `--db-ssl-verify`
+#### `--db-ssl-verify`
 
 서버 인증 확인
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--session-save`
+#### `--session-save`
 
 세션 저장 핸들러
 
 - 값 필요
 
-### `--session-save-redis-host`
+#### `--session-save-redis-host`
 
 UNIX 소켓을 사용하는 경우 정규화된 호스트 이름, IP 주소 또는 절대 경로
 
 - 값 필요
 
-### `--session-save-redis-port`
+#### `--session-save-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--session-save-redis-password`
+#### `--session-save-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--session-save-redis-timeout`
+#### `--session-save-redis-timeout`
 
 연결 시간 제한(초)
 
 - 값 필요
 
-### `--session-save-redis-persistent-id`
+#### `--session-save-redis-persistent-id`
 
 영구 연결을 활성화하는 고유 문자열
 
 - 값 필요
 
-### `--session-save-redis-db`
+#### `--session-save-redis-db`
 
 Redis 데이터베이스 번호
 
 - 값 필요
 
-### `--session-save-redis-compression-threshold`
+#### `--session-save-redis-compression-threshold`
 
 Redis 압축 임계값
 
 - 값 필요
 
-### `--session-save-redis-compression-lib`
+#### `--session-save-redis-compression-lib`
 
 Redis 압축 라이브러리입니다. 값: gzip (기본값), lzf, lz4, snappy
 
 - 값 필요
 
-### `--session-save-redis-log-level`
+#### `--session-save-redis-log-level`
 
 Redis 로그 수준. 값: 0(최소 세부 정보) ~ 7(최대 세부 정보)
 
 - 값 필요
 
-### `--session-save-redis-max-concurrency`
+#### `--session-save-redis-max-concurrency`
 
 한 세션에 대한 잠금을 기다릴 수 있는 최대 프로세스 수
 
 - 값 필요
 
-### `--session-save-redis-break-after-frontend`
+#### `--session-save-redis-break-after-frontend`
 
 프론트엔드 세션에 대한 잠금을 해제하기 전에 대기할 시간(초)
 
 - 값 필요
 
-### `--session-save-redis-break-after-adminhtml`
+#### `--session-save-redis-break-after-adminhtml`
 
 관리 세션에 대한 잠금을 해제하기 전에 대기할 시간(초)
 
 - 값 필요
 
-### `--session-save-redis-first-lifetime`
+#### `--session-save-redis-first-lifetime`
 
 첫 번째 쓰기 시 보트가 아닌 세션의 라이프타임(초)(비활성화하려면 0을 사용)
 
 - 값 필요
 
-### `--session-save-redis-bot-first-lifetime`
+#### `--session-save-redis-bot-first-lifetime`
 
 첫 번째 쓰기 시 봇의 세션 수명(초)(비활성화하려면 0을 사용)
 
 - 값 필요
 
-### `--session-save-redis-bot-lifetime`
+#### `--session-save-redis-bot-lifetime`
 
 후속 쓰기 시 봇에 대한 세션 수명(0을 사용하여 비활성화)
 
 - 값 필요
 
-### `--session-save-redis-disable-locking`
+#### `--session-save-redis-disable-locking`
 
 잠금을 사용하지 않도록 설정합니다. 값: false(기본값), true
 
 - 값 필요
 
-### `--session-save-redis-min-lifetime`
+#### `--session-save-redis-min-lifetime`
 
 Redis 최소 세션 수명(초)
 
 - 값 필요
 
-### `--session-save-redis-max-lifetime`
+#### `--session-save-redis-max-lifetime`
 
 Redis 최대 세션 수명(초)
 
 - 값 필요
 
-### `--session-save-redis-sentinel-master`
+#### `--session-save-redis-sentinel-master`
 
 레디스 센티넬 마스터
 
 - 값 필요
 
-### `--session-save-redis-sentinel-servers`
+#### `--session-save-redis-sentinel-servers`
 
 Redis Sentinel 서버, 쉼표로 구분
 
 - 값 필요
 
-### `--session-save-redis-sentinel-verify-master`
+#### `--session-save-redis-sentinel-verify-master`
 
 레디스 센티넬 검증 마스터 값: false(기본값), true
 
 - 값 필요
 
-### `--session-save-redis-sentinel-connect-retries`
+#### `--session-save-redis-sentinel-connect-retries`
 
 Redis Sentinel 연결 다시 시도.
 
 - 값 필요
 
-### `--cache-backend`
+#### `--cache-backend`
 
 기본 캐시 처리기
 
 - 값 필요
 
-### `--cache-backend-redis-server`
+#### `--cache-backend-redis-server`
 
 Redis 서버
 
 - 값 필요
 
-### `--cache-backend-redis-db`
+#### `--cache-backend-redis-db`
 
 캐시에 대한 데이터베이스 번호
 
 - 값 필요
 
-### `--cache-backend-redis-port`
+#### `--cache-backend-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--cache-backend-redis-password`
+#### `--cache-backend-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--cache-backend-redis-compress-data`
+#### `--cache-backend-redis-compress-data`
 
 압축을 비활성화하려면 0으로 설정합니다(기본값은 1, 활성화됨).
 
 - 값 필요
 
-### `--cache-backend-redis-compression-lib`
+#### `--cache-backend-redis-compression-lib`
 
 [snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
-### `--cache-backend-redis-use-lua`
+#### `--cache-backend-redis-use-lua`
 
 lua를 활성화하려면 1로 설정합니다(기본값은 0, 비활성화).
 
 - 값 필요
 
-### `--cache-id-prefix`
+#### `--cache-id-prefix`
 
 캐시 키의 ID 접두사
 
 - 값 필요
 
-### `--allow-parallel-generation`
+#### `--allow-parallel-generation`
 
 비차단 방식으로 캐시 생성 허용
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--page-cache`
+#### `--page-cache`
 
 기본 캐시 처리기
 
 - 값 필요
 
-### `--page-cache-redis-server`
+#### `--page-cache-redis-server`
 
 Redis 서버
 
 - 값 필요
 
-### `--page-cache-redis-db`
+#### `--page-cache-redis-db`
 
 캐시에 대한 데이터베이스 번호
 
 - 값 필요
 
-### `--page-cache-redis-port`
+#### `--page-cache-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--page-cache-redis-password`
+#### `--page-cache-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--page-cache-redis-compress-data`
+#### `--page-cache-redis-compress-data`
 
 전체 페이지 캐시를 압축하려면 1로 설정합니다(비활성화하려면 0을 사용).
 
 - 값 필요
 
-### `--page-cache-redis-compression-lib`
+#### `--page-cache-redis-compression-lib`
 
 [snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
-### `--page-cache-id-prefix`
+#### `--page-cache-id-prefix`
 
 캐시 키의 ID 접두사
 
 - 값 필요
 
-### `--lock-provider`
+#### `--lock-provider`
 
 공급자 이름 잠금
 
 - 값 필요
 
-### `--lock-db-prefix`
+#### `--lock-db-prefix`
 
 잠금 충돌을 방지하기 위한 설치별 잠금 접두사
 
 - 값 필요
 
-### `--lock-zookeeper-host`
+#### `--lock-zookeeper-host`
 
 Zookeeper 클러스터에 연결할 호스트 및 포트입니다. 예: 127.0.0.1:2181
 
 - 값 필요
 
-### `--lock-zookeeper-path`
+#### `--lock-zookeeper-path`
 
 Zookeeper가 잠금을 저장하는 경로입니다. 기본 경로는 /magento/locks입니다.
 
 - 값 필요
 
-### `--lock-file-path`
+#### `--lock-file-path`
 
 파일 잠금이 저장되는 경로입니다.
 
 - 값 필요
 
-### `--document-root-is-pub`
+#### `--document-root-is-pub`
 
 Pub가 루트에 있고, true 또는 false만 표시할 수 있습니다.
 
 - 값 필요
 
-### `--backpressure-logger`
+#### `--backpressure-logger`
 
 배압 로거 처리기
 
 - 값 필요
 
-### `--backpressure-logger-redis-server`
+#### `--backpressure-logger-redis-server`
 
 Redis 서버
 
 - 값 필요
 
-### `--backpressure-logger-redis-port`
+#### `--backpressure-logger-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--backpressure-logger-redis-timeout`
+#### `--backpressure-logger-redis-timeout`
 
 Redis 서버 시간 제한
 
 - 값 필요
 
-### `--backpressure-logger-redis-persistent`
+#### `--backpressure-logger-redis-persistent`
 
 지속적인 레디스
 
 - 값 필요
 
-### `--backpressure-logger-redis-db`
+#### `--backpressure-logger-redis-db`
 
 Redis db 번호
 
 - 값 필요
 
-### `--backpressure-logger-redis-password`
+#### `--backpressure-logger-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--backpressure-logger-redis-user`
+#### `--backpressure-logger-redis-user`
 
 Redis 서버 사용자
 
 - 값 필요
 
-### `--backpressure-logger-id-prefix`
+#### `--backpressure-logger-id-prefix`
 
 키의 ID 접두사
 
 - 값 필요
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-data:upgrade`
@@ -8579,60 +3618,15 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 DB에 데이터 설치 및 업그레이드
 
+### 옵션
 
-### `--magento-init-params`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-declaration:generate-patch`
@@ -8643,81 +3637,38 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 패치를 생성하여 특정 폴더에 넣습니다.
 
+### 인수
 
-
-### `module`
+#### `module`
 
 모듈 이름
 
 - 필수
 
-### `patch`
+
+#### `patch`
 
 패치 이름
 
 - 필수
 
-### `--revertable`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--revertable`
 
 패치를 되돌릴 수 있는지 여부를 확인합니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
 
-### `--type`
+#### `--type`
 
 생성할 패치 유형을 확인하십시오. 사용 가능한 값: `data`, `schema`.
 
 - 기본값: `data`
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-declaration:generate-whitelist`
@@ -8728,61 +3679,16 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 선언 설치 관리자에서 편집할 수 있는 테이블 및 열의 허용 목록 생성
 
+### 옵션
 
-### `--module-name`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--module-name`
 
 허용 목록이 생성될 모듈의 이름
 
 - 기본값: `all`
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-schema:add-slave`
@@ -8793,107 +3699,62 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 체크아웃 견적 관련 테이블을 별도의 DB 서버로 이동
 
+### 옵션
 
-### `--host`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--host`
 
 슬레이브 DB 서버 호스트
 
 - 기본값: `localhost`
 - 값 필요
 
-### `--dbname`
+#### `--dbname`
 
 슬레이브 데이터베이스 이름
 
 - 값 필요
 
-### `--username`
+#### `--username`
 
 슬레이브 DB 사용자 이름
 
 - 기본값: `root`
 - 값 필요
 
-### `--password`
+#### `--password`
 
 슬레이브 DB 사용자 암호
 
 - 값을 허용합니다.
 
-### `--connection`
+#### `--connection`
 
 슬레이브 연결 이름
 
 - 기본값: `default`
 - 값을 허용합니다.
 
-### `--resource`
+#### `--resource`
 
 슬레이브 리소스 이름
 
 - 기본값: `default`
 - 값을 허용합니다.
 
-### `--maxAllowedLag`
+#### `--maxAllowedLag`
 
 최대 허용 지연 슬레이브 연결(초)
 
 - 기본값: &quot;
 - 값을 허용합니다.
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-schema:split-quote`
@@ -8904,98 +3765,53 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 체크아웃 견적 관련 테이블을 별도의 DB 서버로 이동합니다. 2.4.2 이후 더 이상 사용되지 않으며 제거됩니다.
 
+### 옵션
 
-### `--host`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--host`
 
 DB 서버 호스트 체크 아웃
 
 - 값 필요
 
-### `--dbname`
+#### `--dbname`
 
 데이터베이스 이름 체크아웃
 
 - 값 필요
 
-### `--username`
+#### `--username`
 
 DB 사용자 이름 체크아웃
 
 - 값 필요
 
-### `--password`
+#### `--password`
 
 DB 사용자 암호 확인
 
 - 값을 허용합니다.
 
-### `--connection`
+#### `--connection`
 
 연결 이름 체크 아웃
 
 - 기본값: `checkout`
 - 값을 허용합니다.
 
-### `--resource`
+#### `--resource`
 
 체크아웃 리소스 이름
 
 - 기본값: `checkout`
 - 값을 허용합니다.
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-schema:split-sales`
@@ -9006,98 +3822,53 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 영업 관련 테이블을 별도의 DB 서버로 이동합니다. 2.4.2 이후 더 이상 사용되지 않으며 제거됩니다.
 
+### 옵션
 
-### `--host`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--host`
 
 Sales DB Server 호스트
 
 - 값 필요
 
-### `--dbname`
+#### `--dbname`
 
 판매 데이터베이스 이름
 
 - 값 필요
 
-### `--username`
+#### `--username`
 
 영업 DB 사용자 이름
 
 - 값 필요
 
-### `--password`
+#### `--password`
 
 영업 DB 사용자 암호
 
 - 값을 허용합니다.
 
-### `--connection`
+#### `--connection`
 
 판매 연결 이름
 
 - 기본값: `sales`
 - 값을 허용합니다.
 
-### `--resource`
+#### `--resource`
 
 영업 자원 이름
 
 - 기본값: `sales`
 - 값을 허용합니다.
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db-schema:upgrade`
@@ -9108,67 +3879,22 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 DB 스키마 설치 및 업그레이드
 
+### 옵션
 
-### `--convert-old-scripts`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--convert-old-scripts`
 
 이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 형식으로 변환할 수 있습니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:db:status`
@@ -9179,60 +3905,15 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 DB 스키마 또는 데이터에 업그레이드가 필요한지 확인
 
+### 옵션
 
-### `--magento-init-params`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:di:compile`
@@ -9243,54 +3924,9 @@ bin/magento setup:di:compile
 
 자동 생성할 수 있는 DI 구성 및 누락된 모든 클래스를 생성합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `setup:install`
@@ -9301,886 +3937,841 @@ bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enabl
 
 Magento 애플리케이션 설치
 
+### 옵션
 
-### `--enable-debug-logging`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--enable-debug-logging`
 
 디버그 로깅 활성화
 
 - 값 필요
 
-### `--enable-syslog-logging`
+#### `--enable-syslog-logging`
 
 syslog 로깅 활성화
 
 - 값 필요
 
-### `--backend-frontname`
+#### `--backend-frontname`
 
 백엔드 프론트이름(누락된 경우 자동 생성됨)
 
 - 값 필요
 
-### `--remote-storage-driver`
+#### `--remote-storage-driver`
 
 원격 스토리지 드라이버
 
 - 값 필요
 
-### `--remote-storage-prefix`
+#### `--remote-storage-prefix`
 
 원격 저장소 접두사
 
 - 기본값: &quot;
 - 값 필요
 
-### `--remote-storage-endpoint`
+#### `--remote-storage-endpoint`
 
 원격 저장소 끝점
 
 - 값 필요
 
-### `--remote-storage-bucket`
+#### `--remote-storage-bucket`
 
 원격 저장소 버킷
 
 - 값 필요
 
-### `--remote-storage-region`
+#### `--remote-storage-region`
 
 원격 스토리지 영역
 
 - 값 필요
 
-### `--remote-storage-key`
+#### `--remote-storage-key`
 
 원격 저장소 액세스 키
 
 - 기본값: &quot;
 - 값 필요
 
-### `--remote-storage-secret`
+#### `--remote-storage-secret`
 
 원격 저장소 비밀 키
 
 - 기본값: &quot;
 - 값 필요
 
-### `--remote-storage-path-style`
+#### `--remote-storage-path-style`
 
 원격 스토리지 경로 스타일
 
 - 기본값: `0`
 - 값 필요
 
-### `--id_salt`
+#### `--id_salt`
 
 GraphQl Salt
 
 - 값 필요
 
-### `--config-async`
+#### `--config-async`
 
 비동기 관리 구성 저장을 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--checkout-async`
+#### `--checkout-async`
 
 비동기 주문 처리를 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--amqp-host`
+#### `--amqp-host`
 
 Amqp 서버 호스트
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-port`
+#### `--amqp-port`
 
 Amqp 서버 포트
 
 - 기본값: `5672`
 - 값 필요
 
-### `--amqp-user`
+#### `--amqp-user`
 
 Amqp 서버 사용자 이름
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-password`
+#### `--amqp-password`
 
 Amqp 서버 암호
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-virtualhost`
+#### `--amqp-virtualhost`
 
 Amqp virtualhost
 
 - 기본값: `/`
 - 값 필요
 
-### `--amqp-ssl`
+#### `--amqp-ssl`
 
 Amqp SSL
 
 - 기본값: &quot;
 - 값 필요
 
-### `--amqp-ssl-options`
+#### `--amqp-ssl-options`
 
 Amqp SSL 옵션(JSON)
 
 - 기본값: &quot;
 - 값 필요
 
-### `--consumers-wait-for-messages`
+#### `--consumers-wait-for-messages`
 
 소비자는 대기열에서 메시지를 기다려야 합니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--queue-default-connection`
+#### `--queue-default-connection`
 
 메시지 큐 기본 연결. &#39;db&#39;, &#39;amqp&#39; 또는 사용자 지정 대기열 시스템일 수 있습니다. 대기열 시스템을 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
 
 - 값 필요
 
-### `--deferred-total-calculating`
+#### `--deferred-total-calculating`
 
 지연된 합계 계산을 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
-### `--key`
+#### `--key`
 
 암호화 키
 
 - 값 필요
 
-### `--db-host`
+#### `--db-host`
 
 데이터베이스 서버 호스트
 
 - 값 필요
 
-### `--db-name`
+#### `--db-name`
 
 데이터베이스 이름
 
 - 값 필요
 
-### `--db-user`
+#### `--db-user`
 
 데이터베이스 서버 사용자 이름
 
 - 값 필요
 
-### `--db-engine`
+#### `--db-engine`
 
 데이터베이스 서버 엔진
 
 - 값 필요
 
-### `--db-password`
+#### `--db-password`
 
 데이터베이스 서버 암호
 
 - 값 필요
 
-### `--db-prefix`
+#### `--db-prefix`
 
 데이터베이스 테이블 접두사
 
 - 값 필요
 
-### `--db-model`
+#### `--db-model`
 
 데이터베이스 유형
 
 - 값 필요
 
-### `--db-init-statements`
+#### `--db-init-statements`
 
 데이터베이스 초기 명령 집합
 
 - 값 필요
 
-### `--skip-db-validation`, `-s`
+#### `--skip-db-validation`, `-s`
 
 지정하면 DB 연결 유효성 검사를 건너뜁니다
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--http-cache-hosts`
+#### `--http-cache-hosts`
 
 http 캐시 호스트
 
 - 값 필요
 
-### `--db-ssl-key`
+#### `--db-ssl-key`
 
 SSL을 통해 DB 연결을 설정하기 위한 클라이언트 키 파일의 전체 경로
 
 - 기본값: &quot;
 - 값 필요
 
-### `--db-ssl-cert`
+#### `--db-ssl-cert`
 
 SSL을 통해 DB 연결을 설정하기 위한 클라이언트 인증서 파일의 전체 경로
 
 - 기본값: &quot;
 - 값 필요
 
-### `--db-ssl-ca`
+#### `--db-ssl-ca`
 
 SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체 경로
 
 - 기본값: &quot;
 - 값 필요
 
-### `--db-ssl-verify`
+#### `--db-ssl-verify`
 
 서버 인증 확인
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--session-save`
+#### `--session-save`
 
 세션 저장 핸들러
 
 - 값 필요
 
-### `--session-save-redis-host`
+#### `--session-save-redis-host`
 
 UNIX 소켓을 사용하는 경우 정규화된 호스트 이름, IP 주소 또는 절대 경로
 
 - 값 필요
 
-### `--session-save-redis-port`
+#### `--session-save-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--session-save-redis-password`
+#### `--session-save-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--session-save-redis-timeout`
+#### `--session-save-redis-timeout`
 
 연결 시간 제한(초)
 
 - 값 필요
 
-### `--session-save-redis-persistent-id`
+#### `--session-save-redis-persistent-id`
 
 영구 연결을 활성화하는 고유 문자열
 
 - 값 필요
 
-### `--session-save-redis-db`
+#### `--session-save-redis-db`
 
 Redis 데이터베이스 번호
 
 - 값 필요
 
-### `--session-save-redis-compression-threshold`
+#### `--session-save-redis-compression-threshold`
 
 Redis 압축 임계값
 
 - 값 필요
 
-### `--session-save-redis-compression-lib`
+#### `--session-save-redis-compression-lib`
 
 Redis 압축 라이브러리입니다. 값: gzip (기본값), lzf, lz4, snappy
 
 - 값 필요
 
-### `--session-save-redis-log-level`
+#### `--session-save-redis-log-level`
 
 Redis 로그 수준. 값: 0(최소 세부 정보) ~ 7(최대 세부 정보)
 
 - 값 필요
 
-### `--session-save-redis-max-concurrency`
+#### `--session-save-redis-max-concurrency`
 
 한 세션에 대한 잠금을 기다릴 수 있는 최대 프로세스 수
 
 - 값 필요
 
-### `--session-save-redis-break-after-frontend`
+#### `--session-save-redis-break-after-frontend`
 
 프론트엔드 세션에 대한 잠금을 해제하기 전에 대기할 시간(초)
 
 - 값 필요
 
-### `--session-save-redis-break-after-adminhtml`
+#### `--session-save-redis-break-after-adminhtml`
 
 관리 세션에 대한 잠금을 해제하기 전에 대기할 시간(초)
 
 - 값 필요
 
-### `--session-save-redis-first-lifetime`
+#### `--session-save-redis-first-lifetime`
 
 첫 번째 쓰기 시 보트가 아닌 세션의 라이프타임(초)(비활성화하려면 0을 사용)
 
 - 값 필요
 
-### `--session-save-redis-bot-first-lifetime`
+#### `--session-save-redis-bot-first-lifetime`
 
 첫 번째 쓰기 시 봇의 세션 수명(초)(비활성화하려면 0을 사용)
 
 - 값 필요
 
-### `--session-save-redis-bot-lifetime`
+#### `--session-save-redis-bot-lifetime`
 
 후속 쓰기 시 봇에 대한 세션 수명(0을 사용하여 비활성화)
 
 - 값 필요
 
-### `--session-save-redis-disable-locking`
+#### `--session-save-redis-disable-locking`
 
 잠금을 사용하지 않도록 설정합니다. 값: false(기본값), true
 
 - 값 필요
 
-### `--session-save-redis-min-lifetime`
+#### `--session-save-redis-min-lifetime`
 
 Redis 최소 세션 수명(초)
 
 - 값 필요
 
-### `--session-save-redis-max-lifetime`
+#### `--session-save-redis-max-lifetime`
 
 Redis 최대 세션 수명(초)
 
 - 값 필요
 
-### `--session-save-redis-sentinel-master`
+#### `--session-save-redis-sentinel-master`
 
 레디스 센티넬 마스터
 
 - 값 필요
 
-### `--session-save-redis-sentinel-servers`
+#### `--session-save-redis-sentinel-servers`
 
 Redis Sentinel 서버, 쉼표로 구분
 
 - 값 필요
 
-### `--session-save-redis-sentinel-verify-master`
+#### `--session-save-redis-sentinel-verify-master`
 
 레디스 센티넬 검증 마스터 값: false(기본값), true
 
 - 값 필요
 
-### `--session-save-redis-sentinel-connect-retries`
+#### `--session-save-redis-sentinel-connect-retries`
 
 Redis Sentinel 연결 다시 시도.
 
 - 값 필요
 
-### `--cache-backend`
+#### `--cache-backend`
 
 기본 캐시 처리기
 
 - 값 필요
 
-### `--cache-backend-redis-server`
+#### `--cache-backend-redis-server`
 
 Redis 서버
 
 - 값 필요
 
-### `--cache-backend-redis-db`
+#### `--cache-backend-redis-db`
 
 캐시에 대한 데이터베이스 번호
 
 - 값 필요
 
-### `--cache-backend-redis-port`
+#### `--cache-backend-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--cache-backend-redis-password`
+#### `--cache-backend-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--cache-backend-redis-compress-data`
+#### `--cache-backend-redis-compress-data`
 
 압축을 비활성화하려면 0으로 설정합니다(기본값은 1, 활성화됨).
 
 - 값 필요
 
-### `--cache-backend-redis-compression-lib`
+#### `--cache-backend-redis-compression-lib`
 
 [snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
-### `--cache-backend-redis-use-lua`
+#### `--cache-backend-redis-use-lua`
 
 lua를 활성화하려면 1로 설정합니다(기본값은 0, 비활성화).
 
 - 값 필요
 
-### `--cache-id-prefix`
+#### `--cache-id-prefix`
 
 캐시 키의 ID 접두사
 
 - 값 필요
 
-### `--allow-parallel-generation`
+#### `--allow-parallel-generation`
 
 비차단 방식으로 캐시 생성 허용
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--page-cache`
+#### `--page-cache`
 
 기본 캐시 처리기
 
 - 값 필요
 
-### `--page-cache-redis-server`
+#### `--page-cache-redis-server`
 
 Redis 서버
 
 - 값 필요
 
-### `--page-cache-redis-db`
+#### `--page-cache-redis-db`
 
 캐시에 대한 데이터베이스 번호
 
 - 값 필요
 
-### `--page-cache-redis-port`
+#### `--page-cache-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--page-cache-redis-password`
+#### `--page-cache-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--page-cache-redis-compress-data`
+#### `--page-cache-redis-compress-data`
 
 전체 페이지 캐시를 압축하려면 1로 설정합니다(비활성화하려면 0을 사용).
 
 - 값 필요
 
-### `--page-cache-redis-compression-lib`
+#### `--page-cache-redis-compression-lib`
 
 [snappy,lzf,l4z,zstd,gzip]을(를) 사용하기 위한 압축 라이브러리(자동으로 결정하려면 비워 둠)
 
 - 값 필요
 
-### `--page-cache-id-prefix`
+#### `--page-cache-id-prefix`
 
 캐시 키의 ID 접두사
 
 - 값 필요
 
-### `--lock-provider`
+#### `--lock-provider`
 
 공급자 이름 잠금
 
 - 값 필요
 
-### `--lock-db-prefix`
+#### `--lock-db-prefix`
 
 잠금 충돌을 방지하기 위한 설치별 잠금 접두사
 
 - 값 필요
 
-### `--lock-zookeeper-host`
+#### `--lock-zookeeper-host`
 
 Zookeeper 클러스터에 연결할 호스트 및 포트입니다. 예: 127.0.0.1:2181
 
 - 값 필요
 
-### `--lock-zookeeper-path`
+#### `--lock-zookeeper-path`
 
 Zookeeper가 잠금을 저장하는 경로입니다. 기본 경로는 /magento/locks입니다.
 
 - 값 필요
 
-### `--lock-file-path`
+#### `--lock-file-path`
 
 파일 잠금이 저장되는 경로입니다.
 
 - 값 필요
 
-### `--document-root-is-pub`
+#### `--document-root-is-pub`
 
 Pub가 루트에 있고, true 또는 false만 표시할 수 있습니다.
 
 - 값 필요
 
-### `--backpressure-logger`
+#### `--backpressure-logger`
 
 배압 로거 처리기
 
 - 값 필요
 
-### `--backpressure-logger-redis-server`
+#### `--backpressure-logger-redis-server`
 
 Redis 서버
 
 - 값 필요
 
-### `--backpressure-logger-redis-port`
+#### `--backpressure-logger-redis-port`
 
 Redis 서버 수신 포트
 
 - 값 필요
 
-### `--backpressure-logger-redis-timeout`
+#### `--backpressure-logger-redis-timeout`
 
 Redis 서버 시간 제한
 
 - 값 필요
 
-### `--backpressure-logger-redis-persistent`
+#### `--backpressure-logger-redis-persistent`
 
 지속적인 레디스
 
 - 값 필요
 
-### `--backpressure-logger-redis-db`
+#### `--backpressure-logger-redis-db`
 
 Redis db 번호
 
 - 값 필요
 
-### `--backpressure-logger-redis-password`
+#### `--backpressure-logger-redis-password`
 
 Redis 서버 암호
 
 - 값 필요
 
-### `--backpressure-logger-redis-user`
+#### `--backpressure-logger-redis-user`
 
 Redis 서버 사용자
 
 - 값 필요
 
-### `--backpressure-logger-id-prefix`
+#### `--backpressure-logger-id-prefix`
 
 키의 ID 접두사
 
 - 값 필요
 
-### `--base-url`
+#### `--base-url`
 
 스토어를 사용할 수 있어야 하는 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/unsecure/base_url과 함께 사용
 
 - 값 필요
 
-### `--language`
+#### `--language`
 
 기본 언어 코드. 사용되지 않음, config:set을 path general/locale/code와 함께 사용합니다.
 
 - 값 필요
 
-### `--timezone`
+#### `--timezone`
 
 기본 시간대 코드. 사용하지 않음, config:set을 경로 일반/로케일/시간대로 사용
 
 - 값 필요
 
-### `--currency`
+#### `--currency`
 
 기본 통화 코드. 더 이상 사용되지 않음, 경로 통화/옵션/기본, 통화/옵션/기본 및 통화/옵션/허용과 함께 config:set 사용
 
 - 값 필요
 
-### `--use-rewrites`
+#### `--use-rewrites`
 
 재작성을 사용합니다. 지원 중단됨, config:set를 경로 web/seo/use_rewrites와 함께 사용
 
 - 값 필요
 
-### `--use-secure`
+#### `--use-secure`
 
 보안 URL을 사용합니다. SSL을 사용할 수 있는 경우에만 이 옵션을 활성화합니다. 지원 중단됨, config:set를 path web/secure/use_in_frontend와 함께 사용
 
 - 값 필요
 
-### `--base-url-secure`
+#### `--base-url-secure`
 
 SSL 연결을 위한 기본 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/secure/base_url과 함께 사용
 
 - 값 필요
 
-### `--use-secure-admin`
+#### `--use-secure-admin`
 
 SSL을 사용하여 관리 인터페이스를 실행합니다. 지원 중단됨, config:set를 경로 web/secure/use_in_adminhtml과 함께 사용
 
 - 값 필요
 
-### `--admin-use-security-key`
+#### `--admin-use-security-key`
 
 Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할지 여부입니다. 사용되지 않음, config:set을 경로 admin/security/use_form_key와 함께 사용
 
 - 값 필요
 
-### `--admin-user`
+#### `--admin-user`
 
 관리 사용자
 
 - 값을 허용합니다.
 
-### `--admin-password`
+#### `--admin-password`
 
 관리자 암호
 
 - 값을 허용합니다.
 
-### `--admin-email`
+#### `--admin-email`
 
 책임자 전자 메일
 
 - 값을 허용합니다.
 
-### `--admin-firstname`
+#### `--admin-firstname`
 
 관리자 이름
 
 - 값을 허용합니다.
 
-### `--admin-lastname`
+#### `--admin-lastname`
 
 관리자 성
 
 - 값을 허용합니다.
 
-### `--search-engine`
+#### `--search-engine`
 
 검색 엔진. 값: elasticsearch7, elasticsearch8, opensearch
 
 - 값 필요
 
-### `--elasticsearch-host`
+#### `--elasticsearch-host`
 
 Elasticsearch 서버 호스트입니다.
 
 - 값 필요
 
-### `--elasticsearch-port`
+#### `--elasticsearch-port`
 
 Elasticsearch 서버 포트입니다.
 
 - 값 필요
 
-### `--elasticsearch-enable-auth`
+#### `--elasticsearch-enable-auth`
 
 인증을 활성화하려면 1로 설정합니다. (기본값은 0, 비활성화됨)
 
 - 값 필요
 
-### `--elasticsearch-username`
+#### `--elasticsearch-username`
 
 Elasticsearch 사용자 이름입니다. HTTP 인증이 활성화된 경우에만 적용 가능
 
 - 값 필요
 
-### `--elasticsearch-password`
+#### `--elasticsearch-password`
 
 Elasticsearch 암호입니다. HTTP 인증이 활성화된 경우에만 적용 가능
 
 - 값 필요
 
-### `--elasticsearch-index-prefix`
+#### `--elasticsearch-index-prefix`
 
 Elasticsearch 인덱스 접두사입니다.
 
 - 값 필요
 
-### `--elasticsearch-timeout`
+#### `--elasticsearch-timeout`
 
 Elasticsearch 서버 시간 제한.
 
 - 값 필요
 
-### `--opensearch-host`
+#### `--opensearch-host`
 
 OpenSearch 서버 호스트입니다.
 
 - 값 필요
 
-### `--opensearch-port`
+#### `--opensearch-port`
 
 OpenSearch 서버 포트입니다.
 
 - 값 필요
 
-### `--opensearch-enable-auth`
+#### `--opensearch-enable-auth`
 
 인증을 활성화하려면 1로 설정합니다. (기본값은 0, 비활성화됨)
 
 - 값 필요
 
-### `--opensearch-username`
+#### `--opensearch-username`
 
 OpenSearch 사용자 이름입니다. HTTP 인증이 활성화된 경우에만 적용 가능
 
 - 값 필요
 
-### `--opensearch-password`
+#### `--opensearch-password`
 
 암호 열기. HTTP 인증이 활성화된 경우에만 적용 가능
 
 - 값 필요
 
-### `--opensearch-index-prefix`
+#### `--opensearch-index-prefix`
 
 OpenSearch 색인 접두사입니다.
 
 - 값 필요
 
-### `--opensearch-timeout`
+#### `--opensearch-timeout`
 
 OpenSearch 서버 시간 초과.
 
 - 값 필요
 
-### `--cleanup-database`
+#### `--cleanup-database`
 
 설치하기 전에 데이터베이스 정리
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--sales-order-increment-prefix`
+#### `--sales-order-increment-prefix`
 
 판매 주문 번호 접두사
 
 - 값 필요
 
-### `--use-sample-data`
+#### `--use-sample-data`
 
 샘플 데이터 사용
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--enable-modules`
+#### `--enable-modules`
 
 쉼표로 구분된 모듈 이름 목록입니다. 설치하는 동안 포함해야 합니다. 사용 가능한 매직 매개 변수 &quot;all&quot;.
 
 - 값을 허용합니다.
 
-### `--disable-modules`
+#### `--disable-modules`
 
 쉼표로 구분된 모듈 이름 목록입니다. 설치하는 동안 피해야 합니다. 사용 가능한 매직 매개 변수 &quot;all&quot;.
 
 - 값을 허용합니다.
 
-### `--convert-old-scripts`
+#### `--convert-old-scripts`
 
 이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 형식으로 변환할 수 있습니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
 
-### `--interactive`, `-i`
+#### `--interactive`, `-i`
 
 대화형 Magento 설치
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--safe-mode`
+#### `--safe-mode`
 
 열 제거와 같은 파괴적인 작업에서 덤프와 함께 Magento의 안전한 설치
 
 - 값을 허용합니다.
 
-### `--data-restore`
+#### `--data-restore`
 
 덤프에서 제거된 데이터 복원
 
 - 값을 허용합니다.
 
-### `--dry-run`
+#### `--dry-run`
 
 Magento 설치는 시험 실행 모드에서 실행됩니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:performance:generate-fixtures`
@@ -10191,65 +4782,21 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 고정장치 생성
 
+### 인수
 
-
-### `profile`
+#### `profile`
 
 프로필 구성 파일 경로
 
 - 필수
 
-### `--skip-reindex`, `-s`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--skip-reindex`, `-s`
 
 색인 재지정 건너뛰기
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -10263,78 +4810,33 @@ bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FIL
 
 Magento 응용 프로그램 코드베이스, 미디어 및 데이터베이스를 롤백합니다
 
+### 옵션
 
-### `--code-file`, `-c`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--code-file`, `-c`
 
 var/backups의 코드 백업 파일 기본 이름
 
 - 값 필요
 
-### `--media-file`, `-m`
+#### `--media-file`, `-m`
 
 var/backups의 미디어 백업 파일 기본 이름
 
 - 값 필요
 
-### `--db-file`, `-d`
+#### `--db-file`, `-d`
 
 Var/backups의 DB 백업 파일 기본 이름
 
 - 값 필요
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:static-content:deploy`
@@ -10345,220 +4847,175 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 정적 보기 파일 배포
 
+### 인수
 
-
-### `languages`
+#### `languages`
 
 정적 보기 파일을 출력할 ISO-639 언어 코드의 공백으로 구분된 목록입니다.
 
 - 기본값: `[]`
-
 - 배열
 
-### `--force`, `-f`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--force`, `-f`
 
 모든 모드에서 파일을 배포합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--strategy`, `-s`
+#### `--strategy`, `-s`
 
 지정된 전략을 사용하여 파일을 배포합니다.
 
 - 기본값: `quick`
 - 값을 허용합니다.
 
-### `--area`, `-a`
+#### `--area`, `-a`
 
 지정된 영역에 대해서만 파일을 생성합니다.
 
 - 기본값: `all`
 - 여러 값을 허용합니다.
 
-### `--exclude-area`
+#### `--exclude-area`
 
 지정된 영역에 대한 파일을 생성하지 마십시오.
 
 - 기본값: `none`
 - 여러 값을 허용합니다.
 
-### `--theme`, `-t`
+#### `--theme`, `-t`
 
 지정된 테마에만 정적 보기 파일을 생성합니다.
 
 - 기본값: `all`
 - 여러 값을 허용합니다.
 
-### `--exclude-theme`
+#### `--exclude-theme`
 
 지정된 테마에 대한 파일을 생성하지 마십시오.
 
 - 기본값: `none`
 - 여러 값을 허용합니다.
 
-### `--language`, `-l`
+#### `--language`, `-l`
 
 지정된 언어에 대한 파일만 생성합니다.
 
 - 기본값: `all`
 - 여러 값을 허용합니다.
 
-### `--exclude-language`
+#### `--exclude-language`
 
 지정된 언어에 대한 파일을 생성하지 마십시오.
 
 - 기본값: `none`
 - 여러 값을 허용합니다.
 
-### `--jobs`, `-j`
+#### `--jobs`, `-j`
 
 지정된 작업 수를 사용하여 병렬 처리를 활성화합니다.
 
 - 기본값: `0`
 - 값을 허용합니다.
 
-### `--max-execution-time`
+#### `--max-execution-time`
 
 배포 정적 프로세스의 최대 예상 실행 시간(초)입니다.
 
 - 기본값: `900`
 - 값을 허용합니다.
 
-### `--symlink-locale`
+#### `--symlink-locale`
 
 배포를 위해 전달되지만 사용자 지정이 없는 해당 로케일의 파일에 대한 심볼릭 링크를 만듭니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--content-version`
+#### `--content-version`
 
 정적 콘텐츠의 사용자 지정 버전은 정적 콘텐츠 버전이 동일하고 캐싱이 제대로 작동하도록 여러 노드에서 배포를 실행하는 경우 사용할 수 있습니다.
 
 - 값 필요
 
-### `--refresh-content-version-only`
+#### `--refresh-content-version-only`
 
 정적 콘텐츠 버전을 새로 고치는 것은 브라우저 캐시 및 CDN 캐시의 정적 콘텐츠를 새로 고치는 데만 사용할 수 있습니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-javascript`
+#### `--no-javascript`
 
 JavaScript 파일을 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-js-bundle`
+#### `--no-js-bundle`
 
 JavaScript 번들 파일을 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-css`
+#### `--no-css`
 
 CSS 파일을 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-less`
+#### `--no-less`
 
 더 적은 수의 파일을 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-images`
+#### `--no-images`
 
 이미지를 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-fonts`
+#### `--no-fonts`
 
 글꼴 파일을 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-html`
+#### `--no-html`
 
 HTML 파일을 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-misc`
+#### `--no-misc`
 
 다른 형식(.md, .jbf, .csv 등)의 파일은 배포하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-html-minify`
+#### `--no-html-minify`
 
 HTML 파일을 축소하지 마십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--no-parent`
+#### `--no-parent`
 
 상위 테마를 컴파일하지 마십시오. 빠른 및 표준 전략에서만 지원됩니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -10572,114 +5029,69 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 저장소 구성을 설치합니다. 2.2.0 이후 더 이상 사용되지 않습니다. 대신 config:set 사용
 
+### 옵션
 
-### `--base-url`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--base-url`
 
 스토어를 사용할 수 있어야 하는 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/unsecure/base_url과 함께 사용
 
 - 값 필요
 
-### `--language`
+#### `--language`
 
 기본 언어 코드. 사용되지 않음, config:set을 path general/locale/code와 함께 사용합니다.
 
 - 값 필요
 
-### `--timezone`
+#### `--timezone`
 
 기본 시간대 코드. 사용하지 않음, config:set을 경로 일반/로케일/시간대로 사용
 
 - 값 필요
 
-### `--currency`
+#### `--currency`
 
 기본 통화 코드. 더 이상 사용되지 않음, 경로 통화/옵션/기본, 통화/옵션/기본 및 통화/옵션/허용과 함께 config:set 사용
 
 - 값 필요
 
-### `--use-rewrites`
+#### `--use-rewrites`
 
 재작성을 사용합니다. 지원 중단됨, config:set를 경로 web/seo/use_rewrites와 함께 사용
 
 - 값 필요
 
-### `--use-secure`
+#### `--use-secure`
 
 보안 URL을 사용합니다. SSL을 사용할 수 있는 경우에만 이 옵션을 활성화합니다. 지원 중단됨, config:set를 path web/secure/use_in_frontend와 함께 사용
 
 - 값 필요
 
-### `--base-url-secure`
+#### `--base-url-secure`
 
 SSL 연결을 위한 기본 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/secure/base_url과 함께 사용
 
 - 값 필요
 
-### `--use-secure-admin`
+#### `--use-secure-admin`
 
 SSL을 사용하여 관리 인터페이스를 실행합니다. 지원 중단됨, config:set를 경로 web/secure/use_in_adminhtml과 함께 사용
 
 - 값 필요
 
-### `--admin-use-security-key`
+#### `--admin-use-security-key`
 
 Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할지 여부입니다. 사용되지 않음, config:set을 경로 admin/security/use_form_key와 함께 사용
 
 - 값 필요
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:uninstall`
@@ -10690,60 +5102,15 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Magento 애플리케이션 제거
 
+### 옵션
 
-### `--magento-init-params`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `setup:upgrade`
@@ -10754,93 +5121,48 @@ bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD
 
 Magento 애플리케이션, DB 데이터 및 스키마 업그레이드
 
+### 옵션
 
-### `--keep-generated`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--keep-generated`
 
 생성된 파일이 삭제되지 않도록 합니다. 프로덕션에 배포할 때를 제외하고 이 옵션을 사용하지 않습니다. 자세한 내용은 시스템 통합자 또는 관리자에게 문의하십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--convert-old-scripts`
+#### `--convert-old-scripts`
 
 이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 형식으로 변환할 수 있습니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
 
-### `--safe-mode`
+#### `--safe-mode`
 
 열 제거와 같은 파괴적인 작업에서 덤프와 함께 Magento의 안전한 설치
 
 - 값을 허용합니다.
 
-### `--data-restore`
+#### `--data-restore`
 
 덤프에서 제거된 데이터 복원
 
 - 값을 허용합니다.
 
-### `--dry-run`
+#### `--dry-run`
 
 Magento 설치는 시험 실행 모드에서 실행됩니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `store:list`
@@ -10851,54 +5173,9 @@ bin/magento store:list
 
 저장소 목록을 표시합니다.
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `store:website:list`
@@ -10909,54 +5186,9 @@ bin/magento store:website:list
 
 웹 사이트 목록 표시
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `support:backup:code`
@@ -10967,70 +5199,25 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 코드 백업 만들기
 
+### 옵션
 
-### `--name`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--name`
 
 덤프 이름
 
 - 값을 허용합니다.
 
-### `--output`, `-o`
+#### `--output`, `-o`
 
 출력 경로
 
 - 값을 허용합니다.
 
-### `--logs`, `-l`
+#### `--logs`, `-l`
 
 로그 포함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -11044,77 +5231,32 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 
 DB 백업 만들기
 
+### 옵션
 
-### `--name`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--name`
 
 덤프 이름
 
 - 값을 허용합니다.
 
-### `--output`, `-o`
+#### `--output`, `-o`
 
 출력 경로
 
 - 값을 허용합니다.
 
-### `--logs`, `-l`
+#### `--logs`, `-l`
 
 로그 포함
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--ignore-sanitize`, `-i`
+#### `--ignore-sanitize`, `-i`
 
 기밀 정보 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -11128,58 +5270,13 @@ bin/magento support:utility:check [--hide-paths]
 
 필요한 백업 유틸리티 확인
 
+### 옵션
 
-### `--hide-paths`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--hide-paths`
 
 필요한 콘솔 유틸리티만 확인
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -11193,58 +5290,13 @@ bin/magento support:utility:paths [-f|--force]
 
 유틸리티 경로 목록 만들기
 
+### 옵션
 
-### `--force`, `-f`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--force`, `-f`
 
 강제
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -11258,75 +5310,31 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 테마 제거
 
+### 인수
 
-
-### `theme`
+#### `theme`
 
 테마의 경로. 테마 경로는 영역/공급업체/이름인 전체 경로로 지정해야 합니다. 예: frontend/Magento/blank
 
 - 기본값: `[]`
-
 - 필수
+
 - 배열
 
-### `--backup-code`
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--backup-code`
 
 코드 백업 수행(임시 파일 제외)
 
 - 기본값: `false`
 - 값을 수락하지 않음
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 생성된 정적 보기 파일을 지웁니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -11340,101 +5348,56 @@ bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BAC
 
 Varnish VCL을 생성하여 명령줄에 반향
 
+### 옵션
 
-### `--access-list`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--access-list`
 
 바니시를 제거할 수 있는 IP 액세스 목록
 
 - 기본값: `localhost`
 - 값 필요
 
-### `--backend-host`
+#### `--backend-host`
 
 웹 백엔드의 호스트
 
 - 기본값: `localhost`
 - 값 필요
 
-### `--backend-port`
+#### `--backend-port`
 
 웹 백엔드의 포트
 
 - 기본값: `8080`
 - 값 필요
 
-### `--export-version`
+#### `--export-version`
 
 Varnish 파일의 버전
 
 - 기본값: `6`
 - 값 필요
 
-### `--grace-period`
+#### `--grace-period`
 
 유예 기간(초)
 
 - 기본값: `300`
 - 값 필요
 
-### `--input-file`
+#### `--input-file`
 
 VCL을 생성할 입력 파일
 
 - 값 필요
 
-### `--output-file`
+#### `--output-file`
 
 vcl을 쓸 파일의 경로
 
 - 값 필요
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `webhooks:dev:run`
@@ -11445,67 +5408,24 @@ bin/magento webhooks:dev:run <name> <payload>
 
 개발을 위해 등록된 웹후크를 실행합니다.
 
+### 인수
 
-
-### `name`
+#### `name`
 
 Webhook 이름
 
 - 필수
 
-### `payload`
+
+#### `payload`
 
 JSON 형식의 웹후크 페이로드
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `webhooks:generate:module`
@@ -11516,54 +5436,9 @@ bin/magento webhooks:generate:module
 
 Webhook 등록을 기반으로 플러그인 생성
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `webhooks:info`
@@ -11574,75 +5449,31 @@ bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 
 지정된 웹후크의 페이로드를 반환합니다.
 
+### 인수
 
-
-### `webhook-name`
+#### `webhook-name`
 
 Webhook 메서드 이름
 
 - 필수
 
-### `webhook-type`
+
+#### `webhook-type`
 
 Webhook 유형(전, 후)
 
 - 기본값: `before`
 
+### 옵션
 
-### `--depth`
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--depth`
 
 반환할 웹후크 페이로드의 레벨 수
 
 - 기본값: `3`
 - 값을 허용합니다.
-
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
 
 
 ## `webhooks:list`
@@ -11653,54 +5484,9 @@ bin/magento webhooks:list
 
 구독한 웹 후크 목록 표시
 
+### 옵션
 
-### `--help`, `-h`
-
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `webhooks:list:all`
@@ -11711,58 +5497,14 @@ bin/magento webhooks:list:all <module_name>
 
 지정된 모듈에 대해 지원되는 Webhook 메서드 이름 목록을 반환합니다.
 
+### 인수
 
-
-### `module_name`
+#### `module_name`
 
 모듈 이름
 
 - 필수
 
-### `--help`, `-h`
+### 옵션
 
-해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--quiet`, `-q`
-
-메시지 출력 안 함
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--verbose`, `-v|-vv|-vvv`
-
-메시지의 자세한 정도를 증가시킵니다. 일반 출력의 경우 1, 자세한 출력의 경우 2, 디버그의 경우 3
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--version`, `-V`
-
-이 응용 프로그램 버전 표시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--ansi`
-
-ANSI 출력 강제(또는 비활성화 —no-ansi)
-
-- 값을 수락하지 않음
-
-### `--no-ansi`
-
-&quot;—ansi&quot; 옵션 무시
-
-- 기본값: `false`
-- 값을 수락하지 않음
-
-### `--no-interaction`, `-n`
-
-대화식 질문하지 않음
-
-- 기본값: `false`
-- 값을 수락하지 않음
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
