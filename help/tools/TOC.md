@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: d53bc380e3bb0a2e6e510f8e73f327c035088aab
+source-git-commit: b8c0788fa99ff4e4965a12fd8c6177b919ace083
 workflow-type: tm+mt
-source-wordcount: '5959'
+source-wordcount: '5963'
 ht-degree: 0%
 
 ---
@@ -635,6 +635,8 @@ ht-degree: 0%
          - [ACSD-60590: 집계된 베스트셀러 일일 보고서 생성 성능 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: [!UICONTROL Media Gallery]에서 항목 정렬](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865: [!UICONTROL Cart Price Rule]이(가) 수량 부족으로 인해 이전 규칙을 취소하지 못했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+      - v1.1.53 {#v1-1-53}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 명령줄 도구 참조 {#cli-reference}
