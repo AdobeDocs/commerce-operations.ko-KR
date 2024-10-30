@@ -2,7 +2,7 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 3efc57161e30a17dae50a52060a78698997649f0
+source-git-commit: fec2ee4a047d8b33fa1cb3b2c4d9364f925fa028
 workflow-type: tm+mt
 source-wordcount: '6061'
 ht-degree: 0%
@@ -632,7 +632,7 @@ ht-degree: 0%
          - [ACSD-60816: [!DNL New Relic] APM 에이전트가 삽입한 브라우저 모니터링 스크립트가 CSP와 호환되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967: JavaScript 오류로 인해  [!DNL Google Maps] 이(가) 올바르게 렌더링되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326: 고객 [!UICONTROL Returns] 상태의 GraphQL 쿼리에서 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
-         - [ACSD-59786: GraphQL이 만료된 견적에 대한 견적 ID를 가져올 때 오류를 반환합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
+         - [ACSD-59786: GraphQL이 만료된 견적에 대한 견적 ID를 가져올 때 오류를 반환합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote.md)
       - v1.1.52 {#v1-1-52}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366: bin/magento setup:static-content:deploy —jobs 4 명령이 오류로 실패합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
