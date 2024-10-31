@@ -1,5 +1,5 @@
 ---
-source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
+source-git-commit: 31de6be4eb57fa396801c9ce4f3ed65d77026190
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 
 <!-- The template to render with above values -->
-**버전**: 3.0.19
+**버전**: 3.0.20
 
 이 참조에는 `bin/uct` 명령줄 도구를 통해 사용할 수 있는 9개의 명령이 포함되어 있습니다.
 Adobe Commerce에서 `bin/uct list` 명령을 사용하여 초기 목록이 자동으로 생성됩니다.
