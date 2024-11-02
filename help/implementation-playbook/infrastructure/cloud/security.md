@@ -3,7 +3,7 @@ title: 클라우드 인프라 보안
 description: Adobe이 클라우드 인프라에서 Adobe Commerce을 안전하게 유지하는 방법에 대해 알아봅니다.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -27,15 +27,15 @@ _Cloud Guide_&#x200B;에서 [Fastly 서비스 개요](https://experienceleague.a
 
 ## 웹 애플리케이션 방화벽
 
-Fastly Web Application Firewall(WAF) 은 추가적인 보호를 제공하는 데 사용됩니다. Fastly의 클라우드 기반 WAF는 OWASP 핵심 규칙 세트와 같은 상용 및 오픈 소스 소스의 타사 규칙을 사용합니다. 또한 Adobe Commerce 관련 규칙이 사용됩니다. 주입 공격과 악의적인 입력, 교차 사이트 스크립팅, 데이터 내보내기, HTTP 프로토콜 위반 및 기타 OWASP 상위 10가지 위협을 포함한 주요 애플리케이션 계층 공격으로부터 고객을 보호합니다.
+Fastly Web Application Firewall(WAF)은 추가 보호를 제공하는 데 사용됩니다. Fastly의 클라우드 기반 WAF은 OWASP 핵심 규칙 세트와 같은 상업용 및 오픈 소스 소스의 타사 규칙을 사용합니다. 또한 Adobe Commerce 관련 규칙이 사용됩니다. 주입 공격과 악의적인 입력, 교차 사이트 스크립팅, 데이터 내보내기, HTTP 프로토콜 위반 및 기타 OWASP 상위 10가지 위협을 포함한 주요 애플리케이션 계층 공격으로부터 고객을 보호합니다.
 
-Adobe Commerce에서 소프트웨어 패치 전에 Managed Services에서 보안 문제를 &quot;가상으로 패치&quot;할 수 있는 새로운 취약점을 감지해야 하는 경우 WAF 규칙이 업데이트됩니다. Fastly WAF는 속도 제한 또는 봇 탐지 서비스를 제공하지 않습니다. 원하는 경우 고객은 Fastly와 호환되는 서드파티 봇 탐지 서비스에 라이선스를 부여할 수 있습니다.
+Managed Services이 소프트웨어 패치 전에 보안 문제를 &quot;가상으로 패치&quot;할 수 있는 새로운 취약점을 감지해야 하는 경우 Adobe Commerce에서 WAF 규칙을 업데이트합니다. Fastly WAF은 속도 제한 또는 보트 감지 서비스를 제공하지 않습니다. 원하는 경우 고객은 Fastly와 호환되는 서드파티 봇 탐지 서비스에 라이선스를 부여할 수 있습니다.
 
-_Cloud Guide_&#x200B;에서 [WAF(웹 응용 프로그램 방화벽)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html)을(를) 참조하십시오.
+_Cloud Guide_&#x200B;에서 [웹 응용 프로그램 방화벽(WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html)을(를) 참조하십시오.
 
 ## 가상 사설 클라우드
 
-Adobe Commerce Pro 플랜 프로덕션 환경은 Virtual Private Cloud(VPC)로 구성되므로 프로덕션 서버는 격리되고 클라우드 환경 안팎에 연결하는 기능이 제한됩니다. 클라우드 서버에 대한 보안 연결만 허용됩니다. SFTP 또는 rsync와 같은 보안 프로토콜을 파일 전송에 사용할 수 있습니다.
+Adobe Commerce Pro 플랜 프로덕션 환경은 VPC(Virtual Private Cloud)로 구성되므로 프로덕션 서버는 격리되고 클라우드 환경 내외에 연결할 수 있는 기능이 제한됩니다. 클라우드 서버에 대한 보안 연결만 허용됩니다. SFTP 또는 rsync와 같은 보안 프로토콜을 파일 전송에 사용할 수 있습니다.
 
 고객은 SSH 터널을 사용하여 애플리케이션과 안전하게 통신할 수 있습니다. 추가 요금으로 AWS PrivateLink에 액세스할 수 있습니다. 이러한 서버에 대한 모든 연결은 환경에 대한 연결을 제한하는 가상 방화벽인 AWS 보안 그룹을 사용하여 제어됩니다. 고객의 기술 리소스는 SSH를 사용하여 이러한 서버에 액세스할 수 있습니다.
 
@@ -70,7 +70,7 @@ Adobe은 핵심 애플리케이션 코드에서 보안 취약점을 정기적으
 
 전체 코드 베이스는 이러한 도구를 사용하여 격주로 검사됩니다. 고객은 직접 전자 메일, 응용 프로그램 및 [보안 센터](https://helpx.adobe.com/security.html)에서 알림을 통해 보안 패치에 대한 알림을 받습니다.
 
-고객은 PCI 지침에 따라 릴리스 후 30일 이내에 이러한 패치가 사용자 정의 애플리케이션에 적용되었는지 확인해야 합니다. Adobe은 또한 가맹점이 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 무단 액세스에 대한 업데이트를 받을 수 있도록 하는 [보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html)를 제공합니다. 보안 검색 도구는 무료 서비스이며 모든 버전의 Adobe Commerce에서 실행할 수 있습니다.
+고객은 PCI 지침에 따라 릴리스 후 30일 이내에 이러한 패치가 사용자 정의 애플리케이션에 적용되었는지 확인해야 합니다. Adobe은 또한 가맹점이 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 무단 액세스에 대한 업데이트를 받을 수 있도록 하는 [보안 검색 도구](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)를 제공합니다. 보안 검색 도구는 무료 서비스이며 모든 버전의 Adobe Commerce에서 실행할 수 있습니다.
 
 보안 연구원이 취약점을 식별하고 보고하도록 장려하기 위해 Adobe Commerce에는 내부 테스트 외에 [버그 바운티 프로그램](https://hackerone.com/magento)이 있습니다. 또한 고객은 원하는 경우 자체 검토를 위해 애플리케이션의 전체 소스 코드를 제공받습니다.
 
@@ -84,7 +84,7 @@ Managed Services 프로덕션 환경으로 실행 코드를 가져오는 유일�
 
 ## 로깅
 
-모든 AWS 활동이 AWS CloudTrail에 기록됩니다. 운영 체제, 애플리케이션 서버 및 데이터베이스 로그는 운영 서버에 저장되고 백업에 저장됩니다. 모든 소스 코드 변경 사항은 Git 저장소에 기록됩니다. 배포 기록은 Adobe Commerce [Project 웹 인터페이스](https://devdocs.magento.com/cloud/project/projects.html#login)에서 사용할 수 있습니다. 모든 지원 액세스가 기록되고 지원 세션이 기록됩니다.
+모든 AWS 활동이 AWS CloudTrail에 기록됩니다. 운영 체제, 애플리케이션 서버 및 데이터베이스 로그는 운영 서버에 저장되고 백업에 저장됩니다. 모든 소스 코드 변경 사항은 Git 저장소에 기록됩니다. 배포 기록은 Adobe Commerce [Project 웹 인터페이스](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview)에서 사용할 수 있습니다. 모든 지원 액세스가 기록되고 지원 세션이 기록됩니다.
 
 _Cloud Guide_&#x200B;에서 [로그 보기 및 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)를 참조하십시오.
 

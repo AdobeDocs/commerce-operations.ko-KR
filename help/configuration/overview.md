@@ -2,7 +2,7 @@
 title: 구성 안내서 개요
 description: Adobe Commerce 애플리케이션에 대해 구성 가능한 모든 기능 및 서비스에 대해 알아봅니다.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 9%
@@ -25,7 +25,7 @@ _구성_ 안내서에서는 구성 가능한 Commerce 응용 프로그램 기능
 
 ## Commerce 관리 구성
 
-[Commerce 사용 안내서](https://docs.magento.com/user-guide/stores/configuration.html)에는 Commerce 관리자의 모든 구성 설정에 대한 필드 설명을 이해하는 데 도움이 되는 해당 항목이 있습니다.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)에는 Commerce 관리자의 모든 구성 설정에 대한 필드 설명을 이해하는 데 도움이 되는 해당 항목이 있습니다.
 
 ## 클라우드 구성
 

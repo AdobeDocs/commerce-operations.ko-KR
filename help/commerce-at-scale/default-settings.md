@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce 성능 최적화
-description: 일부 기본 설정을 변경하여 Adobe Experience Manager as a CMS를 사용하도록 Adobe Commerce 프로젝트를 준비합니다.
+description: 일부 기본 설정을 변경하여 Adobe Experience Manager as a CMS을 사용하도록 Adobe Commerce 프로젝트를 준비합니다.
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ GraphQL을 사용하면 한 번의 호출로 여러 쿼리를 만들 수 있습�
 
 >[!NOTE]
 >
-> 캐시 가능 쿼리와 캐시 불가능 쿼리에 대한 자세한 내용은 Adobe Commerce [개발자 설명서](https://devdocs.magento.com/guides/v2.4/graphql/caching.html)를 참조하세요.
+> 캐시 가능 쿼리와 캐시 불가능 쿼리에 대한 자세한 내용은 Adobe Commerce [개발자 설명서](https://developer.adobe.com/commerce/webapi/graphql/caching.html)를 참조하세요.
 
 ## 카탈로그 플랫 테이블
 
@@ -42,7 +42,7 @@ Fastly 원본 차폐는 Adobe Commerce 관리 Fastly 구성 백엔드 설정에�
 
 Fastly 원본 차폐가 활성화되면 Fastly Image Optimizer를 활성화할 수도 있습니다. 제품 카탈로그 이미지가 Adobe Commerce에 저장되는 경우, 이 서비스를 통해 리소스 집약적인 제품 카탈로그 이미지 변환 처리를 Adobe Commerce 오리진에서 Fastly로 오프로드할 수 있습니다. 이미지가 에지 위치에서 변환되므로 Adobe Commerce 오리진으로의 요청 수가 감소하여 지연 시간이 제거되므로 페이지 로드 시간에 대한 최종 사용자 응답 시간이 향상됩니다.
 
-Fastly 이미지 최적화는 원본 실드가 활성화된 후에만 관리자의 Fastly 구성에서 &quot;딥 이미지 최적화 활성화&quot;를 통해 활성화할 수 있습니다. Fastly 이미지 최적화를 위한 구성에 대한 자세한 내용은 Adobe Commerce [개발자 설명서](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)를 참조하세요.
+Fastly 이미지 최적화는 원본 실드가 활성화된 후에만 관리자의 Fastly 구성에서 &quot;딥 이미지 최적화 활성화&quot;를 통해 활성화할 수 있습니다. Fastly 이미지 최적화를 위한 구성에 대한 자세한 내용은 Adobe Commerce [개발자 설명서](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization)를 참조하세요.
 
 ![Adobe Commerce 관리자의 Fastly 이미지 최적화 설정 스크린샷](../assets/commerce-at-scale/image-optimization.svg)
 

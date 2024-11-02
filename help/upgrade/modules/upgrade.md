@@ -2,7 +2,7 @@
 title: 모듈 및 확장 업그레이드
 description: 명령줄 인터페이스와 작성기를 사용하여 Adobe Commerce 모듈 및 확장을 업그레이드합니다.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 공급업체 번들 확장 프로그램(VBE)
 
-Adobe이 2.4.4에서 모든 [VBE](https://devdocs.magento.com/extensions/vendor/)을(를) 제거했습니다. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
+Adobe이 2.4.4에서 모든 [VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade)을(를) 제거했습니다. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
 
 Adobe Commerce 2.4.4 이상에서 이러한 확장을 계속 사용하려면 2.4.4로 업그레이드하기 전에 `composer.json` 파일 _이전_&#x200B;에서 해당 패키지 종속성을 업데이트해야 합니다. 사용할 패키지 이름 및 버전에 대해서는 공급업체에 문의하십시오.
 

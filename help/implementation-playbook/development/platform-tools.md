@@ -3,7 +3,7 @@ title: 플랫폼 도구
 description: Adobe Commerce 구현에 대해 권장되는 플랫폼 도구를 선택합니다.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 feature: Configuration
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Adobe Commerce 버전 2.4 이상의 경우, 모든 설치는 Elasticsearch 또�
 
 ## 보안 도구
 
-[Adobe Commerce 보안 검색 도구](https://docs.magento.com/user-guide/magento/security-scan.html)를 사용하면 저장소 웹 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 오래된 소프트웨어에 대한 업데이트를 받을 수 있습니다. 일반적으로 UAT(사용자 승인 테스트)를 시작할 때 이 도구를 사용하기 시작합니다. 무료로 Adobe Commerce의 모든 구현 및 버전에서 사용할 수 있는 Adobe Commerce 보안 검색 도구 외에도 CI/CD 프로세스 중 및 각 릴리스 전에 사용할 수 있는 다른 선택 사항이 있습니다.
+[Adobe Commerce 보안 검색 도구](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)를 사용하면 저장소 웹 사이트를 정기적으로 모니터링하고 알려진 보안 위험, 맬웨어 및 오래된 소프트웨어에 대한 업데이트를 받을 수 있습니다. 일반적으로 UAT(사용자 승인 테스트)를 시작할 때 이 도구를 사용하기 시작합니다. 무료로 Adobe Commerce의 모든 구현 및 버전에서 사용할 수 있는 Adobe Commerce 보안 검색 도구 외에도 CI/CD 프로세스 중 및 각 릴리스 전에 사용할 수 있는 다른 선택 사항이 있습니다.
 
 SonarQube는 코드의 기술 품질을 분석하고 측정하도록 설계된 오픈 소스 품질 관리 플랫폼입니다. SonarQube는 코드 버그, 구문 오류 및 취약점에 대한 전체 보고서를 제공할 뿐만 아니라 코드 수정에 대한 제안과 예제를 제공합니다. SonarQube는 코드를 배포하기 전에 분석할 수 있는 도구로 CI/CD 환경에서 사용하기에 적합합니다.
 

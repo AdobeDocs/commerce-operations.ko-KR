@@ -2,7 +2,7 @@
 title: 지원 유틸리티 실행
 description: 기본 제공 지원 유틸리티를 사용하여 Commerce 프로젝트 문제를 해결합니다.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce 지원 유틸리티([데이터 수집기](https://docs.magento.com/user-guide/system/support-data-collector.html))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
+Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
 
 Adobe Commerce은 이러한 백업을 사용하여 코드에 액세스해야 하는 문제를 분석합니다. _덤프_&#x200B;라고도 합니다. 일반적인 시나리오는 다음과 같습니다.
 

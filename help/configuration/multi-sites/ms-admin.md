@@ -2,7 +2,7 @@
 title: 관리자에서 여러 웹 사이트, 스토어 및 스토어 보기 설정
 description: Commerce 관리에서 추가 웹 사이트, 스토어 및 스토어 보기를 구성합니다.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 이 작업을 수행하려면 각 스토어에 대한 루트 카테고리(및 원하는 경우 추가 카테고리)를 만들어야 합니다. 이 항목에서 설명하는 작업은 여러 스토어를 설정하는 한 가지 방법을 제공합니다. 자세한 내용은 Commerce 사용 안내서에서 다음 리소스를 참조하십시오.
 
-- [범주](https://docs.magento.com/user-guide/catalog/categories.html)
-- [웹 사이트 추가](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [URL 저장](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [컨텐츠](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [카테고리](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [웹 사이트 추가](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [저장소 URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [콘텐츠](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
->이 항목에서는 예를 들어 웹 사이트 코드가 `french`인 프랑스어 웹 사이트를 사용합니다. 단계별 자습서는 [자습서: Apache를 사용하여 여러 웹 사이트 설정](ms-apache.md) 및 [자습서: nginx를 사용하여 여러 웹 사이트 설정](ms-nginx.md)을 참조하십시오.
+>예를 들어, 이 항목에서는 웹 사이트 코드가 `french` 있는 프랑스어 웹 사이트를 사용합니다. 단계별 자습서는 [자습서: Apache를 사용하여 여러 웹 사이트 설정](ms-apache.md) 및 [자습서: nginx를 사용하여 여러 웹 사이트 설정](ms-nginx.md)을 참조하십시오.
 
 ## 1단계: 루트 범주 만들기
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 1. **범주 이름** 필드에 이 범주를 식별할 고유한 이름을 입력하십시오.
 1. 범주 사용이 **예**(으)로 설정되어 있는지 확인하십시오.
 
-   이 페이지의 다른 옵션에 대한 자세한 내용은 [루트 범주](https://docs.magento.com/user-guide/catalog/category-root.html)를 참조하십시오.
+   이 페이지의 다른 옵션에 대한 자세한 내용은 [루트 범주](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)를 참조하십시오.
 
    다음 그림은 예를 보여 줍니다.
 
@@ -111,11 +111,11 @@ ht-degree: 0%
 
    ![범위 선택](../../assets/configuration/multi-site-scope.png)
 
-1. 오른쪽 창에서 **기본 URL**&#x200B;을(를) 확장합니다.
-1. _기본 URL_ 섹션에서 **시스템 값 사용**&#x200B;을 지웁니다.
-1. **기본 URL** 및 **기본 링크 URL** 필드에 `http://french.magento.mg` URL을 입력하십시오.
+1. 오른쪽 창에서 기본 URL을 확장 **합니다**.
+1. _기본 URL 섹션에서 시스템 값 사용을 선택 취소&#x200B;**합니다_**.
+1. `http://french.magento.mg` 기본 URL **및**&#x200B;기본 링크 URL **필드에 URL**&#x200B;을 입력합니다.
 
-1. _기본 URL(보안)_ 섹션에서 이전 단계를 반복합니다.
+1. 기본 URL(보안)_섹션에서 이전 단계를_&#x200B;반복합니다.
 
    >[!INFO]
    >
@@ -131,7 +131,7 @@ Commerce은 사이트 기본 URL에 스토어 코드를 추가할 수 있는 옵
 
 이렇게 하면 `index.php` 및 `.htaccess`이(가) 향후 업그레이드 시 Commerce 코드베이스와 동기화되지 않습니다.
 
-[Commerce 사용 안내서](https://docs.magento.com/user-guide/stores/store-urls.html)를 참조하세요.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)를 참조하세요.
 
 기본 URL에 스토어 코드를 추가하려면 다음을 수행합니다.
 

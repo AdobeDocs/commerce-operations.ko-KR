@@ -4,7 +4,7 @@ description: 클라우드 인프라에 Adobe Commerce을 배포할 때 성능을
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Adobe은 Adobe Commerce 애플리케이션에 대한 서드파티 Elasticsearch 
 
 구성 지침은 Adobe Commerce on cloud 개발자 안내서 를 참조하십시오.
 
-- [OpenSearch 서비스 설정](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [OpenSearch 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Elasticsearch 서비스 설정](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Elasticsearch 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## 사용자 지정 트리거 방지
 
@@ -76,7 +76,7 @@ Adobe은 Adobe Commerce 애플리케이션에 대한 서드파티 Elasticsearch 
 
 ## [!DNL ECE-Tools]을(를) 버전 2002.0.21 이상으로 업그레이드 {#ece-tools-version}
 
-cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를 버전 2002.0.21 이상으로 업그레이드하십시오. 자세한 내용은 개발자 설명서에서 [`ece-tools` 버전 업데이트](https://devdocs.magento.com/cloud/project/ece-tools-update.html)를 참조하십시오.
+cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를 버전 2002.0.21 이상으로 업그레이드하십시오. 자세한 내용은 개발자 설명서에서 [`ece-tools` 버전 업데이트](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.
 
 ## 인덱서 모드를 안전하게 전환
 

@@ -4,7 +4,7 @@ description: Adobe Commerce on cloud infrastructure 기술 스택을 업데이�
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -23,7 +23,7 @@ cloud infrastructure 2.4.x 이상 버전의 Adobe Commerce
 
 Adobe Commerce에서 사용하는 서비스 및 구성 요소가 수명 종료 날짜에 도달하거나 임박하기 전에 업그레이드하십시오. 따라서 PCI 규정 준수를 준수하고 보안 취약점을 줄일 수 있습니다.
 
-Starter 플랜을 사용하는 고객은 서비스 업그레이드에 셀프 서비스를 사용할 수 있습니다. 자세한 방법은 [서비스 버전 변경](https://devdocs.magento.com/cloud/project/services.html#change-service-version)을 참조하세요.
+Starter 플랜을 사용하는 고객은 서비스 업그레이드에 셀프 서비스를 사용할 수 있습니다. 자세한 방법은 [서비스 버전 변경](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)을 참조하세요.
 
 Pro 요금제의 고객은 [통합 환경](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html)에서 서비스 업그레이드에서만 셀프 서비스를 사용할 수 있습니다. 프로덕션에서 서비스를 업그레이드하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)하여 업그레이드를 요청해야 합니다.
 

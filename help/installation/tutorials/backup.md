@@ -2,7 +2,7 @@
 title: 파일 시스템, 미디어 및 데이터베이스 백업 및 롤백
 description: 다음 단계에 따라 Adobe Commerce 애플리케이션을 백업하고 복원합니다.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 _클라우드 가이드_&#x200B;에서 [스냅샷 및 백업 관리](https://devdocs.magento.com/cloud/project/project-webint-snap.html)를 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 _클라우드 가이드_&#x200B;에서 [스냅샷 및 백업 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)를 참조하십시오.
 
 ## 백업 활성화
 

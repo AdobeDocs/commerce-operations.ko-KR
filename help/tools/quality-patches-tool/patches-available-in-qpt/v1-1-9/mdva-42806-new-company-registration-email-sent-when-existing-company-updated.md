@@ -3,7 +3,7 @@ title: 'MDVA-42806: 기존 회사가 업데이트될 때마다 새 회사 등록
 description: MDVA-42806 패치는 REST API를 통해 기존 회사가 업데이트될 때마다 새 회사 등록 이메일이 전송되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42806입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ B2B 모듈이 설치되었습니다.
 <u>재현 단계</u>:
 
 1. 회사 계정을 만듭니다.
-1. `/V1&#x200B;/company&#x200B;/<company_id>` 끝점을 사용합니다. 만든 회사를 업데이트하려면 개발자 설명서에서 [회사 업데이트](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company)를 참조하십시오. 다음은 샘플 페이로드입니다.
+1. `/V1&#x200B;/company&#x200B;/<company_id>` 끝점을 사용합니다. 만든 회사를 업데이트하려면 개발자 설명서에서 [회사 업데이트](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company)를 참조하십시오. 다음은 샘플 페이로드입니다.
 
 ```php
 {

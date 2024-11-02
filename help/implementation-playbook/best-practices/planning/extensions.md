@@ -4,7 +4,7 @@ description: 타사 Adobe Commerce 확장으로 인한 성능 문제를 방지�
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
@@ -35,5 +35,5 @@ Adobe Commerce 타사 확장(모듈)은 상점 성능에 부정적인 영향을 
 
 - [업그레이드 계획 모범 사례](../../../upgrade/prepare/best-practices.md)
 - 클라우드 인프라에서 Adobe Commerce과 함께 서드파티 확장 사용
-   - [기술 및 요구 사항 - 개발 및 테스트](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-   - [통합 및 스테이징에서 완전히 테스트하는 이유는 무엇입니까?](https://devdocs.magento.com/cloud/live/live.html#whytest)
+   - [기술 및 요구 사항 - 개발 및 테스트](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [통합 및 스테이징에서 완전히 테스트하는 이유는 무엇입니까?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

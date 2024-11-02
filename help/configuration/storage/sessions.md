@@ -3,7 +3,7 @@ title: 세션 저장소 위치
 description: 세션 파일이 저장되는 위치를 알아봅니다.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 세션 크기 관리
 
-_사용 안내서_&#x200B;에서 [세션 관리](https://docs.magento.com/user-guide/stores/security-session-management.html)를 참조하세요.
+_사용 안내서_&#x200B;에서 [세션 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)를 참조하세요.
 
 ## 가비지 수집 구성
 

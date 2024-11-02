@@ -4,7 +4,7 @@ description: Adobe Commerce 프로젝트에서 특정 OPcache 메모리 사용�
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Adobe Commerce on cloud infrastructure Pro 플랜 아키텍처 2.3.x의 경우 �
 ## 추가 정보
 
 * [성능 모범 사례 - PHP 설정](../../../performance/software.md#php-settings)
-* [PHP 옵션 구성](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
+* [PHP 옵션 구성](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
 * [클라우드 인프라의 Adobe Commerce에 대한 데이터베이스 모범 사례](database-on-cloud.md)
 * [클라우드 인프라의 Adobe Commerce에서 가장 일반적인 데이터베이스 문제](../maintenance/resolve-database-performance-issues.md)
 * [인덱서 &quot;일정에 따라 업데이트&quot;는 Adobe Commerce 성능을 최적화합니다.](../maintenance/indexer-configuration.md)

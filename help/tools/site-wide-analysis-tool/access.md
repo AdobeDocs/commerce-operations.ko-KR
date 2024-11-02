@@ -2,7 +2,7 @@
 title: 액세스 방법 [!DNL Site-Wide Analysis Tool]
 description: ' [!DNL Site-Wide Analysis Tool]에 액세스하는 방법 알아보기'
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [[!DNL Site-Wide Analysis Tool] 웹 사이트](https://supportinsights.adobe.com/commerce)에서 [!DNL dashboard]에 직접 **(클라우드 인프라의 Adobe Commerce 전용)**&#x200B;에 액세스하여 Adobe ID으로 로그인하거나 스토어의 [!DNL Admin Panel]에서 [!DNL dashboard]을(를) 통해 액세스할 수 있습니다.
 
-[!DNL Site-Wide Analysis Tool] 서비스는 [역할 리소스](https://docs.magento.com/user-guide/system/permissions-user-roles.html)에 액세스할 수 있는 권한이 있는 [!DNL Admin] 사용자에 대해 [프로덕션 모드](https://docs.magento.com/user-guide/magento/installation-modes.html)에서 사용할 수 있습니다.
+[!DNL Site-Wide Analysis Tool] 서비스는 [역할 리소스](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)에 액세스할 수 있는 권한이 있는 [!DNL Admin] 사용자에 대해 [프로덕션 모드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### 1단계: 권한 확인
 
-[!DNL Admin] 사용자 계정에 [할당된 사용자 역할](https://docs.magento.com/user-guide/system/permissions-user-roles.html)을(를) 통해 [!DNL Site-Wide Analysis Tool]에 액세스할 수 있는 권한이 있는지 확인하십시오.
+[!DNL Admin] 사용자 계정에 [할당된 사용자 역할](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)을(를) 통해 [!DNL Site-Wide Analysis Tool]에 액세스할 수 있는 권한이 있는지 확인하십시오.
 
 >[!IMPORTANT]
 >

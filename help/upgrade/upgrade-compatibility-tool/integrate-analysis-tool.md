@@ -2,7 +2,7 @@
 title: ' [!DNL Site-Wide Analysis Tool] 통합'
 description: Adobe Commerce 프로젝트의  [!DNL Site-Wide Analysis Tool] 대시보드에서  [!DNL Upgrade Compatibility Tool] 보고서를 검색하려면 다음 단계를 따르십시오.
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 이제 [!DNL Upgrade Compatibility Tool]이(가) [!DNL Site-Wide Analysis Tool]과(와) 통합되어 기술 전문가가 아닌 사용자도 [!DNL Upgrade Compatibility Tool]을(를) 실행하고 각 파일에 대한 문제 목록이 포함된 [보고서](../upgrade-compatibility-tool/reports.md)를 가져올 수 있습니다.
 
-자세한 내용은 [[!DNL Site-Wide Analysis Tool] 사용 안내서](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html)를 참조하세요.
+자세한 내용은 [[!DNL Site-Wide Analysis Tool] 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)를 참조하세요.
 
 ## [!DNL Site-Wide Analysis Tool]에서 [!DNL Upgrade Compatibility Tool] 실행
 

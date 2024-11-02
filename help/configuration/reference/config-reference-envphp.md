@@ -2,7 +2,7 @@
 title: env.php 참조
 description: env.php 파일의 값 목록을 참조하십시오.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://docs.magento.com/user-guide/system/encryption-key.html)에 대해 자세히 알아보세요.
+_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
 
 ## db
 
@@ -203,7 +203,7 @@ _Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://docs.magento.c
 ]
 ```
 
-[다운로드 가능한 도메인](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 

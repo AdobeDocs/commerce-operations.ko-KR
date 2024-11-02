@@ -4,7 +4,7 @@ description: '''robots.txt'' 및 ''sitemap.xml'' 파일을 사용하여 Adobe Co
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 단일 사이트 상점에 대해 `robots.txt` 및 `sitemap.xml` 파일을 구성할 때 다음 모범 사례를 따르십시오.
 
-- 프로젝트에서 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) 버전 2002.0.12 이상을 사용하고 있는지 확인하십시오.
+- 프로젝트에서 [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) 버전 2002.0.12 이상을 사용하고 있는지 확인하십시오.
 - 관리 응용 프로그램을 사용하여 `robots.txt` 파일에 콘텐츠를 추가하십시오.
 
   >[!TIP]
@@ -64,12 +64,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->자세한 지침은 [사이트 맵 및 검색 엔진 로봇 추가](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html)를 참조하십시오.
+>자세한 지침은 [사이트 맵 및 검색 엔진 로봇 추가](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap)를 참조하십시오.
 
 
 ### 다중 사이트 상점
 
-클라우드 인프라에서 Adobe Commerce의 단일 구현으로 여러 스토어를 설정하고 실행할 수 있습니다. [여러 웹 사이트 또는 스토어 설정](https://devdocs.magento.com/cloud/project/project-multi-sites.html)을 참조하십시오.
+클라우드 인프라에서 Adobe Commerce의 단일 구현으로 여러 스토어를 설정하고 실행할 수 있습니다. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
 [단일 사이트 상점](#single-site-storefronts)에 대해 `robots.txt` 및 `sitemap.xml` 파일을 구성하는 것과 동일한 모범 사례가 두 가지 중요한 차이점이 있는 다중 사이트 상점 상점에 적용됩니다.
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ## 추가 정보
 
-- [웹 사이트, 스토어 및 스토어 조회수 이해](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [웹 사이트 추가](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Fastly를 사용하여 Adobe Commerce 사이트의 악성 트래픽을 차단하세요](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [웹 사이트 추가](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Fastly를 사용하여 Adobe Commerce 사이트의 악성 트래픽을 차단하세요](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
 - [robots.txt 클라우드 인프라 2.3.x에서 Adobe Commerce에 404 오류 발생](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

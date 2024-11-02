@@ -2,7 +2,7 @@
 title: 고급 온-프레미스 설치
 description: 소유한 인프라의 Adobe Commerce에 대한 고급 설치 시나리오에 대해 알아봅니다.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerce에는 설치 및 구성 작업을 위한 단일 명령줄 인터�
 * 설치(및 관련 작업(예: 데이터베이스 스키마 생성 또는 업데이트, 배포 구성 만들기)
 * 캐시를 지우는 중입니다.
 * 색인 재지정을 포함한 색인 관리.
-* 번역 사전 및 번역 패키지 만들기
+* 번역 사전 및 번역 패키지 만들기.
 * 플러그인에 대한 공장 및 인터셉터와 같이 존재하지 않는 클래스를 생성하여 객체 관리자에 대한 종속성 삽입 구성을 생성합니다.
 * 정적 보기 파일을 배포하는 중입니다.
 * Less에서 CSS를 만드는 중입니다.
@@ -117,9 +117,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 다음 옵션은 관리자에 대한 사용자 정보 및 자격 증명을 지정합니다.
 
-설치 중 또는 후에 관리자 사용자를 만들 수 있습니다. 설치 중에 사용자를 만드는 경우 모든 관리자 자격 증명 변수가 필요합니다. [샘플 localhost 설치](#sample-localhost-installations)를 참조하십시오.
+설치 중 또는 설치 후에 관리 사용자 를 만들 수 있습니다. 설치 중에 사용자 만드는 경우 모든 관리자 자격 증명 변수가 필요합니다. 샘플 localhost 설치를](#sample-localhost-installations) 참조하세요[.
 
-다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)를 참조하십시오.
+다음 표에서는 사용 가능한 많은 설치 매개 변수를 제공하지만 전부는 아닙니다. 전체 목록은 명령 줄 도구 참조](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 [참조하십시오.
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
@@ -127,7 +127,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--admin-lastname` | 관리자 사용자의 성. | 예 |
 | `--admin-email` | 관리자 사용자의 이메일 주소입니다. | 예 |
 | `--admin-user` | 관리자 사용자 이름. | 예 |
-| `--admin-password` | 관리자 사용자 암호입니다. 암호는 길이가 7자 이상이어야 하며 최소 하나의 영문자와 최소 하나의 숫자를 포함해야 합니다. 보다 길고 복잡한 암호를 사용하는 것이 좋습니다. 전체 암호 문자열을 작은 따옴표로 묶습니다. For example, `--admin-password='A0b9%t3g'` | 예 |
+| `--admin-password` | 관리자 사용자 암호. 암호는 길이가 7자 이상이어야 하며 최소 하나의 영문자와 최소 하나의 숫자를 포함해야 합니다. 보다 길고 복잡한 암호를 사용하는 것이 좋습니다. 전체 암호 문자열을 작은 따옴표로 묶습니다. For example, `--admin-password='A0b9%t3g'` | 예 |
 
 **사이트 및 데이터베이스 구성 옵션:**
 
@@ -145,16 +145,16 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--db-ssl-ca` | 서버 인증서 경로. | 아니요 |
 | `--language` | 관리자 및 상점 첫 화면에서 사용할 언어 코드. (아직 확인하지 않은 경우 bin 디렉터리에서 `bin/magento info:language:list`을(를) 입력하여 언어 코드 목록을 볼 수 있습니다.) | 아니요 |
 | `--currency` | 상점 첫 화면에서 사용할 기본 통화. (아직 완료하지 않은 경우 bin 디렉터리에서 `bin/magento info:currency:list`을(를) 입력하여 통화 목록을 볼 수 있습니다.) | 아니요 |
-| `--timezone` | 관리자 및 상점 첫 화면에서 사용할 기본 시간대. 아직 확인하지 않은 경우 `bin/` 디렉터리에서 `bin/magento info:timezone:list`을(를) 입력하여 시간대 목록을 볼 수 있습니다. | 아니요 |
-| `--use-rewrites` | `1`은(는) storefront 및 Admin에서 생성된 링크에 대해 웹 서버 다시 쓰기를 사용함을 의미합니다.<br><br>`0`은(는) 웹 서버 다시 쓰기를 사용하지 않도록 설정합니다. 이것이 기본값입니다. | 아니요 |
+| `--timezone` | 관리자 및 상점 첫 화면에서 사용할 기본 시간대. (아직 수행하지 않은 경우 디렉토리에서 `bin/` 입력하여 `bin/magento info:timezone:list` 표준 시간대 목록을 볼 수 있습니다.) | 아니요 |
+| `--use-rewrites` | `1` 는 storefront 및 Admin에서 생성된 링크에 대해 웹 서버 재작성을 사용함을 의미합니다.<br><br>`0` 웹 서버 다시 쓰기를 사용하지 않도록 설정합니다. 기본값입니다. | 아니요 |
 | `--use-secure` | `1`을(를) 사용하면 상점 URL에서 SSL(Secure Sockets Layer)을 사용할 수 있습니다. 이 옵션을 선택하기 전에 웹 서버가 SSL을 지원하는지 확인하십시오.<br><br>`0`은(는) SSL 사용을 비활성화합니다. 이 경우 다른 모든 보안 URL 옵션도 0이라고 가정합니다. 이것이 기본값입니다. | 아니요 |
 | `--base-url-secure` | 관리자 및 상점 첫 화면에 액세스할 때 사용할 보안 기본 URL은 `http[s]://<host or ip>/<your install dir>/` 형식입니다. | 아니요 |
 | `--use-secure-admin` | `1`은(는) SSL을 사용하여 관리자에 액세스함을 의미합니다. 이 옵션을 선택하기 전에 웹 서버가 SSL을 지원하는지 확인하십시오.<br><br>`0`은(는) 관리자가 SSL을 사용하지 않음을 의미합니다. 이것이 기본값입니다. | 아니요 |
-| `--admin-use-security-key` | 1을 사용하면 애플리케이션이 임의로 생성된 키 값을 사용하여 관리자 및 양식의 페이지에 액세스합니다. 이러한 키 값은 크로스 사이트 스크립트 위조 공격을 방지하는 데 도움이 됩니다. 이것이 기본값입니다.<br><br>`0`이(가) 키 사용을 비활성화합니다. | 아니요 |
+| `--admin-use-security-key` | 1은 애플리케이션 사용자가 임의로 생성된 키 값을 사용하여 관리 및 양식의 페이지에 액세스하도록 합니다. 이러한 키 값은 사이트 간 스크립트 위조 공격을 방지하는 데 도움이 됩니다. 이것이 기본값입니다.<br><br>`0`이(가) 키 사용을 비활성화합니다. | 아니요 |
 | `--session-save` | <br><br>- `db` 중 하나를 사용하여 데이터베이스에 세션 데이터를 저장합니다. 클러스터된 데이터베이스가 있는 경우 데이터베이스 저장소를 선택하십시오. 그렇지 않으면 파일 기반 저장소에 비해 이점이 별로 없을 수 있습니다.<br><br>- `files` 파일 시스템에 세션 데이터를 저장합니다. 파일 시스템 액세스가 느리거나 클러스터된 데이터베이스가 있거나 세션 데이터를 Redis에 저장하려는 경우가 아니면 파일 기반 세션 저장소가 적절합니다.Redis에 세션 데이터를 저장하는 <br><br>- `redis`. 기본 또는 페이지 캐싱에 Redis를 사용하는 경우 Redis가 이미 설치되어 있어야 합니다. Redis에 대한 지원 구성에 대한 자세한 내용은 세션 저장소에 Redis 사용 을 참조하십시오. | 아니요 |
 | `--key` | 키가 있는 경우 데이터베이스에서 중요한 데이터를 암호화할 키를 지정합니다. 없는 경우 애플리케이션에서 자동으로 생성합니다. | 예 |
 | `--cleanup-database` | Adobe Commerce을 설치하기 전에 데이터베이스 테이블을 삭제하려면 값 없이 이 매개 변수를 지정합니다. 그렇지 않으면 데이터베이스가 그대로 유지됩니다. | 아니요 |
-| `--db-init-statements` | 고급 MySQL 구성 매개 변수. MySQL 데이터베이스에 연결할 때 데이터베이스 초기화 문을 사용하여 실행합니다. 값을 설정하기 전에 이 참조와 유사한 참조를 참조하십시오.<br><br>기본값은 `SET NAMES utf8;`입니다. | 아니요 |
+| `--db-init-statements` | 고급 MySQL 구성 매개 변수입니다. MySQL 데이터베이스에 연결할 때 실행할 데이터베이스 초기화 문을 사용합니다. 값을 설정하기 전에 이와 유사한 참조를 참조하십시오.<br><br>`SET NAMES utf8;`기본값은 입니다. | 아니요 |
 | `--sales-order-increment-prefix` | 판매 주문의 접두사로 사용할 문자열 값을 지정합니다. 일반적으로 결제 처리자의 고유한 주문 번호를 보장하는 데 사용됩니다. | 아니요 |
 
 **검색 엔진 구성 옵션:**
@@ -170,8 +170,8 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--elasticsearch-username` | Elasticsearch 서버에 인증할 사용자 ID입니다. | 인증이 활성화되지 않은 경우 아니요 |
 | `--elasticsearch-password` | Elasticsearchserver에 인증하기 위한 암호입니다. | 인증이 활성화되지 않은 경우 아니요 |
 | `--opensearch-host` | OpenSearch가 실행 중인 호스트 이름 또는 IP 주소입니다. 기본값은 `localhost`입니다. | 아니요 |
-| `--opensearch-port` | 들어오는 HTTP 요청에 대한 OpenSearch 포트입니다. 기본값은 `9200`입니다. | 아니요 |
-| `--opensearch-index-prefix` | OpenSearch 검색 색인을 식별하는 접두사입니다. 기본값은 `magento2`입니다. | 아니요 |
+| `--opensearch-port` | 수신 HTTP 요청에 대한 OpenSearch 포트. 기본값은 `9200`입니다. | 아니요 |
+| `--opensearch-index-prefix` | OpenSearch 검색 인덱스를 식별하는 접두사입니다. 기본값은 `magento2`입니다. | 아니요 |
 | `--opensearch-timeout` | 시스템 제한 시간(초)입니다. 기본값은 `15`입니다. | 아니요 |
 | `--opensearch-enable-auth` | OpenSearch 서버에서 인증을 활성화합니다. 기본값은 `false`입니다. | 아니요 |
 | `--opensearch-username` | OpenSearch 서버에 인증할 사용자 ID입니다. | 인증이 활성화되지 않은 경우 아니요 |
@@ -185,11 +185,11 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--amqp-port` | [!DNL RabbitMQ]에 연결하는 데 사용할 포트입니다. 기본값은 5672입니다. | 아니요 |
 | `--amqp-user` | [!DNL RabbitMQ]에 연결하기 위한 사용자 이름입니다. 기본 사용자 `guest`을(를) 사용하지 마십시오. | 아니요 |
 | `--amqp-password` | [!DNL RabbitMQ]에 연결하기 위한 암호입니다. 기본 암호 `guest`을(를) 사용하지 마십시오. | 아니요 |
-| `--amqp-virtualhost` | [!DNL RabbitMQ]에 연결하기 위한 가상 호스트입니다. 기본값은 `/`입니다. | 아니요 |
-| `--amqp-ssl` | [!DNL RabbitMQ]에 연결할지 여부를 나타냅니다. 기본값은 `false`입니다. [!DNL RabbitMQ]의 SSL 설정에 대한 자세한 내용은 [!DNL RabbitMQ]을(를) 참조하십시오. | 아니요 |
+| `--amqp-virtualhost` | 에 연결 [!DNL RabbitMQ]하기 위한 가상 호스트. 기본값은 `/`입니다. | 아니요 |
+| `--amqp-ssl` | 에 연결 [!DNL RabbitMQ]할지 여부를 나타냅니다. 기본값은 `false`입니다. [!DNL RabbitMQ]의 SSL 설정에 대한 자세한 내용은 [!DNL RabbitMQ]을(를) 참조하십시오. | 아니요 |
 | `--consumers-wait-for-messages` | 소비자는 대기열에서 메시지를 기다려야 합니까? 1 - 예, 0 - 아니오 | 아니요 |
 
-**구성 옵션 잠금:**
+**잠금 구성 옵션:**
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
@@ -219,15 +219,15 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 다음 예에서는 다음 옵션과 함께 Adobe Commerce을 설치합니다.
 
-* 응용 프로그램이 `localhost`의 웹 서버 docroot에 상대적인 `magento2` 디렉터리에 설치되어 있고 관리자의 경로는 `admin`이므로 다음과 같습니다.
+* 애플리케이션 위치는 웹 서버 docroot `localhost` 에 상대적인 `magento2` 디렉토리에 설치되며 관리자 경로는 다음과 같습니다`admin`.
 
-  상점 URL은 `http://127.0.0.1`입니다.
+  상점 URL `http://127.0.0.1`
 
-* 데이터베이스 서버가 웹 서버와 동일한 호스트에 있습니다.
+* 데이터베이스 서버는 웹 서버와 동일한 호스트 상에 있습니다.
 
-  데이터베이스 이름은 `magento`이고 사용자 이름과 암호는 모두 `magento`입니다.
+  데이터베이스 이름은 `magento`이고 사용자 이름과 암호 모두 `magento`
 
-* 서버 재작성 사용
+* 서버 다시 쓰기 사용
 
 * 관리자는 다음과 같은 속성을 갖습니다.
 
@@ -301,12 +301,12 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
    * 이름과 성은 `Magento User`입니다.
    * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
-   * 전자 메일 주소는 `user@example.com`입니다.
+   * 이메일 주소는 `user@example.com`
 
-* 기본 언어는 `en_US`입니다(미국 영어).
-* 기본 통화는 미국 달러입니다
+* 기본 언어는 (미국 영어)입니다 `en_US` .
+* 기본 통화는 미국 달러입니다.
 * 기본 시간대는 미국 중부(아메리카/시카고)입니다.
-* 설치 관리자는 먼저 테이블과 스키마를 설치하기 전에 데이터베이스를 정리합니다
+* 설치 관리자는 테이블 및 스키마를 설치하기 전에 먼저 데이터베이스를 정리합니다
 * 판매 주문 증분 접두사 `ORD$`을(를) 사용할 수 있습니다. 특수 문자 [`$`]이(가) 포함되어 있으므로 값을 큰따옴표로 묶어야 합니다.
 * 세션 데이터가 데이터베이스에 저장됩니다.
 * 서버 재작성 사용
@@ -327,7 +327,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 >
 >명령을 한 줄에 입력하거나 앞의 예제와 같이 각 줄의 끝에 `\` 문자를 사용하여 입력해야 합니다.
 
-설치가 완료되면 다음과 같은 메시지가 표시됩니다.
+설치에 성공하면 다음과 같은 메시지가 좋아요 표시됩니다.
 
 ```
 Post installation file permissions check...

@@ -2,7 +2,7 @@
 title: 잠금 공급자 구성
 description: Adobe Commerce 배포에서 중복 cron 작업 및 cron 그룹이 실행되지 않도록 하려면 다음 단계를 따르십시오.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerce은 데이터베이스를 사용하여 기본적으로 잠금을 저장합니다. 서버에 여러 노드가 있는 경우 Zookeeper를 잠금 공급자로 사용하는 것이 좋습니다.
 
-클라우드 인프라에서 Adobe Commerce을 실행하는 경우 잠금 공급자 설정을 구성할 필요가 없습니다. 프로비전 프로세스 중에 Pro 프로젝트에 대한 파일 잠금 공급자를 구성합니다. [클라우드 변수](https://devdocs.magento.com/cloud/env/variables-cloud.html)를 참조하십시오.
+클라우드 인프라에서 Adobe Commerce을 실행하는 경우 잠금 공급자 설정을 구성할 필요가 없습니다. 프로비전 프로세스 중에 Pro 프로젝트에 대한 파일 잠금 공급자를 구성합니다. [클라우드 변수](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
 
 ### 명령 사용
 

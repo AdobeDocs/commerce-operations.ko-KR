@@ -2,7 +2,7 @@
 title: Adobe Commerce 소프트웨어 다운로드
 description: Adobe Commerce 소프트웨어를 다운로드하는 방법을 알아봅니다.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 소프트웨어를 가져오는 방법
 
-[제품 사용 가능 페이지](https://devdocs.magento.com/release/availability.html)에서 새로운 기능 및 릴리스의 사용 가능 여부를 확인하고 해당 기능을 가져오는 방법을 알아보세요.
+[제품 사용 가능 페이지](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)에서 새로운 기능 및 릴리스의 사용 가능 여부를 확인하고 해당 기능을 가져오는 방법을 알아보세요.
 
 Adobe Commerce 설치를 시작하려면 다음 표를 참조하십시오.
 
