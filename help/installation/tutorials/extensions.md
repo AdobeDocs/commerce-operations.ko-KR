@@ -2,9 +2,9 @@
 title: 타사 확장 관리
 description: Adobe Commerce 확장을 설치, 활성화, 업그레이드 및 제거하려면 다음 단계를 따르십시오.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 - 테마(상점 및 관리자의 모양 및 느낌 변경)
 - 언어 패키지(상점 및 관리자 현지화)
 
->[!TIP]
->
->이 항목에서는 명령줄 인터페이스를 사용하여 Commerce Marketplace에서 구입한 타사 확장을 관리하는 방법을 설명합니다. 동일한 절차를 사용하여 _any_ 확장을 설치할 수 있습니다. 필요한 것은 확장의 작성기 이름과 버전입니다. 찾으려면 확장의 `composer.json` 파일을 열고 `"name"` 및 `"version"`의 값을 확인합니다.
+이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구입한 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions)를 참조하십시오.
+
+동일한 절차를 사용하여 _any_ 확장을 설치할 수 있습니다. 필요한 것은 확장의 작성기 이름과 버전입니다. 찾으려면 확장의 `composer.json` 파일을 열고 `"name"` 및 `"version"`의 값을 확인합니다.
 
 ## 설치
 
@@ -70,7 +70,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
    ![마켓플레이스 구매 기록](../../assets/installation//marketplace-my-purchases.png)
 
-1. 설치할 확장을 찾아 **기술 정보**&#x200B;를 클릭합니다.
+1. 설치할 확장을 찾아 구성 요소 이름과 버전을 메모합니다.
 
    ![기술적 세부 정보에 확장의 작성기 이름이 표시됨](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -241,13 +241,13 @@ bin/magento module:status
    - 작성기 기반 확장의 경우 Adobe Commerce `composer.json` 파일에서 확장을 제거합니다.
 
      ```bash
-     composer remove <package-name>
+     composer remove <component-name>
      ```
 
    - 작성기 기반이 아닌 확장의 경우 Adobe Commerce 프로젝트 저장소에서 물리적 파일을 제거합니다.
 
      ```bash
-     rm -rf app/code/<vendor-name>/<module-name>
+     rm -rf app/code/<vendor-name>/<component-name>
      ```
 
 1. `config.php` 파일이 Adobe Commerce 프로젝트 리포지토리에서 소스 제어에서 사용 중인 경우 `config.php` 파일에서 확장을 제거하십시오.
