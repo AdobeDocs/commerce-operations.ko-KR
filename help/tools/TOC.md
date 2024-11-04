@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 4764716fe6fbc043f96843195f9d25b6d3517a40
+source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
    - [패치](site-wide-analysis-tool/patches.md)
 
 - 품질 패치 도구 {#quality-patches-tool}
+   - [[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
