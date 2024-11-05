@@ -3,9 +3,9 @@ title: 'ACSD-48216: *UPDATE* 공정에서 *AUTO_INCREMENT of inventory_source_it
 description: ACSD-48216 패치를 적용하여 *UPDATE* 작업 시 inventory_source_item* 테이블의 *AUTO_INCREMENT가 증가하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Inventory, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ ACSD-48216 패치는 *UPDATE* 작업 시 *inventory_source_item* 테이블의 *A
 
 ## 문제
 
-*inventory_source_item* 테이블의 *AUTO_INCREMENT*&#x200B;이(가) *UPDATE* 작업에서 증가합니다.
+`inventory_source_item` 테이블의 `AUTO_INCREMENT`이(가) `UPDATE` 작업에서 증가합니다.
 
 <u>재현 단계</u>:
 
-1. *inventory_source_item* 테이블의 *AUTO_INCREMENT*&#x200B;의 현재 값을 확인합니다.
+1. `inventory_source_item` 테이블의 `AUTO_INCREMENT`의 현재 값을 확인합니다.
 
 ```bash
 MySQL > show create table inventory_source_item;
@@ -75,29 +75,27 @@ CREATE TABLE `inventory_source_item` (
 }
 ```
 
-1. *inventory_source_item* 테이블의 *AUTO_INCREMENT* 값을 다시 확인하십시오.
+1. `inventory_source_item` 테이블의 `AUTO_INCREMENT` 값을 다시 확인하십시오.
 
 <u>예상 결과</u>:
 
-*inventory_source_item* 테이블의 *AUTO_INCREMENT* 값이 모든 업데이트 작업 후에 증가하지 않습니다.
+`inventory_source_item` 테이블의 `AUTO_INCREMENT` 값은 모든 업데이트 작업 후에 증가하지 않습니다.
 
 <u>실제 결과</u>:
 
-*inventory_source_item* 테이블의 *AUTO_INCREMENT* 값이 업데이트 작업마다 증가합니다.
+`inventory_source_item` 테이블의 `AUTO_INCREMENT` 값은 모든 업데이트 작업 후에 증가합니다.
 
 ## 패치 적용
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
 
 ## 관련 읽기
 
-[!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
-
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
-
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 대해 패치를 사용할 수 있는지 확인[
+* Commerce 구현 플레이북의 [데이터베이스 테이블 수정 우수 사례](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
