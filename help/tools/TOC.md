@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 2a751e4548ab032a1d9339efeb66559c3836e58e
+source-git-commit: 5049afe19ff7e25983c8a21544677c64473e2806
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6116'
 ht-degree: 0%
 
 ---
@@ -645,6 +645,7 @@ ht-degree: 0%
          - [ACSD-59366: 팀 목록에 표시되지 않는 비활성화된 사용자가 있는 팀 삭제](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: CSP 오류로 인해  [!DNL Google Tag Manager] 에 대한 사용자 지정 스크립트가 실행되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: 다른 공유 카탈로그와 동일한 그룹 ID를 사용하는 공유 카탈로그를 삭제하는 도중 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
+         - [ACSD-60673: 체크아웃 시 여러 결제 방법에 대해 [!UICONTROL Cart Price Rule] 문제가 해결되었습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
       - v1.1.53 {#v1-1-53}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930: 회사 흐름의 성과 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
