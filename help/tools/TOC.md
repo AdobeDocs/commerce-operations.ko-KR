@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 4ea3dede58424662be7e317807ff9b2d128cd261
+source-git-commit: 8fa763e2c5ec006f638b7265c49f4576a6ab3b32
 workflow-type: tm+mt
-source-wordcount: '6128'
+source-wordcount: '6137'
 ht-degree: 0%
 
 ---
@@ -650,6 +650,7 @@ ht-degree: 0%
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930: 회사 흐름의 성과 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
          - [ACSD-60584: 한 웹 사이트에 대해 생성된 액세스 토큰은 다른 웹 사이트의 정보에 액세스할 수 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
+         - [ACSD-61528: GraphQL을 사용하여 역할을 검색하면 결과가 반환되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: &quot;system.log&quot;에 환경 에뮬레이션 중첩 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
       - v1.1.54 {#v1-1-54}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
