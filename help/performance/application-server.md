@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 620be59a5b66bd4f55997951c59e473ac14a5c21
+source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2082'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ git push
 
 1. [2.4.7-appserver 분기](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)의 클라우드 템플릿을 사용하여 클라우드 인프라에 Adobe Commerce을 배포합니다.
 1. 모든 Commerce 사용자 지정 및 확장이 GraphQL Application Server와 호환되는지 확인합니다.
-1. 인스턴스에 대해 `CRYPT_KEY` 환경 변수가 설정되어 있는지 확인하십시오. 클라우드 프로젝트 포털(온보딩 UI)에서 이 변수의 상태를 확인할 수 있습니다.
+1. 인스턴스에 대해 `CRYPT_KEY` 환경 변수가 설정되어 있는지 확인하십시오. 클라우드 콘솔에서 이 변수의 상태를 확인할 수 있습니다.
 1. Commerce Cloud 프로젝트를 복제합니다.
 1. `application-server/.magento/.magento.app.yaml.sample`의 이름을 `application-server/.magento/.magento.app.yaml`(으)로 변경하고 필요한 경우 .magento.app.yaml에서 설정을 조정합니다.
 1. `project_root/.magento/routes.yaml` 파일에서 다음 경로의 구성 주석을 제거하여 `/graphql` 트래픽을 GraphQL Application Server로 리디렉션합니다.
