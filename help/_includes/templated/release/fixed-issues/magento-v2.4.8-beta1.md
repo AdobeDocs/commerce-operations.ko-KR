@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
+source-git-commit: e05e4e4ef547bfb95fdcc53c2095ef0725b0a6e1
 workflow-type: tm+mt
-source-wordcount: '14732'
+source-wordcount: '14731'
 ht-degree: 0%
 
 ---
@@ -809,10 +809,10 @@ laminas/laminas-validator
    * _참고 사항 수정_: 이제 필요한 상태의 새 국가가 추가되면 시스템에서 수정된 국가만 &#39;general/region/state_required&#39; 구성에 추가되므로 해당 지역이 비활성화되었다고 가정하는 사용자 지정 코드가 중단되지 않습니다. 이전에는 필수 상태의 새 국가를 추가하면 &#39;general/region/state_required&#39; 구성이 필수 상태의 기본 국가로 재설정되므로 구입이 중단될 가능성이 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/37796>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-   * _참고 사항 수정_: 복잡한 `calc` 식을 사용하는 php 및 nodejs 라이브러리(grunt) 간 컴파일 감소 차이
-   * _GitHub 문제_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
-   * _GitHub 코드 기여_: 업데이트 wikimedia/less.php:^5.x 후 php &amp; nodejs 라이브러리(grunt) 간 컴파일 감소 차이를 수정하십시오.
+* _AC-9712_: 복잡한 `calc` 식을 사용하는 php 및 nodejs 라이브러리(grunt) 간의 컴파일이 적은 차이
+   * _참고 사항 수정_: 업데이트 wikimedia/less.php:^5.x 후 php &amp; nodejs 라이브러리(grunt) 간의 컴파일 감소 차이를 수정하십시오.
+   * _GitHub 문제_: <https://github.com/magento/magento2/issues/37841>
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_: 부분 인덱싱을 실행할 때 &quot;기본 테이블 또는 뷰를 찾을 수 없음&quot; 오류가 발생합니다
    * _참고 사항 수정_: 이제 보조 db 연결의 경우 부분 다시 색인이 큰 변경 로그에서 올바르게 작동합니다
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/ba25af8a>
