@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ laminas/laminas-validator
 
 ## 해결된 문제
 
-Magento Open Source 2.4.8 코어 코드에서 254개의 문제를 해결했습니다. 이 릴리스에 포함된 해결된 문제의 하위 집합은 아래에 설명되어 있습니다.
+Magento Open Source 2.4.8 코어 코드에서 253개 문제를 해결했습니다. 이 릴리스에 포함된 해결된 문제의 하위 집합은 아래에 설명되어 있습니다.
 
 ### API
 
@@ -1143,10 +1143,6 @@ bin/magento config:twofactorauth/google/leeway 값 설정
 * _AC-12128_: Prototype.js 보안 취약점 수정 CVE-2020-27511
    * _참고 사항 수정_: 시스템이 Prototype.js 1.7.3의 보안 취약점 CVE-2020-27511을 해결하기 위해 업데이트되어 시스템의 전반적인 보안이 향상되었습니다. 이 업데이트 이전에는 제작된 HTML 태그를 제거하여 시스템에 ReDOS(Regular Expression Denial of Service)가 적용되기 쉬웠습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _참고 사항 수정_: Prototype.js 보안 취약점 수정 CVE-2020-27511
-   * _GitHub 문제_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub 코드 기여도_: Prototype.js 1.7.3의 보안 취약점 CVE-2020-27511을 해결하기 위해 시스템이 업데이트되어 시스템의 전반적인 보안이 향상되었습니다. 이 업데이트 이전에는 제작된 HTML 태그를 제거하여 시스템에 ReDOS(Regular Expression Denial of Service)가 적용되기 쉬웠습니다.
 * _AC-12189_: Grunt Less는 sourcemap에 pub/ 접두사를 사용합니다.
    * _참고 사항 수정_: 이제 grunt를 사용할 때 경로용 /pub 접두사 없이 less/css sourcemap을 생성하여 웹 서버 구성에서 해결 방법이 필요하지 않습니다. 이전에는 sourcemap 경로에서 /pub 접두사를 사용하면 웹 서버의 특정 구성이 올바르게 작동해야 했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38837>
