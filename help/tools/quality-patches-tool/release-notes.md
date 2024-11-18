@@ -2,7 +2,7 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - 우선 순위가 다른 여러 할인 및 **[!UICONTROL Maximum Qty Discount is Applied To]**&#x200B;이(가) 제품에 적용될 때 **[!UICONTROL Cart Price Rule]** 할인이 잘못 계산되는 문제가 수정되었습니다.
 * **ACSD-61667**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 매장 내 픽업이 많은 소스의 경우 배송 만들기에 대한 인벤토리 성능을 향상시킵니다.
 * **ACSD-61969**(Adobe Commerce >=2.4.7 &lt;2.4.8) - 사용자가 쿠폰 코드가 구성된 것과 정확히 일치하도록 대/소문자 구분 쿠폰 코드를 입력해야 하는 문제를 해결했습니다.
-* 업데이트된 패치: ACSD-54989, ACSD-60632
+* 업데이트된 버전: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788**(Adobe Commerce >=2.4.7 &lt;2.4.8) - CSP(콘텐츠 보안 정책) 오류로 인해 [!DNL Google Tag Manager]에 대한 사용자 지정 스크립트가 실행되지 않는 문제를 해결합니다.
 * **ACSD-61322**(Adobe Commerce >=2.4.6 &lt;2.4.8) - [!UICONTROL Products/Categories]이(가) 기본값(일반 그룹)의 [!UICONTROL Shared Catalog]에 할당되지 않은 문제가 여전히 XML 사이트 맵에 포함되어 있는 문제를 해결했습니다.
 * **ACSD-61366**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - DB 연결에 대해 포트를 지정한 경우 *Port가 호스트 매개 변수 내에서 구성되어야 함* 오류로 인해 실패한 여러 작업에서 `setup:static-content:deploy --jobs 4` 명령이 실행되는 문제를 해결했습니다.
-* 업데이트된 버전: **ACSD-54989**, **ACSD-60632**
+* 업데이트된 패치: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
