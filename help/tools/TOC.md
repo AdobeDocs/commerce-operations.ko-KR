@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: b6ba3f3381c60e0158c85d77f70899f16ad7ca7b
+source-git-commit: f684470add56a13dc7bf898f50a73c792e26673c
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,8 @@ ht-degree: 0%
          - [ACSD-61200: 판매 합계 계산에서 할인 세금 보상을 수정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: 이름 및 성 필드의 이메일 주소가 잘못된 주문 확인을 보냅니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
          - [ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+      - v1.1.55 {#v1-1-55}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 명령줄 도구 참조 {#cli-reference}
