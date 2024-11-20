@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ _형용사_
 
 사실상 또는 전적으로 인터넷을 통해 기능하는 비즈니스와 달리, 영구적인 물리적 위치가 있는 소매 비즈니스.
 
-[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) 및 [Order Management](https://omsdocs.magento.com/getting-started/terminology/)의 경우 이 저장소는 제품 수량 추적, 주문 배송 및 매장 내 픽업 지원을 위한 소스입니다.
+[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) 및 [Order Management](#oms)의 경우 이 저장소는 제품 수량 추적, 주문 배송 및 매장 내 픽업 지원을 위한 소스입니다.
 
 _용어 특성:_
 
@@ -1046,7 +1046,11 @@ _용어 특성:_
 
 _명사_
 
-[OMS](https://omsdocs.magento.com)은(는) Adobe의 Order Management 시스템 제공입니다.
+OMS는 Adobe의 Order Management 시스템 제품입니다.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management(OMS)가 서비스 종료에 도달하여 더 이상 지원되지 않습니다.
 
 OMS는 모든 판매 채널에서 재고를 관리, 판매 및 이행할 수 있는 유연하고 경제적인 솔루션입니다.
 OMS는 매끄러운 고객 경험을 제공하여 비용을 절감하면서 판매를 증가시키고 출시 시간을 단축합니다.
@@ -1058,7 +1062,7 @@ OMS 기능은 다음과 같습니다.
 * 더욱 쉽고 신속한 고객 서비스
 * 향상된 고객 경험 및 충성도
 
-자세히 알아보기: [OMS 시작하기](https://omsdocs.magento.com/en/getting-started/), [OMS 문서 사이트](https://omsdocs.magento.com/en/)
+자세히 알아보기: [보관된 OMS 문서 사이트](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _용어 특성:_
 
