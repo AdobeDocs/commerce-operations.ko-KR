@@ -2,7 +2,7 @@
 title: 번역 사전 및 언어 패키지
 description: 번역 사전을 생성하고 언어 패키지를 빌드하는 방법에 대해 알아봅니다.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 1. [단어와 구 수집 및 번역](#generate-a-translation-dictionary). `--magento` 매개 변수는 필수입니다.
 1. [언어 패키지 명령 실행](#run-the-language-package-command).
 1. [디렉터리 및 파일 만들기](#create-directories-and-files).
-1. (선택 사항.) [언어에 대한 여러 패키지를 구성합니다](#configure-multiple-packages-for-a-language).
+1. (선택 사항입니다.) [한 언어에 대해 여러 패키지를 구성합니다](#configure-multiple-packages-for-a-language).
 
 ### 언어 패키지 명령 실행
 
@@ -284,8 +284,8 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
    
    use Magento\Framework\Component\ComponentRegistrar;
@@ -301,11 +301,10 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-   
+   <!--
+   Copyright Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>
