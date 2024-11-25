@@ -2,7 +2,7 @@
 title: 기본 디렉터리 경로 사용자 지정
 description: MAGE_DIRS 변수를 사용하여 절대 경로 배열을 설정합니다.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
+source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
   ```php
   <?php
   /**
-   * Copyright Adobe
+   * Copyright [first year code created] Adobe
    * All Rights Reserved.
    */
   
