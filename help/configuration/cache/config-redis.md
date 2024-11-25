@@ -3,7 +3,7 @@ title: Redis 구성
 description: Redis 기능에 대한 개요를 확인하고 Redis 구성을 시작하십시오.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Redis 소프트웨어 설치 및 구성은 이 안내서의 범위를 벗어납�
 
 RDB 및 AOF 옵션을 동시에 활성화할 수도 있습니다. 지속성 옵션의 장점과 단점을 포함한 자세한 내용은 [Redis 지속성 설명서](https://redis.io/topics/persistence)를 참조하십시오.
 
-캐시 인스턴스의 경우 전체 Commerce 캐시를 저장할 수 있을 만큼 크도록 인스턴스를 설정합니다. 크기 요구 사항은 제품 수 및 스토어 조회수와 같은 다양한 요인에 따라 다릅니다. 시작점으로 파일 시스템의 캐시 폴더 크기를 사용할 수 있습니다. 예를 들어, 파일 시스템의 `var/cache` 폴더가 5GB인 경우 시작하려면 최소 5GB로 Redis 인스턴스를 설정하십시오. Commerce 캐시를 복원할 수 있으므로 캐시 인스턴스에 지속성이 필요하지 않습니다. [Redis 캐시 가이드](https://redis.io/docs/manual/eviction/)를 참조하세요.
+캐시 인스턴스의 경우 전체 Commerce 캐시를 저장할 수 있을 만큼 크도록 인스턴스를 설정합니다. 크기 요구 사항은 제품 수 및 스토어 조회수와 같은 다양한 요인에 따라 다릅니다. 시작점으로 파일 시스템의 캐시 폴더 크기를 사용할 수 있습니다. 예를 들어, 파일 시스템의 `var/cache` 폴더가 5GB인 경우 시작하려면 최소 5GB로 Redis 인스턴스를 설정하십시오. Commerce 캐시를 복원할 수 있으므로 캐시 인스턴스에 지속성이 필요하지 않습니다. [Redis 캐시 가이드](https://redis.io/docs/latest/develop/use/)를 참조하세요.
 
 성능 조정을 위해 비동기 삭제에 대해 다음 설정을 활성화할 수 있습니다. 이러한 설정은 Redis의 동작을 변경하지 않습니다.
 

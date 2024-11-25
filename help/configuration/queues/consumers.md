@@ -1,10 +1,10 @@
 ---
-title: 메시지 보내기 큐 소비자
-description: Adobe Systems Commerce 메시지 큐 소비자와 관련된 기능 및 시스템 구성 설정에 대해 알아봅니다.
+title: 메시지 대기열 소비자
+description: 관련된 기능 및 시스템 구성 설정을 포함하여 Adobe Commerce 메시지 대기열 소비자에 대해 알아봅니다.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -36,17 +36,17 @@ ht-degree: 0%
 | `inventory.reservations.updateSalabilityStatus` | + | + | + |
 | 재고에 지정된 각 제품의 판매 가능 수량을 비동기식으로 업데이트합니다. [!DNL Inventory Management]을(를) 사용하는 경우 이 소비자는 항상 실행 중이어야 합니다. |                |                         |                     |
 | `inventory.indexer.sourceItem` | + | + | + |
-| 소스 항목을 비동기적으로 다시 색인화합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Stock/Source reindex strategy]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#inventory-indexer-settings)이(가) &quot;[!UICONTROL asynchronous]&quot;(으)로 설정된 경우 필요합니다. |                |                         |                     |
+| 소스 항목을 비동기적으로 다시 인덱싱합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Stock/Source reindex strategy]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#inventory-indexer-settings)이(가) &quot;[!UICONTROL asynchronous]&quot;(으)로 설정된 경우 필요합니다. |                |                         |                     |
 | `inventory.indexer.stock` | + | + | + |
-| 주식을 비동기적으로 다시 인덱싱합니다. 관리 시스템 구성 설정에서 가 [**[!UICONTROL Stock/Source reindex strategy]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#inventory-indexer-settings) &quot;[!UICONTROL asynchronous]&quot;로 설정되어 있을 때 필요합니다. |                |                         |                     |
+| 비동기적으로 스톡을 다시 인덱싱합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Stock/Source reindex strategy]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#inventory-indexer-settings)이(가) &quot;[!UICONTROL asynchronous]&quot;(으)로 설정된 경우 필요합니다. |                |                         |                     |
 | `matchCustomerSegmentProcessor` | + | + |                     |
-| 임시 데이터베이스 테이블을 만들고, 각 [고객 세그먼트](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments) 를 이 테이블로 이동하고, 세그먼트 ID와 일치하는 모든 세그먼트를 삭제하고, 세그먼트 ID를 지표로 사용하여 고객 세그먼트에 복사합니다. 이 모든 작업은 트랜잭션에서 수행되므로 무언가가 실패하면 트랜잭션이 실행되기 전의 상태로 롤백됩니다. 거래가 끝난 후 소비자는 임시 테이블을 내려놓는다. |                |                         |                     |
+| 임시 데이터베이스 테이블을 만들고, 각 [고객 세그먼트](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)를 해당 테이블로 이동하고, 세그먼트 ID와 일치하는 모든 세그먼트를 삭제하고, 세그먼트 ID를 표시기로 사용하여 고객 세그먼트에 복사합니다. 이 작업은 모두 트랜잭션에서 수행되므로, 어떤 것이 실패하면 트랜잭션이 이 실행 전의 상태로 롤백됩니다. 거래가 끝난 후 소비자는 임시 테이블을 내려놓는다. |                |                         |                     |
 | `media.content.synchronization` | + | + | + |
 | 제품, 카테고리, CMS 블록 및 CMS 페이지에 대해 할당된 미디어에 대한 링크가 자산에 올바르게 할당되도록 합니다. 더 이상 사용되지 않는 이전 에셋을 제거합니다. |                |                         |                     |
 | `media.gallery.renditions.update` | + | + | + |
-| 미디어 자산 경로를 생성하고 유효성을 검사합니다. 자산의 절대 경로는 미디어 디렉터리 내에서 서버의 위치에 따라 결정됩니다. 필요한 경우 이미지 크기가 조정되고 생성된 경로 내의 미디어 디렉터리에 복사됩니다. |                |                         |                     |
+| 미디어 자산 경로를 생성하고 확인합니다. 에셋의 절대 경로는 미디어 디렉터리 내에서 서버의 위치에 따라 결정됩니다. 필요한 경우 이미지 크기가 조정되고 생성된 경로 내의 미디어 디렉터리에 복사됩니다. |                |                         |                     |
 | `media.gallery.synchronization` | + | + | + |
-| 이미지 파일을 데이터베이스 테이블로 `media_gallery_asset` 가져옵니다. |                |                         |                     |
+| `media_gallery_asset` 데이터베이스 테이블로 이미지 파일을 가져옵니다. |                |                         |                     |
 | `media.storage.catalog.image.resize` | + | + | + |
 | 카탈로그 이미지를 비동기적으로 [크기 조정](https://developer.adobe.com/commerce/frontend-core/guide/themes/configure/#resize-catalog-images)합니다. |                |                         |                     |
 | `negotiableQuotePriceUpdate` |                | + |                     |
@@ -68,11 +68,11 @@ ht-degree: 0%
 | `saveConfigProcessor` | + |                         | + |
 | 저장 작업을 메시지 대기열에 배치하여 저장소 구성 변경 사항을 비동기적으로 저장하므로 많은 저장소 수준 구성을 포함하는 배포의 성능이 향상될 수 있습니다. [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) 모듈을 사용하는 데 필요합니다. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
-| 일회용 쿠폰을 [여러 번 사용할 수 있는 문제를](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) 방지합니다. |                |                         |                     |
+| 일회용 쿠폰을 여러 번 사용할 수 있는 문제를 방지합니다. |                |                         |                     |
 | `sharedCatalogUpdateCategoryPermissions` |                | + |                     |
 | 공유 카탈로그 범주에 할당된 범주를 업데이트합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Shared Catalogs]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) 옵션을 사용하도록 설정한 경우 필수입니다. |                |                         |                     |
 | `sharedCatalogUpdatePrice` |                | + |                     |
-| 공유 카탈로그에 있는 각 제품의 가격을 업데이트합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Shared Catalogs]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) 옵션이 활성화된 경우 필요합니다. |                |                         |                     |
+| 공유 카탈로그의 각 제품에 대한 가격을 업데이트합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Shared Catalogs]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) 옵션을 사용하도록 설정한 경우 필수입니다. |                |                         |                     |
 | `quoteItemCleaner` | + | + |                     |
 | 제품이 카탈로그에서 삭제되거나 장바구니에서 제거될 때 유효하지 않거나 비활성 가격 견적을 삭제합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/quotes/quotes) 옵션을 사용하도록 설정한 경우 필수입니다. |                |                         |                     |
 | `sales.rule.quote.trigger.recollect` | + | + | + |

@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.3 보안 패치 릴리스 정보
 description: Adobe Commerce 버전 2.4.3의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -80,7 +80,7 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 **미디어 갤러리 폴더에 대한 관리자 액세스를 제한했습니다**. 이제 기본 미디어 갤러리 권한에서는 구성에 의해 명시적으로 허용되는 디렉터리 작업(보기, 업로드, 삭제 및 만들기)만 허용합니다. 관리자 사용자는 `catalog/category` 또는 `wysiwyg` 디렉터리 외부에서 업로드된 미디어 갤러리를 통해 더 이상 미디어 자산에 액세스할 수 없습니다. 미디어 자산에 액세스하려는 관리자는 해당 미디어 자산을 명시적으로 허용된 폴더로 이동하거나 구성 설정을 조정해야 합니다. [Media Library 폴더 권한 수정](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)을 참조하십시오. <!-- B2B-1897-->
 
-**GraphQL 쿼리 복잡성에 대한 제한을 낮춥니다**. DOS(서비스 거부) 공격을 방지하기 위해 GraphQL에서 허용하는 최대 쿼리 복잡성을 낮췄습니다. [GraphQL 보안 구성](https://developer.adobe.com/commerce/webapi/graphql/security-configuration.html)을 참조하십시오. <!-- PWA-1700-->
+**GraphQL 쿼리 복잡성에 대한 제한을 낮춥니다**. DOS(서비스 거부) 공격을 방지하기 위해 GraphQL에서 허용하는 최대 쿼리 복잡성을 낮췄습니다. [GraphQL 보안 구성](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/)을 참조하십시오. <!-- PWA-1700-->
 
 **최근 침투 테스트 취약점**&#x200B;이 이 릴리스에서 수정되었습니다. <!-- MC-42431-->
 
