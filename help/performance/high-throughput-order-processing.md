@@ -3,9 +3,9 @@ title: 체크아웃 성능 모범 사례
 description: Adobe Commerce 사이트에서 체크아웃 경험의 성능을 최적화하는 방법을 알아봅니다.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Commerce의 [체크아웃](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) 프로세스는 Storefront 경험의 중요한 측면입니다. 기본 제공 [장바구니](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) 및 [체크아웃](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) 기능을 사용합니다.
 
-성능은 사용자 경험을 좋게 유지하는 데 중요합니다. 성능 기대에 대한 자세한 내용은 [성능 벤치마크 요약](../implementation-playbook/infrastructure/performance/benchmarks.md)을(를) 검토하십시오. **처리량이 많은 주문 처리**&#x200B;에 대해 다음 옵션을 구성하여 체크아웃 성능을 최적화할 수 있습니다.
+성능은 사용자 경험을 좋게 유지하는 데 중요합니다. **처리량이 많은 주문 처리**&#x200B;에 대해 다음 옵션을 구성하여 체크아웃 성능을 최적화할 수 있습니다.
 
 - [AsyncOrder](#asynchronous-order-placement) - 큐를 사용하여 주문을 비동기적으로 처리합니다.
 - [지연된 합계 계산](#deferred-total-calculation)—체크아웃이 시작될 때까지 주문 합계에 대한 계산을 지연합니다.

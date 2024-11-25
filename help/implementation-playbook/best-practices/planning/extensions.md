@@ -4,9 +4,9 @@ description: 타사 Adobe Commerce 확장으로 인한 성능 문제를 방지�
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 Adobe Commerce 타사 확장(모듈)은 상점 성능에 부정적인 영향을 줄 수 있는 다양한 문제를 일으킬 수 있는 잠재력이 있습니다. 다음 모범 사례를 따라 이러한 문제를 방지할 수 있습니다.
 
+- 가능한 모든 곳에서 [프로세스 외부 확장성](https://developer.adobe.com/commerce/extensibility/)을 사용하여 Commerce 통합 및 사용자 지정을 개발하여 유지 관리 및 업그레이드를 용이하게 합니다.
 - [Commerce Marketplace](https://marketplace.magento.com/extensions.html)과 같은 신뢰할 수 있는 소스에서 타사 확장을 다운로드하고 구입합니다.
 - 모든 타사 확장을 최신 버전으로 업데이트합니다.
 - 타사 확장을 계속 업데이트할 수 없는 경우에는 다른 확장을 사용하는 것이 좋습니다.

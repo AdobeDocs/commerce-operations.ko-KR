@@ -3,9 +3,9 @@ title: 엔터프라이즈 참조 아키텍처
 description: Adobe의 최신 컴포저블 상거래 기술을 사용하여 Adobe Commerce을 구현하는 방법에 대해 알아봅니다.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 �
 
 >[!NOTE]
 >
->자세한 내용은 [Digital Experience 블루프린트](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview)를 참조하십시오.
+>자세한 내용은 다음 리소스를 참조하십시오.
+>
+>- 자세한 내용은 [Digital Experience 블루프린트](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview)를 참조하십시오.
+>- [고객 경험 개인화](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
 
 
 ## 서드파티 시스템과의 통합
@@ -63,6 +66,11 @@ Adobe은 통합 및 사용자 지정을 빌드하기 위한 다음 개발자 도
 - [**이벤트**](https://developer.adobe.com/commerce/extensibility/events/)—사용자 지정 이벤트 트리거를 사용하여 다른 확장 가능한 개발 도구와 상호 작용합니다.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) - 웹후크를 사용하여 Commerce과 서드파티 시스템 간의 상호 작용을 자동으로 트리거합니다.
 - [**관리자 UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—판매자를 위한 새 페이지 및 기능을 사용하여 Commerce 관리자를 사용자 지정하고 개선합니다.
+- [**통합 시작 키트**](https://developer.adobe.com/commerce/extensibility/starter-kit/) - 참조 통합, 온보딩 스크립트 및 표준화된 아키텍처를 통해 백오피스 통합을 가속화합니다.
+
+>[!NOTE]
+>
+>[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
 
 ## Storefront 서비스
 

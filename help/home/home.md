@@ -2,10 +2,10 @@
 title: 운영 안내서 홈
 description: Adobe Commerce 시스템 관리 및 운영 제품 설명서의 색인을 찾아봅니다.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 20%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 20%
       <p>Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 검토하십시오.</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="성능" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="구현" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>성능 모범 사례</strong></a>
-      <p>이러한 권장 사항을 사용하여 Adobe Commerce 배포의 성능을 최적화합니다.</p>
+      <a href="../implementation-playbook/overview.md"><strong>구현 플레이북</strong></a>
+      <p>성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.</p>
     </div>
   </td>
   <td valign="top">
@@ -45,33 +45,13 @@ ht-degree: 20%
       <p>Adobe Commerce 판매자가 보안 환경을 유지 관리하는 방법을 알아봅니다.</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="구현" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="성능" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>구현 플레이북</strong></a>
-      <p>성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="작업" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong>운영 플레이북</strong></a>
-      <p>비즈니스가 성공적인 전자 상거래 사이트를 운영할 수 있도록 하는 방법에 대해 알아봅니다.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="엔터프라이즈" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      규모에 맞는 <a href="../commerce-at-scale/overview.md"><strong>Commerce</strong></a>
-      <p>Adobe Commerce와 Adobe Experience Manager를 사용하여 규모에 맞게 경험을 제공하는 방법에 대해 알아봅니다.</p>
+      <a href="../performance/overview.md"><strong>성능 모범 사례</strong></a>
+      <p>이러한 권장 사항을 사용하여 Adobe Commerce 배포의 성능을 최적화합니다.</p>
     </div>
   </td>
 </tr>

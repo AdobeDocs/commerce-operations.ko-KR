@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트의 계획 단계에 대한 구현 모�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
@@ -93,12 +93,6 @@ ht-degree: 1%
   </tr>
 </tbody>
 </table>
-
-## 건축 디자인
-
-| 모범 사례 | 설명 |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [GRA(전역 참조 아키텍처)](../../architecture/global-reference/examples.md) | GRA 코드 베이스를 구성하는 일반적인 방법을 이해합니다. |
 
 ## 카탈로그 디자인
 

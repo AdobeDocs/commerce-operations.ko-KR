@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트의 개발 단계에 대한 코드 관�
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ ht-degree: 0%
 
 - 클라우드 인프라의 Adobe Commerce
 - Adobe Commerce 온-프레미스
-
-[GRA(전역 참조 아키텍처)](../../architecture/global-reference/overview.md)과(와) 단일 인스턴스 설치를 모두 다룹니다.
 
 ## 정의
 

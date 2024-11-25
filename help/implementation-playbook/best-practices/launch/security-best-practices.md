@@ -3,9 +3,9 @@ title: Commerce 사이트 및 인프라 보안
 description: Adobe Commerce 설치를 설정, 구성 및 업데이트할 때 보안 모범 사례를 구현하여 보안을 유지합니다.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -115,10 +115,6 @@ Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개�
 
 **Adobe Commerce이 온 프레미스에 배포됨**
 
-- [재해 복구 아이디어](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [백업 및 복구](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
 - [구성 설정 내보내기](../../../configuration/cli/export-configuration.md)
 
    - [구성 설정 가져오기](../../../configuration/cli/import-configuration.md)
@@ -133,7 +129,7 @@ Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개�
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **웹 응용 프로그램 방화벽 사용**—트래픽을 분석하고 웹 응용 프로그램 방화벽을 사용하여 알 수 없는 IP 주소로 전송되는 신용 카드 정보와 같은 의심스러운 패턴을 검색합니다.
 
-클라우드 인프라에 배포된 Adobe Commerce 설치는 [Fastly 서비스 통합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)에서 사용할 수 있는 기본 제공 WAF 서비스를 사용할 수 있습니다.
+클라우드 인프라에 배포된 Adobe Commerce 설치는 [Fastly 서비스 통합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)에서 사용할 수 있는 기본 WAF 서비스를 사용할 수 있습니다.
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **고급 암호 보안 설정 구성**—섹션 8.2.4의 PCI 데이터 보안 표준에서 권장하는 대로 강력한 암호를 설정하고 적어도 90일마다 변경합니다. [관리자 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)을 참조하십시오.
 

@@ -2,7 +2,7 @@
 title: 온프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 온프레미스 설치 빠른 시작
 
-이 페이지의 지침은 [자체 호스팅](../implementation-playbook/infrastructure/self-hosting/overview.md) 인프라에 Adobe Commerce을 설치하는 방법을 설명합니다. 기존 설치 업그레이드에 대한 지침은 [_업그레이드 안내서_](../upgrade/overview.md)&#x200B;를 참조하십시오.
+이 페이지의 지침에서는 자체 호스팅 인프라에 Adobe Commerce을 설치하는 방법을 설명합니다. 기존 설치 업그레이드에 대한 지침은 [_업그레이드 안내서_](../upgrade/overview.md)&#x200B;를 참조하십시오.
 
 Adobe은 [작성기](https://getcomposer.org/)를 사용하여 Adobe Commerce 구성 요소와 해당 종속성을 관리합니다. Composer를 사용하여 Adobe Commerce 메타패키지를 가져오면 다음과 같은 이점이 있습니다.
 

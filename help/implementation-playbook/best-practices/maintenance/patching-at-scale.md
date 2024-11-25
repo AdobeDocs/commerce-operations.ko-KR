@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="Anton Evers, 수석 기술 설계자, Adobe의 기여" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="안톤 에버스의 기여"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce 패치를 대규모로 배포하기 위한 우수 사례
 
-여러 Adobe Commerce 설치를 관리하는 경우 [패치](../../../upgrade/patches/apply.md)는 복잡한 프로세스일 수 있습니다. _중앙 집중식 패치_&#x200B;은(는) [전역 참조 아키텍처](../../architecture/global-reference/overview.md)의 필수 부분이며 엔터프라이즈를 위한 모범 사례입니다. 모든 Adobe Commerce 설치에 올바른 패치를 적용하는 데 도움이 됩니다. 이 항목에서는 모든 유형의 Adobe Commerce [패치](../../../upgrade/patches/overview.md)에 대해 중앙 집중식 패치 배포를 수행하는 방법을 설명합니다.
+여러 Adobe Commerce 설치를 관리하는 경우 [패치](../../../upgrade/patches/apply.md)는 복잡한 프로세스일 수 있습니다. _중앙 집중식 패치_&#x200B;은(는) 엔터프라이즈의 모범 사례입니다. 모든 Adobe Commerce 설치에 올바른 패치를 적용하는 데 도움이 됩니다. 이 항목에서는 모든 유형의 Adobe Commerce [패치](../../../upgrade/patches/overview.md)에 대해 중앙 집중식 패치 배포를 수행하는 방법을 설명합니다.
 
 >[!NOTE]
 >

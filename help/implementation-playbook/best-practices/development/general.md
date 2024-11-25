@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트를 개발하는 일반적인 모범 사
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,6 @@ ht-degree: 0%
 1. 모든 개발자는 (향후) 프로덕션 서버에서 사용되는 것과 동일한 기술 스택을 사용하여 개발 및 테스트해야 합니다. 이 기술 스택에 있는 소프트웨어 버전은 프로덕션 서버에 설치된 소프트웨어의 주 버전 및 부 버전과 일치해야 합니다. Adobe Commerce의 일반적인 기술 스택에 대한 자세한 내용은 [시스템 요구 사항](../../../installation/system-requirements.md)을 참조하십시오.
 1. 시스템 관리자 또는 기술 설계자는 팀에게 중앙 집중식으로 관리되는 로컬 개발 환경을 제공하여 동등하고 최신 로컬 환경을 보장하고 홍보할 수 있습니다.
 1. 개발자와 QA 엔지니어는 QA 환경의 명령줄, 데이터베이스 및 로그 파일에 액세스할 수 있어야 합니다. 이 경우 VPN 연결이 필요할 수 있습니다.
-
-## 코딩 표준
-
-1. 모든 코드는 아키텍처, 방법론 및 코딩 표준의 규칙을 따라야 합니다. 창의성은 형식이 아닌 기능에서 요구되는 것이다.
-1. 모든 코드는 [Adobe Commerce 아키텍처 안내서](https://developer.adobe.com/commerce/php/architecture/){target="_blank}와(과) 일치해야 합니다.
-1. 모든 코드는 [Adobe Commerce 코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)을 준수해야 합니다.
-1. 모든 코드는 [Adobe Commerce 기술 지침](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)을 준수해야 합니다.
-1. 해당되는 경우 모든 코드는 [Adobe Commerce 모범 사례](../phases.md)를 구현해야 합니다.
-1. 모든 코드는 [PHP-Framework Interoperability Group(FIG) 표준](https://www.php-fig.org/)을 준수해야 합니다.
-1. 가능하면 [Adobe Commerce 기술 비전](https://developer.adobe.com/commerce/php/architecture/technical-vision/)을 고려하는 것이 좋습니다.
-1. 외부 시스템과의 모든 통합에는 비즈니스 프로세스를 검증하는 통합 테스트가 있어야 합니다.
-1. 모든 모듈은 테스트 범위를 가져야 합니다. 정확히 무엇을 테스트할지 개발 팀이 기술 설계자 또는 수석 개발자와 협력하여 결정해야 합니다. 이 결정은 정량적 조치가 아닌 정성적 조치에 기초해야 합니다. 높은 코드 적용률은 성공의 지표가 아니며 높은 코드 품질을 의미하지도 않습니다. 오히려, 프로그램의 해당 부분에서 회귀의 확률과 심각도를 평가하여 코드의 일부를 다루지 않을 위험을 판단하십시오.
 
 ## 버전 관리
 
