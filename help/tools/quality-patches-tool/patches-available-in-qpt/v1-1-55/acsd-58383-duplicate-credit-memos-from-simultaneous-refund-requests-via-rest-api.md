@@ -3,15 +3,15 @@ title: 'ACSD-58383:  [!DNL REST API]을(를) 통한 동시 환불 요청에서 �
 description: ACSD-58383 패치를 적용하여 동시에 실행되는 두 개의 동일한 요청으로  [!DNL REST API] 을(를) 통해 환불을 발행하면 중복 대변 메모가 생성되는 Adobe Commerce 문제를 해결합니다.
 feature: REST, Payments, Returns
 role: Admin, Developer
-source-git-commit: ce3faa5dfc05500dcd672498761b48307064614e
+exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-58383 Adobe Commerce 패치: [!DNL REST API]을(를) 통한 동시 환불 요청에서 대변 메모가 중복됨
+# ACSD-58383 Adobe Commerce 패치: [!DNL REST API]을(를) 통한 동시 환불 요청에서 대변 메모가 중복되었습니다.
 
 ACSD-58383 패치는 동시에 실행되는 두 개의 동일한 요청으로 [!DNL REST API]을(를) 통해 환불을 발행하면 크레딧 메모가 중복되는 문제를 해결합니다.
 

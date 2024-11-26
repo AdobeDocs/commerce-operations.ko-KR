@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58471: 연결된 카탈로그 가격 규칙이 예약된 경우 다이내믹 콘텐츠가 제품 세부 사항 페이지에 로드되지 않음"
+title: 'ACSD-58471: 연결된 카탈로그 가격 규칙이 예약된 경우 다이내믹 콘텐츠가 제품 세부 사항 페이지에 로드되지 않음'
 description: ACSD-58471 패치를 적용하여 관련 카탈로그 가격 규칙이 예정되었을 때 제품 세부 사항 페이지에서 다이내믹 콘텐츠를 로드하지 못하는 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: a3afb779006de95ac70dff39a737360112220af8
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58471: 연결된 카탈로그 가격 규칙이 예약된 경우 다이내믹 콘텐츠가 제품 세부 사항 페이지에 로드되지 않음
 
@@ -28,6 +28,8 @@ ACSD-58471 패치는 연결된 카탈로그 가격 규칙이 예약되었을 때
 >새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
+
+카탈로그 가격 규칙이 예약된 경우 제품 세부 사항 페이지에 다이내믹 콘텐츠가 로드되지 않습니다.
 
 <u>재현 단계</u>:
 

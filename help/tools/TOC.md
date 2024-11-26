@@ -2,7 +2,7 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 9aeaa3faaf0aee1ed2e20cb86362d4246c858a05
+source-git-commit: 68bf1848d4e4724aacf408feab6a3b301e7b0ee3
 workflow-type: tm+mt
 source-wordcount: '6268'
 ht-degree: 0%
@@ -664,9 +664,9 @@ ht-degree: 0%
          - [ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
-         - [ACSD-58735: 제한된 관리자는 연결된 웹 사이트의 고객 계정에서 구매하지 않은 장바구니를 볼 수 없습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-58471: 카탈로그 가격 규칙이 예약된 경우 다이내믹 콘텐츠가 제품 세부 사항 페이지에 로드되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383:  [!DNL REST API]을(를) 통한 동시 환불 요청에서 중복된 대변 메모](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
+         - [ACSD-58735: 제한된 관리자는 연결된 웹 사이트의 고객 계정에서 구매하지 않은 장바구니를 볼 수 없습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 명령줄 도구 참조 {#cli-reference}
