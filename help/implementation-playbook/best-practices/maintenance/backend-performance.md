@@ -5,7 +5,7 @@ badge: label="Objectsource에 의해 기여됨" type="Informative" url="https://
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하�
 
 트래픽이 많은 웹 사이트는 주로 단일 MySQL 서버에 의존하여 데이터베이스 병목 현상을 겪습니다. 성능을 향상시키고 고가용성을 보장하는 분산 아키텍처인 데이터베이스 클러스터링을 구현하여 이러한 병목 현상을 해결할 수 있습니다.
 
-데이터베이스 클러스터링은 여러 웹 노드가 여러 MySQL 서버에 연결할 수 있도록 함으로써 최대 트래픽 기간 동안 데이터베이스 관련 문제의 영향을 최소화합니다. Galera Cluster와 같은 도구를 사용하여 Commerce 사이트에 대한 데이터베이스 클러스터링을 설정합니다. Galera 클러스터는 [클라우드 인프라에 배포된 Adobe Commerce 프로젝트](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html)에 포함되어 있습니다.
+데이터베이스 클러스터링은 여러 웹 노드가 여러 MySQL 서버에 연결할 수 있도록 함으로써 최대 트래픽 기간 동안 데이터베이스 관련 문제의 영향을 최소화합니다. Galera Cluster와 같은 도구를 사용하여 Commerce 사이트에 대한 데이터베이스 클러스터링을 설정합니다. Galera 클러스터는 [클라우드 인프라에 배포된 Adobe Commerce 프로젝트](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)에 포함되어 있습니다.
 
 #### MySQL 쿼리 최적화
 
