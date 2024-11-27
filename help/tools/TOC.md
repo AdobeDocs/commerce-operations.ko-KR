@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 68bf1848d4e4724aacf408feab6a3b301e7b0ee3
+source-git-commit: 69ae7045ed1ffc5ecf3c5e92f56ea82c0cf8adf6
 workflow-type: tm+mt
-source-wordcount: '6268'
+source-wordcount: '6276'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-61528: GraphQL을 사용하여 역할을 검색하면 결과가 반환되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: &quot;system.log&quot;에 환경 에뮬레이션 중첩 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
          - [ACSD-60804: 삭제된 회사와 연결된 고객을 편집하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+         - [ACSD-61667: 출하 생성을 위한 재고 성과 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
          - [ACSD-61199: CMS 페이지의 [!UICONTROL Hierarchy] 탭에 적절한 트리 구조가 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
