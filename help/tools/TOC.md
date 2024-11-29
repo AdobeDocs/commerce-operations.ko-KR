@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 634a3b3835419214fc8a3b349c8a0425c30fab52
+source-git-commit: ff7823cb402c40bb4429fb5acab0cf85c3035be7
 workflow-type: tm+mt
-source-wordcount: '6340'
+source-wordcount: '6352'
 ht-degree: 0%
 
 ---
@@ -668,6 +668,7 @@ ht-degree: 0%
          - [ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-61534: bin/magento config:set을 사용하여 디자인 구성을 설정할 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348: 위시리스트 항목이 GraphQL을 통해 표시되지만 상점 앞에는 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785: GraphQL 돌연변이 및 REST API 호출을 통해 reward_warning_notification 속성을 업데이트할 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
          - [ACSD-58471: 카탈로그 가격 규칙이 예약된 경우 다이내믹 콘텐츠가 제품 세부 사항 페이지에 로드되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
