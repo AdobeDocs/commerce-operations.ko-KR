@@ -3,7 +3,8 @@ title: 'ACSD-53098: 공유 카탈로그의 제품이 프론트엔드를 반영�
 description: ACSD-53098 패치를 적용하여 공유 카탈로그에 할당된 제품이 부분 인덱스를 실행할 때 프론트엔드를 반영하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: B2B, Catalog Management, Categories, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 25230086-13b5-4b16-b50f-931e9e3d7102
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

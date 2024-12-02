@@ -3,7 +3,8 @@ title: 'ACSD-47669: 사용자 지정 가능한 옵션이 있는 제품을 가져
 description: ACSD-47669 패치를 적용하여 사용자 지정 가능한 옵션이 있는 제품을 가져오는 동안 내부 서버 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e1a3b3b4-0392-4325-9766-a83276c1a593
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

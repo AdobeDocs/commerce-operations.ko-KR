@@ -3,7 +3,8 @@ title: 'ACSD-49013: 이메일 확인이 웹 사이트 로케일로 번역되지 
 description: ACSD-49013 패치를 적용하여 벌크 API를 사용하여 고객을 만들 때 이메일 확인이 웹 사이트 로케일로 번역되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Communications
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1b0dc6aa-d5ee-4adf-882d-88f29a7eab34
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-50815: 단순 제품의 10진수 수량은 새 번들 제품 옵션
 description: ACSD-50815 패치를 적용하여 단순 제품의 10진수 수량을 새 번들 제품 옵션에 사용할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5cd69abe-bd88-497d-9696-804c787b73ef
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

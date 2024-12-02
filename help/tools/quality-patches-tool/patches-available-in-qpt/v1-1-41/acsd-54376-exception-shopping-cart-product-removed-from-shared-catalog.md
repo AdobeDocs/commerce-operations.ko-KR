@@ -3,7 +3,8 @@ title: 'ACSD-54376: [!UICONTROL shared catalog]에서 제품을 제거할 때 �
 description: ACSD-54376 패치를 적용하여 장바구니에 제품을 추가한 후 [!UICONTROL shared catalog]에서 제품을 제거할 때 장바구니에서 예외가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 59047ccb-d434-46cd-8d2f-ceb0c85a785a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

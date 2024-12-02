@@ -1,9 +1,10 @@
 ---
-title: '특성 값에 쉼표가 포함된 경우 ACSD-48313: [!UICONTROL configurable_variations] 열이 구문 분석되지 않음'
+title: 'ACSD-48313: 특성 값에 쉼표가 포함된 경우 [!UICONTROL configurable_variations] 열이 구문 분석되지 않음'
 description: ACSD-48313 패치를 적용하여 특성 값에 쉼표가 포함된 경우 [!UICONTROL configurable_variations] 열이 구문 분석되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1ce0c8dc-0d03-4ebd-b02a-08090b244190
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

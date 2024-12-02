@@ -3,7 +3,8 @@ title: 'ACSD-61199: CMS 페이지 [!UICONTROL Hierarchy] 탭에 적절한 트리
 description: 기존 *[!UICONTROL Hierarchy]*이(가) 있는 Adobe Commerce 페이지를 편집할 때 CMS 페이지의 *[!UICONTROL Hierarchy]* 탭에 적절한 트리 구조가 표시되지 않는 CMS 문제를 해결하려면 ACSD-61199 패치를 적용합니다.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: bbe4e272d3a8bd82163bdd718d006a314287b650
+exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
+source-git-commit: 5568b2f574c7e90e641513c3c0ea4574648770ac
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-52133: 업그레이드 후 고객 계정을 저장할 수 없음'
 description: 업그레이드 후 고객 계정을 저장할 수 없는 Adobe Commerce 문제를 해결하려면 ACSD-52133 패치를 적용합니다.
 feature: Customers, Upgrade
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

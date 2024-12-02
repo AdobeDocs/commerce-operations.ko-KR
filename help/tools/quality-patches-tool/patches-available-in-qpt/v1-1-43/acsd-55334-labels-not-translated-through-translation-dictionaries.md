@@ -3,7 +3,8 @@ title: 'ACSD-55334: GraphQL 응답의 번역 사전을 통해 번역되지 않�
 description: ACSD-55334 패치를 적용하여 Adobe Commerce 응답에서 레이블이 번역 사전을 통해 번역되지 않는 GraphQL 문제를 해결합니다.
 feature: Categories, GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c22e5007-c661-49d4-90b7-dcee9b97c823
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45255: 제한된 관리 사용자에 대한 낮은 재고 보고서 페이지의 예외'
+title: 'ACSD-45255: 제한된 관리자의 낮은 재고 보고서 페이지에 대한 예외'
 description: ACSD-45255 패치는 제한된 관리자의 낮은 재고 보고서 페이지에서 예외가 throw되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-45255입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

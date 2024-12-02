@@ -3,7 +3,8 @@ title: 'ACSD-46869: 구성 가능한 제품이 체크아웃 시 REST API를 사�
 description: ACSD-46869 패치는 체크아웃 시 REST API를 사용하여 구성 가능한 제품이 업데이트되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46869입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

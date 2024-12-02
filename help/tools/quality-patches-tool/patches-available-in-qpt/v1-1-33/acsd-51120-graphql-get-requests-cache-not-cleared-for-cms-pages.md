@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 CMS GET 요청 캐시가 지워지지 않음'
 description: ACSD-51120 패치를 적용하여 CMS 블록이 포함된 CMS 페이지에 대해 GraphQL GET 요청 캐시가 지워지지 않는 Adobe Commerce 문제를 해결합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e1b84db0-2441-4729-aeeb-8486a623aebf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

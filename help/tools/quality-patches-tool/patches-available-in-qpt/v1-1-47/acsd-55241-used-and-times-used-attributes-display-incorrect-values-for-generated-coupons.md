@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55241: **Used** 및 **Times Used** 속성에 생성된 쿠폰에 대한 잘못된 값이 표시됨'
+title: 'ACSD-55241: **Used** 및 **Times Used** 속성은 생성된 쿠폰의 잘못된 값을 표시합니다'
 description: ACSD-55241 패치를 적용하여 **사용된 시간** 및 **사용된 시간** 속성에 생성된 쿠폰에 대한 잘못된 값이 표시되는 Adobe Commerce 문제를 해결합니다
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%

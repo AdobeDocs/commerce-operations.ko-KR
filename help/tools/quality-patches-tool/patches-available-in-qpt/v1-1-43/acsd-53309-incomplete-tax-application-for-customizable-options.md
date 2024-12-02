@@ -3,7 +3,8 @@ title: 'ACSD-53309: 사용자 지정 가능한 옵션 및 [!UICONTROL Regular Pr
 description: 사용자 지정 가능한 옵션이 선택되어 있을 때 '[!UICONTROL Regular Price]' 레이블에 세금이 완전히 적용되지 않는 Adobe Commerce 문제를 해결하려면 ACSD-53309 패치를 적용합니다.
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

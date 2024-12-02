@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48813: 검색에서 특성의 검색 가중치에 따라 관련 있는 결과가 표시되지 않음'
+title: 'ACSD-48813: 검색 시 속성의 검색 가중치에 따라 관련 결과가 표시되지 않음'
 description: ACSD-48813 패치를 적용하여 속성의 검색 가중치에 따라 검색 결과가 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Attributes, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 98ef7eb1-c13e-4c56-9a25-8e61cfb5fade
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

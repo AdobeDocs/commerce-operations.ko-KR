@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-50478: backups grid and database rollback 명령의 롤백 작업에 대한 JS 문제'
+title: 'ACSD-50478: 백업 그리드 및 데이터베이스 롤백 명령의 롤백 작업에 대해 JS 문제 발생'
 description: ACSD-50478 패치를 적용하여 백업 그리드의 롤백 작업에 대한 JS 문제와 DB 덤프에 트리거와 *구분 기호* SQL 명령이 포함된 경우에 대한 데이터베이스 롤백 명령을 수정합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

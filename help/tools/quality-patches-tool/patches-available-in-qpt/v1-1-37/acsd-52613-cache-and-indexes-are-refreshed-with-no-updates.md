@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52613: 업데이트 없이 캐시 및 인덱스가 새로 고쳐짐'
+title: 'ACSD-52613: 업데이트 없이 캐시 및 인덱스가 새로 고쳐집니다.'
 description: ACSD-52613 패치를 적용하여  [!DNL REST API]까지 'Inventory_source' 항목이 업데이트되지 않을 때 캐시와 색인이 새로 고쳐지는 Adobe Commerce 문제를 해결합니다.
 feature: REST
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

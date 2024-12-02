@@ -3,7 +3,8 @@ title: 'ACSD-61534: bin/magento config:set을 사용하여 디자인 구성을 �
 description: ACSD-61534 패치를 적용하여 'bin/magento config:set' 명령을 사용하여 디자인 구성을 설정할 수 없고 양식 조작을 통해 잠긴 값을 변경할 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: Configuration
 role: Admin, Developer
-source-git-commit: ef00c05593ad319caab8bb9e0f5090959786513f
+exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

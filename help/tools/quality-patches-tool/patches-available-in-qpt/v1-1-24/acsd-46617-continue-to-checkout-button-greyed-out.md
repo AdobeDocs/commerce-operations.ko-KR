@@ -3,7 +3,8 @@ title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** 단추는 소계가 �
 description: ACSD-46617 패치를 적용하여 소계가 구성된 최소 순서 양보다 큰 경우에도 **[!UICONTROL Continue to Checkout]** 단추가 회색으로 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

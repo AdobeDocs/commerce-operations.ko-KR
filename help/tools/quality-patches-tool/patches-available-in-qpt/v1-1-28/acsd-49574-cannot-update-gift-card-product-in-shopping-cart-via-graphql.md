@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49574: GraphQL을 통해 장바구니에서 기프트 카드 제품을 업데이트할 수 없음"
+title: 'ACSD-49574: GraphQL을 통해 장바구니에서 기프트 카드 제품을 업데이트할 수 없음'
 description: ACSD-49574 패치를 적용하여 GraphQL을 통해 장바구니에서 기프트 카드 제품을 업데이트할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Gift, GraphQL, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 31dede84-3733-4481-b21d-526494eb8e9b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-60441: V1/customers를 통해 고객을 업데이트하면 [!DNL REST] API 끝점에서 오류가 발생합니다.'
+title: 'ACSD-60441: V1/customers [!DNL REST] API 끝점을 통해 고객을 업데이트하면 오류가 발생합니다'
 description: 백엔드에서 생성된 통합 액세스 토큰을 사용할 때 V1/customers [!DNL REST] API를 통해 고객을 업데이트하면 오류가 발생하는 Adobe Commerce 문제를 해결하려면 ACSD-60441 패치를 적용합니다.
 feature: REST, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3936c065-41a6-4860-8313-e054f9b23ac7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%

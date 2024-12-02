@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51700: 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환하는 도중 오류 발생"
+title: 'ACSD-51700: 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환하는 도중 오류 발생'
 description: ACSD-51700 패치를 적용하여 관리자의 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환할 때 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dd3da026-ac72-440c-8632-8a3ca27fc134
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

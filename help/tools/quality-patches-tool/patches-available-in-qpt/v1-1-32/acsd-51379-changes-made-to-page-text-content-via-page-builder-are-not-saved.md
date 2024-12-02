@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51379: [!DNL Page Builder] 을(를) 통한 페이지의 텍스트 콘텐츠 변경 내용이 저장되지 않음"
+title: 'ACSD-51379:  [!DNL Page Builder] 을(를) 통한 페이지의 텍스트 콘텐츠 변경 내용이 저장되지 않습니다.'
 description: ACSD-51379 패치를 적용하여  [!DNL Page Builder] 을(를) 통해 페이지의 텍스트 콘텐츠에 대한 변경 내용이 저장되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Page Builder, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03fc2865-04b6-4330-b80c-8d694baa8c88
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

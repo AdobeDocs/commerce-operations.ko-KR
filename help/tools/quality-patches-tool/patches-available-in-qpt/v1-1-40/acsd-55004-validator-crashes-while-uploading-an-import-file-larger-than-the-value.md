@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55004: 값보다 큰 가져오기 파일을 업로드하는 동안 유효성 검사기가 충돌합니다.'
+title: 'ACSD-55004: 값보다 큰 가져오기 파일을 업로드하는 동안 유효성 검사기가 충돌합니다'
 description: ACSD-55004 패치를 적용하여 'php.ini'에 구성된 값보다 큰 가져오기 파일을 업로드하는 동안 유효성 검사기가 충돌하는 Adobe Commerce 문제를 해결합니다.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c889f645-a3ae-4330-8ca9-45f8b6616ac8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

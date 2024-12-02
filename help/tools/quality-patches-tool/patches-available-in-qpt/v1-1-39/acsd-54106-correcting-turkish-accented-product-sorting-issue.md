@@ -3,7 +3,8 @@ title: 'ACSD-54106: 제품 범주에서 터키어 악센트 부호 문자 정렬
 description: ACSD-54106 패치를 적용하여 터키어 악센트 부호 문자에 대한 이름별 카테고리 제품 정렬이 잘못된 Adobe Commerce 문제를 해결합니다.
 feature: Categories, Products, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45c8efbb-85d0-4d25-9d7e-9c41a97e80fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

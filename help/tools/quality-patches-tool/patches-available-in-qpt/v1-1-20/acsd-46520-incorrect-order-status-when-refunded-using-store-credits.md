@@ -3,7 +3,8 @@ title: 'ACSD-46520: 스토어 크레딧을 사용하여 환불할 때 잘못된 
 description: 이 문서에서는 스토어 크레딧을 사용하여 환불할 때 사용자가 잘못된 주문 상태를 얻게 되는 문제에 대한 해결 방법을 제공합니다.
 feature: Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 67740003-a71e-41bf-afda-ca3e32290115
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

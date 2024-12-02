@@ -3,7 +3,8 @@ title: 'ACSD-49839: 공유 카탈로그 가격 및 구조에서 오류가 발생
 description: ACSD-49839 패치를 적용하여 제품이 SKU에서 작은따옴표나 큰따옴표를 가질 때 공유 카탈로그 가격 및 구조로 인해 관리자에게 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b74e3926-16c8-4222-b642-ed1b7095dea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

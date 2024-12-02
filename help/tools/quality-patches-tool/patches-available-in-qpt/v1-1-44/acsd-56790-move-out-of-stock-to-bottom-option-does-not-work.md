@@ -3,7 +3,8 @@ title: 'ACSD-56790: **[!UICONTROL move out of stock to bottom]** 옵션이  [!DN
 description: ACSD-56790 패치를 적용하여 Visual Merchandiser에서 제품을 정렬하는 동안 재고 부족 상태에서 하단으로 이동 옵션이 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%

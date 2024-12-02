@@ -1,9 +1,10 @@
 ---
 title: 'MDVA-40311: 사용자 지정 관리 경로가 구성된 경우 Admin에 로그인한 후 "보안 또는 양식 키가 잘못됨" 오류 발생'
-description: '''MDVA-40311 패치는 관리자 사용자에게 오류 메시지가 표시되는 문제를 해결합니다. *잘못된 보안 또는 양식 키. 사용자 지정 관리자 경로가 구성되어 있고 비밀 키가 활성화된 경우 관리자에 로그인한 후* 페이지를 새로 고치십시오. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40311입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정될 예정입니다."'
+description: MDVA-40311 패치는 관리자 사용자가 다음 오류 메시지를 받는 문제를 해결합니다. *잘못된 보안 또는 양식 키. 사용자 지정 관리자 경로가 구성되어 있고 비밀 키가 활성화된 경우 관리자에 로그인한 후* 페이지를 새로 고치십시오. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40311입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Admin Workspace, Compliance, Security
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

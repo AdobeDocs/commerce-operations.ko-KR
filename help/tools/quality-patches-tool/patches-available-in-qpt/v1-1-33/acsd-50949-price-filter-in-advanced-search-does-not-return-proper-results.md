@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50949: 고급 검색의 가격 필터가 SKU 필터와 함께 사용될 때 적절한 결과를 반환하지 않음"
+title: 'ACSD-50949: 고급 검색의 가격 필터는 SKU 필터와 함께 사용할 때 적절한 결과를 반환하지 않습니다'
 description: ACSD-50949 패치를 적용하여 고급 검색의 가격 필터가 SKU 필터와 함께 사용될 때 적절한 결과를 반환하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 89e54940-e763-4554-8641-a162516bcabd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 1%

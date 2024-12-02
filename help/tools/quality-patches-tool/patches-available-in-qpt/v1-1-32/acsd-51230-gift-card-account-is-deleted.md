@@ -3,7 +3,8 @@ title: 'ACSD-51230: 기프트 카드 계정이 삭제됨'
 description: ACSD-51230 패치를 적용하여 주문에서 단순 제품의 부분 환불이 처리될 때 기프트 카드 계정이 삭제되는 Adobe Commerce 문제를 해결합니다.
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4aed574-3908-42e0-ac32-911f61b44995
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

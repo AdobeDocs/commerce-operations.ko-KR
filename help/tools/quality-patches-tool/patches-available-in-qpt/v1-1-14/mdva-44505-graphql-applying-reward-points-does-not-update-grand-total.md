@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-44505: 보상 포인트를 적용하는 장바구니에 대한 GraphQL 쿼리가 총계를 업데이트하지 않음'
+title: 'MDVA-44505: 보상 포인트를 적용하는 장바구니에 대한 GraphQL 쿼리가 총계를 업데이트하지 않습니다.'
 description: MDVA-44505 패치는 보상 포인트를 적용하는 장바구니에 대한 GraphQL 쿼리가 보상 포인트를 고려하지 않고 잘못된 총계를 반환하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-44505입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
 feature: GraphQL, Orders, Rewards, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 543698d8-8963-4bf7-af82-11c2498e882e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

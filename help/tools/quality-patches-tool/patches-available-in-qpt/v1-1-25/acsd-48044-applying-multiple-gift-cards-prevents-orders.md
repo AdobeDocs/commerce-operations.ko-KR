@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48044: 여러 기프트 카드를 적용하면 주문이 실행되지 않음'
+title: 'ACSD-48044: 여러 기프트 카드를 적용하면 주문이 실행되지 않습니다.'
 description: ACSD-48044 패치를 적용하여 여러 배송이 있는 단일 주문에 여러 기프트 카드를 적용하면 주문이 이루어지지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Gift, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54060: 제한된 관리자는 다른 제품의 하위 항목인 경우 제품을 저장할 수 없습니다."
+title: 'ACSD-54060: 제한된 관리자는 다른 제품의 하위 항목인 경우 제품을 저장할 수 없습니다.'
 description: ACSD-54060 패치를 적용하여 제한된 관리자가 다른 범위에 할당된 다른 제품의 하위 항목인 경우 제품을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Roles/Permissions, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2af24cbf-65a1-4bd6-aad3-19b613bee7f2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43859: 삭제된 고객이 로그인할 때 "customerId = 인 해당 엔터티가 없습니다." 오류 발생'
+title: 'MDVA-43859: 삭제된 고객이 로그인할 때 "customerId = 인 해당 엔터티가 없습니다." 오류가 기록되었습니다.'
 description: MDVA-43859 패치는 삭제된 고객이 로그인을 시도할 때 customerId =*를 가진 해당 엔티티가 기록되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43859입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Variables
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b8451b08-978a-44a2-8664-4369e832423b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

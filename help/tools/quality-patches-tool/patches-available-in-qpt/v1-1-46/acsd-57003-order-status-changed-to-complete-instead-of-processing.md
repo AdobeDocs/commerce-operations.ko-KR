@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57003: *처리 중*으로 변경하는 대신 *완료*로 주문 상태가 변경됨'
+title: 'ACSD-57003: *처리*로 변경하는 대신 *완료*로 주문 상태가 변경됩니다.'
 description: ACSD-57003 패치를 적용하여 주문 상태가 *처리 중*으로 변경되는 대신 *완료*로 변경되는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

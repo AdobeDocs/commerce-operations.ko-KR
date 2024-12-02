@@ -3,7 +3,8 @@ title: 'ACSD-48164: 제한된 관리자가 웹 사이트 수준 값을 저장할
 description: ACSD-48164 패치를 적용하여 제한된 관리자가 웹 사이트 수준 값을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1ad4758e-7ecc-48d0-8313-1163188cbe73
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

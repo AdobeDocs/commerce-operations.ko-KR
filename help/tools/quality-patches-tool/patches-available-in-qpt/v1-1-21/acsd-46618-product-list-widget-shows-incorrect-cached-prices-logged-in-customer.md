@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46618: 제품 목록 위젯에 로그인한 고객에 대해 잘못된 캐시된 가격이 표시됨"
+title: 'ACSD-46618: 제품 목록 위젯에 로그인한 고객에 대해 잘못된 캐시된 가격이 표시됨'
 description: 로그인한 고객에 대해 제품 목록 위젯에 잘못된 캐시된 가격이 표시되는 Adobe Commerce 문제를 해결하려면 패치를 적용합니다.
 feature: Cache, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa350f84-2fe5-474b-b4fd-d6c1e8bb0f95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

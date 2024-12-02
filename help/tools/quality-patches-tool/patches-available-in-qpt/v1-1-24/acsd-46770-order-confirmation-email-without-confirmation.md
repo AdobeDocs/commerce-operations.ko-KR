@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46770: [!UICONTROL Email Order Confirmation]을(를) 선택하지 않은 경우에도 주문 확인 전자 메일이 전송됩니다.'
+title: 'ACSD-46770: [!UICONTROL Email Order Confirmation]을(를) 선택하지 않은 경우에도 주문 확인 이메일을 보냅니다.'
 description: '[!UICONTROL Email Order Confirmation]을(를) 선택하지 않았더라도 주문 확인 전자 메일이 전송되는 Adobe Commerce 문제를 해결하려면 ACSD-46770 패치를 적용하십시오.'
 feature: Communications, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d25ca121-7551-417c-b598-d8ed3a3da969
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-42507: 장바구니 규칙에 대한 스테이징 업데이트를 적용한 후 전체 페이지 캐시가 정리됨'
+title: 'MDVA-42507: 장바구니 규칙에 대한 스테이징 업데이트를 적용하면 전체 페이지 캐시가 정리됩니다.'
 description: MDVA-42507 패치는 장바구니 규칙에 대한 스테이징 업데이트를 적용한 후 전체 페이지 캐시가 정리되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42507입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Cache, Categories, Orders, Shopping Cart, Staging
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 19f61e31-67da-4bd6-bce7-a9250f3946c7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

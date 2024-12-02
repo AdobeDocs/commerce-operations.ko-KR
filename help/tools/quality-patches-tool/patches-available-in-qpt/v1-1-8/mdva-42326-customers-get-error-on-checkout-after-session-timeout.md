@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-42326: 고객이 세션 시간 제한 후 체크아웃 시 오류 발생'
+title: 'MDVA-42326: 세션 시간 제한 후 체크아웃 시 고객이 오류 발생'
 description: MDVA-42326 패치는 영구적 장바구니가 활성화되더라도 세션 시간 제한 후 체크아웃 시 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42326입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f9ef6778-298b-4ff9-9c4b-b3f47bb04b67
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%

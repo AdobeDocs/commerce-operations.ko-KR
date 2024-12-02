@@ -3,7 +3,8 @@ title: 'ACSD-56546: 구성 및 번들 제품이 상점 앞에 품절로 표시�
 description: ACSD-56546 패치를 적용하여 *[!UICONTROL Display Out of Stock Products]* 구성 옵션이 비활성화될 때 구성 가능 및 번들 제품이 상점 첫 화면에서 품절로 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Storefront, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9bb05ca-a84e-48bb-957e-55b28631b3cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

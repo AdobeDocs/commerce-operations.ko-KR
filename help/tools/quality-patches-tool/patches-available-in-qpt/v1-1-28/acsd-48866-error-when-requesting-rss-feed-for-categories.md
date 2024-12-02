@@ -3,7 +3,8 @@ title: 'ACSD-48866: 범주에 대한 RSS 피드를 요청할 때 오류 발생'
 description: ACSD-48866 패치를 적용하여 카테고리에 대한 RSS 피드를 요청할 때 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f278a90f-f30c-401f-a544-713c89eb208a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-52219: 책갈피 보기 전환에서 관리 그리드 필터 문제
 description: ACSD-52219 패치를 적용하여 책갈피 보기 사이를 자주 전환할 때 관리 그리드의 저장된 필터가 예상대로 작동하지 않는 Adobe Commerce 문제를 수정합니다.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

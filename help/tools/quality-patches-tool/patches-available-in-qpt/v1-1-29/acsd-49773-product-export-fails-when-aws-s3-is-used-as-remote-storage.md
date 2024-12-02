@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49773: AWS S3를 원격 저장소로 사용하면 제품 내보내기가 실패합니다.'
+title: 'ACSD-49773: AWS S3를 원격 저장소로 사용하면 제품 내보내기가 실패합니다'
 description: ACSD-49773 패치를 적용하여 AWS S3를 원격 스토리지로 사용할 때 제품 내보내기가 실패하는 Adobe Commerce 문제를 해결합니다.
 feature: Data Import/Export, Iaas, Products, Storage
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 82f1299f-52b6-4f87-b01c-072d1661c022
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

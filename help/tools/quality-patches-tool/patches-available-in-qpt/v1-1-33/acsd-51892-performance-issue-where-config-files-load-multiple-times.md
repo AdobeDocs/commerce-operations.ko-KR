@@ -3,7 +3,8 @@ title: 'ACSD-51892: 구성 파일이 여러 번 로드되는 성능 문제'
 description: ACSD-51892 패치를 적용하여 배포 중에 구성 파일이 여러 번 로드되는 Adobe Commerce 성능 문제를 해결합니다.
 feature: Observability
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef3d3b85-b6a0-4037-95c0-e84125fa9088
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53204: *제품을 저장할 수 없음* 갤러리에 이미지 추가 동시 요청 시 오류 발생'
+title: 'ACSD-53204: *제품을 저장할 수 없습니다* 갤러리에 이미지를 추가하기 위한 동시 요청 시 오류 발생'
 description: ACSD-53204 패치를 적용하여 *제품을 저장할 수 없는* rest/V1/products/&lt;sku&gt;/media 종단점을 사용하여 제품 갤러리에 이미지를 추가하도록 동시에 요청할 때 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

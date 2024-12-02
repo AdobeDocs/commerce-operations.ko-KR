@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51819: 단일 견적 ID로 여러 주문 넣기'
+title: 'ACSD-51819: 단일 견적 ID로 여러 주문 배치'
 description: ACSD-51819 패치를 적용하여 동일한 견적 ID를 통해 여러 주문을 할 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-51114: 비동기 인덱싱이 활성화되면 무작위 제품이 �
 description: ACSD-51114 패치를 적용하여 Adobe Commerce 문제 해결 비동기 인덱싱이 활성화되면 대규모 카탈로그에서 무작위 제품이 사라짐
 feature: Catalog Management, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ab1816ef-fb09-46e7-8102-32865f806874
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

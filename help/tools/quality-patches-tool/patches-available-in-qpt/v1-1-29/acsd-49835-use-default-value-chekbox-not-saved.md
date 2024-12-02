@@ -3,7 +3,8 @@ title: 'ACSD-49835: [!UICONTROL Use Default Value] 확인란이 저장되지 않
 description: ACSD-49835 패치를 적용하여 다중 선택 특성에 대한 저장소 수준에서 [!UICONTROL Use Default Value] 확인란이 올바르게 저장되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

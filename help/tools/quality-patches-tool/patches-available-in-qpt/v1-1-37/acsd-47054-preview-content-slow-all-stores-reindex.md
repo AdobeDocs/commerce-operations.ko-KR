@@ -3,7 +3,8 @@ title: 'ACSD-47054: 모든 스토어가 다시 인덱싱하므로 콘텐츠 미�
 description: ACSD-47054 패치를 적용하여 모든 스토어의 색인 재지정으로 인해 미리보기 페이지가 느리게 로드되는 Adobe Commerce 문제를 해결합니다.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

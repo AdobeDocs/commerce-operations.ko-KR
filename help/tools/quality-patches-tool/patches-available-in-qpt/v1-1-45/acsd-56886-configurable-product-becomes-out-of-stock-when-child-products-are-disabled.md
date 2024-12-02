@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56886: 하위 제품이 비활성화되면 구성 가능한 제품이 품절 됨'
+title: 'ACSD-56886: 하위 제품이 비활성화되면 구성 가능한 제품이 품절 상태가 됩니다.'
 description: ACSD-56886 패치를 적용하여 제품이 비활성화될 때 구성 가능한 제품의 재고가 부족해지는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5e9c1fd4-b56a-42c0-83e7-75e868213124
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

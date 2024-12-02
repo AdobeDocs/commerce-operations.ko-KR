@@ -3,7 +3,8 @@ title: 'ACSD-47657: AWS 자격 증명에 대한 캐싱 메커니즘을 추가합
 description: ACSD-47657 패치를 적용하여 AWS 자격 증명에 대한 캐싱 메커니즘을 추가하여 AWS S3에 대한 요청이 많이 로드되는 동안 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2851d511-a9b0-49f8-94ba-ad63d2397ca5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

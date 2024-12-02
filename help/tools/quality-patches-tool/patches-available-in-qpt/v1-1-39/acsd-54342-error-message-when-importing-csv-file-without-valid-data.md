@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54342: 유효한 데이터 없이 CSV 파일을 가져올 때 오류 메시지 표시'
+title: 'ACSD-54342: 유효한 데이터가 없는 CSV 파일을 가져올 때 오류 메시지가 표시됩니다.'
 description: ACSD-54342 패치를 적용하여 유효한 데이터가 없는 CSV 파일을 가져올 때 잘못된 오류 메시지가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34324a18-45af-462b-a6e6-6b6a02d4d331
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

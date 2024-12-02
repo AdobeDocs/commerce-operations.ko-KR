@@ -3,7 +3,8 @@ title: 'ACSD-61756: 데이터베이스 인덱스 누락으로 인한 ''AdvancedS
 description: ACSD-61756 패치를 적용하여 'magento_salesrule_filter' 쿼리가 인덱스를 사용하지 않고 전체 테이블 검색을 수행하여 대량의 레코드를 처리할 때 성능이 저하되는 Adobe Commerce 문제를 해결합니다. 이 패치는 'AdvancedSalesRule' 필터의 누락된 데이터베이스 인덱스를 추가하여 성능을 개선합니다.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
-source-git-commit: 42a376d1a791a17d88bea68dfef178a7b2849ce2
+exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+source-git-commit: 23e92bb9032001134d2696be498a4c384f323c36
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49389: 픽업 준비가 되지 않은 경우 API로 전송된 픽업 이메일 준비'
+title: 'ACSD-49389: 픽업 준비가 되지 않은 경우 API에서 보낸 픽업 이메일 준비'
 description: ACSD-49389 패치를 적용하여 주문이 픽업 준비가 되지 않은 경우 API로 픽업 준비 이메일이 전송되는 Adobe Commerce 문제를 수정합니다.
 feature: REST, Communications
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d1bc430a-3021-40d1-9091-db8ed9125619
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

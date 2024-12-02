@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53925: [!UICONTROL Product Carousel](으)로 CMS 블록을 저장할 수 없음'
+title: 'ACSD-53925: [!UICONTROL Product Carousel]을(를) 사용하여 CMS 블록을 저장할 수 없습니다.'
 description: ACSD-53925 패치를 적용하여 'catalog_product_price'에 대한 차원 모드가 웹 사이트로 설정된 경우 관리자가 제품 캐러셀에 CMS 블록을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f6d286ab-d904-4f08-8265-99632f74b88a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

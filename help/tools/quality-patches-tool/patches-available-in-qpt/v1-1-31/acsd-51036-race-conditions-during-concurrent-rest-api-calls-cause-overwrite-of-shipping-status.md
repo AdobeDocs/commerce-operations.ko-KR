@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51036: 동시 REST API 호출 중 경합 조건은 배송 상태를 덮어씁니다.'
+title: 'ACSD-51036: 동시 REST API 호출 중 경합 조건은 배송 상태를 덮어씁니다'
 description: ACSD-51036 패치를 적용하여 동시 REST API 호출 중에 경합 상태가 발생하여 주문 항목 테이블의 배송 상태를 덮어쓰는 Adobe Commerce 문제를 해결합니다.
 feature: REST, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6150d072-05fe-4010-b31b-8ccde9cab656
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

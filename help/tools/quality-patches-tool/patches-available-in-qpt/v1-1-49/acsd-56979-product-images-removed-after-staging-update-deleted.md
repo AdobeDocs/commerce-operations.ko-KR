@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56979: 스테이징 업데이트 삭제 후 제품 이미지가 제거됨'
+title: 'ACSD-56979: 스테이징 업데이트 삭제 후 제거된 제품 이미지'
 description: ACSD-56979 패치를 적용하여 스테이징 업데이트를 삭제한 후 제품 이미지가 제거되는 Adobe Commerce 문제를 해결합니다
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1e0fbd5c-285b-408e-ba52-72619e29167b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 *[!UICONTR
 description: ACSD-51735 패치를 적용하여 제품 재고가 0일 때 주문 항목 상태가 *[!UICONTROL Ordered]*(으)로 잘못 설정되는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 56c8b58c-819f-46bd-8912-f543f56b66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

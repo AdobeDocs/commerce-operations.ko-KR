@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-44851: 하위 범주가 있는 범주를 열거나 확장할 수 없음'
+title: 'ACSD-44851: 열거나 확장할 수 없는 하위 범주가 있는 범주'
 description: 이 문서에서는 사용자가 하위 범주가 있는 범주를 열거나 확장할 수 없는 문제에 대한 해결 방법을 제공합니다.
 feature: Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

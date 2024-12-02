@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48807: 제품 검토가 스토어뷰로 필터링되지 않음'
+title: 'ACSD-48807: 제품 리뷰가 스토어뷰로 필터링되지 않음'
 description: ACSD-48807 패치를 적용하여 제품 검토가 GraphQL을 통해 상점 보기로 필터링되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce2cf5a1-a650-4eaa-8caf-f34dd0111c36
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

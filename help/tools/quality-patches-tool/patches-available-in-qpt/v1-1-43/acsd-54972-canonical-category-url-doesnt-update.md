@@ -3,7 +3,8 @@ title: 'ACSD-54972: 표준 범주 URL이 업데이트되지 않음'
 description: ACSD-54972 패치를 적용하여 카테고리 URL을 변경한 후 표준 카테고리 URL이 업데이트되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management, Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c4b17c08-9a2b-44a2-925e-f4c5cce7b760
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

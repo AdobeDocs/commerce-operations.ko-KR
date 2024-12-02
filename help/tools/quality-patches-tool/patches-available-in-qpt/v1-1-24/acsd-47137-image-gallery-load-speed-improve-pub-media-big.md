@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-47137: 이미지 갤러리 로드 속도 개선 ''pub/media'' 폴더 큰'''
+title: 'ACSD-47137: 이미지 갤러리 로드 속도 개선 ''pub/media'' 폴더 큰'
 description: ACSD-47137 패치를 적용하면 'pub/media' 폴더가 매우 클 때 이미지 갤러리의 로드 속도를 향상시킬 수 있습니다.
 feature: Cache, Catalog Management, Categories, Media
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8a5dd930-1940-486e-96db-ee1b166cf312
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

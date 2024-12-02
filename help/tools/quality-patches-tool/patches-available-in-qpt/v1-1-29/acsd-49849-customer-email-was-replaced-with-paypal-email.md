@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49849: 고객 이메일이 PayPal 이메일로 대체됨'
+title: 'ACSD-49849: 고객 이메일이 PayPal 이메일로 대체되었습니다.'
 description: ACSD-49849 패치를 적용하여 GraphQL을 통해 PayPal Express로 주문할 때 고객 이메일이 PayPal 이메일로 대체되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1d7a2bde-892a-4ded-a4b4-9450989c8aee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

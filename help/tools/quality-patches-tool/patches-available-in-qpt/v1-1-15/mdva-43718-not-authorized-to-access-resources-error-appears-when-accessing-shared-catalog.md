@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43718: 공유 카탈로그에 액세스할 때 '소비자가 리소스에 액세스할 권한이 없습니다.' 오류가 표시됩니다."
+title: 'MDVA-43718: 공유 카탈로그에 액세스할 때 ''소비자가 리소스에 액세스할 권한이 없습니다.'' 오류가 표시됩니다.'
 description: MDVA-43718 패치를 사용하면 *소비자가 %resources에 액세스할 수 있는 권한이 없는 문제가 해결됩니다.* 사용자 정의 통합에서 공유 카탈로그에 액세스할 때 표시됩니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43718입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Catalog Management
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

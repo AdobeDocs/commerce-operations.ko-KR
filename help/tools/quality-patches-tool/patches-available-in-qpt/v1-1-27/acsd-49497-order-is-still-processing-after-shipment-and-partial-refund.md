@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49497: 배송 후 처리 중인 주문 및 부분 환불'
+title: 'ACSD-49497: 출하 후 처리 중인 주문 및 부분 환불'
 description: ACSD-49497 패치를 적용하여 주문 상태가 선적 후 처리 중으로 유지되고 부분 환불이 적용되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e2e3d2b3-24be-4827-a735-aebfc6f475ea
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53414: 제한된 관리자는 자신의 권한 범위를 벗어난 CMS 페이지를 볼 수 있습니다.'
+title: 'ACSD-53414: 제한된 관리자는 권한 범위를 벗어난 CMS 페이지를 볼 수 있습니다'
 description: ACSD-53414 패치를 적용하여 제한된 관리 사용자가 권한 범위를 벗어나 CMS 페이지를 볼 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

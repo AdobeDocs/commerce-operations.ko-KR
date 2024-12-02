@@ -3,7 +3,8 @@ title: 'ACSD-51574: 다른 이미지로 대체할 때 프론트엔드에 이미�
 description: ACSD-51574 패치를 적용하여 다른 이미지로 교체한 후 프론트엔드에 이미지가 업데이트되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

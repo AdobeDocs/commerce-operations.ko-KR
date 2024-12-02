@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61528: GraphQL을 사용하여 역할을 검색하면 결과가 반환되지 않음"
+title: 'ACSD-61528: GraphQL을 사용하여 역할을 검색하면 결과가 반환되지 않음'
 description: ACSD-61528 패치를 적용하여 GraphQL을 사용하여 회사 관리자의 역할을 검색하면 항상 null 결과가 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, B2B, Companies, Roles/Permissions
 role: Admin, Developer
-source-git-commit: 4a02bb524fd8d1caae02d909bc9f2e3fc0112042
+exl-id: 81d78746-e723-4b18-860c-d973158b469c
+source-git-commit: e6ba48b10918437df8846992d435d65db0669eda
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

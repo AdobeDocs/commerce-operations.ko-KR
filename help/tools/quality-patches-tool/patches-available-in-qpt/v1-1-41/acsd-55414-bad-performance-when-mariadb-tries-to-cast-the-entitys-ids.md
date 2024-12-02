@@ -3,7 +3,8 @@ title: 'ACSD-55414: MariaDB가 entitys_ids를 캐스팅하려고 할 때 성능�
 description: ACSD-55414 패치를 적용하여 Adobe Commerce 문제를 해결합니다. MariaDB가 'entys_ids'를 문자열에서 정수로 변환하려고 하면 리인덱싱 성능이 저하됩니다.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 76309cef-559e-4a55-a27b-7d807ef9f74e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-60804: 삭제된 회사와 연결된 고객을 편집하면 오류가 발생합니다.'
+title: 'ACSD-60804: 삭제된 회사와 연결된 고객을 편집하면 오류가 발생합니다'
 description: ACSD-60804 패치를 적용하여 삭제된 회사와 연결된 고객을 편집하면 null*에서 멤버 함수 getSuperUserId()를 호출하는 *오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Companies, Customers, B2B
 role: Admin, Developer

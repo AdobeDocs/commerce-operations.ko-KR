@@ -3,7 +3,8 @@ title: 'ACSD-47920: 게스트 사용자는 [!UICONTROL Allow Guest Checkout]이(
 description: '[!UICONTROL Allow Guest Checkout]이(가) 꺼져 있더라도 REST API를 통해 게스트 사용자로 주문을 할 수 있는 Adobe Commerce 문제를 해결하려면 ACSD-47920 패치를 적용합니다.'
 feature: REST, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 27c74803-a3f3-46bc-9eb8-8e2c72c30cd9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

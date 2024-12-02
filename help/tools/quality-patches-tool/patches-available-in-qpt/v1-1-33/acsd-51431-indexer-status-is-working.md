@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51431: 변경 로그에 항목이 없어도 인덱서 상태가 *[!UICONTROL Working]*입니다.'
+title: 'ACSD-51431: 변경 로그에 항목이 없어도 인덱서 상태는 *[!UICONTROL Working]*입니다.'
 description: 변경 로그에 항목이 없어도 인덱서 상태가 *[!UICONTROL Working]*인 Adobe Commerce 문제를 해결하려면 ACSD-51431 패치를 적용합니다.
 feature: Logs, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c87c059b-f435-468d-a7fe-e6786fdba1f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

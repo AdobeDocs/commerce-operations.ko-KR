@@ -3,7 +3,8 @@ title: 'ACSD-54007: 고객 데이터를 가져올 때 정의되지 않은 배열
 description: 고객 데이터를 가져올 때 정의되지 않은 배열 키 _scope 오류가 표시되는 Adobe Commerce 문제를 해결하려면 ACSD-54007 패치를 적용합니다.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: df0fc9f4-1d42-47bc-b161-d2f109996684
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

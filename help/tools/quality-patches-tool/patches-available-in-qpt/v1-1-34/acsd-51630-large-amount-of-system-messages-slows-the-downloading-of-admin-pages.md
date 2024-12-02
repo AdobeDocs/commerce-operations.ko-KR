@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51630: 많은 시스템 메시지가 관리 페이지의 다운로드를 느리게 함'
+title: 'ACSD-51630: 많은 시스템 메시지가 관리 페이지의 다운로드를 느리게 합니다.'
 description: ACSD-51630 패치를 적용하여 대량의 시스템 메시지가 관리 페이지 다운로드를 느리게 하는 Adobe Commerce 성능 문제를 해결합니다.
 feature: Admin Workspace, System
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f39afea-551a-4306-994a-cb8ce5bd5b4a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

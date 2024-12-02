@@ -3,7 +3,8 @@ title: 'ACSD-53824: 설치 업그레이드 시 배포가 실패했습니다.'
 description: ACSD-53824 패치를 적용하여 설치 업그레이드 시 배포가 실패하는 Adobe Commerce 문제를 해결합니다
 feature: Attributes, Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9038190b-5779-47b5-b4fb-ccd0a769dc61
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

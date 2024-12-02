@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-60234: [!DNL PayPal] 할인 적용 시 잘못된 금액이 표시됨'
+title: 'ACSD-60234: [!DNL PayPal] 할인 적용 시 잘못된 금액이 표시됩니다.'
 description: ACSD-60234 패치를 적용하여 결제 방법을 통해 할인을 적용할 때  [!DNL PayPal] 잘못된 금액이 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Products, Configuration
 role: Admin, Developer
-source-git-commit: 334e9f740b49d87fc20ee8950d85adb9612c00b7
+exl-id: 2ce7bde5-02a4-4989-80d6-ab1be0ca5fe9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

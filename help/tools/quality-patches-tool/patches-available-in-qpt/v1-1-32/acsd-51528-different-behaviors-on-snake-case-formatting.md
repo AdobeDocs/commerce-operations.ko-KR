@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51528: snake_case 서식에 대한 다양한 동작'
+title: 'ACSD-51528: snake_case 서식에 대한 다양한 비헤이비어'
 description: ACSD-51528 패치를 적용하여 snake_case 서식에 다른 동작이 있는 Adobe Commerce 문제를 수정합니다.
 feature: Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5f2add4b-8209-47a7-bfbd-cc434a050f0f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

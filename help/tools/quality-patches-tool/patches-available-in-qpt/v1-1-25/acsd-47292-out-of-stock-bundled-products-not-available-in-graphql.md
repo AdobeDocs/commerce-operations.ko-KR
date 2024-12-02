@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47292: GraphQL 응답에서 품절 번들 제품을 사용할 수 없음'
+title: 'ACSD-47292: GraphQL 응답에서 품절 번들 제품을 사용할 수 없습니다.'
 description: ACSD-47292 패치를 적용하여 "재고 부족 제품 표시"가 예로 설정되어 있더라도 GraphQL 응답에서 재고 부족 번들 제품을 사용할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3b8114a3-cc45-4d65-af74-cb3e905d7f75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

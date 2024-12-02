@@ -3,7 +3,8 @@ title: 'ACSD-56090: GraphQL 응답이 특정 저장소로 지정되지 않음'
 description: ACSD-56090 패치를 적용하여 GraphQL 응답에 저장소별 데이터 대신 모든 저장소 데이터가 포함되는 Adobe Commerce 문제를 해결할 수 있습니다.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 0909c09c-3260-43d2-8eac-0e5d7639f24b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'MDVA-37234: 장바구니에 항목을 여러 번 추가하면 중복 라
 description: MDVA-37234 패치는 동일한 SKU에 항목을 장바구니에 여러 번(병렬 요청) 추가하면 동일한 장바구니 ID에 대해 중복 라인 항목이 생성되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-37234입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

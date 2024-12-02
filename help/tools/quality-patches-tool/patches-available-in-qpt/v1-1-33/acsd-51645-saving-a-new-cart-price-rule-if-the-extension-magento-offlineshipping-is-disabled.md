@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-51645: 확장 Magento_OfflineShipping이 비활성화된 경우 새 장바구니 가격 규칙 저장'
 description: 확장 Magento_OfflineShipping이 비활성화된 경우 새 장바구니 가격 규칙을 저장할 때 오류가 발생하는 Adobe Commerce 문제를 해결하려면 ACSD-51645 패치를 적용합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

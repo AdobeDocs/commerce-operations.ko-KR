@@ -3,7 +3,8 @@ title: 'ACSD-59036: 하한과 상한이 모두 $0로 설정된 제품 가격을 
 description: ACSD-59036 패치를 적용하여 하한과 상한이 모두 *$0*으로 설정된 제품 가격을 로드할 때 예외가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Categories, Products, Storefront, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a7d05108-0b03-4eb4-84ab-0dc5601530cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

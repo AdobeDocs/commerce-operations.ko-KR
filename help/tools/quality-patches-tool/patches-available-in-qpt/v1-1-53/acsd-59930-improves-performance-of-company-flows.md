@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59930: 회사 흐름의 성과 개선"
+title: 'ACSD-59930: 회사 흐름의 성과 향상'
 description: ACSD-59930 패치를 적용하면 주소록에 *1000+* 주소가 있는 관리자가 있는 회사를 만들거나, 저장하거나, 삭제할 때 [관리] 패널에 *시간 초과* 오류가 표시되는 Adobe Commerce 문제를 해결할 수 있습니다.
 feature: Customers, B2B
 role: Admin, Developer
-source-git-commit: bff014ede6ab7e8e72700814bb4edda2e733557a
+exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

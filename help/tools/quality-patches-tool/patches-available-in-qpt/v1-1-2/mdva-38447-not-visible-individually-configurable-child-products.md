@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-38447: "개별적으로 표시되지 않음" 구성 가능한 하위 제품이 GraphQL 응답과 느린 MySQL 쿼리에서 반환됩니다.'
+title: 'MDVA-38447: "개별적으로 표시되지 않음" 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 MySQL 쿼리가 느려집니다.'
 description: MDVA-38447 Adobe Commerce 패치를 사용하면 "개별적으로 보이지 않음" 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 범주 필터를 사용하여 GraphQL 제품 쿼리에 대한 MySQL 쿼리가 느려지는 문제가 해결됩니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38447입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

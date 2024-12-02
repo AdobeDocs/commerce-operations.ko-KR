@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49286: 여러 제품 위젯이 있는 경우 제품이 장바구니에 두 번 추가됨'
+title: 'ACSD-49286: 여러 제품 위젯이 있는 경우 장바구니에 제품이 두 번 추가되었습니다.'
 description: ACSD-49286 패치를 적용하여 페이지에 여러 제품 위젯이 있을 때 제품이 장바구니에 두 번 추가되는 Adobe Commerce 문제를 수정합니다.
 feature: Admin Workspace, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03fdaafe-5566-4b75-a0eb-e0cba3dad3e7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

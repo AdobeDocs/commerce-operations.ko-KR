@@ -3,7 +3,8 @@ title: 'ACSD-54660:  [!DNL GraphQL]에서 고객 주문을 정렬하기 위한 �
 description: ACSD-54660 패치를 적용하여 'sort_field' 및 'sort_direction'별로  [!DNL GraphQL] 의 고객 주문을 정렬하기 위해 새 입력 속성 'sort'가 추가되는 Adobe Commerce 문제를 수정하십시오.
 feature: GraphQL, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3962d4b6-634e-4164-adae-fa840ca7d869
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%

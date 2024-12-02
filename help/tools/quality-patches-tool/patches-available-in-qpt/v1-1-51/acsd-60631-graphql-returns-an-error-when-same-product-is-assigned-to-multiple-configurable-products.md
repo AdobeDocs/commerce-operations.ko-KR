@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60631: 동일한 제품이 구성 가능한 여러 제품에 할당되면 GraphQL에서 오류를 반환합니다."
+title: 'ACSD-60631: 동일한 제품이 구성 가능한 여러 제품에 할당되면 GraphQL에서 오류를 반환합니다.'
 description: ACSD-60631 패치를 적용하여 동일한 제품이 구성 가능한 여러 제품에 할당될 때 GraphQL 쿼리가 오류를 반환하는 Adobe Commerce 문제를 수정합니다.
 feature: Attributes, GraphQL
 role: Admin, Developer
-source-git-commit: 093c5d030d38a108d8acb6e59455513db147dfdf
+exl-id: 2fcc0e06-390f-4803-8e43-db7bac1c51e8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

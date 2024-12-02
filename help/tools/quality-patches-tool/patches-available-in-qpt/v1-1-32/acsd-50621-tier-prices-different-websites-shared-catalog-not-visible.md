@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50621: 공유 카탈로그의 여러 웹 사이트에 대한 계층 가격이 표시되지 않음'
+title: 'ACSD-50621: 공유 카탈로그의 여러 웹 사이트에 대한 계층 가격은 표시되지 않습니다'
 description: ACSD-50621 패치를 적용하여 다중 웹 사이트 환경에서 편집할 때 공유 카탈로그의 여러 웹 사이트에 대한 계층 가격이 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2256dee7-e544-4723-9753-ba9cf7247880
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

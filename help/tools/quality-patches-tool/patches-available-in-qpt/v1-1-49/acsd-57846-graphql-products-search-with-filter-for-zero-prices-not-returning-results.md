@@ -3,7 +3,8 @@ title: 'ACSD-57846: 필터를 사용하여 GraphQL 제품을 검색하면 결과
 description: ACSD-57846 패치를 적용하여 0부터 가격으로 제품을 필터링하면  [!DNL OpenSearch] 에 잘못된 요청이 발생하고 결과가 반환되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ec523a54-201b-4a8f-85ce-cbe1d0bf1304
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

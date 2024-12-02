@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48448: 주문 취소 중 재고 예약 테이블에 중복 입력되는 경합 조건 문제'
+title: 'ACSD-48448: 주문 취소 중 경합 상태가 발생하여 inventory_reservation 테이블에 중복 입력됨'
 description: ACSD-48448 패치를 적용하여 주문 취소 중에 경쟁 조건 문제가 발생하여 inventory_reservation 테이블에 항목이 중복되는 Adobe Commerce 성능 문제를 해결합니다.
 feature: Orders, Checkout
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: c1905b60-4607-454c-975b-77b0056661ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

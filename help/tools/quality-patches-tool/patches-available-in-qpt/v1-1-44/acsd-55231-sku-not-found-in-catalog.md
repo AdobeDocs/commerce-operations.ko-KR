@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55231: 빠른 주문 기능을 사용하는 동안 SKU를 찾을 수 없음 오류"
+title: 'ACSD-55231: 빠른 주문 기능을 사용하는 동안 SKU를 찾을 수 없음 오류'
 description: 빠른 주문 기능을 사용하여 장바구니에 제품을 추가하려고 할 때 *'카탈로그에서 SKU를 찾을 수 없음'* 오류가 발생하는 Adobe Commerce 문제를 해결하려면 ACSD-55231 패치를 적용합니다.
 feature: Products, Checkout, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f0a04773-7395-4945-a72b-5a6a018bc94e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%

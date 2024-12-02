@@ -3,7 +3,8 @@ title: 'ACSD-54067: 모바일 장치에서 제품 비디오가 재생되지 않�
 description: ACSD-54067 패치를 적용하여 제품 비디오가 모바일 장치에서 재생되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 023e7cf7-c344-4e86-850d-741b85df87a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

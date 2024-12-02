@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Quality Patches Tool]: 품질 패치를 위한 셀프서비스 도구"
-description: "[!DNL Quality Patches Tool]을(를) 사용하면 설치된 버전의 Adobe Commerce(온-프레미스 및 클라우드 인프라) 또는 Magento Open Source에 사용할 수 있는 품질 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다."
+title: '[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구'
+description: '[!DNL Quality Patches Tool]을(를) 사용하면 설치된 버전의 Adobe Commerce(온-프레미스 및 클라우드 인프라) 또는 Magento Open Source에서 사용할 수 있는 품질 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다.'
 feature: Tools and External Services
 role: Admin
-source-git-commit: 5c84a1606e171ff3c39f784b49bb96d1b68248e2
+exl-id: a83d3834-841d-4b90-b40a-fda985a85452
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%

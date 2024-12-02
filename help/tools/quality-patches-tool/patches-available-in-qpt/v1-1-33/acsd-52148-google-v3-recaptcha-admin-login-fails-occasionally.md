@@ -3,7 +3,8 @@ title: 'ACSD-52148: Google v3 reCAPTCHA 관리자 로그인이 간혹 실패함'
 description: ACSD-52148 패치를 적용하여 Google v3 reCAPTCHA 관리자 로그인이 간혹 실패하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a114d39e-0aad-45c8-9e64-2b559373b228
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

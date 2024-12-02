@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58141: PHPSESSID는 L2 Redis 캐시가 활성화된 로그인 고객에 대한 POST 요청에서 다시 생성됩니다.'
+title: 'ACSD-58141: PHPSESSID는 L2 Redis 캐시가 활성화된 로그인한 고객에 대한 POST 요청에서 재생성합니다.'
 description: ACSD-58141 패치를 적용하여 L2 Redis 캐시가 활성화된 로그인한 고객에 대한 상점 영역의 POST 요청에서 'PHPSESSID'가 다시 생성되고 고객이 관리자로부터 업데이트되는 Adobe Commerce 문제를 수정하십시오.
 feature: Customers, Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c188c215-204c-489f-8703-4c81ca8703b7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58141: L2 Redis 캐시가 활성화된 경우 로그인한 고객에 대한 [!DNL POST]개 요청에 대해 PHPSESSID가 다시 생성됩니다.
 

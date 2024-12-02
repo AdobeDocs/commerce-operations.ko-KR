@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55352: 보상 포인트가 있는 대변 메모 생성'
+title: 'ACSD-55352: 보상 포인트를 사용하여 대변 메모 생성'
 description: ACSD-55352 패치를 적용하여 고객 보상 포인트가 포함된 부분 대변 메모를 만든 후 주문 상태가 *마감됨*으로 변경되고 관리자 주문 페이지에서 대변 메모 옵션이 사라지는 Adobe Commerce 문제를 해결합니다.
 feature: Checkout, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-48587: 제품 위젯이 HTML 문자가 포함된 SKU에서 작동�
 description: ACSD-48587 패치를 적용하여 제품 위젯 일치 규칙에 특수 문자 HTML이 일치하는 제품을 표시하지 못하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, CMS, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c3e31835-03be-46b4-a080-09edf55b5b4e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

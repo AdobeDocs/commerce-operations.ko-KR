@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-61799: 여러 고정 할인 장바구니 규칙이 견적에 적용된 잘못된 총 할인 계산'
+title: 'ACSD-61799: 여러 고정 할인 카트 규칙이 견적에 적용된 잘못된 총 할인 계산'
 description: ACSD-61799 패치를 적용하여 고정 할인이 적용된 여러 장바구니 규칙이 견적에 적용될 때 총 할인이 잘못 계산되는 Adobe Commerce 문제를 해결합니다.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 0b4c46e0db3dbd7ce5914490ae20471709be261d
+exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
+source-git-commit: 737204ae7418f49fdebfffbf351304796e9f5eb0
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61799: 여러 고정 할인 카트 규칙이 견적에 적용된 잘못된 총 할인 계산
 
@@ -66,4 +66,3 @@ ACSD-61799 패치는 고정 할인이 적용된 여러 장바구니 규칙이 �
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-

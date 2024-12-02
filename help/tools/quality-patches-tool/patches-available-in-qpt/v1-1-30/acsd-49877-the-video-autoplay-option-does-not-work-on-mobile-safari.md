@@ -3,7 +3,8 @@ title: 'ACSD-49877: 모바일 [!DNL Safari]에서 비디오 자동 재생이 작
 description: ACSD-49877 패치를 적용하여 비디오가 원격 비디오 파일에 직접 연결되어 있는 경우  [!DNL Safari] 모바일에서 비디오 자동 재생 옵션이 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: CMS
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

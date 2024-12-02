@@ -3,7 +3,8 @@ title: 'ACSD-53118: 쿠폰이 포함된 장바구니 규칙이 제대로 작동�
 description: ACSD-53118 패치를 적용하여 장바구니의 제품에 빈 일치 속성이 있는 동안 쿠폰 코드를 사용하여 장바구니 가격 규칙이 적용되는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

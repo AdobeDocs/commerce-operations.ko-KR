@@ -3,7 +3,8 @@ title: 'ACSD-57588: 여러 주소로 배송 시 지역 ID 처리 도중 오류 �
 description: ACSD-57588 패치를 적용하여 여러 주소로 주문을 배송하면 지역 ID 처리 중에 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9a455d32-47d3-4d29-b12e-068bbee98f89
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

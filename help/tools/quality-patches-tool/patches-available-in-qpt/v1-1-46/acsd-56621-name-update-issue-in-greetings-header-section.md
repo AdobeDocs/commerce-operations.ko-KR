@@ -3,7 +3,8 @@ title: 'ACSD-56621: 회사 관리자의 인사말 헤더에 업데이트된 이�
 description: ACSD-56621 패치를 적용하여 회사 관리자 사용자의 업데이트된 이름과 성이 인사말 헤더 섹션에 반영되지 않은 Adobe Commerce 문제를 수정합니다.
 feature: Companies, B2B, User Account
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 739c1c8c-e079-4ad7-be97-7c60b0347e12
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

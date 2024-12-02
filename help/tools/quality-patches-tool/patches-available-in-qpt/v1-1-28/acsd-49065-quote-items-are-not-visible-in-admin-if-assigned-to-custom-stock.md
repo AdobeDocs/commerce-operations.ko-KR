@@ -3,7 +3,8 @@ title: 'ACSD-49065: 관리자에 견적 항목이 표시되지 않음'
 description: ACSD-49065 패치를 적용하여 견적 항목이 사용자 지정 재고에만 할당된 경우 관리자에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, B2B, Orders, Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fc3bea92-305b-4598-9915-3422d61c76ec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

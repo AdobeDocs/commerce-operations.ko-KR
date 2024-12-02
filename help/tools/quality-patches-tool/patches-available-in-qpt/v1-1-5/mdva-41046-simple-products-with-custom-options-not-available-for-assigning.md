@@ -3,7 +3,8 @@ title: 'MDVA-41046: 사용자 지정 옵션이 있는 간단한 제품을 할당
 description: MDVA-41046 패치는 사용자 지정 옵션이 있는 간단한 제품을 구성 가능한/그룹화된 제품에 할당할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-41046입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Products
 role: Developer
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 7fd7a9db-f834-4aea-a9d7-6e9535c037c8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

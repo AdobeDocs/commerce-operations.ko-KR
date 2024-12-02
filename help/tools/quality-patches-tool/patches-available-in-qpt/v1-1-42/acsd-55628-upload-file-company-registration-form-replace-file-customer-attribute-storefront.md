@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55628: 회사 등록 양식에 파일 업로드 중, 상점 첫 화면에서 고객 특성에 대한 파일 바꾸기'
+title: 'ACSD-55628: 회사 등록 양식에 파일 업로드 중, 상점 첫 화면에서 고객 특성에 대한 파일 대체'
 description: ACSD-55628 패치를 적용하여 회사 등록 양식에 파일을 업로드하고 상점 첫 화면에서 고객 속성에 대한 파일을 대체할 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a008a205-ec1d-4a1d-9cd2-75f10a937057
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

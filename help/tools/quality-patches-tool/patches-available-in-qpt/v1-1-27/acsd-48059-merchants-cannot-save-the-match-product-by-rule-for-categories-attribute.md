@@ -3,7 +3,8 @@ title: 'ACSD-48059: 판매자는 범주 특성에 대해 [!UICONTROL Match produ
 description: ACSD-48059 패치를 적용하여 판매자가 Categories 특성에 대한 [!UICONTROL Match product by rule]을(를) 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Attributes, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e156a752-81b3-4404-81e2-af7ed29f2b1d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

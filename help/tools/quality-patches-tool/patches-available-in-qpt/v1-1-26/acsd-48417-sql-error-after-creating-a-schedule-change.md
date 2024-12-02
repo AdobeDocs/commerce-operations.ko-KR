@@ -3,7 +3,8 @@ title: 'ACSD-48417: 일정 변경을 만든 후 SQL 오류 발생'
 description: ACSD-48417 패치를 적용하여 제품에 대한 일정 변경을 작성하고 다른 제품을 저장한 후 SQL 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Storage
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

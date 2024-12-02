@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54776: 선택 취소된 [!UICONTROL Use Default Value] 및 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 기본값이 아닌 제품 필드 값이 저장되지 않음'
+title: 'ACSD-54776: 선택하지 않은 [!UICONTROL Use Default Value] 및 기본값이 아닌 제품 필드 값이 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 저장되지 않습니다.'
 description: ACSD-54776 패치를 적용하여 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 선택되지 않은 [!UICONTROL Use Default Value] 및 기본값이 아닌 제품 필드 값이 저장되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f63abb-5d00-4777-a186-1120344af018
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

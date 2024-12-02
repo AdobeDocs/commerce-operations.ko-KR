@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51238: 구성 가능한 제품을 업데이트하고 가격을 편집할 때 재고 소스가 제거됨'
+title: 'ACSD-51238: 구성 가능한 제품을 업데이트하고 가격을 편집할 때 재고 출처가 제거됩니다.'
 description: ACSD-51238 패치를 적용하여 구성 가능한 제품을 업데이트하고 가격을 편집할 때 인벤토리 소스가 제거되는 Adobe Commerce 문제를 해결합니다.
 feature: Configuration, Inventory, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

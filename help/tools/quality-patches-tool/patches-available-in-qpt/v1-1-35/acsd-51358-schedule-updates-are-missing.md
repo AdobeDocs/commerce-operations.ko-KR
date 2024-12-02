@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51358: 예약 업데이트가 누락됨'
+title: 'ACSD-51358: 예약 업데이트가 누락되었습니다.'
 description: ACSD-51358 패치를 적용하여 종료 날짜 없이 예약된 업데이트에 변경 사항이 적용되면 동일한 엔터티에서 다른 예약된 업데이트가 제거되는 Adobe Commerce 문제를 해결합니다.
 feature: Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

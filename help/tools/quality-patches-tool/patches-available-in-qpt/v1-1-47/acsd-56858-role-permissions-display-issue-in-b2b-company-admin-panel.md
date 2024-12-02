@@ -3,7 +3,8 @@ title: 'ACSD-56858: B2B 회사 관리자의 역할 권한 불일치'
 description: ACSD-56858 패치를 적용하여 B2B 환경에서 제한된 회사 관리자에 대해 역할 권한이 잘못 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Companies, B2B, Roles/Permissions
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 28f90c8b-5d8b-4444-99ef-c91cfb5d6081
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-56023: 위젯 콘텐츠가 CMS 페이지에서 업데이트되지 �
 description: ACSD-56023 패치를 적용하여 CMS 페이지에서 위젯 콘텐츠가 업데이트되지 않는 Adobe Commerce 문제를 해결합니다
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 723b7f64-ed8a-45f9-9151-f99169cd1a04
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

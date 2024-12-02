@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54680: 여러 개의 할당된 소스가 있는 제품에 대한 B2B 견적을 처리할 수 없음'
+title: 'ACSD-54680: 여러 개의 지정된 소스가 있는 제품에 대한 B2B 견적을 처리할 수 없음'
 description: ACSD-54680 패치를 적용하여 여러 개의 할당된 소스가 있는 제품에 대한 B2B 견적을 처리할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

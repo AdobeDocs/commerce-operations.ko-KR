@@ -3,7 +3,8 @@ title: 'ACSD-51291: 제한된 관리자는 여러 웹 사이트에 할당된 제
 description: ACSD-51291 패치를 적용하여 한 웹 사이트에 대한 액세스 권한이 있는 제한된 관리자가 여러 웹 사이트에 할당된 제품에 이미지/비디오를 추가할 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Products, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4edd034-f718-4559-9993-11609f0d0efa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

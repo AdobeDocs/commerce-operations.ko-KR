@@ -3,7 +3,8 @@ title: 'ACSD-54319: *[!UICONTROL Products in Carts]* 보고서에서 제품 가�
 description: '*[!UICONTROL Products in Carts]* 보고서에서 제품 가격이 0으로 표시되는 Adobe Commerce 문제를 해결하려면 ACSD-54319 패치를 적용합니다'
 feature: Reporting, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10052d32-99f8-4b45-9fe9-a4c45bcaaa44
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'MDVA-39229: 카탈로그 규칙 준비 업데이트 시작 시간을 업
 description: MDVA-39229 패치는 카탈로그 규칙 스테이징 업데이트의 시작 시간을 업데이트한 후 사용자에게 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39229입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Catalog Management, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 633123bc-634c-4943-a2f1-9a48999774f4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

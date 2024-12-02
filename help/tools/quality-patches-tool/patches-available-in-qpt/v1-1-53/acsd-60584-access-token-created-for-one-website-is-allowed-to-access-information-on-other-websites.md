@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60584: 한 웹 사이트에 대해 생성된 액세스 토큰이 다른 웹 사이트의 정보에 액세스할 수 있음"
+title: 'ACSD-60584: 한 웹 사이트에 대해 생성된 액세스 토큰은 다른 웹 사이트의 정보에 액세스할 수 있습니다.'
 description: ACSD-60584 패치를 적용하여 한 웹 사이트에서 사용자를 위해 생성된 액세스 토큰이 다른 웹 사이트의 고객 정보에 액세스하거나 변경할 수 있는 문제를 해결합니다.
 feature: Customers, GraphQL
 role: Admin, Developer
-source-git-commit: eba4a8fd7bbf52fbc4295feab0d5bb79e7383b66
+exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

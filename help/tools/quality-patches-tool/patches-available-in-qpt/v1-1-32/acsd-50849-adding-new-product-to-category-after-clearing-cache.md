@@ -3,7 +3,8 @@ title: 'ACSD-50849: 캐시를 지운 후 새 제품을 추가하면 불일치가
 description: 캐시를 지운 후 카테고리에 새 제품을 추가하면 기존 제품의 위치와 선택이 일치하지 않는 Adobe Commerce 문제를 해결하려면 ACSD-50849 패치를 적용합니다.
 feature: Cache, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e7fd0614-eaa3-48ad-95ff-87f7ad3d76c1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

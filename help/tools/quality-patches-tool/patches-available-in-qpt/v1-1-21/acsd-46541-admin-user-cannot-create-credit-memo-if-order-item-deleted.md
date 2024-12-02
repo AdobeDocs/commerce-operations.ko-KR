@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46541: 주문 항목이 삭제된 경우 관리자가 대변 메모를 만들 수 없음"
+title: 'ACSD-46541: 주문 항목을 삭제한 경우 관리자가 대변 메모를 만들 수 없음'
 description: ACSD-46541 패치를 적용하여 제품이 삭제되면 Adobe Commerce 관리자에서 대변 메모를 만들 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Data Migration Tool] 필수 구성 요소'
+title: '[!DNL Data Migration Tool]개 필수 구성 요소'
 description: ' [!DNL Data Migration Tool] 을(를) 사용하여 Magento 1과 Magento 2 간에 데이터를 전송하기 전에 수행해야 하는 작업에 대해 알아봅니다.'
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 topic: Commerce, Migration

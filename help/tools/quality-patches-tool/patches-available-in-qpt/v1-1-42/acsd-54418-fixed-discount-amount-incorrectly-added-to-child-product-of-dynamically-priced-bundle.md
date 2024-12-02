@@ -3,7 +3,8 @@ title: 'ACSD-54418: 동적으로 가격이 책정된 번들의 하위 제품에 
 description: ACSD-54418 패치를 적용하여 고정 할인 금액이 동적으로 가격이 책정된 번들의 각 하위 제품에 잘못 적용되는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

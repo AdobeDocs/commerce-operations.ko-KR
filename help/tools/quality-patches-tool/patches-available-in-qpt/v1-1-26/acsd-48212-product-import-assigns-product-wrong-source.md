@@ -3,7 +3,8 @@ title: 'ACSD-48212: 제품 가져오기로 인해 제품이 잘못된 소스에 
 description: ACSD-48212 패치를 적용하여 제품 가져오기로 인해 제품이 잘못된 소스에 할당되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d573d95b-95fc-4f59-b518-18088855a154
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

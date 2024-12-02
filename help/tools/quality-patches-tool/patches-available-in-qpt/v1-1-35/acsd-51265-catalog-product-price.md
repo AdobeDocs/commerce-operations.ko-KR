@@ -3,7 +3,8 @@ title: 'ACSD-51265: 번들 제품에 대한 리인덱싱 최적화'
 description: 시스템에 너무 많은 번들 제품이 있을 때 'catalog_product_price' 리인덱싱 성능이 낮은 Adobe Commerce 문제를 해결하려면 ACSD-51265 패치를 적용하십시오.
 feature: Products, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1a173ca7-f99e-42d8-87d7-81a6b33f2d4d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

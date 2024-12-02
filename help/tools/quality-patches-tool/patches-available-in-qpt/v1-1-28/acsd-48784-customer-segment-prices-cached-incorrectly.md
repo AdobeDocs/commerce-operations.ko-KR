@@ -3,7 +3,8 @@ title: 'ACSD-48784: 고객 그룹 간에 잘못 캐시된 고객 세그먼트 �
 description: ACSD-48784 패치를 적용하여 고객 그룹 간에 고객 세그먼트 가격이 잘못 캐시되는 Adobe Commerce 문제를 수정합니다.
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a691c61c-fdba-4d6a-8314-095dfb0ba4a1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

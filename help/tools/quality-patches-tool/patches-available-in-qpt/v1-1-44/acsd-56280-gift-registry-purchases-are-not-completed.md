@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56280: 선물 등록 구매가 완료되지 않음'
+title: 'ACSD-56280: 선물 등록 구매가 완료되지 않았습니다.'
 description: ACSD-56280 패치를 적용하여 선물 레지스트리 구입이 완료되지 않은 Adobe Commerce 문제를 해결합니다
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

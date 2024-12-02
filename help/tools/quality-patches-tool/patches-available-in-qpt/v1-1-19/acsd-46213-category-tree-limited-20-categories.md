@@ -3,7 +3,8 @@ title: 'ACSD-46213: 20개 범주로 제한된 범주 트리 요청'
 description: 'ACSD-46213 패치는 범주 트리 요청이 20개의 범주로 제한되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19가 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46213입니다. '
 feature: Categories
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2cd4b102-db52-424f-9a7f-d775cb2b2c49
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

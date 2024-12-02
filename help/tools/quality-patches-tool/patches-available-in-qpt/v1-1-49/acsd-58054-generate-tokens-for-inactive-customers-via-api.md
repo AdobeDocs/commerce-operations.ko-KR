@@ -3,7 +3,8 @@ title: 'ACSD-58054: 비활성 고객을 위한 API 토큰 생성'
 description: ACSD-58054 패치를 적용하여 API를 통해 비활성 고객에 대한 고객 토큰을 생성할 수 있는 Adobe Commerce 문제를 수정합니다.
 feature: Customers, API Mesh
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 143cfc3e-0220-4950-8528-acf3bce686db
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

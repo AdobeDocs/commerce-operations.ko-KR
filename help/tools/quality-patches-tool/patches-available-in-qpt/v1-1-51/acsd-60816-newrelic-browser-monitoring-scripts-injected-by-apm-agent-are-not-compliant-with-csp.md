@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60816: [!DNL New Relic] APM 에이전트에서 삽입한 브라우저 모니터링 스크립트가 CSP를 준수하지 않습니다."
+title: 'ACSD-60816: [!DNL New Relic] APM 에이전트가 삽입한 브라우저 모니터링 스크립트가 CSP와 호환되지 않습니다.'
 description: ACSD-60816 패치를 적용하여 APM 에이전트가 삽입한  [!DNL New Relic] 브라우저 모니터링 스크립트가 CSP(콘텐츠 보안 정책)를 준수하지 않아 실행되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Tools and External Services, Checkout
 role: Admin, Developer
-source-git-commit: 278cc668a9d6746a38845e54d173260e1a65bb22
+exl-id: d03c25e0-ed25-4877-8470-737d3499473f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

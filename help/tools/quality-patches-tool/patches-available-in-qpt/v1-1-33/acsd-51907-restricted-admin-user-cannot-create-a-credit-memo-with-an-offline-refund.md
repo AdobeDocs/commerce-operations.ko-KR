@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51907: 제한된 관리자가 오프라인 환불에 대한 대변 메모를 만들 수 없음"
+title: 'ACSD-51907: 제한된 관리자가 오프라인 환불에 대한 대변 메모를 만들 수 없음'
 description: ACSD-51907 패치를 적용하여 제한된 관리 사용자가 오프라인 환급으로 대변 메모를 만들 수 없는 Adobe Commerce 문제를 해결합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

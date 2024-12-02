@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52143: 사용자 지정 옵션은 제품 가져오기 후 제거됨'
+title: 'ACSD-52143: 사용자 지정 옵션은 제품 가져오기 후 제거됩니다'
 description: ACSD-52143 패치를 적용하여 제품 가져오기 후 사용자 지정 옵션이 제거되는 Adobe Commerce 문제를 해결합니다.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 630fffa7-012c-4539-9745-9a34571bd2eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

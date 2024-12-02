@@ -3,7 +3,8 @@ title: 'ACSD-49973:  [!DNL GraphQL]을(를) 통해 번들 제품을 가져오는
 description: ACSD-49973 패치를 적용하여  [!DNL GraphQL]을(를) 통해 번들 제품을 가져올 때 성능 저하가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: d4817522-65dd-4ac8-8759-8518818684ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

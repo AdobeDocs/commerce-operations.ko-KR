@@ -3,7 +3,8 @@ title: 'ACSD-56741: 사용자 지정 MySQL 트리거로 데이터베이스 설�
 description: ACSD-56741 패치를 적용하여 인덱싱과 관련 없는 데이터베이스의 사용자 지정 MySQL 트리거 및  [!DNL MView](으)로 인해 'setup:upgrade' 동안 null* 유형의 값에 대한 배열 오프셋에 액세스하려고 함*이라는 오류 메시지가 표시되는 Adobe Commerce 문제를 수정하십시오.
 feature: Install
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

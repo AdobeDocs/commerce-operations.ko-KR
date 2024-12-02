@@ -3,7 +3,8 @@ title: 'MDVA-38346: Adobe Commerce 시간대가 로컬과 다른 경우 날짜 �
 description: MDVA-38346 패치는 Adobe Commerce 시간대가 로컬 환경 시간대와 다를 때 날짜 필터가 제대로 작동하지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38346입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6ed909be-81da-4e06-97c7-4eab8be2ddd2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

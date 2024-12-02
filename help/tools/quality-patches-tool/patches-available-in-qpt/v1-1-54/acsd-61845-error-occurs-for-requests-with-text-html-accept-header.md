@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다."
+title: 'ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다.'
 description: ACSD-61845 패치를 적용하여 *text/html* accept 헤더만 사용하여 HTTP 요청을 보내면 B2B 모듈이 설치된 상태에서 500 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: B2B
 role: Admin, Developer
-source-git-commit: 8dbf91806097281fb4f7c74e182f10b09b18e925
+exl-id: 6fa6c3ff-bb45-4b9e-afd4-95692acb0a90
+source-git-commit: 29845fd4a8c1c744aa780e60bb4154dfc3c1a02c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

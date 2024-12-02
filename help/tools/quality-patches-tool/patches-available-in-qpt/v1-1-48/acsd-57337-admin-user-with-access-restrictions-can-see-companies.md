@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57337: 액세스 제한이 있는 관리 사용자는 *회사* 그리드에서 모든 회사를 볼 수 있습니다.'
+title: 'ACSD-57337: 액세스 제한이 있는 관리자는 *회사* 그리드에서 모든 회사를 볼 수 있습니다.'
 description: 특정 웹 사이트에 대한 액세스 제한이 있는 관리자가 *회사* 그리드의 모든 웹 사이트에서 회사를 볼 수 있는 Adobe Commerce 문제를 해결하려면 ACSD-57337 패치를 적용합니다.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

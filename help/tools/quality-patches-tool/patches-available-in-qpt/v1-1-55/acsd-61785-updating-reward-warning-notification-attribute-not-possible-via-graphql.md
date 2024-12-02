@@ -3,7 +3,8 @@ title: 'ACSD-61785: GraphQL 돌연변이 및 REST API 호출을 통해 reward_wa
 description: ACSD-61785 패치를 적용하여 GraphQL 돌연변이 및 REST API 호출을 통해 'reward_warning_notification' 속성을 업데이트할 수 없는 Adobe Commerce 문제를 수정하십시오.
 feature: REST, GraphQL, Rewards
 role: Admin, Developer
-source-git-commit: 87ce6004a632f860447d55c13c08f78533ab093e
+exl-id: 41f40452-4240-4b4a-b1bc-0da23139f19f
+source-git-commit: c1d3d3056d1ee3c33db6c14ed10a1df08f962795
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

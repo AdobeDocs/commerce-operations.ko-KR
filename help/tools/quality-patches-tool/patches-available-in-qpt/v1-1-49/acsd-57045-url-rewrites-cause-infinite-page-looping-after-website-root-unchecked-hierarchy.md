@@ -3,13 +3,13 @@ title: 'ACSD-57045: [!UICONTROL Hierarchy]에서 [!UICONTROL Website Root]을(�
 description: ACSD-57045 패치를 적용하여 [!UICONTROL Hierarchy]에서 [!UICONTROL Website Root]을(를) 선택 취소한 후 URL 재작성으로 인해 무한 페이지 루프가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7beaee40-a392-4644-917e-c507e79bddcc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57045: [!UICONTROL Hierarchy]에서 [!UICONTROL Website Root]을(를) 선택 취소한 후 URL 재작성으로 인해 무한 페이지 루프가 발생합니다.
 

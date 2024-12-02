@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45817: GraphQL 제품 돌연변이는 구성 가능한 모든 변형을 제공합니다."
+title: 'ACSD-45817: GraphQL 제품 돌연변이는 구성 가능한 모든 변형을 제공합니다.'
 description: ACSD-45817 패치는 특정 스토어에 대한 GraphQL 'products' 돌연변이가 요청된 스토어에 할당되지 않은 변형을 포함하여 구성 가능한 모든 변형을 반환하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-45817입니다. 이 문제는 Adobe Commerce 2.4.4에서 해결되었습니다.
 feature: GraphQL, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f00e9a8e-c18b-4fa8-b7c6-c228b6a22a2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%

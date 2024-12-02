@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52657: 미니카트가 하위 도메인을 사용하는 두 번째 상점 보기에서 업데이트되지 않음'
+title: 'ACSD-52657: 미니마트가 하위 도메인을 사용하는 두 번째 상점 보기에서 업데이트되지 않음'
 description: ACSD-52657 패치를 적용하여 하위 도메인을 사용하는 두 번째 저장소 보기에서 미니 마트가 업데이트되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: feec9dde-5532-481b-9410-7f6be9df4be7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

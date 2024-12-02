@@ -3,7 +3,8 @@ title: 'MDVA-31763: 수동으로 다시 색인화할 때까지 카탈로그 가�
 description: MDVA-31763 패치는 수동 색인 재지정 전까지 카탈로그 가격 규칙이 되돌아가는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-31763입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 1d144bfc-c26b-43d0-a80c-26a9c2d8ef32
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%

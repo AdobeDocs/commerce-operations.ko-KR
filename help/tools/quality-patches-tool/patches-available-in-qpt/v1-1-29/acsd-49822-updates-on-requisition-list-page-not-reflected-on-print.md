@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49822: 구매요청 목록 페이지의 업데이트가 구매요청 목록 인쇄에 반영되지 않음'
+title: 'ACSD-49822: 구매요청 목록 페이지의 갱신이 구매요청 목록 인쇄에 반영되지 않음'
 description: ACSD-49822 패치를 적용하여 구매요청 목록 페이지의 갱신사항이 구매요청 인쇄 목록에 반영되지 않는 Adobe Commerce 문제를 수정합니다.
 feature: Admin Workspace, B2B
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 053b8900-0900-4b7e-ba1b-ad4b88ca3f35
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

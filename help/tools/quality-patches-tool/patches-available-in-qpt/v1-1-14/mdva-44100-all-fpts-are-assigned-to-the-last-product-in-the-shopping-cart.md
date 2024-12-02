@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-44100: 모든 FPT가 장바구니의 마지막 제품에 할당됨'
+title: 'MDVA-44100: 장바구니에 있는 마지막 제품에 모든 FPT가 할당됨'
 description: MDVA-44100 패치는 모든 FPT가 장바구니의 마지막 제품에 할당되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-44100입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b370dcbb-cbe9-4f5d-9b8f-1722ab521fcb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

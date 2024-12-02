@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-38393: 간단한 제품의 이름이 변경된 경우 구성 가능한 제품에 대한 카탈로그 규칙 작동이 중지됨'
+title: 'MDVA-38393: 간단한 제품의 이름이 변경된 경우 구성 가능한 제품에 대한 카탈로그 규칙 작동이 중지됩니다.'
 description: MDVA-38393 패치는 구성 가능한 제품의 단순 제품 이름이 변경된 경우 해당 제품에 대한 카탈로그 규칙 작동이 중지되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38393입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Catalog Management, Categories, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3d98671c-6ee7-4fe8-80d9-67fa697cae75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%

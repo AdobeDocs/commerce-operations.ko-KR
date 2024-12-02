@@ -3,7 +3,8 @@ title: 'ACSD-54626: GraphQL을 통해 NUMBER_OF_SKUS로 새 구매 주문 규칙
 description: ACSD-54626 패치를 적용하여 고객이 GraphQL을 통해 'NUMBER_OF_SKUS' 속성으로 새 구매 주문 규칙('createPurchaseOrderApprovalRule')을 생성할 수 없는 Adobe Commerce 문제를 수정합니다.
 feature: Attributes, B2B, GraphQL, Purchase Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 626bd403-6334-4475-b702-09606a590c7e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-55566:  [!DNL GraphQL] 응답에 내부 서버 오류가 발생하�
 description: ACSD-55566 패치를 적용하여 동일한 번들 항목이 있는 소스 카트와 대상 카트를 병합할 때 'mergeCart' 돌연변이가 실패하고  [!DNL GraphQL] 응답의 내부 서버 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 84c6fbb9-73b3-4197-aff3-49743f0ebb2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

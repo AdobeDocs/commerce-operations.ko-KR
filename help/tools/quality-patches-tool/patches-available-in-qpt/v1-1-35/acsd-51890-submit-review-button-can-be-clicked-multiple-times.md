@@ -3,7 +3,8 @@ title: 'ACSD-51890: [!UICONTROL Submit review] 단추를 여러 번 클릭할 �
 description: ACSD-51890 패치를 적용하여  [!DNL Google reCAPTCHA v3] 유효성 검사 없이 [!UICONTROL Submit Review] 단추를 여러 번 클릭할 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: db69ccdc-c66e-4bdb-9783-772f2af0d33f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

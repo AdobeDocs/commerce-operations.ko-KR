@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47179: 제한된 사용자 역할로 로그인하면 제품 리뷰의 대량 삭제가 작동하지 않음'
+title: 'ACSD-47179: 제한된 사용자 역할로 로그인하는 경우 제품 리뷰의 대량 삭제가 작동하지 않음'
 description: ACSD-47179 패치를 적용하여 제한된 사용자 역할로 로그인할 때 제품 리뷰의 대량 삭제가 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7131ee47-fadc-4e93-b8b2-5b2e0521ad97
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-52287: 보관된 주문의 상태가 변경되지 않음'
 description: ACSD-52287 패치를 적용하여 대변 메모가 제출된 후 그리드에서 보관된 주문의 상태가 *완료됨*에서 *마감됨*으로 변경되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 012f49ba-fdc1-4e1e-87fe-7b9c661f231b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

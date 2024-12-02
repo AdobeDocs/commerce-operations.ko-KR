@@ -3,7 +3,8 @@ title: 'ACSD-48366: [!UICONTROL Back to Stock] 전자 메일 템플릿에 제품
 description: ACSD-48366 패치를 적용하여 제품 썸네일 이미지가 제품의 재고 경고 이메일에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Communications, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a721f399-f50a-4a13-9f5d-17ae7f3985f6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

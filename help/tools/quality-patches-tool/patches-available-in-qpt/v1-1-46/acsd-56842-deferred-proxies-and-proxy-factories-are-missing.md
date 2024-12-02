@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-56842: ''setup:di:compile'' 실행 후 지연된 프록시 및 프록시 팩토리가 누락됨'''
+title: 'ACSD-56842: ''setup:di:compile''을 실행한 후 지연된 프록시 및 프록시 팩토리가 누락됨'
 description: ACSD-56842 패치를 적용하여 'setup:di:compile'을 실행한 후 지연된 프록시 및 프록시 팩토리가 누락된 Adobe Commerce 문제를 수정합니다.
 feature: Deploy, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: cd29267f-e2f2-41b5-b374-ac96166af8ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

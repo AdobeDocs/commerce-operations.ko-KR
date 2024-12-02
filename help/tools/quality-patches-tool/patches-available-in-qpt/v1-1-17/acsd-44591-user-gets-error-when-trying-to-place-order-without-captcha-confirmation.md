@@ -3,7 +3,8 @@ title: 'ACSD-44591: CAPTCHA 확인 없이 주문할 때 오류 발생'
 description: ACSD-44591 패치는 CAPTCHA 확인 없이 주문을 하려고 할 때 사용자가 오류가 발생하는 문제를 해결합니다.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4b8a8090-a2ba-428c-9a04-7c0842e94a6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

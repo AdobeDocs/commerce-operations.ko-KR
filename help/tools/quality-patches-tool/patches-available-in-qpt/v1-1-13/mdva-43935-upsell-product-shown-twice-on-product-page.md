@@ -3,7 +3,8 @@ title: 'MDVA-43935: 제품 페이지에 두 번 표시된 상향 판매 제품'
 description: MDVA-43935 패치는 제품 페이지에 상향 판매 제품이 두 번 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43935입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f076b29a-b2de-4549-9216-407c50a3e3e5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

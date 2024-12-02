@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54961: 제한된 관리자는 [!UICONTROL Product Review status]을(를) 대량 업데이트할 수 없습니다."
+title: 'ACSD-54961: 제한된 관리자는 [!UICONTROL Product Review status]을(를) 대량 업데이트할 수 없습니다.'
 description: ACSD-54961 패치를 적용하여 제한된 관리자가 제품 검토 상태를 일괄 업데이트할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d303365c-d7c7-4aca-9f33-75d67bcbe573
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40262: GraphQL 쿼리가 관리자의 인기 검색어에 표시되지 않음"
+title: 'MDVA-40262: GraphQL 쿼리가 관리자의 인기 검색어에 표시되지 않음'
 description: MDVA-40262 Adobe Commerce 품질 패치는 GraphQL 검색 쿼리가 관리자의 인기 검색어에 표시되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40262입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Admin Workspace, GraphQL, Search
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: 9442ac86-e632-4ab3-8cb3-d29487a1ecbe
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

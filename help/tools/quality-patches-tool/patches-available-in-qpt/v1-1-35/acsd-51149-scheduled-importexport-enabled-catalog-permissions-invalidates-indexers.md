@@ -3,7 +3,8 @@ title: 'ACSD-51149: [!UICONTROL Catalog Permissions]이(가) 활성화된 예약
 description: ACSD-51149 패치를 적용하여 [!UICONTROL Catalog Permissions]이(가) 활성화된 예약된 [!UICONTROL ImportExport]이(가) 인덱서를 무효화하는 Adobe Commerce 성능 문제를 해결합니다.
 feature: Cache, Data Import/Export
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eafc69ab-ec81-4192-85f8-a235f0a131a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%

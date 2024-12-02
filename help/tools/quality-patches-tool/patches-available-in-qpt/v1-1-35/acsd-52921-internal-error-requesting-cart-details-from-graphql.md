@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52921: GraphQL에서 품절 구성 가능한 제품에 대한 장바구니 세부 정보를 요청하는 중 오류 발생"
+title: 'ACSD-52921: GraphQL에서 품절 구성 가능한 제품에 대한 장바구니 세부 정보를 요청하는 도중 오류 발생'
 description: ACSD-52921 패치를 적용하여 GraphQL에서 품절 구성 가능한 제품에 대한 장바구니 세부 정보를 요청할 때 내부 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Configuration, Products, Shopping Cart
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 7790718a-6b86-497e-b1a1-88ba22c3e8ff
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

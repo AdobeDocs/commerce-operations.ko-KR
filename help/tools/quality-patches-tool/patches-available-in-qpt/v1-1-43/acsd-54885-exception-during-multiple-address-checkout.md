@@ -3,7 +3,8 @@ title: 'ACSD-54885: 관리자가 고객으로 로그인할 때 여러 주소를 
 description: ACSD-54885 패치를 적용하여 관리자가 *[!UICONTROL Login as Customer]* 기능을 사용할 때 여러 주소를 체크아웃하는 동안 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c146bc2a-2df1-4825-9cfc-69e04095b3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

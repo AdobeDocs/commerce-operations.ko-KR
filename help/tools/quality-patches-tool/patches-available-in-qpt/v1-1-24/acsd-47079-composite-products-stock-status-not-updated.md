@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47079: 하위 제품 재고 상태가 변경될 때 복합 제품의 재고 상태가 업데이트되지 않음"
+title: 'ACSD-47079: 하위 제품 재고 상태가 변경될 때 복합 제품의 재고 상태가 업데이트되지 않음'
 description: ACSD-47079 패치를 적용하여 REST API POST /rest/V1/inventory/source-items를 통해 하위 제품 재고 상태가 변경될 때 합성 제품(번들, 그룹화 및 구성 가능한) 재고 상태가 업데이트되지 않는 Adobe Commerce 문제를 수정합니다.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

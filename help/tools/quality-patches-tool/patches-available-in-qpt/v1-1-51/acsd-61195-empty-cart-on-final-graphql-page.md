@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61195: 장바구니 GraphQL 요청이 최종 페이지에 항목을 반환하지 못함"
+title: 'ACSD-61195: 장바구니 GraphQL 요청이 최종 페이지에 항목을 반환하지 못함'
 description: ACSD-61195 패치를 적용하여 장바구니 GraphQL 요청의 마지막 페이지에서 장바구니 항목이 반환되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: f6e410e0787e56717b3910b7f3938108a7af9cd8
+exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

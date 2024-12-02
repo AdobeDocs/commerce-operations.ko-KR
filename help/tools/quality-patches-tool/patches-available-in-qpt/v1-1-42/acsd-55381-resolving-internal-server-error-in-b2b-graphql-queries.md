@@ -3,7 +3,8 @@ title: 'ACSD-55381: B2B 구매요청 목록에서 구성 가능한 제품 옵션
 description: ACSD-55381 패치를 적용하여 B2B 구매요청 목록의 'configurable_product_option_uid' 및 'configurable_product_option_value_uid' 필드에 대한 GraphQL 쿼리 도중 내부 서버 오류가 발생하는 Adobe Commerce 문제를 수정합니다.
 feature: GraphQL, B2B, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 573d33bc-c7b6-49ce-9ad1-926548f4c952
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

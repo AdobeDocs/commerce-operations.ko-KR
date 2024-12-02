@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48204: *예/아니요* 속성에 따라 생성된 카탈로그 가격 규칙은 선택한 범위를 고려하지 않습니다."
+title: 'ACSD-48204: *예/아니요* 속성에 따라 생성된 카탈로그 가격 규칙은 선택한 범위를 고려하지 않습니다.'
 description: ACSD-48204 패치를 적용하여 *예/아니요* 속성에 따라 생성된 카탈로그 가격 규칙이 선택한 범위를 고려하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69f2b35c-856e-4f96-ae2f-fb0c64d5eb94
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39305: 활성화된 Google reCAPTCHA의 로그인 문제'
+title: 'MDVA-39305: Google reCAPTCHA가 활성화된 경우 로그인 문제'
 description: MDVA-39305 패치는 등록된 고객이 활성화된 Google reCAPTCHA로 로그인할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39305입니다. 이 문제는 Adobe Commerce 버전 2.4.4 및 2.4.7에서 수정됩니다.
 feature: Console
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: c40fd84a-73dc-42bd-8cda-58738615fbba
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

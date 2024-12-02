@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54983: 비활성 사용자는 GraphQL을 사용하는 회사 사용자 UID을 사용할 수 없음'
+title: 'ACSD-54983: GraphQL을 사용하는 회사 사용자 UID을 비활성 사용자와 함께 사용할 수 없음'
 description: ACSD-54983 패치를 적용하여 사용자 상태가 비활성으로 설정된 경우 Adobe Commerce 요청으로 회사 사용자 UID을 가져올 수 없는 GraphQL 문제를 해결합니다.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b188270f-5454-41c9-8370-f4c396095297
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

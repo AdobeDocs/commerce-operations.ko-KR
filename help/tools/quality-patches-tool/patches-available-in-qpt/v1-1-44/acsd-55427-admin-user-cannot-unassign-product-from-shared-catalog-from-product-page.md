@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55427: 관리자가 제품 페이지의 **[!UICONTROL Product in Shared Catalogs]**에서 제품 할당을 취소할 수 없습니다."
+title: 'ACSD-55427: 관리자는 제품 페이지의 **[!UICONTROL Product in Shared Catalogs]**에서 제품 할당을 취소할 수 없습니다.'
 description: ACSD-55427 패치를 적용하여 **[!UICONTROL Product in Shared Catalogs]**에서 제품 할당을 취소할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Products, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 974347fd-351d-4a4b-a9ca-a534daf3fbd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

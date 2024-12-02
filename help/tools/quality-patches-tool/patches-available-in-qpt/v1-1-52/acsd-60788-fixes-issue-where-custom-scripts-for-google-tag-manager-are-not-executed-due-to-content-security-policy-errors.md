@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60788: CSP 오류로 인해  [!DNL Google Tag Manager] 에 대한 사용자 지정 스크립트가 실행되지 않음"
+title: 'ACSD-60788: CSP 오류로 인해  [!DNL Google Tag Manager] 에 대한 사용자 지정 스크립트가 실행되지 않음'
 description: ACSD-60788 패치를 적용하여 CSP(콘텐츠 보안 정책) 오류로 인해  [!DNL Google Tag Manager] 에 대한 사용자 지정 스크립트가 실행되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Security
 role: Admin, Developer
-source-git-commit: d1c643da36a200c6fb0a17139b12b6b91d9568e1
+exl-id: 3392da76-86cb-4357-8658-c95d914a5829
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

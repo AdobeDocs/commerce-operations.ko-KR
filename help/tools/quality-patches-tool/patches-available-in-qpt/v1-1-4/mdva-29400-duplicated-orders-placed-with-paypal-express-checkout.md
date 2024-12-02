@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-29400: PayPal Express 체크아웃과 함께 주문된 중복 주문'
+title: 'MDVA-29400: PayPal Express 체크아웃 시 중복 주문'
 description: MDVA-29400 패치는 고객이 PayPal Express Checkout으로 주문을 할 때 중복 주문이 생성되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-29400입니다. 이 문제는 Adobe Commerce 2.4.1에서 해결되었습니다.
 feature: Checkout, Orders, Payments
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6f7291d3-d554-4e4e-a55d-89ea2b9dea33
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%

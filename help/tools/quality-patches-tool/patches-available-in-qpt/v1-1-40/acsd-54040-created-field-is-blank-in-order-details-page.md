@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54040: B2B 모듈이 활성화되면 [!UICONTROL Created] 필드가 비어 있는 순서 세부 정보'
+title: 'ACSD-54040: B2B 모듈이 활성화되면 [!UICONTROL Created] 필드가 비어 있습니다.'
 description: B2B 모듈이 활성화되어 있을 때 주문 세부 사항 페이지에서 [!UICONTROL Created] 필드가 비어 있는 Adobe Commerce 문제를 해결하려면 ACSD-54040 패치를 적용합니다.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09fc1e0f-2e02-4cfc-9a7a-7c6aacd9fee0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

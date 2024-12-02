@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-41631: 선택적 "telephone" 값 없이 주문 정보를 검색하는 동안 오류 발생'
+title: 'MDVA-41631: 선택적 "telephone" 값 없이 주문 정보를 검색하는 도중 오류 발생'
 description: MDVA-41631 패치는 사용자가  [!DNL GraphQL]을(를) 통해 선택적 "전화" 값 없이 주문 정보를 검색하는 동안 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7이 설치된 경우 사용할 수 있습니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Orders
 role: Admin

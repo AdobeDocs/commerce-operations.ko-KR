@@ -3,7 +3,8 @@ title: 'ACSD-53628: CSV 판매 주문 보고서에 잘못된 특수 문자가 �
 description: ACSD-53628 패치를 적용하여 CSV 판매 주문 보고서에 잘못된 특수 문자가 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b6293efe-fbeb-4b1e-b408-34dc86228b8e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-49129: 제품 미디어 API 응답에 "Content" 속성이 반환되지 않음"'
+title: 'ACSD-49129: 제품 미디어 API 응답에 "Content" 속성이 반환되지 않음'
 description: ACSD-49129 패치를 적용하여 'rest/V1/products/sku/media' 제품 미디어 API 응답에서 *content* 속성(*base64 이미지 코드*)이 반환되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: REST, Attributes, Media, Page Content, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5235b7d1-4ebf-4cfb-8605-47614306a122
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

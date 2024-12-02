@@ -3,7 +3,8 @@ title: 'ACSD-49737: 쿠폰이 카드 결제 실패 후 사용된 것으로 잘�
 description: ACSD-49737 패치를 적용하여 카드 결제가 실패한 후 쿠폰이 사용된 것으로 잘못 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09060026-8d64-49f6-a85a-3230a52030fb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

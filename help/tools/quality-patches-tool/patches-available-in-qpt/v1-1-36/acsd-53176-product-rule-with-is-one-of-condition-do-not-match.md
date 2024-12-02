@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-53176: ''is one of'' 조건이 있는 제품 규칙이 일치하지 않음'''
+title: 'ACSD-53176: ''is one of'' 조건이 있는 제품 규칙이 일치하지 않음'
 description: ACSD-53176 패치를 적용하여 관련 제품 규칙 'is one of' 조건이 'Products to Match'에 대해 제대로 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8260c6ac-3ca2-4361-9e36-a8a58468fa95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

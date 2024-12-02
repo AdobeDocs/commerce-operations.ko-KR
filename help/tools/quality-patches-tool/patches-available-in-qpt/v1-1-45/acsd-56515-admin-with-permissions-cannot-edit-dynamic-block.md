@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56515: 웹 사이트 수준 권한이 있는 관리자가 [!UICONTROL Dynamic Block]을(를) 편집할 수 없음'
+title: 'ACSD-56515: 웹 사이트 수준 권한이 있는 관리자가 [!UICONTROL Dynamic Block]을(를) 편집할 수 없습니다.'
 description: 웹 사이트 수준 권한이 있는 관리자가 [!UICONTROL Dynamic Block]을(를) 추가하거나 편집할 수 없는 Adobe Commerce 문제를 해결하려면 ACSD-56515 패치를 적용하십시오.
 feature: Roles/Permissions, Admin Workspace
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dd3e61a4-aba4-4f86-b4fe-88ca4276ace5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

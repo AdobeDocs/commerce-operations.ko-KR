@@ -3,7 +3,8 @@ title: 'ACSD-61348: 위시리스트 항목이 GraphQL을 통해 표시되지만 
 description: ACSD-61348 패치를 적용하여 위시리스트 항목이 GraphQL을 통해 표시되지만 다중 웹 사이트 환경의 상점 앞에는 표시되지 않는 Adobe Commerce 문제를 수정합니다.
 feature: Customers
 role: Admin, Developer
-source-git-commit: b3dcce33b5710cd3c4b835f5fc7fd8f16cdc6a7f
+exl-id: fcba2c28-077d-4663-b129-7da436e2791d
+source-git-commit: c1d3d3056d1ee3c33db6c14ed10a1df08f962795
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

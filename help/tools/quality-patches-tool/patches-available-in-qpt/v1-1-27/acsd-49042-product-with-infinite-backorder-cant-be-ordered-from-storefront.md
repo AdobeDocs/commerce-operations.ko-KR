@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49042: 무한 역주문의 제품은 상점에서 주문할 수 없습니다."
+title: 'ACSD-49042: 무한 주문된 제품은 상점에서 주문할 수 없습니다.'
 description: ACSD-49042 패치를 적용하여 무한 역주문이 있는 제품을 상점 전면에서 주문할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b94d06c0-806a-40be-bcd4-d6b8e5e474c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

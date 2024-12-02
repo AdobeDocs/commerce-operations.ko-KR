@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47875: 재고 관리를 사용하여 스토어 보기 범위의 장바구니에 제품을 추가할 수 없음"
+title: 'ACSD-47875: 재고 관리를 사용하여 스토어 보기 범위의 장바구니에 제품을 추가할 수 없음'
 description: ACSD-47875 패치를 적용하여 재고 관리를 사용하는 특정 스토어 보기 범위에 대해 관리자의 고객 장바구니에 제품을 추가할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-46703: 제품 사용자 지정 드래그 앤 드롭이 작동하지
 description: 이 문서에서는 제품 사용자 지정 가능 옵션 끌어서 놓기가 예상대로 작동하지 않는 문제에 대한 해결 방법을 제공합니다.
 feature: Products
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54965: [!UICONTROL Visual Merchandising] 그리드에 올바른 재고가 표시되지 않음'
+title: 'ACSD-54965: [!UICONTROL Visual Merchandising] 그리드에 올바른 재고가 표시되지 않습니다.'
 description: ACSD-54965 패치를 적용하여 제품이 사용자 지정 재고에 할당될 때 [!UICONTROL Visual Merchandising] 그리드에 올바른 재고가 표시되지 않는 Adobe Commerce 문제를 수정하십시오.
 feature: Merchandising, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bd8a3547-1d84-4a17-b006-b35d92256211
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

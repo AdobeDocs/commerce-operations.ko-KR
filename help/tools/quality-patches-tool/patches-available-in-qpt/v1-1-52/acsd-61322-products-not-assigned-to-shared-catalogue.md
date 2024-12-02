@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61322: [!UICONTROL Shared Catalogue]에 할당되지 않은 제품이 XML 사이트 맵에 포함되어 있습니다."
+title: 'ACSD-61322: [!UICONTROL Shared Catalogue]에 할당되지 않은 제품이 XML 사이트 맵에 포함되어 있습니다.'
 description: ACSD-61322 패치를 적용하여 기본(일반) 그룹의 [!UICONTROL Shared Catalog]에 할당되지 않은 제품/범주가 여전히 XML 사이트 맵에 포함된 Adobe Commerce 문제를 해결합니다.
 feature: Site Navigation, B2B
 role: Admin, Developer
-source-git-commit: 1eed4f1f6484112a0ec728659aa4b79855bf9612
+exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

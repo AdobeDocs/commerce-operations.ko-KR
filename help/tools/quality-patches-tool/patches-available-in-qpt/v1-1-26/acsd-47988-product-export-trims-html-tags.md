@@ -3,7 +3,8 @@ title: 'ACSD-47988: 페이지 빌더 제품 설명의 제품 내보내기 트림
 description: ACSD-47988 패치를 적용하여 제품 내보내기가 페이지 빌더 제품 설명의 HTML 태그를 트리밍하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2cb3b4ac-38df-4832-b894-b34bb3d7bbc6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

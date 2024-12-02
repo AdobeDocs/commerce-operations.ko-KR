@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-61366: "bin/magento setup:static-content:deploy —jobs 4" 명령에 오류가 발생하여 여러 작업 오류가 발생했습니다."'
+title: 'ACSD-61366: ''bin/magento setup:static-content:deploy —jobs 4'' 명령에 오류가 발생하며 여러 작업 오류가 발생했습니다.'
 description: DB 연결에 대한 포트를 지정했음에도 불구하고 'bin/magento setup:static-content:deploy —jobs 4' 명령에 *호스트 매개 변수* 오류로 여러 작업 오류가 발생하는 Adobe Commerce 문제를 해결하려면 ACSD-61366 패치를 적용합니다.
 feature: SCD
 role: Admin, Developer
-source-git-commit: b671dc30cd511d63dbbbaa6edd47ee36c1351620
+exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

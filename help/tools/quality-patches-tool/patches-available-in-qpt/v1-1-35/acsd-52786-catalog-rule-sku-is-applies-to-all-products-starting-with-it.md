@@ -3,7 +3,8 @@ title: 'ACSD-52786: 카탈로그 규칙 *[!UICONTROL SKU is]*은(는) SKU로 시
 description: ACSD-52786 패치를 적용하여 카탈로그 규칙 조건 *[!UICONTROL SKU is]*이(가) 지정된 SKU로 시작하는 모든 제품에 적용되는 Adobe Commerce 문제를 해결합니다.
 feature: Price Rules
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 668d5f16-18a9-4054-aa6e-1fb8fa211373
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

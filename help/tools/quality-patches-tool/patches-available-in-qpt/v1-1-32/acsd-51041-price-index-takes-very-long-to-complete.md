@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51041: 가격 지수는 완료되기까지 매우 오래 걸립니다.'
+title: 'ACSD-51041: 물가지수가 완료되기까지 매우 오래 걸림'
 description: ACSD-51041 패치를 적용하여 매우 큰 제품 세트로 가격 색인을 완료하는 데 시간이 오래 걸리는 Adobe Commerce 문제를 해결합니다.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

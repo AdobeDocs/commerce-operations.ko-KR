@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46674: 고객 이메일에서 HTML으로 표시되는 이미지 유형의 사용자 지정 옵션'
+title: 'ACSD-46674: 고객 이메일에서 HTML으로 표시되는 이미지 유형의 맞춤형 옵션'
 description: ACSD-46674 패치를 적용하여 이미지 유형의 사용자 지정 옵션이 고객 이메일에 HTML으로 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Communications, Personalization
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 123ca7b5-02da-4573-897f-ff8adb184389
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

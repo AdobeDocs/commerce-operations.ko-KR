@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53998: 고객 세그먼트를 기반으로 한 동적 블록이 로그아웃 후 잘못 작동함'
+title: 'ACSD-53998: 고객 세그먼트를 기반으로 한 동적 블록은 로그아웃 후 제대로 작동하지 않음'
 description: ACSD-53998 패치를 적용하여 고객 계정에서 로그아웃한 후 고객 세그먼트를 기반으로 하는 다이내믹 블록이 제대로 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: aa7001c7-bb35-4e5c-8ac9-3ed84b75d7cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

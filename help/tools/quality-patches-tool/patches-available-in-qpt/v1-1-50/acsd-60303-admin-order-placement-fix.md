@@ -3,7 +3,8 @@ title: 'ACSD-60303: HTML 축소가 활성화된 상태에서 관리자 주문 �
 description: ACSD-60303 패치를 적용하여 HTML 축소가 활성화된 경우 관리자로부터 주문을 할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 85b987e7-9d65-4d15-8099-985dc227b66c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

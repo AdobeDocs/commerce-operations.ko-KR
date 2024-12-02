@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49502: 다운로드 가능한 링크가  [!DNL staging] 업데이트 후에 올바르게 업데이트되지 않음'
+title: 'ACSD-49502:  [!DNL staging] 업데이트 후 다운로드 가능한 링크가 올바르게 업데이트되지 않음'
 description: ACSD-49502 패치를 적용하여 다운로드 가능한 제품에  [!DNL staging] 업데이트가 적용된 후 다운로드 가능한 링크가 올바르게 업데이트되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Staging
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9bdc9a7e-4291-4438-9ba0-65fcab1f95bb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

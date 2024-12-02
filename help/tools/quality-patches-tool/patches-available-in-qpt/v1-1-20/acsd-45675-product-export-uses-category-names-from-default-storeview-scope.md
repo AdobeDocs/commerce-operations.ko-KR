@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45675: 제품 내보내기에서 기본 스토어 보기 범위의 카테고리 이름을 사용함'
+title: 'ACSD-45675: 제품 내보내기에서 기본 스토어 보기 범위의 카테고리 이름을 사용합니다.'
 description: ACSD-45675 패치는 제품 내보내기가 기본 스토어 보기 범위의 카테고리 이름을 사용하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-45675입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Categories, Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

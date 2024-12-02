@@ -3,7 +3,8 @@ title: 'ACSD-50814: 관리자가 대변 메모를 만들 수 없음'
 description: ACSD-50814 패치를 적용하여 관리자가 대변 메모를 만들 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 87ee7166-7492-4948-9a85-a183ecf54fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

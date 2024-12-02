@@ -3,7 +3,8 @@ title: 'ACSD-50234:  [!DNL PayPal]을(를) 사용하여 수행한 주문에 대�
 description: ACSD-50234 패치를 적용하여  [!DNL PayPal]을(를) 사용하여 주문한 주문에 대한 확인 이메일에 고객 이름이 잘못 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

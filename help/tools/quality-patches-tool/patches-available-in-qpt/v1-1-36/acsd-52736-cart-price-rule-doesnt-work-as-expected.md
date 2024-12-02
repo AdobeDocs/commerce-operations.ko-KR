@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52736: [!UICONTROL Cart Price Rule]이(가) 예상대로 작동하지 않습니다."
+title: 'ACSD-52736: [!UICONTROL Cart Price Rule]이(가) 예상대로 작동하지 않습니다.'
 description: 구성 가능한 제품 수량에 대한 요구 사항이 포함된 [!UICONTROL Cart Price Rule]이(가) 예상대로 작동하지 않는 Adobe Commerce 문제를 해결하려면 ACSD-52736 패치를 적용하십시오.
 feature: Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 80c3b14e-62ce-4cfc-b1ff-968e70e3a6f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

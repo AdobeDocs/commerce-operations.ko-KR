@@ -1,5 +1,5 @@
 ---
-title: '[!DNL ACSD-47280]: 공유 카탈로그를 사용하지 않도록 설정하면 잘못된 제품 검색 결과가 나옵니다.'
+title: '[!DNL ACSD-47280]: 공유 카탈로그를 사용하지 않도록 설정하면 잘못된 제품 검색 결과가 나옵니다'
 description: 공유 카탈로그 기능을 사용하지 않도록 설정한 경우 올바른 검색 결과를 표시하려면  [!DNL ACSD-47280] 패치를 적용하십시오.
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt

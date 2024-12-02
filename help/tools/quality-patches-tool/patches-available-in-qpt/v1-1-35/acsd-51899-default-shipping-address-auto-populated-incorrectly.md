@@ -3,7 +3,8 @@ title: 'ACSD-51899: 기본 배송 주소가 잘못 입력됨'
 description: ACSD-51899 패치를 적용하여 기본 배송 주소가 잘못된 주소로 자동 채워지는 Adobe Commerce 문제를 해결합니다.
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 14e48613-6af8-476c-978d-87c27a0b0d15
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

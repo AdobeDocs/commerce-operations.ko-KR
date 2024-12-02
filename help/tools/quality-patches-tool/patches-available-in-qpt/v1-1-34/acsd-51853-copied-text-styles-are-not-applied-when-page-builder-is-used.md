@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51853: 복사된 텍스트 스타일이 페이지 빌더를 사용하여 적용되지 않음"
+title: 'ACSD-51853: 복사된 텍스트 스타일이 페이지 빌더를 사용하여 적용되지 않음'
 description: ACSD-51853 패치를 적용하여 페이지 빌더를 사용할 때 복사된 텍스트 스타일이 적용되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Page Builder
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fda5ba6e-4786-473c-a3a2-7356aa20f5ae
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

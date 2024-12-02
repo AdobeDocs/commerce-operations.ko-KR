@@ -3,7 +3,8 @@ title: 'MDVA-32776: 재고 상태가 주문 배치로 업데이트되지 않음'
 description: MDVA-32776 패치는 주문이 시작되었지만 배송되지 않은 경우 재고 상태가 업데이트되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-32776입니다. 이 문제는 Adobe Commerce 2.4.2에서 해결되었습니다.
 feature: Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%

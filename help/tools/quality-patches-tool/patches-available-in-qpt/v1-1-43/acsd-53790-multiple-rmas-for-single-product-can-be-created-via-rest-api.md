@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53790: 단일 제품에 대한 여러 RMA는 Rest API를 통해 만들 수 있음'
+title: 'ACSD-53790: 단일 제품에 대한 여러 RMA는 Rest API를 통해 만들 수 있습니다.'
 description: ACSD-53790 패치를 적용하여 Rest API를 통해 단일 제품에 대한 여러 RMA를 만들 수 있는 Adobe Commerce 문제를 수정합니다.
 feature: REST, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7feb29bd-cd81-4d84-b572-53f625743883
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

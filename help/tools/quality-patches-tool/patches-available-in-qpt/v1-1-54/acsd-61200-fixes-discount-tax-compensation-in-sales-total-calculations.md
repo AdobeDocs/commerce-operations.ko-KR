@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61200: 판매 합계 계산에서 할인 세금 보상이 수정됨"
+title: 'ACSD-61200: 판매 합계 계산에서 할인 세금 보상을 수정합니다.'
 description: ACSD-61200 패치를 적용하여 *[!UICONTROL Discount Tax Compensation Amount]* 및 *[!UICONTROL Shipping Discount Tax Compensation Amount]*이(가) 판매 총계 계산에서 누락되어 판매 주문 데이터와 쿠폰 보고서 데이터가 일치하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Reporting, Taxes
 role: Admin, Developer
-source-git-commit: 61259d8e059cd813a84907e4baef873b2cc8cad0
+exl-id: eb908827-de29-4b2c-b094-b5db0931cd52
+source-git-commit: 2e82c935145d71d0c66c531003fa51f564da6e41
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

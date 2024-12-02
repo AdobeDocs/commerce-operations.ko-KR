@@ -3,7 +3,8 @@ title: 'ACSD-54739: *[!UICONTROL Related Product Rules]*에 대해 *[!UICONTROL 
 description: ACSD-54739 패치를 적용하여 *[!UICONTROL Related Product Rules]*에 대해 *[!UICONTROL Product Stock]* 상태가 적용되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d6d3b25d-b10e-4ccb-a9c4-b5c1c7773eb6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%

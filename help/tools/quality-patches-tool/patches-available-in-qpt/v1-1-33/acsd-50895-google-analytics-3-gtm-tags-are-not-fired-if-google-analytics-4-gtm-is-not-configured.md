@@ -1,8 +1,9 @@
 ---
-title: 'ACSD-50895: [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우  [!DNL Google Analytics] 3 GTM 태그가 실행되지 않음'
+title: 'ACSD-50895: [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우  [!DNL Google Analytics] 3 GTM 태그가 실행되지 않습니다.'
 description: ACSD-50895 패치를 적용하여  [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우  [!DNL Google Analytics] 3 GTM 태그가 실행되지 않는 Adobe Commerce 문제를 해결합니다.
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 871e2ca1-dc10-435c-9325-62f5b9b673ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

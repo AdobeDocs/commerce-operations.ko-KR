@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60538: [!UICONTROL All Store Views]에서 제품을 사용하지 않도록 설정한 경우 특성이 올바르게 표시되지 않음"
+title: 'ACSD-60538: [!UICONTROL All Store Views]에서 제품을 사용하지 않도록 설정한 경우 특성이 올바르게 표시되지 않습니다.'
 description: ACSD-60538 패치를 적용하여 제품이 *모든 스토어 보기*에서 비활성화되고 특정 스토어 보기 범위에서만 활성화되는 경우 제품 속성이 GraphQL 응답에 올바르게 표시되지 않아 제품이 제대로 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, GraphQL
 role: Admin, Developer
-source-git-commit: c394e003797d8095c17a0f6047024231e26a8321
+exl-id: 2ea9de11-b750-4ab6-9cc7-e940e1791f22
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48627: 품절 구성 가능한 제품에서 오류가 발생합니다."
+title: 'ACSD-48627: 품절 구성 가능한 제품으로 인해 오류가 발생합니다.'
 description: ACSD-48627 패치를 적용하여 장바구니 세부 정보를 가져오기 위해 GraphQL 요청을 보낼 때 품절 구성 가능한 제품으로 인해 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 457c605e-d0c3-479e-b515-9b2851a71a08
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

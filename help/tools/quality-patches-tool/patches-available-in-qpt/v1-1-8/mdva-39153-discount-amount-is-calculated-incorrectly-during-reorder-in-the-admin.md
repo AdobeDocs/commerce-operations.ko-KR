@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39153: 관리자에서 순서 재지정 중 할인 금액이 잘못 계산됨'
+title: 'MDVA-39153: 관리자에서 재주문 중에 할인 금액이 잘못 계산됨'
 description: MDVA-39153 패치는 관리자에서 재정렬을 수행하는 동안 할인 금액이 잘못 계산되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39153입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Admin Workspace, Orders, Personalization, Payments
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e8fe58ca-1218-4e76-b5fb-c7f935029cd2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

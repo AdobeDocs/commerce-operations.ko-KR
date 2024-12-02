@@ -3,7 +3,8 @@ title: 'ACSD-51102: 카탈로그 규칙이 올바르게 인덱싱되지 않은 �
 description: ACSD-51102 패치를 적용하여 많은 수의 제품에 적용되는 카탈로그 규칙이 예약된 업데이트에 의해 활성화될 때 올바르게 인덱싱되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%

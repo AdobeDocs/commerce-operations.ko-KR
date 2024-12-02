@@ -3,7 +3,8 @@ title: 'ACSD-47937: 애플리케이션 수준 캐싱으로 인해 가격 하락 
 description: ACSD-47937 패치를 적용하여 애플리케이션 수준 캐싱으로 인해 가격 하락 알림이 항상 전송되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Cache, Orders
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 91d8e677-c2bb-4230-bbe3-a2c5f9b82e16
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

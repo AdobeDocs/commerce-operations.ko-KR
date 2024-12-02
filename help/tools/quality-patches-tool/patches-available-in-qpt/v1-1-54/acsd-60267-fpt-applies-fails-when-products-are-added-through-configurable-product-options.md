@@ -3,7 +3,8 @@ title: 'ACSD-60267: 구성 가능한 제품 옵션을 통해 제품을 추가할
 description: ACSD-60267 패치를 적용하여 간단한 제품을 장바구니에 직접 추가할 때 고정 제품 세금(FPT)이 올바르게 적용되지만 구성 가능한 제품 옵션을 통해 동일한 제품을 선택할 경우 실패하는 Adobe Commerce 문제를 수정합니다.
 feature: Taxes
 role: Admin, Developer
-source-git-commit: c18ff9dd75ec6002c6461fcd3abd98ac8b97a9f7
+exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -67,4 +68,3 @@ ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 �
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-

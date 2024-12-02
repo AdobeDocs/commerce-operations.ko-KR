@@ -3,7 +3,8 @@ title: 'ACSD-53347: 가격 인덱싱 성능은 점진적으로 초과 작업 시
 description: ACSD-53347 패치를 적용하면 대규모 제품 카탈로그의 가격을 리인덱싱할 때 성능이 점차 저하되는 Adobe Commerce 문제를 해결할 수 있습니다.
 feature: Price Indexer
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 8986b685-55e4-47c7-852c-aca18e3b02e9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

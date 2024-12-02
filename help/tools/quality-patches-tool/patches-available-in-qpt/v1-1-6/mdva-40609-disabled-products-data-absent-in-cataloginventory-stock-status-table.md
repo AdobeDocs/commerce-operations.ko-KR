@@ -3,7 +3,8 @@ title: 'MDVA-40609: 비활성화된 제품 데이터가 cataloginventory_stock_s
 description: MDVA-40609 패치는 잘못된 제품 수량을 표시하는 'cataloginventory_stock_status' 색인 테이블에 비활성화된 제품 데이터가 표시되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40609입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

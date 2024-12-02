@@ -3,7 +3,8 @@ title: 'MDVA-41628: 제한된 관리자가 새 리소스에 액세스할 수 있
 description: MDVA-41628 패치는 새 모듈을 추가할 때 제한된 관리자가 새 리소스에 액세스할 수 있는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-41628입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Admin Workspace
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 774a4329-fa1f-4cca-aa97-1b8ef03c11d1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

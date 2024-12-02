@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51636: 회사 관리자가 고객 계정 섹션에서 새 사용자를 추가할 수 없음"
+title: 'ACSD-51636: 회사 관리자가 고객 계정 섹션에서 새 사용자를 추가할 수 없음'
 description: ACSD-51636 패치를 적용하여 회사 관리자가 필요한 모든 역할 및 권한을 가지고 있음에도 불구하고 고객 계정 섹션에서 새 사용자를 추가할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, B2B, Companies, Customer Service
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 46e79ae3-ea24-4cb2-b06e-e82cec33b16c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

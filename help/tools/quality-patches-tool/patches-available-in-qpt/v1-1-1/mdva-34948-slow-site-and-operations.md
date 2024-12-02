@@ -3,7 +3,8 @@ title: 'MDVA-34948: 웹 사이트 속도 저하'
 description: MDVA-34948 Adobe Commerce 패치는 웹 사이트의 느림 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-34948입니다. 이 문제는 Adobe Commerce 버전 2.4.1에서 해결되었습니다.
 feature: Observability, Configuration
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

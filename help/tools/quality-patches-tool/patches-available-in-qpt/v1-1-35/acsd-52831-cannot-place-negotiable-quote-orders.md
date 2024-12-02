@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52831:  [!DNL Google reCAPTCHA v3 Invisible] 사용 가능한 경우 협상 가능한 견적 주문을 할 수 없음'
+title: 'ACSD-52831:  [!DNL Google reCAPTCHA v3 Invisible] 이(가) 활성화된 경우 협상 가능한 견적 주문을 할 수 없음'
 description: ACSD-52831 패치를 적용하여  [!DNL Google reCAPTCHA v3 Invisible] 이(가) 활성화된 경우 협상 가능한 견적 주문을 할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Quotes, B2B, Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa09e41f-f6c3-4cc7-a814-0e1ac5e9ea2e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

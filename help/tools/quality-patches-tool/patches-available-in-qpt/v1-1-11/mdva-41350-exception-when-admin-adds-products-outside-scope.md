@@ -3,7 +3,8 @@ title: 'MDVA-41350: 관리자가 액세스 권한 외부에 제품을 추가할 
 description: MDVA-41350 패치는 관리자 사용자가 액세스 권한 밖에 있는 SKU별로 제품을 추가할 때 제한된 액세스 알림 대신 예외 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-41350입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

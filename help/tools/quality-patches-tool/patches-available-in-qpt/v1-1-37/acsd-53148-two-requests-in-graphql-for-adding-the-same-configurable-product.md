@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53148: 동일한 구성 가능한 제품 추가를 위한 GraphQL의 두 개의 병렬 요청"
+title: 'ACSD-53148: 동일한 구성 가능한 제품 추가를 위한 GraphQL의 두 개의 병렬 요청'
 description: ACSD-53148 패치를 적용하여 GraphQL에서 동일한 구성 가능한 제품을 장바구니에 추가하기 위한 두 개의 병렬 요청이 동일한 제품 SKU를 사용하는 장바구니에 두 개의 개별 항목을 초래하는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e5e22bed-69de-4872-9aa8-ab228f640b30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

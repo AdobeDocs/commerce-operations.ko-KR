@@ -3,7 +3,8 @@ title: 'ACSD-46988: GraphQL 통화 API 요청이 null 값을 반환합니다.'
 description: ACSD-46988 패치는 GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반환하는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.21이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46988입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: REST, GraphQL
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 276d2c75-6e7f-4888-b4d2-ac96bea93fc1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

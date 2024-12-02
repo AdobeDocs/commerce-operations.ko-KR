@@ -3,7 +3,8 @@ title: 'ACSD-51204: 제품이 대변 메모를 생성한 후 재고로 반환되
 description: ACSD-51204 패치를 적용하여 대변 메모를 작성한 후 제품이 재고로 돌아오지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Products, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4dba28c-c239-4812-8b3a-ce0493f9b1aa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

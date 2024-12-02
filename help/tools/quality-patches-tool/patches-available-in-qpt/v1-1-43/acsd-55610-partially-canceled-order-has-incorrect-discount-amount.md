@@ -3,7 +3,8 @@ title: 'ACSD-55610: 부분적으로 취소된 주문의 할인 금액이 잘못�
 description: ACSD-55610 패치를 적용하여 부분적으로 취소된 주문에 잘못된 할인 금액이 있는 Adobe Commerce 문제를 해결합니다.
 feature: Invoices, Orders, Price Rules, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b7b94c9d-e027-4601-837b-d70b7ff8bd2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50858: 배너의 콘텐츠 로드 성능이 개선되었습니다."
+title: 'ACSD-50858: 배너의 콘텐츠 로드 성능이 개선되었습니다.'
 description: ACSD-50858 패치를 적용하여 과도한 DB 쿼리 및 페이지 로드 시간 증가로 인해 장바구니/체크아웃 페이지에서 배너 성능이 영향을 받는 Adobe Commerce 문제를 해결합니다.
 feature: Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%

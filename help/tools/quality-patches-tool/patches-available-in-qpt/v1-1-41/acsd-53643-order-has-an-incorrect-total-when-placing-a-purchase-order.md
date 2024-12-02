@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53643: 구매 발주 시 주문 합계가 잘못됨'
+title: 'ACSD-53643: 구매 발주 시 주문의 합계가 잘못됨'
 description: ACSD-53643 패치를 적용하여 사용하지 않거나 재고 부족 제품이 있는 구매 발주를 수행할 때 주문 합계가 잘못된 Adobe Commerce 문제를 해결합니다.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 72b52695-ef3c-4143-9e77-901463d4a9ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

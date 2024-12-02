@@ -3,7 +3,8 @@ title: 'ACSD-53704: 만료 후 잘못 계산된 보상 포인트 잔액 내역'
 description: ACSD-53704 패치를 적용하여 보상 포인트의 만료 일자 후에 보상 포인트 잔고 내역이 잘못 계산되는 Adobe Commerce 문제를 해결합니다.
 feature: Rewards
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 8cd297cc-9e9d-4615-b817-283065a79c2f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

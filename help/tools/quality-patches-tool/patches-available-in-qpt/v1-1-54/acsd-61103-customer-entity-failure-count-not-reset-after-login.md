@@ -3,13 +3,13 @@ title: 'ACSD-61103: API를 통해 성공적으로 고객이 로그인한 후 실
 description: ACSD-61103 패치를 적용하여 고객이 API 끝점을 통해 성공적으로 로그인한 후 'customer_entity' 테이블의 실패 카운트가 0으로 재설정되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
-source-git-commit: d53b747c3b2021e842647de5371a5f0f2a760f09
+exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
+source-git-commit: acb5ff9656d7391de1e9b936909ce5a8a73d5d67
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61103: API를 통해 성공적으로 고객이 로그인한 후 실패 카운트가 0으로 재설정되지 않음
 
@@ -61,4 +61,3 @@ API를 통해 고객 토큰을 생성하기 위해 올바른 자격 증명을 �
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-

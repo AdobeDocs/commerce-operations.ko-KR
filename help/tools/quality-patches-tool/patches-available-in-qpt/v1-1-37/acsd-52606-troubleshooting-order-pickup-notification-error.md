@@ -3,7 +3,8 @@ title: 'ACSD-52606: 사용자가 "주문 알림 픽업 준비됨"을 클릭할 �
 description: ACSD-52606 패치를 적용하여 사용자가 **[!UICONTROL Notify Order is Ready for Pickup]을(를) 클릭할 때 오류 메시지가 표시되는 Adobe Commerce 문제를 **.
 feature: Orders, User Account
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d0b5a7a6-0d32-4019-8f28-60722fce1a99
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-41061: 책임자로부터 제품을 저장할 때 재고 상태가 판매 가능으로 재설정됨'
+title: 'MDVA-41061: 관리자로부터 제품을 저장하면 재고 상태가 판매 가능으로 재설정됩니다.'
 description: MDVA-41061 패치는 제품이 관리자로부터 저장될 때 재고 상태가 판매 가능으로 재설정되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-41061입니다. 최신 패치 버전은 QPT 1.1.15에서 MDVA-41061-V3 패치 ID와 함께 사용할 수 있습니다. 이 문제는 Adobe Commerce 2.4.4에서 해결되었습니다.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%

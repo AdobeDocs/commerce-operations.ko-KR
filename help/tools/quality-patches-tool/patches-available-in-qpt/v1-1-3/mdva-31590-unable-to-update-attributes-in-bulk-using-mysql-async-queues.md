@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-31590: MySQL 비동기 큐를 사용하여 특성을 일괄적으로 업데이트할 수 없음'
+title: 'MDVA-31590: MySQL 비동기 큐를 사용하여 특성을 일괄적으로 업데이트할 수 없습니다.'
 description: MDVA-31590 패치는 사용자가 MySQL 비동기 큐를 사용하여 속성을 일괄적으로 업데이트할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-31590입니다. 이 문제는 Adobe Commerce 2.4.2에서 해결되었습니다.
 feature: Attributes, Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%

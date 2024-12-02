@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46581: 장바구니에서 국가를 선택한 후 예상 총 세액이 업데이트되지 않음"
+title: 'ACSD-46581: 장바구니에서 국가를 선택한 후 예상 총 세액이 업데이트되지 않음'
 description: 장바구니에서 국가를 전환한 후 세율이 업데이트되지 않는 Adobe Commerce 문제를 해결하려면 ACSD-46581 패치를 적용합니다.
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45800055-8556-4f87-8938-c6be5d82938d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

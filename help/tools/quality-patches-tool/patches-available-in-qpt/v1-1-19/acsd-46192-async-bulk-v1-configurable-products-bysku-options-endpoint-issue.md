@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46192: async/bulk/V1/configurable-products/bySku/options endpoint 관련 문제"
+title: 'ACSD-46192: async/bulk/V1/configurable-products/bySku/options endpoint 관련 문제'
 description: ACSD-46192 패치는 'async/bulk/V1/configurable-products/bySku/options' 엔드포인트 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19가 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46192입니다. 이 문제는 Adobe Commerce 2.4.5에서 해결되었습니다.
 feature: Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

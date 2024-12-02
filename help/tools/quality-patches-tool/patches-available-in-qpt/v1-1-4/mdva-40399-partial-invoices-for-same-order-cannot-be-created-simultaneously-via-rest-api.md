@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40399: 동일한 주문에 대한 부분 송장을 API를 통해 동시에 생성할 수 없음"
+title: 'MDVA-40399: 동일한 주문에 대한 부분 인보이스는 API를 통해 동시에 생성할 수 없습니다.'
 description: MDVA-40399 패치는 동일한 주문에 대한 부분 송장을 Rest API를 통해 동시에 생성할 수 없는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40399입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: REST, Invoices, Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: aa400a15-57b9-4f80-a49f-f4680b7e4705
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

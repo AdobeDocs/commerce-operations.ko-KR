@@ -3,7 +3,8 @@ title: 'ACSD-48910: 송장 및 배송 후 여러 소스가 할당된 번들 제�
 description: ACSD-48910 패치를 적용하면 주문이 청구되고 배송된 후 여러 소스에 할당된 번들 제품의 재고가 부족한 Adobe Commerce 문제를 해결할 수 있습니다. 아직 수량이 0이 아닌 경우에도 마찬가지입니다.
 feature: Products, Inventory
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8d86531-2db5-4115-92d5-a8d391c4f75d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

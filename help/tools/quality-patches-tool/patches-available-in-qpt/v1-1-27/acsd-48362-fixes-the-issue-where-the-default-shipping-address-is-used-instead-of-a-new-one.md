@@ -3,7 +3,8 @@ title: 'ACSD-48362: 새 주소 대신 기본 배송 주소가 사용됩니다.'
 description: ACSD-48362 패치를 적용하여 협상 가능 견적을 사용하여 주문을 할 때 새 주소 대신 기본 배송 주소가 사용되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, B2B, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6f0717a6-1e29-4059-9640-5b92586c36e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

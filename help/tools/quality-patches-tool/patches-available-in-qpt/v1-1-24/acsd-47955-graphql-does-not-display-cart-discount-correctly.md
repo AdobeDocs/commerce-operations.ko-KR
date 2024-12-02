@@ -3,7 +3,8 @@ title: 'ACSD-47955: GraphQL에 장바구니 할인이 올바르게 표시되지 
 description: ACSD-47955 패치를 적용하여 GraphQL에 장바구니 할인이 올바르게 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bbfe9957-18f9-4874-8e11-2f7cfcb5b614
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

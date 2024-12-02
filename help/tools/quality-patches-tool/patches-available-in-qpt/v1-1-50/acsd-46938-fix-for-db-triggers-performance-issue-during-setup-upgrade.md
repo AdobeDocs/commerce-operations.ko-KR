@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-46938: ''setup:upgrade'' 중 DB 트리거에 성능 문제 발생'''
+title: 'ACSD-46938: ''setup:upgrade'' 도중 DB 트리거에 성능 문제 발생'
 description: ACSD-46938 패치를 적용하여 'setup:upgrade' 명령이 인덱서 모드를 일정에서 저장으로 변경하여 성능 저하를 초래하는 Adobe Commerce 문제를 해결합니다.
 feature: Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4e88329-c5bb-4666-8738-b78b86056b71
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-57565: 주문 대시보드에 잘못된 주문 정보가 표시됨'
 description: ACSD-57565 패치를 적용하여 기간이 업데이트될 때까지 주문 대시보드에 잘못된 주문 정보가 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc4ad263-725e-4605-9b85-fc4305ab9a29
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

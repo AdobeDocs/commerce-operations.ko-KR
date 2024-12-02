@@ -3,7 +3,8 @@ title: 'MDVA-39521: GraphQL을 통해 장바구니에 배송 주소를 설정할
 description: MDVA-39521 패치는 사용자가 GraphQL을 통해 전화 번호가 비어 있는 장바구니에서 배송 주소를 설정할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39521입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: GraphQL, Orders, Shipping/Delivery, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: aac44c20-b244-472b-bab0-7d6e7d99608a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

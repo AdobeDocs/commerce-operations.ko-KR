@@ -3,7 +3,8 @@ title: 'MDVA-42584: 구성 가능한 제품의 재고 상태가 자동으로 업
 description: MDVA-42584 패치는 구성 가능한 제품의 단순 제품이 업데이트될 때 재고 상태가 자동으로 업데이트되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42584입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Configuration, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6311f069-f08f-4d58-9f4b-fa1246c02640
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%

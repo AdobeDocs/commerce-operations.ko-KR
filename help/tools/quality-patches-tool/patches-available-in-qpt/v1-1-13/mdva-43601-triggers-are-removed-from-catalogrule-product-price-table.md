@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43601: 트리거가 전체 색인 재지정 후 "catalogule_product_price" 테이블에서 제거됩니다.'
+title: 'MDVA-43601: 트리거는 전체 색인 재지정 후 "catalogrule_product_price" 테이블에서 제거됩니다.'
 description: MDVA-43601 패치는 'catalogrule_rule' 또는 'catalogrule_product'의 전체 색인 변경 후 트리거가 'catalogrule_product_price' 테이블에서 제거되는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43601입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Catalog Management, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b9580806-ac35-4c86-8eee-c9f16d654171
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

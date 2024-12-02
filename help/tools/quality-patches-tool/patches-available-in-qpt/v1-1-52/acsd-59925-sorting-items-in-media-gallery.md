@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59925: GraphQL에서 위치별로 [!UICONTROL Media Gallery]의 항목 정렬"
+title: 'ACSD-59925: GraphQL에서 위치별로 [!UICONTROL Media Gallery]의 항목 정렬'
 description: ACSD-59925 패치를 적용하여 [!UICONTROL Media Gallery]의 항목이 위치별로 정렬되지 않아 잘못된 표시 순서가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Media, GraphQL
 role: Admin, Developer
-source-git-commit: 97e3ab77e7c8f5f1efd9b616b5e1d198a1b41ab0
+exl-id: a4dd840f-44d2-40dc-b0e1-13d55b688204
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

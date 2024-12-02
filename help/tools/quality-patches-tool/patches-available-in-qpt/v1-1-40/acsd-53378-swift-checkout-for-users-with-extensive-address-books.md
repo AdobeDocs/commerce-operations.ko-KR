@@ -3,7 +3,8 @@ title: 'ACSD-53378: 다양한 주소록을 보유한 고객을 위한 체크아�
 description: ACSD-53378 패치를 적용하여 대규모 고객 주소 볼륨으로 인해 성능 문제가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Customers, Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 699d09fe-872f-44d3-88bb-b5b585e15067
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

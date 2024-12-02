@@ -1,9 +1,10 @@
 ---
-title: "우선 순위가 다른 여러 할인을 적용할 때 ACSD-61553: [!UICONTROL Cart Price Rule]이(가) 잘못 계산됨"
+title: '우선 순위가 다른 여러 할인을 적용할 때 ACSD-61553: [!UICONTROL Cart Price Rule]이(가) 잘못 계산됨'
 description: 우선 순위가 다른 여러 할인을 적용할 때 [!UICONTROL Cart Price Rule]이(가) 잘못 계산되는 Adobe Commerce 문제를 해결하려면 ACSD-61553 패치를 적용하십시오.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: 299cdaaeb1a97697125cd990a9387d5245226f1d
+exl-id: 0fb7a988-d391-49e5-a59d-62315a16132c
+source-git-commit: b182fc0cd2f00f36138675277ac1de8a7179135a
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

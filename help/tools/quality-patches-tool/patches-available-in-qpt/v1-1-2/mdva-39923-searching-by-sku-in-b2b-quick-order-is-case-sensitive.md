@@ -3,7 +3,8 @@ title: 'MDVA-39923: B2B 빠른 주문 기능에서 SKU로 검색하는 것은 �
 description: MDVA-39923 패치는 고객이 이름이 저장된 것과는 다른 대/소문자를 사용하여 B2B 빠른 주문 기능에서 SKU로 주문을 검색할 때 오류가 발생하는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39923입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

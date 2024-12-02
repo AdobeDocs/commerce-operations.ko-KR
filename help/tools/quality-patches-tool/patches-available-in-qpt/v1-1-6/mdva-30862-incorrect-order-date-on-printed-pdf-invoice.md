@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-30862: 인쇄된 PDF 송장의 주문 날짜가 잘못됨'
+title: 'MDVA-30862: 인쇄된 PDF 송장의 주문 일자가 잘못됨'
 description: MDVA-30862 패치는 PDF 송장에 잘못된 주문 날짜가 인쇄되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-30862입니다. 이 문제는 Adobe Commerce 2.4.0에서 해결되었습니다.
 feature: Invoices, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 26ecf821-61e7-4e30-8ee4-66134e84a9dd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

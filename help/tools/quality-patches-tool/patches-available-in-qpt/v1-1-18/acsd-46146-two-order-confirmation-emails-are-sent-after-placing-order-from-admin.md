@@ -3,7 +3,8 @@ title: 'ACSD-46146: 관리자 주문 후 전송된 2개의 주문 확인 이메�
 description: ACSD-46146 패치는 관리자의 주문을 한 후 두 개의 주문 확인 이메일이 전송되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46146입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Admin Workspace, Communications, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 1db809d0-461d-45d4-9e1b-8209a014b7a1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-53750: 다중 스레드 catalog_product_price 리인덱스 도중 "끊어진 파이프 또는 닫힌 연결" 오류 발생"'
+title: 'ACSD-53750: 다중 스레드 catalog_product_price 리인덱스 도중 "끊어진 파이프 또는 닫힌 연결" 오류 발생'
 description: ACSD-53750 패치를 적용하여 다중 스레드 catalog_product_price 재인덱싱 도중 *파이프가 끊기거나 연결이 닫히는* 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6c2f092f-a98e-4990-839c-a7291635f8af
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

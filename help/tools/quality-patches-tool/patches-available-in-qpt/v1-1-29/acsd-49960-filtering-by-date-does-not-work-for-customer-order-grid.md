@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49960: 날짜별 필터링이 고객 주문 그리드에 작동하지 않음"
+title: 'ACSD-49960: 날짜별 필터링이 고객 주문 그리드에 작동하지 않음'
 description: ACSD-49960 패치를 적용하여 날짜별 필터링이 고객 주문 그리드에 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 0ca607b4-5500-4d70-be5e-a3a2b62c6864
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%

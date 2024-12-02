@@ -1,15 +1,15 @@
 ---
-title: '''ACSD-59514: 관리자의 Forms( [!DNL Page Builder] 브라우저 콘솔에서 오류 발생'')'
+title: 'ACSD-59514: 관리자의 Forms( [!DNL Page Builder] 브라우저 콘솔에 오류 발생)'
 description: ACSD-59514 패치를 적용하여  [!DNL Page Builder] 이(가) 있는 관리자의 양식이 잠금을 해제하지 않고 5초 동안 "[!DNL Page Builder]" 오류를 발생시키는 Adobe Commerce 문제를 해결합니다." 을 클릭합니다. 양식을 제출한 후 브라우저 콘솔에서 변경 사항을 저장할 수 없습니다.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59514: 관리자의 Forms([!DNL Page Builder] 포함)에서 브라우저 콘솔에 오류가 발생합니다.
 

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48210: 저장소 보기 특정 범위 특성이 전역 값을 재정의합니다.'
+title: 'ACSD-48210: 저장소 보기 특정 범위 특성이 전역 값을 무시합니다.'
 description: ACSD-48210 패치를 적용하여 특정 저장소 보기에서 *[!UICONTROL Website Scope]* 특성을 업데이트하는 Adobe Commerce 문제가 전역 범위의 특성 값을 재정의합니다.
 feature: Products, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 944089c6-2f05-4c51-86ea-ede124bff80b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

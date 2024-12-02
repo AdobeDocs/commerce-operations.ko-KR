@@ -3,7 +3,8 @@ title: 'ACSD-57643: 사용자 지정 옵션이 GraphQL을 통해 장바구니에
 description: ACSD-57643 패치를 적용하여 사용자 지정 옵션이 있는 제품이 GraphQL을 통해 장바구니에 잘못 추가되는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 568f820b-ecab-4839-b32e-b0b42c1d2342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

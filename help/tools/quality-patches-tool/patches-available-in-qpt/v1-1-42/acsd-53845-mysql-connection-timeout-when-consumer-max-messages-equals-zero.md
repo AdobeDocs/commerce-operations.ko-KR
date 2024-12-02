@@ -3,7 +3,8 @@ title: 'ACSD-53845: 소비자 max_messages = 0일 때 MySQL 연결 시간 초과
 description: ACSD-53845 패치를 적용하여 소비자 'max_messages = 0' 시 MySQL 연결 시간이 초과되는 Adobe Commerce 문제를 수정합니다.
 feature: REST, Configuration
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 437e29f4-b11a-466c-9928-3867821d2b8d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

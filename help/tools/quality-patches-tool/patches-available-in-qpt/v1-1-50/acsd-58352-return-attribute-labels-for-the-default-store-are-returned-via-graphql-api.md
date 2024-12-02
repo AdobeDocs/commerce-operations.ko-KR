@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58352: 기본 저장소에 대한 반환 특성 레이블이  [!DNL GraphQL] API를 통해 반환됩니다.'
+title: 'ACSD-58352:  [!DNL GraphQL] API를 통해 기본 저장소에 대한 반환 특성 레이블을 반환합니다.'
 description: ACSD-58352 패치를 적용하여 요청 헤더에 기본이 아닌 저장소 보기가 지정된 경우 기본 저장소에 대한 반환 특성 레이블이  [!DNL GraphQL] API를 통해 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352: [!DNL GraphQL] API를 통해 기본 저장소에 대한 반환 특성 레이블을 반환합니다.
 

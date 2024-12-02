@@ -3,7 +3,8 @@ title: 'ACSD-54111: 제품 썸네일 이미지가 표시되지 않음'
 description: ACSD-54111 패치를 적용하여 모든 이미지가 기본 제품 자리 표시자 이미지로 바뀌는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4615ebf6-aa68-4d49-8d91-e9756b3d4a05
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

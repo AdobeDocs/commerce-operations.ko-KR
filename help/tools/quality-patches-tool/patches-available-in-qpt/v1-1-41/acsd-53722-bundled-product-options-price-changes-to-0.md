@@ -3,7 +3,8 @@ title: 'ACSD-53722: 번들 제품 옵션 가격이 $0로 변경됨'
 description: ACSD-53722 패치를 적용하여 다양한 범위에 대한 예정된 업데이트가 활성화될 때 번들 제품 옵션의 가격이 $0로 변경되는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

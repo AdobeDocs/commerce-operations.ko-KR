@@ -3,7 +3,8 @@ title: 'ACSD-49748: 이메일 초대를 보낼 수 없음'
 description: ACSD-49748 패치를 적용하여 사용자가 이메일 초대를 보낼 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Communications, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03dad66c-4691-421e-8c80-eca12c60175c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -60,4 +61,3 @@ ACSD-49748 패치는 사용자가 이메일 초대를 보낼 수 없는 문제�
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
 * [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
-

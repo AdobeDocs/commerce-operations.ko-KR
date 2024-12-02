@@ -3,7 +3,8 @@ title: 'ACSD-52824: 회사 고객에 대해 비활성화된 결제 방법 표시
 description: ACSD-52824 패치를 적용하여 회사 설정에서 비활성화되어 있지만 회사 고객에 대해  [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] 결제 방법이 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 39d67de6-1796-4067-ae7a-ef17fcf794e5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%

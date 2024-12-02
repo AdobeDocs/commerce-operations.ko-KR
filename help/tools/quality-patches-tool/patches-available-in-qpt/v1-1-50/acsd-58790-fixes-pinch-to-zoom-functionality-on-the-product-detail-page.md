@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58790:  [!DNL Chrome]의 모바일 보기에서 제품 세부 사항 페이지 이미지의 핀치-투-줌 기능을 수정합니다'
+title: 'ACSD-58790:  [!DNL Chrome]의 모바일 보기에서 제품 세부 사항 페이지 이미지의 핀치-투-줌 기능을 수정합니다.'
 description: ACSD-58790은  [!DNL Chrome] 의 모바일 보기의 이미지가 예상대로 확대되지 않았던 Adobe Commerce 문제를 해결했습니다.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 46b324bf-c2a0-4086-87ee-96e8c4883494
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58790: [!DNL Chrome]의 모바일 보기에서 제품 세부 사항 페이지 이미지의 핀치-투-줌 기능을 수정합니다.
 

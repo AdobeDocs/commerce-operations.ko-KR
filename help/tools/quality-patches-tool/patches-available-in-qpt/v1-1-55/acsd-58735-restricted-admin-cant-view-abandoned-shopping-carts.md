@@ -1,16 +1,15 @@
 ---
-title: 'ACSD-58735: 제한된 관리자는 연결된 웹 사이트의 고객 계정에서 구매하지 않은 장바구니를 볼 수 없음'
+title: 'ACSD-58735: 제한된 관리자는 연결된 웹 사이트의 고객 계정에서 구매하지 않은 장바구니를 볼 수 없습니다'
 description: ACSD-58735 패치를 적용하여 제한된 관리자가 연결된 웹 사이트에 대한 Commerce 관리자의 고객 계정 페이지에서 포기한 장바구니를 볼 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, Admin Workspace, Customers
 role: Admin, Developer
-source-git-commit: 35bae8cff40235957f8fea418a43ccead13536da
+exl-id: b5dcc12f-325d-4de5-bae5-ff938ec77b13
+source-git-commit: 8a33e0aadf3aab2b267f18b20a5195538b6990ef
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
-
 
 # ACSD-58735: 제한된 관리자는 연결된 웹 사이트의 고객 계정에서 구매하지 않은 장바구니를 볼 수 없습니다
 

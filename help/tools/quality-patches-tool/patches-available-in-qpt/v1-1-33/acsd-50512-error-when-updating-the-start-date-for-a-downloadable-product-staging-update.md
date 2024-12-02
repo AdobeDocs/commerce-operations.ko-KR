@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50512: 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 오류 발생"
+title: 'ACSD-50512: 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 오류 발생'
 description: ACSD-51892 패치를 적용하여 *다운로드 가능한 링크가 제품과 관련이 없는 경우 발생하는 Adobe Commerce 성능 문제를 해결합니다.링크를 확인하고 다시 시도하십시오*. 이 오류는 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 발생합니다.
 feature: Products, Staging
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9c3b4d45-c500-46a7-8679-a8aa9e0a66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

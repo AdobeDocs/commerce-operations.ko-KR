@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60684: [!DNL GraphQL] 여러 필드를 기준으로 한 제품 정렬이 예상대로 작동하지 않습니다."
+title: 'ACSD-60684: [!DNL GraphQL] 여러 필드를 기준으로 한 제품 정렬이 예상대로 작동하지 않습니다.'
 description: ACSD-60684 패치를 적용하여 여러 필드를 기준으로 한  [!DNL GraphQL] 제품 정렬이 변수에서 전달될 때 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: 279036e9e7247ce915820a4b00173644ee7252b1
+exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-52277: 새 주문을 만들 때 저장소 보기를 선택할 때 관리자가 잘못 리디렉션됨'
+title: 'ACSD-52277: 새 주문을 만들 때 저장소 보기를 선택할 때 관리자 사용자가 잘못 리디렉션됨'
 description: ACSD-52277 패치를 적용하여 Admin에서 새 주문을 만들 때 저장소 보기를 선택한 후 관리 사용자가 제대로 리디렉션되지 않는 Adobe Commerce 문제를 해결합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

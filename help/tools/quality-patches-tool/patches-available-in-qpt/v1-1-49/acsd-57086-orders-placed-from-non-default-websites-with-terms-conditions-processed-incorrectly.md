@@ -3,7 +3,8 @@ title: 'ACSD-57086: 약관이 활성화된 기본이 아닌 웹 사이트의 주
 description: ACSD-57086 패치를 적용하여 약관이 활성화된 기본이 아닌 웹 사이트에서 주문된 주문이 올바르게 처리되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%

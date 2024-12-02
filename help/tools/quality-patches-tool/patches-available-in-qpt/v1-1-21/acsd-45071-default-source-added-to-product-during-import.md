@@ -3,7 +3,8 @@ title: 'ACSD-45071: 가져오는 동안 제품에 기본 소스가 추가됨'
 description: ACSD-45071 패치는 가져오는 동안 제품에 기본 소스가 추가되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.21이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-45071입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d28cbfb1-ad6b-4ccf-a877-6db763cea61b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

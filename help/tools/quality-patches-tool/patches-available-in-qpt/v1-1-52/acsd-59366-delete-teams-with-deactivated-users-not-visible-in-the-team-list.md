@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59366: 팀 목록에 표시되지 않는 비활성화된 사용자가 있는 팀 삭제"
+title: 'ACSD-59366: 팀 목록에 표시되지 않는 비활성화된 사용자가 있는 팀 삭제'
 description: ACSD-59366 패치를 적용하여 팀 목록에 표시되지 않는 비활성화된 사용자가 포함된 팀을 삭제하려고 할 때 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Companies
 role: Admin, Developer
-source-git-commit: 8037db7a89cd850385dc88750e881f68ae62172f
+exl-id: 406d2242-38f9-4852-b311-0ee57c4a7c26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -64,5 +65,3 @@ Adobe Commerce B2B 모듈이 설치되고 회사가 활성화됩니다.
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-
-

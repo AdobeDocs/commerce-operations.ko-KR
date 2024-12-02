@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57941: 제품 옵션이 관리 저장소에 잘못 할당됨'
+title: 'ACSD-57941: 제품 옵션이 관리 저장소에 잘못 할당되었습니다.'
 description: ACSD-57941 패치를 적용하여 제품 옵션이 해당 스토어가 아닌 관리 스토어에 잘못 할당되는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a78c1797-c366-4931-b036-966d3dcf59bb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%

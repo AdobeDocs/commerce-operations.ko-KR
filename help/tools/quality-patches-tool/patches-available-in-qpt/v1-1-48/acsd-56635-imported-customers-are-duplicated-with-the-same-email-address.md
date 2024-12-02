@@ -3,7 +3,8 @@ title: 'ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져�
 description: 계정 공유를  [!DNL Global](으)로 설정한 상태에서 가져오기를 사용할 때 가져온 고객이 동일한 이메일 주소로 복제되는 Adobe Commerce 문제를 해결하려면 ACSD-56635 패치를 적용합니다.
 feature: Customers, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 73abec4a-03b0-45d4-bfc6-f3c6862e733c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

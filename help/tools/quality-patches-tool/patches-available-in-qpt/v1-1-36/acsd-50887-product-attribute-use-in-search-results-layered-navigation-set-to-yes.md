@@ -3,7 +3,8 @@ title: 'ACSD-50887: *[!UICONTROL Use in Search]* 옵션 없이 *[!UICONTROL Use 
 description: ACSD-50887 패치를 적용하여 제품 속성 *[!UICONTROL Use in Search Results Layered Navigation]*을(를) *예*로 설정할 수 있고 *[!UICONTROL Use in Search]* 옵션도 *예*로 설정되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%

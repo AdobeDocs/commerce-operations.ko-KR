@@ -3,7 +3,8 @@ title: 'ACSD-53728: 제품 EAV 인덱서를 완료하는 데 시간이 오래 �
 description: ACSD-53728 패치를 적용하여 제품 EAV 인덱서가 완료되는 데 시간이 오래 걸리는 Adobe Commerce 문제를 해결합니다.
 feature: Products, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6cf3e401-ec28-4f80-b628-d1584f771c45
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

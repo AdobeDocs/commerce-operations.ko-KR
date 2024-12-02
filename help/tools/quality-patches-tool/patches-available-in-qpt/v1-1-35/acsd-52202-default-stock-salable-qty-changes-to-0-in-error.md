@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52202: 기본 재고 판매 가능 수량이 0으로 변경되고, 비기본 재고가 순번대로 0으로 설정된 경우 오류가 발생합니다.'
+title: 'ACSD-52202: 비기본 재고가 순번 0으로 설정된 경우 기본 재고 판매 가능 수량이 오류로 0으로 변경됩니다.'
 description: ACSD-52202 패치를 적용하여 주문에서 기본값이 아닌 재고가 0으로 설정될 때 기본 재고 판매 수량이 오류로 인해 0으로 변경되는 Adobe Commerce 문제를 수정합니다.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

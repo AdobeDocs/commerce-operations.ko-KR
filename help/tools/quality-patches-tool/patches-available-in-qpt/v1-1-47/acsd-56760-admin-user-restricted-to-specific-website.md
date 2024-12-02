@@ -2,7 +2,8 @@
 title: 'ACSD-56760: 관리자 사용자가 특정 웹 사이트로 제한되어 새 제품을 정렬 또는 추가할 수 없음'
 description: ACSD-56760 패치를 적용하여 특정 웹 사이트로 제한되어 있고 웹 스토어에 자체 루트 카테고리가 있는 경우 카테고리 내에 새 제품을 정렬하거나 추가할 수 없는 Adobe Commerce 문제를 해결합니다.
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%

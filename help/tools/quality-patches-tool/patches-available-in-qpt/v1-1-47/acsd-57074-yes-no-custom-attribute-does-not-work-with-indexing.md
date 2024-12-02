@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57074: 'attribute_code' 속성에 'price_*' 접두사가 있는 *Yes/No* 사용자 지정 속성이 색인화에서 작동하지 않음"
+title: 'ACSD-57074: *Yes/No* ''attribute_code'' 속성에 ''price_*'' 접두사가 있는 사용자 지정 속성이 색인화에서 작동하지 않음'
 description: ACSD-57074 패치를 적용하여 'attribute_code' 속성에 'price_*' 접두사가 있는 *Yes/No* 사용자 지정 속성이 색인화에서 작동하지 않는 Adobe Commerce 문제를 수정합니다.
 feature: Products, Categories, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 718b8f2d-4d3d-4755-8a91-5c2f97114813
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

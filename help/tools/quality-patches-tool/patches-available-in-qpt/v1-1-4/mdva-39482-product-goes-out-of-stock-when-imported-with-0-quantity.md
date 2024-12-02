@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39482: 미납주문을 활성화한 상태에서 수량을 '0'으로 가져온 경우 제품이 품절 됨"
+title: 'MDVA-39482: 미납주문을 활성화한 상태에서 수량을 ''0''으로 하여 제품을 가져오면 제품이 품절됩니다.'
 description: MDVA-39482은 MSI 및 미납 주문이 활성화되어 있고 재고 부족 임계값이 마이너스 값으로 설정된 경우 "0" 수량으로 제품을 가져올 경우 제품이 품절되는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39482입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Data Import/Export, Orders, Products
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

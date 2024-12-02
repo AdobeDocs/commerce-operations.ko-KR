@@ -3,7 +3,8 @@ title: 'ACSD-48661: 회사 크레딧 제한 쉼표 구분 기호 유효성 검�
 description: ACSD-48661 패치를 적용하여 회사 크레딧 제한이 999보다 큰 경우 쉼표 구분 기호로 인해 유효성 검사 오류로 인해 회사가 저장되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-52815: 기본이 아닌 출처의 수량 필드에 대한 입력 �
 description: ACSD-52815 패치를 적용하여 기본 재고가 아닌 출처의 수량 필드에 대한 입력 필드가 기본 재고의 경우 8과 달리 최대 6자리만 지원하는 Adobe Commerce 성능 문제를 해결합니다.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

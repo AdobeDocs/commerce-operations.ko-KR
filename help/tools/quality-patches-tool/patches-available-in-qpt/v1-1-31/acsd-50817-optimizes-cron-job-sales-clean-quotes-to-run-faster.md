@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50817: cron job sales_clean_quotes를 최적화하여 더 빨리 실행됩니다.'
+title: 'ACSD-50817: cron job sales_clean_quotes를 최적화하여 더 빨리 실행합니다.'
 description: ACSD-50817 패치를 적용하여 견적 테이블의 'store_id' 및 'updated_at' 열에 복합 인덱스를 추가하여 cron 작업 'sales_clean_quotes'가 더 빨리 실행되도록 최적화합니다.
 feature: Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

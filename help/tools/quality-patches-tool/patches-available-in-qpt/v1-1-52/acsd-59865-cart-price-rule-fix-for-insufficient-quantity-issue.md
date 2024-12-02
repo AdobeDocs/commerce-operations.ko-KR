@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59865: [!UICONTROL Cart Price Rule]이(가) 제품 수량이 부족하여 이전 규칙을 취소하지 못했습니다."
+title: 'ACSD-59865: 제품 수량이 부족하여 [!UICONTROL Cart Price Rule]이(가) 이전 규칙을 취소하지 못했습니다.'
 description: ACSD-59865 패치를 적용하여 *고정 금액 할인,* *제품 가격 할인의 퍼센트* 및 *구매 X가 Y*를 얻는 경우* [!UICONTROL Cart Price Rules]에 해당하는 *할인 수량 단계* 값이 더 이상 이전 규칙의 작업을 취소하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 602a839708eab2551bd99a4f24e66edbde511150
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

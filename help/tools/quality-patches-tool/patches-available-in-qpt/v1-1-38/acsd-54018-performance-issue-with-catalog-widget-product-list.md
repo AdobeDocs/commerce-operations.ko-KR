@@ -3,7 +3,8 @@ title: 'ACSD-54018: 카탈로그 위젯 제품 목록의 성능 문제'
 description: ACSD-54018 패치를 적용하여 조건 및 속성 유형 부울이 있는 카탈로그 위젯 제품 목록을 추가할 때 페이지가 느리게 로드되는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2fb7ca37-78cc-45f4-86a3-d922cf4d1457
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-52398: 번들 제품의 수량을 업데이트하려고 할 때 요
 description: ACSD-52398 패치를 적용하여 상점 앞의 장바구니에 번들 제품의 수량을 업데이트하려고 할 때 요청된 수량을 사용할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, Quotes, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

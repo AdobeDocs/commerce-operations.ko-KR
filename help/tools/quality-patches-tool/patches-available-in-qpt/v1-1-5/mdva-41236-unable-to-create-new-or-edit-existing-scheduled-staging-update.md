@@ -3,7 +3,8 @@ title: 'MDVA-41236: 제품에 대해 새로 만들거나 기존 예약된 업데
 description: MDVA-41236 패치는 이전에 "종료 날짜"를 제거한 경우 사용자가 제품에 대해 새 업데이트를 만들거나 기존 예약된 업데이트를 편집할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-41236입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Products, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45169: 시각적 머천다이저에 구성 가능한 제품에 대한 잘못된 재고 및 가격이 표시됨'
+title: 'ACSD-45169: 시각적 머천다이저가 구성 가능한 제품에 대해 잘못된 재고 및 가격을 표시합니다.'
 description: ACSD-45169 패치는 스테이징 업데이트가 적용된 후 시각적 머천다이저에 구성 가능한 제품에 대한 올바른 재고 및 가격이 표시되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-45169입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Categories, Configuration, Merchandising, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3f1218ee-2fd0-4f3e-80d7-7e6f9342e0fb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

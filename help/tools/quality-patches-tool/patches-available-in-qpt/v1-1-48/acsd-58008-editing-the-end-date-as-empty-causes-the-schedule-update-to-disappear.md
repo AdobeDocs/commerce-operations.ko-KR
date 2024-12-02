@@ -3,7 +3,8 @@ title: 'ACSD-58008: 종료 날짜를 *empty*로 편집하면 일정 업데이트
 description: ACSD-58008 패치를 적용하여 종료 날짜를 *empty*로 편집하면 일정 업데이트가 사라지는 Adobe Commerce 문제를 해결합니다.
 feature: Staging, Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6d2279e5-6580-4325-b0a8-ed62a95da3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

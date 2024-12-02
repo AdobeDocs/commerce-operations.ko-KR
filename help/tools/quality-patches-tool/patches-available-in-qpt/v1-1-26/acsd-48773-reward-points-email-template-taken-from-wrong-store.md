@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48773: 잘못된 저장소에서 가져온 보상 포인트 이메일 템플릿'
+title: 'ACSD-48773: 잘못된 스토어에서 가져온 리워드 포인트 이메일 템플릿'
 description: ACSD-48773 패치를 적용하여 보상 지점 이메일 템플릿이 잘못된 저장소에서 가져간 Adobe Commerce 문제를 수정합니다.
 feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalization, Rewards
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: db8b6196-3e13-4c1b-8ae8-040487180817
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

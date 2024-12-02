@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57854: *GraphQL* 응답에 범주 집계에 나열할 수 없는 비활성화된 범주가 포함됨'
+title: 'ACSD-57854: *GraphQL* 응답에 범주 집계에 나열할 수 없는 비활성화된 범주가 포함되어 있습니다.'
 description: ACSD-57854 패치를 적용하여 *GraphQL* 응답에 카테고리 집계에 나열해서는 안 되는 비활성화된 카테고리가 포함된 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 216aad2a-f470-49f9-b8ca-79107ca07891
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

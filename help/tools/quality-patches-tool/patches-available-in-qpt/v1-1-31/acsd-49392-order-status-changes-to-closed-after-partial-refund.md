@@ -3,7 +3,8 @@ title: 'ACSD-49392: 부분 환불 후 주문 상태가 마감으로 변경됨'
 description: ACSD-49392 패치를 적용하여 번들 제품에 대한 부분 환불 후 주문 상태가 종료됨으로 변경되는 Adobe Commerce 문제를 수정합니다.
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

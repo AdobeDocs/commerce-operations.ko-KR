@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52714: y-m-d로 설정된 경우 날짜 필터가 관리 그리드에서 작동하지 않음'
+title: 'ACSD-52714: y-m-d로 설정하면 날짜 필터가 관리 그리드에서 작동하지 않습니다'
 description: ACSD-52714 패치를 적용하여 날짜 형식이 y-m-d로 설정된 경우 날짜 필터가 관리 그리드에서 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

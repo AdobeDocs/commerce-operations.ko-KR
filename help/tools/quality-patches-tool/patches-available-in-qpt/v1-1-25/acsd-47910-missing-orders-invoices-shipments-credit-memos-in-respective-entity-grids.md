@@ -3,7 +3,8 @@ title: 'ACSD-47910: 각 개체 그리드에 주문, 송장, 선적, 대변 메�
 description: ACSD-47910 패치를 적용하여 각 엔티티 그리드에 누락된 주문, 송장, 선적 및 대변 메모가 있는 Adobe Commerce 문제를 수정합니다.
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09115cf3-62c3-425e-bc99-e8971398dd20
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

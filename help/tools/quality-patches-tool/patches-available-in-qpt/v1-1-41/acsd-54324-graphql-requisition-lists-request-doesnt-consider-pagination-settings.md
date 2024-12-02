@@ -3,7 +3,8 @@ title: 'ACSD-54324: GraphQL requisition_lists 요청은 페이지 매김 설정�
 description: ACSD-54324 패치를 적용하여 GraphQL 'requisition_lists' 요청이 페이지 매김 설정을 고려하지 않고 모든 결과를 반환하는 Adobe Commerce 문제를 해결합니다.
 feature: B2B, Customers, GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 60f82602-1cfc-4523-a50d-46af5d5f10d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

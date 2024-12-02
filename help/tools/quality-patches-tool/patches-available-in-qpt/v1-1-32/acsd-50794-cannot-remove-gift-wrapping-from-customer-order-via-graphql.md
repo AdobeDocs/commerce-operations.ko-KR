@@ -3,7 +3,8 @@ title: 'ACSD-50794: GraphQL을 통해 고객 주문에서 선물 포장을 제�
 description: ACSD-50794 패치를 적용하여 사용자가 GraphQL을 통해 고객 주문에서 선물 포장을 제거할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Gift, GraphQL, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e088fb18-89d3-47e4-ad02-54068c1ab653
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

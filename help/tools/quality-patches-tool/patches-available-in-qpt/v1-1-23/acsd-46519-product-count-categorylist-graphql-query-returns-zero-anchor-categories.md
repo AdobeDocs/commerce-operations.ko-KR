@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46519: [!UICONTROL categoryList] [!DNL GraphQL]  쿼리의 [!UICONTROL product_count]이(가) 앵커 범주에 대해 0을 반환합니다.'
+title: '[!UICONTROL categoryList] [!DNL GraphQL]  쿼리의 ACSD-46519: [!UICONTROL product_count]에서 앵커 범주에 대해 0을 반환합니다.'
 description: ACSD-46519 패치를 적용하여 [!UICONTROL categoryList] [!DNL GraphQL]  메서드를 사용하여 하위 범주를 가져올 때 상위 범주에 대해 [!UICONTROL product_count]이(가) 0으로 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Categories, GraphQL, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7becaa4e-421a-4983-ac73-f5b58fc45d8f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

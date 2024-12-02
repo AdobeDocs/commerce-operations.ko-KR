@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49527: GraphQL 회사 역할이 페이지 매김을 올바르게 표시하지 않음"
+title: 'ACSD-49527: GraphQL 회사 역할에 페이지 매김이 올바르게 표시되지 않음'
 description: ACSD-49527 패치를 적용하여 GraphQL 회사 역할이 페이지 매김을 올바르게 표시하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: B2B, GraphQL, Companies, Roles/Permissions
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2fbc80ad-5a15-471b-99f0-213609ab3978
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

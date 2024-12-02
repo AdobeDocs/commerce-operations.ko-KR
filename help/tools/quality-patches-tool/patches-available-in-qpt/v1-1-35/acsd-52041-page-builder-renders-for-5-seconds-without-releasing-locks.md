@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52041: 페이지 빌더 렌더링이 잠금을 해제하지 않음"
+title: 'ACSD-52041: 페이지 빌더 렌더링이 잠금을 해제하지 않음'
 description: ACSD-52041 패치를 적용하여 잠금 해제 없이 5초 동안 페이지 빌더가 렌더링되는 Adobe Commerce 문제를 해결합니다.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

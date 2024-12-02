@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56447: 병렬 웹 REST API를 통해 장바구니에 동일한 제품을 추가하면 장바구니에 두 개의 개별 항목이 생성됨'
+title: 'ACSD-56447: 병렬 웹 REST API를 통해 장바구니에 동일한 제품을 추가하면 장바구니에 두 개의 개별 항목이 생성됩니다'
 description: ACSD-56447 패치를 적용하여 병렬 웹 REST API 요청을 통해 동일한 제품을 장바구니에 추가하면 장바구니에 두 개의 개별 항목이 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef0b2ce7-74f5-47b6-a44c-bda898c444b2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

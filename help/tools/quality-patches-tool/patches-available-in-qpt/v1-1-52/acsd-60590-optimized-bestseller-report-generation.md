@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60590: 매일 보고서를 집계한 베스트셀러의 성과 향상"
+title: 'ACSD-60590: 집계된 베스트셀러 일일 보고서 생성 성능 향상'
 description: ACSD-60590 패치를 적용하여 베스트셀러 일일 집계 보고서에서 대량의 주문 발주에 대해 생성하는 데 상당한 시간이 소요되는 Adobe Commerce 문제를 해결합니다.
 feature: Reporting
 role: Admin, Developer
-source-git-commit: 4fe3f205754c040b60b6b7f01c7109cb31f70af8
+exl-id: 3b2b92eb-d4fc-4cd7-a117-a2c1caac72ec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

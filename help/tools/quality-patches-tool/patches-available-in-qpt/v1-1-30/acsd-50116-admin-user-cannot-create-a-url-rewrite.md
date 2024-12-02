@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50116: 관리자 사용자가 레벨 3 이하의 하위 범주에 대한 URL 다시 작성을 만들 수 없음'
+title: 'ACSD-50116: 관리자는 레벨 3 이하의 하위 범주에 대한 URL 다시 작성을 만들 수 없습니다'
 description: ACSD-50116 패치를 적용하여 관리자가 레벨 3 이하의 하위 범주에 대한 URL 재작성을 만들 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b2a248eb-a6c4-4596-acac-04a52c5c2a61
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

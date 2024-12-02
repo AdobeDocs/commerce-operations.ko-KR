@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53658: **[!UICONTROL Recently Viewed Product]** 데이터가 스토어 보기에서 제대로 업데이트되지 않음'
+title: 'ACSD-53658: **[!UICONTROL Recently Viewed Product]** 데이터가 저장소 보기에서 제대로 업데이트되지 않음'
 description: ACSD-53658 패치를 적용하여 **[!UICONTROL Recently Viewed Product]** 데이터가 스토어 보기에서 제대로 업데이트되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: CMS, Personalization
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a91fac3d-cb6f-4f65-aec2-d28cee4fd39f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-47107: 카탈로그 가격 규칙이 사용자 지정 옵션에 적
 description: ACSD-47107 패치를 적용하여 카탈로그 가격 규칙이 사용자 지정 옵션에 적용되는 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management, Orders, Price Rules
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6fcf896b-ffa9-4cfb-926a-21659ac9f116
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

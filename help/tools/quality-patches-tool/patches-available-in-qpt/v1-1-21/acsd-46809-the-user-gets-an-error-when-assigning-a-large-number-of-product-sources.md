@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46809: 많은 제품 소스를 할당할 때 사용자에게 오류가 발생합니다.'
+title: 'ACSD-46809: 많은 제품 소스를 할당할 때 사용자에게 오류가 발생합니다'
 description: ACSD-46809 패치를 적용하여 사용자가 많은 제품 소스를 할당할 때 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4225f49b-84a1-4641-a05b-ba6ada6e83be
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

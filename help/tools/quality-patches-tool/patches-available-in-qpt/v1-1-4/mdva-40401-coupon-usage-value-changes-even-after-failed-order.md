@@ -3,7 +3,8 @@ title: 'MDVA-40401: 주문 실패 후 쿠폰 사용 값 변경'
 description: MDVA-40401 패치는 주문 실패 후에도 쿠폰 사용 값이 변경되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40401입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: bc8eedd6-977f-4f21-bcd1-b5f6c4a6704f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

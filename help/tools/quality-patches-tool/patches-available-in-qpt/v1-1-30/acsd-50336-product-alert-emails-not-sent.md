@@ -3,7 +3,8 @@ title: 'ACSD-50336: 제품 경고 이메일이 전송되지 않음'
 description: ACSD-50336 패치를 적용하여 제품이 재입고되거나 가격이 변경될 때 제품 경고 이메일이 전송되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Communications, Personalization, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45dd12af-a3b2-4cfa-be90-af1c7b5f74b3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

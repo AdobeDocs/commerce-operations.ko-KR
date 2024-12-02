@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61522: *이름 및 성* 필드의 이메일 주소가 잘못된 주문 확인을 보냅니다."
+title: 'ACSD-61522: *이름 및 성* 필드의 이메일 주소에서 잘못된 주문 확인을 보냅니다.'
 description: ACSD-61522 패치를 적용하여 게스트 고객의 *[!UICONTROL First Name]* 및 *[!UICONTROL Last Name]* 필드에 이메일 주소를 입력할 수 있어 잘못된 주문 확인 이메일이 전송되는 Adobe Commerce 문제를 해결합니다.
 feature: Checkout, Customers
 role: Admin, Developer
-source-git-commit: d56f4fda007c1499bdba82ac3db9ac5ea1d34b0e
+exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61522: *이름 및 성* 필드에 있는 전자 메일 주소에서 잘못된 주문 확인을 보냅니다.
 

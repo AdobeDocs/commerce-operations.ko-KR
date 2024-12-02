@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-61667: 배송 생성을 위한 재고 성과 향상'
+title: 'ACSD-61667: 출하 생성을 위한 재고 성과 향상'
 description: ACSD-60584 패치를 적용하여 매장 내 픽업이 많은 소스의 경우 배송을 위한 재고 성능을 향상시킬 수 있습니다.
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: 29748a439992c0e3efbbc84c5ab9c8239f460b73
+exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
+source-git-commit: c32684a09e4a99733feb198b1d353b090c68a7f5
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -65,4 +66,3 @@ Adobe Commerce 인벤토리 모듈이 설치되고 활성화됩니다.
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-

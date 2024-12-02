@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43491: CSV로 가져올 때 기본 이미지 레이블이 업데이트되지 않음'
+title: 'MDVA-43491: CSV를 통해 가져올 때 기본 이미지 레이블이 업데이트되지 않음'
 description: MDVA-43491 패치는 다중 스토어 웹 사이트용 CSV 파일을 통해 가져올 때 'base_image_label'이 업데이트되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43491입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Data Import/Export
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f6a5f641-aaf0-4b6e-afa9-7f436f8f59e6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

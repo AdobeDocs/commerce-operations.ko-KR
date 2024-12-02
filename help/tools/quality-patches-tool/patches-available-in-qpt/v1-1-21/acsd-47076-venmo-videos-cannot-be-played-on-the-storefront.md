@@ -3,7 +3,8 @@ title: 'ACSD-47076: [!DNL Vimeo] 비디오가 상점 앞에서 재생될 수 없
 description: ACSD-47076 패치를 적용하여  [!DNL Vimeo] 비디오가 상점 전면에서 재생될 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 156b961b-e507-44fe-9b26-d73136e336a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

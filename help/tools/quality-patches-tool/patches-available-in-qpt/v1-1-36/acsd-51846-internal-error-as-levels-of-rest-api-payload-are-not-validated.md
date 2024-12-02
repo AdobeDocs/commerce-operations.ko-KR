@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51846:  [!DNL REST API] 페이로드 수준의 유효성을 검사하지 않아 내부 오류가 발생했습니다."
+title: 'ACSD-51846:  [!DNL REST API] 페이로드 수준의 유효성을 검사하지 못함'
 description: ACSD-51846 패치를 적용하여  [!DNL REST API] 페이로드의 모든 수준이 확인되지 않아 "내부 오류"가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: REST
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 436b075c-d9df-4bf2-94a2-52f2e66e8a4c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

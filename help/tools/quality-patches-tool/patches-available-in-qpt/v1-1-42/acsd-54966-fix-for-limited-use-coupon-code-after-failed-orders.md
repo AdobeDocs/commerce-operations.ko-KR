@@ -3,7 +3,8 @@ title: 'ACSD-54966: 주문 실패 후 쿠폰 코드 재사용 수정'
 description: ACSD-54966 패치를 적용하여 이전에 실패한 주문에 따라 프로모션 및 장바구니별로 제한된 쿠폰 코드를 재사용하지 못하는 Adobe Commerce 문제를 해결합니다.
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e08062e5-62ff-4da6-918f-896af36edccc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

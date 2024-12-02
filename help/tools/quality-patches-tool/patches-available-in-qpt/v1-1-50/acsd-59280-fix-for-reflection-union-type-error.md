@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-59280: 2.4.4-pX 설치에서 ''ReflectionUnionType::getName()'' 오류 발생'''
+title: 'ACSD-59280: 2.4.4-pX 설치에서 ''ReflectionUnionType::getName()'' 오류'
 description: ACSD-59280 패치를 적용하여 2.4.4-pX 버전 설치 중 '정의되지 않은 메서드 ReflectionUnionType::getName()' 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Install, Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5a47dad4-4490-4e3d-93f2-9b176fb144d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%

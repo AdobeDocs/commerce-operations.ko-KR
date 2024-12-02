@@ -3,7 +3,8 @@ title: 'ACSD 49843: [!UICONTROL Payment Action] = [!UICONTROL Intent Sale](으)�
 description: '[!UICONTROL Payment Action]이(가) [!UICONTROL Intent Sale](으)로 설정되어 있을 때 온라인 결제 방법으로 주문 항목에 자동 송장을 보낸 후 제품 다운로드 링크를 사용할 수 없는 Adobe Commerce 문제를 해결하려면 ACSD-49843 패치를 적용합니다.'
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e990b550-fb32-48d2-9c39-2176d7ab34c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

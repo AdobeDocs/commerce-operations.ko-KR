@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51984: 선택 취소된 [!UICONTROL Use Default Value] 및 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 기본값이 아닌 제품 필드 값이 저장되지 않음'
+title: 'ACSD-51984: 선택하지 않은 [!UICONTROL Use Default Value] 및 기본값이 아닌 제품 필드 값이 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 저장되지 않습니다.'
 description: ACSD-51984 패치를 적용하여 두 번째 웹 사이트, 스토어 및 스토어 보기에 대해 선택되지 않은 [!UICONTROL Use Default Value] 및 기본값이 아닌 제품 필드 값이 저장되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%

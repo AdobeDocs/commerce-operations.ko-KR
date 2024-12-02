@@ -3,7 +3,8 @@ title: 'MDVA-40601: GraphQL을 통해 예약된 업데이트로 변경된 범주
 description: MDVA-40601 Adobe Commerce 품질 패치는 GraphQL을 통해 예약된 업데이트로 변경된 범주에 대한 정보를 가져올 때 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40601입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Categories, GraphQL
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

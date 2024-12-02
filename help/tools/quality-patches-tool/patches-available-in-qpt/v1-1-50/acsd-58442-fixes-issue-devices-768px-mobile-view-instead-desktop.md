@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58442: 768px 너비의 장치가 모바일로 처리되어 메뉴와 헤더가 데스크톱이 아닌 모바일 보기에서 로드되는 문제를 해결했습니다.'
+title: 'ACSD-58442: 너비가 768px인 장치가 모바일로 처리되어 메뉴와 헤더가 데스크톱이 아닌 모바일 보기에서 로드되는 문제를 해결했습니다'
 description: ACSD-58442 패치를 적용하여 너비가 768px인 장치가 모바일로 처리되어 메뉴와 헤더가 데스크탑 대신 모바일 보기에서 로드되는 Adobe Commerce 문제를 해결합니다.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86ea64aa-10fc-4fa3-9902-918fb8983ca0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58442: 너비가 768px인 장치가 모바일로 처리되어 메뉴와 헤더가 데스크톱이 아닌 모바일 보기에서 로드되는 문제를 해결했습니다
 
@@ -62,5 +62,3 @@ ACSD-58442 패치는 너비가 768px인 장치가 모바일로 처리되어 메�
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
-
-

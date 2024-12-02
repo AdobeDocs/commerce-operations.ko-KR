@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹 데이터 잘못 할당'
+title: 'ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹의 데이터 잘못 할당'
 description: ACSD-59229 패치를 적용하여 요청의 오래된 X-Magento-Vary 값으로 인해 고객 그룹 관련 정보가 잘못된 세그먼트에 저장되는 Adobe Commerce 문제를 수정합니다.
 feature: Customers, Personalization, Marketing Tools
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c039c114-d920-4b05-b5e9-3e9b73490ee0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%

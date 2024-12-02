@@ -3,7 +3,8 @@ title: 'ACSD-49706: 값을 선택하지 않은 경우 시각적 견본 속성에
 description: 값을 선택하지 않은 경우 시각적 견본 속성에 대해 기본값이 저장되는 Adobe Commerce 문제를 해결하려면 ACSD-49706 패치를 적용합니다.
 feature: Admin Workspace, Attributes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

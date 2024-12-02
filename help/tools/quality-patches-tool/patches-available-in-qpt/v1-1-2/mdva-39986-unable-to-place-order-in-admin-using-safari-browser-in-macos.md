@@ -3,7 +3,8 @@ title: 'MDVA-39986: macOS의 Safari 브라우저에서 관리자에 주문을 �
 description: MDVA-39986 패치는 macOS에서 Safari 브라우저를 사용하여 사용자가 관리자에서 주문을 할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-39986입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bd4e72fe-278d-40ae-98d3-1eeca0a0e70c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

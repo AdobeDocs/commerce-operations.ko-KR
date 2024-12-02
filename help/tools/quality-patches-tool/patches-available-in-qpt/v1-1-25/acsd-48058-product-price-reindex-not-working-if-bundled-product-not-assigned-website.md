@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48058: 번들 제품에 웹 사이트가 지정되지 않은 경우 제품 가격 리인덱스가 작동하지 않음'
+title: 'ACSD-48058: 번들 제품이 웹 사이트를 할당하지 않은 경우 제품 가격 리인덱스가 작동하지 않음'
 description: ACSD-48058 패치를 적용하여 번들 제품이 웹 사이트에 할당되지 않은 경우 제품 가격 재지수가 작동하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 270e1b5d-75e0-4374-973a-2bb37161ceec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

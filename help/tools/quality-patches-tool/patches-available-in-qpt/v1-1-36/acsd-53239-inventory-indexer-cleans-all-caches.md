@@ -3,7 +3,8 @@ title: 'ACSD-53239: 인벤토리 인덱서가 모든 캐시를 정리합니다.'
 description: 인벤토리 인덱서가 [!UICONTROL Update on Schedule] 모드에서 모든 캐시를 정리하는 Adobe Commerce 문제를 해결하려면 ACSD-53239 패치를 적용하십시오.
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69e71e2d-8f26-4200-ad4a-6bd9e45627e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

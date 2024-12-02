@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-49370: GraphQL 스키마에 제품 특성의 "FilterMatchTypeInput" 유형이 있습니다."'
+title: 'ACSD-49370: GraphQL 스키마에 제품 특성의 유형이 ''FilterMatchTypeInput''입니다.'
 description: ACSD-49370 패치를 적용하여 제품 속성에 GraphQL 스키마의 'FilterMatchTypeInput' 유형이 있는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Attributes, GraphQL, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 05cc6db6-6ea6-4eb7-8dc0-fcb9f479fd89
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

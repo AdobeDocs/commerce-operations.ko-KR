@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-58446: GraphQL을 통해 하위 사용자 또는 팀이 있는 팀을 삭제하면 알 수 없는 오류 메시지가 표시됨'
+title: 'ACSD-58446: GraphQL을 통해 하위 사용자 또는 팀이 있는 팀을 삭제하면 알 수 없는 오류 메시지가 표시됩니다'
 description: ACSD-58446 패치를 적용하여 GraphQL을 통해 하위 사용자 또는 팀이 있는 팀을 삭제하면 UI와 일치하지 않는 정보 불가능한 오류 메시지가 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 943ab281-cc41-4b96-8a7c-fff8c074267c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

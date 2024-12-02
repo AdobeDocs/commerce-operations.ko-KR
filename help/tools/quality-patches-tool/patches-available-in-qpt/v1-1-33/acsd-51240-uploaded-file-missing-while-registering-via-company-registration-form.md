@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-51240: 회사 등록 양식을 통해 등록하는 동안 업로드된 파일이 누락됨'
 description: 회사 등록 양식을 통해 등록하는 동안 업로드한 파일이 누락된 Adobe Commerce 문제를 해결하려면 ACSD-51240 패치를 적용합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 78e339d6-435e-4856-9f57-98bb955d093c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

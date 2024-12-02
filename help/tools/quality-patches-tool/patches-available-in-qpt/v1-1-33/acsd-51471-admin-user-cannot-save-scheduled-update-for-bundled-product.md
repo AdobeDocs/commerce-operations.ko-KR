@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-51471: 관리자가 번들 제품에 대해 예약된 업데이트를 저장할 수 없음'
 description: ACSD-51471 패치를 적용하여 관리자가 업데이트가 예약된 간단한 제품을 사용하는 번들 제품에 대해 예약된 업데이트를 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d8134111-63f0-4476-a407-677bda52fa90
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

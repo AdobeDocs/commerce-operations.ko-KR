@@ -1,5 +1,5 @@
 ---
-title: "ACSD-44938: 게스트 사용자에 대한  [!DNL GraphQL] 요청에서 VAT_ID를 적용할 수 없습니다."
+title: 'ACSD-44938: 게스트 사용자에 대한  [!DNL GraphQL] 요청에서 VAT_ID를 적용할 수 없습니다.'
 description: ACSD-44938 패치는 게스트 사용자에 대한  [!DNL GraphQL] 요청에서 'VAT_ID'를 적용할 수 없는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-44938입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Admin Workspace, GraphQL
 role: Admin

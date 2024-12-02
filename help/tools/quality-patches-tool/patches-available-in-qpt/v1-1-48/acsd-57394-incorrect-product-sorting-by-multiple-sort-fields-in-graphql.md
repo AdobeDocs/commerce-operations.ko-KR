@@ -3,7 +3,8 @@ title: 'ACSD-57394:  [!DNL GraphQL]의 여러 정렬 특성별로 제품 정렬�
 description: ' [!DNL GraphQL]에서 여러 정렬 특성을 사용할 때 제품이 잘못 정렬되는 Adobe Commerce 문제를 해결하려면 ACSD-57394 패치를 적용하십시오.'
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3e4ca535-37ed-4363-ba6c-968eb53b98b3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -103,4 +104,3 @@ ACSD-57394 패치는 [!DNL GraphQL]에서 여러 정렬 특성을 사용할 때 
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
-

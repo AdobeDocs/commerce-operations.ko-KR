@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49179: 주문 보고서에 서로 다른 스토어에 대한 잘못된 금액이 표시됩니다.'
+title: 'ACSD-49179: 주문 보고서에 서로 다른 스토어에 대해 잘못된 금액이 표시됩니다.'
 description: ACSD-49179 패치를 적용하여 매장마다 통화가 다른 경우 주문 보고서에 잘못된 금액이 표시되는 Adobe Commerce 문제를 수정하십시오.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

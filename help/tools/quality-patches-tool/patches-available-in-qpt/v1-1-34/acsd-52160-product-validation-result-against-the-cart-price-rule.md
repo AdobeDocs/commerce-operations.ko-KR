@@ -1,7 +1,8 @@
 ---
 title: 'ACSD-52160: 장바구니 가격 규칙에 대한 제품 유효성 검사 결과'
 description: ACSD-52160 패치를 적용하여 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 규칙 조건 *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*에 따라 제대로 평가되지 않는 Adobe Commerce 문제를 해결합니다.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

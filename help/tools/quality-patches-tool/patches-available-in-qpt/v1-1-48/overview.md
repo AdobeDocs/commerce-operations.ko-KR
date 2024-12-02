@@ -3,7 +3,8 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.48'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.48에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 250c88e9-1422-4af5-a0f0-32b15d9ab078
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -28,4 +29,3 @@ QPT v1.1.48에는 다음 패치가 포함됩니다.
 1. **ACSD-58008**: 종료 날짜가 지정되지 않은 경우 예약된 업데이트를 업데이트하면 준비된 항목의 이전 버전이 제거되는 문제가 해결되었습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
-

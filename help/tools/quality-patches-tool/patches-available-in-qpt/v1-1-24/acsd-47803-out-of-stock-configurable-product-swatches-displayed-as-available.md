@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47803: 사용 가능한 것으로 표시되는 재고 부족 구성 가능한 제품 견본'
+title: 'ACSD-47803: 구성 가능한 제품 견본이 사용 가능한 것으로 표시됨'
 description: ACSD-47803 패치를 적용하여 품절 구성 가능한 제품 견본이 사용 가능한 것으로 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c1b80949-65ed-4a44-8be4-25decda32142
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'Adobe Commerce 관리자에서 알림을 해제할 때 ACSD-47336: [!UICONTROL Something went wrong] 오류 발생'
+title: 'ACSD-47336: Adobe Commerce 관리자의 알림을 해제할 때 [!UICONTROL Something went wrong] 오류가 발생했습니다.'
 description: ACSD-47336 패치를 적용하여  [!DNL Commerce] Admin에서 알림을 해제할 때 사용자에게 [!UICONTROL Something went wrong] 오류가 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: da0c0119-6720-493f-a278-d573ed898a63
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

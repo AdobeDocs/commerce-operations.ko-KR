@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45049: 관리자의 웹 사이트 범위에 따라 고객 '필수' 속성 설정이 작동하지 않음"
+title: 'ACSD-45049: 관리자의 웹 사이트 범위에 따라 고객 ''필수'' 속성 설정이 작동하지 않습니다.'
 description: ACSD-45049 패치를 적용하여 Admin의 웹 사이트 범위에 따라 고객 "[!UICONTROL Is required]" 특성이 제대로 재정의되지 않은 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 368af877-a3ec-431f-8f41-5d51354be571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

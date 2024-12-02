@@ -3,7 +3,8 @@ title: 'ACSD-51497: 드롭다운 유형의 사용자 지정 특성별로 카탈�
 description: ACSD-51497 패치를 적용하여 고객이 드롭다운 유형의 사용자 지정 특성별로 카탈로그 페이지를 정렬할 수 없는 Adobe Commerce 문제를 수정합니다.
 feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c66a7e04-fd2a-47be-8f7a-7982780a5414
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

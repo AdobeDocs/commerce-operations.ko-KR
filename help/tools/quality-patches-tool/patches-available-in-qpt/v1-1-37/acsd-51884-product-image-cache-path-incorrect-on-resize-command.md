@@ -3,7 +3,8 @@ title: 'ACSD-51884: 크기 조정 명령에서 제품 이미지 캐시 경로가
 description: ACSD-51884 패치를 적용하여 resize 명령을 실행한 후 제품 이미지 캐시 경로가 잘못되는 Adobe Commerce 문제를 해결합니다.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a3779e4b-2749-460e-a0a8-656b26bb06fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

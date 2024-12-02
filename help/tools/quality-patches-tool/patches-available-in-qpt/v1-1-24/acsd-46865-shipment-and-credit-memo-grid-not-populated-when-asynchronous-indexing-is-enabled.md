@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46865: [!UICONTROL asynchronous indexing]이(가) 활성화된 경우 [!UICONTROL shipment] 및 [!UICONTROL credit memo]이(가) 채워지지 않음'
+title: 'ACSD-46865: [!UICONTROL asynchronous indexing]을(를) 사용하도록 설정한 경우 [!UICONTROL shipment] 및 [!UICONTROL credit memo]이(가) 채워지지 않음'
 description: ACSD-46865 패치를 적용하여 [!UICONTROL asynchronous indexing]이(가) 활성화된 경우 [!UICONTROL shipment] 및 [!UICONTROL credit memo] 그리드가 채워지지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Cache, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6f84f5b6-6c34-476c-aae5-9a8ba306f8e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
