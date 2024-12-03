@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
+source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
 workflow-type: tm+mt
-source-wordcount: '6399'
+source-wordcount: '6415'
 ht-degree: 0%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 0%
          - [ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58828: 클라이언트측 유효성 검사와 함께 빈 필수 필드에 서버측 &quot;주소 필요&quot; 메시지가 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
          - [ACSD-61534: bin/magento config:set을 사용하여 디자인 구성을 설정할 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348: 위시리스트 항목이 GraphQL을 통해 표시되지만 상점 앞에는 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785: GraphQL 돌연변이 및 REST API 호출을 통해 reward_warning_notification 속성을 업데이트할 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
