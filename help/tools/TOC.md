@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 088b9ce70ba89bad4ea82f60093de0e3bf050cf9
+source-git-commit: 8c7b6673ba27b4a36d7bf19722768a4ca24a9955
 workflow-type: tm+mt
-source-wordcount: '6377'
+source-wordcount: '6390'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-61528: GraphQL을 사용하여 역할을 검색하면 결과가 반환되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: &quot;system.log&quot;에 환경 에뮬레이션 중첩 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
          - [ACSD-60804: 삭제된 회사와 연결된 고객을 편집하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+         - [ACSD-61969: 대문자 또는 소문자로 구성된 쿠폰 코드를 입력하는 데 필요합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase.md)
          - [ACSD-61133: sales_clean_quotes cron 은 승인되지 않은 구매 발주에서 견적을 삭제합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667: 출하 생성을 위한 재고 성과 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
