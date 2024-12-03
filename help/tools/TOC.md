@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 8c7b6673ba27b4a36d7bf19722768a4ca24a9955
+source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
 workflow-type: tm+mt
-source-wordcount: '6390'
+source-wordcount: '6399'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,7 @@ ht-degree: 0%
          - [ACSD-61667: 출하 생성을 위한 재고 성과 향상](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61134: [!UICONTROL Braintree Vault] 결제 방법이 체크아웃 워크플로우에서 자동으로 선택 해제되었습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow.md)
          - [ACSD-61756: 데이터베이스 인덱스 누락으로 인한 AdvancedSalesRule 필터의 성능 저하](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
          - [ACSD-60267: 구성 가능한 제품 옵션을 통해 제품을 추가할 때 FPT가 잘못 적용됩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199: CMS 페이지의 [!UICONTROL Hierarchy] 탭에 적절한 트리 구조가 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
