@@ -4,7 +4,7 @@ description: ACSD-60673 패치를 적용하여 결제 방법 조건을 사용하
 feature: Price Rules
 role: Admin, Developer
 exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
