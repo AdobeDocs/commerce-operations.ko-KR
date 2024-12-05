@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
+source-git-commit: dd6824c3f030d76e93372b8410e42ac5cd2f04c6
 workflow-type: tm+mt
-source-wordcount: '23125'
+source-wordcount: '23648'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ ht-degree: 0%
 >[!INFO]
 >
 >커뮤니티에서 Magento Open Source을 위해 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.56 {#v1-1-56}
+
+* **ACSD-63244**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - [!DNL JavaScript] 오류로 인해 [!DNL Google Maps]이(가) 올바르게 렌더링되지 않는 문제를 해결했습니다. *발견되지 않은 TypeError가 많은 문제가 해결되었습니다._each는 [!UICONTROL Admin] 패널의 콘솔에* 함수가 아닙니다.
+* **ACSD-63242**(Adobe Commerce 및 Magento Open Source >=2.4.6-p8 &lt;2.4.7) || >=2.4.7-p3 &lt;2.4.8) - 항목이 10,000개가 넘는 카탈로그 제품을 추가할 때 가져오기 속도가 느려지는 문제를 해결했습니다.
+* **ACSD-63062**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 여러 겹치는 규칙이 적용될 때 잘못된 장바구니 할인 계산이 발생하는 문제를 해결했습니다.
+* **ACSD-62979**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - [!DNL GraphQL] 헤더에서 잘못된 [!UICONTROL Store ID]을(를) 사용하면 치명적인 메모리 오류가 발생하는 문제를 해결합니다.
+* **ACSD-62971**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - **quantity** 열에서 숫자가 아닌 값으로 재고 소스를 가져오면 **quantity**&#x200B;가 *0*(으)로 설정되는 문제가 해결되었습니다.
+* **ACSD-62872**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 일정 업데이트의 유효성이 잘못 검사되는 고유한 특성 유효성 검사 문제를 해결합니다.
+* **ACSD-62755**(Adobe Commerce 및 Magento Open Source >=2.4.4-p11 &lt;2.4.5) || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - [!DNL TinyMCE] 7에서 글꼴 크기와 글꼴을 편집기 초기화 설정 내에 구체적으로 추가해야 하는 문제를 수정합니다.
+* **ACSD-62670**(Adobe Commerce 및 Magento Open Source >=2.4.4-p11 &lt;2.4.5) || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - [!UICONTROL Products Ordered] 보고서를 [!DNL CSV](으)로 내보내고 [!DNL XML]에서 오류가 반환되는 문제를 해결했습니다.
+* **ACSD-62577**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 쿼리 및 테이블 인덱스를 최적화하여 상점 검색 쿼리의 성능이 느린 문제를 해결합니다.
+* **ACSD-62475**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 장바구니에서 [!UICONTROL Gift Card] 제품이 잘못 병합되는 문제를 해결했습니다.
+* **ACSD-62428**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - [!DNL SKU]이(가) 검색 가능한 특성으로 설정되지 않은 경우 `is_out_of_stock`이(가) 카탈로그 검색 색인에서 잘못된 값으로 설정되는 문제를 해결합니다.
+* **ACSD-62355**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.8) - 구성 가능한 제품이 많은 값이 있는 많은 특성을 기반으로 할 때 구성 가능한 제품 편집 페이지의 로드 시간을 개선합니다.
+* **ACSD-61805**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8의 경우) - [!DNL REST API]을(를) 통해 미납 주문 상태를 업데이트한 후 스토어프론트에서 제품이 품절 상태로 유지되는 문제를 해결합니다.
+* **ACSD-60811**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 현재 상태가 *처리* 또는 *사기*&#x200B;인 경우에만 사용자 지정 값 또는 댓글로 주문 상태를 업데이트할 수 있는 문제를 해결했습니다.
+* **ACSD-62952**(Adobe Commerce >=2.4.4 &lt;2.4.8) - [!UICONTROL Gift Registry] 날짜가 상점 앞에 잘못 표시되는 문제를 해결했습니다.
+* **ACSD-55339**(Adobe Commerce >=2.4.4 &lt;2.4.8) - &quot;0&quot;(영)으로 시작하는 제품 [!DNL SKU]이(가) &quot;0&quot;을 제거하여 견적이 업데이트되지 않도록 하는 문제를 해결했습니다.
+**
+* 업데이트된 패치: **ACSD-59514**
+* 업데이트된 버전: **ACSD-60816**
+* 대체된 패치: **ACSD-59967**
 
 ## v1.1.55 {#v1-1-55}
 
