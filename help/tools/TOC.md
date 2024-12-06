@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 7fdaa4cb85abc76c307ca8aa5f43cfa394b8a1ce
+source-git-commit: f529a07568618b2b5e550896efaaf4d662445d30
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6456'
 ht-degree: 0%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 0%
          - [ACSD-61845: text/html accept 헤더가 있는 요청에 대해 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
          - [ACSD-62056: MSI가 설치된 경우 구성 가능한 제품에 대한 이미지 업로드가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
+         - [ACSD-58566: 구매 주문 설명에 대한 GraphQL 내부 서버 오류](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685: 재활성화 시 비활성화된 판매 이메일이 전송됩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
          - [ACSD-58828: 클라이언트측 유효성 검사와 함께 빈 필수 필드에 서버측 &quot;주소 필요&quot; 메시지가 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
