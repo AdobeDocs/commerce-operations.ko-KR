@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 73953020c85ffb0a941602e1dafe5de6a6175cff
+source-git-commit: 7fdaa4cb85abc76c307ca8aa5f43cfa394b8a1ce
 workflow-type: tm+mt
-source-wordcount: '6437'
+source-wordcount: '6446'
 ht-degree: 0%
 
 ---
@@ -673,6 +673,7 @@ ht-degree: 0%
          - [ACSD-62056: MSI가 설치된 경우 구성 가능한 제품에 대한 이미지 업로드가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58685: 재활성화 시 비활성화된 판매 이메일이 전송됩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
          - [ACSD-58828: 클라이언트측 유효성 검사와 함께 빈 필수 필드에 서버측 &quot;주소 필요&quot; 메시지가 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
          - [ACSD-61534: bin/magento config:set을 사용하여 디자인 구성을 설정할 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348: 위시리스트 항목이 GraphQL을 통해 표시되지만 상점 앞에는 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
