@@ -1,11 +1,11 @@
 ---
 title: 구현 플레이북
-description: Adobe Commerce 프로젝트의 계획, 개발, 시작 및 유지 관리에 대한 모범 사례에 대해 알아봅니다.
+description: Adobe Commerce 프로젝트를 계획, 개발, 출시 및 유지 관리하기 위한 모범 사례에 대해 알아봅니다.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
