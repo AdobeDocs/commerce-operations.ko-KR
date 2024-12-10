@@ -2,9 +2,9 @@
 title: 전제 조건 완료
 description: 다음 전제 조건 단계를 완료하여 Adobe Commerce 프로젝트를 업그레이드하도록 준비합니다.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ crontab -l
 
 cron 이 실행되지 않는 또 다른 증상은 관리자의 다음 오류입니다.
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![시스템 메시지 - cron이 실행되지 않음](../../assets/upgrade-guide/cron-not-running.png)
 
 오류를 확인하려면 다음과 같이 창 상단의 **시스템 메시지**&#x200B;를 클릭합니다.
 
-![](../../assets/upgrade-guide/system-messages.png)
+![시스템 메시지 알림](../../assets/upgrade-guide/system-messages.png)
 
 자세한 내용은 [cron 구성 및 실행](../../configuration/cli/configure-cron-jobs.md)을 참조하십시오.
 
