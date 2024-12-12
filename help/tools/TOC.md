@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 981de02b37590366e75eb605c671f0f0ec89feec
+source-git-commit: 089ef6e52b45a69455b80d0a43668e3250fb4b4f
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6485'
 ht-degree: 0%
 
 ---
@@ -683,6 +683,7 @@ ht-degree: 0%
          - [ACSD-58383:  [!DNL REST API]을(를) 통한 동시 환불 요청에서 중복된 대변 메모](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: 제한된 관리자는 연결된 웹 사이트의 고객 계정에서 구매하지 않은 장바구니를 볼 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-60344: 자동 승인으로 [!UICONTROL Purchase Order]을(를) 사용할 때 주문 확인 전자 메일이 중복됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
+         - [ACSD-62332: 제품 목록 GraphQL 쿼리가 10,000개의 제품으로 제한되고 [!DNL Live Search] 현재 페이지를 1로 설정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-62428: 카탈로그 검색 색인의 재고 상태 오류](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)

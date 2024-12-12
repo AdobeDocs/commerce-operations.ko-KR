@@ -4,14 +4,18 @@ description: ACSD-52801 패치를 적용하여 GraphQL 제품 필터 쿼리가 �
 feature: Products
 role: Admin, Developer
 exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-52801: GraphQL 제품 필터 쿼리가 부분 일치 결과를 표시하지 않음
+
+>[!NOTE]
+>
+>버전 2.4.6 - 2.4.6-p8의 동일한 문제를 해결하기 위해 업데이트된 패치([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md))가 릴리스되었습니다. 버전 2.4.6 이후의 ACSD-52801 패치를 대체합니다. 자세한 내용은 [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)을 참조하세요.
 
 ACSD-52801 패치는 GraphQL 제품 필터 쿼리가 부분 일치 결과를 표시하지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-52801입니다. 이 문제는 Adobe Commerce 2.4.7에서 해결되었습니다.
 
