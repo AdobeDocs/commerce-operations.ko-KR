@@ -2,9 +2,9 @@
 title: 'ACSD-52160: 장바구니 가격 규칙에 대한 제품 유효성 검사 결과'
 description: ACSD-52160 패치를 적용하여 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 규칙 조건 *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*에 따라 제대로 평가되지 않는 Adobe Commerce 문제를 해결합니다.
 exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ACSD-52160 패치는 장바구니 가격 규칙에 대한 제품 유효성 검�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](</help/tools/quality-patches-tool/usage.md>)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

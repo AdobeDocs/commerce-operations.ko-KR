@@ -4,9 +4,9 @@ description: ACSD-54776 패치를 적용하여 두 번째 웹 사이트, 스토�
 feature: Products
 role: Admin, Developer
 exl-id: d9f63abb-5d00-4777-a186-1120344af018
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ACSD-54776 패치를 사용하면 두 번째 웹 사이트, 스토어 및 스토
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](</help/tools/quality-patches-tool/usage.md>)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기

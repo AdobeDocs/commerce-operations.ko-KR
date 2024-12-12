@@ -3,7 +3,8 @@ title: QPT 도구 개요에서 사용할 수 있는 패치
 description: 이 문서에서는  [!DNL Quality Patches Tool] (QPT)에 대한 개요와 사용 방법을 설명하는 리소스 링크를 제공합니다.
 feature: Support, Tools and External Services
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
+source-git-commit: 32800bcca9174eb09ff7a723bdc775ebaa569807
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -50,7 +51,7 @@ Adobe Commerce 온프레미스 및 Adobe Commerce 온클라우드 인프라의 �
 
 ### Adobe Commerce 온프레미스용 QPT를 설치하고 사용하는 방법
 
-패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Commerce > 도구 > 사용](/help/tools/quality-patches-tool/usage.md)을 참조하십시오.
+패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Commerce > 도구 > 사용](../usage.md)을 참조하십시오.
 
 ### 클라우드 인프라에서 Adobe Commerce용 QPT를 설치하고 사용하는 방법
 

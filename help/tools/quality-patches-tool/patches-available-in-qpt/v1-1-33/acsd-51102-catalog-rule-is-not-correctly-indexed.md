@@ -4,7 +4,7 @@ description: ACSD-51102 패치를 적용하여 많은 수의 제품에 적용되
 feature: Catalog Management, Products
 role: Admin
 exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ACSD-51102 패치는 예약된 업데이트로 인해 규칙이 활성화될 때
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](</help/tools/quality-patches-tool/usage.md>)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
