@@ -3,16 +3,16 @@ title: 'ACSD-56760: 관리자 사용자가 특정 웹 사이트로 제한되어 
 description: ACSD-56760 패치를 적용하여 특정 웹 사이트로 제한되어 있고 웹 스토어에 자체 루트 카테고리가 있는 경우 카테고리 내에 새 제품을 정렬하거나 추가할 수 없는 Adobe Commerce 문제를 해결합니다.
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 881d33089b15b78583e09b79e93a3f78f38bc2ca
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # ACSD-56760: 관리자 사용자가 특정 웹 사이트로 제한되어 새 제품을 정렬 또는 추가할 수 없음
 
-ACSD-56760 패치는 특정 웹 사이트로 제한되어 있고 웹 스토어에 자체 루트 범주가 있는 경우 범주 내에서 새 제품을 정렬 또는 추가할 수 없는 관리 사용자 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.47이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-56760입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-56760 패치는 특정 웹 사이트로 제한되어 있고 웹 스토어에 자체 루트 범주가 있는 경우 범주 내에서 새 제품을 정렬 또는 추가할 수 없는 관리 사용자 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-56760입니다. 이 문제는 Adobe Commerce 2.4.8-Beta1에서 수정될 예정입니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -69,8 +69,4 @@ ACSD-56760 패치는 특정 웹 사이트로 제한되어 있고 웹 스토어�
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
-
-
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
+* [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
