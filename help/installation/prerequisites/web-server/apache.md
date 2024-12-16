@@ -2,7 +2,7 @@
 title: Apache
 description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f8c5d714a4e96d0508f745d1b7617696c8cc94a7
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerce은 Apache 2.4.x를 지원합니다.
 
 ## Apache rewrites 및 htaccess
 
-이 항목에서는 Apache 2.4 재작성을 활성화하고 [분산 구성 파일 `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)에 대한 설정을 지정하는 방법에 대해 설명합니다.
+이 항목에서는 Apache 2.4 재작성을 활성화하고 [분산 구성 파일 `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample)에 대한 설정을 지정하는 방법에 대해 설명합니다.
 
 Adobe Commerce은 서버 재작성 및 `.htaccess`을(를) 사용하여 Apache에 디렉터리 수준 지침을 제공합니다. 이 항목의 다른 모든 섹션에도 다음 지침이 포함되어 있습니다.
 
