@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: c97ab644e6372cd6b2dac284d68eb2a79d02c908
+source-git-commit: 6ec6aec8747e4b40943c864dec84b98e6b293d07
 workflow-type: tm+mt
-source-wordcount: '6541'
+source-wordcount: '6547'
 ht-degree: 0%
 
 ---
@@ -692,6 +692,7 @@ ht-degree: 0%
          - [ACSD-63242: 10,000개 이상의 카탈로그 제품을 추가할 때 가져오기 속도 저하](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: 겹치는 규칙이 여러 개 있는 잘못된 장바구니 할인 계산](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428: 카탈로그 검색 색인의 재고 상태 오류](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [ACSD-62577: 상점 검색 성능 최적화](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 명령줄 도구 참조 {#cli-reference}
