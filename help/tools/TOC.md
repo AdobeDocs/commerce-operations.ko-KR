@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: f8541ffca30199ab6f6409d79753c65e31fb13f6
+source-git-commit: 5e705bd71b9229e7040ed3c8fccd8057512ac710
 workflow-type: tm+mt
-source-wordcount: '6578'
+source-wordcount: '6582'
 ht-degree: 0%
 
 ---
@@ -696,7 +696,8 @@ ht-degree: 0%
          - [ACSD-62428: 카탈로그 검색 색인의 재고 상태 오류](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
          - [ACSD-62577: 상점 검색 성능 최적화](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-
+      - v1.1.57 {#v1-1-57}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
    - [업그레이드 호환성 도구](reference/uct.md)
