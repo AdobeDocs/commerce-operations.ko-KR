@@ -3,7 +3,8 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.57'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.57에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 82b8d22438107680cdf47057e0db3e15bf819599
+exl-id: 3e252a71-f35f-4046-9353-169060451ffe
+source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -27,7 +28,7 @@ QPT v1.1.57에는 다음 패치가 포함됩니다.
 1. **ACSD-62635**: 다중 스토어 관련 제품이 [!DNL GraphQL] 제품 쿼리에 제대로 표시되지 않는 문제를 해결했습니다.
 1. **ACSD-62671**: [!DNL GraphQL] 요청이 첫 번째 시도에서 최신 주소 정보를 반환하지 않는 문제를 해결했습니다.
 1. **ACSD-62689**: 고객이 깊이 4 이후에 [!UICONTROL Related Product Rules] 및 [!UICONTROL Widgets]에 범주를 추가할 수 없는 문제를 해결했습니다.
-1. **ACSD-62708**: [!UICONTROL ACP2E-3430]에서 수정 사항을 적용한 후 관리자의 [!DNL TinyMCE] 7 편집기 글꼴 크기가 [!UICONTROL px]을(를) 표시하고 [!UICONTROL pt]을(를) 표시하지 않는 문제를 해결했습니다. 이제 [!UICONTROL pt] 대신 [!UICONTROL px]에서 글꼴 크기를 설정할 수도 있습니다.
+1. **ACSD-62708**: [!UICONTROL ACP2E-3430]에서 수정 사항을 적용한 후 관리자의 [!DNL TinyMCE] 7 편집기 글꼴 크기가 [!UICONTROL pt]을(를) 표시하고 [!UICONTROL px]을(를) 표시하지 않는 문제를 해결했습니다. 이제 [!UICONTROL pt] 대신 [!UICONTROL px]에서 글꼴 크기를 설정할 수도 있습니다.
 1. **ACSD-62758**: URL에 선택한 옵션이 포함된 경우 [!UICONTROL Configurable Product] 세부 정보 페이지에서 제품 비디오가 올바르게 렌더링되지 않는 문제를 해결했습니다.
 1. **ACSD-62951**: 항목 및 합계를 포함하지 않고 [!UICONTROL Credit Memo] 전자 메일을 보내는 문제를 해결했습니다.
 1. **ACSD-62965**: *LocalizedException* 메시지가 주문 배치 [!DNL GraphQL response]에 포함되지 않는 문제를 해결했습니다.
