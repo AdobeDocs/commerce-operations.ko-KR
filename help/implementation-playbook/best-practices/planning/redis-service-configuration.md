@@ -4,9 +4,9 @@ description: Adobe Commerce용 확장된 Redis 캐시 구현을 사용하여 캐
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
+source-git-commit: bbebb414ae3b8c255e17b1f3673a6c4b7c6f23b2
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -210,15 +210,19 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
 
 1. `.magento.env.yaml` 구성 파일에 포트 번호를 추가합니다.
 
+   >[!IMPORTANT]
+   >
+   >`ece-tools`이(가) `MAGENTO_CLOUD_RELATIONSHIPS` redis 세션 서비스 정의에서 자동으로 검색할 수 없는 경우에만 redis 세션 포트를 구성하십시오.
+
    >[!NOTE]
+   >
    >`disable_locking`을(를) `1`(으)로 설정해야 합니다.
-   >   
 
    ```yaml
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
+       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
