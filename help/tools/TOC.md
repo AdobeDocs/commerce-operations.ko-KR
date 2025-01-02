@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 5e705bd71b9229e7040ed3c8fccd8057512ac710
+source-git-commit: f79af1e15a763fa9f9b8050a73b160e5741c435d
 workflow-type: tm+mt
-source-wordcount: '6582'
+source-wordcount: '6595'
 ht-degree: 0%
 
 ---
@@ -698,6 +698,7 @@ ht-degree: 0%
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-63326: 백엔드에서 주문을 한 후 관리자 리디렉션 문제를 수정합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
    - [업그레이드 호환성 도구](reference/uct.md)
