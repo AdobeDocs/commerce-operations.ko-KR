@@ -3,13 +3,13 @@ title: 'ACSD-58325: 유효성 검사 오류 후에도 [!UICONTROL Import] 단추
 description: ACSD-58325 패치를 적용하여 유효성 검사 오류 후에도 [!UICONTROL Import] 단추를 사용할 수 있는 Adobe Commerce 문제를 해결합니다.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325: 유효성 검사 오류 후에도 [!UICONTROL Import] 단추를 사용할 수 있음
 
@@ -21,8 +21,7 @@ ACSD-58325 패치는 유효성 검사 오류 후에도 **[!UICONTROL Import]** �
 * Adobe Commerce(모든 배포 방법) 2.4.6-p3
 
 **Adobe Commerce 버전과 호환:**
-* Adobe Commerce 온-프레미스 2.4.6 - 2.4.6-p8
-* 클라우드 인프라의 Adobe Commerce 2.4.6 - 2.4.6-p8
+* Adobe Commerce(모든 배포 방법) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ ACSD-58325 패치는 유효성 검사 오류 후에도 **[!UICONTROL Import]** �
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-
