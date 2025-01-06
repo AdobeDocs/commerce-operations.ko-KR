@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: d0a1da302c3e50b3b73a89d5d6326ef638005fec
+source-git-commit: d91b7e2b1fb5d467882e29e9c829153eedc1f20b
 workflow-type: tm+mt
-source-wordcount: '6674'
+source-wordcount: '6682'
 ht-degree: 0%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 0%
       - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-62635:  [!DNL GraphQL]에 다중 스토어 관련 제품이 잘못 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql.md)
          - [ACSD-61622: [!DNL FedEx] 계정 특정 요금이 REST API 응답에 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response.md)
          - [ACSD-62965: GraphQL 주문 배치 응답에서 누락된 LocalizedException 메시지가 수정되었습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
          - [ACSD-62758: 구성 가능한 제품 페이지에서 비디오 렌더링 문제가 해결되었습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
