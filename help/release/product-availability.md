@@ -2,9 +2,9 @@
 title: 제품 가용성
 description: 현재 지원되는 Adobe Commerce 기능에 대해 알아보고 특정 Adobe Commerce 릴리스와의 호환성을 확인합니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
+source-git-commit: 56dabc0c35460a8ace6f6be455050f56119d1b16
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 0%
 * Adobe Commerce 서비스는 현재 Commerce 2.4.4 이상과 호환됩니다. 가맹점은 최신 버전의 서비스를 사용하는 것이 좋다.
 * 서비스는 이전 버전의 Commerce 2.4.x와 호환되는 것으로 간주되지만 공식적으로 지원되지 않습니다.
 * 서비스는 Commerce 3.3.7 및 이전 제품을 제외하고 Recommendations 2.3.x와 호환되지 않습니다.
+* 결제 서비스는 현재 Magento Open Source 2.4.4 이상과 호환됩니다. 가맹점은 최신 버전의 서비스를 사용하는 것이 좋다.
 
 다음 표는 Adobe Commerce 버전을 기준으로 각 서비스에 대한 버전 지원을 보여 줍니다.
 
