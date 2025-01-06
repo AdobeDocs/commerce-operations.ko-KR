@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: d91b7e2b1fb5d467882e29e9c829153eedc1f20b
+source-git-commit: b06e25b27b7e07ec14defd59a95048b8027cbcbf
 workflow-type: tm+mt
-source-wordcount: '6682'
+source-wordcount: '6694'
 ht-degree: 0%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 0%
          - [ACSD-63242: 10,000개 이상의 카탈로그 제품을 추가할 때 가져오기 속도 저하](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: 겹치는 규칙이 여러 개 있는 잘못된 장바구니 할인 계산](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428: 카탈로그 검색 색인의 재고 상태 오류](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [ACSD-63244:  [!DNL Google Maps] 렌더링 및 콘솔 오류를 포함한 관리 패널 JavaScript 문제를 해결합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors.md)
          - [AACSD-62355: Adobe Commerce에서 구성 가능한 제품 편집 성능 개선](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce.md)
          - [ACSD-62872: 예약 업데이트가 잘못 확인됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: 상점 첫 화면에 잘못 표시된 선물 등록 날짜](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
