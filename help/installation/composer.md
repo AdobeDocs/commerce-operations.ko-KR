@@ -2,9 +2,9 @@
 title: 온프레미스 설치 빠른 시작
 description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Adobe Commerce 메타패키지를 가져오려면 다음을 수행하십시오.
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   메시지가 표시되면 인증 키를 입력합니다. 공개 및 개인 키가 [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/)에서 만들어지고 구성됩니다.
+   메시지가 표시되면 인증 키를 입력합니다. 공개 및 개인 키는 [Commerce Marketplace - 액세스 키](https://commercemarketplace.adobe.com/customer/account/login/)에서 만들고 구성합니다. `[!UICONTROL username]`에 대해 공개 키 값을 복사하여 붙여 넣으십시오. `[!UICONTROL password]`에 대해 개인 키 값을 복사하여 붙여 넣으십시오.
 
    >[!NOTE]
    >
-   > 작성기 `auth.json` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
+   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
 
    `Could not find package...` 또는 `...no matching package found`과(와) 같은 오류가 발생하면 명령에 오타가 없는지 확인하십시오. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 도움이 필요하면 [Adobe Commerce 지원](https://support.magento.com/hc/en-us)에 문의하십시오.
 
