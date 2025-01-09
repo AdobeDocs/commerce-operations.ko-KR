@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: fa59bb2e45f7f7539f5a7515f02854b7066314fe
+source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
 workflow-type: tm+mt
-source-wordcount: '6739'
+source-wordcount: '6749'
 ht-degree: 0%
 
 ---
@@ -713,6 +713,7 @@ ht-degree: 0%
          - [ACSD-63326: 백엔드에서 주문을 한 후 관리자 리디렉션 문제를 수정합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286: 공유 카탈로그에 할당된 제품을 표시하려면 수동으로 리인덱싱해야 함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: 유효성 검사 오류 후에도 [!UICONTROL Import] 단추를 사용할 수 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+         - [ACSD-62671: [!DNL GraphQL] 첫 번째 시도에서 업데이트된 주소를 반환하지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
    - [업그레이드 호환성 도구](reference/uct.md)
