@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
+source-git-commit: 7fdd74ed6820b947563f3d887a666c02b9c37350
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6763'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591: [!UICONTROL User Agent Rules]을(를) 구성할 때 테마가 제대로 전환되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-61805: REST API를 통해 미납 주문 상태를 업데이트한 후 스토어프론트에서 재고 문제를 수정합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api.md)
          - [ACSD-60811: 주문 상태를 사용자 지정 값으로 업데이트하는 제한 사항 수정](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
          - [ACSD-62971: 숫자가 아닌 수량 값을 가진 재고 출처 임포트는 수량을 0으로 설정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
          - [ACSD-62979: GraphQL 헤더의 잘못된 스토어 ID로 인해 치명적인 메모리 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
