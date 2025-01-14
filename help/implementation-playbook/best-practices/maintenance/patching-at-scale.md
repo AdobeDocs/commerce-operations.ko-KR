@@ -3,9 +3,9 @@ title: 규모에 맞게 패치를 배포하기 위한 모범 사례
 description: Adobe Commerce에 대한 중앙 집중식 패치가 엔터프라이즈 프로젝트 관리에 어떻게 도움이 되는지 알아봅니다.
 role: Developer
 feature: Best Practices
-badge: label="Anton Evers, 수석 기술 설계자, Adobe의 기여" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="안톤 에버스의 기여"
+badge: label="Tony Evers, 수석 기술 설계자, Adobe 제공" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="토니 에버스의 기고문"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 0%
