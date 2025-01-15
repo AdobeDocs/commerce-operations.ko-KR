@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 696f8b1e24c38b7604058df88eff31c6c296d6e7
+source-git-commit: 9e71d979e0662770043fd9ca74b9ba8b5a6752f0
 workflow-type: tm+mt
-source-wordcount: '24185'
+source-wordcount: '24552'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >커뮤니티에서 Magento Open Source을 위해 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.58 {#v1-1-58}
+
+* **ACSD-48570**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - **URL에 스토어 코드 추가**&#x200B;가 *활성화됨*&#x200B;일 때 [!UICONTROL Admin] 암호 재설정 링크를 클릭하여 암호 재설정 페이지에 연결할 수 없는 문제를 해결했습니다. 이로 인해 이전에 로그인 페이지 또는 404 페이지가 표시되었습니다.
+* **ACSD-62118**(Adobe Commerce >=2.4.6 &lt;2.4.8) - 구매 주문 방법을 사용하여 [!DNL B2B]개의 주문을 했을 때 `sales_order_tax_item` 테이블이 완전히 업데이트되지 않는 문제를 해결했습니다.
+* **ACSD-63067**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 모든 제품 수량이 잘못 강조 표시되고 한 수량만 잘못된 경우 그룹화된 제품의 모든 제품에 대해 *[!DNL Please specify the quantity of product(s).]* 메시지가 표시되는 문제를 해결했습니다.
+* **ACSD-63090**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 장바구니에 추가된 후 제품이 삭제되면 장바구니 항목이 제거되는 문제를 수정합니다.
+* **ACSD-63182**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - **[!DNL MSI]** *enabled*&#x200B;와(과) 함께 중복 번들 제품을 저장할 때 오류가 발생하는 문제를 수정합니다.
+* **ACSD-63283**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 선물 레지스트리에서 항목을 주문하면 예외가 발생하고 선물 레지스트리 업데이트에 레지스트리에 속하지 않는 항목이 포함된 문제가 해결되었습니다.
+* **ACSD-63299**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 구성 가능한 제품에 대한 특별 가격이 상점 앞에 표시되지 않는 문제를 해결했습니다.
+* **ACSD-63325**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 빈 [!DNL GraphQL] 요청을 제출할 때 `Syntax Error: Unexpected <EOF>` 오류가 발생하는 문제를 수정합니다.
+* **ACSD-63329**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - [!DNL REST API]을(를) 통해 제품을 만들 때 **[!UICONTROL Date]** 또는 **[!UICONTROL Date and Time]** 입력 형식의 특성에 대한 기본값이 설정되지 않는 문제를 해결했습니다.
+* **ACSD-63572**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.8) - 인덱서 프로세스가 종료되면 `CatalogRule` 인덱서 임시 테이블이 정리되지 않는 문제가 해결되었습니다.
+* **ACSD-63578**(Adobe Commerce >=2.4.4 &lt;2.4.8) - [!UICONTROL Admin]에서 **[!UICONTROL Add to Order by SKU]**&#x200B;의 **[!UICONTROL Delete]** 단추를 클릭해도 [!DNL SKU]이(가) 제거되지 않는 문제가 해결되었습니다.
+* 업데이트된 버전: **MDVA-39305-V3**
+* 대체된 패치: **ACSD-56280**
+* 사용되지 않는 패치: **ACSD-62872**
 
 ## v1.1.57 {#v1-1-57}
 
@@ -45,9 +62,9 @@ ht-degree: 0%
 
 ## v1.1.56 {#v1-1-56}
 
-* **ACSD-63244**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - [!DNL JavaScript] 오류로 인해 [!DNL Google Maps]이(가) 올바르게 렌더링되지 않는 문제를 해결했습니다. *발견되지 않은 TypeError가 많은 문제가 해결되었습니다._each는 [!UICONTROL Admin] 패널의 콘솔에 있는 함수* 오류가 아닙니다.
-* **ACSD-63242**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - 10,000개 이상의 항목이 있는 카탈로그 제품을 추가할 때 가져오기 속도가 느려지는 문제를 해결합니다.
-* **ACSD-63062**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 여러 겹치는 규칙이 적용될 때 잘못된 장바구니 할인 계산이 발생하는 문제를 해결합니다.
+* **ACSD-63244**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - [!DNL JavaScript] 오류로 인해 [!DNL Google Maps]이(가) 올바르게 렌더링되지 않는 문제를 해결했습니다. *발견되지 않은 TypeError가 많은 문제가 해결되었습니다._each는 [!UICONTROL Admin] 패널의 콘솔에* 함수가 아닙니다.
+* **ACSD-63242**(Adobe Commerce 및 Magento Open Source >=2.4.6-p8 &lt;2.4.7) || >=2.4.7-p3 &lt;2.4.8) - 항목이 10,000개가 넘는 카탈로그 제품을 추가할 때 가져오기 속도가 느려지는 문제를 해결했습니다.
+* **ACSD-63062**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 여러 겹치는 규칙이 적용될 때 잘못된 장바구니 할인 계산이 발생하는 문제를 해결했습니다.
 * **ACSD-62979**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - [!DNL GraphQL] 헤더에서 잘못된 [!UICONTROL Store ID]을(를) 사용하면 치명적인 메모리 오류가 발생하는 문제를 해결합니다.
 * **ACSD-62971**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - **quantity** 열에서 숫자가 아닌 값으로 재고 소스를 가져오면 **quantity**&#x200B;가 *0*(으)로 설정되는 문제가 해결되었습니다.
 * **ACSD-62872**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 일정 업데이트의 유효성이 잘못 검사되는 고유한 특성 유효성 검사 문제를 해결합니다.
