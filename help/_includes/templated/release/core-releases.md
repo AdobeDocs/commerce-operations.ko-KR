@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9bbb006234aa61c998c853167fa89e43d5f9012b
+source-git-commit: 4a84f20fba387f6b94786095ebad82c2fdf0560e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ## 2.4.6
 
-2.4.6 릴리스 라인에 대한 지원은 2026년 3월 14일에 종료됩니다.
+2.4.6 릴리스 라인에 대한 지원은 2026년 8월 11일에 종료됩니다.
 
 <table>
   <thead>
