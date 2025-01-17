@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 32f3a7682ac13fdef7ff5694ef478b1d0704d8e9
+source-git-commit: 3b200e814ee973fde79b436d9efc5738b3420ee2
 workflow-type: tm+mt
-source-wordcount: '6807'
+source-wordcount: '6811'
 ht-degree: 0%
 
 ---
@@ -704,7 +704,6 @@ ht-degree: 0%
          - [ACSD-55339: Adobe Commerce에 대한 협상 가능한 견적의 SKU 트리밍 문제 해결](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670: [!UICONTROL Products Ordered] 보고서를 CSV로 내보내고 XML에서 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7에는 글꼴 크기와 글꼴이 편집기 초기화 설정에 추가되어야 합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
          - [관리 패널의 ACSD-62708: [!DNL TinyMCE] 7 편집기 글꼴 크기에 PT가 표시됩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
@@ -719,6 +718,9 @@ ht-degree: 0%
          - [ACSD-63286: 공유 카탈로그에 할당된 제품을 표시하려면 수동으로 리인덱싱해야 함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: 유효성 검사 오류 후에도 [!UICONTROL Import] 단추를 사용할 수 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671: [!DNL GraphQL] 첫 번째 시도에서 업데이트된 주소를 반환하지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+      - v1.1.58 {#v1-1-58}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
    - [업그레이드 호환성 도구](reference/uct.md)
