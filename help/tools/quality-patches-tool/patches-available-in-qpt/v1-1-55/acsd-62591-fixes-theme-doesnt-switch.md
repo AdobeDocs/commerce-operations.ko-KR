@@ -3,17 +3,17 @@ title: 'ACSD-62591: [!UICONTROL User Agent Rules]을(를) 구성할 ** 테마가
 description: ACSD-62591 패치를 적용하여 **[!UICONTROL User Agent Rules]**이(가) 구성되었을 때 테마가 제대로 전환되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Themes
 role: Admin, Developer
-source-git-commit: 319ac7ea1fb8f33f4ed7bfa440477cf6d6657cb5
+exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62591: [!UICONTROL User Agent Rules]을(를) 구성할 때 테마가 제대로 전환되지 않습니다.
 
-ACSD-62591 패치를 사용하면 **[!UICONTROL User Agent Rules]**&#x200B;이(가) 구성될 때 테마가 제대로 전환되지 않는 문제가 해결됩니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62591입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-62591 패치를 사용하면 **[!UICONTROL User Agent Rules]**&#x200B;이(가) 구성될 때 테마가 제대로 전환되지 않는 문제가 해결됩니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-62591입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -61,3 +61,4 @@ ACSD-62591 패치를 사용하면 **[!UICONTROL User Agent Rules]**&#x200B;이(�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+

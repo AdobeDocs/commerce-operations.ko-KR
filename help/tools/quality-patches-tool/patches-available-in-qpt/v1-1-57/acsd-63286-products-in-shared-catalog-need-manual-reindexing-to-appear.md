@@ -3,16 +3,17 @@ title: 'ACSD-63286: 공유 카탈로그에 할당된 제품을 표시하려면 �
 description: ACSD-63286 패치를 적용하여 API를 통해 공유 카탈로그에 할당된 제품이 수동 색인 재지정이 실행될 때까지 상점 앞에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286: 공유 카탈로그에 할당된 제품을 표시하려면 수동으로 리인덱싱해야 함
 
-ACSD-63286 패치는 API를 통해 공유 카탈로그에 할당된 제품이 수동 색인 재지정을 실행할 때까지 상점 앞에 표시되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63286입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-63286 패치는 API를 통해 공유 카탈로그에 할당된 제품이 수동 색인 재지정을 실행할 때까지 상점 앞에 표시되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63286입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 

@@ -3,17 +3,17 @@ title: 'ACSD-62689: [!UICONTROL Related Product Rules]의 범주 및 깊이 4 �
 description: 고객이 깊이 4 중첩 후 [!UICONTROL Related Product Rules]과(와) 위젯에 범주를 추가할 수 없는 Adobe Commerce 문제를 해결하려면 ACSD-62689 패치를 적용하십시오.
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689: *[!UICONTROL Related Product Rules]*&#x200B;의 범주 및 깊이 4 이후의 위젯을 추가할 수 없습니다.
 
-ACSD-62689 패치는 고객이 깊이 4 중첩 후에 *[!UICONTROL Related Product Rules]*&#x200B;과(와) 위젯에 범주를 추가할 수 없는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62689입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-62689 패치는 고객이 깊이 4 중첩 후에 *[!UICONTROL Related Product Rules]*&#x200B;과(와) 위젯에 범주를 추가할 수 없는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62689입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -67,3 +67,4 @@ ACSD-62689 패치는 고객이 깊이 4 중첩 후에 *[!UICONTROL Related Produ
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+
