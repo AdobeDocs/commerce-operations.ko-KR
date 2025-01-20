@@ -3,14 +3,15 @@ title: 'ACSD-63244:  [!DNL Google Maps] 렌더링 및 콘솔 오류를 포함한
 description: ACSD-63244 패치는 관리 패널에서  [!DNL Google Maps] 렌더링 및 되풀이되는 '발견되지 않은 유형' 오류와 관련된 문제를 포함하여 여러 JavaScript 문제를 수정합니다._each는 브라우저 콘솔에서 함수 오류가 아닙니다.
 feature: Admin Workspace
 role: Admin, Developer
-source-git-commit: 01d6d74bfb9a9491bc006f140a2eebf4bbee004b
+exl-id: 1985c845-219e-4af4-8f70-62dd57722494
+source-git-commit: 6b623811440238deee7a7fe859d887830f89782c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# ACSD-63244: ACSD-63244: [!DNL Google Maps] 렌더링 및 콘솔 오류를 포함한 관리 패널 JavaScript 문제를 해결합니다.
+# ACSD-63244: [!DNL Google Maps] 렌더링 및 콘솔 오류를 포함한 관리 패널 JavaScript 문제를 해결합니다.
 
 ACSD-63244 패치는 브라우저 콘솔에서 [!DNL Google Maps] 렌더링 및 `Uncaught TypeError: this._each is not a function` 반복 오류와 관련된 문제를 포함하여 관리 패널의 여러 JavaScript 문제를 수정합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56에서 사용할 수 있습니다. 패치 ID는 ACSD-63244입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정될 예정입니다.
 
