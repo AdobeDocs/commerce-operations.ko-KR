@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 30403c10ccb7332b0105c9859c37d7d23a784ce5
+source-git-commit: 34010e1b22e7230d7c249e06bff7061c38b7a805
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6845'
 ht-degree: 0%
 
 ---
@@ -718,6 +718,7 @@ ht-degree: 0%
          - [ACSD-63286: 공유 카탈로그에 할당된 제품을 표시하려면 수동으로 리인덱싱해야 함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: 유효성 검사 오류 후에도 [!UICONTROL Import] 단추를 사용할 수 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671: [!DNL GraphQL] 첫 번째 시도에서 업데이트된 주소를 반환하지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+         - [ACSD-62481: [!UICONTROL Persistence]이(가) 활성화된 경우에도 장바구니가 비어 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
       - v1.1.58 {#v1-1-58}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
          - [ACSD-63067: 상점 첫 화면의 그룹화된 제품에서 수량 검증 문제 해결](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
