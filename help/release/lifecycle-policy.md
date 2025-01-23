@@ -2,7 +2,7 @@
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2a611b87df0d25be0e047e4d07e8c0ac3cd4d904
+source-git-commit: ce7c322c5cf979a992e6f929c3105daf86d4aa49
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -38,8 +38,8 @@ Adobe은 고객에게 가능한 한 빨리 업그레이드하도록 권장합니
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 2024년 4월 9일 | 2027년 4월 9일 | 해당 사항 없음 | 8.2 및 8.3 | 10.6 |
 | Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 8월 11일<sup>2</sup> | 해당 사항 없음 | 8.1 및 8.2 | 10.6 |
-| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | 2026월 11일 | 8.1 | 10.5<sup>3</sup> |
-| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 24일 | 2026년 4월 14일 | 8.1 | 10.5<sup>4</sup> |
+| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | 2026월 11일 | 8.1 | 10.6<sup>3</sup> |
+| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 24일 | 2026년 4월 14일 | 8.1 | 10.6<sup>4</sup> |
 
 {style="table-layout:auto"}
 
@@ -47,8 +47,8 @@ Adobe은 고객에게 가능한 한 빨리 업그레이드하도록 권장합니
 >
 >- <sup>1</sup> 소프트웨어 지원 종료에는 품질 수정 및 보안 수정 종료가 모두 포함됩니다.
 >- <sup>2</sup> 2.4.5에 대한 확장 지원 종료에 맞춰 업데이트되었습니다.
->- <sup>3</sup> 2.4.5-p8 보안 패치부터 시작합니다.
->- <sup>4</sup> 2.4.4-p9 보안 패치부터 시작합니다.
+>- <sup>3</sup> 2.4.5-p11 보안 패치부터 시작합니다.
+>- <sup>4</sup> 2.4.4-p12 보안 패치부터 시작합니다.
 >- [소프트웨어 수명 주기 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)을 참조하세요.
 
 <table style="table-layout:auto">
