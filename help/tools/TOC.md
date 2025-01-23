@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 34010e1b22e7230d7c249e06bff7061c38b7a805
+source-git-commit: fd62bcd5d101d694c3e4fefdd9a64545e4e1cf7c
 workflow-type: tm+mt
-source-wordcount: '6845'
+source-wordcount: '6854'
 ht-degree: 0%
 
 ---
@@ -706,6 +706,7 @@ ht-degree: 0%
          - [ACSD-62755: [!DNL TinyMCE] 7에는 글꼴 크기와 글꼴이 편집기 초기화 설정에 추가되어야 합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - v1.1.57 {#v1-1-57}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-62212: [!UICONTROL Forgot Password] 전자 메일이 저장소 보기 언어로 번역되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language.md)
          - [관리 패널의 ACSD-62708: [!DNL TinyMCE] 7 편집기 글꼴 크기에 PT가 표시됩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
          - [ACSD-62689: [!UICONTROL Related Product Rules]의 범주 및 깊이 4 이후의 위젯을 추가할 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md)
          - [ACSD-62629: 위젯의 제품 목록에 잘못된 카테고리가 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62629-product-list-widgets-category-condition.md)
