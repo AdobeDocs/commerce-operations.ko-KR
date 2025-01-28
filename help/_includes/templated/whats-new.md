@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ea627f6f4531f63ab1dc05414252c73cac6ffd0
+source-git-commit: 512461d659b8e74c467ce2a1b1a97360d4b95cd4
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,32 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 1월 27일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>QPT 1.1.57 릴리스의 ACSD-61895 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d63e9e5301236cd3c2671b828cb540e756d2da61">d63e9e</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p>QPT 1.1.58 릴리스의 ACSD-63182 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e3b6651bc34712b744e2a15940ac1f8513cfcb04">e3b665</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 1월 22일
 
@@ -535,102 +561,6 @@ ht-degree: 1%
 </td>
       <td>새 주제</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07c327b633c66d694acdcd0cf379ca8aa0d6942b">07c327</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 11월 29일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.55 릴리스의 ACSD-61785 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e058c0b473b6006e3630b5b575c2755e07de9dd">0e058c</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.54 릴리스의 ACSD-61756 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter">자세한 설명을 추가했습니다.1}</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6abbbb28a3077f7bf26a393388c5059fcd8c599">f6abbb</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.54 릴리스의 ACSD-60267 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options">자세한 설명을 추가했습니다.1}</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f61153745dbd421a3b2e64bb7d4beb2c691d951">4f6115</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.55 릴리스의 ACSD-61534 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a2db756505e3ad370d4969b6555aeefdfbcdca1b">a2db75</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.55 릴리스의 ACSD-61348 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bdcb79e809bcc96b9ad98f050a10975dbde29cdd">bdcb79</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 11월 28일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.54 릴리스의 ACSD-61103 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login">자세한 설명을 추가했습니다.1}</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b6ae0563dee1dd52c5473063fe9550bfd2dde69f">b6ae05</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024년 11월 27일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.54 릴리스의 ACSD-61799 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules">자세한 설명을 추가했습니다.1}</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9333592647e2d8a95745801351d8d0404e0a86e7">933359</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.53 릴리스의 ACSD-61667 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a2be6a3ea6c85fc9a08b71664db193df1ebd076">3a2be6</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.53 릴리스의 ACSD-61133 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5343374cf270f85b908e9bd022ce89c00c615f">fc5343</a>(커밋)</td>
     </tr>
   </tbody>
 </table>
