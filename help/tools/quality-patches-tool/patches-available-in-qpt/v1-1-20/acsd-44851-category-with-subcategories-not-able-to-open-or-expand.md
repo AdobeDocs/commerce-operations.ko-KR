@@ -4,9 +4,9 @@ description: 이 문서에서는 사용자가 하위 범주가 있는 범주를 
 feature: Categories
 role: Admin
 exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,6 @@ ACSD-44851 패치는 사용자가 하위 범주가 있는 범주를 열거나 �
 품질 패치 도구에 대한 자세한 내용은 다음을 참조하십시오.
 
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* 지원 기술 자료에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html).
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 품질 패치 도구 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
