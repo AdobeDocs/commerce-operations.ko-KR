@@ -3,13 +3,13 @@ title: 'ACSD-62872: 예약 업데이트가 잘못 확인됨'
 description: ACSD-62872 패치를 적용하여 예약된 업데이트의 유효성이 잘못 검사되는 고유한 속성 유효성 검사로 Adobe Commerce 문제를 해결합니다.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872: 예약 업데이트가 잘못 확인됨
 
@@ -23,7 +23,11 @@ ACSD-62872 패치는 예약된 업데이트의 유효성이 잘못 검사되는 
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
+* Adobe Commerce(모든 배포 방법) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>이 패치는 1.1.58 QPT 릴리스에서 버전 2.4.4 - 2.4.6-p8에 대해 더 이상 사용되지 않는 것으로 표시됩니다.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ ACSD-62872 패치는 예약된 업데이트의 유효성이 잘못 검사되는 
 1. **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**(으)로 이동합니다.
 1. 새 카테고리를 만듭니다.
 1. 같은 범주에서 **[!UICONTROL Scheduled Updates]** 섹션으로 이동합니다.
-1. 향후 언제든지 이 범주에 대한 새 업데이트를 설정하십시오.
+1. 나중에 언제든지 이 범주에 대한 새 업데이트를 설정하십시오.
 1. 예약된 업데이트를 시작하기 전에 범주에 대해 만든 예약 업데이트를 편집해 보십시오.
 
 <u>예상 결과</u>:
@@ -55,8 +59,7 @@ ACSD-62872 패치는 예약된 업데이트의 유효성이 잘못 검사되는 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
-
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
