@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: ec51c6e7ac5dc5a7cbf4f8b1db048da265741196
+source-git-commit: 3864c393e06eca769d29e20da62cd19dff1cbd7a
 workflow-type: tm+mt
-source-wordcount: '6939'
+source-wordcount: '6952'
 ht-degree: 0%
 
 ---
@@ -729,6 +729,7 @@ ht-degree: 0%
          - [ACSD-63283: Adobe Commerce에서 [!UICONTROL Gift Registry] 전자 메일 및 주문 배치 문제를 해결하고 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: [!UICONTROL Purchase Order] 메서드를 사용하여 수행한 B2B 주문에 대해 sales_order_tax_item 테이블이 완전히 업데이트되지 않았습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182: 번들 제품 복제 후 제품을 저장하는 도중 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-48570: URL의 스토어 코드에서 관리자 재설정 암호 링크 문제 해결](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: 구성 가능한 제품에 대한 특별 가격이 상점 앞에 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: empty [!DNL GraphQL] 요청을 제출할 때 &quot;구문 오류: 예기치 않은 &lt; EOF >&quot; 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
