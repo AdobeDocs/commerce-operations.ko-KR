@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.5의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,19 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.5-p11
+
+Adobe Commerce 2.4.5-p11 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)을 참조하십시오.
+
+{{b2b-patches}}
+
+### 강조 표시
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
 
 ## 2.4.5-p10
 
@@ -24,11 +36,11 @@ Adobe Commerce 2.4.5-p10 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ### 이 릴리스에 포함된 핫픽스
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.5-p9
 
@@ -38,11 +50,11 @@ Adobe Commerce 2.4.5-p9 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### 이 릴리스에 포함된 핫픽스
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.5-p8
 
@@ -52,15 +64,15 @@ Adobe Commerce 2.4.5-p8 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 ### CVE-2024-34102용 핫픽스 적용
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### 플랫폼 업그레이드
 
-* **MariaDB 10.5 지원**. 이 패치 릴리스는 MariaDB 버전 10.5와의 호환성을 제공합니다. Adobe CommerceAdobe 는 여전히 MariaDB 버전 10.4와 호환되지만, MariaDB 10.4 유지 보수는 2024년 6월 18일에 종료되므로 Adobe Commerce 2.4.5-p8 및 예정된 모든 2.4.5 보안 전용 패치 릴리스를 MariaDB 버전 10.5와만 사용하는 것이 좋습니다. <!--AC-11530-->
+* **MariaDB 10.5 지원**. 이 패치 릴리스는 MariaDB 버전 10.5와의 호환성을 제공합니다. Adobe Commerce은 여전히 MariaDB 버전 10.4와 호환되지만, MariaDB 10.4 유지 보수는 2024년 6월 18일에 종료되므로 Adobe은 Adobe Commerce 2.4.5-p8 및 예정된 모든 2.4.5 보안 전용 패치 릴리스를 MariaDB 버전 10.5와만 사용할 것을 권장합니다. <!--AC-11530-->
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.5-p7
 
@@ -120,7 +132,7 @@ Adobe Commerce 2.4.5-p4 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p3 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [보안 게시판 Adobe](https://helpx.adobe.com/security/products/magento/apsb23-35.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/security/products/magento/apsb23-35.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 

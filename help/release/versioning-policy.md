@@ -2,7 +2,7 @@
 title: 릴리스 정책
 description: 부, 패치, 보안 패치, 기능, 핫픽스, 개별 패치 및 사용자 정의 패치를 포함한 다양한 유형의 Adobe Commerce 릴리스에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -46,17 +46,17 @@ Adobe Commerce에서는 개별 모듈 수준(예: `magento/framework 101.1.1`)�
 
 ### 보안 패치 릴리스
 
-{{$include /help/_includes/security-patch-release-overview.md}}
+{{$include /help/_includes/release-notes/security-patch-overview.md}}
 
 ## BETA 패치 릴리스
 
-Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객 및 Adobe 파트너가 공개적으로 사용할 수 있습니다. 이를 통해 일반 공급 전에 코드 및 영향을 받는 구성 요소를 검토할 수 있습니다.
+Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객과 Adobe 파트너가 공개적으로 사용할 수 있습니다. 이를 통해 일반 공급 전에 코드 및 영향을 받는 구성 요소를 검토할 수 있습니다.
 
-Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 Beta 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 지원(Adobe 지원 서비스 또는 기타 수단을 통해)할 의무가 없습니다. 고객은 Beta 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의하는 것이 좋습니다. 따라서 Beta 릴리스의 모든 사용은 전적으로 고객 자신의 책임입니다.
+Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 Beta 릴리스를 유지 관리, 수정, 업데이트, 변경, 수정 또는 지원(Adobe 지원 서비스 또는 다른 방법을 통해)할 의무가 없습니다. 고객은 Beta 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의하는 것이 좋습니다. 따라서 Beta 릴리스의 모든 사용은 전적으로 고객 자신의 책임입니다.
 
 ## 기능, 클라우드 인프라 및 확장성 릴리스
 
-클라우드 인프라 및 기능 릴리스에는 패치 릴리스와 별도로 독립 서비스로 제공되는 새로운 기능 및 기능 업데이트가 포함되어 있습니다. 클라우드 호스팅 서비스 및 인프라, B2B, SaaS 제품(카탈로그 서비스, 데이터 연결, 제품 Recommendations 및 라이브 검색), 확장성 기술(API Mesh, Integration Starter Kit 및 Eventing) 업데이트가 여기에 해당합니다.
+클라우드 인프라 및 기능 릴리스에는 패치 릴리스와 별도로 독립 서비스로 제공되는 새로운 기능 및 기능 업데이트가 포함되어 있습니다. 클라우드 호스팅 서비스 및 인프라, B2B, SaaS 제품(카탈로그 서비스, 데이터 연결, 제품 추천 및 라이브 검색), 확장성 기술(API Mesh, Integration Starter Kit, Eventing) 업데이트 등이 그 예입니다.
 
 ## 핫픽스
 

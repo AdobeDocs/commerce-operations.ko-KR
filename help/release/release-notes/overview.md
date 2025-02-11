@@ -2,9 +2,9 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '275'
 ht-degree: 3%
 
 ---
@@ -48,22 +48,19 @@ ht-degree: 3%
         <p>혁신적인 Commerce 머천다이징 서비스의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">카탈로그 서비스</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">채널 관리자(Walmart Marketplace 판매)</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform 커넥터</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">라이브 검색</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">결제 서비스</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">제품 Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">제품 추천</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">서비스 커넥터</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">주문 처리 저장</a></li>
           </ul>
         </td>
       <td><strong>도구</strong>
         <p>Adobe Commerce 소프트웨어를 더 쉽게 찾고 사용할 수 있도록 설계된 도구의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">App Builder 개발자 Adobe을 위한 API Mesh</a></li>
-            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe Commerce에 대한 이벤트 Adobe I/O</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Adobe App Builder 개발자용 API Mesh</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe Commerce용 Adobe I/O Events</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">관리자 UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">품질 패치 도구</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">사이트 전체 분석 도구</a></li>

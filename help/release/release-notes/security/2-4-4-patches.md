@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.4의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1535'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,19 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.4-p12
+
+Adobe Commerce 2.4.4-p12 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)을 참조하십시오.
+
+{{b2b-patches}}
+
+### 강조 표시
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
 
 ## 2.4.4-p11
 
@@ -24,7 +36,7 @@ Adobe Commerce 2.4.4-p11 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ## 2.4.4-p10
 
@@ -34,11 +46,11 @@ Adobe Commerce 2.4.4-p10 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### 이 릴리스에 포함된 핫픽스
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.4-p9
 
@@ -48,15 +60,15 @@ Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별�
 
 ### CVE-2024-34102용 핫픽스 적용
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### 플랫폼 업그레이드
 
-* **MariaDB 10.5 지원**. 이 패치 릴리스는 MariaDB 버전 10.5와의 호환성을 제공합니다. Adobe CommerceAdobe 는 여전히 MariaDB 버전 10.4와 호환되지만, MariaDB 10.4 유지 보수는 2024년 6월 18일에 종료되므로 Adobe Commerce 2.4.4-p9 및 예정된 모든 2.4.4 보안 전용 패치 릴리스를 MariaDB 버전 10.5와만 사용하는 것이 좋습니다. <!--AC-11530-->
+* **MariaDB 10.5 지원**. 이 패치 릴리스는 MariaDB 버전 10.5와의 호환성을 제공합니다. Adobe Commerce은 여전히 MariaDB 버전 10.4와 호환되지만, MariaDB 10.4 유지 보수는 2024년 6월 18일에 종료되므로 Adobe에서는 Adobe Commerce 2.4.4-p9 및 예정된 모든 2.4.4 보안 전용 패치 릴리스를 MariaDB 버전 10.5와만 사용할 것을 권장합니다. <!--AC-11530-->
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
@@ -132,9 +144,9 @@ Adobe Commerce 2.4.4-p4 보안 릴리스는 이전 릴리스에서 식별된 취
 
 이 릴리스에 대한 플랫폼 업그레이드는 최신 보안 모범 사례를 통해 규정 준수를 개선합니다.
 
-* **Varnish 캐시 7.3 지원**. 이 릴리스는 최신 버전의 Varnish Cache 7.3과 호환됩니다. Adobe 6.0.x 및 7u.2.x 버전과의 호환성은 유지되지만, Adobe Commerce 2.4.4-p4는 Varnish Cache 버전 7.3 또는 버전 6.0 LTS와만 사용하는 것이 좋습니다.
+* **Varnish 캐시 7.3 지원**. 이 릴리스는 최신 버전의 Varnish Cache 7.3과 호환됩니다. 6.0.x 및 7u.2.x 버전과의 호환성은 유지되지만, Adobe에서는 Adobe Commerce 2.4.4-p4를 Varnish Cache 버전 7.3 또는 버전 6.0 LTS와만 사용하는 것이 좋습니다.
 
-* **RabbitMQ 3.11 지원**. 이 릴리스는 RabbitMQ 3.11의 최신 버전과 호환됩니다. RabbitMQ 3.9와의 호환성은 2023년 8월까지 지원되지만, Adobe은 RabbitMQ 3.11에서만 Adobe Commerce 2.4.4-p4를 사용하는 것을 권장합니다.
+* **RabbitMQ 3.11 지원**. 이 릴리스는 RabbitMQ 3.11의 최신 버전과 호환됩니다. RabbitMQ 3.9와의 호환성은 2023년 8월까지 지원되지만, Adobe에서는 RabbitMQ 3.11에서만 Adobe Commerce 2.4.4-p4를 사용하는 것이 좋습니다.
 
 * **JavaScript 라이브러리**. 오래된 JavaScript 라이브러리가 `moment.js` 라이브러리(v2.29.4), `jQuery UI` 라이브러리(v1.13.2) 및 `jQuery` 유효성 검사 플러그인 라이브러리(v1.19.5)를 비롯한 최신 부 또는 패치 버전으로 업그레이드되었습니다.
 
@@ -158,7 +170,7 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 Adobe Commerce 2.4.4-p1 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 준수하도록 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [보안 게시판 Adobe](https://helpx.adobe.com/security/products/magento/apsb22-38.html)를 참조하십시오.t
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/security/products/magento/apsb22-38.html)을 참조하십시오.t
 
 ### `AC-3022.patch`을(를) 적용하여 DHL을 배송 운송업체로 계속 제공
 
