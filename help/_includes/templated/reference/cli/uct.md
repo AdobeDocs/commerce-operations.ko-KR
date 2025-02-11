@@ -1,8 +1,8 @@
 ---
-source-git-commit: 31de6be4eb57fa396801c9ce4f3ed65d77026190
+source-git-commit: 5e907705e1fc20e44caedc81153e0ad118de5b42
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 0%
+source-wordcount: '929'
+ht-degree: 1%
 
 ---
 # bin/uct
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 
 <!-- The template to render with above values -->
-**버전**: 3.0.20
+**버전**: 3.0.21
 
 이 참조에는 `bin/uct` 명령줄 도구를 통해 사용할 수 있는 9개의 명령이 포함되어 있습니다.
 Adobe Commerce에서 `bin/uct list` 명령을 사용하여 초기 목록이 자동으로 생성됩니다.
@@ -77,7 +77,7 @@ ANSI 출력 강제(또는 비활성화 —no-ansi)
 ## `_complete`
 
 ```bash
-bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
 셸 완료 제안을 제공하는 내부 명령
@@ -88,7 +88,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 #### `--shell`, `-s`
 
-셸 유형(&quot;bash&quot;)
+껍질 유형(&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - 값 필요
 
@@ -105,9 +105,15 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 - 값 필요
 
+#### `--api-version`, `-a`
+
+완료 스크립트의 API 버전
+
+- 값 필요
+
 #### `--symfony`, `-S`
 
-완료 스크립트의 버전
+더 이상 사용되지 않음
 
 - 값 필요
 
@@ -122,18 +128,18 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ```
 The completion command dumps the shell completion script required
-to use shell autocompletion (currently only bash completion is supported).
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
 Static installation
 -------------------
 
 Dump the script to a global completion file and restart your shell:
 
-    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+    uct/bin/uct completion  | sudo tee /etc/bash_completion.d/uct
 
 Or dump the script to a local file and source it:
 
-    uct/bin/uct completion bash > completion.sh
+    uct/bin/uct completion  > completion.sh
 
     # source the file whenever you use the project
     source completion.sh
@@ -146,7 +152,7 @@ Dynamic installation
 
 Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
-    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion )"
 ```
 
 ### 인수
@@ -331,7 +337,7 @@ Adobe Commerce vanilla 설치 디렉토리.
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
-선택한 두 버전 간의 Adobe Commerce DB 스키마 차이점을 나열할 수 있습니다. 사용 가능한 버전: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-베타1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-베타2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-베타3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-Beta1
+선택한 두 버전 간의 Adobe Commerce DB 스키마 차이점을 나열할 수 있습니다. 사용 가능한 버전: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-베타1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-베타2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-베타3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-Beta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-베타2
 
 ### 인수
 
@@ -415,7 +421,7 @@ Adobe Commerce 설치 디렉토리.
 
 #### `--coming-version`, `-c`
 
-Target Adobe Commerce 버전. 생략하면 최신 릴리스된 안정적인 버전의 Adobe Commerce이 사용됩니다. 사용 가능한 Adobe Commerce 버전: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.8-Beta1
+Target Adobe Commerce 버전. 생략하면 최신 릴리스된 안정적인 버전의 Adobe Commerce이 사용됩니다. 사용 가능한 Adobe Commerce 버전: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.8-beta1 \| 2.4.8-베타2
 
 - 값을 허용합니다.
 
