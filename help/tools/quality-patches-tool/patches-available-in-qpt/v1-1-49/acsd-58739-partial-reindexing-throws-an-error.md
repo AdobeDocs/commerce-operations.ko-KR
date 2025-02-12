@@ -4,7 +4,7 @@ description: ACSD-55241 패치를 적용하여 부분 리인덱싱에서 오류�
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ACSD-58739 패치는 부분 리인덱싱에서 오류가 발생하는 문제를 
 
 <u>재현 단계</u>:
 
-1. `app/etc/ev.php`에 슬레이브 연결 설정을 추가합니다.
+1. `app/etc/env.php`에 슬레이브 연결 설정을 추가합니다.
 1. 최대 10000개의 제품을 생성하고 다음 명령을 실행합니다.
 
    ```
