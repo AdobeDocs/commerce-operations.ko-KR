@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
+source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '873'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Adobe Commerce 베타 프로그램은 판매자가 프리릴리스 기능과 코
 
 >[!IMPORTANT]
 >
->Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 지원(Adobe 지원 서비스 등을 통해)할 의무가 없습니다. 고객은 베타 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의하는 것이 좋습니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
+>Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 등을 통해)할 의무가 없습니다. 고객은 베타 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의하는 것이 좋습니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
 
 ## 참여의 이점
 
-Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 피드백을 제공하고 제품 개발을 구체화하며 일반 출시 전에 새로운 기능을 채택할 준비를 할 수 있습니다.
+Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 피드백을 제공하고 제품 개발을 구체화하며 일반 출시 전에 새로운 기능을 채택할 수 있습니다.
 
 ## 최신 Beta 프로그램
 
@@ -53,22 +53,6 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다. Beta에 참여하려면 [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)에 전자 메일 요청을 보내십시오.
 
 Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta)를 참조하세요.
-
-### Commerce(Private Beta)용 Experience Manager Assets 통합
-
-Commerce용 Experience Manager Assets 통합을 사용하면 적은 운영 노력으로 또는 아무런 작업 없이 Experience Manager Assets에서 Adobe Commerce으로 대량의 제품 이미지를 효율적으로 관리하고 전달할 수 있습니다.
-
-주요 기능:
-
-- 플러그 앤 플레이 통합 - 즉시 사용할 수 있는 Experience Manager Assets과 Adobe Commerce 간의 통합 Adobe을 제공하여 판매자가 운영 비용을 절감하고 효율성을 향상시키며 가장 중요한 사항에 집중할 수 있도록 합니다.
-
-- 규모에 맞게 제품 이미지 개인화 Experience Manager Assets을 사용하여 개인화된 Commerce 경험을 위한 수백만 개의 제품 변형을 손쉽게 UI 기반 편집 도구, Adobe Firefly을 사용하여 콘텐츠 생성 및 할당된 에셋 워크플로를 통해 생성하여 브랜드 일관성을 확보할 수 있습니다. 자산에 만족하면 Experience Manager Assets 통합을 사용하여 Commerce 상점 전면으로 자산을 원활하게 전달하십시오.
-
-- 손쉬운 온보딩 - 구성 가능한 동기화 프로세스를 통해 판매자 온보딩을 간소화하여 Experience Manager Assets 저장소와 Commerce 카탈로그 간에 전체 동기화를 수행할 수 있습니다.
-
-- 유연한 일치 전략 - 이 통합에는 AEM Assets과 Commerce 간에 이미지를 동기화하는 제품 SKU를 기반으로 하는 기본 에셋 일치 알고리즘이 포함되어 있으며 Adobe Developer App Builder을 사용하여 확장할 수 있습니다. 솔루션 파트너와 협력하여 모든 에셋 관리 저장소 구조를 수용하도록 통합 위에 사용자 지정 에셋 일치 전략을 수립합니다.
-
-Beta에 참여하려면 [Shaun McCran](mailto:mccran@adobe.com)에게 전자 메일 요청을 보내세요.
 
 ### IBM Sterling Order Management 시스템 통합(Private Beta)
 
