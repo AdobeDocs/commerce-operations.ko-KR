@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
+source-git-commit: fcff1ac0ed1b36952adb54098154fd039c7013a4
 workflow-type: tm+mt
-source-wordcount: '6990'
+source-wordcount: '6994'
 ht-degree: 0%
 
 ---
@@ -735,6 +735,8 @@ ht-degree: 0%
          - [ACSD-63325: empty [!DNL GraphQL] 요청을 제출할 때 &quot;구문 오류: 예기치 않은 &lt; EOF >&quot; 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: [!UICONTROL Add to Order by SKU]에서 [!UICONTROL Delete] 아이콘을 클릭해도 SKU가 제거되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: REST API를 사용하여 제품을 만들 때 날짜 및 시간 필드의 기본값이 설정되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+      - v1.1.59 {#v1-1-59}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
