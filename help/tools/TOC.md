@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: fcff1ac0ed1b36952adb54098154fd039c7013a4
+source-git-commit: 92d2edd72f19e0b70f6ed7ffa2f19714ae02c523
 workflow-type: tm+mt
-source-wordcount: '6994'
+source-wordcount: '7005'
 ht-degree: 0%
 
 ---
@@ -407,7 +407,7 @@ ht-degree: 0%
          - [ACSD-51471: 관리자가 번들 제품에 대해 예약된 업데이트를 저장할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
          - [ACSD-51120: GraphQL 블록이 포함된 CMS CMS 페이지에 대한 GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환하는 도중 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
-         - [ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 [!UICONTROL Ordered](으)로 잘못 설정됨](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
+         - [ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 [!UICONTROL Ordered]&#x200B;(으)로 잘못 설정됨](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: 드롭다운 유형의 사용자 지정 특성별로 카탈로그 페이지를 정렬할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
          - [ACSD-50368: 고객이 비동기 REST API 또는 비동기 벌크 REST API를 통해 만든 경우 Customers group_id가 무시됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50368-customers-group-id-ignored-when-a-customer-is-created-via-async-rest-api.md)
          - [ACSD-50949: 고급 검색의 가격 필터가 SKU 필터와 함께 사용할 때 적절한 결과를 반환하지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50949-price-filter-in-advanced-search-does-not-return-proper-results.md)
@@ -737,6 +737,7 @@ ht-degree: 0%
          - [ACSD-63329: REST API를 사용하여 제품을 만들 때 날짜 및 시간 필드의 기본값이 설정되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
       - v1.1.59 {#v1-1-59}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
+         - [ACSD-63870: 회사 상태 변경 중에 고객이 제대로 로그아웃되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
