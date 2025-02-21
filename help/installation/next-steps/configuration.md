@@ -3,9 +3,9 @@ title: 애플리케이션 구성
 description: Adobe Commerce 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,14 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 * [스택 교환](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` 매뉴얼 페이지](https://linuxconfig.org/logrotate-8-manual-page)
 
+>[!AVAILABILITY]
+>
+>다음 가용성 정보는 클라우드 인프라 프로젝트의 Adobe Commerce에 적용됩니다.
+>
+>* 스타터 환경에 로그 회전이 없습니다.
+>
+>* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
+
 ### 다양한 서비스가 통신할 수 있도록 iptables 규칙 설정
 
 서버가 하나이든 많든 간에 서비스가 통신할 수 있도록 하려면 방화벽에서 포트를 열어야 합니다. 예를 들어 Adobe Commerce에서 Solr 검색 엔진을 사용하는 경우 웹 서버와 통신하도록 설정해야 합니다. 여러 웹 노드가 있는 경우 서로 통신할 수 있도록 활성화해야 합니다.
@@ -86,7 +94,7 @@ Adobe Commerce에는 이메일 서버가 필요합니다. 특정 서버는 권�
 
 ### 향상된 성능을 위해 검색 엔진 세분화:
 
-2.4.0부터 모든 설치에 Elasticsearch 또는 OpenSearch가 필요합니다.
+Elasticsearch 또는 OpenSearch는 2.4.0부터 모든 설치에 필요합니다.
 
 * [검색 엔진 설치 및 구성](../../configuration/search/overview-search.md)
 
