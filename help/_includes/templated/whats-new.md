@@ -1,7 +1,7 @@
 ---
-source-git-commit: 989bcdcb4bbd8f880a3e2c8add280a072998afd8
+source-git-commit: 9c2e080e25fd2919b5f178e5b73ce84a04caca21
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 2월 21일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스</a>에서 ACSD-64112 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">자세한 설명을 추가했습니다.</p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025년 2월 20일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스</a>에서 ACSD-63454 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">자세한 설명을 추가했습니다.</p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025년 2월 19일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스의 ACSD-63870 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 2월 14일
 
