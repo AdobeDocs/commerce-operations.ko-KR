@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 24cce88e5daccd8ad50e01b869f2682722cb8052
+source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
 workflow-type: tm+mt
-source-wordcount: '24820'
+source-wordcount: '25023'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,15 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323**(Adobe Commerce >=2.4.7 &lt;2.4.8) - 범주에 제품을 추가할 때 **[!UICONTROL Select All]** 옵션이 작동하지 않는 문제를 해결했습니다. 또한 팝업 그리드를 통해 카테고리에 제품을 추가할 때 페이지 매김 및 레코드 수 레이블이 올바르게 작동하는지 확인합니다.
+* **ACSD-63992**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 쿠폰이 포함된 장바구니 가격 규칙과 배송 방법을 기반으로 한 조건이 관리 UI를 통해 올바르게 적용되지 않는 문제를 해결했습니다.
+* **ACSD-64111**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - [!DNL Page Builder]에서 제품 구성 요소에 대한 중첩 조건을 설정할 때 오류가 발생하는 문제를 수정합니다.
+* **ACSD-64137**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 우편번호별 픽업 위치 검색이 네덜란드어 현지화에 대해 제대로 작동하지 않는 문제를 해결했습니다.
+* **ACSD-64149**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 날짜 중 하나만 편집할 때 날짜 범위 조건이 있는 고객 세그먼트를 저장할 수 있는 문제를 수정합니다.
+* 업데이트된 버전: **MDVA-12304**, **ACSD-45049**, **MDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-52133**, **ACSD-47657**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-55628**, **ACSD-45049**, **ACSD-63242**
 
 ## v1.1.59 {#v1-1-59}
 
@@ -83,7 +92,7 @@ ht-degree: 0%
 * **ACSD-62971**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - **quantity** 열에서 숫자가 아닌 값으로 재고 소스를 가져오면 **quantity**&#x200B;가 *0*(으)로 설정되는 문제가 해결되었습니다.
 * **ACSD-62872**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 일정 업데이트의 유효성이 잘못 검사되는 고유한 특성 유효성 검사 문제를 해결합니다.
 * **ACSD-62755**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - [!DNL TinyMCE] 7에서 글꼴 크기와 글꼴을 편집기 초기화 설정 내에 구체적으로 추가해야 하는 문제를 수정합니다.
-* **ACSD-62670**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - [!UICONTROL Products Ordered] 보고서를 [!DNL CSV](으)로 내보내고 [!DNL XML]에서 오류가 반환되는 문제를 해결했습니다.
+* **ACSD-62670**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - [!UICONTROL Products Ordered] 보고서를 [!DNL CSV]&#x200B;(으)로 내보내고 [!DNL XML]에서 오류가 반환되는 문제를 해결했습니다.
 * **ACSD-62577**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 쿼리 및 테이블 인덱스를 최적화하여 상점 검색 쿼리의 성능이 느린 문제를 해결합니다.
 * **ACSD-62475**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 장바구니에서 [!UICONTROL Gift Card] 제품이 잘못 병합되는 문제를 해결했습니다.
 * **ACSD-62428**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - [!DNL SKU]이(가) 검색 가능한 특성으로 설정되지 않은 경우 `is_out_of_stock`이(가) 카탈로그 검색 색인에서 잘못된 값으로 설정되는 문제를 해결합니다.
@@ -392,7 +401,7 @@ ht-degree: 0%
 ## v1.1.35 {#v1-1-35}
 
 * **ACSD-51899**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.7) - 체크아웃 배송 단계의 기본 배송 주소가 이전에 선택한 매장 픽업 주소로 자동 채워지는 문제를 해결합니다.
-* **ACSD-52041**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 오류 메시지: *[오류] [!DNL Page Builder]이(가) 잠금을 해제하지 않고 5초 동안 렌더링되는 문제를 해결했습니다.[!DNL Page Builder](으)로 편집한 콘텐츠를 저장할 때*&#x200B;이(가) Chrome 브라우저에 표시됩니다.
+* **ACSD-52041**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 오류 메시지: *[오류] [!DNL Page Builder]이(가) 잠금을 해제하지 않고 5초 동안 렌더링되는 문제를 해결했습니다.[!DNL Page Builder]&#x200B;(으)로 편집한 콘텐츠를 저장할 때*&#x200B;이(가) Chrome 브라우저에 표시됩니다.
 * **ACSD-52095**(Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.6) - 제품 내보내기 후 CSV 파일에서 `manage_stock` 값이 0으로 잘못 설정되는 문제가 해결되었습니다.
 * **ACSD-51358**(Adobe Commerce >=2.4.5 &lt;2.4.7) - 종료 날짜 없이 예약된 업데이트를 제거하면 동일한 엔터티에 대해 다른 예약된 업데이트가 제거되는 문제가 해결됩니다.
 * **ACSD-48070**(Adobe Commerce >=2.3.7 &lt;2.4.7) - 예약된 업데이트를 편집하면 예외가 트리거되는 문제가 해결됩니다.
