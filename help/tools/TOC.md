@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: d735bb2269331ae9768afbca384a85e03d727403
+source-git-commit: 4e4ae0e4c0d23b98a44ffcf1c9f4605d67e94714
 workflow-type: tm+mt
-source-wordcount: '7033'
+source-wordcount: '7043'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112: MAGE_INDEXER_THREADS_COUNT가 설정되면 indexer_update_all_views cron 실행이 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454: 드롭다운 및 다중 선택 속성의 기본값이 데이터베이스에 제대로 저장되지 않았습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870: 회사 상태 변경 중에 고객이 제대로 로그아웃되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-63574:  [!DNL Page Builder] 을(를) 통해 차단할 [!UICONTROL Bundle Product] 목록을 추가하면 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
