@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9c2e080e25fd2919b5f178e5b73ce84a04caca21
+source-git-commit: 15bf05143a3764db36a15ea7470cbb3dd29a92f3
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 1%
+source-wordcount: '1020'
+ht-degree: 2%
 
 ---
 # 새로운 기능 템플릿
@@ -10,6 +10,58 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 2월 28일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스의 ACSD-64212 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/60f62d00afe94c1e9874c623d6703162c35791c2">60f62d</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스의 ACSD-64113 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8b71fc097d50209786beda72cfc5a7eae6a0449f">8b71fc</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025년 2월 27일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스의 ACSD-63574 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7477a28c5db13e5c2daabea4f36dc9de784581a5">7477a2</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p>QPT 1.1.59 릴리스의 ACSD-63793 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs">자세한 설명을 추가했습니다.</a></p>
+</td>
+      <td>새 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dae40520a0b5584a0627ddccaeaa7faed37e42bd">dae405</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 2월 21일
 
@@ -483,70 +535,6 @@ ht-degree: 1%
 </td>
       <td>새 주제</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a0a2b5ad10c5f38603963af036fb280988df612d">a0a2b5</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 1월 3일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.56 릴리스의 ACSD-62952 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d612d7f4a57824aae06e8dcff86c4534e451f68">5d612d</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.56 릴리스의 ACSD-62872 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/374deb66f7fb8081318a966f78fe3b1bd4ced2a0">374deb</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.57 릴리스의 ACSD-62758 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6582b9c90f84d99335534f25d38aa2bff9d02be">f6582b</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.57 릴리스의 ACSD-62965 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/427969b0e983065cbaad20d7b960a023ae238299">427969</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>QPT 1.1.57 릴리스의 ACSD-58325 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9a46f93eab7e2cb3da76941a6d8a2ef636fd8696">9a46f9</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 1월 2일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.57 릴리스의 ACSD-63326 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de06ef0133bf57169c80c82ca4bb4cb09671c63b">de06ef</a>(커밋)</td>
     </tr>
   </tbody>
 </table>
