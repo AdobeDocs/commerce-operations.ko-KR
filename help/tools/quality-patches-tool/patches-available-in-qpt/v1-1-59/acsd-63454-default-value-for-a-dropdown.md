@@ -3,13 +3,13 @@ title: 'ACSD-63454: 드롭다운 및 다중 선택 속성의 기본값이 데이
 description: ACSD-63454 패치를 적용하여 드롭다운 및 다중 선택 속성에 대한 기본값이 데이터베이스에 제대로 저장되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: [!UICONTROL Dropdown] 및 [!UICONTROL Multiple Select] 특성에 대한 기본값이 데이터베이스에 제대로 저장되지 않았습니다.
 
@@ -35,19 +35,19 @@ ACSD-63454 패치는 [!UICONTROL Dropdown] 및 [!UICONTROL Multiple Select] 특�
 
 <u>재현 단계</u>:
 
-1. 백엔드에 로그인하고 **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**(으)로 이동합니다.
+1. 백엔드에 로그인하고 **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**(으)로 이동합니다.
 1. **[!UICONTROL Add New Attribute]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Properties]** 탭에서 다음을 설정합니다.
-   * [!UICONTROL Default Label] = 테스트
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]: **[!UICONTROL Is Default]**&#x200B;을(를) 선택하지 않고 2개의 옵션을 추가하십시오.
+   * **[!UICONTROL Default Label]**: *테스트*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**: **[!UICONTROL Is Default]**&#x200B;을(를) 선택하지 않고 두 옵션을 추가하십시오.
 1. **[!UICONTROL Save Attribute]**&#x200B;을(를) 클릭합니다.
-1. *default_value* 열이 비어 있는지 데이터베이스를 확인합니다.
+1. 데이터베이스에서 `default_value` 열이 비어 있는지 확인합니다.
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. 돌아가서 두 옵션 중 하나를 **[!UICONTROL Is Default]**(으)로 설정합니다.
-1. 이제 *default_value*&#x200B;에 선택한 옵션 ID가 포함되어 있는지 데이터베이스를 다시 확인하십시오.
+1. 이제 `default_value`에 선택한 옵션 ID가 포함되어 있는지 데이터베이스를 다시 확인하십시오.
 1. 뒤로 돌아가서 다른 옵션을 선택하여 기본 옵션을 변경합니다.
 
 <u>예상 결과</u>:
