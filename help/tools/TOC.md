@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: c01df7ef04c5e259d6bd015f8a3105c167b5c26f
+source-git-commit: f59d574087a4eaa33643d6de16e702a19a3606f9
 workflow-type: tm+mt
-source-wordcount: '7083'
+source-wordcount: '7094'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112: MAGE_INDEXER_THREADS_COUNT가 설정되면 indexer_update_all_views cron 실행이 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454: 드롭다운 및 다중 선택 속성의 기본값이 데이터베이스에 제대로 저장되지 않았습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870: 회사 상태 변경 중에 고객이 제대로 로그아웃되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-63469: 고정 금액 장바구니 할인이 여러 규칙과 함께 올바르게 적용되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
          - [ACSD-64113:  [!DNL Media Gallery]을(를) 통해 높이보다 작은 너비로 이미지를 업로드하는 동안 관리자 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
          - [ACSD-64212: 주문을 한 후  [!DNL GraphQL] 을(를) 통해 만든 고객 계정에 주문이 연결되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793: 가져오기 프로세스가 서로 다른 브라우저 탭에서 서로 간섭합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
