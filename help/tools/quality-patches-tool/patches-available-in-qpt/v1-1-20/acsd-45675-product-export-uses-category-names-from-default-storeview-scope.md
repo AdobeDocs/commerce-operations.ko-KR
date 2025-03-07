@@ -4,9 +4,9 @@ description: ACSD-45675 패치는 제품 내보내기가 기본 스토어 보기
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: b1f7739688a538b25b738efc337fa81f15a5bac8
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -60,14 +60,11 @@ ACSD-45675 패치는 제품 내보내기가 기본 스토어 보기 범위의 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* 품질 패치 도구 안내서의 Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tools] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: 품질 패치 도구 안내서의 [[!DNL Quality Patches Tools] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
-
-[!DNL QPT]에서 사용할 수 있는 다른 패치에 대한 정보는 품질 패치 도구 안내서의 [사용 가능한 패치 [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)를 참조하십시오.
+* [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).

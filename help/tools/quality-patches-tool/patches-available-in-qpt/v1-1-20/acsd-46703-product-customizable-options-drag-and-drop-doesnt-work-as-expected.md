@@ -4,9 +4,9 @@ description: 이 문서에서는 제품 사용자 지정 가능 옵션 끌어서
 feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: deb16062ed1e903655d49d8e835c2358377d63e3
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,6 @@ ACSD-46703 패치는 제품 사용자 지정 가능 옵션(드래그 앤 드롭)
 
 ## 관련 읽기
 
-품질 패치 도구에 대한 자세한 내용은 다음을 참조하십시오.
+[!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
-
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 품질 패치 도구 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
+* [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
