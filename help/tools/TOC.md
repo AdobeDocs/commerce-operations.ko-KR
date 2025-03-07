@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
+source-git-commit: 3f2996a41f14d830c8023256c78c9bb85b1718d2
 workflow-type: tm+mt
-source-wordcount: '7108'
+source-wordcount: '7202'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,19 @@ ht-degree: 0%
    - [경고](site-wide-analysis-tool/alerts.md)
    - [패치](site-wide-analysis-tool/patches.md)
 
+- Adobe Commerce {#managed-alerts-for-adobe-commerce}에서 관리되는 경고
+   - [Adobe Commerce에 대한 관리 경고: [!DNL Redis] 메모리 위험 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+   - [Adobe Commerce에 대한 관리 경고: 디스크 경고 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
+   - [Adobe Commerce에 대한 관리 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+   - [Adobe Commerce에 대한 관리 경고: 디스크 위험 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
+   - [Adobe Commerce에서 관리되는 경고: [!DNL Redis] 메모리 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+   - [Adobe Commerce에 대한 관리 경고: 메모리 경고 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
+   - [Adobe Commerce에 대한 관리 경고: CPU 중요 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+   - [Adobe Commerce에 대한 관리 경고: 메모리 위험 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
+   - [Adobe Commerce에 대한 관리 경고: [!DNL Apdex] 중요 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+   - [Adobe Commerce에서 관리되는 경고: [!DNL MariaDB] 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
+   - [Adobe Commerce에 대한 관리 경고: [!DNL Apdex] 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+   - [Adobe Commerce에 대한 관리 경고: CPU 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 품질 패치 도구 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
