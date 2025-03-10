@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음은 Adobe Commerce에서 테스트한 소프트웨어 종속성 및 서비스를 요약한 것입니다.
 
-클라우드 인프라의 Commerce 종속성에 몇 가지 차이점이 있습니다. Adobe Commerce on cloud infrastructure에 대한 서비스 버전 및 호환성 지원은 호스팅된 클라우드 환경에 테스트되고 배포된 서비스에 의해 결정되며, 경우에 따라 Adobe Commerce 온프레미스 배포에서 지원하는 버전과 다릅니다. 예를 들어 Elasticsearch 7.17은 온프레미스 배포의 경우 Commerce 2.4.4에서 지원되지만 OpenSearch 1.2는 클라우드 인프라의 경우 Commerce 2.4.4에서 지원됩니다.
+Commerce on Cloud의 종속성에 몇 가지 차이점이 있습니다. Adobe Commerce on Cloud에 대한 서비스 버전 및 호환성 지원은 호스팅된 클라우드 환경에 테스트되고 배포된 서비스에 의해 결정되며 경우에 따라 Adobe Commerce 온프레미스 배포에서 지원하는 버전과 다릅니다. 예를 들어 Elasticsearch 7.17은 온프레미스 배포의 경우 Commerce 2.4.4에서 지원되지만 OpenSearch 1은 클라우드의 경우 2.4.4 Adobe Commerce에서 지원됩니다.
 
 >[!NOTE]
 >
