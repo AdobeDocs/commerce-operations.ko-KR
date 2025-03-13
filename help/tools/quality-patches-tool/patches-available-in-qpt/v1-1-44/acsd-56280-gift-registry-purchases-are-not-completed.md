@@ -4,14 +4,18 @@ description: ACSD-56280 패치를 적용하여 선물 레지스트리 구입이 
 feature: Checkout
 role: Admin
 exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ab02be3396e68044e9356f89fba6b55aa880056f
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # ACSD-56280: 선물 등록 구매가 완료되지 않았습니다.
+
+>[!NOTE]
+>
+>이 패치는 [ACSD-63283](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)(으)로 대체되었습니다.
 
 ACSD-56280 패치는 선물 레지스트리 구입이 완료되지 않은 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-56280입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
