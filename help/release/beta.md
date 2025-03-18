@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
+source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,20 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 ## 최신 Beta 프로그램
 
 활성 베타 프로그램 목록은 다음 섹션을 참조하십시오.
+
+### Adobe Commerce Optimizer
+
+Adobe Commerce Optimizer은 고성능 상점으로 전자 상거래 경험을 향상시켜 유기적인 트래픽, 고객 참여 및 매출을 증대시킵니다.
+
+Adobe Commerce Optimizer을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+
+- 전체 상거래 스택을 다시 플랫폼화하지 않고 카탈로그를 확장하고 확장할 수 있습니다.
+- 모든 소스에서 카탈로그 데이터 수집.
+- 비즈니스 채널 및 정책을 정의합니다.
+- AI와 ML을 사용하여 개인화된 검색 및 권장 사항을 만듭니다.
+- 정확한 구현 및 문제 해결을 위해 동기화 상태 및 상점 이벤트 데이터를 포함한 중요한 제품 데이터 가용성을 확인합니다.
+
+Adobe Commerce Optimizer에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html). Adobe Commerce Optimizer 조기 액세스 프로그램에 참여하려면 [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)에 전자 메일 요청을 보내십시오.
 
 ### 라이브 검색에 대한 검색 기능 향상(공개 Beta)
 
