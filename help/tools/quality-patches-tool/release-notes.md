@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
+source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
 workflow-type: tm+mt
-source-wordcount: '25023'
+source-wordcount: '25431'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 카테고리 트리가 더 깊은 수준에 표시되고 앵커/비 앵커 관계를 반영하는 여러 문제를 수정합니다.
+* **ACP2E-3705**(Adobe Commerce >=2.4.7 &lt;2.4.8) - `MAGE_INDEXER_THREADS_COUNT`이(가) 설정되면 `indexer_update_all_views` cron 실행이 실패하는 문제를 수정합니다.
+* **ACSD-63883**(Adobe Commerce >=2.4.4 &lt;2.4.7-p4) - GraphQL 응답에서 구매요청 목록이 잘못된 `items_count`을(를) 반환하는 문제를 수정합니다.
+* **ACSD-63974**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 모든 레코드가 한 번에 표시되지 않고 페이지당 레코드 수로 제한된 레코드만 표시하는 상점의 구매요청 목록 그리드에 페이지 매김 기능을 추가하여 항목이 너무 많을 때 구매요청 목록 페이지를 로드하는 데 시간이 너무 오래 걸리는 문제를 해결했습니다.
+* **ACSD-64178**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 수천 개의 제품 특성이 있는 경우 특성 집합 편집 페이지가 느리게 로드되는 문제를 해결했습니다.
+* **ACSD-64209**(Adobe Commerce >=2.4.4 &lt;2.4.8) - cron 스케줄러가 상태가 **[!UICONTROL ordered]**&#x200B;인 견적을 제외하지 않고 모든 협상 가능한 견적을 검색하여 전자 메일 또는 전자 메일이 트리거되는 문제를 수정합니다.
+* **ACSD-64431**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 요청에 쿠폰 코드 정보가 포함된 `placeOrder` 돌연변이로 인해 더 이상 내부 오류가 발생하지 않고 대신 주문이 성공적으로 수행되었음을 알 수 있습니다.
+* **ACSD-64467**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 스토어 보기 수준에서 범주 설명을 저장한 후 WYSIWYG 편집기가 비어 있는 것으로 표시되는 문제를 해결합니다.
+* **ACSD-64546**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - UPS 배송 레이블을 만드는 동안 UI에 일반 오류 메시지가 발생하고 *문자열 변환에 대한 배열* 예외가 로그에 저장되는 문제를 해결하여 실제 오류가 UI에 표시되고 올바른 오류 메시지가 로그에 저장되도록 합니다.
+* **ACSD-64684**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 숫자 *천(1,000)*&#x200B;의 쉼표(천 구분 기호)로 인해 값이 *999*&#x200B;보다 큰 기프트 카드를 편집하고 저장할 때 유효성 검사 오류가 발생하는 문제를 해결합니다.
+* 업데이트된 버전: **ACSD-49392**, **ACSD-50368**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-57003**, **ACSD-62979**, **ACSD-64112**
+* 대체된 패치: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
+* 사용되지 않는 패치: **ACSD-46192**, **ACSD-52133**
 
 ## v1.1.60 {#v1-1-60}
 
