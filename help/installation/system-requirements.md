@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
+source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ _클라우드 인프라의 Commerce_ 안내서에서 [서비스 구성](https://
 
 성능상의 이유로 [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php)이 활성화되어 있는지 확인하는 것이 좋습니다. OPcache는 많은 PHP 배포에서 사용할 수 있습니다. `opcache` 확장은 기본적으로 클라우드 인프라의 Commerce에 설치됩니다.
 
-온-프레미스에 대해서는 PHP OPcache가 설치되어 있는지 확인합니다. [PHP 설정](prerequisites/php-settings.md)을 참조하십시오. 성능 설정에 대한 자세한 지침은 _성능 모범 사례_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings)에 대한 소프트웨어 권장 사항을 참조하십시오.
+온-프레미스에서 PHP OPcache가 설치되어 있는지 확인하려면 [PHP 설정](prerequisites/php-settings.md)을 참조하십시오. 성능 설정에 대한 자세한 지침은 _성능 모범 사례_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings)에 대한 소프트웨어 권장 사항을 참조하십시오.
 
 OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://www.php.net/manual/en/opcache.setup.php)를 참조하세요.
 
@@ -129,7 +129,9 @@ Commerce Marketplace 및 기타 소스에서 가져온 애플리케이션 및 �
 
 ### 운영 체제 (Linux x86-64)
 
-RedHat Enterprise Linux(RHEL), CentOS, Ubuntu, Debian 등과 같은 Linux 배포판 Microsoft Windows 및 macOS은 지원되지 않습니다.
+RedHat Enterprise Linux(RHEL), CentOS, Ubuntu, Debian 등과 같은 Linux 배포판
+
+Microsoft Windows 및 macOS은 **지원되지 않습니다**.
 
 Adobe Commerce의 일부 작업에는 다음 시스템 도구가 필요합니다.
 
