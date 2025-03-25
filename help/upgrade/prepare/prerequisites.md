@@ -2,9 +2,9 @@
 title: 전제 조건 완료
 description: 다음 전제 조건 단계를 완료하여 Adobe Commerce 프로젝트를 업그레이드하도록 준비합니다.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
+source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe Commerce에서 소프트웨어를 사용하려면 Elasticsearch 또는 Ope
 
 2.4부터 MySQL은 더 이상 지원되는 카탈로그 검색 엔진이 아닙니다. 업그레이드하기 전에 Elasticsearch 또는 OpenSearch를 설치하고 구성해야 합니다. 다음 리소스를 사용하여 이 프로세스를 안내합니다.
 
-* [설치 및 구성 Elasticsearch](../../configuration/search/overview-search.md)
+* [Elasticsearch 설치 및 구성](../../configuration/search/overview-search.md)
 * [Elasticsearch 설치](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 * 검색 엔진에서 작동하도록 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) 또는 [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 구성
 * [Elasticsearch을 사용하도록 Commerce 구성](../../configuration/search/configure-search-engine.md) 및 색인 재지정
@@ -68,7 +68,7 @@ Adobe Commerce에서 소프트웨어를 사용하려면 Elasticsearch 또는 Ope
 
 ### 검색 엔진
 
-2.4.0으로 업그레이드하기 전에 Elasticsearch 7.6 이상 또는 OpenSearch 1.2를 설치 및 구성해야 합니다. Adobe은 더 이상 Elasticsearch 2.x, 5.x 및 6.x를 지원하지 않습니다. _구성 가이드_&#x200B;의 [검색 엔진 구성](../../configuration/search/configure-search-engine.md)에서는 Elasticsearch을 지원되는 버전으로 업그레이드한 후 수행해야 하는 작업에 대해 설명합니다.
+2.4.0으로 업그레이드하기 전에 Elasticsearch 7.6 이상 또는 OpenSearch 1.2를 설치하고 구성해야 합니다. Adobe은 더 이상 Elasticsearch 2.x, 5.x 및 6.x를 지원하지 않습니다. _구성 가이드_&#x200B;의 [검색 엔진 구성](../../configuration/search/configure-search-engine.md)에서는 Elasticsearch을 지원되는 버전으로 업그레이드한 후 수행해야 하는 작업에 대해 설명합니다.
 
 프로덕션에 배포하기 전에 데이터 백업, 잠재적인 마이그레이션 문제 감지 및 업그레이드 테스트에 대한 전체 지침은 [Elasticsearch 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)를 참조하십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작해야 할 수도 있고 필요하지 않을 수도 있습니다.
 
@@ -84,19 +84,23 @@ OpenSearch는 Elasticsearch의 라이선스 변경에 따른 Elasticsearch 7.10.
 * 2.4.3-p2
 * 2.3.7-p3
 
-위에 나열된 Adobe Commerce 버전 또는 그 이상으로 업그레이드하는 경우에만 [Elasticsearch에서 OpenSearch로 마이그레이션](opensearch-migration.md)할 수 있습니다.
+위에 나열된(또는 이상) Adobe Commerce 버전으로 업그레이드하는 경우에만 [Elasticsearch에서 OpenSearch로 마이그레이션](opensearch-migration.md)할 수 있습니다.
 
 OpenSearch를 사용하려면 JDK 1.8 이상이 필요합니다. 설치된 JDK 버전을 확인하려면 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk)를 참조하십시오.
 
 [검색 엔진 구성](../../configuration/search/configure-search-engine.md)은(는) 검색 엔진을 변경한 후 수행해야 하는 작업을 설명합니다.
 
-#### 업그레이드 Elasticsearch
+#### Elasticsearch 업그레이드
 
-Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에서 도입되었습니다. 다음 지침은 7.x에서 8.x로 Elasticsearch을 업그레이드하는 예를 보여줍니다.
+Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니다. 다음 지침은 Elasticsearch을 7.x에서 8.x로 업그레이드하는 예를 보여줍니다.
+
+>[!NOTE]
+>
+>향후 2.4.8 릴리스에서는 Elasticsearch 8 모듈이 기본적으로 포함되어 있으므로 별도로 설치할 필요가 없으므로 이러한 단계가 필요하지 않습니다.
 
 1. Elasticsearch 7.x 서버를 8.x로 업그레이드하고 가 실행 중인지 확인합니다. [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)를 참조하세요.
 
-1. `elasticsearch.yml` 파일에 다음 구성을 추가하고 Elasticsearch 8.x 서비스를 다시 시작하여 `id_field_data` 필드를 사용하도록 설정하십시오.
+1. `elasticsearch.yml` 파일에 다음 구성을 추가하고 Elasticsearch 8.x 서비스를 다시 시작하여 `id_field_data` 필드를 사용하도록 설정합니다.
 
    ```yaml
    indices:
@@ -113,6 +117,28 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에서 도입되었습
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
+
+   `psr/http-message`에 대한 종속성 오류가 발생하면 다음 문제 해결 섹션을 확장하려면 클릭하십시오.
+
+   +++문제 해결
+
+   Elasticsearch 8, 특히 `psr/http-message`을(를) 설치하는 동안 종속성 충돌이 발생하면 다음 단계를 수행하여 해결할 수 있습니다.
+
+   1. 먼저 다른 종속성을 업데이트하지 않고 Elasticsearch 8 모듈이 필요합니다.
+
+      ```bash
+      composer require magento/module-elasticsearch-8 --no-update
+      ```
+
+   1. 그런 다음 Elasticsearch 8 모듈 및 `aws/aws-sdk-php` 패키지를 업데이트합니다.
+
+      ```bash
+      composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
+      ```
+
+   이 접근 방식은 PHP 8.3과 함께 2.4.7-p4에서 작동합니다. `aws/aws-sdk-php`에 `psr/http-message >= 2.0`이(가) 필요하기 때문에 문제가 발생하여 충돌이 발생할 수 있습니다. 위의 단계는 이러한 종속성 문제를 해결하는 데 도움이 됩니다.
+
++++
 
 1. 프로젝트 구성 요소를 업데이트합니다.
 
@@ -134,9 +160,9 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에서 도입되었습
    bin/magento cache:clean
    ```
 
-#### 다운그레이드 Elasticsearch
+#### Elasticsearch 다운그레이드
 
-실수로 서버의 Elasticsearch 버전을 업그레이드하거나 다른 이유로 다운그레이드해야 한다고 판단되는 경우 Adobe Commerce 프로젝트 종속성도 업데이트해야 합니다. 예를 들어 Elasticsearch 8.x에서 7.x로 다운그레이드하려면 다음을 수행합니다
+실수로 서버에서 Elasticsearch 버전을 업그레이드하거나 다른 이유로 다운그레이드해야 한다고 판단되는 경우 Adobe Commerce 프로젝트 종속성도 업데이트해야 합니다. 예를 들어 Elasticsearch 8.x에서 7.x로 다운그레이드하려면 다음을 수행합니다
 
 1. Elasticsearch 8.x 서버를 7.x로 다운그레이드하고 가 실행 중인지 확인합니다. [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)를 참조하세요.
 
@@ -178,7 +204,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에서 도입되었습
 
 열린 파일 제한(ulimit)을 설정하면 긴 쿼리 문자열의 재귀적 호출이 여러 번 실패하거나 `bin/magento setup:rollback` 명령을 사용하는 데 문제가 발생하는 것을 방지할 수 있습니다. 이 명령은 UNIX 셸마다 다릅니다. `ulimit` 명령에 대한 자세한 내용은 개별 환경을 참조하십시오.
 
-Adobe 열린 파일 [ulimit](https://ss64.com/bash/ulimit.html)을(를) `65536` 이상의 값으로 설정하는 것이 좋지만 필요한 경우 더 큰 값을 사용할 수 있습니다. 명령줄에 대한 ulimit을 설정하거나 사용자의 셸에 대한 영구 설정으로 지정할 수 있습니다.
+Adobe에서는 열린 파일 [ulimit](https://ss64.com/bash/ulimit.html)을(를) `65536` 이상의 값으로 설정하는 것이 좋지만 필요한 경우 더 큰 값을 사용할 수 있습니다. 명령줄에 대한 ulimit을 설정하거나 사용자의 셸에 대한 영구 설정으로 지정할 수 있습니다.
 
 명령줄에서 제한(ulimit)을 설정하려면 다음을 수행합니다.
 
