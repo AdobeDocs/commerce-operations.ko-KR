@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 4860a9f950849eb2735e02f6b51d1fce61cc3d1b
+source-git-commit: 5a3131a9cfcd2ba588c93de7be02941d4044e611
 workflow-type: tm+mt
-source-wordcount: '7223'
+source-wordcount: '7226'
 ht-degree: 0%
 
 ---
@@ -761,6 +761,7 @@ ht-degree: 0%
          - [ACSD-63793: 가져오기 프로세스가 서로 다른 브라우저 탭에서 서로 간섭합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574:  [!DNL Page Builder] 을(를) 통해 차단할 [!UICONTROL Bundle Product] 목록을 추가하면 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
       - v1.1.60 {#v1-1-60}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: [!UICONTROL Select All] 기능을 확인하고 제품 범주 팝업의 페이지 매김 및 레코드 수를 개선합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
