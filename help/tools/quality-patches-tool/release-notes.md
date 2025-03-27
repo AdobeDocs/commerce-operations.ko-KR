@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - `persistent_clear_expired` cron 작업이 실행될 때 cron 작업에서 만료된 영구 견적이 지워지지 않는 문제가 해결되었습니다.
+* **ACSD-63520**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 관리 패널의 **[!UICONTROL Configurations]**&#x200B;을(를) 통해 추가된 이미지가 최대 업로드 크기 제한을 준수하지 않는 문제를 해결했습니다.
+* **ACSD-64523**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 가져오기 프로세스(관리자 또는 API)를 통해 이름 없이 새 제품을 만들 수 있어 관리자 인터페이스가 손상되고 잘못된 제품이 발생하는 문제를 해결했습니다.
+* **ACSD-64532**(Adobe Commerce 및 Magento Open Source >=2.4.6-p2 &lt;2.4.8) - &quot;false&quot;로 설정된 ENV 변수가 부울 false 대신 문자열 &quot;false&quot;로 처리되는 문제를 해결했습니다.
+* **ACSD-64592**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 기본이 아닌 스토어의 기프트 카드 전자 메일의 클레임 링크가 기프트 카드 클레임을 항상 기본 웹 사이트로 리디렉션하는 문제를 해결했습니다.
+* **ACSD-65164**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6 &lt;2.4.8) - 선택한 확인란 사용자 지정 옵션 하나로 구성 가능한 제품을 다시 정렬할 때 *선택한 항목 옵션 중 일부를 현재 사용할 수 없는 문제를 해결합니다*.
+* **ACSD-64732**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 타사 컨트롤러가 고객 세그먼트에서 올바르게 캐시되지 않는 문제를 해결했습니다.
 
 ## v1.1.61 {#v1-1-61}
 
