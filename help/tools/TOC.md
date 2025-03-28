@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 5a3131a9cfcd2ba588c93de7be02941d4044e611
+source-git-commit: 3155d85215dc9d63e855470d384bf216949a951b
 workflow-type: tm+mt
-source-wordcount: '7226'
+source-wordcount: '7238'
 ht-degree: 0%
 
 ---
@@ -763,6 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: [!UICONTROL Select All] 기능을 확인하고 제품 범주 팝업의 페이지 매김 및 레코드 수를 개선합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+         - [ACSD-63992: 관리 UI에 쿠폰 및 배송 방법 상태 오류가 있는 [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
@@ -795,7 +796,7 @@ ht-degree: 0%
    - [지원되는 버전](data-migration-tool/supported-versions.md)
    - 기본 사항 {#basics}
       - [계획 만들기](data-migration-tool/create-plan.md)
-      - [전제 조건](data-migration-tool/prerequisites.md)
+      - [사전 요구 사항](data-migration-tool/prerequisites.md)
       - [설치](data-migration-tool/install.md)
       - [업그레이드](data-migration-tool/upgrade.md)
       - [구성](data-migration-tool/configure.md)
