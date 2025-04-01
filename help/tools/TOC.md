@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 3155d85215dc9d63e855470d384bf216949a951b
+source-git-commit: 0800285df83eb3e3ffcfb003bf984248b750db32
 workflow-type: tm+mt
-source-wordcount: '7238'
+source-wordcount: '7242'
 ht-degree: 0%
 
 ---
@@ -764,6 +764,8 @@ ht-degree: 0%
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: [!UICONTROL Select All] 기능을 확인하고 제품 범주 팝업의 페이지 매김 및 레코드 수를 개선합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
          - [ACSD-63992: 관리 UI에 쿠폰 및 배송 방법 상태 오류가 있는 [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
+      - v1.1.61 {#v1-1-61}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
