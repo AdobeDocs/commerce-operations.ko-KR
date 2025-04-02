@@ -4,7 +4,7 @@ description: ACSD-55100 패치를 적용하여 GraphQL이 검색 결과에서 *1
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
-source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
+source-git-commit: b8c2c28f126360fe15bd1a49c37560b7d220f4f2
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >버전 2.4.6 - 2.4.6-p8의 동일한 문제를 해결하기 위해 업데이트된 패치([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md))가 릴리스되었습니다. 자세한 내용은 [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)을 참조하세요.
 
-ACSD-55100 패치는 [!DNL GraphQL]이(가) 검색 결과에서 *10k* 이상의 제품을 반환하지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-55100입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-55100 패치는 [!DNL GraphQL]이(가) 검색 결과에서 *10k* 이상의 제품을 반환하지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-55100입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
