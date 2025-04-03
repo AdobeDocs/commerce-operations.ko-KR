@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 472b79822cfb103e1e3833622cfc2eb439016193
+source-git-commit: 382702e6e267402d925f33460ea8e0135c528b84
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7282'
 ht-degree: 0%
 
 ---
@@ -767,6 +767,7 @@ ht-degree: 0%
          - [ACSD-63992: 관리 UI에 쿠폰 및 배송 방법 상태 오류가 있는 [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [ACSD-64178: [!UICONTROL Edit Attribute Set] 페이지가 수천 개의 제품 특성을 사용하여 느리게 로드됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
