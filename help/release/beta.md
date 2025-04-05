@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
+source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -79,15 +79,6 @@ Live Search Beta를 설치하려면 [Live Search 안내서](https://experiencele
 
 이 Beta에 참여하려면 [sbieber@adobe.com](mailto:sbieber@adobe.com)(으)로 전자 메일 요청을 보내십시오.
 
-### 데이터 연결 및 Audience Activation(공개 Beta)
-
-Adobe Commerce과 Adobe Experience Platform 간의 데이터 공유 기능을 확장하여 보다 강력한 개인화된 경험을 제공합니다. 이 기능을 통해 판매자는 다음과 같은 작업을 수행할 수 있습니다.
-
-- Commerce 고객 프로필 공유
-- 사용자 지정 속성 만들기
-
-이 Beta에 참여하려면 [DataConnection@adobe.com](mailto:DataConnection@adobe.com)(으)로 전자 메일 요청을 보내십시오.
-
 ### Adobe Commerce Foundation(공용 Beta)
 
 각 Adobe Commerce Foundation 베타 릴리스에는 다음 기능 영역을 포함하되, 이에 제한되지 않는 예약된 릴리스 날짜까지 Adobe Commerce 핵심 코드에 전달된 모든 변경 사항이 포함됩니다.
@@ -109,7 +100,6 @@ Beta 릴리스 패키지에는 `-betaX` 접미사가 있습니다. 예를 들어
 - `2.4.7-beta2`
 
 예정된 공개 베타 릴리스 날짜 목록은 [릴리스 일정](schedule.md)을 참조하세요.
-
 
 #### Beta 릴리스 액세스
 
