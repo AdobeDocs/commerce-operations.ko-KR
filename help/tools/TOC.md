@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 1e02a1831639368ba4640231a854d6f5613c60ad
+source-git-commit: fd76886406710d98dafa22953950424d2037477a
 workflow-type: tm+mt
-source-wordcount: '7287'
+source-wordcount: '7312'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [경고](site-wide-analysis-tool/alerts.md)
    - [패치](site-wide-analysis-tool/patches.md)
 
-- Adobe Commerce {#managed-alerts-for-adobe-commerce}에서 관리되는 경고
+- Adobe Commerce에서 관리되는 경고 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerce에 대한 관리 경고: [!DNL Redis] 메모리 위험 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerce에 대한 관리 경고: 디스크 경고 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
    - [Adobe Commerce에 대한 관리 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -45,7 +45,7 @@ ht-degree: 0%
    - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
-   - 품질 패치 도구 {#patches-available-in-qpt}에서 사용할 수 있는 패치
+   - 품질 패치 도구에서 사용할 수 있는 패치 {#patches-available-in-qpt}
       - [개요](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [개요: 품질 패치 도구(QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -766,14 +766,16 @@ ht-degree: 0%
          - [ACSD-64111:  [!DNL Page Builder]에서 제품 구성 요소에 대한 중첩 조건을 설정할 때 InvalidArgumentException: 클래스가 존재하지 않는 오류를 수정합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: 관리 UI에 쿠폰 및 배송 방법 상태 오류가 있는 [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
+         - [ACSD-64546: UPS 레이블 생성 중 UI 및 Array에서 문자열 전환 예외에 이르는 일반적인 오류 메시지](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: 범주 트리에 여러 문제가 더 심층적으로 표시되고 앵커/비앵커 관계가 반영됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] 페이지가 수천 개의 제품 특성을 사용하여 느리게 로드됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 로드 시간을 수정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
    - [업그레이드 호환성 도구](reference/uct.md)
-- Adobe Commerce {#observation-for-adobe-commerce}에 대한 관찰
+- Adobe Commerce 관찰 {#observation-for-adobe-commerce}
    - [소개](observation-for-adobe-commerce/intro.md)
    - [액세스 방법](observation-for-adobe-commerce/access.md)
    - [계정 및 일정 선택](observation-for-adobe-commerce/selecting-the-account.md)
