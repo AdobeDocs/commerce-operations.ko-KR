@@ -1,7 +1,7 @@
 ---
-source-git-commit: fb08fb139e975d6f8d0837a5370fed531ee97e0f
+source-git-commit: 1046e6e1f5cc5acee8a8ceb28518207223ab7a1d
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '723'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 4월 7일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 업데이트했습니다.</p>
+</td>
+      <td>기술</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/492e669787d4acd46789190b8afcf5b9e60ac6b6">492e66</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 4월 4일
 
@@ -38,7 +58,7 @@ ht-degree: 2%
     <tr>
       <th>설명</th>
       <th>유형</th>
-      <th>Source</th>
+      <th>근원</th>
     </tr>
   </thead>
   <tbody>
@@ -57,7 +77,7 @@ ht-degree: 2%
   <thead>
     <tr>
       <th>설명</th>
-      <th>유형</th>
+      <th>형</th>
       <th>Source</th>
     </tr>
   </thead>
@@ -66,12 +86,12 @@ ht-degree: 2%
       <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">클라우드 시스템 요구 사항</a> 표에 New Relic을 추가했습니다.</p>
 </td>
       <td>기술</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8241f034529ca5be821ed9768fce391c16efacbc">8241f0</a>(커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8241f034529ca5be821ed9768fce391c16efacbc">8241f0</a> (커밋)</td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.61 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview">설명을 추가했습니다.</a></p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview">QPT 1.1.61 릴리스에서 사용할 수 있는 패치로 해결된 문제에 대한 설명을 추가했습니다.</a></p>
 </td>
-      <td>새 주제</td>
+      <td>새로운 주제</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf9c698e5b0fa81bc2b10e97270d9cbe38ab9c37">bf9c69</a>(커밋)</td>
     </tr>
   </tbody>
@@ -103,13 +123,13 @@ ht-degree: 2%
   <thead>
     <tr>
       <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
+      <th>형</th>
+      <th>근원</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.60 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview">설명을 추가했습니다.</a></p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview">QPT 1.1.60 릴리스에서 사용할 수 있는 패치로 해결된 문제에 대한 설명을 추가했습니다.</a></p>
 </td>
       <td>새 주제</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dca8a509796fb6c81e338000f771cc5fe3fea81c">dca8a5</a>(커밋)</td>
@@ -158,7 +178,7 @@ ht-degree: 2%
       <td><p>최신 카탈로그 서비스 버전 v1.32로 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">가용성 테이블</a>을 업데이트했습니다.</p>
 </td>
       <td>기술</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8dea781eaaeb52efad65cbc522bb779b3929c4e6">8dea78</a>(커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8dea781eaaeb52efad65cbc522bb779b3929c4e6">8dea78</a> (커밋)</td>
     </tr>
   </tbody>
 </table>
@@ -189,7 +209,7 @@ ht-degree: 2%
   <thead>
     <tr>
       <th>설명</th>
-      <th>유형</th>
+      <th>형</th>
       <th>Source</th>
     </tr>
   </thead>
@@ -198,7 +218,7 @@ ht-degree: 2%
       <td><p>Commerce 기술 자료의 마이그레이션으로 인해 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce">Adobe Commerce에 대한 관리되는 경고</a>가 마이그레이션되었습니다.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert">메모리 경고 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert">Redis 메모리 경고 경고 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert">Redis 메모리 위험 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert">디스크 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert">디스크 위험 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert">CPU 위험 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-memory-critical-alert">메모리 위험 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-critical-alert">Apdex 위험 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-mariadb-alerts">MariaDB 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-cpu-warning-alert">CPU 경고 경고</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Apdex 경고</a></p>
 </td>
       <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c265c6348697c5a07f5990a5e2ffeba9d4dfe358">c265c6</a>(커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c265c6348697c5a07f5990a5e2ffeba9d4dfe358">c265c6</a> (커밋)</td>
     </tr>
   </tbody>
 </table>
@@ -209,8 +229,8 @@ ht-degree: 2%
   <thead>
     <tr>
       <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
+      <th>형</th>
+      <th>근원</th>
     </tr>
   </thead>
   <tbody>
@@ -261,10 +281,10 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/60f62d00afe94c1e9874c623d6703162c35791c2">60f62d</a>(커밋)</td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.59 릴리스의 ACSD-64113 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">자세한 설명을 추가했습니다.</a></p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">QPT 1.1.59 릴리스의 ACSD-64113 패치로 해결된 문제에 대한 자세한 설명이 추가되었습니다</a></p>
 </td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8b71fc097d50209786beda72cfc5a7eae6a0449f">8b71fc</a>(커밋)</td>
+      <td>새로운 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8b71fc097d50209786beda72cfc5a7eae6a0449f">8b71fc</a> (커밋)</td>
     </tr>
   </tbody>
 </table>
@@ -327,10 +347,10 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.59 릴리스</a>에서 ACSD-63454 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">자세한 설명을 추가했습니다.</p>
+      <td><p>QPT 1.1.59 릴리스</a>의 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">ACSD-63454 패치로 해결된 문제에 대한 자세한 설명이 추가되었습니다.</p>
 </td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a>(커밋)</td>
+      <td>새로운 주제</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a> (커밋)</td>
     </tr>
   </tbody>
 </table>
@@ -416,53 +436,13 @@ ht-degree: 2%
       <td><p>2025년 2월 베타 및 보안 패치에 대한 릴리스 정보 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p4</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p12</a></p>
 </td>
       <td>주요 업데이트</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12562e72703651b48cc506d587732e896573c7bc">12562</a>(커밋)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12562e72703651b48cc506d587732e896573c7bc">12562e</a> (커밋)</td>
     </tr>
     <tr>
       <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 업데이트했습니다.</p>
 </td>
       <td>기술</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8c45d89c610a5b319352d202057d010b0450c848">8c45d8</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 2월 7일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.58 릴리스의 ACSD-63090 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/69881c628311a8306166f0375834898f9b006584">69881c</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 2월 6일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.58 릴리스의 ACSD-63329 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>새 주제</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a86e6771c42c49416cc45321dc77f55c56e7d95">3a86e6</a>(커밋)</td>
     </tr>
   </tbody>
 </table>
