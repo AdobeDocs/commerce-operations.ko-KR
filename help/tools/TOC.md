@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: fd76886406710d98dafa22953950424d2037477a
+source-git-commit: ecdc18ecee369cb94d5e86a78577d486f13de9e3
 workflow-type: tm+mt
-source-wordcount: '7312'
+source-wordcount: '7351'
 ht-degree: 0%
 
 ---
@@ -763,6 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: [!UICONTROL Select All] 기능을 확인하고 제품 범주 팝업의 페이지 매김 및 레코드 수를 개선합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+         - [ACSD-64137: 우편 번호로 픽업 위치 검색이 네덜란드어 현지화에 대해 제대로 작동하지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
          - [ACSD-64111:  [!DNL Page Builder]에서 제품 구성 요소에 대한 중첩 조건을 설정할 때 InvalidArgumentException: 클래스가 존재하지 않는 오류를 수정합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: 관리 UI에 쿠폰 및 배송 방법 상태 오류가 있는 [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
@@ -770,6 +771,8 @@ ht-degree: 0%
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: 범주 트리에 여러 문제가 더 심층적으로 표시되고 앵커/비앵커 관계가 반영됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] 페이지가 수천 개의 제품 특성을 사용하여 느리게 로드됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACP2E-3705: MAGE_INDEXER_THREADS_COUNT가 설정되면 indexer_update_all_views cron 실행이 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
+         - [ACSD-64467: 스토어 보기 수준에서 카테고리 설명을 저장한 후 WYSIWYG 편집기가 비어 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 로드 시간을 수정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
@@ -821,3 +824,6 @@ ht-degree: 0%
       - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+
+
+[def]: /help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md
