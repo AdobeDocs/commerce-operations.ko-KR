@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5ad3f01421b7724d1bc81cadfe7ce4528d8ba969
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
 source-wordcount: '9'
 ht-degree: 0%
@@ -15,6 +15,7 @@ Adobe Commerce에는 다음이 필요합니다.
 - `ext-dom`
 - `ext-fileinfo`
 - `ext-filter`
+- `ext-ftp`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -37,7 +38,7 @@ Adobe Commerce에는 다음이 필요합니다.
 - `ext-zlib`
 - `lib-libxml`
 
-Magento Open Source에 필요한 사항:
+Magento Open Source에는 다음이 필요합니다.
 
 - `ext-bcmath`
 - `ext-ctype`
@@ -45,6 +46,7 @@ Magento Open Source에 필요한 사항:
 - `ext-dom`
 - `ext-fileinfo`
 - `ext-filter`
+- `ext-ftp`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`

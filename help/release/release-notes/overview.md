@@ -2,7 +2,7 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 3%
@@ -48,12 +48,12 @@ ht-degree: 3%
         <p>혁신적인 Commerce 머천다이징 서비스의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">카탈로그 서비스</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform 커넥터</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">라이브 검색</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">결제 서비스</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">제품 추천</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">서비스 커넥터</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">카탈로그 서비스</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/experience-platform-connector/release-notes.html">Experience Platform 커넥터</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">라이브 검색</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">결제 서비스</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">제품 추천</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">서비스 커넥터</a></li>
           </ul>
         </td>
       <td><strong>도구</strong>

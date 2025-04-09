@@ -2,7 +2,7 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,7 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Live Search, Catalog Service 또는 Product Recommendations을 사용하는 Adobe Commerce 판매자는 [SaaS 기반 가격 색인화](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html)를 사용할 수 있습니다.
+> Live Search, Catalog Service 또는 Product Recommendations를 사용하는 Adobe Commerce 판매자는 [SaaS 기반 가격 인덱싱](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html)를 사용할 수 있습니다.
 
 ## 인덱서 상태 보기
 

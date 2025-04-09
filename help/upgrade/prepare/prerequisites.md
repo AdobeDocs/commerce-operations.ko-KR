@@ -2,9 +2,9 @@
 title: 전제 조건 완료
 description: 다음 전제 조건 단계를 완료하여 Adobe Commerce 프로젝트를 업그레이드하도록 준비합니다.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
+source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,60 @@ Adobe Commerce에서 소프트웨어를 사용하려면 Elasticsearch 또는 Ope
 * [Elasticsearch을 사용하도록 Commerce 구성](../../configuration/search/configure-search-engine.md) 및 색인 재지정
 
 일부 타사 카탈로그 검색 엔진은 Adobe Commerce 검색 엔진 위에서 실행됩니다. 확장을 업데이트해야 하는지 여부를 확인하려면 공급업체에 문의하십시오.
+
+### MySQL 8.4 변경 사항
+
+Adobe은 2.4.8 릴리스에서 MySQL 8.4에 대한 지원을 추가했습니다.
+이 섹션에서는 개발자가 알아야 하는 MySQL 8.4의 주요 변경 사항에 대해 설명합니다.
+
+#### 더 이상 사용되지 않는 비표준 키
+
+고유하지 않은 키 또는 부분 키를 외래 키로 사용하는 것은 비표준이며 MySQL 8.4에서는 더 이상 사용되지 않습니다. MySQL 8.4.0부터 [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key)을(를) `OFF`(으)로 설정하거나 `--skip-restrict-fk-on-non-standard-key` 옵션으로 서버를 시작하여 해당 키를 명시적으로 사용하도록 설정해야 합니다.
+
+#### MySQL 8.0( 또는 이전 버전 )에서 MySQL 8.4로 업그레이드
+
+MySQL을 버전 8.0에서 버전 8.4로 올바르게 업그레이드하려면 다음 단계를 순서대로 수행해야 합니다.
+
+1. 유지 관리 모드 활성화:
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. 데이터베이스 백업 만들기:
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. MySQL을 버전 8.4로 업그레이드하십시오.
+1. `my.cnf` 파일의 `[mysqld]`에서 `restrict_fk_on_non_standard_key`을(를) `OFF`(으)로 설정합니다.
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >`restrict_fk_on_non_standard_key`의 값을 `OFF`(으)로 변경하지 않으면 가져오는 동안 다음 오류가 발생합니다.
+   >
+   ```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. MySQL 서버를 다시 시작합니다.
+1. 백업된 데이터를 MySQL로 가져옵니다.
+1. 캐시를 정리합니다.
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. 유지 관리 모드 비활성화:
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
 
 #### 마리아DB
 

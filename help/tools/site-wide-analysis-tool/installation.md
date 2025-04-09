@@ -3,7 +3,7 @@ title: 설치 안내서
 description: 웹 사이트에  [!DNL Site-Wide Analysis Tool] 을(를) 설치하려면 이 안내서를 사용하십시오.
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Adobe Commerce을 온-프레미스에 설치한 경우 인프라에 에이전트
 
 ## [!DNL Commerce Services Connector]
 
-에이전트를 사용하려면 시스템에 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 확장을 설치하고 API 키를 사용하여 [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html)해야 합니다. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행합니다.
+에이전트를 사용하려면 시스템에 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 확장을 설치하고 API 키를 사용하여 [구성](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)해야 합니다. 확장이 설치되어 있는지 확인하려면 다음 명령을 실행합니다.
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -98,7 +98,7 @@ bin/magento module:status Magento_ServicesId
 
 1. 기존 API 키 옆에 있는 **[!UICONTROL Delete]**&#x200B;을(를) 클릭합니다.
 
-1. 새 API 키를 [구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html)합니다.
+1. 새 API 키를 [구성](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)합니다.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ bin/magento module:status Magento_ServicesId
    bin/magento cache:clean
    ```
 
-1. 확장을 시스템에 연결하려면 [API 키를 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html)하십시오.
+1. 확장을 시스템에 연결하려면 [API 키를 구성](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)하십시오.
 
 ## 에이전트 설치
 
@@ -404,7 +404,7 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 1. [스크립팅된 설치](#scripted)를 수행하고, 출력을 저장하고, 출력에 오류가 있는지 검토하십시오.
 1. 생성된 `config.yaml` 파일을 검토하고 Commerce 인스턴스와 PHP에 대한 경로가 올바른지 확인하십시오.
 1. 스케줄러를 실행하는 사용자가 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md) Unix 그룹에 있거나 파일 시스템 소유자와 동일한 사용자인지 확인하십시오.
-1. [Commerce 서비스 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 키가 올바르게 설치되어 있는지 확인하고 업데이트를 통해 확장을 시스템에 연결하십시오.
+1. [Commerce 서비스 커넥터](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 키가 올바르게 설치되어 있는지 확인하고 업데이트를 통해 확장을 시스템에 연결하십시오.
 1. 키를 업데이트하고 [설치 스크립트](#scripted)를 사용하여 다시 설치한 후 에이전트를 [제거](#uninstall)합니다.
 1. 스케줄러를 실행하여 동일한 오류가 계속 표시되는지 확인합니다.
 1. 동일한 오류가 계속 발생하면 `config.yaml`에서 로그 수준을 높여 디버깅하고 지원 티켓을 엽니다.

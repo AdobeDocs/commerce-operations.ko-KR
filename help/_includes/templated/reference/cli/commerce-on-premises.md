@@ -1,8 +1,8 @@
 ---
-source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8072'
-ht-degree: 0%
+source-wordcount: '8253'
+ht-degree: 1%
 
 ---
 # bin/magento(Adobe Commerce 온-프레미스)
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**버전**: 2.4.7-p1
+**버전**: 2.4.8
 
-이 참조에는 `bin/magento` 명령줄 도구를 통해 사용할 수 있는 141개의 명령이 포함되어 있습니다.
+이 참조에는 `bin/magento` 명령줄 도구를 통해 사용할 수 있는 145개의 명령이 포함되어 있습니다.
 Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 자동으로 생성됩니다.
 
 ## 일반
 
 사용자 지정 CLI 명령을 추가하려면 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 가이드를 사용하십시오.
 
-전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
+전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령과 함께 바로 가기를 사용하는 방법을 이해하려면 바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오[.
 
 이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
@@ -33,11 +33,11 @@ Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 
 해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--quiet`, `-q`
 
-메시지 출력 안 함
+메시지를 출력하지 않음
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -308,7 +308,7 @@ Adobe IMS 모듈을 활성화합니다.
 
 #### `--organization-id`, `-o`
 
-Adobe IMS 구성에 대한 조직 ID를 설정합니다. 모듈을 활성화할 때 필요합니다.
+Adobe Systems IMS 구성에 대한 조직 ID를 설정합니다. 모듈 활성화 시 필수
 
 - 값을 허용합니다.
 
@@ -320,7 +320,7 @@ Adobe IMS 구성에 대한 클라이언트 ID를 설정합니다. 모듈을 활�
 
 #### `--client-secret`, `-s`
 
-Adobe IMS 구성을 위한 클라이언트 암호 를 설정합니다. 모듈을 활성화할 때 필요합니다.
+Adobe Systems IMS 구성에 대한 클라이언트 암호를 설정합니다. 모듈 활성화 시 필수
 
 - 값을 허용합니다.
 
@@ -337,7 +337,7 @@ Adobe Admin Console의 조직에 대해 2FA가 활성화되어 있는지 확인�
 bin/magento admin:adobe-ims:info
 ```
 
-Adobe IMS 모듈 구성 정보
+Adobe Systems IMS 모듈 구성 정보
 
 ### 옵션
 
@@ -367,11 +367,11 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--admin-user`
 
-(필수) 관리자
+(필수) 관리자 사용자
 
 - 값 필요
 
@@ -445,7 +445,7 @@ bin/magento app:config:dump [<config-types>...]
 
 #### `config-types`
 
-모든 [범위, 시스템, 테마, i18n]을(를) 덤프하려면 공백으로 구분된 구성 형식 목록 또는 생략합니다.
+모든 [범위, 테마, 시스템, i18n]을(를) 덤프하기 위해 공백으로 구분된 구성 형식 목록 또는 생략
 
 - 기본값: `[]`
 - 배열
@@ -546,6 +546,19 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 - 값 필요
 
 
+## `cache:clean:payment_services_merchant_scopes`
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
+
+결제 서비스 판매자 범위 캐시 정리
+
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+
 ## `cache:disable`
 
 ```bash
@@ -640,7 +653,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--bootstrap`
 
@@ -722,7 +735,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 #### `path`
 
-group/section/field_name과 같은 구성 경로
+구성 경로(예: 그룹/section/field_name)
 
 
 #### `value`
@@ -731,11 +744,11 @@ group/section/field_name과 같은 구성 경로
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--interactive`, `-i`
 
-모든 중요 변수를 설정하려면 대화형 모드를 활성화하십시오.
+대화식 모드를 활성화하여 모든 민감한 변수 설정
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -780,7 +793,7 @@ format section/group/field_name의 구성 경로
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--scope`
 
@@ -797,7 +810,7 @@ format section/group/field_name의 구성 경로
 
 #### `--lock-env`, `-e`
 
-관리자에서 수정할 수 없는 잠금 값(app/etc/env.php에 저장됨)
+Admin에서 수정을 방지하는 Lock 값(app/etc/env.php에 저장됨)
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -823,7 +836,7 @@ format section/group/field_name의 구성 경로
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
 
-지정된 경로에 대한 구성 값을 표시합니다. 경로를 지정하지 않으면 저장된 값이 모두 표시됩니다
+지정된 경로에 대한 구성 값을 표시합니다. path를 지정하지 않으면 저장된 모든 값이 표시됩니다.
 
 ### 인수
 
@@ -844,9 +857,9 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 #### `--scope-code`
 
-범위 코드(범위가 `default`이(가) 아닌 경우에만 필요)
+범위 코드(범위 가 아닌 `default`경우에만 필요)
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값을 허용합니다.
 
 
@@ -856,15 +869,15 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
-현재 사용자에 대한 crontab 생성 및 설치
+현재 사용자 crontab을 생성하고 설치합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--force`, `-f`
 
-설치 작업 강제 실행
+강제 설치 작업
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -900,7 +913,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--group`
 
@@ -910,10 +923,10 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 #### `--exclude-group`
 
-지정된 그룹에서 작업 제외
+지정된 그룹 에서 작업 제외
 
 - 기본값: `[]`
-- 여러 값을 허용합니다.
+- 여러 값 허용
 
 #### `--bootstrap`
 
@@ -928,11 +941,11 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 bin/magento customer:hash:upgrade
 ```
 
-고객의 해시를 최신 알고리즘에 따라 업그레이드
+최신 알고리즘에 따라 고객의 해시 업그레이드
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `deploy:mode:set`
@@ -941,7 +954,7 @@ bin/magento customer:hash:upgrade
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
-응용 프로그램 모드를 설정합니다.
+애플리케이션 모드를 설정합니다.
 
 ### 인수
 
@@ -957,7 +970,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 #### `--skip-compilation`, `-s`
 
-정적 콘텐츠(생성된 코드, 사전 처리된 CSS 및 pub/static/의 자산)의 지우기 및 재생성을 건너뜁니다.
+정적 컨텐츠(생성된 코드, 전처리된 CSS, pub/static/의 애셋)의 지우기 및 재생성을 건너뜁니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -979,7 +992,7 @@ bin/magento deploy:mode:show
 ## `dev:di:info`
 
 ```bash
-bin/magento dev:di:info <class>
+bin/magento dev:di:info <class> [<area>]
 ```
 
 명령의 종속성 삽입 구성에 대한 정보를 제공합니다.
@@ -992,9 +1005,14 @@ bin/magento dev:di:info <class>
 
 - 필수
 
+
+#### `area`
+
+영역 Code
+
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -1003,11 +1021,11 @@ bin/magento dev:di:info <class>
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
-뉴스레터 템플릿에서 잠재적인 변수 사용 호환성 문제를 검색합니다.
+잠재적인 변수 사용 호환성 문제가 있는지 뉴스레터 템플릿을 검사합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `dev:email:override-compatibility-check`
@@ -1016,11 +1034,11 @@ bin/magento dev:email:newsletter-compatibility-check
 bin/magento dev:email:override-compatibility-check
 ```
 
-이메일 템플릿 재정의에서 잠재적인 변수 사용 호환성 문제를 검색합니다.
+이메일 템플릿 재정의에서 잠재적인 변수 사용 호환성 문제를 검사합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `dev:profiler:disable`
@@ -1052,7 +1070,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `dev:query-log:disable`
@@ -1163,7 +1181,7 @@ bin/magento dev:template-hints:disable
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `dev:template-hints:enable`
@@ -1172,7 +1190,7 @@ bin/magento dev:template-hints:disable
 bin/magento dev:template-hints:enable
 ```
 
-프론트엔드 템플릿 힌트를 활성화합니다. 캐시 플러시가 필요할 수 있습니다.
+프런트 엔드 템플릿 힌트를 활성화합니다. 캐시 플러시가 필요할 수 있습니다.
 
 ### 옵션
 
@@ -1185,11 +1203,11 @@ bin/magento dev:template-hints:enable
 bin/magento dev:template-hints:status
 ```
 
-프론트엔드 템플릿 힌트 상태를 표시합니다.
+프런트 엔드 템플릿 힌트 상태를 보기
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `dev:tests:run`
@@ -1204,7 +1222,7 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 #### `type`
 
-실행할 테스트의 유형입니다. 사용 가능한 유형: all, unit, integration, integration-all, static, static-all, integrity, legacy, default
+실행할 테스트 유형입니다. 사용 가능한 유형: all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 
 - 기본값: `default`
 
@@ -1340,6 +1358,60 @@ bin/magento downloadable:domains:show
 전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
+## `encryption:data:list-re-encryptors`
+
+```bash
+bin/magento encryption:data:list-re-encryptors
+```
+
+사용 가능한 데이터 재암호기 목록을 표시합니다.
+
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+
+## `encryption:data:re-encrypt`
+
+```bash
+bin/magento encryption:data:re-encrypt [<encryptors>...]
+```
+
+현재 암호화 키를 사용하여 암호화된 데이터를 다시 암호화합니다.
+
+### 인수
+
+#### `encryptors`
+
+사용할 재암호기의 공백으로 구분된 목록입니다.
+
+- 기본값: `[]`
+- 배열
+
+### 옵션
+
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+
+
+## `encryption:key:change`
+
+```bash
+bin/magento encryption:key:change [-k|--key [KEY]]
+```
+
+env.php 파일 내의 암호화 키를 변경합니다.
+
+### 옵션
+
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+
+#### `--key`, `-k`
+
+키는 32자의 긴 문자열이어야 합니다. 제공되지 않으면 무작위 키가 생성됩니다.
+
+- 값을 허용합니다.
+
+
 ## `encryption:payment-data:update`
 
 ```bash
@@ -1359,21 +1431,21 @@ bin/magento encryption:payment-data:update
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
 ```
 
-이 인스턴스에 대한 이벤트 Adobe I/O에서 사용자 지정 이벤트 공급자를 만듭니다. 레이블 및 설명 옵션을 지정하지 않으면 시스템 app/etc/event-types.json 파일에 정의해야 합니다.
+이 인스턴스에 대해 Adobe I/O Events에서 사용자 지정 이벤트 공급자를 만듭니다. 레이블 및 설명 옵션을 지정하지 않으면 시스템 app/etc/event-types.json 파일에 정의해야 합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--label`
 
-사용자 정의 공급자를 정의하는 레이블입니다.
+사용자 지정 공급자를 정의하는 레이블입니다.
 
 - 값을 허용합니다.
 
 #### `--description`
 
-공급자에 대한 설명.
+공급자에 대한 설명입니다.
 
 - 값을 허용합니다.
 
@@ -1388,7 +1460,7 @@ bin/magento events:generate:module
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `events:info`
@@ -1459,7 +1531,7 @@ bin/magento events:list:all <module_name>
 bin/magento events:metadata:populate
 ```
 
-구성 목록(XML 및 응용 프로그램 구성)에서 Adobe I/O에 메타데이터를 만듭니다.
+구성 목록(XML 및 애플리케이션 구성)에서 Adobe I/O의 메타데이터를 만듭니다.
 
 ### 옵션
 
@@ -1476,7 +1548,7 @@ bin/magento events:provider:info
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `events:registrations:list`
@@ -1485,11 +1557,11 @@ bin/magento events:provider:info
 bin/magento events:registrations:list
 ```
 
-App Builder 프로젝트의 이벤트 등록을 나열합니다.
+앱 빌더 프로젝트의 이벤트 등록 나열
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `events:subscribe`
@@ -1528,13 +1600,13 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 #### `--parent`
 
-규칙이 있는 이벤트 구독의 상위 이벤트 코드.
+규칙 또는 별칭이 있는 이벤트 구독의 상위 이벤트 코드입니다.
 
 - 값 필요
 
 #### `--rules`
 
-각 규칙의 형식이 &quot;field\|operator\|value&quot;인 이벤트 구독에 대한 규칙 목록입니다.
+각 규칙의 형식이 &quot;field\|operator\|value&quot;인 이벤트 구독에 대한 규칙 목록입니다. 이 옵션을 사용하려면 &quot;상위&quot; 옵션도 지정해야 합니다.
 
 - 기본값: `[]`
 - 값 필요
@@ -1701,10 +1773,10 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 #### `--backup-code`, `-b`
 
-코드 및 구성 파일 백업 수행(임시 파일 제외)
+코드 및 구성 파일 백업(임시 파일 제외)
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 
 ## `indexer:info`
@@ -1732,14 +1804,14 @@ bin/magento indexer:reindex [<index>...]
 
 #### `index`
 
-공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
+공백으로 구분된 색인 유형 목록 또는 생략하여 모든 색인에 적용합니다.
 
 - 기본값: `[]`
 - 배열
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `indexer:reset`
@@ -1748,20 +1820,20 @@ bin/magento indexer:reindex [<index>...]
 bin/magento indexer:reset [<index>...]
 ```
 
-인덱서 상태를 잘못된 상태로 다시 설정합니다.
+인덱서 상태를 잘못된 상태로 재설정합니다.
 
 ### 인수
 
 #### `index`
 
-공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
+공백으로 구분된 색인 유형 목록 또는 생략하여 모든 색인에 적용합니다.
 
 - 기본값: `[]`
 - 배열
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `indexer:set-dimensions-mode`
@@ -1770,7 +1842,7 @@ bin/magento indexer:reset [<index>...]
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
-인덱서 Dimension 모드 설정
+인덱서 차원 모드 설정
 
 ### 인수
 
@@ -1916,7 +1988,7 @@ bin/magento indexer:status [<index>...]
 bin/magento info:adminuri
 ```
 
-Magento 관리자 URI를 표시합니다
+Magento 관리자 URI를 표시합니다.
 
 ### 옵션
 
@@ -2032,7 +2104,7 @@ bin/magento info:timezone:list
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `inventory:reservation:create-compensations`
@@ -2054,11 +2126,11 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--raw`, `-r`
 
-원시 출력
+Raw 출력
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2092,17 +2164,17 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 #### `--bunch-size`, `-b`
 
-한 번에 로드할 주문 수를 정의합니다.
+한 번에 로드할 주문 수를 정의합니다
 
 - 기본값: `50`
 - 값을 허용합니다.
 
 #### `--raw`, `-r`
 
-원시 출력
+Raw 출력
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 
 ## `inventory-geonames:import`
@@ -2111,7 +2183,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 bin/magento inventory-geonames:import <countries>...
 ```
 
-소스 선택 알고리즘에 대한 지역 이름 다운로드 및 가져오기
+소스 선택 알고리즘을 위한 지리적 이름 다운로드 및 가져오기Download and import geo names for source selection algorithm
 
 ### 인수
 
@@ -2237,7 +2309,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 #### `--magento-init-params`
 
-Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+모든 명령에 추가하여 Magento 초기화 매개 변수 사용자 지정 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -2261,11 +2333,11 @@ bin/magento media-content:sync
 bin/magento media-gallery:sync
 ```
 
-데이터베이스의 미디어 저장소 및 미디어 자산 동기화
+데이터베이스의 미디어 저장소와 미디어 자산 동기화Synchronize media storage and media assets in the database
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `module:config:status`
@@ -2274,7 +2346,7 @@ bin/magento media-gallery:sync
 bin/magento module:config:status
 ```
 
-&#39;app/etc/config.php&#39; 파일에서 모듈 구성을 확인하고 최신 상태인지 보고합니다.
+&#39;app/etc/config.php&#39; 파일의 모듈 구성을 확인하고 최신 상태인지 여부를 보고합니다.
 
 ### 옵션
 
@@ -2300,7 +2372,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--force`, `-f`
 
@@ -2314,18 +2386,18 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 모든 모듈 비활성화
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--clear-static-content`, `-c`
 
 생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--magento-init-params`
 
-Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+모든 명령에 추가하여 Magento 초기화 매개 변수 사용자 지정 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -2349,14 +2421,14 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--force`, `-f`
 
-종속성 확인 무시
+종속성 검사 무시
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--all`
 
@@ -2367,7 +2439,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 #### `--clear-static-content`, `-c`
 
-생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
+생성된 정적 뷰 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2405,14 +2477,14 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 활성화된 모듈만 인쇄
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--disabled`
 
 비활성화된 모듈만 인쇄
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--magento-init-params`
 
@@ -2619,13 +2691,13 @@ To define the number of processes per consumer:
 
 #### `--max-messages`
 
-프로세스 종료 전 소비자가 처리한 메시지 수입니다. 지정하지 않은 경우 - 큐에 있는 모든 메시지를 처리한 후 종료합니다.
+프로세스 종료 전 소비자가 처리한 메시지 수입니다. 지정하지 않으면 대기 중인 모든 메시지를 처리한 후 종료합니다.
 
 - 값 필요
 
 #### `--batch-size`
 
-일괄 처리당 메시지 수. 배치 소비자에 대해서만 적용할 수 있습니다.
+일괄 처리당 메시지 수입니다. 배치 소비자에만 적용됩니다.
 
 - 값 필요
 
@@ -2671,7 +2743,7 @@ bin/magento remote-storage:sync
 ## `saas:resync`
 
 ```bash
-bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
+bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
 피드 데이터를 SaaS 서비스에 다시 동기화합니다.
@@ -2698,11 +2770,11 @@ SaaS 서비스에 완전히 다시 동기화하기 위한 피드 이름입니다
 동기화하기 전에 피드 인덱서 테이블을 강제로 정리합니다.
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--dry-run`
 
-시험 실행. 데이터를 내보내지 않습니다. 페이로드를 로그 파일에 저장하려면 var/log/saas-export.log env 변수 EXPORTER_EXTENDED_LOG=1로 실행합니다.
+드라이 런. 데이터는 내보내지지 않습니다. 페이로드를 로그 파일 var/log/saas-export.log에 저장하려면 env 변수 EXPORTER_EXTENDED_LOG=1로 실행합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2726,6 +2798,18 @@ SaaS 서비스에 완전히 다시 동기화하기 위한 피드 이름입니다
 - 기본값: `false`
 - 값을 수락하지 않음
 
+#### `--by-ids`
+
+제공된 식별자 목록으로 부분적으로 다시 동기화합니다. (이 옵션은 제품, 제품 무시 및 가격 피드에 적용됩니다.)
+
+- 값 필요
+
+#### `--id-type`
+
+부분 재동기화를 위한 식별자 유형(예: sku, productId 등)
+
+- 값 필요
+
 
 ## `sampledata:deploy`
 
@@ -2737,14 +2821,14 @@ bin/magento sampledata:deploy [--no-update]
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--no-update`
 
-작성기 업데이트를 실행하지 않고 composer.json 업데이트
+composer update를 실행하지 않고 composer.json 업데이트
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 
 ## `sampledata:remove`
@@ -2812,7 +2896,7 @@ bin/magento security:recaptcha:disable-for-user-login
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
 
-Google OTP 생성에 사용되는 암호를 설정합니다.
+Google OTP 생성에 사용되는 시크릿을 설정합니다.
 
 ### 인수
 
@@ -2831,7 +2915,7 @@ Google OTP 생성에 사용되는 암호를 설정합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `security:tfa:providers`
@@ -2844,7 +2928,7 @@ bin/magento security:tfa:providers
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `security:tfa:reset`
@@ -2853,7 +2937,7 @@ bin/magento security:tfa:providers
 bin/magento security:tfa:reset <user> <provider>
 ```
 
-한 명의 사용자에 대한 구성 재설정
+사용자 1명에 대한 구성 재설정
 
 ### 인수
 
@@ -2910,14 +2994,14 @@ bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--
 
 #### `--dispatchMode`, `-dm`
 
-작업자 프로세스에 대한 연결 발송 모드
+작업자 프로세스에 대한 연결을 디스패치하는 모드
 
 - 기본값: `3`
 - 값을 허용합니다.
 
 #### `--maxRequests`, `-mr`
 
-작업자 프로세스가 다시 시작되기 전까지의 최대 요청
+작업자 프로세스가 다시 시작되기 전의 최대 요청 수
 
 - 기본값: `10000`
 - 값을 허용합니다.
@@ -2945,10 +3029,10 @@ magento bootstrap init params
 
 #### `--state-monitor`
 
-상태 모니터링을 활성화합니다. 디버깅 상태 문제에만 사용하십시오!
+상태 모니터링을 활성화합니다. 상태 문제를 디버깅하는 데만 사용하십시오!
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 
 ## `server:state-monitor:aggregate-output`
@@ -2957,11 +3041,11 @@ magento bootstrap init params
 bin/magento server:state-monitor:aggregate-output
 ```
 
-ApplicationServer의 상태 모니터에서 출력 집계
+ApplicationServer의 상태 모니터 출력 집계
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `setup:backup`
@@ -2970,25 +3054,25 @@ ApplicationServer의 상태 모니터에서 출력 집계
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스의 백업 수행
+Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스를 백업합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--code`
 
-코드 및 구성 파일 백업 수행(임시 파일 제외)
+코드 및 구성 파일 백업(임시 파일 제외)
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--media`
 
 미디어 백업 수행
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--db`
 
@@ -3007,36 +3091,18 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니
 ## `setup:config:set`
 
 ```bash
-bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 배포 구성을 만들거나 수정합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
-
-#### `--enable-debug-logging`
-
-디버그 로깅 활성화
-
-- 값 필요
-
-#### `--enable-syslog-logging`
-
-syslog 로깅 활성화
-
-- 값 필요
-
-#### `--backend-frontname`
-
-백엔드 프론트이름(누락된 경우 자동 생성됨)
-
-- 값 필요
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--remote-storage-driver`
 
-원격 스토리지 드라이버
+원격 저장 장치 드라이버
 
 - 값 필요
 
@@ -3044,7 +3110,7 @@ syslog 로깅 활성화
 
 원격 저장소 접두사
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--remote-storage-endpoint`
@@ -3055,13 +3121,13 @@ syslog 로깅 활성화
 
 #### `--remote-storage-bucket`
 
-원격 저장소 버킷
+원격 스토리지 버킷
 
 - 값 필요
 
 #### `--remote-storage-region`
 
-원격 스토리지 영역
+원격 저장소 지역
 
 - 값 필요
 
@@ -3076,7 +3142,7 @@ syslog 로깅 활성화
 
 원격 저장소 비밀 키
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--remote-storage-path-style`
@@ -3086,21 +3152,39 @@ syslog 로깅 활성화
 - 기본값: `0`
 - 값 필요
 
+#### `--backend-frontname`
+
+백엔드 프론트이름(누락된 경우 자동 생성됨)
+
+- 값 필요
+
+#### `--enable-debug-logging`
+
+디버그 로깅 활성화
+
+- 값 필요
+
+#### `--enable-syslog-logging`
+
+syslog 로깅 활성화
+
+- 값 필요
+
 #### `--id_salt`
 
 GraphQl Salt
 
 - 값 필요
 
-#### `--config-async`
-
-비동기 관리 구성 저장을 활성화하시겠습니까? 1 - 예, 0 - 아니오
-
-- 값 필요
-
 #### `--checkout-async`
 
 비동기 주문 처리를 활성화하시겠습니까? 1 - 예, 0 - 아니오
+
+- 값 필요
+
+#### `--config-async`
+
+비동기 관리 구성 저장을 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
@@ -3256,7 +3340,7 @@ SSL을 통해 DB 연결을 설정하기 위한 클라이언트 인증서 파일�
 
 SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체 경로
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--db-ssl-verify`
@@ -3264,7 +3348,7 @@ SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체
 서버 인증 확인
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 #### `--session-save`
 
@@ -3293,6 +3377,12 @@ Redis 서버 암호
 #### `--session-save-redis-timeout`
 
 연결 시간 제한(초)
+
+- 값 필요
+
+#### `--session-save-redis-retries`
+
+Redis 연결 다시 시도.
 
 - 값 필요
 
@@ -3452,6 +3542,12 @@ lua를 활성화하려면 1로 설정합니다(기본값은 0, 비활성화).
 
 - 값 필요
 
+#### `--cache-backend-redis-use-lua-on-gc`
+
+가비지 수집에서 lua를 비활성화하려면 0으로 설정합니다(기본값은 1, 활성화됨).
+
+- 값 필요
+
 #### `--cache-id-prefix`
 
 캐시 키의 ID 접두사
@@ -3527,7 +3623,7 @@ Redis 서버 암호
 
 #### `--lock-zookeeper-host`
 
-Zookeeper 클러스터에 연결할 호스트 및 포트입니다. 예: 127.0.0.1:2181
+Zookeeper 클러스터에 연결할 호스트 및 포트. 예: 127.0.0.1:2181
 
 - 값 필요
 
@@ -3545,13 +3641,13 @@ Zookeeper가 잠금을 저장하는 경로입니다. 기본 경로는 /magento/l
 
 #### `--document-root-is-pub`
 
-Pub가 루트에 있고, true 또는 false만 표시할 수 있습니다.
+표시할 플래그는 Pub이 루트에 있으며 true 또는 false일 수 있습니다.
 
 - 값 필요
 
 #### `--backpressure-logger`
 
-배압 로거 처리기
+배압 로거 핸들러
 
 - 값 필요
 
@@ -3654,11 +3750,11 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--revertable`
 
-패치를 되돌릴 수 있는지 여부를 확인합니다.
+패치를 되돌릴 수 있는지 확인하십시오.
 
 - 기본값: `false`
 - 값을 허용합니다.
@@ -3881,11 +3977,11 @@ DB 스키마 설치 및 업그레이드
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--convert-old-scripts`
 
-이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 형식으로 변환할 수 있습니다.
+이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 포맷에 전환 수 있습니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
@@ -3932,7 +4028,7 @@ bin/magento setup:di:compile
 ## `setup:install`
 
 ```bash
-bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 Magento 애플리케이션 설치
@@ -3940,24 +4036,6 @@ Magento 애플리케이션 설치
 ### 옵션
 
 전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
-
-#### `--enable-debug-logging`
-
-디버그 로깅 활성화
-
-- 값 필요
-
-#### `--enable-syslog-logging`
-
-syslog 로깅 활성화
-
-- 값 필요
-
-#### `--backend-frontname`
-
-백엔드 프론트이름(누락된 경우 자동 생성됨)
-
-- 값 필요
 
 #### `--remote-storage-driver`
 
@@ -3980,13 +4058,13 @@ syslog 로깅 활성화
 
 #### `--remote-storage-bucket`
 
-원격 저장소 버킷
+원격 스토리지 버킷
 
 - 값 필요
 
 #### `--remote-storage-region`
 
-원격 스토리지 영역
+원격 저장소 지역
 
 - 값 필요
 
@@ -4011,21 +4089,39 @@ syslog 로깅 활성화
 - 기본값: `0`
 - 값 필요
 
-#### `--id_salt`
+#### `--backend-frontname`
 
-GraphQl Salt
+백엔드 프론트이름(누락된 경우 자동 생성됨)
 
 - 값 필요
 
-#### `--config-async`
+#### `--enable-debug-logging`
 
-비동기 관리 구성 저장을 활성화하시겠습니까? 1 - 예, 0 - 아니오
+디버그 로깅 활성화
+
+- 값 필요
+
+#### `--enable-syslog-logging`
+
+syslog 로깅 활성화
+
+- 값 필요
+
+#### `--id_salt`
+
+GraphQl 소금
 
 - 값 필요
 
 #### `--checkout-async`
 
-비동기 주문 처리를 활성화하시겠습니까? 1 - 예, 0 - 아니오
+비동기 주문 처리를 사용하시겠습니까? 1 - 예, 0 - 아니요
+
+- 값 필요
+
+#### `--config-async`
+
+비동기 관리자 구성 저장 활성화? 1 - 예, 0 - 아니요
 
 - 값 필요
 
@@ -4033,7 +4129,7 @@ GraphQl Salt
 
 Amqp 서버 호스트
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--amqp-port`
@@ -4152,7 +4248,7 @@ Amqp SSL 옵션(JSON)
 
 #### `--skip-db-validation`, `-s`
 
-지정하면 DB 연결 유효성 검사를 건너뜁니다
+지정된 경우 db 연결 유효성 검사 기능을 건너뜁니다
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4167,21 +4263,21 @@ http 캐시 호스트
 
 SSL을 통해 DB 연결을 설정하기 위한 클라이언트 키 파일의 전체 경로
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--db-ssl-cert`
 
-SSL을 통해 DB 연결을 설정하기 위한 클라이언트 인증서 파일의 전체 경로
+SSL을 통한 db 연결을 설정하기 위한 클라이언트 인증서 파일의 전체 경로
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--db-ssl-ca`
 
 SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체 경로
 
-- 기본값: &quot;
+- 기본값 : &#39;&#39;
 - 값 필요
 
 #### `--db-ssl-verify`
@@ -4199,7 +4295,7 @@ SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체
 
 #### `--session-save-redis-host`
 
-UNIX 소켓을 사용하는 경우 정규화된 호스트 이름, IP 주소 또는 절대 경로
+정규화된 호스트 이름, IP 주소 또는 절대 경로(UNIX 소켓을 사용하는 경우)
 
 - 값 필요
 
@@ -4217,7 +4313,13 @@ Redis 서버 암호
 
 #### `--session-save-redis-timeout`
 
-연결 시간 제한(초)
+연결 제한 시간(초)
+
+- 값 필요
+
+#### `--session-save-redis-retries`
+
+Redis 연결 다시 시도.
 
 - 값 필요
 
@@ -4295,19 +4397,19 @@ Redis 로그 수준. 값: 0(최소 세부 정보) ~ 7(최대 세부 정보)
 
 #### `--session-save-redis-min-lifetime`
 
-Redis 최소 세션 수명(초)
+Redis 최소 세션 생애(초)
 
 - 값 필요
 
 #### `--session-save-redis-max-lifetime`
 
-Redis 최대 세션 수명(초)
+Redis 최대 세션 생애(초)
 
 - 값 필요
 
 #### `--session-save-redis-sentinel-master`
 
-레디스 센티넬 마스터
+Redis Sentinel 마스터
 
 - 값 필요
 
@@ -4374,6 +4476,12 @@ Redis 서버 암호
 #### `--cache-backend-redis-use-lua`
 
 lua를 활성화하려면 1로 설정합니다(기본값은 0, 비활성화).
+
+- 값 필요
+
+#### `--cache-backend-redis-use-lua-on-gc`
+
+가비지 수집에서 lua를 비활성화하려면 0으로 설정합니다(기본값은 1, 활성화됨).
 
 - 값 필요
 
@@ -4614,7 +4722,7 @@ Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할�
 
 #### `--search-engine`
 
-검색 엔진. 값: elasticsearch7, elasticsearch8, opensearch
+검색 엔진. 값: elasticsearch8, opensearch
 
 - 값 필요
 
@@ -4638,7 +4746,7 @@ Elasticsearch 서버 포트입니다.
 
 #### `--elasticsearch-username`
 
-Elasticsearch 사용자 이름입니다. HTTP 인증이 활성화된 경우에만 적용 가능
+Elasticsearch 사용자 이름. HTTP 인증이 활성화된 경우에만 적용 가능
 
 - 값 필요
 
@@ -4750,7 +4858,7 @@ OpenSearch 서버 시간 초과.
 
 #### `--safe-mode`
 
-열 제거와 같은 파괴적인 작업에서 덤프와 함께 Magento의 안전한 설치
+열 제거와 같은 파괴적인 작업에서 덤프가 있는 Magento의 안전한 설치
 
 - 값을 허용합니다.
 
@@ -4762,7 +4870,7 @@ OpenSearch 서버 시간 초과.
 
 #### `--dry-run`
 
-Magento 설치는 시험 실행 모드에서 실행됩니다.
+Magento 설치는 시험 실행 모드에서 실행됩니다
 
 - 기본값: `false`
 - 값을 허용합니다.
@@ -4808,15 +4916,15 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Magento 응용 프로그램 코드베이스, 미디어 및 데이터베이스를 롤백합니다
+Magento 애플리케이션 코드베이스, 미디어 및 데이터베이스 롤백
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--code-file`, `-c`
 
-var/backups의 코드 백업 파일 기본 이름
+var/backups에 있는 코드 백업 파일의 기본 이름
 
 - 값 필요
 
@@ -4828,13 +4936,13 @@ var/backups의 미디어 백업 파일 기본 이름
 
 #### `--db-file`, `-d`
 
-Var/backups의 DB 백업 파일 기본 이름
+var/backups에 있는 db 백업 파일의 기본 이름
 
 - 값 필요
 
 #### `--magento-init-params`
 
-Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+모든 명령에 추가하여 Magento 초기화 매개 변수 사용자 지정 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -4845,7 +4953,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
 
-정적 보기 파일 배포
+정적 뷰 파일 배포
 
 ### 인수
 
@@ -4862,7 +4970,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 #### `--force`, `-f`
 
-모든 모드에서 파일을 배포합니다.
+어떤 모드로든 파일을 배포할 수 있습니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -5053,13 +5161,13 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 #### `--currency`
 
-기본 통화 코드. 더 이상 사용되지 않음, 경로 통화/옵션/기본, 통화/옵션/기본 및 통화/옵션/허용과 함께 config:set 사용
+기본 통화 코드입니다. 더 이상 사용되지 않음, 경로 currency/options/base, currency/options/default 및 currency/options/allow와 함께 config:set 사용
 
 - 값 필요
 
 #### `--use-rewrites`
 
-재작성을 사용합니다. 지원 중단됨, config:set를 경로 web/seo/use_rewrites와 함께 사용
+다시 쓰기를 사용합니다. 더 이상 사용되지 않음, web/seo/use_rewrites 경로와 함께 config:set 사용
 
 - 값 필요
 
@@ -5141,7 +5249,7 @@ Magento 애플리케이션, DB 데이터 및 스키마 업그레이드
 
 #### `--safe-mode`
 
-열 제거와 같은 파괴적인 작업에서 덤프와 함께 Magento의 안전한 설치
+열 제거와 같은 파괴적인 작업에서 덤프가 있는 Magento의 안전한 설치
 
 - 값을 허용합니다.
 
@@ -5153,7 +5261,7 @@ Magento 애플리케이션, DB 데이터 및 스키마 업그레이드
 
 #### `--dry-run`
 
-Magento 설치는 시험 실행 모드에서 실행됩니다.
+Magento 설치는 시험 실행 모드에서 실행됩니다
 
 - 기본값: `false`
 - 값을 허용합니다.
@@ -5279,7 +5387,7 @@ bin/magento support:utility:check [--hide-paths]
 필요한 콘솔 유틸리티만 확인
 
 - 기본값: `false`
-- 값을 수락하지 않음
+- 값을 허용하지 않습니다.
 
 
 ## `support:utility:paths`
@@ -5292,11 +5400,11 @@ bin/magento support:utility:paths [-f|--force]
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--force`, `-f`
 
-강제
+포스
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -5314,7 +5422,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 #### `theme`
 
-테마의 경로. 테마 경로는 영역/공급업체/이름인 전체 경로로 지정해야 합니다. 예: frontend/Magento/blank
+테마의 경로입니다. 테마 경로는 영역/공급업체/이름인 전체 경로로 지정해야 합니다. 예: frontend/Magento/blank
 
 - 기본값: `[]`
 - 필수
@@ -5346,11 +5454,11 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
-Varnish VCL을 생성하여 명령줄에 반향
+Varnish VCL을 생성하고 명령줄에 에코합니다.
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 #### `--access-list`
 
@@ -5419,13 +5527,13 @@ Webhook 이름
 
 #### `payload`
 
-JSON 형식의 웹후크 페이로드
+JSON 포맷 형식의 웹훅 페이로드
 
 - 필수
 
 ### 옵션
 
-전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
+전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
 
 
 ## `webhooks:generate:module`

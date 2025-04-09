@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2073'
 ht-degree: 0%
 
 ---
@@ -23,24 +23,27 @@ Adobe Commerce은 Composer를 사용하여 PHP 패키지를 관리합니다.
 
 `composer.json` 파일은 패키지 목록을 선언하지만, `composer.lock` 파일은 Adobe Commerce 설치를 빌드하는 데 사용되는 패키지의 전체 목록(각 패키지 및 해당 종속 항목의 전체 버전)을 저장합니다.
 
-다음 참조 설명서는 `composer.lock` 파일에서 생성되었으며 Adobe Commerce 2.4.7-p1에 포함된 필수 패키지에 대해 설명합니다.
+다음 참조 설명서는 `composer.lock` 파일에서 생성되며 Adobe Commerce 2.4.8에 포함된 필수 패키지에 대해 설명합니다.
 
 ## 종속성
 
-`magento/product-enterprise-edition 2.4.7-p1`에 다음 종속성이 있습니다.
+`magento/product-enterprise-edition 2.4.8`에 다음 종속성이 있습니다.
 
 ```config
-adobe-commerce/extensions-metapackage: ~2.0
+adobe-commerce/extensions-metapackage: 2.0.1
 colinmollenhour/cache-backend-file: ^1.4
 colinmollenhour/cache-backend-redis: ^1.16
 colinmollenhour/credis: ^1.15
-colinmollenhour/php-redis-session-abstract: ~1.5.3
+colinmollenhour/php-redis-session-abstract: ^2.0
 composer/composer: ^2.0, !=2.2.16
-elasticsearch/elasticsearch: ~7.17.0 || ~8.5.0
+duosecurity/duo_api_php: ^1.1
+duosecurity/duo_universal_php: ^1.0
+elasticsearch/elasticsearch: ^8.15
 ext-bcmath: *
 ext-ctype: *
 ext-curl: *
 ext-dom: *
+ext-ftp: *
 ext-gd: *
 ext-hash: *
 ext-iconv: *
@@ -56,169 +59,165 @@ ext-xsl: *
 ext-zip: *
 ezyang/htmlpurifier: ^4.17
 guzzlehttp/guzzle: ^7.5
-laminas/laminas-captcha: ^2.17
+laminas/laminas-captcha: ^2.18
 laminas/laminas-code: ^4.13
-laminas/laminas-db: ^2.19
-laminas/laminas-di: ^3.13
+laminas/laminas-di: ^3.15
 laminas/laminas-escaper: ^2.13
 laminas/laminas-eventmanager: ^3.11
 laminas/laminas-feed: ^2.22
-laminas/laminas-file: ^2.13
 laminas/laminas-filter: ^2.33
 laminas/laminas-http: ^2.15
 laminas/laminas-i18n: ^2.17
-laminas/laminas-mail: ^2.16
-laminas/laminas-mime: ^2.9
 laminas/laminas-modulemanager: ^2.11
 laminas/laminas-mvc: ^3.6
-laminas/laminas-oauth: ^2.6
 laminas/laminas-permissions-acl: ^2.10
-laminas/laminas-server: ^2.16
 laminas/laminas-servicemanager: ^3.16
 laminas/laminas-soap: ^2.10
 laminas/laminas-stdlib: ^3.11
 laminas/laminas-uri: ^2.9
 laminas/laminas-validator: ^2.23
-league/flysystem: ^2.4
-league/flysystem-aws-s3-v3: ^2.4
+league/flysystem: ^3.0
+league/flysystem-aws-s3-v3: ^3.0
 lib-libxml: *
-magento/composer: ^1.10.0-beta1
+magento/composer: ^1.10.1-beta1
 magento/composer-dependency-version-audit-plugin: ^0.1
-magento/framework-foreign-key: 100.4.6
+magento/framework-foreign-key: 100.4.7
 magento/magento-composer-installer: >=0.4.0
-magento/magento2-ee-base: 2.4.7-p1
-magento/module-admin-gws: 100.4.7
-magento/module-admin-gws-configurable-product: 100.4.4
-magento/module-admin-gws-staging: 100.4.4
-magento/module-advanced-catalog: 100.4.4
-magento/module-advanced-checkout: 100.4.7
-magento/module-advanced-rule: 100.4.4
-magento/module-advanced-sales-rule: 100.4.4
-magento/module-application-server: 100.4.0
-magento/module-application-server-new-relic: 100.4.0
-magento/module-application-server-performance-monitor: 100.4.0
-magento/module-application-server-state-monitor: 100.4.0
-magento/module-application-server-state-monitor-graph-ql: 100.4.0
-magento/module-async-order: 100.4.3
-magento/module-async-order-graph-ql: 100.4.2
-magento/module-aws-s3-customer-custom-attributes: 100.4.4
-magento/module-aws-s3-gift-card-import-export: 100.4.4
-magento/module-aws-s3-scheduled-import-export: 100.4.4
-magento/module-banner: 101.2.7
-magento/module-banner-customer-segment: 100.4.5
-magento/module-banner-graph-ql: 100.4.3
-magento/module-banner-staging: 100.4.1
-magento/module-bundle-import-export-staging: 100.4.4
-magento/module-bundle-staging: 100.4.7
-magento/module-catalog-event: 101.1.6
-magento/module-catalog-import-export-staging: 100.4.4
-magento/module-catalog-inventory-staging: 100.4.5
-magento/module-catalog-permissions: 100.4.7
-magento/module-catalog-permissions-graph-ql: 100.4.5
-magento/module-catalog-rule-staging: 100.4.7
-magento/module-catalog-staging: 100.4.7
-magento/module-catalog-staging-graph-ql: 100.4.6
-magento/module-catalog-url-rewrite-staging: 100.4.6-p1
-magento/module-checkout-address-search: 100.4.6
-magento/module-checkout-address-search-gift-registry: 100.4.3
-magento/module-checkout-staging: 100.4.6
-magento/module-cms-staging: 100.4.7
-magento/module-configurable-product-staging: 100.4.6
-magento/module-custom-attribute-management: 100.4.6
-magento/module-customer-balance: 100.4.7
-magento/module-customer-balance-graph-ql: 100.4.4
-magento/module-customer-custom-attributes: 100.4.7
-magento/module-customer-custom-attributes-graph-ql: 100.4.0
-magento/module-customer-finance: 100.4.4
-magento/module-customer-segment: 102.1.7
-magento/module-customer-segment-graph-ql: 100.4.0
-magento/module-deferred-total-calculating: 100.4.2
-magento/module-downloadable-staging: 100.4.6
-magento/module-elasticsearch-catalog-permissions: 100.4.3
-magento/module-elasticsearch-catalog-permissions-graph-ql: 100.4.2
-magento/module-enterprise: 100.4.5
-magento/module-gift-card: 101.3.7
-magento/module-gift-card-account: 101.2.7
-magento/module-gift-card-account-graph-ql: 100.4.5
-magento/module-gift-card-graph-ql: 100.4.7
-magento/module-gift-card-import-export: 100.4.4
-magento/module-gift-card-staging: 100.4.4
-magento/module-gift-message-staging: 100.4.4
-magento/module-gift-registry: 101.2.7
-magento/module-gift-registry-graph-ql: 100.4.3
-magento/module-gift-wrapping: 101.2.6
-magento/module-gift-wrapping-graph-ql: 100.4.4
-magento/module-gift-wrapping-staging: 100.4.4
-magento/module-google-optimizer-staging: 100.4.4
-magento/module-google-tag-manager: 100.4.7
-magento/module-grouped-product-staging: 100.4.5
-magento/module-import-csv: 100.4.1
-magento/module-import-csv-api: 100.4.1
-magento/module-import-json: 100.4.0
-magento/module-import-json-api: 100.4.0
-magento/module-invitation: 100.4.6
-magento/module-layered-navigation-staging: 100.4.4
-magento/module-logging: 101.2.7
-magento/module-login-as-customer-logging: 100.4.7
-magento/module-login-as-customer-website-restriction: 100.4.5
-magento/module-media-content-catalog-staging: 100.4.4
-magento/module-msrp-staging: 100.4.5
-magento/module-multicoupon: 100.4.0
-magento/module-multicoupon-graph-ql: 100.4.0
-magento/module-multicoupon-ui: 100.4.0
-magento/module-multiple-wishlist: 100.4.7
-magento/module-multiple-wishlist-graph-ql: 100.4.3
-magento/module-payment-staging: 100.4.4
-magento/module-persistent-history: 100.4.4
-magento/module-price-permissions: 100.4.3
-magento/module-product-video-staging: 100.4.4
-magento/module-promotion-permissions: 100.4.4
-magento/module-quote-commerce-graph-ql: 100.4.0
-magento/module-quote-gift-card-options: 100.4.4
-magento/module-quote-staging: 100.4.4
-magento/module-reminder: 101.2.6
-magento/module-remote-storage-commerce: 100.4.3
-magento/module-resource-connections: 100.4.4
-magento/module-review-staging: 100.4.4
-magento/module-reward: 101.2.7
-magento/module-reward-graph-ql: 100.4.6
-magento/module-reward-staging: 100.4.4
-magento/module-rma: 101.2.7
-magento/module-rma-graph-ql: 100.4.6-p1
-magento/module-rma-staging: 100.4.4
-magento/module-sales-archive: 101.0.5
-magento/module-sales-rule-staging: 100.4.6
-magento/module-scalable-checkout: 100.4.6
-magento/module-scalable-inventory: 100.4.5
-magento/module-scalable-oms: 100.4.5
-magento/module-scheduled-import-export: 101.2.7
-magento/module-search-staging: 100.4.5
-magento/module-staging: 101.2.7
-magento/module-staging-graph-ql: 100.4.4
-magento/module-support: 101.2.6
-magento/module-swat: 100.4.5
-magento/module-target-rule: 101.2.7
-magento/module-target-rule-graph-ql: 100.4.4
-magento/module-versions-cms: 101.2.7
-magento/module-versions-cms-page-cache: 100.4.3
-magento/module-versions-cms-url-rewrite: 100.4.5
-magento/module-versions-cms-url-rewrite-graph-ql: 100.4.3
-magento/module-visual-merchandiser: 100.4.7
-magento/module-website-restriction: 100.4.6
-magento/module-weee-staging: 100.4.4
-magento/module-wishlist-gift-card: 100.4.3
-magento/module-wishlist-gift-card-graph-ql: 100.4.3
-magento/page-builder-commerce: 1.7.4-p1
-magento/product-community-edition: 2.4.7-p1
-magento/security-package-ee: 1.0.2-p1
-magento/theme-adminhtml-spectrum: 100.4.2
+magento/magento-zf-db: ^3.21
+magento/magento2-ee-base: 2.4.8
+magento/module-admin-gws: 100.4.8
+magento/module-admin-gws-configurable-product: 100.4.5
+magento/module-admin-gws-staging: 100.4.5
+magento/module-advanced-catalog: 100.4.5
+magento/module-advanced-checkout: 100.4.8
+magento/module-advanced-rule: 100.4.5
+magento/module-advanced-sales-rule: 100.4.5
+magento/module-application-server: 100.4.1
+magento/module-application-server-new-relic: 100.4.1
+magento/module-application-server-performance-monitor: 100.4.1
+magento/module-application-server-state-monitor: 100.4.1
+magento/module-application-server-state-monitor-graph-ql: 100.4.1
+magento/module-async-order: 100.4.4
+magento/module-async-order-graph-ql: 100.4.3
+magento/module-aws-s3-customer-custom-attributes: 100.4.5
+magento/module-aws-s3-gift-card-import-export: 100.4.5
+magento/module-aws-s3-scheduled-import-export: 100.4.5
+magento/module-banner: 101.2.8
+magento/module-banner-customer-segment: 100.4.6
+magento/module-banner-graph-ql: 100.4.4
+magento/module-banner-staging: 100.4.2
+magento/module-bundle-import-export-staging: 100.4.5
+magento/module-bundle-staging: 100.4.8
+magento/module-catalog-event: 101.1.7
+magento/module-catalog-import-export-staging: 100.4.5
+magento/module-catalog-inventory-staging: 100.4.6
+magento/module-catalog-permissions: 100.4.8
+magento/module-catalog-permissions-graph-ql: 100.4.6
+magento/module-catalog-rule-staging: 100.4.8
+magento/module-catalog-staging: 100.4.8
+magento/module-catalog-staging-graph-ql: 100.4.7
+magento/module-catalog-url-rewrite-staging: 100.4.7
+magento/module-checkout-address-search: 100.4.7
+magento/module-checkout-address-search-gift-registry: 100.4.4
+magento/module-checkout-staging: 100.4.7
+magento/module-cms-staging: 100.4.8
+magento/module-configurable-product-staging: 100.4.7
+magento/module-custom-attribute-management: 100.4.7
+magento/module-customer-balance: 100.4.8
+magento/module-customer-balance-graph-ql: 100.4.5
+magento/module-customer-custom-attributes: 100.4.8
+magento/module-customer-custom-attributes-graph-ql: 100.4.1
+magento/module-customer-finance: 100.4.5
+magento/module-customer-segment: 102.1.8
+magento/module-customer-segment-graph-ql: 100.4.1
+magento/module-deferred-total-calculating: 100.4.3
+magento/module-downloadable-staging: 100.4.7
+magento/module-elasticsearch-catalog-permissions: 100.4.4
+magento/module-elasticsearch-catalog-permissions-graph-ql: 100.4.3
+magento/module-enterprise: 100.4.6
+magento/module-gift-card: 101.3.8
+magento/module-gift-card-account: 101.2.8
+magento/module-gift-card-account-graph-ql: 100.4.6
+magento/module-gift-card-graph-ql: 100.4.8
+magento/module-gift-card-import-export: 100.4.5
+magento/module-gift-card-staging: 100.4.5
+magento/module-gift-message-staging: 100.4.5
+magento/module-gift-registry: 101.2.8
+magento/module-gift-registry-graph-ql: 100.4.4
+magento/module-gift-wrapping: 101.2.7
+magento/module-gift-wrapping-graph-ql: 100.4.5
+magento/module-gift-wrapping-staging: 100.4.5
+magento/module-google-optimizer-staging: 100.4.5
+magento/module-google-tag-manager: 100.4.8
+magento/module-grouped-product-staging: 100.4.6
+magento/module-import-csv: 100.4.2
+magento/module-import-csv-api: 100.4.2
+magento/module-import-json: 100.4.1
+magento/module-import-json-api: 100.4.1
+magento/module-invitation: 100.4.7
+magento/module-layered-navigation-staging: 100.4.5
+magento/module-logging: 101.2.8
+magento/module-login-as-customer-logging: 100.4.8
+magento/module-login-as-customer-website-restriction: 100.4.6
+magento/module-media-content-catalog-staging: 100.4.5
+magento/module-msrp-staging: 100.4.6
+magento/module-multicoupon: 100.4.1
+magento/module-multicoupon-graph-ql: 100.4.1
+magento/module-multicoupon-ui: 100.4.1
+magento/module-multiple-wishlist: 100.4.8
+magento/module-multiple-wishlist-graph-ql: 100.4.4
+magento/module-payment-staging: 100.4.5
+magento/module-persistent-history: 100.4.5
+magento/module-price-permissions: 100.4.4
+magento/module-product-video-staging: 100.4.5
+magento/module-promotion-permissions: 100.4.5
+magento/module-quote-commerce-graph-ql: 100.4.1
+magento/module-quote-gift-card-options: 100.4.5
+magento/module-quote-staging: 100.4.5
+magento/module-reminder: 101.2.7
+magento/module-remote-storage-commerce: 100.4.4
+magento/module-resource-connections: 100.4.5
+magento/module-review-staging: 100.4.5
+magento/module-reward: 101.2.8
+magento/module-reward-graph-ql: 100.4.7
+magento/module-reward-staging: 100.4.5
+magento/module-rma: 101.2.8
+magento/module-rma-graph-ql: 100.4.7
+magento/module-rma-staging: 100.4.5
+magento/module-sales-archive: 101.0.6
+magento/module-sales-rule-staging: 100.4.7
+magento/module-scalable-checkout: 100.4.7
+magento/module-scalable-inventory: 100.4.6
+magento/module-scalable-oms: 100.4.6
+magento/module-scheduled-import-export: 101.2.8
+magento/module-search-staging: 100.4.6
+magento/module-staging: 101.2.8
+magento/module-staging-graph-ql: 100.4.5
+magento/module-support: 101.2.7
+magento/module-swat: 100.4.6
+magento/module-target-rule: 101.2.8
+magento/module-target-rule-graph-ql: 100.4.5
+magento/module-versions-cms: 101.2.8
+magento/module-versions-cms-page-cache: 100.4.4
+magento/module-versions-cms-url-rewrite: 100.4.6
+magento/module-versions-cms-url-rewrite-graph-ql: 100.4.4
+magento/module-visual-merchandiser: 100.4.8
+magento/module-webapi-rest-gws: 100.4.0
+magento/module-website-restriction: 100.4.7
+magento/module-weee-staging: 100.4.5
+magento/module-wishlist-gift-card: 100.4.4
+magento/module-wishlist-gift-card-graph-ql: 100.4.4
+magento/page-builder-commerce: 1.7.5
+magento/product-community-edition: 2.4.8
+magento/security-package-ee: 1.0.3
+magento/theme-adminhtml-spectrum: 100.4.3
 magento/zend-cache: ^1.16
 magento/zend-db: ^1.16
 magento/zend-pdf: ^1.16
-monolog/monolog: ^2.7
-opensearch-project/opensearch-php: ^1.0 || ^2.0
+monolog/monolog: ^3.6
+opensearch-project/opensearch-php: ^2.3
 pelago/emogrifier: ^7.0
-php: ~8.1.0||~8.2.0||~8.3.0
+php: ~8.2.0||~8.3.0||~8.4.0
 php-amqplib/php-amqplib: ^3.2
 phpseclib/mcrypt_compat: ^2.0
 phpseclib/phpseclib: ^3.0
@@ -226,13 +225,15 @@ psr/log: ^2 || ^3
 ramsey/uuid: ^4.2
 symfony/console: ^6.4
 symfony/intl: ^6.4
+symfony/mailer: ^6.4
+symfony/mime: ^6.4
 symfony/process: ^6.4
 symfony/string: ^6.4
 tedivm/jshrink: ^1.4
 tubalmartin/cssmin: ^4.1
-web-token/jwt-framework: ^3.1
+web-token/jwt-framework: ^3.4
 webonyx/graphql-php: ^15.0
-wikimedia/less.php: ^3.2
+wikimedia/less.php: ^5.0
 ```
 
 ## 타사 라이선스
@@ -248,13 +249,6 @@ wikimedia/less.php: ^3.2
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>
-      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
-    </td>
-    <td>라이브러리</td>
-    <td>Elasticsearch용 PHP 클라이언트</td>
-  </tr>
   <tr>
     <td>
       <a href="https://github.com/opensearch-project/opensearch-php.git">opensearch-project/opensearch-php</a>
@@ -299,6 +293,20 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/opentelemetry-php/api.git">원격 분석 열기/api</a>
+    </td>
+    <td>라이브러리</td>
+    <td>OpenTelemetry PHP용 API입니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/opentelemetry-php/context.git">원격 분석 열기/컨텍스트</a>
+    </td>
+    <td>라이브러리</td>
+    <td>OpenTelemetry PHP에 대한 컨텍스트 구현입니다.</td>
+  </tr>
+  <tr>
+    <td>
       paypal/module-braintree
     </td>
     <td>메타패키지</td>
@@ -320,7 +328,7 @@ wikimedia/less.php: ^3.2
   <thead>
     <tr>
       <th>이름</th>
-      <th>유형</th>
+      <th>형</th>
       <th>설명</th>
     </tr>
   </thead>
@@ -334,10 +342,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/DASPRiD/Enum.git">dasprid/enum</a>
+      <a href="https://github.com/DASPRiD/Enum.git">dasprid/열거형</a>
     </td>
-    <td>라이브러리</td>
-    <td>PHP 7.1 enum 구현</td>
+    <td>도서관</td>
+    <td>PHP 7.1 열거형 구현</td>
   </tr>
   <tr>
     <td>
@@ -376,17 +384,17 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/duosecurity/duo_universal_php.git">duosecurity/duo_universal_php</a>
+    </td>
+    <td>라이브러리</td>
+    <td>듀오 유니버설 SDK의 PHP 구현입니다.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/firebase/php-jwt.git">firebase/php-jwt</a>
     </td>
     <td>라이브러리</td>
     <td>PHP에서 JSON 웹 토큰(JWT)을 인코딩하고 디코딩하는 간단한 라이브러리입니다. 현재 사양을 준수해야 합니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/google/recaptcha.git">google/recaptcha</a>
-    </td>
-    <td>라이브러리</td>
-    <td>스팸 및 악용으로부터 웹 사이트를 보호하는 무료 서비스인 reCAPTCHA용 클라이언트 라이브러리.</td>
   </tr>
   <tr>
     <td>
@@ -411,20 +419,6 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-crypt.git">laminas/laminas-crypt</a>
-    </td>
-    <td>라이브러리</td>
-    <td>강력한 암호화 도구 및 암호 해싱</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-db.git">laminas/laminas-db</a>
-    </td>
-    <td>라이브러리</td>
-    <td>데이터베이스 추상화 계층, SQL 추상화, 결과 집합 추상화, RowDataGateway 및 TableDataGateway 구현</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-di.git">laminas/laminas-di</a>
     </td>
     <td>라이브러리</td>
@@ -439,24 +433,17 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-eventmanager.git">laminas/laminas-eventmanager</a>
+      <a href="https://github.com/laminas/laminas-eventmanager.git">라미나스/라미나스-이벤트매니저</a>
     </td>
-    <td>라이브러리</td>
-    <td>PHP 응용 프로그램 내에서 이벤트를 트리거하고 수신</td>
+    <td>도서관</td>
+    <td>PHP 애플리케이션 내에서 이벤트 트리거 및 수신 대기</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-feed.git">라미나/라미나 피드</a>
+      <a href="https://github.com/laminas/laminas-feed.git">라미나/라미나스 피드</a>
     </td>
     <td>라이브러리</td>
     <td>에서는 RSS 및 Atom 피드를 만들고 소비하는 기능을 제공합니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-file.git">laminas/laminas-file</a>
-    </td>
-    <td>라이브러리</td>
-    <td>PHP 클래스 파일 찾기</td>
   </tr>
   <tr>
     <td>
@@ -467,10 +454,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-http.git">laminas/laminas-http</a>
+      <a href="https://github.com/laminas/laminas-http.git">라미나스/라미나스-http</a>
     </td>
-    <td>라이브러리</td>
-    <td>HTTP(Hyper-Text Transfer Protocol) 요청을 수행할 수 있는 간편한 인터페이스 제공</td>
+    <td>도서관</td>
+    <td>HTTP(Hyper-Text Transfer Protocol) 요청을 수행하기 위한 쉬운 인터페이스를 제공합니다.</td>
   </tr>
   <tr>
     <td>
@@ -495,27 +482,6 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mail.git">laminas/laminas-mail</a>
-    </td>
-    <td>라이브러리</td>
-    <td>텍스트 및 MIME 호환 다중 파트 전자 메일 메시지를 모두 작성하고 전송하는 일반 기능을 제공합니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-math.git">laminas/laminas-math</a>
-    </td>
-    <td>라이브러리</td>
-    <td>암호학적으로 안전한 의사 난수를 만들고 큰 정수를 관리합니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-mime.git">laminas/laminas-mime</a>
-    </td>
-    <td>라이브러리</td>
-    <td>MIME 메시지 및 부분 만들기 및 구문 분석</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-modulemanager.git">laminas/laminas-modulemanager</a>
     </td>
     <td>라이브러리</td>
@@ -527,13 +493,6 @@ wikimedia/less.php: ^3.2
     </td>
     <td>라이브러리</td>
     <td>MVC 응용 프로그램, 컨트롤러 및 플러그인을 포함한 Laminas의 이벤트 기반 MVC 계층</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-oauth.git">laminas/laminas-oauth</a>
-    </td>
-    <td>라이브러리</td>
-    <td></td>
   </tr>
   <tr>
     <td>
@@ -581,12 +540,12 @@ wikimedia/less.php: ^3.2
     <td>
       <a href="https://github.com/laminas/laminas-soap.git">laminas/laminas-soap</a>
     </td>
-    <td>라이브러리</td>
+    <td>도서관</td>
     <td></td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-stdlib.git">laminas/laminas-stdlib</a>
+      <a href="https://github.com/laminas/laminas-stdlib.git">라미나/라미나스-stdlib</a>
     </td>
     <td>라이브러리</td>
     <td>SPL 확장, 배열 유틸리티, 오류 처리기 등</td>
@@ -600,9 +559,16 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-translator.git">laminas/laminas-translator</a>
+    </td>
+    <td>도서관</td>
+    <td>laminas-i18n의 Translator 구성 요소용 인터페이스</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-uri.git">laminas/laminas-uri</a>
     </td>
-    <td>라이브러리</td>
+    <td>도서관</td>
     <td>"URI(Uniform Resource Identifier)"를 조작하고 확인하는 데 도움이 되는 구성 요소</td>
   </tr>
   <tr>
@@ -621,10 +587,24 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/marc-mabe/php-enum.git">marc-mabe/php-enum</a>
+    </td>
+    <td>라이브러리</td>
+    <td>기본 PHP를 사용한 열거형의 간단하고 빠른 구현</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/nikic/PHP-Parser.git">nikic/php-parser</a>
     </td>
     <td>라이브러리</td>
     <td>PHP로 작성된 PHP 파서</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/phpfui/recaptcha.git">phpfui/recaptcha</a>
+    </td>
+    <td>라이브러리</td>
+    <td>PHP 8.4 이상용 Google의 reCAPTCHA용 클라이언트 라이브러리</td>
   </tr>
   <tr>
     <td>
@@ -680,7 +660,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/paragonie/sodium_compat.git">파라고니/나트륨_호환</a>
     </td>
     <td>라이브러리</td>
-    <td>libsodium의 순수 PHP 구현; 존재하는 경우 PHP 확장을 사용합니다.</td>
+    <td>libsodium의 순수 PHP 구현; PHP 확장이 있는 경우 이를 사용합니다.</td>
   </tr>
   </tbody>
 </table>
@@ -691,7 +671,7 @@ wikimedia/less.php: ^3.2
   <thead>
     <tr>
       <th>이름</th>
-      <th>유형</th>
+      <th>형</th>
       <th>설명</th>
     </tr>
   </thead>
@@ -708,12 +688,12 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>라이브러리</td>
-    <td>이전 videalvaro/php-amqplib.  이 라이브러리는 AMQP 프로토콜의 순수한 PHP 구현입니다. RabbitMQ에 대해 테스트되었습니다.</td>
+    <td>이전 명칭은 videlalvaro/php-amqplib입니다.  이 라이브러리는 AMQP 프로토콜의 순수 PHP 구현. RabbitMQ에 대해 테스트되었습니다.</td>
   </tr>
   </tbody>
 </table>
 
-### MIT
+### MIT (영문)
 
 <table>
   <thead>
@@ -798,12 +778,12 @@ wikimedia/less.php: ^3.2
     <td>
       <a href="https://github.com/composer/semver.git">작성기/semver</a>
     </td>
-    <td>라이브러리</td>
-    <td>유틸리티, 버전 제약 조건 구문 분석 및 유효성 검사를 제공하는 Semver 라이브러리입니다.</td>
+    <td>도서관</td>
+    <td>유틸리티, 버전 제약 조건 구문 분석 및 유효성 검사 기능을 제공하는 Semver 라이브러리입니다.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/spdx-licenses.git">작성기/spdx 라이선스</a>
+      <a href="https://github.com/composer/spdx-licenses.git">컴포저/spdx 라이선스</a>
     </td>
     <td>라이브러리</td>
     <td>SPDX 라이선스 목록 및 유효성 검사 라이브러리.</td>
@@ -814,6 +794,34 @@ wikimedia/less.php: ^3.2
     </td>
     <td>라이브러리</td>
     <td>Xdebug 없이 프로세스를 다시 시작합니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/doctrine/lexer.git">doctrine/lexer</a>
+    </td>
+    <td>도서관</td>
+    <td>PHP Doctrine Lexer 파서 라이브러리는 하향식, 재귀 하강 파서에서 사용할 수 있습니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/egulias/EmailValidator.git">egulias/이메일 유효성 검사기</a>
+    </td>
+    <td>도서관</td>
+    <td>여러 RFC에 대한 이메일 유효성 검사를 위한 라이브러리</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/elastic/elastic-transport-php.git">탄성/전송</a>
+    </td>
+    <td>도서관</td>
+    <td>Elastic 제품을 위한 HTTP 전송 PHP 라이브러리</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/elastic/elasticsearch-php.git">엘라스틱서치/엘라스틱서치</a>
+    </td>
+    <td>라이브러리</td>
+    <td>Elasticsearch용 PHP 클라이언트</td>
   </tr>
   <tr>
     <td>
@@ -875,40 +883,47 @@ wikimedia/less.php: ^3.2
     <td>
       <a href="https://github.com/thephpleague/flysystem-aws-s3-v3.git">league/flysystem-aws-s3-v3</a>
     </td>
-    <td>라이브러리</td>
-    <td>Flysystem용 AWS S3 파일 시스템 어댑터</td>
+    <td>도서관</td>
+    <td>Flysystem용 AWS S3 파일 시스템 어댑터.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/mime-type-detection.git">league/mime-type-detection</a>
+      <a href="https://github.com/thephpleague/flysystem-local.git">리그/플라이시스템-로컬</a>
     </td>
-    <td>라이브러리</td>
+    <td>도서관</td>
+    <td>Flysystem용 로컬 파일 시스템 어댑터입니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/thephpleague/mime-type-detection.git">리그/MIME 유형 탐지</a>
+    </td>
+    <td>도서관</td>
     <td>Flysystem에 대한 MIME 유형 감지</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Seldaek/monolog.git">모노로그/모노로그</a>
+      <a href="https://github.com/Seldaek/monolog.git">모놀로그/모놀로그</a>
     </td>
-    <td>라이브러리</td>
-    <td>파일, 소켓, 받은 편지함, 데이터베이스 및 다양한 웹 서비스에 로그를 보냅니다.</td>
+    <td>도서관</td>
+    <td>로그를 파일, 소켓, 받은 편지함, 데이터베이스 및 다양한 웹 서비스로 전송합니다.</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/jmespath/jmespath.php.git">mtdowling/jmespath.php</a>
     </td>
-    <td>라이브러리</td>
+    <td>도서관</td>
     <td>JSON 문서에서 요소를 추출하는 방법을 선언적으로 지정</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/paragonie/constant_time_encoding.git">paragonie/constant_time_encoding</a>
+      <a href="https://github.com/paragonie/constant_time_encoding.git">파라고니/constant_time_encoding</a>
     </td>
-    <td>라이브러리</td>
-    <td>RFC 4648 인코딩의 일정 시간 구현(Base-64, Base-32, Base-16)</td>
+    <td>도서관</td>
+    <td>RFC 4648 인코딩의 상수 시간 구현(Base-64, Base-32, Base-16)</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/paragonie/random_compat.git">paragonie/random_compat</a>
+      <a href="https://github.com/paragonie/random_compat.git">파라고니/random_compat</a>
     </td>
     <td>라이브러리</td>
     <td>PHP 7의 random_bytes() 및 random_int()에 대한 PHP 5.x polyfill</td>
@@ -919,6 +934,27 @@ wikimedia/less.php: ^3.2
     </td>
     <td>라이브러리</td>
     <td>CSS 스타일을 HTML 코드의 인라인 스타일 속성으로 변환합니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/php-http/discovery.git">php-http/discovery</a>
+    </td>
+    <td>composer-plug</td>
+    <td>PSR-7, PSR-17, PSR-18 및 HTTPlug 구현을 찾아서 설치합니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/php-http/httplug.git">php-http/httplug</a>
+    </td>
+    <td>라이브러리</td>
+    <td>HTTPlug, PHP용 HTTP 클라이언트 추상화</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/php-http/promise.git">php-http/promise</a>
+    </td>
+    <td>라이브러리</td>
+    <td>비동기 HTTP 요청에 사용된 Promise</td>
   </tr>
   <tr>
     <td>
@@ -943,10 +979,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/phpseclib/mcrypt_compat.git">phpseclib/mcrypt_compat</a>
+      <a href="https://github.com/phpseclib/mcrypt_compat.git">phpseclib / mcrypt_compat</a>
     </td>
-    <td>라이브러리</td>
-    <td>PHP 5.x-8.x polyfill for mcrypt extension</td>
+    <td>도서관</td>
+    <td>mcrypt 확장을 위한 PHP 5.x-8.x polyfill</td>
   </tr>
   <tr>
     <td>
@@ -957,42 +993,42 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+      <a href="https://github.com/php-fig/cache.git">psr/캐시</a>
     </td>
-    <td>라이브러리</td>
-    <td>라이브러리 캐싱을 위한 공통 인터페이스</td>
+    <td>도서관</td>
+    <td>캐싱 라이브러리에 대한 공통 인터페이스</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/clock.git">psr/clock</a>
+      <a href="https://github.com/php-fig/clock.git">psr/클럭</a>
     </td>
-    <td>라이브러리</td>
-    <td>시계를 읽기 위한 공통 인터페이스.</td>
+    <td>도서관</td>
+    <td>시계를 읽기 위한 공통 인터페이스입니다.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/container.git">psr/container</a>
+      <a href="https://github.com/php-fig/container.git">PSR/컨테이너</a>
     </td>
-    <td>라이브러리</td>
-    <td>공통 컨테이너 인터페이스 (PHP 그림 PSR-11)</td>
+    <td>도서관</td>
+    <td>공통 컨테이너 인터페이스(PHP FIG PSR-11)</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/event-dispatcher.git">psr/event-dispatcher</a>
+      <a href="https://github.com/php-fig/event-dispatcher.git">psr/이벤트 디스패처</a>
     </td>
-    <td>라이브러리</td>
-    <td>이벤트 처리를 위한 표준 인터페이스입니다.</td>
+    <td>도서관</td>
+    <td>이벤트 처리를 위한 표준 인터페이스.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/http-client.git">psr/http-client</a>
+      <a href="https://github.com/php-fig/http-client.git">psr/http-클라이언트</a>
     </td>
-    <td>라이브러리</td>
-    <td>HTTP 클라이언트용 공통 인터페이스</td>
+    <td>도서관</td>
+    <td>HTTP 클라이언트에 대한 공통 인터페이스</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/http-factory.git">psr/http-factory</a>
+      <a href="https://github.com/php-fig/http-factory.git">psr/http 공장</a>
     </td>
     <td>라이브러리</td>
     <td>PSR-17: PSR-7 HTTP 메시지 팩토리에 대한 일반 인터페이스</td>
@@ -1048,9 +1084,9 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Seldaek/jsonlint.git">seld/jsonlint</a>
+      <a href="https://github.com/Seldaek/jsonlint.git">셀드/jsonlint</a>
     </td>
-    <td>라이브러리</td>
+    <td>도서관</td>
     <td>JSON 린터</td>
   </tr>
   <tr>
@@ -1064,36 +1100,36 @@ wikimedia/less.php: ^3.2
     <td>
       <a href="https://github.com/Seldaek/signal-handler.git">seld/signal-handler</a>
     </td>
-    <td>라이브러리</td>
-    <td>쉬운 교차 플랫폼 개발을 위해 신호가 지원되지 않는 곳에서 자동으로 실패하는 간단한 unix 신호 처리기</td>
+    <td>도서관</td>
+    <td>쉬운 크로스 플랫폼 개발을 위해 신호가 지원되지 않는 경우 자동으로 실패하는 간단한 유닉스 신호 핸들러</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Spomky-Labs/aes-key-wrap.git">spomky-labs/aes-key-wrap</a>
+      <a href="https://github.com/Spomky-Labs/aes-key-wrap.git">spomky-labs/aes-키 랩</a>
     </td>
-    <td>라이브러리</td>
-    <td>PHP용 AES Key Wrap.</td>
+    <td>도서관</td>
+    <td>PHP용 AES 키 랩.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
+      <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp (스폰키 랩스/otphp)</a>
     </td>
-    <td>라이브러리</td>
-    <td>RFC 4226(HOTP 알고리즘) 및 RFC 6238(TOTP 알고리즘)에 따라 1회 암호를 생성하고 Google Authenticator와 호환되는 PHP 라이브러리</td>
+    <td>도서관</td>
+    <td>RFC 4226(HOTP 알고리즘) 및 RFC 6238(TOTP 알고리즘)에 따라 일회용 비밀번호를 생성하고 Google OTP와 호환되는 PHP 라이브러리입니다</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki-framework</a>
+      <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki-프레임워크</a>
     </td>
-    <td>라이브러리</td>
-    <td>공개 키 인프라 관리를 위한 PHP 프레임워크입니다. X.509 공개 키 인증서, 속성 인증서, 인증 요청 및 인증 경로 유효성 검사로 구성됩니다.</td>
+    <td>도서관</td>
+    <td>공개 키 인프라 관리를 위한 PHP 프레임워크입니다. X.509 공개 키 인증서, 특성 인증서, 인증 요청 및 인증 경로 유효성 검사 기능으로 구성됩니다.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/config.git">symfony/config</a>
+      <a href="https://github.com/symfony/config.git">심포니/구성</a>
     </td>
-    <td>라이브러리</td>
-    <td>모든 종류의 구성 값을 찾고, 로드하고, 결합하고, 자동으로 채우고, 유효성을 검사하는 데 도움이 됩니다.</td>
+    <td>도서관</td>
+    <td>모든 종류의 구성 값을 찾고, 로드하고, 결합하고, 자동 채우고, 검증하는 데 도움이 됩니다.</td>
   </tr>
   <tr>
     <td>
@@ -1183,15 +1219,29 @@ wikimedia/less.php: ^3.2
     <td>
       <a href="https://github.com/symfony/http-kernel.git">symfony/http-kernel</a>
     </td>
-    <td>라이브러리</td>
-    <td>요청을 응답으로 변환하는 구조화된 프로세스를 제공합니다.</td>
+    <td>도서관</td>
+    <td>요청을 응답으로 변환하기 위한 구조화된 프로세스를 제공합니다.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/intl.git">symfony/intl</a>
+      <a href="https://github.com/symfony/intl.git">심포니/INTL</a>
+    </td>
+    <td>도서관</td>
+    <td>ICU 라이브러리의 로컬라이제이션 데이터에 대한 액세스를 제공합니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/mailer.git">심포니/메일러</a>
+    </td>
+    <td>도서관</td>
+    <td>이메일 전송에 도움이 됩니다.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/mime.git">symfony/mime</a>
     </td>
     <td>라이브러리</td>
-    <td>ICU 라이브러리의 로컬라이제이션 데이터에 대한 액세스를 제공합니다.</td>
+    <td>MIME 메시지 조작 허용</td>
   </tr>
   <tr>
     <td>
@@ -1230,13 +1280,6 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-php72.git">symfony/polyfill-php72</a>
-    </td>
-    <td>라이브러리</td>
-    <td>일부 PHP 7.2+ 기능을 더 낮은 PHP 버전으로 지원하는 Symfony polyfill</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/polyfill-php73.git">symfony/polyfill-php73</a>
     </td>
     <td>라이브러리</td>
@@ -1258,10 +1301,17 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-php83.git">symfony/polyfill-php83</a>
+      <a href="https://github.com/symfony/polyfill-php82.git">symfony/polyfill-php82</a>
     </td>
     <td>라이브러리</td>
-    <td>일부 PHP 8.3+ 기능을 더 낮은 PHP 버전으로 지원하는 Symfony polyfill</td>
+    <td>일부 PHP 8.2+ 기능을 더 낮은 PHP 버전으로 지원하는 Symfony polyfill</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php83.git">symfony/polyfill-php83</a>
+    </td>
+    <td>도서관</td>
+    <td>Symfony polyfill은 일부 PHP 8.3+ 기능을 하위 PHP 버전으로 백포팅합니다.</td>
   </tr>
   <tr>
     <td>
@@ -1279,10 +1329,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/string.git">symfony/string</a>
+      <a href="https://github.com/symfony/string.git">심포니/스트링</a>
     </td>
-    <td>라이브러리</td>
-    <td>문자열에 개체 지향 API를 제공하고 바이트, UTF-8 코드 포인트 및 자소 클러스터를 통합 방식으로 처리합니다.</td>
+    <td>도서관</td>
+    <td>문자열에 객체 지향 API를 제공하고 바이트, UTF-8 코드 포인트 및 문자소 클러스터를 통합된 방식으로 처리합니다.</td>
   </tr>
   <tr>
     <td>
@@ -1300,17 +1350,17 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/yaml.git">symfony/yaml</a>
+    </td>
+    <td>라이브러리</td>
+    <td>YAML 파일을 로드하고 덤프합니다</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/web-token/jwt-framework.git">웹 토큰/jwt 프레임워크</a>
     </td>
     <td>교향다발</td>
     <td>PHP 및 Symfony 번들을 위한 JSON 개체 서명 및 암호화 라이브러리입니다.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/webmozarts/assert.git">webmozart/assert</a>
-    </td>
-    <td>라이브러리</td>
-    <td>좋은 오류 메시지와 함께 메서드 입/출력의 유효성을 검사하는 어설션입니다.</td>
   </tr>
   <tr>
     <td>
@@ -1342,6 +1392,13 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      paypal/module-braintree-gift-card
+    </td>
+    <td>magento2-module</td>
+    <td>해당 사항 없음</td>
+  </tr>
+  <tr>
+    <td>
       paypal/module-braintree-gift-card-account
     </td>
     <td>magento2-module</td>
@@ -1357,6 +1414,13 @@ wikimedia/less.php: ^3.2
   <tr>
     <td>
       paypal/module-braintree-graph-ql
+    </td>
+    <td>magento2-module</td>
+    <td>해당 사항 없음</td>
+  </tr>
+  <tr>
+    <td>
+      paypal/module-braintree-reward
     </td>
     <td>magento2-module</td>
     <td>해당 사항 없음</td>
@@ -1378,7 +1442,7 @@ wikimedia/less.php: ^3.2
   </tbody>
 </table>
 
-### PHP
+### 필리핀 페소
 
 <table>
   <thead>
@@ -1405,7 +1469,7 @@ wikimedia/less.php: ^3.2
   <thead>
     <tr>
       <th>이름</th>
-      <th>유형</th>
+      <th>형</th>
       <th>설명</th>
     </tr>
   </thead>
@@ -1413,7 +1477,7 @@ wikimedia/less.php: ^3.2
   </tbody>
 </table>
 
-### 소유
+### 독점
 
 <table>
   <thead>
@@ -1429,7 +1493,7 @@ wikimedia/less.php: ^3.2
       paypal/module-braintree-core
     </td>
     <td>magento2-module</td>
-    <td>Gene Commerce for PayPal의 Magento Braintree 2.2.0 모듈에서 포크합니다.</td>
+    <td>Gene Commerce for PayPal의 Magento Braintree 2.2.0 모듈 포크.</td>
   </tr>
   </tbody>
 </table>

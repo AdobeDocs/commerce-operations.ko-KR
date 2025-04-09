@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.4의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.4-p13
+
+Adobe Commerce 2.4.4-p13 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)을 참조하십시오.
+
+{{b2b-patches}}
 
 ## 2.4.4-p12
 
@@ -30,17 +38,17 @@ Adobe Commerce 2.4.4-p12 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p11 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오[.
 
 {{b2b-patches}}
 
-### 강조 표시
+### 하이라이트
 
 {{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ## 2.4.4-p10
 
-Adobe Commerce 2.4.4-p10 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
+Adobe Systems Commerce 2.4.4-p10 보안 릴리스에서는 이전 2.4.4 릴리스에서 확인된 취약점에 대한 보안 버그 수정을 제공합니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)을 참조하십시오.
 
@@ -56,9 +64,9 @@ Adobe Commerce 2.4.4-p10 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오[.
 
-### CVE-2024-34102용 핫픽스 적용
+### CVE-2024-34102에 대한 핫픽스 적용
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
@@ -74,15 +82,15 @@ Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별�
 
 Adobe Commerce 2.4.4-p8 보안 릴리스는 Adobe Commerce 2.4.4 배포에 대한 보안 버그 수정 사항을 제공합니다. 이러한 업데이트는 이전 릴리스에서 식별된 취약점을 수정합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오[.
 
 ## 2.4.4-p7
 
-Adobe Commerce 2.4.4-p7 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
+Adobe Systems Commerce 2.4.4-p7 보안 릴리스에서는 이전 릴리스에서 발견된 취약점에 대한 보안 버그 수정을 제공합니다. 이 릴리스에는 최신 보안 모범 사례의 준수를 개선하는 보안 개선 사항도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오[.
 
-### 강조 표시
+### 하이라이트
 
 이번 릴리스에는 다음과 같은 두 가지 중요한 보안 개선 사항이 도입되었습니다.
 
@@ -91,7 +99,7 @@ Adobe Commerce 2.4.4-p7 보안 릴리스는 이전 릴리스에서 식별된 취
    * 이제 블록에 대해 생성되지 않은 캐시 키에는 자동으로 생성되는 키의 접두사와 다른 접두사가 포함됩니다. (생성되지 않은 캐시 키는 템플릿 지시문 구문 또는 `setCacheKey` 또는 `setData` 메서드를 통해 설정된 키입니다.)
    * 이제 블록의 생성되지 않은 캐시 키에는 문자, 숫자, 하이픈(-) 및 밑줄(_)만 사용해야 합니다. <!-- AC-9831 -->
 
-* **자동 생성된 쿠폰 코드 수에 대한 제한**. 이제 Commerce에서 자동으로 생성되는 쿠폰 코드 수를 제한합니다. 기본 최대값은 250,000입니다. 판매자는 새 **[!UICONTROL Code Quantity Limit]** 구성 옵션(**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**)을 사용하여 이 새 제한을 제어할 수 있습니다. <!-- AC-8753 -->
+* **자동 생성된 쿠폰 코드 수에 제한이 있습니다**. 이제 Commerce에서 자동으로 생성되는 쿠폰 코드 수를 제한합니다. 기본 최대값은 250,000입니다. 판매자는 새 **[!UICONTROL Code Quantity Limit]** 구성 옵션(**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**)을 사용하여 이 새 제한을 제어할 수 있습니다. <!-- AC-8753 -->
 
 ## 2.4.4-p6
 
@@ -142,11 +150,11 @@ Adobe Commerce 2.4.4-p4 보안 릴리스는 이전 릴리스에서 식별된 취
 
 ### 플랫폼 업그레이드
 
-이 릴리스에 대한 플랫폼 업그레이드는 최신 보안 모범 사례를 통해 규정 준수를 개선합니다.
+이 릴리스의 Platform 업그레이드는 최신 보안 모범 사례 준수를 향상시킵니다.
 
-* **Varnish 캐시 7.3 지원**. 이 릴리스는 최신 버전의 Varnish Cache 7.3과 호환됩니다. 6.0.x 및 7u.2.x 버전과의 호환성은 유지되지만, Adobe에서는 Adobe Commerce 2.4.4-p4를 Varnish Cache 버전 7.3 또는 버전 6.0 LTS와만 사용하는 것이 좋습니다.
+* **바니시 캐시 7.3 지원**. 이 릴리스는 최신 버전의 Varnish Cache 7.3과 호환됩니다. 호환성는 6.0.x 및 7u.2.x 버전과 함께 유지되지만 Adobe Systems Varnish Cache 버전 7.3 또는 버전 6.0 LTS에서만 Adobe Systems Commerce 2.4.4-p4를 사용하는 것이 좋습니다.
 
-* **RabbitMQ 3.11 지원**. 이 릴리스는 RabbitMQ 3.11의 최신 버전과 호환됩니다. RabbitMQ 3.9와의 호환성은 2023년 8월까지 지원되지만, Adobe에서는 RabbitMQ 3.11에서만 Adobe Commerce 2.4.4-p4를 사용하는 것이 좋습니다.
+* **RabbitMQ 3.11 지원**. 이 릴리스는 최신 버전의 RabbitMQ 3.11과 호환됩니다. 2023년 8월까지 지원되는 RabbitMQ 3.9와의 호환성은 유지되지만 Adobe Systems는 RabbitMQ 3.11에서만 Adobe Systems Commerce 2.4.4-p4를 사용할 것을 권장합니다.
 
 * **JavaScript 라이브러리**. 오래된 JavaScript 라이브러리가 `moment.js` 라이브러리(v2.29.4), `jQuery UI` 라이브러리(v1.13.2) 및 `jQuery` 유효성 검사 플러그인 라이브러리(v1.19.5)를 비롯한 최신 부 또는 패치 버전으로 업그레이드되었습니다.
 
@@ -168,13 +176,13 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 ## 2.4.4-p1
 
-Adobe Commerce 2.4.4-p1 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 준수하도록 개선된 보안 기능도 포함되어 있습니다.
+Adobe Systems Commerce 2.4.4-p1 보안 릴리스에서는 이전 릴리스에서 발견된 취약점에 대한 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례의 준수를 개선하기 위한 보안 개선 사항도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/security/products/magento/apsb22-38.html)을 참조하십시오.t
+보안 버그 수정에 대한 최신 정보는 Adobe Systems Security Bulletin.t](https://helpx.adobe.com/security/products/magento/apsb22-38.html)를 참조하십시오[.
 
-### `AC-3022.patch`을(를) 적용하여 DHL을 배송 운송업체로 계속 제공
+### `AC-3022.patch` DHL을 운송업체로 계속 제공하려면 적용
 
-DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을 더 이상 사용하지 않을 예정입니다. DHL 통합을 지원하는 Adobe Commerce 2.4.4 및 이전 버전은 버전 6.0만 지원합니다. 이러한 릴리스를 배포하는 판매자는 가능한 한 빨리 `AC-3022.patch`을(를) 적용하여 DHL을 운송 회사로 계속 제공해야 합니다. 패치 다운로드 및 설치에 대한 자세한 내용은 [DHL을 계속 제공하려면 패치 적용](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) 기술 자료 문서를 참조하십시오.
+DHL은 스키마 버전 6.2를 도입했으며 가까운 장래에 스키마 버전 6.0을 더 이상 사용하지 않을 예정입니다. DHL 통합을 지원하는 Adobe Systems Commerce 2.4.4 및 이전 버전은 버전 6.0만 지원합니다. 이러한 릴리스를 배포하는 판매자는 가능한 한 빨리 DHL을 배송업체로 계속 제공하기 위해 신청 `AC-3022.patch` 해야 합니다. [패치 다운로드 및 설치에 대한 자세한 내용은 DHL을 배송업체](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)로 계속 제공하려면 패치 적용 기술 자료 문서를 참조하십시오.
 
 ### 강조 표시
 
@@ -185,6 +193,6 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 ### 알려진 문제
 
-**문제**: 2.4.4-p1 패키지에서 실행할 때 웹 API 및 통합 테스트에 이 오류가 표시됩니다. `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **해결 방법**: `require monolog/monolog:2.6.0` 명령을 실행하여 이전 버전의 Monolog를 설치하십시오. <!-- AC-3651-->
+**문제**: 웹 API 및 통합 테스트는 2.4.4-p1 패키지 `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`에서 실행할 때 다음 오류를 표시합니다. **해결 방법**: `require monolog/monolog:2.6.0` 명령을 실행하여 이전 버전의 Monolog를 설치하십시오. <!-- AC-3651-->
 
 **문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) 기술 자료 문서로 업그레이드한 후 다운그레이드된 [패키지를 참조하십시오.
