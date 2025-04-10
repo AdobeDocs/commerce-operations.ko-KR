@@ -4,14 +4,18 @@ description: ACSD-50368 패치를 적용하여 비동기 REST API 또는 비동�
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 9039635038bee9083fa3ed009e79c76e3655b357
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # ACSD-50368: 고객이 비동기 REST API 또는 비동기 벌크 REST API를 통해 만들어지면 Customers group_id가 무시됩니다
+
+>[!NOTE]
+>
+>이 문제는 2.4.4 이상 버전의 필수 보안 패치 [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)에서 해결되므로 ACSD-50368 패치는 부분적으로 더 이상 사용되지 않습니다.
 
 ACSD-50368 패치는 비동기 REST API 또는 비동기 벌크 REST API를 통해 고객을 만들 때 customers group_id가 무시되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50368입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
@@ -23,7 +27,7 @@ ACSD-50368 패치는 비동기 REST API 또는 비동기 벌크 REST API를 통�
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.3 - 2.4.4-p4
+* Adobe Commerce(모든 배포 방법) 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
