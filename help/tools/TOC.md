@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 58d57155fdb197897bff7647546b4a79740ebb38
+source-git-commit: b658fd11c7c178f41f9acec07a9aee6285991eda
 workflow-type: tm+mt
-source-wordcount: '7381'
+source-wordcount: '7397'
 ht-degree: 0%
 
 ---
@@ -766,6 +766,7 @@ ht-degree: 0%
          - [ACSD-64149: [!UICONTROL Date range] 상태의 고객 세그먼트는 한 날짜만 편집할 때 저장할 수 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111:  [!DNL Page Builder]에서 제품 구성 요소에 대한 중첩 조건을 설정할 때 InvalidArgumentException: 클래스가 존재하지 않는 오류를 수정합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: 관리 UI에 쿠폰 및 배송 방법 상태 오류가 있는 [!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
+         - [ACSD-64137: 우편 번호로 픽업 위치 검색이 네덜란드어 현지화에 대해 제대로 작동하지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md)
       - v1.1.61 {#v1-1-61}
          - [ACSD-64546: UPS 레이블 생성 중 UI 및 Array에서 문자열 전환 예외에 이르는 일반적인 오류 메시지](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
