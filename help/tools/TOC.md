@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 7358d2aca927c94505e7a99b5ee390aa6a7f5fc9
+source-git-commit: 58d57155fdb197897bff7647546b4a79740ebb38
 workflow-type: tm+mt
-source-wordcount: '7359'
+source-wordcount: '7381'
 ht-degree: 0%
 
 ---
@@ -771,6 +771,7 @@ ht-degree: 0%
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: 범주 트리에 여러 문제가 더 심층적으로 표시되고 앵커/비앵커 관계가 반영됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] 페이지가 수천 개의 제품 특성을 사용하여 느리게 로드됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64684: 쉼표가 1,000(1,000)로 인해 999를 초과하는 값의 기프트 카드를 저장할 때 유효성 검사 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883: [!UICONTROL Requisition List]에 대한  [!DNL GraphQL] 응답의 잘못된 items_count를 수정하고 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: MAGE_INDEXER_THREADS_COUNT가 설정되면 indexer_update_all_views cron 실행이 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: 스토어 보기 수준에서 카테고리 설명을 저장한 후 WYSIWYG 편집기가 비어 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
