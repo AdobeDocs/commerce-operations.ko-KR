@@ -4,14 +4,18 @@ description: ACSD-49392 패치를 적용하여 번들 제품에 대한 부분 �
 feature: Orders
 role: Admin
 exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 67e050b4ceccc3f30bf8cd49125525b2e8d8b0dd
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # ACSD-49392: 부분 환불 후 주문 상태가 마감으로 변경됨
+
+>[!NOTE]
+>
+>ACSD-49392 패치가 버전 2.4.6-p7에서 2.4.6-p10까지의 [ACSD-57003](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) 패치로 대체되었습니다.
 
 ACSD-49392 패치는 번들 제품에 대한 부분 환불 후 주문 상태가 종료됨으로 변경되는 문제를 수정합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.31이 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-49392입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
@@ -23,7 +27,7 @@ ACSD-49392 패치는 번들 제품에 대한 부분 환불 후 주문 상태가 
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.3.7 - 2.3.7-p4 및 2.4.1 - 2.4.6
+* Adobe Commerce(모든 배포 방법) 2.3.7 - 2.3.7-p4 및 2.4.1 - 2.4.6-p6
 
 >[!NOTE]
 >
