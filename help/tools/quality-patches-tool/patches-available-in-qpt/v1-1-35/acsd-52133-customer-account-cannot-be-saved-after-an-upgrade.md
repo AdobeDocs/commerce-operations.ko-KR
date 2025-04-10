@@ -4,14 +4,18 @@ description: 업그레이드 후 고객 계정을 저장할 수 없는 Adobe Com
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133: 업그레이드 후 고객 계정을 저장할 수 없음
+
+>[!NOTE]
+>
+>보안 패치 [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)과(와) 충돌하여 이 패치는 더 이상 사용되지 않습니다.
 
 ACSD-52133 패치는 업그레이드 후 고객 계정을 저장할 수 없는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.35가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-52133입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
