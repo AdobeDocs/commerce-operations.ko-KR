@@ -4,14 +4,18 @@ description: ACSD-46192 패치는 'async/bulk/V1/configurable-products/bySku/opt
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192: async/bulk/V1/configurable-products/bySku/options endpoint 관련 문제
+
+>[!NOTE]
+>
+>필수 보안 패치 [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)에서 이 문제를 해결하므로 ACSD-46192 패치는 부분적으로 더 이상 사용되지 않습니다.
 
 ACSD-46192 패치는 `async/bulk/V1/configurable-products/bySku/options` 끝점과 관련된 문제를 해결합니다. 이 패치는 [품질 패치 도구(QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-46192입니다. 이 문제는 Adobe Commerce 2.4.5에서 해결되었습니다.
 
@@ -23,7 +27,7 @@ ACSD-46192 패치는 `async/bulk/V1/configurable-products/bySku/options` 끝점�
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.3 및 2.4.4
+* Adobe Commerce(모든 배포 방법) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
