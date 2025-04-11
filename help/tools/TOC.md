@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: b658fd11c7c178f41f9acec07a9aee6285991eda
+source-git-commit: 72917c9e97141216e7393c28048e43f4f5f9c73f
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7407'
 ht-degree: 0%
 
 ---
@@ -777,6 +777,7 @@ ht-degree: 0%
          - [ACP2E-3705: MAGE_INDEXER_THREADS_COUNT가 설정되면 indexer_update_all_views cron 실행이 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: 스토어 보기 수준에서 카테고리 설명을 저장한 후 WYSIWYG 편집기가 비어 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 로드 시간을 수정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
+         - [ACSD-64209: Cron 스케줄러는 [!UICONTROL Ordered]개의 견적을 제외하지 않고 협상가능한 견적을 검색합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
