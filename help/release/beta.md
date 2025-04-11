@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe Commerce Optimizer을 사용하여 다음과 같은 작업을 수행할 �
 - AI와 ML을 사용하여 개인화된 검색 및 권장 사항을 만듭니다.
 - 정확한 구현 및 문제 해결을 위해 동기화 상태 및 상점 이벤트 데이터를 포함한 중요한 제품 데이터 가용성을 확인합니다.
 
-Adobe Commerce Optimizer에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html). Adobe Commerce Optimizer 조기 액세스 프로그램에 참여하려면 [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)에 전자 메일 요청을 보내십시오.
+Adobe Commerce Optimizer에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html). [!DNL Adobe Commerce Optimizer] 조기 액세스 프로그램에 대해 자세히 알아보려면 [조기 액세스 요청 양식](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)을 작성하십시오.
 
 ### 라이브 검색에 대한 검색 기능 향상(공개 Beta)
 
