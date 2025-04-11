@@ -1,7 +1,7 @@
 ---
-source-git-commit: 62b6501fc2ba595146bf7f38a7d3352ef02be1a0
+source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
 workflow-type: tm+mt
-source-wordcount: '26051'
+source-wordcount: '26047'
 ht-degree: 0%
 
 ---
@@ -59,12 +59,12 @@ ht-degree: 0%
    * _참고 사항 수정_: Adobe Commerce 및 확장에 MariaDB 11.4 지원이 추가되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-12715_: Laminas 작성기 종속성을 최신 버전으로 업그레이드하는 중입니다.
-   * _수정 참고 사항_: 시스템은 이제 최신 버전의 laminas composer 종속성을 지원합니다.
-라미나스/라미나스-서비스 매니저
+   * _참고 사항 수정_: 이제 시스템에서 최신 버전의 laminas 작성기 종속성을 지원합니다.
+laminas/laminas-servicemanager
 라미나스/라미나스 서버
-라미나/라미나스-stdlib
+laminas/laminas-stdlib
 laminas/laminas-validator
-호환성 및 최신 기능을 보장합니다. 이전에는 이러한 종속성의 최신 버전으로 업데이트하면 이전 버전과의 비호환성 문제 및 테스트 실패가 발생할 수 있었습니다.
+호환성 및 최신 기능 보장. 이전에는 이러한 종속 항목의 최신 버전으로 업데이트하면 이전 버전과의 호환성 문제 및 테스트 오류가 발생할 수 있었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-12823_: 구성 요소를 업그레이드하는 동안 phpunit 패치 업데이트로 인해 단위 테스트 실패를 조사합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b34c0a75>
@@ -125,11 +125,11 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이제 부모 트랜잭션 ID가 트랜잭션 ID와 동일한 부모 및 자식 개념 트랜잭션을 올바르게 처리하므로 /V1/transactions REST API 끝점을 쿼리할 때 무한 루프가 발생하지 않습니다. 이전에는 이 시나리오가 최대 실행 시간을 초과하여 치명적인 오류를 초래했습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/1bafc571>
 * _AC-11878_: [Graphql] 유형 문제(2.4.7)
-   * _수정 참고 사항_: 이제 시스템은 GraphQL 쿼리를 실행할 때 GetCustomSelectedOptionAttributes 함수에서 정수 값을 올바르게 처리하여 유형 관련 오류를 방지합니다. 이전에는 정수 인수와 함께 GetCustomSelectedOptionAttributes를 사용하는 GraphQL 쿼리를 시작하면 유형 오류가 발생했습니다.
+   * _참고 사항 수정_: 이제 GraphQL 쿼리를 실행할 때 시스템에서 GetCustomSelectedOptionAttributes 함수의 정수 값을 올바르게 처리하여 형식 관련 오류를 방지합니다. 이전에는 정수 인수와 함께 GetCustomSelectedOptionAttributes를 사용하는 GraphQL 쿼리를 실행하면 형식 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38662>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38663>
 * _AC-3223_: 범주 url_key의 특수 문자(REST API를 통해 만든 경우)
-   * _수정 참고_ 사항 : 이전 category_url_key 특수 문자는 수정 후 특수 문자를 표시하지 않습니다category_url_key
+   * _참고 사항 수정_: category_url_key에 특수 문자가 표시된 후 category_url_key의 앞에 특수 문자가 없습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/35577>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/c699c206>
 * _ACP2E-2755_: 2FA Duo 사용 후 rest api 문제
@@ -278,11 +278,11 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/29789>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/25859>
 * _AC-7962_: 휴대폰 보기에서 결제 시 배송 링크가 없습니다.
-   * _참고 사항 수정_: 이제 시스템에서 체크아웃 제목/링크 &quot;배송&quot; 및 &quot;검토 및 결제&quot;가 모바일 보기의 페이지 맨 위에 항상 표시되도록 하여 사용자가 단계를 쉽게 탐색하고 필요한 사항을 수정할 수 있습니다. 이전에는 이러한 제목/링크가 모바일 보기에서 숨김 때문에 사용자가 현재 단계를 알거나 이전 단계로 돌아가기가 어려웠습니다.
+   * _참고 사항 수정_: 이제 시스템에서 체크아웃 제목/링크 &quot;배송&quot; 및 &quot;검토 및 결제&quot;가 모바일 보기의 페이지 맨 위에 항상 표시되도록 하여 사용자가 단계를 쉽게 탐색하고 필요한 사항을 수정할 수 있습니다. 이전에는 이러한 제목/링크가 모바일 보기에 숨겨져 있어서 사용자가 현재 단계를 확인하거나 이전 단계로 돌아가기 어려웠습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/36856>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/36982>
-* _AC-8109_: 고객 주문 쿼리 배송 댓글 created_at가 구성된 표준 시간대가 아닌 +0 표준 시간대스토어 반환됩니다.
-   * _수정 참고_: 이제 시스템에서 고객 주문 쿼리를 사용할 때 배송 댓글의 &#39;created_at&#39; 필드를 고객이 구성한 시간대로 올바르게 표시합니다. 이전에는 &#39;created_at&#39; 입력란이 고객이 구성한 시간대와 관계없이 +0 시간대로 표시되었습니다.
+* _AC-8109_: 고객 주문 쿼리 배송 설명 created_at가 스토어에서 구성한 시간대가 아닌 +0 시간대에 반환됨
+   * _참고 사항 수정_: 이제 고객 주문 쿼리를 사용할 때 시스템에서 고객의 구성된 시간대에 있는 배송 주석의 &#39;created_at&#39; 필드를 올바르게 표시합니다. 이전에는 고객이 구성한 시간대에 관계없이 &#39;created_at&#39; 필드가 +0 시간대에 표시되었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/36947>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/37642>
 * _AC-9843_: i18n:collect-phrase가 번역 무결성을 중단합니다.
@@ -293,19 +293,19 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38395>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2847_: Favicon 업로드가 .ico 파일의 유효성을 검사하지 못했습니다.
-   * _수정 참고_ 사항: 파일 유효성 검사 오류가 &quot;파일 유효성 검사 실패&quot;로 업데이트되었습니다. 저장소 구성에서 이미지 처리 설정&quot;을 확인하십시오. 이전에는 단순히 &quot;파일 유효성 검사 실패&quot;였습니다.
+   * _참고 사항 수정_: 파일 유효성 검사 오류가 &quot;파일 유효성 검사에 실패했습니다. 저장소 구성에서 이미지 처리 설정을 확인하십시오.&quot; 이전에는 단순히 &quot;파일 유효성 검사 실패&quot;였습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/39d54c2d>
-* _ACP2E-2957_: PageBuilder의 갤러리에 새로 업로드된 이미지 대신 이전 이미지 썸네일이 표시됩니다.
-   * _수정 참고_: 페이지 빌더 컨텐츠의 미디어 갤러리를 통해 동일한 이름으로 삭제 및 다시 업로드된 이미지에 대한 이미지 미리 보기를 다시 생성합니다.
+* _ACP2E-2957_: PageBuilder의 갤러리에서 새로 업로드한 이미지 대신 이전 이미지 썸네일을 표시합니다.
+   * _참고 사항 수정_: 페이지 빌더 콘텐츠의 미디어 갤러리를 통해 같은 이름으로 삭제되고 다시 업로드된 이미지에 대한 이미지 미리 보기를 다시 생성합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/60140cd2>, <https://github.com/magento/magento2/commit/001e5188>
 * _ACP2E-2978_: 다른 역할 범위를 가진 관리자가 제품을 저장하면 제품의 기존 관련 제품 정보가 덮어쓰기되거나 삭제됩니다.
    * _수정 참고_: 이전에는 수정 전에 보조 관리자가 관련 제품을 변경하지 않고 저장 단추를 클릭했을 때 관련 제품이 재설정되고 비어 있었습니다. 이 수정 후 보조 관리자가 저장 버튼을 클릭하면 제품이 재설정되지 않고 정상적으로 저장됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/3056e9cb>
-* _ACP2E-3033_: 200개 이상의 주문을 내보낼 수 없음
+* _ACP2E-3033_: 200개 이상의 주문을 내보낼 수 없습니다.
    * _참고 사항 수정_: 문제를 해결하기 위해 GET에서 POST로 HTTP 요청을 변경하여 이전에 제출한 선택한 ID의 요청 크기에 대한 서버 제한을 무시했습니다. 이전에는 GET 요청 크기에 대한 서버 제한으로 인해 문제가 발생했습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/93d50f8d>
 * _ACP2E-3037_: 체크아웃 페이지 유효성 검사 메시지가 잘못되었습니다.
-   * _수정 참고_ 사항: &quot;주소&quot;와 같은 필수 필드가 비어 있으면 서버측 유효성 검사 시 메시지가 표시되지 않습니다. 클라이언트측 유효성 검사는 &quot;필수 필드입니다&quot;라는 필수 필드 오류 알림 알림이 나타나도록 합니다. 이전에는 필수 필드가 비어 있는 경우 클라이언트측 유효성 검사 메시지 외에 &quot;주소가 필요합니다&quot;라는 메시지가 표시되었습니다.
+   * _참고 사항 수정_: &quot;주소&quot;와 같은 필수 필드를 비워 두면 서버측 유효성 검사가 메시지를 표시하지 않습니다. 클라이언트측 유효성 검사는 &quot;필수 필드입니다.&quot;라는 필수 필드 오류 알림이 표시되는지 확인합니다. 이전에는 클라이언트측 유효성 검사 메시지 외에 필수 필드를 비워 두면 &quot;주소가 필요합니다&quot;라는 메시지가 표시되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/9af794a4>
 * _ACP2E-3125_: 관리자 사용자의 암호 재설정 템플릿 문제
    * _참고 사항 수정_: 이제 전자 메일 템플릿에 관리자 사용자 이름이 포함되고 제목이 올바르게 완료되는 올바른 키를 사용하여 문제가 해결되었습니다. 이전에는 사용 중인 오래된 키에서 문제가 발생했습니다.
@@ -331,19 +331,19 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 수정 후 사용자 지정 관리자 도메인이 주 도메인의 하위 도메인인 경우 구성된 하위 도메인에서만 관리자에 액세스할 수 있습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/37663>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: &quot;장바구니에 허용되는 최대 수량&quot;에 대한 유효성 검사 손상
-   * _수정 참고_ 사항: 이전에는 empty를 넣을 `Maximum Qty Allowed in Shopping Cart` 때 예외가 발생하지 않았지만 여기서는 빈 값이 허용되지 않습니다. 이 수정 사항이 적용된 후 빈 문자열을 넣으면 예외가 발생하고 제품 저장이 허용되지 않습니다.
+* _ACP2E-3392_: &quot;장바구니에서 허용되는 최대 수량&quot;에 대한 유효성 검사가 잘못되었습니다.
+   * _참고 사항 수정_: 이전에는 `Maximum Qty Allowed in Shopping Cart`을(를) 비워 두면 여기에 빈 값이 허용되지 않지만 예외를 throw하지 않았습니다. 이 수정 사항이 적용되면 빈 문자열을 넣으면 예외가 발생하고 제품 저장이 허용되지 않습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [페이지 빌더 미리 보기 UI 문제] 페이지 빌더 열의 단추가 올바르게 정렬되지 않습니다.
    * _참고 사항 수정_: 이제 페이지 빌더 열의 단추가 올바르게 정렬되었습니다. 이전에는 페이지 빌더 열 내에서 맞춤이 일치하지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/1a52ef4c>
-* _ACP2E-3431_: 주문한 제품 보고서가 내보내지지 않습니다. 대신 404 오류가 발생했습니다.
+* _ACP2E-3431_: 순서가 지정된 제품 보고서를 내보내지 않습니다. 대신 404 오류가 발생했습니다.
    * _참고 사항 수정_: 이제 CSV 및 XML로 제품 주문 보고서 내보내기가 예상대로 작동합니다
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/88660e79>
-* _ACP2E-3457_: 프로덕션 모드에서 Js 축소를 활성화한 후 콘솔의 TinyMCE JS 오류
-   * _수정 참고_ 사항: 이전에는 관리자 패널 내의 프로덕션 모드에서 JavaScript 축소를 활성화하면 TinyMCE 6과 관련된 JavaScript 오류가 브라우저 콘솔에 표시되어 기능 및 사용자 경험 환경에 영향을 미쳤습니다. 이제 이 문제가 해결되어 JS 축소가 활성화된 경우 TinyMCE 6이 오류를 생성하지 않고 균일 없이 원활하게 작동하도록 합니다.
+* _ACP2E-3457_: 프로덕션 모드에서 Js 축소를 활성화한 후 콘솔에 TinyMCE JS 오류가 발생했습니다.
+   * _참고 사항 수정_: 이전에는 관리 패널 내의 프로덕션 모드에서 JavaScript 축소를 활성화하면 TinyMCE 6과 관련된 JavaScript 오류가 브라우저 콘솔에 표시되어 기능과 사용자 환경에 영향을 주었습니다. 이제 이 문제가 해결되어 JS 축소가 활성화된 경우에도 TinyMCE 6이 오류를 생성하지 않고 원활하게 작동할 수 있습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/56463d5e>
-* _ACP2E-3459_: ACP2E-3375 수정사항을 완전히 완료하기 위한 추가 변경사항 요청
+* _ACP2E-3459_: ACP2E-3375 수정 사항을 완전히 완료하기 위한 추가 변경 요청
    * _메모 수정_: &#39;-
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3503_: 새 ACL 권한을 자동으로 사용합니다.
@@ -352,8 +352,8 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 * _ACP2E-3509_: 관리자 작업 로그 사용자 보고서에 adminhtml_user_delete에 대한 세부 정보가 표시되지 않습니다.
    * _참고 사항 수정_: 이제 adminhtml_user_delete가 중요한 세부 정보를 올바르게 기록합니다. 이전에는 사용자 삭제에 대한 로그가 생성되지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/4de008a9>
-* _ACP2E-3536_: 관리자로부터 주문할 때 배송 조건이 적용되지 않는 장바구니 규칙
-   * _수정 참고_ 사항: 이전에는 장바구니 가격 규칙에 쿠폰과 함께 배송 방법 할인이 있는 경우 관리자 UI를 통해 적용할 수 없었습니다. 이 수정 사항이 적용되면 특정 배송 방법에 대한 쿠폰이 포함된 장바구니 가격 규칙 할인이 관리 UI에서 성공적으로 적용됩니다.
+* _ACP2E-3536_: 관리자 주문 시 배송 조건이 적용되지 않는 장바구니 규칙
+   * _참고 사항 수정_: 이전에는 장바구니 가격 규칙에 쿠폰이 포함된 배송 방법 할인이 있으면 관리 UI를 통해 적용할 수 없었습니다. 이 수정 사항이 적용되면 특정 배송 방법에 대한 쿠폰이 포함된 장바구니 가격 규칙 할인이 관리 UI에서 성공적으로 적용됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a52ff98f>, <https://github.com/magento/inventory/commit/11ce816b>
 * _ACP2E-3559_: [FRESH] HEX 코드가 SWATCH에서 올바르게 업데이트되지 않음
    * _참고 사항 수정_: 사용자가 시각적 견본 색상 선택기에서 수동으로 입력한 16진수 코드는 더 이상 시스템에서 변경되지 않습니다. 이전에는 특정 HEX 코드가 색상 모델 간의 변환 오류로 인해 약간의 조정을 경험했습니다.
@@ -401,15 +401,15 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 * _ACP2E-3080_: 관리자 주문 제품 보고서 날짜 범위 가시성 문제.
    * _참고 사항 수정_: 사용자는 주문 제품 보고서에서 원하는 날짜를 선택할 수 있습니다. 이전에는 테이블을 새로 고친 후 &#39;시작&#39; 날짜를 선택하면 &#39;종료&#39; 날짜가 재설정됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3096_: newrelic을 만드는 잘못된 curl 헤더:create:deploy-marker가 작동하지 않음
-   * _참고 사항 수정_: 이제 시스템에서 curl 헤더를 올바르게 포맷하여 newrelic:create:deploy-marker 명령이 New Relic에서 배포 마커를 성공적으로 만들 수 있도록 합니다. 이전에는 잘못된 curl 헤더로 인해 New Relic에서 배포 마커를 만들 수 없었습니다.
+* _ACP2E-3096_: 잘못된 curl 헤더로 인해 `newrelic:create:deploy-marker`이(가) 작동하지 않음
+   * _참고 사항 수정_: 이제 시스템에서 curl 헤더 형식을 올바르게 지정하므로 `newrelic:create:deploy-marker` 명령이 New Relic에서 배포 마커를 성공적으로 만들 수 있습니다. 이전에는 잘못된 curl 헤더로 인해 New Relic에서 배포 마커를 만들 수 없었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/37641>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3183_: NewRelic 브라우저 모니터링 inlineJS 스크립트로 인해 CSP 오류가 발생합니다
    * _참고 사항 수정_: 이제 CSP(콘텐츠 보안 정책) 준수를 위해 APM 에이전트 대신 응용 프로그램에서 NewRelic Browser Monitoring 스크립트가 삽입됩니다. 이전에는 APM 에이전트에서 삽입한 NewRelic 브라우저 모니터링 스크립트가 CSP를 준수하지 않아 스크립트가 실행되지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/66dea0de>
-* _ACP2E-3189_: 판매 주문량이 많은 프로젝트에서 sales_bestsellers_aggregated_daily 테이블에 대한 INSERT 쿼리가 느려짐
-   * _수정 참고_ 사항: 이전에는 베스트셀러 집계 일일 보고서를 대량으로 주문한 경우 생성하는 데 많은 시간이 걸렸습니다. 이제 보고서가 적시에 생성됩니다.
+* _ACP2E-3189_: sales_bestsellers_aggregated_daily 테이블에 대한 INSERT 쿼리가 큰 판매 주문 거래량이 있는 프로젝트에서 느려집니다.
+   * _참고 사항 수정_: 이전에는 베스트셀러 집계 일일 보고서를 대량으로 주문하면 생성하는 데 많은 시간이 소요되었습니다. 이제 보고서가 적시에 생성됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7377de59>
 * _ACP2E-3276_: 잘못된 통화 기호를 표시하는 주문 보고서
    * _참고 사항 수정_: 주문 보고서의 주문 금액에 대한 통화 기호가 통화/옵션/기본에서 잘못 사용되었습니다. 이제 정확한 보고를 위해 통화/옵션/기본값을 사용하도록 수정되었습니다.
@@ -611,7 +611,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38736>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/1d144bce>
 * _AC-12076_: [문제] 계층화된 탐색에서 필터 항목의 문구를 수정하십시오.
-   * _참고 사항 수정_: 이제 시스템에서 계층화된 탐색 필터 항목에 &quot;item&quot; 및 &quot;items&quot;라는 단어를 올바르게 사용하므로 필터 설명의 명확성과 정확성이 향상되었습니다. 이전에는 이러한 단어가 잘못 사용되어 필터 옵션을 탐색하는 사용자에게 혼란을 줄 수 있었습니다.
+   * _참고 사항 수정_: 이제 시스템에서 계층화된 탐색 필터 항목에 &quot;item&quot; 및 &quot;items&quot;라는 단어를 올바르게 사용하므로 필터 설명의 명확성과 정확성이 향상되었습니다. 이전에는 이러한 단어가 잘못 사용되었기 때문에 필터 옵션을 탐색하는 사용자에게 잠재적인 혼동을 주었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38789>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/37852>
 * _AC-12164_: 사용자 지정 옵션의 날짜 및 시간 형식이 작동하지 않습니다.
@@ -708,8 +708,8 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이전에는 다른 통화 및 고객 그룹을 사용하는 다중 웹 사이트 아키텍처가 스토어에 할인을 올바르게 적용할 수 없었습니다. 이 수정 사항이 구현되면 다른 고객 그룹 가격 할인이 적용된 다중 웹 사이트 아키텍처가 다른 스토어에 성공적으로 적용됩니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38506>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a4fbf702>
-* _ACP2E-2909_: dynamic-rows.js:658 번들 제품을 편집하는 동안 잡히지 않은 TypeError: dataRecord.slice
-   * _수정 참고_ 사항: 번들 제품에서 옵션을 삭제하는 동안 브라우저 콘솔에 javascript 오류가 없습니다.
+* _ACP2E-2909_: 번들 제품을 편집하는 동안 dynamic-rows.js:658 발견되지 않은 TypeError: dataRecord.slice
+   * _참고 사항 수정_: 번들 제품에서 옵션을 삭제하는 동안 브라우저 콘솔에 Javascript 오류가 없습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38505>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/93d50f8d>
 * _ACP2E-2950_: [Cloud] 번들 제품 가격 순서 확인 시 잘못된 가격 책정
@@ -719,7 +719,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 제품 이미지 및 비디오가 전역 범위에 구성되어 있습니다. 한 범위에서는 제품 비디오를 사용할 수 없고 다른 범위에서는 사용할 수 없는 경우 Youtube API 키 설정이 전역 범위로 설정되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a4fbf702>
 * _ACP2E-2964_: [Cloud] store_id=0에 대해서만 URL 업데이트
-   * _참고 사항 수정_: 이제 &quot;URL 경로&quot;가 올바른 저장소 ID로 저장됩니다. 이전에는 스토어 ID가 잘못되어 범주를 이동할 때 데이터베이스에 잘못된 URL 경로가 남아 있었습니다.
+   * _참고 사항 수정_: 이제 &quot;URL 경로&quot;가 올바른 저장소 ID로 저장됩니다. 이전에는 저장소 ID가 잘못되어 범주를 이동할 때 데이터베이스에 잘못된 URL 경로가 남아 있었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/9af794a4>
 * _ACP2E-3009_: async.operations.all이 실행되고 오류가 발생했습니다.
    * _참고 사항 수정_: REST API 호출의 잘못된 제품 링크 데이터로 인해 더 이상 심각한 오류가 발생하지 않습니다.
@@ -750,13 +750,13 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 새 위젯 페이지의 범주 트리에 수준 5 이상의 범주를 로드하는 데 더 이상 문제가 없어야 합니다. 이전에는, 레벨 5 이상의 범주를 포함하는 트리를 로드할 때 일부 범주가 누락되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/148c3ead>
 * _ACP2E-3198_: [클라우드] 실제 모바일 장치에서 두 손가락 확대/축소 및 이동 문제
-   * _수정 사항_: 이제 시스템은 모바일 디바이스에서 일관된 이미지 확대/축소 기능을 보장하여 원활하고 예측 가능한 사용자 경험 제공합니다. 이전에는 이미지 확대/축소 기능이 일관되지 않았으며 모바일 디바이스에서 볼 때 특정 지점 후에 갑자기 축소되었습니다.
+   * _참고 사항 수정_: 이제 시스템이 모바일 장치에서 일관된 이미지 확대/축소 기능을 보장하여 부드럽고 예측 가능한 사용자 환경을 제공합니다. 이전에는 이미지 확대/축소 기능이 일관되지 않았으며 모바일 디바이스에서 볼 때 특정 지점 후에 갑자기 축소되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/1366ae5e>
 * _ACP2E-3282_: 공유 카탈로그에서 제품 할당을 취소하면 위시리스트 제품이 지워지지 않습니다
    * _참고 사항 수정_: 이제 공유 카탈로그에서 제품을 사용할 수 없는 경우 위시리스트에 항목이 표시되지 않습니다. 이전에는 위시리스트에서 실제로 사용할 수 있는 항목이 없는 경우에도 위시리스트 페이지에 &quot;1개 항목&quot;이 잘못 표시되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/5184c067>
 * _ACP2E-3286_: 관련 제품 모두 선택/모든 문제 선택 취소
-   * _수정 참고_: 이전에는 제품을 수동으로 선택한 경우 관련 제품에 대한 &quot;모두 선택&quot;/&quot;모두 선택 취소&quot; 버튼이 제대로 작동하지 않았습니다. 수정 후 이러한 버튼은 이제 수동 선택 균일 일관되게 작동하여 모든 제품이 올바르게 선택되거나 선택 해제되도록 합니다.
+   * _참고 사항 수정_: 이전에는 제품을 수동으로 선택한 경우 관련 제품에 대한 &quot;모두 선택&quot;/&quot;모두 선택 취소&quot; 단추가 제대로 작동하지 않았습니다. 수정 후 이러한 버튼은 이제 수동 선택 후에도 일관되게 작동하여 모든 제품을 올바르게 선택 또는 선택 취소하도록 합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/fd5cf3af>
 * _ACP2E-3336_: [Cloud] 잘못된 언어로 스톡 경고 전자 메일 번역
    * _참고 사항 수정_: 서로 다른 언어를 사용하는 여러 스토어 보기를 사용하는 웹 사이트에 대해 주식/가격 알림을 보낼 때 알림을 만든 스토어 보기의 언어가 전자 메일에 사용됩니다.
@@ -765,15 +765,15 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이전에는 비활성화된 범주가 범주 트리에서 회색으로 표시되지 않았습니다. 이제 회색 효과가 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3410_: 구성 가능한 제품 편집 양식 로드로 인해 시간 초과 및 메모리 소진이 발생합니다
-   * _수정 참고_: 수정 이전에는 구성 가능한 모든 속성 옵션 조합을 기반으로 구성 가능한 제품 변형이 구성되었습니다. 속성에 많은 옵션이 있는 경우 이로 인해 작업이 오래 걸리고 리소스가 소모되었습니다. 이제 구성 가능한 제품 변형이 기존 하위 제품 속성을 기반으로 구성됩니다. 따라서 계산이 훨씬 적으므로 리소스 사용이 개선됩니다.
+   * _참고 사항 수정_: 수정 전에 가능한 모든 특성 옵션 조합을 기반으로 구성 가능한 제품 변형이 생성되었습니다. 속성에 옵션이 많은 경우 이로 인해 시간이 오래 걸리고 리소스가 소모되는 작업이 발생했습니다. 이제 구성 가능한 제품 변형이 기존 하위 제품 속성을 기반으로 구성됩니다. 따라서 계산이 훨씬 적으므로 리소스 사용이 개선됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/078c387e>
 * _ACP2E-3454_: [견본]을 사용할 때 Fotorama가 비디오를 올바르게 로드하지 않고 URL을 통해 옵션이 미리 선택되어 있습니다.
    * _참고 사항 수정_: 이제 URL에 선택한 옵션이 포함된 경우 구성 가능한 제품 세부 정보 페이지에서 제품 비디오가 올바르게 렌더링됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/078c387e>
-* _ACP2E-3461_: PageBuilder 캐러셀 위젯에 조건과 일치하지 않는 제품이 표시됨
-   * _수정 참고_: 위젯에 사용된 제품 목록에 이제 카테고리 조건이 적용됩니다.
+* _ACP2E-3461_: PageBuilder 회전 위젯에 조건과 일치하지 않는 제품이 표시됩니다.
+   * _참고 사항 수정_: 이제 위젯에 사용되는 제품 목록이 범주 조건을 따릅니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/078c387e>
-* _ACP2E-3469_: 잘못된 수량이 있는 경우 그룹의 모든 제품에 대해 유효성 검사 오류 트리거
+* _ACP2E-3469_: 그룹의 모든 제품에 잘못된 수량이 있을 때 유효성 검사 오류가 트리거되었습니다.
    * _참고 사항 수정_: 이제 한 제품에 이전에 발생하지 않은 잘못된 수량이 있는 경우 그룹의 모든 제품에 대해 유효성 검사 오류가 올바르게 트리거됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/56463d5e>
 * _ACP2E-3513_: [CLOUD] 특별 가격이 구성 가능한 제품에 표시되지 않음
@@ -842,7 +842,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 ### 카탈로그, SEO
 
 * _ACP2E-3653_: 페이지 > 1일 때 범주에 대한 표준 URL이 잘못되었습니다.
-   * _수정 참고_ 사항: 이전에는 다중 페이지 컨텐츠에 대한 표준 URL이 제대로 작동하지 않아 기본 URL이 일관되게 표시되었습니다. 그러나 수정 사항이 구현된 후 이제 다중 페이지 컨텐츠의 표준 URL에 페이지 ID가 있는 URL이 올바르게 표시됩니다.
+   * _참고 사항 수정_: 이전에는 다중 페이지 콘텐츠의 표준 URL이 제대로 작동하지 않아 기본 URL이 일관되게 표시되었습니다. 그러나 수정 사항이 구현되면 이제 다중 페이지 콘텐츠의 표준 URL에 페이지 ID가 있는 URL이 올바르게 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/982b1c42>
 
 ### 카탈로그, 검색
@@ -927,11 +927,11 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 * _ACP2E-3122_: [CLOUD] 이미지 업로드 단추가 작동하지 않습니다.
    * _참고 사항 수정_: PageBuilder의 배너 및 슬라이더에 대한 이미지 업로드 단추가 예상대로 작동하지 않기 전에 단추를 누르면 로컬 파일 관리자가 열려 업로드할 이미지를 선택합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/476ef8ea>
-* _ACP2E-3127_: imagecreatetruecolor(): 인수 #2($height)는 0보다 커야 합니다. 특정 이미지를 업로드 할 수 없습니다.
-   * _수정 메모_: 미디어 갤러리를 통해 높이가 0인 이미지를 업로드할 때 관리자에서 오류가 발생하는 문제를 해결하고 동기화 명령을 사용하여 자산 동기화에 성공했습니다. 이전에는 미디어 갤러리를 통해 이미지를 업로드할 수 없었으며 특정 이미지가 갤러리에 있을 때도 동기화 명령이 실패합니다.
+* _ACP2E-3127_: imagecreatetruecolor(): 인수 #2($height)는 0보다 커야 합니다. 특정 이미지를 업로드할 수 없음
+   * _참고 사항 수정_: 미디어 갤러리를 통해 높이가 0인 이미지를 업로드할 때 관리자에게 오류가 발생하고 sync 명령을 사용하여 자산 동기화를 성공한 문제를 해결했습니다. 이전에는 미디어 갤러리를 통해 이미지를 업로드할 수 없었고 특정 이미지가 갤러리에 있는 경우 동기화 명령도 실패합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3154_: 프로토타입.js Array.from이 Google Maps API와 충돌함
-   * _수정 참고_ 사항: 이제 Google 지도가 PageBuilder 편집기 내에서 제대로 렌더링됩니다. 이전에는 Javascript 오류로 인해 Google 맵이 올바르게 렌더링되지 않았습니다.
+* _ACP2E-3154_: Google Maps API와 충돌하는 Prototype.js Array.from
+   * _참고 사항 수정_: 이제 Google 맵이 PageBuilder 편집기에서 제대로 렌더링됩니다. 이전에는 Javascript 오류로 인해 Google 맵이 올바르게 렌더링되지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/148c3ead>
 * _ACP2E-3275_: [Cloud] - CMS 슬라이더가 최신 변경 사항을 반영하지 않음
    * _참고 사항 수정_: 슬라이드 편집 화면에서 저장 이벤트가 트리거되는 동안 슬라이더 목록이 새로 고쳐지도록 하여 문제를 해결했습니다. 이전에는 이 문제가 트리거되어 발생했습니다.
@@ -940,25 +940,25 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이전에는 일부 PHP 및 OS(Linux) 버전에서 PageBuilder를 통해 다른 cms 블록을 참조한 블록을 렌더링하지 못했습니다. &quot;알 수 없는 오류가 발생했습니다. 다시 시도하십시오.&quot; 이제 cms 블록의 콘텐츠가 PageBuilder 제어 콘텐츠 내에서 올바르게 렌더링됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
 * _ACP2E-3428_: 큰 콘텐츠에 대한 Pagebuilder의 템플릿 미리 보기 실패
-   * _참고 사항 수정_: 콘텐츠가 크면 캔버스 요소가 브라우저 제한을 초과하고 잘못된 값을 반환하여 백엔드 코드를 손상시켜 이미지를 제대로 디코딩할 수 없습니다. 캔버스 크기를 유니버설 브라우저 제한으로 제한하여 수정했습니다.
+   * _참고 사항 수정_: 콘텐츠가 크면 캔버스 요소가 브라우저 제한을 초과하고 잘못된 값을 반환하여 백엔드 코드를 손상시켜 이미지를 제대로 디코딩할 수 없습니다. 캔버스 크기를 범용 브라우저의 제한으로 제한하여 수정되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/adfb1747>
-* _ACP2E-3430_: TinyMCE 7의 최신 보안 업데이트에서 글꼴 크기가 누락됨
-   * _수정 참고_: 글꼴 크기 및 글꼴 모음 선택기를 이제 WYSIWYG 편집기에서 사용할 수 있습니다. 이 수정 이전에는 TinyMCE 7에서 편집기 인터페이스에서 사용할 수 없었습니다.
-   * _GitHub 코드 기여:_<https://github.com/magento/magento2/commit/d50f6b5d> ,<https://github.com/magento/magento2-page-builder/commit/2c2f7a0e>
-* _ACP2E-3483_: PX가 아닌 PT의 관리자에서 TinyMCE 7 편집기 글꼴 크기를 명확히 하십시오.
-   * _수정 참고_: 수정 전에는 WYSIWYG 영역에서 글꼴 크기를 px로 지정할 수 없었습니다. 이제 pt 대신 px로 글꼴 크기를 설정할 수 있습니다.
-   * _GitHub 코드 기여:_<https://github.com/magento/magento2/commit/3f12d152> ,<https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
-* _ACP2E-3490_: 페이지 빌더의 제품 컨텐츠 유형이 올바른 메시지 없이 축소됨
-   * _수정 참고_: 수정 전에는 위젯에 제품이 없을 때 미리보기 html이 제대로 생성되지 않았습니다. 이제 빈 응답이 제대로 생성되고 제품 위젯이 미리보기에 제대로 표시됩니다.
-   * _GitHub 코드 기여:_<https://github.com/magento/magento2/commit/3f12d152> ,<https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
-* _ACP2E-3534_: [페이지 빌더]에서 오류가 발생하는 것을 차단하기 위해 제품 목록을 추가하면
-   * _수정 참고_ 사항: 이제 페이지 빌더를 통해 차단할 번들 제품 목록을 추가해도 오류가 발생하지 않습니다.
+* _ACP2E-3430_: TinyMCE 7에 글꼴 크기가 없는 최신 보안 업데이트
+   * _참고 사항 수정_: 이제 WYSIWYG 편집기에서 글꼴 크기 및 글꼴 모음 선택기를 사용할 수 있습니다. 이 수정 이전에는 TinyMCE 7을 사용하여 편집기 인터페이스에서 사용할 수 없었습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d50f6b5d>, <https://github.com/magento/magento2-page-builder/commit/2c2f7a0e>
+* _ACP2E-3483_: PX가 아닌 PT에서 관리자의 TinyMCE 7 편집기 글꼴 크기를 명확히 하십시오.
+   * _수정 노트_: 수정하기 전에 WYSIWYG 영역에서 글꼴 크기를 px 단위로 지정할 수 없습니다. 이제 pt 대신 px로 글꼴 크기를 설정할 수 있습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/3f12d152>, <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
+* _ACP2E-3490_: 페이지 빌더의 제품 콘텐츠 형식이 올바른 메시지 없이 축소됩니다.
+   * _참고 사항 수정_: 수정 전 위젯에 제품이 없을 때 미리 보기 html이 제대로 생성되지 않았습니다. 이제 빈 응답이 제대로 생성되고 제품 위젯이 미리보기에서 제대로 표시되고 있습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/3f12d152>, <https://github.com/magento/magento2-page-builder/commit/20aa5d7a>
+* _ACP2E-3534_: [페이지 빌더]결과를 차단하기 위해 제품 목록을 추가하는 중 오류가 발생했습니다.
+   * _참고 사항 수정_: 이제 페이지 빌더를 통해 차단할 번들 제품 목록을 추가해도 오류가 발생하지 않습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/344fce23>
 
-### 고객/ 고객
+### 고객/고객
 
-* _AC-12162_: 프런트 엔드 - 고객 만들기 페이지에서 생년월일 유효성 검사 오류가 발생합니다.
-   * _수정 참고 사항_: 시스템 종속성을 최신 부 버전으로 업그레이드moment.js 후 모든 유효성 검사 작동하는지 확인합니다.
+* _AC-12162_: 프런트 엔드 - 고객 만들기 페이지에서 생년월일 유효성 검사가 실패했습니다.
+   * _참고 사항 수정_: moment.js 시스템 종속성을 최신 부 버전으로 업그레이드한 후 모든 유효성 검사가 작동하는지 확인하십시오.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/de4dfb8e>
 * _AC-8499_: 국가 드롭다운이 변경되면 지역 텍스트 필드가 재설정되지 않습니다.
    * _참고 사항 수정_: 이제 드롭다운 메뉴에서 국가가 변경되면 지역 텍스트 필드가 재설정되므로 이전 값이 유지되지 않습니다. 이전에는 드롭다운 목록에서 국가를 변경하면 영역 필드가 재설정되지 않아 마지막으로 저장된 값이 유지되었습니다.
@@ -974,15 +974,15 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38030>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38064>
 * _AC-10654_: V1/customers/password 끝점 질문/문제
-   * _수정 참고_: 이제 시스템은 API를 통해 암호 변경 요청을 처리할 때 관리 GUI 내에 설정된 제한조건을 준수하여 암호 재설정 기능의 잠재적인 남용을 방지합니다. 이전에는 API가 관리 GUI에 정의된 규칙 외부에서 암호 변경 요청을 처리할 수 있었으므로 유효한 이메일을 알고 있는 경우 끊임없이 재설정 이메일을 보낼 수 있었습니다.
+   * _참고 사항 수정_: 이제 API를 통해 암호 변경 요청을 처리할 때 관리 GUI에 설정된 제약 조건을 준수하여 암호 재설정 기능을 남용할 가능성을 방지합니다. 이전에는 API가 관리 GUI에 정의된 규칙 외부에서 암호 변경 요청을 처리할 수 있었으므로 유효한 이메일을 알고 있는 경우 끊임없이 재설정 이메일을 보낼 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38238>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-10738_: 바니시 구성에서는 모든 마케팅 매개 변수를 제외하지 않습니다.
    * _참고 사항 수정_: 이제 시스템에서 바니시 구성의 모든 일반 마케팅 매개 변수를 올바르게 제외하여 정확한 추적 및 분석을 보장합니다. 이전에는 gad_source, srsltid 및 msclkid와 같은 특정 마케팅 매개 변수가 제외되지 않아 데이터 수집이 부정확해질 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38298>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/39188>
-* _AC-10838_: 카탈로그 검색 색인 프로세스 오류 색인화 프로세스입니다.
-   * _수정 참고 사항_: 이제 시스템은 PHP로 컴파일된 libxml 버전에 관계없이 오류 없이 re-index 명령을 성공적으로 완료합니다. 이전에는 re-index 명령을 실행하면 PHP가 특정 버전의 libxml로 컴파일될 때 &quot;색인화 프로세스 중 카탈로그 Search 색인 프로세스 오류&quot; 오류가 발생했습니다.
+* _AC-10838_: 카탈로그 검색 인덱스 프로세스 오류 색인화 프로세스
+   * _참고 사항 수정_: 이제 시스템에서 PHP로 컴파일된 libxml 버전에 관계없이 오류가 발생하지 않고 색인 재지정 명령을 성공적으로 완료합니다. 이전에는, 리인덱싱 명령을 실행하면 특정 버전의 libxml로 PHP를 컴파일할 때 &quot;색인 프로세스 동안 카탈로그 검색 색인 프로세스 오류&quot; 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38254>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38553>, <https://github.com/magento/magento2/commit/0574ac23>
 * _AC-10941_: created_at, status 및 grand_total 필터를 고객 주문 쿼리에 추가하고 여러 필터 오류를 수정했습니다.
@@ -1025,8 +1025,8 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이제 시스템에서 아직 환불될 수 있는 금액이 포함된 변수의 이름을 올바르게 지정하므로 디버깅 중에 혼동을 방지할 수 있습니다. 기존에는 이 변수를 totalRefund로 잘못 명명하여 개발자의 오해를 불러일으킬 수 있었다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38609>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/36205>
-* _AC-11809_: [XML을 통해 사용자 지정 특성을 현재 링크 전달 문제]
-   * _수정 참고_: 이제 시스템에서 XML을 통해 사용자 지정 속성을 현재 링크에 전달할 수 있으므로 링크가 현재 페이지일 때 이러한 속성이 올바르게 균일하게 표시됩니다. 이전에는 getAttributesHtml() 메서드가 현재 링크에 사용되지 않았기 때문에 현재 페이지 링크에 대해 사용자 지정 속성이 표시되지 않았습니다.
+* _AC-11809_: [문제] XML을 통해 현재 링크에 사용자 지정 특성을 전달합니다.
+   * _참고 사항 수정_: 이제 시스템에서 사용자 지정 특성을 XML을 통해 현재 링크에 전달할 수 있으므로 링크가 현재 페이지인 경우에도 이러한 특성이 올바르게 표시되도록 합니다. 이전에는 getAttributesHtml() 메서드가 현재 링크에 사용되지 않아 현재 페이지 링크에 대한 사용자 지정 속성이 표시되지 않았습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38500>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/30070>
 * _AC-11819_: 일부 구성의 경우 2.4.7에서 기본 제공 FPC 캐시가 손상되었습니다.
@@ -1068,8 +1068,8 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이제 시스템에서 일반 구성 대신 생성된 데이터에 대해 컴파일된 구성을 사용하므로 특정 코드 버전에 의존하는 데이터의 네트워크 전송 및 오버헤드가 줄어듭니다. 이러한 변경 사항으로 인해 컨테이너 교체 중 공유 인스턴스의 캐시 오버라이드가 방지되므로 안정성이 향상되고 다운타임이 줄어듭니다. 이전에는 특정 코어 클래스에서 공유 구성 유형을 사용했기 때문에 여러 서버에서 코드 버전의 차이로 인해 캐시 재정의 또는 애플리케이션 다운타임이 발생할 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38785>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/29954>
-* _AC-12597_: [e1ccdb에서 제거된 extjs에서 파일에 대한 참조 제거 문제] ...
-   * _수정 참고_ 사항: 이제 시스템은 이전에 제거된 extjs에서 파일에 대한 참조를 제거하여 브라우저 콘솔 및 시스템 로그 파일 오류의 오류를 제거합니다. 이전에는 참조된 파일이 없기 때문에 이러한 참조로 인해 오류가 발생했습니다.
+* _AC-12597_: [문제] e1ccdb에서 제거된 extjs에서 파일에 대한 참조를 제거하십시오...
+   * _참고 사항 수정_: 이제 시스템에서 이전에 제거된 extjs에서 파일에 대한 참조를 제거하여 브라우저의 콘솔 및 시스템 로그 파일에서 오류를 제거합니다. 이전에는 이러한 참조가 참조된 파일의 부재로 인해 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38960>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38951>
 * _AC-12778_: [문제] 사소한 정리: sprintf의 잘못된 사용이 수정되었습니다. 여기에는 자리 표시자 2개만 필요합니다.
@@ -1172,8 +1172,8 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 * _ACP2E-3361_: 주문 레코드를 저장할 때 일부 관계 레코드가 DB에 저장됩니다
    * _참고 사항 수정_: 성능에 영향을 줄 수 있는 불필요한 업데이트 수정 쿼리가 트리거되기 전에. 수정 후 불필요한 UPDATE 쿼리가 제거되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/1366ae5e>
-* _ACP2E-3375_: [클라우드] 관리자의 콘솔에 많은 javascript 오류가 있습니다.
-   * _수정 참고_ 사항 : 이전에는 관리자 패널에서 콘솔에 많은 자바 스크립트 오류가 발생했습니다. 이제 관리 패널에서 콘솔에 JavaScript 오류가 없으며 모든 기본 JavaScript 함수가 문제없이 성공적으로 실행됩니다.
+* _ACP2E-3375_: [CLOUD] 관리자의 경우 콘솔에 많은 javascript 오류가 있습니다.
+   * _참고 사항 수정_: 이전에는 관리 패널에서 콘솔에 Javascript 오류가 많이 발생했습니다. 이제 관리 패널에서는 콘솔에 JavaScript 오류가 발생하지 않으며 모든 기본 JavaScript 기능이 문제 없이 성공적으로 실행됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3387_: [Cloud] Magento: 큐 메시지가 삭제되었습니다.
    * _참고 사항 수정_: 큐 메시지가 이제 제대로 지워지고 있습니다. 수정 전에 SQL 큐 시스템이 사용되고 있는 경우 정리 큐 메시지가 동시에 실행되고 있으면 새 메시지가 삭제되었을 수 있습니다.
@@ -1239,7 +1239,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 * _ACP2E-3253_: GraphQL cart itemsV2 페이지 매김이 제대로 작동하지 않습니다.
    * _참고 사항 수정_: 컬렉션 쿼리에서 현재 페이지 인수에 대한 올바른 값을 전달하여 문제를 해결했습니다. 이전에는 현재 페이지를 설정하는 데 잘못된 값이 전달되어 문제가 발생했습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/8459b17d>
-* _ACP2E-3255_: [customerCart를 가져올 때 GRAPHQL] 모델 값을 지정해야 합니다.
+* _ACP2E-3255_: customerCart를 가져올 때 [GRAPHQL] 모델 값을 지정해야 합니다.
    * _참고 사항 수정_: 이제 데이터베이스에서 견적을 사용할 수 없는 경우에도 GraphQL &#39;customerCart&#39; 쿼리에서 빈 장바구니를 만들 수 있습니다. 이전에는 빈 장바구니를 만드는 동안 국가 유효성 검사 문제로 인해 이 작업이 실패했습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/fd5cf3af>
 * _ACP2E-3380_: [GraphQl] 위시리스트 항목은 GraphQl을 통해 표시되지만 상점 앞에는 표시되지 않습니다.
@@ -1339,7 +1339,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38805>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38926>
 * _ACP2E-2710_: 가져오기 기록 그리드에서 가져오기 작업의 실행 시간이 잘못되었습니다.
-   * _수정 참고_: 보고서 가져오기 실행 시간이 관리 로케일과 독립적으로 올바르게 표시됩니다.
+   * _참고 사항 수정_: 가져오기 보고서 실행 시간이 관리자 로캘과 관계없이 올바르게 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/ea79f7dd>
 * _ACP2E-2737_: 가져오기를 사용하여 동일한 이메일 주소로 중복 고객을 만들고 있습니다.
    * _참고 사항 수정_: 계정 공유가 Global로 설정되어 있는 동안 시스템에 있는 가져온 고객을 가져오는 중 오류가 발생했습니다.
@@ -1353,22 +1353,22 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 열 &#39;created_at&#39; 날짜 값이 고객 내보내기 CSV 섹션의 저장소 시간대를 기반으로 적절한 날짜 형식으로 변환됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/3056e9cb>
 * _ACP2E-3165_: [Cloud] CSV를 사용하여 데이터 가져오기에서 데이터를 확인하는 동안 오류가 발생했습니다.
-   * _수정 참고_: CSV 가져오기 중에 데이터를 확인할 때 오류가 없습니다. 이전에는 관리자의 CSV를 사용하여 가져오기 섹션의 데이터를 확인할 때 &quot;이 이메일 및 웹 사이트 코드와 일치하는 고객을 찾을 수 없습니다: 1&quot;이라는 오류 메시지가 표시되었습니다.
+   * _메모 수정_: CSV 가져오기 중에 데이터를 확인할 때 오류가 없습니다. 이전에는, 관리자의 CSV를 사용하여 가져오기 섹션의 데이터를 확인할 때 &quot;이 이메일 및 웹 사이트 코드와 일치하는 고객을 행 1에서 찾을 수 없습니다.&quot;라는 오류 메시지가 표시되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/8459b17d>
-* _ACP2E-3172_: 가져오기 버튼 누락
-   * _참고 사항 수정_: CSV에서 올바르고 잘못된 레코드가 있는 데이터를 확인한 후 가져오기 단추에 누락된 문제를 해결하십시오. 이전에는 CSV에서 올바른 레코드와 잘못된 레코드로 데이터를 확인한 후 가져오기 버튼이 표시되지 않았습니다.
+* _ACP2E-3172_: 가져오기 단추가 없습니다.
+   * _참고 사항 수정_: CSV에서 올바르고 잘못된 레코드가 있는 데이터를 확인한 후 가져오기 단추에 누락된 문제를 해결하십시오. 이전에는 데이터가 CSV에서 올바르고 잘못된 레코드를 확인하면 가져오기 단추가 표시되지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/1819fe73>
 * _ACP2E-3382_: 내보낸 고객 주소를 가져올 수 없습니다.
    * _메모 수정_: 고객 주소 가져오기가 예상대로 진행됩니다. 이전에는 고객 계정 공유 = 글로벌인 경우, 기본 웹 사이트에 제한된 국가 목록이 있는 두 개의 웹 사이트가 있고 가져올 주소는 허용된 국가가 다른 다른 웹 사이트의 주소인 경우 고객 주소 가져오기 파일이 유효성 검사를 통과하지 못했습니다
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/ec7e32a9>
-* _ACP2E-3448_: [클라우드] : CSV 파일의 잘못된 수량에서 오류가 발생하지 않았습니다.
+* _ACP2E-3448_: [Cloud] CSV 파일의 잘못된 수량은 오류를 제공하지 않습니다.
    * _참고 사항 수정_: 이제 재고 소스 가져오기로 수량 열의 숫자가 아닌 값에 대한 유효성 검사 오류가 발생합니다. 이전에는 수량 열에서 숫자 값이 아닌 재고 출처를 임포트하면 수량이 0으로 설정되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/inventory/commit/5b21b7af>
 * _ACP2E-3455_: URL 키가 이미 범주에 속해 있는 경우 제품을 가져올 때 생성된 중복된 URL 키 오류 메시지가 올바르지 않습니다.
-   * _수정 참고_: 제품 가져오기 확인 중, 제품의 URL 키가 이미 카테고리에 속해 있을 때 고객이 제품을 가져오려고 할 때 올바른 오류 메시지가 표시됩니다.
+   * _참고 사항 수정_: 제품의 URL 키가 이미 범주에 속해 있는 경우 고객이 제품을 가져오려고 할 때 제품 가져오기 검사 중에 올바른 오류 메시지를 표시합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3475_: 제품 내보내기로 인해 4G 메모리 제한이 있는 경우에도 OOM이 발생합니다
-   * _수정 참고_: 이 수정 이전 이전에는 제품 속성에 4G 사용 가능한 메모리로 균일 된 수천 개의 옵션 값이 있는 경우 제품 내보내기가 실패했습니다. 이 수정 사항이 적용되면 제품 내보내기에서 csv 파일 내보내기를 완료해야 합니다.
+   * _참고 사항_: 이 수정 이전에 제품 특성에 사용 가능한 메모리가 4G인 경우에도 수천 개의 옵션 값이 있는 경우 제품을 내보내지 못했습니다. 이 수정 사항이 적용되면 제품 내보내기에서 csv 파일 내보내기를 완료해야 합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/1984c61c>
 * _ACP2E-3527_: [Cloud] 가져오기 프로세스가 서로 충돌함
    * _참고 사항 수정_: 동일한 관리 사용자가 동일한 사용자 세션을 사용하여 두 개 이상의 가져오기 작업을 수행하는 경우 올바른 메시지가 표시됩니다.
@@ -1389,16 +1389,16 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: &quot;Vannish 7용 VCL 내보내기&quot; 단추가 관리 패널에 추가되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a4fbf702>
 
-### 인벤토리 / MSI
+### 인벤토리/MSI
 
 * _AC-10750_: 데이터베이스에서 접두사를 사용할 때 구성 가능한 제품의 인벤토리 업데이트가 실패합니다
    * _참고 사항 수정_: 이제 데이터베이스에서 접두사를 사용할 때 구성 가능한 제품의 인벤토리를 올바르게 업데이트하므로 오류 메시지가 발생하지 않고 올바른 수량이 저장됩니다. 이전에는 데이터베이스에서 접두사를 사용하는 경우 구성 가능한 제품 내에 단순 제품에 대한 재고 수량을 저장하려고 할 때 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38045>
 * _AC-11593_: 특성이 있는 맵을 추가하는 동안 Google google API 키가 작동하지 않습니다.
-   * _수정 참고_ 사항: 이제 시스템이 최신 Google Maps API 버전 3.56을 지원하므로 사용자가 오류 없이 PageBuilder 메뉴의 지도 컨텐츠 블록을 단계에 성공적으로 추가할 수 있습니다. 이전에는 Google Maps API 버전과의 호환성 문제로 인해 사용자가 지도 컨텐츠 블록을 추가할 수 없어 &#39;문제가 발생했습니다&#39;라는 오류 메시지가 표시되었습니다.
+   * _참고 사항 수정_: 이제 시스템에서 최신 Google Maps API 버전 3.56을 지원하므로 사용자가 오류가 발생하지 않고 PageBuilder 메뉴에서 맵 콘텐츠 블록을 단계에 추가할 수 있습니다. 이전에는 Google Maps API 버전과의 호환성 문제로 인해 사용자가 맵 콘텐츠 블록을 추가할 수 없어 &quot;문제가 발생했습니다&quot; 오류 메시지가 표시되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0574ac23>
-* _AC-13922_: 소스가 여러 개 있고 SKU 값이 손상된 주문 항목에 대한 배송을 생성할 수 없습니다.
-   * _수정 참고_ 사항: 이전에 데이터베이스를 통해 sku에 공백이 실수로 추가되었을 때 배송 페이지 오류가 발생했지만 이제는 수정되었으며 자동 트림은 인간 친화적인 오류로 간주되어 영향이 발견되지 않았습니다. 따라서 배송이 성공적으로 생성되었습니다.
+* _AC-13922_: 여러 원본과 손상된 SKU가 있는 주문 항목에 대한 배달을 만들 수 없습니다.
+   * _참고 사항 수정_: 이전에 데이터베이스를 통해 sku에 공백을 잘못 추가하면 현재 수정된 배송 페이지의 오류가 발생하고 자동 트리밍이 사용자에게 친숙한 오류로 간주되어 영향을 받지 않았습니다.따라서 배송이 정상적으로 생성되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/inventory/commit/c18eb5fa>
 * _ACP2E-1411_: [테스트] 스토어 전면에 재고가 0인 번들 제품
    * _참고 사항 수정_: 번들 제품이 추가 재고를 사용하는 추가 웹 사이트에 표시되지 않습니다.
@@ -1409,7 +1409,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 매장 내 픽업이 있는 소스가 많은 경우 만들기 배송의 인벤토리 성능이 향상되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/inventory/commit/9f3e63d1>
 * _ACP2E-3355_: Cron 다시 색인이 프론트엔드에서 제품 가용성을 업데이트하지 못했습니다.
-   * _수정 참고 사항_: 이전에는 REST API를 통해 이월 주문 상태를 업데이트한 후 프런트엔드에서 제품의 재고가 없는 상태로 유지되었습니다. 이제 REST API를 통해 이월 주문 상태를 업데이트하면 제품이 재고 있음으로 표시됩니다.
+   * _참고 사항 수정_: 이전에는 REST API를 통해 미납 주문 상태를 업데이트한 후 프런트 엔드에서 제품이 품절 상태입니다. 이제 REST API를 통해 미납 주문 상태를 업데이트하면 제품이 재고로 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/inventory/commit/e6fe0aa7>
 * _ACP2E-3357_: MSI가 활성화된 경우 구성 가능한 이미지 추가가 작동하지 않습니다.
    * _참고 사항 수정_: 이제 인벤토리 모듈을 사용할 때 구성 가능한 제품에 대한 이미지 업로드가 예상대로 작동합니다. 이전에는 이미지 업로드가 작동하지 않았습니다
@@ -1421,14 +1421,14 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 
 ### 인벤토리/MSI, 검색
 
-* _ACP2E-3413_: SKU가 검색 가능한 속성으로 설정되지 않은 경우 모든 제품이 is_out_of_stock] = 1로 [인덱싱됩니다.
+* _ACP2E-3413_: SKU가 검색 가능한 특성으로 설정되지 않은 경우 모든 제품이 [is_out_of_stock] = 1로 인덱싱됩니다.
    * _참고 사항 수정_: 수정 후 sku를 검색할 수 없는 경우에도 카탈로그 검색 색인의 &quot;is_out_of_stock&quot;이 올바릅니다.
    * _GitHub 코드 기여_: <https://github.com/magento/inventory/commit/5b21b7af>
 
 ### 주문
 
 * _AC-10828_: 백엔드 주문 개요 화면: 주문 항목 수준에 미납 주문 수량이 표시되지 않음
-   * _수정 참고_: 이제 시스템은 백엔드 주문 개요 화면의 수량 열에 이월 주문 품목 수를 표시합니다. 이렇게 하면 사용자가 주문에 포함된 모든 품목의 상태를 정확하게 추적할 수 있습니다. 이전에는 수량 열에 주문, 송장 발행 및 배송된 품목 수만 표시되고 이월 주문된 품목 수는 표시되지 않았습니다.
+   * _참고 사항 수정_: 이제 시스템에서 백엔드 주문 개요 화면의 수량 열에 미납 주문 항목 수를 표시합니다. 이렇게 하면 사용자가 모든 항목의 상태를 순서대로 정확하게 추적할 수 있습니다. 이전에는 수량 열에 주문, 송장 발행 및 출하된 품목의 수만 표시되었지만 미납주문 품목의 수는 표시되지 않았습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38252>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38320>
 * _AC-10994_: [문제] 잘못된 저장소 ID가 주문 주소 렌더러에서 사용되었습니다.
@@ -1468,7 +1468,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이제 시스템에서 캡처되지 않은 결제가 있는 주문에 선적이 생성되면 주문 상태를 &#39;처리 중&#39;으로, 송장 상태를 &#39;보류 중&#39;으로 올바르게 유지 관리합니다. 이렇게 하면 주문이 전액 환불 된 후에만 &#39;마감됨&#39;으로 표시됩니다. 이전에는 보류 중인 송장이 있는 주문에 대해 납품을 생성하면 주문 상태가 &#39;마감됨&#39;으로 잘못 변경됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3311_: [Cloud] 기본 청구 주소만 설정되지 않은 경우 한 스토어에서 관리자 주문을 만들 수 없습니다.
-   * _수정 참고_ 사항: 이제 관련 오류 메시지 &quot;동일한 이메일 주소를 가진 고객이 연결된 웹 사이트에 이미 존재합니다.&quot; 고객이 기본 청구 주소를 가지고 있지 않고 다른 스토어에서 주문을 만들려고 할 경우 이 표시됩니다.
+   * _메모 수정_: 이제 관련 오류 메시지 &quot;연결된 웹 사이트에 동일한 전자 메일 주소를 가진 고객이 이미 있습니다.&quot; 고객이 기본 청구 주소를 가지고 있지 않고 다른 스토어에서 주문을 만들려고 할 경우 이 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3416_: 관리자가 중복된 주문 요청을 보냈습니다.
    * _참고 사항 수정_: 이전에는 관리 패널에서 &quot;주문 제출&quot; 단추를 여러 번 클릭하거나 &quot;Enter&quot; 키를 반복해서 눌러 활성화할 수 있었습니다. 이로 인해 중복 또는 주문 제출이 오류가 발생했습니다. 이제 주문이 완전히 처리될 때까지 추가 작업을 방지하여 하나의 주문만 제출되도록 합니다.
@@ -1497,9 +1497,9 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 
 ### 기타
 
-* _LYNX-339_: GQL 쿼리에서 private_컨텐츠_version쿠키 반환됨
-   * _수정 참고 사항_: 세션 쿠키가 비활성화된 경우를 균일 GraphQL 쿼리에서 private_컨텐츠_version 쿠키가 반환되는 문제를 수정했습니다. 예상대로 세션이 비활성화되면 쿠키 GraphQL 응답에 더 이상 포함되지 않습니다.
-* _LYNX-380_: CartItemInterface의 is_available 특성이 구성 가능한 제품에 대해 항상 false를 반환합니다.
+* _LYNX-339_: private_content_version 쿠키가 GQL 쿼리에 반환됨
+   * _참고 사항 수정_: 세션 쿠키가 비활성화된 경우에도 GraphQL 쿼리에서 private_content_version 쿠키가 반환되던 문제를 해결했습니다. 예상대로 세션이 비활성화될 때 쿠키는 더 이상 GraphQL 응답에 포함되지 않습니다.
+* _LYNX-380_: CartItemInterface의 is_available 특성은 구성 가능한 제품에 대해 항상 false를 반환합니다.
    * _참고 사항 수정_: CartItemInterface의 is_available 특성이 재고 구성 가능한 제품에 대해 항상 false를 반환하는 문제가 해결되었습니다. 이제 해당되는 경우 가용성이 true로 올바르게 반영됩니다.
 * _LYNX-382_: CartItemInterface의 is_available 특성은 판매 가능한 재고가 제품 수량보다 낮은 경우에도 true를 반환합니다.
    * _참고 사항 수정_: 장바구니 항목 수량이 판매 가능한 재고량을 초과할 경우에도 CartItemInterface의 is_available 특성이 true를 잘못 반환하던 문제를 해결했습니다.
@@ -1629,10 +1629,10 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 ### 성능
 
 * _AC-11932_: 기본 제품 특성 설정 문제
-   * _수정 참고_: 이제 시스템에서는 사용자가 제품 속성에 대한 기본 옵션을 선택 취소할 수 있으므로 속성에 항상 기본 집합이 있는 것은 아닙니다. 이전에는 제품 속성에 대해 기본값이 설정되면 선택을 취소할 수 있는 방법이 없었기 때문에 속성에 항상 기본값이 설정되었습니다.
+   * _참고 사항 수정_: 이제 시스템에서 제품 특성에 대한 기본 옵션을 선택 해제할 수 있으므로 특성에 항상 기본값이 설정되어 있지 않습니다. 이전에는 제품 속성에 대해 기본값이 설정되고 나면 이를 선택 해제할 방법이 없으므로 속성에 항상 기본값이 설정됩니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38703>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7d5e3906>
-* _AC-12000_: [Code 정리를 실행] 하고, 새 중요 헤드 블록을 추가하고, CSS중요 자산 앞으로 이동합니다.
+* _AC-12000_: [문제] 코드 정리 및 새로운 중요한 헤드 블록 추가, 자산 앞으로 중요한 css 이동
    * _참고 사항 수정_: 이제 시스템에 새로운 중요 헤드 블록이 포함되며 자산 앞으로 중요한 CSS가 이동되므로 프론트엔드에서 더 많은 사용자 지정 및 성능 최적화가 가능합니다. 이전에는 중요한 CSS가 자산 앞에 위치하지 않아 사용자 지정 및 최적화 기회를 제한했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38748>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/35580>
@@ -1734,7 +1734,7 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
 * _ACP2E-3456_: 장바구니 가격 규칙이 &quot;같음 또는 보다 큼&quot; 조건을 사용할 때 상위 범주를 고려하지 않습니다.
    * _참고 사항 수정_: 이제 장바구니 가격 규칙이 고급 조건에서 사용될 때 상위 범주를 올바르게 고려합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/93359343>
-* _ACP2E-3463_: 우선 순위가 있는 잘못된 할인 계산
+* _ACP2E-3463_: 우선 순위가 있는 할인 계산이 잘못되었습니다
    * _참고 사항 수정_: 전체 장바구니 할인 유형에 적용되는 고정 금액의 경우 이전 프로모션에서 이미 할인된 장바구니 항목에 대해 금액이 올바르게 계산되지 않았습니다. 이제 할인이 적절히 요약됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/078c387e>
 * _ACP2E-3472_: [CLOUD] 배송 계산에서 장바구니 규칙을 고려하지 않습니다.
@@ -1787,17 +1787,17 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _참고 사항 수정_: 이전에 체크 아웃의 전자 메일 주소 아래에 있는 recaptcha가 독일어 같은 긴 단어가 포함된 언어에 대해 스타일이 지정되지 않은 것으로 나타났습니다. 이 후에 recaptcha는 나머지 영역의 모든 recaptcha 요소와 동일하게 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7377de59>
 * _ACP2E-3300_: 관리자 로그인 시 CAPTCHA는 일부 사용자에 대한 상호 작용이 필요하지 않습니다.
-   * _수정 참고 사항_: 관리자 로그인 용 ReCaptcha가 예상대로 확인되었습니다.
+   * _메모 수정_: 관리자 로그인에 대한 ReCaptcha가 예상대로 유효합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/security-package/commit/8f64ab3c>
 
-### 선박
+### 배송
 
 * _AC-10757_: [문제] tracking.phtml의 수정 오타 - JS 함수 이름을 &quot;currier&quot;에서 &quot;carrier&quot;로 변경했습니다.
    * _참고 사항 수정_: 이제 시스템에서 주문 추적 템플릿에 사용된 JavaScript 처리기 함수에서 철자가 잘못된 &quot;currier&quot; 대신 &quot;carrier&quot;라는 용어를 올바르게 사용하여 적절한 함수 이름 지정과 코드 명확성을 보장합니다. 이전에는 철자가 잘못된 &quot;currier&quot;라는 용어가 사용되었기 때문에 코드 베이스에 잠재적인 혼동과 불일치가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/34523>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/33414>
 * _AC-11938_: UPS REST &quot;선적은 측정 단위로 KGS/IN 또는 LBS/CM 또는 OZS/CM를 가질 수 없습니다.&quot;
-   * _수정 참고 사항_: UPS 요금이 결제 및 장바구니 및 카트에 표시되어야 하는지 확인하십시오.
+   * _참고 사항 수정_: UPS 요금이 체크아웃 및 장바구니에 표시되는지 확인하십시오.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38618>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/493e01f5>
 * _AC-13172_: [문제] 고객 주소에 대한 변수의 맞춤법이 수정되었습니다.
@@ -1856,8 +1856,8 @@ Magento Open Source 2.4.8 코어 코드에서 497개의 문제가 해결되었�
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7d5e3906>
 * _AC-13848_: 3d 파티 확장에서 사용할 수 있도록 정적 테스트를 수정하십시오
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/9e383b4d>
-* _ACP2E-3334_: [실행 중 또는 로그에 내부] 픽스처 적용 실패가 표시되지 않습니다.
-   * _수정 메모_: &#39;-
+* _ACP2E-3334_: [내부] 고정장치 적용 실패가 실행 중 또는 로그에 표시되지 않습니다.
+   * _메모 수정_: &#39;-
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3458_: [MFTF] StorefrontCheckoutProcessForQuoteWithoutNegotiatedPricesTest
    * _메모 수정_: 고정 mftfs

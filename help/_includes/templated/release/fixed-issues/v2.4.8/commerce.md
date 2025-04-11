@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3f6776e5dbbf167bbb7b4f831f9a7d4cfbfc0b74
+source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
 workflow-type: tm+mt
-source-wordcount: '28398'
+source-wordcount: '28394'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _ACP2E-3445_: 공유 선물 레지스트리는 이벤트 날짜를 1일 이전으로 표시합니다
    * _메모 수정_: 선물 등록 날짜가 상점 앞에 올바르게 표시됩니다.
 * _ACP2E-3501_: VAPT: Business Logic 오류 - 고객 생년월일의 미래 일자
-   * _수정 참고 사항_: 고객의 생년월일은 오늘 이후로 설정할 수 없습니다.
+   * _참고 사항 수정_: 고객의 생년월일을 오늘보다 늦게 설정할 수 없습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d4de4726>
 
 ### 계정, API, GraphQL
@@ -147,7 +147,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _AC-2341_: &quot;select&quot; 사용자 지정 고객 주소 특성이 새 고객 주소에 대해 렌더링되지 않습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/34950>
 
-### 관리 UI
+### 관리자 UI
 
 * _AC-10705_: [문제] &quot;데이터 다시 로드&quot; 데이터 단추에 대한 권한 확인 추가
    * _참고 사항 수정_: 이제 시스템에서 &quot;데이터 다시 로드&quot; 단추에 대한 권한 검사를 포함하여 해당 권한이 있는 사용자만 표시하고 액세스할 수 있도록 합니다. 이전에는 모든 사용자에 대해 &quot;데이터 다시 로드&quot; 단추가 표시되고 클릭할 수 있으므로 필요한 권한 없이 사용자가 클릭할 때 &quot;허용되지 않는&quot; 페이지가 표시됩니다.
@@ -230,16 +230,16 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _ACP2E-3171_: COD는 허용된 특정 국가에서 사용할 수 없습니다.
    * _메모 수정_: 이제 필요한 경우 언제든지 허용된 특정 국가에서 배달 시 현금을 사용할 수 있습니다.   AC-3216이 예상대로 작동합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3178_: 사용자 지정 생성 주문 상태를 업데이트할 수 없습니다.
-   * _수정 참고_ 사항: &#39;
-이전에는 현재 상태가 &quot;처리 중&quot; 또는 &quot;사기&quot;인 경우에만 상태를 변경할 수 있었지만 이제는 사용자 지정 주문 상태를 업데이트할 수 있습니다.
+* _ACP2E-3178_: 사용자 지정 생성 순서 상태를 업데이트할 수 없습니다.
+   * _메모 수정_: &#39;
+이제 사용자 정의 생성 주문 상태를 업데이트할 수 있지만, 이전에는 현재 상태가 &quot;처리 중&quot; 또는 &quot;사기&quot;인 경우에만 상태를 변경할 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38659>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3294_: 배송 주소 상태가 자동으로 업데이트되지 않습니다.
-   * _수정 참고_: 수정 전에는 배송 주소 지역(또는 지역 ID)이 주소 과금 정보와 동기화되지 않았습니다. 이제 청구지 주소 정보가 변경되면 배송 주소 지역과 지역 ID가 모두 올바르게 업데이트됩니다.
+   * _참고 사항 수정_: 수정 전에 배송 주소 영역(또는 지역 ID)이 주소 청구 정보와 동기화되지 않았습니다. 이제 청구지 주소 정보가 변경되면 배송 주소 지역과 지역 ID가 모두 올바르게 업데이트됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/581b7ef1>
-* _ACP2E-3364_: 추가/편집 관리자 사용자에서 재설정 버튼이 작동하지 않습니다.
-   * _수정 메모_: 이전에는 [관리자 사용자 추가/편집] 페이지에서 [재설정] 버튼이 작동하지 않았습니다. 이제 System -> Permissions - > All Users의 Admin 패널에서 재설정 버튼가 Add/편집 Admin User 페이지에서 올바르게 작동합니다.
+* _ACP2E-3364_: 관리자 추가/편집 사용자에서 재설정 단추가 작동하지 않습니다.
+   * _참고 사항 수정_: 이전에는 관리자 사용자 추가/편집 페이지에서 재설정 단추가 작동하지 않았습니다. 이제 시스템 -> 권한 -> 모든 사용자 아래의 관리 패널에서 재설정 단추가 관리자 사용자 추가/편집 페이지에서 올바르게 작동합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/5184c067>
 * _ACP2E-3373_: Magento 관리자 URL 라우팅이 잘못되었으며 CORS 오류가 발생했습니다.
    * _참고 사항 수정_: 수정 후 사용자 지정 관리자 도메인이 주 도메인의 하위 도메인인 경우 구성된 하위 도메인에서만 관리자에 액세스할 수 있습니다.
@@ -249,13 +249,13 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 이전에는 `Maximum Qty Allowed in Shopping Cart`을(를) 비워 두면 여기에 빈 값이 허용되지 않지만 예외를 throw하지 않았습니다. 이 수정 사항이 적용되면 빈 문자열을 넣으면 예외가 발생하고 제품 저장이 허용되지 않습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [페이지 빌더 미리 보기 UI 문제] 페이지 빌더 열의 단추가 올바르게 정렬되지 않습니다.
-   * _수정 메모_: 이제 페이지 빌더 열의 단추가 올바르게 정렬됩니다. 이전에는 페이지 빌더 열 내에서 맞춤이 일치하지 않았습니다.
+   * _참고 사항 수정_: 이제 페이지 빌더 열의 단추가 올바르게 정렬되었습니다. 이전에는 페이지 빌더 열 내에서 맞춤이 일치하지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/1a52ef4c>
 * _ACP2E-3431_: 순서가 지정된 제품 보고서를 내보내지 않습니다. 대신 404 오류가 발생했습니다.
-   * _수정 참고_: 이제 CSV 및 XML에 대한 제품 주문 보고서 excport가 예상대로 작동합니다.
+   * _참고 사항 수정_: 이제 CSV 및 XML로 제품 주문 보고서 내보내기가 예상대로 작동합니다
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/88660e79>
-* _ACP2E-3457_: 프로덕션 모드에서 Js 축소를 활성화한 후 콘솔의 TinyMCE JS 오류
-   * _수정 참고_ 사항: 이전에는 관리자 패널 내의 프로덕션 모드에서 JavaScript 축소를 활성화하면 TinyMCE 6과 관련된 JavaScript 오류가 브라우저 콘솔에 표시되어 기능 및 사용자 경험 환경에 영향을 미쳤습니다. 이제 이 문제가 해결되어 JS 축소가 활성화된 경우 TinyMCE 6이 오류를 생성하지 않고 균일 없이 원활하게 작동하도록 합니다.
+* _ACP2E-3457_: 프로덕션 모드에서 Js 축소를 활성화한 후 콘솔에 TinyMCE JS 오류가 발생했습니다.
+   * _참고 사항 수정_: 이전에는 관리 패널 내의 프로덕션 모드에서 JavaScript 축소를 활성화하면 TinyMCE 6과 관련된 JavaScript 오류가 브라우저 콘솔에 표시되어 기능과 사용자 환경에 영향을 주었습니다. 이제 이 문제가 해결되어 JS 축소가 활성화된 경우에도 TinyMCE 6이 오류를 생성하지 않고 원활하게 작동할 수 있습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/56463d5e>
 * _ACP2E-3459_: ACP2E-3375 수정 사항을 완전히 완료하기 위한 추가 변경 요청
    * _메모 수정_: &#39;-
@@ -320,8 +320,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _ACP2E-3080_: 관리자 주문 제품 보고서 날짜 범위 가시성 문제.
    * _참고 사항 수정_: 사용자는 주문 제품 보고서에서 원하는 날짜를 선택할 수 있습니다. 이전에는 테이블을 새로 고친 후 &#39;시작&#39; 날짜를 선택하면 &#39;종료&#39; 날짜가 재설정됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3096_: newrelic을 만드는 잘못된 curl 헤더:create:deploy-marker가 작동하지 않음
-   * _참고 사항 수정_: 이제 시스템에서 curl 헤더를 올바르게 포맷하여 newrelic:create:deploy-marker 명령이 New Relic에서 배포 마커를 성공적으로 만들 수 있도록 합니다. 이전에는 잘못된 curl 헤더로 인해 New Relic에서 배포 마커를 만들 수 없었습니다.
+* _ACP2E-3096_: 잘못된 curl 헤더로 인해 `newrelic:create:deploy-marker`이(가) 작동하지 않음
+   * _참고 사항 수정_: 이제 시스템에서 curl 헤더 형식을 올바르게 지정하므로 `newrelic:create:deploy-marker` 명령이 New Relic에서 배포 마커를 성공적으로 만들 수 있습니다. 이전에는 잘못된 curl 헤더로 인해 New Relic에서 배포 마커를 만들 수 없었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/37641>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3146_: 사용자 지정 옵션을 사용하여 구성 가능한 제품에 대한 GTM의 dataLayer에 addToCart 이벤트가 없습니다.
@@ -420,7 +420,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 이제 번들 제품에 대한 확인란 옵션을 선택하지 않고 &#39;장바구니에 추가&#39; 단추를 클릭할 때 유효성 검사 오류 메시지가 하나만 표시됩니다. 이전에는 선택하지 않은 각 확인란에 대해 여러 개의 유효성 검사 오류 메시지가 표시되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-13321_: 일부 순서 관련 테스트 사례에서 Magento 예외가 발생했습니다.
-   * _수정 참고_ 사항: 이제 시스템이 다양한 테스트 사례에서 &#39;sendGuestPaymentInformation&#39; 단계를 올바르게 처리하여 Magento 예외가 발생하지 않도록 합니다. 이전에는 이러한 예외가 null 결제 방법으로 인해 발생하여 여러 테스트 사례에서 오류가 발생했습니다.
+   * _참고 사항 수정_: 이제 시스템에서 다양한 테스트 사례의 &#39;sendGuestPaymentInformation&#39; 단계를 올바르게 처리하여 Magento 예외가 throw되지 않도록 합니다. 기존에는 이러한 예외가 null 결제 방식으로 인해 발생하면서 여러 테스트 사례에서 오류가 발생하기도 했다.
 
 ### 장바구니 및 체크아웃
 
@@ -444,8 +444,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 이제 시스템이 판매 규칙을 올바르게 확인하여 제품 조건이 제품 이름과 일치하지 않을 때 장바구니에 쿠폰 코드를 적용할 수 없습니다. 기존에는 상품 조건이 상품명과 일치하지 않아도 판매 규정을 적용해 배송 금액에 대한 할인을 받을 수 있었다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38671>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0574ac23>
-* _AC-11914_: [Issue] Sales 규칙 Cart고정 계산: 잘못된 할인 금액
-   * _수정 사항_: 이제 시스템은 장바구니 고정 금액으로 판매 규칙의 할인 금액을 올바르게 계산하여 장바구니 품목의 변경에 관계없이 정확한 할인이 적용되도록 합니다. 이전에는 장바구니 품목이 변경될 때 할인 금액이 잘못 달라져 예상보다 훨씬 더 큰 할인이 발생하는 경우가 있었습니다.
+* _AC-11914_: [문제] 판매 규칙 CartFixed 계산: 잘못된 할인 금액
+   * _참고 사항 수정_: 이제 시스템에서 장바구니 고정 금액이 있는 판매 규칙에 대한 할인 금액을 올바르게 계산하므로 장바구니 항목의 변경 사항에 관계없이 정확한 할인이 적용됩니다. 이전에는 장바구니 품목을 변경할 때 할인 금액이 잘못 변경되어 예상보다 할인 금액이 크게 변경되기도 했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38694>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/581b7ef1>
 * _AC-11993_: [문제] 포스트코드가 변경된 후 로더가 배송 방법을 차단합니다. 배송 속도 유효성 검사 규칙
@@ -495,16 +495,16 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 선물 레지스트리에서 제품을 성공적으로 구입할 수 없는 문제가 해결되어 주문을 하고 선물 레지스트리를 적절하게 업데이트할 수 있습니다. 이전에는 선물 등록에서 주문을 시도하는 동안 오류가 발생하여 구매가 완료되지 않았습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/35432>
 * _ACP2E-2704_: 쿠키를 보낼 수 없습니다. 순서를 재지정하는 동안 &#39;이미지 메시지&#39; 크기
-   * _참고 사항 수정_: 순서 변경 프로세스에서는 지금 자체 오류가 생성되지 않습니다. 장바구니 목록 기본 제공 항목 확인에 의존합니다.
+   * _참고 사항 수정_: 순서 변경 프로세스에서는 지금 자체 오류가 생성되지 않습니다. 장바구니에 기본 제공 항목 검사를 나열합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/ba25af8a>
-* _ACP2E-2798_: 결제 시 기본 배송 주소가 선택되지 않았습니다.
-   * _수정 참고_ 사항: 이제 기본 배송 주소가 활성화된 주소 검색의 컨텍스트에서 이벤트가 선택됩니다.
+* _ACP2E-2798_: 체크아웃 시 기본 배송 주소가 선택되지 않음
+   * _참고 사항 수정_: 이제 활성화된 주소 검색 컨텍스트에서 기본 배송 주소가 선택된 이벤트입니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7e0e5582>
-* _ACP2E-2897_: [사용자 지정 옵션의 CLOUD] graphql addProductsToCart api 문제
-   * _수정 참고 사항_: GraphQL은 다른 사용자 지정 옵션을 사용하여 동일한 제품을 장바구니에 올바르게 추가합니다
+* _ACP2E-2897_: 사용자 지정 옵션의 [CLOUD] graphql addProductsToCart api 문제
+   * _참고 사항 수정_: GraphQL이 다른 사용자 지정 옵션을 사용하여 동일한 제품을 장바구니에 올바르게 추가합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/c971859e>
-* _ACP2E-2917_: [클라우드] 관련 제품 스토어 보기를 변경할 때 규칙이 작동하지 않음
-   * _수정 메모_: 사용자 지정 속성 값이 장바구니 페이지에서 성공적으로 수신되었는지 확인함으로써 문제가 해결되었습니다. 이전에는 상점 장바구니 페이지 페이지에서 상점 간에 전환할 때 제대로 가져오지 않았습니다.
+* _ACP2E-2917_: 스토어 보기를 변경할 때 [Cloud] 관련 제품 규칙이 작동하지 않음
+   * _참고 사항 수정_: 사용자 지정 속성 값이 장바구니 페이지에서 성공적으로 수신되었는지 확인하여 문제를 해결했습니다. 이전에는 상점 장바구니 페이지에서 상점 간을 전환할 때 제대로 가져오지 못했습니다.
 * _ACP2E-2923_: 새 고객으로 체크 아웃할 때 계정에 여러 주소가 추가되었습니다.
    * _참고 사항 수정_: 이제 주문을 만들지 못한 경우 시스템이 새 고객 주소를 한 번만 저장하여 주문 배치 오류가 발생할 경우 동일한 주소를 여러 개 만들 수 없습니다. 이전에는, 주문이 성공적으로 생성되었는지 여부에 관계없이 주문 배치가 시도될 때마다 새 주소가 저장되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/001e5188>, <https://github.com/magento/inventory/commit/2ebcef39>
@@ -565,7 +565,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _AC-12119_: 구성 가능한 제품에 대해 즉시 구매 &quot;가장 저렴한 배송&quot;이 중단됨
    * _참고 사항 수정_: 즉시 구매 기능에서 가장 저렴한 정액 요금제 대신 구성 가능한 제품에 대해 더 비싼 매장 내 배달 옵션을 잘못 선택했습니다. 이 수정 사항을 통해 실제 가격을 기준으로 올바른 배송 방법을 선택할 수 있습니다.&quot;
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38811>
-   * _GitHub 코드 기여:_<https://github.com/magento/magento2/pull/38819> ,<https://github.com/magento/magento2/commit/29fe9097>
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38819>, <https://github.com/magento/magento2/commit/29fe9097>
 
 ### 카탈로그
 
@@ -596,8 +596,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _AC-13068_: 드롭다운 옵션 누락
    * _참고 사항 수정_: 이제 값이 20개가 넘는 새 특성을 만들 때 시스템이 드롭다운에 모든 값을 올바르게 표시합니다. 이전에는 처음 20개 값 또는 다른 선택한 페이지 값만 표시되어 나머지 값이 누락되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/47b448e2>
-* _AC-13296_: [문제] 범주 런타임 캐시에 현재 통증 ID를 사용합니다.
-   * _수정 참고 사항_: 이제 시스템에서 범주 런타임 캐시에 현재 스토어 ID를 올바르게 사용하므로 에뮬레이션이 사용되거나 사용자 지정 코드가 범주를 다른 저장소에 저장할 때 데이터 재정의가 방지됩니다. 이전에는 런타임에 저장된 개체가 잘못된 스토어 저장소에서 제공되어 데이터 재정의가 발생했을 수 있습니다.
+* _AC-13296_: [문제] 범주 런타임 캐시에 현재 저장소 ID를 사용합니다.
+   * _참고 사항 수정_: 이제 시스템에서 범주 런타임 캐시에 현재 저장소 ID를 올바르게 사용하므로 에뮬레이션을 사용하거나 사용자 지정 코드가 다른 저장소에 범주를 저장할 때 데이터를 재정의할 수 없습니다. 이전에는 런타임에 저장된 개체가 잘못된 저장소에서 가져와서 데이터를 재정의했을 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/39310>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/36394>
 * _AC-13324_: bin/magento sampledata:deploy —no-update에서 예외가 발생합니다.
@@ -652,15 +652,15 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _ACP2E-2785_: 이미지에 영향을 주지 않는 기존 예약된 업데이트를 삭제하면 제품 이미지가 손실됩니다
    * _참고 사항 수정_: 스테이징 업데이트를 삭제하는 동안 제품 이미지가 제거되지 않습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/c8931218>
-* _ACP2E-2799_: [계층 가격과 함께 사용할 경우 클라우드] 에서 번들 제품 가격이 잘못됨
-   * _수정 참고_ 사항: 이전에는 특정 백분율 할인을 계산할 때 소수점 이하 2자리까지 반올림하면 장바구니 및 제품 목록 페이지/제품 세부 정보 페이지에 대해 다른 최종 가격이 생성되었습니다. 이 수정 사항이 적용된 후 번들 제품의 최종 가격은 제품 세부 정보 페이지, 제품 목록 페이지 및 미니 장바구니 페이지와 동일합니다.
+* _ACP2E-2799_: [Cloud] 계층 가격과 함께 사용할 때 잘못된 번들 제품 가격
+   * _참고 사항 수정_: 이전에는 소수점 2로 반올림된 특정 백분율 할인을 계산할 때 장바구니 및 제품 목록 페이지/제품 세부 사항 페이지에 대해 다른 최종 가격이 생성되었습니다. 이 수정 사항이 적용되면 번들 제품의 최종 가격은 제품 세부 사항 페이지, 제품 목록 페이지 및 미니 장바구니 페이지와 동일합니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38091>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b2286ecf>
 * _ACP2E-2805_: 카탈로그 프로모션 규칙이 quantity_and_stock_status 특성과 함께 작동하지 않음
-   * _수정 참고_: 이제 수량_and_stock_status 속성이 카탈로그 프로모션 규칙에 의해 계정되며, 이전에는 관리자 측에서 새 제품을 생성할 때 계정되지 않았습니다.
+   * _참고 사항 수정_: 이제 admin side에서 새 제품을 생성할 때 이전에 고려하지 않은 카탈로그 프로모션 규칙에 따라 quantity_and_stock_status 특성이 고려됩니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/35627>
    * _GitHub 코드 기여_: <https://github.com/magento/inventory/commit/cf34971d>
-* _ACP2E-2837_: REST API를 통해 가격을 업데이트하는 동안 제품 엔티티 updated_at 열 값이 업데이트되지 않음
+* _ACP2E-2837_: REST API를 통해 가격을 업데이트하는 동안 제품 엔터티 updated_at 열 값이 업데이트되지 않음
    * _참고 사항 수정_: 관리자의 &#39;마지막 업데이트 날짜&#39; 열이 REST API를 통해 기존 제품을 업데이트하는 동안 적절한 날짜/시간에 업데이트됩니다. 이전에는 &#39;마지막 업데이트 날짜&#39; 열이 제대로 업데이트되지 않았습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2840_: 제품 가져오기를 통해 고유하지 않은 값을 설정할 수 있습니다.
@@ -777,8 +777,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _ACP2E-3063_: [Cloud] 캐시가 무효화되지 않습니다.
    * _참고 사항 수정_: 이전에는 CMS 페이지를 업데이트된 디자인 레이아웃으로 저장할 때 프런트 엔드에 적절히 반영되지 않았습니다. 이 수정 사항이 적용되면 디자인 레이아웃을 변경하고 CMS 페이지를 저장하면 적절한 디자인 레이아웃이 프런트 엔드에 표시됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/66dea0de>
-* _ACP2E-3131_: [컨텐츠 위젯에서 클라우드] 연결/비연결 범주가 반전되었습니다.
-   * _수정 참고_ 사항: 이전에는 연결 범주> - 표시를 선택했을 때 앵커와 비앵커 간의 부모-자식 관계를 반영하지 않는 모든 범주가 표시되었습니다. 이 수정 사항이 적용된 후 -> 연결 범주에 표시는 연결 범주(선택 가능)만 표시되고 -> 비연결 범주에 표시는 연결 범주가 아닌 범주(선택 가능)를 표시합니다
+* _ACP2E-3131_: [Cloud] 앵커/비앵커 범주가 콘텐츠 위젯에서 반전됨
+   * _참고 사항 수정_: 이전에는 [표시 위치] -> [앵커 범주]를 선택했을 때 앵커와 비앵커 간의 부모-자식 관계를 반영하지 않은 모든 범주가 표시되었습니다. 이 수정 사항이 적용되면 [표시 켜기] -> [앵커 범주]에는 [앵커 범주](선택 가능)만 표시되고, [표시 켜기] -> [앵커 이외의 범주] 에는 [앵커 이외의 범주](선택 가능)가 표시됩니다
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7377de59>
 * _ACP2E-3152_: 범주가 위젯과 작동하지 않음
    * _참고 사항 수정_: 이전에는 다른 앵커/비앵커 범주에 대한 CMS 블록을 저장했지만, 이 블록은 맨 앞에 표시되었을 때 하위 범주에 대해 작동하지 않았습니다. 이 수정 사항이 적용되면 블록은 다른 카테고리의 프런트 엔드에 표시됩니다.
@@ -853,16 +853,16 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: L2 Redis 캐시가 활성화되어 있고 고객이 백엔드에서 업데이트된 경우 PHPSESSID는 로그인한 고객의 프론트엔드 영역에서 POST 요청에 더 이상 다시 생성되지 않습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3532_: 사이트 맵 생성 경고
-   * _수정 참고_ 사항: 수정 후 사이트맵이 시스템 tmp 디렉토리에 생성되어 최종 목적지에 복사됩니다.
+   * _참고 사항 수정_: 수정 후 사이트 맵이 시스템 tmp 디렉터리에 생성되고 최종 대상에 복사됩니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/d4de4726>
 
 ### 콘텐츠
 
-* _AC-10539_: [] 최근에 본 위젯의 가격 표시 관련 문제
+* _AC-10539_: [문제] 최근에 본 위젯의 가격 표시 문제
    * _참고 사항 수정_: 이제 시스템에서 &quot;최근에 본 제품&quot; 위젯에 품절된 간단한 제품의 가격을 올바르게 표시하므로 모든 위젯과 제품 목록 페이지에서 일관성이 유지됩니다. 기존에는 가격 로딩 템플릿의 조건 때문에 품절 간편 상품 가격이 &#39;최근 본 상품&#39; 위젯에 표시되지 않았다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38167>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38159>
-* _AC-10596_: [acl.xsd 파일에서 올바른 오타 및 문법 문제]
+* _AC-10596_: [문제] acl.xsd 파일에서 올바른 오타 및 문법
    * _참고 사항 수정_: 이제 시스템에서 acl.xsd 파일의 오타 및 문법 오류를 수정하여 설명서의 명확성과 정확성을 향상시킵니다. 이전에는 acl.xsd 파일에 오류 및 잘못된 문법이 포함되어 있어 혼동을 일으킬 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38061>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38046>
@@ -891,9 +891,9 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: Wdigets가 이제 동적 블록 내에서 올바르게 렌더링되고 있습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a12063bd>
 * _ACP2E-2606_: YouTube nocookie url이 페이지 빌더에서 작동하지 않음
-   * _수정 참고_ 사항 : 이제 페이지 빌더는 유효성 검사 규칙의 양식 요소 설정에서 youtube no-쿠키 URL을 허용합니다. 이전에는 페이지의 빌더에서 youtube no-쿠키 URL이 작동하지 않았습니다.
-* _ACP2E-2693_: [뉴스레터 템플릿 문제로 인해 클라우드] 프런트 엔드가 로드되지 않음
-   * _수정 참고 사항_: CMS 페이지 컨텐츠 섹션을 통해 블록을 추가해도 더 이상 예외가 리드 않습니다.
+   * _참고 사항 수정_: 이제 페이지 빌더에서 유효성 검사 규칙의 양식 요소 설정에서 youtube no-cookie url을 허용합니다. 이전에는 Youtube no-cookie URL이 페이지 빌더에서 작동하지 않았습니다.
+* _ACP2E-2693_: [Cloud] 뉴스레터 템플릿의 문제로 인해 프론트엔드를 로드할 수 없습니다.
+   * _참고 사항 수정_: CMS 페이지 콘텐츠 섹션을 통해 블록을 추가해도 더 이상 예외가 발생하지 않습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/ea79f7dd>
 * _ACP2E-2836_: ACP2E-2836: [Cloud] 로그에 예외가 있습니다. InvalidArgumentException: vendor/magento/module-rule/Model/ConditionFactory.php에 클래스가 없습니다.
    * _참고 사항 수정_: PageBuilder 제품 콘텐츠 설정에서 조건을 제거해도 더 이상 예외가 로그 파일에 기록되지 않습니다. 이전에는 PageBuilder 제품 콘텐츠 설정에서 조건을 제거하면 프론트엔드에 문제를 일으키지 않지만 중요한 예외가 로그에 기록되었습니다.
@@ -907,14 +907,14 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _ACP2E-2970_: 0바이트 이미지가 디렉터리에 있을 때 이전 미디어 갤러리에서 이미지를 렌더링하지 못했습니다.
    * _참고 사항 수정_: 이제 시스템이 기능을 중단하지 않고 미디어 갤러리에서 0바이트 이미지를 처리하여 디렉터리의 다른 이미지를 예상대로 표시하고 선택할 수 있습니다. 이전에는 미디어 갤러리에 0바이트 이미지가 있으면 디렉터리의 모든 이미지를 표시하거나 선택할 수 없었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/35b1b1da>
-* _ACP2E-3064_: CMS 블록을 편집할 때 오류 페이지 빌더
-   * _수정 참고_: 이제 시스템에서 &quot;페이지 빌더가 잠금을 해제하지 않고 5초 동안 렌더링되었습니다&quot;라는 오류를 발생시키지 않고 페이지 빌더를 사용하여 관리 영역에서 변경한 내용을 올바르게 저장합니다. 을 클릭합니다. 이전에는 변경 사항을 저장하려고 할 때 이 오류가 발생하여 콘텐츠를 성공적으로 업데이트할 수 없었습니다.
+* _ACP2E-3064_: CMS 블록을 편집할 때 페이지 빌더 오류 발생
+   * _참고 사항 수정_: 이제 시스템에서 &quot;Page Builder가 잠금을 해제하지 않고 5초 동안 렌더링하고 있습니다.&quot;라는 오류 메시지를 표시하지 않고, Page Builder를 사용하여 관리 영역에서 변경한 내용을 올바르게 저장합니다. 을 클릭합니다. 이전에는 변경 사항을 저장하려고 할 때 이 오류가 발생하여 콘텐츠를 성공적으로 업데이트할 수 없었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/35b1b1da>, <https://github.com/magento/magento2-page-builder/commit/4d5db10a>
 * _ACP2E-3092_: [CLOUD] 장바구니 섹션에 장바구니 체크아웃 또는 편집 단추가 없습니다.
-   * _수정 참고_: 번들 제품은 이제 오류 없이 위젯을 통해 장바구니 추가됩니다.
-   * _GitHub 코드 기여:_<https://github.com/magento/magento2/commit/b21e5d91> ,<https://github.com/magento/magento2-page-builder/commit/4ebe3f1d>
-* _ACP2E-3113_: 범주 페이지의 컨텐츠 스테이징 미리 보기에 제품 위젯이 표시되지 않습니다.
-   * _수정 참고 사항_: CMS 블록에 연결된 추가 범주에 대한 제품 항목이 데이터베이스에 정확하게 기록되었는지 확인하여 문제가 해결되었습니다. 이전에는 카테고리 미리 보기 페이지 요청 시 빈 결과 집합을 반환했습니다.
+   * _참고 사항 수정_: 이제 번들 제품이 오류 없이 위젯을 통해 장바구니에 추가됩니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b21e5d91>, <https://github.com/magento/magento2-page-builder/commit/4ebe3f1d>
+* _ACP2E-3113_: 범주 페이지의 콘텐츠 스테이징 미리 보기에 제품 위젯이 표시되지 않습니다.
+   * _참고 사항 수정_: CMS 블록에 연결된 추가 범주에 대한 제품 항목이 데이터베이스에 정확하게 기록되었는지 확인하여 문제를 해결했습니다. 이전에는 카테고리 미리 보기 페이지가 요청되면 빈 결과 세트를 반환했습니다.
 * _ACP2E-3122_: [CLOUD] 이미지 업로드 단추가 작동하지 않습니다.
    * _참고 사항 수정_: PageBuilder의 배너 및 슬라이더에 대한 이미지 업로드 단추가 예상대로 작동하지 않기 전에 단추를 누르면 로컬 파일 관리자가 열려 업로드할 이미지를 선택합니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2-page-builder/commit/476ef8ea>
@@ -1003,7 +1003,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38214>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38364>
 * _AC-11476_: [문제] 양식에 이름이 `method`인 요소가 포함되어 있는 경우 고객 데이터 관련 문제를 해결합니다.
-   * _참고 사항 수정_: 이제 &#39;method&#39;라는 요소가 양식에 있어도 시스템에서 양식 제출에 있는 &#39;method&#39; 특성을 올바르게 식별합니다. 이렇게 하면 고객 데이터를 정확하게 처리할 수 있습니다. 이전에는 양식 요소의 이름이 &#39;method&#39;인 경우 양식 제출에서 &#39;method&#39; 속성의 식별을 방해하여 고객 데이터 처리에 잠재적인 문제가 발생했습니다.
+   * _참고 사항 수정_: 이제 &#39;method&#39;라는 요소가 양식에 있어도 시스템에서 양식 제출에 있는 &#39;method&#39; 특성을 올바르게 식별합니다. 이렇게 하면 고객 데이터를 정확하게 처리할 수 있습니다. 이전에는 양식 요소의 이름이 &#39;method&#39;인 경우 양식 제출에서 &#39;method&#39; 속성의 식별을 방해하여 고객 데이터 처리에 문제가 발생할 수 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38484>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38449>
 * _AC-11489_: [문제] \Magento\Framework\Data\Collection::getItemById에 대한 PHPDocs 수정
@@ -1019,19 +1019,19 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38526>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/c8f87c25>
 * _AC-11681_: [문제] AC-2039 AC-1667 업그레이드 TinyMCE 참조
-   * _수정 참고_ 사항: composer.json에서 tinymce 최신 버전을 업데이트했습니다.
+   * _참고 사항 수정_: composer.json에서 tinymce 최신 버전을 업데이트했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38533>
-   * _GitHub 코드 기여:_<https://github.com/magento/magento2/pull/36543> ,<https://github.com/magento/magento2/commit/b34c0a75>
-* _AC-11696_: ChangelogBatchWalker가 다중 스레드에서 작동하지 않습니다.
-   * _수정 참고_: 이제 시스템은 MView 인덱싱을 위한 프로세스 포크를 지원하여 여러 스레드에서 작동할 때 인덱서 실행 중 오류를 방지합니다. 이전에는 여러 스레드에서 ChangelogBatchWalker를 실행하면 다른 스레드에서 사용하는 테이블이 삭제되어 인덱서 실행 중에 오류가 발생했습니다.
+   * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/36543>, <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-11696_: ChangelogBatchWalker가 여러 스레드에서 작동하지 않습니다.
+   * _참고 사항 수정_: 이제 시스템에서 MView 인덱싱을 위한 프로세스 포크를 지원하여 여러 스레드에서 작업할 때 인덱서 실행 중에 오류가 발생하지 않도록 합니다. 이전에는 여러 스레드에서 ChangelogBatchWalker를 실행하면 다른 스레드에서 사용하는 테이블이 삭제되어 인덱서 실행 중에 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38246>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38248>
 * _AC-11781_: [문제] 이름이 잘못된 변수의 이름을 바꿉니다.
-   * _수정 참고_ 사항: 이제 시스템에서 여전히 환불할 수 있는 금액이 포함된 변수 이름을 올바르게 지정하여 디버깅 중에 혼동을 방지합니다. 이전에는 이 변수의 이름이 totalRefund로 잘못 지정되어 개발자에게 오해를 리드 수 있었습니다.
+   * _참고 사항 수정_: 이제 시스템에서 아직 환불될 수 있는 금액이 포함된 변수의 이름을 올바르게 지정하므로 디버깅 중에 혼동을 방지할 수 있습니다. 기존에는 이 변수를 totalRefund로 잘못 명명하여 개발자의 오해를 불러일으킬 수 있었다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38609>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/36205>
-* _AC-11809_: [XML을 통해 사용자 지정 특성을 현재 링크 전달 문제]
-   * _수정 참고_: 이제 시스템에서 XML을 통해 사용자 지정 속성을 현재 링크에 전달할 수 있으므로 링크가 현재 페이지일 때 이러한 속성이 올바르게 균일하게 표시됩니다. 이전에는 getAttributesHtml() 메서드가 현재 링크에 사용되지 않았기 때문에 현재 페이지 링크에 대해 사용자 지정 속성이 표시되지 않았습니다.
+* _AC-11809_: [문제] XML을 통해 현재 링크에 사용자 지정 특성을 전달합니다.
+   * _참고 사항 수정_: 이제 시스템에서 사용자 지정 특성을 XML을 통해 현재 링크에 전달할 수 있으므로 링크가 현재 페이지인 경우에도 이러한 특성이 올바르게 표시되도록 합니다. 이전에는 getAttributesHtml() 메서드가 현재 링크에 사용되지 않아 현재 페이지 링크에 대한 사용자 지정 속성이 표시되지 않았습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38500>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/30070>
 * _AC-11819_: 일부 구성의 경우 2.4.7에서 기본 제공 FPC 캐시가 손상되었습니다.
@@ -1196,7 +1196,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 ### 프레임워크, GraphQL
 
 * _AC-7976_: [문제] GraphQL 스키마에 대한 사용자 지정 스칼라 유형 지원이 도입됨
-   * _수정 참고_: 이제 시스템이 GraphQL 스키마에 대한 사용자 지정 스칼라 유형을 지원하므로 개발자가 사용자 지정 스칼라 유형 및 구현을 정의할 수 있습니다. 이 기능은 HTML, 이메일, URL, 날짜 등과 같이 유효성 검사가 필요할 수 있는 값을 표시하고 EAV 속성과 같은 고급 사례에 특히 유용합니다. 이전에는 시스템이 GraphQL에서 사용자 지정 스칼라 유형 처리를 지원하지 않았습니다.
+   * _참고 사항 수정_: 이제 시스템에서 GraphQL 스키마에 대한 사용자 지정 스칼라 유형을 지원하므로 개발자가 사용자 지정 스칼라 유형 및 구현을 정의할 수 있습니다. 이 기능은 HTML, 이메일, URL, 날짜 등과 같이 유효성 검사가 필요할 수 있는 값을 표시하고 EAV 속성과 같은 고급 사례에 특히 유용합니다. 이전에는 시스템이 GraphQL에서 사용자 지정 스칼라 유형 처리를 지원하지 않았습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/36877>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/34651>, <https://github.com/magento/magento2/commit/0574ac23>
 
@@ -1288,17 +1288,17 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 사용자 지정 옵션을 선택할 때 잘못된 값을 반환하는 original_row_total 필드 문제를 해결했습니다.
 * _LYNX-503_: 구성에 따라 그룹화된 제품 썸네일이 표시됩니다.     .
    * _참고 사항 수정_: 그룹화된 제품 썸네일이 구성 설정에 따라 표시되도록 하는 문제를 해결했습니다
-* _LYNX-510_: OrderAddress에서 selected_options를 쿼리할 때 오류
-   * _수정 참고_: 주문 주소 GraphQL 응답에 custom_attributesV2하도록 AttributeSelectedOptions를 업데이트했습니다.
-* _LYNX-512_: original_item_price에 할인이 포함되어 있지 않습니다.
-   * _수정 참고_: 할인을 포함하도록 original_item_price 업데이트되었습니다.
+* _LYNX-510_: OrderAddress에서 selected_options를 쿼리하는 동안 오류가 발생했습니다.
+   * _참고 사항 수정_: AttributeSelectedOptions를 order address GraphQL 응답에서 custom_attributesV2로 업데이트했습니다.
+* _LYNX-512_: original_item_price에 할인이 포함되지 않음
+   * _메모 수정_: 할인을 포함하도록 original_item_price를 업데이트했습니다.
 * _LYNX-530_: 사용할 수 없는 메시지에 사용 가능한 재고 수량이 표시되지 않습니다
-   * _수정 메모_: &quot;사용할 수 없음&quot; 메시지 구성에 맞게 AddProductsToCart 변형에 대한 오류 메시지 및 오류 코드를 해결했습니다.
-* _LYNX-532_: 다중 선택 옵션이 있는 사용자 지정 옵션이 있는 Simple에서 &quot;OUT_OF_STOCK&quot; 상태가 반환됩니다.
-   * _수정 참고 사항_: 인벤토리 패키지의 StockStatusProvider 확인자를 업데이트하여 사용자 지정 옵션이 있는 간단한 제품에 대한 stock_status 수정했습니다.
-* _LYNX-533_: 오류(GQL): 장바구니.itemsV2.items.product.custom_attributesV2에서 서버 오류를 반환합니다.
-   * _수정 사항_: 사용자 지정 속성이 없는 제품을 추가하여 장바구니 쿼리에 제품의 사용자 지정 속성이 포함될 때 발생하는 서버 오류가 해결되었습니다.
-* _LYNX-536_: 주문 수/date_of_first_order 항상 null을 반환합니다.
+   * _참고 사항 수정_: &quot;사용할 수 없음&quot; 메시지 구성에 맞게 AddProductsToCart 돌연변이에 대한 오류 메시지와 오류 코드를 해결했습니다.
+* _LYNX-532_: &quot;OUT_OF_STOCK&quot; 상태가 다중 선택 옵션이 있는 사용자 지정 옵션 제품을 사용하는 단순에서 반환됩니다.
+   * _참고 사항 수정_: 사용자 지정 옵션이 있는 간단한 제품에 대한 stock_status를 수정하도록 인벤토리 패키지에서 StockStatusProvider 해결사를 업데이트했습니다.
+* _LYNX-533_: 오류(GQL): cart.itemsV2.items.product.custom_attributesV2가 서버 오류를 반환합니다
+   * _참고 사항 수정_: 장바구니 쿼리에서 사용자 지정 특성 없이 제품을 추가하여 제품의 사용자 지정 특성을 포함할 때 발생한 서버 오류를 해결했습니다.
+* _LYNX-536_: orders/date_of_first_order가 항상 null을 반환함
    * _참고 사항 수정_: orders > date_of_first_order가 항상 null을 반환하는 문제가 해결되었습니다.
 * _LYNX-544_: 고객은 부분적으로 배송된 주문을 취소할 수 없습니다.
    * _참고 사항 수정_: 부분적으로 배송된 주문을 취소할 수 없도록 고객을 제한하기 위해 유효성 검사가 추가되었습니다.
@@ -1523,17 +1523,17 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _LYNX-366_: 실제 기프트 카드 쿼리의 전자 메일 Prop에 서버 오류가 있습니다.
    * _메모 수정_: 실제 기프트 카드의 sender_email 및 recipient_email 쿼리에서 서버 오류가 발생하는 문제가 해결되었습니다. 이러한 prop은 이제 가상 기프트 카드에 대해 올바르게 반환되며 쿼리 동작은 일관됩니다.
 * _LYNX-380_: CartItemInterface의 is_available 특성은 구성 가능한 제품에 대해 항상 false를 반환합니다.
-   * _수정 참고_: 재고가 있는 구성 가능한 제품에 대해 CartItemInterface의 is_available 특성이 항상 false를 반환하는 문제를 해결했습니다. 이제 해당되는 경우 가용성이 true로 올바르게 반영됩니다.
-* _LYNX-382_: 판매 가능 재고가 제품의 수량보다 낮은 경우 CartItemInterface의 is_available 특성이 true 균일를 반환합니다.
-   * _수정 참고_: 장바구니 항목이 판매 가능한 재고를 초과할 때 CartItemInterface의 is_available 특성이 균일 true수량 잘못 반환하는 문제를 해결했습니다.
-* _LYNX-395_: 구성 가능한 제품에서 ProductInterface의 only_x_left_in_stock 특성이 정확하지 않습니다.
-   * _수정 참고_: ProductInterface의 only_x_left_in_stock 특성이 장바구니의 구성 가능한 제품 변형에 사용 가능한 재고를 정확하게 반영하지 않는 문제가 수정되었습니다. 이제 only_x_left_in_stock 값이 실제 이형 상품 재고 수준과 올바르게 일치하므로 장바구니 GQL 쿼리에 정확한 인벤토리 데이터가 반환됩니다.
-* _LYNX-399_: 그룹화된 제품 내의 장바구니에 간단한 제품을 추가하면 자리 표시자 썸네일이 반환됩니다.
-   * _수정 참고_: 간단한 제품(그룹화된 제품의 일부)을 장바구니 목록에 추가하면 제품에 할당된 이미지가 있을 때 자리 표시자 썸네일 이미지가 반환되는 균일 문제가 수정되었습니다.
-수정 세부 사항 :
-• 이제 제품 썸네일에 지정된 이미지(사용 가능한 경우)가 올바르게 표시됩니다.
-• 썸네일 선택은 다음 아래의 관리자 구성을 따릅니다.
-상점 > 구성 > 판매 > 체크아웃 > 장바구니 > 그룹화된 제품 이미지.
+   * _참고 사항 수정_: CartItemInterface의 is_available 특성이 재고 구성 가능한 제품에 대해 항상 false를 반환하는 문제가 해결되었습니다. 이제 해당되는 경우 가용성이 true로 올바르게 반영됩니다.
+* _LYNX-382_: CartItemInterface의 is_available 특성은 판매 가능한 재고가 제품 수량보다 낮은 경우에도 true를 반환합니다.
+   * _참고 사항 수정_: 장바구니 항목 수량이 판매 가능한 재고량을 초과할 경우에도 CartItemInterface의 is_available 특성이 true를 잘못 반환하던 문제를 해결했습니다.
+* _LYNX-395_: ProductInterface의 only_x_left_in_stock 특성이 구성 가능한 제품에 대해 정확하지 않습니다.
+   * _참고 사항 수정_: ProductInterface의 only_x_left_in_stock 특성이 장바구니에서 구성 가능한 제품 변형의 사용 가능한 재고를 정확하게 반영하지 못하는 문제가 해결되었습니다. 이제 only_x_left_in_stock 값은 실제 변형 재고 수준에 올바르게 대응하므로 정확한 재고 데이터가 장바구니 GQL 쿼리에 반환됩니다.
+* _LYNX-399_: 그룹화된 제품 내에서 간단한 제품이 장바구니에 추가되면 자리 표시자 썸네일이 반환됩니다
+   * _참고 사항 수정_: 제품에 할당된 이미지가 있더라도 간단한 제품(그룹화된 제품의 일부)을 장바구니에 추가하면 자리 표시자 썸네일 이미지가 반환되는 문제가 해결되었습니다.
+수정 세부 사항:
+· 사용 가능한 경우 이제 제품 썸네일에 할당된 이미지가 올바르게 표시됩니다.
+· 썸네일 선택은 아래의 관리 구성을 따릅니다.
+스토어 > 구성 > 판매 > 체크아웃 > 장바구니 > 그룹화된 제품 이미지.
 이렇게 하면 스토어 설정에 따라 그룹화된 제품에 대해 일관된 썸네일 동작이 보장됩니다.
 * _LYNX-400_: 고객의 사용자 지정 옵션 특성이 정수 값으로 작동하지 않음
    * _참고 사항 수정_: 반환된 값이 정수일 때 고객의 사용자 지정 옵션 특성이 작동하지 않는 문제가 해결되었습니다. 이제 사용자 지정 옵션이 예상대로 정수 값을 올바르게 처리하고 반환합니다.
@@ -1627,7 +1627,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 ### 기타 개발자 도구
 
 * _AC-10658_: [문제] visual.phtml에서 HTML 구문 오류 수정
-   * _수정 참고_: 이제 시스템이 visual.phtml 파일에서 시작 태그 를 올바르게 닫아 적절한 HTML 구문을 보장합니다. 이전에는 시작 태그 가 제대로 닫히지 않아 HTML 구문 오류가 발생했습니다.
+   * _참고 사항 수정_: 이제 시스템에서 visual.phtml 파일의 시작 태그를 올바르게 닫아 적절한 HTML 구문을 확인합니다. 이전에는 시작 태그가 제대로 닫히지 않아 HTML 구문 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38247>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/37457>
 * _AC-11474_: [문제] bin/magento maintenance:status 명령에서 &quot;활성&quot;을 &quot;활성화됨&quot;으로 변경함
@@ -1662,8 +1662,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
 * _AC-13414_: 신용 카드(Payflow Link) 결제가 작동하지 않습니다.
    * _참고 사항 수정_: 이전에 오류가 발생했습니다(결제가 거부됨). 신용 카드로 주문하는 동안 수정 주문이 성공적으로 수행되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/a68324bc>
-* _ACP2E-2841_: Payflow는 트랜잭션 보기 화면에서 가져오기 버튼 버튼을 클릭할 때마다 새 트랜잭션을 생성합니다.
-   * _수정 참고 사항_: 이제 시스템은 거래 보기 화면에서 가져오기 버튼 을 클릭할 때마다 새 결제 거래를 생성하지 않고도 거래 정보를 올바르게 가져옵니다. 이전에는 가져오기 버튼 버튼을 클릭하면 이미 결제된 주문에 대해 새 결제 트랜잭션이 잘못 생성되었습니다.
+* _ACP2E-2841_: Payflow는 트랜잭션 보기 화면에서 가져오기 단추를 클릭할 때마다 새 트랜잭션을 만듭니다.
+   * _참고 사항 수정_: 이제 트랜잭션 보기 화면에서 가져오기 단추를 클릭할 때마다 새 결제 트랜잭션을 만들지 않고 트랜잭션 정보를 올바르게 가져옵니다. 이전에는 가져오기 버튼을 클릭하면 이미 지불된 주문에 대한 새 결제 거래가 잘못 생성되었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/b2286ecf>
 * _ACP2E-3028_: 캐나다 paypal 판매자 계정에 대한 PDP에 Paylater 메시지가 표시되지 않음
    * _참고 사항 수정_: 이제 구매자의 국가가 계정 청구 주소 또는 발송에서 결정될 수 있는 경우 PDP(제품 세부 사항 페이지)에 캐나다 PayPal 판매자 계정에 대한 PayLater 메시지가 올바르게 표시됩니다. 이전에는 매개 변수가 누락되어 PayLater 메시지가 표시되지 않아서 브라우저 콘솔에 오류가 발생했습니다.
@@ -1733,8 +1733,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 저장소 ID가 문자열로 전달되는지 또는 정수로 전달되는지에 관계없이, 이제 시스템에서 ProductRepository의 함수 GetById에 캐시 키를 올바르게 만듭니다. 이렇게 하면 후속 호출 시 메모리에서 제품을 검색할 수 있으므로 성능이 향상됩니다. 이전에는 잘못된 캐시 키 생성으로 인해 동일한 매개 변수를 사용해도 함수가 호출될 때마다 데이터베이스에서 제품을 검색했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38384>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38433>
-* _AC-11992_: [문제] [MFTF] 에 AdminClickAddOptionForBundleItemsActionGroup이 추가되었습니다.
-   * _수정 사항_: 이제 시스템에 AdminClickAddOptionForBundleItemsActionGroup이 포함되어 관리 패널의 기능이 향상되었습니다. 이전에는 이 작업 그룹 그룹을 사용할 수 없었습니다.
+* _AC-11992_: [문제] [MTF] 추가 AdminClickAddOptionForBundleItemsActionGroup
+   * _참고 사항 수정_: 이제 시스템에 AdminClickAddOptionForBundleItemsActionGroup이 포함되어 관리 패널의 기능이 향상되었습니다. 이전에는 이 작업 그룹을 사용할 수 없었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/30857>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/30838>
 * _AC-13173_: [문제] PHPDoc 블록의 오타 수정
@@ -1875,7 +1875,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 이제 시스템에서 주문 추적 템플릿에 사용된 JavaScript 처리기 함수에서 철자가 잘못된 &quot;currier&quot; 대신 &quot;carrier&quot;라는 용어를 올바르게 사용하여 적절한 함수 이름 지정과 코드 명확성을 보장합니다. 이전에는 철자가 잘못된 &quot;currier&quot;라는 용어가 사용되었기 때문에 코드 베이스에 잠재적인 혼동과 불일치가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/34523>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/33414>
-* _AC-11938_: UPS REST &quot;발송물의 측정 단위가 KGS/IN, LBS/CM 또는 OZS/CM일 수 없습니다.&quot;
+* _AC-11938_: UPS REST &quot;선적은 측정 단위로 KGS/IN 또는 LBS/CM 또는 OZS/CM를 가질 수 없습니다.&quot;
    * _참고 사항 수정_: UPS 요금이 체크아웃 및 장바구니에 표시되는지 확인하십시오.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38618>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/493e01f5>
@@ -1940,7 +1940,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: PHPDoc의 맞춤법 수정으로 인해 이제 시스템에서 IDE에서 더 이상 사용되지 않는 메서드를 올바르게 인식합니다. 이전에는 PHPDoc의 철자 오류로 인해 IDE가 특정 메서드를 더 이상 사용되지 않는 것으로 인식하지 못했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/31399>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/31398>
-* _AC-13478_: MAGETWO-95118: 세션이 만료된 후 영구 장바구니 동작 확인
+* _AC-13478_: MAGETWO-95118: 세션이 만료된 후 영구 장바구니로 동작 확인
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/7d5e3906>
 * _AC-13716_: 통합 테스트가 실패했습니다. Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
 * _AC-13722_: [데이터베이스 비교] 데이터베이스에 조건 없는 Target 규칙에 대한 레코드가 포함된 경우 치명적인 오류
@@ -1972,15 +1972,15 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38983>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38972>
 * _AC-12650_: [문제] 개발자 모드에서 적은 수의 파일에 대해 sourceMap 생성 추가
-   * _수정 참고 사항_: 이제 시스템은 개발자 모드에 있을 때 더 적은 파일에 대한 소스 맵을 생성하므로 스타일의 소스를 더 쉽게 식별할 수 있습니다. 이전에는 서버측 컴파일이 적은 개발자 모드에서 시스템을 실행할 때 스타일의 소스를 식별하는 것이 어려웠습니다.
+   * _참고 사항 수정_: 이제 개발자 모드에서 시스템이 더 적은 수의 파일에 대한 소스 맵을 생성하므로 스타일의 소스를 더 쉽게 식별할 수 있습니다. 이전에는 서버측 컴파일이 없는 개발자 모드에서 시스템을 실행할 때 스타일의 소스를 식별하는 것이 어려웠습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38982>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38977>
-* _AC-1306_: 비활성화된 모듈에 대해 정적 컨텐츠 배포 중입니다.
+* _AC-1306_: 비활성화된 모듈에 정적 콘텐츠를 배포하고 있습니다.
    * _참고 사항 수정_: 이제 시스템에서 비활성화된 모듈과 관련된 CSS를 최종 CSS 출력 파일에서 제외하여 불필요한 스타일이 로드되지 않도록 합니다. 이전에는 비활성화된 모듈과 관련된 CSS가 최종 CSS 출력 파일에 포함되어 있어 불필요한 추가 스타일이 로드되었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/24666>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/32922>
-* _AC-13459_: 최소 Stock 임계값을 사용한 &quot;Out of Stock&quot; 정렬에서 일관되지 않은 비헤이비어
-   * _수정 사항_: 이제 시스템은 재고 수준에 따라 카탈로그의 제품을 올바르게 정렬하여 설정된 최소 Stock 임계값을 준수하고 품절된 품목을 목록의 맨 아래로 일관되게 이동합니다. 이전에는 재고 수준에 따라 항목이 항상 올바른 순서로 표시되지는 않는 등 정렬 동작이 일관되지 않았으며 범주 계층 저장, 새로 고침 또는 수정 후 정렬 변경이 예기치 않게 발생할 수 있었습니다.
+* _AC-13459_: 최소 재고 임계값으로 &quot;재고 부족&quot; 정렬에서 일관되지 않은 동작
+   * _참고 사항 수정_: 이제 시스템에서 재고 수준에 따라 카탈로그의 제품을 올바르게 정렬하고 설정된 최소 재고 임계값을 준수하며 재고 부족 항목을 일관되게 목록의 맨 아래로 이동합니다. 이전에는 정렬 동작이 일관되지 않았으며 항목이 항상 재고 수준에 따라 올바른 순서로 표시되지는 않았고, 범주 계층을 저장, 새로 고침 또는 수정한 후 예상할 수 없었던 정렬 변경이 발생할 수 있었습니다.
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/47b448e2>
 * _AC-13472_: require.js 로드 문제에 대한 오류 보고 개선 제안
    * _참고 사항 수정_: 이 PR은 요구 사항이 구성 요소를 로드하지 못할 때 오류 메시지를 개선합니다.
