@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3acd96480fb9238401a349efb107362f24bb8341
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '965'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 2%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 4월 11일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 테이블 업데이트:<br />- 지원되지 않는 v2.4.8에서 Elasticsearch 삭제<br />- 지원이 종료됨에 따라 버전 2.4.2 및 2.4.3을 삭제합니다.</p>
+</td>
+      <td>
+        기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6557cc45c1250ca17ba53acdd2a9c4748403df8d">6557cc</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 4월 10일
 
@@ -567,88 +589,6 @@ ht-degree: 2%
         새 주제
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 2월 14일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.59 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview">설명을 추가했습니다.</a></p>
-</td>
-      <td>
-        새 주제
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8200051f16c7d12d09c1487a4e12258b52d8d805">820005</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 2월 13일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>QPT 1.1.58 릴리스에서 ACSD-63578 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku">자세한 설명을 추가했습니다.</a></p>
-</td>
-      <td>
-        새 주제
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf22eac2923a78f112a999dbcb6be1bc6f5eb9db">bf22ea</a>(커밋)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025년 2월 11일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>2025년 2월 릴리스에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>이 추가되었습니다.</p>
-</td>
-      <td>
-        주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2004b40fafb74b0af2a82f618bb04ca13e9372c8">2004b4</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p>2025년 2월 베타 및 보안 패치에 대한 릴리스 정보 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p4</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p12</a></p>
-</td>
-      <td>
-        주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12562e72703651b48cc506d587732e896573c7bc">12562</a>(커밋)</td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 업데이트했습니다.</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8c45d89c610a5b319352d202057d010b0450c848">8c45d8</a>(커밋)</td>
     </tr>
   </tbody>
 </table>

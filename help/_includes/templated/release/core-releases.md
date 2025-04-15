@@ -1,5 +1,5 @@
 ---
-source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
         </td>
-        <td>2025년 4월 8일</td>
+        <td>4월  2025년 8월</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -95,7 +95,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
         </td>
-        <td>2025년 4월 8일</td>
+        <td>4월  2025년 8월</td>
     </tr>
     <tr>
         <td>
@@ -162,7 +162,7 @@ ht-degree: 0%
 
 ## 2.4.5
 
-2.4.5 릴리스 라인에 대한 지원은 2025년 8월 9일에 종료됩니다.
+2.4.5 릴리스 라인에 대한 지원은 8월에 종료됩니다  9, 2025년.
 
 <table>
   <thead>
@@ -222,9 +222,9 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p4">2.4.5-p4 버전</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p4">2.4.5-p4</a>
         </td>
-        <td>2023년 8월 8일</td>
+        <td>8월  2023년 8월</td>
     </tr>
     <tr>
         <td>
@@ -255,7 +255,7 @@ ht-degree: 0%
 
 ## 2.4.4
 
-2.4.4 릴리스 라인에 대한 지원은 2025년 4월 12일에 종료됩니다.
+2.4.4 릴리스 라인에 대한 지원은 2025년 4월 12일에 종료되었습니다.
 
 <table>
   <thead>
@@ -420,7 +420,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          2.4.0-p1 버전
+          2.4.0-p1
         </td>
         <td>2020년 10월 15일</td>
     </tr>
@@ -465,7 +465,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-          2.3.7-p1 시리즈
+          2.3.7-p1
         </td>
         <td>2021년 8월 10일</td>
     </tr>
