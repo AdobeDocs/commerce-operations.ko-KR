@@ -3,15 +3,19 @@ title: 'ACSD-64112: ''MAGE_INDEXER_THREADS_COUNT''가 설정되면 ''indexer_upd
 description: ACSD-64112 패치를 적용하여 'MAGE_INDEXER_THREADS_COUNT'가 설정되면 'indexer_update_all_views' cron 실행이 실패하는 Adobe Commerce 문제를 수정합니다.
 feature: Catalog Management, B2B
 role: Admin, Developer
-source-git-commit: 544c7b9664ccc9204c2c0c78b103ad823e18ef7d
+exl-id: c95f179d-5291-481f-b655-08a9db608513
+source-git-commit: 0078cf5fb6d6c3a8650762d7cdf5556de642e201
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-64112: `MAGE_INDEXER_THREADS_COUNT`이(가) 설정되면 `indexer_update_all_views` cron 실행이 실패합니다.
+
+>[!NOTE]
+>
+>이 패치는 2.4.7 이상 버전의 Adobe Commerce용 [ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)(으)로 대체되었습니다.
 
 ACSD-64112 패치는 `MAGE_INDEXER_THREADS_COUNT`이(가) 설정되면 `indexer_update_all_views` cron 실행이 실패하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-64112입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
@@ -23,7 +27,7 @@ ACSD-64112 패치는 `MAGE_INDEXER_THREADS_COUNT`이(가) 설정되면 `indexer_
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.5 - 2.4.7-p3
+* Adobe Commerce(모든 배포 방법) 2.4.5 - 2.4.6-p10
 
 >[!NOTE]
 >
