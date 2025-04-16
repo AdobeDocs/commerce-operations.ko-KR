@@ -3,15 +3,15 @@ title: 'ACSD-64431: 요청에 쿠폰 코드가 있는 "placeOrder" 돌연변이�
 description: ACSD-64431 패치를 적용하여 요청에 쿠폰 코드 정보가 포함된 "placeOrder" 돌연변이로 인해 주문이 실패하는 대신 내부 서버 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431: 요청에 쿠폰 코드가 있는 &quot;placeOrder&quot; 돌연변이로 인해 내부 오류가 발생합니다
+# ACSD-64431: 요청에 쿠폰 코드가 있는 &quot;placeOrder&quot; 돌연변이로 인해 내부 서버 오류가 발생합니다
 
 ACSD-64431 패치는 요청에 쿠폰 코드 정보가 포함된 `placeOrder` 돌연변이로 인해 주문을 성공적으로 수행하는 대신 내부 서버 오류가 발생하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-64431입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
@@ -341,10 +341,6 @@ ACSD-64431 패치는 요청에 쿠폰 코드 정보가 포함된 `placeOrder` �
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
-
-## 패치 설치 후 추가 단계 필요
-
-(이 섹션은 선택 사항입니다. 문제를 해결하기 위해 패치를 적용한 후 몇 가지 단계가 필요할 수 있습니다.) 
 
 ## 관련 읽기
 
