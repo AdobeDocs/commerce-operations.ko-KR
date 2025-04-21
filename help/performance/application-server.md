@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server를 사용하면 Adobe Commerce에서 Commerce GraphQL API 요청 중 상태를 유지할 수 있습니다. Swool Extension에 구축된 GraphQL Application Server는 요청 처리를 처리하는 작업자 스레드를 사용하는 프로세스로 작동합니다. GraphQL Application Server는 GraphQL API 요청 중 부트스트랩된 애플리케이션 상태를 보존하여 요청 처리 및 전반적인 제품 성능을 향상시킵니다. API 요청의 효율성이 훨씬 향상되었습니다.
 
-GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
+GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
 
 >[!NOTE]
 >
->GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [원격 저장소](../configuration/remote-storage/cloud-support.md)에 대해 [!DNL AWS S3]을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 Adobe이 2024년 말에 핫픽스를 릴리스할 때까지 GraphQL Application Server를 사용할 수 없습니다.
+>GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [원격 저장소](../configuration/remote-storage/cloud-support.md)에 대해 [!DNL AWS S3]을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
 
 ## 아키텍처
 
@@ -39,7 +39,7 @@ GraphQL Application Server를 실행하려면 다음이 필요합니다.
 * Commerce 버전 2.4.7+
 * PHP 8.2 이상
 * Swool PHP 확장 v5+ 설치됨
-* 예상 로드에 따른 적절한 RAM 및 CPU
+* 예상 로드에 따라 적절한 RAM 및 CPU
 
 ## 클라우드 인프라에서 활성화 및 배포
 
@@ -174,7 +174,7 @@ git push
 
 GraphQL Application Server를 로컬에서 실행하려면 Swool 확장을 설치하고 배포의 Nginx 구성 파일을 약간 변경해야 합니다.
 
-### 전제 조건
+### 사전 요구 사항
 
 `ApplicationServer` 모듈을 활성화하기 전에 다음 단계를 완료하십시오.
 
