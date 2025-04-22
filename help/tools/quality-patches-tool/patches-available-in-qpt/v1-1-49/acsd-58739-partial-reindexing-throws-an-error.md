@@ -4,14 +4,18 @@ description: ACSD-55241 패치를 적용하여 부분 리인덱싱에서 오류�
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
+source-git-commit: e29b177fec7c5cc411c3495ce635e08fa6540ab8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
 # ACSD-58739: 부분 리인덱싱에서 오류 발생
+
+>[!NOTE]
+>
+>이 패치는 [ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)(으)로 대체되었습니다.
 
 ACSD-58739 패치는 부분 리인덱싱에서 오류가 발생하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-58739입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
