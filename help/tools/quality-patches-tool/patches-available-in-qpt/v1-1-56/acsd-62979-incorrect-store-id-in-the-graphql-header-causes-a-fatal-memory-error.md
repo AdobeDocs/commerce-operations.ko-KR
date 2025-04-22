@@ -3,13 +3,13 @@ title: 'ACSD-62979: GraphQL 헤더의 잘못된 스토어 ID로 인해 치명적
 description: ACSD-62979 패치를 적용하여 GraphQL 헤더에서 잘못된 스토어 ID를 사용하면 치명적인 메모리 오류가 발생하는 Adobe Commerce 문제를 해결합니다
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 16875f95ab23559d4e1081b8cfe0374e1394d87d
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+source-git-commit: 187a0056971e6bec324b5cc9d374375bbfb84dd8
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62979: GraphQL 헤더의 잘못된 스토어 ID로 인해 치명적인 메모리 오류가 발생합니다
 
@@ -19,11 +19,11 @@ ACSD-62979 패치는 GraphQL 헤더에서 잘못된 스토어 ID를 사용하면
 
 **Adobe Commerce 버전에 대한 패치가 만들어졌습니다.**
 
-* Adobe Commerce(모든 배포 방법) 2.4.6-p7, 2.4.6
+* Adobe Commerce(모든 배포 방법) 2.4.6, 2.4.6-p7, 2.4.7-p3
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.6-p8
+* Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -93,4 +93,3 @@ GraphQL 헤더에서 잘못된 스토어 ID를 사용하면 치명적인 메모�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-
