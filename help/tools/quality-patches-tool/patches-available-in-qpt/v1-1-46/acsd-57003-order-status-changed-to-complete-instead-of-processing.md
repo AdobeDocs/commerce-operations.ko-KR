@@ -4,9 +4,9 @@ description: ACSD-57003 패치를 적용하여 주문 상태가 *처리 중*으�
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
 exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 128107310416e97edca3b122e97456138d04073f
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ACSD-57003 패치는 주문 상태가 *처리 중*(으)로 변경되는 대신 *
 
 **Adobe Commerce 버전에 대한 패치가 만들어졌습니다.**
 
-* Adobe Commerce(모든 배포 방법) 2.4.6-p3
+* Adobe Commerce(모든 배포 방법) 2.4.6-p3, 2.4.6-p8, 2.4.7-p3
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.6 - 2.4.6-p3
+* Adobe Commerce(모든 배포 방법) 2.4.6 - 2.4.6-p9, 2.4.7-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
