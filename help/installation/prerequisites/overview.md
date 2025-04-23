@@ -2,9 +2,9 @@
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 온-프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아보세요.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Adobe Commerce을 설치하기 전에 다음을 수행해야 합니다.
 
-* [시스템 요구 사항](../system-requirements.md)을 충족하는 호스트를 하나 이상 설정합니다.
+* *Commerce 온-프레미스* 탭에 나열된 [시스템 요구 사항](../system-requirements.md)을(를) 충족하는 호스트를 하나 이상 설정합니다.
 * 부하 분산이 있는 웹 노드를 두 개 이상 설정하는 경우 응용 프로그램을 설치하기 _전에_ 시스템의 해당 부분을 설정하고 테스트합니다.
 * 문제가 있는 경우 롤백할 수 있도록 설치하는 동안 여러 지점에서 전체 시스템을 백업할 수 있습니다.
 
@@ -66,11 +66,11 @@ Apache를 설치하거나 업그레이드하려면 [Apache](web-server/apache.md
 
 ### PHP
 
-지원되는 PHP 버전은 [시스템 요구 사항](../system-requirements.md)을, PHP 요구 사항은 [PHP](../system-requirements.md#php-settings)을 참조하십시오.
+지원되는 버전의 PHP는 [시스템 요구 사항](../system-requirements.md)에서 *Commerce 온-프레미스* 탭을 참조하고 PHP 요구 사항은 [PHP](../system-requirements.md#php-settings)를 참조하십시오.
 
 ### MySQL
 
-설치 중인 Adobe Commerce 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 지원되는 버전은 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
+설치 중인 Adobe Commerce 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 지원되는 버전은 [시스템 요구 사항](../system-requirements.md)에서 *Commerce 온-프레미스* 탭을 참조하십시오.
 
 ```bash
 mysql -u <database root user or database owner name> -p
