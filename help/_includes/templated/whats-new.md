@@ -1,7 +1,7 @@
 ---
-source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
+source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 2%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 4월 29일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Braintree에 대해 알려진 문제를 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 릴리스 정보</a>에 추가했습니다.</p>
+</td>
+      <td>
+        주요 업데이트
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">0e195b</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025년 4월 22일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>ACSD-54966 패치</a>에서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">aa47a8</a>(커밋)</td>
+    </tr>
+    <tr>
+      <td><p>ACSD-62979 패치</a>에서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">4f16e5</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 4월 18일
 
