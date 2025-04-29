@@ -1,5 +1,5 @@
 ---
-source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce 릴리스에는 이전 버전과 호환 불가능한 변경 사항(BIC)이 포함될 수 있습니다. 이전 버전과 호환되지 않는 변경 내용을 검토하려면 [BIC 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)를 참조하십시오. 이전 버전과 호환되지 않는 주요 문제는 [BIC 하이라이트](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)에 설명되어 있습니다. 일부 릴리스에서는 주요 BIC가 제공되지 않습니다.
+>Adobe Commerce 릴리스에는 이전 버전과 호환 불가능한 변경 사항(BIC)이 포함될 수 있습니다. 이전 버전과 호환되지 않는 변경 내용을 검토하려면 [BIC 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)를 참조하십시오. 이전 버전과 호환되지 않는 주요 문제는 [BIC 하이라이트](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)에 설명되어 있습니다. 일부 릴리스에서는 주요 BIC가 제공되지 않습니다.
 
 ## Beta 면책조항 {#beta}
 
 >[!IMPORTANT]
 >
->Beta 릴리스에는 결함이 포함될 수 있으며 어떤 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 beta 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 서비스)할 의무가 없습니다. 고객은 베타 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의해야 합니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
+>Beta 릴리스에는 결함이 포함될 수 있으며 어떤 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 서비스)할 의무가 없습니다. 고객은 베타 릴리스 및/또는 관련 설명서나 자료의 올바른 기능이나 성능에 어떠한 의존도 하지 말고 주의해야 합니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
 
 ## CVE 알림 {#cve-notice}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 릴리스 노트에 설명된 개선 사항 및 버그 수정에 대한 코드가 Adobe Commerce과 번들로 제공되지만 이러한 프로젝트 중 일부(예: B2B, Page Builder 및 Progressive Web Application(PWA) Studio)도 독립적으로 릴리스됩니다. 이러한 프로젝트에 대한 버그 수정은 각 프로젝트에 대한 설명서에서 사용할 수 있는 별도의 프로젝트별 릴리스 정보에 설명되어 있습니다. [제품 릴리스 개요](/help/release/release-notes/overview.md)를 참조하세요.
+>이 릴리스 노트에 설명된 개선 사항 및 버그 수정에 대한 코드가 Adobe Commerce과 번들로 제공되지만 이러한 프로젝트 중 일부(예: B2B, Page Builder 및 Progressive Web Applications(PWA) Studio)도 독립적으로 릴리스됩니다. 이러한 프로젝트에 대한 버그 수정은 각 프로젝트에 대한 설명서에서 사용할 수 있는 별도의 프로젝트별 릴리스 정보에 설명되어 있습니다. [제품 릴리스 개요](/help/release/release-notes/overview.md)를 참조하세요.
 
 ## PHP 프로세스 제어 {#php-process-control}
 

@@ -2,7 +2,7 @@
 title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 업그레이드 계획에 대한 권장 읽기를 검토합니다.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
         <p>제품 전략, 보안, 버그 수정 및 알려진 문제 등 Adobe Commerce의 최신 개발 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe 블로그</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe 도움말 센터</a></li>
             <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe 보안 공지</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">개발자 블로그</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">릴리스 정보</a></li>
@@ -55,7 +55,7 @@ ht-degree: 4%
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">라이브 검색</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">결제 서비스</a></li>
-            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">제품 Recommendations</a></li>
+            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">제품 추천</a></li>
           </ul>
       </td>
     </tr>
@@ -68,7 +68,7 @@ ht-degree: 4%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">사전 릴리스 액세스</a></li>
             <li><a href="../../release/beta.md">Beta 릴리스 개요</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">이전 버전과 호환 불가능한 개발</a></li>
-            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">이전 버전과 호환 불가능한 변경 사항</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">이전 버전과 호환 불가능한 변경 사항</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">업그레이드 계획 검사 목록</a></li>
             <li><a href="../prepare/best-practices.md">업그레이드 모범 사례</a></li>
             <li><a href="../../release/product-availability.md">소프트웨어 가용성</a></li>
@@ -78,7 +78,7 @@ ht-degree: 4%
         <p>고객을 위한 고유한 경험을 구축하는 데 사용할 수 있는 최신 상점 기술에 대해 알아보십시오.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">업그레이드 PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">PWA Studio 업그레이드</a></li>
           </ul>
       </td>
     </tr>
