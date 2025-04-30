@@ -1,7 +1,7 @@
 ---
-source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
+source-git-commit: c96f5620bbde1b15f6419c482c790517cc8de70c
 workflow-type: tm+mt
-source-wordcount: '28386'
+source-wordcount: '28383'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2687_: 동적 블록에 액세스하기 위한 권한 문제
    * _참고 사항 수정_: 이전에는 제한된 관리자가 새 동적 블록을 추가할 때 오류가 발생했습니다. 이 수정 사항을 구현한 후 제한된 관리자는 동적 블록을 성공적으로 추가하고 오류 없이 블록을 편집할 수 있습니다
-* _ACP2E-2787_: 저장소 보기 이름의 아포스트로피가 &#39;(으)로 대체되었습니다.
+* _ACP2E-2787_: 저장소 보기 이름의 아포스트로피가 &amp;#039;(으)로 대체됩니다.
    * _참고 사항 수정_: 이제 그리드의 저장소 보기 필터에 아포스트로피가 올바르게 표시됩니다
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38395>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/commit/39d54c2d>
@@ -1010,8 +1010,8 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 정적 분석 도구의 문제를 해결하기 위해 \Magento\Framework\Data\Collection::getItemById 메서드에 대한 PHPDocs가 가능한 반환 형식으로 null을 포함하도록 업데이트되었습니다. 이전에는 메서드의 PHPDocs가 null을 가능한 반환 형식으로 지정하지 않아 메서드를 조건문에서 사용할 때 정적 분석에서 경고 또는 오류가 발생했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38485>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38439>
-* _AC-11592_: [문제] 설정 중에 올바른 환경 설정만 허용:di:컴파일
-   * _참고 사항 수정_: 이제 존재하지 않거나 특별히 제외된 클래스에 대한 기본 설정이 만들어지면 setup:di:compile 명령을 실행하는 동안 시스템에서 오류가 발생하여 올바른 기본 설정만 허용됩니다. 이전에는 이러한 시나리오가 자동으로 실패하여 원래 클래스와 관련된 플러그인이 무용지물이 될 가능성이 있었습니다.
+* _AC-11592_: [문제] `setup:di:compile` 동안 올바른 기본 설정만 허용
+   * _참고 사항 수정_: 이제 존재하지 않거나 특별히 제외된 클래스에 대한 기본 설정이 만들어지면 `setup:di:compile` 명령 중에 오류가 발생하여 올바른 기본 설정만 허용됩니다. 이전에는 이러한 시나리오가 자동으로 실패하여 원래 클래스와 관련된 플러그인이 무용지물이 될 가능성이 있었습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/38517>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/33161>
 * _AC-11651_: Magento에서 LoggerProxy의 __wakeup 메서드에서 읽기 전용 속성을 수정하려고 합니다.
@@ -1566,7 +1566,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 장바구니에 재고가 부족한 구성 가능한 제품이 포함되어 있는 경우 장바구니에서 재고 있는 제품을 제거하려고 하면 &#39;요청된 수량을 사용할 수 없음&#39; GraphQL 오류가 발생하는 문제가 해결되었습니다. 이제 제거 가 오류를 트리거하지 않고 예상대로 작동합니다.
 * _LYNX-469_: 대/소문자를 구분하는 돌연변이의 SKU로 인해 제품을 추가할 수 없습니다.
    * _참고 사항 수정_: 대/소문자가 다른 SKU를 사용할 때 addProductsToCart 돌연변이가 &#39;PRODUCT_NOT_FOUND&#39; 오류를 반환하는 문제가 해결되었습니다. 돌연변이는 이제 SKU를 대소문자 구분 없이 처리하여 카탈로그 서비스 쿼리 및 PDP 비헤이비어와 일관성을 보장합니다.
-* _LYNX-603_: 제품 특성 > 상표 약식 ™이 ™으로 반환됩니다.
+* _LYNX-603_: 제품 속성 > 상표 약식 &amp;trade;가 &amp;trade;로 반환됩니다.
    * _참고 사항 수정_: GraphQL API의 제품 이름에 대한 문자 인코딩 문제가 해결되었습니다.
 * _LYNX-619_: updateCustomerEmail 돌연변이 문제
    * _참고 사항 수정_: 필요한 사용자 지정 특성(계정 생성 후 추가됨)이 없는 고객이 이메일을 업데이트할 수 없는 updateCustomerEmail 돌연변이 문제를 해결했습니다.
@@ -1641,7 +1641,7 @@ Adobe Commerce 2.4.8 코어 코드에서 582개 문제를 해결했습니다. �
    * _참고 사항 수정_: 이제 &#39;dev/css/use_css_critical_path&#39; 설정이 활성화된 경우에도 시스템이 체크아웃 페이지에 CSS 파일을 비동기적으로 로드하여 이러한 페이지가 적절한 CSS 스타일로 렌더링되도록 합니다. 이전에는 제한된 CSP(콘텐츠 보안 정책)를 사용하여 인라인 JavaScript을 실행할 수 없으므로 CSS 파일이 예상대로 로드되지 않았습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/39020>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/39040>
-* _AC-13398_: 가상 형식을 사용하여 플러그 인을 구성하면 setup:di:compile 명령에서 인터셉터 메서드를 올바르게 생성할 수 없습니다.
+* _AC-13398_: 가상 형식을 사용하여 플러그 인을 구성하면 `setup:di:compile` 명령에서 인터셉터 메서드를 올바르게 생성할 수 없습니다.
    * _참고 사항 수정_: 이제 시스템은 가상 형식을 사용하여 플러그인을 구성할 때 인터셉터 메서드를 올바르게 생성하므로 미리 컴파일했는지 아니면 런타임 컴파일했는지에 관계없이 일관된 결과를 보장합니다. 이전에는 런타임 컴파일과 비교하여 미리 컴파일할 때 시스템에서 잘못된 결과를 생성했습니다.
    * _GitHub 문제_: <https://github.com/magento/magento2/issues/33980>
    * _GitHub 코드 기여_: <https://github.com/magento/magento2/pull/38141>
