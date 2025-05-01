@@ -3,9 +3,9 @@ title: 카탈로그 구성 경로 참조
 description: 카탈로그 구성 값 목록을 참조하십시오.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ ht-degree: 0%
 | 검색 제안 활성화 | `catalog/search/search_suggestion_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 검색 제안 수 | `catalog/search/search_suggestion_count` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 각 제안에 대한 결과 개수 표시 | `catalog/search/search_suggestion_count_results_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
-| Recommendations 검색 활성화 | `catalog/search/search_recommendations_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
-| Recommendations 카운트 검색 | `catalog/search/search_recommendations_count` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
+| 검색 권장 사항 활성화 | `catalog/search/search_recommendations_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
+| 권장 사항 수 검색 | `catalog/search/search_recommendations_count` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 각 추천에 대한 결과 개수 표시 | `catalog/search/search_recommendations_count_results_enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 일치시킬 최소 용어 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | &quot;범주/제품&quot; URL 재작성 생성 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,6 +151,8 @@ ht-degree: 0%
 
 ## 시각적 머천다이저 경로
 
+[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
+
 이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **시각적 머천다이저**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | Commerce만 해당? |
@@ -169,12 +171,12 @@ ht-degree: 0%
 | 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | 빈도 | `sitemap/category/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 우선 순위 | `sitemap/category/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 우선순위 | `sitemap/category/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 빈도 | `sitemap/product/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 우선 순위 | `sitemap/product/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 우선순위 | `sitemap/product/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 사이트 맵에 이미지 추가 | `sitemap/product/image_include` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 빈도 | `sitemap/page/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 우선 순위 | `sitemap/page/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 우선순위 | `sitemap/page/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 활성화됨 | `sitemap/generate/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 시작 시간 | `sitemap/generate/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 빈도 | `sitemap/generate/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
