@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
+source-git-commit: d755cea4bef9328a5e9ebb6d610922c70d8e4288
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '938'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2025년 5월 1일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8에서 해결된 문제에 대한 릴리스 노트 형식이 개선되었습니다. (<a href="https://github.com/hostep">@hostep</a>에 대한 점수)</p>
+</td>
+      <td>
+        기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892">35df05</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025년 4월 30일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>에 대한 릴리스 정보에서 텍스트 렌더링을 수정했습니다. (<a href="https://github.com/hostep">@hostep</a>에 대한 점수)</p>
+</td>
+      <td>
+        기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6">ce23f9</a>(커밋)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025년 4월 29일
 
