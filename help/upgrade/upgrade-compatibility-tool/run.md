@@ -2,9 +2,9 @@
 title: ' [!DNL Upgrade Compatibility Tool] 실행'
 description: Adobe Commerce 프로젝트에 대한 명령줄 인터페이스에서  [!DNL Upgrade Compatibility Tool] 을(를) 실행하려면 다음 단계를 따르십시오.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool]은(는) 설치된 모든 모듈을 분석하여 특정 버전에 대한 Adobe Commerce 사용자 지정 인스턴스를 확인하는 도구입니다. 최신 버전의 Adobe Commerce으로 업그레이드하기 전에 해결해야 하는 중요한 문제, 오류 및 경고 목록을 반환합니다.
 
-[!DNL Upgrade Compatibility Tool]에 대한 자세한 내용은 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=ko)(06:02)을 참조하세요.
+[!DNL Upgrade Compatibility Tool]에 대한 자세한 내용은 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en)&#x200B;(06:02)을 참조하세요.
 
 명령줄 인터페이스에서 [!DNL Upgrade Compatibility Tool]에 사용할 수 있는 명령:
 
@@ -59,7 +59,7 @@ bin/uct upgrade:check <dir>
 
 | **명령** | **사용 가능한 옵션** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—current-version: 현재 Adobe Commerce 버전. 이 매개 변수는 필수이며 항상 사용해야 합니다.</li><li>—최소 문제 수준: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에 현재 버전의 중요한 문제, 오류 및 경고를 포함하지 않으려는 경우.</li><li>—coming-version(또는 -c): 특정 Adobe Commerce 버전을 타깃팅합니다. 생략하면 사용 가능한 최신 버전이 사용됩니다.</li></ul> |
+| `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—current-version: 현재 Adobe Commerce 버전. 생략하면 Adobe Commerce 설치 버전이 사용됩니다.</li><li>—최소 문제 수준: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에 현재 버전의 중요한 문제, 오류 및 경고를 포함하지 않으려는 경우.</li><li>—coming-version(또는 -c): 특정 Adobe Commerce 버전을 타깃팅합니다. 생략하면 사용 가능한 최신 버전이 사용됩니다.</li></ul> |
 
 [!DNL Upgrade Compatibility Tool]을(를) 사용하면 `--ignore-current-version-compatibility-issues` 옵션을 사용하여 `upgrade:check` 명령을 실행할 수 있습니다. [!DNL Upgrade Compatibility Tool] 보고서의 현재 버전에서 대상 버전으로의 업데이트와 함께 도입된 새로운 문제를 가져오려는 경우에만 이 옵션을 사용하십시오.
 
@@ -146,7 +146,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 
 >[!NOTE]
 >
-> 사용자 지정 코드를 핵심 코드 외부에 보관하는 것이 좋습니다. 업그레이드 모범 사례에 대한 자세한 내용은 Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ko)를 참조하십시오.
+> 사용자 지정 코드를 핵심 코드 외부에 보관하는 것이 좋습니다. 업그레이드 모범 사례에 대한 자세한 내용은 Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf)를 참조하십시오.
 
 ### 바닐라 설치
 
@@ -259,8 +259,8 @@ bin/uct upgrade:check --help
 
 - 이름이 같은 모듈이 두 개 있는 것은 피하십시오.
 - Adobe Commerce [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)을 따르십시오.
-- Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ko) 모범 사례입니다.
-- [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.
+- Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) 모범 사례입니다.
+- [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.
 
 ## 결과 최적화
 
