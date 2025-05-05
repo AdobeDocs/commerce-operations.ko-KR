@@ -116,5 +116,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- 클라우드 인프라 프로젝트의 Adobe Commerce은 제품 이미지 크기 조정을 Fastly 서비스로 오프로드할 수 있습니다. _클라우드 가이드_&#x200B;에서 [딥 이미지 최적화](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization)를 참조하십시오.
->- 원격 스토리지 모듈을 사용하는 경우 이미지 크기 조정을 nginx로 오프로드할 수도 있습니다. _구성 가이드_&#x200B;에서 [원격 저장소에 대한 이미지 크기 조정 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)을 참조하십시오.
+>- 클라우드 인프라 프로젝트의 Adobe Commerce은 제품 이미지 크기 조정을 Fastly 서비스로 오프로드할 수 있습니다. _클라우드 가이드_&#x200B;에서 [딥 이미지 최적화](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=ko#deep-image-optimization)를 참조하십시오.
+>- 원격 스토리지 모듈을 사용하는 경우 이미지 크기 조정을 nginx로 오프로드할 수도 있습니다. _구성 가이드_&#x200B;에서 [원격 저장소에 대한 이미지 크기 조정 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=ko)을 참조하십시오.

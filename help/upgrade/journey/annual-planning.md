@@ -13,7 +13,7 @@ ht-degree: 0%
 
 많은 회사들이 연간 예산과 로드맵으로 일하고 있다. 이러한 연간 토론에서는 비즈니스의 전반적인 목표 및 주요 성과 지표(KPI)에 어떻게 적합한지 그 해의 플랫폼 상태, 방향 및 업그레이드 전략에 대해 언급하는 것이 중요합니다.
 
-[릴리스 일정](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)에 따라, 휴일, 회사 휴무 및 피크 시간을 피하고 업그레이드를 위한 예산 및 릴리스 기간을 할당하십시오. [릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)를 통해 Adobe 릴리스 일정을 이해하고 각 릴리스의 변경 사항 및 개선 사항에 대한 최신 정보를 숙지하면 연도를 더 잘 계획할 수 있습니다.
+[릴리스 일정](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule)에 따라, 휴일, 회사 휴무 및 피크 시간을 피하고 업그레이드를 위한 예산 및 릴리스 기간을 할당하십시오. [릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/overview)를 통해 Adobe 릴리스 일정을 이해하고 각 릴리스의 변경 사항 및 개선 사항에 대한 최신 정보를 숙지하면 연도를 더 잘 계획할 수 있습니다.
 
 계획 수립 시 자문해 볼 수 있는 사항은 다음과 같습니다.
 

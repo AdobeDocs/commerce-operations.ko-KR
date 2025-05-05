@@ -26,7 +26,7 @@ Adobe Commerce 작업 모드를 수동으로 변경하는 방법에 대해 알�
 
 읽기 전용 파일 시스템으로 인해 원격 클라우드 환경의 모드 변경에 대한 엄격한 제한이 있으며 Adobe Commerce 지원으로 재정의할 수 없습니다. `ece-tools` 패키지가 여러 구성 소스를 기반으로 파일을 덮어쓰므로 `app/etc/env.php` 파일을 수정하여 모드를 변경하지 마십시오.
 
-클라우드 인프라의 Adobe Commerce은 배포 중에 _유지 관리_ 모드로 응용 프로그램을 자동으로 실행하며, 배포가 완료될 때까지 사이트를 오프라인으로 전환합니다. 그렇지 않으면 응용 프로그램이 _프로덕션_ 모드로 유지됩니다. _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [배포 프로세스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase)를 참조하십시오.
+클라우드 인프라의 Adobe Commerce은 배포 중에 _유지 관리_ 모드로 응용 프로그램을 자동으로 실행하며, 배포가 완료될 때까지 사이트를 오프라인으로 전환합니다. 그렇지 않으면 응용 프로그램이 _프로덕션_ 모드로 유지됩니다. _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [배포 프로세스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=ko#deploy-phase)를 참조하십시오.
 
 Commerce용 Cloud Docker를 개발 도구로 사용하는 경우 _개발자_ 모드의 Docker 환경에서 클라우드 인프라 프로젝트를 배포할 수 있지만 추가 파일 동기화 작업으로 인해 성능이 느려집니다. _Commerce용 Cloud Docker 안내서_&#x200B;에서 [Docker 환경 배포](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)를 참조하십시오.
 
@@ -78,7 +78,7 @@ _유지 관리_ 모드에서는 개선, 업데이트 및 구성 작업 중에 �
 
 [사용자 지정 유지 관리 페이지](../../upgrade/troubleshooting/maintenance-mode-options.md)를 만들고, 유지 관리 모드를 수동으로 활성화 및 비활성화하고, 인증된 IP 주소의 방문자가 저장소를 정상적으로 볼 수 있도록 유지 관리 모드를 구성할 수 있습니다. _설치 가이드_&#x200B;에서 [유지 관리 모드 사용 및 사용 안 함](../../installation/tutorials/maintenance-mode.md)을 참조하세요.
 
-클라우드 인프라에서 Commerce을 사용하는 경우 Commerce 애플리케이션은 배포 단계 동안 유지 관리 모드에서 실행됩니다. 배포가 정상적으로 완료되면 Commerce 애플리케이션은 프로덕션 모드로 다시 실행됩니다. _Cloud Infrastructure의 Commerce_&#x200B;에서 [배포 후크](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks)을(를) 참조하십시오.
+클라우드 인프라에서 Commerce을 사용하는 경우 Commerce 애플리케이션은 배포 단계 동안 유지 관리 모드에서 실행됩니다. 배포가 정상적으로 완료되면 Commerce 애플리케이션은 프로덕션 모드로 다시 실행됩니다. _Cloud Infrastructure의 Commerce_&#x200B;에서 [배포 후크](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=ko#phase-5%3A-deployment-hooks)을(를) 참조하십시오.
 
 유지 관리 모드에서:
 

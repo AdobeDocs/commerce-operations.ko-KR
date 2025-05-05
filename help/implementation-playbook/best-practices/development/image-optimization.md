@@ -32,9 +32,9 @@ Commerce 사이트에 이미지를 업로드하기 전에 최적화하고 압축
 
 ## Fastly 이미지 최적화 활성화 및 구성
 
-Adobe Commerce Cloud 프로젝트에 대한 Fastly 서비스를 설정한 후 이미지 최적화를 활성화하고 구성하는 방법에 대한 지침은 [Fastly 이미지 최적화](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization)를 참조하십시오.
+Adobe Commerce Cloud 프로젝트에 대한 Fastly 서비스를 설정한 후 이미지 최적화를 활성화하고 구성하는 방법에 대한 지침은 [Fastly 이미지 최적화](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization)를 참조하십시오.
 
 ## 추가 정보
 
-- [빠르게 설정](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
-- [잘못 최적화된 이미지로 인해 성능 문제가 발생할 수 있습니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [빠르게 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
+- [잘못 최적화된 이미지로 인해 성능 문제가 발생할 수 있습니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=ko)

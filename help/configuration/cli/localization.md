@@ -316,7 +316,7 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
 
 [번역 개요]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [번역 사전]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[번역 구성]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[번역 구성]: https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-localize
 [언어 패키지에 대해 자세히 알아보기]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

@@ -31,4 +31,4 @@ ht-degree: 1%
 ## 추가 정보
 
 - [비공개 콘텐츠](../../../performance/configuration.md#client-side-optimization-settings)
-- [처리량이 많은 AJAX 요청으로 인해 성능이 저하됨](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [처리량이 많은 AJAX 요청으로 인해 성능이 저하됨](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=ko)

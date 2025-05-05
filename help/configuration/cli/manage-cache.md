@@ -20,7 +20,7 @@ Adobe Commerce 캐시 관리 시스템을 사용하여 사이트의 성능을 �
 >[!NOTE]
 >
 >
->공동 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. _관리 시스템 안내서_&#x200B;에서 [캐시 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)를 참조하십시오.
+>공동 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. _관리 시스템 안내서_&#x200B;에서 [캐시 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management)를 참조하십시오.
 
 
 ## 캐시 상태 보기
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 _관리 시스템 안내서_&#x200B;의 [캐시](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)를 참조하십시오.
+>Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 _관리 시스템 안내서_&#x200B;의 [캐시](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#caches)를 참조하십시오.
 
 
 ## 캐시 유형 활성화 또는 비활성화

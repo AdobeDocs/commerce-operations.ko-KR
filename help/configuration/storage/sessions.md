@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 세션 크기 관리
 
-_사용 안내서_&#x200B;에서 [세션 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)를 참조하세요.
+_사용 안내서_&#x200B;에서 [세션 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security-session-management)를 참조하세요.
 
 ## 가비지 수집 구성
 

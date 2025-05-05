@@ -54,4 +54,4 @@ ht-degree: 4%
 - 리소스 {#resources}
    - [권장 읽기](resources/recommended-reading.md)
    - [Adobe Commerce을 통한 플랫폼 현대화](resources/recommended-upgrade-paths.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)

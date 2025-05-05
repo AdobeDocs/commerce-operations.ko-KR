@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 소프트웨어를 가져오는 방법
 
-[제품 사용 가능 페이지](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)에서 새로운 기능 및 릴리스의 사용 가능 여부를 확인하고 해당 기능을 가져오는 방법을 알아보세요.
+[제품 사용 가능 페이지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)에서 새로운 기능 및 릴리스의 사용 가능 여부를 확인하고 해당 기능을 가져오는 방법을 알아보세요.
 
 Adobe Commerce 설치를 시작하려면 다음 표를 참조하십시오.
 

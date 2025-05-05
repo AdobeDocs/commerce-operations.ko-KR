@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 추가 정보
 
-- [캐싱 모범 사례](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [캐싱 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [비공개 콘텐츠: 비공개 콘텐츠 무효화](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [하드웨어 권장 사항: 캐시](../../../performance/hardware.md#caches)
 - [고급 설정: Redis 설정](../../../performance/advanced-setup.md#set-up-redis)

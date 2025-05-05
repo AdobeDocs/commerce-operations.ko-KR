@@ -61,4 +61,4 @@ Commerce는 사용된 모든 암호 해시 버전을 암호 해시와 함께 저
 
 ## 이행
 
-클래스는 `\Magento\Framework\Encryption\Encryptor` 암호 해시 생성 및 확인을 담당합니다. [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) 명령은 고객 암호 해시를 최신 해시 알고리즘으로 업그레이드합니다.
+클래스는 `\Magento\Framework\Encryption\Encryptor` 암호 해시 생성 및 확인을 담당합니다. [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) 명령은 고객 암호 해시를 최신 해시 알고리즘으로 업그레이드합니다.

@@ -38,7 +38,7 @@ MySQL을 사용하여 클라우드 인프라 기반 Adobe Systems Commerce 프�
 Adobe Commerce 프로젝트가 Pro 아키텍처에 배포된 경우 Percona Toolkit을 사용하여 쿼리를 분석할 수 있습니다.
 
 1. MySQL 느린 쿼리 로그에 대해 `pt-query-digest --type=slowlog` 명령을 실행합니다.
-   * 느린 쿼리 로그의 위치를 찾으려면 개발자 설명서의 (https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs)를 참조하세요 **[!UICONTROL Log locations > Service Logs]**.
+   * 느린 쿼리 로그의 위치를 찾으려면 개발자 설명서의 (https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs)를 참조하세요 **[!UICONTROL Log locations > Service Logs]**.
    * [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) 문서를 참조하십시오.
 1. 발견된 문제에 따라 쿼리가 더 빠르게 실행되도록 쿼리를 수정하는 단계를 수행합니다.
 

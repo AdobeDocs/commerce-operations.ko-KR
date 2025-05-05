@@ -30,13 +30,13 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)을(를) 참조하십시오.
+클라우드 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)을(를) 참조하십시오.
 
 온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Redis 페이지 캐싱 구성](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)을 참조하십시오.
 
 >[!NOTE]
 >
->최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
+>최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ko)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 
 ### L2 캐시 메모리 크기 조정(Adobe Commerce Cloud)
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-_Cloud Infrastructure의 Commerce_&#x200B;에서 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)을(를) 참조하십시오.
+_Cloud Infrastructure의 Commerce_&#x200B;에서 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_use_slave_connection)을(를) 참조하십시오.
 
 Adobe Commerce 온-프레미스 설치의 경우 `bin/magento:setup` 명령을 사용하여 새 Redis 캐시 구현을 구성합니다. _구성 가이드_&#x200B;에서 [기본 캐시에 Redis 사용](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)을 참조하십시오.
 
 >[!WARNING]
 >
->[크기 조정/분할 아키텍처를 사용하여 클라우드 인프라 프로젝트에 대한 Redis 슬레이브 연결을 구성하지 _마십시오_.](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) 이로 인해 Redis 연결 오류가 발생합니다. _클라우드 인프라의 Commerce_ 안내서에서 [Redis 구성 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)을 참조하십시오.
+>[크기 조정/분할 아키텍처를 사용하여 클라우드 인프라 프로젝트에 대한 Redis 슬레이브 연결을 구성하지 _마십시오_.](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=ko) 이로 인해 Redis 연결 오류가 발생합니다. _클라우드 인프라의 Commerce_ 안내서에서 [Redis 구성 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_use_slave_connection)을 참조하십시오.
 
 ## 미리 로드 키
 
@@ -159,7 +159,7 @@ stage:
 
 >[!NOTE]
 >
->앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
+>앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
 
 온-프레미스 설치를 구성하려면 _구성 가이드_&#x200B;에서 [오래된 캐시 옵션](../../../configuration/cache/level-two-cache.md#stale-cache-options)을 참조하십시오.
 
@@ -200,7 +200,7 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)을 제출하여 프로덕션 및 스테이징 환경에서 세션 전용 새 Redis 인스턴스의 프로비저닝을 요청합니다. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다. 이 경우 다운타임이 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
+1. [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)을 제출하여 프로덕션 및 스테이징 환경에서 세션 전용 새 Redis 인스턴스의 프로비저닝을 요청합니다. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다. 이 경우 다운타임이 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
 
 1. 새 인스턴스가 실행 중인지 확인하고 포트 번호를 기록합니다.
 
@@ -237,7 +237,7 @@ Redis 캐시와 Redis 세션을 분리하면 캐시와 세션을 독립적으로
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-배포 중에 [빌드 및 배포 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs)에 다음 줄이 표시됩니다.
+배포 중에 [빌드 및 배포 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ko#build-and-deploy-logs)에 다음 줄이 표시됩니다.
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)

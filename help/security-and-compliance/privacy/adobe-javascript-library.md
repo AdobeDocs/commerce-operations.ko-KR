@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-[Adobe 개인 정보 JavaScript 라이브러리](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)는 개인 데이터에 액세스하고 삭제하는 프로세스를 만드는 데 도움이 되는 도구 집합입니다.
+[Adobe 개인 정보 JavaScript 라이브러리](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ko)는 개인 데이터에 액세스하고 삭제하는 프로세스를 만드는 데 도움이 되는 도구 집합입니다.
 
 Adobe Commerce 데이터 추적 서비스는 [GDPR(일반 데이터 보호 규정)](gdpr.md) 및 [CCPA(캘리포니아 소비자 개인 정보 보호법)](ccpa.md)과 같은 개인 정보 보호 규정에 적용할 수 있는 개인 정보를 저장할 수 있습니다.
 
@@ -43,7 +43,7 @@ AdobePrivacy JS 라이브러리는 브라우저에 저장된 ID 데이터를 관
 `retrieveThenRemoveIdentities()`
 : 이 함수는 ID 배열을 검색하고 브라우저에서 제거한다는 점에서 `removeIdentities()`과(와) 유사합니다.
 
-이러한 함수 사용에 대한 자세한 내용과 예를 보려면 [공식 라이브러리 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)를 참조하십시오.
+이러한 함수 사용에 대한 자세한 내용과 예를 보려면 [공식 라이브러리 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ko)를 참조하십시오.
 
 ### 초기화
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 생성자는 인스턴스화하는 동안 매개 변수가 있는 구성 개체를 수락합니다.
-이러한 구성 매개 변수 목록은 [공식 라이브러리 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)를 참조하세요.
+이러한 구성 매개 변수 목록은 [공식 라이브러리 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=ko)를 참조하세요.

@@ -32,15 +32,15 @@ Commerce은 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 
 ## 비동기 이메일 알림
 
-&quot;비동기 이메일 알림&quot; 설정을 활성화하면 이메일 알림 체크 아웃 및 주문 처리를 처리하는 프로세스가 백그라운드로 이동합니다. 이 기능을 사용하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**(으)로 이동하십시오. 자세한 내용은 _관리 사용 안내서_&#x200B;의 [판매 전자 메일](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails)을 참조하십시오.
+&quot;비동기 이메일 알림&quot; 설정을 활성화하면 이메일 알림 체크 아웃 및 주문 처리를 처리하는 프로세스가 백그라운드로 이동합니다. 이 기능을 사용하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**(으)로 이동하십시오. 자세한 내용은 _관리 사용 안내서_&#x200B;의 [판매 전자 메일](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/sales/sales-emails)을 참조하십시오.
 
 ## 비동기 주문 데이터 처리
 
-[!DNL Commerce]이(가) 집중 주문 처리를 수행하는 동시에 상점 집중 판매가 발생하는 경우가 있을 수 있습니다. 해당 테이블에서 읽기 및 쓰기 작업 간의 충돌을 방지하기 위해 데이터베이스 수준에서 이 두 트래픽 패턴을 구분하도록 [!DNL Commerce]을(를) 구성할 수 있습니다. 주문 데이터를 비동기식으로 저장하고 인덱싱할 수 있습니다. 주문이 임시 저장소에 보관되고 충돌 없이 Order Management 그리드로 대량으로 이동됩니다. 이 옵션은 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**&#x200B;에서 활성화할 수 있습니다. 자세한 내용은 _관리 사용 안내서_&#x200B;의 [예약된 격자 업데이트](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)를 참조하십시오.
+[!DNL Commerce]이(가) 집중 주문 처리를 수행하는 동시에 상점 집중 판매가 발생하는 경우가 있을 수 있습니다. 해당 테이블에서 읽기 및 쓰기 작업 간의 충돌을 방지하기 위해 데이터베이스 수준에서 이 두 트래픽 패턴을 구분하도록 [!DNL Commerce]을(를) 구성할 수 있습니다. 주문 데이터를 비동기식으로 저장하고 인덱싱할 수 있습니다. 주문이 임시 저장소에 보관되고 충돌 없이 Order Management 그리드로 대량으로 이동됩니다. 이 옵션은 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**&#x200B;에서 활성화할 수 있습니다. 자세한 내용은 _관리 사용 안내서_&#x200B;의 [예약된 격자 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)를 참조하십시오.
 
 >[!WARNING]
 >
->**[!UICONTROL Developer]** 탭 및 옵션은 개발자 모드[&#128279;](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) 기반 Adobe Systems Commerce는 모드를 지원하지 `Developer` 않습니다.
+>**[!UICONTROL Developer]** 탭 및 옵션은 개발자 모드[&#128279;](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) 기반 Adobe Systems Commerce는 모드를 지원하지 `Developer` 않습니다.
 
 ## 비동기 구성 저장
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 지연된 재고 업데이트
 
-매출이 많은 시간대에는 [!DNL Commerce]에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 온디맨드 재고를 쉽게 다시 채울 수 있는 매장의 체크아웃 흐름에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]&#x200B;**로 이동합니다**&#x200B;[!UICONTROL Stores] . 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
+매출이 많은 시간대에는 [!DNL Commerce]에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 온디맨드 재고를 쉽게 다시 채울 수 있는 매장의 체크아웃 흐름에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]&#x200B;**로 이동합니다**&#x200B;[!UICONTROL Stores] . 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
 
 >[!INFO]
 >
@@ -77,7 +77,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->이 옵션은 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html)과(와) 함께 [비동기 주문 배치](high-throughput-order-processing.md#asynchronous-order-placement)에서도 작동합니다.
+>이 옵션은 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html?lang=ko)과(와) 함께 [비동기 주문 배치](high-throughput-order-processing.md#asynchronous-order-placement)에서도 작동합니다.
 
 ## 클라이언트측 최적화 설정
 
@@ -95,7 +95,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [Adobe [!DNL Commerce] 클라우드 인프라](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)에서 `Developer` 모드를 지원하지 않습니다.
+>**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [Adobe [!DNL Commerce] 클라우드 인프라](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)에서 `Developer` 모드를 지원하지 않습니다.
 
 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 옵션을 활성화하면 Commerce에서 모든 JS 리소스를 상점 첫 페이지에 로드되는 하나 또는 번들 세트로 병합할 수 있습니다. JS를 번들링하면 서버에 대한 요청이 줄어들어 페이지 성능이 향상됩니다. 또한 브라우저가 JS 리소스를 첫 번째 호출에 캐시하고 이후의 모든 탐색에 다시 사용할 수 있도록 지원합니다. 또한 모든 JS가 텍스트로 로드되므로 이 옵션은 소극적 평가도 제공합니다. 페이지에서 특정 작업이 트리거된 후에만 코드 분석 및 평가를 시작합니다. 그러나 모든 JS 콘텐츠는 첫 번째 호출에서 로드되므로 첫 번째 페이지 로드 시간이 매우 중요한 저장소에는 이 설정이 권장되지 않습니다.
 
@@ -111,7 +111,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 고객 세그먼트 유효성 검사
 
-[고객 세그먼트](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)가 많은 가맹점은 고객 로그인 및 장바구니에 제품 추가와 같은 고객 작업에 대해 상당한 성능 저하를 경험할 수 있습니다.
+[고객 세그먼트](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/segments/customer-segments)가 많은 가맹점은 고객 로그인 및 장바구니에 제품 추가와 같은 고객 작업에 대해 상당한 성능 저하를 경험할 수 있습니다.
 
 고객 작업은 고객 세그먼트에 대한 유효성 검사 프로세스를 트리거하며, 이로 인해 성능이 저하될 수 있습니다. 기본적으로 Adobe Commerce은 각 세그먼트를 실시간으로 확인하여 일치하는 고객 세그먼트와 일치하지 않는 고객 세그먼트를 정의합니다.
 

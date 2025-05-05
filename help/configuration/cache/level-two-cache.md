@@ -23,7 +23,7 @@ Commerce은 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39
 
 >[!INFO]
 >
->클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)를 사용할 수 있습니다.
+>클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)를 사용할 수 있습니다.
 
 ## 구성 예
 

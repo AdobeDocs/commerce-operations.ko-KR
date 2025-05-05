@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## 우수 사례
 
-[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지를 모니터링하여 예외 발생 여부를 확인합니다. 자세한 내용은 개발자 설명서에서 [로그 보기 및 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)를 참조하십시오.
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지를 모니터링하여 예외 발생 여부를 확인합니다. 자세한 내용은 개발자 설명서에서 [로그 보기 및 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/test/log-locations)를 참조하십시오.

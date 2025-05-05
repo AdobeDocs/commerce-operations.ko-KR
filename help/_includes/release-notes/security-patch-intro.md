@@ -18,4 +18,4 @@ ht-degree: 0%
 보안 패치 릴리스에 대해 자세히 알아보기:
 
 * [Adobe Commerce 보안 패치 릴리스 개요](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* 보안 패치 릴리스 다운로드 및 적용 지침은 [업그레이드 안내서](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)에서 확인할 수 있습니다
+* 보안 패치 릴리스 다운로드 및 적용 지침은 [업그레이드 안내서](https://experienceleague.adobe.com/ko/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)에서 확인할 수 있습니다

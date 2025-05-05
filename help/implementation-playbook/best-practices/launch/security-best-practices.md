@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 인프라에서 Adobe Commerce 프로젝트의 보안 및 유지 관리를 위한 역할 및 책임에 대한 자세한 내용은 _Adobe Commerce 보안 및 규정 준수 안내서_&#x200B;의 [공유 책임 모델](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)을 참조하십시오.
+>클라우드 인프라에서 Adobe Commerce 프로젝트의 보안 및 유지 관리를 위한 역할 및 책임에 대한 자세한 내용은 _Adobe Commerce 보안 및 규정 준수 안내서_&#x200B;의 [공유 책임 모델](https://experienceleague.adobe.com/ko/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)을 참조하십시오.
 
 [지원되는 모든 버전](../../../release/versions.md):
 
@@ -31,21 +31,21 @@ Adobe은 다음 권장 사항을 모든 고객에게 가장 높은 우선 순위
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **관리자 및 모든 SSH 연결에 대해 이중 인증 사용**
 
-- Commerce 관리자에 대한 [보안](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
+- Commerce 관리자에 대한 [보안](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=ko)
 
-- [보안 SSH 연결](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html)(클라우드 인프라)
+- [보안 SSH 연결](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=ko)(클라우드 인프라)
 
 프로젝트에서 MFA가 활성화되면 SSH 액세스 권한이 있는 클라우드 인프라 계정의 모든 Adobe Commerce은 인증 워크플로를 따라야 합니다. 이 워크플로우에서는 환경에 액세스하려면 이중 인증(2FA) 코드나 API 토큰 및 SSH 인증서가 필요합니다.
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **관리자 보안**
 
-- [기본 `admin` 또는 `backend`과(와) 같은 일반적인 용어를 사용하지 않고 기본값이 아닌 관리자 URL을 구성](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url)합니다. 이 구성은 사이트에 대한 무단 액세스를 시도하는 스크립트에 대한 노출을 줄입니다.
+- [기본 `admin` 또는 `backend`과(와) 같은 일반적인 용어를 사용하지 않고 기본값이 아닌 관리자 URL을 구성](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=ko#use-a-custom-admin-url)합니다. 이 구성은 사이트에 대한 무단 액세스를 시도하는 스크립트에 대한 노출을 줄입니다.
 
-- [고급 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—URL에 비밀 키를 추가하고, 암호는 대/소문자를 구분해야 하며, 관리자 사용자 계정을 잠그기 전에 허용되는 관리자 세션 길이, 암호 수명 간격 및 로그인 시도 횟수를 제한합니다. 보안을 강화하려면 현재 세션이 만료되기 전에 키보드 비활성화 시간을 구성하고 사용자 이름과 암호를 대소문자를 구분해야 합니다.
+- [고급 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ko)—URL에 비밀 키를 추가하고, 암호는 대/소문자를 구분해야 하며, 관리자 사용자 계정을 잠그기 전에 허용되는 관리자 세션 길이, 암호 수명 간격 및 로그인 시도 횟수를 제한합니다. 보안을 강화하려면 현재 세션이 만료되기 전에 키보드 비활성화 시간을 구성하고 사용자 이름과 암호를 대소문자를 구분해야 합니다.
 
-- [ReCAPTCHA를 사용](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html)하여 자동 불법 공격으로부터 관리자를 보호합니다.
+- [ReCAPTCHA를 사용](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=ko)하여 자동 불법 공격으로부터 관리자를 보호합니다.
 
-- [관리자 권한](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html)을(를) 역할 및 역할에 관리자 사용자 계정에 할당할 때 최소 권한의 원칙을 따르십시오.
+- [관리자 권한](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=ko)을(를) 역할 및 역할에 관리자 사용자 계정에 할당할 때 최소 권한의 원칙을 따르십시오.
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Adobe Commerce 최신 릴리스로 업그레이드**
 
@@ -55,11 +55,11 @@ Adobe은 다음 권장 사항을 모든 고객에게 가장 높은 우선 순위
 
 중요한 구성 값을 잠그려면 [구성 관리](../../../configuration/cli/set-configuration-values.md)를 사용하십시오.
 
-`lock config` 및 `lock env` CLI 명령은 관리자가 환경 변수를 업데이트하지 못하도록 구성합니다. 이 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일에 씁니다. 클라우드 인프라 프로젝트의 Commerce에 대해서는 [저장소 구성 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data)를 참조하십시오.
+`lock config` 및 `lock env` CLI 명령은 관리자가 환경 변수를 업데이트하지 못하도록 구성합니다. 이 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일에 씁니다. 클라우드 인프라 프로젝트의 Commerce에 대해서는 [저장소 구성 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ko#sensitive-data)를 참조하십시오.
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **보안 검사 실행**
 
-[Commerce 보안 검색 서비스](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)를 사용하여 모든 Adobe Commerce 사이트에서 알려진 보안 위험 및 맬웨어를 모니터링하고 등록하여 패치 업데이트 및 보안 알림을 받습니다.
+[Commerce 보안 검색 서비스](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ko)를 사용하여 모든 Adobe Commerce 사이트에서 알려진 보안 위험 및 맬웨어를 모니터링하고 등록하여 패치 업데이트 및 보안 알림을 받습니다.
 
 ## 확장 및 사용자 지정 코드의 보안 보장
 
@@ -109,9 +109,9 @@ Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개�
 
 **클라우드 인프라에 배포된 Adobe Commerce**
 
-- [백업 및 재해 복구](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
+- [백업 및 재해 복구](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=ko#backup-and-disaster-recovery)
 
-- [클라우드 인프라에서 Adobe Commerce에 대한 구성 관리 저장](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
+- [클라우드 인프라에서 Adobe Commerce에 대한 구성 관리 저장](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=ko)
 
 **Adobe Commerce이 온 프레미스에 배포됨**
 
@@ -129,9 +129,9 @@ Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개�
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **웹 응용 프로그램 방화벽 사용**—트래픽을 분석하고 웹 응용 프로그램 방화벽을 사용하여 알 수 없는 IP 주소로 전송되는 신용 카드 정보와 같은 의심스러운 패턴을 검색합니다.
 
-클라우드 인프라에 배포된 Adobe Commerce 설치는 [Fastly 서비스 통합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)에서 사용할 수 있는 기본 WAF 서비스를 사용할 수 있습니다.
+클라우드 인프라에 배포된 Adobe Commerce 설치는 [Fastly 서비스 통합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=ko)에서 사용할 수 있는 기본 WAF 서비스를 사용할 수 있습니다.
 
-![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **고급 암호 보안 설정 구성**—섹션 8.2.4의 PCI 데이터 보안 표준에서 권장하는 대로 강력한 암호를 설정하고 적어도 90일마다 변경합니다. [관리자 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)을 참조하십시오.
+![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **고급 암호 보안 설정 구성**—섹션 8.2.4의 PCI 데이터 보안 표준에서 권장하는 대로 강력한 암호를 설정하고 적어도 90일마다 변경합니다. [관리자 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ko)을 참조하십시오.
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS 사용**—Commerce 사이트가 새로 구현된 경우 HTTPS를 사용하여 전체 사이트를 시작합니다. Google은 HTTPS를 등급 요소로 사용할 뿐만 아니라 많은 사용자가 HTTPS로 보안이 되지 않는 한 사이트에서 구매를 고려조차 하지 않고 있다.
 
@@ -178,7 +178,7 @@ Commerce 사이트가 손상된 경우 포괄적인 재해 복구 계획을 개�
 
 - 지정된 IP 주소 또는 네트워크에서 온 사용자에게만 액세스를 허용하는 액세스 제어 목록을 설정하여 Commerce 사이트에 대한 액세스를 제어합니다.
 
-  사용자 지정 VCL 코드 조각과 함께 Fastly Edge ACL을 사용하여 들어오는 요청을 필터링하고 IP 주소별 액세스를 허용할 수 있습니다. 요청을 허용하려면 [사용자 지정 VCL을 참조하십시오](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
+  사용자 지정 VCL 코드 조각과 함께 Fastly Edge ACL을 사용하여 들어오는 요청을 필터링하고 IP 주소별 액세스를 허용할 수 있습니다. 요청을 허용하려면 [사용자 지정 VCL을 참조하십시오](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=ko).
 
 
   >[!TIP]

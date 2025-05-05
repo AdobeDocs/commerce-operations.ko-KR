@@ -57,7 +57,7 @@ Adobe Commerce 인스턴스를 업그레이드하기 위한 작업 수준은 다
 
 Adobe Commerce의 기능을 지속적으로 확장하는 과정에서 사용 가능한 최신 릴리스를 통해 개발하고 프로젝트 계획에 업그레이드 전략을 정의하는 것이 중요합니다. 이를 통해 영업을 더욱 신속하게 확장하고, 더욱 효과적으로 운영하며, 현재와 미래의 경쟁에서 앞서갈 수 있도록 지원하는 최신 개선 사항을 안전하고 준수하며 최신 상태로 유지할 수 있습니다.
 
-업그레이드를 계획하고 예산을 책정하려면 [릴리스 일정](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)을 모니터링해야 합니다. 미리 팀의 백로그 내에서 업그레이드 작업을 계획합니다. GA로 이 작업을 완료하는 것을 목표로 합니다.
+업그레이드를 계획하고 예산을 책정하려면 [릴리스 일정](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule)을 모니터링해야 합니다. 미리 팀의 백로그 내에서 업그레이드 작업을 계획합니다. GA로 이 작업을 완료하는 것을 목표로 합니다.
 
 - 프리릴리스 버전을 사용하여 각 새로운 릴리스에 대해 알아보십시오. 프리릴리스는 Adobe Commerce 판매자 및 모든 파트너가 일반 출시 2주 전에 사용할 수 있는 일반 가용성 코드입니다. 여러 스토어가 있는 경우 기본 스토어에서 프리릴리스를 사용하고 사용자 지정 모듈 및 테마가 호환되는지 확인하십시오.
 
@@ -73,7 +73,7 @@ Adobe Commerce의 기능을 지속적으로 확장하는 과정에서 사용 가
 
 업그레이드를 위해 수행할 작업을 평가합니다.
 
-- 새 버전의 범위와 영향을 이해하려면 [릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)를 검토하십시오.
+- 새 버전의 범위와 영향을 이해하려면 [릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/overview)를 검토하십시오.
 
 - 새 버전으로 업그레이드하기 전에 사용자 지정 코드에서 수정해야 하는 잠재적인 문제를 식별하려면 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)을(를) 사용하십시오.
 

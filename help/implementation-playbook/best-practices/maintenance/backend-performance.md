@@ -39,9 +39,9 @@ ht-degree: 0%
 
 트래픽이 많은 기간을 위해 Commerce 프로젝트를 준비하는 방법에 대해 자세히 알아보십시오.
 
-- [휴일 준비](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
-- [휴일 쇼핑 분석](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
-- [서지 용량 증가](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
+- [휴일 준비](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=ko)
+- [휴일 쇼핑 분석](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=ko)
+- [서지 용량 증가](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=ko)
 
 ### 로드 테스트
 
@@ -51,12 +51,12 @@ GTmetrix를 사용하여 과도한 트래픽을 시뮬레이션하고 사이트 
 
 Adobe Commerce 프로젝트 테스트에 대해 자세히 알아보기:
 
-- [테스트 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html)(클라우드 인프라)
+- [테스트 지침](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=ko)(클라우드 인프라)
 - [응용 프로그램 테스트](https://developer.adobe.com/commerce/testing/guide/)
 
 ### 성능 문제 파악 및 해결
 
-New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하여 병목 현상을 감지하고 Commerce 사이트를 효과적으로 최적화하여 성능 문제를 해결합니다. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)은(는) 클라우드 인프라의 Adobe Commerce에 포함되어 있으며 [Adobe Commerce에 대한 관찰](/help/tools/observation-for-adobe-commerce/intro.md)은(는) 클라우드 및 온-프레미스 배포에 모두 포함되어 있습니다.
+New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하여 병목 현상을 감지하고 Commerce 사이트를 효과적으로 최적화하여 성능 문제를 해결합니다. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ko)은(는) 클라우드 인프라의 Adobe Commerce에 포함되어 있으며 [Adobe Commerce에 대한 관찰](/help/tools/observation-for-adobe-commerce/intro.md)은(는) 클라우드 및 온-프레미스 배포에 모두 포함되어 있습니다.
 
 이러한 도구를 사용하여 사이트 성능을 분석하고 다음과 관련된 성능 문제를 식별합니다.
 
@@ -69,7 +69,7 @@ New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하�
 
 사이트 성능 관리에 대해 자세히 알아보기:
 
-- [성능 모니터링](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)(클라우드 인프라)
+- [성능 모니터링](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=ko)(클라우드 인프라)
 - [구성 모범 사례](/help/performance/configuration.md)
 - [Adobe Commerce 관찰](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +81,7 @@ New Relic 및 Adobe Commerce용 관찰 과 같은 다양한 도구를 사용하�
 
 트래픽이 많은 웹 사이트는 주로 단일 MySQL 서버에 의존하여 데이터베이스 병목 현상을 겪습니다. 성능을 향상시키고 고가용성을 보장하는 분산 아키텍처인 데이터베이스 클러스터링을 구현하여 이러한 병목 현상을 해결할 수 있습니다.
 
-데이터베이스 클러스터링은 여러 웹 노드가 여러 MySQL 서버에 연결할 수 있도록 함으로써 최대 트래픽 기간 동안 데이터베이스 관련 문제의 영향을 최소화합니다. Galera Cluster와 같은 도구를 사용하여 Commerce 사이트에 대한 데이터베이스 클러스터링을 설정합니다. Galera 클러스터는 [클라우드 인프라에 배포된 Adobe Commerce 프로젝트](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)에 포함되어 있습니다.
+데이터베이스 클러스터링은 여러 웹 노드가 여러 MySQL 서버에 연결할 수 있도록 함으로써 최대 트래픽 기간 동안 데이터베이스 관련 문제의 영향을 최소화합니다. Galera Cluster와 같은 도구를 사용하여 Commerce 사이트에 대한 데이터베이스 클러스터링을 설정합니다. Galera 클러스터는 [클라우드 인프라에 배포된 Adobe Commerce 프로젝트](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)에 포함되어 있습니다.
 
 #### MySQL 쿼리 최적화
 
@@ -93,10 +93,10 @@ MySQL 서버 성능을 최적화하고 병목 현상을 최소화하려면 불�
 
 MySQL 구성 및 최적화에 대해 자세히 알아보기:
 
-- [데이터베이스 구성 모범 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-- [Galera DB 복제를 위한 느린 복제](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
+- [데이터베이스 구성 모범 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=ko)
+- [Galera DB 복제를 위한 느린 복제](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=ko)
 - [일반 MySQL 지침](/help/installation/prerequisites/database/mysql.md)
-- [MySQL 쿼리 캐싱](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
+- [MySQL 쿼리 캐싱](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=ko)
 
 ## 크론 작업을 효과적으로 관리: 성능 및 시간
 
@@ -110,7 +110,7 @@ cron 성능 및 타이밍을 최적화할 책임이 있는 경우 Commerce 관�
 
 Adobe Commerce cron 구현에 대해 자세히 알아보십시오.
 
-- _Commerce 관리 시스템 사용 안내서_&#x200B;의 [크론(예약된 작업)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)
-- [응용 프로그램 구성 - crons 속성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)(클라우드 인프라)
-- [크론 구성 및 실행](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)(온-프레미스)
-- [Adobe Commerce 관찰](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)([!UICONTROL Cron] 및 [!UICONTROL MySQL] 탭 참조)
+- _Commerce 관리 시스템 사용 안내서_&#x200B;의 [크론(예약된 작업)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=ko)
+- [응용 프로그램 구성 - crons 속성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ko)(클라우드 인프라)
+- [크론 구성 및 실행](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ko)(온-프레미스)
+- [Adobe Commerce 관찰](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ko)([!UICONTROL Cron] 및 [!UICONTROL MySQL] 탭 참조)
