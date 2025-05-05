@@ -35,10 +35,10 @@ URL에 사전 선택된 견본 옵션이 포함되어 있는 경우 구성 가�
 
 <u>재현 단계</u>:
 
-1. [!UICONTROL Stores] > [!UICONTROL Attributes] > [!UICONTROL Product](으)로 이동합니다.
+1. [!UICONTROL Stores] > [!UICONTROL Attributes] > [!UICONTROL Product] (으)로 이동합니다.
 1. **[!UICONTROL Color]** 특성을 선택하고 편집하십시오.
 1. 다음 설정을 업데이트합니다.
-   1. [!UICONTROL Catalog Input Type for Store Owner]을(를) [!UICONTROL Visual Swatch](으)로 설정합니다.
+   1. [!UICONTROL Catalog Input Type for Store Owner]을(를) [!UICONTROL Visual Swatch] (으)로 설정합니다.
    1. **[!UICONTROL Update Product Preview Image]**&#x200B;을(를) **[!UICONTROL Yes]**(으)로 설정합니다.
 1. 이 속성에 대한 몇 가지 옵션을 만듭니다.
 1. **[!UICONTROL Color]** 특성을 사용하여 새 범주를 만들고 구성 가능한 새 제품을 추가합니다.

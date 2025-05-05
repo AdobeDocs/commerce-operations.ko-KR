@@ -53,7 +53,7 @@ ACSD-55352 패치는 고객 보상 포인트가 포함된 부분 대변 메모�
 8. *수량*: *10*&#x200B;인 장바구니에 제품을 추가합니다.
 9. **[!UICONTROL Checkout]**(으)로 이동하여 메시지가 표시되면 사용 가능한 *100* 보상 포인트를 사용하고 주문을 하십시오.
 10. **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice]**(으)로 이동하여 해당 주문을 배송합니다.
-11. [!UICONTROL Credit Memo](으)로 이동하여 *환불할 수량*&#x200B;을(를) *8*(으)로 업데이트하십시오.
+11. [!UICONTROL Credit Memo] (으)로 이동하여 *환불할 수량*&#x200B;을(를) *8*(으)로 업데이트하십시오.
 12. **[!UICONTROL Refund Reward Points]** 확인란을 선택하고 **[!UICONTROL Refund offline]**&#x200B;을(를) 클릭합니다.
 13. [!UICONTROL Credit Memo]을(를) 사용하여 주문에서 나머지 두 제품을 환불해 보십시오.
 
@@ -79,7 +79,7 @@ ACSD-55352 패치는 고객 보상 포인트가 포함된 부분 대변 메모�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

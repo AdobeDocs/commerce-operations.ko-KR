@@ -38,7 +38,7 @@ ACSD-52786 패치는 지정된 SKU로 시작하는 모든 제품에 카탈로그
 1. SKU &quot;24&quot;와 SKU &quot;24-MB01&quot;의 두 제품을 만듭니다.
 1. **[!UICONTROL Marketing]** > **[!UICONTROL Catalog Price Rule]** > **[!UICONTROL Add New Rule]**(으)로 이동합니다.
 1. 다음 조건을 적용합니다.
-   * 이 조건 중 *[!UICONTROL If **&#x200B;모두&#x200B;**은(는)** TRUE **]*: *[!UICONTROL SKU is 24]*입니다.
+   * 이 조건 중 *[!UICONTROL If **&#x200B;모두&#x200B;**&#x200B;은(는)**&#x200B; TRUE &#x200B;**]*: *[!UICONTROL SKU is 24]*&#x200B;입니다.
 1. 액션에서 할인 금액을 설정합니다.
 1. **[!UICONTROL Save and Apply]**&#x200B;을(를) 클릭합니다.
 1. 캐시를 플러시합니다.
@@ -64,7 +64,7 @@ ACSD-52786 패치는 지정된 SKU로 시작하는 모든 제품에 카탈로그
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ▢ 예산, 일정, 범위에 동의합니다.
 
-▢0}호환성 업그레이드 도구](../../../upgrade/upgrade-compatibility-tool/overview.md)를 실행하십시오.[
+▢0&rbrace;호환성 업그레이드 도구[&#128279;](../../../upgrade/upgrade-compatibility-tool/overview.md)를 실행하십시오.
 
 ▢ [사이트 전체 분석 도구](../../../tools/site-wide-analysis-tool/intro.md)에서 식별된 문제를 해결하려면 업그레이드를 사용하는 것이 좋습니다.
 

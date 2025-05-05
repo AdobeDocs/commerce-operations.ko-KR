@@ -22,7 +22,7 @@ Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 
 
 사용자 지정 CLI 명령을 추가하려면 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 가이드를 사용하십시오.
 
-전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령과 함께 바로 가기를 사용하는 방법을 이해하려면 바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오[.
+전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령과 함께 바로 가기를 사용하는 방법을 이해하려면 바로 가기 구문[&#128279;](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
 
 이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
@@ -367,7 +367,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--admin-user`
 
@@ -653,7 +653,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--bootstrap`
 
@@ -744,7 +744,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--interactive`, `-i`
 
@@ -793,7 +793,7 @@ format section/group/field_name의 구성 경로
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--scope`
 
@@ -873,7 +873,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--force`, `-f`
 
@@ -913,7 +913,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--group`
 
@@ -945,7 +945,7 @@ bin/magento customer:hash:upgrade
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `deploy:mode:set`
@@ -1012,7 +1012,7 @@ bin/magento dev:di:info <class> [<area>]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -1025,7 +1025,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `dev:email:override-compatibility-check`
@@ -1038,7 +1038,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `dev:profiler:disable`
@@ -1070,7 +1070,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `dev:query-log:disable`
@@ -1181,7 +1181,7 @@ bin/magento dev:template-hints:disable
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `dev:template-hints:enable`
@@ -1207,7 +1207,7 @@ bin/magento dev:template-hints:status
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `dev:tests:run`
@@ -1390,7 +1390,7 @@ bin/magento encryption:data:re-encrypt [<encryptors>...]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `encryption:key:change`
@@ -1435,7 +1435,7 @@ bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCR
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--label`
 
@@ -1460,7 +1460,7 @@ bin/magento events:generate:module
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `events:info`
@@ -1548,7 +1548,7 @@ bin/magento events:provider:info
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `events:registrations:list`
@@ -1561,7 +1561,7 @@ bin/magento events:registrations:list
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `events:subscribe`
@@ -1811,7 +1811,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `indexer:reset`
@@ -1833,7 +1833,7 @@ bin/magento indexer:reset [<index>...]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `indexer:set-dimensions-mode`
@@ -2104,7 +2104,7 @@ bin/magento info:timezone:list
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `inventory:reservation:create-compensations`
@@ -2126,7 +2126,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--raw`, `-r`
 
@@ -2337,7 +2337,7 @@ bin/magento media-gallery:sync
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `module:config:status`
@@ -2372,7 +2372,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--force`, `-f`
 
@@ -2421,7 +2421,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--force`, `-f`
 
@@ -2821,7 +2821,7 @@ bin/magento sampledata:deploy [--no-update]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--no-update`
 
@@ -2915,7 +2915,7 @@ Google OTP 생성에 사용되는 시크릿을 설정합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `security:tfa:providers`
@@ -2928,7 +2928,7 @@ bin/magento security:tfa:providers
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `security:tfa:reset`
@@ -3045,7 +3045,7 @@ ApplicationServer의 상태 모니터 출력 집계
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `setup:backup`
@@ -3058,7 +3058,7 @@ Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스를
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--code`
 
@@ -3098,7 +3098,7 @@ bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--remote-storage-driver`
 
@@ -3750,7 +3750,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--revertable`
 
@@ -3977,7 +3977,7 @@ DB 스키마 설치 및 업그레이드
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--convert-old-scripts`
 
@@ -4920,7 +4920,7 @@ Magento 애플리케이션 코드베이스, 미디어 및 데이터베이스 롤
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--code-file`, `-c`
 
@@ -5400,7 +5400,7 @@ bin/magento support:utility:paths [-f|--force]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--force`, `-f`
 
@@ -5458,7 +5458,7 @@ Varnish VCL을 생성하고 명령줄에 에코합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 #### `--access-list`
 
@@ -5533,7 +5533,7 @@ JSON 포맷 형식의 웹훅 페이로드
 
 ### 옵션
 
-전역 옵션은 전역 옵션을](#global-options) 참조하십시오[.
+전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
 
 
 ## `webhooks:generate:module`

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->다음 다이어그램은 Adobe Commerce의 _**온-프레미스**_ 설치에 대한 높은 수준의 개요를 제공합니다.
+>다음 다이어그램은 Adobe Commerce의 _&#x200B;**온-프레미스**&#x200B;_ 설치에 대한 높은 수준의 개요를 제공합니다.
 
 ![설치 작동 방식](../assets/installation/install-diagram-24.svg)
 

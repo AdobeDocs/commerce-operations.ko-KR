@@ -205,7 +205,7 @@ ht-degree: 4%
 | 6006 | `jQuery.size()` 제거됨 | `jQuery.length` 사용. |
 | 6007 | `jQuery.trim`은(는) 사용되지 않습니다. | `String.prototype.trim` 사용. |
 | 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, &#39;inlite&#39; 테마, &#39;mobile&#39; 테마, &#39;modern&#39; 테마)가 제거되었습니다. | tinymce5와 호환되도록 코드를 업데이트합니다. |
-| 6009 | `jQuery.isFunction()`은(는) 사용되지 않습니다. | 대부분의 경우 [typeof x === &quot;function&quot;](으)로 대체할 수 있습니다. |
+| 6009 | `jQuery.isFunction()`은(는) 사용되지 않습니다. | 대부분의 경우 [typeof x === &quot;function&quot;] (으)로 대체할 수 있습니다. |
 | 6009 | `jQuery.type()`은(는) 사용되지 않습니다. | [typeof x === &quot;function&quot;]과(와) 같은 적절한 형식 확인으로 대체합니다. |
 | 6009 | `jQuery.isArray()`은(는) 사용되지 않습니다. | 대신 네이티브 Array.isArray 메서드를 사용합니다. |
 | 6009 | `jQuery.parseJSON()`은(는) 사용되지 않습니다. | JSON 문자열을 구문 분석하려면 기본 JSON.parse 메서드를 대신 사용하십시오. |

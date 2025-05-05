@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지에 사이트 로그 파일 오류/예외가 표시됩니다. 예외는 알려진 해결책을 갖거나 갖지 않을 수 있는 비정상적인 상태입니다.
 
-이 페이지에 표시된 정보에는 해당 날짜에 예외가 발생한 [!UICONTROL Last Detected](UTC 날짜/시간), [!UICONTROL Exception Detail] 및 [!UICONTROL Count](발생 횟수)이(가) 포함됩니다.
+이 페이지에 표시된 정보에는 해당 날짜에 예외가 발생한 [!UICONTROL Last Detected] (UTC 날짜/시간), [!UICONTROL Exception Detail] 및 [!UICONTROL Count] (발생 횟수)이(가) 포함됩니다.
 
 ## 사용 시기
 

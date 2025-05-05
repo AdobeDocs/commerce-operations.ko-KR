@@ -196,7 +196,7 @@ ht-degree: 0%
 
 | 설명 | 관리자의 경로(**스토어** > **설정** > **구성** 생략) | 변수 이름 |
 |--------------|--------------|----------------------|
-| Elasticsearch 서버 호스트 이름 | 카탈로그 > **카탈로그****Elasticsearch 서버 호스트 이름** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| Elasticsearch 서버 호스트 이름 | 카탈로그 > **카탈로그**&#x200B;**Elasticsearch 서버 호스트 이름** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
 | Elasticsearch 서버 포트 | 카탈로그 > **카탈로그**, **Elasticsearch 서버 포트** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
 | 배송 국가 원산지 | 판매 > **배송 설정** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
 | 사용자 지정 관리자 URL | 고급 > **관리자** | `<SCOPE>__ADMIN__URL__CUSTOM` |
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 범위를 결정합니다.
 
-   1단계에서 설명한 대로 [데이터베이스](#find-a-website-or-store-view-scope-in-the-database)에서 범위를 찾습니다. 웹 사이트 또는 스토어 보기 범위 값을 찾습니다. (2단계: 전역, 웹 사이트 또는 스토어 보기 변수 설정]의 [표에 표시된 대로 관리에서 값을 찾을 수도 #step-2-set-global-website-or-store-view-variables.
+   1단계에서 설명한 대로 [데이터베이스](#find-a-website-or-store-view-scope-in-the-database)에서 범위를 찾습니다. 웹 사이트 또는 스토어 보기 범위 값을 찾습니다. (2단계: 전역, 웹 사이트 또는 스토어 보기 변수 설정&rbrack;의 &lbrack;표에 표시된 대로 관리에서 값을 찾을 수도 #step-2-set-global-website-or-store-view-variables.
 
    예를 들어 범위는 `CONFIG__WEBSITES__DEFAULT`일 수 있습니다.
 

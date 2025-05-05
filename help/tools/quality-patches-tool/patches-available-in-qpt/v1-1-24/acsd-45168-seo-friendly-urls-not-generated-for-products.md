@@ -41,10 +41,10 @@ ACSD-45168 패치는 스토어-보기 수준에서 url_key 특성이 재정의�
 1. 구성 캐시를 정리합니다.
 1. [!UICONTROL Category 1]과(와) [!UICONTROL Category 2] 두 개의 범주를 만듭니다.
 1. [!UICONTROL Category 1]에 [!UICONTROL Product 1], [!UICONTROL Category 1]에 [!UICONTROL Product 2]의 두 제품을 만듭니다.
-1. [!UICONTROL Product 1]의 범위를 [!UICONTROL Default Store View](으)로 변경합니다.
+1. [!UICONTROL Product 1]의 범위를 [!UICONTROL Default Store View] (으)로 변경합니다.
 1. [!UICONTROL Search Engine Optimization]에서 선택적 URL [!UICONTROL Key]을(를) 선택 취소합니다.
 1. 제품을 저장합니다.
-1. [!UICONTROL All Store Views](으)로 다시 전환합니다.
+1. [!UICONTROL All Store Views] (으)로 다시 전환합니다.
 1. [!UICONTROL Category 2]에 [!UICONTROL Product 1]을(를) 추가하고 [!UICONTROL Category 2]에 [!UICONTROL Product 2]을(를) 추가합니다.
 1. `url_rewrite` 테이블 또는 [!UICONTROL Marketing] > [!UICONTROL SEO & Search] > [!UICONTROL URL Rewrites]을(를) 확인합니다.
 
@@ -66,7 +66,7 @@ ACSD-45168 패치는 스토어-보기 수준에서 url_key 특성이 재정의�
 ## 관련 읽기
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 대해 패치를 사용할 수 있는지 확인[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 대해 패치를 사용할 수 있는지 확인
 * Commerce 구현 플레이북의 [데이터베이스 테이블 수정 우수 사례](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications)
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

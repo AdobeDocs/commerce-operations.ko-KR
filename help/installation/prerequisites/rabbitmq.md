@@ -69,7 +69,7 @@ sudo apt install -y rabbitmq-server
 * Broker 시작 및 중지
 * 시스템 제한
 
-## [!DNL RabbitMQ](으)로 설치 및 연결
+## [!DNL RabbitMQ] (으)로 설치 및 연결
 
 Adobe Commerce _after_&#x200B;를 설치하는 경우 [!DNL RabbitMQ]을(를) 설치하는 동안 다음 명령줄 매개 변수를 추가하십시오.
 

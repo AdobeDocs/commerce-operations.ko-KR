@@ -42,7 +42,7 @@ Magento 1의 일부 비헤이비어와 로직은 Magento 2에서 다르게 구�
 
 다음 예에서는 Magento 1이 데이터베이스의 UTC-7 영역에서 시간을 잘못 절약했습니다(예: 잘못된 타사 확장 때문에). 마이그레이션 시 고객 계정 생성 시간을 UTC-0 영역으로 올바르게 변환하려면 다음 단계를 수행합니다.
 
-1. `map-customer.xml.dist` 구성 파일을 [!DNL Data Migration Tool](`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` 파일로 복사합니다.
+1. `map-customer.xml.dist` 구성 파일을 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` 파일로 복사합니다.
 
 1. `config.xml`에서 `<customer_map_file>` 노드를 업데이트하고 `map-customer.xml.dist`에서 `.dist` 확장을 제거하십시오.
 

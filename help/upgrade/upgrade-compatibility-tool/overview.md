@@ -25,7 +25,7 @@ ht-degree: 0%
 
 - 독립 실행형 [명령줄 인터페이스](../upgrade-compatibility-tool/run.md) 도구입니다. 사용 가능한 명령의 전체 목록을 보려면 [`bin/uct` 참조](../../tools/reference/uct.md)를 참조하십시오.
 - 를 [!DNL Upgrade Compatibility Tool] [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
-- Magento PHPStorm 플러그인](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md) 내의 [실행 구성입니다.
+- Magento PHPStorm 플러그인[&#128279;](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md) 내의 실행 구성입니다.
 
 ## 워크플로
 
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool] 팀에 연결하려면 엔지니어링 Slack 채널 [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F)에서 문의하세요. 도구를 개선하는 데 도움이 되는 피드백, 문제 및 제안을 듣고자 합니다.
 
-코딩 [!DNL Upgrade Compatibility Tool] 표준](https://developer.adobe.com/commerce/php/coding-standards/) 내에 [정의된 규칙을 사용하여 프로젝트가 Adobe Systems Commerce 우수 사례를 [!DNL Upgrade Compatibility Tool]따르도록 하고 .
+코딩 [!DNL Upgrade Compatibility Tool] 표준[&#128279;](https://developer.adobe.com/commerce/php/coding-standards/) 내에 정의된 규칙을 사용하여 프로젝트가 Adobe Systems Commerce 우수 사례를 [!DNL Upgrade Compatibility Tool]따르도록 하고 .
 
-코딩 표준 기여에 대한 자세한 내용은 Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) 항목을 참조하십시오[.
+코딩 표준 기여에 대한 자세한 내용은 Contribute[&#128279;](https://developer.adobe.com/commerce/php/coding-standards/contributing/) 항목을 참조하십시오.
 
 ## 리소스
 
@@ -56,4 +56,4 @@ Adobe Systems Commerce 업그레이드를 이해하는 데 도움이 되는 다�
 - [업그레이드 안내서](../overview.md)는 일반적인 Adobe Systems Commerce 업그레이드 여정에 대한 개요와 해당 여정에 팔로우 모범 사례를 제공합니다.
 - [예정된 릴리스](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) 페이지 페이지에서는 예약된 릴리스와 예정된 릴리스에 대한 날짜를 제공합니다.
 - [커뮤니티 리소스](https://developer.adobe.com/commerce/contributor/community/) 페이지 는 토론을 시작하거나 더 많은 정보를 찾을 수 있는 곳입니다.
-- 관련 도구](../upgrade-compatibility-tool/related-tools.md) 페이지에서 [일반적인 업그레이드 경험의 유용한 도구를 확인하십시오.
+- 관련 도구[&#128279;](../upgrade-compatibility-tool/related-tools.md) 페이지에서 일반적인 업그레이드 경험의 유용한 도구를 확인하십시오.

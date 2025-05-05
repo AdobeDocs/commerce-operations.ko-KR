@@ -38,7 +38,7 @@ Adobe Commerce 2.4.4-p12 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p11 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-73[&#128279;](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -64,7 +64,7 @@ Adobe Systems Commerce 2.4.4-p10 보안 릴리스에서는 이전 2.4.4 릴리�
 
 Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-40[&#128279;](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
 
 ### CVE-2024-34102에 대한 핫픽스 적용
 
@@ -82,13 +82,13 @@ Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별�
 
 Adobe Commerce 2.4.4-p8 보안 릴리스는 Adobe Commerce 2.4.4 배포에 대한 보안 버그 수정 사항을 제공합니다. 이러한 업데이트는 이전 릴리스에서 식별된 취약점을 수정합니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-18[&#128279;](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오.
 
 ## 2.4.4-p7
 
 Adobe Systems Commerce 2.4.4-p7 보안 릴리스에서는 이전 릴리스에서 발견된 취약점에 대한 보안 버그 수정을 제공합니다. 이 릴리스에는 최신 보안 모범 사례의 준수를 개선하는 보안 개선 사항도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB24-03[&#128279;](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오.
 
 ### 하이라이트
 
@@ -178,7 +178,7 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 Adobe Systems Commerce 2.4.4-p1 보안 릴리스에서는 이전 릴리스에서 발견된 취약점에 대한 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례의 준수를 개선하기 위한 보안 개선 사항도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems Security Bulletin.t](https://helpx.adobe.com/security/products/magento/apsb22-38.html)를 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems Security Bulletin.t[&#128279;](https://helpx.adobe.com/security/products/magento/apsb22-38.html)를 참조하십시오.
 
 ### `AC-3022.patch` DHL을 운송업체로 계속 제공하려면 적용
 
@@ -195,4 +195,4 @@ DHL은 스키마 버전 6.2를 도입했으며 가까운 장래에 스키마 버
 
 **문제**: 웹 API 및 통합 테스트는 2.4.4-p1 패키지 `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`에서 실행할 때 다음 오류를 표시합니다. **해결 방법**: `require monolog/monolog:2.6.0` 명령을 실행하여 이전 버전의 Monolog를 설치하십시오. <!-- AC-3651-->
 
-**문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) 기술 자료 문서로 업그레이드한 후 다운그레이드된 [패키지를 참조하십시오.
+**문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1[&#128279;](https://support.magento.com/hc/en-us/articles/8214752983949) 기술 자료 문서로 업그레이드한 후 다운그레이드된 패키지를 참조하십시오.

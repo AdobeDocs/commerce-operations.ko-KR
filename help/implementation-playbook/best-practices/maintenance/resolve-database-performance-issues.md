@@ -66,7 +66,7 @@ Adobe Commerce 프로젝트가 Pro 아키텍처에 배포된 경우 Percona Tool
 
    노드 추가 시 및 `column name` 변수를 사용자 지정 사용자 지정 값으로 바꿉니다`referenceID`.
 
-자세한 내용은 개발자 설명서에서 선언적 스키마](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) 구성을 참조하세요[.
+자세한 내용은 개발자 설명서에서 선언적 스키마[&#128279;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) 구성을 참조하세요.
 
 ## 중복 인덱스 식별 및 제거
 

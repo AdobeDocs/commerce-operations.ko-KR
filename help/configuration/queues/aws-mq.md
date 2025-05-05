@@ -69,7 +69,7 @@ async.V1.inventory.bulk-product-source-transfer.POST
 
 ## 메시지 큐 테스트
 
-Commerce에서 [!DNL RabbitMQ](으)로 메시지 전송을 테스트하려면:
+Commerce에서 [!DNL RabbitMQ] (으)로 메시지 전송을 테스트하려면:
 
 1. 큐를 모니터링하려면 AWS의 [!DNL RabbitMQ] 웹 콘솔에 로그인하십시오.
 1. 관리자에서 제품을 만듭니다.

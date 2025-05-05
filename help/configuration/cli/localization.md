@@ -107,7 +107,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 | 매개 변수 | 값 | 필수? |
 |--- |--- |--- |
 | `<source>` | 언어 패키지로 분류하는 데 필요한 메타 정보와 결합된 번역 사전이 포함된 CSV 파일의 절대 파일 시스템 경로 및 파일 이름입니다.<br><br>CSV 파일을 만든 다음 [디렉터리 및 파일 만들기](#m2devgde-xlate-files)에 설명된 대로 언어 패키지를 만들려면 [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)을(를) 사용합니다. | 예 |
-| `<locale>` | 결과 CSV 파일의 파일 이름으로 사용되는 언어의 [ISO 639-1](언어) 및 [ISO 3166](국가) 식별자입니다. 예: `de_DE`, `pt_PT`, `pt_BR`. | 예 |
+| `<locale>` | 결과 CSV 파일의 파일 이름으로 사용되는 언어의 [ISO 639-1] (언어) 및 [ISO 3166] (국가) 식별자입니다. 예: `de_DE`, `pt_PT`, `pt_BR`. | 예 |
 | `-m --mode` | 대상 파일이 있는 경우 기존 언어 패키지를 바꾸거나 새 언어 팩과 병합할지 여부를 지정합니다. 병합은 존재하는 모든 구문을 무시하고 새 구문을 추가합니다.<br><br>값: 병합 또는 바꾸기(기본값). | 아니요 |
 | `-d --allow-duplicates` | 언어 팩에서 중복을 허용하려면 이 옵션을 포함합니다. 그렇지 않으면 다른 번역이 있는 여러 항목에서 동일한 구문을 발견하면 명령이 실패하고 오류가 발생합니다. | 아니요 |
 

@@ -41,7 +41,7 @@ ht-degree: 0%
       + [Redis 구성](cache/config-redis.md)
       + [기본 캐시에 Redis 사용](cache/redis-pg-cache.md)
       + [세션 스토리지에 Redis 사용](cache/redis-session.md)
-   + {#varnish} 바니시
+   + 바니시{#varnish}
       + [니스 개요](cache/config-varnish.md)
       + [니스 설치](cache/config-varnish-install.md)
    + [웹 서버](cache/config-varnish-server.md)
@@ -139,7 +139,7 @@ ht-degree: 0%
       + [세션 스토리지용 memcached](storage/memcached.md)
       + [CentOS에서 memcached](storage/memcache-centos.md)
       + [우분투에서 memcached](storage/memcache-ubuntu.md)
-   + 데이터베이스 {#split-db} 분할
+   + 데이터베이스 분할 {#split-db}
       + [데이터베이스 분할 개요](storage/multi-master.md)
       + [자동 구성](storage/multi-master-masterdb.md)
       + [수동 구성](storage/multi-master-manual.md)

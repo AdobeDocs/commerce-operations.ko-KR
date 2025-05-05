@@ -26,7 +26,7 @@ Adobe Systems Commerce는 비즈니스 결과를 드라이브 탁월한 경험�
 
 ## 클라우드 기반
 
-[Adobe Systems Commerce on 클라우드 인프라](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) 는 Commerce 구현의 기반입니다. 클라우드 기본 환경에서 Commerce 애플리케이션을 구축, 배포, 모니터링 및 관리하기 위한 셀프 서비스 접근 방식을 갖춘 안전한](../../security-and-compliance/shared-responsibility.md) 자동 호스팅 플랫폼을 제공합니다[.
+[Adobe Systems Commerce on 클라우드 인프라](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) 는 Commerce 구현의 기반입니다. 클라우드 기본 환경에서 Commerce 애플리케이션을 구축, 배포, 모니터링 및 관리하기 위한 셀프 서비스 접근 방식을 갖춘 안전한[&#128279;](../../security-and-compliance/shared-responsibility.md) 자동 호스팅 플랫폼을 제공합니다.
 
 다음 클라우드 기반 기술 세부 정보를 참조하십시오.
 
@@ -39,7 +39,7 @@ Adobe Systems Commerce는 비즈니스 결과를 드라이브 탁월한 경험�
 
 ## Experience Cloud 통합
 
-Adobe Systems Commerce는 모든 Experience Cloud 솔루션과 통합되어 개인화된 커머스 경험을 대규모](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)로 제공합니다[.
+Adobe Systems Commerce는 모든 Experience Cloud 솔루션과 통합되어 개인화된 커머스 경험을 대규모[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)로 제공합니다.
 
 [Data Connection](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview) 은 쇼핑객의 구매 행동에 대한 통찰력을 제공하므로 다른 Adobe Systems Digital Experience 제품을 사용하여 모든 채널에서 개인화된 쇼핑 경험을 만들 수 있습니다.
 
@@ -48,7 +48,7 @@ Adobe Systems Commerce는 모든 Experience Cloud 솔루션과 통합되어 개�
 >자세한 내용은 다음 보고서를 참조하십시오.
 >
 >- [Digital Experience 블루프린트를 참조하십시오](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) .
->- 고객 경험](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization) 개인화를 참조하십시오[.
+>- 고객 경험[&#128279;](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization) 개인화를 참조하십시오.
 
 
 ## 서드파티 시스템과의 통합
@@ -70,7 +70,7 @@ Adobe Systems 에서는 통합 및 사용자 지정 구축을 위해 다음과 �
 
 >[!NOTE]
 >
->최신 접근 방식: Adobe Systems Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)의 효과적인 확장성을 참조하십시오[.
+>최신 접근 방식: Adobe Systems Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)의 효과적인 확장성을 참조하십시오.
 
 ## 상점 서비스
 
@@ -85,5 +85,5 @@ Adobe Systems 는 주요 비즈니스 목표를 지원하는 데 도움이 되�
 
 헤드리스 상거래는 API 우선 상거래입니다. Adobe Commerce은 GraphQL API 계층을 통해 모든 상거래 서비스 및 데이터를 제공하는 분리된 아키텍처를 통해 완전히 headless입니다. 이 아키텍처를 통해 팀은 핵심 애플리케이션과 독립적으로 전면을 개발할 수 있으므로 새로운 기술을 통해 새로운 접점을 신속하게 구축하고 테스트할 수 있는 민첩성을 제공합니다.
 
-Adobe은 문서 기반 작성, 성능 우선 아키텍처 및 즉시 사용 가능한 기본 실험을 통해 [Edge Delivery Services](https://www.aem.live/home)에서 제공하는 것과 동일한 이점과 기능을 포함하는 최신 headless 상점 전면 기술을 제공합니다. 이 서비스에서는 Adobe Systems Commerce [상점 서비스의](#storefront-services) 규모와 성능, 드롭인 구성 요소의](https://experienceleague.adobe.com/developer/commerce/storefront/) 유연성과 편리[함을 활용하여 상거래 기능을 제공합니다.
+Adobe은 문서 기반 작성, 성능 우선 아키텍처 및 즉시 사용 가능한 기본 실험을 통해 [Edge Delivery Services](https://www.aem.live/home)에서 제공하는 것과 동일한 이점과 기능을 포함하는 최신 headless 상점 전면 기술을 제공합니다. 이 서비스에서는 Adobe Systems Commerce [상점 서비스의](#storefront-services) 규모와 성능, 드롭인 구성 요소의[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/) 유연성과 편리함을 활용하여 상거래 기능을 제공합니다.
 

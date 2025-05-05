@@ -24,8 +24,7 @@ Commerce on Cloud의 종속성에 몇 가지 차이점이 있습니다. Adobe Co
 Adobe은 다음 표에 설명된 시스템 요구 사항의 조합만 지원합니다. 예를 들어 2.4.5는 MariaDB 10.4로 완전히 테스트됩니다. Adobe은 2.4.5로 업그레이드하기 전에 MariaDB 10.4로 업그레이드하는 것을 권장합니다.
 
 >[!BEGINTABS]
-
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 [Commerce on Cloud 템플릿](https://github.com/magento/magento-cloud)은(는) 특정 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
@@ -85,8 +84,7 @@ PHPUnit v9(명령줄 도구).
 >클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions)을 참조하십시오.
 
 >[!BEGINTABS]
-
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 다음 표에서는 Adobe Commerce을 클라우드 플랫폼에 배포할 때 지원되는 PHP 확장을 보여 줍니다.
 

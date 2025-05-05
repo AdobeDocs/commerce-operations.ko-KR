@@ -36,7 +36,7 @@ ACSD-53148 패치는 구성 가능한 동일한 제품을 장바구니에 추가
 <u>재현 단계</u>:
 
 1. SKU *Test*&#x200B;로 구성 가능한 제품을 만들고 SKU *Test-A*&#x200B;로 간단한 제품을 만듭니다.
-1. GraphQL을 통해 새 빈 장바구니를 만듭니다(고유한 [!DNL URL](으)로 위치 변경).
+1. GraphQL을 통해 새 빈 장바구니를 만듭니다(고유한 [!DNL URL] (으)로 위치 변경).
 
    ```GraphQL
    curl --location 'http://mag.local/graphql' \
@@ -90,7 +90,7 @@ ACSD-53148 패치는 구성 가능한 동일한 제품을 장바구니에 추가
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

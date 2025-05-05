@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `******`.
+>`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `**&#x200B;**&#x200B;**`.
 
 ### 예시
 

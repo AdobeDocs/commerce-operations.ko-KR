@@ -53,4 +53,4 @@ Adobe Commerce에 카드 소지자 데이터를 저장하는 것은 **엄격하�
 
 ## 추가 정보
 
-Adobe Systems에서 권장하는 결제 솔루션을 찾고 있다면 Adobe Systems 결제 서비스를](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html) 고려하십시오[.
+Adobe Systems에서 권장하는 결제 솔루션을 찾고 있다면 Adobe Systems 결제 서비스를[&#128279;](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html) 고려하십시오.

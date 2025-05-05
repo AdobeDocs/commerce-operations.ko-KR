@@ -34,7 +34,7 @@ ht-degree: 0%
 1. **보안 패치**&#x200B;은(는) Adobe Commerce 릴리스의 정적 코드 기반의 일부입니다.
 1. **Composer 패치**&#x200B;부터 `composer install`까지 및 [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)와(과) 같은 `composer update`개의 플러그인.
 1. [Commerce용 클라우드 패치](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) 패키지에 포함된 모든 **필수 패치**.
-1. 선택한 **품질 패치**&#x200B;이(가) [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md)에 포함되어 있습니다.
+1. 선택한 **품질 패치**&#x200B;이(가) [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)에 포함되어 있습니다.
 1. `/m2-hotfixes` 디렉터리의 **사용자 지정 패치** 및 Adobe Commerce 지원 패치는 패치 이름별로 알파벳순으로 정렬됩니다.
 
    >[!IMPORTANT]

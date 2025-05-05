@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 모범 사례: 콘텐츠 만들기 워크플로
 
-이 문서에서는 *Adobe Commerce 구현 플레이북*&#x200B;의 *[모범 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* 콘텐츠에 대한 변경 또는 추가 사항을 요청하는 사용자 워크플로에 대해 설명합니다.
+이 문서에서는 *Adobe Commerce 구현 플레이북*&#x200B;의 *[모범 사례] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* 콘텐츠에 대한 변경 또는 추가 사항을 요청하는 사용자 워크플로에 대해 설명합니다.
 
 ## 누가 요청을 만들 수 있습니까?
 

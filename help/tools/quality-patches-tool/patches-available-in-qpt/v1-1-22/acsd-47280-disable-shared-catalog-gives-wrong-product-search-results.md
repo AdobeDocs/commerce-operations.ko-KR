@@ -56,7 +56,7 @@ ht-degree: 0%
 
 1. 기본 [!DNL scope]에서 **[!UICONTROL Shared Catalog]**&#x200B;을(를) 사용하도록 설정합니다.
 1. [!DNL GraphQL] 요청에 더 이상 두 번째 웹 사이트에 대한 제품이 표시되지 않습니다. 이는 올바른 결과입니다.
-1. 두 번째 웹 사이트의 [!DNL scope](으)로 이동하여 **[!UICONTROL Company]**&#x200B;을(를) 비활성화합니다.
+1. 두 번째 웹 사이트의 [!DNL scope] (으)로 이동하여 **[!UICONTROL Company]**&#x200B;을(를) 비활성화합니다.
 
 <u>예상 결과</u>:
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

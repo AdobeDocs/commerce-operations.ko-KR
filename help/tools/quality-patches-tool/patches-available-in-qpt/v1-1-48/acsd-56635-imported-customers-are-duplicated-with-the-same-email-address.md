@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져온 고객이 중복됩니다.'
-description: 계정 공유를  [!DNL Global](으)로 설정한 상태에서 가져오기를 사용할 때 가져온 고객이 동일한 이메일 주소로 복제되는 Adobe Commerce 문제를 해결하려면 ACSD-56635 패치를 적용합니다.
+title: 'ACSD-56635: 계정 공유를  [!DNL Global] (으)로 설정하면 가져온 고객이 중복됩니다.'
+description: 계정 공유를  [!DNL Global] (으)로 설정한 상태에서 가져오기를 사용할 때 가져온 고객이 동일한 이메일 주소로 복제되는 Adobe Commerce 문제를 해결하려면 ACSD-56635 패치를 적용합니다.
 feature: Customers, Attributes
 role: Admin, Developer
 exl-id: 73abec4a-03b0-45d4-bfc6-f3c6862e733c
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-56635: 계정 공유를 [!DNL Global](으)로 설정하면 가져온 고객이 동일한 이메일 주소로 복제됩니다.
+# ACSD-56635: 계정 공유를 [!DNL Global] (으)로 설정하면 가져온 고객이 동일한 이메일 주소로 복제됩니다.
 
-ACSD-56635 패치는 계정 공유가 [!DNL Global](으)로 설정된 상태에서 가져오기를 사용할 때 가져온 고객이 동일한 이메일 주소로 복제되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-56635입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-56635 패치는 계정 공유가 [!DNL Global] (으)로 설정된 상태에서 가져오기를 사용할 때 가져온 고객이 동일한 이메일 주소로 복제되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.48이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-56635입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -31,7 +31,7 @@ ACSD-56635 패치는 계정 공유가 [!DNL Global](으)로 설정된 상태에�
 
 ## 문제
 
-계정 공유를 [!DNL Global](으)로 설정하면 가져온 고객이 동일한 이메일 주소로 복제됩니다.
+계정 공유를 [!DNL Global] (으)로 설정하면 가져온 고객이 동일한 이메일 주소로 복제됩니다.
 
 <u>재현 단계</u>:
 
@@ -75,7 +75,7 @@ adb@yopmail.com,ws1,sv111,,09/01/24 12:49,Default Store View,0,,newjon,,1,newDoe
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

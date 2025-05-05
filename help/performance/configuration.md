@@ -40,7 +40,7 @@ Commerce은 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 
 >[!WARNING]
 >
->**[!UICONTROL Developer]** 탭 및 옵션은 개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다[. [클라우드 인프라](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) 기반 Adobe Systems Commerce는 모드를 지원하지 `Developer` 않습니다.
+>**[!UICONTROL Developer]** 탭 및 옵션은 개발자 모드[&#128279;](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) 기반 Adobe Systems Commerce는 모드를 지원하지 `Developer` 않습니다.
 
 ## 비동기 구성 저장
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 지연된 재고 업데이트
 
-매출이 많은 시간대에는 [!DNL Commerce]에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 온디맨드 재고를 쉽게 다시 채울 수 있는 매장의 체크아웃 흐름에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]**로 이동합니다**[!UICONTROL Stores] . 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
+매출이 많은 시간대에는 [!DNL Commerce]에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 온디맨드 재고를 쉽게 다시 채울 수 있는 매장의 체크아웃 흐름에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]&#x200B;**로 이동합니다**&#x200B;[!UICONTROL Stores] . 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
 
 >[!INFO]
 >

@@ -29,7 +29,7 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 | 매개 변수 | 값 | 필수? |
 | --------- | ----- | --------- |
-| `--type` | 원본 파일 형식: [less](기본값: &quot;less&quot;)<br>현재 지원되는 파일 형식은 LESS뿐입니다. | 아니요 |
+| `--type` | 원본 파일 형식: [less] (기본값: &quot;less&quot;)<br>현재 지원되는 파일 형식은 LESS뿐입니다. | 아니요 |
 | `--locale` | 로케일 코드.<br>로케일 코드 목록을 표시하려면 `bin/magento info:language:list`을(를) 입력하십시오. | 아니요 |
 | `--area` | 영역(관리 영역의 경우 `adminhtml`, 상점 앞의 경우 `frontend`). | 아니요 |
 | `--theme` | `<VendorName>/<theme-name>` 형식의 테마 이름입니다. 예: `Magento/blank` 또는 `Magento/backend`. | 아니요 |

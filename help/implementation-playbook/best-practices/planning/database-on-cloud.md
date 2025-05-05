@@ -82,7 +82,7 @@ cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-인덱서를 전환하면 [!DNL data definition language](DDL) 문이 생성되어 트리거가 발생하여 데이터베이스가 잠길 수 있습니다. 구성을 변경하기 전에 웹 사이트를 유지 관리 모드로 전환하고 cron 작업을 비활성화하여 이 문제를 방지할 수 있습니다.
+인덱서를 전환하면 [!DNL data definition language] (DDL) 문이 생성되어 트리거가 발생하여 데이터베이스가 잠길 수 있습니다. 구성을 변경하기 전에 웹 사이트를 유지 관리 모드로 전환하고 cron 작업을 비활성화하여 이 문제를 방지할 수 있습니다.
 자세한 내용은 *Adobe Commerce 구성 가이드*&#x200B;에서 [인덱서 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)을 참조하십시오.
 
 ## 프로덕션에서 DDL 문 실행 안 함

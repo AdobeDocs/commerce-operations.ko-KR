@@ -40,7 +40,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
    1. 장바구니에 제품을 추가합니다.
    1. 장바구니를 보고 편집합니다.
    1. 견적을 요청합니다.
-1. [!UICONTROL admin] > [!UICONTROL Quote] > [!UICONTROL View] 및 [!UICONTROL Add Products by SKU](으)로 01910.
+1. [!UICONTROL admin] > [!UICONTROL Quote] > [!UICONTROL View] 및 [!UICONTROL Add Products by SKU] (으)로 01910.
 
 **참고:** SKU는 *01910* 대신 *1910*(으)로 표시됩니다. 이 불일치로 인해 카탈로그에 SKU 1910의 제품이 없으므로 사용자가 수량이나 가격을 업데이트할 수 없습니다.
 

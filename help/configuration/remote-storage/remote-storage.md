@@ -24,7 +24,7 @@ ht-degree: 0%
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
-원격 저장소를 사용하도록 설정하면 설정된 개발 경험 환경에 영향을 줄 수 있습니다. 예를 들어, 특정 PHP 파일 함수가 예상대로 작동하지 않을 수 있습니다. 파일 작업에 Commerce Framework를 사용해야 합니다. 금지된 PHP 기본 함수 목록은 magento-coding-standard](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) 저장소에서 [사용할 수 있습니다.
+원격 저장소를 사용하도록 설정하면 설정된 개발 경험 환경에 영향을 줄 수 있습니다. 예를 들어, 특정 PHP 파일 함수가 예상대로 작동하지 않을 수 있습니다. 파일 작업에 Commerce Framework를 사용해야 합니다. 금지된 PHP 기본 함수 목록은 magento-coding-standard[&#128279;](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php) 저장소에서 사용할 수 있습니다.
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +32,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 >
 >- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)를 참조하세요.
 >
->- 원격 스토리지 모듈에 클라우드 인프라의 Adobe Commerce에 대한 _제한_ 지원이 있습니다. Adobe이 타사 스토리지 어댑터 서비스의 문제를 완전히 해결할 수 없습니다. 클라우드 프로젝트를 위한 원격 스토리지 구현에 대한 지침은 Commerce on Cloud 인프라](cloud-support.md)에 대한 원격 스토리지 구성을 참조하십시오[.
+>- 원격 스토리지 모듈에 클라우드 인프라의 Adobe Commerce에 대한 _제한_ 지원이 있습니다. Adobe이 타사 스토리지 어댑터 서비스의 문제를 완전히 해결할 수 없습니다. 클라우드 프로젝트를 위한 원격 스토리지 구현에 대한 지침은 Commerce on Cloud 인프라[&#128279;](cloud-support.md)에 대한 원격 스토리지 구성을 참조하십시오.
 
 ![스키마 이미지](../../assets/configuration/remote-storage-schema.png)
 
@@ -91,7 +91,7 @@ Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce
 
 >[!INFO]
 >
->동기화 명령은 디렉토리에 `pub/media` 있는 파일만 마이그레이션하고 _디렉토리에 있는 `var` 가져오기/내보내기 파일은 마이그레이션하지 않습니다_. Commerce 2.4 사용 안내서에서 _예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)를 참조하십시오[._
+>동기화 명령은 디렉토리에 `pub/media` 있는 파일만 마이그레이션하고 _디렉토리에 있는 `var` 가져오기/내보내기 파일은 마이그레이션하지 않습니다_. Commerce 2.4 사용 안내서에서 _예약된 가져오기/내보내기[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)를 참조하십시오._
 
 <!-- link definitions -->
 

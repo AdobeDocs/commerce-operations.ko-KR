@@ -130,7 +130,7 @@ Adobe Commerce 2.4.5-p5 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Systems Commerce 2.4.5-p4 보안 릴리스에서는 이전 릴리스의 2.4.5에서 발견된 취약점에 대한 보안 버그 수정을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)를 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB23-42[&#128279;](https://helpx.adobe.com/security/products/magento/apsb23-42.html)를 참조하십시오.
 
 ### CVE-2022-31160에 대한 핫픽스 적용
 
@@ -164,12 +164,12 @@ Adobe Commerce 2.4.5-p3 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p2 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 세 가지 보안 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html)을 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB23-17[&#128279;](https://helpx.adobe.com/security/products/magento/apsb23-17.html)을 참조하십시오.
 
 ## 2.4.5-p1
 
 Adobe Systems Commerce 2.4.5-p1 보안 릴리스에서는 이전 릴리스의 2.4.5에서 발견된 취약점에 대한 보안 버그 수정을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)을 참조하십시오[.
+보안 버그 수정에 대한 최신 정보는 Adobe Systems 보안 게시판 APSB22-48[&#128279;](https://helpx.adobe.com/security/products/magento/apsb22-48.html)을 참조하십시오.
 
 보안 버그 수정 중 하나에 새 구성 설정 생성이 포함되었습니다. **전자 메일이 변경된 경우 전자 메일 확인 필요** 구성 설정을 사용하면 관리자가 전자 메일 주소를 변경할 때 전자 메일 확인을 요구할 수 있습니다. <!-- AC-6292-->

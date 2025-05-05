@@ -35,8 +35,8 @@ Adobe Systems Commerce에는 및 [!DNL Update on Schedule]라는 두 가지 유�
 사이트 성과를 최대화하려면 다음 색인화 우수 사례를 팔로우 따르십시오.
 
 - 인덱스 구성을 검토합니다.
-- 인덱서를 _[!UICONTROL Update on Schedule]_대규모 사이트 및 업데이트가 빈번하고 트래픽 트래픽이 많은 사이트에 대해 설정합니다. Index Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)를 참조하십시오[.
-- 인덱스 관리에 대한 성능 우수 사례를](../../../performance/configuration.md) 따르십시오[.
+- 인덱서를 _[!UICONTROL Update on Schedule]_&#x200B;대규모 사이트 및 업데이트가 빈번하고 트래픽 트래픽이 많은 사이트에 대해 설정합니다. Index Management[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)를 참조하십시오.
+- 인덱스 관리에 대한 성능 우수 사례를[&#128279;](../../../performance/configuration.md) 따르십시오.
 
 >[!IMPORTANT]
 >

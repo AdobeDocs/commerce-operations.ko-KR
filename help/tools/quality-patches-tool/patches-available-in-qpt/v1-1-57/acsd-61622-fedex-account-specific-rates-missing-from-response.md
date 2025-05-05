@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ACSD-61622: [!DNL FedEx] 계정 특정 요금이 REST API 응답에 없습니다.
 
-ACSD-61622 패치는 REST API 응답에서 [!DNL FedEx's] 계정별 비율이 누락된 문제를 해결합니다. `ACCOUNT` 속도 요청 유형을 Adobe Commerce에서 [!DNL FedEx](으)로 보낸 REST API 요청에 추가하여 SOAP API 응답과 유사한 응답을 반환합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-61622입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-61622 패치는 REST API 응답에서 [!DNL FedEx's] 계정별 비율이 누락된 문제를 해결합니다. `ACCOUNT` 속도 요청 유형을 Adobe Commerce에서 [!DNL FedEx] (으)로 보낸 REST API 요청에 추가하여 SOAP API 응답과 유사한 응답을 반환합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-61622입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 

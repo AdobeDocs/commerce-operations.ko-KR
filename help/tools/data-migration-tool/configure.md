@@ -92,7 +92,7 @@ ht-degree: 0%
    </config>
    ```
 
-1. `config.xml.dist` 구성 파일을 [!DNL Data Migration Tool](`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` 파일로 복사합니다.
+1. `config.xml.dist` 구성 파일을 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` 파일로 복사합니다.
 
    예를 들어 `Magento 1.9.3.6 Community Edition`을(를) `Magento 2 Open Source`(으)로 마이그레이션하는 경우:
 

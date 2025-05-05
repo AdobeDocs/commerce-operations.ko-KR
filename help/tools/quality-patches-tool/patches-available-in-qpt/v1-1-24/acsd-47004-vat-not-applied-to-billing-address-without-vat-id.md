@@ -50,7 +50,7 @@ VAT ID가 없는 청구 주소에는 VAT가 적용되지 않습니다.
    T: 0900000000
    ```
 
-1. 고객의 그룹이 [!UICONTROL General](으)로 남아 있는지 확인합니다.
+1. 고객의 그룹이 [!UICONTROL General] (으)로 남아 있는지 확인합니다.
 1. 이 주소를 편집하고 유효한 VAT 번호를 추가하십시오.
 
    ```
@@ -61,7 +61,7 @@ VAT ID가 없는 청구 주소에는 VAT가 적용되지 않습니다.
    VAT: DE329376919
    ```
 
-1. 고객의 그룹이 [!UICONTROL Retailer](으)로 변경되었는지 확인하십시오.
+1. 고객의 그룹이 [!UICONTROL Retailer] (으)로 변경되었는지 확인하십시오.
 1. 주소를 편집하고 VAT 번호를 제거합니다.
 
    ```
@@ -91,7 +91,7 @@ VAT ID가 없는 청구 주소에는 VAT가 적용되지 않습니다.
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

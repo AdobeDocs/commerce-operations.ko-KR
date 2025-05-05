@@ -248,7 +248,7 @@ ht-degree: 0%
 | `select` | 일반 드롭다운입니다. 사용자 지정 `source_model`이(가) 필요할 수 있습니다. `Yes/No`개 선택 항목에도 사용됩니다. 예제는 `Magento\Search\Model\Adminhtml\System\Config\Source\Engine`을(를) 참조하십시오. |
 | `multiselect` | `select`과(와) 유사하지만 여러 옵션이 유효합니다. |
 | `button` | 즉각적인 이벤트를 트리거하는 단추입니다. 버튼 텍스트 및 작업을 정의하려면 사용자 정의 프론트엔드 모델이 필요합니다. 예제는 `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`을(를) 참조하십시오. |
-| `obscure` | 값이 암호화되어 `****`(으)로 표시되는 텍스트 필드입니다. 브라우저에서 &quot;Inspect 요소&quot;를 사용하여 유형을 변경해도 값이 표시되지 않습니다. |
+| `obscure` | 값이 암호화되어 `**&#x200B;**`(으)로 표시되는 텍스트 필드입니다. 브라우저에서 &quot;Inspect 요소&quot;를 사용하여 유형을 변경해도 값이 표시되지 않습니다. |
 | `password` | `obscure`과(와) 마찬가지로 숨겨진 값이 암호화되지 않고 브라우저에서 &quot;Inspect 요소&quot;를 사용하여 형식을 강제로 변경하면 값이 표시됩니다. |
 | `file` | 처리를 위해 파일을 업로드할 수 있습니다. |
 | `label` | 편집 가능한 필드 대신 레이블을 표시합니다. 특정 범위(예: 보기 수준만 저장)에서만 필드를 편집할 수 있는 경우 이 유형을 사용합니다. |

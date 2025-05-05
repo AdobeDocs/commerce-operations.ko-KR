@@ -15,12 +15,12 @@ ht-degree: 15%
 - [개요](overview.md)
 - 아키텍처 및 통합 {#architecture}
    - [Enterprise 참조](architecture/enterprise-blueprint.md)
-- {#maintenance} 유지 관리 및 지원
+- 유지 관리 및 지원{#maintenance}
    - [개요](maintenance/overview.md)
    - [Managed Services Adobe](maintenance/adobe-managed-services.md)
 - 모범 사례 {#best-practices}
    - [개요](best-practices/phases.md)
-   - {#planning} 계획 중
+   - 계획 중{#planning}
       - [개요](best-practices/planning/overview.md)
       - [카탈로그 관리](best-practices/planning/catalog-management.md)
       - [사이트, 스토어 및 스토어 보기 구성](best-practices/planning/sites-stores-store-views.md)
@@ -49,7 +49,7 @@ ht-degree: 15%
       - [정적 콘텐츠 배포](best-practices/development/static-content-deployment.md)
       - [데이터베이스 테이블 수정](best-practices/development/modifying-core-and-third-party-tables.md)
       - [코어 및 타사 코드 수정](best-practices/development/modifying-core-and-third-party-code.md)
-   - {#launch} 시작
+   - 시작{#launch}
       - [개요](best-practices/launch/overview.md)
       - [웹 크롤러 구성](best-practices/launch/robots-txt.md)
       - [사이트 및 인프라 보안](best-practices/launch/security-best-practices.md)

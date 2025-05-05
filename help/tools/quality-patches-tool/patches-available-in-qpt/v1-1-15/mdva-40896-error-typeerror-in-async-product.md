@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896: 비동기 제품에 ''Error: TypeError: 인수 3'' 오류가 발생했습니다.'
-description: 'MDVA-40896 패치는 ''Error: TypeError: 인수 3이 Magento\Framework\Webapi\ServiceInputProcessor::process()에 전달된 유형 배열이어야 합니다. 문자열 given'' 오류가 비동기 제품 벌크 API에 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40896입니다. 이 문제는 Adobe Commerce 2.4.4에서 해결되었습니다.'
+description: 'MDVA-40896 패치는 ''Error: TypeError: 인수 3이 MagentoFrameworkWebapiServiceInputProcessor::process()에 전달된 유형 배열이어야 합니다. 문자열 given'' 오류가 비동기 제품 벌크 API에 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40896입니다. 이 문제는 Adobe Commerce 2.4.4에서 해결되었습니다.'
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67

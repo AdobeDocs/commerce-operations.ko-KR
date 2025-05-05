@@ -27,7 +27,7 @@ ACSD-49877은 비디오가 원격 비디오 파일에 직접 연결되어 있을
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 [!magento/quality-patches] 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]: 패치 검색]에서 호환성을 확인하십시오. 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 [ !magento/quality-patches] 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]: 패치 검색]에서 호환성을 확인하십시오. 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -38,7 +38,7 @@ ACSD-49877은 비디오가 원격 비디오 파일에 직접 연결되어 있을
 
 <u>재현 단계</u>:
 
-1. 새 CMS 페이지를 만들고 [!DNL Page Builder](으)로 **[!UICONTROL Content Value]**&#x200B;을(를) 편집합니다.
+1. 새 CMS 페이지를 만들고 [!DNL Page Builder] (으)로 **[!UICONTROL Content Value]**&#x200B;을(를) 편집합니다.
 1. 콘텐츠에 *Tab* 요소를 추가하고 *Tab* 내에 *비디오 요소*&#x200B;를 추가합니다.
 1. 이제 톱니바퀴 단추를 클릭하여 *비디오 요소*&#x200B;를 편집합니다.
 1. mp4 비디오 파일에 대한 링크를 [!UICONTROL Video URL] 필드에 추가합니다.
@@ -66,7 +66,7 @@ iPhone을 사용하는 [!DNL Safari]에서는 자동 재생 옵션이 작동하�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

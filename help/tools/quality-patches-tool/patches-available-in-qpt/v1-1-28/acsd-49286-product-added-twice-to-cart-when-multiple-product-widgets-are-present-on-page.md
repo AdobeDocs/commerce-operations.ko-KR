@@ -39,8 +39,8 @@ ACSD-49286 패치는 페이지에 여러 제품 위젯이 있을 때 제품이 �
 1. 콘텐츠 섹션에서 [!DNL Page Builder]을(를) 사용하여 **[!UICONTROL Edit]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Content]**&#x200B;에 두 개의 행 요소를 추가합니다.
 1. 두 행 요소에 제품을 추가합니다.
-1. 첫 번째 행에서 제품 모양을 [!UICONTROL Product Grid](으)로 설정하고 표시할 카테고리를 선택합니다.
-1. 두 번째 행에서 제품 모양을 [!UICONTROL Product Carousel](으)로 설정하고 표시할 다른 범주를 선택합니다.
+1. 첫 번째 행에서 제품 모양을 [!UICONTROL Product Grid] (으)로 설정하고 표시할 카테고리를 선택합니다.
+1. 두 번째 행에서 제품 모양을 [!UICONTROL Product Carousel] (으)로 설정하고 표시할 다른 범주를 선택합니다.
 1. 상점 **[!UICONTROL Home Page]**(으)로 이동하여 제품 그리드에서 제품 하나를 추가합니다.
 1. [!UICONTROL Product Carousel]에서 다른 제품을 추가합니다.
 
@@ -64,7 +64,7 @@ ACSD-49286 패치는 페이지에 여러 제품 위젯이 있을 때 제품이 �
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

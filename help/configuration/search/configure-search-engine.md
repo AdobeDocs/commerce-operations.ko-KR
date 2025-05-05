@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->버전 2.4.4 및 2.4.3-p2에서는 레이블이 **Elasticsearch**인 모든 필드가 OpenSearch에도 적용됩니다.
+>버전 2.4.4 및 2.4.3-p2에서는 레이블이 **Elasticsearch**&#x200B;인 모든 필드가 OpenSearch에도 적용됩니다.
 >버전 2.4.6에서 Elasticsearch 8.x에 대한 지원이 도입되었을 때 Elasticsearch 구성과 OpenSearch 구성을 구별하기 위해 새 레이블이 만들어졌습니다.
 
 검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)를 참조하세요.

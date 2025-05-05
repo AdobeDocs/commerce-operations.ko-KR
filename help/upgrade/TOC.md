@@ -36,18 +36,18 @@ ht-degree: 4%
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [개요](upgrade-compatibility-tool/overview.md)
    - [시스템 요구 사항](upgrade-compatibility-tool/prerequisites.md)
-   - [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool} 사용
+   - [!DNL Upgrade Compatibility Tool] 사용 {#use-upgrade-compatibility-tool}
       - [명령줄 인터페이스에서 도구 실행](upgrade-compatibility-tool/run.md)
       - [ [!DNL Site-Wide Analysis Tool]과(와) 통합](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Magento PHPStorm 플러그인 내에서 도구 실행](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - {#reporting} 보고 중
+   - 보고 중{#reporting}
       - [보고서](upgrade-compatibility-tool/reports.md)
       - [오류 메시지](upgrade-compatibility-tool/error-messages.md)
    - [관련 도구](upgrade-compatibility-tool/related-tools.md)
 - 기여 개발자 {#developer}
    - [Git 기반 설치 업그레이드](developer/git-installs.md)
    - [모듈 관리](developer/manage-modules.md)
-- {#troubleshooting} 문제 해결
+- 문제 해결{#troubleshooting}
    - [현재 검색 엔진이 지원되지 않음](troubleshooting/search-engine-not-supported.md)
    - [모듈 업데이트 실패 후 롤백](troubleshooting/roll-back-after-update-failure.md)
    - [업그레이드를 위한 유지 관리 모드 옵션](troubleshooting/maintenance-mode-options.md)

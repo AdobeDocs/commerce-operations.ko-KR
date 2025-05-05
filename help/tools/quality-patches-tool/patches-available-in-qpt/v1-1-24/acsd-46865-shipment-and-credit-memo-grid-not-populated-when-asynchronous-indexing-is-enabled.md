@@ -41,7 +41,7 @@ ACSD-46865 패치는 [!UICONTROL asynchronous indexing]을(를) 사용할 때 [!
 4. 간단한 제품에 대해 새로운 손님 주문을 합니다.
 5. 크론 실행
 6. **[!UICONTROL Sales]** > **[!UICONTROL Orders]**(으)로 이동하여 [!UICONTROL Commerce] 관리자의 주문을 열고 인보이스와 대변 메모를 생성합니다.
-7. 주문을 [!UICONTROL Archive](으)로 이동합니다.
+7. 주문을 [!UICONTROL Archive] (으)로 이동합니다.
 8. 간단한 제품에 대해 다른 주문을 만듭니다.
 9. 크론 실행
 10. 신규 주문으로 이동하여 신규 선적, 송장 및 대변 메모를 생성합니다.
@@ -68,7 +68,7 @@ ACSD-46865 패치는 [!UICONTROL asynchronous indexing]을(를) 사용할 때 [!
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

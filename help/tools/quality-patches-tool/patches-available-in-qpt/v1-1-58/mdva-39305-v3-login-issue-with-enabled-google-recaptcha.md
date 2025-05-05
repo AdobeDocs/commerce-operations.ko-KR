@@ -43,7 +43,7 @@ MDVA-39305-V3 패치에서는 [!DNL Google reCAPTCHA]을(를) 사용할 수 있�
 
 <u>재현 단계</u>:
 
-1. **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**(으)로 이동하여 ***[!DNL Google reCAPTCHA]***을(를) 사용하도록 설정합니다.
+1. **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**(으)로 이동하여 ***[!DNL Google reCAPTCHA]***&#x200B;을(를) 사용하도록 설정합니다.
 1. 프론트엔드로 가세요
 1. 브라우저에서 **[!UICONTROL Developer Tool Console]** 열기
 

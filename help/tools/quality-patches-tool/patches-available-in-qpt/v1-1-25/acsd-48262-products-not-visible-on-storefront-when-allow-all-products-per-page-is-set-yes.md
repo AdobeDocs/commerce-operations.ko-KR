@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) [!UICONTROL Yes](으)로 설정된 경우 제품이 상점 앞에 표시되지 않음'
-description: ACSD-48262 패치를 적용하여 [!UICONTROL Allow All Products Per Page] 설정이 [!UICONTROL Yes](으)로 설정되어 있을 때 제품이 상점 앞에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) [!UICONTROL Yes] (으)로 설정된 경우 제품이 상점 앞에 표시되지 않음'
+description: ACSD-48262 패치를 적용하여 [!UICONTROL Allow All Products Per Page] 설정이 [!UICONTROL Yes] (으)로 설정되어 있을 때 제품이 상점 앞에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
 exl-id: 733ac476-5c3c-4cbe-88b7-f436d15f1c7d
@@ -63,7 +63,7 @@ ACSD-48262 패치는 [!UICONTROL Allow All Products Per Page] 설정이 *[!UICON
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

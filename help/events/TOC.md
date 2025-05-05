@@ -12,5 +12,5 @@ ht-degree: 5%
 
 # Adobe Commerce 이벤트 요약 {#events}
 
-+ {#summit} 제출
++ 제출{#summit}
    + [2024](summit/2024.md)

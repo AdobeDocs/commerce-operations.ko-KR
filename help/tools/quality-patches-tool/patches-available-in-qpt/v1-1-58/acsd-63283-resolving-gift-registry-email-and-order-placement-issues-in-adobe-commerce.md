@@ -43,7 +43,7 @@ Adobe Commerce의 [!UICONTROL Gift Registry] 기능은 두 가지 중요한 문�
 1. 제품 A와 제품 B, 이렇게 두 개의 제품을 만듭니다.
 1. 고객 A와 고객 B, 이렇게 두 개의 고객을 만듭니다.
 1. 고객 A로 로그인하고 새 [!UICONTROL Gift Registry]을(를) 만듭니다.
-1. 제품 A의 제품 페이지로 이동하여 [!UICONTROL Wishlist]에 추가합니다. [!UICONTROL Wishlist Page]을(를) 열고 [!UICONTROL Add to Gift Registry]을(를) 사용하여 제품 A를 [!UICONTROL Gift Registry](으)로 이동합니다.
+1. 제품 A의 제품 페이지로 이동하여 [!UICONTROL Wishlist]에 추가합니다. [!UICONTROL Wishlist Page]을(를) 열고 [!UICONTROL Add to Gift Registry]을(를) 사용하여 제품 A를 [!UICONTROL Gift Registry] (으)로 이동합니다.
 1. 고객 B로 로그인하고 새 [!UICONTROL Gift Registry]을(를) 만든 다음 제품 B를 추가합니다.
 1. 고객 B로서 **[!UICONTROL My Account]> [!UICONTROL Gift Registry] >[!UICONTROL Share]** 전자 메일을 통해 [!UICONTROL Gift Registry]을(를) 공유하세요.
 1. 고객 B로 로그아웃합니다.
