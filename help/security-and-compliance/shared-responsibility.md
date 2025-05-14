@@ -2,7 +2,7 @@
 title: 공동 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
+source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 Adobe Commerce on cloud infrastructure는 공유 책임 보안 및 운영 모델을 사용하는 PaaS(platform-as-a-service) 서비스입니다. 이러한 책임은 Adobe, 판매자, 클라우드 서비스 공급자 및 CDN(Content Delivery Network) 공급자 간에 공유됩니다. 각 당사자는 Adobe Commerce 애플리케이션 및 클라우드 인프라에 배포된 판매자별 코드 및 확장에 대한 보안 및 운영에 대해 고유한 책임을 집니다.
 
 이 공유 모델을 통해 상인은 비즈니스 요구 사항을 충족하고 운영 책임과 비용을 최소화하면서 유연하고 사용자 정의가 가능하며 확장 가능한 솔루션을 설계 및 구현할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
 일반적으로 Adobe은 다음 사항을 담당합니다.
 
@@ -32,7 +34,7 @@ Adobe Commerce on cloud infrastructure는 공유 책임 보안 및 운영 모델
 
 ## Adobe 책임
 
-Adobe은 클라우드 인프라 환경의 Adobe Commerce과 핵심 솔루션 코드의 보안 및 가용성을 담당합니다. 또한 Adobe은 다음을 포함하여 클라우드 인프라 솔루션에서 Adobe Commerce의 보안을 유지하는 데 필요한 활동 및 메커니즘을 담당합니다.
+Adobe은 클라우드 인프라 환경 및 핵심 솔루션 코드의 Adobe Commerce에 대한 보안 및 가용성을 담당합니다. 또한 Adobe은 다음을 포함하여 클라우드 인프라 솔루션에서 Adobe Commerce의 보안을 유지하는 데 필요한 활동 및 메커니즘을 담당합니다.
 
 - 클라우드 데이터 스토리지 및 검색 기능과 같은 클라우드 인프라에서 Adobe Commerce이 지원하는 애플리케이션에 서버 수준 보안 및 패치 적용
 - 클라우드 인프라 코드에서 핵심 Adobe Commerce 침투 테스트 및 스캔 수행
@@ -41,7 +43,7 @@ Adobe은 클라우드 인프라 환경의 Adobe Commerce과 핵심 솔루션 코
 - 백업 및 복원 기능에 대한 연간 테스트 및 문서화 수행
 - 서버 및 경계 방화벽 구성
 - 클라우드 인프라 저장소에서 Adobe Commerce 연결 및 구성
-- Adobe의 책임 범위 내에 있는 영역에 대한 재해 복구(DR) 계획 정의, 테스트, 구현 및 문서화
+- Adobe의 책임 범위에 속하는 영역에 대한 재해 복구(DR) 계획 정의, 테스트, 구현 및 문서화
 - 글로벌 플랫폼 웹 애플리케이션 방화벽(WAF) 규칙 정의
 - 운영 체제(OS) 강화
 - 클라우드 인프라에서 Adobe Commerce과 CDN(Content Distribution Network) 및 APM(Application Performance Management) 솔루션 통합 구현 및 유지 관리
@@ -57,14 +59,14 @@ Adobe은 클라우드 인프라 환경의 Adobe Commerce과 핵심 솔루션 코
 
 Adobe은 Adobe Commerce 솔루션에 사용되는 인프라 및 서비스에 대한 PCI 인증을 유지 관리합니다.  판매자는 사용자 정의 코드, 시스템 및 네트워크 프로세스, 조직의 규정 준수에 대한 책임을 집니다.
 
-또한 Adobe은 해당 SLA에서 동의한 대로 판매자의 인프라를 사용할 수 있도록 보장합니다.
+또한 Adobe은 해당 SLA에서 합의한 대로 판매자의 인프라를 사용할 수 있도록 보장합니다.
 
 ## 판매자 책임
 
 판매자는 클라우드 인프라 솔루션에서 맞춤화된 특정 Adobe Commerce 인스턴스에 대한 다음 보안 모범 사례를 책임집니다.
 
 - 저장소에 클라우드 인프라 구성 파일에 필요한 Adobe Commerce 추가
-- Adobe 출시 후 바로 맞춤형 Adobe Commerce on cloud infrastructure 솔루션에 보안 및 기타 패치 적용
+- Adobe에서 출시한 직후 보안 및 기타 패치를 Adobe Commerce on cloud infrastructure 솔루션에 적용
 - 공급업체에서 출시한 직후 모든 사용자 정의 확장 및 코드에 보안 및 기타 패치 적용
 - 사용자 정의 Varnish VCL 파일 생성, 배포 및 테스트
 - 모든 사용자 지정 확장 및 코드를 포함하여 클라우드 인프라 솔루션에 대한 맞춤형 Adobe Commerce의 디자인, 테마 설정, 설치, 통합 및 보안
@@ -104,7 +106,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 >[!BEGINSHADEBOX]
 
-다음 요약 테이블은 RACI 모델을 사용하여 Adobe, 판매자 및 클라우드 서비스 공급자 간에 공유된 보안 권한을 표시합니다.
+다음 요약 테이블은 RACI 모델을 사용하여 Adobe, 판매자 및 클라우드 서비스 공급자 간에 공유된 보안 책임을 보여 줍니다.
 
 **R** — 담당
 **A** — 책임 있음
@@ -419,14 +421,14 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
     <td></td>
   </tr>
   <tr>
-    <td>보안 조사(소프트웨어) Adobe 지원</td>
+    <td>Adobe의 보안 연구 지원(소프트웨어)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>보안 조사(스캔/감사) Adobe 지원</td>
+    <td>Adobe의 보안 조사 지원(스캔/감사)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
@@ -503,7 +505,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
     <td></td>
   </tr>
   <tr>
-    <td>Adobe DR 계획 및 백업 및 복원에 대한 연간 테스트 및 문서</td>
+    <td>Adobe DR 계획 및 백업 및 복원의 연간 테스트 및 문서화</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -521,7 +523,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
   <tr>
     <td colspan="5">
       <p><sup><strong>1</strong></sup> 클라우드 인프라 저장소의 Adobe Commerce이 주 리포지토리로 사용되는 경우에만 해당됩니다. 다른 외부 리포지토리를 사용하는 것은 판매자의 유일한 책임입니다.</p>
-      <p><sup><strong>2</strong></sup> Adobe은 CDN 공급자 문제에 대한 수준 1 지원을 제공합니다.</p>
+      <p><sup><strong>2</strong></sup> Adobe은 CDN 공급자 문제에 대한 레벨 1 지원을 제공합니다.</p>
       <p><sup><strong>3</strong></sup> 판매자는 응용 프로그램에 대해 구성하는 모든 Ngnix 컨트롤을 담당합니다.</p>
       <p><sup><strong>4</strong></sup> PCI의 경우 침투 테스트 요구 사항이 Adobe과 판매자 간에 공유됩니다.</p>
     </td>
@@ -533,7 +535,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 >[!BEGINSHADEBOX]
 
-다음 요약 표는 클라우드 인프라에서 Adobe Commerce을 개발, 배포, 유지 관리 및 보호할 때 Adobe 및 판매자에 대한 운영 책임을 명확하게 설명합니다.
+다음 요약 표는 클라우드 인프라에서 Adobe을 개발, 배포, 유지 관리 및 보호할 때 Adobe Commerce 및 판매자에 대한 운영 책임을 명확하게 설명합니다.
 
 >[!ENDSHADEBOX]
 
@@ -682,7 +684,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | RabbitMQ 서비스 가용성 | R |   |
 | 기본 RabbitMQ 설정 구성 | R |   |
 | RabbitMQ의 지속적인 품질 및 패치 | R |   |
-| 설치된 Adobe Commerce 버전과 호환되는 RabbitMQ 버전을 설치하려면 서비스 요청을 제출하십시오 |   | R |
+| 설치된 Adobe Commerce 버전과 호환되는 RabbitMQ 버전을 설치하려면 서비스 요청을 제출하십시오. |   | R |
 
 {style="table-layout:auto"}
 
@@ -786,16 +788,16 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | Adobe Commerce Business Intelligence 서비스 가용성 | R |   |
 | MBI 데이터 동기화 프로세스 | R |   |
 | MBI 동기화 문제 감지 | R |   |
-| Adobe Commerce Cloud Pro, Starter, On Premise 또는 비 Adobe Commerce에 MBI 데이터 동기화 구성<br>(API, 데이터 품질 및 형식 지정, 판매자 네트워크,<br>데이터 임계값을 통한 Adobe Commerce Cloud DB 내부 및 외부 모두 DB 연결) |     | R |
+| Adobe Commerce Cloud Pro, Starter, On-Premise 또는 비 Adobe Commerce에 MBI 데이터 동기화 구성<br>(데이터 임계값을 통해 API, 데이터 품질 및 형식 지정, 판매자 네트워크,<br>Adobe Commerce Cloud DB 내부 및 외부 모두 연결) |     | R |
 | Adobe Commerce Cloud Pro<br>에 대한 MBI 데이터 동기화 구성(Adobe Commerce Cloud 데이터베이스 구성) | R |   |
 
 {style="table-layout:auto"}
 
-#### 제품 Recommendations
+#### 제품 추천
 
 |     | Adobe | 판매자 |
 | --- | --- | --- |
-| Product Recommendations 서비스 가용성 | R |   |
+| 제품 추천 서비스 가용성 | R |   |
 
 {style="table-layout:auto"}
 
@@ -848,11 +850,11 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 |     | Adobe | 판매자 |
 | --- | --- | --- |
-| Adobe 소유 VPC을 사용하여 PrivateLink 연결 구성 및 유지 관리(사용 시) | R |   |
+| Adobe 소유 VPC을 사용한 PrivateLink 연결 구성 및 유지 관리(사용 시) | R |   |
 | 판매자 소유 VPC을 사용한 PrivateLink 연결 구성 및 유지 관리 |     | R |
 | SSH 사용 가능(비공개 링크 아님) | R |   |
-| Adobe Commerce Cloud 서비스 끝점에 대한 PrivateLink 인바운드 구성 | R |   |
-| Adobe Commerce Cloud 서비스 끝점에 대한 PrivateLink 인바운드 수락 |     | R |
+| Adobe Commerce Cloud Service 끝점에 대한 PrivateLink 인바운드 구성 | R |   |
+| Adobe Commerce Cloud Service 끝점에 대한 PrivateLink 인바운드 수락 |     | R |
 | 판매자의 VPC 서비스 끝점에 대한 PrivateLink 인바운드 구성 |     | R |
 | 판매자의 VPC 서비스 끝점에 대한 PrivateLink 인바운드 수락 | R |   |
 | PrivateLink 통합 구성(엔드포인트-계정) |     | R |
