@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.63 릴리스</a>에서 ACSD-65195 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">자세한 설명을 추가했습니다.</p>
+      <td><p>QPT 1.1.63 릴리스</a>에서 ACSD-65195 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -31,7 +31,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 패치</a>은(는) false로 설정된 ENV 변수가 부울 FALSE 대신 문자열 false로 처리되는 문제를 해결합니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 패치</a>은(는) false로 설정된 ENV 변수가 부울 FALSE 대신 문자열 false로 처리되는 문제를 해결합니다.</p>
 </td>
       <td>
         새 주제, qpt
