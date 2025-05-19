@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: db6ccbcf16786c1987f3d84e86582fe048edd2e4
+source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
 workflow-type: tm+mt
-source-wordcount: '25802'
+source-wordcount: '26107'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.64 {#v1-1-64}
+
+* **ACP2E-3838**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p9 &lt;2.4.4-p13) || >=2.4.5-p8 &lt;2.4.5-p12 || >=2.4.6-p6 &lt;2.4.6-p10 || >=2.4.7 &lt;2.4.7-p5) - [!DNL Page Builder] CORS 오류로 인해 프로덕션 모드의 관리 패널에 변경 사항이 저장되지 않는 문제를 해결했습니다.
+* **ACP2E-3841**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.8) - 하위 선택 조건이 사용되고 무료 배송이 활성화될 때 다중 배송 제품에 대한 장바구니 가격 규칙이 올바르게 적용되지 않는 문제를 해결했습니다.
+* **ACSD-63139**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6 &lt;2.4.7) - 제품 특성에 수천 개의 옵션 값이 포함되어 있을 때 제품 내보내기가 실패하는 문제를 수정합니다.
+* **ACSD-65100**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - [!UICONTROL Media Gallery Image Optimization] 구성에서 [!UICONTROL Maximum Width] 및 [!UICONTROL Maximum Height]의 값을 제거하면 이미지 최적화 프로세스 중에 오류가 발생하는 문제를 해결합니다.
+* **ACSD-65127**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 프로덕션 모드에서 JavaScript 축소를 활성화하면 [!DNL TinyMCE] 6이(가) 브라우저 콘솔에서 오류를 생성하여 기능 및 사용자 경험에 영향을 주는 문제를 해결했습니다.
+* **ACSD-65787**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7-p5 &lt;2.4.8) - 테이블 데이터를 처리할 때 스키마 생성 중 SchemaBuilder 클래스가 충돌하거나 정의되지 않은 배열 키 &#39;column&#39;으로 인해 업데이트하는 문제를 해결했습니다.
+* **ACSD-65223**(Adobe Commerce, B2B 1.5.1의 경우) - [!DNL B2B] 구매 발주에 대해 수동으로 선택한 약관 및 계약으로 인해 오류가 발생하는 문제를 해결합니다.
+* **ACSD-65540**(Adobe Commerce, B2B 1.5.2의 경우) - `company_structure` 테이블을 업데이트할 때 `REGEXP_LIKE` 함수가 없어서 SQL 구문 오류가 발생하는 문제를 해결했습니다.
+* **ACSD-65684**(Adobe Commerce, B2B 1.5.2의 경우) - `company_structure` 테이블에서 많은 레코드(~10만+)를 처리할 때 [!DNL B2B] 1.5.2로 업데이트한 후 `Magento_Company` 모듈을 업그레이드하는 데 시간이 너무 오래 걸리는 성능 문제를 해결했습니다.
+* 업데이트된 버전: **ACSD-48234**, **ACSD-51819**, **ACSD-57570**, **ACSD-56415**
 
 ## v1.1.63 {#v1-1-63}
 
@@ -193,8 +206,8 @@ ht-degree: 0%
 
 * **BUNDLE-3375**(Adobe Commerce 및 Magento Open Source의 경우) - [!DNL Braintree]을(를) 결제 게이트웨이로 사용할 때 3DS VISA 위임 요구 사항을 이행하는 데 필요한 모든 필드를 추가합니다.
 * **ACSD-59366**(Adobe Commerce >=2.4.6 &lt;2.4.8) - 팀 목록에 표시되지 않는 비활성화된 사용자가 포함된 팀을 삭제하려고 할 때 오류가 발생하는 문제를 수정합니다.
-* **ACSD-59865** (Adobe Systems Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - Fixes the issue where a [!UICONTROL Cart Price Rule] 의 경우 장바구니에 있는 제품의 수량이 규칙을 적용하기에 충분하지 않은 경우 이전에 적용된 규칙을 취소하지 않습니다.
-* **ACSD-59925** (Adobe Systems Commerce 및 Magento Open Source GraphQL의 위치별 >=2.4.4 &lt;2.4.8) - Fixes the issue with sorting items in the [!UICONTROL Media Gallery] 의 경우.
+* **ACSD-59865**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 장바구니에 있는 제품의 수량이 규칙을 적용하기에 충분하지 않은 경우 [!UICONTROL Cart Price Rule]이(가) 이전에 적용된 규칙을 취소하지 않는 문제를 수정합니다.
+* **ACSD-59925**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - GraphQL에서 위치별로 [!UICONTROL Media Gallery]의 항목을 정렬하는 문제를 해결했습니다.
 * **ACSD-59952**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 기존 [!UICONTROL Shared Catalog]에 할당된 그룹 ID로 [!UICONTROL Shared Catalog]을(를) 만들 때 오류가 발생하는 문제를 해결했습니다.
 * **ACSD-60590**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.7) - 대량의 주문에 대해 [!UICONTROL Bestsellers Aggregated Daily Reports]을(를) 생성하는 성능을 개선합니다.
 * **ACSD-60673**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 체크아웃 시 여러 결제 방법에 대한 [!UICONTROL Cart Price Rule]이(가) 특정 결제 방법에 적합하지 않는 문제를 해결했습니다.
@@ -333,7 +346,7 @@ ht-degree: 0%
 * **ACSD-54626**(Adobe Commerce >=2.4.6 &lt;2.4.7) - [!DNL GraphQL]을(를) 통해 `NUMBER_OF_SKUS` 특성이 있는 새 구매 주문 규칙(`createPurchaseOrderApprovalRule`)을 만들 수 없는 문제를 해결했습니다.
 * **ACSD-53845**(Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - `consumer max_messages` = 0일 때 [!DNL MySQL] 연결 시간 초과 문제를 해결합니다.
 * **ACSD-54890**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.7) - `/tmp` 디스크의 공간이 부족하여 `aggregate_sales_report_bestsellers_data`에서 [!DNL MySQL] 오류가 발생하는 문제를 해결합니다.
-* **ACSD-55112** (Adobe Systems 상거래 및 Magento Open Source >=2.4.0 &lt;2.4.7) - Fixes the issue where the *[!UICONTROL Submit review]* 의 경우 유효성 검사 없이 [!DNL Google reCAPTCHA v3] 버튼를 여러 번 클릭할 수 있습니다.
+* **ACSD-55112**(Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - [!DNL Google reCAPTCHA v3] 유효성 검사 없이 *[!UICONTROL Submit review]* 단추를 여러 번 클릭할 수 있는 문제를 해결했습니다.
 * **ACSD-54264**(Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - 오류 메시지 *&quot;요청한 특성을 업데이트할 수 없는 문제가 수정되었습니다. 행 ID: store_id&quot;*&#x200B;은(는) 고객이 다른 스토어 보기에서 협상 가능한 견적을 사용하여 체크아웃하려고 할 때 표시됩니다.
 * **ACSD-54418**(Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 고정 할인 금액이 동적으로 가격이 책정된 번들의 각 하위 제품에 잘못 적용되는 문제를 해결했습니다.
 * **ACSD-55238**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.7) - 빈 제품 *[!UICONTROL Meta Description]*&#x200B;을(를) 저장하는 수정 사항.
@@ -407,8 +420,8 @@ ht-degree: 0%
 * **ACSD-53628**(Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - CSV 판매 주문 보고서에 잘못된 특수 문자가 표시되는 문제가 수정되었습니다.
 * **ACSD-53148**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 구성 가능한 동일한 제품을 장바구니에 추가하기 위해 GraphQL에서 두 개의 병렬 요청이 동일한 제품 SKU를 사용하는 장바구니에 두 개의 개별 항목을 초래하는 문제를 해결했습니다.
 * **ACSD-52606**(Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.7) - 사용자가 **[!UICONTROL Notify Order is Ready for Pickup]**&#x200B;을(를) 클릭하면 *주문이 픽업될 준비가 되지 않았습니다*. 오류 메시지가 표시되는 문제를 수정합니다.
-* **ACSD-51574** (Adobe Systems 상거래 및 Magento Open Source >=2.4.2의 경우 &lt;2.4.7) - Fixes the issue where the image is not updated on the frontend after replacing it with another image with the same name.
-* **ACSD-53728** (Adobe Systems 상거래 및 Magento Open Source >=2.3.7의 경우 &lt;2.4.7) - Fixes the issue where the product EAV indexer is taking longer to complete.
+* **ACSD-51574**(Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 이미지를 동일한 이름의 다른 이미지로 바꾼 후 프론트엔드에서 이미지가 업데이트되지 않는 문제를 해결했습니다.
+* **ACSD-53728**(Adobe Commerce 및 Magento Open Source >=2.3.7 &lt;2.4.7) - 제품 EAV 인덱서를 완료하는 데 시간이 더 오래 걸리는 문제를 해결했습니다.
 * **ACSD-53979**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 시작 메시지에 작은 따옴표가 포함된 경우 홈페이지에서 발생하는 JS 문제를 수정합니다.
 * **ACSD-52085**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.7) - 특별 가격이 있는 구성 가능한 제품이 제품 회전판에 표시되지 않는 문제를 해결했습니다.
 * **ACSD-53795**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.7) - `indexer_update_all_views` cron 작업에서 데이터 형식이 잘못된 문제를 해결합니다.
@@ -539,8 +552,8 @@ ht-degree: 0%
 * **ACSD-46683**(Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.7) - 배송 가격에 *아직 계산되지 않음*&#x200B;이 표시되는 문제를 해결했습니다.
 * **ACSD-49129**(Adobe Commerce 및 Magento Open Source >=2.4.2 &lt;2.4.6) - `rest/V1/products/sku/media` 제품 미디어 API 응답에서 *[!UICONTROL content]* 특성(base64 이미지 코드)이 반환되지 않는 문제를 수정합니다.
 * **ACSD-50276**(Adobe Commerce >=2.4.0 &lt;2.4.7) - 다중 선택 고객 특성이 만들어지는 경우 고객 등록 양식이 상점 앞에서 작동하지 않는 문제를 수정합니다.
-* **ACSD-50527** (Adobe Systems Commerce >=2.3.7의 경우 &lt;2.4.7) - Fixes the error that occurs when saving a page with an empty dynamic block.
-* **ACSD-49973** (Adobe Systems 상거래 및 Magento Open Source >=2.4.4의 경우 &lt;2.4.5) - Improves performance of fetching bundled products through GraphQL.
+* **ACSD-50527**(Adobe Commerce >=2.3.7 &lt;2.4.7) - 빈 동적 블록으로 페이지를 저장할 때 발생하는 오류를 수정합니다.
+* **ACSD-49973**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5) - GraphQL을 통해 번들 제품을 가져오는 성능을 개선합니다.
 * **ACSD-51114**(Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 비동기 인덱싱이 활성화되면 무작위 제품이 큰 카탈로그에서 사라지는 문제를 해결합니다. 대규모 카탈로그에 대한 비동기 리인덱싱의 성능을 향상시킵니다.
 * **B2B-2598**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.7) - [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency] 및 [!UICONTROL storeConfig] GraphQL 쿼리에 캐싱 기능을 추가합니다.
 * MDVA-42806, ACSD-48627, ACSD-46815에 대한 새 버전이 추가되었습니다.
@@ -962,7 +975,7 @@ ht-degree: 0%
 
 ## v1.0.22 {#v1-0-22}
 
-* **MDVA-36718** (*Adobe Systems Commerce용>=2.3.0 &lt;=2.4.2*) - API를 통해 변경된 후 이전 사용자 지정 옵션이 유지되는 문제를 수정합니다.
+* **MDVA-36718**(*Adobe Commerce >=2.3.0 &lt;=2.4.2*&#x200B;의 경우) - API를 통해 변경된 후 이전 사용자 지정 옵션이 남아 있는 문제를 해결했습니다.
 * **MDVA-35773** (*Adobe Commerce >=2.3.6 &lt;=2.3.6-p1 || >=2.4.1 &lt;=2.4.2*) - 100% 할인된 주문에 대한 송장에서 총계가 0으로 표시되지 않는 문제를 해결했습니다.
 * **MDVA-36833**(*Adobe Commerce 2.4.2*&#x200B;의 경우) - 공유 카탈로그에서 일부 제품을 제외한 후 페이지당 임의의 제품 수를 표시하는 검색 결과와 관련된 문제를 해결했습니다.
 * **MDVA-37182**(*Adobe Commerce >=2.4.1 &lt;=2.4.2*&#x200B;의 경우) - [!DNL Elasticsearch] 버전 6 및 버전 7 모두에서 잘못된 검색 결과를 가져오는 문제를 해결했습니다.
