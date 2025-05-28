@@ -2,7 +2,7 @@
 title: 인덱서 관리
 description: Commerce 인덱서를 보고 관리하는 방법의 예를 참조하십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,8 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Live Search, Catalog Service 또는 Product Recommendations를 사용하는 Adobe Commerce 판매자는 [SaaS 기반 가격 인덱싱](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html)를 사용할 수 있습니다.
+>
+> Live Search, Catalog Service 또는 Product Recommendations를 사용하는 Adobe Commerce 판매자는 [SaaS 기반 가격 인덱싱](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)를 사용할 수 있습니다.
 
 ## 인덱서 상태 보기
 
@@ -231,11 +232,11 @@ Catalog Search:                                    Update on Save
 >
 >`schedule` 대신 `realtime`(으)로 [!DNL Customer Grid]을(를) 설정하십시오. [!DNL Customer Grid]은(는) [!UICONTROL Update on Save] 옵션을 사용해야만 다시 인덱싱할 수 있습니다. 이 인덱스는 `Update by Schedule` 옵션을 지원하지 않습니다. 다음 명령줄을 사용하여 저장 시 이 인덱서를 업데이트하도록 설정하십시오. `php bin/magento indexer:set-mode realtime customer_grid`
 >
->_구현 플레이북_&#x200B;에서 [인덱서 구성 모범 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=ko)를 참조하세요.
+>_구현 플레이북_&#x200B;에서 [인덱서 구성 모범 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)를 참조하세요.
 
 >[!INFO]
 >
->인덱서 모드를 전환하기 전에 웹 사이트를 [유지 관리](../../installation/tutorials/maintenance-mode.md) 모드로 설정하고 [cron 작업을 사용하지 않도록 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=ko#disable-cron-jobs)하십시오. 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
+>인덱서 모드를 전환하기 전에 웹 사이트를 [유지 관리](../../installation/tutorials/maintenance-mode.md) 모드로 설정하고 [cron 작업을 사용하지 않도록 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs)하십시오. 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
 
 인덱서 구성을 지정하려면 다음을 수행합니다.
 
