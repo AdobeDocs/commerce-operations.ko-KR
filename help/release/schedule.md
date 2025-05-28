@@ -2,9 +2,9 @@
 title: 릴리스 일정
 description: Adobe의 Adobe Commerce를 위한 새 기능 릴리스의 발표 계획에 대해 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 9e3246e81063769e4197f2e786e1e405b4460787
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -18,9 +18,9 @@ Adobe은 조기 채택자에게 향상된 기능과 새로운 기능을 더 빨�
 
 새로운 기능, 기능 업데이트, 클라우드 인프라 및 확장성 업데이트는 패치 릴리스와 독립적으로 제공되며 외부 모듈, 확장, 도구 또는 웹 서비스를 통해 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
-- ![기능 아이콘](../assets/icons/feature.svg) [**기능**](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/release-information/release-notes-all)—패치 릴리스와 독립적으로 제공되는 새로운 기능. 예: [B2B](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes), 카탈로그 서비스, 데이터 연결, 실시간 검색 및 제품 추천.
+- ![기능 아이콘](../assets/icons/feature.svg) [**기능**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—패치 릴리스와 독립적으로 제공되는 새로운 기능. 예: [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), 카탈로그 서비스, 데이터 연결, 실시간 검색 및 제품 추천.
 
-- ![인프라 아이콘](../assets/icons/servers.svg) [**클라우드 인프라**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—클라우드 인프라에서 Adobe Commerce의 새로운 기능 및 개선 사항 및 Cloud Tools Suite for Commerce 패키지(Cloud Platform에서 Adobe Commerce 설치 및 업그레이드를 배포 및 관리)입니다.
+- ![인프라 아이콘](../assets/icons/servers.svg) [**클라우드 인프라**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—클라우드 인프라에서 Adobe Commerce의 새로운 기능 및 개선 사항 및 Cloud Tools Suite for Commerce 패키지(Cloud Platform에서 Adobe Commerce 설치 및 업그레이드를 배포 및 관리)입니다.
 
 - ![확장성 아이콘](../assets/icons/brackets.svg) [**확장성**](https://developer.adobe.com/commerce/extensibility/)—패치 릴리스와 독립적으로 제공되는 프로세스 외부 확장성을 위한 새로운 개발자 도구 및 서비스입니다. 예를 들어 통합 시작 키트, 관리 UI SDK, Commerce용 Adobe I/O Events 및 API Mesh가 있습니다.
 
@@ -36,7 +36,7 @@ Adobe은 조기 채택자에게 향상된 기능과 새로운 기능을 더 빨�
 
 >[!NOTE]
 >
->기능, 클라우드 인프라 및 확장성 릴리스는 연중 달라질 수 있습니다. 그러나 Adobe은 이 페이지에 지정된 날짜 사이에 이러한 영역에 대한 개선 사항을 정기적으로 및 지속적으로 릴리스합니다. [Adobe Commerce 소개최신 기능에 대해 자세히 알아보려면 ](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/about).
+>기능, 클라우드 인프라 및 확장성 릴리스는 연중 달라질 수 있습니다. 그러나 Adobe은 이 페이지에 지정된 날짜 사이에 이러한 영역에 대한 개선 사항을 정기적으로 및 지속적으로 릴리스합니다. [Adobe Commerce 소개최신 기능에 대해 자세히 알아보려면 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about).
 
 ## 패치
 
@@ -61,11 +61,11 @@ Adobe은 또한 핵심 Adobe Commerce PHP 애플리케이션의 지원되는 각
   </tr>
   <tr>
     <td>2024년 10월 8일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta">Beta 패치</a>: 2.4.8-beta1<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta 패치</a>: 2.4.8-beta1<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
   </tr>
   <tr>
     <td>2025년 2월 11일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta">Beta 패치</a>: 2.4.8-beta2<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7, 2.4.6, 2.4.5 및 2.4.4용</td>
+    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta 패치</a>: 2.4.8-beta2<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7, 2.4.6, 2.4.5 및 2.4.4용</td>
   </tr>
   <tr>
     <tr>
@@ -74,15 +74,15 @@ Adobe은 또한 핵심 Adobe Commerce PHP 애플리케이션의 지원되는 각
   </tr>
   <tr>
     <td>2025년 6월 10일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
+    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha 패치</a>: 2.4.9-alpha1<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
   </tr>
   <tr>
     <td>2025년 8월 12일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
+    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha 패치</a>: 2.4.9-alpha2<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
   </tr>
   <tr>
     <td>2025년 10월 14일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7 및 2.4.6용</td>
+    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha 패치</a>: 2.4.9-alpha3<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7 및 2.4.6용</td>
   </tr>
 </tbody>
 </table>
