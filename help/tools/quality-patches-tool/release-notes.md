@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
+source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
 workflow-type: tm+mt
-source-wordcount: '26107'
+source-wordcount: '26381'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.65 {#v1-1-65}
+
+* **ACP2E-3753**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 스토어 또는 테마 구성에 관계없이 다중 스토어 설정에서 제품 경고 이메일이 항상 기본 테마를 사용하여 전송되는 문제를 해결했습니다.
+* **ACSD-64118**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 동일한 제품을 저장하고 업데이트하는 동시 요청으로 인해 데이터 불일치 또는 제품 중복이 발생하는 문제를 해결합니다.
+* **ACSD-64813**(Adobe Commerce >=2.4.4 &lt;2.4.9) - [!DNL REST] API를 통해 [!DNL B2B] 공유 카탈로그에서 범주 할당을 취소하는 데 너무 오래 걸리거나 큰 카탈로그에서 시간이 초과되는 문제를 해결했습니다.
+* **ACSD-65202**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - &quot;내 계정&quot; 페이지에 동일한 저장소 내의 다른 저장소 보기에서 최근 주문이 표시되지 않는 문제가 해결되었습니다.
+* **ACSD-65254**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - `updateCustomerEmail` [!DNL GraphQL] 돌연변이를 사용하여 계정의 이메일 주소를 업데이트한 후 고객에게 이메일 알림이 전송되지 않은 문제를 해결했습니다.
+* **ACSD-65331**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 체크아웃 페이지로 반복적으로 돌아간 후 [!UICONTROL Pick in Store]에서 선택한 저장소가 지워지는 문제를 해결했습니다.
+* **ACSD-65822**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 번들 및 구성 가능한 제품 수량이 [!UICONTROL Customer's Activities] 아래의 장바구니 패널에 올바르게 표시되지 않는 문제를 해결했습니다.
+* **ACSD-66093**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 게스트 고객의 [!UICONTROL First Name] 및 [!UICONTROL Last Name] 필드에 이메일 주소를 입력할 수 있어 잘못된 주문 확인 이메일이 표시되는 문제를 해결합니다.
+* 업데이트된 버전: **ACSD-51291**
+* 대체된 패치: **ACSD-61522**
 
 ## v1.1.64 {#v1-1-64}
 
