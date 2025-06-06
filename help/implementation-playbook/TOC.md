@@ -69,4 +69,4 @@ ht-degree: 14%
       - [업그레이드 체크리스트](best-practices/maintenance/upgrade-checklist.md)
       - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/mariadb-upgrade.md)
 - [용어집](glossary.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
