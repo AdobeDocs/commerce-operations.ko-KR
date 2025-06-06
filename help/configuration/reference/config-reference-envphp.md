@@ -2,9 +2,9 @@
 title: env.php 참조
 description: env.php 파일의 값 목록을 참조하십시오.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
+_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
 
 ## db
 
@@ -203,7 +203,7 @@ _Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleag
 ]
 ```
 
-[다운로드 가능한 도메인](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 
@@ -300,3 +300,74 @@ Commerce 애플리케이션 설치 날짜입니다.
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## 파일 구성에 변수 추가
+
+운영 체제(OS) 수준 환경 변수를 사용하여 모든 구성 옵션(값이 있는 변수)을 설정하거나 무시할 수 있습니다.
+
+`env.php` 구성은 중첩된 수준이 있는 배열에 저장됩니다. 중첩된 배열 경로를 OS 환경 변수의 문자열로 변환하려면 경로의 각 키를 이중 밑줄 문자 `__`, 대문자 및 접두사 `MAGENTO_DC_`과(와) 연결합니다.
+
+예를 들어 세션 저장 처리기를 `env.php` 구성에서 OS 환경 변수로 변환해 보겠습니다.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+`__`과(와) 연결되고 상위 키가 `SESSION__SAVE`이(가) 됩니다.
+
+그런 다음 결과 OS 환경 변수 이름 `MAGENTO_DC_SESSION__SAVE`을(를) 가져오기 위해 접두사로 `MAGENTO_DC_`을(를) 사용합니다.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+다른 예로 스칼라 `env.php` 구성 옵션 경로를 변환해 보겠습니다.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>변수 이름은 대문자로 입력해야 하지만, 값은 대/소문자를 구분하므로 문서화된 대로 유지되어야 합니다.
+
+대문자를 사용하고 접두사는 `MAGENTO_DC_`을(를) 사용하여 최종 OS 환경 변수 이름 `MAGENTO_DC_X-FRAME-OPTIONS`을(를) 받습니다.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>`env.php` 콘텐츠는 OS 환경 변수보다 우선 순위가 높습니다.
+
+## 변수를 사용하여 파일 구성 재정의
+
+OS 환경 변수로 기존 `env.php` 구성 옵션을 재정의하려면 구성의 배열 요소를 JSON으로 인코딩하고 `MAGENTO_DC__OVERRIDE` OS 변수의 값으로 설정해야 합니다.
+
+여러 구성 옵션을 재정의해야 하는 경우 JSON 인코딩 전에 모든 구성 옵션을 단일 배열로 취합하십시오.
+
+예를 들어 다음 `env.php` 구성을 재정의하겠습니다.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+위의 배열의 JSON 인코딩 텍스트는 다음과 같습니다.
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+이제 `MAGENTO_DC__OVERRIDE` OS 변수의 값으로 설정합니다.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>OS가 인코딩된 문자열을 손상하지 않도록 JSON 인코딩된 배열이 올바르게 따옴표로 묶이거나 필요한 경우 이스케이프되는지 확인하십시오.
