@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
 
-- Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크리티컬 요구 사항을 지원하기 위해 Adobe은 지원 기간을 Adobe Commerce 2.4.4 이상의 GA(General Availability) 날짜부터 3년으로 확대했습니다. Adobe은 3년의 지원 기간 동안 2.4.4 이상 릴리스에 대한 품질 수정 사항을 제공합니다. 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 연락하거나 해당 버전이 여전히 품질 지원에 적합한 경우 셀프 서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을(를) 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
+- Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크리티컬 요구 사항을 지원하기 위해 Adobe은 지원 기간을 Adobe Commerce 2.4.4 이상의 GA(General Availability) 날짜부터 3년으로 확대했습니다. Adobe은 3년의 지원 기간 동안 2.4.4 이상 릴리스에 대한 품질 수정 사항을 제공합니다. 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 연락하거나 해당 버전이 여전히 품질 지원에 적합한 경우 셀프 서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을(를) 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
 
 - Adobe은 3년의 지원 기간 동안 보안 패치 릴리스를 통해 보안 수정 사항을 제공합니다.
 
