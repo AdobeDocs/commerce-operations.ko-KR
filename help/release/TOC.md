@@ -3,9 +3,9 @@ user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 한 곳에서 액세스할 수 있습니다.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 7c4734c89dcb0d1c175cabe0d565a4d62d062890
+source-git-commit: 5e8ff044ed2426bfdcfea79f6ed26407caf94444
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '114'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
    - [이전 버전과 호환 불가능한 변경 사항](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [개요](release-notes/commerce/overview.md)
-      - [2.4.9](release-notes/commerce/2-4-9.md)
+      - [2.4.9-alpha](release-notes/commerce/2-4-9.md)
       - [2.4.8](release-notes/commerce/2-4-8.md)
       - [2.4.7](release-notes/commerce/2-4-7.md)
       - [2.4.6](release-notes/commerce/2-4-6.md)
@@ -30,7 +30,7 @@ ht-degree: 5%
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [개요](release-notes/open-source/overview.md)
-      - [2.4.9](release-notes/open-source/2-4-9.md)
+      - [2.4.9-alpha](release-notes/open-source/2-4-9.md)
       - [2.4.8](release-notes/open-source/2-4-8.md)
       - [2.4.7](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
@@ -60,4 +60,4 @@ ht-degree: 5%
 - 패키지 {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

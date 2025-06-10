@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -52,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce 릴리스에는 이전 버전과 호환 불가능한 변경 사항(BIC)이 포함될 수 있습니다. 이전 버전과 호환되지 않는 변경 내용을 검토하려면 [BIC 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)를 참조하십시오. 이전 버전과 호환되지 않는 주요 문제는 [BIC 하이라이트](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)에 설명되어 있습니다. 일부 릴리스에서는 주요 BIC가 제공되지 않습니다.
+
+## Alpha 면책조항 {#alpha}
+
+>[!IMPORTANT]
+>
+>[Alpha](/help/release/versioning-policy.md#alpha-patch-release) 릴리스는 불완전할 수 있으며 결함이 있을 수 있습니다. 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 Adobe 지원 서비스 또는 다른 방법을 통해 Alpha 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 고객은 Alpha 릴리스 또는 관련 설명서나 자료의 올바른 기능이나 성능에 의존해서는 안 됩니다. Alpha 릴리스의 사용은 전적으로 고객 자신의 책임입니다.
 
 ## Beta 면책조항 {#beta}
 
