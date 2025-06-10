@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2025년 6월 보안 패치 및 2.4.9-alpha1 패치에 대한 릴리스 정보가 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
+      <td><p>2025년 6월 보안 패치 및 2.4.9-alpha1 패치에 대한 릴리스 정보가 게시됨:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
 </td>
       <td>
         주요 업데이트
@@ -31,7 +31,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd58c1fe597258ee1f4514acfb08e71bee1c848">커밋</a></td>
     </tr>
     <tr>
-      <td><p>2025년 6월 패치 릴리스에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트했습니다.</p>
+      <td><p>2025년 6월 패치 릴리스에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트했습니다.</p>
 </td>
       <td>
         주요 업데이트
@@ -53,7 +53,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.65 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a>를 게시했습니다.</p>
+      <td><p>1.1.65 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ko">릴리스 정보</a>를 게시했습니다.</p>
 </td>
       <td>
         주요 업데이트, qpt
@@ -75,7 +75,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.64 릴리스의 ACP2E-3841 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled">자세한 설명을 추가했습니다</a></p>
+      <td><p>QPT 1.1.64 릴리스의 ACP2E-3841 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled">자세한 설명을 추가했습니다</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -97,7 +97,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2025년 4월 보안 패치에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 표에 RabbitMQ 3.13이 추가되었습니다.</p>
+      <td><p>2025년 4월 보안 패치에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 표에 RabbitMQ 3.13이 추가되었습니다.</p>
 </td>
       <td>
         기술
@@ -105,7 +105,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cdf687ce0f1201e57b66d2b9232ed8820a116d6f">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">릴리스 일정</a>에 2.4.9 알파 패치를 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule">릴리스 일정</a>에 2.4.9 알파 패치를 추가했습니다.</p>
 </td>
       <td>
         주요 업데이트
@@ -127,7 +127,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.64 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a>를 게시했습니다.</p>
+      <td><p>1.1.64 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ko">릴리스 정보</a>를 게시했습니다.</p>
 </td>
       <td>
         주요 업데이트, qpt
@@ -149,7 +149,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.62 릴리스의 ACSD-64732 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">자세한 설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.62 릴리스의 ACSD-64732 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">자세한 설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -157,7 +157,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6">커밋</a></td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.62 릴리스의 ACSD-65164 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">자세한 설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.62 릴리스의 ACSD-65164 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">자세한 설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -179,7 +179,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.63 릴리스의 ACSD-64627 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">자세한 설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.63 릴리스의 ACSD-64627 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">자세한 설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -201,7 +201,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.63 릴리스</a>에서 ACSD-65195 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">자세한 설명을 추가했습니다.</p>
+      <td><p>QPT 1.1.63 릴리스</a>에서 ACSD-65195 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -209,7 +209,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 패치</a>은(는) false로 설정된 ENV 변수가 부울 FALSE 대신 문자열 false로 처리되는 문제를 해결합니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532 패치</a>은(는) false로 설정된 ENV 변수가 부울 FALSE 대신 문자열 false로 처리되는 문제를 해결합니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -231,7 +231,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.63 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview">설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.63 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview">설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -239,7 +239,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/73e94802a4fbf4dfcbfb50be1a8a23d831368168">커밋</a></td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.62 릴리스의 ACSD-63406 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared">자세한 설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.62 릴리스의 ACSD-63406 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared">자세한 설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -247,7 +247,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9661351d137ebd704c884f2dc1459eee26a3fdc4">커밋</a></td>
     </tr>
     <tr>
-      <td><p>ACSD-64592 패치</a>에서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
+      <td><p>ACSD-64592 패치</a>에서 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -269,7 +269,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2025년 6월 패치에 대해 지원되는 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 목록에 RabbitMQ 4.1을 추가했습니다(2.4.4-p13 제외).<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
+      <td><p>2025년 6월 패치에 대해 지원되는 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 목록에 RabbitMQ 4.1을 추가했습니다(2.4.4-p13 제외).<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
 </td>
       <td>
         기술
@@ -291,7 +291,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.62 릴리스의 ACSD-64523 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields">자세한 설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.62 릴리스의 ACSD-64523 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields">자세한 설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -299,7 +299,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55dd9097d014d37d519ff0ce00fee03c82fbc0ac">커밋</a></td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.62 릴리스의 ACSD-64684 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits">자세한 설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.62 릴리스의 ACSD-64684 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits">자세한 설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -321,7 +321,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.62 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">설명을 추가했습니다.</a></p>
+      <td><p>QPT 1.1.62 릴리스에서 사용 가능한 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">설명을 추가했습니다.</a></p>
 </td>
       <td>
         새 주제, qpt
@@ -343,7 +343,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8.<br /><em>크레딧 <a href="https://github.com/hostep">@hostep</a>.</em>에서 해결된 문제에 대한 릴리스 노트 형식이 개선되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8.<br /><em>크레딧 <a href="https://github.com/hostep">@hostep</a>.</em>에서 해결된 문제에 대한 릴리스 노트 형식이 개선되었습니다.</p>
 </td>
       <td>
         기술
@@ -365,7 +365,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>1.1.63 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">릴리스 정보</a>를 게시했습니다.</p>
+      <td><p>1.1.63 QPT(품질 패치 도구) 패키지 릴리스에 대한 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ko">릴리스 정보</a>를 게시했습니다.</p>
 </td>
       <td>
         주요 업데이트, qpt
@@ -373,7 +373,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>에 대한 릴리스 정보에서 텍스트 렌더링을 수정했습니다.<br /><em><a href="https://github.com/hostep">@hostep</a>에 대한 크레딧.</em></p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> 및 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>에 대한 릴리스 정보에서 텍스트 렌더링을 수정했습니다.<br /><em><a href="https://github.com/hostep">@hostep</a>에 대한 크레딧.</em></p>
 </td>
       <td>
         기술
@@ -395,7 +395,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Braintree에 대해 알려진 문제를 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 릴리스 정보</a>에 추가했습니다.</p>
+      <td><p>Braintree에 대해 알려진 문제를 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 릴리스 정보</a>에 추가했습니다.</p>
 </td>
       <td>
         주요 업데이트
@@ -417,7 +417,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>ACSD-54966 패치</a>에서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
+      <td><p>ACSD-54966 패치</a>에서 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
 </td>
       <td>
         Qpt
@@ -425,7 +425,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">커밋</a></td>
     </tr>
     <tr>
-      <td><p>ACSD-62979 패치</a>에서 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
+      <td><p>ACSD-62979 패치</a>에서 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">영향을 받는 제품 및 버전 섹션을 업데이트했습니다.</p>
 </td>
       <td>
         Qpt
@@ -447,7 +447,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">라이프사이클 정책</a>에 2.4.8이 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy">라이프사이클 정책</a>에 2.4.8이 추가되었습니다.</p>
 </td>
       <td>
         주요 업데이트
@@ -469,7 +469,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.61 릴리스</a>에서 ACSD-64431 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">자세한 설명을 추가했습니다.</p>
+      <td><p>QPT 1.1.61 릴리스</a>에서 ACSD-64431 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
