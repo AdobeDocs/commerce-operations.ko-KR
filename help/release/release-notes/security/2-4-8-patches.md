@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce 2.4.8 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
-source-git-commit: 9ec53ae90e400a6dad98c77c6ae55c70c19e0a40
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,24 @@ Adobe Commerce 2.4.8-p1 보안 릴리스는 이전 릴리스 2.4.8에서 식별�
 
 ### 강조 표시
 
-{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+이번 릴리스에는 다음과 같은 주요 사항이 포함됩니다.
+
+* **API 성능 향상**—이전 보안 패치 이후에 도입된 일괄 비동기 웹 API 끝점의 성능 저하를 해결합니다.<!-- AC-14078 -->
+
+* **CMS 차단 액세스 수정**—머천다이징 전용 액세스와 같이 권한이 제한된 관리자가 [!UICONTROL CMS Blocks] 목록 페이지를 볼 수 없는 문제를 해결합니다.
+
+  이전에는 이러한 사용자가 이전 보안 패치를 설치한 후 구성 매개 변수가 누락되어 오류가 발생했습니다.<!-- AC-14087 -->
+
+* **쿠키 제한 호환성**—프레임워크에서 `MAX_NUM_COOKIES` 상수와 관련된 이전 버전과 호환되지 않는 변경 내용을 해결합니다. 이 업데이트는 예상되는 동작을 복원하고 쿠키 제한과 상호 작용하는 확장 또는 사용자 지정에 대한 호환성을 보장합니다.<!-- AC-14475 -->
+
+* **CVE-2024-34104에 대한 수정**—부적절한 인증 취약점을 해결합니다.<!-- AC-13917 -->
+
+* **CVE-2025-47110에 대한 수정**—전자 메일 템플릿 취약점을 해결합니다.<!-- AC-14695 -->
+
+* **VULN-31547에 대한 수정**—범주 표준 링크 취약성을 해결합니다.<!-- AC-14713 -->
+
+>[!BEGINSHADEBOX]
+
+CVE-2025-47110에 대한 수정 사항은 격리된 패치로도 사용할 수 있습니다. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)를 참조하세요.
+
+>[!ENDSHADEBOX]
