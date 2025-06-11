@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Adobe Managed Services이 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
+source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,6 @@ Adobe Managed Services은 온-프레미스 및 관리되지 않는 클라우드 
 | Go-Live 프로세스 조정 | | | |
 | 전담 에스컬레이션 관리 | | | |
 | 애플리케이션 모니터링 및 지원 | | | |
-
-엑셀이나 다른 형식으로 내보내기를 원하시는지 알려주세요.
 
 ## 역할 및 책임
 
@@ -435,7 +433,7 @@ Adobe은 Managed Services 시스템의 프로비저닝, 개발, 스테이징 및
   </tr>
   <tr>
     <td rowspan="3">업그레이드 실행</td>
-    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ] (스테이징 및 프로덕션)</td>
+    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ](스테이징 및 프로덕션)</td>
     <td></td>
     <td></td>
     <td>Owner<br />CSE가 인프라 서비스 업그레이드를 조정합니다.<br />CSE에서 업그레이드를 위해 전화 회의 이벤트를 예약합니다.<br />CSE는 프로덕션에서 스테이징으로 데이터 마이그레이션을 지원합니다.</td>
