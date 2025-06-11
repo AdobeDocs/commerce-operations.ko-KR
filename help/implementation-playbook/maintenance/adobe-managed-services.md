@@ -433,7 +433,7 @@ Adobe은 Managed Services 시스템의 프로비저닝, 개발, 스테이징 및
   </tr>
   <tr>
     <td rowspan="3">업그레이드 실행</td>
-    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ](스테이징 및 프로덕션)</td>
+    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ] (스테이징 및 프로덕션)</td>
     <td></td>
     <td></td>
     <td>Owner<br />CSE가 인프라 서비스 업그레이드를 조정합니다.<br />CSE에서 업그레이드를 위해 전화 회의 이벤트를 예약합니다.<br />CSE는 프로덕션에서 스테이징으로 데이터 마이그레이션을 지원합니다.</td>
