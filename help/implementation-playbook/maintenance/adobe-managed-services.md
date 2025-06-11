@@ -1,17 +1,17 @@
 ---
-title: Managed Services Adobe
-description: Managed Services Adobe이 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
+title: Adobe Managed Services
+description: Adobe Managed Services이 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
 
-# Managed Services Adobe
+# Adobe Managed Services
 
 Adobe Commerce은 강력한 기본 기능, 광범위한 사용자 지정 옵션 및 서드파티 통합을 포함하는 전자 상거래 기능을 제공하는 플랫폼입니다.
 
@@ -35,9 +35,26 @@ Adobe Managed Services은 온-프레미스 및 관리되지 않는 클라우드 
    - 계획, 실행 및 모니터링을 통해 이벤트 지원 제공
    - 클라우드 지원 및 전문 지식(사전 최적화, 보고 및 모범 사례)
 
-주요 Managed Services 이점을 보다 자세히 비교하려면 다음 인포그래픽을 검토하십시오.
+주요 Managed Services 이점을 보다 자세히 비교하려면 다음 표를 검토하십시오.
 
-![다른 Adobe Commerce 구현 옵션과 Managed Services Adobe의 비교를 보여 주는 인포그래픽](../../assets/playbooks/managed-services-compare.png)
+| 기능 | Adobe Commerce 온-프레미스 | 클라우드의 Adobe Commerce | Managed Services의 Adobe Commerce |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Adobe 엔터프라이즈 소프트웨어 | ✓ | ✓ | ✓ |
+| 보안 및 전용 클라우드 인프라 | | ✓ | ✓ |
+| 향상된 문제 서비스 수준 타겟 | | P1: 1시간 | P1: 15분 |
+| 서지 용량 모니터링 및 응답 | | | ✓ |
+| 인프라 보안 | | | ✓ |
+| 인프라 수준 99.99% SLA | | | ✓ |
+| 애플리케이션 수준 99.9% SLA | | | |
+| 지정된 인프라 전문가 리소스(고객 성공 엔지니어) | | | |
+| 계획된 이벤트 관리 | | | |
+| 맞춤화된 사이트 모니터링 및 맞춤화된 Runbook | | | |
+| 업그레이드 및 패치 배포 지원 | | | |
+| Go-Live 프로세스 조정 | | | |
+| 전담 에스컬레이션 관리 | | | |
+| 애플리케이션 모니터링 및 지원 | | | |
+
+엑셀이나 다른 형식으로 내보내기를 원하시는지 알려주세요.
 
 ## 역할 및 책임
 
@@ -324,7 +341,7 @@ Adobe은 Managed Services 시스템에서 Adobe Commerce의 프로비저닝, 개
             <td></td>
         </tr>
         <tr>
-            <td>웹 응용 프로그램 방화벽 규칙(WAF)</td>
+            <td>웹 애플리케이션 방화벽 규칙(WAF)</td>
             <td>참여자</td>
             <td>참여자</td>
             <td>소유자</td>
@@ -372,7 +389,7 @@ Adobe은 Managed Services 시스템에서 Adobe Commerce의 프로비저닝, 개
 
 Managed Services용 Adobe 보안 스택은 자동화 및 일관성을 사용하여 모든 수준에서 보안을 구축하여 사람의 오류를 줄입니다. 개발 및 운영 팀은 서로 다른 스택 수준에서 보안 제어 기능을 자동으로 상속합니다.
 
-Amazon Web Services 및 Microsoft Azure와 같은 플랫폼 파트너는 플랫폼 사용자 지정을 적용할 때 최대 보안 범위를 보장하고, Adobe의 Managed Services 팀은 규정 준수, 로깅, 인증, 스캔 및 모니터링과 같은 핵심 보안 서비스, 서버 보안 및 보안 애플리케이션 구성을 제공합니다. 자세한 내용은 [Adobe Commerce 보안](https://business.adobe.com/products/magento/secure-ecommerce.html)을 참조하십시오.
+Amazon Web Services 및 Microsoft Azure와 같은 플랫폼 파트너는 플랫폼 사용자 정의를 적용할 때 최대 보안 범위를 보장하며 Adobe의 Managed Services 팀은 규정 준수, 로깅, 인증, 스캔 및 모니터링과 같은 핵심 보안 서비스, 서버 보안 및 보안 애플리케이션 구성을 제공합니다. 자세한 내용은 [Adobe Commerce 보안](https://business.adobe.com/products/magento/secure-ecommerce.html)을 참조하십시오.
 
 다음 다이어그램은 Adobe Managed Services 보안 기술 스택을 보여 줍니다.
 
@@ -418,7 +435,7 @@ Adobe은 Managed Services 시스템의 프로비저닝, 개발, 스테이징 및
   </tr>
   <tr>
     <td rowspan="3">업그레이드 실행</td>
-    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ] (스테이징 및 프로덕션)</td>
+    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ](스테이징 및 프로덕션)</td>
     <td></td>
     <td></td>
     <td>Owner<br />CSE가 인프라 서비스 업그레이드를 조정합니다.<br />CSE에서 업그레이드를 위해 전화 회의 이벤트를 예약합니다.<br />CSE는 프로덕션에서 스테이징으로 데이터 마이그레이션을 지원합니다.</td>
@@ -455,7 +472,7 @@ Adobe은 Managed Services 시스템의 프로비저닝, 개발, 스테이징 및
     <td>Contributor<br />CSE가 전화 회의 시작 이벤트를 예약합니다.</td>
   </tr>
   <tr>
-    <td>Post-Launch</td>
+    <td>출시 후</td>
     <td></td>
     <td>참여자</td>
     <td>참여자</td>
