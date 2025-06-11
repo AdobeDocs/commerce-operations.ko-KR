@@ -1,7 +1,7 @@
 ---
 title: Adobe Commerce 2.4.8 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
-source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
+source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p1 보안 릴리스는 이전 릴리스 2.4.8에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/kr/security/products/magento/apsb25-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -33,7 +33,7 @@ Adobe Commerce 2.4.8-p1 보안 릴리스는 이전 릴리스 2.4.8에서 식별�
 
 * **쿠키 제한 호환성**—프레임워크에서 `MAX_NUM_COOKIES` 상수와 관련된 이전 버전과 호환되지 않는 변경 내용을 해결합니다. 이 업데이트는 예상되는 동작을 복원하고 쿠키 제한과 상호 작용하는 확장 또는 사용자 지정에 대한 호환성을 보장합니다.<!-- AC-14475 -->
 
-* **CVE-2024-34104에 대한 수정**—부적절한 인증 취약점을 해결합니다.<!-- AC-13917 -->
+* **비동기 작업**—이전 고객의 주문을 재정의하기 위한 제한된 비동기 작업입니다.<!-- AC-13917 -->
 
 * **CVE-2025-47110에 대한 수정**—전자 메일 템플릿 취약점을 해결합니다.<!-- AC-14695 -->
 
