@@ -44,43 +44,43 @@ B2B 모듈을 설치합니다.
 1. 이제 아래 [!DNL GraphQL] 요청을 보냅니다(ID는 [!UICONTROL base64] 인코딩된 역할 ID).
 
    <pre><code>
-   mutation {
+   mutation &lbrace;
    updateCompanyRole(
-      input: {
+      input: &lbrace;
          id: "Mg=="
-         permissions: [
+         permissions: &lbrack;
          "Magento_Company::view"
          "Magento_Company::view_account"
          "Magento_Company::user_management"
          "Magento_Company::roles_view"
-        ]
-      }
-    ) {
-      role {
+        &rbrack;
+      &rbrace;
+    ) &lbrace;
+      role &lbrace;
          id
 
          name
 
-         permissions {
+         permissions &lbrace;
          id
 
          text
 
-         children {
+         children &lbrace;
             id
 
             text
 
-            children {
+            children &lbrace;
                id
 
                text
-             }
-           }
-         }
-       }
-     }
-   }
+             &rbrace;
+           &rbrace;
+         &rbrace;
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code></pre>
 
 1. 쿼리 로그를 확인합니다.
@@ -106,7 +106,7 @@ Adobe Commerce은 필터 없이 쿼리를 실행합니다. 기록이 많을 때�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

@@ -38,7 +38,7 @@ ACSD-54961 패치를 사용하면 제한된 관리자가 [!UICONTROL Product Rev
 1. 추가 웹 사이트, 스토어 및 스토어 보기를 만듭니다.
 1. 2번째 스토어에 제품을 추가한 다음 리뷰를 추가합니다.
 1. 두 번째 저장소에만 액세스할 수 있는 제한된 관리자 사용자를 만듭니다.
-1. 제한된 관리자로 로그인한 다음 **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]**(으)로 이동한 다음 **상태**&#x200B;를 *승인됨* 또는 *보류 중*(으)로 설정합니다.
+1. 제한된 관리자로 로그인한 다음 **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]**(으)로 이동한 다음 **상태**&#x200B;를 *승인됨* 또는 *보류 중*(으)로 설정합니다.
 
 <u>예상 결과</u>:
 
@@ -65,7 +65,7 @@ report.CRITICAL: TypeError: array_intersect(): Argument #1 ($array) must be of t
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
