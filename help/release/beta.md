@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
+source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe Commerce Optimizer을 사용하여 다음과 같은 작업을 수행할 �
 - AI와 ML을 사용하여 개인화된 검색 및 권장 사항을 만듭니다.
 - 정확한 구현 및 문제 해결을 위해 동기화 상태 및 상점 이벤트 데이터를 포함한 중요한 제품 데이터 가용성을 확인합니다.
 
-Adobe Commerce Optimizer에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=ko). [!DNL Adobe Commerce Optimizer] 조기 액세스 프로그램에 대해 자세히 알아보려면 [조기 액세스 요청 양식](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)을 작성하십시오.
+Adobe Commerce Optimizer에 대해 [자세히 알아보기](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html). [!DNL Adobe Commerce Optimizer] 조기 액세스 프로그램에 대해 자세히 알아보려면 [조기 액세스 요청 양식](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)을 작성하십시오.
 
 ### 라이브 검색에 대한 검색 기능 향상(공개 Beta)
 
@@ -66,7 +66,7 @@ Adobe Commerce Optimizer에 대해 [자세히 알아보기](https://experiencele
 
 이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다. Beta에 참여하려면 [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)에 전자 메일 요청을 보내십시오.
 
-Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/ko/docs/commerce/live-search/install#install-the-live-search-beta)를 참조하세요.
+Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta)를 참조하세요.
 
 ### IBM Sterling Order Management 시스템 통합(Private Beta)
 
@@ -79,38 +79,43 @@ Live Search Beta를 설치하려면 [Live Search 안내서](https://experiencele
 
 이 Beta에 참여하려면 [sbieber@adobe.com](mailto:sbieber@adobe.com)(으)로 전자 메일 요청을 보내십시오.
 
-### Adobe Commerce Foundation(공용 Beta)
+### Adobe Commerce Foundation(공개 Alpha/Beta)
 
-각 Adobe Commerce Foundation 베타 릴리스에는 다음 기능 영역을 포함하되, 이에 제한되지 않는 예약된 릴리스 날짜까지 Adobe Commerce 핵심 코드에 전달된 모든 변경 사항이 포함됩니다.
+각 Adobe Commerce Foundation 알파 및 베타 릴리스에는 다음 기능 영역을 포함하되, 이에 국한되지 않는 예약된 릴리스 날짜까지 Adobe Commerce 핵심 코드에 전달되는 모든 변경 사항이 포함됩니다.
 
 - 최신 보안 수정 사항
 - 성능 향상
 - GraphQL 개선 사항
 - 일반 품질 버그 수정
 - 커뮤니티 기여
-- [Adobe Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ko)와의 호환성을 지원하는 데 필요한 변경 사항
+- [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
 
 #### 명명 규칙 및 일정
 
-Adobe은 일반적으로 1년에 두 번 베타 패치를 출시합니다.
+Adobe은 일반적으로 1년에 여러 번 알파 및 베타 패치를 출시합니다.
+
+Alpha 릴리스 패키지에는 `-alphaX` 접미사가 있습니다. 예를 들어, Adobe Commerce 2.4.7 알파 릴리스 패키지는 다음 명명 규칙을 사용합니다.
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 Beta 릴리스 패키지에는 `-betaX` 접미사가 있습니다. 예를 들어 Adobe Commerce 2.4.7 베타 릴리스 패키지는 다음 명명 규칙을 사용합니다.
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-예정된 공개 베타 릴리스 날짜 목록은 [릴리스 일정](schedule.md)을 참조하세요.
+예정된 공개 알파 및 베타 릴리스 날짜는 [릴리스 일정](schedule.md)을 참조하세요.
 
-#### Beta 릴리스 액세스
+#### 액세스 해제
 
-Adobe Commerce 베타 릴리스는 다른 Adobe Commerce 패치 릴리스와 동일한 방식으로 배포됩니다. `https://repo.magento.com`의 Composer 메타패키지입니다. 소스 코드는 [GitHub](https://github.com/magento/magento2)에서 사용할 수 있습니다.
+Adobe Commerce 알파 및 베타 릴리스는 다른 Adobe Commerce 패치 릴리스와 동일한 방식으로 배포됩니다. 이는 `https://repo.magento.com`의 Composer 메타패키지입니다. 소스 코드는 [GitHub](https://github.com/magento/magento2)에서 사용할 수 있습니다.
 
 자세한 내용은 [작성기 설치 빠른 시작](../installation/composer.md)을 참조하십시오.
 
 #### 문제 보고
 
-Adobe은 베타 릴리스에 대한 표준 Adobe 지원 서비스를 제공하지 않습니다.
+Adobe은 알파 및 베타 릴리스에 대한 표준 Adobe 지원 서비스를 제공하지 않습니다.
 
-Beta 릴리스와 관련된 피드백을 제출하려면 [GitHub](https://github.com/magento/magento2)에서 [일반적인 문제 보고 흐름](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)을 참조하세요.
+알파 및 베타 릴리스와 관련된 피드백을 제출하려면 [GitHub](https://github.com/magento/magento2)의 [일반 문제 보고 흐름](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)을 따르십시오.
 
-내부 팀은 최신 Beta 릴리스와 관련하여 보고된 모든 중요한 문제를 모니터링하고 GA 릴리스 날짜 이전에 해결되도록 우선 순위를 지정합니다.
+Adobe은 최신 알파 또는 베타 릴리스에 대해 보고된 모든 중요한 문제를 모니터링하고 GA 릴리스 날짜 이전에 해결되도록 우선 순위를 지정합니다.
