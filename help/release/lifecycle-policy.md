@@ -2,7 +2,7 @@
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 5a45f2b0ad2485014abd3b807a5797f9fc82388b
+source-git-commit: 2e81a28502d369bc8903e6b9e9154e693260234d
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Adobe Commerce 2.4.4 및 후속 릴리스의 경우:
 
-- Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크리티컬 요구 사항을 지원하기 위해 Adobe은 지원 기간을 Adobe Commerce 2.4.4 이상의 GA(General Availability) 날짜부터 3년으로 확대했습니다. Adobe은 3년의 지원 기간 동안 2.4.4 이상 릴리스에 대한 품질 수정 사항을 제공합니다. 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 연락하거나 해당 버전이 여전히 품질 지원에 적합한 경우 셀프 서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을(를) 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
+- Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크리티컬 요구 사항을 지원하기 위해 Adobe은 지원 기간을 Adobe Commerce 2.4.4 이상의 GA(General Availability) 날짜부터 3년으로 확대했습니다. Adobe은 3년의 지원 기간 동안 2.4.4 이상 릴리스에 대한 품질 수정 사항을 제공합니다. 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 연락하거나 해당 버전이 여전히 품질 지원에 적합한 경우 셀프 서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을(를) 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
 
 - Adobe은 3년의 지원 기간 동안 보안 패치 릴리스를 통해 보안 수정 사항을 제공합니다.
 
@@ -41,7 +41,7 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 | Adobe Commerce 2.4.8 | 2025년 4월 8일 | 2028년 4월 11일 | 해당 사항 없음 | 8.3 및 8.4 | 11.4 |
 | Adobe Commerce 2.4.7 | 2024년 4월 9일 | 2027년 4월 9일 | 해당 사항 없음 | 8.2 및 8.3 | 10.11<sup>3</sup> |
 | Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 8월 11일<sup>2</sup> | 해당 사항 없음 | 8.1 및 8.2 | 10.11<sup>4</sup> |
-| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 9일 | 2026년 8월 11일 | 8.1 | 10.6<sup>5</sup> |
+| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 12일 | 2026년 8월 11일 | 8.1 | 10.6<sup>5</sup> |
 | Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 12일 | 2026년 4월 14일 | 8.1 | 10.6<sup>6</sup> |
 
 {style="table-layout:auto"}
