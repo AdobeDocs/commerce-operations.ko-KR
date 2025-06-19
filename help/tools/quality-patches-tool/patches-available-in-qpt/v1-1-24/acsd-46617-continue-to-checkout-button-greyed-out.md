@@ -38,7 +38,8 @@ ht-degree: 0%
 
 1. Adobe Commerce 관리자 > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]**(으)로 이동하여 다음을 설정합니다.
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
+   * &#x200B;
+
      [!UICONTROL Minimum Amount]: *2*
 
 1. [!UICONTROL Cart Price Rule] 만들기
@@ -46,7 +47,8 @@ ht-degree: 0%
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
       * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-      * 
+      * &#x200B;
+
         [!UICONTROL Discount Amount]: *92*
       * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. 가격이 $25인 제품을 만듭니다.
@@ -76,7 +78,7 @@ ht-degree: 0%
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48857:  [!DNL Page Builder](으)로 편집한 후 변경 내용을 저장할 수 없음'
-description: ACSD-48857 패치를 적용하여  [!DNL Page Builder](으)로 편집한 후 사용자가 변경 사항을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-48857:  [!DNL Page Builder] (으)로 편집한 후 변경 내용을 저장할 수 없음'
+description: ACSD-48857 패치를 적용하여  [!DNL Page Builder] (으)로 편집한 후 사용자가 변경 사항을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
 exl-id: b03cd597-8fef-4528-9699-793dc61d34da
@@ -73,7 +73,7 @@ HTML 콘텐츠 삭제화가 구현됩니다. 이렇게 하면 텍스트 편집�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

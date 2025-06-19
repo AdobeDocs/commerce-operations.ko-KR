@@ -37,34 +37,34 @@ ACSD-46519 패치는 [!UICONTROL categoryList] [!DNL GraphQL] 쿼리의 [!UICONT
 1. 다음 [!DNL GraphQL] 요청을 사용하여 [!UICONTROL product_count]&#x200B;(으)로 범주 계층 구조를 가져옵니다.
 
 <pre><code>
-{
-  categoryList(filters: { ids: { eq: "2" } }) {
+&lbrace;
+  categoryList(filters: { ids: { eq: "2" } }) &lbrace;
     id
     name
     product_count
     level
-    children {
+    children &lbrace;
       name
       product_count
       level
-      children {
+      children &lbrace;
         name
         product_count
         level
-        children {
+        children &lbrace;
           name
           product_count
           level
-          children {
+          children &lbrace;
             name
             product_count
             level
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code></pre>
 
 <u>예상 결과</u>:
@@ -76,46 +76,46 @@ ACSD-46519 패치는 [!UICONTROL categoryList] [!DNL GraphQL] 쿼리의 [!UICONT
 상위 카테고리가 고정된 카테고리인 경우 제품은 카테고리 레벨 2 및 아래쪽에 대해 0으로 표시됩니다.
 
 <pre><code>
-{
-    "data": {
-        "categoryList": [
-            {
+&lbrace;
+    "data": &lbrace;
+        "categoryList": &lbrack;
+            &lbrace;
                 "id": 2,
                 "name": "Default Category",
                 "product_count": 186,
                 "level": 1,
-                "children": [
-                    {
+                "children": &lbrack;
+                    &lbrace;
                         "name": "What's New",
                         "product_count": 0,
                         "level": 2,
                         "children": []
-                    },
-                    {
+                    &rbrace;,
+                    &lbrace;
                         "name": "Women",
                         "product_count": 0,
                         "level": 2,
-                        "children": [
-                            {
+                        "children": &lbrack;
+                            &lbrace;
                                 "name": "Tops",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            },
-                            {
+                            &rbrace;,
+                            &lbrace;
                                 "name": "Bottoms",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            }
-                        ]
-                    },
+                            &rbrace;
+                        &rbrack;
+                    &rbrace;,
                     ...
-                ]
-            }
-        ]
-    }
-}
+                &rbrack;
+            &rbrace;
+        &rbrack;
+    &rbrace;
+&rbrace;
 </code></pre>
 
 ## 패치 적용
@@ -130,7 +130,7 @@ ACSD-46519 패치는 [!UICONTROL categoryList] [!DNL GraphQL] 쿼리의 [!UICONT
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
