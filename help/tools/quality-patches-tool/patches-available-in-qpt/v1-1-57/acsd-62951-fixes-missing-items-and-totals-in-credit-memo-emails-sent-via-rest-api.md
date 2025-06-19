@@ -3,7 +3,9 @@ title: 'ACSD-62951: REST API를 통해 보낸 [!UICONTROL Credit Memo] 전자 �
 description: ACSD-62951 패치를 적용하여 주문 항목 및 합계를 포함하지 않고 [!UICONTROL Credit Memo] 전자 메일이 전송되는 Adobe Commerce 문제를 해결합니다.
 feature: REST
 role: Admin, Developer
-source-git-commit: bfefe2bbe2046bda967b0a14f238919452935400
+exl-id: e0c6d4c1-ecaf-46e7-af2d-05a148970d71
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -26,7 +28,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -66,7 +68,7 @@ REST API `POST V1/order/:orderId/refund`을(를) 통해 대변 메모를 만들 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 
 ## 관련 읽기

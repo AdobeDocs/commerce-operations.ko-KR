@@ -3,16 +3,18 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.58'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.58에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: f8473bbdedef26b291547d828e47a9ba08a5d142
+exl-id: 61bf8b82-f897-41f6-8524-5aa74c6440f1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
-# 개요: [!DNL Quality Patches Tool] (QPT) v1.1.58
+# 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.58
 
-이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.58에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.58에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.58에는 다음 패치가 포함됩니다.
 
@@ -29,4 +31,3 @@ QPT v1.1.58에는 다음 패치가 포함됩니다.
 1. **ACSD-63578**: [!UICONTROL Admin]에서 **[!UICONTROL Add to Order by SKU]**&#x200B;의 **[!UICONTROL Delete]** 단추를 클릭해도 [!DNL SKU]이(가) 제거되지 않는 문제가 해결되었습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
-

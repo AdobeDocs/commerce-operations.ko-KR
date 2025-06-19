@@ -4,16 +4,17 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: a4895d1b-e8d0-458e-81c8-4b892c116de6
-source-git-commit: 29845fd4a8c1c744aa780e60bb4154dfc3c1a02c
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
-# 개요: [!DNL Quality Patches Tool] (QPT) v1.1.55
+# 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.55
 
-이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.55에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.55에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.55에는 다음 패치가 포함됩니다.
 

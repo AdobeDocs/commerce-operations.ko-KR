@@ -3,13 +3,14 @@ title: 'ACSD-63520: 이미지 업로드 구성을 통해 업로드된 이미지�
 description: ACSD-63520 패치를 적용하여 [관리] 패널의 이미지 업로드 구성을 통해 업로드된 이미지가 구성된 최대 업로드 크기 제한을 준수하지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: 987d335f03d552763f75adb73890787abf235e66
+exl-id: 5132bfa9-813a-4623-8e02-a8801f6396e8
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63520: [!UICONTROL Image Upload Configuration]을(를) 통해 업로드된 이미지가 구성된 크기 제한을 초과합니다.
 
@@ -25,7 +26,7 @@ ACSD-63520 패치는 [!UICONTROL Images Upload Configuration]을(를) 통해 업
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 [!DNL Adobe Commerce] 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인하십시오. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 [!DNL Adobe Commerce] 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인하십시오. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -65,7 +66,7 @@ ACSD-63520 패치는 [!UICONTROL Images Upload Configuration]을(를) 통해 업
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 

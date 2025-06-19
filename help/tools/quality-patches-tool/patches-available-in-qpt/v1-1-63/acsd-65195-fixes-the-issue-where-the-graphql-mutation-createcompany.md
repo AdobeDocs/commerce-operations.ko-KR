@@ -3,13 +3,14 @@ title: 'ACSD-65195: GraphQL ''createCompany'' 돌연변이가 필수 지역이 �
 description: ACSD-65195 패치를 적용하여 영역이 필요하지 않은 국가에 GraphQL 'createCompany' 돌연변이로 인해 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
-source-git-commit: 8eb1d7f9d787ddb3b1cc619744920ab8a9914ae8
+exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65195: GraphQL `createCompany` 돌연변이가 필요한 지역이 없는 국가에 대해 오류를 반환합니다.
 
@@ -27,7 +28,7 @@ ACSD-65195 패치는 영역이 필요하지 않은 국가에 대해 [!UICONTROL 
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 

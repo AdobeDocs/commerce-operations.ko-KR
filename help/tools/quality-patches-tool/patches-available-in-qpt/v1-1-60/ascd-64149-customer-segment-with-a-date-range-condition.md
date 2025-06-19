@@ -3,13 +3,14 @@ title: 'ACSD-64149: [!UICONTROL Date range] 상태의 고객 세그먼트는 한
 description: 날짜 중 하나만 편집할 때 **[!UICONTROL Date range]** 조건을 가진 고객 세그먼트를 저장할 수 있는 Adobe Commerce 문제를 해결하려면 ACSD-64149 패치를 적용하십시오.
 feature: Customers, Admin Workspace
 role: Admin, Developer
-source-git-commit: c1c5256aee44ce65e9339cf3985e53f710fc7c8a
+exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64149: [!UICONTROL Date range] 상태의 고객 세그먼트는 한 날짜만 편집할 때 저장할 수 있습니다.
 
@@ -27,7 +28,7 @@ ACSD-64149 패치는 날짜 중 하나만 편집할 때 날짜 범위 조건이 
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 

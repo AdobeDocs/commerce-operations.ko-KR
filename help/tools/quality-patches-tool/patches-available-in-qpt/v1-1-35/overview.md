@@ -4,21 +4,22 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin
 exl-id: 5ffbade4-c95e-4b59-9262-1b141614c753
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# 개요: [!DNL Quality Patches Tool] (QPT) v1.1.35
+# 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.35
 
-이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.35에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.35에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.35에는 다음 패치가 포함됩니다.
 
 1. **ACSD-51899**: 체크아웃 배송 단계의 기본 배송 주소가 이전에 선택한 매장 픽업 주소로 자동 채워지는 문제를 해결했습니다.
-1. **ACSD-52041**: 오류 메시지: *[오류] [!DNL Page Builder]이(가) 잠금을 해제하지 않고 5초 동안 렌더링되는 문제를 해결했습니다*. [!DNL Page Builder] (으)로 편집한 콘텐츠를 저장할 때 [!DNL Chrome] 브라우저에 나타납니다.
+1. **ACSD-52041**: 오류 메시지: *[오류] [!DNL Page Builder]이(가) 잠금을 해제하지 않고 5초 동안 렌더링되는 문제를 해결했습니다*. [!DNL Page Builder]&#x200B;(으)로 편집한 콘텐츠를 저장할 때 [!DNL Chrome] 브라우저에 나타납니다.
 1. **ACSD-52095**: 제품 내보내기 후 CSV 파일에서 `manage_stock` 값이 0으로 잘못 설정된 문제를 해결했습니다.
 1. **ACSD-51358**: 종료 날짜 없이 예약된 업데이트를 제거하면 동일한 엔터티에 대해 다른 예약된 업데이트가 제거되는 문제가 해결됩니다.
 1. **ACSD-48070**: 예약된 업데이트를 편집하면 예외가 트리거되는 문제가 해결되었습니다.

@@ -3,13 +3,14 @@ title: 'ACSD-62481: [!UICONTROL Persistence]이(가) 활성화된 경우에도 �
 description: ACSD-62481 패치를 적용하여 체크아웃 중에 로그인 팝업을 사용할 때 장바구니 기능이 지속되는 Adobe Commerce 문제를 해결합니다.
 feature: Shopping Cart, Checkout
 role: Admin, Developer
-source-git-commit: 27a98c42f2c514b3dd1a2f59c140b60b7ac26592
+exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62481: *[!UICONTROL Persistence]*&#x200B;이(가) 활성화된 경우에도 장바구니가 비어 있음
 
@@ -27,7 +28,7 @@ ACSD-62481 패치는 체크아웃 중에 로그인 팝업을 사용할 때 장�
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 

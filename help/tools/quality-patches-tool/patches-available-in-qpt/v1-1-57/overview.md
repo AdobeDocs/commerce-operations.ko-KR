@@ -4,23 +4,24 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
-source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
-# 개요: [!DNL Quality Patches Tool] (QPT) v1.1.57
+# 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.57
 
-이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.57에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.57에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.57에는 다음 패치가 포함됩니다.
 
 1. **ACSD-57570**: 특정 저장소에 액세스할 수 있는 제한된 관리자가 제품이 할당된 모든 공유 카탈로그를 항상 볼 수 없거나 저장할 수 없는 고객을 볼 수 없어 시스템 불일치가 발생하는 문제를 해결했습니다.
 1. **ACSD-58325**: 유효성 검사 오류 후에도 [!UICONTROL Import] 단추를 사용할 수 있는 문제를 해결했습니다.
 1. **ACSD-59083**: [!DNL mview] 업데이트가 동시에 실행되는 경우 일부 데이터베이스 업데이트 작업으로 인해 _기본 테이블 또는 보기를 찾을 수 없음_ 오류가 발생하는 문제를 해결합니다.
-1. **ACSD-61622**: [!DNL FedEx] 계정 특정 비율이 응답에 없는 문제를 해결했습니다. ACSD-61622은(는) [[!DNL FedEx] 배송 방법 통합 마이그레이션에 기록된 수정 사항을  [!DNL SOAP] 에서 [!DNL RESTful API]](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api)(으)로 바꿉니다.
+1. **ACSD-61622**: [!DNL FedEx] 계정 특정 비율이 응답에 없는 문제를 해결했습니다. ACSD-61622은(는) [[!DNL FedEx] 배송 방법 통합 마이그레이션에 기록된 수정 사항을  [!DNL SOAP] 에서 [!DNL RESTful API]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api)&#x200B;(으)로 바꿉니다.
 1. **ACSD-61895**: 루트 범주에 *allow* 권한이 없더라도 [!DNL GraphQL] 범주가 *allow* 권한이 있는 범주를 반환하는 문제를 해결했습니다.
 1. **ACSD-62212**: [!UICONTROL Forgot Password] 전자 메일 콘텐츠가 스토어 보기의 언어로 번역되지 않는 문제를 해결했습니다.
 1. **ACSD-62481**: [!UICONTROL Persistence]을(를) 사용하도록 설정한 경우에도 고객의 장바구니가 비어 있는 문제가 해결되었습니다.

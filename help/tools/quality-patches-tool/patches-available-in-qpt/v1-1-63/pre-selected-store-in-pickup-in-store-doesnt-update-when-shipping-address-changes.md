@@ -3,13 +3,14 @@ title: 배송 주소가 변경될 때 'Pickup in Store'에서 미리 선택한 �
 description: ACSD-64753 패치를 적용하여 선택한 스토어의 서비스 반경 외부에 새 배송 주소를 입력할 때 사전 선택한 스토어가 업데이트되지 않은 Adobe Commerce 문제를 해결합니다.
 feature: Inventory
 role: Admin, Developer
-source-git-commit: 9d76014fb86fd92b2fffbf2de35b25a7f6d1cbae
+exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64753: 배송 주소가 변경될 때 &quot;Pickup in Store&quot;에서 미리 선택한 저장소가 업데이트되지 않음
 
@@ -27,7 +28,7 @@ ACSD-64753 패치는 선택한 스토어의 서비스 반경 밖에 새 배송 �
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -66,7 +67,7 @@ ACSD-64753 패치는 선택한 스토어의 서비스 반경 밖에 새 배송 �
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 

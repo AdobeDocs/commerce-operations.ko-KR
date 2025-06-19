@@ -4,21 +4,22 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin
 exl-id: f30a9554-cacf-4406-b6b4-a43d680597bc
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quality Patches Tool] (QPT) v1.1.15 개요
+# [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.15 개요
 
-이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.15에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.15에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.15에는 다음 패치가 포함됩니다.
 
 1. **MDVA-38559**: 구독이 두 개 이상인 고객에 대한 */V1/customers/search API* 오류를 수정합니다.
-1. **MDVA-40896**: 비동기 제품 벌크 API에서 *오류: TypeError: 인수 3이 Magento* 오류로 전달되었습니다.
+1. **MDVA-40896**: 비동기 제품 벌크 API에서 *오류: TypeError: 인수 3이 Magento에 전달되었습니다* 오류를 해결했습니다.
 1. **MDVA-40961**: 항목의 최소 수량이 장바구니에 이미 있는 경우 장바구니에 추가 항목을 추가할 수 없는 문제를 해결했습니다.
 1. **MDVA-43718**: 수정 사항 *소비자가 %resources에 액세스할 수 있는 권한이 없습니다.사용자 지정 통합에서 공유 카탈로그에 액세스할 때 표시되는* 오류입니다.
 1. **MDVA-44533**: 번들 하위 제품에 할인이 잘못 적용되는 문제를 해결했습니다.

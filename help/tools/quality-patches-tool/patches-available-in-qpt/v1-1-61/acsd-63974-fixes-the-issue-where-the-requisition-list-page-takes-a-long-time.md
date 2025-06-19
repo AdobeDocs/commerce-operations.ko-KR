@@ -3,13 +3,14 @@ title: 'ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 
 description: 항목이 너무 많을 때 [!UICONTROL Requisition List] 페이지를 로드하는 데 시간이 오래 걸리는 문제를 해결하려면 ACSD-63974 패치를 적용하세요.
 feature: B2B
 role: Admin, Developer
-source-git-commit: e5f8112b870e3550b4f3a9113be48428a54d454a
+exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 로드 시간을 수정합니다.
 
@@ -27,7 +28,7 @@ ACSD-63974 패치는 항목이 너무 많을 때 **[!UICONTROL Requisition List]
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 

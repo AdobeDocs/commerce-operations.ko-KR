@@ -3,13 +3,14 @@ title: 'ACSD-61805: REST API를 통해 미납 주문 상태를 업데이트한 �
 description: REST API를 통해 미납 주문 상태를 업데이트한 후 ACSD-61805 패치를 적용하여 제품이 상점 진열대에서 품절 상태로 유지되는 Adobe Commerce 문제를 해결합니다
 feature: REST, Catalog Management, Inventory
 role: Admin, Developer
-source-git-commit: abad1a2f2a1bdc2c1a4b6f821e6b02190a5ebe83
+exl-id: ff85e747-6394-43db-a02a-87b1e5e59f00
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61805: REST API를 통해 미납 주문 상태를 업데이트한 후 스토어프론트에서 재고 문제를 수정합니다
 
@@ -27,7 +28,7 @@ ACSD-61805 패치는 REST API를 통해 미납 주문 상태를 업데이트한 
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -90,7 +91,7 @@ REST API를 통해 미납 주문 상태를 업데이트한 후 상점 진열대�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 

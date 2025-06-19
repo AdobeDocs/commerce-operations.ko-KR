@@ -3,7 +3,9 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.62'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.62에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 9bf060c012fa1ddfd966d61792c46cee676a4ea8
+exl-id: be8ffedc-b589-4a30-ba9a-eed705696825
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
