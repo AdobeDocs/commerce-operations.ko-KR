@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
+source-git-commit: 883d9cd90a70dc898766f89ee4d8e8adb1583c08
 workflow-type: tm+mt
-source-wordcount: '26381'
+source-wordcount: '26682'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.66 {#v1-1-66}
+
+* **ACP2E-3789**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.9) - 미디어 ID가 제공되었을 때 [!DNL WebAPI]개의 중복된 미디어 파일을 통해 제품을 업데이트하는 문제가 해결되었습니다.
+* **ACP2E-3918**(Adobe Commerce >=2.4.5 &lt;2.4.9) - 기본 청구 주소 없이 매장 픽업을 사용하여 로그인한 회사 고객에 대한 체크아웃이 실패한 문제를 수정합니다.
+* **ACSD-65750**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - GraphQL `route` 쿼리가 Page Builder 제품 콘텐츠 유형에서 잘못된 제품을 반환하는 문제를 해결했습니다.
+* **ACSD-65775**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 동일한 항목의 여러 수량을 주문했을 때 [!DNL REST] API 주문 세부 사항이 잘못된 `base_row_total` 및 `row_total` 값을 반환하는 문제를 해결했습니다.
+* **ACSD-65777**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - `MediaGallery` GraphQL 요청의 제품 이미지 유형에 대해 `types` 필드가 누락되는 문제를 해결했습니다.
+* **ACSD-65848**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 조인을 대신 사용하는 메서드를 리팩터링하여 하위 선택을 사용하여 범주의 총 제품 수가 계산되던 문제를 해결했습니다.
+* **ACSD-65913**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - [!DNL OpenSearch]에서 가격이 같은 제품의 범주에 대해 *illegal_argument_exception* 오류가 발생하는 문제를 해결했습니다.
+* **ACSD-66041**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - `CountryID`이(가) 누락되어 아일랜드(IE) 포스트코드가 픽업 위치를 검색할 수 없는 문제를 해결했습니다.
+* **ACSD-66212**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 고객 CSV 파일을 두 번 가져오면 두 번째 및 그 이후의 시도에서 오류가 발생하는 문제를 해결합니다.
+* 버전 업데이트됨: **MDVA-12304**, **MDVA-19640**, **ACP2E-3841**, **ACSD-65100**, **ACSD-65787**, **ACP2E-3753**, **ACSD-65202**, **ACSD-65331**, **ACSD-65822**
 
 ## v1.1.65 {#v1-1-65}
 
