@@ -2,9 +2,9 @@
 title: 모듈 출력 비활성화
 description: 모듈 출력을 비활성화하는 방법에 대해 알아봅니다.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,7 @@ bin/magento cache:clean config
    ```
 
 이 예에서는 `Magento_Review` 모듈에 대한 출력이 비활성화되어 고객이 더 이상 제품을 검토할 수 없습니다.
-출력을 다시 사용하려면 값을 `0`(으)로 설정하십시오.
+
+### 모듈 출력 다시 활성화
+
+출력을 다시 사용하려면 모듈의 값을 `0`(으)로 설정하거나 `config.php` 파일에서 줄/모듈을 제거하십시오.
