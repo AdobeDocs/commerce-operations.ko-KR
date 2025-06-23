@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: 이 참조를 사용하여 Adobe Commerce 릴리스에서 테스트한 필수 소프트웨어 종속성을 식별합니다.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
+source-git-commit: 8593b3867f052ed8486d3f4eddbb060ca496ec99
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,11 @@ Commerce on Cloud의 종속성에 몇 가지 차이점이 있습니다. Adobe Co
 
 Adobe은 다음 표에 설명된 시스템 요구 사항의 조합만 지원합니다. 예를 들어 2.4.5는 MariaDB 10.4로 완전히 테스트됩니다. Adobe은 2.4.5로 업그레이드하기 전에 MariaDB 10.4로 업그레이드하는 것을 권장합니다.
 
+원활한 업그레이드 프로세스를 보장하고 배포 실패를 방지하기 위해 Adobe에서는 RabbitMQ 버전을 점진적으로 업그레이드할 것을 권장합니다. 예를 들어 버전 3.8에서 4.1로 업그레이드할 때 먼저 3.8에서 3.9로 업그레이드한 다음 3.9에서 3.10으로 업그레이드해야 합니다. 버전 3.13에 도달한 후에만 버전 4.1로 업그레이드해야 합니다.
+
 >[!BEGINTABS]
->[!TAB 클라우드의  Commerce]
+
+>클라우드의 [!TAB Commerce]
 
 [Commerce on Cloud 템플릿](https://github.com/magento/magento-cloud)은(는) 특정 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
@@ -45,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-_클라우드 인프라의 Commerce_ 안내서에서 [서비스 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=ko)을 참조하십시오.
+_클라우드 인프라의 Commerce_ 안내서에서 [서비스 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html)을 참조하십시오.
 
 >[!TAB Commerce 온-프레미스]
 
@@ -57,13 +60,13 @@ _클라우드 인프라의 Commerce_ 안내서에서 [서비스 구성](https://
 
 `memory_limit` 설정과 같은 특정 PHP 구성 설정이 있으므로 Adobe Commerce 사용 시 일반적인 문제를 방지하는 데 도움이 됩니다. [필수 PHP 설정](prerequisites/php-settings.md)을 참조하세요.
 
-클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ko)을 참조하십시오.
+클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)을 참조하십시오.
 
 ### PHP OPcache
 
 성능상의 이유로 [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php)이 활성화되어 있는지 확인하는 것이 좋습니다. OPcache는 많은 PHP 배포에서 사용할 수 있습니다. `opcache` 확장은 기본적으로 클라우드 인프라의 Commerce에 설치됩니다.
 
-온-프레미스에서 PHP OPcache가 설치되어 있는지 확인하려면 [PHP 설정](prerequisites/php-settings.md)을 참조하십시오. 성능 설정에 대한 자세한 지침은 _성능 모범 사례_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=ko#php-settings)에 대한 소프트웨어 권장 사항을 참조하십시오.
+온-프레미스에서 PHP OPcache가 설치되어 있는지 확인하려면 [PHP 설정](prerequisites/php-settings.md)을 참조하십시오. 성능 설정에 대한 자세한 지침은 _성능 모범 사례_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings)에 대한 소프트웨어 권장 사항을 참조하십시오.
 
 OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://www.php.net/manual/en/opcache.setup.php)를 참조하세요.
 
@@ -81,10 +84,11 @@ PHPUnit v9(명령줄 도구).
 
 >[!TIP]
 >
->클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ko#enable-extensions)을 참조하십시오.
+>클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions)을 참조하십시오.
 
 >[!BEGINTABS]
->[!TAB 클라우드의  Commerce]
+
+>클라우드의 [!TAB Commerce]
 
 다음 표에서는 Adobe Commerce을 클라우드 플랫폼에 배포할 때 지원되는 PHP 확장을 보여 줍니다.
 
@@ -119,7 +123,7 @@ Storefront 및 관리자:
 
 ### 메일 서버
 
-MTA(메일 전송 에이전트) 또는 SMTP 서버. 클라우드 인프라의 Commerce은 [SendGrid 이메일 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=ko)를 사용합니다.
+MTA(메일 전송 에이전트) 또는 SMTP 서버. 클라우드 인프라의 Commerce은 [SendGrid 이메일 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)를 사용합니다.
 
 ### 메모리
 
@@ -149,14 +153,14 @@ Adobe Commerce의 일부 작업에는 다음 시스템 도구가 필요합니다
 - 자체 서명된 SSL 인증서는 지원되지 않습니다.
 - TLS(전송 계층 보안) 요구 사항 - PayPal과 `repo.magento.com` 둘 다 TLS 1.2 이상이 필요합니다.
 
-클라우드 인프라의 Commerce에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [Fastly 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ko)을 참조하십시오.
+클라우드 인프라의 Commerce에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [Fastly 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)을 참조하십시오.
 
 ### Xdebug
 
 Adobe Commerce의 경우 [php_xdebug 2.5.x](https://xdebug.org/download) 이상을 사용합니다(개발 환경에만 해당, 성능에 부정적인 영향을 줄 수 있음).
 
-클라우드의 Adobe Commerce에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [Xdebug 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=ko)을 참조하십시오.
+클라우드의 Adobe Commerce에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [Xdebug 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html)을 참조하십시오.
 
 >[!NOTE]
 >
->`xdebug`에는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 액세스하는 데 영향을 줄 수 있는 알려진 문제가 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=ko)를 참조하십시오.
+>`xdebug`에는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 액세스하는 데 영향을 줄 수 있는 알려진 문제가 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html)를 참조하십시오.
