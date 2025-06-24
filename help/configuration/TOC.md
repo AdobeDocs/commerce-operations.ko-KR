@@ -2,10 +2,10 @@
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 애플리케이션 기능 및 서비스를 구성합니다.
 feature: Configuration
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 0%
    + [배포 개요](deployment/overview.md)
    + [단일 컴퓨터 배포](deployment/single-machine.md)
    + [파이프라인 배포](deployment/technical-details.md)
-   + [전제 조건](deployment/prerequisites.md)
+   + [사전 요구 사항](deployment/prerequisites.md)
    + [개발 시스템 설정](deployment/development-system.md)
    + [시스템 설정 빌드](deployment/build-system.md)
    + [프로덕션 시스템 설정](deployment/production-system.md)
    + [파일 시스템 액세스 권한](deployment/file-system-permissions.md)
-   + 예제 {#examples}
+   + 예시 {#examples}
       + [공유 구성 사용](deployment/example-shared-configuration.md)
       + [CLI 명령 사용](deployment/example-using-cli.md)
       + [환경 변수 사용](deployment/example-environment-variables.md)
@@ -37,11 +37,15 @@ ht-degree: 0%
    + [캐시 유형](cache/cache-types.md)
    + [캐시 옵션](cache/cache-options.md)
    + [L2 캐시](cache/level-two-cache.md)
-   + Redis {#redis}
+   + 레디스 {#redis}
       + [Redis 구성](cache/config-redis.md)
       + [기본 캐시에 Redis 사용](cache/redis-pg-cache.md)
       + [세션 스토리지에 Redis 사용](cache/redis-session.md)
-   + 바니시{#varnish}
+   + 밸키 {#valkey}
+      + [Valkey 구성](cache/config-valkey.md)
+      + [기본 캐시에 Valkey 사용](cache/valkey-pg-cache.md)
+      + [세션 저장소에 Valkey 사용](cache/valkey-session.md)
+   + 니스 {#varnish}
       + [니스 개요](cache/config-varnish.md)
       + [니스 설치](cache/config-varnish-install.md)
    + [웹 서버](cache/config-varnish-server.md)
@@ -127,9 +131,9 @@ ht-degree: 0%
    + [보안 크론 PHP](security/secure-cron-php.md)
    + [보안 TXT](security/security-txt.md)
    + [재킹 사용을 클릭합니다.](security/xframe-options.md)
-+ 저장소 {#storage}
++ 스토리지 {#storage}
    + [데이터베이스 프로파일러](storage/db-profiler.md)
-   + 원격 저장소 {#remote-storage}
+   + 원격 스토리지 {#remote-storage}
       + [원격 스토리지 모듈](remote-storage/remote-storage.md)
       + [AWS S3 버킷](remote-storage/remote-storage-aws-s3.md)
       + [이미지 크기 조정](remote-storage/remote-storage-image-resize.md)
@@ -146,4 +150,4 @@ ht-degree: 0%
       + [분할 데이터베이스 확인](storage/multi-master-verify.md)
       + [데이터베이스 복제](storage/multi-master-replication.md)
       + [단일 데이터베이스로 되돌리기](storage/revert-split-database.md)
-+ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
++ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
