@@ -3,9 +3,9 @@ title: 원격 스토리지용 AWS S3 버킷 구성
 description: 원격 스토리지용 AWS S3 스토리지 서비스를 사용하도록 Commerce 프로젝트를 구성합니다.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobe은 심각한 보안 위험을 초래하므로 공용 버킷의 사용을 매우 자제합니다.
+>Adobe은 심각한 보안 위험을 초래하므로 공개 버킷 사용을 매우 자제합니다.
 
 **AWS S3 어댑터로 원격 저장소를 사용하려면**:
 
@@ -43,6 +43,10 @@ ht-degree: 0%
    ```
 
 ## Nginx 구성
+
+>[!NOTE]
+>
+>이 접근 방식은 클라우드 인프라 프로젝트의 Adobe Commerce에는 적용되지 않습니다. 클라우드 인프라의 Adobe Commerce에서 Nginx를 구성할 수 없습니다. 자세한 내용은 [클라우드별 설명서](cloud-support.md)를 참조하세요.
 
 Nginx에서 `proxy_pass` 지시문을 사용하여 인증을 수행하려면 추가 구성이 필요합니다. `nginx.conf` 파일에 다음 프록시 정보를 추가하십시오.
 
