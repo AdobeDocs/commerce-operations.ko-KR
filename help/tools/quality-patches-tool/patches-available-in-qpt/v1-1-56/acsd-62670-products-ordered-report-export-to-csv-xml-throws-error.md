@@ -1,20 +1,20 @@
 ---
-title: 'ACSD-62670: [!UICONTROL Ordered Products Report]을(를) CSV로 내보내고 XML로 내보내면 오류가 발생합니다.'
+title: 'ACSD-62670: [!UICONTROL Ordered Products Report] CSV로 내보내기 및 XML에서 404 오류를 반환합니다.'
 description: ACSD-62670 패치를 적용하여 [!UICONTROL Ordered Products Report]을(를) CSV 및 XML로 내보내면 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Reporting, Admin Workspace, Data Import/Export
 role: Admin, Developer
 exl-id: 99d77ddd-4fb3-4eda-8771-62c0e25f49d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 3469da56c15499de4ceb5313c3cc2dfde0f0771c
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
 
 # ACSD-62670: *[!UICONTROL Ordered Products Report]*&#x200B;을(를) CSV로 내보내고 XML로 내보내면 오류가 발생합니다.
 
-ACSD-62670 패치는 *[!UICONTROL Ordered Products Report]*&#x200B;을(를) CSV 및 XML로 내보내면 오류가 발생하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko) 1.1.56이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62670입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-62670 패치는 *[!UICONTROL Ordered Products Report]*&#x200B;을(를) CSV 및 XML로 내보내면 오류가 발생하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.56이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62670입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -28,7 +28,7 @@ ACSD-62670 패치는 *[!UICONTROL Ordered Products Report]*&#x200B;을(를) CSV 
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -52,7 +52,7 @@ ACSD-62670 패치는 *[!UICONTROL Ordered Products Report]*&#x200B;을(를) CSV 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 
