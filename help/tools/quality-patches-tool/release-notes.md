@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.67 {#v1-1-67}
+
+* **ACSD-65935**(Adobe Commerce >=2.4.4 &lt;2.4.8) - 제품이 삭제될 때 `customerOrders` GraphQL 쿼리에서 내부 서버 오류를 반환하는 문제를 해결했습니다.
+* **ACSD-66049**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5-p3 &lt;2.4.6) || >=2.4.7 &lt;2.4.9) - ICU 라이브러리 버전으로 인해 영어가 아닌 상점에서 잘못된 가격이 표시되는 문제를 해결합니다.
+* **ACSD-66084**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.9) - 완전히 할인된 항목의 경우 `row_total_incl_tax`이(가) 0.00 대신 주문 API 응답에서 0에 가까운 잔차 값으로 반환되는 문제를 해결했습니다.
+* **ACSD-66118**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9의 경우) - 구성 캐시를 새로 고치지 않으면 저장소 보기 코드를 업데이트하면 [!UICONTROL Design Configuration] 설정이 지워지는 문제를 해결합니다.
+* **ACSD-66139**(Adobe Commerce >=2.4.7 &lt;2.4.8) - 존재하지 않거나 비활성 장바구니에 대한 주문을 넣기 위해 GraphQL에서 호출하는 경우 *정의되지 않음* 오류 코드를 반환하는 문제를 해결했습니다.
+* **ACSD-66301**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6-p9 &lt;2.4.7 || >=2.4.7-p4 &lt;2.4.8) - 제품을 주문에서 관리자의 장바구니로 다시 이동하면 수량이 일치하지 않는 문제가 해결되었습니다.
+* **ACSD-66434**(Adobe Commerce >=2.4.6-p8 &lt;2.4.9) - 회사 GraphQL 쿼리에서 고객 ID가 누락된 문제를 해결합니다.
+* **ACSD-66441**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.8) - 다중 스토어 설정에 대해 구성 가능한 제품을 색인화할 때 스토어프론트에 계층 탐색 시 잘못된 색인 데이터가 표시되는 문제를 해결했습니다.
+* **AC-14984**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6-p10 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - RabbitMQ SSL 연결에서 *잘못된 프레임 유형 21* 오류가 수정되었습니다.
+* **AC-14985**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - TLS가 활성화된 외부 `smtp` 서버를 사용할 때 전자 메일이 전송되지 않는 문제를 해결했습니다.
+* 업데이트된 버전: **MDVA-12304**, **ACSD-47920**, **ACSD-56447**, **ACSD-61845**, **ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
 
