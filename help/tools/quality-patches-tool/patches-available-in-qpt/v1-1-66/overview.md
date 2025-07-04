@@ -3,9 +3,10 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.66'
 description: 이 하위 섹션은  [!DNL Quality Patches Tool] (QPT) v1.1.66에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 04a8de460c3d75d4438b0a460cd4edf50f4726f6
+exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
+source-git-commit: 31a6b8296681a8f8aa23aa941c0637510b330cdc
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.66에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.66에는 다음 패치가 포함됩니다.
-1. **ACP2E-3789**: 미디어 ID가 제공되었을 때 `WebAPI`개의 중복된 미디어 파일을 통해 제품을 업데이트합니다.
+1. **ACP2E-3789**: WebAPI를 통해 제품 업데이트에 미디어 파일이 중복되었습니다.
 1. **ACP2E-3918**: 기본 청구 주소 없이 매장 픽업을 사용하여 로그인한 회사 고객을 체크아웃하지 못했습니다.
 1. **ACSD-65750**: GraphQL &quot;route&quot; 쿼리에서 Page Builder 제품 콘텐츠 형식의 순서가 잘못된 제품을 반환했습니다.
 1. **ACSD-65775**: 동일한 항목의 여러 수량을 주문했을 때 REST API 주문 세부 사항에서 잘못된 `base_row_total` 및 `row_total` 값을 반환했습니다.

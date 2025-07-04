@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: d097f4d48582b1ad7bbdacfe9c0621d72d12c671
+source-git-commit: 0663fb96c7d975b22e5445943f7dc9a435bd7bd1
 workflow-type: tm+mt
-source-wordcount: '7776'
+source-wordcount: '7786'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce에 대한 관리 경고: CPU 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 품질 패치 도구 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
    - 품질 패치 도구에서 사용할 수 있는 패치 {#patches-available-in-qpt}
@@ -317,7 +317,7 @@ ht-degree: 0%
       - V1.1.27 {#v1-1-27}
          - [개요](quality-patches-tool/patches-available-in-qpt/v1-1-27/overview.md)
          - [ACSD-48404: 카테고리 페이지 매김 = yes로 인해 오류가 발생함](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48404-fixes-the-issue-where-remember-category-pagination-yes-causes-an-error.md)
-         - [ACSD-48634: [!DNL Google Analytics Content Experiments] 사용 시  [!DNL JS] 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
+         - [ACSD-48634: [!DNL JS] 사용 시  [!DNL Google Analytics Content Experiments] 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
          - [ACSD-49042: 무한 주문된 제품은 상점에서 주문할 수 없습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-49042-product-with-infinite-backorder-cant-be-ordered-from-storefront.md)
          - [ACSD-47908: 체크아웃 시 0보다 작거나 같은 값은 오류가 발생할 수 있습니다](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-47908-a-value-less-than-or-equal-to-0-is-expected-error-during-checkout.md)
          - [ACSD-48059: 판매자는 범주 속성에 대한 규칙별 일치 제품을 저장할 수 없습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48059-merchants-cannot-save-the-match-product-by-rule-for-categories-attribute.md)
@@ -438,7 +438,7 @@ ht-degree: 0%
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.35](quality-patches-tool/patches-available-in-qpt/v1-1-35/overview.md)
          - [ACSD-52095: csv를 내보내는 동안 재고 값 관리가 잘못됨](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52095-manage-stock-value-wrong-while-exporting-csv.md)
          - [ACSD-51358: 예약 업데이트가 누락되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51358-schedule-updates-are-missing.md)
-         - [ACSD-51149: [!UICONTROL Catalog Permissions]이(가) 활성화된 예약된 [!UICONTROL ImportExport]이(가) 인덱서를 무효화합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51149-scheduled-importexport-enabled-catalog-permissions-invalidates-indexers.md)
+         - [ACSD-51149: [!UICONTROL ImportExport]이(가) 활성화된 예약된 [!UICONTROL Catalog Permissions]이(가) 인덱서를 무효화합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51149-scheduled-importexport-enabled-catalog-permissions-invalidates-indexers.md)
          - [ACSD-50815: 단순 제품의 10진수 수량은 새 번들 제품 옵션에 사용할 수 없습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-50815-decimal-quantity-for-simple-product-cannot-be-used-for-new-bundle-product-option.md)
          - [ACSD-52202: 비기본 재고가 순번 0으로 설정된 경우 기본 재고 판매 가능 수량이 오류로 0으로 변경됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52202-default-stock-salable-qty-changes-to-0-in-error.md)
          - [ACSD-51845: 비동기 벌크 API를 통해 계층 가격 및 다른 속성 세트로 후속 제품을 업데이트할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51845-cant-update-subsequent-products-with-tier-prices.md)
@@ -460,7 +460,7 @@ ht-degree: 0%
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.36](quality-patches-tool/patches-available-in-qpt/v1-1-36/overview.md)
          - [ASCD-52736: [!UICONTROL Cart Price Rule]이(가) 예상대로 작동하지 않습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52736-cart-price-rule-doesnt-work-as-expected.md)
          - [ACSD-53239: 인벤토리 인덱서가 [!UICONTROL Update on Schedule] 모드에서 모든 캐시를 정리합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53239-inventory-indexer-cleans-all-caches.md)
-         - [ACSD-50887: [!UICONTROL Use in Search] 옵션 없이 [!UICONTROL Use in Search Results Layered Navigation]을(를) 예로 설정합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-50887-product-attribute-use-in-search-results-layered-navigation-set-to-yes.md)
+         - [ACSD-50887: [!UICONTROL Use in Search Results Layered Navigation] 옵션 없이 [!UICONTROL Use in Search]을(를) 예로 설정합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-50887-product-attribute-use-in-search-results-layered-navigation-set-to-yes.md)
          - [ACSD-51846:  [!DNL REST API] 페이로드 수준의 유효성을 검사하지 못함](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51846-internal-error-as-levels-of-rest-api-payload-are-not-validated.md)
          - [ACSD-53176: 이(가) 조건 중 하나인 제품 규칙이 일치하지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53176-product-rule-with-is-one-of-condition-do-not-match.md)
          - [ACSD-47875: 재고 관리를 사용하여 스토어 보기 범위의 장바구니에 제품을 추가할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
@@ -556,7 +556,7 @@ ht-degree: 0%
          - [ACSD-54885: 관리자가 고객으로 로그인할 때 여러 주소를 체크 아웃하는 동안 예외 발생](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54885-exception-during-multiple-address-checkout.md)
          - [ACSD-53309: 사용자 지정 옵션 및 &#39;[!UICONTROL Regular Price]&#39; 레이블에 대한 세금 응용 프로그램이 불완전합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53309-incomplete-tax-application-for-customizable-options.md)
          - [ACSD-53790: 단일 제품에 대한 여러 RMA는 Rest API를 통해 만들 수 있습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
-         - [ACSD-54739: [!UICONTROL Related Product Rules]에 대해 [!UICONTROL Product Stock] 상태가 적용되지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
+         - [ACSD-54739: [!UICONTROL Product Stock]에 대해 [!UICONTROL Related Product Rules] 상태가 적용되지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
          - [ACSD-54983: GraphQL을 사용하는 회사 사용자 UID을 비활성 사용자와 함께 사용할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
       - v1.1.44 {#v1-1-44}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.44](quality-patches-tool/patches-available-in-qpt/v1-1-44/overview.md)
@@ -595,12 +595,12 @@ ht-degree: 0%
       - v1.1.48 {#v1-1-48}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.48](quality-patches-tool/patches-available-in-qpt/v1-1-48/overview.md)
          - [ACSD-57315: 가져오기 단추를 클릭할 때마다  [!DNL PayPal Payflow Pro] 에 새 트랜잭션이 만들어집니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
-         - [[!DNL ACSD-56635: 계정 공유를 Global] (으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
+         - [ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          - [ACSD-57337: 액세스 제한이 있는 관리 사용자가 회사를 볼 수 있음](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          - [ACSD-57394:  [!DNL GraphQL]의 여러 정렬 필드를 기준으로 한 제품 정렬이 잘못되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          - [ACSD-56546: 구성 및 번들 제품이 상점 앞에 품절로 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          - [ACSD-56741: 사용자 지정 MySQL 트리거로 데이터베이스 설정 오류 문제 해결](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger.md)
-         - [ACSD-55566:  [!DNL GraphQL] 응답에 내부 서버 오류가 발생하여 [!UICONTROL mergeCart] 돌연변이가 실패합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
+         - [ACSD-55566: [!UICONTROL mergeCart]응답에 내부 서버 오류가 발생하여  [!DNL GraphQL]  돌연변이가 실패합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
          - [ACSD-58008: 종료 날짜를 비어 있는 것으로 편집하면 일정 업데이트가 사라짐](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          - [ACSD-57854: GraphQL 응답에 범주 집계에 나열할 수 없는 비활성화된 범주가 포함되어 있습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories.md)
          - [ACSD-57565: 주문 대시보드에 잘못된 주문 정보가 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
@@ -615,7 +615,7 @@ ht-degree: 0%
          - [ACSD-58739: 부분 리인덱싱에서 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          - [ACSD-57846: 필터를 사용하여 GraphQL 제품을 검색하면 결과가 반환되지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          - [ACSD-58054: 비활성 고객을 위한 API 토큰 생성](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
-         - [ACSD-57045: [!UICONTROL Hierarchy]에서 [!UICONTROL Website Root]을(를) 선택 취소한 후 URL 재작성으로 인해 무한 페이지 루프가 발생합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
+         - [ACSD-57045: [!UICONTROL Website Root]에서 [!UICONTROL Hierarchy]을(를) 선택 취소한 후 URL 재작성으로 인해 무한 페이지 루프가 발생합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          - [ACSD-58446: GraphQL을 통해 하위 사용자 또는 팀이 있는 팀을 삭제하면 알 수 없는 오류 메시지가 표시됩니다](quality-patches-tool/patches-available-in-qpt/v1-1-49/ascd-58446-deleting-team-with-child-users-via-graphql-gives-error.md)
          - [ACSD-58375: YouTube API 키가 잘못 구성되면 스토어 보기 수준에서 비디오를 추가할 때 오류가 발생합니다](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error.md)
       - v1.1.50 {#v1-1-50}
@@ -744,7 +744,7 @@ ht-degree: 0%
          - [ACSD-48570: URL의 스토어 코드에서 관리자 재설정 암호 링크 문제 해결](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: 구성 가능한 제품에 대한 특별 가격이 상점 앞에 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: empty [!DNL GraphQL] 요청을 제출할 때 &quot;구문 오류: 예기치 않은 &lt; EOF >&quot; 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
-         - [ACSD-63578: [!UICONTROL Add to Order by SKU]에서 [!UICONTROL Delete] 아이콘을 클릭해도 SKU가 제거되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
+         - [ACSD-63578: [!UICONTROL Delete]에서 [!UICONTROL Add to Order by SKU] 아이콘을 클릭해도 SKU가 제거되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: REST API를 사용하여 제품을 만들 때 날짜 및 시간 필드의 기본값이 설정되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
          - [MDVA-39305-V3:  [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
          - [ACSD-63572: 인덱서 프로세스가 종료되면 카탈로그 인덱서 임시 테이블이 정리되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
@@ -757,7 +757,7 @@ ht-degree: 0%
          - [ACSD-64113:  [!DNL Media Gallery]을(를) 통해 높이보다 작은 너비로 이미지를 업로드하는 동안 관리자 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
          - [ACSD-64212: 주문을 한 후  [!DNL GraphQL] 을(를) 통해 만든 고객 계정에 주문이 연결되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793: 가져오기 프로세스가 서로 다른 브라우저 탭에서 서로 간섭합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
-         - [ACSD-63574:  [!DNL Page Builder] 을(를) 통해 차단할 [!UICONTROL Bundle Product] 목록을 추가하면 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
+         - [ACSD-63574: [!UICONTROL Bundle Product]을(를) 통해 차단할  [!DNL Page Builder]  목록을 추가하면 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
       - v1.1.60 {#v1-1-60}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: [!UICONTROL Select All] 기능을 확인하고 제품 범주 팝업의 페이지 매김 및 레코드 수를 개선합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
@@ -772,7 +772,7 @@ ht-degree: 0%
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] 페이지가 수천 개의 제품 특성을 사용하여 느리게 로드됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
          - [ACSD-64431: 요청에 쿠폰 코드가 있는 &quot;placeOrder&quot; 돌연변이로 인해 내부 서버 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684: 쉼표가 1,000(1,000)로 인해 999를 초과하는 값의 기프트 카드를 저장할 때 유효성 검사 오류 발생](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
-         - [ACSD-63883: [!UICONTROL Requisition List]에 대한  [!DNL GraphQL] 응답의 잘못된 items_count를 수정하고 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
+         - [ACSD-63883:  [!DNL GraphQL] 에 대한 [!UICONTROL Requisition List]응답의 잘못된 items_count를 수정하고 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: MAGE_INDEXER_THREADS_COUNT가 설정되면 indexer_update_all_views cron 실행이 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
          - [ACSD-64467: 스토어 보기 수준에서 카테고리 설명을 저장한 후 WYSIWYG 편집기가 비어 있음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 로드 시간을 수정합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
@@ -796,7 +796,7 @@ ht-degree: 0%
          - [ACSD-65684: B2B 1.5.2에서 Magento_Company를 업그레이드하는 작업은 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
          - [ACSD-65540: company_structure 업데이트에 REGEXP_LIKE 함수가 누락되어 SQL 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
          - [ACSD-63139: 제품 속성에 수천 개의 옵션 값이 포함된 경우 제품 내보내기가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
-         - [ACSD-65100: [!UICONTROL Media Gallery Image Optimization] 구성에서 [!UICONTROL Maximum Width] 및 [!UICONTROL Maximum Height] 값을 제거하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
+         - [ACSD-65100: [!UICONTROL Maximum Width] 구성에서 [!UICONTROL Maximum Height] 및 [!UICONTROL Media Gallery Image Optimization] 값을 제거하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
          - [ACSD-65127: 프로덕션 모드에서 JavaScript 축소를 수행하면 브라우저에  [!DNL TinyMCE] 6 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser.md)
          - [ACP2E-3838: [!DNL Page Builder] CORS 오류로 인해 프로덕션 모드의 관리 패널에서 변경 사항이 저장되지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
          - [ACSD-65787: 테이블 데이터에 정의되지 않은 배열 키 &quot;column&quot; 때문에 스키마 생성 또는 업데이트 중 SchemaBuilder가 충돌합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
@@ -812,6 +812,7 @@ ht-degree: 0%
          - [ACSD-66093: 게스트 고객 이름 필드에서 잘못된 주문 이메일을 유발하는 이메일 입력을 허용합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
       - v1.1.66 {#v1-1-66}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+         - [ACP2E-3789: WebAPI를 통해 제품 업데이트에 중복되는 미디어 파일](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
@@ -859,6 +860,6 @@ ht-degree: 0%
       - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
       - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
    - 리소스 {#resources}
-      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ko)
+      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
