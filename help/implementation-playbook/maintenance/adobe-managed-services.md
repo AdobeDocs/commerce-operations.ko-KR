@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Adobe Managed Services이 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -39,20 +39,21 @@ Adobe Managed Services은 온-프레미스 및 관리되지 않는 클라우드 
 
 | 기능 | Adobe Commerce 온-프레미스 | 클라우드의 Adobe Commerce | Managed Services의 Adobe Commerce |
 |---------|---------------------------|-------------------------|-----------------------------------|
-| Adobe 엔터프라이즈 소프트웨어 | ✓ | ✓ | ✓ |
-| 보안 및 전용 클라우드 인프라 | | ✓ | ✓ |
-| 향상된 문제 서비스 수준 타겟 | | P1: 1시간 | P1: 15분 |
-| 서지 용량 모니터링 및 응답 | | | ✓ |
-| 인프라 보안 | | | ✓ |
-| 인프라 수준 99.99% SLA | | | ✓ |
-| 애플리케이션 수준 99.9% SLA | | | |
-| 지정된 인프라 전문가 리소스(고객 성공 엔지니어) | | | |
-| 계획된 이벤트 관리 | | | |
-| 맞춤화된 사이트 모니터링 및 맞춤화된 Runbook | | | |
-| 업그레이드 및 패치 배포 지원 | | | |
-| Go-Live 프로세스 조정 | | | |
-| 전담 에스컬레이션 관리 | | | |
-| 애플리케이션 모니터링 및 지원 | | | |
+| Adobe의 엔터프라이즈 소프트웨어 | ✓ | ✓ | ✓ |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| 보안 및 전용 클라우드 인프라 | | ✓ P1: 1시간 | ✓ P1: 15분 |
+| 문제 서비스 수준 목표 향상 | | ✓ | ✓ |
+| 서지 용량 모니터링 및 대응 | | ✓ | ✓ |
+| 인프라 보안 | | ✓ | ✓ |
+| 인프라 수준 99.99% SLA | | ✓ | ✓ |
+| 애플리케이션 수준 99.9% SLA | | | ✓ |
+| 지정된 인프라 전문가 리소스(고객 성공 엔지니어) | | | ✓ |
+| 계획된 이벤트 관리 | | | ✓ |
+| 맞춤화된 사이트 모니터링 및 맞춤화된 Runbook | | | ✓ |
+| 업그레이드 및 패치 배포 지원 | | | ✓ |
+| Go-Live 프로세스 조정 | | | ✓ |
+| 전담 에스컬레이션 관리 | | | ✓ |
+| 애플리케이션 모니터링 및 지원 | | | ✓ |
 
 ## 역할 및 책임
 
@@ -433,7 +434,7 @@ Adobe은 Managed Services 시스템의 프로비저닝, 개발, 스테이징 및
   </tr>
   <tr>
     <td rowspan="3">업그레이드 실행</td>
-    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ] (스테이징 및 프로덕션)</td>
+    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ](스테이징 및 프로덕션)</td>
     <td></td>
     <td></td>
     <td>Owner<br />CSE가 인프라 서비스 업그레이드를 조정합니다.<br />CSE에서 업그레이드를 위해 전화 회의 이벤트를 예약합니다.<br />CSE는 프로덕션에서 스테이징으로 데이터 마이그레이션을 지원합니다.</td>
