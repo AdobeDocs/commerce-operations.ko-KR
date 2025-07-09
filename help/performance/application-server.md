@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server를 사용하면 Adobe Commerce에서 Commerce GraphQL API 요청 중 상태를 유지할 수 있습니다. Swool Extension에 구축된 GraphQL Application Server는 요청 처리를 처리하는 작업자 스레드를 사용하는 프로세스로 작동합니다. GraphQL Application Server는 GraphQL API 요청 중 부트스트랩된 애플리케이션 상태를 보존하여 요청 처리 및 전반적인 제품 성능을 향상시킵니다. API 요청의 효율성이 훨씬 향상되었습니다.
 
-GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
+GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ git push
 
 >[!NOTE]
 >
->루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
+>루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
 
 ### 클라우드 프로젝트에 대한 지원 확인
 
