@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce 배포에서 GraphQL Application Server를 활성화하려면 다음 지침을 따르십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
+source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server를 사용하면 Adobe Commerce에서 Commerce GraphQL API 요청 중 상태를 유지할 수 있습니다. Swool Extension에 구축된 GraphQL Application Server는 요청 처리를 처리하는 작업자 스레드를 사용하는 프로세스로 작동합니다. GraphQL Application Server는 GraphQL API 요청 중 부트스트랩된 애플리케이션 상태를 보존하여 요청 처리 및 전반적인 제품 성능을 향상시킵니다. API 요청의 효율성이 훨씬 향상되었습니다.
 
-GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
+GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
 
 >[!NOTE]
 >
->GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [원격 저장소](../configuration/remote-storage/cloud-support.md)에 대해 [!DNL AWS S3]을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
+>GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [!DNL AWS S3]원격 저장소[에 대해 ](../configuration/remote-storage/cloud-support.md)을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
 
 ## 아키텍처
 
@@ -58,7 +58,7 @@ Pro 프로젝트에서 Application Server 기능을 활성화한 후 GraphQL App
 1. Commerce Cloud 프로젝트를 복제합니다.
 1. 필요한 경우 &#39;application-server/nginx.conf.sample&#39; 파일에서 설정을 조정합니다.
 1. `project_root/.magento.app.yaml` 파일의 활성 &#39;웹&#39; 섹션을 완전히 주석 처리하십시오.
-1. GraphQL Application Server `start` 명령이 포함된 `project_root/.magento.app.yaml` 파일에서 다음 &#39;웹&#39; 섹션 구성의 주석 처리를 제거하십시오.
+1. GraphQL Application Server `project_root/.magento.app.yaml` 명령이 포함된 `start` 파일에서 다음 &#39;웹&#39; 섹션 구성의 주석 처리를 제거하십시오.
 
    ```yaml
    web:
@@ -112,29 +112,154 @@ git push
        upstream: "application-server:http"
    ```
 
+1. `files` 파일에서 `.magento/services.yaml` 섹션의 주석 처리를 제거합니다.
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. `TEMPORARY SHARED MOUNTS` 파일에서 탑재 구성의 `.magento.app.yaml` 부분에 대한 주석 처리를 제거합니다.
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. 업데이트된 파일을 git 인덱스에 추가합니다.
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. 변경 내용 커밋:
+1. 변경 사항을 커밋하고 배포를 트리거하도록 푸시합니다.
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. SSH를 사용하여 원격 클라우드 환경(_앱_ not`application-server`)에 로그인합니다.
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. 로컬 마운트의 데이터를 공유 마운트로 동기화합니다.
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. `DEFAULT MOUNTS` 파일에서 탑재 구성의 `TEMPORARY SHARED MOUNTS` 및 `.magento.app.yaml` 부분을 주석 처리합니다.
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. `OLD LOCAL MOUNTS` 파일에서 탑재 구성의 `SHARED MOUNTS` 및 `.magento.app.yaml` 부분에 대한 주석 처리를 제거합니다.
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. 업데이트된 파일을 git 인덱스에 추가하고, 변경 사항을 커밋하고, 푸시를 수행하여 배포를 트리거합니다.
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. `*_old` 디렉터리의 파일이 실제 디렉터리에 있는지 확인하십시오.
+
+1. 이전 로컬 마운트를 정리합니다.
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. `OLD LOCAL MOUNTS` 파일에서 탑재 구성의 `.magento.app.yaml` 부분을 주석 처리합니다.
+
+   ```yaml
+   #"var_old": "shared:files/var"
+   #"app/etc_old": "shared:files/etc"
+   #"pub/media_old": "shared:files/media"
+   #"pub/static_old": "shared:files/static"
+   ```
+
+1. 업데이트된 파일을 git 인덱스에 추가하고, 변경 사항을 커밋하고, 푸시를 수행하여 배포를 트리거합니다.
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
->루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
-
-### 스타터 프로젝트 배포
-
-활성화 [단계](#before-you-begin-a-cloud-starter-deployment)를 완료한 후 변경 내용을 Git 저장소에 푸시하여 GraphQL 애플리케이션 서버를 배포합니다.
-
-```bash
-git push
-```
+>루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
 
 ### 클라우드 프로젝트에 대한 지원 확인
 
@@ -206,7 +331,7 @@ GraphQL Application Server를 로컬로 실행하려면 Swool 확장 프로그�
 pecl install swoole
 ```
 
-설치하는 동안 Adobe Commerce은 `openssl`, `mysqlnd`, `sockets`, `http2` 및 `postgres`에 대한 지원을 사용하도록 설정하는 프롬프트를 표시합니다. `postgres`을(를) 제외한 모든 옵션에 대해 `yes`을(를) 입력하십시오.
+설치하는 동안 Adobe Commerce은 `openssl`, `mysqlnd`, `sockets`, `http2` 및 `postgres`에 대한 지원을 사용하도록 설정하는 프롬프트를 표시합니다. `yes`을(를) 제외한 모든 옵션에 대해 `postgres`을(를) 입력하십시오.
 
 ### Swool 설치 확인
 
@@ -289,7 +414,7 @@ GraphQL Application Server가 실행 중인지 확인하는 추가 방법은 다
 
 ### GraphQL 요청이 처리 중인지 확인
 
-GraphQL Application Server는 처리하는 각 요청에 값 `graphql_server`이(가) 있는 `X-Backend` 응답 헤더를 추가합니다. GraphQL Application Server에서 요청을 처리했는지 여부를 확인하려면 이 응답 헤더를 확인합니다.
+GraphQL Application Server는 처리하는 각 요청에 값 `X-Backend`이(가) 있는 `graphql_server` 응답 헤더를 추가합니다. GraphQL Application Server에서 요청을 처리했는지 여부를 확인하려면 이 응답 헤더를 확인합니다.
 
 ### 확장 및 사용자 지정 호환성 확인
 
@@ -322,7 +447,7 @@ GraphQL Application Server 비활성화 절차는 서버가 온-프레미스 또
 
 ### GraphQL 애플리케이션 서버 비활성화(온-프레미스)
 
-1. GraphQL Application Server를 사용하도록 설정할 때 추가한 `nginx.conf` 파일의 `/graphql` 섹션을 주석 처리합니다.
+1. GraphQL Application Server를 사용하도록 설정할 때 추가한 `/graphql` 파일의 `nginx.conf` 섹션을 주석 처리합니다.
 1. nginx를 다시 시작합니다.
 
 GraphQL 애플리케이션 서버를 비활성화하는 이 방법은 성능을 빠르게 테스트하거나 비교하는 데 유용할 수 있습니다.
@@ -354,7 +479,7 @@ GraphQL Application Server가 비활성화된 후:
 
 * **초기화 메시지** 전에 형식화된 속성 $x에 액세스하면 안 됩니다. 이 유형의 메시지가 실패하면 지정된 속성이 생성자에 의해 초기화되지 않았음을 나타냅니다. 이는 객체가 처음 구성된 후에는 사용할 수 없기 때문에 발생하는 시간적 결합의 형태이다. 속성에서 데이터를 검색하는 Collector가 PHP 반사 기능을 사용하기 때문에 속성이 비공개인 경우에도 이러한 결합이 발생합니다. 이 경우, 시간적 결합을 피하고 변경 가능한 상태를 피하도록 클래스를 리팩터링해 보십시오. 리팩터링으로 오류가 해결되지 않으면 속성 형식을 null 허용 형식으로 변경하여 null로 초기화할 수 있습니다.  속성이 배열인 경우 속성을 빈 배열로 초기화해 보십시오.
 
-`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`을(를) 실행하여 `GraphQlStateTest` 실행
+`GraphQlStateTest`을(를) 실행하여 `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php` 실행
 
 ### ResetAfterRequestTest
 
@@ -366,7 +491,7 @@ GraphQL Application Server가 비활성화된 후:
 
 * **초기화 메시지** 전에 형식화된 속성 $x에 액세스하면 안 됩니다. 이 문제는 `GraphQlStateTest`에서도 발생합니다.
 
-  `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`을(를) 실행하여 `ResetAfterRequestTest`을(를) 실행합니다.
+  `ResetAfterRequestTest`을(를) 실행하여 `vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`을(를) 실행합니다.
 
 ### 기능 테스트
 
