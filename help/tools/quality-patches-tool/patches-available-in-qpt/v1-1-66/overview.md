@@ -4,9 +4,9 @@ description: 이 하위 섹션은  [!DNL Quality Patches Tool] (QPT) v1.1.66에�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 31a6b8296681a8f8aa23aa941c0637510b330cdc
+source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ QPT v1.1.66에는 다음 패치가 포함됩니다.
 1. **ACP2E-3789**: WebAPI를 통해 제품 업데이트에 미디어 파일이 중복되었습니다.
 1. **ACP2E-3918**: 기본 청구 주소 없이 매장 픽업을 사용하여 로그인한 회사 고객을 체크아웃하지 못했습니다.
 1. **ACSD-65750**: GraphQL &quot;route&quot; 쿼리에서 Page Builder 제품 콘텐츠 형식의 순서가 잘못된 제품을 반환했습니다.
-1. **ACSD-65775**: 동일한 항목의 여러 수량을 주문했을 때 REST API 주문 세부 사항에서 잘못된 `base_row_total` 및 `row_total` 값을 반환했습니다.
+1. **ACSD-65775**: 여러 수량에 대한 REST API 주문 세부 정보에 잘못된 `base_row_total` 및 `row_total` 값이 있습니다.
 1. **ACSD-65777**: `MediaGallery` GraphQL 요청에서 제품 이미지 형식에 대한 &quot;types&quot; 필드가 누락되었습니다.
 1. **ACSD-65848**: 관리자의 범주 로드 속도가 매우 느립니다.
 1. **ACSD-65913**: OpenSearch에서 가격이 같은 제품의 범주에 대해 `illegal_argument_exception`을(를) throw했습니다.
