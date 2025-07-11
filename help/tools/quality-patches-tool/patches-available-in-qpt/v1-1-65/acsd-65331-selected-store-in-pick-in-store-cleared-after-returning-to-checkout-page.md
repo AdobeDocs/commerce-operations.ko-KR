@@ -78,11 +78,11 @@ ACSD-65331 패치는 사용자가 반복적으로 체크아웃 페이지로 돌�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* [!DNL Quality Patches Tool] 안내서의 Adobe Commerce 또는 Magento Open Source 온-프레미스: [**** > 사용량][!DNL Quality Patches Tool]**(/help/tools/quality-patches-tool/usage.md).
+* [!DNL Quality Patches Tool] 안내서의 Adobe Commerce 또는 Magento Open Source 온-프레미스: [**&#x200B;** > 사용량][!DNL Quality Patches Tool]**(/help/tools/quality-patches-tool/usage.md).
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용]**(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]**에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool]**: 도구 안내서의 품질 패치용 셀프서비스 도구]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [[!DNL Quality Patches Tool]&#x200B;**: 도구 안내서의 품질 패치용 셀프서비스 도구]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
