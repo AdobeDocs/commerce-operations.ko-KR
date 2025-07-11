@@ -35,7 +35,7 @@ Adobe Commerce에는 두 가지 유형의 인덱서 모드가 있습니다. [!UI
 사이트 성능을 극대화하려면 색인화에 대한 다음 모범 사례를 따르십시오.
 
 - 색인 구성을 검토합니다.
-- 자주 업데이트되고 트래픽이 많은 사이트 및 대규모 사이트에 대해 인덱서를 _[!UICONTROL Update on Schedule]_(으)로 설정하십시오. [색인 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)를 참조하세요.
+- 자주 업데이트되고 트래픽이 많은 사이트 및 대규모 사이트에 대해 인덱서를 _[!UICONTROL Update on Schedule]_(으)로 설정하십시오. [색인 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)를 참조하세요.
 - 인덱스 관리에 대한 [성능 모범 사례](../../../performance/configuration.md)를 따르십시오.
 
 >[!IMPORTANT]
@@ -48,5 +48,5 @@ Adobe Commerce에는 두 가지 유형의 인덱서 모드가 있습니다. [!UI
 ## 추가 정보
 
 - [관리자 사용자를 위한 색인 관리](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Magento CLI를 사용한 인덱스 관리](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Magento CLI를 사용한 인덱스 관리](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ko)
 - [개발자를 위한 인덱싱 개요](https://developer.adobe.com/commerce/php/development/components/indexing/)
