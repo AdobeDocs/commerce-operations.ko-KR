@@ -3,9 +3,9 @@ title: 원격 스토리지용 AWS S3 버킷 구성
 description: 원격 스토리지용 AWS S3 스토리지 서비스를 사용하도록 Commerce 프로젝트를 구성합니다.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 >[!WARNING]
 >
 >Adobe은 심각한 보안 위험을 초래하므로 공개 버킷 사용을 매우 자제합니다.
+>
+>고객이 제공한 S3 버킷을 에셋 또는 미디어 스토리지에 사용하는 경우 Adobe은 S3 버킷의 구성, 관리 또는 운영과 관련된 문제, 데이터 손실 또는 중단에 대한 책임이 없으며 이를 지원하지 않습니다. S3 버킷의 모든 문제 해결 및 유지 관리는 고객의 단독 책임입니다.
 
 **AWS S3 어댑터로 원격 저장소를 사용하려면**:
 
