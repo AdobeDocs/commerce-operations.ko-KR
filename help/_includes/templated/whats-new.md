@@ -421,7 +421,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9c96484a500065b25c87a68db2bcdfb9fde8ea62">커밋</a></td>
     </tr>
     <tr>
-      <td><p>QPT 1.1.64 릴리스의 ACSD-65223 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error">자세한 설명을 추가했습니다.1}</a></p>
+      <td><p>QPT 1.1.64 릴리스의 ACSD-65223 패치로 해결된 문제에 대한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error">자세한 설명을 추가했습니다.1&rbrace;</a></p>
 </td>
       <td>
         새 주제, qpt
