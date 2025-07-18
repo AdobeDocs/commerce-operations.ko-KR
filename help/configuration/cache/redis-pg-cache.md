@@ -3,9 +3,9 @@ title: 기본 캐시에 Redis 사용
 description: Redis를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,12 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 
 | 명령줄 매개 변수 | 값 | 의미 | 기본값 |
 | ------------------------------ | --------- | ------- | ------------- |
-| `cache-backend-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은 Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
+| `cache-backend-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은(는) Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
 | `cache-backend-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
 | `cache-backend-redis-db` | 데이터베이스 | 기본 및 전체 페이지 캐시 모두에 Redis를 사용하는 경우 필수입니다. 캐시 중 하나의 데이터베이스 번호를 지정해야 합니다. 다른 캐시는 기본적으로 0을 사용합니다.<br><br>**중요**: 둘 이상의 캐싱 형식에 대해 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | `0` |
 | `cache-backend-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나인 `auth` 명령을 사용할 수 있습니다. 이 경우 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. Redis의 구성 파일에 암호가 직접 구성되었습니다. `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | LUA를 활성화하거나 비활성화합니다. <br><br>**LUA**: Lua를 사용하면 Redis 내에서 응용 프로그램 논리의 일부를 실행할 수 있으므로 성능이 향상되고 작은 단위의 실행을 통해 데이터 일관성이 보장됩니다. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | 가비지 수집에 LUA를 활성화하거나 비활성화합니다. <br><br>**LUA**: Lua를 사용하면 Redis 내에서 응용 프로그램 논리의 일부를 실행할 수 있으므로 성능이 향상되고 작은 단위의 실행을 통해 데이터 일관성이 보장됩니다. | `1` |
 
 ### 예제 명령
 
@@ -61,7 +63,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 
 | 명령줄 매개 변수 | 값 | 의미 | 기본값 |
 | ------------------------------ | --------- | ------- | ------------- |
-| `page-cache-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은 Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
+| `page-cache-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은(는) Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
 | `page-cache-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
 | `page-cache-redis-db` | 데이터베이스 | 기본 및 전체 페이지 캐시 모두에 Redis를 사용하는 경우 필수입니다. 캐시 중 하나의 데이터베이스 번호를 지정해야 합니다. 다른 캐시는 기본적으로 0을 사용합니다.<br/>**중요**: 둘 이상의 캐싱 형식에 대해 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | `0` |
 | `page-cache-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나인 `auth` 명령을 사용할 수 있습니다. 이 경우 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. Redis 구성 파일 `/etc/redis/redis.conf` 내에서 암호를 구성하십시오. | |
@@ -114,7 +116,7 @@ Commerce 2.4.3부터 Amazon EC2에서 호스팅되는 인스턴스는 로컬 Red
 
 [AWS에서 Redis 클러스터를 설정](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)한 후 ElastiCache를 사용하도록 EC2 인스턴스를 구성하십시오.
 
-1. [EC2 인스턴스의 동일 리전 및 VPC에 ElastiCache 클러스터를 만듭니다](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html).
+1. [EC2 인스턴스의 동일한 지역 및 VPC에 ElastiCache 클러스터를 만듭니다](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html).
 1. 연결을 확인합니다.
 
    - EC2 인스턴스에 대한 SSH 연결 열기
