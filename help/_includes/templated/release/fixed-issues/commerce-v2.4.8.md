@@ -337,7 +337,7 @@ _AC-9843 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/0c5
 
 _ACP2E-2687_
 
-#### 저장소 보기 이름의 아포스트로피가 &amp;#039;(으)로 대체됨
+#### 저장소 보기 이름의 아포스트로피가 &#039;(으)로 대체됨
 
 이제 격자의 저장소 보기 필터에 아포스트로피가 올바르게 표시됩니다
 
@@ -1381,7 +1381,7 @@ _ACP2E-3063 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### 콘텐츠 위젯에서 [Cloud] 앵커/비앵커 범주가 반전됨
 
-이전에는 [표시 위치] -> [앵커 범주]를 선택했을 때 앵커와 비앵커 간의 상위-하위 관계를 반영하지 않은 모든 범주가 표시되었습니다. 이 수정 사항이 적용되면 [표시 켜기] -> [앵커 범주]에는 [앵커 범주](선택 가능)만 표시되고, [표시 켜기] -> [앵커 이외의 범주] 에는 [앵커 이외의 범주](선택 가능)가 표시됩니다
+이전에는 [표시 위치] -> [앵커 범주]를 선택했을 때 앵커와 비앵커 간의 상위-하위 관계를 반영하지 않은 모든 범주가 표시되었습니다. 이 수정 사항이 적용되면 [표시 켜기] -> [앵커 범주]에는 [앵커 범주] (선택 가능)만 표시되고, [표시 켜기] -> [앵커 이외의 범주] 에는 [앵커 이외의 범주] (선택 가능)가 표시됩니다
 
 _ACP2E-3131 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/7377de59)_
 
@@ -1971,7 +1971,7 @@ _AC-8353 - [GitHub 문제](https://github.com/magento/magento2/issues/37253) - [
 
 _AC-8356 - [GitHub 문제](https://github.com/magento/magento2/issues/37250) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig 구문의 공백이 `[{composer,auth}.json]`에 대한 규칙을 어깁니다.
+#### editorconfig 구문의 공백이 `[&lbrace;composer,auth&rbrace;.json]`에 대한 규칙을 어깁니다.
 
 이제 편집기의 구문 오류가 해결된 후 시스템에서 작성기 및 auth.json 파일에 4공간 들여쓰기를 올바르게 적용합니다. 이전에는 editorconfig 구문의 공백으로 인해 이러한 파일의 형식이 2칸 들여쓰기로 잘못 지정되었습니다.
 
@@ -2127,7 +2127,7 @@ GraphQL 쿼리를 통해 카테고리 집계가 있는 제품 검색을 요청�
 
 _ACP2E-2653 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 가격 필터 `{from:&quot;0&quot;}`이(가) 포함된 GraphQL 제품 호출이 결과를 반환하지 않습니다.
+#### 가격 필터 `&lbrace;from:&quot;0&quot;&rbrace;`이(가) 포함된 GraphQL 제품 호출이 결과를 반환하지 않습니다.
 
 이전에 필터가 있는 0가 제품 검색은 throw된 예외로 인해 결과를 전혀 반환하지 않았습니다. 이제 검색은 예상대로 결과를 반환합니다.
 
@@ -2800,7 +2800,7 @@ _LYNX-464_
 
 _LYNX-469_
 
-#### Product attribute > trademark short form &amp;trade;는 &amp;trade;로 반환됩니다
+#### Product attribute > trademark short form &trade;는 &trade;로 반환됩니다
 
 GraphQL API의 제품 이름에 대한 문자 인코딩 문제가 해결되었습니다.
 
