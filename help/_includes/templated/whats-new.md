@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>QPT 1.1.66 릴리스<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request">에서 ACSD-65777 패치로 해결된 문제에 대한 </a>자세한 설명을 추가했습니다.</p>
+      <td><p>QPT 1.1.66 릴리스<a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request">에서 ACSD-65777 패치로 해결된 문제에 대한 </a>자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
