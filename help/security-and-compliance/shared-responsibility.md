@@ -2,9 +2,9 @@
 title: 공동 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 |     | Adobe | 판매자 |
 | --- | --- | --- |
 | 제품 추천 서비스 가용성 | R |   |
+
+{style="table-layout:auto"}
+
+#### 라이브 검색
+
+|     | Adobe | 판매자 |
+| --- | --- | --- |
+| Live Search 서비스 가용성 | R |   |
+
+{style="table-layout:auto"}
+
+#### Quality of storefront events(데이터 수집) - 제품 추천 및 라이브 검색 출력 강화
+
+|     | Adobe | 판매자 |
+| --- | --- | --- |
+| 코어 테마(Luma) | R |   |
+| 사용자 정의 테마 |  | R |
+| 핵심 PWA 구현 | R |   |
+| 사용자 지정 PWA 구현 |  | R |
+| 핵심 AEM EDS 구현(Commerce Boilerplate) | R |   |
+| 사용자 지정 AEM EDS 구현 |  | R |
+| 기타 모든 사용자 지정 Storefront 구현 |  | R |
 
 {style="table-layout:auto"}
 
