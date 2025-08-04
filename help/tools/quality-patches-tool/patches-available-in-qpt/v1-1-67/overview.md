@@ -3,7 +3,8 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.67'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.67에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d98a00793b011bf4d9e9348df10b91f0e17ebbd5
+exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
+source-git-commit: 7fd88da04ca147829aa5aa7f90d05d8760ff0f3d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -23,7 +24,7 @@ QPT v1.1.67에는 다음 패치가 포함됩니다.
 1. **ACSD-66118**: 구성 캐시를 새로 고치지 않으면 저장소 보기 코드를 업데이트하면 디자인 구성 설정이 지워집니다.
 1. **ACSD-66139**: GraphQL이 주문 배치 중에 존재하지 않거나 비활성 장바구니에 대해 정의되지 않은 오류를 반환합니다.
 1. **ACSD-66301**: 주문에서 다시 관리자의 장바구니로 제품을 이동하면 수량이 일치하지 않습니다.
-1. **ACSD-66434**: 회사 GraphQL 쿼리에 고객 ID가 없습니다.
+1. **[ACSD-66434](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)**: 회사 GraphQL 쿼리에 고객 ID가 없습니다.
 1. **ACSD-66441**: 다중 스토어 설정에서 구성 가능한 제품에 대한 계층 탐색 내 인덱스 데이터가 잘못되었습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
