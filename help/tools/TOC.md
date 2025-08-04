@@ -595,7 +595,7 @@ ht-degree: 0%
       - v1.1.48 {#v1-1-48}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.48](quality-patches-tool/patches-available-in-qpt/v1-1-48/overview.md)
          - [ACSD-57315: 가져오기 단추를 클릭할 때마다  [!DNL PayPal Payflow Pro] 에 새 트랜잭션이 만들어집니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
-         - [ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
+         - [[!DNL ACSD-56635: 계정 공유를 Global] (으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          - [ACSD-57337: 액세스 제한이 있는 관리 사용자가 회사를 볼 수 있음](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          - [ACSD-57394:  [!DNL GraphQL]의 여러 정렬 필드를 기준으로 한 제품 정렬이 잘못되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          - [ACSD-56546: 구성 및 번들 제품이 상점 앞에 품절로 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
