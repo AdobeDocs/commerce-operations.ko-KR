@@ -3,9 +3,10 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.68'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.68에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 515064fc03f37eb97a4d392328041c340880cb22
+exl-id: 74094036-cb1b-419f-b287-ca24d351a448
+source-git-commit: 0a7fdb3e5a7cb2c61ba54af78fadb524a570e20f
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ QPT v1.1.68에는 다음 패치가 포함됩니다.
 1. **ACSD-66072**: [!UICONTROL Related Products Rule]을(를) 구성할 때 내부 서버 오류로 인해 제품 세부 사항 페이지에서 GraphQL을 통해 관련 제품이 반환되지 않습니다.
 1. **ACSD-66082**: 제품 가져오기를 통해 제품의 견본 이미지를 업데이트할 수 없습니다.
 1. **ACSD-66179**: &quot;Not Capture&quot; 결제 유형의 송장을 취소하면 404 오류 페이지가 표시됩니다.
-1. **ACSD-66233**: 제품 추가 팝업이 로드되지 않아 관리자가 범주에 제품을 추가할 수 없습니다.
+1. **ACSD-66233**: 응답하지 않는 제품 목록 팝업으로 인해 관리자가 제품을 추가할 수 없습니다.
 1. **ACSD-66506**: 이전에 할당된 공유 카탈로그 제품이 삭제되고 새 제품이 할당된 경우 백엔드 오류가 발생했습니다.
 1. **ACSD-66865**: 카탈로그 가격 규칙을 저장하면 인덱서가 무효화되고 영향을 받는 제품만 다시 인덱싱하는 대체 요소가 제공됩니다.
 1. **ACSD-66889**: CLI에서 인벤토리를 다시 인덱싱하는 동안 오류가 발생했습니다.
