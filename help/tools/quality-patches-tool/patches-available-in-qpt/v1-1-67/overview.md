@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 7fd88da04ca147829aa5aa7f90d05d8760ff0f3d
+source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.67에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.67에는 다음 패치가 포함됩니다.
-1. **AC-14985**: TLS와 함께 전송된 SMTP 메일 반환 오류입니다.
+1. **AC-14985**: TLS를 사용하여 SMTP 전자 메일을 보내는 동안 오류가 발생했습니다.
 1. **AC-14984**: php-amqplib/php-amqplib ^3.2.0에 SSL 연결 문제가 있습니다.
 1. **ACSD-65935**: `customerOrders` GraphQL 쿼리에서 제품을 삭제할 때 내부 서버 오류를 반환했습니다.
 1. **ACSD-66049**: 영어가 아닌 상점 앞에는 ICU 라이브러리 버전으로 인해 잘못된 가격이 표시됩니다.
