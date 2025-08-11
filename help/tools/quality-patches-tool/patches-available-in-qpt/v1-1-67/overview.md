@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 6758b85e797de75ea5430062c8335fa903f00838
+source-git-commit: a0bf44520c0d355c9aca3aaab55306a2d0fe018e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.67에는 다음 패치가 포함됩니다.
 1. **ACSD-65935**: `customerOrders` GraphQL 쿼리에서 제품을 삭제할 때 내부 서버 오류를 반환했습니다.
 1. **ACSD-66049**: 영어가 아닌 상점 앞에는 ICU 라이브러리 버전으로 인해 잘못된 가격이 표시됩니다.
 1. **ACSD-66084**: `row_total_incl_tax`은(는) 주문 API 응답에서 완전히 할인된 항목에 대해 0.00 대신 0에 가까운 잔차 값을 반환합니다.
-1. **ACSD-66118**: 구성 캐시를 새로 고치지 않으면 저장소 보기 코드를 업데이트하면 디자인 구성 설정이 지워집니다.
+1. **ACSD-66118**: 구성 캐시를 새로 고치지 않으면 **[!UICONTROL Store View]** 코드를 업데이트하면 **[!UICONTROL Design Configuration]** 설정이 지워집니다.
 1. **ACSD-66139**: GraphQL이 주문 배치 중에 존재하지 않거나 비활성 장바구니에 대해 정의되지 않은 오류를 반환합니다.
 1. **ACSD-66301**: 주문에서 다시 관리자의 장바구니로 제품을 이동하면 수량이 일치하지 않습니다.
 1. **ACSD-66434**: 회사 GraphQL 쿼리에 고객 ID가 없습니다.
