@@ -65,7 +65,7 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 >
 >* 스타터 환경에는 로그 회전이 없습니다.
 >
->* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
+>* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
 
 ### 다양한 서비스가 통신할 수 있도록 iptables 규칙 설정
 
