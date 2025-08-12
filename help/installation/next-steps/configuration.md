@@ -3,7 +3,7 @@ title: 애플리케이션 구성
 description: Adobe Commerce 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -26,7 +26,7 @@ crontab을 제거하고 명령줄에서 cron을 실행하는 방법을 포함하
 
 설치 후 다음 사항을 권장합니다.
 
-* 파일 소유권 및 권한이 제대로 설정되어 있는지 확인하십시오.
+* 파일 소유권 및 사용 권한이 [제대로](../prerequisites/file-system/configure-permissions.md) 설정되어 있는지 확인하십시오.
 * [기본 관리자 URI](../tutorials/admin-uri.md)을(를) `admin`에서 다른 이름으로 변경하는 것이 좋습니다.
 * [`X-Frame-Option` HTTP 헤더](../../configuration/security/xframe-options.md)이(가) 제대로 설정되어 있는지 확인하십시오.
 * [템플릿 보호](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)를 통해 XSS(교차 사이트 스크립팅)에 대한 예방 조치를 취하십시오.
@@ -65,7 +65,7 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 >
 >* 스타터 환경에는 로그 회전이 없습니다.
 >
->* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
+>* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
 
 ### 다양한 서비스가 통신할 수 있도록 iptables 규칙 설정
 
