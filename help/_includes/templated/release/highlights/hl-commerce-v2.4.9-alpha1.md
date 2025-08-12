@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f471a1bc1cbf31076aeb67ceaee289196841cd4
+source-git-commit: 44c3581a68cad32ce737219351601cfde31941fb
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -56,3 +56,9 @@ _AC-14559_
 #### 오래된 DHL Express XML에서 새로운 MyDHL API RESTful API로 DHL 통합 마이그레이션
 
 _AC-13258_
+
+### 보안
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)을 참조하십시오.
+
+{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

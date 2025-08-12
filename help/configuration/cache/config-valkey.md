@@ -2,9 +2,10 @@
 title: Valkey 구성
 description: Valkey 기능에 대한 개요를 확인하고 Valkey 구성을 시작하십시오.
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -27,13 +28,13 @@ Valkey 소프트웨어를 설치하고 구성하려면 다음 리소스를 참�
 
 ## Valkey 구성 설정
 
-설치에 따라 대개 `/etc/valkey/valkey.conf` 또는 `/etc/valkey/<port>.conf`에서 Valkey 구성을 찾을 수 있습니다.
+설치에 따라 일반적으로 `/etc/valkey/valkey.conf` 파일 또는 `/etc/valkey/<port>.conf` 파일에서 Valkey 구성을 찾을 수 있습니다.
 
 요구 사항에 맞게 Valkey 인스턴스를 최적화하려면 각 세션, Commerce 캐시 및 FPC에 대한 전용 인스턴스를 사용하여 최상의 결과를 얻을 수 있습니다.
 
 Adobe은 세션에 대해 지속성을 설정하여 Valkey 데이터를 디스크에 복사할 것을 권장합니다. RDB(Valkey Database Backup) 스냅샷 또는 AOF(Append Only File) 지속성 로그를 사용할 수 있습니다.
 
-- **RDB**(Valkey 데이터베이스) 스냅샷은 마지막 저장 이후 최소 키 수가 변경된 경우 지정된 시간 후에 전체 데이터베이스를 덤프 파일에 저장합니다. `valkey.conf` 파일 내의 `save` 설정을 사용하여 이 설정을 구성하십시오.
+- **RDB**(Valkey 데이터베이스) 스냅샷은 마지막 저장 이후 최소 키 수가 변경된 경우 지정된 시간 후에 전체 데이터베이스를 덤프 파일에 저장합니다. `save` 파일 내의 `valkey.conf` 설정을 사용하여 이 설정을 구성하십시오.
 
 - **파일만 추가**(AOF)는 Valkey로 전송된 각 쓰기 작업을 저널 파일에 저장합니다. Valkey는 재시작 시에만 이 파일을 읽고 원본 데이터 세트를 복원하는 데 사용합니다.
 
