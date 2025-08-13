@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-66084: ''row_total_incl_tax''는 주문 API 응답에서 완전히 할인된 항목에 대해 0.00 대신 거의 0에 가까운 잔차 값을 반환합니다'
+title: 'ACSD-66084: ''row_total_incl_tax''는 주문 API에서 완전히 할인된 항목에 대해 0.00이 아닌 거의 0을 반환합니다.'
 description: ACSD-66084 패치를 적용하여 주문 API 응답에서 완전히 할인된 항목에 대해 'row_total_incl_tax'가 0.00 대신 거의 0에 가까운 잔차 값으로 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 01f7059e53590c4ff6602c41eb980ac7c141af33
+exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-66084: `row_total_incl_tax`은(는) 주문 API 응답에서 완전히 할인된 항목에 대해 0.00 대신 0에 가까운 잔차 값을 반환합니다.
+# ACSD-66084: 주문 API에서 완전히 할인된 항목에 대해 `row_total_incl_tax`이(가) 0.00 대신 0에 가까운 값을 반환합니다.
 
 ACSD-66084 패치는 완전 할인 항목에 대해 0.00 대신 주문 API 응답에서 `row_total_incl_tax`이(가) 0에 가까운 잔차 값으로 반환되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67이 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-66084입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.
 
@@ -28,7 +28,7 @@ ACSD-66084 패치는 완전 할인 항목에 대해 0.00 대신 주문 API 응�
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -61,7 +61,7 @@ ACSD-66084 패치는 완전 할인 항목에 대해 0.00 대신 주문 API 응�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 ](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 
