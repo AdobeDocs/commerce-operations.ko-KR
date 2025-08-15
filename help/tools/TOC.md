@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce에 대한 관리 경고: CPU 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 품질 패치 도구 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
    - 품질 패치 도구에서 사용할 수 있는 패치 {#patches-available-in-qpt}
@@ -889,6 +889,6 @@ ht-degree: 0%
       - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
       - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
    - 리소스 {#resources}
-      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ko)
       - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
