@@ -19,8 +19,8 @@ ht-degree: 0%
 QPT v1.1.27에는 다음 패치가 포함됩니다.
 
 1. ACSD-48362: 협상 가능 견적을 사용하여 주문을 할 때 새 주소 대신 기본 배송 주소가 사용되는 문제를 수정합니다.
-1. ACSD-48059: 판매자가 [!UICONTROL Categories] 특성에 대해 &quot;[!UICONTROL Match product by rule]&quot;을(를) 저장할 수 없는 [!UICONTROL Visual Merchandiser] 문제를 해결했습니다.
-1. ACSD-48216: [!UICONTROL inventory_source_item] 테이블의 [!UICONTROL AUTO_INCREMENT]이(가) [!UICONTROL UPDATE] 작업에서 증가하는 문제를 해결했습니다.
+1. ACSD-48059: 판매자가 [!UICONTROL Visual Merchandiser] 특성에 대해 &quot;[!UICONTROL Match product by rule]&quot;을(를) 저장할 수 없는 [!UICONTROL Categories] 문제를 해결했습니다.
+1. ACSD-48216: [!UICONTROL AUTO_INCREMENT] 테이블의 [!UICONTROL inventory_source_item]이(가) [!UICONTROL UPDATE] 작업에서 증가하는 문제를 해결했습니다.
 1. ACSD-47908: 체크아웃 중에 배송 단계에서 소스 및 수량을 선택할 때 &quot;0보다 작거나 같은 값이 예상됩니다&quot; 오류가 수정됩니다.
 1. ACSD-49497: 주문이 선적 후 처리 상태에 있고 부분 환불이 적용되는 문제를 수정합니다.
 1. ACSD-48694: &quot;잘못된 상태 변경 요청&quot;이라는 오류로 인해 고객이 주문을 할 수 없는 문제가 해결되었습니다.

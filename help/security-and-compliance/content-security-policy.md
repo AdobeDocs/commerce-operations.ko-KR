@@ -25,13 +25,13 @@ CSP는 신뢰할 수 있는 콘텐츠 리소스와 차단해야 하는 콘텐츠
 
 **제한 모드**: 브라우저에서 모든 콘텐츠 정책을 적용하고 화이트리스트에 있는 리소스로 게시를 제한하도록 지시합니다.
 
-Adobe Commerce CSP 구현의 첫 번째 단계는 Adobe Commerce 2.3.5에서 도입되었으며 기본적으로 `report-only mode`에서 CSP를 사용할 수 있게 되었습니다.  Adobe Commerce 2.4.7 이상에서는 CSP가 상점 및 관리 영역의 결제 페이지에 대해 기본적으로 `restrict-mode`에, 다른 모든 페이지에 대해 `report-only` 모드로 구성됩니다. 해당 CSP 헤더에는 결제 페이지의 `script-src` 지시문 내에 `unsafe-inline` 키워드가 포함되어 있지 않습니다. 또한 화이트리스트에 추가한 인라인 스크립트만 허용됩니다.
+Adobe Commerce CSP 구현의 첫 번째 단계는 Adobe Commerce 2.3.5에서 도입되었으며 기본적으로 `report-only mode`에서 CSP를 사용할 수 있게 되었습니다.  Adobe Commerce 2.4.7 이상에서는 CSP가 상점 및 관리 영역의 결제 페이지에 대해 기본적으로 `restrict-mode`에, 다른 모든 페이지에 대해 `report-only` 모드로 구성됩니다. 해당 CSP 헤더에는 결제 페이지의 `unsafe-inline` 지시문 내에 `script-src` 키워드가 포함되어 있지 않습니다. 또한 화이트리스트에 추가한 인라인 스크립트만 허용됩니다.
 
-CSP는 관리자가 아닌 서버에서 구성되므로 대부분의 판매자는 이를 제대로 구성하려면 시스템 통합자나 개발자의 도움이 필요합니다. _Commerce PHP 개발자 안내서_&#x200B;에서 [콘텐츠 보안 정책](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)을 참조하십시오.
+CSP는 관리자가 아닌 서버에서 구성되므로 대부분의 판매자는 이를 제대로 구성하려면 시스템 통합자나 개발자의 도움이 필요합니다. [Commerce PHP 개발자 안내서](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)에서 _콘텐츠 보안 정책_&#x200B;을 참조하십시오.
 
 
 ## 보고
 
-기본적으로 CSP는 브라우저 콘솔에 오류를 보내지만 HTTP 요청으로 오류 로그를 수집하도록 구성할 수 있습니다. 또한 CSP 위반을 모니터링, 수집 및 보고하는 데 사용할 수 있는 여러 서드파티 서비스가 있습니다. CSP 위반은 관리자의 URI 또는 사용자 지정 모듈의 `config.xml` 파일에서 추가하여 수집용 끝점에 보고할 수 있습니다.  _Commerce PHP 확장 프로그램 개발자 안내서_&#x200B;에서 [보고서 URI 구성](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration)을 참조하십시오.
+기본적으로 CSP는 브라우저 콘솔에 오류를 보내지만 HTTP 요청으로 오류 로그를 수집하도록 구성할 수 있습니다. 또한 CSP 위반을 모니터링, 수집 및 보고하는 데 사용할 수 있는 여러 서드파티 서비스가 있습니다. CSP 위반은 관리자의 URI 또는 사용자 지정 모듈의 `config.xml` 파일에서 추가하여 수집용 끝점에 보고할 수 있습니다.  [Commerce PHP 확장 프로그램 개발자 안내서](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration)에서 _보고서 URI 구성_&#x200B;을 참조하십시오.
 
 [보고서 URI](https://report-uri.io/)은(는) CSP 위반을 모니터링하고 결과를 대시보드에 표시하는 서비스입니다. 가맹점과 개발자 모두 CSP 위반이 발생할 때마다 이 서비스를 사용해 보고서를 받을 수 있다.

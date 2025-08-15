@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Elasticsearch] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL Elasticsearch] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL Elasticsearch]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![Elasticsearch 프로세스 CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-**[!UICONTROL Elasticsearch process CPU %]** 프레임에는 선택한 기간 동안 [!DNL Elasticsearch] 프로세스별 프로세스 CPU 비율이 표시됩니다.
+**[!UICONTROL Elasticsearch process CPU %]** 프레임에는 선택한 기간 동안 [!DNL Elasticsearch] 프로세스에 의한 프로세스 CPU 비율이 표시됩니다.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![Elasticsearch 인덱스 정보](../../assets/tools/elasticsearch-index-information-2.jpg)
+![Elasticsearch 색인 정보](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 색인이 만들어지고 업데이트됨에 따라 색인 상태가 변경될 수 있습니다.
 
@@ -86,6 +86,6 @@ ht-degree: 0%
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
-![할당 해제된 조각 Elasticsearch](../../assets/tools/elasticsearch-unassigned-shards.jpg)
+![Elasticsearch 할당 해제된 샤드](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 
 할당되지 않은 샤드로 인해 클러스터가 녹색 상태에서 노란색 상태로 이동합니다.

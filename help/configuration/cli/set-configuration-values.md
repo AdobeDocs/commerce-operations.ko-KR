@@ -19,7 +19,7 @@ ht-degree: 0%
 - 필요한 경우 관리자에서 구성 옵션의 값을 변경할 수 없도록 모든 구성 옵션을 잠급니다
 - 관리자에서 잠긴 구성 옵션 변경
 
-이러한 명령을 사용하여 수동으로 또는 스크립트를 사용하여 Commerce 구성을 설정할 수 있습니다. 해당 구성 옵션을 고유하게 식별하는 `/` 구분 문자열인 _구성 경로_&#x200B;을(를) 사용하여 구성 옵션을 설정합니다. 다음 참조에서 구성 경로를 찾을 수 있습니다.
+이러한 명령을 사용하여 수동으로 또는 스크립트를 사용하여 Commerce 구성을 설정할 수 있습니다. 해당 구성 옵션을 고유하게 식별하는 _구분 문자열인_&#x200B;구성 경로`/`을(를) 사용하여 구성 옵션을 설정합니다. 다음 참조에서 구성 경로를 찾을 수 있습니다.
 
 - [중요한 시스템별 구성 경로 참조](../reference/config-reference-sens.md)
 - [결제 구성 경로 참조](../reference/config-reference-payment.md)
@@ -38,7 +38,7 @@ ht-degree: 0%
 - `bin/magento config:sensitive:set`은(는) 구성 경로로 중요한 구성 값을 설정합니다.
 - `bin/magento config:show`에 저장된 구성 값이 표시됩니다. 암호화된 설정 값은 별표로 표시됩니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 구성 값을 설정하려면 다음 중 하나 이상을 알고 있어야 합니다.
 
@@ -221,9 +221,9 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `**&#x200B;**&#x200B;**`.
+>`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `******`.
 
-### 예시
+### 예
 
 **저장된 구성을 모두 표시하려면**:
 

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Magento 2가 `default` 모드로 배포되었는지 확인하십시오. 개발자 모드에서는 마이그레이션 도구에서 유효성 검사 오류가 발생할 수 있습니다.
+>Magento 2가 `default` 모드에서 배포되었는지 확인하십시오. 개발자 모드에서는 마이그레이션 도구에서 유효성 검사 오류가 발생할 수 있습니다.
 
 
 자세한 내용은 [첫 번째 단계](overview.md#first-steps) 섹션을 참조하십시오.
@@ -78,9 +78,9 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. `settings.xml`에서 변경합니다.
 
-1. 매핑할 설정 파일의 새 이름을 지정하려면 `path/to/config.xml` 파일에서 `<settings_map_file>` 태그를 변경하십시오.
+1. 매핑할 설정 파일의 새 이름을 지정하려면 `<settings_map_file>` 파일에서 `path/to/config.xml` 태그를 변경하십시오.
 
-자세한 내용은 도구 [사양](../technical-specification.md)의 [설정 마이그레이션 모드](../technical-specification.md#settings-migration-mode) 섹션을 참조하십시오.
+자세한 내용은 도구 [사양](../technical-specification.md#settings-migration-mode)의 [설정 마이그레이션 모드](../technical-specification.md) 섹션을 참조하십시오.
 
 ## 다음 마이그레이션 단계
 

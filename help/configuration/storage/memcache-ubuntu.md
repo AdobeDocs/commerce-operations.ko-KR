@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe은 memcached 버전 3.0.5 이상을 사용할 것을 권장합니다.
+>Adobe에서는 memcached 버전 3.0.5 이상을 사용하는 것이 좋습니다.
 
 PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려면 PHP용 확장을 설치해야 합니다. 사용 가능한 두 개의 PHP 확장명이 있으며, 어떤 것을 사용할지 디코딩하는 것이 중요합니다.
 
@@ -63,7 +63,7 @@ PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려�
 
 1. 다음 섹션을 계속합니다.
 
-## Magento 설치 전 memcached 작업 확인
+## Magento을 설치하기 전에 memcached 작업 확인
 
 Adobe은 Commerce을 설치하기 전에 memcached를 테스트하여 작동하는지 확인할 것을 권장합니다. 이렇게 하면 몇 분 밖에 걸리지 않으며 나중에 문제 해결을 단순화할 수 있습니다.
 

@@ -33,9 +33,9 @@ ht-degree: 0%
 
 Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 Commerce 설치 디렉터리를 기준으로 함).
 
-- 기본 구성([app/etc/di.xml](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml)). 이 파일은 Commerce를 부트스트랩하는 데 사용됩니다.
-- 모듈(`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/*.xml`)의 글로벌 구성. 모든 모듈에서 특정 구성 파일을 수집하여 병합합니다.
-- 모듈(`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/<area>/*.xml`)의 영역별 구성. 모든 모듈에서 구성 파일을 수집하여 전역 구성에 병합합니다. 일부 영역별 구성은 전역 구성을 재정의하거나 확장할 수 있습니다.
+- 기본 구성([app/etc/di.xml](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml)). 이 파일은 Commerce을 부트스트랩하는 데 사용됩니다.
+- 모듈(`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/*.xml`)의 전역 구성. 모든 모듈에서 특정 구성 파일을 수집하여 함께 병합합니다.
+- 모듈(`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/<area>/*.xml`)의 영역별 구성입니다. 모든 모듈에서 구성 파일을 수집하여 전역 구성에 병합합니다. 일부 영역별 구성은 전역 구성을 재정의하거나 확장할 수 있습니다.
 
 위치
 
@@ -55,11 +55,11 @@ Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 C
 
 ### 구성 파일 병합
 
-구성 파일의 노드는 식별자로 선언된 `$idAttributes` 배열에 정의된 특수 특성이 있는 정규화된 XPath를 기반으로 병합됩니다. 이 식별자는 동일한 부모 노드 아래에 중첩된 모든 노드에 대해 고유해야 합니다.
+구성 파일의 노드는 식별자로 선언된 `$idAttributes` 배열에 정의된 특수 특성이 있는 정규화된 XPath를 기반으로 병합됩니다. 이 식별자는 동일한 상위 노드 아래에 중첩된 모든 노드에 대해 고유해야 합니다.
 
-상거래 애플리케이션 병합 알고리즘:
+Commerce 애플리케이션 병합 알고리즘:
 
-- 노드 식별자가 같으면(또는 정의된 식별자가 없는 경우) 노드의 모든 기본 컨텐츠(특성, 자식 노드 및 스칼라 컨텐츠)가 재정의됩니다.
+- 노드 식별자가 같은 경우(또는 정의된 식별자가 없는 경우) 노드의 모든 기본 콘텐츠(속성, 하위 노드 및 스칼라 콘텐츠)가 무시됩니다.
 - 노드 식별자가 같지 않으면 노드는 상위 노드의 새 하위 노드입니다.
 - 원본 문서에 동일한 식별자를 가진 노드가 여러 개 있는 경우 식별자를 구별할 수 없으므로 오류가 트리거됩니다.
 
@@ -67,15 +67,15 @@ Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 C
 
 >[!INFO]
 >
->\Magento\Framework\Config\Reader\Filesystem 클래스를 사용하여 [구성 파일 로더](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L125) 및 [병합 구성](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L144) 프로세스의 논리[를 디버깅하고 이해할 수](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) 있습니다.
+>[\Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) 클래스를 사용하여 [구성 파일 로더](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L125) 및 [구성 병합](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L144) 프로세스의 논리를 디버깅하고 이해할 수 있습니다.
 
-## 구성 형식, 개체 및 인터페이스
+## 구성 유형, 객체 및 인터페이스
 
-다음 섹션에서는 구성 유형, 해당 구성 개체 및 개체 작업에 사용할 수 있는 인터페이스에 대한 정보를 제공합니다.
+다음 단원에서는 구성 유형, 해당 구성 객체 및 객체를 사용하는 데 사용할 수 있는 인터페이스에 대한 정보를 제공합니다.
 
-### 구성 형식 및 개체
+### 구성 유형 및 개체
 
-다음 표에는 각 구성 유형 및 해당 구성 유형과 관련된 Commerce 구성 개체가 나와 있습니다.
+다음 표는 각 구성 유형과 이 구성 유형이 관련된 Commerce 구성 객체를 보여 줍니다.
 
 | 구성 파일 | 설명 | 단계 | 구성 개체 |
 | --- | --- | --- | --- |
@@ -94,17 +94,17 @@ Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 C
 | `eav_attributes.xml` | EAV 속성 구성 제공 | 글로벌 | [\Magento\Eav\Model\Entity\Attribute\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Eav/Model/Entity/Attribute/Config.php) |
 | `email_templates.xml` | 이메일 템플릿 구성 | 글로벌 | [\Magento\Email\Model\Template\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Email/Model/Template/Config/Data.php) |
 | `esconfig.xml` | [검색 엔진 로케일 중지 단어 구성](../search/search-stopwords.md#create-stopwords-for-a-new-locale) | 글로벌 | [\Magento\Elasticsearch\Model\Adapter\Index\Config\EsConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Elasticsearch/Model/Adapter/Index/Config/EsConfig.php) |
-| `events.xml` | 이벤트/관찰자 구성 | 글로벌, 영역 | [\Magento\Framework\Event](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event.php) |
+| `events.xml` | 이벤트/관찰자 구성 | 전역, 영역 | [\Magento\Framework\Event](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Event.php) |
 | `export.xml` | 엔티티 구성 내보내기 | 글로벌 | [\Magento\ImportExport\Model\Export\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Export/Config.php) |
 | `extension_attributes.xml` | [확장 특성](https://developer.adobe.com/commerce/php/development/components/attributes/#extension-attributes) | 글로벌 | [\Magento\Framework\Api\ExtensionAttribute\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Api/ExtensionAttribute/Config.php) |
 | `fieldset.xml` | 필드 세트 정의 | 글로벌 | [\Magento\Framework\DataObject\Copy\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DataObject/Copy/Config/Reader.php) |
 | `indexer.xml` | [인덱서 선언](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/) | 글로벌 | [\Magento\Framework\Indexer\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Indexer/Config/Reader.php) |
-| `import.xml` | 가져오기 엔티티 선언 | 글로벌 | [\Magento\ImportExport\Model\가져오기\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Import/Config.php) |
-| `menu.xml` | 관리자를 위한 메뉴 항목을 정의합니다 | 관리HTML | [\Magento\Backend\Model\Menu\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Menu/Config/Reader.php) |
+| `import.xml` | 가져오기 엔티티 선언 | 글로벌 | [\Magento\ImportExport\Model\Import\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/ImportExport/Model/Import/Config.php) |
+| `menu.xml` | 관리자의 메뉴 항목을 정의합니다. | adminhtml | [\Magento\Backend\Model\Menu\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Backend/Model/Menu/Config/Reader.php) |
 | `module.xml` | 모듈 구성 데이터 및 소프트 종속성 정의 | 기본, 글로벌 | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [MView 구성](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | 기본, 글로벌 | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | 결제 모듈 구성 | 기본, 글로벌 | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | [Magento_영구](https://developer.adobe.com/commerce/php/module-reference/module-persistent/) 구성 파일 | 글로벌 | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent/) 구성 파일 | 글로벌 | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | PDF 설정 | 글로벌 | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | 제품 옵션 구성 제공 | 글로벌 | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | 제품 유형 정의 | 글로벌 | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |
@@ -114,14 +114,14 @@ Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 C
 | `reports.xml` | [고급 보고서](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml/) | 글로벌 | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | 모듈 리소스 정의 | 글로벌 | [\Magento\Framework\App\ResourceConnection\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
 | `routes.xml` | [경로](https://developer.adobe.com/commerce/php/development/components/routing/) 구성 | 영역 | [Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
-| `sales.xml` | 총 판매량 구성을 정의합니다. | 글로벌 | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
+| `sales.xml` | 판매 총계 구성 정의 | 글로벌 | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |
 | `search_engine.xml` | 검색 엔진 구성 제공 | 글로벌 | [Magento\Search\Model\SearchEngine\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Search/Model/SearchEngine/Config.php) |
-| `search_request.xml` | 카탈로그 검색 구성을 정의합니다 | 글로벌 | [\Magento\Framework\Search\Request\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Search/Request/Config.php) |
-| `sections.xml` | 개인 컨텐츠 블록에 대한 캐시 무효화를 트리거하는 작업을 정의합니다. | 프론트엔드(frontend) | [SectionInvalidationConfigReader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/di.xml#L137-L148) |
+| `search_request.xml` | 카탈로그 검색 구성 정의 | 글로벌 | [\Magento\Framework\Search\Request\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Search/Request/Config.php) |
+| `sections.xml` | 비공개 콘텐츠 블록에 대한 캐시 무효화를 트리거하는 작업을 정의합니다. | 프론트엔드 | [SectionInvalidationConfigReader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/di.xml#L137-L148) |
 | `system.xml` | 시스템 구성 옵션 정의 페이지 | adminhtml | [\Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php) |
 | `validation.xml` | 모듈 유효성 검사 구성 파일 | 글로벌 | [\Magento\Framework\Validator\Factory](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Validator/Factory.php) |
-| `view.xml` | 보기 Vendor_Module 구성 값을 정의합니다 | 글로벌 | [\Magento\Framework\보기\구성](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Config.php) |
-| `webapi.xml` | [웹 API를 구성합니다.](https://developer.adobe.com/commerce/php/development/components/web-api/services/) | 글로벌 | [\Magento\Webapi\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/Model/Config.php) |
+| `view.xml` | Vendor_Module 보기 구성 값을 정의합니다. | 글로벌 | [\Magento\Framework\View\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Config.php) |
+| `webapi.xml` | [웹 API를 구성합니다](https://developer.adobe.com/commerce/php/development/components/web-api/services/) | 글로벌 | [\Magento\Webapi\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Webapi/Model/Config.php) |
 | `webapi_async.xml` | [REST 사용자 지정 경로 정의](https://developer.adobe.com/commerce/php/development/components/web-api/custom-routes/) | 글로벌 | [\Magento\WebapiAsync\Model\ServiceConfig](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Model/ServiceConfig.php) |
 | `widget.xml` | 위젯 정의 | 글로벌 | [\Magento\Widget\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Widget/Model/Config/Reader.php) |
 | `zip_codes.xml` | 각 국가의 우편번호 형식을 정의합니다. | 글로벌 | [\Magento\Directory\Model\Country\Postcode\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Directory/Model/Country/Postcode/Config/Data.php) |
@@ -134,9 +134,9 @@ Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 C
 
 `Magento\Framework\Config`은(는) 다음 인터페이스를 제공합니다.
 
-- [Framework\Config\ConverterInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ConverterInterface.php)(XML을 구성의 메모리 내 배열 표시로 변환).
+- [Framework\Config\ConverterInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ConverterInterface.php)&#x200B;(XML을 구성의 메모리 내 배열 표시로 변환).
 - 지정된 범위에서 구성 데이터를 검색하는 [Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/DataInterface.php).
-- [Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php)에서 읽을 파일의 위치를 식별하는 [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php).
+- [Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php)에서 읽을 파일의 위치를 식별하는 [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
 - 저장소에서 구성 데이터를 읽고 읽을 저장소를 선택하는 [Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
 
 즉, 파일 시스템, 데이터베이스, 기타 저장소는 병합 규칙에 따라 구성 파일을 병합하고 유효성 검사 스키마와 함께 구성 파일의 유효성을 검사합니다.

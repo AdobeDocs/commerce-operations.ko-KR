@@ -22,7 +22,7 @@ ht-degree: 0%
 
    IP 주소 허용 목록 설정 기능과 같은 추가 옵션을 보려면 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md)을(를) 참조하십시오.
 
-1. 다음과 같이 `app/etc/env.php`에서 `cron_run`을(를) `false`(으)로 설정하여 실행 중인 큐 작업자를 중지합니다.
+1. 다음과 같이 `cron_run`에서 `false`을(를) `app/etc/env.php`(으)로 설정하여 실행 중인 큐 작업자를 중지합니다.
 
    ```php?start_inline=1
    'cron_consumers_runner' => [

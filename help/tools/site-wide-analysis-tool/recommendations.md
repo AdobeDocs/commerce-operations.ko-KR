@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Recommendations]'
-description: ' [!DNL Site-Wide Analysis Tool]의 [!UICONTROL Recommendations] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: '[!UICONTROL Recommendations]의  [!DNL Site-Wide Analysis Tool] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

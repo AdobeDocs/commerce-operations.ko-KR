@@ -28,15 +28,15 @@ Commerce에는 다음과 같은 설치 및 구성 작업을 실행하는 CLI(명
 - CLI는 타사 개발자가 &quot;플러그인&quot;할 수 있도록 확장 가능합니다. 이는 사용자의 학습곡선을 제거할 수 있다는 추가적인 이점이 있다.
 - 비활성화된 모듈에 대한 명령이 표시되지 않습니다.
 
-이 항목에서는 CLI를 사용하여 Adobe Commerce 소프트웨어를 구성하는 방법에 대해 설명합니다. Commerce 설치에 대한 자세한 내용은 _설치 안내서_&#x200B;의 [설치 흐름](../../installation/overview.md)을 참조하십시오.
+이 항목에서는 CLI를 사용하여 Adobe Commerce 소프트웨어를 구성하는 방법에 대해 설명합니다. Commerce 설치에 대한 자세한 내용은 [설치 안내서](../../installation/overview.md)의 _설치 흐름_&#x200B;을 참조하십시오.
 
-## 전제 조건
+## 사전 요구 사항
 
 CLI를 사용하기 전에 다음을 확인하십시오.
 
-1. 시스템이 _설치 가이드_&#x200B;의 [시스템 요구 사항](../../installation/system-requirements.md)에서 설명한 요구 사항을 충족합니다.
-1. _설치 가이드_&#x200B;의 [필수 구성 요소](../../installation/prerequisites/overview.md)에서 설명한 모든 필수 구성 요소 작업을 완료했습니다.
-1. Commerce 서버에 로그인한 후 Commerce 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환합니다. _설치 안내서_&#x200B;에서 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)을 참조하십시오.
+1. 시스템이 [설치 가이드](../../installation/system-requirements.md)의 _시스템 요구 사항_&#x200B;에서 설명한 요구 사항을 충족합니다.
+1. [설치 가이드](../../installation/prerequisites/overview.md)의 _필수 구성 요소_&#x200B;에서 설명한 모든 필수 구성 요소 작업을 완료했습니다.
+1. Commerce 서버에 로그인한 후 Commerce 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환합니다. [설치 안내서](../../installation/prerequisites/file-system/overview.md)에서 _파일 시스템 소유자로 전환_&#x200B;을 참조하십시오.
 
 ## 명령 실행
 
@@ -54,7 +54,7 @@ sudo -u <file system owner> <command>
 
 **모든 디렉터리에서 CLI 명령을 실행하려면**:
 
-`PATH` 시스템에 `<magento_root>/bin`을(를) 추가합니다.
+`<magento_root>/bin` 시스템에 `PATH`을(를) 추가합니다.
 
 CentOS용 샘플 bash 쉘:
 

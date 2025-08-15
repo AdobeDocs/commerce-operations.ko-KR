@@ -163,4 +163,4 @@ Enabled default mode.
 
 [어디서나 CLI 명령 실행](../cli/config-cli.md#config-install-cli-first).
 
-`PATH` 시스템에 `<Commerce-install-directory>/bin`을(를) 추가하지 않은 경우 명령을 직접 실행할 때 오류가 발생할 수 있습니다.
+`<Commerce-install-directory>/bin` 시스템에 `PATH`을(를) 추가하지 않은 경우 명령을 직접 실행할 때 오류가 발생할 수 있습니다.

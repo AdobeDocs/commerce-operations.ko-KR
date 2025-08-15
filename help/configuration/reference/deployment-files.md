@@ -25,7 +25,7 @@ Adobe Commerce은 구성 요소를 쉽게 사용자 정의하고 구성 유형�
 
 >[!INFO]
 >
->[!DNL Commerce 2] 배포 구성은 [!DNL Magento 1.x]의 `local.xml`을(를) 대체합니다.
+>[!DNL Commerce 2] 배포 구성은 `local.xml`의 [!DNL Magento 1.x]을(를) 대체합니다.
 
 다른 [모듈 구성 파일](../reference/module-files.md)과 달리 Commerce 배포 구성은 초기화 중에 메모리에 로드되며 다른 파일과 병합되지 않으며 확장할 수 없습니다. (`config.php`과(와) `env.php`은(는) 서로 병합됩니다.)
 
@@ -51,7 +51,7 @@ Adobe Commerce은 구성 요소를 쉽게 사용자 정의하고 구성 유형�
 예:
 
 - 구성 요소 제거: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - 구성 요소 [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)을(를) 활성화하거나 비활성화합니다.
 
 > _config.php_

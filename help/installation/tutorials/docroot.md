@@ -62,7 +62,7 @@ server {
 >
 >자세한 내용은 [필수 구성 요소](../prerequisites/overview.md) 및 [설치 안내서](../overview.md)를 참조하십시오.
 
-## 1. 서버 구성 편집
+## &#x200B;1. 서버 구성 편집
 
 가상 호스트 파일의 이름과 위치는 실행 중인 Apache 버전에 따라 다릅니다. 이 예는 Apache v2.4에서 가상 호스트 파일의 이름과 위치를 보여 줍니다.
 
@@ -96,7 +96,7 @@ server {
    systemctl restart apache2
    ```
 
-## 2. 기본 URL 업데이트
+## &#x200B;2. 기본 URL 업데이트
 
 응용 프로그램을 설치할 때 기본 URL을 만들기 위해 서버의 호스트 이름 또는 IP 주소에 디렉터리 이름을 추가한 경우(예: `http://192.168.33.10/magento2`) 이를 제거해야 합니다.
 
@@ -122,7 +122,7 @@ server {
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. env.php 파일 업데이트
+## &#x200B;3. env.php 파일 업데이트
 
 `env.php` 파일에 다음 노드를 추가합니다.
 
@@ -134,9 +134,9 @@ server {
 
 자세한 내용은 [env.php 참조](../../configuration/reference/config-reference-envphp.md)를 참조하십시오.
 
-## 4. 모드 전환
+## &#x200B;4. 모드 전환
 
-`production` 및 `developer`을(를) 포함하는 [응용 프로그램 모드](../../configuration/bootstrap/application-modes.md)은(는) 보안을 강화하고 개발을 더 쉽게 하도록 설계되었습니다. 이름을 통해 알 수 있듯이 응용 프로그램을 확장하거나 사용자 지정할 때는 `developer` 모드로 전환하고, 라이브 환경에서 실행할 때는 `production` 모드로 전환해야 합니다.
+[ 및 ](../../configuration/bootstrap/application-modes.md)을(를) 포함하는 `production`응용 프로그램 모드`developer`은(는) 보안을 강화하고 개발을 더 쉽게 하도록 설계되었습니다. 이름을 통해 알 수 있듯이 응용 프로그램을 확장하거나 사용자 지정할 때는 `developer` 모드로 전환하고, 라이브 환경에서 실행할 때는 `production` 모드로 전환해야 합니다.
 
 모드 간 전환은 서버 구성이 제대로 작동하는지 확인하는 중요한 단계입니다. CLI 도구를 사용하여 모드 간에 전환할 수 있습니다.
 
@@ -164,7 +164,7 @@ server {
 
 1. 브라우저를 새로 고치고 상점 전면이 제대로 표시되는지 확인하십시오.
 
-## 5. 상점 첫 화면 확인
+## &#x200B;5. 상점 첫 화면 확인
 
 웹 브라우저의 상점 앞으로 이동하여 모든 것이 제대로 작동하는지 확인하십시오.
 

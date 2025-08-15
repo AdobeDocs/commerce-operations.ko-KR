@@ -32,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 그런 다음 Admin에서 또는 명령줄을 사용하여 Commerce 캐시(캐시에서 _정리_&#x200B;라고도 함)를 새로 고칠 때 모든 Vannish 호스트를 제거할 수 있습니다.
 
-관리자를 사용하여 캐시를 새로 고치려면 **시스템** > 도구 > **캐시 관리**&#x200B;를 클릭한 다음 페이지 상단에서 **Magento 캐시 초기화**&#x200B;를 클릭합니다. 개별 캐시 유형을 새로 고칠 수도 있습니다.
+관리자를 사용하여 캐시를 새로 고치려면 **시스템** > 도구 > **캐시 관리**&#x200B;를 클릭한 다음 페이지 상단에서 **Magento 캐시 플러시**&#x200B;를 클릭합니다. 개별 캐시 유형을 새로 고칠 수도 있습니다.
 
 cli에서 여러 Varnish 인스턴스의 캐시를 새로 고치려면 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 명령을 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)(으)로 사용합니다.

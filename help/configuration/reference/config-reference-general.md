@@ -83,7 +83,7 @@ ht-degree: 0%
 | HTTP_X_FORWARDED_FOR 유효성 검사 | `web/session/use_http_x_forwarded_for` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTTP_USER_AGENT 유효성 검사 | `web/session/use_http_user_agent` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Storefront에서 SID 사용 | `web/session/use_frontend_sid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 쿠키가 비활성화된 경우 CMS-페이지로 리디렉션합니다. | `web/browser_capabilities/cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 쿠키가 비활성화된 경우 CMS 페이지로 리디렉션합니다 | `web/browser_capabilities/cookies` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | JavaScript이 비활성화된 경우 알림 표시 | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 로컬 저장소가 비활성화된 경우 알림 표시 | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
@@ -145,7 +145,7 @@ ht-degree: 0%
 | 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | WYSIWYG 편집기 활성화 | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 카탈로그에 대한 WYSIWYG에서 미디어 콘텐츠에 정적 URL 사용 | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 카탈로그용 WYSIWYG에서 미디어 콘텐츠에 정적 URL 사용 | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 계층 기능 활성화 | `cms/hierarchy/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 계층 메타데이터 활성화 | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 계층 메뉴에 대한 기본 레이아웃 | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

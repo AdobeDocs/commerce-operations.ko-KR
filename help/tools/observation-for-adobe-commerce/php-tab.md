@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL PHP] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL PHP] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL PHP]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ![PHP 프로세스 로드](../../assets/tools/php-process-load.jpg)
 
-**[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** 프레임에는 선택한 기간 동안 PHP-FPM 프로세스에서 CPU 로드가 표시됩니다.
+**[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** 프레임은 선택한 일정 동안의 PHP-FPM 프로세스에서 CPU 로드를 보여 줍니다.
 
 ## [!UICONTROL PHP Memory detail]
 

@@ -82,7 +82,7 @@ _cron 그룹_&#x200B;은(는) 한 번에 두 개 이상의 프로세스에 대�
 </config>
 ```
 
-예를 들어 [Magento_고객 crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)을 참조하십시오.
+예를 들어 [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)을(를) 참조하십시오.
 
 ### Cron 그룹 옵션 지정
 
@@ -123,9 +123,9 @@ _cron 그룹_&#x200B;은(는) 한 번에 두 개 이상의 프로세스에 대�
 
 ## cron 작업 비활성화
 
-크론 작업에는 [관찰자](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)와 같은 `disable` 기능이 없습니다. 그러나 다음 기술을 사용하여 cron 작업을 비활성화할 수 있습니다. `schedule` 발생할 수 없는 날짜가 포함된 시간.
+크론 작업에는 `disable`관찰자[와 같은 ](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 기능이 없습니다. 그러나 다음 기술을 사용하여 cron 작업을 비활성화할 수 있습니다. `schedule` 발생할 수 없는 날짜가 포함된 시간.
 
-예를 들어 `Magento_Customer` 모듈에 정의된 `visitor_clean` cron 작업을 비활성화합니다.
+예를 들어 `visitor_clean` 모듈에 정의된 `Magento_Customer` cron 작업을 비활성화합니다.
 
 ```xml
 ...
@@ -149,4 +149,4 @@ _cron 그룹_&#x200B;은(는) 한 번에 두 개 이상의 프로세스에 대�
 ...
 ```
 
-이제 `visitor_clean` cron 작업이 2월 30일 00:00에 실행되도록 설정되었습니다(절대 발생하지 않는 날짜).
+이제 `visitor_clean` cron 작업이 2월 30일(절대 발생하지 않는 날짜)에 00:00에 실행되도록 설정되었습니다.

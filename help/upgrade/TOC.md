@@ -6,7 +6,7 @@ topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -40,18 +40,18 @@ ht-degree: 4%
       - [명령줄 인터페이스에서 도구 실행](upgrade-compatibility-tool/run.md)
       - [ [!DNL Site-Wide Analysis Tool]과(와) 통합](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Magento PHPStorm 플러그인 내에서 도구 실행](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - 보고 중{#reporting}
+   - 보고 {#reporting}
       - [보고서](upgrade-compatibility-tool/reports.md)
       - [오류 메시지](upgrade-compatibility-tool/error-messages.md)
    - [관련 도구](upgrade-compatibility-tool/related-tools.md)
 - 기여 개발자 {#developer}
    - [Git 기반 설치 업그레이드](developer/git-installs.md)
    - [모듈 관리](developer/manage-modules.md)
-- 문제 해결{#troubleshooting}
+- 문제 해결 {#troubleshooting}
    - [현재 검색 엔진이 지원되지 않음](troubleshooting/search-engine-not-supported.md)
    - [모듈 업데이트 실패 후 롤백](troubleshooting/roll-back-after-update-failure.md)
    - [업그레이드를 위한 유지 관리 모드 옵션](troubleshooting/maintenance-mode-options.md)
 - 리소스 {#resources}
    - [권장 읽기](resources/recommended-reading.md)
    - [Adobe Commerce을 통한 플랫폼 현대화](resources/recommended-upgrade-paths.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

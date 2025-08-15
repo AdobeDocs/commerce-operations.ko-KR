@@ -46,7 +46,7 @@ ht-degree: 1%
     <td>Adobe Commerce 사이트에 대한 5가지 가장 일반적인 구성 문제를 수정하고 방지합니다.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ko">캐싱</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">캐싱</a></td>
     <td>캐시 관리 도구를 사용하여 사이트의 성능을 향상시킵니다.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>서비스 구성</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ko">Fastly 설정</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Fastly 설정</a></td>
     <td>클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 Fastly 서비스를 구성합니다.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=ko">New Relic에 대한 알림 채널 구성</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">New Relic에 대한 알림 채널 구성</a></td>
     <td>New Relic 대시보드에 액세스하고 Adobe Commerce on cloud infrastructure 프로젝트에서 데이터를 분석합니다.</td>
   </tr>
   <tr>

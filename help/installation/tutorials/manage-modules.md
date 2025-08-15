@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->클라우드 프로젝트에서 모듈을 직접 활성화하거나 비활성화할 수 없습니다. 이러한 명령을 로컬로 실행한 다음 환경의 `app/etc/config.php` 파일에 변경 내용을 푸시해야 합니다. [Pro 프로젝트 워크플로: 배포 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ko#deployment-workflow)를 참조하십시오.
+>클라우드 프로젝트에서 모듈을 직접 활성화하거나 비활성화할 수 없습니다. 이러한 명령을 로컬로 실행한 다음 환경의 `app/etc/config.php` 파일에 변경 내용을 푸시해야 합니다. [Pro 프로젝트 워크플로: 배포 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow)를 참조하십시오.
 
 ## 모듈 활성화, 비활성화
 
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## 모듈 활성화 및 비활성화 정보
 
-Adobe Commerce을 사용하면 현재 사용 가능한 모듈, 즉 Adobe 제공 모듈 또는 현재 사용 가능한 타사 모듈을 활성화하거나 비활성화할 수 있습니다.
+Adobe Commerce을 사용하면 현재 사용 가능한 모듈, 즉 Adobe에서 제공하는 모듈 또는 현재 사용 가능한 타사 모듈을 활성화하거나 비활성화할 수 있습니다.
 
 특정 모듈에는 다른 모듈에 대한 종속성이 있습니다. 이 경우 다른 모듈에 대한 종속성이 있으므로 모듈을 활성화하거나 비활성화하지 못할 수 있습니다.
 
@@ -92,7 +92,7 @@ Adobe Commerce을 사용하면 현재 사용 가능한 모듈, 즉 Adobe 제공 
 
 * 모듈 A가 모듈 B와 충돌합니다. 모듈 A와 모듈 B를 사용하지 않도록 설정할 수도 있고, 둘 중 하나를 사용하지 않도록 설정할 수도 있지만 *모듈 A와 모듈 B를 동시에 사용할 수 없습니다*.
 
-* 각 모듈에 대한 Adobe Commerce `composer.json` 파일의 `require` 필드에 종속성이 선언되었습니다. 모듈 `composer.json` 파일의 `conflict` 필드에 충돌이 선언되었습니다. 종속성 그래프를 만드는 데 이 정보를 사용합니다. `A->B`은(는) 모듈 A가 모듈 B에 종속됨을 의미합니다.
+* 각 모듈에 대한 Adobe Commerce `require` 파일의 `composer.json` 필드에 종속성이 선언되었습니다. 모듈 `conflict` 파일의 `composer.json` 필드에 충돌이 선언되었습니다. 종속성 그래프를 만드는 데 이 정보를 사용합니다. `A->B`은(는) 모듈 A가 모듈 B에 종속됨을 의미합니다.
 
 * *종속성 체인*&#x200B;은(는) 모듈에서 다른 모듈로의 경로입니다. 예를 들어 모듈 A가 모듈 B에 종속되고 모듈 B가 모듈 C에 종속되는 경우 종속성 체인은 `A->B->C`입니다.
 

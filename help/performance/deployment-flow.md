@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 종속성 설치
 
-`composer.json` 및 `composer.lock` 파일은 [!DNL Commerce] 종속성을 관리하고 각 패키지에 적절한 버전을 설치합니다. [자동 로더](#update-the-autoloader)를 업데이트하려면 [사전 처리 종속성 삽입 지침](#preprocess-dependency-injection-instructions) 전에 종속성을 설치해야 합니다.
+`composer.json` 및 `composer.lock` 파일은 [!DNL Commerce] 종속성을 관리하고 각 패키지에 적절한 버전을 설치합니다. [자동 로더](#preprocess-dependency-injection-instructions)를 업데이트하려면 [사전 처리 종속성 삽입 지침](#update-the-autoloader) 전에 종속성을 설치해야 합니다.
 
 [!DNL Commerce] 종속성을 설치하려면:
 
@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## 종속성 삽입 지침 전처리
 
-종속성 삽입(DI) 지침을 전처리하고 컴파일하는 경우 Magento:
+종속성 삽입(DI) 지침을 전처리하고 컴파일하는 경우 Magento은
 
 * 모든 현재 구성을 읽고 처리합니다.
 * 클래스 간 종속성 분석

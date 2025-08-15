@@ -158,7 +158,7 @@ sudo passwd magento_user
 
 >[!NOTE]
 >
->`-a -G` 옵션은 사용자의 *기본* 그룹을 유지하는 사용자 계정에 `apache` 또는 `www-data`을(를) *보조* 그룹으로 추가하므로 중요합니다. 사용자 계정에 보조 그룹을 추가하면 [파일 소유권과 사용 권한을 제한](#set-ownership-and-permissions-for-two-users)하여 공유 그룹 구성원이 특정 파일에만 액세스할 수 있도록 할 수 있습니다.
+>`-a -G` 옵션은 사용자의 `apache`기본`www-data` 그룹을 유지하는 사용자 계정에 *또는*&#x200B;을(를) *보조* 그룹으로 추가하므로 중요합니다. 사용자 계정에 보조 그룹을 추가하면 [파일 소유권과 사용 권한을 제한](#set-ownership-and-permissions-for-two-users)하여 공유 그룹 구성원이 특정 파일에만 액세스할 수 있도록 할 수 있습니다.
 
 예를 들어 `magento_user` 사용자를 CentOS의 `apache` 기본 그룹에 추가하려면 다음을 수행합니다.
 

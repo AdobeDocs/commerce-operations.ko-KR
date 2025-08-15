@@ -48,7 +48,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 | 매개 변수 | 값 | 필수? |
 |--- |--- |--- |
 | `<path to directory to translate>` | 번역할 수 있는 코드가 있는 디렉터리의 경로입니다. 즉, 번역할 구문이 있는 PHP, PHTML 또는 XML 파일입니다.<br><br>입력한 경로에서 검색을 시작하고 포함된 모든 파일과 하위 디렉터리를 검색합니다.<br><br>`-m --magento`을(를) 사용하는 경우 이 매개 변수를 사용하지 마십시오. | 예(사전), 아니요(패키지). |
-| `-m --magento` | 이 번역 사전에서 언어 패키지를 만드는 데 필요합니다. 사용 중인 경우 bin/magento가 포함된 디렉터리를 검색합니다. 이 옵션은 사전의 각 줄에 테마나 모듈을 추가합니다.<br><br>샘플:<br><br>&quot;항목을 찾을 수 없음&quot;,&quot;항목을 찾을 수 없음&quot;,module,Magento_위시리스트 | 아니요 |
+| `-m --magento` | 이 번역 사전에서 언어 패키지를 만드는 데 필요합니다. 사용 중인 경우 bin/magento가 포함된 디렉터리를 검색합니다. 이 옵션은 사전의 각 줄에 테마나 모듈을 추가합니다.<br><br>샘플:<br><br>&quot;항목을 찾을 수 없음&quot;,&quot;항목을 찾을 수 없음&quot;,module,Magento_Wishlist | 아니요 |
 | `-o --output="<path>"` | 생성할 번역 사전 CSV 파일의 절대 파일 시스템 경로 및 파일 이름을 지정합니다. 입력한 값은 대/소문자를 구분합니다. CSV 파일의 이름은 문자의 대소문자를 포함하여 로케일 이름과 정확히 일치해야 합니다.<br><br>이 매개 변수를 생략하면 출력이 stdout으로 전달됩니다. | 아니요 |
 
 >[!INFO]
@@ -106,8 +106,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 | 매개 변수 | 값 | 필수? |
 |--- |--- |--- |
-| `<source>` | 언어 패키지로 분류하는 데 필요한 메타 정보와 결합된 번역 사전이 포함된 CSV 파일의 절대 파일 시스템 경로 및 파일 이름입니다.<br><br>CSV 파일을 만든 다음 [디렉터리 및 파일 만들기](#m2devgde-xlate-files)에 설명된 대로 언어 패키지를 만들려면 [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)을(를) 사용합니다. | 예 |
-| `<locale>` | 결과 CSV 파일의 파일 이름으로 사용되는 언어의 [ISO 639-1] (언어) 및 [ISO 3166] (국가) 식별자입니다. 예: `de_DE`, `pt_PT`, `pt_BR`. | 예 |
+| `<source>` | 언어 패키지로 분류하는 데 필요한 메타 정보와 결합된 번역 사전이 포함된 CSV 파일의 절대 파일 시스템 경로 및 파일 이름입니다.<br><br>CSV 파일을 만든 다음 [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)디렉터리 및 파일 만들기[에 설명된 대로 언어 패키지를 만들려면 ](#m2devgde-xlate-files)을(를) 사용합니다. | 예 |
+| `<locale>` | 결과 CSV 파일의 파일 이름으로 사용되는 언어의 [ISO 639-1]&#x200B;(언어) 및 [ISO 3166]&#x200B;(국가) 식별자입니다. 예: `de_DE`, `pt_PT`, `pt_BR`. | 예 |
 | `-m --mode` | 대상 파일이 있는 경우 기존 언어 패키지를 바꾸거나 새 언어 팩과 병합할지 여부를 지정합니다. 병합은 존재하는 모든 구문을 무시하고 새 구문을 추가합니다.<br><br>값: 병합 또는 바꾸기(기본값). | 아니요 |
 | `-d --allow-duplicates` | 언어 팩에서 중복을 허용하려면 이 옵션을 포함합니다. 그렇지 않으면 다른 번역이 있는 여러 항목에서 동일한 구문을 발견하면 명령이 실패하고 오류가 발생합니다. | 아니요 |
 
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 필수 라이선스 파일
 - `composer.json`
-- 언어 패키지를 [등록]하는 `registration.php`
+- 언어 패키지를 `registration.php`등록[하는 ]
 - [`language.xml`](#language-package-languagexml) 메타 정보 파일
 
 >[!INFO]
@@ -316,7 +316,7 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
 
 [번역 개요]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [번역 사전]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[번역 구성]: https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-localize
+[번역 구성]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [언어 패키지에 대해 자세히 알아보기]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

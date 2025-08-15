@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 1단계: 캐시 프론트엔드 정의
 
-Commerce 응용 프로그램에는 [캐시 형식](../cli/manage-cache.md#clean-and-flush-cache-types)에 사용할 수 있는 `default` 캐시 프론트엔드가 있습니다. 이 섹션에서는 선택적으로 다른 이름으로 캐시 프론트엔드를 정의하는 방법에 대해 설명합니다. 이는 프론트엔드를 사용자 정의하려는 경우에 유용합니다.
+Commerce 응용 프로그램에는 `default`캐시 형식[에 사용할 수 있는 ](../cli/manage-cache.md#clean-and-flush-cache-types) 캐시 프론트엔드가 있습니다. 이 섹션에서는 선택적으로 다른 이름으로 캐시 프론트엔드를 정의하는 방법에 대해 설명합니다. 이는 프론트엔드를 사용자 정의하려는 경우에 유용합니다.
 
 >[!INFO]
 >
@@ -24,7 +24,7 @@ Commerce 응용 프로그램에는 [캐시 형식](../cli/manage-cache.md#clean-
 
 사용자 지정 캐시 프론트엔드를 `app/etc/env.php` 또는 Commerce의 전역 `app/etc/di.xml`에 지정해야 합니다.
 
-다음 예제에서는 `di.xml` 파일을 재정의하는 `env.php` 파일에서 정의하는 방법을 보여 줍니다.
+다음 예제에서는 `env.php` 파일을 재정의하는 `di.xml` 파일에서 정의하는 방법을 보여 줍니다.
 
 ```php?start_inline=1
 'cache' => [

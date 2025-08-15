@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->*component*&#x200B;은(는) 모듈, 테마 또는 언어 팩일 수 있습니다. 구성 요소가 Commerce Marketplace에서 제공되는지 여부는 중요하지 않습니다.
+>*구성 요소*&#x200B;는 모듈, 테마 또는 언어 팩일 수 있습니다. 구성 요소가 Commerce Marketplace에서 제공되는지 여부는 중요하지 않습니다.
 
 1. 업그레이드를 시작합니다.
 
@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   여기서 `--keep-generated`은(는) [정적 보기 파일](../../configuration/cli/static-view-file-deployment.md)을(를) 업데이트하지 않는 선택적 인수입니다. 이 선택적 인수는 숙련된 시스템 통합자가 제한된 상황에서 *only*&#x200B;를 사용하는 것입니다. [프로덕션 모드](../../configuration/bootstrap/application-modes.md#production-mode)에서 *전용*&#x200B;을 사용해야 합니다. [개발자 모드](../../configuration/bootstrap/application-modes.md#developer-mode)에서 *사용할 수 없습니다*.
+   여기서 `--keep-generated`은(는) [정적 보기 파일](../../configuration/cli/static-view-file-deployment.md)을(를) 업데이트하지 않는 선택적 인수입니다. 이 선택적 인수는 숙련된 시스템 통합자가 제한된 상황에서 *only*&#x200B;를 사용하는 것입니다. *프로덕션 모드*&#x200B;에서 [전용](../../configuration/bootstrap/application-modes.md#production-mode)을 사용해야 합니다. *개발자 모드*&#x200B;에서 [사용할 수 없습니다](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. 캐시를 정리합니다.
 

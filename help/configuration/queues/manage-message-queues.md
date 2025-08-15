@@ -35,7 +35,7 @@ ht-degree: 0%
 >
 >관리 저장소 > 설정 > 구성 > 고급 > 시스템 > Cron 그룹 구성 옵션: 소비자에서 구성할 수 있습니다.
 >
->Commerce에서 `cron`을(를) 사용하는 방법에 대한 자세한 내용은 [cron 구성 및 실행](../cli/configure-cron-jobs.md)을 참조하십시오.
+>Commerce에서 [을(를) 사용하는 방법에 대한 자세한 내용은 ](../cli/configure-cron-jobs.md)cron 구성 및 실행`cron`을 참조하십시오.
 
 [감독자](https://supervisord.readthedocs.io/en/latest/)와 같은 프로세스 관리자를 사용하여 프로세스 상태를 모니터링할 수도 있습니다. 관리자는 명령줄을 사용하여 필요에 따라 프로세스를 재시작할 수 있습니다.
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#cron_consumers_runner)을(를) 사용하여 `consumers_runner` cron 작업을 구성하십시오.
+>Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner)을(를) 사용하여 `consumers_runner` cron 작업을 구성하십시오.
 
 ### 특정 구성
 
@@ -82,6 +82,6 @@ ht-degree: 0%
 
   >[!INFO]
   >
-  >Adobe Commerce 스토어가 Cloud 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#consumers_wait_for_max_messages)을(를) 사용하여 소비자가 메시지 큐의 메시지를 처리하는 방법을 구성하십시오.
+  >Adobe Commerce 스토어가 Cloud 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages)을(를) 사용하여 소비자가 메시지 큐의 메시지를 처리하는 방법을 구성하십시오.
 
 [메시지 큐 소비자 시작](../cli/start-message-queues.md)을 참조하세요.

@@ -63,7 +63,7 @@ Elasticsearch 및 OpenSearch에서 중지 단어를 사용하는 방법에 대�
 
 1. Commerce 서버에 로그인하거나 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)(으)로 전환합니다.
 
-1. 텍스트 편집기를 사용하여 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 디렉터리에 이름이 `stopwords_<locale_code>.csv`인 중지 단어 파일을 만듭니다.
+1. 텍스트 편집기를 사용하여 `stopwords_<locale_code>.csv` 디렉터리에 이름이 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`인 중지 단어 파일을 만듭니다.
 
    예를 들어 이탈리아어 로케일에 대한 중지 단어를 만들려면 파일 이름을 `stopwords_it_IT.csv`로 지정합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-46988: GraphQL 통화 API 요청이 null 값을 반환합니다.'
-description: ACSD-46988 패치는 GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반환하는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46988입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+description: ACSD-46988 패치는 GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반환하는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46988입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: REST, GraphQL
 role: Admin
 exl-id: 276d2c75-6e7f-4888-b4d2-ac96bea93fc1
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-46988: GraphQL 통화 API 요청이 null 값을 반환합니다.
 
-ACSD-46988 패치는 GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반환하는 문제를 수정합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46988입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+ACSD-46988 패치는 GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반환하는 문제를 수정합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-46988입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -28,7 +28,7 @@ ACSD-46988 패치는 GraphQL 통화 API 요청이 사용자 지정 통화에 대
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -41,19 +41,19 @@ GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반�
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-    currency &lbrace;
+{
+    currency {
         base_currency_code
         base_currency_symbol
         default_display_currency_code
         default_display_currency_symbol
         available_currency_codes
-        exchange_rates &lbrace;
+        exchange_rates {
             currency_to
             rate
-        &rbrace;
-    &rbrace;
-&rbrace;
+        }
+    }
+}
 </code>
 </pre>
 
@@ -70,7 +70,7 @@ GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: 품질 패치 도구 안내서의 [품질 패치 도구 > 사용량](/help/tools/quality-patches-tool/usage.md).
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 패치 설치 후 추가 단계 필요
 
@@ -87,7 +87,7 @@ Cloud 사용자의 경우:
 
 품질 패치 도구에 대한 자세한 내용은 다음을 참조하십시오.
 
-* [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+* [ 안내서에서 ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인[!DNL Quality Patches Tool].
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 품질 패치 도구 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 품질 패치 도구 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce 릴리스 정책
 
-Adobe Commerce에서는 개별 모듈 수준(예: `magento/framework 101.1.1`)에서 [시맨틱 버전 관리](https://semver.org/)를 사용하지만 마케팅 버전 번호에는 사용하지 않습니다. For example:
+Adobe Commerce에서는 개별 모듈 수준(예: [)에서 ](https://semver.org/)시맨틱 버전 관리`magento/framework 101.1.1`를 사용하지만 마케팅 버전 번호에는 사용하지 않습니다. For example:
 
 - **주요 릴리스**—2
 - **마이너 릴리스**—2.4
@@ -92,4 +92,4 @@ Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보�
 
 ## 사용자 정의 패치
 
-문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.
+문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.

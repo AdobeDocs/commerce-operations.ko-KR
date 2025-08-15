@@ -6,7 +6,7 @@ badge: label="데이비드 램바우어에 의해 기여" type="Informative" url
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 0%
 ```
 
 위의 코드 조각은 식별자가 `A_UNIQUE_ID`인 새 탭을 만듭니다. `translate` 특성이 정의되어 있고 레이블을 참조하므로 `label` 노드를 변환할 수 있습니다. 렌더링 프로세스 중에 CSS 클래스 `a-custom-css-class-to-style-this-tab`이(가) 이 탭에 대해 만들어진 HTML 요소에 적용됩니다.
-값이 `10`인 `sortOrder` 특성은 렌더링할 때 모든 탭 목록에서 탭의 위치를 정의합니다.
+값이 `sortOrder`인 `10` 특성은 렌더링할 때 모든 탭 목록에서 탭의 위치를 정의합니다.
 
 ## 섹션
 
@@ -248,12 +248,12 @@ ht-degree: 0%
 | `select` | 일반 드롭다운입니다. 사용자 지정 `source_model`이(가) 필요할 수 있습니다. `Yes/No`개 선택 항목에도 사용됩니다. 예제는 `Magento\Search\Model\Adminhtml\System\Config\Source\Engine`을(를) 참조하십시오. |
 | `multiselect` | `select`과(와) 유사하지만 여러 옵션이 유효합니다. |
 | `button` | 즉각적인 이벤트를 트리거하는 단추입니다. 버튼 텍스트 및 작업을 정의하려면 사용자 정의 프론트엔드 모델이 필요합니다. 예제는 `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`을(를) 참조하십시오. |
-| `obscure` | 값이 암호화되어 `**&#x200B;**`(으)로 표시되는 텍스트 필드입니다. 브라우저에서 &quot;Inspect 요소&quot;를 사용하여 유형을 변경해도 값이 표시되지 않습니다. |
-| `password` | `obscure`과(와) 마찬가지로 숨겨진 값이 암호화되지 않고 브라우저에서 &quot;Inspect 요소&quot;를 사용하여 형식을 강제로 변경하면 값이 표시됩니다. |
+| `obscure` | 값이 암호화되어 `****`(으)로 표시되는 텍스트 필드입니다. 브라우저에서 &quot;요소 검사&quot;를 사용하여 유형을 변경해도 값이 표시되지 않습니다. |
+| `password` | `obscure`과(와) 마찬가지로 숨겨진 값이 암호화되지 않고 브라우저에서 &quot;Inspect Element&quot;를 사용하여 형식을 강제로 변경하면 값이 표시됩니다. |
 | `file` | 처리를 위해 파일을 업로드할 수 있습니다. |
 | `label` | 편집 가능한 필드 대신 레이블을 표시합니다. 특정 범위(예: 보기 수준만 저장)에서만 필드를 편집할 수 있는 경우 이 유형을 사용합니다. |
 | `time` | 세 개의 드롭다운-시간, 분, 초를 사용하여 시간을 설정하도록 제어합니다. |
-| `allowspecific` | 특정 국가의 다중 선택 목록. `Magento\Shipping\Model\Config\Source\Allspecificcountries`과(와) 같은 `source_model` 필요 |
+| `allowspecific` | 특정 국가의 다중 선택 목록. `source_model`과(와) 같은 `Magento\Shipping\Model\Config\Source\Allspecificcountries` 필요 |
 | `image` | 이미지를 업로드할 수 있습니다. |
 | `note` | 정보 메모를 페이지에 추가할 수 있습니다. 이 형식에는 메모를 렌더링하는 데 `frontend_model`이(가) 필요합니다. |
 
@@ -348,7 +348,7 @@ ht-degree: 0%
 ```
 
 위의 예에서는 기본적으로 및 스토어 보기에서 표시/구성 가능한 두 개의 필드를 만듭니다. 두 필드에는 사용자에게 용도를 설명하는 댓글과 도구 설명이 있습니다. `label` 노드를 변환할 수 있습니다.
-`if_module_enabled`에서 지정한 모듈을 전체적으로 사용하도록 설정하면 식별자가 `ANOTHER_UNIQUE_FIELD_ID`인 필드가 표시됩니다. 또한 이 필드는 규칙 `required-entry` 및 `no-whitespace`에 대해 해당 값의 유효성을 검사합니다.
+`ANOTHER_UNIQUE_FIELD_ID`에서 지정한 모듈을 전체적으로 사용하도록 설정하면 식별자가 `if_module_enabled`인 필드가 표시됩니다. 또한 이 필드는 규칙 `required-entry` 및 `no-whitespace`에 대해 해당 값의 유효성을 검사합니다.
 식별자가 `A_UNIQUE_FIELD_ID`인 필드는 해당 값 `Yes` 및 `No`을(를) 제공하는 다른 원본 모델을 정의합니다.
 
 ### 공통 소스 모델
@@ -392,7 +392,7 @@ Commerce 2 Core에서 제공하는 소스 모델은 다음과 같습니다. 일�
 | `phoneUK` | (영국) 전화 번호를 허용합니다. |
 | `phoneUS` | 미국 전화 번호를 허용합니다. |
 | `required-entry` | 빈 값(`validate-no-empty`과 동등한 유효성 검사)을 허용하지 않습니다.<br>유효성 검사 실패 메시지: &quot;필수 필드입니다.&quot; |
-| `time` | 00:00에서 23:59 사이의 24시간 형식으로 유효한 시간을 허용합니다. 예: `15`, `15:05` 또는 `15:05:48`. |
+| `time` | 00:00에서 23:59 사이의 24시간 형식으로 올바른 시간을 허용합니다. 예: `15`, `15:05` 또는 `15:05:48`. |
 | `time12h` | 오전 12:00에서 오후 11:59:59 사이의 12시간 형식으로 올바른 시간을 허용합니다. 예: `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | 숫자와 영문자를 모두 사용하여 7자 이상을 허용합니다. |
 | `validate-alphanum-with-spaces` | 문자(a-z 또는 A-Z), 숫자(0-9) 또는 공백만 사용할 수 있습니다. |
@@ -418,7 +418,7 @@ Commerce 2 Core에서 제공하는 소스 모델은 다음과 같습니다. 일�
 
 ### 기본값
 
-`section/group/field_ID` 노드에서 기본값을 지정하여 모듈의 `etc/config.xml` 파일에 필드의 기본값을 설정할 수 있습니다.
+`etc/config.xml` 노드에서 기본값을 지정하여 모듈의 `section/group/field_ID` 파일에 필드의 기본값을 설정할 수 있습니다.
 
 #### 예: `ANOTHER_UNIQUE_FIELD_ID`에 대한 기본값 설정(기본 범위)
 

@@ -14,7 +14,7 @@ ht-degree: 3%
 
 기여 개발자는 Adobe Commerce `composer.json` 파일에서 해당 버전을 지정하여 모듈 및 확장을 업그레이드합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md)을 참조하세요.
 
-`composer.json` 파일에 `require` 섹션을 추가하거나 다음과 같이 `composer require` 명령을 사용할 수 있습니다.
+`require` 파일에 `composer.json` 섹션을 추가하거나 다음과 같이 `composer require` 명령을 사용할 수 있습니다.
 
 {{$include /help/_includes/server-login.md}}
 

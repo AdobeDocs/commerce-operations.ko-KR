@@ -33,7 +33,7 @@ Adobe Commerce을 실행하는 데 필요한 사항을 이해하는 것이 중�
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure Pro 프로젝트의 경우 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하려면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket) 티켓을 만들어야 합니다. 필요한 서비스 변경 사항을 표시하고 업데이트된 `.magento.app.yaml` 및 `services.yaml` 파일과 PHP 버전을 티켓에 포함하십시오. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=ko#supported-software-and-services)를 참조하십시오.
+>Adobe Commerce on cloud infrastructure Pro 프로젝트의 경우 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하려면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 티켓을 만들어야 합니다. 필요한 서비스 변경 사항을 표시하고 업데이트된 `.magento.app.yaml` 및 `services.yaml` 파일과 PHP 버전을 티켓에 포함하십시오. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services)를 참조하십시오.
 
 ## 지원되는 검색 엔진이 설치되었는지 확인
 
@@ -88,7 +88,7 @@ MySQL을 버전 8.0에서 버전 8.4로 올바르게 업그레이드하려면 �
    ```
 
 1. MySQL을 버전 8.4로 업그레이드하십시오.
-1. `my.cnf` 파일의 `[mysqld]`에서 `restrict_fk_on_non_standard_key`을(를) `OFF`(으)로 설정합니다.
+1. `restrict_fk_on_non_standard_key` 파일의 `OFF`에서 `[mysqld]`을(를) `my.cnf`(으)로 설정합니다.
 
    ```bash
    [mysqld]
@@ -99,7 +99,7 @@ MySQL을 버전 8.0에서 버전 8.4로 올바르게 업그레이드하려면 �
    >
    >`restrict_fk_on_non_standard_key`의 값을 `OFF`(으)로 변경하지 않으면 가져오는 동안 다음 오류가 발생합니다.
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. MySQL 서버를 다시 시작합니다.
@@ -122,7 +122,7 @@ MySQL을 버전 8.0에서 버전 8.4로 올바르게 업그레이드하려면 �
 
 ### 검색 엔진
 
-2.4.0으로 업그레이드하기 전에 Elasticsearch 7.6 이상 또는 OpenSearch 1.2를 설치하고 구성해야 합니다. Adobe은 더 이상 Elasticsearch 2.x, 5.x 및 6.x를 지원하지 않습니다. _구성 가이드_&#x200B;의 [검색 엔진 구성](../../configuration/search/configure-search-engine.md)에서는 Elasticsearch을 지원되는 버전으로 업그레이드한 후 수행해야 하는 작업에 대해 설명합니다.
+2.4.0으로 업그레이드하기 전에 Elasticsearch 7.6 이상 또는 OpenSearch 1.2를 설치하고 구성해야 합니다. Adobe은 더 이상 Elasticsearch 2.x, 5.x 및 6.x를 지원하지 않습니다. [구성 가이드](../../configuration/search/configure-search-engine.md)의 _검색 엔진 구성_&#x200B;에서는 Elasticsearch을 지원되는 버전으로 업그레이드한 후 수행해야 하는 작업에 대해 설명합니다.
 
 프로덕션에 배포하기 전에 데이터 백업, 잠재적인 마이그레이션 문제 감지 및 업그레이드 테스트에 대한 전체 지침은 [Elasticsearch 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)를 참조하십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작해야 할 수도 있고 필요하지 않을 수도 있습니다.
 
@@ -154,7 +154,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니
 
 1. Elasticsearch 7.x 서버를 8.x로 업그레이드하고 가 실행 중인지 확인합니다. [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)를 참조하세요.
 
-1. `elasticsearch.yml` 파일에 다음 구성을 추가하고 Elasticsearch 8.x 서비스를 다시 시작하여 `id_field_data` 필드를 사용하도록 설정합니다.
+1. `id_field_data` 파일에 다음 구성을 추가하고 Elasticsearch 8.x 서비스를 다시 시작하여 `elasticsearch.yml` 필드를 사용하도록 설정합니다.
 
    ```yaml
    indices:
@@ -164,7 +164,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니
 
    >[!INFO]
    >
-   >Elasticsearch 8.x를 지원하기 위해 Adobe Commerce 2.4.6에서는 기본적으로 `indices.id_field_data` 속성을 허용하지 않으며 `docvalue_fields` 속성의 `_id` 필드를 사용합니다.
+   >Elasticsearch 8.x를 지원하기 위해 Adobe Commerce 2.4.6에서는 기본적으로 `indices.id_field_data` 속성을 허용하지 않으며 `_id` 속성의 `docvalue_fields` 필드를 사용합니다.
 
 1. Adobe Commerce 프로젝트의 루트 디렉터리에서 작성기 종속성을 업데이트하여 `Magento_Elasticsearch7` 모듈을 제거하고 `Magento_Elasticsearch8` 모듈을 설치합니다.
 
@@ -200,7 +200,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니
    bin/magento setup:upgrade
    ```
 
-1. [!DNL Admin]에서 [Elasticsearch 구성](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin).
+1. [에서 ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearch 구성[!DNL Admin].
 
 1. 카탈로그 색인을 다시 색인화합니다.
 
@@ -232,7 +232,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니
    bin/magento setup:upgrade
    ```
 
-1. [!DNL Admin]에서 [Elasticsearch 구성](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin).
+1. [에서 ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearch 구성[!DNL Admin].
 
 1. 카탈로그 색인을 다시 색인화합니다.
 
@@ -283,7 +283,7 @@ Bash 셸에서 값을 설정하려면 다음을 수행합니다.
 
 >[!IMPORTANT]
 >
->`php.ini` 파일에서 `pcre.recursion_limit` 속성의 값을 설정하지 않는 것이 좋습니다. 이로 인해 실패 알림 없이 롤백이 불완전할 수 있기 때문입니다.
+>`pcre.recursion_limit` 파일에서 `php.ini` 속성의 값을 설정하지 않는 것이 좋습니다. 이로 인해 실패 알림 없이 롤백이 불완전할 수 있기 때문입니다.
 
 ## cron 작업이 실행 중인지 확인
 

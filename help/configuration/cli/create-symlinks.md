@@ -29,13 +29,13 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 | 매개 변수 | 값 | 필수? |
 | --------- | ----- | --------- |
-| `--type` | 원본 파일 형식: [less] (기본값: &quot;less&quot;)<br>현재 지원되는 파일 형식은 LESS뿐입니다. | 아니요 |
+| `--type` | 원본 파일 형식: [less]&#x200B;(기본값: &quot;less&quot;)<br>현재 지원되는 파일 형식은 LESS뿐입니다. | 아니요 |
 | `--locale` | 로케일 코드.<br>로케일 코드 목록을 표시하려면 `bin/magento info:language:list`을(를) 입력하십시오. | 아니요 |
 | `--area` | 영역(관리 영역의 경우 `adminhtml`, 상점 앞의 경우 `frontend`). | 아니요 |
 | `--theme` | `<VendorName>/<theme-name>` 형식의 테마 이름입니다. 예: `Magento/blank` 또는 `Magento/backend`. | 아니요 |
-| `<file>` | CSS 확장명 없이 LESS로 변환할 CSS 파일의 공백으로 구분된 목록입니다. (adminhtml 유형 `css/styles css/styles-old`의 기본값은 `css/styles-m css/styles-l`입니다.) | 아니요 |
+| `<file>` | CSS 확장명 없이 LESS로 변환할 CSS 파일의 공백으로 구분된 목록입니다. (adminhtml 유형 `css/styles-m css/styles-l`의 기본값은 `css/styles css/styles-old`입니다.) | 아니요 |
 
-예를 들어 `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`(이)라는 CSS 파일을 사용하여 `en_US` 로케일에서 `VendorName/themeName`(이)라는 프론트엔드 테마에 대한 LESS 파일을 만들려면 다음 명령을 입력합니다.
+예를 들어 `VendorName/themeName`(이)라는 CSS 파일을 사용하여 `en_US` 로케일에서 `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`(이)라는 프론트엔드 테마에 대한 LESS 파일을 만들려면 다음 명령을 입력합니다.
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l

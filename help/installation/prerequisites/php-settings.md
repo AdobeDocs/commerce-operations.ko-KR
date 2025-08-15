@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >최신 버전의 Adobe Commerce은 PHP 8.1 이상이 필요합니다. 지원되는 모든 PHP 버전에 대해서는 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
 
-클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ko)을 참조하십시오.
+클라우드 구성 지침은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 안내서에서 _PHP 설정_&#x200B;을 참조하십시오.
 
 ## PHP 프로세스 제어
 
@@ -65,7 +65,7 @@ Adobe Commerce에는 특정 PHP 확장명이 필요합니다. 다음 목록은 �
 
 >[!WARNING]
 >
->PHP 7.4.20을 사용하는 경우 `php.ini` 파일에서 `pcre.jit=0`을(를) 설정합니다. CSS를 로드할 수 없는 PHP [bug](https://bugs.php.net/bug.php?id=81101)을(를) 알아봅니다.
+>PHP 7.4.20을 사용하는 경우 `pcre.jit=0` 파일에서 `php.ini`을(를) 설정합니다. CSS를 로드할 수 없는 PHP [bug](https://bugs.php.net/bug.php?id=81101)을(를) 알아봅니다.
 
 - PHP에 대한 시스템 시간대를 설정합니다. 그렇지 않으면 설치 중에 다음과 같은 오류가 표시되고 cron과 같은 시간 관련 작업이 작동하지 않을 수 있습니다.
 
@@ -92,13 +92,13 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Adobe Commerce 2.1 이상에 필요한 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)을(를) 사용하도록 설정합니다.
 
-  Adobe 성능상의 이유로 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php)을(를) 사용하도록 설정하는 것이 좋습니다. OPcache는 많은 PHP 배포에서 사용할 수 있습니다.
+  Adobe에서는 성능상의 이유로 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php)을(를) 사용하도록 권장합니다. OPcache는 많은 PHP 배포에서 사용할 수 있습니다.
 
   Adobe Commerce 2.1 이상 버전은 코드 생성에 PHP 코드 주석을 사용합니다.
 
 >[!NOTE]
 >
->설치 및 업그레이드 중 문제가 발생하지 않도록 하기 위해, Adobe은 PHP 명령줄 구성과 PHP 웹 서버 플러그인 구성 모두에 동일한 PHP 설정을 적용할 것을 강력히 권장합니다. 자세한 내용은 다음 섹션을 참조하십시오.
+>설치 및 업그레이드 중 문제가 발생하지 않도록 하기 위해 Adobe에서는 PHP 명령줄 구성과 PHP 웹 서버 플러그인 구성 모두에 동일한 PHP 설정을 적용할 것을 강력히 권장합니다. 자세한 내용은 다음 섹션을 참조하십시오.
 
 ## PHP 구성 파일 찾기
 

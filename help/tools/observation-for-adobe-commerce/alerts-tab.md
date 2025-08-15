@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Alerts] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL Alerts] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL Alerts]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ![중요 경고 열기](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-**[!UICONTROL Open Alert Details]** 프레임에는 선택한 기간 동안 진행 중인 중요 경고 수가 표시됩니다. 경고에는 Adobe이 생성한 경고 및 파트너 또는 판매자가 생성한 경고가 포함됩니다.
+**[!UICONTROL Open Alert Details]** 프레임에는 선택한 기간 동안 진행 중인 중요 경고 수가 표시됩니다. 경고에는 Adobe에서 생성한 경고 및 파트너 또는 판매자가 생성한 경고가 포함됩니다.
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![마감된 중요 경고](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-**[!UICONTROL Closed Critical Alerts]** 프레임에는 선택한 기간 동안 닫힌 중요 경고 수가 표시됩니다. 경고에는 Adobe이 생성한 경고 및 파트너 또는 판매자가 생성한 경고가 포함됩니다.
+**[!UICONTROL Closed Critical Alerts]** 프레임에는 선택한 기간 동안 닫힌 중요 경고 수가 표시됩니다. 경고에는 Adobe에서 생성한 경고 및 파트너 또는 판매자가 생성한 경고가 포함됩니다.
 
 ## [!UICONTROL Critical Alert Details]
 

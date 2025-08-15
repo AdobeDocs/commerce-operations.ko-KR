@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # [!DNL Data Migration Tool] 구성
 
-경우에 따라 [확장](https://marketplace.magento.com/extensions.html) 또는 사용자 지정 코드에서 만든 데이터 형식 및 구조가 Magento 1과 Magento 2에 따라 다릅니다. [!DNL Data Migration Tool] 내의 확장 지점을 사용하여 이 데이터를 마이그레이션하십시오. 데이터 형식 및 구조가 동일한 경우 사용자 개입 없이 이 툴이 데이터를 자동으로 마이그레이션할 수 있습니다.
+경우에 따라 [확장](https://marketplace.magento.com/extensions.html) 또는 사용자 지정 코드에서 만든 데이터 형식 및 구조가 Magento 1과 Magento 2에서 다릅니다. [!DNL Data Migration Tool] 내의 확장 지점을 사용하여 이 데이터를 마이그레이션하십시오. 데이터 형식 및 구조가 동일한 경우 사용자 개입 없이 이 툴이 데이터를 자동으로 마이그레이션할 수 있습니다.
 
 마이그레이션하는 동안 [맵 단계](technical-specification.md#map-step)에서 확장에서 만든 테이블을 포함하여 모든 Magento 1과 Magento 2 테이블을 검색하고 비교합니다. 테이블이 동일하면 도구에서 데이터를 자동으로 마이그레이션합니다. 테이블이 다른 경우 도구가 종료되고 사용자에게 알립니다.
 
 >[!NOTE]
 >
->[!DNL Data Migration Tool]을(를) 확장하기 전에 [기술 사양](technical-specification.md)을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
+>[을(를) 확장하기 전에 ](technical-specification.md)기술 사양[!DNL Data Migration Tool]을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
 
 
 ## 사소한 데이터 형식 및 구조 변경
@@ -28,7 +28,7 @@ ht-degree: 0%
 - 매핑 규칙을 사용하여 테이블 또는 필드 이름 변경
 - 기존 처리기 또는 사용자 지정 처리기로 데이터 형식 변환
 
-다음은 매핑 규칙과 핸들러를 모두 사용하는 예를 보여줍니다. 이 예에서는 Magento 2에 대해 개선된 &quot;GreatBlog&quot;라는 가상의 Magento 1 확장을 사용합니다.
+다음은 매핑 규칙과 핸들러를 모두 사용하는 예를 보여줍니다. 이 예제에서는 Magento 2용으로 개선된 &quot;GreatBlog&quot;라는 가상의 Magento 1 확장을 사용합니다.
 
 ```xml
 <source>
@@ -72,7 +72,7 @@ ht-degree: 0%
 ```
 
 - `great_blog_index` 인덱스 테이블에서 불필요한 데이터를 마이그레이션하지 마십시오.
-- Magento 2에서 테이블 `great_blog_publication`의 이름이 `great_blog_post`(으)로 변경되었으므로 데이터가 새 테이블로 마이그레이션됩니다.
+- 테이블 `great_blog_publication`의 이름이 Magento 2에서 `great_blog_post`(으)로 변경되었으므로 데이터가 새 테이블로 마이그레이션됩니다.
    - `summary` 필드의 이름이 `title`(으)로 변경되었으므로 데이터가 새 필드로 마이그레이션됩니다.
    - `priority` 필드가 제거되어 Magento 2에 더 이상 존재하지 않습니다.
    - `body` 필드의 데이터 형식이 변경되었으므로 사용자 지정 처리기에서 처리해야 합니다. `\Migration\Handler\GreatBlog\NewFormat`.
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 ### 다른 단계에서 매핑 확장
 
-[EAV 단계](technical-specification.md#eav-step) 및 고객 특성 단계와 같은 다른 단계는 매핑을 지원합니다. 이 단계는 사전 정의된 Magento 테이블 목록을 마이그레이션합니다. 예를 들어, &quot;GreatBlog&quot; 확장에 `eav_attribute` 테이블에 추가 필드가 있고 Magento 2에서 이름이 변경되었다고 가정해 봅시다. 테이블이 [EAV 단계](technical-specification.md#eav-step)에 의해 처리되므로 `map-eav.xml` 파일에 대해 매핑 규칙을 작성해야 합니다. `map.xml` 및 `map-eav.xml` 파일에서 동일한 `map.xsd` 스키마를 사용하므로 매핑 규칙은 동일하게 유지됩니다.
+[EAV 단계](technical-specification.md#eav-step) 및 고객 특성 단계와 같은 다른 단계는 매핑을 지원합니다. 이 단계는 사전 정의된 Magento 테이블 목록을 마이그레이션합니다. 예를 들어 &quot;GreatBlog&quot; 확장에 `eav_attribute` 테이블에 추가 필드가 있고 Magento 2에서 이름이 변경되었다고 가정해 봅시다. 테이블이 [EAV 단계](technical-specification.md#eav-step)에 의해 처리되므로 `map-eav.xml` 파일에 대해 매핑 규칙을 작성해야 합니다. `map.xml` 및 `map-eav.xml` 파일에서 동일한 `map.xsd` 스키마를 사용하므로 매핑 규칙은 동일하게 유지됩니다.
 
 ## 주요 데이터 형식 및 구조 변경
 
@@ -122,7 +122,7 @@ Magento 2에 태그 `greatblog_post_tags`에 대한 새 테이블이 도입되�
 | sort_order | SMALLINT |
 ```
 
-Magento 2 `greatblog_post` 테이블은 이제 다음과 같습니다.
+이제 Magento 2 `greatblog_post` 테이블은 다음과 같습니다.
 
 ```text
 | Field     | Type     |
@@ -167,7 +167,7 @@ Magento 2 `greatblog_post` 테이블은 이제 다음과 같습니다.
 >자세한 내용은 [구성](technical-specification.md#configuration), [단계 내부](technical-specification.md#step-internals), [단계](technical-specification.md#step-stages) 및 [실행 모드](technical-specification.md#running-modes)를 참조하세요.
 
 
-이러한 클래스 내에서 복잡한 SQL 쿼리를 취합하여 데이터를 가져오고 마이그레이션할 수 있습니다. 또한 [맵 단계](technical-specification.md#map-step)에서 이러한 테이블을 &quot;무시해야&quot; 합니다. 기존의 모든 테이블을 검사하고 데이터가 `map.xml` 파일의 `<ignore>` 태그에 없으면 데이터를 마이그레이션하려고 시도하기 때문입니다.
+이러한 클래스 내에서 복잡한 SQL 쿼리를 취합하여 데이터를 가져오고 마이그레이션할 수 있습니다. 또한 [맵 단계](technical-specification.md#map-step)에서 이러한 테이블을 &quot;무시해야&quot; 합니다. 기존의 모든 테이블을 검사하고 데이터가 `<ignore>` 파일의 `map.xml` 태그에 없으면 데이터를 마이그레이션하려고 시도하기 때문입니다.
 
 무결성 검사를 위해 `config.xml` 파일에 추가 맵 파일을 정의하여 테이블 구조가 예상과 같은지 확인합니다.
 
@@ -248,7 +248,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-그런 다음 데이터를 처리하고 Magento 2 데이터베이스 `Vendor\Migration\Step\GreatBlog\Data`에 저장할 클래스를 만들어야 합니다.
+그런 다음 Magento 2 데이터베이스 `Vendor\Migration\Step\GreatBlog\Data`에 데이터를 처리하고 저장하는 클래스를 만들어야 합니다.
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -366,7 +366,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 </groups>
 ```
 
-그런 다음 `Migration\App\Step\AbstractDelta`을(를) 확장하는 `Delta` 클래스 `Vendor\Migration\Step\GreatBlog\Delta`을(를) 만듭니다.
+그런 다음 `Delta`을(를) 확장하는 `Vendor\Migration\Step\GreatBlog\Delta` 클래스 `Migration\App\Step\AbstractDelta`을(를) 만듭니다.
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta

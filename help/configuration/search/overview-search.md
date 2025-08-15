@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 검색 엔진 개요
 
-버전 2.4.4부터 Adobe Commerce의 카탈로그 검색 엔진에는 [Elasticsearch] 또는 [OpenSearch]이(가) 필요합니다. 이전 버전의 2.4.x는 Elasticsearch이 필요합니다. 검색 엔진 설치 및 초기 구성에 대한 자세한 내용은 다음 항목을 참조하십시오.
+버전 2.4.4부터 Adobe Commerce은 카탈로그 검색 엔진으로 [Elasticsearch] 또는 [OpenSearch]을(를) 필요로 합니다. 이전 버전의 2.4.x에는 Elasticsearch이 필요합니다. 검색 엔진 설치 및 초기 구성에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
 - [검색 엔진 사전 요구 사항](../../installation/prerequisites/search-engine/overview.md)
 - [검색 엔진에 대한 nginx 구성](../../installation/prerequisites/search-engine/configure-nginx.md)

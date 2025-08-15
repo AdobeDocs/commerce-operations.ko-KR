@@ -1,6 +1,6 @@
 ---
 title: 데이터 마이그레이션에 대해 지원되는 버전
-description: ' [!DNL Data Migration Tool] 이(가) 지원하는 Magento 1 및 Magento 2의 버전에 대해 알아봅니다.'
+description: ' [!DNL Data Migration Tool] 이(가) 지원하는 Magento 1 및 Magento 2 버전에 대해 알아봅니다.'
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

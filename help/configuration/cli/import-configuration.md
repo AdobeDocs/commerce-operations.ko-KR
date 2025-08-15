@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce 2.2 [파이프라인 배포 모델](../deployment/technical-details.md)을 사용하여 프로덕션 시스템을 설정하는 경우 `config.php` 및 `env.php`에서 데이터베이스로 구성 설정을 _가져오기_해야 합니다.
+Commerce 2.2 [파이프라인 배포 모델](../deployment/technical-details.md)을 사용하여 프로덕션 시스템을 설정하는 경우 _및_&#x200B;에서 데이터베이스로 구성 설정을 `config.php`가져오기`env.php`해야 합니다.
 이러한 설정에는 구성 경로 및 값, 웹 사이트, 스토어, 스토어 조회수 및 테마가 포함됩니다.
 
 웹 사이트, 스토어, 스토어 보기 및 테마를 가져온 후 제품 속성을 만들고 프로덕션 시스템의 웹 사이트, 스토어 및 스토어 보기에 적용할 수 있습니다.
@@ -64,7 +64,7 @@ Nothing to import
 
 ### 시스템 구성
 
-Commerce에서는 사전 및 사후 처리 작업이 필요하므로 `config.php` 또는 `env.php` 파일에서 `system` 배열의 값을 데이터베이스로 가져오지 않고 직접 사용합니다.
+Commerce에서는 사전 및 사후 처리 작업이 필요하므로 `system` 또는 `config.php` 파일에서 `env.php` 배열의 값을 데이터베이스로 가져오지 않고 직접 사용합니다.
 
 예를 들어 백엔드 모델을 사용하여 구성 경로 `web/secure/base_url`의 값을 확인해야 합니다.
 
@@ -80,7 +80,7 @@ Commerce에서는 사전 및 사후 처리 작업이 필요하므로 `config.php
 ### 웹 사이트, 스토어 및 스토어 그룹 구성
 
 다음 유형의 구성을 가져옵니다.
-(이러한 구성은 `config.php`의 `scopes` 배열 아래에 있습니다.)
+(이러한 구성은 `scopes`의 `config.php` 배열 아래에 있습니다.)
 
 - `websites`: 웹 사이트 관련 구성
 - `groups`: 관련 구성을 저장합니다.
@@ -90,7 +90,7 @@ Commerce에서는 사전 및 사후 처리 작업이 필요하므로 `config.php
 
 - `create`: `config.php`에 프로덕션 환경에 없는 새 엔터티(`websites`, `groups`, `stores`)가 있습니다.
 - `update`: `config.php`에 프로덕션 환경과 다른 엔터티(`websites`, `groups`, `stores`)가 있습니다.
-- `delete`: `config.php`은(는) 프로덕션 환경에 있는 엔터티(`websites`, `groups`, `stores`)를 _포함하지 않습니다_
+- `delete`: `config.php`은(는) 프로덕션 환경에 있는 엔터티(_,_, `websites`)를 `groups`포함하지 않습니다`stores`
 
 >[!INFO]
 >
@@ -98,7 +98,7 @@ Commerce에서는 사전 및 사후 처리 작업이 필요하므로 `config.php
 
 ### 테마 구성
 
-테마 구성에는 Commerce 시스템에 등록된 모든 테마가 포함됩니다. 데이터는 `theme` 데이터베이스 테이블에서 직접 가져옵니다. (테마 구성이 `config.php`의 `themes` 배열에 있습니다.)
+테마 구성에는 Commerce 시스템에 등록된 모든 테마가 포함됩니다. 데이터는 `theme` 데이터베이스 테이블에서 직접 가져옵니다. (테마 구성이 `themes`의 `config.php` 배열에 있습니다.)
 
 #### 테마 데이터 구조
 

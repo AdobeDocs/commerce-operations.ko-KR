@@ -52,7 +52,7 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
 이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다. Beta에 참여하려면 [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)에 전자 메일 요청을 보내십시오.
 
-Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/ko/docs/commerce/live-search/install#install-the-live-search-beta)를 참조하세요.
+Live Search Beta를 설치하려면 [Live Search 안내서](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta)를 참조하세요.
 
 ### IBM Sterling Order Management 시스템 통합(Private Beta)
 
@@ -74,7 +74,7 @@ Live Search Beta를 설치하려면 [Live Search 안내서](https://experiencele
 - GraphQL 개선 사항
 - 일반 품질 버그 수정
 - 커뮤니티 기여
-- [Adobe Commerce 서비스](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
+- [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
 
 #### 명명 규칙 및 일정
 

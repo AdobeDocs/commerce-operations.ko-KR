@@ -25,13 +25,13 @@ ht-degree: 0%
 
 >[!TIP]
 >
->`support:backup` 명령은 `setup:backup` 명령에 의해 수행된 것과 동일한 코드 백업입니다&#x200B;_not_. `support:backup` 명령은 Adobe Commerce 지원에서 검사할 코드를 백업하기 위한 것입니다.
+>`support:backup` 명령은 _명령에 의해 수행된 것과 동일한 코드 백업입니다_ not`setup:backup`. `support:backup` 명령은 Adobe Commerce 지원에서 검사할 코드를 백업하기 위한 것입니다.
 
 ## B2B 패치 {#b2b-patches}
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 

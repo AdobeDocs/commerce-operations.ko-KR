@@ -18,11 +18,11 @@ ht-degree: 0%
 >Magento 및 [!DNL Data Migration Tool] 버전이 일치해야 합니다.
 
 
-Magento 2와 [!DNL Data Migration Tool]의 *동일한 릴리스 버전*&#x200B;을(를) 사용하고 있는지 확인하십시오. 예를 들어 Magento 버전 2.2.0의 경우 [!DNL Data Migration Tool] 버전 2.2.0도 사용해야 합니다.
+Magento 2와 *의*&#x200B;동일한 릴리스 버전[!DNL Data Migration Tool]을(를) 사용하고 있는지 확인하십시오. 예를 들어 Magento 버전 2.2.0의 경우 [!DNL Data Migration Tool] 버전 2.2.0도 사용해야 합니다.
 
 ## 버전 확인
 
-다음 방법 중 하나를 사용하여 Magento 버전을 확인하십시오.
+다음 방법 중 하나를 사용하여 Magento 버전을 확인합니다.
 
 - [작성기](#composer-metapackage)
 - [GitHub 저장소](#github-repository)
@@ -47,14 +47,14 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-현재 `develop` 분기에 있는 경우 계속하려면 [릴리스된 분기](https://developer.adobe.com/commerce/contributor/guides/install/change-version/)(으)로 변경해야 합니다.
+현재 `develop` 분기에 있는 경우 계속하려면 [릴리스된 분기](https://developer.adobe.com/commerce/contributor/guides/install/change-version/)&#x200B;(으)로 변경해야 합니다.
 
 아직 Adobe Commerce 소프트웨어를 설치하지 않았다면 [지금 설치](../../installation/prerequisites/commerce.md)하십시오.
 GitHub 리포지토리를 복제하는 경우 [(기여자) GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)에서 설명한 대로 릴리스 태그를 체크아웃해야 합니다.
 
 ## [!DNL Data Migration Tool]의 릴리스 버전 찾기
 
-사용 가능한 릴리스 버전을 찾으려면 [!DNL Data Migration Tool] GitHub 저장소의 [릴리스](https://github.com/magento/data-migration-tool/releases) 페이지로 이동하십시오.
+사용 가능한 릴리스 버전을 찾으려면 [ GitHub 저장소의 ](https://github.com/magento/data-migration-tool/releases)릴리스[!DNL Data Migration Tool] 페이지로 이동하십시오.
 
 ## [!DNL Data Migration Tool] 설치
 
@@ -66,7 +66,7 @@ GitHub 리포지토리를 복제하는 경우 [(기여자) GitHub 리포지토�
 설치하기 전에 다음을 확인하십시오.
 
 - [사전 조건](prerequisites.md) 섹션에서 언급된 모든 작업을 완료했습니다.
-- [Magento 2 소프트웨어의 버전을 확인했습니다](install.md#check-your-version)
+- [Magento 2 소프트웨어 버전을 확인했습니다](install.md#check-your-version)
 
 ### `repo.magento.com`에서 설치
 
@@ -84,7 +84,7 @@ GitHub 리포지토리를 복제하는 경우 [(기여자) GitHub 리포지토�
    composer require magento/data-migration-tool:<version>
    ```
 
-   여기서 `<version>`은(는) Magento 2 코드 베이스의 버전과 일치해야 합니다.
+   여기서 `<version>`은(는) Magento 2 코드베이스 버전과 일치해야 합니다.
 
    예를 들어 버전 2.2.0의 경우 다음을 입력합니다.
 
@@ -114,7 +114,7 @@ GitHub 리포지토리를 복제한 경우 아래 단계에 따라 [!DNL Data Mi
    composer require magento/data-migration-tool:<version>
    ```
 
-   여기서 `<version>`은(는) Magento 2 코드 베이스의 버전과 일치해야 합니다.
+   여기서 `<version>`은(는) Magento 2 코드베이스 버전과 일치해야 합니다.
 
    예를 들어 버전 2.2.0의 경우 다음을 입력합니다.
 

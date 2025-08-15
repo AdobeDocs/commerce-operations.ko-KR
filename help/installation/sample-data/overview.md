@@ -27,5 +27,5 @@ Commerce 소프트웨어를 설치하기 전이나 후에 샘플 데이터를 �
 
 | 설치 방법 | 설명 | 필수 스킬 레벨 |
 |--- |--- |--- |
-| 작성기 사용 | [응용 프로그램의 루트 `composer.json`](composer-packages.md)을(를) 수정하여 샘플 데이터 모듈을 사용하도록 설정하려면 `magento sampledata:deploy`을 실행하십시오. | 작성기 지식 및 Commerce 파일 시스템에 대한 액세스 권한이 필요합니다. |
+| 작성기 사용 | [응용 프로그램의 루트 `magento sampledata:deploy`을(를) 수정하여 샘플 데이터 모듈을 사용하도록 설정하려면 `composer.json`](composer-packages.md)을 실행하십시오. | 작성기 지식 및 Commerce 파일 시스템에 대한 액세스 권한이 필요합니다. |
 | 저장소 복제 | [GitHub 리포지토리와 샘플 데이터 리포지토리를 복제](git-repositories.md)한 다음 함께 연결합니다. | 기여 개발자만 해당. 다른 모든 사용자는 이전 방법 중 하나를 사용해야 합니다. |

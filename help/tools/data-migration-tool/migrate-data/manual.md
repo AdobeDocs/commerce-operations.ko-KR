@@ -33,9 +33,9 @@ ht-degree: 0%
 >데이터베이스 미디어 저장 방법은 Magento 2.4.3부터 더 이상 사용되지 않습니다.
 
 
-이 섹션은 Magento 데이터베이스에 미디어 파일을 저장하는 경우 *만*&#x200B;이 적용됩니다. 이 단계는 [데이터 마이그레이션](data.md) 전에 수행해야 합니다.
+이 섹션은 Magento 데이터베이스에 미디어 파일을 저장하는 경우 *only*&#x200B;에만 적용됩니다. 이 단계는 [데이터 마이그레이션](data.md) 전에 수행해야 합니다.
 
-1. 관리자로 Magento 1 관리 패널에 로그인합니다.
+1. Magento 1 관리 패널에 관리자로 로그인합니다.
 
 1. **시스템** > **구성** > 고급 > **시스템**&#x200B;을 클릭합니다.
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 모든 미디어 파일(제품, 카테고리, WYSIWYG 편집기 등의 이미지)은 `<your Magento 1 install dir>/media`에서 `<your Magento 2 install dir>/pub/media`(으)로 수동으로 복사해야 합니다.
 
-그러나 Magento 1 `media` 폴더에 있는 `.htaccess` 파일을 *복사하지*&#x200B;마십시오. Magento 2에는 유지해야 하는 자체 `.htaccess`이(가) 있습니다.
+그러나 Magento 1 *폴더에 있는* 파일을 `.htaccess`복사하지 `media`마십시오. Magento 2에는 유지해야 하는 자체 `.htaccess`이(가) 있습니다.
 
 ## Storefront 디자인
 

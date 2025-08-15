@@ -16,7 +16,7 @@ ht-degree: 0%
 
 이 항목에서는 파일 기반 로깅에 중점을 두지만, Commerce에서는 로그를 데이터베이스에 저장할 수 있는 유연성도 제공합니다.
 
-Adobe은 다음과 같은 이유로 중앙 집중식 애플리케이션 로깅을 사용할 것을 권장합니다.
+Adobe에서는 다음과 같은 이유로 중앙 집중식 애플리케이션 로깅을 사용할 것을 권장합니다.
 
 - 애플리케이션 서버 이외의 서버에 로그를 저장할 수 있고 디스크 I/O 작업을 줄여 애플리케이션 서버 지원을 간소화합니다.
 
@@ -34,7 +34,7 @@ Adobe은 다음과 같은 이유로 중앙 집중식 애플리케이션 로깅�
 
 ## 독백
 
-Commerce 2는 PSR-3 표준을 준수합니다. 기본적으로 Commerce에서는 [Monolog]을(를) 사용합니다. Commerce 응용 프로그램 [`di.xml`][di]에서 `Psr\Log\LoggerInterface`에 대한 기본 설정으로 구현된 Monolog입니다.
+Commerce 2는 PSR-3 표준을 준수합니다. 기본적으로 Commerce에서는 [Monolog]을(를) 사용합니다. Commerce 응용 프로그램 `Psr\Log\LoggerInterface`에서 [`di.xml`][di]에 대한 기본 설정으로 구현된 Monolog입니다.
 
 Monolog는 고급 로깅 전략을 구축 할 수있는 광범위한 핸들러를 가진 인기있는 PHP 로깅 솔루션입니다. 다음은 Monolog의 작동 방식에 대한 요약입니다.
 

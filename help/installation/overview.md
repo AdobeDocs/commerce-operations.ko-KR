@@ -20,7 +20,7 @@ ht-degree: 3%
 >
 >성공적으로 진행하려면 중간 기술 지식과 서버 액세스 권한이 있어야 합니다.
 
-설치를 통해 [고객 응대 상점](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/storefront/storefront) 및 [관리 패널](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/admin/admin)이 모두 포함된 완전한 기능의 Adobe Commerce 스토어가 만들어집니다. 프로세스를 시작하기 전에 데이터베이스 자격 증명, 도메인 정보 및 인증 키를 준비해야 합니다.
+설치를 통해 [고객 응대 상점](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 및 [관리 패널](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)이 모두 포함된 완전한 기능의 Adobe Commerce 스토어가 만들어집니다. 프로세스를 시작하기 전에 데이터베이스 자격 증명, 도메인 정보 및 인증 키를 준비해야 합니다.
 
 ## 워크플로
 

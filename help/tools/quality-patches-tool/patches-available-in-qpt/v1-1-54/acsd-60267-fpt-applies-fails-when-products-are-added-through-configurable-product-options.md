@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-60267: 구성 가능한 제품 옵션을 통해 제품을 추가할 때 FPT가 잘못 적용됩니다.
 
-ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 고정 제품 세금(FPT)이 올바르게 적용되지만 구성 가능한 제품 옵션을 통해 동일한 제품을 선택할 경우 실패하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko) 1.1.54가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-60267입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 고정 제품 세금(FPT)이 올바르게 적용되지만 구성 가능한 제품 옵션을 통해 동일한 제품을 선택할 경우 실패하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.54가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-60267입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -28,7 +28,7 @@ ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 �
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -36,7 +36,7 @@ ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 �
 
 <u>재현 단계</u>:
 
-1. *관리자* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > **[!UICONTROL Fixed Product Taxes]**(으)로 이동하여 *[!UICONTROL Enable FPT]*&#x200B;을(를) *예*(으)로 설정합니다.
+1. *[!UICONTROL Enable FPT]*&#x200B;관리자&#x200B;*>* > *>* > **[!UICONTROL Configuration]**(으)로 이동하여 **[!UICONTROL Sales]**&#x200B;을(를) **[!UICONTROL Tax]**&#x200B;예&#x200B;**[!UICONTROL Fixed Product Taxes]**(으)로 설정합니다.
 1. FPT 특성을 만들어 *[!UICONTROL Attribute Set]*&#x200B;에 할당합니다.
 1. **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**&#x200B;을(를) 엽니다.
 1. *[!UICONTROL Default Label]*&#x200B;에 대해 특성을 식별하는 레이블을 입력하십시오.
@@ -61,8 +61,8 @@ ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 ](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 

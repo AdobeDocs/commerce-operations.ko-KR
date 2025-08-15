@@ -36,7 +36,7 @@ _정적 보기 파일_&#x200B;이라는 용어는 다음을 참조합니다.
 **정적 보기 파일을 배포하려면**:
 
 1. Commerce 서버에 (으)로 로그인하거나 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)합니다.
-1. `.htaccess` 파일을 제외한 `<magento_root>/pub/static`의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
+1. `<magento_root>/pub/static` 파일을 제외한 `.htaccess`의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
 1. 정적 보기 파일 배포 도구 `<magento_root>/bin/magento setup:static-content:deploy`을(를) 실행합니다.
 
    >[!INFO]
@@ -79,7 +79,7 @@ _정적 보기 파일_&#x200B;이라는 용어는 다음을 참조합니다.
 >
 >`<languages>`과(와) `--language`의 값을 모두 지정하면 `<languages>`이(가) 우선합니다.
 
-## 예시
+## 예
 
 다음은 몇 가지 예제 명령입니다.
 
@@ -172,7 +172,7 @@ ERROR: You need to install the Commerce application before running this utility.
 
 1. [명령줄](../../installation/composer.md)을 사용하여 Commerce 소프트웨어를 설치합니다.
 1. 응용 프로그램 서버에 파일 시스템 소유자로 로그인하거나 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)합니다.
-1. `.htaccess` 파일을 제외한 `<app_root>/pub/static` 디렉터리의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
+1. `<app_root>/pub/static` 파일을 제외한 `.htaccess` 디렉터리의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
 1. 정적 보기 파일 배포: `bin/magento setup:static-content:deploy`
 
 ## 정적 콘텐츠 배포 도구를 사용자 지정하는 개발자를 위한 팁

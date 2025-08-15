@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Information]'
-description: ' [!DNL Site-Wide Analysis Tool]의 [!UICONTROL Information] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: '[!UICONTROL Information]의  [!DNL Site-Wide Analysis Tool] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

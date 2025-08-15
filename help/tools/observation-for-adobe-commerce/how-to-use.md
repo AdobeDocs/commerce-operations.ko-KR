@@ -28,7 +28,7 @@ ht-degree: 0%
 
    * 클라우드 인프라의 Adobe Commerce에서 [!DNL Managed alerts]을(를) 제공합니다. 헤더의 링크를 클릭하면 특정 경고에 대한 작업을 결정하는 데 도움이 되는 [!DNL Support Knowledge Base]개의 문서를 볼 수 있습니다.
 
-* **[!UICONTROL CPU % by host]** 프레임을 검사합니다. CPU 사용률이 높은 경우 헤더의 [!DNL Support Knowledge Base] 문서에서 프레임을 확인하십시오. 또한 트래픽 피크 기간 동안 데이터베이스 가져오기/내보내기 또는 백업이 수행되지 않는지 확인하십시오.
+* **[!UICONTROL CPU % by host]** 프레임 검사: CPU 사용률이 높은 경우 헤더의 [!DNL Support Knowledge Base] 문서에서 프레임을 확인하십시오. 또한 트래픽 피크 기간 동안 데이터베이스 가져오기/내보내기 또는 백업이 수행되지 않는지 확인하십시오.
 
 * **[!UICONTROL Web Traffic volume compared to one week ago]** 프레임 확인: 같은 기간 동안 이전 주보다 트래픽이 훨씬 높은 경우 이에 대해 설명할 수 있습니까(예: 판매 캠페인 또는 마케팅된 새 제품)?
    * 트래픽 증가를 설명할 수 없는 경우 프로덕션 환경의 평균 응답 시간(밀리초)을 확인합니다. 응답 시간에 기여하는 트래픽이 높을수록 일반적인 트래픽과 다릅니까? 시간대를 확장하여 예외 항목인지 확인합니다.

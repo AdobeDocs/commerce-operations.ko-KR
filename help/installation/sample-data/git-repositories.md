@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->`develop` 분기(최신) 또는 릴리스된 분기(예: `2.4`(안정적인))에서 샘플 데이터를 사용할 수 있습니다. 안정적이므로 출시된 지점을 사용하는 것이 좋습니다. 저장소에 코드를 제공하는 중이며 최신 코드가 필요한 경우 `develop` 분기를 사용하십시오. 선택한 분기와 관계없이 Magento Open Source GitHub 저장소의 해당 분기를 [복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)해야 합니다. 예를 들어 `develop` 분기에 대한 샘플 데이터는 `develop` Magento Open Source 분기에 *only* 사용할 수 있습니다.
+>`develop` 분기(최신) 또는 릴리스된 분기(예: `2.4`(안정적인))에서 샘플 데이터를 사용할 수 있습니다. 안정적이므로 출시된 지점을 사용하는 것이 좋습니다. 저장소에 코드를 제공하는 중이며 최신 코드가 필요한 경우 `develop` 분기를 사용하십시오. 선택한 분기와 관계없이 Magento Open Source GitHub 저장소의 해당 분기를 [복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)해야 합니다. 예를 들어 `develop` 분기에 대한 샘플 데이터는 Magento Open Source *분기에서* only`develop` 사용할 수 있습니다.
 
 ## 샘플 데이터 리포지토리 복제
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 SSH 프로토콜을 사용하여 샘플 데이터 GitHub 리포지토리를 복제하려면 다음을 수행합니다.
 
-1. 웹 브라우저에서 [샘플 데이터 저장소](https://github.com/magento/magento2-sample-data)(으)로 이동합니다.
+1. 웹 브라우저에서 [샘플 데이터 저장소](https://github.com/magento/magento2-sample-data)&#x200B;(으)로 이동합니다.
 1. 분기 이름 옆에 있는 목록에서 **SSH**&#x200B;을(를) 클릭합니다.
 1. **클립보드에 복사**&#x200B;를 클릭합니다.
 
@@ -100,7 +100,7 @@ SSH 프로토콜을 사용하여 샘플 데이터 GitHub 리포지토리를 복�
 
 HTTPS 프로토콜을 사용하여 샘플 데이터 GitHub 저장소를 복제하려면 다음을 수행하십시오.
 
-1. 웹 브라우저에서 [샘플 데이터 저장소](https://github.com/magento/magento2-sample-data)(으)로 이동합니다.
+1. 웹 브라우저에서 [샘플 데이터 저장소](https://github.com/magento/magento2-sample-data)&#x200B;(으)로 이동합니다.
 1. 페이지 오른쪽의 **복제 URL** 필드 아래에서 **HTTPS**&#x200B;을(를) 클릭합니다.
 1. **클립보드에 복사**&#x200B;를 클릭합니다.
 

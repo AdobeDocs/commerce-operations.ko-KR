@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구'
-description: '[!DNL Quality Patches Tool]을(를) 사용하면 설치된 버전의 Adobe Commerce(온-프레미스 및 클라우드 인프라) 또는 Magento Open Source에서 사용할 수 있는 품질 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다.'
+description: '[!DNL Quality Patches Tool]을(를) 사용하면 설치된 버전의 Adobe Commerce(온-프레미스 및 클라우드 인프라) 또는 Magento Open Source에 사용할 수 있는 품질 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다.'
 feature: Tools and External Services
 role: Admin
 exl-id: a83d3834-841d-4b90-b40a-fda985a85452
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구
 
-[!DNL Quality Patches Tool]을(를) 사용하면 설치된 버전의 Adobe Commerce(온-프레미스 및 클라우드 인프라) 또는 Magento Open Source에서 사용할 수 있는 품질 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다.
+[!DNL Quality Patches Tool]을(를) 사용하면 설치된 버전의 Adobe Commerce(온-프레미스 및 클라우드 인프라) 또는 Magento Open Source에 사용할 수 있는 품질 패치에 대한 일반 정보를 적용, 되돌리고 볼 수 있습니다.
 
 이 도구는 더 빠른 셀프서비스 문제 해결을 제공하여 Adobe Commerce에서 발생할 수 있는 문제에 대해 Adobe Commerce 지원에서 제안하는 패치를 쉽게 적용할 수 있도록 합니다.
 

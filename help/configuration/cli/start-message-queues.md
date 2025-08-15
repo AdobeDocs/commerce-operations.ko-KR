@@ -33,8 +33,8 @@ bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-명령 옵션, 매개 변수 및 값에 대한 자세한 내용은 _명령줄 도구 참조_&#x200B;의 Commerce 섹션에서 [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart)을(를) 참조하십시오.
+명령 옵션, 매개 변수 및 값에 대한 자세한 내용은 [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart)명령줄 도구 참조&#x200B;_의 Commerce 섹션에서_&#x200B;을(를) 참조하십시오.
 
 >[!INFO]
 >
->`--multi-process` 옵션이 `queue:consumers:start` 명령에 있지만 병렬 프로세스로 소비자를 실행하려면 `/app/etc/env.php`에서 [`multiple_processes`](../queues/manage-message-queues.md#configuration) 옵션을 구성하십시오. 그렇지 않으면 `--multi-process` 옵션을 사용하여 `queue:consumers:start`을(를) 호출하는 경우 단일 스레드에서만 작동합니다.
+>`--multi-process` 옵션이 `queue:consumers:start` 명령에 있지만 병렬 프로세스로 소비자를 실행하려면 [`multiple_processes`](../queues/manage-message-queues.md#configuration)에서 `/app/etc/env.php` 옵션을 구성하십시오. 그렇지 않으면 `queue:consumers:start` 옵션을 사용하여 `--multi-process`을(를) 호출하는 경우 단일 스레드에서만 작동합니다.

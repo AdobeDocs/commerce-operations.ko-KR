@@ -1,6 +1,6 @@
 ---
 title: Magento Open Source 릴리스 노트
-description: Magento Open Source 코드베이스에 대한 릴리스 정보를 검토합니다.
+description: Magento Open Source 코드베이스에 대한 릴리스 노트를 검토합니다.
 exl-id: 6a7b195c-54d5-4827-81e1-e74453350f5e
 source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt

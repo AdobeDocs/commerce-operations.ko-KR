@@ -49,7 +49,7 @@ bin/magento config:show catalog/search/engine
 
 ## 검색 엔진이 `mysql`인 경우
 
-2.4 이전에는 MySQL이 기본 카탈로그 검색 엔진이었지만 이 용량에서는 MySQL이 더 이상 지원되지 않습니다. 이제 2.4로 업그레이드하기 전에 Elasticsearch 또는 OpenSearch를 검색 엔진으로 설치 및 구성해야 합니다.
+2.4 이전에는 MySQL이 기본 카탈로그 검색 엔진이었지만 이 용량에서는 MySQL이 더 이상 지원되지 않습니다. 이제 2.4로 업그레이드하기 전에 Elasticsearch 또는 OpenSearch를 검색 엔진으로 설치하고 구성해야 합니다.
 
 다음 리소스를 사용하여 이 프로세스를 안내합니다.
 
@@ -72,6 +72,6 @@ Elasticsearch 6 및 이전 버전은 더 이상 지원되지 않습니다.
    >
    >Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 설치된 JDK 버전을 확인하려면 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk)를 참조하십시오.
 
-1. [Elasticsearch 구성](../../configuration/search/configure-search-engine.md) 및 다시 인덱싱.
+1. [Elasticsearch을 구성](../../configuration/search/configure-search-engine.md)하고 다시 색인화합니다.
 
 검색 엔진을 구성하고 색인을 재지정하면 2.4로 업그레이드할 준비가 된 것입니다.

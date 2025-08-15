@@ -45,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Sensei(B2C 및 B2B)에서 제공하는 제품 Recommendations</td>
+      <td>Adobe Sensei(B2C 및 B2B)에서 제공하는 제품 추천</td>
       <td></td>
       <td></td>
       <td></td>
@@ -289,7 +289,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce에 대한 이벤트 Adobe I/O</td>
+      <td>Adobe Commerce용 Adobe I/O Events</td>
       <td></td>
       <td></td>
       <td></td>

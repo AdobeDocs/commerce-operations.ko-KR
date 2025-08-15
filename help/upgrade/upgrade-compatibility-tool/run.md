@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool]은(는) 설치된 모든 모듈을 분석하여 특정 버전에 대한 Adobe Commerce 사용자 지정 인스턴스를 확인하는 도구입니다. 최신 버전의 Adobe Commerce으로 업그레이드하기 전에 해결해야 하는 중요한 문제, 오류 및 경고 목록을 반환합니다.
 
-[!DNL Upgrade Compatibility Tool]에 대한 자세한 내용은 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=ko)&#x200B;(06:02)을 참조하세요.
+[에 대한 자세한 내용은 이 ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en)비디오 튜토리얼:02(06[!DNL Upgrade Compatibility Tool])을 참조하세요.
 
 명령줄 인터페이스에서 [!DNL Upgrade Compatibility Tool]에 사용할 수 있는 명령:
 
@@ -41,7 +41,7 @@ chmod +x ./uct/bin/uct
 | `refactor` | 이 명령은 축소된 문제 세트를 자동으로 수정합니다. |
 | `graphql:compare` | 이 명령은 두 GraphQL 종단점을 검사하고 해당 스키마를 비교하는 옵션을 제공합니다. |
 | `list` | 이 명령은 사용 가능한 모든 [!DNL Upgrade Compatibility Tool]개의 명령 목록을 반환합니다. |
-| `help` | 이 명령은 [!DNL Upgrade Compatibility Tool]에 사용 가능한 모든 `help`옵션을 반환합니다. 이 명령은 이전 명령과 함께 옵션뿐만 아니라 실행할 수도 있습니다. |
+| `help` | 이 명령은 `help`에 사용 가능한 모든 [!DNL Upgrade Compatibility Tool]옵션을 반환합니다. 이 명령은 이전 명령과 함께 옵션뿐만 아니라 실행할 수도 있습니다. |
 
 ## `upgrade:check` 명령 사용
 
@@ -61,7 +61,7 @@ bin/uct upgrade:check <dir>
 |----------------|-----------------|
 | `upgrade:check` | <ul><li>—help: 사용 가능한 모든 옵션을 반환합니다.</li><li>—current-version: 현재 Adobe Commerce 버전. 생략하면 Adobe Commerce 설치 버전이 사용됩니다.</li><li>—최소 문제 수준: 최소 문제 수준에 따라 문제를 필터링할 수 있습니다(기본값은 WARNING).</li><li>—ignore-current-version-compatibility-issues(또는 -i): 보고서에 현재 버전의 중요한 문제, 오류 및 경고를 포함하지 않으려는 경우.</li><li>—coming-version(또는 -c): 특정 Adobe Commerce 버전을 타깃팅합니다. 생략하면 사용 가능한 최신 버전이 사용됩니다.</li></ul> |
 
-[!DNL Upgrade Compatibility Tool]을(를) 사용하면 `--ignore-current-version-compatibility-issues` 옵션을 사용하여 `upgrade:check` 명령을 실행할 수 있습니다. [!DNL Upgrade Compatibility Tool] 보고서의 현재 버전에서 대상 버전으로의 업데이트와 함께 도입된 새로운 문제를 가져오려는 경우에만 이 옵션을 사용하십시오.
+[!DNL Upgrade Compatibility Tool]을(를) 사용하면 `upgrade:check` 옵션을 사용하여 `--ignore-current-version-compatibility-issues` 명령을 실행할 수 있습니다. [!DNL Upgrade Compatibility Tool] 보고서의 현재 버전에서 대상 버전으로의 업데이트와 함께 도입된 새로운 문제를 가져오려는 경우에만 이 옵션을 사용하십시오.
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -73,7 +73,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 ### `--coming-version` 옵션 추가 중
 
-`--coming-version` 옵션을 사용하여 현재 Adobe Commerce 설치와 모든 Adobe Commerce 버전 `>=2.3`을(를) 비교할 수 있습니다.
+`>=2.3` 옵션을 사용하여 현재 Adobe Commerce 설치와 모든 Adobe Commerce 버전 `--coming-version`을(를) 비교할 수 있습니다.
 
 `upgrade:check` 명령을 실행할 때 버전을 매개 변수로 제공해야 합니다.
 
@@ -146,7 +146,7 @@ bin/uct core:code:changes <dir> <vanilla dir>
 
 >[!NOTE]
 >
-> 사용자 지정 코드를 핵심 코드 외부에 보관하는 것이 좋습니다. 업그레이드 모범 사례에 대한 자세한 내용은 Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ko)를 참조하십시오.
+> 사용자 지정 코드를 핵심 코드 외부에 보관하는 것이 좋습니다. 업그레이드 모범 사례에 대한 자세한 내용은 Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf)를 참조하십시오.
 
 ### 바닐라 설치
 
@@ -154,7 +154,7 @@ _vanilla_ 설치는 특정 릴리스 버전에 대해 지정된 버전 태그 �
 
 `bin/uct core:code:changes` 명령은 시스템에 바닐라 인스턴스가 있는지 확인합니다. 바닐라 설치를 처음 사용하는 경우 대화형 명령줄 질문이 Adobe Commerce 저장소(`https://repo.magento.com/`)에서 바닐라 프로젝트를 다운로드하라는 메시지를 표시합니다.
 
-`--vanilla-dir` 옵션을 사용하여 [!DNL Upgrade Compatibility Tool] 명령을 실행하여 Adobe Commerce vanilla 설치 디렉터리를 지정할 수 있습니다.
+[!DNL Upgrade Compatibility Tool] 옵션을 사용하여 `--vanilla-dir` 명령을 실행하여 Adobe Commerce vanilla 설치 디렉터리를 지정할 수 있습니다.
 
 자세한 내용은 [바닐라 인스턴스 배포](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) 항목을 참조하십시오.
 
@@ -215,7 +215,7 @@ bin/uct list
 bin/uct --help
 ```
 
-명령줄 인터페이스에서 [!DNL Upgrade Compatibility Tool]에 대해 사용 가능한 모든 `help` 옵션이 있는 목록을 반환합니다.
+명령줄 인터페이스에서 `help`에 대해 사용 가능한 모든 [!DNL Upgrade Compatibility Tool] 옵션이 있는 목록을 반환합니다.
 
 ```
 - --raw             To output raw command list
@@ -231,7 +231,7 @@ bin/uct --help
 
 특정 명령을 실행할 때 옵션으로 `--help`을(를) 실행할 수 있습니다. 지정한 명령에 대해 `--help` 옵션을 반환합니다.
 
-`--help` 옵션이 있는 `upgrade:check` 명령의 예:
+`upgrade:check` 옵션이 있는 `--help` 명령의 예:
 
 ```bash
 bin/uct upgrade:check --help
@@ -259,13 +259,13 @@ bin/uct upgrade:check --help
 
 - 이름이 같은 모듈이 두 개 있는 것은 피하십시오.
 - Adobe Commerce [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)을 따르십시오.
-- Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ko) 모범 사례입니다.
-- [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.
+- Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) 모범 사례입니다.
+- [!DNL Upgrade Compatibility Tool][[!DNL Site-Wide Analysis Tool]에서 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)클라우드 인프라의 Adobe Commerce[ 프로젝트에 대해 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}을(를) 실행합니다.
 
 ## 결과 최적화
 
 [!DNL Upgrade Compatibility Tool]은(는) 기본적으로 프로젝트에서 식별된 모든 문제가 포함된 결과를 포함하는 보고서를 제공합니다. 업그레이드를 완료하기 위해 수정해야 하는 문제에 집중하도록 결과를 최적화할 수 있습니다.
 
-- [!DNL Upgrade Compatibility Tool] 보고서의 현재 버전에서 대상 버전으로의 업데이트와 함께 도입된 새로운 문제를 가져오려면 `--ignore-current-version-compatibility-issues` 옵션을 사용하십시오.
+- `--ignore-current-version-compatibility-issues` 보고서의 현재 버전에서 대상 버전으로의 업데이트와 함께 도입된 새로운 문제를 가져오려면 [!DNL Upgrade Compatibility Tool] 옵션을 사용하십시오.
 - `--min-issue-level` 옵션을 추가하면 이 설정을 통해 최소 문제 수준을 설정하여 업그레이드에 가장 중요한 문제만 우선 순위를 지정할 수 있습니다.
-- [!DNL Upgrade Compatibility Tool]을(를) 실행하려면 2GB 이상의 RAM이 필요합니다. 이 설정은 낮은 메모리 제한으로 인한 문제를 피하기 위해 권장됩니다. 낮은 `memory_limit` 설정으로 `upgrade:check` 명령을 실행하는 경우 [!DNL Upgrade Compatibility Tool]에 질문이 표시됩니다.
+- [!DNL Upgrade Compatibility Tool]을(를) 실행하려면 2GB 이상의 RAM이 필요합니다. 이 설정은 낮은 메모리 제한으로 인한 문제를 피하기 위해 권장됩니다. 낮은 [!DNL Upgrade Compatibility Tool] 설정으로 `upgrade:check` 명령을 실행하는 경우 `memory_limit`에 질문이 표시됩니다.

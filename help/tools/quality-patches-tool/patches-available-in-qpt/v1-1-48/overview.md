@@ -19,10 +19,10 @@ ht-degree: 0%
 QPT v1.1.48에는 다음 패치가 포함됩니다.
 
 1. **ACSD-55566**: 원본 및 대상 카트의 번들 항목이 같을 때 GraphQL 응답에서 *[!UICONTROL mergeCart mutation]*&#x200B;이(가) *내부 서버 오류*&#x200B;와 함께 실패하는 문제를 해결했습니다.
-1. **ACSD-56546**: *[!UICONTROL Display Out of Stock Product]* 구성을 사용하지 않도록 설정할 때 구성 가능한 제품과 번들 제품이 상점 앞에 *[!UICONTROL Out of Stock]*(으)로 표시되는 문제를 해결했습니다.
+1. **ACSD-56546**: *[!UICONTROL Out of Stock]* 구성을 사용하지 않도록 설정할 때 구성 가능한 제품과 번들 제품이 상점 앞에 *[!UICONTROL Display Out of Stock Product]*(으)로 표시되는 문제를 해결했습니다.
 1. **ACSD-56635**: 가져오기를 사용할 때 가져온 고객이 동일한 전자 메일 주소로 복제되고 [!UICONTROL Account Sharing]이(가) *[!UICONTROL Global]*(으)로 설정된 문제를 해결했습니다.
-1. **ACSD-56741**: 데이터베이스에 인덱스 메커니즘 및 [!DNL MView]과(와) 관련이 없는 사용자 지정 MySQL 트리거가 포함되어 있을 때 `setup:upgrade` 동안 표시되는 *null 형식의 값에 대한 배열 오프셋에 액세스하려고 시도함* 오류 메시지를 수정합니다.
-1. **ACSD-57315**: [!UICONTROL Admin]의 트랜잭션 보기 화면에서 **[!UICONTROL Fetch]** 단추를 클릭할 때마다 [!DNL PayPal Payflow Pro]에서 새 트랜잭션이 만들어지는 문제를 해결했습니다.
+1. **ACSD-56741**: 데이터베이스에 인덱스 메커니즘 및 *과(와) 관련이 없는 사용자 지정 MySQL 트리거가 포함되어 있을 때* 동안 표시되는 `setup:upgrade`null 형식의 값에 대한 배열 오프셋에 액세스하려고 시도함[!DNL MView] 오류 메시지를 수정합니다.
+1. **ACSD-57315**: [!DNL PayPal Payflow Pro]의 트랜잭션 보기 화면에서 **[!UICONTROL Fetch]** 단추를 클릭할 때마다 [!UICONTROL Admin]에서 새 트랜잭션이 만들어지는 문제를 해결했습니다.
 1. **ACSD-57337**: 특정 웹 사이트에 대한 액세스 제한이 있는 관리자가 *[!UICONTROL Companies]* 그리드의 모든 웹 사이트에서 회사를 볼 수 있는 문제를 해결했습니다.
 1. **ACSD-57394**: GraphQL의 여러 정렬 필드를 기준으로 잘못된 제품 정렬을 수정합니다.
 1. **ACSD-57565**: 기간이 업데이트될 때까지 *[!UICONTROL Order]* 대시보드에 잘못된 주문 정보가 표시되는 문제를 해결했습니다. 이제 대시보드에 첫 번째 로드 시 올바른 주문 통계가 표시됩니다.

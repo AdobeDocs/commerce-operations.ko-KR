@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 클릭재킹 악용 방지
 
-[X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP 요청 헤더를 상점 요청에 포함하여 [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) 사용을 방지하십시오.
+[X-Frame-Options](https://owasp.org/www-community/attacks/Clickjacking) HTTP 요청 헤더를 상점 요청에 포함하여 [Clickjacking](https://datatracker.ietf.org/doc/html/rfc7034) 사용을 방지하십시오.
 
 `X-Frame-Options` 헤더를 사용하면 브라우저에서 `<frame>`, `<iframe>` 또는 `<object>`의 페이지를 렌더링할 수 있는지 여부를 다음과 같이 지정할 수 있습니다.
 
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->보안상의 이유로 Adobe에서는 프레임에서 Commerce 스토어프론트를 실행하지 않는 것이 좋습니다.
+>보안상의 이유로 Adobe에서는 프레임에서 Commerce 스토어를 실행하지 않는 것이 좋습니다.
 
 ## `X-Frame-Options` 구현
 
-`<project-root>/app/etc/env.php`에서 `X-Frame-Options`의 값을 설정하십시오. 기본값은 다음과 같이 설정됩니다.
+`X-Frame-Options`에서 `<project-root>/app/etc/env.php`의 값을 설정하십시오. 기본값은 다음과 같이 설정됩니다.
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',

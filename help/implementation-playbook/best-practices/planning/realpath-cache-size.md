@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Realpath 캐시는 매번 조회하는 대신 참조된 파일 이름의 실제 파일 시스템 경로를 캐시합니다. 다양한 파일 함수가 수행되거나 파일이 필요하고 상대 경로를 사용할 때마다 PHP는 해당 파일이 실제로 존재하는 위치를 조회해야 합니다.
 
-Commerce 성능을 향상시키려면 다음 권장 설정을 사용하여 `php.ini` 파일에서 `realpath_cache` 설정을 구성하십시오.
+Commerce 성능을 향상시키려면 다음 권장 설정을 사용하여 `realpath_cache` 파일에서 `php.ini` 설정을 구성하십시오.
 
 - 캐시 크기를 10MB(`realpath cache_size=10M`)로 설정합니다.
 - TTL(Time to Live)을 7,200초(`realpath_cache_ttl=7200`)로 설정합니다.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 이 단계별 자습서에서는 샘플 모듈에서 사용자 지정 cron 작업 및 선택적으로 cron 그룹을 만드는 방법을 보여줍니다. 이미 있는 모듈을 사용하거나 [`magento2-samples` 저장소][samples]의 샘플 모듈을 사용할 수 있습니다.
 
-cron 작업을 실행하면 cron 작업의 이름이 `custom_cron`인 행이 `cron_schedule` 테이블에 추가됩니다.
+cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `custom_cron` 테이블에 추가됩니다.
 
 또한 cron 그룹을 선택적으로 만드는 방법을 보여 줍니다. 이 그룹은 Commerce 애플리케이션 기본값 이외의 설정으로 사용자 지정 cron 작업을 실행하는 데 사용할 수 있습니다.
 
@@ -147,7 +147,7 @@ cron 작업을 실행하면 cron 작업의 이름이 `custom_cron`인 행이 `cr
 
 `crontab.xml` 파일은 사용자 지정 cron 코드를 실행하는 일정을 설정합니다.
 
-`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` 디렉터리에 다음과 같이 `crontab.xml`을(를) 만듭니다.
+`crontab.xml` 디렉터리에 다음과 같이 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`을(를) 만듭니다.
 
 ```xml
 <?xml version="1.0"?>
@@ -238,7 +238,7 @@ cron을 확인하려면:
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   이러한 메시지는 `Test.php`의 `execute` 메서드에서 가져옵니다.
+   이러한 메시지는 `execute`의 `Test.php` 메서드에서 가져옵니다.
 
    ```php
    public function execute() {

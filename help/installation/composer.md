@@ -25,7 +25,7 @@ Adobe은 [작성기](https://getcomposer.org/)를 사용하여 Adobe Commerce �
 >
 >Magento Open Source에 기여하는 개발자는 [git 기반](https://developer.adobe.com/commerce/contributor/guides/install/) 설치 방법을 사용해야 합니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 계속하기 전에 다음을 수행해야 합니다.
 
@@ -93,7 +93,7 @@ Adobe Commerce 메타패키지를 가져오려면 다음을 수행하십시오.
 
    >[!NOTE]
    >
-   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
+   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
 
    `Could not find package...` 또는 `...no matching package found`과(와) 같은 오류가 발생하면 명령에 오타가 없는지 확인하십시오. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 도움이 필요하면 [Adobe Commerce 지원](https://support.magento.com/hc/en-us)에 문의하십시오.
 
@@ -168,7 +168,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->`--backend-frontname` 옵션을 사용하여 관리자 URI를 사용자 지정할 수 있습니다. 그러나 Adobe은 이 옵션을 생략하고 설치 명령으로 무작위 URI를 자동으로 생성하도록 할 것을 권장합니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다. 설치가 완료되면 콘솔에 URI가 표시됩니다.
+>`--backend-frontname` 옵션을 사용하여 관리자 URI를 사용자 지정할 수 있습니다. 그러나 Adobe에서는 이 옵션을 생략하고 설치 명령으로 무작위 URI를 자동으로 생성하도록 할 것을 권장합니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다. 설치가 완료되면 콘솔에 URI가 표시됩니다.
 
 >[!TIP]
 >
@@ -200,7 +200,7 @@ bin/magento help cache:enable
 
 다음 표에는 사용 가능한 명령이 요약되어 있습니다. 명령은 요약 양식으로만 표시됩니다. 명령에 대한 자세한 내용을 보려면 명령 열에서 링크를 클릭합니다.
 
-| 명령 | 설명 | 전제 조건 |
+| 명령 | 설명 | 사전 요구 사항 |
 |--- |--- |--- |
 | `magento setup:install` | 응용 프로그램을 설치합니다. | 없음 |
 | `magento setup:uninstall` | 응용 프로그램을 제거합니다. | 애플리케이션 설치됨 |

@@ -23,4 +23,4 @@ ht-degree: 1%
 - 참조 {#reference}
    - [고객 개인 정보(버전 2.x)](privacy/data-m2.md)
    - [고객 개인 정보(버전 1.x)](privacy/data-m1.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

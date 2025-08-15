@@ -20,7 +20,7 @@ Adobe Commerce 캐시 관리 시스템을 사용하여 사이트의 성능을 �
 >[!NOTE]
 >
 >
->공동 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. _관리 시스템 안내서_&#x200B;에서 [캐시 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management)를 참조하십시오.
+>공동 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. [관리 시스템 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)에서 _캐시 관리_&#x200B;를 참조하십시오.
 
 
 ## 캐시 상태 보기
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 _관리 시스템 안내서_&#x200B;의 [캐시](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#caches)를 참조하십시오.
+>Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 [관리 시스템 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)의 _캐시_&#x200B;를 참조하십시오.
 
 
 ## 캐시 유형 활성화 또는 비활성화
@@ -68,7 +68,7 @@ Current status:
 
 >[!INFO]
 >
->버전 2.2부터 프로덕션 모드에서 Commerce을 실행하는 동안 명령줄을 사용해서만 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 개발자 모드에서 Commerce을 실행하는 경우 명령줄을 사용하거나 수동으로 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 이렇게 하려면 먼저 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)가 `<magento_root>/app/etc/env.php`을(를) 수동으로 쓸 수 있게 해야 합니다.
+>버전 2.2부터 프로덕션 모드에서 Commerce을 실행하는 동안 명령줄을 사용해서만 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 개발자 모드에서 Commerce을 실행하는 경우 명령줄을 사용하거나 수동으로 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 이렇게 하려면 먼저 `<magento_root>/app/etc/env.php`파일 시스템 소유자[가 ](../../installation/prerequisites/file-system/overview.md)을(를) 수동으로 쓸 수 있게 해야 합니다.
 
 명령줄 또는 관리자를 사용하여 캐시 유형을 정리(_플러시_ 또는 _새로 고침_&#x200B;이라고도 함)할 수 있습니다.
 
@@ -128,7 +128,7 @@ bin/magento cache:disable db_ddl full_page
 
   >[!TIP]
   >
-  >Adobe Commerce의 버전을 업그레이드하거나, Magento Open Source에서 Adobe Commerce으로 업그레이드하거나, Adobe Commerce용 B2B 또는 임의의 모듈을 설치한 후 항상 캐시를 정리하십시오.
+  >Adobe Commerce의 버전을 업그레이드하거나, Magento Open Source에서 Adobe Commerce으로 업그레이드하거나, Adobe Commerce용 B2B 또는 임의의 모듈을 설치한 후에는 항상 캐시를 정리하십시오.
 
 - 캐시 유형을 플러시하면 캐시 저장소가 지워지므로 동일한 저장소를 사용하는 다른 프로세스 애플리케이션에 영향을 줄 수 있습니다.
 
@@ -173,4 +173,4 @@ bin/magento cache:disable db_ddl full_page
 
 >[!TIP]
 >
->관리자에서 캐시 유형을 정리하고 플러시할 수도 있습니다. **시스템** > **도구** > **캐시 관리**(으)로 이동합니다. **플러시 캐시 저장소**&#x200B;은(는) `bin/magento cache:flush`과(와) 같습니다. **플러시 Magento 캐시**&#x200B;은(는) `bin/magento cache:clean`과(와) 같습니다.
+>관리자에서 캐시 유형을 정리하고 플러시할 수도 있습니다. **시스템** > **도구** > **캐시 관리**(으)로 이동합니다. **플러시 캐시 저장소**&#x200B;은(는) `bin/magento cache:flush`과(와) 같습니다. **Magento 캐시 플러시**&#x200B;는 `bin/magento cache:clean`와(과) 같습니다.

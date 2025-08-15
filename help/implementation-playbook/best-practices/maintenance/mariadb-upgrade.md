@@ -21,11 +21,11 @@ MariaDB를 사용하는 경우 클라우드 인프라에서 Adobe Commerce을 �
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1부터 이전 임시 형식의 열은 `INFORMATION_SCHEMA.COLUMNS` 테이블의 `COLUMN_TYPE` 열뿐만 아니라 `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` 문의 출력에서도 `/* mariadb-5.3 */` 주석으로 표시됩니다. [MariaDB 설명서를 참조하십시오](https://mariadb.com/kb/en/datetime/#internal-format).
+MariaDB 10.5.1부터 이전 임시 형식의 열은 `/* mariadb-5.3 */` 테이블의 `SHOW CREATE TABLE` 열뿐만 아니라 `SHOW COLUMNS`, `DESCRIBE`, `COLUMN_TYPE` 문의 출력에서도 `INFORMATION_SCHEMA.COLUMNS` 주석으로 표시됩니다. [MariaDB 설명서를 참조하십시오](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce은 MariaDB 주석으로 인해 날짜 열을 적절한 데이터 형식에 매핑할 수 없으므로 사용자 지정 코드에 예기치 않은 동작이 발생할 수 있습니다.
 
-Adobe 이전 버전에서 버전 10.6으로 MariaDB를 업그레이드할 때 예기치 않은 동작이 발생하지 않도록 하려면 열을 새 내부 형식으로 마이그레이션하는 것이 좋습니다.
+이전 버전에서 버전 10.6으로 MariaDB를 업그레이드할 때 예기치 않은 동작이 발생하지 않도록 Adobe에서는 열을 새 내부 형식으로 마이그레이션하는 것이 좋습니다.
 
 ### 기본 구성
 

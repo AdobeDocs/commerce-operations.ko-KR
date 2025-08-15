@@ -5,16 +5,16 @@ exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # 데이터 마이그레이션 작동 방식
 
-이 항목에서는 [!DNL Data Migration Tool]을(를) 사용하여 데이터가 Magento 1에서 Magento 2로 마이그레이션되는 방법에 대한 높은 수준의 개요를 제공합니다.
+이 항목에서는 [!DNL Data Migration Tool]을(를) 사용하여 Magento 1에서 Magento 2로 데이터를 마이그레이션하는 방법에 대한 높은 수준의 개요를 제공합니다.
 
-[!DNL Data Migration Tool]은(는) Magento 1에서 Magento 2로 데이터를 전송하는 데 사용되는 명령줄 인터페이스(CLI) 도구입니다. 이 도구는 Magento 1과 2 데이터베이스 구조(테이블 및 필드) 간의 일관성을 확인하고, 데이터 전송 진행률을 추적하고, 로그를 만들고, 데이터 확인 테스트를 실행합니다.
+[!DNL Data Migration Tool]은(는) Magento 1에서 Magento 2로 데이터를 전송하는 데 사용되는 CLI(명령줄 인터페이스) 도구입니다. 이 도구는 Magento 1 및 2 데이터베이스 구조(테이블 및 필드) 간의 일관성을 확인하고, 데이터 전송 진행률을 추적하고, 로그를 만들고, 데이터 확인 테스트를 실행합니다.
 
 ## Terminology
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 모드
 
-[!DNL Data Migration Tool]은(는) Magento 1.x에서 Magento 2.x로 데이터를 전송하고 조정하기 위해 마이그레이션 프로세스를 세 단계 또는 *모드*&#x200B;로 분할합니다. 세 가지 모드가 여기에 나열되며 다음 순서로 실행되어야 합니다.
+[!DNL Data Migration Tool]은(는) Magento 1.x에서 Magento 2.x로 데이터를 전송하고 조정하기 위해 마이그레이션 프로세스를 3단계 또는 *모드*&#x200B;로 분할합니다. 세 가지 모드가 여기에 나열되며 다음 순서로 실행되어야 합니다.
 
 1. **설정 모드**: 시스템 구성 및 웹 사이트 관련 설정을 마이그레이션합니다.
 1. **데이터 모드**: 데이터베이스 자산을 일괄적으로 마이그레이션합니다.
@@ -44,7 +44,7 @@ ht-degree: 0%
 각 단계에는 데이터가 제대로 마이그레이션되도록 하기 위해 항상 이 순서로 실행되는 세 개의 *단계*&#x200B;가 있습니다.
 
 1. **무결성 검사**: 테이블 필드 이름, 형식 및 기타 정보를 비교하여 Magento 1과 2 데이터 구조 간의 호환성을 확인합니다.
-1. **데이터 전송**: Magento 1과 2에서 테이블별로 데이터 테이블을 전송합니다.
+1. **데이터 전송**: Magento 1 및 2에서 테이블별로 데이터 테이블을 전송합니다.
 1. **볼륨 검사**: 테이블 간 레코드 수를 비교하여 전송이 성공했는지 확인합니다.
 
 ![마이그레이션 단계](../../assets/data-migration/MigrationSteps2.png)
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 [[!DNL Data Migration Tool] 기술 사양](technical-specification.md)
 
-세계 #1 상거래 플랫폼(Magento 1.x)에서 미래의 플랫폼(Magento 2)으로 전환하는 것을 고려하게 되어 기쁘게 생각합니다. 우리는 이 프로세스에 대한 세부 사항을 공유하게 되어 매우 기쁩니다. 이 프로세스를 마이그레이션 이라고 합니다.
+전 세계의 #1 상거래 플랫폼(Magento 1.x)에서 미래의 플랫폼 Magento 2로 전환하는 것을 고려하게 되어 기쁘게 생각합니다. 우리는 이 프로세스에 대한 세부 사항을 공유하게 되어 매우 기쁩니다. 이 프로세스를 마이그레이션 이라고 합니다.
 
 ## 마이그레이션 구성 요소
 
@@ -77,7 +77,7 @@ Magento 2 마이그레이션에는 데이터, 확장 및 사용자 지정 코드
 
 ### 확장 및 사용자 지정 코드
 
-Magento 2에서 Magento 1 확장을 사용할 수 있도록 개발 커뮤니티와 열심히 협력해 왔습니다. 이제 즐겨 사용하는 확장의 최신 버전을 다운로드하거나 구매할 수 있는 [Commerce Marketplace](https://marketplace.magento.com/)을 공개하게 되어 기쁘게 생각합니다.
+Magento 2에서 Magento 1 확장을 사용할 수 있도록 개발 커뮤니티와 열심히 협력해 왔습니다. 이제 좋아하는 확장의 최신 버전을 다운로드하거나 구매할 수 있는 [Commerce Marketplace](https://marketplace.magento.com/)을(를) 공개하게 되어 기쁘게 생각합니다.
 
 Magento 2용 확장 개발에 대한 자세한 내용은 [PHP 개발자 안내서](https://developer.adobe.com/commerce/php/development/)를 참조하세요.
 
@@ -87,5 +87,5 @@ Magento 2는 상인들에게 혁신적인 쇼핑 경험을 만들고 새로운 �
 
 ## 마이그레이션 작업
 
-1.x 버전(예: v1.12에서 v1.14로) 간의 업그레이드처럼, Magento 1에서 Magento 2로 마이그레이션하는 작업 수준은 사이트를 빌드한 방법과 사용자 지정 수준에 따라 다릅니다.
+1.x 버전(예: v1.12에서 v1.14로) 간의 업그레이드처럼 Magento 1에서 Magento 2로 마이그레이션하기 위한 작업 수준은 사이트를 빌드한 방법과 사용자 지정 수준에 따라 다릅니다.
 그러나 [!DNL Data Migration Tool]을(를) 지속적으로 개선하고 있습니다(자세한 내용은 [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) 참조). 따라서 마이그레이션 노력이 지속적으로 감소하고 있습니다.

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Exceptions]'
-description: ' [!DNL Site-Wide Analysis Tool]의 [!UICONTROL Exceptions] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: '[!UICONTROL Exceptions]의  [!DNL Site-Wide Analysis Tool] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지에 사이트 로그 파일 오류/예외가 표시됩니다. 예외는 알려진 해결책을 갖거나 갖지 않을 수 있는 비정상적인 상태입니다.
 
-이 페이지에 표시된 정보에는 해당 날짜에 예외가 발생한 [!UICONTROL Last Detected] (UTC 날짜/시간), [!UICONTROL Exception Detail] 및 [!UICONTROL Count] (발생 횟수)이(가) 포함됩니다.
+이 페이지에 표시된 정보에는 해당 날짜에 예외가 발생한 [!UICONTROL Last Detected]&#x200B;(UTC 날짜/시간), [!UICONTROL Exception Detail] 및 [!UICONTROL Count]&#x200B;(발생 횟수)이(가) 포함됩니다.
 
 ## 사용 시기
 
@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## 우수 사례
 
-[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지를 모니터링하여 예외 발생 여부를 확인합니다. 자세한 내용은 개발자 설명서에서 [로그 보기 및 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/test/log-locations)를 참조하십시오.
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지를 모니터링하여 예외 발생 여부를 확인합니다. 자세한 내용은 개발자 설명서에서 [로그 보기 및 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)를 참조하십시오.

@@ -194,7 +194,7 @@ ht-degree: 4%
 | 5088 | 필수 매개 변수 뒤에 선택적 매개 변수가 있음 | 필수 매개 변수를 선택적 매개 변수 뒤로 이동합니다. |
 | 5089 | 메서드 가시성 `final private`을(를) 찾을 수 있음 | 메서드 가시성을 `final private`에서 `private`(으)로만 변경합니다. |
 | 5090 | 매직 메서드 `__set_state`이(가) `static`(으)로 정의되지 않았습니다. | 매직 메서드 `__set_state`은(는) `static`(으)로 정의되어야 합니다. |
-| 5091 | `Stringable` 인터페이스에서 `__toString()` 메서드가 상속되지 않은 클래스 | `__toString()` 메서드를 사용하여 클래스에 `Stringable` 인터페이스를 추가하십시오. |
+| 5091 | `__toString()` 인터페이스에서 `Stringable` 메서드가 상속되지 않은 클래스 | `Stringable` 메서드를 사용하여 클래스에 `__toString()` 인터페이스를 추가하십시오. |
 | 5092 | 이제 개체를 반환하는 함수에 사용되는 `is_resource()` 메서드 | `is_resource()`을(를) `instanceof` 개체로 변경합니다. |
 | 6001 | `jQuery.andSelf()` 제거됨 | `jQuery.addBack()` 사용. |
 | 6002 | jQuery `$.bind` 및 `$.unbind`은(는) 더 이상 사용되지 않습니다. | 대신 `$.on` 및 `$.off`을(를) 사용합니다. |
@@ -205,7 +205,7 @@ ht-degree: 4%
 | 6006 | `jQuery.size()` 제거됨 | `jQuery.length` 사용. |
 | 6007 | `jQuery.trim`은(는) 사용되지 않습니다. | `String.prototype.trim` 사용. |
 | 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, &#39;inlite&#39; 테마, &#39;mobile&#39; 테마, &#39;modern&#39; 테마)가 제거되었습니다. | tinymce5와 호환되도록 코드를 업데이트합니다. |
-| 6009 | `jQuery.isFunction()`은(는) 사용되지 않습니다. | 대부분의 경우 [typeof x === &quot;function&quot;] (으)로 대체할 수 있습니다. |
+| 6009 | `jQuery.isFunction()`은(는) 사용되지 않습니다. | 대부분의 경우 [typeof x === &quot;function&quot;]&#x200B;(으)로 대체할 수 있습니다. |
 | 6009 | `jQuery.type()`은(는) 사용되지 않습니다. | [typeof x === &quot;function&quot;]과(와) 같은 적절한 형식 확인으로 대체합니다. |
 | 6009 | `jQuery.isArray()`은(는) 사용되지 않습니다. | 대신 네이티브 Array.isArray 메서드를 사용합니다. |
 | 6009 | `jQuery.parseJSON()`은(는) 사용되지 않습니다. | JSON 문자열을 구문 분석하려면 기본 JSON.parse 메서드를 대신 사용하십시오. |

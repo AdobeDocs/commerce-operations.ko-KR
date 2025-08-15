@@ -19,4 +19,4 @@ ht-degree: 0%
 
 **[!UICONTROL Health Index Bar]**: 0부터 100까지 전체 사이트 상태를 측정합니다. 여기서 0은 최악이고 100은 완전한 상태입니다. 활성 권장 사항의 수량 및 우선 순위 가중치 계수를 기반으로 계산됩니다.
 
-**[!UICONTROL Download Recommendations Report]**: Recommendations 보고서는 프로젝트에 적용할 수 있는 개인화된 권장 사항을 제공합니다. 이 섹션을 클릭하여 PDF 보고서를 다운로드할 수 있습니다.
+**[!UICONTROL Download Recommendations Report]**: 권장 사항 보고서는 프로젝트에 적용할 수 있는 개인화된 권장 사항을 제공합니다. 이 섹션을 클릭하여 PDF 보고서를 다운로드할 수 있습니다.

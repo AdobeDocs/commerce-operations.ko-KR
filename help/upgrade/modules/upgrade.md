@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 공급업체 번들 확장 프로그램(VBE)
 
-Adobe이 2.4.4에서 모든 [VBE](https://experienceleague.adobe.com/ko/docs/commerce-operations/upgrade-guide/modules/upgrade)을(를) 제거했습니다. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
+Adobe이 2.4.4에서 모든 [VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade)을(를) 제거했습니다. 공급업체는 Adobe Commerce Marketplace에서 이러한 확장을 계속 지원합니다.
 
 Adobe Commerce 2.4.4 이상에서 이러한 확장을 계속 사용하려면 2.4.4로 업그레이드하기 전에 `composer.json` 파일 _이전_&#x200B;에서 해당 패키지 종속성을 업데이트해야 합니다. 사용할 패키지 이름 및 버전에 대해서는 공급업체에 문의하십시오.
 

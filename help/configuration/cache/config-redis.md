@@ -33,9 +33,9 @@ Redis 소프트웨어 설치 및 구성은 이 안내서의 범위를 벗어납�
 
 요구 사항에 맞게 Redis 인스턴스를 최적화하려면 각 세션, Commerce 캐시 및 FPC에 대한 전용 인스턴스를 사용하여 최상의 결과를 얻을 수 있습니다.
 
-세션의 경우 지속성을 활성화하여 일반 RDB(Redis Database Backup) 스냅샷 또는 AOF(Append Only File) 지속성 로그 중 하나를 사용하여 Redis 데이터를 디스크에 복사할 것을 Adobe이 권장합니다.
+세션의 경우 지속성을 활성화하여 일반 RDB(Redis Database Backup) 스냅샷 또는 AOF(Append Only File) 지속성 로그 중 하나를 사용하여 Redis 데이터를 디스크에 복사할 것을 Adobe에서 권장합니다.
 
-- **RDB(Redis Database Backup**) 스냅숏은 마지막 저장 이후 최소 키 수가 변경된 경우 지정된 시간 후에 전체 데이터베이스를 덤프 파일에 저장합니다. `redis.conf` 파일 내의 `save` 설정을 사용하여 이 설정을 구성하십시오.
+- **RDB(Redis Database Backup**) 스냅숏은 마지막 저장 이후 최소 키 수가 변경된 경우 지정된 시간 후에 전체 데이터베이스를 덤프 파일에 저장합니다. `save` 파일 내의 `redis.conf` 설정을 사용하여 이 설정을 구성하십시오.
 
 - **파일만 추가**(AOF)는 Redis에 전송된 각 쓰기 작업을 저널 파일에 저장합니다. Redis는 재시작 시에만 이 파일을 읽고 원본 데이터 세트를 복원하는 데 사용합니다.
 

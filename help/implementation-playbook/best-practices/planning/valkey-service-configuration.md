@@ -17,7 +17,7 @@ Adobe은 Valkey 서비스를 구성할 때 다음 모범 사례를 권장합니�
 
 ## Valkey L2 캐시 구성
 
-`.magento.env.yaml` 구성 파일에서 `VALKEY_BACKEND` 배포 변수를 설정하여 Valkey L2 캐시를 구성합니다.
+`VALKEY_BACKEND` 구성 파일에서 `.magento.env.yaml` 배포 변수를 설정하여 Valkey L2 캐시를 구성합니다.
 
 ```yaml
 stage:
@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)을(를) 참조하십시오.
+클라우드 인프라의 환경 구성에 대해서는 [`VALKEY_BACKEND`Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)의 __&#x200B;을(를) 참조하십시오.
 
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Valkey 페이지 캐싱 구성](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)을 참조하십시오.
+온-프레미스 설치의 경우 [구성 가이드](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)에서 _Valkey 페이지 캐싱 구성_&#x200B;을 참조하십시오.
 
 >[!NOTE]
 >
->최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
+>최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 ### L2 캐시 메모리 크기 조정(Adobe Commerce Cloud)
 
@@ -51,7 +51,7 @@ L2 캐시 구현의 메모리 소진을 방지하기 위해 Adobe Commerce은 �
 >
 >`cleanup_percentage` 구성 옵션이 Adobe Commerce 2.4.4에 도입되었습니다.
 
-다음 예제에서는 `.magento.env.yaml` 파일의 `CACHE_CONFIGURATION`을(를) 보여 줍니다.
+다음 예제에서는 `CACHE_CONFIGURATION` 파일의 `.magento.env.yaml`을(를) 보여 줍니다.
 
 ```yaml
 stage:
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)을(를) 참조하십시오.
+자세한 내용은 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)의 _VALKEY_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
 
-Adobe Commerce 온-프레미스 설치의 경우 `bin/magento:setup` 명령을 사용하여 새 Valkey 캐시 구현을 구성합니다. 자세한 내용은 _구성 가이드_&#x200B;에서 [기본 캐시에 대한 Valkey 사용](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)을 참조하십시오.
+Adobe Commerce 온-프레미스 설치의 경우 `bin/magento:setup` 명령을 사용하여 새 Valkey 캐시 구현을 구성합니다. 자세한 내용은 [구성 가이드](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)에서 _기본 캐시에 대한 Valkey 사용_&#x200B;을 참조하십시오.
 
 >[!WARNING]
 >
->[크기 조정/분할 아키텍처](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)를 사용하여 클라우드 인프라 프로젝트에 대한 올바른 슬레이브 연결을 구성하지 _마십시오_. 이로 인해 Valkey 연결 오류가 발생합니다. 자세한 내용은 _클라우드 인프라의 Commerce_ 안내서의 [Valkey 구성 지침](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)을(를) 참조하십시오.
+>_크기 조정/분할 아키텍처_&#x200B;를 사용하여 클라우드 인프라 프로젝트에 대한 올바른 슬레이브 연결을 구성하지 [마십시오](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). 이로 인해 Valkey 연결 오류가 발생합니다. 자세한 내용은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) 안내서의 _Valkey 구성 지침_&#x200B;을(를) 참조하십시오.
 
 ## 미리 로드 키
 
@@ -114,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Valkey 미리 로드 기능](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)을(를) 참조하십시오.
+온-프레미스 설치의 경우 [구성 가이드](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)에서 _Valkey 미리 로드 기능_&#x200B;을(를) 참조하십시오.
 
 ## 부실 캐시 활성화
 
@@ -153,9 +153,9 @@ stage:
 
 >[!NOTE]
 >
->앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
+>앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
 
-온-프레미스 설치를 구성하려면 _구성 가이드_&#x200B;에서 [오래된 캐시 옵션](../../../configuration/cache/level-two-cache.md#stale-cache-options)을 참조하십시오.
+온-프레미스 설치를 구성하려면 [구성 가이드](../../../configuration/cache/level-two-cache.md#stale-cache-options)에서 _오래된 캐시 옵션_&#x200B;을 참조하십시오.
 
 배포 중에 [빌드 및 배포 로그](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs)에 다음 줄이 표시됩니다.
 
@@ -173,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## 캐시 압축
 
-6GB가 넘는 Valkey `maxmemory`을(를) 사용하는 경우 캐시 압축을 사용하여 키에서 사용하는 공간을 줄일 수 있습니다. 클라이언트측 성능이 저하됩니다. 예비 CPU가 있는 경우 Adobe에서 이를 활성화하도록 권장합니다. _구성 가이드_&#x200B;에서 [세션 저장소에 대한 유효성 검사 사용](../../../configuration/cache/valkey-session.md)을 참조하십시오.
+6GB가 넘는 Valkey `maxmemory`을(를) 사용하는 경우 캐시 압축을 사용하여 키에서 사용하는 공간을 줄일 수 있습니다. 클라이언트측 성능이 저하됩니다. 예비 CPU가 있는 경우 Adobe에서 이를 활성화하도록 권장합니다. [구성 가이드](../../../configuration/cache/valkey-session.md)에서 _세션 저장소에 대한 유효성 검사 사용_&#x200B;을 참조하십시오.
 
 ```yaml
 stage:

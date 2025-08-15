@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### 선택적으로 `magento_umask` 설정
 
-_설치 안내서_&#x200B;에서 [필요에 따라 umask 설정](../../installation/next-steps/set-umask.md)을 참조하십시오.
+[설치 안내서](../../installation/next-steps/set-umask.md)에서 _필요에 따라 umask 설정_&#x200B;을 참조하십시오.
 
 ## 비공개 호스팅을 위한 운영 파일 시스템 소유권(사용자 2명)
 

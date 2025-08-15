@@ -73,7 +73,7 @@ ht-degree: 3%
 | [프론트엔드 성능 감사](frontend-performance.md) | 웹 성능 도구를 사용하여 사이트 성능에 부정적인 영향을 주는 문제를 식별하고 해결합니다. |
 | [준비, 설정, 유지 관리](https://business.adobe.com/blog/basics/ready-set-maintain) | 비즈니스 가치 및 가동 시간을 극대화하기 위한 Adobe Commerce 사이트 유지 관리 팁입니다. |
 | [사용 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 한 곳에서 Adobe Commerce 사이트에 대한 중요한 통찰력을 볼 수 있습니다. |
-| [성능, 디스크 공간 및 로그 모니터링](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=ko) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
+| [성능, 디스크 공간 및 로그 모니터링](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
 | [보안 인시던트에 응답](respond-to-security-incident.md) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
 
 ### 업그레이드

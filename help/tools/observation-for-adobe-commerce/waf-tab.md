@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL WAF] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의  [!DNL WAF] 탭에 대해 알아봅니다.'
+description: ' [!DNL WAF] 의  [!DNL Observation for Adobe Commerce]탭에 대해 알아봅니다.'
 exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -28,19 +28,19 @@ ht-degree: 0%
 
 ## [!DNL WAF Top 10 countries for blocked requests]
 
-![차단된 요청에 대해 WAF 상위 10개 국가](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
+![차단된 요청에 대해 상위 10개 국가 WAF](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
 **[!DNL WAF Top 10 countries for blocked requests]** 프레임에는 [!DNL firewall]의 차단된 요청에 대해 상위 10개 국가에서 차단된 요청의 수가 표시됩니다.
 
 ## [!DNL WAF Top 10 logged IP Addresses]
 
-![WAF 상위 10개 기록된 IP 주소](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
+![WAF 상위 10개 IP 주소](../../assets/tools/observation-for-adobe-commerce/waf-4.jpg)
 
 **[!DNL WAF Top 10 logged IP Addresses]** 프레임에는 [!DNL firewall]이(가) 기록한 상위 10개 IP 주소의 IP 주소가 표시됩니다.
 
 ## [!DNL Top 10 WAF Rules Executed and Logged by IP address]
 
-![IP 주소로 실행 및 기록된 상위 10개의 WAF 규칙](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
+![IP 주소로 실행되고 기록된 상위 10개의 WAF 규칙](../../assets/tools/observation-for-adobe-commerce/waf-5.jpg)
 
 **[!DNL Top 10 WAF Rules Executed and Logged by IP address]** 프레임에는 [!DNL firewall] 규칙과 가장 일치하는 상위 10개 IP 주소가 표시됩니다.
 

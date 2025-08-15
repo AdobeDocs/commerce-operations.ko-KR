@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 - [개요](overview.md)
 - [시스템 요구 사항](system-requirements.md)
-- 필수 구성 요소 {#prerequisites}
+- 사전 요구 사항 {#prerequisites}
    - [개요](prerequisites/overview.md)
    - 파일 시스템 {#file-system}
       - [개요](prerequisites/file-system/overview.md)
@@ -38,7 +38,7 @@ ht-degree: 2%
    - [옵션 소프트웨어](prerequisites/optional-software.md)
 - [빠른 시작 설치](composer.md)
 - [고급 설치](advanced.md)
-- Post 설치 단계 {#next-steps}
+- 설치 후 단계 {#next-steps}
    - [설치 확인](next-steps/verify.md)
    - [애플리케이션 구성](next-steps/configuration.md)
    - [마스크 설정(선택 사항)](next-steps/set-umask.md)
@@ -47,7 +47,7 @@ ht-degree: 2%
       - [작성기 패키지 다운로드](sample-data/composer-packages.md)
       - [Git 저장소 복제](sample-data/git-repositories.md)
       - [모듈 제거 또는 업데이트](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- 튜토리얼 {#tutorials}
    - [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](tutorials/backup.md)
    - [데이터베이스 상태 확인](tutorials/database-status.md)
    - [메시지 소비자 행동 구성](tutorials/message-consumers.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Commerce 제거 또는 재설치](tutorials/uninstall.md)
    - [테마 제거](tutorials/themes.md)
    - [데이터베이스 스키마 업그레이드](tutorials/database-upgrade.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

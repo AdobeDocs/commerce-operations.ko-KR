@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 니스 삭제
 
-[Varnish 설명서](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)에 따르면 &quot;*purge*&#x200B;은(는) 캐시에서 개체를 선택하여 변형과 함께 삭제할 때 발생합니다.&quot; 바니시 제거는 캐시 정리 명령(또는 관리자의 **Magento 캐시 초기화**&#x200B;를 클릭)과 유사합니다.
+[Varnish 설명서](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)에 따르면 &quot;*purge*&#x200B;은(는) 캐시에서 개체를 선택하여 변형과 함께 삭제할 때 발생합니다.&quot; 바니시 제거는 캐시 정리 명령(또는 관리자의 **Magento 캐시 플러시**&#x200B;를 클릭)과 유사합니다.
 
 실제로 Commerce 캐시를 정리하거나 플러시하거나 새로 고치면 바니쉬도 지워집니다.
 
@@ -42,7 +42,7 @@ Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업
 
 ## 바니시를 제거하도록 Commerce 구성
 
-Commerce은 [`magento setup:config:set`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) 명령을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다.
+Commerce은 [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) 명령을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다.
 
 선택적 매개 변수 `--http-cache-hosts` 매개 변수를 사용하여 쉼표로 구분된 Varnish 호스트 및 수신 포트 목록을 지정할 수 있습니다. 하나 또는 여러 개의 Vannish 호스트를 모두 구성합니다. ( 공백 문자로 호스트를 구분하지 마십시오.)
 
@@ -56,6 +56,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 그런 다음 Admin에서 또는 명령줄을 사용하여 Commerce 캐시(캐시에서 *정리*&#x200B;라고도 함)를 새로 고칠 때 Vannish 호스트를 제거할 수 있습니다.
 
-관리자를 사용하여 캐시를 새로 고치려면 **[!UICONTROL SYSTEM]** > 도구 > **캐시 관리**&#x200B;를 클릭한 다음 페이지 상단의 **Magento 캐시 초기화**&#x200B;를 클릭합니다. 개별 캐시 유형을 새로 고칠 수도 있습니다.
+관리자를 사용하여 캐시를 새로 고치려면 **[!UICONTROL SYSTEM]** > 도구 > **캐시 관리**&#x200B;를 클릭한 다음 페이지 상단의 **Magento 캐시 플러시**&#x200B;를 클릭합니다. 개별 캐시 유형을 새로 고칠 수도 있습니다.
 
 명령줄을 사용하여 캐시를 새로 고치려면 일반적으로 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 명령을 [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)(으)로 사용합니다.

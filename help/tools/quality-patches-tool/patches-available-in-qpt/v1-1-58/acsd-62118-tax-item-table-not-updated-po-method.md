@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-62118: [!UICONTROL Purchase Order] 메서드를 사용하여 수행한 B2B 주문에 대해 `sales_order_tax_item` 테이블이 완전히 업데이트되지 않았습니다.
+# ACSD-62118: `sales_order_tax_item` 메서드를 사용하여 수행한 B2B 주문에 대해 [!UICONTROL Purchase Order] 테이블이 완전히 업데이트되지 않았습니다.
 
-ACSD-62118 패치는 *[!UICONTROL Purchase Order]* 메서드를 사용하여 B2B 주문을 할 때 `sales_order_tax_item` 테이블이 완전히 업데이트되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62118입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-62118 패치는 `sales_order_tax_item` 메서드를 사용하여 B2B 주문을 할 때 *[!UICONTROL Purchase Order]* 테이블이 완전히 업데이트되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62118입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -28,7 +28,7 @@ ACSD-62118 패치는 *[!UICONTROL Purchase Order]* 메서드를 사용하여 B2B
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -50,15 +50,15 @@ ACSD-62118 패치는 *[!UICONTROL Purchase Order]* 메서드를 사용하여 B2B
 <u>실제 결과</u>:
 
 * `sales_order_tax_item` 테이블에 `tax_item` 데이터가 없습니다.
-* *[!UICONTROL Purchase Order]*&#x200B;에 대한 API 응답에서 `applied_taxes` 및 `item_applied_taxes` 배열이 비어 있습니다.
+* `applied_taxes`에 대한 API 응답에서 `item_applied_taxes` 및 *[!UICONTROL Purchase Order]* 배열이 비어 있습니다.
 * *[!UICONTROL Purchase Order]* 결제 방법을 사용할 때 세금 데이터가 표시되지 않습니다.
 
 ## 패치 적용
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 ](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 

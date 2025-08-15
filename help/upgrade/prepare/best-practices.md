@@ -1,6 +1,6 @@
 ---
 title: 우수 사례
-description: Adobe Commerce 프로젝트에 대한 업그레이드 프로세스를 관리하려면 Adobe 권장 모범 사례를 사용하십시오.
+description: Adobe 권장 모범 사례를 사용하여 Adobe Commerce 프로젝트에 대한 업그레이드 프로세스를 관리합니다.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->이러한 권장 사항은 파트너, 판매자, Adobe 전문가 및 커뮤니티의 영향과 효과에 대한 증거에 의해 지원되는 모범 사례를 기반으로 합니다.
+>이러한 권장 사항은 파트너, 판매자, Adobe 전문가 및 커뮤니티의 영향과 효과에 대한 증거로 지원되는 모범 사례를 기반으로 합니다.
 
 ## 업그레이드에 영향을 미치는 사항
 
@@ -47,17 +47,17 @@ Adobe Commerce 인스턴스를 업그레이드하기 위한 작업 수준은 다
 
 아직 채택하지 않았다면 Adobe Commerce 확장성 플랫폼 채택을 시작합니다. 이 플랫폼을 사용하면 SaaS와 유사한 업그레이드 기능을 유지하면서 프로세스를 효율적으로 사용자 정의하고 시스템을 통합하며 새로운 기능을 배포할 수 있습니다. 그 기능은 다음과 같습니다.
 
-- **UI 확장성**. [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)을 사용하여 백엔드 및 미들웨어와 독립적으로 스토어프런트를 확장하고 발전시키십시오.
+- **UI 확장성**. [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)을(를) 사용하여 백엔드 및 미들웨어와 독립적으로 스토어프런트를 확장하고 발전시키십시오.
 
 - **API 확장성**. 그래프 데이터 모델을 발전시키고 그래프 레이어에서 직접 람다 함수를 실행하여 웹 API 레이어를 확장하려면 [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html)을(를) 사용하십시오.
 
-- **Adobe I/O 미들웨어 및 서비스**. Adobe의 미들웨어와 [Adobe I/O](https://www.adobe.io/)에 빌드된 앱 연결 모음을 사용하여 Adobe Commerce과 시스템을 연결합니다. 또한 Adobe I/O에서 실행되는 고유한 비즈니스 논리로 기본 동작을 덮어써서 코어 플랫폼 기능을 확장할 수 있습니다.
+- **Adobe I/O 미들웨어 및 서비스**. Adobe의 미들웨어와 [Adobe I/O](https://www.adobe.io/)에 구축된 앱 연결 제품군을 사용하여 Adobe Commerce과 시스템을 연결합니다. 또한 Adobe I/O에서 실행되는 고유한 비즈니스 논리로 기본 동작을 덮어쓰면서 핵심 플랫폼 기능을 확장할 수 있습니다.
 
 ### 업그레이드 계획 중
 
 Adobe Commerce의 기능을 지속적으로 확장하는 과정에서 사용 가능한 최신 릴리스를 통해 개발하고 프로젝트 계획에 업그레이드 전략을 정의하는 것이 중요합니다. 이를 통해 영업을 더욱 신속하게 확장하고, 더욱 효과적으로 운영하며, 현재와 미래의 경쟁에서 앞서갈 수 있도록 지원하는 최신 개선 사항을 안전하고 준수하며 최신 상태로 유지할 수 있습니다.
 
-업그레이드를 계획하고 예산을 책정하려면 [릴리스 일정](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule)을 모니터링해야 합니다. 미리 팀의 백로그 내에서 업그레이드 작업을 계획합니다. GA로 이 작업을 완료하는 것을 목표로 합니다.
+업그레이드를 계획하고 예산을 책정하려면 [릴리스 일정](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)을 모니터링해야 합니다. 미리 팀의 백로그 내에서 업그레이드 작업을 계획합니다. GA로 이 작업을 완료하는 것을 목표로 합니다.
 
 - 프리릴리스 버전을 사용하여 각 새로운 릴리스에 대해 알아보십시오. 프리릴리스는 Adobe Commerce 판매자 및 모든 파트너가 일반 출시 2주 전에 사용할 수 있는 일반 가용성 코드입니다. 여러 스토어가 있는 경우 기본 스토어에서 프리릴리스를 사용하고 사용자 지정 모듈 및 테마가 호환되는지 확인하십시오.
 
@@ -73,7 +73,7 @@ Adobe Commerce의 기능을 지속적으로 확장하는 과정에서 사용 가
 
 업그레이드를 위해 수행할 작업을 평가합니다.
 
-- 새 버전의 범위와 영향을 이해하려면 [릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/overview)를 검토하십시오.
+- 새 버전의 범위와 영향을 이해하려면 [릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)를 검토하십시오.
 
 - 새 버전으로 업그레이드하기 전에 사용자 지정 코드에서 수정해야 하는 잠재적인 문제를 식별하려면 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)을(를) 사용하십시오.
 

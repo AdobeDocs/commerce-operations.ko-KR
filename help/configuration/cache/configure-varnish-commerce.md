@@ -26,7 +26,7 @@ Vanish를 사용하도록 Commerce을 구성하려면 다음을 수행하십시�
    | 백엔드 호스트 | Varnish _백엔드_ 또는 _원본 서버_&#x200B;의 정규화된 호스트 이름 또는 IP 주소 및 수신 포트를 입력하십시오. 즉, Varnish 콘텐츠를 제공하는 서버는 속도가 빨라집니다. 일반적으로 웹 서버입니다. [Varnish 캐시 백 엔드 서버](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)를 참조하십시오. |
    | 백엔드 포트 | 원본 서버의 수신 포트입니다. |
    | 유예 기간 | 백엔드가 응답하지 않는 경우 Vannish가 오래된 콘텐츠를 제공하는 기간을 결정합니다. 기본값은 300초입니다. |
-   | 매개변수 크기 처리 | 전체 페이지 캐싱을 위해 [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP 끝점에서 처리할 최대 [레이아웃 핸들](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) 수를 지정합니다. 크기를 제한하면 보안과 성능을 향상시킬 수 있습니다. 기본값은 100입니다. |
+   | 매개변수 크기 처리 | 전체 페이지 캐싱을 위해 [ HTTP 끝점에서 처리할 최대 ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles)레이아웃 핸들[`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) 수를 지정합니다. 크기를 제한하면 보안과 성능을 향상시킬 수 있습니다. 기본값은 100입니다. |
 
 1. **구성 저장**&#x200B;을 클릭합니다.
 
@@ -48,7 +48,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
    ![관리자에서 바니시를 사용하도록 Commerce 구성](../../assets/configuration/varnish-admin-22.png)
 
-1. 기존 `default.vcl` 백업. 그런 다음 방금 `default.vcl`(으)로 내보낸 `varnish.vcl` 파일의 이름을 바꿉니다. 그런 다음 파일을 `/etc/varnish/` 디렉터리에 복사합니다.
+1. 기존 `default.vcl` 백업. 그런 다음 방금 `varnish.vcl`(으)로 내보낸 `default.vcl` 파일의 이름을 바꿉니다. 그런 다음 파일을 `/etc/varnish/` 디렉터리에 복사합니다.
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -62,7 +62,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe은 `default.vcl`을(를) 열고 `acl purge`의 값을 Varnish 호스트의 IP 주소로 변경할 것을 권장합니다. (여러 호스트를 별도의 줄에 지정하거나 CIDR 표기법을 사용할 수도 있습니다.)
+1. Adobe에서는 `default.vcl`을(를) 열고 `acl purge`의 값을 Varnish 호스트의 IP 주소로 변경할 것을 권장합니다. (여러 호스트를 별도의 줄에 지정하거나 CIDR 표기법을 사용할 수도 있습니다.)
 
    For example,
 

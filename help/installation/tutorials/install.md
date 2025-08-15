@@ -4,7 +4,7 @@ description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 |--- |--- |--- |
 | `--base-url` | <br><br>`http[s]://<host or ip>/<your install dir>/` 형식 중 하나로 관리자 및 상점 앞에 액세스하는 데 사용할 기본 URL입니다.<br><br>**참고:** 구성표(http:// 또는 https://)와 뒤쪽 슬래시가 모두 필요합니다.<br><br>`<your install dir>`은(는) 응용 프로그램을 설치할 docroot 상대 경로입니다. 웹 서버와 가상 호스트를 설정하는 방법에 따라 경로가 magento2이거나 비어 있을 수 있습니다.<br><br>localhost에서 응용 프로그램에 액세스하려면 `http://127.0.0.1/<your install dir>/` 또는 `http://127.0.0.1/<your install dir>/`을(를) 사용합니다.<br><br>- `{{base_url}}`: 가상 호스트 설정 또는 Docker와 같은 가상화 환경에서 정의한 기본 URL을 나타냅니다. 예를 들어 호스트 이름 commerce.example.com을 사용하여 가상 호스트를 설정하는 경우 `--base-url={{base_url}}`을(를) 사용하여 응용 프로그램을 설치하고 `http://commerce.example.com/admin`과(와) 같은 URL로 관리자에 액세스할 수 있습니다. | 예 |
 | `--backend-frontname` | 관리자에 액세스할 수 있는 URI(Uniform Resource Identifier)입니다. 이 매개 변수를 생략하면 응용 프로그램에서 다음 패턴으로 임의의 URI를 생성할 수 있습니다. <code>admin_jkgdfq</code>.<br><br>보안을 위해 임의의 URI를 사용하는 것이 좋습니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다.<br><br>설치가 끝날 때 URI가 표시됩니다. 나중에 언제든지 `magento info:adminuri` 명령을 사용하여 표시할 수 있습니다.<br><br>값을 입력하기로 선택한 경우 admin, backend와 같은 일반적인 단어를 사용하지 않는 것이 좋습니다. 관리자 URI에는 영숫자 값과 밑줄 문자(`_`)만 포함될 수 있습니다. | 아니요 |
-| `--db-host` | <br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소를 사용합니다.<br><br>- `localhost`(기본값) 또는 `127.0.0.1`(데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우).localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1`을(를) 사용하면 클라이언트 라이브러리에서 TCP 프로토콜을 사용합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php)를 참조하십시오.<br><br>**참고:** www.example.com:9000과 같은 호스트 이름에 데이터베이스 서버 포트를 선택적으로 지정할 수 있습니다. | 예 |
+| `--db-host` | <br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소를 사용합니다.<br><br>- `localhost`(기본값) 또는 `127.0.0.1`(데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우).localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1`을(를) 사용하면 클라이언트 라이브러리에서 TCP 프로토콜을 사용합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php)를 참조하십시오.<br><br>**참고:** www.example.com과 같은 호스트 이름에 데이터베이스 서버 포트를 선택적으로 지정할 수 있습니다.:9000 | 예 |
 | `--db-name` | 데이터베이스 테이블을 설치할 데이터베이스 인스턴스의 이름입니다.<br><br>기본값은 `magento2`입니다. | 예 |
 | `--db-user` | 데이터베이스 인스턴스 소유자의 사용자 이름.<br><br>기본값은 `root`입니다. | 예 |
 | `--db-password` | 데이터베이스 인스턴스 소유자의 암호입니다. | 예 |
@@ -117,13 +117,13 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 
 >[!TIP]
 >
->설치하는 동안 원격 저장소 서비스를 사용하려면 _구성 가이드_&#x200B;에서 [원격 저장소 구성](../../configuration/remote-storage/remote-storage.md)을 참조하세요.
+>설치하는 동안 원격 저장소 서비스를 사용하려면 [구성 가이드](../../configuration/remote-storage/remote-storage.md)에서 _원격 저장소 구성_&#x200B;을 참조하세요.
 
 **검색 엔진 구성 옵션:**
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
-| `--search-engine` | 검색 엔진의 버전입니다. 가능한 값은 `elasticsearch7`, `elasticsearch6` 및 `elasticsearch5`입니다. 기본값은 `elasticsearch7`입니다. OpenSearch를 검색 엔진으로 설치한 경우 `elasticsearch7` 값을 지정하십시오. Elasticsearch 5는 더 이상 사용되지 않으므로 권장되지 않습니다. | 아니요 |
+| `--search-engine` | 검색 엔진의 버전입니다. 가능한 값은 `elasticsearch7`, `elasticsearch6` 및 `elasticsearch5`입니다. 기본값은 `elasticsearch7`입니다. OpenSearch를 검색 엔진으로 설치한 경우 `elasticsearch7` 값을 지정하십시오. Elasticsearch 5는 더 이상 사용되지 않으며 권장되지 않습니다. | 아니요 |
 | `--elasticsearch-host` | 검색 엔진이 실행 중인 호스트 이름 또는 IP 주소입니다. 기본값은 `localhost`입니다. | 아니요 |
 | `--elasticsearch-port` | 수신 HTTP 요청의 포트입니다. 기본값은 `9200`입니다. | 아니요 |
 | `--elasticsearch-index-prefix` | 검색 색인을 식별하는 접두사입니다. 기본값은 `magento2`입니다. | 아니요 |
@@ -136,7 +136,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
-| `--amqp-host` | [!DNL RabbitMQ]의 설치를 아직 설정하지 않은 한 `--amqp` 옵션을 사용하지 마십시오. [!DNL RabbitMQ] 설치 및 구성에 대한 자세한 내용은 [!DNL RabbitMQ] 설치 를 참조하십시오.<br><br>호스트 이름([!DNL RabbitMQ]이 설치되어 있음). | 아니요 |
+| `--amqp-host` | `--amqp`의 설치를 아직 설정하지 않은 한 [!DNL RabbitMQ] 옵션을 사용하지 마십시오. [!DNL RabbitMQ] 설치 및 구성에 대한 자세한 내용은 [!DNL RabbitMQ] 설치 를 참조하십시오.<br><br>호스트 이름([!DNL RabbitMQ]이 설치되어 있음). | 아니요 |
 | `--amqp-port` | [!DNL RabbitMQ]에 연결하는 데 사용할 포트입니다. 기본값은 5672입니다. | 아니요 |
 | `--amqp-user` | [!DNL RabbitMQ]에 연결하기 위한 사용자 이름입니다. 기본 사용자 `guest`을(를) 사용하지 마십시오. | 아니요 |
 | `--amqp-password` | [!DNL RabbitMQ]에 연결하기 위한 암호입니다. 기본 암호 `guest`을(를) 사용하지 마십시오. | 아니요 |
@@ -185,7 +185,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 
 다음 예제에서는 다음 옵션을 사용하여 애플리케이션을 설치합니다.
 
-* 응용 프로그램이 `localhost`의 웹 서버 docroot에 상대적인 `magento2` 디렉터리에 설치되어 있고 관리자의 경로는 `admin`이므로 다음과 같습니다.
+* 응용 프로그램이 `magento2`의 웹 서버 docroot에 상대적인 `localhost` 디렉터리에 설치되어 있고 관리자의 경로는 `admin`이므로 다음과 같습니다.
 
   상점 URL은 `http://127.0.0.1`입니다.
 
@@ -255,7 +255,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 다음 예제에서는 다음 옵션을 사용하여 애플리케이션을 설치합니다.
 
-* Magapplication이 `localhost`의 웹 서버 docroot에 상대적인 `magento2` 디렉터리에 설치되어 있고 관리자의 경로가 `admin`이므로:
+* Magapplication이 `magento2`의 웹 서버 docroot에 상대적인 `localhost` 디렉터리에 설치되어 있고 관리자의 경로가 `admin`이므로:
 
   상점 URL은 `http://127.0.0.1`입니다.
 

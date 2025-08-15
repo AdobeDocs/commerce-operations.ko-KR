@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe은 SELinux 사용에 대한 권장 사항이 없습니다. 원할 경우 향상된 보안을 위해 사용할 수 있습니다. SELinux를 사용하는 경우 올바르게 구성해야 합니다. 그렇지 않으면 Adobe Commerce이 예기치 않게 작동할 수 있습니다. SELinux를 사용하려면 [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)와 같은 리소스를 참조하여 통신을 사용하도록 규칙을 설정합니다.
+>Adobe에는 SELinux 사용에 대한 권장 사항이 없습니다. 원할 경우 향상된 보안을 위해 사용할 수 있습니다. SELinux를 사용하는 경우 올바르게 구성해야 합니다. 그렇지 않으면 Adobe Commerce이 예기치 않게 작동할 수 있습니다. SELinux를 사용하려면 [CentOS wiki](https://wiki.centos.org/HowTos/SELinux)와 같은 리소스를 참조하여 통신을 사용하도록 규칙을 설정합니다.
 
 ## Apache에 설치하기 위한 제안 사항
 
@@ -65,7 +65,7 @@ SELinux가 활성화된 상태에서 Apache가 다른 호스트에 대한 연결
 
 ## 방화벽에서 포트 열기
 
-보안 요구 사항에 따라 방화벽에서 포트 80 및 기타 포트를 열어야 할 수도 있습니다. 네트워킹 보안의 민감한 특성 때문에 Adobe은 계속하기 전에 IT 부서에 문의하는 것이 좋습니다. 다음은 몇 가지 제안된 참조입니다.
+보안 요구 사항에 따라 방화벽에서 포트 80 및 기타 포트를 열어야 할 수도 있습니다. 네트워킹 보안의 민감한 특성 때문에 Adobe에서는 계속하기 전에 IT 부서에 문의하는 것이 좋습니다. 다음은 몇 가지 제안된 참조입니다.
 
 * Ubuntu: [Ubuntu 설명서 페이지](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [CentOS 사용 방법](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).

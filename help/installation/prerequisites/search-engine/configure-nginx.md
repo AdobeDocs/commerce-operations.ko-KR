@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 호환 가능한 Elasticsearch 포크입니다. 자세한 내용은 [OpenSearch로 Elasticsearch 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)을 참조하십시오.
+>2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 Elasticsearch의 호환 가능한 포크입니다. 자세한 내용은 [OpenSearch로 Elasticsearch 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)을 참조하십시오.
 
 이 섹션에서는 Adobe Commerce에서 이 서버에서 실행 중인 검색 엔진을 사용할 수 있도록 nginx를 *unsecure* 프록시로 구성하는 방법에 대해 설명합니다. 이 섹션에서는 HTTP 기본 인증 설정에 대해 설명하지 않습니다. [nginx와의 보안 통신](#secure-communication-with-nginx)에서 설명합니다.
 
@@ -81,7 +81,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ## Nginx와의 보안 통신
 
-이 섹션에서는 보안 프록시로 [HTTP 기본 인증](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)을 설정하는 방법에 대해 설명합니다. TLS와 HTTP Basic 인증을 함께 사용하면 모든 사람이 Elasticsearch 또는 OpenSearch나 애플리케이션 서버와의 통신을 가로채지 못합니다.
+이 섹션에서는 보안 프록시로 [HTTP 기본 인증](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)을 설정하는 방법에 대해 설명합니다. TLS와 HTTP Basic 인증을 함께 사용하면 누구나 Elasticsearch, OpenSearch 또는 애플리케이션 서버와의 통신을 가로채지 못합니다.
 
 nginx는 기본적으로 HTTP 기본 인증을 지원하므로 프로덕션 환경에서는 권장되지 않는 [다이제스트 인증](https://www.nginx.com/resources/wiki/modules/auth_digest/)을 사용하는 것이 좋습니다.
 

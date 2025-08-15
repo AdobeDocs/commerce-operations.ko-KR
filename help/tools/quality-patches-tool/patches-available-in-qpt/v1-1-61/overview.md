@@ -19,8 +19,8 @@ ht-degree: 0%
 QPT v1.1.61에는 다음 패치가 포함됩니다.
 
 1. **ACP2E-3689**: 더 심층적인 수준에 카테고리 트리가 표시되고 앵커/비앵커 관계가 반영된 여러 문제가 수정되었습니다.
-1. **ACP2E-3705**: `MAGE_INDEXER_THREADS_COUNT`을(를) 설정할 때 `indexer_update_all_views` cron 실행이 실패하는 문제를 해결했습니다.
-1. **ACSD-63883**: [!UICONTROL Requisition List]이(가) [!DNL GraphQL] 응답에서 잘못된 `items_count`을(를) 반환하는 문제를 해결했습니다.
+1. **ACP2E-3705**: `indexer_update_all_views`을(를) 설정할 때 `MAGE_INDEXER_THREADS_COUNT` cron 실행이 실패하는 문제를 해결했습니다.
+1. **ACSD-63883**: [!UICONTROL Requisition List]이(가) `items_count` 응답에서 잘못된 [!DNL GraphQL]을(를) 반환하는 문제를 해결했습니다.
 1. **ACSD-63974**: 한 번에 모든 레코드 대신 페이지당 레코드 수로 제한된 레코드의 일부만 표시하는 상점 앞 [!UICONTROL Requisition List] 그리드에 페이지 매김 기능을 추가하여 항목이 너무 많을 때 [!UICONTROL Requisition List] 페이지를 로드하는 데 시간이 너무 오래 걸리는 문제를 해결했습니다.
 1. **ACSD-64178**: 제품 특성이 수천 개일 경우 [!UICONTROL Attribute Set] 편집 페이지가 느리게 로드되는 문제를 해결했습니다.
 1. **ACSD-64209**: cron 스케줄러가 상태가 **[!UICONTROL ordered]**&#x200B;인 견적을 제외하지 않고 모든 협상 가능한 견적을 검색하여 전자 메일 또는 전자 메일이 트리거되는 문제를 해결했습니다.

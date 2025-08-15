@@ -38,7 +38,7 @@ Commerce 애플리케이션의 여러 인스턴스를 사용하여 파이프라�
 ### `Backend` 모듈 `config.xml` 파일 편집
 
 1. 원본 `config.xml` 파일을 보관합니다.
-1. `<default>` 요소 바로 아래에 다음과 유사한 줄을 `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` 파일에 추가합니다.
+1. `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` 요소 바로 아래에 다음과 유사한 줄을 `<default>` 파일에 추가합니다.
 
    ```xml
    <advanced>

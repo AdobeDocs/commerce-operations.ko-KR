@@ -18,7 +18,7 @@ ht-degree: 1%
 | Bootstrap 매개 변수 | 설명 |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | 사용자 지정 디렉터리 및 URL 경로 지정 |
-| MAGE_PROFILER | 종속성 그래프 및 HTML 프로파일링 활성화 |
+| MAGE_PROFILER | 종속성 그래프 및 HTML 프로파일링을 활성화합니다. |
 
 >[!INFO]
 >
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx 설정
 
-_GitHub_&#x200B;에서 [Nginx 샘플 구성]을 참조하세요.
+[GitHub]에서 _Nginx 샘플 구성_&#x200B;을 참조하세요.
 
 ### Apache .htaccess 설정
 

@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # 인증 키 받기
 
-`repo.magento.com` 리포지토리는 Adobe Commerce 및 타사 Composer 패키지가 저장되어 있으며 인증이 필요합니다. 저장소에 액세스할 수 있도록 32자로 된 *인증 키* 쌍을 생성하려면 Commerce Marketplace 계정을 사용하십시오.
+`repo.magento.com` 리포지토리는 Adobe Commerce 및 타사 Composer 패키지가 저장되어 있으며 인증이 필요합니다. Commerce Marketplace 계정을 사용하여 저장소에 액세스할 수 있는 32자 *인증 키* 쌍을 생성합니다.
 
 Adobe Commerce 패키지에 대한 액세스 권한을 얻으려면 해당 패키지에 대한 액세스 권한이 부여된 MAGEID와 연결된 키를 사용해야 합니다. MAGEID는 일반적으로 Adobe Commerce 계정의 기본 연락처이며 항상 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 소유자는 아닐 수 있습니다.
 
 >[!TIP]
 >
->[오류](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=ko)가 발생한 경우 패키지에 액세스할 수 있는 권한이 없거나 계정의 미결 송장으로 인해 액세스 권한이 만료되었을 수 있습니다.
+>[오류](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)가 발생한 경우 패키지에 액세스할 수 있는 권한이 없거나 계정의 미결 송장으로 인해 액세스 권한이 만료되었을 수 있습니다.
 >
 >* 귀하가 계정에서 기본 담당자 사용자인 경우 계정에 미결 송장이 나열되어 있지 않은지 확인하십시오.
->* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 해결되지 않은 청구서가 없는 경우 기본 연락처는 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)에 지원을 요청해야 합니다.
+>* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 해결되지 않은 청구서가 없는 경우 기본 연락처는 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)에 지원을 요청해야 합니다.
 
 인증 키를 만들려면 다음을 수행하십시오.
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 인증 키를 사용하여 다음을 수행합니다.
 
 * [메타패키지 가져오기(통합자, 패키지)](../composer.md)
-* [GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)(기여 개발자만 해당)
+* [GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)&#x200B;(기여 개발자만 해당)
 * [모듈 업그레이드 및 관리](../../upgrade/modules/upgrade.md)

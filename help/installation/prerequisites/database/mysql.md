@@ -22,7 +22,7 @@ Adobe _강력하게_&#x200B;에서는 데이터베이스를 설정할 때 다음
 
 >[!WARNING]
 >
->Adobe Commerce은 현재 트랜잭션 내에서 `CREATE TEMPORARY TABLE` 문을 사용합니다. 이 문은 데이터베이스 구현에서 [Google Cloud SQL 2세대 인스턴스](https://cloud.google.com/sql/docs/features#differences)와 같은 GTID 기반 복제를 사용하는 [호환되지 않음](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html)입니다. 대안으로 Cloud SQL 8.0용 MySQL을 고려해 보십시오.
+>Adobe Commerce은 현재 트랜잭션 내에서 `CREATE TEMPORARY TABLE` 문을 사용합니다. 이 문은 데이터베이스 구현에서 [Google Cloud SQL 2세대 인스턴스](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html)와 같은 GTID 기반 복제를 사용하는 [호환되지 않음](https://cloud.google.com/sql/docs/features#differences)입니다. 대안으로 Cloud SQL 8.0용 MySQL을 고려해 보십시오.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ mysql 8.19에서 admin_user 설명
 | `username` | `varchar(40)` | 예 | 유니 | `NULL` | |
 | `password` | `varchar(255)` | 아니요 | | `NULL` | |
 | `created` | `timestamp` | 아니요 | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | 아니요 | | `CURRENT_TIMESTAMP` | `CURRENT_TIMESTAMP` 업데이트의 `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | 아니요 | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` 업데이트의 `CURRENT_TIMESTAMP` |
 | `logdate` | `timestamp` | 예 | | `NULL` | |
 | `lognum` | `smallint unsigned` | 아니요 | | `0` | |
 
@@ -88,7 +88,7 @@ _TINYINT(1)_&#x200B;을(를) 제외하고 모든 정수 패딩(TINYINT > 1, SMAL
 
 ### 그룹화 기준(GROUP BY)에 대해 더 이상 사용되지 않는 ASC 및 DESC 한정자
 
-MySQL 8.0.13부터 `GROUP BY` 절에 대해 더 이상 사용되지 않는 `ASC` 또는 `DESC` 한정자가 제거되었습니다. 이전에 `GROUP BY` 정렬에 의존했던 쿼리는 이전 MySQL 버전과 다른 결과를 생성할 수 있습니다. 지정된 정렬 순서를 만들려면 `ORDER BY` 절을 제공합니다.
+MySQL 8.0.13부터 `ASC` 절에 대해 더 이상 사용되지 않는 `DESC` 또는 `GROUP BY` 한정자가 제거되었습니다. 이전에 `GROUP BY` 정렬에 의존했던 쿼리는 이전 MySQL 버전과 다른 결과를 생성할 수 있습니다. 지정된 정렬 순서를 만들려면 `ORDER BY` 절을 제공합니다.
 
 ## Commerce 및 MySQL 8
 

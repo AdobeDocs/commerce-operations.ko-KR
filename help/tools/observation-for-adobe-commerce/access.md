@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL New Relic Observation for Adobe Commerce] Nerdlet을 사용하려면 [!DNL New Relic]에 액세스할 수 있는지 확인하십시오.
 
-[New Relic 계정 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+[New Relic 계정 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
 [!DNL New Relic] 홈 페이지에서 앱 메뉴 항목을 선택합니다.
 

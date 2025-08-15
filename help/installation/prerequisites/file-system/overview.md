@@ -59,9 +59,9 @@ For example:
 - 개발자
 - 프로덕션
 
-_구성 가이드_&#x200B;에서 [모드 정보](../../../configuration/bootstrap/application-modes.md)를 참조하세요.
+[구성 가이드](../../../configuration/bootstrap/application-modes.md)에서 _모드 정보_&#x200B;를 참조하세요.
 
-_구성 가이드_&#x200B;의 [파일 시스템 액세스 권한](../../../configuration/deployment/file-system-permissions.md)에서 권한 권장 사항에 대해 자세히 설명합니다.
+[구성 가이드](../../../configuration/deployment/file-system-permissions.md)의 _파일 시스템 액세스 권한_&#x200B;에서 권한 권장 사항에 대해 자세히 설명합니다.
 
 >[!TIP]
 >

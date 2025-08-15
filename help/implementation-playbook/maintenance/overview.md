@@ -34,4 +34,4 @@ ht-degree: 0%
 
 Adobe Commerce을 배포할 때에는 유지 관리 및 지원 전략에 포함할 내용을 고려하는 것이 중요합니다.
 Adobe Commerce 라이선스에는 전문가 지원이 포함되어 있습니다. 전문가 지원 및 Adobe 지원 계획에 대한 자세한 내용은 [Adobe 지원 계획](https://business.adobe.com/customers/consulting-services/premier-support.html)을 참조하세요.
-Adobe 지원 플랜 외에도 레거시 Magento 지원 약관이 있습니다. 지원 서비스에 대한 자세한 내용은 계약서를 참조하여 지원 계약 내용을 확인하거나 Adobe 계정 팀에 문의하십시오.
+Adobe 지원 플랜 외에도 레거시 Magento 지원 약관이 있습니다. 적용 가능한 지원 서비스를 이해하려면 계약을 참조하여 보유하고 있는 지원 계약을 확인하거나 Adobe 계정 팀에 문의하십시오.

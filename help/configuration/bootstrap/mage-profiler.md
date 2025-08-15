@@ -15,7 +15,7 @@ Commerce 프로파일링을 사용하여 다음과 같은 작업을 수행할 �
 
 - 기본 제공 프로파일러를 사용하도록 설정합니다.
 
-  Commerce에서 내장된 프로파일러를 사용하여 성능 분석과 같은 작업을 수행할 수 있습니다. 프로파일링의 특성은 사용하는 분석 도구에 따라 다릅니다. HTML을 포함한 다양한 형식을 지원합니다. 프로파일러를 사용하면 프로파일러가 사용 및 구성임을 나타내는 `var/profiler.flag` 파일이 생성됩니다. 비활성화되면 이 파일은 삭제됩니다.
+  Commerce에서 내장된 프로파일러를 사용하여 성능 분석과 같은 작업을 수행할 수 있습니다. 프로파일링의 특성은 사용하는 분석 도구에 따라 다릅니다. HTML을 비롯한 다양한 형식을 지원합니다. 프로파일러를 사용하면 프로파일러가 사용 및 구성임을 나타내는 `var/profiler.flag` 파일이 생성됩니다. 비활성화되면 이 파일은 삭제됩니다.
 
 - Commerce 페이지에 종속성 그래프를 표시합니다.
 
@@ -29,7 +29,7 @@ MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성�
 
 ## MAGE_PROFILER 설정
 
-[부트스트랩 매개 변수의 값을 설정](../bootstrap/set-parameters.md)하는 방법으로 `MAGE_PROFILER`의 값을 설정할 수 있습니다.
+`MAGE_PROFILER`부트스트랩 매개 변수의 값을 설정[하는 방법으로 ](../bootstrap/set-parameters.md)의 값을 설정할 수 있습니다.
 
 `MAGE_PROFILER`은(는) 다음 값을 지원합니다.
 
@@ -37,8 +37,8 @@ MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성�
 
   다음 값 중 하나를 사용하여 특정 프로파일러를 활성화할 수 있습니다.
 
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]을(를) 사용하는 `csvfile`
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]을(를) 사용하는 빈 값을 포함한 다른 모든 값(`2` 제외)
+   - `csvfile`을(를) 사용하는 [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
+   - `2`을(를) 사용하는 빈 값을 포함한 다른 모든 값([`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html] 제외)
 
 - 종속성 그래프를 사용하려면 `2`을(를) 사용하십시오.
 

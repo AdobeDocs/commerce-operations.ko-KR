@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ko)을 참조하십시오.
+>503(백 엔드 가져오기 실패) 오류가 발생하면 [Adobe Commerce 도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)에서 _503(서비스를 사용할 수 없음) 오류 문제 해결_&#x200B;을 참조하십시오.

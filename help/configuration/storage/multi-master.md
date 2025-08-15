@@ -38,7 +38,7 @@ MySQL 데이터베이스는 비동기식으로 복제됩니다. 즉, 마스터�
 
 ![Adobe Commerce은 다른 데이터베이스를 사용하여 테이블을 저장합니다](../../assets/configuration/split-db-diagram-ee.png)
 
-Magento Open Source에서 하나의 마스터 데이터베이스만 사용됩니다.
+Magento Open Source에서는 하나의 마스터 데이터베이스만 사용됩니다.
 
 Adobe Commerce은 복제를 위해 세 개의 마스터 데이터베이스와 구성 가능한 개수의 슬레이브 데이터베이스를 사용합니다. Adobe Commerce은 데이터베이스 연결을 위한 단일 인터페이스를 제공하므로 성능이 더 빨라지고 확장성이 향상됩니다.
 
@@ -72,7 +72,7 @@ Adobe Commerce은 복제를 위해 세 개의 마스터 데이터베이스와 �
   >
   >두 개의 추가 데이터베이스 인스턴스를 수동으로 백업해야 합니다. Commerce은 기본 데이터베이스 인스턴스만 백업합니다. [`magento setup:backup --db`](../../installation/tutorials/backup.md) 명령 및 관리 옵션은 추가 테이블을 백업하지 않습니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 분할 데이터베이스를 사용하려면 모든 호스트에 세 개의 MySQL 마스터 데이터베이스를 설정해야 합니다(Commerce 서버에 있는 세 데이터베이스 모두, 별도의 서버에 있는 각 데이터베이스 등). _master_ 데이터베이스이며 다음과 같이 사용됩니다.
 

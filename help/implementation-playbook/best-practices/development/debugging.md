@@ -110,7 +110,7 @@ bin/magento cache:flush
 
   새 모듈에 대한 `app/etc/config.php` 파일을 확인하십시오.
 
-- 파일 및 디렉터리 구조 중첩을 확인합니다. 예를 들어 레이아웃 파일이 `view/frontend/layout` 디렉터리 대신 `view/layout/` 디렉터리에 있습니까? 템플릿이 `view/frontend/templates` 디렉터리 대신 `view/frontend/template` 디렉터리에 있습니까?
+- 파일 및 디렉터리 구조 중첩을 확인합니다. 예를 들어 레이아웃 파일이 `view/layout/` 디렉터리 대신 `view/frontend/layout` 디렉터리에 있습니까? 템플릿이 `view/frontend/template` 디렉터리 대신 `view/frontend/templates` 디렉터리에 있습니까?
 
 ## 문제 해결: 절반 분할
 
@@ -122,7 +122,7 @@ bin/magento cache:flush
 
 ![양방향 다이어그램](../../../assets/playbooks/bisect2.png)
 
-몇 가지 방법으로 양분할 수 있지만 Adobe은 다음 순서를 따를 것을 권장합니다.
+몇 가지 방법으로 양분할 수 있지만 Adobe에서는 다음 순서를 따를 것을 권장합니다.
 
 - 주제별 이등분
 - 커밋별 이등분

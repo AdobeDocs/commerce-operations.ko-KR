@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Commerce 2.4.3부터 Amazon 메시지 큐(MQ)를 온-프레미스 메시지 큐 인스턴스에 대한 클라우드 기반 대체 인스턴스로 사용할 수 있습니다.
 
-AWS에서 메시지 큐를 만들려면 _AWS 설명서_&#x200B;에서 [Amazon MQ 설정](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)을 참조하세요.
+AWS에서 메시지 큐를 만들려면 [AWS 설명서](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)에서 _Amazon MQ 설정_&#x200B;을 참조하세요.
 
 ## AWS MQ용 Commerce 구성
 
-AWS MQ 서비스에 연결하려면 `env.php` 파일에서 `queue.amqp` 개체를 구성하십시오.
+AWS MQ 서비스에 연결하려면 `queue.amqp` 파일에서 `env.php` 개체를 구성하십시오.
 AWS 메시지 큐에는 SSL/TLS 연결이 필요합니다.
 
 ```php
@@ -69,7 +69,7 @@ async.V1.inventory.bulk-product-source-transfer.POST
 
 ## 메시지 큐 테스트
 
-Commerce에서 [!DNL RabbitMQ] (으)로 메시지 전송을 테스트하려면:
+Commerce에서 [!DNL RabbitMQ]&#x200B;(으)로 메시지 전송을 테스트하려면:
 
 1. 큐를 모니터링하려면 AWS의 [!DNL RabbitMQ] 웹 콘솔에 로그인하십시오.
 1. 관리자에서 제품을 만듭니다.

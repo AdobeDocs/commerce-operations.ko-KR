@@ -28,7 +28,7 @@ ht-degree: 1%
    + [시스템 설정 빌드](deployment/build-system.md)
    + [프로덕션 시스템 설정](deployment/production-system.md)
    + [파일 시스템 액세스 권한](deployment/file-system-permissions.md)
-   + 예시 {#examples}
+   + 예 {#examples}
       + [공유 구성 사용](deployment/example-shared-configuration.md)
       + [CLI 명령 사용](deployment/example-using-cli.md)
       + [환경 변수 사용](deployment/example-environment-variables.md)
@@ -150,4 +150,4 @@ ht-degree: 1%
       + [분할 데이터베이스 확인](storage/multi-master-verify.md)
       + [데이터베이스 복제](storage/multi-master-replication.md)
       + [단일 데이터베이스로 되돌리기](storage/revert-split-database.md)
-+ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
++ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

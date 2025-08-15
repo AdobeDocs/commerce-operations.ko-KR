@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL CDN] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL CDN] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL CDN]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
 source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739

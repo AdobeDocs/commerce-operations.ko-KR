@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Summary] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL Summary] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL Summary]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # [!UICONTROL Summary] 탭
 
-[!DNL Observation for Adobe Commerce]의 [!UICONTROL Summary] 탭은 사이트에서 발생한 문제 중 일부를 빠르게 확인하여 사이트 문제의 잠재적 근본 원인을 자동으로 해결하거나 식별하는 데 도움이 되도록 만들어진 것입니다. 추가 탭은 구성 요소 서비스, 데이터베이스, 인프라 및 프로세스 상태에 대한 심층적인 정보를 제공합니다.
+[!UICONTROL Summary]의 [!DNL Observation for Adobe Commerce] 탭은 사이트에서 발생한 문제 중 일부를 빠르게 확인하여 사이트 문제의 잠재적 근본 원인을 자동으로 해결하거나 식별하는 데 도움이 되도록 만들어진 것입니다. 추가 탭은 구성 요소 서비스, 데이터베이스, 인프라 및 프로세스 상태에 대한 심층적인 정보를 제공합니다.
 
 ## [!UICONTROL Transaction Overview]
 
 ![거래 개요](../../assets/tools/transaction-overview.jpg)
 
-### [거래란?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,내용%20is%20a%20transaction%3F,작업%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20frequently, when%20the%20response%20is%20sent)
+### [거래란?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,내용%20is%20a%20transaction%3F,작업%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20frequently, when%20the%20response%20is%20sent)
 
 &quot;[!DNL New Relic]에서 트랜잭션은 소프트웨어 응용 프로그램에서 하나의 논리적 작업 단위로 정의됩니다. 특히 해당 작업 단위를 구성하는 함수 호출과 메서드 호출을 가리킵니다. 종종 웹 트랜잭션을 참조합니다. 이 트랜잭션은 애플리케이션이 웹 요청을 수신할 때부터 응답이 전송될 때까지 발생하는 활동을 나타냅니다.&quot;
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 호스트별 ![CPU 비율](../../assets/tools/cpu-percent-by-host.jpg)
 
-모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ko)을 참조하세요.
+모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)을 참조하세요.
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -68,9 +68,9 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU Usage]
 
-![CPU 사용량](../../assets/tools/cpu-usage.jpg)
+![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
+**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
 
 ## [!UICONTROL Average Response Time]
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 * &#39;%NOTICE: 명령 생성 완료%&#39;)을(를) &#39;gen_compl&#39;로 지정
 * &#39;%NOTICE: 배포가 완료되었습니다%&#39;). &#39;deploy_compl&#39;(으)로
 * &#39;%NOTICE: 사후 배포를 시작합니다.%&#39;)를 &#39;start_pdeploy&#39;로
-* &#39;%NOTICE: Post-deploy is complete%&#39;) as &#39;pdeploy&#39;
+* &#39;%NOTICE: 사후 배포가 완료됨%&#39;)을(를) &#39;pdeploy&#39;로 설정
 * &#39;%deploy-complete%&#39;)을 &#39;cl_deploy_compl&#39;로
 
 ## [!UICONTROL IP Frequency]
@@ -245,7 +245,7 @@ url별 ![ip별 api 호출 세부 정보](../../assets/tools/api-calls-by-ip-deta
 
 ![데이터베이스 추적](../../assets/tools/database-traces.jpg)
 
-**[!UICONTROL Database traces]** 프레임은 [!DNL New Relic]의 [sql trace](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) 엔터티의 데이터를 보고 추적 경로를 반환합니다.
+**[!UICONTROL Database traces]** 프레임은 [의 ](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql trace[!DNL New Relic] 엔터티의 데이터를 보고 추적 경로를 반환합니다.
 
 ## [!UICONTROL Database mysql-slow.log]
 
@@ -310,7 +310,7 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 
 ![php 프로세스](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/)은(는) [!DNL Nginx]에서 사용하는 [!UICONTROL FastCGI Process Manager]입니다. 시스템 요구 사항에 대해 알아보려면 [Adobe Commerce 버전에 매핑된 PHP 버전 요구 사항](../../installation/system-requirements.md)을 참조하세요. **[!UICONTROL PHP processes]** 프레임에는 선택한 타임라인에서 특정 시간에 실행되는 PHP 프로세스 수가 표시됩니다.
+[PHP-FPM](https://php-fpm.org/)은(는) [!UICONTROL FastCGI Process Manager]에서 사용하는 [!DNL Nginx]입니다. 시스템 요구 사항에 대해 알아보려면 [Adobe Commerce 버전에 매핑된 PHP 버전 요구 사항](../../installation/system-requirements.md)을 참조하세요. **[!UICONTROL PHP processes]** 프레임에는 선택한 타임라인에서 특정 시간에 실행되는 PHP 프로세스 수가 표시됩니다.
 
 ## [!UICONTROL Secondary processes]
 
@@ -380,11 +380,11 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39;을 &#39;no_alive_nodes&#39;로 설정
-* &#39;%PHP 치명적인 오류: 알 수 없는 오류: &#39;wrong_param&#39;으로 표시되는 Elasticsearch%&#39;에 대한 잘못된 매개 변수
-* &#39;%Magento 클라우드 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 이 문제를 &#39;ver_err&#39;로 해결할 수 있습니다.
-* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\] (이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
+* &#39;%PHP 치명적인 오류: 알 수 없는 오류: &#39;wrong_param&#39;으로 표시되는 Elasticsearch%&#39;의 매개 변수가 잘못되었습니다.
+* &#39;%Magento Cloud 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 이 문제를 &#39;ver_err&#39;로 해결할 수 있습니다.
+* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\](이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
 * &#39;%no_space&#39;(으)로 장치%&#39;에 남은 공간 없음
-* &#39;% &#39;failed_query&#39;로 &lbrack;SearchRequest&lbrace;searchType=%&#39;을(를) 실행하지 못했습니다.
+* &#39;% &#39;failed_query&#39;로 [SearchRequest{searchType=%&#39;을(를) 실행하지 못했습니다.
 
 ## [!UICONTROL Cron view]
 

@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 - 캐시 데이터 버전을 확인하고 최신 캐시가 로컬에 저장되어 있는지 확인하십시오
 - 원격 컴퓨터에서 로컬 컴퓨터로 최신 캐시 전송
 
-Commerce은 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39;가 추가된 Redis에 저장합니다. 오래된 로컬 캐시가 있으면 데이터가 캐시 어댑터를 사용하여 로컬 시스템으로 전송됩니다.
+Commerce은 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39;이(가) 추가된 Redis에 저장합니다. 오래된 로컬 캐시가 있으면 데이터가 캐시 어댑터를 사용하여 로컬 시스템으로 전송됩니다.
 
 >[!INFO]
 >
->클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)를 사용할 수 있습니다.
+>클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)를 사용할 수 있습니다.
 
 ## 구성 예
 
@@ -70,9 +70,9 @@ Commerce은 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39
    - `local_backend_options`은(는) 로컬 캐시 구성입니다.
    - `cache_dir`은(는) 로컬 캐시가 저장된 디렉터리에 대한 파일 캐시 관련 옵션입니다.
 
-Adobe은 다음을 사용하여 원격 캐싱(`\Magento\Framework\Cache\Backend\Redis`)에 Redis를 사용하고 공유 메모리에 있는 데이터의 로컬 캐싱에 `Cm_Cache_Backend_File`을(를) 사용할 것을 권장합니다. `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe에서는 다음을 사용하여 원격 캐싱(`\Magento\Framework\Cache\Backend\Redis`)에 Redis를 사용하고 공유 메모리에 있는 데이터의 로컬 캐싱에 `Cm_Cache_Backend_File`을(를) 사용하는 것이 좋습니다. `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe은 Redis에 대한 압력을 크게 낮추기 때문에 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 기능을 사용할 것을 권장합니다. 미리 로드 키에 접미사 &#39;:hash&#39;를 추가하는 것을 잊지 마십시오.
+Adobe은 Redis에 대한 압력을 크게 낮추기 때문에 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 기능을 사용할 것을 권장합니다. 미리 로드 키에 접미사 &#39;:hash&#39;을(를) 추가하는 것을 잊지 마십시오.
 
 ## 부실 캐시 옵션
 
@@ -82,7 +82,7 @@ Adobe은 Redis에 대한 압력을 크게 낮추기 때문에 [`cache preload`](
 
 부실 캐시는 L2 캐시에서만 작동합니다. 오래된 캐시를 사용하면 새 캐시가 병렬 프로세스에서 생성되는 동안 오래된 캐시를 보낼 수 있습니다. 부실 캐시를 활성화하려면 L2 캐시의 최상위 구성에 `'use_stale_cache' => true`을(를) 추가하십시오.
 
-Adobe은 다음을 포함하여 가장 많은 이점을 얻는 캐시 유형에 대해서만 `use_stale_cache` 옵션을 사용하도록 권장합니다.
+Adobe에서는 다음을 포함하여 가장 많은 혜택을 받는 캐시 유형에 대해서만 `use_stale_cache` 옵션을 사용하도록 권장합니다.
 
 - `block_html`
 - `config_integration_api`
@@ -92,7 +92,7 @@ Adobe은 다음을 포함하여 가장 많은 이점을 얻는 캐시 유형에 
 - `reflection`
 - `translate`
 
-Adobe은 `default` 캐시 유형에 대해 `use_stale_cache` 옵션을 활성화하지 않는 것이 좋습니다.
+Adobe에서는 `use_stale_cache` 캐시 유형에 대해 `default` 옵션을 활성화하지 않는 것이 좋습니다.
 
 다음 코드는 구성의 예를 보여 줍니다.
 

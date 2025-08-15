@@ -34,7 +34,7 @@ ht-degree: 0%
 
 1. _카탈로그 미디어 URL 형식_ 섹션에서 **[!UICONTROL Use system value]**&#x200B;을(를) 지웁니다.
 
-1. **_카탈로그 미디어 URL 형식_** 필드에서 `Image optimization based on query parameters` URL을 선택합니다.
+1. `Image optimization based on query parameters`카탈로그 미디어 URL 형식&#x200B;**_필드에서_** URL을 선택합니다.
 
 1. **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 
@@ -52,7 +52,7 @@ ht-degree: 0%
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 포함된 템플릿 `nginx.conf.sample` 파일을 기반으로 `nginx.conf` 파일을 만듭니다. For example:
+1. 포함된 템플릿 `nginx.conf` 파일을 기반으로 `nginx.conf.sample` 파일을 만듭니다. For example:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

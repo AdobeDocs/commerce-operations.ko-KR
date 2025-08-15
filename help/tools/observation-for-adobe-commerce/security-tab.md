@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Security] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL Security] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL Security]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -34,20 +34,20 @@ ht-degree: 0%
 
 ## [!UICONTROL POST activities]
 
-**[!UICONTROL POST activities]** 프레임에는 [!DNL Fastly] 로그에서 `client_ip`에 패싯된 사이트에 대한 `POST` 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL도 표시됩니다.
+**[!UICONTROL POST activities]** 프레임에는 `POST` 로그에서 `client_ip`에 패싯된 사이트에 대한 [!DNL Fastly] 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL도 표시됩니다.
 
-![POST 활동](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![사후 활동](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-**[!UICONTROL POST activities summary table]** 프레임에는 [!DNL Fastly] 로그에서 `client_ip`에 패싯된 사이트에 대한 요약된 `POST` 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL의 카운트가 표시됩니다. 카운트는 선택한 기간에 대한 것입니다.
+**[!UICONTROL POST activities summary table]** 프레임에는 `POST` 로그에서 `client_ip`에 패싯된 사이트에 대한 요약된 [!DNL Fastly] 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL의 카운트가 표시됩니다. 카운트는 선택한 기간에 대한 것입니다.
 
-![POST-활동-요약](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
+![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-**[!UICONTROL POST activities details table]** 프레임에는 [!DNL Fastly] 로그에서 사이트에 대한 `POST` 활동이 표시됩니다. 또한 이러한 요청에 대한 [!DNL Fastly] 로그의 모든 세부 정보를 표시합니다. 마지막 2000개의 요청으로 제한됩니다.
-![POST-활동-세부 정보](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
+**[!UICONTROL POST activities details table]** 프레임에는 `POST` 로그에서 사이트에 대한 [!DNL Fastly] 활동이 표시됩니다. 또한 이러한 요청에 대한 [!DNL Fastly] 로그의 모든 세부 정보를 표시합니다. 마지막 2000개의 요청으로 제한됩니다.
+![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 

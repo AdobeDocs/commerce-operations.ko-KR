@@ -1,7 +1,7 @@
 ---
 source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8253'
+source-wordcount: '8232'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 
 
 사용자 지정 CLI 명령을 추가하려면 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 가이드를 사용하십시오.
 
-전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령과 함께 바로 가기를 사용하는 방법을 이해하려면 바로 가기 구문[&#128279;](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
+전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento setup:upgrade`, `bin/magento s:up`을(를) 사용하여 `bin/magento s:upg`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
 
 이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
@@ -33,11 +33,11 @@ Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 
 해당 명령에 대한 도움말을 표시합니다. 명령을 지정하지 않은 경우 list 명령에 대한 도움말을 표시합니다.
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--quiet`, `-q`
 
-메시지를 출력하지 않음
+메시지 출력 안 함
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -308,7 +308,7 @@ Adobe IMS 모듈을 활성화합니다.
 
 #### `--organization-id`, `-o`
 
-Adobe Systems IMS 구성에 대한 조직 ID를 설정합니다. 모듈 활성화 시 필수
+Adobe IMS 구성에 대한 조직 ID를 설정합니다. 모듈을 활성화할 때 필요합니다.
 
 - 값을 허용합니다.
 
@@ -320,7 +320,7 @@ Adobe IMS 구성에 대한 클라이언트 ID를 설정합니다. 모듈을 활�
 
 #### `--client-secret`, `-s`
 
-Adobe Systems IMS 구성에 대한 클라이언트 암호를 설정합니다. 모듈 활성화 시 필수
+Adobe IMS 구성을 위한 클라이언트 암호 를 설정합니다. 모듈을 활성화할 때 필요합니다.
 
 - 값을 허용합니다.
 
@@ -337,7 +337,7 @@ Adobe Admin Console의 조직에 대해 2FA가 활성화되어 있는지 확인�
 bin/magento admin:adobe-ims:info
 ```
 
-Adobe Systems IMS 모듈 구성 정보
+Adobe IMS 모듈 구성 정보
 
 ### 옵션
 
@@ -367,11 +367,11 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--admin-user`
 
-(필수) 관리자 사용자
+(필수) 관리자
 
 - 값 필요
 
@@ -653,7 +653,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--bootstrap`
 
@@ -735,7 +735,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 #### `path`
 
-구성 경로(예: 그룹/section/field_name)
+group/section/field_name과 같은 구성 경로
 
 
 #### `value`
@@ -744,11 +744,11 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--interactive`, `-i`
 
-대화식 모드를 활성화하여 모든 민감한 변수 설정
+모든 중요 변수를 설정하려면 대화형 모드를 활성화하십시오.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -793,7 +793,7 @@ format section/group/field_name의 구성 경로
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--scope`
 
@@ -810,7 +810,7 @@ format section/group/field_name의 구성 경로
 
 #### `--lock-env`, `-e`
 
-Admin에서 수정을 방지하는 Lock 값(app/etc/env.php에 저장됨)
+관리자에서 수정할 수 없는 잠금 값(app/etc/env.php에 저장됨)
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -836,7 +836,7 @@ Admin에서 수정을 방지하는 Lock 값(app/etc/env.php에 저장됨)
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
 
-지정된 경로에 대한 구성 값을 표시합니다. path를 지정하지 않으면 저장된 모든 값이 표시됩니다.
+지정된 경로에 대한 구성 값을 표시합니다. 경로를 지정하지 않으면 저장된 값이 모두 표시됩니다
 
 ### 인수
 
@@ -857,9 +857,9 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 #### `--scope-code`
 
-범위 코드(범위 가 아닌 `default`경우에만 필요)
+범위 코드(범위가 `default`이(가) 아닌 경우에만 필요)
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값을 허용합니다.
 
 
@@ -869,15 +869,15 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
-현재 사용자 crontab을 생성하고 설치합니다.
+현재 사용자에 대한 crontab 생성 및 설치
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--force`, `-f`
 
-강제 설치 작업
+설치 작업 강제 실행
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -913,7 +913,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--group`
 
@@ -923,10 +923,10 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 #### `--exclude-group`
 
-지정된 그룹 에서 작업 제외
+지정된 그룹에서 작업 제외
 
 - 기본값: `[]`
-- 여러 값 허용
+- 여러 값을 허용합니다.
 
 #### `--bootstrap`
 
@@ -941,11 +941,11 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 bin/magento customer:hash:upgrade
 ```
 
-최신 알고리즘에 따라 고객의 해시 업그레이드
+고객의 해시를 최신 알고리즘에 따라 업그레이드
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `deploy:mode:set`
@@ -954,7 +954,7 @@ bin/magento customer:hash:upgrade
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
-애플리케이션 모드를 설정합니다.
+응용 프로그램 모드를 설정합니다.
 
 ### 인수
 
@@ -970,7 +970,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 #### `--skip-compilation`, `-s`
 
-정적 컨텐츠(생성된 코드, 전처리된 CSS, pub/static/의 애셋)의 지우기 및 재생성을 건너뜁니다.
+정적 콘텐츠(생성된 코드, 사전 처리된 CSS 및 pub/static/의 자산)의 지우기 및 재생성을 건너뜁니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -1008,11 +1008,11 @@ bin/magento dev:di:info <class> [<area>]
 
 #### `area`
 
-영역 Code
+지역 번호
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -1021,11 +1021,11 @@ bin/magento dev:di:info <class> [<area>]
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
-잠재적인 변수 사용 호환성 문제가 있는지 뉴스레터 템플릿을 검사합니다.
+뉴스레터 템플릿에서 잠재적인 변수 사용 호환성 문제를 검색합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:email:override-compatibility-check`
@@ -1034,11 +1034,11 @@ bin/magento dev:email:newsletter-compatibility-check
 bin/magento dev:email:override-compatibility-check
 ```
 
-이메일 템플릿 재정의에서 잠재적인 변수 사용 호환성 문제를 검사합니다.
+이메일 템플릿 재정의에서 잠재적인 변수 사용 호환성 문제를 검색합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:profiler:disable`
@@ -1070,7 +1070,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:query-log:disable`
@@ -1181,7 +1181,7 @@ bin/magento dev:template-hints:disable
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:template-hints:enable`
@@ -1190,7 +1190,7 @@ bin/magento dev:template-hints:disable
 bin/magento dev:template-hints:enable
 ```
 
-프런트 엔드 템플릿 힌트를 활성화합니다. 캐시 플러시가 필요할 수 있습니다.
+프론트엔드 템플릿 힌트를 활성화합니다. 캐시 플러시가 필요할 수 있습니다.
 
 ### 옵션
 
@@ -1203,11 +1203,11 @@ bin/magento dev:template-hints:enable
 bin/magento dev:template-hints:status
 ```
 
-프런트 엔드 템플릿 힌트 상태를 보기
+프론트엔드 템플릿 힌트 상태를 표시합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `dev:tests:run`
@@ -1222,7 +1222,7 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 #### `type`
 
-실행할 테스트 유형입니다. 사용 가능한 유형: all, unit, integration, integration-all, static, static-all, integrity, legacy, default
+실행할 테스트의 유형입니다. 사용 가능한 유형: all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 
 - 기본값: `default`
 
@@ -1390,7 +1390,7 @@ bin/magento encryption:data:re-encrypt [<encryptors>...]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `encryption:key:change`
@@ -1435,17 +1435,17 @@ bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCR
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--label`
 
-사용자 지정 공급자를 정의하는 레이블입니다.
+사용자 정의 공급자를 정의하는 레이블입니다.
 
 - 값을 허용합니다.
 
 #### `--description`
 
-공급자에 대한 설명입니다.
+공급자에 대한 설명.
 
 - 값을 허용합니다.
 
@@ -1460,7 +1460,7 @@ bin/magento events:generate:module
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:info`
@@ -1548,7 +1548,7 @@ bin/magento events:provider:info
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:registrations:list`
@@ -1557,11 +1557,11 @@ bin/magento events:provider:info
 bin/magento events:registrations:list
 ```
 
-앱 빌더 프로젝트의 이벤트 등록 나열
+App Builder 프로젝트의 이벤트 등록을 나열합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `events:subscribe`
@@ -1773,10 +1773,10 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 #### `--backup-code`, `-b`
 
-코드 및 구성 파일 백업(임시 파일 제외)
+코드 및 구성 파일 백업 수행(임시 파일 제외)
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 
 ## `indexer:info`
@@ -1804,14 +1804,14 @@ bin/magento indexer:reindex [<index>...]
 
 #### `index`
 
-공백으로 구분된 색인 유형 목록 또는 생략하여 모든 색인에 적용합니다.
+공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
 - 배열
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:reset`
@@ -1820,20 +1820,20 @@ bin/magento indexer:reindex [<index>...]
 bin/magento indexer:reset [<index>...]
 ```
 
-인덱서 상태를 잘못된 상태로 재설정합니다.
+인덱서 상태를 잘못된 상태로 다시 설정합니다.
 
 ### 인수
 
 #### `index`
 
-공백으로 구분된 색인 유형 목록 또는 생략하여 모든 색인에 적용합니다.
+공백으로 구분된 색인 유형 목록 또는 모든 색인에 적용하기 위한 생략
 
 - 기본값: `[]`
 - 배열
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `indexer:set-dimensions-mode`
@@ -2104,7 +2104,7 @@ bin/magento info:timezone:list
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `inventory:reservation:create-compensations`
@@ -2126,11 +2126,11 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--raw`, `-r`
 
-Raw 출력
+원시 출력
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2164,17 +2164,17 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 #### `--bunch-size`, `-b`
 
-한 번에 로드할 주문 수를 정의합니다
+한 번에 로드할 주문 수를 정의합니다.
 
 - 기본값: `50`
 - 값을 허용합니다.
 
 #### `--raw`, `-r`
 
-Raw 출력
+원시 출력
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 
 ## `inventory-geonames:import`
@@ -2183,7 +2183,7 @@ Raw 출력
 bin/magento inventory-geonames:import <countries>...
 ```
 
-소스 선택 알고리즘을 위한 지리적 이름 다운로드 및 가져오기Download and import geo names for source selection algorithm
+소스 선택 알고리즘에 대한 지역 이름 다운로드 및 가져오기
 
 ### 인수
 
@@ -2309,7 +2309,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 #### `--magento-init-params`
 
-모든 명령에 추가하여 Magento 초기화 매개 변수 사용자 지정 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -2333,11 +2333,11 @@ bin/magento media-content:sync
 bin/magento media-gallery:sync
 ```
 
-데이터베이스의 미디어 저장소와 미디어 자산 동기화Synchronize media storage and media assets in the database
+데이터베이스의 미디어 저장소 및 미디어 자산 동기화
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `module:config:status`
@@ -2346,7 +2346,7 @@ bin/magento media-gallery:sync
 bin/magento module:config:status
 ```
 
-&#39;app/etc/config.php&#39; 파일의 모듈 구성을 확인하고 최신 상태인지 여부를 보고합니다.
+&#39;app/etc/config.php&#39; 파일에서 모듈 구성을 확인하고 최신 상태인지 보고합니다.
 
 ### 옵션
 
@@ -2372,7 +2372,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--force`, `-f`
 
@@ -2386,18 +2386,18 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 모든 모듈 비활성화
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--clear-static-content`, `-c`
 
 생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--magento-init-params`
 
-모든 명령에 추가하여 Magento 초기화 매개 변수 사용자 지정 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -2421,14 +2421,14 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--force`, `-f`
 
-종속성 검사 무시
+종속성 확인 무시
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--all`
 
@@ -2439,7 +2439,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 #### `--clear-static-content`, `-c`
 
-생성된 정적 뷰 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다
+생성된 정적 보기 파일을 지웁니다. 모듈에 정적 보기 파일이 있는 경우 필요합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2477,14 +2477,14 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 활성화된 모듈만 인쇄
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--disabled`
 
 비활성화된 모듈만 인쇄
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--magento-init-params`
 
@@ -2691,13 +2691,13 @@ To define the number of processes per consumer:
 
 #### `--max-messages`
 
-프로세스 종료 전 소비자가 처리한 메시지 수입니다. 지정하지 않으면 대기 중인 모든 메시지를 처리한 후 종료합니다.
+프로세스 종료 전 소비자가 처리한 메시지 수입니다. 지정하지 않은 경우 - 큐에 있는 모든 메시지를 처리한 후 종료합니다.
 
 - 값 필요
 
 #### `--batch-size`
 
-일괄 처리당 메시지 수입니다. 배치 소비자에만 적용됩니다.
+일괄 처리당 메시지 수. 배치 소비자에 대해서만 적용할 수 있습니다.
 
 - 값 필요
 
@@ -2770,11 +2770,11 @@ SaaS 서비스에 완전히 다시 동기화하기 위한 피드 이름입니다
 동기화하기 전에 피드 인덱서 테이블을 강제로 정리합니다.
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--dry-run`
 
-드라이 런. 데이터는 내보내지지 않습니다. 페이로드를 로그 파일 var/log/saas-export.log에 저장하려면 env 변수 EXPORTER_EXTENDED_LOG=1로 실행합니다.
+시험 실행. 데이터를 내보내지 않습니다. 페이로드를 로그 파일에 저장하려면 var/log/saas-export.log env 변수 EXPORTER_EXTENDED_LOG=1로 실행합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -2821,14 +2821,14 @@ bin/magento sampledata:deploy [--no-update]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--no-update`
 
-composer update를 실행하지 않고 composer.json 업데이트
+작성기 업데이트를 실행하지 않고 composer.json 업데이트
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 
 ## `sampledata:remove`
@@ -2896,7 +2896,7 @@ bin/magento security:recaptcha:disable-for-user-login
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
 
-Google OTP 생성에 사용되는 시크릿을 설정합니다.
+Google OTP 생성에 사용되는 암호를 설정합니다.
 
 ### 인수
 
@@ -2915,7 +2915,7 @@ Google OTP 생성에 사용되는 시크릿을 설정합니다.
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:tfa:providers`
@@ -2928,7 +2928,7 @@ bin/magento security:tfa:providers
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `security:tfa:reset`
@@ -2937,7 +2937,7 @@ bin/magento security:tfa:providers
 bin/magento security:tfa:reset <user> <provider>
 ```
 
-사용자 1명에 대한 구성 재설정
+한 명의 사용자에 대한 구성 재설정
 
 ### 인수
 
@@ -2994,14 +2994,14 @@ bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--
 
 #### `--dispatchMode`, `-dm`
 
-작업자 프로세스에 대한 연결을 디스패치하는 모드
+작업자 프로세스에 대한 연결 발송 모드
 
 - 기본값: `3`
 - 값을 허용합니다.
 
 #### `--maxRequests`, `-mr`
 
-작업자 프로세스가 다시 시작되기 전의 최대 요청 수
+작업자 프로세스가 다시 시작되기 전까지의 최대 요청
 
 - 기본값: `10000`
 - 값을 허용합니다.
@@ -3029,10 +3029,10 @@ magento bootstrap init params
 
 #### `--state-monitor`
 
-상태 모니터링을 활성화합니다. 상태 문제를 디버깅하는 데만 사용하십시오!
+상태 모니터링을 활성화합니다. 디버깅 상태 문제에만 사용하십시오!
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 
 ## `server:state-monitor:aggregate-output`
@@ -3041,11 +3041,11 @@ magento bootstrap init params
 bin/magento server:state-monitor:aggregate-output
 ```
 
-ApplicationServer의 상태 모니터 출력 집계
+ApplicationServer의 상태 모니터에서 출력 집계
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `setup:backup`
@@ -3054,25 +3054,25 @@ ApplicationServer의 상태 모니터 출력 집계
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스를 백업합니다.
+Magento 애플리케이션 코드 베이스, 미디어 및 데이터베이스 백업
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--code`
 
-코드 및 구성 파일 백업(임시 파일 제외)
+코드 및 구성 파일 백업 수행(임시 파일 제외)
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--media`
 
 미디어 백업 수행
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--db`
 
@@ -3098,11 +3098,11 @@ bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--remote-storage-driver`
 
-원격 저장 장치 드라이버
+원격 스토리지 드라이버
 
 - 값 필요
 
@@ -3110,7 +3110,7 @@ bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--
 
 원격 저장소 접두사
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--remote-storage-endpoint`
@@ -3121,13 +3121,13 @@ bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--
 
 #### `--remote-storage-bucket`
 
-원격 스토리지 버킷
+원격 저장소 버킷
 
 - 값 필요
 
 #### `--remote-storage-region`
 
-원격 저장소 지역
+원격 스토리지 영역
 
 - 값 필요
 
@@ -3142,7 +3142,7 @@ bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--
 
 원격 저장소 비밀 키
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--remote-storage-path-style`
@@ -3340,7 +3340,7 @@ SSL을 통해 DB 연결을 설정하기 위한 클라이언트 인증서 파일�
 
 SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체 경로
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--db-ssl-verify`
@@ -3348,7 +3348,7 @@ SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체
 서버 인증 확인
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 #### `--session-save`
 
@@ -3623,7 +3623,7 @@ Redis 서버 암호
 
 #### `--lock-zookeeper-host`
 
-Zookeeper 클러스터에 연결할 호스트 및 포트. 예: 127.0.0.1:2181
+Zookeeper 클러스터에 연결할 호스트 및 포트입니다. 예: 127.0.0.1:2181
 
 - 값 필요
 
@@ -3641,13 +3641,13 @@ Zookeeper가 잠금을 저장하는 경로입니다. 기본 경로는 /magento/l
 
 #### `--document-root-is-pub`
 
-표시할 플래그는 Pub이 루트에 있으며 true 또는 false일 수 있습니다.
+Pub가 루트에 있고, true 또는 false만 표시할 수 있습니다.
 
 - 값 필요
 
 #### `--backpressure-logger`
 
-배압 로거 핸들러
+배압 로거 처리기
 
 - 값 필요
 
@@ -3750,11 +3750,11 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--revertable`
 
-패치를 되돌릴 수 있는지 확인하십시오.
+패치를 되돌릴 수 있는지 여부를 확인합니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
@@ -3977,11 +3977,11 @@ DB 스키마 설치 및 업그레이드
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--convert-old-scripts`
 
-이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 포맷에 전환 수 있습니다.
+이전 스크립트(InstallSchema, UpgradeSchema)를 db_schema.xml 형식으로 변환할 수 있습니다.
 
 - 기본값: `false`
 - 값을 허용합니다.
@@ -4058,13 +4058,13 @@ Magento 애플리케이션 설치
 
 #### `--remote-storage-bucket`
 
-원격 스토리지 버킷
+원격 저장소 버킷
 
 - 값 필요
 
 #### `--remote-storage-region`
 
-원격 저장소 지역
+원격 스토리지 영역
 
 - 값 필요
 
@@ -4109,19 +4109,19 @@ syslog 로깅 활성화
 
 #### `--id_salt`
 
-GraphQl 소금
+GraphQl Salt
 
 - 값 필요
 
 #### `--checkout-async`
 
-비동기 주문 처리를 사용하시겠습니까? 1 - 예, 0 - 아니요
+비동기 주문 처리를 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
 #### `--config-async`
 
-비동기 관리자 구성 저장 활성화? 1 - 예, 0 - 아니요
+비동기 관리 구성 저장을 활성화하시겠습니까? 1 - 예, 0 - 아니오
 
 - 값 필요
 
@@ -4129,7 +4129,7 @@ GraphQl 소금
 
 Amqp 서버 호스트
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--amqp-port`
@@ -4248,7 +4248,7 @@ Amqp SSL 옵션(JSON)
 
 #### `--skip-db-validation`, `-s`
 
-지정된 경우 db 연결 유효성 검사 기능을 건너뜁니다
+지정하면 DB 연결 유효성 검사를 건너뜁니다
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -4263,21 +4263,21 @@ http 캐시 호스트
 
 SSL을 통해 DB 연결을 설정하기 위한 클라이언트 키 파일의 전체 경로
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--db-ssl-cert`
 
-SSL을 통한 db 연결을 설정하기 위한 클라이언트 인증서 파일의 전체 경로
+SSL을 통해 DB 연결을 설정하기 위한 클라이언트 인증서 파일의 전체 경로
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--db-ssl-ca`
 
 SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체 경로
 
-- 기본값 : &#39;&#39;
+- 기본값: &quot;
 - 값 필요
 
 #### `--db-ssl-verify`
@@ -4295,7 +4295,7 @@ SSL을 통해 DB 연결을 설정하기 위한 서버 인증서 파일의 전체
 
 #### `--session-save-redis-host`
 
-정규화된 호스트 이름, IP 주소 또는 절대 경로(UNIX 소켓을 사용하는 경우)
+UNIX 소켓을 사용하는 경우 정규화된 호스트 이름, IP 주소 또는 절대 경로
 
 - 값 필요
 
@@ -4313,7 +4313,7 @@ Redis 서버 암호
 
 #### `--session-save-redis-timeout`
 
-연결 제한 시간(초)
+연결 시간 제한(초)
 
 - 값 필요
 
@@ -4397,19 +4397,19 @@ Redis 로그 수준. 값: 0(최소 세부 정보) ~ 7(최대 세부 정보)
 
 #### `--session-save-redis-min-lifetime`
 
-Redis 최소 세션 생애(초)
+Redis 최소 세션 수명(초)
 
 - 값 필요
 
 #### `--session-save-redis-max-lifetime`
 
-Redis 최대 세션 생애(초)
+Redis 최대 세션 수명(초)
 
 - 값 필요
 
 #### `--session-save-redis-sentinel-master`
 
-Redis Sentinel 마스터
+레디스 센티넬 마스터
 
 - 값 필요
 
@@ -4638,55 +4638,55 @@ Redis 서버 사용자
 
 #### `--base-url`
 
-스토어를 사용할 수 있어야 하는 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/unsecure/base_url과 함께 사용
+스토어를 사용할 수 있어야 하는 URL입니다. 사용하지 않음, config:set을(를) 경로 web/unsecure/base_url과 함께 사용
 
 - 값 필요
 
 #### `--language`
 
-기본 언어 코드. 사용되지 않음, config:set을 path general/locale/code와 함께 사용합니다.
+기본 언어 코드. 사용되지 않음, config:set을(를) 경로 general/locale/code와 함께 사용하십시오.
 
 - 값 필요
 
 #### `--timezone`
 
-기본 시간대 코드. 사용하지 않음, config:set을 경로 일반/로케일/시간대로 사용
+기본 시간대 코드. 사용되지 않음, config:set을(를) 경로 general/locale/timezone과 함께 사용하십시오.
 
 - 값 필요
 
 #### `--currency`
 
-기본 통화 코드. 더 이상 사용되지 않음, 경로 통화/옵션/기본, 통화/옵션/기본 및 통화/옵션/허용과 함께 config:set 사용
+기본 통화 코드. 더 이상 사용되지 않음, 경로 통화/옵션/기본, 통화/옵션/기본 및 통화/옵션/허용과 함께 config:set을(를) 사용하십시오.
 
 - 값 필요
 
 #### `--use-rewrites`
 
-재작성을 사용합니다. 지원 중단됨, config:set를 경로 web/seo/use_rewrites와 함께 사용
+재작성을 사용합니다. 사용되지 않습니다. config:set을(를) 경로 web/seo/use_rewrites와 함께 사용하십시오.
 
 - 값 필요
 
 #### `--use-secure`
 
-보안 URL을 사용합니다. SSL을 사용할 수 있는 경우에만 이 옵션을 활성화합니다. 지원 중단됨, config:set를 path web/secure/use_in_frontend와 함께 사용
+보안 URL을 사용합니다. SSL을 사용할 수 있는 경우에만 이 옵션을 활성화합니다. 사용되지 않음, config:set을(를) 경로 web/secure/use_in_frontend와 함께 사용
 
 - 값 필요
 
 #### `--base-url-secure`
 
-SSL 연결을 위한 기본 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/secure/base_url과 함께 사용
+SSL 연결을 위한 기본 URL입니다. 사용하지 않음, config:set을(를) 경로 web/secure/base_url과 함께 사용
 
 - 값 필요
 
 #### `--use-secure-admin`
 
-SSL을 사용하여 관리 인터페이스를 실행합니다. 지원 중단됨, config:set를 경로 web/secure/use_in_adminhtml과 함께 사용
+SSL을 사용하여 관리 인터페이스를 실행합니다. 사용되지 않음, config:set을(를) 경로 web/secure/use_in_adminhtml과 함께 사용
 
 - 값 필요
 
 #### `--admin-use-security-key`
 
-Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할지 여부입니다. 사용되지 않음, config:set을 경로 admin/security/use_form_key와 함께 사용
+Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할지 여부입니다. 사용되지 않음, config:set을(를) 경로 admin/security/use_form_key와 함께 사용
 
 - 값 필요
 
@@ -4920,11 +4920,11 @@ Magento 애플리케이션 코드베이스, 미디어 및 데이터베이스 롤
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--code-file`, `-c`
 
-var/backups에 있는 코드 백업 파일의 기본 이름
+var/backups의 코드 백업 파일 기본 이름
 
 - 값 필요
 
@@ -4936,13 +4936,13 @@ var/backups의 미디어 백업 파일 기본 이름
 
 #### `--db-file`, `-d`
 
-var/backups에 있는 db 백업 파일의 기본 이름
+Var/backups의 DB 백업 파일 기본 이름
 
 - 값 필요
 
 #### `--magento-init-params`
 
-모든 명령에 추가하여 Magento 초기화 매개 변수 사용자 지정 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가합니다. 예: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - 값 필요
 
@@ -4953,7 +4953,7 @@ var/backups에 있는 db 백업 파일의 기본 이름
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
 
-정적 뷰 파일 배포
+정적 보기 파일 배포
 
 ### 인수
 
@@ -4970,7 +4970,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 #### `--force`, `-f`
 
-어떤 모드로든 파일을 배포할 수 있습니다.
+모든 모드에서 파일을 배포합니다.
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -5143,55 +5143,55 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 #### `--base-url`
 
-스토어를 사용할 수 있어야 하는 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/unsecure/base_url과 함께 사용
+스토어를 사용할 수 있어야 하는 URL입니다. 사용하지 않음, config:set을(를) 경로 web/unsecure/base_url과 함께 사용
 
 - 값 필요
 
 #### `--language`
 
-기본 언어 코드. 사용되지 않음, config:set을 path general/locale/code와 함께 사용합니다.
+기본 언어 코드. 사용되지 않음, config:set을(를) 경로 general/locale/code와 함께 사용하십시오.
 
 - 값 필요
 
 #### `--timezone`
 
-기본 시간대 코드. 사용하지 않음, config:set을 경로 일반/로케일/시간대로 사용
+기본 시간대 코드. 사용되지 않음, config:set을(를) 경로 general/locale/timezone과 함께 사용하십시오.
 
 - 값 필요
 
 #### `--currency`
 
-기본 통화 코드입니다. 더 이상 사용되지 않음, 경로 currency/options/base, currency/options/default 및 currency/options/allow와 함께 config:set 사용
+기본 통화 코드. 더 이상 사용되지 않음, 경로 통화/옵션/기본, 통화/옵션/기본 및 통화/옵션/허용과 함께 config:set을(를) 사용하십시오.
 
 - 값 필요
 
 #### `--use-rewrites`
 
-다시 쓰기를 사용합니다. 더 이상 사용되지 않음, web/seo/use_rewrites 경로와 함께 config:set 사용
+재작성을 사용합니다. 사용되지 않습니다. config:set을(를) 경로 web/seo/use_rewrites와 함께 사용하십시오.
 
 - 값 필요
 
 #### `--use-secure`
 
-보안 URL을 사용합니다. SSL을 사용할 수 있는 경우에만 이 옵션을 활성화합니다. 지원 중단됨, config:set를 path web/secure/use_in_frontend와 함께 사용
+보안 URL을 사용합니다. SSL을 사용할 수 있는 경우에만 이 옵션을 활성화합니다. 사용되지 않음, config:set을(를) 경로 web/secure/use_in_frontend와 함께 사용
 
 - 값 필요
 
 #### `--base-url-secure`
 
-SSL 연결을 위한 기본 URL입니다. 더 이상 사용되지 않음, config:set을 경로 web/secure/base_url과 함께 사용
+SSL 연결을 위한 기본 URL입니다. 사용하지 않음, config:set을(를) 경로 web/secure/base_url과 함께 사용
 
 - 값 필요
 
 #### `--use-secure-admin`
 
-SSL을 사용하여 관리 인터페이스를 실행합니다. 지원 중단됨, config:set를 경로 web/secure/use_in_adminhtml과 함께 사용
+SSL을 사용하여 관리 인터페이스를 실행합니다. 사용되지 않음, config:set을(를) 경로 web/secure/use_in_adminhtml과 함께 사용
 
 - 값 필요
 
 #### `--admin-use-security-key`
 
-Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할지 여부입니다. 사용되지 않음, config:set을 경로 admin/security/use_form_key와 함께 사용
+Magento 관리 URL 및 양식에서 &quot;보안 키&quot; 기능을 사용할지 여부입니다. 사용되지 않음, config:set을(를) 경로 admin/security/use_form_key와 함께 사용
 
 - 값 필요
 
@@ -5387,7 +5387,7 @@ bin/magento support:utility:check [--hide-paths]
 필요한 콘솔 유틸리티만 확인
 
 - 기본값: `false`
-- 값을 허용하지 않습니다.
+- 값을 수락하지 않음
 
 
 ## `support:utility:paths`
@@ -5400,11 +5400,11 @@ bin/magento support:utility:paths [-f|--force]
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--force`, `-f`
 
-포스
+강제
 
 - 기본값: `false`
 - 값을 수락하지 않음
@@ -5422,7 +5422,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 #### `theme`
 
-테마의 경로입니다. 테마 경로는 영역/공급업체/이름인 전체 경로로 지정해야 합니다. 예: frontend/Magento/blank
+테마의 경로. 테마 경로는 영역/공급업체/이름인 전체 경로로 지정해야 합니다. 예: frontend/Magento/blank
 
 - 기본값: `[]`
 - 필수
@@ -5454,11 +5454,11 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
-Varnish VCL을 생성하고 명령줄에 에코합니다.
+Varnish VCL을 생성하여 명령줄에 반향
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 #### `--access-list`
 
@@ -5527,13 +5527,13 @@ Webhook 이름
 
 #### `payload`
 
-JSON 포맷 형식의 웹훅 페이로드
+JSON 형식의 웹후크 페이로드
 
 - 필수
 
 ### 옵션
 
-전역 옵션은 전역 옵션을[&#128279;](#global-options) 참조하십시오.
+전역 옵션에 대해서는 [전역 옵션](#global-options)을 참조하십시오.
 
 
 ## `webhooks:generate:module`

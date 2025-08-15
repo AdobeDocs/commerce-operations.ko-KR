@@ -78,11 +78,11 @@ ht-degree: 0%
 Commerce은 최근 크론 로깅을 더 자세히 만들어 더 많은 정보를 제공했지만 `system.log`이(가) 상당히 길어졌습니다.
 `cron` 정보를 전용 로그로 이동하면 두 로그를 더 쉽게 읽을 수 있습니다.
 
-기본적으로 Commerce은 `<install-directory>/var/log/cron.log` 파일에 `cron` 정보를 기록합니다.
+기본적으로 Commerce은 `cron` 파일에 `<install-directory>/var/log/cron.log` 정보를 기록합니다.
 
 ## Syslog 로깅
 
-기본적으로 Commerce은 운영 체제 `syslog` 파일에 _syslog_ 로그를 기록합니다.
+기본적으로 Commerce은 운영 체제 _파일에_ syslog`syslog` 로그를 기록합니다.
 Commerce 2.3.1부터는 `magento` 명령을 사용하여 syslog를 활성화하거나 비활성화해야 합니다.
 관리자의 설정이 제거되었습니다.
 

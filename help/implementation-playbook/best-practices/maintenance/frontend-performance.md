@@ -37,5 +37,5 @@ ht-degree: 1%
 ## 추가 정보
 
 - [관리자 사용자를 위한 색인 관리](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [CLI를 사용한 인덱스 관리](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ko)
+- [CLI를 사용한 인덱스 관리](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [개발자를 위한 인덱싱 개요](https://developer.adobe.com/commerce/php/development/components/indexing/)

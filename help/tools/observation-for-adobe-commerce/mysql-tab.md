@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL MySQL] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL MySQL] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL MySQL]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 노드별 ![MySQL% 사용 가능한 저장소](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-MySQL에 할당된 저장소(`datadir` MySQL 구성 설정, 기본값: `/data/mysql`)에서 MySQL의 저장소 부족 또는 `tmpdir`의 공간 부족으로 인해 많은 문제가 발생합니다. 기본 `tmpdir`(MySQL 설정)은 `/tmp`입니다. **[!UICONTROL MySQL% free storage by node]** 프레임은 `/, /tmp`(별도의 마운트로 정의된 경우)과 `/data/mysql` 사용 가능한 저장소 비율을 봅니다. MySQL 버전 5.7(MariaDB 버전 10.2)부터 압축되지 않은 `tmp` 테이블이 파일의 `/data/mysql` 디렉터리에 있는 `tmp` 테이블스페이스에 기록됩니다(ibtmp1). 이 파일은 기본적으로 제한 없이 자동으로 확장됩니다. 테이블스페이스이므로 크기가 줄어들지 않고 MySQL이 다시 시작될 때 12MB로 재설정됩니다.
+MySQL에 할당된 저장소(`datadir` MySQL 구성 설정, 기본값: `/data/mysql`)에서 MySQL의 저장소 부족 또는 `tmpdir`의 공간 부족으로 인해 많은 문제가 발생합니다. 기본 `tmpdir`(MySQL 설정)은 `/tmp`입니다. **[!UICONTROL MySQL% free storage by node]** 프레임은 `/, /tmp`(별도의 마운트로 정의된 경우)과 `/data/mysql` 사용 가능한 저장소 비율을 봅니다. MySQL 버전 5.7(MariaDB 버전 10.2)부터 압축되지 않은 `tmp` 테이블이 파일의 `tmp` 디렉터리에 있는 `/data/mysql` 테이블스페이스에 기록됩니다(ibtmp1). 이 파일은 기본적으로 제한 없이 자동으로 확장됩니다. 테이블스페이스이므로 크기가 줄어들지 않고 MySQL이 다시 시작될 때 12MB로 재설정됩니다.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -125,7 +125,7 @@ FOR UPDATE와 함께 사용할 경우 `SELECT` 문도 행을 잠글 수 있습�
 **[!UICONTROL Deadlocks]** 프레임은 MySQL 로그에서 구문 분석된 다음 문자열을 봅니다.
 
 * &#39;%PHP 심각한 오류: 허용되는 메모리 크기(%&#39;)를 php_mem_error로 표시
-* &#39;%get lock; 트랜잭션을 다시 시작해 보십시오. 쿼리: DELETE 출처: \`cron_schedule%&#39;) as cron_sched_lock_del
+* &#39;%get lock; 트랜잭션을 다시 시작해 보십시오. 쿼리는 다음과 같습니다. \`cron_schedule%&#39;)의 DELETE을 cron_sched_lock_del로
 * &#39;% lock for cron job: indexer_reindex_all_invalid%&#39;) as &#39;lock_indexer_reindex_all_invalid%&#39;
 * &#39;% cron job에 대한 잠금: cron_schedule%&#39;)을 &#39;lock_cron_schedule&#39;로
 * &#39;% lock for cron job:%&#39;) as &#39;total_cron_lock&#39;

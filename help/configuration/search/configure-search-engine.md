@@ -16,10 +16,10 @@ ht-degree: 0%
 
 >[!TIP]
 >
->버전 2.4.4 및 2.4.3-p2에서는 레이블이 **Elasticsearch**&#x200B;인 모든 필드가 OpenSearch에도 적용됩니다.
->버전 2.4.6에서 Elasticsearch 8.x에 대한 지원이 도입되었을 때 Elasticsearch 구성과 OpenSearch 구성을 구별하기 위해 새 레이블이 만들어졌습니다.
+>버전 2.4.4 및 2.4.3-p2에서는 **Elasticsearch** 레이블이 지정된 모든 필드가 OpenSearch에도 적용됩니다.
+>>Elasticsearch 8.x에 대한 지원이 버전 2.4.6에 도입되면 Elasticsearch 구성과 OpenSearch 구성을 구별하기 위해 새 레이블이 생성되었습니다.
 
-검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ko)를 참조하세요.
+검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)를 참조하세요.
 
 ## 책임자로부터 검색 엔진 구성
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >새 검색 엔진 버전으로 업그레이드하는 방법에 대한 지침은 [업그레이드 필수 구성 요소](../../upgrade/prepare/prerequisites.md)를 참조하십시오.
 
-Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 다음을 수행합니다.
+Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 다음 작업을 수행하십시오.
 
 1. 관리자로 관리자에 로그인합니다.
 1. **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**&#x200B;을(를) 클릭합니다.

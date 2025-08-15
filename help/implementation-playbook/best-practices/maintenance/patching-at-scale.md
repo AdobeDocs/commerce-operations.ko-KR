@@ -32,14 +32,14 @@ ht-degree: 0%
 패치 종류가 다양하고 적용 방법도 많기 때문에 어떤 패치가 먼저 적용되는지 어떻게 아십니까? 패치가 많을수록 동일한 파일이나 동일한 코드 행에 적용할 가능성이 커집니다. 패치는 다음 순서로 적용됩니다.
 
 1. **보안 패치**&#x200B;은(는) Adobe Commerce 릴리스의 정적 코드 기반의 일부입니다.
-1. **Composer 패치**&#x200B;부터 `composer install`까지 및 [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)와(과) 같은 `composer update`개의 플러그인.
-1. [Commerce용 클라우드 패치](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=ko) 패키지에 포함된 모든 **필수 패치**.
-1. 선택한 **품질 패치**&#x200B;이(가) [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)에 포함되어 있습니다.
-1. `/m2-hotfixes` 디렉터리의 **사용자 지정 패치** 및 Adobe Commerce 지원 패치는 패치 이름별로 알파벳순으로 정렬됩니다.
+1. **Composer 패치**&#x200B;부터 `composer install`까지 및 `composer update`cweagans/composer-patches[와(과) 같은 ](https://packagist.org/packages/cweagans/composer-patches)개의 플러그인.
+1. **Commerce용 클라우드 패치** 패키지에 포함된 모든 [필수 패치](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. 선택한 **품질 패치**&#x200B;이(가) [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md)에 포함되어 있습니다.
+1. **디렉터리의**&#x200B;사용자 지정 패치`/m2-hotfixes` 및 Adobe Commerce 지원 패치는 패치 이름별로 알파벳순으로 정렬됩니다.
 
    >[!IMPORTANT]
    >
-   >패치를 많이 적용할수록 코드가 더 복잡해집니다. 복잡한 코드를 사용하면 새 버전의 Adobe 상거래로의 업그레이드가 더욱 어려워지고 총 소유 비용이 증가할 수 있습니다.
+   >패치를 많이 적용할수록 코드가 더 복잡해집니다. 복잡한 코드를 사용하면 새 버전의 Adobe Commerce로의 업그레이드가 더욱 어려워지고 총 소유 비용이 증가할 수 있습니다.
 
 Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 모든 인스턴스에 동일한 패치 세트가 설치되도록 하는 것은 어려울 수 있습니다. 각 설치에는 자체 git 저장소, `/m2-hotfixes` 디렉터리 및 `composer.json` 파일이 있습니다. 클라우드 사용자를 위한 **보안 패치** 및 **필수 패치**&#x200B;이(가) 기본 Adobe Commerce 버전의 일부로 모두 설치되었음을 보증할 수 있습니다.
 
@@ -49,7 +49,7 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
 
 ## 품질 패치 및 핫픽스 적용
 
-`vendor/bin/magento-patches apply` 명령을 사용하여 클라우드 인프라와 온-프레미스 설치 모두에 품질 패치를 설치할 수 있습니다. `composer install` 작업 후에 `vendor/bin/magento-patches apply` 명령이 실행되는지 확인해야 합니다.
+`vendor/bin/magento-patches apply` 명령을 사용하여 클라우드 인프라와 온-프레미스 설치 모두에 품질 패치를 설치할 수 있습니다. `vendor/bin/magento-patches apply` 작업 후에 `composer install` 명령이 실행되는지 확인해야 합니다.
 
 >[!NOTE]
 >
@@ -62,12 +62,12 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
 - **구성 요소 패키지:** `centralized-patcher`
 
    - 설치할 품질 패치 및 `m2-hotfixes` 목록을 정의합니다.
-   - `composer install` 작업 후 `vendor/bin/magento-patches apply` 명령을 실행하는 `centralized-patcher-composer-plugin` 패키지가 필요합니다.
+   - `centralized-patcher-composer-plugin` 작업 후 `vendor/bin/magento-patches apply` 명령을 실행하는 `composer install` 패키지가 필요합니다.
 
 - **플러그 인 패키지:** `centralized-patcher-composer-plugin`
 
-   - `centralized-patcher` 패키지에서 품질 패치 목록을 읽는 `CentralizedPatcher` PHP 클래스를 정의합니다.
-   - `composer install` 작업 후 품질 패치 목록을 설치하려면 `vendor/bin/magento-patches apply` 명령을 실행합니다.
+   - `CentralizedPatcher` 패키지에서 품질 패치 목록을 읽는 `centralized-patcher` PHP 클래스를 정의합니다.
+   - `vendor/bin/magento-patches apply` 작업 후 품질 패치 목록을 설치하려면 `composer install` 명령을 실행합니다.
 
 ### `centralized-patcher`
 
@@ -85,7 +85,7 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
 
    >[!NOTE]
    >
-   >다음 예제의 `require` 특성은 나중에 이 예제를 만들어야 하는 [플러그 인 패키지](#centralized-patcher-composer-plugin)에 대한 `require` 종속성을 보여줍니다.
+   >다음 예제의 `require` 특성은 나중에 이 예제를 만들어야 하는 `require`플러그 인 패키지[에 대한 ](#centralized-patcher-composer-plugin) 종속성을 보여줍니다.
 
    ```json
    {
@@ -109,7 +109,7 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
    }
    ```
 
-1. 패키지 내에 `/m2-hotfixes` 디렉터리를 만들어 `composer.json` 파일의 `map` 특성에 추가합니다. `map` 특성에는 이 패키지에서 패치할 대상 프로젝트의 루트로 복사할 파일이 포함되어 있습니다.
+1. 패키지 내에 `/m2-hotfixes` 디렉터리를 만들어 `map` 파일의 `composer.json` 특성에 추가합니다. `map` 특성에는 이 패키지에서 패치할 대상 프로젝트의 루트로 복사할 파일이 포함되어 있습니다.
 
    ```json
    {
@@ -148,7 +148,7 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
    ```
 
 
-이전 코드 샘플의 `quality-patches` 특성에는 예를 들어 [전체 패치 목록](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)의 패치가 두 개 있습니다.  이 품질 패치는 `vendor/bin/magento-patches apply` 명령을 사용하여 `centralized-patcher` 패키지가 필요한 모든 프로젝트에 설치됩니다.
+이전 코드 샘플의 `quality-patches` 특성에는 예를 들어 [전체 패치 목록](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)의 패치가 두 개 있습니다.  이 품질 패치는 `centralized-patcher` 명령을 사용하여 `vendor/bin/magento-patches apply` 패키지가 필요한 모든 프로젝트에 설치됩니다.
 
 테스트 목적으로 예제 패치(`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`)를 만들 수 있습니다.
 
@@ -175,7 +175,7 @@ index 03a3bf9..681e0b0 100644
 
 ### `centralized-patcher-composer-plugin`
 
-이 예제에서는 온-프레미스 메서드를 사용하여 품질 패치를 설치하므로 `composer install` 작업 후에 `vendor/bin/magento-patches apply` 명령을 실행해야 합니다. 이 플러그인은 `vendor/bin/magento-patches apply` 명령을 실행하는 `composer install` 작업 후에 트리거됩니다.
+이 예제에서는 온-프레미스 메서드를 사용하여 품질 패치를 설치하므로 `vendor/bin/magento-patches apply` 작업 후에 `composer install` 명령을 실행해야 합니다. 이 플러그인은 `composer install` 명령을 실행하는 `vendor/bin/magento-patches apply` 작업 후에 트리거됩니다.
 
 `centralized-patcher-compose-plugin` 구성 요소 패키지를 만들려면:
 
@@ -338,7 +338,7 @@ index 03a3bf9..681e0b0 100644
 
 일부 패치가 특정 인스턴스에만 적용되는 반면, 모든 프로젝트에서 95%의 패치만 필요한 시나리오가 있을 수 있습니다. 패치를 적용하는 일반적인 방법은 여전히 작동합니다. `/m2-hotfixes` 디렉터리에 프로젝트별 패치를 유지하고 프로젝트당 품질 패치를 설치할 수 있습니다.
 
-이 방법을 사용하는 경우 `centralized-patcher` 구성 요소 패키지로 프로젝트에 복사된 `/m2-hotfixes` 디렉터리에 있는 패치를 **커밋하지 마십시오**. `.gitignore` 파일에 `/m2-hotfixes`을(를) 추가하여 실수로 커밋하는 것을 방지할 수 있습니다. `.gitignore` 파일을 업데이트한 후에는 `git add –force` 명령을 사용하여 모든 프로젝트 관련 `/m2-hotfixes`을(를) 추가해야 합니다.
+이 방법을 사용하는 경우 **구성 요소 패키지로 프로젝트에 복사된** 디렉터리에 있는 패치를 `/m2-hotfixes`커밋하지 마십시오`centralized-patcher`. `/m2-hotfixes` 파일에 `.gitignore`을(를) 추가하여 실수로 커밋하는 것을 방지할 수 있습니다. `.gitignore` 파일을 업데이트한 후에는 `/m2-hotfixes` 명령을 사용하여 모든 프로젝트 관련 `git add –force`을(를) 추가해야 합니다.
 
 ## 다른 Adobe Commerce 버전 실행
 
@@ -346,7 +346,7 @@ index 03a3bf9..681e0b0 100644
 
 ## 결과 이해
 
-클라우드 인프라의 Adobe Commerce과 마찬가지로 이 문서에서는 배포 프로세스가 `composer update` 또는 `git pull`이(가) 아닌 `composer install` 명령을 사용하여 서버에 새 코드를 배포한다고 가정합니다. 그런 다음 중앙 집중식 패치 설치의 흐름은 다음과 같습니다.
+클라우드 인프라의 Adobe Commerce과 마찬가지로 이 문서에서는 배포 프로세스가 `composer install` 또는 `composer update`이(가) 아닌 `git pull` 명령을 사용하여 서버에 새 코드를 배포한다고 가정합니다. 그런 다음 중앙 집중식 패치 설치의 흐름은 다음과 같습니다.
 
 1. Composer 설치
 
@@ -365,7 +365,7 @@ index 03a3bf9..681e0b0 100644
 
 이렇게 하면 모든 설치에 대한 모든 패치를 중앙에서 관리할 수 있으며 Adobe Commerce 스토어의 보안 및 안정성을 더 잘 보장할 수 있습니다. 패치 상태를 확인하려면 다음 방법을 사용하십시오.
 
-- [클라우드 인프라 프로젝트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko#view-available-patches-and-status)
+- [클라우드 인프라 프로젝트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [온-프레미스 프로젝트](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## 코드 예

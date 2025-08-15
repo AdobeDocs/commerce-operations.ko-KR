@@ -41,17 +41,17 @@ ht-degree: 0%
 
 ## 세션 크기 관리
 
-_사용 안내서_&#x200B;에서 [세션 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security-session-management)를 참조하세요.
+[사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)에서 _세션 관리_&#x200B;를 참조하세요.
 
 ## 가비지 수집 구성
 
-만료된 세션을 정리하기 위해 시스템은 `gc_probability / gc_divisor` 지시문에 의해 계산되는 확률에 따라 `gc`(_가비지 컬렉션_) 처리기를 임의로 호출합니다. 예를 들어 이러한 지시문을 각각 `1/100`(으)로 설정하면 `1%`의 확률(_100개 요청당 가비지 수집 한 번의 호출 확률_)을 의미합니다.
+만료된 세션을 정리하기 위해 시스템은 `gc` 지시문에 의해 계산되는 확률에 따라 _(_&#x200B;가비지 컬렉션`gc_probability / gc_divisor`) 처리기를 임의로 호출합니다. 예를 들어 이러한 지시문을 각각 `1/100`(으)로 설정하면 `1%`의 확률(_100개 요청당 가비지 수집 한 번의 호출 확률_)을 의미합니다.
 
 가비지 수집 처리기는 `gc_maxlifetime` 지시문을 사용합니다. 이 시간(초)이 지나면 세션이 _가비지_(으)로 표시되고 정리될 수 있습니다.
 
 일부 운영 체제(Debian/Ubuntu)에서 기본 `session.gc_probability` 지시문은 `0`이므로 가비지 수집 처리기가 실행되지 않습니다.
 
-`<magento_root>/app/etc/env.php` 파일의 `php.ini` 파일에서 `session.gc_` 지시문을 덮어쓸 수 있습니다.
+`session.gc_` 파일의 `php.ini` 파일에서 `<magento_root>/app/etc/env.php` 지시문을 덮어쓸 수 있습니다.
 
 ```php
  'session' => [

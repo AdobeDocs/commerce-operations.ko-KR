@@ -28,10 +28,10 @@ AWS에서 모든 것이 준비되면 데이터로 채워야 할 때입니다.
 * 인덱스를 다시 만드는 것은 빠른 작업입니다.
 * 이전 인스턴스와 AWS 인스턴스 간에 버전 비호환성이 있을 수 있으며, 이러한 비호환성은 AWS 인스턴스에서 직접 빌드하여 방지할 수 있습니다.
 
-대규모 설치에서는 기존 인스턴스에서 AWS으로 데이터 인덱스를 마이그레이션하는 것이 좋습니다. 이렇게 하면 다운타임이 줄어들 수 있지만 이전 Elasticsearch 서버와 AWS 간에 버전이 다르기 때문에 비호환성 문제가 발생할 위험은 여전히 적습니다.
+대규모 설치에서는 기존 인스턴스에서 AWS으로 데이터 인덱스를 마이그레이션하는 것이 좋습니다. 이렇게 하면 다운타임이 줄어들 수 있지만 이전 Elasticsearch 서버와 AWS 간의 버전이 달라 호환되지 않는 문제가 발생할 위험은 거의 없습니다.
 
 색인은 AWS 인스턴스에서 쉽게 다시 만들 수 있으므로 마이그레이션할 필요가 없습니다.
-그러나 데이터 인덱스를 마이그레이션할 때 Elasticsearch/OpenSearch 버전이 호환되는지 확인하십시오.
+그러나 데이터 인덱스를 마이그레이션할 때에는 Elasticsearch/OpenSearch 버전이 호환되는지 확인하십시오.
 
 자세한 내용은 Amazon의 [Amazon OpenSearch Service로 마이그레이션](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) 지침을 참조하십시오.
 

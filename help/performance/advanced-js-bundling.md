@@ -76,7 +76,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 이를 수행하는 한 가지 방법은 페이지 유형별로 번들을 정의하는 것입니다. [!DNL Commerce]의 페이지를 범주, 제품, CMS, 고객, 장바구니 및 체크아웃을 비롯한 여러 페이지 유형으로 분류할 수 있습니다. 이러한 페이지 유형 중 하나로 분류된 각 페이지에는 서로 다른 RequireJS 모듈 종속성 세트가 있습니다. 페이지 유형별로 RequireJS 모듈을 번들로 제공하면 스토어에 있는 페이지의 종속성을 다루는 소수의 번들만 제공됩니다.
 
-예를 들어, 모든 페이지에 공통되는 종속성에 대한 번들, CMS 전용 페이지에 대한 번들, 카탈로그 전용 페이지에 대한 번들, 검색 전용 페이지에 대한 또 다른 번들 및 체크아웃 페이지에 대한 번들로 끝날 수 있습니다.
+예를 들어, 모든 페이지에 공통되는 종속성에 대한 번들, CMS 전용 페이지에 대한 번들, 카탈로그 전용 페이지에 대한 번들, 검색 전용 페이지에 대한 다른 번들 및 체크아웃 페이지에 대한 번들로 끝날 수 있습니다.
 
 공용 기능, 제품 관련 기능, 배송 기능, 체크아웃 기능, 세금 및 양식 유효성 검사를 위해 번들을 용도별로 생성할 수도 있습니다. 번들을 정의하는 방법은 사용자와 스토어의 구조에 달려 있습니다. 일부 번들 전략이 다른 번들링 전략보다 더 잘 작동한다는 것을 알 수 있습니다.
 
@@ -88,7 +88,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 - [nodejs](https://nodejs.org/en/download/)
 - [r.js](http://requirejs.org/docs/optimization.html#download)
-- [[!DNL PhantomJS]](https://phantomjs.org/)(선택 사항)
+- [[!DNL PhantomJS]](https://phantomjs.org/)&#x200B;(선택 사항)
 
 ### 샘플 코드
 
@@ -102,7 +102,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 1\. build.js 파일 추가
 
-[!DNL Commerce] 루트 디렉터리에 `build.js` 파일을 만듭니다. 이 파일에는 번들에 대한 전체 빌드 구성이 포함됩니다.
+`build.js` 루트 디렉터리에 [!DNL Commerce] 파일을 만듭니다. 이 파일에는 번들에 대한 전체 빌드 구성이 포함됩니다.
 
 ```javascript
 ({
@@ -131,13 +131,13 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 3\. requirejs-config.js 인스턴스 값 집계
 
-이 단계에서는 저장소의 `requirejs-config.js` 파일에서 여러 `deps`, `shim`, `paths` 및 `map` 구성 노드를 모두 `build.js` 파일의 해당 노드로 집계해야 합니다. 이렇게 하려면 브라우저의 개발자 도구 패널에서 **[!UICONTROL Network]** 탭을 열고 홈 페이지와 같은 스토어의 모든 페이지로 이동할 수 있습니다. 네트워크 탭에는 상단의 `requirejs-config.js` 파일 저장소 인스턴스가 표시되어 여기에 강조 표시됩니다.
+이 단계에서는 저장소의 `deps` 파일에서 여러 `shim`, `paths`, `map` 및 `requirejs-config.js` 구성 노드를 모두 `build.js` 파일의 해당 노드로 집계해야 합니다. 이렇게 하려면 브라우저의 개발자 도구 패널에서 **[!UICONTROL Network]** 탭을 열고 홈 페이지와 같은 스토어의 모든 페이지로 이동할 수 있습니다. 네트워크 탭에는 상단의 `requirejs-config.js` 파일 저장소 인스턴스가 표시되어 여기에 강조 표시됩니다.
 
 ![RequireJS 구성](../assets/performance/images/RequireJSConfig.png)
 
-이 파일 내에서 각 구성 노드(`deps`, `shim`, `paths`, `map`)에 대해 여러 항목을 찾습니다. 이러한 여러 노드 값을 build.js 파일의 단일 구성 노드에 집계해야 합니다. 예를 들어 스토어의 `requirejs-config.js` 인스턴스에 15개의 개별 `map` 노드에 대한 항목이 있는 경우 15개의 모든 노드에 대한 항목을 `build.js` 파일의 단일 `map` 노드에 병합해야 합니다. `deps`, `shim` 및 `paths` 노드에 대해서도 마찬가지입니다. 이 프로세스를 자동화하는 스크립트가 없으면 시간이 걸릴 수 있습니다.
+이 파일 내에서 각 구성 노드(`deps`, `shim`, `paths`, `map`)에 대해 여러 항목을 찾습니다. 이러한 여러 노드 값을 build.js 파일의 단일 구성 노드에 집계해야 합니다. 예를 들어 스토어의 `requirejs-config.js` 인스턴스에 15개의 개별 `map` 노드에 대한 항목이 있는 경우 15개의 모든 노드에 대한 항목을 `map` 파일의 단일 `build.js` 노드에 병합해야 합니다. `deps`, `shim` 및 `paths` 노드에 대해서도 마찬가지입니다. 이 프로세스를 자동화하는 스크립트가 없으면 시간이 걸릴 수 있습니다.
 
-다음과 같이 `paths` 구성 노드에서 경로 `mage/requirejs/text`을(를) `requirejs/text`(으)로 변경해야 합니다.
+다음과 같이 `mage/requirejs/text` 구성 노드에서 경로 `requirejs/text`을(를) `paths`(으)로 변경해야 합니다.
 
 ```javascript
 ({
@@ -337,7 +337,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 `build.js` 구성 파일을 열고 번들을 `modules` 노드에 추가합니다. 각 번들은 다음 속성을 정의해야 합니다.
 
-- `name`— 번들의 이름입니다. 예를 들어 `bundles/cart` 이름은 `bundles` 하위 디렉터리에 `cart.js` 번들을 생성합니다.
+- `name`— 번들의 이름입니다. 예를 들어 `bundles/cart` 이름은 `cart.js` 하위 디렉터리에 `bundles` 번들을 생성합니다.
 
 - `create`— 번들을 만드는 부울 플래그(값: `true` 또는 `false`).
 
@@ -380,7 +380,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 아래 단계에서는 보다 효율적인 [!DNL Commerce] 번들을 생성하기 위한 기본 프로세스를 설명합니다. 원하는 대로 이 프로세스를 자동화할 수 있지만 실제로 번들을 생성하려면 `nodejs` 및 `r.js`을(를) 사용해야 합니다. 또한 테마에 [!DNL JavaScript] 관련 사용자 지정이 있고 동일한 `build.js` 파일을 다시 사용할 수 없는 경우 테마당 여러 개의 `build.js` 구성을 만들어야 할 수 있습니다.
 
-#### 1. 정적 저장소 사이트 생성
+#### &#x200B;1. 정적 저장소 사이트 생성
 
 번들을 생성하기 전에 정적 배포 명령을 실행합니다.
 
@@ -397,7 +397,7 @@ php -f bin/magento setup:static-content:deploy -f -a frontend
 
 모든 스토어 테마 및 로케일에 대한 번들을 생성하려면 각 스토어 테마 및 로케일에 대해 아래 단계를 반복합니다.
 
-#### 2. 정적 저장소 콘텐츠를 임시 디렉터리로 이동합니다.
+#### &#x200B;2. 정적 저장소 콘텐츠를 임시 디렉터리로 이동합니다.
 
 먼저 RequireJS가 대상 디렉터리 내의 모든 콘텐츠를 대체하므로 정적 콘텐츠를 대상 디렉터리에서 일부 임시 디렉터리로 이동해야 합니다.
 
@@ -411,9 +411,9 @@ For example:
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. r.js 최적화 프로그램 실행
+#### &#x200B;3. r.js 최적화 프로그램 실행
 
-그런 다음 [!DNL Commerce]의 루트 디렉터리에서 `build.js` 파일에 대해 r.js 최적화 프로그램을 실행합니다. 모든 디렉터리 및 파일의 경로는 작업 디렉터리를 기준으로 합니다.
+그런 다음 `build.js`의 루트 디렉터리에서 [!DNL Commerce] 파일에 대해 r.js 최적화 프로그램을 실행합니다. 모든 디렉터리 및 파일의 경로는 작업 디렉터리를 기준으로 합니다.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -438,9 +438,9 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. 번들을 사용하도록 RequireJS 구성
+#### &#x200B;4. 번들을 사용하도록 RequireJS 구성
 
-번들을 사용하도록 RequireJS를 가져오려면 `build.js` 파일의 `modules` 노드 뒤에 `onModuleBundleComplete` 콜백을 추가하십시오.
+번들을 사용하도록 RequireJS를 가져오려면 `onModuleBundleComplete` 파일의 `modules` 노드 뒤에 `build.js` 콜백을 추가하십시오.
 
 ```javascript
 [
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. 배포 명령 다시 실행
+#### &#x200B;5. 배포 명령 다시 실행
 
 배포하려면 다음 명령을 실행합니다.
 
@@ -482,7 +482,7 @@ require.config({});
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-`pub/static/frontend/Magento/luma/en_US` 디렉터리에서 `requirejs-config.js`을(를) 열어 RequireJS가 번들링 구성 호출로 파일을 추가했는지 확인합니다.
+`requirejs-config.js` 디렉터리에서 `pub/static/frontend/Magento/luma/en_US`을(를) 열어 RequireJS가 번들링 구성 호출로 파일을 추가했는지 확인합니다.
 
 ```javascript
 require.config({
@@ -497,7 +497,7 @@ require.config({
 >
 >번들을 구성할 때는 `requirejs.config()` 호출을 실행할 순서대로 넣으십시오. 호출이 표시되는 순서대로 실행되기 때문입니다.
 
-#### 6. 결과 테스트
+#### &#x200B;6. 결과 테스트
 
 페이지가 로드되면 브라우저가 서로 다른 종속성 및 번들을 로드하는 것을 볼 수 있습니다. 예를 들어 &#39;Slow 3G&#39; 프로필에 대한 결과는 다음과 같습니다.
 
@@ -505,11 +505,11 @@ require.config({
 
 이제 빈 홈 페이지의 페이지 로드 시간이 기본 [!DNL Commerce] 번들링을 사용하는 것보다 두 배 빠릅니다. 하지만 우리는 훨씬 더 잘할 수 있어요.
 
-#### 7. 번들 최적화
+#### &#x200B;7. 번들 최적화
 
 압축한 경우에도 [!DNL JavaScript] 파일은 여전히 큽니다. [!DNL JavaScript]을(를) 축소하는 데 Uglifier를 사용하는 RequireJS를 사용하여 축소합니다.
 
-`build.js` 파일에서 최적화 기능을 활성화하려면 `build.js` 파일의 맨 위에 있는 최적화 속성에 대한 값으로 `uglify2`을(를) 추가하십시오.
+`build.js` 파일에서 최적화 기능을 활성화하려면 `uglify2` 파일의 맨 위에 있는 최적화 속성에 대한 값으로 `build.js`을(를) 추가하십시오.
 
 ```javascript
 ({

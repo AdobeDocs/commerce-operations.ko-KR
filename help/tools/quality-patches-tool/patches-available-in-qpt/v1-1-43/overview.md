@@ -30,6 +30,6 @@ QPT v1.1.43에는 다음 패치가 포함됩니다.
 1. **ACSD-56090**: GraphQL 요청이 특정 요청된 저장소 데이터가 아닌 모든 저장소의 데이터로 응답하는 문제를 해결했습니다.
 1. **ACSD-54983**: 사용자 상태가 *[!UICONTROL Inactive]*(으)로 설정된 경우 GraphQL 요청으로 회사 사용자 ID를 가져올 수 없는 문제를 해결했습니다.
 1. **ACSD-53309**: 사용자 지정 가능 옵션을 선택할 때 *[!UICONTROL Regular Price]* 레이블에서 세금이 완전히 적용되지 않는 문제를 해결했습니다.
-1. **ACSD-55305**: **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** 페이지의 *[!UICONTROL Edit Company User]* 팝업이 화면에 로더로 인해 중지되는 문제를 해결했습니다.
+1. **ACSD-55305**: *[!UICONTROL Edit Company User]* > **[!UICONTROL myAccount]** 페이지의 **[!UICONTROL Company Structure]** 팝업이 화면에 로더로 인해 중지되는 문제를 해결했습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.

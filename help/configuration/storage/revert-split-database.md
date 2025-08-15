@@ -56,7 +56,7 @@ ht-degree: 0%
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
-1. `env.php` 파일의 `connections` 및 `resources` 섹션에서 `checkout` 및 `sales`에 대한 배포 구성을 제거하십시오.
+1. `checkout` 파일의 `sales` 및 `connections` 섹션에서 `resources` 및 `env.php`에 대한 배포 구성을 제거하십시오.
 1. 외래 키 복원:
 
    ```bash
@@ -65,8 +65,8 @@ ht-degree: 0%
 
 ## 작업 확인
 
-단일 데이터베이스 구현이 제대로 작동하는지 확인하려면 다음 작업을 수행하고 [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin)과(와) 같은 데이터베이스 도구를 사용하여 `magento_main` 데이터베이스 테이블에 데이터가 추가되었는지 확인하십시오.
+단일 데이터베이스 구현이 제대로 작동하는지 확인하려면 다음 작업을 수행하고 `magento_main`phpMyAdmin[과(와) 같은 데이터베이스 도구를 사용하여 ](../../installation/prerequisites/optional-software.md#phpmyadmin) 데이터베이스 테이블에 데이터가 추가되었는지 확인하십시오.
 
-1. 외래 키가 복원되었는지 확인합니다. 예를들어 `quote` 데이터베이스 테이블의 `QUOTE_STORE_ID_STORE_STORE_ID` 키를 사용합니다.
+1. 외래 키가 복원되었는지 확인합니다. 예를들어 `QUOTE_STORE_ID_STORE_STORE_ID` 데이터베이스 테이블의 `quote` 키를 사용합니다.
 1. 고객이 상점에서 주문을 할 수 있는지 확인합니다.
 1. 분할 데이터베이스를 단일 데이터베이스로 되돌리기 전에 생성된 주문을 관리자에서 사용할 수 있는지 확인합니다.

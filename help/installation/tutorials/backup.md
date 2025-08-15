@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 _클라우드 가이드_&#x200B;에서 [스냅샷 및 백업 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)를 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 [클라우드 가이드](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)에서 _스냅샷 및 백업 관리_&#x200B;를 참조하십시오.
 
 ## 백업 활성화
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**사용 중단 알림:**
->백업 기능은 2.1.16, 2.2.7 및 2.3.0부터 더 이상 사용되지 않습니다. 추가 백업 기술 및 바이너리 백업 도구(예: Percona XtraBackup)를 조사하는 것이 좋습니다.
+>>백업 기능은 2.1.16, 2.2.7 및 2.3.0부터 더 이상 사용되지 않습니다. 추가 백업 기술 및 바이너리 백업 도구(예: Percona XtraBackup)를 조사하는 것이 좋습니다.
 
 ## 열린 파일 제한 설정
 
@@ -78,7 +78,7 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->실패 알림 없이 불완전한 롤백을 초래할 수 있으므로 `php.ini` 파일에서 [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php)의 값을 설정하지 않는 것이 좋습니다.
+>실패 알림 없이 불완전한 롤백을 초래할 수 있으므로 [`pcre.recursion_limit` 파일에서 ](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`의 값을 설정하지 않는 것이 좋습니다.
 
 ## 백업
 

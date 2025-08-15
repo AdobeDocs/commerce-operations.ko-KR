@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 주제에는 인종 차별주의자, 성차별주의자 또는 억압적인 것으로 인식되며 독자로 하여금 상처받거나, 트라우마를 받거나, 환영받지 못하게 만들 수 있는 업계 표준 소프트웨어 용어가 포함되어 있습니다. Adobe이 코드, 설명서 및 사용자 경험에서 이러한 용어를 제거하고 있습니다.
+>이 주제에는 인종 차별주의자, 성차별주의자 또는 억압적인 것으로 인식되며 독자로 하여금 상처받거나, 트라우마를 받거나, 환영받지 못하게 만들 수 있는 업계 표준 소프트웨어 용어가 포함되어 있습니다. Adobe은 코드, 설명서 및 사용자 경험에서 이러한 용어를 제거하고 있습니다.
 
 ## 트리거
 
@@ -48,11 +48,11 @@ ht-degree: 0%
 
 - 트리거가 실행될 때 일부 데이터를 작성하는 사용자 지정 트리거가 있는 경우 이 논리를 이동하여 감사 테이블에 직접 작성합니다. 예를 들어, 트리거를 만들려는 쿼리 뒤에 애플리케이션 코드에 쿼리를 추가하여 추가합니다.
 - 기존 사용자 지정 트리거를 검토하고 이를 제거하여 애플리케이션 측에서 테이블에 직접 작성하는 것이 좋습니다. [`SHOW TRIGGERS` SQL 문](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)을(를) 사용하여 데이터베이스에서 기존 트리거를 확인합니다.
-- 추가 지원, 질문 또는 우려 사항은 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko&#submit-ticket)하십시오.
+- 추가 지원, 질문 또는 우려 사항은 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket)하십시오.
 
 ## 슬레이브 연결
 
-Adobe Commerce은 여러 데이터베이스를 비동기식으로 읽을 수 있습니다. Cloud Infrastructure Pro 아키텍처에 배포된 Commerce 사이트의 MySQL 데이터베이스에 대한 로드가 높을 것으로 예상되면 Adobe은 MYSQL 슬레이브 연결을 활성화할 것을 권장합니다.
+Adobe Commerce은 여러 데이터베이스를 비동기식으로 읽을 수 있습니다. Cloud Infrastructure Pro 아키텍처에 배포된 Commerce 사이트의 MySQL 데이터베이스에 대한 로드가 높을 것으로 예상되면 Adobe에서 MYSQL 슬레이브 연결을 활성화하는 것이 좋습니다.
 
 MYSQL 슬레이브 연결을 활성화하면 Adobe Commerce은 데이터베이스에 대한 읽기 전용 연결을 사용하여 마스터가 아닌 노드에서 읽기 전용 트래픽을 수신합니다. 한 노드만 읽기/쓰기 트래픽을 처리할 때 로드 밸런싱을 통해 성능이 향상됩니다.
 
@@ -62,7 +62,7 @@ MYSQL 슬레이브 연결을 활성화하면 Adobe Commerce은 데이터베이�
 
 ### 구성
 
-클라우드 인프라의 Adobe Commerce에서 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#mysql_use_slave_connection) 변수를 설정하여 MYSQL 슬레이브 연결에 대한 기본 구성을 재정의할 수 있습니다. 데이터베이스에 대한 읽기 전용 연결을 자동으로 사용하려면 이 변수를 `true`(으)로 설정하십시오.
+클라우드 인프라의 Adobe Commerce에서 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) 변수를 설정하여 MYSQL 슬레이브 연결에 대한 기본 구성을 재정의할 수 있습니다. 데이터베이스에 대한 읽기 전용 연결을 자동으로 사용하려면 이 변수를 `true`(으)로 설정하십시오.
 
 **MySQL 슬레이브 연결을 사용하도록 설정하려면**:
 

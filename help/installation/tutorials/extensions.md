@@ -20,7 +20,7 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 - 테마(상점 및 관리자의 모양 및 느낌 변경)
 - 언어 패키지(상점 및 관리자 현지화)
 
-이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구입한 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/extensions)를 참조하십시오.
+이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구매하는 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions)를 참조하십시오.
 
 동일한 절차를 사용하여 _any_ 확장을 설치할 수 있습니다. 필요한 것은 확장의 작성기 이름과 버전입니다. 찾으려면 확장의 `composer.json` 파일을 열고 `"name"` 및 `"version"`의 값을 확인합니다.
 
@@ -38,7 +38,7 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 확장을 설치하려면 다음을 수행해야 합니다.
 
 1. Commerce Marketplace 또는 다른 확장 개발자로부터 확장을 가져옵니다.
-1. Commerce Marketplace에서 확장을 설치하는 경우 `composer.json` 파일에 `repo.magento.com` 저장소가 있는지 확인하십시오.
+1. Commerce Marketplace에서 확장을 설치하는 경우 `repo.magento.com` 파일에 `composer.json` 리포지토리가 있는지 확인하십시오.
 
    ```bash
    "repositories": [
@@ -76,7 +76,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
 >[!TIP]
 >
->또는 확장 프로그램의 `composer.json` 파일에서 _any_ 확장의 작성기 이름과 버전(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)을 찾을 수 있습니다.
+>또는 확장의 _파일에서_ any`composer.json` 확장의 작성기 이름과 버전(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)을 찾을 수 있습니다.
 
 ### 작성기 종속성 업데이트
 
@@ -156,7 +156,7 @@ bin/magento module:status
    bin/magento setup:upgrade
    ```
 
-1. 프로젝트 다시 컴파일: 프로덕션 모드에서 &quot;Magento 컴파일 명령을 다시 실행하십시오&quot;라는 메시지가 표시될 수 있습니다. 응용 프로그램에서 컴파일 명령을 개발자 모드에서 실행하라는 메시지를 표시하지 않습니다.
+1. 프로젝트 다시 컴파일: 프로덕션 모드에서 &quot;Magento 컴파일 명령을 다시 실행하십시오&quot;라는 메시지를 받을 수 있습니다. 응용 프로그램에서 컴파일 명령을 개발자 모드에서 실행하라는 메시지를 표시하지 않습니다.
 
    ```bash
    bin/magento setup:di:compile

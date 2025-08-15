@@ -69,7 +69,7 @@ sudo apt install -y rabbitmq-server
 * Broker 시작 및 중지
 * 시스템 제한
 
-## [!DNL RabbitMQ] (으)로 설치 및 연결
+## [!DNL RabbitMQ]&#x200B;(으)로 설치 및 연결
 
 Adobe Commerce _after_&#x200B;를 설치하는 경우 [!DNL RabbitMQ]을(를) 설치하는 동안 다음 명령줄 매개 변수를 추가하십시오.
 
@@ -90,7 +90,7 @@ Adobe Commerce _after_&#x200B;를 설치하는 경우 [!DNL RabbitMQ]을(를) �
 
 ## [!DNL RabbitMQ] 연결
 
-Adobe Commerce이 이미 설치되어 있고 이를 [!DNL RabbitMQ]에 연결하려는 경우 `<install_directory>/app/etc/env.php` 파일에 다음과 비슷하게 `queue` 섹션을 추가하십시오.
+Adobe Commerce이 이미 설치되어 있고 이를 [!DNL RabbitMQ]에 연결하려는 경우 `queue` 파일에 다음과 비슷하게 `<install_directory>/app/etc/env.php` 섹션을 추가하십시오.
 
 ```php
 'queue' =>
@@ -106,7 +106,7 @@ Adobe Commerce이 이미 설치되어 있고 이를 [!DNL RabbitMQ]에 연결하
   ),
 ```
 
-`bin/magento setup:config:set` 명령을 사용하여 [!DNL RabbitMQ] 구성 값을 설정할 수도 있습니다.
+[!DNL RabbitMQ] 명령을 사용하여 `bin/magento setup:config:set` 구성 값을 설정할 수도 있습니다.
 
 ```bash
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
@@ -116,7 +116,7 @@ bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="112
 
 ## SSL 구성
 
-SSL 지원을 구성하려면 `<install_directory>/app/etc/env.php` 파일에서 `ssl` 및 `ssl_options` 매개 변수를 다음과 비슷하게 편집하십시오.
+SSL 지원을 구성하려면 `ssl` 파일에서 `ssl_options` 및 `<install_directory>/app/etc/env.php` 매개 변수를 다음과 비슷하게 편집하십시오.
 
 ```php
 'queue' =>

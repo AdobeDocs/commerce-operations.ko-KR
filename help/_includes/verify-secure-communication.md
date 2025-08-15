@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## 관리자에서 HTTP 기본 인증 구성
 
-[검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외*&#x200B;에서 설명한 것과 동일한 작업을 수행하고 **[!UICONTROL Enable HTTP Auth]** 목록에서 **[!UICONTROL Yes]**&#x200B;을(를) 클릭한 다음 제공된 필드에 사용자 이름과 암호를 입력합니다.
+[검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외*&#x200B;에서 설명한 것과 동일한 작업을 수행하고 **[!UICONTROL Yes]** 목록에서 **[!UICONTROL Enable HTTP Auth]**&#x200B;을(를) 클릭한 다음 제공된 필드에 사용자 이름과 암호를 입력합니다.
 
 **[!UICONTROL Test Connection]**&#x200B;을(를) 클릭하여 작동하는지 확인한 다음 **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 

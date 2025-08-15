@@ -18,7 +18,7 @@ ht-degree: 0%
 
 QPT v1.1.28에는 다음 패치가 포함됩니다.
 
-1. **ACSD-48204**: *[!UICONTROL Yes/No]* 특성을 기반으로 만든 *[!UICONTROL catalog price rule]*&#x200B;이(가) 선택한 범위를 고려하지 않는 문제를 해결했습니다.
+1. **ACSD-48204**: *[!UICONTROL catalog price rule]* 특성을 기반으로 만든 *[!UICONTROL Yes/No]*&#x200B;이(가) 선택한 범위를 고려하지 않는 문제를 해결했습니다.
 1. **ACSD-47704**: 번들 제품에 재고 제품의 가격만 표시되는 문제를 해결했습니다.
 1. **ACSD-49370**: GraphQL 스키마에서 제품 특성에 `FilterMatchTypeInput` 형식이 있는 문제를 해결했습니다.
 1. **ACSD-48807**: 제품 검토가 GraphQL을 통해 상점 보기로 필터링되지 않는 문제를 해결했습니다.

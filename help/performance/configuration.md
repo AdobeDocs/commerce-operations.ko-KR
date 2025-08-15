@@ -20,7 +20,7 @@ Commerce은 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 
 ## 인덱서
 
-인덱서는 **[!UICONTROL Update on Save]** 또는 **[!UICONTROL Update on Schedule]** 모드에서 실행할 수 있습니다. **[!UICONTROL Update on Save]** 모드는 카탈로그나 다른 데이터가 변경될 때마다 즉시 인덱싱합니다. 이 모드는 스토어에서 업데이트 및 탐색 작업의 강도가 낮다고 가정합니다. 이로 인해 고부하 작업 중에 상당한 지연이 발생하고 데이터를 사용할 수 없게 될 수 있습니다. **일정에 따라 업데이트**&#x200B;를 사용하는 것이 좋습니다. 데이터 업데이트에 대한 정보를 저장하고 특정 cron 작업을 통해 백그라운드에서 부분별 인덱싱을 수행하기 때문입니다. **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 구성 페이지에서 각 [!DNL Commerce] 인덱서의 모드를 개별적으로 변경할 수 있습니다. [!UICONTROL Customer Grid] 인덱스는 항상 **[!UICONTROL Update on Save]** 모드로 설정되어야 합니다.
+인덱서는 **[!UICONTROL Update on Save]** 또는 **[!UICONTROL Update on Schedule]** 모드에서 실행할 수 있습니다. **[!UICONTROL Update on Save]** 모드는 카탈로그나 다른 데이터가 변경될 때마다 즉시 인덱싱합니다. 이 모드는 스토어에서 업데이트 및 탐색 작업의 강도가 낮다고 가정합니다. 이로 인해 고부하 작업 중에 상당한 지연이 발생하고 데이터를 사용할 수 없게 될 수 있습니다. **일정에 따라 업데이트**&#x200B;를 사용하는 것이 좋습니다. 데이터 업데이트에 대한 정보를 저장하고 특정 cron 작업을 통해 백그라운드에서 부분별 인덱싱을 수행하기 때문입니다. [!DNL Commerce] > **[!UICONTROL System]** > [!UICONTROL Tools] 구성 페이지에서 각 **[!UICONTROL Index Management]** 인덱서의 모드를 개별적으로 변경할 수 있습니다. [!UICONTROL Customer Grid] 인덱스는 항상 **[!UICONTROL Update on Save]** 모드로 설정되어야 합니다.
 
 >[!TIP]
 >
@@ -32,19 +32,19 @@ Commerce은 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응�
 
 ## 비동기 이메일 알림
 
-&quot;비동기 이메일 알림&quot; 설정을 활성화하면 이메일 알림 체크 아웃 및 주문 처리를 처리하는 프로세스가 백그라운드로 이동합니다. 이 기능을 사용하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**(으)로 이동하십시오. 자세한 내용은 _관리 사용 안내서_&#x200B;의 [판매 전자 메일](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/sales/sales-emails)을 참조하십시오.
+&quot;비동기 이메일 알림&quot; 설정을 활성화하면 이메일 알림 체크 아웃 및 주문 처리를 처리하는 프로세스가 백그라운드로 이동합니다. 이 기능을 사용하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**(으)로 이동하십시오. 자세한 내용은 [관리 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails)의 _판매 전자 메일_&#x200B;을 참조하십시오.
 
 ## 비동기 주문 데이터 처리
 
-[!DNL Commerce]이(가) 집중 주문 처리를 수행하는 동시에 상점 집중 판매가 발생하는 경우가 있을 수 있습니다. 해당 테이블에서 읽기 및 쓰기 작업 간의 충돌을 방지하기 위해 데이터베이스 수준에서 이 두 트래픽 패턴을 구분하도록 [!DNL Commerce]을(를) 구성할 수 있습니다. 주문 데이터를 비동기식으로 저장하고 인덱싱할 수 있습니다. 주문이 임시 저장소에 보관되고 충돌 없이 Order Management 그리드로 대량으로 이동됩니다. 이 옵션은 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**&#x200B;에서 활성화할 수 있습니다. 자세한 내용은 _관리 사용 안내서_&#x200B;의 [예약된 격자 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)를 참조하십시오.
+[!DNL Commerce]이(가) 집중 주문 처리를 수행하는 동시에 상점 집중 판매가 발생하는 경우가 있을 수 있습니다. 해당 테이블에서 읽기 및 쓰기 작업 간의 충돌을 방지하기 위해 데이터베이스 수준에서 이 두 트래픽 패턴을 구분하도록 [!DNL Commerce]을(를) 구성할 수 있습니다. 주문 데이터를 비동기식으로 저장하고 인덱싱할 수 있습니다. 주문이 임시 저장소에 보관되고 충돌 없이 Order Management 그리드로 대량으로 이동됩니다. 이 옵션은 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**&#x200B;에서 활성화할 수 있습니다. 자세한 내용은 [관리 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)의 _예약된 격자 업데이트_&#x200B;를 참조하십시오.
 
 >[!WARNING]
 >
->**[!UICONTROL Developer]** 탭 및 옵션은 개발자 모드[&#128279;](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) 기반 Adobe Systems Commerce는 모드를 지원하지 `Developer` 않습니다.
+>**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)은(는) `Developer` 모드를 지원하지 않습니다.
 
 ## 비동기 구성 저장
 
-스토어 수준 구성이 많은 프로젝트의 경우 스토어 구성을 저장하는 데 과도한 시간이 걸리거나 시간 초과가 발생할 수 있습니다. _Async Config_ 모듈는 소비자를 사용하여 메시지 큐에서 저장을 처리하는 cron 작업을 실행하여 비동기 구성 저장을 활성화합니다. AsyncConfig는 기본적으로 비활성화&#x200B;**되어 있습니다**.
+저장소 수준 구성이 많은 프로젝트의 경우 저장소 구성을 저장하는 데 과도한 시간이 소요되거나 시간 초과가 발생할 수 있습니다. _비동기 구성_ 모듈을 사용하면 소비자가 메시지 큐에서 저장을 처리하는 크론 작업을 실행하여 비동기 구성을 저장할 수 있습니다. AsyncConfig는 기본적으로 **disabled**&#x200B;입니다.
 
 명령줄 인터페이스를 사용하여 AsyncConfig를 활성화할 수 있습니다.
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 지연된 재고 업데이트
 
-매출이 많은 시간대에는 [!DNL Commerce]에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 온디맨드 재고를 쉽게 다시 채울 수 있는 매장의 체크아웃 흐름에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] > [!UICONTROL Use Deferred Stock Update]&#x200B;**로 이동합니다**&#x200B;[!UICONTROL Stores] . 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
+매출이 많은 시간대에는 [!DNL Commerce]에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 주문형 재고를 쉽게 다시 채울 수 있는 스토어의 체크아웃 플로우에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**(으)로 이동하십시오. 자세한 내용은 [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)의 _인벤토리 관리_&#x200B;를 참조하십시오.
 
 >[!INFO]
 >
@@ -77,7 +77,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->이 옵션은 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html?lang=ko)과(와) 함께 [비동기 주문 배치](high-throughput-order-processing.md#asynchronous-order-placement)에서도 작동합니다.
+>이 옵션은 [Inventory management](high-throughput-order-processing.md#asynchronous-order-placement)과(와) 함께 [비동기 주문 배치](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html)에서도 작동합니다.
 
 ## 클라이언트측 최적화 설정
 
@@ -89,13 +89,13 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 | ------------------- | -------------------------- | ------ |
 | 그리드 설정 | 비동기 인덱싱 | 사용 |
 | CSS 설정 | CSS 파일 축소 | 예 |
-| [!DNL JavaScript] 설정 | [!DNL JavaScript] 축소 파일 | 예 |
+| [!DNL JavaScript] 설정 | [!DNL JavaScript]개 파일 축소 | 예 |
 | [!DNL JavaScript] 설정 | [!DNL JavaScript] 번들 사용 | 예 |
 | 템플릿 설정 | HTML 축소 | 예 |
 
 >[!INFO]
 >
->**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [Adobe [!DNL Commerce] 클라우드 인프라](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)에서 `Developer` 모드를 지원하지 않습니다.
+>**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [Adobe [!DNL Commerce] on cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)은(는) `Developer` 모드를 지원하지 않습니다.
 
 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 옵션을 활성화하면 Commerce에서 모든 JS 리소스를 상점 첫 페이지에 로드되는 하나 또는 번들 세트로 병합할 수 있습니다. JS를 번들링하면 서버에 대한 요청이 줄어들어 페이지 성능이 향상됩니다. 또한 브라우저가 JS 리소스를 첫 번째 호출에 캐시하고 이후의 모든 탐색에 다시 사용할 수 있도록 지원합니다. 또한 모든 JS가 텍스트로 로드되므로 이 옵션은 소극적 평가도 제공합니다. 페이지에서 특정 작업이 트리거된 후에만 코드 분석 및 평가를 시작합니다. 그러나 모든 JS 콘텐츠는 첫 번째 호출에서 로드되므로 첫 번째 페이지 로드 시간이 매우 중요한 저장소에는 이 설정이 권장되지 않습니다.
 
@@ -111,7 +111,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 고객 세그먼트 유효성 검사
 
-[고객 세그먼트](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/segments/customer-segments)가 많은 가맹점은 고객 로그인 및 장바구니에 제품 추가와 같은 고객 작업에 대해 상당한 성능 저하를 경험할 수 있습니다.
+[고객 세그먼트](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)가 많은 가맹점은 고객 로그인 및 장바구니에 제품 추가와 같은 고객 작업에 대해 상당한 성능 저하를 경험할 수 있습니다.
 
 고객 작업은 고객 세그먼트에 대한 유효성 검사 프로세스를 트리거하며, 이로 인해 성능이 저하될 수 있습니다. 기본적으로 Adobe Commerce은 각 세그먼트를 실시간으로 확인하여 일치하는 고객 세그먼트와 일치하지 않는 고객 세그먼트를 정의합니다.
 
@@ -131,12 +131,12 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 그리드의 제품 수 제한
 
-대형 카탈로그의 제품 그리드 성능을 향상시키려면 > > > > [!UICONTROL Advanced] [!UICONTROL Admin] > [!UICONTROL Admin Grids] > 시스템 구성 설정을 사용하여 **[!UICONTROL Stores]그리드의 제품 수를 제한하는 것이[!UICONTROL Limit Number of Products in Grid]** 좋습니다. [!UICONTROL Configuration] [!UICONTROL Settings]
+큰 카탈로그의 제품 그리드 성능을 향상시키려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** 시스템 구성 설정으로 그리드의 제품 수를 제한하는 것이 좋습니다.
 
-이 시스템 구성 설정은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하면 그리드의 제품 수를 특정 값으로 제한할 수 있습니다. **[!UICONTROL Records Limit]** 는 기본 최소값이 있는 사용자 지정 가능한 설정입니다 `20000`.
-**[!UICONTROL Limit Number of Products in Grid]** 설정이 활성화되고 그리드의 제품 수가 레코드 제한보다 크면 제한된 레코드 컬렉션 컬렉션이 반환됩니다. 제한에 도달하면 발견된 총 레코드 수, 선택한 레코드 수 및 페이지 매김 요소가 그리드 머리글에서 숨김 됩니다.
+이 시스템 구성 설정은 기본적으로 비활성화되어 있습니다. 활성화하면 그리드의 제품 수를 특정 값으로 제한할 수 있습니다. **[!UICONTROL Records Limit]**&#x200B;은(는) 사용자 지정 가능한 설정이며 기본값은 `20000`입니다.
+**[!UICONTROL Limit Number of Products in Grid]** 설정을 사용하도록 설정하고 표의 제품 수가 레코드 제한보다 크면 제한된 레코드 컬렉션이 반환됩니다. 제한에 도달하면 검색된 총 레코드, 선택한 레코드 수 및 페이지 매김 요소가 그리드 헤더에서 숨겨집니다.
 
-그리드의 총 제품 수가 제한되면 제품 그리드 대량 행동에 영향을 주지 않습니다. 제품 격자 프레젠테이션 레이어에만 영향을 줍니다. 예를 들어, 그리드에 제품 수가 `20000` 제한되어 있는 경우 사용자 를 클릭하고 **[!UICONTROL Select All]**&#x200B;대량 작업을 선택하고 **[!UICONTROL Update attributes]** 일부 속성을 업데이트합니다. 따라서 `20000` 레코드의 제한된 컬렉션이 아니라 모든 제품이 업데이트됩니다.
+그리드의 총 제품 수가 제한되는 경우, 제품 그리드 질량 작용에 영향을 미치지 않는다. 제품 격자 프레젠테이션 레이어에만 영향을 줍니다. 예를 들어, 그리드에 제한된 `20000` 제품 수가 있고 사용자가 **[!UICONTROL Select All]**&#x200B;을(를) 클릭하고 **[!UICONTROL Update attributes]** 대량 작업을 선택한 다음 일부 특성을 업데이트합니다. 따라서 `20000` 레코드의 제한된 컬렉션이 아니라 모든 제품이 업데이트됩니다.
 
 제품 격자 제한은 UI 구성 요소에서 사용하는 제품 컬렉션에만 영향을 줍니다. 따라서 모든 제품 그리드가 이 제한의 영향을 받는 것은 아닙니다. `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`을(를) 사용하는 사용자만
 다음 페이지에서만 제품 그리드 컬렉션을 제한할 수 있습니다.

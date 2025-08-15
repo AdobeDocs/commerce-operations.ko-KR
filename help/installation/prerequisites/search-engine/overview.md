@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 검색 엔진 사전 요구 사항
 
-Adobe Commerce 2.4부터는 카탈로그 검색 솔루션으로 [Elasticsearch](https://www.elastic.co) 또는 [OpenSearch](https://opensearch.org/)을 사용하도록 모든 설치를 구성해야 합니다.
+Adobe Commerce 2.4부터는 카탈로그 검색 솔루션으로 [Elasticsearch](https://www.elastic.co) 또는 [OpenSearch](https://opensearch.org/)을(를) 사용하도록 모든 설치를 구성해야 합니다.
 
 >[!NOTE]
 >
->2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 호환 가능한 Elasticsearch 포크입니다. Elasticsearch 7을 구성하는 모든 지침은 OpenSearch에 적용됩니다. [Elasticsearch에서 OpenSearch로 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)에서 OpenSearch로 전환하는 방법에 대한 지침을 제공합니다.
+>2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 Elasticsearch의 호환 가능한 포크입니다. Elasticsearch 7을 구성하는 모든 지침은 OpenSearch에 적용됩니다. [Elasticsearch에서 OpenSearch로 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)에서 OpenSearch로 전환하는 방법에 대한 지침을 제공합니다.
 
 ## 지원되는 버전
 
@@ -65,14 +65,14 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 
 1. 통신은 Elasticsearch 웹 서버가 보안 역방향 프록시 역할을 하는 동일한 경로를 따라 반환됩니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 이 섹션에서 설명하는 작업은 다음 조건을 충족해야 합니다.
 
 * [방화벽 및 SELinux](#firewall-and-selinux)
 * [JDK(Java Software Development Kit) 설치](#install-the-java-software-development-kit)
 * [검색 엔진 설치](#install-the-search-engine)
-* [업그레이드 Elasticsearch](#upgrading-elasticsearch)
+* [Elasticsearch 업그레이드](#upgrading-elasticsearch)
 
 ### 방화벽 및 SELinux
 
@@ -95,7 +95,7 @@ Java가 이미 설치되어 있는지 확인하려면 다음 명령을 입력합
 java -version
 ```
 
-`java: command not found` 메시지가 표시되면 다음 섹션에서 설명한 대로 Java SDK를 설치해야 합니다.
+`java: command not found` 메시지가 표시되면 다음 섹션에서 설명한 대로 Java SDK을 설치해야 합니다.
 
 다음 섹션 중 하나를 참조하십시오.
 
@@ -128,7 +128,7 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-다른 옵션은 [Oracle 설명서](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)를 참조하세요.
+기타 옵션은 [Oracle 설명서](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)를 참조하세요.
 
 ### 검색 엔진 설치
 
@@ -157,7 +157,7 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## 업그레이드 Elasticsearch
+## Elasticsearch 업그레이드
 
 프로덕션에 배포하기 전에 데이터 백업, 잠재적인 마이그레이션 문제 감지 및 업그레이드 테스트에 대한 전체 지침은 [Elasticsearch 업그레이드](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)를 참조하십시오. 현재 버전의 Elasticsearch에 따라 전체 클러스터를 다시 시작해야 할 수도 있고 필요하지 않을 수도 있습니다.
 
@@ -165,4 +165,4 @@ Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 설치된 JD
 
 ## 추가 리소스
 
-[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) 또는 [OpenSearch](https://opensearch.org/docs/latest/) 설명서를 참조하세요.
+[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) 또는 [OpenSearch](https://opensearch.org/docs/latest/) 설명서를 참조하십시오.

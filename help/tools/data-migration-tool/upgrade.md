@@ -14,7 +14,7 @@ ht-degree: 0%
 
 현재 Magento 2 설치와 [!DNL Data Migration Tool]의 버전이 정확히 일치하는지 확인하려면 도구를 업그레이드해야 할 수 있습니다.
 
-## 전제 조건
+## 사전 요구 사항
 
 [!DNL Data Migration Tool]을(를) 업그레이드하기 전에 다음을 수행해야 합니다.
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * `vendor/magento/data-migration-tool` 디렉터리 백업
 
-* [!DNL Data Migration Tool] 버전이 Magento 응용 프로그램 버전과 일치하는지 확인하십시오.
+* [!DNL Data Migration Tool] 버전이 Magento 애플리케이션 버전과 일치하는지 확인하십시오
 
 ### Magento 소프트웨어 업그레이드
 
@@ -49,11 +49,11 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 방법을 알아보려면 [설치 [!DNL Data Migration Tool]](install.md) 항목을 참조하십시오.
 
-* Magento 2 버전을 [확인](install.md#check-your-version)
+* Magento 2 버전 [확인](install.md#check-your-version)
 
 * [찾기](install.md#find-released-versions-of-data-migration-tool) 릴리스 버전의 [!DNL Data Migration Tool]
 
-* [!DNL Data Migration Tool] 버전을 [확인](install.md#check-version-of-installed-data-migration-tool)
+* [ 버전을 ](install.md#check-version-of-installed-data-migration-tool)확인[!DNL Data Migration Tool]
 
 ## [!DNL Data Migration Tool] 업그레이드
 
@@ -65,7 +65,7 @@ php <magento_root>/bin/magento setup:backup --code --db
    composer require magento/data-migration-tool:<version>
    ```
 
-   여기서 `<version>`은(는) Magento 2 코드 베이스의 버전과 일치해야 합니다.
+   여기서 `<version>`은(는) Magento 2 코드베이스 버전과 일치해야 합니다.
 
    예를 들어 버전 2.1.2의 경우 다음을 입력합니다.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 시스템 요구 사항
 
-[!DNL Data Migration Tool]에 대한 [시스템 요구 사항](../../installation/system-requirements.md)은(는) Magento 2와 동일합니다.
+[에 대한 ](../../installation/system-requirements.md)시스템 요구 사항[!DNL Data Migration Tool]은(는) Magento 2와 동일합니다.
 
 ## 내부 구조
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 
 * options - 매개 변수 목록입니다. 필수(map_file, settings_map_file, bulk_size) 및 선택적(custom_option, resource_adapter_class_name, prefix_source, prefix_dest, log_file) 매개변수를 모두 포함합니다.
 
-데이터베이스 테이블에 접두사가 있는 Magento이 설치된 경우 접두사 변경 옵션을 사용합니다. Magento 1 및 Magento 2 데이터베이스에 대해 설정할 수 있습니다. 그에 따라 &quot;source_prefix&quot; 및 &quot;dest_prefix&quot; 구성 옵션을 사용합니다.
+Magento이 데이터베이스 테이블에 접두사와 함께 설치된 경우 접두사 옵션 변경. Magento 1 및 Magento 2 데이터베이스에 대해 설정할 수 있습니다. 그에 따라 &quot;source_prefix&quot; 및 &quot;dest_prefix&quot; 구성 옵션을 사용합니다.
 
 구성 데이터는 `\Migration\Config` 클래스로 액세스할 수 있습니다.
 
@@ -279,7 +279,7 @@ $this->progress->finish();
 
 ### 무결성 검사
 
-각 단계는 데이터 소스의 구조(기본적으로 Magento 1)와 데이터 대상의 구조(Magento 2)가 호환되는지 확인해야 합니다. 그렇지 않은 경우 - 호환되지 않는 엔티티와 함께 오류가 표시됩니다. 필드에 서로 다른 데이터 유형이 있는 경우(동일한 필드에 Magento 1의 10진수 데이터 유형과 Magento 2의 정수가 있는 경우) 맵 파일에서 다루어진 경우를 제외하고 경고 메시지가 표시됩니다.
+각 단계에서는 데이터 소스 구조(기본적으로 Magento 1)와 데이터 대상 구조(Magento 2)가 호환되는지 확인해야 합니다. 그렇지 않은 경우 - 호환되지 않는 엔티티와 함께 오류가 표시됩니다. 필드에 서로 다른 데이터 형식이 있는 경우(동일한 필드에 Magento 1의 10진수 데이터 형식과 Magento 2의 정수 데이터 형식이 있는 경우) 맵 파일에서 다루는 경우를 제외하고 경고 메시지가 표시됩니다.
 
 ### 데이터 전송
 
@@ -431,11 +431,11 @@ $this->progress->finish();
 
 #### 와일드카드
 
-유사한 부분(`document_name_1`, `document_name_2`)이 있는 문서를 무시하려면 와일드카드 기능을 사용할 수 있습니다. 반복 부분(`document_name_*`) 대신 `*` 기호를 넣으면 이 마스크는 이 마스크를 충족하는 모든 원본 또는 대상 문서를 포함합니다.
+유사한 부분(`document_name_1`, `document_name_2`)이 있는 문서를 무시하려면 와일드카드 기능을 사용할 수 있습니다. 반복 부분(`*`) 대신 `document_name_*` 기호를 넣으면 이 마스크는 이 마스크를 충족하는 모든 원본 또는 대상 문서를 포함합니다.
 
 #### URL 재작성 단계
 
-Magento 2와 호환되지 않는 Magento 1에서 개발된 다양한 알고리즘이 많기 때문에 이 단계는 복잡합니다. Magento 1의 다른 버전에 대해 다른 알고리즘이 있을 수 있습니다. 따라서 Step/UrlRewrite 폴더 아래에는 일부 특정 버전의 Magento에 대해 개발된 클래스가 있으며 Migration\Step\UrlRewrite\Version191to2000 이 이러한 클래스 중 하나입니다. URL Rewrites 데이터를 Magento 1.9.1에서 Magento 2로 전송할 수 있습니다.
+이 단계는 Magento 2와 호환되지 않는 Magento 1에서 개발된 다양한 알고리즘이 많기 때문에 복잡합니다. 다양한 버전의 Magento 1에 대해 다양한 알고리즘이 있을 수 있습니다. 따라서 Step/UrlRewrite 폴더 아래에는 일부 특정 버전의 Magento용으로 개발된 클래스가 있으며 Migration\Step\UrlRewrite\Version191to2000 이 이러한 클래스 중 하나입니다. URL Rewrites 데이터를 Magento 1.9.1에서 Magento 2로 전송할 수 있습니다.
 
 #### EAV 단계
 
@@ -465,7 +465,7 @@ Magento 1 및 Magento 2의 데이터 소스에 도달하고 해당 데이터(선
 
 ## 로깅
 
-마이그레이션 프로세스의 출력을 구현하고 가능한 모든 수준을 제어하기 위해 Magento에 사용되는 PSR 로거가 적용됩니다. 로깅 기능을 제공하기 위해 `\Migration\Logger\Logger` 클래스가 구현되었습니다. 로거를 사용하려면 생성자 종속성 삽입을 통해 로거를 주입해야 합니다.
+마이그레이션 프로세스의 출력을 구현하고 가능한 모든 수준을 제어하기 위해 Magento에서 사용되는 PSR 로거가 적용됩니다. 로깅 기능을 제공하기 위해 `\Migration\Logger\Logger` 클래스가 구현되었습니다. 로거를 사용하려면 생성자 종속성 삽입을 통해 로거를 주입해야 합니다.
 
 ```php
 class SomeClass
@@ -521,9 +521,9 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 
 `setLevel()` 메서드를 호출하여 각 처리기에 대한 자세한 로그 수준을 개별적으로 설정할 수 있습니다. 명령줄 매개 변수를 통해 세부 정보 수준을 설정하려면 응용 프로그램을 시작할 때 &#39;세부 정보&#39; 옵션을 변경해야 합니다.
 
-모노로그 포맷터를 사용하여 로그 메시지를 포맷할 수 있습니다. 포맷터 기능을 사용하려면 `setFormatter()` 메서드를 사용하여 로그 처리기를 지정해야 합니다. 현재 처리기에서 실행된 `format()` 메서드를 통해 메시지를 처리하는 동안 특정 형식을 설정하는 포맷터 클래스(`MessageFormatter`)가 하나 있습니다(자세한 표시 수준에 따라 다름).
+모노로그 포맷터를 사용하여 로그 메시지를 포맷할 수 있습니다. 포맷터 기능을 사용하려면 `setFormatter()` 메서드를 사용하여 로그 처리기를 지정해야 합니다. 현재 처리기에서 실행된 `MessageFormatter` 메서드를 통해 메시지를 처리하는 동안 특정 형식을 설정하는 포맷터 클래스(`format()`)가 하나 있습니다(자세한 표시 수준에 따라 다름).
 
-로거를 조작하고(처리기와 프로세서 추가) 세부 정보 표시 모드에서 처리하는 작업은 `Migration\Logger\Manager` 클래스의 `process()` 메서드에서 수행됩니다. 이 메서드는 응용 프로그램이 시작될 때 호출됩니다.
+로거를 조작하고(처리기와 프로세서 추가) 세부 정보 표시 모드에서 처리하는 작업은 `process()` 클래스의 `Migration\Logger\Manager` 메서드에서 수행됩니다. 이 메서드는 응용 프로그램이 시작될 때 호출됩니다.
 
 ## 자동 테스트
 

@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL bots] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL bots] 탭에 대해 알아봅니다.'
+description: '[!UICONTROL bots]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## [!DNL bots]의 높은 수준 개요:
 
-* [!DNL bot]은(는) 반복적인 자동화된 작업을 실행하는 소프트웨어입니다. 인공 지능과 머신 러닝의 발전으로 [!DNL bots]의 작업, 메서드 및 상호 작용이 변화하고 있습니다. 사이트를 크롤링하고 인터넷 검색 엔진에 추가하여 이점을 얻는 *good* [!DNL bots]이(가) 있습니다. 그 결과 인터넷 사용자는 검색 엔진 결과를 통해 사이트로 이동할 수 있습니다. *양호* [!DNL bot]은(는) 일반적으로 검색 엔진 콘솔의 `robots.txt` 파일 또는 설정에 의해 [!DNL bot]에 배치된 경계를 준수합니다. 경계는 사이트 또는 사이트 일부에 대한 액세스를 제한할 수 있습니다.
+* [!DNL bot]은(는) 반복적인 자동화된 작업을 실행하는 소프트웨어입니다. 인공 지능과 머신 러닝의 발전으로 [!DNL bots]의 작업, 메서드 및 상호 작용이 변화하고 있습니다. 사이트를 크롤링하고 인터넷 검색 엔진에 추가하여 이점을 얻는 *good* [!DNL bots]이(가) 있습니다. 그 결과 인터넷 사용자는 검색 엔진 결과를 통해 사이트로 이동할 수 있습니다. *양호* [!DNL bot]은(는) 일반적으로 검색 엔진 콘솔의 [!DNL bot] 파일 또는 설정에 의해 `robots.txt`에 배치된 경계를 준수합니다. 경계는 사이트 또는 사이트 일부에 대한 액세스를 제한할 수 있습니다.
 * 악의적인 [!DNL bots]이(가) `robots.txt` 파일을 무시하거나 HTTP 요청 데이터의 요청 사용자 에이전트 필드를 통해 올바른 [!DNL bot]을(를) 스푸핑할 수 있습니다. 악의적인 [!DNL bots]이(가) 수행하는 일부 작업:
    * 사이트에 대한 정당한 사용자 액세스를 거부하기 위해 사이트에 로드를 추가합니다.
    * 권한 없이 콘텐츠를 스크랩하고 재사용할 수 있습니다.
@@ -28,8 +28,8 @@ ht-degree: 0%
       * [!DNL bot]이(가) 사이트에 추가하고 있는 로드와 해당 로드가 발생하는 시기를 표시하는 캐시되지 않은 총 [!DNL bot] 활동을 표시합니다.
       * 오류를 생성하는 [!DNL bots]이(가) 표시됩니다. 일반적으로 [!DNL bot]이(가) 사이트 문제를 일으키는 로드를 추가하는 경우 해당 [!DNL bot] 또는 IP 주소의 오류 빈도가 가장 높습니다.
       * 다음을 통해 관리할 [!DNL bot]개의 이름(요청 사용자 에이전트 필드 값) 및 IP 주소가 표시됩니다.
-         * [!DNL Fastly] (속도 제한 또는 [!DNL VCLs] (이름 값으로 IP 주소, 범위 또는 [!DNL bots]을(를) 차단).
-         * 사이트 액세스 속도를 제한하거나 제한하기 위해 `robots.txt field`에 올바른 [!DNL bot] 정보를 추가하는 중입니다.
+         * [!DNL Fastly]&#x200B;(속도 제한 또는 [!DNL VCLs]&#x200B;(이름 값으로 IP 주소, 범위 또는 [!DNL bots]을(를) 차단).
+         * 사이트 액세스 속도를 제한하거나 제한하기 위해 [!DNL bot]에 올바른 `robots.txt field` 정보를 추가하는 중입니다.
          * 검색 엔진 콘솔을 통해 [!DNL Bing] 또는 [!DNL Google bots] 관리
 
 ## [!UICONTROL Experimental Potential Malicious Bots frame]
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]** 프레임은 12개의 복잡한 별도의 쿼리를 실행합니다. 악의적인 IP 요청 서명을 감지한 다음, 결과를 집계하여 내림차순으로 집계하여 정렬합니다. 쿼리에는 CVE 악용 및 기타 악의적인 요청의 많은 데이터 서명이 포함되어 있습니다. 보안 수정/패치에 의해 악용이 차단되고 사이트에 위협이 되지 않는 경우에도, 요청은 여전히 웹 사이트에서 처리해야 합니다. 짧은 기간 내에 요청의 양이 상당히 커질 수 있습니다. 이 프레임에는 IP 주소의 총 요청이 표시되지 않고, 요청에 의심스러운 의도가 있음을 나타내는 신호가 있는 요청이 표시됩니다.
 
-트래픽이 의심스럽고 유효한 요청을 전달할 수 있는 [!DNL Content Distributed Network] (CDN) 주소에서 발생하지 않는지 확인하십시오. 요청이 CDN IP 주소에서 발송된 것으로 확인되면 해당 서비스 공급업체에 연락하여 네트워크를 통한 의심스러운 트래픽 차단을 도와주십시오. 주소 또는 요청 URL을 차단해야 하는 경우 Adobe Commerce 지원 기술 자료에서 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=ko)을 참조하세요.
+트래픽이 의심스럽고 유효한 요청을 전달할 수 있는 [!DNL Content Distributed Network]&#x200B;(CDN) 주소에서 발생하지 않는지 확인하십시오. 요청이 CDN IP 주소에서 발송된 것으로 확인되면 해당 서비스 공급업체에 연락하여 네트워크를 통한 의심스러운 트래픽 차단을 도와주십시오. 주소 또는 요청 URL을 차단해야 하는 경우 Adobe Commerce 지원 기술 자료에서 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html)을 참조하세요.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
@@ -50,13 +50,13 @@ ht-degree: 0%
 
 ![선택한 기간 동안의 봇 이름별 총 봇 트래픽:](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
-**[!UICONTROL Total Bot traffic by bot name during selected time period]** 테이블에는 값에 [!UICONTROL request_user_agent] 필드의 문자열이 [!DNL bots]인 캐시되지 않은 요청의 집계된 수가 포함되어 있습니다. [!UICONTROL request_user_agent] 필드 값이 스푸핑될 수 있으므로 이름이 [!DNL bot]이거나 아닐 수 있습니다. [!UICONTROL Count] 열 아래의 값이 가장 중요합니다.
+**[!UICONTROL Total Bot traffic by bot name during selected time period]** 테이블에는 값에 [!UICONTROL request_user_agent] 필드의 문자열이 [!DNL bots]인 캐시되지 않은 요청의 집계된 수가 포함되어 있습니다. [!DNL bot] 필드 값이 스푸핑될 수 있으므로 이름이 [!UICONTROL request_user_agent]이거나 아닐 수 있습니다. [!UICONTROL Count] 열 아래의 값이 가장 중요합니다.
 
 ## [!UICONTROL Total Bot Traffic by Bot name/IP address]
 
 ![선택한 기간 동안 보트 이름/IP 주소별 총 보트 트래픽 Fastly 수준에서 보트 트래픽을 차단하거나 robots.txt 파일을 통해 보트를 관리하는 방법 Adobe Commerce robots.txt 모범 사례](../../assets/tools/observation-for-adobe-commerce/best-practices-adobecommerce-robots.png)
 
-**[!UICONTROL Total Bot Traffic by Bot name/IP address during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 테이블은 이전 테이블과 동일한 데이터를 표시하지만 명명된 [!DNL bot] 대신 요청을 수행하는 IP 주소를 추가합니다. 악의적인 [!DNL bots] 스푸핑 좋은 [!DNL bots] (으)로, IP 주소는 악의적인 IP 주소를 식별하는 웹 사이트 또는 *whois* 서비스 또는 [!DNL DNS lookups]을(를) 통해 확인해야 합니다. 예를 들어 [!DNL Google]은(는) [[!DNL googlebot] IP 주소를 게시](https://developers.google.com/search/apis/ipranges/googlebot.json)하고 [!DNL Microsoft]에는 [[!DNL Bingbots]](https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f)에 대한 확인 도구가 있습니다.
+**[!UICONTROL Total Bot Traffic by Bot name/IP address during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 테이블은 이전 테이블과 동일한 데이터를 표시하지만 명명된 [!DNL bot] 대신 요청을 수행하는 IP 주소를 추가합니다. 악의적인 [!DNL bots] 스푸핑 좋은 [!DNL bots]&#x200B;(으)로, IP 주소는 악의적인 IP 주소를 식별하는 웹 사이트 또는 *whois* 서비스 또는 [!DNL DNS lookups]을(를) 통해 확인해야 합니다. 예를 들어 [!DNL Google]은(는) [[!DNL googlebot] IP 주소를 게시](https://developers.google.com/search/apis/ipranges/googlebot.json)하고 [!DNL Microsoft]에는 [[!DNL Bingbots]](https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f)에 대한 확인 도구가 있습니다.
 
 ## [!UICONTROL Graph - Bots with HTTP status errors]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![표 - 선택한 기간 동안 HTTP 상태 오류가 있는 보트로 식별되지 않는 IP Fastly 수준에서 보트 트래픽을 차단하거나 robots.txt 파일을 통해 보트를 관리하는 방법 Adobe Commerce robots.txt 모범 사례 ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
-**[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 테이블에는 요청 사용자 에이전트 필드에 [!DNL bots] (으)로 자체 식별되지 않는 HTTP 상태 코드가 200개가 아닌 IP 요청이 표시됩니다. 이러한 IP 주소는 특히 선택한 기간 동안 횟수가 많은 경우 악의적인 IP 주소일 수 있습니다.
+**[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 테이블에는 요청 사용자 에이전트 필드에 [!DNL bots]&#x200B;(으)로 자체 식별되지 않는 HTTP 상태 코드가 200개가 아닌 IP 요청이 표시됩니다. 이러한 IP 주소는 특히 선택한 기간 동안 횟수가 많은 경우 악의적인 IP 주소일 수 있습니다.
 
 200개가 아닌 http 상태 코드 수가 적고 IP 주소 범위가 유사하지 않으면 주소가 사이트 문제에 기여하지 않을 수 있습니다.
 
@@ -140,13 +140,13 @@ IP 주소에서 오류가 자주 발생하는 경우 어떻게 하는지 묻습�
 
 ![선택한 기간 동안 봇이 아닌 이름/IP 주소(Fastly)를 차단했습니다. 이 그래프는 403 금지된 HTTP 상태 코드 ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)이(가) 반환된 비봇 트래픽 및 IP를 표시합니다
 
-**[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** 프레임에 [!DNL Fastly]을(를) 통해 차단된 [!DNL bot] (으)로 식별되지 않는 IP 주소가 표시됩니다.
+**[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** 프레임에 [!DNL bot]을(를) 통해 차단된 [!DNL Fastly]&#x200B;(으)로 식별되지 않는 IP 주소가 표시됩니다.
 
 ## [!UICONTROL This table shows the number of user agents per IP address, number of successful, unsuccessful and blocked requests:]
 
 ![이 표에서는 IP 주소당 사용자 에이전트 수, 성공, 실패 및 차단된 요청 수를 보여 줍니다.](../../assets/tools/observation-for-adobe-commerce/unsuccessful-attempts.png)
 
-악의적인 [!DNL bots]은(는) 종종 [!UICONTROL Request User Agent] 필드의 값을 통해 다른 [!DNL bots]을(를) 스푸핑합니다. 이 표에서는 해당 필드에 IP 주소가 갖는 고유 값 수를 보여 줍니다. [!UICONTROL Request User Agent] 필드의 값이 높을수록 IP 주소를 의심할 수 있습니다.
+악의적인 [!DNL bots]은(는) 종종 [!DNL bots] 필드의 값을 통해 다른 [!UICONTROL Request User Agent]을(를) 스푸핑합니다. 이 표에서는 해당 필드에 IP 주소가 갖는 고유 값 수를 보여 줍니다. [!UICONTROL Request User Agent] 필드의 값이 높을수록 IP 주소를 의심할 수 있습니다.
 
 ## [!UICONTROL IP with non-200 status errors]
 

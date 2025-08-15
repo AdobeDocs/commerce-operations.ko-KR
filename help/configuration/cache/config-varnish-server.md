@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,11 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
 1. `.host`의 값을 Varnish _백엔드_ 또는 _원본 서버_&#x200B;의 정규화된 호스트 이름 또는 IP 주소 및 수신 대기 포트로 바꾸십시오. 즉, Varnish 콘텐츠를 제공하는 서버는 속도가 빨라집니다.
 
-   일반적으로 웹 서버입니다. _바니시 가이드_&#x200B;에서 [백엔드 서버](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)를 참조하십시오.
+   일반적으로 웹 서버입니다. [바니시 가이드](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)에서 _백엔드 서버_&#x200B;를 참조하십시오.
 
 1. `.port`의 값을 웹 서버의 수신 포트(이 예제에서는 8080)로 바꿉니다.
 
-   예: Apache가 호스트 192.0.2.55에 설치되고 Apache가 포트 8080에서 수신 대기합니다.
+   예: Apache가 호스트 192.0.2.55에 설치되어 있고 Apache는 포트 8080에서 수신 대기합니다.
 
    ```conf
    backend default {
@@ -91,7 +91,7 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
    >[!INFO]
    >
-   >Adobe Varnish와 Apache가 동일한 호스트에서 실행 중인 경우 `localhost`이(가) 아닌 IP 주소 또는 호스트 이름을 사용하는 것이 좋습니다.
+   >Varnish와 Apache가 동일한 호스트에서 실행 중인 경우 Adobe은 `localhost`이(가) 아닌 IP 주소 또는 호스트 이름을 사용할 것을 권장합니다.
 
 1. 변경 내용을 `default.vcl`에 저장하고 텍스트 편집기를 종료합니다.
 

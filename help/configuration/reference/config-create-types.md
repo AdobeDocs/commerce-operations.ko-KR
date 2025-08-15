@@ -48,7 +48,7 @@ ht-degree: 0%
 1. XML 파일을 만듭니다.
 1. `di.xml`에서 구성 개체를 정의합니다.
 
-   Magento 판매 모듈의 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml)에 있는 다음 예제는 구성 개체의 모양을 보여 줍니다.
+   Magento_Sales 모듈의 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml)에 있는 다음 예제는 구성 개체의 모양을 보여 줍니다.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,7 +76,7 @@ ht-degree: 0%
    </config>
    ```
 
-   - 첫 번째 유형 노드는 Reader의 파일 이름을 설정하며, 연결된 `Converter` 및 `SchemaLocator` 클래스를 설정합니다.
+   - 첫 번째 형식 노드는 연결된 `Converter` 및 `SchemaLocator` 클래스와 관련된 Reader의 파일 이름을 설정합니다.
    - 그런 다음 `pdfConfigDataStorage` 가상 형식 노드는 판독기 클래스를 [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php)의 인스턴스에 연결합니다.
    - 마지막으로 마지막 형식 노드는 해당 구성 데이터 가상 형식을 [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) 클래스에 연결하며, 이 클래스는 해당 [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) 파일에서 값을 실제로 읽는 데 사용됩니다.
 

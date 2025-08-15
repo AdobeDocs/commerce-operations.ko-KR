@@ -26,7 +26,7 @@ CCPA는 소비자에게 다음과 같은 새로운 권한을 부여합니다.
 
 ## CCPA 규정 준수
 
-CCPA 준수 계획을 개발하고 구현하려면 조율된 노력이 필요합니다. 상인이 다양한 기능을 갖춘 팀을 구성하고 [CCPA 규정 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ko)에 설명된 로드맵을 따라 회사를 규정 준수에 이르게 할 것을 권장합니다. 개발자인 경우 프로세스의 2단계부터 5단계까지 강조하여 관련자로 참여하도록 초대될 수 있습니다. 자세한 내용은 [CCPA 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ko)를 참조하십시오.
+CCPA 준수 계획을 개발하고 구현하려면 조율된 노력이 필요합니다. 상인이 다양한 기능을 갖춘 팀을 구성하고 [CCPA 규정 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)에 설명된 로드맵을 따라 회사를 규정 준수에 이르게 할 것을 권장합니다. 개발자인 경우 프로세스의 2단계부터 5단계까지 강조하여 관련자로 참여하도록 초대될 수 있습니다. 자세한 내용은 [CCPA 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)를 참조하십시오.
 
 1. 다양한 분야의 사람들이 함께 일하는 팀을 구성하여 CCPA 규정 준수를 해결합니다.
 

@@ -16,7 +16,7 @@ Commerce 애플리케이션은 낮은 수준의 캐시 프론트엔드 및 백�
 
 ## 낮은 수준의 프론트엔드 캐시
 
-Commerce은 [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) 프런트 엔드 캐시를 구현하여 [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html)을(를) 확장합니다.
+Commerce은 [Magento\Framework\Cache\Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) 프런트 엔드 캐시를 구현하여 [Zend_Cache_Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)을(를) 확장합니다.
 
 ## 낮은 수준 백엔드 캐시
 

@@ -35,7 +35,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 * `{<path to config.xml>}`은(는) `config.xml`에 대한 절대 파일 시스템 경로입니다. 이 인수는 필수입니다.
 
-이 단계에서 [!DNL Data Migration Tool]은(는) Magento 1 데이터베이스에 마이그레이션 테이블에 대한 추가 테이블 및 트리거를 만듭니다. [증분/델타](delta.md) 마이그레이션 단계에서 사용됩니다. 추가 테이블에는 최종 마이그레이션 실행 후 변경된 레코드에 대한 정보가 들어 있습니다. 데이터베이스 트리거는 이러한 추가 테이블을 채우는 데 사용되므로 특정 테이블에서 새 작업이 수행되는 경우(레코드가 추가/수정/제거됨) 이러한 데이터베이스 트리거는 이 작업에 대한 정보를 추가 테이블에 저장합니다. 델타 마이그레이션 프로세스를 실행하면 [!DNL Data Migration Tool]에서 이 테이블에 처리되지 않은 레코드가 있는지 확인하고 필요한 콘텐츠를 Magento 2 데이터베이스로 마이그레이션합니다.
+이 단계에서 [!DNL Data Migration Tool]은(는) Magento 1 데이터베이스에서 추가 테이블 및 마이그레이션 테이블에 대한 트리거를 만듭니다. [증분/델타](delta.md) 마이그레이션 단계에서 사용됩니다. 추가 테이블에는 최종 마이그레이션 실행 후 변경된 레코드에 대한 정보가 들어 있습니다. 데이터베이스 트리거는 이러한 추가 테이블을 채우는 데 사용되므로 특정 테이블에서 새 작업이 수행되는 경우(레코드가 추가/수정/제거됨) 이러한 데이터베이스 트리거는 이 작업에 대한 정보를 추가 테이블에 저장합니다. 델타 마이그레이션 프로세스를 실행하면 [!DNL Data Migration Tool]이(가) 이러한 테이블에서 처리되지 않은 레코드를 확인하고 필요한 콘텐츠를 Magento 2 데이터베이스로 마이그레이션합니다.
 
 각 새 테이블에는 다음이 포함되어 있습니다.
 
@@ -90,7 +90,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 ## 가능한 일관성 오류
 
-실행하는 동안 [!DNL Data Migration Tool]에서 Magento 1과 Magento 2 데이터베이스 간의 불일치를 보고하고 다음과 같은 메시지를 표시할 수 있습니다.
+실행 중에 [!DNL Data Migration Tool]에서 Magento 1과 Magento 2 데이터베이스 간의 불일치를 보고하고 다음과 같은 메시지를 표시할 수 있습니다.
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 [!DNL Magento 1] 및 기타 전자 상거래 플랫폼에서 마이그레이션하거나 [!DNL Adobe Commerce] 마켓플레이스에서 모듈로 작업하려면 추가 데이터를 추가하고 저장해야 할 수 있습니다. 첫 번째 본능은 데이터베이스 테이블에 열을 추가하거나 기존 열을 조정하는 것입니다. 그러나 제한된 상황에서는 코어 [!DNL Adobe Commerce] 테이블(또는 타사 공급업체 테이블)만 수정해야 합니다.
 
-## Adobe이 수정을 피하는 것을 권장하는 이유
+## Adobe에서 수정을 피하는 것이 권장되는 이유
 
 핵심 테이블 수정을 피하는 주요 이유는 Adobe Commerce에 원시 SQL 쿼리가 포함된 기본 논리가 포함되어 있기 때문입니다. 표 구조를 변경하면 문제를 해결하기 어려운 예기치 않은 부작용이 발생할 수 있습니다. 또한 DDL(Data Definition Language) 작업을 변경하면 성능에 예기치 않은 예기치 않은 영향을 줄 수 있습니다.
 
@@ -26,11 +26,11 @@ ht-degree: 0%
 
 ## 데이터 저장 또는 제거 시점 파악
 
-Adobe은 먼저 이 데이터를 저장해야 하는지 여부를 결정할 것을 권장합니다. 기존 시스템에서 데이터를 이동하는 경우 제거할 수 있는 모든 데이터는 마이그레이션 중에 시간과 노력을 절약합니다. (나중에 액세스해야 하는 경우 데이터를 보관하는 방법이 있습니다.) 애플리케이션 및 성능을 제대로 관리하려면 추가 데이터 저장 요청에 도전해도 됩니다. 목표는 데이터를 저장하는 것이 다른 방법으로 채울 수 없는 비즈니스 요구 사항을 충족하기 위한 요구 사항인지 확인하는 것입니다.
+Adobe에서는 먼저 이 데이터를 저장해야 하는지 여부를 결정할 것을 권장합니다. 기존 시스템에서 데이터를 이동하는 경우 제거할 수 있는 모든 데이터는 마이그레이션 중에 시간과 노력을 절약합니다. (나중에 액세스해야 하는 경우 데이터를 보관하는 방법이 있습니다.) 애플리케이션 및 성능을 제대로 관리하려면 추가 데이터 저장 요청에 도전해도 됩니다. 목표는 데이터를 저장하는 것이 다른 방법으로 채울 수 없는 비즈니스 요구 사항을 충족하기 위한 요구 사항인지 확인하는 것입니다.
 
 ### 이전 데이터
 
-프로젝트에 이전 주문 또는 고객 레코드와 같은 레거시 데이터가 포함되어 있는 경우 대체 조회 방법을 고려해 보십시오. 예를 들어, 비즈니스에서 가끔 참조하기 위해서만 데이터에 액세스해야 하는 경우 이전 데이터를 [!DNL Adobe Commerce] (으)로 마이그레이션하는 대신 상거래 플랫폼 외부에서 호스팅되는 이전 데이터베이스의 외부 검색을 구현하는 것이 좋습니다.
+프로젝트에 이전 주문 또는 고객 레코드와 같은 레거시 데이터가 포함되어 있는 경우 대체 조회 방법을 고려해 보십시오. 예를 들어, 비즈니스에서 가끔 참조하기 위해서만 데이터에 액세스해야 하는 경우 이전 데이터를 [!DNL Adobe Commerce]&#x200B;(으)로 마이그레이션하는 대신 상거래 플랫폼 외부에서 호스팅되는 이전 데이터베이스의 외부 검색을 구현하는 것이 좋습니다.
 
 이 경우 데이터베이스를 서버로 마이그레이션하여 데이터를 읽을 수 있는 웹 인터페이스를 제공하거나 MySQL Workbench 또는 이와 유사한 도구를 사용하여 교육해야 합니다. 새 데이터베이스에서 이 데이터를 제외하면 개발 팀이 데이터 마이그레이션 문제를 해결하는 대신 새 사이트에 집중할 수 있으므로 마이그레이션을 촉진합니다.
 
@@ -54,7 +54,7 @@ Adobe 이전 데이터를 마이그레이션해야 하거나 새 데이터를 [!
 
 개발자로서 [!DNL Adobe Commerce] 환경 외부의 도구(예: GraphQL mesh 및 Adobe App Builder)를 사용하는 것을 항상 고려해야 합니다. 이러한 도구를 사용하면 데이터에 대한 액세스 권한을 유지하는 데 도움이 되지만 핵심 상거래 애플리케이션이나 기본 데이터베이스 테이블에는 영향을 주지 않습니다. 이 접근 방식을 사용하면 API를 통해 데이터를 노출할 수 있습니다. 그런 다음 App Builder 구성에 데이터 소스를 추가합니다. GraphQL Mesh를 사용하면 이러한 데이터 소스를 결합하여 [기존 데이터](#legacy-data)에 언급된 대로 단일 응답을 생성할 수 있습니다.
 
-GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오. Adobe App Builder에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=ko){target="_blank"}를 참조하십시오.
+GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오. Adobe App Builder에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}를 참조하십시오.
 
 ## 코어 테이블 또는 서드파티 테이블 수정
 
@@ -67,15 +67,15 @@ GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://develo
 
 ## 외부 데이터베이스 테이블 수정에 대한 우수 사례
 
-Adobe 코어 데이터베이스 테이블 또는 서드파티 테이블에 열을 추가할 때는 다음 단계를 수행하는 것이 좋습니다.
+Adobe 코어 데이터베이스 테이블 또는 타사 테이블에 열을 추가할 때는 다음 단계를 수행하는 것이 좋습니다.
 
 1. 업데이트 중인 항목을 나타내는 이름으로 네임스페이스에 모듈을 만듭니다.
 
    예: `app/code/YourCompany/Customer`
 
-1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko){target="_blank"} 참조).
+1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"} 참조).
 
-1. `etc` 폴더에 `db_schema.xml` 파일을 만들고 적절하게 변경합니다.
+1. `db_schema.xml` 폴더에 `etc` 파일을 만들고 적절하게 변경합니다.
 
    해당하는 경우 `db_schema_whitelist.json` 파일을 생성합니다. 자세한 내용은 [선언 스키마](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}를 참조하십시오.
 

@@ -124,6 +124,6 @@ ht-degree: 1%
 
 <!-- link definitions -->
 
-[모듈]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko#scope-settings
+[모듈]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [테마]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

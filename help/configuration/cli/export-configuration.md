@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 `env.php`에 기록된 중요한 설정을 설정하려면 [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) 명령을 사용하십시오.
 
-구성 값은 모듈의 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) 파일에서 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php)을(를) 참조하여 중요하거나 시스템별로 지정됩니다.
+구성 값은 모듈의 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) 파일에서 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)을(를) 참조하여 중요하거나 시스템별로 지정됩니다.
 
 `config_types`을(를) 사용할 때 추가 시스템 설정을 내보내려면 [`bin/magento config:set`](set-configuration-values.md#set-values) 명령을 사용하는 것이 좋습니다.

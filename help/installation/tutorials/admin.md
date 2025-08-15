@@ -15,7 +15,7 @@ ht-degree: 0%
 이 명령을 사용하려면 먼저 다음을 수행해야 합니다.
 
 - [배포 구성 만들기](deployment.md)
-- [최소한 Magento 인증 및 Magento 사용자 모듈을 활성화하십시오.](manage-modules.md)
+- [최소 Magento_Authorization 및 Magento_User 모듈 활성화](manage-modules.md)
 - 데이터베이스 스키마 만들기
 
 >[!NOTE]
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-다음 예제는 `j.doe` 관리 사용자의 `first name`, `last name` 및 `password`을(를) 업데이트합니다.
+다음 예제는 `first name` 관리 사용자의 `last name`, `password` 및 `j.doe`을(를) 업데이트합니다.
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567

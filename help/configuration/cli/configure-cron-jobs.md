@@ -148,9 +148,9 @@ bin/magento cron:run --group default
 
 - `ERROR` 및 `MISSED` 상태의 실패한 작업이 `<install_directory>/var/log/support_report.log`에 기록됩니다.
 
-- `ERROR` 상태의 작업은 항상 `<install_directory>/var/log/exception.log`에 `CRITICAL`(으)로 기록됩니다.
+- `ERROR` 상태의 작업은 항상 `CRITICAL`에 `<install_directory>/var/log/exception.log`(으)로 기록됩니다.
 
-- 상태가 `MISSED`인 작업은 `<install_directory>/var/log/debug.log` 디렉터리에 `INFO`(개발자 모드만 해당)로 기록됩니다.
+- 상태가 `MISSED`인 작업은 `INFO` 디렉터리에 `<install_directory>/var/log/debug.log`(개발자 모드만 해당)로 기록됩니다.
 
 >[!INFO]
 >

@@ -1,5 +1,5 @@
 ---
-title: 소프트웨어 Recommendations
+title: 소프트웨어 권장 사항
 description: Adobe Commerce 배포의 최적 성능과 관련된 권장 소프트웨어 목록을 검토합니다.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -132,7 +132,7 @@ memory_limit=1G
 
 #### Realpath_cache 구성
 
-[!DNL Commerce] 성능을 향상시키려면 `php.ini` 파일에서 다음 권장 `realpath_cache` 설정을 추가하거나 업데이트하십시오. 이 구성을 사용하면 PHP 프로세스가 페이지를 로드할 때마다 경로를 조회하는 대신 파일에 경로를 캐시할 수 있습니다. PHP 설명서에서 [성능 조정](https://www.php.net/manual/en/ini.core.php)을 참조하십시오.
+[!DNL Commerce] 성능을 향상시키려면 `realpath_cache` 파일에서 다음 권장 `php.ini` 설정을 추가하거나 업데이트하십시오. 이 구성을 사용하면 PHP 프로세스가 페이지를 로드할 때마다 경로를 조회하는 대신 파일에 경로를 캐시할 수 있습니다. PHP 설명서에서 [성능 조정](https://www.php.net/manual/en/ini.core.php)을 참조하십시오.
 
 ```text
 realpath_cache_size=10M
@@ -203,14 +203,14 @@ Magento은 Nginx 및 Apache 웹 서버를 완전히 지원합니다. [!DNL Comme
 
 ## [!DNL Varnish]
 
-Magento은 [!DNL Varnish]을(를) 저장소의 전체 페이지 캐시 서버로 사용하는 것이 좋습니다. PageCache 모듈은 코드 베이스에 계속 있지만, 개발 목적으로만 사용해야 합니다. [!DNL Varnish]과(와) 함께 또는 대신 사용하면 안 됩니다.
+Magento에서는 저장소의 전체 페이지 캐시 서버로 [!DNL Varnish]을(를) 사용하는 것이 좋습니다. PageCache 모듈은 코드 베이스에 계속 있지만, 개발 목적으로만 사용해야 합니다. [!DNL Varnish]과(와) 함께 또는 대신 사용하면 안 됩니다.
 
 웹 계층 앞에 있는 별도의 서버에 [!DNL Varnish]을(를) 설치합니다. 모든 수신 요청을 수락하고 캐시된 페이지 복사본을 제공해야 합니다. [!DNL Varnish]이(가) 보안 페이지에서 효율적으로 작동하도록 하려면 SSL 종료 프록시를 [!DNL Varnish] 앞에 배치할 수 있습니다. Nginx를 이 용도로 사용할 수 있습니다.
 
-[!DNL Commerce]은(는) 성능에 대한 모든 권장 설정이 포함된 [!DNL Varnish] (버전 4 및 5)에 대한 샘플 구성 파일을 배포합니다. 성능 측면에서 가장 중요한 요소는 다음과 같습니다.
+[!DNL Commerce]은(는) 성능에 대한 모든 권장 설정이 포함된 [!DNL Varnish]&#x200B;(버전 4 및 5)에 대한 샘플 구성 파일을 배포합니다. 성능 측면에서 가장 중요한 요소는 다음과 같습니다.
 
 * **백엔드 상태 확인**&#x200B;은(는) [!DNL Commerce] 서버를 폴링하여 적시에 응답하는지 확인합니다.
-* **유예 모드**&#x200B;를 사용하면 [!DNL Commerce]이(가) 정상이 아니거나 새 콘텐츠를 아직 가져오지 않은 경우 [!DNL Varnish]에게 개체를 TTL(Time to Live) 기간 이상으로 캐시에 보관하고 이 오래된 콘텐츠를 제공하도록 지시할 수 있습니다.
+* **유예 모드**&#x200B;를 사용하면 [!DNL Varnish]이(가) 정상이 아니거나 새 콘텐츠를 아직 가져오지 않은 경우 [!DNL Commerce]에게 개체를 TTL(Time to Live) 기간 이상으로 캐시에 보관하고 이 오래된 콘텐츠를 제공하도록 지시할 수 있습니다.
 * **Saint 모드**&#x200B;에서 구성할 수 있는 시간 동안 비정상 [!DNL Commerce] 서버를 블랙리스트에 추가합니다. 따라서 [!DNL Varnish]을(를) 부하 분산 장치로 사용할 때는 비정상 백엔드가 트래픽을 처리할 수 없습니다.
 
 이러한 기능 구현에 대한 자세한 내용은 [고급 [!DNL Varnish] 구성](../configuration/cache/config-varnish-advanced.md)을 참조하세요.
@@ -221,9 +221,9 @@ Magento은 [!DNL Varnish]을(를) 저장소의 전체 페이지 캐시 서버로
 
 사이트에 대량의 로케일을 배포할 필요가 없고 서버가 대다수의 고객과 동일한 지역에 있는 경우 CDN을 사용하는 대신 자산을 [!DNL Varnish]에 저장하면 저렴한 비용으로 상당한 성능 향상을 얻을 수 있습니다.
 
-자산을 [!DNL Varnish]에 저장하려면 [!DNL Varnish] 5에 대해 [!DNL Commerce]에서 생성한 `default.vcl` 파일에 다음 VCL 항목을 추가하십시오.
+자산을 [!DNL Varnish]에 저장하려면 `default.vcl` 5에 대해 [!DNL Commerce]에서 생성한 [!DNL Varnish] 파일에 다음 VCL 항목을 추가하십시오.
 
-`vcl_recv` 하위 루틴의 PURGE 요청에 대한 `if` 문의 끝에 다음을 추가하십시오.
+`if` 하위 루틴의 PURGE 요청에 대한 `vcl_recv` 문의 끝에 다음을 추가하십시오.
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -235,7 +235,7 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-`vcl_backend_response` 서브루틴에서 `GET` 또는 `HEAD` 요청에 대한 쿠키를 설정 해제하는 `if` 문을 찾습니다.
+`vcl_backend_response` 서브루틴에서 `if` 또는 `GET` 요청에 대한 쿠키를 설정 해제하는 `HEAD` 문을 찾습니다.
 업데이트된 `if` 블록은 다음과 같이 표시되어야 합니다.
 
 ```javascript

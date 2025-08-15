@@ -1,5 +1,5 @@
 ---
-title: 하드웨어 Recommendations
+title: 하드웨어 권장 사항
 description: Adobe Commerce 배포의 최적 성능과 관련된 권장 하드웨어 목록을 검토하십시오.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPU
 
-[!DNL Commerce] 웹 노드는 응용 프로그램을 통해 캐시되지 않거나 캐시될 수 없는 모든 요청을 제공합니다. 하나의 CPU 코어가 2개(경우에 따라 최대 4개) 정도의 [!DNL Commerce] 요청을 효과적으로 처리할 수 있습니다. 다음 방정식을 사용하여 모든 들어오는 요청을 큐에 넣지 않고 처리하는 데 필요한 웹 노드/코어의 수를 결정합니다.
+[!DNL Commerce] 웹 노드는 응용 프로그램을 통해 캐시되지 않거나 캐시될 수 없는 모든 요청을 제공합니다. 하나의 CPU 코어는 2개(경우에 따라 최대 4개) 정도의 [!DNL Commerce] 요청을 효과적으로 처리할 수 있습니다. 다음 방정식을 사용하여 모든 들어오는 요청을 큐에 넣지 않고 처리하는 데 필요한 웹 노드/코어의 수를 결정합니다.
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -26,7 +26,7 @@ N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 
 ### PHP
 
-Magento은 시스템이 배포되는 방식에 따라 PHP 메모리 요구 사항이 다릅니다.  일반적으로 단일 서버 저장소를 설정하는 경우 2G용 PHP 메모리를 구성하는 것이 좋습니다.  파이프라인 배포를 사용하여 사이트를 설정하는 경우 빌드 서버에 2GB, 웹 노드에 1GB가 권장됩니다.
+Magento에는 시스템 배포 방법에 따라 PHP 메모리 요구 사항이 다릅니다.  일반적으로 단일 서버 저장소를 설정하는 경우 2G용 PHP 메모리를 구성하는 것이 좋습니다.  파이프라인 배포를 사용하여 사이트를 설정하는 경우 빌드 서버에 2GB, 웹 노드에 1GB가 권장됩니다.
 
 시나리오 및 예상 PHP 메모리 요구 사항:
 

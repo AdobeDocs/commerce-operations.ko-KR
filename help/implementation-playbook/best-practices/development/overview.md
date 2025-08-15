@@ -42,7 +42,7 @@ ht-degree: 2%
 
 | 모범 사례 | 설명 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [빌드 및 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=ko){target="_blank"} | 클라우드 인프라 프로젝트에서 Adobe Commerce의 빌드 및 배포 단계에 대한 모범 사례를 설명합니다 |
+| [빌드 및 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | 클라우드 인프라 프로젝트에서 Adobe Commerce의 빌드 및 배포 단계에 대한 모범 사례를 설명합니다 |
 | 디버깅 | Adobe Commerce 프레임워크를 체계적이고 효과적으로 디버그 |
 | [정적 콘텐츠 배포](static-content-deployment.md) | 스토어프론트에 정적 콘텐츠가 표시되지 않는 문제를 방지합니다. |
 | [문제 해결](troubleshooting.md) | 일반적인 Adobe Commerce 구현 문제 해결 |

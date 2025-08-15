@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 호환 가능한 Elasticsearch 포크입니다. 자세한 내용은 [OpenSearch로 Elasticsearch 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)을 참조하십시오.
+>2.4.4에 OpenSearch 지원이 추가되었습니다. OpenSearch는 Elasticsearch의 호환 가능한 포크입니다. 자세한 내용은 [OpenSearch로 Elasticsearch 마이그레이션](../../../upgrade/prepare/opensearch-migration.md)을 참조하십시오.
 
 이 섹션에서는 Adobe Commerce에서 이 서버에서 실행되는 검색 엔진을 사용할 수 있도록 Apache를 *비보안* 프록시로 구성하는 방법에 대해 설명합니다. 이 섹션에서는 HTTP 기본 인증 설정에 대해 설명하지 않습니다. 이는 [Apache와의 보안 통신](#secure-communication-with-apache)에서 설명합니다.
 
@@ -64,7 +64,7 @@ ht-degree: 0%
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   예를 들어, Elasticsearch을 사용하고 프록시가 포트 8080을 사용하는 경우:
+   예를 들어, Elasticsearch을 사용하고 있고 프록시가 포트 8080을 사용하는 경우:
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
@@ -140,7 +140,7 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 화면의 지침에 따라 사용자의 암호를 생성합니다.
 
-#### 예시
+#### 예
 
 **예 1: cron**
 cron에 대해 한 명의 사용자에 대해서만 인증을 설정해야 합니다. 이 예제에서는 웹 서버 사용자를 사용합니다. 웹 서버 사용자의 암호 파일을 만들려면 다음 명령을 입력합니다.
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Apache와의 보안 통신
 
-이 섹션에서는 [HTTP 기본 인증](https://httpd.apache.org/docs/2.2/howto/auth.html)을 설정하는 방법에 대해 설명합니다. TLS와 HTTP Basic 인증을 함께 사용하면 모든 사람이 Elasticsearch 또는 OpenSearch나 애플리케이션 서버와의 통신을 가로채지 못합니다.
+이 섹션에서는 [HTTP 기본 인증](https://httpd.apache.org/docs/2.2/howto/auth.html)을 설정하는 방법에 대해 설명합니다. TLS와 HTTP Basic 인증을 함께 사용하면 누구나 Elasticsearch, OpenSearch 또는 애플리케이션 서버와의 통신을 가로채지 못합니다.
 
 이 섹션에서는 Apache 서버에 액세스할 수 있는 사용자를 지정하는 방법에 대해 설명합니다.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 명령은 `composer.json` 파일에 선언된 종속성만 확인합니다. `composer.json` 파일에 정의된 _not_ 모듈을 제거하면 이 명령은 종속성을 확인하지 않고 모듈을 제거합니다. 이 명령은 _not_&#x200B;은(는) 하지만 파일 시스템에서 모듈 코드를 제거합니다. 모듈 코드를 제거하려면 파일 시스템 도구를 사용해야 합니다(예: `rm -rf <path to module>`). 또는 작성기가 아닌 모듈을 [비활성화](manage-modules.md)할 수 있습니다.
+>이 명령은 `composer.json` 파일에 선언된 종속성만 확인합니다. _파일에 정의된_ not`composer.json` 모듈을 제거하면 이 명령은 종속성을 확인하지 않고 모듈을 제거합니다. 이 명령은 _not_&#x200B;은(는) 하지만 파일 시스템에서 모듈 코드를 제거합니다. 모듈 코드를 제거하려면 파일 시스템 도구를 사용해야 합니다(예: `rm -rf <path to module>`). 또는 작성기가 아닌 모듈을 [비활성화](manage-modules.md)할 수 있습니다.
 
 명령 사용:
 
@@ -50,7 +50,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. `--remove-data`이(가) 지정된 경우 모듈의 `Uninstall` 클래스에 정의된 데이터베이스 스키마와 데이터를 제거하십시오.
 
-   제거할 각 모듈에 대해 `Uninstall` 클래스에서 `uninstall` 메서드를 호출합니다. 이 클래스는 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)에서 상속해야 합니다.
+   제거할 각 모듈에 대해 `uninstall` 클래스에서 `Uninstall` 메서드를 호출합니다. 이 클래스는 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)에서 상속해야 합니다.
 
 1. `setup_module` 데이터베이스 테이블에서 지정된 모듈을 제거합니다.
 1. [배포 구성](../../configuration/reference/deployment-files.md)의 모듈 목록에서 지정된 모듈을 제거합니다.

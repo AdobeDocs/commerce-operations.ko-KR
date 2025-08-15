@@ -127,7 +127,7 @@ ht-degree: 0%
 | 루카시 바이사로비치 | [#26125](https://github.com/magento/magento2/pull/26125) | 해당 사항 없음 |
 | 그제고츠 보구시 | [#26033](https://github.com/magento/magento2/pull/26033) | [25974](https://github.com/magento/magento2/issues/25974) |
 | 파벨 비스트리츠키 | [#25915](https://github.com/magento/magento2/pull/25915) | 해당 사항 없음 |
-| Andreas 마우츠 | [#25838](https://github.com/magento/magento2/pull/25838) | [25674](https://github.com/magento/magento2/issues/25674) |
+| 안드레아스 마우츠 | [#25838](https://github.com/magento/magento2/pull/25838) | [25674](https://github.com/magento/magento2/issues/25674) |
 | 마크 로드리게스 | [#25315](https://github.com/magento/magento2/pull/25315) | [13136](https://github.com/magento/magento2/issues/13136) |
 | 루카시 바이사로비치 | [#25957](https://github.com/magento/magento2/pull/25957) | [22047](https://github.com/magento/magento2/issues/22047) |
 | 데이비드 램바우어 | [#24103](https://github.com/magento/magento2/pull/24103) | 해당 사항 없음 |
@@ -266,7 +266,7 @@ ht-degree: 0%
 | 지물드 | [#25742](https://github.com/magento/magento2/pull/25742) | 해당 사항 없음 |
 | 라울 베르두고 로렌초 | [#25324](https://github.com/magento/magento2/pull/25324) | [13865](https://github.com/magento/magento2/issues/13865) |
 | 조지 바바루스 | [#24648](https://github.com/magento/magento2/pull/24648) | 해당 사항 없음 |
-| Andreas 폰 슈투드니츠 | [#24485](https://github.com/magento/magento2/pull/24485) | 해당 사항 없음 |
+| 안드레아스 폰 슈투드니츠 | [#24485](https://github.com/magento/magento2/pull/24485) | 해당 사항 없음 |
 | 크리스 푹 | [#26378](https://github.com/magento/magento2/pull/26378) | [26375](https://github.com/magento/magento2/issues/26375) |
 | 파벨 틸렉 | [#25641](https://github.com/magento/magento2/pull/25641) | [25032](https://github.com/magento/magento2/issues/25032) |
 | 안드레이 니콜라예프 | [#25285](https://github.com/magento/magento2/pull/25285) | 해당 사항 없음 |

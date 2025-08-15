@@ -70,7 +70,7 @@ Adobe Commerce은 서버 재작성 및 `.htaccess`을(를) 사용하여 Apache�
 
    >[!NOTE]
    >
-   >- 이전 Apache 버전에서 업그레이드한 경우 먼저 `000-default.conf`에서 `<Directory "/var/www/html">` 또는 `<Directory "/var/www">`을(를) 찾습니다.
+   >- 이전 Apache 버전에서 업그레이드한 경우 먼저 `<Directory "/var/www/html">`에서 `<Directory "/var/www">` 또는 `000-default.conf`을(를) 찾습니다.
    >- Adobe Commerce 소프트웨어를 설치할 디렉터리에 대한 지시문에서 `AllowOverride` 값을 변경해야 합니다. 예를 들어 웹 서버 docroot에 설치하려면 `<Directory /var/www>`에서 지시문을 편집하십시오.
 
 >[!NOTE]

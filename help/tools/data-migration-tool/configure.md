@@ -28,7 +28,7 @@ ht-degree: 0%
 [!DNL Data Migration Tool]을(를) 구성하는 방법에는 두 가지가 있습니다.
 
 * 별도의 모듈에서 [!DNL Data Migration Tool] 구성(권장)
-* `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` 디렉터리에서 [!DNL Data Migration Tool] 구성을 변경합니다.
+* [!DNL Data Migration Tool] 디렉터리에서 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` 구성을 변경합니다.
 
 소스 제어를 사용하여 마이그레이션 구성을 관리하고 배포에 사용하려면 별도의 모듈을 만들어야 합니다.
 로컬에서만 [!DNL Data Migration Tool]을(를) 실행할 계획이라면 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/` 디렉터리에서 직접 파일을 편집할 수 있습니다.
@@ -92,7 +92,7 @@ ht-degree: 0%
    </config>
    ```
 
-1. `config.xml.dist` 구성 파일을 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` 파일로 복사합니다.
+1. `config.xml.dist` 구성 파일을 [!DNL Data Migration Tool]&#x200B;(`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` 파일로 복사합니다.
 
    예를 들어 `Magento 1.9.3.6 Community Edition`을(를) `Magento 2 Open Source`(으)로 마이그레이션하는 경우:
 
@@ -152,7 +152,7 @@ ht-degree: 0%
    * 데이터베이스 사용자 지정 포트: `port=<port>`
    * 테이블 접두사: `<source_prefix>`, `<dest_prefix>`
 
-   예를 들어 데이터베이스 소유자의 사용자 이름이 `root`이고 암호가 `pass`이고 Magento 1 데이터베이스에서 접두사 `magento1`을(를) 사용하는 경우 `config.xml`에서 다음을 사용하십시오.
+   예를 들어 데이터베이스 소유자의 사용자 이름이 암호가 `root`인 `pass`이고 Magento 1 데이터베이스에서 접두사 `magento1`을(를) 사용하는 경우 `config.xml`에서 다음을 사용하십시오.
 
    ```xml
    <source>
@@ -198,7 +198,7 @@ For example:
 
 * 테이블 또는 필드 무시
 
-* 필드의 데이터 전송을 Magento 2 형식으로 조정
+* 필드의 데이터를 Magento 2 형식으로 전송하도록 조정
 
 지원되는 Magento 버전에 대한 매핑 파일이 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`의 하위 디렉터리에 있습니다.
 
@@ -206,7 +206,7 @@ For example:
 
 1. `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/`에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/`(으)로 복사하고 `.dist` 확장을 제거합니다.
 
-1. `config.xml`의 `<options>` 노드에서 새로 복사된 파일의 경로를 업데이트합니다. 업데이트된 경로는 다음 중 하나여야 합니다.
+1. `<options>`의 `config.xml` 노드에서 새로 복사된 파일의 경로를 업데이트합니다. 업데이트된 경로는 다음 중 하나여야 합니다.
 
    1. 절대 파일 경로(예: `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`)
    1. magento/data-migration-tool 모듈 상대 파일 경로: `etc/opensource-to-opensource/1.9.4.1/map.xml`

@@ -4,7 +4,7 @@ description: 다음 단계에 따라 Adobe Commerce 프로젝트에서  [!DNL Up
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 - *현재 버전*: 현재 설치된 버전입니다.
 - *대상 버전*: 업그레이드할 버전입니다.
-- *실행 시간*: 분석이 보고서를 작성하는 데 걸린 시간(mm:ss).
+- *실행 시간*: 분석이 보고서를 작성하는 데 걸린 시간(mm:ss)입니다.
 - *업데이트가 필요한 모듈*: 호환성 문제가 있고 업데이트가 필요한 모듈의 비율입니다.
 - *업데이트가 필요한 파일*: 호환성 문제가 있고 업데이트가 필요한 파일의 비율입니다.
 - *총 중대 오류*: 발견된 중대 오류 수입니다.
@@ -113,7 +113,7 @@ HTML 보고서에는 네 개의 다른 차트가 포함됩니다.
 
 ![HTML 보고서 - 다이어그램](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-HTML 보고서 다이어그램도 이에 따라 업데이트됩니다. `Modules with relative sizes and issues`은(는) 원래 설정된 `min-issue-level`과(와) 함께 생성됩니다.
+HTML 보고서 다이어그램도 이에 따라 업데이트됩니다. `Modules with relative sizes and issues`은(는) 원래 설정된 `min-issue-level`을(를) 사용하여 생성된 예외입니다.
 
 `Modules with relative sizes and issues` 다이어그램에 대해 다른 결과를 보려면 `--min-issue-level` 옵션에 대해 다른 값을 제공하는 명령을 다시 실행해야 합니다.
 

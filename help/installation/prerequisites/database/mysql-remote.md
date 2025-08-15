@@ -13,7 +13,7 @@ ht-degree: 0%
 
 데이터베이스 서버와 웹 서버를 동일한 컴퓨터에서 실행하는 대신 별도의 서버에서 데이터베이스를 호스팅할 수도 있습니다.
 
-Adobe이 다른 컴퓨터의 MySQL 서버에 연결하는 방법을 제공했습니다. Adobe Commerce 2.4.3부터는 코드 변경 없이 Amazon Web Services(AWS) Aurora 데이터베이스를 사용하도록 애플리케이션을 구성할 수도 있습니다.
+Adobe은 다른 컴퓨터의 MySQL 서버에 연결하는 방법을 제공했습니다. Adobe Commerce 2.4.3부터는 코드 변경 없이 Amazon Web Services(AWS) Aurora 데이터베이스를 사용하도록 애플리케이션을 구성할 수도 있습니다.
 
 Aurora는 AWS에서 호스팅되는 고성능 완전 준수 MySQL 서버입니다.
 
@@ -35,7 +35,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 >
 >숙련된 네트워크 관리자나 데이터베이스 관리자만 사용해야 하는 고급 항목입니다. 파일 시스템에 대한 `root` 액세스 권한이 있어야 하며 MySQL에 `root`(으)로 로그인할 수 있어야 합니다.
 
-### 전제 조건
+### 사전 요구 사항
 
 시작하기 전에 다음을 수행해야 합니다.
 
@@ -48,7 +48,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 웹 서버 또는 데이터베이스 서버가 클러스터된 경우 원격 데이터베이스 연결을 구성하려면 다음 지침을 사용하십시오.
 
 * 각 웹 서버 노드에 대한 연결을 구성해야 합니다.
-* 일반적으로 데이터베이스 로드 밸런서에 대한 데이터베이스 연결을 구성합니다. 그러나 데이터베이스 클러스터링은 복잡할 수 있으며 구성하는 것은 사용자가 결정합니다. Adobe은 데이터베이스 클러스터링에 대한 특정 권장 사항을 제공하지 않습니다.
+* 일반적으로 데이터베이스 로드 밸런서에 대한 데이터베이스 연결을 구성합니다. 그러나 데이터베이스 클러스터링은 복잡할 수 있으며 구성하는 것은 사용자가 결정합니다. Adobe에서는 데이터베이스 클러스터링에 대한 특정 권장 사항을 제공하지 않습니다.
 
   자세한 내용은 [MySQL 설명서](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)를 참조하세요.
 

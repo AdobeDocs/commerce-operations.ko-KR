@@ -1,6 +1,6 @@
 ---
 title: 정적 콘텐츠 캐시
-description: 정적 컨텐츠 서명과 이 기능을 활성화 또는 비활성화하는 방법을 이해합니다.
+description: 정적 콘텐츠 서명 및 기능을 활성화하거나 비활성화하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
@@ -33,11 +33,11 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) 명령을 실행하여 정적 콘텐츠를 배포하면 Commerce에서 배포 버전을 자동으로 변경합니다.
 이렇게 하면 정적 파일의 URL이 변경되고 브라우저가 파일의 새 버전을 로드하게 됩니다.
 
-Commerce는 기본적으로 이 기능을 활성화하며, Adobe Systems 는 이전 정적 리소스를 제공하는 브라우저와 관련된 문제를 방지하기 위해 이 기능을 활성화된 상태로 유지할 것을 권장합니다.
+Commerce에서는 기본적으로 이 기능을 활성화하며, Adobe에서는 이전 정적 리소스를 제공하는 브라우저와 관련된 문제를 방지하기 위해 이 기능을 활성화한 상태로 유지하는 것이 좋습니다.
 
-정적 콘텐츠 서명에 대한 구성은 [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)에 있습니다.
+정적 콘텐츠 서명에 대한 구성은 [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)에 있습니다.
 
-- **온-프레미스 전용**: 사이트가 [프로덕션 모드](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ko#production-mode)에서 **not**&#x200B;인 경우 이 구성을 사용할 수 있습니다.
+- **온-프레미스 전용**: 사이트가 **프로덕션 모드**&#x200B;에서 [not](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode)인 경우 이 구성을 사용할 수 있습니다.
 - **Cloud**: 이 구성은 프로덕션 모드가 엄격히 적용되기 때문에 숨겨져 있습니다. 따라서 아래 표시된 대로 명령줄을 사용해야 합니다.
 
 ![정적 파일 설정](../../assets/configuration/static-files-settings.png)
@@ -59,7 +59,7 @@ bin/magento config:set dev/static/sign <value>
 ## 버전 서명
 
 Commerce은 정적 보기 파일의 기본 URL 바로 뒤에 버전 서명을 경로 구성 요소로 추가하여 정적 리소스에 있는 상대 URL의 무결성을 유지합니다.
-이렇게 하면 브라우저 브라우저가 서명 값의 유무에 관계없이 컨텐츠를 유지하면서 올바른 서명된 소스에 대한 상대 URL을 확인하게 됩니다.
+또한 브라우저는 서명 값의 유무에 관계없이 콘텐츠를 유지하면서 올바른 서명 소스에 대한 상대 URL을 확인하게 됩니다.
 
 브라우저가 서버에서 서명된 소스를 요청하면 서버는 URL 재작성을 사용하여 URL에서 서명 구성 요소를 제거합니다.
 
