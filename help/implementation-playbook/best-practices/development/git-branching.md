@@ -40,7 +40,7 @@ Source 코드는 개발 프로세스 동안 여러 안정성 단계를 거칩니
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에는 서로 다른 환경에 해당하는 특정 분기가 포함되어 있습니다. [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)에서 [Pro 프로젝트 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) 및 _Starter 프로젝트 워크플로_&#x200B;를 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에는 서로 다른 환경에 해당하는 특정 분기가 포함되어 있습니다. [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ko)에서 [Pro 프로젝트 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=ko) 및 _Starter 프로젝트 워크플로_&#x200B;를 참조하십시오.
 
 ## 분기 전략
 

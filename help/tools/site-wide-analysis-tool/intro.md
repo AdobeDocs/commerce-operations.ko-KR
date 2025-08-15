@@ -31,17 +31,17 @@ ht-degree: 0%
    - 감지된 문제에 대한 알림 및 우선 순위별 특정 권장 사항과 함께 시스템의 전체 상태를 표시합니다.<br>
 또한 웹 사이트의 상태가 시간에 따라 어떻게 변하는지를 추적하는 기록 차트가 포함되어 있습니다.
    - 다음에 액세스할 수 있는 **[!UICONTROL Security Center Widget]**&#x200B;을(를) 표시합니다.
-      - [기술 [!DNL Stack] 버전 준수  [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
-      - [Adobe 보안 게시판](https://helpx.adobe.com/security/security-bulletin.html)
-      - [추천 항목 [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
-      - [[!DNL Site-Wide Analysis Tool] 모범 사례 보안 권장 사항](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
+      - [기술 [!DNL Stack] 버전 준수  [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko)
+      - [Adobe 보안 게시판](https://helpx.adobe.com/kr/security/security-bulletin.html)
+      - [추천 항목 [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ko)
+      - [[!DNL Site-Wide Analysis Tool] 모범 사례 보안 권장 사항](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html?lang=ko)
 
 - **정보** - 설치된 각 Adobe Commerce 제품에 대한 자세한 정보를 포함하여 고객 연락처 정보와 현재 티켓의 요약을 제공합니다.
 
 - **권장 사항** - 사이트에서 감지된 문제를 해결하기 위한 모범 사례를 기반으로 권장 사항을 나열합니다.
    - 인프라 업데이트가 필요한 변경 사항에 대해서는 지원 요청을 제출합니다.
    - 응용 프로그램을 업데이트해야 하는 변경 사항의 경우 직접 변경합니다.
-   - [코드 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow)와 같이 수동 개입이 필요한 변경 사항에 대해서는 시스템 관리자 또는 개발자에게 도움을 요청하십시오.
+   - [코드 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ko#deployment-workflow)와 같이 수동 개입이 필요한 변경 사항에 대해서는 시스템 관리자 또는 개발자에게 도움을 요청하십시오.
 
 - **예외** - 오류 처리기 없이 비정상 조건으로 인해 응용 프로그램에서 발생하는 오류를 나열합니다.
 
@@ -54,8 +54,8 @@ ht-degree: 0%
 사이트에 대한 모든 중요한 통찰력을 한 곳에서 볼 수 있습니다. [!DNL Site-Wide Analysis Tool]을(를) 사용하면 [!UICONTROL Security Center Widget], [!DNL Upgrade Compatability Tool] 및 [!DNL Managed Alerts]에서 및 정보에 직접 액세스할 수 있습니다.
 
 - [**[!UICONTROL Security Center Widget]**] - 사이트에 대한 보안 인사이트를 표시합니다.<br>
-표시되는 보안 정보에는 [기술 [!DNL Stack] 보안 권장 사항 모범 사례 [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] 를 준수하는 버전](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)이 포함됩니다.<br>
-[[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)은(는) 맬웨어를 사전에 감지하고 스토어가 손상된 경우 알림으로써 Adobe Commerce 및 Magento Open-Source 고객에게 스토어의 보안 상태에 대한 실시간 통찰력을 제공합니다.
+표시되는 보안 정보에는 [기술 [!DNL Stack] 보안 권장 사항 모범 사례 [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko), [Adobe Security Bulletin](https://helpx.adobe.com/kr/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ko), and [[!DNL Site-Wide Analysis Tool] 를 준수하는 버전](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html?lang=ko)이 포함됩니다.<br>
+[[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=ko)은(는) 맬웨어를 사전에 감지하고 스토어가 손상된 경우 알림으로써 Adobe Commerce 및 Magento Open-Source 고객에게 스토어의 보안 상태에 대한 실시간 통찰력을 제공합니다.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - 대상 업그레이드 버전에 대해 Adobe Commerce의 사용자 지정 인스턴스를 실행하고 해결해야 하는 중요한 문제, 오류 및 경고에 대한 요약을 반환하여 업그레이드 분석 프로세스를 보다 쉽고 빠르고 저렴하게 만듭니다.
 

@@ -20,17 +20,17 @@ ht-degree: 4%
         <p>제품 전략, 보안, 버그 수정 및 알려진 문제 등 Adobe Commerce의 최신 개발 사항에 대해 알아봅니다.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe 블로그</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe 도움말 센터</a></li>
-            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe 보안 공지</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ko">Adobe 도움말 센터</a></li>
+            <li><a href="https://helpx.adobe.com/kr/security/security-bulletin.html">Adobe 보안 공지</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">개발자 블로그</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">릴리스 정보</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=ko">릴리스 정보</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">솔루션 파트너 포털</a></li>
           </ul>
         </td>
       <td><strong>도구</strong>
         <p>Adobe Commerce 소프트웨어를 더 쉽게 찾고 사용할 수 있도록 설계된 도구를 찾아봅니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">호환성 도구 PhpStorm 플러그인 업그레이드</a>(비디오)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=ko">호환성 도구 PhpStorm 플러그인 업그레이드</a>(비디오)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">업그레이드 호환성 도구</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack 채널</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">품질 패치 도구</a></li>
@@ -41,9 +41,9 @@ ht-degree: 4%
       <td><strong>일정 및 정책</strong>
         <p>Adobe Commerce 릴리스 및 정책에 대한 세부 사항을 검토합니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce 소프트웨어 지원 종료 FAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html?lang=ko">Adobe Commerce 소프트웨어 지원 종료 FAQ</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">Commerce Marketplace 정책</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">새로운 Adobe Commerce 릴리스 전략, 업데이트된 라이프사이클 정책 및 확장 지원에 대한 FAQ</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html?lang=ko">새로운 Adobe Commerce 릴리스 전략, 업데이트된 라이프사이클 정책 및 확장 지원에 대한 FAQ</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">라이프사이클 정책</a></li>
             <li><a href="../../release/schedule.md">릴리스 일정</a></li>
             <li><a href="../../release/versioning-policy.md">릴리스 유형</a></li>
@@ -64,8 +64,8 @@ ht-degree: 4%
         <p>상점의 보안을 유지하고 효율적으로 운영하십시오. Adobe의 광범위한 기술 설명서를 검토하여 Adobe Commerce 업그레이드를 준비합니다.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">권장 업그레이드 경로</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 기술 업그레이드 워크숍 녹화</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">사전 릴리스 액세스</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=ko">2.4 기술 업그레이드 워크숍 녹화</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html?lang=ko">사전 릴리스 액세스</a></li>
             <li><a href="../../release/beta.md">Beta 릴리스 개요</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">이전 버전과 호환 불가능한 개발</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">이전 버전과 호환 불가능한 변경 사항</a></li>

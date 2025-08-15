@@ -15,7 +15,7 @@ ht-degree: 0%
 
 이제 [!DNL Upgrade Compatibility Tool]이(가) [!DNL Site-Wide Analysis Tool]과(와) 통합되어 기술 전문가가 아닌 사용자도 [!DNL Upgrade Compatibility Tool]을(를) 실행하고 각 파일에 대한 문제 목록이 포함된 [보고서](../upgrade-compatibility-tool/reports.md)를 가져올 수 있습니다.
 
-자세한 내용은 [[!DNL Site-Wide Analysis Tool] 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)를 참조하세요.
+자세한 내용은 [[!DNL Site-Wide Analysis Tool] 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access)를 참조하세요.
 
 ## [!DNL Upgrade Compatibility Tool]에서 [!DNL Site-Wide Analysis Tool] 실행
 

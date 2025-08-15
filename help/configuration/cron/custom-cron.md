@@ -21,5 +21,5 @@ Commerce 애플리케이션은 다음과 같은 cron 그룹을 제공합니다.
 - `index`: [인덱서](../cli/manage-indexers.md)를 새로 고칩니다.
 - `consumers`, 메시지 큐 [소비자](../cli/start-message-queues.md)를 실행하는 경우
 - 이 주제들은 Adobe Commerce에서만 사용할 수 있습니다
-   - `staging`, [스테이징 관련](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) 작업 실행
+   - `staging`, [스테이징 관련](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/staging/content-staging) 작업 실행
    - `catalog_event`, 대상 및 장바구니 규칙에 대한 작업을 실행하는 경우

@@ -29,7 +29,7 @@ Adobe Commerce on cloud infrastructure Pro 계획 아키텍처
 **실행!**
 
 * 이 경고가 지워질 때까지 예약된 배포를 중단합니다.
-* 사이트가 응답하지 않거나 완전히 응답하지 않는 경우 즉시 사이트를 유지 관리 모드로 전환합니다. 단계는 Commerce 설치 가이드의 [유지 관리 모드 활성화 또는 비활성화](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)를 참조하십시오. 문제 해결을 위해 사이트에 계속 액세스할 수 있도록 제외 IP 주소 목록에 IP를 추가해야 합니다. 단계는 [제외 IP 주소 목록 유지](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)를 참조하세요.
+* 사이트가 응답하지 않거나 완전히 응답하지 않는 경우 즉시 사이트를 유지 관리 모드로 전환합니다. 단계는 Commerce 설치 가이드의 [유지 관리 모드 활성화 또는 비활성화](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)를 참조하십시오. 문제 해결을 위해 사이트에 계속 액세스할 수 있도록 제외 IP 주소 목록에 IP를 추가해야 합니다. 단계는 [제외 IP 주소 목록 유지](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)를 참조하세요.
 * 사이트 성능에 영향을 주는 경우 경고의 원인이 될 수 있는 가져오기 등의 스크립트를 종료합니다.
 
 **안 함!**
@@ -44,7 +44,7 @@ Adobe Commerce on cloud infrastructure Pro 계획 아키텍처
 
 DML 질의 위기 경보를 수신할 경우 1단계에서 시작합니다. DML 질의 경고 경보를 수신할 경우 2단계에서 시작합니다.
 
-1. Adobe Commerce 지원 티켓이 있는지 확인합니다. 단계는 기술 자료 [지원 티켓을 추적](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)을 참조하세요. 지원이 [!DNL New Relic] 임계값 경고를 받고 티켓을 만들었으며 문제 해결을 시작했을 수 있습니다. 티켓이 없으면 만듭니다. 티켓에는 다음 정보가 있어야 합니다.
+1. Adobe Commerce 지원 티켓이 있는지 확인합니다. 단계는 기술 자료 [지원 티켓을 추적](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)을 참조하세요. 지원이 [!DNL New Relic] 임계값 경고를 받고 티켓을 만들었으며 문제 해결을 시작했을 수 있습니다. 티켓이 없으면 만듭니다. 티켓에는 다음 정보가 있어야 합니다.
    * 연락처 이유: **[!UICONTROL New Relic MariaDB alert received]**&#x200B;을(를) 선택하십시오.
    * 경고에 대한 설명.
    * [[!DNL New Relic] 문제 링크](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). [Adobe Commerce에 대한 관리 경고](managed-alerts-for-magento-commerce.md)에 포함되어 있습니다.
@@ -56,4 +56,4 @@ DML 질의 위기 경보를 수신할 경우 1단계에서 시작합니다. DML 
    1. 코드 최적화 또는 운영 최적화를 찾습니다.
       * 코드 최적화: 대량 삽입/업데이트, 색인 사용 최소화 또는 코드 조절 기능을 사용하여 쿼리를 최적화합니다.
       * 운영 최적화: 리소스 집약적인 데이터 수정을 오프로드하여 트래픽 시간을 단축합니다.
-      * 추가 최적화: 최신 버전의 ECE-Tools를 사용하고 있는지 확인하십시오. 단계는 Commerce on Cloud 안내서의 [ece-tools 버전 업데이트](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.
+      * 추가 최적화: 최신 버전의 ECE-Tools를 사용하고 있는지 확인하십시오. 단계는 Commerce on Cloud 안내서의 [ece-tools 버전 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.

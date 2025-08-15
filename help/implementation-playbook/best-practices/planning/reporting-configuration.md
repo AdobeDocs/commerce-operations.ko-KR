@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 보고서 구성에 대한 우수 사례
 
-비즈니스에 보고 또는 동적 고객 세그먼트 기능이 필요하지 않은 경우 [보고서 기능](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports)을 비활성화하여 스토어 성능을 개선하십시오.
+비즈니스에 보고 또는 동적 고객 세그먼트 기능이 필요하지 않은 경우 [보고서 기능](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/general/reports)을 비활성화하여 스토어 성능을 개선하십시오.
 
 ## 영향을 받는 제품 및 버전
 
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 추가 정보
 
-- [Adobe Commerce에서 보고서 생성](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
-- [고객 동적 세그먼트](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)
+- [Adobe Commerce에서 보고서 생성](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/reporting/reports-menu)
+- [고객 동적 세그먼트](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/segments/customer-segments)

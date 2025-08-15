@@ -51,7 +51,7 @@ Adobe Commerce은 구성 요소를 쉽게 사용자 정의하고 구성 유형�
 예:
 
 - 구성 요소 제거: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - 구성 요소 [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)을(를) 활성화하거나 비활성화합니다.
 
 > _config.php_

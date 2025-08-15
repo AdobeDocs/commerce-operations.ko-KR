@@ -63,7 +63,7 @@ ht-degree: 0%
 
 사건 분석의 첫 단계는 최대한 많은 사실을 가능한 한 빨리 수집하는 것이다. 인시던트에 대한 정보를 수집하면 인시던트의 잠재적 원인을 파악하는 데 도움이 될 수 있습니다. Adobe Commerce은 사고 분석을 지원하는 아래 도구를 제공합니다.
 
-- [관리 작업 로그 감사](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [관리 작업 로그 감사](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=ko).
 
   작업 로그 보고서에는 로깅이 활성화된 모든 관리자 작업에 대한 자세한 레코드가 표시됩니다. 각 레코드는 타임스탬프를 지정하고 사용자의 IP 주소와 이름을 등록합니다. 로그 세부 사항에는 작업 중에 수행된 관리 사용자 데이터 및 관련 변경 사항이 포함됩니다.
 
@@ -73,9 +73,9 @@ ht-degree: 0%
 
   도구의 **보안** 탭을 사용하여 잠재적인 보안 문제를 명확하게 확인하여 근본 원인을 파악하고 사이트의 성능을 최적으로 유지할 수 있습니다.
 
-- [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)로 로그 분석
+- [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ko)로 로그 분석
 
-  cloud infrastructure Pro 프로젝트의 Adobe Commerce에는 [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) 서비스가 포함됩니다. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 집계된 데이터를 검색하고 시각화할 수 있는 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
+  cloud infrastructure Pro 프로젝트의 Adobe Commerce에는 [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=ko) 서비스가 포함됩니다. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 집계된 데이터를 검색하고 시각화할 수 있는 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
 
   다른 Commerce 프로젝트의 경우 [New Relic 로그](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) 서비스를 설정하고 사용하여 다음 작업을 완료할 수 있습니다.
    - 집계된 로그 데이터를 검색하려면 [New Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)를 사용하십시오.
@@ -89,17 +89,17 @@ Commerce 관리 및 사용자 계정, 애플리케이션 코드, 데이터베이
 
 ### 관리자 계정 감사
 
-- [관리자 사용자 액세스 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 관리자 사용자의 암호를 회전합니다.
+- [관리자 사용자 액세스 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ko)—오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 관리자 사용자의 암호를 회전합니다.
 
-- [관리자 보안 설정 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—관리자 보안 설정이 보안 모범 사례를 따르는지 확인하십시오.
+- [관리자 보안 설정 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ko)—관리자 보안 설정이 보안 모범 사례를 따르는지 확인하십시오.
 
-- [클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 사용자 계정 검토](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 클라우드 프로젝트 관리자 사용자의 암호를 회전합니다. 계정 보안 설정이 올바르게 구성되었는지 확인하십시오.
+- [클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 사용자 계정 검토](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ko) - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 클라우드 프로젝트 관리자 사용자의 암호를 회전합니다. 계정 보안 설정이 올바르게 구성되었는지 확인하십시오.
 
-- 클라우드 인프라의 Adobe Commerce에 대한 [SSH 키 감사](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) - SSH 키를 검토, 삭제 및 회전합니다.
+- 클라우드 인프라의 Adobe Commerce에 대한 [SSH 키 감사](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ko) - SSH 키를 검토, 삭제 및 회전합니다.
 
 ### 감사 코드
 
-- 관리자의 [ 및 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html)을(를) 포함한 모든 범위 수준에서 `website`HTML 머리글 및 바닥글 구성`store view`을 검토하십시오. 스크립트, 스타일 시트 및 기타 HTML 설정에서 알 수 없는 JavaScript 코드를 제거합니다. 코드 조각 추적과 같이 인식된 코드만 유지합니다.
+- 관리자의 [ 및 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ko)을(를) 포함한 모든 범위 수준에서 `website`HTML 머리글 및 바닥글 구성`store view`을 검토하십시오. 스크립트, 스타일 시트 및 기타 HTML 설정에서 알 수 없는 JavaScript 코드를 제거합니다. 코드 조각 추적과 같이 인식된 코드만 유지합니다.
 
 - 현재 프로덕션 코드 베이스를 버전 제어 시스템(VCS)에 저장된 코드 베이스와 비교합니다.
 

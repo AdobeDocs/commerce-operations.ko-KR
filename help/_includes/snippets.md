@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 

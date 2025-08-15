@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >최신 버전의 Adobe Commerce은 PHP 8.1 이상이 필요합니다. 지원되는 모든 PHP 버전에 대해서는 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
 
-클라우드 구성 지침은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 안내서에서 _PHP 설정_&#x200B;을 참조하십시오.
+클라우드 구성 지침은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ko) 안내서에서 _PHP 설정_&#x200B;을 참조하십시오.
 
 ## PHP 프로세스 제어
 

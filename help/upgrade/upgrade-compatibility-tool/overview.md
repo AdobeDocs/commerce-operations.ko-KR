@@ -54,6 +54,6 @@ ht-degree: 0%
 Adobe Commerce 업그레이드를 이해하는 데 도움이 되는 다음 리소스를 참조하십시오.
 
 - [업그레이드 안내서](../overview.md)에서는 일반적인 Adobe Commerce 업그레이드 여정과 해당 여정에 따른 모범 사례에 대한 개요를 제공합니다.
-- [예정된 릴리스](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) 페이지에서는 예정된 릴리스 및 예정된 릴리스의 날짜를 제공합니다.
+- [예정된 릴리스](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule) 페이지에서는 예정된 릴리스 및 예정된 릴리스의 날짜를 제공합니다.
 - [커뮤니티 리소스](https://developer.adobe.com/commerce/contributor/community/) 페이지에서 토론을 시작하거나 추가 정보를 찾을 수 있습니다.
 - 일반적인 업그레이드 여정에서 유용한 도구를 보려면 [관련 도구](../upgrade-compatibility-tool/related-tools.md) 페이지를 확인하십시오.

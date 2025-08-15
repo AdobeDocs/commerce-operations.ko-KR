@@ -19,7 +19,7 @@ ht-degree: 0%
 
   호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 
-  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)의 _여러 웹 사이트 또는 스토어 설정_&#x200B;을 참조하십시오.
+  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ko)의 _여러 웹 사이트 또는 스토어 설정_&#x200B;을 참조하십시오.
 
 - 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`입니다.
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
->- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)의 _여러 클라우드 웹 사이트 또는 스토어 설정_&#x200B;을 참조하십시오.
+>- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ko)의 _여러 클라우드 웹 사이트 또는 스토어 설정_&#x200B;을 참조하십시오.
 
 ### 문제 해결
 

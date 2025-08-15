@@ -92,4 +92,4 @@ Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보�
 
 ## 사용자 정의 패치
 
-문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.
+문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.

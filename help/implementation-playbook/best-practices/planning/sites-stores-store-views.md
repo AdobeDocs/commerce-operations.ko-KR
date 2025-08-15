@@ -41,5 +41,5 @@ ht-degree: 0%
 
 ## 추가 정보
 
-- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

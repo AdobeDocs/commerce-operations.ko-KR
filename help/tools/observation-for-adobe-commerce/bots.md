@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]** 프레임은 12개의 복잡한 별도의 쿼리를 실행합니다. 악의적인 IP 요청 서명을 감지한 다음, 결과를 집계하여 내림차순으로 집계하여 정렬합니다. 쿼리에는 CVE 악용 및 기타 악의적인 요청의 많은 데이터 서명이 포함되어 있습니다. 보안 수정/패치에 의해 악용이 차단되고 사이트에 위협이 되지 않는 경우에도, 요청은 여전히 웹 사이트에서 처리해야 합니다. 짧은 기간 내에 요청의 양이 상당히 커질 수 있습니다. 이 프레임에는 IP 주소의 총 요청이 표시되지 않고, 요청에 의심스러운 의도가 있음을 나타내는 신호가 있는 요청이 표시됩니다.
 
-트래픽이 의심스럽고 유효한 요청을 전달할 수 있는 [!DNL Content Distributed Network]&#x200B;(CDN) 주소에서 발생하지 않는지 확인하십시오. 요청이 CDN IP 주소에서 발송된 것으로 확인되면 해당 서비스 공급업체에 연락하여 네트워크를 통한 의심스러운 트래픽 차단을 도와주십시오. 주소 또는 요청 URL을 차단해야 하는 경우 Adobe Commerce 지원 기술 자료에서 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html)을 참조하세요.
+트래픽이 의심스럽고 유효한 요청을 전달할 수 있는 [!DNL Content Distributed Network]&#x200B;(CDN) 주소에서 발생하지 않는지 확인하십시오. 요청이 CDN IP 주소에서 발송된 것으로 확인되면 해당 서비스 공급업체에 연락하여 네트워크를 통한 의심스러운 트래픽 차단을 도와주십시오. 주소 또는 요청 URL을 차단해야 하는 경우 Adobe Commerce 지원 기술 자료에서 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=ko)을 참조하세요.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 

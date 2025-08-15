@@ -28,7 +28,7 @@ Pro 플랜 아키텍처의 Adobe Commerce 클라우드 인프라
 <u> **실행!** </u>
 
 * 이 경고가 지워질 때까지 예약된 배포를 중단합니다.
-* 사이트가 응답하지 않거나 완전히 응답하지 않는 경우 즉시 사이트를 유지 관리 모드로 전환합니다. 단계는 [유지 관리 모드 사용 또는 사용 안 함](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)을 참조하세요. 문제 해결을 위해 사이트에 계속 액세스할 수 있도록 제외 IP 주소 목록에 IP를 추가해야 합니다. 단계는 [제외 IP 주소 목록 유지](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)를 참조하세요.
+* 사이트가 응답하지 않거나 완전히 응답하지 않는 경우 즉시 사이트를 유지 관리 모드로 전환합니다. 단계는 [유지 관리 모드 사용 또는 사용 안 함](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)을 참조하세요. 문제 해결을 위해 사이트에 계속 액세스할 수 있도록 제외 IP 주소 목록에 IP를 추가해야 합니다. 단계는 [제외 IP 주소 목록 유지](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)를 참조하세요.
 
 **안 함!**
 
@@ -47,16 +47,16 @@ Pro 플랜 아키텍처의 Adobe Commerce 클라우드 인프라
 >
 >이 경고는 중요한 경고이므로 문제를 해결하기 전에 **1**&#x200B;단계를 완료하는 것이 좋습니다(2단계 이상).
 
-1. Adobe Commerce 지원 티켓이 있는지 확인합니다. 단계는 Commerce 지원 기술 자료에서 [지원 티켓 추적](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)을 참조하세요. 지원이 [!DNL New Relic] 임계값 경고를 받고 티켓을 만들었으며 문제 해결을 시작했을 수 있습니다. 티켓이 없으면 만듭니다. 티켓에는 다음 정보가 있어야 합니다.
+1. Adobe Commerce 지원 티켓이 있는지 확인합니다. 단계는 Commerce 지원 기술 자료에서 [지원 티켓 추적](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)을 참조하세요. 지원이 [!DNL New Relic] 임계값 경고를 받고 티켓을 만들었으며 문제 해결을 시작했을 수 있습니다. 티켓이 없으면 만듭니다. 티켓에는 다음 정보가 있어야 합니다.
    * 연락처 이유: **[!UICONTROL New Relic CRITICAL alert received]**&#x200B;을(를) 선택하십시오.
    * 경고에 대한 설명.
    * [[!DNL New Relic] 문제 링크](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/). [Adobe Commerce에 대한 관리 경고](managed-alerts-for-magento-commerce.md)에 포함되어 있습니다.
 1. [!DNL New Relic]에서 사용 빈도가 가장 높은 디스크를 검토하십시오. 단계는 **[!UICONTROL Storage]**&#x200B;인프라 모니터링 호스트 페이지 [[!DNL New Relic]  탭[!UICONTROL Storage]의 ](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage) 탭을 참조하십시오.
    * [!DNL New Relic]에서 디스크 사용량이 느리게 증가하는 경우 다음 옵션을 시도해 보십시오.
-      * 공간 할당을 조정하여 디스크 공간을 최적화합니다. 단계는 Commerce on Cloud Guide의 [디스크 공간 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html)를 참조하십시오. 추가 디스크 공간을 요청해야 할 수도 있습니다(Adobe 계정 팀에 문의).
-      * MySQL의 디스크 공간을 정리합니다. 자세한 내용은 Commerce 지원 기술 자료에서 [MySQL 디스크 공간이 부족합니다](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud)를 참조하십시오.
+      * 공간 할당을 조정하여 디스크 공간을 최적화합니다. 단계는 Commerce on Cloud Guide의 [디스크 공간 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=ko)를 참조하십시오. 추가 디스크 공간을 요청해야 할 수도 있습니다(Adobe 계정 팀에 문의).
+      * MySQL의 디스크 공간을 정리합니다. 자세한 내용은 Commerce 지원 기술 자료에서 [MySQL 디스크 공간이 부족합니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud)를 참조하십시오.
       * [!DNL New Relic]에 디스크 사용량이 급격히 증가하는 경우 디렉터리에서 파일이 매우 빠르게 증가하는 문제가 있음을 나타낼 수 있습니다. 다음 사항을 확인하십시오.
          1. CLI/터미널에서 다음 명령을 실행하여 문제를 확인하려면 전체 디스크 공간을 확인하십시오. `df -h`
          1. 예기치 않게 용량이 크고 디스크 사용량이 증가하는 디렉토리를 식별한 후 영향을 받는 파일 시스템을 확인해야 합니다. 다음 예제에서는 파일 디렉터리 `pub/media/`을(를) 확인하는 방법을 보여 줍니다. Commerce이 로그 및 대용량 미디어 파일을 저장하는 데 사용하는 디렉터리입니다. 그러나 예기치 않은 디스크 사용량을 표시하는 모든 디렉터리에 대해 이 명령을 실행해야 합니다. `du -sch ~/pub/media/*`
 
-터미널의 출력에서 디스크 사용량이 급격히 증가하는 이러한 디렉토리 중 하나에 있는 파일을 표시하는 경우 파일의 콘텐츠가 필요하지 않은 것을 알고 있다면 파일을 제거하는 것이 좋습니다. 이 작업을 수행하는 데 익숙하지 않은 경우 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)하십시오.
+터미널의 출력에서 디스크 사용량이 급격히 증가하는 이러한 디렉토리 중 하나에 있는 파일을 표시하는 경우 파일의 콘텐츠가 필요하지 않은 것을 알고 있다면 파일을 제거하는 것이 좋습니다. 이 작업을 수행하는 데 익숙하지 않은 경우 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)하십시오.

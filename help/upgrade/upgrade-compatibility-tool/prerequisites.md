@@ -80,4 +80,4 @@ Adobe Commerce은 Linux 운영 체제에서만 지원됩니다. Linux OS에서 [
 
 큰 모듈과 파일이 있는 Adobe Commerce 인스턴스에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행하는 경우 도구에는 많은 양의 RAM(최소 2GB)이 필요할 수 있습니다.
 
-[!DNL Upgrade Compatibility Tool][[!DNL Site-Wide Analysis Tool]에서 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)클라우드 인프라의 Adobe Commerce[ 프로젝트에 대해 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}을(를) 실행합니다.
+[!DNL Upgrade Compatibility Tool][[!DNL Site-Wide Analysis Tool]에서 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)클라우드 인프라의 Adobe Commerce[ 프로젝트에 대해 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko){target=_blank}을(를) 실행합니다.

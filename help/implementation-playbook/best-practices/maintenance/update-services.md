@@ -23,9 +23,9 @@ cloud infrastructure 2.4.x 이상 버전의 Adobe Commerce
 
 Adobe Commerce에서 사용하는 서비스 및 구성 요소가 수명 종료 날짜에 도달하거나 임박하기 전에 업그레이드하십시오. 따라서 PCI 규정 준수를 준수하고 보안 취약점을 줄일 수 있습니다.
 
-Starter 플랜을 사용하는 고객은 서비스 업그레이드에 셀프 서비스를 사용할 수 있습니다. 자세한 방법은 [서비스 버전 변경](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)을 참조하세요.
+Starter 플랜을 사용하는 고객은 서비스 업그레이드에 셀프 서비스를 사용할 수 있습니다. 자세한 방법은 [서비스 버전 변경](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)을 참조하세요.
 
-Pro 요금제의 고객은 [통합 환경](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html)에서 서비스 업그레이드에서만 셀프 서비스를 사용할 수 있습니다. 프로덕션에서 서비스를 업그레이드하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)하여 업그레이드를 요청해야 합니다.
+Pro 요금제의 고객은 [통합 환경](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=ko)에서 서비스 업그레이드에서만 셀프 서비스를 사용할 수 있습니다. 프로덕션에서 서비스를 업그레이드하려면 [지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)하여 업그레이드를 요청해야 합니다.
 
 >[!WARNING]
 >

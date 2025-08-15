@@ -31,5 +31,5 @@ ht-degree: 0%
 
 Adobe Commerce이 가맹점의 GDPR 준수에 어떻게 도움이 되는지에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [GDPR 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+- [GDPR 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=ko)
 - [Adobe Commerce이 GDPR에 대해 준비되었습니다](https://business.adobe.com/privacy/general-data-protection-regulation.html)

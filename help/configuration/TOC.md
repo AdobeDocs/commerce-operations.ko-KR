@@ -150,4 +150,4 @@ ht-degree: 1%
       + [분할 데이터베이스 확인](storage/multi-master-verify.md)
       + [데이터베이스 복제](storage/multi-master-replication.md)
       + [단일 데이터베이스로 되돌리기](storage/revert-split-database.md)
-+ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)

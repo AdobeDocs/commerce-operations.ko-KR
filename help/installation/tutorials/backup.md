@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 [클라우드 가이드](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)에서 _스냅샷 및 백업 관리_&#x200B;를 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 [클라우드 가이드](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)에서 _스냅샷 및 백업 관리_&#x200B;를 참조하십시오.
 
 ## 백업 활성화
 

@@ -60,4 +60,4 @@ ht-degree: 5%
 - 패키지 {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)

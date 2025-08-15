@@ -35,7 +35,7 @@ ht-degree: 0%
 
   >[!TIP]
   >
-  >[Cloud Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)에서 _성능 모니터링_&#x200B;을 참조하십시오.
+  >[Cloud Guide](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/performance)에서 _성능 모니터링_&#x200B;을 참조하십시오.
 
 
 - **데이터베이스 성능 최적화**: Adobe Commerce Cloud에서 데이터베이스 성능을 최적화하려면 다음을 구현합니다.
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->[Cloud Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)에서 _Fastly 서비스 개요_&#x200B;를 참조하십시오.
+>[Cloud Guide](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)에서 _Fastly 서비스 개요_&#x200B;를 참조하십시오.
 
 #### 정기 보안 모니터링
 
@@ -86,7 +86,7 @@ Adobe Commerce Cloud에서 정기적인 보안 모니터링을 유지하기 위�
 
 >[!TIP]
 >
->[관리 시스템 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)에서 _보안_&#x200B;을 참조하십시오.
+>[관리 시스템 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security)에서 _보안_&#x200B;을 참조하십시오.
 
 #### 오류 로깅 및 모니터링
 
@@ -102,7 +102,7 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 >[!TIP]
 >
->Adobe Commerce Cloud의 로깅 및 오류 추적 사례에 대한 자세한 내용은 [New Relic 로그 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) 및 [예외 모니터링](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions)을 참조하십시오.
+>Adobe Commerce Cloud의 로깅 및 오류 추적 사례에 대한 자세한 내용은 [New Relic 로그 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) 및 [예외 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions)을 참조하십시오.
 
 ### 보안 및 업데이트
 
@@ -110,19 +110,19 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 다음은 Adobe Commerce Cloud 시스템의 보안을 유지하고 업데이트하기 위한 보안 패치 및 업데이트 모니터링의 주요 사례입니다.
 
-- **Adobe Commerce 보안 경고에 가입**: [Adobe의 알림을 등록](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)하여 보안 취약점에 대한 정보를 지속적으로 받아 보십시오.
+- **Adobe Commerce 보안 경고에 가입**: [Adobe의 알림을 등록](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security)하여 보안 취약점에 대한 정보를 지속적으로 받아 보십시오.
 
-- **릴리스 정보 확인**: 버전(예: 2.3.5-p1)에 대해 &quot;-pN&quot; 태그가 지정된 [보안 패치 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview)을 정기적으로 검토하고 중요한 수정 사항 및 개선 사항을 포함합니다.
+- **릴리스 정보 확인**: 버전(예: 2.3.5-p1)에 대해 &quot;-pN&quot; 태그가 지정된 [보안 패치 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/overview)을 정기적으로 검토하고 중요한 수정 사항 및 개선 사항을 포함합니다.
 
 - **보안 패치를 즉시 적용**: 가능한 즉시 보안 패치를 적용합니다. 여기에는 최신 버전으로 업데이트하거나 특정 패치 파일을 적용하는 것이 포함됩니다.
 
 - **클라우드 패치 사용**: Adobe Commerce Cloud의 경우 보안 패치가 클라우드 도구 세트 내에 번들로 제공될 수 있습니다. 이러한 수정 사항을 받으려면 세트 또는 Commerce 버전을 업그레이드해야 합니다.
 
-- **자동 패치 관리**: 중앙 패처 같은 도구를 사용하여 [여러 저장소에 패치를 자동으로 관리하고 적용](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)하는 것이 좋습니다.
+- **자동 패치 관리**: 중앙 패처 같은 도구를 사용하여 [여러 저장소에 패치를 자동으로 관리하고 적용](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)하는 것이 좋습니다.
 
 >[!TIP]
 >
->패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) 보고서도 검토해야 합니다.
+>패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access) 보고서도 검토해야 합니다.
 
 #### PCI 준수
 
@@ -132,11 +132,11 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 - **보안 전송 프로토콜 사용**: 암호화 및 적절한 키 관리를 사용하여 항상 TLS와 같은 보안 프로토콜을 통해 결제 데이터를 전송합니다.
 
-- **웹 응용 프로그램 방화벽(WAF) 활용**: Fastly를 기반으로 하는 WAF 서비스는 PCI DSS 6.6 요구 사항을 충족하고 사이트에 도달하기 전에 악성 트래픽을 차단하여 일반적인 취약점으로부터 보호합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) 및 [여기](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service)를 참조하세요.
+- **웹 응용 프로그램 방화벽(WAF) 활용**: Fastly를 기반으로 하는 WAF 서비스는 PCI DSS 6.6 요구 사항을 충족하고 사이트에 도달하기 전에 악성 트래픽을 차단하여 일반적인 취약점으로부터 보호합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) 및 [여기](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service)를 참조하세요.
 
-- **액세스 제한**: 권한이 있는 직원만 중요한 결제 데이터에 액세스할 수 있는지 확인하고 [액세스 제어를 적용하여 노출 위험을 줄이십시오](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
+- **액세스 제한**: 권한이 있는 직원만 중요한 결제 데이터에 액세스할 수 있는지 확인하고 [액세스 제어를 적용하여 노출 위험을 줄이십시오](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
 
-- **정기적인 보안 검색**: 정기적인 PCI ASV 검색을 수행하고 [환경을 모니터링](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)하여 잠재적인 취약점을 해결합니다.
+- **정기적인 보안 검색**: 정기적인 PCI ASV 검색을 수행하고 [환경을 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-operations/security-and-compliance/shared-responsibility)하여 잠재적인 취약점을 해결합니다.
 
 >[!TIP]
 >
@@ -202,9 +202,9 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 - **트래픽 처리를 위한 자동 크기 조정**:
 
-   - Adobe Commerce Cloud는 실시간 트래픽 요구에 따라 서버 리소스(예: 웹 노드)를 동적으로 조정하기 위한 자동 크기 조절을 지원하여 스토어에서 수동 개입 없이 높은 방문자 볼륨을 처리할 수 있도록 합니다. [클라우드 가이드](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling)에서 _자동 크기 조정_&#x200B;을 참조하십시오.
+   - Adobe Commerce Cloud는 실시간 트래픽 요구에 따라 서버 리소스(예: 웹 노드)를 동적으로 조정하기 위한 자동 크기 조절을 지원하여 스토어에서 수동 개입 없이 높은 방문자 볼륨을 처리할 수 있도록 합니다. [클라우드 가이드](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/autoscaling)에서 _자동 크기 조정_&#x200B;을 참조하십시오.
 
-   - 웹 계층과 서비스 계층은 독립적으로 확장할 수 있으며, 트래픽을 늘리기 위해 웹 노드를 추가하고 피크 기간 동안 백엔드 성능을 높이기 위해 데이터베이스 또는 서비스 노드를 확장할 수 있습니다. [클라우드 가이드](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)에서 _조정된 아키텍처_&#x200B;을(를) 참조하십시오.
+   - 웹 계층과 서비스 계층은 독립적으로 확장할 수 있으며, 트래픽을 늘리기 위해 웹 노드를 추가하고 피크 기간 동안 백엔드 성능을 높이기 위해 데이터베이스 또는 서비스 노드를 확장할 수 있습니다. [클라우드 가이드](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)에서 _조정된 아키텍처_&#x200B;을(를) 참조하십시오.
 
 - **성능 모니터링**:
 
@@ -230,13 +230,13 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 ### 보고 및 분석
 
-- Adobe Commerce의 핵심 기능인 **Adobe Commerce Intelligence:** Commerce Intelligence은 여러 데이터 소스에 대한 모범 사례 인사이트를 제공하여 판매자가 과학적 데이터 기반 결정을 내리고 명확하고 정보에 입각한 조치를 취할 수 있도록 합니다. [_Commerce Intelligence 사용 안내서_](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started)를 참조하세요.
+- Adobe Commerce의 핵심 기능인 **Adobe Commerce Intelligence:** Commerce Intelligence은 여러 데이터 소스에 대한 모범 사례 인사이트를 제공하여 판매자가 과학적 데이터 기반 결정을 내리고 명확하고 정보에 입각한 조치를 취할 수 있도록 합니다. [_Commerce Intelligence 사용 안내서_](https://experienceleague.adobe.com/ko/docs/commerce-business-intelligence/mbi/getting-started)를 참조하세요.
 
 - **Adobe Analytics:** Adobe Analytics은 온라인 스토어의 성능을 추적, 분석 및 최적화할 수 있는 강력한 솔루션을 제공합니다. Adobe Analytics은 전자 상거래 비즈니스가 고객 행동, 제품 성능, 전환율 및 기타 주요 지표에 대한 심층적인 통찰력을 확보하여 데이터 중심의 의사 결정을 가능하게 합니다.
 
 - **Google Analytics:** Google Analytics을 사용하여 고객 동작, 트래픽 소스 및 전환율을 추적합니다.
 
-- **추가 Commerce Intelligence 도구:** Adobe Commerce에 고급 보고가 포함되어 있습니다. 이 기능을 사용하면 제품, 주문 및 고객 데이터를 기반으로 하는 동적 보고서 세트에 액세스할 수 있으며, 비즈니스 요구 사항에 맞게 개인화된 대시보드를 사용할 수 있습니다. 자세한 내용은 [관리 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)의 _고급 보고_&#x200B;를 참조하십시오.
+- **추가 Commerce Intelligence 도구:** Adobe Commerce에 고급 보고가 포함되어 있습니다. 이 기능을 사용하면 제품, 주문 및 고객 데이터를 기반으로 하는 동적 보고서 세트에 액세스할 수 있으며, 비즈니스 요구 사항에 맞게 개인화된 대시보드를 사용할 수 있습니다. 자세한 내용은 [관리 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)의 _고급 보고_&#x200B;를 참조하십시오.
 
 ### 결론
 
