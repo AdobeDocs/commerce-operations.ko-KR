@@ -2,7 +2,7 @@
 title: 모듈 구성 파일
 description: 구성 유형을 사용하여 모듈을 사용자 지정하는 방법을 알아봅니다.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Commerce 애플리케이션 병합 알고리즘:
 | --- | --- | --- | --- |
 | `address_formats.xml` | 주소 형식 선언 | 기본, 글로벌 | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [액세스 제어 목록](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | 글로벌 | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [고급 보고]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | 기본, 글로벌 | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [고급 보고](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | 기본, 글로벌 | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | 캐시 유형 선언 | 기본, 글로벌 | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | 카탈로그 속성 구성 | 글로벌 | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` 및 `env.php` | [배포 구성](../reference/deployment-files.md) | 이러한 파일은 내부 구성 프로세서에서 읽기/쓰기 가능합니다. | 개체가 없어 사용자 지정할 수 없습니다. |
