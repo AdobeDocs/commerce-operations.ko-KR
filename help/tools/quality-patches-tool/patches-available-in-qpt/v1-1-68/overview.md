@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
+source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ QPT v1.1.68에는 다음 패치가 포함됩니다.
 1. **ACSD-66889**: CLI에서 인벤토리를 다시 인덱싱하는 동안 오류가 발생했습니다.
 1. **ACSD-66963**: 가상 제품이 있는 장바구니에 할인 코드가 적용되면 EstimateTotals 돌연변이가 할인에 대해 null을 반환합니다.
 1. **ACSD-66965**: 구매요청 목록 페이지의 인쇄 옵션으로 인해 오류가 발생합니다.
-1. **ACSD-67039**: rp_token 시스템 특성의 유효성 검사로 인해 고객 레코드가 저장되지 않았습니다.
+1. **ACSD-67039**: `rp_token` 시스템 특성의 유효성 검사로 인해 고객 레코드가 저장되지 않았습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
