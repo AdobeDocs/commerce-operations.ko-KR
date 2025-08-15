@@ -2,9 +2,9 @@
 title: 릴리스 정책
 description: 다양한 유형의 Adobe Commerce 릴리스에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 0ea8c2bfffe81d27547c0330abdd75fc078542cf
+source-git-commit: f7b22089bcf88f6c881b0cbd4d7f77d795d9071b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,10 @@ Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보�
 
 ## 분리된 패치
 
-격리된 패치최신 보안 전용 패치 또는 향후 보안 전용 패치에 포함된 독립 실행형 수정 사항을 포함합니다. 보안 전용 패치는 별도로 릴리스되어 보다 신속한 구현이 가능합니다.
+격리된 패치는 더 빠른 구현을 위해 전체 보안 패치와 별도로 릴리스된 보안 수정 사항입니다. 분리된 각 패치는 특정 보안 문제를 해결하며 최신 또는 예정된 전체 보안 패치에 포함됩니다. 문제에 대한 자세한 내용은 관련 보안 게시판에 제공되며, 이 게시판에서는 수정 사항 세부 정보, 패치 적용 방법 및 추가 정보가 포함된 기술 자료(KB) 문서에 연결됩니다.
+
+Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/security/products/magento.html)를 참조하세요.
 
 ## 사용자 정의 패치
 
-문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.
+문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.
