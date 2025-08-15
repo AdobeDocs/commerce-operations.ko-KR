@@ -22,7 +22,7 @@ ht-degree: 1%
 >[!WARNING]
 >
 >`git clone`을(를) 사용하여 Commerce을 설치한 경우에는 이 안내서가 적용되지 않습니다.
->>기여 개발자는 [이 안내서][install]를 사용하여 Commerce 설치를 업데이트해야 합니다.
+>&#x200B;>기여 개발자는 [이 안내서][install]를 사용하여 Commerce 설치를 업데이트해야 합니다.
 
 ## 배포 단계
 

@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**사용 중단 알림:**
->>백업 기능은 2.1.16, 2.2.7 및 2.3.0부터 더 이상 사용되지 않습니다. 추가 백업 기술 및 바이너리 백업 도구(예: Percona XtraBackup)를 조사하는 것이 좋습니다.
+>&#x200B;>백업 기능은 2.1.16, 2.2.7 및 2.3.0부터 더 이상 사용되지 않습니다. 추가 백업 기술 및 바이너리 백업 도구(예: Percona XtraBackup)를 조사하는 것이 좋습니다.
 
 ## 열린 파일 제한 설정
 

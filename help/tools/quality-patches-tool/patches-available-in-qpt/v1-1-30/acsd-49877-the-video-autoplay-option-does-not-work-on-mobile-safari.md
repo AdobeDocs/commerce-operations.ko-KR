@@ -28,7 +28,7 @@ ACSD-49877은 비디오가 원격 비디오 파일에 직접 연결되어 있을
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 [!magento/quality-patches] 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]: 패치 검색]에서 호환성을 확인하십시오. 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 [ !magento/quality-patches] 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]: 패치 검색]에서 호환성을 확인하십시오. 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 

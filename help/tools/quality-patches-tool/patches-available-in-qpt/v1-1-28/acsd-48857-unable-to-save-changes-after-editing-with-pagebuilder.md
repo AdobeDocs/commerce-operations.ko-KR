@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48857:  [!DNL Page Builder](으)로 편집한 후 변경 내용을 저장할 수 없음'
-description: ACSD-48857 패치를 적용하여  [!DNL Page Builder](으)로 편집한 후 사용자가 변경 사항을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-48857:  [!DNL Page Builder] (으)로 편집한 후 변경 내용을 저장할 수 없음'
+description: ACSD-48857 패치를 적용하여  [!DNL Page Builder] (으)로 편집한 후 사용자가 변경 사항을 저장할 수 없는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
 exl-id: b03cd597-8fef-4528-9699-793dc61d34da

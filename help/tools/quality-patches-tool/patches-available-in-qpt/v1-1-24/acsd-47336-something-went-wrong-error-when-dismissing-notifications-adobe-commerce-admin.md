@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336: Adobe Commerce 관리자의 알림을 해제할 때 _[!UICONTROL Something went wrong]_오류가 발생했습니다.
+# ACSD-47336: Adobe Commerce 관리자의 알림을 해제할 때 _[!UICONTROL Something went wrong]_&#x200B;오류가 발생했습니다.
 
-ACSD-47336 패치는 _[!UICONTROL Something went wrong]_관리자의 알림을 해제할 때 사용자에게 [!DNL Commerce] 오류가 표시되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-47336입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+ACSD-47336 패치는 _[!UICONTROL Something went wrong]_&#x200B;관리자의 알림을 해제할 때 사용자에게 [!DNL Commerce] 오류가 표시되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-47336입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -32,7 +32,7 @@ ACSD-47336 패치는 _[!UICONTROL Something went wrong]_관리자의 알림을 �
 
 ## 문제
 
-_[!UICONTROL Something went wrong]_관리자의 알림을 해제할 때 [!DNL Commerce] 오류가 표시됩니다.
+_[!UICONTROL Something went wrong]_&#x200B;관리자의 알림을 해제할 때 [!DNL Commerce] 오류가 표시됩니다.
 
 <u>재현 단계</u>:
 
@@ -42,11 +42,11 @@ _[!UICONTROL Something went wrong]_관리자의 알림을 해제할 때 [!DNL Co
 
 <u>예상 결과</u>:
 
-완료된 작업을 지울 때 _[!UICONTROL Something went wrong]_오류가 표시되지 않아야 합니다.
+완료된 작업을 지울 때 _[!UICONTROL Something went wrong]_&#x200B;오류가 표시되지 않아야 합니다.
 
 <u>실제 결과</u>:
 
-_[!UICONTROL Something went wrong]_오류가 표시됩니다.
+_[!UICONTROL Something went wrong]_&#x200B;오류가 표시됩니다.
 
 ## 패치 적용
 

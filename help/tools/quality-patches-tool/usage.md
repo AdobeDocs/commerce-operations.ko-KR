@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->아직 설치되지 않은 경우 [[!DNL Git]을(를) 설치하기 전에 ](https://github.com/git-guides/install-git)[ 또는 ](https://man7.org/linux/man-pages/man1/patch.1.html)패치[!DNL Quality Patches Tool]을(를) 설치해야 합니다. `magento/quality-patches` 파일에 `composer.json` 작성기 패키지 추가:
+>아직 설치되지 않은 경우 [[!DNL Git]을(를) 설치하기 전에 ](https://github.com/git-guides/install-git) [ 또는 ](https://man7.org/linux/man-pages/man1/patch.1.html)패치[!DNL Quality Patches Tool]을(를) 설치해야 합니다. `magento/quality-patches` 파일에 `composer.json` 작성기 패키지 추가:
 
 ```bash
 composer require magento/quality-patches

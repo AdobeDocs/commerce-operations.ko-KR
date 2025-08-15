@@ -1,6 +1,6 @@
 ---
-title: '[!UICONTROL [!DNL RabbitMQ] 탭'
-description: '[!UICONTROL [!DNL RabbitMQ]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
+title: '[!DNL RabbitMQ] 탭'
+description: '[!DNL RabbitMQ]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

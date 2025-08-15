@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. 메시지 큐 소비자와 같은 비동기 프로세스가 실행되는 동안 업그레이드 프로세스를 시작하면 데이터가 손상될 수 있습니다. 데이터 손상을 방지하려면 모든 cron 작업을 비활성화하십시오.
 
-   클라우드 인프라의 Adobe Commerce(_0}):_
+   클라우드 인프라의 Adobe Commerce(_0&rbrace;):_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable

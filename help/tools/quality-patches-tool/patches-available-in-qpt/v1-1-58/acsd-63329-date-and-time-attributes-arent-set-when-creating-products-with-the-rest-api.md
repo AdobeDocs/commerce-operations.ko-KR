@@ -36,7 +36,7 @@ REST API를 사용하여 제품을 만들 때 날짜 및 시간 필드에 기본
 
 <u>재현 단계</u>:
 
-1. **[!UICONTROL Product]** 특성을 만들고, 기본값을 `12/31/2020`(으)로 설정하고, **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;을(를) ***[!UICONTROL Date]*** 또는 [!UICONTROL Date and Time]***(으)로 ***.
+1. **[!UICONTROL Product]** 특성을 만들고, 기본값을 `12/31/2020`(으)로 설정하고, **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;을(를) ***[!UICONTROL Date]*** 또는 [!UICONTROL Date and Time]&#x200B;***(으)로 &#x200B;***.
 1. 다른 텍스트 형식 특성을 만들고 기본값을 ***테스트 값***(으)로 설정합니다.
 1. `/rest/all/V1/products/`에 대한 REST API POST 요청을 사용하여 새 제품을 만드십시오.
 

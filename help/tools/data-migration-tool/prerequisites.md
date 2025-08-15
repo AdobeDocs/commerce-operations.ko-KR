@@ -44,6 +44,6 @@ Magento 1 데이터베이스에 대해 바이너리 로깅이 활성화된 경�
 
 Magento 1 확장 코드를 Magento 2로 마이그레이션합니다.
 
-최신 확장 버전을 찾으려면 [!DNL [Commerce Marketplace]](https://marketplace.magento.com/)을(를) 방문하거나 확장 공급자에게 문의하십시오.
+최신 확장 버전을 찾으려면 [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/)을(를) 방문하거나 확장 공급자에게 문의하십시오.
 
-[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)을(를) 사용할 수도 있습니다.
+[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)을(를) 사용할 수도 있습니다.

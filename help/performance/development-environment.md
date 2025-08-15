@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 비활성화 대신 캐시 정리
 
-많은 개발자가 개발자 인스턴스에서 모든 캐시를 비활성화하는 경향이 있습니다. 모든 캐시를 비활성화하지 않고 캐시만 정리하는 것이 좋습니다. 캐시를 완전히 사용하지 않도록 설정하는 대신 [!DNL Commerce]정리할 때[ ](../configuration/cli/manage-cache.md#clean-and-flush-cache-types)이(가) 더 효율적으로 실행됩니다. 대부분의 캐시 유형은 개발 중에 무효화되는 경우가 거의 없습니다.
+많은 개발자가 개발자 인스턴스에서 모든 캐시를 비활성화하는 경향이 있습니다. 모든 캐시를 비활성화하지 않고 캐시만 정리하는 것이 좋습니다. 캐시를 완전히 사용하지 않도록 설정하는 대신 [!DNL Commerce]정리할 때[&#128279;](../configuration/cli/manage-cache.md#clean-and-flush-cache-types)이(가) 더 효율적으로 실행됩니다. 대부분의 캐시 유형은 개발 중에 무효화되는 경우가 거의 없습니다.
 
 [캐시를 비활성화](../configuration/cli/manage-cache.md#enable-or-disable-cache-types)하는 경우 개발 인스턴스에서는 페이지 및 블록 캐시만 비활성화하는 것이 좋습니다. 테스트 중에 모든 캐시를 활성화해야 합니다.
 

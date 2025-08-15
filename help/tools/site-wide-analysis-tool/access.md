@@ -26,7 +26,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >**[!DNL Support Permissions]**&#x200B;에 액세스하려면 계정에 [!DNL Site-Wide Analysis Tool Dashboard] 권한이 있어야 합니다.
->>자세한 내용은 사용 안내서의 [계정 공유 [!DNL Commerce] 에서 확인하세요](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html).
+>&#x200B;>자세한 내용은 사용 안내서의 [계정 공유 [!DNL Commerce] 에서 확인하세요](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html).
 
 ## 스토어의 [!DNL Site-Wide Analysis Tool Dashboard]에서 [!UICONTROL Admin Panel]에 로그인
 
