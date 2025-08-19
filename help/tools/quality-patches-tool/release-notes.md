@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 스토어를 전환한 후 페이지가 캐시에서 처리되고 선택한 스토어를 반영하지 않는 2.4.8 상점 환경의 문제를 해결했습니다.
+* **ACP2E-3731**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - **[!UICONTROL Catalog, Search]** 가시성을 가진 제품 내보내기에 다중 스토어 환경의 다른 스토어 조회수의 레코드가 잘못 포함되는 문제를 해결했습니다.
+* **ACP2E-3767**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - 번들 제품의 마지막 번들 옵션을 제거할 수 없는 문제를 해결했습니다.
+* **ACP2E-3964**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 갤러리에서 비디오가 설정되었을 때 REST API를 통해 구성 가능한 제품의 하위 제품을 나열할 수 없는 문제를 해결했습니다.
+* **ACP2E-3977**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - **[!UICONTROL Cap Reward Points Balance At]**&#x200B;이(가) 설정되면 [!UICONTROL Rewards Points Balance Redemption Threshold] 필드를 비워 둘 수 없어 유효성 검사 오류가 발생하는 문제를 해결합니다.
+* **ACP2E-4050**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.8) - 번들 제품을 사용하고 무료 배송과 함께 하위 선택 조건을 사용하는 경우 장바구니 가격 규칙이 다중 배송 제품에 올바르게 적용되지 않는 문제를 해결했습니다.
+* **ACSD-56226**(Adobe Commerce >=2.4.6 &lt;2.4.7) - `synchronous_replication` 플래그가 활성화되어 있을 때 슬레이브 노드의 READ 쿼리가 오래된 데이터를 반환하는 문제를 해결합니다.
+* **ACSD-57477**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.7) - 판매 규칙 처리로 인해 장바구니 관련 요청에 성능이 저하되는 문제가 해결되었습니다.
+* **ACSD-58108**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.8) - 원래 가져오기 테이블에서 누락된 조인 테이블 이름으로 인해 주문 그리드의 사용자 지정 모듈 확장 SQL에서 오류가 발생하는 문제를 해결했습니다.
+* **ACSD-65983**(Adobe Commerce >=2.4.6-p10 &lt;2.4.9의 경우) - 관리 백엔드에서 번들 제품 견적을 다시 구성하면 오류가 발생하는 문제를 수정합니다.
+* **ACSD-66149**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 지원되지 않거나 알 수 없는 IPN 형식에 대해 IPN 처리기가 *500* 오류를 반환하는 문제를 해결했습니다.
+* **ACSD-66153**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 캐시되는 잘못된 레이아웃 구조로 인해 페이지에서 *500* 오류가 반환되는 문제를 해결했습니다.
+* **ACSD-66302**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 위시리스트 항목이 웹 사이트별로 필터링되지 않고 스토어 ID별로 잘못 필터링되는 문제를 해결했습니다.
+* **ACSD-66311**(Adobe Commerce >=2.4.6-p9 &lt;2.4.9) - 웹 사이트 액세스가 제한된 관리자 사용자의 경우 회사 그리드가 느리게 로드되는 문제를 해결했습니다.
+* **ACSD-66404**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 크론 작업이 변경 로그 테이블을 지우지 못해 많은 양의 데이터를 처리할 때 [!DNL Galera Cluster]개의 충돌이 발생하는 문제를 해결합니다.
+* **ACSD-66952**(Adobe Commerce >=2.4.4 &lt;2.4.9) - 각 PLP 또는 장바구니 방문에서 캐시가 지워져서 대상 규칙이 설정될 때 성능 오버헤드가 발생하는 문제를 해결합니다.
+* **ACSD-67264**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 번들 및 다운로드 가능한 제품 페이지 레이아웃이 장치 간에 일치하지 않는 문제를 해결했습니다.
+* **ACSD-67347**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5-p11 &lt;2.4.6) - 특수 문자가 있는 쿠폰을 사용하고 파일 잠금이 활성화된 경우 *잠금을 획득할 수 없음* 오류가 발생하여 주문이 실패하는 문제를 수정합니다.
+* 교체된 패치: **ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
