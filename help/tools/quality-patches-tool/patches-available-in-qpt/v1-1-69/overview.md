@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
+source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69에는 다음 패치가 포함됩니다.
 1. **ACSD-57477**: 장바구니 관련 요청에 대한 판매 규칙 처리가 느려집니다.
 1. **ACSD-58108**: 조인 테이블 이름이 없으면 order grid 사용자 지정 모듈 확장에서 SQL 오류가 발생합니다.
 1. **ACSD-65983**: Admin에서 번들 제품 견적을 다시 구성할 때 오류가 발생합니다.
-1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)**: IPN 처리기가 지원되지 않는 형식에 대해 500을 반환합니다.
+1. **ACSD-66149**: IPN 처리기가 지원되지 않는 형식에 대해 500을 반환합니다.
 1. **ACSD-66153**: 캐시되는 잘못된 레이아웃 구조로 인해 페이지가 500을 반환합니다.
 1. **ACSD-66302**: 웹 사이트 대신 저장소 ID로 필터링된 위시리스트 항목입니다.
 1. **ACSD-66311**: 제한된 관리자의 경우 회사 그리드가 느리게 로드됩니다.
