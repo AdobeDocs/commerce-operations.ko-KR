@@ -26,8 +26,7 @@ Adobe은 다음 표에 설명된 시스템 요구 사항의 조합만 지원합�
 원활한 업그레이드 프로세스를 보장하고 배포 실패를 방지하기 위해 Adobe에서는 RabbitMQ 버전을 점진적으로 업그레이드할 것을 권장합니다. 예를 들어 버전 3.8에서 4.1로 업그레이드할 때 먼저 3.8에서 3.9로 업그레이드한 다음 3.9에서 3.10으로 업그레이드해야 합니다. 버전 3.13에 도달한 후에만 버전 4.1로 업그레이드해야 합니다.
 
 >[!BEGINTABS]
-
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 [Commerce on Cloud 템플릿](https://github.com/magento/magento-cloud)은(는) 특정 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
@@ -87,8 +86,7 @@ PHPUnit v9(명령줄 도구).
 >클라우드 인프라의 PHP 확장에 대해서는 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) 안내서에서 _PHP 확장 사용_&#x200B;을 참조하십시오.
 
 >[!BEGINTABS]
-
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 다음 표에서는 Adobe Commerce을 클라우드 플랫폼에 배포할 때 지원되는 PHP 확장을 보여 줍니다.
 
