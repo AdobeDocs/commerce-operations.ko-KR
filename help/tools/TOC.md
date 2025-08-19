@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
+source-git-commit: f7c36124a1757f9bc2351d4b14f3eefcb3808e19
 workflow-type: tm+mt
-source-wordcount: '8165'
+source-wordcount: '8177'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce에 대한 관리 경고: CPU 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 품질 패치 도구 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
    - 품질 패치 도구에서 사용할 수 있는 패치 {#patches-available-in-qpt}
@@ -595,7 +595,7 @@ ht-degree: 0%
       - v1.1.48 {#v1-1-48}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.48](quality-patches-tool/patches-available-in-qpt/v1-1-48/overview.md)
          - [ACSD-57315: 가져오기 단추를 클릭할 때마다  [!DNL PayPal Payflow Pro] 에 새 트랜잭션이 만들어집니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
-         - [[!DNL ACSD-56635: 계정 공유를 Global] (으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
+         - [ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          - [ACSD-57337: 액세스 제한이 있는 관리 사용자가 회사를 볼 수 있음](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          - [ACSD-57394:  [!DNL GraphQL]의 여러 정렬 필드를 기준으로 한 제품 정렬이 잘못되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          - [ACSD-56546: 구성 및 번들 제품이 상점 앞에 품절로 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
@@ -842,6 +842,7 @@ ht-degree: 0%
          - [ACSD-66233: 관리자가 응답하지 않는 제품 목록 팝업으로 인해 제품을 추가할 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
       - v1.1.69 {#v1-1-69}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+         - [ACP2E-3964: REST API를 통해 나열되지 않은 비디오로 구성 가능한 하위 제품](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3964-configurable-child-products-with-video-not-listed-via-rest-api.md)
          - [ACP2E-3977: [!UICONTROL Cap Reward Points Balance At] 필드는 비워 둘 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3977-cap-reward-points-balance-at-cannot-be-left-empty.md)
          - [ACSD-56226: READ 쿼리가 synchronous_replication이 활성화된 오래된 데이터를 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-56226-read-queries-return-outdated-data-with-synchronous-replication-enabled.md)
          - [ACSD-66149: IPN 처리기가 지원되지 않는 형식에 대해 500을 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)
@@ -896,6 +897,6 @@ ht-degree: 0%
       - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
       - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
    - 리소스 {#resources}
-      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ko)
+      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
