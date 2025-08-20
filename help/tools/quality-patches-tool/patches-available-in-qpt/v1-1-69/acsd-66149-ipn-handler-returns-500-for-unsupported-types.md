@@ -3,17 +3,18 @@ title: 'ACSD-66149: IPN 처리기가 지원되지 않는 유형에 대해 *500*�
 description: ACSD-66149 패치를 적용하여 IPN 핸들러가 지원되지 않거나 알 수 없는 IPN 유형을 무시하지 않아 문제가 기록되지 않고 프로세스가 중단되며 500 오류가 반환되는 Adobe Commerce 문제를 해결합니다.
 feature: Payments
 role: Admin, Developer
-source-git-commit: 81e8bf62c026023f71d52c219357bd7911275f69
+type: Troubleshooting
+exl-id: d4794e24-1b6b-4bb5-b54c-9a248fa5f3bd
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-66149: IPN 처리기가 지원되지 않는 형식에 대해 *500*&#x200B;을(를) 반환합니다.
 
-ACSD-66149 패치는 IPN(즉시 결제 알림) 처리기가 지원되지 않거나 알 수 없는 IPN 유형에 대해 *500* 오류를 반환하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-66149입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.
+ACSD-66149 패치는 IPN(즉시 결제 알림) 처리기가 지원되지 않거나 알 수 없는 IPN 유형에 대해 500 오류를 반환하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-66149입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -27,7 +28,7 @@ ACSD-66149 패치는 IPN(즉시 결제 알림) 처리기가 지원되지 않거�
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -56,7 +57,7 @@ ACSD-66149 패치는 IPN(즉시 결제 알림) 처리기가 지원되지 않거�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 ](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
 
 ## 관련 읽기
 
