@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 QPT v1.1.69에는 다음 패치가 포함됩니다.
 1. **AC-15223**: 스토어를 전환한 후 Storefront 페이지에 캐시된 콘텐츠가 표시됩니다.
-1. **ACP2E-3731**: **[!UICONTROL Catalog, Search]** 가시성이 있는 제품 내보내기에 다른 스토어 보기의 레코드가 포함됩니다.
+1. **ACP2E-3731**: *[!UICONTROL Catalog, Search]* 가시성이 있는 제품 내보내기에 다른 스토어 보기의 레코드가 포함됩니다.
 1. **ACP2E-3767**: 번들 제품을 저장한 후 마지막 번들 옵션이 다시 나타납니다.
 1. **ACP2E-3964**: REST API를 통해 나열되지 않은 비디오로 구성 가능한 하위 제품.
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] 필드는 비워 둘 수 없습니다.
