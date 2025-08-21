@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.68에는 다음 패치가 포함됩니다.
 1. **ACSD-58131**: 미디어 갤러리에 0바이트 이미지가 있으면 디렉터리의 모든 이미지를 표시하거나 선택할 수 없습니다.
 1. **ACSD-62146**: 주소 검색을 사용하도록 설정하고 &quot;고객 주소 수 제한&quot;을 1로 설정하면 선택한 청구 주소가 결제 페이지에서 사라집니다.
-1. **ACSD-62415**: Adobe Commerce 백엔드가 매우 느리게 범주를 로드합니다.
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: Adobe Commerce 백엔드가 매우 느리게 범주를 로드합니다.
 1. **ACSD-65938**: 인보이스를 만들지 못한 경우에도 기프트 카드 전자 메일이 전송되었습니다.
 1. **ACSD-66072**: [!UICONTROL Related Products Rule]을(를) 구성할 때 내부 서버 오류로 인해 제품 세부 사항 페이지에서 GraphQL을 통해 관련 제품이 반환되지 않습니다.
 1. **ACSD-66082**: 제품 가져오기를 통해 제품의 견본 이미지를 업데이트할 수 없습니다.
