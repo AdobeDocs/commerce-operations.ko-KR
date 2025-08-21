@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68에는 다음 패치가 포함됩니다.
 1. **ACSD-66179**: &quot;Not Capture&quot; 결제 유형의 송장을 취소하면 404 오류 페이지가 표시됩니다.
 1. **ACSD-66233**: 응답하지 않는 제품 목록 팝업으로 인해 관리자가 제품을 추가할 수 없습니다.
 1. **ACSD-66506**: 이전에 할당된 공유 카탈로그 제품이 삭제되고 새 제품이 할당된 경우 백엔드 오류가 발생했습니다.
-1. **ACSD-66865**: 카탈로그 가격 규칙을 저장하면 인덱서가 무효화되고 영향을 받는 제품만 다시 인덱싱하는 대체 요소가 제공됩니다.
+1. **ACSD-66865**: **[!UICONTROL Catalog Price Rule]**&#x200B;을(를) 저장하면 인덱서가 무효화되고 영향을 받는 제품만 다시 인덱싱하는 대체 기능이 제공됩니다.
 1. **ACSD-66889**: CLI에서 인벤토리를 다시 인덱싱하는 동안 오류가 발생했습니다.
 1. **ACSD-66963**: 가상 제품이 있는 장바구니에 할인 코드가 적용되면 EstimateTotals 돌연변이가 할인에 대해 null을 반환합니다.
 1. **ACSD-66965**: 구매요청 목록 페이지의 인쇄 옵션으로 인해 오류가 발생합니다.
