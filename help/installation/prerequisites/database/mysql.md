@@ -2,7 +2,7 @@
 title: MySQL 지침
 description: Adobe Commerce의 온프레미스 설치용 MySQL 및 MariaDB를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -200,3 +200,5 @@ MySQL 데이터베이스 인스턴스를 구성하려면 다음을 수행합니�
 >클라우드 인프라 프로젝트의 Adobe Commerce의 경우 MySQL(MariaDB)에 대한 `explicit_defaults_for_timestamp` 설정이 기본적으로 _OFF_&#x200B;로 설정됩니다.
 
 {{$include /help/_includes/maria-db-config.md}}
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

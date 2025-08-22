@@ -2,7 +2,7 @@
 title: 스토어 구성
 description: Adobe Commerce 스토어를 구성하려면 다음 단계를 따르십시오.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -42,3 +42,5 @@ bin/magento setup:store-config:set [--<parameter_name>=<value>, ...]
 | `--use-secure-admin` | `1`은(는) SSL을 사용하여 관리자에 액세스함을 의미합니다. 이 옵션을 선택하기 전에 웹 서버가 SSL을 지원하는지 확인하십시오.<br><br>`0`은(는) 관리자가 SSL을 사용하지 않음을 의미합니다. 이것이 기본값입니다. | 아니요 |
 | `--admin-use-security-key` | `1`을(를) 사용하면 응용 프로그램에서 임의로 생성된 키 값을 사용하여 관리자 및 양식의 페이지에 액세스할 수 있습니다. 이러한 키 값은 크로스 사이트 스크립트 위조 공격을 방지하는 데 도움이 됩니다. 이것이 기본값입니다.<br/><br/>`0`이(가) 키 사용을 비활성화합니다. | 아니요 |
 | `--magento-init-params` | 응용 프로그램 초기화 매개 변수를 사용자 지정하는 명령에 추가하십시오.<br/><br/>예: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | 아니요 |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

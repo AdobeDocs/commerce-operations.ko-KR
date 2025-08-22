@@ -2,7 +2,7 @@
 title: Adobe Commerce 설치
 description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 0%
@@ -306,3 +306,5 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 >[!TIP]
 >
 >응용 프로그램 서버에 액세스할 수 있는 사용자 계정이 한 개 있는 경우 [마스크 설정](../next-steps/set-umask.md)을 참조하세요. 이러한 유형의 설정은 공유 호스팅에 일반적으로 사용됩니다.
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->

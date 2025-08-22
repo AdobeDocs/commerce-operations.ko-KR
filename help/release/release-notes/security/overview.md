@@ -2,7 +2,7 @@
 title: 보안 패치 릴리스 노트
 description: Adobe Commerce 보안 패치에 대한 릴리스 정보를 검토하십시오.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -17,3 +17,5 @@ Adobe Commerce 보안 패치 릴리스 정보는 지원되는 Adobe Commerce 버
 ## 보안 패치 릴리스 정보
 
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
+
+<!-- Last updated from includes: 2025-05-28 16:37:31 -->

@@ -4,7 +4,7 @@ description: Adobe Commerce 프로젝트의 개발 단계에 대한 코드 관�
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ ht-degree: 0%
 1. **Git로 시작한 다음 작성기로 이동**
 
    프로젝트를 시작할 때 코드 관리 접근 방식을 선택합니다. Git에서 작성기로 전환하거나 반대로 지속적인 개발로 인해 번거롭고 코드 손실 및 개정 기록 손실이 발생할 수 있습니다.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

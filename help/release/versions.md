@@ -3,7 +3,7 @@ title: 릴리스된 버전
 description: Adobe Commerce의 특정 버전이 언제 릴리스되었는지 알아봅니다.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-source-git-commit: be9bc71e40d240aab528a4f5591f5e166416091b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -23,7 +23,9 @@ Adobe은 버전 2.4.4 및 2.4.5에서 Adobe Commerce 고객을 위해 추가 비
 >[!NOTE]
 >
 >- Adobe은 각 릴리스에 사용할 수 있는 최신 보안 패치로 Adobe Commerce을 설치하거나 업그레이드할 것을 권장합니다.
->- 다른 보안 업데이트는 [Magento/Adobe Commerce에 대한 보안 업데이트](https://helpx.adobe.com/kr/security/products/magento.html)를 참조하십시오.
+>- 다른 보안 업데이트는 [Magento/Adobe Commerce에 대한 보안 업데이트](https://helpx.adobe.com/security/products/magento.html)를 참조하십시오.
 >- 가격은 [Adobe Commerce 가격](https://business.adobe.com/products/magento/pricing.html)을 참조하세요.
 
 {{$include /help/_includes/templated/release/core-releases.md}}
+
+<!-- Last updated from includes: 2025-08-12 14:32:02 -->

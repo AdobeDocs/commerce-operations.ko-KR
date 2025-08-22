@@ -3,7 +3,7 @@ title: PHP 설정
 description: 다음 단계에 따라 필요한 PHP 확장 프로그램을 설치하고 Adobe Commerce의 온프레미스 설치에 필요한 PHP 설정을 구성합니다.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >최신 버전의 Adobe Commerce은 PHP 8.1 이상이 필요합니다. 지원되는 모든 PHP 버전에 대해서는 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
 
-클라우드 구성 지침은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=ko) 안내서에서 _PHP 설정_&#x200B;을 참조하십시오.
+클라우드 구성 지침은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 안내서에서 _PHP 설정_&#x200B;을 참조하십시오.
 
 ## PHP 프로세스 제어
 
@@ -210,3 +210,5 @@ PHP 문제 해결에 대한 도움말은 다음 Adobe Commerce 지원 문서를 
 - [PHP mcrypt 확장이 제대로 설치되지 않았습니다](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [PHP 버전 준비 확인 문제](https://support.magento.com/hc/en-us/articles/360033546411)
 - [일반적인 PHP 치명적인 오류 및 해결 방법](https://support.magento.com/hc/en-us/articles/360030568432)
+
+<!-- Last updated from includes: 2025-04-04 22:27:22 -->

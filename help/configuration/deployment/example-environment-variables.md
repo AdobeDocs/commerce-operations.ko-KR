@@ -2,7 +2,7 @@
 title: 환경 변수 사용 예
 description: 환경 변수를 사용하여 개발 시스템에서 공유, 시스템별 및 중요 값을 설정하는 방법의 예를 참조하십시오.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -197,3 +197,5 @@ $_ENV['VARIABLE'] = 'value';
    **기본 전자 메일 도메인** 필드의 값은 다음과 같이 표시됩니다. 이는 시스템별 설정입니다.
 
    ![프로덕션 시스템에서 설정을 확인](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->
