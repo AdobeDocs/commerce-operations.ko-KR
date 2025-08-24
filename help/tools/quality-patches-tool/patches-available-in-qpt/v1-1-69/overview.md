@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69에는 다음 패치가 포함됩니다.
 1. **ACSD-66404**: [!DNL Galera Cluster] 트랜잭션 크기 제한으로 인해 Cron 작업에서 변경 로그 테이블을 지우지 못했습니다.
 1. **ACSD-66952**: 대상 규칙이 설정되면 캐시가 각 PLP 또는 장바구니 방문에서 지워집니다.
 1. **ACSD-67264**: 번들 및 다운로드 가능한 제품 페이지 레이아웃이 여러 장치에서 일치하지 않습니다.
-1. **ACSD-67347**: 특수 문자 쿠폰 및 파일 잠금을 사용할 때 잠금 오류가 발생하여 주문이 실패합니다.
+1. **ACSD-67347**: 쿠폰 코드를 사용할 때 잠금을 획득할 수 없어 주문이 실패합니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
