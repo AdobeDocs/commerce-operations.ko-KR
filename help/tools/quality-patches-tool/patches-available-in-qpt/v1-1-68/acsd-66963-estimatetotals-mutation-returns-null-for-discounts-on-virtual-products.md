@@ -82,31 +82,31 @@ ACSD-66963 패치는 가상 제품만 있는 장바구니에 할인 코드가 �
 가상 제품만 들어 있는 카트에 대한 할인 정보가 포함되어 있습니다.
 
     &quot;
-    {
-    &quot;data&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;cart&quot;: {
-    &quot;prices&quot;: {
-    &quot;discounts&quot;: [
-    {
-    &quot;amount&quot;: {
+    &lbrace;
+    &quot;data&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;cart&quot;: &lbrace;
+    &quot;prices&quot;: &lbrace;
+    &quot;discounts&quot;: &lbrack;
+    &lbrace;
+    &quot;amount&quot;: &lbrace;
     &quot;value&quot;: 100.5,
     &quot;currency&quot;: &quot;USD&quot;
-    },
+    &rbrace;,
     &quot;label&quot;: &quot;테스트용 두 번째 할인 코드&quot;,
-    &quot;coupon&quot;: {
+    &quot;coupon&quot;: &lbrace;
     &quot;code&quot;: &quot;z3r0c00l&quot;
     ,
     &quot;apply_to&quot;: &quot;ITEM&quot;,
     &quot;type&quot;: null
     
-    ]
-    }
-    }
-    }
+    &rbrack;
+    &rbrace;
+    &rbrace;
+    &rbrace;
     ,
     &quot;확장&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 <u>실제 결과</u>:
@@ -114,18 +114,18 @@ ACSD-66963 패치는 가상 제품만 있는 장바구니에 할인 코드가 �
 가상 제품만 있는 장바구니의 경우 할인 정보가 *null*(으)로 반환됩니다.
 
     &quot;
-    {
-    &quot;data&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;cart&quot;: {
-    &quot;prices&quot;: {
+    &lbrace;
+    &quot;data&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;cart&quot;: &lbrace;
+    &quot;prices&quot;: &lbrace;
     &quot;discounts&quot;: null
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     ,
     &quot;extensions&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 ## 패치 적용
