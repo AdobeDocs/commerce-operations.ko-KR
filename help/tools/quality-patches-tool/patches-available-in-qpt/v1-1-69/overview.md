@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ QPT v1.1.69에는 다음 패치가 포함됩니다.
 1. **ACP2E-3731**: *[!UICONTROL Catalog, Search]* 가시성이 있는 제품 내보내기에 다른 스토어 보기의 레코드가 포함됩니다.
 1. **ACP2E-3767**: 번들 제품을 저장한 후 마지막 번들 옵션이 다시 나타납니다.
 1. **ACP2E-3964**: REST API를 통해 나열되지 않은 비디오로 구성 가능한 하위 제품.
+1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]**&#x200B;은(는) 비워 둘 수 없습니다.
+1. **ACP2E-4050**: **[!UICONTROL Free Shipping]**&#x200B;이(가) 다중 주소 체크아웃과 함께 적용되지 않았습니다.
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] 필드는 비워 둘 수 없습니다.
 1. **ACP2E-4050**: 번들 제품을 사용한 다중 배송 및 무료 배송에 대한 장바구니 가격 규칙이 실패했습니다.
 1. **ACSD-56226**: READ 쿼리가 `synchronous_replication`을(를) 사용하도록 설정한 오래된 데이터를 반환합니다.
