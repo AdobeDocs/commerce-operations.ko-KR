@@ -4,13 +4,13 @@ description: ACSD-66311 패치를 적용하여 웹 사이트 액세스가 제한
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
-source-git-commit: 841e660136354800dd9758d8c10e86c966be3a1e
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
+source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
-
 
 # ACSD-66311: 제한된 관리자의 사용자에 대해 회사 그리드가 느리게 로드됨
 
@@ -28,7 +28,7 @@ ACSD-66311 패치는 웹 사이트 액세스가 제한된 관리자의 경우 �
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -54,7 +54,6 @@ ACSD-66311 패치는 웹 사이트 액세스가 제한된 관리자의 경우 �
       | 2 | 1,500 |
       | 3 | 500 |
 
-
    1. 다음 쿼리를 실행하여 배포를 확인합니다.
 
       ```
@@ -76,14 +75,13 @@ ACSD-66311 패치는 웹 사이트 액세스가 제한된 관리자의 경우 �
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-      
-            company_id, COUNT(customer_id) AS customer_count 선택
-            출처: company_advanced_customer_entity
-            company_id별 그룹
-) 하위 쿼리
-CUSTOMER_count별 그룹
-ORDER BY customer_count;
-&quot;
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
+            ) AS subquery
+            GROUP BY customer_count
+            ORDER BY customer_count; 
+      ```
 
 1. 모든 데이터를 다시 인덱싱하여 **customer_grid_flat**&#x200B;에 항목을 생성합니다.
 1. **adminscope**(으)로 로그인합니다.
@@ -102,7 +100,7 @@ ORDER BY customer_count;
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 ](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 
