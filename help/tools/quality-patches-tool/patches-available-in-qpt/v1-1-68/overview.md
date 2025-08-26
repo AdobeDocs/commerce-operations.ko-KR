@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
+source-git-commit: 9dd2ea9464a8e0fb9e45fea44e17d2ded0193ba9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.68에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.68에는 다음 패치가 포함됩니다.
-1. **ACSD-58131**: 미디어 갤러리에 0바이트 이미지가 있으면 디렉터리의 모든 이미지를 표시하거나 선택할 수 없습니다.
+1. **ACSD-58131** 이전 미디어 갤러리에서 0바이트 이미지 파일로 인해 이미지를 로드하지 못했습니다.
 1. **ACSD-62146**: 주소 검색을 사용하도록 설정하고 &quot;고객 주소 수 제한&quot;을 1로 설정하면 선택한 청구 주소가 결제 페이지에서 사라집니다.
 1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: Adobe Commerce 백엔드가 매우 느리게 범주를 로드합니다.
 1. **ACSD-65938**: 인보이스를 만들지 못한 경우에도 기프트 카드 전자 메일이 전송되었습니다.
