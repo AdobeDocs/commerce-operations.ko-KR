@@ -36,12 +36,12 @@ ACSD-58108 패치는 주문 그리드 사용자 정의 모듈 확장에서 누�
 
 <u>재현 단계</u>:
 
-01. 2.4-develop 인스턴스를 설치합니다.
-02. 새 주문을 만듭니다.
-03. SQL 확장을 사용하여 사용자 지정 모듈을 설치합니다.
-04. **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**(으)로 이동합니다.
-05. **[!UICONTROL Purchase Date]** 필터를 적용하고 결과를 기다립니다.
-06. **[!UICONTROL Product SKU]** 필터를 적용합니다.
+&#x200B;01. 2.4-develop 인스턴스를 설치합니다.
+&#x200B;02. 새 주문을 만듭니다.
+&#x200B;03. SQL 확장을 사용하여 사용자 지정 모듈을 설치합니다.
+&#x200B;04. **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**(으)로 이동합니다.
+&#x200B;05. **[!UICONTROL Purchase Date]** 필터를 적용하고 결과를 기다립니다.
+&#x200B;06. **[!UICONTROL Product SKU]** 필터를 적용합니다.
 
 <u>예상 결과</u>:
 
