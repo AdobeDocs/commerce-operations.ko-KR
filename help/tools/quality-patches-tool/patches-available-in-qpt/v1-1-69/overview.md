@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69에는 다음 패치가 포함됩니다.
 1. **ACP2E-4050**: 번들 제품을 사용한 다중 배송 및 무료 배송에 대한 장바구니 가격 규칙이 실패했습니다.
 1. **ACSD-56226**: READ 쿼리가 `synchronous_replication`을(를) 사용하도록 설정한 오래된 데이터를 반환합니다.
 1. **ACSD-57477**: 장바구니 관련 요청에 대한 판매 규칙 처리가 느려집니다.
-1. **ACSD-58108**: 조인 테이블 이름이 없으면 order grid 사용자 지정 모듈 확장에서 SQL 오류가 발생합니다.
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: 조인 테이블 이름이 없으면 order grid 사용자 지정 모듈 확장에서 SQL 오류가 발생합니다.
 1. **ACSD-65983**: Admin에서 번들 제품 견적을 다시 구성할 때 오류가 발생합니다.
 1. **ACSD-66149**: IPN 처리기가 지원되지 않는 형식에 대해 500을 반환합니다.
 1. **ACSD-66153**: 캐시된 잘못된 레이아웃 구조로 인해 페이지가 500 오류를 반환합니다.
