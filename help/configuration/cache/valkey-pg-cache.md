@@ -3,9 +3,9 @@ title: 기본 캐시에 Valkey 사용
 description: Valkey를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 - `--cache-backend-valkey-<parameter>=<value>`은(는) 기본 캐싱을 구성하는 키-값 쌍의 목록입니다.
 
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+```
+
 | 명령줄 매개 변수 | 값 | 의미 | 기본값 |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값인 `127.0.0.1`은(는) Valkey가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
@@ -42,6 +50,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
+```
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
 ## 페이지 캐싱 구성
@@ -58,6 +74,14 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>
 
 - `--page-cache-valkey-<parameter>=<value>`은(는) 페이지 캐싱을 구성하는 키 및 값 쌍의 목록입니다.
 
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
+```
+
 | 명령줄 매개 변수 | 값 | 의미 | 기본값 |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값인 `127.0.0.1`은(는) Valkey가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
@@ -71,6 +95,14 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
+```
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
 ## 결과

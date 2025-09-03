@@ -3,9 +3,9 @@ title: 세션 저장소에 Valkey 사용
 description: 세션 저장소에 대한 Valkey를 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,15 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey`이(가) Valkey 세션 저장소를 사용하도록 설정합니다. 이 기능이 이미 활성화되어 있으면 이 매개변수를 생략합니다.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>`은(는) 세션 저장소를 구성하는 매개 변수/값 쌍의 목록입니다.
+
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9-alpha2**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
+```
 
 | 명령줄 매개 변수 | 매개 변수 이름 | 의미 | 기본값 |
 |----------------------------------------------|--- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
@@ -60,6 +69,14 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
+```
+
+>[!NOTE]
+>
+>**Adobe Commerce 2.4.9**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
 ### 결과
