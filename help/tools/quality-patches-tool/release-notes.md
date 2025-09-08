@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
+source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
 workflow-type: tm+mt
-source-wordcount: '28046'
+source-wordcount: '28348'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,26 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6-p3 &lt;2.4.9) - USPS 통합을 오래된 Web Tools API에서 새로운 RESTful USPS API로 마이그레이션합니다.
+* **ACSD-67102**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - Adobe Commerce 백엔드가 **[!UICONTROL Categories]**&#x200B;을(를) 매우 느리게 로드하는 문제를 해결했습니다.
+* **ACSD-66120**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 카탈로그 가격이 세금을 포함하도록 구성된 경우 [!DNL GraphQL]에 할인 비율과 기본 가격이 잘못 표시되는 문제가 해결되었습니다.
+* **ACSD-66157**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.9) - 다른 시간대에 만든 웹 사이트에 대해 특별 가격이 적용되지 않는 문제를 해결했습니다.
+* **ACSD-67659**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 번역된 오류 메시지가 정의되지 않은 오류 코드를 반환하는 문제를 수정합니다.
+* **ACSD-67166**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - 상점 첫 화면에서 견적을 로드할 때 `cataloginventory_stock_status` 쿼리가 여러 번 실행되어 중복 데이터베이스 호출이 발생하는 문제를 해결합니다.
+* **ACSD-67289**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 특별 가격이 적용되면 정기 가격이 표시되지 않는 문제를 해결했습니다.
+* **ACSD-67686**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p15 &lt;2.4.5 || >=2.4.5-p14 &lt;2.4.6 || >=2.4.6-p12 &lt;2.4.7) - 빈 `Syntax Error: Unexpected <EOF>` 요청을 제출할 때 [!DNL GraphQL] 오류가 발생하는 문제를 수정합니다.
+* **ACSD-67250**(Adobe Commerce >=2.4.7-p4 &lt;2.4.8) - **[!UICONTROL Shared Catalog]** 저장 작업이 영향을 받는 항목만 업데이트하지 않고 모든 항목을 업데이트하는 문제를 해결하여 불필요한 작업을 제거하여 성능을 개선합니다.
+* **ACSD-67030**(Adobe Commerce >=2.4.4 &lt;2.4.9) - 제한된 역할 관리자가 편집할 때 구성 가능한 제품에서 간단한 제품이 할당되지 않는 문제를 해결했습니다.
+* 업데이트된 버전: **ACSD-54095**, **ACSD-51636**, **ACSD-51739**, **ACSD-66093**
+* 대체된 패치: **ACSD-62415**
 
 ## v1.1.69 {#v1-1-69}
 
