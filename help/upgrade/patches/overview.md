@@ -62,7 +62,7 @@ Adobe 엔지니어링 팀이 공식 Adobe Commerce 릴리스의 GitHub에서 버
 사용자 지정 패치를 만들려면 다음 작업을 수행하십시오.
 
 1. 로컬 프로젝트에 `patches/composer` 디렉터리를 만듭니다.
-1. 패치에 사용할 GitHub 커밋 또는 가져오기 요청을 식별합니다. 이 예제에서는 GitHub 문제 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)에 연결된 [](https://github.com/magento/magento2/issues/6474) 커밋을 사용합니다.
+1. 패치에 사용할 GitHub 커밋 또는 가져오기 요청을 식별합니다. 이 예제에서는 GitHub 문제 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)에 연결된 [&#128279;](https://github.com/magento/magento2/issues/6474) 커밋을 사용합니다.
 1. `.patch` 또는 `.diff` 확장을 커밋 URL에 추가합니다. 파일 크기가 더 작은 경우 `.diff`을(를) 사용하십시오. 예: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. 페이지를 `patches/composer` 디렉터리에 파일로 저장합니다. 예: `github-issue-6474.diff`.
 1. 파일을 편집하고 `app/code/<VENDOR>/<PACKAGE>` 디렉터리에 상대적이 되도록 모든 경로에서 `vendor/<VENDOR>/<PACKAGE>`을(를) 제거합니다.
