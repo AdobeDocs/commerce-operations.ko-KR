@@ -43,7 +43,7 @@ ht-degree: 0%
 
 개별 패치에는 특정 문제에 대한 영향이 적은 품질 수정 사항이 포함되어 있습니다. 이러한 수정 사항은 가장 최근에 지원되는 부 버전(예: 2.4.x)에 적용되지만 이전에 지원되는 부 버전(예: 2.3.x)에서 누락될 수 있습니다. Adobe은 필요에 따라 개별 패치를 릴리스합니다.
 
-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용하여 개별 패치를 적용하십시오.
+[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용하여 개별 패치를 적용하십시오.
 
 >[!NOTE]
 >
@@ -92,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
 - [명령줄](/help/upgrade/patches/apply.md#command-line)
 - [작성기](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 패치를 적용하려면 [Cloud의 Commerce 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)에서 _패치 적용_&#x200B;을 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에 패치를 적용하려면 [Cloud의 Commerce 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko)에서 _패치 적용_&#x200B;을 참조하십시오.

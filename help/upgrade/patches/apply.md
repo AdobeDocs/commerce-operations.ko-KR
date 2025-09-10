@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
 - [명령줄](../patches/apply.md#command-line)
 - [작성기](../patches/apply.md#composer)
 
