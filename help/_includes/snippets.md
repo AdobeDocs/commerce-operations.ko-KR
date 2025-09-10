@@ -1,7 +1,7 @@
 ---
-source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -80,3 +80,9 @@ ht-degree: 0%
 ## PHP 프로세스 제어 {#php-process-control}
 
 병렬 모드에서 인덱서를 실행하려면 먼저 PHP에서 프로세스 제어 지원(`pcntl`)을 사용하도록 설정해야 합니다. PHP 설명서에서 [설치](https://www.php.net/manual/en/pcntl.installation.php)를 참조하십시오.
+
+## 사용자 지정 패치 {#custom-patches-disclaimer}
+
+>[!IMPORTANT]
+>
+>Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.

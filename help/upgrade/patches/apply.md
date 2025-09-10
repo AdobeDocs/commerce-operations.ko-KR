@@ -2,9 +2,9 @@
 title: 패치 적용
 description: Adobe Commerce 프로젝트에 패치를 적용하는 방법에 대해 알아봅니다.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [명령줄](../patches/apply.md#command-line)
 - [작성기](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ ht-degree: 0%
 
 ## 작성기
 
->[!IMPORTANT]
->
->공식 품질 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+{{custom-patches-disclaimer}}
 
 작성기를 사용하여 사용자 정의 패치를 적용하려면 다음을 수행합니다.
 

@@ -2,7 +2,7 @@
 title: 패치 작동 방식
 description: Adobe Commerce에 대한 다양한 유형의 패치와 그 작동 방식에 대해 알아봅니다.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 개별 패치에는 특정 문제에 대한 영향이 적은 품질 수정 사항이 포함되어 있습니다. 이러한 수정 사항은 가장 최근에 지원되는 부 버전(예: 2.4.x)에 적용되지만 이전에 지원되는 부 버전(예: 2.3.x)에서 누락될 수 있습니다. Adobe은 필요에 따라 개별 패치를 릴리스합니다.
 
-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용하여 개별 패치를 적용하십시오.
+[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용하여 개별 패치를 적용하십시오.
 
 >[!NOTE]
 >
@@ -51,7 +51,9 @@ ht-degree: 0%
 
 ## 사용자 지정 패치
 
-Adobe 엔지니어링 팀이 Adobe Commerce Composer 릴리스의 GitHub에서 버그 수정을 포함하는 데 시간이 조금 걸릴 수 있습니다. 그동안 GitHub에서 패치를 만들고 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 플러그인을 사용하여 작성기 기반 설치에 적용할 수 있습니다.
+Adobe 엔지니어링 팀이 공식 Adobe Commerce 릴리스의 GitHub에서 버그 수정을 포함하는 데 시간이 조금 걸릴 수 있습니다. 그동안 GitHub에서 패치를 만들고 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 플러그인을 사용하여 작성기 기반 설치에 적용할 수 있습니다.
+
+{{custom-patches-disclaimer}}
 
 사용자 지정 패치를 적용하려면 [명령줄](apply.md#command-line) 또는 [작성기](apply.md#composer)를 사용하십시오.
 
@@ -60,7 +62,7 @@ Adobe 엔지니어링 팀이 Adobe Commerce Composer 릴리스의 GitHub에서 �
 사용자 지정 패치를 만들려면 다음 작업을 수행하십시오.
 
 1. 로컬 프로젝트에 `patches/composer` 디렉터리를 만듭니다.
-1. 패치에 사용할 GitHub 커밋 또는 가져오기 요청을 식별합니다. 이 예제에서는 GitHub 문제 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)에 연결된 [&#128279;](https://github.com/magento/magento2/issues/6474) 커밋을 사용합니다.
+1. 패치에 사용할 GitHub 커밋 또는 가져오기 요청을 식별합니다. 이 예제에서는 GitHub 문제 [`2d31571`#6474](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)에 연결된 [](https://github.com/magento/magento2/issues/6474) 커밋을 사용합니다.
 1. `.patch` 또는 `.diff` 확장을 커밋 URL에 추가합니다. 파일 크기가 더 작은 경우 `.diff`을(를) 사용하십시오. 예: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. 페이지를 `patches/composer` 디렉터리에 파일로 저장합니다. 예: `github-issue-6474.diff`.
 1. 파일을 편집하고 `app/code/<VENDOR>/<PACKAGE>` 디렉터리에 상대적이 되도록 모든 경로에서 `vendor/<VENDOR>/<PACKAGE>`을(를) 제거합니다.
@@ -90,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [명령줄](/help/upgrade/patches/apply.md#command-line)
 - [작성기](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 패치를 적용하려면 [Cloud의 Commerce 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko)에서 _패치 적용_&#x200B;을 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에 패치를 적용하려면 [Cloud의 Commerce 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)에서 _패치 적용_&#x200B;을 참조하십시오.
