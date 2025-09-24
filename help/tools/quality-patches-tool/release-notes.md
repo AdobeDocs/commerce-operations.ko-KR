@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
+source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
 workflow-type: tm+mt
-source-wordcount: '28348'
+source-wordcount: '28592'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,23 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.71 {#v1-1-71}
+
+* **ACSD-60624**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.8) - 페이지 빌더의 **[!UICONTROL Upload Image]**, [!UICONTROL Image] 및 [!UICONTROL Banner] 섹션에서 빈 콘텐츠에 대해 [!UICONTROL Slider]이(가) 작동하지 않는 문제를 해결했습니다.
+* **ACSD-67089**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - `inventory/export-stock-salable-qty`을(를) 페이지 크기로 잘못 제한하는 `total_count` API의 페이지 매김 문제를 해결했습니다.
+* **ACSD-67093**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 날짜 범위 필터를 사용하여 GraphQL을 통해 주문을 검색하면 잘못된 결과가 반환되는 문제를 해결했습니다.
+* **ACSD-67459**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.9) - 65,536자를 초과하는 설명을 가진 제품을 가져올 수 없는 문제를 해결했습니다.
+* **ACSD-67603**(Adobe Commerce >=2.4.6 &lt;2.4.8) - 이미지 포함 기능이 있는 제품에 대한 사이트 맵 생성으로 인해 처리 시간이 길어지는 문제를 해결했습니다.
+* **ACSD-67643**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 중첩된 범주가 많은 환경에서 예약된 업데이트 동안 중복 항목이 생성되는 문제를 수정합니다.
+* **ACSD-67652**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 하위 제품 및 상위 제품이 재고에 있더라도 GraphQL 호출에서 번들 제품 상태가 품절로 반환되는 문제를 해결했습니다.
+* **ACSD-67904**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 도시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()()가 포함된 경우 주문을 할 수 없는 문제를 수정합니다.
+* 대체된 패치: **ACSD-61322**, **ACSD-65848**
 
 ## v1.1.70 {#v1-1-70}
 
