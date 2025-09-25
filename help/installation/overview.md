@@ -2,10 +2,10 @@
 title: 온프레미스 설치 개요
 description: Adobe Commerce 및 Magento Open Source의 온프레미스 배포를 위한 설치 프로세스에 대해 알아봅니다.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 이 페이지에서는 자체 인프라에 Adobe Commerce을 설치하는 방법에 대한 개요를 제공합니다. 설치 프로세스에는 서버 환경 설정, 필요한 소프트웨어 및 자격 증명 획득, 설치 명령 실행 등이 포함됩니다.
 
-약 30~60분 내에 Adobe Commerce 소프트웨어를 설치할 수 있습니다. 그러나 설치 전에 서버 환경을 설정하는 데 필요한 시간은 사용자 경험과 선택하는 기술에 따라 다릅니다.
+약 30~60분 내에 Adobe Commerce 온프레미스 소프트웨어를 설치할 수 있습니다. 그러나 설치 전에 서버 환경을 설정하는 데 필요한 시간은 사용자 경험과 선택하는 기술에 따라 다릅니다.
 
 >[!TIP]
 >
 >성공적으로 진행하려면 중간 기술 지식과 서버 액세스 권한이 있어야 합니다.
 
-설치를 통해 [고객 응대 상점](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/storefront/storefront) 및 [관리 패널](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/admin/admin)이 모두 포함된 완전한 기능의 Adobe Commerce 스토어가 만들어집니다. 프로세스를 시작하기 전에 데이터베이스 자격 증명, 도메인 정보 및 인증 키를 준비해야 합니다.
+설치를 통해 [고객 응대 상점](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 및 [관리 패널](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)이 모두 포함된 완전한 기능의 Adobe Commerce 스토어가 만들어집니다. 프로세스를 시작하기 전에 데이터베이스 자격 증명, 도메인 정보 및 인증 키를 준비해야 합니다.
+
+## 판매자 책임
+
+Adobe Commerce 온프레미스를 사용하면 서버, 호스팅 환경 및 시스템 유지 관리를 포함한 자체 인프라를 호스팅 및 관리할 수 있습니다. Adobe은 다음을 포함하여 핵심 Commerce 애플리케이션에 대한 지원을 특별히 제공합니다.
+
+- 제품 업데이트 및 수정 사항에 대한 액세스
+- 취약점 해결을 위한 보안 패치
+- 자체 호스팅 솔루션의 관리 및 최적화에 도움이 되는 포괄적인 설명서
+
+고객은 환경을 완벽하게 제어할 수 있으므로 사용자 정의 및 유연성을 향상시킬 수 있지만 인프라의 성능, 보안 및 확장성을 보장할 책임이 있습니다. 예를 들어, 다음 책임은 귀하에게 있습니다.
+
+- 모든 Adobe Commerce 온프레미스 시스템의 디자인, 구현, 구성, 유지 관리, 문제 해결 및 성능 테스트.
+   - 서버, 운영 체제, 데이터베이스, [!DNL PHP], 검색, 캐싱, 전체 페이지 캐시 및 콘텐츠 전달 네트워크. 일반적인 테마는 [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] 및 사용된 모든 [!DNL CDN]을(를) 포함할 수 있습니다(이에 국한되지 않음).
+- 용량 계획, 자동 확장, 클러스터링, 백업, 재해 복구
+- 모든 제품 및 고객 데이터, 디자인, 구성 및 설정, 애플리케이션 및 데이터베이스 유지 보수, 코드 배포, 버전 업그레이드 및 패치 애플리케이션
+- APM/로깅/경고를 통한 모니터링 및 경고(예: [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
+- 운영 체제, [!DNL PHP], 데이터베이스, 미들웨어 강화 및 업데이트를 위한 보안 패치
 
 ## 워크플로
 
