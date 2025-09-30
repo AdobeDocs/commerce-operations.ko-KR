@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ## Commerce 서비스
 
-[Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)는 Commerce 인스턴스와 함께 강력한 기능과 빠른 응답 시간을 제공하는 Adobe 호스팅 기능 세트입니다.
+[Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ko)는 Commerce 인스턴스와 함께 강력한 기능과 빠른 응답 시간을 제공하는 Adobe 호스팅 기능 세트입니다.
 
 상인은 가장 최신 버전의 서비스를 사용하여 가장 높은 안정성과 기능을 보장하는 것이 좋습니다. 이 설명서에서는 현재 릴리스된 버전에 대해 설명합니다.
 
