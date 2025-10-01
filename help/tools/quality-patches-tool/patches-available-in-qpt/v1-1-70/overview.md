@@ -3,9 +3,9 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.70'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.70에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 9394bdaec258299bf7def327bf2e01792ada2eeb
+source-git-commit: fa246140cf582bd96151715073ddb8f4b0c7c648
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.70에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.70에는 다음 패치가 포함됩니다.
-1. **ACSD-67102**: 범주 및 제품의 수가 많은 경우 범주 로드 속도가 느려지거나 시간이 초과됩니다.
+1. **ACSD-67102**: 범주 및 제품의 수가 많으면 범주 로드가 느리거나 시간이 초과됩니다.
 1. **ACSD-66120**: [!DNL GraphQL]에 세금 포함 카탈로그 가격이 있는 기본 가격과 잘못된 할인 비율이 표시됩니다.
 1. **ACSD-66157**: 다른 시간대에 만들어진 웹 사이트에는 특별 가격이 적용되지 않습니다.
 1. **ACSD-67659**: 번역된 오류 메시지가 정의되지 않은 코드를 반환합니다.
