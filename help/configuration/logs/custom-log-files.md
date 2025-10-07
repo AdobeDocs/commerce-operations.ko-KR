@@ -46,7 +46,7 @@ ht-degree: 0%
 
    `name`의 `Magento\Payment\Model\Method\MyCustomDebug` 값은 고유해야 합니다.
 
-1. 고유한 [을(를) 가진 다른 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`name`에서 처리기를 정의합니다.
+1. 고유한 [을(를) 가진 다른 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`name`에서 처리기를 정의합니다.
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `MyCustomLogger` 개체에 [ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
+1. `MyCustomLogger` 개체에 [&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 이 클래스의 핸들러를 모듈의 [ 파일에서 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`di.xml`(으)로 정의합니다.
+1. 이 클래스의 핸들러를 모듈의 [&#x200B; 파일에서 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`di.xml`(으)로 정의합니다.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

@@ -34,7 +34,7 @@ Adobe은 조기 채택자에게 향상된 기능과 새로운 기능을 더 빨�
 
 >[!NOTE]
 >
->기능, 클라우드 인프라 및 확장성 릴리스는 연중 달라질 수 있습니다. 그러나 Adobe은 이 페이지에 지정된 날짜 사이에 이러한 영역에 대한 개선 사항을 정기적으로 및 지속적으로 릴리스합니다. [Adobe Commerce 소개최신 기능에 대해 자세히 알아보려면 ](https://business.adobe.com/products/magento/magento-commerce.html).
+>기능, 클라우드 인프라 및 확장성 릴리스는 연중 달라질 수 있습니다. 그러나 Adobe은 이 페이지에 지정된 날짜 사이에 이러한 영역에 대한 개선 사항을 정기적으로 및 지속적으로 릴리스합니다. [Adobe Commerce 소개최신 기능에 대해 자세히 알아보려면 &#x200B;](https://business.adobe.com/products/magento/magento-commerce.html).
 
 ## 패치
 

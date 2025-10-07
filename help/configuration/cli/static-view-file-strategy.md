@@ -66,7 +66,7 @@ ht-degree: 0%
 - `map.php`
 - `requirejs-map.js`
 
-`map.php`[`Magento\Framework\View\Asset\Repository`이(가) 올바른 URL을 빌드하는 데 ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) 파일을 사용합니다.
+`map.php`[`Magento\Framework\View\Asset\Repository`이(가) 올바른 URL을 빌드하는 데 &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) 파일을 사용합니다.
 
 `requirejs-map.js`은(는) RequireJS에 대한 `baseUrlResolver` 플러그인에서 사용됩니다.
 

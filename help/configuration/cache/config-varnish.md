@@ -92,7 +92,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 - Magento 2 GitHub 저장소의 [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
 - Commerce에서 제공된 Apache용 `.htaccess` 분산 구성 파일
-- `default.vcl`관리자[를 사용하여 생성된 Vannish에 대한 ](../cache/configure-varnish-commerce.md) 구성
+- `default.vcl`관리자[를 사용하여 생성된 Vannish에 대한 &#x200B;](../cache/configure-varnish-commerce.md) 구성
 
 >[!INFO]
 >

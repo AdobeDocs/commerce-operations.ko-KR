@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 1단계: 캐시 프론트엔드 정의
 
-Commerce 응용 프로그램에는 `default`캐시 형식[에 사용할 수 있는 ](../cli/manage-cache.md#clean-and-flush-cache-types) 캐시 프론트엔드가 있습니다. 이 섹션에서는 선택적으로 다른 이름으로 캐시 프론트엔드를 정의하는 방법에 대해 설명합니다. 이는 프론트엔드를 사용자 정의하려는 경우에 유용합니다.
+Commerce 응용 프로그램에는 `default`캐시 형식[에 사용할 수 있는 &#x200B;](../cli/manage-cache.md#clean-and-flush-cache-types) 캐시 프론트엔드가 있습니다. 이 섹션에서는 선택적으로 다른 이름으로 캐시 프론트엔드를 정의하는 방법에 대해 설명합니다. 이는 프론트엔드를 사용자 정의하려는 경우에 유용합니다.
 
 >[!INFO]
 >

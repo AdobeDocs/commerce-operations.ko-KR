@@ -20,7 +20,7 @@ ht-degree: 0%
    - [레디스](config-redis.md)
    - 파일 시스템(기본값): 기본 파일 시스템 캐싱을 사용하기 위해 구성이 필요하지 않습니다.
 
-- [ 구성을 수정하지 않고 ](config-varnish.md)Varnish[!DNL Commerce]을 설정합니다.
+- [&#x200B; 구성을 수정하지 않고 &#x200B;](config-varnish.md)Varnish[!DNL Commerce]을 설정합니다.
 
 ## 캐싱 용어
 

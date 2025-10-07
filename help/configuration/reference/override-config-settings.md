@@ -13,7 +13,7 @@ ht-degree: 0%
 
 이 항목에서는 구성 경로를 알고 있는 환경 변수 이름을 파생하는 방법에 대해 설명합니다. 환경 변수를 사용하여 Adobe Commerce 구성 설정을 재정의할 수 있습니다. 예를 들어 프로덕션 시스템에서 결제 프로세서의 라이브 URL 값을 재정의할 수 있습니다.
 
-Adobe 환경 변수를 사용하여 _any_ 구성 설정의 값을 재정의할 수 있습니다. 그러나 `config.php`배포 일반 개요`env.php`에 설명된 대로 공유 구성 파일 [과(와) 시스템별 구성 파일 ](../deployment/overview.md)을(를) 사용하여 일관된 설정을 유지하는 것이 좋습니다.
+Adobe 환경 변수를 사용하여 _any_ 구성 설정의 값을 재정의할 수 있습니다. 그러나 `config.php`배포 일반 개요`env.php`에 설명된 대로 공유 구성 파일 [과(와) 시스템별 구성 파일 &#x200B;](../deployment/overview.md)을(를) 사용하여 일관된 설정을 유지하는 것이 좋습니다.
 
 >[!TIP]
 >
@@ -106,7 +106,7 @@ Adobe 환경 변수를 사용하여 _any_ 구성 설정의 값을 재정의할 �
    - 전체 변수 이름은 항상 모두 대문자입니다.
    - `CONFIG__`(으)로 변수 이름 시작(밑줄 문자 2개 참고)
    - 다음 섹션에 표시된 대로 Admin 또는 Commerce 데이터베이스에서 변수 이름의 `<STORE_VIEW_CODE>` 또는 `<WEBSITE_CODE>` 부분을 찾을 수 있습니다.
-   - `<SYSTEM__VARIABLE__NAME>`2단계: 전역, 웹 사이트 또는 스토어 보기 변수 설정[에서 설명한 대로 ](#step-2-set-global-website-or-store-view-variables)을(를) 찾을 수 있습니다.
+   - `<SYSTEM__VARIABLE__NAME>`2단계: 전역, 웹 사이트 또는 스토어 보기 변수 설정[에서 설명한 대로 &#x200B;](#step-2-set-global-website-or-store-view-variables)을(를) 찾을 수 있습니다.
 
 ### 관리자에서 웹 사이트 또는 스토어 보기 범위 찾기
 

@@ -26,13 +26,13 @@ ht-degree: 0%
 >[!NOTE]
 >
 >**[!DNL Support Permissions]**&#x200B;에 액세스하려면 계정에 [!DNL Site-Wide Analysis Tool Dashboard] 권한이 있어야 합니다.
->>자세한 내용은 사용 안내서의 [계정 공유 [!DNL Commerce] 에서 확인하세요](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html).
+>&#x200B;>자세한 내용은 사용 안내서의 [계정 공유 [!DNL Commerce] 에서 확인하세요](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html).
 
 ## 스토어의 [!DNL Site-Wide Analysis Tool Dashboard]에서 [!UICONTROL Admin Panel]에 로그인
 
 ### 1단계: 권한 확인
 
-[!UICONTROL Admin] 사용자 계정에 [!DNL Site-Wide Analysis Tool]할당된 사용자 역할[을(를) 통해 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)에 액세스할 수 있는 권한이 있는지 확인하십시오.
+[!UICONTROL Admin] 사용자 계정에 [!DNL Site-Wide Analysis Tool]할당된 사용자 역할[을(를) 통해 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)에 액세스할 수 있는 권한이 있는지 확인하십시오.
 
 >[!IMPORTANT]
 >

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 문제
 
-[!DNL New Relic]Adobe Commerce에 대한 관리 경고[에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 ](managed-alerts-for-magento-commerce.md)에서 경고를 받게 됩니다. 이러한 경고는 지원 및 엔지니어링의 인사이트를 사용하여 고객에게 표준 세트를 제공하기 위해 Adobe에서 개발했습니다.
+[!DNL New Relic]Adobe Commerce에 대한 관리 경고[에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 &#x200B;](managed-alerts-for-magento-commerce.md)에서 경고를 받게 됩니다. 이러한 경고는 지원 및 엔지니어링의 인사이트를 사용하여 고객에게 표준 세트를 제공하기 위해 Adobe에서 개발했습니다.
 
 <u> **실행!** </u>
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 다음 단계에 따라 원인을 식별하고 해결하십시오.
 
-1. [!DNL New Relic]에서 사용 빈도가 가장 높은 디스크를 검토하십시오. 단계는 **[!UICONTROL Storage]**&#x200B;인프라 모니터링 호스트 페이지 [[!DNL New Relic]  탭[!UICONTROL Storage]의 ](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage) 탭을 참조하십시오.
+1. [!DNL New Relic]에서 사용 빈도가 가장 높은 디스크를 검토하십시오. 단계는 **[!UICONTROL Storage]**&#x200B;인프라 모니터링 호스트 페이지 [[!DNL New Relic]  탭[!UICONTROL Storage]의 &#x200B;](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage) 탭을 참조하십시오.
    * [!DNL New Relic]에서 디스크 사용량이 느리게 증가하는 경우 다음 옵션을 시도해 보십시오.
       * 공간 할당을 조정하여 디스크 공간을 최적화합니다. 단계는 Commerce on Cloud Guide의 [디스크 공간 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)를 참조하십시오. 추가 디스크 공간을 요청해야 할 수도 있습니다(Adobe 계정 팀에 문의).
       * MySQL의 디스크 공간을 정리합니다. 단계는 [MySQL 디스크 공간이 부족함](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud)을 참조하세요.

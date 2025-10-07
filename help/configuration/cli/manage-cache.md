@@ -68,7 +68,7 @@ Current status:
 
 >[!INFO]
 >
->버전 2.2부터 프로덕션 모드에서 Commerce을 실행하는 동안 명령줄을 사용해서만 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 개발자 모드에서 Commerce을 실행하는 경우 명령줄을 사용하거나 수동으로 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 이렇게 하려면 먼저 `<magento_root>/app/etc/env.php`파일 시스템 소유자[가 ](../../installation/prerequisites/file-system/overview.md)을(를) 수동으로 쓸 수 있게 해야 합니다.
+>버전 2.2부터 프로덕션 모드에서 Commerce을 실행하는 동안 명령줄을 사용해서만 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 개발자 모드에서 Commerce을 실행하는 경우 명령줄을 사용하거나 수동으로 캐시 유형을 활성화하거나 비활성화할 수 있습니다. 이렇게 하려면 먼저 `<magento_root>/app/etc/env.php`파일 시스템 소유자[가 &#x200B;](../../installation/prerequisites/file-system/overview.md)을(를) 수동으로 쓸 수 있게 해야 합니다.
 
 명령줄 또는 관리자를 사용하여 캐시 유형을 정리(_플러시_ 또는 _새로 고침_&#x200B;이라고도 함)할 수 있습니다.
 

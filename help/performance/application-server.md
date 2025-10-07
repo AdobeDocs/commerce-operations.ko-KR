@@ -18,7 +18,7 @@ GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. M
 
 >[!NOTE]
 >
->GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [!DNL AWS S3]원격 저장소[에 대해 ](../configuration/remote-storage/cloud-support.md)을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
+>GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [!DNL AWS S3]원격 저장소[에 대해 &#x200B;](../configuration/remote-storage/cloud-support.md)을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
 
 ## 아키텍처
 
@@ -43,7 +43,7 @@ GraphQL Application Server를 실행하려면 다음이 필요합니다.
 
 ### 클라우드 프로젝트
 
-클라우드 인프라 프로젝트의 Adobe Commerce에는 기본적으로 Swool 확장이 포함되어 있습니다. [ 파일의 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) 속성에서 이 기능을 `runtime`활성화`.magento.app.yaml`할 수 있습니다. For example:
+클라우드 인프라 프로젝트의 Adobe Commerce에는 기본적으로 Swool 확장이 포함되어 있습니다. [&#x200B; 파일의 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) 속성에서 이 기능을 `runtime`활성화`.magento.app.yaml`할 수 있습니다. For example:
 
 ```yaml
 runtime:

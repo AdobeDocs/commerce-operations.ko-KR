@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![마지막 DB 저장 이후 변경 내용 수정](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis]은(는) 메모리에 상주하며 정보를 저장소에 저장합니다. **[!UICONTROL Redis changes since last db save]** 프레임은 마지막 데이터베이스가 저장소에 저장된 이후에 발생한 메모리 변경 사항의 수를 나타냅니다. [ 지속성에 대한 자세한 내용은 ](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)Redis 지속성[!DNL Redis's]을 참조하세요.
+[!DNL Redis]은(는) 메모리에 상주하며 정보를 저장소에 저장합니다. **[!UICONTROL Redis changes since last db save]** 프레임은 마지막 데이터베이스가 저장소에 저장된 이후에 발생한 메모리 변경 사항의 수를 나타냅니다. [&#x200B; 지속성에 대한 자세한 내용은 &#x200B;](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)Redis 지속성[!DNL Redis's]을 참조하세요.
 
 ## [!UICONTROL Redis synchronization from Log]
 

@@ -37,7 +37,7 @@ _비동기 순서_ 모듈을 사용하면 순서를 `received`(으)로 표시하
 - **제품 사용 가능**—주문 상태가 _보류 중_(으)로 변경되고, 제품 수량이 조정되고, 주문 세부 정보가 포함된 이메일이 고객에게 전송되며, 주문 세부 정보가 **주문 및 반품** 목록에서 재주문과 같은 실행 가능한 옵션과 함께 볼 수 있게 됩니다.
 - **제품 품절 또는 공급 부족**—주문 상태가 _거부됨_(으)로 변경되고, 제품 수량이 조정되지 않으며, 문제에 대한 주문 세부 정보가 포함된 전자 메일이 고객에게 전송되고, **주문 및 반품** 목록에서 실행 가능한 옵션이 없는 거부된 주문 세부 정보를 사용할 수 있습니다.
 
-명령줄 인터페이스를 사용하여 이러한 기능을 사용하도록 설정하거나 `app/etc/env.php`모듈 참조 안내서&#x200B;[__&#x200B;에 정의된 해당 README 파일에 따라 ](https://developer.adobe.com/commerce/php/module-reference/) 파일을 편집하십시오.
+명령줄 인터페이스를 사용하여 이러한 기능을 사용하도록 설정하거나 `app/etc/env.php`모듈 참조 안내서&#x200B;[__&#x200B;에 정의된 해당 README 파일에 따라 &#x200B;](https://developer.adobe.com/commerce/php/module-reference/) 파일을 편집하십시오.
 
 **AsyncOrder를 사용하려면**:
 
@@ -89,7 +89,7 @@ AsyncOrder는 제한된 Adobe Commerce 기능 세트를 지원합니다.
 | 결제 방법 | 수표/우편환<br>배달 시 현금<br>Braintree<br>PayPal PayFlow Pro |
 | 배송 방법 | 모든 배송 방법이 지원됩니다. |
 
-다음 기능은 AsyncOrder에서 지원되지 않는 ****&#x200B;이지만 동기적으로 계속 작동합니다.
+다음 기능은 AsyncOrder에서 지원되지 않는 **&#x200B;**&#x200B;이지만 동기적으로 계속 작동합니다.
 
 - 지원되는 기능 목록에 포함되지 않은 결제 방법
 - 다중 주소 체크아웃
@@ -126,7 +126,7 @@ _협상 가능한 견적 비동기 주문_ B2B 모듈을 사용하면 주문 항
 
 _지연된 총 계산_ 모듈은 장바구니에 대해 요청되거나 최종 체크아웃 단계 동안 총 계산을 지연시켜 체크아웃 프로세스를 최적화합니다. 활성화되면 고객이 장바구니에 제품을 추가할 때 소계만 계산됩니다.
 
-지연된 총 계산은 기본적으로 **사용 안 함**&#x200B;입니다. 명령줄 인터페이스를 사용하여 이러한 기능을 사용하도록 설정하거나 `app/etc/env.php`모듈 참조 안내서&#x200B;[__&#x200B;에 정의된 해당 README 파일에 따라 ](https://developer.adobe.com/commerce/php/module-reference/) 파일을 편집하십시오.
+지연된 총 계산은 기본적으로 **사용 안 함**&#x200B;입니다. 명령줄 인터페이스를 사용하여 이러한 기능을 사용하도록 설정하거나 `app/etc/env.php`모듈 참조 안내서&#x200B;[__&#x200B;에 정의된 해당 README 파일에 따라 &#x200B;](https://developer.adobe.com/commerce/php/module-reference/) 파일을 편집하십시오.
 
 **DeferredTotalCalculation을 사용하려면**:
 
@@ -180,7 +180,7 @@ _장바구니 로드 시 인벤토리 사용_ 전역 설정은 장바구니에�
 
 MySQL 데이터베이스 및 Redis 인스턴스에 대한 보조 연결을 활성화하면 서로 다른 노드에 대한 로드 밸런스를 조정할 수 있습니다.
 
-Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 [ 파일의 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)MYSQL_USE_SLAVE_CONNECTION[ 및 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION`.magento.env.yaml` 값을 편집하여 보조 연결을 구성할 수 있습니다. 읽기-쓰기 트래픽을 처리하는 노드는 하나뿐이므로 변수를 `true`(으)로 설정하면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. `false` 파일에서 기존 읽기 전용 연결 배열을 제거하려면 값을 `env.php`(으)로 설정하십시오.
+Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 [&#x200B; 파일의 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)MYSQL_USE_SLAVE_CONNECTION[&#x200B; 및 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION`.magento.env.yaml` 값을 편집하여 보조 연결을 구성할 수 있습니다. 읽기-쓰기 트래픽을 처리하는 노드는 하나뿐이므로 변수를 `true`(으)로 설정하면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. `false` 파일에서 기존 읽기 전용 연결 배열을 제거하려면 값을 `env.php`(으)로 설정하십시오.
 
 `.magento.env.yaml` 파일의 예:
 
