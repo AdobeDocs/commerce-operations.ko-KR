@@ -1,10 +1,10 @@
 ---
 title: 정적 보기 파일 배포
-description: 프로덕션 모드 중에 Commerce 파일 시스템에 정적 파일을 작성하는 방법에 대해 알아봅니다.
+description: 프로덕션 모드에서 Adobe Commerce 파일 시스템에 정적 보기 파일을 배포하는 방법에 대해 알아봅니다. 배포 명령 및 최적화 기술을 살펴보십시오.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---

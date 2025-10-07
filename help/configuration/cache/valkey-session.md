@@ -1,11 +1,11 @@
 ---
 title: 세션 저장소에 Valkey 사용
-description: 세션 저장소에 대한 Valkey를 구성하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에서 세션 스토리지에 대한 Valkey를 구성하는 방법에 대해 알아봅니다. 설정 단계, 구성 옵션 및 성능 최적화 기법을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---

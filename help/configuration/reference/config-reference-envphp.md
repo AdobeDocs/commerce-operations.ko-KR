@@ -1,10 +1,10 @@
 ---
 title: env.php 참조
-description: env.php 파일의 값 목록을 참조하십시오.
+description: Adobe Commerce의 env.php 파일 구성 값 및 섹션에 대해 알아봅니다. 환경 설정 및 구성 옵션을 살펴봅니다.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
 
 ## db
 
@@ -203,7 +203,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[다운로드 가능한 도메인](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 

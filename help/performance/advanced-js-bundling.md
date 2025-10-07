@@ -1,10 +1,10 @@
 ---
 title: 고급 [!DNL JavaScript] 번들
-description: JavaScript 번들링을 통해 서버 요청의 크기와 빈도를 줄이는 방법에 대해 알아봅니다.
+description: Adobe Commerce의 고급 [!DNL javascript] 번들에 대해 알아봅니다. 구현 지침 및 최적화 전략을 살펴보십시오.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2133'
 ht-degree: 0%
 
 ---

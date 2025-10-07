@@ -1,10 +1,10 @@
 ---
 title: 사용자 정의 cron 작업 및 cron 그룹 구성(튜토리얼)
-description: 이 단계별 자습서를 사용하여 사용자 지정 cron 작업을 만듭니다.
+description: Adobe Commerce용 단계별 자습서를 사용하여 사용자 지정 cron 작업을 만드는 방법을 알아봅니다. 모듈 설정 및 cron 그룹 구성을 검색합니다.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---

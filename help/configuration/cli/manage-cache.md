@@ -1,10 +1,10 @@
 ---
 title: 캐시 관리
-description: Commerce CLI를 사용하여 명령줄에서 캐시 유형 관리 및 캐시 상태 보기
+description: Adobe Commerce CLI 명령을 사용하여 캐시 유형을 관리하고 캐시 상태를 보는 방법에 대해 알아봅니다. 캐시 관리 및 최적화 기술을 살펴보십시오.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Commerce 캐시 관리 시스템을 사용하여 사이트의 성능을 �
 >[!NOTE]
 >
 >
->공동 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. [관리 시스템 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management)에서 _캐시 관리_&#x200B;를 참조하십시오.
+>Commerce 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. [관리 시스템 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)에서 _캐시 관리_&#x200B;를 참조하십시오.
 
 
 ## 캐시 상태 보기
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 [관리 시스템 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#caches)의 _캐시_&#x200B;를 참조하십시오.
+>Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 [관리 시스템 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)의 _캐시_&#x200B;를 참조하십시오.
 
 
 ## 캐시 유형 활성화 또는 비활성화

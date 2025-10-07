@@ -1,11 +1,11 @@
 ---
 title: 세션 스토리지에 Redis 사용
-description: 세션 스토리지용 Redis를 구성하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에서 세션 스토리지용 Redis를 구성하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 성능 최적화 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 3886bf261f8f9d2594602850bef9c54db03fb269
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: 세션 저장소 위치
-description: 세션 파일이 저장되는 위치를 알아봅니다.
+description: Adobe Commerce의 세션 저장소 위치 및 파일 관리에 대해 알아봅니다. 스토리지 논리 및 구성 옵션을 살펴봅니다.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 세션 크기 관리
 
-[사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security-session-management)에서 _세션 관리_&#x200B;를 참조하세요.
+[사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)에서 _세션 관리_&#x200B;를 참조하세요.
 
 ## 가비지 수집 구성
 

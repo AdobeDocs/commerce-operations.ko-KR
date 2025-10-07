@@ -1,11 +1,11 @@
 ---
 title: 기본 캐시에 Redis 사용
-description: Redis를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다.
+description: Redis를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 유효성 검사 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---

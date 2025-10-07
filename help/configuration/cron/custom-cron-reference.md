@@ -1,10 +1,10 @@
 ---
 title: 사용자 정의 cron 작업 및 cron 그룹 참조
-description: 크론 그룹을 사용하여 크론을 사용자 지정하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에서 cron group 및 crontab을 사용하여 cron을 사용자 지정하는 방법을 알아봅니다. 사용자 정의 모듈 설정 및 예약된 작업 구성을 검색합니다.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---

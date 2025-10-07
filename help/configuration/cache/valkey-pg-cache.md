@@ -1,11 +1,11 @@
 ---
 title: 기본 캐시에 Valkey 사용
-description: Valkey를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다.
+description: Valkey를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 유효성 검사 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---

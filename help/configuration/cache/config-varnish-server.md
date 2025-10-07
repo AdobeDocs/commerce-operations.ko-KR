@@ -1,11 +1,11 @@
 ---
 title: 웹 서버 구성
-description: Vannish에서 작동하도록 웹 서버를 구성하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에 대한 바니시 캐싱과 작동하도록 웹 서버를 구성하는 방법을 알아봅니다. 포트 구성 및 설정 요구 사항을 살펴봅니다.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---

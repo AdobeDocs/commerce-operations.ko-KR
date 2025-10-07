@@ -1,11 +1,11 @@
 ---
 title: 온프레미스 설치 개요
-description: Adobe Commerce 및 Magento Open Source의 온프레미스 배포를 위한 설치 프로세스에 대해 알아봅니다.
+description: Adobe Commerce의 온프레미스 설치 프로세스에 대해 알아봅니다. 서버 요구 사항, 설정 단계 및 배포 모범 사례를 살펴봅니다.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >
 >성공적으로 진행하려면 중간 기술 지식과 서버 액세스 권한이 있어야 합니다.
 
-설치를 통해 [고객 응대 상점](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/storefront/storefront) 및 [관리 패널](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/admin/admin)이 모두 포함된 완전한 기능의 Adobe Commerce 스토어가 만들어집니다. 프로세스를 시작하기 전에 데이터베이스 자격 증명, 도메인 정보 및 인증 키를 준비해야 합니다.
+설치를 통해 [고객 응대 상점](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 및 [관리 패널](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)이 모두 포함된 완전한 기능의 Adobe Commerce 스토어가 만들어집니다. 프로세스를 시작하기 전에 데이터베이스 자격 증명, 도메인 정보 및 인증 키를 준비해야 합니다.
 
 ## 판매자 책임
 

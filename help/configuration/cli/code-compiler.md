@@ -1,10 +1,10 @@
 ---
 title: 코드 컴파일러
-description: 명령줄에서 코드 컴파일러를 실행하는 방법에 대해 알아봅니다.
+description: 명령줄에서 Adobe Commerce 코드 컴파일러를 실행하는 방법에 대해 알아봅니다. 컴파일 프로세스 및 최적화 기술을 살펴봅니다.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 운영 안내서 홈
-description: Adobe Commerce 시스템 관리 및 운영 제품 설명서의 색인을 찾아봅니다.
+description: Adobe Commerce 시스템 관리 및 운영 개념에 대해 알아봅니다. Commerce 배포 계획, 구성 및 유지 관리에 대한 포괄적인 안내서를 찾아보십시오.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: d18a5d3b0723202328afe445ab1ba4673fa5f9b7
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '171'
 ht-degree: 7%
 
 ---

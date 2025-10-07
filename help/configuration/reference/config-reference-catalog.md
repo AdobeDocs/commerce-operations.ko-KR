@@ -1,11 +1,11 @@
 ---
 title: 카탈로그 구성 경로 참조
-description: 카탈로그 구성 값 목록을 참조하십시오.
+description: Adobe Commerce 관리 설정에서 카탈로그 구성 경로 및 값에 대해 알아봅니다. 제품, 카테고리 및 카탈로그 관리 구성 옵션을 살펴봅니다.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 | 이름 | 구성 경로 | Commerce만 해당? |
 |--------------|--------------|--------------|
 | SKU용 마스크 | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 메타 제목 마스크 | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 메타 키워드에 대한 마스크 | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 메타 설명에 대한 마스크 | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta 제목 마스크 | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta 키워드에 대한 마스크 | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta 마스크 설명 | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 목록 모드 | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 그리드 허용 값의 페이지당 제품 | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 그리드 기본값의 페이지당 제품 | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -80,8 +80,8 @@ ht-degree: 0%
 | 제품 URL에 카테고리 경로 사용 | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL 키가 변경된 경우 URL에 대한 영구 리디렉션 만들기 | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 페이지 제목 구분 기호 | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 범주에 표준 링크 메타 태그 사용 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 제품에 정식 링크 메타 태그 사용 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 범주에 표준 링크 Meta 태그 사용 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 제품에 대해 표준 링크 Meta 태그 사용 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 사용 | `catalog/magento_catalogpermissions/enabled` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 범주 검색 허용 | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
 | 고객 그룹 | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Commerce 전용](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 ## 시각적 머천다이저 경로
 
-[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
+[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
 
 이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **시각적 머천다이저**&#x200B;의 관리자에서 사용할 수 있습니다.
 

@@ -1,11 +1,11 @@
 ---
 title: Ubuntu에서 memcached 설정
-description: Ubuntu에서 memcached를 설치하고 구성합니다.
+description: Adobe Commerce 캐싱을 위해 Ubuntu에 memcached를 설치하고 구성하는 방법에 대해 알아봅니다. 설정 지침 및 최적화 팁을 알아봅니다.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---

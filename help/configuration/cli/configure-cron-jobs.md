@@ -1,10 +1,10 @@
 ---
 title: cron 작업 구성 및 실행
-description: cron 작업을 관리하는 방법을 알아봅니다.
+description: Adobe Commerce에서 cron 작업을 구성하고 관리하는 방법에 대해 알아봅니다. 예약, 구성 및 문제 해결 기술을 살펴봅니다.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---

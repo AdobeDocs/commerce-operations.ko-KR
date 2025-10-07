@@ -1,10 +1,10 @@
 ---
 title: 메시지 큐 소비자 시작
-description: 메시지 큐 소비자를 시작하는 방법을 알아봅니다.
+description: Adobe Commerce 비동기 작업을 위한 메시지 큐 소비자를 시작하는 방법을 알아봅니다. 소비자 관리 및 B2B 기능 설정을 살펴보십시오.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: cdd752532d17e1168e0aa7d354ec283089d98be3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---

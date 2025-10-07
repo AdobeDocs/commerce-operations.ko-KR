@@ -1,10 +1,10 @@
 ---
 title: 구성 파일에서 데이터 가져오기
-description: 구성 파일에서 Adobe Commerce 구성 설정을 가져옵니다.
+description: 구성 파일에서 Adobe Commerce 구성 설정을 가져오는 방법에 대해 알아봅니다. 파이프라인 배포 및 데이터베이스 가져오기 프로세스를 검색합니다.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---

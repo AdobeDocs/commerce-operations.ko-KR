@@ -1,11 +1,11 @@
 ---
 title: 결제 구성 경로 참조
-description: 구성 가능한 결제 방법 값 목록을 참조하십시오.
+description: Adobe Commerce 관리자의 결제 구성 경로 및 방법 값에 대해 알아봅니다. PayPal, 신용카드 및 결제 게이트웨이 구성 옵션을 살펴보십시오.
 feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4113'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 고급 설정
-description: 대량의 데이터를 처리하도록 설계된 대규모 엔터프라이즈 시스템에 대한 Best Practice 및 권장 사항을 검토합니다.
+description: Adobe Commerce의 고급 설정 방법을 알아봅니다. 단계별 지침 및 구성 요구 사항을 살펴보십시오.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---

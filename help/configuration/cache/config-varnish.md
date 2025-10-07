@@ -1,11 +1,11 @@
 ---
 title: 바니시 구성 및 사용
-description: Vannish가 파일을 저장하고 HTTP 트래픽을 개선하는 방법을 이해합니다.
+description: Adobe Commerce에 대한 바니시 캐싱을 구성하고 사용하는 방법에 대해 알아봅니다. HTTP 가속, 파일 저장 및 성능 최적화 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---

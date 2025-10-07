@@ -1,11 +1,11 @@
 ---
 title: 정적 보기 파일을 위한 배포 전략
-description: Commerce 애플리케이션의 배포 전략에 대해 알아보십시오.
+description: Adobe Commerce 애플리케이션에서 정적 보기 파일의 배포 전략에 대해 알아봅니다. 다양한 사용 사례에 적합한 최적의 배포 방법을 살펴보십시오.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---

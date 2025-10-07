@@ -3,9 +3,9 @@ title: '[!UICONTROL Redis] 탭'
 description: '[!UICONTROL Redis]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Redis node detail]
 
-![Redis 노드 세부 정보](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![Redis 서버 성능 메트릭 및 노드 구성 세부 정보](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
 **[!UICONTROL Redis node detail]** 프레임은 환경, [!DNL Redis] 역할, 소프트웨어 버전 및 노드 크기를 나타냅니다.
 

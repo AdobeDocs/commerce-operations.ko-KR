@@ -1,11 +1,11 @@
 ---
 title: 하드웨어 권장 사항
-description: Adobe Commerce 배포의 최적 성능과 관련된 권장 하드웨어 목록을 검토하십시오.
+description: 최적의 Adobe Commerce 성능을 위한 하드웨어 권장 사항에 대해 알아봅니다. 프로덕션 배포를 위한 CPU, 메모리 및 스토리지 요구 사항을 알아봅니다.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---

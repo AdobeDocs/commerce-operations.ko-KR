@@ -1,10 +1,10 @@
 ---
 title: 크론 작업
-description: 크론 그룹 및 사용자 지정 크론 작업 만들기에 대해 알아봅니다.
+description: Adobe Commerce에서 크론 그룹 및 사용자 지정 크론 작업을 만드는 방법에 대해 알아봅니다. 예약된 작업 설정 및 cron 그룹 구성을 검색합니다.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ Commerce 애플리케이션은 다음과 같은 cron 그룹을 제공합니다.
 - `index`: [인덱서](../cli/manage-indexers.md)를 새로 고칩니다.
 - `consumers`, 메시지 큐 [소비자](../cli/start-message-queues.md)를 실행하는 경우
 - 이 주제들은 Adobe Commerce에서만 사용할 수 있습니다
-   - `staging`, [스테이징 관련](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/staging/content-staging) 작업 실행
+   - `staging`, [스테이징 관련](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) 작업 실행
    - `catalog_event`, 대상 및 장바구니 규칙에 대한 작업을 실행하는 경우

@@ -1,10 +1,10 @@
 ---
 title: .gitigore 참조
-description: 무시 목록에 포함된 파일을 추가하는 방법을 참조하십시오.
+description: Adobe Commerce 프로젝트의 .gignore 목록에 파일을 추가하는 방법을 알아봅니다. 버전 제어 관리 및 파일 제외 모범 사례를 살펴보십시오.
 exl-id: 7c53b50a-7bdf-433b-bebb-0129f792a1a4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---

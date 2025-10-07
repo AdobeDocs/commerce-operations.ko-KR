@@ -1,10 +1,10 @@
 ---
 title: 레이아웃 파일 변환
-description: XML 레이아웃 파일을 변환합니다.
+description: Adobe Commerce 명령줄 도구를 사용하여 XML 레이아웃 파일을 변환하는 방법을 알아봅니다. XSLT 스타일시트 업데이트 및 파일 변환 프로세스를 살펴봅니다.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

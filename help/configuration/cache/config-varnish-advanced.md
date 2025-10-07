@@ -1,11 +1,11 @@
 ---
 title: 고급 바니시 구성
-description: 상태 점검, 유예 및 saint 모드를 포함한 고급 바니시 기능을 구성합니다.
+description: 상태 확인, 유예 및 saint 모드를 비롯한 Adobe Commerce의 고급 바니시 기능을 구성하는 방법에 대해 알아봅니다. VCL 최적화 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---

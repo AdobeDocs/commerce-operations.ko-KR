@@ -1,11 +1,11 @@
 ---
 title: 로깅 활성화
-description: 로깅 유형을 활성화하고 비활성화하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에서 다양한 유형의 로깅을 활성화하고 비활성화하는 방법에 대해 알아봅니다. 로깅 구성 및 관리 기술을 살펴봅니다.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---

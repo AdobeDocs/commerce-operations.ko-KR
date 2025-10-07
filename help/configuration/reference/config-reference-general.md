@@ -1,11 +1,11 @@
 ---
 title: 일반 구성 경로 참조
-description: 일반 및 고급 구성 값 목록을 참조하십시오.
+description: Adobe Commerce의 일반 및 고급 구성 경로 및 값에 대해 알아봅니다. 시스템, 보안 및 관리 구성 옵션을 살펴봅니다.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---

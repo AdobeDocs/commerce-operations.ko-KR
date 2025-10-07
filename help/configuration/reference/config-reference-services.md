@@ -1,11 +1,11 @@
 ---
 title: 서비스 구성 경로 참조
-description: 서비스 구성 값 목록을 참조하십시오.
+description: Adobe Commerce 관리 설정에서 서비스 구성 경로 및 값에 대해 알아봅니다. 웹 API, OAuth 및 서비스 통합 구성 옵션을 살펴보십시오.
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

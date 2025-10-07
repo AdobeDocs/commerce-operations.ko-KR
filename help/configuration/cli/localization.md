@@ -1,10 +1,10 @@
 ---
 title: 번역 사전 및 언어 패키지
-description: 번역 사전을 생성하고 언어 패키지를 빌드하는 방법에 대해 알아봅니다.
+description: Adobe Commerce용 번역 사전을 생성하고 언어 패키지를 빌드하는 방법에 대해 알아봅니다. 로컬라이제이션 및 다국어 스토어 설정을 살펴보십시오.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
@@ -316,7 +316,7 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
 
 [번역 개요]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [번역 사전]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[번역 구성]: https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-localize
+[번역 구성]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [언어 패키지에 대해 자세히 알아보기]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

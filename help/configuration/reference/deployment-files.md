@@ -1,11 +1,11 @@
 ---
 title: 배포용 구성 파일
-description: Commerce 애플리케이션 설치를 위한 구성 파일의 작동 방식을 이해합니다.
+description: Adobe Commerce 애플리케이션 배포에 대한 구성 파일의 작동 방식에 대해 알아봅니다. 공유 및 시스템별 구성 관리 모범 사례를 살펴봅니다.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe Commerce은 구성 요소를 쉽게 사용자 정의하고 구성 유형�
 예:
 
 - 구성 요소 제거: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - 구성 요소 [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)을(를) 활성화하거나 비활성화합니다.
 
 > _config.php_

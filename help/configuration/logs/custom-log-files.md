@@ -1,12 +1,12 @@
 ---
 title: 사용자 지정 로그 파일에 쓰기
-description: 사용자 지정 로그 파일을 설정하는 방법에 대해 알아봅니다.
+description: Adobe Commerce에서 사용자 지정 로그 파일을 만들고 구성하는 방법에 대해 알아봅니다. 로거 처리기 및 사용자 지정 로깅 구현을 검색합니다.
 feature: Configuration, Logs
 badge: label="Atwix 제공" type="Informative" url="https://www.atwix.com/" tooltip="아트윅스"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `MyCustomLogger` 개체에 [&#128279;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
+1. `MyCustomLogger` 개체에 [ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">

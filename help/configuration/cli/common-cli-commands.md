@@ -1,10 +1,10 @@
 ---
 title: 일반 명령
-description: 일반적인 Commerce CLI 명령 및 사용법의 샘플을 확인합니다.
+description: 일반적인 Adobe Commerce CLI 명령과 사용 예제에 대해 알아봅니다. 개발 및 관리를 위한 필수 명령줄 도구를 살펴봅니다.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---

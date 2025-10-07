@@ -3,9 +3,9 @@ title: 원격 스토리지에 대한 이미지 크기 조정 구성
 description: 서버측 이미지 크기 조정을 구성하여 디스크 리소스를 최적화합니다.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 다음 다이어그램은 Nginx가 캐시에 이미지를 검색, 크기 조정 및 저장하는 방법을 보여 줍니다. 크기 조정은 높이 및 폭과 같이 URL에 포함된 매개 변수에 의해 결정됩니다.
 
-![이미지 크기 조정](../../assets/configuration/remote-storage-nginx-image-resize.png)
+서버 블록 설정을 표시하는 원격 저장소 이미지 크기 조정에 대한 ![Nginx 구성](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

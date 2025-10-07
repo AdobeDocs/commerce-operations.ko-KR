@@ -1,11 +1,11 @@
 ---
 title: L2 캐시 구성
-description: L2 캐시를 구성하는 방법을 알아봅니다.
+description: Adobe Commerce 성능 최적화를 위한 L2 캐시를 구성하는 방법을 알아봅니다. 설정 단계 및 네트워크 트래픽 감소 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Commerce은 해시된 데이터 버전을 일반 키에 접미사 &#39;:hash&#39
 
 >[!INFO]
 >
->클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)를 사용할 수 있습니다.
+>클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)를 사용할 수 있습니다.
 
 ## 구성 예
 

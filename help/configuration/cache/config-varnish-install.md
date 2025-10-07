@@ -1,11 +1,11 @@
 ---
 title: 니스 설치
-description: Varnish 설치에 대한 조언을 참조하십시오.
+description: Adobe Commerce 캐싱을 위한 Vanish 설치 요구 사항에 대해 알아봅니다. 설치 리소스 및 설치 지침을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---

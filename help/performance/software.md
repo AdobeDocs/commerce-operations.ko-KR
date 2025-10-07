@@ -1,11 +1,11 @@
 ---
 title: 소프트웨어 권장 사항
-description: Adobe Commerce 배포의 최적 성능과 관련된 권장 소프트웨어 목록을 검토합니다.
+description: Adobe Commerce에 대한 소프트웨어 요구 사항 및 권장 사항에 대해 알아봅니다. 프로덕션에 대해 지원되는 버전 및 구성 모범 사례를 살펴보십시오.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---

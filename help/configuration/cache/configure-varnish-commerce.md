@@ -1,11 +1,11 @@
 ---
 title: Commerce에 대한 바니시 구성
-description: Commerce 애플리케이션의 Varnish 구성 파일을 업데이트하고 관리하는 방법에 대해 알아봅니다.
+description: Adobe Commerce 애플리케이션에 특별히 Varnish를 구성하는 방법에 대해 알아봅니다. 구성 파일 업데이트 및 관리 기술을 살펴봅니다.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---

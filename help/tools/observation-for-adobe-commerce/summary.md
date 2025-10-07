@@ -3,9 +3,9 @@ title: '[!UICONTROL Summary] 탭'
 description: '[!UICONTROL Summary]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -32,19 +32,19 @@ ht-degree: 0%
 
 ## [!UICONTROL 404 page errors frame]
 
-![404 페이지 오류 프레임](../../assets/tools/404-page-errors.jpg)
+![시간 경과에 따른 인시던트를 찾을 수 없음을 보여주는 {404 오류 모니터링 대시보드](../../assets/tools/404-page-errors.jpg)
 
 **[!UICONTROL 404 page errors]** 프레임에 선택한 일정의 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 및 404 페이지 오류 수가 나열됩니다.
 
 ## [!UICONTROL % of Storage Free frame]
 
-![사용 가능한 저장 공간 프레임 비율](../../assets/tools/percent-of-storage-free.jpg)
+![사용 가능한 디스크 공간 비율을 표시하는 저장소 사용률 차트](../../assets/tools/percent-of-storage-free.jpg)
 
 **[!UICONTROL % of Storage Free]** 프레임에는 클러스터의 모든 노드에서 저장소 마운트의 사용 가능한 평균 백분율이 표시됩니다. 예를 들어 3개의 노드 클러스터가 있는 경우 프레임에는 \&lt;mount point\>, \&lt;environment name\>이 표시됩니다. 이 프레임은 세 노드에 걸쳐 분산이 있는 경우 기만적일 수 있다. 변형의 예로는 `/data/mysql` 탑재 지점 사용 가능 값이 세 노드 클러스터에서 다른 경우 입니다. [!UICONTROL MySQL] 탭 아래에 노드 이름별로 탑재 지점을 패싯하여 각 노드에서 사용 가능한 `/data/mysql` 저장소가 실제로 무엇인지 보다 정확하게 확인하는 프레임이 있습니다.
 
 ## [!UICONTROL % of system memory that is free frame]
 
-사용 가능한 프레임의 ![% 시스템 메모리](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![사용 가능한 RAM 비율을 보여 주는 시스템 메모리 사용량 차트](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 사용 가능한 시스템 메모리의 **%** 프레임은 각 노드에서 사용 가능한 시스템 메모리의 양을 노드별로 표시합니다.
 
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 호스트별 ![CPU 비율](../../assets/tools/cpu-percent-by-host.jpg)
 
-모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ko)을 참조하세요.
+모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)을 참조하세요.
 
 ## [!UICONTROL Alerts during timeframe]
 
-![일정 동안의 경고](../../assets/tools/alerts-during-timeframe.jpg)
+![선택한 기간 내의 인시던트를 표시하는 경고 알림 대시보드](../../assets/tools/alerts-during-timeframe.jpg)
 
 **[!UICONTROL Alerts during timeframe]**&#x200B;은(는) Adobe Commerce 지원에서 추가한 [!UICONTROL Managed Alerts]을(를) 포함하여 모든 경고를 표시합니다.
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
+**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
 
 ## [!UICONTROL Average Response Time]
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-url별 ![ip별 api 호출 세부 정보](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![IP 주소 및 끝점 URL별로 그룹화된 호출을 보여주는 API 요청 분석](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 **[!UICONTROL API Calls by IP, details by URL]** 프레임에서는 API에 대한 대량 트래픽의 세부 정보와 요청을 수행하는 URL의 세부 정보를 제공합니다.
 
@@ -332,13 +332,13 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 
 ## [!UICONTROL Page Rendering]
 
-![페이지 렌더링](../../assets/tools/page-rendering.jpg)
+![렌더링 시간 분석을 표시하는 페이지 성능 지표](../../assets/tools/page-rendering.jpg)
 
 **[!UICONTROL Page Rendering]** 프레임에는 같은 기간 동안의 이전 주와 비교하여 [!DNL New Relic]의 페이지 보기 원본에서 현재 주의 평균 페이지 렌더링 기간이 표시됩니다.
 
 ## [!UICONTROL Page loading detail]
 
-![페이지 로드 세부 정보](../../assets/tools/page-loading-detail.png)
+![로드 시간 구성 요소를 보여 주는 자세한 페이지 로드 성능 분석](../../assets/tools/page-loading-detail.png)
 
 **[!UICONTROL Page loading detail]** 프레임은 페이지 로드 이벤트를 설명합니다. 그것은 이러한 측면들의 의미들을 자세히 설명합니다. 다음은 이 프레임에 대해 실행되는 쿼리입니다.
 
@@ -382,9 +382,9 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 * &#39;%NoNodesAvailableException%&#39;을 &#39;no_alive_nodes&#39;로 설정
 * &#39;%PHP 치명적인 오류: 알 수 없는 오류: &#39;wrong_param&#39;으로 표시되는 Elasticsearch%&#39;의 매개 변수가 잘못되었습니다.
 * &#39;%Magento Cloud 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 이 문제를 &#39;ver_err&#39;로 해결할 수 있습니다.
-* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\] (이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
+* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\](이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
 * &#39;%no_space&#39;(으)로 장치%&#39;에 남은 공간 없음
-* &#39;% &#39;failed_query&#39;로 &lbrack;SearchRequest&lbrace;searchType=%&#39;을(를) 실행하지 못했습니다.
+* &#39;% &#39;failed_query&#39;로 [SearchRequest{searchType=%&#39;을(를) 실행하지 못했습니다.
 
 ## [!UICONTROL Cron view]
 

@@ -1,11 +1,11 @@
 ---
 title: 성능 테스트를 위한 데이터 생성
-description: 성능 테스트에 사용할 대량의 데이터를 생성하는 방법을 알아봅니다.
+description: Adobe Commerce 성능 테스트를 위해 대량의 데이터를 생성하는 방법을 알아봅니다. 데이터 생성 프로필 및 테스트 전략을 살펴봅니다.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 9%
 
 ---

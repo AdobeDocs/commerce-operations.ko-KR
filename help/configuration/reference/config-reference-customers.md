@@ -1,11 +1,11 @@
 ---
 title: 고객 구성 경로 참조
-description: 고객 구성 값 목록을 참조하십시오.
+description: Adobe Commerce 관리 설정에서 고객 구성 경로 및 값에 대해 알아봅니다. 뉴스레터, 계정 관리 및 고객 서비스 옵션을 살펴보십시오.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---

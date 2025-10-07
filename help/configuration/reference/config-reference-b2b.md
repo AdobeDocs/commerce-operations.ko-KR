@@ -1,11 +1,11 @@
 ---
 title: B2B 확장 구성 경로 참조
-description: B2B 관련 구성 값 목록을 참조하십시오.
+description: Adobe Commerce의 B2B 확장 구성 경로 및 값에 대해 알아봅니다. 회사, 결제, 견적 및 B2B 관련 구성 옵션을 살펴봅니다.
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---

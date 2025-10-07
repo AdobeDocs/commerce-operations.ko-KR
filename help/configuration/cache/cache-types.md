@@ -1,11 +1,11 @@
 ---
 title: 캐시 유형
-description: 캐시 프런트 엔드를 캐시 유형과 연결합니다.
+description: Adobe Commerce에서 캐시 프론트엔드를 캐시 유형과 연결하는 방법에 대해 알아봅니다. 캐시 구성 및 관리 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---

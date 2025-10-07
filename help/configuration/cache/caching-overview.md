@@ -1,11 +1,11 @@
 ---
 title: 캐싱 구성
-description: 캐싱과 Adobe Commerce 애플리케이션에 대한 캐시 메커니즘을 구성하는 방법에 대해 알아봅니다.
+description: Adobe Commerce 애플리케이션의 캐싱 메커니즘 및 구성 옵션에 대해 알아봅니다. 기본 파일 시스템 캐싱의 대안을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 종속성 보고서
-description: 모듈, 순환 및 프레임워크 종속성의 합계를 표시하는 보고서를 만듭니다.
+description: Adobe Commerce의 모듈, 순환 및 프레임워크 종속성을 보여 주는 종속성 보고서를 만드는 방법을 알아봅니다. 분석 및 보고 도구를 살펴봅니다.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

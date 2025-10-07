@@ -1,10 +1,10 @@
 ---
 title: config.php 참조
-description: config.php 파일의 값 목록을 참조하십시오.
+description: Adobe Commerce 구성에 대한 config.php 파일 값 및 섹션에 대해 알아봅니다. 모듈, 범위, 시스템 설정 및 배포 모범 사례를 살펴봅니다.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -124,6 +124,6 @@ ht-degree: 1%
 
 <!-- link definitions -->
 
-[모듈]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko#scope-settings
+[모듈]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [테마]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

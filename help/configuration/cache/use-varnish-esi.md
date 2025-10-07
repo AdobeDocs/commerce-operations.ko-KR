@@ -1,12 +1,12 @@
 ---
 title: 바니시 ESI 차단
-description: Edge Side Includes 및 이를 사용하여 웹 페이지를 포함하는 방법에 대해 알아봅니다.
+description: ESI(Edge Side Includes) 및 Adobe Commerce의 웹 페이지를 포함하는 방법에 대해 알아봅니다. ESI 블록 구현 및 최적화에 대해 살펴봅니다.
 badge: label="콘스탄틴 G 기여." type="Informative" url="https://github.com/goivvy" tooltip="콘스탄틴"
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---

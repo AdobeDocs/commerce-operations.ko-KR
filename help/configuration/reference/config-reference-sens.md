@@ -1,11 +1,11 @@
 ---
 title: 중요 및 시스템별 경로
-description: 시스템별 및 중요 구성 값 목록을 참조하십시오.
+description: Adobe Commerce의 민감하고 시스템별 구성 경로에 대해 알아봅니다. 보안 구성 및 환경 변수 관리를 살펴봅니다.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: e5a1c5634124831c8d5a95df6818ec30c372e8dd
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '3676'
+source-wordcount: '3684'
 ht-degree: 0%
 
 ---

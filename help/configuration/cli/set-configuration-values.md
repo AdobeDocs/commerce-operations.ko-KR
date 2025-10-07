@@ -1,10 +1,10 @@
 ---
 title: 구성 값 설정
-description: 구성 값을 설정하고 관리자에서 잠긴 값을 변경하는 방법을 알아봅니다.
+description: Adobe Commerce에서 구성 값을 설정하고 잠긴 관리자 값을 변경하는 방법에 대해 알아봅니다. 고급 구성 명령 및 기술을 살펴보십시오.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `**&#x200B;**&#x200B;**`.
+>`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `******`.
 
 ### 예
 

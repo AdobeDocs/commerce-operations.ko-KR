@@ -1,11 +1,11 @@
 ---
 title: 캐시 옵션
-description: 낮은 수준의 캐시 스토리지에 대한 액세스를 구성합니다.
+description: Adobe Commerce의 낮은 수준 캐시 옵션 및 저장소 구성에 대해 알아봅니다. Redis 및 데이터베이스에 대한 프런트 엔드, 백엔드 및 스토리지 설정을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---

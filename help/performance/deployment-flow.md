@@ -1,11 +1,11 @@
 ---
 title: 배포 플로우
-description: 프로덕션 환경에 Adobe Commerce을 배포하는 데 필요한 단계에 대해 알아봅니다.
+description: Adobe Commerce 프로덕션 환경의 배포 흐름 프로세스에 대해 알아봅니다. 성능과 안정성을 극대화하는 단계를 살펴보십시오.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---

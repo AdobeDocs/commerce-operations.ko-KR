@@ -1,10 +1,10 @@
 ---
 title: 도구
-description: 이러한 도구를 사용하여 Adobe Commerce 스토어를 최적화합니다.
+description: Adobe Commerce 스토어 성능을 최적화하는 필수 도구에 대해 알아봅니다. 분석 툴, 패치 및 유틸리티를 사용하여 보다 효율적으로 사이트를 관리하는 방법에 대해 알아봅니다.
 exl-id: e2770019-d879-4685-bcbe-791550f49cf0
-source-git-commit: 60f85dfb889e1e6d15aaf45f95115705b090ccad
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '85'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
 * [[!DNL Managed alerts for Adobe Commerce]](../tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
-* [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+* [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [&#39;bin/magento&#39;](reference/commerce-on-premises.md)
 * [&#39;bin/uct&#39;](reference/commerce-on-premises.md)
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)

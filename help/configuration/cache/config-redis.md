@@ -1,11 +1,11 @@
 ---
 title: Redis 구성
-description: Redis 기능에 대한 개요를 확인하고 Redis 구성을 시작하십시오.
+description: Adobe Commerce 성능 최적화를 위해 Redis 캐싱을 구성하는 방법에 대해 알아봅니다. 기능, 설정 단계 및 구성 모범 사례를 살펴보십시오.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---

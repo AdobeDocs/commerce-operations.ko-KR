@@ -1,10 +1,10 @@
 ---
 title: URN 형광펜
-description: IDE에서 URN 강조 표시를 설정하는 방법을 알아봅니다.
+description: Adobe Commerce 개발을 위해 IDE에서 URN 강조 표시를 설정하는 방법을 알아봅니다. XSD 스키마 구성 및 개발 최적화를 살펴봅니다.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---

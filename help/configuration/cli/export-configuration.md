@@ -1,10 +1,10 @@
 ---
 title: 구성 설정 내보내기
-description: Adobe Commerce 구성 설정을 구성 파일(구성 덤프라고도 함)로 내보냅니다.
+description: 구성 덤프를 사용하여 Adobe Commerce 구성 설정을 파일로 내보내는 방법에 대해 알아봅니다. 파이프라인 배포 및 구성 관리에 대해 알아봅니다.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

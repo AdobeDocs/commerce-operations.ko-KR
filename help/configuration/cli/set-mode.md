@@ -1,10 +1,10 @@
 ---
 title: 작업 모드 설정
-description: Adobe Commerce 작업 모드 설정에 대해 읽어 보십시오.
+description: 개발자와 프로덕션 간에 Adobe Commerce 작업 모드를 설정하는 방법을 알아봅니다. 모드 전환 명령 및 보안과 관련된 사항을 살펴봅니다.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
