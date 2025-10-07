@@ -1,9 +1,9 @@
 ---
 title: SWAT 상태 지수 점수 및 권장 사항 이해
 description: 사이트 전체 분석 도구 상태 인덱스가 Adobe Commerce 사이트에 어떤 의미를 갖는지 알아봅니다. 점수를 해석하고 권장 사항을 효과적으로 사용하는 방법을 알아봅니다.
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 SWAT 대시보드에서 **[!DNL Recommendations Report]**&#x200B;을(를) 다운로드하면 PDF의 **[!DNL Site Wide Analysis Tool Health Index]**&#x200B;소개&#x200B;**섹션에** 점수가 포함됩니다.
 
-생성된 권장 사항 보고서의 ![사이트 전체 분석 도구 상태 인덱스 점수](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+생성된 권장 사항 보고서의 ![사이트 전체 분석 도구 상태 인덱스 점수](/help/assets/tools/swat-health-index-scroe.png)
 
 SWAT 상태 지수는 Adobe Commerce 사이트의 전반적인 상태를 모니터링하고 개선하는 데 도움이 됩니다. 이 점수는 절대 합격 측정이 아닌 안내 도구입니다.
 
