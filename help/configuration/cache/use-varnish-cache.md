@@ -42,7 +42,7 @@ Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업
 
 ## 바니시를 제거하도록 Commerce 구성
 
-Commerce은 [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) 명령을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다.
+Commerce은 [`magento setup:config:set`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) 명령을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다.
 
 선택적 매개 변수 `--http-cache-hosts` 매개 변수를 사용하여 쉼표로 구분된 Varnish 호스트 및 수신 포트 목록을 지정할 수 있습니다. 하나 또는 여러 개의 Vannish 호스트를 모두 구성합니다. ( 공백 문자로 호스트를 구분하지 마십시오.)
 

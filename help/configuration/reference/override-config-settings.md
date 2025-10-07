@@ -17,7 +17,7 @@ Adobe 환경 변수를 사용하여 _any_ 구성 설정의 값을 재정의할 �
 
 >[!TIP]
 >
->[Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html)의 _환경 구성_ 항목을 확인하십시오.
+>[Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=ko)의 _환경 구성_ 항목을 확인하십시오.
 
 ## 환경 변수
 
@@ -62,8 +62,8 @@ Adobe 환경 변수를 사용하여 _any_ 구성 설정의 값을 재정의할 �
   범위에 대한 자세한 내용은 다음을 참조하십시오.
 
    - [1단계: 웹 사이트 또는 스토어 보기 범위 값 찾기](#step-1-find-the-website-or-store-view-scope-value)
-   - [범위에 대한 Commerce 사용 안내서 항목](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [범위 빠른 참조](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [범위에 대한 Commerce 사용 안내서 항목](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [범위 빠른 참조](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>`은(는) `/` 대신 이중 밑줄 문자가 있는 구성 경로입니다. 자세한 내용은 [2단계: 시스템 변수 설정](#step-2-set-global-website-or-store-view-variables)을 참조하십시오.
 
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- `$_ENV` 배열에서 설정한 값을 사용하려면 `variables_order = "EGPCS"` 파일에 `php.ini`(환경, Get, Post, 쿠키 및 서버)을 설정해야 합니다. 자세한 내용은 [PHP 설명서](https://www.php.net/manual/en/ini.core.php)를 참조하세요.
 >
->- 클라우드 인프라의 Adobe Commerce에서 [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)를 사용하여 구성 설정을 재정의하려는 경우 변수 이름 앞에 `env:`을(를) 추가해야 합니다. For example:
+>- 클라우드 인프라의 Adobe Commerce에서 [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko#configure-the-project)를 사용하여 구성 설정을 재정의하려는 경우 변수 이름 앞에 `env:`을(를) 추가해야 합니다. For example:
 >
 >![환경 변수 예](../../assets/configuration/cloud-console-envvariable.png)

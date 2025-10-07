@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 규정 준수
 
-상인은 안전한 환경을 유지하기 위한 업계 지침, 관할 지역의 법적 요구 사항 및 온라인 상거래에 대한 모범 사례를 충족해야 합니다. 비즈니스 관점에서 자세히 알아보려면 [스토어 개인정보 처리방침](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html)을 참조하세요.
+상인은 안전한 환경을 유지하기 위한 업계 지침, 관할 지역의 법적 요구 사항 및 온라인 상거래에 대한 모범 사례를 충족해야 합니다. 비즈니스 관점에서 자세히 알아보려면 [스토어 개인정보 처리방침](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html?lang=ko)을 참조하세요.
 
 이 규정 준수 설명서는 Adobe Commerce 설치가 특정 개인 정보 보호 법률의 요구 사항을 준수하는지 확인하기 위한 기술 정보를 제공합니다. 이러한 요건 중 일부는 상인이 추가적인 개발 작업을 완료하여 준수를 달성하도록 요구하고 있다. 자세한 내용은 다음 항목을 참조하십시오.
 

@@ -58,7 +58,7 @@ ht-degree: 0%
 
 호스트별 ![CPU 비율](../../assets/tools/cpu-percent-by-host.jpg)
 
-모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)을 참조하세요.
+모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ko)을 참조하세요.
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
+**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
 
 ## [!UICONTROL Average Response Time]
 

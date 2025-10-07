@@ -13,7 +13,7 @@ ht-degree: 0%
 
 이 항목에서는 리소스가 다른 사용자와 공유되지 않는 데이터 센터(가상화되지 않음)에서 물리적으로 호스팅되는 일반 서버를 사용하는 Adobe Commerce 인스턴스에 대한 일반적인 권장 설정 방법에 대해 설명합니다. 호스팅 공급자, 특히 Commerce 고성능 호스팅을 전문으로 하는 경우 요구 사항에 따라 동일하거나 더 효과적인 다른 설정을 추천할 수 있습니다.
 
-클라우드 인프라 환경에 대한 Adobe Commerce의 경우 [Starter 아키텍처](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture)를 참조하십시오.
+클라우드 인프라 환경에 대한 Adobe Commerce의 경우 [Starter 아키텍처](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/starter-architecture)를 참조하십시오.
 
 ## [!DNL Commerce] 참조 아키텍처 다이어그램
 
