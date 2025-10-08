@@ -3,7 +3,7 @@ title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.70'
 description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.70에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 824b1d8a7994938d9f000764631647757f20799d
+source-git-commit: 19e32289f4a7954d070370e065bc683d5f9b54e5
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -20,7 +20,7 @@ QPT v1.1.70에는 다음 패치가 포함됩니다.
 1. **ACSD-66157**: 다른 시간대에 만들어진 웹 사이트에는 특별 가격이 적용되지 않습니다.
 1. **ACSD-67659**: 번역된 오류 메시지가 *정의되지 않음* 코드를 반환합니다.
 1. **ACSD-67166**: storefront에서 견적을 로드할 때 중복 `cataloginventory_stock_status` 쿼리가 실행됩니다.
-1. **ACSD-67030**: 제한된 역할 관리자가 편집할 때 간단한 제품에 대한 할당이 해제됩니다.
+1. **[ACSD-67030](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030.md)**: 제한된 역할 관리자가 편집할 때 간단한 제품에 대한 할당이 해제됩니다.
 1. **ACSD-67289**: 특별 가격이 적용되면 일반 가격이 표시되지 않습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
