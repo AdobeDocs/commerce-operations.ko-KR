@@ -233,6 +233,6 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 **문제**: 2.4.4-p1 패키지에서 실행할 때 웹 API 및 통합 테스트에 이 오류가 표시됩니다. `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **해결 방법**: `require monolog/monolog:2.6.0` 명령을 실행하여 이전 버전의 Monolog를 설치하십시오. <!-- AC-3651-->
 
-**문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1[ 기술 자료 문서로 업그레이드한 후 다운그레이드된 ](https://support.magento.com/hc/en-us/articles/8214752983949)패키지를 참조하십시오.
+**문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1[&#x200B; 기술 자료 문서로 업그레이드한 후 다운그레이드된 &#x200B;](https://support.magento.com/hc/en-us/articles/8214752983949)패키지를 참조하십시오.
 
 <!-- Last updated from includes: 2025-07-24 10:48:00 -->
