@@ -18,9 +18,9 @@ Adobe은 조기 채택자에게 향상된 기능과 새로운 기능을 더 빨�
 
 새로운 기능, 기능 업데이트, 클라우드 인프라 및 확장성 업데이트는 패치 릴리스와 독립적으로 제공되며 외부 모듈, 확장, 도구 또는 웹 서비스를 통해 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
-- ![기능 아이콘](../assets/icons/feature.svg) [**기능**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—패치 릴리스와 독립적으로 제공되는 새로운 기능. 예: [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), 카탈로그 서비스, 데이터 연결, 실시간 검색 및 제품 추천.
+- ![기능 아이콘](../assets/icons/feature.svg) [**기능**](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/release-information/release-notes-all)—패치 릴리스와 독립적으로 제공되는 새로운 기능. 예: [B2B](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes), 카탈로그 서비스, 데이터 연결, 실시간 검색 및 제품 추천.
 
-- ![인프라 아이콘](../assets/icons/servers.svg) [**클라우드 인프라**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—클라우드 인프라에서 Adobe Commerce의 새로운 기능 및 개선 사항 및 Cloud Tools Suite for Commerce 패키지(Cloud Platform에서 Adobe Commerce 설치 및 업그레이드를 배포 및 관리)입니다.
+- ![인프라 아이콘](../assets/icons/servers.svg) [**클라우드 인프라**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—클라우드 인프라에서 Adobe Commerce의 새로운 기능 및 개선 사항 및 Cloud Tools Suite for Commerce 패키지(Cloud Platform에서 Adobe Commerce 설치 및 업그레이드를 배포 및 관리)입니다.
 
 - ![확장성 아이콘](../assets/icons/brackets.svg) [**확장성**](https://developer.adobe.com/commerce/extensibility/)—패치 릴리스와 독립적으로 제공되는 프로세스 외부 확장성을 위한 새로운 개발자 도구 및 서비스입니다. 예를 들어 통합 시작 키트, 관리 UI SDK, Commerce용 Adobe I/O Events 및 API Mesh가 있습니다.
 
