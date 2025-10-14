@@ -1,78 +1,37 @@
 ---
-title: 릴리스 일정
-description: Adobe에서 Adobe Commerce의 새로운 기능 및 릴리스를 발표하려는 시기를 알아보십시오. 향후 패치 일정 및 기능 제공 일정을 확인하여 보다 나은 계획을 수립할 수 있습니다.
+title: 패치 릴리스 일정
+description: Adobe이 Adobe Commerce에 대한 새로운 패치 및 보안 수정 사항을 언제 발표할지 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
 
-# 릴리스 일정
+# 패치 릴리스 일정
 
-Adobe은 조기 채택자에게 향상된 기능과 새로운 기능을 더 빨리 제공하는 동시에 제품 업그레이드를 단순하고 예측 가능하게 만드는 것 사이의 올바른 균형을 찾기 위해 지속적으로 노력하고 있습니다([버전 관리 정책](versioning-policy.md) 참조). 이 예약의 목적은 Adobe이 실질적인 새 기능의 릴리스를 발표하려는 날짜를 제공하는 것입니다.
+Adobe은 조기 채택자에게 향상된 기능을 더 빨리 제공하면서 제품 업그레이드를 단순하고 예측 가능하게 만드는 것 사이의 올바른 균형을 찾기 위해 끊임없이 노력하고 있습니다([버전 관리 정책](versioning-policy.md) 참조).
 
-## 기능, 클라우드 인프라 및 확장성
-
-새로운 기능, 기능 업데이트, 클라우드 인프라 및 확장성 업데이트는 패치 릴리스와 독립적으로 제공되며 외부 모듈, 확장, 도구 또는 웹 서비스를 통해 사용할 수 있습니다. 예를 들면 다음과 같습니다.
-
-- ![기능 아이콘](../assets/icons/feature.svg) [**기능**](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/release-information/release-notes-all)—패치 릴리스와 독립적으로 제공되는 새로운 기능. 예: [B2B](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes), 카탈로그 서비스, 데이터 연결, 실시간 검색 및 제품 추천.
-
-- ![인프라 아이콘](../assets/icons/servers.svg) [**클라우드 인프라**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—클라우드 인프라에서 Adobe Commerce의 새로운 기능 및 개선 사항 및 Cloud Tools Suite for Commerce 패키지(Cloud Platform에서 Adobe Commerce 설치 및 업그레이드를 배포 및 관리)입니다.
-
-- ![확장성 아이콘](../assets/icons/brackets.svg) [**확장성**](https://developer.adobe.com/commerce/extensibility/)—패치 릴리스와 독립적으로 제공되는 프로세스 외부 확장성을 위한 새로운 개발자 도구 및 서비스입니다. 예를 들어 통합 시작 키트, 관리 UI SDK, Commerce용 Adobe I/O Events 및 API Mesh가 있습니다.
-
-다음 목록은 예정된 기능, 클라우드 인프라 및 확장성 릴리스에 대한 날짜를 제공합니다(날짜는 변경될 수 있음).
-
-- 2025년 2월 11일
-- 2025년 4월 8일
-- 2025년 6월 10일
-- 2025년 8월 12일
-- 2025년 10월 14일
+이 일정의 목적은 Adobe이 핵심 Adobe Commerce PHP 애플리케이션의 지원되는 각 릴리스 라인에 대해 [패치](versioning-policy.md#patch-release) 릴리스를 발표할 계획인 날짜를 제공하는 것입니다. 패치 릴리스는 핵심 코드 베이스를 업그레이드하여 플랫폼을 안전하고 안정적이며 성능을 유지할 수 있는 기회입니다.
 
 >[!NOTE]
 >
->기능, 클라우드 인프라 및 확장성 릴리스는 연중 달라질 수 있습니다. 그러나 Adobe은 이 페이지에 지정된 날짜 사이에 이러한 영역에 대한 개선 사항을 정기적으로 및 지속적으로 릴리스합니다. [Adobe Commerce 소개최신 기능에 대해 자세히 알아보려면 &#x200B;](https://business.adobe.com/products/magento/magento-commerce.html).
-
-## 패치
-
-Adobe은 또한 핵심 Adobe Commerce PHP 애플리케이션의 지원되는 각 릴리스 라인에 대해 [패치](versioning-policy.md#patch-release)을 릴리스합니다. 패치 릴리스는 핵심 코드 베이스를 업그레이드하여 플랫폼을 안전하고 안정적이며 성능을 유지할 수 있는 기회입니다.
+>새로운 기능, 클라우드 인프라 및 확장성 릴리스에 대한 자세한 내용은 [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) 릴리스 설명서를 참조하십시오.
 
 이 페이지에 나열된 예약된 품질, 보안 및 Beta 패치 외에도 Adobe은 [품질 패치 도구](versioning-policy.md#individual-patch)를 통해 [개별 패치](../tools/quality-patches-tool/usage.md)에 대한 액세스를 제공합니다. 이 도구를 사용하면 설치된 Adobe Commerce 버전에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다.
 
-다음 표에는 예약된 패치 릴리스에 대한 날짜가 나와 있습니다(날짜는 변경될 수 있음).
+2026년 1월부터 Adobe Commerce은 다음과 같은 전략으로 월별 패치 릴리스 일정으로 이동합니다.
 
-<table>
-<thead>
-  <tr>
-    <th>일반 가용성</th>
-    <th>패치</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  <tr>
-    <td>2025년 2월 11일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta 패치</a>: 2.4.8-beta2<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7, 2.4.6, 2.4.5 및 2.4.4용</td>
-  </tr>
-  <tr>
-    <tr>
-    <td>2025년 4월 8일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong>:<ul><li>성능 향상</li><li>품질 개선 사항</li><li>향상된 보안 기능</li><li>타사 종속성 업데이트</li></ul><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.7, 2.4.6, 2.4.5 및 2.4.4용</td>
-  </tr>
-  <tr>
-    <td>2025년 6월 10일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha 패치</a>: 2.4.9-alpha1<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
-  </tr>
-  <tr>
-    <td>2025년 8월 12일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha 패치</a>: 2.4.9-alpha2<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7, 2.4.6 및 2.4.5용</td>
-  </tr>
-  <tr>
-    <td>2025년 10월 14일</td>
-    <td><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha 패치</a>: 2.4.9-alpha3<br><img alt="패치 릴리스 아이콘" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">보안 패치</a>: 2.4.8, 2.4.7 및 2.4.6용</td>
-  </tr>
-</tbody>
-</table>
+- **격리된 보안 수정**—개별 비누적 [보안 수정](versioning-policy.md#isolated-patch)은(는) 매월 릴리스될 수 있으며 모든 [지원](lifecycle-policy.md) 릴리스 라인에 대한 보안 수정 사항을 포함할 수 있습니다(일반 및 확장 지원 포함).
+
+- **보안 패치**—최소 [보안 패치](versioning-policy.md#security-patch-release)은(는) 모든 [지원](lifecycle-policy.md) 릴리스 라인에 대해 매년(5월) 릴리스됩니다. 이러한 패치에는 이전에 릴리스된 모든 격리된 보안 수정 사항이 포함됩니다. Adobe은 필요한 경우 11월에 추가 보안 패치를 출시할 수 있지만 보장되지는 않습니다.
+
+- **패치**—Adobe Commerce 2.4.x LTS 릴리스 라인(3년 지원 기간)용 전체 [패치](versioning-policy.md#patch-release)은(는) 매년(5월) 릴리스됩니다.
+
+- **Beta 패치**—Adobe Commerce 2.4.x LTS 릴리스 라인용 [베타 패치 2개](versioning-policy.md#beta-patch-release)가 1년에 두 번(3월과 11월) 릴리스됩니다.
+
+자세한 내용은 다음 이미지를 참조하십시오.
+
+![2026 Adobe Commerce 릴리스 일정](../assets/release/release-calendar.drawio.svg)

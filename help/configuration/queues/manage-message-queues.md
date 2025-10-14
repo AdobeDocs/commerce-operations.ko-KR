@@ -2,16 +2,16 @@
 title: 메시지 대기열 관리
 description: Adobe Commerce의 명령줄에서 메시지 대기열을 관리하는 방법을 알아봅니다.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # 메시지 대기열 관리
 
-소비자가 메시지를 검색하도록 크론 작업 또는 외부 프로세스 관리자를 사용하여 명령줄에서 메시지 대기열을 관리할 수 있습니다.
+소비자가 메시지를 검색하도록 크론 작업 또는 외부 프로세스 관리자를 사용하여 명령줄에서 메시지 대기열을 관리할 수 있습니다. 이는 RabbitMQ(AMQP), Apache ActiveMQ Artemis(STOMP) 및 MySQL 어댑터를 비롯한 지원되는 모든 메시지 브로커에 적용됩니다.
 
 ## 프로세스 관리
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#cron_consumers_runner)을(를) 사용하여 `consumers_runner` cron 작업을 구성하십시오.
+>Adobe Commerce 스토어가 클라우드 플랫폼에서 호스팅되는 경우 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner)을(를) 사용하여 `consumers_runner` cron 작업을 구성하십시오.
 
 ### 특정 구성
 
@@ -78,10 +78,14 @@ ht-degree: 0%
 
   >[!INFO]
   >
-  >MySQL 작업 큐에서 여러 소비자를 실행하는 것은 권장되지 않습니다. 자세한 내용은 [MySQL에서 AMQP로 메시지 대기열 변경](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp)을 참조하십시오.
+  >MySQL 작업 큐에서 여러 소비자를 실행하는 것은 권장되지 않습니다. AMQP(RabbitMQ) 또는 STOMP(ActiveMQ Artemis)로 전환하는 방법에 대한 자세한 내용은 [MySQL에서 외부 브로커로 메시지 큐 변경](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers)을 참조하십시오.
 
   >[!INFO]
   >
-  >Adobe Commerce 스토어가 Cloud 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#consumers_wait_for_max_messages)을(를) 사용하여 소비자가 메시지 큐의 메시지를 처리하는 방법을 구성하십시오.
+  >Adobe Commerce 스토어가 Cloud 플랫폼에서 호스팅되는 경우 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages)을(를) 사용하여 소비자가 메시지 큐의 메시지를 처리하는 방법을 구성하십시오.
+
+  >[!NOTE]
+  >
+  >ActiveMQ Artemis(STOMP)는 Adobe Commerce 2.4.6 이상 버전에서 도입되었습니다.
 
 [메시지 큐 소비자 시작](../cli/start-message-queues.md)을 참조하세요.

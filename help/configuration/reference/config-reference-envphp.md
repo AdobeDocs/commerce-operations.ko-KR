@@ -2,9 +2,9 @@
 title: env.php 참조
 description: Adobe Commerce의 env.php 파일 구성 값 및 섹션에 대해 알아봅니다. 환경 설정 및 구성 옵션을 살펴봅니다.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
 
 ## db
 
@@ -172,11 +172,19 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 
 ## default_connection
 
-메시지 대기열에 대한 기본 연결을 정의합니다. 값은 `db`, `amqp` 또는 `redismq`과(와) 같은 사용자 지정 큐 시스템일 수 있습니다. `db` 이외의 값을 지정하는 경우 먼저 메시지 큐 소프트웨어를 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
+메시지 대기열에 대한 기본 연결을 정의합니다. 값은 `db`, `amqp`, `stomp` 또는 `redismq`과(와) 같은 사용자 지정 큐 시스템일 수 있습니다. `db` 이외의 값을 지정하는 경우 먼저 메시지 큐 소프트웨어를 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Stomp(ActiveMQ Artemis)의 경우:
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -185,7 +193,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 
 ## 디렉터리
 
-웹 서버가 `/pub`향상된 보안[을 위해 &#x200B;](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
+웹 서버가 `/pub`향상된 보안[을 위해 ](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
 
 ```conf
 'directories' => [
@@ -203,7 +211,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[다운로드 가능한 도메인](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 
@@ -233,13 +241,13 @@ Commerce 애플리케이션 설치 날짜입니다.
 
 ## 큐
 
-이 노드에서 메시지 큐 구성을 사용할 수 있습니다.
+이 노드에서 메시지 큐 구성을 사용할 수 있습니다. RabbitMQ(AMQP) 또는 ActiveMQ Artemis(STOMP)를 메시지 브로커로 구성할 수 있습니다.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```

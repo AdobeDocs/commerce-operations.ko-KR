@@ -2,9 +2,9 @@
 user-guide-title: 설치 안내서
 user-guide-description: 온-프레미스 배포용 Adobe Commerce을 설치하는 방법에 대해 알아봅니다.
 feature: Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '173'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,9 @@ ht-degree: 3%
       - [Nginx 구성](prerequisites/search-engine/configure-nginx.md)
       - [Apache 구성](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
-   - [메시지 브로커](prerequisites/rabbitmq.md)
+   - 메시지 브로커 {#message-brokers}
+      - [토끼 MQ](prerequisites/rabbitmq.md)
+      - [활성 MQ](prerequisites/activemq.md)
    - [보안](prerequisites/security.md)
    - [인증 키](prerequisites/authentication-keys.md)
    - [Adobe Commerce](prerequisites/commerce.md)
@@ -67,4 +69,4 @@ ht-degree: 3%
    - [Commerce 제거 또는 재설치](tutorials/uninstall.md)
    - [테마 제거](tutorials/themes.md)
    - [데이터베이스 스키마 업그레이드](tutorials/database-upgrade.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

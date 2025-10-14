@@ -1,15 +1,15 @@
 ---
-title: 메시지 브로커
+title: 메시지 브로커(RabbitMQ)
 description: 'Adobe Commerce의 온-프레미스 설치에 필요한 메시지 브로커 소프트웨어(예:  [!DNL RabbitMQ])를 설치하고 구성하려면 다음 단계를 따르십시오.'
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# 메시지 브로커
+# 메시지 브로커(RabbitMQ)
 
 Adobe Commerce은 [!DNL RabbitMQ] 오픈 소스 메시지 브로커를 사용합니다. 신뢰할 수 있고, 가용성이 높고, 확장 가능하고, 휴대성이 뛰어난 메시징 시스템을 제공합니다.
 

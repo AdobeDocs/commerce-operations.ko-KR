@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce의 graphql 애플리케이션 서버에 대해 알아봅니다. 구현 지침 및 최적화 전략을 살펴보십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server를 사용하면 Adobe Commerce에서 Commerce GraphQL API 요청 중 상태를 유지할 수 있습니다. Swool Extension에 구축된 GraphQL Application Server는 요청 처리를 처리하는 작업자 스레드를 사용하는 프로세스로 작동합니다. GraphQL Application Server는 GraphQL API 요청 중 부트스트랩된 애플리케이션 상태를 보존하여 요청 처리 및 전반적인 제품 성능을 향상시킵니다. API 요청의 효율성이 훨씬 향상되었습니다.
 
-GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
+GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
 
 >[!NOTE]
 >
->GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [!DNL AWS S3]원격 저장소[에 대해 &#x200B;](../configuration/remote-storage/cloud-support.md)을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
+>GraphQL Application Server는 현재 [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)과(와) 호환되지 않습니다. 현재 [!DNL AWS S3]원격 저장소[에 대해 ](../configuration/remote-storage/cloud-support.md)을(를) 사용하는 클라우드 인프라의 Adobe Commerce 고객은 GraphQL Application Server를 사용할 수 없습니다.
 
 ## 아키텍처
 
@@ -43,7 +43,7 @@ GraphQL Application Server를 실행하려면 다음이 필요합니다.
 
 ### 클라우드 프로젝트
 
-클라우드 인프라 프로젝트의 Adobe Commerce에는 기본적으로 Swool 확장이 포함되어 있습니다. [&#x200B; 파일의 &#x200B;](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) 속성에서 이 기능을 `runtime`활성화`.magento.app.yaml`할 수 있습니다. For example:
+클라우드 인프라 프로젝트의 Adobe Commerce에는 기본적으로 Swool 확장이 포함되어 있습니다. [ 파일의 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) 속성에서 이 기능을 `runtime`활성화`.magento.app.yaml`할 수 있습니다. For example:
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
+>루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
 
 ### 클라우드 프로젝트에 대한 지원 확인
 
@@ -537,3 +537,30 @@ bin/magento server:run --state-monitor
 >[!NOTE]
 >
 >PHP 가비지 수집기의 버그로 인해 `--state-monitor`이(가) PHP 버전 `8.3.0` - `8.3.4`과(와) 호환되지 않습니다. PHP 8.3을 사용하는 경우 이 기능을 사용하려면 `8.3.5` 이상으로 업그레이드해야 합니다.
+
+## 클라이언트 IP 검색을 위한 alternativeHeaders 구성
+
+기본적으로 GraphQL Application Server는 `x-forwarded-for` 파일에 정의된 `app/etc/di.xml` 헤더에 대한 표준 구성을 지원하므로 일반적인 프록시 및 CDN 환경에서 클라이언트 IP 주소를 정확하게 검색할 수 있습니다.
+
+추가 또는 사용자 지정 헤더(예: `x-client-ip`, `fastly-client-ip` 또는 `x-real-ip`)를 지원해야 하는 경우 `alternativeHeaders` 파일에서 `app/etc/di.xml` 인수를 확장하거나 재정의할 수 있습니다. 사용자 환경에서 `x-forwarded-for` 이외의 헤더를 사용하여 클라이언트 IP 주소를 전달하는 경우에만 필요합니다.
+
+예를 들어 다른 헤더에 대한 지원을 추가하려면 `app/etc/di.xml`을(를) 다음과 같이 업데이트하십시오.
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+필요에 따라 헤더를 추가, 제거 또는 재정렬하여 클라이언트 IP가 설정에 대한 올바른 소스에서 검색되도록 할 수 있습니다.
+
+>[!NOTE]
+>
+>Fastly CDN 모듈과 함께 Adobe Commerce Cloud를 사용하는 경우 이 구성은 자동으로 처리되며 수동으로 변경할 필요가 없습니다. 수동 구성은 사용자 지정 CDN, 프록시 또는 비표준 헤더 설정에만 필요합니다.

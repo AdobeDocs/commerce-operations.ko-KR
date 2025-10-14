@@ -2,9 +2,9 @@
 title: 릴리스 정책
 description: 다양한 유형의 Adobe Commerce 릴리스에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,6 @@ Adobe Commerce 기능의 GA 전 릴리스는 모든 Adobe Commerce 고객과 Ado
 
 Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 Adobe 지원 서비스 또는 다른 방법을 통해 Beta 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 고객은 Beta 릴리스 또는 관련 설명서나 자료의 올바른 기능이나 성능에 의존해서는 안 됩니다. 따라서 Beta 릴리스의 모든 사용은 전적으로 고객 자신의 책임입니다.
 
-## 기능, 클라우드 인프라 및 확장성 릴리스
-
-클라우드 인프라 및 기능 릴리스에는 패치 릴리스와 별도로 독립 서비스로 제공되는 새로운 기능 및 기능 업데이트가 포함되어 있습니다. 예로는 다음이 포함되지만 이에 국한되지는 않습니다.
-
-- 클라우드 호스팅 서비스 및 인프라에 대한 업데이트
-- B2B
-- SaaS 제품(카탈로그 서비스, 데이터 연결, 제품 추천 및 라이브 검색)
-- 확장성 기술(관리 UI SDK, API Mesh, App Builder 시작 키트, 이벤트 및 웹후크)
-
 ## 핫픽스
 
 핫픽스는 영향력이 큰 보안 또는 품질 수정 사항(예: 제로데이 취약점에 대한 수정 사항)이 포함되어 있는 패치로, 많은 판매자에게 영향을 줍니다. Adobe은 중요한 보안 또는 품질 문제가 영향을 줄 때 지원되는 Adobe Commerce 버전에 대한 핫픽스를 필요에 따라 릴리스합니다. 핫픽스가 기술 자료의 [알려진 문제 섹션](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)에 게시되었습니다. 이러한 수정 사항은 다음에 계획된 패치 릴리스에 포함되어 있습니다.
@@ -86,14 +77,14 @@ Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보�
 >
 >개별 패치에는 이전 버전과 호환 불가능한 변경 사항이 포함되어 있지 않습니다.
 
-## 분리된 패치
+## 격리된 보안 수정
 
-격리된 패치는 더 빠른 구현을 위해 전체 보안 패치와 별도로 릴리스된 보안 수정 사항입니다. 분리된 각 패치는 특정 보안 문제를 해결하며 최신 또는 예정된 전체 보안 패치에 포함됩니다. 문제에 대한 자세한 내용은 관련 보안 게시판에 제공되며, 이 게시판에서는 수정 사항 세부 정보, 패치 적용 방법 및 추가 정보가 포함된 기술 자료(KB) 문서에 연결됩니다.
+격리된 패치는 더 빠른 구현을 위해 전체 보안 패치와 별도로 릴리스된 비누적 보안 수정 사항입니다. 각각의 격리된 보안 수정은 특정 보안 문제를 해결하며 최신 또는 예정된 전체 보안 패치에 포함됩니다. 문제에 대한 자세한 내용은 관련 보안 게시판에 나와 있습니다. 이 게시판에는 수정 사항 세부 정보, 수정 사항 적용 방법 및 추가 정보가 포함된 기술 자료(KB) 문서에 연결됩니다.
 
-Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/kr/security/products/magento.html)를 참조하세요.
+Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/security/products/magento.html)를 참조하세요.
 
 ## 사용자 정의 패치
 
-문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.
+문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다. 사용자 지정 패치는 [품질 패치 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)를 통해 제공됩니다.
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->
