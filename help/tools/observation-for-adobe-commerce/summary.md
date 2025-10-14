@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 404 page errors frame]
 
-![시간 경과에 따른 인시던트를 찾을 수 없음을 보여주는 {404 오류 모니터링 대시보드](../../assets/tools/404-page-errors.jpg)
+![시간 경과에 따른 인시던트를 찾을 수 없음을 보여주는 &lbrace;404 오류 모니터링 대시보드](../../assets/tools/404-page-errors.jpg)
 
 **[!UICONTROL 404 page errors]** 프레임에 선택한 일정의 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 및 404 페이지 오류 수가 나열됩니다.
 
@@ -245,7 +245,7 @@ ht-degree: 0%
 
 ![데이터베이스 추적](../../assets/tools/database-traces.jpg)
 
-**[!UICONTROL Database traces]** 프레임은 [의 ](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql trace[!DNL New Relic] 엔터티의 데이터를 보고 추적 경로를 반환합니다.
+**[!UICONTROL Database traces]** 프레임은 [의 &#x200B;](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql trace[!DNL New Relic] 엔터티의 데이터를 보고 추적 경로를 반환합니다.
 
 ## [!UICONTROL Database mysql-slow.log]
 
@@ -320,7 +320,7 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 
 ## [!UICONTROL Traffic vs Week Ago]
 
-![주 전과 ](../../assets/tools/traffic-vs-week-ago.jpg)
+![주 전과 &#x200B;](../../assets/tools/traffic-vs-week-ago.jpg)
 
 **[!UICONTROL Traffic vs Week Ago]** 프레임은 (&#39;MISS&#39;, &#39;PASS&#39;) 캐시 상태가 있는 [!DNL Fastly] 로그의 웹 사이트 트래픽(요청)을 봅니다. 이러한 요청은 원천 서버에 로드를 추가합니다. 이 프레임에는 동일한 기간 동안 현재 주와 지난 주의 비교 웹 요청 볼륨이 표시됩니다.
 
@@ -382,9 +382,9 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 * &#39;%NoNodesAvailableException%&#39;을 &#39;no_alive_nodes&#39;로 설정
 * &#39;%PHP 치명적인 오류: 알 수 없는 오류: &#39;wrong_param&#39;으로 표시되는 Elasticsearch%&#39;의 매개 변수가 잘못되었습니다.
 * &#39;%Magento Cloud 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 이 문제를 &#39;ver_err&#39;로 해결할 수 있습니다.
-* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\](이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
+* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\] (이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
 * &#39;%no_space&#39;(으)로 장치%&#39;에 남은 공간 없음
-* &#39;% &#39;failed_query&#39;로 [SearchRequest{searchType=%&#39;을(를) 실행하지 못했습니다.
+* &#39;% &#39;failed_query&#39;로 &lbrack;SearchRequest&lbrace;searchType=%&#39;을(를) 실행하지 못했습니다.
 
 ## [!UICONTROL Cron view]
 
