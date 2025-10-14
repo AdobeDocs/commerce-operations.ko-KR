@@ -35,7 +35,7 @@ ht-degree: 0%
 >
 >관리 저장소 > 설정 > 구성 > 고급 > 시스템 > Cron 그룹 구성 옵션: 소비자에서 구성할 수 있습니다.
 >
->Commerce에서 [을(를) 사용하는 방법에 대한 자세한 내용은 ](../cli/configure-cron-jobs.md)cron 구성 및 실행`cron`을 참조하십시오.
+>Commerce에서 [을(를) 사용하는 방법에 대한 자세한 내용은 &#x200B;](../cli/configure-cron-jobs.md)cron 구성 및 실행`cron`을 참조하십시오.
 
 [감독자](https://supervisord.readthedocs.io/en/latest/)와 같은 프로세스 관리자를 사용하여 프로세스 상태를 모니터링할 수도 있습니다. 관리자는 명령줄을 사용하여 필요에 따라 프로세스를 재시작할 수 있습니다.
 
