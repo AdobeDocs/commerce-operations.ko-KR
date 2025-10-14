@@ -38,7 +38,7 @@ ht-degree: 5%
    - [시스템 요구 사항](upgrade-compatibility-tool/prerequisites.md)
    - [!DNL Upgrade Compatibility Tool] 사용 {#use-upgrade-compatibility-tool}
       - [명령줄 인터페이스에서 도구 실행](upgrade-compatibility-tool/run.md)
-      - [ [!DNL Site-Wide Analysis Tool]과(와) 통합](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [&#x200B; [!DNL Site-Wide Analysis Tool]과(와) 통합](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Magento PHPStorm 플러그인 내에서 도구 실행](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
    - 보고 {#reporting}
       - [보고서](upgrade-compatibility-tool/reports.md)

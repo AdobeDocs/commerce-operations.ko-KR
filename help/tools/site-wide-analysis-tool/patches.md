@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Patches]
 
-[!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] 페이지에 Adobe Commerce 스토어에 사용할 수 있는 모든 패치가 표시됩니다. 이러한 패치는 Adobe Commerce에서 발생할 수 있는 문제를 해결하는 데 도움이 됩니다. [의 ](https://support.magento.com/hc/en-us/articles/360047139492)품질 패치 도구 릴리스된: 품질 패치를 자체 제공하는 새로운 도구[!DNL support knowledge base] 문서를 참조하십시오.
+[!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] 페이지에 Adobe Commerce 스토어에 사용할 수 있는 모든 패치가 표시됩니다. 이러한 패치는 Adobe Commerce에서 발생할 수 있는 문제를 해결하는 데 도움이 됩니다. [의 &#x200B;](https://support.magento.com/hc/en-us/articles/360047139492)품질 패치 도구 릴리스된: 품질 패치를 자체 제공하는 새로운 도구[!DNL support knowledge base] 문서를 참조하십시오.
 
 >[!NOTE]
 >

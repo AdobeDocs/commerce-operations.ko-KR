@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 관리자의 [웹 사이트, 스토어 및 스토어 보기 설정](ms-admin.md).
 1. [Nginx 가상 호스트](#step-2-create-nginx-virtual-hosts))를 만들어 여러 웹 사이트 또는 Commerce 웹 사이트당 하나의 Nginx 가상 호스트를 매핑합니다(아래 설명된 단계).
-1. Magento에서 제공한 [을(를) 사용하여 ](ms-overview.md)MAGE 변수`$MAGE_RUN_TYPE` `$MAGE_RUN_CODE` 및 `nginx.conf.sample`의 값을 nginx에 전달합니다(아래 설명된 단계).
+1. Magento에서 제공한 [을(를) 사용하여 &#x200B;](ms-overview.md)MAGE 변수`$MAGE_RUN_TYPE` `$MAGE_RUN_CODE` 및 `nginx.conf.sample`의 값을 nginx에 전달합니다(아래 설명된 단계).
 
    - `$MAGE_RUN_TYPE`은(는) `store` 또는 `website`일 수 있습니다.
 

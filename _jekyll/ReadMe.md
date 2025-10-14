@@ -216,7 +216,7 @@ relationships:
 
 - Ruby와 Bundler가 설치되었습니다.
 - Gemfile에 지정된 필수 gems.
-- [ 작업에 대한 Python, ](https://www.pygmt.org/latest/install.html)PyGMT[ 및 ](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`.
+- [&#x200B; 작업에 대한 Python, &#x200B;](https://www.pygmt.org/latest/install.html)PyGMT[&#x200B; 및 &#x200B;](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`.
 
 ## 설정
 

@@ -200,7 +200,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니
    bin/magento setup:upgrade
    ```
 
-1. [에서 ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearch 구성[!DNL Admin].
+1. [에서 &#x200B;](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearch 구성[!DNL Admin].
 
 1. 카탈로그 색인을 다시 색인화합니다.
 
@@ -232,7 +232,7 @@ Elasticsearch 8.x에 대한 지원은 Adobe Commerce 2.4.6에 도입되었습니
    bin/magento setup:upgrade
    ```
 
-1. [에서 ](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearch 구성[!DNL Admin].
+1. [에서 &#x200B;](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)Elasticsearch 구성[!DNL Admin].
 
 1. 카탈로그 색인을 다시 색인화합니다.
 

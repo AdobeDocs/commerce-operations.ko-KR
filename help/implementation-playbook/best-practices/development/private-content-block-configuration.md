@@ -15,7 +15,7 @@ ht-degree: 1%
 
 개인 콘텐츠 블록에 `_isScopePrivate` 변수가 포함되어 있으면 블록을 캐시할 수 없습니다. 비공개 블록은 캐시되지 않으므로 Adobe Commerce은 각 고객 요청에 대해 동일한 데이터를 검색해야 서버 로드가 증가합니다.
 
-비공개 콘텐츠에 대해 `_isScopePrivate` 변수를 사용하는 대신 사용자와 관계없는 데이터를 표시할 블록 및 템플릿을 만드십시오. 이 데이터는 Adobe Commerce UI 구성 요소에 의해 사용자별 데이터로 대체되므로 렌더링 데이터를 보다 효율적으로 처리할 수 있습니다. 지침은 [의 ](https://developer.adobe.com/commerce/php/development/cache/page/private-content/)개인 콘텐츠&#x200B;_[!DNL Commerce PHP Extensions Guide]_&#x200B;를 참조하십시오.
+비공개 콘텐츠에 대해 `_isScopePrivate` 변수를 사용하는 대신 사용자와 관계없는 데이터를 표시할 블록 및 템플릿을 만드십시오. 이 데이터는 Adobe Commerce UI 구성 요소에 의해 사용자별 데이터로 대체되므로 렌더링 데이터를 보다 효율적으로 처리할 수 있습니다. 지침은 [의 &#x200B;](https://developer.adobe.com/commerce/php/development/cache/page/private-content/)개인 콘텐츠&#x200B;_[!DNL Commerce PHP Extensions Guide]_&#x200B;를 참조하십시오.
 
 ## 영향을 받는 제품 및 버전
 

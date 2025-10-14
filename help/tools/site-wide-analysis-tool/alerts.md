@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-[!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] 페이지에는 판매자를 위한 Adobe Commerce 관리 경고 패치가 표시됩니다. Adobe은 업계 모범 사례를 사용하여 성능 지표를 추적할 [!DNL Managed Alerts]을(를) 제공합니다. [의 ](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce)Adobe Commerce에 대한 관리 경고[!DNL support knowledge base] 문서를 참조하십시오.
+[!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] 페이지에는 판매자를 위한 Adobe Commerce 관리 경고 패치가 표시됩니다. Adobe은 업계 모범 사례를 사용하여 성능 지표를 추적할 [!DNL Managed Alerts]을(를) 제공합니다. [의 &#x200B;](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce)Adobe Commerce에 대한 관리 경고[!DNL support knowledge base] 문서를 참조하십시오.
 
 ## 사용 시기
 

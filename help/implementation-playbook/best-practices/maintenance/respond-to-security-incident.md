@@ -99,7 +99,7 @@ Commerce 관리 및 사용자 계정, 애플리케이션 코드, 데이터베이
 
 ### 감사 코드
 
-- 관리자의 [ 및 ](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ko)을(를) 포함한 모든 범위 수준에서 `website`HTML 머리글 및 바닥글 구성`store view`을 검토하십시오. 스크립트, 스타일 시트 및 기타 HTML 설정에서 알 수 없는 JavaScript 코드를 제거합니다. 코드 조각 추적과 같이 인식된 코드만 유지합니다.
+- 관리자의 [&#x200B; 및 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=ko)을(를) 포함한 모든 범위 수준에서 `website`HTML 머리글 및 바닥글 구성`store view`을 검토하십시오. 스크립트, 스타일 시트 및 기타 HTML 설정에서 알 수 없는 JavaScript 코드를 제거합니다. 코드 조각 추적과 같이 인식된 코드만 유지합니다.
 
 - 현재 프로덕션 코드 베이스를 버전 제어 시스템(VCS)에 저장된 코드 베이스와 비교합니다.
 

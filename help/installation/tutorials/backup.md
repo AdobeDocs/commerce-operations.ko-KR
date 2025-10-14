@@ -78,7 +78,7 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->실패 알림 없이 불완전한 롤백을 초래할 수 있으므로 [`pcre.recursion_limit` 파일에서 ](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`의 값을 설정하지 않는 것이 좋습니다.
+>실패 알림 없이 불완전한 롤백을 초래할 수 있으므로 [`pcre.recursion_limit` 파일에서 &#x200B;](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`의 값을 설정하지 않는 것이 좋습니다.
 
 ## 백업
 

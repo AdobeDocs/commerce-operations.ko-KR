@@ -31,4 +31,4 @@ ht-degree: 0%
 
 * 타사 [!DNL extensions]을(를) 최신 버전으로 유지할 수 없는 경우 다른 [!DNL extensions]을(를) 사용해 보십시오.
 
-* 잠재적인 문제를 방지하려면 [!DNL extensions]Commerce Marketplace[과(와) 같은 신뢰할 수 있는 소스에서 타사 ](https://marketplace.magento.com/extensions.html)을(를) 다운로드하거나 구매하십시오.
+* 잠재적인 문제를 방지하려면 [!DNL extensions]Commerce Marketplace[과(와) 같은 신뢰할 수 있는 소스에서 타사 &#x200B;](https://marketplace.magento.com/extensions.html)을(를) 다운로드하거나 구매하십시오.

@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![UCT SWAT 위젯 - 결과](../../assets/upgrade-guide/uct-swat-results.png)
 
-**[!UICONTROL Download Report]** [!DNL Upgrade Compatibility Tool]HTML 보고서[를 검색하고 세부 정보를 검토하려면 ](../upgrade-compatibility-tool/reports.md#html-report)을(를) 클릭하십시오.
+**[!UICONTROL Download Report]** [!DNL Upgrade Compatibility Tool]HTML 보고서[를 검색하고 세부 정보를 검토하려면 &#x200B;](../upgrade-compatibility-tool/reports.md#html-report)을(를) 클릭하십시오.
 
 
 >[!NOTE]

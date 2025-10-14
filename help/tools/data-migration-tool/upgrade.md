@@ -53,7 +53,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 * [찾기](install.md#find-released-versions-of-data-migration-tool) 릴리스 버전의 [!DNL Data Migration Tool]
 
-* [ 버전을 ](install.md#check-version-of-installed-data-migration-tool)확인[!DNL Data Migration Tool]
+* [&#x200B; 버전을 &#x200B;](install.md#check-version-of-installed-data-migration-tool)확인[!DNL Data Migration Tool]
 
 ## [!DNL Data Migration Tool] 업그레이드
 

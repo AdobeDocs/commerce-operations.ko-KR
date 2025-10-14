@@ -31,7 +31,7 @@ try {
 }
 ```
 
-이 방법은 `$e->getMessage`PSR-3 컨텍스트 표준`$e`에 따라 로그 메시지에 [을(를), 컨텍스트에 ](https://www.php-fig.org/psr/psr-3/#13-context) 개체를 자동으로 저장합니다. 이 작업은 `\Magento\Framework\Logger\Monolog::addRecord`에서 수행됩니다.
+이 방법은 `$e->getMessage`PSR-3 컨텍스트 표준`$e`에 따라 로그 메시지에 [을(를), 컨텍스트에 &#x200B;](https://www.php-fig.org/psr/psr-3/#13-context) 개체를 자동으로 저장합니다. 이 작업은 `\Magento\Framework\Logger\Monolog::addRecord`에서 수행됩니다.
 
 ### 음소거 신호 ![수정](../../../assets/yes.svg)개
 

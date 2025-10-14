@@ -71,7 +71,7 @@ ht-degree: 0%
 
 클라우드 인프라에서 Adobe Commerce의 단일 구현으로 여러 스토어를 설정하고 실행할 수 있습니다. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
-`robots.txt`단일 사이트 상점`sitemap.xml`에 대해 [ 및 ](#single-site-storefronts) 파일을 구성하는 것과 동일한 모범 사례가 두 가지 중요한 차이점이 있는 다중 사이트 상점 상점에 적용됩니다.
+`robots.txt`단일 사이트 상점`sitemap.xml`에 대해 [&#x200B; 및 &#x200B;](#single-site-storefronts) 파일을 구성하는 것과 동일한 모범 사례가 두 가지 중요한 차이점이 있는 다중 사이트 상점 상점에 적용됩니다.
 
 - `robots.txt` 및 `sitemap.xml` 파일 이름에 해당 사이트의 이름이 포함되어 있는지 확인하십시오. For example:
    - `domaineone_robots.txt`

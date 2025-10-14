@@ -234,7 +234,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 응용 프로그램이 실패하고 `We're sorry, an error has occurred while generating this email.` 오류가 발생하는 경우:
 
-1. [ 권한을 가진 사용자로 ](../../installation/prerequisites/file-system/configure-permissions.md)파일 시스템 소유권 및 사용 권한`root`을(를) 다시 설정합니다.
+1. [&#x200B; 권한을 가진 사용자로 &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md)파일 시스템 소유권 및 사용 권한`root`을(를) 다시 설정합니다.
 1. 다음 디렉터리를 지웁니다.
    - `var/cache/`
    - `var/page_cache/`

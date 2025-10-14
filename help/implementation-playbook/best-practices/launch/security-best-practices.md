@@ -39,7 +39,7 @@ Adobe은 다음 권장 사항을 모든 고객에게 가장 높은 우선 순위
 
 ![검사 목록](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **관리자 보안**
 
-- [기본 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=ko#use-a-custom-admin-url) 또는 `admin`과(와) 같은 일반적인 용어를 사용하지 않고 기본값이 아닌 관리자 URL을 구성`backend`합니다. 이 구성은 사이트에 대한 무단 액세스를 시도하는 스크립트에 대한 노출을 줄입니다.
+- [기본 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=ko#use-a-custom-admin-url) 또는 `admin`과(와) 같은 일반적인 용어를 사용하지 않고 기본값이 아닌 관리자 URL을 구성`backend`합니다. 이 구성은 사이트에 대한 무단 액세스를 시도하는 스크립트에 대한 노출을 줄입니다.
 
 - [고급 보안 설정 구성](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ko)—URL에 비밀 키를 추가하고, 암호는 대/소문자를 구분해야 하며, 관리자 사용자 계정을 잠그기 전에 허용되는 관리자 세션 길이, 암호 수명 간격 및 로그인 시도 횟수를 제한합니다. 보안을 강화하려면 현재 세션이 만료되기 전에 키보드 비활성화 시간을 구성하고 사용자 이름과 암호를 대소문자를 구분해야 합니다.
 

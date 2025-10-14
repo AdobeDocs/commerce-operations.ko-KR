@@ -47,7 +47,7 @@ ACSD-63139 패치는 제품 속성에 수천 개의 옵션 값이 포함된 경�
    bin/magento cron:install
    ```
 
-1. [!DNL RabbitMQ]필수 구성 요소[[!DNL RabbitMQ] 의 지침에 따라 ](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/prerequisites/rabbitmq)을(를) 구성합니다.
+1. [!DNL RabbitMQ]필수 구성 요소[[!DNL RabbitMQ] 의 지침에 따라 &#x200B;](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/prerequisites/rabbitmq)을(를) 구성합니다.
 1. `php.ini` 파일을 열고 메모리 제한을 4G로 설정하고 PHP 서비스를 다시 시작합니다.
 1. 관리 패널에서 **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**(으)로 이동합니다.
 1. *[!UICONTROL Export Settings]* 섹션에서 **[!UICONTROL Entity Type]**&#x200B;을(를) *제품*(으)로 설정하고 맨 아래로 스크롤한 다음 **[!UICONTROL Continue]**&#x200B;을(를) 클릭합니다.
@@ -73,7 +73,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 ](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 ## 관련 읽기

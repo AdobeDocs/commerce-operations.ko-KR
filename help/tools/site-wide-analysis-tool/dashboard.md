@@ -12,7 +12,7 @@ ht-degree: 0%
 # [!UICONTROL Dashboard]
 
 [!UICONTROL Dashboard] 페이지에는 Adobe Commerce 웹 사이트의 상태 및 현재 상태에 대한 &quot;단일 창 보기&quot;를 제공하는 [!DNL widgets]이(가) 한 눈에 표시됩니다. 각 [!DNL widget]에는 [!DNL widget]에 따라 각 기능의 페이지, 도구 자체 또는 보고서에 대한 액세스 링크가 있습니다.
-[!UICONTROL External Resources]Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터) [, ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ko)Adobe Commerce 개발자 설명서(DevDocs) [, ](https://developer.adobe.com/commerce/docs/): 패치 검색[[!DNL Quality Patches Tool], ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}보안 센터[, ](https://helpx.adobe.com/kr/security.html)Adobe Commerce 관찰(OAC) [을 포함하여 ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ko)개의 Adobe Commerce 링크 목록도 있습니다.
+[!UICONTROL External Resources]Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터) [, &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ko)Adobe Commerce 개발자 설명서(DevDocs) [, &#x200B;](https://developer.adobe.com/commerce/docs/): 패치 검색[[!DNL Quality Patches Tool], &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}보안 센터[, &#x200B;](https://helpx.adobe.com/kr/security.html)Adobe Commerce 관찰(OAC) [을 포함하여 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ko)개의 Adobe Commerce 링크 목록도 있습니다.
 
 ## 요소
 

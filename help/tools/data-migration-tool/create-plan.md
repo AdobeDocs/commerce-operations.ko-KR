@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * 기존 Magento 1 시스템과 적어도 일치하는 토폴로지 및 설계를 사용하여 Magento 2 하드웨어 시스템을 설정합니다
 
-* [!DNL Data Migration Tool]시스템 요구 사항[을 충족하는 시스템에 Magento 2.x(이 릴리스의 모든 모듈 포함) 및 ](../../installation/system-requirements.md)을(를) 설치합니다.
+* [!DNL Data Migration Tool]시스템 요구 사항[을 충족하는 시스템에 Magento 2.x(이 릴리스의 모든 모듈 포함) 및 &#x200B;](../../installation/system-requirements.md)을(를) 설치합니다.
 
 * 일부 데이터(예: CMS Pages, Sales Rules)를 마이그레이션할 필요가 없거나 마이그레이션하는 동안 Magento 사용자 지정을 전환하려는 경우 [!DNL Data Migration Tool] 코드를 사용자 지정 조정하십시오. 내부에서 마이그레이션이 작동하는 방식을 더 잘 이해하려면 [!DNL Data Migration Tool]의 [기술 사양](technical-specification.md)을 읽어 보십시오
 

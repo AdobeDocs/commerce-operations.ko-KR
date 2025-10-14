@@ -136,7 +136,7 @@ server {
 
 ## &#x200B;4. 모드 전환
 
-[ 및 ](../../configuration/bootstrap/application-modes.md)을(를) 포함하는 `production`응용 프로그램 모드`developer`은(는) 보안을 강화하고 개발을 더 쉽게 하도록 설계되었습니다. 이름을 통해 알 수 있듯이 응용 프로그램을 확장하거나 사용자 지정할 때는 `developer` 모드로 전환하고, 라이브 환경에서 실행할 때는 `production` 모드로 전환해야 합니다.
+[&#x200B; 및 &#x200B;](../../configuration/bootstrap/application-modes.md)을(를) 포함하는 `production`응용 프로그램 모드`developer`은(는) 보안을 강화하고 개발을 더 쉽게 하도록 설계되었습니다. 이름을 통해 알 수 있듯이 응용 프로그램을 확장하거나 사용자 지정할 때는 `developer` 모드로 전환하고, 라이브 환경에서 실행할 때는 `production` 모드로 전환해야 합니다.
 
 모드 간 전환은 서버 구성이 제대로 작동하는지 확인하는 중요한 단계입니다. CLI 도구를 사용하여 모드 간에 전환할 수 있습니다.
 

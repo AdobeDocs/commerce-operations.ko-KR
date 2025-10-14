@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 시스템 요구 사항
 
-[에 대한 ](../../installation/system-requirements.md)시스템 요구 사항[!DNL Data Migration Tool]은(는) Magento 2와 동일합니다.
+[에 대한 &#x200B;](../../installation/system-requirements.md)시스템 요구 사항[!DNL Data Migration Tool]은(는) Magento 2와 동일합니다.
 
 ## 내부 구조
 

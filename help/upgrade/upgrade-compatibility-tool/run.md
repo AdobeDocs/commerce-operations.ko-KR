@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 [!DNL Upgrade Compatibility Tool]은(는) 설치된 모든 모듈을 분석하여 특정 버전에 대한 Adobe Commerce 사용자 지정 인스턴스를 확인하는 도구입니다. 최신 버전의 Adobe Commerce으로 업그레이드하기 전에 해결해야 하는 중요한 문제, 오류 및 경고 목록을 반환합니다.
 
-[에 대한 자세한 내용은 이 ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=ko)비디오 튜토리얼:02(06[!DNL Upgrade Compatibility Tool])을 참조하세요.
+[에 대한 자세한 내용은 이 &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=ko)비디오 튜토리얼:02(06[!DNL Upgrade Compatibility Tool])을 참조하세요.
 
 명령줄 인터페이스에서 [!DNL Upgrade Compatibility Tool]에 사용할 수 있는 명령:
 
@@ -260,7 +260,7 @@ bin/uct upgrade:check --help
 - 이름이 같은 모듈이 두 개 있는 것은 피하십시오.
 - Adobe Commerce [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)을 따르십시오.
 - Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ko) 모범 사례입니다.
-- [!DNL Upgrade Compatibility Tool][[!DNL Site-Wide Analysis Tool]에서 ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)클라우드 인프라의 Adobe Commerce[ 프로젝트에 대해 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko){target=_blank}을(를) 실행합니다.
+- [!DNL Upgrade Compatibility Tool][[!DNL Site-Wide Analysis Tool]에서 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)클라우드 인프라의 Adobe Commerce[&#x200B; 프로젝트에 대해 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko){target=_blank}을(를) 실행합니다.
 
 ## 결과 최적화
 
