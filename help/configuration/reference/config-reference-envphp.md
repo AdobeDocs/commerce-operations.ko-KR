@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
 
 ## db
 
@@ -211,7 +211,7 @@ Stomp(ActiveMQ Artemis)의 경우:
 ]
 ```
 
-[다운로드 가능한 도메인](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 
