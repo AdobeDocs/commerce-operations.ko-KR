@@ -388,7 +388,7 @@ Adobe은 Managed Services 시스템에서 Adobe Commerce의 프로비저닝, 개
 
 Managed Services용 Adobe 보안 스택은 자동화 및 일관성을 사용하여 모든 수준에서 보안을 구축하여 사람의 오류를 줄입니다. 개발 및 운영 팀은 서로 다른 스택 수준에서 보안 제어 기능을 자동으로 상속합니다.
 
-Amazon Web Services 및 Microsoft Azure와 같은 플랫폼 파트너는 플랫폼 사용자 정의를 적용할 때 최대 보안 범위를 보장하며 Adobe의 Managed Services 팀은 규정 준수, 로깅, 인증, 스캔 및 모니터링과 같은 핵심 보안 서비스, 서버 보안 및 보안 애플리케이션 구성을 제공합니다. 자세한 내용은 [Adobe Commerce 보안](https://business.adobe.com/products/magento/secure-ecommerce.html)을 참조하십시오.
+Amazon Web Services 및 Microsoft Azure와 같은 플랫폼 파트너는 플랫폼 사용자 정의를 적용할 때 최대 보안 범위를 보장하며 Adobe의 Managed Services 팀은 규정 준수, 로깅, 인증, 스캔 및 모니터링과 같은 핵심 보안 서비스, 서버 보안 및 보안 애플리케이션 구성을 제공합니다. 자세한 내용은 [Adobe Commerce 보안](https://business.adobe.com/kr/products/magento/secure-ecommerce.html)을 참조하십시오.
 
 다음 다이어그램은 Adobe Managed Services 보안 기술 스택을 보여 줍니다.
 

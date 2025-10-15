@@ -57,6 +57,6 @@ _AC-15160_
 
 ### 보안
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
