@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
+source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
 workflow-type: tm+mt
-source-wordcount: '28592'
+source-wordcount: '29060'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.72 {#v1-1-72}
+
+* **ACSD-68040**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.7) - 많은 내역 검색 요청이 있는 [!DNL MariaDB] 10.6 및 11.4에서 프론트엔드 검색 페이지 성능이 저하되는 문제를 수정합니다.
+* **ACSD-67941**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7-p1 &lt;2.4.8) - 필터 이름을 알 수 없는 GraphQL 요청으로 인해 PHP 예외 로그가 발생하는 문제를 해결했습니다.
+* **ACSD-68064**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 예약된 업데이트를 만들면 중첩된 범주가 많은 환경에서 항목이 중복되는 문제를 해결합니다.
+* **ACSD-66807**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - `report_viewed_product_index` 표에 잘못된 제품 페이지 보기 수가 표시되는 문제가 해결되었습니다.
+* **ACSD-67383**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 동일한 세션에서 두 개의 회사 관리자 계정과 함께 **[!UICONTROL Login as Customer]**&#x200B;을(를) 사용하면 *cartId가 있는 해당 엔터티가 없음* 오류가 발생하는 문제를 해결했습니다.
+* **ACSD-67518**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 행 수가 배치 크기를 초과할 때 고급 보고에서 중복 헤더 행을 생성하는 문제를 수정합니다.
+* **ACSD-67639**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - **[!UICONTROL Dynamic Price]**&#x200B;이(가) *아니요*(으)로 설정된 번들 제품에 대해 대변 메모를 만들지 못하는 문제가 수정되었습니다.
+* **ACSD-67696**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 캐시 플러시 후 `media_gallery` 항목이 장바구니 GraphQL 제품 노드에서 반환되지 않는 문제를 해결했습니다.
+* **ACSD-67946**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.9) - 장바구니 업데이트에 중복 오류 배너가 표시되는 문제를 해결했습니다.
+* **ACSD-68011**(Adobe Commerce의 경우 B2B >=1.5.1 &lt;1.5.3) - 존재하지 않는 SKU가 `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API를 통해 공유 카탈로그에 할당될 수 있는 문제를 수정합니다.
+* **ACSD-68118**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.9의 경우) - `customerCart` GraphQL 쿼리가 스토어 헤더를 반영하지 않는 제품 특성 값을 반환하여 현지화 작업이 일치하지 않는 문제를 해결했습니다.
+* **ACSD-68092**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 예약된 업데이트와 기본 제품 데이터 간의 부적절한 동기화로 인해 다중 저장 후 번들 제품 옵션이 손실되는 문제를 해결했습니다.
+* **ACSD-67424**(Adobe Commerce의 경우 B2B >=1.5.0 &lt;1.5.3) - 협상 가능 견적을 사용할 때 `updated_at` `GET /carts/search` API 응답의 [!DNL REST] 값이 **[!UICONTROL Admin panel]**&#x200B;에 표시된 값과 일치하지 않는 문제를 해결했습니다.
+* **ACSD-67187**(Adobe Commerce, B2B >=1.5.1 &lt;1.5.3) - 기본이 아닌 웹 사이트로 제한된 관리 사용자에게 오류가 표시되는 문제를 해결했습니다. *계속하려면 적어도 공개 공유 카탈로그를 만드십시오*. 회사 그리드의 **[!UICONTROL Add New Company]** 단추에 액세스할 수 없습니다.
+* 업데이트된 버전: **ACSD-49737**, **ACSD-53750**, **ACSD-51819**, **ACSD-55566**, **ACSD-62965**, **ACSD-63323**, **ACSD-63406**, **ACSD-66139**, **ACSD-66404**, **ACSD-67659**, **ACSD-66301**
+* 대체된 패치: **ACSD-62577**, **ACSD-63325**, **ACSD-67102**
 
 ## v1.1.71 {#v1-1-71}
 
