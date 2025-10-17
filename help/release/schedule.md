@@ -2,7 +2,7 @@
 title: 패치 릴리스 일정
 description: Adobe이 Adobe Commerce에 대한 새로운 패치 및 보안 수정 사항을 언제 발표할지 알아봅니다.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
+source-git-commit: f4601034e3e988b3058946b263ec5e8da41fce16
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Adobe은 조기 채택자에게 향상된 기능을 더 빨리 제공하면서 �
 
 >[!NOTE]
 >
->새로운 기능, 클라우드 인프라 및 확장성 릴리스에 대한 자세한 내용은 [Adobe Commerce 서비스](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/release-information/release-notes-all) 릴리스 설명서를 참조하십시오.
+>새로운 기능, 클라우드 인프라 및 확장성 릴리스에 대한 자세한 내용은 [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) 릴리스 설명서를 참조하십시오.
 
 이 페이지에 나열된 예약된 품질, 보안 및 Beta 패치 외에도 Adobe은 [품질 패치 도구](versioning-policy.md#individual-patch)를 통해 [개별 패치](../tools/quality-patches-tool/usage.md)에 대한 액세스를 제공합니다. 이 도구를 사용하면 설치된 Adobe Commerce 버전에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다.
 
@@ -34,4 +34,6 @@ Adobe은 조기 채택자에게 향상된 기능을 더 빨리 제공하면서 �
 
 자세한 내용은 다음 이미지를 참조하십시오.
 
-![2026 Adobe Commerce 릴리스 일정](../assets/release/release-calendar.drawio.svg)
+<!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
+
+![2026 Adobe Commerce 릴리스 일정](../assets/release/release-calendar.drawio.png)
