@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -92,18 +92,21 @@ _AC-14610_
 
 #### 오래된 웹 도구 API에서 새로운 RESTful USPS API로 USPS 통합 마이그레이션
 
-USPS가 2026년 1월 25일까지 레거시 Web Tools API의 은퇴를 발표함에 따라 Adobe Commerce USPS 통합은 새로운 RESTful USPS API로 마이그레이션됩니다.
+USPS가 2026년 1월 25일까지 레거시 Web Tools API의 종료를 발표한 것을 준수하기 위해 Adobe Commerce USPS 통합은 새로운 RESTful USPS API로 마이그레이션됩니다.
+
 주요 개선 사항:
-- 이중 API 지원: 이제 관리자는 구성 설정을 통해 기존 Web Tools API와 새로운 RESTful USPS API 중에서 선택할 수 있습니다.
-- 인증 업그레이드: 보안 API 액세스를 위해 OAuth 2.0을 구현했습니다.
-- 향상된 데이터 형식: 보다 깔끔하고 효율적인 커뮤니케이션을 위해 XML에서 JSON으로 전환되었습니다.
-- 새 관리자 필드:
-게이트웨이 REST URL(모드 기준: 개발 또는 라이브)
-클라이언트 ID 및 암호
-계정 유형, 계정 번호
-CRID, MID, Mailer 식별 코드
-국제 배송에 대한 AES/ITN
-REST별 허용된 배송 방법
+
+* 이중 API 지원: 이제 관리자는 구성 설정을 통해 기존 Web Tools API와 새로운 RESTful USPS API 중에서 선택할 수 있습니다.
+* 인증 업그레이드: 보안 API 액세스를 위해 OAuth 2.0을 구현했습니다.
+* 향상된 데이터 형식: 보다 깔끔하고 효율적인 커뮤니케이션을 위해 XML에서 JSON으로 전환되었습니다.
+* 새 관리자 필드:
+   * 게이트웨이 REST URL(모드 기준: 개발 또는 라이브)
+   * 클라이언트 ID 및 암호
+   * 계정 유형, 계정 번호
+   * CRID, MID, Mailer 식별 코드
+   * 국제 배송에 대한 AES/ITN
+   * REST별 허용된 배송 방법
+
 이 마이그레이션을 통해 Adobe Commerce은 USPS 표준을 지속적으로 준수하고 시스템 안정성을 향상시키며 판매자를 위한 미래 지향적 배송 통합을 실현할 수 있습니다.
 
 _AC-13257_

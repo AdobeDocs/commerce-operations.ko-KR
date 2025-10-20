@@ -1,7 +1,7 @@
 ---
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -85,4 +85,19 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+>Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+
+## 2025년 10월 보안 패치 백포트 {#oct-2025-backports}
+
+<!--These fixes were backported to 2.4.8-pe, 2.4.7-p8, and 2.4.6-p13-->
+
+* **TinyMCE에서 Hugerte.org로 마이그레이션**
+
+  TinyMCE 5 및 6에 대한 지원 종료 및 TinyMCE 7과의 라이선스 비호환성으로 인해 Adobe Commerce WYSIWYG 편집기의 현재 구현은 TinyMCE에서 오픈 소스 [HugeRTE 편집기](https://hugerte.org/)&#x200B;(으)로 마이그레이션됩니다.
+
+  이러한 마이그레이션은 Adobe Commerce이 오픈 소스 라이센싱을 준수하도록 하며 알려진 TinyMCE 6 취약점을 방지하고 판매자와 개발자에게 현대적이고 지원되는 편집 환경을 제공합니다.
+
+* **Apache ActiveMQ Artemis STOMP 프로토콜에 대한 지원이 추가되었습니다**
+
+  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. [Commerce 구성 가이드](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)에서 *Apache ActiveMQ Artemis*&#x200B;을(를) 참조하십시오.
+

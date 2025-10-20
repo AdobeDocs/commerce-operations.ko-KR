@@ -1,5 +1,5 @@
 ---
-source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
+source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 이번 릴리스에는 다음과 같은 주요 사항이 포함됩니다.
 
-* **TinyMCE 업그레이드**—이제 관리자의 [WYSIWYG 편집기](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/wysiwyg/editor)에서 최신 버전의 TinyMCE 종속성(7.3&#x200B;)을 사용합니다.
+* **TinyMCE 업그레이드**—이제 관리자의 [WYSIWYG 편집기](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor)에서 최신 버전의 TinyMCE 종속성(7.3&#x200B;)을 사용합니다.
 
    * TinyMCE 7.3은 향상된 사용자 경험, 향상된 공동 작업 및 향상된 효율성을 제공합니다. TinyMCE 5는 2.4.8 릴리스 라인에서 제거되었습니다&#x200B;.
 
