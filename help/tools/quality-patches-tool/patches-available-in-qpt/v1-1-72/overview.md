@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 89b78f72fce3f65b8f282038cc4e2ef0f190bda3
+source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -23,7 +23,7 @@ QPT v1.1.72에는 다음 패치가 포함됩니다.
 1. **ACSD-67383**: 같은 세션에 두 개의 회사 관리자 계정을 사용하여 고객으로 로그인하면 *cartId가 있는 해당 엔터티가 없음* 오류가 발생합니다.
 1. **ACSD-67518**: 행 수가 배치 크기를 초과하면 고급 보고에서 중복된 머리글 행을 생성합니다.
 1. **ACSD-67639**: **[!UICONTROL Dynamic Price]**&#x200B;이(가) *아니요*(으)로 설정된 번들 제품에 대해 대변 메모를 만들지 못했습니다.
-1. **ACSD-67696**: 캐시 플러시 후 `media_gallery`개의 항목이 장바구니 GraphQL 제품 노드에서 반환되지 않습니다.
+1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: 캐시 플러시 후 `media_gallery`개의 항목이 장바구니 GraphQL 제품 노드에서 반환되지 않습니다.
 1. **ACSD-67946**: 장바구니 업데이트에 중복 오류 배너가 표시됩니다.
 1. **ACSD-68011**: 존재하지 않는 SKU는 `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API를 통해 공유 카탈로그에 할당할 수 있습니다.
 1. **ACSD-68118**: `customerCart` GraphQL 쿼리가 스토어 헤더를 반영하지 않는 제품 특성 값을 반환하여 지역화가 일치하지 않습니다.
