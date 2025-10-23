@@ -35,8 +35,8 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Adobe Commerce 버전 2.4.6-p13에는 이전 버전과 호환되지 않는 변경 내용이 있는 이전 부 버전에서 원활하게 업그레이드하는 데 필요한 `magento/inventory-composer-installer` 패키지가 포함되어 있지 않습니다.<br>
->>2.3에서 2.4.6-p13으로 업그레이드하는 경우 업그레이드하기 전에 다음 명령을 실행하여 `magento/inventory-composer-installer` 패키지를 설치하십시오.
->>`composer require magento/inventory-composer-installer`
+>&#x200B;>2.3에서 2.4.6-p13으로 업그레이드하는 경우 업그레이드하기 전에 다음 명령을 실행하여 `magento/inventory-composer-installer` 패키지를 설치하십시오.
+>&#x200B;>`composer require magento/inventory-composer-installer`
 
 ## 패키지 관리
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 1. 메시지 큐 소비자와 같은 비동기 프로세스가 실행되는 동안 업그레이드 프로세스를 시작하면 데이터가 손상될 수 있습니다. 데이터 손상을 방지하려면 모든 cron 작업을 비활성화하십시오.
 
-   클라우드 인프라의 Adobe Commerce(_0}):_
+   클라우드 인프라의 Adobe Commerce(_0&rbrace;):_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
@@ -240,7 +240,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 응용 프로그램이 실패하고 `We're sorry, an error has occurred while generating this email.` 오류가 발생하는 경우:
 
-1. [ 권한을 가진 사용자로 ](../../installation/prerequisites/file-system/configure-permissions.md)파일 시스템 소유권 및 사용 권한`root`을(를) 다시 설정합니다.
+1. [&#x200B; 권한을 가진 사용자로 &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md)파일 시스템 소유권 및 사용 권한`root`을(를) 다시 설정합니다.
 1. 다음 디렉터리를 지웁니다.
    - `var/cache/`
    - `var/page_cache/`
