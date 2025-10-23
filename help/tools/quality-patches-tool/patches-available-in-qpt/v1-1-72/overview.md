@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
+source-git-commit: fddde045789cdbbe811975b06635574b9835d497
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.72에는 다음 패치가 포함됩니다.
 1. **ACSD-67639**: **[!UICONTROL Dynamic Price]**&#x200B;이(가) *아니요*(으)로 설정된 번들 제품에 대해 대변 메모를 만들지 못했습니다.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: 캐시 플러시 후 `media_gallery`개의 항목이 장바구니 GraphQL 제품 노드에서 반환되지 않습니다.
 1. **ACSD-67946**: 장바구니 업데이트에 중복 오류 배너가 표시됩니다.
-1. **ACSD-68011**: 존재하지 않는 SKU는 `/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API를 통해 공유 카탈로그에 할당할 수 있습니다.
+1. **ACSD-68011**: /V1/sharedCatalog/:id/assignProducts API를 통해 공유 카탈로그에 할당된 존재하지 않는 SKU입니다.
 1. **ACSD-68118**: `customerCart` GraphQL 쿼리가 스토어 헤더를 반영하지 않는 제품 특성 값을 반환하여 지역화가 일치하지 않습니다.
 1. **ACSD-68092**: 예약된 업데이트와 기본 제품 데이터 간의 부적절한 동기화로 인해 다중 저장 후 번들 제품 옵션이 손실됩니다.
 1. **ACSD-67424**: `updated_at` `GET /carts/search` API 응답의 [!DNL REST] 값이 협상 가능한 견적을 사용할 때 **[!UICONTROL Admin panel]**&#x200B;에 표시된 값과 일치하지 않습니다.
