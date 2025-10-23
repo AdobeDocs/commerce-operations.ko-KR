@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 5b0229d73dc7b8ad53750102e99447bb15baa84d
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ USPS가 2026년 1월 25일까지 레거시 Web Tools API의 종료를 발표한 
 * 향상된 데이터 형식: 보다 깔끔하고 효율적인 커뮤니케이션을 위해 XML에서 JSON으로 전환되었습니다.
 * 새 관리자 필드:
    * 게이트웨이 REST URL(모드 기준: 개발 또는 라이브)
-   * 클라이언트 ID &amp; 암호
+   * 클라이언트 ID 및 암호
    * 계정 유형, 계정 번호
    * CRID, MID, Mailer 식별 코드
    * 국제 배송에 대한 AES/ITN
