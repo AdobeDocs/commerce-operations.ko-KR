@@ -1,5 +1,5 @@
 ---
-source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+>Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
 
 ## 2025년 10월 보안 패치 백포트 {#oct-2025-backports}
 
@@ -99,5 +99,4 @@ ht-degree: 0%
 
 * **Apache ActiveMQ Artemis STOMP 프로토콜에 대한 지원이 추가되었습니다**
 
-  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. [Commerce 구성 가이드](https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)에서 *Apache ActiveMQ Artemis*&#x200B;을(를) 참조하십시오.
-
+  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. [Commerce 구성 가이드](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)에서 *Apache ActiveMQ Artemis*&#x200B;을(를) 참조하십시오.

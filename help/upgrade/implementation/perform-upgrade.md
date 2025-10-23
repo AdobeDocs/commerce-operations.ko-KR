@@ -2,9 +2,9 @@
 title: 업그레이드 수행
 description: Adobe Commerce의 온-프레미스 배포를 업그레이드하려면 다음 단계를 따르십시오.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- 클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 Cloud Guide에서 [Commerce 버전 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=ko)를 참조하십시오.
+>- 클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 Cloud Guide에서 [Commerce 버전 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html)를 참조하십시오.
 >- GitHub 저장소를 복제한 경우 이 메서드를 사용하여 업그레이드하지 마십시오. [git 기반 설치 업그레이드](../developer/git-installs.md)를 참조하십시오.
 
 다음 지침은 Composer 패키지 관리자를 사용하여 업그레이드하는 방법을 보여 줍니다. Adobe Commerce 2.4.2에서는 Composer 2에 대한 지원을 도입했습니다. &lt;2.4.1에서 업그레이드하려는 경우 먼저 Composer 1을 사용하여 Composer 2와 호환되는 버전(예: 2.4.2)으로 업그레이드해야 합니다. _이전_ >2.4.2 업그레이드를 위해 Composer 2로 업그레이드하십시오. 또한 [지원되는 버전](../../installation/system-requirements.md)의 PHP를 실행해야 합니다.
@@ -31,6 +31,12 @@ ht-degree: 0%
 ## 시작하기 전에
 
 업그레이드 프로세스를 시작하기 전에 환경을 준비하려면 [업그레이드 필수 구성 요소](../prepare/prerequisites.md)를 완료해야 합니다.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce 버전 2.4.6-p13에는 이전 버전과 호환되지 않는 변경 내용이 있는 이전 부 버전에서 원활하게 업그레이드하는 데 필요한 `magento/inventory-composer-installer` 패키지가 포함되어 있지 않습니다.<br>
+>>2.3에서 2.4.6-p13으로 업그레이드하는 경우 업그레이드하기 전에 다음 명령을 실행하여 `magento/inventory-composer-installer` 패키지를 설치하십시오.
+>>`composer require magento/inventory-composer-installer`
 
 ## 패키지 관리
 
@@ -48,7 +54,7 @@ ht-degree: 0%
 
 1. 메시지 큐 소비자와 같은 비동기 프로세스가 실행되는 동안 업그레이드 프로세스를 시작하면 데이터가 손상될 수 있습니다. 데이터 손상을 방지하려면 모든 cron 작업을 비활성화하십시오.
 
-   클라우드 인프라의 Adobe Commerce(_0&rbrace;):_
+   클라우드 인프라의 Adobe Commerce(_0}):_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
@@ -234,7 +240,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 응용 프로그램이 실패하고 `We're sorry, an error has occurred while generating this email.` 오류가 발생하는 경우:
 
-1. [&#x200B; 권한을 가진 사용자로 &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md)파일 시스템 소유권 및 사용 권한`root`을(를) 다시 설정합니다.
+1. [ 권한을 가진 사용자로 ](../../installation/prerequisites/file-system/configure-permissions.md)파일 시스템 소유권 및 사용 권한`root`을(를) 다시 설정합니다.
 1. 다음 디렉터리를 지웁니다.
    - `var/cache/`
    - `var/page_cache/`
