@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+>Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
 
 ## 2025년 10월 보안 패치 백포트 {#oct-2025-backports}
 
@@ -99,4 +99,21 @@ ht-degree: 0%
 
 * **Apache ActiveMQ Artemis STOMP 프로토콜에 대한 지원이 추가되었습니다**
 
-  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. [Commerce 구성 가이드](https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)에서 *Apache ActiveMQ Artemis*&#x200B;을(를) 참조하십시오.
+  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. [Commerce 구성 가이드](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)에서 *Apache ActiveMQ Artemis*&#x200B;을(를) 참조하십시오.
+
+## 체크아웃 페이지가 static.min.js 및 mixins.min.js를 로드하지 못했습니다. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
+
+최근 CSP/SRI 변경 후에는 JavaScript 번들링 및 축소가 프로덕션 모드에서 모두 활성화될 때 체크아웃 페이지가 static.min.js 및 mixins.min.js를 로드하지 않습니다. 따라서 RequireJS mixins가 실행되지 않고 체크아웃 녹아웃 템플릿을 확인하지 못합니다(예: `"Failed to load the 'Magento_Checkout/shipping' template requested by 'checkout.steps.shipping-step.shippingAddress'"`).
+
+**해결 방법**:
+
+* JavaScript 번들 비활성화 또는
+* JavaScript 번들링을 활성화한 상태로 유지하는 경우 JavaScript 축소를 비활성화합니다.
+
+>[!IMPORTANT]
+>
+>CSP를 비활성화하거나 프로덕션에서 SRI 보호를 제거하지 마십시오. 플러그인 수준 우회는 핫픽스를 위한 마지막 수단으로만 사용해야 하며 보안 팀에서 검토해야 합니다.
+
+**핫픽스**:
+
+이 문제를 해결하는 핫픽스가 가능한 한 빨리 릴리스됩니다. 업데이트를 위해 이 릴리스 정보 페이지를 모니터링하십시오.
