@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
+source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
 workflow-type: tm+mt
-source-wordcount: '29060'
+source-wordcount: '29260'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,21 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.73 {#v1-1-73}
+
+* **ACSD-67171**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - 세션이 만료되었거나 체크 아웃 중에 제거되었을 때 B2B 사용자에게 *[!UICONTROL Access Denied]* 페이지가 표시되는 문제를 해결했습니다.
+* **ACSD-67908**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - JS 파일이 다중 스토어 설정에서 제대로 병합되지 않는 문제를 해결했습니다.
+* **ACSD-68190**(Adobe Commerce >=2.4.4 &lt;2.4.7) - 할인이 적용되지 않고, 적용된 할인이 GraphQL 장바구니 보기 응답에 올바르게 표시되지 않으며, 쿠폰 할인을 제거할 때 비쿠폰 할인이 제거되는 문제를 해결했습니다.
+* **ACSD-68206**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - **[!UICONTROL Rate Limiting]** 확장이 설치된 [!DNL PHP Redis] 기능과 함께 GraphQL Application Server를 사용할 때 발생하는 오류를 수정합니다.
+* **ACSD-68356**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - GraphQL 장바구니 쿼리에서 가상 견적에 대해 잘못된 할인 금액을 반환하는 문제를 해결했습니다.
+* **ACSD-68391**(Adobe Commerce >=2.4.6-p10 &lt;2.4.9) - **[!UICONTROL Quick Order]** 및 **[!UICONTROL Requisition Lists]**&#x200B;에서 범주 관련 권한이 올바르게 적용되지 않는 문제를 해결했습니다.
+* **ACSD-68400**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 가상 기프트 카드 수량이 인벤토리 예약 테이블에 정확하게 반영되지 않은 문제를 해결했습니다.
 
 ## v1.1.72 {#v1-1-72}
 
