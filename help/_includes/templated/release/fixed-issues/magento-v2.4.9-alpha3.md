@@ -1,5 +1,5 @@
 ---
-source-git-commit: 151272eed6c4bb2e1c2e5138a5c8a3a7e7bd8fe6
+source-git-commit: ae571a9e7ca1234644a3bc9beade447009c58a3d
 workflow-type: tm+mt
 source-wordcount: '6079'
 ht-degree: 0%
@@ -41,9 +41,9 @@ total_count가 페이지 크기로 잘못 제한된 재고 내보내기 재고 �
 
 _ACP2E-4086 - [GitHub 코드 기여도](https://github.com/magento/inventory/commit/5632fb5e)_
 
-#### 공격자가 REST API를 사용하여 POST 요청을 사용할 수 있으며, RCE 페이로드를 전송할 수 있음
+#### 장바구니 항목 REST API의 사용자 지정 옵션 ID에 대한 유효성 검사 문제
 
-REST API V1/guest-carts/&lt;cartId>/items/ 및 V1/carts/mine/items/ 이제 &quot;product_options.extension_attributes.custom_options의 유효성을 검사합니다.장바구니 항목 SKU에서 유효한 option_id가 되도록 *.option_id&quot;입니다. 이전에는 이러한 옵션이 유효성 검사 없이 처리되어 데이터베이스에 저장되었습니다.
+REST API V1/guest-carts/&lt;cartId>/items/ 및 V1/carts/mine/items/ 이제 &quot;product_options.extension_attributes.custom_options를 확인합니다.*.option_id&quot;를 사용하여 장바구니 항목 SKU에 대한 유효한 option_id를 참조하는지 확인합니다. 이전에는 이 매개 변수가 유효성 검사 없이 처리되어 데이터베이스에 저장되었습니다.
 
 _ACP2E-4138 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/a1c57b2e)_
 
