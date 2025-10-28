@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72에는 다음 패치가 포함됩니다.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: 캐시 플러시 후 `media_gallery`개의 항목이 장바구니 GraphQL 제품 노드에서 반환되지 않습니다.
 1. **ACSD-67946**: 장바구니 업데이트에 중복 오류 배너가 표시됩니다.
 1. **ACSD-68011**: /V1/sharedCatalog/:id/assignProducts API를 통해 공유 카탈로그에 할당된 존재하지 않는 SKU입니다.
-1. **ACSD-68118**: `customerCart` GraphQL 쿼리가 스토어 헤더를 반영하지 않는 제품 특성 값을 반환하여 지역화가 일치하지 않습니다.
+1. **ACSD-68118**: `customerCart` [!DNL GraphQL] 쿼리가 스토어 보기에 대해 잘못된 제품 특성 값을 반환합니다.
 1. **ACSD-68092**: 예약된 업데이트와 기본 제품 데이터 간의 부적절한 동기화로 인해 다중 저장 후 번들 제품 옵션이 손실됩니다.
 1. **ACSD-67424**: `updated_at` `GET /carts/search` API 응답의 [!DNL REST] 값이 협상 가능한 견적을 사용할 때 **[!UICONTROL Admin panel]**&#x200B;에 표시된 값과 일치하지 않습니다.
 1. **ACSD-67187**: 기본이 아닌 웹 사이트로 제한된 관리 사용자에게 오류가 표시됩니다. *&quot;*계속하려면 적어도 공개 공유 카탈로그를 만드십시오*. 회사 그리드의 **[!UICONTROL Add New Company]** 단추에 액세스할 수 없습니다.
