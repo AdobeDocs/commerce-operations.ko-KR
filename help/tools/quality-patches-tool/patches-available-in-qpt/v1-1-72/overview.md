@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
+source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.72에는 다음 패치가 포함됩니다.
 1. **ACSD-68040**: [!DNL MariaDB] 10.6에서 프론트엔드 검색 페이지의 속도가 느려집니다.
 1. **ACSD-67941**: 필터 이름을 알 수 없는 GraphQL 요청으로 인해 PHP 예외 로그가 발생합니다.
-1. **ACSD-68064**: 예약된 업데이트를 만들면 중첩된 범주가 많은 환경에서 항목이 중복됩니다.
+1. **ACSD-68064**: 범주가 깊게 중첩된 환경에서 예약된 업데이트 중에 만든 항목이 중복됩니다.
 1. **ACSD-66807**: `report_viewed_product_index` 테이블에 제품 페이지 보기 수가 잘못되었습니다.
 1. **ACSD-67383**: 같은 세션에 두 개의 회사 관리자 계정을 사용하여 고객으로 로그인하면 *cartId가 있는 해당 엔터티가 없음* 오류가 발생합니다.
 1. **ACSD-67518**: 행 수가 배치 크기를 초과하면 고급 보고에서 중복된 머리글 행을 생성합니다.
