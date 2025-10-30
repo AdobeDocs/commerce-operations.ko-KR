@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.5의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 5f0914e92e5d1f1a27640a12a36c73ce878687a0
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1492'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.5-p15 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -28,14 +28,19 @@ Adobe Commerce 2.4.5-p15 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 >[!NOTE]
 >
->2.4.5용 확장 지원 보안 패치는 Adobe Commerce 고객만 사용할 수 있습니다. 이러한 패치는 Magento Open Source 코드 기반에 사용할 수 없습니다. [확장 지원](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)을 참조하세요.
+>2.4.5용 확장 지원 보안 패치는 Adobe Commerce 고객만 사용할 수 있습니다. 이러한 패치는 Magento Open Source 코드 기반에 사용할 수 없습니다. [확장 지원](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)을 참조하세요.
 
+### 알려진 문제
+
+#### 체크아웃 페이지가 static.min.js 및 mixins.min.js를 로드하지 못했습니다.
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
 
 ## 2.4.5-p14
 
 Adobe Commerce 2.4.5-p14 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/kr/security/products/magento/apsb25-71.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -43,7 +48,7 @@ Adobe Commerce 2.4.5-p14 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 Adobe Commerce 2.4.5-p13 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/kr/security/products/magento/apsb25-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -65,7 +70,7 @@ Adobe Commerce 2.4.5-p13 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 Adobe Commerce 2.4.5-p12 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/kr/security/products/magento/apsb25-26.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -77,7 +82,7 @@ Adobe Commerce 2.4.5-p12 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 Adobe Commerce 2.4.5-p11 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/kr/security/products/magento/apsb25-08.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -89,7 +94,7 @@ Adobe Commerce 2.4.5-p11 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 Adobe Commerce 2.4.5-p10 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/kr/security/products/magento/apsb24-73.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -105,7 +110,7 @@ Adobe Commerce 2.4.5-p10 보안 릴리스는 이전 릴리스 2.4.5에서 식별
 
 Adobe Commerce 2.4.5-p9 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/kr/security/products/magento/apsb24-61.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -119,7 +124,7 @@ Adobe Commerce 2.4.5-p9 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p8 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/kr/security/products/magento/apsb24-40.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
 
 ### CVE-2024-34102용 핫픽스 적용
 
@@ -137,13 +142,13 @@ Adobe Commerce 2.4.5-p8 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p7 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/kr/security/products/magento/apsb24-18.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오.
 
 ## 2.4.5-p6
 
 Adobe Commerce 2.4.5-p6 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 준수하도록 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/kr/security/products/magento/apsb24-03.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -160,7 +165,7 @@ Adobe Commerce 2.4.5-p6 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p5 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 준수하도록 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-50](https://helpx.adobe.com/kr/security/products/magento/apsb23-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -181,21 +186,21 @@ Adobe Commerce 2.4.5-p5 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p4 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-42](https://helpx.adobe.com/kr/security/products/magento/apsb23-42.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 
-`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
+`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
 
 ## 2.4.5-p3
 
 Adobe Commerce 2.4.5-p3 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/kr/security/products/magento/apsb23-35.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/security/products/magento/apsb23-35.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 
-`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [쿼리 UI 보안 취약점 CVE-2022-31160 수정 사항(2.4.4, 2.4.5 및 2.4.6 릴리스)에 지정된 패치를 적용해야 합니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) 기술 자료 문서.
+`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [쿼리 UI 보안 취약점 CVE-2022-31160 수정 사항(2.4.4, 2.4.5 및 2.4.6 릴리스)에 지정된 패치를 적용해야 합니다](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6) 기술 자료 문서.
 
 ### 강조 표시
 
@@ -215,13 +220,13 @@ Adobe Commerce 2.4.5-p3 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 Adobe Commerce 2.4.5-p2 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 세 가지 보안 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-17](https://helpx.adobe.com/kr/security/products/magento/apsb23-17.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html)을 참조하십시오.
 
 ## 2.4.5-p1
 
 Adobe Commerce 2.4.5-p1 보안 릴리스는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB22-48](https://helpx.adobe.com/kr/security/products/magento/apsb22-48.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)을 참조하십시오.
 
 보안 버그 수정 중 하나에 새 구성 설정 생성이 포함되었습니다. [!UICONTROL **전자 메일이 변경된 경우 전자 메일 확인 필요**] 구성 설정을 사용하면 관리자가 전자 메일 주소를 변경할 때 전자 메일 확인을 요구할 수 있습니다. <!-- AC-6292-->
 
