@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. GET /carts/search REST API 응답의 Updated_at 값이 협상 가능 견적을 사용할 때 관리 패널에 표시된 값과 일치하지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. GET /carts/search REST API 응답의 Updated_at 값이 협상 가능 견적을 사용할 때 관리 패널에 표시된 값과 일치하지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 동일한 세션에서 두 개의 회사 관리자 계정을 사용하여 고객으로 로그인하면 "장바구니 ID가 있는 해당 엔터티 없음" 오류</a>이 발생합니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 동일한 세션에서 두 개의 회사 관리자 계정을 사용하여 고객으로 로그인하면 "장바구니 ID가 있는 해당 엔터티 없음" 오류</a>이 발생합니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -53,7 +53,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">개요: QPT(품질 패치 도구) v1.1.73</a>이(가) 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">개요: QPT(품질 패치 도구) v1.1.73</a>이(가) 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -75,7 +75,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 예약된 업데이트를 만들면 중첩된 범주가 많은 환경에서 항목이 중복됩니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 예약된 업데이트를 만들면 중첩된 범주가 많은 환경에서 항목이 중복됩니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -83,7 +83,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 장바구니 업데이트에 중복 오류 배너가 표시됨</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 장바구니 업데이트에 중복 오류 배너가 표시됨</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -113,7 +113,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 프론트엔드 검색 페이지에서 MariaDB 10.6 및 11.4의 성능이 저하되고 많은 내역 검색 요청이 있습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 프론트엔드 검색 페이지에서 MariaDB 10.6 및 11.4의 성능이 저하되고 많은 내역 검색 요청이 있습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -121,7 +121,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. CustomerCart GraphQL 쿼리가 스토어 헤더를 반영하지 않는 제품 특성 값을 반환하여 일관성 없는 지역화를 초래합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. CustomerCart GraphQL 쿼리가 스토어 헤더를 반영하지 않는 제품 특성 값을 반환하여 일관성 없는 지역화를 초래합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -129,7 +129,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807: Report_viewed_product_index 테이블에 잘못된 제품 페이지 보기 수가 표시됨</a>에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명이 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807: Report_viewed_product_index 테이블에 잘못된 제품 페이지 보기 수가 표시됨</a>에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명이 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -151,7 +151,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 동적 가격이 No</a>로 설정된 번들 제품에 대해 대변 메모를 만들 수 없습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639에 대한 QPT 1.1.72 수정 사항에 대한 자세한 설명을 추가했습니다. 동적 가격이 No</a>로 설정된 번들 제품에 대해 대변 메모를 만들 수 없습니다.</p>
 </td>
       <td>
         새 주제, qpt
