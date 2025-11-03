@@ -1,5 +1,5 @@
 ---
-source-git-commit: 287be6576d85b403982a50d462b41ace79f697da
+source-git-commit: 4f72726e9e49521db486d5b61e0e598f9f6f87dd
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -29,20 +29,20 @@ ht-degree: 5%
           <td>1.32</td>
           <td>1.32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/guide-overview">개요</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">개요</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>라이브 검색</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/live-search/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -54,19 +54,19 @@ ht-degree: 5%
           <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/payment-services/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>제품 추천</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/product-recommendations/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
   </tbody>
