@@ -4,7 +4,7 @@ description: Adobe Commerce용 확장된 Valkey 캐시 구현을 사용하여 �
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
-source-git-commit: 1ab977bf2b30c2851609f0bfcc636978e974f07a
+source-git-commit: 75dc606da65196619028e99ec44841db3988a73e
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 [`VALKEY_BACKEND`Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)의 __&#x200B;을(를) 참조하십시오.
+클라우드 인프라의 환경 구성에 대해서는 [`VALKEY_BACKEND`Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)의 __&#x200B;을(를) 참조하십시오.
 
 온-프레미스 설치의 경우 [구성 가이드](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)에서 _Valkey 페이지 캐싱 구성_&#x200B;을 참조하십시오.
 
 >[!NOTE]
 >
->최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
+>최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 ### L2 캐시 메모리 크기 조정(Adobe Commerce Cloud)
 
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-자세한 내용은 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)의 _VALKEY_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
+자세한 내용은 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)의 _VALKEY_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
 
 Adobe Commerce 온-프레미스 설치의 경우 `bin/magento:setup` 명령을 사용하여 새 Valkey 캐시 구현을 구성합니다. 자세한 내용은 [구성 가이드](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)에서 _기본 캐시에 대한 Valkey 사용_&#x200B;을 참조하십시오.
 
 >[!WARNING]
 >
->_크기 조정/분할 아키텍처_&#x200B;를 사용하여 클라우드 인프라 프로젝트에 대한 올바른 슬레이브 연결을 구성하지 [마십시오](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). 이로 인해 Valkey 연결 오류가 발생합니다. 자세한 내용은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) 안내서의 _Valkey 구성 지침_&#x200B;을(를) 참조하십시오.
+>_크기 조정/분할 아키텍처_&#x200B;를 사용하여 클라우드 인프라 프로젝트에 대한 올바른 슬레이브 연결을 구성하지 [마십시오](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). 이로 인해 Valkey 연결 오류가 발생합니다. 자세한 내용은 [클라우드 인프라의 Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) 안내서의 _Valkey 구성 지침_&#x200B;을(를) 참조하십시오.
 
 ## 미리 로드 키
 
@@ -153,11 +153,11 @@ stage:
 
 >[!NOTE]
 >
->앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
+>앞의 예에서 `full_page` 캐시는 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)를 사용하므로 클라우드 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
 
 온-프레미스 설치를 구성하려면 [구성 가이드](../../../configuration/cache/level-two-cache.md#stale-cache-options)에서 _오래된 캐시 옵션_&#x200B;을 참조하십시오.
 
-배포 중에 [빌드 및 배포 로그](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs)에 다음 줄이 표시됩니다.
+배포 중에 [빌드 및 배포 로그](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs)에 다음 줄이 표시됩니다.
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
