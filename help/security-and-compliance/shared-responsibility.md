@@ -2,9 +2,9 @@
 title: 공동 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
+source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -745,9 +745,9 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 |     | Adobe | 판매자 |
 | --- | --- | --- |
-| Elasticsearch 가용성 | R |   |
-| 기본 Elasticsearch 설정 구성 | R |   |
-| 설치된 Adobe Commerce 버전과 호환되는 Elasticsearch 버전을 설치하려면 서비스 요청을 제출하십시오 |  | R |
+| Elasticsearch 또는 OpenSearch 가용성 | R |   |
+| 기본 Elasticsearch 또는 OpenSearch 설정 구성 | R |   |
+| 설치된 Adobe Commerce 버전과 호환되는 Elasticsearch 또는 OpenSearch 버전을 설치하려면 서비스 요청을 제출하십시오. |  | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +793,17 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 
 {style="table-layout:auto"}
 
+>
+>가맹점은 가장 최신 버전의 라이브 검색, 제품 추천 및 결제 서비스를 사용하여 가장 높은 안정성, 기능 및 지원 자격을 보장해야 합니다.
+>Adobe은 오래된 버전을 지원하지 않으며, 업그레이드를 통해 최신 개선 사항 및 버그 수정 사항을 활용할 수 있습니다.
+>지원되는 버전에 대한 자세한 내용은 [Commerce 서비스용 제품 가용성 매트릭스](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)를 참조하십시오.
+
 #### 제품 추천
 
 |     | Adobe | 판매자 |
 | --- | --- | --- |
 | 제품 추천 서비스 가용성 | R |   |
+| 제품 추천 모듈 업그레이드 |   | R |
 
 {style="table-layout:auto"}
 
@@ -806,6 +812,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 |     | Adobe | 판매자 |
 | --- | --- | --- |
 | Live Search 서비스 가용성 | R |   |
+| 라이브 검색 모듈 업그레이드 |   | R |
 
 {style="table-layout:auto"}
 
@@ -820,6 +827,15 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 | 핵심 AEM EDS 구현(Commerce Boilerplate) | R |   |
 | 사용자 지정 AEM EDS 구현 |  | R |
 | 기타 모든 사용자 지정 Storefront 구현 |  | R |
+
+{style="table-layout:auto"}
+
+#### 결제 서비스
+
+|     | Adobe | 판매자 |
+| --- | --- | --- |
+| 결제 서비스 가용성 | R |   |
+| 결제 모듈 업그레이드 |   | R |
 
 {style="table-layout:auto"}
 
