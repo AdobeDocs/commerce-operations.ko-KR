@@ -796,7 +796,7 @@ Adobe Commerce on cloud infrastructure 솔루션은 CDN 공급자를 사용하�
 >
 >가맹점은 가장 최신 버전의 라이브 검색, 제품 추천 및 결제 서비스를 사용하여 가장 높은 안정성, 기능 및 지원 자격을 보장해야 합니다.
 >Adobe은 오래된 버전을 지원하지 않으며, 업그레이드를 통해 최신 개선 사항 및 버그 수정 사항을 활용할 수 있습니다.
->지원되는 버전에 대한 자세한 내용은 [Commerce 서비스용 제품 가용성 매트릭스](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)를 참조하십시오.
+>지원되는 버전에 대한 자세한 내용은 [Commerce 서비스용 제품 가용성 매트릭스](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability#commerce-services)를 참조하십시오.
 
 #### 제품 추천
 
