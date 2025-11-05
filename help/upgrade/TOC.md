@@ -3,10 +3,10 @@ user-guide-title: 업그레이드 안내서
 user-guide-description: Adobe Commerce 애플리케이션 업그레이드가 중요한 이유와 업그레이드를 성공적으로 계획하고 실행하는 방법을 알아보십시오.
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 5%
    - [플랫폼 변경 사항 검토](prepare/platform-changes.md)
    - [업그레이드 사전 요구 사항 완료](prepare/prerequisites.md)
    - [Elasticsearch에서 OpenSearch로 마이그레이션](prepare/opensearch-migration.md)
+   - [RabbitMQ에서 ActiveMQ로 마이그레이션](prepare/activemq-migration.md)
    - [업그레이드 범위 이해](prepare/scope.md)
 - 구현 {#implementation}
    - [업그레이드 수행](implementation/perform-upgrade.md)
@@ -38,7 +39,7 @@ ht-degree: 5%
    - [시스템 요구 사항](upgrade-compatibility-tool/prerequisites.md)
    - [!DNL Upgrade Compatibility Tool] 사용 {#use-upgrade-compatibility-tool}
       - [명령줄 인터페이스에서 도구 실행](upgrade-compatibility-tool/run.md)
-      - [&#x200B; [!DNL Site-Wide Analysis Tool]과(와) 통합](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [ [!DNL Site-Wide Analysis Tool]과(와) 통합](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Magento PHPStorm 플러그인 내에서 도구 실행](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
    - 보고 {#reporting}
       - [보고서](upgrade-compatibility-tool/reports.md)
@@ -54,4 +55,4 @@ ht-degree: 5%
 - 리소스 {#resources}
    - [권장 읽기](resources/recommended-reading.md)
    - [Adobe Commerce을 통한 플랫폼 현대화](resources/recommended-upgrade-paths.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
