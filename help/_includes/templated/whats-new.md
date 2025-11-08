@@ -614,7 +614,7 @@ ht-degree: 1%
       <td>
         주요 업데이트
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">끌어오기 요청</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.ko-KR/pull/161">끌어오기 요청</a></td>
     </tr>
   </tbody>
 </table>

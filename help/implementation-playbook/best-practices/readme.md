@@ -18,7 +18,7 @@ Adobe은 다음 그룹의 개인을 포함하되 이에 국한되지 않고 내�
 
 ## 요청을 만드는 방법
 
-**내부 관련자**&#x200B;이(가) COMDOX 프로젝트에서 Jira 문제를 열어 요청을 제출할 수 있습니다. **외부 관련자**&#x200B;이(가) 이 저장소에서 [GitHub 문제](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose)를 열어 요청을 제출할 수 있습니다.
+**내부 관련자**&#x200B;이(가) COMDOX 프로젝트에서 Jira 문제를 열어 요청을 제출할 수 있습니다. **외부 관련자**&#x200B;이(가) 이 저장소에서 [GitHub 문제](https://github.com/AdobeDocs/commerce-operations.ko-KR/issues/new/choose)를 열어 요청을 제출할 수 있습니다.
 
 다음 유형의 요청을 제출할 수 있습니다.
 
@@ -29,7 +29,7 @@ Adobe은 다음 그룹의 개인을 포함하되 이에 국한되지 않고 내�
 ## 전반적인 프로세스는 무엇입니까?
 
 
-**Jira 티켓 또는 문제 만들기**—내부 이해 당사자가 COMDOX 프로젝트에서 Jira 티켓을 만듭니다. 외부 관련자가 GitHub 문제를 제출합니다. 팀이 컨텍스트를 이해하고 요청의 우선 순위를 정하는 데 도움이 되도록 Jira 또는 [GitHub 문제](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose)에 전체 세부 정보를 포함하십시오.
+**Jira 티켓 또는 문제 만들기**—내부 이해 당사자가 COMDOX 프로젝트에서 Jira 티켓을 만듭니다. 외부 관련자가 GitHub 문제를 제출합니다. 팀이 컨텍스트를 이해하고 요청의 우선 순위를 정하는 데 도움이 되도록 Jira 또는 [GitHub 문제](https://github.com/AdobeDocs/commerce-operations.ko-KR/issues/new/choose)에 전체 세부 정보를 포함하십시오.
 
 **Adobe 프로젝트 팀이 요청을 평가하고 우선 순위를 지정합니다**—팀은 정기적으로 요청을 모니터링하여 우선 순위를 결정하고 구현 플레이북 모범 사례에 포함할 요청된 변경 사항을 평가합니다. 예를 들어 팀은 새 모범 사례 주제를 만드는 대신 요청된 콘텐츠를 Experience League 또는 Adobe Developer 사이트의 기존 제품 설명서에 추가해야 한다고 결정할 수 있습니다.
 
