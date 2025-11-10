@@ -2,7 +2,7 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 17397fe91806c22272e426d615b11fd383602798
+source-git-commit: af4a347296cd7291077d0fea638d598767624d26
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Beta 프로그램에 대한 초대를 요청하려면 [commerce-storefront-servi
 
 ### Cloud Automation 패치 서비스(Private Beta)
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)는 [Cloud Infrastructure의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview) 환경에 격리된 보안 패치를 적용하는 프로세스를 자동화합니다.
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)는 [Cloud Infrastructure의 Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) 환경에 격리된 보안 패치를 적용하는 프로세스를 자동화합니다.
 
-2025년 10월에 Cloud Automation 패치 서비스의 베타 릴리스가 [사이트 전체 분석 도구 대시보드](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)에 추가됩니다. 이 서비스는 다음과 같은 작업을 포함하는 간소화된 패치 작업 과정을 통해 Commerce 프로젝트 관리자를 지원합니다.
+2025년 10월에 Cloud Automation 패치 서비스의 베타 릴리스가 [사이트 전체 분석 도구 대시보드](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)에 추가됩니다. 이 서비스는 다음과 같은 작업을 포함하는 간소화된 패치 작업 과정을 통해 Commerce 프로젝트 관리자를 지원합니다.
 
 - 자동 패치 설치
 - 롤백 복구
@@ -60,7 +60,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 
 >[!NOTE]
 >
->Cloud Automation Patching Service는 격리된 보안 패치를 자동으로 적용하므로 이를 사용하려면 [기여자 또는 프로젝트 관리자 역할](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/user-access)이 있어야 합니다.
+>Cloud Automation Patching Service는 격리된 보안 패치를 자동으로 적용하므로 이를 사용하려면 [기여자 또는 프로젝트 관리자 역할](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)이 있어야 합니다.
 
 이 Beta에 참여하려면 [Cloud Automation 패치 서비스 - Beta 등록 양식](https://forms.office.com/r/3Wfxj5nPdB)을 완료하고 제출하십시오.
 
@@ -84,7 +84,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 - GraphQL 개선 사항
 - 일반 품질 버그 수정
 - 커뮤니티 기여
-- [Adobe Commerce 서비스](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
+- [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
 
 #### 명명 규칙 및 일정
 
