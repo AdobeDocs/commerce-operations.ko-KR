@@ -17,4 +17,4 @@ ht-degree: 0%
 
 {{bics}}
 
-작성기를 사용하여 Commerce 설치를 최신 릴리스 버전으로 업데이트하여 새로운 기능, 성능 개선 및 보안 패치를 활용합니다. 자세한 업그레이드 지침은 [Adobe Commerce 업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)를 참조하십시오.
+작성기를 사용하여 Commerce 설치를 최신 릴리스 버전으로 업데이트하여 새로운 기능, 성능 개선 및 보안 패치를 활용합니다. 자세한 업그레이드 지침은 [Adobe Commerce 업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=ko)를 참조하십시오.
