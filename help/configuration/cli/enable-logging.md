@@ -3,9 +3,9 @@ title: 로깅 활성화
 description: Adobe Commerce에서 다양한 유형의 로깅을 활성화하고 비활성화하는 방법에 대해 알아봅니다. 로깅 구성 및 관리 기술을 살펴봅니다.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ ht-degree: 0%
 
 기본적으로 Commerce은 `<install-dir>/var/debug/db.log` 파일에 데이터베이스 활동 로그를 기록합니다.
 
+### 쿼리 로깅 저장소 위치
+
+데이터베이스 로깅이 활성화되면 Commerce은 다음 위치에 쿼리 로그를 저장합니다.
+
+- **쿼리 로그 파일**: `<install-directory>/var/debug/db.log`
+- **로그 디렉터리**: `<install-directory>/var/debug/`
+
+쿼리 로그에는 다음이 포함됩니다.
+- 응용 프로그램에서 실행되는 SQL 쿼리
+- 쿼리 실행 시간
+- 쿼리 매개 변수 및 바인딩
+- 데이터베이스 연결 정보
+
+>[!NOTE]
+>
+>쿼리 로그 파일은 트래픽이 많은 환경에서 빠르게 커질 수 있습니다. 디스크 공간을 모니터링하고 로그 순환 또는 쿼리 로그 파일의 주기적 정리를 구현하는 것이 좋습니다.
+
 ### 데이터베이스 로깅을 사용하려면
 
 1. `dev:query-log` 명령을 사용하여 데이터베이스 로깅을 활성화하거나 비활성화합니다.
@@ -71,6 +88,24 @@ ht-degree: 0%
    ```bash
    bin/magento cache:flush
    ```
+
+### 쿼리 로그를 보려면
+
+표준 파일 보기 명령을 사용하여 쿼리 로그를 볼 수 있습니다.
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Cron 로깅
 
