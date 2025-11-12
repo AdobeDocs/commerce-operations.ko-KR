@@ -3,7 +3,7 @@ title: 기본 캐시에 Valkey 사용
 description: Valkey를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 유효성 검사 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -34,7 +34,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 >**Adobe Commerce 2.4.9-alpha2**&#x200B;부터 **Valkey**&#x200B;은(는) 라이선스 변경으로 인해 CLI 도구에 있는 Redis를 공식적으로 대체했습니다. 밸키는 레디스의 포크이며 거의 동일한 기능을 유지합니다. **버전 2.4.8 및 이전**&#x200B;의 경우 Valkey를 구성하는 데 사용되는 CLI 명령은 Redis의 명령과 동일하게 유지되므로 이전 버전과의 호환성을 원활하게 유지할 수 있으며 마이그레이션 또는 이중 환경 지원을 단순화할 수 있습니다. 다음 예제에서는 Valkey 관련 명령을 보여 줍니다.
 
 ```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
 | 명령줄 매개 변수 | 값 | 의미 | 기본값 |
@@ -272,7 +272,7 @@ valkey-cli monitor
 ### Valkey ping 명령
 
 ```bash
-redis-cli ping
+valkey-cli ping
 ```
 
 필요한 응답은 `PONG`입니다.
