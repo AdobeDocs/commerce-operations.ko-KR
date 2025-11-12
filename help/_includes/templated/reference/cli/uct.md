@@ -1,7 +1,7 @@
 ---
-source-git-commit: e044459f849f35a4a1e161a191bc7497fcef9281
+source-git-commit: 92685411a41cb03f1ac9408b0cef2fe83b4a2a16
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ Adobe Commerce에서 `bin/uct list` 명령을 사용하여 초기 목록이 자�
 ## 일반
 
 [개요](/help/upgrade/upgrade-compatibility-tool/overview.md)에서 도구에 대해 자세히 알아보세요.
+
+>[!NOTE]
+>
+>이 도구를 업그레이드하기 위해 `composer update` 명령이 작동하지 않습니다. [최신 버전을 다운로드하여 설치](/help/upgrade/upgrade-compatibility-tool/run.md)해야 합니다.
 
 이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
