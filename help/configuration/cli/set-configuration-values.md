@@ -2,9 +2,9 @@
 title: 구성 값 설정
 description: Adobe Commerce에서 구성 값을 설정하고 잠긴 관리자 값을 변경하는 방법에 대해 알아봅니다. 고급 구성 명령 및 기술을 살펴보십시오.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -124,19 +124,19 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **중요한 구성 값을 설정하려면**:
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 다음 표에서는 `set` 명령 매개 변수에 대해 설명합니다.
 
 | 매개 변수 | 설명 |
-| --- | --- |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `--scope` | 구성의 범위입니다. 가능한 값은 `default`, `website` 또는 `store`입니다. 기본값은 `default`입니다. |
 | `--scope-code` | 구성의 범위 코드(웹 사이트 코드 또는 스토어 보기 코드) |
 | `-e or --lock-env` | 관리자 권한에서 편집할 수 없도록 값을 잠그거나 관리자 권한에서 이미 잠긴 설정을 변경합니다. 이 명령은 값을 `<Commerce base dir>/app/etc/env.php` 파일에 씁니다. |
 | `-c or --lock-config` | 관리자 권한에서 편집할 수 없도록 값을 잠그거나 관리자 권한에서 이미 잠긴 설정을 변경합니다. 이 명령은 값을 `<Commerce base dir>/app/etc/config.php` 파일에 씁니다. 두 옵션을 모두 지정하면 `--lock-config` 옵션이 `--lock-env`을(를) 덮어씁니다. |
 | `path` | _필수_. 구성 경로 |
-| `value` | _필수_. 구성의 값 |
+| `value` | _필수_. 구성의 값입니다. CLI 명령에서 별도의 인수로 전달할 수 있지만 Adobe에서는 원래 명령에서 이 인수를 지정하지 않는 것이 좋습니다. 대신 값 없이 명령을 실행한 다음 메시지가 표시되면 값을 입력합니다. 이 방법을 사용하면 구성을 설정하는 가장 안전한 방법인 bash_history에 중요한 액세스 값을 쓰지 못합니다. |
 
 >[!INFO]
 >
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `**&#x200B;**&#x200B;**`.
+>`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `******`.
 
 ### 예
 
