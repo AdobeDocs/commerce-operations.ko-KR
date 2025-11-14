@@ -4,9 +4,9 @@ description: 관리자 또는 명령줄에서 Adobe Commerce 프로젝트에 대
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 19f874130645fcabe3178a37ec6dedcf75b93afa
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -89,9 +89,19 @@ Commerce 관리에서 병합 또는 번들링을 켤 수 있습니다(병합과 
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## 중요하지 않은 헤드 스크립트 연기
+
+다음 설정을 활성화하여 헤드 섹션에 로드된 중요하지 않은 Javascript를 자동으로 지연합니다. [!UICONTROL **스토어** > **설정** > **구성** > **고급** > **개발자** > **JavaScript 설정**].
+
+명령줄에서 이 플래그를 활성화할 수도 있습니다.
+
+```bash
+php -f bin/magento config:set dev/js/defer_non_critical 1
+```
+
 ## 추가 정보
 
 - [클라이언트측 최적화 설정](../../../performance/configuration.md#client-side-optimization-settings)
-- [사용 안내서: 리소스 파일 최적화](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [사용 안내서: 리소스 파일 최적화](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [프론트엔드 개발자 안내서: CSS 병합, 축소 및 사이트 성능](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [고급 JavaScript 번들](../../../performance/advanced-js-bundling.md)
