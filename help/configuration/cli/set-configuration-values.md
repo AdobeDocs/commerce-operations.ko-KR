@@ -2,9 +2,9 @@
 title: 구성 값 설정
 description: Adobe Commerce에서 구성 값을 설정하고 잠긴 관리자 값을 변경하는 방법에 대해 알아봅니다. 고급 구성 명령 및 기술을 살펴보십시오.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
+source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,7 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 
 >[!INFO]
 >
->Commerce 2.2.4부터 `--lock-env` 및 `--lock-config` 옵션이 `--lock` 옵션을 대체합니다.
->
->`--lock-env` 또는 `--lock-config` 옵션을 사용하여 값을 설정하거나 변경하는 경우 Admin 또는 Storefront에 액세스하기 전에 [`bin/magento app:config:import` 명령](../cli/import-configuration.md)을(를) 사용하여 설정을 가져와야 합니다.
+>Commerce 2.2.4부터 `--lock-env` 및 `--lock-config` 옵션이 `--lock` 옵션을 대체합니다. 이 옵션 중 하나를 사용하면 값이 `app/etc/env.php` 또는 `app/etc/config.php` 파일에 직접 기록되고 관리에서 읽기 전용이 됩니다. 이러한 파일의 구성 변경 내용을 데이터베이스로 가져오려면 파일을 수동으로 편집하거나 다시 배포한 후 `bin/magento app:config:import` 명령을 실행합니다.
 
 잘못된 구성 경로를 입력하면 이 명령은 오류를 반환합니다
 
@@ -191,7 +189,7 @@ Commerce이 설치되어 있지 않은 경우 `--lock-env` 옵션을 사용하�
 
 >[!INFO]
 >
->`env.php` 파일은 시스템별로 다릅니다. 다른 시스템으로 전송하면 안 됩니다. 이 옵션을 사용하여 데이터베이스의 구성 값을 덮어쓸 수 있습니다. 예를들어 다른 시스템에서 데이터베이스 덤프를 가져와서 `base_url` 및 다른 값을 덮어쓰면 데이터베이스를 수정할 필요가 없습니다.
+>`env.php` 파일은 시스템별로 다릅니다. 다른 시스템으로 전송하지 마십시오. 이 옵션을 사용하여 데이터베이스의 구성 값을 덮어쓸 수 있습니다. 예를들어 다른 시스템에서 데이터베이스 덤프를 가져와서 `base_url` 및 다른 값을 덮어쓰면 데이터베이스를 수정할 필요가 없습니다.
 
 다음과 같이 `--lock-config` 옵션을 사용하면 구성 값이 `<Commerce base dir>/app/etc/config.php`에 저장됩니다. 관리자에서 이 값을 편집하기 위한 필드가 비활성화됩니다.
 
@@ -221,7 +219,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `**&#x200B;**&#x200B;**`.
+>`bin/magento config:show` 명령은 [암호화된 값](../reference/config-reference-sens.md)의 값을 일련의 별표로 표시합니다. `******`.
 
 ### 예
 
