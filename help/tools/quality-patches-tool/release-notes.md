@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
+source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
 workflow-type: tm+mt
-source-wordcount: '29260'
+source-wordcount: '29413'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,20 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636**(Adobe Commerce >=2.4.4 &lt;2.4.9) - 다른 스토어에서 송장을 만들 때 스토어 소유자의 이름이 기프트 카드 이메일 헤더에 올바르게 표시되지 않는 문제를 해결했습니다.
+* **ACSD-68430**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.8) - 레코드에 특성 구성에서 삭제된 여러 특성 옵션이 포함된 경우 고객 또는 고객 주소를 저장하지 못하는 문제를 수정합니다.
+* **ACSD-68499**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9의 경우) - 사용 가능한 재고를 초과하는 수량을 업데이트할 때 GraphQL `updateCartItems` 돌연변이가 잘못된 성공 응답을 반환하여 부풀려진 수량 및 합계를 초래하는 문제를 해결했습니다.
+* **ACSD-68810**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - **[!UICONTROL Customer Account Sharing]** 구성에도 불구하고 다른 웹 사이트에서 만든 고객에게 주문이 할당되는 문제를 해결합니다.
+* 업데이트된 버전: **ACSD-49737**, **ACSD-57003-V2**
+* 대체된 패치: **ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
