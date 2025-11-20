@@ -25,8 +25,8 @@ _구성_ 안내서에서는 구성 가능한 Commerce 응용 프로그램 기능
 
 ## Commerce 관리 구성
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)에는 Commerce 관리자의 모든 구성 설정에 대한 필드 설명을 이해하는 데 도움이 되는 해당 항목이 있습니다.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/guide-overview)에는 Commerce 관리자의 모든 구성 설정에 대한 필드 설명을 이해하는 데 도움이 되는 해당 항목이 있습니다.
 
 ## 클라우드 구성
 
-[!DNL Commerce on cloud infrastructure]은(는) [구성 파일 집합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html)을 사용하여 호스팅된 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 [클라우드 가이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)에서 추가 구성 요구 사항을 검토해야 합니다.
+[!DNL Commerce on cloud infrastructure]은(는) [구성 파일 집합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=ko)을 사용하여 호스팅된 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 [클라우드 가이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=ko)에서 추가 구성 요구 사항을 검토해야 합니다.
