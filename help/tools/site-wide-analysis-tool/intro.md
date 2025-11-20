@@ -73,4 +73,4 @@ Adobe Commerce 웹 사이트에 대한 가시성을 높이기를 원하는 판�
 
 [!DNL Site-Wide Analysis Tool]에 대해 알아보려면 이 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410780?captions=kor&quality=12)
