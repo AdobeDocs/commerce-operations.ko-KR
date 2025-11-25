@@ -54,7 +54,7 @@ GitHub 리포지토리를 복제하는 경우 [(기여자) GitHub 리포지토�
 
 ## [!DNL Data Migration Tool]의 릴리스 버전 찾기
 
-사용 가능한 릴리스 버전을 찾으려면 [ GitHub 저장소의 ](https://github.com/magento/data-migration-tool/releases)릴리스[!DNL Data Migration Tool] 페이지로 이동하십시오.
+사용 가능한 릴리스 버전을 찾으려면 [&#x200B; GitHub 저장소의 &#x200B;](https://github.com/magento/data-migration-tool/releases)릴리스[!DNL Data Migration Tool] 페이지로 이동하십시오.
 
 ## [!DNL Data Migration Tool] 설치
 
