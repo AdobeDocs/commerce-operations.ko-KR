@@ -15,7 +15,7 @@ Adobe Commerce은 STOMP(Simple Text Oriented Messaging Protocol)를 통해 Activ
 
 >[!NOTE]
 >
->ActiveMQ Artemis는 Adobe Commerce 2.4.6 이상 버전에서 도입되었습니다. 클라우드 인프라 프로젝트의 Adobe Commerce에 ActiveMQ Artemis를 설치하는 방법에 대한 자세한 내용은 [Cloud의 Commerce 안내서](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)에서 *ActiveMQ 서비스 설정*&#x200B;을 참조하십시오.
+>ActiveMQ Artemis는 Adobe Commerce 2.4.6 이상 버전에서 도입되었습니다. 클라우드 인프라 프로젝트의 Adobe Commerce에 ActiveMQ Artemis를 설치하는 방법에 대한 자세한 내용은 [Cloud의 Commerce 안내서](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/activemq)에서 *ActiveMQ 서비스 설정*&#x200B;을 참조하십시오.
 
 메시지 큐는 메시지의 발신자와 수신자가 서로 접촉하지 않는 비동기 통신 메커니즘을 제공한다. 메시지 대기열과 동시에 통신할 필요도 없습니다. 보낸 사람이 메시지를 대기열에 넣으면 받는 사람이 메시지를 받을 때까지 저장됩니다.
 

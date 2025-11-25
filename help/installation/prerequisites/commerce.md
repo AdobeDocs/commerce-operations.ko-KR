@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 소프트웨어를 가져오는 방법
 
-[제품 가용성 페이지](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)에서 Adobe 작성 확장과 Adobe Commerce 및 Magento Open Source용 Commerce 서비스의 가용성 및 호환성을 확인하십시오.
+[제품 가용성 페이지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)에서 Adobe 작성 확장과 Adobe Commerce 및 Magento Open Source용 Commerce 서비스의 가용성 및 호환성을 확인하십시오.
 
 >[!NOTE]
 >
 >이제 정책 변경으로 인해 Adobe Commerce 코드베이스가 작성기를 통해서만 배포됩니다. 코드 베이스를 다운로드 섹션에서 더 이상 사용할 수 없으므로 작성기를 사용하여 나열된 Adobe Commerce 버전을 다운로드하십시오.
 >
->자세한 내용은 [클라우드 인프라의 Adobe Commerce에서 청구 정책에 액세스하고 코드베이스를 다운로드할 수 없음](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)을 참조하세요.
+>자세한 내용은 [클라우드 인프라의 Adobe Commerce에서 청구 정책에 액세스하고 코드베이스를 다운로드할 수 없음](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26611)을 참조하세요.
 
 Adobe Commerce 설치를 시작하려면 다음 표를 참조하십시오.
 

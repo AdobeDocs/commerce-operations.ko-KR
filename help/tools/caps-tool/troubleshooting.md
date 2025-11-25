@@ -218,8 +218,8 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce 설치 안내서](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce 설치 안내서](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/overview)
 * [CAPS 소개](intro.md)
 * [액세스 방법](access.md)
 * [워크플로](workflow.md)
