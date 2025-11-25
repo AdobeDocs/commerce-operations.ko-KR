@@ -2,7 +2,7 @@
 title: 파일 소유권 및 권한 구성
 description: Adobe Commerce의 온-프레미스 설치에 대한 파일 시스템 권한을 구성하려면 다음 단계를 따르십시오.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 1. 아직 다운로드하지 않은 경우 다음 방법 중 하나로 애플리케이션을 다운로드하십시오.
 
    * [작성기 메타패키지](../../composer.md)
-   * [리포지토리 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [리포지토리 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. 파일 시스템 소유권과 사용 권한을 설정한 후 [응용 프로그램을 설치](../../advanced.md)
 
@@ -192,7 +192,7 @@ magento_user : magento_user apache
 아직 다운로드하지 않은 경우 다음 방법 중 하나로 소프트웨어를 다운로드하십시오.
 
 * [작성기 메타패키지](../../composer.md)
-* [리포지토리 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [리포지토리 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### 공유 그룹에 대한 소유권 및 권한 설정
 

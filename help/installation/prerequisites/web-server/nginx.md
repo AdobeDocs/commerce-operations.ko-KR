@@ -2,7 +2,7 @@
 title: Ngix
 description: Adobe Commerce의 온-프레미스 설치를 위한 Nginx 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 * [Composer 메타패키지 가져오기](../../composer.md)
 
-* [git 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [git 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 이 예에서는 명령줄을 사용한 작성기 기반 설치를 보여 줍니다.
 
@@ -364,7 +364,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
 * [Composer 메타패키지 가져오기](../../composer.md)
 
-* [git 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [git 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 이 예에서는 명령줄을 사용한 작성기 기반 설치를 보여 줍니다.
 

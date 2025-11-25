@@ -2,9 +2,9 @@
 title: 인증 키 받기
 description: repo.magento.com에서 Adobe Commerce Composer 패키지에 액세스하기 위해 자격 증명을 검색하려면 다음 단계를 따르십시오.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Adobe Commerce 패키지에 대한 액세스 권한을 얻으려면 해당 패�
 
 >[!TIP]
 >
->[오류](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=ko)가 발생한 경우 패키지에 액세스할 수 있는 권한이 없거나 계정의 미결 송장으로 인해 액세스 권한이 만료되었을 수 있습니다.
+>[오류](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)이 발생하거나 마켓플레이스 탭에 [!UICONTROL Access Keys] 섹션이 표시되지 않는 경우 패키지에 액세스할 수 있는 권한이 없거나 계정에 대한 미결 청구서로 인해 액세스 권한이 만료되었을 수 있습니다.
 >
 >* 귀하가 계정에서 기본 담당자 사용자인 경우 계정에 미결 송장이 나열되어 있지 않은지 확인하십시오.
->* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 해결되지 않은 청구서가 없는 경우 기본 연락처는 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)에 지원을 요청해야 합니다.
+>* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 해결되지 않은 청구서가 없는 경우 기본 연락처는 [Adobe Commerce 지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)에 지원을 요청해야 합니다.
 
 인증 키를 만들려면 다음을 수행하십시오.
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 인증 키를 사용하여 다음을 수행합니다.
 
 * [메타패키지 가져오기(통합자, 패키지)](../composer.md)
-* [GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)&#x200B;(기여 개발자만 해당)
+* [GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)&#x200B;(기여 개발자만 해당)
 * [모듈 업그레이드 및 관리](../../upgrade/modules/upgrade.md)

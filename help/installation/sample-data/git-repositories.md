@@ -2,7 +2,7 @@
 title: 샘플 데이터 Git 저장소 복제
 description: 다음 단계에 따라 Git 저장소를 복제하여 Adobe Commerce 샘플 데이터를 설치합니다.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 다음에 해당하는 경우 기여 개발자는 이 방법으로 샘플 데이터를 설치할 수 있습니다. *only*:
 
 * Magento Open Source 사용
-* [GitHub 리포지토리를 복제했습니다](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [GitHub 리포지토리를 복제했습니다](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
->`develop` 분기(최신) 또는 릴리스된 분기(예: `2.4`(안정적인))에서 샘플 데이터를 사용할 수 있습니다. 안정적이므로 출시된 지점을 사용하는 것이 좋습니다. 저장소에 코드를 제공하는 중이며 최신 코드가 필요한 경우 `develop` 분기를 사용하십시오. 선택한 분기와 관계없이 Magento Open Source GitHub 저장소의 해당 분기를 [복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)해야 합니다. 예를 들어 `develop` 분기에 대한 샘플 데이터는 Magento Open Source *분기에서* only`develop` 사용할 수 있습니다.
+>`develop` 분기(최신) 또는 릴리스된 분기(예: `2.4`(안정적인))에서 샘플 데이터를 사용할 수 있습니다. 안정적이므로 출시된 지점을 사용하는 것이 좋습니다. 저장소에 코드를 제공하는 중이며 최신 코드가 필요한 경우 `develop` 분기를 사용하십시오. 선택한 분기와 관계없이 Magento Open Source GitHub 저장소의 해당 분기를 [복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)해야 합니다. 예를 들어 `develop` 분기에 대한 샘플 데이터는 Magento Open Source *분기에서* only`develop` 사용할 수 있습니다.
 
 ## 샘플 데이터 리포지토리 복제
 

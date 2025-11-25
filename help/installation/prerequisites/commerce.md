@@ -2,7 +2,7 @@
 title: Adobe Commerce 소프트웨어 다운로드
 description: Adobe Commerce 소프트웨어를 다운로드하는 방법을 알아봅니다.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 0659c19e24e90ca4e3a7ac1c04914bda82b766dd
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 소프트웨어를 가져오는 방법
 
-[제품 가용성 페이지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)에서 Adobe 작성 확장과 Adobe Commerce 및 Magento Open Source용 Commerce 서비스의 가용성 및 호환성을 확인하십시오.
+[제품 가용성 페이지](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)에서 Adobe 작성 확장과 Adobe Commerce 및 Magento Open Source용 Commerce 서비스의 가용성 및 호환성을 확인하십시오.
 
 >[!NOTE]
 >
 >이제 정책 변경으로 인해 Adobe Commerce 코드베이스가 작성기를 통해서만 배포됩니다. 코드 베이스를 다운로드 섹션에서 더 이상 사용할 수 없으므로 작성기를 사용하여 나열된 Adobe Commerce 버전을 다운로드하십시오.
 >
->자세한 내용은 [클라우드 인프라의 Adobe Commerce에서 청구 정책에 액세스하고 코드베이스를 다운로드할 수 없음](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26611)을 참조하세요.
+>자세한 내용은 [클라우드 인프라의 Adobe Commerce에서 청구 정책에 액세스하고 코드베이스를 다운로드할 수 없음](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)을 참조하세요.
 
 Adobe Commerce 설치를 시작하려면 다음 표를 참조하십시오.
 
@@ -53,7 +53,7 @@ Adobe Commerce 설치를 시작하려면 다음 표를 참조하십시오.
             <li><a href="../advanced.md">명령줄</a>을 사용하여 응용 프로그램을 설치합니다.</li>
             <li><a href="../../upgrade/developer/git-installs.md">작성기 및 Git 명령</a>을 사용하여 응용 프로그램을 업그레이드합니다.</li>
             <li><code>app/code</code> 디렉터리에서 코드를 사용자 지정합니다.</li></ol></td>
-        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">GitHub 리포지토리 복제</a></p></td>
+        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository">GitHub 리포지토리 복제</a></p></td>
     </tr>
     </tbody>
 </table>
@@ -68,4 +68,4 @@ UNIX 시스템에서는 웹 서버, PHP와 같은 소프트웨어를 설치하�
 
 웹 서버가 해당 파일과 상호 작용할 수 없으므로 *not* 응용 프로그램을 웹 서버 docroot에 `root` 사용자로 설치하지 마십시오.
 
-`root`파일 시스템 소유자[를 만들고 해당 소유자를 웹 서버의 그룹에 추가하려면 &#x200B;](file-system/overview.md) 권한이 필요합니다. 파일 시스템 소유자를 사용하여 명령줄에서 `bin/magento` 명령을 실행하고 작업을 예약하는 cron 작업을 설정합니다.
+`root`파일 시스템 소유자[를 만들고 해당 소유자를 웹 서버의 그룹에 추가하려면 ](file-system/overview.md) 권한이 필요합니다. 파일 시스템 소유자를 사용하여 명령줄에서 `bin/magento` 명령을 실행하고 작업을 예약하는 cron 작업을 설정합니다.

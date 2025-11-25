@@ -2,7 +2,7 @@
 title: Adobe Commerce 제거 또는 재설치
 description: Adobe Commerce의 온-프레미스 설치를 제거하고 다시 설치하려면 다음 단계를 따르십시오.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 명령줄에서 응용 프로그램을 다시 설치하는 방법은 역할에 따라 다릅니다.
 
-* 보관 위치에서 소프트웨어를 설치했거나 &#39;composer-create-project&#39;를 사용한 경우 [설치 종속성 업데이트](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)를 참조하십시오.
-* 기여 개발자인 경우(즉, `git clone` 사용을 시작한 경우) [설치 종속성 업데이트](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)를 참조하십시오.
+* 보관 위치에서 소프트웨어를 설치했거나 &#39;composer-create-project&#39;를 사용한 경우 [설치 종속성 업데이트](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)를 참조하십시오.
+* 기여 개발자인 경우(즉, `git clone` 사용을 시작한 경우) [설치 종속성 업데이트](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)를 참조하십시오.
 
 ## 응용 프로그램 제거
 

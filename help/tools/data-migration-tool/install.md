@@ -4,7 +4,7 @@ description: Magento 1과 Magento 2 간에 데이터를 전송하기 위해  [!D
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -47,14 +47,14 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-현재 `develop` 분기에 있는 경우 계속하려면 [릴리스된 분기](https://developer.adobe.com/commerce/contributor/guides/install/change-version/)&#x200B;(으)로 변경해야 합니다.
+현재 `develop` 분기에 있는 경우 계속하려면 [릴리스된 분기](https://developer.adobe.com/commerce/contributor/guides/install/change-version)&#x200B;(으)로 변경해야 합니다.
 
 아직 Adobe Commerce 소프트웨어를 설치하지 않았다면 [지금 설치](../../installation/prerequisites/commerce.md)하십시오.
-GitHub 리포지토리를 복제하는 경우 [(기여자) GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)에서 설명한 대로 릴리스 태그를 체크아웃해야 합니다.
+GitHub 리포지토리를 복제하는 경우 [(기여자) GitHub 리포지토리 복제](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)에서 설명한 대로 릴리스 태그를 체크아웃해야 합니다.
 
 ## [!DNL Data Migration Tool]의 릴리스 버전 찾기
 
-사용 가능한 릴리스 버전을 찾으려면 [&#x200B; GitHub 저장소의 &#x200B;](https://github.com/magento/data-migration-tool/releases)릴리스[!DNL Data Migration Tool] 페이지로 이동하십시오.
+사용 가능한 릴리스 버전을 찾으려면 [ GitHub 저장소의 ](https://github.com/magento/data-migration-tool/releases)릴리스[!DNL Data Migration Tool] 페이지로 이동하십시오.
 
 ## [!DNL Data Migration Tool] 설치
 

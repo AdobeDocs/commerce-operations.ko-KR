@@ -2,7 +2,7 @@
 title: Adobe Commerce 설치
 description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 명령을 실행할 때 오류가 표시되면 [설치 종속성 업데이트](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)에 설명된 대로 설치 종속성을 업데이트했는지 확인하십시오.
+>이 명령을 실행할 때 오류가 표시되면 [설치 종속성 업데이트](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)에 설명된 대로 설치 종속성을 업데이트했는지 확인하십시오.
 
 ## 명령줄에서 설치
 
