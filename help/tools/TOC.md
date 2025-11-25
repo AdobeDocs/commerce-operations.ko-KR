@@ -602,7 +602,7 @@ ht-degree: 0%
       - v1.1.48 {#v1-1-48}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.48](quality-patches-tool/patches-available-in-qpt/v1-1-48/overview.md)
          - [ACSD-57315: 가져오기 단추를 클릭할 때마다  [!DNL PayPal Payflow Pro] 에 새 트랜잭션이 만들어집니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
-         - [ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
+         - [[!DNL ACSD-56635: 계정 공유를 Global] (으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          - [ACSD-57337: 액세스 제한이 있는 관리 사용자가 회사를 볼 수 있음](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          - [ACSD-57394:  [!DNL GraphQL]의 여러 정렬 필드를 기준으로 한 제품 정렬이 잘못되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          - [ACSD-56546: 구성 및 번들 제품이 상점 앞에 품절로 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
@@ -894,8 +894,8 @@ ht-degree: 0%
          - [ACSD-67603: 이미지 포함이 활성화된 제품에 대해 사이트 맵 생성 시간이 깁니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093: 날짜 범위 필터를 사용하여 GraphQL을 통해 주문을 검색하면 잘못된 결과가 반환됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652: 하위 및 상위 제품이 재고에 있는 GraphQL 호출에서 품절로 반환된 번들 제품 상태](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624:  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다.
-         - [ACSD-67904: 구/군/시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)가 포함된 경우 주문을 넣을 수 없습니다.
+         - [ACSD-60624:  [!DNL Page Builder]의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
+         - [ACSD-67904: 구/군/시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()가 포함된 경우 주문을 넣을 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67459: 65,536자를 초과하는 설명을 가진 제품을 가져올 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -945,7 +945,7 @@ ht-degree: 0%
    - [경고 탭](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF 탭](observation-for-adobe-commerce/waf-tab.md)
    - [CDN 탭](observation-for-adobe-commerce/cdn-tab.md)
-   - [ [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [&#x200B; [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [크론 탭](observation-for-adobe-commerce/cron-tab.md)
    - [색인화 탭](observation-for-adobe-commerce/indexing-tab.md)
    - [빠른 보기 탭](observation-for-adobe-commerce/oac-quickview-tab.md)

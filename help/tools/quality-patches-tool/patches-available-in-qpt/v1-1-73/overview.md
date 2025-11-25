@@ -23,5 +23,5 @@ QPT v1.1.73에는 다음 패치가 포함됩니다.
 1. **ACSD-68206**: PHP **[!UICONTROL Rate Limiting]** 확장이 설치된 [!DNL Redis] 기능과 함께 GraphQL 응용 프로그램 서버를 사용할 때 발생하는 오류를 수정했습니다.
 1. **ACSD-68391**: 범주 관련 권한이 **[!UICONTROL Quick Order]** 및 **[!UICONTROL Requisition Lists]**&#x200B;에 적용되지 않았습니다.
 1. **ACSD-68356**: [!DNL GraphQL] 장바구니 쿼리가 가상 견적에 대해 잘못된 할인 금액을 반환합니다.
-1. **ACSD-68400**: 가상 기프트 카드 수량이 **[!UICONTROL Inventory reservation table]**에 정확하게 반영되지 않습니다.
+1. **ACSD-68400**: 가상 기프트 카드 수량이 **[!UICONTROL Inventory reservation table]**&#x200B;에 정확하게 반영되지 않습니다.
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
