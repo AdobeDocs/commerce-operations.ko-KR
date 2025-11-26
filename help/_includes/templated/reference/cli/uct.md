@@ -1,5 +1,5 @@
 ---
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 1%
@@ -25,7 +25,9 @@ Adobe Commerce에서 `bin/uct list` 명령을 사용하여 초기 목록이 자�
 >
 >이 도구를 업그레이드하기 위해 `composer update` 명령이 작동하지 않습니다. [최신 버전을 다운로드하여 설치](/help/upgrade/upgrade-compatibility-tool/run.md)해야 합니다.
 
-이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions)를 참조하십시오.
+이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 다음을 열어야 합니다
+관련 [codebase](https://github.com/magento) 저장소의 해당 명령에 대한 가져오기 요청입니다. 다음을 참조하십시오
+[코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
 ### 글로벌 옵션
 
