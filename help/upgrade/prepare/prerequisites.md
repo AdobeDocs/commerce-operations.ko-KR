@@ -33,7 +33,7 @@ Adobe Commerce을 실행하는 데 필요한 사항을 이해하는 것이 중�
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure Pro 프로젝트의 경우 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하려면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 티켓을 만들어야 합니다. 필요한 서비스 변경 사항을 표시하고 업데이트된 `.magento.app.yaml` 및 `services.yaml` 파일과 PHP 버전을 티켓에 포함하십시오. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services)를 참조하십시오.
+>Adobe Commerce on cloud infrastructure Pro 프로젝트의 경우 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하려면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket) 티켓을 만들어야 합니다. 필요한 서비스 변경 사항을 표시하고 업데이트된 `.magento.app.yaml` 및 `services.yaml` 파일과 PHP 버전을 티켓에 포함하십시오. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=ko#supported-software-and-services)를 참조하십시오.
 
 ## 지원되는 검색 엔진이 설치되었는지 확인
 
