@@ -2,7 +2,7 @@
 title: MySQL 지침
 description: Adobe Commerce의 온프레미스 설치용 MySQL 및 MariaDB를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -201,4 +201,4 @@ MySQL 데이터베이스 인스턴스를 구성하려면 다음을 수행합니�
 
 {{$include /help/_includes/maria-db-config.md}}
 
-<!-- Last updated from includes: 2024-02-12 09:51:27 -->
+<!-- Last updated from includes: 2025-11-25 11:39:51 -->

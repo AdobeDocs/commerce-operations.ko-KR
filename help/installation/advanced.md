@@ -2,7 +2,7 @@
 title: 고급 온-프레미스 설치
 description: Adobe Commerce 온-프레미스 배포를 위한 고급 설치 시나리오에 대해 알아봅니다. 복잡한 구성 및 사용자 지정 설정 옵션을 살펴보십시오.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 937db2209ec4122c611a857796f043523a0acb29
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->잃어버렸나? 도움의 손길이 필요하십니까? [빠른 시작 설치](composer.md) 또는 [기여자 설치](https://developer.adobe.com/commerce/contributor/guides/install) 가이드를 사용해 보세요.
+>잃어버렸나? 도움의 손길이 필요하십니까? [빠른 시작 설치](composer.md) 또는 [기여자 설치](https://developer.adobe.com/commerce/contributor/guides/install/) 가이드를 사용해 보세요.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 설치 중 또는 후에 관리자 사용자를 만들 수 있습니다. 설치 중에 사용자를 만드는 경우 모든 관리자 자격 증명 변수가 필요합니다. [샘플 localhost 설치](#sample-localhost-installations)를 참조하십시오.
 
-다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
+다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
