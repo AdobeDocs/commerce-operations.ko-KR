@@ -2,7 +2,7 @@
 title: Adobe Commerce 설치
 description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 
 >[!NOTE]
 >
->ActiveMQ Artemis는 Adobe Commerce 2.4.6 이상 버전에서 도입되었습니다.
+>ActiveMQ Artemis는 Adobe Commerce 2.4.5 이상 버전에서 도입되었습니다.
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
@@ -335,7 +335,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->ActiveMQ Artemis를 설치하려면 Adobe Commerce 2.4.6 이상이 필요합니다.
+>ActiveMQ Artemis를 설치하려면 Adobe Commerce 2.4.5 이상이 필요합니다.
 
 >[!TIP]
 >

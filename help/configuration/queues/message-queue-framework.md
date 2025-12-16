@@ -2,7 +2,7 @@
 title: 메시지 대기열 개요
 description: 메시지 큐 프레임워크와 Adobe Commerce 애플리케이션에서 작동하는 방식을 확인하십시오.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 MQF(메시지 대기열 프레임워크)는 모듈이 메시지를 대기열에 게시할 수 있도록 하는 시스템입니다. 또한 비동기적으로 메시지를 받을 [소비자](consumers.md)도 정의합니다. MQF는 여러 메시징 브로커를 지원합니다.
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - 메시지를 보내고 받는 확장 가능한 플랫폼을 제공하는 기본 메시징 브로커입니다. 게재되지 않은 메시지를 저장하는 메커니즘을 포함하며 AMQP(Advanced Message Queuing Protocol) 0.9.1 사양을 기반으로 합니다.
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - 안정적이고 확장 가능한 메시징을 위해 STOMP(Simple Text Oriented Messaging Protocol)를 사용하는 대체 메시징 브로커입니다. Adobe Commerce 2.4.6 이상 버전에서 도입되었습니다.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - 안정적이고 확장 가능한 메시징을 위해 STOMP(Simple Text Oriented Messaging Protocol)를 사용하는 대체 메시징 브로커입니다. Adobe Commerce 2.4.5 이상 버전에서 도입되었습니다.
 
 ## RabbitMQ(AMQP)
 
@@ -38,7 +38,7 @@ RabbitMQ를 사용하는 대신 Adobe Commerce은 STOMP(Simple Text Oriented Mes
 
 >[!NOTE]
 >
->ActiveMQ Artemis는 Adobe Commerce 2.4.6 이상 버전에서 도입되었습니다.
+>ActiveMQ Artemis는 Adobe Commerce 2.4.5 이상 버전에서 도입되었습니다.
 
 다음 다이어그램은 ActiveMQ Artemis를 사용하는 STOMP 프레임워크를 보여 줍니다.
 

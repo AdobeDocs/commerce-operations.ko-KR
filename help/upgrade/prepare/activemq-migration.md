@@ -2,9 +2,9 @@
 title: RabbitMQ에서 ActiveMQ로 마이그레이션
 description: Adobe Commerce의 온-프레미스 설치에 사용되는 메시지 큐 브로커를 바꾸는 방법에 대해 알아봅니다.
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ(Apache ActiveMQ Artemis)는 Adobe Commerce에서 메시지 큐를 처리하기 위해 RabbitMQ에 대한 대안을 제공하는 고성능, 다중 프로토콜 메시지 브로커입니다.
 
-2.4.8-p3, 2.4.7-p8 및 2.4.6-p13부터 Adobe Commerce은 메시지 대기열 브로커로 ActiveMQ를 지원합니다. 이렇게 하면 온프레미스 설치에서 인프라 요구 사항과 전문 지식을 기반으로 RabbitMQ와 ActiveMQ 중에서 선택할 수 있는 유연성을 추가로 제공합니다.
+2.4.8-p3, 2.4.7-p8, 2.4.6-p13 및 2.4.5-p16부터 Adobe Commerce은 메시지 큐 브로커로 ActiveMQ를 지원합니다. 이렇게 하면 온프레미스 설치에서 인프라 요구 사항과 전문 지식을 기반으로 RabbitMQ와 ActiveMQ 중에서 선택할 수 있는 유연성을 추가로 제공합니다.
 
 ## 시작하기 전에
 
