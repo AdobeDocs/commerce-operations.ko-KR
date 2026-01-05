@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4dd926ca7014c9e007a8c2c847e076064eb8d170
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 기여자 안내서 설명서
 
-[기여자 안내서](https://experienceleague.adobe.com/ko/docs/contributor/contributor-guide/introduction)를 참조하세요.
+[기여자 안내서](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)를 참조하세요.
 
 ## 질문이 있습니까?
 
@@ -41,12 +41,11 @@ Adobe CLA는 한 번만 제출하면 됩니다. 따라서 이전에 제출한 �
 프로젝트 커미터별. [GitHub의 끌어오기 요청 설명서](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) 읽기
 끌어오기 요청 전송에 대한 자세한 내용.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+마지막으로 다음과 같은 경우 [가져오기 요청 템플릿](PULL_REQUEST_TEMPLATE.md)을(를) 따르십시오.
+가져오기 요청을 제출하는 중입니다!
 
-## 기여자에서 커미터로
+
+## 참여자에서 커미터로
 
 커뮤니티의 콘텐츠 제공이 좋습니다! 참여자를 넘어 한 걸음 더 나아가고 싶다면
 프로젝트에서 전체 쓰기 액세스 권한과 발언권을 가진 커미터가 되려면
@@ -57,11 +56,11 @@ submitting a pull request!
 
 ## 보안 문제
 
-보안 문제는 이 문제 추적기에 보고하면 안 됩니다. 대신 [보안 전문가에게 문제를 제출하세요](https://helpx.adobe.com/kr/security/alertus.html).
+보안 문제는 이 문제 추적기에 보고하면 안 됩니다. 대신 [보안 전문가에게 문제를 제출하세요](https://helpx.adobe.com/security/alertus.html).
 
-## 새로운 기능 하이라이트
+## 새로운 기능
 
-변경 사항으로 인해 강조 표시해야 하는 새로운 주제, 중요한 업데이트 또는 수정 사항이 있는 경우 끌어오기 요청 본문에서 바로 [새로운 기능 섹션](https://experienceleague.adobe.com/ko/docs/commerce-operations/operational-guides/home#whats-new)에 간단한 설명을 추가할 수 있습니다.
+변경 사항으로 인해 강조 표시해야 하는 새로운 주제, 중요한 업데이트 또는 수정 사항이 있는 경우 끌어오기 요청 본문에서 바로 [새로운 기능 섹션](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new)에 간단한 설명을 추가할 수 있습니다.
 
 새로운 기능 강조 표시를 추가하려면:
 
@@ -109,4 +108,4 @@ submitting a pull request!
 1. `whatsnew` 파트는 `whatsnew` 태그에서 시작하여 끌어오기 요청 본문의 맨 끝에 있어야 합니다.
 1. 변경 사항에 대한 설명에는 작업 링크가 포함되어야 합니다. 링크가 올바르고 의도한 주제로 이어졌는지 확인하십시오. 새로운 항목인 경우 끌어오기 요청을 병합하고 새 항목을 게시한 후 링크가 작동하는지 확인하십시오. 끌어오기 요청이 병합된 후에 링크를 수정해도 됩니다.
 
-예를 들어, 저장소에서 닫힌 끌어오기 요청을 검색하여 기존 하이라이트의 서식을 확인하고, 이를 [새로운 기능 섹션](https://experienceleague.adobe.com/ko/docs/commerce-operations/operational-guides/home#whats-new)과 비교하여 설명서에 어떻게 표시되는지 확인하십시오.
+예를 들어, 저장소에서 닫힌 끌어오기 요청을 검색하여 기존 하이라이트의 서식을 확인하고, 이를 [새로운 기능 섹션](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new)과 비교하여 설명서에 어떻게 표시되는지 확인하십시오.
