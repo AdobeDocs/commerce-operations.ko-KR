@@ -23,12 +23,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">구성 값 설정</a>에 대한 자세한 정보를 제공했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">구성 값 설정</a>에 대한 자세한 정보를 제공했습니다.</p>
 </td>
       <td>
         우수 사례
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">끌어오기 요청</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.ko-KR/pull/147">끌어오기 요청</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> 매개 변수에 올바른 값을 지정하도록 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> 지침에서 <code class="language-plaintext highlighter-rouge">cache-backend</code> CLI 명령을 업데이트했습니다.</p>
+      <td><p><code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> 매개 변수에 올바른 값을 지정하도록 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configure Valkey default caching</a> 지침에서 <code class="language-plaintext highlighter-rouge">cache-backend</code> CLI 명령을 업데이트했습니다.</p>
 </td>
       <td>
         우수 사례
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">끌어오기 요청</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.ko-KR/pull/159">끌어오기 요청</a></td>
     </tr>
   </tbody>
 </table>
