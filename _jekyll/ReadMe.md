@@ -242,8 +242,8 @@ relationships:
 
 - Ruby와 Bundler가 설치되었습니다.
 - Gemfile에 지정된 필수 GEMS(핵심 종속성은 `adobe-comdox-exl-rake-tasks`에서 제공됨)입니다.
-- [ 및 ](https://cli.github.com/) 작업에 대한 `get_released_versions`GitHub CLI`first_merge_date`.
-- [ 작업에 대한 Python, ](https://www.pygmt.org/latest/install.html)PyGMT[ 및 ](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`.
+- [&#x200B; 및 &#x200B;](https://cli.github.com/) 작업에 대한 `get_released_versions`GitHub CLI`first_merge_date`.
+- [&#x200B; 작업에 대한 Python, &#x200B;](https://www.pygmt.org/latest/install.html)PyGMT[&#x200B; 및 &#x200B;](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`.
 
 ## 설정
 
