@@ -1,7 +1,7 @@
 ---
-source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ ht-degree: 3%
 
 ## Adobe 콘텐츠에 대한 귀하의 기여 관련 정보
 
-[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하세요.
+[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하세요.
 
 기여 방식은 기여자 및 기여 하고자 하는 변경 사항의 종류에 따라 다릅니다.
 
 ### 사소한 변경 사항
 
-부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 **편집 제안**&#x200B;을 클릭하여 GitHub의 Markdown 소스 파일로 이동하십시오. GitHub UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
+부분 업데이트에 기여하는 경우 문서를 방문하여 문서 하단에 나타나는 피드백 영역을 클릭하고 **자세한 피드백 옵션**&#x200B;을 클릭한 다음 **편집 제안**&#x200B;을 클릭하여 GitHub의 Markdown 소스 파일로 이동하십시오. GitHub UI를 사용하여 업데이트를 만듭니다. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 이 저장소의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
@@ -67,7 +67,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 커뮤니티 기여자는 기본 편집에 GitHub UI를 사용하거나 리포지토리를 포크하여 크게 기여할 수 있습니다.
 
-자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
+자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
 
 ## Markdown을 사용하여 주제 서식을 지정하는 방법
 
@@ -86,8 +86,8 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 템플릿 컨텐츠의 예로는 다음이 포함됩니다(이에 제한되지 않음).
 
 - [CLI 도구 참조](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [제품 가용성 테이블](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ko)
-- [시스템 요구 사항 테이블](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko)
+- [제품 가용성 테이블](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [시스템 요구 사항 테이블](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### 템플릿 콘텐츠 생성
 
@@ -96,7 +96,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 >**참고:**
 >
 >- 템플릿화된 콘텐츠를 생성하려면 터미널의 명령줄에서 작업해야 합니다.
->- 렌더링 스크립트를 실행하려면 루비가 설치되어 있어야 합니다. 필요한 버전은 [_jekyll/.ruby-version] (_jekyll/.ruby-version)을(를) 참조하십시오.
+>- 렌더링 스크립트를 실행하려면 루비가 설치되어 있어야 합니다. 필요한 버전은 [_jekyll/.ruby-version](_jekyll/.ruby-version)을(를) 참조하십시오.
 
 템플릿 컨텐츠의 파일 구조에 대한 설명은 다음을 참조하십시오.
 
@@ -109,8 +109,8 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 1. 텍스트 편집기에서 `/jekyll/_data` 디렉터리에서 데이터 파일을 엽니다. For example:
 
-   - [제품 가용성 테이블](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ko): `/jekyll/_data/product-availability.yml`
-   - [시스템 요구 사항 테이블](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko): `/jekyll/_data/system-requirements.yml`
+   - [제품 가용성 테이블](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [시스템 요구 사항 테이블](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. 기존 YAML 구조를 사용하여 엔트리를 작성합니다.
 
@@ -134,7 +134,7 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
    bundle exec rake render
    ```
 
-   >**참고:** `_jekyll` 디렉터리에서 스크립트를 실행해야 합니다. 스크립트를 처음 실행하는 경우에는 먼저 `bundle install` 명령을 사용하여 Ruby 종속성을 설치해야 합니다. 레이크 작업은 Adobe Commerce 문서 저장소 전체에서 유지 관리 기능이 향상되도록 `adobe-comdox-exl-rake-tasks` gem에서 제공합니다.
+   >**참고:** `_jekyll` 디렉터리에서 스크립트를 실행해야 합니다. 스크립트를 처음 실행하는 경우에는 먼저 `bundle install` 명령을 사용하여 Ruby 종속성을 설치해야 합니다. `adobe-comdox-exl-rake-tasks` gem에서 핵심 레이크 작업 및 종속성(Jekyll, Rake, 이미지 최적화)을 제공하여 Adobe Commerce 설명서 저장소 전반에서 유지 관리를 향상시킵니다. 이 리포지토리와 관련된 사용자 지정 작업은 `Rakefile`에서 구현됩니다.
 
 1. `root` 디렉터리로 다시 이동합니다.
 

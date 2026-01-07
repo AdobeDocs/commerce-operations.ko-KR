@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,32 @@ Azure 지역 맵을 생성합니다. 입력 데이터 파일은 `_jekyll/tmp/azu
 ```sh
 rake azure_regions
 ```
+
+### `get_released_versions`
+
+`magento/magento2` 저장소에서 마지막 10개의 릴리스 버전을 가져옵니다. 설치 및 인증을 위해 [GitHub CLI](https://cli.github.com/)가 필요합니다.
+
+**사용량:**
+
+```sh
+rake get_released_versions
+```
+
+**출력:** 릴리스 태그 이름과 날짜를 사용하여 `tmp/core-release.txt`을(를) 생성합니다.
+
+### `first_merge_date`
+
+지정된 분기에 첫 번째 병합의 날짜를 가져옵니다. 설치 및 인증을 위해 [GitHub CLI](https://cli.github.com/)가 필요합니다.
+
+**사용량:**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**인수:**
+
+- `base`(필수): 병합을 검사할 대상 분기 이름입니다.
 
 ### `includes:maintain_relationships`
 
@@ -215,8 +241,9 @@ relationships:
 ## 사전 요구 사항
 
 - Ruby와 Bundler가 설치되었습니다.
-- Gemfile에 지정된 필수 gems.
-- [&#x200B; 작업에 대한 Python, &#x200B;](https://www.pygmt.org/latest/install.html)PyGMT[&#x200B; 및 &#x200B;](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`.
+- Gemfile에 지정된 필수 GEMS(핵심 종속성은 `adobe-comdox-exl-rake-tasks`에서 제공됨)입니다.
+- [ 및 ](https://cli.github.com/) 작업에 대한 `get_released_versions`GitHub CLI`first_merge_date`.
+- [ 작업에 대한 Python, ](https://www.pygmt.org/latest/install.html)PyGMT[ 및 ](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`.
 
 ## 설정
 
