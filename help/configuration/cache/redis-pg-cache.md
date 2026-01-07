@@ -3,9 +3,9 @@ title: 기본 캐시에 Redis 사용
 description: Redis를 Adobe Commerce의 기본 캐시로 구성하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 유효성 검사 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 Commerce은 Redis 페이지 및 기본 캐싱을 구성하는 명령줄 옵션을 제공합니다. `<Commerce-install-dir>app/etc/env.php` 파일을 편집하여 캐싱을 구성할 수 있지만 특히 초기 구성의 경우 명령줄을 사용하는 것이 좋습니다. 명령줄에서 유효성 검사를 제공하여 구성이 문법적으로 정확한지 확인합니다.
 
 계속하려면 [Redis를 설치](config-redis.md#install-redis)해야 합니다.
+
+>[!NOTE]
+>
+>EC2에서 호스팅되는 Commerce 인스턴스의 경우 로컬 Redis 인스턴스 대신 AWS ElastiCache를 사용할 수 있습니다. [EC2 인스턴스에 대한 Elasticache 구성](redis-elasticache-for-ec2.md)을 참조하십시오.
 
 ## Redis 기본 캐싱 구성
 
@@ -76,9 +80,9 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
-## 결과
+## Commerce 환경 구성 검토
 
-두 예제 명령의 결과로 Commerce은 `<Commerce-install-dir>app/etc/env.php`에 다음과 유사한 줄을 추가합니다.
+Redis 캐싱을 구성하는 명령을 실행하면 Commerce 환경 구성(`<Commerce-install-dir>app/etc/env.php`)이 업데이트됩니다.
 
 ```php
 'cache' => [
@@ -104,93 +108,11 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 ],
 ```
 
-## EC2 인스턴스로 AWS ElastiCache 사용
+## 추가 캐싱 옵션 구성
 
-Commerce 2.4.3부터 Amazon EC2에서 호스팅되는 인스턴스는 로컬 Redis 인스턴스 대신 AWS ElastiCache를 사용할 수 있습니다.
+이 섹션에서는 기본적으로 비활성화된 선택적 구성 설정을 활성화하는 방법에 대해 설명합니다.
 
->[!WARNING]
->
->이 섹션은 Amazon EC2 VPC에서 실행되는 Commerce 인스턴스에서만 작동합니다. 온-프레미스 설치에서는 작동하지 않습니다.
-
-### Redis 클러스터 구성
-
-[AWS에서 Redis 클러스터를 설정](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)한 후 ElastiCache를 사용하도록 EC2 인스턴스를 구성하십시오.
-
-1. [EC2 인스턴스의 동일한 지역 및 VPC에 ElastiCache 클러스터를 만듭니다](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html).
-1. 연결을 확인합니다.
-
-   - EC2 인스턴스에 대한 SSH 연결 열기
-   - EC2 인스턴스에서 Redis 클라이언트를 설치합니다.
-
-     ```bash
-     sudo apt-get install redis
-     ```
-
-   - EC2 보안 그룹에 인바운드 규칙 추가: 유형 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - ElastiCache 클러스터 보안 그룹에 인바운드 규칙을 추가합니다. 유형 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Redis CLI에 연결:
-
-     ```bash
-     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-     ```
-
-### 클러스터를 사용하도록 Commerce 구성
-
-Commerce은 여러 유형의 캐싱 구성을 지원합니다. 일반적으로 캐싱 구성은 프론트엔드와 백엔드 간에 분할됩니다. 프론트엔드 캐싱은 `default`(으)로 분류되며 모든 캐시 유형에 사용됩니다. 성능을 개선하기 위해 하위 수준 캐시를 사용자 정의하거나 하위 수준 캐시로 분할할 수 있습니다. 일반적인 Redis 구성은 기본 캐시와 페이지 캐시를 고유한 Redis 데이터베이스(RDB)로 구분합니다.
-
-`setup` 명령을 실행하여 Redis 끝점을 지정합니다.
-
-Redis용 Commerce을 기본 캐싱으로 구성하려면 다음을 수행하십시오.
-
-```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
-```
-
-Redis용 Commerce 페이지 캐싱을 구성하려면:
-
-```bash
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
-```
-
-세션 스토리지에 Redis를 사용하도록 Commerce을 구성하려면 다음을 수행하십시오.
-
-```bash
-bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
-```
-
-### 연결 확인
-
-**Commerce이 ElastiCache에 연결되어 있는지 확인하려면**:
-
-1. Commerce EC2 인스턴스에 대한 SSH 연결을 엽니다.
-1. Redis 모니터를 시작합니다.
-
-   ```bash
-   redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
-   ```
-
-1. Commerce UI에서 페이지를 엽니다.
-1. 터미널에서 [캐시 출력](#verify-redis-connection)을 확인하세요.
-
-## 새로운 Redis 캐시 구현
-
-Commerce 2.3.5부터는 확장된 Redis 캐시 구현을 사용하는 것이 좋습니다. `\Magento\Framework\Cache\Backend\Redis`.
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379'
-            ],
-        ],
-],
-```
-
-## Redis 미리 로드 기능
+### Redis 미리 로드 기능
 
 Commerce은 구성 데이터를 Redis 캐시에 저장하기 때문에 페이지 간에 재사용되는 데이터를 미리 로드할 수 있습니다. 미리 로드해야 하는 키를 찾으려면 Redis에서 Commerce으로 전송되는 데이터를 분석하십시오. `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`과(와) 같이 모든 페이지에 로드되는 데이터를 미리 로드하는 것이 좋습니다.
 
@@ -235,10 +157,11 @@ L2 캐시와 함께 미리 로드 기능을 사용하는 경우 L2 캐시는 데
 ],
 ```
 
-## 병렬 생성
+### 병렬 생성
 
-2.4.0 릴리스부터 잠금 대기를 제거하려는 사용자를 위해 `allow_parallel_generation` 옵션을 도입했습니다.
-기본적으로 비활성화되며 과도한 구성 및/또는 블록이 있을 때까지 비활성화하는 것이 좋습니다.
+`allow_parallel_generation` 옵션을 활성화하여 잠금 대기를 제거하십시오.
+
+이 옵션은 기본적으로 비활성화되어 있으며, Adobe에서는 구성 또는 블록이 많을 때까지 비활성화하는 것이 좋습니다.
 
 **병렬 생성을 사용하려면**:
 
@@ -246,7 +169,7 @@ L2 캐시와 함께 미리 로드 기능을 사용하는 경우 L2 캐시는 데
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-플래그이므로 명령으로 비활성화할 수 없습니다. 구성 값을 `false`(으)로 수동으로 설정해야 합니다.
+이 옵션은 플래그이므로 명령으로 비활성화할 수 없습니다. 구성 값을 `false`(으)로 수동으로 설정해야 합니다.
 
 ```php
     'cache' => [

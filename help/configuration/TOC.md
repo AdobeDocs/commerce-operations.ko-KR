@@ -2,9 +2,9 @@
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 애플리케이션 기능 및 서비스를 구성합니다.
 feature: Configuration
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 1%
       + [Redis 구성](cache/config-redis.md)
       + [기본 캐시에 Redis 사용](cache/redis-pg-cache.md)
       + [세션 스토리지에 Redis 사용](cache/redis-session.md)
+      + [EC2 인스턴스용 ElastiCache 구성](cache/redis-elasticache-for-ec2.md)
    + 밸키 {#valkey}
       + [Valkey 구성](cache/config-valkey.md)
       + [기본 캐시에 Valkey 사용](cache/valkey-pg-cache.md)
@@ -150,4 +151,4 @@ ht-degree: 1%
       + [분할 데이터베이스 확인](storage/multi-master-verify.md)
       + [데이터베이스 복제](storage/multi-master-replication.md)
       + [단일 데이터베이스로 되돌리기](storage/revert-split-database.md)
-+ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
++ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
