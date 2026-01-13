@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
+source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
 workflow-type: tm+mt
-source-wordcount: '29413'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 단일 필드에서 조건을 충족할 필요 없이 검색 가능한 모든 필드에서 최소 일치 조건이 충족되면 전체 텍스트 검색에서 일치하는 제품을 반환하는 문제를 해결했습니다.
+* **ACSD-68359**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 장바구니에 많은 제품이 있을 때 [!UICONTROL Pick in Store]을(를) 사용하여 체크아웃하는 동안 저장소를 선택할 때 더 이상 긴 URL로 인해 실패하지 않는 문제를 해결했습니다. 이전에는 저장소 선택 중에 너무 긴 URL이 생성되어 고객이 체크아웃을 완료할 수 없게 되어 *414 오류*&#x200B;가 트리거되었습니다.
+* **ACSD-68451**(Adobe Commerce의 경우 B2B >=1.5.2-p1 &lt;1.5.3) - 회사 관리자가 한 웹 사이트에 로그인하고 다른 웹 사이트에서 관련 없는 회사를 만들지만 관련 없는 회사에 잘못 연결된 여러 웹 사이트에 대한 문제를 해결합니다.
+* **ACSD-68490**(Adobe Commerce >=2.4.6 &lt;2.4.7) - 구성 가능한 제품을 만드는 동안 제한된 관리자의 [!UICONTROL Add New Attribute] 단추가 표시되는 문제를 해결했습니다.
+* **ACSD-68517**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 카탈로그 및 카탈로그 검색 페이지에서 양식 다시 제출 오류를 수정합니다.
+* **ACSD-68573**(Adobe Commerce >=2.4.5 &lt;2.4.9) - 범주 권한이 고객 위시리스트 항목에 제대로 적용되지 않는 문제를 해결했습니다. 수정 후에는 위시리스트 항목이 웹과 GraphQL 모두에서 올바르게 표시되고 페이지가 지정됩니다.
+* **ACSD-68615**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 처리된 조합에 주문 ID가 누락된 경우 재고 예약 보상 CLI에서 예외가 표시되는 문제를 수정합니다.
+* **ACSD-68793**(Adobe Commerce의 경우 B2B >=1.5.1 &lt;1.5.3) - 공유 카탈로그에 할당할 때 유효한 제품이 잘못 거부되는 문제를 해결했습니다.
+* **ACSD-68925**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 이제 GraphQL 요청에 대한 응답이 HTTP 사양을 통해 GraphQL과 정렬되는 문제를 해결했습니다. 요청을 구문 분석할 수 없거나, 권한이 없거나, 일반적인 문제가 발생하면 4XX 응답 코드가 반환됩니다. 요청이 구문 분석되어 처리될 수 있는 경우 200 응답 코드가 반환됩니다.
+* 업데이트된 버전: **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
+* 대체된 패치: **ACSD-62577**, **ACSD-68011**
 
 ## v1.1.74 {#v1-1-74}
 
