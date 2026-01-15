@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
+source-git-commit: 4f4131b89abffbe707f084b45f9d492679138b00
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.67에는 다음 패치가 포함됩니다.
 1. **AC-14985**: TLS를 사용하여 SMTP 전자 메일을 보내는 동안 오류가 발생했습니다.
 1. **AC-14984**: php-amqplib/php-amqplib ^3.2.0에 SSL 연결 문제가 있습니다.
-1. **ACSD-65935**: `customerOrders` GraphQL 쿼리에서 제품을 삭제할 때 내부 서버 오류를 반환했습니다.
+1. **[ACSD-65935](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted.md)**: `customerOrders` GraphQL 쿼리에서 제품을 삭제할 때 내부 서버 오류를 반환했습니다.
 1. **ACSD-66049**: 영어가 아닌 상점 앞에는 ICU 라이브러리 버전으로 인해 잘못된 가격이 표시됩니다.
 1. **ACSD-66084**: `row_total_incl_tax`은(는) 주문 API에서 완전히 할인된 항목에 대해 0.00 대신 0에 가까운 값을 반환합니다.
 1. **ACSD-66118**: 구성 캐시를 새로 고치지 않으면 **[!UICONTROL Store View]** 코드를 업데이트하면 **[!UICONTROL Design Configuration]** 설정이 지워집니다.
