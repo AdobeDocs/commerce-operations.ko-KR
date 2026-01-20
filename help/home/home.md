@@ -2,7 +2,7 @@
 title: 운영 안내서 홈
 description: Adobe Commerce 시스템 관리 및 운영 개념에 대해 알아봅니다. Commerce 배포 계획, 구성 및 유지 관리에 대한 포괄적인 안내서를 찾아보십시오.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 152c932b6eca3e131f46e5ade93c4e87fc0811a6
+source-git-commit: 4d153a0d4bd30aadc78b755ed3b1a3bca2e78c29
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 7%
@@ -102,4 +102,4 @@ ht-degree: 7%
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-01-07 14:57:09 -->
+<!-- Last updated from includes: 2026-01-15 15:39:03 -->
