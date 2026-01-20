@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 문제
 
-[!DNL New Relic]Adobe Commerce에 대한 관리 경고[에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 ](managed-alerts-for-magento-commerce.md)에서 경고를 받게 됩니다. 이러한 경고는 Adobe에서 개발한 것으로, 지원 및 엔지니어링의 인사이트를 사용하여 판매자에게 표준 경고 세트를 제공합니다.
+[!DNL New Relic]Adobe Commerce에 대한 관리 경고[에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 &#x200B;](managed-alerts-for-magento-commerce.md)에서 경고를 받게 됩니다. 이러한 경고는 Adobe에서 개발한 것으로, 지원 및 엔지니어링의 인사이트를 사용하여 판매자에게 표준 경고 세트를 제공합니다.
 
 **<u>실행!</u>**
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 다음 단계에 따라 원인을 식별하고 해결하십시오.
 
-1. [!DNL Redis]one.newrelic.com[ > ](https://login.newrelic.com/login)인프라&#x200B;**>**&#x200B;타사 서비스&#x200B;**페이지로 이동하여** 사용 메모리가 증가 또는 감소하는지 확인하고 [!DNL Redis] 대시보드를 선택합니다. 안정적이거나 증가하는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)하여 클러스터의 크기를 늘리거나 `maxmemory` 제한을 다음 수준으로 늘리십시오.
+1. [!DNL Redis]one.newrelic.com[&#x200B; > &#x200B;](https://login.newrelic.com/login)인프라&#x200B;**>**&#x200B;타사 서비스&#x200B;**페이지로 이동하여** 사용 메모리가 증가 또는 감소하는지 확인하고 [!DNL Redis] 대시보드를 선택합니다. 안정적이거나 증가하는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)하여 클러스터의 크기를 늘리거나 `maxmemory` 제한을 다음 수준으로 늘리십시오.
 1. 메모리 사용량이 증가한 원인을 파악할 수 없는 경우 최근 트렌드를 검토하여 최근 코드 배포 또는 구성 변경(예: 새로운 고객 그룹 및 카탈로그에 대한 대규모 변경)과 관련된 문제를 파악하십시오. [!DNL Redis] 코드 배포 또는 변경 시 상관 관계에 대한 지난 7일간의 활동을 검토하는 것이 좋습니다.
 1. 타사 확장의 잘못된 동작 확인:
    * 최근에 설치된 타사 확장 프로그램 및 문제가 시작된 시간과의 상관 관계를 찾으십시오.
