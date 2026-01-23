@@ -2,9 +2,9 @@
 title: config.php 참조
 description: Adobe Commerce 구성에 대한 config.php 파일 값 및 섹션에 대해 알아봅니다. 모듈, 범위, 시스템 설정 및 배포 모범 사례를 살펴봅니다.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-[모듈]에 대해 자세히 알아보세요.
+[모듈](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)에 대해 자세히 알아보세요.
 
 ## 범위
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce 범위][scopes]에 대해 자세히 알아보세요.
+[Commerce 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)에 대해 자세히 알아보세요.
 
 ## 시스템
 
@@ -120,10 +120,5 @@ ht-degree: 1%
 ]
 ```
 
-[테마]에 대해 자세히 알아보세요.
+[테마](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/)에 대해 자세히 알아보세요.
 
-<!-- link definitions -->
-
-[모듈]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko#scope-settings
-[테마]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

@@ -4,7 +4,7 @@ description: Adobe Commerce에서 사용자 지정 로그 파일을 만들고 �
 feature: Configuration, Logs
 badge: label="Atwix 제공" type="Informative" url="https://www.atwix.com/" tooltip="아트윅스"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 | 클래스 | 로그 파일 |
 | ----- | -------- |
-| [Magento\Framework\Logger\Handler\Base][base] | - |
-| [Magento\Framework\Logger\Handler\Debug][debug] | `/var/log/debug.log` |
-| [Magento\Framework\Logger\Handler\Exception][exception] | `/var/log/exception.log` |
-| [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
-| [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
+| [Magento\Framework\Logger\Handler\Base](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
+| [Magento\Framework\Logger\Handler\Debug](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
+| [Magento\Framework\Logger\Handler\Exception](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
+| [Magento\Framework\Logger\Handler\Syslog](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
+| [Magento\Framework\Logger\Handler\System](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
 
 `lib/internal/Magento/Framework/Logger/Handler` 디렉터리에서 찾을 수 있습니다.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
    `name`의 `Magento\Payment\Model\Method\MyCustomDebug` 값은 고유해야 합니다.
 
-1. 고유한 [을(를) 가진 다른 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`name`에서 처리기를 정의합니다.
+1. 고유한 [을(를) 가진 다른 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`name`에서 처리기를 정의합니다.
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `MyCustomLogger` 개체에 [&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
+1. `MyCustomLogger` 개체에 [ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 이 클래스의 핸들러를 모듈의 [&#x200B; 파일에서 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`di.xml`(으)로 정의합니다.
+1. 이 클래스의 핸들러를 모듈의 [ 파일에서 ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`di.xml`(으)로 정의합니다.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -205,10 +205,3 @@ ht-degree: 0%
 
 예외 메시지가 `/var/log/my_custom_logger/error.log` 파일에 기록됩니다.
 
-<!-- link definitions -->
-
-[base]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php
-[debug]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php
-[exception]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php
-[syslog]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php
-[system]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php

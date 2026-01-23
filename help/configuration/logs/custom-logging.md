@@ -3,9 +3,9 @@ title: 사용자 정의 로깅
 description: 사용자 정의 로깅을 사용하여 오류를 조사하는 방법에 대해 알아봅니다.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe에서는 다음과 같은 이유로 중앙 집중식 애플리케이션 �
 
 - 애플리케이션 서버 이외의 서버에 로그를 저장할 수 있고 디스크 I/O 작업을 줄여 애플리케이션 서버 지원을 간소화합니다.
 
-- 프로덕션 서버에 영향을 주지 않고 [Logstash], [Logplex] 또는 [fluentd]와 같은 특수 도구를 사용하여 로그 데이터를 보다 효과적으로 처리할 수 있습니다.
+- 프로덕션 서버에 영향을 주지 않고 [Logstash](https://www.elastic.co/products/logstash), [Logplex](https://devcenter.heroku.com/articles/logplex) 또는 [fluentd](https://www.fluentd.org/)와 같은 특수 도구를 사용하여 로그 데이터를 보다 효과적으로 처리할 수 있습니다.
 
   >[!INFO]
   >
@@ -28,13 +28,13 @@ Adobe에서는 다음과 같은 이유로 중앙 집중식 애플리케이션 �
 
 ## PSR-3 준수
 
-[PSR-3 standard][laminas]은(는) 로깅 라이브러리를 위한 일반적인 PHP 인터페이스를 정의합니다. PSR-3의 주요 목표는 라이브러리가 `Psr\Log\LoggerInterface` 개체를 수신하고 이에 로그를 단순하고 범용적으로 쓸 수 있도록 하는 것입니다.
+[PSR-3 standard](https://docs.laminas.dev/laminas-log/)은(는) 로깅 라이브러리를 위한 일반적인 PHP 인터페이스를 정의합니다. PSR-3의 주요 목표는 라이브러리가 `Psr\Log\LoggerInterface` 개체를 수신하고 이에 로그를 단순하고 범용적으로 쓸 수 있도록 하는 것입니다.
 
 이렇게 대체하면 애플리케이션 코드가 손상될 수 있으므로 걱정하지 않고 구현을 쉽게 교체할 수 있습니다. 또한 시스템의 향후 버전에서 로그 구현이 변경되는 경우에도 사용자 지정 구성 요소가 작동하도록 보장합니다.
 
 ## 독백
 
-Commerce 2는 PSR-3 표준을 준수합니다. 기본적으로 Commerce에서는 [Monolog]을(를) 사용합니다. Commerce 응용 프로그램 `Psr\Log\LoggerInterface`에서 [`di.xml`][di]에 대한 기본 설정으로 구현된 Monolog입니다.
+Commerce 2는 PSR-3 표준을 준수합니다. 기본적으로 Commerce에서는 [Monolog](https://github.com/Seldaek/monolog)을(를) 사용합니다. Commerce 응용 프로그램 `Psr\Log\LoggerInterface`[`di.xml`에서 ](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9)에 대한 기본 설정으로 구현된 Monolog입니다.
 
 Monolog는 고급 로깅 전략을 구축 할 수있는 광범위한 핸들러를 가진 인기있는 PHP 로깅 솔루션입니다. 다음은 Monolog의 작동 방식에 대한 요약입니다.
 
@@ -52,11 +52,3 @@ Monolog _logger_&#x200B;은(는) 자체 _handlers_ 집합이 있는 채널입니
 
 다른 채널에는 다른 처리기 및 논리 세트가 있을 수 있습니다.
 
-<!-- link definitions -->
-
-[di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[플루엔트]: https://www.fluentd.org/
-[laminas]: https://docs.laminas.dev/laminas-log/
-[Logplex]: https://devcenter.heroku.com/articles/logplex
-[Logstash]: https://www.elastic.co/products/logstash
-[독백]: https://github.com/Seldaek/monolog

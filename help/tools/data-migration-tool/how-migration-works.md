@@ -3,7 +3,7 @@ title: 데이터 마이그레이션 작동 방식
 description: 용어, 워크플로 다이어그램, 단계를 포함하여 Magento 1과 Magento 2 간의 데이터 마이그레이션 프로세스에 대해 알아봅니다.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Magento 2 마이그레이션에는 데이터, 확장 및 사용자 지정 코드
 
 ### 확장 및 사용자 지정 코드
 
-Magento 2에서 Magento 1 확장을 사용할 수 있도록 개발 커뮤니티와 열심히 협력해 왔습니다. 이제 좋아하는 확장의 최신 버전을 다운로드하거나 구매할 수 있는 [Commerce Marketplace](https://marketplace.magento.com/)을(를) 공개하게 되어 기쁘게 생각합니다.
+Magento 2에서 Magento 1 확장을 사용할 수 있도록 개발 커뮤니티와 열심히 협력해 왔습니다. 이제 좋아하는 확장의 최신 버전을 다운로드하거나 구매할 수 있는 [Commerce Marketplace](https://commercemarketplace.adobe.com//)을(를) 공개하게 되어 기쁘게 생각합니다.
 
 Magento 2용 확장 개발에 대한 자세한 내용은 [PHP 개발자 안내서](https://developer.adobe.com/commerce/php/development/)를 참조하세요.
 

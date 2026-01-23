@@ -3,7 +3,7 @@ title: ' [!DNL Data Migration Tool] 사용자 지정'
 description: Magento 1과 Magento 2 간에 확장에서 만든 데이터를 전송하기 위해  [!DNL Data Migration Tool] 을(를) 사용자 지정하는 방법을 알아봅니다.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # [!DNL Data Migration Tool] 구성
 
-경우에 따라 [확장](https://marketplace.magento.com/extensions.html) 또는 사용자 지정 코드에서 만든 데이터 형식 및 구조가 Magento 1과 Magento 2에서 다릅니다. [!DNL Data Migration Tool] 내의 확장 지점을 사용하여 이 데이터를 마이그레이션하십시오. 데이터 형식 및 구조가 동일한 경우 사용자 개입 없이 이 툴이 데이터를 자동으로 마이그레이션할 수 있습니다.
+경우에 따라 [확장](https://commercemarketplace.adobe.com//extensions.html) 또는 사용자 지정 코드에서 만든 데이터 형식 및 구조가 Magento 1과 Magento 2에서 다릅니다. [!DNL Data Migration Tool] 내의 확장 지점을 사용하여 이 데이터를 마이그레이션하십시오. 데이터 형식 및 구조가 동일한 경우 사용자 개입 없이 이 툴이 데이터를 자동으로 마이그레이션할 수 있습니다.
 
 마이그레이션하는 동안 [맵 단계](technical-specification.md#map-step)에서 확장에서 만든 테이블을 포함하여 모든 Magento 1과 Magento 2 테이블을 검색하고 비교합니다. 테이블이 동일하면 도구에서 데이터를 자동으로 마이그레이션합니다. 테이블이 다른 경우 도구가 종료되고 사용자에게 알립니다.
 
 >[!NOTE]
 >
->[을(를) 확장하기 전에 &#x200B;](technical-specification.md)기술 사양[!DNL Data Migration Tool]을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
+>[을(를) 확장하기 전에 ](technical-specification.md)기술 사양[!DNL Data Migration Tool]을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
 
 
 ## 사소한 데이터 형식 및 구조 변경

@@ -3,19 +3,19 @@ title: 데이터베이스 작업 기록
 description: 로거 인터페이스를 사용하여 데이터베이스 작업을 기록하도록 Commerce을 구성합니다.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
 # 데이터베이스 작업 기록
 
-다음 예제에서는 두 개의 구현이 있는 [`Magento\Framework\DB\LoggerInterface`][interface]을(를) 사용하여 데이터베이스 활동을 기록하는 방법을 보여 줍니다.
+다음 예제에서는 두 개의 구현이 있는 `[Magento\Framework\DB\LoggerInterface](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/LoggerInterface.php)`을(를) 사용하여 데이터베이스 활동을 기록하는 방법을 보여 줍니다.
 
-- 아무것도 기록하지 않음(기본값): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- `var/log` 디렉터리에 대한 로그: [`Magento\Framework\DB\Logger\File`][file]
+- 아무것도 기록하지 않음(기본값): [`Magento\Framework\DB\Logger\Quiet`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/Quiet.php)
+- `var/log` 디렉터리에 대한 로그: [`Magento\Framework\DB\Logger\File`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/DB/Logger/File.php)
 
 >[!TIP]
 >
@@ -58,8 +58,3 @@ bin/magento setup:di:compile
 bin/magento cache:clean
 ```
 
-<!-- link definitions -->
-
-[file]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/File.php
-[interface]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/LoggerInterface.php
-[quiet]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/DB/Logger/Quiet.php

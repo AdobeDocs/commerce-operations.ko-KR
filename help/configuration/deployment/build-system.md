@@ -3,9 +3,9 @@ title: 시스템 설치 빌드
 description: Commerce을 빌드 시스템에 배포하는 방법에 대해 알아봅니다.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ Composer를 설치하려면:
    mv composer.phar /usr/local/bin/composer
    ```
 
-추가 설치 옵션은 [작성기 설치 설명서][composer]를 참조하십시오.
+추가 설치 옵션은 [작성기 설치 설명서](https://getcomposer.org/download/)를 참조하십시오.
 
 ### PHP 설치
 
-[CentOS] 또는 [Ubuntu]에 PHP를 설치합니다.
+[CentOS](https://wiki.centos.org/HowTos/php7) 또는 [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html)에 PHP를 설치합니다.
 
 ### 빌드 시스템 설정
 
@@ -134,8 +134,3 @@ Composer를 설치하려면:
 
    `<mode>`은(는) 필수입니다. `default` 또는 `developer`일 수 있습니다.
 
-<!-- Link Definitions -->
-
-[센트OS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[우분투]: https://help.ubuntu.com/lts/serverguide/php.html

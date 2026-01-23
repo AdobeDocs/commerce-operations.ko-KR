@@ -2,7 +2,7 @@
 title: env.php 참조
 description: Adobe Commerce의 env.php 파일 구성 값 및 섹션에 대해 알아봅니다. 환경 설정 및 구성 옵션을 살펴봅니다.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 | `resource` | 연결에 리소스 이름 매핑 |
 | `session` | 세션 저장소 데이터 |
 | `system` | 관리자의 편집 필드 비활성화 |
-| `x-frame-options` | [x-frame-options][x-frame-options]에 대한 설정 |
+| `x-frame-options` | [x-frame-options](../security/xframe-options.md)에 대한 설정 |
 
 ## 백엔드
 
@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
 
 ## db
 
@@ -193,7 +193,7 @@ Stomp(ActiveMQ Artemis)의 경우:
 
 ## 디렉터리
 
-웹 서버가 `/pub`향상된 보안[을 위해 &#x200B;](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
+웹 서버가 `/pub`향상된 보안[을 위해 ](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Stomp(ActiveMQ Artemis)의 경우:
 ]
 ```
 
-[다운로드 가능한 도메인](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 
@@ -252,7 +252,7 @@ Commerce 애플리케이션 설치 날짜입니다.
 ]
 ```
 
-[메시지 큐][message-queue]에 대해 자세히 알아보세요.
+[메시지 큐](https://developer.adobe.com/commerce/php/development/components/message-queues/)에 대해 자세히 알아보세요.
 
 ## 리소스
 
@@ -305,9 +305,6 @@ Commerce 애플리케이션 설치 날짜입니다.
 
 자세한 내용은 [env-php-config-set](../cli/set-configuration-values.md)을 참조하세요.
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## 파일 구성에 변수 추가

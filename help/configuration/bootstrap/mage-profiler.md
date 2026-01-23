@@ -2,7 +2,7 @@
 title: 프로파일링 활성화
 description: MAGE 프로파일러가 분석 도구와 함께 사용할 수 있도록 하는 방법에 대해 자세히 알아보십시오.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Commerce 프로파일링을 사용하여 다음과 같은 작업을 수행할 �
 
   일부 생성자에서 요청되었지만 사용되지 않은(즉, 메서드가 호출되지 않은) 개체인 _사용되지 않은 종속성_ 목록에 특히 관심이 있어야 합니다. 결과적으로 이러한 종속성을 만드는 데 소요되는 프로세서 시간과 메모리가 낭비됩니다.
 
-Commerce은 [`Magento\Framework\Profiler`][profiler]에서 기본 기능을 제공합니다.
+Commerce은 [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php)에서 기본 기능을 제공합니다.
 
 MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성화하고 구성할 수 있습니다.
 
 ## MAGE_PROFILER 설정
 
-`MAGE_PROFILER`부트스트랩 매개 변수의 값을 설정[하는 방법으로 &#x200B;](../bootstrap/set-parameters.md)의 값을 설정할 수 있습니다.
+`MAGE_PROFILER`부트스트랩 매개 변수의 값을 설정[하는 방법으로 ](../bootstrap/set-parameters.md)의 값을 설정할 수 있습니다.
 
 `MAGE_PROFILER`은(는) 다음 값을 지원합니다.
 
@@ -37,8 +37,8 @@ MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성�
 
   다음 값 중 하나를 사용하여 특정 프로파일러를 활성화할 수 있습니다.
 
-   - `csvfile`을(를) 사용하는 [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - `2`을(를) 사용하는 빈 값을 포함한 다른 모든 값([`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html] 제외)
+   - `csvfile`[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`을(를) 사용하는 ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - `2`[`Magento\Framework\Profiler\Driver\Standard\Output\Html`을(를) 사용하는 빈 값을 포함한 다른 모든 값(](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php) 제외)
 
 - 종속성 그래프를 사용하려면 `2`을(를) 사용하십시오.
 
@@ -81,8 +81,3 @@ CLI 명령을 사용하여 프로파일러를 활성화하거나 비활성화할
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

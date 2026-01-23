@@ -2,9 +2,9 @@
 title: 번역 사전 및 언어 패키지
 description: Adobe Commerce용 번역 사전을 생성하고 언어 패키지를 빌드하는 방법에 대해 알아봅니다. 로컬라이제이션 및 다국어 스토어 설정을 살펴보십시오.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Commerce 번역을 사용하면 다음을 생성하여 여러 지역 및 시장�
 - **번역 사전**: 사용자 지정 모듈 또는 테마를 위한 단어와 같이 _일부_&#x200B;개의 단어와 구를 사용자 지정하거나 번역하는 편리한 방법입니다.
 - **언어 패키지**&#x200B;를 통해 Commerce 애플리케이션에서 _모든 또는 모든_&#x200B;개의 단어 및 구를 번역할 수 있습니다.
 
-[번역 개요]를 참조하세요.
+[번역 개요](https://developer.adobe.com/commerce/frontend-core/guide/translations/)를 참조하세요.
 
 ## 번역 사전 생성
 
-[번역 사전]을 생성하여 기존 문자열을 사용자 지정하거나, 사용자 지정 모듈에서 단어와 구를 번역하거나, 테마를 현지화하거나, 언어 패키지를 만들 수 있습니다.
+[번역 사전](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries)을 생성하여 기존 문자열을 사용자 지정하거나, 사용자 지정 모듈에서 단어와 구를 번역하거나, 테마를 현지화하거나, 언어 패키지를 만들 수 있습니다.
 
 번역을 시작하려면 명령을 사용하여 기존 구 및 단어의 수집된 목록이 있는 사전 CSV 파일을 생성합니다.
 
@@ -35,7 +35,7 @@ Commerce 번역을 사용하면 다음을 생성하여 여러 지역 및 시장�
 
 1. 번역 사전을 언어 패키지로 패키징하고 이 패키지를 Commerce 스토어 관리자에게 제공할 수 있습니다.
 
-1. 관리자 [저장소 관리자가 번역을 구성]합니다.
+1. 관리자 [저장소 관리자가 번역을 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)합니다.
 
 명령 옵션:
 
@@ -85,7 +85,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 
 ## 언어 패키지 만들기
 
-번역 사전과 달리, 언어 패키지를 사용하여 Commerce 애플리케이션에서 모든 단어 및 구를 번역할 수 있습니다. 번역 사전을 사용하여 특정 구성 요소(예: 모듈 또는 테마)를 번역할 수 있습니다. [언어 패키지에 대해 자세히 알아보세요].
+번역 사전과 달리, 언어 패키지를 사용하여 Commerce 애플리케이션에서 모든 단어 및 구를 번역할 수 있습니다. 번역 사전을 사용하여 특정 구성 요소(예: 모듈 또는 테마)를 번역할 수 있습니다. [언어 패키지에 대해 자세히 알아보세요](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages).
 
 이 섹션에서는 모듈 및 테마에 CSV 파일을 작성하는 언어 패키지를 만드는 방법에 대해 설명합니다. 언어 패키지를 생성하려면 다음 섹션에서 설명한 작업을 수행해야 합니다.
 
@@ -106,8 +106,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 | 매개 변수 | 값 | 필수? |
 |--- |--- |--- |
-| `<source>` | 언어 패키지로 분류하는 데 필요한 메타 정보와 결합된 번역 사전이 포함된 CSV 파일의 절대 파일 시스템 경로 및 파일 이름입니다.<br><br>CSV 파일을 만든 다음 [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)디렉터리 및 파일 만들기[에 설명된 대로 언어 패키지를 만들려면 &#x200B;](#m2devgde-xlate-files)을(를) 사용합니다. | 예 |
-| `<locale>` | 결과 CSV 파일의 파일 이름으로 사용되는 언어의 [ISO 639-1]&#x200B;(언어) 및 [ISO 3166]&#x200B;(국가) 식별자입니다. 예: `de_DE`, `pt_PT`, `pt_BR`. | 예 |
+| `<source>` | 언어 패키지로 분류하는 데 필요한 메타 정보와 결합된 번역 사전이 포함된 CSV 파일의 절대 파일 시스템 경로 및 파일 이름입니다.<br><br>CSV 파일을 만든 다음 [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)디렉터리 및 파일 만들기[에 설명된 대로 언어 패키지를 만들려면 ](#m2devgde-xlate-files)을(를) 사용합니다. | 예 |
+| `<locale>` | 결과 CSV 파일의 파일 이름으로 사용되는 언어의 [ISO 639-1](https://www.iso.org/iso-639-language-codes.html)&#x200B;(언어) 및 [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)&#x200B;(국가) 식별자입니다. 예: `de_DE`, `pt_PT`, `pt_BR`. | 예 |
 | `-m --mode` | 대상 파일이 있는 경우 기존 언어 패키지를 바꾸거나 새 언어 팩과 병합할지 여부를 지정합니다. 병합은 존재하는 모든 구문을 무시하고 새 구문을 추가합니다.<br><br>값: 병합 또는 바꾸기(기본값). | 아니요 |
 | `-d --allow-duplicates` | 언어 팩에서 중복을 허용하려면 이 옵션을 포함합니다. 그렇지 않으면 다른 번역이 있는 여러 항목에서 동일한 구문을 발견하면 명령이 실패하고 오류가 발생합니다. | 아니요 |
 
@@ -117,12 +117,12 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 필수 라이선스 파일
 - `composer.json`
-- 언어 패키지를 `registration.php`등록[하는 ]
+- 언어 패키지를 `registration.php`등록[하는 ](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 - [`language.xml`](#language-package-languagexml) 메타 정보 파일
 
 >[!INFO]
 >
->전체 경로는 소문자로 입력해야 합니다. 예를 들어 [`de_de`]을(를) 참조하십시오.
+>전체 경로는 소문자로 입력해야 합니다. 예를 들어 [`de_de`](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php)을(를) 참조하십시오.
 
 이러한 파일을 만들려면 다음 작업을 수행하십시오.
 
@@ -131,8 +131,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    예를 들어 Commerce 언어 패키지는 `app/i18n/magento`에 있습니다
 
 1. 필요한 라이선스 파일을 추가합니다.
-1. 언어 패키지에 대한 종속성을 지정하는 [`composer.json`]을(를) 추가합니다.
-1. [`registration.php`]에 언어 패키지 등록
+1. 언어 패키지에 대한 종속성을 지정하는 [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/)을(를) 추가합니다.
+1. 언어 패키지를 [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)에 등록
 1. 다음 섹션에서 설명한 대로 `language.xml` 메타 정보 파일을 추가합니다.
 
 #### 언어 패키지 language.xml
@@ -195,7 +195,7 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-언어 패키지 간 상속을 모두 지정하면 순환 상속 체인이 생성될 수 있습니다. [Magento\Test\Integrity\App\Language\CircularDependencyTest] 테스트를 사용하여 이러한 체인을 찾아 수정하십시오.
+언어 패키지 간 상속을 모두 지정하면 순환 상속 체인이 생성될 수 있습니다. [Magento\Test\Integrity\App\Language\CircularDependencyTest](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) 테스트를 사용하여 이러한 체인을 찾아 수정하십시오.
 
 ### 한 언어에 대한 여러 패키지 구성
 
@@ -312,16 +312,3 @@ Commerce 응용 프로그램이 `en_GB` 패키지에서 단어 또는 구를 찾
    </language>
    ```
 
-<!-- link definitions -->
-
-[번역 개요]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
-[번역 사전]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[번역 구성]: https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-localize
-[언어 패키지에 대해 자세히 알아보기]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
-[ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
-[ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[레지스터]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[&#39;de_de&#39;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[&#39;composer.json&#39;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
-[&#39;registration.php&#39;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

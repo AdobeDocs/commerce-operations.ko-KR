@@ -3,28 +3,28 @@ title: 응용 프로그램 초기화 및 부트스트랩
 description: Commerce 애플리케이션의 초기화 및 부트스트랩 논리에 대해 읽어보십시오.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
 # 초기화 및 부트스트랩 개요
 
-Commerce 응용 프로그램을 실행하려면 [pub/index.php][index]에서 다음 작업을 구현합니다.
+Commerce 응용 프로그램을 실행하려면 [pub/index.php](https://github.com/magento/magento2/tree/2.4.8/pub/index.php)에서 다음 작업을 구현합니다.
 
-- 오류 처리, 자동 로더 초기화, 프로파일링 옵션 설정 및 기본 시간대 설정과 같은 필수 초기화 루틴을 수행하는 [app/bootstrap.php][bootinitial]을(를) 포함합니다.
-- [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->의 인스턴스 만들기
-- Commerce 응용 프로그램 인스턴스 만들기: [\Magento\Framework\AppInterface][app-face]
+- 환경에 배포된 Commerce 버전용 [app/bootstrap.php](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) 파일을 포함하십시오. 이 파일은 오류 처리, 자동 로더 초기화, 프로파일링 옵션 설정 및 기본 시간대 설정과 같은 필수 초기화 루틴을 수행합니다.
+- [\Magento\Framework\App\Bootstrap.php](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->의 인스턴스 만들기
+- Commerce 응용 프로그램 인스턴스 만들기: [\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
 - Commerce 실행
 
 ## Bootstrap 실행 논리
 
-[부트스트랩 개체][bootinitial]는 다음 알고리즘을 사용하여 Commerce 응용 프로그램을 실행합니다.
+[부트스트랩 개체](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php)는 다음 알고리즘을 사용하여 Commerce 응용 프로그램을 실행합니다.
 
 1. 오류 핸들러를 초기화합니다.
-1. 모든 곳에서 사용되고 환경의 영향을 받는 [개체 관리자][object] 및 기본 공유 서비스를 만듭니다. 환경 매개 변수는 이러한 개체에 올바르게 삽입됩니다.
+1. 모든 곳에서 사용되고 환경의 영향을 받는 [개체 관리자](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager) 및 기본 공유 서비스를 만듭니다. 환경 매개 변수는 이러한 개체에 올바르게 삽입됩니다.
 1. 유지 관리 모드가 _활성화되지 않음_&#x200B;임을 확인하고 그렇지 않으면 종료됩니다.
 1. Commerce 애플리케이션이 설치되어 있다고 주장합니다. 그렇지 않으면 가 종료됩니다.
 1. Commerce 애플리케이션을 시작합니다.
@@ -71,7 +71,7 @@ Commerce 응용 프로그램을 실행하려면 [pub/index.php][index]에서 다
 
 ### HTTP 진입점
 
-[\Magento\Framework\App\Http][http]은(는) 다음과 같이 작동합니다.
+[\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http)은(는) 다음과 같이 작동합니다.
 
 1. [응용 프로그램 영역](https://developer.adobe.com/commerce/php/architecture/modules/areas/)을 결정합니다.
 1. 컨트롤러 작업을 찾고 실행하기 위해 프런트 컨트롤러 및 라우팅 시스템을 시작합니다.
@@ -89,7 +89,7 @@ Commerce 응용 프로그램을 실행하려면 [pub/index.php][index]에서 다
 
 ### 정적 리소스 진입점
 
-[\Magento\Framework\App\StaticResource][static-resource]은(는) 정적 리소스(예: CSS, JavaScript 및 이미지)를 검색하는 응용 프로그램입니다. 리소스를 요청할 때까지 정적 리소스로 작업을 연기합니다.
+[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php)은(는) 정적 리소스(예: CSS, JavaScript 및 이미지)를 검색하는 응용 프로그램입니다. 리소스를 요청할 때까지 정적 리소스로 작업을 연기합니다.
 
 >[!INFO]
 >
@@ -105,17 +105,7 @@ Commerce 응용 프로그램을 실행하려면 [pub/index.php][index]에서 다
 
 ### 미디어 리소스 진입점
 
-[Magento\MediaStorage\App\Media][media]은(는) 데이터베이스에서 미디어 리소스(즉, 미디어 저장소에 업로드된 모든 파일)를 검색합니다. 데이터베이스가 미디어 스토리지로 구성될 때마다 사용됩니다.
+[Magento\MediaStorage\App\Media](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php)은(는) 데이터베이스에서 미디어 리소스(즉, 미디어 저장소에 업로드된 모든 파일)를 검색합니다. 데이터베이스가 미디어 스토리지로 구성될 때마다 사용됩니다.
 
 `\Magento\Core\App\Media`이(가) 구성된 데이터베이스 저장소에서 미디어 파일을 찾아 `pub/static` 디렉터리에 쓴 다음 내용을 반환합니다. 오류가 발생하면 콘텐츠가 없는 헤더에서 HTTP 404(찾을 수 없음) 상태 코드를 반환합니다.
 
-<!-- Link Definitions -->
-
-[app-face]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/AppInterface.php
-[bootinitial]: https://github.com/magento/magento2/tree/2.4/app/bootstrap.php
-[bootstrap]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
-[http]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Http
-[index]: https://github.com/magento/magento2/tree/2.4/pub/index.php
-[media]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/MediaStorage/App/Media.php
-[object]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/ObjectManager
-[static-resource]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/StaticResource.php

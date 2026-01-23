@@ -2,9 +2,9 @@
 title: 증분 ID 변경
 description: Commerce 데이터베이스 엔터티의 증분 ID를 변경합니다.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. [기술 자료](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=ko)에서 _PayPal 게이트웨이 거부 요청 - 중복 송장 문제_&#x200B;를 참조하십시오.
+>또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. [기술 자료](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html)에서 _PayPal 게이트웨이 거부 요청 - 중복 송장 문제_&#x200B;를 참조하십시오.
 
 ## 전제 조건 단계
 
@@ -70,10 +70,5 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 클라우드 인프라에서 Adobe Commerce의 프로덕션 환경에서 `ALTER TABLE` 쿼리를 실행하기 전에 다음 단계를 수행하는 것이 좋습니다.
 
 - 스테이징 환경에서 증분 ID를 변경하는 전체 절차를 테스트합니다
-- [DB 백업을 만듭니다] 실패 시 프로덕션 DB를 복원합니다.
+- [DB 백업을 만듭니다](https://support.magento.com/hc/en-us/articles/360003254334) 실패 시 프로덕션 DB를 복원합니다.
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[DB 백업 만들기]: https://support.magento.com/hc/en-us/articles/360003254334
-[지원되는 모든 버전]

@@ -2,7 +2,7 @@
 title: 코드 컴파일러
 description: 명령줄에서 Adobe Commerce 코드 컴파일러를 실행하는 방법에 대해 알아봅니다. 컴파일 프로세스 및 최적화 기술을 살펴봅니다.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 - 저장소 코드 생성(API에 대해 생성된 코드)
 - 서비스 데이터 속성 생성(데이터 객체에 대해 생성된 확장 클래스)
 
-[\Magento\Setup\Module\Di\App\Task\Operation][operation] 네임스페이스에서 코드 컴파일 클래스를 찾을 수 있습니다.
+[\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation) 네임스페이스에서 코드 컴파일 클래스를 찾을 수 있습니다.
 
 단일 테넌트 컴파일러를 실행하려면
 
@@ -60,6 +60,3 @@ Commerce 응용 프로그램을 설치하기 전에 코드를 컴파일하려면
 
 데이터베이스 없이 코드를 컴파일하려면 [Magento을 설치하지 않고 정적 보기 파일 배포](../cli/static-view-file-deployment.md)를 참조하십시오.
 
-<!-- link definitions -->
-
-[operation]: https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation

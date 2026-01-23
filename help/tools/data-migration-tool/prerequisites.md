@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool]개 필수 구성 요소'
 description: ' [!DNL Data Migration Tool] 을(를) 사용하여 Magento 1과 Magento 2 간에 데이터를 전송하기 전에 수행해야 하는 작업에 대해 알아봅니다.'
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -44,6 +44,6 @@ Magento 1 데이터베이스에 대해 바이너리 로깅이 활성화된 경�
 
 Magento 1 확장 코드를 Magento 2로 마이그레이션합니다.
 
-최신 확장 버전을 찾으려면 [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/)을(를) 방문하거나 확장 공급자에게 문의하십시오.
+최신 확장 버전을 찾으려면 [!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//)을(를) 방문하거나 확장 공급자에게 문의하십시오.
 
-[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)을(를) 사용할 수도 있습니다.
+[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)을(를) 사용할 수도 있습니다.

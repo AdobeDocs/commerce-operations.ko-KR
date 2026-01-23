@@ -2,7 +2,7 @@
 title: 기본 디렉터리 경로 사용자 지정
 description: MAGE_DIRS 변수를 사용하여 절대 경로 배열을 설정합니다.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## MAGE_DIRS 설정
 
-키가 각각 [\\Magento\\App\\Filesystem\\DirectoryList][directory-list]의 상수이고 값이 디렉터리의 절대 경로 또는 해당 URL 경로인 연관 배열을 지정합니다.
+키가 각각 [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php)의 상수이고 값이 디렉터리의 절대 경로 또는 해당 URL 경로인 연관 배열을 지정합니다.
 
 다음 방법 중 하나로 `MAGE_DIRS`을(를) 설정할 수 있습니다.
 
@@ -50,6 +50,3 @@ ht-degree: 0%
 
 앞의 예제에서는 `[cache]` 및 `[media]` 디렉터리의 경로를 각각 `/mnt/nfs/cache` 및 `/mnt/nfs/media`(으)로 설정합니다.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

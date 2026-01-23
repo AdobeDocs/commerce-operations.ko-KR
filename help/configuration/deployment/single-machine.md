@@ -3,7 +3,7 @@ title: 단일 컴퓨터 배포
 description: 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법에 대해 알아봅니다.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >[!WARNING]
 >
 >`git clone`을(를) 사용하여 Commerce을 설치한 경우에는 이 안내서가 적용되지 않습니다.
->기여 개발자는 [이 안내서][install]를 사용하여 Commerce 설치를 업데이트해야 합니다.
+>기여 개발자는 [이 안내서](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)를 사용하여 Commerce 설치를 업데이트해야 합니다.
 
 ## 배포 단계
 
@@ -91,6 +91,3 @@ ht-degree: 1%
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

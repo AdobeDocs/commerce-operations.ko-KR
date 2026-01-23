@@ -2,16 +2,16 @@
 title: 사용자 정의 cron 작업 및 cron 그룹 구성(튜토리얼)
 description: Adobe Commerce용 단계별 자습서를 사용하여 사용자 지정 cron 작업을 만드는 방법을 알아봅니다. 모듈 설정 및 cron 그룹 구성을 검색합니다.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # 사용자 정의 cron 작업 구성
 
-이 단계별 자습서에서는 샘플 모듈에서 사용자 지정 cron 작업 및 선택적으로 cron 그룹을 만드는 방법을 보여줍니다. 이미 있는 모듈을 사용하거나 [`magento2-samples` 저장소][samples]의 샘플 모듈을 사용할 수 있습니다.
+이 단계별 자습서에서는 샘플 모듈에서 사용자 지정 cron 작업 및 선택적으로 cron 그룹을 만드는 방법을 보여줍니다. 이미 있는 모듈을 사용하거나 [`magento2-samples` 저장소](https://github.com/magento/magento2-samples)의 샘플 모듈을 사용할 수 있습니다.
 
 cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `custom_cron` 테이블에 추가됩니다.
 
@@ -33,13 +33,13 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 1. [파일 시스템 소유자](../../installation/prerequisites/file-system/overview.md)(으)로 Commerce 서버에 로그인하거나 (으)로 전환합니다.
 1. Commerce 애플리케이션 루트에 없는 디렉토리(예: 홈 디렉토리)로 변경합니다.
-1. [`magento2-samples` 리포지토리][samples]을(를) 복제합니다.
+1. [`magento2-samples` 리포지토리](https://github.com/magento/magento2-samples)을(를) 복제합니다.
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   `Permission denied (publickey).` 오류로 인해 명령이 실패하면 [GitHub.com에 SSH 공개 키를 추가][git-ssh]해야 합니다.
+   `Permission denied (publickey).` 오류로 인해 명령이 실패하면 [GitHub.com에 SSH 공개 키를 추가](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)해야 합니다.
 
 1. 샘플 코드를 복사할 디렉토리를 만듭니다.
 
@@ -303,7 +303,3 @@ SQL 명령 및 시스템 로그에 항목이 없으면 `magento cron:run` 명령
 
    ![사용자 지정 크론 그룹](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

@@ -2,9 +2,9 @@
 title: 부트스트랩 매개 변수 값 설정
 description: Commerce 애플리케이션에 대한 부트스트랩 매개 변수를 설정하는 방법에 대해 알아봅니다.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-셸별 명령을 사용하여 변수를 설정합니다. 셸의 구문이 다르므로 [unix.stackexchange.com][unix-stackx]과(와) 같은 참조를 참조하십시오.
+셸별 명령을 사용하여 변수를 설정합니다. 셸의 구문이 다르므로 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables)과(와) 같은 참조를 참조하십시오.
 
 CentOS에 대한 Bash 셸 예:
 
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx 설정
 
-[GitHub]에서 _Nginx 샘플 구성_&#x200B;을 참조하세요.
+[GitHub](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16)에서 _Nginx 샘플 구성_&#x200B;을 참조하세요.
 
 ### Apache .htaccess 설정
 
@@ -92,7 +92,7 @@ Commerce 응용 프로그램의 시작 지점에 따라 다음 위치에서 `.ht
 
 Apache 웹 서버는 `mod_env` 지시문을 사용하여 응용 프로그램 모드 설정을 지원합니다.
 
-Apache `mod_env` 지시문이 [Apache 버전 2.2]과(와) [Apache 버전 2.4]에서 약간 다릅니다.
+Apache `mod_env` 지시문이 [Apache 버전 2.2](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv)과(와) [Apache 버전 2.4](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv)에서 약간 다릅니다.
 
 다음 절차는 Apache 가상 호스트에서 애플리케이션 모드를 설정하는 방법을 보여 줍니다. 이것이 `mod_env` 지시문을 사용하는 유일한 방법은 아닙니다. 자세한 내용은 Apache 설명서를 참조하십시오.
 
@@ -166,9 +166,3 @@ Apache `mod_env` 지시문이 [Apache 버전 2.2]과(와) [Apache 버전 2.4]에
    - 우분투: `service apache2 restart`
    - CentOS: `service httpd restart`
 
-<!-- link definitions -->
-
-[Apache 버전 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache 버전 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[Nginx 샘플 구성]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

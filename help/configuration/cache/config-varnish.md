@@ -3,16 +3,16 @@ title: 바니시 구성 및 사용
 description: Adobe Commerce에 대한 바니시 캐싱을 구성하고 사용하는 방법에 대해 알아봅니다. HTTP 가속, 파일 저장 및 성능 최적화 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # 바니시 구성
 
-[Varnish Cache]은(는) 오픈 소스 웹 응용 프로그램 가속기(_HTTP 가속기_ 또는 _HTTP 역방향 프록시 캐싱_)입니다. Vannish는 파일 또는 파일 조각을 메모리에 저장(또는 캐시)하여 향후 동등한 요청에 대한 응답 시간 및 네트워크 대역폭 사용을 줄일 수 있습니다. Apache 및 nginx와 같은 웹 서버와 달리 Varnish는 HTTP 프로토콜에서만 사용하도록 설계되었습니다.
+[Varnish Cache](https://varnish-cache.org)은(는) 오픈 소스 웹 응용 프로그램 가속기(_HTTP 가속기_ 또는 _HTTP 역방향 프록시 캐싱_)입니다. Vannish는 파일 또는 파일 조각을 메모리에 저장(또는 캐시)하여 향후 동등한 요청에 대한 응답 시간 및 네트워크 대역폭 사용을 줄일 수 있습니다. Apache 및 nginx와 같은 웹 서버와 달리 Varnish는 HTTP 프로토콜에서만 사용하도록 설계되었습니다.
 
 [시스템 요구 사항](../../installation/system-requirements.md)은(는) 지원되는 버전의 바니시를 나열합니다.
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Varnish에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [큰 바니시 그림]
-- [니스장 시작 옵션]
-- [바니시 및 웹 사이트 성능]
+- [큰 바니시 그림](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [니스장 시작 옵션](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [바니시 및 웹 사이트 성능](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## 바니시 토폴로지 다이어그램
 
@@ -61,7 +61,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 우리는 Varnish와 관련된 다음 문제를 알고 있습니다.
 
-- [바니시가 SSL을 지원하지 않습니다]
+- [바니시가 SSL을 지원하지 않습니다](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   또는 SSL 종료 또는 SSL 종료 프록시를 사용합니다.
 
@@ -92,7 +92,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 - Magento 2 GitHub 저장소의 [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
 - Commerce에서 제공된 Apache용 `.htaccess` 분산 구성 파일
-- `default.vcl`관리자[를 사용하여 생성된 Vannish에 대한 &#x200B;](../cache/configure-varnish-commerce.md) 구성
+- `default.vcl`관리자[를 사용하여 생성된 Vannish에 대한 ](../cache/configure-varnish-commerce.md) 구성
 
 >[!INFO]
 >
@@ -146,10 +146,3 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 서버에서 콘텐츠가 변경되면 클라이언트는 HTTP 200(OK) 상태 코드와 새 ETag와 함께 정적 에셋을 다운로드합니다.
 
-<!-- Link Definitions -->
-
-[큰 바니시 그림]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[바니시 캐시]: https://varnish-cache.org
-[니스 시작 옵션]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[니스 및 웹 사이트 성능]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[바니시가 SSL을 지원하지 않음]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html
