@@ -193,7 +193,7 @@ Stomp(ActiveMQ Artemis)의 경우:
 
 ## 디렉터리
 
-웹 서버가 `/pub`향상된 보안[을 위해 ](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
+웹 서버가 `/pub`향상된 보안[을 위해 &#x200B;](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
 
 ```conf
 'directories' => [

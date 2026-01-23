@@ -29,7 +29,7 @@ MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성�
 
 ## MAGE_PROFILER 설정
 
-`MAGE_PROFILER`부트스트랩 매개 변수의 값을 설정[하는 방법으로 ](../bootstrap/set-parameters.md)의 값을 설정할 수 있습니다.
+`MAGE_PROFILER`부트스트랩 매개 변수의 값을 설정[하는 방법으로 &#x200B;](../bootstrap/set-parameters.md)의 값을 설정할 수 있습니다.
 
 `MAGE_PROFILER`은(는) 다음 값을 지원합니다.
 
@@ -37,7 +37,7 @@ MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성�
 
   다음 값 중 하나를 사용하여 특정 프로파일러를 활성화할 수 있습니다.
 
-   - `csvfile`[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`을(를) 사용하는 ](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - `csvfile`[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`을(를) 사용하는 &#x200B;](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
    - `2`[`Magento\Framework\Profiler\Driver\Standard\Output\Html`을(를) 사용하는 빈 값을 포함한 다른 모든 값(](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php) 제외)
 
 - 종속성 그래프를 사용하려면 `2`을(를) 사용하십시오.

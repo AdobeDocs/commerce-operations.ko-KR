@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[을(를) 확장하기 전에 ](technical-specification.md)기술 사양[!DNL Data Migration Tool]을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
+>[을(를) 확장하기 전에 &#x200B;](technical-specification.md)기술 사양[!DNL Data Migration Tool]을 읽으십시오. 또한 마이그레이션 도구 사용에 대한 일반적인 정보는 [마이그레이션 안내서](../overview.md)를 검토하십시오.
 
 
 ## 사소한 데이터 형식 및 구조 변경

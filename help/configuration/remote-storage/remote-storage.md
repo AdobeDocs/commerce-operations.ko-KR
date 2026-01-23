@@ -38,7 +38,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 ## 원격 스토리지 옵션
 
-`remote-storage` CLI 명령[`setup`과(와) 함께 ](../../installation/tutorials/deployment.md) 옵션을 사용하여 원격 저장소를 구성할 수 있습니다. `remote-storage` 옵션은 다음 구문을 사용합니다.
+`remote-storage` CLI 명령[`setup`과(와) 함께 &#x200B;](../../installation/tutorials/deployment.md) 옵션을 사용하여 원격 저장소를 구성할 수 있습니다. `remote-storage` 옵션은 다음 구문을 사용합니다.
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"

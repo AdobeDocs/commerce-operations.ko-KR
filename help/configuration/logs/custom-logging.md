@@ -34,7 +34,7 @@ Adobe에서는 다음과 같은 이유로 중앙 집중식 애플리케이션 �
 
 ## 독백
 
-Commerce 2는 PSR-3 표준을 준수합니다. 기본적으로 Commerce에서는 [Monolog](https://github.com/Seldaek/monolog)을(를) 사용합니다. Commerce 응용 프로그램 `Psr\Log\LoggerInterface`[`di.xml`에서 ](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9)에 대한 기본 설정으로 구현된 Monolog입니다.
+Commerce 2는 PSR-3 표준을 준수합니다. 기본적으로 Commerce에서는 [Monolog](https://github.com/Seldaek/monolog)을(를) 사용합니다. Commerce 응용 프로그램 `Psr\Log\LoggerInterface`[`di.xml`에서 &#x200B;](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9)에 대한 기본 설정으로 구현된 Monolog입니다.
 
 Monolog는 고급 로깅 전략을 구축 할 수있는 광범위한 핸들러를 가진 인기있는 PHP 로깅 솔루션입니다. 다음은 Monolog의 작동 방식에 대한 요약입니다.
 
