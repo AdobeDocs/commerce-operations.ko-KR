@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-[모듈](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)에 대해 자세히 알아보세요.
+[모듈](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko)에 대해 자세히 알아보세요.
 
 ## 범위
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)에 대해 자세히 알아보세요.
+[Commerce 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko#scope-settings)에 대해 자세히 알아보세요.
 
 ## 시스템
 

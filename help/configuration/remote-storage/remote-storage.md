@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)를 참조하세요.
+>- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/magento-open-source/2-4-2)를 참조하세요.
 >
 >- 원격 스토리지 모듈에 클라우드 인프라의 Adobe Commerce에 대한 _제한_ 지원이 있습니다. Adobe에서 타사 스토리지 어댑터 서비스 문제를 완전히 해결할 수 없습니다. 클라우드 프로젝트용 원격 저장소를 구현하는 방법에 대한 지침은 [클라우드 인프라에서 Commerce용 원격 저장소 구성](cloud-support.md)을 참조하십시오.
 
@@ -91,5 +91,5 @@ Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce
 
 >[!INFO]
 >
->sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. _디렉터리에 있는 가져오기/내보내기 파일은_ not`var`합니다. [Commerce 2.4 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)에서 _예약된 가져오기/내보내기_&#x200B;를 참조하십시오.
+>sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. _디렉터리에 있는 가져오기/내보내기 파일은_ not`var`합니다. [Commerce 2.4 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ko)에서 _예약된 가져오기/내보내기_&#x200B;를 참조하십시오.
 
