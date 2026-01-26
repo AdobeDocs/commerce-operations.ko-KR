@@ -2,7 +2,7 @@
 title: AWS ElastiCache를 사용하여 Redis 구성
 description: EC2에서 호스팅되는 Commerce 인스턴스의 경우 로컬 Redis 인스턴스 대신 AWS ElastiCache를 사용하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 유효성 검사 기술을 살펴봅니다.
 feature: Configuration, Cache
-source-git-commit: 908796587e78b80d699354c0506ca948d0f37518
+source-git-commit: b66479ee1350d92c1d59212283222e5068c263a6
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Commerce 2.4.3부터 Amazon EC2에서 호스팅되는 인스턴스는 로컬 Red
 
 ## 사전 요구 사항
 
-- **Redis OSS 서버리스 캐시 만들기**—AWS 관리 콘솔에서 EC2 인스턴스의 동일한 지역 및 VPC에 Redis 캐시를 만듭니다. 지침은 [AWS Elasticache 설명서]&#x200B;(https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html)를 참조하십시오.
+- **Redis OSS 서버리스 캐시 만들기**—AWS 관리 콘솔에서 EC2 인스턴스의 동일한 지역 및 VPC에 Redis 캐시를 만듭니다. 지침은 [AWS Elasticache 설명서](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html)를 참조하십시오.
 
 - **EC2 Commerce 인스턴스에 대한 연결 확인**
 
