@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
+source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '30379'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.76 {#v1-1-76}
+
+* **ACSD-67091**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 데이터 볼륨을 기반으로 두 가지 삭제 전략을 구현하여 카탈로그 규칙 제품 인덱스를 정리하도록 최대 쓰기 집합 크기 오류를 수정합니다.
+* **ACSD-67370**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - PDP/PLP의 번들 제품 및 다중 통화 매장의 장바구니 페이지에 잘못된 가격이 표시된 여러 문제를 수정합니다.
+* **ACSD-68410**(Adobe Commerce의 경우 B2B >=1.3.3 &lt;1.5.3) - 협상 가능 견적을 주문하면 추가 장바구니 라인이 견적에 잘못 추가되거나 병합되는 문제가 해결되었습니다. 이제 협상 가능한 견적 체크아웃의 마지막 단계를 마친 후 제품이 장바구니에 올바르게 추가됩니다.
+* **ACSD-69086**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 크론 작업이 변경 로그 테이블을 지우지 못해 대량의 데이터를 처리할 때 Galera 클러스터 충돌이 발생하는 문제를 수정합니다.
+* **ACSD-69115**(Adobe Commerce >=2.4.4 &lt;2.4.9) - 기본이 아닌 웹 사이트에 할당된 고객의 장바구니를 관리할 때 관리 사용자에게 장바구니 오류가 표시되지 않는 문제를 해결했습니다.
+* **ACSD-69129**(Adobe Commerce 및 Magento Open Source의 경우) >=2.4.5 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - REST API를 통해 보조 웹 사이트에 대한 계층 가격을 업데이트하려고 할 때 기본 기본 웹 사이트를 삭제하고 보조 웹 사이트를 기본값으로 사용하는 오류가 발생하는 문제를 해결했습니다.
+* **ACSD-69203**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 범주 조건에 여러 범주가 나열되었을 때 제품 목록 위젯에서 잘못된 결과를 반환하는 문제를 해결했습니다.
+* **ACSD-69261**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 부분 송장 및 남은 수량 취소 시나리오에서 `times_used` 특성을 잘못 처리하여 고객당 단일 사용으로 구성된 장바구니 가격 규칙 쿠폰이 여러 번 재사용되는 문제를 해결했습니다.
+* **ACSD-69308**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - `special_price`이(가) 웹 사이트 수준에서만(&quot;모든 스토어 보기&quot;가 아님) 설정된 경우 카탈로그 가격 규칙이 적용되지 않는 문제를 해결했습니다. 수정 후에는 먼저 웹 사이트의 기본 스토어를 확인하여 카탈로그 가격 규칙이 올바르게 적용됩니다.
+* **ACSD-69319**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - 하위 제품에 사용자 지정 소스에 재고가 있을 때 번들 가격이 제대로 색인화되지 않은 문제를 해결했습니다.
+* **ACSD-69325**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - SKU 사례를 수정하여 제품이 상점 앞에 품절 상태로 표시되는 문제를 해결했습니다.
+* **ACSD-69331**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.9) - 미디어 갤러리의 콘텐츠 작성자가 `create_folder` 권한만으로 폴더를 만들 수 없는 문제를 해결했습니다. 수정 후에는 예상대로 폴더를 만들 수 있습니다.
+* **ACSD-69333**(Adobe Commerce >=2.4.7 &lt;2.4.9) - 활성 예약된 업데이트가 있는 제품에 대해 SKU 변경이 허용된 문제를 수정합니다. 수정 후 활성 업데이트 중에는 SKU 변경이 금지됩니다. 명확한 오류로 저장이 실패하고 관리 SKU 필드가 비활성화됩니다. 이렇게 하면 스테이징 롤백 중에 SKU 변경으로 인해 MSI 인벤토리 불일치가 발생하지 않습니다.
+* **ACSD-69541**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 관리자의 제품 수량을 장바구니에 이미 있는 수량보다 작게 줄이면 GraphQL을 통해 해당 장바구니의 제품 수량을 편집할 수 없는 문제가 해결되었습니다.
+* 업데이트된 버전: **ACSD-46541**, **ACSD-53750**, **ACSD-66404**
+* 대체된 패치: **ACSD-66404**, **ACSD-68499**
 
 ## v1.1.75 {#v1-1-75}
 
