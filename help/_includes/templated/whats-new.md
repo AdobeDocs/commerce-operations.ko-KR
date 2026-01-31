@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615에 대한 QPT 1.1.75 수정 사항에 대한 자세한 설명 추가: 처리된 조합에 주문 ID가 누락된 경우 재고 예약 보상 CLI에서 예외를 표시합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615에 대한 QPT 1.1.75 수정 사항에 대한 자세한 설명 추가: 처리된 조합에 주문 ID가 누락된 경우 재고 예약 보상 CLI에서 예외를 표시합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
