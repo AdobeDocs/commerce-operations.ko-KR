@@ -1,5 +1,5 @@
 ---
-source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
+source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -24,9 +24,7 @@ Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 
 
 전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento setup:upgrade`, `bin/magento s:up`을(를) 사용하여 `bin/magento s:upg`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
 
-이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 다음을 열어야 합니다
-관련 [codebase](https://github.com/magento) 저장소의 해당 명령에 대한 가져오기 요청입니다. 다음을 참조하십시오
-[코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
+이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 관련 [codebase](https://github.com/magento) 리포지토리에서 해당 명령에 대한 가져오기 요청을 열어야 합니다. 자세한 내용은 [코드 기여](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)를 참조하십시오.
 
 ### 글로벌 옵션
 
