@@ -2,9 +2,9 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
 활성 베타 프로그램 목록은 다음 섹션을 참조하십시오.
 
+### App Builder용 데이터베이스 저장소(공용 Beta)
+
+[App Builder용 데이터베이스 저장소](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database)는 Adobe Developer App Builder에 내장된 새로운 관리되는 문서 스타일의 데이터 저장소로서, Commerce 앱에 구조화된 JSON 데이터에 대한 영구적인 쿼리 가능한 저장소를 제공합니다. App Builder 라이선스가 있는 모든 고객은 이 기능을 프로비저닝할 수 있습니다.
+
 ### 시맨틱 검색: 보다 스마트하고 상황에 맞는 쇼핑 경험(비공개 베타)
 
 의미 체계 검색은 정확한 단어뿐만 아니라 구매자의 쿼리 뒤에 있는 *의미*&#x200B;을 이해하는 전자 상거래 검색 기술입니다. 쿼리에 익숙하지 않거나 철자가 틀린 용어가 포함되어 있을 때 종종 실패하는 기존의 키워드 기반 검색과 달리, 이 AI 기반의 접근 방식은 자연어 처리(NLP)와 컨텍스트를 사용하여 의도를 해석하여 보다 관련성 있는 결과를 전달합니다.
@@ -43,9 +47,9 @@ Beta 프로그램에 대한 초대를 요청하려면 [commerce-storefront-servi
 
 ### Cloud Automation 패치 서비스(Private Beta)
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)는 [Cloud Infrastructure의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview) 환경에 격리된 보안 패치를 적용하는 프로세스를 자동화합니다.
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)는 [Cloud Infrastructure의 Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) 환경에 격리된 보안 패치를 적용하는 프로세스를 자동화합니다.
 
-2025년 10월에 Cloud Automation 패치 서비스의 베타 릴리스가 [사이트 전체 분석 도구 대시보드](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)에 추가됩니다. 이 서비스는 다음과 같은 작업을 포함하는 간소화된 패치 작업 과정을 통해 Commerce 프로젝트 관리자를 지원합니다.
+2025년 10월에 Cloud Automation 패치 서비스의 베타 릴리스가 [사이트 전체 분석 도구 대시보드](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)에 추가됩니다. 이 서비스는 다음과 같은 작업을 포함하는 간소화된 패치 작업 과정을 통해 Commerce 프로젝트 관리자를 지원합니다.
 
 - 자동 패치 설치
 - 롤백 복구
@@ -60,7 +64,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 
 >[!NOTE]
 >
->Cloud Automation Patching Service는 격리된 보안 패치를 자동으로 적용하므로 이를 사용하려면 [기여자 또는 프로젝트 관리자 역할](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/user-access)이 있어야 합니다.
+>Cloud Automation Patching Service는 격리된 보안 패치를 자동으로 적용하므로 이를 사용하려면 [기여자 또는 프로젝트 관리자 역할](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)이 있어야 합니다.
 
 이 Beta에 참여하려면 [Cloud Automation 패치 서비스 - Beta 등록 양식](https://forms.office.com/r/3Wfxj5nPdB)을 완료하고 제출하십시오.
 
@@ -84,7 +88,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 - GraphQL 개선 사항
 - 일반 품질 버그 수정
 - 커뮤니티 기여
-- [Adobe Commerce 서비스](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
+- [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
 
 #### 명명 규칙 및 일정
 
