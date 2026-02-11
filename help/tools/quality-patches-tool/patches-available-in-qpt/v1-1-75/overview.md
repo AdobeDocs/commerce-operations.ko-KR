@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: d952deb1c82ce0d99c3e13909cfc18b7a48034c3
+source-git-commit: 588320e7221f492cd8c3f50e4175eadf4d1b7cfe
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.75에는 다음 패치가 포함됩니다.
 1. **ACSD-68451**: 회사 관리자가 한 웹 사이트에 로그인하고 다른 웹 사이트에 관련 없는 회사를 만들지만 관련 없는 회사에 잘못 연결된 여러 웹 사이트에 대한 문제를 해결했습니다.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** 단추가 구성 가능한 제품을 만드는 동안 제한된 관리자에게 표시됩니다.
 1. **ACSD-68517**: 카탈로그 및 카탈로그 검색 페이지에서 양식 다시 제출 오류를 수정했습니다.
-1. **ACSD-68573**: 범주 권한이 고객 위시리스트 항목에 제대로 적용되지 않는 문제를 해결했습니다. 수정 후에는 위시리스트 항목이 웹과 GraphQL 모두에서 올바르게 표시되고 페이지가 지정됩니다.
+1. **ACSD-68573**: 범주 권한이 고객 위시리스트 항목에 적용되지 않아 웹 상점 앞 및 [!DNL GraphQL]에서 잘못된 표시 및 페이지 매김이 발생했습니다.
 1. **ACSD-68615**: 처리된 조합에 주문 ID가 누락된 경우 인벤토리 예약 보상 CLI에서 예외를 표시하는 문제를 해결했습니다.
 1. **ACSD-68793**: 공유 카탈로그에 할당할 때 유효한 제품이 잘못 거부되는 문제를 해결했습니다.
 1. **ACSD-68925**: 이제 GraphQL 요청에 대한 응답이 HTTP 사양을 통해 GraphQL과 정렬되는 문제를 해결했습니다. 요청을 구문 분석할 수 없거나, 권한이 없거나, 요청을 구문 분석할 때 일반적인 문제가 발생하면 4XX 응답 코드가 반환됩니다.
