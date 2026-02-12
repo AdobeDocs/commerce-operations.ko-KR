@@ -5,7 +5,7 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: 9acccaadf718775430e858da3390e666633ecbd7
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.65에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.65에는 다음 패치가 포함됩니다.
+
 1. **ACP2E-3753**: 다중 스토어 설정에서 스토어 특정 테마 템플릿을 사용하지 않는 스톡 경고 전자 메일입니다.
 1. **ACSD-64118**: 동일한 제품에 대한 동시 제품 저장 요청으로 인해 데이터 불일치 및 중복 항목이 발생합니다.
 1. **ACSD-64813**: REST API를 통해 B2B 공유 카탈로그에서 범주 할당을 취소하는 작업이 느립니다.
