@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 588320e7221f492cd8c3f50e4175eadf4d1b7cfe
+source-git-commit: 6c107bbdddd733d4d2f8f5b710fceac664ad608f
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ QPT v1.1.75에는 다음 패치가 포함됩니다.
 1. **ACSD-68289**: 단일 필드에서 조건을 충족하도록 요구하지 않고, 검색 가능한 모든 필드에서 최소 일치 조건이 전체적으로 충족되는 경우 전체 텍스트 검색에서 일치하는 제품을 반환하는 문제를 해결했습니다.
 1. **ACSD-68359**: 장바구니에 많은 제품이 있을 때 **[!UICONTROL Pick in Store]**&#x200B;을(를) 사용하여 체크아웃하는 동안 저장소 선택이 더 이상 긴 URL로 인해 실패하지 않는 문제를 해결했습니다. 이전에는 이것이 스토어 판매 중에 과도하게 긴 URL로 인해 발생한 414 오류를 트리거했습니다.
 1. **ACSD-68451**: 회사 관리자가 한 웹 사이트에 로그인하고 다른 웹 사이트에 관련 없는 회사를 만들지만 관련 없는 회사에 잘못 연결된 여러 웹 사이트에 대한 문제를 해결했습니다.
+1. **ACSD-68517**: **[!UICONTROL Catalog]** 및 **[!UICONTROL Catalog Search]** 페이지에서 양식 다시 제출 오류를 수정합니다.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** 단추가 구성 가능한 제품을 만드는 동안 제한된 관리자에게 표시됩니다.
-1. **ACSD-68517**: 카탈로그 및 카탈로그 검색 페이지에서 양식 다시 제출 오류를 수정했습니다.
 1. **ACSD-68573**: 범주 권한이 고객 위시리스트 항목에 적용되지 않아 웹 상점 앞 및 [!DNL GraphQL]에서 잘못된 표시 및 페이지 매김이 발생했습니다.
 1. **ACSD-68615**: 처리된 조합에 주문 ID가 누락된 경우 인벤토리 예약 보상 CLI에서 예외를 표시하는 문제를 해결했습니다.
 1. **ACSD-68793**: 공유 카탈로그에 할당할 때 유효한 제품이 잘못 거부되는 문제를 해결했습니다.
