@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517에 대한 QPT 1.1.75 수정 사항에 대한 자세한 설명을 추가했습니다. 카탈로그 및 카탈로그 검색 페이지에서 양식 다시 제출 오류를 수정했습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517에 대한 QPT 1.1.75 수정 사항에 대한 자세한 설명을 추가했습니다. 카탈로그 및 카탈로그 검색 페이지에서 양식 다시 제출 오류를 수정했습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -53,7 +53,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">개요: QPT(품질 패치 도구) v1.1.76</a>이(가) 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">개요: QPT(품질 패치 도구) v1.1.76</a>이(가) 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt

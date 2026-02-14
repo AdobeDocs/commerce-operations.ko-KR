@@ -43,7 +43,7 @@ Adobe Commerce 패치 릴리스는 다음 지침에 따라 릴리스됩니다.
 
 Adobe은 다음 채널을 통해 고객에게 새 패치 릴리스에 대해 알립니다.
 
-- [Adobe 보안 게시판 및 권고 조치](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Adobe 보안 게시판 및 권고 조치](https://helpx.adobe.com/kr/security/security-bulletin.html#magento)
 - 이메일
 - 제품 내 경고
 
