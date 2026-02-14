@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
+source-git-commit: 151dc8bbf046b1c269c34dcfc66718136b4b8b02
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: '30792'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,29 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.77 {#v1-1-77}
+
+* **ACSD-63687**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - Redis 캐시를 정리할 수 없으므로 잘못된 가격이 표시되는 문제를 해결했습니다.
+* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
+* **ACSD-68537**(Adobe Commerce >=2.4.8 &lt;2.4.9) - 고객 세그먼트 수가 증가함에 따라 체크아웃 성능이 저하되는 문제를 해결했습니다.
+* **ACSD-68664**(Adobe Commerce >=2.4.6 &lt;2.4.9) - 사용자 지정 도메인으로 스토어에 대한 콘텐츠를 미리 볼 때 예약된 업데이트 미리 보기가 중단되는 문제를 해결했습니다.
+* **ACSD-68759**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9) - 아랍어 로케일을 사용할 때 고객 계정을 만들지 못하고 DOB(생일) 속성이 상점 앞에 표시되도록 설정된 문제가 해결되었습니다.
+* **ACSD-68892**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - 캐시 가능한 페이지가 Fastly 캐시에서 제대로 저장되지 않거나 제공되지 않아 캐싱 동작이 일관되지 않고 성능이 저하되는 문제를 해결합니다.
+* **ACSD-69016**(Adobe Commerce >=2.4.7 &lt;2.4.9) - 다른 시간대에 만든 웹 사이트에 대해 특별 가격이 적용되지 않을 때 문제를 수정합니다.
+* **ACSD-69020**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 구성 가능한 제품이 하위 제품 중 하나라도 필터링 조건을 충족하면 PageBuilder 제품 캐러셀 목록에 자동으로 포함되는 문제를 해결합니다.
+* **ACSD-69237**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - sales_*_async_insert cron 작업을 통해 처리 및 삽입할 수 있는 항목 수가 실행당 100개로 제한되는 문제를 해결했습니다.
+* **ACSD-69311**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 주문 보기 페이지에서 이전 대변 메모가 생성된 경우 송장에서 부분 환불을 만들 때 대변 메모에서 잘못된 세금 계산과 관련된 문제를 수정합니다.
+* **ACSD-69351**(Adobe Commerce >=2.4.4 &lt;2.4.9) - 기프트 카드 잔액과 만료 날짜가 할당된 웹 사이트 범위에 따라 표시되지 않는 문제를 해결했습니다.
+* **ACSD-69494**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - &quot;is_online&quot; 매개 변수를 사용한 환불 요청이 올바르게 처리되지 않는 비동기 환불 작업 문제를 해결합니다.
+* 업데이트된 버전: **ACSD-67250**
+* 대체된 패치: **ACSD-62629**, **ACSD-66157**
+* 사용되지 않는 패치: **ACSD-66157**
 
 ## v1.1.76 {#v1-1-76}
 
