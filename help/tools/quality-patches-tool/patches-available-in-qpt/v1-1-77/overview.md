@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4ee77d46bb32afcfd7fd12cfbc4a5111c247bed4
+source-git-commit: ba9d41179fe253634b9de3e3711c19b6fe797a69
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.77에는 다음 패치가 포함됩니다.
 
 1. **ACSD-63687**: [!DNL Redis] 캐시 정리 문제로 인해 잘못된 가격이 표시됩니다.
-1. **ACSD-68341**: PDP 로드 시 여러 `X‑Magento‑Vary` 쿠키 업데이트가 발생합니다.
+1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)**: PDP 로드 시 여러 `X‑Magento‑Vary` 쿠키 업데이트가 발생합니다.
 1. **ACSD-68537**: 많은 고객 세그먼트에서 체크아웃 성능이 저하됩니다.
 1. **ACSD-68664**: 사용자 지정 저장소 도메인에서 예약된 업데이트 미리 보기에 오류가 있습니다.
 1. **ACSD-68759**: 생년월일이 표시되는 경우 아랍어 로케일로 고객 계정 만들기 오류가 발생합니다.
