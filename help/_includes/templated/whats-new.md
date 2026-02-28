@@ -31,7 +31,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494: is_online을 사용한 비동기 환불 요청이 온라인 환불을 트리거하지 않음</a>에 대한 QPT 1.1.77 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494: is_online을 사용한 비동기 환불 요청이 온라인 환불을 트리거하지 않음</a>에 대한 QPT 1.1.77 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -39,7 +39,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29a5f90122336bde78ed00e778b43b7c56549eef">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537에 대한 QPT 1.1.77 수정 사항에 대한 자세한 설명을 추가했습니다. 많은 고객 세그먼트로 체크아웃 성능이 저하됩니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537에 대한 QPT 1.1.77 수정 사항에 대한 자세한 설명을 추가했습니다. 많은 고객 세그먼트로 체크아웃 성능이 저하됩니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
