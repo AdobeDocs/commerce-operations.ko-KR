@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 65e615d2f679e88d51093a8ea28007dfe418d385
+source-git-commit: 3196580876eaa90e79d98f0cd14cbccc841d0524
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -21,7 +21,7 @@ QPT v1.1.76에는 다음 패치가 포함됩니다.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: 협상 가능 견적을 주문하면 추가 장바구니 라인이 견적에 잘못 추가되거나 병합되는 문제가 해결되었습니다. 이제 협상 가능한 견적 체크아웃의 마지막 단계를 마친 후 제품이 장바구니에 올바르게 추가됩니다.
 1. **ACSD-69086**: 크론 작업에서 변경 로그 테이블을 지우지 못해 많은 양의 데이터를 처리할 때 [!DNL Galera Cluster]개의 충돌이 발생하는 문제를 해결했습니다.
 1. **ACSD-69115**: 기본이 아닌 웹 사이트에 할당된 고객의 장바구니를 관리할 때 관리 사용자에게 장바구니 오류가 표시되지 않는 문제를 해결했습니다.
-1. **ACSD-69129**: [!DNL REST] API를 통해 보조 웹 사이트의 계층 가격을 업데이트하려고 할 때 기본 기본 웹 사이트를 삭제하고 보조 웹 사이트를 기본값으로 사용하면 오류가 발생하는 문제를 해결했습니다.
+1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: [!DNL REST] API를 통해 보조 웹 사이트의 계층 가격을 업데이트하려고 할 때 기본 기본 웹 사이트를 삭제하고 보조 웹 사이트를 기본값으로 사용하면 오류가 발생하는 문제를 해결했습니다.
 1. **ACSD-69203**: 범주 조건에 여러 범주가 나열되어 있을 때 **[!UICONTROL Products List]** 위젯에서 잘못된 결과를 반환하는 문제를 해결했습니다.
 1. **ACSD-69261**: 부분 송장 및 남은 수량 취소 시나리오에서 `times_used` 특성의 잘못된 처리로 인해 고객당 한 번 사용하도록 구성된 장바구니 가격 규칙 쿠폰이 여러 번 재사용되는 문제를 해결했습니다.
 1. **ACSD-69308**: `special_price`이(가) 웹 사이트 수준(**[!UICONTROL All Store Views]**&#x200B;이 아님)에서만 설정되었을 때 카탈로그 가격 규칙이 적용되지 않는 문제를 해결했습니다. 수정 후에는 먼저 웹 사이트의 기본 스토어를 확인하여 카탈로그 가격 규칙이 올바르게 적용됩니다.
