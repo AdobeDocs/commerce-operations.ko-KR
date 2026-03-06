@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3196580876eaa90e79d98f0cd14cbccc841d0524
+source-git-commit: 59ae7d5e05395f123ad139bea4e022b26d310f1f
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.76에는 다음 패치가 포함됩니다.
 1. **ACSD-69261**: 부분 송장 및 남은 수량 취소 시나리오에서 `times_used` 특성의 잘못된 처리로 인해 고객당 한 번 사용하도록 구성된 장바구니 가격 규칙 쿠폰이 여러 번 재사용되는 문제를 해결했습니다.
 1. **ACSD-69308**: `special_price`이(가) 웹 사이트 수준(**[!UICONTROL All Store Views]**&#x200B;이 아님)에서만 설정되었을 때 카탈로그 가격 규칙이 적용되지 않는 문제를 해결했습니다. 수정 후에는 먼저 웹 사이트의 기본 스토어를 확인하여 카탈로그 가격 규칙이 올바르게 적용됩니다.
 1. **ACSD-69319**: 하위 제품에 사용자 지정 원본의 재고가 있을 때 번들 가격이 제대로 색인화되지 않은 문제를 해결했습니다.
-1. **ACSD-69325**: SKU 사례를 수정하여 제품이 상점 앞에 품절 상태로 표시되는 문제를 해결했습니다.
+1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**: SKU 사례를 수정하여 제품이 상점 앞에 품절 상태로 표시되는 문제를 해결했습니다.
 1. **ACSD-69331**: 미디어 갤러리의 콘텐츠 작성자가 `create_folder` 권한만 있는 폴더를 만들 수 없는 문제를 해결했습니다. 수정 후에는 예상대로 폴더를 만들 수 있습니다.
 1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: 활성 예약 업데이트가 있는 제품에 대해 SKU 변경이 허용되는 문제를 해결했습니다. 수정 후 활성 업데이트 중에는 SKU 변경이 금지됩니다. 명확한 오류로 저장이 실패하고 관리 SKU 필드가 비활성화됩니다. 이렇게 하면 스테이징 롤백 중에 SKU 변경으로 인해 MSI 인벤토리 불일치가 발생하지 않습니다.
 1. **ACSD-69541**: 관리자의 제품 수량을 장바구니에 이미 있는 수량보다 작게 줄이면 GraphQL을 통해 해당 장바구니의 제품 수량을 편집할 수 없는 문제가 해결되었습니다.
