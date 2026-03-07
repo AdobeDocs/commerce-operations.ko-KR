@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. <code class="language-plaintext highlighter-rouge">special_price</code>이(가) 웹 사이트 수준에서만 설정되었을 때("모든 스토어 보기"가 아님) 카탈로그 가격 규칙이 적용되지 않았습니다. 수정 후에는 먼저 </a> 웹 사이트의 기본 스토어를 확인하여 카탈로그 가격 규칙이 올바르게 적용됩니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. <code class="language-plaintext highlighter-rouge">special_price</code>이(가) 웹 사이트 수준에서만 설정되었을 때("모든 스토어 보기"가 아님) 카탈로그 가격 규칙이 적용되지 않았습니다. 수정 후에는 먼저 </a> 웹 사이트의 기본 스토어를 확인하여 카탈로그 가격 규칙이 올바르게 적용됩니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. 관리자의 제품 수량을 장바구니에 이미 있는 수량보다 작게 줄이면 GraphQL을 통해 해당 장바구니의 제품 수량을 편집할 수 없습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. 관리자의 제품 수량을 장바구니에 이미 있는 수량보다 작게 줄이면 GraphQL을 통해 해당 장바구니의 제품 수량을 편집할 수 없습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -39,7 +39,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020에 대한 QPT 1.1.77 수정 사항에 대한 자세한 설명을 추가했습니다. 하위 제품이 필터와 일치하면</a> 구성 가능한 제품이 페이지 빌더 회전 메뉴에 나타납니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020에 대한 QPT 1.1.77 수정 사항에 대한 자세한 설명을 추가했습니다. 하위 제품이 필터와 일치하면</a> 구성 가능한 제품이 페이지 빌더 회전 메뉴에 나타납니다.</p>
 </td>
       <td>
         새 주제, qpt
