@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
+source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ QPT v1.1.76에는 다음 패치가 포함됩니다.
 1. **ACSD-69115**: 기본이 아닌 웹 사이트에 할당된 고객의 장바구니를 관리할 때 관리 사용자에게 장바구니 오류가 표시되지 않는 문제를 해결했습니다.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: [!DNL REST] API를 통해 보조 웹 사이트의 계층 가격을 업데이트하려고 할 때 기본 기본 웹 사이트를 삭제하고 보조 웹 사이트를 기본값으로 사용하면 오류가 발생하는 문제를 해결했습니다.
 1. **ACSD-69203**: 범주 조건에 여러 범주가 나열되어 있을 때 **[!UICONTROL Products List]** 위젯에서 잘못된 결과를 반환하는 문제를 해결했습니다.
+1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: 부분 송장 및 남은 수량 취소 시나리오에서 `times_used` 특성의 잘못된 처리로 인해 고객당 한 번 사용하도록 구성된 장바구니 가격 규칙 쿠폰이 여러 번 재사용되는 문제를 해결했습니다.
+1. **ACSD-69308**: `special_price`이(가) 웹 사이트 수준(**[!UICONTROL All Store Views]**&#x200B;이 아님)에서만 설정되었을 때 카탈로그 가격 규칙이 적용되지 않는 문제를 해결했습니다. 수정 후에는 먼저 웹 사이트의 기본 스토어를 확인하여 카탈로그 가격 규칙이 올바르게 적용됩니다.
 1. **ACSD-69261**: 부분 송장 및 남은 수량 취소 시나리오에서 `times_used` 특성의 잘못된 처리로 인해 고객당 한 번 사용하도록 구성된 장바구니 가격 규칙 쿠폰이 여러 번 재사용되는 문제를 해결했습니다.
 1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**: `special_price`이(가) 웹 사이트 수준(**[!UICONTROL All Store Views]**&#x200B;이 아님)에서만 설정되었을 때 카탈로그 가격 규칙이 적용되지 않는 문제를 해결했습니다.
 1. **ACSD-69319**: 하위 제품에 사용자 지정 원본의 재고가 있을 때 번들 가격이 제대로 색인화되지 않은 문제를 해결했습니다.
