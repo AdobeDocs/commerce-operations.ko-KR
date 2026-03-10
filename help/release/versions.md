@@ -23,8 +23,8 @@ Adobe은 버전 2.4.4 및 2.4.5에서 Adobe Commerce 고객을 위해 추가 비
 >[!NOTE]
 >
 >- Adobe은 각 릴리스에 사용할 수 있는 최신 보안 패치로 Adobe Commerce을 설치하거나 업그레이드할 것을 권장합니다.
->- 다른 보안 업데이트는 [Magento/Adobe Commerce에 대한 보안 업데이트](https://helpx.adobe.com/security/products/magento.html)를 참조하십시오.
->- 가격은 [Adobe Commerce 가격](https://business.adobe.com/products/magento/pricing.html)을 참조하세요.
+>- 다른 보안 업데이트는 [Magento/Adobe Commerce에 대한 보안 업데이트](https://helpx.adobe.com/kr/security/products/magento.html)를 참조하십시오.
+>- 가격은 [Adobe Commerce 가격](https://business.adobe.com/kr/products/magento/pricing.html)을 참조하세요.
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
