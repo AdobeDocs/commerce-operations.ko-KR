@@ -3,7 +3,7 @@ title: bin/magento(Adobe Commerce 온-프레미스 2.4.9-베타1)
 description: Adobe Commerce bin/magento 명령줄 도구에 사용 가능한 모든 명령, 인수 및 옵션에 대해 알아봅니다.
 mini-toc-levels: 1
 recommendations: noDisplay, noCatalog
-source-git-commit: a1a8e9192dbdccbc758be972612f8a8828202299
+source-git-commit: d2475c7be287844dc2703cbb347bd347582ff377
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -19,4 +19,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/reference/cli/commerce-on-premises-beta.md}}
 
-<!-- Last updated from includes: 2026-02-05 18:09:05 -->
+<!-- Last updated from includes: 2026-03-09 15:45:46 -->
