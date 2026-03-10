@@ -1,7 +1,7 @@
 ---
-source-git-commit: 56974b4ada65c21ce1303e4b93bd8acb9fe41b28
+source-git-commit: 65a9bd667d434f1deae69798696f66998e6024a0
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,6 @@ _ACP2E-4358 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 지속적인 보안 검토 프로세스의 일환으로 향후 호환성을 보장하고 강력한 보안 표준을 유지하기 위해 JWT 프레임워크의 최신 주요 릴리스를 평가했습니다. 이 릴리스에는 기존 기능에 영향을 주지 않습니다.
 
 _AC-13209 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/2bac8114) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/09b36ebb) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/33b81f28)_
-
-#### [파트2] - 사용 가능한 최신 버전으로 모든 js 라이브러리 및 npm 종속성 업데이트
-
-composer 버전 지원은 composer 버전 2.2.x에만 해당됩니다. 이제 지원도 2.4.x 버전으로 확장되었습니다.
-
-_AC-13792 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### PHP 기본 함수로 carlos-mg89/oauth 바꾸기
 
