@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
+source-git-commit: f56050886f28692286c42102222dfb580e52aef1
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -16,8 +16,8 @@ ht-degree: 0%
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.76에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.76에는 다음 패치가 포함됩니다.
+1. **[ACSD-67370](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)**: PDP/PLP의 번들 제품 및 다중 통화 매장의 장바구니 페이지에 잘못된 가격이 표시된 여러 문제를 수정합니다.
 1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: 데이터 볼륨을 기반으로 두 가지 삭제 전략을 구현하여 카탈로그 규칙 제품 인덱스를 정리할 수 있도록 최대 쓰기 집합 크기 오류를 수정합니다.
-1. **ACSD-67370**: PDP/PLP의 번들 제품 및 다중 통화 매장의 장바구니 페이지에 잘못된 가격이 표시된 여러 문제를 수정합니다.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: 협상 가능 견적을 주문하면 추가 장바구니 라인이 견적에 잘못 추가되거나 병합되는 문제가 해결되었습니다. 이제 협상 가능한 견적 체크아웃의 마지막 단계를 마친 후 제품이 장바구니에 올바르게 추가됩니다.
 1. **ACSD-69086**: 크론 작업에서 변경 로그 테이블을 지우지 못해 많은 양의 데이터를 처리할 때 [!DNL Galera Cluster]개의 충돌이 발생하는 문제를 해결했습니다.
 1. **ACSD-69115**: 기본이 아닌 웹 사이트에 할당된 고객의 장바구니를 관리할 때 관리 사용자에게 장바구니 오류가 표시되지 않는 문제를 해결했습니다.

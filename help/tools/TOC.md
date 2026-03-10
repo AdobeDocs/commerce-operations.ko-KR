@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
+source-git-commit: 1a3b311c807730372a46083bea725d3a8ada0a4c
 workflow-type: tm+mt
-source-wordcount: '9354'
+source-wordcount: '9389'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Adobe Commerce에 대한 관리 경고: CPU 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 품질 패치 도구 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+   - [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [사용](quality-patches-tool/usage.md)
    - [릴리스 정보](quality-patches-tool/release-notes.md)
    - 품질 패치 도구에서 사용할 수 있는 패치 {#patches-available-in-qpt}
@@ -602,7 +602,7 @@ ht-degree: 0%
       - v1.1.48 {#v1-1-48}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.48](quality-patches-tool/patches-available-in-qpt/v1-1-48/overview.md)
          - [ACSD-57315: 가져오기 단추를 클릭할 때마다  [!DNL PayPal Payflow Pro] 에 새 트랜잭션이 만들어집니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
-         - [[!DNL ACSD-56635: 계정 공유를 Global] (으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
+         - [ACSD-56635: 계정 공유를  [!DNL Global](으)로 설정하면 가져온 고객이 중복됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          - [ACSD-57337: 액세스 제한이 있는 관리 사용자가 회사를 볼 수 있음](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          - [ACSD-57394:  [!DNL GraphQL]의 여러 정렬 필드를 기준으로 한 제품 정렬이 잘못되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          - [ACSD-56546: 구성 및 번들 제품이 상점 앞에 품절로 표시됨](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
@@ -895,8 +895,8 @@ ht-degree: 0%
          - [ACSD-67603: 이미지 포함이 활성화된 제품에 대해 사이트 맵 생성 시간이 깁니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093: 날짜 범위 필터를 사용하여 GraphQL을 통해 주문을 검색하면 잘못된 결과가 반환됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652: 하위 및 상위 제품이 재고에 있는 GraphQL 호출에서 품절로 반환된 번들 제품 상태](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624:  [!DNL Page Builder]의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-         - [ACSD-67904: 구/군/시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()가 포함된 경우 주문을 넣을 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+         - [ACSD-60624:  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다.
+         - [ACSD-67904: 구/군/시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)가 포함된 경우 주문을 넣을 수 없습니다.
          - [ACSD-67459: 65,536자를 초과하는 설명을 가진 제품을 가져올 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -942,6 +942,7 @@ ht-degree: 0%
          - [ACSD-68490: 구성 가능한 제품을 만드는 동안 제한된 관리자에게 표시되는 [!UICONTROL Add New Attribute] 단추](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
       - v1.1.76 {#v1-1-76}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+         - [ACSD-67370: PDP/PLP의 번들 제품 및 다중 통화 스토어의 장바구니에 대한 잘못된 가격이 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370.md)
          - [ACSD-69261: 부분 송장 및 취소 흐름에서 잘못된 times_used 처리로 인해 재사용되는 일회용 장바구니 가격 규칙 쿠폰](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)
          - [ACSD-67091: 대규모 삭제 중 최대 쓰기 집합 크기로 인해 카탈로그 규칙 제품 인덱스 정리에 실패했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)
          - [ACSD-69308: &quot;special_price&quot;가 웹 사이트 수준에서 설정된 경우 카탈로그 가격 규칙이 적용되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
@@ -952,6 +953,7 @@ ht-degree: 0%
          - [ACSD-69333: 활성 예약 업데이트가 있는 제품에 SKU 변경이 허용됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)
       - v1.1.77 {#v1-1-77}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
+         - [ACSD-69351: 잘못된 웹 사이트에 표시되는 기프트 카드 잔액 및 만료 일자](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)
          - [ACSD-69020: 하위 제품이 필터와 일치하면 구성 가능한 제품이  [!DNL Page Builder] 회전 메뉴에 표시됩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)
          - [ACSD-68892: 캐시 가능한 페이지에 대한  [!DNL Fastly] 캐싱 동작이 일관적이지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)
          - [ACSD-68664: 사용자 지정 저장소 도메인에서 예약된 업데이트 미리 보기에 오류가 있습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)
@@ -963,6 +965,7 @@ ht-degree: 0%
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
+   - [Adobe Commerce Beta(온-프레미스)](reference/commerce-on-premises-beta.md)
    - [업그레이드 호환성 도구](reference/uct.md)
 - Adobe Commerce 관찰 {#observation-for-adobe-commerce}
    - [소개](observation-for-adobe-commerce/intro.md)
@@ -979,7 +982,7 @@ ht-degree: 0%
    - [경고 탭](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF 탭](observation-for-adobe-commerce/waf-tab.md)
    - [CDN 탭](observation-for-adobe-commerce/cdn-tab.md)
-   - [&#x200B; [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [ [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [크론 탭](observation-for-adobe-commerce/cron-tab.md)
    - [색인화 탭](observation-for-adobe-commerce/indexing-tab.md)
    - [빠른 보기 탭](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -1007,6 +1010,6 @@ ht-degree: 0%
       - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
       - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
    - 리소스 {#resources}
-      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=ko)
+      - [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
