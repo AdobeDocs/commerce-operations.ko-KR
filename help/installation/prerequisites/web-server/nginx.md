@@ -2,16 +2,16 @@
 title: Ngix
 description: Adobe Commerce의 온-프레미스 설치를 위한 Nginx 웹 서버를 설치하고 구성하려면 다음 단계를 따르십시오.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
 
 # Ngix
 
-Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.org/en/linux_packages.html#mainline))를 지원합니다. 최신 버전의 `php-fpm`도 설치해야 합니다.
+Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.org/en/linux_packages.html#mainline))를 지원합니다. 또한 설치 중인 Adobe Commerce 릴리스에서 지원하는 PHP 버전에 대해 `php-fpm`을(를) 설치해야 합니다.
 
 설치 지침은 사용 중인 운영 체제에 따라 다릅니다. 자세한 내용은 [PHP](../php-settings.md)을 참조하세요.
 
@@ -25,7 +25,7 @@ Adobe Commerce은 nginx 1.x(또는 [최신 메인라인 버전](https://nginx.or
 sudo apt -y install nginx
 ```
 
-[소스에서 nginx를 빌드](https://www.armanism.com/blog/install-nginx-on-ubuntu)할 수도 있습니다.
+[소스에서 nginx를 빌드](https://nginx.org/en/docs/install.html)할 수도 있습니다.
 
 다음 섹션을 완료하고 응용 프로그램을 설치한 후 샘플 구성 파일을 사용하여 [nginx를 구성](#configure-nginx)합니다.
 
@@ -38,21 +38,21 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 1. `php-fpm` 및 `php-cli` 설치:
 
    ```bash
-   apt-get -y install php7.2-fpm php7.2-cli
+   apt-get -y install php<supported-php-version>-fpm php<supported-php-version>-cli
    ```
 
    >[!NOTE]
    >
-   >이 명령은 사용 가능한 최신 버전의 PHP 7.2.X를 설치합니다. 지원되는 PHP 버전은 [시스템 요구 사항](../../system-requirements.md)을 참조하십시오.
+   >`<supported-php-version>`을(를) 설치 중인 Adobe Commerce 릴리스의 [시스템 요구 사항](../../system-requirements.md)에 나열된 PHP 부 버전으로 바꾸십시오. 다음 단계에서 파일 경로, 서비스 이름 및 소켓 경로에 동일한 값을 사용합니다.
 
 1. 편집기에서 `php.ini` 파일을 엽니다.
 
    ```bash
-   vim /etc/php/7.2/fpm/php.ini
+   vim /etc/php/<supported-php-version>/fpm/php.ini
    ```
 
    ```bash
-   vim /etc/php/7.2/cli/php.ini
+   vim /etc/php/<supported-php-version>/cli/php.ini
    ```
 
 1. 다음 라인과 일치하도록 두 파일을 편집합니다.
@@ -72,7 +72,7 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 1. `php-fpm` 서비스 다시 시작:
 
    ```bash
-   systemctl restart php7.2-fpm
+   systemctl restart php<supported-php-version>-fpm
    ```
 
 ### MySQL 설치 및 구성
@@ -160,10 +160,14 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
    --currency=USD \
    --timezone=America/Chicago \
    --use-rewrites=1 \
-   --search-engine=elasticsearch7 \
-   --elasticsearch-host=es-host.example.com \
-   --elasticsearch-port=9200
+   --search-engine=<search-engine-value> \
+   --<search-engine-host-parameter>=search-host.example.com \
+   --<search-engine-port-parameter>=9200
    ```
+
+   >[!NOTE]
+   >
+   >설치 중인 Adobe Commerce 릴리스에 필요한 `--search-engine` 값과 일치하는 호스트/포트 옵션을 사용하십시오. 2.4.6 이전 버전의 경우 Elasticsearch 7 또는 OpenSearch용 `elasticsearch7` 옵션과 함께 `--elasticsearch-*`을(를) 사용합니다. 버전 2.4.6 이상의 경우 해당 릴리스에서 지원하는 검색 엔진 값 및 해당 CLI 옵션을 사용하십시오.
 
 1. 개발자 모드로 전환:
 
@@ -191,7 +195,7 @@ Adobe Commerce을 다운로드하는 방법에는 다음을 포함하여 몇 가
 
    ```conf
    upstream fastcgi_backend {
-     server  unix:/run/php/php7.2-fpm.sock;
+     server  unix:/run/php/php<supported-php-version>-fpm.sock;
    }
    
    server {
@@ -266,10 +270,14 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 1. `php-fpm` 설치:
 
    ```bash
-   yum -y install php70w-fpm
+   yum -y install <supported-php-fpm-package>
    ```
 
 1. 편집기에서 `/etc/php.ini` 파일을 엽니다.
+
+   >[!NOTE]
+   >
+   >설치 중인 Adobe Commerce 릴리스에서 지원하는 PHP 버전에 대해 `php-fpm`을(를) 제공하는 패키지 이름을 설치하십시오. 패키지 이름은 저장소 및 운영 체제에 따라 다릅니다.
 
 1. `cgi.fix_pathinfo` 줄의 주석 처리를 제거하고 값을 `0`(으)로 변경합니다.
 

@@ -2,9 +2,9 @@
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 온-프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아보세요.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -82,12 +82,12 @@ For example:
 mysql -u magento -p
 ```
 
-다음 결과는 실행 중인 버전을 나타냅니다.
+명령 출력에서 `Server version` 줄은 실행 중인 버전을 나타냅니다. 설치 중인 Adobe Commerce 릴리스에 대해 지원되는 버전과 일치하는지 확인합니다.
 
 ```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
-Server version: 5.7.9 MySQL Community Server (GPL)
+Server version: <supported MySQL version> MySQL Community Server (GPL)
 
 Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 
