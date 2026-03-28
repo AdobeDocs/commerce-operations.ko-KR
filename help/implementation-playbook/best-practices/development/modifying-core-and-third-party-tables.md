@@ -54,7 +54,7 @@ GraphQL에서 API Mesh를 사용하는 방법에 대한 자세한 내용은 [API
 
 개발자로서 [!DNL Adobe Commerce] 환경 외부의 도구(예: GraphQL mesh 및 Adobe App Builder)를 사용하는 것을 항상 고려해야 합니다. 이러한 도구를 사용하면 데이터에 대한 액세스 권한을 유지하는 데 도움이 되지만 핵심 상거래 애플리케이션이나 기본 데이터베이스 테이블에는 영향을 주지 않습니다. 이 접근 방식을 사용하면 API를 통해 데이터를 노출할 수 있습니다. 그런 다음 App Builder 구성에 데이터 소스를 추가합니다. GraphQL Mesh를 사용하면 이러한 데이터 소스를 결합하여 [기존 데이터](#legacy-data)에 언급된 대로 단일 응답을 생성할 수 있습니다.
 
-GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오. Adobe App Builder에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}를 참조하십시오.
+GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오. Adobe App Builder에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=ko){target="_blank"}를 참조하십시오.
 
 ## 코어 테이블 또는 서드파티 테이블 수정
 
@@ -73,7 +73,7 @@ GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://develo
 
    예: `app/code/YourCompany/Customer`
 
-1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"} 참조).
+1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko){target="_blank"} 참조).
 
 1. `db_schema.xml` 폴더에 `etc` 파일을 만들고 적절하게 변경합니다.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## 큰 MySQL 테이블 찾기
 
-큰 테이블을 식별하려면 [데이터베이스에 연결](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) 문서에 설명된 대로 데이터베이스에 연결하고 다음 명령을 실행하십시오. 프로덕션 환경에 `project_id`을(를) 사용합니다. 스테이징 환경의 경우 `[project_id]_stg`, `[project_id]_stg2`을(를) 사용하십시오.
+큰 테이블을 식별하려면 [데이터베이스에 연결](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) 문서에 설명된 대로 데이터베이스에 연결하고 다음 명령을 실행하십시오. 프로덕션 환경에 `project_id`을(를) 사용합니다. 스테이징 환경의 경우 `[project_id]_stg`, `[project_id]_stg2`을(를) 사용하십시오.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

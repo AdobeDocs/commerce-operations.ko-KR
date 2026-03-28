@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 설치 중 또는 후에 관리자 사용자를 만들 수 있습니다. 설치 중에 사용자를 만드는 경우 모든 관리자 자격 증명 변수가 필요합니다. [샘플 localhost 설치](#sample-localhost-installations)를 참조하십시오.
 
-다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
+다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
