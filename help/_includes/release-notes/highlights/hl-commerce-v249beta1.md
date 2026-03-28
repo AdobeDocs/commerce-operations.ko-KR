@@ -1,5 +1,5 @@
 ---
-source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
+source-git-commit: adda02b9d05b66ab066f110e877584bc1c77515d
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 0%
@@ -281,7 +281,7 @@ _AC-14078 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/9a
 
 이제 관리자는 관리 패널에 액세스할 수 있도록 판매자의 활성화된 2FA 공급자 중 하나(예: Google Authenticator 또는 U2F)만 구성해야 합니다. 필요에 따라 나중에 활성화된 추가 공급자를 구성할 수 있습니다. 이전에는 여러 2FA 공급자가 활성화되었을 때 로그인할 수 있기 전에 모든 관리 사용자가 활성화된 모든 공급자를 구성해야 하므로 모든 요소에 액세스할 수 없는 사용자가 마찰을 일으켰습니다.
 
-_AC-8253 - [GitHub 코드 기여](https://github.com/magento/security-package/commit/71e7936b)_
+_AC-8253 - [GitHub 코드 기여](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### 배송
 

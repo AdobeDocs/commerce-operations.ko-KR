@@ -3,7 +3,7 @@ title: 세션 스토리지에 Redis 사용
 description: Adobe Commerce에서 세션 스토리지용 Redis를 구성하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 성능 최적화 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
@@ -37,7 +37,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-port | 포트 | Redis 서버 수신 포트입니다. | 6379 |
 | session-save-redis-password | 암호 | Redis 서버에 인증이 필요한 경우 암호를 지정합니다. | 비어 있음 |
 | session-save-redis-timeout | timeout | 연결 시간 제한(초)입니다. | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유 문자열(예: sess-db0).<br>[phpredis 및 php-fpm과 관련된 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유 문자열(예: sess-db0).<br>[phpredis 및 php-fpm과 관련된 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-redis-db | 데이터베이스 | 데이터 손실을 방지하는 데 권장되는 고유한 Redis 데이터베이스 번호입니다.<br><br>**중요**: 둘 이상의 캐싱 형식에 대해 Redis를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | 압축을 비활성화하려면 0으로 설정합니다(`suhosin.session.encrypt = On`일 때 권장됨).<br>[문자열이 64KB를 초과하는 알려진 문제](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | 옵션: gzip, lzf, lz4 또는 snappy. | gzip |

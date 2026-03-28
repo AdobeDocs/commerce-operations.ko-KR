@@ -1,5 +1,5 @@
 ---
-source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '1759'
 ht-degree: 0%
@@ -203,7 +203,7 @@ ht-degree: 0%
 | 나바르 바르니에 | [#27077](https://github.com/magento/magento2/pull/27077) | [29558](https://github.com/magento/magento2/issues/29558) |
 | 콜라엔테 | [#30180](https://github.com/magento/magento2/pull/30180) | [30190](https://github.com/magento/magento2/issues/30190) |
 | 페프 판 푸이옌브룩 | [#29466](https://github.com/magento/magento2/pull/29466) | [29652](https://github.com/magento/magento2/issues/29652) |
-| 프레데릭 마르티네스 | [#28588](https://github.com/magento/magento2/pull/28588) |
+| 프레데릭 마르티네스 | [#28588](https://github.com/magento/magento2/pull/28588) | |
 | 페트코프스키 마르얀 | [#29751](https://github.com/magento/magento2/pull/29751) | [29372](https://github.com/magento/magento2/issues/29372) |
 | 올레 우식 | [#30222](https://github.com/magento/magento2/pull/30222) |  |
 | 티몬 드 그루트 | [#28809](https://github.com/magento/magento2/pull/28809) | [22375](https://github.com/magento/magento2/issues/22375) |

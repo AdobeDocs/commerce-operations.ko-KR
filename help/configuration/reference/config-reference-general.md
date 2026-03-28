@@ -3,7 +3,7 @@ title: 일반 구성 경로 참조
 description: Adobe Commerce의 일반 및 고급 구성 경로 및 값에 대해 알아봅니다. 시스템, 보안 및 관리 구성 옵션을 살펴봅니다.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -30,8 +30,8 @@ ht-degree: 0%
 | 국가 허용 | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 우편 번호는 다음에 선택 사항입니다. | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![중요](/help/assets/configuration/cloud-sens.png) |
 | 유럽 연합 국가 | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![중요](/help/assets/configuration/cloud-sens.png) |
-| 주요 대상 | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 에는 상태가 필요합니다. | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 주요 대상 | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 에는 상태가 필요합니다. | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 국가에 대해 선택 사항인 경우 주 선택 허용 | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 시간대 | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 로케일 | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |

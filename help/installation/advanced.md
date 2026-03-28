@@ -2,9 +2,9 @@
 title: 고급 온-프레미스 설치
 description: Adobe Commerce 온-프레미스 배포를 위한 고급 설치 시나리오에 대해 알아봅니다. 복잡한 구성 및 사용자 지정 설정 옵션을 살펴보십시오.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 설치 중 또는 후에 관리자 사용자를 만들 수 있습니다. 설치 중에 사용자를 만드는 경우 모든 관리자 자격 증명 변수가 필요합니다. [샘플 localhost 설치](#sample-localhost-installations)를 참조하십시오.
 
-다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
+다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
@@ -135,11 +135,11 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 |--- |--- |--- |
 | `--base-url` | <br><br>`http[s]://<host or ip>/<your install dir>/` 형식 중 하나로 관리자 및 상점 앞에 액세스하는 데 사용할 기본 URL입니다.<br><br>**참고:** 구성표(http:// 또는 https://)와 뒤쪽 슬래시가 모두 필요합니다.<br><br>`<your install dir>`은(는) Adobe Commerce 소프트웨어를 설치할 docroot 상대 경로입니다. 웹 서버와 가상 호스트를 설정하는 방법에 따라 경로가 magento2이거나 비어 있을 수 있습니다.<br><br>Adobe Commerce 또는 MagenAdobe Commerce에 액세스하려면 `http://127.0.0.1/<your install dir>/` 또는 `http://127.0.0.1/<your install dir>/`을(를) 사용하십시오.<br><br>- `{{base_url}}`: 가상 호스트 설정 또는 Docker와 같은 가상화 환경에서 정의한 기본 URL을 나타냅니다. 예를 들어 호스트 이름이 `magento.example.com`인 가상 호스트를 설정하는 경우 `--base-url={{base_url}}`로 소프트웨어를 설치하고 `http://magento.example.com/admin`과(와) 같은 URL로 관리자에 액세스할 수 있습니다. | 예 |
 | `--backend-frontname` | 관리자에 액세스할 수 있는 URI(Uniform Resource Identifier)입니다. 이 매개 변수를 생략하면 응용 프로그램에서 다음 패턴으로 임의의 URI를 생성할 수 있습니다. <code>admin_jkgdfq</code>.<br><br>보안을 위해 임의의 URI를 사용하는 것이 좋습니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다.<br><br>설치가 끝날 때 URI가 표시됩니다. 나중에 언제든지 `bin/magento info:adminuri` 명령을 사용하여 표시할 수 있습니다.<br><br>값을 입력하기로 선택한 경우 admin, backend와 같은 일반적인 단어를 사용하지 않는 것이 좋습니다. 관리자 URI에는 영숫자 값과 밑줄 문자(`_`)만 포함될 수 있습니다. | 아니요 |
-| `--db-host` | <br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소를 사용합니다.<br><br>- `localhost`(기본값) 또는 `127.0.0.1`(데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우).localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1`을(를) 사용하면 클라이언트 라이브러리에서 TCP 프로토콜을 사용합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php)를 참조하십시오.<br><br>**참고:** www.example.com과 같은 호스트 이름에 데이터베이스 서버 포트를 선택적으로 지정할 수 있습니다.:9000 | 예 |
+| `--db-host` | <br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소를 사용합니다.<br><br>- `localhost`(기본값) 또는 `127.0.0.1`(데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우).localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1`을(를) 사용하면 클라이언트 라이브러리에서 TCP 프로토콜을 사용합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php)를 참조하십시오.<br><br>**참고:** 필요에 따라 `www.example.com:9000`과(와) 같은 호스트 이름에 데이터베이스 서버 포트를 지정할 수 있습니다. | 예 |
 | `--db-name` | 데이터베이스 테이블을 설치할 데이터베이스 인스턴스의 이름입니다.<br><br>기본값은 `magento2`입니다. | 예 |
 | `--db-user` | 데이터베이스 인스턴스 소유자의 사용자 이름.<br><br>기본값은 `root`입니다. | 예 |
 | `--db-password` | 데이터베이스 인스턴스 소유자의 암호입니다. | 예 |
-| `--db-prefix` | Adobe Commerce 테이블이 이미 있는 데이터베이스 인스턴스에 데이터베이스 테이블을 설치하는 경우에만 사용합니다.<br><br>이 경우 접두사를 사용하여 이 설치에 사용할 테이블을 식별하십시오. 일부 고객은 동일한 데이터베이스에 모든 테이블이 있는 Adobe Commerce 또는 MagenAdobe Commerceserver를 두 개 이상 가지고 있습니다.<br><br>접두사는 최대 5자까지 사용할 수 있습니다. 문자로 시작해야 하며 문자, 숫자 및 밑줄 문자만 포함할 수 있습니다.<br><br>이 옵션을 사용하면 두 개 이상의 Adobe Commerce 설치와 데이터베이스 서버를 공유할 수 있습니다 |
+| `--db-prefix` | Adobe Commerce 테이블이 이미 있는 데이터베이스 인스턴스에 데이터베이스 테이블을 설치하는 경우에만 사용합니다.<br><br>이 경우 접두사를 사용하여 이 설치에 사용할 테이블을 식별하십시오. 일부 고객은 동일한 데이터베이스에 모든 테이블이 있는 Adobe Commerce 또는 MagenAdobe Commerceserver를 두 개 이상 가지고 있습니다.<br><br>접두사는 최대 5자까지 사용할 수 있습니다. 문자로 시작해야 하며 문자, 숫자 및 밑줄 문자만 포함할 수 있습니다.<br><br>이 옵션을 사용하면 두 개 이상의 Adobe Commerce 설치와 데이터베이스 서버를 공유할 수 있습니다 | |
 | `--db-ssl-key` | 클라이언트 키 경로. | 아니요 |
 | `--db-ssl-cert` | 클라이언트 인증서 경로. | 아니요 |
 | `--db-ssl-ca` | 서버 인증서 경로. | 아니요 |

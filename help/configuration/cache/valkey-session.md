@@ -3,7 +3,7 @@ title: 세션 저장소에 Valkey 사용
 description: Adobe Commerce에서 세션 스토리지에 대한 Valkey를 구성하는 방법에 대해 알아봅니다. 설정 단계, 구성 옵션 및 성능 최적화 기법을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | 포트 | 유효한 서버 수신 포트입니다. | 6379 |
 | session-save-valkey-password | 암호 | Valkey 서버에 인증이 필요한 경우 암호를 지정합니다. | 비어 있음 |
 | session-save-valkey-timeout | timeout | 연결 시간 제한(초)입니다. | 2.5 |
-| session-save-valkey-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유 문자열(예: sess-db0).<br>[phpredis 및 php-fpm과 관련된 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-valkey-persistent-id | persistent_identifier | 영구 연결을 활성화하는 고유 문자열(예: sess-db0).<br>[phpredis 및 php-fpm과 관련된 알려진 문제](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-valkey-db | 데이터베이스 | 데이터 손실을 방지하는 데 권장되는 고유한 Valkey 데이터베이스 번호입니다.<br><br>**중요**: 두 개 이상의 캐싱 형식에 Valkey를 사용하는 경우 데이터베이스 번호가 달라야 합니다. 기본 캐싱 데이터베이스 번호를 `0`에, 페이지 캐싱 데이터베이스 번호를 `1`에, 세션 저장소 데이터베이스 번호를 `2`에 할당하는 것이 좋습니다. | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | 압축을 비활성화하려면 `0`(으)로 설정합니다(`suhosin.session.encrypt = On`일 때 권장됨). | 2048 |
 | session-save-valkey-compression-lib | compression_library | 옵션: gzip, lzf, lz4 또는 snappy. | gzip |

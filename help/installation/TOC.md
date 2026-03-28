@@ -2,10 +2,10 @@
 user-guide-title: 설치 안내서
 user-guide-description: 온-프레미스 배포용 Adobe Commerce을 설치하는 방법에 대해 알아봅니다.
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 3%
       - [개요](prerequisites/file-system/overview.md)
       - [권한 구성](prerequisites/file-system/configure-permissions.md)
    - 웹 서버 {#web-server}
-      - [Ngix](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [Nginx 설치](prerequisites/web-server/nginx.md)
+      - [Apache 설치](prerequisites/web-server/apache.md)
    - 데이터베이스 서버 {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [원격 연결](prerequisites/database/mysql-remote.md)
@@ -32,7 +32,7 @@ ht-degree: 3%
       - [Apache 구성](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - 메시지 브로커 {#message-brokers}
-      - [토끼 MQ](prerequisites/rabbitmq.md)
+      - [토끼](prerequisites/rabbitmq.md)
       - [활성 MQ](prerequisites/activemq.md)
    - [보안](prerequisites/security.md)
    - [인증 키](prerequisites/authentication-keys.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [Commerce 제거 또는 재설치](tutorials/uninstall.md)
    - [테마 제거](tutorials/themes.md)
    - [데이터베이스 스키마 업그레이드](tutorials/database-upgrade.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

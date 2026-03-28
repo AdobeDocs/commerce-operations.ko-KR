@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '26969'
+source-wordcount: '26968'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Null TypeError로 인해 /V1/products/special-price 및 관련 가격 책정 API
 
 _AC-6419 - [GitHub 문제](https://github.com/magento/magento2/issues/35934) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API 끝점에 내부 서버 오류
+#### `/V1/order/{orderId}/ship` API 끝점에 내부 서버 오류
 
 이제 시스템에서 `/V1/order/{orderId}/ship` API 끝점의 내부 서버 오류를 수정하고 요청이 잘못된 경우 400 오류를 반환합니다.
 
@@ -261,7 +261,7 @@ _AC-15074 - [GitHub 문제](https://github.com/magento/magento2/issues/40036) - 
 
 #### Storefront 고객 계정 등록: 다른 도메인 포맷으로 전환되는 이메일 주소 포맷
 
-이 버그는 도메인(예: tec55241@adòbe.com)에 특수 문자가 있는 고객 이메일이 punycode 형식(tec55241@xn--adbe-mqa.com)으로 자동 변환되는 문제를 해결했습니다.
+이 버그는 도메인(예: òbe.com)에 특수 문자가 있는 고객 이메일이 punycode 형식(tec55241@xn--adbe-mqa.com)으로 자동 변환되는 문제를 해결했습니다.
 Magento 2.4.9-alpha3에서는 이러한 이메일 ID가 변경되지 않고 유효하게 유지되므로 게재 오류가 발생하지 않습니다.
 
 _AC-15177 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/68a45d0a)_
@@ -818,7 +818,7 @@ _AC-14464 - [GitHub 문제](https://github.com/magento/magento2/issues/39820) - 
 
 #### [2.4.8] 도시 이름에 0~9 자릿수, 앰퍼샌드, 전체 중지 또는 괄호가 있는 경우 주문을 할 수 없습니다.
 
-과 같은 특수 문자가 포함된 도시 이름에 대해 체크아웃하지 못하던 문제를 수정했습니다. , &amp; 또는 괄호.
+. , &amp; 또는 괄호와 같은 특수 문자가 포함된 도시 이름에 대해 체크아웃하지 못하던 문제를 수정했습니다.
 이제 이러한 도시 이름을 가진 주문이 검증 오류 없이 성공적으로 주문됩니다.
 
 _AC-14495 - [GitHub 문제](https://github.com/magento/magento2/issues/39854) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/b9f5d6f7)_
@@ -873,7 +873,7 @@ _AC-16096 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/01
 
 #### 장바구니 가격 규칙 작업 &quot;장바구니에서 가격&quot; 조건, 허용되지 않을 때 적용
 
-&quot;장바구니 가격이 보다 낮음&quot; 조건이 있는 장바구니 가격 규칙이 부적격 제품에 잘못 적용되는 문제가 수정되었습니다.
+&quot;보다 낮은 장바구니 가격&quot; 조건의 장바구니 가격 규칙이 부적격 제품에 잘못 적용되는 문제가 수정되었습니다.
 이제 장바구니 품목 가격이 구성된 규칙 조건을 충족하지 않을 때 쿠폰이 제대로 검증되고 거부됩니다.
 
 _AC-6997 - [GitHub 문제](https://github.com/magento/magento2/issues/36433) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/01cee3c3)_
@@ -1079,7 +1079,7 @@ _AC-13373 - [GitHub 문제](https://github.com/magento/magento2/issues/39363) - 
 
 #### 구성 가능한 제품의 하위 제품(단순 제품)에 대한 특별 가격이 올바르게 표시되지 않음
 
-&quot;제품 목록에 사용됨&quot;을 아니요로 설정한 경우 구성 가능한 제품의 하위(단순) 제품에 대한 특별 가격이 제품 목록 페이지에 올바르게 표시되지 않는 문제가 해결되었습니다. 이제 특별 가격이 일반 가격과 함께 올바르게 표시되므로 제품 유형 간에 일관된 가격 표시가 보장됩니다.
+&quot;제품 목록에서 사용됨&quot;을 아니요로 설정한 경우 구성 가능한 제품의 하위(단순) 제품에 대한 특별 가격이 제품 목록 페이지에 올바르게 표시되지 않는 문제가 해결되었습니다. 이제 특별 가격이 일반 가격과 함께 올바르게 표시되므로 제품 유형 간에 일관된 가격 표시가 보장됩니다.
 
 _AC-13594 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/3cf1a106)_
 
@@ -1165,7 +1165,7 @@ _AC-15237 - [GitHub 문제](https://github.com/magento/magento2/issues/40104) - 
 
 \Magento\Catalog\Ui\DataProvider\Product\Listing\Collector\Url::collect()에 사용된 메서드를 수정했습니다.
 이전에는 getAddToCartButton() 대신 getAddToCartButton()이 잘못 호출되었습니다.
-이렇게 하면 제품 목록에서 &quot;Add to Compare&quot; 단추를 렌더링하는 데 필요한 동작이 올바르게 수행됩니다.
+이렇게 하면 제품 목록에서 &quot;비교에 추가&quot; 단추를 렌더링하기 위한 올바른 동작이 보장됩니다.
 기능 동작 변경 사항이 도입되지 않았습니다. 업데이트는 개발자 경험 및 코드 수정을 개선합니다.
 
 _AC-15323 - [GitHub 문제](https://github.com/magento/magento2/issues/39754) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a3b1abc2)_
@@ -1178,7 +1178,7 @@ _AC-15385 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a8
 
 #### FPT가 활성화된 경우 구성 가능한 제품에 대한 &quot;최저 가격&quot; 표시가 잘못됨
 
-FPT가 활성화된 경우 구성 가능한 제품에 대해 잘못된 &quot;낮은 가격&quot;이 세금이 두 번 적용되었기 때문임을 확인했습니다. 수정 사항은 최종 가격 계산이 세금 구성을 준수하는지 확인하며 이제 올바른 가격을 표시합니다.
+FPT가 활성화된 경우 구성 가능한 제품에 대한 잘못된 &quot;낮은 가격&quot;이 세금이 두 번 적용되어 발생했음을 확인했습니다. 이 수정 사항은 최종 가격 계산이 세금 구성을 준수하는지 확인하며 이제 올바른 가격을 표시합니다.
 
 _AC-15718 - [GitHub 문제](https://github.com/magento/magento2/issues/40171) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a06a4a57)_
 
@@ -1621,7 +1621,7 @@ _ACP2E-4341 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### 여러 카테고리가 카테고리 조건에 나열된 경우 제품 목록 위젯이 잘못된 결과를 반환합니다.
 
-이제 &quot;Category is one of&quot; 조건에 나열된 여러 카테고리가 있을 때 &quot;Catalog Products List&quot; 위젯에 정확한 결과가 표시됩니다. 이전에는 목록의 첫 번째 범주만 처리되었습니다.
+이제 &quot;카테고리가 중 하나임&quot; 조건에 나열된 여러 카테고리가 있을 때 &quot;카탈로그 제품 목록&quot; 위젯에 정확한 결과가 표시됩니다. 이전에는 목록의 첫 번째 범주만 처리되었습니다.
 
 _ACP2E-4353 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/0a3b7032) - [GitHub 코드 기여도](https://github.com/magento/magento2-page-builder/commit/1c1b3419)_
 
@@ -2351,7 +2351,7 @@ _AC-8949 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/3b5
 
 #### 주문 배치에 대한 GraphQL 응답에는 예외 메시지가 포함되지 않습니다
 
-다른 형식으로 오류를 반환하는 이전 변경 사항을 되돌렸습니다. 이제 잠재적인 오류가 GraphQL 스키마를 손상시키지 않고 일관된 방식으로 반환됩니다. 이는 알려진 BIC로 추가되어야 하며 PM이 승인하는 경우 https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+다른 형식으로 오류를 반환하는 이전 변경 사항을 되돌렸습니다. 이제 잠재적인 오류가 GraphQL 스키마를 손상시키지 않고 일관된 방식으로 반환됩니다. 이는 알려진 BIC로 추가되어야 하며 PM이 승인하는 경우 https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2587,7 +2587,7 @@ _ACP2E-3728 - [GitHub 코드 기여도](https://github.com/magento/inventory/com
 
 #### 홈페이지로 리디렉션하고 체크아웃한 후에는 스토어를 사용할 수 없습니다.
 
-고객이 결제 페이지로 이동한 다음, 홈 페이지로 돌아간 다음, 최종적으로 체크아웃 페이지로 돌아오면, 이제 &quot;스토어에서 선택&quot; 배송에서 이전에 선택한 스토어가 미리 선택됩니다. 이전에는 체크아웃 페이지로 반복적으로 돌아간 후 &quot;스토어 선택&quot;에서 선택한 스토어가 지워졌습니다.
+고객이 결제 페이지로 이동한 다음, 홈 페이지로 돌아간 다음, 최종적으로 체크아웃 페이지로 돌아오면, 이제 이전에 선택한 저장소가 &quot;스토어 내 선택&quot; 배송에서 미리 선택됩니다. 이전에는 체크아웃 페이지로 반복적으로 돌아간 후 &quot;스토어 선택&quot;에서 선택한 스토어가 지워졌습니다.
 
 _ACP2E-3793 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/a20a6ff2) - [GitHub 코드 기여도](https://github.com/magento/inventory/commit/62c0d79b)_
 
@@ -2636,7 +2636,7 @@ _ACP2E-4233 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### [MSI] 최신 기본 줄 변경 내용과 관련된 MTF 테스트가 실패했습니다.
 
-고정 게스트 고객이 배송 주소가 없는 매장 픽업을 선택하기 전에 결제 주소가 매장 주소로 자동 채워져 변경되지 않았으며 이로 인해 잘못된 송장 세부 정보가 발생했습니다. 청구 주소 수정 후에는 이 시나리오에서 편집할 수 있으며, 게스트가 직접 세부 정보를 입력할 수 있습니다. 등록된 사용자는 스토어 대신 저장된 청구 주소를 보게 됩니다.
+고정 게스트 고객이 배송 주소 없이 매장 내 픽업을 선택하기 전에는 청구 주소가 매장 주소로 자동 채워져 변경할 수 없었고, 이로 인해 잘못된 송장 세부 정보가 표시되었습니다. 청구 주소 수정 후에는 이 시나리오에서 편집할 수 있으며, 게스트가 직접 세부 정보를 입력할 수 있습니다. 등록된 사용자는 스토어 대신 저장된 청구 주소를 보게 됩니다.
 
 _ACP2E-4260 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/ab891304) - [GitHub 코드 기여도](https://github.com/magento/inventory/commit/13e432a6)_
 
@@ -3045,7 +3045,7 @@ _AC-14945 - [GitHub 문제](https://github.com/magento/magento2/issues/39986) - 
 #### 일괄 조치를 사용하여 특별 가격 시작 일자 가 종료 일자 이후인 경우에도 제품이 저장되고 있습니다.
 
 유효성 검사 없이 잘못된 특별 가격 날짜 범위로 제품을 저장할 수 있는 문제를 해결했습니다.
-이제, 오류 메시지가 표시됩니다. &quot;종료 날짜가 시작 날짜보다 이후이거나 동일한지 확인하십시오.&quot;
+이제 오류 메시지가 표시됩니다. &quot;종료 날짜가 시작 날짜보다 이후이거나 동일한지 확인하십시오.&quot;
 
 _AC-15252 - [GitHub 문제](https://github.com/magento/magento2/issues/40113) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/36d4d6fb)_
 
@@ -3087,7 +3087,7 @@ _AC-10843 - [GitHub 코드 기여](https://github.com/magento/inventory/commit/1
 
 #### 테스트 사례 AC-6158의 구성 가능한 제품에 대해 &#39;낮음&#39; 레이블이 여전히 표시됨
 
-각 변형 및 범주 할당으로 구성 가능한 제품(P1-P7)을 구현하고 검증했습니다. 카테고리 C에 해당하는 제품에 대해 올바른 상점 가격 표시 및 &quot;최저 가격&quot; 레이블 동작을 확인했습니다.
+각 변형 및 범주 할당으로 구성 가능한 제품(P1-P7)을 구현하고 검증했습니다. 카테고리 C 아래에 있는 제품에 대해 올바른 상점 가격 표시 및 &quot;최저 가격&quot; 레이블 동작을 확인했습니다.
 
 _AC-10847 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a3b1abc2)_
 
@@ -3119,7 +3119,7 @@ _AC-13055 - [GitHub 문제](https://github.com/magento/magento2/issues/39111) - 
 
 #### Magento의 연결된 제품에 대한 잘못된 SKU 처리
 
-잘못된 SKU 유효성 검사로 인해 SKU &quot;0&quot;의 제품을 관련 항목, 상향 판매 또는 교차 판매 항목으로 연결할 수 없는 문제를 해결했습니다. 업데이트에서는 이러한 제품이 성공적으로 연결되어 오류 없이 제품을 저장할 수 있도록 합니다.
+잘못된 SKU 유효성 검사로 인해 SKU가 &quot;0&quot;인 제품을 관련 항목, 상향 판매 또는 교차 판매 항목으로 연결할 수 없는 문제를 해결했습니다. 업데이트에서는 이러한 제품이 성공적으로 연결되어 오류 없이 제품을 저장할 수 있도록 합니다.
 
 _AC-13311 - [GitHub 문제](https://github.com/magento/magento2/issues/39329) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a8cf637b)_
 
@@ -3255,7 +3255,7 @@ _AC-14889 - [GitHub 문제](https://github.com/magento/magento2/issues/39962) - 
 
 _ACP2E-4299_
 
-#### [Cloud][experienceleague] 카탈로그 가격 규칙이 적용되지 않음
+#### `[Cloud][experienceleague]` 카탈로그 가격 규칙이 적용되지 않음
 
 `special_price`이(가) 웹 사이트 수준(&quot;모든 스토어 보기&quot;가 아님)에서만 설정된 경우 고정 카탈로그 가격 규칙이 적용되지 않았습니다. `special_price`이(가) 웹 사이트의 기본 스토어를 먼저 확인하여 웹 사이트 수준에서 설정된 경우 이제 고정 카탈로그 가격 규칙이 올바르게 적용됩니다.
 
@@ -3414,7 +3414,7 @@ _AC-15304 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/91
 
 #### 범주에 대해 예약된 업데이트가 삭제되면 상위 범주에 대해 하위 항목 수가 감소되지 않습니다
 
-범주에 대한 예약된 업데이트를 삭제해도 상위 범주의 하위 항목수가 줄어들지 않아 예약된 업데이트 또는 하위 범주가 제거될 때 카운트가 올바르게 업데이트되는 문제가 수정되었습니다.
+범주에 대한 예약된 업데이트를 삭제해도 상위 범주의 하위 항목 수가 줄어들지 않아 예약된 업데이트 또는 하위 범주가 제거될 때 카운트가 올바르게 업데이트되는 문제가 수정되었습니다.
 
 _AC-15670 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/ef666cd9)_
 
@@ -3487,7 +3487,7 @@ _ACP2E-4226_
 
 #### 업데이트 예약 미리 보기에서 웹 사이트 사이를 탐색할 수 없음
 
-이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, `{{store url}}`Adobe Commerce 변수 및 마크업 태그[에 설명된 대로 &#x200B;](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/variables/markup-tags) 마크업 태그를 사용하는 탐색 링크를 지원합니다.
+이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, `{{store url}}`Adobe Commerce 변수 및 마크업 태그[에 설명된 대로 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) 마크업 태그를 사용하는 탐색 링크를 지원합니다.
 
 _ACP2E-4308 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/0a3b7032)_
 
