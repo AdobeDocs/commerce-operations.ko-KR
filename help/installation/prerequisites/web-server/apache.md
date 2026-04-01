@@ -173,7 +173,7 @@ Apache가 이미 설치되어 있고 `2.4` 이전 버전을 사용 중인 경우
 
 1. 설치된 버전이 [시스템 요구 사항](../../system-requirements.md)에서 Adobe Commerce 릴리스에 대해 지원되는 버전과 일치하는지 확인하십시오.
 
-1. Ubuntu[에 대해 `.htaccess`다시 쓰기 및 ](#enable-rewrites-and-htaccess-for-ubuntu)을(를) 사용하도록 설정합니다.
+1. Ubuntu[에 대해 `.htaccess`다시 쓰기 및 &#x200B;](#enable-rewrites-and-htaccess-for-ubuntu)을(를) 사용하도록 설정합니다.
 
 ### Ubuntu에 대한 재작성 및 .htaccess 활성화
 
