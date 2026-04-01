@@ -2,7 +2,7 @@
 title: 온-프레미스 배포용 Nginx 설치
 description: 온-프레미스 Adobe Commerce 배포용 Nginx 웹 서버를 설치하고 구성하는 방법에 대해 알아봅니다. PHP-FPM 및 가상 호스트를 설정합니다.
 feature: Install, Configuration
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt

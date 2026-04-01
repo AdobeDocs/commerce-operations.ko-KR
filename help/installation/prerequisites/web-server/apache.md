@@ -2,7 +2,7 @@
 title: 온-프레미스 배포용 Apache 설치
 description: 온-프레미스 Adobe Commerce 배포용 Apache를 설치하고 구성하는 방법에 대해 알아봅니다. 필요한 모듈, 재작성 및 ".htaccess" 설정을 활성화합니다.
 feature: Install, Configuration
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
