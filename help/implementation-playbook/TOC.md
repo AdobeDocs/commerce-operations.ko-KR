@@ -2,9 +2,9 @@
 user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 14%
 
 ---
@@ -27,8 +27,7 @@ ht-degree: 14%
       - [보고 구성](best-practices/planning/reporting-configuration.md)
       - [클라우드 배포를 위한 데이터베이스 &#x200B; 구성](best-practices/planning/database-on-cloud.md)
       - [MySQL 구성](best-practices/planning/mysql-configuration.md)
-      - [Redis 서비스 구성](best-practices/planning/redis-service-configuration.md)
-      - [유효한 서비스 구성](best-practices/planning/valkey-service-configuration.md)
+      - [Redis/Valkey 서비스 구성](best-practices/planning/redis-valkey-service-configuration.md)
       - [OPcache 메모리 크기](best-practices/planning/opcache-memory-size.md)
       - [Realpath 캐시 크기](best-practices/planning/realpath-cache-size.md)
       - [확장](best-practices/planning/extensions.md)
@@ -52,7 +51,7 @@ ht-degree: 14%
       - [코어 및 타사 코드 수정](best-practices/development/modifying-core-and-third-party-code.md)
    - 시작 {#launch}
       - [개요](best-practices/launch/overview.md)
-      - [웹 크롤러 구성](best-practices/launch/robots-txt.md)
+      - [웹 웹 크롤러 구성](best-practices/launch/robots-txt.md)
       - [사이트 및 인프라 보안](best-practices/launch/security-best-practices.md)
    - 유지 관리 {#maintenance}
       - [개요](best-practices/maintenance/overview.md)
@@ -69,4 +68,4 @@ ht-degree: 14%
       - [업그레이드 체크리스트](best-practices/maintenance/upgrade-checklist.md)
       - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/mariadb-upgrade.md)
 - [용어집](glossary.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
