@@ -8,9 +8,9 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: aedff83fe473691340f0f254e7c79ef7e632ac0d
+source-git-commit: 381d58d5fc9844aca88239e8e7ac39151dfc766c
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 인프라 환경의 Commerce에 대해 최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ko)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
+>클라우드 인프라 환경의 Commerce에 대해 최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 ## L2 캐시 구성
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 [`REDIS_BACKEND`Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)의 __ 구성 참조를 참조하십시오.
+클라우드 인프라의 환경 구성에 대해서는 [`REDIS_BACKEND`Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)의 __ 구성 참조를 참조하십시오.
 
 온-프레미스 설치의 경우 [구성 가이드](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)에서 _Redis 페이지 캐싱 구성_&#x200B;을 참조하십시오.
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 [`VALKEY_BACKEND`Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)의 __ 구성 참조를 참조하십시오.
+클라우드 인프라의 환경 구성에 대해서는 [`VALKEY_BACKEND`Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)의 __ 구성 참조를 참조하십시오.
 
 온-프레미스 설치의 경우 [구성 가이드](../../../configuration/cache/config-valkey.md)에서 _Valkey 구성_&#x200B;을(를) 참조하십시오.
 
@@ -129,60 +129,6 @@ df -h /dev/shm
 
 사용법은 노드에 따라 다를 수 있지만 비슷한 값으로 수렴해야 합니다.
 
-## L2 캐시에 대한 사용자 지정 디렉터리 구성
-
-L2 캐시 성능을 최적화할 때 RAM 디스크(`/dev/shm/`)와 같은 사용자 지정 고성능 디렉터리에 로컬 캐시 파일을 저장하도록 선택할 수 있습니다.
-
-응용 프로그램 전체의 일관성을 보장하고 캐시 저장소가 조각화되지 않도록 하려면 특정 L2 백 엔드 옵션과 `app/etc/env.php` 파일 내의 전역 디렉터리 레지스트리를 모두 구성하십시오.
-
-**모범 사례:** `local_backend_options['cache_dir']`과(와) 전역 `directories['cache']['path']`을(를) 모두 정의합니다.
-
-- **`local_backend_options['cache_dir']`**: 백 엔드 캐시 어댑터(예: `Cm_Cache_Backend_File`)가 동기화된 L2 캐시 파일을 지정된 위치에 저장하도록 지시합니다.
-- **`directories['cache']['path']`**: Adobe Commerce `DirectoryList` 레지스트리를 업데이트하여 사용자 지정 경로를 전체 응용 프로그램에 대한 최종 시스템 캐시 디렉터리로 설정합니다.
-
-### 분할 캐시 디렉터리 및 GlusterFS 세그멘테이션 오류 방지
-
-`local_backend_options`에서만 사용자 지정 경로를 정의하면 L2 캐시 엔진이 올바르게 작동하지만 전역 응용 프로그램 레지스트리는 `var/cache`을(를) 기본 캐시 위치로 계속 인식합니다.
-
-이 구성이 일치하지 않으면 서드파티 확장 또는 핵심 대체 프로세스가 임시 파일을 기본 `var/cache` 디렉터리에 쓰는 &quot;브레인 분할&quot; 시나리오가 발생합니다.
-
-**Adobe Commerce Cloud에 미치는 중요한 영향:** Pro 아키텍처에서 `var/` 디렉터리가 공유 분산 파일 시스템에 탑재되었습니다. 이 네트워크 마운트를 통해 고속 캐시 I/O를 강제로 수행하면 클라이언트가 압도되며 **GlusterFS 세그멘테이션 오류 및 클러스터 전체 정전**&#x200B;의 주요 트리거입니다. 두 설정을 모두 구성하면 모든 캐시 입출력이 로컬 고성능 디스크에 엄격하게 유지됩니다.
-
-### 구성 예
-
-단일 통합 캐시 디렉터리를 적용하려면 두 구성을 모두 포함하도록 `env.php` 파일을 업데이트하십시오.
-
-```php
-return [
-    // 1. Override the global directory registry
-    'directories' => [
-        'cache' => [
-            'path' => '/dev/shm/magento_cache'
-        ]
-    ],
-    // 2. Configure the L2 cache engine
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
-                'backend_options' => [
-                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-                    'server' => '127.0.0.1',
-                    'port' => '6379',
-                    'database' => '1',
-                    // ... other redis configurations ...
-                    'local_backend' => 'Cm_Cache_Backend_File',
-                    'local_backend_options' => [
-                        'cache_dir' => '/dev/shm/magento_cache' 
-                    ]
-                ]
-            ]
-        ]
-    ],
-    // ...
-];
-```
-
 ## 슬레이브 연결 활성화
 
 `.magento.env.yaml` 파일에서 슬레이브 연결을 활성화하여 Adobe Commerce이 쓰기에 기본 끝점을 계속 사용하는 동안 읽기에 추가 읽기 전용 캐시 연결을 사용할 수 있도록 합니다. 이 구성을 통해 기본 캐시 서비스의 읽기 로드를 줄이고 읽기 트래픽을 보다 효과적으로 분산할 수 있습니다.
@@ -199,7 +145,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud 인프라의 환경 구성에 대해서는 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_use_slave_connection)의 _REDIS_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
+Commerce Cloud 인프라의 환경 구성에 대해서는 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)의 _REDIS_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
 
 Adobe Commerce 온-프레미스 설치의 경우 `bin/magento setup` 명령을 사용하여 새 Redis 캐시 구현을 구성합니다. [구성 가이드](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)에서 _기본 캐시에 Redis 사용_&#x200B;을 참조하십시오.
 
@@ -213,7 +159,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud 인프라의 환경 구성에 대해서는 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#valkey_use_slave_connection)의 _VALKEY_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
+Commerce Cloud 인프라의 환경 구성에 대해서는 [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)의 _VALKEY_USE_SLAVE_CONNECTION_&#x200B;을(를) 참조하십시오.
 
 Adobe Commerce 온-프레미스 설치의 경우 `bin/magento setup` 명령을 사용하여 새 Valkey 캐시 구현을 구성합니다. [구성 가이드](../../../configuration/cache/config-valkey.md)에서 _Valkey 구성_&#x200B;을(를) 참조하십시오.
 
@@ -359,7 +305,7 @@ stage:
 
 >[!NOTE]
 >
->`full_page` 캐시 형식은 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)을(를) 사용하므로 Cloud 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
+>`full_page` 캐시 형식은 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)을(를) 사용하므로 Cloud 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
 
 온-프레미스 설치의 경우 [구성 가이드](../../../configuration/cache/level-two-cache.md#stale-cache-options)에서 _오래된 캐시 옵션_&#x200B;을 참조하세요.
 
@@ -544,7 +490,7 @@ stage:
 
 1. 프로덕션 및 스테이징 환경에서 세션 전용 새 Redis 인스턴스를 요청합니다.
 
-   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
+   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
 
    이 업데이트로 인해 가동 중지 시간은 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
 
@@ -619,7 +565,7 @@ stage:
 
 1. 프로덕션 및 스테이징 환경에서 세션 전용 새 Valkey 인스턴스를 요청합니다.
 
-   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
+   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
 
    이 업데이트로 인해 가동 중지 시간은 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
 
@@ -679,7 +625,7 @@ stage:
 
 ## 비동기 해제 사용
 
-클라우드 인프라의 Adobe Commerce에서 `lazyfree`을(를) 사용하려면 다음 Redis 또는 Valkey 구성을 환경에 적용할 것을 요청하는 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)합니다.
+클라우드 인프라의 Adobe Commerce에서 `lazyfree`을(를) 사용하려면 다음 Redis 또는 Valkey 구성을 환경에 적용할 것을 요청하는 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)합니다.
 
 ```text
 lazyfree-lazy-eviction yes
@@ -701,7 +647,7 @@ lazyfree-lazy-user-del yes
 
 ## 다중 스레드 I/O 사용
 
-클라우드 인프라의 Adobe Commerce에서 Redis I/O 스레딩을 사용하려면 아래의 I/O 스레딩 구성을 요청하는 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko#submit-ticket)을 제출하십시오. 이 구성은 더 높은 CPU 사용량을 희생하여 주 스레드에서 소켓 읽기 및 쓰기, 명령 구문 분석을 오프로드하여 처리량을 향상시킬 수 있습니다. 로드 중 유효성 검사 및 호스트 모니터링
+클라우드 인프라의 Adobe Commerce에서 Redis I/O 스레딩을 사용하려면 아래의 I/O 스레딩 구성을 요청하는 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)을 제출하십시오. 이 구성은 더 높은 CPU 사용량을 희생하여 주 스레드에서 소켓 읽기 및 쓰기, 명령 구문 분석을 오프로드하여 처리량을 향상시킬 수 있습니다. 로드 중 유효성 검사 및 호스트 모니터링
 
 >[!BEGINTABS]
 
