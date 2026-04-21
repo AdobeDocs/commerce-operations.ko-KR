@@ -16,7 +16,7 @@ Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크
 
 3년 지원 기간 동안 고객은 다음에 액세스할 수 있습니다.
 
-- **품질 수정**-고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
+- **품질 수정**-고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
 
 - **보안 수정 사항**-Adobe은 3년 지원 기간 동안 누적 보안 패치와 비누적 [격리된 보안 패치 파일](versioning-policy.md#isolated-security-fixes)을 통해 보안 수정 사항을 제공합니다.
 
@@ -59,11 +59,11 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 
   격리된 보안 패치 파일을 적용하려면 해당 버전에 대해서만 격리된 보안 수정 사항이 테스트되므로 고객이 지원되는 릴리스 라인에 대해 최신 보안 전용 패치 릴리스(최신 -p 버전)를 사용해야 합니다.
 
-- **품질 수정 또는 엔지니어링 지원이 없음**-이 기간 동안 버전 2.4.4 또는 2.4.5에 대해 버그 수정, 품질 업데이트([품질 패치 도구](../tools/quality-patches-tool/usage.md)) 또는 엔지니어링 지원([Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide))이 제공되지 않습니다.
+- **품질 수정 또는 엔지니어링 지원이 없음**-이 기간 동안 버전 2.4.4 또는 2.4.5에 대해 버그 수정, 품질 업데이트([품질 패치 도구](../tools/quality-patches-tool/usage.md)) 또는 엔지니어링 지원([Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide))이 제공되지 않습니다.
 
 - **PCI 규정 준수가 보장되지 않습니다.**-2.4.4 및 2.4.5는 수명이 끝난 PHP 버전을 사용하므로 해당 릴리스의 판매자에 대해서는 PCI 규정 준수를 보장할 수 없습니다. 이러한 버전을 계속 실행하면 PCI 규정 준수에 문제가 발생할 수 있습니다.
 
-전체 보안 적용 범위를 유지하고 PCI 규정을 준수하려면 고객은 가능한 한 빨리 현재 지원되는 Adobe Commerce 버전으로 업그레이드하거나 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)&#x200B;(으)로 마이그레이션해야 합니다.
+전체 보안 적용 범위를 유지하고 PCI 규정을 준수하려면 고객은 가능한 한 빨리 현재 지원되는 Adobe Commerce 버전으로 업그레이드하거나 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/overview)&#x200B;(으)로 마이그레이션해야 합니다.
 
 | 릴리스 | 일반 가용성 | 확장 지원 종료 | 보안 수정 사항 프로비저닝 종료 |
 |----------------------|----------------------|-------------------------|------------------------------------|
