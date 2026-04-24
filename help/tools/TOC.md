@@ -895,8 +895,8 @@ ht-degree: 0%
          - [ACSD-67603: 이미지 포함이 활성화된 제품에 대해 사이트 맵 생성 시간이 깁니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093: 날짜 범위 필터를 사용하여 GraphQL을 통해 주문을 검색하면 잘못된 결과가 반환됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652: 하위 및 상위 제품이 재고에 있는 GraphQL 호출에서 품절로 반환된 번들 제품 상태](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624:  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다.
-         - [ACSD-67904: 구/군/시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)가 포함된 경우 주문을 넣을 수 없습니다.
+         - [ACSD-60624:  [!DNL Page Builder]의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
+         - [ACSD-67904: 구/군/시 이름에 숫자(0-9), 앰퍼샌드(&amp;), 마침표(.) 또는 괄호()가 포함된 경우 주문을 넣을 수 없습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67459: 65,536자를 초과하는 설명을 가진 제품을 가져올 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -992,7 +992,7 @@ ht-degree: 0%
    - [The Alerts tab](observation-for-adobe-commerce/alerts-tab.md)
    - [The WAF tab](observation-for-adobe-commerce/waf-tab.md)
    - [CDN 탭](observation-for-adobe-commerce/cdn-tab.md)
-   - [ [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [&#x200B; [!DNL RabbitMQ] 탭](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [크론 탭](observation-for-adobe-commerce/cron-tab.md)
    - [색인화 탭](observation-for-adobe-commerce/indexing-tab.md)
    - [빠른 보기 탭](observation-for-adobe-commerce/oac-quickview-tab.md)
