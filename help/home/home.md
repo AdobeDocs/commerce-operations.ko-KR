@@ -1,30 +1,30 @@
 ---
-title: 운영 안내서 홈
-description: Adobe Commerce 시스템 관리 및 운영 개념에 대해 알아봅니다. Commerce 배포 계획, 구성 및 유지 관리에 대한 포괄적인 안내서를 찾아보십시오.
+title: Operational Guides Home
+description: Learn about Adobe Commerce system administration and operational concepts. Browse comprehensive guides for planning, configuring, and maintaining your Commerce deployment.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: d4759f2394d55d115e5da80c271152ee621a2683
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '173'
 ht-degree: 7%
 
 ---
 
 
-# Adobe Commerce 운영 안내서
+# Adobe Commerce Operational Guides
 
-이 안내서 컬렉션을 사용하여 Adobe Commerce 프로젝트를 계획, 구성, 배포 및 유지 관리하기 위한 시스템 관리 개념, 프로세스, 도구 및 모범 사례에 대해 알아보십시오.
+Use this following collection of guides to learn about system administration concepts, processes, tools, and best practices to plan, configure, deploy, and maintain Adobe Commerce projects.
 
-## 계획 및 지침
+## Planning and guidance
 
 <table>
 <tr>
   <td valign="top">
     <a href="../release/release-notes/overview.md">
-      <img alt="릴리스 정보" src="../assets/icons/promote.svg" width="40"/>
+      <img alt="Release Information" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>릴리스 정보</strong></a>
-      <p>Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 검토하십시오.</p>
+      <a href="../release/release-notes/overview.md"><strong>Release Information</strong></a>
+      <p>Review all release information for Adobe Commerce patches and services.</p>
     </div>
   </td>
     <td valign="top">
@@ -32,42 +32,42 @@ ht-degree: 7%
       <img alt="구현" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>구현 플레이북</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>Implementation Playbook</strong></a>
       <p>성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.</p>
     </div>
   </td>
   <td valign="top">
     <a href="../security-and-compliance/overview.md">
-       <img alt="엔터프라이즈" src="../assets/icons/alert-circle.svg" width="40"/>
+       <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>보안 및 규정 준수</strong></a>
-      <p>Adobe Commerce 판매자가 보안 환경을 유지 관리하는 방법을 알아봅니다.</p>
+      <a href="../security-and-compliance/overview.md"><strong>Security and Compliance</strong></a>
+      <p>Learn how Adobe Commerce merchants are responsible for maintaining a secure environment.</p>
     </div>
   </td>
     <td valign="top">
     <a href="../performance/overview.md">
-       <img alt="성능" src="../assets/icons/gauge.svg" width="40"/>
+       <img alt="Performance" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>성능 모범 사례</strong></a>
-      <p>이러한 권장 사항을 사용하여 Adobe Commerce 배포의 성능을 최적화합니다.</p>
+      <a href="../performance/overview.md"><strong>Performance Best Practices</strong></a>
+      <p>Use these recommendations to optimize the performance of your Adobe Commerce deployment.</p>
     </div>
   </td>
 </tr>
 </table>
 
-## 시스템 관리
+## System management
 
 <table>
 <tr>
   <td valign="top">
     <a href="../installation/overview.md">
-      <img alt="설치(온-프레미스)" src="../assets/icons/servers.svg" width="40"/>
+      <img alt="Installation (on-premises)" src="../assets/icons/servers.svg" width="40"/>
     </a>
     <div>
-      <a href="../installation/overview.md"><strong>설치</strong></a>
-      <p>온-프레미스 배포용 Adobe Commerce을 설치하는 방법에 대해 알아봅니다.</p>
+      <a href="../installation/overview.md"><strong>Installation</strong></a>
+      <p>Learn how to install Adobe Commerce for on-premises deployments.</p>
     </div>
   </td>
   <td valign="top">
@@ -75,8 +75,8 @@ ht-degree: 7%
       <img alt="구성" src="../assets/icons/settings.svg" width="40"/>
     </a>
     <div>
-      <a href="../configuration/overview.md"><strong>구성</strong></a>
-      <p>Adobe Commerce 애플리케이션에 대한 기능 및 서비스를 구성합니다.</p>
+      <a href="../configuration/overview.md"><strong>Configuration</strong></a>
+      <p>Configure features and services for your Adobe Commerce application.</p>
     </div>
   </td>
   <td valign="top">
@@ -84,7 +84,7 @@ ht-degree: 7%
       <img alt="업그레이드" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>업그레이드</strong></a>
+      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
       <p>Adobe Commerce 프로젝트를 업그레이드하여 스토어를 안전하게 보호하고 효율적으로 운영하는 방법을 알아봅니다.</p>
     </div>
   </td>
@@ -102,4 +102,4 @@ ht-degree: 7%
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-04-03 22:13:36 -->
+<!-- Last updated from includes: 2026-04-24 20:40:38 -->
