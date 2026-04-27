@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 QPT v1.1.78에는 다음 패치가 포함됩니다.
 1. **ACP2E-4416**: 관리자에서 만들 때 고객 보상 지점이 초기화되지 않는 문제를 해결합니다.
-1. **ACP2E-4419**: 상점 전면에서 reCAPTCHA v2(&#39;나는 로봇이 아님&#39;) 유효성 검사를 성공한 후 체크아웃 시 기프트 카드가 올바르게 적용되지 않는 문제를 해결했습니다.
+1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: 상점 전면에서 reCAPTCHA v2(&#39;나는 로봇이 아님&#39;) 유효성 검사를 성공한 후 체크아웃 시 기프트 카드가 올바르게 적용되지 않는 문제를 해결했습니다.
 1. **ACP2E-4431**: 색인 재지정 프로세스 중에 대상 규칙과 일치하는 관련 제품이 삭제되는 문제를 해결했습니다.
 1. **ACP2E-4448**: Redis가 복구된 후 Redis 중단 중에 수행된 구성 변경 내용이 반영되지 않아 오래된 값이 지속되는 문제를 해결했습니다.
 1. **ACP2E-4452**: 빠른 주문 페이지의 제품 가격에 세금 표시 구성에 관계없이 세금이 포함되는 문제를 해결했습니다.
