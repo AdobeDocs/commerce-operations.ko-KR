@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ QPT v1.1.78에는 다음 패치가 포함됩니다.
 1. **ACP2E-4456**: GraphQL 돌연변이를 사용하여 주문을 취소하면 전적으로 기프트 카드로 지불된 주문이 [닫힘] 상태로 전환되지 않는 문제가 해결되었습니다.
 1. **ACP2E-4507**: GraphQL 돌연변이를 통해 수행된 고객 암호 재설정 요청에 대해 암호 옵션 구성이 적용되지 않는 문제를 해결했습니다.
 1. **ACP2E-4513**: 만료된 CAPTCHA 이미지가 시스템에서 삭제되지 않는 문제를 해결합니다.
-1. **ACP2E-4522**: 여러 장바구니 병합 또는 견적 저장 요청이 동시에 실행될 때 quote_coupins 테이블에서 간헐적인 중복 키 오류가 발생하는 문제를 해결합니다.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: 여러 장바구니 병합 또는 견적 저장 요청이 동시에 실행될 때 quote_coupins 테이블에서 간헐적인 중복 키 오류가 발생하는 문제를 해결합니다.
 1. **ACP2E-4528**: 이제 슬래시(/) 문자를 허용하고 !, &quot;, # 및 ? 등의 잘못된 문자를 거부하는 고객 주소의 도시 유효성 검사 문제를 해결했습니다.
 1. **ACP2E-4535**: 암호 분실 양식을 제출하면 세션이 파기 또는 재생성되며(PHPSESSID 변경) 게스트 카트가 지워지는 문제를 해결했습니다.
 1. **ACP2E-4540**: Fotorama 라이브러리가 올바르게 로드되지 않아 첨부된 첫 번째 이미지만 표시되는 문제가 해결되었습니다.
