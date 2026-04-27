@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
+source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -29,7 +29,7 @@ QPT v1.1.78에는 다음 패치가 포함됩니다.
 1. **ACP2E-4535**: 암호 분실 양식을 제출하면 세션이 파기 또는 재생성되며(PHPSESSID 변경) 게스트 카트가 지워지는 문제를 해결했습니다.
 1. **ACP2E-4540**: Fotorama 라이브러리가 올바르게 로드되지 않아 첨부된 첫 번째 이미지만 표시되는 문제가 해결되었습니다.
 1. **ACP2E-4555**: &quot;이 포함된 최신 전화 번호 문제를 해결했습니다.&quot; 또는 &quot;/&quot;의 유효성이 제대로 확인되지 않았습니다.
-1. **ACP2E-4565**: X-Adobe-Company 헤더가 사용될 때 회사 GraphQL 쿼리가 &quot;현재 고객이 승인되지 않음&quot;을 반환하는 문제를 해결했습니다.
+1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: X-Adobe-Company 헤더가 사용될 때 회사 GraphQL 쿼리가 &quot;현재 고객이 승인되지 않음&quot;을 반환하는 문제를 해결했습니다.
 1. **ACP2E-4591**: REST API를 통해 주문을 했을 때 &quot;처음 구매자&quot;와 같이 주문 수를 기반으로 한 고객 세그먼트가 업데이트되지 않는 문제를 해결했습니다.
 1. **ACP2E-4609**: 일부 견적에 삭제된 제품이 포함되어 있을 때 내 견적 페이지에 견적이 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-4613**: 큰 미디어 디렉터리 구조로 인해 gettree 응답이 느려져 미디어 갤러리 디렉터리 트리 로드 시간이 길어지는 문제를 해결했습니다.
