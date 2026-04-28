@@ -2,9 +2,9 @@
 title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 3e7cef954a2be506c6f72e704710d16ed1d9b7a3
+source-git-commit: 3bf3c4261073ab649376bb5c7fb84ea591a09869
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '949'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크
 
 3년 지원 기간 동안 고객은 다음에 액세스할 수 있습니다.
 
-- **품질 수정**-고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
+- **품질 수정**-고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 통해 품질 수정 사항에 액세스할 수 있습니다. 다음 표에서는 Adobe Commerce 릴리스 라인에 대한 소프트웨어 지원 종료 날짜에 대해 설명합니다.
 
 - **보안 수정 사항**-Adobe은 3년 지원 기간 동안 누적 보안 패치와 비누적 [격리된 보안 패치 파일](versioning-policy.md#isolated-security-fixes)을 통해 보안 수정 사항을 제공합니다.
 
@@ -49,6 +49,10 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 >- <sup>1</sup> Adobe Commerce 고객인 경우 연장된 지원 기간을 통해 추가 1년 동안 보안 및 품질 수정 사항을 계속 받을 수 있습니다.
 >- [소프트웨어 수명 주기 정책](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)을 참조하세요.
 
+>[!IMPORTANT]
+>
+>버전 2.4.6을 실행하는 가맹점에서 2025년에 [지원 종료](https://www.php.net/eol.php)에 도달한 PHP 8.1을 계속 사용하는 경우 PCI 규정 준수를 보장할 수 없습니다. 마찬가지로 PHP 8.2는 2026년이 끝날 때 [수명 종료](https://www.php.net/supported-versions.php)에 도달하므로 2027년에도 계속 사용하는 판매자에게 동일한 PCI 규정 준수 위험이 발생합니다.
+
 ## Adobe Commerce 2.4.4 및 2.4.5에 대한 추가 보안 수정 프로비저닝
 
 1회 예외로, Adobe은 고객에게 Adobe Commerce as a Cloud Service으로 마이그레이션하거나 지원되는 릴리스 라인으로 업그레이드할 추가적인 시간을 제공하기 위해 Adobe Commerce 버전 2.4.4 및 2.4.5에 대해 확장된 보안 수정 프로비저닝 기간을 제공합니다.
@@ -59,11 +63,11 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 
   격리된 보안 패치 파일을 적용하려면 해당 버전에 대해서만 격리된 보안 수정 사항이 테스트되므로 고객이 지원되는 릴리스 라인에 대해 최신 보안 전용 패치 릴리스(최신 -p 버전)를 사용해야 합니다.
 
-- **품질 수정 또는 엔지니어링 지원이 없음**-이 기간 동안 버전 2.4.4 또는 2.4.5에 대해 버그 수정, 품질 업데이트([품질 패치 도구](../tools/quality-patches-tool/usage.md)) 또는 엔지니어링 지원([Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide))이 제공되지 않습니다.
+- **품질 수정 또는 엔지니어링 지원이 없음**-이 기간 동안 버전 2.4.4 또는 2.4.5에 대해 버그 수정, 품질 업데이트([품질 패치 도구](../tools/quality-patches-tool/usage.md)) 또는 엔지니어링 지원([Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide))이 제공되지 않습니다.
 
 - **PCI 규정 준수가 보장되지 않습니다.**-2.4.4 및 2.4.5는 수명이 끝난 PHP 버전을 사용하므로 해당 릴리스의 판매자에 대해서는 PCI 규정 준수를 보장할 수 없습니다. 이러한 버전을 계속 실행하면 PCI 규정 준수에 문제가 발생할 수 있습니다.
 
-전체 보안 적용 범위를 유지하고 PCI 규정을 준수하려면 고객은 가능한 한 빨리 현재 지원되는 Adobe Commerce 버전으로 업그레이드하거나 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/overview)&#x200B;(으)로 마이그레이션해야 합니다.
+전체 보안 적용 범위를 유지하고 PCI 규정을 준수하려면 고객은 가능한 한 빨리 현재 지원되는 Adobe Commerce 버전으로 업그레이드하거나 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)&#x200B;(으)로 마이그레이션해야 합니다.
 
 | 릴리스 | 일반 가용성 | 확장 지원 종료 | 보안 수정 사항 프로비저닝 종료 |
 |----------------------|----------------------|-------------------------|------------------------------------|
