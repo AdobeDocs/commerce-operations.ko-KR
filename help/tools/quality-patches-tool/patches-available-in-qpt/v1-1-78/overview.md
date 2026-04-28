@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f0aa5266d54a205cba36d9015fe9ed5dca50b599
+source-git-commit: 55b1c830073eaa7bfacae9fb8e9190414d7a990c
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -27,7 +27,7 @@ QPT v1.1.78에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: 여러 장바구니 병합 또는 견적 저장 요청이 동시에 실행될 때 quote_coupins 테이블에서 간헐적인 중복 키 오류가 발생하는 문제를 해결합니다.
 1. **ACP2E-4528**: 이제 슬래시(/) 문자를 허용하고 !, &quot;, # 및 ? 등의 잘못된 문자를 거부하는 고객 주소의 도시 유효성 검사 문제를 해결했습니다.
 1. **ACP2E-4535**: 암호 분실 양식을 제출하면 세션이 파기 또는 재생성되며(PHPSESSID 변경) 게스트 카트가 지워지는 문제를 해결했습니다.
-1. **ACP2E-4540**: Fotorama 라이브러리가 올바르게 로드되지 않아 첨부된 첫 번째 이미지만 표시되는 문제가 해결되었습니다.
+1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)**: Fotorama 라이브러리가 올바르게 로드되지 않아 첨부된 첫 번째 이미지만 표시되는 문제가 해결되었습니다.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: &quot;이 포함된 최신 전화 번호 문제를 해결했습니다.&quot; 또는 &quot;/&quot;의 유효성이 제대로 확인되지 않습니다.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: X-Adobe-Company 헤더가 사용될 때 회사 GraphQL 쿼리가 &quot;현재 고객이 승인되지 않음&quot;을 반환하는 문제를 해결했습니다.
 1. **ACP2E-4591**: REST API를 통해 주문을 했을 때 &quot;처음 구매자&quot;와 같이 주문 수를 기반으로 한 고객 세그먼트가 업데이트되지 않는 문제를 해결했습니다.
