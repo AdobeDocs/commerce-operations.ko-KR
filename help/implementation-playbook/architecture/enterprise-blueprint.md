@@ -26,29 +26,29 @@ Commerce은 성능, 규모 및 보안에 대한 엔터프라이즈 요구 사항
 
 ## 클라우드 기반
 
-[클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)은(는) Commerce 구현의 기반입니다. 클라우드 기반 환경에서 Commerce 애플리케이션을 구축, 배포, 모니터링 및 관리하는 셀프서비스 접근 방식을 통해 [보안](../../security-and-compliance/shared-responsibility.md) 자동 호스팅 플랫폼을 제공합니다.
+[클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/overview)은(는) Commerce 구현의 기반입니다. 클라우드 기반 환경에서 Commerce 애플리케이션을 구축, 배포, 모니터링 및 관리하는 셀프서비스 접근 방식을 통해 [보안](../../security-and-compliance/shared-responsibility.md) 자동 호스팅 플랫폼을 제공합니다.
 
 다음 cloud foundation 기술 세부 사항을 참조하십시오.
 
-- [**확장 아키텍처**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)—안정적이고 예측 가능한 성능을 유지하기 위해 자동으로 용량이 조정되었습니다.
-- [**여러 환경**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—PHP, MySQL(MariaDB), Redis, RabbitMQ 및 지원되는 검색 엔진 기술로 사전 프로비저닝되어 사이트를 개발, 테스트 및 배포합니다.
-- [**구성 관리**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview)—응용 프로그램 설정, 경로, 빌드 및 배포 작업, 알림을 관리할 수 있도록 사용자 지정 가능한 환경 구성 파일 및 CLI(명령줄 인터페이스)입니다.
-- [**Git 기반 워크플로**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) - 신속한 개발 및 지속적인 배포를 위해 코드 변경 사항을 푸시한 후 자동으로 빌드하고 배포합니다.
-- [**기본 제공 가시성**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)—여러 소스의 로그 데이터를 결합하여 사이트 성능을 관리하고 문제를 진단하는 데 도움이 되는 도구입니다.
+- [**확장 아키텍처**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)—안정적이고 예측 가능한 성능을 유지하기 위해 자동으로 용량이 조정되었습니다.
+- [**여러 환경**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—PHP, MySQL(MariaDB), Redis, RabbitMQ 및 지원되는 검색 엔진 기술로 사전 프로비저닝되어 사이트를 개발, 테스트 및 배포합니다.
+- [**구성 관리**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/overview)—응용 프로그램 설정, 경로, 빌드 및 배포 작업, 알림을 관리할 수 있도록 사용자 지정 가능한 환경 구성 파일 및 CLI(명령줄 인터페이스)입니다.
+- [**Git 기반 워크플로**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) - 신속한 개발 및 지속적인 배포를 위해 코드 변경 사항을 푸시한 후 자동으로 빌드하고 배포합니다.
+- [**기본 제공 가시성**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/performance)—여러 소스의 로그 데이터를 결합하여 사이트 성능을 관리하고 문제를 진단하는 데 도움이 되는 도구입니다.
 - 핵심 Commerce 애플리케이션을 타사 시스템과 통합하고 Commerce 기능을 확장하기 위한 [**포괄적인 API 적용 범위**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) 및 [REST](https://developer.adobe.com/commerce/webapi/rest) API
 
 ## Experience Cloud과 통합
 
-Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 맞게 개인화된 상거래 경험을 제공합니다](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 맞게 개인화된 상거래 경험을 제공합니다](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
-[데이터 연결](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview)은(는) 다른 Adobe Digital Experience 제품과 함께 모든 채널에서 개인화된 쇼핑 경험을 만들 수 있도록 쇼핑객의 구매 행동에 대한 통찰력을 잠금 해제합니다.
+[데이터 연결](https://experienceleague.adobe.com/ko/docs/commerce/data-connection/overview)은(는) 다른 Adobe Digital Experience 제품과 함께 모든 채널에서 개인화된 쇼핑 경험을 만들 수 있도록 쇼핑객의 구매 행동에 대한 통찰력을 잠금 해제합니다.
 
 >[!NOTE]
 >
 >자세한 내용은 다음 리소스를 참조하십시오.
 >
->- 자세한 내용은 [Digital Experience 블루프린트](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview)를 참조하십시오.
->- [고객 경험 개인화](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
+>- 자세한 내용은 [Digital Experience 블루프린트](https://experienceleague.adobe.com/ko/docs/blueprints-learn/architecture/overview)를 참조하십시오.
+>- [고객 경험 개인화](https://experienceleague.adobe.com/ko/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
 
 
 ## 서드파티 시스템과의 통합
@@ -70,20 +70,20 @@ Adobe은 통합 및 사용자 지정을 빌드하기 위한 다음 개발자 도
 
 >[!NOTE]
 >
->[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
+>[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/ko/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
 
 ## Storefront 서비스
 
 Adobe은 주요 비즈니스 목표를 지원하는 데 도움이 되는 지능적이고 컴포저블 머천다이징 서비스를 제공합니다. 또한 이러한 서비스는 규모에 맞게 성능을 최적화하는 데 중요한 API를 제공합니다.
 
-- [실시간 검색](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) - 이 AI 기반 검색 도구를 사용하여 쇼핑객에게 보다 스마트하고 빠르며 적절한 결과를 제공합니다.
-- [제품 권장 사항](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview) - 쇼핑객 행동, 인기 트렌드, 제품 유사성 등을 기반으로 AI 기반 권장 사항을 추가합니다.
-- [카탈로그 서비스](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) - 성능을 향상시키고, 확장성을 개선하고, 전환을 늘리는 동시에 고객에게 최적화된 제품 경험을 제공합니다.
-- [결제 서비스](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)—무이자 결제 할부, 결제 처리, 주문 및 청구서에 대한 단일 보기를 포함한 다양한 결제 방법을 제공하여 고객 만족도를 높입니다.
+- [실시간 검색](https://experienceleague.adobe.com/ko/docs/commerce/live-search/overview) - 이 AI 기반 검색 도구를 사용하여 쇼핑객에게 보다 스마트하고 빠르며 적절한 결과를 제공합니다.
+- [제품 권장 사항](https://experienceleague.adobe.com/ko/docs/commerce/product-recommendations/overview) - 쇼핑객 행동, 인기 트렌드, 제품 유사성 등을 기반으로 AI 기반 권장 사항을 추가합니다.
+- [카탈로그 서비스](https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/guide-overview) - 성능을 향상시키고, 확장성을 개선하고, 전환을 늘리는 동시에 고객에게 최적화된 제품 경험을 제공합니다.
+- [결제 서비스](https://experienceleague.adobe.com/ko/docs/commerce/payment-services/guide-overview)—무이자 결제 할부, 결제 처리, 주문 및 청구서에 대한 단일 보기를 포함한 다양한 결제 방법을 제공하여 고객 만족도를 높입니다.
 
 ## 헤드리스 상점
 
 Headless 거래는 API 우선 거래입니다. Adobe Commerce은 GraphQL API 계층을 통해 모든 상거래 서비스 및 데이터를 제공하는 분리된 아키텍처를 통해 완전히 headless입니다. 이 아키텍처를 통해 팀은 핵심 애플리케이션과 독립적으로 전면을 개발할 수 있으므로 새로운 기술을 통해 새로운 접점을 신속하게 구축하고 테스트할 수 있는 민첩성을 제공합니다.
 
-Adobe은 문서 기반 작성, 성능 우선 아키텍처 및 즉시 사용 가능한 기본 실험을 통해 [Edge Delivery Services](https://www.aem.live/home)에서 제공하는 것과 동일한 이점과 기능을 포함하는 최신 headless 상점 전면 기술을 제공합니다. Adobe Commerce [상점 서비스](#storefront-services)의 규모와 성능, [수신 구성 요소](https://experienceleague.adobe.com/developer/commerce/storefront/)의 유연성과 편리성을 활용하여 상거래 기능을 제공합니다.
+Adobe은 문서 기반 작성, 성능 우선 아키텍처 및 즉시 사용 가능한 기본 실험을 통해 [Edge Delivery Services](https://www.aem.live/home)에서 제공하는 것과 동일한 이점과 기능을 포함하는 최신 headless 상점 전면 기술을 제공합니다. Adobe Commerce [상점 서비스](#storefront-services)의 규모와 성능, [수신 구성 요소](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ko)의 유연성과 편리성을 활용하여 상거래 기능을 제공합니다.
 
