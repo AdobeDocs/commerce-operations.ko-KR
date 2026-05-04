@@ -3,9 +3,9 @@ title: 파일 시스템 액세스 권한
 description: 개발 및 프로덕션 시스템에 대한 Commerce 애플리케이션 파일 시스템의 소유자 또는 소유자를 설정하는 방법을 참조하십시오.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ ht-degree: 0%
 
 1. 프로덕션 모드로 변경합니다.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. 다음 디렉터리에 대한 쓰기 권한을 제거합니다.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. 명령줄 도구를 실행 가능한 것으로 만듭니다.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,13 +98,13 @@ ht-degree: 0%
 1. Commerce 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
 ### 선택적으로 `magento_umask` 설정
 
-[설치 안내서](../../installation/next-steps/set-umask.md)에서 _필요에 따라 umask 설정_&#x200B;을 참조하십시오.
+_설치 안내서_&#x200B;에서 [필요에 따라 umask 설정](../../installation/next-steps/set-umask.md)을 참조하십시오.
 
 ## 비공개 호스팅을 위한 운영 파일 시스템 소유권(사용자 2명)
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 - `pub/media`
 - `app/etc`
 
-권한이 항상 상위 디렉터리에서 상속되도록 디렉터리에 [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/)비트를 설정하십시오.
+권한이 항상 상위 디렉터리에서 상속되도록 디렉터리에 [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits)비트를 설정하십시오.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ ht-degree: 0%
 1. 파일 시스템 소유자로 Commerce 서버에 로그인하거나 파일 시스템 소유자로 전환합니다.
 1. 표시된 순서대로 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ ht-degree: 0%
 1. Commerce 설치 디렉토리로 변경합니다.
 1. 파일 시스템 소유자로서 다음 명령을 입력하여 프로덕션 모드로 변경합니다.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. `root` 권한이 있는 사용자로 다음 명령을 입력하십시오.
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ ht-degree: 0%
 1. Commerce 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

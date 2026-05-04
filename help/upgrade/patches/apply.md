@@ -2,9 +2,9 @@
 title: 패치 적용
 description: Adobe Commerce 프로젝트에 패치를 적용하는 방법에 대해 알아봅니다.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 방법 중 하나를 사용하여 패치를 적용할 수 있습니다.
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [명령줄](../patches/apply.md#command-line)
 - [작성기](../patches/apply.md#composer)
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. 명령줄 응용 프로그램을 열고 프로젝트 디렉터리로 이동합니다.
 1. `cweagans/composer-patches` 플러그인을 `composer.json` 파일에 추가합니다.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
@@ -57,13 +57,13 @@ ht-degree: 0%
 
 1. 패치를 적용합니다. 디버깅 정보를 보려면 `-v` 옵션을 사용하십시오.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. `composer.lock` 파일을 업데이트합니다. 잠금 파일은 개체의 각 Composer 패키지에 적용된 패치를 추적합니다.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 1. 서버에 [admin user](../../configuration/cli/config-cli.md#prerequisites)(으)로 로그인하고 파일이 올바른 디렉터리에 있는지 확인하십시오.
 1. 명령줄 인터페이스에서 패치 확장에 따라 다음 명령을 실행합니다.
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

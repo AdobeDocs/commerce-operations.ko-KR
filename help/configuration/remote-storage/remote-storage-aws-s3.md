@@ -3,9 +3,9 @@ title: 원격 스토리지용 AWS S3 버킷 구성
 description: 원격 스토리지용 AWS S3 스토리지 서비스를 사용하도록 Commerce 프로젝트를 구성합니다.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ ht-degree: 0%
 
 1. 기본 데이터베이스 저장소를 비활성화합니다.
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
 1. 개인 버킷을 사용하도록 Commerce을 구성합니다. 매개 변수의 전체 목록은 [원격 저장소 옵션](remote-storage.md#remote-storage-options)을 참조하십시오.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. 미디어 파일을 원격 스토리지와 동기화합니다.
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 

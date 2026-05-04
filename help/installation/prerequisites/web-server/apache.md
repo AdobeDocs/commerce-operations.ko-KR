@@ -2,11 +2,11 @@
 title: 온-프레미스 배포용 Apache 설치
 description: 온-프레미스 Adobe Commerce 배포용 Apache를 설치하고 구성하는 방법에 대해 알아봅니다. 필요한 모듈, 재작성 및 ".htaccess" 설정을 활성화합니다.
 feature: Install, Configuration
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ URL에 문제를 일으킬 수 있는 인코딩된 슬래시를 디코딩하지 
 
 1. Apache 재작성 모듈 활성화:
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -68,11 +68,11 @@ URL에 문제를 일으킬 수 있는 인코딩된 슬래시를 디코딩하지 
 
    >[!NOTE]
    >
-   >이전 Apache 버전에서 업그레이드한 경우 먼저 `<Directory "/var/www/html">`에서 기존 `<Directory "/var/www">` 또는 `000-default.conf` 블록을 찾으십시오. 다른 `docroot`에 Adobe Commerce을 설치하는 경우 해당 경로에 대해 일치하는 `<Directory>` 블록을 업데이트하십시오.
+   >이전 Apache 버전에서 업그레이드한 경우 먼저 `000-default.conf`에서 기존 `<Directory "/var/www/html">` 또는 `<Directory "/var/www">` 블록을 찾으십시오. 다른 `docroot`에 Adobe Commerce을 설치하는 경우 해당 경로에 대해 일치하는 `<Directory>` 블록을 업데이트하십시오.
 
 1. 변경 사항을 적용하려면 Apache를 다시 시작하십시오.
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -91,7 +91,7 @@ Adobe Commerce을 사용하려면 다음 Apache 모듈이 설치되어 있어야
 
 Apache가 설치되었는지 확인하고 현재 버전을 보려면 다음을 입력합니다.
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -120,13 +120,13 @@ Apache 서버 재작성을 구성할 때 응용 프로그램에서 재작성 규
 
 1. 아직 설치하지 않은 경우 Apache를 설치합니다.
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. 설치 확인:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -149,7 +149,7 @@ Apache가 이미 설치되어 있고 `2.4` 이전 버전을 사용 중인 경우
 
 1. 패키지 정보 업데이트:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -157,7 +157,7 @@ Apache가 이미 설치되어 있고 `2.4` 이전 버전을 사용 중인 경우
 
 1. Apache 설치 또는 업그레이드:
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -167,19 +167,19 @@ Apache가 이미 설치되어 있고 `2.4` 이전 버전을 사용 중인 경우
 
 1. 설치 확인:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
 1. 설치된 버전이 [시스템 요구 사항](../../system-requirements.md)에서 Adobe Commerce 릴리스에 대해 지원되는 버전과 일치하는지 확인하십시오.
 
-1. Ubuntu[에 대해 `.htaccess`다시 쓰기 및 &#x200B;](#enable-rewrites-and-htaccess-for-ubuntu)을(를) 사용하도록 설정합니다.
+1. Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu)에 대해 [다시 쓰기 및 `.htaccess`을(를) 사용하도록 설정합니다.
 
 ### Ubuntu에 대한 재작성 및 .htaccess 활성화
 
 1. 편집할 `/etc/apache2/sites-available/000-default.conf` 파일을 엽니다.
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -206,17 +206,17 @@ Apache가 이미 설치되어 있고 `2.4` 이전 버전을 사용 중인 경우
 
 1. `mod_rewrite` 모듈을 사용하도록 Apache 구성:
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. 변경 사항을 적용하려면 Apache를 다시 시작하십시오.
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -238,13 +238,13 @@ Apache 서버 재작성을 구성할 때 응용 프로그램에서 재작성 규
 
 1. 아직 설치하지 않았다면 Apache를 설치합니다.
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. 설치 확인:
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -265,7 +265,7 @@ Apache 서버 재작성을 구성할 때 응용 프로그램에서 재작성 규
 
 1. 편집할 `/etc/httpd/conf/httpd.conf` 파일을 엽니다.
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -296,7 +296,7 @@ Apache 서버 재작성을 구성할 때 응용 프로그램에서 재작성 규
 
 1. Apache 설정을 적용하려면 Apache를 다시 시작합니다.
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

@@ -2,9 +2,9 @@
 title: 부트스트랩 매개 변수 값 설정
 description: Commerce 애플리케이션에 대한 부트스트랩 매개 변수를 설정하는 방법에 대해 알아봅니다.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 예를 들어 `MAGE_PROFILER` 시스템 환경 변수를 사용하여 다음과 같이 모드를 지정할 수 있습니다.
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ MAGE_PROFILER={firebug|csv|<custom value>}
 
 CentOS에 대한 Bash 셸 예:
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx 설정
 
-[GitHub](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16)에서 _Nginx 샘플 구성_&#x200B;을 참조하세요.
+_GitHub_&#x200B;에서 [Nginx 샘플 구성](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16)을 참조하세요.
 
 ### Apache .htaccess 설정
 
@@ -80,7 +80,7 @@ Commerce 응용 프로그램의 시작 지점에 따라 다음 위치에서 `.ht
 
 1. `MAGE_PROFILER`의 값을 다음 중 하나로 설정하십시오.
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -124,13 +124,13 @@ Apache `mod_env` 지시문이 [Apache 버전 2.2](https://httpd.apache.org/docs/
 1. 변경 사항을 저장하고 텍스트 편집기를 종료합니다.
 1. 가상 호스트를 활성화하지 않은 경우 다음을 수행합니다.
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    For example,
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

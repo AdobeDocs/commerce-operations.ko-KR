@@ -2,9 +2,9 @@
 title: LESS 파일에 대한 심볼릭 링크 만들기
 description: Adobe Commerce 개발을 위해 LESS 파일에 대한 심볼릭 링크를 만드는 방법을 알아봅니다. 스타일시트 연결 및 개발 워크플로우 최적화를 살펴봅니다.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ LESS 파일에 대한 심볼릭 링크를 만들려면:
 
 명령 옵션:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="..."] [--theme="..."] [file1] ... [fileN]
 ```
 
@@ -33,17 +33,17 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 | `--locale` | 로케일 코드.<br>로케일 코드 목록을 표시하려면 `bin/magento info:language:list`을(를) 입력하십시오. | 아니요 |
 | `--area` | 영역(관리 영역의 경우 `adminhtml`, 상점 앞의 경우 `frontend`). | 아니요 |
 | `--theme` | `<VendorName>/<theme-name>` 형식의 테마 이름입니다. 예: `Magento/blank` 또는 `Magento/backend`. | 아니요 |
-| `<file>` | CSS 확장명 없이 LESS로 변환할 CSS 파일의 공백으로 구분된 목록입니다. (adminhtml 유형 `css/styles-m css/styles-l`의 기본값은 `css/styles css/styles-old`입니다.) | 아니요 |
+| `<file>` | CSS 확장명 없이 LESS로 변환할 CSS 파일의 공백으로 구분된 목록입니다. (adminhtml 유형 `css/styles css/styles-old`의 기본값은 `css/styles-m css/styles-l`입니다.) | 아니요 |
 
-예를 들어 `VendorName/themeName`(이)라는 CSS 파일을 사용하여 `en_US` 로케일에서 `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`(이)라는 프론트엔드 테마에 대한 LESS 파일을 만들려면 다음 명령을 입력합니다.
+예를 들어 `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`(이)라는 CSS 파일을 사용하여 `en_US` 로케일에서 `VendorName/themeName`(이)라는 프론트엔드 테마에 대한 LESS 파일을 만들려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
 ```
 
 성공을 확인하기 위해 다음 메시지가 표시됩니다.
 
-```
+```text
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.
@@ -51,6 +51,6 @@ Successfully processed.
 
 adminhtml에 대해 더 적은 파일을 생성하려면 다음을 수행합니다.
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old
 ```

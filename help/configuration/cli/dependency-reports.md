@@ -2,9 +2,9 @@
 title: 종속성 보고서
 description: Adobe Commerce의 모듈, 순환 및 프레임워크 종속성을 보여 주는 종속성 보고서를 만드는 방법을 알아봅니다. 분석 및 보고 도구를 살펴봅니다.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 명령 옵션:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -51,7 +51,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 다음은 샘플 모듈 종속성 보고서에 대한 출력의 일부입니다.
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 다음은 샘플 순환 종속성 보고서에 대한 출력의 일부입니다.
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 다음은 샘플 프레임워크 종속성 보고서에 대한 출력의 일부입니다.
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

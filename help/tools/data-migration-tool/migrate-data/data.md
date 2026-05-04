@@ -3,9 +3,9 @@ title: 데이터 마이그레이션
 description: ' [!DNL Data Migration Tool]을(를) 사용하여 Magento 1에서 Magento 2로 데이터 마이그레이션을 시작하는 방법에 대해 알아봅니다.'
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 데이터 마이그레이션을 시작하려면 다음을 실행합니다.
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

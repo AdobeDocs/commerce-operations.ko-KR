@@ -2,9 +2,9 @@
 title: 개인 정보 JavaScript 라이브러리
 description: Adobe Commerce에서 수집한 고객 개인 정보에 액세스하고 삭제하는 데 사용자 지정 도구를 사용하는 방법을 알아봅니다.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Commerce 데이터 추적 서비스는 [GDPR(일반 데이터 보호 규정)](gd
 
 >[!NOTE]
 >
->[쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ko)가 활성화된 경우, Commerce은 구매자가 동의할 때까지 행동 데이터를 수집하지 않습니다. [!UICONTROL **쿠키 제한 모드**]&#x200B;를 사용하지 않도록 설정하면 Commerce에서 기본적으로 동작 데이터를 수집합니다.
+>[쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)가 활성화된 경우, Commerce은 구매자가 동의할 때까지 행동 데이터를 수집하지 않습니다. [!UICONTROL **쿠키 제한 모드**]&#x200B;를 사용하지 않도록 설정하면 Commerce에서 기본적으로 동작 데이터를 수집합니다.
 
 ## 설치
 
 CDN 위치 `commerce.adobe.net/magentoprivacy.js`에서 개인 정보 JavaScript 라이브러리를 사용할 수 있습니다.
 
-파일이 있으면 Adobe Commerce 인스턴스에 설치된 사용자 지정 모듈 또는 테마에 추가해야 합니다. 이 작업을 수행하려면 [사용자 지정 JavaScript 사용](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 항목에 설명된 지침을 따르십시오.
+파일이 있으면 Adobe Commerce 인스턴스에 설치된 사용자 지정 모듈 또는 테마에 추가해야 합니다. 이 작업을 수행하려면 [사용자 지정 JavaScript 사용](https://developer.adobe.com/commerce/frontend-core/javascript/custom) 항목에 설명된 지침을 따르십시오.
 
 ### 초기화
 

@@ -5,9 +5,9 @@ feature: Search
 role: Admin, Developer
 exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -39,7 +39,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
 1. 성능 도구 키트 `small.xml`을(를) 사용하여 Adobe Commerce Develop을 설정합니다.
 1. 다음 명령을 사용하여 SQL 명령줄에 액세스하고 `search_query` 테이블을 삭제합니다.
 
-   ```
+   ```text
    SET FOREIGN_KEY_CHECKS = 0;  
    DROP TABLE search_query;  
    SET FOREIGN_KEY_CHECKS = 1;  
@@ -48,7 +48,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
 1. `search_query` 테이블을 많은 레코드(예: 4백만 개 레코드)로 채웁니다.
 1. 리인덱싱을 트리거하고 캐시를 플러시합니다.
 
-   ```
+   ```shell
    bin/magento indexer:reindex  
    bin/magento c:c  
    bin/magento c:f  
@@ -56,7 +56,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
 
 1. 데이터베이스 디버그 로그 활성화:
 
-   ```
+   ```shell
    bin/magento dev:query-log:enable  
    ```
 
@@ -64,7 +64,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
    `http://your_magento_instance/default/catalogsearch/result/?q=test.`
 1. 다음 SQL의 쿼리 실행 시간에 대한 `db.log`을(를) 확인하십시오.
 
-   ```
+   ```sql
    SELECT COUNT(*) FROM (  
    SELECT DISTINCT `main_table`.`query_text`  
    FROM `search_query` AS `main_table`  
@@ -82,7 +82,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
 
 큰 `search_query` 테이블의 비효율적인 처리로 인해 쿼리 실행 시간이 크게 증가합니다.
 
-```
+```text
 TIME: 10.8520 seconds  
 ```
 
@@ -90,8 +90,8 @@ TIME: 10.8520 seconds
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 

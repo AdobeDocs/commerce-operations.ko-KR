@@ -2,7 +2,7 @@
 title: 데이터베이스 상태 확인
 description: 다음 단계에 따라 Adobe Commerce 데이터베이스 상태를 확인하십시오.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 데이터베이스의 상태를 확인합니다.
 
-```bash
+```shell
 bin/magento setup:db:status
 ```
 
@@ -25,7 +25,7 @@ bin/magento setup:db:status
 
 샘플 출력은 다음과 같습니다.
 
-```
+```text
 All modules are up to date.
 ```
 

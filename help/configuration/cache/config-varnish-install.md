@@ -3,9 +3,9 @@ title: 니스 설치
 description: Adobe Commerce 캐싱을 위한 Vanish 설치 요구 사항에 대해 알아봅니다. 설치 리소스 및 설치 지침을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 0%
 Varnish 소프트웨어를 설치하는 것은 이 안내서의 범위를 벗어납니다. Vannish 설치에 대한 자세한 내용은 다음을 참조하십시오.
 
 - [설치 안내서](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
-- [바니시 설치 가이드](https://www.varnish-cache.org/docs)
-- [바니시(Tecmint)를 설치하는 방법](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [니시 설치 가이드](https://www.varnish-cache.org/docs)
+- [바니쉬 설치 방법 (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
@@ -28,7 +28,7 @@ Varnish 소프트웨어를 설치하는 것은 이 안내서의 범위를 벗어
 
 터미널을 열고 다음 명령을 입력하여 Varnish 버전을 표시합니다.
 
-```bash
+```shell
 varnishd -V
 ```
 

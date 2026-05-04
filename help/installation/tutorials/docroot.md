@@ -3,9 +3,9 @@ title: 보안을 향상하도록 docroot 수정
 description: Adobe Commerce 온-프레미스 파일 시스템에 대한 무단 브라우저 기반 액세스를 차단합니다.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ server {
 1. 애플리케이션 서버에 로그인합니다.
 1. 가상 호스트 파일 편집:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,7 +92,7 @@ server {
 
 1. Apache 다시 시작:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
@@ -106,7 +106,7 @@ server {
 
 1. 데이터베이스에 로그인:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -136,35 +136,35 @@ server {
 
 ## &#x200B;4. 모드 전환
 
-[&#x200B; 및 &#x200B;](../../configuration/bootstrap/application-modes.md)을(를) 포함하는 `production`응용 프로그램 모드`developer`은(는) 보안을 강화하고 개발을 더 쉽게 하도록 설계되었습니다. 이름을 통해 알 수 있듯이 응용 프로그램을 확장하거나 사용자 지정할 때는 `developer` 모드로 전환하고, 라이브 환경에서 실행할 때는 `production` 모드로 전환해야 합니다.
+`production` 및 `developer`을(를) 포함하는 [응용 프로그램 모드](../../configuration/bootstrap/application-modes.md)은(는) 보안을 강화하고 개발을 더 쉽게 하도록 설계되었습니다. 이름을 통해 알 수 있듯이 응용 프로그램을 확장하거나 사용자 지정할 때는 `developer` 모드로 전환하고, 라이브 환경에서 실행할 때는 `production` 모드로 전환해야 합니다.
 
 모드 간 전환은 서버 구성이 제대로 작동하는지 확인하는 중요한 단계입니다. CLI 도구를 사용하여 모드 간에 전환할 수 있습니다.
 
 1. 설치 디렉토리로 이동합니다.
 1. `production` 모드로 전환합니다.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. 브라우저를 새로 고치고 상점 전면이 제대로 표시되는지 확인하십시오.
 1. `developer` 모드로 전환합니다.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. 브라우저를 새로 고치고 상점 전면이 제대로 표시되는지 확인하십시오.
 
-## &#x200B;5. 상점 첫 화면 확인
+## &#x200B;5. 상점 확인
 
 웹 브라우저의 상점 앞으로 이동하여 모든 것이 제대로 작동하는지 확인하십시오.
 

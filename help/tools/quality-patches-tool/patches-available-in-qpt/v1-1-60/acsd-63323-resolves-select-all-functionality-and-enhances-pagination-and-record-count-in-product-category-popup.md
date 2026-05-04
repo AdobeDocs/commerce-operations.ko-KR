@@ -5,9 +5,9 @@ feature: Products
 role: Admin, Developer
 exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -26,18 +26,18 @@ ACSD-63323 패치는 범주에 제품을 추가할 때 **[!UICONTROL Select All]
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
-관리자 > **[!UICONTROL Select All]** > 범주 선택 > **[!UICONTROL Categories]** > **[!UICONTROL Products in Category]**&#x200B;에서 **[!UICONTROL Add Products]** 옵션이 작동하지 않는 문제를 해결했습니다. 또한 팝업 그리드를 통해 카테고리에 제품을 추가할 때 페이지 매김 및 레코드 수 레이블이 올바르게 작동하는 데 도움이 됩니다.
+관리자 > **[!UICONTROL Categories]** > 범주 선택 > **[!UICONTROL Products in Category]** > **[!UICONTROL Add Products]**&#x200B;에서 **[!UICONTROL Select All]** 옵션이 작동하지 않는 문제를 해결했습니다. 또한 팝업 그리드를 통해 카테고리에 제품을 추가할 때 페이지 매김 및 레코드 수 레이블이 올바르게 작동하는 데 도움이 됩니다.
 
 
 <u>재현 단계</u>:
 
 1. 다음 명령을 사용하여 *1200* 제품을 생성합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 
@@ -60,8 +60,8 @@ ACSD-63323 패치는 범주에 제품을 추가할 때 **[!UICONTROL Select All]
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 
 ## 관련 읽기

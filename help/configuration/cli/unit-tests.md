@@ -2,7 +2,7 @@
 title: 단위 테스트 실행
 description: Adobe Commerce 코드베이스에 정의된 단위 테스트를 실행하는 방법에 대해 알아봅니다. 테스트 명령, 실행 옵션 및 결과 보고를 살펴봅니다.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 - `Magento_Developer` 모듈을 사용하도록 설정해야 합니다. 다음과 같이 활성화할 수 있습니다.
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ ht-degree: 0%
 
 명령 사용:
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 사용 가능한 테스트 유형을 나열하려면 다음을 수행합니다.
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 샘플 반환:
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 예를 들어 통합 테스트를 실행하려면 다음을 수행합니다.
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

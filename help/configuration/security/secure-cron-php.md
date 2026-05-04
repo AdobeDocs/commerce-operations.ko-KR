@@ -1,11 +1,11 @@
 ---
 title: 보안 크론 PHP
-description: 브라우저에서 cron.php 파일을 실행할 수 있는 사용자를 제한합니다.
+description: pub/cron.php에 대한 브라우저 액세스를 제한하고 승인되지 않거나 악의적인 크론 실행에 대해 Adobe Commerce 예약된 작업을 보호하는 방법을 알아봅니다.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -47,11 +47,11 @@ cron 작업은 예약된 여러 작업을 실행하며 Commerce 구성의 중요
 
 `root` 권한이 있는 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -61,7 +61,7 @@ htpasswd -c /usr/local/apache/password/passwords <username>
 
 암호 파일에 다른 사용자를 추가하려면 `root` 권한을 가진 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -71,13 +71,13 @@ htpasswd /usr/local/apache/password/passwords <username>
 
 암호 파일에 다른 사용자를 추가하려면 다음 작업을 수행하십시오.
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 승인된 그룹을 만들려면 웹 서버 docroot 외부의 아무 곳에나 그룹 파일을 만듭니다. 그룹 파일은 그룹의 이름과 그룹의 사용자를 지정합니다. 이 예제에서 그룹 이름은 `MagentoCronGroup`입니다.
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -96,7 +96,7 @@ MagentoCronGroup: <username1> ... <usernameN>
 
    `cron.php`이(가) `pub` 디렉터리에 있으므로 이 `.htaccess`만 편집하십시오.
 
-1. _하나 이상의 사용자에 대한 크론 액세스 권한._ 기존 `<Files cron.php>` 지시문을 다음으로 바꾸기:
+1. _하나 이상의 사용자에 대한 크론 액세스._ 기존 `<Files cron.php>` 지시문을 다음으로 바꿉니다.
 
    ```conf
    <Files cron.php>
@@ -107,7 +107,7 @@ MagentoCronGroup: <username1> ... <usernameN>
    </Files>
    ```
 
-1. 그룹에 대한 _크론 액세스 권한._ 기존 `<Files cron.php>` 지시문을 다음으로 바꾸기:
+1. 그룹에 대한 _크론 액세스._ 기존 `<Files cron.php>` 지시문을 다음으로 바꿉니다.
 
    ```conf
    <Files cron.php>
@@ -133,7 +133,7 @@ MagentoCronGroup: <username1> ... <usernameN>
 
 계속하기 전에 다음 리소스 중 하나를 참조하여 암호 파일을 생성하십시오.
 
-- [Ubuntu 14.04(DigitalOcean)에서 Nginx를 사용하여 암호 인증을 설정하는 방법](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Ubuntu 14.04 (DigitalOcean)에서 Nginx를 사용하여 암호 인증을 설정하는 방법](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 - [Nginx를 사용한 기본 HTTP 인증(howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
 ### `nginx.conf.sample`의 보안 크론
@@ -163,7 +163,7 @@ Commerce은 최적화된 샘플 nginx 구성 파일을 즉시 제공합니다. c
 
 1.nginx 다시 시작:
 
-```bash
+```shell
 systemctl restart nginx
 ```
 
@@ -183,7 +183,7 @@ systemctl restart nginx
 
    For example,
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

@@ -2,9 +2,9 @@
 title: Adobe Commerce 제거 또는 재설치
 description: Adobe Commerce의 온-프레미스 설치를 제거하고 다시 설치하려면 다음 단계를 따르십시오.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 응용 프로그램을 제거하려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
 성공적으로 제거되었음을 확인하는 메시지가 표시됩니다.
 
-```
+```text
 [SUCCESS]: Magento uninstallation complete.
 ```
 
@@ -49,7 +49,7 @@ bin/magento setup:uninstall
 
 그러나 일부 상황(특히 프로덕션에 배포)에서는 시간이 걸릴 수 있으므로 컴파일된 코드를 지우지 않는 것이 좋습니다. (캐시가 아직 지워졌습니다.) 컴파일된 코드를 지우지 않고 *데이터베이스 스키마 및 데이터를 업데이트하려면* 다음을 입력하십시오.
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 

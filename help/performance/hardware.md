@@ -3,9 +3,9 @@ title: 하드웨어 권장 사항
 description: 최적의 Adobe Commerce 성능을 위한 하드웨어 권장 사항에 대해 알아봅니다. 프로덕션 배포를 위한 CPU, 메모리 및 스토리지 요구 사항을 알아봅니다.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce] 웹 노드는 응용 프로그램을 통해 캐시되지 않거나 캐시될 수 없는 모든 요청을 제공합니다. 하나의 CPU 코어는 2개(경우에 따라 최대 4개) 정도의 [!DNL Commerce] 요청을 효과적으로 처리할 수 있습니다. 다음 방정식을 사용하여 모든 들어오는 요청을 큐에 넣지 않고 처리하는 데 필요한 웹 노드/코어의 수를 결정합니다.
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

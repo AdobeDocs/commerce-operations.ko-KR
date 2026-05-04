@@ -5,9 +5,9 @@ feature: Products, Data Import/Export, Media
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0bfff90e-5f1f-4c87-8a99-efc5bb0d814b
-source-git-commit: e0d2e42b070591f3fefc0e9adb1bf5c1ba580fd9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-66082 패치는 제품 가져오기를 통해 제품의 견본 이미지를
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -40,7 +40,7 @@ ACSD-66082 패치는 제품 가져오기를 통해 제품의 견본 이미지를
 1. 이름이 *testing.png*&#x200B;인 PNG 이미지를 `var/import/images/`에 업로드합니다.
 1. 다음 내용으로 CSV 파일을 만듭니다.
 
-   ```
+   ```text
    sku,swatch_image,swatch_image_label
    ABC,testing.png,testing
    ```
@@ -51,7 +51,7 @@ ACSD-66082 패치는 제품 가져오기를 통해 제품의 견본 이미지를
    * 가져올 이전 단계에서 만든 CSV 파일을 선택하려면 **[!UICONTROL Choose File]**&#x200B;을(를) 클릭하십시오. 가져오기에 성공하고 견본이 추가됩니다.
 1. 다음 콘텐츠로 CSV를 업데이트합니다.
 
-   ```
+   ```text
    sku,swatch_image,swatch_image_label
    ABC,__EMPTY__VALUE__,__EMPTY__VALUE__
    ```
@@ -70,8 +70,8 @@ ACSD-66082 패치는 제품 가져오기를 통해 제품의 견본 이미지를
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 

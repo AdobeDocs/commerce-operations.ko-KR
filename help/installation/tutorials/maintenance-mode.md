@@ -2,9 +2,9 @@
 title: 유지 관리 모드 활성화 또는 비활성화
 description: 유지 관리를 위해 Adobe Commerce 배포가 중단될 때 고객이 볼 수 있는 내용을 사용자 지정하려면 다음 단계를 따르십시오.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,15 @@ Adobe Commerce은 [유지 관리 모드](../../configuration/bootstrap/applicati
 
 명령 사용:
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:status
 ```
 
@@ -52,13 +52,13 @@ bin/magento maintenance:status
 
 예를 들어 IP 주소 면제가 없는 유지 관리 모드를 활성화하려면 다음을 수행합니다.
 
-```bash
+```shell
 bin/magento maintenance:enable
 ```
 
 192.0.2.10 및 192.0.2.11을(를) 제외한 모든 클라이언트에 대한 유지 관리 모드를 활성화하려면:
 
-```bash
+```shell
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
@@ -69,7 +69,7 @@ bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 
 제외 IP 주소 목록을 유지 관리하기 위해 이전 명령에서 `[--ip=<ip list>]` 옵션을 사용하거나 다음을 사용할 수 있습니다.
 
-```bash
+```shell
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 
@@ -94,7 +94,7 @@ if (isset($_GET['skin'])) {
 }
 ```
 
-URL에 `.htaccess` 매개 변수를 추가하는 `skin` 파일의 다시 작성 규칙에도 추가할 수 있습니다.
+URL에 `skin` 매개 변수를 추가하는 `.htaccess` 파일의 다시 작성 규칙에도 추가할 수 있습니다.
 
 ### $_GET[&#39;skin&#39;] 매개 변수
 
@@ -119,7 +119,7 @@ URL에 `.htaccess` 매개 변수를 추가하는 `skin` 파일의 다시 작성 
 
 1. `503.phtml` 파일의 지역화된 콘텐츠와 `styles.css` 파일의 사용자 지정 스타일을 제공하도록 이러한 파일을 편집하십시오.
 
-   경로가 `errors` 디렉터리를 가리키는지 확인하십시오. 디렉터리 이름이 `RewriteRule`에 표시된 URL 매개 변수와 일치해야 합니다. 앞의 예제에서는 `sub`(`RewriteRule`)에 매개 변수로 지정된 `skin=sub` 디렉터리가 사용되었습니다.
+   경로가 `errors` 디렉터리를 가리키는지 확인하십시오. 디렉터리 이름이 `RewriteRule`에 표시된 URL 매개 변수와 일치해야 합니다. 앞의 예제에서는 `RewriteRule`(`skin=sub`)에 매개 변수로 지정된 `sub` 디렉터리가 사용되었습니다.
 
 >[!NOTE]
 >

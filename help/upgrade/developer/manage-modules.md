@@ -3,9 +3,9 @@ title: 모듈 및 확장 관리(개발자)
 description: 명령줄 인터페이스와 Composer 패키지 관리자를 사용하여 Adobe Commerce 모듈 및 확장을 관리합니다.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 기여 개발자는 Adobe Commerce `composer.json` 파일에서 해당 버전을 지정하여 모듈 및 확장을 업그레이드합니다. 기여 개발자가 아닌 경우 [업그레이드 수행](../implementation/perform-upgrade.md)을 참조하세요.
 
-`require` 파일에 `composer.json` 섹션을 추가하거나 다음과 같이 `composer require` 명령을 사용할 수 있습니다.
+`composer.json` 파일에 `require` 섹션을 추가하거나 다음과 같이 `composer require` 명령을 사용할 수 있습니다.
 
 {{$include /help/_includes/server-login.md}}
 
@@ -24,13 +24,13 @@ ht-degree: 3%
 
 명령 사용:
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 For example:
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -38,13 +38,13 @@ composer show --all example/module
 
 명령 사용:
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 For example:
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -67,7 +67,7 @@ Composer가 종속성을 업데이트하고 모듈을 설치하는 동안 잠시
 
 1. 종속성을 해결하고 `composer.lock` 파일에 정확한 버전을 쓰십시오.
 
-   ```bash
+   ```shell
    composer update
    ```
 

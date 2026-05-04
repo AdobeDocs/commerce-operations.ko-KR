@@ -2,9 +2,9 @@
 title: 작업 모드 설정
 description: 개발자와 프로덕션 간에 Adobe Commerce 작업 모드를 설정하는 방법을 알아봅니다. 모드 전환 명령 및 보안과 관련된 사항을 살펴봅니다.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 개발자 또는 프로덕션 모드로 변경하면 다음 디렉토리의 내용이 지워집니다.
 
-```
+```text
 var/cache
 generated/metadata
 generated/code
@@ -48,13 +48,13 @@ pub/static
 
 명령 사용:
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
 다음과 유사한 메시지가 표시됩니다.
 
-```
+```text
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -66,7 +66,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 명령 사용:
 
-```bash
+```shell
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
@@ -80,13 +80,13 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 ### 프로덕션 모드로 변경
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
 다음 디스플레이와 유사한 메시지:
 
-```
+```text
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -131,31 +131,31 @@ Enabled production mode.
 
 1. 프로덕션 모드에서 개발자 모드로 변경하는 경우 `generated/code` 및 `generated/metadata` 디렉터리의 내용을 삭제합니다.
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
 1. 모드를 설정합니다.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
    다음 메시지가 표시됩니다.
 
-   ```
+   ```text
    Enabled developer mode.
    ```
 
 ### 기본 모드로 변경
 
-```bash
+```shell
 bin/magento deploy:mode:set default
 ```
 
 다음 메시지가 표시됩니다.
 
-```
+```text
 Enabled default mode.
 ```
 
@@ -163,4 +163,4 @@ Enabled default mode.
 
 [어디서나 CLI 명령 실행](../cli/config-cli.md#config-install-cli-first).
 
-`<Commerce-install-directory>/bin` 시스템에 `PATH`을(를) 추가하지 않은 경우 명령을 직접 실행할 때 오류가 발생할 수 있습니다.
+`PATH` 시스템에 `<Commerce-install-directory>/bin`을(를) 추가하지 않은 경우 명령을 직접 실행할 때 오류가 발생할 수 있습니다.

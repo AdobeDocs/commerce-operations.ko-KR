@@ -3,9 +3,9 @@ title: 원격 스토리지 구성
 description: 온-프레미스 Commerce 애플리케이션에 대한 원격 저장소 모듈을 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 원격 저장소 _과(와)_ 데이터베이스 저장소를 동시에 사용하도록 설정할 수 없습니다. 원격 저장소를 활성화하기 전에 데이터베이스 저장소를 비활성화해야 합니다.
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/magento-open-source/2-4-2)를 참조하세요.
+>- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)를 참조하세요.
 >
 >- 원격 스토리지 모듈에 클라우드 인프라의 Adobe Commerce에 대한 _제한_ 지원이 있습니다. Adobe에서 타사 스토리지 어댑터 서비스 문제를 완전히 해결할 수 없습니다. 클라우드 프로젝트용 원격 저장소를 구현하는 방법에 대한 지침은 [클라우드 인프라에서 Commerce용 원격 저장소 구성](cloud-support.md)을 참조하십시오.
 
@@ -38,7 +38,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 ## 원격 스토리지 옵션
 
-`remote-storage` CLI 명령[`setup`과(와) 함께 &#x200B;](../../installation/tutorials/deployment.md) 옵션을 사용하여 원격 저장소를 구성할 수 있습니다. `remote-storage` 옵션은 다음 구문을 사용합니다.
+[`setup` CLI 명령](../../installation/tutorials/deployment.md)과(와) 함께 `remote-storage` 옵션을 사용하여 원격 저장소를 구성할 수 있습니다. `remote-storage` 옵션은 다음 구문을 사용합니다.
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -63,17 +63,17 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 ## 원격 스토리지 사용
 
-Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce 인스턴스에 원격 저장소를 추가할 수 있습니다. 다음 예제에서는 Commerce `remote-storage` CLI 명령과 함께 `setup` 매개 변수 집합을 사용하는 각 메서드를 보여 줍니다. 최소한 `driver`, `bucket` 및 `region` 저장소를 제공해야 합니다.
+Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce 인스턴스에 원격 저장소를 추가할 수 있습니다. 다음 예제에서는 Commerce `setup` CLI 명령과 함께 `remote-storage` 매개 변수 집합을 사용하는 각 메서드를 보여 줍니다. 최소한 `driver`, `bucket` 및 `region` 저장소를 제공해야 합니다.
 
 - 예: 원격 스토리지로 Commerce 설치
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - 예: 기존 Commerce에서 원격 스토리지 활성화
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -85,11 +85,11 @@ Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce
 
 특정 어댑터에 대해 원격 저장소를 사용하도록 설정한 후 CLI를 사용하여 기존 _media_ 파일을 원격 저장소로 마이그레이션할 수 있습니다.
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
 >[!INFO]
 >
->sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. _디렉터리에 있는 가져오기/내보내기 파일은_ not`var`합니다. [Commerce 2.4 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ko)에서 _예약된 가져오기/내보내기_&#x200B;를 참조하십시오.
+>sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. `var` 디렉터리에 있는 가져오기/내보내기 파일은 _not_&#x200B;합니다. _Commerce 2.4 사용 안내서_&#x200B;에서 [예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)를 참조하십시오.
 

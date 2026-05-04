@@ -1,14 +1,14 @@
 ---
 title: 우수 사례 주제 제목
-description: 방법 알아보기...
+description: Experience League에 대한 새 Adobe Commerce 운영 지침을 작성할 때 이 모범 사례 주제 템플릿을 적용하는 방법을 알아봅니다.
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 2%
+source-wordcount: '107'
+ht-degree: 1%
 
 ---
 

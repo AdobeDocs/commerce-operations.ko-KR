@@ -1,10 +1,10 @@
 ---
 title: 모듈 제거
-description: Adobe Commerce 모듈을 제거하려면 다음 단계를 따르십시오.
+description: 코드, 스키마 및 데이터를 선택적으로 제거하여 Adobe Commerce 모듈을 제거하는 방법과 모듈을 제거하는 대신 비활성화하는 방법에 대해 알아봅니다.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 명령은 `composer.json` 파일에 선언된 종속성만 확인합니다. _파일에 정의된_ not`composer.json` 모듈을 제거하면 이 명령은 종속성을 확인하지 않고 모듈을 제거합니다. 이 명령은 _not_&#x200B;은(는) 하지만 파일 시스템에서 모듈 코드를 제거합니다. 모듈 코드를 제거하려면 파일 시스템 도구를 사용해야 합니다(예: `rm -rf <path to module>`). 또는 작성기가 아닌 모듈을 [비활성화](manage-modules.md)할 수 있습니다.
+>이 명령은 `composer.json` 파일에 선언된 종속성만 확인합니다. `composer.json` 파일에 정의된 _not_ 모듈을 제거하면 이 명령은 종속성을 확인하지 않고 모듈을 제거합니다. 이 명령은 _not_&#x200B;은(는) 하지만 파일 시스템에서 모듈 코드를 제거합니다. 모듈 코드를 제거하려면 파일 시스템 도구를 사용해야 합니다(예: `rm -rf <path to module>`). 또는 작성기가 아닌 모듈을 [비활성화](manage-modules.md)할 수 있습니다.
 
 명령 사용:
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -50,7 +50,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. `--remove-data`이(가) 지정된 경우 모듈의 `Uninstall` 클래스에 정의된 데이터베이스 스키마와 데이터를 제거하십시오.
 
-   제거할 각 모듈에 대해 `uninstall` 클래스에서 `Uninstall` 메서드를 호출합니다. 이 클래스는 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)에서 상속해야 합니다.
+   제거할 각 모듈에 대해 `Uninstall` 클래스에서 `uninstall` 메서드를 호출합니다. 이 클래스는 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)에서 상속해야 합니다.
 
 1. `setup_module` 데이터베이스 테이블에서 지정된 모듈을 제거합니다.
 1. [배포 구성](../../configuration/reference/deployment-files.md)의 모듈 목록에서 지정된 모듈을 제거합니다.
@@ -67,7 +67,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 예를 들어 다른 모듈이 종속된 모듈을 제거하려고 하면 다음 메시지가 표시됩니다.
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 모듈 파일 시스템, `pub/media`개의 파일 및 데이터베이스 테이블을 백업한 후 두 모듈을 모두 제거하되 모듈의 데이터베이스 스키마나 데이터를 _제거하지 않음_&#x200B;하는 방법이 있습니다.
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 다음 디스플레이와 유사한 메시지:
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -122,7 +122,7 @@ Disabling maintenance mode
 
 코드베이스를 백업한 상태로 복원하려면 다음 명령을 사용합니다.
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -158,7 +158,7 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
    a. 롤백 대상 위치가 쓰기 가능한지 확인합니다.
 
-   b. `pub/media`에서 모든 파일과 디렉터리를 삭제합니다.
+   b. `pub/media`에서 모든 파일 및 디렉터리를 삭제합니다.
 
    c. 아카이브 파일을 대상 위치로 추출합니다.
 
@@ -168,19 +168,19 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
 * 백업 목록 표시:
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * 이름이 `1433876616_filesystem.tgz`인 파일 백업 복원:
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   다음 디스플레이와 유사한 메시지:
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

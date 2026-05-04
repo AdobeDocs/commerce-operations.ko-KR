@@ -3,7 +3,7 @@ title: 데이터 마이그레이션 설정
 description: ' [!DNL Data Migration Tool]을(를) 사용하여 Magento 1에서 Magento 2로 설정을 마이그레이션하는 방법을 알아봅니다.'
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 설정 마이그레이션을 시작하려면 다음을 실행합니다.
 
-```bash
+```shell
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -58,7 +58,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. 다음 디렉토리로 변경합니다.
 
-   ```bash
+   ```shell
    cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
@@ -72,15 +72,15 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. 제공된 샘플에서 `settings.xml` 파일을 만들려면 다음을 실행하십시오.
 
-   ```bash
+   ```shell
    cp settings.xml.dist settings.xml
    ```
 
 1. `settings.xml`에서 변경합니다.
 
-1. 매핑할 설정 파일의 새 이름을 지정하려면 `<settings_map_file>` 파일에서 `path/to/config.xml` 태그를 변경하십시오.
+1. 매핑할 설정 파일의 새 이름을 지정하려면 `path/to/config.xml` 파일에서 `<settings_map_file>` 태그를 변경하십시오.
 
-자세한 내용은 도구 [사양](../technical-specification.md#settings-migration-mode)의 [설정 마이그레이션 모드](../technical-specification.md) 섹션을 참조하십시오.
+자세한 내용은 도구 [사양](../technical-specification.md)의 [설정 마이그레이션 모드](../technical-specification.md#settings-migration-mode) 섹션을 참조하십시오.
 
 ## 다음 마이그레이션 단계
 

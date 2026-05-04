@@ -1,10 +1,10 @@
 ---
 title: 보안 패치 릴리스 노트
-description: Adobe Commerce 보안 패치에 대한 릴리스 정보를 검토하십시오.
+description: 보안 개선 사항, 수정 사항 및 각 패치 릴리스에 포함된 내용을 포함하여 지원되는 버전에 대해서는 Adobe Commerce 보안 패치 릴리스 정보를 검토하십시오.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---

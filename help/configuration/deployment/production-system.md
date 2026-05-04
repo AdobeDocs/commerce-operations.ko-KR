@@ -2,9 +2,9 @@
 title: 프로덕션 시스템 설정
 description: Commerce 애플리케이션의 프로덕션 시스템을 설정하는 방법을 알아봅니다.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    디렉토리를 만듭니다.
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
@@ -74,19 +74,19 @@ ht-degree: 0%
 1. Commerce 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    예를 들어 YouTube API 키의 값을 `1234`(으)로 설정하려면 다음을 입력합니다.
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    다음과 같이 하나 이상의 값을 대화식으로 설정할 수도 있습니다.
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 

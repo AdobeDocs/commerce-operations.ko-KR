@@ -3,9 +3,9 @@ title: 배포 플로우
 description: Adobe Commerce 프로덕션 환경의 배포 흐름 프로세스에 대해 알아봅니다. 성능과 안정성을 극대화하는 단계를 살펴보십시오.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## 종속성 설치
 
-`composer.json` 및 `composer.lock` 파일은 [!DNL Commerce] 종속성을 관리하고 각 패키지에 적절한 버전을 설치합니다. [자동 로더](#preprocess-dependency-injection-instructions)를 업데이트하려면 [사전 처리 종속성 삽입 지침](#update-the-autoloader) 전에 종속성을 설치해야 합니다.
+`composer.json` 및 `composer.lock` 파일은 [!DNL Commerce] 종속성을 관리하고 각 패키지에 적절한 버전을 설치합니다. [자동 로더](#update-the-autoloader)를 업데이트하려면 [사전 처리 종속성 삽입 지침](#preprocess-dependency-injection-instructions) 전에 종속성을 설치해야 합니다.
 
 [!DNL Commerce] 종속성을 설치하려면:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,7 +35,7 @@ composer install --no-dev
 
 DI 지시사항을 미리 처리하고 컴파일하려면
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -49,25 +49,25 @@ bin/magento setup:di:compile
 >
 >`-o` 옵션은 PSR-0/4 자동 로드를 classmap으로 전환하여 더 빠른 자동 로더를 가져옵니다. `--apcu` 옵션은 APCu를 사용하여 찾은 클래스/찾을 수 없는 클래스를 캐시합니다.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 자동 로더를 업데이트할 계획이라면 다음 명령을 순서대로 실행해야 합니다.
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -87,7 +87,7 @@ bin/magento setup:static-content:deploy
 
 정적 콘텐츠를 배포하려면
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ bin/magento setup:static-content:deploy
 
 또한 하나의 CLI 명령에서 정적 콘텐츠를 배포하고, 콘텐츠를 컴파일하고, 모드를 설정할 수도 있습니다.
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
@@ -117,4 +117,4 @@ bin/magento deploy:mode:set production
 
 * 인덱스에 일관되지 않은 데이터가 존재하지 않도록 데이터를 다시 색인화합니다.
 * 캐시에 오래된 데이터나 잘못된 데이터가 남지 않도록 캐시를 플러시합니다.
-* 가장 자주 사용되거나 중요한 저장소 페이지를 미리 호출하여 캐시에 대한 캐시가 생성 및 저장되도록 캐시를 준비합니다. 이 작업은 작은 스토어가 있는 경우 인터넷 크롤러를 사용하거나 수동으로 수행할 수 있습니다.
+* 가장 자주 사용되거나 중요한 저장소 페이지를 미리 호출하여 캐시에 대한 캐시가 생성 및 저장되도록 캐시를 준비합니다. 이 작업은 모든 인터넷 웹 크롤러로 수행하거나 작은 스토어가 있는 경우 수동으로 수행할 수 있습니다.

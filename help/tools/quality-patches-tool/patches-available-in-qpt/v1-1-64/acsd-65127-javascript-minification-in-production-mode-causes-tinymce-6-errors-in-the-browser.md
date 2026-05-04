@@ -5,9 +5,9 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: d98a8f60d2bcd818ae50d754bb96a2bf0becb810
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-65127 패치는 프로덕션 모드에서 JavaScript 축소를 활성화하
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko) 페이지에서 호환성을 확인하십시오. 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 페이지에서 호환성을 확인하십시오. 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -38,7 +38,7 @@ ACSD-65127 패치는 프로덕션 모드에서 JavaScript 축소를 활성화하
 
 1. 아래 명령을 실행하여 구성을 설정합니다.
 
-```
+```shell
 bin/magento config:set --lock-config dev/js/minify_files 1
 bin/magento config:set --lock-config dev/js/enable_js_bundling 1
 bin/magento config:set --lock-config dev/js/merge_files 1
@@ -50,7 +50,7 @@ bin/magento config:set --lock-config dev/js/merge_files 1
 
 1. 프로덕션 모드를 활성화합니다.
 
-```
+```shell
 bin/magento deploy:mode:set production
 ```
 
@@ -62,14 +62,14 @@ bin/magento deploy:mode:set production
 
 <u>실제 결과</u>:
 
-js *에 대한 브라우저 콘솔에서* 404`tiny_mce_6/plugins/help/js/i18n/keynav/en.js` 오류가 발생했습니다.
+js `tiny_mce_6/plugins/help/js/i18n/keynav/en.js`에 대한 브라우저 콘솔에서 *404* 오류가 발생했습니다.
 
 ## 패치 적용
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)
 
 ## 관련 읽기
 

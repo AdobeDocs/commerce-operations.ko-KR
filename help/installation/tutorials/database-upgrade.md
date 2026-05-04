@@ -2,7 +2,7 @@
 title: 데이터베이스 스키마 및 데이터 업그레이드
 description: Adobe Commerce 데이터베이스 스키마를 업그레이드하려면 다음 단계를 따르십시오.
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -27,14 +27,14 @@ ht-degree: 0%
 
 1. 업그레이드를 시작합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   여기서 `--keep-generated`은(는) [정적 보기 파일](../../configuration/cli/static-view-file-deployment.md)을(를) 업데이트하지 않는 선택적 인수입니다. 이 선택적 인수는 숙련된 시스템 통합자가 제한된 상황에서 *only*&#x200B;를 사용하는 것입니다. *프로덕션 모드*&#x200B;에서 [전용](../../configuration/bootstrap/application-modes.md#production-mode)을 사용해야 합니다. *개발자 모드*&#x200B;에서 [사용할 수 없습니다](../../configuration/bootstrap/application-modes.md#developer-mode).
+   여기서 `--keep-generated`은(는) [정적 보기 파일](../../configuration/cli/static-view-file-deployment.md)을(를) 업데이트하지 않는 선택적 인수입니다. 이 선택적 인수는 숙련된 시스템 통합자가 제한된 상황에서 *only*&#x200B;를 사용하는 것입니다. [프로덕션 모드](../../configuration/bootstrap/application-modes.md#production-mode)에서 *전용*&#x200B;을 사용해야 합니다. [개발자 모드](../../configuration/bootstrap/application-modes.md#developer-mode)에서 *사용할 수 없습니다*.
 
 1. 캐시를 정리합니다.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```

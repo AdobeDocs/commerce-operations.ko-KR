@@ -3,9 +3,9 @@ title: 마스크 설정(선택 사항)
 description: 파일 시스템 권한을 제한하여 Adobe Commerce 온프레미스 설치의 보안 자세를 개선합니다.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * 664 - 사용자가 쓸 수 있고, 그룹이 쓸 수 있으며, 다른 모든 사용자가 읽기 전용입니다
 
-일반적인 제안은 `022` 파일에서 `magento_umask` 값을 사용하는 것입니다. 즉, 다음과 같습니다.
+일반적인 제안은 `magento_umask` 파일에서 `022` 값을 사용하는 것입니다. 즉, 다음과 같습니다.
 
 * 디렉토리용 755: 사용자를 위한 모든 권한 및 기타 모든 사용자가 디렉토리를 탐색할 수 있습니다.
 * 파일의 경우 644: 사용자에 대한 읽기-쓰기 권한 및 기타 모든 사용자에 대한 읽기 전용 권한.
@@ -36,16 +36,16 @@ ht-degree: 0%
 1. 명령줄 터미널에서 응용 프로그램 서버에 [파일 시스템 소유자](../prerequisites/file-system/overview.md)(으)로 로그인합니다.
 1. 응용 프로그램 설치 디렉토리로 이동합니다.
 
-   ```bash
+   ```shell
    cd <Application install directory>
    ```
 
 1. 다음 명령을 사용하여 이름이 `magento_umask`인 파일을 만들고 `umask` 값을 씁니다.
 
-   ```bash
+   ```shell
    echo <desired umask number> > magento_umask
    ```
 
-   이제 `magento_umask`에 이름이 `<Magento install dir>`인 파일이 있어야 하며 콘텐츠만 `umask` 번호입니다.
+   이제 `<Magento install dir>`에 이름이 `magento_umask`인 파일이 있어야 하며 콘텐츠만 `umask` 번호입니다.
 
 1. 로그아웃한 후 [파일 시스템 소유자](../prerequisites/file-system/overview.md)(으)로 다시 로그인하여 변경 사항을 적용하세요.

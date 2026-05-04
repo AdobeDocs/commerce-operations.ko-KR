@@ -3,9 +3,9 @@ title: ' [!DNL Data Migration Tool] 업그레이드'
 description: ' [!DNL Data Migration Tool] 을(를) 업그레이드하여 Magento 1과 Magento 2 간에 데이터를 전송하는 방법을 알아봅니다.'
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 다음 명령을 사용하여 전체 Magento 코드베이스 및 데이터베이스를 백업할 수도 있습니다.
 
-```bash
+```shell
 php <magento_root>/bin/magento setup:backup --code --db
 ```
 
@@ -53,7 +53,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 * [찾기](install.md#find-released-versions-of-data-migration-tool) 릴리스 버전의 [!DNL Data Migration Tool]
 
-* [&#x200B; 버전을 &#x200B;](install.md#check-version-of-installed-data-migration-tool)확인[!DNL Data Migration Tool]
+* [!DNL Data Migration Tool] 버전을 [확인](install.md#check-version-of-installed-data-migration-tool)
 
 ## [!DNL Data Migration Tool] 업그레이드
 
@@ -61,7 +61,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 1. 애플리케이션 루트 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -69,7 +69,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
    예를 들어 버전 2.1.2의 경우 다음을 입력합니다.
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.1.2
    ```
 

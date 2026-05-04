@@ -2,9 +2,9 @@
 title: '[!DNL Upgrade Compatibility Tool]개 보고서'
 description: 다음 단계에 따라 Adobe Commerce 프로젝트에서  [!DNL Upgrade Compatibility Tool] 을(를) 실행합니다.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 보고서의 다음 명령줄 인터페이스 예를 참조하십시오.
 
-```
+```text
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
  * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
@@ -43,7 +43,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 다음 명령줄 인터페이스 예를 참조하십시오.
 
-```
+```text
  ----------------------------- ----------------- 
   Current version               2.4.1            
   Target version                2.4.4            
@@ -68,7 +68,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 이 `JSON` 파일을 다른 출력 폴더로 내보내려면 다음을 수행하십시오.
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 ```
 
@@ -121,7 +121,7 @@ HTML 보고서 다이어그램도 이에 따라 업데이트됩니다. `Modules 
 
 이 HTML 보고서를 다른 출력 폴더로 내보내려면 다음을 수행하십시오.
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 ```
 

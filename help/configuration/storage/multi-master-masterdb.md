@@ -3,7 +3,7 @@ title: 마스터 데이터베이스 자동 구성
 description: 데이터베이스 분할 솔루션을 자동으로 구성하는 방법에 대한 지침을 참조하십시오.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베
 1. 데이터베이스 서버에 사용자로 로그인합니다.
 1. MySQL 명령 프롬프트에 액세스하려면 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -66,7 +66,7 @@ Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베
 
    데이터베이스 체크 아웃:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -76,7 +76,7 @@ Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베
 
    Order Management 시스템 데이터베이스:
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -98,19 +98,19 @@ Adobe Commerce 소프트웨어를 설치한 후 언제든지 분할 데이터베
 
 명령 구문:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 For example,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
 성공적인 설치를 확인하는 메시지가 표시됩니다.
 
-```
+```text
 Migration has been finished successfully!
 ```
 
@@ -118,22 +118,22 @@ Migration has been finished successfully!
 
 명령 구문:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 For example,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 성공적인 설치를 확인하는 메시지가 표시됩니다.
 
-```
+```text
 Migration has been finished successfully!
 ```

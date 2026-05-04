@@ -2,9 +2,9 @@
 title: URN 형광펜
 description: Adobe Commerce 개발을 위해 IDE에서 URN 강조 표시를 설정하는 방법을 알아봅니다. XSD 스키마 구성 및 개발 최적화를 살펴봅니다.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Commerce 코드는 모든 XSD 스키마를 [URN(Uniform Resource Names)](https:/
 
 명령 구문:
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 
@@ -41,4 +41,4 @@ bin/magento dev:urn-catalog:generate <path>
 
 >[!INFO]
 >
->&quot;스키마 및 DTD&quot;를 최신 상태로 유지하려면 `dev:urn-catalog:generate` 파일이 포함된 Commerce 2 모듈을 추가, 수정 또는 제거할 때마다 `*.xsd` 명령을 실행합니다.
+>&quot;스키마 및 DTD&quot;를 최신 상태로 유지하려면 `*.xsd` 파일이 포함된 Commerce 2 모듈을 추가, 수정 또는 제거할 때마다 `dev:urn-catalog:generate` 명령을 실행합니다.

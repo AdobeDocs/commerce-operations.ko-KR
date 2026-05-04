@@ -2,9 +2,9 @@
 title: 파일 소유권 및 권한 구성
 description: Adobe Commerce의 온-프레미스 설치에 대한 파일 시스템 권한을 구성하려면 다음 단계를 따르십시오.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -33,32 +33,32 @@ ht-degree: 0%
 
 1. 명령줄 액세스 권한이 있는 경우 표시된 순서대로 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    선택적으로 한 줄에 모든 명령을 입력하려면 응용 프로그램이 `/var/www/html/magento2`에 설치되어 있다고 가정하고 다음을 입력하십시오.
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
 1. 아직 다운로드하지 않은 경우 다음 방법 중 하나로 애플리케이션을 다운로드하십시오.
 
    * [작성기 메타패키지](../../composer.md)
-   * [리포지토리 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+   * [저장소 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. 파일 시스템 소유권과 사용 권한을 설정한 후 [응용 프로그램을 설치](../../advanced.md)
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 CentOS 또는 Ubuntu에서 사용자를 만들려면 `root` 권한을 가진 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 adduser <username>
 ```
 
 사용자에게 암호를 제공하려면 `root` 권한을 가진 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -115,11 +115,11 @@ passwd <username>
 
 예를 들어, 이름이 `magento_user`인 사용자를 만들고 사용자에게 암호를 지정하려면 다음을 입력합니다.
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
@@ -133,13 +133,13 @@ sudo passwd magento_user
 
 * CentOS:
 
-  ```bash
+  ```shell
   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
   또는
 
-  ```bash
+  ```shell
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
@@ -158,23 +158,23 @@ sudo passwd magento_user
 
 >[!NOTE]
 >
->`-a -G` 옵션은 사용자의 `apache`기본`www-data` 그룹을 유지하는 사용자 계정에 *또는*&#x200B;을(를) *보조* 그룹으로 추가하므로 중요합니다. 사용자 계정에 보조 그룹을 추가하면 [파일 소유권과 사용 권한을 제한](#set-ownership-and-permissions-for-two-users)하여 공유 그룹 구성원이 특정 파일에만 액세스할 수 있도록 할 수 있습니다.
+>`-a -G` 옵션은 사용자의 *기본* 그룹을 유지하는 사용자 계정에 `apache` 또는 `www-data`을(를) *보조* 그룹으로 추가하므로 중요합니다. 사용자 계정에 보조 그룹을 추가하면 [파일 소유권과 사용 권한을 제한](#set-ownership-and-permissions-for-two-users)하여 공유 그룹 구성원이 특정 파일에만 액세스할 수 있도록 할 수 있습니다.
 
 예를 들어 `magento_user` 사용자를 CentOS의 `apache` 기본 그룹에 추가하려면 다음을 수행합니다.
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 사용자가 웹 서버 그룹의 구성원인지 확인하려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 groups magento_user
 ```
 
 다음 샘플 결과는 사용자의 기본(`magento`) 및 보조(`apache`) 그룹을 보여줍니다.
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -192,7 +192,7 @@ magento_user : magento_user apache
 아직 다운로드하지 않은 경우 다음 방법 중 하나로 소프트웨어를 다운로드하십시오.
 
 * [작성기 메타패키지](../../composer.md)
-* [리포지토리 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [저장소 복제(기여 개발자만 해당)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### 공유 그룹에 대한 소유권 및 권한 설정
 
@@ -201,35 +201,35 @@ magento_user : magento_user apache
 1. 애플리케이션 서버에 파일 시스템 소유자로 로그인하거나 파일 시스템 소유자로 전환합니다.
 1. 표시된 순서대로 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 선택적으로 한 줄에 모든 명령을 입력하려면 응용 프로그램이 `/var/www/html/magento2`에 설치되어 있고 웹 서버 그룹 이름이 `apache`이라고 가정하고 다음을 입력하십시오.
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 파일 시스템 권한이 잘못 설정되어 파일 시스템 소유자가 변경할 수 없는 경우 `root` 권한을 가진 사용자로 명령을 입력할 수 있습니다.
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -242,6 +242,6 @@ cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media
 
 For example,
 
-```bash
+```shell
 su magento_user
 ```

@@ -1,11 +1,11 @@
 ---
 title: 분할 데이터베이스 성능 솔루션
-description: Adobe Commerce용 분할 데이터베이스 솔루션에 대해 알아보십시오.
+description: Adobe Commerce용 분할 데이터베이스 성능 솔루션, 체크아웃, 주문 및 제품 마스터를 구분하여 온프레미스로 확장할 수 있는 방법에 대해 알아봅니다.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---

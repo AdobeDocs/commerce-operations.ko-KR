@@ -3,9 +3,9 @@ title: 단일 컴퓨터 배포
 description: 명령줄을 사용하여 프로덕션 서버에서 Commerce에 업데이트를 배포하는 방법에 대해 알아봅니다.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,19 @@ ht-degree: 1%
 
 1. 디렉터리를 Commerce 기본 디렉터리로 변경합니다.
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. 다음 명령을 사용하여 유지 관리 모드를 활성화합니다.
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. 다음 명령 패턴을 사용하여 Commerce 또는 해당 구성 요소에 업데이트를 적용합니다.
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
@@ -57,37 +57,37 @@ ht-degree: 1%
 
 1. 작성기로 구성 요소 업데이트:
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. 데이터베이스 스키마 및 데이터 업데이트:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 코드를 컴파일합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. 정적 콘텐츠 배포:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. 캐시를 정리합니다.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. 유지 관리 모드 종료:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

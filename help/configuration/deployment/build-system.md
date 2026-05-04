@@ -1,11 +1,11 @@
 ---
 title: 시스템 설치 빌드
-description: Commerce을 빌드 시스템에 배포하는 방법에 대해 알아봅니다.
+description: 소스 제어, 생성된 에셋 및 정적 콘텐츠 요구 사항을 사용하여 Adobe Commerce 배포용 빌드 시스템을 설정하는 방법에 대해 알아봅니다.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Composer를 설치하려면:
 
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
@@ -82,26 +82,26 @@ Composer를 설치하려면:
 
    Git을 사용하는 경우 다음 명령을 사용합니다.
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Commerce 루트 디렉토리로 변경하고 다음을 입력합니다.
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. 종속성이 업데이트될 때까지 기다립니다.
 1. 소유권 설정:
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    For example,
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -120,7 +120,7 @@ Composer를 설치하려면:
 1. 변경 내용을 `.gitignore`에 저장하고 텍스트 편집기를 종료합니다.
 1. Git을 사용하는 경우 다음 명령을 사용하여 변경 사항을 커밋합니다.
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
@@ -128,7 +128,7 @@ Composer를 설치하려면:
 
 1. 빌드 시스템은 [기본 모드](../bootstrap/application-modes.md#default-mode) 또는 [개발자 모드](../bootstrap/application-modes.md#developer-mode)를 사용해야 합니다.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

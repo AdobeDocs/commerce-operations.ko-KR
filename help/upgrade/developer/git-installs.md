@@ -2,9 +2,9 @@
 title: Git 기반 설치 업그레이드
 description: git 저장소에서 복제한 Adobe Commerce 설치를 업그레이드합니다.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 1. `composer.json` 파일의 백업을 만듭니다.
 
-   ```bash
+   ```shell
    cp composer.json composer.json.old
    ```
 
 1. 로컬 저장소를 업데이트하여 최신 코드를 가져옵니다.
 
-   ```bash
+   ```shell
    git pull origin develop
    ```
 
@@ -39,19 +39,19 @@ ht-degree: 0%
 
 1. 종속성을 해결하고 `composer.lock` 파일에 정확한 버전을 쓰십시오.
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. 데이터베이스 업데이트:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 캐시를 정리합니다.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 

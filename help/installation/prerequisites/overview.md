@@ -2,9 +2,9 @@
 title: 온-프레미스 설치 사전 요구 사항
 description: Adobe Commerce 온-프레미스 설치에 필요한 소프트웨어 종속성에 대해 자세히 알아보세요.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Adobe Commerce을 설치하기 전에 다음을 수행해야 합니다.
 
-* [Commerce 온-프레미스](../system-requirements.md) 탭에 나열된 *시스템 요구 사항*&#x200B;을(를) 충족하는 호스트를 하나 이상 설정합니다.
+* *Commerce 온-프레미스* 탭에 나열된 [시스템 요구 사항](../system-requirements.md)을(를) 충족하는 호스트를 하나 이상 설정합니다.
 * 부하 분산이 있는 웹 노드를 두 개 이상 설정하는 경우 응용 프로그램을 설치하기 _전에_ 시스템의 해당 부분을 설정하고 테스트합니다.
 * 문제가 있는 경우 롤백할 수 있도록 설치하는 동안 여러 지점에서 전체 시스템을 백업할 수 있습니다.
 
@@ -27,21 +27,21 @@ Adobe Commerce을 설치하기 전에 다음을 수행해야 합니다.
 
 * 우분투
 
-  ```bash
+  ```shell
   apt-get update
   ```
 
-  ```bash
+  ```shell
   apt-get upgrade
   ```
 
 * 센트OS
 
-  ```bash
+  ```shell
   yum -y update
   ```
 
-  ```bash
+  ```shell
   yum -y upgrade
   ```
 
@@ -57,7 +57,7 @@ CentOS: `httpd -v`
 
 Adobe Commerce은 다음 결과에 따라 Apache 버전 2.4를 지원합니다.
 
-```
+```text
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -66,25 +66,25 @@ Apache를 설치하거나 업그레이드하려면 [Apache](web-server/apache.md
 
 ### PHP
 
-지원되는 버전의 PHP는 *시스템 요구 사항*&#x200B;에서 [Commerce 온-프레미스](../system-requirements.md) 탭을 참조하고 PHP 요구 사항은 [PHP](../system-requirements.md#php-settings)를 참조하십시오.
+지원되는 버전의 PHP는 [시스템 요구 사항](../system-requirements.md)에서 *Commerce 온-프레미스* 탭을 참조하고 PHP 요구 사항은 [PHP](../system-requirements.md#php-settings)를 참조하십시오.
 
 ### MySQL
 
-설치 중인 Adobe Commerce 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 지원되는 버전은 *시스템 요구 사항*&#x200B;에서 [Commerce 온-프레미스](../system-requirements.md) 탭을 참조하십시오.
+설치 중인 Adobe Commerce 버전과 호환되는 MySQL 버전이 있는지 확인하십시오. 지원되는 버전은 [시스템 요구 사항](../system-requirements.md)에서 *Commerce 온-프레미스* 탭을 참조하십시오.
 
-```bash
+```shell
 mysql -u <database root user or database owner name> -p
 ```
 
 For example:
 
-```bash
+```shell
 mysql -u magento -p
 ```
 
 명령 출력에서 `Server version` 줄은 실행 중인 버전을 나타냅니다. 설치 중인 Adobe Commerce 릴리스에 대해 지원되는 버전과 일치하는지 확인합니다.
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)
@@ -98,7 +98,7 @@ owners.
 
 도움말을 보려면 `help` 또는 `\h`을(를) 입력하십시오. 현재 입력 문을 지우려면 `\c`을(를) 입력하십시오.
 
-종료하려면 `exit` 프롬프트에 `mysql>`을(를) 입력하십시오.
+종료하려면 `mysql>` 프롬프트에 `exit`을(를) 입력하십시오.
 
 MySQL을 설치하거나 업그레이드하려면 [MySQL](database/mysql.md)을 참조하세요.
 
@@ -106,23 +106,23 @@ MySQL을 설치하거나 업그레이드하려면 [MySQL](database/mysql.md)을 
 
 OpenSearch 설치를 확인하려면:
 
-```bash
+```shell
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
 Elasticsearch 설치를 확인하려면:
 
-```bash
+```shell
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 For example:
 
-```bash
+```shell
 curl -XGET 'localhost:9200'
 ```
 
-```
+```json
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

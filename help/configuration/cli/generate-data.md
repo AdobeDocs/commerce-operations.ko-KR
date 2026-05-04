@@ -3,9 +3,9 @@ title: 성능 테스트를 위한 데이터 생성
 description: Adobe Commerce 성능 테스트를 위해 대량의 데이터를 생성하는 방법을 알아봅니다. 데이터 생성 프로필 및 테스트 전략을 살펴봅니다.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -56,7 +56,7 @@ For example, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
 명령 옵션:
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
@@ -64,13 +64,13 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 For example,
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
 ```
 
 작은 프로필에 대한 샘플 출력:
 
-```
+```text
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

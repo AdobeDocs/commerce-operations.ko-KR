@@ -2,7 +2,7 @@
 title: 메시지 소비자 구성
 description: 다음 단계에 따라 Adobe Commerce 메시지 대기열 소비자의 동작을 구성합니다.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 소비자 행동은 설정 함수 내에서 키/값 쌍을 전송하여 구성합니다.
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 

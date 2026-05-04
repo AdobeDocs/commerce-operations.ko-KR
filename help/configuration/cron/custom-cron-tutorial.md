@@ -2,9 +2,9 @@
 title: 사용자 정의 cron 작업 및 cron 그룹 구성(튜토리얼)
 description: Adobe Commerce용 단계별 자습서를 사용하여 사용자 지정 cron 작업을 만드는 방법을 알아봅니다. 모듈 설정 및 cron 그룹 구성을 검색합니다.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 이 단계별 자습서에서는 샘플 모듈에서 사용자 지정 cron 작업 및 선택적으로 cron 그룹을 만드는 방법을 보여줍니다. 이미 있는 모듈을 사용하거나 [`magento2-samples` 저장소](https://github.com/magento/magento2-samples)의 샘플 모듈을 사용할 수 있습니다.
 
-cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `custom_cron` 테이블에 추가됩니다.
+cron 작업을 실행하면 cron 작업의 이름이 `custom_cron`인 행이 `cron_schedule` 테이블에 추가됩니다.
 
 또한 cron 그룹을 선택적으로 만드는 방법을 보여 줍니다. 이 그룹은 Commerce 애플리케이션 기본값 이외의 설정으로 사용자 지정 cron 작업을 실행하는 데 사용할 수 있습니다.
 
@@ -35,7 +35,7 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 1. Commerce 애플리케이션 루트에 없는 디렉토리(예: 홈 디렉토리)로 변경합니다.
 1. [`magento2-samples` 리포지토리](https://github.com/magento/magento2-samples)을(를) 복제합니다.
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
@@ -43,25 +43,25 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 1. 샘플 코드를 복사할 디렉토리를 만듭니다.
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. 샘플 모듈 코드를 복사합니다.
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. 파일이 제대로 복사되었는지 확인합니다.
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    다음 결과가 표시됩니다.
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -75,13 +75,13 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 1. Commerce 데이터베이스 및 스키마 업데이트:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 캐시를 정리합니다.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -91,13 +91,13 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 1. 다음 명령을 실행합니다.
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. 모듈이 활성화되어 있는지 확인합니다.
 
-   ```
+   ```text
    Module is enabled
    ```
 
@@ -113,7 +113,7 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 1. 클래스의 디렉토리를 만들고 해당 디렉토리로 변경합니다.
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -147,7 +147,7 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 `crontab.xml` 파일은 사용자 지정 cron 코드를 실행하는 일정을 설정합니다.
 
-`crontab.xml` 디렉터리에 다음과 같이 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`을(를) 만듭니다.
+`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` 디렉터리에 다음과 같이 `crontab.xml`을(를) 만듭니다.
 
 ```xml
 <?xml version="1.0"?>
@@ -181,13 +181,13 @@ cron 작업을 실행하면 cron 작업의 이름이 `cron_schedule`인 행이 `
 
 다음 명령을 사용하여 코드를 컴파일합니다.
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 다음 명령을 사용하여 캐시를 정리합니다.
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -199,7 +199,7 @@ cron을 확인하려면:
 
 1. Commerce cron 작업 실행:
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
@@ -215,7 +215,7 @@ cron을 확인하려면:
 
       결과는 다음과 유사해야 합니다.
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,17 +228,17 @@ cron을 확인하려면:
 
 1. (선택 사항) 메시지가 Commerce의 시스템 로그에 기록되는지 확인합니다.
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    다음과 같은 항목이 한 개 이상 표시됩니다.
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   이러한 메시지는 `execute`의 `Test.php` 메서드에서 가져옵니다.
+   이러한 메시지는 `Test.php`의 `execute` 메서드에서 가져옵니다.
 
    ```php
    public function execute() {
@@ -283,7 +283,7 @@ SQL 명령 및 시스템 로그에 항목이 없으면 `magento cron:run` 명령
 
 1. 사용자 지정 그룹에 대해 Commerce cron job을 실행합니다.
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -291,7 +291,7 @@ SQL 명령 및 시스템 로그에 항목이 없으면 `magento cron:run` 명령
 
 1. 캐시를 정리합니다.
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 

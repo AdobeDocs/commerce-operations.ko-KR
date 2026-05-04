@@ -3,7 +3,7 @@ title: 관리자 계정 만들기, 편집 또는 잠금 해제
 description: Adobe Commerce 관리 애플리케이션의 관리자 계정을 관리하려면 다음 단계를 따르십시오.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 명령 사용:
 
-```bash
+```shell
 bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 ```
 
@@ -49,21 +49,21 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 
 사용의 예:
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
 필요한 매개 변수를 지정하지 않으면 애플리케이션이 CLI에서 매개 변수에 대해 묻습니다.
 
-```bash
+```shell
 bin/magento admin:user:create
 ```
 
-```
+```text
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,17 +71,17 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```
+```text
 Created Magento administrator user named John
 ```
 
-다음 예제는 `first name` 관리 사용자의 `last name`, `password` 및 `j.doe`을(를) 업데이트합니다.
+다음 예제는 `j.doe` 관리 사용자의 `first name`, `last name` 및 `password`을(를) 업데이트합니다.
 
-```bash
+```shell
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```
+```text
 Created Magento administrator user named j.doe
 ```
 
@@ -89,23 +89,23 @@ Created Magento administrator user named j.doe
 
 이 명령을 사용하면 일반적으로 여러 번 잘못된 로그인을 시도하여 잠긴 관리자의 계정을 잠금 해제할 수 있습니다.
 
-```bash
+```shell
 bin/magento admin:user:unlock {username}
 ```
 
 관리자의 사용자 이름을 지정해야 합니다. 예:
 
-```bash
+```shell
 bin/magento admin:user:unlock admin
 ```
 
-```
+```text
 The user account "admin" has been unlocked
 ```
 
 계정이 잠금 해제되지 않았거나 문제가 있는 경우 다음 메시지가 표시됩니다.
 
-```
+```text
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ The user account "admin" was not locked or could not be unlocked
 
 계정이 존재하지 않으면 다음 메시지가 표시됩니다.
 
-```
+```text
 Couldn't find the user account "bob"
 ```

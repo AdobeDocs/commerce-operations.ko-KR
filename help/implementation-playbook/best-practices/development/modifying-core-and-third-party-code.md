@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 반점은 쉽게 부러집니다. 패치를 대상으로 하는 파일이 업데이트되면 종종 패치의 작동이 중지됩니다. 패치 파일에는 패치가 변경할 내용을 구체적으로 나타내는 행 번호와 열 번호가 포함되어 있기 때문입니다. 패치가 예상한 내용과 일치하지 않는 사항이 있으면 적용이 중지되고 코드가 중단됩니다.
 
-```bash
+```shell
 diff --git a/vendor/magento/module-quote/Model/QuoteManagement.php b/vendor/magento/module-quote/Model/QuoteManagement.php
 index 51b68411d40..ac4a3468322 100644
 --- a/vendor/magento/module-quote/Model/QuoteManagement.php

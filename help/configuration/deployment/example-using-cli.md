@@ -2,9 +2,9 @@
 title: CLI 명령 사용 예
 description: 명령줄을 사용하여 개발 시스템에서 공유, 시스템별 및 중요 값을 설정하는 방법에 대한 예를 참조하십시오.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 기본 범위에 있는 시스템별 설정 **기본 전자 메일 도메인**&#x200B;을(를) 설정하려면 다음 명령을 사용하십시오.
 
-```bash
+```shell
 bin/magento config:set customer/create_account/email_domain <email domain>
 ```
 

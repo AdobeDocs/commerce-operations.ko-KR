@@ -2,9 +2,9 @@
 title: 타사 확장 관리
 description: Adobe Commerce 확장을 설치, 활성화, 업그레이드 및 제거하려면 다음 단계를 따르십시오.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 - 테마(상점 및 관리자의 모양 및 느낌 변경)
 - 언어 패키지(상점 및 관리자 현지화)
 
-이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구매하는 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/extensions)를 참조하십시오.
+이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구매하는 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions)를 참조하십시오.
 
 동일한 절차를 사용하여 _any_ 확장을 설치할 수 있습니다. 필요한 것은 확장의 작성기 이름과 버전입니다. 찾으려면 확장의 `composer.json` 파일을 열고 `"name"` 및 `"version"`의 값을 확인합니다.
 
@@ -31,16 +31,16 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 1. 데이터베이스 백업.
 1. 유지 관리 모드 활성화:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 확장을 설치하려면 다음을 수행해야 합니다.
 
 1. Commerce Marketplace 또는 다른 확장 개발자로부터 확장을 가져옵니다.
-1. Commerce Marketplace에서 확장을 설치하는 경우 `repo.magento.com` 파일에 `composer.json` 리포지토리가 있는지 확인하십시오.
+1. Commerce Marketplace에서 확장을 설치하는 경우 `composer.json` 파일에 `repo.magento.com` 리포지토리가 있는지 확인하십시오.
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -76,7 +76,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
 >[!TIP]
 >
->또는 확장의 _파일에서_ any`composer.json` 확장의 작성기 이름과 버전(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)을 찾을 수 있습니다.
+>또는 확장의 `composer.json` 파일에서 _any_ 확장의 작성기 이름과 버전(Commerce Marketplace에서 구입했는지 다른 곳에서 구입했는지 여부)을 찾을 수 있습니다.
 
 ### 작성기 종속성 업데이트
 
@@ -84,13 +84,13 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
 1. 프로젝트 디렉터리로 이동하여 `composer.json` 파일을 업데이트하십시오.
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    For example,
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
@@ -98,7 +98,7 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
 1. 작성기가 프로젝트 종속성 업데이트를 완료하고 오류가 없는지 확인할 때까지 기다립니다.
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,19 +110,19 @@ Commerce Marketplace에서 확장의 작성기 이름 및 버전을 가져오려
 
 확장이 제대로 설치되었는지 확인하려면 다음 명령을 실행합니다.
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 기본적으로 확장은 비활성화되어 있을 수 있습니다.
 
-```
+```text
 Module is disabled
 ```
 
 확장 이름이 `<VendorName>_<ComponentName>` 형식입니다. 이 형식은 Composer 이름과 다른 형식입니다. 이 형식을 사용하여 확장을 활성화합니다. 확장 이름을 잘 모를 경우 다음을 실행합니다.
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -134,13 +134,13 @@ bin/magento module:status
 
 1. 확장을 활성화하고 정적 보기 파일을 지웁니다.
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    다음 출력이 표시됩니다.
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -152,31 +152,31 @@ bin/magento module:status
 
 1. 확장 등록:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 프로젝트 다시 컴파일: 프로덕션 모드에서 &quot;Magento 컴파일 명령을 다시 실행하십시오&quot;라는 메시지를 받을 수 있습니다. 응용 프로그램에서 컴파일 명령을 개발자 모드에서 실행하라는 메시지를 표시하지 않습니다.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. 확장이 활성화되었는지 확인합니다.
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    확장이 더 이상 비활성화되지 않았는지 확인하는 출력이 표시됩니다.
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. 캐시를 정리합니다.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -198,27 +198,27 @@ bin/magento module:status
 
    모듈 이름별 업데이트:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    버전별 업데이트:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. 다음 명령을 실행하여 캐시를 업그레이드, 배포 및 정리합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -240,13 +240,13 @@ bin/magento module:status
 
    - 작성기 기반 확장의 경우 Adobe Commerce `composer.json` 파일에서 확장을 제거합니다.
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - 작성기 기반이 아닌 확장의 경우 Adobe Commerce 프로젝트 저장소에서 물리적 파일을 제거합니다.
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

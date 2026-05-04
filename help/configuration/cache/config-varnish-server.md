@@ -3,9 +3,9 @@ title: 웹 서버 구성
 description: Adobe Commerce에 대한 바니시 캐싱과 작동하도록 웹 서버를 구성하는 방법을 알아봅니다. 포트 구성 및 설정 요구 사항을 살펴봅니다.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
 1. `default.vcl` 백업:
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -76,7 +76,7 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
 1. `.host`의 값을 Varnish _백엔드_ 또는 _원본 서버_&#x200B;의 정규화된 호스트 이름 또는 IP 주소 및 수신 대기 포트로 바꾸십시오. 즉, Varnish 콘텐츠를 제공하는 서버는 속도가 빨라집니다.
 
-   일반적으로 웹 서버입니다. [바니시 가이드](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)에서 _백엔드 서버_&#x200B;를 참조하십시오.
+   일반적으로 웹 서버입니다. _바니시 가이드_&#x200B;에서 [백엔드 서버](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)를 참조하십시오.
 
 1. `.port`의 값을 웹 서버의 수신 포트(이 예제에서는 8080)로 바꿉니다.
 
@@ -97,13 +97,13 @@ Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므�
 
 1. 니시 다시 시작:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 Vannish를 시작하지 못하면 다음과 같이 명령줄에서 실행해 보십시오.
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -121,7 +121,7 @@ varnishd -d -f /etc/varnish/default.vcl
 다음 섹션에서 설명한 작업을 표시된 순서대로 수행합니다.
 
 - [니스 시작](#start-varnish)
-- [&#39;netstat&#39;](#netstat)
+- [`netstat`](#netstat)
 
 ### 니스 시작
 
@@ -131,7 +131,7 @@ Vannish가 서비스로 시작되지 않으면 다음과 같이 명령줄에서 
 
 1. Vannish CLI를 시작합니다.
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -141,7 +141,7 @@ Vannish가 서비스로 시작되지 않으면 다음과 같이 명령줄에서 
 
    성공적인 시작을 확인하기 위해 다음 메시지가 표시됩니다.
 
-   ```
+   ```text
    child (29805) Started
    200 0
    
@@ -153,13 +153,13 @@ Vannish가 서비스로 시작되지 않으면 다음과 같이 명령줄에서 
 
 Varnish 서버에 로그인하고 다음 명령을 입력합니다.
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 특히 다음 출력을 찾습니다.
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 Commerce 설치 시 발생할 수 있는 오류:
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -209,7 +209,7 @@ Commerce을 개발자 모드로 설정하려면 [`magento deploy:mode:set`](../c
 
 Varnish가 실행 중인지 확인한 다음 Varnish 서버에 다음 명령을 입력합니다.
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -217,7 +217,7 @@ varnishlog
 
 명령 프롬프트 창에 긴 응답 헤더 목록이 표시됩니다. 다음과 같은 헤더를 찾습니다.
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -240,19 +240,19 @@ varnishlog
 
 다음 예제에서는 `curl`을(를) 사용합니다. HTTP를 사용하여 Commerce 서버에 액세스할 수 있는 모든 컴퓨터에서 이 명령을 입력할 수 있습니다.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 For example,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 다음과 같은 헤더를 찾습니다.
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

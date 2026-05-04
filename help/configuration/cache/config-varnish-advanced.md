@@ -3,9 +3,9 @@ title: 고급 바니시 구성
 description: 상태 확인, 유예 및 saint 모드를 비롯한 Adobe Commerce의 고급 바니시 기능을 구성하는 방법에 대해 알아봅니다. VCL 최적화 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Commerce 사이트의 가용성에 영향을 주지 않고 유지 관리 및 업
 
 마지막으로, 모든 Commerce 인스턴스는 프로덕션 모드에 있어야 합니다. Vannish가 시작되기 전에 각 인스턴스의 캐시를 지우십시오. 관리에서 **시스템** > 도구 > **캐시 관리**(으)로 이동한 다음 **Magento 캐시 플러시**&#x200B;를 클릭합니다. 다음 명령을 실행하여 캐시를 지울 수도 있습니다.
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -92,7 +92,7 @@ Saint 모드는 기본 Varnish 패키지의 일부가 아닙니다. 다운로드
 1. [바니시 모듈](https://github.com/varnish/varnish-modules)에서 소스 코드를 가져옵니다. 0.9.x 버전에 소스 코드 오류가 포함되어 있으므로 Git 버전(마스터 버전)을 복제합니다.
 1. 자동 도구를 사용하여 소스 코드 작성:
 
-   ```bash
+   ```shell
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
    ./bootstrap   # If running from git.
    ./configure

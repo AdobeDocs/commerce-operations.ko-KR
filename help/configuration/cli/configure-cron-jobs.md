@@ -2,9 +2,9 @@
 title: cron 작업 구성 및 실행
 description: Adobe Commerce에서 cron 작업을 구성하고 관리하는 방법에 대해 알아봅니다. 예약, 구성 및 문제 해결 기술을 살펴봅니다.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Commerce crontab을 만들려면 다음을 수행하십시오.
 1. Commerce 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    bin/magento cron:install [--force]
    ```
 
@@ -74,13 +74,13 @@ Commerce crontab을 만들려면 다음을 수행하십시오.
 
 crontab을 보려면 다음 명령을 파일 시스템 소유자로 입력합니다.
 
-```bash
+```shell
 crontab -l
 ```
 
 샘플은 다음과 같습니다.
 
-```
+```shell
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -102,7 +102,7 @@ Commerce crontab을 제거하려면:
 1. Commerce 설치 디렉토리로 변경합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
@@ -114,7 +114,7 @@ Commerce crontab을 제거하려면:
 
 명령 옵션:
 
-```bash
+```shell
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
@@ -122,13 +122,13 @@ bin/magento cron:run [--group="<cron group name>"]
 
 인덱싱 cron 작업을 실행하려면 다음을 입력합니다.
 
-```bash
+```shell
 bin/magento cron:run --group index
 ```
 
 기본 cron 작업을 실행하려면 다음을 입력합니다.
 
-```bash
+```shell
 bin/magento cron:run --group default
 ```
 
@@ -148,9 +148,9 @@ bin/magento cron:run --group default
 
 - `ERROR` 및 `MISSED` 상태의 실패한 작업이 `<install_directory>/var/log/support_report.log`에 기록됩니다.
 
-- `ERROR` 상태의 작업은 항상 `CRITICAL`에 `<install_directory>/var/log/exception.log`(으)로 기록됩니다.
+- `ERROR` 상태의 작업은 항상 `<install_directory>/var/log/exception.log`에 `CRITICAL`(으)로 기록됩니다.
 
-- 상태가 `MISSED`인 작업은 `INFO` 디렉터리에 `<install_directory>/var/log/debug.log`(개발자 모드만 해당)로 기록됩니다.
+- 상태가 `MISSED`인 작업은 `<install_directory>/var/log/debug.log` 디렉터리에 `INFO`(개발자 모드만 해당)로 기록됩니다.
 
 >[!INFO]
 >

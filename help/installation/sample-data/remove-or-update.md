@@ -2,7 +2,7 @@
 title: 샘플 데이터 모듈 제거 또는 업데이트
 description: Adobe Commerce 샘플 데이터 모듈을 관리하려면 다음 단계를 따르십시오.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 이 항목에서는 다음 방법을 설명합니다.
 
-* Adobe Commerce 설치 [에서 &#x200B;](#remove-sample-data-modules)샘플 데이터 모듈을 제거`composer.json`합니다. 이 옵션은 데이터베이스에서 샘플 데이터를 *제거하지*&#x200B;않습니다.
+* Adobe Commerce 설치 `composer.json`에서 [샘플 데이터 모듈을 제거](#remove-sample-data-modules)합니다. 이 옵션은 데이터베이스에서 샘플 데이터를 *제거하지*&#x200B;않습니다.
 
 * [샘플 데이터 업데이트를 준비합니다](#prepare-to-update-sample-data)(예: Magento 응용 프로그램을 업데이트하기 전).
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 다음 명령을 입력합니다.
 
-```bash
+```shell
 bin/magento sampledata:remove
 ```
 
@@ -55,7 +55,7 @@ bin/magento sampledata:remove
 
 업데이트할 샘플 데이터를 준비하려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 

@@ -2,9 +2,9 @@
 title: 구성 설정 내보내기
 description: 구성 덤프를 사용하여 Adobe Commerce 구성 설정을 파일로 내보내는 방법에 대해 알아봅니다. 파이프라인 배포 및 구성 관리에 대해 알아봅니다.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 Commerce 2.2 이상 [파이프라인 배포 모델](../deployment/technical-details.md)에서는 시스템 간에 일관된 구성을 유지할 수 있습니다. 개발 시스템의 관리에서 설정을 구성한 후 다음 명령을 사용하여 이러한 설정을 구성 파일로 내보냅니다.
 
-```bash
+```shell
 bin/magento app:config:dump {config-types}
 ```
 
-_config_types_&#x200B;은(는) 덤프할 구성 형식의 공백으로 구분된 목록입니다. 사용 가능한 형식에는 `scopes`, `system`, `themes` 및 `i18n`이(가) 있습니다. 구성 유형을 지정하지 않으면 명령은 모든 시스템 구성 정보를 덤프합니다.
+_config_ types_은(는) 덤프할 구성 형식의 공백으로 구분된 목록입니다. 사용 가능한 형식에는 `scopes`, `system`, `themes` 및 `i18n`이(가) 있습니다. 구성 유형을 지정하지 않으면 명령은 모든 시스템 구성 정보를 덤프합니다.
 
 다음 예제에서는 범위 및 테마만 덤프합니다.
 
-```bash
+```shell
 bin/magento app:config:dump scopes themes
 ```
 
@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 `env.php`에 기록된 중요한 설정을 설정하려면 [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) 명령을 사용하십시오.
 
-구성 값은 모듈의 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) 파일에서 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)을(를) 참조하여 중요하거나 시스템별로 지정됩니다.
+구성 값은 모듈의 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) 파일에서 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php)을(를) 참조하여 중요하거나 시스템별로 지정됩니다.
 
 `config_types`을(를) 사용할 때 추가 시스템 설정을 내보내려면 [`bin/magento config:set`](set-configuration-values.md#set-values) 명령을 사용하는 것이 좋습니다.

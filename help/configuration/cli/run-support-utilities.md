@@ -2,9 +2,9 @@
 title: 지원 유틸리티 실행
 description: 지원 유틸리티를 실행하여 Adobe Commerce 프로젝트 문제를 해결하는 방법을 알아봅니다. 내장된 진단 및 지원 도구를 살펴보십시오.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
+Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
 
 Adobe Commerce은 이러한 백업을 사용하여 코드에 액세스해야 하는 문제를 분석합니다. _덤프_&#x200B;라고도 합니다. 일반적인 시나리오는 다음과 같습니다.
 
@@ -42,7 +42,7 @@ Adobe Commerce은 이러한 백업을 사용하여 코드에 액세스해야 하
 
 명령 옵션:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 예를 들어, 이름이 `/var/www/html/magento2/var/log/mycodebackup.tar.gz`인 코드 백업을 만들려면 다음을 수행하십시오.
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 
 명령 옵션:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -81,7 +81,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 중요한 데이터에는 다음 데이터베이스 테이블의 고객 정보가 포함됩니다.
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 데이터 수집기와 명령줄에 필요한 유틸리티의 경로를 표시하는 명령을 제공합니다. 예를 들어 다음과 같은 오류가 관리자 또는 명령줄에 표시되는 경우 이러한 명령을 사용할 수 있습니다.
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Utility lsof not found
 
 샘플은 다음과 같습니다.
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

@@ -1,5 +1,5 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -16,19 +16,19 @@ ht-degree: 1%
 
 다음 명령을 입력합니다.
 
-```bash
+```shell
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 예를 들어 검색 엔진 서버에서 명령을 입력하고 프록시가 포트 8080을 사용하는 경우:
 
-```bash
+```shell
 curl -i http://localhost:8080/_cluster/health
 ```
 
 인증 실패를 나타내는 다음 메시지가 표시됩니다.
 
-```
+```text
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -45,19 +45,19 @@ WWW-Authenticate: Basic realm="Restricted"
 
 이제 다음 명령을 시도하십시오.
 
-```bash
+```shell
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 For example:
 
-```bash
+```shell
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
 이번에는 다음과 유사한 메시지로 명령이 성공합니다.
 
-```
+```text
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8
@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## 관리자에서 HTTP 기본 인증 구성
 
-[검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외*&#x200B;에서 설명한 것과 동일한 작업을 수행하고 **[!UICONTROL Yes]** 목록에서 **[!UICONTROL Enable HTTP Auth]**&#x200B;을(를) 클릭한 다음 제공된 필드에 사용자 이름과 암호를 입력합니다.
+[검색 엔진 구성](../configuration/search/configure-search-engine.md) *제외*&#x200B;에서 설명한 것과 동일한 작업을 수행하고 **[!UICONTROL Enable HTTP Auth]** 목록에서 **[!UICONTROL Yes]**&#x200B;을(를) 클릭한 다음 제공된 필드에 사용자 이름과 암호를 입력합니다.
 
 **[!UICONTROL Test Connection]**&#x200B;을(를) 클릭하여 작동하는지 확인한 다음 **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 

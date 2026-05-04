@@ -3,9 +3,9 @@ title: 온-프레미스 설치 보안
 description: Adobe Commerce 온프레미스 설치의 보안 상태를 개선하는 방법에 대해 알아봅니다.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ ht-degree: 0%
 
 SELinux를 사용하도록 선택하면 다음과 같이 일부 디렉터리의 *보안 컨텍스트*&#x200B;를 변경하지 않으면 설치 관리자를 실행하는 데 문제가 있을 수 있습니다.
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
@@ -54,7 +54,7 @@ SELinux가 활성화된 상태에서 Apache가 다른 호스트에 대한 연결
 
 1. SELinux가 활성화되어 있는지 확인하려면 다음 명령을 사용합니다.
 
-   ```bash
+   ```shell
    getenforce
    ```
 

@@ -3,16 +3,16 @@ title: 클릭재킹 악용 방지
 description: '''X-Frame-Options'' 헤더를 사용하여 페이지 렌더링을 제어함으로써 클릭재킹 악용을 방지합니다.'
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # 클릭재킹 악용 방지
 
-[X-Frame-Options](https://owasp.org/www-community/attacks/Clickjacking) HTTP 요청 헤더를 상점 요청에 포함하여 [Clickjacking](https://datatracker.ietf.org/doc/html/rfc7034) 사용을 방지하십시오.
+[X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP 요청 헤더를 상점 요청에 포함하여 [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) 사용을 방지하십시오.
 
 `X-Frame-Options` 헤더를 사용하면 브라우저에서 `<frame>`, `<iframe>` 또는 `<object>`의 페이지를 렌더링할 수 있는지 여부를 다음과 같이 지정할 수 있습니다.
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## `X-Frame-Options` 구현
 
-`X-Frame-Options`에서 `<project-root>/app/etc/env.php`의 값을 설정하십시오. 기본값은 다음과 같이 설정됩니다.
+`<project-root>/app/etc/env.php`에서 `X-Frame-Options`의 값을 설정하십시오. 기본값은 다음과 같이 설정됩니다.
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 다음 예제에서는 HTTP 프로토콜을 통해 Commerce 서버에 연결할 수 있는 모든 컴퓨터에서 실행할 수 있는 curl을 사용합니다.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

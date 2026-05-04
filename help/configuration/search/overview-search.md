@@ -1,11 +1,11 @@
 ---
 title: 검색 엔진 개요
-description: Adobe Commerce에 대한 검색 엔진 옵션 개요.
+description: Elasticsearch 및 OpenSearch for Adobe Commerce 카탈로그 검색, 사전 요구 사항, 웹 서버 설정 및 설치 후 유지 관리 작업에 대해 알아봅니다.
 feature: Configuration, Search
 exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---

@@ -3,9 +3,9 @@ title: 검색 엔진 사전 요구 사항
 description: Adobe Commerce의 온프레미스 설치에 지원되는 검색 엔진 소프트웨어를 설치하고 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -83,15 +83,15 @@ Adobe Commerce 2.4.4 이상을 설치하기 전에 Elasticsearch 또는 OpenSear
 방화벽 또는 SELinux와의 통신을 허용하는 규칙을 설정하려면 다음 리소스를 참조하십시오.
 
 * [입력 방법](https://help.ubuntu.com/community/IptablesHowTo)
-* [테이블 규칙을 편집하는 방법(fedora 프로젝트)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+* [Iptables 규칙을 편집하는 방법(fedora 프로젝트)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [SELinux 소개(CentOS.org)](https://www.centos.org)
-* [SELinux 사용 방법 Wiki(CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [SELinux 방법 위키(CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Java Software Development Kit 설치
 
 Java가 이미 설치되어 있는지 확인하려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 java -version
 ```
 
@@ -108,7 +108,7 @@ java -version
 
 JDK를 설치하고 JRE를 *하지*&#x200B;하십시오.
 
-```bash
+```shell
 yum -y install java-1.8.0-openjdk
 ```
 
@@ -120,11 +120,11 @@ yum -y install java-1.8.0-openjdk
 
 Ubuntu에 JDK 1.8을 설치하려면 `root` 권한을 가진 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 apt-get -y update
 ```
 
-```bash
+```shell
 apt-get install -y openjdk-8-jdk
 ```
 
@@ -136,24 +136,24 @@ apt-get install -y openjdk-8-jdk
 
 Elasticsearch이 작동하는지 확인하려면 실행 중인 서버에서 다음 명령을 입력합니다.
 
-```bash
+```shell
 curl -XGET '<host>:9200/_cat/health?v&pretty'
 ```
 
 다음과 유사한 메시지가 표시됩니다.
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```
 
 OpenSearch가 작동하는지 확인하려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 ```
 
-```bash
+```shell
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 

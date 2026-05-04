@@ -3,9 +3,9 @@ title: 검색 엔진 구성
 description: Adobe Commerce의 온-프레미스 배포에 대한 검색 엔진을 구성합니다.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 >[!TIP]
 >
 >버전 2.4.4 및 2.4.3-p2에서는 **Elasticsearch** 레이블이 지정된 모든 필드가 OpenSearch에도 적용됩니다.
->&#x200B;>Elasticsearch 8.x에 대한 지원이 버전 2.4.6에 도입되면 Elasticsearch 구성과 OpenSearch 구성을 구별하기 위해 새 레이블이 생성되었습니다.
+>Elasticsearch 8.x에 대한 지원이 버전 2.4.6에 도입되면 Elasticsearch 구성과 OpenSearch 구성을 구별하기 위해 새 레이블이 생성되었습니다.
 
-검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=ko)를 참조하세요.
+검색 엔진 구성에 대한 자세한 내용은 [사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)를 참조하세요.
 
 ## 책임자로부터 검색 엔진 구성
 
@@ -37,7 +37,7 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 
    | 옵션 | 설명 |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Elasticsearch 또는 OpenSearch를 실행하는 컴퓨터의 정규화된 호스트 이름 또는 IP 주소를 입력합니다.클라우드 인프라의 <br>Adobe Commerce: 통합 시스템에서 이 값을 가져옵니다. |
+   | **[!UICONTROL Server Hostname]** | Elasticsearch 또는 OpenSearch를 실행하는 컴퓨터의 정규화된 호스트 이름 또는 IP 주소를 입력하십시오.<br>클라우드 인프라의 Adobe Commerce: 통합 시스템에서 이 값을 얻으십시오. |
    | **[!UICONTROL Server Port]** | 웹 서버 프록시 포트를 입력합니다. 기본값은 클라우드 인프라의 9200<br>Adobe Commerce입니다. 통합 시스템에서 이 값을 가져옵니다. |
    | **[!UICONTROL Index Prefix]** | 검색 엔진 색인 접두사를 입력합니다. 둘 이상의 Commerce 설치(스테이징 및 프로덕션 환경)에 단일 인스턴스를 사용하는 경우 각 설치에 대해 고유한 접두사를 지정해야 합니다. 그렇지 않으면 기본 접두사 magento2를 사용할 수 있습니다. |
    | **[!UICONTROL Enable HTTP Auth]** | 검색 엔진 서버에 대한 인증을 사용하도록 설정한 경우에만 **[!UICONTROL Yes]**&#x200B;을(를) 클릭합니다. 그럴 경우 제공된 필드에 사용자 이름과 암호를 입력합니다. |
@@ -69,13 +69,13 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 
   예를 들어 검색 엔진이 기본 포트에서 실행 중인지 확인하려면 다음 명령을 사용합니다.
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   포트 9200에서 실행 중인 경우 다음과 유사하게 표시됩니다.
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -100,13 +100,13 @@ Elasticsearch 또는 OpenSearch를 사용하도록 시스템을 구성하려면 
 
    다음 명령을 입력하여 카탈로그 검색 색인만 다시 색인화합니다.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    모든 인덱서를 다시 인덱싱하려면 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 

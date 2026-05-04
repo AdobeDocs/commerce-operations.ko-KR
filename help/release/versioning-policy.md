@@ -1,10 +1,10 @@
 ---
 title: 릴리스 정책
-description: 다양한 유형의 Adobe Commerce 릴리스에 대해 알아봅니다.
+description: Adobe Commerce 릴리스 유형, 마케팅 및 모듈 버전 관리, 패치 및 보안 릴리스, 베타, 핫픽스, 전체 릴리스 정책에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: 세션 스토리지에 memcached 사용
-description: Commerce 세션 스토리지용 memcached 사용에 대해 알아봅니다.
+description: env.php의 세션 저장을 위해 memcached를 사용하도록 Adobe Commerce을 구성하는 방법과 다른 캐싱 레이어에 Redis 또는 Varnish를 선호하는 시기에 대해 알아봅니다.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Commerce은 세션 스토리지에는 memcached를 사용하지만 페이지 캐
 
 1. Commerce 설치 디렉터리 아래에 있는 다음 디렉터리의 내용을 삭제합니다.
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* var/session/*
    ```
 
@@ -62,17 +62,17 @@ Commerce은 세션 스토리지에는 memcached를 사용하지만 페이지 캐
 
 1. (선택 사항.) 텔넷을 사용하여 memcached 스토리지를 확인합니다.
 
-   ```bash
+   ```shell
    telnet <memcached host or ip> <memcached port>
    ```
 
-   ```bash
+   ```shell
    stats items
    ```
 
    결과는 다음과 유사하게 표시됩니다.
 
-   ```
+   ```text
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

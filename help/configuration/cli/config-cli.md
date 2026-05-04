@@ -2,9 +2,9 @@
 title: 명령줄 도구
 description: 설치 및 구성 작업에 Adobe Commerce 명령줄 도구를 사용하는 방법을 알아봅니다. CLI 명령 및 관리 기능을 살펴봅니다.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -28,37 +28,37 @@ Commerce에는 다음과 같은 설치 및 구성 작업을 실행하는 CLI(명
 - CLI는 타사 개발자가 &quot;플러그인&quot;할 수 있도록 확장 가능합니다. 이는 사용자의 학습곡선을 제거할 수 있다는 추가적인 이점이 있다.
 - 비활성화된 모듈에 대한 명령이 표시되지 않습니다.
 
-이 항목에서는 CLI를 사용하여 Adobe Commerce 소프트웨어를 구성하는 방법에 대해 설명합니다. Commerce 설치에 대한 자세한 내용은 [설치 안내서](../../installation/overview.md)의 _설치 흐름_&#x200B;을 참조하십시오.
+이 항목에서는 CLI를 사용하여 Adobe Commerce 소프트웨어를 구성하는 방법에 대해 설명합니다. Commerce 설치에 대한 자세한 내용은 _설치 안내서_&#x200B;의 [설치 흐름](../../installation/overview.md)을 참조하십시오.
 
 ## 사전 요구 사항
 
 CLI를 사용하기 전에 다음을 확인하십시오.
 
-1. 시스템이 [설치 가이드](../../installation/system-requirements.md)의 _시스템 요구 사항_&#x200B;에서 설명한 요구 사항을 충족합니다.
-1. [설치 가이드](../../installation/prerequisites/overview.md)의 _필수 구성 요소_&#x200B;에서 설명한 모든 필수 구성 요소 작업을 완료했습니다.
-1. Commerce 서버에 로그인한 후 Commerce 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환합니다. [설치 안내서](../../installation/prerequisites/file-system/overview.md)에서 _파일 시스템 소유자로 전환_&#x200B;을 참조하십시오.
+1. 시스템이 _설치 가이드_&#x200B;의 [시스템 요구 사항](../../installation/system-requirements.md)에서 설명한 요구 사항을 충족합니다.
+1. _설치 가이드_&#x200B;의 [필수 구성 요소](../../installation/prerequisites/overview.md)에서 설명한 모든 필수 구성 요소 작업을 완료했습니다.
+1. Commerce 서버에 로그인한 후 Commerce 파일 시스템에 쓸 수 있는 권한이 있는 사용자로 전환합니다. _설치 안내서_&#x200B;에서 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)을 참조하십시오.
 
 ## 명령 실행
 
 기본 셸의 경우 다음 구문을 사용하여 파일 시스템 소유자로 전환하고 동시에 명령을 입력합니다.
 
-```bash
+```shell
 su <file system owner> -s /bin/bash -c <command>
 ```
 
 파일 시스템 소유자가 로그인을 허용하지 않는 경우 다음을 사용할 수 있습니다.
 
-```bash
+```shell
 sudo -u <file system owner> <command>
 ```
 
 **모든 디렉터리에서 CLI 명령을 실행하려면**:
 
-`<magento_root>/bin` 시스템에 `PATH`을(를) 추가합니다.
+`PATH` 시스템에 `<magento_root>/bin`을(를) 추가합니다.
 
 CentOS용 샘플 bash 쉘:
 
-```bash
+```shell
 export PATH=$PATH:/var/www/html/magento2/bin
 ```
 

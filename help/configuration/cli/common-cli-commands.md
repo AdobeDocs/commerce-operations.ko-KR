@@ -2,9 +2,9 @@
 title: 일반 명령
 description: 일반적인 Adobe Commerce CLI 명령과 사용 예제에 대해 알아봅니다. 개발 및 관리를 위한 필수 명령줄 도구를 살펴봅니다.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 **전체 명령 목록을 표시하려면**:
 
-```bash
+```shell
 bin/magento list
 ```
 
 도움말 명령 예:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -47,7 +47,7 @@ bin/magento help cache:enable
 | [`magento sampledata:install`](../../installation/sample-data/overview.md) | Commerce 애플리케이션을 설치한 후 선택적 샘플 데이터를 설치합니다.<br><br>샘플 데이터에 대한 자세한 내용은 [선택적 샘플 데이터](../../installation/sample-data/overview.md)를 참조하십시오. |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | 백엔드 구성 관리 |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 관리자 사용자를 생성/편집/잠금 해제합니다. |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 개발자 템플릿 힌트를 활성화/비활성화합니다. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | 개발자 템플릿 힌트를 활성화/비활성화합니다. |
 
 ## 일반 인수
 

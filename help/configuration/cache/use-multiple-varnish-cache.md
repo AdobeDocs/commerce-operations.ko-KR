@@ -3,9 +3,9 @@ title: 여러 Varnish 인스턴스를 사용하여 캐시 지우기
 description: Adobe Commerce의 여러 Varnish 인스턴스에서 캐시 지우기가 작동하는 방식을 알아봅니다. 구성 및 관리 모범 사례를 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Commerce은 [`magento setup:config:set`](../../installation/tutorials/deployment
 
 For example,
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 

@@ -3,9 +3,9 @@ title: 최종 확인
 description: Adobe Commerce을 사용하여 Vanish 구성을 최종 확인하는 방법을 알아봅니다. 테스트 단계 및 문제 해결 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 For example,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 중요 헤더:
 
-```
+```text
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS
@@ -70,7 +70,7 @@ X-Magento-Cache-Debug: MISS
 1. Commerce 서버에 로그인하거나 파일 시스템 소유자로 전환합니다.
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/var/page_cache/*
    ```
 
@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503(백 엔드 가져오기 실패) 오류가 발생하면 [Adobe Commerce 도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ko)에서 _503(서비스를 사용할 수 없음) 오류 문제 해결_&#x200B;을 참조하십시오.
+>503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)을 참조하십시오.

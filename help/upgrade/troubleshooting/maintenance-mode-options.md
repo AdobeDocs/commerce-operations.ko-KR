@@ -2,7 +2,7 @@
 title: 업그레이드를 위한 유지 관리 모드 옵션
 description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 상점 첫 화면에서 볼 수 있는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -66,13 +66,13 @@ body
 1. Apache 구성을 업데이트하여 다음 작업을 수행합니다.
 
    - 모든 트래픽을 유지 관리 페이지로 리디렉션
-   - 허용 목록에 추가하다 특정 IP를 업그레이드하여 관리자가 Magento 소프트웨어를 업그레이드할 수 있습니다.
+   - 특정 IP를 업그레이드하여 관리자가 Magento 소프트웨어를 업그레이드할 수 있습니다.
 
    다음 예제 허용 목록 192.0.2.110.
 
    Apache 구성 파일의 끝에 다음 내용을 추가합니다.
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ body
 
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -107,7 +107,7 @@ body
 1. 텍스트 편집기를 사용하여 서버 블록이 포함된 nginx 구성 파일을 엽니다.
 1. 서버 블록에 다음 내용을 추가하십시오. `server`은(는) 명확하게 하기 위해서만 표시되며, 두 번째 서버 블록은 추가하지 마십시오.
 
-   192.0.2.110에 Magento이 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.115 및 `/var/www/html/magento2`:
+   `/var/www/html/magento2`에 Magento이 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.110 및 192.0.2.115:
 
    ```conf
    server {
@@ -144,13 +144,13 @@ body
 
 1. 다음 명령을 입력합니다.
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. nginx 구성을 다시 로드합니다.
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ body
 1. 업그레이드가 완료되면 `maintenance.enable`을(를) 삭제하거나 이름을 바꾸십시오.
 1. nginx 구성을 다시 로드합니다.
 
-   ```bash
+   ```shell
    service nginx reload
    ```

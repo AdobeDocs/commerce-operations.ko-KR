@@ -3,9 +3,9 @@ title: 검색 엔진에 대한 Apache 구성
 description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. 다음과 같이 `mod_proxy`을(를) 사용합니다.
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
@@ -54,25 +54,25 @@ ht-degree: 0%
 
 1. Apache 다시 시작:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. 다음 명령을 입력하여 프록시가 작동하는지 확인합니다.
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    예를 들어, Elasticsearch을 사용하고 있고 프록시가 포트 8080을 사용하는 경우:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    성공을 나타내는 다음 디스플레이와 유사한 메시지:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 1. `htpasswd`이(가) 이미 설치되어 있는지 확인하려면 다음 명령을 입력하십시오.
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -118,11 +118,11 @@ ht-degree: 0%
 
 `root` 권한이 있는 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
@@ -145,22 +145,22 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 **예 1: cron**
 cron에 대해 한 명의 사용자에 대해서만 인증을 설정해야 합니다. 이 예제에서는 웹 서버 사용자를 사용합니다. 웹 서버 사용자의 암호 파일을 만들려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **예 2: Elasticsearch**
 두 명의 사용자에 대한 인증을 설정해야 합니다. 하나는 nginx에 액세스할 수 있고 다른 하나는 Elasticsearch에 액세스할 수 있습니다. 이러한 사용자의 암호 파일을 생성하려면 다음 명령을 입력합니다.
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
@@ -168,7 +168,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 암호 파일에 다른 사용자를 추가하려면 `root` 권한을 가진 사용자로 다음 명령을 입력하십시오.
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 

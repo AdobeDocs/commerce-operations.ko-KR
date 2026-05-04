@@ -2,11 +2,11 @@
 title: 온-프레미스 배포용 Nginx 설치
 description: 온-프레미스 Adobe Commerce 배포용 Nginx 웹 서버를 설치하고 구성하는 방법에 대해 알아봅니다. PHP-FPM 및 가상 호스트를 설정합니다.
 feature: Install, Configuration
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe은 Adobe Commerce 릴리스의 [시스템 요구 사항](../../system-requ
 
 ### Nginx 설치
 
-```bash
+```shell
 sudo apt -y install nginx
 ```
 
@@ -39,7 +39,7 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
 1. Adobe Commerce 릴리스에서 지원하는 PHP 버전용 `php-fpm` 및 `php-cli` 패키지를 설치하십시오. Ubuntu에서 패키지 이름은 일반적으로 다음 패턴을 따릅니다.
 
-   ```bash
+   ```shell
    apt-get -y install php<php-version>-fpm php<php-version>-cli
    ```
 
@@ -49,11 +49,11 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
 1. 편집기에서 `php.ini` 파일을 엽니다.
 
-   ```bash
+   ```shell
    vim /etc/php/<php-version>/fpm/php.ini
    ```
 
-   ```bash
+   ```shell
    vim /etc/php/<php-version>/cli/php.ini
    ```
 
@@ -73,7 +73,7 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
 1. `php-fpm` 서비스 다시 시작:
 
-   ```bash
+   ```shell
    systemctl restart php<php-version>-fpm
    ```
 
@@ -95,13 +95,13 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
 1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다. 이 예제에서는 Ubuntu 기본 `/var/www/html`을(를) 사용합니다.
 
-   ```bash
+   ```shell
    cd /var/www/html
    ```
 
 1. Composer를 전체적으로 설치합니다. Composer는 Adobe Commerce을 설치하기 전에 종속성을 업데이트해야 합니다.
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
@@ -109,13 +109,13 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -123,29 +123,29 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
 1. 응용 프로그램을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 해야 합니다.
 
-   ```bash
+   ```shell
    cd /var/www/html/<magento install directory>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :www-data . # Ubuntu
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 1. [명령줄](../../advanced.md)에서 설치합니다. 이 예제에서는 설치 디렉터리 이름이 `magento2ee`이고 데이터베이스 호스트가 동일한 컴퓨터(`localhost`)에 있다고 가정합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
@@ -169,15 +169,15 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP 확장](../php-settings.
 
    >[!NOTE]
    >
-   >설치 중인 Adobe Commerce 릴리스에 필요한 `--search-engine` 값과 일치하는 호스트/포트 옵션을 사용하십시오. 2.4.6 이전 버전의 경우 Elasticsearch 7 또는 OpenSearch용 `elasticsearch7` 옵션과 함께 `--elasticsearch-*`을(를) 사용합니다. 버전 2.4.6 이상의 경우 해당 릴리스에서 지원하는 검색 엔진 값 및 해당 CLI 옵션을 사용하십시오.
+   >설치 중인 Adobe Commerce 릴리스에 필요한 `--search-engine` 값과 일치하는 호스트/포트 옵션을 사용하십시오. 2.4.6 이전 버전의 경우 Elasticsearch 7 또는 OpenSearch용 `--elasticsearch-*` 옵션과 함께 `elasticsearch7`을(를) 사용합니다. 버전 2.4.6 이상의 경우 해당 릴리스에서 지원하는 검색 엔진 값 및 해당 CLI 옵션을 사용하십시오.
 
 1. 개발자 모드로 전환:
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2/bin
    ```
 
-   ```bash
+   ```shell
    ./magento deploy:mode:set developer
    ```
 
@@ -193,7 +193,7 @@ Adobe에서는 Commerce 응용 프로그램의 기능과 보안을 모두 유지
 
 1. 사이트에 대한 새 가상 호스트를 만듭니다.
 
-   ```bash
+   ```shell
    vim /etc/nginx/sites-available/magento
    ```
 
@@ -223,19 +223,19 @@ Adobe에서는 Commerce 응용 프로그램의 기능과 보안을 모두 유지
 
 1. `/etc/nginx/sites-enabled` 디렉터리에 symlink를 만들어 새로 만든 가상 호스트를 활성화합니다.
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
    ```
 
 1. 구문이 올바른지 확인합니다.
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Nginx 다시 시작:
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
@@ -249,21 +249,21 @@ Adobe에서는 Commerce 응용 프로그램의 기능과 보안을 모두 유지
 
 ### Nginx 설치
 
-```bash
+```shell
 yum -y install epel-release
 ```
 
-```bash
+```shell
 yum -y install nginx
 ```
 
 설치가 완료되면 ngix를 시작하고 부팅 시 시작되도록 구성합니다.
 
-```bash
+```shell
 systemctl start nginx
 ```
 
-```bash
+```shell
 systemctl enable nginx
 ```
 
@@ -275,7 +275,7 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. `php-fpm` 설치:
 
-   ```bash
+   ```shell
    yum -y install <php-fpm-package>
    ```
 
@@ -334,37 +334,37 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. PHP 세션 경로에 대한 디렉터리를 만들고 소유자를 `nginx` 사용자 및 그룹으로 변경합니다.
 
-   ```bash
+   ```shell
    mkdir -p /var/lib/php/session/
    ```
 
-   ```bash
+   ```shell
    chown -R nginx:nginx /var/lib/php/
    ```
 
 1. PHP-FPM 소켓에 대한 디렉터리를 만들고 소유자를 `nginx` 사용자 및 그룹으로 변경합니다.
 
-   ```bash
+   ```shell
    mkdir -p /run/php-fpm/
    ```
 
-   ```bash
+   ```shell
    chown -R nginx:nginx /run/php-fpm/
    ```
 
 1. `php-fpm` 서비스를 시작하고 부팅 시 시작되도록 구성하십시오.
 
-   ```bash
+   ```shell
    systemctl start php-fpm
    ```
 
-   ```bash
+   ```shell
    systemctl enable php-fpm
    ```
 
 1. `php-fpm` 서비스가 실행 중인지 확인합니다.
 
-   ```bash
+   ```shell
    netstat -pl | grep php-fpm.sock
    ```
 
@@ -386,13 +386,13 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. 웹 서버 docroot 디렉토리 또는 가상 호스트 docroot로 구성한 디렉토리로 변경합니다. 이 예제에서는 CentOS 기본값 `/usr/share/nginx/html`을(를) 사용합니다.
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html
    ```
 
 1. Composer를 전체적으로 설치합니다. Composer는 Adobe Commerce을 설치하기 전에 종속성을 업데이트해야 합니다.
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
@@ -400,13 +400,13 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -414,29 +414,29 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. 응용 프로그램을 설치하기 전에 웹 서버 그룹에 대한 읽기/쓰기 권한을 설정합니다. 명령줄이 파일 시스템에 파일을 쓸 수 있도록 해야 합니다.
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html/<magento install directory>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :nginx . # CentOS
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 1. [명령줄](../../advanced.md)에서 설치합니다. 이 예제에서는 설치 디렉터리 이름이 `magento2ee`이고 데이터베이스 호스트가 동일한 컴퓨터(`localhost`)에 있다고 가정합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
@@ -457,11 +457,11 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. 개발자 모드로 전환:
 
-   ```bash
+   ```shell
    cd /usr/share/nginx/html/magento2/bin
    ```
 
-   ```bash
+   ```shell
    ./magento deploy:mode:set developer
    ```
 
@@ -477,7 +477,7 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. 사이트에 대한 새 가상 호스트를 만듭니다.
 
-   ```bash
+   ```shell
    vim /etc/nginx/conf.d/magento.conf
    ```
 
@@ -507,13 +507,13 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 1. 구문이 올바른지 확인합니다.
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Nginx 다시 시작:
 
-   ```bash
+   ```shell
    systemctl restart nginx
    ```
 
@@ -521,7 +521,7 @@ Adobe Commerce이 제대로 작동하려면 여러 [PHP](../php-settings.md) 확
 
 SELinux는 CentOS 7에서 기본적으로 활성화됩니다. 다음 명령을 사용하여 실행 중인지 확인하십시오.
 
-```bash
+```shell
 sestatus
 ```
 
@@ -529,59 +529,59 @@ SELinux 및 firewall을 구성하려면 다음을 수행합니다.
 
 1. SELinux 관리 도구를 설치합니다.
 
-   ```bash
+   ```shell
    yum -y install policycoreutils-python
    ```
 
 1. 다음 명령을 실행하여 설치 디렉토리의 보안 컨텍스트를 변경합니다.
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/app/etc(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/var(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/pub/media(/.*)?'
    ```
 
-   ```bash
+   ```shell
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/pub/static(/.*)?'
    ```
 
-   ```bash
+   ```shell
    restorecon -Rv '/usr/share/nginx/html/magento2/'
    ```
 
 1. Firewalld 패키지를 설치합니다.
 
-   ```bash
+   ```shell
    yum -y install firewalld
    ```
 
 1. 방화벽 서비스를 시작하고 부팅 시 시작되도록 구성합니다.
 
-   ```bash
+   ```shell
    systemctl start firewalld
    ```
 
-   ```bash
+   ```shell
    systemctl enable firewalld
    ```
 
 1. 웹 브라우저에서 기본 URL에 액세스할 수 있도록 다음 명령을 실행하여 HTTP 및 HTTPS용 포트를 엽니다.
 
-   ```bash
+   ```shell
    firewall-cmd --permanent --add-service=http
    ```
 
-   ```bash
+   ```shell
    firewall-cmd --permanent --add-service=https
    ```
 
-   ```bash
+   ```shell
    firewall-cmd --reload
    ```
 

@@ -5,9 +5,9 @@ feature: B2B
 role: Admin, Developer
 exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-63974 패치는 항목이 너무 많을 때 **[!UICONTROL Requisition List]
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -38,10 +38,10 @@ ACSD-63974 패치는 항목이 너무 많을 때 **[!UICONTROL Requisition List]
 
 1. **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > *[!UICONTROL General]* > **[!UICONTROL B2B features]**(으)로 이동합니다.
 1. **[!UICONTROL Enable Requisition List]**&#x200B;을(를) *예*(으)로 설정합니다.
-1. `simple_products`에서 `setup/performance-toolkit/profiles/ce/small.xml` 노드를 편집하여 2000개 이상의 제품을 생성합니다.
+1. `setup/performance-toolkit/profiles/ce/small.xml`에서 `simple_products` 노드를 편집하여 2000개 이상의 제품을 생성합니다.
 1. 다음 명령을 실행합니다.
 
-   ```bash
+   ```shell
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 
@@ -63,7 +63,7 @@ ACSD-63974 패치는 항목이 너무 많을 때 **[!UICONTROL Requisition List]
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 업그레이드 및 패치 > 패치 적용.
 
 ## 관련 읽기

@@ -1,11 +1,11 @@
 ---
 title: 테마 제거
-description: Adobe Commerce 테마를 제거하려면 다음 단계를 따르십시오.
+description: 변경하기 전에 Composer 패키지, 코드 제거 및 백업을 포함하여 명령줄에서 Adobe Commerce 테마를 제거하는 방법에 대해 알아봅니다.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -16,24 +16,24 @@ ht-degree: 0%
 
 예를 들어 Adobe Commerce과 함께 제공되는 Luma 테마의 경로는 `frontend/Magento/luma`입니다.
 
-테마에 대한 자세한 내용은 [테마 구조](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/)를 참조하세요.
+테마에 대한 자세한 내용은 [테마 구조](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure)를 참조하세요.
 
 ## 테마 제거 개요
 
 이 섹션에서는 하나 이상의 테마를 제거하는 방법에 대해 설명합니다(필요한 경우 파일 시스템에서 테마 코드 포함). 나중에 데이터를 복원할 수 있도록 백업을 먼저 만들 수 있습니다.
 
-이 명령은 *에 지정된*&#x200B;전용`composer.json`개 테마, 즉 Composer 패키지로 제공되는 테마를 제거합니다. 테마가 작성기 패키지가 아닌 경우 다음을 수행하여 수동으로 제거해야 합니다.
+이 명령은 `composer.json`에 지정된 *전용*&#x200B;개 테마, 즉 Composer 패키지로 제공되는 테마를 제거합니다. 테마가 작성기 패키지가 아닌 경우 다음을 수행하여 수동으로 제거해야 합니다.
 
-* 테마에 대한 참조를 제거하기 위해 `parent`에서 `theme.xml` 노드 정보를 업데이트하는 중입니다.
+* 테마에 대한 참조를 제거하기 위해 `theme.xml`에서 `parent` 노드 정보를 업데이트하는 중입니다.
 * 파일 시스템에서 테마 코드 제거.
 
-  [테마 상속에 대한 추가 정보](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [테마 상속에 대한 추가 정보](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance).
 
 ## 테마 제거
 
 명령 사용:
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
@@ -68,20 +68,20 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 예를 들어 다른 테마가 종속된 테마를 제거하려고 하면 다음 메시지가 표시됩니다.
 
-```
+```text
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
 한 가지 대안은 코드베이스를 백업하는 다음과 같이 두 테마를 동시에 제거하는 것입니다.
 
-```bash
+```shell
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
 다음 디스플레이와 유사한 메시지:
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

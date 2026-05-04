@@ -3,9 +3,9 @@ title: 데이터베이스 작업 기록
 description: 로거 인터페이스를 사용하여 데이터베이스 작업을 기록하도록 Commerce을 구성합니다.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 마지막으로 다음을 사용하여 코드를 컴파일합니다.
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 및 다음을 사용하여 캐시를 정리합니다.
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

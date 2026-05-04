@@ -3,16 +3,16 @@ title: 변경 사항 마이그레이션
 description: ' [!DNL Data Migration Tool]을(를) 사용한 마지막 Magento 1 데이터 마이그레이션 이후 변경된 데이터만 마이그레이션하는 방법에 대해 알아봅니다.'
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
 # 변경 사항 마이그레이션
 
-증분 마이그레이션 도구는 `m2_cl_*`데이터 마이그레이션[&#x200B; 동안 Magento 1 데이터베이스에 Deltalog 테이블(접두사 &#x200B;](data.md) 포함)과 트리거(변경 내용 추적)를 설치합니다. 이러한 deltalog 테이블 및 트리거는 마지막으로 데이터를 마이그레이션한 이후 Magento 1에서 변경된 사항만 마이그레이션하도록 하는 데 필수적입니다. 이러한 변경 사항은 다음과 같습니다.
+증분 마이그레이션 도구는 [데이터 마이그레이션](data.md) 동안 Magento 1 데이터베이스에 Deltalog 테이블(접두사 `m2_cl_*` 포함)과 트리거(변경 내용 추적)를 설치합니다. 이러한 deltalog 테이블 및 트리거는 마지막으로 데이터를 마이그레이션한 이후 Magento 1에서 변경된 사항만 마이그레이션하도록 하는 데 필수적입니다. 이러한 변경 사항은 다음과 같습니다.
 
 * 고객이 storefront를 통해 추가한 데이터(고객 프로필에서 생성된 주문, 검토 및 변경)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 증분 변경 사항 마이그레이션을 시작하려면 다음을 실행합니다.
 
-```bash
+```shell
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

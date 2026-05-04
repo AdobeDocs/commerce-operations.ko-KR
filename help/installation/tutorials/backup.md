@@ -2,9 +2,9 @@
 title: 파일 시스템, 미디어 및 데이터베이스 백업 및 롤백
 description: 다음 단계에 따라 Adobe Commerce 애플리케이션을 백업하고 복원합니다.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ ht-degree: 0%
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 [클라우드 가이드](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)에서 _스냅샷 및 백업 관리_&#x200B;를 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에 대해서는 _클라우드 가이드_&#x200B;에서 [스냅샷 및 백업 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)를 참조하십시오.
 
 ## 백업 활성화
 
 백업 기능은 기본적으로 비활성화되어 있습니다. 활성화하려면 다음 CLI 명령을 입력합니다.
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
 >**사용 중단 알림:**
->&#x200B;>백업 기능은 2.1.16, 2.2.7 및 2.3.0부터 더 이상 사용되지 않습니다. 추가 백업 기술 및 바이너리 백업 도구(예: Percona XtraBackup)를 조사하는 것이 좋습니다.
+>백업 기능은 2.1.16, 2.2.7 및 2.3.0부터 더 이상 사용되지 않습니다. 추가 백업 기술 및 바이너리 백업 도구(예: Percona XtraBackup)를 조사하는 것이 좋습니다.
 
 ## 열린 파일 제한 설정
 
@@ -54,7 +54,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 명령:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -70,7 +70,7 @@ ulimit -s 65536
 1. 텍스트 편집기에서 `/home/<username>/.bashrc` 열기
 1. 다음 줄을 추가합니다.
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -78,13 +78,13 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->실패 알림 없이 불완전한 롤백을 초래할 수 있으므로 [`pcre.recursion_limit` 파일에서 &#x200B;](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`의 값을 설정하지 않는 것이 좋습니다.
+>실패 알림 없이 불완전한 롤백을 초래할 수 있으므로 `php.ini` 파일에서 [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php)의 값을 설정하지 않는 것이 좋습니다.
 
 ## 백업
 
 명령 사용:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ bin/magento setup:backup [--code] [--media] [--db]
 
 예를 들어 파일 시스템 및 데이터베이스를 백업하려면
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 다음 디스플레이와 유사한 메시지:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ Disabling maintenance mode
 
 백업의 이름을 찾으려면 다음을 입력합니다.
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ bin/magento info:backups:list
 
 이전 백업으로 롤백하려면 다음을 입력합니다.
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 예를 들어 이름이 `1440611839_filesystem_media.tgz`인 미디어 백업을 복원하려면 다음을 입력하십시오.
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 다음 디스플레이와 유사한 메시지:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

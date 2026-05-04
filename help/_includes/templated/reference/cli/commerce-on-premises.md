@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
 workflow-type: tm+mt
-source-wordcount: '8012'
+source-wordcount: '8072'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Adobe Commerce에서 `bin/magento list` 명령을 사용하여 초기 목록이 
 
 사용자 지정 CLI 명령을 추가하려면 [&quot;CLI 명령 추가&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 가이드를 사용하십시오.
 
-전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento setup:upgrade`, `bin/magento s:up`을(를) 사용하여 `bin/magento s:upg`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
+전체 명령 이름 대신 바로 가기를 사용하여 `bin/magento` CLI 명령을 호출할 수 있습니다. 예를 들어 `bin/magento s:up`, `bin/magento s:upg`을(를) 사용하여 `bin/magento setup:upgrade`을(를) 호출할 수 있습니다. CLI 명령에 바로 가기를 사용하는 방법을 이해하려면 [바로 가기 구문](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)을 참조하십시오.
 
 이 참조 설명서는 애플리케이션 소스 코드에서 생성됩니다. 설명서를 변경하려면 다음을 열어야 합니다
 관련 [codebase](https://github.com/magento) 저장소의 해당 명령에 대한 가져오기 요청입니다. 다음을 참조하십시오
@@ -81,7 +81,7 @@ ANSI 출력 강제(또는 비활성화 —no-ansi)
 
 ## `_complete`
 
-```bash
+```shell
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
@@ -125,13 +125,13 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ## `completion`
 
-```bash
+```shell
 bin/magento completion [--debug] [--] [<shell>]
 ```
 
 셸 완료 스크립트 덤프
 
-```
+```text
 The completion command dumps the shell completion script required
 to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
@@ -180,13 +180,13 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 
 ## `help`
 
-```bash
+```shell
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 명령에 대한 도움말 표시
 
-```
+```text
 The help command displays help for a given command:
 
   bin/magento help list
@@ -227,13 +227,13 @@ To display the list of available commands, please use the list command.
 
 ## `list`
 
-```bash
+```shell
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 목록 명령
 
-```
+```text
 The list command lists all commands:
 
   bin/magento list
@@ -285,7 +285,7 @@ It's also possible to get raw list of commands (useful for embedding command run
 
 ## `admin:adobe-ims:disable`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:disable
 ```
 
@@ -298,7 +298,7 @@ Adobe IMS 모듈 비활성화
 
 ## `admin:adobe-ims:enable`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
 
@@ -335,7 +335,7 @@ Adobe Admin Console의 조직에 대해 2FA가 활성화되어 있는지 확인�
 
 ## `admin:adobe-ims:info`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:info
 ```
 
@@ -348,7 +348,7 @@ Adobe IMS 모듈 구성 정보
 
 ## `admin:adobe-ims:status`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:status
 ```
 
@@ -361,7 +361,7 @@ Adobe IMS 모듈 상태
 
 ## `admin:user:create`
 
-```bash
+```shell
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -410,13 +410,13 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `admin:user:unlock`
 
-```bash
+```shell
 bin/magento admin:user:unlock <username>
 ```
 
 관리자 계정 잠금 해제
 
-```
+```text
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
@@ -437,7 +437,7 @@ To unlock:
 
 ## `app:config:dump`
 
-```bash
+```shell
 bin/magento app:config:dump [<config-types>...]
 ```
 
@@ -459,7 +459,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ## `app:config:import`
 
-```bash
+```shell
 bin/magento app:config:import
 ```
 
@@ -472,7 +472,7 @@ bin/magento app:config:import
 
 ## `app:config:status`
 
-```bash
+```shell
 bin/magento app:config:status
 ```
 
@@ -485,7 +485,7 @@ bin/magento app:config:status
 
 ## `braintree:migrate`
 
-```bash
+```shell
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
@@ -522,7 +522,7 @@ Magento 1 데이터베이스에서 저장된 카드 마이그레이션
 
 ## `cache:clean`
 
-```bash
+```shell
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -550,7 +550,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:clean:payment_services_merchant_scopes`
 
-```bash
+```shell
 bin/magento cache:clean:payment_services_merchant_scopes
 ```
 
@@ -563,7 +563,7 @@ bin/magento cache:clean:payment_services_merchant_scopes
 
 ## `cache:disable`
 
-```bash
+```shell
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -591,7 +591,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:enable`
 
-```bash
+```shell
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -619,7 +619,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:flush`
 
-```bash
+```shell
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -647,7 +647,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:status`
 
-```bash
+```shell
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
 
@@ -666,7 +666,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ## `catalog:images:resize`
 
-```bash
+```shell
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
@@ -693,7 +693,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ## `catalog:product:attributes:cleanup`
 
-```bash
+```shell
 bin/magento catalog:product:attributes:cleanup
 ```
 
@@ -706,7 +706,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ## `cms:wysiwyg:restrict`
 
-```bash
+```shell
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
@@ -727,7 +727,7 @@ y\n
 
 ## `config:sensitive:set`
 
-```bash
+```shell
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
 
@@ -772,7 +772,7 @@ group/section/field_name과 같은 구성 경로
 
 ## `config:set`
 
-```bash
+```shell
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
 
@@ -834,7 +834,7 @@ format section/group/field_name의 구성 경로
 
 ## `config:show`
 
-```bash
+```shell
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
 
@@ -867,7 +867,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ## `cron:install`
 
-```bash
+```shell
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
@@ -894,7 +894,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ## `cron:remove`
 
-```bash
+```shell
 bin/magento cron:remove
 ```
 
@@ -907,7 +907,7 @@ crontab에서 작업 제거
 
 ## `cron:run`
 
-```bash
+```shell
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
 
@@ -939,7 +939,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ## `customer:hash:upgrade`
 
-```bash
+```shell
 bin/magento customer:hash:upgrade
 ```
 
@@ -952,7 +952,7 @@ bin/magento customer:hash:upgrade
 
 ## `deploy:mode:set`
 
-```bash
+```shell
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
@@ -980,7 +980,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ## `deploy:mode:show`
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
@@ -993,7 +993,7 @@ bin/magento deploy:mode:show
 
 ## `dev:di:info`
 
-```bash
+```shell
 bin/magento dev:di:info <class> [<area>]
 ```
 
@@ -1019,7 +1019,7 @@ bin/magento dev:di:info <class> [<area>]
 
 ## `dev:email:newsletter-compatibility-check`
 
-```bash
+```shell
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
@@ -1032,7 +1032,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ## `dev:email:override-compatibility-check`
 
-```bash
+```shell
 bin/magento dev:email:override-compatibility-check
 ```
 
@@ -1045,7 +1045,7 @@ bin/magento dev:email:override-compatibility-check
 
 ## `dev:profiler:disable`
 
-```bash
+```shell
 bin/magento dev:profiler:disable
 ```
 
@@ -1058,7 +1058,7 @@ bin/magento dev:profiler:disable
 
 ## `dev:profiler:enable`
 
-```bash
+```shell
 bin/magento dev:profiler:enable [<type>]
 ```
 
@@ -1077,7 +1077,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ## `dev:query-log:disable`
 
-```bash
+```shell
 bin/magento dev:query-log:disable
 ```
 
@@ -1090,7 +1090,7 @@ DB 쿼리 로깅 비활성화
 
 ## `dev:query-log:enable`
 
-```bash
+```shell
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
 
@@ -1124,7 +1124,7 @@ DB 쿼리 로깅 활성화
 
 ## `dev:source-theme:deploy`
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
 
@@ -1175,7 +1175,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ## `dev:template-hints:disable`
 
-```bash
+```shell
 bin/magento dev:template-hints:disable
 ```
 
@@ -1188,7 +1188,7 @@ bin/magento dev:template-hints:disable
 
 ## `dev:template-hints:enable`
 
-```bash
+```shell
 bin/magento dev:template-hints:enable
 ```
 
@@ -1201,7 +1201,7 @@ bin/magento dev:template-hints:enable
 
 ## `dev:template-hints:status`
 
-```bash
+```shell
 bin/magento dev:template-hints:status
 ```
 
@@ -1214,7 +1214,7 @@ bin/magento dev:template-hints:status
 
 ## `dev:tests:run`
 
-```bash
+```shell
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
 
@@ -1242,7 +1242,7 @@ PHPUnit에 대한 추가 인수. 예: &quot;-c&#39;—filter=MyTest&#39;&quot; (
 
 ## `dev:urn-catalog:generate`
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
 
@@ -1270,7 +1270,7 @@ IDE에서 xml을 강조 표시하는 *.xsd 매핑에 대한 URN 카탈로그를 
 
 ## `dev:xml:convert`
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
 
@@ -1305,7 +1305,7 @@ XML 파일 덮어쓰기
 
 ## `downloadable:domains:add`
 
-```bash
+```shell
 bin/magento downloadable:domains:add [<domains>...]
 ```
 
@@ -1327,7 +1327,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ## `downloadable:domains:remove`
 
-```bash
+```shell
 bin/magento downloadable:domains:remove [<domains>...]
 ```
 
@@ -1349,7 +1349,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ## `downloadable:domains:show`
 
-```bash
+```shell
 bin/magento downloadable:domains:show
 ```
 
@@ -1362,7 +1362,7 @@ bin/magento downloadable:domains:show
 
 ## `encryption:data:list-re-encryptors`
 
-```bash
+```shell
 bin/magento encryption:data:list-re-encryptors
 ```
 
@@ -1375,7 +1375,7 @@ bin/magento encryption:data:list-re-encryptors
 
 ## `encryption:data:re-encrypt`
 
-```bash
+```shell
 bin/magento encryption:data:re-encrypt [<encryptors>...]
 ```
 
@@ -1397,7 +1397,7 @@ bin/magento encryption:data:re-encrypt [<encryptors>...]
 
 ## `encryption:key:change`
 
-```bash
+```shell
 bin/magento encryption:key:change [-k|--key [KEY]]
 ```
 
@@ -1416,7 +1416,7 @@ env.php 파일 내의 암호화 키를 변경합니다.
 
 ## `encryption:payment-data:update`
 
-```bash
+```shell
 bin/magento encryption:payment-data:update
 ```
 
@@ -1429,7 +1429,7 @@ bin/magento encryption:payment-data:update
 
 ## `events:create-event-provider`
 
-```bash
+```shell
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
 ```
 
@@ -1454,7 +1454,7 @@ bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCR
 
 ## `events:generate:module`
 
-```bash
+```shell
 bin/magento events:generate:module
 ```
 
@@ -1467,7 +1467,7 @@ bin/magento events:generate:module
 
 ## `events:info`
 
-```bash
+```shell
 bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 ```
 
@@ -1495,7 +1495,7 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 
 ## `events:list`
 
-```bash
+```shell
 bin/magento events:list
 ```
 
@@ -1508,7 +1508,7 @@ bin/magento events:list
 
 ## `events:list:all`
 
-```bash
+```shell
 bin/magento events:list:all <module_name>
 ```
 
@@ -1529,7 +1529,7 @@ bin/magento events:list:all <module_name>
 
 ## `events:metadata:populate`
 
-```bash
+```shell
 bin/magento events:metadata:populate
 ```
 
@@ -1542,7 +1542,7 @@ bin/magento events:metadata:populate
 
 ## `events:provider:info`
 
-```bash
+```shell
 bin/magento events:provider:info
 ```
 
@@ -1555,7 +1555,7 @@ bin/magento events:provider:info
 
 ## `events:registrations:list`
 
-```bash
+```shell
 bin/magento events:registrations:list
 ```
 
@@ -1568,7 +1568,7 @@ App Builder 프로젝트의 이벤트 등록을 나열합니다.
 
 ## `events:subscribe`
 
-```bash
+```shell
 bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
@@ -1637,7 +1637,7 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 ## `events:sync-events-metadata`
 
-```bash
+```shell
 bin/magento events:sync-events-metadata [-d|--delete]
 ```
 
@@ -1657,7 +1657,7 @@ bin/magento events:sync-events-metadata [-d|--delete]
 
 ## `events:unsubscribe`
 
-```bash
+```shell
 bin/magento events:unsubscribe <event-code>
 ```
 
@@ -1678,7 +1678,7 @@ bin/magento events:unsubscribe <event-code>
 
 ## `i18n:collect-phrases`
 
-```bash
+```shell
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
@@ -1710,7 +1710,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ## `i18n:pack`
 
-```bash
+```shell
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
 
@@ -1752,7 +1752,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ## `i18n:uninstall`
 
-```bash
+```shell
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
 
@@ -1783,7 +1783,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ## `indexer:info`
 
-```bash
+```shell
 bin/magento indexer:info
 ```
 
@@ -1796,7 +1796,7 @@ bin/magento indexer:info
 
 ## `indexer:reindex`
 
-```bash
+```shell
 bin/magento indexer:reindex [<index>...]
 ```
 
@@ -1818,7 +1818,7 @@ bin/magento indexer:reindex [<index>...]
 
 ## `indexer:reset`
 
-```bash
+```shell
 bin/magento indexer:reset [<index>...]
 ```
 
@@ -1840,7 +1840,7 @@ bin/magento indexer:reset [<index>...]
 
 ## `indexer:set-dimensions-mode`
 
-```bash
+```shell
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
@@ -1855,7 +1855,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 #### `mode`
 
-인덱서 차원 모드 catalog_product_price          없음,website,customer_group,website_and_customer_group catalogpermissions_category    none,customer_group
+인덱서 차원 모드 catalog_product_price none,website,customer_group,website_and_customer_group catalogpermissions_category none,customer_group
 
 ### 옵션
 
@@ -1864,7 +1864,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ## `indexer:set-mode`
 
-```bash
+```shell
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
 
@@ -1891,7 +1891,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ## `indexer:set-status`
 
-```bash
+```shell
 bin/magento indexer:set-status <status> [<index>...]
 ```
 
@@ -1920,7 +1920,7 @@ bin/magento indexer:set-status <status> [<index>...]
 
 ## `indexer:show-dimensions-mode`
 
-```bash
+```shell
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
@@ -1942,7 +1942,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ## `indexer:show-mode`
 
-```bash
+```shell
 bin/magento indexer:show-mode [<index>...]
 ```
 
@@ -1964,7 +1964,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ## `indexer:status`
 
-```bash
+```shell
 bin/magento indexer:status [<index>...]
 ```
 
@@ -1986,7 +1986,7 @@ bin/magento indexer:status [<index>...]
 
 ## `info:adminuri`
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
@@ -1999,7 +1999,7 @@ Magento 관리자 URI를 표시합니다.
 
 ## `info:backups:list`
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -2012,7 +2012,7 @@ bin/magento info:backups:list
 
 ## `info:currency:list`
 
-```bash
+```shell
 bin/magento info:currency:list
 ```
 
@@ -2025,7 +2025,7 @@ bin/magento info:currency:list
 
 ## `info:dependencies:show-framework`
 
-```bash
+```shell
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
@@ -2045,7 +2045,7 @@ Magento 프레임워크의 종속성 수를 표시합니다.
 
 ## `info:dependencies:show-modules`
 
-```bash
+```shell
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
 
@@ -2065,7 +2065,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ## `info:dependencies:show-modules-circular`
 
-```bash
+```shell
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
 
@@ -2085,7 +2085,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ## `info:language:list`
 
-```bash
+```shell
 bin/magento info:language:list
 ```
 
@@ -2098,7 +2098,7 @@ bin/magento info:language:list
 
 ## `info:timezone:list`
 
-```bash
+```shell
 bin/magento info:timezone:list
 ```
 
@@ -2111,7 +2111,7 @@ bin/magento info:timezone:list
 
 ## `inventory:reservation:create-compensations`
 
-```bash
+```shell
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
@@ -2140,7 +2140,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ## `inventory:reservation:list-inconsistencies`
 
-```bash
+```shell
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
 
@@ -2181,7 +2181,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ## `inventory-geonames:import`
 
-```bash
+```shell
 bin/magento inventory-geonames:import <countries>...
 ```
 
@@ -2205,7 +2205,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ## `maintenance:allow-ips`
 
-```bash
+```shell
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
 
@@ -2247,7 +2247,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `maintenance:disable`
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2273,7 +2273,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `maintenance:enable`
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2299,7 +2299,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `maintenance:status`
 
-```bash
+```shell
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2318,7 +2318,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `media-content:sync`
 
-```bash
+```shell
 bin/magento media-content:sync
 ```
 
@@ -2331,7 +2331,7 @@ bin/magento media-content:sync
 
 ## `media-gallery:sync`
 
-```bash
+```shell
 bin/magento media-gallery:sync
 ```
 
@@ -2344,7 +2344,7 @@ bin/magento media-gallery:sync
 
 ## `module:config:status`
 
-```bash
+```shell
 bin/magento module:config:status
 ```
 
@@ -2357,7 +2357,7 @@ bin/magento module:config:status
 
 ## `module:disable`
 
-```bash
+```shell
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
@@ -2406,7 +2406,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `module:enable`
 
-```bash
+```shell
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
@@ -2455,7 +2455,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `module:status`
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
 
@@ -2497,7 +2497,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `module:uninstall`
 
-```bash
+```shell
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
 
@@ -2569,7 +2569,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `newrelic:create:deploy-marker`
 
-```bash
+```shell
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
 
@@ -2607,13 +2607,13 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ## `queue:consumers:list`
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 MessageQueue 소비자 목록
 
-```
+```text
 This command shows list of MessageQueue consumers.
 ```
 
@@ -2624,13 +2624,13 @@ This command shows list of MessageQueue consumers.
 
 ## `queue:consumers:restart`
 
-```bash
+```shell
 bin/magento queue:consumers:restart
 ```
 
 MessageQueue 소비자 다시 시작
 
-```
+```text
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
 ```
 
@@ -2641,13 +2641,13 @@ Command put poison pill for MessageQueue consumers and force to restart them aft
 
 ## `queue:consumers:start`
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
 ```
 
 MessageQueue 소비자 시작
 
-```
+```text
 This command starts MessageQueue consumer by its name.
 
 To start consumer which will process all queued messages and terminate execution:
@@ -2705,7 +2705,7 @@ To define the number of processes per consumer:
 
 #### `--area-code`
 
-기본 설정 영역(전역, adminhtml 등) 기본값은 전역입니다.
+기본 영역(전역, adminhtml 등) 기본값은 글로벌입니다.
 
 - 값 필요
 
@@ -2731,7 +2731,7 @@ PID 저장을 위한 파일 경로(이 옵션은 더 이상 사용되지 않으�
 
 ## `remote-storage:sync`
 
-```bash
+```shell
 bin/magento remote-storage:sync
 ```
 
@@ -2744,7 +2744,7 @@ bin/magento remote-storage:sync
 
 ## `saas:resync`
 
-```bash
+```shell
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
@@ -2815,7 +2815,7 @@ SaaS 서비스에 완전히 다시 동기화하기 위한 피드 이름입니다
 
 ## `sampledata:deploy`
 
-```bash
+```shell
 bin/magento sampledata:deploy [--no-update]
 ```
 
@@ -2835,7 +2835,7 @@ bin/magento sampledata:deploy [--no-update]
 
 ## `sampledata:remove`
 
-```bash
+```shell
 bin/magento sampledata:remove [--no-update]
 ```
 
@@ -2855,7 +2855,7 @@ composer.json에서 모든 샘플 데이터 패키지 제거
 
 ## `sampledata:reset`
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 
@@ -2868,7 +2868,7 @@ bin/magento sampledata:reset
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-```bash
+```shell
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
@@ -2881,7 +2881,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ## `security:recaptcha:disable-for-user-login`
 
-```bash
+```shell
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
@@ -2894,7 +2894,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ## `security:tfa:google:set-secret`
 
-```bash
+```shell
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
 
@@ -2922,7 +2922,7 @@ Google OTP 생성에 사용되는 암호를 설정합니다.
 
 ## `security:tfa:providers`
 
-```bash
+```shell
 bin/magento security:tfa:providers
 ```
 
@@ -2935,7 +2935,7 @@ bin/magento security:tfa:providers
 
 ## `security:tfa:reset`
 
-```bash
+```shell
 bin/magento security:tfa:reset <user> <provider>
 ```
 
@@ -2963,7 +2963,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ## `server:run`
 
-```bash
+```shell
 bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--workerNum [WORKERNUM]] [-dm|--dispatchMode [DISPATCHMODE]] [-mr|--maxRequests [MAXREQUESTS]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]
 ```
 
@@ -3039,7 +3039,7 @@ magento bootstrap init params
 
 ## `server:state-monitor:aggregate-output`
 
-```bash
+```shell
 bin/magento server:state-monitor:aggregate-output
 ```
 
@@ -3052,7 +3052,7 @@ ApplicationServer의 상태 모니터에서 출력 집계
 
 ## `setup:backup`
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3092,7 +3092,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:config:set`
 
-```bash
+```shell
 bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3247,7 +3247,7 @@ Amqp SSL 옵션(JSON)
 
 #### `--queue-default-connection`
 
-메시지 큐 기본 연결. &#39;db&#39;, &#39;amqp&#39; 또는 사용자 지정 대기열 시스템일 수 있습니다. 대기열 시스템을 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
+메시지 큐 기본 연결. &#39;db&#39;, &#39;amqp&#39; 또는 사용자 정의 대기열 시스템일 수 있습니다.대기열 시스템을 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
 
 - 값 필요
 
@@ -3710,7 +3710,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:db-data:upgrade`
 
-```bash
+```shell
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3729,7 +3729,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:db-declaration:generate-patch`
 
-```bash
+```shell
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
 
@@ -3771,7 +3771,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ## `setup:db-declaration:generate-whitelist`
 
-```bash
+```shell
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
 
@@ -3791,7 +3791,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ## `setup:db-schema:add-slave`
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--maxAllowedLag [MAXALLOWEDLAG]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3857,7 +3857,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:db-schema:split-quote`
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3914,7 +3914,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:db-schema:split-sales`
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3971,7 +3971,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:db-schema:upgrade`
 
-```bash
+```shell
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3997,7 +3997,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:db:status`
 
-```bash
+```shell
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4016,7 +4016,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:di:compile`
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -4029,7 +4029,7 @@ bin/magento setup:di:compile
 
 ## `setup:install`
 
-```bash
+```shell
 bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4184,7 +4184,7 @@ Amqp SSL 옵션(JSON)
 
 #### `--queue-default-connection`
 
-메시지 큐 기본 연결. &#39;db&#39;, &#39;amqp&#39; 또는 사용자 지정 대기열 시스템일 수 있습니다. 대기열 시스템을 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
+메시지 큐 기본 연결. &#39;db&#39;, &#39;amqp&#39; 또는 사용자 정의 대기열 시스템일 수 있습니다.대기열 시스템을 설치 및 구성해야 합니다. 그렇지 않으면 메시지가 올바르게 처리되지 않습니다.
 
 - 값 필요
 
@@ -4886,7 +4886,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:performance:generate-fixtures`
 
-```bash
+```shell
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
 
@@ -4914,7 +4914,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ## `setup:rollback`
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4951,7 +4951,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:static-content:deploy`
 
-```bash
+```shell
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
 
@@ -5133,7 +5133,7 @@ HTML 파일을 축소하지 마십시오.
 
 ## `setup:store-config:set`
 
-```bash
+```shell
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5206,7 +5206,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:uninstall`
 
-```bash
+```shell
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5225,7 +5225,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `setup:upgrade`
 
-```bash
+```shell
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5277,7 +5277,7 @@ Magento 초기화 매개 변수를 사용자 지정하는 명령에 추가하십
 
 ## `store:list`
 
-```bash
+```shell
 bin/magento store:list
 ```
 
@@ -5290,7 +5290,7 @@ bin/magento store:list
 
 ## `store:website:list`
 
-```bash
+```shell
 bin/magento store:website:list
 ```
 
@@ -5303,7 +5303,7 @@ bin/magento store:website:list
 
 ## `support:backup:code`
 
-```bash
+```shell
 bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 ```
 
@@ -5335,7 +5335,7 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 ## `support:backup:db`
 
-```bash
+```shell
 bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -5374,7 +5374,7 @@ DB 백업 만들기
 
 ## `support:utility:check`
 
-```bash
+```shell
 bin/magento support:utility:check [--hide-paths]
 ```
 
@@ -5394,7 +5394,7 @@ bin/magento support:utility:check [--hide-paths]
 
 ## `support:utility:paths`
 
-```bash
+```shell
 bin/magento support:utility:paths [-f|--force]
 ```
 
@@ -5414,7 +5414,7 @@ bin/magento support:utility:paths [-f|--force]
 
 ## `theme:uninstall`
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
 
@@ -5452,7 +5452,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ## `varnish:vcl:generate`
 
-```bash
+```shell
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
@@ -5512,7 +5512,7 @@ vcl을 쓸 파일의 경로
 
 ## `webhooks:dev:run`
 
-```bash
+```shell
 bin/magento webhooks:dev:run <name> <payload>
 ```
 
@@ -5540,7 +5540,7 @@ JSON 형식의 웹후크 페이로드
 
 ## `webhooks:generate:module`
 
-```bash
+```shell
 bin/magento webhooks:generate:module
 ```
 
@@ -5553,7 +5553,7 @@ Webhook 등록을 기반으로 플러그인 생성
 
 ## `webhooks:info`
 
-```bash
+```shell
 bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 ```
 
@@ -5588,7 +5588,7 @@ Webhook 유형(전, 후)
 
 ## `webhooks:list`
 
-```bash
+```shell
 bin/magento webhooks:list
 ```
 
@@ -5601,7 +5601,7 @@ bin/magento webhooks:list
 
 ## `webhooks:list:all`
 
-```bash
+```shell
 bin/magento webhooks:list:all <module_name>
 ```
 

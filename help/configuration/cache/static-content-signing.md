@@ -3,9 +3,9 @@ title: 정적 콘텐츠 캐시
 description: Adobe Commerce의 정적 콘텐츠 캐시 서명 및 성능 최적화에 대해 알아봅니다. 캐싱 기능을 활성화, 비활성화 및 구성하는 방법을 알아봅니다.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Commerce은 정적 파일의 URL에 배포 버전을 추가하여 이 작업을 
 
 다음은 버전으로 서명된 URL의 예입니다.
 
-```
+```text
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 
@@ -35,22 +35,22 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerce에서는 기본적으로 이 기능을 활성화하며, Adobe에서는 이전 정적 리소스를 제공하는 브라우저와 관련된 문제를 방지하기 위해 이 기능을 활성화한 상태로 유지하는 것이 좋습니다.
 
-정적 콘텐츠 서명에 대한 구성은 [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)에 있습니다.
+정적 콘텐츠 서명에 대한 구성은 [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)에 있습니다.
 
-- **온-프레미스 전용**: 사이트가 **프로덕션 모드**&#x200B;에서 [not](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=ko#production-mode)인 경우 이 구성을 사용할 수 있습니다.
+- **온-프레미스 전용**: 사이트가 [프로덕션 모드](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode)에서 **not**&#x200B;인 경우 이 구성을 사용할 수 있습니다.
 - **Cloud**: 이 구성은 프로덕션 모드가 엄격히 적용되기 때문에 숨겨져 있습니다. 따라서 아래 표시된 대로 명령줄을 사용해야 합니다.
 
 ![정적 파일 설정](../../assets/configuration/static-files-settings.png)
 
 상태 확인:
 
-```bash
+```shell
 bin/magento config:show dev/static/sign
 ```
 
 정적 콘텐츠 서명 활성화 또는 비활성화:
 
-```bash
+```shell
 bin/magento config:set dev/static/sign <value>
 ```
 

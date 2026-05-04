@@ -3,9 +3,9 @@ title: '[!DNL Data Migration Tool] 기술 사양'
 description: ' [!DNL Data Migration Tool] 의 구현 세부 정보와 Magento 1과 Magento 2 간에 데이터를 전송할 때 확장하는 방법에 대해 알아봅니다.'
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 시스템 요구 사항
 
-[에 대한 &#x200B;](../../installation/system-requirements.md)시스템 요구 사항[!DNL Data Migration Tool]은(는) Magento 2와 동일합니다.
+[!DNL Data Migration Tool]에 대한 [시스템 요구 사항](../../installation/system-requirements.md)은(는) Magento 2와 동일합니다.
 
 ## 내부 구조
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 다음 다이어그램은 [!DNL Data Migration Tool]의 디렉터리 구조를 나타냅니다.
 
-```
+```shell
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ## 구성
 
-구성 `config.xsd` 파일의 스키마가 `etc/` 디렉터리에 있습니다. Magento 1.x의 각 버전에 대해 기본 구성 파일(`config.xml.dist`)이 만들어집니다. 이 디렉터리는 `etc/` 아래의 별도의 디렉터리에 있습니다.
+구성 `config.xsd` 파일의 스키마가 `etc/` 디렉터리에 있습니다. Magento 1.x의 각 버전에 대해 기본 구성 파일(`config.xml.dist`)이 만들어집니다. `etc/` 아래의 별도의 디렉터리에 있습니다.
 
 기본 구성 파일은 사용자 지정 구성 파일로 대체할 수 있습니다([명령 구문](migrate-data/overview.md#command-syntax) 참조).
 
@@ -431,7 +431,7 @@ $this->progress->finish();
 
 #### 와일드카드
 
-유사한 부분(`document_name_1`, `document_name_2`)이 있는 문서를 무시하려면 와일드카드 기능을 사용할 수 있습니다. 반복 부분(`*`) 대신 `document_name_*` 기호를 넣으면 이 마스크는 이 마스크를 충족하는 모든 원본 또는 대상 문서를 포함합니다.
+유사한 부분(`document_name_1`, `document_name_2`)이 있는 문서를 무시하려면 와일드카드 기능을 사용할 수 있습니다. 반복 부분(`document_name_*`) 대신 `*` 기호를 넣으면 이 마스크는 이 마스크를 충족하는 모든 원본 또는 대상 문서를 포함합니다.
 
 #### URL 재작성 단계
 
@@ -521,9 +521,9 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 
 `setLevel()` 메서드를 호출하여 각 처리기에 대한 자세한 로그 수준을 개별적으로 설정할 수 있습니다. 명령줄 매개 변수를 통해 세부 정보 수준을 설정하려면 응용 프로그램을 시작할 때 &#39;세부 정보&#39; 옵션을 변경해야 합니다.
 
-모노로그 포맷터를 사용하여 로그 메시지를 포맷할 수 있습니다. 포맷터 기능을 사용하려면 `setFormatter()` 메서드를 사용하여 로그 처리기를 지정해야 합니다. 현재 처리기에서 실행된 `MessageFormatter` 메서드를 통해 메시지를 처리하는 동안 특정 형식을 설정하는 포맷터 클래스(`format()`)가 하나 있습니다(자세한 표시 수준에 따라 다름).
+모노로그 포맷터를 사용하여 로그 메시지를 포맷할 수 있습니다. 포맷터 기능을 사용하려면 `setFormatter()` 메서드를 사용하여 로그 처리기를 지정해야 합니다. 현재 처리기에서 실행된 `format()` 메서드를 통해 메시지를 처리하는 동안 특정 형식을 설정하는 포맷터 클래스(`MessageFormatter`)가 하나 있습니다(자세한 표시 수준에 따라 다름).
 
-로거를 조작하고(처리기와 프로세서 추가) 세부 정보 표시 모드에서 처리하는 작업은 `process()` 클래스의 `Migration\Logger\Manager` 메서드에서 수행됩니다. 이 메서드는 응용 프로그램이 시작될 때 호출됩니다.
+로거를 조작하고(처리기와 프로세서 추가) 세부 정보 표시 모드에서 처리하는 작업은 `Migration\Logger\Manager` 클래스의 `process()` 메서드에서 수행됩니다. 이 메서드는 응용 프로그램이 시작될 때 호출됩니다.
 
 ## 자동 테스트
 
@@ -535,12 +535,12 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 
 테스트 유형과 동일한 도구의 `tests/` 디렉터리에 있습니다(단위 테스트는 `tests/unit` 디렉터리에 있음). 테스트를 시작하려면 phpunit가 설치되어 있어야 합니다. 현재 디렉터리를 테스트 디렉터리와 실행 phpunit로 변경합니다. For example:
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

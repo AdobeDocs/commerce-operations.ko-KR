@@ -2,9 +2,9 @@
 title: 정적 보기 파일 배포
 description: 프로덕션 모드에서 Adobe Commerce 파일 시스템에 정적 보기 파일을 배포하는 방법에 대해 알아봅니다. 배포 명령 및 최적화 기술을 살펴보십시오.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -31,12 +31,12 @@ _정적 보기 파일_&#x200B;이라는 용어는 다음을 참조합니다.
 
 >[!WARNING]
 >
->_개발자 모드만_: 새 모듈을 설치하거나 사용하면 새 JavaScript, CSS, 레이아웃 등이 로드될 수 있습니다. 정적 파일과 관련된 문제가 발생하지 않도록 하려면 새 모듈에 대한 모든 변경 사항을 가져오도록 이전 파일을 정리해야 합니다. 여러 가지 방법으로 생성된 정적 보기 파일을 정리할 수 있습니다. 자세한 내용은 [정적 파일 캐시 정리 항목](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache)을 참조하세요.
+>_개발자 모드만_: 새 모듈을 설치하거나 사용하면 새 JavaScript, CSS, 레이아웃 등이 로드될 수 있습니다. 정적 파일과 관련된 문제가 발생하지 않도록 하려면 새 모듈에 대한 모든 변경 사항을 가져오도록 이전 파일을 정리해야 합니다. 여러 가지 방법으로 생성된 정적 보기 파일을 정리할 수 있습니다. 자세한 내용은 [정적 파일 캐시 정리 항목](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache)을 참조하세요.
 
 **정적 보기 파일을 배포하려면**:
 
 1. Commerce 서버에 (으)로 로그인하거나 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)합니다.
-1. `<magento_root>/pub/static` 파일을 제외한 `.htaccess`의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
+1. `.htaccess` 파일을 제외한 `<magento_root>/pub/static`의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
 1. 정적 보기 파일 배포 도구 `<magento_root>/bin/magento setup:static-content:deploy`을(를) 실행합니다.
 
    >[!INFO]
@@ -45,7 +45,7 @@ _정적 보기 파일_&#x200B;이라는 용어는 다음을 참조합니다.
 
    명령 옵션:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy [<languages>] [-t|--theme[="<theme>"]] [--exclude-theme[="<theme>"]] [-l|--language[="<language>"]] [--exclude-language[="<language>"]] [-a|--area[="<area>"]] [--exclude-area[="<area>"]] [-j|--jobs[="<number>"]]  [--no-javascript] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [-f|--force]
    ```
 
@@ -53,7 +53,7 @@ _정적 보기 파일_&#x200B;이라는 용어는 다음을 참조합니다.
 
 | 옵션 | 설명 | 필수? |
 | ------ | ----------- | --------- |
-| `<languages>` | 정적 보기 파일을 출력할 [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) 언어 코드의 공백으로 구분된 목록입니다. (기본값은 `en_US`입니다.)<br>다음을 실행하여 목록 찾기: `bin/magento info:language:list` | 아니요 |
+| `<languages>` | 정적 보기 파일을 출력할 [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) 언어 코드의 공백으로 구분된 목록입니다. (기본값은 `en_US`입니다.)<br>다음을 실행하여 목록을 찾습니다. `bin/magento info:language:list` | 아니요 |
 | `--language (-l)` | 지정된 언어에 대한 파일만 생성합니다. 기본적으로 옵션이 지정되지 않으면 모든 ISO-639 언어 코드에 대한 파일을 생성합니다. 한 번에 하나의 언어 코드의 이름을 지정할 수 있습니다. 기본값은 **all**&#x200B;입니다.<br>예: `--language en_US --language es_ES` | 아니요 |
 | `--exclude-language` | 지정된 언어 코드에 대한 파일을 생성합니다. 옵션이 지정되지 않은 기본값은 아무 것도 제외하지 않는 것입니다. 하나의 언어 코드의 이름이나 쉼표로 구분된 언어 코드 목록을 지정할 수 있습니다. 기본값은 **없음**&#x200B;입니다. | 아니요 |
 | `--theme <theme>` | 정적 콘텐츠를 배포할 테마입니다. 기본값은 **all**&#x200B;입니다.<br>예: `--theme Magento/blank --theme Magento/luma` | 아니요 |
@@ -87,13 +87,13 @@ _정적 보기 파일_&#x200B;이라는 용어는 다음을 참조합니다.
 
 다음 명령은 미국 영어(`en_US`) 언어에 대한 정적 콘텐츠를 배포하고 Commerce과 함께 제공된 Luma 테마를 제외하며 HTML 파일을 축소하지 않습니다.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
 ```
 
 샘플 출력:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -112,13 +112,13 @@ Successful: 1993 files; errors: 0
 
 다음 명령은 표준 배포 전략을 사용하여 4개의 작업이 있는 JavaScript만 배포합니다.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
 ```
 
 다음 명령은 3개의 작업과 빠른 배포 전략으로 CSS 및 LESS만 배포합니다.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts --no-images --no-javascript -j 3
 ```
 
@@ -126,13 +126,13 @@ bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts 
 
 다음 명령은 글꼴을 생성하지 않고 모든 언어, 프론트엔드 영역만, Commerce Luma 테마만 정적 보기 파일을 생성합니다.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magento/luma
 ```
 
 샘플 출력:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ New version of deployed files: 1466711110
 
 **증상**: 정적 보기 파일 배포 도구를 실행할 때 다음 오류가 표시됩니다.
 
-```
+```text
 ERROR: You need to install the Commerce application before running this utility.
 ```
 
@@ -172,7 +172,7 @@ ERROR: You need to install the Commerce application before running this utility.
 
 1. [명령줄](../../installation/composer.md)을 사용하여 Commerce 소프트웨어를 설치합니다.
 1. 응용 프로그램 서버에 파일 시스템 소유자로 로그인하거나 [파일 시스템 소유자로 전환](../../installation/prerequisites/file-system/overview.md)합니다.
-1. `<app_root>/pub/static` 파일을 제외한 `.htaccess` 디렉터리의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
+1. `.htaccess` 파일을 제외한 `<app_root>/pub/static` 디렉터리의 내용을 삭제합니다. 이 파일을 삭제하지 마십시오.
 1. 정적 보기 파일 배포: `bin/magento setup:static-content:deploy`
 
 ## 정적 콘텐츠 배포 도구를 사용자 지정하는 개발자를 위한 팁
