@@ -39,7 +39,7 @@ ht-degree: 0%
    - 다음 리소스에 대한 링크를 제공하는 **[!UICONTROL Security Center Widget]**&#x200B;을(를) 표시합니다.
       - [기술 [!DNL Stack] 버전 준수  [!DNL end of life (EOL)]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
       - [Adobe 보안 공지](https://helpx.adobe.com/security/security-bulletin.html)
-      - [ [!DNL Security Scan Tool]의 권장 사항](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)
+      - [&#x200B; [!DNL Security Scan Tool]의 권장 사항](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)
       - [[!DNL Site-Wide Analysis Tool] 모범 사례 보안 권장 사항](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations)
 
 - **정보** - 설치된 각 Adobe Commerce 제품에 대한 자세한 정보를 포함하여 고객 연락처 정보와 현재 티켓의 요약을 제공합니다.
