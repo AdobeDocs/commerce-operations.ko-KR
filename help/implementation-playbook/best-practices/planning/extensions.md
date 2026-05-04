@@ -36,5 +36,5 @@ Adobe Commerce 타사 확장(모듈)은 상점 성능에 부정적인 영향을 
 
 - [업그레이드 계획 모범 사례](../../../upgrade/prepare/best-practices.md)
 - 클라우드 인프라에서 Adobe Commerce과 함께 서드파티 확장 사용
-   - [기술 및 요구 사항 - 개발 및 테스트](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [통합 및 스테이징에서 완전히 테스트하는 이유는 무엇입니까?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [기술 및 요구 사항 - 개발 및 테스트](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [통합 및 스테이징에서 완전히 테스트하는 이유는 무엇입니까?](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

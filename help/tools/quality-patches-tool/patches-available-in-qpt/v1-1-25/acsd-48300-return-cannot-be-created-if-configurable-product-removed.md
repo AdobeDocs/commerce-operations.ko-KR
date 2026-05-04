@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-48300: 구성 가능한 제품을 제거하면 반환을 만들 수 없습니다.
 
-ACSD-48300 패치는 구성 가능한 제품이 제거될 경우 반환을 만들 수 없는 문제를 수정합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-48300입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+ACSD-48300 패치는 구성 가능한 제품이 제거될 경우 반환을 만들 수 없는 문제를 수정합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-48300입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -70,7 +70,7 @@ report.CRITICAL: Error: Call to a member function getShipmentType() on null in m
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
 * [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 

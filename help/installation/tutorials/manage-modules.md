@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->클라우드 프로젝트에서 모듈을 직접 활성화하거나 비활성화할 수 없습니다. 이러한 명령을 로컬로 실행한 다음 환경의 `app/etc/config.php` 파일에 변경 내용을 푸시해야 합니다. [Pro 프로젝트 워크플로: 배포 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow)를 참조하십시오.
+>클라우드 프로젝트에서 모듈을 직접 활성화하거나 비활성화할 수 없습니다. 이러한 명령을 로컬로 실행한 다음 환경의 `app/etc/config.php` 파일에 변경 내용을 푸시해야 합니다. [Pro 프로젝트 워크플로: 배포 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ko#deployment-workflow)를 참조하십시오.
 
 ## 모듈 활성화, 비활성화
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
+Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
 
 Adobe Commerce은 이러한 백업을 사용하여 코드에 액세스해야 하는 문제를 분석합니다. _덤프_&#x200B;라고도 합니다. 일반적인 시나리오는 다음과 같습니다.
 

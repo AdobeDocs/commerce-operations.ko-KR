@@ -20,7 +20,7 @@ ht-degree: 0%
 
 MDVA-39305-V3 패치에서는 [!DNL Google reCAPTCHA]을(를) 사용할 수 있을 때 등록된 고객이 로그인할 수 없는 문제가 해결되었습니다. 또한 이 패치는 [!DNL Google reCAPTCHA]이(가) 완전히 로드되기 전에 양식을 제출할 수 있는 문제를 해결합니다. 또한 CMS 페이지의 기본값이 아닌 위치에서 블록을 사용할 때 null *에서 멤버 함수 isDisabled()에 대한*&#x200B;호출 오류가 수정됩니다.
 
-이 패치는 [품질 패치 도구(QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 릴리스에 추가되었습니다. 새로운 Adobe Commerce 버전 2.4.7 - 2.4.7-p4를 포함하도록 QPT 1.1.58 릴리스에서 업데이트되었습니다. 패치 ID는 MDVA-39305-V3입니다. 이 문제는 Adobe Commerce 버전 2.4.4, 2.4.5-p2 및 2.4.7에서 해결되었습니다.
+이 패치는 [품질 패치 도구(QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 릴리스에 추가되었습니다. 새로운 Adobe Commerce 버전 2.4.7 - 2.4.7-p4를 포함하도록 QPT 1.1.58 릴리스에서 업데이트되었습니다. 패치 ID는 MDVA-39305-V3입니다. 이 문제는 Adobe Commerce 버전 2.4.4, 2.4.5-p2 및 2.4.7에서 해결되었습니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -34,7 +34,7 @@ MDVA-39305-V3 패치에서는 [!DNL Google reCAPTCHA]을(를) 사용할 수 있�
 
 >[!NOTE]
 >
->이 패치는 새로운 품질 패치 도구 릴리스가 있는 다른 버전에 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>이 패치는 새로운 품질 패치 도구 릴리스가 있는 다른 버전에 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -86,7 +86,7 @@ CMS 페이지의 기본값이 아닌 위치에서 블록을 사용할 때 null *
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 ## 관련 읽기
 

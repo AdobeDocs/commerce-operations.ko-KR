@@ -93,7 +93,7 @@ Adobe Commerce 메타패키지를 가져오려면 다음을 수행하십시오.
 
    >[!NOTE]
    >
-   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
+   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
 
    `Could not find package...` 또는 `...no matching package found`과(와) 같은 오류가 발생하면 명령에 오타가 없는지 확인하십시오. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 도움이 필요하면 [Adobe Commerce 지원](https://support.magento.com/hc/en-us)에 문의하십시오.
 

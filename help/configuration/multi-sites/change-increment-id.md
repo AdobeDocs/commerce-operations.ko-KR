@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. _기술 자료_&#x200B;에서 [PayPal 게이트웨이 거부 요청 - 중복 송장 문제](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html)를 참조하십시오.
+>또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. _기술 자료_&#x200B;에서 [PayPal 게이트웨이 거부 요청 - 중복 송장 문제](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=ko)를 참조하십시오.
 
 ## 전제 조건 단계
 
