@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
+source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -20,8 +20,8 @@ QPT v1.1.78에는 다음 패치가 포함됩니다.
 1. **ACP2E-4419**: 상점 전면에서 reCAPTCHA v2(&#39;나는 로봇이 아님&#39;) 유효성 검사를 성공한 후 체크아웃 시 기프트 카드가 올바르게 적용되지 않는 문제를 해결했습니다.
 1. **ACP2E-4431**: 색인 재지정 프로세스 중에 대상 규칙과 일치하는 관련 제품이 삭제되는 문제를 해결했습니다.
 1. **ACP2E-4448**: Redis가 복구된 후 Redis 중단 중에 수행된 구성 변경 내용이 반영되지 않아 오래된 값이 지속되는 문제를 해결했습니다.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)**: GraphQL 돌연변이를 사용하여 주문을 취소하면 전적으로 기프트 카드로 지불된 주문이 [닫힘] 상태로 전환되지 않는 문제가 해결되었습니다.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: 세금 표시 구성에 관계없이 [!UICONTROL Quick Order] 페이지의 제품 가격에 세금이 포함되는 문제를 해결했습니다.
-1. **ACP2E-4456**: GraphQL 돌연변이를 사용하여 주문을 취소하면 전적으로 기프트 카드로 지불된 주문이 [닫힘] 상태로 전환되지 않는 문제가 해결되었습니다.
 1. **ACP2E-4507**: GraphQL 돌연변이를 통해 수행된 고객 암호 재설정 요청에 대해 암호 옵션 구성이 적용되지 않는 문제를 해결했습니다.
 1. **ACP2E-4513**: 만료된 CAPTCHA 이미지가 시스템에서 삭제되지 않는 문제를 해결합니다.
 1. **ACP2E-4522**: 여러 장바구니 병합 또는 견적 저장 요청이 동시에 실행될 때 quote_coupins 테이블에서 간헐적인 중복 키 오류가 발생하는 문제를 해결합니다.
