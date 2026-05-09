@@ -21,7 +21,7 @@ Commerce 데이터 추적 서비스는 [GDPR(일반 데이터 보호 규정)](gd
 
 >[!NOTE]
 >
->[쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)가 활성화된 경우, Commerce은 구매자가 동의할 때까지 행동 데이터를 수집하지 않습니다. [!UICONTROL **쿠키 제한 모드**]&#x200B;를 사용하지 않도록 설정하면 Commerce에서 기본적으로 동작 데이터를 수집합니다.
+>[쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ko)가 활성화된 경우, Commerce은 구매자가 동의할 때까지 행동 데이터를 수집하지 않습니다. [!UICONTROL **쿠키 제한 모드**]&#x200B;를 사용하지 않도록 설정하면 Commerce에서 기본적으로 동작 데이터를 수집합니다.
 
 ## 설치
 

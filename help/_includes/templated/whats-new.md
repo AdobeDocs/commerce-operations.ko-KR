@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 제품 갤러리에서 비디오가 있는 구성 가능한 제품의 하위 제품은 REST API를 통해 요청할 때 표시되지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 제품 갤러리에서 비디오가 있는 구성 가능한 제품의 하위 제품은 REST API를 통해 요청할 때 표시되지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -45,7 +45,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 대형 미디어 디렉터리 구조는 gettree 응답을 느리게 하고 미디어 갤러리 디렉터리 트리 로드를 지연시킵니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 대형 미디어 디렉터리 구조는 gettree 응답을 느리게 하고 미디어 갤러리 디렉터리 트리 로드를 지연시킵니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -67,7 +67,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535: 암호 분실 양식을 제출하면 세션이 파기 또는 재생성되고(PHPSESSID 변경) 게스트 카트가 지워집니다</a>에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명이 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535: 암호 분실 양식을 제출하면 세션이 파기 또는 재생성되고(PHPSESSID 변경) 게스트 카트가 지워집니다</a>에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명이 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -75,7 +75,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 암호 옵션 구성은 GraphQL 돌연변이를 통해 수행된 고객 암호 재설정 요청에 적용되지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 암호 옵션 구성은 GraphQL 돌연변이를 통해 수행된 고객 암호 재설정 요청에 적용되지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -83,7 +83,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 일부 견적에 삭제된 제품이 포함된 경우 내 견적 페이지에 견적이 표시되지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 일부 견적에 삭제된 제품이 포함된 경우 내 견적 페이지에 견적이 표시되지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -91,7 +91,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 대상 규칙과 일치하는 관련 제품이 색인 재지정 프로세스</a>에서 삭제됩니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 대상 규칙과 일치하는 관련 제품이 색인 재지정 프로세스</a>에서 삭제됩니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -99,7 +99,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 고객 보상 포인트는 관리자에서 만들 때 초기화되지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 고객 보상 포인트는 관리자에서 만들 때 초기화되지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
