@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fcc363df787b5d2f35e8109481d0f9d94c6da9e7
+source-git-commit: 24a6d3e2da8666278b0f491e3caaf6b2509c31d8
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,9 @@ QPT v1.1.78에는 다음 패치가 포함됩니다.
 1. **ACP2E-4609**: 일부 견적에 삭제된 제품이 포함되어 있을 때 내 견적 페이지에 견적이 표시되지 않는 문제를 해결했습니다.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: 큰 미디어 디렉터리 구조로 인해 gettree 응답이 느려져 **[!UICONTROL Media Gallery]** 디렉터리 트리의 로드 시간이 길어지는 문제를 해결했습니다.
 1. **ACP2E-4628**: [계정 공유]가 [전역]으로 설정되어 있을 때 대문자 이메일 주소를 사용하여 고객을 가져오는 경우 정의되지 않은 배열 키 오류가 발생하는 문제를 해결했습니다.
+1. **ACP2E-4665**: REST API를 통해 요청할 때 제품 갤러리에서 비디오를 포함하는 구성 가능한 제품의 하위 제품이 나열되지 않는 문제를 해결했습니다.
+1. **ACP2E-4732**: 변경 로그 테이블의 version_id 열이 최대값에 도달할 때 많은 수의 업데이트가 있는 고객에 대해 부분 인덱싱이 중지되는 문제를 해결했습니다.
+1. **[ACP2E-4763](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)**: 두 번 적용된 세금으로 인해 카탈로그 가격이 세금 포함으로 설정된 경우 GraphQL customerOrders 쿼리가 부풀려진 original_price_including_tax 및 original_row_total_including_tax 값을 반환하는 문제를 해결했습니다.
 1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)**: 변경 로그 테이블의 version_id 열이 최대값에 도달할 때 많은 수의 업데이트가 있는 고객에 대해 부분 인덱싱이 중지되는 문제를 해결했습니다.
 1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)**: REST API를 통해 요청할 때 제품 갤러리에서 비디오를 포함하는 구성 가능한 제품의 하위 제품이 나열되지 않는 문제를 해결했습니다.
 1. **ACP2E-4665**: REST API를 통해 요청할 때 제품 갤러리에서 비디오를 포함하는 구성 가능한 제품의 하위 제품이 나열되지 않는 문제를 해결했습니다.
