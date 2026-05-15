@@ -2,7 +2,7 @@
 title: 파일 소유권 및 권한 구성
 description: Adobe Commerce의 온-프레미스 설치에 대한 파일 시스템 권한을 구성하려면 다음 단계를 따르십시오.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
@@ -111,7 +111,7 @@ passwd <username>
 
 >[!WARNING]
 >
->응용 프로그램 서버에 대한 `root` 권한이 없는 경우 다른 로컬 사용자 계정을 사용할 수 있습니다. 사용자에게 강력한 암호가 있는지 확인하고 [파일 시스템 소유자를 웹 서버 그룹에 넣으십시오](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>응용 프로그램 서버에 대한 `root` 권한이 없는 경우 다른 로컬 사용자 계정을 사용할 수 있습니다. 사용자에게 강력한 암호가 있는지 확인하고 [파일 시스템 소유자를 웹 서버 그룹에 넣으십시오](#put-the-file-system-owner-in-the-web-server-group).
 
 예를 들어, 이름이 `magento_user`인 사용자를 만들고 사용자에게 암호를 지정하려면 다음을 입력합니다.
 

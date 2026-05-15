@@ -2,9 +2,9 @@
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 애플리케이션 기능 및 서비스를 구성합니다.
 feature: Configuration
-source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -34,28 +34,28 @@ ht-degree: 1%
       + [환경 변수 사용](deployment/example-environment-variables.md)
 + 캐시 {#cache}
    + [캐싱 개요](cache/caching-overview.md)
-   + [캐시 유형](cache/cache-types.md)
-   + [캐시 옵션](cache/cache-options.md)
-   + [L2 캐시](cache/level-two-cache.md)
+   + [캐시 프론트엔드 구성](cache/cache-types.md)
+   + [캐시 백엔드 옵션](cache/cache-options.md)
+   + [L2 캐시 구성](cache/level-two-cache.md)
    + 레디스 {#redis}
-      + [Redis 구성](cache/config-redis.md)
-      + [기본 캐시에 Redis 사용](cache/redis-pg-cache.md)
-      + [세션 스토리지에 Redis 사용](cache/redis-session.md)
-      + [EC2 인스턴스용 ElastiCache 구성](cache/redis-elasticache-for-ec2.md)
+      + [Redis 설치 및 설정](cache/config-redis.md)
+      + [기본 및 페이지 캐시에 대한 Redis 구성](cache/redis-pg-cache.md)
+      + [세션 스토리지에 대한 Redis 구성](cache/redis-session.md)
+      + [AWS ElastiCache를 사용하여 Redis 구성](cache/redis-elasticache-for-ec2.md)
    + 밸키 {#valkey}
-      + [Valkey 구성](cache/config-valkey.md)
-      + [기본 캐시에 Valkey 사용](cache/valkey-pg-cache.md)
-      + [세션 저장소에 Valkey 사용](cache/valkey-session.md)
+      + [Valkey 설치 및 설정](cache/config-valkey.md)
+      + [기본 및 페이지 캐시에 대한 값 구성](cache/valkey-pg-cache.md)
+      + [세션 저장소에 대한 유효성 검사 구성](cache/valkey-session.md)
    + 니스 {#varnish}
       + [니스 개요](cache/config-varnish.md)
       + [니스 설치](cache/config-varnish-install.md)
-   + [웹 서버](cache/config-varnish-server.md)
-   + [Commerce 애플리케이션 구성](cache/configure-varnish-commerce.md)
-   + [고급 바니시 구성](cache/config-varnish-advanced.md)
-   + [캐시 지우기](cache/use-varnish-cache.md)
-   + [여러 Varnish 인스턴스를 지우는 캐시](cache/use-multiple-varnish-cache.md)
-   + [바니시 구성 확인](cache/config-varnish-final.md)
-   + [바니시 ESI 차단](cache/use-varnish-esi.md)
+      + [웹 서버 구성](cache/config-varnish-server.md)
+      + [Commerce 애플리케이션 구성](cache/configure-varnish-commerce.md)
+      + [고급 바니시 구성](cache/config-varnish-advanced.md)
+      + [바니시 구성 확인](cache/config-varnish-final.md)
+      + [바니시로 캐시 지우기](cache/use-varnish-cache.md)
+      + [여러 Varnish 인스턴스를 사용하여 캐시 지우기](cache/use-multiple-varnish-cache.md)
+      + [바니시 ESI 차단](cache/use-varnish-esi.md)
    + [정적 콘텐츠 캐시](cache/static-content-signing.md)
 + 명령줄 {#cli}
    + [명령줄 도구](cli/config-cli.md)
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [분할 데이터베이스 확인](storage/multi-master-verify.md)
       + [데이터베이스 복제](storage/multi-master-replication.md)
       + [단일 데이터베이스로 되돌리기](storage/revert-split-database.md)
-+ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
++ [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

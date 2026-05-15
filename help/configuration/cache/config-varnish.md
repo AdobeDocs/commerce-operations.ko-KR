@@ -3,14 +3,14 @@ title: 바니시 구성 및 사용
 description: Adobe Commerce에 대한 바니시 캐싱을 구성하고 사용하는 방법에 대해 알아봅니다. HTTP 가속, 파일 저장 및 성능 최적화 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
-# 바니시 구성
+# 바니시 구성 및 사용
 
 [Varnish Cache](https://www.varnish.org/)은(는) 오픈 소스 웹 응용 프로그램 가속기(_HTTP 가속기_ 또는 _HTTP 역방향 프록시 캐싱_)입니다. Vannish는 파일 또는 파일 조각을 메모리에 저장(또는 캐시)하여 향후 동등한 요청에 대한 응답 시간 및 네트워크 대역폭 사용을 줄일 수 있습니다. Apache 및 nginx와 같은 웹 서버와 달리 Varnish는 HTTP 프로토콜에서만 사용하도록 설계되었습니다.
 

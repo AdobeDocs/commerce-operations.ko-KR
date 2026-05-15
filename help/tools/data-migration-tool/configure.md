@@ -3,7 +3,7 @@ title: ' [!DNL Data Migration Tool] 구성'
 description: Magento 1과 Magento 2 간에 데이터를 전송하도록  [!DNL Data Migration Tool] 을(를) 구성하는 두 가지 방법에 대해 알아봅니다.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. `config.xml` 파일에서 액세스 세부 정보를 M1 및 M2 데이터베이스 및 암호화 키로 설정해야 합니다.
 
-1. M1 저장소에 사용자 지정 변경 사항이 있는 경우 나머지 구성 파일을 Magento 1 저장소 사용자 지정에 매핑해야 합니다. [구성 및 매핑 파일 작업](#migration-config)을 참조하세요.
+1. M1 저장소에 사용자 지정 변경 사항이 있는 경우 나머지 구성 파일을 Magento 1 저장소 사용자 지정에 매핑해야 합니다. [구성 및 매핑 파일 작업](#work-with-configuration-and-mapping-files)을 참조하세요.
 
 ### `vendor` 폴더에서 마이그레이션 구성
 

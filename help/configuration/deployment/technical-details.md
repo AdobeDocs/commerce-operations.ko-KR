@@ -2,7 +2,7 @@
 title: 기술 세부 정보
 description: 파이프라인 배포에 대한 기술 세부 정보, 구성 유형 및 권장 워크플로우에 대해 알아보십시오.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 이 항목에서는 Commerce 2.2 이상의 파이프라인 배포에 대한 기술 구현 세부 사항에 대해 설명합니다. 개선 사항은 다음 영역으로 나눌 수 있습니다.
 
 - [구성 관리](#configuration-management)
-- [관리자의 변경 사항](#changes-in-the-admin)
+- [관리자의 변경 사항](#the-commerce-admin)
 - [cron 설치 및 제거](#install-and-remove-cron)
 
-또한 이 항목에서는 파이프라인 배포를 위한 [권장 워크플로우](#recommended-workflow)에 대해 설명하고 작동 방식을 이해하는 데 도움이 되는 몇 가지 예를 제공합니다.
+또한 이 항목에서는 파이프라인 배포를 위한 [권장 워크플로우](#recommended-pipeline-deployment-workflow)에 대해 설명하고 작동 방식을 이해하는 데 도움이 되는 몇 가지 예를 제공합니다.
 
 시작하기 전에 개발, 빌드 및 프로덕션 시스템에 대한 [사전 요구 사항](../deployment/prerequisites.md)을 검토하십시오.
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 ### 관리자에서 구성 설정이 잠김
 
 `config.php` 또는 `env.php`의 모든 구성 설정이 관리자에서 잠겨 있습니다. 즉, 해당 설정은 관리자에서 변경할 수 없습니다.
-[`magento config:set` 또는 `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) 명령을 사용하여 `config.php` 또는 `env.php` 파일의 설정을 변경합니다.
+[`magento config:set` 또는 `magento config:set --lock`](../cli/set-configuration-values.md#set-values) 명령을 사용하여 `config.php` 또는 `env.php` 파일의 설정을 변경합니다.
 
 ## Commerce 관리자
 

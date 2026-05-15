@@ -3,7 +3,7 @@ title: 현재 검색 엔진이 지원되지 않음
 description: 지원되지 않는 검색 엔진에 대한 오류가 발생한 후 Adobe Commerce 업그레이드 문제를 해결합니다.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Elasticsearch 6 및 이전 버전은 더 이상 지원되지 않습니다.
 
    >[!NOTE]
    >
-   >Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 설치된 JDK 버전을 확인하려면 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk)를 참조하십시오.
+   >Elasticsearch을 사용하려면 JDK 1.8 이상이 필요합니다. 설치된 JDK 버전을 확인하려면 [JDK(Java Software Development Kit) 설치](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit)를 참조하십시오.
 
 1. [Elasticsearch을 구성](../../configuration/search/configure-search-engine.md)하고 다시 색인화합니다.
 

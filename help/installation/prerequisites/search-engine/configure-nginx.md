@@ -3,7 +3,7 @@ title: 검색 엔진에 대한 Nginx 구성
 description: Adobe Commerce의 온-프레미스 설치를 위한 Nginx 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -217,4 +217,4 @@ server {
 
 {{$include /help/_includes/verify-secure-communication.md}}
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

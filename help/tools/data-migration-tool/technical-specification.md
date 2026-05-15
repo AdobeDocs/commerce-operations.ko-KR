@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool] 기술 사양'
 description: ' [!DNL Data Migration Tool] 의 구현 세부 정보와 Magento 1과 Magento 2 간에 데이터를 전송할 때 확장하는 방법에 대해 알아봅니다.'
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '2113'
 ht-degree: 0%
@@ -227,7 +227,7 @@ For example:
 
 단계는 분리된 일부 데이터를 마이그레이션하는 데 필요한 기능을 제공하는 단위입니다. 단계는 하나 이상의 단계(무결성 검사, 데이터, 볼륨 검사 및 델타)로 구성될 수 있습니다.
 
-기본적으로 몇 가지 단계([맵](#map-step), [EAV](#eav), [URL 다시 쓰기](#url-rewrite-step) 등)가 있습니다. 선택적으로 자신의 단계를 추가할 수도 있습니다.
+기본적으로 몇 가지 단계([맵](#map-step), [EAV](#eav-step), [URL 다시 쓰기](#url-rewrite-step) 등)가 있습니다. 선택적으로 자신의 단계를 추가할 수도 있습니다.
 
 단계 관련 클래스는 src/Migration/Step 디렉토리에 있습니다.
 

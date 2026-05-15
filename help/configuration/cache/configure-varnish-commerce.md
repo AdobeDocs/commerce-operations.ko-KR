@@ -3,14 +3,14 @@ title: Commerce에 대한 바니시 구성
 description: Adobe Commerce 애플리케이션에 특별히 Varnish를 구성하는 방법에 대해 알아봅니다. 구성 파일 업데이트 및 관리 기술을 살펴봅니다.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# Vannish를 사용하도록 Commerce 애플리케이션 구성
+# Commerce에 대한 바니시 구성
 
 Vanish를 사용하도록 Commerce을 구성하려면 다음을 수행하십시오.
 

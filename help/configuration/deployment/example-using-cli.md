@@ -2,7 +2,7 @@
 title: CLI 명령 사용 예
 description: 명령줄을 사용하여 개발 시스템에서 공유, 시스템별 및 중요 값을 설정하는 방법에 대한 예를 참조하십시오.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 0%
@@ -182,4 +182,4 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
 
    ![프로덕션 시스템에서 설정을 확인](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

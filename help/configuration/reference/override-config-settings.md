@@ -2,9 +2,9 @@
 title: 구성 설정 재정의
 description: 환경 변수를 사용하여 Adobe Commerce 구성 설정을 재정의하는 방법을 알아봅니다. 구성 관리 및 배포 모범 사례를 살펴봅니다.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->_Commerce on Cloud Infrastructure 안내서_&#x200B;의 [환경 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=ko) 항목을 확인하십시오.
+>_Commerce on Cloud Infrastructure 안내서_&#x200B;의 [환경 구성](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) 항목을 확인하십시오.
 
 ## 환경 변수
 
@@ -62,8 +62,8 @@ ht-degree: 0%
   범위에 대한 자세한 내용은 다음을 참조하십시오.
 
    - [1단계: 웹 사이트 또는 스토어 보기 범위 값 찾기](#step-1-find-the-website-or-store-view-scope-value)
-   - [범위에 대한 Commerce 사용 안내서 주제](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [범위 빠른 참조](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [범위에 대한 Commerce 사용 안내서 주제](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [범위 빠른 참조](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>`은(는) `/` 대신 이중 밑줄 문자가 있는 구성 경로입니다. 자세한 내용은 [2단계: 시스템 변수 설정](#step-2-set-global-website-or-store-view-variables)을 참조하십시오.
 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 범위를 결정합니다.
 
-   1단계에서 설명한 대로 [데이터베이스](#find-a-website-or-store-view-scope-in-the-database)에서 범위를 찾습니다. 웹 사이트 또는 스토어 보기 범위 값을 찾습니다. (2단계: 전역, 웹 사이트 또는 스토어 보기 변수 설정&rbrack;의 &lbrack;표에 표시된 대로 관리에서 값을 찾을 수도 #step-2-set-global-website-or-store-view-variables.
+   1단계에서 설명한 대로 [데이터베이스](#find-a-website-or-store-view-scope-in-the-database)에서 범위를 찾습니다. 웹 사이트 또는 스토어 보기 범위 값을 찾습니다. (2단계: 전역, 웹 사이트 또는 스토어 보기 변수 설정](#step-2-set-global-website-or-store-view-variables)의 [표에 표시된 대로 관리에서 값을 찾을 수도 있습니다.
 
    예를 들어 범위는 `CONFIG__WEBSITES__DEFAULT`일 수 있습니다.
 
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- `$_ENV` 배열에서 설정한 값을 사용하려면 `php.ini` 파일에 `variables_order = "EGPCS"`(환경, Get, Post, 쿠키 및 서버)을 설정해야 합니다. 자세한 내용은 [PHP 설명서](https://www.php.net/manual/en/ini.core.php)를 참조하세요.
 >
->- 클라우드 인프라의 Adobe Commerce에서 [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko#configure-the-project)를 사용하여 구성 설정을 재정의하려는 경우 변수 이름 앞에 `env:`을(를) 추가해야 합니다. For example:
+>- 클라우드 인프라의 Adobe Commerce에서 [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)를 사용하여 구성 설정을 재정의하려는 경우 변수 이름 앞에 `env:`을(를) 추가해야 합니다. For example:
 >
 >![환경 변수 예](../../assets/configuration/cloud-console-envvariable.png)

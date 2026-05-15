@@ -2,7 +2,7 @@
 title: 작업 모드 설정
 description: 개발자와 프로덕션 간에 Adobe Commerce 작업 모드를 설정하는 방법을 알아봅니다. 모드 전환 명령 및 보안과 관련된 사항을 살펴봅니다.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### 어디서나 CLI 명령 실행
 
-[어디서나 CLI 명령 실행](../cli/config-cli.md#config-install-cli-first).
+[어디서나 CLI 명령 실행](../cli/config-cli.md#prerequisites).
 
 `PATH` 시스템에 `<Commerce-install-directory>/bin`을(를) 추가하지 않은 경우 명령을 직접 실행할 때 오류가 발생할 수 있습니다.

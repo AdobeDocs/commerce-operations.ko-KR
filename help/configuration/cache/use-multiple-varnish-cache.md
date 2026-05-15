@@ -1,16 +1,16 @@
 ---
-title: 여러 Varnish 인스턴스를 사용하여 캐시 지우기
+title: 여러 바니시 인스턴스를 사용하여 캐시 지우기
 description: Adobe Commerce의 여러 Varnish 인스턴스에서 캐시 지우기가 작동하는 방식을 알아봅니다. 구성 및 관리 모범 사례를 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
 
-# 여러 Varnish 인스턴스를 지우는 캐시
+# 여러 Varnish 인스턴스를 사용하여 캐시 지우기
 
 Adobe Commerce은 즉시 여러 Vannish 인스턴스를 지원합니다.
 

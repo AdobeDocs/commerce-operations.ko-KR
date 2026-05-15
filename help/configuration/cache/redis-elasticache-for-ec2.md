@@ -1,10 +1,10 @@
 ---
 title: AWS ElastiCache를 사용하여 Redis 구성
-description: EC2에서 호스팅되는 Commerce 인스턴스의 경우 로컬 Redis 인스턴스 대신 AWS ElastiCache를 사용하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 옵션 및 유효성 검사 기술을 살펴봅니다.
+description: EC2에서 AWS ElastiCache를 Adobe Commerce용 Redis 백엔드로 사용하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 및 유효성 검사를 살펴봅니다.
 feature: Configuration, Cache
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -75,4 +75,4 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Commerce UI에서 페이지를 엽니다.
-1. 터미널에서 [캐시 출력](#verify-the-redis-connection)을 확인하세요.
+1. 터미널에서 [캐시 출력](#verify-connectivity)을 확인하세요.

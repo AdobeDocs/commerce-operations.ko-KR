@@ -1,16 +1,16 @@
 ---
-title: 최종 확인
+title: 바니시 구성 확인
 description: Adobe Commerce을 사용하여 Vanish 구성을 최종 확인하는 방법을 알아봅니다. 테스트 단계 및 문제 해결 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# 바니쉬 구성의 최종 확인
+# 바니시 구성 확인 {#final-verification}
 
 이제 Commerce에서 생성한 `default.vcl`을(를) 사용하고 있으므로 Varnish가 작동하는지 최종 확인할 수 있습니다.
 
@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ko)을 참조하십시오.
+>503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)을 참조하십시오.

@@ -1,16 +1,16 @@
 ---
-title: 웹 서버 구성
+title: 바니시 캐싱을 위한 웹 서버 구성
 description: Adobe Commerce에 대한 바니시 캐싱과 작동하도록 웹 서버를 구성하는 방법을 알아봅니다. 포트 구성 및 설정 요구 사항을 살펴봅니다.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# 웹 서버 구성
+# Vannish 캐싱을 위한 웹 서버 구성
 
 Varnish는 웹 서버가 아닌 들어오는 HTTP 요청에 직접 응답하므로 기본 포트 80 이외의 포트에서 수신하도록 웹 서버를 구성합니다.
 

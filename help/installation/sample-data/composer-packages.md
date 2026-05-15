@@ -3,7 +3,7 @@ title: 샘플 데이터 작성기 패키지 다운로드
 description: 다음 단계에 따라 Composer PHP Package Manager를 사용하여 Adobe Commerce 샘플 데이터를 설치합니다.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -66,4 +66,4 @@ You must be using the interactive console to authenticate
 
 {{$include /help/_includes/sample-data-complete.md}}
 
-<!-- Last updated from includes: 2022-09-08 11:33:05 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->
