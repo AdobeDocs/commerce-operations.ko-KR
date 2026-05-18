@@ -2,8 +2,7 @@
 title: ' [!DNL Cloud Automation Patching Service (CAPS)] 워크플로 작동 방식'
 description: 용어, 워크플로 단계 및 자동화된 패치 관리를 위한 작업을 포함하여  [!DNL Cloud Automation Patching Service (CAPS)] 워크플로 프로세스에 대해 알아봅니다.
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
