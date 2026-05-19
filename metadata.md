@@ -13,11 +13,12 @@ role: Admin, Developer
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+usetq: true
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
 badgePaas: label="PaaS만" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
-source-git-commit: 7cc8aed1a128e22fc588e9c8fb8ff6fa4a4b75b1
+source-git-commit: 1c6e6ee398f55823cbbcd7aa8a69507f769a15d2
 workflow-type: tm+mt
 source-wordcount: 176
 ht-degree: 0%
