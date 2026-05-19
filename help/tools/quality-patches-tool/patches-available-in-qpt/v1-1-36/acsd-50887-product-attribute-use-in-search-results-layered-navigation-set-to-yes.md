@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;이(가) *옵션 없이*&#x200B;예&#x200B;*[!UICONTROL Use in Search]*(으)로 설정됨
+# ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;이(가) *옵션 없이*&#x200B;예&#x200B;*[!UICONTROL Use in Search]* (으)로 설정됨
 
 ACSD-50887 패치는 *[!UICONTROL Use in Search Results Layered Navigation]* 옵션도 *예*(으)로 설정되지 않고 제품 특성 속성 *[!UICONTROL Use in Search]*&#x200B;을(를) *예*(으)로 설정할 수 있는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.36이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50887입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
