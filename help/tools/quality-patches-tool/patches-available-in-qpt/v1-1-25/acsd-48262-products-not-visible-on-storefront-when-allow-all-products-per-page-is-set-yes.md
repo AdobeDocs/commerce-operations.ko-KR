@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) *[!UICONTROL Yes]*(으)로 설정된 경우 제품이 상점 앞에 표시되지 않음
+# ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) *[!UICONTROL Yes]* (으)로 설정된 경우 제품이 상점 앞에 표시되지 않음
 
 ACSD-48262 패치는 [!UICONTROL Allow All Products Per Page] 설정이 *[!UICONTROL Yes]*(으)로 설정되어 있을 때 제품이 상점 앞에 표시되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-48262입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 
