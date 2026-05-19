@@ -3,9 +3,9 @@ title: 유지 관리 및 지원 개요
 description: 새로 시작한 Adobe Commerce 구현을 적절하게 유지 관리하고 지원합니다.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 다음 다이어그램은 성공적인 전환 결과에 포함될 단계 및 활동을 보여 줍니다.
 
-![전환 프로세스의 단계를 보여 주는 다이어그램](../../assets/playbooks/transition-diagram.svg)
+![전환 프로세스의 단계를 보여 주는 다이어그램](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ ht-degree: 0%
 플랫폼 및 상거래 관행을 지속적으로 개선하고 최적화하기 위해 비즈니스에 적합한 지원 모델을 파악하는 것은 구현 프로세스 동안 수행한 모든 수고를 유지 관리하는 중요한 단계입니다. 포괄적인 지속적인 지원 계획을 통해 상거래 사이트는 고객의 기대에 부응할 수 있으며 목표를 계속 달성할 수 있습니다.
 
 Adobe Commerce을 배포할 때에는 유지 관리 및 지원 전략에 포함할 내용을 고려하는 것이 중요합니다.
-Adobe Commerce 라이선스에는 전문가 지원이 포함되어 있습니다. 전문가 지원 및 Adobe 지원 계획에 대한 자세한 내용은 [Adobe 지원 계획](https://business.adobe.com/kr/customers/consulting-services/premier-support.html)을 참조하세요.
+Adobe Commerce 라이선스에는 전문가 지원이 포함되어 있습니다. 전문가 지원 및 Adobe 지원 계획에 대한 자세한 내용은 [Adobe 지원 계획](https://business.adobe.com/customers/consulting-services/premier-support.html)을 참조하세요.
 Adobe 지원 플랜 외에도 레거시 Magento 지원 약관이 있습니다. 적용 가능한 지원 서비스를 이해하려면 계약을 참조하여 보유하고 있는 지원 계약을 확인하거나 Adobe 계정 팀에 문의하십시오.
