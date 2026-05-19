@@ -2,9 +2,8 @@
 title: Adobe 개인 정보 보호 JavaScript 라이브러리
 description: Adobe Commerce에서 수집한 고객 개인 정보에 액세스하고 삭제하는 데 사용자 지정 도구를 사용하는 방법을 알아봅니다.
 hide: true
-hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: bf7216db7919b3f62e66cd7c27c0db023b2b6441
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '9953'
 ht-degree: 0%
@@ -27,11 +27,11 @@ ht-degree: 0%
    - [경고](site-wide-analysis-tool/alerts.md)
    - [패치](site-wide-analysis-tool/patches.md)
 - 대문자 {#caps-tool}
-   - [소개](caps-tool/intro.md)
-   - [액세스](caps-tool/access.md)
-   - [워크플로](caps-tool/workflow.md)
-   - [우수 사례](caps-tool/best-practices.md)
-   - [문제 해결](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[소개](caps-tool/intro.md)
+   - {hide-from-toc}[액세스](caps-tool/access.md)
+   - {hide-from-toc}[워크플로](caps-tool/workflow.md)
+   - {hide-from-toc}[모범 사례](caps-tool/best-practices.md)
+   - {hide-from-toc}[문제 해결](caps-tool/troubleshooting.md)
 - Adobe Commerce에서 관리되는 경고 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerce에 대한 관리 경고: [!DNL Redis] 메모리 위험 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerce에 대한 관리 경고: 디스크 경고 경고](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

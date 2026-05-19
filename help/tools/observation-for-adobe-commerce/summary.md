@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![거래 개요](../../assets/tools/transaction-overview.jpg)
 
-### [거래란?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,내용%20is%20a%20transaction%3F,작업%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20frequently, when%20the%20response%20is%20sent)
+### 거래란?
 
 &quot;[!DNL New Relic]에서 트랜잭션은 소프트웨어 응용 프로그램에서 하나의 논리적 작업 단위로 정의됩니다. 특히 해당 작업 단위를 구성하는 함수 호출과 메서드 호출을 가리킵니다. 종종 웹 트랜잭션을 참조합니다. 이 트랜잭션은 애플리케이션이 웹 요청을 수신할 때부터 응답이 전송될 때까지 발생하는 활동을 나타냅니다.&quot;
 

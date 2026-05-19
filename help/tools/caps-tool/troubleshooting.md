@@ -2,8 +2,7 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)] 문제 해결 안내서'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]의 일반적인 문제 및 오류 메시지 해결'
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%

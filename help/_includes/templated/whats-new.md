@@ -1,7 +1,7 @@
 ---
-source-git-commit: 726f78414fa49a9d5d2ee4f1b43e718107039530
+source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
 workflow-type: tm+mt
-source-wordcount: '2622'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
       <td><p>이전 Commerce 버전에 대한 참조 테이블과 MySQL 8.0/Elasticsearch 7.17 지원 종료 지침이 있는 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">이전 Adobe Commerce 릴리스에 대한 시스템 요구 사항</a> 축소 가능한 섹션이 추가되었습니다.</p>
 </td>
       <td>
-        기술
+        기술, 피드백
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">커밋</a></td>
     </tr>
@@ -61,7 +61,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c138beddb066fe26f9e57afbd9b6e74f978a8407">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview">개요: QPT(품질 패치 도구) v1.1.79</a>이(가) 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview">개요: QPT(품질 패치 도구) v1.1.79</a>이(가) 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt

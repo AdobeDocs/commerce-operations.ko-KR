@@ -12,7 +12,7 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 *[!UICONTROL Ordered]*(으)로 잘못 설정됨
+# ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 *[!UICONTROL Ordered]* (으)로 잘못 설정됨
 
 ACSD-51735 패치는 제품 재고가 0일 때 주문 항목 상태가 *[!UICONTROL Ordered]*(으)로 잘못 설정되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50895입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
