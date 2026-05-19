@@ -3,9 +3,9 @@ title: 유지 관리 및 지원 개요
 description: 새로 시작한 Adobe Commerce 구현을 적절하게 유지 관리하고 지원합니다.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 다음 다이어그램은 성공적인 전환 결과에 포함될 단계 및 활동을 보여 줍니다.
 
-![전환 프로세스의 단계를 보여 주는 다이어그램](../../assets/playbooks/transition-diagram.svg)
+![전환 프로세스의 단계를 보여 주는 다이어그램](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >

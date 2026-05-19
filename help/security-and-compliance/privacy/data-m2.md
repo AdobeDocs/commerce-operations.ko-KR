@@ -2,9 +2,9 @@
 title: 고객 개인 정보 참조(버전 2.x)
 description: Adobe Commerce 2.x에서 고객 개인 정보에 대한 데이터 흐름 다이어그램 및 데이터베이스 엔티티 매핑에 대해 알아봅니다.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Adobe Commerce은 고객이 로그인하고 여러 페이지를 보거나 체크아웃할 때 고객 정보를 로드합니다.
 
-![프론트엔드 데이터 액세스 지점](../../assets/security-compliance/frontend-data-access-points.svg)
+![프론트엔드 데이터 액세스 지점](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### 백엔드 데이터 진입점
 
@@ -46,7 +46,7 @@ Adobe Commerce은 고객이 로그인하고 여러 페이지를 보거나 체크
 
 Adobe Commerce은 판매자가 여러 유형의 그리드를 볼 때 고객 정보를 로드하고 그리드를 클릭하여 자세한 정보를 확인하고 기타 다양한 작업을 수행합니다.
 
-![백엔드 데이터 액세스 지점](../../assets/security-compliance/backend-data-access-points.svg)
+![백엔드 데이터 액세스 지점](../../assets/security-compliance/backend-data-access-points.png)
 
 ## 데이터베이스 엔티티
 
