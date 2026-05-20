@@ -3,9 +3,9 @@ title: 기본 및 페이지 캐시에 대한 Redis 구성
 description: Adobe Commerce용 기본 및 페이지 캐시 백엔드로 Redis를 구성하는 방법에 대해 알아봅니다. CLI 명령, env.php 설정 및 연결 확인을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 | `cache-backend-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
 | `cache-backend-redis-db` | 데이터베이스 | 기본 및 전체 페이지 캐시 모두에 Redis를 사용하는 경우 필수입니다. 캐시 중 하나의 데이터베이스 번호를 지정하십시오. 다른 캐시는 기본적으로 0을 사용합니다.<br><br>**중요**: 둘 이상의 캐싱 유형에 대해 Redis를 사용하는 경우 데이터베이스 번호는 달라야 합니다. 기본 캐싱 데이터베이스 번호는 0으로, 페이지 캐싱 데이터베이스 번호는 1로, 세션 저장소 데이터베이스 번호는 2로 지정하는 것이 좋습니다. | `0` |
 | `cache-backend-redis-password` | 암호 | Redis 암호를 구성하면 기본 제공 보안 기능 중 하나인 `auth` 명령을 사용할 수 있습니다. 이 경우 데이터베이스에 액세스하려면 클라이언트가 인증해야 합니다. Redis의 구성 파일에 암호가 직접 구성되었습니다. `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua | Lua를 활성화하거나 비활성화합니다. <br><br>**Lua**: Lua를 사용하면 Redis에서 응용 프로그램 논리의 일부를 실행할 수 있으므로 성능이 향상되고 작은 단위의 실행을 통해 데이터 일관성이 보장됩니다. | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | 가비지 수집에 대한 Lua를 활성화하거나 비활성화합니다. <br><br>**Lua**: Lua를 사용하면 Redis에서 응용 프로그램 논리의 일부를 실행할 수 있으므로 성능이 향상되고 작은 단위의 실행을 통해 데이터 일관성이 보장됩니다. | `1` |
+| `cache-backend-redis-use-lua` | use_lua | 모든 Redis 작업에 대해 Lua 스크립트를 활성화하거나 비활성화합니다. <br><br>**기본값: `0`에서 유지.** Lua가 활성화되면 번들 Redis 라이브러리(1.17.x)에서 발생하는 알려진 성능 후퇴와 GraphQL 캐시 누락 문제를 방지하기 위해 Lua 모드가 기본적으로 비활성화됩니다. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | 가비지 수집(`backend_clean_cache` cron 작업)에 대한 Lua 스크립트를 활성화하거나 비활성화합니다. <br><br>**기본값: `1`에서 유지.** GC 중에 원자 태그 세트 정리를 보장하기 위해 의도적으로 활성화되었습니다. 이 조건이 없으면 캐시 저장 작업과 동시에 `backend_clean_cache` cron이 실행되어 캐시 항목이 캐시 태그 인덱스에 해당 레코드 없이 남아 있을 때 경합 조건이 발생할 수 있습니다. 이로 인해 태그 기반 무효화는 자동으로 실패합니다. 예를 들어 제품 가격을 업데이트하면 제품 캐시가 무효화되지 않고 대신 전체 캐시 플러시가 필요할 수 있습니다. | `1` |
+
+### Lua 모드
+
+Lua 모드가 활성화되면 `EVALSHA`을(를) 통해 서버측에서 실행되는 단일 원자 스크립트로 여러 Redis 작업(캐시 쓰기, 태그 업데이트, 가비지 수집)을 번들로 묶습니다. 이렇게 하면 동시 요청의 인터리빙이 방지됩니다. 예를 들어 캐시 항목과 해당 태그 멤버십이 함께 기록되도록 할 수 있습니다.
+
+>[!WARNING]
+>
+>Adobe Commerce 버전에 대한 영향을 이해하지 못한 채 `use_lua` 및 `use_lua_on_gc`의 기본값을 변경하지 마십시오.
+>
+>- **`use_lua`**: Adobe Commerce 2.4.7 또는 2.4.8(라이브러리 `colinmollenhour/cache-backend-redis` 1.17.1)에서 이 기능을 사용하면 캐시 손상 및 GraphQL 캐시 누락 문제가 발생할 수 있습니다.
+>- **`use_lua_on_gc`**: Adobe Commerce 2.4.8에서 이 기능을 사용하지 않도록 설정하면 가비지 수집 중에 원자 보호가 제거되며 태그 기반 캐시 무효화가 자동으로 실패하여 복구할 전체 캐시 플러시가 필요할 수 있습니다.
 
 ## 예제 명령(기본 캐시)
 
