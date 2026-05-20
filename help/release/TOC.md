@@ -3,10 +3,10 @@ user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 한 곳에서 액세스할 수 있습니다.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 78cce670d8f130cdd5796533edc65db5f4cf4342
+source-git-commit: 2b794767cf1901eb9dfedd8bf3977848d1851a70
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 32%
+source-wordcount: '97'
+ht-degree: 34%
 
 ---
 
@@ -53,7 +53,6 @@ ht-degree: 32%
 - [Beta 릴리스](beta.md)
 - 계획 및 정책 {#planning}
    - [라이프사이클 정책](lifecycle-policy.md)
-   - [클라우드 버전 업그레이드 시행 정책](version-upgrade-enforcement-policy.md)
    - [버전 관리 정책](versioning-policy.md)
    - [릴리스 일정](schedule.md)
 - [버전별 기능](features.md)
