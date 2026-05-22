@@ -4,9 +4,9 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 19f0697ee47fcd7e3228d9e44010b45c3799a182
+source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,6 @@ QPT v1.1.79에는 다음 패치가 포함됩니다.
 1. **ACP2E-4475**: **[!UICONTROL Display Out of Stock Products]** 옵션이 활성화된 경우 제품 목록 페이지에서 가격 기준으로 품절 번들 제품을 잘못 필터링하고 정렬하는 문제가 수정되었습니다.
 1. **ACP2E-4110**: 특별 가격이 포함된 번들 제품에 기본값이 아닌 통화로 PDP 및 PLP에 잘못된 금액이 표시되는 문제를 해결했습니다.
 1. **AC-10698**: 시스템이 통화를 개별 주문과 연결하는 대신 모든 주문 수준에서 통화를 보내는 문제를 해결했습니다. 이제 주문당 거래 가격 및 합계가 [!DNL Google Tag]에 전송되어 전자 상거래 데이터 추적 정확도가 향상되었습니다.
-1. **AC-10737**: `bin/magento setup:db:status` 명령이 JSON 데이터 형식을 인식하지 못하는 문제를 해결했습니다.
+1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: `bin/magento setup:db:status` 명령이 JSON 데이터 형식을 인식하지 못하는 문제를 해결했습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
