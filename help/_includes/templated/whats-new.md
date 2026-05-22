@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
+source-git-commit: 302a9bf56503fca2d25d1406a8bd3fc9827d12bf
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
@@ -497,72 +497,6 @@ ht-degree: 0%
         기술, 피드백
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 3월 19일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. 자식 제품에 사용자 지정 원본이 있는 경우 번들 가격이 제대로 색인화되지 않았습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7646d46e37385cf0a2bfbee6de82410ca54629a1">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 3월 18일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. 지원되지 않는 데이터베이스 버전 확인</a>으로 인해 MariaDB 10.11에서 설치가 실패합니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/016d24d990492d009677c218b253ae88c21634e6">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 3월 17일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331에 대한 QPT 1.1.76 수정 사항에 대한 자세한 설명을 추가했습니다. 미디어 갤러리의 콘텐츠 작성자는 <code class="language-plaintext highlighter-rouge">create_folder</code> 권한으로만 폴더를 만들 수 없습니다. 수정 후에는 예상대로 폴더를 만들 수 있습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/40a14de0a67a0c373dcbb497f1893a98322435b3">커밋</a></td>
     </tr>
   </tbody>
 </table>
