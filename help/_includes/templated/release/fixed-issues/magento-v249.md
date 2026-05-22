@@ -73,7 +73,7 @@ Null TypeError로 인해 /V1/products/special-price 및 관련 가격 책정 API
 
 _AC-6419 - [GitHub 문제](https://github.com/magento/magento2/issues/35934) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/{orderId}/ship` API 끝점에 내부 서버 오류
+#### `/V1/order/&lbrace;orderId&rbrace;/ship` API 끝점에 내부 서버 오류
 
 이제 시스템에서 `/V1/order/{orderId}/ship` API 끝점의 내부 서버 오류를 수정하고 요청이 잘못된 경우 400 오류를 반환합니다.
 
