@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## v2.4.9의 문제가 해결되었습니다.
 
-Adobe Commerce 2.4.9 코어 코드에서 667개 문제를 해결했습니다. 이 릴리스에 포함된 해결된 문제의 하위 집합은 아래에 설명되어 있습니다.
+Adobe Commerce 2.4.9 코어 코드에서 666 문제가 해결되었습니다. 이 릴리스에 포함된 해결된 문제의 하위 집합은 아래에 설명되어 있습니다.
 
 ### API
 
@@ -73,7 +73,7 @@ Null TypeError로 인해 /V1/products/special-price 및 관련 가격 책정 API
 
 _AC-6419 - [GitHub 문제](https://github.com/magento/magento2/issues/35934) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API 끝점에 내부 서버 오류
+#### `/V1/order/{orderId}/ship` API 끝점에 내부 서버 오류
 
 이제 시스템에서 `/V1/order/{orderId}/ship` API 끝점의 내부 서버 오류를 수정하고 요청이 잘못된 경우 400 오류를 반환합니다.
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/68
 
 #### 비활성화된 모듈의 코드 컴파일
 
-이 가져오기 요청은 코드를 컴파일하기 전에 비활성화된 모듈을 이스케이프 처리합니다.
+비활성화된 모듈에 대한 코드를 더 이상 컴파일하지 않도록 `setup:di:compile`의 동작을 변경했습니다.
 
 _AC-10933 - [GitHub 문제](https://github.com/magento/magento2/issues/38241) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ _AC-14312 - [GitHub 문제](https://github.com/magento/magento2/issues/39593) - 
 AC-14424
 
 _AC-14424 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8에서는 시맨틱 버전 관리를 따르지 않는 개발 패키지를 사용합니다
-
-Magento 2.4.8을 사용하려면 PHP 8.4 호환성을 위해 pdepende/pdepende 및 phpmd/phpmd(3.x-dev) 개발 버전이 필요합니다.
-이러한 개발 버전은 SemVer 호환 패키지를 예상하는 타사 도구와 충돌하여 일부 업그레이드를 방지합니다.
-임시 해결 방법은 composer.json의 개발 버전(예: &quot;3.x-dev as 3.99.0&quot;)에 별칭을 지정하여 시맨틱 버전 관리를 충족하면서 호환성을 허용하는 것입니다.
-이를 통해 PHP 8.4를 지원하고 안정적인 릴리스가 제공될 때까지 충돌을 피할 수 있습니다.
-
-_AC-14519 - [GitHub 문제](https://github.com/magento/magento2/issues/39796)_
 
 #### 배송 라벨을 다운로드한 후 배송 금액이 배송 및 취급 가격과 일치하지 않는 것을 알 수 있습니다.
 
@@ -4167,7 +4158,7 @@ _ACP2E-4226_
 
 #### 업데이트 예약 미리 보기에서 웹 사이트 사이를 탐색할 수 없음
 
-이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, [Adobe Commerce 변수 및 마크업 태그](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/variables/markup-tags)에 설명된 대로 `{{store url}}` 마크업 태그를 사용하는 탐색 링크를 지원합니다.
+이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, [Adobe Commerce 변수 및 마크업 태그](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)에 설명된 대로 `{{store url}}` 마크업 태그를 사용하는 탐색 링크를 지원합니다.
 
 _ACP2E-4308 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/0a3b7032)_
 
