@@ -2,7 +2,7 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
+source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -371,7 +371,7 @@ ht-degree: 0%
       - v1.1.30 {#v1-1-30}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367: 고객 주소 내보내기가 작동하지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-         - [BB2B-2598: storeConfig, currency, country, country, availableStores GraphQl 쿼리에 캐싱 기능을 추가합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+         - [B2B-2598: storeConfig, currency, country, country, availableStores GraphQl 쿼리에 캐싱 기능을 추가합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
          - [B2B-2674: customAttributeMetadata GraphQL 쿼리에 캐싱 기능을 추가합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
          - [ACSD-49973:  [!DNL GraphQL]을(를) 통해 번들 제품을 가져오는 성능이 향상되었습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
          - [ACSD-50116: 관리자 사용자는 URL 다시 작성을 만들 수 없습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 4 GTM이 구성되지 않은 경우 Google Analytics 3 GTM 태그가 실행되지 않습니다](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: 관리자가 번들 제품에 대해 예약된 업데이트를 저장할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 CMS GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환하는 도중 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 [!UICONTROL Ordered]&#x200B;(으)로 잘못 설정됨](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: 드롭다운 유형의 사용자 지정 특성별로 카탈로그 페이지를 정렬할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
