@@ -2,7 +2,7 @@
 title: 인덱서 관리
 description: 명령줄 도구를 사용하여 Adobe Commerce 인덱서를 보고 관리하는 방법을 알아봅니다. 인덱서 명령, 상태 확인 및 리인덱싱 기술을 살펴보십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
+source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
@@ -188,7 +188,7 @@ MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fu
 bin/magento indexer:reset [indexer]
 ```
 
-여기서 ```[indexer]```은(는) 공백으로 구분된 인덱서 목록입니다. 모든 인덱서를 무효화하려면 `[indexer]`을(를) 생략하십시오.
+여기서 `[indexer]`은(는) 공백으로 구분된 인덱서 목록입니다. 모든 인덱서를 무효화하려면 `[indexer]`을(를) 생략하십시오.
 
 샘플 결과:
 
