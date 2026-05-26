@@ -3,7 +3,7 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 5b81bd7baa4b00a9100c3e01a20a2b0189b85f92
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
 source-wordcount: '30379'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
@@ -745,7 +745,7 @@ ht-degree: 0%
 * **ACSD-51792**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - [!DNL Google Tag Manager] 4가 활성화된 경우 페이지에 노출 이벤트가 없는 문제가 해결되었습니다.
 * **ACSD-51471**(Adobe Commerce >=2.4.3 &lt;2.4.7) - 관리자가 자체적으로 예약된 업데이트가 있는 간단한 제품을 사용하는 번들 제품에 대해 예약된 업데이트를 저장할 수 없는 문제를 수정합니다.
 * **ACSD-51700**(Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.7) - 관리자의 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환할 때 발생하는 오류를 수정합니다.
-* **ACSD-51120**(Adobe Commerce >=2.3.7 &lt;2.4.3) - 스테이징 업데이트를 통해 업데이트된 CMS 블록이 포함된 CMS 페이지에 대해 GraphQL GET 요청 캐시가 지워지지 않는 문제를 해결했습니다.
+* **ACSD-51120**(Adobe Commerce >=2.3.7 &lt;2.4.3)의 경우) - 스테이징 업데이트를 통해 업데이트된 CMS 블록이 포함된 CMS 페이지에 대해 GraphQL GET 요청 캐시가 지워지지 않는 문제를 해결했습니다.
 * **ACSD-51240**(Adobe Commerce >=2.4.4 &lt;2.4.6) - 회사 등록 양식을 통해 등록한 경우 업로드된 파일이 없는 문제를 수정합니다.
 * **ACSD-51907**(Adobe Commerce >=2.4.2 &lt;2.4.3) - 제한된 관리자가 오프라인 환급으로 대변 메모를 만들 수 없는 문제를 해결했습니다.
 * **ACSD-52148**(Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.4) - [!DNL Google V3 reCAPTCHA] 관리자 로그인이 간혹 실패하는 문제가 해결되었습니다.
@@ -938,7 +938,7 @@ ht-degree: 0%
 * **ACSD-44851**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6*) - 하위 범주가 있는 범주를 열거나 확장할 수 없는 문제를 해결했습니다.
 * **ACSD-46815**(*Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6*) - 범주 트리 요청이 20개의 범주로 제한되는 문제를 해결했습니다.
 * **ACSD-45675**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6*) - 제품 내보내기에서 *기본 스토어 보기* 범위의 카테고리 이름을 사용하는 문제를 해결했습니다.
-* **ACSD-46869**(*Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6*) - 제품 수량을 변경하지 않고 *PUT REST API* 요청을 통해 장바구니에 구성 가능한 제품이 업데이트되지 않는 문제를 해결했습니다.
+* **ACSD-46869**(*Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6*) - 제품 수량을 변경하지 않고 장바구니에서 구성 가능한 제품이 *PUT REST API* 요청을 통해 업데이트되지 않는 문제를 해결했습니다.
 * **MDVA-42768-V2**(*Adobe Commerce 및 Magento Open Source의 경우 >=2.4.2 &lt;2.4.3*) - *Display Out-of-Stock*&#x200B;이(가) *Yes*&#x200B;일 때 구성 가능한 제품에 일반 가격이 *0*&#x200B;으로 표시되는 문제를 해결했습니다.
 * 업데이트된 패치: MDVA-44562, ACSD-46213, MDVA-41305, MDVA-38346, MDVA-13203.
 * 사용되지 않는 패치: MDVA-42768.
@@ -991,7 +991,7 @@ ht-degree: 0%
 * **MDVA-40961**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 항목의 최소 수량이 장바구니에 이미 있는 경우 장바구니에 추가 항목을 추가할 수 없는 문제를 해결했습니다.
 * **MDVA-44887**(*Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5*) - *발견되지 않은 구문이 수정됨Error: 관리 패널에서 예기치 않은 토큰 &#39;const&#39;* 오류가 발생했습니다.
 * **MDVA-43718**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - 수정 사항 *소비자가 %resources에 액세스할 수 있는 권한이 없습니다.* 사용자 지정 통합에서 공유 카탈로그에 액세스할 때 표시되는 오류입니다.
-* **MDVA-44660**(*Adobe Commerce 및 Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - 고객의 이름과 성에 중대한 악센트 문자 ``` ` ```을(를) 사용할 수 없는 문제를 해결했습니다.
+* **MDVA-44660**(*Adobe Commerce 및 Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - 고객의 이름과 성에 그레이브 악센트 문자(\`)를 사용할 수 없는 문제를 해결했습니다.
 * **MDVA-40896**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 비동기 제품 벌크 API에서 *오류: TypeError: Magento에 전달된 인수 3* 오류를 수정합니다.
 * **MDVA-38559**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.3*) - 둘 이상의 구독을 가진 고객의 */V1/customers/search API* 오류를 수정합니다.
 * **MDVA-44533**(*Adobe Commerce 및 Magento Open Source >=2.3.1 &lt;2.4.4*) - 번들 하위 제품에 할인이 잘못 적용되는 문제가 수정되었습니다.
@@ -1373,7 +1373,7 @@ ht-degree: 0%
 * **MDVA-31242**(*Adobe Commerce >=2.3.0 &lt;2.4.1, B2B 확장 포함*) - 대변 메모 그리드에 잘못된 통화 기호가 표시되는 문제를 해결했습니다.
 * **MDVA-31295**(*Adobe Commerce >=2.3.0 &lt;2.4.2*) - 부분 주문이 완료되고 항목이 과세될 때 보상 포인트가 계산되지 않는 문제를 해결했습니다.
 * **MDVA-30112**(*Adobe Commerce >=2.3.4 &lt;2.4.2*) - 주문 수가 *bunch-size* 값을 초과할 경우 Adobe Commerce에서 *보류 중* 상태의 주문을 일치하지 않는 것으로 간주하는 문제를 해결했습니다.
-* **MDVA-31150** (*Adobe Commerce >=2.3.0 &lt;2.4.2*) - Rest API 호출로 청구서가 게시되었고 스토어 신용 카드 및 기프트 카드 계정이 주문을 부분적으로 결제했을 때 GET Invoice Rest API 호출로 스토어 신용 및 기프트 카드 잔액이 반환되지 않는 문제를 해결했습니다.
+* **MDVA-31150** (*Adobe Commerce >=2.3.0 &lt;2.4.2*) - Rest API 호출에서 청구서가 게시되고 스토어 신용 카드 및 기프트 카드 계좌에서 주문이 부분적으로 결제되었을 때 GET 송장 REST API 호출에서 스토어 신용 및 기프트 카드 잔액이 반환되지 않는 문제를 해결했습니다.
 * **MDVA-30963**(*Adobe Commerce >=2.3.2 &lt;2.4.2*) - 제품 필터링 결과가 관리자의 *모든 저장소 보기* 범위에 지정된 값만 포함하도록 설정되는 문제를 해결했습니다. 저장소 보기 수준에서 재정의된 값이 있는 제품을 포함하십시오.
 * **MDVA-29954** (*Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 B2B 확장 포함 || 2.4.2*) - *새 회사 등록 요청* 및 *회사에 연결되었습니다* 전자 메일이 잘못된 주소에서 전송되는 문제를 해결했습니다.
 * **MDVA-28357** (*Adobe Commerce >=2.3.2 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*) - 표준 분석기를 [!DNL ElasticSearch] 인덱스의 SKU 필드에 대한 키워드 토큰기로 사용자 지정 분석기로 대체하여 와일드카드 검색 쿼리가 하이픈(&quot;-&quot;)이 포함된 SKU에서 작동하도록 합니다.
