@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 091df8b7f71edd862cbee9583fb379e29adbb8f2
+source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
 workflow-type: tm+mt
-source-wordcount: '9978'
+source-wordcount: '9992'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 4 GTM이 구성되지 않은 경우 Google Analytics 3 GTM 태그가 실행되지 않습니다](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: 관리자가 번들 제품에 대해 예약된 업데이트를 저장할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 CMS GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환하는 도중 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 [!UICONTROL Ordered]&#x200B;(으)로 잘못 설정됨](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: 드롭다운 유형의 사용자 지정 특성별로 카탈로그 페이지를 정렬할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -994,6 +994,7 @@ ht-degree: 0%
          - [ACP2E-4419: 상점 첫 화면에서 reCAPTCHA v2 유효성 검사가 성공적으로 수행된 후 체크아웃 시 기프트 카드가 올바르게 적용되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4603: 카탈로그 권한 제품 색인 재지정으로 인해 오래된 권한 인덱스 행과 MySQL 교착 상태가 남음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
          - [AC-10737: `bin/magento setup:db:status` 명령이 JSON 데이터 형식을 인식하지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: 결제 권한 부여 트랜잭션 자체 참조 parent_id를 다시 저장하고 무한 루프/OOM 트리거](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
+source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -19,8 +19,8 @@ QPT v1.1.79에는 다음 패치가 포함됩니다.
 1. **ACP2E-4402**: 사용하지 않도록 설정된 제품이 사용하도록 설정된 후 관련 [!UICONTROL Target Rule] 결과에 다시 추가되지 않는 문제를 해결했습니다.
 1. **ACP2E-4505**: 중복 브라우저 탭에서 오래된 데이터가 있는 범주를 저장하여 순환 종속성을 만들 수 있는 문제를 해결했습니다.
 1. **ACP2E-4531**: CMS 페이지의 URL 키를 변경해도 페이지의 계층 URL이 업데이트되지 않는 문제를 해결했습니다.
+1. **[ACP2E-4603](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)**: [!UICONTROL Catalog Permissions] 제품 다시 인덱스를 실행하면 기존 권한 인덱스 행이 변경되지 않아 업데이트된 범주 권한 부여가 제품에 안정적으로 반영되지 않는 문제를 해결했습니다.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: 특정 조건에서 결제 트랜잭션 처리가 비효율적으로 작동할 수 있는 문제를 해결했습니다.
-1. **ACP2E-4603**: [!UICONTROL Catalog Permissions] 제품 다시 인덱스를 실행하면 기존 권한 인덱스 행이 변경되지 않아 업데이트된 범주 권한 부여가 제품에 안정적으로 반영되지 않는 문제를 해결했습니다.
 1. **ACP2E-4706**: [!UICONTROL Target Rule] 인덱서가 [!UICONTROL Admin] 범위에서 활성화되지 않은 제품을 건너뛰는 문제를 해결했습니다.
 1. **ACP2E-4720**: 장바구니 할인 규칙이 있는 번들 제품에 대해 무료 배송이 제대로 적용되지 않거나 제거되지 않는 문제를 해결했습니다.
 1. **ACP2E-4411**: 장바구니 페이지와 여러 통화 스토어의 미니 장바구니에 번들 제품에 대해 잘못된 가격이 표시되는 문제를 해결했습니다.
