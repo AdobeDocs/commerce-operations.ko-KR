@@ -4,7 +4,7 @@ description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
+source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -23,9 +23,9 @@ QPT v1.1.79에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: 특정 조건에서 결제 트랜잭션 처리가 비효율적으로 작동할 수 있는 문제를 해결했습니다.
 1. **ACP2E-4706**: [!UICONTROL Target Rule] 인덱서가 [!UICONTROL Admin] 범위에서 활성화되지 않은 제품을 건너뛰는 문제를 해결했습니다.
 1. **ACP2E-4720**: 장바구니 할인 규칙이 있는 번들 제품에 대해 무료 배송이 제대로 적용되지 않거나 제거되지 않는 문제를 해결했습니다.
-1. **ACP2E-4411**: 장바구니 페이지와 여러 통화 스토어의 미니 장바구니에 번들 제품에 대해 잘못된 가격이 표시되는 문제를 해결했습니다.
+1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)**: 장바구니 페이지와 여러 통화 스토어의 미니 장바구니에 번들 제품에 대해 잘못된 가격이 표시되는 문제를 해결했습니다.
 1. **ACP2E-4475**: **[!UICONTROL Display Out of Stock Products]** 옵션이 활성화된 경우 제품 목록 페이지에서 가격 기준으로 품절 번들 제품을 잘못 필터링하고 정렬하는 문제가 수정되었습니다.
-1. **ACP2E-4110**: 특별 가격이 포함된 번들 제품에 기본값이 아닌 통화로 PDP 및 PLP에 잘못된 금액이 표시되는 문제를 해결했습니다.
+1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)**: **[!UICONTROL Special Price]**&#x200B;이(가) 있는 번들 제품이 PDP 및 PLP에 기본이 아닌 통화로 잘못된 금액을 표시하는 문제를 해결했습니다.
 1. **AC-10698**: 시스템이 통화를 개별 주문과 연결하는 대신 모든 주문 수준에서 통화를 보내는 문제를 해결했습니다. 이제 주문당 거래 가격 및 합계가 [!DNL Google Tag]에 전송되어 전자 상거래 데이터 추적 정확도가 향상되었습니다.
 1. **[AC-10737](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)**: `bin/magento setup:db:status` 명령이 JSON 데이터 형식을 인식하지 못하는 문제를 해결했습니다.
 
