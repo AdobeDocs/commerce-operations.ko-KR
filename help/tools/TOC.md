@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
+source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
 workflow-type: tm+mt
-source-wordcount: '10059'
+source-wordcount: '10074'
 ht-degree: 0%
 
 ---
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: PDP 로드 시 여러 X-Magento-Vary 쿠키 업데이트가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4528: 고객 주소 도시 유효성 검사가 슬래시(/)와 잘못된 문자(예: !, &quot;, #, ? )를 잘못 처리했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: 대문자 이메일 주소를 사용하여 고객을 가져오면 계정 공유가 글로벌로 설정된 경우 정의되지 않은 배열 키 오류가 트리거됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: 선언적 스키마를 통해 외래 키가 있는 열을 수정하면  [!DNL MariaDB]에 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
          - [ACP2E-4763: GraphQL customerOrders 쿼리가 부풀려진 original_price_including_tax 및 original_row_total_including_tax를 반환합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)
