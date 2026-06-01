@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
+source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
 workflow-type: tm+mt
-source-wordcount: '10074'
+source-wordcount: '10121'
 ht-degree: 0%
 
 ---
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: PDP 로드 시 여러 X-Magento-Vary 쿠키 업데이트가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4513: 만료된 CAPTCHA 이미지가 시스템에서 제거되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
          - [ACP2E-4528: 고객 주소 도시 유효성 검사가 슬래시(/)와 잘못된 문자(예: !, &quot;, #, ? )를 잘못 처리했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: 대문자 이메일 주소를 사용하여 고객을 가져오면 계정 공유가 글로벌로 설정된 경우 정의되지 않은 배열 키 오류가 트리거됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: 선언적 스키마를 통해 외래 키가 있는 열을 수정하면  [!DNL MariaDB]에 오류가 발생합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
@@ -995,6 +996,8 @@ ht-degree: 0%
          - [ACP2E-4419: 상점 첫 화면에서 reCAPTCHA v2 유효성 검사가 성공적으로 수행된 후 체크아웃 시 기프트 카드가 올바르게 적용되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4505: 부실 데이터가 있는 범주를 중복 브라우저 탭에 저장할 때 발생하는 순환 범주 종속성](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+         - [ACP2E-4720: 무료 배송 장바구니 가격 규칙은 배송 품목이 별도로 있는 고정 가격 번들 제품에 대해 재설정되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698: 거래 가격 및 합계가 Google 태그에 전송되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
          - [ACP2E-4475: 품절 번들 제품에 대해 작동하지 않는 가격으로 주문 또는 필터링](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411: 번들 제품 가격이 다중 통화 설정의 제품 세부 사항 페이지와 장바구니 간에 잘못된 세금 및 통화 값을 표시합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
