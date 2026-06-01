@@ -3,9 +3,14 @@ title: 릴리스 정보
 description: Adobe Commerce에 사용할 수 있는 패치와 이러한 패치가 해결하는 문제에 대해 알아봅니다.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: 30977
 ht-degree: 0%
 
 ---
@@ -16,11 +21,32 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.80 {#v1-1-80}
+
+* **ACP2E-4239**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - 날짜 특성을 사용하는 관리자 그리드 필터가 선택한 날짜, 저장된 UTC 값 및 구성된 저장소 시간대 간의 시간대 차이로 인해 잘못된 결과를 반환하는 문제를 해결했습니다.
+* **ACP2E-4472**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - &quot;고객으로 로그인&quot; 흐름 중에 null 따옴표가 만들어지는 문제를 해결했습니다.
+* **ACP2E-4481**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - 주문이 취소된 후 번들 제품 판매성이 올바르게 계산되지 않는 문제를 해결했습니다.
+* **ACP2E-4488**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 특성 집합이 큰 제품의 경우 관리자에서 제품을 저장하거나 편집하는 데 시간이 걸리는 문제가 해결되었습니다.
+* **ACP2E-4493**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - 비동기 인덱싱이 활성화된 경우 판매 주문 아카이브 그리드에 잘못된 주문 상태가 표시되는 문제를 수정합니다.
+* **ACP2E-4496**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - analytics cron 작업이 실행 중에 성능 저하를 일으켜 전체 시스템 성능이 향상되는 문제를 해결했습니다.
+* **ACP2E-4533**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 스토어 코드가 URL에 포함되어 있을 때 자리 표시자 이미지가 상점 앞에 로드되지 않는 문제를 해결했습니다.
+* **ACP2E-4552**(Adobe Commerce의 경우 B2B >=1.5.0 &lt;1.5.3) - GraphQL 응답에서 회사 상태가 반환되지 않는 문제를 수정합니다.
+* **ACP2E-4610**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - sales_clean_quotes cron 작업에 성능 문제가 있는 문제를 수정합니다.
+* **ACP2E-4615**(Adobe Commerce의 경우 >=2.4.4-p13 &lt;2.4.4-p17) || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9) - &quot;PayPal 게이트웨이가 요청을 거부합니다.&quot;라는 PayPal 오류가 발생하여 온라인 주문 환불이 실패하는 문제를 수정합니다. 내부 오류...
+* **ACP2E-4626**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.9) - 일부 Storefront JavaScript 파일이 두 번 요청 및 실행되어 간헐적인 중복 로드와 불안정한 동작이 발생하는 문제를 해결합니다.
+* **ACP2E-4653**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - REST API를 통해 규칙을 검색하거나 업데이트할 때 &quot;범주(상위 전용)&quot; 및 &quot;범주(하위 전용)&quot;에 대한 장바구니 가격 규칙 조건 특성 범위가 노출되지 않는 문제를 해결했습니다.
+* **ACP2E-4808**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.10) - 상점 제품 페이지의 Weight 속성에 구성된 측정 단위(lbs 또는 kgs) 없이 &quot;추가 정보&quot; 또는 &quot;추가 정보&quot; 섹션의 원시 숫자 값만 표시되는 문제를 해결합니다.
+* **ACP2E-4156**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - REST API의 배송 주소 유효성 검사가 관리자에 정의된 특성 구성을 준수하지 않는 문제를 해결합니다.
+* **ACP2E-4813**(Adobe Commerce 및 Magento Open Source의 경우) >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - 체크아웃 시 USPS 배송 방법을 사용할 수 없고, 여러 패키지로 분할한 주문을 포함하여 특정 제품에 대한 배송 예상 가격이 잘못된 문제를 수정합니다.
+* **ACSD-53502**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6) - New Relic 모니터링 스크립트에 대한 반복적인 호출로 인해 iOS Safari의 상점 첫 화면에서 장바구니에 추가가 간헐적으로 실패하여 페이지가 다시 로드되는 문제를 해결했습니다.
+* 업데이트된 버전: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD -61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **-**, **ACP2E-4402**, **ACP2E-4505**, **ACP2E-4603**, **ACP2E-4706**
+* 대체된 패치: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
 
