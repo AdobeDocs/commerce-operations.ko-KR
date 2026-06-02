@@ -1,6 +1,6 @@
 ---
 title: 'B2B-2598: storeConfig, currency, country, country, availableStores GraphQl 쿼리에 캐싱 기능을 추가합니다.'
-description: B2B-2598 패치를 적용하여 storeConfig, currency, country, country 및 availableStors GraphQl 쿼리에 캐싱 기능을 추가합니다.
+description: B2B-2598 패치를 적용하여 'storeConfig', 'currency', 'country', 'countries' 및 'availableStores' GraphQl 쿼리에 캐싱 기능을 추가합니다.
 feature: B2B, GraphQL, Cache
 role: Admin
 type: Troubleshooting
@@ -23,9 +23,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 industry_v2:
   - id: aad1e361-483a-40cf-9a88-144325515074
-source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
+source-git-commit: 17c3f587a16209876a9713881eff0034d872581e
 workflow-type: tm+mt
-source-wordcount: 458
+source-wordcount: 457
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ B2B-2598 패치는 `storeConfig`, `currency`, `country`, `countries` 및 `availa
 
 ## 문제
 
-`availableStores`, `countries`, `country`, `currency`, `storeConfig` 및 `customAttributeMetadata` GraphQL 쿼리는 캐시할 수 없습니다.
+`availableStores`, `countries`, `country`, `currency`, `storeConfig` 및 `customAttributeMetadata` GraphQL 쿼리를 캐시할 수 없습니다.
 
 <u>필수 구성 요소</u>:
 
@@ -68,14 +68,14 @@ B2B-2598 패치는 `storeConfig`, `currency`, `country`, `countries` 및 `availa
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko)
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 대해 패치를 사용할 수 있는지 확인
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.
