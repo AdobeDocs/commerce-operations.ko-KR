@@ -1,7 +1,7 @@
 ---
-source-git-commit: eca5c109548e0d92435b3dca90a905ef2efaa504
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3282'
 ht-degree: 0%
 
 ---
@@ -265,7 +265,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>캐시 백엔드 지침이 클라우드 인프라의 Adobe Commerce에서 지원되는 Valkey와 일치하도록 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 보안 패치 릴리스</a>, <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 보안 패치 릴리스</a> 및 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 보안 패치 릴리스</a> 항목에서 Valkey LTS 호환성을 8.1로 수정했습니다.<br /><em>문제 해결 <a href="https://github.com/AdobeDocs/commerce-operations.ko-KR/issues/177">#177</a>.</em></p>
+      <td><p>캐시 백엔드 지침이 클라우드 인프라의 Adobe Commerce에서 지원되는 Valkey와 일치하도록 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5 보안 패치 릴리스</a>, <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6 보안 패치 릴리스</a> 및 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8 보안 패치 릴리스</a> 항목에서 Valkey LTS 호환성을 8.1로 수정했습니다.<br /><em>문제 해결 <a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
 </td>
       <td>
         기술, 피드백, 릴리스 정보
@@ -687,28 +687,6 @@ ht-degree: 0%
         주요 업데이트
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 4월 3일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><code>env.php</code>에서 Adobe Commerce의 기본 L2 캐시 디렉터리를 올바르게 재정의하여 캐시 파일이 의도한 위치에 저장되도록 하고 분할 캐시 디렉터리 및 GlusterFS 세그멘테이션 오류를 방지하기 위한 지침을 추가했습니다. <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Redis 및 Valkey 서비스 구성에 대한 모범 사례</a>에서 업데이트된 지침을 참조하세요.</p>
-</td>
-      <td>
-        기술, 피드백
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">커밋</a></td>
     </tr>
   </tbody>
 </table>
