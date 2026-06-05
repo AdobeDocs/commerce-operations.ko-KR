@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
+source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
 workflow-type: tm+mt
-source-wordcount: '10121'
+source-wordcount: '10131'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: 다운로드 가능한 제품 스테이징 업데이트의 시작 날짜를 업데이트할 때 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 4 GTM이 구성되지 않은 경우 Google Analytics 3 GTM 태그가 실행되지 않습니다](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: 관리자가 번들 제품에 대해 예약된 업데이트를 저장할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 CMS GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL 블록이 포함된 CMS 페이지에 대한 GET 요청 캐시가 지워지지 않음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: 다운로드 가능한 제품 편집 페이지에서 스토어 보기를 전환하는 도중 오류 발생](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: 제품 재고가 0일 때 주문 항목 상태가 [!UICONTROL Ordered]&#x200B;(으)로 잘못 설정됨](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: 드롭다운 유형의 사용자 지정 특성별로 카탈로그 페이지를 정렬할 수 없음](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419: 상점 첫 화면에서 reCAPTCHA v2 유효성 검사가 성공적으로 수행된 후 체크아웃 시 기프트 카드가 올바르게 적용되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4402: 대상 규칙 증분 인덱서가 비활성화된 제품을 선택하지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505: 부실 데이터가 있는 범주를 중복 브라우저 탭에 저장할 때 발생하는 순환 범주 종속성](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720: 무료 배송 장바구니 가격 규칙은 배송 품목이 별도로 있는 고정 가격 번들 제품에 대해 재설정되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698: 거래 가격 및 합계가 Google 태그에 전송되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
