@@ -1,7 +1,7 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
 workflow-type: tm+mt
-source-wordcount: '3282'
+source-wordcount: '3380'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 6월 5일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402">ACP2E-4402: 대상 규칙 증분 인덱서가 비활성화된 제품을 선택하지 않습니다</a>에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 6월 2일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>릴리스 줄 2.4.4 및 2.4.5에 대한 추가 보안 수정 사항을 사용하여 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/versions">릴리스 버전</a>을 업데이트했습니다(2027년 5월).</p>
+</td>
+      <td>
+        주요 업데이트
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7457647b2fc4c0a4786146a9eee74b2050bf5ad9">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 6월 1일
 
