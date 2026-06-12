@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: bbe7d69e0cf7a1cdfdbf6ed60b853ace38ae227a
+source-git-commit: 7e0a7479cd988b678c95b0ee9ec4c5371d0a62d9
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10150'
 ht-degree: 0%
 
 ---
@@ -1007,6 +1007,8 @@ ht-degree: 0%
          - [ACP2E-4603: 카탈로그 권한 제품 색인 재지정으로 인해 오래된 권한 인덱스 행과 MySQL 교착 상태가 남음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
          - [AC-10737: `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1` 명령이 JSON 데이터 형식을 인식하지 않습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: 결제 권한 부여 트랜잭션 자체 참조 parent_id를 다시 저장하고 무한 루프/OOM 트리거](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
+      - v1.1.80 {#v1-1-80}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
