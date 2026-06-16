@@ -2,8 +2,8 @@
 title: Beta 릴리스
 description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아봅니다.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
-badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
+badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."
 source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
 workflow-type: tm+mt
 source-wordcount: '1400'
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 베타 릴리스
 
-[Adobe Commerce 제품 솔루션](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)을 위한 Beta 프로그램은 판매자가 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, Adobe Commerce의 미래를 안내할 수 있는 방법입니다. 베타 프로그램에는 두 가지 유형이 있습니다.
+[Adobe Commerce 제품 솔루션](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions)을 위한 Beta 프로그램은 판매자가 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, Adobe Commerce의 미래를 안내할 수 있는 방법입니다. 베타 프로그램에는 두 가지 유형이 있습니다.
 
 - 공개 Beta: 공개 베타 프로그램은 모든 Adobe Commerce 고객 및 파트너가 사용할 수 있습니다
 - Private Beta: 비공개 베타 프로그램에 참여하려면 자격 기준에 따른 승인이 필요할 수 있습니다
@@ -50,7 +50,7 @@ Adobe에서 제품 검색이 [!DNL Adobe Commerce]의 [!DNL Live Search] 및 [!D
 
 ### 권장 가격 필터(공개 Beta) {#recommendation-price-filters-public-beta}
 
-[!BADGE SaaS만]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."}
+[!BADGE SaaS만]{type=Positive url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."}
 
 [!DNL Adobe Commerce Optimizer]은(는) 제품 권장 사항에 **가격 필터**&#x200B;를 추가하므로 권장 사항 단위를 만들거나 편집할 때 가격에 따라 권장 제품을 포함하거나 제외할 수 있습니다. 필터는 해당 가격 장부(장부 가격만 해당 아님)의 할인 및 프로모션을 포함하여 상점의 **활성 가격 장부**&#x200B;에서 각 제품의 **최종 계산된 가격**&#x200B;을 사용합니다. 가격 규칙은 후보 세트를 세분화합니다. 제품 등급을 다시 매기지 않습니다.
 
@@ -63,17 +63,17 @@ Adobe에서 제품 검색이 [!DNL Adobe Commerce]의 [!DNL Live Search] 및 [!D
 - 제품 세부 사항 페이지에서 동적 가격 규칙을 사용하여 보고 있는 제품에 대해 비교 가능한 가격 범위 내에서 대체 요소를 표시할 수 있습니다.
 - 필터링 및 표시에 사용되는 활성 가격 장부의 최종 가격과 동일한 가격 쇼핑객이 보는 가격에 맞춰 필터링을 정렬합니다.
 
-자세한 내용은 판매자 안내서의 [추천 필터 — 가격](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price) 및 상점 소개 안내서의 [제품 추천 설정](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/)을 참조하십시오.
+자세한 내용은 판매자 안내서의 [추천 필터 — 가격](https://experienceleague.adobe.com/ko/docs/commerce/optimizer/merchandising/recommendations/filters#price) 및 상점 소개 안내서의 [제품 추천 설정](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=ko)을 참조하십시오.
 
 이 Beta 기능을 사용할 때 피드백을 공유하려면 [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)에 전자 메일을 보내세요.
 
 ### Cloud Automation 패치 서비스(Private Beta)
 
-[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
+[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)는 [Cloud Infrastructure의 Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) 환경에 격리된 보안 패치를 적용하는 프로세스를 자동화합니다.
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)는 [Cloud Infrastructure의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview) 환경에 격리된 보안 패치를 적용하는 프로세스를 자동화합니다.
 
-2025년 10월에 Cloud Automation 패치 서비스의 베타 릴리스가 [사이트 전체 분석 도구 대시보드](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)에 추가됩니다. 이 서비스는 다음과 같은 작업을 포함하는 간소화된 패치 작업 과정을 통해 Commerce 프로젝트 관리자를 지원합니다.
+2025년 10월에 Cloud Automation 패치 서비스의 베타 릴리스가 [사이트 전체 분석 도구 대시보드](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)에 추가됩니다. 이 서비스는 다음과 같은 작업을 포함하는 간소화된 패치 작업 과정을 통해 Commerce 프로젝트 관리자를 지원합니다.
 
 - 자동 패치 설치
 - 롤백 복구
@@ -88,7 +88,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 
 >[!NOTE]
 >
->Cloud Automation Patching Service는 격리된 보안 패치를 자동으로 적용하므로 이를 사용하려면 [기여자 또는 프로젝트 관리자 역할](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)이 있어야 합니다.
+>Cloud Automation Patching Service는 격리된 보안 패치를 자동으로 적용하므로 이를 사용하려면 [기여자 또는 프로젝트 관리자 역할](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/user-access)이 있어야 합니다.
 
 이 Beta에 참여하려면 [Cloud Automation 패치 서비스 - Beta 등록 양식](https://forms.office.com/r/3Wfxj5nPdB)을 완료하고 제출하십시오.
 
@@ -107,7 +107,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 
 ### Adobe Commerce Foundation(공개 Alpha/Beta)
 
-[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
+[!BADGE PaaS만]{type=Informative url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."}
 
 각 Adobe Commerce Foundation 알파 및 베타 릴리스에는 다음 기능 영역을 포함하되, 이에 국한되지 않는 예약된 릴리스 날짜까지 Adobe Commerce 핵심 코드에 전달되는 모든 변경 사항이 포함됩니다.
 
@@ -116,7 +116,7 @@ Beta에는 다음 기능이 포함되어 있습니다.
 - GraphQL 개선 사항
 - 일반 품질 버그 수정
 - 커뮤니티 기여
-- [Adobe Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
+- [Adobe Commerce 서비스](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/home)와의 호환성을 지원하는 데 필요한 변경 사항
 
 #### 명명 규칙 및 일정
 
