@@ -3,7 +3,7 @@ title: 릴리스된 버전
 description: Adobe Commerce의 특정 버전이 언제 릴리스되었는지 알아봅니다.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-source-git-commit: 951b3852c0942205b63ee01089c8cb40adfb0614
+source-git-commit: 34c1e3ed0ed46fc17bf4492036a8f43658b24bda
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -28,4 +28,4 @@ Adobe은 버전 2.4.4 및 2.4.5에서 Adobe Commerce 고객을 위해 추가 비
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-05-12 13:30:26 -->
+<!-- Last updated from includes: 2026-06-02 11:13:39 -->
