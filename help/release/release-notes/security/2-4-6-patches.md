@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../../lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
 >
->Adobe Commerce 2.4.6은 [2027년 8월 30일부터 ](../../lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../../lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
+>Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../../lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../../lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
 >
 >클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../../version-upgrade-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../../lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 
