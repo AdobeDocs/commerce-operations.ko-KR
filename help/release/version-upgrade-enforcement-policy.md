@@ -1,8 +1,8 @@
 ---
 title: 클라우드 버전 업그레이드 시행 정책
 description: Adobe Commerce on Cloud의 버전 업그레이드 적용에 대해 알아보십시오. Adobe에서 업그레이드, 적용 날짜, 서비스 해제 및 필수 작업을 적용하는 이유. 과도적 조항 및 마이그레이션 경로에 대해서는 라이프사이클 정책을 참조하십시오.
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
