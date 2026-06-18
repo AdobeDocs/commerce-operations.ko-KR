@@ -17,7 +17,7 @@ ht-degree: 0%
 
 각 보안 패치 릴리스는 이전 전체 패치 릴리스를 기반으로 합니다. 여기에는 이전 패치 릴리스의 품질 및 보안 수정 사항과 이전 전체 패치 릴리스와 보안 패치 릴리스 간에 생성된 보안 수정 사항이 포함되어 있습니다.
 
-보안 패치를 다운로드하고 적용하는 방법은 _Adobe Commerce 기술 자료_&#x200B;에서 [보안 패치를 가져오고 적용하는 방법](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)을 참조하십시오.
+보안 패치를 다운로드하고 적용하는 방법은 _Adobe Commerce 기술 자료_&#x200B;에서 [보안 패치를 가져오고 적용하는 방법](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)을 참조하십시오.
 
 {{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
@@ -27,5 +27,5 @@ ht-degree: 0%
 
 격리된 보안 패치 파일을 적용하려면, 격리된 보안 패치 파일이 해당 버전에 대해서만 테스트되므로 고객은 지원되는 릴리스 라인의 최신 보안 전용 패치 릴리스(최신 -p 버전)에 있어야 합니다.
 
-Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/security/products/magento.html)를 참조하세요.
+Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/kr/security/products/magento.html)를 참조하세요.
 
