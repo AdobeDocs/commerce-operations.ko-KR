@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.4의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 16f70659db62f72df534561c174fde523ed5a434
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2182'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
-## 2.4.4-p18
-
 {{extended-support}}
 
-Adobe Commerce 2.4.4-p18은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 확장 지원 보안 릴리스입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+## 2.4.4-p18
+
+Adobe Commerce 2.4.4-p18은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/kr/security/products/magento/apsb26-49.html)을 참조하십시오.
 
@@ -26,9 +26,7 @@ Adobe Commerce 2.4.4-p18은 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 ## 2.4.4-p17
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p17은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 확장 지원 보안 릴리스입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p17은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/kr/security/products/magento/apsb26-05.html)을 참조하십시오.
 
@@ -36,9 +34,7 @@ Adobe Commerce 2.4.4-p17은 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 ## 2.4.4-p16
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 확장 지원 보안 릴리스입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
 
@@ -48,10 +44,6 @@ Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
 
->[!NOTE]
->
->2.4.4용 확장 지원 보안 패치는 Adobe Commerce 고객만 사용할 수 있습니다. 이러한 패치는 Magento Open Source 코드 기반에 사용할 수 없습니다. [확장 지원](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)을 참조하세요.
-
 ### 알려진 문제
 
 #### 체크아웃 페이지가 static.min.js 및 mixins.min.js를 로드하지 못했습니다.
@@ -60,9 +52,7 @@ Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 ## 2.4.4-p15
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p15는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 확장 지원 보안 릴리스입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p15는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/kr/security/products/magento/apsb25-71.html)을 참조하십시오.
 
@@ -70,9 +60,7 @@ Adobe Commerce 2.4.4-p15는 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 ## 2.4.4-p14
 
-{{extended-support}}
-
-Adobe Commerce 2.4.4-p14는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 확장 지원 보안 릴리스입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p14는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/kr/security/products/magento/apsb25-50.html)을 참조하십시오.
 
@@ -93,8 +81,6 @@ Adobe Commerce 2.4.4-p14는 이전 릴리스 2.4.4에서 식별된 취약점에 
 * **비동기 작업**—이전 고객의 주문을 재정의하기 위한 제한된 비동기 작업입니다.<!-- AC-13917 -->
 
 ## 2.4.4-p13
-
-{{extended-support}}
 
 Adobe Commerce 2.4.4-p13 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 

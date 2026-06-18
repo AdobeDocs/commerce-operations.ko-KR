@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.6의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 95333e271e6f7a8e782d6a40b754fe29ac280414
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2398'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,15 @@ ht-degree: 0%
 >
 >MySQL 8.0은 2026년 4월 30일부터 EOS(지원 종료)에 도달합니다.
 >
->이 날짜 이후에 Adobe Commerce 2.4.6은 호환성을 제공하지 않거나>mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은>이 Adobe에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공합니다.>Commerce 릴리스 라인.
+>이 날짜 이후에 Adobe Commerce 2.4.6은 MySQL 8.0 이후에 릴리스된 MySQL 버전에 대한 호환성 또는 >지원을 제공하지 않습니다. Adobe은 이 Adobe>Commerce 릴리스 라인에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공하지 않습니다.>
 >
->버전 2.4.6을 실행하는 모든 Adobe Commerce 온-프레미스 고객은 강력합니다>데이터베이스 서버를 호환 가능한 MariaDB 버전으로 마이그레이션하는 것이 좋습니다.
+>버전 2.4.6을 실행하는 모든 Adobe Commerce 온-프레미스 고객은 데이터베이스 서버를 호환되는 MariaDB 버전으로 마이그레이션하는 것이 좋습니다>.
+>
+>Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../../lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
+>
+>Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../../lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../../lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
+>
+>클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../../version-upgrade-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../../lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 
 ## 2.4.6-p15
 

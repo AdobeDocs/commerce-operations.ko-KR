@@ -2,9 +2,9 @@
 title: 시스템 요구 사항
 description: Adobe Commerce에 대한 소프트웨어 종속성 및 시스템 요구 사항에 대해 알아봅니다. 배포 환경과의 호환성에 대해서는 테스트된 구성을 참조하십시오.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Commerce 릴리스 라인.
 버전 2.4.7, 2.4.6, 2.4.5, 2.4.4를 실행하는 모든 Adobe Commerce 온-프레미스 고객은 강력하게
 데이터베이스 서버를 호환 가능한 MariaDB 버전으로 마이그레이션하는 것이 좋습니다.
 
+Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../release/lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
+
 **Elasticsearch 7.17이 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 Elasticsearch 7 이후 릴리스된 모든 Elasticsearch 버전에 대한 지원. Adobe은
@@ -71,6 +73,10 @@ Commerce 릴리스 라인.
 다음 표에는 확장 지원에 포함된 Adobe Commerce 릴리스에 대한 시스템 요구 사항이 나와 있습니다. 이 테이블은 참조용으로만 제공됩니다. Adobe에서는 지원되지 않는 버전의 소프트웨어 종속성을 사용하는 것을 권장하지 않습니다. 지원 센터에서는 보고된 동작을 조사, 문제 해결 또는 확인하기 전에 환경을 지원되는 구성에 맞추어야 합니다.
 
 >[!NOTE]
+>
+>Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../release/lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../release/lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
+>
+>클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../release/version-upgrade-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../release/lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 >
 >이 문서의 길이를 최소화하기 위해 테이블이 축소됩니다. 확장할 헤더를 선택합니다.
 
@@ -98,6 +104,8 @@ mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은
 Commerce 릴리스 라인.
 버전 2.4.7, 2.4.6, 2.4.5, 2.4.4를 실행하는 모든 Adobe Commerce 온-프레미스 고객은 강력하게
 데이터베이스 서버를 호환 가능한 MariaDB 버전으로 마이그레이션하는 것이 좋습니다.
+
+Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../release/lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
 
 **Elasticsearch 7.17이 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나

@@ -3,7 +3,7 @@ title: 엔터프라이즈 참조 아키텍처
 description: Adobe의 최신 컴포저블 상거래 기술을 사용하여 Adobe Commerce을 구현하는 방법을 알아봅니다.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 0d0922b23bfe9152ef7f8b942b0e839a189e5abf
+source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Commerce은 성능, 규모 및 보안에 대한 엔터프라이즈 요구 사항
 
 다음 아키텍처 다이어그램은 Adobe Commerce과 모든 Adobe Experience Cloud 솔루션 간의 데이터 흐름을 보여 줍니다.
 
-![Adobe Commerce이 Experience Cloud 솔루션에 연결되는 방법을 보여 주는 아키텍처 다이어그램](../../assets/playbooks/commerce-architecture-v3.png){width="800" zoomable="yes"}
+![Adobe Commerce이 Experience Cloud 솔루션에 연결되는 방법을 보여 주는 아키텍처 다이어그램](../../assets/playbooks/commerce-architecture.png){width="800" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Commerce은 성능, 규모 및 보안에 대한 엔터프라이즈 요구 사항
 - [**기본 제공 가시성**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/performance)—여러 소스의 로그 데이터를 결합하여 사이트 성능을 관리하고 문제를 진단하는 데 도움이 되는 도구입니다.
 - 핵심 Commerce 애플리케이션을 타사 시스템과 통합하고 Commerce 기능을 확장하기 위한 [**포괄적인 API 적용 범위**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) 및 [REST](https://developer.adobe.com/commerce/webapi/rest) API
 
-## Experience Cloud과 통합
+## Experience Cloud와 통합
 
-Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 맞게 개인화된 상거래 경험을 제공합니다](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 맞는 개인화된 상거래 경험을](https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)제공합니다.
 
 [데이터 연결](https://experienceleague.adobe.com/ko/docs/commerce/data-connection/overview)은(는) 다른 Adobe Digital Experience 제품과 함께 모든 채널에서 개인화된 쇼핑 경험을 만들 수 있도록 쇼핑객의 구매 행동에 대한 통찰력을 잠금 해제합니다.
 

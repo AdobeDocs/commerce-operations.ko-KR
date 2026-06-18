@@ -1,7 +1,7 @@
 ---
-source-git-commit: d22f1c660ba2b6bdc507fa8ba728e0a4269bef8d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 ## 확장 지원을 위한 보안 패치 {#extended-support}
 
->[!NOTE]
->
->2.4.5용 확장 지원 보안 패치는 Adobe Commerce 고객만 사용할 수 있습니다. 이러한 패치는 Magento Open Source 코드 기반에 사용할 수 없습니다. [확장 지원](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)을 참조하세요.
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Commerce 전용 {#commerce-only}
 

@@ -2,10 +2,10 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 3%
+source-wordcount: '462'
+ht-degree: 2%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 3%
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">이전 버전과 호환 불가능한 변경 사항</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">보안 패치</a></li>
+            <li><a href="../../lifecycle-policy.md">소프트웨어 수명 주기 정책</a></li>
+            <li><a href="../../version-upgrade-enforcement-policy.md">클라우드 버전 업그레이드 시행 정책</a></li>
             <li><a href="https://helpx.adobe.com/kr/security/products/magento.html">Adobe 보안 공지</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ko">Adobe Commerce용 B2B</a></li>
           </ul>
