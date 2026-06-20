@@ -1,7 +1,7 @@
 ---
-source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
+source-git-commit: 4b59c6bdce39314fd188c8c811c4d9e3f46d6067
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3538'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 0%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 6월 18일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>클라우드 버전 업그레이드 적용 날짜, 지원 기간 정의(보안 전용 전환 기간 포함), 2.4.4-2.4.9에 대한 확장된 지원 종료 테이블, PHP PCI 지침 및 Adobe Commerce as a Cloud Service으로 마이그레이션하거나 PaaS에서 업그레이드하는 경로를 사용하여 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy">소프트웨어 수명 주기 정책</a>을(를) 업데이트했습니다.</p>
+</td>
+      <td>
+        주요 업데이트
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 6월 16일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce 2.4.9, 2.4.8 및 2.4.7의 Cloud 및 On-Prem에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 테이블에서 Composer의 버전을 2.10으로 업데이트했습니다.</p>
+</td>
+      <td>
+        기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 6월 15일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>최신 결제 서비스 v2.15.0 릴리스로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability#commerce-services">제품 가용성</a> 표를 업데이트했습니다.</p>
+</td>
+      <td>
+        주요 업데이트, 릴리스 정보
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a47aff5b5ae138748584cb5dbd646ca7b69e294a">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p>Cloud의 Commerce 템플릿에서 이제 각 릴리스 라인에 대한 최신 Commerce 버전과 호환되는 기본 서비스 구성을 제공함을 명확히 하기 위해 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">Commerce 시스템 요구 사항</a>을 업데이트했습니다.</p>
+</td>
+      <td>
+        피드백, 기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 6월 12일
 
@@ -729,30 +803,6 @@ ht-degree: 0%
         새 주제, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f14416d89140ee75ec437a42fbebae804282b72">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 4월 20일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><ul>
-  <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy">수명 주기 정책</a>이(가) 수정된 지원 종료 테이블, 확장 지원 범위로 업데이트되었으며 추가 보안 수정 프로비저닝 2.4.4 및 2.4.5에 대한 새 섹션이 추가되었습니다.<br />- Quality 패치 도구를 통해 격리된 보안 수정 필수 구성 요소 및 핫픽스/개별 패치 제공에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/versioning-policy">버전 관리 정책</a> 및 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule">릴리스 일정</a>이 업데이트되었습니다. 격리된 보안 수정 세부 정보를 공유 보안 패치 개요로 이동했습니다.<br />- 현재 일정에 맞게 2026 릴리스 일정을 새로 고쳤습니다.</li>
-</ul>
-</td>
-      <td>
-        기술, 주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">커밋</a></td>
     </tr>
   </tbody>
 </table>
