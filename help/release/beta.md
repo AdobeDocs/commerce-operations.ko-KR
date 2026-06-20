@@ -44,7 +44,7 @@ Adobe에서 제품 검색이 [!DNL Adobe Commerce]의 [!DNL Live Search] 및 [!D
 - 쿼리 시간에 가중치, 지능적인 순위 및 수동 규칙이 어떻게 결합되는지에 대한 명확한 기대치.
 - 변경 후 고가치 쿼리의 유효성 검사 및 부스트 규칙 조정에 대한 지침입니다.
 
-[Adobe Commerce Optimizer(SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching) 및 [라이브 검색(PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)에서 검색 일치 및 순위 전략에 대해 자세히 알아보세요.
+[Adobe Commerce Optimizer(SaaS)](https://experienceleague.adobe.com/ko/docs/commerce/optimizer/manage-results/search-relevance-matching) 및 [라이브 검색(PaaS)](https://experienceleague.adobe.com/ko/docs/commerce/live-search/live-search-admin/search-relevance-matching)에서 검색 일치 및 순위 전략에 대해 자세히 알아보세요.
 
 이 개인 Beta에 대한 초대를 요청하려면 [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)(으)로 전자 메일을 보내십시오. Adobe 팀이 다음 단계 및 자격 요구 사항에 응답합니다.
 

@@ -16,4 +16,4 @@ ht-degree: 0%
 >다음도 참조하십시오.
 >
 >- [소프트웨어 수명 주기 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
->- [클라우드 버전 업그레이드 시행 정책](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — 시행 날짜 및 필수 작업
+>- [클라우드 버전 업그레이드 시행 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — 시행 날짜 및 필수 작업
