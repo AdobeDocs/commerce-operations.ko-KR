@@ -2,9 +2,9 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,16 @@ ht-degree: 2%
 
 # Adobe Commerce 릴리스 노트
 
-다음 표를 사용하여 모든 Adobe Commerce 제품, 서비스 및 도구의 특정 릴리스와 관련된 릴리스 노트 및 중요 정보를 찾을 수 있습니다.
+아래 표는 Adobe Commerce 온 프레미스 및 Adobe Commerce 온 클라우드 제품, 서비스 및 도구에 대한 릴리스 정보와 중요한 정보를 제공합니다.
+
+>[!BEGINSHADEBOX]
+
+**다른 제품에 대한 릴리스 정보:**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/ko/docs/commerce/optimizer/release-notes)
+
+>[!ENDSHADEBOX]
 
 >[!TIP]
 >
