@@ -3,7 +3,7 @@ title: 정적 콘텐츠 서명 및 브라우저 캐시 무효화
 description: Adobe Commerce에서 정적 콘텐츠 서명이 작동하여 정적 리소스에 대한 브라우저 캐시를 무효화하는 방법에 대해 알아봅니다. 이 기능을 활성화하고 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud 및 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud 및 온-프레미스 프로젝트에만 적용됩니다."
 autotag-review: '2026-06-22T21:48:08.334Z'
 TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
 product_v2:
@@ -51,7 +51,7 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerce에서는 기본적으로 이 기능을 활성화하며, Adobe에서는 이전 정적 리소스를 제공하는 브라우저와 관련된 문제를 방지하기 위해 이 기능을 활성화한 상태로 유지하는 것이 좋습니다.
 
-정적 콘텐츠 서명에 대한 구성은 [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)에 있습니다.
+정적 콘텐츠 서명에 대한 구성은 [**[!UICONTROL Stores]**> 설정 > 구성 >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)에 있습니다.
 
 - **온-프레미스 전용**: 사이트가 [프로덕션 모드](../bootstrap/application-modes.md#production-mode)에서 **not**&#x200B;인 경우 이 구성을 사용할 수 있습니다.
 - **Cloud**: 이 구성은 프로덕션 모드가 엄격히 적용되기 때문에 숨겨져 있습니다. 따라서 아래 표시된 대로 명령줄을 사용해야 합니다.

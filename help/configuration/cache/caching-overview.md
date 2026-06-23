@@ -40,7 +40,7 @@ Adobe Commerce은 다중 계층 캐싱 아키텍처를 기반으로 데이터베
 
 ## 바니시를 사용한 전체 페이지 캐싱
 
-[바니시 캐시](config-varnish.md)는 메모리에 전체 페이지를 캐시하는 HTTP 가속기입니다. 온-프레미스 프로덕션 환경의 경우 기본 제공 전체 페이지 캐시보다 훨씬 빠르기 때문에 Adobe에서는 Vannish를 강력히 권장합니다. 클라우드 환경의 Commerce은 전체 페이지 캐싱에 바니시 대신 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용합니다.
+[바니시 캐시](config-varnish.md)는 메모리에 전체 페이지를 캐시하는 HTTP 가속기입니다. 온-프레미스 프로덕션 환경의 경우 기본 제공 전체 페이지 캐시보다 훨씬 빠르기 때문에 Adobe에서는 Vannish를 강력히 권장합니다. 클라우드 환경의 Commerce은 전체 페이지 캐싱에 바니시 대신 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용합니다.
 
 >[!NOTE]
 >

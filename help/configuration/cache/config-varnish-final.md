@@ -3,7 +3,7 @@ title: 바니시 구성 확인
 description: Adobe Commerce을 사용하여 Vanish 구성을 최종 확인하는 방법을 알아봅니다. 테스트 단계 및 문제 해결 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -98,4 +98,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)을 참조하십시오.
+>503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ko)을 참조하십시오.

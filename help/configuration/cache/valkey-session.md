@@ -3,7 +3,7 @@ title: 세션 저장소에 대한 유효성 검사 구성
 description: Adobe Commerce에서 세션 스토리지에 대한 Valkey를 구성하는 방법에 대해 알아봅니다. CLI 설정, 세션 매개 변수 및 연결 확인 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 autotag-review: '2026-06-22T21:59:49.664Z'
 TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
 product_v2:
