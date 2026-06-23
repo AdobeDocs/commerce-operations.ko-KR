@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
+source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ QPT v1.1.80에는 다음 패치가 포함됩니다.
 1. **ACP2E-4488**: 특성 집합이 큰 제품에 대해 [!UICONTROL Admin]에서 제품을 저장하거나 편집하는 데 속도가 느려지는 문제를 해결했습니다.
 1. **ACP2E-4493**: 비동기 인덱싱이 활성화된 경우 판매 주문 보관 그리드에 잘못된 주문 상태가 표시되는 문제가 해결되었습니다.
 1. **ACP2E-4496**: analytics cron 작업이 실행 중에 성능 저하를 일으켜 전체 시스템 성능이 향상되는 문제를 해결했습니다.
-1. **ACP2E-4533**: 스토어 코드가 URL에 포함되어 있을 때 자리 표시자 이미지가 Storefront에서 로드되지 않는 문제를 해결했습니다.
+1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: 스토어 코드가 URL에 포함되어 있을 때 자리 표시자 이미지가 상점 앞에 로드되지 않는 문제를 해결했습니다.
 1. **ACP2E-4552**: GraphQL 응답에서 회사 상태가 반환되지 않는 문제를 해결했습니다.
 1. **ACP2E-4610**: `sales_clean_quotes` cron 작업에 성능 문제가 있는 문제를 해결했습니다.
 1. **ACP2E-4615**: PayPal 오류로 인해 온라인 주문 환불이 실패하는 문제를 해결했습니다. *PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다.*.
