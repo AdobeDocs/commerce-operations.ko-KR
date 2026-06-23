@@ -8,9 +8,10 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # Redis 및 Valkey 서비스 구성에 대한 우수 사례
 
-이러한 권장 사항을 사용하여 Adobe Commerce 캐싱 및 세션에 대한 Redis 또는 Valkey를 구성합니다.
+이러한 권장 사항을 사용하여 클라우드에서 Adobe Commerce에 대한 Redis 또는 Valkey 캐싱 및 세션을 구성합니다. 온-프레미스 캐시 구성에 대해서는 [캐시 백 엔드 옵션 및 저장소 참조](../../../configuration/cache/cache-options.md)를 참조하세요.
 
 - L2 캐시 구성
 - 슬레이브 연결 활성화
@@ -30,11 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 인프라 환경의 Commerce에 대해 최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ko)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
+>최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=ko)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 ## L2 캐시 구성
 
 `.magento.env.yaml` 구성 파일에서 `REDIS_BACKEND` 또는 `VALKEY_BACKEND` 배포 변수를 설정하여 L2 캐시를 구성합니다.
+
+구현 세부 정보, 구성 예 및 배포별 지침은 성능 최적화를 위한 [L2 캐시 구성](https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/level-two-cache)을 참조하십시오.
 
 >[!BEGINTABS]
 
@@ -48,9 +51,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend) 구성 참조를 참조하십시오.
-
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Redis 페이지 캐싱 구성](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)을 참조하십시오.
+환경 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)을(를) 참조하십시오.
 
 >[!TAB Valkey 구성]
 
@@ -62,9 +63,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-클라우드 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 구성 참조를 참조하십시오.
-
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Valkey 구성](../../../configuration/cache/config-valkey.md)을(를) 참조하십시오.
+환경 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 구성 변수를 참조하십시오.
 
 >[!ENDTABS]
 
@@ -145,9 +144,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_use_slave_connection)을(를) 참조하십시오.
-
-Adobe Commerce 온-프레미스 설치의 경우 `bin/magento setup` 명령을 사용하여 새 Redis 캐시 구현을 구성합니다. _구성 가이드_&#x200B;에서 [기본 캐시에 Redis 사용](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)을 참조하십시오.
+환경 변수 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_use_slave_connection)을(를) 참조하십시오.
 
 >[!TAB Valkey 구성]
 
@@ -159,9 +156,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Commerce Cloud 인프라의 환경 구성에 대해서는 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#valkey_use_slave_connection)을(를) 참조하십시오.
-
-Adobe Commerce 온-프레미스 설치의 경우 `bin/magento setup` 명령을 사용하여 새 Valkey 캐시 구현을 구성합니다. _구성 가이드_&#x200B;에서 [Valkey 구성](../../../configuration/cache/config-valkey.md)을(를) 참조하십시오.
+환경 변수 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#valkey_use_slave_connection)을(를) 참조하십시오.
 
 >[!ENDTABS]
 
@@ -212,8 +207,6 @@ cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr 
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Redis 미리 로드 기능](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature)을 참조하세요.
-
 >[!TAB 키 미리 로드 키 구성]
 
 미리 로드 키가 `.magento.env.yaml` 구성 파일에 구성되어 있습니다.
@@ -252,8 +245,6 @@ cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr 
 ```terminal
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
-
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [Valkey 미리 로드 기능](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)을(를) 참조하십시오.
 
 >[!ENDTABS]
 
@@ -306,8 +297,6 @@ stage:
 >[!NOTE]
 >
 >`full_page` 캐시 형식은 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)을(를) 사용하므로 Cloud 인프라 프로젝트의 Adobe Commerce과 관련이 없습니다.
-
-온-프레미스 설치의 경우 _구성 가이드_&#x200B;에서 [오래된 캐시 옵션](../../../configuration/cache/level-two-cache.md#stale-cache-options)을 참조하세요.
 
 >[!WARNING]
 >
@@ -996,7 +985,6 @@ stage:
 
 다음 관련 항목을 참조하십시오.
 
-- [Redis 페이지 캐시](../../../configuration/cache/redis-pg-cache.md)
-- [세션 스토리지에 Redis 사용](../../../configuration/cache/redis-session.md)
-- [기본 캐시에 Valkey 사용](../../../configuration/cache/valkey-pg-cache.md)
-- [세션 저장소에 Valkey 사용](../../../configuration/cache/valkey-session.md)
+- [Redis 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [변수 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+

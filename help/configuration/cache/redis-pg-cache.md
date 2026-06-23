@@ -3,16 +3,36 @@ title: 기본 및 페이지 캐시에 대한 Redis 구성
 description: Adobe Commerce용 기본 및 페이지 캐시 백엔드로 Redis를 구성하는 방법에 대해 알아봅니다. CLI 명령, env.php 설정 및 연결 확인을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+autotag-review: '2026-06-22T21:55:53.227Z'
+TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: 1485
 ht-degree: 0%
 
 ---
 
 # 기본 및 페이지 캐시에 대한 Redis 구성
 
-Commerce은 Redis 페이지 및 기본 캐싱을 구성하는 명령줄 옵션을 제공합니다. `<Commerce-install-dir>app/etc/env.php` 파일을 편집하여 캐싱을 구성할 수 있지만 특히 초기 구성의 경우 명령줄이 권장되는 방법입니다. 명령줄은 구성이 문법적으로 올바른지 확인하기 위한 유효성 검사를 제공합니다.
+{{cloud-cache-config}}
+
+Commerce은 Redis 페이지 및 기본 캐싱을 구성하는 명령줄 옵션을 제공합니다. `<Commerce-install-dir>app/etc/env.php` 파일을 편집하여 캐싱을 구성할 수 있지만 특히 초기 구성의 경우 명령줄을 사용하는 것이 좋습니다. 명령줄에서 유효성 검사를 제공하여 구성이 문법적으로 정확한지 확인합니다.
 
 **필수 구성 요소:**
 
@@ -60,7 +80,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 
 - `--cache-backend-redis-<parameter>=<value>`은(는) 기본 캐싱을 구성하는 키-값 쌍의 목록입니다.
 
-| 명령줄 매개 변수 | 값 | 의미 | 기본값 |
+| 명령줄 매개 변수 | 값 | 의미 | 기본 값 |
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은(는) Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
 | `cache-backend-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
@@ -102,7 +122,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 
 - `--page-cache-redis-<parameter>=<value>`은(는) 페이지 캐싱을 구성하는 키 및 값 쌍의 목록입니다.
 
-| 명령줄 매개 변수 | 값 | 의미 | 기본값 |
+| 명령줄 매개 변수 | 값 | 의미 | 기본 값 |
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | server | 정규화된 호스트 이름, IP 주소 또는 UNIX 소켓에 대한 절대 경로입니다. 기본값 127.0.0.1은(는) Redis가 Commerce 서버에 설치되어 있음을 나타냅니다. | `127.0.0.1` |
 | `page-cache-redis-port` | 포트 | Redis 서버 수신 포트 | `6379` |
@@ -410,7 +430,7 @@ php -m | grep redis
 
 | 작업 | 프레디스 | 프프레디스 | 개선 사항 |
 |-----------|--------|----------|-------------|
-| 캐시 GET | 1-5ms | 0.5-2ms | 2~3배 더 빠름 |
+| 캐시 가져오기 | 1-5ms | 0.5-2ms | 2~3배 더 빠름 |
 | 캐시 집합 | 2-6ms | 0.8-2.5ms | 2~3배 더 빠름 |
 | 태그 작업 | 10-30ms | 3-10ms | 3~4배 빠름 |
 

@@ -3,16 +3,31 @@ title: 바니시 구성 및 사용
 description: Adobe Commerce에 대한 바니시 캐싱을 구성하고 사용하는 방법에 대해 알아봅니다. HTTP 가속, 파일 저장 및 성능 최적화 기술을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1077
 ht-degree: 0%
 
 ---
 
 # 바니시 구성 및 사용
 
-[Varnish Cache](https://www.varnish.org/)은(는) 오픈 소스 웹 응용 프로그램 가속기(_HTTP 가속기_ 또는 _HTTP 역방향 프록시 캐싱_)입니다. Vannish는 파일 또는 파일 조각을 메모리에 저장(또는 캐시)하여 향후 동등한 요청에 대한 응답 시간 및 네트워크 대역폭 사용을 줄일 수 있습니다. Apache 및 nginx와 같은 웹 서버와 달리 Varnish는 HTTP 프로토콜에서만 사용하도록 설계되었습니다.
+[Varnish Cache](https://www.varnish.org/)은(는) 오픈 소스 웹 응용 프로그램 가속기(_HTTP 가속기_ 또는 _HTTP 역방향 프록시 캐싱_)입니다. Vannish는 파일 또는 파일 조각을 메모리에 저장(또는 캐시)하여 향후 동등한 요청에 대한 응답 시간 및 네트워크 대역폭 사용을 줄일 수 있습니다. nginx와 같은 웹 서버와 달리 Varnish는 HTTP 프로토콜과 함께 독점적으로 사용하도록 설계되었습니다.
 
 [시스템 요구 사항](../../installation/system-requirements.md)은(는) 지원되는 버전의 바니시를 나열합니다.
 
@@ -53,9 +68,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 >[!NOTE]
 >
->- 언급된 경우를 제외하고 이 항목에서 `root` 권한이 있는 사용자로 설명한 모든 명령을 입력해야 합니다.
->
->- 이 항목은 CentOS 및 Apache 2.4의 Varnish용으로 작성되었습니다. 다른 환경에서 바니시를 설정하는 경우 일부 명령이 다를 수 있습니다. 자세한 내용은 Vanish 설명서 를 참조하십시오.
+>언급된 경우를 제외하고 이 항목에서 `root` 권한이 있는 사용자로 설명한 모든 명령을 입력해야 합니다.
 
 ## 알려진 문제
 
@@ -88,11 +101,10 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 ## 니스 캐싱 개요
 
-니스 캐싱은 다음을 사용하여 Commerce에서 작동합니다.
+일반적인 nginx 기반 배포에서 Varnish는 포트 80에서 들어오는 HTTP 트래픽을 수락하고 8080과 같은 백엔드 포트의 nginx에 요청을 전달합니다. Adobe Commerce은 원본 웹 서버에 대해 `nginx.conf.sample`을(를) 제공하고 관리자로부터 `default.vcl` 바니시를 생성합니다.
 
-- Magento 2 GitHub 저장소의 [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
-- Commerce에서 제공된 Apache용 `.htaccess` 분산 구성 파일
-- [관리자](../cache/configure-varnish-commerce.md)를 사용하여 생성된 Vannish에 대한 `default.vcl` 구성
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)이(가) Adobe Commerce에 제공됨
+- [관리자](../cache/configure-varnish-commerce.md)에서 생성된 `default.vcl`
 
 >[!INFO]
 >
@@ -114,7 +126,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 다음 그림은 브라우저 관리자를 사용하는 예를 보여 줍니다.
 
-![캐시 가능한 개체에 대해 처음으로 요청이 이루어지면 Vannish가 해당 개체를 브라우저에 전달합니다](../../assets/configuration/varnish-apache-first-visit.png)
+![캐시 가능한 개체에 대해 처음으로 요청이 이루어지면 Vannish가 해당 개체를 브라우저에 전달합니다](../../assets/configuration/varnish-webserver-first-visit.png)
 
 앞의 예제에서는 Storefront 기본 페이지(`m2_ce_my`)에 대한 요청을 보여 줍니다. CSS 및 JavaScript 자산은 클라이언트 브라우저에 캐시됩니다.
 
@@ -126,7 +138,7 @@ Varnish에 의해 캐시된 Assets은 구성 가능한 간격으로 만료되거
 
 동일한 브라우저가 동일한 페이지를 다시 요청하면 다음 그림과 같이 이러한 에셋이 로컬 브라우저 캐시에서 전달됩니다.
 
-![다음 번에 동일한 개체가 요청되면 로컬 브라우저 캐시에서 자산이 로드됩니다](../../assets/configuration/varnish-apache-second-visit.png)
+![다음 번에 동일한 개체가 요청되면 로컬 브라우저 캐시에서 자산이 로드됩니다](../../assets/configuration/varnish-webserver-second-visit.png)
 
 첫 번째 요청과 두 번째 요청 사이의 응답 시간 차이를 확인합니다. 다시 말하지만, 정적 자산은 처음으로 로컬 캐시에서 전달되므로 200(OK) 응답 코드가 있습니다.
 

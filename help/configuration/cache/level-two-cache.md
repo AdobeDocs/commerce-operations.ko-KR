@@ -3,9 +3,26 @@ title: 성능 최적화를 위한 L2 캐시 구성
 description: 네트워크 트래픽을 줄이고 성능을 개선하기 위해 Adobe Commerce에서 L2 캐시를 구성하는 방법에 대해 알아봅니다. 기존 및 Symfony 구현 옵션을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: 738
 ht-degree: 0%
 
 ---
@@ -28,9 +45,9 @@ Commerce은 해시된 데이터 버전을 원격 캐시에 저장하고, 일반 
 | [레거시(`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | 로컬 저장소용 `Cm_Cache_Backend_File`을(를) 사용하는 Zend 기반 두 수준 캐시 |
 | [최신(`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6 규정 준수 및 향상된 성능을 갖춘 Symfony 캐시 기반 L2 |
 
->[!INFO]
+>[!NOTE]
 >
->클라우드 인프라의 Adobe Commerce의 경우 L2 캐시 구성에 [변수 배포](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend)를 사용할 수 있습니다.
+>클라우드의 Adobe Commerce에 대해 `.magento.env.yaml`에서 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
 
 ## 기존 L2 캐시 구성(RemoteSynchronizedCache)
 
@@ -166,8 +183,6 @@ Adobe에서는 `default` 캐시 유형에 대해 `use_stale_cache` 옵션을 활
 ```
 
 ## 최신 Sympony L2 캐시 구현
-
-[!BADGE 2.4.9-베타]{type=Negative tooltip="2.4.9 베타 버전에서만 사용할 수 있습니다."}
 
 Commerce 2.4.9부터 Symfony 캐시 기반 L2 캐시 구현(`symfony_l2` 백엔드)을 사용할 수 있습니다. 이 구현은 최신 PSR-6 호환 캐싱 구현을 제공하며 기존 `RemoteSynchronizedCache`에 비해 상당한 성능 향상을 제공합니다.
 

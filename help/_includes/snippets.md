@@ -1,11 +1,23 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 # 코드 조각
+
+## Commerce on Cloud 캐시 구성 참고(참조) {#cloud-cache-config}
+
+>[!NOTE]
+>
+>클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오.
+
+## Commerce on Cloud Varnish 구성 참고(참조 포함) {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>Commerce 프로젝트가 클라우드에 배포된 경우 전체 페이지 캐싱은 바니시 대신 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용합니다. 이 섹션의 항목은 온-프레미스 설치에만 적용됩니다.
 
 ## Adobe 서비스 버전 지원 {#supported-versions-only}
 
