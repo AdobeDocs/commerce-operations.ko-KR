@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31322
 ht-degree: 0%
 
 ---
@@ -25,11 +21,26 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300**(Adobe Commerce >=2.4.5 &lt;2.4.9의 경우) - 관리에서 고객 그룹을 변경해도 Storefront에서 카탈로그 권한이 업데이트되지 않아 카탈로그 및 장바구니가 오래된 권한을 반영하는 문제가 해결되었습니다.
+* **ACP2E-4401**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 구성 가능한 제품을 사용하는 홈 페이지 링크의 예약된 업데이트 미리 보기가 제품 목록을 표시하는 대신 유지 관리 페이지로 리디렉션되는 문제를 수정합니다.
+* **ACP2E-4395**(Adobe Commerce >=2.4.5 &lt;2.4.9의 경우) - 글로벌 범위에 대해 금액이 지정되지 않은 경우 기프트 카드 API 제품 만들기에 오류가 표시되지 않는 문제를 수정합니다.
+* **ACP2E-4468**(Adobe Commerce >=2.4.8 &lt;2.4.9) - 웹 사이트 범위 권한이 있는 관리자가 배너 콘텐츠를 편집할 수 없는 문제를 해결했습니다.
+* **ACP2E-4630**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - 사용자 지정 옵션이 있는 긴 제품 이름이 여러 페이지의 송장, 배송, 대변 메모 및 페이지 나누기 후 PDF 반환에서 인접한 열 또는 항목과 겹쳐 라인 항목을 읽을 수 없는 문제를 해결했습니다.
+* **ACP2E-4680**(Adobe Commerce의 경우 B2B >=1.5.0 &lt;1.5.3) - 판매가 불가능하거나 삭제된 제품이 최종 협상 가능 견적에 표시되지 않는 문제를 해결합니다.
+* **ACP2E-4709**(Adobe Commerce >=2.4.7 &lt;2.4.9) - 페이지 빌더를 사용할 때 CMS 페이지가 저장되지 않는 문제를 해결합니다.
+* **ACP2E-4786**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 저장소 드라이버의 경로 확인이 잘못되어 AWS S3 원격 저장소가 구성되어 있을 때 제품 내보내기가 파일을 쓰지 못하는 문제를 해결했습니다.
+* **ACP2E-4801**(Adobe Commerce의 경우, B2B >=1.4.2 &lt;1.5.3) - 관리자의 협상 가능한 견적의 구성 단추를 통해 번들 제품 옵션 수량을 업데이트하는 것이 적용되지 않고 변경 사항이 삭제되는 문제를 해결합니다.
+* **ACP2E-4815**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.6-p15 &lt;2.4.7 || >=2.4.7-p1 &lt;2.4.9) - 로그에 PHP 예외를 발생시킨 여러 GraphQL 문제를 수정하고, GraphQL을 통해 주문 후 생성된 고객 계정과의 주문 연결을 수정하고, HTTP 사양을 통해 GraphQL과의 응답을 정렬합니다.
+* 업데이트된 버전: **ACSD-64212**, **ACSD-64523**, **ACSD-67347**
+* 대체된 패치: **ACSD-67941**, **ACSD-64212**, **ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
