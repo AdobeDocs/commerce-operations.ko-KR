@@ -3,21 +3,30 @@ title: 세션 스토리지에 대한 Redis 구성
 description: Adobe Commerce에서 세션 스토리지용 Redis를 구성하는 방법에 대해 알아봅니다. CLI 설정, 세션 매개 변수 및 연결 확인 기술을 살펴봅니다.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+autotag-review: '2026-06-22T21:56:59.687Z'
+TQID: 'https://experienceleague.adobe.com/deiikp11GlXtMJFkhT7DhgguCYFkplQgr2fYm8MMN7I'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: 859
 ht-degree: 1%
 
 ---
 
 # 세션 스토리지에 대한 Redis 구성
 
->[!IMPORTANT]
->
->계속하려면 [Redis를 설치](config-redis.md#install-redis)해야 합니다.
-
+{{cloud-cache-config}}
 
 Commerce은 이제 Redis 세션 저장소를 구성하는 명령줄 옵션을 제공합니다. 이전 릴리스에서는 `<Commerce install dir>app/etc/env.php` 파일을 편집했습니다. 명령줄은 유효성 검사를 제공하며 권장 구성 방법이지만 `env.php` 파일을 편집할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>세션 저장소를 구성하려면 [Redis가 설치](config-redis.md#install-redis)되어 있어야 합니다.
 
 `setup:config:set` 명령을 실행하고 Redis 관련 매개 변수를 지정하십시오.
 
@@ -31,7 +40,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 `--session-save-redis-<parameter_name>=<parameter_value>`은(는) 세션 저장소를 구성하는 매개 변수/값 쌍의 목록입니다.
 
-| 명령줄 매개 변수 | 매개 변수 이름 | 의미 | 기본값 |
+| 명령줄 매개 변수 | 매개 변수 이름 | 의미 | 기본 값 |
 |--- |--- |--- |--- |
 | session-save-redis-host | 호스트 | UNIX 소켓을 사용하는 경우 정규화된 호스트 이름, IP 주소 또는 절대 경로입니다. | localhost |
 | session-save-redis-port | 포트 | Redis 서버 수신 포트입니다. | 6379 |

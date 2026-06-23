@@ -2,9 +2,16 @@
 title: AWS ElastiCache를 사용하여 Redis 구성
 description: EC2에서 AWS ElastiCache를 Adobe Commerce용 Redis 백엔드로 사용하는 방법에 대해 알아봅니다. 명령줄 설정, 구성 및 유효성 검사를 살펴봅니다.
 feature: Configuration, Cache
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:54:39.355Z'
+TQID: 'https://experienceleague.adobe.com/p4-Pyc3yWwokyFOAyAjN3r1Ic26brx83bPf-GZQNSN8'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fbb1d92d5f8537e6f1436cd985af120114883df6
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 289
 ht-degree: 0%
 
 ---
@@ -16,7 +23,7 @@ Commerce 2.4.3부터 Amazon EC2에서 호스팅되는 인스턴스는 로컬 Red
 
 >[!WARNING]
 >
->이 섹션은 Amazon EC2 VPC에서 실행되는 Commerce 인스턴스에만 적용됩니다. 온-프레미스 설치에서는 작동하지 않습니다.
+>이 섹션은 Amazon EC2 VPC에서 실행되는 Commerce 인스턴스에만 적용됩니다.
 
 ## 사전 요구 사항
 

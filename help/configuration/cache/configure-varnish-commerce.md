@@ -3,14 +3,24 @@ title: Commerce에 대한 바니시 구성
 description: Adobe Commerce 애플리케이션에 특별히 Varnish를 구성하는 방법에 대해 알아봅니다. 구성 파일 업데이트 및 관리 기술을 살펴봅니다.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+autotag-review: '2026-06-22T21:51:51.247Z'
+TQID: 'https://experienceleague.adobe.com/6j-emNa41YXE1LLlpRypywTo8J95gI5aB4smuGnUj04'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: 455
 ht-degree: 0%
 
 ---
 
 # Commerce에 대한 바니시 구성
+
+{{varnish-config-cloud}}
 
 Vanish를 사용하도록 Commerce을 구성하려면 다음을 수행하십시오.
 
@@ -81,7 +91,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
    ```
 
    ```shell
-   service httpd restart
+   systemctl restart nginx
    ```
 
 ## 정적 파일 캐시
