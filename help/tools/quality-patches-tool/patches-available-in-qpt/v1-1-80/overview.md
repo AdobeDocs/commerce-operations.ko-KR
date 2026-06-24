@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 470
 ht-degree: 0%
 
 ---
@@ -28,7 +23,7 @@ ht-degree: 0%
 QPT v1.1.80에는 다음 패치가 포함됩니다.
 
 1. **ACP2E-4239**: 날짜 특성을 사용하는 관리자 그리드 필터가 선택한 날짜, 저장된 UTC 값 및 구성된 저장소 시간대 간의 시간대 차이로 인해 잘못된 결과를 반환하는 문제를 해결했습니다.
-1. **ACP2E-4472**: **[!UICONTROL Login as Customer]** 흐름 중에 null 따옴표가 만들어지는 문제를 해결했습니다.
+1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: **[!UICONTROL Login as Customer]** 흐름 동안 `quote` 데이터베이스 테이블에서 null 견적 레코드가 생성되는 문제를 해결합니다.
 1. **ACP2E-4481**: 주문이 취소된 후 번들 제품 판매량이 올바르게 계산되지 않는 문제를 해결했습니다.
 1. **ACP2E-4488**: 특성 집합이 큰 제품에 대해 [!UICONTROL Admin]에서 제품을 저장하거나 편집하는 데 속도가 느려지는 문제를 해결했습니다.
 1. **ACP2E-4493**: 비동기 인덱싱이 활성화된 경우 판매 주문 보관 그리드에 잘못된 주문 상태가 표시되는 문제가 해결되었습니다.
