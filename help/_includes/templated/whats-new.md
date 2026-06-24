@@ -193,7 +193,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 만료된 CAPTCHA 이미지가 시스템에서 제거되지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513에 대한 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다. 만료된 CAPTCHA 이미지가 시스템에서 제거되지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -209,7 +209,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: 부실 데이터가 있는 범주를 중복 브라우저 탭에 저장할 때 발생하는 순환 범주 종속성 </a>에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: 부실 데이터가 있는 범주를 중복 브라우저 탭에 저장할 때 발생하는 순환 범주 종속성 </a>에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -247,7 +247,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명 추가: 무료 배송 장바구니 가격 규칙은 배송 항목이 별도로 있는 고정 가격 번들 제품에 대해 재설정되지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명 추가: 무료 배송 장바구니 가격 규칙은 배송 항목이 별도로 있는 고정 가격 번들 제품에 대해 재설정되지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -277,7 +277,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528: 고객 주소 도시 유효성 검사가 슬래시(/)와 잘못된 문자(예: !, ", # 및 ?</a>)를 잘못 처리하는 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528: 고객 주소 도시 유효성 검사가 슬래시(/)와 잘못된 문자(예: !, ", # 및 ?</a>)를 잘못 처리하는 QPT 1.1.78 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -315,7 +315,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명 추가: 품절 번들 제품에 대해 가격별 주문 또는 필터가 작동하지 않음</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명 추가: 품절 번들 제품에 대해 가격별 주문 또는 필터가 작동하지 않음</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -331,7 +331,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명을 추가했습니다. 거래 가격 및 합계가 Google 태그</a>로 전송되지 않습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명을 추가했습니다. 거래 가격 및 합계가 Google 태그</a>로 전송되지 않습니다.</p>
 </td>
       <td>
         새 주제, qpt
