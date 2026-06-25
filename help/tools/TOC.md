@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+source-git-commit: f1c04fe69abdcdbb425d4488e3095baa2debc274
 workflow-type: tm+mt
-source-wordcount: '10196'
+source-wordcount: '10206'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: 결제 권한 부여 트랜잭션 자체 참조 parent_id를 다시 저장하고 무한 루프/OOM 트리거](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4653: 장바구니 가격 규칙 범주 범위 조건이  [!DNL REST] API에 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472: 고객으로 로그인 플로우를 사용하여 생성된 Null 견적](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808: 상점 내 측정 단위가 없는 제품 무게 표시](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: URL에 스토어 코드가 포함된 경우 자리 표시자 이미지가 스토어에서 로드되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
