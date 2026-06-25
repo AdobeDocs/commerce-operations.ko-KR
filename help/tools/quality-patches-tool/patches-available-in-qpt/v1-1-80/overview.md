@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 54099d0e9607799ea1ea17d8b5b0ea3c38c2d513
 workflow-type: tm+mt
-source-wordcount: 470
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -38,10 +33,8 @@ QPT v1.1.80에는 다음 패치가 포함됩니다.
 1. **ACP2E-4610**: `sales_clean_quotes` cron 작업에 성능 문제가 있는 문제를 해결했습니다.
 1. **ACP2E-4615**: PayPal 오류로 인해 온라인 주문 환불이 실패하는 문제를 해결했습니다. *PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다.*.
 1. **ACP2E-4626**: 일부 Storefront JavaScript 파일이 두 번 요청 및 실행되어 간헐적인 중복 로드와 불안정한 동작이 발생하는 문제를 해결했습니다.
-1. **ACP2E-4653**: REST API를 통해 규칙을 검색하거나 업데이트할 때 **[!UICONTROL Category (Parent Only)]** 및 **[!UICONTROL Category (Children Only)]**&#x200B;에 대한 **[!UICONTROL Cart Price Rule]** 조건 특성 범위가 노출되지 않는 문제를 해결했습니다.
+1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: [!DNL REST] API를 통해 규칙을 검색하거나 업데이트할 때 **[!UICONTROL Category (Parent Only)]** 및 **[!UICONTROL Category (Children Only)]**&#x200B;에 대한 장바구니 가격 규칙 조건 특성 범위가 노출되지 않는 문제를 해결했습니다.
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: storefront 제품 페이지의 Weight 속성에 구성된 측정 단위(lbs 또는 kgs) 없이 **[!UICONTROL Additional Information]** 또는 **[!UICONTROL More Information]** 섹션의 원시 숫자 값만 표시되는 문제를 해결합니다.
-1. **ACP2E-4156**: REST API의 배송 주소 유효성 검사가 [!UICONTROL Admin]에 정의된 특성 구성을 따르지 않는 문제를 해결했습니다.
-1. **ACP2E-4808**: storefront 제품 페이지의 Weight 속성에 구성된 측정 단위(lbs 또는 kgs) 없이 **[!UICONTROL Additional Information]** 또는 **[!UICONTROL More Information]** 섹션의 원시 숫자 값만 표시되는 문제를 해결합니다.
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: [!DNL REST] API의 배송 주소 유효성 검사가 Admin에 정의된 특성 구성을 따르지 않는 문제를 해결했습니다.
 1. **ACP2E-4813**: 체크아웃 시 USPS 배송 방법을 사용할 수 없으며 여러 패키지로 분할된 주문을 포함하여 특정 제품에 대한 배송 예상 가격이 올바르지 않은 문제를 해결했습니다.
 1. **ACSD-53502**: New Relic 모니터링 스크립트에 대한 재귀적 호출로 인해 iOS [!DNL Safari]의 상점 앞부분에서 **[!UICONTROL Add to Cart]**&#x200B;이(가) 간헐적으로 실패하여 페이지가 다시 로드되는 문제를 해결했습니다.
