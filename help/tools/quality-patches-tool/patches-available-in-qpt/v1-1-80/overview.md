@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +34,9 @@ QPT v1.1.80에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: 스토어 코드가 URL에 포함되어 있을 때 자리 표시자 이미지가 상점 앞에 로드되지 않는 문제를 해결했습니다.
 1. **ACP2E-4610**: `sales_clean_quotes` cron 작업에 성능 문제가 있는 문제를 해결했습니다.
 1. **ACP2E-4615**: PayPal 오류로 인해 온라인 주문 환불이 실패하는 문제를 해결했습니다. *PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다.*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: 일부 Storefront JavaScript 파일이 두 번 요청 및 실행되어 간헐적인 중복 로드와 불안정한 동작이 발생하는 문제를 해결했습니다.
+1. **ACP2E-4653**: REST API를 통해 규칙을 검색하거나 업데이트할 때 **[!UICONTROL Category (Parent Only)]** 및 **[!UICONTROL Category (Children Only)]**&#x200B;에 대한 **[!UICONTROL Cart Price Rule]** 조건 특성 범위가 노출되지 않는 문제를 해결했습니다.
+1. **ACP2E-4808**: storefront 제품 페이지의 Weight 속성에 구성된 측정 단위(lbs 또는 kgs) 없이 **[!UICONTROL Additional Information]** 또는 **[!UICONTROL More Information]** 섹션의 원시 숫자 값만 표시되는 문제를 해결합니다.
 1. **ACP2E-4626**: 일부 Storefront JavaScript 파일이 두 번 요청 및 실행되어 간헐적인 중복 로드와 불안정한 동작이 발생하는 문제를 해결했습니다.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: [!DNL REST] API를 통해 규칙을 검색하거나 업데이트할 때 **[!UICONTROL Category (Parent Only)]** 및 **[!UICONTROL Category (Children Only)]**&#x200B;에 대한 장바구니 가격 규칙 조건 특성 범위가 노출되지 않는 문제를 해결했습니다.
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: storefront 제품 페이지의 Weight 속성에 구성된 측정 단위(lbs 또는 kgs) 없이 **[!UICONTROL Additional Information]** 또는 **[!UICONTROL More Information]** 섹션의 원시 숫자 값만 표시되는 문제를 해결합니다.
