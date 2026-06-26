@@ -3,9 +3,9 @@ title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -170,6 +170,10 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 지원되는 Commerce 릴리스를 계속 사용하려면 지원되는 플랫폼 종속성도 필요합니다. Adobe은 Adobe Commerce에 대한 지원 기간이 3년이거나 연장된 상태에서 수명이 종료될 수 있는 MariaDB, OpenSearch, Redis, Valkey, RabbitMQ 등과 같은 타사 서비스 및 소프트웨어 종속성에 대한 보안 및 품질 수정 사항을 제공하지 않습니다. 자세한 내용은 [공유 권한 보안 및 운영 모델](../security-and-compliance/shared-responsibility.md)을 참조하세요.
 
 적극적으로 지원되는 버전에 대한 모든 타사 종속성 및 플랫폼 서비스를 유지 관리할 책임이 있습니다. 테스트 및 지원되는 타사 기술의 전체 목록은 [시스템 요구 사항](../installation/system-requirements.md)을 참조하십시오.
+
+>[!IMPORTANT]
+>
+>지원되지 않는 종속성 버전을 실행하면 Adobe에서 해결할 수 없는 클라우드 인스턴스의 보안 취약성이 발생할 수 있습니다. 이러한 경우 Adobe은 Adobe Commerce 버전 지원 상태에 관계없이 영향을 받는 소프트웨어 종속성을 업그레이드하거나 업그레이드할 수 없는 경우 인스턴스를 해제할 수 있는 권한을 보유합니다.
 
 ## PHP 수명 종료 및 PCI 규정 준수
 
