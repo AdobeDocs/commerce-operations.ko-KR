@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
 workflow-type: tm+mt
-source-wordcount: '10248'
+source-wordcount: '10293'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,10 @@ ht-degree: 0%
          - [ACP2E-4601: 결제 권한 부여 트랜잭션 자체 참조 parent_id를 다시 저장하고 무한 루프/OOM 트리거](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACSD-53502: **[!UICONTROL Add to Cart]**&#x200B;이(가) iOS에서 간헐적으로 실패합니다 [!DNL Safari] . New Relic 스크립트 재귀가 원인입니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
+         - [ACP2E-4813: 다중 패키지 주문에 대해 USPS 배송 방법을 사용할 수 없거나 잘못됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
+         - [ACP2E-4615: *PayPal 게이트웨이가 요청을 거부하므로 PayPal 온라인 주문 환불이 실패합니다. 내부 오류입니다.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
+         - [ACP2E-4610: `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md2` cron의 실행 속도가 느림](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626: Storefront JavaScript 파일이 두 번 로드되어 중복 로드 및 불안정한 동작이 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552: GraphQL 응답이 회사 상태를 반환하지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496: Analytics 크론 작업은 실행 중 성능을 저하합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
