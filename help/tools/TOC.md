@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: b5c22a88e9eb9c4e8122a853deee34a9521c263c
+source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
 workflow-type: tm+mt
-source-wordcount: '10303'
+source-wordcount: '10316'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: 결제 권한 부여 트랜잭션 자체 참조 parent_id를 다시 저장하고 무한 루프/OOM 트리거](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4239: 관리 그리드 날짜 필터가 시간대 불일치로 인해 결과를 반환하지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
          - [ACP2E-4481: 주문 취소 후 번들 제품 판매성이 잘못 계산됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502: **[!UICONTROL Add to Cart]**&#x200B;이(가) iOS에서 간헐적으로 실패합니다 [!DNL Safari] . New Relic 스크립트 재귀가 원인입니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813: 다중 패키지 주문에 대해 USPS 배송 방법을 사용할 수 없거나 잘못됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
