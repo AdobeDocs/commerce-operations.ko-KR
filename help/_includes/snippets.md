@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: 15314bbcb5c2bdccf92901235f7d07e1770955d9
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오. Redis 캐시는 Adobe Commerce 2.4.9 이상, 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 이상 및 2.4.8-p5 릴리스 라인을 통한 패치 릴리스에서 지원되지 않습니다. Redis가 지원되지 않는 캐시 구성에 Valkey를 사용합니다. 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements)을 참조하십시오.
+>클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오. Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis가 지원되지 않는 캐시 구성에 Valkey를 사용합니다. 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements)을 참조하십시오.
 
 ## Commerce on Cloud Varnish 구성 참고(참조 포함) {#varnish-config-cloud}
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Adobe은 모든 종속성 및 서비스의 지원되는 버전을 실행하는 배포에 대해서만 지원을 제공합니다. 이는 다음 경우에 적용됩니다.
 >
->* **플랫폼 서비스**(PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ 및 Nginx를 포함하지만 이에 국한되지 않음) - 판매자는 배포된 Adobe Commerce 릴리스와 호환되는 버전을 유지해야 합니다. [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)을 참조하세요.
+>* **플랫폼 서비스**(PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ 및 Nginx를 포함하지만 이에 국한되지 않음) - 판매자는 배포된 Adobe Commerce 릴리스와 호환되는 버전을 유지해야 합니다. [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko)을 참조하세요.
 >* **Commerce 서비스 확장**(Live Search, 제품 추천 및 결제 서비스 포함, 이에 국한되지 않음) - 최신 릴리스 버전만 지원됩니다.
 >* **사용자 지정 확장 및 타사 통합** - 판매자는 공급업체가 지원하는 버전에 이러한 확장이 유지되도록 해야 합니다.
 >
