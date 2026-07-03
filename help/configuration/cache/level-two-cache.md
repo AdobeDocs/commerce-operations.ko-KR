@@ -3,26 +3,16 @@ title: 성능 최적화를 위한 L2 캐시 구성
 description: 네트워크 트래픽을 줄이고 성능을 개선하기 위해 Adobe Commerce에서 L2 캐시를 구성하는 방법에 대해 알아봅니다. 기존 및 Symfony 구현 옵션을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -47,7 +37,7 @@ Commerce은 해시된 데이터 버전을 원격 캐시에 저장하고, 일반 
 
 >[!NOTE]
 >
->클라우드의 Adobe Commerce에 대해 `.magento.env.yaml`에서 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
+>클라우드의 Adobe Commerce에 대해 `.magento.env.yaml`에서 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
 
 ## 기존 L2 캐시 구성(RemoteSynchronizedCache)
 
@@ -185,6 +175,10 @@ Adobe에서는 `default` 캐시 유형에 대해 `use_stale_cache` 옵션을 활
 ## 최신 Sympony L2 캐시 구현
 
 Commerce 2.4.9부터 Symfony 캐시 기반 L2 캐시 구현(`symfony_l2` 백엔드)을 사용할 수 있습니다. 이 구현은 최신 PSR-6 호환 캐싱 구현을 제공하며 기존 `RemoteSynchronizedCache`에 비해 상당한 성능 향상을 제공합니다.
+
+>[!NOTE]
+>
+>이 기능은 현재 Adobe Commerce On Premise 2.4.9 고객만 사용할 수 있습니다. 그리고 2026년 7월 말 Adobe Commerce On Cloud에 대해 활성화될 예정입니다.&quot;
 
 ### Symfony L2 캐시의 이점
 
