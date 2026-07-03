@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -185,6 +185,10 @@ Adobe에서는 `default` 캐시 유형에 대해 `use_stale_cache` 옵션을 활
 ## 최신 Sympony L2 캐시 구현
 
 Commerce 2.4.9부터 Symfony 캐시 기반 L2 캐시 구현(`symfony_l2` 백엔드)을 사용할 수 있습니다. 이 구현은 최신 PSR-6 호환 캐싱 구현을 제공하며 기존 `RemoteSynchronizedCache`에 비해 상당한 성능 향상을 제공합니다.
+
+>[!NOTE]
+>
+>이 기능은 현재 Adobe Commerce On Premise 2.4.9 고객만 사용할 수 있습니다. 그리고 2026년 7월 말 Adobe Commerce On Cloud에 대해 활성화될 예정입니다.&quot;
 
 ### Symfony L2 캐시의 이점
 

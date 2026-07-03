@@ -2,10 +2,10 @@
 user-guide-title: 구성 안내서
 user-guide-description: Adobe Commerce 애플리케이션 기능 및 서비스를 구성합니다.
 feature: Configuration
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 1%
       + [환경 변수 사용](deployment/example-environment-variables.md)
 + 캐시 {#cache}
    + [캐싱 개요](cache/caching-overview.md)
-   + [캐시 프론트엔드 구성](cache/cache-types.md)
+   + [캐시 프론트엔드 및 유형 구성](cache/cache-types.md)
    + [캐시 백엔드 옵션](cache/cache-options.md)
    + [L2 캐시 구성](cache/level-two-cache.md)
    + 레디스 {#redis}

@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe Commerce은 다중 계층 캐싱 아키텍처를 기반으로 데이터베
 
 ## 캐싱 프론트엔드
 
-캐시 프론트엔드는 Commerce과 캐시 스토리지 백엔드 간의 인터페이스입니다. 각각 다른 백엔드 설정을 사용하는 여러 프론트엔드를 정의한 다음 각 프론트엔드에 특정 [캐시 유형](../cli/manage-cache.md#clean-and-flush-cache-types)을(를) 할당할 수 있습니다.  구성에 대한 자세한 내용은 [캐시 프론트엔드 구성](cache-types.md)을 참조하십시오.
+캐시 프론트엔드는 Commerce과 캐시 스토리지 백엔드 간의 인터페이스입니다. 각각 다른 백엔드 설정을 사용하는 여러 프론트엔드를 정의한 다음 각 프론트엔드에 특정 [캐시 유형](../cli/manage-cache.md#clean-and-flush-cache-types)을(를) 할당할 수 있습니다. 구성에 대한 자세한 내용은 [캐시 프론트엔드 및 형식 구성](cache-types.md)을 참조하십시오.
 
 ## 백 엔드 캐싱
 
@@ -74,7 +74,7 @@ Adobe Commerce은 다중 계층 캐싱 아키텍처를 기반으로 데이터베
 
 자세한 내용은 다음을 참조하십시오.
 
-- [캐시 프론트엔드 구성](cache-types.md)—캐시 프론트엔드를 특정 캐시 형식과 연결합니다.
+- [캐시 프런트 엔드와 형식 구성](cache-types.md)—캐시 프런트 엔드를 특정 캐시 형식과 연결합니다.
 - [캐시 백 엔드 옵션](cache-options.md)—백 엔드 옵션 참조
 
 **클라우드의 Adobe Commerce**—`.magento.env.yaml`에서 `CACHE_CONFIGURATION`을(를) 사용하여 캐싱을 구성합니다. [Redis 및 Valkey 서비스 구성에 대한 모범 사례](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)를 참조하세요.
