@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: PayPal 온라인 주문 환불이 실패하고 오류 "PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다."</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: PayPal 온라인 주문 환불이 실패하고 오류 "PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다."</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -47,7 +47,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. USPS 배송 방법을 사용할 수 없거나 다중 패키지 주문에 적합하지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. USPS 배송 방법을 사용할 수 없거나 다중 패키지 주문에 적합하지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -55,7 +55,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: sales_clean_quotes cron</a>의 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: sales_clean_quotes cron</a>의 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
