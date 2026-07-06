@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
 source-wordcount: 593
 ht-degree: 0%
@@ -27,11 +22,11 @@ ht-degree: 0%
 
 QPT v1.1.80에는 다음 패치가 포함됩니다.
 
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)**: 비동기 인덱싱이 활성화된 경우 판매 주문 보관 그리드에 잘못된 주문 상태가 표시되는 문제가 해결되었습니다.
 1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)**: 선택한 날짜, 저장된 [!DNL UTC] 값 및 구성된 저장소 표준 시간대 간의 표준 시간대 불일치로 인해 날짜 특성을 사용하는 관리자 그리드 필터가 결과를 반환하지 않는 문제를 해결했습니다.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: 주문 취소 후 번들 제품 판매성이 잘못 계산되는 문제를 해결했습니다.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: **[!UICONTROL Login as Customer]** 흐름 동안 `quote` 데이터베이스 테이블에서 null 견적 레코드가 생성되는 문제를 해결합니다.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: 특성 집합이 큰 제품에 대해 Admin에서 제품을 저장하거나 편집하는 것이 느려지는 문제를 해결했습니다.
-1. **ACP2E-4493**: 비동기 인덱싱이 활성화된 경우 판매 주문 보관 그리드에 잘못된 주문 상태가 표시되는 문제가 해결되었습니다.
 1. **ACP2E-4496**: analytics cron 작업이 실행 중에 성능 저하를 일으켜 전체 시스템 성능이 향상되는 문제를 해결했습니다.
 1. **ACP2E-4533**: 스토어 코드가 URL에 포함되어 있을 때 자리 표시자 이미지가 Storefront에서 로드되지 않는 문제를 해결했습니다.
 1. **ACP2E-4552**: GraphQL 응답에서 회사 상태가 반환되지 않는 문제를 해결했습니다.
