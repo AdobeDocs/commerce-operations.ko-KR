@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
 workflow-type: tm+mt
-source-wordcount: 31322
+source-wordcount: 31872
 ht-degree: 0%
 
 ---
@@ -25,15 +21,36 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
 
+## v1.1.82 {#v1-1-82}
+
+* **ACP2E-4194**(Adobe Commerce 및 Magento Open Source의 경우) >=2.4.7-p10 &lt;2.4.8 || >=2.4.8-p5 &lt;2.4.9) - GraphQL 응답이 잘못되었거나, 승인되지 않았거나, 잘못된 형식의 요청에 대해 잘못된 HTTP 상태 코드를 반환하는 문제를 해결합니다.
+* **ACP2E-4547**(Adobe Commerce의 경우, B2B >=1.5.0 &lt;1.5.3) - 관리자가 관리자의 &#39;SKU별 제품 추가&#39;를 사용하여 표준 카탈로그의 제품을 공유 카탈로그에 연결되지 않은 고객 그룹에 할당된 회사의 협상 가능 견적에 추가할 수 없는 문제를 해결했습니다.
+* **ACP2E-4593**(Adobe Commerce >=2.4.5 &lt;2.4.10) - 다중 웹 사이트 배포의 보조 웹 사이트에서 웹 사이트 제한에 대해 표시되는 CMS 페이지가 잘못될 수 있는 문제를 해결했습니다.
+* **ACP2E-4682**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 견적 `isActive` 상태를 확인하는 상점 페이지를 방문하면 페이지가 로드될 때마다 빈 견적 레코드가 생성되는 문제를 해결합니다.
+* **ACP2E-4695**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 카탈로그 규칙 인덱서가 과도한 메모리를 사용하고 완료하지 못하여 불안정 및 메모리 부족 오류가 발생하는 문제를 해결했습니다.
+* **ACP2E-4698**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7-p9 &lt;2.4.8 || >=2.4.8-p4 &lt;2.4.9) - Page Builder 텍스트 콘텐츠에서 이미지를 다시 편집하면 이식 가능한 미디어 지시문을 유지하는 대신 절대 미디어 URL을 저장할 수 있는 문제를 해결했습니다.
+* **ACP2E-4748**(Adobe Commerce >=2.4.7 &lt;2.4.9) - 보상 포인트 기록이 큰 스토어에서 보상 포인트 만료가 느리게 처리되어 보상 포인트 만료가 지연되는 문제를 수정합니다.
+* **ACP2E-4797**(Adobe Commerce >=2.4.8 &lt;2.4.9의 경우) - 데이터베이스가 utf8mb4를 지원하도록 구성된 경우에도 관리자의 WYSIWYG 편집기 또는 Page Builder 컨텐츠에 4바이트 유니코드 문자를 입력할 수 없는 문제를 해결했습니다.
+* **ACP2E-4799**(Adobe Commerce의 경우, B2B >=1.5.0 &lt;1.5.3) - `requisition_lists` GraphQL 쿼리가 쿼리 기준과 일치하는 총 구매요청 목록 수 대신 현재 페이지의 항목 수만 반영하는 &#39;total_count&#39; 값을 반환하는 문제를 해결했습니다.
+* **ACP2E-4805**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 첫 번째 판매 가능한 하위 제품이 목록에 늦게 나타날 때 많은 하위 제품이 있는 구성 가능한 제품에 대해 체크아웃 API 요청이 상당히 느려질 수 있는 문제를 해결했습니다.
+* **ACP2E-4840**(Adobe Commerce 및 Magento Open Source >=2.4.8 &lt;2.4.9) - &#39;products&#39; GraphQL 쿼리에서 요청한 수량 값이 null을 반환하는 문제를 수정합니다.
+* **ACP2E-4870**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 제품 알림 전자 메일 알림이 스토어 보기 전자 메일 설정을 무시하는 문제를 해결했습니다.
+* **ACP2E-4875**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 관리자에서 큰 주소록이 있는 고객 계정을 보는 경우 예기치 않게 관리자 사용자를 로그아웃할 수 있는 문제를 해결했습니다.
+* **ACP2E-4894**(Adobe Commerce >=2.4.7 &lt;2.4.9) - 대량 저장소에서 비동기 인덱싱이 활성화된 경우 새 주문이 Admin Order Management 그리드에 표시되는 데 지연되는 문제를 수정합니다.
+* **ACP2E-4981**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 페이지 빌더 제품 회전 메뉴에 잘못된 범주 위치 순서로 제품이 표시되고 일치하는 하위 제품이 개별적으로 표시될 때 구성 가능한 제품이 포함되는 문제를 해결했습니다.
+* 업데이트된 버전: **ACSD-45255**, **ACSD-50849**
+* 대체된 패치: **ACSD-49970-V3**, **ACSD-50260-V2**, **ACSD-54966**, **ACSD-63325**, **ACSD-64212**, **ACSD-66865**, **ACSD-69237**
+* 사용되지 않는 패치: **ACP2E-4815**
+
 ## v1.1.81 {#v1-1-81}
 
-* **ACP2E-4300**(Adobe Commerce >=2.4.5 &lt;2.4.9의 경우) - 관리에서 고객 그룹을 변경해도 Storefront에서 카탈로그 권한이 업데이트되지 않아 카탈로그 및 장바구니가 오래된 권한을 반영하는 문제가 해결되었습니다.
+* **ACP2E-4300**(Adobe Commerce >=2.4.5 &lt;2.4.9의 경우) - 관리에서 고객 그룹을 변경해도 상점 첫 화면에서 카탈로그 권한이 업데이트되지 않아 카탈로그 및 장바구니가 오래된 권한을 반영하는 문제가 해결되었습니다.
 * **ACP2E-4401**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 구성 가능한 제품을 사용하는 홈 페이지 링크의 예약된 업데이트 미리 보기가 제품 목록을 표시하는 대신 유지 관리 페이지로 리디렉션되는 문제를 수정합니다.
 * **ACP2E-4395**(Adobe Commerce >=2.4.5 &lt;2.4.9의 경우) - 글로벌 범위에 대해 금액이 지정되지 않은 경우 기프트 카드 API 제품 만들기에 오류가 표시되지 않는 문제를 수정합니다.
 * **ACP2E-4468**(Adobe Commerce >=2.4.8 &lt;2.4.9) - 웹 사이트 범위 권한이 있는 관리자가 배너 콘텐츠를 편집할 수 없는 문제를 해결했습니다.
@@ -58,7 +75,7 @@ ht-degree: 0%
 * **ACP2E-4552**(Adobe Commerce의 경우 B2B >=1.5.0 &lt;1.5.3) - GraphQL 응답에서 회사 상태가 반환되지 않는 문제를 수정합니다.
 * **ACP2E-4610**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.9) - sales_clean_quotes cron 작업에 성능 문제가 있는 문제를 수정합니다.
 * **ACP2E-4615**(Adobe Commerce의 경우 >=2.4.4-p13 &lt;2.4.4-p17) || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9) - &quot;PayPal 게이트웨이가 요청을 거부합니다.&quot;라는 PayPal 오류가 발생하여 온라인 주문 환불이 실패하는 문제를 수정합니다. 내부 오류...
-* **ACP2E-4626**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.9) - 일부 Storefront JavaScript 파일이 두 번 요청 및 실행되어 간헐적인 중복 로드와 불안정한 동작이 발생하는 문제를 해결합니다.
+* **ACP2E-4626**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.9) - 일부 storefront JavaScript 파일이 두 번 요청 및 실행되어 간헐적인 중복 로드와 불안정한 동작이 발생하는 문제를 해결합니다.
 * **ACP2E-4653**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - REST API를 통해 규칙을 검색하거나 업데이트할 때 &quot;범주(상위 전용)&quot; 및 &quot;범주(하위 전용)&quot;에 대한 장바구니 가격 규칙 조건 특성 범위가 노출되지 않는 문제를 해결했습니다.
 * **ACP2E-4808**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.10) - 상점 제품 페이지의 Weight 속성에 구성된 측정 단위(lbs 또는 kgs) 없이 &quot;추가 정보&quot; 또는 &quot;추가 정보&quot; 섹션의 원시 숫자 값만 표시되는 문제를 해결합니다.
 * **ACP2E-4156**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - REST API의 배송 주소 유효성 검사가 관리자에 정의된 특성 구성을 준수하지 않는 문제를 해결합니다.
@@ -435,8 +452,7 @@ ht-degree: 0%
 * **ACSD-61805**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - [!DNL REST API]을(를) 통해 미납 주문 상태를 업데이트한 후 스토어에서 제품이 품절 상태로 유지되는 문제를 해결했습니다.
 * **ACSD-60811**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 현재 상태가 *처리 중* 또는 *사기*&#x200B;인 경우에만 사용자 지정 값 또는 댓글로 주문 상태를 업데이트할 수 있는 문제를 해결했습니다.
 * **ACSD-62952**(Adobe Commerce >=2.4.4 &lt;2.4.8) - [!UICONTROL Gift Registry] 날짜가 상점 앞에 잘못 표시되는 문제를 해결했습니다.
-* **ACSD-55339**(Adobe Commerce >=2.4.4 &lt;2.4.8) - &quot;0&quot;(영)으로 시작하는 제품 [!DNL SKU]에서 &quot;0&quot;이 제거되어 견적이 업데이트되지 않는 문제가 해결되었습니다.
-**
+* **ACSD-55339**(Adobe Commerce >=2.4.4 &lt;2.4.8) - &quot;0&quot;(영)으로 시작하는 제품 [!DNL SKU]에서 &quot;0&quot;이 제거되어 견적이 업데이트되지 않는 문제가 해결되었습니다.**
 * 업데이트된 패치: **ACSD-59514**
 * 업데이트된 버전: **ACSD-60816**
 * 대체된 패치: **ACSD-59967**
