@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-10T16:37:59.584Z'
 TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f73ca9edd0af3cfb0975eb4b13eabc78c20c340e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: aeb532d2e065787e1b23781a50808031e5a5d4ce
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -36,6 +31,5 @@ QPT v1.1.81에는 다음 패치가 포함됩니다.
 1. **ACP2E-4709**: 페이지 빌더를 사용할 때 CMS 페이지를 저장하지 못하는 문제를 해결했습니다.
 1. **ACP2E-4786**: 저장소 드라이버의 잘못된 경로 확인으로 인해 AWS S3 원격 저장소가 구성된 경우 제품 내보내기가 파일을 쓰지 못하는 문제를 해결했습니다.
 1. **ACP2E-4801**: [!UICONTROL Admin]에서 협상 가능한 견적의 [!UICONTROL Configure] 단추를 통해 번들 제품 옵션 수량을 업데이트하는 것이 적용되지 않고 변경 사항이 삭제되는 문제를 해결했습니다.
-1. **ACP2E-4815**: 로그에 PHP 예외를 발생시킨 여러 GraphQL 문제를 수정하고, GraphQL을 통해 주문 후 만들어진 고객 계정과의 주문 연결을 수정하고, HTTP 사양에 따라 GraphQL을 사용한 응답을 조정합니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
