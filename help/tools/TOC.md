@@ -2,9 +2,9 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
+source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
 workflow-type: tm+mt
-source-wordcount: '10330'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -1024,6 +1024,8 @@ ht-degree: 0%
          - [ACP2E-4808: 상점 내 측정 단위가 없는 제품 무게 표시](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: URL에 스토어 코드가 포함된 경우 자리 표시자 이미지가 스토어에서 로드되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] API 배송 주소 유효성 검사가 관리자 특성 구성을 무시합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
+      - v1.1.81 {#v1-1-81}
+         - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
