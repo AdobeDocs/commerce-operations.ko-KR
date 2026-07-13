@@ -6,7 +6,7 @@ role: Admin
 exl-id: 90047f6e-d90a-4980-9700-84c44f2b8494
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 문제
 
-[!DNL New Relic]Adobe Commerce에 대한 관리 경고[에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 &#x200B;](managed-alerts-for-magento-commerce.md)에서 관리 경고를 받게 됩니다. 이러한 경고는 지원 및 엔지니어링의 인사이트를 사용하여 고객에게 표준 세트를 제공하기 위해 Adobe에서 개발했습니다.
+[Adobe Commerce에 대한 관리 경고](managed-alerts-for-magento-commerce.md)에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 [!DNL New Relic]에서 관리 경고를 받게 됩니다. 이러한 경고는 지원 및 엔지니어링의 인사이트를 사용하여 고객에게 표준 세트를 제공하기 위해 Adobe에서 개발했습니다.
 
 <u> **실행!** </u>
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 1. [[!DNL New Relic] APM의 인프라 페이지](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/)를 사용하여 메모리 사용량이 가장 많은 프로세스를 식별합니다. 단계는 [[!DNL New Relic] 인프라 모니터링 호스트 페이지: 프로세스 탭](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes)을 참조하십시오.
    * [!DNL Redis], MySQL 또는 PHP와 같은 서비스가 메모리 사용의 최상위 소스인 경우 다음을 시도해 보십시오.
-1. 최신 버전을 사용하고 있는지 확인합니다. 최신 버전은 경우에 따라 메모리 누수를 해결할 수 있습니다. 최신 버전을 사용하고 있지 않다면 업그레이드를 고려해 보십시오. 단계는 Commerce on Cloud Guide의 [서비스 변경](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=ko)을 참조하세요.
+1. 최신 버전을 사용하고 있는지 확인하십시오. 최신 버전은 경우에 따라 메모리 누수를 해결할 수 있습니다. 최신 버전을 사용하고 있지 않다면 업그레이드를 고려해 보십시오. 단계는 Commerce on Cloud Guide의 [서비스 변경](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=ko)을 참조하세요.
 1. 서비스 관련 문제가 버전과 관련이 없는 경우 다음을 시도해 보십시오.
 1. **MySQL**: 오래 실행되는 쿼리, 기본 키가 정의되지 않음 및 중복 인덱스와 같은 문제가 있는지 확인하십시오. 단계는 Commerce 구현 플레이북의 [클라우드 인프라에서 Adobe Commerce의 가장 일반적인 데이터베이스 문제](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=ko)를 참조하십시오.
 1. **[!DNL Redis]**: [!DNL Redis]이(가) 메모리 사용량의 최상위 소스인 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).

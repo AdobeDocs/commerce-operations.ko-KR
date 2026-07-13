@@ -5,7 +5,7 @@ exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 | [Adobe 보안 알림 서비스](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Adobe 보안 알림을 구독합니다. |
 | [Commerce 사이트 및 인프라 보안](security-best-practices.md) | Commerce 설치의 보안 태세를 강화하여 무단 액세스 및 사이버 공격으로부터 Commerce 상점, 관리, 인프라 및 데이터를 보호합니다. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=ko) | 등록된 고객이 시작한 관리자 액세스 및 다양한 상점 내 작업에 대해 Google reCAPTCHA를 구성합니다. |
-| [웹 크롤러 구성](robots-txt.md) | Adobe Commerce 사이트에 대한 지침을 웹 크롤러에 전달합니다. |
+| [웹 웹 크롤러 구성](robots-txt.md) | 웹 웹 크롤러에게 Adobe Commerce 사이트에 대한 지침을 전달합니다. |
 | [보안 구성 확인](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=ko) | 클라우드 인프라 사이트에서 Adobe Commerce을 시작하기 전에 체크리스트 항목을 검토하십시오. |
 
 ## 성능 모니터링

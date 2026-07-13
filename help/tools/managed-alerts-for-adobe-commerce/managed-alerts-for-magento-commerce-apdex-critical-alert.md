@@ -1,19 +1,19 @@
 ---
 title: 'Adobe Commerce에 대한 관리 경고: [!DNL Apdex] 중요 경고'
-description: 이 문서에서는  [!DNL Apdex] 점수에서 Adobe Commerce에 대한  [!DNL New Relic]. The [!DNL Apdex] 중요 경고를 받으면 웹 응용 프로그램 및 서비스의 응답 시간에 대한 사용자의 만족도를 측정하는 문제 해결 단계를 제공합니다. 문제를 해결하기 위해 즉각적인 조치가 필요합니다.
+description: 이 문서에서는  [!DNL New Relic]. The [!DNL Apdex] 점수에서 Adobe Commerce에 대한  [!DNL Apdex] 중요 경고를 받으면 웹 응용 프로그램 및 서비스의 응답 시간에 대한 사용자의 만족도를 측정하는 문제 해결 단계를 제공합니다. 문제를 해결하기 위해 즉각적인 조치가 필요합니다.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 00e29611-fd4b-45c8-a1e0-56fc3cbe90e0
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce에 대한 관리 경고: [!DNL Apdex] 중요 경고
 
-이 문서에서는 [!DNL Apdex]에서 Adobe Commerce에 대한 [!DNL New Relic] 중요 알림을 받을 때의 문제 해결 단계를 제공합니다. [!DNL Apdex] 점수는 웹 응용 프로그램 및 서비스의 응답 시간에 대한 사용자의 만족도를 측정합니다. 문제를 해결하기 위해 즉각적인 조치가 필요합니다. 선택한 경고 알림 채널에 따라 경고는 다음과 같이 표시됩니다.
+이 문서에서는 [!DNL New Relic]에서 Adobe Commerce에 대한 [!DNL Apdex] 중요 알림을 받을 때의 문제 해결 단계를 제공합니다. [!DNL Apdex] 점수는 웹 응용 프로그램 및 서비스의 응답 시간에 대한 사용자의 만족도를 측정합니다. 문제를 해결하기 위해 즉각적인 조치가 필요합니다. 선택한 경고 알림 채널에 따라 경고는 다음과 같이 표시됩니다.
 
 ![apdex 중요 경고](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 문제
 
-[!DNL New Relic]Adobe Commerce에 대한 관리 경고[에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 &#x200B;](managed-alerts-for-magento-commerce.md)에서 관리 경고를 받게 됩니다. 이러한 경고는 Adobe에서 개발한 것으로, 지원 및 엔지니어링의 인사이트를 사용하여 판매자에게 표준 세트를 제공합니다.
+[Adobe Commerce에 대한 관리 경고](managed-alerts-for-magento-commerce.md)에 등록했으며 경고 임계값 중 하나 이상을 초과한 경우 [!DNL New Relic]에서 관리 경고를 받게 됩니다. 이러한 경고는 Adobe에서 개발한 것으로, 지원 및 엔지니어링의 인사이트를 사용하여 판매자에게 표준 세트를 제공합니다.
 
 <u> **실행!** </u>
 
