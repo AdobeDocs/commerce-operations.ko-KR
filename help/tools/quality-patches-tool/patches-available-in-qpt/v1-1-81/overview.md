@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-10T16:37:59.584Z'
 TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: aeb532d2e065787e1b23781a50808031e5a5d4ce
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 1a09e8ebb4fdee8b8ab500e5a4f8105fd33774d8
 workflow-type: tm+mt
-source-wordcount: 271
+source-wordcount: 272
 ht-degree: 0%
 
 ---
@@ -27,7 +22,7 @@ ht-degree: 0%
 
 QPT v1.1.81에는 다음 패치가 포함됩니다.
 
-1. **ACP2E-4300**: [!UICONTROL Admin]에서 고객 그룹을 변경해도 Storefront에서 카탈로그 권한이 업데이트되지 않아 카탈로그 및 장바구니가 오래된 권한을 반영하는 문제가 해결되었습니다.
+1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: 관리자의 고객 그룹을 변경해도 상점 앞에서 카탈로그 권한이 업데이트되지 않아 카탈로그 및 장바구니가 오래된 권한을 반영하는 문제가 해결되었습니다.
 1. **ACP2E-4401**: 구성 가능한 제품이 있는 홈 페이지 링크의 [!UICONTROL Scheduled Update Preview]이(가) 제품 목록을 표시하는 대신 유지 관리 페이지로 리디렉션되는 문제를 해결했습니다.
 1. **ACP2E-4395**: 이제 글로벌 범위에 대해 지정된 금액이 없으면 Giftcard API 제품 만들기에 오류가 표시됩니다.
 1. **ACP2E-4468**: 웹 사이트 범위 권한이 있는 [!UICONTROL Admin] 사용자가 배너 콘텐츠를 편집할 수 없는 문제를 해결했습니다.
