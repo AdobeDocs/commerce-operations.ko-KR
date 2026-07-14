@@ -2,16 +2,10 @@
 title: 패치 상태 보고서 생성
 description: ' [!DNL Commerce Version Tool] 을(를) 사용하여 JSON 또는 CSV 형식의 Adobe Commerce 패치 상태 보고서를 생성하는 방법에 대해 알아봅니다.'
 TQID: 'https://experienceleague.adobe.com/-lC-20YMpbTM3tTZjbBO5zD5gb9n7cRah5Ycy8wQoyw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: cb0391ae368b53a795535f3adb636628a339b963
 workflow-type: tm+mt
 source-wordcount: 590
 ht-degree: 2%
@@ -40,13 +34,13 @@ ht-degree: 2%
 Adobe Commerce 프로젝트 루트에서 다음을 실행합니다.
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 다른 Adobe Commerce 설치를 확인하려면 `--root` 옵션을 사용합니다.
 
 ```bash
-vendor/bin/patch-status --root=/path/to/commerce
+php vendor/bin/patch-status --root=/path/to/commerce
 ```
 
 ## 명령 옵션
@@ -68,7 +62,7 @@ JSON은 기본 출력 형식입니다. CSV 출력은 스캐너, 대시보드 및
 다음 샘플은 기본 JSON 출력을 보여 줍니다.
 
 ```bash
-vendor/bin/patch-status
+php vendor/bin/patch-status
 ```
 
 ```json
@@ -100,7 +94,7 @@ vendor/bin/patch-status
 CSV 출력을 생성하려면 `--format=csv` 옵션을 사용하십시오.
 
 ```bash
-vendor/bin/patch-status --format=csv
+php vendor/bin/patch-status --format=csv
 ```
 
 CSV 출력은 CVE당 하나의 행을 생성하며 스프레드시트, 스캐너, 대시보드 및 규정 준수 툴링에 적합합니다.
