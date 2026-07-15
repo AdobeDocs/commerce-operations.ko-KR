@@ -2,9 +2,11 @@
 user-guide-title: 도구
 user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도구, 용도, 설치 프로세스 및 액세스 방법에 대해 알아봅니다.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10365'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [확장](site-wide-analysis-tool/extensions.md)
    - [경고](site-wide-analysis-tool/alerts.md)
    - [패치](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [소개](commerce-version-tool/intro.md)
+   - [패치 상태 보고서 생성](commerce-version-tool/generate-report.md)
+   - [문제 해결](commerce-version-tool/troubleshooting.md)
+   - [릴리스 정보](commerce-version-tool/release-notes.md)
 - 대문자 {#caps-tool}
    - {hide-from-toc}[소개](caps-tool/intro.md)
    - {hide-from-toc}[액세스](caps-tool/access.md)
@@ -1026,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] API 배송 주소 유효성 검사가 관리자 특성 구성을 무시합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4680: 판매 불가능한 제품이 최종 협상가능한 견적에서 사라짐](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
+         - [ACP2E-4300: 관리자 고객 그룹 변경 후 상점 카탈로그 권한이 업데이트되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
    - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
