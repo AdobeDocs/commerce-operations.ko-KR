@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-10T16:37:59.584Z'
 TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3f7c0db0da082e2cc83bb18d943c3e50aa99d2dc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
 source-wordcount: 273
 ht-degree: 0%
@@ -34,7 +29,7 @@ QPT v1.1.81에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: 사용자 지정 옵션이 있는 긴 제품 이름이 여러 페이지의 송장, 배송, 대변 메모, 페이지 나누기 후 PDF 반환에서 인접한 열 또는 항목과 겹쳐 라인 항목을 읽을 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: 판매가 불가능하거나 삭제된 제품이 최종 협상 가능 견적에 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-4709**: 페이지 빌더를 사용할 때 CMS 페이지를 저장하지 못하는 문제를 해결했습니다.
-1. **ACP2E-4786**: 저장소 드라이버의 잘못된 경로 확인으로 인해 AWS S3 원격 저장소가 구성된 경우 제품 내보내기가 파일을 쓰지 못하는 문제를 해결했습니다.
+1. **[ACP2E-4786](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)**: 저장소 드라이버의 잘못된 경로 확인으로 인해 AWS S3 원격 저장소가 구성된 경우 제품 내보내기가 파일을 쓰지 못하는 문제를 해결했습니다.
 1. **[ACP2E-4801](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)**: 관리자의 협상 가능한 견적의 **[!UICONTROL Configure]** 단추를 통해 번들 제품 옵션 수량을 업데이트하지 않고 변경 내용이 삭제되는 문제를 해결했습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
