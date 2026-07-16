@@ -4,7 +4,7 @@ description: Commerce 관리에서 추가 웹 사이트, 스토어 및 스토어
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 이 작업을 수행하려면 각 스토어에 대한 루트 카테고리(및 원하는 경우 추가 카테고리)를 만들어야 합니다. 이 항목에서 설명하는 작업은 여러 스토어를 설정하는 한 가지 방법을 제공합니다. 자세한 내용은 Commerce 사용 안내서에서 다음 리소스를 참조하십시오.
 
-- [범주](https://experienceleague.adobe.com/ko/docs/commerce-admin/catalog/categories/categories)
+- [카테고리](https://experienceleague.adobe.com/ko/docs/commerce-admin/catalog/categories/categories)
 - [웹 사이트 추가](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
 - [URL 저장](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [컨텐츠](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/content-menu)
+- [콘텐츠](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 오른쪽 창에서 **기본 URL**&#x200B;을(를) 확장합니다.
 1. _기본 URL_ 섹션에서 **시스템 값 사용**&#x200B;을 지웁니다.
-1. `http://french.magento.mg`기본 URL **및**&#x200B;기본 링크 URL **필드에** URL을 입력하십시오.
+1. **기본 URL** 및 **기본 링크 URL** 필드에 `http://french.magento.mg` URL을 입력하십시오.
 
 1. _기본 URL(보안)_ 섹션에서 이전 단계를 반복합니다.
 
@@ -141,7 +141,7 @@ Commerce은 사이트 기본 URL에 스토어 코드를 추가할 수 있는 옵
    ![기본 구성 범위 선택](../../assets/configuration/multi-site-default.png)
 
 1. 오른쪽 창에서 **URL 옵션**&#x200B;을 확장합니다.
-1. **Url에 저장소 코드 추가** 옆에 있는 _시스템 값 사용_ 확인란의 선택을 취소하십시오.
+1. _Url에 저장소 코드 추가_ 옆에 있는 **시스템 값 사용** 확인란의 선택을 취소하십시오.
 1. _Url에 스토어 코드 추가_ 목록에서 **예**&#x200B;를 클릭합니다.
 
    ![스토어 기본 URL에 스토어 코드 추가](../../assets/configuration/multi-site-add-store-url.png)
@@ -163,7 +163,7 @@ Commerce은 사이트 기본 URL에 스토어 코드를 추가할 수 있는 옵
 
 1. 오른쪽 창에서 **기본 URL**&#x200B;을(를) 확장합니다.
 1. _기본 URL_ 섹션에서 **시스템 값 사용**&#x200B;을 지웁니다.
-1. `http://magento.mg`기본 URL **및**&#x200B;기본 링크 URL **필드에** URL을 입력하십시오.
+1. **기본 URL** 및 **기본 링크 URL** 필드에 `http://magento.mg` URL을 입력하십시오.
 
 1. **기본 URL(보안)** 섹션에서 이전 단계를 반복합니다.
 

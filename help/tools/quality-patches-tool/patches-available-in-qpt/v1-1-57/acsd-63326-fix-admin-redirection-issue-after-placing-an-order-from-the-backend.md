@@ -7,7 +7,7 @@ exl-id: 8fffc3ad-11a4-4e62-b747-1c4c7b493ada
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe Commerce(모든 배포 방법) 2.4.2 - 2.4.7-p3
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 

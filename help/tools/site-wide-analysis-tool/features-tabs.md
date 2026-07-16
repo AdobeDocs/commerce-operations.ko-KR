@@ -4,7 +4,7 @@ description: ' [!DNL Site-Wide Analysis Tool]의 다양한 기능 탭에 대해 
 exl-id: 23fc0311-82aa-430b-b11b-e287bea23d7b
 source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음 기능 탭 정보가 [!DNL Site-Wide Analysis Tool] 화면의 맨 위에 표시됩니다.
 
-**[!UICONTROL Dashboard]**: [!UICONTROL Dashboard] 페이지에는 현재 권장 사항, 업그레이드 호환성, 보안 검색, 확장 및 Adobe Commerce 웹 사이트의 현재 상태에 대한 [!DNL NewRelic Alerts]이 포함된 위젯이 표시됩니다. [!UICONTROL External Resources]Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터) [, &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ko)Adobe Commerce 개발자 설명서(DevDocs) [, &#x200B;](https://developer.adobe.com/commerce/docs/): 패치 검색[[!DNL Quality Patches Tool], &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}보안 센터[, &#x200B;](https://helpx.adobe.com/kr/security.html)Adobe Commerce 관찰(OAC) [을 포함하여 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ko)개의 Adobe Commerce 링크 목록도 있습니다.
+**[!UICONTROL Dashboard]**: [!UICONTROL Dashboard] 페이지에는 현재 권장 사항, 업그레이드 호환성, 보안 검색, 확장 및 Adobe Commerce 웹 사이트의 현재 상태에 대한 [!DNL NewRelic Alerts]이 포함된 위젯이 표시됩니다. [Adobe Commerce 도움말 센터 지원 기술 자료(도움말 센터)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ko), [Adobe Commerce 개발자 설명서(DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}, [보안 센터](https://helpx.adobe.com/kr/security.html), [Adobe Commerce 관찰(OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=ko)을 포함하여 [!UICONTROL External Resources]개의 Adobe Commerce 링크 목록도 있습니다.
 
 **[!UICONTROL Information]**: [!UICONTROL Information] 페이지에 사이트에 대한 개요 정보가 표시됩니다.
 [!UICONTROL General Information] 영역에는 판매자 사이트 기본 데이터, 연락처 소유자, [!DNL Jira] 문제(내부 사용 전용) 및 보고서 티켓 섹션이 표시됩니다.
