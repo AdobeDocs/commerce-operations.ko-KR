@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5629025bd6a2fd492ac368e2680a70f9cc256339
+source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2772'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,96 @@ ht-degree: 0%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 7월 16일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. Admin</a>에서 협상 가능한 견적을 다시 구성할 때 번들 제품 옵션 수량이 업데이트되지 않습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. AWS S3 원격 저장소가 구성되면</a> 제품 내보내기가 실패합니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 7월 15일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 긴 제품 이름이 페이지 나누기 </a> 후 여러 페이지 판매 PDF에서 인접한 열과 겹칩니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5581e6f7a507bb83a3fc0fd7229239137b15acd7">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 7월 14일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: 관리자 고객 그룹 변경 후 상점 카탈로그 권한이 업데이트되지 않음</a>에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 판매가 불가능한 제품은 확정된 협상 가능한 가격에서 사라집니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p>월별 Commerce 보안 패치 상태 보고를 위해 가용성, 보고서 생성, JSON 및 CSV 출력, 문제 해결 및 릴리스 정보가 포함된 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/commerce-version-tool/intro">Adobe Commerce 버전 도구 설명서</a>가 추가되었습니다.</p>
+</td>
+      <td>
+        새 주제
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 7월 10일
 
