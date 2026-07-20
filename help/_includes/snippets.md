@@ -1,7 +1,7 @@
 ---
-source-git-commit: 15314bbcb5c2bdccf92901235f7d07e1770955d9
+source-git-commit: c0226b938214cd95c8480741436c93640de06b86
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오. Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis가 지원되지 않는 캐시 구성에 Valkey를 사용합니다. 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements)을 참조하십시오.
+>클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오.
+
+## Redis 캐시 지원 {#redis-cache-support}
+
+Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis를 지원하지 않는 버전으로 업그레이드하는 경우 [Valkey를 설정하고 이를 사용하려면 캐시 구성을 업데이트해야 합니다](/help/configuration/cache/config-valkey.md). 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)을 참조하십시오.
 
 ## Commerce on Cloud Varnish 구성 참고(참조 포함) {#varnish-config-cloud}
 
 >[!NOTE]
 >
->Commerce 프로젝트가 클라우드에 배포된 경우 전체 페이지 캐싱은 바니시 대신 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용합니다. 이 섹션의 항목은 온-프레미스 설치에만 적용됩니다.
+>Commerce 프로젝트가 클라우드에 배포된 경우 전체 페이지 캐싱은 바니시 대신 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)를 사용합니다. 이 섹션의 항목은 온-프레미스 설치에만 적용됩니다.
 
 ## Adobe 서비스 버전 지원 {#supported-versions-only}
 
@@ -25,13 +29,13 @@ ht-degree: 0%
 >
 >Adobe은 모든 종속성 및 서비스의 지원되는 버전을 실행하는 배포에 대해서만 지원을 제공합니다. 이는 다음 경우에 적용됩니다.
 >
->* **플랫폼 서비스**(PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ 및 Nginx를 포함하지만 이에 국한되지 않음) - 판매자는 배포된 Adobe Commerce 릴리스와 호환되는 버전을 유지해야 합니다. [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko)을 참조하세요.
+>* **플랫폼 서비스**(PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ 및 Nginx를 포함하지만 이에 국한되지 않음) - 판매자는 배포된 Adobe Commerce 릴리스와 호환되는 버전을 유지해야 합니다. [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)을 참조하세요.
 >* **Commerce 서비스 확장**(Live Search, 제품 추천 및 결제 서비스 포함, 이에 국한되지 않음) - 최신 릴리스 버전만 지원됩니다.
 >* **사용자 지정 확장 및 타사 통합** - 판매자는 공급업체가 지원하는 버전에 이러한 확장이 유지되도록 해야 합니다.
 >
 >지원되지 않는 버전을 실행하면 스토어가 보안 취약점에 노출될 수 있으며 Adobe은 해당 공급업체에서 더 이상 유지 관리하지 않는 종속성에 대한 보안 패치를 제공할 수 없습니다.
 >
->지원되는 버전의 전체 목록은 [제품 가용성 매트릭스](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)를 참조하십시오.
+>지원되는 버전의 전체 목록은 [제품 가용성 매트릭스](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)를 참조하십시오.
 
 ## 확장 지원을 위한 보안 패치 {#extended-support}
 
@@ -61,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -115,7 +119,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+>Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
 
 ## 2025년 10월 보안 패치 백포트 {#oct-2025-backports}
 
@@ -129,7 +133,7 @@ ht-degree: 0%
 
 * **Apache ActiveMQ Artemis STOMP 프로토콜에 대한 지원이 추가되었습니다**
 
-  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. *Commerce 구성 가이드*&#x200B;에서 [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)을(를) 참조하십시오.
+  STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커에 대한 지원을 추가했습니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다. *Commerce 구성 가이드*&#x200B;에서 [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)을(를) 참조하십시오.
 
 ## 체크아웃 페이지가 static.min.js 및 mixins.min.js를 로드하지 못했습니다. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -146,7 +150,7 @@ ht-degree: 0%
 
 **핫픽스**:
 
-핫픽스를 사용할 수 있습니다. 패치에 대한 자세한 내용은 기술 자료에서 [JS 축소 및 번들링을 사용할 때 체크아웃 실패](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27997)를 참조하십시오.
+핫픽스를 사용할 수 있습니다. 패치에 대한 자세한 내용은 기술 자료에서 [JS 축소 및 번들링을 사용할 때 체크아웃 실패](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)를 참조하십시오.
 
 ## Valkey Redis CLI 참고 {#valkey-redis-cli-note}
 
