@@ -21,9 +21,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: ec95c99d060f3c45095236d41729648abf389dd1
 workflow-type: tm+mt
-source-wordcount: 1261
+source-wordcount: 1411
 ht-degree: 0%
 
 ---
@@ -235,6 +235,59 @@ bin/magento setup:config:set --allow-parallel-generation
     ],
 ```
 
+## 성능 최적화
+
+Symfony Cache를 사용하는 경우 Igbinary 직렬 변환기를 구성하고, igbinary PHP 확장과 phpredis 확장을 설치하고 영구 연결을 활성화하여 성능을 더욱 최적화할 수 있습니다.
+
+### Igbinary 직렬 변환기
+
+Igbinary 직렬 변환기는 PHP의 기본 직렬화에 비해 상당한 성능 향상을 제공합니다. `app/etc/env.php`에서 수동으로 구성해야 합니다.
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary serialization
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
+            ]
+        ]
+    ]
+]
+```
+
+### PHP Igbinary 확장 설치
+
+igbinary serialization을 사용하려면 PHP Igbinary 확장을 설치해야 합니다.
+
+**apt 사용(Debian/Ubuntu 권장)**:
+
+```bash
+sudo apt-get install php-igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+**pecl(대체 메서드) 사용**:
+
+```bash
+sudo pecl install igbinary
+echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
+sudo phpenmod igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
 ### PHP Redis 확장
 
 사용자 환경에서 지원하는 경우 기본 PHP Redis 확장(`phpredis`)을 사용합니다.
@@ -259,6 +312,98 @@ echo "extension=redis.so" | sudo tee /etc/php/<version>/mods-available/redis.ini
 sudo phpenmod redis
 sudo systemctl restart php-fpm
 php -m | grep redis
+```
+
+**성능 비교**:
+
+| 작업 | 프레디스 | 프프레디스 | 개선 사항 |
+|-----------|--------|----------|-------------|
+| 캐시 가져오기 | 1-5ms | 0.5-2ms | 2~3배 더 빠름 |
+| 캐시 집합 | 2-6ms | 0.8-2.5ms | 2~3배 더 빠름 |
+| 태그 작업 | 10-30ms | 3-10ms | 3~4배 빠름 |
+
+### 영구 연결
+
+영구 연결은 요청 간 기존 Redis 연결을 재사용하여 5~15% 더 빠른 캐시 작업을 제공합니다. `app/etc/env.php`에서 구성:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ]
+]
+```
+
+>[!IMPORTANT]
+>
+>각 캐시 유형에 대해 고유한 `persistent_id`을(를) 사용하여 연결 충돌을 방지하십시오.
+
+### 최적화된 전체 구성
+
+다음은 모든 성능 최적화를 결합한 프로덕션 준비 Redis 구성입니다.
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '1',
+                'compression_lib' => 'gzip',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+                'use_lua' => '1',
+                'use_lua_on_gc' => '1',
+                'preload_keys' => [
+                    'b0b_EAV_ENTITY_TYPES',
+                    'b0b_GLOBAL_PLUGIN_LIST',
+                    'b0b_DB_IS_UP_TO_DATE',
+                    'b0b_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '0',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ],
+    'allow_parallel_generation' => false
+]
 ```
 
 ## Redis 연결 확인
