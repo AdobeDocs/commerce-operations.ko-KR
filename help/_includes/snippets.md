@@ -1,7 +1,7 @@
 ---
-source-git-commit: 15314bbcb5c2bdccf92901235f7d07e1770955d9
+source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오. Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis가 지원되지 않는 캐시 구성에 Valkey를 사용합니다. 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements)을 참조하십시오.
+>클라우드 프로젝트의 Adobe Commerce에 대한 캐시 구성 지침은 [Redis 및 Valkey 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)를 참조하십시오.
+
+## Redis 캐시 지원 {#redis-cache-support}
+
+Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis를 지원하지 않는 버전으로 업그레이드하는 경우 Valkey를 설정하고 이를 사용하려면 캐시 구성을 업데이트해야 합니다. 온-프레미스 배포에 대해서는 [Valkey 설정](/help/configuration/cache/config-valkey.md)을(를) 참조하십시오.
 
 ## Commerce on Cloud Varnish 구성 참고(참조 포함) {#varnish-config-cloud}
 

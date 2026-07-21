@@ -9,9 +9,10 @@ feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
-source-git-commit: e8e8471313a4e9f7a595b1222d7a246bce63f097
+nudge: true
+source-git-commit: 78f8259a686402045614210efe6488c5cf5cc6bd
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,6 @@ ht-degree: 0%
 
 구현 세부 정보, 구성 예 및 배포별 지침은 성능 최적화를 위한 [L2 캐시 구성](../../../configuration/cache/level-two-cache.md)을 참조하십시오.
 
-
 >[!IMPORTANT]
 >
 >Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p4 이상의 패치 릴리스에서는 지원되지 않습니다. Redis가 지원되지 않는 캐시 구성에 Valkey를 사용합니다. 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](../../../installation/system-requirements.md)을 참조하십시오.
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!TAB Valkey 구성]
 
-Valkey의 경우 다음을 사용합니다.
+기존 캐시 구현과 함께 Valkey의 경우 다음을 사용합니다.
 
 ```yaml
 stage:
@@ -58,7 +58,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-환경 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 구성 변수를 참조하십시오.
+최신 Symfony L2 캐시 구현이 포함된 Valkey에 대해서는 [Symfony L2 캐시 구성](#configure-symfony-l2-cache)을 참조하십시오.
 
 >[!TAB Redis 구성]
 
@@ -76,92 +76,29 @@ stage:
 
 ### [!DNL Symfony] L2 캐시 구성
 
-Adobe Commerce 2.4.9 이상 버전은 `symfony_l2` 캐시 백엔드를 지원합니다. 클라우드 인프라의 Adobe Commerce에서 프로젝트가 `.magento.env.yaml`의 `symfony_l2`을(를) 지원하는 `ece-tools` 버전을 사용한 후에만 이 백엔드를 구성하십시오.
-
-`symfony_l2` 백엔드는 Adobe Commerce에서 L1 및 L2 캐시 동작을 관리하는 데 사용하는 캐시 구현입니다. 원격 캐시 서비스로 Redis 또는 Valkey를 대체하지 않습니다. Adobe Commerce 2.4.9의 경우 Valkey를 원격 백엔드로 사용하여 `symfony_l2`을(를) 구성합니다.
+Adobe Commerce 2.4.9 이상 버전은 `symfony_l2` 캐시 백엔드를 지원합니다. `symfony_l2` 백엔드는 Adobe Commerce에서 L1 및 L2 캐시 동작을 관리하는 데 사용하는 캐시 구현입니다. 원격 캐시 서비스로 Redis 또는 Valkey를 대체하지 않습니다.
 
 >[!IMPORTANT]
 >
->프로젝트에 `ece-tools` 지원을 사용할 수 있을 때까지 `app/etc/env.php`에서 `symfony_l2`을(를) 클라우드 인프라의 Adobe Commerce에 대한 영구 구성으로 수동으로 구성하지 마십시오. 배포는 수동 `env.php` 변경 내용을 덮어쓸 수 있습니다. `ece-tools`이(가) `symfony_l2`을(를) 적용하지 않으면 Commerce이 파일 기반 캐시로 폴백할 수 있습니다. 이 폴백은 디스크 I/O를 증가시키고, 다중 노드 환경에서 파일 시스템 복제 오버헤드를 가중시키며, 성능을 저하시킬 수 있습니다.
+>클라우드 인프라의 Adobe Commerce에 대한 영구 구성으로 `app/etc/env.php`에서 `symfony_l2`을(를) 수동으로 구성하지 마십시오. 배포는 수동 `env.php` 변경 내용을 덮어쓸 수 있습니다. `ece-tools`이(가) `symfony_l2`을(를) 적용하지 않으면 Commerce이 파일 기반 캐시로 폴백할 수 있습니다. 이 폴백은 디스크 I/O를 증가시키고, 다중 노드 환경에서 파일 시스템 복제 오버헤드를 가중시키며, 성능을 저하시킬 수 있습니다.
 
-`ece-tools` 지원을 사용할 수 있는 경우 Valkey 백엔드 변수를 `symfony_l2`(으)로 설정하고 `CACHE_CONFIGURATION`에서 L2 백엔드 옵션을 정의합니다.
+Adobe Commerce 2.4.9용 `symfony_l2` 캐시를 사용하려면 다음 단계를 완료하십시오.
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 1
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-```
+- 클라우드 프로젝트에서 [ECE 도구 패키지 v2002.1.12](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) 이상을 사용하고 있는지 확인하십시오.
 
-`symfony_l2`을(를) 사용하여 선택한 캐시 형식에 대해 오래된 캐시를 활성화하려면 `use_stale_cache: true`(으)로 두 번째 프론트엔드를 정의한 다음 선택한 캐시 형식을 해당 프론트엔드에 매핑합니다. 각 프론트엔드에 대해 고유한 로컬 캐시 디렉터리 및 영구 ID를 사용합니다.
+- `.magento.env.yaml` 파일에서 배포 변수를 설정합니다. `VALKEY_BACKEND`=`symfony_l2`.
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-        stale_cache_enabled:
-          backend: symfony_l2
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_stale
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1_stale
-            use_stale_cache: true
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        block_html:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-```
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
 
+`VALKEY_BACKEND` 배포 변수를 `symfony_l2`(으)로 설정하면 `layout`, `block_html`, `full_page` 및 `translate`과(와) 같은 캐시 가능 형식이 이미 오래된 사용 프론트엔드에 매핑되어 있는 `default` 프론트엔드와 `stale_cache_enabled` 프론트엔드를 포함하여 Valkey 서비스 연결 세부 정보에서 전체 L2 캐시 구성이 자동으로 빌드됩니다. `symfony_l2`을(를) 사용하기 위해 `CACHE_CONFIGURATION`을(를) 정의할 필요가 없습니다.
+
+>[!CAUTION]
+>
+>`.magento.env.yaml` 구성을 업데이트할 때 프로젝트의 Valkey 서비스가 아닌 캐시 끝점을 의도적으로 가리키지 않는 한 `server` 또는 `port`을(를) 재정의하지 마십시오. ECE 도구 패키지는 이러한 값을 Valkey 서비스 관계에서 자동으로 도출합니다. 잘못된 값으로 재정의하면 캐시 연결 오류로 배포가 실패합니다.
 
 ### Adobe Commerce Cloud용 L2 캐시 메모리 크기 조정
 
@@ -170,7 +107,8 @@ L2 캐시는 저장소 메커니즘으로 [임시 파일 시스템](https://en.w
 프로젝트 요구 사항에 따라 최대 L2 캐시 메모리 사용량을 조정합니다. 다음 방법 중 하나를 사용하십시오.
 
 - `/dev/shm` 탑재 크기를 조정하려면 지원 티켓을 만드십시오. 이 시나리오에서는 `/dev/shm` 마운트 크기를 15GB로 설정하는 것이 좋습니다.
-- 응용 프로그램 수준에서 `cleanup_percentage` 속성을 조정하여 다른 서비스에 사용할 수 있는 저장소 사용 및 사용 가능한 메모리를 제한합니다.캐시 구성 그룹 `cache/frontend/default/backend_options/cleanup_percentage` 아래의 배포 구성에서 구성을 조정할 수 있습니다.
+- 응용 프로그램 수준에서 `cleanup_percentage` 속성을 조정하여 다른 서비스에 사용할 수 있는 저장소 사용 및 사용 가능한 메모리를 제한합니다.
+캐시 구성 그룹 `cache/frontend/default/backend_options/cleanup_percentage` 아래의 배포 구성에서 구성을 조정할 수 있습니다.
 
 >[!NOTE]
 >
