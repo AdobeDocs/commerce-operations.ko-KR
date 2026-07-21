@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,14 @@ Adobe Experience Cloud 솔루션에 대한 제품 팀의 테크니컬 라이터,
 
 ## 사용 가능한 레이크 작업
 
-이 리포지토리는 `adobe-comdox-exl-rake-tasks` gem에서 제공하는 레이크 작업을 사용합니다. 사용 가능한 모든 작업을 보려면 다음을 실행합니다.
+이 저장소에서는
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+보석 사용 가능한 모든 작업을 보려면 다음을 실행합니다.
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+저장소별 작업의 경우 포함 관계 파일 형식 및 설정
+자세한 내용은 [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md)을(를) 참조하십시오.
