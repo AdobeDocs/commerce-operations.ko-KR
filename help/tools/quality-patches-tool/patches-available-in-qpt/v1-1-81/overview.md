@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
+source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: 270
 ht-degree: 0%
 
 ---
@@ -27,10 +27,11 @@ ht-degree: 0%
 
 QPT v1.1.81에는 다음 패치가 포함됩니다.
 
+
+1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: 구성 가능한 제품이 있는 [!UICONTROL Home Page] 링크의 [!UICONTROL Scheduled Update Preview]이(가) 제품 목록을 표시하는 대신 [!UICONTROL maintenance page]&#x200B;(으)로 리디렉션되는 문제를 해결했습니다.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: 관리자의 고객 그룹을 변경해도 상점 앞에서 카탈로그 권한이 업데이트되지 않아 카탈로그 및 장바구니가 오래된 권한을 반영하는 문제가 해결되었습니다.
-1. **ACP2E-4401**: 구성 가능한 제품이 있는 홈 페이지 링크의 [!UICONTROL Scheduled Update Preview]이(가) 제품 목록을 표시하는 대신 유지 관리 페이지로 리디렉션되는 문제를 해결했습니다.
 1. **ACP2E-4395**: 이제 글로벌 범위에 대해 지정된 금액이 없으면 Giftcard API 제품 만들기에 오류가 표시됩니다.
-1. **ACP2E-4468**: 웹 사이트 범위 권한이 있는 [!UICONTROL Admin] 사용자가 배너 콘텐츠를 편집할 수 없는 문제를 해결했습니다.
+1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: 웹 사이트 범위 권한이 있는 관리자가 배너 콘텐츠를 편집할 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: 사용자 지정 옵션이 있는 긴 제품 이름이 여러 페이지의 송장, 배송, 대변 메모, 페이지 나누기 후 PDF 반환에서 인접한 열 또는 항목과 겹쳐 라인 항목을 읽을 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: 판매가 불가능하거나 삭제된 제품이 최종 협상 가능 견적에 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-4709**: 페이지 빌더를 사용할 때 CMS 페이지를 저장하지 못하는 문제를 해결했습니다.
