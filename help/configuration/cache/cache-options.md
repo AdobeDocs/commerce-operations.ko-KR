@@ -3,24 +3,17 @@ title: 캐시 백엔드 옵션 및 저장소 참조
 description: 파일 시스템, Redis, Valkey 및 데이터베이스 저장소를 포함하여 Adobe Commerce의 캐시 백엔드 옵션에 대해 알아봅니다. 기존 및 최신 접근 방식을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d3c3e48c7627b932d1e46a7d2a99fa77b8b75b4c
 workflow-type: tm+mt
-source-wordcount: 309
+source-wordcount: 331
 ht-degree: 0%
 
 ---
@@ -88,14 +81,17 @@ Commerce은 두 가지 백엔드 구현 접근 방식을 지원합니다. 선택
 
 | 백엔드 | 이름 입력 |
 | ------- | --------- |
-| 레디스 | `redis` |
 | 밸키 | `valkey` |
 | 파일 시스템 | `file` |
+
+>[!NOTE]
+>
+>`redis` 형식 이름도 허용되지만 Redis는 Adobe Commerce 2.4.9 이상에서 공식적으로 지원되는 캐시 서비스가 아닙니다. 대신 `valkey`을(를) 사용합니다.
 
 **예제 구성:**
 
 ```php?start_inline=1
-'backend' => 'redis',
+'backend' => 'valkey',
 'backend_options' => [
     'server' => '127.0.0.1',
     'database' => '0',
