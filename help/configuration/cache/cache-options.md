@@ -3,7 +3,7 @@ title: 캐시 백엔드 옵션 및 저장소 참조
 description: 파일 시스템, Redis, Valkey 및 데이터베이스 저장소를 포함하여 Adobe Commerce의 캐시 백엔드 옵션에 대해 알아봅니다. 기존 및 최신 접근 방식을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
