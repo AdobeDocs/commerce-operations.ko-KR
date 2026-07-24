@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: 78f8259a686402045614210efe6488c5cf5cc6bd
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2454'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Adobe Commerce 2.4.9 이상 버전은 `symfony_l2` 캐시 백엔드를 지원합
 
 Adobe Commerce 2.4.9용 `symfony_l2` 캐시를 사용하려면 다음 단계를 완료하십시오.
 
-- 클라우드 프로젝트에서 [ECE 도구 패키지 v2002.1.12](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) 이상을 사용하고 있는지 확인하십시오.
+- 클라우드 프로젝트에서 [ECE 도구 패키지 v2002.2.12](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) 이상을 사용하고 있는지 확인하십시오.
 
 - `.magento.env.yaml` 파일에서 배포 변수를 설정합니다. `VALKEY_BACKEND`=`symfony_l2`.
 
@@ -94,11 +94,44 @@ Adobe Commerce 2.4.9용 `symfony_l2` 캐시를 사용하려면 다음 단계를 
       VALKEY_BACKEND: symfony_l2
   ```
 
-`VALKEY_BACKEND` 배포 변수를 `symfony_l2`(으)로 설정하면 `layout`, `block_html`, `full_page` 및 `translate`과(와) 같은 캐시 가능 형식이 이미 오래된 사용 프론트엔드에 매핑되어 있는 `default` 프론트엔드와 `stale_cache_enabled` 프론트엔드를 포함하여 Valkey 서비스 연결 세부 정보에서 전체 L2 캐시 구성이 자동으로 빌드됩니다. `symfony_l2`을(를) 사용하기 위해 `CACHE_CONFIGURATION`을(를) 정의할 필요가 없습니다.
+`VALKEY_BACKEND` 배포 변수를 `symfony_l2`(으)로 설정하면 `layout`, `block_html`, `full_page` 및 `translate`과(와) 같은 캐시 가능 형식이 이미 오래된 사용 프론트엔드에 매핑되어 있는 `default` 프론트엔드와 `stale_cache_enabled` 프론트엔드를 포함하여 Valkey 서비스 연결 세부 정보에서 전체 L2 캐시 구성이 자동으로 빌드됩니다. `CACHE_CONFIGURATION` 정의는 선택 사항이며 특정 백엔드 옵션을 사용자 지정하려는 경우에만 필요합니다.
+
+>[!NOTE]
+>
+>Adobe Commerce 2.4.9에는 ACP2E-5132 패치를 통해 캐시 태그 저장, 무효화 및 압축 등 Symfony L2 캐시가 개선되어 디스크 I/O가 줄어들고 오래된 캐시 항목이 제거되며 메모리 및 네트워크 오버헤드가 감소합니다. _Adobe Commerce 구성 가이드_&#x200B;에서 [향상된 Symfony L2 캐시 성능 및 안정성](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)을(를) 참조하십시오.
+
+#### Symfony L2 캐시 구성 사용자 정의
+
+`ece-tools`은(는) `default` 및 `stale_cache_enabled` 프런트 엔드에 대한 Valkey 연결 세부 정보(`server`, `port`, `database`, `serializer`, `compression_lib`, `persistent_id`)를 자동으로 파생합니다. 로컬 캐시 디렉터리와 같은 다른 백엔드 옵션을 사용자 지정하려면 `VALKEY_BACKEND: symfony_l2`과(와) 함께 `_merge: true`을(를) 사용하여 `CACHE_CONFIGURATION`을(를) 정의합니다. 여기서 정의하는 값은 자동 생성된 해당 기본값을 재정의합니다. 생략하는 모든 옵션은 `ece-tools`에서 자동으로 파생되는 값을 계속 사용합니다.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1
+        stale_cache_enabled:
+          backend: symfony_l2
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1_stale
+            use_stale_cache: true
+```
 
 >[!CAUTION]
 >
->`.magento.env.yaml` 구성을 업데이트할 때 프로젝트의 Valkey 서비스가 아닌 캐시 끝점을 의도적으로 가리키지 않는 한 `server` 또는 `port`을(를) 재정의하지 마십시오. ECE 도구 패키지는 이러한 값을 Valkey 서비스 관계에서 자동으로 도출합니다. 잘못된 값으로 재정의하면 캐시 연결 오류로 배포가 실패합니다.
+>`symfony_l2`에 대해 `CACHE_CONFIGURATION`을(를) 정의할 때 프로젝트의 Valkey 서비스 이외의 캐시 끝점을 의도적으로 가리키지 않는 한 `server` 또는 `port`을(를) 재정의하지 마십시오. ECE Tools 패키지는 이러한 값을 Valkey 서비스 관계에서 자동으로 가져옵니다.
+>
+>`server`을(를) 재정의하는 경우 프로젝트의 Valkey 서비스에 연결할 때 해당 값은 `localhost`이어야 합니다. 잘못된 `server` 또는 `port` 값을 제공하면 캐시 연결 오류가 발생하여 배포가 실패합니다.
 
 ### Adobe Commerce Cloud용 L2 캐시 메모리 크기 조정
 
@@ -1022,4 +1055,5 @@ stage:
 - [Valkey 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/valkey)
 - [Redis 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/redis)
 - [변수 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+
 
