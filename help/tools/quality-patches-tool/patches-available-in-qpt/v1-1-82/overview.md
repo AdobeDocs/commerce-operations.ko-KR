@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 97460ce784a4c97f42b6c60ba390b2260f60b5e6
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 6b7e2463ee1f743fb5e8451a7f9832309aa68ab0
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -40,7 +35,7 @@ QPT v1.1.82에는 다음 패치가 포함됩니다.
 1. **ACP2E-4805**: 첫 번째 판매 가능한 하위 제품이 목록에 늦게 나타날 때 하위 제품이 많은 구성 가능한 제품에 대해 체크아웃 API 요청이 상당히 느려지는 문제를 해결했습니다.
 1. **ACP2E-4840**: `products` GraphQL 쿼리에서 요청한 수량 값이 *null*&#x200B;을 반환하는 문제를 해결했습니다.
 1. **ACP2E-4870**: **[!UICONTROL Product Alerts]** 전자 메일 알림이 저장소 보기 전자 메일 설정을 무시하는 문제를 해결했습니다.
-1. **ACP2E-4875**: 관리자에서 주소록이 큰 고객 계정을 볼 때 예기치 않게 관리자 사용자가 로그아웃되는 문제가 해결되었습니다.
+1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: 관리자에서 주소록이 큰 고객 계정을 볼 때 예기치 않게 관리자 사용자가 기록되는 문제가 해결되었습니다.
 1. **ACP2E-4894**: 대량 저장소에서 **[!UICONTROL Asynchronous Indexing]**&#x200B;을(를) 사용하도록 설정한 경우 새 주문이 Admin Order Management 그리드에 표시되는 것이 지연되는 문제를 해결했습니다.
 1. **ACP2E-4981**: 페이지 빌더 제품 회전 메뉴에 관리자의 위치가 반영되지 않은 순서로 제품이 표시되고 일치하는 하위 제품이 개별적으로 표시될 때 구성 가능한 제품을 포함하는 문제가 수정되었습니다.
 
