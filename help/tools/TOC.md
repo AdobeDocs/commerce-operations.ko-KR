@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 5dec405e9f116622903e9b0e2fbbd255ca28a8e8
+source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
 workflow-type: tm+mt
-source-wordcount: '10469'
+source-wordcount: '10517'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,9 @@ ht-degree: 0%
       - [ACP2E-4709: 페이지 계층에 큰따옴표가 포함된 경우 CMS 페이지가 페이지 빌더에 저장되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4805: 첫 번째 판매 가능한 하위 항목이 목록에 나중에 나타나면 구성 가능한 제품에 대한 체크아웃 요청 속도가 느려집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
+      - [ACP2E-4748: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 실행됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
+      - [ACP2E-4875: 큰 주소록으로 고객 계정을 열 때 관리자 사용자가 로그아웃함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
   - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)

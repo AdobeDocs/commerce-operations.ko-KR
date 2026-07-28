@@ -2,7 +2,8 @@
 title: 시스템 요구 사항
 description: Adobe Commerce에 대한 소프트웨어 종속성 및 시스템 요구 사항에 대해 알아봅니다. 배포 환경과의 호환성에 대해서는 테스트된 구성을 참조하십시오.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+last-update: 2026-07-23T00:00:00Z
+source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
