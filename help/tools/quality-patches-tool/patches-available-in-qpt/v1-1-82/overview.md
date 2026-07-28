@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6b7e2463ee1f743fb5e8451a7f9832309aa68ab0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4358eb2865fbd8a66716ffc6b7a7b133a7e10e5d
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -34,7 +29,7 @@ QPT v1.1.82에는 다음 패치가 포함됩니다.
 1. **ACP2E-4682**: 견적 `isActive` 상태를 확인하는 Storefront 페이지를 방문하여 페이지를 로드할 때마다 빈 견적 레코드를 만드는 문제를 해결했습니다.
 1. **ACP2E-4695**: 카탈로그 규칙 인덱서가 과도한 메모리를 사용하고 완료하지 못해 불안정하고 메모리 부족 오류가 발생하는 문제를 해결했습니다.
 1. **ACP2E-4698**: 페이지 빌더 텍스트 콘텐츠에서 이미지를 다시 편집하면 이식 가능한 미디어 지시문을 유지하는 대신 절대 미디어 URL이 저장되는 문제가 해결되었습니다.
-1. **ACP2E-4748**: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 처리되어 보상 포인트 만료가 지연되는 문제를 해결했습니다.
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 실행되어 보상 포인트 만료가 지연되는 문제를 해결했습니다.
 1. **ACP2E-4797**: 데이터베이스가 `utf8mb4`을(를) 지원하도록 구성된 경우에도 WYSIWYG 편집기 또는 Admin의 Page Builder 콘텐츠에 4바이트 유니코드 문자 입력이 잘못 차단되는 문제를 해결했습니다.
 1. **ACP2E-4799**: `requisition_lists` GraphQL 쿼리가 쿼리 기준과 일치하는 총 구매요청 목록 수 대신 현재 페이지의 항목 수만 반영하는 `total_count` 값을 반환하는 문제를 해결했습니다.
 1. **ACP2E-4805**: 첫 번째 판매 가능한 하위 제품이 목록에 늦게 나타날 때 하위 제품이 많은 구성 가능한 제품에 대해 체크아웃 API 요청이 상당히 느려지는 문제를 해결했습니다.
