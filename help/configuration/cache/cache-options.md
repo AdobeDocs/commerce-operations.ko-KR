@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
 workflow-type: tm+mt
-source-wordcount: 331
+source-wordcount: 395
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Commerce 애플리케이션은 낮은 수준의 캐시 프론트엔드 및 백�
 
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis를 지원하지 않는 버전으로 업그레이드하는 경우 Valkey를 설정하고 이를 사용하려면 캐시 구성을 업데이트해야 합니다. Commerce 온-프레미스에 대해서는 [Valkey 설정](config-valkey.md)을 참조하십시오. 클라우드의 Commerce에 대해서는 [유효성 검사 설정](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}을 참조하십시오.
 
 ## 구현 접근 방식
 
