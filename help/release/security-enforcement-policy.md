@@ -2,12 +2,25 @@
 title: '보안 시행 정책: 필수 조치 및 기한'
 description: 기한, 필수 작업 및 위험을 포함하여 Cloud 버전 및 소프트웨어 종속성에서 지원되지 않는 Adobe Commerce에 대한 보안 강화에 대해 알아봅니다.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
 hide: true
 source-git-commit: 93446d5be993e53e94f714a592d519a945dfbebd
@@ -43,7 +56,7 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 
 **표 1: 버전별 필수 작업 및 기한**
 
-| **내 버전** | **[작업 1:<br>타사 소프트웨어 종속성 업그레이드](#action-1-upgrade-third-party-software-dependencies)** | **작업 2:<br>[Adobe Commerce 버전 업그레이드 또는 마이그레이션](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
+| **내 버전** | **[작업 1:<br>타사 소프트웨어 종속성 업그레이드](#action-1-upgrade-third-party-software-dependencies)**&#x200B; | &#x200B;** 작업 2:<br>[Adobe Commerce 버전 업그레이드 또는 마이그레이션](#action-2-upgrade-to-a-supported-adobe-commerce-version)** |
 | --- | --- | --- |
 | 2.4.4 또는 2.4.5 | 2026년 10월 30일까지 필요한 작업입니다. | 2027년 6월 1일까지 필요한 작업 |
 | 2.4.6 또는 2.4.7 | 소프트웨어에 따라 2026년 10월 30일 또는 2027년 5월 31일까지 필요한 작업입니다. | 2028년 6월 1일까지 필요한 작업 |
