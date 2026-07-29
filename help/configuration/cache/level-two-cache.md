@@ -3,26 +3,16 @@ title: 성능 최적화를 위한 L2 캐시 구성
 description: 네트워크 트래픽을 줄이고 성능을 개선하기 위해 Adobe Commerce에서 L2 캐시를 구성하는 방법에 대해 알아봅니다. 기존 및 Symfony 구현 옵션을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7fdc2a2c19eccf36940d9b4545b443eabbab4220
 workflow-type: tm+mt
-source-wordcount: 1221
+source-wordcount: 1378
 ht-degree: 0%
 
 ---
@@ -53,7 +43,7 @@ Commerce은 해시된 데이터 버전을 원격 캐시에 저장하고, 일반 
 
 캐시 구성 지침은 배포 유형에 따라 다릅니다.
 
-- **Cloud의 Adobe Commerce에 대해**&#x200B;에서 `.magento.env.yaml`의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
+- **Cloud의 Adobe Commerce에 대해**&#x200B;에서 `.magento.env.yaml`의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
 
 - **Redis를 지원하는 Adobe Commerce 온-프레미스 버전의 경우**&#x200B;에서 다음 예제를 사용하여 `app/etc/env.php` 파일의 기존 캐시 섹션을 수정하거나 바꾸세요.
 
@@ -333,7 +323,9 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
 
 >[!NOTE]
 >
->이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. 최신 패치 릴리스 정보는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 참조하십시오.
+>이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. 최신 패치 릴리스 정보는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 참조하십시오.
+
+최신 업데이트를 통해 Symfony L2 캐시 확장성이 향상되고 불필요한 파일 시스템 I/O가 감소하며 캐시 일관성 및 안정성이 향상되었습니다.
 
 #### 최적화된 Sympony L2 캐시 태그 스토리지
 
@@ -343,22 +335,30 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
 
 파일 기반 캐시를 사용하는(유효성 검사 없이) 배포의 경우 캐시 무효화를 지원하기 위해 로컬 태그 인덱스가 계속 유지됩니다. 이제 태그 인덱스가 이전에 하드코딩된 `var/cache` 위치 대신 구성된 `cache_dir`에 기록되어 일관된 캐시 디렉터리 사용을 보장하고 사용자 지정 캐시 구성에 대한 지원을 개선합니다.
 
-#### 향상된 캐시 무효화
+#### 다시 태그 지정 후 오래된 태그 멤버십을 수정했습니다.
 
-이제 캐시 무효화는 적절한 L1 태그 정리와 함께 TTL 기반 재생성 잠금을 사용하여 태그 무효화 후에 이전에 지속될 수 있는 오래된 캐시 항목을 제거합니다.
+캐시 항목을 다시 태깅하면 더 이상 속해 있지 않은 태그와 연결되어 있을 수 있습니다. 이제 다시 태그 지정 시 오래된 태그 멤버십이 지워지므로 캐시 항목은 현재 할당된 태그에 의해서만 무효화됩니다.
 
-#### 기본적으로 압축 사용
+#### 변경되지 않은 저장 시 중복 원격 쓰기 문제 해결
 
-Redis/Valkey 압축(`compress_data`)이 이제 Symfony L2 캐시에 대해 기본적으로 활성화되어 메모리 사용량과 네트워크 트래픽을 줄이고 레거시 캐시 구현의 기본 동작에 맞게 조정됩니다.
+변경되지 않은 콘텐츠로 캐시 항목을 저장해도 원격(Valkey) 백엔드에 대한 쓰기가 트리거됩니다. 이제 콘텐츠가 변경되지 않으면 저장을 생략하여 불필요한 원격 쓰기를 줄일 수 있습니다.
+
+#### 고정 L1 크기 기반 제거(cleanup_percentage)
+
+L1 크기 기반 제거에 사용된 `cleanup_percentage` 임계값이 정리를 일관되게 트리거하지 않았습니다. 이제 L1 캐시 제거에서 구성된 `cleanup_percentage`을(를) 올바르게 적용합니다.
+
+#### 부실 캐시에 대한 재생성 잠금을 추가했습니다.
+
+`use_stale_cache`이(가) 활성화되어 있고 항목의 원격 복사본을 일시적으로 사용할 수 없는 경우 이제 한 프로세스만 단기 잠금을 획득하여 해당 항목을 다시 생성합니다. 동일한 항목에 대한 다른 동시 요청은 기존 로컬 값을 직접 재생성하는 대신 계속 처리되므로 재생성 스탬프와 중복 백엔드 로드가 줄어듭니다.
 
 #### 영향
 
-- Valkey 지원 Symfony L2 캐시 구축을 위해 중복 파일 시스템 태그 인덱스 쓰기를 제거합니다.
-- 디스크 I/O를 줄이고 캐시 쓰기 성능을 향상시킵니다.
-- `var/cache/symfony/tags/` 디렉터리의 불필요한 증가를 방지합니다.
-- 파일 기반 캐시 배포가 캐시 무효화 동작을 유지하면서 구성된 `cache_dir`을(를) 일관되게 사용하도록 합니다.
-- TTL 기반 재생성 잠금 및 적절한 L1 태그 정리를 통해 오래된 캐시 항목을 제거합니다.
-- 기본적으로 `compress_data`을(를) 사용하도록 설정하여 메모리 사용량 및 네트워크 트래픽을 줄입니다.
+- Valkey 지원 Symfony L2 캐시 배포를 위한 중복 파일 시스템 태그 인덱스 쓰기를 제거하여 디스크 I/O를 줄이고 `var/cache/symfony/tags/` 디렉터리의 불필요한 증가를 방지합니다.
+- 파일 기반 캐시 배포가 캐시 무효화 동작을 유지하면서 로컬 태그 인덱스에 대해 구성된 `cache_dir`을(를) 일관되게 사용하도록 합니다.
+- 다시 태깅한 후 오래된 태그 멤버십이 남아 있어 잘못된 캐시 무효화를 방지합니다.
+- 변경되지 않은 캐시 저장에 대한 불필요한 원격 쓰기를 줄여 네트워크 및 백엔드 로드 감소.
+- 구성된 `cleanup_percentage` 임계값에서 L1 캐시 제거를 안정적으로 트리거합니다.
+- 모든 동시 요청 재구축 대신 키당 하나의 재생기를 선택하여 `use_stale_cache` 항목에 대한 재생성 속도를 줄입니다.
 
 자세한 구성 옵션은 다음을 참조하십시오.
 - [Symfony Cache를 사용한 Valkey 캐시 구성](valkey-pg-cache.md)
