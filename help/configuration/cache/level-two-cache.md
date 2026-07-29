@@ -3,7 +3,7 @@ title: 성능 최적화를 위한 L2 캐시 구성
 description: 네트워크 트래픽을 줄이고 성능을 개선하기 위해 Adobe Commerce에서 L2 캐시를 구성하는 방법에 대해 알아봅니다. 기존 및 Symfony 구현 옵션을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -53,7 +53,7 @@ Commerce은 해시된 데이터 버전을 원격 캐시에 저장하고, 일반 
 
 캐시 구성 지침은 배포 유형에 따라 다릅니다.
 
-- **Cloud의 Adobe Commerce에 대해**&#x200B;에서 `.magento.env.yaml`의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
+- **Cloud의 Adobe Commerce에 대해**&#x200B;에서 `.magento.env.yaml`의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
 
 - **Redis를 지원하는 Adobe Commerce 온-프레미스 버전의 경우**&#x200B;에서 다음 예제를 사용하여 `app/etc/env.php` 파일의 기존 캐시 섹션을 수정하거나 바꾸세요.
 
@@ -333,7 +333,7 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
 
 >[!NOTE]
 >
->이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. 최신 패치 릴리스 정보는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 참조하십시오.
+>이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. 최신 패치 릴리스 정보는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 참조하십시오.
 
 #### 최적화된 Sympony L2 캐시 태그 스토리지
 
