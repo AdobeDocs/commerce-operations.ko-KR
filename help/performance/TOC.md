@@ -5,8 +5,8 @@ feature: Best Practices
 topic: Administration, Commerce, Development, Performance
 source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 4%
+source-wordcount: '52'
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 - [구성](configuration.md)
 - [배포 흐름](deployment-flow.md)
 - 고급 개념 {#concepts}
-   - [고급 설정](advanced-setup.md)
-   - [고급 [!DNL JavaScript] 번들](advanced-js-bundling.md)
-   - [GraphQL 애플리케이션 서버](application-server.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+  - [고급 설정](advanced-setup.md)
+  - [고급 [!DNL JavaScript] 번들](advanced-js-bundling.md)
+  - [GraphQL 애플리케이션 서버](application-server.md)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

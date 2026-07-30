@@ -6,7 +6,7 @@ feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 
 #### 속성 집합 구성 검토
 
-1. [사이트 데이터베이스에 연결](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [사이트 데이터베이스에 연결](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. MySQL을 사용하여 속성 세트 수 찾기
 
@@ -179,7 +179,7 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 
 범주에 제품이 너무 많으면 상점 카탈로그 구성을 업데이트하여 **페이지당 모든 제품 허용** 옵션을 비활성화하십시오.
 
-이 옵션을 비활성화하면 Adobe Commerce은 제품 목록 상점 페이지 매김 컨트롤을 사용하여 상점 첫 번째 구성 요소에 표시되는 제품 수를 관리합니다. 자세한 내용은 [페이지 매김 컨트롤 구성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=ko#configure-the-pagination-controls)을 참조하십시오.
+이 옵션을 비활성화하면 Adobe Commerce은 제품 목록 상점 페이지 매김 컨트롤을 사용하여 상점 첫 번째 구성 요소에 표시되는 제품 수를 관리합니다. 자세한 내용은 [페이지 매김 컨트롤 구성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls)을 참조하십시오.
 
 ## 제품 SKU 제한
 
@@ -197,12 +197,12 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 제품 수(SKU)를 줄이려면 다음 전략을 사용하십시오.
 
 - 승수 최소화—
-   - 웹 사이트를 통합하면 승수가 줄어듭니다.
-   - 사용자 지정 가격에 대해 대체 제품 기능을 사용하여 공유 카탈로그 및 고객 그룹 승수를 바꿉니다.
-   - 고객 그룹과 공유 카탈로그 모두 스토어에 있는 유효한 SKU 수에 대한 승수로 작동합니다.
+  - 웹 사이트를 통합하면 승수가 줄어듭니다.
+  - 사용자 지정 가격에 대해 대체 제품 기능을 사용하여 공유 카탈로그 및 고객 그룹 승수를 바꿉니다.
+  - 고객 그룹과 공유 카탈로그 모두 스토어에 있는 유효한 SKU 수에 대한 승수로 작동합니다.
 - 카탈로그 재구성—
-   - 범주에 할당된 제품 수를 줄입니다.
-   - 웹 사이트, 고객 그룹, 공유 카탈로그, 제품 수 또는 구성 가능한 제품 옵션 수를 줄여 SKU 수를 줄입니다.
+  - 범주에 할당된 제품 수를 줄입니다.
+  - 웹 사이트, 고객 그룹, 공유 카탈로그, 제품 수 또는 구성 가능한 제품 옵션 수를 줄여 SKU 수를 줄입니다.
 - 별도의 제품을 만들지 않고 사용자 지정 옵션을 사용하여 더 많은 제품 변형을 제공합니다.
 - 각 스토어 또는 고객 그룹별로 가격을 다르게 지정할 수 있으므로 유효 SKU에 여러 잠재적 가격 순열이 포함될 수 있다는 점을 고려합니다.
 - 모듈과 같이 사용하지 않는 시스템 구성 요소를 비활성화하거나 제거합니다. [모듈 제거](../../../installation/tutorials/uninstall-modules.md)를 참조하십시오.
@@ -241,11 +241,11 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 다음 모범 사례에 따라 장바구니에 있는 항목에 대한 판매 및 판촉을 구성하십시오.
 
 - **판매 규칙(장바구니 가격 규칙)**
-   - 사용하지 않는 규칙을 관리하고 제거합니다.
-   - 가장 효율적인 일치를 위해 엄격한 규칙 조건(예: 속성 또는 범주 필터)을 추가합니다.
+  - 사용하지 않는 규칙을 관리하고 제거합니다.
+  - 가장 효율적인 일치를 위해 엄격한 규칙 조건(예: 속성 또는 범주 필터)을 추가합니다.
 - **쿠폰**
-   - 사용하지 않거나 만료된 쿠폰을 제거합니다.
-   - 캠페인 요구 사항을 충족하는 데 필요한 쿠폰 수만 생성합니다.
+  - 사용하지 않거나 만료된 쿠폰을 제거합니다.
+  - 캠페인 요구 사항을 충족하는 데 필요한 쿠폰 수만 생성합니다.
 
 ### 영향을 받는 제품 및 버전
 
