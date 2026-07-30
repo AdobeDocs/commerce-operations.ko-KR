@@ -7,7 +7,7 @@ exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
 type: Troubleshooting
 source-git-commit: 036c1b81d9ec8f55f002446a8ea6078c6f8014d9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-64753 패치는 선택한 스토어의 서비스 반경 밖에 새 배송 �
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -36,8 +36,8 @@ ACSD-64753 패치는 선택한 스토어의 서비스 반경 밖에 새 배송 �
 
 <u>재현 단계</u>:
 
-1. **[!UICONTROL In-Store Delivery]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]**(으)로 이동하여 **[!UICONTROL In-Store Delivery]**&#x200B;을(를) 사용하도록 설정합니다.
-1. [!DNL Google]에 대한 올바른 [!DNL Google Distance Provider] API 키를 제공하십시오. 이렇게 하려면 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**(으)로 이동합니다.
+1. **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]**(으)로 이동하여 **[!UICONTROL In-Store Delivery]**&#x200B;을(를) 사용하도록 설정합니다.
+1. [!DNL Google Distance Provider]에 대한 올바른 [!DNL Google] API 키를 제공하십시오. 이렇게 하려면 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]**(으)로 이동합니다.
 1. 새 소스(**[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]**)를 추가하고 다음 값을 설정하십시오.
    * **[!UICONTROL Latitude]**: *-41.917344*
    * **[!UICONTROL Longitude]**: *-88.102569*
@@ -66,8 +66,8 @@ ACSD-64753 패치는 선택한 스토어의 서비스 반경 밖에 새 배송 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html).
 
 ## 관련 읽기
 
