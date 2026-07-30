@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Adobe Commerce 2.4.9용 `symfony_l2` 캐시를 사용하려면 다음 단계를 
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9에는 ACP2E-5132 패치를 통해 캐시 태그 저장, 무효화 및 압축 등 Symfony L2 캐시가 개선되어 디스크 I/O가 줄어들고 오래된 캐시 항목이 제거되며 메모리 및 네트워크 오버헤드가 감소합니다. _Adobe Commerce 구성 가이드_&#x200B;에서 [향상된 Symfony L2 캐시 성능 및 안정성](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md)을(를) 참조하십시오. 패치 ACP2E-5132 패치는 클라우드 패치 패치에 포함되며 ece-tools를 통해 자동으로 적용됩니다.
+>Adobe Commerce 2.4.9용 패치 ACP2E-5132는 Symfony L2 캐시 성능과 안정성을 개선합니다. 즉, 최적화된 태그 저장소, 오래된 캐시 재생성 잠금, 다시 태그 지정 후 오래된 태그 멤버십, 변경되지 않은 저장에 대한 중복 원격 쓰기, L1 크기 기반 제거(`cleanup_percentage`) 등에 대한 수정 사항이 있습니다. 이를 통해 디스크 I/O 및 백엔드 로드를 줄이는 동시에 캐시 일관성을 향상시킬 수 있습니다. _Adobe Commerce 구성 가이드_&#x200B;에서 [향상된 Symfony L2 캐시 성능 및 안정성](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)을(를) 참조하십시오.
+>
+>이 패치는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)&#x200B;(종속성: `ece-tools`)에 포함되어 있으며 최신 `ece-tools` 버전으로 업데이트할 때 배포 중에 자동으로 적용됩니다. 패치를 받으려면 `ece-tools`의 최신 버전으로 업데이트하십시오.
 
 #### Symfony L2 캐시 구성 사용자 정의
 
