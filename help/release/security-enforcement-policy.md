@@ -2,28 +2,15 @@
 title: '보안 정책: 필수 작업 및 기한'
 description: 기한, 필수 작업 및 위험을 포함하여 Cloud 버전 및 소프트웨어 종속성에서 지원되지 않는 Adobe Commerce에 대한 보안 강화에 대해 알아봅니다.
 TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: f2261633-201d-46c5-8a66-999e70527a83
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
-hide: true
-source-git-commit: 0bc5d38693008f2203fe496773aa90c0418d566e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
+nudge: true
+source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
 workflow-type: tm+mt
 source-wordcount: 1983
 ht-degree: 0%
@@ -82,7 +69,7 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 
    현재 버전은 관리 페이지의 오른쪽 하단에 표시됩니다.
 
-1. 버전이 관리자에 표시되지 않으면 [Adobe Commerce 명령줄 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"}를 사용하여 버전 명령을 실행하십시오.
+1. 버전이 관리자에 표시되지 않으면 [Adobe Commerce 명령줄 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"}를 사용하여 버전 명령을 실행하십시오.
 
    ```shell
    bin/magento --version
@@ -97,7 +84,7 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 
 ## 이 보안 권한이 중요한 이유
 
-공급업체 지원 종료를 통과한 소프트웨어는 더 이상 보안 패치를 받지 않으므로 해당 소프트웨어의 알려진 보안 문제를 해결할 수 없습니다. 또한 [Adobe 라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)에 따라 다음을 수행합니다.
+공급업체 지원 종료를 통과한 소프트웨어는 더 이상 보안 패치를 받지 않으므로 해당 소프트웨어의 알려진 보안 문제를 해결할 수 없습니다. 또한 [Adobe 라이프사이클 정책](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)에 따라 다음을 수행합니다.
 
 * **Adobe Commerce 버전 2.4.4 및 2.4.5**&#x200B;은(는) 이제 2027년 5월 31일까지 핵심 응용 프로그램에 대해 제한적이고 분리된 보안 수정 사항만 받습니다. 이 제한된 지원에는 품질 수정 사항, 애플리케이션 종속성(예: PHP)에 대한 호환성 지원 또는 플랫폼 종속성 업데이트가 포함되어 있지 않습니다
 
@@ -136,7 +123,7 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 
 Adobe은 이러한 소프트웨어 종속성을 직접 업그레이드하는 데 도움이 됩니다.
 
-* **시작하기:** 업그레이드해야 하는 환경과 관련된 종속성을 나열하는 [지원 티켓을 엽니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). 우리 팀이 작업 일정을 잡을 수 있도록 시행 날짜 최소 30일 전에 티켓을 여십시오.
+* **시작하기:** 업그레이드해야 하는 환경과 관련된 종속성을 나열하는 [지원 티켓을 엽니다](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). 우리 팀이 작업 일정을 잡을 수 있도록 시행 날짜 최소 30일 전에 티켓을 여십시오.
 
 * **가동 중지 시간:** Adobe에서 예약할 때 필요한 기간을 확인합니다.
 
@@ -169,7 +156,7 @@ Adobe Commerce on Cloud 버전 2.4.9 및 Adobe Commerce as a Cloud Service에 �
 
 | | Adobe Commerce on Cloud 버전 2.4.9 | Adobe Commerce as a Cloud Service |
 | --- | --- | --- |
-| 정의 | 전체 보안 적용 범위, 품질 수정 및 플랫폼 종속성 업데이트가 포함된 최신 Adobe Commerce 릴리스입니다. | 업그레이드 오버헤드 없이 지속적인 혁신을 위해 구축된 Adobe의 완전 관리 상거래 플랫폼. [자세히 알아보기](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/overview) |
+| 정의 | 전체 보안 적용 범위, 품질 수정 및 플랫폼 종속성 업데이트가 포함된 최신 Adobe Commerce 릴리스입니다. | 업그레이드 오버헤드 없이 지속적인 혁신을 위해 구축된 Adobe의 완전 관리 상거래 플랫폼. [자세히 알아보기](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) |
 | 다음과 같은 경우에 적합합니다. | 현재로서는 인프라, 업그레이드 및 패치를 계속 관리해야 합니다. 준비되면 언제든지 Adobe Commerce as a Cloud Service으로 마이그레이션할 수 있습니다. | 업그레이드 주기를 길게 두어 총소유비용을 절감하고 Adobe의 최신 기능을 별도의 노력 없이 자동으로 제공하고자 합니다. |
 | 주요 이점 | 기존 설정을 유지하면서 보안 요구 사항을 충족합니다. | 번개처럼 빠른 에지 전송 상점, 확장성이 뛰어난 카탈로그, 기본 디지털 에셋 관리 및 내장된 생성 AI를 Adobe에서 관리하는 인프라에 탑재합니다. |
 
@@ -187,16 +174,16 @@ Adobe은 업그레이드든 마이그레이션이든 간에 최대한 원활하�
 
 * **업그레이드 호환성 보고서:** Adobe은 시간 및 비용 범위를 포함하여 Adobe Commerce 버전 2.4.9로 업그레이드하는 데 필요한 사항을 정확히 식별하는 자세한 보고서를 제공합니다. [업그레이드 호환성 보고서를 생성합니다](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **소프트웨어 종속성 업그레이드:** 소프트웨어 종속성을 직접 업그레이드할 수 없으므로 Adobe에 대한 [지원 티켓을 여십시오](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}. 업그레이드를 처리하십시오. 자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}을 참조하세요.
+* **소프트웨어 종속성 업그레이드:** 소프트웨어 종속성을 직접 업그레이드할 수 없으므로 Adobe에 대한 [지원 티켓을 여십시오](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}. 업그레이드를 처리하십시오. 자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}을 참조하세요.
 
 **Adobe Commerce as a Cloud Service으로 마이그레이션하기로 선택한 경우**
 
-Adobe은 Adobe Commerce as a Cloud Service으로 마이그레이션하는 데 드는 비용과 시간을 줄이는 도구를 제공합니다. 이것은 당신에게 아무 비용도 들지 않습니다. 이러한 도구는 마이그레이션에만 적용되며 Cloud의 Adobe Commerce에서 버전을 업그레이드하는 데 사용되지 않습니다. 마이그레이션 경로 및 단계를 포함한 전체 마이그레이션 가이드는 [마이그레이션 개요](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/overview)를 참조하십시오.
+Adobe은 Adobe Commerce as a Cloud Service으로 마이그레이션하는 데 드는 비용과 시간을 줄이는 도구를 제공합니다. 이것은 당신에게 아무 비용도 들지 않습니다. 이러한 도구는 마이그레이션에만 적용되며 Cloud의 Adobe Commerce에서 버전을 업그레이드하는 데 사용되지 않습니다. 마이그레이션 경로 및 단계를 포함한 전체 마이그레이션 가이드는 [마이그레이션 개요](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)를 참조하십시오.
 
-* **마이그레이션 평가:** 사용자 지정의 마이그레이션 복잡성을 평가합니다. [마이그레이션 평가 도구 개요](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/migration-tools/assessment)를 참조하세요.
+* **마이그레이션 평가:** 사용자 지정의 마이그레이션 복잡성을 평가합니다. [마이그레이션 평가 도구 개요](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment)를 참조하세요.
 
 * **데이터 마이그레이션:** [대량 및 증분 데이터 마이그레이션 도구](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)가 데이터를 새 Adobe Commerce as a Cloud Service 환경으로 이동합니다.
 
 * **[!DNL Adobe Developer App Builder]** 및 **[!DNL Commerce Storefront powered by Edge Delivery Services]**&#x200B;을(를) 포함한 Adobe의 [AI 지원 마이그레이션 및 개발자 도구](https://developer.adobe.com/commerce/extensibility/developer-agent/)은(는) 상점 현대화 및 확장 플랫폼 재구성을 가속화하는 데 도움이 됩니다.
 
-질문이 있는 경우 계정 팀, 솔루션 계정 관리자, 갱신 전문가에게 문의하거나 [지원 서비스](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
+질문이 있는 경우 계정 팀, 솔루션 계정 관리자, 갱신 전문가에게 문의하거나 [지원 서비스](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
