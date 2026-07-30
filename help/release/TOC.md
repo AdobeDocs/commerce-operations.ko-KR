@@ -3,8 +3,7 @@ user-guide-title: 릴리스 정보
 user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴리스 정보를 한 곳에서 액세스할 수 있습니다.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-nudge: true
-source-git-commit: ba745eae9c3e31fec40d317b0e35a8d0ff37971a
+source-git-commit: e124490ef2c131d866eb583fad934435ace06b8f
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 30%
@@ -54,7 +53,7 @@ ht-degree: 30%
 - [Beta 릴리스](beta.md)
 - 계획 및 정책 {#planning}
   - [라이프사이클 정책](lifecycle-policy.md)
-  - {hide-from-toc}[보안 시행 정책:Required 작업 및 기한](security-enforcement-policy.md)
+  - {hide-from-toc}[보안 정책: 필요한 작업 및 기한](security-enforcement-policy.md)
   - [버전 업그레이드 시행 정책](version-upgrade-enforcement-policy.md)
   - [버전 관리 정책](versioning-policy.md)
   - [릴리스 일정](schedule.md)
@@ -63,4 +62,4 @@ ht-degree: 30%
 - 패키지 {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
