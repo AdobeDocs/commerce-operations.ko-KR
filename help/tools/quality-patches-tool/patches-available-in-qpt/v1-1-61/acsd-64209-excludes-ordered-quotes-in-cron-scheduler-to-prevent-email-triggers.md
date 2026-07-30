@@ -7,7 +7,7 @@ exl-id: 51ba0edc-ad0c-4e32-acd7-2337a62bff53
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ cron 스케줄러는 상태가 **[!UICONTROL Ordered]**&#x200B;인 견적을 제
 
 
 1. *관리자* 사이드바에서 **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL B2B Features]**(으)로 이동하여 회사 및 B2B 견적을 사용하도록 설정합니다.
-1. **[!UICONTROL Default Expiration Period]**&#x200B;관리자&#x200B;*>* > *>* > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]**&#x200B;에서 **[!UICONTROL Sales]**&#x200B;을(를) **[!UICONTROL Quotes]** 1 **[!UICONTROL General]**(으)로 설정합니다.
+1. *관리자* > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]**&#x200B;에서 **[!UICONTROL Default Expiration Period]**&#x200B;을(를) *1*(으)로 설정합니다.
 1. 회사를 만들고 활성화한 다음 회사 관리자로 로그인합니다.
 1. 장바구니에 제품을 추가합니다.
 1. 견적을 요청합니다.
@@ -62,7 +62,7 @@ cron 스케줄러는 상태가 **[!UICONTROL Ordered]**&#x200B;인 견적을 제
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 ## 관련 읽기

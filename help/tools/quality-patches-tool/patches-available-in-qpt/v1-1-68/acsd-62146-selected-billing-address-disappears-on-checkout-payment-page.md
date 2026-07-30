@@ -4,13 +4,13 @@ description: 주소 검색이 활성화되고 고객 주소 수 제한이 1로 �
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3de3de80383372d0e3bec5485fd65b9d70fe8860
+exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
+source-git-commit: 4e6eaf9519fd74e407c25992d367babfddf404a7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62146: 선택한 청구 주소가 결제 체크아웃 페이지에서 사라짐
 
@@ -58,7 +58,7 @@ ACSD-62146 패치는 주소 검색을 사용하도록 설정하고 [!UICONTROL N
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 ## 관련 읽기

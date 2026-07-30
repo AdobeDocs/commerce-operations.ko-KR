@@ -46,7 +46,7 @@ ACSD-66093 패치는 게스트 고객의 **[!UICONTROL First Name]** 및 **[!UIC
 
 <u>예상 결과</u>:
 
-**[!UICONTROL First Name]**&#x200B;이름이 잘못된 것처럼 **[!UICONTROL Last Name]** 및 *필드가 올바르지 않음을 나타내는 유효성 검사 메시지가 표시됩니다. 성( )이 올바르지 않습니다.*&#x200B;과(와) 순서를 지정하면 안 됩니다.
+*이름이 잘못된 것처럼&#x200B;**[!UICONTROL First Name]**&#x200B;및&#x200B;**[!UICONTROL Last Name]**&#x200B;필드가 올바르지 않음을 나타내는 유효성 검사 메시지가 표시됩니다. 성(!*)이 잘못되었습니다. 그리고 주문을 하지 말아야 합니다.
 
 <u>실제 결과</u>:
 
@@ -58,7 +58,7 @@ ACSD-66093 패치는 게스트 고객의 **[!UICONTROL First Name]** 및 **[!UIC
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 ## 관련 읽기

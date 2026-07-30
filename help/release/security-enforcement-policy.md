@@ -22,8 +22,8 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
-hide: true
-source-git-commit: 0bc5d38693008f2203fe496773aa90c0418d566e
+nudge: true
+source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
 workflow-type: tm+mt
 source-wordcount: 1983
 ht-degree: 0%
