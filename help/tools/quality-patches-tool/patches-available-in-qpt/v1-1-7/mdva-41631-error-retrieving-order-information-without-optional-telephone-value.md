@@ -43,16 +43,16 @@ Adobe Commerce(모든 배포 방법) 2.4.1 - 2.4.3-p1
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  customer &lbrace;
+{
+  customer {
     firstname
     lastname
     suffix
     email
 
-    orders(filter:{number:{eq:"000000001"}&#x200B;})&lbrace;
-        items&lbrace;
-          billing_address &lbrace;
+    orders(filter:{number:{eq:"000000001"}}){
+        items{
+          billing_address {
 firstname
 lastname
 street
@@ -62,8 +62,8 @@ region_id
 postcode
 telephone
 country_code
-&rbrace;
-shipping_address &lbrace;
+}
+shipping_address {
 firstname
 lastname
 street
@@ -73,11 +73,11 @@ region_id
 postcode
 telephone
 country_code
-&rbrace;
-        &rbrace;
-    &rbrace;
-  &rbrace;
-&rbrace;
+}
+        }
+    }
+  }
+}
 </code>
 </pre>
 
