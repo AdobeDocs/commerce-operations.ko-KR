@@ -2,9 +2,10 @@
 title: 전제 조건 완료
 description: 다음 전제 조건 단계를 완료하여 Adobe Commerce 프로젝트를 업그레이드하도록 준비합니다.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Adobe Commerce을 실행하는 데 필요한 사항을 이해하는 것이 중�
 
 >[!NOTE]
 >
->Adobe Commerce on cloud infrastructure Pro 프로젝트의 경우 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하려면 [지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) 티켓을 만들어야 합니다. 필요한 서비스 변경 사항을 표시하고 업데이트된 `.magento.app.yaml` 및 `services.yaml` 파일과 PHP 버전을 티켓에 포함하십시오. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)를 참조하십시오.
+>Adobe Commerce on cloud infrastructure Pro 프로젝트의 경우 스테이징 및 프로덕션 환경에서 서비스를 설치하거나 업데이트하려면 [지원](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) 티켓을 만들어야 합니다. 필요한 서비스 변경 사항을 표시하고 업데이트된 `.magento.app.yaml` 및 `services.yaml` 파일과 PHP 버전을 티켓에 포함하십시오. 클라우드 인프라 팀이 프로젝트를 업데이트하는 데 최대 48시간이 걸릴 수 있습니다. [지원되는 소프트웨어 및 서비스](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)를 참조하십시오.
 
 ## 지원되는 검색 엔진이 설치되었는지 확인
 

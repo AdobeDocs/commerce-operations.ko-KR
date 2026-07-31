@@ -2,7 +2,8 @@
 title: 고급 온-프레미스 설치
 description: Adobe Commerce 온-프레미스 배포를 위한 고급 설치 시나리오에 대해 알아봅니다. 복잡한 구성 및 사용자 지정 설정 옵션을 살펴보십시오.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -119,7 +120,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 설치 중 또는 후에 관리자 사용자를 만들 수 있습니다. 설치 중에 사용자를 만드는 경우 모든 관리자 자격 증명 변수가 필요합니다. [샘플 localhost 설치](#sample-localhost-installations)를 참조하십시오.
 
-다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
+다음 표에서는 사용 가능한 설치 매개 변수의 수는 많지만 모두 제공되지 않습니다. 전체 목록이 필요하면 [명령줄 도구 참조](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)를 참조하십시오.
 
 | 이름 | 값 | 필수? |
 |--- |--- |--- |
@@ -246,9 +247,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 * 관리자는 다음과 같은 속성을 갖습니다.
 
-   * 이름과 성은 `Magento User`입니다.
-   * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
-   * 전자 메일 주소는 `user@example.com`입니다.
+  * 이름과 성은 `Magento User`입니다.
+  * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
+  * 전자 메일 주소는 `user@example.com`입니다.
 
 * 기본 언어는 `en_US`입니다(미국 영어).
 * 기본 통화는 미국 달러입니다
@@ -314,9 +315,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 관리자는 다음과 같은 속성을 갖습니다.
 
-   * 이름과 성은 `Magento User`입니다.
-   * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
-   * 전자 메일 주소는 `user@example.com`입니다.
+  * 이름과 성은 `Magento User`입니다.
+  * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
+  * 전자 메일 주소는 `user@example.com`입니다.
 
 * 기본 언어는 `en_US`입니다(미국 영어).
 * 기본 통화는 미국 달러입니다

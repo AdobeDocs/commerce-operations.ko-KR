@@ -3,7 +3,8 @@ title: 검색 엔진에 대한 Apache 구성
 description: Adobe Commerce의 온-프레미스 설치용 Apache 웹 서버를 사용하여 검색 엔진을 구성하려면 다음 단계를 따르십시오.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -130,11 +131,11 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 * `<username>`은(는) 다음과 같을 수 있습니다.
 
-   * cron 설정: 웹 서버 사용자 또는 다른 사용자.
+  * cron 설정: 웹 서버 사용자 또는 다른 사용자.
 
   이 예제에서는 웹 서버 사용자를 사용하지만 사용자의 선택은 사용자가 결정합니다.
 
-   * Elasticsearch 설정: 이 예제에서 사용자 이름은 `magento_elasticsearch`입니다.
+  * Elasticsearch 설정: 이 예제에서 사용자 이름은 `magento_elasticsearch`입니다.
 
 * `<password file name>`은(는) 숨겨진 파일(`.`(으)로 시작)이어야 하며 사용자 이름을 반영해야 합니다. 자세한 내용은 이 섹션의 뒷부분에서 예를 참조하십시오.
 

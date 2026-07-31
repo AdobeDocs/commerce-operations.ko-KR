@@ -2,7 +2,8 @@
 title: 스토어 구성
 description: 보안 설치 옵션을 포함하여 배포 구성 및 데이터베이스 스키마 설정 후 명령줄에서 Adobe Commerce 스토어를 구성하는 방법에 대해 알아봅니다.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

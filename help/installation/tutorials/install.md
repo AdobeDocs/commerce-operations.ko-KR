@@ -2,9 +2,10 @@
 title: Adobe Commerce 설치
 description: 소유한 인프라에 Adobe Commerce을 설치하려면 다음 단계를 따르십시오.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -93,7 +94,7 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 |--- |--- |--- |
 | `--base-url` | 다음 형식 중 하나로 관리자 및 상점 앞에 액세스하는 데 사용할 기본 URL입니다.<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**참고:** 체계(http:// 또는 https://)와 후행 슬래시가 모두 필요합니다.<br><br>`<your install dir>` 는 애플리케이션을 설치할 docroot 상대 경로입니다. 웹 서버와 가상 호스트를 설정하는 방법에 따라 경로가 magento2이거나 비어 있을 수 있습니다.<br><br>localhost에서 응용 프로그램에 액세스하려면 `http://127.0.0.1/<your install dir>/` 또는 `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}`을(를) 사용할 수 있습니다. 은(는) 가상 호스트 설정 또는 Docker와 같은 가상화 환경으로 정의된 기본 URL을 나타냅니다. 예를 들어 호스트 이름 commerce.example.com을 사용하여 가상 호스트를 설정하는 경우 `--base-url={{base_url}}`을(를) 사용하여 응용 프로그램을 설치하고 `http://commerce.example.com/admin`과(와) 같은 URL로 관리자에 액세스할 수 있습니다. | 예 |
 | `--backend-frontname` | 관리자에 액세스할 수 있는 URI(Uniform Resource Identifier)입니다. 이 매개 변수를 생략하면 응용 프로그램에서 다음 패턴으로 임의의 URI를 생성할 수 있습니다. <code>admin_jkgdfq</code>.<br><br>보안을 위해 임의의 URI를 사용하는 것이 좋습니다. 무작위 URI는 해커나 악성 소프트웨어가 악용하기 더 어렵다.<br><br>설치가 끝날 때 URI가 표시됩니다. 나중에 언제든지 `magento info:adminuri` 명령을 사용하여 표시할 수 있습니다.<br><br>값을 입력하기로 선택한 경우 admin, backend와 같은 일반적인 단어를 사용하지 않는 것이 좋습니다. 관리자 URI에는 영숫자 값과 밑줄 문자(`_`)만 포함될 수 있습니다. | 아니요 |
-| `--db-host` | 다음 중 하나를 사용합니다.<br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소.<br><br>- `localhost`(기본값) 또는 `127.0.0.1`(데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우).localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1`을(를) 사용하면 클라이언트 라이브러리에서 TCP 프로토콜을 사용합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php)를 참조하십시오.<br><br>**참고:** 데이터베이스 서버 포트를 www.example.com과 같은 호스트 이름으로 지정할 수 있습니다.:9000 | 예 |
+| `--db-host` | 다음 중 하나를 사용합니다.<br><br>- 데이터베이스 서버의 정규화된 호스트 이름 또는 IP 주소.<br><br>- `localhost`(기본값) 또는 `127.0.0.1`(데이터베이스 서버가 웹 서버와 동일한 호스트에 있는 경우).localhost는 MySQL 클라이언트 라이브러리가 UNIX 소켓을 사용하여 데이터베이스에 연결함을 의미합니다. `127.0.0.1`을(를) 사용하면 클라이언트 라이브러리에서 TCP 프로토콜을 사용합니다. 소켓에 대한 자세한 내용은 [PHP PDO_MYSQL 설명서](https://www.php.net/manual/en/ref.pdo-mysql.php)를 참조하십시오.<br><br>**참고:** 데이터베이스 서버 포트를 www.example.com:9000과 같은 호스트 이름으로 지정할 수 있습니다. | 예 |
 | `--db-name` | 데이터베이스 테이블을 설치할 데이터베이스 인스턴스의 이름입니다.<br><br>기본값은 `magento2`입니다. | 예 |
 | `--db-user` | 데이터베이스 인스턴스 소유자의 사용자 이름.<br><br>기본값은 `root`입니다. | 예 |
 | `--db-password` | 데이터베이스 인스턴스 소유자의 암호입니다. | 예 |
@@ -212,9 +213,9 @@ Adobe Commerce 버전 2.2.8 이상에서는 설치 중 또는 설치 후에 관�
 
 * 관리자는 다음과 같은 속성을 갖습니다.
 
-   * 이름과 성은 `Commerce User`입니다.
-   * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
-   * 전자 메일 주소는 `user@example.com`입니다.
+  * 이름과 성은 `Commerce User`입니다.
+  * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
+  * 전자 메일 주소는 `user@example.com`입니다.
 
 * 기본 언어는 `en_US`입니다(미국 영어).
 * 기본 통화는 미국 달러입니다
@@ -280,9 +281,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 관리자는 다음과 같은 속성을 갖습니다.
 
-   * 이름과 성은 `Commerce User`입니다.
-   * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
-   * 전자 메일 주소는 `user@example.com`입니다.
+  * 이름과 성은 `Commerce User`입니다.
+  * 사용자 이름은 `admin`이고 암호는 `admin123`입니다.
+  * 전자 메일 주소는 `user@example.com`입니다.
 
 * 기본 언어는 `en_US`입니다(미국 영어).
 * 기본 통화는 미국 달러입니다

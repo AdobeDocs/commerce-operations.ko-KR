@@ -3,7 +3,8 @@ title: PHP 설정
 description: 다음 단계에 따라 필요한 PHP 확장 프로그램을 설치하고 Adobe Commerce의 온프레미스 설치에 필요한 PHP 설정을 구성합니다.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 >
 >지원되는 PHP 버전은 Adobe Commerce 릴리스에 따라 다릅니다. 설치 중인 릴리스에서 지원하는 정확한 PHP 버전은 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
 
-클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
+클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
 
 ## PHP 프로세스 제어
 
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe은 다음 사항을 권장합니다.
 
-   - 코드 컴파일 또는 정적 자산 배포, `1G`
-   - 디버깅, `2G`
-   - 테스트 중, `~3-4G`
+  - 코드 컴파일 또는 정적 자산 배포, `1G`
+  - 디버깅, `2G`
+  - 테스트 중, `~3-4G`
 
 - PHP `realpath_cache_size` 및 `realpath_cache_ttl`의 값을 권장 설정으로 늘립니다.
 
@@ -206,8 +207,8 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 PHP 문제 해결에 대한 도움말은 다음 Adobe Commerce 지원 문서를 참조하십시오.
 
 - [브라우저에서 Adobe Commerce에 액세스할 때 PHP 버전 오류 또는 404 오류 발생](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP 설정 오류](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHP 버전 준비 확인 문제](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [일반적인 PHP 치명적인 오류 및 솔루션](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP 설정 오류](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHP 버전 준비 확인 문제](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [일반적인 PHP 치명적인 오류 및 솔루션](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2026-05-11 20:38:54 -->

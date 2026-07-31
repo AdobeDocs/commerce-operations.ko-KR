@@ -3,7 +3,8 @@ title: 제품 기능
 description: 특정 릴리스 버전에서 사용할 수 있는 Adobe Commerce 기능에 대해 알아봅니다.
 recommendations: noCatalog
 exl-id: ad1c22a3-74bd-4742-a025-6c326a3e4ab6
-source-git-commit: 2657c83d5467e603a681521886e80592e3b335aa
+last-update: 2026-01-20T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '26'
 ht-degree: 0%

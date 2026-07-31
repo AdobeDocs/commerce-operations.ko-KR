@@ -3,9 +3,10 @@ title: 구현 단계
 description: Adobe Commerce 프로젝트의 구현 단계에 대한 모범 사례에 대해 알아봅니다.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-source-git-commit: 4d153a0d4bd30aadc78b755ed3b1a3bca2e78c29
+last-update: 2026-01-20T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '159'
 ht-degree: 7%
 
 ---
