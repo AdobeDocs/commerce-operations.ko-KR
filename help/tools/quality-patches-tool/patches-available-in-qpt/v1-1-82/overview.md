@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 9ea2dec8843119280f9ee291a89590024ddd2973
 workflow-type: tm+mt
-source-wordcount: 485
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -29,7 +24,7 @@ QPT v1.1.82에는 다음 패치가 포함됩니다.
 
 1. **ACP2E-4815**: 로그에 PHP 예외를 발생시킨 여러 GraphQL 문제를 수정하고, GraphQL을 통해 주문 후 생성된 고객 계정과의 주문 연결을 수정하고, HTTP 사양을 통해 GraphQL과의 응답을 정렬합니다.
 1. **ACP2E-4194**: GraphQL 응답이 잘못되거나 승인되지 않았거나 잘못된 요청에 대해 잘못된 HTTP 상태 코드를 반환하는 문제를 해결했습니다.
-1. **ACP2E-4547**: 관리자가 관리자의 **[!UICONTROL Add Products by SKU]**&#x200B;을(를) 사용하여 표준 카탈로그의 제품을 공유 카탈로그에 연결되어 있지 않은 고객 그룹에 할당된 회사의 협상 가능 견적에 추가할 수 없는 문제를 해결했습니다.
+1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: 관리자가 관리자의 **[!UICONTROL Add Products By SKU]**&#x200B;을(를) 사용하여 기본 카탈로그의 제품을 공유 카탈로그에 연결되어 있지 않은 고객 그룹에 할당된 회사의 주문에 추가할 수 없는 문제를 해결했습니다.
 1. **ACP2E-4593**: 다중 웹 사이트 배포의 보조 웹 사이트에서 웹 사이트 제한에 대해 표시되는 CMS 페이지가 잘못된 문제를 해결했습니다.
 1. **ACP2E-4682**: 견적 `isActive` 상태를 확인하는 Storefront 페이지를 방문하여 페이지를 로드할 때마다 빈 견적 레코드를 만드는 문제를 해결했습니다.
 1. **ACP2E-4695**: 카탈로그 규칙 인덱서가 과도한 메모리를 사용하고 완료하지 못해 불안정하고 메모리 부족 오류가 발생하는 문제를 해결했습니다.
