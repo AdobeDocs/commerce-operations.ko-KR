@@ -7,7 +7,7 @@ exl-id: a7d6bd43-4b8b-48c4-ae9a-4093ac3a4110
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ACSD-62629 패치는 위젯에 사용되는 제품 목록이 범주 조건을 �
 1. TEST 5라는 다른 [!UICONTROL simple product]을(를) 만들고 범주 1에 추가합니다.
 1. 전체 색인 재지정을 실행합니다.
 1. **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]**(으)로 이동하여 홈 페이지를 편집합니다.
-1. [!UICONTROL Products]이(가) *[!UICONTROL Appearance]*(으)로 설정되고 *[!UICONTROL Product Carousel]*&#x200B;이(가) 범주 2로 설정된 *[!UICONTROL Category]* 위젯을 추가합니다. 페이지를 저장합니다.
+1. *[!UICONTROL Appearance]*&#x200B;이(가) *[!UICONTROL Product Carousel]*(으)로 설정되고 *[!UICONTROL Category]*&#x200B;이(가) 범주 2로 설정된 [!UICONTROL Products] 위젯을 추가합니다. 페이지를 저장합니다.
 1. 프론트엔드로 이동하여 홈 페이지를 엽니다.
 
 <u>예상 결과</u>:
@@ -57,7 +57,7 @@ TEST 5(단순) 및 TEST 2(구성 가능) 제품이 모두 페이지에 있습니
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
 
 

@@ -2,9 +2,10 @@
 title: CLI 명령 사용 예
 description: 명령줄을 사용하여 개발 시스템에서 공유, 시스템별 및 중요 값을 설정하는 방법에 대한 예를 참조하십시오.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---

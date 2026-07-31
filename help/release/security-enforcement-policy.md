@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 
 ### 작업 1: 타사 소프트웨어 종속성 업그레이드
 
-소프트웨어에 따라 아래 표에 나와 있는 타임라인을 통해 지원되지 않는 모든 소프트웨어 종속성을 업그레이드해야 합니다. [클라우드 콘솔](https://console.adobecommerce.com/)에서 환경을 보고 이 [지침](#check-software-dependency-versions)을 사용하여 실행 중인 종속성 버전을 확인할 수 있습니다. 소프트웨어 종속성 업그레이드는 Cloud의 모든 Adobe Commerce 버전 2.4.4부터 2.4.9까지 적용됩니다.
+소프트웨어에 따라 아래 표에 나와 있는 타임라인을 통해 지원되지 않는 모든 소프트웨어 종속성을 업그레이드해야 합니다. [클라우드 콘솔](https://console.adobecommerce.com/)에서 환경을 보고 이 [지침](#how-to-check-the-versions-you-are-running)을 사용하여 실행 중인 종속성 버전을 확인할 수 있습니다. 소프트웨어 종속성 업그레이드는 Cloud의 모든 Adobe Commerce 버전 2.4.4부터 2.4.9까지 적용됩니다.
 
 | 종속성 | 버전 | 을(를) (으)로 업그레이드해야 함 | 시행일 |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 
 Adobe은 이러한 소프트웨어 종속성을 직접 업그레이드하는 데 도움이 됩니다.
 
-* **시작하기:** 업그레이드해야 하는 환경과 관련된 종속성을 나열하는 [지원 티켓을 엽니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). 우리 팀이 작업 일정을 잡을 수 있도록 시행 날짜 최소 30일 전에 티켓을 여십시오.
+* **시작하기:** 업그레이드해야 하는 환경과 관련된 종속성을 나열하는 [지원 티켓을 엽니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). 우리 팀이 작업 일정을 잡을 수 있도록 시행 날짜 최소 30일 전에 티켓을 여십시오.
 
 * **가동 중지 시간:** Adobe에서 예약할 때 필요한 기간을 확인합니다.
 
@@ -187,7 +187,7 @@ Adobe은 업그레이드든 마이그레이션이든 간에 최대한 원활하�
 
 * **업그레이드 호환성 보고서:** Adobe은 시간 및 비용 범위를 포함하여 Adobe Commerce 버전 2.4.9로 업그레이드하는 데 필요한 사항을 정확히 식별하는 자세한 보고서를 제공합니다. [업그레이드 호환성 보고서를 생성합니다](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **소프트웨어 종속성 업그레이드:** 소프트웨어 종속성을 직접 업그레이드할 수 없으므로 Adobe에 대한 [지원 티켓을 여십시오](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}. 업그레이드를 처리하십시오. 자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}을 참조하세요.
+* **소프트웨어 종속성 업그레이드:** 소프트웨어 종속성을 직접 업그레이드할 수 없으므로 Adobe에 대한 [지원 티켓을 여십시오](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}. 업그레이드를 처리하십시오. 자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}을 참조하세요.
 
 **Adobe Commerce as a Cloud Service으로 마이그레이션하기로 선택한 경우**
 

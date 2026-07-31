@@ -7,7 +7,7 @@ exl-id: 03fdaafe-5566-4b75-a0eb-e0cba3dad3e7
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ACSD-49286 패치는 페이지에 여러 제품 위젯이 있을 때 제품이 �
 <u>재현 단계</u>:
 
 1. 관리자에 로그인하고 **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Page]** > **[!UICONTROL Home Page]**(으)로 이동합니다.
-1. 콘텐츠 섹션에서 **[!UICONTROL Edit]**&#x200B;을(를) 사용하여 [!DNL Page Builder]을(를) 클릭합니다.
+1. 콘텐츠 섹션에서 [!DNL Page Builder]을(를) 사용하여 **[!UICONTROL Edit]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL Content]**&#x200B;에 두 개의 행 요소를 추가합니다.
 1. 두 행 요소에 제품을 추가합니다.
 1. 첫 번째 행에서 제품 모양을 [!UICONTROL Product Grid]&#x200B;(으)로 설정하고 표시할 카테고리를 선택합니다.
@@ -57,7 +57,7 @@ ACSD-49286 패치는 페이지에 여러 제품 위젯이 있을 때 제품이 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko). 
 
 ## 관련 읽기
@@ -65,7 +65,7 @@ ACSD-49286 패치는 페이지에 여러 제품 위젯이 있을 때 제품이 �
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [&#x200B; 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[!UICONTROL Quality Patches Tool]
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool][&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [[!DNL Quality Patches Tool] 안내서에서 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko): 패치 검색[!DNL Quality Patches Tool]을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

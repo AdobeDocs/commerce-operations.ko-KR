@@ -2,7 +2,8 @@
 title: 잠금 공급자 구성
 description: Adobe Commerce 배포에서 중복 cron 작업 및 cron 그룹이 실행되지 않도록 하려면 다음 단계를 따르십시오.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%

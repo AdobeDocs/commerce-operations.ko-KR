@@ -2,9 +2,10 @@
 title: 전제 조건 완료
 description: 다음 전제 조건 단계를 완료하여 Adobe Commerce 프로젝트를 업그레이드하도록 준비합니다.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---

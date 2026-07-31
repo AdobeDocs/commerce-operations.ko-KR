@@ -2,9 +2,10 @@
 title: Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: f731debd7e0734d1bb1b8c821149ffafea735337
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 >
 >MySQL 8.0은 2026년 4월 30일부터 EOS(지원 종료)에 도달합니다.
 >
->이 날짜 이후에 Adobe Commerce 2.4.7은 호환성을 제공하지 않거나>mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은>이 Adobe에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공합니다.>Commerce 릴리스 라인.
+>이 날짜 이후에 Adobe Commerce 2.4.7은 MySQL 8.0 이후에 릴리스된 MySQL 버전에 대한 호환성 또는 >지원을 제공하지 않습니다. Adobe은 이 Adobe>Commerce 릴리스 라인에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공하지 않습니다.>
 >
->버전 2.4.7을 실행하는 모든 Adobe Commerce 온-프레미스 고객은 강력합니다>데이터베이스 서버를 호환 가능한 MariaDB 버전으로 마이그레이션하는 것이 좋습니다.
+>버전 2.4.7을 실행하는 모든 Adobe Commerce 온-프레미스 고객은 데이터베이스 서버를 호환되는 MariaDB 버전으로 마이그레이션하는 것이 좋습니다>.
 
 ## 2.4.7-p10
 

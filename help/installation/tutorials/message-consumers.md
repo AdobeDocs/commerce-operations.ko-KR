@@ -2,7 +2,8 @@
 title: 메시지 소비자 구성
 description: 다음 단계에 따라 Adobe Commerce 메시지 대기열 소비자의 동작을 구성합니다.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%

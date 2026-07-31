@@ -3,7 +3,8 @@ title: PHP 설정
 description: 다음 단계에 따라 필요한 PHP 확장 프로그램을 설치하고 Adobe Commerce의 온프레미스 설치에 필요한 PHP 설정을 구성합니다.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe은 다음 사항을 권장합니다.
 
-   - 코드 컴파일 또는 정적 자산 배포, `1G`
-   - 디버깅, `2G`
-   - 테스트 중, `~3-4G`
+  - 코드 컴파일 또는 정적 자산 배포, `1G`
+  - 디버깅, `2G`
+  - 테스트 중, `~3-4G`
 
 - PHP `realpath_cache_size` 및 `realpath_cache_ttl`의 값을 권장 설정으로 늘립니다.
 
