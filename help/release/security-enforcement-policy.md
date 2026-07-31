@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
+source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
 workflow-type: tm+mt
-source-wordcount: 1983
+source-wordcount: 1985
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Adobe은 Adobe Commerce as a Cloud Service으로 마이그레이션하는 데 �
 
 * **마이그레이션 평가:** 사용자 지정의 마이그레이션 복잡성을 평가합니다. [마이그레이션 평가 도구 개요](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/migration-tools/assessment)를 참조하세요.
 
-* **데이터 마이그레이션:** [대량 및 증분 데이터 마이그레이션 도구](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)가 데이터를 새 Adobe Commerce as a Cloud Service 환경으로 이동합니다.
+* **데이터 마이그레이션:** [대량 및 증분 데이터 마이그레이션 도구](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)가 데이터를 새 Adobe Commerce as a Cloud Service 환경으로 이동합니다.
 
 * **[!DNL Adobe Developer App Builder]** 및 **[!DNL Commerce Storefront powered by Edge Delivery Services]**&#x200B;을(를) 포함한 Adobe의 [AI 지원 마이그레이션 및 개발자 도구](https://developer.adobe.com/commerce/extensibility/developer-agent/)은(는) 상점 현대화 및 확장 플랫폼 재구성을 가속화하는 데 도움이 됩니다.
 

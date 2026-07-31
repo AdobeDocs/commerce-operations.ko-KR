@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
+source-git-commit: 7e9ebf390ec8fa458b3f55dcc5bd17b962702900
 workflow-type: tm+mt
-source-wordcount: 31872
+source-wordcount: 31874
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 ## v1.1.82 {#v1-1-82}
 
 * **ACP2E-4194**(Adobe Commerce 및 Magento Open Source의 경우) >=2.4.7-p10 &lt;2.4.8 || >=2.4.8-p5 &lt;2.4.9) - GraphQL 응답이 잘못되었거나, 승인되지 않았거나, 잘못된 형식의 요청에 대해 잘못된 HTTP 상태 코드를 반환하는 문제를 해결합니다.
-* **ACP2E-4547**(Adobe Commerce의 경우, B2B >=1.5.0 &lt;1.5.3) - 관리자가 관리자의 &#39;SKU별 제품 추가&#39;를 사용하여 표준 카탈로그의 제품을 공유 카탈로그에 연결되지 않은 고객 그룹에 할당된 회사의 협상 가능 견적에 추가할 수 없는 문제를 해결했습니다.
+* **ACP2E-4547**(Adobe Commerce의 경우 B2B >=1.5.0 &lt;1.5.3) - 관리 사용자가 &#39;SKU별 제품 추가&#39;를 사용하여 기본 카탈로그의 제품을 공유 카탈로그에 연결되지 않은 고객 그룹에 할당된 회사의 주문에 추가할 수 없는 문제를 해결합니다.
 * **ACP2E-4593**(Adobe Commerce >=2.4.5 &lt;2.4.10) - 다중 웹 사이트 배포의 보조 웹 사이트에서 웹 사이트 제한에 대해 표시되는 CMS 페이지가 잘못될 수 있는 문제를 해결했습니다.
 * **ACP2E-4682**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 견적 `isActive` 상태를 확인하는 상점 페이지를 방문하면 페이지가 로드될 때마다 빈 견적 레코드가 생성되는 문제를 해결합니다.
 * **ACP2E-4695**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 카탈로그 규칙 인덱서가 과도한 메모리를 사용하고 완료하지 못하여 불안정 및 메모리 부족 오류가 발생하는 문제를 해결했습니다.
@@ -456,7 +456,8 @@ ht-degree: 0%
 * **ACSD-61805**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - [!DNL REST API]을(를) 통해 미납 주문 상태를 업데이트한 후 스토어에서 제품이 품절 상태로 유지되는 문제를 해결했습니다.
 * **ACSD-60811**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 현재 상태가 *처리 중* 또는 *사기*&#x200B;인 경우에만 사용자 지정 값 또는 댓글로 주문 상태를 업데이트할 수 있는 문제를 해결했습니다.
 * **ACSD-62952**(Adobe Commerce >=2.4.4 &lt;2.4.8) - [!UICONTROL Gift Registry] 날짜가 상점 앞에 잘못 표시되는 문제를 해결했습니다.
-* **ACSD-55339**(Adobe Commerce >=2.4.4 &lt;2.4.8) - &quot;0&quot;(영)으로 시작하는 제품 [!DNL SKU]에서 &quot;0&quot;이 제거되어 견적이 업데이트되지 않는 문제가 해결되었습니다.**
+* **ACSD-55339**(Adobe Commerce >=2.4.4 &lt;2.4.8) - &quot;0&quot;(영)으로 시작하는 제품 [!DNL SKU]에서 &quot;0&quot;이 제거되어 견적이 업데이트되지 않는 문제가 해결되었습니다.
+**
 * 업데이트된 패치: **ACSD-59514**
 * 업데이트된 버전: **ACSD-60816**
 * 대체된 패치: **ACSD-59967**
@@ -976,7 +977,7 @@ ht-degree: 0%
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-47444**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.3) - PHP 7.4의 알려진 제품에 대한 일부 존재하지 않는 범주 경로에 액세스할 때 _유형 부울 값에 대한 배열 오프셋에 액세스하려고 합니다_ 오류가 수정되었습니다.
-* **ACSD-47332**(Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.6) - 00:00과(와) 00:59 UTC 사이에서 실행할 때만 보고되는 오류와 함께 cron이 실패하는 문제를 수정합니다.
+* **ACSD-47332**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.6) - 00:00과 00:59 UTC 사이에서 실행할 때만 보고되는 오류와 함께 cron이 실패하는 문제를 수정합니다.
 * **ACSD-47280**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.0 &lt;2.4.6) - 특정 범위에서 공유 카탈로그 기능 비활성화가 제대로 작동하지 않는 문제를 해결했습니다.
 * **ACSD-47106**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.6) - 회사 만들기 페이지의 새 사용자 지정 특성에 값을 저장할 수 없는 문제를 해결했습니다.
 * 업데이트된 패치: ACSD-45143.
