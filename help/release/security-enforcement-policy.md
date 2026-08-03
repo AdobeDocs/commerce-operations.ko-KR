@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
-nudge: true
-source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
+color: blue
+source-git-commit: 7cd1bf694234196313373dea6620bdf67e08e82c
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2017
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Adobe 기업 보안 정책을 사용하려면 Adobe Commerce on Cloud에 대한 
 | 2.4.8 또는 2.4.9 | 소프트웨어에 따라 2026년 10월 30일 또는 2027년 5월 31일까지 필요합니다. | 지금은 필요하지 않습니다. |
 
 **표 1: 버전별 필수 작업 및 기한**
+
+기한 연장이 필요한 경우 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
 
 ## 조치를 취할 필요가 없는 사람
 
