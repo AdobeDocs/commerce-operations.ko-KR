@@ -3,9 +3,9 @@ title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
+source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Adobe Commerce 라이프사이클 정책
 
-Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크리티컬 요구 사항을 지원하기 위해 Adobe은 각 버전에 대한 일반 가용성(GA) 날짜로부터 3년의 표준 지원 기간을 제공하며 이 기간 동안 품질 수정 사항을 릴리스합니다. 각 릴리스에 대한 소프트웨어 지원 종료에 대한 날짜 및 자세한 내용은 [소프트웨어 지원 종료](#end-of-software-support) 표를 참조하십시오.
+Adobe Commerce 라이프사이클 정책을 간소화하고 고객의 미션 크리티컬 요구 사항을 지원하기 위해 Adobe은 각 버전에 대한 일반 가용성(GA) 날짜로부터 3년의 표준 지원 기간을 제공하며 이 기간 동안 품질 수정 사항을 릴리스합니다. 각 릴리스에 대한 소프트웨어 지원 종료에 대한 날짜 및 자세한 내용은 [지원 종료 날짜](#end-of-support-dates) 표를 참조하십시오.
 
 Adobe은 고객이 Adobe Commerce에 대해 3년 또는 연장된 지원 기간에 있는 동안 수명이 종료될 수 있는 타사 서비스 및 소프트웨어 종속성(PHP 및 MySQL 등)에 대한 보안 및 품질 수정 사항을 제공하지 않습니다. 테스트되고 지원되는 타사 기술에 대한 전체 목록은 [시스템 요구 사항](../installation/system-requirements.md)을 참조하십시오.
 
@@ -21,7 +21,7 @@ Adobe은 고객이 Adobe Commerce에 대해 3년 또는 연장된 지원 기간�
 
 GA(General Availability) 날짜로부터 3년의 표준 지원 기간. 표준 지원에는 품질 수정 사항, 보안 패치 및 전체 Adobe Commerce On-call 지원이 포함됩니다.
 
-- **품질 수정** - 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 통해 품질 수정 사항에 액세스할 수 있습니다.
+- **품질 수정** - 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 통해 품질 수정 사항에 액세스할 수 있습니다.
 
 - **보안 수정 사항** - Adobe은 3년 지원 기간 동안 누적 보안 패치와 비누적 [격리된 보안 패치 파일](versioning-policy.md#isolated-security-patch-file)을 통해 보안 수정 사항을 제공합니다.
 
@@ -33,15 +33,15 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 
 >[!NOTE]
 >
->Adobe은 Adobe Commerce on Cloud에 대한 강제 버전 업그레이드 정책을 도입합니다. **2027년 6월 1일**&#x200B;부터 Adobe은 더 이상 지원되지 않는 Commerce 버전을 실행하는 클라우드 환경을 유지 관리하지 않으며 해당 버전을 해제할 수 있는 권한을 보유합니다. Cloud에서 실행하는 경우 릴리스 라인에 게시된 [확장 지원 종료](lifecycle-policy.md#end-of-support-dates) 날짜 이전에 지원되는 Adobe Commerce 버전으로 이동하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 적용 날짜, 영향을 받는 버전 및 지원되지 않는 버전에 남아 있는 경우 발생하는 상황에 대해서는 [클라우드 버전 업그레이드 시행 정책](version-upgrade-enforcement-policy.md)을 참조하십시오.
+>Adobe은 모든 고객이 안전하고 지원되는 플랫폼을 유지할 수 있도록 지원하기 위해 Adobe Commerce on Cloud에 대한 강제 버전 업그레이드 정책을 도입합니다. **2027년 6월 1일**&#x200B;부터 Adobe은 더 이상 지원되지 않는 Commerce 버전을 실행하는 클라우드 환경을 유지 관리하지 않으며 해당 버전을 해제할 수 있는 권한을 보유합니다. Cloud에서 실행하는 경우 릴리스 라인에 게시된 [확장 지원 종료](lifecycle-policy.md#end-of-support-dates) 날짜 이전에 지원되는 Adobe Commerce 버전으로 이동하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 버전 2.4.4부터 2.4.9까지 사용 중인 경우 환경에 적용되는 특정 작업 및 기한에 대해서는 [보안 및 규정 준수 알림](security-enforcement-policy.md)을 참조하세요.
 
 ## 보안 전용 전환 기간
 
-확장 지원이 2025년 또는 2026년에 종료된 버전 2.4.4, 2.4.5 및 2.4.6에만 사용할 수 있는 일회성 제한 전환 기간입니다. 보안 전용 전환 기간은 제한적인 격리된 보안 수정 사항만 제공합니다. Adobe Commerce 품질 수정 사항은 제공되지 않습니다. 이 기간은 표준 또는 확장 지원에 해당되지 않으며 더 이상 연장되지 않습니다. 장기적인 지원 계층이 아닌 마이그레이션 기간으로 간주합니다.
+확장 지원이 2025년 또는 2026년에 종료된 버전 2.4.4, 2.4.5 및 2.4.6에만 사용할 수 있는 일회성 제한 전환 기간입니다. 보안 전용 전환 기간은 제한된 보안 수정 사항만 제공합니다(품질 수정 사항 없음).
 
 >[!IMPORTANT]
 >
->보안 전용 전환 기간은 1회 예외입니다. 게시된 날짜 이후로는 연장되지 않습니다. 보안 전용 기간을 장기 지원 계층이 아닌 마이그레이션 시간으로 처리합니다.
+>보안 전용 전환 기간은 1회 예외입니다. 게시된 날짜 이후로는 연장되지 않습니다. 보안 전용 기간을 장기 지원 계층이 아닌 마이그레이션 시간으로 처리합니다. 마이그레이션 계획을 작성하는 데 도움이 필요하면 계정 팀에 문의하십시오.
 
 ## 지원 종료 날짜
 
@@ -173,7 +173,7 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 
 >[!IMPORTANT]
 >
->지원되지 않는 종속성 버전을 실행하면 Adobe에서 해결할 수 없는 클라우드 인스턴스의 보안 취약성이 발생할 수 있습니다. 이러한 경우 Adobe은 Adobe Commerce 버전 지원 상태에 관계없이 영향을 받는 소프트웨어 종속성을 업그레이드하거나 업그레이드할 수 없는 경우 인스턴스를 해제할 수 있는 권한을 보유합니다.
+>지원되지 않는 종속성 버전을 실행하면 Adobe에서 해결할 수 없는 클라우드 인스턴스의 보안 취약성이 발생할 수 있습니다. 이러한 경우 Adobe은 Adobe Commerce 버전 지원 상태에 관계없이 영향을 받는 소프트웨어 종속성을 업그레이드하거나 업그레이드할 수 없는 경우 인스턴스를 해제할 수 있는 권한을 보유합니다. 이러한 업그레이드를 예약하는 방법과 전체 과정에서 사용할 수 있는 지원에 대해서는 [보안 및 규정 준수 알림](security-enforcement-policy.md)을 참조하세요.
 
 ## PHP 수명 종료 및 PCI 규정 준수
 
@@ -205,7 +205,7 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 - AI 기반 머천다이징, 구성 가능한 상점 아키텍처 및 기본 Adobe Experience Cloud 통합과 같은 Adobe의 최신 기능에 액세스할 수 있습니다.
 - 반복되는 업그레이드 주기를 제거합니다.
 
-Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. 제품 개요는 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/overview)을 참조하세요.
+Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. 제품 개요는 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)을 참조하세요.
 
 ### 대체 경로: 지원되는 Adobe Commerce on cloud 또는 온프레미스 릴리스로 업그레이드
 
