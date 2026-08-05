@@ -1,11 +1,11 @@
 ---
 title: 업그레이드 프로세스 개요
-description: Adobe Commerce 프로젝트를 업그레이드하여 저장소를 안전하고 효율적으로 관리하는 방법에 대해 알아봅니다. 성공적인 업그레이드를 계획하고 실행하기 위한 모범 사례를 살펴보십시오.
+description: Adobe Commerce 프로젝트를 업그레이드하여 상점을 안전하고 효율적으로 관리하는 방법에 대해 알아봅니다. 성공적인 업그레이드를 계획하고 실행하기 위한 모범 사례를 살펴보십시오.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 2%
 
 ---
 
@@ -43,6 +43,8 @@ _업그레이드해야 하는 이유는 무엇입니까?_
 
 - **패치 릴리스**—보안, 성능, 품질 및 우선 순위가 높은 버그 수정 사항을 포함합니다.
 - **보안 패치 릴리스** - 사이트의 보안을 유지하고 구현하기 쉽도록 수정 사항과 개선 사항을 포함합니다.
+
+Adobe Commerce on Cloud 버전 2.4.4부터 2.4.9까지를 사용하는 경우 환경을 안전하게 준수하도록 필요한 조치와 기한을 알려면 [보안 및 규정 준수 알림](../release/security-enforcement-policy.md)을 참조하십시오.
 
 ### 성능
 

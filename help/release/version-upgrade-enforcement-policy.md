@@ -2,9 +2,9 @@
 title: 클라우드 버전 업그레이드 시행 정책
 description: Adobe Commerce on Cloud의 버전 업그레이드 적용에 대해 알아보십시오. Adobe에서 업그레이드, 적용 날짜, 서비스 해제 및 필수 작업을 적용하는 이유. 과도적 조항 및 마이그레이션 경로에 대해서는 라이프사이클 정책을 참조하십시오.
 nudge: false
-source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce on Cloud에 대한 버전 업그레이드 시행 정책
 
-Adobe Commerce 버전에 대한 일반 지원 및 확장 지원이 종료되면 Adobe은 해당 지원되지 않는 버전을 실행하는 클라우드 환경에서 Adobe Commerce을 서비스 해제할 권한을 보유합니다. 버전 업그레이드 적용은 Adobe Commerce 온 클라우드 환경에만 적용되며, 온프레미스 고객은 자체 인프라를 관리합니다.
+Adobe Commerce 버전에 대한 일반 지원 및 확장 지원이 종료되면 Adobe은 해당 지원되지 않는 버전을 실행하는 클라우드 환경에서 Adobe Commerce을 서비스 해제할 권한을 보유합니다. 버전 업그레이드 적용은 클라우드 환경의 Adobe Commerce에만 적용됩니다. 온프레미스 고객은 자체 인프라를 관리합니다. Adobe은 업그레이드 또는 마이그레이션을 계획하는 데 도움이 되는 사전 알림과 지원 리소스를 미리 제공합니다.
 
 릴리스 라인에 게시된 [확장 지원 종료](lifecycle-policy.md#end-of-support-dates) 날짜 이전에 지원되는 Adobe Commerce 버전으로 이동하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다.
 
@@ -20,13 +20,13 @@ Adobe Commerce 버전에 대한 일반 지원 및 확장 지원이 종료되면 
 
 >[!NOTE]
 >
->이 항목에서는 클라우드 업그레이드 적용만 다룹니다. 지원 계층 정의의 경우 [지원 종료 날짜](lifecycle-policy.md#end-of-support-dates) 테이블, [보안 전용 전환 규정](lifecycle-policy.md#security-only-transitional-period), [타사 소프트웨어 종속성](lifecycle-policy.md#platform-dependencies), [PHP 수명 종료 및 PCI 준수](lifecycle-policy.md#php-end-of-life-and-pci-compliance) 및 [업그레이드 및 마이그레이션 옵션](lifecycle-policy.md#upgrade-and-migration-options)은(는) [라이프사이클 정책](lifecycle-policy.md)을 참조하세요. 지원되는 Adobe Commerce 버전으로 업그레이드할 뿐만 아니라 Adobe에서는 적극적으로 지원되는 버전에 타사 소프트웨어 종속성을 유지해야 합니다.
+>이 항목에서는 클라우드 업그레이드 적용만 다룹니다. 지원 계층 정의, [지원 종료 날짜](lifecycle-policy.md#end-of-support-dates), [보안 전용 전환 규정](lifecycle-policy.md#security-only-transitional-period), [타사 소프트웨어 종속성](lifecycle-policy.md#platform-dependencies), [PHP 종료 및 PCI 준수](lifecycle-policy.md#php-end-of-life-and-pci-compliance) 및 [업그레이드 및 마이그레이션 옵션](lifecycle-policy.md)에 대해서는 [라이프사이클 정책](lifecycle-policy.md#upgrade-and-migration-options)을 참조하십시오. 지원되는 [!DNL Adobe Commerce version]&#x200B;(으)로 업그레이드하는 것 외에도 Adobe에서는 적극적으로 지원되는 버전에 타사 소프트웨어 종속성을 유지해야 합니다. [!DNL Adobe Commerce on Cloud] 버전 2.4.4부터 2.4.9까지 적용되는 특정 필수 작업 및 기한은 [보안 및 규정 준수 알림](security-enforcement-policy.md)을 참조하세요.
 
 ## Adobe에서 이 정책을 도입하는 이유
 
 Adobe은 Adobe Commerce on Cloud 고객이 실행하는 호스팅 플랫폼 인프라의 보안 및 규정 준수를 담당합니다. 여기에는 모든 기본 소프트웨어 종속성을 최신 상태로 유지하고, 보안 패치를 적용하며, 고객이 의존하는 PCI와 같은 규정 준수 표준을 준수하는 것이 포함됩니다.
 
-공급업체에 의해 기본 소프트웨어 종속성에 대한 보안 지원이 공식적으로 종료되면 Adobe은 더 이상 필요한 수준의 보안 범위와 플랫폼 지원을 제공할 수 없습니다. 지원되지 않는 인프라에서 스토어를 계속 운영하면 고객, 쇼핑객 및 Adobe에 용납될 수 없는 위험이 발생합니다. 따라서 Adobe은 지원되지 않는 Commerce 버전을 실행하는 Cloud on Cloud 환경의 Adobe Commerce 사용이 중단되는 시기를 정의하는 공식 버전 업그레이드 시행 정책을 도입합니다.
+공급업체가 기본 소프트웨어 종속성에 대한 보안 지원을 공식적으로 종료하면 Adobe은 더 이상 필요한 수준의 보안 범위와 플랫폼 지원을 제공할 수 없습니다. 지원되지 않는 인프라에서 스토어를 계속 운영하면 고객, 쇼핑객 및 Adobe에 용납될 수 없는 위험이 발생합니다. 따라서 Adobe은 사용자가 업그레이드 또는 마이그레이션을 계획하는 데 도움이 되도록 Adobe에서 제공하는 지원과 함께 지원되지 않는 Commerce 버전을 실행하는 클라우드 환경의 Adobe Commerce이 폐기되는 시기를 정의하는 공식 버전 업그레이드 시행 정책을 도입합니다. 자세한 내용은 [보안 및 규정 준수 알림]을 참조하세요.
 
 ## 업그레이드 적용 날짜 계산 방법
 
