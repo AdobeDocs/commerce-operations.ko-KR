@@ -3,9 +3,9 @@ title: 시스템 요구 사항
 description: Adobe Commerce에 대한 소프트웨어 종속성 및 시스템 요구 사항에 대해 알아봅니다. 배포 환경과의 호환성에 대해서는 테스트된 구성을 참조하십시오.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-07-23T00:00:00Z
-source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -33,20 +33,20 @@ Adobe은 다음 표에 나열된 시스템 요구 사항 조합만 지원합니�
 
 >[!BEGINTABS]
 
->[!TAB 클라우드의  Commerce]
+>클라우드의 [!TAB Commerce]
 
 [클라우드의 Commerce 템플릿](https://github.com/magento/magento-cloud)은(는) 각 릴리스 라인에 대해 최신 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 기본 구성의 경우 서비스 및 버전은 [`services.yaml` 파일](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)에 정의되어 있습니다.
-자세한 내용은 *Commerce on Cloud Infrastructure* 안내서의 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
+자세한 내용은 *Commerce on Cloud Infrastructure* 안내서의 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
 
 >[!TAB Commerce 온-프레미스]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
-**MySQL 8.0이 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
+**MySQL 8.0은 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.7, 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은
 이 Adobe에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -56,7 +56,7 @@ Commerce 릴리스 라인.
 
 Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../release/lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
 
-**Elasticsearch 7.17이 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
+**Elasticsearch 7.17은 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 Elasticsearch 7 이후 릴리스된 모든 Elasticsearch 버전에 대한 지원. Adobe은
 이 Adobe에서 최신 Elasticsearch 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -72,7 +72,7 @@ Commerce 릴리스 라인.
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../release/lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../release/lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
+>Adobe Commerce 2.4.6은 [2027년 8월 30일부터 ](../release/lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../release/lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
 >
 >클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../release/version-upgrade-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../release/lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 >
@@ -82,20 +82,20 @@ Commerce 릴리스 라인.
 
 >[!BEGINTABS]
 
->[!TAB 클라우드의  Commerce]
+>클라우드의 [!TAB Commerce]
 
 [Commerce on Cloud 템플릿](https://github.com/magento/magento-cloud)은(는) 특정 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 기본 구성의 경우 서비스 및 버전은 [`services.yaml` 파일](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)에 정의되어 있습니다.
-자세한 내용은 *Commerce on Cloud Infrastructure* 안내서의 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
+자세한 내용은 *Commerce on Cloud Infrastructure* 안내서의 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
 
 >[!TAB Commerce 온-프레미스]
 
 {{$include /help/_includes/templated/system-requirements-table-old-releases.md}}
 
-**MySQL 8.0이 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
+**MySQL 8.0은 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.7, 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은
 이 Adobe에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -105,7 +105,7 @@ Commerce 릴리스 라인.
 
 Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../release/lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
 
-**Elasticsearch 7.17이 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
+**Elasticsearch 7.17은 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 Elasticsearch 7 이후 릴리스된 모든 Elasticsearch 버전에 대한 지원. Adobe은
 이 Adobe에서 최신 Elasticsearch 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -121,7 +121,7 @@ Commerce 릴리스 라인.
 
 `memory_limit` 설정과 같은 특정 PHP 구성 설정이 있으므로 Adobe Commerce 사용 시 일반적인 문제를 방지하는 데 도움이 됩니다. [필수 PHP 설정](prerequisites/php-settings.md)을 참조하세요.
 
-클라우드 구성 지침은 *클라우드 인프라의 Commerce* 안내서에서 [PHP 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
+클라우드 구성 지침은 *클라우드 인프라의 Commerce* 안내서에서 [PHP 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
 
 ### PHP OPcache
 
@@ -149,11 +149,11 @@ OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://
 
 >[!TIP]
 >
->클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)을 참조하십시오.
+>클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)을 참조하십시오.
 
 >[!BEGINTABS]
 
->[!TAB 클라우드의  Commerce]
+>클라우드의 [!TAB Commerce]
 
 다음 표에서는 Adobe Commerce을 클라우드 플랫폼에 배포할 때 지원되는 PHP 확장을 보여 줍니다.
 
@@ -188,11 +188,11 @@ Storefront 및 관리자:
 
 ### 메일 서버
 
-MTA(메일 전송 에이전트) 또는 SMTP 서버. 클라우드 인프라의 Commerce은 [SendGrid 이메일 서비스](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/sendgrid)를 사용합니다.
+MTA(메일 전송 에이전트) 또는 SMTP 서버. 클라우드 인프라의 Commerce은 [SendGrid 이메일 서비스](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid)를 사용합니다.
 
 ### 메모리
 
-Commerce Marketplace 및 기타 소스에서 가져온 애플리케이션 및 확장을 업그레이드하려면 최대 2GB의 RAM이 필요할 수 있습니다. RAM이 2GB 미만인 시스템을 사용하는 경우 [스왑 파일](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)을 만듭니다. 그렇지 않으면 업그레이드가 실패할 수 있습니다.
+Commerce Marketplace 및 기타 소스에서 가져온 애플리케이션 및 확장을 업그레이드하려면 최대 2GB의 RAM이 필요할 수 있습니다. RAM이 2GB 미만인 시스템을 사용하는 경우 [스왑 파일](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)을 만듭니다. 그렇지 않으면 업그레이드가 실패할 수 있습니다.
 
 ### 운영 체제 (Linux x86-64)
 
@@ -218,17 +218,16 @@ Adobe Commerce의 일부 작업에는 다음 시스템 도구가 필요합니다
 - 자체 서명된 SSL 인증서는 지원되지 않습니다.
 - TLS(전송 계층 보안) 요구 사항 - PayPal과 `repo.magento.com` 둘 다 TLS 1.2 이상이 필요합니다.
 
-클라우드 인프라의 Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Fastly 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)을 참조하십시오.
+클라우드 인프라의 Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Fastly 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)을 참조하십시오.
 
 ### Xdebug
 
 Adobe Commerce의 경우 [php_xdebug 2.5.x](https://xdebug.org/download) 이상을 사용합니다(개발 환경에만 해당, 성능에 부정적인 영향을 줄 수 있음).
 
-클라우드의 Adobe Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Xdebug 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/test/debug)을 참조하십시오.
+클라우드의 Adobe Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Xdebug 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug)을 참조하십시오.
 
 >[!NOTE]
 >
->`xdebug`에는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 액세스하는 데 영향을 줄 수 있는 알려진 문제가 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)를 참조하십시오.
+>`xdebug`에는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 액세스하는 데 영향을 줄 수 있는 알려진 문제가 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)를 참조하십시오.
 
-<!-- Last updated from includes: 2026-07-22 16:57:39 -->
-
+<!-- Last updated from includes: 2026-07-23 16:17:19 -->
