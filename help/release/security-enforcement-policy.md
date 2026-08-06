@@ -1,5 +1,5 @@
 ---
-title: 보안 및 규정 준수를 유지하기 위해 필요한 작업 및 기한
+title: Commerce 환경을 보호하기 위해 필요한 작업 및 기한
 description: 기한, 필수 작업 및 위험을 포함하여 Cloud 버전 및 소프트웨어 종속성에서 지원되지 않는 Adobe Commerce에 대한 보안 강화에 대해 알아봅니다.
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -20,23 +20,21 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Adobe Commerce on Cloud 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
+badgePaas: label="Cloud 2.4.4 - 2.4.9의 Adobe Commerce 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: 9e4142150097f7d1109929c3785e3448288bb8ff
+source-git-commit: c3ea400087a14aa1021ab6998b9de48c33787cc9
 workflow-type: tm+mt
-source-wordcount: 2144
+source-wordcount: 2174
 ht-degree: 0%
 
 ---
 
 
-# 보안 및 규정 준수를 유지하기 위해 필요한 작업 및 기한
+# Commerce 환경을 보호하기 위해 필요한 작업 및 기한
 
 >[!NOTE]
 >
 > **적용 대상:** Adobe Commerce 버전 2.4.4 - 2.4.9를 실행하는 PaaS(Adobe Commerce on Cloud) 환경.
->
-> 이 지침은 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(SaaS) 환경 또는 Adobe Commerce 온-프레미스 배포에는 적용되지 않습니다.
 
 사이버 보안 환경은 근본적으로 변화하고 있으며, 기업들이 갖추어야 할 방어 메커니즘은 빠르게 발전해야 합니다. 전자 상거래 기업은 온라인 거래를 통해 민감한 개인 및 비즈니스 데이터를 처리해야 하므로 보안이 매우 중요합니다. PaaS 전자 상거래 환경에는 애플리케이션 계층 종속성의 보안 및 유지 관리, 타사 소프트웨어와의 통합, 배포 파이프라인을 고객이 담당하는 공유 책임 모델이 있습니다.
 
@@ -63,9 +61,13 @@ Adobe은 고객을 안전하게 보호하는 데 필요한 단계를 수행하�
 
 1. 모든 타사 소프트웨어 종속성(PHP, MariaDB, Elasticsearch, OpenSearch, Redis, RabbitMQ)의 지원되는 버전
 
-1. 클라우드에서 안전하고 지원되는 Adobe Commerce 버전입니다. 완전히 지원되는 버전에는 2.4.8, 2.4.9 또는 사용 가능한 최신 릴리스가 포함됩니다. [여기](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)에서 주기 정책을 확인하세요.
+1. 클라우드에서 안전하고 지원되는 Adobe Commerce 버전입니다. 완전히 지원되는 버전에는 2.4.8, 2.4.9 또는 사용 가능한 최신 릴리스가 포함됩니다. [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy) 설명서를 참조하세요.
 
-클라우드 환경에서 Adobe Commerce을 보호하기 위해 조치를 취해야 하는지 확인하려면 아래 지침을 따르십시오. 아래 표 1에 요약된 기한까지 보안 요구 사항을 충족하지 않는 환경에서는 인바운드 트래픽이 중단되어 스토어프런트가 오프라인 상태가 됩니다. 기한 준수에 대해 우려하고 짧은 연장이 필요한 경우 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
+클라우드 환경에서 Adobe Commerce을 보호하기 위해 조치를 취해야 하는지 확인하려면 아래 지침을 따르십시오. 아래 표 1에 요약된 기한까지 보안 요구 사항을 충족하지 않는 환경에서는 인바운드 트래픽이 중단되어 스토어프런트가 오프라인 상태가 됩니다. 기한 충족에 대해 우려되는 경우 가능한 한 빨리 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
+
+>[!NOTE]
+>
+> 이 지침은 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(SaaS) 환경 또는 Adobe Commerce 온-프레미스 배포에는 적용되지 않습니다.
 
 **표 1: 보안 요구 사항 및 기한**
 
@@ -77,7 +79,7 @@ Adobe은 고객을 안전하게 보호하는 데 필요한 단계를 수행하�
 
 ## 환경 보호를 위한 자세한 단계
 
-전자 상거래 관리자에게 문의하여 다음 단계를 수행하십시오.
+Commerce 관리자에게 문의하여 다음 단계를 수행하십시오.
 
 ### 작업 1: 타사 소프트웨어 종속성 확인 및 업그레이드
 
@@ -85,7 +87,7 @@ Adobe은 고객을 안전하게 보호하는 데 필요한 단계를 수행하�
 
 #### 1단계: 타사 소프트웨어 종속성 버전 확인
 
-1. [클라우드 콘솔](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/start/cloud-console)에 로그인합니다. Cloud Console에서 모든 환경을 볼 수 있습니다.
+1. 모든 환경을 볼 수 있는 [클라우드 콘솔](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/start/cloud-console)에 로그인합니다.
 2. 관련 프로젝트를 연 다음 검토할 환경을 선택합니다.
 3. `.magento/services.yaml` 파일에서 해당 환경에 대한 서비스 구성을 확인하십시오. 이 파일은 Adobe Commerce on Cloud에서 사용하는 지원되는 서비스 이름과 버전을 정의합니다.
 4. [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)의 지침을 사용하여 각 환경이 실행 중인 종속성 버전을 확인하세요.
@@ -142,7 +144,7 @@ Adobe은 이러한 소프트웨어 종속성을 직접 업그레이드하는 데
 
 | 클라우드에 있는 Adobe Commerce의 현재 버전 | 필수 작업 | 기한 |
 | --- |--- |--- |
-| 버전 2.4.4 또는 2.4.5 | 클라우드 버전 2.4.9(또는 최신 버전)의 Adobe Commerce으로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: v2.4.4 및 2.4.5는 2027년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정 사항만 수신합니다. 여기에는 품질 수정 사항, 응용 프로그램 종속성에 대한 호환성 지원(예: PHP) 또는 플랫폼 종속성 업데이트가 포함되지 않습니다. Adobe의 [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)을 참조하세요. | 2027년 6월 1일 |
+| 버전 2.4.4 또는 2.4.5 | Cloud 버전 2.4.9(또는 최신 버전)의 Adobe Commerce으로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: 버전 2.4.4 및 2.4.5에는 2027년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정만 제공됩니다. 여기에는 품질 수정 사항, 애플리케이션 종속 항목에 대한 호환성 지원(예: PHP) 또는 플랫폼 종속 업데이트가 포함되지 않습니다. Adobe의 [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)을 참조하세요. | 2027년 6월 1일 |
 | 버전 2.4.6 또는 2.4.7 | Cloud의 Adobe Commerce 버전 2.4.9(또는 최신 버전)로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: 버전 2.4.6은 2027년 8월 30일까지 확장 지원을 받으며 2028년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정만 받습니다. 버전 2.4.7은 2027년 5월 31일까지 표준 지원을 받고 2028년 5월 31일까지 확장 지원을 받게 됩니다. Adobe의 [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)을 참조하세요. | 2028년 6월 1일 |
 | 버전 2.4.8 또는 2.4.9 | Adobe Commerce on Cloud 버전 업그레이드 작업은 필요하지 않습니다. 작업 1의 타사 소프트웨어 종속성 기한이 여전히 적용됩니다.<br>이유: 기한이 설정되지 않았습니다. | 해당 사항 없음 |
 
@@ -165,11 +167,11 @@ Adobe Commerce on Cloud 버전을 업그레이드해야 하는 경우 두 가지
 
 ## 기한까지 조치를 취하지 않으면 어떻게 됩니까?
 
-Adobe은 지원되는 타사 소프트웨어 버전을 채택하거나, Cloud에서 Adobe Commerce의 최신 버전으로 업그레이드하거나, Adobe Commerce as a Cloud Service으로 마이그레이션하는 데 필요한 단계를 실행하는 데 사용자를 지원하기 위해 최선을 다하고 있습니다.  기한 충족에 대한 우려가 있고 짧은 연장이 필요한 경우 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하세요.
+Adobe은 지원되는 타사 소프트웨어 버전을 채택하거나, Cloud에서 Adobe Commerce의 최신 버전으로 업그레이드하거나, Adobe Commerce as a Cloud Service으로 마이그레이션하는 데 필요한 단계를 실행하는 데 사용자를 지원하기 위해 최선을 다하고 있습니다.  기한 충족에 대한 우려가 있고 짧은 연장이 필요한 경우 가능한 한 빨리 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
 
-위에서 공유한 시행 날짜까지 환경이 보안 요구 사항을 충족하지 않으면 Adobe은 Adobe Commerce 플랫폼 및 고객의 보안을 보장하기 위해 적절한 조치를 취하지 않을 수 없습니다. 여기에는 영향을 받는 인프라에 대한 트래픽 일시 중지가 포함되며, 결과적으로 전자 상거래 상점 오프라인이 됩니다.
+위에서 공유한 시행 날짜까지 환경이 보안 요구 사항을 충족하지 않으면 Adobe은 Adobe Commerce 플랫폼 및 고객의 보안을 유지하기 위해 적절한 조치를 취하지 않을 수 없습니다. 여기에는 영향을 받는 인프라에 대한 트래픽 일시 중지가 포함되며, 그 결과 Commerce 상점 첫 페이지는 오프라인으로 전환됩니다.
 
-트래픽 일시 중단 후에도 환경이 계속 규정을 준수하지 않는 경우 Adobe이 클라우드 서비스를 종료하여 서비스 해제 프로세스를 시작할 수 있습니다. 서비스 해제의 결과로 모든 인스턴스, 환경 및 분기를 포함하여 호스팅된 전자 상거래 환경 내의 모든 데이터 및 자산은 영구적으로 삭제되며 복원할 수 없습니다.
+트래픽 일시 중단 후에도 환경이 계속 규정을 준수하지 않는 경우 Adobe이 클라우드 서비스를 종료하여 서비스 해제 프로세스를 시작할 수 있습니다. 서비스 해제의 결과로 모든 인스턴스, 환경 및 분기를 포함하여 호스팅된 상거래 환경 내의 모든 데이터 및 자산은 영구적으로 삭제되며 복원할 수 없습니다.
 
 ## 업그레이드 또는 마이그레이션을 지원하는 리소스
 
@@ -185,7 +187,7 @@ Adobe은 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레�
 
 * **마이그레이션 평가:** 사용자 지정의 마이그레이션 복잡성을 평가합니다. [마이그레이션 평가 도구 개요](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/migration-tools/assessment)를 참조하세요.
 
-* **데이터 마이그레이션:** [대량 및 증분 데이터 마이그레이션 도구](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)가 데이터를 새 [!DNL Adobe Commerce as a Cloud Service] 환경으로 이동합니다.
+* **데이터 마이그레이션:** [대량 및 증분 데이터 마이그레이션 도구](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)가 데이터를 새 [!DNL Adobe Commerce as a Cloud Service] 환경으로 이동합니다. 액세스하려면 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
 
 * **AI 지원 마이그레이션 및 개발자 도구:** Edge Delivery Services에서 제공하는 Adobe Developer App Builder 및 Commerce Storefront를 통해 Storefront 현대화 및 확장 재플랫폼을 가속화할 수 있습니다.
 
