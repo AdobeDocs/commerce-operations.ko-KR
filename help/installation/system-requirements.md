@@ -3,9 +3,9 @@ title: 시스템 요구 사항
 description: Adobe Commerce에 대한 소프트웨어 종속성 및 시스템 요구 사항에 대해 알아봅니다. 배포 환경과의 호환성에 대해서는 테스트된 구성을 참조하십시오.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-07-23T00:00:00Z
-source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe은 다음 표에 나열된 시스템 요구 사항 조합만 지원합니�
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
-**MySQL 8.0이 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
+**MySQL 8.0은 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.7, 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은
 이 Adobe에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -56,7 +56,7 @@ Commerce 릴리스 라인.
 
 Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../release/lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
 
-**Elasticsearch 7.17이 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
+**Elasticsearch 7.17은 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 Elasticsearch 7 이후 릴리스된 모든 Elasticsearch 버전에 대한 지원. Adobe은
 이 Adobe에서 최신 Elasticsearch 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -95,7 +95,7 @@ Commerce 릴리스 라인.
 
 {{$include /help/_includes/templated/system-requirements-table-old-releases.md}}
 
-**MySQL 8.0이 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
+**MySQL 8.0은 2026년 4월 30일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.7, 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 mySQL 8.0 이후 릴리스된 모든 MySQL 버전에 대한 지원 Adobe은
 이 Adobe에서 최신 MySQL 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -105,7 +105,7 @@ Commerce 릴리스 라인.
 
 Adobe Commerce on Cloud 고객은 지원되는 버전에 대한 플랫폼 종속성을 유지해야 합니다. 라이프사이클 정책의 [플랫폼 종속성](../release/lifecycle-policy.md#platform-dependencies)을(를) 참조하십시오.
 
-**Elasticsearch 7.17이 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
+**Elasticsearch 7.17은 2026년 1월 15일에 지원 종료(EOS)되었습니다.**
 이 날짜 이후에 Adobe Commerce 2.4.6, 2.4.5 및 2.4.4는 호환성을 제공하지 않거나
 Elasticsearch 7 이후 릴리스된 모든 Elasticsearch 버전에 대한 지원. Adobe은
 이 Adobe에서 최신 Elasticsearch 주요 버전의 유효성을 검사하거나 지원을 제공합니다.
@@ -230,5 +230,4 @@ Adobe Commerce의 경우 [php_xdebug 2.5.x](https://xdebug.org/download) 이상�
 >
 >`xdebug`에는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 액세스하는 데 영향을 줄 수 있는 알려진 문제가 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)를 참조하십시오.
 
-<!-- Last updated from includes: 2026-07-22 16:57:39 -->
-
+<!-- Last updated from includes: 2026-07-23 16:17:19 -->
