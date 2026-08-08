@@ -1,7 +1,7 @@
 ---
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 8월 6일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce 2.4.6, 2.4.7 및 2.4.8용 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability">제품 가용성</a>에서 B2B 확장 버전 지원 매트릭스를 수정했습니다.</p>
+</td>
+      <td>
+        기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 7월 31일
 
@@ -635,28 +657,6 @@ ht-degree: 1%
         주요 업데이트
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 8일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706에 대한 QPT 1.1.79 수정 사항에 대한 자세한 설명을 추가했습니다. 대상 규칙 인덱서 크론은 스토어 보기 범위에서만 활성화된 제품을 선택하지 않습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">커밋</a></td>
     </tr>
   </tbody>
 </table>
