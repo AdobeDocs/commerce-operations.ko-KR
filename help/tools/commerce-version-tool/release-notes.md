@@ -3,20 +3,13 @@ title: '[!DNL Commerce Version Tool] 릴리스 정보'
 description: 새 패치 상태 보고, CVE 보호 상태, CSV 출력 및 캐시 동작을 포함한  [!DNL Commerce Version Tool] 릴리스에 대해 알아봅니다.
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/38I3U5y9rmurP5gVhalfUq7DlcUb-JpF5eUam1nwEyk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: f42e0a1a-0d79-488d-a83f-f2c30672b137
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 6b3a77ca95f7de23f044e531f1639c1aee1bbcef
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 2%
+source-wordcount: 236
+ht-degree: 1%
 
 ---
 
@@ -24,10 +17,22 @@ ht-degree: 2%
 
 이 릴리스 노트는 [!DNL Commerce Version Tool]&#x200B;([!DNL CVT])의 업데이트에 대해 설명합니다.
 
-## 버전 1.0.0 — 2026년 6월 {#version-1-0-0}
+최신 릴리스에 대한 지원이 제공됩니다. 이전 버전에 대한 릴리스 노트는 참조를 위해 제공됩니다.
+업데이트에는 다음이 포함됩니다.
+
+새 기능 ![개](../../assets/new.svg)개
+![수정](../../assets/fix.svg) 수정 사항 및 개선 사항
+![버그](../../assets/bug.svg) 알려진 문제
+
+## 버전 1.0.2 — 2026년 8월 {#version-1-0-2}
 
 ### 새로운 기능
 
+![새로 만들기](../../assets/new.svg) **작성기 `replace` 지원**—작성기 `replace`을(를) 통해 핵심 모듈을 제거하는 설치에 대한 지원을 추가했습니다. 이러한 모듈에 대한 패치 검색 정확도를 개선했습니다. <!-- ACSEC-527 -->
+
+## 버전 1.0.0 — 2026년 6월 {#version-1-0-0}
+
+![새](../../assets/new.svg) 업데이트는 다음과 같습니다.
 - **패치 상태 보고** - 월간 Adobe Commerce 보안 패치가 적용되거나 누락되었거나 Adobe Commerce 설치에 대해 분류할 수 없는 항목을 보고합니다.
 - **CVE 보호 상태** - 패치 결과를 CVE별 보호 상태 값 `PROTECTED`, `VULNERABLE`, `UNKNOWN` 및 `NOT_APPLICABLE`에 매핑합니다.
 - **다중 구성 요소 지원** - Adobe Commerce B2B(business-to-business), Adobe Commerce Page Builder, Adobe Commerce Inventory 및 패치 레지스트리 파일에 표시되는 기타 구성 요소를 포함하여 `composer.lock`에서 설치된 Adobe Commerce 구성 요소를 검색합니다.
