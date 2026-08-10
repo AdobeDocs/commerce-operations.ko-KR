@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+source-git-commit: 324a61ed4f6ea349e1e30095452e5311f688c931
 workflow-type: tm+mt
-source-wordcount: '10549'
+source-wordcount: '10588'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,9 @@ ht-degree: 0%
       - [ACP2E-4709: 페이지 계층에 큰따옴표가 포함된 경우 CMS 페이지가 페이지 빌더에 저장되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4799: GraphQL query requisition_lists가 페이지 매김과 함께 잘못된 total_count를 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
+      - [ACP2E-4797: utf8mb4가 지원되는 경우 관리 WYSIWYG 편집기 및 페이지 빌더 블록 4바이트 유니코드 문자](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+      - [ACP2E-4682: 견적을 확인하는 상점 페이지활성 빈 견적 레코드 생성](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593: 잘못된 웹 사이트 제한 CMS 페이지가 다중 웹 사이트 상점 첫 화면의 보조 웹 사이트에 제공됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547: 기본 카탈로그 제품이 사용자의 공유 카탈로그에 할당되지 않은 경우 관리자가 견적에 추가할 수 없음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805: 첫 번째 판매 가능한 하위 항목이 목록에 나중에 나타나면 구성 가능한 제품에 대한 체크아웃 요청 속도가 느려집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
