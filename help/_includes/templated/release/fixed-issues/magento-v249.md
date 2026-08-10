@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Null TypeError로 인해 /V1/products/special-price 및 관련 가격 책정 API
 
 _AC-6419 - [GitHub 문제](https://github.com/magento/magento2/issues/35934) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API 끝점에 내부 서버 오류
+#### `/V1/order/{orderId}/ship` API 끝점에 내부 서버 오류
 
 이제 시스템에서 `/V1/order/{orderId}/ship` API 끝점의 내부 서버 오류를 수정하고 요청이 잘못된 경우 400 오류를 반환합니다.
 
@@ -3465,7 +3465,7 @@ href 특성이 없거나 잘못 바인딩되어 있어 검색 엔진에서 상�
 
 _AC-15547 - [GitHub 문제](https://github.com/magento/magento2/issues/40185) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/c95ed7d7)_
 
-#### 오류 메시지가 GET 요청에 대해 렌더링되지 않았습니다.
+#### GET 요청에 대해 오류 메시지가 렌더링되지 않았습니다.
 
 잘못된 GET 요청에 대해 오류 메시지가 즉시 표시되지 않던 문제를 수정했습니다. 이제 오류 메시지가 추가 사용자 작업 없이 올바르게 표시되므로 사용자 피드백과 일관성이 향상됩니다.
 
@@ -3648,7 +3648,7 @@ _ACP2E-4212 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### 업데이트 예약 미리 보기에서 웹 사이트 사이를 탐색할 수 없음
 
-이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, [Adobe Commerce 변수 및 마크업 태그](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/variables/markup-tags)에 설명된 대로 `{{store url}}` 마크업 태그를 사용하는 탐색 링크를 지원합니다.
+이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, [Adobe Commerce 변수 및 마크업 태그](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)에 설명된 대로 `{{store url}}` 마크업 태그를 사용하는 탐색 링크를 지원합니다.
 
 _ACP2E-4308 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/0a3b7032)_
 

@@ -3,24 +3,14 @@ title: 기본 및 페이지 캐시에 대한 값 구성
 description: Adobe Commerce용 기본 및 페이지 캐시 백엔드로 Valkey를 구성하는 방법에 대해 알아봅니다. CLI 명령, env.php 설정 및 연결 확인을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
 source-wordcount: 1315
@@ -50,19 +40,19 @@ Commerce은 Valkey 기본 및 페이지 캐싱을 구성하는 명령줄 옵션�
 >[!TAB Zend 캐시(2.4.8 및 이전 버전)]
 
 - **Zend 캐시(2.4.8 및 이전 버전)** — Commerce 2.4.8 및 이전 버전용 기존 Valkey 백엔드:
-   - **기존 Valkey 백 엔드** — 전체 클래스 경로(`Magento\Framework\Cache\Backend\Valkey`)를 사용합니다.
-   - **미리 로드 키** — 자주 사용하는 캐시 키를 미리 로드할 수 있습니다.
-   - **Lua 스크립트** — 가비지 수집용 Lua
-   - **압축** — 데이터 압축을 지원합니다.
+  - **기존 Valkey 백 엔드** — 전체 클래스 경로(`Magento\Framework\Cache\Backend\Valkey`)를 사용합니다.
+  - **미리 로드 키** — 자주 사용하는 캐시 키를 미리 로드할 수 있습니다.
+  - **Lua 스크립트** — 가비지 수집용 Lua
+  - **압축** — 데이터 압축을 지원합니다.
 
 >[!TAB Symfony 캐시(2.4.9+)]
 
 - **Symfony 캐시(2.4.9+)** — Commerce 2.4.9부터 Symfony 캐시는 Valkey에 대한 최신 PSR-6 호환 캐싱 구현을 제공하며 성능이 크게 향상되었습니다.
-   - **자동 유효성 검사 파이프라인** — 여러 작업을 단일 요청으로 일괄 처리하여 지연을 줄입니다.
-   - **PSR-6 TagAwareAdapter** - 작은 단위의 작업으로 효율적인 태그 기반 캐시 무효화
-   - **Igbinary serialization** — 이진 serialization은 캐시 항목 크기를 45% 줄이고 속도를 5-10% 향상시킵니다.
-   - **향상된 영구 연결** - 포크된 프로세스를 더 잘 처리하여 보다 안정적인 연결 풀링
-   - **최적화된 Lua 스크립트** — 최대 효율성을 위해 파이프라인과 결합된 서버측 실행
+  - **자동 유효성 검사 파이프라인** — 여러 작업을 단일 요청으로 일괄 처리하여 지연을 줄입니다.
+  - **PSR-6 TagAwareAdapter** - 작은 단위의 작업으로 효율적인 태그 기반 캐시 무효화
+  - **Igbinary serialization** — 이진 serialization은 캐시 항목 크기를 45% 줄이고 속도를 5-10% 향상시킵니다.
+  - **향상된 영구 연결** - 포크된 프로세스를 더 잘 처리하여 보다 안정적인 연결 풀링
+  - **최적화된 Lua 스크립트** — 최대 효율성을 위해 파이프라인과 결합된 서버측 실행
 
 >[!ENDTABS]
 
