@@ -1,8 +1,8 @@
 ---
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+source-git-commit: a5120adab9f624677447889722359951e775c3f3
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 17%
+source-wordcount: '220'
+ht-degree: 20%
 
 ---
 # Adobe Authorized Extensions의 제품 가용성
@@ -12,6 +12,7 @@ ht-degree: 17%
   <thead>
     <tr>
       <th>Adobe Commerce 버전</th>
+      <th>2.4.9(최신)</th>
       <th>2.4.8</th>
       <th>2.4.7</th>
       <th>2.4.6</th>
@@ -23,6 +24,7 @@ ht-degree: 17%
   <tbody>
       <tr>
           <td>Adobe Commerce용 Adobe I/O Events</td>
+          <td>1.22.0</td>
           <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -30,11 +32,12 @@ ht-degree: 17%
           <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">작성기</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">릴리스 정보</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>Adobe Commerce 관리 UI SDK</td>
+          <td>4.2.1</td>
           <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -42,35 +45,38 @@ ht-degree: 17%
           <td>-</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">작성기</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">릴리스 정보</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>Adobe Commerce Webhooks</td>
+          <td>1.19.0</td>
           <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
           <td>1.2+</td>
-          <td>1.2+</td>
+          <td>지원되지 않음</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">작성기</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">릴리스 정보</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>Commerce용 Adobe Experience Manager Assets 통합</td>
+          <td>1.4.1</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">작성기</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/aem-assets-integration/get-started/configure-commerce">작성기</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/aem-assets-integration/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>Audience Activation</td>
+          <td>2.4.0</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
@@ -85,6 +91,7 @@ ht-degree: 17%
           <td>B2B</td>
           <td>1.5.3</td>
           <td>1.5.3</td>
+          <td>1.5.3</td>
           <td>1.5.2<br /> 1.4.2</td>
           <td>1.3.4</td>
           <td>1.3.3</td>
@@ -95,26 +102,15 @@ ht-degree: 17%
       </tr>
       <tr>
           <td>데이터 연결</td>
-          <td>3.4.0</td>
-          <td>3.4.0</td>
-          <td>3.4.0</td>
-          <td>3.4.0</td>
-          <td>3.4.0</td>
+          <td>3.6.0</td>
+          <td>3.6.0</td>
+          <td>3.6.0</td>
+          <td>3.6.0</td>
+          <td>3.6.0</td>
+          <td>3.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">마켓플레이스</a><br/>
               <a href="https://experienceleague.adobe.com/ko/docs/commerce/data-connection/release-notes">릴리스 정보</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>페이지 빌더</td>
-          <td>-</td>
-          <td>-</td>
-          <td>1.7.3</td>
-          <td>1.7.2</td>
-          <td>1.7.1</td>
-          <td>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/page-builder/guide-overview">사용 안내서</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/page-builder/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
   </tbody>
