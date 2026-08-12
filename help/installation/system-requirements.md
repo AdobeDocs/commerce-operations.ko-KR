@@ -2,8 +2,8 @@
 title: 시스템 요구 사항
 description: Adobe Commerce에 대한 소프트웨어 종속성 및 시스템 요구 사항에 대해 알아봅니다. 배포 환경과의 호환성에 대해서는 테스트된 구성을 참조하십시오.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-07-23T00:00:00Z
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+last-update: 2026-08-11T00:00:00Z
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
@@ -230,4 +230,4 @@ Adobe Commerce의 경우 [php_xdebug 2.5.x](https://xdebug.org/download) 이상�
 >
 >`xdebug`에는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 액세스하는 데 영향을 줄 수 있는 알려진 문제가 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)를 참조하십시오.
 
-<!-- Last updated from includes: 2026-07-23 16:17:19 -->
+<!-- Last updated from includes: 2026-08-10 23:39:34 -->

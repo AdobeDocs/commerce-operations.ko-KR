@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -627,36 +627,6 @@ ht-degree: 1%
         피드백, 기술
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 12일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">개요: QPT(품질 패치 도구) v1.1.80</a>이(가) 추가되었습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p>계층화된 일치 모델, 가중치 및 머천다이징 규칙과의 상호 작용, 초대 지침을 포함하여 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta 릴리스</a>에 검색 일치 및 등급(Private Beta) 프로그램을 추가했습니다.</p>
-</td>
-      <td>
-        주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">커밋</a></td>
     </tr>
   </tbody>
 </table>

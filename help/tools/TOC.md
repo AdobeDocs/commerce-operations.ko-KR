@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
 workflow-type: tm+mt
-source-wordcount: '10598'
+source-wordcount: '10612'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: 페이지 계층에 큰따옴표가 포함된 경우 CMS 페이지가 페이지 빌더에 저장되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4894: 비동기 인덱싱이 활성화된 경우 지연되어 관리 주문 그리드에 새 주문이 나타납니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870: 제품 경고 이메일이 스토어 보기 이메일 설정을 무시합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
       - [ACP2E-4799: GraphQL query requisition_lists가 페이지 매김과 함께 잘못된 total_count를 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
       - [ACP2E-4797: utf8mb4가 지원되는 경우 관리 WYSIWYG 편집기 및 페이지 빌더 블록 4바이트 유니코드 문자](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
