@@ -3,7 +3,7 @@ title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
+source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Adobe은 고객이 Adobe Commerce에 대해 3년 또는 연장된 지원 기간�
 
 GA(General Availability) 날짜로부터 3년의 표준 지원 기간. 표준 지원에는 품질 수정 사항, 보안 패치 및 전체 Adobe Commerce On-call 지원이 포함됩니다.
 
-- **품질 수정** - 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 통해 품질 수정 사항에 액세스할 수 있습니다.
+- **품질 수정** - 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 통해 품질 수정 사항에 액세스할 수 있습니다.
 
 - **보안 수정 사항** - Adobe은 3년 지원 기간 동안 누적 보안 패치와 비누적 [격리된 보안 패치 파일](versioning-policy.md#isolated-security-patch-file)을 통해 보안 수정 사항을 제공합니다.
 
@@ -52,8 +52,8 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 | Adobe Commerce 2.4.9 | 2026년 5월 12일 | 2029년 5월 31일 | TBD | 해당 사항 없음 | TBD |
 | Adobe Commerce 2.4.8 | 2025년 4월 8일 | 2028년 5월 31일 | TBD | 해당 사항 없음 | TBD |
 | Adobe Commerce 2.4.7 | 2024년 4월 9일 | 2027년 5월 31일 | 2028년 5월 31일 | 해당 사항 없음 | 2028년 6월 1일 |
-| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 8월 11일 | 2027년 8월 30일 | 2028년 5월 31일 | 2028년 6월 1일 |
-| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 12일 | 2026년 8월 12일 | 2027년 5월 31일 | 2027년 6월 1일 |
+| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 8월 11일 | 2027년 8월 31일 | 2028년 5월 31일 | 2028년 6월 1일 |
+| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 12일 | 2026년 8월 11일 | 2027년 5월 31일 | 2027년 6월 1일 |
 | Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 12일 | 2026년 4월 14일 | 2027년 5월 31일 | 2027년 6월 1일 |
 
 {style="table-layout:auto"}
@@ -207,7 +207,7 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 - AI 기반 머천다이징, 구성 가능한 상점 아키텍처 및 기본 Adobe Experience Cloud 통합과 같은 Adobe의 최신 기능에 액세스할 수 있습니다.
 - 반복되는 업그레이드 주기를 제거합니다.
 
-Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. 제품 개요는 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/overview)을 참조하세요.
+Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. 제품 개요는 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)을 참조하세요.
 
 ### 대체 경로: 지원되는 Adobe Commerce on cloud 또는 온프레미스 릴리스로 업그레이드
 
