@@ -1,7 +1,7 @@
 ---
-source-git-commit: b829cf3685457f9f9ad3dfca2d294b6167accb82
+source-git-commit: 332c042213d3ee25cc5d60c35570a41543e24bfc
 workflow-type: tm+mt
-source-wordcount: '3479'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -276,17 +276,17 @@ _AC-16533_
 
 #### PHP 8.5 호환성
 
-이제 Adobe Commerce 2.4.9에서 PHP 8.5 및 PHP 8.4를 지원하므로 최신 보안 및 호환 PHP 버전에서 스토어를 실행할 수 있습니다. 모든 핵심 기능, 번들 확장 기능(페이지 빌더, B2B, Braintree 등) 및 Adobe SaaS 서비스는 PHP 8.5와 호환됩니다.
+이제 Adobe Commerce 2.4.9에서 PHP 8.5를 지원하므로 최신 보안 및 호환 PHP 버전에서 스토어를 실행할 수 있습니다. 모든 핵심 기능, 번들 확장 기능(페이지 빌더, B2B, Braintree 등) 및 Adobe SaaS 서비스는 PHP 8.5와 호환됩니다.
 
-- PHP 8.5 및 8.4가 완전히 지원됩니다.
-- PHP 8.3은 업그레이드 목적으로만 사용할 수 있습니다(프로덕션 환경에서는 권장되지 않음).
+- PHP 8.5가 완전히 지원됩니다.
+- PHP 8.4는 업그레이드 목적으로만 사용할 수 있습니다(프로덕션 환경에서는 권장되지 않음).
 - PCI 규정 준수 및 향후 Adobe Commerce 설치를 보장합니다.
 
 _AC-15615_
 
 #### PHP 8.2 지원 제거됨
 
-Adobe Commerce 2.4.9부터 PHP 8.2가 더 이상 지원되지 않습니다. 이제 이 플랫폼은 PHP 8.3 이상을 대상으로 하며, 코어 코드, 종속성 및 도구가 업데이트되어 PHP 8.4 및 8.5에서 깔끔하고 안정적으로 실행됩니다.
+Adobe Commerce 2.4.9부터 PHP 8.2 및 PHP 8.3이 더 이상 지원되지 않습니다. 이제 이 플랫폼은 PHP 8.4 이상을 대상으로 하며, 핵심 코드, 종속성 및 도구가 업데이트되어 8.5에서 깔끔하고 안정적으로 실행됩니다.
 
 _AC-15758_
 
@@ -428,12 +428,12 @@ Adobe Commerce은 USPS가 발표한 기존 Web Tools API 폐기를 준수하기 
 - 인증 업그레이드: 보안 API 액세스에 OAuth 2.0을 사용합니다.
 - 향상된 데이터 형식: 보다 깔끔하고 효율적인 커뮤니케이션을 위해 XML 대신 JSON을 사용합니다.
 - 새 관리자 필드:
-   - 게이트웨이 REST URL(모드 기준: 개발 또는 라이브)
-   - 클라이언트 ID 및 암호
-   - 계정 유형, 계정 번호
-   - CRID, MID, Mailer 식별 코드
-   - 국제 배송에 대한 AES/ITN
-   - REST별 허용된 배송 방법
+  - 게이트웨이 REST URL(모드 기준: 개발 또는 라이브)
+  - 클라이언트 ID 및 암호
+  - 계정 유형, 계정 번호
+  - CRID, MID, Mailer 식별 코드
+  - 국제 배송에 대한 AES/ITN
+  - REST별 허용된 배송 방법
 
 이 마이그레이션을 통해 Adobe Commerce은 USPS 표준을 지속적으로 준수하고 시스템 안정성을 향상시키며 판매자를 위한 미래 지향적 배송 통합을 실현할 수 있습니다.
 

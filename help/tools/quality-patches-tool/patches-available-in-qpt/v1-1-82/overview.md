@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 489
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ QPT v1.1.82에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: 관리자가 관리자의 **[!UICONTROL Add Products By SKU]**&#x200B;을(를) 사용하여 기본 카탈로그의 제품을 공유 카탈로그에 연결되어 있지 않은 고객 그룹에 할당된 회사의 주문에 추가할 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: 다중 웹 사이트 배포의 보조 웹 사이트에서 웹 사이트 제한에 대해 표시되는 CMS 페이지가 잘못될 수 있는 문제를 해결했습니다.
 1. **ACP2E-4695**: 카탈로그 규칙 인덱서가 과도한 메모리를 사용하고 완료하지 못해 불안정하고 메모리 부족 오류가 발생하는 문제를 해결했습니다.
-1. **ACP2E-4698**: 페이지 빌더 텍스트 콘텐츠에서 이미지를 다시 편집하면 이식 가능한 미디어 지시문을 유지하는 대신 절대 미디어 URL이 저장되는 문제가 해결되었습니다.
+1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: 페이지 빌더 텍스트 콘텐츠에서 이미지를 다시 편집하면 이식 가능한 미디어 지시문을 유지하는 대신 절대 미디어 URL을 저장할 수 있는 문제를 해결했습니다.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: 데이터베이스가 utf8mb4를 지원하도록 구성된 경우에도 관리자의 WYSIWYG 편집기 또는 페이지 빌더 콘텐츠에 4바이트 유니코드 문자 입력이 잘못 차단되는 문제를 해결했습니다.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 실행되어 보상 포인트 만료가 지연되는 문제를 해결했습니다.
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: `requisition_lists GraphQL` 쿼리가 쿼리 기준과 일치하는 총 구매요청 목록 수 대신 현재 페이지의 항목 수만 반영하는 `total_count` 값을 반환하는 문제를 해결했습니다.
