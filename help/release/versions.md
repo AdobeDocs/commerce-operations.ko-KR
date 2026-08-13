@@ -3,8 +3,8 @@ title: 릴리스된 버전
 description: Adobe Commerce의 특정 버전이 언제 릴리스되었는지 알아봅니다.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-last-update: 2026-06-02T00:00:00Z
-source-git-commit: 90f54aef167dd29ec6bdc0639cf3eb6c5d7244ce
+last-update: 2026-08-12T00:00:00Z
+source-git-commit: 74ce0344595bdf33e84840a1d7ba7a3835b203b2
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
