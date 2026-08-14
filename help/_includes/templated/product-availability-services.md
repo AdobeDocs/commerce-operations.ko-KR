@@ -1,8 +1,8 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 9d4cd97d654a4837068876bb539559979a4a10e8
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 17%
+source-wordcount: '120'
+ht-degree: 24%
 
 ---
 # Commerce 서비스의 제품 가용성
@@ -31,8 +31,8 @@ ht-degree: 17%
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/guide-overview">개요</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">개요</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -45,20 +45,20 @@ ht-degree: 17%
           <td>4.7.2</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/live-search/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
           <td>결제 서비스</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
-          <td>2.15.0 (PHP 8.4)</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/payment-services/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@ ht-degree: 17%
           <td>6.7.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/product-recommendations/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
   </tbody>
