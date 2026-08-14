@@ -31,8 +31,8 @@ ht-degree: 17%
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">개요</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/guide-overview">개요</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/catalog-service/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -45,7 +45,7 @@ ht-degree: 17%
           <td>4.7.2</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/live-search/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -58,7 +58,7 @@ ht-degree: 17%
           <td>2.15.0 (PHP 8.4)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/payment-services/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@ ht-degree: 17%
           <td>6.7.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/ko/docs/commerce/product-recommendations/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
   </tbody>
