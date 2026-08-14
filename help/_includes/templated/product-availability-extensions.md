@@ -1,5 +1,5 @@
 ---
-source-git-commit: a5120adab9f624677447889722359951e775c3f3
+source-git-commit: 832481dbf2753af8bc7b86c92c54414c888b3332
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
@@ -63,15 +63,15 @@ ht-degree: 20%
       </tr>
       <tr>
           <td>Commerce용 Adobe Experience Manager Assets 통합</td>
-          <td>1.4.1</td>
+          <td>1.4.4</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/aem-assets-integration/get-started/configure-commerce">작성기</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/aem-assets-integration/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-commerce">작성기</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -84,7 +84,7 @@ ht-degree: 20%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/customers/audience-activation#release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -96,8 +96,8 @@ ht-degree: 20%
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/install">작성기</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">작성기</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
       <tr>
@@ -110,7 +110,7 @@ ht-degree: 20%
           <td>3.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">마켓플레이스</a><br/>
-              <a href="https://experienceleague.adobe.com/ko/docs/commerce/data-connection/release-notes">릴리스 정보</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">릴리스 정보</a><br/>
           </td>
       </tr>
   </tbody>
