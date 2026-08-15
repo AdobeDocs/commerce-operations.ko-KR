@@ -22,9 +22,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Cloud 2.4.4 - 2.4.9의 Adobe Commerce 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: c3ea400087a14aa1021ab6998b9de48c33787cc9
+source-git-commit: e2b86c349bdd085717f732532f68e3fae8455d13
 workflow-type: tm+mt
-source-wordcount: 2174
+source-wordcount: 2200
 ht-degree: 0%
 
 ---
@@ -87,10 +87,11 @@ Commerce 관리자에게 문의하여 다음 단계를 수행하십시오.
 
 #### 1단계: 타사 소프트웨어 종속성 버전 확인
 
-1. 모든 환경을 볼 수 있는 [클라우드 콘솔](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/start/cloud-console)에 로그인합니다.
+1. 모든 클라우드 프로젝트를 볼 수 있는 [클라우드 콘솔](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/start/cloud-console)에 로그인합니다.
 2. 관련 프로젝트를 연 다음 검토할 환경을 선택합니다.
-3. `.magento/services.yaml` 파일에서 해당 환경에 대한 서비스 구성을 확인하십시오. 이 파일은 Adobe Commerce on Cloud에서 사용하는 지원되는 서비스 이름과 버전을 정의합니다.
-4. [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)의 지침을 사용하여 각 환경이 실행 중인 종속성 버전을 확인하세요.
+3. 선택한 환경에서 현재 사용 중인 모든 서비스 목록을 볼 수 있는 &quot;컨테이너&quot; 탭을 엽니다.
+4. 각 서비스 링크를 클릭하여 현재 환경에서 실행 중인 정확한 버전을 확인합니다.
+자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)의 지침을 참조하십시오.
 
 지원되지 않는 모든 소프트웨어 종속성은 아래 표 2에 나와 있는 타임라인으로 요약된 버전으로 업그레이드해야 합니다.
 
@@ -177,7 +178,7 @@ Adobe은 지원되는 타사 소프트웨어 버전을 채택하거나, Cloud에
 
 **Cloud 버전 2.4.9에서 Adobe Commerce으로 업그레이드하도록 선택한 경우:**
 
-* **업그레이드 호환성 보고서:** Adobe은 업데이트가 필요한 모듈 및 파일, 중요한 문제 수 등을 포함하여 Adobe Commerce 버전 2.4.9로 업그레이드하는 데 필요한 사항을 정확히 식별하는 자세한 보고서를 제공합니다. [업그레이드 호환성 보고서를 생성합니다](https://supportinsights.adobe.com/commerce/tab/main).
+* **업그레이드 호환성 보고서:** Adobe은 업데이트가 필요한 모듈 및 파일, 중요한 문제 수 등을 포함하여 Adobe Commerce 버전 2.4.9로 업그레이드하는 데 필요한 사항을 정확히 식별하는 자세한 보고서를 제공합니다. 업그레이드 호환성 보고서를 생성하는 방법에 대한 자세한 내용은 [사이트 전체 분석 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access) 설명서를 참조하십시오.
 
 * **소프트웨어 종속성 업그레이드:** 소프트웨어 종속성을 직접 업그레이드할 수 없으므로 Adobe에서 [지원 티켓](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)을 열어 업그레이드를 처리하십시오. 자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하세요.
 
