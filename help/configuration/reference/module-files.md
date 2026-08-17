@@ -2,9 +2,9 @@
 title: 모듈 구성 파일
 description: Adobe Commerce에서 구성 유형을 사용하여 모듈을 사용자 지정하는 방법을 알아봅니다. 구성 파일 관리 및 모듈 사용자 정의 모범 사례를 살펴봅니다.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,9 @@ Commerce은 구성 파일을 다음 순서로 로드합니다(모든 경로는 C
 - `<vendorname>`은(는) 구성 요소의 공급업체 이름입니다. 예를 들어, Commerce의 공급업체 이름은 `magento`입니다.
 - `<component-type>`은(는) 다음 중 하나입니다.
 
-   - `module-`: 확장 또는 모듈입니다.
-   - `theme-`: 테마.
-   - `language-`: 언어 패키지.
+  - `module-`: 확장 또는 모듈입니다.
+  - `theme-`: 테마.
+  - `language-`: 언어 패키지.
 
 >[!INFO]
 >
@@ -136,7 +136,7 @@ Commerce 애플리케이션 병합 알고리즘:
 
 - [Framework\Config\ConverterInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ConverterInterface.php)&#x200B;(XML을 구성의 메모리 내 배열 표시로 변환).
 - 지정된 범위에서 구성 데이터를 검색하는 [Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/DataInterface.php).
-- [Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php)에서 읽을 파일의 위치를 식별하는 [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
+- [Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php)에서 읽을 파일의 위치를 식별하는 [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php).
 - 저장소에서 구성 데이터를 읽고 읽을 저장소를 선택하는 [Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
 
 즉, 파일 시스템, 데이터베이스, 기타 저장소는 병합 규칙에 따라 구성 파일을 병합하고 유효성 검사 스키마와 함께 구성 파일의 유효성을 검사합니다.

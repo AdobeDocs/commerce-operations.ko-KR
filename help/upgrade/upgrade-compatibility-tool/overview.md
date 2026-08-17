@@ -4,7 +4,7 @@ description: ' [!DNL Upgrade Compatibility Tool] 과(와) Adobe Commerce 프로�
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]에 대해 알아보려면 이 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/344386?quality=12&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/344386?captions=kor&quality=12)
 
 ## [!DNL Upgrade Compatibility Tool]을(를) 개선하는 데 도움
 

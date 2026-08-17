@@ -1,11 +1,11 @@
 ---
 title: '[!UICONTROL MySQL] 탭'
-description: '[!UICONTROL MySQL]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
+description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL MySQL] 탭에 대해 알아봅니다.'
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1640'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 노드별 ![MySQL% 사용 가능한 저장소](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-MySQL에 할당된 저장소(`datadir` MySQL 구성 설정, 기본값: `/data/mysql`)에서 MySQL의 저장소 부족 또는 `tmpdir`의 공간 부족으로 인해 많은 문제가 발생합니다. 기본 `tmpdir`(MySQL 설정)은 `/tmp`입니다. **[!UICONTROL MySQL% free storage by node]** 프레임은 `/, /tmp`(별도의 마운트로 정의된 경우)과 `/data/mysql` 사용 가능한 저장소 비율을 봅니다. MySQL 버전 5.7(MariaDB 버전 10.2)부터 압축되지 않은 `tmp` 테이블이 파일의 `tmp` 디렉터리에 있는 `/data/mysql` 테이블스페이스에 기록됩니다(ibtmp1). 이 파일은 기본적으로 제한 없이 자동으로 확장됩니다. 테이블스페이스이므로 크기가 줄어들지 않고 MySQL이 다시 시작될 때 12MB로 재설정됩니다.
+MySQL에 할당된 저장소(`datadir` MySQL 구성 설정, 기본값: `/data/mysql`)에서 MySQL의 저장소 부족 또는 `tmpdir`의 공간 부족으로 인해 많은 문제가 발생합니다. 기본 `tmpdir`(MySQL 설정)은 `/tmp`입니다. **[!UICONTROL MySQL% free storage by node]** 프레임은 `/, /tmp`(별도의 마운트로 정의된 경우)과 `/data/mysql` 사용 가능한 저장소 비율을 봅니다. MySQL 버전 5.7(MariaDB 버전 10.2)부터 압축되지 않은 `tmp` 테이블이 파일의 `/data/mysql` 디렉터리에 있는 `tmp` 테이블스페이스에 기록됩니다(ibtmp1). 이 파일은 기본적으로 제한 없이 자동으로 확장됩니다. 테이블스페이스이므로 크기가 줄어들지 않고 MySQL이 다시 시작될 때 12MB로 재설정됩니다.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -59,7 +59,7 @@ MySQL에 할당된 저장소(`datadir` MySQL 구성 설정, 기본값: `/data/my
 * &#39;%members = 1/2%&#39;)을(를) &#39;1of2&#39;(으)로 설정
 * &#39;%members = 1/3%&#39;)을(를) &#39;1of3&#39;으로 설정
 * &#39;%members = 1/1%&#39;)을(를) &#39;1of1&#39;(으)로 설정
-* &#39;%\[참고\] /usr/sbin/mysqld(mysqld 10.%&#39;)를 &#39;sql_restart&#39;로
+* &#39;%\[참고\] /usr/sbin/mysqld(mysqld 10.%&#39;) as&#39;sql_restart&#39;
 * &#39;%Quorum: 완료 상태:%&#39;인 노드가 없음) &#39;no_node_count&#39;
 * &#39;%WSREP: 멤버 0%&#39;)이 &#39;mem_0&#39;이 되었습니다.
 * &#39;%WSREP: 멤버 1.0%&#39;)이 &#39;mem_1&#39;인 경우
