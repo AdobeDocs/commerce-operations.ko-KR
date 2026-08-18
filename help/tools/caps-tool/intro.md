@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)], 사용 방법, 액세스 방법 및 자동 패치 모범 사례에 대해 알아봅니다.'
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ ht-degree: 0%
 ## [!DNL CAPS]개 주제
 
 * **[액세스 방법](access.md)**
-* **[워크플로](workflow.md)**
+* **[워크플로 개요](workflow.md)**
+* **[GitHub 통합](github-integration.md)**
 * **[모범 사례](best-practices.md)**
 * **[문제 해결](troubleshooting.md)**
 
 ## 도구 개요
 
 * **UI 인터페이스**
-   * 특정 프로젝트 및 환경 조합에 대한 실시간 패치 가용성 및 상태 표시
-   * 진행 상황, 오류 및 기타 관련 메시지를 보여주는 포괄적인 패치 상태 정보
-   * 다음에 대한 [!UICONTROL Patch Management Dashboard]:
-      * 사용 가능한 패치 보기
-      * 한 번의 클릭으로 패치 적용
-      * 이전에 적용된 패치 되돌리기
-      * 패치 작업 상태 및 결과 모니터링
+  * 특정 프로젝트 및 환경 조합에 대한 실시간 패치 가용성 및 상태 표시
+  * 진행 상황, 오류 및 기타 관련 메시지를 보여주는 포괄적인 패치 상태 정보
+  * 다음에 대한 [!UICONTROL Patch Management Dashboard]:
+    * 사용 가능한 패치 보기
+    * 한 번의 클릭으로 패치 적용
+    * 이전에 적용된 패치 되돌리기
+    * 패치 작업 상태 및 결과 모니터링
 
 * **구조화된 워크플로를 사용한 자동 패치 서비스**
-   * **사전 확인** - 패치 호환성 및 환경 준비 상태 확인
-   * **패치 중** - 통합 환경에서 자동으로 패치를 적용하거나 되돌립니다.
-   * **유효성 검사** - 상태 검사를 수행하고 중요한 기능에 영향을 주지 않습니다.
+  * **사전 확인** - 패치 호환성 및 환경 준비 상태 확인
+  * **패치 중** - 통합 환경에서 자동으로 패치를 적용하거나 되돌립니다.
+  * **유효성 검사** - 상태 검사를 수행하고 중요한 기능에 영향을 주지 않습니다.
 
 * **안전 기능**
-   * 테스트를 위한 임시 통합 환경 만들기
-   * 응용 프로그램 전에 패치 호환성 확인
-   * 유효성 검사 실패 시 자동 롤백 제공
-   * 되돌리는 동안 자동 제거로 `m2-hotfixes` 폴더에 패치를 적용합니다.
+  * 테스트를 위한 임시 통합 환경 만들기
+  * 응용 프로그램 전에 패치 호환성 확인
+  * 패치가 임시 환경에서 유효성 검사를 통과할 때까지 대상 환경을 변경하지 않습니다.
+  * 되돌리는 동안 자동 제거로 `m2-hotfixes` 폴더에 패치를 적용합니다.
 
 ## Adobe Commerce Cloud와 통합
 
@@ -52,7 +53,7 @@ ht-degree: 0%
 
 Adobe Cloud 자동 패치 서비스 및 이 도구를 사용하여 사용자가 보안 패치를 빠르게 찾고 적용하는 방법에 대해 알아봅니다. 다음 비디오에서는 SWAT 대시보드를 통해 프로젝트에 액세스하고, 프로젝트 및 환경을 선택하고, 한 번의 클릭으로 패치를 적용하는 방법을 다룹니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476254/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 일반적인 사용 사례
 

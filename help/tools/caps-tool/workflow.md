@@ -1,27 +1,27 @@
 ---
-title: ' [!DNL Cloud Automation Patching Service (CAPS)] 워크플로 작동 방식'
+title: '[!DNL Cloud Automation Patching Service (CAPS)] 워크플로 개요'
 description: 용어, 워크플로 단계 및 자동화된 패치 관리를 위한 작업을 포함하여  [!DNL Cloud Automation Patching Service (CAPS)] 워크플로 프로세스에 대해 알아봅니다.
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)] 워크플로의 작동 방식
+# [!DNL Cloud Automation Patching Service (CAPS)] 워크플로 개요
 
 이 항목에서는 [!DNL CAPS (Cloud Automation Patching Service)]을(를) 사용하여 패치 작업이 작동하는 방식에 대한 높은 수준의 개요를 제공합니다.
 
 ## Terminology
 
 * **작업** - [!DNL CAPS]이(가) 수행하는 기본 작업:
-   * 적용
-   * 되돌리기
+  * 적용
+  * 되돌리기
 * **단계** - 워크플로의 세 단계:
-   * 예비 검사
-   * 패치 중
-   * 유효성 검사
+  * 예비 검사
+  * 패치 중
+  * 유효성 검사
 * **환경** - 패치가 적용되는 Adobe Commerce Cloud 환경입니다.
 
 ## 작업
@@ -53,10 +53,10 @@ ht-degree: 0%
 **결과:**
 
 * **프로덕션 환경 보호**(프로덕션 환경만 해당):
-   * 스토어가 유지 관리 모드인지 확인
-   * cron 작업이 비활성화되었는지 확인
-   * 조건이 충족되지 않을 경우 패치 작업 차단
-   * 조건이 충족되는 경우 확인 대화 상자를 표시합니다.
+  * 스토어가 유지 관리 모드인지 확인
+  * cron 작업이 비활성화되었는지 확인
+  * 조건이 충족되지 않을 경우 패치 작업 차단
+  * 조건이 충족되는 경우 확인 대화 상자를 표시합니다.
 * **패치 유효성 검사** - 패치 파일이 유효하고 호환되는지 확인합니다.
 * **환경 평가** - 환경 준비 및 리소스를 확인합니다.
 * **충돌 검색** - 기존 코드와의 잠재적인 충돌을 식별합니다.
@@ -92,6 +92,10 @@ ht-degree: 0%
 **Git 작업** - 변경 내용이 커밋되고 통합 환경 분기에 푸시됨
 
 **환경 활성화** - 통합 환경이 활성화된 후 패치된 코드를 배포합니다.
+
+>[!NOTE]
+>
+>프로젝트에서 외부 GitHub 리포지토리를 사용하는 경우 [!DNL CAPS]은(는) [[!DNL CAPS] GitHub 앱](github-integration.md)을(를) 사용하여 인증을 자동으로 처리합니다. 추가 자격 증명이 필요하지 않습니다.
 
 #### 2c 단계: 대상 환경으로 다시 병합
 
@@ -159,5 +163,6 @@ ht-degree: 0%
 
 * [CAPS 소개](intro.md)
 * [액세스 방법](access.md)
+* [GitHub 통합](github-integration.md)
 * [우수 사례](best-practices.md)
 * [문제 해결](troubleshooting.md)
