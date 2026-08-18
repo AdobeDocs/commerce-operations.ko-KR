@@ -17,7 +17,7 @@ Adobe Commerce Cloud 프로젝트가 GitHub 저장소에 연결된 경우 [!DNL 
 ## 사전 요구 사항
 
 * 활성 Adobe Commerce Cloud 구독
-* [GitHub 통합](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)이(가) [`fetch-branches` 옵션을 사용하도록 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)한 상태로 Adobe Commerce Cloud 프로젝트에 대해 이미 구성되었습니다. [!DNL CAPS]이(가) 임시 통합 환경 분기를 만들고 푸시하므로 이 옵션을 사용하지 않도록 설정하면 패치 작업에서 환경을 만들지 못합니다.
+* [GitHub 통합](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)이(가) [`fetch-branches` 옵션을 사용하도록 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)한 상태로 Adobe Commerce Cloud 프로젝트에 대해 이미 구성되었습니다. [!DNL CAPS]이(가) 임시 통합 환경 분기를 만들고 푸시하므로 이 옵션을 사용하지 않도록 설정하면 패치 작업에서 환경을 만들지 못합니다.
 * [!DNL github.com]에 호스팅된 리포지토리입니다. 사용자 정의 도메인으로 구성된 GitHub 통합은 지원되지 않습니다.
 * GitHub 조직 또는 저장소에 대한 소유자 또는 관리자 액세스
 
