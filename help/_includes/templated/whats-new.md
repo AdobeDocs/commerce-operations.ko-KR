@@ -1,7 +1,7 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -757,50 +757,6 @@ ht-degree: 1%
         새 주제, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 18일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>클라우드 버전 업그레이드 적용 날짜, 지원 기간 정의(보안 전용 전환 기간 포함), 2.4.4-2.4.9에 대한 확장된 지원 종료 테이블, PHP PCI 지침 및 Adobe Commerce as a Cloud Service으로 마이그레이션하거나 PaaS에서 업그레이드하는 경로를 사용하여 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy">소프트웨어 수명 주기 정책</a>을(를) 업데이트했습니다.</p>
-</td>
-      <td>
-        주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 16일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce 2.4.9, 2.4.8 및 2.4.7의 Cloud 및 On-Prem에 대한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 테이블에서 Composer의 버전을 2.10으로 업데이트했습니다.</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">커밋</a></td>
     </tr>
   </tbody>
 </table>

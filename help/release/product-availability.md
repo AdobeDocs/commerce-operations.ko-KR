@@ -3,7 +3,7 @@ title: 제품 가용성
 description: 현재 지원되는 Adobe Commerce 기능에 대해 알아보고 특정 Adobe Commerce 릴리스와의 호환성을 확인합니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 last-update: 2026-08-14T00:00:00Z
-source-git-commit: b5601f4fa56a7bb40d8104fd3d8ec4f72c4681e2
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -45,4 +45,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-08-14 22:09:33 -->
+<!-- Last updated from includes: 2026-08-14 18:04:17 -->

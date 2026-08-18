@@ -3,9 +3,10 @@ title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
+last-update: 2026-08-13T00:00:00Z
+source-git-commit: dd6d284c1761248515bae5324a90e330b6aabf9b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1350'
 ht-degree: 1%
 
 ---
@@ -47,16 +48,7 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 
 다음 표는 클라우드 환경의 Adobe Commerce에 대한 새 버전 업그레이드 적용 날짜를 포함하여 각 Adobe Commerce 버전에 대한 전체 라이프사이클을 보여 줍니다.
 
-| 릴리스 | 일반 가용성 | 표준 지원 종료 | 확장 지원 종료 | 보안 전용 기간 종료 | [버전 업그레이드 적용 날짜(클라우드만 해당)](version-upgrade-enforcement-policy.md) |
-| --------- | ---------------------- | ------------------------ | ------------------------- |-----------------------------| ----------------------------------------------- |
-| Adobe Commerce 2.4.9 | 2026년 5월 12일 | 2029년 5월 31일 | TBD | 해당 사항 없음 | TBD |
-| Adobe Commerce 2.4.8 | 2025년 4월 8일 | 2028년 5월 31일 | TBD | 해당 사항 없음 | TBD |
-| Adobe Commerce 2.4.7 | 2024년 4월 9일 | 2027년 5월 31일 | 2028년 5월 31일 | 해당 사항 없음 | 2028년 6월 1일 |
-| Adobe Commerce 2.4.6 | 2023년 3월 14일 | 2026년 8월 11일 | 2027년 8월 31일 | 2028년 5월 31일 | 2028년 6월 1일 |
-| Adobe Commerce 2.4.5 | 2022년 8월 9일 | 2025년 8월 12일 | 2026년 8월 11일 | 2027년 5월 31일 | 2027년 6월 1일 |
-| Adobe Commerce 2.4.4 | 2022년 4월 12일 | 2025년 4월 12일 | 2026년 4월 14일 | 2027년 5월 31일 | 2027년 6월 1일 |
-
-{style="table-layout:auto"}
+{{$include /help/_includes/templated/release/end-of-support-dates.md}}
 
 ## 지원 타임라인
 
