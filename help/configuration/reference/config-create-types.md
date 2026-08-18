@@ -2,7 +2,7 @@
 title: 구성 유형
 description: Adobe Commerce에서 구성 유형을 만들고 확장하는 방법을 알아봅니다. 모듈 구성 및 사용자 지정 기술을 살펴보십시오.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 'null'
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%

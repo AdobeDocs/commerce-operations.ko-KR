@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)] 문제 해결 안내서'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]의 일반적인 문제 및 오류 메시지 해결'
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,32 @@ ht-degree: 0%
 * 환경 관리 권한이 있는지 확인
 * 배포 권한이 있는지 확인합니다.
 
+### GitHub 통합 오류
+
+#### &quot;공급자 github에 사용할 수 있는 Git 자격 증명이 없습니다. 이 저장소용 CAPS GitHub 앱 설치&quot;
+
+**발생할 때:** GitHub에 연결된 프로젝트에 대한 패치 작업 중
+
+**원인:** [!DNL CAPS] GitHub 앱이 저장소에 설치되지 않았습니다
+
+**해결 방법:** [GitHub 통합 설정 [!DNL CAPS]](github-integration.md)의 단계에 따라
+
+#### &quot;GitHub API 요청 실패&quot;
+
+**발생할 때:** GitHub 연결 프로젝트에 대한 패치 작업 중
+
+**원인:** 일시적인 문제로 인해 [!DNL CAPS]에서 GitHub에 연결할 수 없습니다.
+
+**해결 방법:** 몇 분 정도 기다린 후 작업을 다시 시도하십시오. 오류가 계속되면 [Adobe Commerce Cloud 지원](https://experienceleague.adobe.com/home?lang=ko#support)에 문의하십시오.
+
+#### &quot;환경이 시간 제한 내에 만들어지지 않음&quot;(GitHub 연결 프로젝트)
+
+통합 환경을 만드는 동안 **발생하는 경우:**
+
+**원인:** 프로젝트의 GitHub 통합에 `fetch-branches` 옵션이 비활성화되어 있으므로 임시 분기 [!DNL CAPS] 푸시가 동기화되지 않고 통합 환경이 만들어지지 않습니다.
+
+**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL CAPS]](github-integration.md)을 참조하세요.
+
 ### 리소스 및 할당량 오류
 
 #### &quot;환경 할당량 초과&quot;
@@ -221,5 +247,6 @@ ht-degree: 0%
 * [Adobe Commerce 설치 안내서](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/overview)
 * [CAPS 소개](intro.md)
 * [액세스 방법](access.md)
-* [워크플로](workflow.md)
+* [워크플로우 개요](workflow.md)
+* [GitHub 통합](github-integration.md)
 * [우수 사례](best-practices.md)

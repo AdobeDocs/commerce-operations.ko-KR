@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
 workflow-type: tm+mt
-source-wordcount: '10658'
+source-wordcount: '10661'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ ht-degree: 0%
 - 대문자 {#caps-tool}
   - {hide-from-toc}[소개](caps-tool/intro.md)
   - {hide-from-toc}[액세스](caps-tool/access.md)
-  - {hide-from-toc}[워크플로](caps-tool/workflow.md)
+  - {hide-from-toc}[워크플로 개요](caps-tool/workflow.md)
+  - {hide-from-toc}[GitHub 통합](caps-tool/github-integration.md)
   - {hide-from-toc}[모범 사례](caps-tool/best-practices.md)
   - {hide-from-toc}[문제 해결](caps-tool/troubleshooting.md)
 - Adobe Commerce에서 관리되는 경고 {#managed-alerts-for-adobe-commerce}

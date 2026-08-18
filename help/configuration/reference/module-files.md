@@ -2,7 +2,7 @@
 title: 모듈 구성 파일
 description: Adobe Commerce에서 구성 유형을 사용하여 모듈을 사용자 지정하는 방법을 알아봅니다. 구성 파일 관리 및 모듈 사용자 정의 모범 사례를 살펴봅니다.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 'null'
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
