@@ -3,7 +3,7 @@ title: 캐시 백엔드 옵션 및 저장소 참조
 description: 파일 시스템, Redis, Valkey 및 데이터베이스 저장소를 포함하여 Adobe Commerce의 캐시 백엔드 옵션에 대해 알아봅니다. 기존 및 최신 접근 방식을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -31,13 +31,13 @@ ht-degree: 0%
 >
 >이 페이지는 온-프레미스 `app/etc/env.php` 구성을 문서화합니다.
 >
->[!DNL Adobe Commerce on Cloud] 프로젝트의 경우 `ece-tools` 패키지는 `.magento.env.yaml`의 배포 변수 구성에 따라 배포 중에 결과 `app/etc/env.php` 구성을 생성합니다. `env.php` 파일을 편집하지 않습니다.  [Valkey 및 Redis 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) 및 [변수 배포](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)를 참조하세요.
+>[!DNL Adobe Commerce on Cloud] 프로젝트의 경우 `ece-tools` 패키지는 `.magento.env.yaml`의 배포 변수 구성에 따라 배포 중에 결과 `app/etc/env.php` 구성을 생성합니다. `env.php` 파일을 편집하지 않습니다.  [Valkey 및 Redis 서비스 구성에 대한 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) 및 [변수 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)를 참조하세요.
 
 Commerce 애플리케이션은 낮은 수준의 캐시 프론트엔드 및 백엔드를 사용하여 캐시 스토리지에 대한 액세스를 제공합니다. Commerce은 다양한 사용 사례에 맞는 여러 캐싱 백엔드 및 전략을 지원합니다. 이 페이지에서는 사용 가능한 백엔드 및 차이점에 대해 설명합니다.
 
 >[!NOTE]
 >
->[Vannish](config-varnish-install.md)은(는) 온-프레미스 배포에 대한 HTTP 수준에서 전체 페이지 캐싱을 처리합니다. [Fastly 서비스](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)에서 클라우드 배포에 대해 처리합니다. 두 솔루션 모두 낮은 수준의 캐시 백엔드를 사용하지 않습니다.
+>[Vannish](config-varnish-install.md)은(는) 온-프레미스 배포에 대한 HTTP 수준에서 전체 페이지 캐싱을 처리합니다. [Fastly 서비스](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly)에서 클라우드 배포에 대해 처리합니다. 두 솔루션 모두 낮은 수준의 캐시 백엔드를 사용하지 않습니다.
 
 ## 백엔드 캐시 옵션
 
@@ -158,10 +158,10 @@ L2(2-level) 캐싱은 공유 원격 캐시 스토리지 앞의 각 웹 노드에
 
 온-프레미스 구성에 대해서는 [L2 캐시 구성](level-two-cache.md)을 참조하세요.
 
-클라우드 프로젝트의 경우 [변수 배포](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}에 설명된 배포 변수를 통해 L2 캐싱을 구성합니다.
+클라우드 프로젝트의 경우 [변수 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}에 설명된 배포 변수를 통해 L2 캐싱을 구성합니다.
 
 #### L2 캐시 구성
 
 - **[!DNL Adobe Commerce on-premises]** 구성 세부 정보는 [L2 캐시 구성](level-two-cache.md)을 참조하십시오.
 
-- **[!DNL Adobe Commerce on Cloud]**&#x200B;의 경우 `app/etc/env.php`을(를) 직접 편집하지 않고 적절한 배포 변수를 통해 L2 캐싱을 구성하십시오. _Cloud의 Adobe Commerce_ 설명서에서 [변수 배포](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}를 참조하십시오.
+- **[!DNL Adobe Commerce on Cloud]**&#x200B;의 경우 `app/etc/env.php`을(를) 직접 편집하지 않고 적절한 배포 변수를 통해 L2 캐싱을 구성하십시오. _Cloud의 Adobe Commerce_ 설명서에서 [변수 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}를 참조하십시오.

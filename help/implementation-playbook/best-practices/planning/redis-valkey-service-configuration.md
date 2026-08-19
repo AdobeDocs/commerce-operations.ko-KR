@@ -8,7 +8,7 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
+badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
 nudge: true
 autotag-review: '2026-08-18T23:34:12.845Z'
 TQID: 'https://experienceleague.adobe.com/kYuQylZb2r7ElWP1oRJbyIt9jsZMhoO9yFpBMDlf1tw'
@@ -67,7 +67,7 @@ Redis는 Adobe Commerce 2.4.9 및 시스템 요구 사항이 대신 Valkey를 �
 
 >[!NOTE]
 >
->최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
+>최신 버전의 `ece-tools` 패키지를 사용 중인지 확인하십시오. 그렇지 않으면 [최신 버전으로 업그레이드](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)하십시오. `composer show magento/ece-tools` CLI 명령을 사용하여 로컬 환경에 설치된 버전을 확인할 수 있습니다.
 
 ## 복제본 연결 사용
 
@@ -91,7 +91,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-환경 변수 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)을(를) 참조하십시오.
+환경 변수 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)을(를) 참조하십시오.
 
 >[!TAB Redis 구성]
 
@@ -103,7 +103,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-환경 변수 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)을(를) 참조하십시오.
+환경 변수 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)을(를) 참조하십시오.
 
 >[!ENDTABS]
 
@@ -113,7 +113,7 @@ stage:
 
 >[!IMPORTANT]
 >
->프로덕션 및 스테이징에서 전용 세션 인스턴스를 프로비저닝하는 것은 셀프서비스가 아닙니다. 아래 3단계에 설명된 대로 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 파일과 함께 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출해야 합니다.
+>프로덕션 및 스테이징에서 전용 세션 인스턴스를 프로비저닝하는 것은 셀프서비스가 아닙니다. 아래 3단계에 설명된 대로 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 파일과 함께 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출해야 합니다.
 
 세션에 대한 전용 인스턴스를 프로비저닝하려면 아래 단계를 따르십시오.
 
@@ -156,7 +156,7 @@ stage:
 
 1. 프로덕션 및 스테이징 환경에서 세션 전용 새 Valkey 인스턴스를 요청합니다.
 
-   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
+   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
 
    이 업데이트로 인해 가동 중지 시간은 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
 
@@ -231,7 +231,7 @@ stage:
 
 1. 프로덕션 및 스테이징 환경에서 세션 전용 새 Redis 인스턴스를 요청합니다.
 
-   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
+   [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출하세요. 업데이트된 `.magento/services.yaml` 및 `.magento.app.yaml` 구성 파일을 포함합니다.
 
    이 업데이트로 인해 가동 중지 시간은 발생하지 않지만, 새 서비스를 활성화하려면 배포가 필요합니다.
 
@@ -291,7 +291,7 @@ stage:
 
 ## 비동기 해제 사용
 
-Adobe Commerce 클라우드 인프라에서 `lazyfree`을(를) 사용하려면 다음 Redis 또는 Valkey 구성을 환경에 적용할 것을 요청하는 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)합니다.
+Adobe Commerce 클라우드 인프라에서 `lazyfree`을(를) 사용하려면 다음 Redis 또는 Valkey 구성을 환경에 적용할 것을 요청하는 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)합니다.
 
 ```text
 lazyfree-lazy-eviction yes
@@ -313,7 +313,7 @@ lazyfree-lazy-user-del yes
 
 ## 다중 스레드 I/O 사용
 
-Adobe Commerce 클라우드 인프라에서 Redis I/O 스레딩을 사용하려면 아래의 I/O 스레딩 구성을 요청하는 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출하십시오. 이 구성은 더 높은 CPU 사용 비용으로 소켓 읽기, 쓰기 및 명령 구문 분석을 기본 스레드에서 오프로드하여 처리량을 향상시킬 수 있습니다. 로드 중 유효성 검사 및 호스트 모니터링
+Adobe Commerce 클라우드 인프라에서 Redis I/O 스레딩을 사용하려면 아래의 I/O 스레딩 구성을 요청하는 [Adobe Commerce 지원 티켓](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)을 제출하십시오. 이 구성은 더 높은 CPU 사용 비용으로 소켓 읽기, 쓰기 및 명령 구문 분석을 기본 스레드에서 오프로드하여 처리량을 향상시킬 수 있습니다. 로드 중 유효성 검사 및 호스트 모니터링
 
 >[!BEGINTABS]
 
@@ -417,7 +417,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-환경 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)을(를) 참조하십시오.
+환경 구성에 대한 자세한 내용은 _Commerce on Cloud Infrastructure Guide_&#x200B;의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)을(를) 참조하십시오.
 
 >[!ENDTABS]
 
@@ -433,7 +433,7 @@ stage:
 
 - **압축에는 명시적 플래그가 필요합니다.** `CACHE_CONFIGURATION`을(를) 통해 `symfony_l2` 압축을 사용자 지정하는 경우 `compression_lib`만 설정하면 압축이 활성화되지 않습니다. `compress_data`도 설정해야 합니다. [캐시 압축](#cache-compression)을 참조하세요.
 
-- **Redis는 `symfony_l2`에 대해 지원되는 원격 백엔드가 아닙니다.** 이 변경 사항의 일부로 Valkey로 마이그레이션합니다. [Valkey 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)을(를) 참조하십시오.
+- **Redis는 `symfony_l2`에 대해 지원되는 원격 백엔드가 아닙니다.** 이 변경 사항의 일부로 Valkey로 마이그레이션합니다. [Valkey 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/valkey)을(를) 참조하십시오.
 
 - **세션 구성은 이 마이그레이션의 영향을 받지 않습니다.** `SESSION_CONFIGURATION`은(는) 캐시 백엔드와 독립적이므로 `symfony_l2`(으)로 이동할 때 변경할 필요가 없습니다. [캐시와 세션 인스턴스 구분](#separate-cache-and-session-instances)을 참조하십시오.
 
@@ -607,7 +607,7 @@ Adobe Commerce 2.4.9 이상 버전은 `symfony_l2` 캐시 백엔드를 지원합
 
 Adobe Commerce 2.4.9용 `symfony_l2` 캐시를 사용하려면 다음 단계를 완료하십시오.
 
-- 클라우드 프로젝트에서 [`ece-tools` 패키지 v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) 이상을 사용하고 있는지 확인하십시오.
+- 클라우드 프로젝트에서 [`ece-tools` 패키지 v2002.2.12](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) 이상을 사용하고 있는지 확인하십시오.
 
 - `.magento.env.yaml` 파일에서 배포 변수를 설정합니다. `VALKEY_BACKEND`=`symfony_l2`.
 
@@ -623,7 +623,7 @@ Adobe Commerce 2.4.9용 `symfony_l2` 캐시를 사용하려면 다음 단계를 
 >
 >Adobe Commerce 2.4.9용 패치 ACP2E-5132는 태그 저장소를 최적화하고 오래된 캐시 재생성 잠금을 추가하며 오래된 태그 멤버십, 중복 원격 쓰기 및 L1 크기 기반 제거(`cleanup_percentage`) 문제를 해결하여 [!DNL Symfony] L2 캐시 성능과 안정성을 개선합니다. 이를 통해 디스크 I/O 및 백엔드 로드를 줄이는 동시에 캐시 일관성을 향상시킬 수 있습니다. _Adobe Commerce 구성 가이드_&#x200B;에서 [향상된 Symfony L2 캐시 성능 및 안정성](/help/configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)을(를) 참조하십시오.
 >
->이 패치는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)&#x200B;(종속성: `ece-tools`)에 포함되어 있으며 최신 `ece-tools` 버전으로 업데이트할 때 배포 중에 자동으로 적용됩니다. 패치를 받으려면 `ece-tools`의 최신 버전으로 업데이트하십시오.
+>이 패치는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)&#x200B;(종속성: `ece-tools`)에 포함되어 있으며 최신 `ece-tools` 버전으로 업데이트할 때 배포 중에 자동으로 적용됩니다. 패치를 받으려면 `ece-tools`의 최신 버전으로 업데이트하십시오.
 
 #### [!DNL Symfony] L2 캐시 구성 사용자 지정
 
@@ -995,6 +995,6 @@ stage:
 
 >[!MORELIKETHIS]
 >
->- [Valkey 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
->- [Redis 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
->- [변수 배포](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+>- [Valkey 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+>- [Redis 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/redis)
+>- [변수 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)

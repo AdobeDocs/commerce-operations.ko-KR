@@ -56,7 +56,7 @@ Commerce 애플리케이션 캐싱은 다음과 같이 구성됩니다.
 HTTP 전체 페이지 캐싱은 HTTP 또는 CDN 계층에서 전체 응답을 저장합니다. 프로덕션 배포의 경우
 
 - **Adobe Commerce 온-프레미스**—Adobe에서는 전체 페이지 캐싱에 [바니시](config-varnish.md)를 권장합니다. Vannish는 웹 서버 앞에서 역방향 프록시로 작동합니다.
-- 클라우드 인프라의 **Adobe Commerce**&#x200B;은(는) Edge 및 전체 페이지 캐싱 레이어에 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}을(를) 사용합니다. 클라우드 인프라는 별도로 관리되는 Varnish 서비스를 사용하지 않습니다.
+- 클라우드 인프라의 **Adobe Commerce**&#x200B;은(는) Edge 및 전체 페이지 캐싱 레이어에 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}을(를) 사용합니다. 클라우드 인프라는 별도로 관리되는 Varnish 서비스를 사용하지 않습니다.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Commerce은 URL에 배포 버전을 추가하여 CSS, JavaScript 및 이미지�
 | 작업 | 온-프레미스 | 클라우드 인프라 |
 | --- | --- | --- |
 | 애플리케이션 캐시 백엔드 | [캐시 백 엔드 옵션 및 저장소 참조](cache-options.md) | [Valkey 및 Redis 서비스 구성에 대한 모범 사례](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| HTTP 전체 페이지 캐싱 | [바니시 구성](config-varnish.md) | [Fastly 서비스 개요](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| HTTP 전체 페이지 캐싱 | [바니시 구성](config-varnish.md) | [Fastly 서비스 개요](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 다음 작업은 모든 배포 유형에 적용됩니다.
 

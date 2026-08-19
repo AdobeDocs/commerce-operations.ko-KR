@@ -3,7 +3,7 @@ title: 성능 최적화를 위한 L2 캐시 구성
 description: 네트워크 트래픽을 줄이고 성능을 개선하기 위해 Adobe Commerce에서 L2 캐시를 구성하는 방법에 대해 알아봅니다. 기존 및 Symfony 구현 옵션을 살펴보십시오.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Commerce 버전 2.4.9+에서 기존 L2 캐시 대신 Sympony 캐시 기반 L2 �
 
 >[!NOTE]
 >
->이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. Adobe Commerce 온프레미스의 경우 품질 패치 도구(QPT)를 사용하여 이 패치를 적용합니다. Cloud의 Adobe Commerce의 경우 이 패치는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 통해 자동으로 제공됩니다.
+>이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. Adobe Commerce 온프레미스의 경우 품질 패치 도구(QPT)를 사용하여 이 패치를 적용합니다. Cloud의 Adobe Commerce의 경우 이 패치는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 통해 자동으로 제공됩니다.
 
 최신 업데이트를 통해 Symfony L2 캐시 확장성이 향상되고 불필요한 파일 시스템 I/O가 감소하며 캐시 일관성 및 안정성이 향상되었습니다.
 

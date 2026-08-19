@@ -39,7 +39,7 @@ Commerce 캐싱 아키텍처에 대한 개요는 [캐싱 개요 및 구성 옵�
 
 >[!NOTE]
 >
->클라우드 인프라의 Adobe Commerce의 경우 Cloud Guide에 설명된 [클라우드 배포 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)을 사용하십시오. `app/etc/env.php`을(를) 직접 편집하지 마십시오. 배포 도구는 이 파일을 생성하며 수동 변경 사항을 덮어쓸 수 있습니다.
+>클라우드 인프라의 Adobe Commerce의 경우 Cloud Guide에 설명된 [클라우드 배포 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)을 사용하십시오. `app/etc/env.php`을(를) 직접 편집하지 마십시오. 배포 도구는 이 파일을 생성하며 수동 변경 사항을 덮어쓸 수 있습니다.
 
 ## 기본 프론트엔드 사용
 
