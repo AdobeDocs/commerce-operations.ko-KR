@@ -2,9 +2,9 @@
 title: env.php 참조
 description: Adobe Commerce의 env.php 파일 구성 값 및 섹션에 대해 알아봅니다. 환경 설정 및 구성 옵션을 살펴봅니다.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 백엔드
 
-env.php의 **노드를 사용하여 Commerce 관리 URL에 대한** frontName`backend`을(를) 구성합니다.
+env.php의 `backend` 노드를 사용하여 Commerce 관리 URL에 대한 **frontName**&#x200B;을(를) 구성합니다.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ env.php의 **노드를 사용하여 Commerce 관리 URL에 대한** frontName`ba
 
 ## 캐시
 
-`cache` 파일에서 `env.php` 노드를 사용하여 redis 페이지 및 기본 캐싱을 구성합니다.
+`env.php` 파일에서 `cache` 노드를 사용하여 redis 페이지 및 기본 캐싱을 구성합니다.
 
 ```conf
 'cache' => [
@@ -112,11 +112,11 @@ env.php의 **노드를 사용하여 Commerce 관리 URL에 대한** frontName`ba
 
 다음 옵션을 사용할 수 있습니다.
 
-- `1`—TCP 연결을 닫고 소비자 프로세스를 종료하기 전에 소비자가 `max_messages` 파일에 지정된 `env.php` 값에 도달할 때까지 메시지 큐에서 메시지를 계속 처리합니다. `max_messages` 값에 도달하기 전에 큐를 비우면 소비자는 더 많은 메시지가 도착할 때까지 기다립니다.
+- `1`—TCP 연결을 닫고 소비자 프로세스를 종료하기 전에 소비자가 `env.php` 파일에 지정된 `max_messages` 값에 도달할 때까지 메시지 큐에서 메시지를 계속 처리합니다. `max_messages` 값에 도달하기 전에 큐를 비우면 소비자는 더 많은 메시지가 도착할 때까지 기다립니다.
 
   지속적인 메시지 흐름이 예상되고 처리 지연이 바람직하지 않으므로 대규모 판매자에 대해 이 설정을 권장합니다.
 
-- `0` - 소비자가 큐에서 사용 가능한 메시지를 처리하고 TCP 연결을 닫고 종료합니다. 소비자는 처리된 메시지 수가 `max_messages` 파일에 지정된 `env.php` 값보다 적더라도 추가 메시지가 대기열에 들어갈 때까지 기다리지 않습니다. 이렇게 하면 메시지 큐 처리의 오랜 지연으로 인한 cron 작업 문제를 방지하는 데 도움이 될 수 있습니다.
+- `0` - 소비자가 큐에서 사용 가능한 메시지를 처리하고 TCP 연결을 닫고 종료합니다. 소비자는 처리된 메시지 수가 `env.php` 파일에 지정된 `max_messages` 값보다 적더라도 추가 메시지가 대기열에 들어갈 때까지 기다리지 않습니다. 이렇게 하면 메시지 큐 처리의 오랜 지연으로 인한 cron 작업 문제를 방지하는 데 도움이 될 수 있습니다.
 
   메시지 흐름이 일정하지 않고 며칠 동안 메시지가 없을 때 약간의 처리 지연에 대한 교환 조건으로 컴퓨팅 리소스를 보존하려는 소규모 가맹점에 이 설정을 권장합니다.
 
@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에서 _암호화 키_&#x200B;에 대해 자세히 알아보세요.
+_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
 
 ## db
 
@@ -189,11 +189,11 @@ Stomp(ActiveMQ Artemis)의 경우:
 ```
 
 `queue/default_connection`이(가) 시스템 `env.php` 파일에 지정된 경우, 특정 연결이 `queue_topology.xml`, `queue_publisher.xml` 또는 `queue_consumer.xml` 파일에 정의되어 있지 않은 한 이 연결은 시스템을 통한 모든 메시지 큐에 사용됩니다.
-예를 들어 `queue/default_connection`에서 `amqp`이(가) `env.php`이지만 모듈의 큐 구성 XML 파일에 `db` 연결이 지정된 경우 모듈은 MySQL을 메시지 브로커로 사용합니다.
+예를 들어 `env.php`에서 `queue/default_connection`이(가) `amqp`이지만 모듈의 큐 구성 XML 파일에 `db` 연결이 지정된 경우 모듈은 MySQL을 메시지 브로커로 사용합니다.
 
 ## 디렉터리
 
-웹 서버가 `/pub`향상된 보안[을 위해 &#x200B;](../../installation/tutorials/docroot.md) 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
+웹 서버가 [향상된 보안](../../installation/tutorials/docroot.md)을 위해 `/pub` 디렉터리에서 Commerce 앱을 제공하도록 구성된 경우 설정해야 하는 선택적 디렉터리 매핑 옵션입니다.
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Stomp(ActiveMQ Artemis)의 경우:
 ]
 ```
 
-[다운로드 가능한 도메인](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)에 대해 자세히 알아보세요.
+[다운로드 가능한 도메인](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)에 대해 자세히 알아보세요.
 
 ## 설치
 
@@ -323,7 +323,7 @@ Commerce 애플리케이션 설치 날짜입니다.
 
 `__`과(와) 연결되고 상위 키가 `SESSION__SAVE`이(가) 됩니다.
 
-그런 다음 결과 OS 환경 변수 이름 `MAGENTO_DC_`을(를) 가져오기 위해 접두사로 `MAGENTO_DC_SESSION__SAVE`을(를) 사용합니다.
+그런 다음 결과 OS 환경 변수 이름 `MAGENTO_DC_SESSION__SAVE`을(를) 가져오기 위해 접두사로 `MAGENTO_DC_`을(를) 사용합니다.
 
 ```shell
 export MAGENTO_DC_SESSION__SAVE=files
@@ -357,7 +357,7 @@ OS 환경 변수로 기존 `env.php` 구성 옵션을 재정의하려면 구성�
 
 >[!IMPORTANT]
 >
->`MAGENTO_DC__OVERRIDE` 변수는 `env.php` 파일에서 지정된 구성 섹션을 완전히 무시합니다. 이 동작은 `MAGENTO_DC_` 파일의 값보다 우선 순위가 낮은 개별 `env.php` 변수와 다릅니다.
+>`MAGENTO_DC__OVERRIDE` 변수는 `env.php` 파일에서 지정된 구성 섹션을 완전히 무시합니다. 이 동작은 `env.php` 파일의 값보다 우선 순위가 낮은 개별 `MAGENTO_DC_` 변수와 다릅니다.
 
 여러 구성 옵션을 재정의해야 하는 경우 JSON 인코딩 전에 모든 구성 옵션을 단일 배열로 취합하십시오.
 

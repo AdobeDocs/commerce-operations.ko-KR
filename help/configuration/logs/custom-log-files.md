@@ -4,9 +4,9 @@ description: Adobe Commerce에서 사용자 지정 로그 파일을 만들고 �
 feature: Configuration, Logs
 badge: label="Atwix 제공" type="Informative" url="https://www.atwix.com/" tooltip="아트윅스"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ## `di.xml`에서 사용자 지정 로그 파일 설정
 
-이 예제에서는 [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)을(를) 사용하여 `debug`개의 메시지를 표준 `/var/log/debug.log` 대신 사용자 지정 로그 파일에 기록하는 방법을 보여 줍니다.
+이 예제에서는 [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)을(를) 사용하여 `debug`개의 메시지를 표준 `/var/log/debug.log` 대신 사용자 지정 로그 파일에 기록하는 방법을 보여 줍니다.
 
-1. 모듈의 `di.xml` 파일에서 사용자 지정 로그 파일을 [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)&#x200B;(으)로 정의합니다.
+1. 모듈의 `di.xml` 파일에서 사용자 지정 로그 파일을 [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)&#x200B;(으)로 정의합니다.
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -44,9 +44,9 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   `name`의 `Magento\Payment\Model\Method\MyCustomDebug` 값은 고유해야 합니다.
+   `Magento\Payment\Model\Method\MyCustomDebug`의 `name` 값은 고유해야 합니다.
 
-1. 고유한 [을(를) 가진 다른 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`name`에서 처리기를 정의합니다.
+1. 고유한 `name`을(를) 가진 다른 [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)에서 처리기를 정의합니다.
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. `MyCustomLogger` 개체에 [&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`Magento\Payment\Model\Method\Logger`을(를) 삽입합니다.
+1. `Magento\Payment\Model\Method\Logger` 개체에 `MyCustomLogger` [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)을(를) 삽입합니다.
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ ht-degree: 0%
    </type>
    ```
 
-1. 가상 클래스 `Magento\Payment\Model\Method\MyCustomDebug`이(가) `debug` 클래스의 `$logger` 속성의 `Magento\Payment\Model\Method\Logger` 처리기에 삽입되었습니다.
+1. 가상 클래스 `Magento\Payment\Model\Method\MyCustomDebug`이(가) `Magento\Payment\Model\Method\Logger` 클래스의 `$logger` 속성의 `debug` 처리기에 삽입되었습니다.
 
    ```xml
    ...
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 이 클래스의 핸들러를 모듈의 [&#x200B; 파일에서 &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)가상 형식`di.xml`(으)로 정의합니다.
+1. 이 클래스의 핸들러를 모듈의 `di.xml` 파일에서 [가상 형식](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)&#x200B;(으)로 정의합니다.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -193,7 +193,7 @@ ht-degree: 0%
    }
    ```
 
-1. 클래스 `Vendor\ModuleName\Logger\Handler\ErrorHandler`이(가) `error`에서 `$logger` 속성의 `Vendor\ModuleName\Observer\MyObserver` 처리기에 삽입되었습니다.
+1. 클래스 `Vendor\ModuleName\Logger\Handler\ErrorHandler`이(가) `Vendor\ModuleName\Observer\MyObserver`에서 `$logger` 속성의 `error` 처리기에 삽입되었습니다.
 
    ```xml
    ...

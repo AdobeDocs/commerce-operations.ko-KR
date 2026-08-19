@@ -2,9 +2,9 @@
 title: 공유 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '3270'
+source-wordcount: '3252'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe은 다음 사항을 담당합니다.
 * 안전한 애플리케이션 개발 보장
 * 판매자의 결제 프로세서에서 요청하는 경우 PCI 인증 획득
 * 보안 사고 대응 및 대응
-* 적극적으로 지원되는 버전에서 모든 타사 종속성, 플랫폼 서비스 및 Adobe Commerce 서비스 확장을 유지 관리합니다. Adobe은 지원되지 않는 종속성 버전을 실행하는 배포에 대한 보안 지원 또는 지원을 제공하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko) 및 [제품 가용성 매트릭스](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)를 참조하십시오.
+* 적극적으로 지원되는 버전에서 모든 타사 종속성, 플랫폼 서비스 및 Adobe Commerce 서비스 확장을 유지 관리합니다. Adobe은 지원되지 않는 종속성 버전을 실행하는 배포에 대한 보안 지원 또는 지원을 제공하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 및 [제품 가용성 매트릭스](/help/release/product-availability.md)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobe은 Adobe Commerce 솔루션에 사용되는 인프라 및 서비스에 대
   * Adobe Commerce 서비스 확장
   * 모든 타사 확장 및 사용자 정의 통합
 
-  Adobe은 지원되지 않는 버전을 실행하는 배포를 지원하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko) 및 [제품 가용성 매트릭스](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)를 참조하십시오.
+  Adobe은 지원되지 않는 버전을 실행하는 배포를 지원하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 및 [제품 가용성 매트릭스](/help/release/product-availability.md)를 참조하십시오.
 
 ## 클라우드 서비스 공급자 책임
 

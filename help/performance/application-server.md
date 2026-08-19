@@ -2,9 +2,9 @@
 title: GraphQL 애플리케이션 서버
 description: Adobe Commerce의 graphql 애플리케이션 서버에 대해 알아봅니다. 구현 지침 및 최적화 전략을 살펴보십시오.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server를 사용하면 Adobe Commerce에서 Commerce GraphQL API 요청 중 상태를 유지할 수 있습니다. Swool Extension에 구축된 GraphQL Application Server는 요청 처리를 처리하는 작업자 스레드를 사용하는 프로세스로 작동합니다. GraphQL Application Server는 GraphQL API 요청 중 부트스트랩된 애플리케이션 상태를 보존하여 요청 처리 및 전반적인 제품 성능을 향상시킵니다. API 요청의 효율성이 훨씬 향상되었습니다.
 
-GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 티켓을 제출해야 합니다.
+GraphQL Application Server는 Adobe Commerce에만 사용할 수 있습니다. Magento Open Source에서는 사용할 수 없습니다. Cloud Pro 프로젝트의 경우 GraphQL Application Server를 사용하려면 [Adobe Commerce 지원 제출](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) 티켓을 제출해야 합니다.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ GraphQL Application Server를 실행하려면 다음이 필요합니다.
 
 ### 클라우드 프로젝트
 
-클라우드 인프라 프로젝트의 Adobe Commerce에는 기본적으로 Swool 확장이 포함되어 있습니다. `.magento.app.yaml` 파일의 `runtime` 속성에서 이 기능을 [활성화](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)할 수 있습니다. For example:
+클라우드 인프라 프로젝트의 Adobe Commerce에는 기본적으로 Swool 확장이 포함되어 있습니다. `.magento.app.yaml` 파일의 `runtime` 속성에서 이 기능을 [활성화](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)할 수 있습니다. For example:
 
 ```yaml
 runtime:
@@ -68,7 +68,7 @@ runtime:
 Pro 프로젝트에서 Application Server 기능을 활성화한 후 GraphQL Application Server를 배포하기 전에 다음 단계를 완료하십시오.
 
 1. [2.4.7-appserver 분기](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)의 클라우드 템플릿을 사용하여 클라우드 인프라에 Adobe Commerce을 배포합니다.
-1. 모든 Commerce 사용자 지정 및 확장이 GraphQL Application Server와 [호환](https://developer.adobe.com/commerce/php/development/components/app-server/)되는지 확인하십시오.
+1. 모든 Commerce 사용자 지정 및 확장이 GraphQL Application Server와 [호환](https://developer.adobe.com/commerce/php/development/components/app-server)되는지 확인하십시오.
 1. Commerce Cloud 프로젝트를 복제합니다.
 1. 필요한 경우 &#39;application-server/nginx.conf.sample&#39; 파일에서 설정을 조정합니다.
 1. `project_root/.magento.app.yaml` 파일의 활성 &#39;웹&#39; 섹션을 완전히 주석 처리하십시오.
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
+>루트 `.magento.app.yaml` 파일의 모든 사용자 지정 설정이 `application-server/.magento/.magento.app.yaml` 파일로 적절하게 마이그레이션되었는지 확인하십시오. `application-server/.magento/.magento.app.yaml` 파일이 프로젝트에 추가되면 루트 `.magento.app.yaml` 파일뿐 아니라 유지해야 합니다. 예를 들어 [RabbitMQ 서비스를 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)하거나 [웹 속성을 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)해야 하는 경우 `application-server/.magento/.magento.app.yaml`에도 동일한 구성을 추가해야 합니다.
 
 ### 클라우드 프로젝트에 대한 지원 확인
 
@@ -432,7 +432,7 @@ GraphQL Application Server는 처리하는 각 요청에 값 `graphql_server`이
 
 ### 확장 및 사용자 지정 호환성 확인
 
-확장 개발자 및 판매자는 먼저 확장 및 사용자 지정 코드가 _[기술 지침](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_&#x200B;에 설명된 지침을 준수하는지 확인해야 합니다.
+확장 개발자 및 판매자는 먼저 확장 및 사용자 지정 코드가 _[기술 지침](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines)_&#x200B;에 설명된 지침을 준수하는지 확인해야 합니다.
 
 코드 평가 시 다음 지침을 고려하십시오.
 

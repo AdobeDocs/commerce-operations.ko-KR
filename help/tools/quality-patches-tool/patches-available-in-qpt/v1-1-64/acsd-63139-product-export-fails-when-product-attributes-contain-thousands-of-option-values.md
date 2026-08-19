@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-63139 패치는 제품 속성에 수천 개의 옵션 값이 포함된 경�
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -38,16 +38,16 @@ ACSD-63139 패치는 제품 속성에 수천 개의 옵션 값이 포함된 경�
 
 1. B2B 모듈로 Adobe Commerce을 설치합니다.
 1. 다음을 사용하여 큰 데이터베이스 덤프 가져오기:
-   &#x200B;- 7,000개 제품
-   &#x200B;- ~450개 제품 특성
-   &#x200B;- 일부 속성에 100개 이상의 옵션 포함
+   - 7,000개 제품
+   - ~450개 제품 특성
+   - 일부 속성에 100개 이상의 옵션 포함
 1. 다음 명령을 실행하여 cron 을 설치합니다(아직 설치되지 않은 경우).
 
    ```shell
    bin/magento cron:install
    ```
 
-1. [[!DNL RabbitMQ] 필수 구성 요소](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq)의 지침에 따라 [!DNL RabbitMQ]을(를) 구성합니다.
+1. [[!DNL RabbitMQ] 필수 구성 요소](/help/installation/prerequisites/rabbitmq.md)의 지침에 따라 [!DNL RabbitMQ]을(를) 구성합니다.
 1. `php.ini` 파일을 열고 메모리 제한을 4G로 설정하고 PHP 서비스를 다시 시작합니다.
 1. 관리 패널에서 **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**(으)로 이동합니다.
 1. *[!UICONTROL Export Settings]* 섹션에서 **[!UICONTROL Entity Type]**&#x200B;을(를) *제품*(으)로 설정하고 맨 아래로 스크롤한 다음 **[!UICONTROL Continue]**&#x200B;을(를) 클릭합니다.
@@ -74,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

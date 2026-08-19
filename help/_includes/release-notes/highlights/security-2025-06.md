@@ -1,7 +1,7 @@
 ---
-source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110에 대한 수정 사항은 격리된 패치로도 사용할 수 있습니다. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)를 참조하세요.
+CVE-2025-47110에 대한 수정 사항은 격리된 패치로도 사용할 수 있습니다. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)를 참조하세요.
 
 >[!ENDSHADEBOX]

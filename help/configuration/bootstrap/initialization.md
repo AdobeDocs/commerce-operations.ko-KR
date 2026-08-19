@@ -3,9 +3,9 @@ title: 응용 프로그램 초기화 및 부트스트랩
 description: Commerce 애플리케이션의 초기화 및 부트스트랩 논리에 대해 읽어보십시오.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Commerce 응용 프로그램을 실행하려면 [pub/index.php](https://github.c
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http)은(는) 다음과 같이 작동합니다.
 
-1. [응용 프로그램 영역](https://developer.adobe.com/commerce/php/architecture/modules/areas/)을 결정합니다.
+1. [응용 프로그램 영역](https://developer.adobe.com/commerce/php/architecture/modules/areas)을 결정합니다.
 1. 컨트롤러 작업을 찾고 실행하기 위해 프런트 컨트롤러 및 라우팅 시스템을 시작합니다.
 1. HTTP 응답 개체를 사용하여 컨트롤러 작업에서 얻은 결과를 반환합니다.
 1. 오류 처리(다음 우선 순위 순서로):

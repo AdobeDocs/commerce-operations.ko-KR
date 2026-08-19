@@ -4,9 +4,9 @@ description: 소스 코드 관리를 위한 다양한 분기 전략에 대해 �
 feature: Best Practices
 role: Developer
 exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Source 코드는 개발 프로세스 동안 여러 안정성 단계를 거칩니
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트의 Adobe Commerce에는 서로 다른 환경에 해당하는 특정 분기가 포함되어 있습니다. [Cloud Guide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ko)에서 [Pro 프로젝트 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=ko) 및 _Starter 프로젝트 워크플로_&#x200B;를 참조하십시오.
+>클라우드 인프라 프로젝트의 Adobe Commerce에는 서로 다른 환경에 해당하는 특정 분기가 포함되어 있습니다. _Cloud Guide_&#x200B;에서 [Pro 프로젝트 워크플로](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) 및 [Starter 프로젝트 워크플로](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)를 참조하십시오.
 
 ## 분기 전략
 
@@ -48,7 +48,7 @@ Source 코드는 개발 프로세스 동안 여러 안정성 단계를 거칩니
 
 자세한 내용은 다음 외부 리소스를 참조하십시오.
 
-- [워크플로우 분기](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [분기 워크플로우](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [분산 워크플로](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 - [소스 코드 분기 관리 패턴](https://martinfowler.com/articles/branching-patterns.html)
 - [성공적인 Git 분기 모델](https://nvie.com/posts/a-successful-git-branching-model/)

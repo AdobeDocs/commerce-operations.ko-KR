@@ -3,9 +3,9 @@ title: 암호 해싱
 description: Adobe Commerce의 암호 해싱, Argon2 및 SHA256과 같은 지원되는 알고리즘 및 암호를 변경하지 않고 레거시 해시를 업그레이드하는 방법에 대해 알아보십시오.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Commerce은 사용된 모든 암호 해시 버전을 암호 해시와 함께 저
 
 ## 구현
 
-`\Magento\Framework\Encryption\Encryptor` 클래스는 암호 해시 생성 및 확인을 담당합니다. [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) 명령은 고객 암호 해시를 최신 해시 알고리즘으로 업그레이드합니다.
+`\Magento\Framework\Encryption\Encryptor` 클래스는 암호 해시 생성 및 확인을 담당합니다. [`bin/magento customer:hash:upgrade`](/help/tools/reference/commerce-on-premises.md#customerhashupgrade) 명령은 고객 암호 해시를 최신 해시 알고리즘으로 업그레이드합니다.

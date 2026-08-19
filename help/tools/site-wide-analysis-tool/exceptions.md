@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Exceptions]'
-description: '[!UICONTROL Exceptions]의  [!DNL Site-Wide Analysis Tool] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: ' [!DNL Site-Wide Analysis Tool]의 [!UICONTROL Exceptions] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## 우수 사례
 
-[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지를 모니터링하여 예외 발생 여부를 확인합니다. 자세한 내용은 개발자 설명서에서 [로그 보기 및 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/test/log-locations)를 참조하십시오.
+[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지를 모니터링하여 예외 발생 여부를 확인합니다. 자세한 내용은 개발자 설명서에서 [로그 보기 및 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)를 참조하십시오.
