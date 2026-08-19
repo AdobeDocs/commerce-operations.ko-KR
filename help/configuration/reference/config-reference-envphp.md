@@ -146,7 +146,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
+_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
 
 ## db
 

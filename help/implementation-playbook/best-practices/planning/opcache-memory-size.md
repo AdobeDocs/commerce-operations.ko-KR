@@ -27,7 +27,7 @@ Adobe Commerce on cloud infrastructure Pro 플랜 아키텍처 2.3.x의 경우 �
 ## 추가 정보
 
 * [성능 모범 사례 - PHP 설정](../../../performance/software.md#php-settings)
-* [PHP 옵션 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
+* [PHP 옵션 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
 * [클라우드 인프라의 Adobe Commerce에 대한 데이터베이스 모범 사례](database-on-cloud.md)
 * [클라우드 인프라의 Adobe Commerce에서 가장 일반적인 데이터베이스 문제](../maintenance/resolve-database-performance-issues.md)
 * [인덱서 &quot;일정에 따라 업데이트&quot;는 Adobe Commerce 성능을 최적화합니다.](../maintenance/indexer-configuration.md)

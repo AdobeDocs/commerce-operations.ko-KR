@@ -54,7 +54,7 @@ _명사_
 Adobe Commerce에서 관리자는 관리자의 모든 기능, 옵션 및 기능에 대한 모든 권한과 액세스 권한을 갖습니다.
 사용자와 역할을 만들 수도 있습니다.
 
-자세히 알아보기: [사용자 추가](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+자세히 알아보기: [사용자 추가](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -70,7 +70,7 @@ _명사_
 사용자는 관리 영역에 액세스하여 제품, 주문, 배송, CMS 콘텐츠, 상점 디자인, 고객 정보 등을 포함하는 스토어를 관리합니다.
 관리자 사용자에게는 기능, 옵션 및 기능에 대한 액세스를 제어하는 권한이 있는 연결된 역할이 있습니다.
 
-자세히 알아보기: [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+자세히 알아보기: [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -84,7 +84,7 @@ _명사_
 
 ADMIN 변수는 관리자 UI에 액세스하기 위한 관리자 사용자 계정에 대한 구성 설정을 재정의하는 프로젝트 환경 변수입니다.
 
-자세히 알아보기: [관리자 변수](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
+자세히 알아보기: [관리자 변수](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
 
 용어 특성(_T):_
 
@@ -96,7 +96,7 @@ _명사_
 
 책임자에게 할당된 내부 영역 이름입니다.
 
-자세히 알아보기: [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+자세히 알아보기: [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -190,7 +190,7 @@ _명사_
 통화 기호는 제품 가격 및 주문 및 송장과 같은 판매 문서에 나타납니다.
 필요에 따라 통화 기호를 사용자 정의하고 각 상점 또는 뷰에 대해 별도로 가격 표시를 설정할 수 있습니다.
 
-자세히 알아보기: [통화](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+자세히 알아보기: [통화](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -212,13 +212,13 @@ _명사_
 _명사_
 
 최종 사용자가 시각적으로 인식할 수 있는 모든 컨텐츠(정보, 사용자 인터페이스 요소)를 렌더링하는 페이지 출력 단위입니다.
-[블록](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)은(는) 모듈에서 구현되고 제공됩니다.
+[블록](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=ko)은(는) 모듈에서 구현되고 제공됩니다.
 블록은 템플릿을 사용하여 HTML을 생성합니다.
 블록의 예로는 카테고리 목록, 미니 장바구니, 제품 태그 및 제품 목록이 있습니다.
 
-[동적 블록](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html)은(는) 가격 규칙과 같은 논리를 기반으로 콘텐츠를 제공합니다.
+[동적 블록](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=ko)은(는) 가격 규칙과 같은 논리를 기반으로 콘텐츠를 제공합니다.
 
-페이지 빌더가 대화형 활동 및 [블록](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) 및 [동적 블록](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html) 만들기에서 확장됩니다.
+페이지 빌더가 대화형 활동 및 [블록](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=ko) 및 [동적 블록](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=ko) 만들기에서 확장됩니다.
 
 용어 특성(_T):_
 
@@ -248,7 +248,7 @@ _형용사_
 
 사실상 또는 전적으로 인터넷을 통해 기능하는 비즈니스와 달리, 영구적인 물리적 위치가 있는 소매 비즈니스.
 
-[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) 및 [Order Management](#oms)의 경우 이 저장소는 제품 수량 추적, 주문 배송 및 매장 내 픽업 지원을 위한 소스입니다.
+[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=ko) 및 [Order Management](#oms)의 경우 이 저장소는 제품 수량 추적, 주문 배송 및 매장 내 픽업 지원을 위한 소스입니다.
 
 용어 특성(_T):_
 
@@ -274,7 +274,7 @@ _명사_
 고객이 다양한 옵션 및 구성에서 &quot;사용자 정의 가능한&quot; 제품을 조립할 수 있습니다.
 번들의 각 항목은 별도의 단순 제품 또는 가상 제품입니다.
 
-자세히 알아보기: [구성 가능한 제품](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+자세히 알아보기: [구성 가능한 제품](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -448,7 +448,7 @@ _명사_
 
 클라우드 변수는 클라우드 인프라의 Adobe Commerce에 관련된 환경 변수이며 **`MAGENTO_CLOUD`** 접두사를 사용합니다.
 
-자세히 알아보기: [클라우드 변수](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
+자세히 알아보기: [클라우드 변수](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 용어 특성(_T):_
 
@@ -458,7 +458,7 @@ _명사_
 
 _명사_
 
-관리자에서만 만들 수 있고 레이아웃 파일을 통해 참조할 수 없는 [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)의 특수 변형입니다.
+관리자에서만 만들 수 있고 레이아웃 파일을 통해 참조할 수 없는 [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=ko)의 특수 변형입니다.
 
 용어 특성(_T):_
 
@@ -619,7 +619,7 @@ _명사_
 
 배포 키는 프로젝트 SSH 공개 키로서 Git 저장소에 대한 읽기 전용 또는 읽기-쓰기(활성화된 경우) 액세스를 활성화합니다.
 
-자세히 알아보기: [보안 연결](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)
+자세히 알아보기: [보안 연결](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/secure-connections)
 
 용어 특성(_T):_
 
@@ -688,7 +688,7 @@ _명사_
 
 Commerce 애플리케이션을 관리하고 배포하도록 설계된 스크립트 및 도구 세트입니다. 이 패키지는 Docker 환경에 배포, Cron 관리, 프로젝트 구성 확인 및 Adobe 패치 적용 등 다양한 Adobe Commerce on cloud infrastructure 프로세스를 간소화합니다.
 
-자세히 알아보기: [ece-tools 패키지](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
+자세히 알아보기: [ece-tools 패키지](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 용어 특성(_T):_
 
@@ -978,7 +978,7 @@ _명사_
 MAGEID는 일반적으로 Adobe Commerce 계정의 청구 담당자이며(Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 소유자가 아닐 수 있음).
 클라우드 인프라 패키지의 Adobe Commerce 및 Adobe Commerce에 대한 액세스 권한을 얻으려면 해당 패키지에 대한 액세스 권한이 부여된 MAGEID와 연결된 액세스 키를 사용해야 합니다.
 
-자세히 알아보기: [인증 키 받기](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+자세히 알아보기: [인증 키 받기](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -989,7 +989,7 @@ MAGEID는 일반적으로 Adobe Commerce 계정의 청구 담당자이며(Adobe 
 _명사_
 
 마케팅 및 소매에서 소매가를 결정하기 위해 품목 원가에 백분율을 추가했습니다.
-제품 사용자 지정 가능 옵션을 통해 제품의 [마크업을 구성합니다](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html).
+제품 사용자 지정 가능 옵션을 통해 제품의 [마크업을 구성합니다](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=ko).
 
 개발에서 텍스트의 처리, 표시 및 서식을 제어하는 컴퓨터 언어입니다.
 또한 마크업 태그는 CMS 페이지 또는 블록에 기능이나 콘텐츠를 추가하는 코드 조각입니다.
@@ -1087,7 +1087,7 @@ _명사_
 
 원본 클로킹은 클라우드 인프라의 Adobe Commerce이 DDoS 공격을 방지하기 위해 클라우드 인프라(원본)로 이동하는 Non-Fastly 트래픽을 차단할 수 있는 보안 기능입니다.
 
-자세히 알아보기: [가장 빠른 원본 클로킹](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)
+자세히 알아보기: [가장 빠른 원본 클로킹](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 용어 특성(_T):_
 
@@ -1105,7 +1105,7 @@ Page Builder는 사전 빌드된 컨트롤을 끌어다 놓아 사용자 지정 
 가맹점은 코딩 경험 없이 레이아웃과 페이지를 디자인할 수 있습니다.
 개발자가 페이지 빌더를 확장할 수 있도록 확장 지원이 제공됩니다.
 
-자세히 알아보기: [페이지 빌더 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [페이지 빌더 DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+자세히 알아보기: [페이지 빌더 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=ko), [페이지 빌더 DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 용어 특성(_T):_
 
@@ -1397,8 +1397,8 @@ Commerce 인스턴스의 액세스 URL 또는 Commerce Cloud Manager 인스턴�
 
 자세히 알아보기:
 
-[Adobe Commerce as a Cloud Service 기본 사항](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
-[Adobe Commerce Optimizer 시작](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#manage-instances)
+[Adobe Commerce as a Cloud Service 기본 사항](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
+[Adobe Commerce Optimizer 시작](https://experienceleague.adobe.com/ko/docs/commerce/optimizer/get-started#manage-instances)
 
 용어 특성(_T):_
 
@@ -1435,7 +1435,7 @@ UI 구성 요소 시스템의 목표는 다음과 같습니다.
 * AJAX을 사용하여 구성 요소 데이터 업데이트
 * 위의 항목을 만들기 위한 새 DSL 소개
 
-자세히 알아보기: [UI 구성 요소 안내서](https://developer.adobe.com/commerce/frontend-core/ui-components/), [페이지 빌더](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+자세히 알아보기: [UI 구성 요소 안내서](https://developer.adobe.com/commerce/frontend-core/ui-components/), [페이지 빌더](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=ko)
 
 용어 특성(_T):_
 
@@ -1474,7 +1474,7 @@ Commerce 동작을 확장 또는 사용자 정의하고 서드파티 확장으�
 VBE는 철저하게 테스트되어 지원되는 각 Adobe Commerce 버전에 포함됩니다.
 VBE에는 모듈, 테마 및 언어 팩이 포함될 수 있습니다.
 
-[공급업체 번들 확장 항목](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)에서 자세히 알아보세요.
+[공급업체 번들 확장 항목](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=ko)에서 자세히 알아보세요.
 
 용어 특성(_T):_
 
@@ -1540,7 +1540,7 @@ Adobe Commerce 소프트웨어에서 스토어 및 스토어 보기 이상의 �
 
 _명사_
 
-[위젯](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html)은(는) 저장소 페이지의 특정 위치에 블록, 링크 및 동적 콘텐츠를 배치하는 데 사용할 수 있는 준비된 코드 조각입니다.
+[위젯](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=ko)은(는) 저장소 페이지의 특정 위치에 블록, 링크 및 동적 콘텐츠를 배치하는 데 사용할 수 있는 준비된 코드 조각입니다.
 위젯을 사용하여 마케팅 캠페인용 랜딩 페이지를 만들고, 스토어 전체의 특정 위치에 홍보 콘텐츠를 표시할 수 있습니다.
 위젯은 외부 검토 시스템, 비디오 채팅, 투표 및 구독 양식에 대한 대화형 요소 및 작업 블록을 추가하거나 태그 클라우드 및 이미지 슬라이더에 대한 탐색 요소를 제공하는 데 사용할 수도 있습니다.
 

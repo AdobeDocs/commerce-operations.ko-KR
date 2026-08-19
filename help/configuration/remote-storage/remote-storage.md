@@ -91,5 +91,5 @@ Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce
 
 >[!INFO]
 >
->sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. `var` 디렉터리에 있는 가져오기/내보내기 파일은 _not_&#x200B;합니다. _Commerce 2.4 사용 안내서_&#x200B;에서 [예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)를 참조하십시오.
+>sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. `var` 디렉터리에 있는 가져오기/내보내기 파일은 _not_&#x200B;합니다. _Commerce 2.4 사용 안내서_&#x200B;에서 [예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ko)를 참조하십시오.
 

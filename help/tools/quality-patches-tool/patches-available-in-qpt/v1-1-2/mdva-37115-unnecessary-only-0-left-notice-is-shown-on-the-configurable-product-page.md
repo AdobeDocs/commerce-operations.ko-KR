@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37115: 제품 페이지에 "0개만 남음" 알림이 표시됨'
-description: MDVA-37115 패치는 구성 가능한 제품 페이지에 불필요하게 *0개만 남아* 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-37115입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
+description: MDVA-37115 패치는 구성 가능한 제품 페이지에 불필요하게 *0개만 남아* 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-37115입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
 feature: Configuration, Products, Orders
 role: Admin
 exl-id: ba94b2fd-6a7d-4194-afd8-798854431b57
@@ -57,7 +57,7 @@ MDVA-37115 패치는 구성 가능한 제품 페이지에 불필요한 *왼쪽 0
 개별 패치를 적용하려면 배포 유형에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

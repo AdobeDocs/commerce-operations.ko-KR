@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40435: GraphQL을 통해 번들 제품 할인이 올바르게 적용되지 않음'
-description: MDVA-40435 패치는 GraphQL을 통해 번들 제품에 대한 할인이 올바르게 적용되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40435입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
+description: MDVA-40435 패치는 GraphQL을 통해 번들 제품에 대한 할인이 올바르게 적용되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-40435입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: GraphQL, Orders, Personalization, Products
 role: Admin
 exl-id: 001be138-5d09-455d-a597-57115cd21a25
@@ -55,7 +55,7 @@ MDVA-40435 패치는 GraphQL을 통해 번들 제품에 대한 할인이 올바�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

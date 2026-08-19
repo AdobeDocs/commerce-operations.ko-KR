@@ -23,6 +23,6 @@ ht-degree: 0%
 
 구성 안내서에 한 번에 포함되었던 여러 보안 관련 주제가 이제 다음 안내서에 나와 있습니다.
 
-- _확장 안내서_&#x200B;의 [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
+- _확장 안내서_&#x200B;의 [Google reCAPTCHA](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/captcha/security-google-recaptcha).
 - _확장 가이드_&#x200B;의 [2단계 인증](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication).
 - _보안 및 준수 안내서_&#x200B;의 [GDPR(일반 데이터 보호 규정) 준수](/help/security-and-compliance/privacy/gdpr.md).
