@@ -37,7 +37,7 @@ ACSD-63793 패치는 가져오기 프로세스가 서로 다른 브라우저 탭
 <u>재현 단계</u>:
 
 1. **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**(으)로 이동합니다.
-1. **[!UICONTROL Entity Type]**&#x200B;을(를) *[!UICONTROL Customers and Addresses](단일 파일)*(으)로 설정합니다.
+1. **[!UICONTROL Entity Type]**&#x200B;을(를) *[!UICONTROL Customers and Addresses] (단일 파일)*(으)로 설정합니다.
 1. **[!UICONTROL Import Behavior]**&#x200B;을(를) *[!UICONTROL Add/Update]*(으)로 설정합니다.
 1. 가져올 올바른 파일을 선택하십시오.
 1. **[!UICONTROL Check Data]** 단추를 클릭합니다.

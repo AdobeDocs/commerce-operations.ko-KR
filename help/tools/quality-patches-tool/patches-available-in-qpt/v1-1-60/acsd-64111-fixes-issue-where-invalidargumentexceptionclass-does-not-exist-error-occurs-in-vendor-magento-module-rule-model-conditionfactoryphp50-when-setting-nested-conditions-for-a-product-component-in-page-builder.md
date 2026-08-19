@@ -32,7 +32,7 @@ ACSD-64111 패치가 [!DNL Page Builder]에서 제품 구성 요소에 대한 �
 
 ## 문제
 
-오류 *InvalidArgumentException: [!DNL Page Builder] 제품 위젯 조건에&#x200B;*[!UICONTROL Conditions Combination]*을(를) 추가할 때 /app/&lt;프로젝트 id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;에 클래스가 없습니다.
+오류 *InvalidArgumentException: [!DNL Page Builder] 제품 위젯 조건에&#x200B;*[!UICONTROL Conditions Combination]*&#x200B;을(를) 추가할 때 /app/&lt;프로젝트 id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;에 클래스가 없습니다.
 
 <u>재현 단계</u>:
 

@@ -37,7 +37,7 @@ ACSD-51853 패치는 페이지 빌더를 사용할 때 복사된 텍스트 스�
 <u>재현 단계</u>:
 
 1. 책임자에 로그인합니다.
-1. > **콘텐츠** > **페이지** > **모든 페이지 열기** > **페이지 빌더로 편집**&#x200B;으로 이동합니다.
+1. &#x200B;> **콘텐츠** > **페이지** > **모든 페이지 열기** > **페이지 빌더로 편집**&#x200B;으로 이동합니다.
 1. **[!UICONTROL Elements]**&#x200B;에서 행 및 *텍스트*&#x200B;을(를) 드래그합니다.
 1. **보강된 콘텐츠**&#x200B;를 복사하고 해당 텍스트를 **[!UICONTROL Page Builder]**&#x200B;에 붙여 넣으십시오.
 
@@ -61,7 +61,7 @@ ACSD-51853 패치는 페이지 빌더를 사용할 때 복사된 텍스트 스�
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
 * [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
-* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]&#x200B;[&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
 QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
