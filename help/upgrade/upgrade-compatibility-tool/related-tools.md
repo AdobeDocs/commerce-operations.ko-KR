@@ -4,7 +4,7 @@ description: Adobe Commerce 프로젝트에서  [!DNL Upgrade Compatibility Tool
 exl-id: a8cebb74-fba9-42ce-914b-b8fb6c7f53bf
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
