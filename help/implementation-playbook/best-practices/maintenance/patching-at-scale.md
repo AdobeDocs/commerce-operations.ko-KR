@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. **보안 패치**&#x200B;은(는) Adobe Commerce 릴리스의 정적 코드 기반의 일부입니다.
 1. **Composer 패치**&#x200B;부터 `composer install`까지 및 [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)와(과) 같은 `composer update`개의 플러그인.
-1. [Commerce용 클라우드 패치](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) 패키지에 포함된 모든 **필수 패치**.
+1. [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) 패키지에 포함된 모든 **필수 패치**.
 1. 선택한 **품질 패치**&#x200B;이(가) [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)에 포함되어 있습니다.
 1. `/m2-hotfixes` 디렉터리의 **사용자 지정 패치** 및 Adobe Commerce 지원 패치는 패치 이름별로 알파벳순으로 정렬됩니다.
 
@@ -148,7 +148,7 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
    ```
 
 
-이전 코드 샘플의 `quality-patches` 특성에는 예를 들어 [전체 패치 목록](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)의 패치가 두 개 있습니다.  이 품질 패치는 `vendor/bin/magento-patches apply` 명령을 사용하여 `centralized-patcher` 패키지가 필요한 모든 프로젝트에 설치됩니다.
+이전 코드 샘플의 `quality-patches` 특성에는 예를 들어 [전체 패치 목록](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)의 패치가 두 개 있습니다.  이 품질 패치는 `vendor/bin/magento-patches apply` 명령을 사용하여 `centralized-patcher` 패키지가 필요한 모든 프로젝트에 설치됩니다.
 
 테스트 목적으로 예제 패치(`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`)를 만들 수 있습니다.
 
@@ -365,7 +365,7 @@ index 03a3bf9..681e0b0 100644
 
 이렇게 하면 모든 설치에 대한 모든 패치를 중앙에서 관리할 수 있으며 Adobe Commerce 스토어의 보안 및 안정성을 더 잘 보장할 수 있습니다. 패치 상태를 확인하려면 다음 방법을 사용하십시오.
 
-- [클라우드 인프라 프로젝트](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+- [클라우드 인프라 프로젝트](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [온-프레미스 프로젝트](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## 코드 예

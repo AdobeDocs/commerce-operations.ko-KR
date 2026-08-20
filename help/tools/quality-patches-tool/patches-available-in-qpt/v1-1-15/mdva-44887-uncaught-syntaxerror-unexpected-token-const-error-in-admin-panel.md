@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44887: 관리 패널에 ''Uncatch SyntaxError: 예기치 않은 토큰 상수'' 오류'
-description: 'MDVA-44887 패치는 관리자가 메뉴 옵션을 클릭할 수 없는 문제를 해결합니다. *확인할 수 없는 구문Error: 예기치 않은 토큰 const* 오류가 관리 패널에 표시됩니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-44887입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.'
+description: 'MDVA-44887 패치는 관리자가 메뉴 옵션을 클릭할 수 없는 문제를 해결합니다. *확인할 수 없는 구문Error: 예기치 않은 토큰 const* 오류가 관리 패널에 표시됩니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-44887입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.'
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: d8cc03c3-35a0-4f00-8ec3-1ba3e100f7ca
@@ -53,7 +53,7 @@ MDVA-44887 패치는 관리자가 메뉴 옵션을 클릭할 수 없는 문제�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
@@ -62,4 +62,4 @@ MDVA-44887 패치는 관리자가 메뉴 옵션을 클릭할 수 없는 문제�
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
 * [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

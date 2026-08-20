@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Live Search, Catalog Service 또는 Product Recommendations를 사용하는 Adobe Commerce 판매자는 [SaaS 기반 가격 인덱싱](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)를 사용할 수 있습니다.
+> Live Search, Catalog Service 또는 Product Recommendations를 사용하는 Adobe Commerce 판매자는 [SaaS 기반 가격 인덱싱](https://experienceleague.adobe.com/ko/docs/commerce/price-indexer/price-indexing)를 사용할 수 있습니다.
 
 ## 인덱서 상태 보기
 
@@ -273,7 +273,7 @@ Stores Feed:                                       Update by Schedule
 
 >[!INFO]
 >
->인덱서 모드를 전환하기 전에 웹 사이트를 [유지 관리](../../installation/tutorials/maintenance-mode.md) 모드로 설정하고 [cron 작업을 사용하지 않도록 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)하십시오. 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
+>인덱서 모드를 전환하기 전에 웹 사이트를 [유지 관리](../../installation/tutorials/maintenance-mode.md) 모드로 설정하고 [cron 작업을 사용하지 않도록 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)하십시오. 이렇게 하면 데이터베이스 잠금이 발생하지 않습니다.
 
 인덱서 구성을 지정하려면 다음을 수행합니다.
 

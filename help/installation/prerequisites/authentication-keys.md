@@ -17,16 +17,16 @@ Adobe Commerce 패키지에 대한 액세스 권한을 얻으려면 해당 패�
 
 >[!TIP]
 >
->[오류](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25968)이 발생하거나 마켓플레이스 탭에 [!UICONTROL Access Keys] 섹션이 표시되지 않는 경우 패키지에 액세스할 수 있는 권한이 없거나 계정에 대한 미결 청구서로 인해 액세스 권한이 만료되었을 수 있습니다.
+>[오류](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-25968)이 발생하거나 마켓플레이스 탭에 [!UICONTROL Access Keys] 섹션이 표시되지 않는 경우 패키지에 액세스할 수 있는 권한이 없거나 계정에 대한 미결 청구서로 인해 액세스 권한이 만료되었을 수 있습니다.
 >
 >* 귀하가 계정에서 기본 담당자 사용자인 경우 계정에 미결 송장이 나열되어 있지 않은지 확인하십시오.
->* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 해결되지 않은 청구서가 없는 경우 기본 연락처는 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)에 지원을 요청해야 합니다.
+>* 기본 연락처에서 제공한 키가 작동하지 않고 계정에 해결되지 않은 청구서가 없는 경우 기본 연락처는 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)에 지원을 요청해야 합니다.
 
 인증 키를 만들려면 다음을 수행하십시오.
 
 >[!NOTE]
 >
->2022년 8월부터 계정 소유자에게 Adobe ID이 있어야 하며 이 계정이 Commerce 계정과 연결되어 있는지 확인해야 합니다. 계정 소유자에게 Adobe ID이 없는 경우 인증 키를 생성하기 전에 계정 소유자를 만들어 Commerce 계정에 연결해야 합니다. [Commerce 계정을 만들고 액세스](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+>2022년 8월부터 계정 소유자에게 Adobe ID이 있어야 하며 이 계정이 Commerce 계정과 연결되어 있는지 확인해야 합니다. 계정 소유자에게 Adobe ID이 없는 경우 인증 키를 생성하기 전에 계정 소유자를 만들어 Commerce 계정에 연결해야 합니다. [Commerce 계정을 만들고 액세스](https://experienceleague.adobe.com/ko/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. [Commerce Marketplace](https://commercemarketplace.adobe.com/)에 로그인합니다. 계정이 없는 경우 **등록**&#x200B;을 클릭하세요.
 

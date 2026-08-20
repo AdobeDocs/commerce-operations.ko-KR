@@ -35,7 +35,7 @@ Commerce 번역을 사용하면 다음을 생성하여 여러 지역 및 시장�
 
 1. 번역 사전을 언어 패키지로 패키징하고 이 패키지를 Commerce 스토어 관리자에게 제공할 수 있습니다.
 
-1. 관리자 [저장소 관리자가 번역을 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)합니다.
+1. 관리자 [저장소 관리자가 번역을 구성](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-localize)합니다.
 
 명령 옵션:
 

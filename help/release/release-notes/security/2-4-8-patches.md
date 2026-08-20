@@ -132,7 +132,7 @@ Adobe Commerce 2.4.8-p1 보안 릴리스는 이전 릴리스 2.4.8에서 식별�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110 및 VULN-31547에 대한 수정 사항은 격리된 패치로도 사용할 수 있습니다. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)를 참조하세요.
+CVE-2025-47110 및 VULN-31547에 대한 수정 사항은 격리된 패치로도 사용할 수 있습니다. 자세한 내용은 [기술 자료 문서](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27181)를 참조하세요.
 
 >[!ENDSHADEBOX]
 

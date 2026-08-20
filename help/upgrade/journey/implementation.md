@@ -88,4 +88,4 @@ UAT는 사이트를 검토하고 유효성을 검사해야 하는 업그레이�
 
 사이트 시작 후에는 분석 데이터, Google 검색 콘솔 및 기타 리소스를 확인하여 예기치 않은 문제가 없고 모든 것이 예상대로 작동하는지 확인하십시오.
 
-잘 설계된 모니터링 도구를 통해 성능을 주시하는 것은 항상 좋은 생각입니다. 사이트 성능을 모니터링하는 많은 도구와 수단이 있으므로 조직과 적절한 도구를 선택하십시오. 클라우드 인프라 관리 시스템을 사용하는 Adobe Commerce 고객은 [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)와 같은 서비스를 이용하여 사이트 성능을 모니터링하는 것이 좋습니다.
+잘 설계된 모니터링 도구를 통해 성능을 주시하는 것은 항상 좋은 생각입니다. 사이트 성능을 모니터링하는 많은 도구와 수단이 있으므로 조직과 적절한 도구를 선택하십시오. 클라우드 인프라 관리 시스템을 사용하는 Adobe Commerce 고객은 [New Relic](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)와 같은 서비스를 이용하여 사이트 성능을 모니터링하는 것이 좋습니다.
