@@ -5,7 +5,7 @@ exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Magento 1의 일부 동작 및 논리가 Magento 2에서 다르게 구현되었�
 
 1. `map-customer.xml.dist` 구성 파일을 [!DNL Data Migration Tool]&#x200B;(`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`)의 적절한 디렉터리에서 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` 파일로 복사합니다.
 
-1. `<customer_map_file>`에서 `config.xml` 노드를 업데이트하고 `.dist`에서 `map-customer.xml.dist` 확장을 제거하십시오.
+1. `config.xml`에서 `<customer_map_file>` 노드를 업데이트하고 `map-customer.xml.dist`에서 `.dist` 확장을 제거하십시오.
 
 1. `map-customer.xml` 파일에 다음 규칙을 추가합니다.
 
