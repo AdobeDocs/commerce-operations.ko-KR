@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-65983: 관리자에서 번들 제품 견적을 다시 구성할 때 오류 발생'
-description: 백엔드의 [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] 화면에서 번들 제품을 구성하려고 할 때 오류가 표시되는 Adobe Commerce 문제를 해결하려면 ACSD-65983 패치를 적용합니다.
+description: 백엔드의 [!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit] 화면에서 번들 제품을 구성하려고 할 때 오류가 발생하는 Adobe Commerce 문제를 해결하려면 ACSD-65983 패치를 적용합니다.
 feature: B2B, Quotes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8a8f2b273bcbcf135677ad7ca289398bf660e02e
+exl-id: d03d09bc-a444-486f-ad6b-fddbbf795d8a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65983: 관리자에서 번들 제품 견적을 다시 구성할 때 오류 발생
 
@@ -37,7 +37,7 @@ ACSD-65983 패치는 관리 백엔드에서 번들 제품 견적을 다시 구�
 <u>재현 단계</u>:
 
 1. [관리] 패널로 이동하여 **[!UICONTROL B2B Feature]**: **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Feature]**&#x200B;을(를) 활성화합니다.
-1. 고정 금액이 있는 번들 제품을 만들고(예: *$10*), *0* 금액이 있는 단순 제품을 세 개 이상 추가하십시오. *옵션 1*&#x200B;의 **2** 및 *옵션 2*&#x200B;의 **기타**.
+1. 고정 금액이 있는 번들 제품을 만들고(예: *$10*), *0* 금액이 있는 단순 제품을 세 개 이상 추가하십시오. **옵션 1**&#x200B;의 *2* 및 **옵션 2**&#x200B;의 *기타*.
 1. 프론트엔드에서 회사 계정을 만듭니다.
 1. **[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]**(으)로 이동하여 만든 회사와 제품을 새/사용자 지정 공유 카탈로그에 할당합니다.
 1. 프론트엔드에 **회사 사용자**(으)로 로그인하고 번들에서 간단한 제품 하나를 장바구니에 추가합니다.
@@ -61,8 +61,8 @@ ACSD-65983 패치는 관리 백엔드에서 번들 제품 견적을 다시 구�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko)
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)
 
 ## 관련 읽기
 

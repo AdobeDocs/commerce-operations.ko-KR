@@ -2,7 +2,7 @@
 title: 메시지 대기열 소비자
 description: 관련된 기능 및 시스템 구성 설정을 포함하여 Adobe Commerce 메시지 대기열 소비자에 대해 알아봅니다.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 | 소비자 및 설명 | Adobe Commerce | Adobe Commerce 및 B2B | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| 항목 가져오기 또는 내보내기, 일괄 가격 변경, 웨어하우스에 제품 할당 등 [일괄 작업](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)의 각 개별 작업에 대한 메시지를 만듭니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) 옵션이&#x200B;**[!UICONTROL Run asynchronously]**(으)로 설정된 경우 필수입니다. |                |                         |                     |
+| 항목 가져오기 또는 내보내기, 일괄 가격 변경, 웨어하우스에 제품 할당 등 [일괄 작업](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)의 각 개별 작업에 대한 메시지를 만듭니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) 옵션이&#x200B;**[!UICONTROL Run asynchronously]**(으)로 설정된 경우 필수입니다. |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
 | 백그라운드에서 쿠폰을 비동기적으로 생성합니다. [일괄 쿠폰 생성](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=ko#method-2%3A-generate-a-batch-of-coupons) 기능을 사용하는 데 필요합니다. |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
@@ -52,7 +52,7 @@ ht-degree: 0%
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | 협상 가능한 견적의 가격을 업데이트합니다. 관리 시스템 구성 설정에서 [**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/quotes/quotes) 옵션을 사용하도록 설정한 경우 필수입니다. |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| 비동기적으로 [주문을 처리](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)하여 주문을 받은 것으로 표시하고 메시지 대기열에 배치하여 선입선출 방식으로 처리합니다. 고객이 성공 메시지를 보기 전에 백엔드 프로세스가 완료될 때까지 기다릴 필요가 없기 때문에 처리할 수 있는 주문 수를 개선하기 위해 [모범 사례](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)를 고려했습니다. |                |                         |                     |
+| 비동기적으로 [주문을 처리](https://developer.adobe.com/commerce/php/module-reference/module-async-order)하여 주문을 받은 것으로 표시하고 메시지 대기열에 배치하여 선입선출 방식으로 처리합니다. 고객이 성공 메시지를 보기 전에 백엔드 프로세스가 완료될 때까지 기다릴 필요가 없기 때문에 처리할 수 있는 주문 수를 개선하기 위해 [모범 사례](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)를 고려했습니다. |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | 관리자를 사용하여 [업데이트를 수행](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html?lang=ko)한 후 데이터베이스의 제품 특성에 변경 내용을 비동기적으로 씁니다. |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |

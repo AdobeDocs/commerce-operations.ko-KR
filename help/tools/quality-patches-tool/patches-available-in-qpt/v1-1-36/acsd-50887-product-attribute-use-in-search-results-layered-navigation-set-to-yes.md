@@ -1,20 +1,20 @@
 ---
-title: 'ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* 옵션 없이 *[!UICONTROL Use in Search]*이(가) 예로 설정됨'
+title: 'ACSD-50887: *[!UICONTROL Use in Search]* 옵션 없이 *[!UICONTROL Use in Search Results Layered Navigation]*이(가) 예로 설정됨'
 description: ACSD-50887 패치를 적용하여 제품 속성 *[!UICONTROL Use in Search Results Layered Navigation]*을(를) *예*로 설정할 수 있고 *[!UICONTROL Use in Search]* 옵션도 *예*로 설정되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
 exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
-# ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;이(가) *옵션 없이*&#x200B;예&#x200B;*[!UICONTROL Use in Search]* (으)로 설정됨
+# ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;이(가) *[!UICONTROL Use in Search]* 옵션 없이 *예*(으)로 설정됨
 
-ACSD-50887 패치는 *[!UICONTROL Use in Search Results Layered Navigation]* 옵션도 *예*(으)로 설정되지 않고 제품 특성 속성 *[!UICONTROL Use in Search]*&#x200B;을(를) *예*(으)로 설정할 수 있는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.36이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50887입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-50887 패치는 *[!UICONTROL Use in Search]* 옵션도 *예*(으)로 설정되지 않고 제품 특성 속성 *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;을(를) *예*(으)로 설정할 수 있는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.36이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50887입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -32,9 +32,9 @@ ACSD-50887 패치는 *[!UICONTROL Use in Search Results Layered Navigation]* 옵
 
 ## 문제
 
-*[!UICONTROL Use in Search Results Layered Navigation]* 옵션도 *예*(으)로 설정하지 않고 제품 특성 속성 *[!UICONTROL Use in Search]*&#x200B;을(를) *예*(으)로 설정할 수 있습니다.
+*[!UICONTROL Use in Search]* 옵션도 *예*(으)로 설정하지 않고 제품 특성 속성 *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;을(를) *예*(으)로 설정할 수 있습니다.
 
-이러한 설정은 함께 사용하도록 설계되었습니다. 패치가 적용된 상태에서 *[!UICONTROL Use in Search]* 옵션이 *No*(으)로 설정되어 있으면 *[!UICONTROL Use in Search Results Layered Navigation]* No *(으)로 설정된 것처럼* 옵션이 작동하지 않습니다.
+이러한 설정은 함께 사용하도록 설계되었습니다. 패치가 적용된 상태에서 *[!UICONTROL Use in Search]* 옵션이 *No*(으)로 설정되어 있으면 *No*(으)로 설정된 것처럼 *[!UICONTROL Use in Search Results Layered Navigation]* 옵션이 작동하지 않습니다.
 
 <u>재현 단계</u>:
 
@@ -45,8 +45,8 @@ ACSD-50887 패치는 *[!UICONTROL Use in Search Results Layered Navigation]* 옵
    * *[!UICONTROL Use in Search Results Layered Navigation]= 예*
    * *이름 = Test_attribute*
    * *옵션*:
-      * *스티커*
-      * *선택기*
+     * *스티커*
+     * *선택기*
 
 1. 기본 속성 집합에 새 속성을 추가합니다.
 1. 다음 두 가지 제품을 만듭니다.
@@ -69,7 +69,7 @@ ACSD-50887 패치는 *[!UICONTROL Use in Search Results Layered Navigation]* 옵
 
 <u>예상 결과</u>:
 
-*이(가)*&#x200B;아니요[!DNL Elasticsearch]&#x200B;(으)로 설정되어 있으면 *[!UICONTROL Use in Search]*&#x200B;에서 Test_attribute를 인덱싱하지 않으므로 *스티커* 제품만 반환됩니다.
+*[!UICONTROL Use in Search]*&#x200B;이(가) *아니요*(으)로 설정되어 있으면 [!DNL Elasticsearch]에서 Test_attribute를 인덱싱하지 않으므로 *스티커* 제품만 반환됩니다.
 
 <u>실제 결과</u>:
 
@@ -79,15 +79,15 @@ ACSD-50887 패치는 *[!UICONTROL Use in Search Results Layered Navigation]* 옵
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [&#x200B; 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[!UICONTROL Quality Patches Tool]
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]&#x200B;[&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [[!DNL Quality Patches Tool] 안내서에서 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko): 패치 검색[!DNL Quality Patches Tool]을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

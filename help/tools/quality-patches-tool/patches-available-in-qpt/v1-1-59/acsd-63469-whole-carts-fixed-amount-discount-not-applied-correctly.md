@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ ACSD-63469 패치는 두 개 이상의 규칙이 적용될 때 전체 장바구�
 1. 850달러와 85달러 두 가지 상품을 만들고 각각 765달러와 68달러로 특가를 설정한다.
 1. 다음과 같이 두 개의 **[!UICONTROL Cart Price Rules]**&#x200B;을(를) 만듭니다.
    * 규칙 1
-      * **[!UICONTROL Conditions]**: $850 제품의 경우 *수량*&#x200B;을(를) *같음 또는 2* 이상으로 설정하십시오.
-      * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**/*$153* 적용
+     * **[!UICONTROL Conditions]**: $850 제품의 경우 *수량*&#x200B;을(를) *같음 또는 2* 이상으로 설정하십시오.
+     * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**/*$153* 적용
    * 규칙 2
-      * **[!UICONTROL Conditions]**: $85 제품의 경우 *수량*&#x200B;을(를) *2*&#x200B;보다 크거나 같게 설정합니다.
-      * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**/*$14* 적용
+     * **[!UICONTROL Conditions]**: $85 제품의 경우 *수량*&#x200B;을(를) *2*&#x200B;보다 크거나 같게 설정합니다.
+     * **[!UICONTROL Actions]**: **[!UICONTROL Fixed amount discount for whole cart]**/*$14* 적용
 1. 각각 수량이 2인 두 제품을 장바구니에 추가합니다.
 
 <u>예상 결과</u>:
@@ -58,8 +58,8 @@ ACSD-63469 패치는 두 개 이상의 규칙이 적용될 때 전체 장바구�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 패치 설치 후 추가 단계 필요
 

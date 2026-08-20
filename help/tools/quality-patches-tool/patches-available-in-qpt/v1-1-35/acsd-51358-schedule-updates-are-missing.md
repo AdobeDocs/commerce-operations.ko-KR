@@ -5,16 +5,16 @@ feature: Staging
 role: Admin, Developer
 exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-51358: 예약 업데이트가 누락되었습니다.
 
-ACSD-51358 패치는 종료 날짜 없이 예약된 업데이트 의 변경 사항이 동일한 엔터티에서 다른 예약된 업데이트를 제거하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.35가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-51358입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-51358 패치는 종료 날짜 없이 예약된 업데이트 의 변경 사항이 동일한 엔터티에서 다른 예약된 업데이트를 제거하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.35가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-51358입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -38,29 +38,29 @@ ACSD-51358 패치는 종료 날짜 없이 예약된 업데이트 의 변경 사�
 
 1. 종료 날짜 없이 **[!UICONTROL scheduled update]**&#x200B;을(를) 만듭니다(*업데이트 1*).
 1. 첫 번째 업데이트와 시작 날짜가 같은 새 **[!UICONTROL scheduled update]**&#x200B;을(를) 만들되, 다음 날과 종료 날짜(*업데이트 2*)를 추가하십시오.
-1. 1단계(**[!UICONTROL scheduled update]**&#x200B;업데이트 1 *)에서 만든* 편집 및 변경 내용 저장
+1. 1단계(*업데이트 1*)에서 만든 **[!UICONTROL scheduled update]** 편집 및 변경 내용 저장
 
 <u>예상 결과</u>
 
-(*업데이트 1*)을(를) 편집할 때 (**[!UICONTROL schedule update]**&#x200B;업데이트 2 *)은(는)* 목록에 남아 있어야 합니다.
+(*업데이트 1*)을(를) 편집할 때 (*업데이트 2*)은(는) **[!UICONTROL schedule update]** 목록에 남아 있어야 합니다.
 
 <u>실제 결과</u>
 
-(*업데이트 1*)을(를) 편집할 때 (**[!UICONTROL schedule update]**&#x200B;업데이트 2 *)이(가)* 목록에서 제거되었습니다.
+(*업데이트 1*)을(를) 편집할 때 (*업데이트 2*)이(가) **[!UICONTROL schedule update]** 목록에서 제거되었습니다.
 
 ## 패치 적용
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [&#x200B; 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[!UICONTROL Quality Patches Tool]
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]&#x200B;[&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [[!DNL Quality Patches Tool] 안내서에서 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko): 패치 검색[!DNL Quality Patches Tool]을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

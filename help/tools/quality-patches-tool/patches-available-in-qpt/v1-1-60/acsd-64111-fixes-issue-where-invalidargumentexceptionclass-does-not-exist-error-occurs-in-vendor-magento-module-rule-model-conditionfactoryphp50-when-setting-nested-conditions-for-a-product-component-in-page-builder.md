@@ -1,12 +1,13 @@
 ---
 title: 'ACSD-64111:  [!DNL Page Builder]에서 제품 구성 요소에 대한 중첩 조건을 설정할 때 *InvalidArgumentException: 클래스가 없음* 오류를 수정합니다'
+description: ACSD-64111 패치를 적용하여 페이지 빌더의 제품 위젯 조건에 조건 조합을 추가하면 vendor/magento/module-rule/Model/ConditionFactory.php에 클래스가 없으므로 InvalidArgumentException이 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ACSD-64111 패치가 [!DNL Page Builder]에서 제품 구성 요소에 대한 �
 
 **Adobe Commerce 버전에 대한 패치가 만들어졌습니다.**
 
-* Adobe Commerce(모든 배포 메서드)  2.4.6-p8
+* Adobe Commerce(모든 배포 방법) 2.4.6-p8
 
 **Adobe Commerce 버전과 호환:**
 
@@ -31,7 +32,7 @@ ACSD-64111 패치가 [!DNL Page Builder]에서 제품 구성 요소에 대한 �
 
 ## 문제
 
-오류 *InvalidArgumentException: 클래스가 /app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;에 존재하지 않습니다. [!DNL Page Builder] 제품 위젯 조건에 *[!UICONTROL Conditions Combination]*&#x200B;을(를) 추가할 때 throw됩니다.
+오류 *InvalidArgumentException: [!DNL Page Builder] 제품 위젯 조건에&#x200B;*[!UICONTROL Conditions Combination]*&#x200B;을(를) 추가할 때 /app/&lt;프로젝트 id\>/vendor/magento/module-rule/Model/ConditionFactory.php*&#x200B;에 클래스가 없습니다.
 
 <u>재현 단계</u>:
 
@@ -59,7 +60,7 @@ ACSD-64111 패치가 [!DNL Page Builder]에서 제품 구성 요소에 대한 �
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 
 ## 관련 읽기

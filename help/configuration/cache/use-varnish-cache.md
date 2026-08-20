@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업
 
   예를 들어, 다음 위치에서 관리에서 수행하는 모든 작업:
 
-   - **스토어** > **설정** > **구성** > 일반 > **일반**
-   - **스토어** > **설정** > **구성** > 일반 > **통화 설정**
-   - **스토어** > **설정** > **구성** > 일반 > **이메일 주소 저장**
+  - **스토어** > **설정** > **구성** > 일반 > **일반**
+  - **스토어** > **설정** > **구성** > 일반 > **통화 설정**
+  - **스토어** > **설정** > **구성** > 일반 > **이메일 주소 저장**
 
   Commerce에서 이러한 변경 사항을 감지하면 캐시를 새로 고침한다는 메시지가 표시됩니다.
 
@@ -61,7 +61,7 @@ Commerce에서 작동하도록 Varnish를 설치 및 구성한 후 다음 작업
 
 ## 바니시를 제거하도록 Commerce 구성
 
-Commerce은 [`magento setup:config:set`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) 명령을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다.
+Commerce은 [`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset) 명령을 사용하여 Varnish 호스트를 구성한 후 Varnish 호스트를 제거합니다.
 
 선택적 매개 변수 `--http-cache-hosts` 매개 변수를 사용하여 쉼표로 구분된 Varnish 호스트 및 수신 포트 목록을 지정할 수 있습니다. 하나 또는 여러 개의 Vannish 호스트를 모두 구성합니다. ( 공백 문자로 호스트를 구분하지 마십시오.)
 

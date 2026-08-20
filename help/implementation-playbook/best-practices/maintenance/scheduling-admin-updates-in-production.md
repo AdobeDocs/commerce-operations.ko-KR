@@ -4,9 +4,9 @@ description: 느린 성능 및 중단을 방지하기 위해 Adobe Commerce에 �
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 추가 정보
 
-- [캐싱 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [비공개 콘텐츠: 비공개 콘텐츠 무효화](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [캐싱 우수 사례](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [비공개 콘텐츠: 비공개 콘텐츠 무효화](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [하드웨어 권장 사항: 캐시](../../../performance/hardware.md#caches)
 - [고급 설정: Redis 설정](../../../performance/advanced-setup.md#set-up-redis)

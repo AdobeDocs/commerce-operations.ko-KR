@@ -3,9 +3,9 @@ title: 우수 사례
 description: Adobe 권장 모범 사례를 사용하여 Adobe Commerce 프로젝트에 대한 업그레이드 프로세스를 관리합니다.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Adobe Commerce 인스턴스를 업그레이드하기 위한 작업 수준은 다음 요소에 따라 다릅니다.
 
-- **사이트를 어떻게 빌드했습니까?** 사용자 지정 작업의 양과 설치된 타사 모듈의 수는 업그레이드의 복잡성에 큰 영향을 줍니다. 사용자 정의 작업 및 모듈의 품질은 업그레이드가 원활하게 진행되는지 여부를 결정할 수 있습니다.
+- **사이트를 어떻게 구축했습니까?** 사용자 정의 작업의 양과 설치된 타사 모듈의 수는 업그레이드의 복잡성에 크게 영향을 줍니다. 사용자 정의 작업 및 모듈의 품질은 업그레이드가 원활하게 진행되는지 여부를 결정할 수 있습니다.
 
-- **여러 릴리스를 건너뛰고 있습니까?** 릴리스를 건너뛰면 다음 업그레이드가 더 복잡해지고 이후 버전에서 업그레이드하면 프로세스가 더 쉽고 저렴해집니다.
+- **여러 릴리스를 건너뛰고 있습니까?** 릴리스를 건너뛰면 다음 업그레이드가 더 복잡해지고, 이후 버전에서 업그레이드하면 프로세스가 더 쉽고 저렴해집니다.
 
 - **어떤 종류의 업그레이드를 수행하고 있습니까?** 부 릴리스(예: 2.3.x에서 2.4.0으로)로의 업그레이드는 패치 릴리스(예: 2.4.2에서 2.4.3으로) 간의 업그레이드보다 광범위합니다. 보안 업그레이드는 구현하기 가장 쉬운 유형입니다.
 
@@ -42,14 +42,14 @@ Adobe Commerce 인스턴스를 업그레이드하기 위한 작업 수준은 다
 
 프로젝트 작업을 시작하는 순간부터 향후 업그레이드가 현재 작업의 영향을 받는 방식을 고려해야 합니다. 다음에 설명된 대로 항상 Adobe Commerce 개발 모범 사례를 따르십시오.
 
-- [개발 모범 사례](https://developer.adobe.com/commerce/php/best-practices/)
+- [개발 우수 사례](https://developer.adobe.com/commerce/php/best-practices/)
 - [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)
 
 아직 채택하지 않았다면 Adobe Commerce 확장성 플랫폼 채택을 시작합니다. 이 플랫폼을 사용하면 SaaS와 유사한 업그레이드 기능을 유지하면서 프로세스를 효율적으로 사용자 정의하고 시스템을 통합하며 새로운 기능을 배포할 수 있습니다. 그 기능은 다음과 같습니다.
 
 - **UI 확장성**. [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)을(를) 사용하여 백엔드 및 미들웨어와 독립적으로 스토어프런트를 확장하고 발전시키십시오.
 
-- **API 확장성**. 그래프 데이터 모델을 발전시키고 그래프 레이어에서 직접 람다 함수를 실행하여 웹 API 레이어를 확장하려면 [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html)을(를) 사용하십시오.
+- **API 확장성**. 그래프 데이터 모델을 발전시키고 그래프 레이어에서 직접 람다 함수를 실행하여 웹 API 레이어를 확장하려면 [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)을(를) 사용하십시오.
 
 - **Adobe I/O 미들웨어 및 서비스**. Adobe의 미들웨어와 [Adobe I/O](https://www.adobe.io/)에 구축된 앱 연결 제품군을 사용하여 Adobe Commerce과 시스템을 연결합니다. 또한 Adobe I/O에서 실행되는 고유한 비즈니스 논리로 기본 동작을 덮어쓰면서 핵심 플랫폼 기능을 확장할 수 있습니다.
 
@@ -57,11 +57,11 @@ Adobe Commerce 인스턴스를 업그레이드하기 위한 작업 수준은 다
 
 Adobe Commerce의 기능을 지속적으로 확장하는 과정에서 사용 가능한 최신 릴리스를 통해 개발하고 프로젝트 계획에 업그레이드 전략을 정의하는 것이 중요합니다. 이를 통해 영업을 더욱 신속하게 확장하고, 더욱 효과적으로 운영하며, 현재와 미래의 경쟁에서 앞서갈 수 있도록 지원하는 최신 개선 사항을 안전하고 준수하며 최신 상태로 유지할 수 있습니다.
 
-업그레이드를 계획하고 예산을 책정하려면 [릴리스 일정](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule)을 모니터링해야 합니다. 미리 팀의 백로그 내에서 업그레이드 작업을 계획합니다. GA로 이 작업을 완료하는 것을 목표로 합니다.
+업그레이드를 계획하고 예산을 책정하려면 [릴리스 일정](/help/release/schedule.md)을 모니터링해야 합니다. 미리 팀의 백로그 내에서 업그레이드 작업을 계획합니다. GA로 이 작업을 완료하는 것을 목표로 합니다.
 
 - 프리릴리스 버전을 사용하여 각 새로운 릴리스에 대해 알아보십시오. 프리릴리스는 Adobe Commerce 판매자 및 모든 파트너가 일반 출시 2주 전에 사용할 수 있는 일반 가용성 코드입니다. 여러 스토어가 있는 경우 기본 스토어에서 프리릴리스를 사용하고 사용자 지정 모듈 및 테마가 호환되는지 확인하십시오.
 
-- Adobe Commerce에 대한 [업그레이드 계획 검사 목록](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist)을 검토하여 업그레이드를 계획하는 데 도움을 받으십시오.
+- Adobe Commerce에 대한 [업그레이드 계획 검사 목록](/help/implementation-playbook/best-practices/maintenance/upgrade-checklist.md)을 검토하여 업그레이드를 계획하는 데 도움을 받으십시오.
 
 - 연초에 업그레이드를 계획하십시오. 각 업그레이드를 완료하려면 예산과 리소스를 예약해야 합니다. 업그레이드 작업은 프로젝트마다 크게 다를 수 있습니다. 경험과 지식을 사용하여 계획을 최대한 정확하게 수립합니다.
 
@@ -73,7 +73,7 @@ Adobe Commerce의 기능을 지속적으로 확장하는 과정에서 사용 가
 
 업그레이드를 위해 수행할 작업을 평가합니다.
 
-- 새 버전의 범위와 영향을 이해하려면 [릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/overview)를 검토하십시오.
+- 새 버전의 범위와 영향을 이해하려면 [릴리스 정보](/help/release/release-notes/overview.md)를 검토하십시오.
 
 - 새 버전으로 업그레이드하기 전에 사용자 지정 코드에서 수정해야 하는 잠재적인 문제를 식별하려면 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)을(를) 사용하십시오.
 

@@ -16,9 +16,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: 379
+source-wordcount: 380
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=ko)을 참조하십시오.
+>503(백 엔드 가져오기 실패) 오류가 발생하면 _Adobe Commerce 도움말 센터_&#x200B;에서 [503(서비스를 사용할 수 없음) 오류 문제 해결](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors)을 참조하십시오.

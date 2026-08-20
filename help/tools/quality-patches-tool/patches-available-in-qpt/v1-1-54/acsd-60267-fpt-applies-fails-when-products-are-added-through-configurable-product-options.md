@@ -5,9 +5,9 @@ feature: Taxes
 role: Admin, Developer
 exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 �
 
 <u>재현 단계</u>:
 
-1. *[!UICONTROL Enable FPT]*&#x200B;관리자&#x200B;*>* > *>* > **[!UICONTROL Configuration]**(으)로 이동하여 **[!UICONTROL Sales]**&#x200B;을(를) **[!UICONTROL Tax]**&#x200B;예&#x200B;**[!UICONTROL Fixed Product Taxes]**(으)로 설정합니다.
+1. *관리자* > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** > **[!UICONTROL Fixed Product Taxes]**(으)로 이동하여 *[!UICONTROL Enable FPT]*&#x200B;을(를) *예*(으)로 설정합니다.
 1. FPT 특성을 만들어 *[!UICONTROL Attribute Set]*&#x200B;에 할당합니다.
 1. **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]**&#x200B;을(를) 엽니다.
 1. *[!UICONTROL Default Label]*&#x200B;에 대해 특성을 식별하는 레이블을 입력하십시오.
@@ -61,8 +61,8 @@ ACSD-60267 패치는 간단한 제품을 장바구니에 직접 추가할 때 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

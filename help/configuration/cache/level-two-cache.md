@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7fdc2a2c19eccf36940d9b4545b443eabbab4220
+source-git-commit: 7ebadd26eee51aa2c2f3dfe8a8a2ed3dc20657b9
 workflow-type: tm+mt
-source-wordcount: 1378
+source-wordcount: 1725
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ L2 캐싱을 사용하면 각 웹 노드는 자주 액세스하는 데이터를 
 
 Commerce은 해시된 데이터 버전을 원격 캐시에 저장하고, 일반 키에 접미사 `:hash`을(를) 추가합니다. 로컬 캐시가 오래된 경우 캐시 어댑터를 통해 원격 컴퓨터에서 데이터를 가져옵니다.
 
-두 가지 L2 캐시 구현을 사용할 수 있습니다.
+Adobe Commerce에서는 두 가지 L2 캐시 구현을 사용할 수 있습니다.
 
 | 구현 | 버전 | 설명 |
 | -------------- | ------- | ----------- |
 | [레거시(`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | 로컬 저장소용 `Cm_Cache_Backend_File`을(를) 사용하는 Zend 기반 두 수준 캐시 |
-| [최신(`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6 규정 준수 및 향상된 성능을 갖춘 Symfony 캐시 기반 L2. Valkey만 지원합니다. |
+| [최신(`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | PSR-6 규정 준수 및 향상된 성능을 갖춘 Symfony 캐시 기반 L2. Valkey를 지원합니다. |
+
+Symfony L2 캐시는 Adobe Commerce 2.4.9 이상 릴리스에 권장되는 구현입니다. 기존 `RemoteSynchronizedCache`에 비해 성능이 크게 향상된 최신 PSR-6 호환 캐싱 구현을 제공합니다.
 
 ## 기존 L2 캐시 구성(RemoteSynchronizedCache)
 
+기존 L2 캐시 구성 지침은 이전 버전의 Adobe Commerce에 적용됩니다. Adobe Commerce 버전 2.4.9 이상을 사용하고 있는 경우 [최신 Symfony L2 캐시 구현](#modern-symfony-l2-cache-implementation)과 함께 Valkey를 사용하십시오.
+
 >[!NOTE]
 >
->기존 L2 캐시 구성 지침은 이전 버전의 Adobe Commerce에 적용됩니다. Adobe Commerce 버전 2.4.9 이상을 사용하는 경우 Valkey를 [L2 캐시용 Symfony 2와 함께 사용](#modern-symfony-l2-cache-implementation)하십시오.
+>이 페이지에서는 온-프레미스 구성만 다룹니다. 클라우드의 Adobe Commerce에 대해서는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
 
-캐시 구성 지침은 배포 유형에 따라 다릅니다.
-
-- **Cloud의 Adobe Commerce에 대해**&#x200B;에서 `.magento.env.yaml`의 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#redis_backend) 또는 [`VALKEY_BACKEND`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) 배포 변수를 설정하여 L2 캐시를 구성하십시오. 구성 예제는 [L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)을 참조하십시오.
-
-- **Redis를 지원하는 Adobe Commerce 온-프레미스 버전의 경우**&#x200B;에서 다음 예제를 사용하여 `app/etc/env.php` 파일의 기존 캐시 섹션을 수정하거나 바꾸세요.
+Redis를 지원하는 Adobe Commerce 온-프레미스 버전의 경우 다음 예제를 사용하여 `app/etc/env.php` 파일의 기존 캐시 섹션을 수정하거나 바꾸세요.
 
 ```php
 'cache' => [
@@ -94,17 +94,17 @@ Commerce은 해시된 데이터 버전을 원격 캐시에 저장하고, 일반 
 - `backend_options`은(는) L2 캐시 구성입니다.
   - `remote_backend`은(는) 원격 캐시 구현인 Redis 또는 MySQL입니다.
   - `remote_backend_options`은(는) 원격 캐시 구성입니다.
-  - `local_backend`은(는) 로컬 캐시 구현입니다. `Cm_Cache_Backend_File`
+  - `local_backend`은(는) 로컬 캐시 구현입니다. `Cm_Cache_Backend_File`.
   - `local_backend_options`은(는) 로컬 캐시 구성입니다.
   - `cache_dir`은(는) 로컬 캐시가 저장된 디렉터리에 대한 파일 캐시 관련 옵션입니다.
 
-Adobe Commerce의 경우 Adobe에서는 다음을 사용하여 원격 캐싱(`\Magento\Framework\Cache\Backend\Redis`)에 Redis를 사용하고 공유 메모리에 있는 데이터의 로컬 캐싱에 `Cm_Cache_Backend_File`을(를) 사용하는 것이 좋습니다. `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Redis를 지원하는 2.4.9 이전 Adobe Commerce 버전의 경우, Adobe에서는 `'local_backend_options' => ['cache_dir' => '/dev/shm/']`을(를) 사용하여 원격 캐싱(`\Magento\Framework\Cache\Backend\Redis`)에 Redis를 사용하고 공유 메모리에 있는 데이터의 로컬 캐싱에 `Cm_Cache_Backend_File`을(를) 사용하는 것이 좋습니다.
 
-Adobe은 Redis에 대한 압력을 크게 낮추기 때문에 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 기능을 사용할 것을 권장합니다. 미리 로드 키에 접미사 &#39;:hash&#39;을(를) 추가하는 것을 잊지 마십시오.
+Adobe은 Redis에 대한 압력을 크게 낮추기 때문에 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 기능을 사용할 것을 권장합니다. 미리 로드 키에 대해 접미사 `:hash`을(를) 추가하는 것을 잊지 마십시오.
 
 ## 부실 캐시 옵션
 
-Commerce 2.4부터 `use_stale_cache` 옵션을 사용하면 새 캐시 데이터가 병렬 프로세스에서 생성되는 동안 이전에 캐시된 데이터를 제공함으로써 특정 경우에 대한 성능을 향상시킬 수 있습니다.
+Commerce 2.4부터 `use_stale_cache` 옵션을 사용하면 새 캐시 데이터가 병렬 프로세스에서 생성되는 동안 이전에 캐시된 데이터를 제공함으로써 특정 경우에 대한 성능을 향상시킬 수 있습니다. 이 섹션에서 설명하는 권장 캐시 유형 및 상쇄는 기존 `RemoteSynchronizedCache` 및 `symfony_l2` 구현 모두에 적용됩니다. `symfony_l2` 구성 예제는 [부실 캐시가 있는 Symfony L2 캐시](#symfony-l2-cache-with-stale-cache)를 참조하십시오.
 
 일반적으로, 잠금 대기를 갖는 상계는 성능 관점에서 받아들여질 수 있다. 그러나 블록 또는 캐시 항목의 수가 증가하면 잠금 대기에 더 많은 시간이 걸립니다. 일부 시나리오에서 대기 시간은 프로세스에 대해 최대 **키 수** x **조회 시간 초과**&#x200B;일 수 있습니다. 드문 경우이지만 판매자는 `Block/Config` 캐시에 수백 개의 키를 보유할 수 있으므로 잠금에 대한 작은 조회 시간 제한도 초 단위로 소요될 수 있습니다.
 
@@ -124,7 +124,7 @@ Adobe에서는 다음을 포함하여 가장 많은 혜택을 받는 캐시 유�
 
 Adobe에서는 `default` 캐시 유형에 대해 `use_stale_cache` 옵션을 활성화하지 않는 것이 좋습니다.
 
-다음 코드는 구성의 예를 보여 줍니다.
+다음 코드는 기존 `RemoteSynchronizedCache` 백엔드에 대한 예제 구성을 보여 줍니다. `symfony_l2`의 예제는 [부실 캐시가 있는 Symfony L2 캐시](#symfony-l2-cache-with-stale-cache)를 참조하십시오.
 
 ```php
 'cache' => [
@@ -192,26 +192,50 @@ Commerce 버전 2.4.9+에서 기존 L2 캐시 대신 Sympony 캐시 기반 L2 �
 
 >[!IMPORTANT]
 >
->Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2.4.8-p5 이상의 패치 릴리스에서는 지원되지 않습니다. Redis를 지원하지 않는 버전으로 업그레이드하는 경우 Valkey를 설정하고 `symfony_l2`을(를) 사용하도록 캐시 구성을 업데이트해야 합니다. Commerce 온-프레미스에 대해서는 [Valkey 설정](config-valkey.md)을 참조하십시오. 클라우드에 있는 Commerce의 경우 [유효성 검사 설정](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}을 참조하세요.
+>Redis는 다음으로 시작하는 원격 캐시 백엔드로 지원되지 않습니다.
 >
->Redis는 `symfony_l2`에 대해 공식적으로 지원되는 원격 백엔드가 아닙니다. `symfony_l2`을(를) 지원하는 릴리스에 있는 경우 캐싱에 Valkey를 사용해야 합니다. 다음에 대한 [시스템 요구 사항](../../installation/system-requirements.md)을 참조하십시오.
+>- Adobe Commerce 2.4.9 이상
+>- 2.4.8-p4 이상 패치
+>- 2.4.7-p9 이상 패치
+>- 2.4.6-p14 이상 패치
+>- 2.4.5-p16 이상 패치
+>
+>이 버전 이상으로 업그레이드하는 경우 Valkey를 설정하고 `symfony_l2`을(를) 사용하도록 캐시 구성을 업데이트하십시오. [Valkey 설정](config-valkey.md) 및 [시스템 요구 사항](../../installation/system-requirements.md)을 참조하십시오.
 
 ### Symfony L2 캐시의 이점
 
-- **최신 아키텍처**: Symfony 캐시 구성 요소를 기반으로 구축(PSR-6 준수)
-- **향상된 성능**: Igbinary serialization, gzip 압축 및 Lua 스크립트에 대한 기본 지원
-- **영구 연결**: 연결 풀링으로 유효성 검사 연결 오버헤드를 줄입니다.
-- **키 미리 로드**: 중요한 데이터에 대한 캐시 키 미리 로드를 지원합니다.
-- **오래된 캐시 지원**: `use_stale_cache` 옵션과의 완전한 호환성
-- **간소화된 구성**: 클리너 백 엔드 형식 이름(`valkey`, `file`)
+- **최신 아키텍처:** Symfony 캐시 구성 요소를 기반으로 구축(PSR-6 준수)
+- **향상된 성능:** Igbinary serialization, gzip 압축 및 Lua 스크립트에 대한 네이티브 지원
+- **영구 연결:**&#x200B;은(는) 연결 풀링으로 Valkey 연결 오버헤드를 줄입니다.
+- **미리 로드 키:**&#x200B;은(는) 중요 데이터에 대한 캐시 키 미리 로드를 지원합니다.
+- **오래된 캐시 지원:** `use_stale_cache` 옵션과의 완전한 호환성
+- **간소화된 구성:** 클리너 백 엔드 형식 이름(`valkey`, `file`)
+
+### RemoteSynchronizedCache에서 Symfony L2로 마이그레이션
+
+기존 `RemoteSynchronizedCache` 백엔드에서 `symfony_l2`(으)로 온-프레미스 설치를 업그레이드하는 경우 `app/etc/env.php`을(를) 업데이트하기 전에 다음을 검토하세요. `backend` 값만 변경하면 안 됩니다. 구성 구조, 키 이름 및 일부 기본 동작이 다릅니다.
+
+- **구성 구조가 변경됩니다.** `remote_backend`, `remote_backend_options` 및 `local_backend`은(는) `symfony_l2`에서 다른 값을 사용합니다. 예를 들어 `remote_backend`은(는) 정규화된 클래스 이름이 아닌 `'valkey'`이(가) 됩니다. 기존 기존 구성을 편집하지 않고 아래의 [구성 예제](#configuration-example-with-symfony-l2-cache)를 시작점으로 사용하십시오.
+
+- **`preload_keys`은(는) `symfony_l2`.**(으)로 권장되지 않습니다. 레거시 구성에 `preload_keys`이(가) 포함된 경우 마이그레이션의 일부로 제거하십시오. 키를 미리 로드해도 `symfony_l2`에서 성능이 향상되지 않으며, 불필요한 추가 키 조회를 트리거하여 Valkey에 대한 로드를 늘릴 수 있습니다.
+
+- **압축에는 명시적 플래그가 필요합니다.** `compression_lib`만 설정하면 `symfony_l2`에서 압축을 사용할 수 없습니다. 필요한 `compress_data` 설정에 대해서는 [Symfony L2 캐시에 대한 백엔드 옵션](#backend-options-for-symfony-l2-cache)을 참조하십시오.
+
+- **수동으로 구성된 온-프레미스 배포에 대해 부실 캐시가 기본적으로 사용하도록 설정되어 있지 않습니다.** `use_stale_cache`의 기본값은 `symfony_l2`에서 `false`입니다([백엔드 옵션 테이블](#backend-options-for-symfony-l2-cache) 참조). 레거시 구성이 `stale_cache_enabled` 프런트 엔드를 사용한 경우 [부실 캐시가 있는 Symfony L2 캐시](#symfony-l2-cache-with-stale-cache)의 패턴을 사용하여 명시적으로 다시 만들어야 합니다.
+
+>[!NOTE]
+>
+>`VALKEY_BACKEND: symfony_l2` 배포 변수를 설정하는 클라우드 환경의 Adobe Commerce에는 `ece-tools`에 의해 자동으로 생성된 `stale_cache_enabled` 프론트엔드를 포함한 전체 L2 구성이 있습니다. 클라우드별 동작은 [Symfony L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)을 참조하십시오.
+
+- **Redis는 `symfony_l2`에 대해 지원되는 원격 백엔드가 아닙니다.** 이 변경 사항의 일부로 Valkey로 마이그레이션합니다. [유효성 검사 설정](config-valkey.md)을 참조하세요.
 
 ### Sympony L2 캐시를 사용한 구성 예
 
 >[!NOTE]
 >
->Cloud의 Adobe Commerce에 대해 ECE 도구 패키지(`ece-tools`)는 캐시 구성을 자동으로 관리합니다. `app/etc/env.php`을(를) 직접 편집하지 마십시오. 배포는 수동 변경 내용을 덮어씁니다. 클라우드 구성의 경우 대신 [Symfony L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)을 참조하십시오.
+>이 예제는 온-프레미스 `app/etc/env.php` 구성에 대한 것입니다. 클라우드의 Adobe Commerce의 경우 캐시 구성은 `ece-tools`에 의해 자동으로 관리됩니다. `env.php`을(를) 직접 편집하지 않고 [Symfony L2 캐시 구성](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)을(를) 참조하십시오.
 
-L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
+`app/etc/env.php` 파일에서 L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형을 사용합니다. 이 예제에서는 `symfony_l2`에 권장되지 않는 `preload_keys` 구성을 포함하지 않습니다. 자세한 내용은 [RemoteSynchronizedCache에서 Symfony L2로 마이그레이션](#migrating-from-remotesynchronizedcache-to-symfony-l2)을 참조하십시오.
 
 ```php
 'cache' => [
@@ -228,16 +252,11 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
                     'password' => '',
                     'serializer' => 'igbinary',
                     'compression_lib' => 'gzip',
+                    'compress_data' => '1',
                     'persistent_id' => 'magento_l2_default',
                     'timeout' => '2.5',
                     'read_timeout' => '2.0',
                     'use_lua' => '1',
-                    'preload_keys' => [
-                        'prefix_EAV_ENTITY_TYPES:hash',
-                        'prefix_GLOBAL_PLUGIN_LIST:hash',
-                        'prefix_DB_IS_UP_TO_DATE:hash',
-                        'prefix_SYSTEM_DEFAULT:hash',
-                    ],
                 ],
                 // L1 (Local): File cache
                 'local_backend' => 'file',
@@ -256,7 +275,9 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
 
 ### 부실 캐시가 있는 교감 L2 캐시
 
-오래된 캐시 지원을 위한 별도의 프론트엔드를 구성합니다.
+캐시 유형이 부실 캐시에서 혜택을 받는 [부실 캐시 옵션](#stale-cache-options)과(와) 그 이유를 참조하십시오.
+
+다음 예제를 사용하여 `symfony_l2` 부실 캐시 지원에 대해 별도의 프론트엔드를 구성하십시오.
 
 ```php
 'cache' => [
@@ -272,6 +293,7 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
                     'port' => '6379',
                     'serializer' => 'igbinary',
                     'compression_lib' => 'gzip',
+                    'compress_data' => '1',
                     'persistent_id' => 'magento_l2_default',
                 ],
                 'local_backend' => 'file',
@@ -291,6 +313,7 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
                     'port' => '6379',
                     'serializer' => 'igbinary',
                     'compression_lib' => 'gzip',
+                    'compress_data' => '1',
                     'persistent_id' => 'magento_l2_stale',
                 ],
                 'local_backend' => 'file',
@@ -317,23 +340,28 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
 ### Symfony L2 캐시를 위한 백엔드 옵션
 
 | 옵션 | 유형 | 기본값 | 설명 |
-|--------|------|---------|-------------------------------------------------------------------|
+| -------- | ------ | --------- | --------------------------------------------------------------------- |
 | `remote_backend` | 문자열 | `'valkey'` | 원격 백 엔드 유형: `valkey` 또는 `file`. L2 캐시에 `valkey`을(를) 사용합니다. |
 | `remote_backend_options` | 배열 | `[]` | 원격 백엔드 구성(Valkey 설명서 참조) |
 | `local_backend` | 문자열 | `'file'` | 로컬 백 엔드 유형: `file` 또는 `apcu` |
 | `local_backend_options` | 배열 | `[]` | 로컬 백엔드 구성 |
 | `cleanup_percentage` | 정수 | `95` | L1 캐시 정리 임계값(1-100) |
 | `use_stale_cache` | 부울 | `false` | 고가용성을 위해 오래된 캐시 활성화 |
+| `compress_data` | 부울 | `false` | `compression_lib`과(와) 결합할 경우 압축을 활성화합니다. `compression_lib`만 설정하면 압축을 사용할 수 없습니다. |
+| `persistent` | 부울 | `true` | 원격 백엔드에 대한 영구 연결을 제어합니다. 기존 Zend 캐시 동작과 일치하도록 `false`(`'0'`)(으)로 설정합니다. 이 동작은 기본적으로 비영구 연결로 설정됩니다. |
+
 
 >[!NOTE]
 >
->`remote_backend` 옵션도 `redis` 값을 허용합니다. 그러나 Redis는 Adobe Commerce 2.4.9 이상에서 공식적으로 지원되는 캐시 서비스가 아닙니다. Adobe에서는 `valkey`(으)로만 `symfony_l2`을(를) 구성하는 것이 좋습니다. 릴리스별로 지원되는 캐시 서비스에 대해서는 [시스템 요구 사항](../../installation/system-requirements.md)을 참조하십시오.
+>- `remote_backend` 옵션에서도 `redis` 값을 사용할 수 있지만 Redis는 공식적으로 지원되지 않습니다([최신 Symfony L2 캐시 구현](#modern-symfony-l2-cache-implementation)에 있는 위의 참고 사항 참조).
+>
+>- 기존 `RemoteSynchronizedCache` 구성에 사용된 `frontend_options.write_control`이(가) `symfony_l2`에 적용되지 않습니다.
 
 ### 향상된 Sympony L2 캐시 성능 및 안정성
 
 >[!NOTE]
 >
->이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. 최신 패치 릴리스 정보는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 참조하십시오.
+>이러한 개선 사항은 `symfony_l2`을(를) 사용하는 Adobe Commerce 2.4.9 배포에 적용되며 패치 ACP2E-5132에서 사용할 수 있습니다. Adobe Commerce 온프레미스의 경우 품질 패치 도구(QPT)를 사용하여 이 패치를 적용합니다. Cloud의 Adobe Commerce의 경우 이 패치는 [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)를 통해 자동으로 제공됩니다.
 
 최신 업데이트를 통해 Symfony L2 캐시 확장성이 향상되고 불필요한 파일 시스템 I/O가 감소하며 캐시 일관성 및 안정성이 향상되었습니다.
 
@@ -345,19 +373,19 @@ L2 캐시에 대해 간소화된 `symfony_l2` 백 엔드 유형 사용:
 
 파일 기반 캐시를 사용하는(유효성 검사 없이) 배포의 경우 캐시 무효화를 지원하기 위해 로컬 태그 인덱스가 계속 유지됩니다. 이제 태그 인덱스가 이전에 하드코딩된 `var/cache` 위치 대신 구성된 `cache_dir`에 기록되어 일관된 캐시 디렉터리 사용을 보장하고 사용자 지정 캐시 구성에 대한 지원을 개선합니다.
 
-#### 다시 태그 지정 후 오래된 태그 멤버십을 수정했습니다.
+#### 다시 태그 지정 후 오래된 태그 멤버십 수정
 
 캐시 항목을 다시 태깅하면 더 이상 속해 있지 않은 태그와 연결되어 있을 수 있습니다. 이제 다시 태그 지정 시 오래된 태그 멤버십이 지워지므로 캐시 항목은 현재 할당된 태그에 의해서만 무효화됩니다.
 
-#### 변경되지 않은 저장 시 중복 원격 쓰기 문제 해결
+#### 변경되지 않은 저장을 위한 이중 원격 쓰기 수정
 
 변경되지 않은 콘텐츠로 캐시 항목을 저장해도 원격(Valkey) 백엔드에 대한 쓰기가 트리거됩니다. 이제 콘텐츠가 변경되지 않으면 저장을 생략하여 불필요한 원격 쓰기를 줄일 수 있습니다.
 
-#### 고정 L1 크기 기반 제거(cleanup_percentage)
+#### L1 크기 기반 제거 수정(cleanup_percentage)
 
 L1 크기 기반 제거에 사용된 `cleanup_percentage` 임계값이 정리를 일관되게 트리거하지 않았습니다. 이제 L1 캐시 제거에서 구성된 `cleanup_percentage`을(를) 올바르게 적용합니다.
 
-#### 부실 캐시에 대한 재생성 잠금을 추가했습니다.
+#### 부실 캐시에 대한 재생성 잠금
 
 `use_stale_cache`이(가) 활성화되어 있고 항목의 원격 복사본을 일시적으로 사용할 수 없는 경우 이제 한 프로세스만 단기 잠금을 획득하여 해당 항목을 다시 생성합니다. 동일한 항목에 대한 다른 동시 요청은 기존 로컬 값을 직접 재생성하는 대신 계속 처리되므로 재생성 스탬프와 중복 백엔드 로드가 줄어듭니다.
 
@@ -371,5 +399,12 @@ L1 크기 기반 제거에 사용된 `cleanup_percentage` 임계값이 정리를
 - 모든 동시 요청 재구축 대신 키당 하나의 재생기를 선택하여 `use_stale_cache` 항목에 대한 재생성 속도를 줄입니다.
 
 자세한 구성 옵션은 다음을 참조하십시오.
+
 - [Symfony Cache를 사용한 Valkey 캐시 구성](valkey-pg-cache.md)
 
+>[!MORELIKETHIS]
+>
+>- [캐싱 개요 및 구성 옵션](caching-overview.md)
+>- [캐시 백 엔드 옵션 및 저장소 참조](cache-options.md)
+>- [캐시 프론트엔드 및 형식 구성](cache-types.md)
+>- [기본 및 페이지 캐시에 대한 Redis 구성](redis-pg-cache.md)

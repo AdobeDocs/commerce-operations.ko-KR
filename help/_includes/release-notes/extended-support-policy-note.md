@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >다음도 참조하십시오.
 >
->- [소프트웨어 수명 주기 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
->- [클라우드 버전 업그레이드 시행 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — 시행 날짜 및 필수 작업
+>- [소프트웨어 수명 주기 정책](/help/release/lifecycle-policy.md) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
+>- [클라우드 버전 업그레이드 시행 정책](/help/release/version-upgrade-enforcement-policy.md) — 시행 날짜 및 필수 작업

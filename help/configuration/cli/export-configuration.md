@@ -2,7 +2,7 @@
 title: 구성 설정 내보내기
 description: 구성 덤프를 사용하여 Adobe Commerce 구성 설정을 파일로 내보내는 방법에 대해 알아봅니다. 파이프라인 배포 및 구성 관리에 대해 알아봅니다.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -30,14 +30,14 @@ bin/magento app:config:dump scopes themes
 - `app/etc/config.php`
 
   모든 Commerce 인스턴스에 대한 공유 구성 파일입니다.
-소스 제어에 포함시켜 개발, 빌드 및 프로덕션 시스템 간에 공유할 수 있도록 합니다.
+  소스 제어에 포함시켜 개발, 빌드 및 프로덕션 시스템 간에 공유할 수 있도록 합니다.
 
   [config.php 참조](../reference/config-reference-configphp.md)를 참조하십시오.
 
 - `app/etc/env.php`
 
   이는 환경별 구성 파일입니다.
-여기에는 개별 환경에 대한 민감하고 시스템별 설정이 포함되어 있습니다.
+  여기에는 개별 환경에 대한 민감하고 시스템별 설정이 포함되어 있습니다.
 
   이 파일을 소스 제어에 포함시키지 _마십시오_.
 
@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 `env.php`에 기록된 중요한 설정을 설정하려면 [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) 명령을 사용하십시오.
 
-구성 값은 모듈의 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) 파일에서 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php)을(를) 참조하여 중요하거나 시스템별로 지정됩니다.
+구성 값은 모듈의 [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings#how-to-specify-values-as-sensitive-or-system-specific) 파일에서 [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php)을(를) 참조하여 중요하거나 시스템별로 지정됩니다.
 
 `config_types`을(를) 사용할 때 추가 시스템 설정을 내보내려면 [`bin/magento config:set`](set-configuration-values.md#set-values) 명령을 사용하는 것이 좋습니다.

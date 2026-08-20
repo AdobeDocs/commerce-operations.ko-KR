@@ -5,9 +5,9 @@ feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
-source-git-commit: f82dcd6c76ba3512e59275c26815b6bb89e53733
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ WebAPI를 통해 제품을 미디어 ID로 업데이트하면 시스템이 미�
 
 1. 제품을 만들고 이미지를 추가합니다.
 1. `base_url/rest/V1/products/<sku>`에서 REST API를 사용하여 제품 세부 정보를 가져옵니다.
-1. `media_gallery_entrie`을(를) 변경되지 않은 상태로 유지하면서 제품을 업데이트하려면 PUT 요청을 수행합니다(동일한 이미지 이름 및 파일).
+1. PUT 요청을 수행하여 `media_gallery_entrie`을(를) 변경되지 않은 상태로 유지합니다(동일한 이미지 이름 및 파일).
 1. 업데이트 전후에 `pub/media/catalog/product/xx/yy` 디렉터리를 확인하십시오.
 
 <u>예상 결과</u>:
@@ -53,8 +53,8 @@ WebAPI를 통해 제품을 미디어 ID로 업데이트하면 시스템이 미�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

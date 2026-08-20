@@ -4,9 +4,9 @@ description: Adobe Commerce on cloud infrastructure Pro 계획 아키텍처 고�
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce 경고 정책에 대한 관리 경고를 사용할 수 없는 경우 이 계정이 새로 만들어졌거나 [!DNL New Relic]이(가) 최근에 구성되었기 때문일 수 있습니다. 매주 화요일에 해당 계정에 경고 정책을 추가하는 프로세스가 실행됩니다. 다음 프로세스가 실행된 다음 날에 경고 정책을 사용할 수 있습니다. 정책이 여전히 누락된 경우 [Adobe Commerce 지원 요청을 제출](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)하고 프로젝트 ID를 포함하십시오.
+>Adobe Commerce 경고 정책에 대한 관리 경고를 사용할 수 없는 경우 이 계정이 새로 만들어졌거나 [!DNL New Relic]이(가) 최근에 구성되었기 때문일 수 있습니다. 매주 화요일에 해당 계정에 경고 정책을 추가하는 프로세스가 실행됩니다. 다음 프로세스가 실행된 다음 날에 경고 정책을 사용할 수 있습니다. 정책이 여전히 누락된 경우 [Adobe Commerce 지원 요청을 제출](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)하고 프로젝트 ID를 포함하십시오.
 
 이러한 경고에 대한 문제 해결 단계를 제공하는 KB 문서에 대한 링크는 아래 표의 를 참조하십시오.
 

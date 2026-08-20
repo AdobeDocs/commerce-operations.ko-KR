@@ -4,13 +4,13 @@ description: ACP2E-3767 패치를 적용하여 번들 제품의 마지막 번들
 feature: Products, Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f39442925d9cc82087af9e84d91137a0fcd0ec14
+exl-id: 8c0645e3-47ab-4604-a9db-b070c3779e78
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3767: 번들 제품을 저장한 후 마지막 번들 옵션이 다시 나타납니다
 
@@ -62,8 +62,8 @@ ACP2E-3767 패치는 번들 제품을 저장한 후 마지막 번들 옵션이 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

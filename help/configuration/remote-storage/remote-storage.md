@@ -3,9 +3,9 @@ title: 원격 스토리지 구성
 description: 온-프레미스 Commerce 애플리케이션에 대한 원격 저장소 모듈을 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/magento-open-source/2-4-2)를 참조하세요.
+>- 원격 저장소는 Commerce 버전 2.4.2 이상에서만 사용할 수 있습니다. [2.4.2 릴리스 정보](/help/release/release-notes/open-source/2-4-2.md)를 참조하세요.
 >
 >- 원격 스토리지 모듈에 클라우드 인프라의 Adobe Commerce에 대한 _제한_ 지원이 있습니다. Adobe에서 타사 스토리지 어댑터 서비스 문제를 완전히 해결할 수 없습니다. 클라우드 프로젝트용 원격 저장소를 구현하는 방법에 대한 지침은 [클라우드 인프라에서 Commerce용 원격 저장소 구성](cloud-support.md)을 참조하십시오.
 
@@ -46,7 +46,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 `parameter-name`은(는) 특정 원격 저장소 매개 변수 이름을 참조합니다. 다음 표에는 원격 스토리지를 구성하는 데 사용할 수 있는 매개 변수가 나와 있습니다.
 
-| 명령줄 매개 변수 | 매개 변수 이름 | 설명 | 기본값 |
+| 명령줄 매개 변수 | 매개 변수 이름 | 설명 | 기본 값 |
 |--- |--- |--- |--- |
 | `remote-storage-driver` | 드라이버 | 어댑터 이름<br>가능한 값:<br>**파일**: 원격 스토리지를 사용하지 않도록 설정하고 로컬 파일 시스템을 사용&#x200B;<br>**aws-s3**: [Amazon Simple Storage Service(Amazon S3) 사용](remote-storage-aws-s3.md) | 없음 |
 | `remote-storage-bucket` | 버킷 | 개체 저장소 또는 컨테이너 이름 | 없음 |

@@ -3,9 +3,9 @@ title: 구성 모범 사례
 description: Adobe Commerce 성능을 최적화하는 구성 모범 사례에 대해 알아봅니다. 응답 시간 및 처리량을 개선하기 위한 설정 및 도구를 살펴봅니다.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Commerce에서 집중 주문 처리를 수행하는 동시에 점포에서 집�
 
 >[!WARNING]
 >
->**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)은(는) `Developer` 모드를 지원하지 않습니다.
+>**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test)은(는) `Developer` 모드를 지원하지 않습니다.
 
 ## 비동기 구성 저장
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 지연된 재고 업데이트
 
-판매가 집중되는 시기에는 Commerce에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 주문형 재고를 쉽게 다시 채울 수 있는 스토어의 체크아웃 플로우에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**(으)로 이동하십시오. 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
+판매가 집중되는 시기에는 Commerce에서 주문과 관련된 재고 업데이트를 연기할 수 있습니다. 이를 통해 작업 수를 최소화하고 주문 배치 프로세스를 가속화할 수 있습니다. 그러나 이 옵션은 재고량이 마이너스로 이어질 수 있으므로 위험성이 있으며 스토어에서 미납주문이 활성화된 경우에만 사용할 수 있습니다. 이 옵션은 주문형 재고를 쉽게 다시 채울 수 있는 스토어의 체크아웃 플로우에서 상당한 성능 향상을 가져올 수 있습니다. 사이트에서 지연된 주식 업데이트를 활성화하려면 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**(으)로 이동하십시오. 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [인벤토리 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)를 참조하십시오.
 
 >[!INFO]
 >
@@ -95,13 +95,13 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)은(는) `Developer` 모드를 지원하지 않습니다.
+>**[!UICONTROL Developer]** 탭과 옵션은 [개발자 모드](../configuration/cli/set-mode.md)에서만 사용할 수 있습니다. [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test)은(는) `Developer` 모드를 지원하지 않습니다.
 
 **[!UICONTROL Enable [!DNL JavaScript] Bundling]** 옵션을 활성화하면 Commerce에서 모든 JS 리소스를 상점 첫 페이지에 로드되는 하나 또는 번들 세트로 병합할 수 있습니다. JS를 번들링하면 서버에 대한 요청이 줄어들어 페이지 성능이 향상됩니다. 또한 브라우저가 JS 리소스를 첫 번째 호출에 캐시하고 이후의 모든 탐색에 다시 사용할 수 있도록 지원합니다. 또한 모든 JS가 텍스트로 로드되므로 이 옵션은 소극적 평가도 제공합니다. 페이지에서 특정 작업이 트리거된 후에만 코드 분석 및 평가를 시작합니다. 그러나 모든 JS 콘텐츠는 첫 번째 호출에서 로드되므로 첫 번째 페이지 로드 시간이 매우 중요한 저장소에는 이 설정이 권장되지 않습니다.
 
 >[!INFO]
 >
->CSS 및 Javascript 최적화에 대한 자세한 내용은 [리소스 파일 최적화](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files)를 참조하십시오.
+>CSS 및 Javascript 최적화에 대한 자세한 내용은 [리소스 파일 최적화](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md)를 참조하십시오.
 
 ### 번들링 팁 {#bundling-tips}
 

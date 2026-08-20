@@ -5,9 +5,9 @@ feature: Configuration, Inventory, Orders, Products
 role: Admin
 exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ ACSD-51238 패치는 구성 가능한 제품을 업데이트하고 가격을 편
 
 <u>재현 단계</u>:
 
-1. **[!DNL Adobe Commerce]**(으)로 **[!DNL Inventory module]** 설치
+1. **[!DNL Inventory module]**(으)로 **[!DNL Adobe Commerce]** 설치
 1. **[!UICONTROL Admin]** -> **[!UICONTROL Stores]** -> **[!UICONTROL Inventory]**(으)로 이동하여 *원본 두 개* 및 *재고 두 개*&#x200B;를 만듭니다.
 1. **[!UICONTROL configurable product]**&#x200B;을(를) 만들어 **[!UICONTROL default sources]** 또는 **[!UICONTROL newly created sources]**&#x200B;에 할당합니다.
 1. **[!UICONTROL next button]**&#x200B;을(를) 클릭하고 제품을 *저장*&#x200B;합니다.
-1. 이제 동일한 **[!UICONTROL Configurable Product]**&#x200B;을(를) 편집하고 **[!UICONTROL Edit Configuration]** 내부의 **[!UICONTROL Configuration tab]**&#x200B;을(를) 클릭합니다.
+1. 이제 동일한 **[!UICONTROL Configurable Product]**&#x200B;을(를) 편집하고 **[!UICONTROL Configuration tab]** 내부의 **[!UICONTROL Edit Configuration]**&#x200B;을(를) 클릭합니다.
 1. `Step 3: Bulk Images,Price and Quantity`에서 `price`을(를) 변경하고 `Quantity` 및 `Images`을(를) 각각 `Skip quantity at this time` 및 `Skip image uploading at this time`(으)로 둡니다.
 1. **[!UICONTROL next button]**&#x200B;을(를) 클릭하고 제품을 생성합니다.
 
@@ -56,15 +56,15 @@ ACSD-51238 패치는 구성 가능한 제품을 업데이트하고 가격을 편
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [&#x200B; 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[!UICONTROL Quality Patches Tool]
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]&#x200B;[&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [[!DNL Quality Patches Tool] 안내서에서 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko): 패치 검색[!DNL Quality Patches Tool]을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

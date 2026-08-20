@@ -3,7 +3,7 @@ title: 체크아웃 성능 모범 사례
 description: Adobe Commerce의 체크아웃 성능 모범 사례에 대해 알아봅니다. 구현 지침 및 최적화 전략을 살펴보십시오.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 0%
@@ -56,7 +56,7 @@ bin/magento setup:config:set --checkout-async 1
    ]
 ```
 
-_모듈 참조 안내서_&#x200B;에서 [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)을(를) 참조하십시오.
+_모듈 참조 안내서_&#x200B;에서 [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order)을(를) 참조하십시오.
 
 **AsyncOrder를 사용하지 않도록 설정하려면**:
 
@@ -162,7 +162,7 @@ bin/magento setup:config:set --deferred-total-calculating 0
    ]
 ```
 
-_모듈 참조 안내서_&#x200B;에서 [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/)을(를) 참조하십시오.
+_모듈 참조 안내서_&#x200B;에서 [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating)을(를) 참조하십시오.
 
 ### 고정 제품세
 
@@ -180,7 +180,7 @@ _장바구니 로드 시 인벤토리 사용_ 전역 설정은 장바구니에�
 
 MySQL 데이터베이스 및 Redis 인스턴스에 대한 보조 연결을 활성화하면 서로 다른 노드에 대한 로드 밸런스를 조정할 수 있습니다.
 
-Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 `.magento.env.yaml` 파일의 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) 값을 편집하여 보조 연결을 구성할 수 있습니다. 읽기-쓰기 트래픽을 처리하는 노드는 하나뿐이므로 변수를 `true`(으)로 설정하면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. `env.php` 파일에서 기존 읽기 전용 연결 배열을 제거하려면 값을 `false`(으)로 설정하십시오.
+Adobe Commerce은 여러 데이터베이스 또는 Redis 인스턴스를 비동기식으로 읽을 수 있습니다. 클라우드 인프라에서 Commerce을 사용하는 경우 `.magento.env.yaml` 파일의 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) 및 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) 값을 편집하여 보조 연결을 구성할 수 있습니다. 읽기-쓰기 트래픽을 처리하는 노드는 하나뿐이므로 변수를 `true`(으)로 설정하면 읽기 전용 트래픽에 대한 보조 연결이 만들어집니다. `env.php` 파일에서 기존 읽기 전용 연결 배열을 제거하려면 값을 `false`(으)로 설정하십시오.
 
 `.magento.env.yaml` 파일의 예:
 

@@ -5,10 +5,10 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: c4a93063-b640-444e-ba0e-552dd8d1895b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 1%
 
 ---
 
@@ -47,29 +47,29 @@ Adobe Commerce(모든 배포 방법) 2.4.7 - 2.4.7-p3
 
    * 규칙 1:
 
-      * *[!UICONTROL Priority]*: 100
-      * *[!UICONTROL Conditions]* 탭: 총 수량이 3보다 크거나 같은 경우 simple2($280) 제품을 사용합니다.
-      * *[!UICONTROL Actions]* 탭: SKU는 단순2
-      * *[!UICONTROL Fixed Amount Discount]*: $80
+     * *[!UICONTROL Priority]*: 100
+     * *[!UICONTROL Conditions]* 탭: 총 수량이 3보다 크거나 같은 경우 simple2($280) 제품을 사용합니다.
+     * *[!UICONTROL Actions]* 탭: SKU는 단순2
+     * *[!UICONTROL Fixed Amount Discount]*: $80
 
    * 규칙 2:
 
-      * *[!UICONTROL Priority]*: 200
-      * *[!UICONTROL Actions]* 탭: SKU는 단순2
-      * *[!UICONTROL Percentage of Product Price Discount]*: 20%
+     * *[!UICONTROL Priority]*: 200
+     * *[!UICONTROL Actions]* 탭: SKU는 단순2
+     * *[!UICONTROL Percentage of Product Price Discount]*: 20%
 
    * 규칙 3:
 
-      * *[!UICONTROL Priority]*: 300
-      * *[!UICONTROL Conditions]* 탭: 소계가 $1000보다 크거나 같음
-      * 전체 장바구니에 대한 *[!UICONTROL Fixed Amount Discount]*: $100
+     * *[!UICONTROL Priority]*: 300
+     * *[!UICONTROL Conditions]* 탭: 소계가 $1000보다 크거나 같음
+     * 전체 장바구니에 대한 *[!UICONTROL Fixed Amount Discount]*: $100
 
    * 규칙 4:
 
-      * *[!UICONTROL Priority]*: 400
-      * *[!UICONTROL Conditions]* 탭: 총 수량이 2보다 크거나 같은 경우 simple1($1080) 제품을 사용합니다.
-      * *[!UICONTROL Actions]* 탭: SKU는 simple1입니다.
-      * 전체 장바구니에 대한 *[!UICONTROL Fixed Amount Discount]*: $960
+     * *[!UICONTROL Priority]*: 400
+     * *[!UICONTROL Conditions]* 탭: 총 수량이 2보다 크거나 같은 경우 simple1($1080) 제품을 사용합니다.
+     * *[!UICONTROL Actions]* 탭: SKU는 simple1입니다.
+     * 전체 장바구니에 대한 *[!UICONTROL Fixed Amount Discount]*: $960
 
 1. 상점으로 이동하여 주어진 수량의 다음 제품을 장바구니에 추가합니다.
 
@@ -91,8 +91,8 @@ Adobe Commerce(모든 배포 방법) 2.4.7 - 2.4.7-p3
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 
 ## 관련 읽기
