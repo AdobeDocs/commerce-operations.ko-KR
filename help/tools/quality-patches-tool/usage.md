@@ -4,9 +4,9 @@ description: 품질 패치 도구 를 사용하여 Adobe Commerce에 대한 패�
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches)은(는) Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 버전에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 누가 패치를 개발했는지에 관계없이 Adobe Commerce 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
-이 [기술 비디오](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=ko)를 시청하고 Adobe Commerce용 품질 패치 도구를 사용하는 방법을 알아보십시오.
+이 [기술 비디오](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html)를 시청하고 Adobe Commerce용 품질 패치 도구를 사용하는 방법을 알아보십시오.
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [개별 패치 적용](#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [개별 패치 적용](#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!WARNING]
 >
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 상태 테이블에는 다음이 포함됩니다.
 
 - **유형**:
-   - `Optional` — [!DNL Quality Patches Tool] 및 [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko) 패키지의 모든 패치는 Adobe Commerce 설치에 선택 사항입니다.
-   - `Deprecated` — Adobe에서 개별 패치를 더 이상 사용하지 않습니다. 패치를 적용한 경우에는 되돌리는 것이 좋습니다. 되돌리기 작업도 상태 테이블에서 패치를 제거합니다.
+  - `Optional` — [!DNL Quality Patches Tool] 및 [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) 패키지의 모든 패치는 Adobe Commerce 설치에 선택 사항입니다.
+  - `Deprecated` — Adobe에서 개별 패치를 더 이상 사용하지 않습니다. 패치를 적용한 경우에는 되돌리는 것이 좋습니다. 되돌리기 작업도 상태 테이블에서 패치를 제거합니다.
 
 - **상태**:
-   - `Applied` — 패치가 적용되었습니다.
-   - `Not applied` — 패치가 적용되지 않았습니다.
-   - `N/A` — 충돌로 인해 패치 상태를 정의할 수 없습니다.
+  - `Applied` — 패치가 적용되었습니다.
+  - `Not applied` — 패치가 적용되지 않았습니다.
+  - `N/A` — 충돌로 인해 패치 상태를 정의할 수 없습니다.
 
 - **세부 정보**:
-   - `Affected components` — 영향을 받는 모듈 목록입니다.
-   - `Required patches` — 표시된 패치가 제대로 작동하기 위해 적용해야 하는 패치 목록(종속성).
-   - `Recommended replacement` — 더 이상 사용되지 않는 패치의 권장 대체 패치입니다.
+  - `Affected components` — 영향을 받는 모듈 목록입니다.
+  - `Required patches` — 표시된 패치가 제대로 작동하기 위해 적용해야 하는 패치 목록(종속성).
+  - `Recommended replacement` — 더 이상 사용되지 않는 패치의 권장 대체 패치입니다.
 
 >[!INFO]
 >
@@ -83,7 +83,7 @@ Adobe Commerce 2.3.5.
 
 >[!WARNING]
 >
->프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 또한 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=ko)을 참조하십시오.
+>프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 또한 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)을 참조하십시오.
 
 단일 패치를 적용하려면 다음 명령을 실행합니다. 여기서 `MAGETWO-XXXX`은(는) 상태 표에 지정된 패치 ID입니다.
 
@@ -111,7 +111,7 @@ Adobe Commerce 애플리케이션에서 변경 사항을 보려면 패치를 적
 
 >[!WARNING]
 >
->프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 또한 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=ko)을 참조하십시오.
+>프로덕션에 배포하기 전에 스테이징 또는 개발 환경에서 모든 패치를 테스트하는 것이 좋습니다. 또한 패치를 적용하기 전에 데이터를 백업하는 것이 좋습니다. [파일 시스템, 미디어 및 데이터베이스 백업 및 롤백](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)을 참조하십시오.
 
 단일 패치를 되돌리려면 다음 명령을 실행합니다. 여기서 `MAGETWO-XXXX`은(는) 상태 표에 지정된 패치 ID입니다.
 

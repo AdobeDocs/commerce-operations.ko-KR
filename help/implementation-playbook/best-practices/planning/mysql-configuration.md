@@ -4,9 +4,9 @@ description: MySQL 트리거 및 슬레이브 연결이 Commerce 사이트 성�
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 - 트리거가 실행될 때 일부 데이터를 작성하는 사용자 지정 트리거가 있는 경우 이 논리를 이동하여 감사 테이블에 직접 작성합니다. 예를 들어, 트리거를 만들려는 쿼리 뒤에 애플리케이션 코드에 쿼리를 추가하여 추가합니다.
 - 기존 사용자 지정 트리거를 검토하고 이를 제거하여 애플리케이션 측에서 테이블에 직접 작성하는 것이 좋습니다. [`SHOW TRIGGERS` SQL 문](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)을(를) 사용하여 데이터베이스에서 기존 트리거를 확인합니다.
-- 추가 지원, 질문 또는 우려 사항은 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko&#submit-ticket)하십시오.
+- 추가 지원, 질문 또는 우려 사항은 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)하십시오.
 
 ## 슬레이브 연결
 
@@ -62,7 +62,7 @@ MYSQL 슬레이브 연결을 활성화하면 Adobe Commerce은 데이터베이�
 
 ### 구성
 
-클라우드 인프라의 Adobe Commerce에서 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ko#mysql_use_slave_connection) 변수를 설정하여 MYSQL 슬레이브 연결에 대한 기본 구성을 재정의할 수 있습니다. 데이터베이스에 대한 읽기 전용 연결을 자동으로 사용하려면 이 변수를 `true`(으)로 설정하십시오.
+클라우드 인프라의 Adobe Commerce에서 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) 변수를 설정하여 MYSQL 슬레이브 연결에 대한 기본 구성을 재정의할 수 있습니다. 데이터베이스에 대한 읽기 전용 연결을 자동으로 사용하려면 이 변수를 `true`(으)로 설정하십시오.
 
 **MySQL 슬레이브 연결을 사용하도록 설정하려면**:
 

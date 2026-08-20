@@ -2,7 +2,7 @@
 title: 번역 사전 및 언어 패키지
 description: Adobe Commerce용 번역 사전을 생성하고 언어 패키지를 빌드하는 방법에 대해 알아봅니다. 로컬라이제이션 및 다국어 스토어 설정을 살펴보십시오.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Commerce 번역을 사용하면 다음을 생성하여 여러 지역 및 시장�
 
 1. 번역 사전을 언어 패키지로 패키징하고 이 패키지를 Commerce 스토어 관리자에게 제공할 수 있습니다.
 
-1. 관리자 [저장소 관리자가 번역을 구성](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-localize)합니다.
+1. 관리자 [저장소 관리자가 번역을 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)합니다.
 
 명령 옵션:
 
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 필수 라이선스 파일
 - `composer.json`
-- 언어 패키지를 [등록](https://developer.adobe.com/commerce/php/development/build/component-registration/)하는 `registration.php`
+- 언어 패키지를 [등록](https://developer.adobe.com/commerce/php/development/build/component-registration)하는 `registration.php`
 - [`language.xml`](#language-package-languagexml) 메타 정보 파일
 
 >[!INFO]
@@ -131,8 +131,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    예를 들어 Commerce 언어 패키지는 `app/i18n/magento`에 있습니다
 
 1. 필요한 라이선스 파일을 추가합니다.
-1. 언어 패키지에 대한 종속성을 지정하는 [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/)을(를) 추가합니다.
-1. 언어 패키지를 [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)에 등록
+1. 언어 패키지에 대한 종속성을 지정하는 [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration)을(를) 추가합니다.
+1. 언어 패키지를 [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)에 등록
 1. 다음 섹션에서 설명한 대로 `language.xml` 메타 정보 파일을 추가합니다.
 
 #### 언어 패키지 language.xml

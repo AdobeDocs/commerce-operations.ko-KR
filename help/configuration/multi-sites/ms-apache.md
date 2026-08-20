@@ -2,9 +2,9 @@
 title: Apache를 사용하여 여러 웹 사이트 설정
 description: Apache를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
   호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 
-  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ko)의 _여러 웹 사이트 또는 스토어 설정_&#x200B;을 참조하십시오.
+  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
 - 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`입니다.
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 - Commerce 소프트웨어가 `/var/www/html/magento2`에 설치되어 있습니다.
 - 기본 이외의 두 개의 웹 사이트가 있습니다.
 
-   - `french.mysite.mg`(웹 사이트 코드 `french` 및 스토어 보기 코드 `fr` 포함)
-   - `german.mysite.mg`(웹 사이트 코드 `german` 및 스토어 보기 코드 `de` 포함)
+  - `french.mysite.mg`(웹 사이트 코드 `french` 및 스토어 보기 코드 `fr` 포함)
+  - `german.mysite.mg`(웹 사이트 코드 `german` 및 스토어 보기 코드 `de` 포함)
 
 ## Apache를 사용하여 여러 웹 사이트를 설정하는 로드맵
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 2단계: Apache 가상 호스트 생성
 
-이 섹션에서는 가상 호스트에서 Apache 서버 변수 `MAGE_RUN_TYPE`을(를) 사용하여 `MAGE_RUN_CODE` 및 `SetEnvIf`에 대한 값을 설정하는 방법에 대해 설명합니다.
+이 섹션에서는 가상 호스트에서 Apache 서버 변수 `SetEnvIf`을(를) 사용하여 `MAGE_RUN_TYPE` 및 `MAGE_RUN_CODE`에 대한 값을 설정하는 방법에 대해 설명합니다.
 
 `SetEnvIf`에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
->- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=ko)의 _여러 클라우드 웹 사이트 또는 스토어 설정_&#x200B;을 참조하십시오.
+>- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 클라우드 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
 ### 문제 해결
 

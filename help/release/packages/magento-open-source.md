@@ -4,14 +4,14 @@ description: Magento Open Source에서 사용되는 모든 종속성 및 서드�
 recommendations: noCatalog
 exl-id: 41f875af-9d65-4d4f-af5c-6ad887eeaf0d
 last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 2ae582ff307b3660b3e7dc80657b6eb1754fbde7
 workflow-type: tm+mt
-source-wordcount: '20'
+source-wordcount: '21'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce 패키지
+# Magento Open Source 패키지
 
 {{$include /help/_includes/templated/release/packages/open-source.md}}
 

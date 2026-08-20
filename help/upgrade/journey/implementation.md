@@ -2,9 +2,9 @@
 title: 구현 업그레이드
 description: Adobe Commerce 프로젝트에 대한 다양한 업그레이드 구현 단계에 대해 알아봅니다.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 - **[!DNL Upgrade Compatibility Tool]개의 결과**—이 도구를 사용하면 현재 코드와 대상 버전의 코드를 비교하고 해결해야 하는 모든 문제에 대한 보고서를 만들어 모든 업그레이드를 더 빠르고 쉽게 수행할 수 있습니다. [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)을(를) 참조하세요. 보고서의 주요 세부 사항은 다음과 같습니다.
 
-   - 현재 설치된 버전
-   - 대상 버전 업그레이드
-   - 발견된 중요 오류 번호 및 세부 정보
+  - 현재 설치된 버전
+  - 대상 버전 업그레이드
+  - 발견된 중요 오류 번호 및 세부 정보
 
   >[!TIP]
   >
@@ -88,4 +88,4 @@ UAT는 사이트를 검토하고 유효성을 검사해야 하는 업그레이�
 
 사이트 시작 후에는 분석 데이터, Google 검색 콘솔 및 기타 리소스를 확인하여 예기치 않은 문제가 없고 모든 것이 예상대로 작동하는지 확인하십시오.
 
-잘 설계된 모니터링 도구를 통해 성능을 주시하는 것은 항상 좋은 생각입니다. 사이트 성능을 모니터링하는 많은 도구와 수단이 있으므로 조직과 적절한 도구를 선택하십시오. 클라우드 인프라 관리 시스템을 사용하는 Adobe Commerce 고객은 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ko)와 같은 서비스를 이용하여 사이트 성능을 모니터링하는 것이 좋습니다.
+잘 설계된 모니터링 도구를 통해 성능을 주시하는 것은 항상 좋은 생각입니다. 사이트 성능을 모니터링하는 많은 도구와 수단이 있으므로 조직과 적절한 도구를 선택하십시오. 클라우드 인프라 관리 시스템을 사용하는 Adobe Commerce 고객은 [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)와 같은 서비스를 이용하여 사이트 성능을 모니터링하는 것이 좋습니다.

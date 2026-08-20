@@ -3,9 +3,9 @@ title: 배포 개요
 description: Commerce 애플리케이션의 배포 전략에 대해 알아보십시오.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Commerce 버전 2.2에서 Adobe은 가동 중지 시간을 최소화하면서 �
 
 - **스테이징 시스템**—_선택 사항_. UAT(사용자 수락 테스트)를 포함하여 모든 통합 코드의 최종 테스트에 사용할 스테이징 시스템을 선택적으로 설정할 수 있습니다. 프로덕션 시스템을 설정하는 것과 동일한 방식으로 스테이징 시스템을 설정합니다. 스테이징이 라이브 스토어가 아니며 고객의 주문을 처리하지 않는다는 점을 제외하면 프로덕션과 동일합니다.
 
-- **프로덕션 시스템**—라이브 스토어. 여기에서 직접 구성을 최소한으로 변경해야 하며 스테이징 인스턴스에서 테스트하지 않은 것은 확실히 없습니다. 가능한 경우 스테이징/개발 인스턴스에서 테스트한 [데이터 패치](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)를 사용하여 구성을 변경합니다.
+- **프로덕션 시스템**—라이브 스토어. 여기에서 직접 구성을 최소한으로 변경해야 하며 스테이징 인스턴스에서 테스트하지 않은 것은 확실히 없습니다. 가능한 경우 스테이징/개발 인스턴스에서 테스트한 [데이터 패치](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches)를 사용하여 구성을 변경합니다.
 
 ## 기타 배포 방법
 
@@ -76,6 +76,6 @@ Dell은 시스템 구성을 동기화하는 방법을 제공합니다.
 >
 >구성을 관리하는 이러한 새로운 방법은 선택 사항입니다. 반드시 사용해야 하는 것은 아니지만 반드시 사용하는 것이 좋습니다.
 
-대부분의 경우 공유, 시스템별 또는 중요 구성에서 설정한 구성 옵션은 관리자에서 편집할 수 없습니다. 이렇게 하면 모든 시스템에서 설정이 일관되게 유지됩니다. ([`magento config:set` 옵션 없이 선택적으로 &#x200B;](../cli/set-configuration-values.md) 명령`--lock`을(를) 사용하여 관리자에서 편집할 수 있는 설정을 구성할 수 있습니다.)
+대부분의 경우 공유, 시스템별 또는 중요 구성에서 설정한 구성 옵션은 관리자에서 편집할 수 없습니다. 이렇게 하면 모든 시스템에서 설정이 일관되게 유지됩니다. (`--lock` 옵션 없이 선택적으로 [`magento config:set` 명령](../cli/set-configuration-values.md)을(를) 사용하여 관리자에서 편집할 수 있는 설정을 구성할 수 있습니다.)
 
 각 Commerce 구성 옵션에는 고유한 _구성 경로_&#x200B;가 있습니다. 구성 옵션의 값을 설정하려면 CLI 명령 또는 환경 변수를 사용하여 특정 시스템의 해당 구성 경로에 대한 값을 설정할 수 있습니다.

@@ -2,23 +2,23 @@
 title: 업그레이드 범위 이해
 description: Adobe Commerce 사용자 지정 모듈 또는 타사 확장에 영향을 줄 수 있는 릴리스의 이전 버전과 호환되지 않는 변경 사항에 대해 알아봅니다.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # 업그레이드 범위 이해
 
-개선 사항, 버그 수정 및 서드파티 및 사용자 지정 모듈에 영향을 줄 수 있는 알려진 문제를 포함하여 릴리스의 범위를 이해하려면 [릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/overview)를 검토하십시오.
+개선 사항, 버그 수정 및 서드파티 및 사용자 지정 모듈에 영향을 줄 수 있는 알려진 문제를 포함하여 릴리스의 범위를 이해하려면 [릴리스 정보](/help/release/release-notes/overview.md)를 검토하십시오.
 
 ## 이전 버전과 호환 불가능한 변경 사항
 
 Adobe Commerce 릴리스에는 이전 버전과 호환 불가능한 변경 사항이 포함될 수 있습니다. 이전 버전과 호환 불가능한 변경 사항 설명서를 검토하고 다음을 참조하십시오.
 
 - **[주요 변경 내용 강조 표시](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)**—중요한 영향을 미치는 변경 내용으로 서드파티 모듈이 계속 작동하도록 하려면 자세한 설명과 특수 지침이 필요합니다.
-- **[부분 변경 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)**—클래스, API 멤버십, 데이터베이스, 종속성 삽입, 인터페이스, 레이아웃, 시스템 및 XSD에 대한 부분 변경 사항을 설명하는 코드 베이스에서 생성된 참조 설명서입니다.
+- **[부분 변경 참조](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)**—클래스, API 멤버십, 데이터베이스, 종속성 삽입, 인터페이스, 레이아웃, 시스템 및 XSD에 대한 부분 변경 사항을 설명하는 코드 베이스에서 생성된 참조 설명서입니다.
 
 ## 타사 확장
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace의 새 호환성 정책은 _모든_ 나열된 확장�
 
 ## 사용자 정의 모듈
 
-모든 사용자 지정 모듈은 업그레이드하려는 대상 버전에 대해 확인해야 합니다. 이는 업그레이드에 소요되는 시간과 자원이 가장 많은 프로세스입니다. 사용자 정의 모듈을 평가할 때는 이전 버전과 호환되지 않는 변경 사항을 찾고 컨트롤러 분해와 같은 새로운 방법을 알고 있어야 합니다. 이에 대한 자세한 내용은 [릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/overview)를 참조하세요. 또한 모듈 개발을 위해 [모범 사례](https://developer.adobe.com/commerce/php/best-practices/extensions/)를 따르고 있는지 확인하십시오.
+모든 사용자 지정 모듈은 업그레이드하려는 대상 버전에 대해 확인해야 합니다. 이는 업그레이드에 소요되는 시간과 자원이 가장 많은 프로세스입니다. 사용자 정의 모듈을 평가할 때는 이전 버전과 호환되지 않는 변경 사항을 찾고 컨트롤러 분해와 같은 새로운 방법을 알고 있어야 합니다. 이에 대한 자세한 내용은 [릴리스 정보](/help/release/release-notes/overview.md)를 참조하세요. 또한 모듈 개발을 위해 [모범 사례](https://developer.adobe.com/commerce/php/best-practices/extensions/)를 따르고 있는지 확인하십시오.
 
 ## [!DNL Upgrade Compatibility Tool]
 

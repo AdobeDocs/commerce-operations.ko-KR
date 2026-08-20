@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트의 계획 단계에 대한 구현 모�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,11 @@ ht-degree: 1%
     <td>Adobe Commerce 사이트에 대한 5가지 가장 일반적인 구성 문제를 수정하고 방지합니다.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ko">캐싱</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">캐싱</a></td>
     <td>캐시 관리 도구를 사용하여 사이트의 성능을 향상시킵니다.</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">전체 페이지 캐싱</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">전체 페이지 캐싱</a></td>
     <td>Adobe Commerce 확장에서 캐싱을 구현할 때 공용 데이터로 작업하는 방법을 알아봅니다.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>서비스 구성</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=ko">Fastly 설정</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Fastly 설정</a></td>
     <td>클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 Fastly 서비스를 구성합니다.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=ko">New Relic에 대한 알림 채널 구성</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">New Relic에 대한 알림 채널 구성</a></td>
     <td>New Relic 대시보드에 액세스하고 Adobe Commerce on cloud infrastructure 프로젝트에서 데이터를 분석합니다.</td>
   </tr>
   <tr>
