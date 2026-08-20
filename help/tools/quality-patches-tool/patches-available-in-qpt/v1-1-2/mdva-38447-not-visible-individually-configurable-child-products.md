@@ -50,30 +50,30 @@ B2B 모듈을 설치해야 합니다.
   $search: 문자열
   $pageSize: 정수!
   $currentPage: Int!
-) {
+) &lbrace;
   products(
     필터: $filter
     정렬: $sort
     검색: $search
     pageSize: $pageSize
     currentPage: $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    항목 {
+    &rbrace;
+    항목 &lbrace;
       이름
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 변수:
 
-<pre>{"filter":{"user_group":{"eq":"}},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
+<pre>{"filter":{"user_group":{"eq":"}&#x200B;},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
 </pre>
 
 <u>예상 결과</u>:
