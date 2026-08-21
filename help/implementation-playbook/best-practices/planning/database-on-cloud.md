@@ -4,7 +4,7 @@ description: 클라우드 인프라에 Adobe Commerce을 배포할 때 성능을
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### 스토리지 엔진을 InnoDB로 변경
 
-테이블을 선언하는 `db_schema.xml` 파일에서 해당 `table` 노드의 `engine` 특성 값을 `innodb`(으)로 설정합니다. 참조용으로 개발자 설명서에서 [선언적 스키마 구성 > 테이블 노드](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)를 참조하십시오.
+테이블을 선언하는 `db_schema.xml` 파일에서 해당 `table` 노드의 `engine` 특성 값을 `innodb`(으)로 설정합니다. 참조용으로 개발자 설명서에서 [선언적 스키마 구성 > 테이블 노드](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)를 참조하십시오.
 
 선언적 스키마는 Adobe Commerce on cloud infrastructure 버전 2.3에서 도입되었습니다.
 
@@ -59,9 +59,9 @@ Adobe에서는 Adobe Commerce 애플리케이션에 대한 서드파티 검색 �
 
 구성 지침은 Adobe Commerce on cloud 개발자 안내서 를 참조하십시오.
 
-- [OpenSearch 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [OpenSearch 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Elasticsearch 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Elasticsearch 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## 사용자 지정 트리거 방지
 
@@ -76,14 +76,14 @@ Adobe에서는 Adobe Commerce 애플리케이션에 대한 서드파티 검색 �
 
 ## [!DNL ECE-Tools]을(를) 버전 2002.0.21 이상으로 업그레이드 {#ece-tools-version}
 
-cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를 버전 2002.0.21 이상으로 업그레이드하십시오. 자세한 내용은 개발자 설명서에서 [`ece-tools` 버전 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.
+cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를 버전 2002.0.21 이상으로 업그레이드하십시오. 자세한 내용은 개발자 설명서에서 [`ece-tools` 버전 업데이트](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.
 
 ## 인덱서 모드를 안전하게 전환
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 인덱서를 전환하면 [!DNL data definition language]&#x200B;(DDL) 문이 생성되어 트리거가 발생하여 데이터베이스가 잠길 수 있습니다. 구성을 변경하기 전에 웹 사이트를 유지 관리 모드로 전환하고 cron 작업을 비활성화하여 이 문제를 방지할 수 있습니다.
-자세한 내용은 *Adobe Commerce 구성 가이드*&#x200B;에서 [인덱서 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ko#configure-indexers-1)을 참조하십시오.
+자세한 내용은 *Adobe Commerce 구성 가이드*&#x200B;에서 [인덱서 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)을 참조하십시오.
 
 ## 프로덕션에서 DDL 문 실행 안 함
 
@@ -95,7 +95,7 @@ DDL 문을 실행해야 하는 경우 웹 사이트를 유지 관리 모드로 �
 
 관리자의 주문 보관을 사용하면 주문 데이터가 증가할 때 판매 테이블에 필요한 공간을 줄일 수 있습니다. 보관을 사용하면 MySQL 디스크 공간이 절약되고 체크아웃 성능이 향상됩니다.
 
-Adobe Commerce 판매자 설명서의 [보관 사용](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=ko)을 참조하십시오.
+Adobe Commerce 판매자 설명서의 [보관 사용](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html)을 참조하십시오.
 
 ## 추가 정보
 

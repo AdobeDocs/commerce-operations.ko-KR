@@ -4,7 +4,7 @@ description: 장바구니 제한 및 제품 속성 구성, 페이지 매김, 옵
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -100,7 +100,7 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 
 #### 속성 집합 구성 검토
 
-1. [사이트 데이터베이스에 연결](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [사이트 데이터베이스에 연결](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. MySQL을 사용하여 속성 세트 수 찾기
 
@@ -179,7 +179,7 @@ MySQL을 사용하여 사용되지 않은 제품 속성 집합을 제거합니�
 
 범주에 제품이 너무 많으면 상점 카탈로그 구성을 업데이트하여 **페이지당 모든 제품 허용** 옵션을 비활성화하십시오.
 
-이 옵션을 비활성화하면 Adobe Commerce은 제품 목록 상점 페이지 매김 컨트롤을 사용하여 상점 첫 번째 구성 요소에 표시되는 제품 수를 관리합니다. 자세한 내용은 [페이지 매김 컨트롤 구성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=ko#configure-the-pagination-controls)을 참조하십시오.
+이 옵션을 비활성화하면 Adobe Commerce은 제품 목록 상점 페이지 매김 컨트롤을 사용하여 상점 첫 번째 구성 요소에 표시되는 제품 수를 관리합니다. 자세한 내용은 [페이지 매김 컨트롤 구성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls)을 참조하십시오.
 
 ## 제품 SKU 제한
 

@@ -3,10 +3,10 @@ title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-17T00:00:00Z
-source-git-commit: 7ba189685721799de047bc8d0e7108fa512f7120
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1353'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Adobe은 고객이 Adobe Commerce에 대해 3년 또는 연장된 지원 기간�
 
 GA(General Availability) 날짜로부터 3년의 표준 지원 기간. 표준 지원에는 품질 수정 사항, 보안 패치 및 전체 Adobe Commerce On-call 지원이 포함됩니다.
 
-- **품질 수정** - 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 통해 품질 수정 사항에 액세스할 수 있습니다.
+- **품질 수정** - 고객은 [Adobe Commerce 지원](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)에 문의하거나 셀프서비스 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 통해 품질 수정 사항에 액세스할 수 있습니다.
 
 - **보안 수정 사항** - Adobe은 3년 지원 기간 동안 누적 보안 패치와 비누적 [격리된 보안 패치 파일](versioning-policy.md#isolated-security-patch-file)을 통해 보안 수정 사항을 제공합니다.
 
@@ -199,7 +199,7 @@ Adobe은 고객이 가능한 한 빨리 업그레이드하도록 권장합니다
 - AI 기반 머천다이징, 구성 가능한 상점 아키텍처 및 기본 Adobe Experience Cloud 통합과 같은 Adobe의 최신 기능에 액세스할 수 있습니다.
 - 반복되는 업그레이드 주기를 제거합니다.
 
-Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. 제품 개요는 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/ko/docs/commerce/cloud-service/overview)을 참조하세요.
+Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. 제품 개요는 [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)을 참조하세요.
 
 ### 대체 경로: 지원되는 Adobe Commerce on cloud 또는 온프레미스 릴리스로 업그레이드
 

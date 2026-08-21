@@ -4,7 +4,7 @@ description: Adobe Commerce 프로젝트의 개발 단계에 대한 코드 검�
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 PhpStorm 검사를 실행하여 스타일을 자동으로 테스트할 수 있습니다(아래 참조).
 
-[PHPMD 및 PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/)을(를) 구성하고 CLI에서 [코딩 표준](https://github.com/magento/magento-coding-standard) 도구를 실행하십시오(아래). 겹치는 부분이 있지만 두 가지 모두 독특한 검사도 있다.
+[PHPMD 및 PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection)을(를) 구성하고 CLI에서 [코딩 표준](https://github.com/magento/magento-coding-standard) 도구를 실행하십시오(아래). 겹치는 부분이 있지만 두 가지 모두 독특한 검사도 있다.
 
 ### 규칙 및 구조
 

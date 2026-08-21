@@ -2,7 +2,7 @@
 title: 고급 설정
 description: Adobe Commerce의 고급 설정 방법을 알아봅니다. 단계별 지침 및 구성 요구 사항을 살펴보십시오.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 많은 수의 제품 SKU, 웹 사이트, 고객 그룹 또는 공유 카탈로그는 제품 가격 및 카탈로그 규칙 인덱서의 실행 시간에 영향을 줍니다. 기본적으로 모든 웹 사이트가 모든 고객 그룹(공유 카탈로그)에 할당되기 때문입니다.
 
-색인 지정 시간을 줄이기 위해 [고객 그룹(공유 카탈로그)에서 특정 웹 사이트를 제외](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites)할 수 있습니다.
+색인 지정 시간을 줄이기 위해 [고객 그룹(공유 카탈로그)에서 특정 웹 사이트를 제외](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites)할 수 있습니다.
 
 ## Redis 설정
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 이 명령은 구성 변경을 수행하지만 복제 자체는 구성하지 않습니다. 수동으로 수행해야 합니다.
 
-마스터 데이터베이스를 분할하고 슬레이브 데이터베이스를 설정한 후 [!DNL Commerce]은(는) 요청 유형(POST, PUT, GET 등) 및 데이터 리소스를 기반으로 결정을 내리면서 특정 데이터베이스에 대한 연결을 자동으로 조절합니다. [!DNL Commerce] 또는 해당 확장이 GET 요청에 대해 쓰기 작업을 수행하는 경우 시스템에서 연결을 슬레이브에서 마스터 데이터베이스로 자동으로 전환합니다. 이 방법은 마스터 데이터베이스와 같은 방식으로 작동합니다. 체크아웃 관련 테이블을 사용하는 즉시 시스템은 모든 쿼리를 특정 데이터베이스로 리디렉션합니다. 한편 모든 카탈로그 관련 쿼리는 기본 데이터베이스로 이동합니다.
+마스터 데이터베이스를 분할하고 슬레이브 데이터베이스를 설정한 후 [!DNL Commerce]은(는) 요청 유형(POST, PUT, GET 등) 및 데이터 리소스를 기반으로 특정 데이터베이스에 대한 연결을 자동으로 조절합니다. [!DNL Commerce] 또는 해당 확장에서 GET 요청에 대해 쓰기 작업을 수행하는 경우 시스템에서 연결을 슬레이브에서 마스터 데이터베이스로 자동으로 전환합니다. 이 방법은 마스터 데이터베이스와 같은 방식으로 작동합니다. 체크아웃 관련 테이블을 사용하는 즉시 시스템은 모든 쿼리를 특정 데이터베이스로 리디렉션합니다. 한편 모든 카탈로그 관련 쿼리는 기본 데이터베이스로 이동합니다.
 
 구성 및 여러 마스터/슬레이브 구성의 이점에 대한 자세한 내용은
 [데이터베이스 성능 솔루션 분할](../configuration/storage/multi-master.md).

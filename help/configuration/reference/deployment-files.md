@@ -3,9 +3,9 @@ title: 배포용 구성 파일
 description: Adobe Commerce 애플리케이션 배포에 대한 구성 파일의 작동 방식에 대해 알아봅니다. 공유 및 시스템별 구성 관리 모범 사례를 살펴봅니다.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Adobe Commerce은 구성 요소를 쉽게 사용자 정의하고 구성 유형�
 
 >[!INFO]
 >
->[!DNL Commerce 2] 배포 구성은 `local.xml`의 [!DNL Magento 1.x]을(를) 대체합니다.
+>[!DNL Commerce 2] 배포 구성은 [!DNL Magento 1.x]의 `local.xml`을(를) 대체합니다.
 
 다른 [모듈 구성 파일](../reference/module-files.md)과 달리 Commerce 배포 구성은 초기화 중에 메모리에 로드되며 다른 파일과 병합되지 않으며 확장할 수 없습니다. (`config.php`과(와) `env.php`은(는) 서로 병합됩니다.)
 
@@ -51,7 +51,7 @@ Adobe Commerce은 구성 요소를 쉽게 사용자 정의하고 구성 유형�
 예:
 
 - 구성 요소 제거: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 구성 요소 상태 확인: [`bin/magento module:status`](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- 구성 요소 상태 확인: [`bin/magento module:status`](/help/tools/reference/commerce-on-premises.md#modulestatus)
 - 구성 요소 [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)을(를) 활성화하거나 비활성화합니다.
 
 > _config.php_

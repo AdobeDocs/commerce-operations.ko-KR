@@ -5,20 +5,12 @@ feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
 autotag-review: '2026-06-22T21:50:49.341Z'
 TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: 1077
 ht-degree: 0%
@@ -33,7 +25,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->프로덕션에서 바니시를 사용하는 것이 _좋습니다_. 파일 시스템 또는 [데이터베이스](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)에 대한 기본 제공 전체 페이지 캐싱은 Vannish보다 훨씬 느리며 Vannish는 HTTP 트래픽을 가속화하도록 설계되었습니다.
+>프로덕션에서 바니시를 사용하는 것이 _좋습니다_. 파일 시스템 또는 [데이터베이스](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching)에 대한 기본 제공 전체 페이지 캐싱은 Vannish보다 훨씬 느리며 Vannish는 HTTP 트래픽을 가속화하도록 설계되었습니다.
 
 Varnish에 대한 자세한 내용은 다음을 참조하십시오.
 
