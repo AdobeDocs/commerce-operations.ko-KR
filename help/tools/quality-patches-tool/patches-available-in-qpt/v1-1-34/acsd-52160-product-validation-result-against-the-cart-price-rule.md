@@ -3,16 +3,16 @@ title: 'ACSD-52160: 장바구니 가격 규칙에 대한 제품 유효성 검사
 description: ACSD-52160 패치를 적용하여 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 규칙 조건 *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*에 따라 제대로 평가되지 않는 Adobe Commerce 문제를 해결합니다.
 exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
 # ACSD-52160: 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 제대로 평가되지 않음
 
-ACSD-52160 패치는 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 규칙 조건 *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*&#x200B;을(를) 기반으로 올바르게 평가되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.34가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-52160입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-52160 패치는 장바구니 가격 규칙에 대한 제품 유효성 검사 결과가 규칙 조건 *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*&#x200B;을(를) 기반으로 올바르게 평가되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.34가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-52160입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -37,8 +37,8 @@ ACSD-52160 패치는 장바구니 가격 규칙에 대한 제품 유효성 검�
 1. 두 개의 다른 범주에 할당된 두 제품을 만듭니다.
 1. 다음과 같은 조건으로 **[!UICONTROL Cart Price Rule]**&#x200B;을(를) 만듭니다.
 
-   * **매개 변수의** SKU 1 *[!UICONTROL FOUND]*
-   * **매개 변수의** SKU 2 *[!UICONTROL NOT FOUND]*
+   * *[!UICONTROL FOUND]* 매개 변수의 **SKU 1**
+   * *[!UICONTROL NOT FOUND]* 매개 변수의 **SKU 2**
 
 1. 장바구니에 두 제품을 모두 추가합니다.
 1. 쿠폰 코드를 적용합니다.
@@ -55,15 +55,15 @@ ACSD-52160 패치는 장바구니 가격 규칙에 대한 제품 유효성 검�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [&#x200B; 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[!UICONTROL Quality Patches Tool]
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]&#x200B;[&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [[!DNL Quality Patches Tool] 안내서에서 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko): 패치 검색[!DNL Quality Patches Tool]을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 exl-id: cd934aa9-901a-4f03-ab83-716131e6bd85
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -56,8 +56,8 @@ ACSD-62355 패치는 제품에 많은 값이 있는 속성이 있을 때 구성 
 
 1. 새로 만든 속성을 사용하는 구성 가능한 제품을 만듭니다.
    * 다음 구성으로 하나의 하위 제품을 추가합니다.
-      * 속성 1의 마지막 옵션과 속성 2에서 9까지의 첫 번째 옵션을 사용합니다.
-      * 이렇게 하면 구성 가능한 제품이 1개 있고 하위 제품이 1개 있습니다.
+     * 속성 1의 마지막 옵션과 속성 2에서 9까지의 첫 번째 옵션을 사용합니다.
+     * 이렇게 하면 구성 가능한 제품이 1개 있고 하위 제품이 1개 있습니다.
 1. 구성 가능한 제품의 **[!UICONTROL Configurations]** 탭으로 이동합니다.
 1. **[!UICONTROL Add Products]**&#x200B;을(를) 수동으로 클릭하고 이전에 만든 간단한 제품을 하나씩 추가합니다.
 1. 추가할 때마다 변경 내용을 저장합니다.
@@ -76,8 +76,8 @@ ACSD-62355 패치는 제품에 많은 값이 있는 속성이 있을 때 구성 
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

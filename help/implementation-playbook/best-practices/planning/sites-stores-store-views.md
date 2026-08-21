@@ -4,9 +4,9 @@ description: 사이트 성능을 극대화하기 위한 사이트, 스토어 및
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -41,5 +41,5 @@ ht-degree: 0%
 
 ## 추가 정보
 
-- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

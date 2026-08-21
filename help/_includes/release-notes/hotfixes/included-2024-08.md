@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* CVE-2024-34102과 관련된 JSON 웹 토큰(JWT) 유효성 검사 문제를 해결하기 위한 핫픽스. 자세한 내용은 [Adobe Commerce-APSB24-40에 사용 가능한 보안 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) 기술 자료 문서를 참조하십시오.
+* CVE-2024-34102과 관련된 JSON 웹 토큰(JWT) 유효성 검사 문제를 해결하기 위한 핫픽스. 자세한 내용은 [Adobe Commerce-APSB24-40에 사용 가능한 보안 업데이트](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27136) 기술 자료 문서를 참조하십시오.
 
 <!--
 AC-12486

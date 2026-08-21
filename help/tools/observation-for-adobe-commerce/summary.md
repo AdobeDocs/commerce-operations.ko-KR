@@ -3,9 +3,9 @@ title: '[!UICONTROL Summary] 탭'
 description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL Summary] 탭에 대해 알아봅니다.'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2636'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ko)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
+**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
 
 ## [!UICONTROL Average Response Time]
 

@@ -4,7 +4,7 @@ description: 클라우드 인프라에 Adobe Commerce을 배포할 때 성능을
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### 스토리지 엔진을 InnoDB로 변경
 
-테이블을 선언하는 `db_schema.xml` 파일에서 해당 `table` 노드의 `engine` 특성 값을 `innodb`(으)로 설정합니다. 참조용으로 개발자 설명서에서 [선언적 스키마 구성 > 테이블 노드](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)를 참조하십시오.
+테이블을 선언하는 `db_schema.xml` 파일에서 해당 `table` 노드의 `engine` 특성 값을 `innodb`(으)로 설정합니다. 참조용으로 개발자 설명서에서 [선언적 스키마 구성 > 테이블 노드](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)를 참조하십시오.
 
 선언적 스키마는 Adobe Commerce on cloud infrastructure 버전 2.3에서 도입되었습니다.
 
@@ -59,9 +59,9 @@ Adobe에서는 Adobe Commerce 애플리케이션에 대한 서드파티 검색 �
 
 구성 지침은 Adobe Commerce on cloud 개발자 안내서 를 참조하십시오.
 
-- [OpenSearch 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [OpenSearch 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Elasticsearch 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Elasticsearch 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## 사용자 지정 트리거 방지
 
@@ -76,7 +76,7 @@ Adobe에서는 Adobe Commerce 애플리케이션에 대한 서드파티 검색 �
 
 ## [!DNL ECE-Tools]을(를) 버전 2002.0.21 이상으로 업그레이드 {#ece-tools-version}
 
-cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를 버전 2002.0.21 이상으로 업그레이드하십시오. 자세한 내용은 개발자 설명서에서 [`ece-tools` 버전 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.
+cron 교착 상태와 관련된 잠재적 문제를 방지하려면 ECE-Tools를 버전 2002.0.21 이상으로 업그레이드하십시오. 자세한 내용은 개발자 설명서에서 [`ece-tools` 버전 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)를 참조하십시오.
 
 ## 인덱서 모드를 안전하게 전환
 

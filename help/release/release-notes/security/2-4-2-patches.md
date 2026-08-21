@@ -2,8 +2,8 @@
 title: Adobe Commerce 2.4.2 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.2의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.2-p2 보안 릴리스는 이전 릴리스 2.4.2에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB21-64](https://helpx.adobe.com/kr/security/products/magento/apsb21-64.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html)을 참조하십시오.
 
 ## AC-3022.patch를 적용하여 DHL을 배송 운송업체로 계속 제공
 

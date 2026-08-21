@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Adobe에서는 먼저 이 데이터를 저장해야 하는지 여부를 결정�
 
 예를 들어, 외부 데이터베이스의 이전 주문(사용 중지된 이전 Magento 1 사이트)을 함께 `stitch`할 수 있습니다. 그런 다음 GraphQL mesh를 사용하여 고객 주문 내역의 일부로 표시합니다. 이러한 이전 주문은 현재 [!DNL Adobe Commerce] 환경의 주문과 결합할 수 있습니다.
 
-GraphQL에서 API Mesh를 사용하는 방법에 대한 자세한 내용은 [API Mesh란 무엇입니까](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) 및 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오.
+GraphQL에서 API Mesh를 사용하는 방법에 대한 자세한 내용은 [API Mesh란 무엇입니까](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) 및 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오.
 
 ## 확장 속성을 사용하여 이전 데이터 마이그레이션
 
-이전 데이터를 마이그레이션해야 하거나 새 데이터를 [!DNL Adobe Commerce]에 저장해야 하는 경우 [확장 특성](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}을 사용하는 것이 좋습니다. 확장 속성을 사용하여 추가 데이터를 저장하면 다음과 같은 이점이 있습니다.
+이전 데이터를 마이그레이션해야 하거나 새 데이터를 [!DNL Adobe Commerce]에 저장해야 하는 경우 [확장 특성](https://developer.adobe.com/commerce/php/development/components/add-attributes){target="_blank"}을 사용하는 것이 좋습니다. 확장 속성을 사용하여 추가 데이터를 저장하면 다음과 같은 이점이 있습니다.
 
 - 지속되는 데이터와 데이터베이스 구조를 제어하여 데이터가 올바른 열 유형과 적절한 인덱스로 저장되도록 할 수 있습니다.
 - [!DNL Adobe Commerce]에 있는 대부분의 엔터티는 확장 특성 사용을 지원합니다.
@@ -54,7 +54,7 @@ GraphQL에서 API Mesh를 사용하는 방법에 대한 자세한 내용은 [API
 
 개발자로서 [!DNL Adobe Commerce] 환경 외부의 도구(예: GraphQL mesh 및 Adobe App Builder)를 사용하는 것을 항상 고려해야 합니다. 이러한 도구를 사용하면 데이터에 대한 액세스 권한을 유지하는 데 도움이 되지만 핵심 상거래 애플리케이션이나 기본 데이터베이스 테이블에는 영향을 주지 않습니다. 이 접근 방식을 사용하면 API를 통해 데이터를 노출할 수 있습니다. 그런 다음 App Builder 구성에 데이터 소스를 추가합니다. GraphQL Mesh를 사용하면 이러한 데이터 소스를 결합하여 [기존 데이터](#legacy-data)에 언급된 대로 단일 응답을 생성할 수 있습니다.
 
-GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오. Adobe App Builder에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=ko){target="_blank"}를 참조하십시오.
+GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}를 참조하십시오. Adobe App Builder에 대한 자세한 내용은 [App Builder 소개](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}를 참조하십시오.
 
 ## 코어 테이블 또는 서드파티 테이블 수정
 
@@ -75,9 +75,9 @@ GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://develo
 
 1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko){target="_blank"} 참조).
 
-1. `db_schema.xml` 폴더에 `etc` 파일을 만들고 적절하게 변경합니다.
+1. `etc` 폴더에 `db_schema.xml` 파일을 만들고 적절하게 변경합니다.
 
-   해당하는 경우 `db_schema_whitelist.json` 파일을 생성합니다. 자세한 내용은 [선언 스키마](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}를 참조하십시오.
+   해당하는 경우 `db_schema_whitelist.json` 파일을 생성합니다. 자세한 내용은 [선언 스키마](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"}를 참조하십시오.
 
 ### 잠재적 영향
 
@@ -97,19 +97,19 @@ GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://develo
 
 - `additional_data` 필드 사용의 이점
 
-   - 추가 필드가 필요하지 않으므로 열 수를 최소화할 수 있습니다. 이는 이미 관련된 테이블이 많은 영업 플로우에서 유용합니다. 이미 복잡한 이 프로세스에 복잡성을 더하지 않는 것이 좋습니다. 이 방법은 많은 사용 사례를 충족하지만 전부는 아닙니다.
+  - 추가 필드가 필요하지 않으므로 열 수를 최소화할 수 있습니다. 이는 이미 관련된 테이블이 많은 영업 플로우에서 유용합니다. 이미 복잡한 이 프로세스에 복잡성을 더하지 않는 것이 좋습니다. 이 방법은 많은 사용 사례를 충족하지만 전부는 아닙니다.
 
 - 단점
 
-   - 이 방법은 읽기 전용 데이터를 저장하는 데에만 이상적입니다. 이 문제는 종속성 또는 데이터베이스 관계를 추가하기 위해 개체를 수정하고 빌드하려면 코드를 역직렬화해야 하기 때문에 발생합니다.
+  - 이 방법은 읽기 전용 데이터를 저장하는 데에만 이상적입니다. 이 문제는 종속성 또는 데이터베이스 관계를 추가하기 위해 개체를 수정하고 빌드하려면 코드를 역직렬화해야 하기 때문에 발생합니다.
 
-   - 데이터베이스 작업을 사용하여 이러한 필드를 검색하는 것은 어렵습니다. 이 메서드로 검색하는 것은 느립니다.
+  - 데이터베이스 작업을 사용하여 이러한 필드를 검색하는 것은 어렵습니다. 이 메서드로 검색하는 것은 느립니다.
 
-   - `additional_data` 열에 데이터를 저장할 때 잘못된 JSON을 만들거나 런타임 중 읽기 오류를 발생시켜 코드를 손상시킬 수 있는 직렬화 또는 역직렬화 작업이 트리거되지 않도록 특별히 주의해야 합니다.
+  - `additional_data` 열에 데이터를 저장할 때 잘못된 JSON을 만들거나 런타임 중 읽기 오류를 발생시켜 코드를 손상시킬 수 있는 직렬화 또는 역직렬화 작업이 트리거되지 않도록 특별히 주의해야 합니다.
 
-   - 이러한 필드는 개발자가 쉽게 찾을 수 있도록 코드에 명확하게 선언해야 합니다.
+  - 이러한 필드는 개발자가 쉽게 찾을 수 있도록 코드에 명확하게 선언해야 합니다.
 
-   - 진단하기 매우 어려울 수 있는 기타 문제가 발생할 수 있습니다. 예를들어, 일부 네이티브 PHP 함수에서는 코어 응용 프로그램에서 제공하는 [!DNL Adobe Commerce] 래퍼 메서드를 사용하지 않으면 변환된 데이터의 최종 결과가 예상한 형식과 다를 수 있습니다. 항상 래퍼 함수를 사용하여 저장 또는 검색 중인 데이터의 일관성과 예측 가능성을 확보하십시오.
+  - 진단하기 매우 어려울 수 있는 기타 문제가 발생할 수 있습니다. 예를들어, 일부 네이티브 PHP 함수에서는 코어 응용 프로그램에서 제공하는 [!DNL Adobe Commerce] 래퍼 메서드를 사용하지 않으면 변환된 데이터의 최종 결과가 예상한 형식과 다를 수 있습니다. 항상 래퍼 함수를 사용하여 저장 또는 검색 중인 데이터의 일관성과 예측 가능성을 확보하십시오.
 
 다음은 `additional_data` 열에 대한 열 및 구조가 있는 테이블의 예입니다.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## 큰 MySQL 테이블 찾기
 
-큰 테이블을 식별하려면 [데이터베이스에 연결](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) 문서에 설명된 대로 데이터베이스에 연결하고 다음 명령을 실행하십시오. 프로덕션 환경에 `project_id`을(를) 사용합니다. 스테이징 환경의 경우 `[project_id]_stg`, `[project_id]_stg2`을(를) 사용하십시오.
+큰 테이블을 식별하려면 [데이터베이스에 연결](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) 문서에 설명된 대로 데이터베이스에 연결하고 다음 명령을 실행하십시오. 프로덕션 환경에 `project_id`을(를) 사용합니다. 스테이징 환경의 경우 `[project_id]_stg`, `[project_id]_stg2`을(를) 사용하십시오.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

@@ -5,9 +5,9 @@ feature: B2B, Purchase Orders
 role: Admin, Developer
 exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Adobe Commerce [!UICONTROL B2B] 모듈이 설치되고 사용하도록 설정되
 1. 회사를 만듭니다.
 1. *[!UICONTROL Purchase Order]* 만들기
 1. 견적이 만료되고 cron에 의해 삭제될 때까지 기다립니다. 견적 만료 기간은 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]**(으)로 설정할 수 있습니다.
-1. *[!UICONTROL Purchase Order]* 또는 *[!UICONTROL My Purchase Order in Customer Dashboard]* [!DNL GraphQL] 돌연변이를 통해 `placeOrderForPurchaseOrder`을(를) 순서로 전환합니다.
+1. *[!UICONTROL My Purchase Order in Customer Dashboard]* 또는 [!DNL GraphQL] `placeOrderForPurchaseOrder` 돌연변이를 통해 *[!UICONTROL Purchase Order]*&#x200B;을(를) 순서로 전환합니다.
 
 <u>예상 결과</u>:
 
@@ -58,8 +58,8 @@ Adobe Commerce [!UICONTROL B2B] 모듈이 설치되고 사용하도록 설정되
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

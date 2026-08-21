@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)] 문제 해결 안내서'
 description: ' [!DNL Cloud Automation Patching Service (CAPS)]의 일반적인 문제 및 오류 메시지 해결'
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -243,8 +243,8 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce 설치 안내서](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce 설치 안내서](/help/installation/overview.md)
 * [CAPS 소개](intro.md)
 * [액세스 방법](access.md)
 * [워크플로우 개요](workflow.md)

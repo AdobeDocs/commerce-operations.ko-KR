@@ -2,7 +2,7 @@
 title: 타사 확장 관리
 description: Adobe Commerce 확장을 설치, 활성화, 업그레이드 및 제거하려면 다음 단계를 따르십시오.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Adobe Commerce 동작을 확장하거나 사용자 지정하는 코드를 확장
 - 테마(상점 및 관리자의 모양 및 느낌 변경)
 - 언어 패키지(상점 및 관리자 현지화)
 
-이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구매하는 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure-store/extensions)를 참조하십시오.
+이 항목에서는 명령줄 인터페이스를 사용하여 _온-프레미스_ 프로젝트에 대해 Commerce Marketplace에서 구매하는 타사 확장을 관리하는 방법을 설명합니다. 클라우드 인프라 프로젝트의 경우 [확장 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/extensions)를 참조하십시오.
 
 동일한 절차를 사용하여 _any_ 확장을 설치할 수 있습니다. 필요한 것은 확장의 작성기 이름과 버전입니다. 찾으려면 확장의 `composer.json` 파일을 열고 `"name"` 및 `"version"`의 값을 확인합니다.
 
