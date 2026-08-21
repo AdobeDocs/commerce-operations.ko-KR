@@ -4,9 +4,9 @@ description: Adobe Commerce 프로젝트를 개발하는 일반적인 모범 사
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 ## 버전 관리
 
 모듈 버전은 [시맨틱 버전 관리 2.0.0 표준](https://semver.org/)을 준수해야 합니다.
-Adobe Commerce 코드베이스에 대한 종속성은 [모듈 버전 종속성 지침](https://developer.adobe.com/commerce/php/development/versioning/dependencies/)을 따라야 합니다.
+Adobe Commerce 코드베이스에 대한 종속성은 [모듈 버전 종속성 지침](https://developer.adobe.com/commerce/php/development/versioning/dependencies)을 따라야 합니다.
 
 ## 개정 관리
 
@@ -58,7 +58,7 @@ Adobe Commerce 코드베이스에 대한 종속성은 [모듈 버전 종속성 �
 
 ## 보안
 
-1. [비보안 함수](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/)를 사용하면 안 됩니다.
-1. [XSS 방지 전략](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)을 적용해야 합니다.
-1. [콘텐츠 보안 정책](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)을 적용해야 합니다.
+1. [비보안 함수](https://developer.adobe.com/commerce/php/development/security/non-secure-functions)를 사용하면 안 됩니다.
+1. [XSS 방지 전략](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)을 적용해야 합니다.
+1. [콘텐츠 보안 정책](https://developer.adobe.com/commerce/php/development/security/content-security-policies)을 적용해야 합니다.
 1. 새 Adobe Commerce 인스턴스는 아직 &quot;보안 수정 종료&quot; 날짜에 도달하지 않은 버전의 최신 보안 릴리스에 제공되어야 합니다. [Adobe Commerce 소프트웨어 수명 주기 정책](../../../release/lifecycle-policy.md)을 참조하십시오.

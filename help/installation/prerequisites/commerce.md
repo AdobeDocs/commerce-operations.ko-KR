@@ -2,9 +2,9 @@
 title: Adobe Commerce 소프트웨어 다운로드
 description: Composer를 사용하여 Adobe Commerce 소프트웨어를 가져오고, 확장 호환성을 확인하고, 설치에 적합한 배포를 선택하는 방법에 대해 알아봅니다.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 소프트웨어를 가져오는 방법
 
-[제품 가용성 페이지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability)에서 Adobe 작성 확장과 Adobe Commerce 및 Magento Open Source용 Commerce 서비스의 가용성 및 호환성을 확인하십시오.
+[제품 가용성 페이지](/help/release/product-availability.md)에서 Adobe 작성 확장과 Adobe Commerce 및 Magento Open Source용 Commerce 서비스의 가용성 및 호환성을 확인하십시오.
 
 >[!NOTE]
 >

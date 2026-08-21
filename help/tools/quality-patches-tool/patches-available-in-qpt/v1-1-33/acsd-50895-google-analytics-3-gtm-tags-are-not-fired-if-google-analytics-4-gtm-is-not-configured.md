@@ -4,16 +4,16 @@ description: ACSD-50895 패치를 적용하여  [!DNL Google Analytics] 4 GTM이
 role: Admin
 exl-id: 871e2ca1-dc10-435c-9325-62f5b9b673ad
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
 # ACSD-50895: [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우 [!DNL Google Analytics] 3 GTM 태그가 실행되지 않습니다.
 
-ACSD-50895 패치는 [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우 [!DNL Google Analytics] 3 GTM 태그가 실행되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50895입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
+ACSD-50895 패치는 [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우 [!DNL Google Analytics] 3 GTM 태그가 실행되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-50895입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -36,7 +36,7 @@ ACSD-50895 패치는 [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우
 <u>재현 단계</u>:
 
 1. 관리자로 로그인.
-1. **[!DNL Google Analytics 3]**&#x200B;관리자&#x200B;**[!DNL Google Tag Manager]** > **스토어** > **구성** > **판매** > **Google API** > **Google Analytics**&#x200B;에서 **및**&#x200B;을(를) 사용하도록 설정합니다.
+1. **관리자** > **스토어** > **구성** > **판매** > **Google API** > **Google Analytics**&#x200B;에서 **[!DNL Google Analytics 3]** 및 **[!DNL Google Tag Manager]**&#x200B;을(를) 사용하도록 설정합니다.
 1. **[!DNL Google Analytics 4]** 및 **[!DNL Google Tag Manager]**&#x200B;을(를) 사용하지 마십시오.
 1. Storefront에서 제품 페이지를 엽니다.
 
@@ -52,15 +52,15 @@ ACSD-50895 패치는 [!DNL Google Analytics] 4 GTM이 구성되지 않은 경우
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
-* [&#x200B; 안내서에서  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.[!UICONTROL Quality Patches Tool]
+* [[!DNL Quality Patches Tool] 릴리스됨: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [!UICONTROL Quality Patches Tool] 안내서에서  [!DNL Quality Patches Tool]&#x200B;[&#128279;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)을(를) 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인합니다.
 
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [[!DNL Quality Patches Tool] 안내서에서 &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko): 패치 검색[!DNL Quality Patches Tool]을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.

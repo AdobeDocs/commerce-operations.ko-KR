@@ -4,13 +4,13 @@ description: ACSD-58108 패치를 적용하여 주문 그리드 사용자 정의
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 26009fee51fb81e2517ad09319bac1190d127564
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58108: 조인 테이블 이름이 누락되어 order grid 사용자 지정 모듈 확장에서 SQL 오류가 발생합니다
 
@@ -32,7 +32,7 @@ ACSD-58108 패치는 주문 그리드 사용자 정의 모듈 확장에서 누�
 
 ## 문제
 
-원래 가져오기 테이블에 조인 테이블 이름이 없으면 사용자 지정 모듈 확장을 사용할 때 순서 그리드에 SQL 오류가 발생합니다. 이 문제는 `addFilterToMap` 테이블을 연결한 후 특정 열에 대해 **[!UICONTROL sales_order_item]** 함수가 작동하지 않아 필터링하는 동안 오류가 발생하므로 발생합니다.
+원래 가져오기 테이블에 조인 테이블 이름이 없으면 사용자 지정 모듈 확장을 사용할 때 순서 그리드에 SQL 오류가 발생합니다. 이 문제는 **[!UICONTROL sales_order_item]** 테이블을 연결한 후 특정 열에 대해 `addFilterToMap` 함수가 작동하지 않아 필터링하는 동안 오류가 발생하므로 발생합니다.
 
 <u>재현 단계</u>:
 
@@ -55,8 +55,8 @@ ACSD-58108 패치는 주문 그리드 사용자 정의 모듈 확장에서 누�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

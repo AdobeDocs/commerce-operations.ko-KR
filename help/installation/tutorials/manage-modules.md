@@ -2,9 +2,9 @@
 title: 모듈 활성화 또는 비활성화
 description: 모듈 상태 및 관련 옵션을 사용하여 명령줄에서 Adobe Commerce 모듈 상태를 활성화, 비활성화 및 확인하는 방법을 알아봅니다.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->클라우드 프로젝트에서 모듈을 직접 활성화하거나 비활성화할 수 없습니다. 이러한 명령을 로컬로 실행한 다음 환경의 `app/etc/config.php` 파일에 변경 내용을 푸시해야 합니다. [Pro 프로젝트 워크플로: 배포 워크플로](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=ko#deployment-workflow)를 참조하십시오.
+>클라우드 프로젝트에서 모듈을 직접 활성화하거나 비활성화할 수 없습니다. 이러한 명령을 로컬로 실행한 다음 환경의 `app/etc/config.php` 파일에 변경 내용을 푸시해야 합니다. [Pro 프로젝트 워크플로: 배포 워크플로](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)를 참조하십시오.
 
 ## 모듈 활성화, 비활성화
 

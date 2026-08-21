@@ -3,9 +3,9 @@ title: Commerce 사이트 및 인프라 보안
 description: Adobe Commerce 설치를 설정, 구성 및 업데이트할 때 보안 모범 사례를 구현하여 보안을 유지합니다.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->클라우드 인프라에서 Adobe Commerce 프로젝트의 보안 및 유지 관리를 위한 역할 및 책임에 대한 자세한 내용은 _Adobe Commerce 보안 및 규정 준수 안내서_&#x200B;의 [공유 책임 모델](https://experienceleague.adobe.com/ko/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)을 참조하십시오.
+>클라우드 인프라에서 Adobe Commerce 프로젝트의 보안 및 유지 관리를 위한 역할 및 책임에 대한 자세한 내용은 _Adobe Commerce 보안 및 규정 준수 안내서_&#x200B;의 [공유 책임 모델](/help/security-and-compliance/shared-responsibility.md#security-responsibilities-chart)을 참조하십시오.
 
 [지원되는 모든 버전](../../../release/versions.md):
 

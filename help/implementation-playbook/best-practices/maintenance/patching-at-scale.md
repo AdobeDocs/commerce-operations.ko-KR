@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 badge: label="Tony Evers, 수석 기술 설계자, Adobe 제공" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="토니 에버스의 기고문"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. **보안 패치**&#x200B;은(는) Adobe Commerce 릴리스의 정적 코드 기반의 일부입니다.
 1. **Composer 패치**&#x200B;부터 `composer install`까지 및 [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)와(과) 같은 `composer update`개의 플러그인.
-1. [Commerce용 클라우드 패치](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=ko) 패키지에 포함된 모든 **필수 패치**.
+1. [Commerce용 클라우드 패치](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) 패키지에 포함된 모든 **필수 패치**.
 1. 선택한 **품질 패치**&#x200B;이(가) [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)에 포함되어 있습니다.
 1. `/m2-hotfixes` 디렉터리의 **사용자 지정 패치** 및 Adobe Commerce 지원 패치는 패치 이름별로 알파벳순으로 정렬됩니다.
 
@@ -61,13 +61,13 @@ Adobe Commerce의 여러 설치를 유지 관리하는 책임이 있는 경우 �
 
 - **구성 요소 패키지:** `centralized-patcher`
 
-   - 설치할 품질 패치 및 `m2-hotfixes` 목록을 정의합니다.
-   - `composer install` 작업 후 `vendor/bin/magento-patches apply` 명령을 실행하는 `centralized-patcher-composer-plugin` 패키지가 필요합니다.
+  - 설치할 품질 패치 및 `m2-hotfixes` 목록을 정의합니다.
+  - `composer install` 작업 후 `vendor/bin/magento-patches apply` 명령을 실행하는 `centralized-patcher-composer-plugin` 패키지가 필요합니다.
 
 - **플러그 인 패키지:** `centralized-patcher-composer-plugin`
 
-   - `centralized-patcher` 패키지에서 품질 패치 목록을 읽는 `CentralizedPatcher` PHP 클래스를 정의합니다.
-   - `composer install` 작업 후 품질 패치 목록을 설치하려면 `vendor/bin/magento-patches apply` 명령을 실행합니다.
+  - `centralized-patcher` 패키지에서 품질 패치 목록을 읽는 `CentralizedPatcher` PHP 클래스를 정의합니다.
+  - `composer install` 작업 후 품질 패치 목록을 설치하려면 `vendor/bin/magento-patches apply` 명령을 실행합니다.
 
 ### `centralized-patcher`
 
@@ -365,7 +365,7 @@ index 03a3bf9..681e0b0 100644
 
 이렇게 하면 모든 설치에 대한 모든 패치를 중앙에서 관리할 수 있으며 Adobe Commerce 스토어의 보안 및 안정성을 더 잘 보장할 수 있습니다. 패치 상태를 확인하려면 다음 방법을 사용하십시오.
 
-- [클라우드 인프라 프로젝트](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko#view-available-patches-and-status)
+- [클라우드 인프라 프로젝트](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [온-프레미스 프로젝트](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## 코드 예

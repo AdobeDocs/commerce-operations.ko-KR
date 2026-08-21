@@ -3,9 +3,9 @@ title: 보안 문제에 응답
 description: 사이트 가용성 및 성능에 영향을 주는 보안 문제에 대응하고 해결하기 위해 다음과 같은 모범 사례를 통해 보안 인시던트를 처리합니다.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ ht-degree: 0%
 - 시스템 통합자 및 적절한 보안 담당자와 협력하여 조사 및 시정 작업을 수행합니다.
 
 - 공격의 범위를 확인합니다.
-   - 신용 카드 정보에 액세스했습니까?
-   - 어떤 정보가 도난당했나요?
-   - 그 타협이 있은 후 시간이 얼마나 지났습니까?
-   - 정보가 암호화되었습니까?
+  - 신용 카드 정보에 액세스했습니까?
+  - 어떤 정보가 도난당했나요?
+  - 그 타협이 있은 후 시간이 얼마나 지났습니까?
+  - 정보가 암호화되었습니까?
 
 - 서버 로그 파일 및 파일 변경 사항을 검토하여 공격 벡터를 찾아 사이트의 손상 시기와 방법을 결정하십시오.
 
-   - 특정 상황에서 모든 것을 지우고 다시 설치하거나 가상 호스팅의 경우 새 인스턴스를 만드는 것이 좋습니다. 맬웨어는 복원하기 위해 대기 중인 의심되지 않은 위치에 숨겨질 수 있습니다.
+  - 특정 상황에서 모든 것을 지우고 다시 설치하거나 가상 호스팅의 경우 새 인스턴스를 만드는 것이 좋습니다. 맬웨어는 복원하기 위해 대기 중인 의심되지 않은 위치에 숨겨질 수 있습니다.
 
-   - 불필요한 파일을 모두 제거합니다. 그런 다음 알려진 클린 소스에서 필요한 파일을 다시 설치합니다. 예를 들어 버전 제어 시스템이나 Adobe의 원본 배포 파일을 사용하여 다시 설치할 수 있습니다.
+  - 불필요한 파일을 모두 제거합니다. 그런 다음 알려진 클린 소스에서 필요한 파일을 다시 설치합니다. 예를 들어 버전 제어 시스템이나 Adobe의 원본 배포 파일을 사용하여 다시 설치할 수 있습니다.
 
-   - 데이터베이스, 파일 액세스, 결제 및 배송 통합, 웹 서비스 및 관리자 로그인을 포함하여 모든 자격 증명을 재설정합니다. 또한 시스템을 공격하는 데 사용할 수 있는 모든 통합 및 API 키와 계정을 재설정합니다.
+  - 데이터베이스, 파일 액세스, 결제 및 배송 통합, 웹 서비스 및 관리자 로그인을 포함하여 모든 자격 증명을 재설정합니다. 또한 시스템을 공격하는 데 사용할 수 있는 모든 통합 및 API 키와 계정을 재설정합니다.
 
 ## 문제 분석
 
@@ -73,13 +73,13 @@ ht-degree: 0%
 
   도구의 **보안** 탭을 사용하여 잠재적인 보안 문제를 명확하게 확인하여 근본 원인을 파악하고 사이트의 성능을 최적으로 유지할 수 있습니다.
 
-- [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=ko)로 로그 분석
+- [New Relic 로그](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)로 로그 분석
 
-  cloud infrastructure Pro 프로젝트의 Adobe Commerce에는 [New Relic 로그](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=ko) 서비스가 포함됩니다. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 집계된 데이터를 검색하고 시각화할 수 있는 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
+  cloud infrastructure Pro 프로젝트의 Adobe Commerce에는 [New Relic 로그](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) 서비스가 포함됩니다. 이 서비스는 스테이징 및 프로덕션 환경에서 모든 로그 데이터를 집계하여 집계된 데이터를 검색하고 시각화할 수 있는 중앙 로그 관리 대시보드에 표시하도록 사전 구성되어 있습니다.
 
   다른 Commerce 프로젝트의 경우 [New Relic 로그](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) 서비스를 설정하고 사용하여 다음 작업을 완료할 수 있습니다.
-   - 집계된 로그 데이터를 검색하려면 [New Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)를 사용하십시오.
-   - New Relic 로그 애플리케이션을 통해 로그 데이터를 시각화합니다.
+  - 집계된 로그 데이터를 검색하려면 [New Relic 쿼리](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)를 사용하십시오.
+  - New Relic 로그 애플리케이션을 통해 로그 데이터를 시각화합니다.
 
 ## 계정, 코드 및 데이터베이스 감사
 
@@ -93,9 +93,9 @@ Commerce 관리 및 사용자 계정, 애플리케이션 코드, 데이터베이
 
 - [관리자 보안 설정 검토](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=ko)—관리자 보안 설정이 보안 모범 사례를 따르는지 확인하십시오.
 
-- [클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 사용자 계정 검토](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=ko) - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 클라우드 프로젝트 관리자 사용자의 암호를 회전합니다. 계정 보안 설정이 올바르게 구성되었는지 확인하십시오.
+- [클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 사용자 계정 검토](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/user-access) - 오래되거나 사용하지 않거나 의심스러운 계정을 제거하고 모든 클라우드 프로젝트 관리자 사용자의 암호를 회전합니다. 계정 보안 설정이 올바르게 구성되었는지 확인하십시오.
 
-- 클라우드 인프라의 Adobe Commerce에 대한 [SSH 키 감사](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=ko) - SSH 키를 검토, 삭제 및 회전합니다.
+- 클라우드 인프라의 Adobe Commerce에 대한 [SSH 키 감사](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/secure-connections) - SSH 키를 검토, 삭제 및 회전합니다.
 
 ### 감사 코드
 

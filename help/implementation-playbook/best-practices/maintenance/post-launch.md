@@ -4,9 +4,9 @@ description: 포괄적인 출시 후 지원 및 유지 관리 모범 사례를 �
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
-source-git-commit: 60444d3ef7208d12af3f06af6e3cab2cae93700b
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -21,30 +21,30 @@ ht-degree: 0%
 
 - **사이트 속도 및 부하 테스트**: Adobe Commerce은 리소스를 많이 사용할 수 있으므로 정기적인 성능 모니터링이 중요합니다.
 
-   - **사용할 도구**: 클라우드 인프라 프로젝트의 모든 Adobe Commerce에 New Relic에 대한 액세스가 포함되어 있어 Commerce 애플리케이션 및 클라우드 인프라 내에서 성능을 모니터링하고 이벤트를 조사하는 데 도움이 됩니다. 추가 도구로는 Google PageSpeed Insights 및 GTMetrix가 있습니다.
+  - **사용할 도구**: 클라우드 인프라 프로젝트의 모든 Adobe Commerce에 New Relic에 대한 액세스가 포함되어 있어 Commerce 애플리케이션 및 클라우드 인프라 내에서 성능을 모니터링하고 이벤트를 조사하는 데 도움이 됩니다. 추가 도구로는 Google PageSpeed Insights 및 GTMetrix가 있습니다.
 
-   - **모니터링할 항목**: 다음은 클라우드 인프라에서 Adobe Commerce을 모니터링하는 기본 항목입니다.
+  - **모니터링할 항목**: 다음은 클라우드 인프라에서 Adobe Commerce을 모니터링하는 기본 항목입니다.
 
-      - **상태 알림**: 디스크 공간 및 환경 상태에 대한 경고입니다.
+    - **상태 알림**: 디스크 공간 및 환경 상태에 대한 경고입니다.
 
-      - **관찰**: 효과적인 사이트 관리를 위해 여러 소스의 로그 데이터를 결합한 포괄적인 모니터링
+    - **관찰**: 효과적인 사이트 관리를 위해 여러 소스의 로그 데이터를 결합한 포괄적인 모니터링
 
-      - **New Relic 서비스**: 주요 지표를 중심으로 스테이징 및 프로덕션의 성능을 모니터링합니다.
+    - **New Relic 서비스**: 주요 지표를 중심으로 스테이징 및 프로덕션의 성능을 모니터링합니다.
 
-      - **관리 경고 정책**: 사전 정의된 임계값이 있는 지표를 추적하여 성능에 영향을 주는 인프라 또는 응용 프로그램 문제에 대한 알림을 트리거합니다.
+    - **관리 경고 정책**: 사전 정의된 임계값이 있는 지표를 추적하여 성능에 영향을 주는 인프라 또는 응용 프로그램 문제에 대한 알림을 트리거합니다.
 
   >[!TIP]
   >
-  >_Cloud Guide_&#x200B;에서 [성능 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/performance)을 참조하십시오.
+  >_Cloud Guide_&#x200B;에서 [성능 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/performance)을 참조하십시오.
 
 
 - **데이터베이스 성능 최적화**: Adobe Commerce Cloud에서 데이터베이스 성능을 최적화하려면 다음을 구현합니다.
 
-   - **MySQL 쿼리 모니터링 및 최적화**: MySQL의 SHOW FULL PROCESSLIST 및 EXPLAIN 명령을 사용하여 수행할 수 있는 느리게 실행되는 쿼리를 식별하고 해결합니다. 보다 복잡한 설정의 경우 Pro 아키텍처 사용자는 Percona Toolkit을 사용하여 성능 문제에 대한 쿼리 로그를 분석할 수 있습니다.
+  - **MySQL 쿼리 모니터링 및 최적화**: MySQL의 SHOW FULL PROCESSLIST 및 EXPLAIN 명령을 사용하여 수행할 수 있는 느리게 실행되는 쿼리를 식별하고 해결합니다. 보다 복잡한 설정의 경우 Pro 아키텍처 사용자는 Percona Toolkit을 사용하여 성능 문제에 대한 쿼리 로그를 분석할 수 있습니다.
 
-   - **인덱스 관리**: 모든 테이블에 기본 키가 있는지 확인하고 중복된 인덱스를 제거하십시오. 이렇게 하면 동시 쓰기 중에 효율성이 떨어지고 충돌이 발생할 수 있습니다.
+  - **인덱스 관리**: 모든 테이블에 기본 키가 있는지 확인하고 중복된 인덱스를 제거하십시오. 이렇게 하면 동시 쓰기 중에 효율성이 떨어지고 충돌이 발생할 수 있습니다.
 
-   - **Cron 작업 최적화**: 성능에 미치는 영향을 최소화하려면 특히 색인화와 같은 백그라운드 작업이 잦은 경우 사용량이 적은 시간 동안 Cron 작업을 예약해야 합니다.
+  - **Cron 작업 최적화**: 성능에 미치는 영향을 최소화하려면 특히 색인화와 같은 백그라운드 작업이 잦은 경우 사용량이 적은 시간 동안 Cron 작업을 예약해야 합니다.
 
   >[!TIP]
   >
@@ -52,21 +52,21 @@ ht-degree: 0%
 
 - **CDN 모니터링**: Adobe Commerce Cloud에서 Fastly CDN 성능을 모니터링하려면 다음 작업을 수행할 수 있습니다.
 
-   - **모니터링을 위해 New Relic 활용**: Adobe Commerce은 New Relic을 제공하여 스테이징 및 프로덕션 환경에서 Fastly 성능 및 기타 지표를 모니터링합니다. 이 도구는 시간 경과에 따른 서버 상태, CDN 캐싱 및 네트워크 요청에 대한 통찰력을 제공하여 패턴을 식별하고 CDN 설정을 최적화하는 데 도움이 됩니다.
+  - **모니터링을 위해 New Relic 활용**: Adobe Commerce은 New Relic을 제공하여 스테이징 및 프로덕션 환경에서 Fastly 성능 및 기타 지표를 모니터링합니다. 이 도구는 시간 경과에 따른 서버 상태, CDN 캐싱 및 네트워크 요청에 대한 통찰력을 제공하여 패턴을 식별하고 CDN 설정을 최적화하는 데 도움이 됩니다.
 
-   - **Fastly 로그 분석**: Adobe Commerce Cloud Pro 프로젝트의 경우 New Relic 로그를 사용하여 Fastly CDN 및 WAF 로그 데이터를 검토하고 분석하여 성능 트렌드, 보안 이벤트를 추적하고 오류 또는 지연 문제를 진단할 수 있습니다.
+  - **Fastly 로그 분석**: Adobe Commerce Cloud Pro 프로젝트의 경우 New Relic 로그를 사용하여 Fastly CDN 및 WAF 로그 데이터를 검토하고 분석하여 성능 트렌드, 보안 이벤트를 추적하고 오류 또는 지연 문제를 진단할 수 있습니다.
 
-   - **cURL 명령 사용**: Fastly 관련 헤더로 cURL 명령을 실행하여 사이트의 캐시 상태를 검사합니다. 주요 응답 헤더에는 캐싱 및 모듈 상태를 확인하기 위한 `X-Cache`(HIT/MISS), `Fastly-Module-Enabled`, `Fastly-Magento-VCL-Uploaded` 및 `Cache-Control`이(가) 포함됩니다. Adobe은 스테이징 및 프로덕션 환경 모두에 대한 샘플 cURL 명령을 제공합니다.
+  - **cURL 명령 사용**: Fastly 관련 헤더로 cURL 명령을 실행하여 사이트의 캐시 상태를 검사합니다. 주요 응답 헤더에는 캐싱 및 모듈 상태를 확인하기 위한 `X-Cache`(HIT/MISS), `Fastly-Module-Enabled`, `Fastly-Magento-VCL-Uploaded` 및 `Cache-Control`이(가) 포함됩니다. Adobe은 스테이징 및 프로덕션 환경 모두에 대한 샘플 cURL 명령을 제공합니다.
 
-   - **헤더 정보 확인**: `Cache-Control`, `Pragma`, `X-Magento-Tags` 등의 헤더를 검사하여 캐시된 콘텐츠에 대한 적절한 캐싱 동작과 태그 처리를 확인합니다. 적절한 헤더 값은 캐싱 구성이 CDN에서 효과적으로 적용되는지 여부를 나타냅니다.
+  - **헤더 정보 확인**: `Cache-Control`, `Pragma`, `X-Magento-Tags` 등의 헤더를 검사하여 캐시된 콘텐츠에 대한 적절한 캐싱 동작과 태그 처리를 확인합니다. 적절한 헤더 값은 캐싱 구성이 CDN에서 효과적으로 적용되는지 여부를 나타냅니다.
 
-   - **빠른 디버깅 및 테스트**: Fastly의 디버깅 기능을 사용하여 캐시 적중률 및 실패율, 캐싱 논리 또는 잘못된 헤더 응답 관련 문제를 식별하고 해결합니다. 이는 구성 문제 또는 예상 캐싱 규칙과의 오정렬을 가리킬 수 있습니다.
+  - **빠른 디버깅 및 테스트**: Fastly의 디버깅 기능을 사용하여 캐시 적중률 및 실패율, 캐싱 논리 또는 잘못된 헤더 응답 관련 문제를 식별하고 해결합니다. 이는 구성 문제 또는 예상 캐싱 규칙과의 오정렬을 가리킬 수 있습니다.
 
 이러한 모니터링 단계는 최적의 CDN 성능을 유지하고 사이트 속도 및 안정성에 영향을 주는 문제를 해결하는 데 도움이 됩니다.
 
 >[!TIP]
 >
->_Cloud Guide_&#x200B;에서 [Fastly 서비스 개요](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly)를 참조하십시오.
+>_Cloud Guide_&#x200B;에서 [Fastly 서비스 개요](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly)를 참조하십시오.
 
 #### 정기 보안 모니터링
 
@@ -102,7 +102,7 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 >[!TIP]
 >
->Adobe Commerce Cloud의 로깅 및 오류 추적 사례에 대한 자세한 내용은 [New Relic 로그 관리](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) 및 [예외 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions)을 참조하십시오.
+>Adobe Commerce Cloud의 로깅 및 오류 추적 사례에 대한 자세한 내용은 [New Relic 로그 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) 및 [예외 모니터링](/help/tools/site-wide-analysis-tool/exceptions.md)을 참조하십시오.
 
 ### 보안 및 업데이트
 
@@ -112,17 +112,17 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 - **Adobe Commerce 보안 경고에 가입**: [Adobe의 알림을 등록](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security)하여 보안 취약점에 대한 정보를 지속적으로 받아 보십시오.
 
-- **릴리스 정보 확인**: 버전(예: 2.3.5-p1)에 대해 &quot;-pN&quot; 태그가 지정된 [보안 패치 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/security-patches/overview)을 정기적으로 검토하고 중요한 수정 사항 및 개선 사항을 포함합니다.
+- **릴리스 정보 확인**: 버전(예: 2.3.5-p1)에 대해 &quot;-pN&quot; 태그가 지정된 [보안 패치 릴리스 정보](/help/release/release-notes/security/overview.md)을 정기적으로 검토하고 중요한 수정 사항 및 개선 사항을 포함합니다.
 
 - **보안 패치를 즉시 적용**: 가능한 즉시 보안 패치를 적용합니다. 여기에는 최신 버전으로 업데이트하거나 특정 패치 파일을 적용하는 것이 포함됩니다.
 
 - **클라우드 패치 사용**: Adobe Commerce Cloud의 경우 보안 패치가 클라우드 도구 세트 내에 번들로 제공될 수 있습니다. 이러한 수정 사항을 받으려면 세트 또는 Commerce 버전을 업그레이드해야 합니다.
 
-- **자동 패치 관리**: 중앙 패처 같은 도구를 사용하여 [여러 저장소에 패치를 자동으로 관리하고 적용](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)하는 것이 좋습니다.
+- **자동 패치 관리**: 중앙 패처 같은 도구를 사용하여 [여러 저장소에 패치를 자동으로 관리하고 적용](/help/implementation-playbook/best-practices/maintenance/patching-at-scale.md)하는 것이 좋습니다.
 
 >[!TIP]
 >
->패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access) 보고서도 검토해야 합니다.
+>패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](/help/tools/site-wide-analysis-tool/access.md) 보고서도 검토해야 합니다.
 
 #### PCI 준수
 
@@ -132,11 +132,11 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 - **보안 전송 프로토콜 사용**: 암호화 및 적절한 키 관리를 사용하여 항상 TLS와 같은 보안 프로토콜을 통해 결제 데이터를 전송합니다.
 
-- **웹 응용 프로그램 방화벽(WAF) 활용**: Fastly를 기반으로 하는 WAF 서비스는 PCI DSS 6.6 요구 사항을 충족하고 사이트에 도달하기 전에 악성 트래픽을 차단하여 일반적인 취약점으로부터 보호합니다. 자세한 내용은 [여기](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) 및 [여기](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service)를 참조하세요.
+- **웹 응용 프로그램 방화벽(WAF) 활용**: Fastly를 기반으로 하는 WAF 서비스는 PCI DSS 6.6 요구 사항을 충족하고 사이트에 도달하기 전에 악성 트래픽을 차단하여 일반적인 취약점으로부터 보호합니다. 자세한 내용은 [여기](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md) 및 [여기](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)를 참조하세요.
 
-- **액세스 제한**: 권한이 있는 직원만 중요한 결제 데이터에 액세스할 수 있는지 확인하고 [액세스 제어를 적용하여 노출 위험을 줄이십시오](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
+- **액세스 제한**: 권한이 있는 직원만 중요한 결제 데이터에 액세스할 수 있는지 확인하고 [액세스 제어를 적용하여 노출 위험을 줄이십시오](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md).
 
-- **정기적인 보안 검색**: 정기적인 PCI ASV 검색을 수행하고 [환경을 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-operations/security-and-compliance/shared-responsibility)하여 잠재적인 취약점을 해결합니다.
+- **정기적인 보안 검색**: 정기적인 PCI ASV 검색을 수행하고 [환경을 모니터링](/help/security-and-compliance/shared-responsibility.md)하여 잠재적인 취약점을 해결합니다.
 
 >[!TIP]
 >
@@ -148,11 +148,11 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 - **지원 채널**: 다음과 같은 고객 지원 채널을 구현합니다.
 
-   - **실시간 채팅**: 즉각적인 지원을 위해 실시간 채팅 지원을 제공합니다. 인기 있는 솔루션으로는 Zendesk, Intercom, Tidio 등이 있다.
+  - **실시간 채팅**: 즉각적인 지원을 위해 실시간 채팅 지원을 제공합니다. 인기 있는 솔루션으로는 Zendesk, Intercom, Tidio 등이 있다.
 
-   - **이메일 지원**: Freshdesk 또는 Zoho Desk와 같은 지원 티켓 시스템을 사용하여 고객 문의 사항을 효과적으로 관리합니다.
+  - **이메일 지원**: Freshdesk 또는 Zoho Desk와 같은 지원 티켓 시스템을 사용하여 고객 문의 사항을 효과적으로 관리합니다.
 
-   - **전화 지원**: 고객 기반이 많은 경우 업무 시간 동안 전화 지원을 제공하는 것이 좋습니다.
+  - **전화 지원**: 고객 기반이 많은 경우 업무 시간 동안 전화 지원을 제공하는 것이 좋습니다.
 
 #### 관리자 교육
 
@@ -202,27 +202,27 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 - **트래픽 처리를 위한 자동 크기 조정**:
 
-   - Adobe Commerce Cloud는 실시간 트래픽 요구에 따라 서버 리소스(예: 웹 노드)를 동적으로 조정하기 위한 자동 크기 조절을 지원하여 스토어에서 수동 개입 없이 높은 방문자 볼륨을 처리할 수 있도록 합니다. _클라우드 가이드_&#x200B;에서 [자동 크기 조정](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/autoscaling)을 참조하십시오.
+  - Adobe Commerce Cloud는 실시간 트래픽 요구에 따라 서버 리소스(예: 웹 노드)를 동적으로 조정하기 위한 자동 크기 조절을 지원하여 스토어에서 수동 개입 없이 높은 방문자 볼륨을 처리할 수 있도록 합니다. _클라우드 가이드_&#x200B;에서 [자동 크기 조정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/autoscaling)을 참조하십시오.
 
-   - 웹 계층과 서비스 계층은 독립적으로 확장할 수 있으며, 트래픽을 늘리기 위해 웹 노드를 추가하고 피크 기간 동안 백엔드 성능을 높이기 위해 데이터베이스 또는 서비스 노드를 확장할 수 있습니다. _클라우드 가이드_&#x200B;에서 [조정된 아키텍처](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)을(를) 참조하십시오.
+  - 웹 계층과 서비스 계층은 독립적으로 확장할 수 있으며, 트래픽을 늘리기 위해 웹 노드를 추가하고 피크 기간 동안 백엔드 성능을 높이기 위해 데이터베이스 또는 서비스 노드를 확장할 수 있습니다. _클라우드 가이드_&#x200B;에서 [조정된 아키텍처](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)을(를) 참조하십시오.
 
 - **성능 모니터링**:
 
-   - **New Relic**&#x200B;을(를) 사용하여 실시간 성능 지표(예: CPU 사용, 트래픽 수준)를 모니터링하고 필요에 따라 조정합니다.
+  - **New Relic**&#x200B;을(를) 사용하여 실시간 성능 지표(예: CPU 사용, 트래픽 수준)를 모니터링하고 필요에 따라 조정합니다.
 
-   - 프로덕션 문제를 방지하기 위해 크기 조정 전에 스테이징 환경에서 성능을 테스트합니다.
+  - 프로덕션 문제를 방지하기 위해 크기 조정 전에 스테이징 환경에서 성능을 테스트합니다.
 
 - **새로운 기능 개발**:
 
-   - **AI 기반 개인화**, **구독 관리** 및 사용자 지정 솔루션과 같은 고급 기능을 통합합니다.
+  - **AI 기반 개인화**, **구독 관리** 및 사용자 지정 솔루션과 같은 고급 기능을 통합합니다.
 
-   - 프로덕션 환경에 배포하기 전에 스테이징 환경에서 기능을 지속적으로 테스트하고 세분화하여 가동 중지 시간을 최소화합니다.
+  - 프로덕션 환경에 배포하기 전에 스테이징 환경에서 기능을 지속적으로 테스트하고 세분화하여 가동 중지 시간을 최소화합니다.
 
 - **사이트 유지 관리 진행 중**:
 
-   - 정기적으로 시스템 로그 및 성능 지표를 검토하여 개선할 영역을 파악합니다.
+  - 정기적으로 시스템 로그 및 성능 지표를 검토하여 개선할 영역을 파악합니다.
 
-   - 새로운 비즈니스 요구 사항과 성장에 맞게 인프라스트럭처를 확장 및 조정할 수 있습니다.
+  - 새로운 비즈니스 요구 사항과 성장에 맞게 인프라스트럭처를 확장 및 조정할 수 있습니다.
 
 >[!TIP]
 >

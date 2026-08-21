@@ -1,13 +1,13 @@
 ---
 title: 'ACP2E-3977: [!UICONTROL Cap Reward Points Balance At] 필드는 비워 둘 수 없습니다.'
-description: ACP2E-3977 패치를 적용하여 **[!UICONTROL Cap Reward Points Balance At]** 필드가 설정된 경우 **[!UICONTROL Rewards Points Balance Redemption Threshold]** 필드를 비워 둘 수 없어 유효성 검사 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
+description: ACP2E-3977 패치를 적용하여 **[!UICONTROL Rewards Points Balance Redemption Threshold]** 필드가 설정된 경우 **[!UICONTROL Cap Reward Points Balance At]** 필드를 비워 둘 수 없어 유효성 검사 오류가 발생하는 Adobe Commerce 문제를 해결합니다.
 feature: Configuration, Rewards
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 5275911f-4f8c-4b37-af11-24ceb69406c9
-source-git-commit: 83ce590c5078d70f0414276e2f03a71bdcdad321
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ ACP2E-3977 패치는 허용되어야 하는 경우에도 **[!UICONTROL Cap Rewar
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

@@ -5,9 +5,9 @@ feature: B2B
 role: Admin, Developer
 exl-id: 540cd37b-4dc5-42d1-a968-2989262effdd
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ B2B가 활성화되면 [!DNL GraphQL] 요청은 스토어 보기 범위가 요�
 1. *product1*&#x200B;과(와) 관련된 모든 제품을 추가하십시오.
 1. [!UICONTROL B2B] 및 [!UICONTROL Shared Catalog]을(를) 사용하도록 설정합니다.
 1. 기본 공유 카탈로그에 모든 제품을 추가합니다.
-1. 헤더에서 [!DNL GraphQL]웹 사이트 1 *의 스토어 코드로* product1 *및 관련 제품을 검색하도록* 요청을 보냅니다.
+1. 헤더에서 *웹 사이트 1*&#x200B;의 스토어 코드로 *product1* 및 관련 제품을 검색하도록 [!DNL GraphQL] 요청을 보냅니다.
 
 <u>예상 결과</u>:
 
@@ -59,8 +59,8 @@ B2B가 활성화되면 [!DNL GraphQL] 요청은 스토어 보기 범위가 요�
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

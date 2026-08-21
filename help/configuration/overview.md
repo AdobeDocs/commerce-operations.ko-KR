@@ -1,11 +1,11 @@
 ---
 title: 구성 안내서 개요
-description: Adobe Commerce 애플리케이션의 구성 가능한 기능 및 서비스에 대해 알아봅니다. 배포, 캐싱, 보안 및 기타 중요한 설정을 관리하는 방법을 알아봅니다.
+description: Adobe Commerce 애플리케이션에 대해 구성 가능한 기능 및 서비스에 대해 알아봅니다. 배포, 캐싱, 보안 및 기타 중요한 설정을 관리하는 방법을 알아봅니다.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 12%
 
 ---
 
@@ -29,4 +29,4 @@ _구성_ 안내서에서는 구성 가능한 Commerce 응용 프로그램 기능
 
 ## 클라우드 구성
 
-[!DNL Commerce on cloud infrastructure]은(는) [구성 파일 집합](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=ko)을 사용하여 호스팅된 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 [클라우드 가이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=ko)에서 추가 구성 요구 사항을 검토해야 합니다.
+[!DNL Commerce on cloud infrastructure]은(는) [구성 파일 집합](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/overview)을 사용하여 호스팅된 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 [클라우드 가이드](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)에서 추가 구성 요구 사항을 검토해야 합니다.

@@ -4,13 +4,13 @@ description: ACSD-66506 패치를 적용하여 백엔드에서 오류가 발생�
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8f77101832ccfb415d040c202f0fc7221f97419a
+exl-id: db08c58b-7e14-4bd8-af85-8f63aba9051b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66506: 공유 카탈로그 제품을 삭제하고 재할당한 후 백엔드 오류가 발생합니다
 
@@ -60,8 +60,8 @@ ACSD-66506 패치가 백엔드에서 오류 *이(가) 발생하는 문제를 해
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

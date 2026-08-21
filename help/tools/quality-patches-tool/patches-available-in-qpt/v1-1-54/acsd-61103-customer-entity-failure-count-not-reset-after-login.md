@@ -5,9 +5,9 @@ feature: GraphQL, REST, Customers
 role: Admin, Developer
 exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ACSD-61103 패치는 고객이 API 끝점을 통해 성공적으로 로그인한
 
 1. 고객 계정을 만듭니다.
 1. 잘못된 세부 정보를 사용하여 API를 통해 고객 토큰을 생성합니다.
-1. 위의 고객에 대해 `failures_num` DB 테이블의 `customer_entity` 열을 확인하십시오.
+1. 위의 고객에 대해 `customer_entity` DB 테이블의 `failures_num` 열을 확인하십시오.
 1. 올바른 세부 정보를 사용하여 API를 통해 고객 토큰을 생성합니다.
-1. 위의 고객에 대해 `failures_num` DB 테이블의 `customer_entity` 열을 확인하십시오.
+1. 위의 고객에 대해 `customer_entity` DB 테이블의 `failures_num` 열을 확인하십시오.
 
 <u>예상 결과</u>:
 
@@ -54,8 +54,8 @@ API를 통해 고객 토큰을 생성하기 위해 올바른 자격 증명을 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

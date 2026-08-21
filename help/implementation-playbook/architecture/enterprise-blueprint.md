@@ -3,7 +3,7 @@ title: 엔터프라이즈 참조 아키텍처
 description: Adobe의 최신 컴포저블 상거래 기술을 사용하여 Adobe Commerce을 구현하는 방법을 알아봅니다.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -26,15 +26,15 @@ Commerce은 성능, 규모 및 보안에 대한 엔터프라이즈 요구 사항
 
 ## 클라우드 기반
 
-[클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/overview)은(는) Commerce 구현의 기반입니다. 클라우드 기반 환경에서 Commerce 애플리케이션을 구축, 배포, 모니터링 및 관리하는 셀프서비스 접근 방식을 통해 [보안](../../security-and-compliance/shared-responsibility.md) 자동 호스팅 플랫폼을 제공합니다.
+[클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)은(는) Commerce 구현의 기반입니다. 클라우드 기반 환경에서 Commerce 애플리케이션을 구축, 배포, 모니터링 및 관리하는 셀프서비스 접근 방식을 통해 [보안](../../security-and-compliance/shared-responsibility.md) 자동 호스팅 플랫폼을 제공합니다.
 
 다음 cloud foundation 기술 세부 사항을 참조하십시오.
 
-- [**확장 아키텍처**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)—안정적이고 예측 가능한 성능을 유지하기 위해 자동으로 용량이 조정되었습니다.
-- [**여러 환경**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)—PHP, MySQL(MariaDB), Redis, RabbitMQ 및 지원되는 검색 엔진 기술로 사전 프로비저닝되어 사이트를 개발, 테스트 및 배포합니다.
-- [**구성 관리**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/configure/overview)—응용 프로그램 설정, 경로, 빌드 및 배포 작업, 알림을 관리할 수 있도록 사용자 지정 가능한 환경 구성 파일 및 CLI(명령줄 인터페이스)입니다.
-- [**Git 기반 워크플로**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) - 신속한 개발 및 지속적인 배포를 위해 코드 변경 사항을 푸시한 후 자동으로 빌드하고 배포합니다.
-- [**기본 제공 가시성**](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/monitor/performance)—여러 소스의 로그 데이터를 결합하여 사이트 성능을 관리하고 문제를 진단하는 데 도움이 되는 도구입니다.
+- [**확장 아키텍처**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)—안정적이고 예측 가능한 성능을 유지하기 위해 자동으로 용량이 조정되었습니다.
+- [**여러 환경**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/pro-architecture)—PHP, MySQL(MariaDB), Redis, RabbitMQ 및 지원되는 검색 엔진 기술로 사전 프로비저닝되어 사이트를 개발, 테스트 및 배포합니다.
+- [**구성 관리**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/overview)—응용 프로그램 설정, 경로, 빌드 및 배포 작업, 알림을 관리할 수 있도록 사용자 지정 가능한 환경 구성 파일 및 CLI(명령줄 인터페이스)입니다.
+- [**Git 기반 워크플로**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) - 신속한 개발 및 지속적인 배포를 위해 코드 변경 사항을 푸시한 후 자동으로 빌드하고 배포합니다.
+- [**기본 제공 가시성**](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/performance)—여러 소스의 로그 데이터를 결합하여 사이트 성능을 관리하고 문제를 진단하는 데 도움이 되는 도구입니다.
 - 핵심 Commerce 애플리케이션을 타사 시스템과 통합하고 Commerce 기능을 확장하기 위한 [**포괄적인 API 적용 범위**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) 및 [REST](https://developer.adobe.com/commerce/webapi/rest) API
 
 ## Experience Cloud와 통합
@@ -48,7 +48,7 @@ Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 �
 >자세한 내용은 다음 리소스를 참조하십시오.
 >
 >- 자세한 내용은 [Digital Experience 블루프린트](https://experienceleague.adobe.com/ko/docs/blueprints-learn/architecture/overview)를 참조하십시오.
->- [고객 경험 개인화](https://experienceleague.adobe.com/ko/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
+>- [고객 경험 개인화](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
 
 
 ## 서드파티 시스템과의 통합
@@ -70,7 +70,7 @@ Adobe은 통합 및 사용자 지정을 빌드하기 위한 다음 개발자 도
 
 >[!NOTE]
 >
->[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/ko/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
+>[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
 
 ## Storefront 서비스
 

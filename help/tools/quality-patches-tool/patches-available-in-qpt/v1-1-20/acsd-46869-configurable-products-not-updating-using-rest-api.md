@@ -5,16 +5,16 @@ feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
 
 # ACSD-46869: 구성 가능한 제품이 체크아웃 시 REST API를 사용하여 업데이트되지 않음
 
-ACSD-46869 패치는 체크아웃 시 구성 가능한 제품이 REST API를 사용하여 업데이트되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-46869입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+ACSD-46869 패치는 체크아웃 시 구성 가능한 제품이 REST API를 사용하여 업데이트되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-46869입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -61,7 +61,7 @@ ACSD-46869 패치는 체크아웃 시 구성 가능한 제품이 REST API를 사
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: 품질 패치 도구 안내서의 [[!DNL Quality Patches Tools] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

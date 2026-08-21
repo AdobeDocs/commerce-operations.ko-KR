@@ -3,7 +3,7 @@ title: 검색 중지 단어 구성
 description: CSV 파일을 사용하여 Adobe Commerce에 대한 중지 단어를 관리하는 방법을 알아봅니다.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -126,7 +126,7 @@ Elasticsearch 및 OpenSearch에서 중지 단어를 사용하는 방법에 대�
 
 ## 모듈에서 디렉토리를 변경하려면
 
-1. [모듈 만들기](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [모듈 만들기](https://developer.adobe.com/commerce/php/development/build/component-file-structure)
 1. `etc/di.xml` 모듈에서 지침을 추가합니다.
 
    ```xml

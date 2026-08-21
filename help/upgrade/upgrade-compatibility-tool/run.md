@@ -2,9 +2,9 @@
 title: ' [!DNL Upgrade Compatibility Tool] 실행'
 description: Adobe Commerce 프로젝트에 대한 명령줄 인터페이스에서  [!DNL Upgrade Compatibility Tool] 을(를) 실행하려면 다음 단계를 따르십시오.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -258,9 +258,9 @@ bin/uct upgrade:check --help
 ## Adobe Commerce 모범 사례 따르기
 
 - 이름이 같은 모듈이 두 개 있는 것은 피하십시오.
-- Adobe Commerce [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards)을 따르십시오.
+- Adobe Commerce [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)을 따르십시오.
 - Adobe Commerce 2.4 [업그레이드 안내서](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=ko) 모범 사례입니다.
-- [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=ko){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.
+- [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/overview){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.
 
 ## 결과 최적화
 

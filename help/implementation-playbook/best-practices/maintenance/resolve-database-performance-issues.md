@@ -4,9 +4,9 @@ description: 클라우드 인프라에 배포된 Adobe Commerce 사이트에서 
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ MySQL을 사용하여 Adobe Commerce on cloud infrastructure 프로젝트에서 
 Adobe Commerce 프로젝트가 Pro 아키텍처에 배포된 경우 Percona Toolkit을 사용하여 쿼리를 분석할 수 있습니다.
 
 1. MySQL 느린 쿼리 로그에 대해 `pt-query-digest --type=slowlog` 명령을 실행합니다.
-   * 느린 쿼리 로그의 위치를 찾으려면 개발자 설명서에서 **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs)을 참조하십시오.
+   * 느린 쿼리 로그의 위치를 찾으려면 개발자 설명서에서 **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs)을 참조하십시오.
    * [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) 설명서를 참조하십시오.
 1. 발견된 문제를 기반으로, 쿼리를 더 빨리 실행할 수 있도록 수정하는 단계를 수행하십시오.
 
@@ -66,7 +66,7 @@ Adobe Commerce 프로젝트가 Pro 아키텍처에 배포된 경우 Percona Tool
 
    노드를 추가할 때 `referenceID` 및 `column name` 변수를 사용자 지정 사용자 지정 값으로 바꾸십시오.
 
-자세한 내용은 개발자 설명서에서 [선언적 스키마 구성](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)을 참조하십시오.
+자세한 내용은 개발자 설명서에서 [선언적 스키마 구성](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)을 참조하십시오.
 
 ## 중복 인덱스 식별 및 제거
 

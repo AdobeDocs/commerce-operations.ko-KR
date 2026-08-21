@@ -4,9 +4,9 @@ description: 이 문서에서는  [!DNL New Relic]에서 Adobe Commerce에 대�
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 0910a431-bf2c-469e-81e2-92c8d9be3249
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce on cloud infrastructure Pro 계획 아키텍처
 <u>**실행!**</u>:
 
 * 이 경고가 지워질 때까지 예약된 배포를 중단하는 것이 좋습니다.
-* 사이트가 응답하지 않거나 완전히 응답하지 않는 경우 즉시 사이트를 유지 관리 모드로 전환합니다. 단계는 Commerce 설치 가이드의 [유지 관리 모드 활성화 또는 비활성화](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)를 참조하십시오. 문제 해결을 위해 사이트에 계속 액세스할 수 있도록 제외 IP 주소 목록에 IP를 추가해야 합니다. 단계는 Commerce 설치 가이드의 [제외 IP 주소 목록 유지](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)를 참조하십시오.
+* 사이트가 응답하지 않거나 완전히 응답하지 않는 경우 즉시 사이트를 유지 관리 모드로 전환합니다. 단계는 Commerce 설치 가이드의 [유지 관리 모드 활성화 또는 비활성화](/help/installation/tutorials/maintenance-mode.md)를 참조하십시오. 문제 해결을 위해 사이트에 계속 액세스할 수 있도록 제외 IP 주소 목록에 IP를 추가해야 합니다. 단계는 Commerce 설치 가이드의 [제외 IP 주소 목록 유지](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses)를 참조하십시오.
 
 <u>**안 함!**</u>:
 
@@ -54,6 +54,6 @@ Adobe Commerce on cloud infrastructure Pro 계획 아키텍처
 
 1. 메모리 사용량 증가의 원인을 파악할 수 없는 경우 최근 트렌드를 검토하여 최근 코드 배포 또는 구성 변경과 관련된 문제(예: 새로운 고객 그룹 및 카탈로그에 대한 대규모 변경)를 파악하십시오. 코드 배포 또는 변경 시 상관 관계에 대한 지난 7일간의 활동을 검토하는 것이 좋습니다.
 
-1. 위의 방법이 적절한 시간 내에 원인 및/또는 해결책을 찾는 데 도움이 되지 않는 경우 업사이징을 요청하거나 아직 이 사이트를 유지 관리 모드로 전환하십시오. 단계는 Commerce 지원 기술 자료에서 [임시 크기 조정 요청 방법](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize) 및 Commerce 설치 안내서에서 [유지 관리 모드 활성화 또는 비활성화](https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)를 참조하십시오.
+1. 위의 방법이 적절한 시간 내에 원인 및/또는 해결책을 찾는 데 도움이 되지 않는 경우 업사이징을 요청하거나 아직 이 사이트를 유지 관리 모드로 전환하십시오. 단계는 Commerce 지원 기술 자료에서 [임시 크기 조정 요청 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) 및 Commerce 설치 안내서에서 [유지 관리 모드 활성화 또는 비활성화](/help/installation/tutorials/maintenance-mode.md)를 참조하십시오.
 
-1. 업사이징이 사이트를 정상 작업으로 반환하는 경우 영구 업사이징을 요청하거나(Adobe 계정 팀에 문의), 로드 테스트를 실행하고 쿼리 또는 서비스 압력을 줄이는 코드를 최적화하여 전용 스테이징에서 문제를 재현해 보십시오. Commerce on Cloud Guide의 [부하 및 부하 테스트](https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing)를 참조하십시오.
+1. 업사이징이 사이트를 정상 작업으로 반환하는 경우 영구 업사이징을 요청하거나(Adobe 계정 팀에 문의), 로드 테스트를 실행하고 쿼리 또는 서비스 압력을 줄이는 코드를 최적화하여 전용 스테이징에서 문제를 재현해 보십시오. Commerce on Cloud Guide의 [부하 및 부하 테스트](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing)를 참조하십시오.

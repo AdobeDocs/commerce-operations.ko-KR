@@ -2,7 +2,7 @@
 title: Adobe Commerce 릴리스 노트
 description: 특정 Adobe Commerce 릴리스에 대한 정보를 찾을 수 있는 위치에 대해 알아봅니다.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -40,18 +40,18 @@ ht-degree: 2%
             <li><a href="../lifecycle-policy.md">소프트웨어 수명 주기 정책</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">클라우드 버전 업그레이드 시행 정책</a></li>
             <li><a href="../security-enforcement-policy.md">보안 및 규정 준수 알림</a></li>
-            <li><a href="https://helpx.adobe.com/kr/security/products/magento.html">Adobe 보안 공지</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe 보안 공지</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ko">Adobe Commerce용 B2B</a></li>
           </ul>
         </td>
       <td>클라우드 인프라의 <strong>Adobe Commerce</strong>
         <p>클라우드 플랫폼에서 Adobe Commerce 설치 및 업그레이드를 배포하고 관리하도록 설계된 Adobe Commerce용 Cloud Suite 패키지의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">이전 버전과 호환 불가능한 변경 사항</a></li>
-            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Commerce용 클라우드 패치</a></li>
-            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Commerce용 클라우드 도커</a></li>
-            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Commerce용 클라우드 구성 요소</a></li>
-            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">이전 버전과 호환 불가능한 변경 사항</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce용 클라우드 패치</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Commerce용 클라우드 도커</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Commerce용 클라우드 구성 요소</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>

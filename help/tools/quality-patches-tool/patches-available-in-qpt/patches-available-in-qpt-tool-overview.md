@@ -5,9 +5,9 @@ feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Adobe Commerce 온프레미스 및 Adobe Commerce 온클라우드 인프라의 �
 
 ### 클라우드 인프라에서 Adobe Commerce용 QPT를 설치하고 사용하는 방법
 
-클라우드 인프라에서 Adobe Commerce에 패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Commerce on Cloud Infrastructure 안내서 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko)을 참조하십시오.
+클라우드 인프라에서 Adobe Commerce에 패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Commerce on Cloud Infrastructure 안내서 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)을 참조하십시오.
 
 ## 관련 읽기
 

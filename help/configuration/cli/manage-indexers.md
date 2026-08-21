@@ -2,9 +2,9 @@
 title: 인덱서 관리
 description: 명령줄 도구를 사용하여 Adobe Commerce 인덱서를 보고 관리하는 방법을 알아봅니다. 인덱서 명령, 상태 확인 및 리인덱싱 기술을 살펴보십시오.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 이상**: [!DNL Customer Grid] 인덱서는 [!UICONTROL Update on Save] 및 [!UICONTROL Update by Schedule] 모드를 모두 지원하며 기본값은 [!UICONTROL Update by Schedule]입니다.
 >
->_구현 플레이북_&#x200B;에서 [인덱서 구성 모범 사례](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)를 참조하세요.
+>_구현 플레이북_&#x200B;에서 [인덱서 구성 모범 사례](/help/implementation-playbook/best-practices/maintenance/indexer-configuration.md)를 참조하세요.
 
 >[!INFO]
 >

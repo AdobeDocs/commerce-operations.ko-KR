@@ -2,9 +2,9 @@
 title: ' [!DNL Upgrade Compatibility Tool] 개요'
 description: ' [!DNL Upgrade Compatibility Tool] 과(와) Adobe Commerce 프로젝트에 도움이 되는 방법에 대해 알아봅니다.'
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]은(는) [코딩 표준](https://developer.adobe.com/commerce/php/coding-standards/)에 정의된 규칙을 사용하여 프로젝트가 Adobe Commerce 모범 사례를 따르고 있는지 확인하고 [!DNL Upgrade Compatibility Tool]을(를) 개선하고 확장하는 데 도움을 줍니다.
 
-코딩 표준에 대한 자세한 내용은 [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) 항목을 참조하십시오.
+코딩 표준에 대한 자세한 내용은 [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) 항목을 참조하십시오.
 
 ## 리소스
 
 Adobe Commerce 업그레이드를 이해하는 데 도움이 되는 다음 리소스를 참조하십시오.
 
 - [업그레이드 안내서](../overview.md)에서는 일반적인 Adobe Commerce 업그레이드 여정과 해당 여정에 따른 모범 사례에 대한 개요를 제공합니다.
-- [예정된 릴리스](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/schedule) 페이지에서는 예정된 릴리스 및 예정된 릴리스의 날짜를 제공합니다.
+- [예정된 릴리스](/help/release/schedule.md) 페이지에서는 예정된 릴리스 및 예정된 릴리스의 날짜를 제공합니다.
 - [커뮤니티 리소스](https://developer.adobe.com/commerce/contributor/community/) 페이지에서 토론을 시작하거나 추가 정보를 찾을 수 있습니다.
 - 일반적인 업그레이드 여정에서 유용한 도구를 보려면 [관련 도구](../upgrade-compatibility-tool/related-tools.md) 페이지를 확인하십시오.

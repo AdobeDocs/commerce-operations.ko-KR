@@ -22,9 +22,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Cloud 2.4.4 - 2.4.9의 Adobe Commerce 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: e2b86c349bdd085717f732532f68e3fae8455d13
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 2200
+source-wordcount: 2158
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Adobe은 고객을 안전하게 보호하는 데 필요한 단계를 수행하�
 
 1. 모든 타사 소프트웨어 종속성(PHP, MariaDB, Elasticsearch, OpenSearch, Redis, RabbitMQ)의 지원되는 버전
 
-1. 클라우드에서 안전하고 지원되는 Adobe Commerce 버전입니다. 완전히 지원되는 버전에는 2.4.8, 2.4.9 또는 사용 가능한 최신 릴리스가 포함됩니다. [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy) 설명서를 참조하세요.
+1. 클라우드에서 안전하고 지원되는 Adobe Commerce 버전입니다. 완전히 지원되는 버전에는 2.4.8, 2.4.9 또는 사용 가능한 최신 릴리스가 포함됩니다. [라이프사이클 정책](/help/release/lifecycle-policy.md) 설명서를 참조하세요.
 
 클라우드 환경에서 Adobe Commerce을 보호하기 위해 조치를 취해야 하는지 확인하려면 아래 지침을 따르십시오. 아래 표 1에 요약된 기한까지 보안 요구 사항을 충족하지 않는 환경에서는 인바운드 트래픽이 중단되어 스토어프런트가 오프라인 상태가 됩니다. 기한 충족에 대해 우려되는 경우 가능한 한 빨리 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
 
@@ -145,8 +145,8 @@ Adobe은 이러한 소프트웨어 종속성을 직접 업그레이드하는 데
 
 | 클라우드에 있는 Adobe Commerce의 현재 버전 | 필수 작업 | 기한 |
 | --- |--- |--- |
-| 버전 2.4.4 또는 2.4.5 | Cloud 버전 2.4.9(또는 최신 버전)의 Adobe Commerce으로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: 버전 2.4.4 및 2.4.5에는 2027년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정만 제공됩니다. 여기에는 품질 수정 사항, 애플리케이션 종속 항목에 대한 호환성 지원(예: PHP) 또는 플랫폼 종속 업데이트가 포함되지 않습니다. Adobe의 [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)을 참조하세요. | 2027년 6월 1일 |
-| 버전 2.4.6 또는 2.4.7 | Cloud의 Adobe Commerce 버전 2.4.9(또는 최신 버전)로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: 버전 2.4.6은 2027년 8월 30일까지 확장 지원을 받으며 2028년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정만 받습니다. 버전 2.4.7은 2027년 5월 31일까지 표준 지원을 받고 2028년 5월 31일까지 확장 지원을 받게 됩니다. Adobe의 [라이프사이클 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/lifecycle-policy)을 참조하세요. | 2028년 6월 1일 |
+| 버전 2.4.4 또는 2.4.5 | Cloud 버전 2.4.9(또는 최신 버전)의 Adobe Commerce으로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: 버전 2.4.4 및 2.4.5에는 2027년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정만 제공됩니다. 여기에는 품질 수정 사항, 애플리케이션 종속 항목에 대한 호환성 지원(예: PHP) 또는 플랫폼 종속 업데이트가 포함되지 않습니다. Adobe의 [라이프사이클 정책](/help/release/lifecycle-policy.md)을 참조하세요. | 2027년 6월 1일 |
+| 버전 2.4.6 또는 2.4.7 | Cloud의 Adobe Commerce 버전 2.4.9(또는 최신 버전)로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오.<br>이유: 버전 2.4.6은 2027년 8월 30일까지 확장 지원을 받으며 2028년 5월 31일까지 핵심 응용 프로그램에 대한 제한적이고 격리된 보안 수정만 받습니다. 버전 2.4.7은 2027년 5월 31일까지 표준 지원을 받고 2028년 5월 31일까지 확장 지원을 받게 됩니다. Adobe의 [라이프사이클 정책](/help/release/lifecycle-policy.md)을 참조하세요. | 2028년 6월 1일 |
 | 버전 2.4.8 또는 2.4.9 | Adobe Commerce on Cloud 버전 업그레이드 작업은 필요하지 않습니다. 작업 1의 타사 소프트웨어 종속성 기한이 여전히 적용됩니다.<br>이유: 기한이 설정되지 않았습니다. | 해당 사항 없음 |
 
 #### 2단계: 업그레이드 또는 마이그레이션 경로 결정
@@ -178,7 +178,7 @@ Adobe은 지원되는 타사 소프트웨어 버전을 채택하거나, Cloud에
 
 **Cloud 버전 2.4.9에서 Adobe Commerce으로 업그레이드하도록 선택한 경우:**
 
-* **업그레이드 호환성 보고서:** Adobe은 업데이트가 필요한 모듈 및 파일, 중요한 문제 수 등을 포함하여 Adobe Commerce 버전 2.4.9로 업그레이드하는 데 필요한 사항을 정확히 식별하는 자세한 보고서를 제공합니다. 업그레이드 호환성 보고서를 생성하는 방법에 대한 자세한 내용은 [사이트 전체 분석 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access) 설명서를 참조하십시오.
+* **업그레이드 호환성 보고서:** Adobe은 업데이트가 필요한 모듈 및 파일, 중요한 문제 수 등을 포함하여 Adobe Commerce 버전 2.4.9로 업그레이드하는 데 필요한 사항을 정확히 식별하는 자세한 보고서를 제공합니다. 업그레이드 호환성 보고서를 생성하는 방법에 대한 자세한 내용은 [사이트 전체 분석 도구](/help/tools/site-wide-analysis-tool/access.md) 설명서를 참조하십시오.
 
 * **소프트웨어 종속성 업그레이드:** 소프트웨어 종속성을 직접 업그레이드할 수 없으므로 Adobe에서 [지원 티켓](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)을 열어 업그레이드를 처리하십시오. 자세한 내용은 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하세요.
 

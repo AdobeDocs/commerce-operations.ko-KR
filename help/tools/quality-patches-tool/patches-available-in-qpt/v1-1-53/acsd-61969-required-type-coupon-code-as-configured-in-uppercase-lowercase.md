@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: 4bdf797b-2570-49f8-8e03-952b49ed1d18
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ ACSD-61969 패치는 사용자가 쿠폰 코드를 대문자 또는 소문자로
 
 <u>재현 단계</u>:
 
-1. 특정 쿠폰 *[!UICONTROL Cart Price Rule]* TEST *을(를) 사용하여*&#x200B;을(를) 만듭니다. 쿠폰 코드가 대문자로 되어 있는지 확인하십시오.
+1. 특정 쿠폰 *TEST*&#x200B;을(를) 사용하여 *[!UICONTROL Cart Price Rule]*&#x200B;을(를) 만듭니다. 쿠폰 코드가 대문자로 되어 있는지 확인하십시오.
 1. 관리자에서 주문을 만듭니다.
-1. *필드에* test *[!UICONTROL Apply Coupon Code]*&#x200B;을(를) 추가하고 필드 근처의 화살표를 클릭하여 쿠폰을 적용합니다.
+1. *[!UICONTROL Apply Coupon Code]* 필드에 *test*&#x200B;을(를) 추가하고 필드 근처의 화살표를 클릭하여 쿠폰을 적용합니다.
 1. 결과를 확인합니다.
 
 <u>예상 결과</u>:
@@ -55,8 +55,8 @@ ACSD-61969 패치는 사용자가 쿠폰 코드를 대문자 또는 소문자로
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

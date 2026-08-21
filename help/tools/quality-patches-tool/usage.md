@@ -4,9 +4,9 @@ description: 품질 패치 도구 를 사용하여 Adobe Commerce에 대한 패�
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 상태 테이블에는 다음이 포함됩니다.
 
 - **유형**:
-   - `Optional` — [!DNL Quality Patches Tool] 및 [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko) 패키지의 모든 패치는 Adobe Commerce 설치에 선택 사항입니다.
-   - `Deprecated` — Adobe에서 개별 패치를 더 이상 사용하지 않습니다. 패치를 적용한 경우에는 되돌리는 것이 좋습니다. 되돌리기 작업도 상태 테이블에서 패치를 제거합니다.
+  - `Optional` — [!DNL Quality Patches Tool] 및 [Commerce on Cloud Infrastructure Guide > Apply patches](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) 패키지의 모든 패치는 Adobe Commerce 설치에 선택 사항입니다.
+  - `Deprecated` — Adobe에서 개별 패치를 더 이상 사용하지 않습니다. 패치를 적용한 경우에는 되돌리는 것이 좋습니다. 되돌리기 작업도 상태 테이블에서 패치를 제거합니다.
 
 - **상태**:
-   - `Applied` — 패치가 적용되었습니다.
-   - `Not applied` — 패치가 적용되지 않았습니다.
-   - `N/A` — 충돌로 인해 패치 상태를 정의할 수 없습니다.
+  - `Applied` — 패치가 적용되었습니다.
+  - `Not applied` — 패치가 적용되지 않았습니다.
+  - `N/A` — 충돌로 인해 패치 상태를 정의할 수 없습니다.
 
 - **세부 정보**:
-   - `Affected components` — 영향을 받는 모듈 목록입니다.
-   - `Required patches` — 표시된 패치가 제대로 작동하기 위해 적용해야 하는 패치 목록(종속성).
-   - `Recommended replacement` — 더 이상 사용되지 않는 패치의 권장 대체 패치입니다.
+  - `Affected components` — 영향을 받는 모듈 목록입니다.
+  - `Required patches` — 표시된 패치가 제대로 작동하기 위해 적용해야 하는 패치 목록(종속성).
+  - `Recommended replacement` — 더 이상 사용되지 않는 패치의 권장 대체 패치입니다.
 
 >[!INFO]
 >

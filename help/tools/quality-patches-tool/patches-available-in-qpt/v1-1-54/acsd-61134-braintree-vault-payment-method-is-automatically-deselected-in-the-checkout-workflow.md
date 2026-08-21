@@ -5,16 +5,16 @@ feature: Checkout
 role: Admin, Developer
 exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # ACSD-61134: *[!UICONTROL Braintree Vault]* 결제 방법이 체크아웃 워크플로우에서 자동으로 선택 해제되었습니다.
 
-ACSD-61134 패치는 쇼핑객이 *[!UICONTROL My billing and shipping address are the same]* 확인란을 선택 취소하여 청구 주소를 업데이트할 때 체크아웃 워크플로에서 *[!UICONTROL Braintree Vault]* 결제 방법이 자동으로 선택 취소되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-61134입니다. 이 문제는 Adobe Commerce 2.4.7-Beta1에서 수정됩니다.
+ACSD-61134 패치는 쇼핑객이 *[!UICONTROL My billing and shipping address are the same]* 확인란을 선택 취소하여 청구 주소를 업데이트할 때 체크아웃 워크플로에서 *[!UICONTROL Braintree Vault]* 결제 방법이 자동으로 선택 취소되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-61134입니다. 이 문제는 Adobe Commerce 2.4.7-Beta1에서 수정됩니다.
 
 ## 영향을 받는 제품 및 버전
 
@@ -55,7 +55,7 @@ Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.6-p8
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=ko).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
