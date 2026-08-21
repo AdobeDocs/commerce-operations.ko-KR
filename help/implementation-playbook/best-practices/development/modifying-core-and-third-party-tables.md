@@ -73,7 +73,7 @@ GraphQL Mesh에 대한 자세한 내용은 [GraphQL Mesh Gateway](https://develo
 
    예: `app/code/YourCompany/Customer`
 
-1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"} 참조).
+1. 모듈을 사용할 수 있는 파일을 만드십시오([모듈 만들기](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko){target="_blank"} 참조).
 
 1. `etc` 폴더에 `db_schema.xml` 파일을 만들고 적절하게 변경합니다.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## 큰 MySQL 테이블 찾기
 
-큰 테이블을 식별하려면 [데이터베이스에 연결](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) 문서에 설명된 대로 데이터베이스에 연결하고 다음 명령을 실행하십시오. 프로덕션 환경에 `project_id`을(를) 사용합니다. 스테이징 환경의 경우 `[project_id]_stg`, `[project_id]_stg2`을(를) 사용하십시오.
+큰 테이블을 식별하려면 [데이터베이스에 연결](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) 문서에 설명된 대로 데이터베이스에 연결하고 다음 명령을 실행하십시오. 프로덕션 환경에 `project_id`을(를) 사용합니다. 스테이징 환경의 경우 `[project_id]_stg`, `[project_id]_stg2`을(를) 사용하십시오.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

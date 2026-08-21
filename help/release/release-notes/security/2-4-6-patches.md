@@ -211,13 +211,13 @@ Adobe Commerce 2.4.6-p6 보안 릴리스는 이전 릴리스 2.4.6에서 식별�
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
 
-Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)&#x200B;(으)로 업그레이드해야 합니다.
+Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)&#x200B;(으)로 업그레이드해야 합니다.
 
 ### CVE-2024-34102용 핫픽스 적용
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)&#x200B;(으)로 업그레이드해야 합니다.
+Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)&#x200B;(으)로 업그레이드해야 합니다.
 
 ### 강조 표시
 
@@ -279,7 +279,7 @@ Adobe Commerce 2.4.6-p2 보안 릴리스는 이전 릴리스에서 식별된 취
 
 ### CVE-2022-31160용 핫픽스 적용
 
-`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
+`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
 
 ### 강조 표시
 
@@ -297,7 +297,7 @@ Adobe Commerce 2.4.6-p1 보안 릴리스는 이전 릴리스에서 식별된 취
 
 ### CVE-2022-31160용 핫픽스 적용
 
-`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [쿼리 UI 보안 취약점 CVE-2022-31160 수정 사항(2.4.4, 2.4.5 및 2.4.6 릴리스)에 지정된 패치를 적용해야 합니다](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서.
+`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [쿼리 UI 보안 취약점 CVE-2022-31160 수정 사항(2.4.4, 2.4.5 및 2.4.6 릴리스)에 지정된 패치를 적용해야 합니다](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서.
 
 #### 강조
 
@@ -329,6 +329,6 @@ Adobe Commerce 2.4.6-p1 보안 릴리스는 이전 릴리스에서 식별된 취
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  [안정성 태그](https://getcomposer.org/doc/04-schema.md#package-links)가 있는 B2B 보안 패키지에 대한 수동 종속성을 추가하여 이 문제를 해결할 수 있습니다. 자세한 내용은 [B2B 릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue)를 참조하세요.
+  [안정성 태그](https://getcomposer.org/doc/04-schema.md#package-links)가 있는 B2B 보안 패키지에 대한 수동 종속성을 추가하여 이 문제를 해결할 수 있습니다. 자세한 내용은 [B2B 릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ko#known-issue)를 참조하세요.
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

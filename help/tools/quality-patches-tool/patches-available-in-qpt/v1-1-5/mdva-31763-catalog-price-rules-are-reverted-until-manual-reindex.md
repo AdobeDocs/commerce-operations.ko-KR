@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-31763: 수동으로 다시 색인화할 때까지 카탈로그 가격 규칙이 되돌려짐'
-description: MDVA-31763 패치는 수동 색인 재지정 전까지 카탈로그 가격 규칙이 되돌아가는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-31763입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
+description: MDVA-31763 패치는 수동 색인 재지정 전까지 카탈로그 가격 규칙이 되돌아가는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-31763입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Catalog Management, Orders, Price Rules
 role: Admin
 exl-id: 1d144bfc-c26b-43d0-a80c-26a9c2d8ef32
@@ -67,7 +67,7 @@ MDVA-31763 패치는 수동 색인 재지정 전까지 카탈로그 가격 규�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

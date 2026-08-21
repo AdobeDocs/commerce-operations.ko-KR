@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-33606: 계층에 할당된 CMS 페이지를 저장할 때 사용자에게 오류가 발생했습니다.'
-description: MDVA-33606 패치는 계층 트리에 할당된 CMS 페이지를 저장할 때 사용자에게 *고유 제한 위반 발견* 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-33606입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
+description: MDVA-33606 패치는 계층 트리에 할당된 CMS 페이지를 저장할 때 사용자에게 *고유 제한 위반 발견* 오류가 발생하는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-33606입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.
 feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
@@ -64,7 +64,7 @@ MDVA-33606 패치는 계층 트리에 할당된 CMS 페이지를 저장할 때 �
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
