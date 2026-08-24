@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2845'
+ht-degree: 0%
 
 ---
 # 새로운 기능 템플릿
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 8월 19일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Symfony L2 캐시가 있는 Valkey로 이동하기 위한 더 명확한 온-프레미스와 클라우드 지침 및 새로운 마이그레이션 지침으로 Commerce 캐싱 설명서를 업데이트했습니다.<br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/caching-overview">캐싱 개요 및 구성 옵션</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/cache-types">캐시 프론트엔드 및 유형 구성</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/cache-options">캐시 백엔드 옵션 및 저장소 참조</a>.<br />- 성능 최적화를 위한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2 캐시 구성</a> 업데이트 <code>RemoteSynchronizedCache</code>에서 Symfony L2 캐시로 마이그레이션하기 위한 지침<br />- Symfony L2 캐시가 있는 Valkey로의 클라우드 특정 마이그레이션 단계 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Valkey 및 Redis 서비스 구성에 대한 모범 사례</a>.</p>
+</td>
+      <td>
+        주요 업데이트
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 8월 14일
 
