@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>Symfony L2 캐시가 있는 Valkey로 이동하기 위한 더 명확한 온-프레미스와 클라우드 지침 및 새로운 마이그레이션 지침으로 Commerce 캐싱 설명서를 업데이트했습니다.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview">캐싱 개요 및 구성 옵션</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types">캐시 프론트엔드 및 유형 구성</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options">캐시 백엔드 옵션 및 저장소 참조</a>.<br />- 성능 최적화를 위한 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2 캐시 구성</a> 업데이트 <code>RemoteSynchronizedCache</code>에서 Symfony L2 캐시로 마이그레이션하기 위한 지침<br />- Symfony L2 캐시가 있는 Valkey로의 클라우드 특정 마이그레이션 단계 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Valkey 및 Redis 서비스 구성에 대한 모범 사례</a>.</p>
+      <td><p>Symfony L2 캐시가 있는 Valkey로 이동하기 위한 더 명확한 온-프레미스와 클라우드 지침 및 새로운 마이그레이션 지침으로 Commerce 캐싱 설명서를 업데이트했습니다.<br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/caching-overview">캐싱 개요 및 구성 옵션</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/cache-types">캐시 프론트엔드 및 유형 구성</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/cache-options">캐시 백엔드 옵션 및 저장소 참조</a>.<br />- 성능 최적화를 위한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2 캐시 구성</a> 업데이트 <code>RemoteSynchronizedCache</code>에서 Symfony L2 캐시로 마이그레이션하기 위한 지침<br />- Symfony L2 캐시가 있는 Valkey로의 클라우드 특정 마이그레이션 단계 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Valkey 및 Redis 서비스 구성에 대한 모범 사례</a>.</p>
 </td>
       <td>
         주요 업데이트
@@ -45,7 +45,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>고객이 Cloud UI에서 서비스 종속 항목의 버전을 확인하는 방법에 대한 단계가 업데이트되었으며, 고객이 스토어에 대한 업그레이드 호환성 보고서를 생성하는 방법에 대한 가이드 링크를 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">타사 소프트웨어 종속 항목을 확인 및 업그레이드</a>에서 업데이트했습니다.</p>
+      <td><p>고객이 Cloud UI에서 서비스 종속 항목의 버전을 확인하는 방법에 대한 단계가 업데이트되었으며, 고객이 스토어에 대한 업그레이드 호환성 보고서를 생성하는 방법에 대한 가이드 링크를 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">타사 소프트웨어 종속 항목을 확인 및 업그레이드</a>에서 업데이트했습니다.</p>
 </td>
       <td>
         기술
@@ -67,7 +67,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 필터 이름을 알 수 없는 GraphQL 요청으로 인해 PHP 예외 로그가 발생했습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 필터 이름을 알 수 없는 GraphQL 요청으로 인해 PHP 예외 로그가 발생했습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -75,7 +75,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 과도한 메모리 사용으로 인한 메모리 부족 오류</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 과도한 메모리 사용으로 인한 메모리 부족 오류</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -105,7 +105,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>프로덕션 용도로는 권장되지 않으며 업그레이드 호환성을 위해서만 제공되므로 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9 릴리스 정보</a>에서 지원되는 PHP 버전으로 PHP 8.4를 제거했습니다.</p>
+      <td><p>프로덕션 용도로는 권장되지 않으며 업그레이드 호환성을 위해서만 제공되므로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9 릴리스 정보</a>에서 지원되는 PHP 버전으로 PHP 8.4를 제거했습니다.</p>
 </td>
       <td>
         릴리스 정보, 기술
@@ -113,7 +113,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 비동기 인덱싱이 활성화된 경우 지연되면서 새 주문이 관리 주문 그리드에 나타납니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 비동기 인덱싱이 활성화된 경우 지연되면서 새 주문이 관리 주문 그리드에 나타납니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -121,7 +121,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. Page Builder 텍스트 인라인 편집은 이식 가능한 지시문 대신 절대 미디어 URL을 저장합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. Page Builder 텍스트 인라인 편집은 이식 가능한 지시문 대신 절대 미디어 URL을 저장합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -129,7 +129,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">릴리스된 버전</a> 페이지의 여러 Adobe Commerce 릴리스 라인에 대한 지원 종료, 확장 지원 및 추가 보안 수정 프로비저닝 날짜가 수정되고 완료되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/versions">릴리스된 버전</a> 페이지의 여러 Adobe Commerce 릴리스 라인에 대한 지원 종료, 확장 지원 및 추가 보안 수정 프로비저닝 날짜가 수정되고 완료되었습니다.</p>
 </td>
       <td>
         기술
@@ -151,7 +151,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>RabbitMQ 3.13을 Adobe Commerce 2.4.4-p18(최신)에 대해 지원되는 버전으로 추가하도록 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트하여 Debian OS 업그레이드 경로에 대한 차단을 해결했습니다.</p>
+      <td><p>RabbitMQ 3.13을 Adobe Commerce 2.4.4-p18(최신)에 대해 지원되는 버전으로 추가하도록 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트하여 Debian OS 업그레이드 경로에 대한 차단을 해결했습니다.</p>
 </td>
       <td>
         기술
@@ -173,7 +173,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797: Admin WYSIWYG 편집기 및 Page Builder 블록 4바이트 유니코드 문자(utf8mb4가 지원되는 경우)에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797: Admin WYSIWYG 편집기 및 Page Builder 블록 4바이트 유니코드 문자(utf8mb4가 지원되는 경우)에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -181,7 +181,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c97bb9c77eb0ec4bbc92d042cfa9fd440e970ca7">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682: 견적을 확인하는 Storefront 페이지 </a>에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682: 견적을 확인하는 Storefront 페이지 </a>에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -189,7 +189,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ceac870e3ccb9eeee64e3b574aaccd33c6ab69d0">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL query requisition_lists는 페이지 매김이 있는 잘못된 total_count를 반환합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL query requisition_lists는 페이지 매김이 있는 잘못된 total_count를 반환합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -197,7 +197,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19f854db1a0ff78d0a6dca070b4b6db09d3de83e">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 제품 알림 이메일은 저장소 보기 이메일 설정을 무시합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 제품 알림 이메일은 저장소 보기 이메일 설정을 무시합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -205,7 +205,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/907df07e641ab7124353f89ca799f92d097aa54f">커밋</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce 2.4.9 지원을 사용하여 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">제품 가용성</a> 표를 업데이트하고 2.4.3 이후 핵심 제품에 포함된 Page Builder 항목을 제거했습니다.</p>
+      <td><p>Adobe Commerce 2.4.9 지원을 사용하여 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability">제품 가용성</a> 표를 업데이트하고 2.4.3 이후 핵심 제품에 포함된 Page Builder 항목을 제거했습니다.</p>
 </td>
       <td>
         주요 업데이트
@@ -227,7 +227,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 다중 웹 사이트 상점</a>의 보조 웹 사이트에서 제공되는 잘못된 웹 사이트 제한 CMS 페이지입니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 다중 웹 사이트 상점</a>의 보조 웹 사이트에서 제공되는 잘못된 웹 사이트 제한 CMS 페이지입니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -249,7 +249,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce 2.4.6, 2.4.7 및 2.4.8용 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability">제품 가용성</a>에서 B2B 확장 버전 지원 매트릭스를 수정했습니다.</p>
+      <td><p>Adobe Commerce 2.4.6, 2.4.7 및 2.4.8용 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/product-availability">제품 가용성</a>에서 B2B 확장 버전 지원 매트릭스를 수정했습니다.</p>
 </td>
       <td>
         기술
@@ -271,7 +271,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 사용자의 공유 카탈로그에 할당되지 않은 경우 관리자가 기본 카탈로그 제품을 견적에 추가할 수 없습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 사용자의 공유 카탈로그에 할당되지 않은 경우 관리자가 기본 카탈로그 제품을 견적에 추가할 수 없습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -293,7 +293,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy">보안 정책: 지원되지 않는 버전 또는 타사 소프트웨어 종속성을 실행하는 Cloud에서 Adobe Commerce을 업그레이드하는 데 대한 요구 사항, 일정 및 지침을 설명하기 위해 Cloud에서 Adobe Commerce 고객이 수행해야 하는 작업 및 기한</a>이 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/security-enforcement-policy">보안 정책: 지원되지 않는 버전 또는 타사 소프트웨어 종속성을 실행하는 Cloud에서 Adobe Commerce을 업그레이드하는 데 대한 요구 사항, 일정 및 지침을 설명하기 위해 Cloud에서 Adobe Commerce 고객이 수행해야 하는 작업 및 기한</a>이 추가되었습니다.</p>
 </td>
       <td>
         새 주제
@@ -315,7 +315,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 첫 번째 판매 가능한 자식이 목록</a>의 뒷부분에 나타나면 구성 가능한 제품에 대한 체크아웃 요청이 느려집니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 첫 번째 판매 가능한 자식이 목록</a>의 뒷부분에 나타나면 구성 가능한 제품에 대한 체크아웃 요청이 느려집니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -323,7 +323,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 보상 포인트 기록이 큰 스토어에서 보상 포인트 만료가 느리게 실행됩니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 보상 포인트 기록이 큰 스토어에서 보상 포인트 만료가 느리게 실행됩니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -331,7 +331,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875: 관리자가 큰 주소록으로 고객 계정을 열 때 로그아웃한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875: 관리자가 큰 주소록으로 고객 계정을 열 때 로그아웃한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -353,7 +353,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">개요: QPT(품질 패치 도구) v1.1.82</a>이(가) 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">개요: QPT(품질 패치 도구) v1.1.82</a>이(가) 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -375,7 +375,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce 2.4.9에 대한 MariaDB Cloud 버전 지원 세부 정보로 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트했습니다(12.3 권장, 11.8 지원).</p>
+      <td><p>Adobe Commerce 2.4.9에 대한 MariaDB Cloud 버전 지원 세부 정보로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트했습니다(12.3 권장, 11.8 지원).</p>
 </td>
       <td>
         기술
@@ -397,7 +397,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>RabbitMQ 4.3 업데이트 및 MariaDB 12.3과의 호환성을 확인하는 등 클라우드 서비스 버전에 대한 최신 Commerce으로 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 항목을 업데이트했습니다.</p>
+      <td><p>RabbitMQ 4.3 업데이트 및 MariaDB 12.3과의 호환성을 확인하는 등 클라우드 서비스 버전에 대한 최신 Commerce으로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 항목을 업데이트했습니다.</p>
 </td>
       <td>
         주요 업데이트
@@ -419,7 +419,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: 구성 가능한 제품 리디렉션이 유지 관리 페이지로 리디렉션되는 홈 페이지의 예약된 업데이트 미리 보기</a>에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: 구성 가능한 제품 리디렉션이 유지 관리 페이지로 리디렉션되는 홈 페이지의 예약된 업데이트 미리 보기</a>에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -427,7 +427,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 웹 사이트 범위 관리자 사용자는 페이지 빌더에 동적 블록을 저장할 수 없습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 웹 사이트 범위 관리자 사용자는 페이지 빌더에 동적 블록을 저장할 수 없습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -449,7 +449,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. Admin</a>에서 협상 가능한 견적을 다시 구성할 때 번들 제품 옵션 수량이 업데이트되지 않습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. Admin</a>에서 협상 가능한 견적을 다시 구성할 때 번들 제품 옵션 수량이 업데이트되지 않습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -457,7 +457,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. AWS S3 원격 저장소가 구성되면</a> 제품 내보내기가 실패합니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. AWS S3 원격 저장소가 구성되면</a> 제품 내보내기가 실패합니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -479,7 +479,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 긴 제품 이름이 페이지 나누기 </a> 후 여러 페이지 판매 PDF에서 인접한 열과 겹칩니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 긴 제품 이름이 페이지 나누기 </a> 후 여러 페이지 판매 PDF에서 인접한 열과 겹칩니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -501,7 +501,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: 관리자 고객 그룹 변경 후 상점 카탈로그 권한이 업데이트되지 않음</a>에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: 관리자 고객 그룹 변경 후 상점 카탈로그 권한이 업데이트되지 않음</a>에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -509,7 +509,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 판매가 불가능한 제품은 확정된 협상 가능한 가격에서 사라집니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 판매가 불가능한 제품은 확정된 협상 가능한 가격에서 사라집니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -517,7 +517,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">커밋</a></td>
     </tr>
     <tr>
-      <td><p>월별 Commerce 보안 패치 상태 보고를 위해 가용성, 보고서 생성, JSON 및 CSV 출력, 문제 해결 및 릴리스 정보가 포함된 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro">Adobe Commerce 버전 도구 설명서</a>가 추가되었습니다.</p>
+      <td><p>월별 Commerce 보안 패치 상태 보고를 위해 가용성, 보고서 생성, JSON 및 CSV 출력, 문제 해결 및 릴리스 정보가 포함된 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/commerce-version-tool/intro">Adobe Commerce 버전 도구 설명서</a>가 추가되었습니다.</p>
 </td>
       <td>
         새 주제
@@ -539,7 +539,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">개요: QPT(품질 패치 도구) v1.1.81</a>이(가) 추가되었습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">개요: QPT(품질 패치 도구) v1.1.81</a>이(가) 추가되었습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -561,7 +561,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 비동기 인덱싱이 활성화되었을 때</a> 판매 주문 보관 그리드에 잘못된 주문 상태가 표시됩니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 비동기 인덱싱이 활성화되었을 때</a> 판매 주문 보관 그리드에 잘못된 주문 상태가 표시됩니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -583,7 +583,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 관리 그리드 날짜 필터가 시간대 불일치로 인해 결과를 반환하지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 관리 그리드 날짜 필터가 시간대 불일치로 인해 결과를 반환하지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -605,7 +605,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 주문 취소 후 번들 제품 판매성이 잘못 계산되었습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 주문 취소 후 번들 제품 판매성이 잘못 계산되었습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -627,7 +627,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: PayPal 온라인 주문 환불이 실패하고 오류 "PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다."</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: PayPal 온라인 주문 환불이 실패하고 오류 "PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다."</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -635,7 +635,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/056f30558d8d9f3e218f589e2819ec5d8d6274e3">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 간헐적으로 New Relic 스크립트 재귀로 인해 iOS Safari에서 장바구니에 추가가 실패합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 간헐적으로 New Relic 스크립트 재귀로 인해 iOS Safari에서 장바구니에 추가가 실패합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -643,7 +643,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95cfe4554c4501fa9526e0c8b0c039cf99228207">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626: Storefront JavaScript 파일이 두 번 로드되어 중복 로드 및 불안정한 동작이 발생합니다</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626: Storefront JavaScript 파일이 두 번 로드되어 중복 로드 및 불안정한 동작이 발생합니다</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -651,7 +651,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. USPS 배송 방법을 사용할 수 없거나 다중 패키지 주문에 적합하지 않습니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. USPS 배송 방법을 사용할 수 없거나 다중 패키지 주문에 적합하지 않습니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -659,7 +659,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: sales_clean_quotes cron</a>의 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: sales_clean_quotes cron</a>의 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -681,7 +681,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488: 큰 속성 집합에 대한 느린 관리 제품 저장/편집</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488: 큰 속성 집합에 대한 느린 관리 제품 저장/편집</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -689,7 +689,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac57acc5c527f1c7cc7dbd3198f23e75f08fe207">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. Analytics 크론 작업은 실행 중 성능을 저하합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. Analytics 크론 작업은 실행 중 성능을 저하합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -697,7 +697,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0b7826459c116ef03a34f0a01e5db235294c3cb1">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552: GraphQL 응답이 회사 상태를 반환하지 않음</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552: GraphQL 응답이 회사 상태를 반환하지 않음</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -719,7 +719,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: Storefront</a>에서 측정 단위 없이 제품 무게가 표시됩니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: Storefront</a>에서 측정 단위 없이 제품 무게가 표시됩니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -727,7 +727,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/538221930434b21b92d587fd889e556564a0a45c">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472: "고객으로 로그인" 흐름</a>을 사용하여 만든 Null 인용 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472: "고객으로 로그인" 흐름</a>을 사용하여 만든 Null 인용 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -735,7 +735,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49b49560901525aa9e635eb0ea6542339270cabf">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653: 장바구니 가격 규칙 범주 범위 조건이 REST API에서 누락됨</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653: 장바구니 가격 규칙 범주 범위 조건이 REST API에서 누락됨</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -757,7 +757,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview">구성 안내서</a>의 캐시 구성 항목 전체에 걸쳐 클라우드와 온-프레미스 범위를 명확히 하고 클라우드 배포에 대한 Commerce의 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis 및 Valkey 서비스 구성에 대한 모범 사례</a>를 업데이트했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/caching-overview">구성 안내서</a>의 캐시 구성 항목 전체에 걸쳐 클라우드와 온-프레미스 범위를 명확히 하고 클라우드 배포에 대한 Commerce의 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis 및 Valkey 서비스 구성에 대한 모범 사례</a>를 업데이트했습니다.</p>
 </td>
       <td>
         피드백
@@ -765,7 +765,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. REST API 배송 주소 유효성 검사가 관리자 특성 구성을 무시합니다</a>.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. REST API 배송 주소 유효성 검사가 관리자 특성 구성을 무시합니다</a>.</p>
 </td>
       <td>
         새 주제, qpt
@@ -773,7 +773,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/897bbc5b6624dfe17deac6ca878669a5245c34ea">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. URL에 스토어 코드</a>이 포함된 경우 자리 표시자 이미지가 Storefront에서 로드되지 않습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. URL에 스토어 코드</a>이 포함된 경우 자리 표시자 이미지가 Storefront에서 로드되지 않습니다.</p>
 </td>
       <td>
         새 주제, qpt
