@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## [!DNL Patching Automation]에 액세스 중
 
-[!DNL Patching Automation]은(는) [!DNL Site-Wide Analysis Tool] 대시보드에서 탭으로 사용할 수 있습니다. 관리 사이드바에서 **보고서** > **시스템 인사이트** > **사이트 전체 분석 도구**&#x200B;로 이동하여 관리 패널에서 액세스할 수 있습니다. 필수 구성 요소 및 권한 설정에 대해서는 [사이트 전체 분석 도구에 액세스하는 방법](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)을 참조하십시오.
+[!DNL Patching Automation]은(는) [!DNL Site-Wide Analysis Tool] 대시보드에서 탭으로 사용할 수 있습니다. 관리 사이드바에서 **보고서** > **시스템 인사이트** > **사이트 전체 분석 도구**&#x200B;로 이동하여 관리 패널에서 액세스할 수 있습니다. 필수 구성 요소 및 권한 설정에 대해서는 [사이트 전체 분석 도구에 액세스하는 방법](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access)을 참조하십시오.
 
 대시보드에 들어가면 다음 작업을 수행합니다.
 

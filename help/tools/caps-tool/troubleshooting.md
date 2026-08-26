@@ -179,7 +179,7 @@ ht-degree: 0%
 
 **원인:** 일시적인 문제로 인해 서비스가 GitHub에 연결되지 않았습니다.
 
-**해결 방법:** 몇 분 정도 기다린 후 작업을 다시 시도하십시오. 오류가 계속되면 [Adobe Commerce Cloud 지원](https://experienceleague.adobe.com/home#support)에 문의하십시오.
+**해결 방법:** 몇 분 정도 기다린 후 작업을 다시 시도하십시오. 오류가 계속되면 [Adobe Commerce Cloud 지원](https://experienceleague.adobe.com/home?lang=ko#support)에 문의하십시오.
 
 #### &quot;환경이 시간 제한 내에 만들어지지 않음&quot;(GitHub 연결 프로젝트)
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 **원인:** 프로젝트의 GitHub 통합에서 `fetch-branches` 옵션이 비활성화되었습니다. 그 결과 서비스에 의해 푸시된 임시 분기는 동기화되지 않고 통합 환경이 생성되지 않습니다.
 
-**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL Patching Automation]](github-integration.md)을 참조하세요.
+**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL Patching Automation]](github-integration.md)을 참조하세요.
 
 ### 환경 활성화 오류
 
@@ -200,10 +200,10 @@ ht-degree: 0%
 **세부 정보에 Composer 또는 Adobe Commerce 패키지가 언급되는 경우:**
 
 * [https://account.magento.com/](https://account.magento.com/)에 로그인하거나 계정 소유자에게 문의하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
-* 프로젝트의 Composer 공개/개인 키 쌍이 올바른지 확인하십시오. [인증 키](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하십시오.
+* 프로젝트의 Composer 공개/개인 키 쌍이 올바른지 확인하십시오. [인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하십시오.
 * [https://account.magento.com/](https://account.magento.com/)에 로그인하거나 계정 소유자에게 요청하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
-* 프로젝트의 Composer 공개 및 개인 인증 키가 올바른지 확인합니다. [인증 키](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하세요.
-* 오류 메시지에 이름이 인 패키지를 Commerce 버전에 사용할 수 있는지 확인합니다. [Adobe Commerce 패키지](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)를 참조하세요.
+* 프로젝트의 Composer 공개 및 개인 인증 키가 올바른지 확인합니다. [인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하세요.
+* 오류 메시지에 이름이 인 패키지를 Commerce 버전에 사용할 수 있는지 확인합니다. [Adobe Commerce 패키지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/packages/adobe-commerce)를 참조하세요.
 
 **세부 정보에 환경 슬롯 또는 리소스가 언급되는 경우:**
 
@@ -249,7 +249,7 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce 설치 안내서](/help/installation/overview.md)
 * [패치 자동화 소개](intro.md)
 * [액세스 방법](access.md)

@@ -24,11 +24,11 @@ ht-degree: 0%
 * **Adobe Commerce Cloud 계정**
   * 활성 Adobe Commerce Cloud 구독
   * 유효한 Adobe Commerce 라이선스
-  * Adobe Commerce 저장소에 액세스하도록 구성된 [작성기 인증 키](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+  * Adobe Commerce 저장소에 액세스하도록 구성된 [작성기 인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * 프로젝트 및 환경 권한
 
 * **환경 리소스**
-  * 프로젝트에 패치 작업을 위한 추가 활성 통합 환경을 만들 수 있는 용량이 있습니다. 활성 환경 제한에 대한 자세한 내용은 [Cloud Console을 사용하여 분기 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)를 참조하십시오.
+  * 프로젝트에 패치 작업을 위한 추가 활성 통합 환경을 만들 수 있는 용량이 있습니다. 활성 환경 제한에 대한 자세한 내용은 [Cloud Console을 사용하여 분기 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/console-branches)를 참조하십시오.
   * 충분한 스토리지, CPU 및 메모리 리소스
   * Adobe 저장소에 대한 네트워크 액세스
   * 동기화를 위한 안정적인 상위 환경

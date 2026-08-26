@@ -82,7 +82,7 @@ ht-degree: 0%
 
 **데이터 복제 없음** - 통합 환경이 대상 환경의 데이터(데이터베이스, 미디어 또는 기타 저장된 콘텐츠) 복사본을 받지 않습니다. 코드베이스만 사용하여 패치를 적용하고 확인합니다
 
-**리소스 요구 사항** - 클라우드 프로젝트의 총 저장소 용량이 계약에 정의되어 있습니다. 계정 페이지 또는 `magento-cloud subscription:info`을(를) 통해 확인하세요. 각 환경의 디스크 할당은 `.magento.app.yaml`/`.magento/services.yaml`의 `disk` 속성을 통해 별도로 구성됩니다. 자세한 내용은 [디스크 공간 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)를 참조하십시오. 저장소 제한으로 인해 패치 작업이 실패하는 경우 구성된 할당에 대해 통합 환경의 디스크 사용량(`magento-cloud db:size` / `magento-cloud mount:size`)을 확인하십시오.
+**리소스 요구 사항** - 클라우드 프로젝트의 총 저장소 용량이 계약에 정의되어 있습니다. 계정 페이지 또는 `magento-cloud subscription:info`을(를) 통해 확인하세요. 각 환경의 디스크 할당은 `.magento.app.yaml`/`.magento/services.yaml`의 `disk` 속성을 통해 별도로 구성됩니다. 자세한 내용은 [디스크 공간 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)를 참조하십시오. 저장소 제한으로 인해 패치 작업이 실패하는 경우 구성된 할당에 대해 통합 환경의 디스크 사용량(`magento-cloud db:size` / `magento-cloud mount:size`)을 확인하십시오.
 
 #### 2b 단계: 통합 환경에서 애플리케이션 패치 적용
 
