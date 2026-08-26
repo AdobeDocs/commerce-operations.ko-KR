@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -1046,6 +1046,7 @@ ht-degree: 0%
       - [ACP2E-4709: 페이지 계층에 큰따옴표가 포함된 경우 CMS 페이지가 페이지 빌더에 저장되지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4840: GraphQL 제품 쿼리가 사용자 정의 재고 재고의 재고 제품에 대해 null 수량을 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
       - [ACP2E-4695: 과도한 메모리 사용으로 인한 메모리 부족 실패의 카탈로그 규칙 인덱서](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
       - [ACP2E-4194: 알 수 없는 필터 이름을 가진 GraphQL 요청으로 인해 PHP 예외 로그가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: 페이지 빌더 텍스트 인라인 편집은 이식 가능한 지시문 대신 절대 미디어 URL을 저장합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
@@ -1106,6 +1107,6 @@ ht-degree: 0%
     - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
     - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
   - 리소스 {#resources}
-    - [문제 해결](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [문제 해결](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)

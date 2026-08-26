@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
 workflow-type: tm+mt
 source-wordcount: 703
 ht-degree: 0%
@@ -44,9 +44,9 @@ QPT v1.1.82에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: 페이지 빌더 텍스트 콘텐츠에서 이미지를 다시 편집하면 이식 가능한 미디어 지시문을 유지하는 대신 절대 미디어 URL을 저장할 수 있는 문제를 해결했습니다.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: 데이터베이스가 utf8mb4를 지원하도록 구성된 경우에도 관리자의 WYSIWYG 편집기 또는 페이지 빌더 콘텐츠에 4바이트 유니코드 문자 입력이 잘못 차단되는 문제를 해결했습니다.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 실행되어 보상 포인트 만료가 지연되는 문제를 해결했습니다.
+1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**: `products` GraphQL 쿼리에서 요청한 수량 값이 null을 반환하는 문제를 해결했습니다.
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: `requisition_lists GraphQL` 쿼리가 쿼리 기준과 일치하는 총 구매요청 목록 수 대신 현재 페이지의 항목 수만 반영하는 `total_count` 값을 반환하는 문제를 해결했습니다.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: 첫 번째 판매 가능한 하위 제품이 목록에 늦게 나타날 때 하위 제품이 많은 구성 가능한 제품에 대해 체크아웃 API 요청이 상당히 느려지는 문제를 해결했습니다.
-1. **ACP2E-4840**: `products` GraphQL 쿼리에서 요청한 수량 값이 *null*&#x200B;을 반환하는 문제를 해결했습니다.
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: 제품 경고 전자 메일 알림이 스토어 보기 전자 메일 설정을 무시하는 문제를 해결했습니다.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: 관리자에서 주소록이 큰 고객 계정을 볼 때 예기치 않게 관리자 사용자가 기록되는 문제가 해결되었습니다.
 1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: 대량 저장소에서 **[!UICONTROL Asynchronous Indexing]**&#x200B;을(를) 사용하도록 설정한 경우 새 주문이 Admin Order Management 그리드에 표시되는 것이 지연되는 문제를 해결했습니다.
