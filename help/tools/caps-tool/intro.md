@@ -52,7 +52,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Patching Automation]에 대해 알아보고 이 도구를 사용하여 보안 패치를 빠르게 찾고 적용하는 방법에 대해 알아봅니다. 다음 비디오에서는 SWAT(Site-Wide Analysis Tool) 대시보드를 통해 프로젝트에 액세스하고, 프로젝트 및 환경을 선택하고, 패치를 적용하는 방법을 한 번의 클릭으로 다룹니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476254/?captions=kor&learn=on&enablevpops)
 
 ## 일반적인 사용 사례
 
