@@ -1,17 +1,17 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)] 문제 해결 안내서'
-description: ' [!DNL Cloud Automation Patching Service (CAPS)]의 일반적인 문제 및 오류 메시지 해결'
+title: '[!DNL Adobe Commerce Patching Automation] 문제 해결 안내서'
+description: ' [!DNL Adobe Commerce Patching Automation]의 일반적인 문제 및 오류 메시지 해결'
 hide: true
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)] 문제 해결 안내서
+# [!DNL Adobe Commerce Patching Automation] 문제 해결 안내서
 
-패치 작업에 [!DNL CAPS]을(를) 사용할 때 오류 메시지와 함께 성공적인 패치 적용 또는 전환을 방해하는 문제가 발생할 수 있습니다. 이 안내서에서는 가장 일반적인 문제에 대한 해결 방법을 제공합니다.
+패치 작업에 [!DNL Patching Automation]을(를) 사용할 때 오류 메시지와 함께 성공적인 패치 적용 또는 전환을 방해하는 문제가 발생할 수 있습니다. 이 안내서에서는 가장 일반적인 문제에 대한 해결 방법을 제공합니다.
 
 ## 빠른 문제 해결 단계
 
@@ -22,6 +22,10 @@ ht-degree: 0%
 * 기술적인 세부 정보는 오류 로그를 확인하십시오.
 * 이 안내서에 제공된 솔루션을 따르십시오.
 
+>[!TIP]
+>
+>Cloud Console에서는 임시 통합 환경이 삭제된 후에도 프로젝트의 활동 피드에서 배포 로그를 사용할 수 있습니다.
+
 ### 패치 작업 기간
 
 대부분의 환경에서 다음 타임라인은 패치 작업에 걸리는 시간을 설명하지만 환경 크기와 복잡성에 따라 더 오래 걸릴 수 있습니다.
@@ -30,6 +34,10 @@ ht-degree: 0%
 * **패치 중:** 5-15분
 * **사후 처리:** 10~40분
 * **전체:** 15-60분
+
+>[!NOTE]
+>
+>사후 처리 시간은 환경의 자체 배포 기록에서 예상되므로 비정상적으로 빠른 배포 환경 또는 느린 배포 환경의 경우 위의 범위 밖에 있을 수 있습니다.
 
 ### 진행 중인 패치 취소
 
@@ -47,9 +55,23 @@ ht-degree: 0%
 
 ## 일반적인 오류 메시지 및 솔루션
 
+>[!NOTE]
+>
+>가능한 모든 오류가 아래에 나열되는 것은 아닙니다. 사전 검사 중 목록에 없는 실패는 일반 &quot;사전 검사 중 오류&quot;로 표시되며, 유효성 검사 중 목록에 없는 실패는 일반 &quot;사후 처리 중 오류&quot;로 표시됩니다. 어느 쪽이든 정확한 오류 텍스트를 입력하여 지원 센터에 문의하십시오. 패치하는 동안 예기치 않은 오류가 일반 폴백 대신 원시 기본 오류 메시지를 직접 표시합니다.
+
+### 환경 준비 오류
+
+#### &quot;마지막 배포가 실패했습니다. 패치를 적용하거나 되돌리기 전에 환경이 안정적인지 확인하십시오.&quot;
+
+**발생할 때:** 패치 관련 유효성 검사 전 사전 검사 시작 시
+
+**원인:** 대상 환경의 최신 배포가 완료되지 않았습니다
+
+**해결 방법:** 대상 환경을 다시 배포하고 배포가 성공적으로 완료되었는지 확인합니다(Cloud Console에서 해당 배포 로그 확인). 그런 다음 패치 작업을 다시 시도합니다.
+
 ### 패치 응용 프로그램 오류
 
-#### &quot;[!DNL CAPS]이(가) 코드베이스 또는 패치 파일에서 이러한 문제를 감지했으므로 패치를 적용할 수 없습니다.&quot;
+#### &quot;[!DNL Patching Automation]이(가) 코드베이스 또는 패치 파일에서 이러한 문제를 감지했으므로 패치를 적용할 수 없습니다.&quot;
 
 **발생할 때:** 사전 확인 중
 
@@ -62,11 +84,11 @@ ht-degree: 0%
 * 패치가 Adobe Commerce 버전과 호환되는지 확인합니다
 * 수동으로 충돌 해결을 고려하거나 지원 팀에 문의
 
-#### &quot;이 패치는 [!DNL CAPS]에서 관리되지 않습니다. 되돌릴 수 없음&quot;
+#### &quot;[!DNL Patching Automation]을(를) 통해 적용되지 않은 패치를 되돌리려고 합니다. 패치가 수동으로 적용되었을 가능성이 높습니다.&quot;
 
 **되돌리기 작업 중** 발생 시
 
-**원인:** [!DNL CAPS]을(를) 통해 적용되지 않은 패치를 되돌리려고 합니다.
+**원인:** [!DNL Patching Automation]을(를) 통해 적용되지 않은 패치를 되돌리려고 합니다.
 
 **해결 방법:** 원래 패치를 적용하는 데 사용한 것과 동일한 방법을 사용하거나 지원 팀에 문의하여 지원을 받으십시오
 
@@ -74,17 +96,28 @@ ht-degree: 0%
 
 #### &quot;환경이 상위 항목과 동기화되지 않음&quot;
 
-유효성 검사 중 **발생하는 경우:**
+**발생할 때:** 유효성 검사 중에 동기화 사전 검사에서 통합 환경을 대상 환경에 병합하기 전에
 
-**원인:** 통합 환경이 상위 환경과 다릅니다.
+**원인:** 통합 환경이 상위 환경과 다릅니다. 일반적으로 패치를 테스트하는 동안 대상 환경이 변경되었기 때문입니다
 
 **솔루션:**
 
-* 환경을 상위 분기와 동기화
-* 패치 작업 다시 시도
+* 대상 환경이 안정되면 패치 작업을 다시 시도하십시오.
+* 패치 작업이 진행되는 동안에는 대상 환경을 변경하지 마십시오
 * 동기화 문제가 지속되는 경우 지원 센터에 문의
 
-#### &quot;프로덕션 환경 보호 장치가 충족되지 않음&quot;
+#### &quot;병합 후 확인 실패: 병합 후 환경이 동기화되지 않습니다.&quot;
+
+**발생할 때:** 유효성 검사 중에 통합 환경이 이미 대상 환경에 병합된 후
+
+**원인:** 병합 후 두 환경 코드의 코드가 일치하지 않습니다. 일반적으로 실제 충돌이 아닌 임시 Platform.sh API 전파 지연입니다
+
+**솔루션:**
+
+* 몇 분 정도 기다린 후 환경 상태를 다시 확인하십시오. 이 문제는 종종 저절로 해결됩니다
+* 몇 분 후에도 환경이 일치하지 않으면 Adobe 지원 센터에 문의하십시오.
+
+#### &quot;cron이 활성화되고 유지 관리 모드가 비활성화된 경우 프로덕션 환경에서 패치 작업을 만들 수 없습니다. 패치를 적용하기 전에 유지 관리 모드를 활성화하고 크론 작업을 비활성화하십시오.&quot;
 
 **발생할 때:** 프로덕션 환경에 대한 사전 검사 중
 
@@ -95,57 +128,31 @@ ht-degree: 0%
 * 프로덕션 스토어에 대한 유지 관리 모드 활성화
 * 프로덕션 환경에서 크론 작업 비활성화
 * 다시 시도하기 전에 두 조건이 모두 충족되는지 확인하십시오
+* 또는 UI에서 무시 확인란을 선택하여 이러한 검사를 건너뛰고 계속 진행합니다. 이러한 안전 장치를 사용하지 않고 프로덕션을 패치할 위험을 알고 있는 경우에만 재정의 옵션을 사용하십시오
 
 >[!IMPORTANT]
 >
-> [!DNL CAPS]은(는) 유지 관리 모드를 자동으로 활성화하거나 cron 작업을 비활성화하지 않습니다. 외부에서 수행해야 합니다.
+> [!DNL Patching Automation]은(는) 유지 관리 모드를 자동으로 활성화하거나 cron 작업을 비활성화하지 않습니다. 외부에서 수행해야 합니다.
 
-#### &quot;패치가 적용되었지만 상태 검사에 실패했습니다. 되돌리기를 고려하십시오.&quot;
+#### &quot;패치 작업이 완료되었지만 환경 상태 검사가 실패했습니다. 이는 배포와 관련된 잠재적 문제를 나타냅니다. 환경 상태를 검토하고 변경 내용을 되돌리는 것을 고려하십시오.&quot;
 
-**발생할 때:** 유효성 검사 중 패치 적용 후
+**발생할 때:** 패치 적용 또는 복귀 후 유효성 검사 중
 
-**원인:** 패치가 적용되었지만 상태 검사가 실패했습니다.
+**원인:** 패치가 적용되었거나 복구되었지만 이후 상태 검사가 실패했습니다
 
 **솔루션:**
 
-* 특정 오류에 대한 응용 프로그램 로그 검토
-* 중요한 기능을 수동으로 테스트
-* 문제가 지속되면 패치를 되돌리는 것이 좋습니다
-* 지원이 필요한 경우 지원 센터에 문의하십시오
+* 상점 및 주요 체크아웃 및 관리 워크플로우를 테스트하여 고객이 실제로 영향을 받는지 확인합니다
+* 클라우드 콘솔에서 환경 상태를 검토하고 프로젝트 **활동** 피드의 응용 프로그램 및 배포 로그를 검사합니다. 패치 작업 또는 배포와 관련된 오류를 찾습니다.
+* 수동 재배포를 트리거하여 상태 검사 오류가 일시적인 배포 또는 인프라 문제로 인해 발생했는지 여부를 확인합니다.
+* 문제가 지속되면 패치를 되돌립니다. [!DNL Patching Automation]이(가) 패치를 관리하고 작업을 사용할 수 있는 경우 [!UICONTROL Revert]을(를) 선택합니다. 패치가 `m2-hotfixes` 디렉터리의 사용자 지정 패치인 경우 프로젝트 리포지토리에서 패치 파일을 삭제합니다. 변경 사항을 커밋하고 푸시한 다음 환경을 다시 배포합니다.
+* 문제가 지속되면 Adobe 지원에 문의하십시오.지원 요청에 지원 프로젝트 ID, 환경 ID 및 이 정확한 메시지와 같은 정보를 포함하십시오. 마지막 작업이 완전히 완료되지 않았으므로 지원이 환경 상태를 확인해야 합니다.
 
 ### 인증 및 액세스 오류
 
-#### &quot;Adobe Commerce 저장소에 대한 인증 실패&quot;
+#### &quot;액세스 거부됨&quot;
 
-**발생 시:**
-
-**원인:** 잘못되었거나 만료된 Adobe Commerce 저장소 자격 증명입니다.
-
-**솔루션:**
-
-이 문제를 해결하기 위한 두 가지 권장 옵션이 있습니다.
-
-**옵션 1: `env:COMPOSER_AUTH` 환경 수준 변수 수정(권장)**
-
-* `env:COMPOSER_AUTH`에 대한 올바른 자격 증명을 설정했는지 확인하십시오.
-* 클라우드 프로젝트 UI의 왼쪽 상단에 있는 톱니바퀴 아이콘을 클릭하여 전역 구성에 액세스한 다음 **변수** 탭을 선택합니다.
-* _빌드 시간 동안 사용 가능_&#x200B;을 선택하고 _런타임 동안 사용 가능_&#x200B;을 선택 취소합니다.
-
-옵션 1로 문제가 해결되지 않으면 옵션 2를 계속 사용하십시오.
-
-**옵션 2: `auth.json` 파일을 수동으로 만들고 배포**
-
-* 서버에 SSH를 입력합니다.
-* 다음을 사용하여 현재 `env:COMPOSER_AUTH` 변수의 콘텐츠를 검색합니다.\
-  `echo $COMPOSER_AUTH`
-* 위 단계(JSON 형식)의 모든 콘텐츠를 복사합니다.
-* 이 내용으로 이름이 `auth.json`인 새 파일을 만듭니다.
-* 새로 만든 이 `auth.json` 파일을 리포지토리의 루트 디렉터리에 커밋합니다.
-* 새 배포를 트리거합니다.
-
-#### &quot;환경 액세스에 대한 권한이 충분하지 않음&quot;
-
-**발생할 때:** 환경을 만들거나 액세스하는 동안
+**발생할 때:** 환경 만들기 또는 액세스 중에 계정에 필요한 권한이 없을 때
 
 **원인:** 사용자 계정에 필요한 권한이 없습니다.
 
@@ -158,19 +165,19 @@ ht-degree: 0%
 
 ### GitHub 통합 오류
 
-#### &quot;공급자 github에 사용할 수 있는 Git 자격 증명이 없습니다. 이 저장소용 CAPS GitHub 앱 설치&quot;
+#### &quot;Github&quot; 공급자에 사용할 수 있는 Git 자격 증명이 없습니다.&quot; 이 저장소용 패치 자동화 GitHub 앱 설치&quot;
 
 **발생할 때:** GitHub에 연결된 프로젝트에 대한 패치 작업 중
 
-**원인:** [!DNL CAPS] GitHub 앱이 저장소에 설치되지 않았습니다
+**원인:** [!DNL Patching Automation] GitHub 앱이 저장소에 설치되지 않았습니다
 
-**해결 방법:** [GitHub 통합 설정 [!DNL CAPS]](github-integration.md)의 단계에 따라
+**해결 방법:** [GitHub 통합 설정 [!DNL Patching Automation]](github-integration.md)의 단계에 따라
 
 #### &quot;GitHub API 요청 실패&quot;
 
 **발생할 때:** GitHub 연결 프로젝트에 대한 패치 작업 중
 
-**원인:** 일시적인 문제로 인해 [!DNL CAPS]에서 GitHub에 연결할 수 없습니다.
+**원인:** 일시적인 문제로 인해 서비스가 GitHub에 연결되지 않았습니다.
 
 **해결 방법:** 몇 분 정도 기다린 후 작업을 다시 시도하십시오. 오류가 계속되면 [Adobe Commerce Cloud 지원](https://experienceleague.adobe.com/home?lang=ko#support)에 문의하십시오.
 
@@ -178,37 +185,36 @@ ht-degree: 0%
 
 통합 환경을 만드는 동안 **발생하는 경우:**
 
-**원인:** 프로젝트의 GitHub 통합에 `fetch-branches` 옵션이 비활성화되어 있으므로 임시 분기 [!DNL CAPS] 푸시가 동기화되지 않고 통합 환경이 만들어지지 않습니다.
+**원인:** 프로젝트의 GitHub 통합에서 `fetch-branches` 옵션이 비활성화되었습니다. 그 결과 서비스에 의해 푸시된 임시 분기는 동기화되지 않고 통합 환경이 생성되지 않습니다.
 
-**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL CAPS]](github-integration.md)을 참조하세요.
+**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL Patching Automation]](github-integration.md)을 참조하세요.
 
-### 리소스 및 할당량 오류
+### 환경 활성화 오류
 
-#### &quot;환경 할당량 초과&quot;
+#### &quot;통합 환경을 활성화할 수 없습니다.&quot;
 
-**발생할 때:** 환경 생성 중
+**발생할 때:** [!DNL Patching Automation]에서 패치를 안전하게 테스트하는 데 필요한 임시 통합 환경을 활성화할 수 없는 경우.
 
-**원인:** 환경 제한에 도달했습니다.
+**원인:**&#x200B;은(는) 오류와 함께 표시되는 추가 세부 정보에 따라 다릅니다.
 
-**솔루션:**
+**세부 정보에 Composer 또는 Adobe Commerce 패키지가 언급되는 경우:**
 
-* 사용하지 않는 환경 비활성화
-* 이전 분기 및 배포 정리
-* 할당량 증가를 요청하려면 지원팀에 문의하십시오
-* 플랜 업그레이드를 고려하십시오.
+* [https://account.magento.com/](https://account.magento.com/)에 로그인하거나 계정 소유자에게 문의하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
+* 프로젝트의 Composer 공개/개인 키 쌍이 올바른지 확인하십시오. [인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하십시오.
+* [https://account.magento.com/](https://account.magento.com/)에 로그인하거나 계정 소유자에게 요청하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
+* 프로젝트의 Composer 공개 및 개인 인증 키가 올바른지 확인합니다. [인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하세요.
+* 오류 메시지에 이름이 인 패키지를 Commerce 버전에 사용할 수 있는지 확인합니다. [Adobe Commerce 패키지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/packages/adobe-commerce)를 참조하세요.
 
-#### &quot;작업에 필요한 리소스 부족&quot;
+**세부 정보에 환경 슬롯 또는 리소스가 언급되는 경우:**
 
-**발생 시:**
+* Cloud Console에서 프로젝트 개요를 열고 환경 및 해당 상태를 검토합니다. 사용하지 않은 통합 환경 비활성화 또는 삭제: 환경을 선택합니다. **[!UICONTROL Settings]>[!UICONTROL General]**(으)로 이동합니다. 환경 상태를 비활성으로 설정합니다.
 
-**원인:** 환경에 충분한 CPU, 메모리 또는 저장소가 없습니다.
+  또는 CLI `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`을(를) 사용합니다.
+* 프로젝트에 충분한 리소스(예: 디스크 공간)가 있는지 확인합니다.
+* 작업 시 상위 환경이 안정적인지(활성 배포 안 함) 확인합니다.
+* 환경 제한을 늘려야 하는 경우 Adobe 지원에 문의하십시오.
 
-**솔루션:**
-
-* 환경 리소스 사용량 확인
-* 파일을 정리하여 리소스 여유 확보
-* 리소스를 사용할 수 있을 때까지 대기
-* 리소스 문제가 지속되면 지원 센터에 문의
+**다른 원인:** 패치 자동화 UI에서 자세한 오류 로그를 검토하거나 정확한 오류 텍스트를 지원팀에 문의하십시오.
 
 ## 도움말 보기
 
@@ -228,7 +234,7 @@ ht-degree: 0%
 
 * **프로젝트 ID** - Adobe Commerce Cloud 프로젝트 식별자
 * **환경 ID** - 문제가 발생한 특정 환경
-* **작업 ID** - [!DNL CAPS] 작업 식별자
+* **작업 ID** - [!DNL Patching Automation] 작업 식별자
 * **오류 세부 정보** - 전체 오류 메시지 및 로그
 * **재현 단계** - 오류 발생 시 수행 중인 작업
 * **이전 시도** - 문제를 해결하기 위해 이미 시도한 사항
@@ -245,7 +251,7 @@ ht-degree: 0%
 
 * [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce 설치 안내서](/help/installation/overview.md)
-* [CAPS 소개](intro.md)
+* [패치 자동화 소개](intro.md)
 * [액세스 방법](access.md)
 * [워크플로우 개요](workflow.md)
 * [GitHub 통합](github-integration.md)

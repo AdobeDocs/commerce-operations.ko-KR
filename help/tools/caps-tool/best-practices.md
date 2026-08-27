@@ -1,17 +1,17 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)] 모범 사례 안내서'
-description: ' [!DNL Cloud Automation Patching Service (CAPS)] 효과적이고 안전하게 사용하기 위한 모범 사례 알아보기'
+title: '[!DNL Adobe Commerce Patching Automation] 모범 사례 안내서'
+description: ' [!DNL Adobe Commerce Patching Automation] 을(를) 사용하여 패치를 안전하게 계획, 유효성 검사 및 적용하여 배포 위험 및 서비스 중단을 최소화하는 방법에 대해 알아봅니다.'
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)] 모범 사례 안내서
+# [!DNL Adobe Commerce Patching Automation] 모범 사례 안내서
 
-다음 모범 사례는 [!DNL Cloud Automation Patching Service]&#x200B;([!DNL CAPS])을(를) 사용한 성공적이고 안전한 패치 작업에 필수적입니다. 이 안내서에서는 효과적인 패치 작업, 환경 관리 및 운영 효율성을 위한 포괄적인 모범 사례를 제공합니다.
+[!DNL Adobe Commerce Patching Automation]을(를) 사용하여 성공적이고 안전한 패치 작업을 수행하려면 다음 모범 사례가 필수적입니다. 이 안내서에서는 효과적인 패치 작업, 환경 관리 및 운영 효율성을 위한 포괄적인 모범 사례를 제공합니다.
 
 ## 패치 전 모범 사례
 
@@ -21,24 +21,24 @@ ht-degree: 0%
 
 패치를 적용하기 전에 환경이 제대로 준비되었는지 확인하십시오.
 
-* **Adobe Commerce 클라우드 계정**
+* **Adobe Commerce Cloud 계정**
   * 활성 Adobe Commerce Cloud 구독
   * 유효한 Adobe Commerce 라이선스
-  * 저장소 액세스 자격 증명이 구성됨
+  * Adobe Commerce 저장소에 액세스하도록 구성된 [작성기 인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * 프로젝트 및 환경 권한
 
 * **환경 리소스**
-  * 임시 테스트를 위해 사용 가능한 환경 슬롯
+  * 프로젝트에 패치 작업을 위한 추가 활성 통합 환경을 만들 수 있는 용량이 있습니다. 활성 환경 제한에 대한 자세한 내용은 [Cloud Console을 사용하여 분기 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/console-branches)를 참조하십시오.
   * 충분한 스토리지, CPU 및 메모리 리소스
   * Adobe 저장소에 대한 네트워크 액세스
   * 동기화를 위한 안정적인 상위 환경
 
 * **프로덕션 환경 준비**(프로덕션 패치용)
-  * 유지 관리 모드를 활성화할 수 있음
-  * 크론 작업을 비활성화할 수 있음
+  * 유지 관리 모드 활성화
+  * Cron 작업 비활성화
   * 유지 관리 창 절차 설정
-  * 롤백 절차 문서화
-  * 관련자 커뮤니케이션 계획 준비 완료
+  * 문서 롤백 프로시저
+  * 관련자 커뮤니케이션 계획 준비
 
 ## 패치 애플리케이션 모범 사례
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 ## 주요 모범 사례 요약
 
-### [!DNL CAPS] 성공에 대한 중요 모범 사례
+### [!DNL Patching Automation] 성공에 대한 중요 모범 사례
 
 * 운영 환경에 패치를 적용하기 전에 항상 사전 운영 환경에서 테스트
 * 유지 관리 모드 활성화 및 프로덕션 패치 작업에 대한 cron 작업 비활성화
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ## 관련 항목
 
-* [CAPS 소개](intro.md)
+* [패치 자동화 소개](intro.md)
 * [액세스 방법](access.md)
 * [워크플로우 개요](workflow.md)
 * [GitHub 통합](github-integration.md)

@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
+source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10695'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   - [패치 상태 보고서 생성](commerce-version-tool/generate-report.md)
   - [문제 해결](commerce-version-tool/troubleshooting.md)
   - [릴리스 정보](commerce-version-tool/release-notes.md)
-- 대문자 {#caps-tool}
+- 패치 자동화 {#caps-tool}
   - {hide-from-toc}[소개](caps-tool/intro.md)
   - {hide-from-toc}[액세스](caps-tool/access.md)
   - {hide-from-toc}[워크플로 개요](caps-tool/workflow.md)
@@ -1107,6 +1107,6 @@ ht-degree: 0%
     - [수동 마이그레이션이 필요한 데이터](data-migration-tool/migrate-data/manual.md)
     - [데이터 마이그레이션 후 단계](data-migration-tool/migrate-data/post-migration.md)
   - 리소스 {#resources}
-    - [문제 해결](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [문제 해결](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [변경 로그](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
