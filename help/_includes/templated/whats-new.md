@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
+source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
 workflow-type: tm+mt
-source-wordcount: '2845'
-ht-degree: 0%
+source-wordcount: '2047'
+ht-degree: 1%
 
 ---
 # 새로운 기능 템플릿
@@ -10,6 +10,28 @@ ht-degree: 0%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 8월 26일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL 제품 쿼리는 사용자 지정 재고 주식에서의 재고 제품에 대해 null 수량을 반환합니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 8월 19일
 
@@ -567,218 +589,6 @@ ht-degree: 0%
         새 주제, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 2일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 관리 그리드 날짜 필터가 시간대 불일치로 인해 결과를 반환하지 않습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/58f157a5f863973df723a6bce5844883f2aa12f4">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 29일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 주문 취소 후 번들 제품 판매성이 잘못 계산되었습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ccea0456268862ba11e77ef16318bc8b2d76b0b1">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 26일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: PayPal 온라인 주문 환불이 실패하고 오류 "PayPal 게이트웨이가 요청을 거부합니다. 내부 오류입니다."</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/056f30558d8d9f3e218f589e2819ec5d8d6274e3">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 간헐적으로 New Relic 스크립트 재귀로 인해 iOS Safari에서 장바구니에 추가가 실패합니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95cfe4554c4501fa9526e0c8b0c039cf99228207">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626: Storefront JavaScript 파일이 두 번 로드되어 중복 로드 및 불안정한 동작이 발생합니다</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. USPS 배송 방법을 사용할 수 없거나 다중 패키지 주문에 적합하지 않습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: sales_clean_quotes cron</a>의 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a7e34f7858dd74cf1c4702dfc877a793094ad042">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 25일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488: 큰 속성 집합에 대한 느린 관리 제품 저장/편집</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac57acc5c527f1c7cc7dbd3198f23e75f08fe207">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. Analytics 크론 작업은 실행 중 성능을 저하합니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0b7826459c116ef03a34f0a01e5db235294c3cb1">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552: GraphQL 응답이 회사 상태를 반환하지 않음</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6988b8b17bd1f2161e8fd8c7dd128a75c0023de8">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 24일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명 추가: Storefront</a>에서 측정 단위 없이 제품 무게가 표시됩니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/538221930434b21b92d587fd889e556564a0a45c">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472: "고객으로 로그인" 흐름</a>을 사용하여 만든 Null 인용 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49b49560901525aa9e635eb0ea6542339270cabf">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653: 장바구니 가격 규칙 범주 범위 조건이 REST API에서 누락됨</a>에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6f4ed205def1cc5f9932857d75222015683fd08">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 6월 23일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/caching-overview">구성 안내서</a>의 캐시 구성 항목 전체에 걸쳐 클라우드와 온-프레미스 범위를 명확히 하고 클라우드 배포에 대한 Commerce의 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis 및 Valkey 서비스 구성에 대한 모범 사례</a>를 업데이트했습니다.</p>
-</td>
-      <td>
-        피드백
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. REST API 배송 주소 유효성 검사가 관리자 특성 구성을 무시합니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/897bbc5b6624dfe17deac6ca878669a5245c34ea">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. URL에 스토어 코드</a>이 포함된 경우 자리 표시자 이미지가 Storefront에서 로드되지 않습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">커밋</a></td>
     </tr>
   </tbody>
 </table>
