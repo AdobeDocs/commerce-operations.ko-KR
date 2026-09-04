@@ -4,9 +4,9 @@ description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 ## 최신 Beta 프로그램
 
 활성 베타 프로그램 목록은 다음 섹션을 참조하십시오.
+
+### 속성 등급(공개 Beta) {#attribute-ranking-public-beta}
+
+[!BADGE SaaS만]{type=Positive url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."}
+
+[!DNL Adobe Commerce Optimizer] 머천다이징 규칙은 이제 **특성 등급**&#x200B;을 지원합니다. **Boost**, **Bury** 또는 **Hide** 작업을 개별 SKU 선택 없이 하나 이상의 특성 조건(예: 브랜드, 카테고리 또는 제조업체)과 일치하는 제품에 자동으로 적용합니다. 속성 등급은 규칙 편집기에 지능형 등급 및 수동 등급과 함께 표시됩니다. **모든 제품 목록**, **범주 규칙** 및 **검색 규칙**&#x200B;과 함께 사용하십시오.
+
+**주요 이점**
+
+- 개별 SKU 대신 속성 값을 타겟팅하여 큰 카탈로그에서 머천다이징을 확장하십시오.
+- 전체 브랜드를 홍보하거나 단종된 색상을 억제하는 등, 단일 규칙으로 일치하는 모든 제품을 증폭, 매몰 또는 숨깁니다.
+- 속성 조건을 지능형 등급과 결합: 일치하는 제품이 우선하며, 등급 전략에 따라 일치하지 않는 제품의 순서가 계속 지정됩니다.
+- 규칙에서 일치하는 제품에 미치는 영향을 세밀하게 조정하려면 조건당 증폭 또는 매몰 강도를 설정합니다.
+
+자세한 내용은 머천다이징 규칙 안내서의 [특성 순위](https://experienceleague.adobe.com/ko/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)를 참조하십시오.
+
+이 Beta 기능에 대한 피드백을 공유하려면 [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)에 전자 메일을 보내십시오.
 
 ### 검색 일치 및 순위(Private Beta)
 
