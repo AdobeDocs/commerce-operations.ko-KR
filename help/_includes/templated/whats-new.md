@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
+source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '1988'
 ht-degree: 1%
 
 ---
@@ -567,28 +567,6 @@ ht-degree: 1%
         새 주제, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 6일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493에 대한 QPT 1.1.80 수정 사항에 대한 자세한 설명을 추가했습니다. 비동기 인덱싱이 활성화되었을 때</a> 판매 주문 보관 그리드에 잘못된 주문 상태가 표시됩니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">커밋</a></td>
     </tr>
   </tbody>
 </table>
