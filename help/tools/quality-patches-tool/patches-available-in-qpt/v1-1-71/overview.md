@@ -5,7 +5,7 @@ feature: Tools and External Services
 role: Admin, Developer
 source-git-commit: 4660942d90435eaeb6960206c29733bed6453b6a
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ QPT v1.1.71에는 다음 패치가 포함됩니다.
 
 
 * **ACSD-60624**: [!DNL Page Builder]의 이미지, 배너 및 슬라이더 섹션에서 빈 콘텐츠에 대한 이미지 업로드가 실패합니다
-* **ACSD-67089**: `inventory/export-stock-salable-qty`을(를) 페이지 크기로 잘못 제한하는 `total_count` API의 페이지 매김 문제입니다.
+* **ACSD-67089**: `total_count`을(를) 페이지 크기로 잘못 제한하는 `inventory/export-stock-salable-qty` API의 페이지 매김 문제입니다.
 * **ACSD-67093**: 날짜 범위 필터를 사용하여 [!DNL GraphQL]을(를) 통해 주문을 검색하면 잘못된 결과가 반환됩니다.
 * **ACSD-67459**: 65,536자를 초과하는 설명은 가져올 수 없습니다.
 * **ACSD-67603**: 이미지 포함이 활성화된 제품에 대한 사이트 맵 생성 시간이 깁니다.
