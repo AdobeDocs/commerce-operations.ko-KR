@@ -7,7 +7,7 @@ exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ACSD-62952 패치를 사용하면 Gift Registry 날짜가 상점 앞에 잘못 �
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 업그레이드 및 패치 > 패치 적용.
 
 ## 관련 읽기

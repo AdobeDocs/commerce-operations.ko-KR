@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
 description: ' [!DNL Adobe Commerce Patching Automation], 사용 방법, 액세스 방법 및 자동 패치 모범 사례에 대해 알아봅니다.'
-hide: true
-source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

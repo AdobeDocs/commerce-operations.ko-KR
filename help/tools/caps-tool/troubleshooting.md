@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] 문제 해결 안내서'
 description: ' [!DNL Adobe Commerce Patching Automation]의 일반적인 문제 및 오류 메시지 해결'
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%

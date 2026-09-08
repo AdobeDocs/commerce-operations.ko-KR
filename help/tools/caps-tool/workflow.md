@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] 워크플로 개요'
 description: 용어, 워크플로 단계 및 자동화된 패치 관리를 위한 작업을 포함하여  [!DNL Adobe Commerce Patching Automation] 워크플로 프로세스에 대해 알아봅니다.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%

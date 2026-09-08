@@ -7,7 +7,7 @@ exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ACSD-65195 패치는 영역이 필요하지 않은 국가에 대해 [!UICONTROL 
 
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
-* Adobe Commerce 또는 Magento Open Source 온-프레미스: [[!DNL Quality Patches Tool]  가이드의 &#x200B;](/help/tools/quality-patches-tool/usage.md)> 사용량[!DNL Quality Patches Tool]
+* Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
 * 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 업그레이드 및 패치 > 패치 적용.
 
 ## 관련 읽기

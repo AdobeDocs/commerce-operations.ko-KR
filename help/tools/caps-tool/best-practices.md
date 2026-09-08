@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] 모범 사례 안내서'
 description: ' [!DNL Adobe Commerce Patching Automation] 을(를) 사용하여 패치를 안전하게 계획, 유효성 검사 및 적용하여 배포 위험 및 서비스 중단을 최소화하는 방법에 대해 알아봅니다.'
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
