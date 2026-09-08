@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] 문제 해결 안내서'
 description: ' [!DNL Adobe Commerce Patching Automation]의 일반적인 문제 및 오류 메시지 해결'
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ### 패치 작업 기간
 
-대부분의 환경에서 다음 타임라인은 패치 작업에 걸리는 시간을 설명하지만 환경 크기와 복잡성에 따라 더 오래 걸릴 수 있습니다.
+대부분의 환경에서 다음 타임라인은 패치 작업 기간을 설명하지만 환경 크기와 복잡성에 따라 더 오래 걸릴 수 있습니다.
 
 * **전처리:** 2-5분
 * **패치 중:** 5-15분
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->가능한 모든 오류가 아래에 나열되는 것은 아닙니다. 사전 검사 중 목록에 없는 실패는 일반 &quot;사전 검사 중 오류&quot;로 표시되며, 유효성 검사 중 목록에 없는 실패는 일반 &quot;사후 처리 중 오류&quot;로 표시됩니다. 어느 쪽이든 정확한 오류 텍스트를 입력하여 지원 센터에 문의하십시오. 패치하는 동안 예기치 않은 오류가 일반 폴백 대신 원시 기본 오류 메시지를 직접 표시합니다.
+>가능한 모든 오류가 아래에 나열되는 것은 아닙니다. 사전 확인 또는 유효성 검사 중 목록에 없는 실패는 일반 오류로 나타납니다. 정확한 오류 텍스트로 지원 센터에 문의하십시오. 패치하는 동안 예기치 않은 오류가 일반 폴백 대신 원시 기본 오류 메시지를 직접 표시합니다.
 
 ### 환경 준비 오류
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 **솔루션:**
 
-* 몇 분 정도 기다린 후 환경 상태를 다시 확인하십시오. 이 문제는 종종 저절로 해결됩니다
+* 몇 분 정도 기다린 후 환경 상태를 다시 확인하십시오. 이 문제는 종종 자동으로 해결됩니다
 * 몇 분 후에도 환경이 일치하지 않으면 Adobe 지원 센터에 문의하십시오.
 
 #### &quot;cron이 활성화되고 유지 관리 모드가 비활성화된 경우 프로덕션 환경에서 패치 작업을 만들 수 없습니다. 패치를 적용하기 전에 유지 관리 모드를 활성화하고 크론 작업을 비활성화하십시오.&quot;
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation]은(는) 유지 관리 모드를 자동으로 활성화하거나 cron 작업을 비활성화하지 않습니다. 외부에서 수행해야 합니다.
+> [!DNL Patching Automation]은(는) 유지 관리 모드를 자동으로 활성화하거나 cron 작업을 비활성화하지 않습니다. 이러한 절차를 수동으로 완료합니다.
 
 #### &quot;패치 작업이 완료되었지만 환경 상태 검사가 실패했습니다. 이는 배포와 관련된 잠재적 문제를 나타냅니다. 환경 상태를 검토하고 변경 내용을 되돌리는 것을 고려하십시오.&quot;
 
@@ -141,11 +141,11 @@ ht-degree: 0%
 
 **솔루션:**
 
-* 상점 및 주요 체크아웃 및 관리 워크플로우를 테스트하여 고객이 실제로 영향을 받는지 확인합니다
+* 상점 및 주요 체크아웃 및 관리 워크플로우를 테스트하여 고객이 영향을 받는지 여부를 확인합니다
 * 클라우드 콘솔에서 환경 상태를 검토하고 프로젝트 **활동** 피드의 응용 프로그램 및 배포 로그를 검사합니다. 패치 작업 또는 배포와 관련된 오류를 찾습니다.
-* 수동 재배포를 트리거하여 상태 검사 오류가 일시적인 배포 또는 인프라 문제로 인해 발생했는지 여부를 확인합니다.
+* 수동 재배포를 트리거하여 일시적인 배포 또는 인프라 문제로 인해 상태 검사 오류가 발생했는지 여부를 확인합니다.
 * 문제가 지속되면 패치를 되돌립니다. [!DNL Patching Automation]이(가) 패치를 관리하고 작업을 사용할 수 있는 경우 [!UICONTROL Revert]을(를) 선택합니다. 패치가 `m2-hotfixes` 디렉터리의 사용자 지정 패치인 경우 프로젝트 리포지토리에서 패치 파일을 삭제합니다. 변경 사항을 커밋하고 푸시한 다음 환경을 다시 배포합니다.
-* 문제가 지속되면 Adobe 지원에 문의하십시오.지원 요청에 지원 프로젝트 ID, 환경 ID 및 이 정확한 메시지와 같은 정보를 포함하십시오. 마지막 작업이 완전히 완료되지 않았으므로 지원이 환경 상태를 확인해야 합니다.
+* 문제가 지속되면 Adobe 지원 센터에 문의하십시오. 지원 요청에 지원 프로젝트 ID, 환경 ID 및 이 정확한 메시지 정보를 포함하십시오. 마지막 작업이 완전히 완료되지 않았으므로 지원이 환경 상태를 확인해야 합니다.
 
 ### 인증 및 액세스 오류
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 **원인:** 일시적인 문제로 인해 서비스가 GitHub에 연결되지 않았습니다.
 
-**해결 방법:** 몇 분 정도 기다린 후 작업을 다시 시도하십시오. 오류가 계속되면 [Adobe Commerce Cloud 지원](https://experienceleague.adobe.com/home?lang=ko#support)에 문의하십시오.
+**해결 방법:** 몇 분 정도 기다린 후 작업을 다시 시도하십시오. 오류가 계속되면 [Adobe Commerce Cloud 지원](https://experienceleague.adobe.com/home#support)에 문의하십시오.
 
 #### &quot;환경이 시간 제한 내에 만들어지지 않음&quot;(GitHub 연결 프로젝트)
 
@@ -186,7 +186,7 @@ ht-degree: 0%
 
 **원인:** 프로젝트의 GitHub 통합에서 `fetch-branches` 옵션이 비활성화되었습니다. 그 결과 서비스에 의해 푸시된 임시 분기는 동기화되지 않고 통합 환경이 생성되지 않습니다.
 
-**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL Patching Automation]](github-integration.md)을 참조하세요.
+**솔루션:** 통합의 [`fetch-branches` 옵션](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)을 사용하도록 설정한 후 작업을 다시 시도하십시오. [다음에 대한 GitHub 통합 설정 [!DNL Patching Automation]](github-integration.md)을 참조하세요.
 
 ### 환경 활성화 오류
 
@@ -198,15 +198,13 @@ ht-degree: 0%
 
 **세부 정보에 Composer 또는 Adobe Commerce 패키지가 언급되는 경우:**
 
-* [https://account.magento.com/](https://account.magento.com/)에 로그인하거나 계정 소유자에게 문의하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
-* 프로젝트의 Composer 공개/개인 키 쌍이 올바른지 확인하십시오. [인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하십시오.
-* [https://account.magento.com/](https://account.magento.com/)에 로그인하거나 계정 소유자에게 요청하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
-* 프로젝트의 Composer 공개 및 개인 인증 키가 올바른지 확인합니다. [인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하세요.
-* 오류 메시지에 이름이 인 패키지를 Commerce 버전에 사용할 수 있는지 확인합니다. [Adobe Commerce 패키지](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/packages/adobe-commerce)를 참조하세요.
+* [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login)에 로그인하거나 계정 소유자에게 문의하여 계정이 Commerce Enterprise 코드 베이스에 액세스할 수 있는지 확인하십시오.
+* 프로젝트의 Composer 공개 및 개인 인증 키가 올바른지 확인합니다. [인증 키](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)를 참조하세요.
+* 오류 메시지에 이름이 인 패키지를 Commerce 버전에 사용할 수 있는지 확인합니다. [Adobe Commerce 패키지](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)를 참조하세요.
 
 **세부 정보에 환경 슬롯 또는 리소스가 언급되는 경우:**
 
-* Cloud Console에서 프로젝트 개요를 열고 환경 및 해당 상태를 검토합니다. 사용하지 않은 통합 환경 비활성화 또는 삭제: 환경을 선택합니다. **[!UICONTROL Settings]>[!UICONTROL General]**(으)로 이동합니다. 환경 상태를 비활성으로 설정합니다.
+* Cloud Console에서 프로젝트 개요를 열고 환경 및 해당 상태를 검토합니다. 사용하지 않은 통합 환경 비활성화 또는 삭제: 환경을 선택합니다. **[!UICONTROL Settings]>[!UICONTROL General]**(으)로 이동합니다. 환경을 비활성화하려면 상태를 비활성으로 설정합니다.
 
   또는 CLI `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`을(를) 사용합니다.
 * 프로젝트에 충분한 리소스(예: 디스크 공간)가 있는지 확인합니다.
@@ -248,7 +246,7 @@ ht-degree: 0%
 
 ### 관련 항목
 
-* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce Cloud 설명서](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce 설치 안내서](/help/installation/overview.md)
 * [패치 자동화 소개](intro.md)
 * [액세스 방법](access.md)
