@@ -1,8 +1,7 @@
 ---
 title: ' [!DNL Adobe Commerce Patching Automation]에 대한 GitHub 통합 설정'
 description: GitHub에 연결된 Adobe Commerce Cloud 프로젝트에 대한 패치 작업을 활성화하기 위해  [!DNL Adobe Commerce Patching Automation] GitHub 앱을 설치하는 방법을 알아봅니다.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Adobe Commerce Cloud 프로젝트가 GitHub 리포지토리에 연결되어 있�
 ## 사전 요구 사항
 
 * 활성 Adobe Commerce Cloud 구독
-* [GitHub 통합](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)이(가) [`fetch-branches` 옵션을 사용하도록 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)한 상태로 Adobe Commerce Cloud 프로젝트에 대해 이미 구성되었습니다. [!DNL Patching Automation]이(가) 임시 통합 환경 분기를 만들고 푸시하므로 이 옵션을 사용하지 않도록 설정하면 패치 작업에서 환경을 만들지 못합니다.
+* [GitHub 통합](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)이(가) [`fetch-branches` 옵션을 사용하도록 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)한 상태로 Adobe Commerce Cloud 프로젝트에 대해 이미 구성되었습니다. [!DNL Patching Automation]이(가) 임시 통합 환경 분기를 만들고 푸시하므로 이 옵션을 사용하지 않도록 설정하면 패치 작업에서 환경을 만들지 못합니다.
 * [!DNL github.com]에 호스팅된 리포지토리입니다. 사용자 정의 도메인으로 구성된 GitHub 통합은 지원되지 않습니다.
 * GitHub 조직 또는 저장소에 대한 소유자 또는 관리자 액세스
 
