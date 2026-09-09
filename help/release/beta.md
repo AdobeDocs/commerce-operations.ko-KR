@@ -4,9 +4,9 @@ description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."
-source-git-commit: 041a0c42c83cbab28eac6562c67ce9169c07aa02
+source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 [Adobe Commerce 제품 솔루션](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions)을 위한 Beta 프로그램은 판매자가 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, Adobe Commerce의 미래를 안내할 수 있는 방법입니다. 베타 프로그램에는 두 가지 유형이 있습니다.
 
 - 공개 Beta: 공개 베타 프로그램은 모든 Adobe Commerce 고객 및 파트너가 사용할 수 있습니다
-- Private Beta: 비공개 베타 프로그램에 참여하려면 자격 기준에 따른 승인이 필요할 수 있습니다
+- Private Beta: 비공개 베타 프로그램에는 참여하기 위한 자격 기준에 따른 승인이 필요합니다
 
 >[!IMPORTANT]
 >
@@ -35,13 +35,13 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
 [!BADGE SaaS만]{type=Positive url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."}
 
-[!DNL Adobe Commerce Optimizer] 머천다이징 규칙은 이제 **특성 등급**&#x200B;을 지원합니다. **Boost**, **Bury** 또는 **Hide** 작업을 개별 SKU 선택 없이 하나 이상의 특성 조건(예: 브랜드, 카테고리 또는 제조업체)과 일치하는 제품에 자동으로 적용합니다. 속성 등급은 규칙 편집기에 지능형 등급 및 수동 등급과 함께 표시됩니다. **모든 제품 목록**, **범주 규칙** 및 **검색 규칙**&#x200B;과 함께 사용하십시오.
+[!DNL Adobe Commerce Optimizer] 머천다이징 규칙은 이제 **특성 등급**&#x200B;을 지원합니다. 이 등급은 개별 SKU 선택 없이 브랜드, 카테고리 또는 제조업체와 같은 특성 조건과 일치하는 제품에 **Boost**, **Bury** 또는 **Hide** 작업을 자동으로 적용합니다. 속성 등급은 규칙 편집기에 지능형 등급 및 수동 등급과 함께 표시됩니다. **모든 제품 목록**, **범주 규칙** 및 **검색 규칙**&#x200B;과 함께 사용하십시오.
 
 **주요 이점**
 
 - 개별 SKU 대신 속성 값을 타겟팅하여 큰 카탈로그에서 머천다이징을 확장하십시오.
 - 전체 브랜드를 홍보하거나 단종된 색상을 억제하는 등, 단일 규칙으로 일치하는 모든 제품을 증폭, 매몰 또는 숨깁니다.
-- 속성 조건을 지능형 등급과 결합: 일치하는 제품이 우선하며, 등급 전략에 따라 일치하지 않는 제품의 순서가 계속 지정됩니다.
+- 속성 조건을 지능형 등급과 결합: 일치하는 제품이 우선하며, 등급 전략은 일치하지 않는 제품을 계속 주문합니다.
 - 규칙에서 일치하는 제품에 미치는 영향을 세밀하게 조정하려면 조건당 증폭 또는 매몰 강도를 설정합니다.
 
 자세한 내용은 머천다이징 규칙 안내서의 [특성 순위](https://experienceleague.adobe.com/ko/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)를 참조하십시오.
@@ -50,7 +50,7 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
 ### 검색 일치 및 순위(Private Beta)
 
-Adobe에서 제품 검색이 [!DNL Adobe Commerce]의 [!DNL Live Search] 및 [!DNL Adobe Commerce Optimizer]에 대한 검색 결과의 등급을 매기는 방법을 개선하고 있습니다. 업데이트는 **정확한 근사 구 일치**&#x200B;의 우선 순위를 지정한 다음 **모든 쿼리 용어가 동일한 검색 가능한 특성에 나타나는 위치**&#x200B;와(과) 마지막으로 **교차 필드**&#x200B;와(자동 완성 스타일 제안을 지원하는 동작 포함) 일치합니다. 해당 계층화된 모델은 높은 의도의 쿼리가 유용한 대안을 계속 반환하면서 가장 관련성이 높은 제품을 먼저 표면화하는 데 도움이 됩니다.
+Adobe에서 제품 검색이 [!DNL Adobe Commerce]의 [!DNL Live Search] 및 [!DNL Adobe Commerce Optimizer]에 대한 검색 결과의 등급을 매기는 방법을 개선하고 있습니다. 업데이트는 **정확한 근사 구 일치**&#x200B;의 우선 순위를 지정한 다음 **모든 쿼리 용어가 동일한 검색 가능한 특성에 나타나는 위치**&#x200B;와(과) 마지막으로 **교차 필드**&#x200B;와(자동 완성 스타일 제안을 지원하는 동작 포함) 일치합니다. 해당 계층화된 모델은 높은 의도의 쿼리가 가장 관련성이 높은 제품을 먼저 표시하는 데 도움이 되는 동시에 유용한 대체 요소를 반환합니다.
 
 동일한 관련성 모델이 **검색 가중치**, **지능형 순위**, **동의어** 및 **머천다이징 규칙**(고정, 증폭, 파기)과 상호 작용합니다. 독일 상점에서는 전체 우선 순위 지정 방식이 동일하면서 복합 단어에 **중복 제거**&#x200B;를 사용할 수 있습니다.
 
