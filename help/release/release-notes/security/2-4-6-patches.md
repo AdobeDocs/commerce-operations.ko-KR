@@ -37,7 +37,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.6-p15 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/kr/security/products/magento/apsb26-49.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -69,7 +69,7 @@ Laminas MVC 사용 중단을 해결하기 위해 이제 Adobe Commerce에서 `la
 
 Adobe Commerce 2.4.6-p14 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/kr/security/products/magento/apsb26-05.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -91,7 +91,7 @@ Adobe Commerce 2.4.6은 보안 PHPUnit 릴리스에 필요한 새 버전의 `seb
 
 Adobe Commerce 2.4.6-p13 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -123,7 +123,7 @@ composer require magento/inventory-composer-installer
 
 Adobe Commerce 2.4.6-p12 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/kr/security/products/magento/apsb25-71.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -131,7 +131,7 @@ Adobe Commerce 2.4.6-p12 보안 릴리스는 이전 릴리스 2.4.6에서 식별
 
 Adobe Commerce 2.4.6-p11 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/kr/security/products/magento/apsb25-50.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -155,7 +155,7 @@ Adobe Commerce 2.4.6-p11 보안 릴리스는 이전 릴리스 2.4.6에서 식별
 
 Adobe Commerce 2.4.6-p10 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/kr/security/products/magento/apsb25-26.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -167,7 +167,7 @@ Adobe Commerce 2.4.6-p10 보안 릴리스는 이전 릴리스 2.4.6에서 식별
 
 Adobe Commerce 2.4.6-p9 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/kr/security/products/magento/apsb25-08.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -179,7 +179,7 @@ Adobe Commerce 2.4.6-p9 보안 릴리스는 이전 릴리스 2.4.6에서 식별�
 
 Adobe Commerce 2.4.6-p8 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/kr/security/products/magento/apsb24-73.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -195,7 +195,7 @@ Adobe Commerce 2.4.6-p8 보안 릴리스는 이전 릴리스 2.4.6에서 식별�
 
 Adobe Commerce 2.4.6-p7 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/kr/security/products/magento/apsb24-61.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -209,7 +209,7 @@ Adobe Commerce 2.4.6-p7 보안 릴리스는 이전 릴리스 2.4.6에서 식별�
 
 Adobe Commerce 2.4.6-p6 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/kr/security/products/magento/apsb24-40.html)을 참조하십시오.
 
 Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기능이 있는 판매자는 [B2B 버전 1.4.2-p1](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)&#x200B;(으)로 업그레이드해야 합니다.
 
@@ -227,13 +227,13 @@ Commerce 버전 2.4.6-p6과의 호환성을 위해 Adobe Commerce B2B 확장 기
 
 Adobe Commerce 2.4.6-p5 보안 릴리스는 이전 릴리스 2.4.6에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-이러한 수정 사항에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오.
+이러한 수정 사항에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/kr/security/products/magento/apsb24-18.html)을 참조하십시오.
 
 ## 2.4.6-p4
 
 Adobe Commerce 2.4.6-p4 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/kr/security/products/magento/apsb24-03.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -250,7 +250,7 @@ Adobe Commerce 2.4.6-p4 보안 릴리스는 이전 릴리스에서 식별된 취
 
 Adobe Commerce 2.4.6-p3 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 준수하도록 개선된 보안 기능도 포함되어 있습니다.
 
-보안 수정 사항에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)을 참조하십시오.
+보안 수정 사항에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-50](https://helpx.adobe.com/kr/security/products/magento/apsb23-50.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -275,7 +275,7 @@ Adobe Commerce 2.4.6-p3에는 패치 ACSD-51892에 의해 해결된 성능 저�
 
 Adobe Commerce 2.4.6-p2 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 또한 이번 릴리스에서는 최신 보안 모범 사례를 통해 규정 준수를 개선할 수 있는 보안 개선 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-42](https://helpx.adobe.com/kr/security/products/magento/apsb23-42.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 
@@ -293,7 +293,7 @@ Adobe Commerce 2.4.6-p2에는 패치 ACSD-51892에서 해결한 성능 저하 �
 
 Adobe Commerce 2.4.6-p1 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 통해 규정 준수를 개선하기 위한 보안 개선 사항 및 플랫폼 업그레이드가 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-35](https://helpx.adobe.com/kr/security/products/magento/apsb23-35.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 

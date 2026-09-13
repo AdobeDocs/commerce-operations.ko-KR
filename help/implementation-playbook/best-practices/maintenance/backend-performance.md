@@ -39,7 +39,7 @@ ht-degree: 0%
 
 트래픽이 많은 기간을 위해 Commerce 프로젝트를 준비하는 방법에 대해 자세히 알아보십시오.
 
-- [휴일 준비](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [휴일 준비](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=ko)
 - [휴일 쇼핑 분석](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=ko)
 - [서지 용량 증가](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 

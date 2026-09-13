@@ -48,7 +48,7 @@ Adobe Commerce은 모든 Experience Cloud 솔루션과 통합되어 [규모에 �
 >자세한 내용은 다음 리소스를 참조하십시오.
 >
 >- 자세한 내용은 [Digital Experience 블루프린트](https://experienceleague.adobe.com/ko/docs/blueprints-learn/architecture/overview)를 참조하십시오.
->- [고객 경험 개인화](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
+>- [고객 경험 개인화](https://experienceleague.adobe.com/ko/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)를 참조하십시오.
 
 
 ## 서드파티 시스템과의 통합
@@ -70,7 +70,7 @@ Adobe은 통합 및 사용자 지정을 빌드하기 위한 다음 개발자 도
 
 >[!NOTE]
 >
->[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
+>[최신 접근 방식: Adobe Commerce의 효과적인 확장성](https://experienceleague.adobe.com/ko/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)을 참조하십시오.
 
 ## Storefront 서비스
 
