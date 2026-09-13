@@ -31,7 +31,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.7-p10 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/kr/security/products/magento/apsb26-49.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -67,7 +67,7 @@ Laminas MVC 사용 중단을 해결하기 위해 이제 Adobe Commerce에서 `la
 
 Adobe Commerce 2.4.7-p9 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/kr/security/products/magento/apsb26-05.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -87,7 +87,7 @@ Adobe Commerce 2.4.7은 Composer 2.2 LTS와 호환되지만 Composer 2.9.x를 �
 
 Adobe Commerce 2.4.7-p8 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -107,7 +107,7 @@ Adobe Commerce 2.4.7-p8 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p7 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/kr/security/products/magento/apsb25-71.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -115,7 +115,7 @@ Adobe Commerce 2.4.7-p7 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p6 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/kr/security/products/magento/apsb25-50.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -139,7 +139,7 @@ Adobe Commerce 2.4.7-p6 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p5 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/kr/security/products/magento/apsb25-26.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -165,7 +165,7 @@ Adobe Commerce 2.4.7-p5 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p4 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/kr/security/products/magento/apsb25-08.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -177,7 +177,7 @@ Adobe Commerce 2.4.7-p4 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p3 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/kr/security/products/magento/apsb24-73.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -193,7 +193,7 @@ Adobe Commerce 2.4.7-p3 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p2 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/kr/security/products/magento/apsb24-61.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -207,7 +207,7 @@ Adobe Commerce 2.4.7-p2 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p1 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/kr/security/products/magento/apsb24-40.html)을 참조하십시오.
 
 ### CVE-2024-34102용 핫픽스 적용
 

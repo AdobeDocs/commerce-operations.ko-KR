@@ -27,5 +27,5 @@ ht-degree: 0%
 
 격리된 보안 패치 파일을 적용하려면, 격리된 보안 패치 파일이 해당 버전에 대해서만 테스트되므로 고객은 지원되는 릴리스 라인의 최신 보안 전용 패치 릴리스(최신 -p 버전)에 있어야 합니다.
 
-Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/security/products/magento.html)를 참조하세요.
+Adobe Commerce에서 사용할 수 있는 최신 보안 업데이트를 찾으려면 [보안 센터](https://helpx.adobe.com/kr/security/products/magento.html)를 참조하세요.
 

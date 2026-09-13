@@ -40,7 +40,7 @@ ht-degree: 2%
             <li><a href="../lifecycle-policy.md">소프트웨어 수명 주기 정책</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">클라우드 버전 업그레이드 시행 정책</a></li>
             <li><a href="../security-enforcement-policy.md">보안 및 규정 준수 알림</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe 보안 공지</a></li>
+            <li><a href="https://helpx.adobe.com/kr/security/products/magento.html">Adobe 보안 공지</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ko">Adobe Commerce용 B2B</a></li>
           </ul>
         </td>
