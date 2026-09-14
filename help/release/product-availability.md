@@ -2,14 +2,12 @@
 title: 제품 가용성
 description: 현재 지원되는 Adobe Commerce 기능에 대해 알아보고 특정 Adobe Commerce 릴리스와의 호환성을 확인합니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-09-04T00:00:00Z
-source-git-commit: 86e2c94fe4415cefb4eb1962bb7a5e0a20a6ed23
+last-update: 2026-09-11
+source-git-commit: 89543d430e145c9fd9b153fac9610a0b10171d45
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
-
 ---
-
 # 제품 가용성
 
 다음 표에서는 Adobe Commerce 소프트웨어 가용성의 상태와 이를 얻을 수 있는 위치, 특히 기존 Adobe Commerce Composer 패키지 외부에서 사용할 수 있는 소프트웨어에 대해 설명합니다.
@@ -32,7 +30,7 @@ ht-degree: 0%
 
 ## Commerce 서비스
 
-[Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ko)는 Commerce 인스턴스와 함께 강력한 기능과 빠른 응답 시간을 제공하는 Adobe 호스팅 기능 세트입니다.
+[Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)는 Commerce 인스턴스와 함께 강력한 기능과 빠른 응답 시간을 제공하는 Adobe 호스팅 기능 세트입니다.
 
 상인은 가장 최신 버전의 서비스를 사용하여 가장 높은 안정성과 기능을 보장하는 것이 좋습니다. 이 설명서에서는 현재 릴리스된 버전에 대해 설명합니다.
 
