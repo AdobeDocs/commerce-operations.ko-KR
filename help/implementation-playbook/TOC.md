@@ -3,20 +3,18 @@ user-guide-title: 구현 플레이북
 user-guide-description: 성공적인 Adobe Commerce 사이트에 대한 계획 수립 및 구현을 위한 전략에 대해 알아봅니다.
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # 구현 플레이북 {#implementation-playbook}
 
 - [개요](overview.md)
 - 아키텍처 및 통합 {#architecture}
   - [Enterprise 참조](architecture/enterprise-blueprint.md)
-- 유지 관리 및 지원 {#maintenance}
+- 유지 관리 및 지원 {#maintenance-and-support}
   - [개요](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - 우수 사례 {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [비공개 콘텐츠 블록](best-practices/development/private-content-block-configuration.md)
     - [정적 콘텐츠 배포](best-practices/development/static-content-deployment.md)
     - [데이터베이스 테이블 수정](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [코어 및 타사 코드 수정](best-practices/development/modifying-core-and-third-party-code.md)
+    - [핵심 및 타사 코드 수정](best-practices/development/modifying-core-and-third-party-code.md)
   - 시작 {#launch}
     - [개요](best-practices/launch/overview.md)
     - [웹 웹 크롤러 구성](best-practices/launch/robots-txt.md)
@@ -69,4 +67,4 @@ ht-degree: 14%
     - [업그레이드 체크리스트](best-practices/maintenance/upgrade-checklist.md)
     - [MariaDB에 대한 업그레이드 사전 요구 사항](best-practices/maintenance/mariadb-upgrade.md)
 - [용어집](glossary.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
