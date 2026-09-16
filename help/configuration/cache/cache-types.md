@@ -5,24 +5,30 @@ feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 product_v2:
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3652976a8db3d0bb19ff9cd06adb3a7736c89539
+    internal-label: Implementation
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: '471'
 ht-degree: 0%
-
 ---
-
 # 캐시 프론트엔드 및 유형 구성
 
 캐시 프론트엔드는 Commerce 캐시 유형을 캐시 스토리지에 연결합니다. 여러 프론트엔드를 정의하고 각 프론트엔드에 특정 캐시 유형을 할당할 수 있습니다.
@@ -95,11 +101,22 @@ Commerce은 모든 캐시 유형에서 사용할 수 있는 기본 프론트엔�
 ],
 ```
 
-이 예제에서 Commerce은 `full_page` 캐시 형식을 `page_cache` 프런트 엔드에 할당합니다. 프론트엔드는 해당 캐시 유형을 저장하는 백엔드 구성을 결정합니다.
+위치:
+
+- `<frontend_type>` — 낮은 수준의 프런트 엔드 캐시 유형입니다. `Zend_Cache_Core`과(와) 호환되는 클래스 이름을 지정하십시오.
+생략하면 [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)이(가) 사용됩니다.
+
+- `<frontend_option>`, `<frontend_option_value>` — Commerce 프레임워크가 생성 시 프론트엔드 캐시에 연관 배열로 전달하는 옵션의 이름과 값입니다.
+
+- `<backend_type>` — 낮은 수준의 백엔드 캐시 유형입니다. 다음을 지정할 수 있습니다.
+  - **Symfony 캐시(2.4.9+, 권장)**: `valkey` 또는 `file`과(와) 같이 간단한 이름
+  - **Zend 기반**: `Zend_Cache_Backend_Interface`을(를) 구현하는 `Zend_Cache_Backend`과(와) 호환되는 전체 클래스 이름
+
+- `<backend_option>`, `<backend_option_value>` — Commerce 프레임워크가 생성 시 연관 배열로 백엔드 캐시에 전달하는 옵션의 이름 및 값입니다.
 
 >[!NOTE]
 >
->`full_page` 키는 Commerce 응용 프로그램 캐시 형식을 나타냅니다. Varnish 또는 Fastly를 통한 HTTP 전체 페이지 캐싱은 별도의 캐싱 레이어입니다. [캐싱 개요 및 구성 옵션](caching-overview.md)을 참조하세요.
+>Zend 기반 클래스 이름 대 Symfony Cache 간소화된 이름(`valkey` 또는 `file`)과 같은 백엔드 값 형식의 경우 [캐시 백엔드 옵션](cache-options.md)을 참조하십시오.
 
 >[!MORELIKETHIS]
 >

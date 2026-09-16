@@ -7,23 +7,28 @@ badgePaas: label="온-프레미스" type="Informative" url="https://experiencele
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 414
+source-wordcount: '428'
 ht-degree: 0%
-
 ---
-
 # Valkey 설치 및 설정
 
 Valkey는 캐시 백엔드와 세션 스토리지용으로 사용할 수 있는 오픈 소스, Redis 호환 인 메모리 데이터 저장소입니다. 주요 기능은 다음과 같습니다.
@@ -56,7 +61,15 @@ Adobe은 세션에 대해 지속성을 설정하여 Valkey 데이터를 디스�
 
 RDB 및 AOF 옵션을 동시에 활성화할 수도 있습니다. 지속성 옵션의 장점과 단점을 포함한 자세한 내용은 [Valkey 지속성 설명서](https://valkey.io/topics/persistence/)를 참조하십시오.
 
-캐시 인스턴스의 경우 전체 Commerce 캐시를 저장할 수 있을 만큼 크도록 인스턴스를 설정합니다. 크기 요구 사항은 제품 수 및 스토어 조회수와 같은 다양한 요인에 따라 다릅니다. 시작점으로 파일 시스템의 캐시 폴더 크기를 사용할 수 있습니다. 예를 들어, 파일 시스템의 `var/cache` 폴더가 5GB인 경우 시작하려면 최소 5GB로 Valkey 인스턴스를 설정하십시오. Commerce 캐시를 복원할 수 있으므로 캐시 인스턴스에 지속성이 필요하지 않습니다.
+캐시 인스턴스의 경우 전체 Commerce 캐시를 저장할 수 있을 만큼 크도록 인스턴스를 설정합니다.
+
+- 크기 요구 사항은 제품 수 및 스토어 조회수와 같은 다양한 요인에 따라 다릅니다.
+
+  시작점으로 파일 시스템의 캐시 폴더 크기를 사용할 수 있습니다. 예를 들어, 파일 시스템의 `var/cache` 폴더가 5GB인 경우 시작하려면 최소 5GB로 Valkey 인스턴스를 설정하십시오.
+
+- Commerce 캐시를 복원할 수 있으므로 캐시 인스턴스에 지속성이 필요하지 않습니다.
+
+  자세한 내용은 [Valkey 캐시 가이드](https://valkey.io/docs/latest/develop/use/)를 참조하십시오.
 
 성능 조정을 위해 비동기 삭제에 대해 다음 설정을 활성화할 수 있습니다. 이러한 설정은 Valkey의 동작을 변경하지 않습니다.
 

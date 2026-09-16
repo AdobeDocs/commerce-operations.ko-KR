@@ -8,26 +8,34 @@ autotag-review: '2026-06-22T21:55:53.227Z'
 TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ec95c99d060f3c45095236d41729648abf389dd1
+    internal-label: Security
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 1411
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # 기본 및 페이지 캐시에 대한 Redis 구성
 
 {{cloud-cache-config}}
@@ -46,7 +54,7 @@ Commerce은 Redis 페이지 및 기본 캐싱을 구성하는 명령줄 옵션�
 
 Adobe Commerce은 다음과 같은 Redis 캐시 백엔드 구현을 사용했습니다.
 
-- **레거시 Redis 백엔드**(`Cm_Cache_Backend_Redis`) - 이전 Redis 구성에서 더 이상 사용되지 않는 구현입니다.
+- **사용되지 않는 Redis 백 엔드**(`Cm_Cache_Backend_Redis`) - 이전 Redis 구성에서 사용되므로 더 이상 권장되지 않습니다.
 - **Redis backend**(`Magento\Framework\Cache\Backend\Redis`) - 이 항목의 명령줄 구성에서 기본 및 페이지 캐시에 사용하는 백엔드입니다.
 - **L2 캐시 백엔드** (`Magento\Framework\Cache\Backend\RemoteSynchronizedCache`) - Redis를 원격 백엔드 및 로컬 파일 캐시 저장소로 사용하여 노드 간 캐시 데이터를 동기화하는 두 수준 캐시 구현입니다. [두 수준 캐시 구성](level-two-cache.md)을 참조하세요.
 
@@ -202,7 +210,7 @@ L2 캐시에서 미리 로드 기능을 사용하는 경우 키에 `:hash` 접�
 
 ### 병렬 생성
 
-Commerce 2.4.0 릴리스부터 Adobe에서는 잠금 대기를 없애려는 사용자를 위해 `allow_parallel_generation` 옵션을 도입했습니다. 이 기능은 기본적으로 비활성화되어 있으며, Adobe에서는 구성 및/또는 블록이 과도하게 설정될 때까지 비활성화하는 것이 좋습니다.
+Adobe Commerce은 잠금 대기를 제거하려는 사용자에게 `allow_parallel_generation` 옵션을 제공합니다. 이 기능은 기본적으로 비활성화되어 있으며, Adobe에서는 구성 및/또는 블록이 과도하게 설정될 때까지 비활성화하는 것이 좋습니다.
 
 **병렬 생성을 사용하려면**:
 
