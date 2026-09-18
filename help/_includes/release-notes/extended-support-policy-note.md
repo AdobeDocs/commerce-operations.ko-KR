@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # 확장 지원 정책 참고 사항
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >다음도 참조하십시오.
 >
 >- [소프트웨어 수명 주기 정책](/help/release/lifecycle-policy.md) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
->- [클라우드 버전 업그레이드 시행 정책](/help/release/version-upgrade-enforcement-policy.md) — 시행 날짜 및 필수 작업
+>- [Commerce 환경을 보호하기 위한 필수 작업 및 기한](/help/release/security-enforcement-policy.md) — 적용 날짜 및 필수 작업

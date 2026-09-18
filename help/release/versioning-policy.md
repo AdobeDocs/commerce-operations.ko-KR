@@ -2,14 +2,12 @@
 title: 릴리스 정책
 description: Adobe Commerce 릴리스 유형, 마케팅 및 모듈 버전 관리, 패치 및 보안 릴리스, 베타, 핫픽스, 전체 릴리스 정책에 대해 알아봅니다.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 릴리스 정책
 
 Adobe Commerce에서는 개별 모듈 수준(예: `magento/framework 101.1.1`)에서 [시맨틱 버전 관리](https://semver.org/)를 사용하지만 마케팅 버전 번호에는 사용하지 않습니다. For example:
@@ -82,4 +80,4 @@ Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보�
 
 문제를 수정하거나 다양한 이유로 Adobe Commerce 코드를 수정하기 위해 Adobe이 아닌 사용자가 작성합니다.
 
-<!-- Last updated from includes: 2026-06-16 17:36:23 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

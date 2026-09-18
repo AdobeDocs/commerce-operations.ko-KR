@@ -4,13 +4,11 @@ user-guide-description: Adobe Commerce 패치 및 서비스에 대한 모든 릴
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
+source-git-commit: 7f611e9d05ddc53c853839d33bcacf48a59c126e
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '110'
 ht-degree: 30%
-
 ---
-
 
 # 릴리스 정보 {#release}
 
@@ -55,7 +53,7 @@ ht-degree: 30%
 - 계획 및 정책 {#planning}
   - [라이프사이클 정책](lifecycle-policy.md)
   - [Commerce 환경을 보호하기 위해 필요한 작업 및 기한](security-enforcement-policy.md)
-  - [버전 업그레이드 시행 정책](version-upgrade-enforcement-policy.md)
+  - [월별 보안 격리 패치 정책](monthly-isolated-security-patches.md)
   - [버전 관리 정책](versioning-policy.md)
   - [릴리스 일정](schedule.md)
 - [버전별 기능](features.md)
@@ -63,4 +61,4 @@ ht-degree: 30%
 - 패키지 {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
-- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=ko)
+- [운영 안내서로 돌아가기](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
