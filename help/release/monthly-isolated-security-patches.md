@@ -78,7 +78,7 @@ Adobe Commerce 고객이 중요한 보안 수정 사항을 더 빨리 적용할 
 
    새로운 월별 격리된 패치 파일은 릴리스 일정에 따라 제공됩니다. 영향을 받는 구성 요소 및 CVE에 대한 해당 보안 게시판을 검토하십시오. 각 게시판은 해당 월의 격리된 패치 파일을 설치하기 위한 단계별 지침이 포함된 릴리스 정보에 대한 링크입니다.
 
-1. **Commerce 버전 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)를 사용하여 Commerce 설치의 보안 상태를 확인하세요**[
+1. **Commerce 버전 도구[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)를 사용하여 Commerce 설치의 보안 상태를 확인하세요**
 
    이 도구는 현재 설치되어 있는 월별 패치, 누락된 패치 및 설치 시 노출된 CVE를 보고합니다. 이렇게 하면 버전 번호에만 의존하지 않고 필요한 작업에 대한 확실한 평가가 제공됩니다.
 
