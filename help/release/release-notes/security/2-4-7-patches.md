@@ -137,7 +137,7 @@ Adobe Commerce 2.4.7-p6 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p5 보안 릴리스는 이전 릴리스 2.4.7에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/kr/security/products/magento/apsb25-26.html)을 참조하십시오.
 
 {{b2b-patches}}
 
