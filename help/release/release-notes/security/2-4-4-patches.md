@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.4의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2160'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.4 보안 패치 릴리스 노트
 
@@ -268,4 +266,4 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 **문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1[&#128279;](https://support.magento.com/hc/en-us/articles/8214752983949) 기술 자료 문서로 업그레이드한 후 다운그레이드된 패키지를 참조하십시오.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

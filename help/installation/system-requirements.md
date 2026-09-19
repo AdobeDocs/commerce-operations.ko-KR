@@ -2,14 +2,12 @@
 title: 시스템 요구 사항
 description: Adobe Commerce에 대한 소프트웨어 종속성 및 시스템 요구 사항에 대해 알아봅니다. 배포 환경과의 호환성에 대해서는 테스트된 구성을 참조하십시오.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-08-11T00:00:00Z
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+last-update: 2026-08-11
+source-git-commit: 0e218207eb48d6c93139bd05215f5804b21ee216
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
-
 ---
-
 # 시스템 요구 사항
 
 다음 정보에는 Adobe Commerce에서 테스트한 소프트웨어 종속성 및 서비스가 요약되어 있습니다.
@@ -74,7 +72,7 @@ Commerce 릴리스 라인.
 >
 >Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../release/lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../release/lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
 >
->클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../release/version-upgrade-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../release/lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
+>클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [보안 요구 사항 및 기한](../release/security-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../release/lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 >
 >이 문서의 길이를 최소화하기 위해 테이블이 축소됩니다. 확장할 헤더를 선택합니다.
 

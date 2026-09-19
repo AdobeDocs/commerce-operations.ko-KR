@@ -3,14 +3,12 @@ title: 소프트웨어 수명 주기 정책
 description: Adobe Commerce 릴리스에 대한 소프트웨어 지원 종료 관련 주요 일정에 대해 알아봅니다.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Commerce 라이프사이클 정책
 
@@ -206,3 +204,5 @@ Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. �
 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 즉시 마이그레이션할 수 없는 경우 Cloud 릴리스에서 현재 지원되는 최신 Adobe Commerce으로 업그레이드할 수 있습니다. 이렇게 하면 기존 Commerce on Cloud 배포 모델을 유지하면서 완전히 지원되는 최신 인프라 스택으로 이동합니다.
 
 이 경로는 향후 업그레이드 의무를 없애지 않습니다. Adobe Commerce on Cloud 배포를 사용하는 고객은 릴리스 라인이 버전 업그레이드 적용 날짜에 도달하므로 계속 업그레이드해야 합니다.
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

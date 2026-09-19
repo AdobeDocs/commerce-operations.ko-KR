@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 
@@ -59,7 +57,7 @@ Adobe Commerce 2.4.7은 이제 2026년 2월로 예정된 RabbitMQ 4.1 지원 종
 
 USPS 배송 통합은 이제 기존 Web Tools API 외에도 현대화된 RESTful USPS API를 지원합니다. 관리자는 관리 구성에서 사용할 USPS 통합 API를 선택할 수 있습니다. 이 업데이트는 USPS Web Tools API 사용 중단을 준비합니다.
 
-#### Magento 소유 Laminas MVC 포크
+#### Magento-owned Laminas MVC 포크
 
 Laminas MVC 사용 중단을 해결하기 위해 이제 Adobe Commerce에서 `laminas-mvc`(`magento/magento-zf-mvc`(으)로 게시됨)의 Magento 소유 포크를 사용합니다. 이 포크를 사용하면 Adobe Commerce 2.4.7에 대한 지속적인 패치 작업 및 장기적인 보안 규정 준수가 가능합니다.
 
@@ -225,4 +223,4 @@ Adobe Commerce 2.4.7-p1 보안 릴리스는 이전 릴리스 2.4.7에서 식별�
 
 Adobe Commerce 2.4.7-p1은 SOAP에서 REST API로 UPS 통합 마이그레이션 범위에서 도입된 문제를 해결합니다. 이 문제는 미국 외에서 배송하는 고객에게 영향을 미쳐 UPS로 배송을 생성하는 포장물에 킬로그램 및 센티미터의 지표 시스템/SI 측정을 사용할 수 없게 했습니다. 자세한 내용은 [SOAP에서 RESTful API로 UPS 배송 방법 통합 마이그레이션](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27146) 기술 자료 문서를 참조하십시오.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

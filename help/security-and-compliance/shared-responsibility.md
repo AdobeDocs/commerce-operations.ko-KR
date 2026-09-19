@@ -2,13 +2,11 @@
 title: 공유 책임 보안 및 운영 모델
 description: Adobe Commerce on cloud infrastructure 프로젝트와 관련된 각 당사자의 보안 책임에 대해 알아봅니다.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # 공동 책임 보안 및 운영 모델
 
 Adobe Commerce on cloud infrastructure는 공유 책임 보안 및 운영 모델을 사용하는 PaaS(platform-as-a-service) 서비스입니다. 판매자, 클라우드 서비스 공급자 및 CDN(콘텐츠 전송 네트워크) 공급자인 Adobe이 이러한 책임을 공유합니다. 각 당사자는 Adobe Commerce 애플리케이션 및 클라우드 인프라에 배포된 판매자별 코드 및 확장에 대한 보안 및 운영에 대해 고유한 책임을 집니다.
@@ -38,7 +36,6 @@ Adobe은 다음 사항을 담당합니다.
 >다음도 참조하십시오.
 >
 >* [소프트웨어 수명 주기 정책](../release/lifecycle-policy.md) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
->* [클라우드 버전 업그레이드 시행 정책](../release/version-upgrade-enforcement-policy.md) — 시행 날짜 및 필수 작업
 >* [보안 및 규정 준수 알림](../release/security-enforcement-policy.md) - Adobe Commerce on Cloud 버전 2.4.4부터 2.4.9까지 필요한 작업 및 기한
 
 {{supported-versions-only}}

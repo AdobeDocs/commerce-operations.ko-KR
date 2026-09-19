@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.3 보안 패치 릴리스 정보
 description: Adobe Commerce 버전 2.4.3의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.3 보안 패치 릴리스 노트
 
@@ -89,4 +87,4 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 지원되지 않는 원본 식 `unsafe-inline`이(가) 콘텐츠 보안 정책 `frame-ancestors` 지시문에서 제거되었습니다. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

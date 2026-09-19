@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.6 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.6의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.6 보안 패치 릴리스 노트
 
@@ -31,7 +29,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../../lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../../lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
 >
->클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../../version-upgrade-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../../lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
+>클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [버전 업그레이드 적용 날짜](../../security-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../../lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 
 ## 2.4.6-p15
 
@@ -61,7 +59,7 @@ Adobe Commerce 2.4.6은 이제 2026년 2월로 예정된 RabbitMQ 4.1 지원 종
 
 USPS 배송 통합은 이제 기존 Web Tools API 외에도 현대화된 RESTful USPS API를 지원합니다. 관리자는 관리 구성에서 사용할 USPS 통합 API를 선택할 수 있습니다. 이 업데이트는 USPS Web Tools API 사용 중단을 준비합니다.
 
-#### Magento 소유 Laminas MVC 포크
+#### Magento-owned Laminas MVC 포크
 
 Laminas MVC 사용 중단을 해결하기 위해 이제 Adobe Commerce에서 `laminas-mvc`(`magento/magento-zf-mvc`(으)로 게시됨)의 Magento 소유 포크를 사용합니다. 이 포크를 사용하면 Adobe Commerce 2.4.6에 대한 지속적인 패치 작업 및 장기적인 보안 규정 준수가 가능합니다.
 
@@ -331,4 +329,4 @@ Adobe Commerce 2.4.6-p1 보안 릴리스는 이전 릴리스에서 식별된 취
 
   [안정성 태그](https://getcomposer.org/doc/04-schema.md#package-links)가 있는 B2B 보안 패키지에 대한 수동 종속성을 추가하여 이 문제를 해결할 수 있습니다. 자세한 내용은 [B2B 릴리스 정보](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=ko#known-issue)를 참조하세요.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.8 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.8의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.8 보안 패치 릴리스 노트
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -46,7 +44,7 @@ Adobe Commerce 2.4.8은 이제 2026년 2월로 예정된 RabbitMQ 4.1 지원 종
 
 USPS 배송 통합은 이제 기존 Web Tools API 외에도 현대화된 RESTful USPS API를 지원합니다. 관리자는 관리 구성에서 사용할 USPS 통합 API를 선택할 수 있습니다. 이 업데이트는 USPS Web Tools API 사용 중단을 준비합니다.
 
-#### Magento 소유 Laminas MVC 포크
+#### Magento-owned Laminas MVC 포크
 
 Laminas MVC 사용 중단을 해결하기 위해 이제 Adobe Commerce에서 `laminas-mvc`(`magento/magento-zf-mvc`(으)로 게시됨)의 Magento 소유 포크를 사용합니다. 이 포크를 사용하면 Adobe Commerce 2.4.8에 대한 지속적인 패치뿐만 아니라 장기적인 보안 규정 준수도 보장됩니다.
 
@@ -86,7 +84,7 @@ Adobe Commerce 2.4.8-p3 보안 릴리스는 이전 릴리스 2.4.8에서 식별�
 
 * ACP2E-3874에 대한 수정: 동일한 여러 항목을 주문한 경우 주문 세부 사항에 대한 REST API 응답에 `base_row_total` 및 `row_total` 특성에 대한 올바른 값이 포함되어 있습니다.
 
-* AC-15446 수정: `getBodyText()`이(가) `Symfony\Component\Mime\Message`에서 존재하지 않는 `getTextBody()` 메서드를 호출하려고 시도하여 Magento 2.4.8-p2 및 `magento/framework` 103.0.8-p2와의 호환성을 보장하는 `Magento\Framework\Mail\EmailMessage`의 오류가 수정되었습니다.
+* AC-15446 수정: `getBodyText()`이(가) `Symfony\Component\Mime\Message`에서 존재하지 않는 `getTextBody()` 메서드를 호출하려고 하여 Magento 2.4.8-p2 및 `magento/framework` 103.0.8-p2와의 호환성을 보장하는 `Magento\Framework\Mail\EmailMessage`의 오류가 수정되었습니다.
 
 {{oct-2025-backports}}
 
@@ -136,4 +134,4 @@ CVE-2025-47110 및 VULN-31547에 대한 수정 사항은 격리된 패치로도 
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

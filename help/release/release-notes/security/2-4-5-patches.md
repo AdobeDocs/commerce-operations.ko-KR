@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.5의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.5 보안 패치 릴리스 노트
 
@@ -285,4 +283,4 @@ Adobe Commerce 2.4.5-p1 보안 릴리스는 이전 릴리스 2.4.5에서 식별�
 
 보안 버그 수정 중 하나에 새 구성 설정 생성이 포함되었습니다. [!UICONTROL **전자 메일이 변경된 경우 전자 메일 확인 필요**] 구성 설정을 사용하면 관리자가 전자 메일 주소를 변경할 때 전자 메일 확인을 요구할 수 있습니다. <!-- AC-6292-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->
