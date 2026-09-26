@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1538'
 ht-degree: 1%
 ---
 # 새로운 기능 템플릿
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 9월 18일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/monthly-isolated-security-patches">월별 격리된 보안 패치 적용 정책</a>이 추가되어 Adobe Commerce에서 전체 보안 패치 릴리스 사이에 화요일에 대상으로 격리된 CVE 수정 사항을 패치에서 제공하는 방법과 적용 및 확인하는 방법을 설명합니다.</p>
+</td>
+      <td>
+        새 주제
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 9월 15일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><code>VALKEY_BACKEND</code> 및 <code>REDIS_BACKEND</code> 배포 변수가 Adobe Commerce에서 실제로 사용하는 캐시 서비스를 결정하지 않으며 <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code>이(가) 환경에서 실제로 사용할 수 있는 서비스와 일치해야 함을 명확히 하기 위해 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey 서비스 구성</a> 가이드를 수정했습니다.</p>
+</td>
+      <td>
+        기술
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 9월 8일
 
@@ -380,102 +424,6 @@ ht-degree: 1%
         새 주제, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 27일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">개요: QPT(품질 패치 도구) v1.1.82</a>이(가) 추가되었습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 23일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce 2.4.9에 대한 MariaDB Cloud 버전 지원 세부 정보로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트했습니다(12.3 권장, 11.8 지원).</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 22일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>RabbitMQ 4.3 업데이트 및 MariaDB 12.3과의 호환성을 확인하는 등 클라우드 서비스 버전에 대한 최신 Commerce으로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a> 항목을 업데이트했습니다.</p>
-</td>
-      <td>
-        주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 21일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: 구성 가능한 제품 리디렉션이 유지 관리 페이지로 리디렉션되는 홈 페이지의 예약된 업데이트 미리 보기</a>에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468에 대한 QPT 1.1.81 수정 사항에 대한 자세한 설명을 추가했습니다. 웹 사이트 범위 관리자 사용자는 페이지 빌더에 동적 블록을 저장할 수 없습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">커밋</a></td>
     </tr>
   </tbody>
 </table>
