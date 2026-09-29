@@ -7,29 +7,54 @@ autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 7e9ebf390ec8fa458b3f55dcc5bd17b962702900
+    internal-label: Intermediate
+source-git-commit: ed51278b96a445aab6d1194e473e55d85ce6ef1d
 workflow-type: tm+mt
-source-wordcount: 31874
+source-wordcount: '32496'
 ht-degree: 0%
-
 ---
-
 # 릴리스 정보
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches)은(는) Adobe 및 Magento Open Source 커뮤니티에서 개발한 개별 패치를 제공합니다. 설치된 Adobe Commerce 버전에 사용할 수 있는 모든 개별 패치에 대한 일반 정보를 적용, 되돌리기 및 볼 수 있습니다. 패치를 개발한 사용자와 관계없이 Adobe Commerce 및 Magento Open Source 프로젝트에 패치를 적용할 수 있습니다. 예를 들어 커뮤니티에서 개발한 패치를 Adobe Commerce 프로젝트에 적용할 수 있습니다.
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.83 {#v1-1-83}
+
+* **AC-18128**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.8-p6) - GraphQL에서 반환된 주문 날짜 및 주문 설명 타임스탬프에 영어가 아닌 로케일 설정에서 잘못된 달력 날짜가 표시되는 문제가 해결되었습니다.
+* **AC-18096**(Adobe Commerce 및 Magento Open Source >2.4.8 &lt;=2.4.9-p1의 경우) - 날짜 형식을 슬래시 구분(`/`)에서 대시 구분(`-`)으로 되돌려 Sales GraphQL 날짜 필드가 이전 릴리스와 다른 형식으로 날짜를 반환하는 문제를 해결했습니다.
+* **AC-17975**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.9 &lt;2.4.10) - 특정 PHP 환경에서 관리자 워크플로, 체크아웃 인증, CAPTCHA 처리, 범주 관리, 구성 페이지 및 명령줄 작업에 영향을 주는 여러 PHP 8.5 호환성 문제를 해결합니다.
+* **ACP2E-4639**(Adobe Commerce의 경우, B2B >=1.3.4 &lt;1.5.3) - 이전 항목 필드와 `RequistionListItems` 유형은 계속 사용할 수 있지만 더 이상 사용되지 않는 반면 GraphQL 스키마에서 구매요청 목록 항목 유형의 철자가 잘못된 문제를 해결했습니다.
+* **ACP2E-4838**(Adobe Commerce >=2.4.4 &lt;2.4.10의 경우) - 제한된 권한이 있는 관리자 사용자가 고객 그리드에서 고객을 삭제할 수 없는 문제를 해결했습니다.
+* **ACP2E-4877**(Adobe Commerce의 경우 B2B >=1.3.4 &lt;1.5.4) - *보류 중* 상태일 때 **[!UICONTROL Payment on Account]**&#x200B;을(를) 사용하여 수행한 주문을 관리자에서 편집할 수 없는 문제를 해결했습니다.
+* **ACP2E-4908**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.10) - 각 스토어 보기에서 각 제품에 대해 별도의 레이아웃 캐시 항목이 생성되었으므로 큰 카탈로그가 Redis 또는 [!DNL Valkey]에서 과도한 메모리 사용을 초래하는 문제를 해결했습니다.
+* **AC-12854**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.9) - 관리자의 순서 재지정이 다음 순서 번호를 할당하는 대신 *-1* 접미사를 사용하여 새 순서 번호를 만드는 문제를 해결했습니다.
+* **ACP2E-4977**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 **[!UICONTROL Fixed Product Tax]**(FPT)가 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
+* **AC-16530**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 장바구니에서 카탈로그 가격 규칙에 대해 예약된 업데이트를 일관되게 반영하지 않는 문제를 해결했습니다.
+* **AC-11389**(Adobe Commerce 및 Magento Open Source >=2.4.6 &lt;2.4.9) - 일부 반올림 시나리오에서 할인, 세금 및 주문 합계가 잘못 계산되는 문제가 수정되었습니다.
+* **ACP2E-4998**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - 페이로드의 SKU가 한 개 없을 때 전체 요청에 대해 `POST /V1/products/tier-prices` REST API 요청이 실패하여 유효한 SKU가 업데이트되지 않는 문제를 해결했습니다.
+* **ACP2E-5015**(Adobe Commerce의 경우 B2B >=1.3.4 &lt;1.5.4) - 공유 카탈로그를 관리자에 저장하는 경우 필수 카탈로그 데이터를 사용할 수 없을 때 할당한 제품 및 가격을 실수로 제거하는 문제가 해결되었습니다.
+* **AC-14940**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.9) - 관리자의 고객 계정에 대한 **[!UICONTROL Reset Password]**&#x200B;을(를) 클릭해도 일부 스토어 관련 사례에서 암호 재설정 이메일이 전송되지 않는 문제를 해결했습니다.
+* **ACP2E-5101**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 인덱서가 *[!UICONTROL Update on Schedule]*&#x200B;로 설정된 경우 B2B 모듈 설치에 실패하는 문제를 해결했습니다.
+* **ACP2E-5205**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 범주 로드에 상당한 시간이 걸리거나 많은 범주 및 제품이 관련되어 있을 때 시간 초과가 발생하는 문제를 수정합니다. 또한 이제 각 범주 리프에 대한 제품 수가 올바르게 표시됩니다.
+* **ACP2E-3211**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 상점 첫 화면에서 동일한 제품을 장바구니에 추가하면 단일 항목으로 결합하는 대신 동일한 SKU에 대해 장바구니에 개별 항목이 생성되는 문제가 해결되었습니다.
+* **ACP2E-5223**(Adobe Commerce >=2.4.8 &lt;2.4.9) - `Catalog Permissions` 인덱스에 고객 그룹에서 제외된 웹 사이트가 포함된 문제를 수정합니다.
+* 버전 업데이트됨: **MDVA-42855-V2**, **ACSD-55100**, **ACSD-61845**, **ACP2E-4732**, **ACP2E-4156**
+* 대체된 패치: **ACSD-67643**
 
 ## v1.1.82 {#v1-1-82}
 
@@ -135,7 +160,7 @@ ht-degree: 0%
 ## v1.1.77 {#v1-1-77}
 
 * **ACSD-63687**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - Redis 캐시를 정리할 수 없으므로 잘못된 가격이 표시되는 문제를 해결했습니다.
-* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
+* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에서 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
 * **ACSD-68537**(Adobe Commerce >=2.4.8 &lt;2.4.9) - 고객 세그먼트 수가 증가함에 따라 체크아웃 성능이 저하되는 문제를 해결했습니다.
 * **ACSD-68664**(Adobe Commerce >=2.4.6 &lt;2.4.9) - 사용자 지정 도메인으로 스토어에 대한 콘텐츠를 미리 볼 때 예약된 업데이트 미리 보기가 중단되는 문제를 해결했습니다.
 * **ACSD-68759**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9) - 아랍어 로케일을 사용할 때 고객 계정을 만들지 못하고 DOB(생일) 특성이 상점 앞에 표시되도록 설정된 문제가 해결되었습니다.
@@ -551,7 +576,7 @@ ht-degree: 0%
 * **ACSD-58442**(Adobe Commerce >=2.4.4 &lt;2.4.7-p1의 경우) - 너비가 768px인 장치가 모바일로 처리되어 메뉴와 헤더가 데스크탑 대신 모바일 보기에서 로드되는 문제를 해결합니다.
 * **ACSD-58790**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - [!DNL Chrome]의 모바일 보기에서 제품 세부 사항 페이지 이미지의 핀치-투-줌 기능을 수정합니다.
 * **ACSD-59036**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 하한과 상한이 모두 $0인 제품 가격을 로드할 때 발생하는 예외를 수정합니다.
-* **ACSD-59229**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.7) - 요청의 X-Magento-Vary의 이전 값으로 인해 고객 그룹 관련 정보가 잘못된 세그먼트에 저장되는 문제가 해결되었습니다.
+* **ACSD-59229**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 요청에서 X-Magento-Vary의 이전 값으로 인해 고객 그룹 관련 정보가 잘못된 세그먼트에 저장되는 문제가 해결되었습니다.
 * **ACSD-59378**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 가져오는 동안 저장소 수준 URL 재작성이 잘못 업데이트되는 문제를 해결했습니다.
 * **ACSD-59514**(Adobe Commerce >=2.4.4 &lt;2.4.7-p2) - [!DNL Page Builder]을(를) 가진 관리 영역의 양식에서 *[!DNL Page Builder]이(가) 잠금 해제 없이 5초 동안 렌더링되는 오류를 발생시키는 문제를 해결했습니다.* 을 클릭합니다. 양식을 제출한 후 브라우저 콘솔에서 변경 사항을 저장할 수 없습니다.
 * **ACSD-60303**(Adobe Commerce >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - HTML 축소가 활성화된 경우 관리자에서 주문을 할 수 없는 문제가 해결되었습니다.
@@ -1058,7 +1083,7 @@ ht-degree: 0%
 * **MDVA-44887**(*Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5*) - *발견되지 않은 구문이 수정됨Error: 관리 패널에서 예기치 않은 토큰 &#39;const&#39;* 오류가 발생했습니다.
 * **MDVA-43718**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - 수정 사항 *소비자가 %resources에 액세스할 수 있는 권한이 없습니다.* 사용자 지정 통합에서 공유 카탈로그에 액세스할 때 표시되는 오류입니다.
 * **MDVA-44660**(*Adobe Commerce 및 Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - 고객의 이름과 성에 그레이브 악센트 문자(\`)를 사용할 수 없는 문제를 해결했습니다.
-* **MDVA-40896**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 비동기 제품 벌크 API에서 *오류: TypeError: Magento에 전달된 인수 3* 오류를 수정합니다.
+* **MDVA-40896**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 비동기 제품 벌크 API에서 *오류: TypeError: 인수 3이 Magento* 오류로 전달되었습니다.
 * **MDVA-38559**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.3*) - 둘 이상의 구독을 가진 고객의 */V1/customers/search API* 오류를 수정합니다.
 * **MDVA-44533**(*Adobe Commerce 및 Magento Open Source >=2.3.1 &lt;2.4.4*) - 번들 하위 제품에 할인이 잘못 적용되는 문제가 수정되었습니다.
 * 업데이트된 패치: MDVA-41061, MDVA-42269.
