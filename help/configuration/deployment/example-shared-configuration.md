@@ -2,14 +2,12 @@
 title: 공유 구성 사용 예
 description: 공유 구성 파일을 사용하여 개발 시스템에서 설정을 변경하는 방법에 대한 예를 참조하십시오.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # 공유 구성 사용 예
 
 이 예제에서는 개발 시스템에서 다음 설정을 변경하고 빌드 시스템에서 공유 구성 파일 `config.php`을(를) 업데이트하며 프로덕션 시스템에서 동일한 설정을 구현하는 방법을 보여 줍니다.
@@ -87,8 +85,8 @@ ht-degree: 0%
 
    ![Admin에서 구성 옵션을 편집할 수 없음](../../assets/configuration/split-deploy-not-editable.png)
 
->[!INFO]
->
->관리자에서 잠긴 설정을 변경하려면 [`magento config:set --lock` 명령](../cli/set-configuration-values.md)을 사용하십시오.
+   >[!INFO]
+   >
+   >관리자에서 잠긴 설정을 변경하려면 [`magento config:set --lock` 명령](../cli/set-configuration-values.md)을 사용하십시오.
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->
