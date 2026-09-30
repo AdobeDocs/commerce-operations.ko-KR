@@ -1,17 +1,15 @@
 ---
-title: 'ACSD-65127: 프로덕션 모드에서 JavaScript 축소를 수행하면 브라우저에  [!DNL TinyMCE] 6 오류가 발생합니다.'
-description: ACSD-65127 패치를 적용하여 프로덕션 모드에서 JavaScript 축소를 활성화하면  [!DNL TinyMCE] 6에서 브라우저 콘솔에 오류가 발생하여 기능 및 사용자 환경에 영향을 주는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-65127: 프로덕션 모드에서 JavaScript 축소를 수행하면 브라우저에 [!DNL TinyMCE] 6개의 오류가 발생합니다'
+description: ACSD-65127 패치를 적용하여 프로덕션 모드에서 JavaScript 축소를 활성화하면 [!DNL TinyMCE] 6에서 브라우저 콘솔에 오류가 발생하여 기능 및 사용자 환경에 영향을 주는 Adobe Commerce 문제를 해결합니다.
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127: 프로덕션 모드에서 JavaScript 축소를 수행하면 브라우저에 [!DNL TinyMCE] 6개의 오류가 발생합니다
 
 ACSD-65127 패치는 프로덕션 모드에서 JavaScript 축소를 활성화하면 [!DNL TinyMCE] 6에서 브라우저 콘솔에 오류가 발생하여 기능과 사용자 환경에 영향을 주는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-65127입니다. 이 문제는 Adobe Commerce 2.4.8에서 해결되었습니다.
@@ -38,15 +36,15 @@ ACSD-65127 패치는 프로덕션 모드에서 JavaScript 축소를 활성화하
 
 1. 아래 명령을 실행하여 구성을 설정합니다.
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->Adobe에서는 **[!UICONTROL Merge JavaScript Files]**&#x200B;을(를) 사용하지 않는 것이 좋습니다. [JS 파일 병합(권장되지 않음)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)을 참조하십시오.
+   >[!NOTE]
+   >
+   >Adobe에서는 **[!UICONTROL Merge JavaScript Files]**&#x200B;을(를) 사용하지 않는 것이 좋습니다. [JS 파일 병합(권장되지 않음)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)을 참조하십시오.
 
 1. 프로덕션 모드를 활성화합니다.
 
