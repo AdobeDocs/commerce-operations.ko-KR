@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ed51278b96a445aab6d1194e473e55d85ce6ef1d
+source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
 workflow-type: tm+mt
-source-wordcount: '32496'
+source-wordcount: '33143'
 ht-degree: 0%
 ---
 # 릴리스 정보
@@ -27,11 +27,35 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=ko#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하십시오.
+>Adobe Commerce 프로젝트에 패치를 적용하는 방법은 [패치 적용](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)을 참조하십시오. 릴리스된 패치의 전체 목록을 검토하려면 소프트웨어 업데이트 가이드의 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하십시오.
 
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.84 {#v1-1-84}
+
+* **ACP2E-4913**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - 교착 상태로 인해 배송 및 송장 발행 작업이 실패하는 문제를 수정합니다.
+* **ACP2E-5005**(Adobe Commerce의 경우, B2B >=1.5.0 &lt;1.5.4) - 관리자가 번들 제품을 재구성하고 수량을 편집할 때 협상 가능한 견적의 번들 제품 옵션 수량이 이전 값으로 되돌아가는 문제를 해결했습니다.
+* **ACP2E-5009**(Adobe Commerce >=2.4.5 &lt;2.4.10) - Magento Open Source에서 Adobe Commerce으로 데이터 마이그레이션이 범주 예약 디자인 변경 사항 및 제품 특별 가격 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
+* **ACP2E-5017**(Adobe Commerce의 경우 B2B >=1.5.0 &lt;1.5.4) - 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 역할을 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
+* **ACP2E-5027**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.10) - 파일 잠금이 활성화되어 있을 때 인덱서가 루프에 남아 있고 리인덱싱이 완료되지 않는 문제를 해결했습니다.
+* **ACP2E-5029**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.10) - 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 사항이 [!DNL Live Search]에 표시되지 않는 문제를 해결했습니다.
+* **ACP2E-5041**(Adobe Commerce >=2.4.5 &lt;2.4.9의 경우) - 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 [!UICONTROL Special Price] 대신 일반 가격이 표시되는 문제가 해결되었습니다.
+* **ACP2E-5059**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.10) - 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 수정합니다.
+* **ACP2E-5122**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.10)의 경우) - 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 애플리케이션 오류로 잘못 기록되는 문제를 해결합니다.
+* **ACP2E-5143**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - 라우팅 메타데이터만 요청될 때 GraphQL 경로 쿼리가 전체 CMS 페이지 콘텐츠를 렌더링하는 문제를 해결하여 페이지 빌더 위젯을 포함하는 CMS 페이지에 대한 데이터베이스 쿼리를 증가시킵니다.
+* **ACP2E-5183**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.10) - `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
+* **ACP2E-5242**(Adobe Commerce 및 Magento Open Source >=2.4.9 &lt;2.4.10)의 경우) - 장바구니에 항목을 추가하는 동안 제품 가용성을 확인하는 동안 웹 사이트를 찾을 수 없음을 나타내는 오류가 표시되는 문제를 해결했습니다.
+* **ACP2E-5263**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.9) - 모든 제품이 포함되기 전에 CSV 파일로 제품 내보내기를 중지하여 불완전한 파일을 생성하는 문제를 해결합니다.
+* **ACP2E-5034**(Adobe Commerce의 경우, B2B >=1.5.0 &lt;1.5.3) - 배송 방법을 선택한 후 견적을 다시 계산할 때 협상 가능한 견적 관리에서 합계를 *0*(으)로 잘못 재설정하고 관리자의 [!UICONTROL Configure] 작업을 통해 수행된 번들 제품 옵션 수량에 대한 업데이트를 무시하며 견적 소계의 동적 가격 번들 제품에 적용된 항목 수준 할인을 올바르게 반영하지 못하는 문제를 해결했습니다.
+* **ACP2E-4741**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.9 &lt;2.4.10) - 기본이 아닌 주식과 원본을 사용하는 동안 [!UICONTROL Related Product], [!UICONTROL Up-Sell] 또는 크로스셀로서 연결된 제품이 저장된 후 제품이 상점 앞에서 사라지는 문제를 해결했습니다.
+* **ACP2E-5079**(Adobe Commerce >=2.4.4 &lt;2.4.10)의 경우) - 여러 웹 사이트에 할당된 고객 세그먼트를 평가하는 경우 고객 계정이 전역적으로 공유될 때 첫 번째 웹 사이트에서만 일치하는 고객을 반환하는 문제를 해결했습니다.
+* **ACP2E-5127**(Adobe Commerce의 경우 B2B >=1.3.3 &lt;1.5.4) - 관리 패널에서 기본이 아닌 로케일로 회사 계정을 편집하면 [!UICONTROL Credit Limit]이 *0*(으)로 재설정되는 문제가 해결되었습니다.
+* **AC-15494**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - products 쿼리에서 제품 이름이 원래 문자 대신 HTML 이스케이프 처리된 특수 문자로 반환되는 문제가 해결되었습니다.
+* 업데이트된 버전: **AC-18096**, **ACSD-60584**, **ACSD-65775**
+* 교체된 패치: **ACP2E-4801**, **ACP2E-4194**
+* 업데이트된 패치: **ACP2E-4815**
 
 ## v1.1.83 {#v1-1-83}
 
@@ -160,7 +184,7 @@ ht-degree: 0%
 ## v1.1.77 {#v1-1-77}
 
 * **ACSD-63687**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - Redis 캐시를 정리할 수 없으므로 잘못된 가격이 표시되는 문제를 해결했습니다.
-* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에서 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
+* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
 * **ACSD-68537**(Adobe Commerce >=2.4.8 &lt;2.4.9) - 고객 세그먼트 수가 증가함에 따라 체크아웃 성능이 저하되는 문제를 해결했습니다.
 * **ACSD-68664**(Adobe Commerce >=2.4.6 &lt;2.4.9) - 사용자 지정 도메인으로 스토어에 대한 콘텐츠를 미리 볼 때 예약된 업데이트 미리 보기가 중단되는 문제를 해결했습니다.
 * **ACSD-68759**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9) - 아랍어 로케일을 사용할 때 고객 계정을 만들지 못하고 DOB(생일) 특성이 상점 앞에 표시되도록 설정된 문제가 해결되었습니다.
@@ -576,7 +600,7 @@ ht-degree: 0%
 * **ACSD-58442**(Adobe Commerce >=2.4.4 &lt;2.4.7-p1의 경우) - 너비가 768px인 장치가 모바일로 처리되어 메뉴와 헤더가 데스크탑 대신 모바일 보기에서 로드되는 문제를 해결합니다.
 * **ACSD-58790**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.8) - [!DNL Chrome]의 모바일 보기에서 제품 세부 사항 페이지 이미지의 핀치-투-줌 기능을 수정합니다.
 * **ACSD-59036**(Adobe Commerce 및 Magento Open Source >=2.4.7 &lt;2.4.8) - 하한과 상한이 모두 $0인 제품 가격을 로드할 때 발생하는 예외를 수정합니다.
-* **ACSD-59229**(Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.7) - 요청에서 X-Magento-Vary의 이전 값으로 인해 고객 그룹 관련 정보가 잘못된 세그먼트에 저장되는 문제가 해결되었습니다.
+* **ACSD-59229**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4 &lt;2.4.7) - 요청의 X-Magento-Vary의 이전 값으로 인해 고객 그룹 관련 정보가 잘못된 세그먼트에 저장되는 문제가 해결되었습니다.
 * **ACSD-59378**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.6) - 가져오는 동안 저장소 수준 URL 재작성이 잘못 업데이트되는 문제를 해결했습니다.
 * **ACSD-59514**(Adobe Commerce >=2.4.4 &lt;2.4.7-p2) - [!DNL Page Builder]을(를) 가진 관리 영역의 양식에서 *[!DNL Page Builder]이(가) 잠금 해제 없이 5초 동안 렌더링되는 오류를 발생시키는 문제를 해결했습니다.* 을 클릭합니다. 양식을 제출한 후 브라우저 콘솔에서 변경 사항을 저장할 수 없습니다.
 * **ACSD-60303**(Adobe Commerce >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - HTML 축소가 활성화된 경우 관리자에서 주문을 할 수 없는 문제가 해결되었습니다.
@@ -1083,7 +1107,7 @@ ht-degree: 0%
 * **MDVA-44887**(*Adobe Commerce 및 Magento Open Source >=2.4.4 &lt;2.4.5*) - *발견되지 않은 구문이 수정됨Error: 관리 패널에서 예기치 않은 토큰 &#39;const&#39;* 오류가 발생했습니다.
 * **MDVA-43718**(*Adobe Commerce 및 Magento Open Source >=2.3.0 &lt;2.4.5*) - 수정 사항 *소비자가 %resources에 액세스할 수 있는 권한이 없습니다.* 사용자 지정 통합에서 공유 카탈로그에 액세스할 때 표시되는 오류입니다.
 * **MDVA-44660**(*Adobe Commerce 및 Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - 고객의 이름과 성에 그레이브 악센트 문자(\`)를 사용할 수 없는 문제를 해결했습니다.
-* **MDVA-40896**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 비동기 제품 벌크 API에서 *오류: TypeError: 인수 3이 Magento* 오류로 전달되었습니다.
+* **MDVA-40896**(*Adobe Commerce 및 Magento Open Source >=2.4.3 &lt;2.4.4*) - 비동기 제품 벌크 API에서 *오류: TypeError: Magento에 전달된 인수 3* 오류를 수정합니다.
 * **MDVA-38559**(*Adobe Commerce 및 Magento Open Source >=2.4.0 &lt;2.4.3*) - 둘 이상의 구독을 가진 고객의 */V1/customers/search API* 오류를 수정합니다.
 * **MDVA-44533**(*Adobe Commerce 및 Magento Open Source >=2.3.1 &lt;2.4.4*) - 번들 하위 제품에 할인이 잘못 적용되는 문제가 수정되었습니다.
 * 업데이트된 패치: MDVA-41061, MDVA-42269.
