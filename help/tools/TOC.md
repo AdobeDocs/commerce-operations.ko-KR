@@ -4,13 +4,11 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
 workflow-type: tm+mt
-source-wordcount: '10695'
+source-wordcount: '10699'
 ht-degree: 0%
-
 ---
-
 
 # 도구 {#tools}
 
@@ -1060,6 +1058,8 @@ ht-degree: 0%
       - [ACP2E-4805: 첫 번째 판매 가능한 하위 항목이 목록에 나중에 나타나면 구성 가능한 제품에 대한 체크아웃 요청 속도가 느려집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 실행됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875: 큰 주소록으로 고객 계정을 열 때 관리자 사용자가 로그아웃함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
+    - v1.1.83 {#v1-1-83}
+      - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
   - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
