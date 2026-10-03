@@ -1,7 +1,7 @@
 ---
-source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
+source-git-commit: 206f502c41b53c822cca42957d7705184f18c0ab
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1282'
 ht-degree: 1%
 ---
 # 새로운 기능 템플릿
@@ -9,6 +9,28 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 10월 2일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">개요: QPT(품질 패치 도구) v1.1.83</a>이(가) 추가되었습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 9월 18일
 
@@ -342,88 +364,6 @@ ht-degree: 1%
         기술
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 31일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 사용자의 공유 카탈로그에 할당되지 않은 경우 관리자가 기본 카탈로그 제품을 견적에 추가할 수 없습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 30일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/security-enforcement-policy">보안 정책: 지원되지 않는 버전 또는 타사 소프트웨어 종속성을 실행하는 Cloud에서 Adobe Commerce을 업그레이드하는 데 대한 요구 사항, 일정 및 지침을 설명하기 위해 Cloud에서 Adobe Commerce 고객이 수행해야 하는 작업 및 기한</a>이 추가되었습니다.</p>
-</td>
-      <td>
-        새 주제
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7649aae1f8cab020c1081db2b2363bca22adfed">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 7월 28일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 첫 번째 판매 가능한 자식이 목록</a>의 뒷부분에 나타나면 구성 가능한 제품에 대한 체크아웃 요청이 느려집니다.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 보상 포인트 기록이 큰 스토어에서 보상 포인트 만료가 느리게 실행됩니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875: 관리자가 큰 주소록으로 고객 계정을 열 때 로그아웃한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">커밋</a></td>
     </tr>
   </tbody>
 </table>
