@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
+source-git-commit: 9e2d11d7a383434670c4cb45e3764ed2b8974e9c
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10703'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875: 큰 주소록으로 고객 계정을 열 때 관리자 사용자가 로그아웃함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+    - v1.1.84 {#v1-1-84}
+      - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
   - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
