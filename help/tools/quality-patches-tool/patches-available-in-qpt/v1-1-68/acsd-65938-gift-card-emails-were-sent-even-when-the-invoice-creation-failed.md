@@ -5,13 +5,27 @@ feature: Orders, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a6e85c9a-cbf6-4b4a-927b-43ec2ce827fc
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
-
 ---
-
 # ACSD-65938: 송장 생성에 실패했을 때도 기프트 카드 이메일이 전송됨
 
 ACSD-65938 패치는 송장이 정상적으로 저장되고 커밋되기 전에 기프트 카드 이메일이 전송되던 문제를 해결합니다. 이 수정 사항으로 이제 송장이 성공적으로 저장된 후에만 이메일이 트리거됩니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-65938입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

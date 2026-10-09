@@ -5,13 +5,25 @@ feature: Attributes, Services
 role: Admin
 exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 76cfaac4-e563-56dd-8938-708bf8b84956
+    internal-label: Attributes
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
-
 ---
-
 # MDVA-31590: MySQL 비동기 큐를 사용하여 특성을 일괄적으로 업데이트할 수 없습니다.
 
 MDVA-31590 패치는 사용자가 MySQL 비동기 큐를 사용하여 속성을 일괄적으로 업데이트할 수 없는 문제를 해결합니다. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.3이 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-31590입니다. 이 문제는 Adobe Commerce 2.4.2에서 해결되었습니다.

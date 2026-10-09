@@ -1,13 +1,22 @@
 ---
 title: SWAT 상태 지수 점수 및 권장 사항 이해
 description: 사이트 전체 분석 도구 상태 인덱스가 Adobe Commerce 사이트에 어떤 의미를 갖는지 알아봅니다. 점수를 해석하고 권장 사항을 효과적으로 사용하는 방법을 알아봅니다.
-source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
-
 ---
-
 # SWAT Health Index 이해
 
 SWAT 대시보드에서 **[!DNL Recommendations Report]**&#x200B;을(를) 다운로드하면 PDF의 **소개** 섹션에 **[!DNL Site Wide Analysis Tool Health Index]** 점수가 포함됩니다.

@@ -3,13 +3,27 @@ title: 세션 저장소 위치
 description: Adobe Commerce의 세션 저장소 위치 및 파일 관리에 대해 알아봅니다. 스토리지 논리 및 구성 옵션을 살펴봅니다.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '279'
 ht-degree: 0%
-
 ---
-
 # 세션 저장소 위치
 
 이 항목에서는 세션 파일이 저장된 위치를 찾는 방법에 대해 설명합니다. 시스템은 다음 논리를 사용하여 세션 파일을 저장합니다.
@@ -18,9 +32,9 @@ ht-degree: 0%
 - Redis를 구성한 경우 세션이 Redis 서버에 저장됩니다. [세션 저장소에 Redis 사용](../cache/redis-session.md)을 참조하세요.
 - 기본 파일 기반 세션 저장소를 사용하는 경우 표시된 순서대로 다음 위치에 세션을 저장합니다.
 
-   1. [`env.php`](#example-in-envphp)에 정의된 디렉터리
-   1. [`php.ini`](#example-in-phpini)에 정의된 디렉터리
-   1. `<magento_root>/var/session` 디렉터리
+  1. [`env.php`](#example-in-envphp)에 정의된 디렉터리
+  1. [`php.ini`](#example-in-phpini)에 정의된 디렉터리
+  1. `<magento_root>/var/session` 디렉터리
 
 ## `env.php`의 예
 
@@ -41,17 +55,17 @@ ht-degree: 0%
 
 ## 세션 크기 관리
 
-[사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security-session-management)에서 _세션 관리_&#x200B;를 참조하세요.
+_사용 안내서_&#x200B;에서 [세션 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security-session-management)를 참조하세요.
 
 ## 가비지 수집 구성
 
-만료된 세션을 정리하기 위해 시스템은 `gc` 지시문에 의해 계산되는 확률에 따라 _(_&#x200B;가비지 컬렉션`gc_probability / gc_divisor`) 처리기를 임의로 호출합니다. 예를 들어 이러한 지시문을 각각 `1/100`(으)로 설정하면 `1%`의 확률(_100개 요청당 가비지 수집 한 번의 호출 확률_)을 의미합니다.
+만료된 세션을 정리하기 위해 시스템은 `gc_probability / gc_divisor` 지시문에 의해 계산되는 확률에 따라 `gc`(_가비지 컬렉션_) 처리기를 임의로 호출합니다. 예를 들어 이러한 지시문을 각각 `1/100`(으)로 설정하면 `1%`의 확률(_100개 요청당 가비지 수집 한 번의 호출 확률_)을 의미합니다.
 
 가비지 수집 처리기는 `gc_maxlifetime` 지시문을 사용합니다. 이 시간(초)이 지나면 세션이 _가비지_(으)로 표시되고 정리될 수 있습니다.
 
 일부 운영 체제(Debian/Ubuntu)에서 기본 `session.gc_probability` 지시문은 `0`이므로 가비지 수집 처리기가 실행되지 않습니다.
 
-`session.gc_` 파일의 `php.ini` 파일에서 `<magento_root>/app/etc/env.php` 지시문을 덮어쓸 수 있습니다.
+`<magento_root>/app/etc/env.php` 파일의 `php.ini` 파일에서 `session.gc_` 지시문을 덮어쓸 수 있습니다.
 
 ```php
  'session' => [

@@ -1,15 +1,24 @@
 ---
 title: 수동 마이그레이션이 필요한 데이터
-description: Magento 1에서 Magento 2로 데이터 마이그레이션 중에 수동으로 마이그레이션해야 하는 데이터와 그 방법에 대해 알아봅니다.
+description: Magento 1에서 Magento 2 데이터로 마이그레이션하는 동안 수동으로 마이그레이션해야 하는 데이터와 그 방법에 대해 알아봅니다.
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
-
 ---
-
 # 수동 마이그레이션이 필요한 데이터
 
 수동으로 마이그레이션해야 하는 데이터에는 네 가지 종류가 있습니다.
@@ -51,7 +60,7 @@ ht-degree: 0%
 
 모든 미디어 파일(제품, 카테고리, WYSIWYG 편집기 등의 이미지)은 `<your Magento 1 install dir>/media`에서 `<your Magento 2 install dir>/pub/media`(으)로 수동으로 복사해야 합니다.
 
-그러나 Magento 1 *폴더에 있는* 파일을 `.htaccess`복사하지 `media`마십시오. Magento 2에는 유지해야 하는 자체 `.htaccess`이(가) 있습니다.
+그러나 Magento 1 `media` 폴더에 있는 `.htaccess` 파일을 *복사하지*&#x200B;마십시오. Magento 2에는 유지해야 하는 고유한 `.htaccess`이(가) 있습니다.
 
 ## Storefront 디자인
 

@@ -1,17 +1,38 @@
 ---
-title: 'ACSD-62332: 제품 목록 GraphQL 쿼리가 10,000개의 제품으로 제한되고 [!DNL Live Search] 현재 페이지를 1로 설정합니다.'
-description: ACSD-62332 패치를 적용하여 Adobe Commerce을 통해 쿼리할 때 제품 목록 GraphQL 쿼리가 10,000개 제품의 total_count로 제한되고  [!DNL Live Search] 현재 페이지를 검색 기준에서 *2* 페이지 대신 *1* 로 설정하는 GraphQL 문제를 해결합니다.
+title: 'ACSD-62332: GraphQL 쿼리를 10,000개의 제품으로 제한하여 [!DNL Live Search]을(를) 나열하는 제품은 현재 페이지를 1로 설정합니다.'
+description: ACSD-62332 패치를 적용하여 Adobe Commerce을 통해 쿼리할 때 제품 목록 GraphQL 쿼리가 총 10,000개의 제품으로 제한되고 [!DNL Live Search]이(가) 검색 기준에서 현재 페이지를 *2* 페이지 대신 *1* 로 설정하는 GraphQL 문제를 해결합니다.
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 3623a337-32e9-468b-a82b-6a7f7fa943c9
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # ACSD-62332: GraphQL 쿼리를 10,000개의 제품으로 제한한 제품 목록 [!DNL Live Search]에서 현재 페이지를 1로 설정합니다.
 
 >[!NOTE]
@@ -32,7 +53,7 @@ ACSD-62332 패치는 GraphQL 쿼리를 나열하는 제품이 10,000개 제품 �
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -43,7 +64,7 @@ ACSD-62332 패치는 GraphQL 쿼리를 나열하는 제품이 10,000개 제품 �
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 
 ## 관련 읽기

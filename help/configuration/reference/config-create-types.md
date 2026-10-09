@@ -2,13 +2,22 @@
 title: 구성 유형
 description: Adobe Commerce에서 구성 유형을 만들고 확장하는 방법을 알아봅니다. 모듈 구성 및 사용자 지정 기술을 살펴보십시오.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # 구성 유형
 
 ## 구성 유형 확장
@@ -48,7 +57,7 @@ ht-degree: 0%
 1. XML 파일을 만듭니다.
 1. `di.xml`에서 구성 개체를 정의합니다.
 
-   Magento_Sales 모듈의 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml)에 있는 다음 예제는 구성 개체의 모양을 보여 줍니다.
+   Magento_Sales 모듈의 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml)에 나오는 다음 예제는 구성 개체의 모양을 보여 줍니다.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">

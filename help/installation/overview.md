@@ -2,13 +2,22 @@
 title: 온프레미스 설치 개요
 description: Adobe Commerce의 On-Premise 설치 프로세스에 대해 알아봅니다. 서버 요구 사항, 설정 단계 및 배포 모범 사례를 알아봅니다.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # 온프레미스 설치 개요
 
@@ -33,7 +42,7 @@ Adobe Commerce 온프레미스를 사용하면 서버, 호스팅 환경 및 시�
 고객은 환경을 완벽하게 제어할 수 있으므로 사용자 정의 및 유연성을 향상시킬 수 있지만 인프라의 성능, 보안 및 확장성을 보장할 책임이 있습니다. 예를 들어, 다음 책임은 귀하에게 있습니다.
 
 - 모든 Adobe Commerce 온프레미스 시스템의 디자인, 구현, 구성, 유지 관리, 문제 해결 및 성능 테스트.
-   - 서버, 운영 체제, 데이터베이스, [!DNL PHP], 검색, 캐싱, 전체 페이지 캐시 및 콘텐츠 전달 네트워크. 일반적인 테마는 [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] 및 사용된 모든 [!DNL CDN]을(를) 포함할 수 있습니다(이에 국한되지 않음).
+  - 서버, 운영 체제, 데이터베이스, [!DNL PHP], 검색, 캐싱, 전체 페이지 캐시 및 콘텐츠 전달 네트워크. 일반적인 테마는 [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] 및 사용된 모든 [!DNL CDN]을(를) 포함할 수 있습니다(이에 국한되지 않음).
 - 용량 계획, 자동 확장, 클러스터링, 백업, 재해 복구
 - 모든 제품 및 고객 데이터, 디자인, 구성 및 설정, 애플리케이션 및 데이터베이스 유지 보수, 코드 배포, 버전 업그레이드 및 패치 애플리케이션
 - APM/로깅/경고를 통한 모니터링 및 경고(예: [!DNL New Relic], [!DNL Datadog], [!DNL ELK])

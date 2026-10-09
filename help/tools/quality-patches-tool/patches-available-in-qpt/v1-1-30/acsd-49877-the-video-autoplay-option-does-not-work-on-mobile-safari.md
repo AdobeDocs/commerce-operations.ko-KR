@@ -1,17 +1,27 @@
 ---
 title: 'ACSD-49877: 모바일 [!DNL Safari]에서 비디오 자동 재생이 작동하지 않습니다.'
-description: ACSD-49877 패치를 적용하여 비디오가 원격 비디오 파일에 직접 연결되어 있는 경우  [!DNL Safari] 모바일에서 비디오 자동 재생 옵션이 작동하지 않는 Adobe Commerce 문제를 해결합니다.
+description: 비디오가 원격 비디오 파일에 직접 연결되어 있을 때 모바일 [!DNL Safari]에서 비디오 자동 재생 옵션이 작동하지 않는 Adobe Commerce 문제를 해결하려면 ACSD-49877 패치를 적용하십시오.
 feature: CMS
 role: Admin
 exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 0%
-
 ---
-
 # ACSD-49877: 모바일 [!DNL Safari]에서 비디오 자동 재생이 작동하지 않습니다.
 
 ACSD-49877은 비디오가 원격 비디오 파일에 직접 연결되어 있을 때 모바일 [!DNL Safari]의 자동 재생 옵션이 작동하지 않는 문제를 해결했습니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30이 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-49877입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.

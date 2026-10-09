@@ -3,13 +3,25 @@ title: 유지 관리 및 지원 개요
 description: 새로 시작한 Adobe Commerce 구현을 적절하게 유지 관리하고 지원합니다.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # 유지 관리 및 지원 개요
 
 소비자들은 이미 그 어느 때보다 선택의 폭이 넓어졌다. 브랜드가 관심을 받기 위해 경쟁하는 데 부족함이 없는 상황에서, 당신은 소비자들에게 당신의 경쟁자들을 바라볼 어떠한 이유도 줄 수 없다. 우리가 보았듯이, 소비자에 대한 충성도와 인내는 희박하다. 그들이 당신의 브랜드를 포기하는 데 많은 비용이 들지 않고, 나쁜 전자 상거래 경험을 갖는 것은 그들이 포기하기 쉬운 방법입니다.

@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL PHP] 탭'
-description: '[!UICONTROL PHP]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
+description: '[!DNL Observation for Adobe Commerce]의 [!UICONTROL PHP] 탭에 대해 알아봅니다.'
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '560'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL PHP] 탭
 
 **PHP** 탭은 PHP 문제를 더 깊이 분석하기 위해 PHP 프로세스 문제를 보여줍니다.
@@ -45,7 +59,7 @@ ht-degree: 0%
 **[!UICONTROL PHP Process states]** 프레임에는 선택한 일정 동안의 PHP 프로세스 상태가 표시됩니다. PHP 프로세스가 종료되고 다시 시작하면 표시됩니다. 다시 시작하지 않는 종료된 PHP 프로세스에 주의하십시오.
 
 * &#39;%NOTICE: 종료 중 ...%&#39;)을(를) &#39;php_term&#39;으로 설정합니다.
-* &#39;% 알림: 종료하는 중입니다. 안녕히 가세요!%&#39;)를 &#39;php_exit&#39;로 변환
+* &#39;% 알림: 종료, bye-bye!%&#39;)를 &#39;php_exit&#39;로 설정합니다.
 * &#39;% 알림: fpm이 실행 중입니다, pid%&#39;)을(를) &#39;fpm_start&#39;로 함
 * &#39;%NOTICE: connections%&#39;)를 &#39;php_ready&#39;로 처리
 
@@ -56,7 +70,7 @@ ht-degree: 0%
 **[!UICONTROL PHP Errors]** 프레임에는 선택한 기간 동안 PHP 작업자 오류 수가 표시됩니다. 구문 분석되어 표시되는 오류 메시지는 다음과 같습니다.
 
 * &#39;%worker_connections가 &#39;worker&#39;로 충분하지 않음(%)
-* &#39;%PHP 치명적인 오류: 메모리 크기가 허용되었습니다!%&#39;)를 &#39;mem_size&#39;로
+* &#39;%PHP 심각한 오류: &#39;mem_size&#39;인 메모리 크기!%&#39;를 사용할 수 있습니다.
 * &#39;%exited on signal 11 (SIGSEGV)%&#39;) as &#39;sig_11&#39;
 * &#39;%가 신호 7(SIGBUS)%&#39;)에서 &#39;sig_7&#39;(으)로 종료됨
 * &#39;%increase pm.start_servers%&#39;) as &#39;pmstart_serv&#39;

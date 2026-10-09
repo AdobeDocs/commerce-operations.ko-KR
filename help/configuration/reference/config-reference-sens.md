@@ -3,13 +3,27 @@ title: 중요 및 시스템별 경로
 description: Adobe Commerce의 민감하고 시스템별 구성 경로에 대해 알아봅니다. 보안 구성 및 환경 변수 관리를 살펴봅니다.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4570'
 ht-degree: 0%
-
 ---
-
 # 중요 및 시스템별 설정
 
 이 항목에는 시스템별 및 중요 설정에 대한 구성 경로가 나열되어 있습니다.
@@ -172,8 +186,8 @@ ht-degree: 0%
 이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **인벤토리**&#x200B;의 관리자에서 사용할 수 있습니다.
 
 | 이름 | 구성 경로 | Commerce 버전 지원| 암호화되었습니까? | 시스템별? | 중요? | |
-&#x200B;------------------------------------------ ----------------------------
-| Google API 키 | `cataloginventory/source_selection_distance_based_google/api_key` | | 암호화됨 | 중요 |
+|--------------|--------------|--------------|--------------|--------------|--------------| |
+| Google API 키 | `cataloginventory/source_selection_distance_based_google/api_key` |  | 암호화됨 | | 중요 |
 
 ### XML 사이트 맵 중요 및 시스템별 경로
 

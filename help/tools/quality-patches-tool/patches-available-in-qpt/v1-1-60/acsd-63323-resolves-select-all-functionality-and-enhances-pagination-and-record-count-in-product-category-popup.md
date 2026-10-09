@@ -5,13 +5,25 @@ feature: Products
 role: Admin, Developer
 exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
-
 ---
-
 # ACSD-63323: [!UICONTROL Select All] 기능을 확인하고 제품 범주 팝업의 페이지 매김 및 레코드 수를 개선합니다.
 
 ACSD-63323 패치는 범주에 제품을 추가할 때 **[!UICONTROL Select All]** 옵션이 작동하지 않는 문제를 해결합니다. 또한 팝업 그리드를 통해 카테고리에 제품을 추가할 때 페이지 매김 및 레코드 수 레이블이 올바르게 작동하는지 확인합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63323입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.

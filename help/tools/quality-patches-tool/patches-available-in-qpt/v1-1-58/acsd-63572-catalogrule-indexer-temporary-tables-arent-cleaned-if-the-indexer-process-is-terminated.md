@@ -5,13 +5,25 @@ feature: System
 Role: Admin, Developers
 exl-id: 1cab7058-ca20-4d43-bfca-9b0e3ad35f42
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
-
 ---
-
 # ACSD-63572: 인덱서 프로세스가 종료되면 인덱서 임시 테이블 `catalogrule`개가 정리되지 않습니다.
 
 ACSD-63572 패치는 시스템/업그레이드 또는 [!UICONTROL CLI]의 중지로 인해 프로세스가 종료되었을 때 인덱서 임시 테이블이 정리되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63572입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.

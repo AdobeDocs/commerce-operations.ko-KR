@@ -3,26 +3,41 @@ title: 로거 인터페이스
 description: 사용자 정의 로깅을 위해 Adobe Commerce의 로거 인터페이스를 사용하는 방법을 알아봅니다. PSR-3 구현 및 로그 기능을 살펴봅니다.
 feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '210'
 ht-degree: 0%
-
 ---
-
 # 로거 인터페이스
 
 로거로 작업하려면 `\Psr\Log\LoggerInterface`의 인스턴스를 만들어야 합니다. 이 인터페이스를 사용하면 다음 함수를 호출하여 로그 파일에 데이터를 쓸 수 있습니다.
 
-- [경고()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [중요()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
+- [critical()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
 - [debug()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [긴급()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
-- [오류()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
+- [emergency()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [error()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
 - [info()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
 - [log()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
 - [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [경고()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
 이를 수행하는 한 가지 방법은 [데이터베이스 작업 기록](../logs/database-activity.md) 예제에 설명되어 있습니다.
 

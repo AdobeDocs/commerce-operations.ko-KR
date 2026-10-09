@@ -3,13 +3,28 @@ title: 사용자 정의 로깅
 description: PSR-3 준수 및 중앙 집중식 로깅 고려 사항을 포함하여 Adobe Commerce에서 사용자 정의 파일 기반 로깅을 사용하여 오류를 조사하는 방법에 대해 알아봅니다.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # 사용자 정의 로깅 개요
 
 로그는 시스템 프로세스에 대한 가시성을 제공합니다. 예를 들어, 오류 발생 시점 또는 오류의 원인이 무엇인지 이해하는 데 도움이 되는 디버깅 정보를 제공합니다.

@@ -2,13 +2,22 @@
 title: 모듈 구성 파일
 description: Adobe Commerce에서 구성 유형을 사용하여 모듈을 사용자 지정하는 방법을 알아봅니다. 구성 파일 관리 및 모듈 사용자 정의 모범 사례를 살펴봅니다.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
-
 ---
-
 # 모듈 구성 파일 개요
 
 이전 버전의 Commerce에서 사용된 `config.xml` 구성 파일의 권한은 이제 여러 모듈 디렉터리에 있는 여러 파일로 나누어집니다. Commerce의 여러 구성 파일은 모듈이 특정 구성 유형을 요청하는 경우에만 요청 시 로드됩니다.

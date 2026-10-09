@@ -5,13 +5,28 @@ feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 5a1a94ca-f274-4098-8b44-d3f1a0ea65a1
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # ACSD-66139: 비활성 장바구니에 대해 &#39;정의되지 않음&#39; 오류로 GraphQL 주문 실패
 
 ACSD-66139 패치는 존재하지 않거나 비활성 장바구니를 주문할 때 GraphQL이 오류 메시지가 번역될 때 특정 오류 코드 대신 *정의되지 않음* 오류 코드를 반환하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67이 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-66139입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

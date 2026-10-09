@@ -2,13 +2,22 @@
 title: 샘플 데이터 개요
 description: 데모 및 교육을 위한 Adobe Commerce 샘플 데이터 설치, Luma 기반 상점 첫 화면의 작동 방식 및 프로덕션 개발을 위한 제한 사항에 대해 알아봅니다.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
-
 ---
-
 # 샘플 데이터 개요
 
 샘플 데이터는 제품, 카테고리, 고객 등록 등을 갖춘 Luma 테마를 기반으로 스토어프론트를 제공합니다. Commerce 상점처럼 작동하며 관리자를 사용하여 가격, 인벤토리 및 프로모션 요금제 규칙을 조작할 수 있습니다.

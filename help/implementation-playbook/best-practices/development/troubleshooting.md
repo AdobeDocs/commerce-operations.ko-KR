@@ -4,13 +4,23 @@ description: Adobe Commerce 구현 문제를 해결하는 방법을 알아봅니
 role: Developer
 feature: Best Practices
 exl-id: 6690eccf-d58d-4cbd-b278-90d020ee7c63
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
-
 ---
-
 # 문제 해결 우수 사례
 
 클라우드 인프라 문제에 대한 Adobe Commerce의 효과적인 문제 해결을 위해 다음 모범 사례를 따르십시오.

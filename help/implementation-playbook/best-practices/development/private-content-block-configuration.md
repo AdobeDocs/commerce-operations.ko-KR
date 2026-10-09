@@ -4,13 +4,23 @@ description: 상점 성능을 최적화하기 위해 개인 콘텐츠 블록을 
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
-
 ---
-
 # 비공개 콘텐츠 블록에 대한 우수 사례
 
 개인 콘텐츠 블록에 `_isScopePrivate` 변수가 포함되어 있으면 블록을 캐시할 수 없습니다. 비공개 블록은 캐시되지 않으므로 Adobe Commerce은 각 고객 요청에 대해 동일한 데이터를 검색해야 서버 로드가 증가합니다.

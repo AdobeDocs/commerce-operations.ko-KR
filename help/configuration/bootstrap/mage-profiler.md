@@ -2,13 +2,22 @@
 title: 프로파일링 활성화
 description: MAGE 프로파일러가 분석 도구와 함께 사용할 수 있도록 하는 방법에 대해 자세히 알아보십시오.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # 프로파일링 활성화
 
 Commerce 프로파일링을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
@@ -37,8 +46,8 @@ MAGE_PROFILER 변수 또는 명령줄을 사용하여 프로파일러를 활성�
 
   다음 값 중 하나를 사용하여 특정 프로파일러를 활성화할 수 있습니다.
 
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)을(를) 사용하는 `csvfile`
-   - [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)을(를) 사용하는 빈 값을 포함한 다른 모든 값(`2` 제외)
+  - [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)을(를) 사용하는 `csvfile`
+  - [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)을(를) 사용하는 빈 값을 포함한 다른 모든 값(`2` 제외)
 
 - 종속성 그래프를 사용하려면 `2`을(를) 사용하십시오.
 

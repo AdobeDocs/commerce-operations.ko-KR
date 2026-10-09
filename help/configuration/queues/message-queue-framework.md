@@ -2,13 +2,22 @@
 title: 메시지 대기열 개요
 description: 메시지 큐 프레임워크와 Adobe Commerce 애플리케이션에서 작동하는 방식을 확인하십시오.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '594'
 ht-degree: 0%
-
 ---
-
 # 메시지 대기열 개요
 
 MQF(메시지 대기열 프레임워크)는 모듈이 메시지를 대기열에 게시할 수 있도록 하는 시스템입니다. 또한 비동기적으로 메시지를 받을 [소비자](consumers.md)도 정의합니다. MQF는 여러 메시징 브로커를 지원합니다.

@@ -16,7 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '33143'
 ht-degree: 0%
@@ -184,7 +186,7 @@ ht-degree: 0%
 ## v1.1.77 {#v1-1-77}
 
 * **ACSD-63687**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.7) - Redis 캐시를 정리할 수 없으므로 잘못된 가격이 표시되는 문제를 해결했습니다.
-* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
+* **ACSD-68341**(Adobe Commerce >=2.4.4 &lt;2.4.9의 경우) - PDP 로드 중에 X-Magento-Vary 쿠키가 여러 번 설정되고 스토어에서 여러 고객 세그먼트가 만들어지는 경우 문제를 수정합니다.
 * **ACSD-68537**(Adobe Commerce >=2.4.8 &lt;2.4.9) - 고객 세그먼트 수가 증가함에 따라 체크아웃 성능이 저하되는 문제를 해결했습니다.
 * **ACSD-68664**(Adobe Commerce >=2.4.6 &lt;2.4.9) - 사용자 지정 도메인으로 스토어에 대한 콘텐츠를 미리 볼 때 예약된 업데이트 미리 보기가 중단되는 문제를 해결했습니다.
 * **ACSD-68759**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9) - 아랍어 로케일을 사용할 때 고객 계정을 만들지 못하고 DOB(생일) 특성이 상점 앞에 표시되도록 설정된 문제가 해결되었습니다.

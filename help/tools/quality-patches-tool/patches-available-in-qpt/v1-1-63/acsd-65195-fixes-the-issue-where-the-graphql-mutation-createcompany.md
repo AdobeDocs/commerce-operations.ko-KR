@@ -5,13 +5,34 @@ feature: B2B, Companies, GraphQL
 role: Admin, Developer
 exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e9004f3c-09ae-5d24-acd2-fa0987fdb66e
+    internal-label: Companies
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
-
 ---
-
 # ACSD-65195: GraphQL `createCompany` 돌연변이가 필요한 지역이 없는 국가에 대해 오류를 반환합니다.
 
 ACSD-65195 패치는 영역이 필요하지 않은 국가에 대해 [!UICONTROL GraphQL] `createCompany` 돌연변이로 인해 오류가 발생하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.63이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-65195입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

@@ -3,13 +3,25 @@ title: Commerce 사이트 및 인프라 보안
 description: Adobe Commerce 설치를 설정, 구성 및 업데이트할 때 보안 모범 사례를 구현하여 보안을 유지합니다.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 0%
-
 ---
-
 # Commerce 사이트 및 인프라 보안
 
 클라우드 인프라에 배포된 Adobe Commerce 프로젝트에 대한 안전한 환경을 구축하고 유지 관리하는 것은 Adobe Commerce 고객, 솔루션 파트너 및 Adobe 간에 공유되는 책임입니다. 이 안내서의 목적은 고객의 책임에 대한 모범 사례를 제공하는 것입니다.

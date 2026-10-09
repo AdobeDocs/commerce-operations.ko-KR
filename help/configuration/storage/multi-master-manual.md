@@ -3,13 +3,22 @@ title: 수동으로 마스터 데이터베이스 구성
 description: 분할 데이터베이스 솔루션을 수동으로 구성하는 방법에 대한 지침을 참조하십시오.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
-
 ---
-
 # 수동으로 마스터 데이터베이스 구성
 
 {{ee-only}}
@@ -23,9 +32,9 @@ Commerce 애플리케이션이 이미 프로덕션에 있거나 사용자 지정
 - OMS(체크아웃 및 주문 관리 시스템) 데이터베이스 만들기
 - 다음과 같은 일련의 SQL 스크립트를 실행합니다.
 
-   - 외래 키 삭제
-   - 영업 및 견적 데이터베이스 테이블 백업
-   - 주 데이터베이스에서 판매 및 견적 데이터베이스로 테이블 이동
+  - 외래 키 삭제
+  - 영업 및 견적 데이터베이스 테이블 백업
+  - 주 데이터베이스에서 판매 및 견적 데이터베이스로 테이블 이동
 
 >[!WARNING]
 >

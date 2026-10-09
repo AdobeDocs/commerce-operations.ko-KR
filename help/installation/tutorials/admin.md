@@ -3,19 +3,33 @@ title: 관리자 계정 만들기, 편집 또는 잠금 해제
 description: Adobe Commerce 관리 애플리케이션의 관리자 계정을 관리하려면 다음 단계를 따르십시오.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 4560f5f5-d00c-5b5d-b61b-369d85ef7a26
+    internal-label: User Account
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
-
 ---
-
 # 관리자 계정 만들기, 편집 또는 잠금 해제
 
 이 명령을 사용하려면 먼저 다음을 수행해야 합니다.
 
 - [배포 구성 만들기](deployment.md)
-- [최소 Magento_Authorization 및 Magento_User 모듈 활성화](manage-modules.md)
+- [최소한 Magento_Authorization 및 Magento_User 모듈을 활성화하십시오.](manage-modules.md)
 - 데이터베이스 스키마 만들기
 
 >[!NOTE]

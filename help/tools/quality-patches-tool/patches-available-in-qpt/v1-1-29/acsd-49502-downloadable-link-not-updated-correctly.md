@@ -1,17 +1,27 @@
 ---
-title: 'ACSD-49502:  [!DNL staging] 업데이트 후 다운로드 가능한 링크가 올바르게 업데이트되지 않음'
-description: ACSD-49502 패치를 적용하여 다운로드 가능한 제품에  [!DNL staging] 업데이트가 적용된 후 다운로드 가능한 링크가 올바르게 업데이트되지 않는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-49502: [!DNL staging] 업데이트 후 다운로드 가능한 링크가 올바르게 업데이트되지 않음'
+description: '[!DNL staging] 업데이트가 다운로드 가능한 제품에 적용된 후 다운로드 가능한 링크가 올바르게 업데이트되지 않는 Adobe Commerce 문제를 해결하려면 ACSD-49502 패치를 적용합니다.'
 feature: Staging
 role: Admin
 exl-id: 9bdc9a7e-4291-4438-9ba0-65fcab1f95bb
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # ACSD-49502: [!DNL staging] 업데이트 후 다운로드 가능한 링크가 올바르게 업데이트되지 않음
 
 ACSD-49502 패치는 다운로드 가능한 제품에 [!DNL staging] 업데이트가 적용된 후 다운로드 가능한 링크가 올바르게 업데이트되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.29가 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-49502입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.

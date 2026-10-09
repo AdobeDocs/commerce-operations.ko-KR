@@ -1,14 +1,23 @@
 ---
-title: ' [!DNL Upgrade Compatibility Tool] 개요'
-description: ' [!DNL Upgrade Compatibility Tool] 과(와) Adobe Commerce 프로젝트에 도움이 되는 방법에 대해 알아봅니다.'
+title: '[!DNL Upgrade Compatibility Tool] 개요'
+description: '[!DNL Upgrade Compatibility Tool]에 대해 알아보고 Adobe Commerce 프로젝트에 도움이 되는 방법을 알아봅니다.'
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # 안내서 개요
 
 {{commerce-only}}

@@ -5,13 +5,23 @@ feature: Observability
 role: Admin
 exl-id: ef3d3b85-b6a0-4037-95c0-e84125fa9088
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # ACSD-51892: 구성 파일이 여러 번 로드되는 성능 문제
 
 ACSD-51892 패치는 단일 요청 내에서 배포 구성 값에 액세스할 때마다 `app/etc/env.php` 및 `app/etc/config.php` 파일을 로드할 때 발생하는 성능 문제를 해결합니다. 과도한 파일 읽기는 시스템에 부담을 주어 전반적인 성능이 저하됩니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.33이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-51892입니다. Adobe Commerce 2.4.6-p2에서 문제가 해결되었습니다.

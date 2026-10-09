@@ -5,13 +5,30 @@ feature: GraphQL, Configuration, Products
 role: Admin
 exl-id: b86b1595-ddd5-41ce-b126-287046462561
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # MDVA-39935: GraphQL은 웹 사이트 수준에서 비활성화된 구성 가능한 하위 제품을 반환합니다.
 
 MDVA-39935 Adobe Commerce 패치는 GraphQL이 웹 사이트 수준에서 비활성화된 구성 가능한 하위 제품을 반환하는 문제를 해결합니다. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.2가 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-39935입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.

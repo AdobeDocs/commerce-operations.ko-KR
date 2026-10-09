@@ -1,14 +1,23 @@
 ---
 title: 오류 메시지 [!DNL Upgrade Compatibility Tool]개
-description: Adobe Commerce 프로젝트에서  [!DNL Upgrade Compatibility Tool] 을(를) 사용할 때 발생하는 오류 메시지에 대해 자세히 알아보세요.
+description: Adobe Commerce 프로젝트에서 [!DNL Upgrade Compatibility Tool]을(를) 사용할 때 발생하는 오류 메시지에 대해 자세히 알아보세요.
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4152'
 ht-degree: 4%
-
 ---
-
 # 오류 메시지 [!DNL Upgrade Compatibility Tool]개
 
 {{commerce-only}}

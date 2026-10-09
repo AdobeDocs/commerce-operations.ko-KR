@@ -3,13 +3,27 @@ title: 암호 해싱
 description: Adobe Commerce의 암호 해싱, Argon2 및 SHA256과 같은 지원되는 알고리즘 및 암호를 변경하지 않고 레거시 해시를 업그레이드하는 방법에 대해 알아보십시오.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # 암호 해싱
 
 현재 Commerce은 다른 기본 PHP 해시 알고리즘을 기반으로 하여 암호 해시에 자체 전략을 사용합니다. Commerce은 `MD5`, `SHA256` 또는 `Argon 2ID13`과(와) 같은 여러 알고리즘을 지원합니다. Sodium 확장이 설치되어 있으면(PHP 7.3에서 기본적으로 설치됨) `Argon 2ID13`이(가) 기본 해싱 알고리즘으로 선택됩니다. 그렇지 않으면 `SHA256`이(가) 기본값입니다. Commerce에서는 Argon 2i 알고리즘 지원을 통해 기본 PHP `password_hash` 함수를 사용할 수 있습니다.

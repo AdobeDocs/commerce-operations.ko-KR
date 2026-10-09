@@ -2,13 +2,22 @@
 title: Amazon 메시지 큐 설정
 description: 클라우드 기반 AMQP 연결에 대한 SSL 및 TLS 요구 사항을 포함하여 env.php에서 Amazon MQ에 대한 Adobe Commerce 메시지 대기열을 구성하는 방법에 대해 알아봅니다.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
-
 ---
-
 # Amazon 메시지 큐 설정
 
 Commerce 2.4.3부터 Amazon 메시지 큐(MQ)를 온-프레미스 메시지 큐 인스턴스에 대한 클라우드 기반 대체 인스턴스로 사용할 수 있습니다.

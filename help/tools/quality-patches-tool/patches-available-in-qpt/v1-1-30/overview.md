@@ -1,17 +1,30 @@
 ---
 title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.30'
-description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.30에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.30에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin
 exl-id: 36c6e0cc-fd8c-4583-b147-fe4897b101d8
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.30
 
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.30에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
@@ -27,7 +40,7 @@ QPT v1.1.30에는 다음 패치가 포함됩니다.
 1. **ACSD-50116**: 관리자 사용자가 하위 범주 수준 3 이하에 대해 URL 다시 쓰기를 만들 수 없는 문제를 해결했습니다.
 1. **ACSD-49513**: 0바이트 파일로 인해 원격 저장소 동기화가 실패하는 문제를 해결했습니다.
 1. **ACSD-46683**: 배송 가격에 *아직 계산되지 않음*&#x200B;이 표시되는 문제를 해결했습니다.
-1. **ACSD-49129**: [!UICONTROL base64 image code] 제품 미디어 API 응답에서 콘텐츠 특성(`rest/V1/products/sku/media`)이 반환되지 않는 문제를 해결했습니다.
+1. **ACSD-49129**: `rest/V1/products/sku/media` 제품 미디어 API 응답에서 콘텐츠 특성([!UICONTROL base64 image code])이 반환되지 않는 문제를 해결했습니다.
 1. **ACSD-50276**: 다중 선택 고객 특성을 만들 경우 고객 등록 양식이 상점 앞에서 작동하지 않는 문제를 해결했습니다.
 1. **ACSD-50527**: 페이지를 빈 동적 블록으로 저장할 때 발생하는 오류를 수정합니다.
 1. **ACSD-49973**: GraphQL을 통해 번들 제품을 가져오는 성능을 개선했습니다.

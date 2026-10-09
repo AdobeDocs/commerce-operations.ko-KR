@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Dashboard]'
-description: ' [!DNL Site-Wide Analysis Tool]의  [!DNL Dashboard] 탭, 요소, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: '[!DNL Site-Wide Analysis Tool]의 [!DNL Dashboard] 탭, 요소, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: 37d848ff-2cff-48b1-8391-520531300bbc
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '867'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Dashboard]
 
 [!UICONTROL Dashboard] 페이지에는 Adobe Commerce 웹 사이트의 상태 및 현재 상태에 대한 &quot;단일 창 보기&quot;를 제공하는 [!DNL widgets]이(가) 한 눈에 표시됩니다. 각 [!DNL widget]에는 [!DNL widget]에 따라 각 기능의 페이지, 도구 자체 또는 보고서에 대한 액세스 링크가 있습니다.

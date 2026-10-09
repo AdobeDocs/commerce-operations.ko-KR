@@ -5,13 +5,23 @@ feature: Configuration
 role: Admin
 exl-id: 7ddca2e7-86f5-4ffd-9c00-ea4c511ab663
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # MDVA-39711: 웹 사이트를 삭제한 후 고객 그리드에 액세스할 수 없음
 
 MDVA-39711 패치는 관리자가 웹 사이트를 삭제한 후 고객 그리드에 액세스할 수 없는 문제를 해결합니다. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.7이 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-39711입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.

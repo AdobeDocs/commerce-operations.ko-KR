@@ -3,13 +3,27 @@ title: 원격 스토리지용 AWS S3 버킷 구성
 description: 원격 스토리지용 AWS S3 스토리지 서비스를 사용하도록 Commerce 프로젝트를 구성합니다.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # 원격 스토리지용 AWS S3 버킷 구성
 
 [Amazon 단순 저장소 서비스(Amazon S3)](https://aws.amazon.com/s3)는 업계 최고의 확장성, 데이터 가용성, 보안 및 성능을 제공하는 개체 저장소 서비스입니다. AWS S3 서비스는 데이터 저장을 위해 버킷 또는 컨테이너를 사용합니다. 이 구성을 사용하려면 _private_ 버킷을 만들어야 합니다. 클라우드 인프라의 Adobe Commerce에 대해서는 [클라우드 인프라의 Commerce에 대한 원격 저장소 구성](cloud-support.md)을 참조하십시오.

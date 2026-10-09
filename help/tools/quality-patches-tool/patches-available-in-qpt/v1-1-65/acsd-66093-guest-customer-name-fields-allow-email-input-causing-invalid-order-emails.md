@@ -5,13 +5,25 @@ feature: Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 30790492-330e-4810-8069-fce87b40ebb2
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
-
 ---
-
 # ACSD-66093: 게스트 고객 이름 필드에서 잘못된 주문 이메일을 유발하는 이메일 입력을 허용합니다.
 
 ACSD-66093 패치는 게스트 고객의 **[!UICONTROL First Name]** 및 **[!UICONTROL Last Name]** 필드에 이메일 주소를 입력할 수 있어 잘못된 주문 확인 이메일이 표시되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-66093입니다. 이 문제는 Adobe Commerce 2.4.8에서 해결되었습니다.

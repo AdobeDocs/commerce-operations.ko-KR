@@ -1,23 +1,38 @@
 ---
 title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.75'
-description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.75에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.75에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f230c5fe7a2678f091dfff559c21bdb0d349b062
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '267'
 ht-degree: 0%
-
 ---
-
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.75
 
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.75에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.75에는 다음 패치가 포함됩니다.
 1. **ACSD-68289**: 단일 필드에서 조건을 충족하도록 요구하지 않고, 검색 가능한 모든 필드에서 최소 일치 조건이 전체적으로 충족되는 경우 전체 텍스트 검색에서 일치하는 제품을 반환하는 문제를 해결했습니다.
-1. **ACSD-68359**: 큰 카트가 있는 *을(를) 선택할 때* 414 **[!UICONTROL Pick in Store]** 오류가 수정되었습니다.
+1. **ACSD-68359**: 큰 카트가 있는 **[!UICONTROL Pick in Store]**&#x200B;을(를) 선택할 때 *414* 오류가 수정되었습니다.
 1. **ACSD-68451**: 회사 관리자가 한 웹 사이트에 로그인하고 다른 웹 사이트에 관련 없는 회사를 만들지만 관련 없는 회사에 잘못 연결된 여러 웹 사이트에 대한 문제를 해결했습니다.
 1. **ACSD-68517**: **[!UICONTROL Catalog]** 및 **[!UICONTROL Catalog Search]** 페이지에서 양식 다시 제출 오류를 수정합니다.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** 단추가 구성 가능한 제품을 만드는 동안 제한된 관리자에게 표시됩니다.

@@ -5,13 +5,25 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # ACSD-63139: 제품 속성에 수천 개의 옵션 값이 포함된 경우 제품 내보내기가 실패합니다
 
 ACSD-63139 패치는 제품 속성에 수천 개의 옵션 값이 포함된 경우 제품 내보내기가 실패하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-63139입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
@@ -38,9 +50,9 @@ ACSD-63139 패치는 제품 속성에 수천 개의 옵션 값이 포함된 경�
 
 1. B2B 모듈로 Adobe Commerce을 설치합니다.
 1. 다음을 사용하여 큰 데이터베이스 덤프 가져오기:
-   &#x200B;- 7,000개 제품
-   &#x200B;- ~450개 제품 특성
-   &#x200B;- 일부 속성에 100개 이상의 옵션 포함
+   - 7,000개 제품
+   - ~450개 제품 특성
+   - 일부 속성에 100개 이상의 옵션 포함
 1. 다음 명령을 실행하여 cron 을 설치합니다(아직 설치되지 않은 경우).
 
    ```shell

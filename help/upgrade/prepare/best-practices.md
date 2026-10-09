@@ -3,13 +3,27 @@ title: 우수 사례
 description: Adobe 권장 모범 사례를 사용하여 Adobe Commerce 프로젝트에 대한 업그레이드 프로세스를 관리합니다.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
-
 ---
-
 # 업그레이드 우수 사례
 
 이 주제에서는 Adobe Commerce 프로젝트 업그레이드의 복잡성을 관리하기 위해 수행해야 하는 작업을 나열합니다. 팀은 프로젝트 개발이 시작되고 각 릴리스를 계속 진행하는 시점부터 업그레이드를 고려해야 합니다. 이러한 모범 사례를 따르면 업그레이드 프로세스가 훨씬 쉽고 빠르며 저렴해집니다.

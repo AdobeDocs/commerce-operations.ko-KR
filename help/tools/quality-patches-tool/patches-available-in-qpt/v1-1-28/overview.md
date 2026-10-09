@@ -1,24 +1,37 @@
 ---
 title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.28'
-description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.28에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.28에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin
 exl-id: 6fa9be42-0d38-4ec0-a485-6259f6736308
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
-
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.28
 
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.28에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 
 QPT v1.1.28에는 다음 패치가 포함됩니다.
 
-1. **ACSD-48204**: *[!UICONTROL catalog price rule]* 특성을 기반으로 만든 *[!UICONTROL Yes/No]*&#x200B;이(가) 선택한 범위를 고려하지 않는 문제를 해결했습니다.
+1. **ACSD-48204**: *[!UICONTROL Yes/No]* 특성을 기반으로 만든 *[!UICONTROL catalog price rule]*&#x200B;이(가) 선택한 범위를 고려하지 않는 문제를 해결했습니다.
 1. **ACSD-47704**: 번들 제품에 재고 제품의 가격만 표시되는 문제를 해결했습니다.
 1. **ACSD-49370**: GraphQL 스키마에서 제품 특성에 `FilterMatchTypeInput` 형식이 있는 문제를 해결했습니다.
 1. **ACSD-48807**: 제품 검토가 GraphQL을 통해 상점 보기로 필터링되지 않는 문제를 해결했습니다.

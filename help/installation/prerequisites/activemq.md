@@ -1,13 +1,22 @@
 ---
 title: 메시지 브로커(ActiveMQ Artemis)
 description: Adobe Commerce의 온-프레미스 설치를 위한 Apache ActiveMQ Artemis 메시지 브로커를 설치하고 구성하려면 다음 단계를 따르십시오.
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # 메시지 브로커(ActiveMQ Artemis)
 
 Adobe Commerce은 STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커도 지원합니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다.
@@ -98,7 +107,7 @@ docker rm artemis
 
 Docker 컨테이너가 실행되면 다음에 액세스할 수 있습니다.
 
-- **웹 콘솔**: http://localhost:8161/console(기본 자격 증명: artemis/artemis)
+- **웹 콘솔**: http://localhost:8161/console (기본 자격 증명: artemis/artemis)
 - **STOMP 포트**: localhost:61613(Adobe Commerce 연결용)
 
 >[!NOTE]

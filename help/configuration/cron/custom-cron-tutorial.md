@@ -2,13 +2,22 @@
 title: 사용자 정의 cron 작업 및 cron 그룹 구성(튜토리얼)
 description: Adobe Commerce용 단계별 자습서를 사용하여 사용자 지정 cron 작업을 만드는 방법을 알아봅니다. 모듈 설정 및 cron 그룹 구성을 검색합니다.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
-
 ---
-
 # 사용자 정의 cron 작업 구성
 
 이 단계별 자습서에서는 샘플 모듈에서 사용자 지정 cron 작업 및 선택적으로 cron 그룹을 만드는 방법을 보여줍니다. 이미 있는 모듈을 사용하거나 [`magento2-samples` 저장소](https://github.com/magento/magento2-samples)의 샘플 모듈을 사용할 수 있습니다.

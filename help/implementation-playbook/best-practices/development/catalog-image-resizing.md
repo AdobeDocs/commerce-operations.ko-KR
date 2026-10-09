@@ -4,13 +4,23 @@ description: Adobe Commerce 사이트의 프로덕션 시작 전에 성능 저�
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # 카탈로그 이미지 크기 조정 우수 사례
 
 스토어가 프로덕션으로 전환되기 전에 모든 카탈로그 이미지의 크기를 조정해야 합니다. 프로덕션 전에 이미지 크기를 조정하지 않으면 페이지 로드 중 이미지 크기가 조정되어 사이트 속도가 크게 감소하고 시작 후 첫 날부터 몇 주 동안 서버 로드가 증가합니다.

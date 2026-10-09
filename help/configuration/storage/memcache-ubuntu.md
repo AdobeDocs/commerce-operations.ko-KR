@@ -3,13 +3,32 @@ title: Ubuntu에서 memcached 설정
 description: Adobe Commerce 캐싱을 위해 Ubuntu에 memcached를 설치하고 구성하는 방법에 대해 알아봅니다. 설정 지침 및 최적화 팁을 알아봅니다.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '483'
 ht-degree: 0%
-
 ---
-
 # Ubuntu에서 memcached 설정
 
 이 섹션에서는 Ubuntu에 memcached를 설치하는 지침을 제공합니다.
@@ -63,7 +82,7 @@ PHP에는 memcache에 대한 기본 지원이 없으므로 이를 사용하려�
 
 1. 다음 섹션을 계속합니다.
 
-## Magento을 설치하기 전에 memcached 작업 확인
+## Magento를 설치하기 전에 memcached 작업 확인
 
 Adobe은 Commerce을 설치하기 전에 memcached를 테스트하여 작동하는지 확인할 것을 권장합니다. 이렇게 하면 몇 분 밖에 걸리지 않으며 나중에 문제 해결을 단순화할 수 있습니다.
 

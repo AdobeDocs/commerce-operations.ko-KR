@@ -2,13 +2,22 @@
 title: 기본 디렉터리 경로 사용자 지정
 description: MAGE_DIRS 변수를 사용하여 절대 경로 배열을 설정합니다.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '128'
 ht-degree: 0%
-
 ---
-
 # 기본 디렉터리 경로
 
 `MAGE_DIRS` 환경 변수를 사용하면 Commerce 응용 프로그램에서 다양한 파일에 대한 절대 경로를 작성하거나 URL을 생성하는 데 사용하는 기본 URL의 조각과 사용자 지정 기본 디렉터리 경로를 지정할 수 있습니다.

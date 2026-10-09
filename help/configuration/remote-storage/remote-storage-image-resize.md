@@ -3,13 +3,27 @@ title: 원격 스토리지에 대한 이미지 크기 조정 구성
 description: 서버측 이미지 크기 조정을 구성하여 디스크 리소스를 최적화합니다.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
-
 ---
-
 # 원격 스토리지에 대한 이미지 크기 조정 구성
 
 기본적으로 Adobe Commerce은 응용 프로그램 쪽에서 이미지 크기 조정을 지원합니다. 그러나 원격 스토리지 모듈을 활성화하면 Ngix 를 사용하여 이미지 크기 조정을 서버 측으로 오프로드할 수 있으므로 디스크 자원을 절약하고 디스크 사용을 최적화할 수 있습니다.
@@ -34,7 +48,7 @@ ht-degree: 0%
 
 1. _카탈로그 미디어 URL 형식_ 섹션에서 **[!UICONTROL Use system value]**&#x200B;을(를) 지웁니다.
 
-1. `Image optimization based on query parameters`카탈로그 미디어 URL 형식&#x200B;**_필드에서_** URL을 선택합니다.
+1. **_카탈로그 미디어 URL 형식_** 필드에서 `Image optimization based on query parameters` URL을 선택합니다.
 
 1. **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 
@@ -52,7 +66,7 @@ ht-degree: 0%
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 포함된 템플릿 `nginx.conf` 파일을 기반으로 `nginx.conf.sample` 파일을 만듭니다. For example:
+1. 포함된 템플릿 `nginx.conf.sample` 파일을 기반으로 `nginx.conf` 파일을 만듭니다. For example:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

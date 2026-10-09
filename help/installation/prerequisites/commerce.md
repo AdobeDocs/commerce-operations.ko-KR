@@ -2,13 +2,22 @@
 title: Adobe Commerce 소프트웨어 다운로드
 description: Composer를 사용하여 Adobe Commerce 소프트웨어를 가져오고, 확장 호환성을 확인하고, 설치에 적합한 배포를 선택하는 방법에 대해 알아봅니다.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 소프트웨어 다운로드
 
 전 세계 24만 명의 상인이 당사의 전자 상거래 소프트웨어를 신뢰하고 있습니다. 설치를 시작하는 데 도움이 되는 몇 가지 정보를 수집했습니다.

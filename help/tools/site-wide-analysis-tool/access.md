@@ -1,14 +1,23 @@
 ---
-title: 액세스 방법 [!DNL Site-Wide Analysis Tool]
+title: '[!DNL Site-Wide Analysis Tool]에 액세스하는 방법'
 description: Adobe Commerce 관리 패널에서 사이트 전체 분석 도구 대시보드에 액세스하는 방법을 알아봅니다. 사용자 권한 및 역할 요구 사항을 알아봅니다.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
-
 ---
-
 # [!DNL Site-Wide Analysis Tool]에 액세스하는 방법
 
 스토어의 [!UICONTROL Admin Panel]에서 [!DNL Site-Wide Analysis Tool] 대시보드에 액세스할 수 있습니다.

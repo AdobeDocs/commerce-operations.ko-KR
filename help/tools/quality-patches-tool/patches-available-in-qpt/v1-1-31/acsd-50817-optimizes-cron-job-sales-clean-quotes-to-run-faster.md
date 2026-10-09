@@ -5,13 +5,23 @@ feature: Quotes
 role: Admin
 exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
-
 ---
-
 # ACSD-50817: cron 작업 `sales_clean_quotes`을(를) 최적화하여 더 빨리 실행합니다.
 
 ACSD-50817 패치는 인용 테이블의 `store_id` 및 `updated_at` 열에 복합 인덱스를 추가하여 cron 작업 `sales_clean_quotes`을(를) 더 빨리 실행하도록 최적화합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.31이 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-50817입니다.

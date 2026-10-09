@@ -3,13 +3,32 @@ title: 캐시 중독 방지
 description: Commerce 스토어프론트에 대한 페이지 캐시 중독을 방지하는 방법에 대해 알아봅니다.
 feature: Configuration, Cache, Security
 exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # 캐시 중독 방지
 
 이 항목에서는 Microsoft IIS(인터넷 정보 서버) 웹 서버를 사용하는 경우 캐시 중독을 방지하는 방법에 대해 설명합니다. _캐시 중독_&#x200B;은(는) 동일한 사이트의 다른 페이지를 포함하도록 캐시 내용을 변경하는 방법입니다. 예를 들어, 일부 양성 페이지(예: 상점 홈 페이지) 대신 HTTP 404(찾을 수 없음) 오류 페이지를 삽입할 수 있으므로 DoS(서비스 거부)가 발생할 수 있습니다. 악성 페이지 URL이 Varnish 또는 Redis에 의해 캐시됩니다. 따라서 이름이 _페이지 캐시 중독_&#x200B;입니다.

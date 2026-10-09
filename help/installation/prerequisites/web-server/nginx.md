@@ -4,13 +4,27 @@ description: 온-프레미스 Adobe Commerce 배포용 Nginx 웹 서버를 설�
 feature: Install, Configuration
 badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
-
 ---
-
 # 온-프레미스 배포용 Nginx 설치 {#nginx}
 
 이 안내서에서는 Adobe Commerce 온-프레미스 배포용 Ngix를 설치하고 Commerce에 필요한 Ngix 설정을 구성하는 방법을 안내합니다. 여기에는 PHP-FPM 구성을 위한 지침과 함께 Ubuntu 및 CentOS에 대한 운영 체제별 절차가 포함되어 있습니다. Adobe은 이 안내서에 제공된 구성 지침을 따라 Commerce 애플리케이션의 기능과 보안을 모두 유지하는 것을 권장합니다.

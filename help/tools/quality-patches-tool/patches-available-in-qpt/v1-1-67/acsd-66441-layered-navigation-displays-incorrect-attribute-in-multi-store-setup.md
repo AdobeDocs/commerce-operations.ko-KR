@@ -5,13 +5,30 @@ feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d61c6b9e-bbcf-4285-b97b-b1fee67048e5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
-
 ---
-
 # ACSD-66441: 다중 저장소 설정에 계층 탐색에 잘못된 속성 옵션이 표시됨
 
 ACSD-66441 패치는 다중 스토어 설정에서 계층화된 탐색이 다른 스토어의 속성을 잘못 표시하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67이 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-66441입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

@@ -4,19 +4,28 @@ description: Adobe Commerce 베타 릴리스와 참여 방법에 대해 알아�
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온 클라우드 프로젝트(Adobe 관리 PaaS 인프라) 및 온프레미스 프로젝트에만 적용됩니다."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service 및 Adobe Commerce Optimizer 프로젝트에만 적용됩니다(Adobe 관리 SaaS 인프라)."
-source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 베타 릴리스
 
 [Adobe Commerce 제품 솔루션](https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions)을 위한 Beta 프로그램은 판매자가 프리릴리스 기능과 코드에 액세스하고, 피드백을 제공하고, Adobe Commerce의 미래를 안내할 수 있는 방법입니다. 베타 프로그램에는 두 가지 유형이 있습니다.
 
 - 공개 Beta: 공개 베타 프로그램은 모든 Adobe Commerce 고객 및 파트너가 사용할 수 있습니다
-- Private Beta: 비공개 베타 프로그램에는 참여하기 위한 자격 기준에 따른 승인이 필요합니다
+- Private beta: 비공개 베타 프로그램에는 참여하기 위한 자격 기준에 따른 승인이 필요합니다
 
 >[!IMPORTANT]
 >
@@ -48,7 +57,7 @@ Adobe이 개발 중인 기능에 일찍 액세스하면 고객과 파트너가 �
 
 이 Beta 기능에 대한 피드백을 공유하려면 [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)에 전자 메일을 보내십시오.
 
-### 검색 일치 및 순위(Private Beta)
+### 검색 일치 및 순위(Private beta)
 
 Adobe에서 제품 검색이 [!DNL Adobe Commerce]의 [!DNL Live Search] 및 [!DNL Adobe Commerce Optimizer]에 대한 검색 결과의 등급을 매기는 방법을 개선하고 있습니다. 업데이트는 **정확한 근사 구 일치**&#x200B;의 우선 순위를 지정한 다음 **모든 쿼리 용어가 동일한 검색 가능한 특성에 나타나는 위치**&#x200B;와(과) 마지막으로 **교차 필드**&#x200B;와(자동 완성 스타일 제안을 지원하는 동작 포함) 일치합니다. 해당 계층화된 모델은 높은 의도의 쿼리가 가장 관련성이 높은 제품을 먼저 표시하는 데 도움이 되는 동시에 유용한 대체 요소를 반환합니다.
 

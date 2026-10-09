@@ -2,13 +2,22 @@
 title: 단위 테스트 실행
 description: Adobe Commerce 코드베이스에 정의된 단위 테스트를 실행하는 방법에 대해 알아봅니다. 테스트 명령, 실행 옵션 및 결과 보고를 살펴봅니다.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
-
 ---
-
 # 단위 테스트 실행
 
 {{file-system-owner}}

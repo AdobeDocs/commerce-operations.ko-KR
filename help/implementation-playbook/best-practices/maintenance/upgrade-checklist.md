@@ -4,13 +4,23 @@ description: 업그레이드 체크리스트를 만들고 사용하여 Adobe Com
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # 업그레이드 체크리스트 모범 사례
 
 전자 상거래 팀과의 연간 및 분기별 대화 중에 이 체크리스트를 사용하십시오. 많은 회사들이 연간 예산과 로드맵으로 일하고 있다. 이러한 연례 토론 중에 비즈니스 전반의 목표와 KPI에 어떻게 적합한지 그 해의 플랫폼 상태, 방향 및 업그레이드 전략에 대해 언급하는 것이 중요합니다. 분기별 대화 중에 만든 연간 계획이 현재 상황과 일치하는지, 그렇지 않은 경우 피벗되는지 확인하십시오. 이 업그레이드 계획 확인 목록의 목표는 해당 연도 동안 성공적인 업그레이드 프로세스를 보장하기 위해 Adobe Commerce 업그레이드를 계획하고 예약하는 데 도움이 되는 것입니다. 이 체크리스트는 연간 계획 및 분기별 검토에 다음 대상이 사용하기 위한 것입니다.

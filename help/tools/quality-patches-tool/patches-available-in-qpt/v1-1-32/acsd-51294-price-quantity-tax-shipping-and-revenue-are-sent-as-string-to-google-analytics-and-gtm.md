@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-51294: 가격, 수량, 세금, 배송,  [!DNL Google Analytics] 에 문자열로 전송된 매출 및 GTM'
-description: ACSD-51294 패치를 적용하여 가격, 수량, 세금, 배송 및 매출이 문자열로  [!DNL Google Analytics]  및 GTM에 전송되는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-51294: 가격, 수량, 세금, 배송, [!DNL Google Analytics] 및 GTM에 문자열로 전송된 매출'
+description: ACSD-51294 패치를 적용하여 가격, 수량, 세금, 배송 및 수익이 문자열로 [!DNL Google Analytics] 및 GTM에 전송되는 Adobe Commerce 문제를 해결합니다.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
 exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '368'
 ht-degree: 0%
-
 ---
-
 # ACSD-51294: 가격, 수량, 세금, 배송, [!DNL Google Analytics] 및 GTM에 문자열로 전송된 매출
 
 ACSD-51294 패치는 가격, 수량, 세금, 배송 및 매출이 문자열로 [!DNL Google Analytics] 및 GTM에 전송되는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.32가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-51294입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.

@@ -2,13 +2,22 @@
 title: 관리자에서 여러 웹 사이트, 스토어 및 스토어 보기 설정
 description: Commerce 관리에서 추가 웹 사이트, 스토어 및 스토어 보기를 구성합니다.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
-
 ---
-
 # 관리자에서 여러 보기 설정
 
 이 작업을 수행하려면 각 스토어에 대한 루트 카테고리(및 원하는 경우 추가 카테고리)를 만들어야 합니다. 이 항목에서 설명하는 작업은 여러 스토어를 설정하는 한 가지 방법을 제공합니다. 자세한 내용은 Commerce 사용 안내서에서 다음 리소스를 참조하십시오.

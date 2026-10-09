@@ -3,13 +3,25 @@ title: Adobe Managed Services
 description: Adobe Managed Services이 Adobe Commerce 구현을 지원하고 유지하는 데 어떻게 도움이 되는지 알아봅니다.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Managed Services
 
@@ -28,12 +40,12 @@ Adobe Managed Services은 온-프레미스 및 관리되지 않는 클라우드 
 - **향상된 서비스 수준 대상(SLT)**—표준 Adobe Commerce 지원보다 빠른 응답 시간.
 - **향상된 SLA(서비스 수준 계약)**—클라우드 인프라 고객이 99.99% 인프라 수준을 능가하는 99.9%의 애플리케이션 수준.
 - **지정된 클라우드 전문 지식**—Managed Services은 애플리케이션 및 클라우드 인프라 전문가 역할을 하는 CSE(Designated Customer Success Engineer)를 고객에게 제공합니다. CSE는 고객 및 파트너와 협력하여 다음과 같은 Best Practice와 지침을 제공함으로써 출시 시기를 앞당깁니다.
-   - 온보딩 프로세스 안내 및 지원
-   - 프로비저닝 및 플랫폼 설정 관리
-   - 통합 및 사용자 정의를 위한 아키텍처 원칙에 대한 조언
-   - 사고 관리 및 무중단 업무 운영 촉진
-   - 계획, 실행 및 모니터링을 통해 이벤트 지원 제공
-   - 클라우드 지원 및 전문 지식(사전 최적화, 보고 및 모범 사례)
+  - 온보딩 프로세스 안내 및 지원
+  - 프로비저닝 및 플랫폼 설정 관리
+  - 통합 및 사용자 정의를 위한 아키텍처 원칙에 대한 조언
+  - 사고 관리 및 무중단 업무 운영 촉진
+  - 계획, 실행 및 모니터링을 통해 이벤트 지원 제공
+  - 클라우드 지원 및 전문 지식(사전 최적화, 보고 및 모범 사례)
 
 주요 Managed Services 이점을 보다 자세히 비교하려면 다음 표를 검토하십시오.
 

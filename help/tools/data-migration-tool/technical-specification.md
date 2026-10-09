@@ -1,15 +1,24 @@
 ---
 title: '[!DNL Data Migration Tool] 기술 사양'
-description: ' [!DNL Data Migration Tool] 의 구현 세부 정보와 Magento 1과 Magento 2 간에 데이터를 전송할 때 확장하는 방법에 대해 알아봅니다.'
+description: '[!DNL Data Migration Tool]의 구현 세부 정보와 Magento 1과 Magento 2 간에 데이터를 전송할 때 확장하는 방법에 대해 알아봅니다.'
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2114'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool] 기술 사양
 
 이 단원에서는 [!DNL Data Migration Tool] 구현 세부 사항과 해당 기능을 확장하는 방법을 설명합니다.
@@ -162,7 +171,7 @@ ht-degree: 0%
 
 * options - 매개 변수 목록입니다. 필수(map_file, settings_map_file, bulk_size) 및 선택적(custom_option, resource_adapter_class_name, prefix_source, prefix_dest, log_file) 매개변수를 모두 포함합니다.
 
-Magento이 데이터베이스 테이블에 접두사와 함께 설치된 경우 접두사 옵션 변경. Magento 1 및 Magento 2 데이터베이스에 대해 설정할 수 있습니다. 그에 따라 &quot;source_prefix&quot; 및 &quot;dest_prefix&quot; 구성 옵션을 사용합니다.
+Magento가 데이터베이스 테이블에 접두사와 함께 설치된 경우 접두사 옵션 변경. Magento 1 및 Magento 2 데이터베이스에 대해 설정할 수 있습니다. 그에 따라 &quot;source_prefix&quot; 및 &quot;dest_prefix&quot; 구성 옵션을 사용합니다.
 
 구성 데이터는 `\Migration\Config` 클래스로 액세스할 수 있습니다.
 
@@ -171,7 +180,7 @@ Magento이 데이터베이스 테이블에 접두사와 함께 설치된 경우 
 | 문서 | 필드 |
 |---|---|
 | `step` | 단계 노드 내의 두 번째 수준 노드. 관련 단계에 대한 설명은 `title` 특성에 지정해야 합니다. |
-| `integrity` | 무결성 검사를 담당하는 PHP 클래스를 지정합니다. 테이블 필드 이름, 유형 및 기타 정보를 비교하여 Magento 1과 2 데이터 구조 간의 호환성을 확인합니다. |
+| `integrity` | 무결성 검사를 담당하는 PHP 클래스를 지정합니다. 테이블 필드 이름, 유형 및 기타 정보를 비교하여 Magento 1 및 2 데이터 구조 간의 호환성을 확인합니다. |
 | `data` | 데이터 검사를 담당하는 PHP 클래스를 지정합니다. 데이터를 테이블별로 Magento 1에서 Magento 2로 전송합니다. |
 | `volume` | 볼륨 검사를 담당하는 PHP 클래스를 지정합니다. 테이블 간 레코드 수를 비교하여 전송이 성공했는지 확인합니다. |
 | `delta` | 델타 검사를 담당하는 PHP 클래스를 지정합니다. 전체 데이터 마이그레이션 후 델타를 Magento 1에서 Magento 2로 전송합니다. |
@@ -279,7 +288,7 @@ $this->progress->finish();
 
 ### 무결성 검사
 
-각 단계에서는 데이터 소스 구조(기본적으로 Magento 1)와 데이터 대상 구조(Magento 2)가 호환되는지 확인해야 합니다. 그렇지 않은 경우 - 호환되지 않는 엔티티와 함께 오류가 표시됩니다. 필드에 서로 다른 데이터 형식이 있는 경우(동일한 필드에 Magento 1의 10진수 데이터 형식과 Magento 2의 정수 데이터 형식이 있는 경우) 맵 파일에서 다루는 경우를 제외하고 경고 메시지가 표시됩니다.
+각 단계에서는 데이터 소스의 구조(기본적으로 Magento 1)와 데이터 대상의 구조(Magento 2)가 호환되는지 확인해야 합니다. 그렇지 않은 경우 - 호환되지 않는 엔티티와 함께 오류가 표시됩니다. 필드에 서로 다른 데이터 형식이 있는 경우(동일한 필드에 Magento 1의 10진수 데이터 형식과 Magento 2의 정수 데이터 형식이 있는 경우) 맵 파일에서 다루는 경우를 제외하고 경고 메시지가 표시됩니다.
 
 ### 데이터 전송
 
@@ -339,11 +348,11 @@ $this->progress->finish();
 
 ### 데이터 마이그레이션 모드
 
-이 모드에서는 대부분의 데이터가 마이그레이션됩니다. 데이터 마이그레이션 전에 각 단계에 대해 무결성 검사 단계가 실행됩니다. 무결성 검사를 통과하면 [!DNL Data Migration Tool]은(는) 접두사가 `m2_cl_*`인 deltalog 테이블 및 해당 트리거를 Magento 1 데이터베이스에 설치하고 단계의 데이터 마이그레이션 단계를 실행합니다. 오류 없이 마이그레이션이 완료되면 볼륨 검사에서 데이터 일관성을 확인합니다. 라이브 스토어를 마이그레이션하는 경우 경고 메시지가 표시될 수 있습니다. 델타 마이그레이션은 이러한 증분 데이터를 처리하므로 걱정하지 마십시오. 가장 중요한 마이그레이션 단계는 맵, URL 다시 작성 및 EAV입니다.
+이 모드에서는 대부분의 데이터가 마이그레이션됩니다. 데이터 마이그레이션 전에 각 단계에 대해 무결성 검사 단계가 실행됩니다. 무결성 검사를 통과하면 [!DNL Data Migration Tool]은(는) Magento 1 데이터베이스에 해당 트리거와 함께 deltalog 테이블(`m2_cl_*` 접두사 포함)을 설치하고 단계의 데이터 마이그레이션 단계를 실행합니다. 오류 없이 마이그레이션이 완료되면 볼륨 검사에서 데이터 일관성을 확인합니다. 라이브 스토어를 마이그레이션하는 경우 경고 메시지가 표시될 수 있습니다. 델타 마이그레이션은 이러한 증분 데이터를 처리하므로 걱정하지 마십시오. 가장 중요한 마이그레이션 단계는 맵, URL 다시 작성 및 EAV입니다.
 
 #### 맵 단계
 
-맵 단계는 대부분의 데이터를 Magento 1에서 Magento 2로 전송합니다. 이 단계에서는 `etc/` 디렉터리에 있는 map.xml 파일에서 지침을 읽습니다. 이 파일은 소스(Magento 1)와 대상(Magento 2)의 데이터 구조 간 차이점을 설명합니다. Magento 1에 Magento 2에 존재하지 않는 일부 확장에 속하는 테이블 또는 필드가 포함된 경우 맵 단계에서 이러한 엔티티를 무시하도록 이러한 엔티티를 여기에 배치할 수 있습니다. 그렇지 않으면 오류 메시지가 표시됩니다.
+맵 단계는 대부분의 데이터를 Magento 1에서 Magento 2로 전송하는 역할을 합니다. 이 단계에서는 `etc/` 디렉터리에 있는 map.xml 파일에서 지침을 읽습니다. 이 파일은 소스(Magento 1)와 대상(Magento 2)의 데이터 구조 간 차이점을 설명합니다. Magento 1에 Magento 2에 존재하지 않는 일부 확장에 속하는 테이블 또는 필드가 포함된 경우 맵 단계에서 이러한 엔티티를 무시하도록 이러한 엔티티를 여기에 배치할 수 있습니다. 그렇지 않으면 오류 메시지가 표시됩니다.
 
 맵 파일의 형식은 다음과 같습니다.
 
@@ -435,7 +444,7 @@ $this->progress->finish();
 
 #### URL 재작성 단계
 
-이 단계는 Magento 2와 호환되지 않는 Magento 1에서 개발된 다양한 알고리즘이 많기 때문에 복잡합니다. 다양한 버전의 Magento 1에 대해 다양한 알고리즘이 있을 수 있습니다. 따라서 Step/UrlRewrite 폴더 아래에는 일부 특정 버전의 Magento용으로 개발된 클래스가 있으며 Migration\Step\UrlRewrite\Version191to2000 이 이러한 클래스 중 하나입니다. URL Rewrites 데이터를 Magento 1.9.1에서 Magento 2로 전송할 수 있습니다.
+Magento 2와 호환되지 않는 Magento 1에서 개발된 다양한 알고리즘이 많기 때문에 이 단계는 복잡합니다. Magento 1의 다양한 버전에 대해 다양한 알고리즘이 있을 수 있습니다. 따라서 Step/UrlRewrite 폴더 아래에는 특정 버전의 Magento에 대해 개발된 클래스가 있으며 Migration\Step\UrlRewrite\Version191to2000 도 이러한 클래스 중 하나입니다. Magento 1.9.1에서 Magento 2로 URL Rewrites 데이터를 전송할 수 있습니다.
 
 #### EAV 단계
 

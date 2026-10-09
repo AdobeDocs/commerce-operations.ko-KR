@@ -2,13 +2,22 @@
 title: 업그레이드 프로세스 개요
 description: Adobe Commerce 프로젝트를 업그레이드하여 상점을 안전하고 효율적으로 관리하는 방법에 대해 알아봅니다. 성공적인 업그레이드를 계획하고 실행하기 위한 모범 사례를 살펴보십시오.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 2%
-
 ---
-
 # 업그레이드 프로세스 개요
 
 Adobe Commerce 프로젝트를 업그레이드하는 것은 스토어의 보안, PCI 호환 및 최고 효율성의 작동 상태를 유지하는 데 중요합니다. 이 안내서에서는 업그레이드를 준비할 때 고려해야 할 주요 사항을 안내합니다.

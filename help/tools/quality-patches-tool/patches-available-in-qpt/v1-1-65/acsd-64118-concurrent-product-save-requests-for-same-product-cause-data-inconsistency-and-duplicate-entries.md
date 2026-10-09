@@ -5,13 +5,28 @@ feature: REST
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e014645e-72b2-4b3d-8b44-3daca502c950
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # ACSD-64118: 동일한 제품에 대한 동시 제품 저장 요청으로 인해 데이터 불일치 및 중복 항목 발생
 
 ACSD-64118 패치는 동일한 제품을 저장하고 업데이트하라는 동시 요청이 데이터 불일치 또는 제품 중복을 초래하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-64118입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

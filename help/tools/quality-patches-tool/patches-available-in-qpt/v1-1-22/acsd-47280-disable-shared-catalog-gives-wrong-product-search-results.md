@@ -1,13 +1,22 @@
 ---
 title: '[!DNL ACSD-47280]: 공유 카탈로그를 사용하지 않도록 설정하면 잘못된 제품 검색 결과가 나옵니다'
-description: 공유 카탈로그 기능을 사용하지 않도록 설정한 경우 올바른 검색 결과를 표시하려면  [!DNL ACSD-47280] 패치를 적용하십시오.
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+description: 공유 카탈로그 기능을 사용하지 않도록 설정한 경우 올바른 검색 결과를 표시하려면 [!DNL ACSD-47280] 패치를 적용하십시오.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
-
 ---
-
 # [!DNL ACSD-47280]: 공유 카탈로그를 사용하지 않도록 설정하면 잘못된 제품 검색 결과가 나옵니다
 
 [!DNL shared catalog] 기능을 사용하지 않도록 설정하면 [!DNL ACSD-47280] 패치가 올바른 검색 결과를 표시합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22가 설치되어 있을 때 사용할 수 있습니다. [!DNL patch ID]은(는) [!DNL ACSD-47280]입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.

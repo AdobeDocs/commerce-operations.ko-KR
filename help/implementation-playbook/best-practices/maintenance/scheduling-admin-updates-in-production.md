@@ -4,13 +4,25 @@ description: 느린 성능 및 중단을 방지하기 위해 Adobe Commerce에 �
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
-
 ---
-
 # 프로덕션 사이트에서 관리 업데이트 예약을 위한 우수 사례
 
 사용량이 적은 시간 동안 Adobe Commerce 사이트에서 중요한 업데이트 및 작업을 예약하여 프로덕션 사이트의 느린 성능 및 중단을 방지합니다.

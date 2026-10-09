@@ -2,13 +2,22 @@
 title: 타사 확장 관리
 description: Adobe Commerce 확장을 설치, 활성화, 업그레이드 및 제거하려면 다음 단계를 따르십시오.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 
 # 타사 확장 관리
 
@@ -156,7 +165,7 @@ bin/magento module:status
    bin/magento setup:upgrade
    ```
 
-1. 프로젝트 다시 컴파일: 프로덕션 모드에서 &quot;Magento 컴파일 명령을 다시 실행하십시오&quot;라는 메시지를 받을 수 있습니다. 응용 프로그램에서 컴파일 명령을 개발자 모드에서 실행하라는 메시지를 표시하지 않습니다.
+1. 프로젝트 다시 컴파일: 프로덕션 모드에서 &quot;Magento 컴파일 명령을 다시 실행하십시오&quot;라는 메시지가 표시될 수 있습니다. 응용 프로그램에서 컴파일 명령을 개발자 모드에서 실행하라는 메시지를 표시하지 않습니다.
 
    ```shell
    bin/magento setup:di:compile

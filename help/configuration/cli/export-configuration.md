@@ -2,13 +2,22 @@
 title: 구성 설정 내보내기
 description: 구성 덤프를 사용하여 Adobe Commerce 구성 설정을 파일로 내보내는 방법에 대해 알아봅니다. 파이프라인 배포 및 구성 관리에 대해 알아봅니다.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # 구성 설정 내보내기
 
 Commerce 2.2 이상 [파이프라인 배포 모델](../deployment/technical-details.md)에서는 시스템 간에 일관된 구성을 유지할 수 있습니다. 개발 시스템의 관리에서 설정을 구성한 후 다음 명령을 사용하여 이러한 설정을 구성 파일로 내보냅니다.

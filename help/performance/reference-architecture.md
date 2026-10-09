@@ -2,13 +2,22 @@
 title: 참조 아키텍처
 description: Adobe Commerce의 참조 아키텍처에 대해 알아봅니다. 구현 지침 및 최적화 전략을 살펴보십시오.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # 참조 아키텍처
 
 이 항목에서는 리소스가 다른 사용자와 공유되지 않는 데이터 센터(가상화되지 않음)에서 물리적으로 호스팅되는 일반 서버를 사용하는 Adobe Commerce 인스턴스에 대한 일반적인 권장 설정 방법에 대해 설명합니다. 호스팅 공급자, 특히 Commerce 고성능 호스팅을 전문으로 하는 경우 요구 사항에 따라 동일하거나 더 효과적인 다른 설정을 추천할 수 있습니다.
@@ -64,7 +73,7 @@ ht-degree: 0%
 
 ### 권장 [!DNL Varnish] 참조 아키텍처
 
-Magento은 확장을 통해 확장된 범위와 함께 여러 전체 페이지 캐싱 엔진(File, Memcache, Redis, [!DNL Varnish])을 기본적으로 지원합니다. [!DNL Varnish]은(는) 권장되는 전체 페이지 캐시 엔진입니다.  [!DNL Commerce]은(는) 다양한 [!DNL Varnish] 구성을 지원합니다.
+Magento는 확장을 통해 확장된 범위와 함께 여러 전체 페이지 캐싱 엔진(File, Memcache, Redis, [!DNL Varnish])을 즉시 지원합니다. [!DNL Varnish]은(는) 권장되는 전체 페이지 캐시 엔진입니다.  [!DNL Commerce]은(는) 다양한 [!DNL Varnish] 구성을 지원합니다.
 
 고가용성이 필요하지 않은 사이트의 경우 Nginx SSL 종료와 함께 간단한 [!DNL Varnish] 설정을 사용하는 것이 좋습니다.
 

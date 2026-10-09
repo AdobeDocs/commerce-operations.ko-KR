@@ -3,13 +3,22 @@ title: 데이터 마이그레이션 계획 만들기
 description: Magento 1에서 Magento 2로 업그레이드하기 위한 데이터 마이그레이션 계획을 만드는 방법을 알아봅니다. 마이그레이션을 계획하고 테스트하여 문제를 방지하십시오.
 exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # 데이터 마이그레이션 계획 만들기
 
 성공적으로 마이그레이션하고 문제를 방지하려면 마이그레이션을 철저히 계획하고 테스트해야 합니다.
@@ -30,9 +39,9 @@ ht-degree: 0%
 
 ## 2단계: 마이그레이션할 스토어 구축 및 준비
 
-* 기존 Magento 1 시스템과 적어도 일치하는 토폴로지 및 설계를 사용하여 Magento 2 하드웨어 시스템을 설정합니다
+* 기존 Magento 1 시스템과 적어도 일치하는 토폴로지 및 설계를 사용하여 Magento 2 하드웨어 시스템을 설정합니다.
 
-* [!DNL Data Migration Tool]시스템 요구 사항[을 충족하는 시스템에 Magento 2(이 릴리스의 모든 모듈 포함) 및 &#x200B;](../../installation/system-requirements.md)을(를) 설치합니다.
+* [시스템 요구 사항](../../installation/system-requirements.md)을 충족하는 시스템에 Magento 2(이 릴리스의 모든 모듈 포함) 및 [!DNL Data Migration Tool]을(를) 설치합니다.
 
 * [!DNL Data Migration Tool] 코드를 사용자 지정하여 특정 데이터(예: CMS 페이지, 판매 규칙)를 건너뛰거나 마이그레이션하는 동안 사용자 지정을 변환하세요. 마이그레이션이 작동하는 방식에 대한 자세한 내용은 [!DNL Data Migration Tool]의 [기술 사양](technical-specification.md)을 읽어 보십시오
 
@@ -42,7 +51,7 @@ ht-degree: 0%
 
 이러한 마이그레이션 테스트에서 다음 단계를 수행합니다.
 
-* Magento 1 스토어를 스테이징 서버에 복사합니다.
+* 스테이징 서버에 Magento 1 저장소 복사
 
 * 복제된 Magento 1 저장소를 Magento 2로 완전히 마이그레이션
 
@@ -52,7 +61,7 @@ ht-degree: 0%
 
 1. [!DNL Data Migration Tool]에 Magento 1 및 Magento 2 데이터베이스에 연결할 수 있는 네트워크 액세스 권한이 있는지 확인하십시오. 방화벽에서 해당 포트를 엽니다.
 
-1. 배송, 송장 만들기, 대변 메모와 같은 Magento 1 관리 패널의 모든 활동(Order Management 제외)을 중지하십시오. [!DNL Data Migration Tool]에서 델타 모드의 설정을 조정하여 허용된 활동 목록을 확장할 수 있습니다.
+1. 배송, 송장 및 대변 메모 만들기와 같은 Magento 1 관리 패널(Order Management 제외)의 모든 활동을 중지합니다. [!DNL Data Migration Tool]에서 델타 모드의 설정을 조정하여 허용된 활동 목록을 확장할 수 있습니다.
 
    >[!NOTE]
    >
@@ -74,19 +83,19 @@ ht-degree: 0%
 
    일부 확장에 마이그레이션할 데이터가 있는 경우 Magento 2에 맞게 조정된 이러한 확장을 설치해야 할 수 있습니다. Magento 2 데이터베이스에서 확장의 구조가 다른 경우 [!DNL Data Migration Tool]과(와) 함께 제공된 매핑 파일을 사용하십시오.
 
-1. 모든 Magento 2 인덱서를 다시 인덱싱합니다. 자세한 내용은 [구성 가이드](../../configuration/cli/manage-indexers.md)에서 _인덱서 관리_&#x200B;를 참조하십시오.
+1. 모든 Magento 2 인덱서를 다시 인덱싱합니다. 자세한 내용은 _구성 가이드_&#x200B;에서 [인덱서 관리](../../configuration/cli/manage-indexers.md)를 참조하십시오.
 
 ## 5단계: 마이그레이션된 데이터를 변경합니다(필요한 경우).
 
-마이그레이션 후 Magento 2에 다양한 카탈로그 구조, 판매 규칙 및 CMS 페이지를 저장해야 하는 경우가 있습니다.
+마이그레이션 후 Magento 2에 다른 카탈로그 구조, 판매 규칙 및 CMS 페이지를 저장하도록 해야 하는 경우가 있습니다.
 
 수동 데이터 변경을 통해 작업하는 동안 주의해야 합니다. 다음에 이어지는 증분 데이터 마이그레이션 단계에서 오류가 발생합니다.
 
-예를 들어, Magento 2에서 삭제된 제품: 라이브 Magento 1 스토어에서 구매되었으며 Magento 2 스토어에서 더 이상 사용할 수 없는 제품입니다. 이러한 구매에 대한 데이터를 전송하면 델타 모드에서 [!DNL Data Migration Tool]을(를) 실행하는 동안 오류가 발생할 수 있습니다.
+예를 들어 Magento 2에서 삭제된 제품: 라이브 Magento 1 스토어에서 구매되었으며 Magento 2 스토어에서 더 이상 사용할 수 없는 제품. 이러한 구매에 대한 데이터를 전송하면 델타 모드에서 [!DNL Data Migration Tool]을(를) 실행하는 동안 오류가 발생할 수 있습니다.
 
 ## 6단계: 증분 데이터 업데이트
 
-데이터를 마이그레이션한 후 델타 모드를 사용하여 증분 업데이트(예: 새 주문, 검토 및 고객 프로필 변경)를 캡처하고 Magento 1에서 Magento 2로 전송합니다.
+데이터를 마이그레이션한 후 델타 모드를 사용하여 증분 업데이트(예: 새 주문, 검토 및 고객 프로필 변경)를 Magento 1에서 Magento 2로 캡처하고 전송합니다.
 
 * 증분 마이그레이션을 시작하여 업데이트가 계속 실행됩니다. `Ctrl+C`을(를) 눌러 언제든지 업데이트 전송을 중지할 수 있습니다.
 
@@ -94,11 +103,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Magento 2 사이트 테스트를 수행하고 동시에 마이그레이션 프로세스를 실행하는 경우 볼륨 검사 경고가 나타날 수 있습니다. 이 문제는 Magento 2에서 Magento 1 인스턴스에 존재하지 않는 엔터티를 만들기 때문에 발생합니다.
+>Magento 2 사이트 테스트를 수행하고 동시에 마이그레이션 프로세스를 실행하는 경우 볼륨 검사 경고가 나타날 수 있습니다. 이는 Magento 2에서 Magento 1 인스턴스에 존재하지 않는 엔티티를 만들기 때문입니다.
 
 ## 7단계: 실행
 
-Magento 2 사이트가 완전히 마이그레이션되고 정상적으로 작동하면 전환을 완료하십시오.
+Magento 2 사이트가 완전히 마이그레이션되고 정상적으로 작동하면 단독을 완료합니다.
 
 1. Magento 1 시스템을 유지 관리 모드로 전환합니다(다운타임 시작).
 
@@ -106,9 +115,9 @@ Magento 2 사이트가 완전히 마이그레이션되고 정상적으로 작동
 
 1. Magento 2 cron 작업을 시작합니다.
 
-1. Magento 2 시스템에서 Stock Indexer를 다시 인덱싱합니다. 자세한 내용은 [구성 가이드](../../configuration/cli/manage-indexers.md)에서 _인덱서 관리_&#x200B;를 참조하십시오.
+1. Magento 2 시스템에서 주식 인덱서를 다시 인덱싱합니다. 자세한 내용은 _구성 가이드_&#x200B;에서 [인덱서 관리](../../configuration/cli/manage-indexers.md)를 참조하십시오.
 
-1. 원하는 도구를 사용하여 Magento 2 시스템의 페이지를 히트시켜 상점을 사용하는 고객보다 먼저 페이지를 캐시합니다.
+1. 원하는 도구를 사용하여 Magento 2 시스템의 페이지를 히트하여 상점을 사용하는 고객보다 먼저 페이지를 캐시합니다.
 
 1. Magento 2 사이트에 대한 최종 확인을 수행합니다.
 

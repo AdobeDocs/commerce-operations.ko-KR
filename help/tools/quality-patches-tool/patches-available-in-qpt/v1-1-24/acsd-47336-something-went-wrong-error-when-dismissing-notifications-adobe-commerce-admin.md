@@ -1,17 +1,30 @@
 ---
 title: 'ACSD-47336: Adobe Commerce 관리자의 알림을 해제할 때 [!UICONTROL Something went wrong] 오류가 발생했습니다.'
-description: ACSD-47336 패치를 적용하여  [!DNL Commerce] Admin에서 알림을 해제할 때 사용자에게 [!UICONTROL Something went wrong] 오류가 표시되는 Adobe Commerce 문제를 해결합니다.
+description: ACSD-47336 패치를 적용하여 [!DNL Commerce] 관리자의 알림을 해제할 때 사용자에게 [!UICONTROL Something went wrong] 오류가 표시되는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace
 role: Admin
 exl-id: da0c0119-6720-493f-a278-d573ed898a63
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
-
 ---
-
 # ACSD-47336: Adobe Commerce 관리자의 알림을 해제할 때 _[!UICONTROL Something went wrong]_&#x200B;오류가 발생했습니다.
 
 ACSD-47336 패치는 [!DNL Commerce] 관리자의 알림을 해제할 때 사용자에게 _[!UICONTROL Something went wrong]_&#x200B;오류가 표시되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-47336입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.

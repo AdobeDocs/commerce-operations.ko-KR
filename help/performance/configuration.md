@@ -3,13 +3,27 @@ title: 구성 모범 사례
 description: Adobe Commerce 성능을 최적화하는 구성 모범 사례에 대해 알아봅니다. 응답 시간 및 처리량을 개선하기 위한 설정 및 도구를 살펴봅니다.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
-
 ---
-
 # 구성 모범 사례
 
 Commerce은 더 높은 처리량을 제공할 뿐만 아니라 페이지의 응답 시간을 향상시키는 데 사용할 수 있는 많은 설정 및 도구를 제공합니다.

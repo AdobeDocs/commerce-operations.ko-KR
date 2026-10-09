@@ -5,13 +5,27 @@ feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
-
 ---
-
 # ACSD-62146: 선택한 청구 주소가 결제 체크아웃 페이지에서 사라짐
 
 ACSD-62146 패치는 주소 검색을 사용하도록 설정하고 [!UICONTROL Number of Customer Addresses Limit]을(를) 1로 설정하면 선택한 청구 주소가 체크아웃 결제 페이지에서 사라지는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62146입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

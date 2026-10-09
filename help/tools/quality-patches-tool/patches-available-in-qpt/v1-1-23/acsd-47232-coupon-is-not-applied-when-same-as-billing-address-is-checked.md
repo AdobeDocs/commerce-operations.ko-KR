@@ -5,13 +5,25 @@ feature: Orders, Shipping/Delivery
 role: Admin
 exl-id: d8050f6e-00a9-4aa3-bb8b-1631e0e7a714
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
-
 ---
-
 # ACSD-47232: [!UICONTROL Same as Billing Address]을(를) 선택하면 쿠폰이 적용되지 않습니다.
 
 ACSD-47232 패치는 **[!UICONTROL Same as Billing Address]**&#x200B;을(를) 확인했을 때 쿠폰이 적용되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.23이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-47232입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.

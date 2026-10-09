@@ -5,13 +5,27 @@ feature: Products, Orders
 role: Admin, Developer
 exl-id: 22b72d24-4852-45ba-ac98-df9565f94539
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
-
 ---
-
 # ACSD-65164: 단일 확인란 사용자 지정 옵션을 선택하여 구성 가능한 제품을 재정렬할 때 오류 메시지가 표시됩니다
 
 ACSD-65164 패치는 단일 선택 확인란 사용자 지정 옵션으로 구성 가능한 제품을 다시 정렬할 때 *선택한 항목 옵션 중 일부를 현재 사용할 수 없습니다* 오류 메시지가 발생하는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-65164입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.

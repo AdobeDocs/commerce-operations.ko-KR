@@ -5,13 +5,27 @@ feature: Security, User Account
 role: Admin, Developer
 exl-id: 049a82ff-80e3-46a1-8472-ac74de0e365f
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: 4560f5f5-d00c-5b5d-b61b-369d85ef7a26
+    internal-label: User Account
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
-
 ---
-
 # ACSD-48570: URL의 스토어 코드에서 관리자 재설정 암호 링크 문제 해결
 
 *[!UICONTROL Add Store Code to URLs]* 구성이 활성화되었을 때 관리자 암호 재설정 링크를 통해 암호 재설정 페이지에 액세스할 수 없었던 Adobe Commerce 문제를 해결하기 위한 ACSD-48570 패치입니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-48570입니다. 이 문제는 Adobe Commerce 2.4.7에서 해결되었습니다.

@@ -1,22 +1,31 @@
 ---
 title: 마이그레이션 개요
-description: ' [!DNL Data Migration Tool]을(를) 사용하여 Magento 1에서 Magento 2로 데이터 마이그레이션을 시작하는 방법에 대해 알아봅니다.'
+description: '[!DNL Data Migration Tool]을(를) 사용하여 Magento 1에서 Magento 2로 데이터 마이그레이션을 시작하는 방법에 대해 알아봅니다.'
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # 마이그레이션 개요
 
 마이그레이션을 시작하기 전에 모든 Magento 1 cron 작업을 중지하십시오.
 
 마이그레이션 프로세스 중에 성공적인 마이그레이션을 위해 다음 일반 규칙을 따르십시오.
 
-1. **주문 관리(배송, 송장 만들기, 대변 메모)를 제외하고 Magento 1 관리자를 변경하지 마십시오**
+1. **Magento 1 관리자를 변경하지 마십시오**(주문 관리(배송, 송장 만들기 및 대변 메모) 제외)
 1. **코드를 변경하지 마십시오**
 1. **Magento 2 관리자 및 상점 앞에서 변경하지 마십시오**
 

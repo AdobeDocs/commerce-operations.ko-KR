@@ -4,13 +4,32 @@ description: ACSD-65822 패치를 적용하여 번들 제품을 추가할 때 �
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
 exl-id: 6740b5a6-8710-458c-abe4-03d2a8a694c5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
-
 ---
-
 # ACSD-65822: 번들 및 구성 가능한 제품 수량이 [!UICONTROL Shopping Cart]에 올바르게 반영되지 않았습니다.
 
 ACSD-65822 패치는 번들 및 구성 가능한 제품 수량이 *[!UICONTROL Customer's Activities]* 아래의 **[!UICONTROL Shopping Cart]** 섹션에 올바르게 표시되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-65822입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

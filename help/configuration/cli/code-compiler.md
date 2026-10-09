@@ -2,13 +2,22 @@
 title: 코드 컴파일러
 description: 명령줄에서 Adobe Commerce 코드 컴파일러를 실행하는 방법에 대해 알아봅니다. 컴파일 프로세스 및 최적화 기술을 살펴봅니다.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
-
 ---
-
 # 코드 컴파일러
 
 {{file-system-owner}}
@@ -58,5 +67,5 @@ Commerce 응용 프로그램을 설치하기 전에 코드를 컴파일하려면
    Generated code and dependency injection configuration successfully.
    ```
 
-데이터베이스 없이 코드를 컴파일하려면 [Magento을 설치하지 않고 정적 보기 파일 배포](../cli/static-view-file-deployment.md)를 참조하십시오.
+데이터베이스 없이 코드를 컴파일하려면 [Magento를 설치하지 않고 정적 보기 파일 배포](../cli/static-view-file-deployment.md)를 참조하십시오.
 

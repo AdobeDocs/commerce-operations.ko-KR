@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Exceptions]'
-description: ' [!DNL Site-Wide Analysis Tool]의 [!UICONTROL Exceptions] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: '[!DNL Site-Wide Analysis Tool]의 [!UICONTROL Exceptions] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
-
 ---
-
 # [!DNL Exceptions]
 
 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] 페이지에 사이트 로그 파일 오류/예외가 표시됩니다. 예외는 알려진 해결책을 갖거나 갖지 않을 수 있는 비정상적인 상태입니다.

@@ -2,13 +2,22 @@
 title: Adobe Commerce을 통한 플랫폼 현대화
 description: Adobe Commerce 업그레이드 계획을 위한 권장 사항을 검토하십시오.
 exl-id: f776b000-0085-4b77-860f-623837c3c902
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
-
 ---
-
 # 권장 업그레이드 경로
 
 eCommerce 구현은 진정한 의미의 진전입니다. 고객의 참여를 보장하는 최신 기능과 기능을 도입하여 비즈니스가 트렌드를 한 발 앞서 나가야 합니다. 최신 Adobe Commerce 버전으로 업그레이드하면 업계 최고의 혁신과 미래형 비즈니스로 업계를 선도할 수 있습니다.

@@ -2,13 +2,22 @@
 title: 업그레이드를 위한 권장 읽기
 description: Adobe Commerce 업그레이드 계획에 대한 권장 읽기를 검토합니다.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
-
 ---
-
 # 업그레이드 계획에 대한 권장 읽기
 
 이 페이지의 리소스를 사용하여 Adobe Commerce 업그레이드에 대해 계속 학습합니다.

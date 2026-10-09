@@ -4,13 +4,27 @@ description: 포괄적인 출시 후 지원 및 유지 관리 모범 사례를 �
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2297'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce에 대한 출시 후 지원 및 유지 관리
 
 출시 후 지원 및 유지 관리는 Adobe Commerce 스토어가 원활하게 실행되고, 성능이 우수하며, 안전하게 유지되고, 비즈니스 목표를 지속적으로 충족하도록 하는 데 중요합니다. 이 단계에는 지속적인 모니터링, 최적화, 버그 수정, 업데이트 및 사용자 지원이 포함됩니다. 다음 섹션에서는 **출시 후 지원**&#x200B;을 주요 범주로 분류합니다.
@@ -122,7 +136,7 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 >[!TIP]
 >
->패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](/help/tools/site-wide-analysis-tool/access.md) 보고서도 검토해야 합니다.
+>패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](/help/tools/site-wide-analysis-tool/access.md) 보고서도 검토해야 합니다.
 
 #### PCI 준수
 

@@ -4,13 +4,25 @@ description: 체크아웃 및 주문 처리 성능을 개선하기 위한 구성
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
-
 ---
-
 # 주문 처리를 위한 구성 모범 사례
 
 Commerce 사이트에서 주문 볼륨이 증가하면 다음 저장소 구성 옵션을 활성화하여 체크아웃 성능과 주문 처리를 최적화할 수 있습니다.
@@ -30,7 +42,7 @@ Commerce 사이트에서 주문 볼륨이 증가하면 다음 저장소 구성 �
 
 비동기 순서 처리를 활성화하는 단계는 배포 모드에 따라 다릅니다.
 
-- 프로덕션 모드의 Adobe Commerce 온 클라우드 인프라 및 온프레미스 사이트의 경우 다음 Magento CLI 명령을 사용하여 비동기 인덱싱을 활성화합니다.
+- 프로덕션 모드의 클라우드 인프라 및 온프레미스 사이트에서 Adobe Commerce의 경우 다음 Magento CLI 명령을 사용하여 비동기 인덱싱을 활성화합니다.
 
   ```php
   php bin/magento config:set dev/grid/async_indexing 1

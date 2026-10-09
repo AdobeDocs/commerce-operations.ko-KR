@@ -4,13 +4,23 @@ description: Adobe Commerce 프로젝트를 개발할 때 예외를 로깅하는
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
-source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # 예외 처리 우수 사례
 
 예외 모델을 컨텍스트로 사용하여 `exception.log` 파일에 예외를 기록하지 않으면 New Relic 또는 다른 PSR-3 모노로그 호환 로그 저장소에서 예외를 올바르게 인식하고 분석하지 못합니다. 예외의 일부만 로깅(또는 잘못된 파일에 로깅)하면 예외가 무시될 때 프로덕션에서 버그가 발생합니다.
@@ -31,7 +41,7 @@ try {
 }
 ```
 
-이 방법은 `$e->getMessage`PSR-3 컨텍스트 표준`$e`에 따라 로그 메시지에 [을(를), 컨텍스트에 &#x200B;](https://www.php-fig.org/psr/psr-3/#13-context) 개체를 자동으로 저장합니다. 이 작업은 `\Magento\Framework\Logger\Monolog::addRecord`에서 수행됩니다.
+이 방법은 [PSR-3 컨텍스트 표준](https://www.php-fig.org/psr/psr-3/#13-context)에 따라 로그 메시지에 `$e->getMessage`을(를), 컨텍스트에 `$e` 개체를 자동으로 저장합니다. 이 작업은 `\Magento\Framework\Logger\Monolog::addRecord`에서 수행됩니다.
 
 ### 음소거 신호 ![수정](../../../assets/yes.svg)개
 

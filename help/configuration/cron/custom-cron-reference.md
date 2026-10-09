@@ -2,13 +2,22 @@
 title: 사용자 정의 cron 작업 및 cron 그룹 참조
 description: Adobe Commerce에서 cron group 및 crontab을 사용하여 cron을 사용자 지정하는 방법을 알아봅니다. 사용자 정의 모듈 설정 및 예약된 작업 구성을 검색합니다.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # cron 참조 사용자 지정
 
 이 항목은 사용자 정의 모듈에 대한 크론탭 및 선택적으로 크론 그룹을 설정하는 데 도움이 됩니다. 사용자 정의 모듈이 작업을 정기적으로 예약해야 하는 경우 해당 모듈에 대한 crontab을 설정해야 합니다. _crontab_&#x200B;은(는) cron 작업 구성입니다.
@@ -82,7 +91,7 @@ _cron 그룹_&#x200B;은(는) 한 번에 두 개 이상의 프로세스에 대�
 </config>
 ```
 
-예를 들어 [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)을(를) 참조하십시오.
+예를들어 [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)을(를) 참조하십시오.
 
 ### Cron 그룹 옵션 지정
 
@@ -123,9 +132,9 @@ _cron 그룹_&#x200B;은(는) 한 번에 두 개 이상의 프로세스에 대�
 
 ## cron 작업 비활성화
 
-크론 작업에는 `disable`관찰자[와 같은 &#x200B;](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) 기능이 없습니다. 그러나 다음 기술을 사용하여 cron 작업을 비활성화할 수 있습니다. `schedule` 발생할 수 없는 날짜가 포함된 시간.
+크론 작업에는 [관찰자](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)와 같은 `disable` 기능이 없습니다. 그러나 다음 기술을 사용하여 cron 작업을 비활성화할 수 있습니다. `schedule` 발생할 수 없는 날짜가 포함된 시간.
 
-예를 들어 `visitor_clean` 모듈에 정의된 `Magento_Customer` cron 작업을 비활성화합니다.
+예를 들어 `Magento_Customer` 모듈에 정의된 `visitor_clean` cron 작업을 비활성화합니다.
 
 ```xml
 ...
@@ -149,4 +158,4 @@ _cron 그룹_&#x200B;은(는) 한 번에 두 개 이상의 프로세스에 대�
 ...
 ```
 
-이제 `visitor_clean` cron 작업이 2월 30일(절대 발생하지 않는 날짜)에 00:00에 실행되도록 설정되었습니다.
+이제 `visitor_clean` cron 작업이 2월 30일 00:00에 실행되도록 설정되었습니다(절대 발생하지 않는 날짜).

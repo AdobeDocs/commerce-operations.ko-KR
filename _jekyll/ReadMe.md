@@ -1,10 +1,21 @@
 ---
-source-git-commit: 90e3f9cb6033c91be67947e84520d3e2537ca5d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
+
 # 개요
 
 이 프로젝트는 Rake 작업을 사용하여 설명서 워크플로의 일부를 자동화합니다. 대부분의 작업은 ExL Commerce 문서 리포지토리에서 공유되며 [`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks) gem에서 가져옵니다. 아래의 몇 가지 작업은 이 저장소에만 해당됩니다.

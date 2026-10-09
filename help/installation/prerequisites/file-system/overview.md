@@ -2,13 +2,22 @@
 title: 파일 소유권 및 권한
 description: Adobe Commerce의 온-프레미스 설치 작업 시 파일 시스템 권한의 중요성에 대해 알아봅니다.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # 파일 소유권 및 권한
 
 개발 환경에서 Adobe Commerce 설치를 보호하여 권한이 없는 사용자나 프로세스가 시스템에 액세스하고 경우에 따라 시스템에 피해를 주는 문제를 방지하는 것이 중요합니다. 다음 파일 시스템 소유권 및 권한 지침을 사용하여 설치를 보호하십시오.
@@ -27,9 +36,9 @@ ht-degree: 0%
 
   비공개 호스팅은 응용 프로그램 서버를 관리하는 경우 유용합니다. 각 사용자에게는 다음과 같은 특정 책임이 있습니다.
 
-   - _웹 서버 사용자_&#x200B;가 관리자 및 상점 앞을 실행합니다.
+  - _웹 서버 사용자_&#x200B;가 관리자 및 상점 앞을 실행합니다.
 
-   - _명령줄 사용자_&#x200B;는 cron 작업 및 명령줄 유틸리티를 실행합니다.
+  - _명령줄 사용자_&#x200B;는 cron 작업 및 명령줄 유틸리티를 실행합니다.
 
   두 사용자 모두 파일 시스템에 대해 동일한 권한이 필요하므로 [공유 그룹](configure-permissions.md#set-ownership-and-permissions-for-two-users)을(를) 사용하고 [`umask`](#restrict-access-with-a-umask)을(를) 설정하는 것이 좋습니다.
 
@@ -59,9 +68,9 @@ For example:
 - 개발자
 - 프로덕션
 
-[구성 가이드](../../../configuration/bootstrap/application-modes.md)에서 _모드 정보_&#x200B;를 참조하세요.
+_구성 가이드_&#x200B;에서 [모드 정보](../../../configuration/bootstrap/application-modes.md)를 참조하세요.
 
-[구성 가이드](../../../configuration/deployment/file-system-permissions.md)의 _파일 시스템 액세스 권한_&#x200B;에서 권한 권장 사항에 대해 자세히 설명합니다.
+_구성 가이드_&#x200B;의 [파일 시스템 액세스 권한](../../../configuration/deployment/file-system-permissions.md)에서 권한 권장 사항에 대해 자세히 설명합니다.
 
 >[!TIP]
 >

@@ -5,13 +5,23 @@ feature: Price Rules
 role: Admin
 exl-id: 1919043b-99a8-46a2-94df-9285c05bec7b
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
-
 ---
-
 # ACSD-49480: [!UICONTROL Cart Price Rule - Discard Subsequent Rules]이(가) 의도한 대로 작동하지 않습니다.
 
 ACSD-49480 패치는 [!UICONTROL Cart Price Rule - Discard Subsequent Rules]이(가) 의도한 대로 작동하지 않는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.32가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-49480입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.

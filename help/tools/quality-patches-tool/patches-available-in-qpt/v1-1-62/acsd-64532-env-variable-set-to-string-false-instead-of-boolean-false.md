@@ -5,13 +5,28 @@ feature: Variables
 role: Admin, Developer
 exl-id: 7940df1f-d527-4b57-bde7-7a0216b12436
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
-
 ---
-
 # ACSD-64532: &quot;false&quot;로 설정된 ENV 변수는 부울 FALSE 대신 문자열 &quot;false&quot;로 처리됩니다.
 
 ACSD-64532 패치는 *false*(으)로 설정된 `ENV` 변수가 `BOOLEAN` *FALSE* 대신 문자열 *false*(으)로 처리되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-64532입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.

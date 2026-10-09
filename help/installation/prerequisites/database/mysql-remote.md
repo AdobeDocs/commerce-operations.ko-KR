@@ -2,13 +2,22 @@
 title: 원격 MySQL 데이터베이스 연결 설정
 description: Adobe Commerce의 온-프레미스 설치에 대한 원격 데이터베이스 연결을 구성하려면 다음 단계를 따르십시오.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
-
 ---
-
 # 원격 MySQL 데이터베이스 연결 설정
 
 데이터베이스 서버와 웹 서버를 동일한 컴퓨터에서 실행하는 대신 별도의 서버에서 데이터베이스를 호스팅할 수도 있습니다.

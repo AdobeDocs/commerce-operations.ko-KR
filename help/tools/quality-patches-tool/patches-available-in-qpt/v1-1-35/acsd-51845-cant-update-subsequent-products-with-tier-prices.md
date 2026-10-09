@@ -1,17 +1,32 @@
 ---
-title: 'ACSD-51845: 비동기화 벌크 [!DNL API]을(를) 통해 계층 가격 및 다른 특성 집합으로 후속 제품을 업데이트할 수 없습니다.'
-description: ACSD-51845 패치를 적용하여 계층 가격 및 다른 특성 집합이 있는 후속 제품을 비동기 대량 [!DNL REST API]을 통해 업데이트할 수 없는 Adobe Commerce 문제를 수정하십시오.
+title: 'ACSD-51845: 비동기 벌크 [!DNL API]을(를) 통해 계층 가격 및 다른 특성 집합으로 후속 제품을 업데이트할 수 없습니다.'
+description: 비동기 대량 [!DNL REST API]을(를) 통해 계층 가격 및 다른 특성 집합으로 후속 제품을 업데이트할 수 없는 Adobe Commerce 문제를 해결하려면 ACSD-51845 패치를 적용하십시오.
 feature: REST, Products
 role: Admin
 exl-id: 83d97946-83da-4c1b-8f2a-21a64ee84e93
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
-
 ---
-
 # ACSD-51845: 비동기 벌크 [!DNL API]을(를) 통해 계층 가격 및 다른 특성 집합으로 후속 제품을 업데이트할 수 없습니다.
 
 ACSD-51845 패치는 비동기 대량 [!DNL REST API]을(를) 통해 계층 가격 및 다른 특성 집합으로 후속 제품을 업데이트할 수 없는 문제를 해결합니다. 이 패치는 [!DNL Quality Patches Tool (QPT)] 1.1.35가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-51845입니다. 이 문제는 Adobe Commerce 2.4.7에서 수정됩니다.
@@ -57,7 +72,7 @@ ACSD-51845 패치는 비동기 대량 [!DNL REST API]을(를) 통해 계층 가�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

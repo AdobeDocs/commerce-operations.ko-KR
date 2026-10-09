@@ -1,17 +1,30 @@
 ---
-title: 'MDVA-39305-V3:  [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제'
-description: ' [!DNL Google reCAPTCHA] 이(가) 활성화된 경우 등록된 고객이 로그인할 수 없는 Adobe Commerce 문제를 해결하려면 MDVA-39305-V3 패치를 적용합니다. 또한 이 패치는  [!DNL Google reCAPTCHA] 완전히 로드되기 전에 양식을 제출할 수 있는 문제도 해결합니다. 또한 CMS 페이지에서 블록이 기본값이 아닌 위치에 사용될 때 null*에서 멤버 함수 isDisabled()에 대한 *호출 오류가 수정됩니다.'
+title: 'MDVA-39305-V3: [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제'
+description: '[!DNL Google reCAPTCHA]이(가) 활성화된 경우 등록된 고객이 로그인할 수 없는 Adobe Commerce 문제를 해결하려면 MDVA-39305-V3 패치를 적용하십시오. 또한 이 패치는 [!DNL Google reCAPTCHA]이(가) 완전히 로드되기 전에 양식을 제출할 수 있는 문제를 해결합니다. 또한 CMS 페이지에서 블록이 기본값이 아닌 위치에 사용될 때 null*에서 멤버 함수 isDisabled()에 대한 *호출 오류가 수정됩니다.'
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3: [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제
 
 >[!NOTE]

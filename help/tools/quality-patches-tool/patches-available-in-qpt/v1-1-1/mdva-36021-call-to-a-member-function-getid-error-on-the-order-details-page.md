@@ -5,13 +5,23 @@ feature: Orders
 role: Admin
 exl-id: 737479fe-f363-4974-9c58-7ed9cd113fdb
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
-
 ---
-
 # MDVA-36021: 주문 세부 사항을 열 때 사용자에게 오류 메시지가 표시됨
 
 MDVA-36021 패치를 사용하면 주문 세부 정보를 열려고 할 때 사용자가 *멤버 함수 getId()*&#x200B;에 대한 호출을 가져오는 문제가 해결됩니다. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.1이 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-36021입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.

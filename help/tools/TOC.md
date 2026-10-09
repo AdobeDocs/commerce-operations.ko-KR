@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9e2d11d7a383434670c4cb45e3764ed2b8974e9c
+source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
 workflow-type: tm+mt
-source-wordcount: '10703'
+source-wordcount: '10740'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,9 @@ ht-degree: 0%
       - [ACP2E-4875: 큰 주소록으로 고객 계정을 열 때 관리자 사용자가 로그아웃함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-5223: 카탈로그 권한 색인에 고객 그룹에서 제외된 웹 사이트가 포함됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
+      - [ACP2E-5101: 인덱서가 예약별 업데이트를 사용할 때 Adobe Commerce B2B 설치가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
+      - [AC-12854: 관리자 순서 변경은 -1 접미사가 있는 원래 주문 번호를 사용합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

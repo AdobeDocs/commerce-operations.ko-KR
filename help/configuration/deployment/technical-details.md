@@ -2,13 +2,22 @@
 title: 기술 세부 정보
 description: 파이프라인 배포에 대한 기술 세부 정보, 구성 유형 및 권장 워크플로우에 대해 알아보십시오.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # 기술 세부 정보
 
 이 항목에서는 Commerce 2.2 이상의 파이프라인 배포에 대한 기술 구현 세부 사항에 대해 설명합니다. 개선 사항은 다음 영역으로 나눌 수 있습니다.
@@ -69,16 +78,16 @@ ht-degree: 0%
 - 관리자에서 캐시 유형을 활성화하거나 비활성화할 수 없습니다
 - 다음을 포함한 개발자 설정을 사용할 수 없습니다(**스토어** > 설정 > **구성** > 고급 > **개발자**).
 
-   - CSS, JavaScript 및 HTML 축소
-   - CSS와 JavaScript 병합
-   - 서버측 또는 클라이언트측 LESS 컴파일
-   - 인라인 번역
-   - 앞에서 설명한 대로 `config.php` 또는 `env.php`의 모든 구성 설정이 잠겨 있으므로 관리자에서 편집할 수 없습니다.
-   - 관리 로케일을 배포된 테마에서 사용하는 언어로만 변경할 수 있습니다.
+  - CSS, JavaScript 및 HTML 축소
+  - CSS와 JavaScript 병합
+  - 서버측 또는 클라이언트측 LESS 컴파일
+  - 인라인 번역
+  - 앞에서 설명한 대로 `config.php` 또는 `env.php`의 모든 구성 설정이 잠겨 있으므로 관리자에서 편집할 수 없습니다.
+  - 관리 로케일을 배포된 테마에서 사용하는 언어로만 변경할 수 있습니다.
 
-     다음 그림은 배포된 두 개의 로케일만 표시하는 관리자의 **계정 설정** > **인터페이스 로케일** 목록의 예를 보여줍니다.
+    다음 그림은 배포된 두 개의 로케일만 표시하는 관리자의 **계정 설정** > **인터페이스 로케일** 목록의 예를 보여줍니다.
 
-     ![관리 로케일을 배포된 로케일로만 변경할 수 있습니다](../../assets/configuration/split-deploy-admin-locale.png)
+    ![관리 로케일을 배포된 로케일로만 변경할 수 있습니다](../../assets/configuration/split-deploy-admin-locale.png)
 
 - 관리자를 사용하여 어떤 범위에든 로케일 구성을 변경할 수 없습니다.
 

@@ -5,13 +5,28 @@ feature: B2B
 role: Admin, Developer
 exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
-
 ---
-
 # ACSD-63974: 페이지 매김으로 느린 [!UICONTROL Requisition List] 로드 시간을 수정합니다.
 
 ACSD-63974 패치는 항목이 너무 많을 때 **[!UICONTROL Requisition List]** 페이지를 로드하는 데 시간이 오래 걸리는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63974입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.

@@ -4,13 +4,27 @@ description: ACP2E-3753 패치를 적용하여 다중 스토어 설정의 제품
 feature: Themes, Personalization
 role: Admin, Developer
 exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8b440f30-6794-5ed6-981f-391de4e9b0cc
+    internal-label: Themes
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # ACP2E-3753: 다중 스토어 설정에서 스토어 특정 테마 템플릿을 사용하지 않는 스톡 경고 이메일
 
 ACP2E-3753 패치는 다중 스토어 설정의 제품 경고 이메일이 스토어 또는 테마 구성에 관계없이 기본 테마를 사용하여 전송된 문제를 수정합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACP2E-3753입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정됩니다.

@@ -5,13 +5,28 @@ feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 3101723d-dcc0-49fa-a823-2a2d37037534
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
-
 ---
-
 # ACSD-62415: 앵커 범주가 있는 경우 Adobe Commerce 백엔드가 **[!UICONTROL Categories]**&#x200B;을(를) 매우 느리게 로드합니다.
 
 ACSD-62415 패치는 앵커 범주가 많으면 **[!UICONTROL Admin]** 패널의 **[!UICONTROL Categories]** 페이지 성능이 매우 느리게 로드되는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-62415입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.

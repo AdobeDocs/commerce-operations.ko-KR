@@ -3,15 +3,25 @@ title: 데이터베이스 테이블 수정 우수 사례
 description: Adobe Commerce 및 타사 데이터베이스 테이블을 수정하는 방법과 시기를 알아봅니다.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # 데이터베이스 테이블 수정 우수 사례
 
 이 문서에서는 [!DNL Adobe Commerce] 또는 타사 모듈에서 만든 데이터베이스 테이블을 수정하는 모범 사례를 제공합니다. 표를 효과적으로 수정하는 시기와 방법을 이해하면 상거래 플랫폼의 장기적인 생존력과 안정성을 확보하는 데 도움이 됩니다.

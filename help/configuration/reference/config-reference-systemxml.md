@@ -4,13 +4,27 @@ description: system.xml 파일이 Adobe Commerce 애플리케이션 구성을 �
 feature: Configuration, System
 badge: label="데이비드 램바우어에 의해 기여" type="Informative" url="https://github.com/DavidLambauer" tooltip="데이비드 램바우어"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2751'
 ht-degree: 0%
-
 ---
-
 # system.xml 참조
 
 `system.xml` 파일을 사용하면 Commerce 시스템 구성을 관리할 수 있습니다. 이 항목을 `system.xml` 파일에 대한 일반 참조로 사용하십시오. `system.xml` 파일은 지정된 Commerce 2 확장의 `etc/adminhtml/system.xml` 아래에 있습니다.
@@ -392,7 +406,7 @@ Commerce 2 Core에서 제공하는 소스 모델은 다음과 같습니다. 일�
 | `phoneUK` | (영국) 전화 번호를 허용합니다. |
 | `phoneUS` | 미국 전화 번호를 허용합니다. |
 | `required-entry` | 빈 값(`validate-no-empty`과 동등한 유효성 검사)을 허용하지 않습니다.<br>유효성 검사 실패 메시지: &quot;필수 필드입니다.&quot; |
-| `time` | 00:00에서 23:59 사이의 24시간 형식으로 올바른 시간을 허용합니다. 예: `15`, `15:05` 또는 `15:05:48`. |
+| `time` | 00:00에서 23:59 사이의 24시간 형식으로 유효한 시간을 허용합니다. 예: `15`, `15:05` 또는 `15:05:48`. |
 | `time12h` | 오전 12:00에서 오후 11:59:59 사이의 12시간 형식으로 올바른 시간을 허용합니다. 예: `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | 숫자와 영문자를 모두 사용하여 7자 이상을 허용합니다. |
 | `validate-alphanum-with-spaces` | 문자(a-z 또는 A-Z), 숫자(0-9) 또는 공백만 사용할 수 있습니다. |

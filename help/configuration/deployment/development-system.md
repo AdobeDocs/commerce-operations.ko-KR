@@ -2,13 +2,22 @@
 title: 개발 시스템 설정
 description: Commerce 애플리케이션용 개발 시스템을 설정하는 방법을 알아봅니다.
 exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 0%
-
 ---
-
 # 개발 시스템 설정
 
 개발 시스템 전체에 대해 다음과 같은 조건이 충족되는 경우 원하는 수만큼 개발 시스템을 보유할 수 있습니다.
@@ -19,10 +28,10 @@ ht-degree: 0%
 - [개발, 빌드 및 프로덕션 시스템에 대한 필수 구성 요소](../deployment/technical-details.md)에서 설명한 대로 파일 시스템 소유권 및 사용 권한이 설정되어 있습니다.
 - 소스 제어에서 다음 항목이 모두 _제외됨_&#x200B;인지 확인하십시오.
 
-   - `vendor` 디렉터리(및 하위 디렉터리)
-   - `generated` 디렉터리(및 하위 디렉터리)
-   - `pub/static` 디렉터리(및 하위 디렉터리)
-   - `app/etc/env.php`개 파일
+  - `vendor` 디렉터리(및 하위 디렉터리)
+  - `generated` 디렉터리(및 하위 디렉터리)
+  - `pub/static` 디렉터리(및 하위 디렉터리)
+  - `app/etc/env.php`개 파일
 
 - 소스 제어에 `app/etc/config.php`이(가) _포함_&#x200B;되어 있는지 확인하십시오.
 

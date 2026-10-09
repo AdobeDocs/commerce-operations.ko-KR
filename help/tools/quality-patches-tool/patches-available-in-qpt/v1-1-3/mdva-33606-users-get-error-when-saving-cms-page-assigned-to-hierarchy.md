@@ -5,13 +5,23 @@ feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
-
 ---
-
 # MDVA-33606: 계층에 할당된 CMS 페이지를 저장할 때 사용자에게 오류가 발생했습니다.
 
 MDVA-33606 패치는 계층 트리에 할당된 CMS 페이지를 저장할 때 사용자에게 *고유 제약 조건 위반이 발견되었습니다* 오류가 발생하는 문제를 해결합니다. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.3이 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-33606입니다. 이 문제는 Adobe Commerce 2.4.3에서 해결되었습니다.

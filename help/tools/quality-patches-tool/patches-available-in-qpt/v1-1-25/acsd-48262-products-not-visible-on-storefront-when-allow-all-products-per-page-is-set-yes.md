@@ -1,17 +1,42 @@
 ---
-title: 'ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) [!UICONTROL Yes]​(으)로 설정된 경우 제품이 상점 앞에 표시되지 않음'
-description: ACSD-48262 패치를 적용하여 [!UICONTROL Allow All Products Per Page] 설정이 [!UICONTROL Yes]​(으)로 설정되어 있을 때 제품이 상점 앞에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
+title: 'ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) [!UICONTROL Yes] (으)로 설정된 경우 제품이 상점 앞에 표시되지 않음'
+description: ACSD-48262 패치를 적용하여 [!UICONTROL Allow All Products Per Page] 설정이 [!UICONTROL Yes] (으)로 설정되어 있을 때 제품이 상점 앞에 표시되지 않는 Adobe Commerce 문제를 해결합니다.
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
 exl-id: 733ac476-5c3c-4cbe-88b7-f436d15f1c7d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
-
 ---
-
 # ACSD-48262: [!UICONTROL Allow All Products Per Page]이(가) *[!UICONTROL Yes]*(으)로 설정된 경우 제품이 상점 앞에 표시되지 않음
 
 ACSD-48262 패치는 [!UICONTROL Allow All Products Per Page] 설정이 *[!UICONTROL Yes]*(으)로 설정되어 있을 때 제품이 상점 앞에 표시되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.25가 설치되어 있을 때 사용할 수 있습니다. 패치 ID는 ACSD-48262입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
