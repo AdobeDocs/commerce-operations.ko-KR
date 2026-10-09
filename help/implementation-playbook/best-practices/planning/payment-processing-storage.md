@@ -23,7 +23,7 @@ ht-degree: 0%
 ---
 # 결제 처리 및 보관 모범 사례
 
-[PCI 규정 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)를 유지 관리하는 주요 원칙 중 하나는 신용카드 결제를 올바르게 처리하고 저장하는 전략을 가지고 있습니다.
+[PCI 규정 준수](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=ko)를 유지 관리하는 주요 원칙 중 하나는 신용카드 결제를 올바르게 처리하고 저장하는 전략을 가지고 있습니다.
 
 Adobe Commerce에 카드 소지자 데이터를 저장하는 것은 **엄격하게 금지됨**. 그렇게 하는 것은 PCI-DSS(Payment Card Industry Data Security Standard)에 따른 판매자로서의 의무를 위반할 수 있습니다. 상인 의무에 대한 공유 책임 모델 및 지침에 대한 자세한 내용은 Adobe Trust Center의 [Adobe Commerce 공유 책임 모델 안내서](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)를 참조하십시오.
 
@@ -63,4 +63,4 @@ Adobe Commerce에 카드 소지자 데이터를 저장하는 것은 **엄격하�
 
 ## 추가 정보
 
-Adobe에서 권장하는 결제 솔루션을 찾고 있다면 [Adobe 결제 서비스](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html)를 고려해 보십시오.
+Adobe에서 권장하는 결제 솔루션을 찾고 있다면 [Adobe 결제 서비스](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=ko)를 고려해 보십시오.

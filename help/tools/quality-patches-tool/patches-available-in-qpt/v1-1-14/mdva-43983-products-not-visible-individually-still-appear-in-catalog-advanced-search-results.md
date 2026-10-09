@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43983: "개별적으로 표시되지 않음"으로 설정된 제품이 검색 결과에 표시됨'
-description: MDVA-43983 패치는 "개별적으로 표시되지 않음"으로 설정된 제품이 카탈로그 고급 검색 결과에 여전히 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43983입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
+description: MDVA-43983 패치는 "개별적으로 표시되지 않음"으로 설정된 제품이 카탈로그 고급 검색 결과에 여전히 표시되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43983입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Catalog Management, Products, Search
 role: Admin
 exl-id: d494d263-016b-43fd-aa87-0d74eadc4a6a
@@ -85,4 +85,4 @@ MDVA-43983 패치는 &quot;개별적으로 표시되지 않음&quot;으로 설�
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
 * [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.
