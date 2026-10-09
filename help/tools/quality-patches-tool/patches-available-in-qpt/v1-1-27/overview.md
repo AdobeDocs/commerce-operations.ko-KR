@@ -1,6 +1,6 @@
 ---
 title: '개요: 품질 패치 도구(QPT) v1.1.27'
-description: 이 하위 섹션에서는 [!UICONTROL Quality Patches Tool](QPT) v1.1.27에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+description: 이 하위 섹션에서는 [!UICONTROL Quality Patches Tool] (QPT) v1.1.27에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin
 exl-id: c82b5829-917d-4f38-b8a6-826f92e319b6

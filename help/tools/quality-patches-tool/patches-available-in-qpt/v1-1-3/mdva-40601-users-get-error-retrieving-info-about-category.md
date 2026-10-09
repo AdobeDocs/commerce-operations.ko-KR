@@ -67,14 +67,14 @@ GraphQL을 통해 예약된 업데이트로 변경된 카테고리에 대한 정
 
    <pre>
     <code class="language-graphql">
-    query {
-     category(id: 49) {
+    query &lbrace;
+     category(id: 49) &lbrace;
       name
-      children {
+      children &lbrace;
         name
-       }
-     }
-   }
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code>
    </pre>
 
@@ -82,18 +82,18 @@ GraphQL을 통해 예약된 업데이트로 변경된 카테고리에 대한 정
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "category": {
+    &lbrace;
+      "data": &lbrace;
+        "category": &lbrace;
           "name": "Some category",
-          "children": [
-            {
+          "children": &lbrack;
+            &lbrace;
               "name": "Some child category"
-            }
-          ]
-        }
-      }
-    }
+            &rbrace;
+          &rbrack;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -111,29 +111,29 @@ GraphQL을 통해 예약된 업데이트로 변경된 카테고리에 대한 정
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "uasort() expects parameter 1 to be array, string given",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 2,
           "column": 3
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "category"
-      ]
-    }
-  ],
-  "data": {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
     "category": null
-  }
-}
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

@@ -58,19 +58,19 @@ GraphQL 통화 API 요청이 사용자 지정 통화에 대한 null 값을 반�
 
 <pre>
 <code class="language-graphql">
-{
-    currency {
+&lbrace;
+    currency &lbrace;
         base_currency_code
         base_currency_symbol
         default_display_currency_code
         default_display_currency_symbol
         available_currency_codes
-        exchange_rates {
+        exchange_rates &lbrace;
             currency_to
             rate
-        }
-    }
-}
+        &rbrace;
+    &rbrace;
+&rbrace;
 </code>
 </pre>
 

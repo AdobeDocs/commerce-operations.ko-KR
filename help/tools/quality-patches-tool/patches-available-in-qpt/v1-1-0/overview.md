@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.0'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.0에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.0'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.0에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin
 exl-id: 46c50cf2-d9bd-45e4-a70d-ef7ab63690d2

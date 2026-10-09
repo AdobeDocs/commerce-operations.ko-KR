@@ -54,9 +54,9 @@ setShippingAddressesOnCart 돌연변이는 숫자 지역 코드를 &quot;지역&
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -64,12 +64,12 @@ setShippingAddressesOnCart 돌연변이는 숫자 지역 코드를 &quot;지역&
 
    <pre>
     <code class="language-graphql">
-    mutation ($cartId: String!) {
+    mutation ($cartId: String!) &lbrace;
       setShippingAddressesOnCart(
-        input: {
+        input: &lbrace;
           cart_id: $cartId
-          shipping_addresses: {
-            address: {
+          shipping_addresses: &lbrace;
+            address: &lbrace;
               firstname: "Tomek"
               lastname: "Nowak"
               company: "Company Name"
@@ -80,31 +80,31 @@ setShippingAddressesOnCart 돌연변이는 숫자 지역 코드를 &quot;지역&
               country_code: "FR"
               telephone: "123-456-0000"
               save_in_address_book: false
-            }
-          }
-        }
-        ) {
-          cart {
-            shipping_addresses {
+            &rbrace;
+          &rbrace;
+        &rbrace;
+        ) &lbrace;
+          cart &lbrace;
+            shipping_addresses &lbrace;
               firstname
               lastname
               company
               street
               city
-              region {
+              region &lbrace;
                 code
                 label
-              }
+              &rbrace;
               postcode
               telephone
-              country {
+              country &lbrace;
                 code
                 label
-              }
-            }
-          }
-        }
-      }
+              &rbrace;
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -122,35 +122,35 @@ Adobe Commerce을 사용하면 GraphQL 요청에서 숫자 지역 코드를 설�
 
 <pre>
 <code class="language-graphql">
-{
-  "data": {
-    "setShippingAddressesOnCart": {
-      "cart": {
-        "shipping_addresses": [
-        {
+&lbrace;
+  "data": &lbrace;
+    "setShippingAddressesOnCart": &lbrace;
+      "cart": &lbrace;
+        "shipping_addresses": &lbrack;
+        &lbrace;
           "firstname": "Tomek",
           "lastname": "Nowak",
           "company": "Company Name",
-          "street": [
+          "street": &lbrack;
           "234 Rue de Rivoli"
-          ],
+          &rbrack;,
           "city": "Lille",
-          "region": {
+          "region": &lbrace;
             "code": "47",
             "label": "Lot-et-Garonne"
-            },
+            &rbrace;,
             "postcode": "59800",
             "telephone": "123-456-0000",
-            "country": {
+            "country": &lbrace;
               "code": "FR",
               "label": "FR"
-            }
-          }
-        ]
-      }
-    }
-  }
-}
+            &rbrace;
+          &rbrace;
+        &rbrack;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

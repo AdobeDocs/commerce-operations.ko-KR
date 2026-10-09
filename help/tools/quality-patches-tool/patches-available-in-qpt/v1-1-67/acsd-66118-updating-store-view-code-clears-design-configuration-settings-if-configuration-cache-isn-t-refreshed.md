@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-66118: [!UICONTROL Configuration Cache]을(를) 새로 고치지 않으면 [!UICONTROL Store View Code]을(를) 업데이트하면 [!UICONTROL Design Configuration] 설정이 지워집니다.'
-description: '[!UICONTROL Configuration Cache]을(를) 제대로 새로 고치지 않은 경우 [!UICONTROL Store View Code]을(를) 업데이트하면 [!UICONTROL Design Configuration](테마 및 사용자 지정 설정)이 지워지는 Adobe Commerce 문제를 해결하려면 ACSD-66118 패치를 적용하십시오.'
+description: '[!UICONTROL Configuration Cache]을(를) 제대로 새로 고치지 않은 경우 [!UICONTROL Store View Code]을(를) 업데이트하면 [!UICONTROL Design Configuration] (테마 및 사용자 지정 설정)이 지워지는 Adobe Commerce 문제를 해결하려면 ACSD-66118 패치를 적용하십시오.'
 feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting

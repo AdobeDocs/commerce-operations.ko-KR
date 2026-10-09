@@ -1,6 +1,6 @@
 ---
 title: QPT 도구 개요에서 사용할 수 있는 패치
-description: 이 문서에서는 [!DNL Quality Patches Tool](QPT)에 대한 개요와 사용 방법을 설명하는 리소스 링크를 제공합니다.
+description: 이 문서에서는 [!DNL Quality Patches Tool] (QPT)에 대한 개요와 사용 방법을 설명하는 리소스 링크를 제공합니다.
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654

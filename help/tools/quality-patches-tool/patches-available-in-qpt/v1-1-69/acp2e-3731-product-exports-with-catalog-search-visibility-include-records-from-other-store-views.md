@@ -1,6 +1,6 @@
 ---
 title: 'ACP2E-3731: [!UICONTROL Catalog, Search] 가시성이 있는 제품 내보내기에 다른 스토어 보기의 레코드가 포함됩니다'
-description: ACP2E-3731 패치를 적용하여 가시성 필터가 [!UICONTROL Catalog, Search](으)로 설정된 제품 내보내기에 저장소 범위 특성 변형으로 인해 다중 저장소 설정에 잘못된 행이 포함되는 Adobe Commerce을 수정합니다.
+description: ACP2E-3731 패치를 적용하여 가시성 필터가 [!UICONTROL Catalog, Search] (으)로 설정된 제품 내보내기에 저장소 범위 특성 변형으로 인해 다중 저장소 설정에 잘못된 행이 포함되는 Adobe Commerce을 수정합니다.
 feature: Data Import/Export
 role: Admin, Developer
 type: Troubleshooting
