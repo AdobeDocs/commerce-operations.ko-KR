@@ -1,13 +1,22 @@
 ---
-title: 액세스 방법 [!DNL Adobe Commerce Patching Automation]
-description: ' [!DNL Adobe Commerce Patching Automation]에 액세스하고 사용하는 방법을 알아봅니다.'
-source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
+title: '[!DNL Adobe Commerce Patching Automation]에 액세스하는 방법'
+description: '[!DNL Adobe Commerce Patching Automation]에 액세스하고 사용하는 방법을 알아봅니다.'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]에 액세스하는 방법
 
 ## 사전 요구 사항
@@ -34,7 +43,7 @@ ht-degree: 1%
 
 ## [!DNL Patching Automation]에 액세스 중
 
-[!DNL Patching Automation]은(는) [!DNL Site-Wide Analysis Tool] 대시보드에서 탭으로 사용할 수 있습니다. 관리 사이드바에서 **보고서** > **시스템 인사이트** > **사이트 전체 분석 도구**&#x200B;로 이동하여 관리 패널에서 액세스합니다. 필수 구성 요소 및 권한 설정에 대해서는 [사이트 전체 분석 도구에 액세스하는 방법](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/site-wide-analysis-tool/access)을 참조하십시오.
+[!DNL Patching Automation]은(는) [!DNL Site-Wide Analysis Tool] 대시보드에서 탭으로 사용할 수 있습니다. 관리 사이드바에서 **보고서** > **시스템 인사이트** > **사이트 전체 분석 도구**&#x200B;로 이동하여 관리 패널에서 액세스합니다. 필수 구성 요소 및 권한 설정에 대해서는 [사이트 전체 분석 도구에 액세스하는 방법](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)을 참조하십시오.
 
 대시보드에 들어가면 다음 작업을 수행합니다.
 

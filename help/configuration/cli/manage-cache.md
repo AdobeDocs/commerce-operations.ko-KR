@@ -2,13 +2,22 @@
 title: 캐시 관리
 description: Adobe Commerce CLI 명령을 사용하여 캐시 유형을 관리하고 캐시 상태를 보는 방법에 대해 알아봅니다. 캐시 관리 및 최적화 기술을 살펴보십시오.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # 캐시 관리
 
 {{file-system-owner}}
@@ -20,7 +29,7 @@ Adobe Commerce 캐시 관리 시스템을 사용하여 사이트의 성능을 �
 >[!NOTE]
 >
 >
->Commerce 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. _관리 시스템 안내서_&#x200B;에서 [캐시 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management)를 참조하십시오.
+>Commerce 사이트 관리자는 캐시 관리 시스템 도구를 사용하여 관리자로부터 캐시를 관리할 수 있습니다. _관리 시스템 안내서_&#x200B;에서 [캐시 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)를 참조하십시오.
 
 
 ## 캐시 상태 보기
@@ -59,7 +68,7 @@ Current status:
 
 >[!TIP]
 >
->Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 _관리 시스템 안내서_&#x200B;의 [캐시](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/cache-management#caches)를 참조하십시오.
+>Adobe Commerce에서 지원하는 기본 캐시 유형에 대한 자세한 설명은 _관리 시스템 안내서_&#x200B;의 [캐시](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)를 참조하십시오.
 
 
 ## 캐시 유형 활성화 또는 비활성화
@@ -173,4 +182,4 @@ bin/magento cache:disable db_ddl full_page
 
 >[!TIP]
 >
->관리자에서 캐시 유형을 정리하고 플러시할 수도 있습니다. **시스템** > **도구** > **캐시 관리**(으)로 이동합니다. **플러시 캐시 저장소**&#x200B;은(는) `bin/magento cache:flush`과(와) 같습니다. **Magento 캐시 플러시**&#x200B;는 `bin/magento cache:clean`와(과) 같습니다.
+>관리자에서 캐시 유형을 정리하고 플러시할 수도 있습니다. **시스템** > **도구** > **캐시 관리**(으)로 이동합니다. **플러시 캐시 저장소**&#x200B;은(는) `bin/magento cache:flush`과(와) 같습니다. **Magento Cache 플러시**&#x200B;은(는) `bin/magento cache:clean`과(와) 동일합니다.

@@ -1,16 +1,31 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.72'
-description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.72에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.72'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.72에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '276'
 ht-degree: 0%
-
 ---
-
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.72
 
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.72에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
@@ -18,9 +33,9 @@ ht-degree: 0%
 QPT v1.1.72에는 다음 패치가 포함됩니다.
 
 1. **ACSD-66807**: `report_viewed_product_index` 테이블에 제품 페이지 보기 수가 잘못되었습니다.
-1. **ACSD-67187**: 기본이 아닌 웹 사이트로 제한된 관리 사용자에게 오류가 표시됩니다. *&quot;*계속하려면 적어도 공개 공유 카탈로그를 만드십시오*. 회사 그리드의 **[!UICONTROL Add New Company]** 단추에 액세스할 수 없습니다.
+1. **ACSD-67187**: 기본이 아닌 웹 사이트로 제한된 관리 사용자에게 오류가 표시됩니다. *&quot;*&#x200B;계속하려면 적어도 공개 공유 카탈로그를 만드십시오*. 회사 그리드의 **[!UICONTROL Add New Company]** 단추에 액세스할 수 없습니다.
 1. **ACSD-67383**: 같은 세션에 두 개의 회사 관리자 계정을 사용하여 고객으로 로그인할 때 오류가 발생합니다.
-1. **ACSD-67424**: `updated_at` `GET /carts/search` API 응답의 [!DNL REST] 값이 협상 가능한 견적을 사용할 때 **[!UICONTROL Admin panel]**&#x200B;에 표시된 값과 일치하지 않습니다.
+1. **ACSD-67424**: `GET /carts/search` [!DNL REST] API 응답의 `updated_at` 값이 협상 가능한 견적을 사용할 때 **[!UICONTROL Admin panel]**&#x200B;에 표시된 값과 일치하지 않습니다.
 1. **ACSD-67518**: 행 수가 배치 크기를 초과하면 고급 보고에서 중복된 머리글 행을 생성합니다.
 1. **ACSD-67639**: **[!UICONTROL Dynamic Price]**&#x200B;이(가) *아니요*(으)로 설정된 번들 제품에 대해 대변 메모를 만들지 못했습니다.
 1. **ACSD-67696**: 캐시 플러시 후 `media_gallery`개의 항목이 장바구니 GraphQL 제품 노드에서 반환되지 않습니다.

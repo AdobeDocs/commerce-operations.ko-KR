@@ -1,17 +1,30 @@
 ---
-title: 'MDVA-39305-V3:  [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제'
-description: ' [!DNL Google reCAPTCHA] 이(가) 활성화된 경우 등록된 고객이 로그인할 수 없는 Adobe Commerce 문제를 해결하려면 MDVA-39305-V3 패치를 적용합니다. 또한 이 패치는  [!DNL Google reCAPTCHA] 완전히 로드되기 전에 양식을 제출할 수 있는 문제도 해결합니다. 또한 CMS 페이지에서 블록이 기본값이 아닌 위치에 사용될 때 null*에서 멤버 함수 isDisabled()에 대한 *호출 오류가 수정됩니다.'
+title: 'MDVA-39305-V3: [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제'
+description: '[!DNL Google reCAPTCHA]이(가) 활성화된 경우 등록된 고객이 로그인할 수 없는 Adobe Commerce 문제를 해결하려면 MDVA-39305-V3 패치를 적용하십시오. 또한 이 패치는 [!DNL Google reCAPTCHA]이(가) 완전히 로드되기 전에 양식을 제출할 수 있는 문제를 해결합니다. 또한 CMS 페이지에서 블록이 기본값이 아닌 위치에 사용될 때 null*에서 멤버 함수 isDisabled()에 대한 *호출 오류가 수정됩니다.'
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3: [!DNL Google reCAPTCHA]이(가) 활성화된 로그인 문제
 
 >[!NOTE]
@@ -45,7 +58,7 @@ MDVA-39305-V3 패치에서는 [!DNL Google reCAPTCHA]을(를) 사용할 수 있�
 
 <u>재현 단계</u>:
 
-1. **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**(으)로 이동하여 ***[!DNL Google reCAPTCHA]***&#x200B;을(를) 사용하도록 설정합니다.
+1. **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**(으)로 이동하여 ***[!DNL Google reCAPTCHA]***을(를) 사용하도록 설정합니다.
 1. 프론트엔드로 가세요
 1. 브라우저에서 **[!UICONTROL Developer Tool Console]** 열기
 
@@ -86,7 +99,7 @@ CMS 페이지의 기본값이 아닌 위치에서 블록을 사용할 때 null *
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

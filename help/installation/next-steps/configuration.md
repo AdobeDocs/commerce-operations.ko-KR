@@ -3,13 +3,27 @@ title: 애플리케이션 구성
 description: Adobe Commerce 온-프레미스 배포에 필요한 사후 설치 구성에 대해 알아봅니다.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
-
 ---
-
 # 애플리케이션 구성
 
 이제 Adobe Commerce 설치를 완료했으므로 구성해야 합니다. 이 항목에서는 몇 가지 권장 구성 설정을 제공합니다.
@@ -55,7 +69,7 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 
 자세한 내용은 다음 중 하나를 참조하십시오.
 
-* [방법: 10개의 예제를 포함하는 최종 로그 회전 명령 자습서](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [방법: 10가지 예를 포함하는 최종 로그 회전 명령 자습서](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [스택 교환](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` 매뉴얼 페이지](https://linuxconfig.org/logrotate-8-manual-page)
 
@@ -65,7 +79,7 @@ UNIX `logrotate` 유틸리티를 사용하면 대량의 로그 파일을 생성�
 >
 >* 스타터 환경에는 로그 회전이 없습니다.
 >
->* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
+>* Pro 통합 환경에서는 로그 순환을 구성할 수 없습니다. 필요에 따라 스크립트를 실행하려면 사용자 지정 솔루션/스크립트를 구현하고 [cron을 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)해야 합니다.
 
 ### 다양한 서비스가 통신할 수 있도록 iptables 규칙 설정
 

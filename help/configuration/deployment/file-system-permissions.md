@@ -3,13 +3,27 @@ title: 파일 시스템 액세스 권한
 description: 개발 및 프로덕션 시스템에 대한 Commerce 애플리케이션 파일 시스템의 소유자 또는 소유자를 설정하는 방법을 참조하십시오.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # 파일 시스템 액세스 권한
 
 이 섹션에서는 개발 및 프로덕션 시스템에 대한 Commerce 파일 시스템의 소유자 또는 소유자를 설정하는 방법에 대해 설명합니다. 계속하기 전에 [파일 시스템 소유권 및 사용 권한 개요](../../installation/prerequisites/file-system/overview.md)에서 설명한 개념을 검토하십시오.
@@ -24,9 +38,9 @@ ht-degree: 0%
 
   대신 별도의 사용자가 있습니다.
 
-   - 관리자 및 상점 첫 페이지를 실행하는 웹 서버 사용자.
+  - 관리자 및 상점 첫 페이지를 실행하는 웹 서버 사용자.
 
-   - 서버에 로그인하는 데 사용할 수 있는 로컬 사용자 계정인 _명령줄 사용자_&#x200B;입니다. 이 사용자는 Commerce cron job 및 명령줄 유틸리티를 실행합니다.
+  - 서버에 로그인하는 데 사용할 수 있는 로컬 사용자 계정인 _명령줄 사용자_&#x200B;입니다. 이 사용자는 Commerce cron job 및 명령줄 유틸리티를 실행합니다.
 
 ## 공유 호스팅을 위한 프로덕션 파일 시스템 소유권(사용자 1명)
 

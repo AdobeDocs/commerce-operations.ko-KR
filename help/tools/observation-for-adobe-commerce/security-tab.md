@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL Security] 탭'
-description: '[!UICONTROL Security]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
+description: '[!DNL Observation for Adobe Commerce]의 [!UICONTROL Security] 탭에 대해 알아봅니다.'
 exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '403'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Security] 탭
 
 **[!UICONTROL Security]** 탭은 보안 문제를 설명하고 잠재적인 원인을 격리합니다. 또한 탭의 프레임에 대해서도 설명합니다.
@@ -34,19 +48,19 @@ ht-degree: 0%
 
 ## [!UICONTROL POST activities]
 
-**[!UICONTROL POST activities]** 프레임에는 `POST` 로그에서 `client_ip`에 패싯된 사이트에 대한 [!DNL Fastly] 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL도 표시됩니다.
+**[!UICONTROL POST activities]** 프레임에는 [!DNL Fastly] 로그에서 `client_ip`에 패싯된 사이트에 대한 `POST` 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL도 표시됩니다.
 
 ![사후 활동](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-**[!UICONTROL POST activities summary table]** 프레임에는 `POST` 로그에서 `client_ip`에 패싯된 사이트에 대한 요약된 [!DNL Fastly] 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL의 카운트가 표시됩니다. 카운트는 선택한 기간에 대한 것입니다.
+**[!UICONTROL POST activities summary table]** 프레임에는 [!DNL Fastly] 로그에서 `client_ip`에 패싯된 사이트에 대한 요약된 `POST` 활동이 표시됩니다. 또한 IP 주소로 액세스되는 URL의 카운트가 표시됩니다. 카운트는 선택한 기간에 대한 것입니다.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-**[!UICONTROL POST activities details table]** 프레임에는 `POST` 로그에서 사이트에 대한 [!DNL Fastly] 활동이 표시됩니다. 또한 이러한 요청에 대한 [!DNL Fastly] 로그의 모든 세부 정보를 표시합니다. 마지막 2000개의 요청으로 제한됩니다.
+**[!UICONTROL POST activities details table]** 프레임에는 [!DNL Fastly] 로그에서 사이트에 대한 `POST` 활동이 표시됩니다. 또한 이러한 요청에 대한 [!DNL Fastly] 로그의 모든 세부 정보를 표시합니다. 마지막 2000개의 요청으로 제한됩니다.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]

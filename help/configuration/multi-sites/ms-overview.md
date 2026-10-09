@@ -2,13 +2,22 @@
 title: 여러 웹 사이트 또는 스토어
 description: 여러 웹 사이트를 시작하거나 다양한 옵션, 도메인 및 콘텐츠로 스토어 보기를 구현하는 방법에 대해 알아봅니다.
 exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # 여러 웹 사이트 또는 스토어
 
 Adobe Commerce 소프트웨어의 단일 인스턴스를 사용하면 다음과 같이 여러 웹 사이트를 시작하거나 서로 다른 속성 및 콘텐츠를 사용하는 보기를 저장할 수 있습니다.
@@ -43,8 +52,8 @@ Commerce 관리에서 웹 사이트, 스토어 및 스토어 보기를 구성합
 
 - `MAGE_RUN_TYPE`은(는) `store` 또는 `website`일 수 있습니다.
 
-   - `website`을(를) 사용하여 상점에 웹 사이트를 로드합니다.
-   - `store`을(를) 사용하여 상점 전면의 상점 보기를 로드합니다.
+  - `website`을(를) 사용하여 상점에 웹 사이트를 로드합니다.
+  - `store`을(를) 사용하여 상점 전면의 상점 보기를 로드합니다.
 
 - `MAGE_RUN_CODE`은(는) `MAGE_RUN_TYPE`에 해당하는 고유한 웹 사이트 또는 스토어 보기 코드입니다.
 

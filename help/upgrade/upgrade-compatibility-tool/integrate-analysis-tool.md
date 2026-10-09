@@ -1,14 +1,23 @@
 ---
-title: ' [!DNL Site-Wide Analysis Tool] 통합'
-description: Adobe Commerce 프로젝트의  [!DNL Site-Wide Analysis Tool] 대시보드에서  [!DNL Upgrade Compatibility Tool] 보고서를 검색하려면 다음 단계를 따르십시오.
+title: '[!DNL Site-Wide Analysis Tool] 통합'
+description: Adobe Commerce 프로젝트의 [!DNL Site-Wide Analysis Tool] 대시보드에서 [!DNL Upgrade Compatibility Tool] 보고서를 검색하려면 다음 단계를 따르십시오.
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 0%
-
 ---
-
 # [!DNL Site-Wide Analysis Tool] 통합
 
 [!DNL Site-Wide Analysis Tool]은(는) Adobe Commerce 인스턴스의 보안과 운영을 보장하기 위해 연중무휴 실시간 성능 모니터링, 보고서 및 권장 사항을 제공합니다.

@@ -4,13 +4,23 @@ description: Adobe Commerce 사이트의 프로덕션 시작 전에 성능 저�
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # 카탈로그 이미지 크기 조정 우수 사례
 
 스토어가 프로덕션으로 전환되기 전에 모든 카탈로그 이미지의 크기를 조정해야 합니다. 프로덕션 전에 이미지 크기를 조정하지 않으면 페이지 로드 중 이미지 크기가 조정되어 사이트 속도가 크게 감소하고 시작 후 첫 날부터 몇 주 동안 서버 로드가 증가합니다.
@@ -116,5 +126,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- 클라우드 인프라 프로젝트의 Adobe Commerce은 제품 이미지 크기 조정을 Fastly 서비스로 오프로드할 수 있습니다. _클라우드 가이드_&#x200B;에서 [딥 이미지 최적화](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization#deep-image-optimization)를 참조하십시오.
->- 원격 스토리지 모듈을 사용하는 경우 이미지 크기 조정을 nginx로 오프로드할 수도 있습니다. _구성 가이드_&#x200B;에서 [원격 저장소에 대한 이미지 크기 조정 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=ko)을 참조하십시오.
+>- 클라우드 인프라 프로젝트의 Adobe Commerce은 제품 이미지 크기 조정을 Fastly 서비스로 오프로드할 수 있습니다. _클라우드 가이드_&#x200B;에서 [딥 이미지 최적화](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization#deep-image-optimization)를 참조하십시오.
+>- 원격 스토리지 모듈을 사용하는 경우 이미지 크기 조정을 nginx로 오프로드할 수도 있습니다. _구성 가이드_&#x200B;에서 [원격 저장소에 대한 이미지 크기 조정 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)을 참조하십시오.

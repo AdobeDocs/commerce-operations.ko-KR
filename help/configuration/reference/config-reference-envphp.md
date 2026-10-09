@@ -2,13 +2,22 @@
 title: env.php 참조
 description: Adobe Commerce의 env.php 파일 구성 값 및 섹션에 대해 알아봅니다. 환경 설정 및 구성 옵션을 살펴봅니다.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
-
 ---
-
 # env.php 참조
 
 `env.php` 파일에는 다음 섹션이 포함되어 있습니다.
@@ -146,7 +155,7 @@ Commerce은 암호 및 기타 중요한 데이터를 보호하기 위해 암호�
 ]
 ```
 
-_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
+_Commerce 사용 안내서_&#x200B;에서 [암호화 키](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)에 대해 자세히 알아보세요.
 
 ## db
 

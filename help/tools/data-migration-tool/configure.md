@@ -1,25 +1,34 @@
 ---
-title: ' [!DNL Data Migration Tool] 구성'
-description: Magento 1과 Magento 2 간에 데이터를 전송하도록  [!DNL Data Migration Tool] 을(를) 구성하는 두 가지 방법에 대해 알아봅니다.
+title: '[!DNL Data Migration Tool] 구성'
+description: Magento 1과 Magento 2 간에 데이터를 전송하도록 [!DNL Data Migration Tool]을(를) 구성하는 두 가지 방법에 대해 알아봅니다.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool] 구성
 
 [!DNL Data Migration Tool]을(를) 설치한 후 다음 디렉터리에 매핑 및 구성 파일이 있습니다.
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Magento Open Source 1에서 Magento Open Source 2로 마이그레이션하기 위한 구성 및 스크립트
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Magento Open Source 1에서 Magento Open Source 2로 마이그레이션하기 위한 구성 및 스크립트
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Magento Open Source 1에서 Adobe Commerce 2로 마이그레이션하기 위한 구성 및 스크립트
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Adobe Commerce 1에서 Adobe Commerce 2로 마이그레이션하기 위한 구성 및 스크립트
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Magento Open Source 1에서 Adobe Commerce 2로 마이그레이션하기 위한 구성 및 스크립트
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Adobe Commerce 1에서 Adobe Commerce 2로 마이그레이션하기 위한 구성 및 스크립트
 
 위의 디렉토리에는 지원되는 각 버전에 대한 하위 디렉토리가 있습니다.
 
@@ -106,7 +115,7 @@ ht-degree: 0%
 
 1. `config.xml` 파일에서 액세스 세부 정보를 M1 및 M2 데이터베이스 및 암호화 키로 설정해야 합니다.
 
-1. M1 저장소에 사용자 지정 변경 사항이 있는 경우 나머지 구성 파일을 Magento 1 저장소 사용자 지정에 매핑해야 합니다. [구성 및 매핑 파일 작업](#work-with-configuration-and-mapping-files)을 참조하세요.
+1. M1 저장소에 사용자 지정 변경 내용이 있는 경우 나머지 구성 파일을 Magento 1 저장소 사용자 지정에 매핑해야 합니다. [구성 및 매핑 파일 작업](#work-with-configuration-and-mapping-files)을 참조하세요.
 
 ### `vendor` 폴더에서 마이그레이션 구성
 
@@ -152,7 +161,7 @@ ht-degree: 0%
    * 데이터베이스 사용자 지정 포트: `port=<port>`
    * 테이블 접두사: `<source_prefix>`, `<dest_prefix>`
 
-   예를 들어 데이터베이스 소유자의 사용자 이름이 암호가 `pass`인 `root`이고 Magento 1 데이터베이스에서 접두사 `magento1`을(를) 사용하는 경우 `config.xml`에서 다음을 사용하십시오.
+   예를 들어 데이터베이스 소유자의 사용자 이름이 `root`이고 암호가 `pass`이고 Magento 1 데이터베이스에서 접두사 `magento1`을(를) 사용하는 경우 `config.xml`에서 다음을 사용하십시오.
 
    ```xml
    <source>

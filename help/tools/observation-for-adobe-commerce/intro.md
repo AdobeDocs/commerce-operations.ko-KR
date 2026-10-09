@@ -1,15 +1,29 @@
 ---
 title: '[!DNL Observation for Adobe Commerce]'
-description: ' [!DNL Observation for Adobe Commerce], 사용, 사용 시기 및 액세스 방법에 대해 알아봅니다.'
+description: '[!DNL Observation for Adobe Commerce], 사용, 사용 시기 및 액세스 방법에 대해 알아봅니다.'
 exl-id: a787be0f-5dd8-4acc-adbf-5cedd96b08d6
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
-
 ---
-
 # [!DNL Observation for Adobe Commerce]
 
 이 안내서에서는 [!DNL Observation for Adobe Commerce]에 대한 전체적인 개요를 제공합니다. 이 비디오에서는 사용, 사용 시기, 사용 방법, 문제를 보는 일반적인 방법 및 도구에 액세스하는 방법에 대해 설명합니다.
@@ -38,4 +52,4 @@ Adobe Commerce 사이트 성능을 최적화하고 문제를 진단하려는 판
 
 [!DNL Observation for Adobe Commerce]에 대해 알아보려면 이 비디오 보기:
 
->[!VIDEO](https://video.tv.adobe.com/v/3410750?captions=kor&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)

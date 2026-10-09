@@ -1,17 +1,33 @@
 ---
 title: 'MDVA-38827: 고객이 이메일을 통해 주문 배송 오류 수신'
-description: MDVA-38827 패치는 다음과 같은 오류 메시지가 포함된 주문 배송 이메일을 고객이 받는 문제를 해결합니다. *죄송합니다. 이 콘텐츠를 생성하는 동안 오류가 발생했습니다.* 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38827입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
+description: MDVA-38827 패치는 다음과 같은 오류 메시지가 포함된 주문 배송 이메일을 고객이 받는 문제를 해결합니다. *죄송합니다. 이 콘텐츠를 생성하는 동안 오류가 발생했습니다.* 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38827입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
 exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
-
 ---
-
 # MDVA-38827: 고객이 이메일을 통해 주문 배송 오류 수신
 
 MDVA-38827 패치를 사용하면 고객이 다음 오류 메시지가 포함된 주문 배송 전자 메일을 받는 문제가 해결됩니다. *죄송합니다. 이 콘텐츠를 생성하는 동안 오류가 발생했습니다*. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.0이 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-38827입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
@@ -37,7 +53,7 @@ Adobe Commerce(모든 배포 방법) 2.3.3-p1 - 2.4.2-p1
 <u>재현 단계</u>:
 
 1. **마케팅** > **커뮤니케이션** > **전자 메일 템플릿**(으)로 이동한 다음 **새 템플릿 추가**&#x200B;를 선택합니다.
-   * **Magento 판매** > **새 배송**&#x200B;을 선택합니다.
+   * **Magento Sales** > **새 배송**&#x200B;을 선택합니다.
    * **템플릿 로드**&#x200B;를 클릭합니다.
    * 템플릿 이름(예: 핵심 전달 템플릿)을 추가하고 **저장**&#x200B;을 클릭합니다.
 1. **스토어** > 설정 > **구성** > **판매** > **판매 전자 메일**(으)로 이동:
@@ -62,7 +78,7 @@ Adobe Commerce(모든 배포 방법) 2.3.3-p1 - 2.4.2-p1
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
@@ -71,4 +87,4 @@ Adobe Commerce(모든 배포 방법) 2.3.3-p1 - 2.4.2-p1
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
 * [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을 참조하세요.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [!DNL Quality Patches Tool] 안내서에서 [[!DNL Quality Patches Tool]: 패치 검색](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을 참조하세요.

@@ -4,13 +4,25 @@ description: 인덱서 구성에 대한 모범 사례를 따라 사이트 성능
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '346'
 ht-degree: 0%
-
 ---
-
 # 인덱서 구성에 대한 우수 사례
 
 사이트 성능을 최적화 및 유지 관리하려면 이 문서에 설명된 성능 모범 사례를 사용하여 인덱서 구성을 검토하고 업데이트합니다.
@@ -35,7 +47,7 @@ Adobe Commerce에는 두 가지 유형의 인덱서 모드가 있습니다. [!UI
 사이트 성능을 극대화하려면 색인화에 대한 다음 모범 사례를 따르십시오.
 
 - 색인 구성을 검토합니다.
-- 자주 업데이트되고 트래픽이 많은 사이트 및 대규모 사이트에 대해 인덱서를 _[!UICONTROL Update on Schedule]_(으)로 설정하십시오. [색인 관리](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)를 참조하세요.
+- 자주 업데이트되고 트래픽이 많은 사이트 및 대규모 사이트에 대해 인덱서를 _[!UICONTROL Update on Schedule]_(으)로 설정하십시오. [색인 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)를 참조하세요.
 - 인덱스 관리에 대한 [성능 모범 사례](../../../performance/configuration.md)를 따르십시오.
 
 >[!IMPORTANT]
@@ -48,5 +60,5 @@ Adobe Commerce에는 두 가지 유형의 인덱서 모드가 있습니다. [!UI
 ## 추가 정보
 
 - [관리자 사용자를 위한 색인 관리](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Magento CLI를 사용한 인덱스 관리](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=ko)
-- [개발자를 위한 인덱싱 개요](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Magento CLI를 사용한 인덱스 관리](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [개발자를 위한 색인화 개요](https://developer.adobe.com/commerce/php/development/components/indexing/)

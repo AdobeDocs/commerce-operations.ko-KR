@@ -3,13 +3,25 @@ title: 구현 유지 관리 단계
 description: Adobe Commerce 프로젝트의 유지 관리 단계에 대한 구현 모범 사례에 대해 알아봅니다.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 2%
-
 ---
-
 # 유지 관리 단계
 
 유지 관리 단계에는 다음 활동이 포함됩니다.
@@ -73,7 +85,7 @@ ht-degree: 2%
 | [프론트엔드 성능 감사](frontend-performance.md) | 웹 성능 도구를 사용하여 사이트 성능에 부정적인 영향을 주는 문제를 식별하고 해결합니다. |
 | [준비, 설정, 유지 관리](https://business.adobe.com/blog/basics/ready-set-maintain) | 비즈니스 가치 및 가동 시간을 극대화하기 위한 Adobe Commerce 사이트 유지 관리 팁입니다. |
 | [사용 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 한 곳에서 Adobe Commerce 사이트에 대한 중요한 통찰력을 볼 수 있습니다. |
-| [성능, 디스크 공간 및 로그 모니터링](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/monitor/performance) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
+| [성능, 디스크 공간 및 로그 모니터링](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
 | [보안 인시던트에 응답](respond-to-security-incident.md) | New Relic을 사용하여 클라우드 인프라 사이트에서 Adobe Commerce에 대한 주요 성능 인사이트를 모니터링합니다. |
 
 ### 업그레이드

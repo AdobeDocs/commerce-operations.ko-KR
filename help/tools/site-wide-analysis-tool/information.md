@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Information]'
-description: '[!UICONTROL Information]의  [!DNL Site-Wide Analysis Tool] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
+description: '[!DNL Site-Wide Analysis Tool]의 [!UICONTROL Information] 탭, 사용 시기, 이점 및 모범 사례에 대해 알아봅니다.'
 exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '129'
 ht-degree: 0%
-
 ---
-
 # [!DNL Information]
 
 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] 페이지에 사이트에 대한 개요 정보가 표시됩니다. 이 페이지에는 왼쪽 탐색 영역에 두 개의 제품 영역(**[!UICONTROL General Information]** 및 **Adobe Commerce**)이 추가로 표시됩니다.

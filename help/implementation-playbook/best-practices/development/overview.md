@@ -4,13 +4,23 @@ description: Adobe Commerce 프로젝트의 개발 단계에 대한 구현 모�
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 
 # 개발 단계
 
@@ -42,7 +52,7 @@ ht-degree: 1%
 
 | 모범 사례 | 설명 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [빌드 및 배포](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | 클라우드 인프라 프로젝트에서 Adobe Commerce의 빌드 및 배포 단계에 대한 모범 사례를 설명합니다 |
+| [빌드 및 배포](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | 클라우드 인프라 프로젝트에서 Adobe Commerce의 빌드 및 배포 단계에 대한 모범 사례를 설명합니다 |
 | 디버깅 | Adobe Commerce 프레임워크를 체계적이고 효과적으로 디버그 |
 | [정적 콘텐츠 배포](static-content-deployment.md) | 스토어프론트에 정적 콘텐츠가 표시되지 않는 문제를 방지합니다. |
 | [문제 해결](troubleshooting.md) | 일반적인 Adobe Commerce 구현 문제 해결 |

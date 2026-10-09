@@ -3,13 +3,27 @@ title: 하드웨어 권장 사항
 description: 최적의 Adobe Commerce 성능을 위한 하드웨어 권장 사항에 대해 알아봅니다. 프로덕션 배포를 위한 CPU, 메모리 및 스토리지 요구 사항을 알아봅니다.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
-
 ---
-
 # 하드웨어 권장 사항
 
 ## CPU
@@ -26,7 +40,7 @@ N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 
 ### PHP
 
-Magento에는 시스템 배포 방법에 따라 PHP 메모리 요구 사항이 다릅니다.  일반적으로 단일 서버 저장소를 설정하는 경우 2G용 PHP 메모리를 구성하는 것이 좋습니다.  파이프라인 배포를 사용하여 사이트를 설정하는 경우 빌드 서버에 2GB, 웹 노드에 1GB가 권장됩니다.
+Magento에는 시스템이 배포되는 방식에 따라 PHP 메모리 요구 사항이 다릅니다.  일반적으로 단일 서버 저장소를 설정하는 경우 2G용 PHP 메모리를 구성하는 것이 좋습니다.  파이프라인 배포를 사용하여 사이트를 설정하는 경우 빌드 서버에 2GB, 웹 노드에 1GB가 권장됩니다.
 
 시나리오 및 예상 PHP 메모리 요구 사항:
 

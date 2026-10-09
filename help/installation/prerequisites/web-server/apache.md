@@ -2,15 +2,29 @@
 title: 온-프레미스 배포용 Apache 설치
 description: 온-프레미스 Adobe Commerce 배포용 Apache를 설치하고 구성하는 방법에 대해 알아봅니다. 필요한 모듈, 재작성 및 ".htaccess" 설정을 활성화합니다.
 feature: Install, Configuration
-badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
+badgePaas: label="온-프레미스" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce 온-프레미스 프로젝트에만 적용됩니다."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
-
 ---
-
 # 온-프레미스 배포용 Apache 설치 {#apache}
 
 이 안내서에서는 Adobe Commerce 온-프레미스 배포용 Apache를 설치하고 Commerce에 필요한 Apache 설정을 구성하는 방법을 안내합니다. 여기에는 Ubuntu 및 CentOS에 대한 공유된 Apache 요구 사항 및 운영 체제별 절차가 포함됩니다. Adobe은 이 안내서에 제공된 구성 지침을 따라 Commerce 애플리케이션의 기능과 보안을 모두 유지하는 것을 권장합니다.
@@ -103,8 +117,8 @@ Server built: <build-date>
 ```
 
 - Apache가 *설치되지 않은*&#x200B;경우 다음을 참조하십시오.
-   - [Ubuntu에서 Apache 설치 또는 업그레이드](#installing-or-upgrading-apache-on-ubuntu)
-   - [CentOS에 Apache 설치](#installing-apache-on-centos)
+  - [Ubuntu에서 Apache 설치 또는 업그레이드](#installing-or-upgrading-apache-on-ubuntu)
+  - [CentOS에 Apache 설치](#installing-apache-on-centos)
 
 ## Ubuntu에서 Apache 설치 또는 업그레이드 {#installing-or-upgrading-apache-on-ubuntu}
 
@@ -173,7 +187,7 @@ Apache가 이미 설치되어 있고 `2.4` 이전 버전을 사용 중인 경우
 
 1. 설치된 버전이 [시스템 요구 사항](../../system-requirements.md)에서 Adobe Commerce 릴리스에 대해 지원되는 버전과 일치하는지 확인하십시오.
 
-1. Ubuntu[&#128279;](#enable-rewrites-and-htaccess-for-ubuntu)에 대해 다시 쓰기 및 `.htaccess`을(를) 사용하도록 설정합니다.
+1. Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu)에 대해 [다시 쓰기 및 `.htaccess`을(를) 사용하도록 설정합니다.
 
 ### Ubuntu에 대한 재작성 및 .htaccess 활성화
 

@@ -3,13 +3,27 @@ title: 배포 플로우
 description: Adobe Commerce 프로덕션 환경의 배포 흐름 프로세스에 대해 알아봅니다. 성능과 안정성을 극대화하는 단계를 살펴보십시오.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
-
 ---
-
 # 배포 흐름
 
 [!DNL Commerce] 프로덕션 배포 흐름은 스토어가 최대 성능에 도달하도록 도와줍니다.
@@ -26,7 +40,7 @@ composer install --no-dev
 
 ## 종속성 삽입 지침 전처리
 
-종속성 삽입(DI) 지침을 전처리하고 컴파일하는 경우 Magento은
+종속성 삽입(DI) 지침을 미리 처리하고 컴파일하면 Magento는
 
 * 모든 현재 구성을 읽고 처리합니다.
 * 클래스 간 종속성 분석

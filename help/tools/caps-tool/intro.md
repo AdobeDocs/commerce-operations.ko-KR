@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
-description: ' [!DNL Adobe Commerce Patching Automation], 사용 방법, 액세스 방법 및 자동 패치 모범 사례에 대해 알아봅니다.'
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: '[!DNL Adobe Commerce Patching Automation], 사용 방법, 액세스 방법 및 자동 패치 모범 사례에 대해 알아봅니다.'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]
 
 [!DNL Adobe Commerce Patching Automation]은(는) 클라우드 환경에서 Adobe Commerce에 대한 패치를 적용하고 되돌리는 프로세스를 자동화하는 도구입니다. Commerce 프로젝트 관리자는 패치를 적용하고 되돌릴 수 있는 능률적인 워크플로를 제공합니다. 내장된 유효성 검사 및 상태 검사는 클라우드 환경이 안정적이고 안전하게 유지될 수 있도록 지원합니다.
@@ -51,7 +60,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Patching Automation]에 대해 알아보고 이 도구를 사용하여 보안 패치를 빠르게 찾고 적용하는 방법에 대해 알아봅니다. 다음 비디오에서는 SWAT(Site-Wide Analysis Tool) 대시보드를 통해 프로젝트에 액세스하고, 프로젝트 및 환경을 선택하고, 패치를 적용하는 방법을 한 번의 클릭으로 다룹니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476254/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 일반적인 사용 사례
 

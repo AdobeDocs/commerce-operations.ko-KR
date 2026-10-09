@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] 워크플로 개요'
-description: 용어, 워크플로 단계 및 자동화된 패치 관리를 위한 작업을 포함하여  [!DNL Adobe Commerce Patching Automation] 워크플로 프로세스에 대해 알아봅니다.
-source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
+description: 용어, 워크플로 단계 및 자동화된 패치 관리를 위한 작업을 포함하여 [!DNL Adobe Commerce Patching Automation] 워크플로 프로세스에 대해 알아봅니다.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1128'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation] 워크플로 개요
 
 이 항목에서는 [!DNL Adobe Commerce Patching Automation]을(를) 사용하여 패치 작업이 작동하는 방식에 대한 높은 수준의 개요를 제공합니다.
@@ -81,7 +90,7 @@ ht-degree: 0%
 
 **데이터 복제 없음** — 통합 환경은 대상 환경의 데이터(데이터베이스, 미디어 또는 기타 저장된 컨텐츠) 복사본을 받지 않습니다. 코드베이스만 사용하여 패치를 적용하고 확인합니다
 
-**리소스 요구 사항** - 클라우드 프로젝트의 총 저장소 용량이 계약에 정의되어 있습니다. 계정 페이지 또는 `magento-cloud subscription:info`을(를) 통해 확인하세요. 각 환경의 디스크 할당은 `.magento.app.yaml`/`.magento/services.yaml`의 `disk` 속성을 통해 별도로 구성됩니다. 자세한 내용은 [디스크 공간 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)를 참조하십시오. 저장소 제한으로 인해 패치 작업이 실패하는 경우 구성된 할당에 대해 통합 환경의 디스크 사용량(`magento-cloud db:size` / `magento-cloud mount:size`)을 확인하십시오.
+**리소스 요구 사항** - 클라우드 프로젝트의 총 저장소 용량이 계약에 정의되어 있습니다. 계정 페이지 또는 `magento-cloud subscription:info`을(를) 통해 확인하세요. 각 환경의 디스크 할당은 `.magento.app.yaml`/`.magento/services.yaml`의 `disk` 속성을 통해 별도로 구성됩니다. 자세한 내용은 [디스크 공간 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)를 참조하십시오. 저장소 제한으로 인해 패치 작업이 실패하는 경우 구성된 할당에 대해 통합 환경의 디스크 사용량(`magento-cloud db:size` / `magento-cloud mount:size`)을 확인하십시오.
 
 #### 2b 단계: 통합 환경에서 애플리케이션 패치 적용
 

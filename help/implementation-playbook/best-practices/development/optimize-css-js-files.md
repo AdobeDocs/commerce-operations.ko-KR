@@ -4,13 +4,23 @@ description: 관리자 또는 명령줄에서 Adobe Commerce 프로젝트에 대
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
-
 ---
-
 # 리소스 파일 최적화
 
 보다 반응형 Commerce 사이트의 경우 CSS 및 JavaScript(JS) 리소스 파일을 최적화하고 렌더링 차단 리소스를 제거합니다.
@@ -105,6 +115,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [클라이언트측 최적화 설정](../../../performance/configuration.md#client-side-optimization-settings)
 - *구성 모범 사례*&#x200B;의 [번들 팁](../../../performance/configuration.md#bundling-tips)—타사 번들 도구, HTTP/2 및 더 이상 사용되지 않는 JS 및 CSS 병합에 대한 지침
-- [사용 안내서: 리소스 파일 최적화](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [사용 안내서: 리소스 파일 최적화](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [프론트엔드 개발자 안내서: CSS 병합, 축소 및 사이트 성능](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [고급 JavaScript 번들](../../../performance/advanced-js-bundling.md)

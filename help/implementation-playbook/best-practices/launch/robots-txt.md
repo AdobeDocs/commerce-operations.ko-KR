@@ -4,13 +4,23 @@ description: '''robots.txt'' 및 ''sitemap.xml'' 파일을 사용하여 웹 웹 
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
-
 ---
-
 
 # 웹 웹 크롤러 구성에 대한 우수 사례
 
@@ -35,7 +45,7 @@ ht-degree: 0%
 
 단일 사이트 상점에 대해 `robots.txt` 및 `sitemap.xml` 파일을 구성할 때 다음 모범 사례를 따르십시오.
 
-- 프로젝트에서 [`ece-tools`](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) 버전 2002.0.12 이상을 사용하고 있는지 확인하십시오.
+- 프로젝트에서 [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) 버전 2002.0.12 이상을 사용하고 있는지 확인하십시오.
 - 관리 응용 프로그램을 사용하여 `robots.txt` 파일에 콘텐츠를 추가하십시오.
 
   >[!TIP]
@@ -64,12 +74,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->자세한 지침은 [사이트 맵 및 검색 엔진 로봇 추가](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)를 참조하십시오.
+>자세한 지침은 [사이트 맵 및 검색 엔진 로봇 추가](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)를 참조하십시오.
 
 
 ### 다중 사이트 상점
 
-클라우드 인프라에서 Adobe Commerce의 단일 구현으로 여러 스토어를 설정하고 실행할 수 있습니다. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
+클라우드 인프라에서 Adobe Commerce의 단일 구현으로 여러 스토어를 설정하고 실행할 수 있습니다. [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
 [단일 사이트 상점](#single-site-storefronts)에 대해 `robots.txt` 및 `sitemap.xml` 파일을 구성하는 것과 동일한 모범 사례가 두 가지 중요한 차이점이 있는 다중 사이트 상점 상점에 적용됩니다.
 
@@ -93,7 +103,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 온-프레미스
 
-봇이 불필요한 콘텐츠를 검색하고 인덱싱하지 않도록 `robots.txt` 및 `sitemap.xml` 파일을 구성하려면 관리 응용 프로그램을 사용하십시오([검색 엔진 로봇](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ko#search-engine-robots) 참조).
+봇이 불필요한 콘텐츠를 검색하고 인덱싱하지 않도록 `robots.txt` 및 `sitemap.xml` 파일을 구성하려면 관리 응용 프로그램을 사용하십시오([검색 엔진 로봇](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) 참조).
 
 >[!TIP]
 >
@@ -103,15 +113,15 @@ ht-degree: 0%
 
 `robots.txt` 파일에 관리자 경로를 표시하지 않습니다. 관리자 경로가 노출된 것은 사이트 해킹과 잠재적인 데이터 손실에 대한 취약성입니다. `robots.txt` 파일에서 관리자 경로를 제거합니다.
 
-`robots.txt` 파일을 편집하고 관리 경로의 모든 항목을 제거하는 단계는 [마케팅 사용 안내서 > SEO 및 검색 > 검색 엔진 로봇](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=ko#search-engine-robots)을 참조하십시오.
+`robots.txt` 파일을 편집하고 관리 경로의 모든 항목을 제거하는 단계는 [마케팅 사용 안내서 > SEO 및 검색 > 검색 엔진 로봇](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)을 참조하십시오.
 
 >[!TIP]
 >
->도움이 필요하면 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)하십시오.
+>도움이 필요하면 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)하십시오.
 
 ## 추가 정보
 
-- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [웹 사이트 추가](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Fastly를 사용하여 Adobe Commerce 사이트에 대한 악의적인 트래픽을 차단하십시오](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt 클라우드 인프라 2.3.x에서 Adobe Commerce에 404 오류 발생](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26885)
+- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [웹 사이트 추가](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Fastly를 사용하여 Adobe Commerce 사이트에 대한 악의적인 트래픽을 차단하십시오](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt 클라우드 인프라 2.3.x에서 Adobe Commerce에 404 오류 발생](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26885)

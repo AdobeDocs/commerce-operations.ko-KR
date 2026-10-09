@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] 요구 사항'
-description: 시스템이 Adobe Commerce 프로젝트에 대한 명령줄 인터페이스에서  [!DNL Upgrade Compatibility Tool] 을(를) 실행하는 데 필요한 요구 사항을 충족하는지 확인하십시오.
+description: 시스템이 Adobe Commerce 프로젝트의 명령줄 인터페이스에서 [!DNL Upgrade Compatibility Tool]을(를) 실행하는 데 필요한 요구 사항을 충족하는지 확인하십시오.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 액세스 키
 
 {{commerce-only}}
@@ -80,4 +89,4 @@ Adobe Commerce은 Linux 운영 체제에서만 지원됩니다. Linux OS에서 [
 
 큰 모듈과 파일이 있는 Adobe Commerce 인스턴스에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행하는 경우 도구에는 많은 양의 RAM(최소 2GB)이 필요할 수 있습니다.
 
-[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=ko)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/overview){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.
+[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)에서 [클라우드 인프라의 Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview){target=_blank} 프로젝트에 대해 [!DNL Upgrade Compatibility Tool]을(를) 실행합니다.

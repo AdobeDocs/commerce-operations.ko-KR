@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL bots] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL bots] 탭에 대해 알아봅니다.'
+description: '[!DNL Observation for Adobe Commerce]의 [!UICONTROL bots] 탭에 대해 알아봅니다.'
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL bots] 탭
 
 이 탭에는 [!DNL bots]이(가) 사이트 문제를 일으키는지 확인하는 방법을 설명하는 정보가 있습니다.
@@ -38,7 +52,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]** 프레임은 12개의 복잡한 별도의 쿼리를 실행합니다. 악의적인 IP 요청 서명을 감지한 다음, 결과를 집계하여 내림차순으로 집계하여 정렬합니다. 쿼리에는 CVE 악용 및 기타 악의적인 요청의 많은 데이터 서명이 포함되어 있습니다. 보안 수정/패치에 의해 악용이 차단되고 사이트에 위협이 되지 않는 경우에도, 요청은 여전히 웹 사이트에서 처리해야 합니다. 짧은 기간 내에 요청의 양이 상당히 커질 수 있습니다. 이 프레임에는 IP 주소의 총 요청이 표시되지 않고, 요청에 의심스러운 의도가 있음을 나타내는 신호가 있는 요청이 표시됩니다.
 
-트래픽이 의심스럽고 유효한 요청을 전달할 수 있는 [!DNL Content Distributed Network]&#x200B;(CDN) 주소에서 발생하지 않는지 확인하십시오. 요청이 CDN IP 주소에서 발송된 것으로 확인되면 해당 서비스 공급업체에 연락하여 네트워크를 통한 의심스러운 트래픽 차단을 도와주십시오. 주소 또는 요청 URL을 차단해야 하는 경우 Adobe Commerce 지원 기술 자료에서 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)을 참조하세요.
+트래픽이 의심스럽고 유효한 요청을 전달할 수 있는 [!DNL Content Distributed Network]&#x200B;(CDN) 주소에서 발생하지 않는지 확인하십시오. 요청이 CDN IP 주소에서 발송된 것으로 확인되면 해당 서비스 공급업체에 연락하여 네트워크를 통한 의심스러운 트래픽 차단을 도와주십시오. 주소 또는 요청 URL을 차단해야 하는 경우 Adobe Commerce 지원 기술 자료에서 [Adobe Commerce에 대한 악성 트래픽 차단 [!DNL Fastly] 수준](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)을 참조하세요.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
@@ -68,7 +82,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![표 - 선택한 기간 동안 HTTP 상태 오류가 있는 보트로 식별되지 않는 IP Fastly 수준에서 보트 트래픽을 차단하거나 robots.txt 파일을 통해 보트를 관리하는 방법 Adobe Commerce robots.txt 모범 사례 &#x200B;](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![표 - 선택한 기간 동안 HTTP 상태 오류가 있는 보트로 식별되지 않는 IP Fastly 수준에서 보트 트래픽을 차단하거나 robots.txt 파일을 통해 보트를 관리하는 방법 Adobe Commerce robots.txt 모범 사례 ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
 **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 테이블에는 요청 사용자 에이전트 필드에 [!DNL bots]&#x200B;(으)로 자체 식별되지 않는 HTTP 상태 코드가 200개가 아닌 IP 요청이 표시됩니다. 이러한 IP 주소는 특히 선택한 기간 동안 횟수가 많은 경우 악의적인 IP 주소일 수 있습니다.
 
@@ -82,7 +96,7 @@ IP 주소에서 오류가 자주 발생하는 경우 어떻게 하는지 묻습�
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![IP 주소(상위 200개 주소)에 5XX 상태 배포 표시 Fastly 수준에서 보트 트래픽을 차단하거나 robots.txt 파일을 통해 보트를 관리하는 방법 Adobe Commerce robots.txt 모범 사례 &#x200B;](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![IP 주소(상위 200개 주소)에 5XX 상태 배포 표시 Fastly 수준에서 보트 트래픽을 차단하거나 robots.txt 파일을 통해 보트를 관리하는 방법 Adobe Commerce robots.txt 모범 사례 ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 프레임이 강력합니다. 선택한 기간 동안 5XX http 상태 코드가 있는 IP 주소를 표시합니다. IP 주소가 많은 양의 요청을 하고 사이트가 트래픽을 처리할 수 없는 지점까지 영향을 받는 경우 요청 빈도가 가장 높은 IP 주소는 일반적으로 가장 높은 오류 볼륨을 갖게 됩니다. 5XX http 상태 코드는 일반적으로 요청에 응답하기 어려운 사이트를 나타냅니다.
 
@@ -138,7 +152,7 @@ IP 주소에서 오류가 자주 발생하는 경우 어떻게 하는지 묻습�
 
 ## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly)]
 
-![선택한 기간 동안 봇이 아닌 이름/IP 주소(Fastly)를 차단했습니다. 이 그래프는 403 금지된 HTTP 상태 코드 &#x200B;](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)이(가) 반환된 비봇 트래픽 및 IP를 표시합니다
+![선택한 기간 동안 봇이 아닌 이름/IP 주소(Fastly)를 차단했습니다. 이 그래프는 403 금지된 HTTP 상태 코드 ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)이(가) 반환된 비봇 트래픽 및 IP를 표시합니다
 
 **[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** 프레임에 [!DNL Fastly]을(를) 통해 차단된 [!DNL bot]&#x200B;(으)로 식별되지 않는 IP 주소가 표시됩니다.
 

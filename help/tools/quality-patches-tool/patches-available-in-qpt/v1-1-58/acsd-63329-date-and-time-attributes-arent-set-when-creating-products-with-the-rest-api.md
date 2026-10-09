@@ -5,13 +5,28 @@ feature: REST
 Role: Admin, Developers
 exl-id: d8e7917b-07a5-465b-944b-fd6168dea63c
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
-
 ---
-
 # ACSD-63329: REST API를 사용하여 제품을 만들 때 날짜 및 시간 필드의 기본값이 설정되지 않음
 
 ACSD-63329 패치는 REST API를 사용하여 새 제품을 만들 때 날짜 및 시간 필드에 기본값이 설정되지 않은 문제를 해결합니다. `/rest/default/V1/products`. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63329입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
@@ -28,7 +43,7 @@ ACSD-63329 패치는 REST API를 사용하여 새 제품을 만들 때 날짜 �
 
 >[!NOTE]
 >
->새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
+>새 [!DNL Quality Patches Tool] 릴리스가 있는 다른 버전에 패치를 적용할 수 있습니다. 패치가 Adobe Commerce 버전과 호환되는지 확인하려면 `magento/quality-patches` 패키지를 최신 버전으로 업데이트하고 [[!DNL Quality Patches Tool]에서 호환성을 확인합니다. 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). 패치 ID를 검색 키워드로 사용하여 패치를 찾습니다.
 
 ## 문제
 
@@ -36,7 +51,7 @@ REST API를 사용하여 제품을 만들 때 날짜 및 시간 필드에 기본
 
 <u>재현 단계</u>:
 
-1. **[!UICONTROL Product]** 특성을 만들고, 기본값을 `12/31/2020`(으)로 설정하고, **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;을(를) ***[!UICONTROL Date]*** 또는 [!UICONTROL Date and Time]&#x200B;***(으)로 &#x200B;***.
+1. **[!UICONTROL Product]** 특성을 만들고, 기본값을 `12/31/2020`(으)로 설정하고, **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;을(를) ***[!UICONTROL Date]*** 또는 [!UICONTROL Date and Time]***(으)로 ***.
 1. 다른 텍스트 형식 특성을 만들고 기본값을 ***테스트 값***(으)로 설정합니다.
 1. `/rest/all/V1/products/`에 대한 REST API POST 요청을 사용하여 새 제품을 만드십시오.
 
@@ -75,7 +90,7 @@ API를 사용하여 제품을 만들 때 **[!UICONTROL Date/Datetime]** 형식 �
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 

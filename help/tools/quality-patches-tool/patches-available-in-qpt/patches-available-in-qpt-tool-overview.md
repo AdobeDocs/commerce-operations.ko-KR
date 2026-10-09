@@ -1,17 +1,32 @@
 ---
 title: QPT 도구 개요에서 사용할 수 있는 패치
-description: 이 문서에서는  [!DNL Quality Patches Tool] (QPT)에 대한 개요와 사용 방법을 설명하는 리소스 링크를 제공합니다.
+description: 이 문서에서는 [!DNL Quality Patches Tool](QPT)에 대한 개요와 사용 방법을 설명하는 리소스 링크를 제공합니다.
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # QPT 도구 개요에서 사용할 수 있는 패치
 
 이 문서에서는 [!DNL Quality Patches Tool]&#x200B;(QPT)에 대한 개요와 사용 방법을 설명하는 리소스 링크를 제공합니다.
@@ -39,12 +54,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->QPT는 품질 패치용으로만 사용됩니다. 보안 패치는 [Adobe Commerce 및 Magento Open Source 릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=ko)에서 사용할 수 있습니다.
+>QPT는 품질 패치용으로만 사용됩니다. 보안 패치는 [Adobe Commerce 및 Magento Open Source 릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)에서 사용할 수 있습니다.
 
 ## [!DNL Quality Patches Tool]에서 사용 가능한 패치
 
 Adobe Commerce 지원 기술 자료의 이 섹션에서는 QPT 릴리스 버전별로 그룹화된 QPT 패치로 해결된 문제에 대한 자세한 설명을 확인할 수 있습니다.
-또한 사용 가능한 QPT 패치 목록을 확인하고 [[!DNL Quality Patches Tool]에서 동적으로 생성된 테이블을 사용하여 구성 요소별로 필터링할 수 있습니다. 지원 기술 자료에서 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)을(를) 참조하십시오.
+또한 사용 가능한 QPT 패치 목록을 확인하고 [[!DNL Quality Patches Tool]에서 동적으로 생성된 테이블을 사용하여 구성 요소별로 필터링할 수 있습니다. 지원 기술 자료에서 패치 검색 페이지](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)을(를) 참조하십시오.
 
 ## [!DNL Quality Patches Tool]을(를) 설치하고 사용하는 방법
 
@@ -56,8 +71,8 @@ Adobe Commerce 온프레미스 및 Adobe Commerce 온클라우드 인프라의 �
 
 ### 클라우드 인프라에서 Adobe Commerce용 QPT를 설치하고 사용하는 방법
 
-클라우드 인프라에서 Adobe Commerce에 패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Commerce on Cloud Infrastructure 안내서 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)을 참조하십시오.
+클라우드 인프라에서 Adobe Commerce에 패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Commerce on Cloud Infrastructure 안내서 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)을 참조하십시오.
 
 ## 관련 읽기
 
-* 개발자 설명서에서 [[!DNL Quality Patches Tool] 릴리스 노트](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ko).
+* 개발자 설명서에서 [[!DNL Quality Patches Tool] 릴리스 노트](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html).

@@ -3,13 +3,27 @@ title: 원격 스토리지 구성
 description: 온-프레미스 Commerce 애플리케이션에 대한 원격 저장소 모듈을 구성하는 방법에 대해 알아봅니다.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
-
 ---
-
 # 원격 스토리지 구성
 
 원격 스토리지 모듈은 미디어 파일을 저장하고 AWS S3와 같은 스토리지 서비스를 사용하여 영구적인 원격 스토리지 컨테이너에 가져오기 및 내보내기를 예약하는 옵션을 제공합니다.
@@ -91,5 +105,5 @@ Adobe Commerce 설치 중에 원격 저장소를 설치하거나 기존 Commerce
 
 >[!INFO]
 >
->sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. `var` 디렉터리에 있는 가져오기/내보내기 파일은 _not_&#x200B;합니다. _Commerce 2.4 사용 안내서_&#x200B;에서 [예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=ko)를 참조하십시오.
+>sync 명령은 `pub/media` 디렉터리에 있는 파일만 마이그레이션합니다. `var` 디렉터리에 있는 가져오기/내보내기 파일은 _not_&#x200B;합니다. _Commerce 2.4 사용 안내서_&#x200B;에서 [예약된 가져오기/내보내기](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)를 참조하십시오.
 

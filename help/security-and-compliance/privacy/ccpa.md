@@ -2,13 +2,22 @@
 title: CCPA(캘리포니아 소비자 개인 정보 보호법)
 description: 개인 정보의 수집, 저장 및 사용 방법을 결정하기 위해 캘리포니아 소비자의 권리를 확장하는 CCPA(캘리포니아 소비자 개인 정보 보호법)에 대해 알아봅니다.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # CCPA(캘리포니아 소비자 개인 정보 보호법)
 
 >[!NOTE]
@@ -26,7 +35,7 @@ CCPA는 소비자에게 다음과 같은 새로운 권한을 부여합니다.
 
 ## CCPA 규정 준수
 
-CCPA 준수 계획을 개발하고 구현하려면 조율된 노력이 필요합니다. 상인이 다양한 기능을 갖춘 팀을 구성하고 [CCPA 규정 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ko)에 설명된 로드맵을 따라 회사를 규정 준수에 이르게 할 것을 권장합니다. 개발자인 경우 프로세스의 2단계부터 5단계까지 강조하여 관련자로 참여하도록 초대될 수 있습니다. 자세한 내용은 [CCPA 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=ko)를 참조하십시오.
+CCPA 준수 계획을 개발하고 구현하려면 조율된 노력이 필요합니다. 상인이 다양한 기능을 갖춘 팀을 구성하고 [CCPA 규정 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)에 설명된 로드맵을 따라 회사를 규정 준수에 이르게 할 것을 권장합니다. 개발자인 경우 프로세스의 2단계부터 5단계까지 강조하여 관련자로 참여하도록 초대될 수 있습니다. 자세한 내용은 [CCPA 준수 안내서](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)를 참조하십시오.
 
 1. 다양한 분야의 사람들이 함께 일하는 팀을 구성하여 CCPA 규정 준수를 해결합니다.
 

@@ -2,13 +2,22 @@
 title: Apache를 사용하여 여러 웹 사이트 설정
 description: Apache를 사용하여 여러 웹 사이트를 설정하려면 이 자습서를 따르십시오.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
-
 ---
-
 # Apache를 사용하여 여러 웹 사이트 설정
 
 다음과 같이 가정합니다.
@@ -19,7 +28,7 @@ ht-degree: 0%
 
   호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
 
-  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
+  클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. 이 항목에서 설명한 작업을 완료하면 _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
 - 웹 사이트당 하나의 가상 호스트를 사용합니다. 가상 호스트 구성 파일은 `/etc/httpd/httpd.conf`입니다.
 
@@ -110,7 +119,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 호스팅 환경에서 여러 웹 사이트를 배포하려면 추가 작업이 필요할 수 있습니다. 자세한 내용은 호스팅 공급자에게 문의하십시오.
->- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 클라우드 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
+>- 클라우드 인프라에서 Adobe Commerce을 설정하려면 추가 작업이 필요합니다. _Commerce on Cloud Infrastructure 안내서_&#x200B;의 [여러 클라우드 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)을 참조하십시오.
 
 ### 문제 해결
 

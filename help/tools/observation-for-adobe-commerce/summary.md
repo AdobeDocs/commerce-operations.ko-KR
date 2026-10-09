@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL Summary] 탭'
-description: ' [!DNL Observation for Adobe Commerce]의 [!UICONTROL Summary] 탭에 대해 알아봅니다.'
+description: '[!DNL Observation for Adobe Commerce]의 [!UICONTROL Summary] 탭에 대해 알아봅니다.'
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Summary] 탭
 
 [!DNL Observation for Adobe Commerce]의 [!UICONTROL Summary] 탭은 사이트에서 발생한 문제 중 일부를 빠르게 확인하여 사이트 문제의 잠재적 근본 원인을 자동으로 해결하거나 식별하는 데 도움이 되도록 만들어진 것입니다. 추가 탭은 구성 요소 서비스, 데이터베이스, 인프라 및 프로세스 상태에 대한 심층적인 정보를 제공합니다.
@@ -34,7 +48,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 404 page errors frame]
 
-![시간 경과에 따른 인시던트를 찾을 수 없음을 보여주는 &lbrace;404 오류 모니터링 대시보드](../../assets/tools/404-page-errors.jpg)
+![시간 경과에 따른 인시던트를 찾을 수 없음을 보여주는 {404 오류 모니터링 대시보드](../../assets/tools/404-page-errors.jpg)
 
 **[!UICONTROL 404 page errors]** 프레임에 선택한 일정의 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 및 404 페이지 오류 수가 나열됩니다.
 
@@ -60,7 +74,7 @@ ht-degree: 0%
 
 호스트별 ![CPU 비율](../../assets/tools/cpu-percent-by-host.jpg)
 
-모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=ko)을 참조하세요.
+모든 환경 및 노드의 집계가 **[!UICONTROL CPU % by host]** 프레임에 표시됩니다. 비프로덕션 환경은 선택 해제해야 합니다. 또한 프로덕션 환경의 모든 노드가 없는 모든 인스턴스를 확인합니다. 높은 CPU 사용률에 대한 자세한 정보는 [Adobe Commerce에서 New Relic을 사용하여 성능 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)을 참조하세요.
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -72,7 +86,7 @@ ht-degree: 0%
 
 ![CPU 사용](../../assets/tools/cpu-usage.jpg)
 
-**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
+**[!UICONTROL CPU Usage]** 프레임이 비어 있으면 [!DNL New Relic]의 인프라 응용 프로그램이 활성화되지 않았음을 나타냅니다. 사이트가 Starter에 있는 경우 이 정보가 표시되지 않습니다. 사이트가 Pro를 사용하는 경우 [지원 티켓](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)을 열어 사이트에 대해 [!DNL New Relic Infrastructure]을(를) 사용하도록 설정하십시오.
 
 ## [!UICONTROL Average Response Time]
 
@@ -322,7 +336,7 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 
 ## [!UICONTROL Traffic vs Week Ago]
 
-![주 전과 &#x200B;](../../assets/tools/traffic-vs-week-ago.jpg)
+![주 전과 ](../../assets/tools/traffic-vs-week-ago.jpg)
 
 **[!UICONTROL Traffic vs Week Ago]** 프레임은 (&#39;MISS&#39;, &#39;PASS&#39;) 캐시 상태가 있는 [!DNL Fastly] 로그의 웹 사이트 트래픽(요청)을 봅니다. 이러한 요청은 원천 서버에 로드를 추가합니다. 이 프레임에는 동일한 기간 동안 현재 주와 지난 주의 비교 웹 요청 볼륨이 표시됩니다.
 
@@ -383,10 +397,10 @@ PHP 프로세스가 작동하는 방식은 [구성](https://www.php.net/manual/e
 * &#39;%all shards failed%&#39; as &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39;을 &#39;no_alive_nodes&#39;로 설정
 * &#39;%PHP 치명적인 오류: 알 수 없는 오류: &#39;wrong_param&#39;으로 표시되는 Elasticsearch%&#39;의 매개 변수가 잘못되었습니다.
-* &#39;%Magento Cloud 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하면 이 문제를 &#39;ver_err&#39;로 해결할 수 있습니다.
-* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\] (이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
+* &#39;%Magento Cloud 인프라의 Elasticsearch 서비스를 버전%&#39;로 업그레이드하여 &#39;ver_err&#39;로 이 문제를 해결할 수 있습니다.
+* &#39;%cluster 상태가 \[YELLOW\]에서 \[RED\](이유:%)로 &#39;yel_red&#39;(으)로 변경되었습니다.
 * &#39;%no_space&#39;(으)로 장치%&#39;에 남은 공간 없음
-* &#39;% &#39;failed_query&#39;로 &lbrack;SearchRequest&lbrace;searchType=%&#39;을(를) 실행하지 못했습니다.
+* &#39;% &#39;failed_query&#39;로 [SearchRequest{searchType=%&#39;을(를) 실행하지 못했습니다.
 
 ## [!UICONTROL Cron view]
 

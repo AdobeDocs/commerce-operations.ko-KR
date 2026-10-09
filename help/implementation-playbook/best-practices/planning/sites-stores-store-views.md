@@ -4,13 +4,23 @@ description: 사이트 성능을 극대화하기 위한 사이트, 스토어 및
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
-
 ---
-
 # 사이트, 스토어 및 스토어 뷰 구성에 대한 우수 사례
 
 클라우드 인프라의 Adobe Commerce의 경우 모범 사례는 통합 및 개발 환경보다 더 많은 리소스를 보유하고 있는 프로덕션 환경(및 리소스 제한에 따라 Pro 아키텍처에서 스테이징)에 특히 적용됩니다.
@@ -41,5 +51,5 @@ ht-degree: 0%
 
 ## 추가 정보
 
-- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)
+- [웹 사이트, 스토어 및 스토어 조회수 이해](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [여러 웹 사이트 또는 스토어 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

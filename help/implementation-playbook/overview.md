@@ -3,13 +3,29 @@ title: 구현 플레이북
 description: Adobe Commerce 프로젝트 계획, 개발, 시작 및 유지 관리를 위한 모범 사례에 대해 알아봅니다. 모든 프로젝트 유형에서 성공적인 구현을 위한 방법론을 살펴보십시오.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
-
 ---
-
 # 구현 플레이북
 
 이 플레이북의 목적은 일반적인 Adobe Commerce 구현에 대한 가장 전체적인 개요를 제공하는 것입니다.

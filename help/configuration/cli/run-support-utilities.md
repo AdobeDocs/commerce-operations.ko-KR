@@ -2,20 +2,29 @@
 title: 지원 유틸리티 실행
 description: 지원 유틸리티를 실행하여 Adobe Commerce 프로젝트 문제를 해결하는 방법을 알아봅니다. 내장된 진단 및 지원 도구를 살펴보십시오.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
-
 ---
-
 # 지원 유틸리티 실행
 
 {{ee-only}}
 
 {{file-system-owner}}
 
-Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
+Adobe Commerce 지원 유틸리티([데이터 수집기](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector))를 사용하면 사용자가 지원 팀에서 사용할 수 있는 시스템에 대한 문제 해결 정보를 수집할 수 있습니다.
 
 Adobe Commerce은 이러한 백업을 사용하여 코드에 액세스해야 하는 문제를 분석합니다. _덤프_&#x200B;라고도 합니다. 일반적인 시나리오는 다음과 같습니다.
 

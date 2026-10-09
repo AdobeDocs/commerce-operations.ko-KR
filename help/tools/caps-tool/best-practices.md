@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation] 모범 사례 안내서'
-description: ' [!DNL Adobe Commerce Patching Automation] 을(를) 사용하여 패치를 안전하게 계획, 유효성 검사 및 적용하여 배포 위험 및 서비스 중단을 최소화하는 방법에 대해 알아봅니다.'
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: '[!DNL Adobe Commerce Patching Automation]을(를) 사용하여 패치를 안전하게 계획, 유효성 검사 및 적용하여 배포 위험과 서비스 중단을 최소화하는 방법에 대해 알아봅니다.'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation] 모범 사례 안내서
 
 [!DNL Adobe Commerce Patching Automation]을(를) 사용하여 성공적이고 안전한 패치 작업을 수행하려면 다음 모범 사례가 필수적입니다. 이 안내서에서는 효과적인 패치 작업, 환경 관리 및 운영 효율성을 위한 포괄적인 모범 사례를 제공합니다.
@@ -23,11 +32,11 @@ ht-degree: 0%
 * **Adobe Commerce Cloud 계정**
   * 활성 Adobe Commerce Cloud 구독
   * 유효한 Adobe Commerce 라이선스
-  * Adobe Commerce 저장소에 액세스하도록 구성된 [작성기 인증 키](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+  * Adobe Commerce 저장소에 액세스하도록 구성된 [작성기 인증 키](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * 프로젝트 및 환경 권한
 
 * **환경 리소스**
-  * 프로젝트에 패치 작업을 위한 추가 활성 통합 환경을 만들 수 있는 용량이 있습니다. 활성 환경 제한에 대한 자세한 내용은 [Cloud Console을 사용하여 분기 관리](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/console-branches)를 참조하십시오.
+  * 프로젝트에 패치 작업을 위한 추가 활성 통합 환경을 만들 수 있는 용량이 있습니다. 활성 환경 제한에 대한 자세한 내용은 [Cloud Console을 사용하여 분기 관리](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)를 참조하십시오.
   * 충분한 스토리지, CPU 및 메모리 리소스
   * Adobe 저장소에 대한 네트워크 액세스
   * 동기화를 위한 안정적인 상위 환경

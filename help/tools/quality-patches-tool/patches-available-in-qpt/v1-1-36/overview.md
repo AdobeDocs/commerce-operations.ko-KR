@@ -1,17 +1,30 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.36'
-description: 이 하위 섹션에서는  [!DNL Quality Patches Tool] (QPT) v1.1.36에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.36'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.36에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin
 exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
-
 ---
-
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.36
 
 이 하위 섹션에서는 [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.36에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
@@ -21,7 +34,7 @@ QPT v1.1.36에는 다음 패치가 포함됩니다.
 1. **ACSD-53239**: 인벤토리 인덱서가 [!UICONTROL Update on Schedule] 모드에서 모든 캐시를 정리하는 문제를 해결했습니다.
 1. **ACSD-50887**: *[!UICONTROL Use in search]* 옵션을 *[!UICONTROL Yes]*(으)로 설정하지 않고 제품 특성 속성 *[!UICONTROL Use in Search Results Layered Navigation]*&#x200B;을(를) *[!UICONTROL Yes]*(으)로 설정할 수 있는 문제를 해결했습니다.
 1. **ACSD-51846**: 일부 수준의 REST API 페이로드의 유효성을 검사하지 않아 발생하는 *내부 오류* 문제를 해결했습니다.
-1. **ACSD-52906**: 동일한 고객 세그먼트에 속하는 로그인한 고객에 대해 X-Magento-Vary 쿠키가 잘못 설정되어 일부 페이지에 부적절한 캐싱이 발생하는 문제를 해결했습니다.
+1. **ACSD-52906**: 일부 페이지에 대해 부적절한 캐싱을 유발하는 동일한 고객 세그먼트에 속하는 로그인한 고객에 대해 X-Magento-Vary 쿠키가 잘못 설정되는 문제를 해결했습니다.
 1. **ACSD-52736**: 구성 가능한 제품 수량에 대한 요구 사항이 포함된 [!UICONTROL Cart Price Rule]이(가) 예상대로 작동하지 않는 문제를 해결했습니다.
 1. **ACSD-47875**: 관리자가 재고 관리를 사용하는 특정 스토어 보기 범위에 대해 관리자의 고객 장바구니에 제품을 추가할 수 없는 문제를 해결했습니다.
 1. **ACSD-53176**: *[!UICONTROL is one of]* 상태의 *[!UICONTROL Related Product Rule]*&#x200B;이(가) 제품과 일치하지 않는 문제를 해결했습니다.

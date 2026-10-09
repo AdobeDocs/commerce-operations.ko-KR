@@ -2,13 +2,22 @@
 title: 고급 설정
 description: Adobe Commerce의 고급 설정 방법을 알아봅니다. 단계별 지침 및 구성 요구 사항을 살펴보십시오.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # 고급 설정
 
 [!DNL Commerce]은(는) 모든 크기의 판매자를 위한 솔루션을 포함하는 유연성과 확장성이 뛰어난 제품입니다. 이 단원에서는 대량의 데이터, 과도한 로드 및 기타 엔터프라이즈 사례에서 작동하도록 [!DNL Commerce]을 구성하는 데 대한 모범 사례 및 권장 사항을 다룹니다.
@@ -99,7 +108,7 @@ bin/magento setup:db-schema:add-slave
 
 ## 미디어 콘텐츠 제공
 
-Magento은 미디어 콘텐츠를 제공하고 전달하기 위한 특정 통합을 제공하지 않습니다. Magento에서는 모든 일반적인 접근 방식을 함께 사용할 수 있습니다.
+Magento는 미디어 콘텐츠를 제공하고 전달하기 위한 특정 통합을 제공하지 않습니다. Magento에서 모든 일반적인 접근 방식을 함께 사용할 수 있습니다.
 
 미디어 콘텐츠를 제공하는 가장 쉬운 방법은 [!DNL Varnish] 서버에서 미디어 콘텐츠를 제공하고 캐싱하는 것입니다. 이 방법에서는 미디어 콘텐츠를 저장하기 위한 공유 파일 시스템이나 [!DNL Varnish]을(를) 가리키는 전용 서버로 가정합니다.
 

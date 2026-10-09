@@ -2,13 +2,22 @@
 title: 컨텐츠 보안 정책 개요
 description: 컨텐츠 보안 정책을 사용하여 Adobe Commerce 스토어의 보안 상태를 개선하는 방법을 알아봅니다.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # 컨텐츠 보안 정책 개요
 
 CSP(콘텐츠 보안 정책)는 XSS(교차 사이트 스크립팅) 및 관련 데이터 삽입 공격을 감지하고 완화하는 데 도움을 주어 Adobe Commerce 설치에 대한 추가 방어 계층을 제공할 수 있습니다. 이 일반적인 공격 벡터는 웹 사이트에서 비롯되었다고 허위 주장을 하는 악성 콘텐츠를 삽입하여 작동합니다. 악성 콘텐츠가 로드되고 실행된 후 데이터의 무단 전송을 시작할 수 있습니다.

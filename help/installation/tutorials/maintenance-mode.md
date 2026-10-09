@@ -2,13 +2,22 @@
 title: 유지 관리 모드 활성화 또는 비활성화
 description: 유지 관리를 위해 Adobe Commerce 배포가 중단될 때 고객이 볼 수 있는 내용을 사용자 지정하려면 다음 단계를 따르십시오.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '547'
 ht-degree: 0%
-
 ---
-
 # 유지 관리 모드 활성화 또는 비활성화
 
 다음 안내서는 표준 유지 관리 모드 페이지를 참조합니다. 사용자 지정 유지 관리 페이지를 사용해야 하는 경우 [사용자 지정 유지 관리 페이지 만들기](../../upgrade/troubleshooting/maintenance-mode-options.md) 항목을 참조하십시오.
@@ -86,7 +95,7 @@ bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 
 다음 예제에서는 현지화된 콘텐츠가 필요한 `503` 형식 오류 템플릿 파일을 사용하고 있습니다.
 
-`Error_Processor` 클래스의 생성자가 `skin` GET 매개 변수를 사용하여 레이아웃을 변경할 수 있습니다.
+`Error_Processor` 클래스의 생성자가 레이아웃을 변경하기 위해 `skin` GET 매개 변수를 허용합니다.
 
 ```php
 if (isset($_GET['skin'])) {

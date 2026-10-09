@@ -4,13 +4,23 @@ description: Adobe Commerce 데이터베이스를 준비하여 이전 버전에�
 role: Developer
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '863'
 ht-degree: 0%
-
 ---
-
 
 # MariaDB에 대한 업그레이드 사전 요구 사항
 
@@ -21,7 +31,7 @@ MariaDB를 사용하는 경우 클라우드 인프라에서 Adobe Commerce을 �
 
 ## Adobe Commerce 2.4.6
 
-MariaDB 10.5.1부터 이전 임시 형식의 열은 `/* mariadb-5.3 */` 테이블의 `SHOW CREATE TABLE` 열뿐만 아니라 `SHOW COLUMNS`, `DESCRIBE`, `COLUMN_TYPE` 문의 출력에서도 `INFORMATION_SCHEMA.COLUMNS` 주석으로 표시됩니다. [MariaDB 설명서를 참조하십시오](https://mariadb.com/kb/en/datetime/#internal-format).
+MariaDB 10.5.1부터 이전 임시 형식의 열은 `INFORMATION_SCHEMA.COLUMNS` 테이블의 `COLUMN_TYPE` 열뿐만 아니라 `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` 문의 출력에서도 `/* mariadb-5.3 */` 주석으로 표시됩니다. [MariaDB 설명서를 참조하십시오](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce은 MariaDB 주석으로 인해 날짜 열을 적절한 데이터 형식에 매핑할 수 없으므로 사용자 지정 코드에 예기치 않은 동작이 발생할 수 있습니다.
 
@@ -51,7 +61,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 ## Adobe Commerce 2.3.5
 
-클라우드 인프라의 MariaDB 서비스를 버전 10.0 또는 10.2에서 버전 10.3, 10.4 또는 10.5로 업그레이드합니다. MariaDB 버전 10.3 이상에서는 데이터베이스가 동적 테이블 행 형식을 사용해야 하며 Adobe Commerce에서는 테이블에 InnoDB 스토리지 엔진을 사용해야 합니다. 이 문서에서는 이러한 MariaDB 요구 사항을 준수하도록 데이터베이스를 업데이트하는 방법에 대해 설명합니다.
+클라우드 인프라의 MariaDB 서비스를 버전 10.0 또는 10.2에서 버전 10.3, 10.4 또는 10.5로 업그레이드합니다. MariaDB 버전 10.3 이상에서는 데이터베이스가 동적 테이블 행 형식을 사용해야 하고 Adobe Commerce에서는 테이블에 InnoDB 스토리지 엔진을 사용해야 합니다. 이 문서에서는 이러한 MariaDB 요구 사항을 준수하도록 데이터베이스를 업데이트하는 방법에 대해 설명합니다.
 
 데이터베이스를 준비한 후에는 Adobe Commerce 업그레이드 프로세스를 진행하기 전에 클라우드 인프라에서 MariaDB 서비스 버전을 업데이트하기 위한 Adobe Commerce 지원 티켓을 제출하십시오.
 

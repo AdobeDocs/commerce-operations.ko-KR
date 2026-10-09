@@ -2,13 +2,22 @@
 title: config.php 참조
 description: Adobe Commerce 구성에 대한 config.php 파일 값 및 섹션에 대해 알아봅니다. 모듈, 범위, 시스템 설정 및 배포 모범 사례를 살펴봅니다.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # config.php 참조
 
 `config.php` 파일에는 다음 섹션이 포함되어 있습니다.
@@ -34,7 +43,7 @@ ht-degree: 1%
 ]
 ```
 
-[모듈](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=ko)에 대해 자세히 알아보세요.
+[모듈](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)에 대해 자세히 알아보세요.
 
 ## 범위
 
@@ -82,7 +91,7 @@ ht-degree: 1%
 ]
 ```
 
-[Commerce 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ko#scope-settings)에 대해 자세히 알아보세요.
+[Commerce 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)에 대해 자세히 알아보세요.
 
 ## 시스템
 

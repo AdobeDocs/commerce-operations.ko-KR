@@ -1,15 +1,24 @@
 ---
-title: ' [!DNL Data Migration Tool] 업그레이드'
-description: ' [!DNL Data Migration Tool] 을(를) 업그레이드하여 Magento 1과 Magento 2 간에 데이터를 전송하는 방법을 알아봅니다.'
+title: '[!DNL Data Migration Tool] 업그레이드'
+description: '[!DNL Data Migration Tool]을(를) 업그레이드하여 Magento 1과 Magento 2 간에 데이터를 전송하는 방법에 대해 알아봅니다.'
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '235'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool] 업그레이드
 
 현재 Magento 2 설치와 [!DNL Data Migration Tool]의 버전이 정확히 일치하는지 확인하려면 도구를 업그레이드해야 할 수 있습니다.
@@ -22,7 +31,7 @@ ht-degree: 0%
 
 * `vendor/magento/data-migration-tool` 디렉터리 백업
 
-* [!DNL Data Migration Tool] 버전이 Magento 애플리케이션 버전과 일치하는지 확인하십시오
+* [!DNL Data Migration Tool] 버전이 Magento 응용 프로그램 버전과 일치하는지 확인하십시오.
 
 ### Magento 소프트웨어 업그레이드
 

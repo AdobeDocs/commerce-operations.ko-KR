@@ -3,13 +3,28 @@ title: 검색 중지 단어 구성
 description: CSV 파일을 사용하여 Adobe Commerce에 대한 중지 단어를 관리하는 방법을 알아봅니다.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
-
 ---
-
 # 검색 중지 단어 구성
 
 일반적으로 _중지 단어_&#x200B;은(는) 검색 엔진이 텍스트를 처리한 후 필터링하는 일반적인 단어입니다. 원래 디스크 공간과 메모리가 매우 제한적이었던 경우에는 1KB를 절약할 때마다 성능이 크게 향상되었습니다. 따라서 검색 엔진은 특정 단어를 무시하고 지수를 작게 유지함으로써 성능 향상을 달성했다.

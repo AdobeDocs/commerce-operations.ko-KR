@@ -2,13 +2,22 @@
 title: 구성 안내서 개요
 description: Adobe Commerce 애플리케이션에 대해 구성 가능한 기능 및 서비스에 대해 알아봅니다. 배포, 캐싱, 보안 및 기타 중요한 설정을 관리하는 방법을 알아봅니다.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 12%
-
 ---
-
 # 구성 안내서
 
 _구성_ 안내서에서는 구성 가능한 Commerce 응용 프로그램 기능 및 서비스를 관리하기 위한 참조 자료와 제한된 지침을 제공합니다. Commerce 애플리케이션 구성을 담당하는 기술 사용자는 다음 영역에 대한 지침을 찾을 수 있습니다.
@@ -25,8 +34,8 @@ _구성_ 안내서에서는 구성 가능한 Commerce 응용 프로그램 기능
 
 ## Commerce 관리 구성
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/config/guide-overview)에는 Commerce 관리자의 모든 구성 설정에 대한 필드 설명을 이해하는 데 도움이 되는 해당 항목이 있습니다.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)에는 Commerce 관리자의 모든 구성 설정에 대한 필드 설명을 이해하는 데 도움이 되는 해당 항목이 있습니다.
 
 ## 클라우드 구성
 
-[!DNL Commerce on cloud infrastructure]은(는) [구성 파일 집합](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/overview)을 사용하여 호스팅된 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 [클라우드 가이드](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/overview)에서 추가 구성 요구 사항을 검토해야 합니다.
+[!DNL Commerce on cloud infrastructure]은(는) [구성 파일 집합](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview)을 사용하여 호스팅된 환경에서 Commerce 응용 프로그램 기능 및 서비스를 업데이트합니다. Adobe 클라우드 호스팅 환경의 고유한 특성으로 인해 항상 [클라우드 가이드](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)에서 추가 구성 요구 사항을 검토해야 합니다.

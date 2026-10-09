@@ -2,21 +2,30 @@
 title: 관리자에서 여러 웹 사이트, 스토어 및 스토어 보기 설정
 description: Commerce 관리에서 추가 웹 사이트, 스토어 및 스토어 보기를 구성합니다.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
-
 ---
-
 # 관리자에서 여러 보기 설정
 
 이 작업을 수행하려면 각 스토어에 대한 루트 카테고리(및 원하는 경우 추가 카테고리)를 만들어야 합니다. 이 항목에서 설명하는 작업은 여러 스토어를 설정하는 한 가지 방법을 제공합니다. 자세한 내용은 Commerce 사용 안내서에서 다음 리소스를 참조하십시오.
 
-- [카테고리](https://experienceleague.adobe.com/ko/docs/commerce-admin/catalog/categories/categories)
-- [웹 사이트 추가](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URL 저장](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [콘텐츠](https://experienceleague.adobe.com/ko/docs/commerce-admin/content-design/content-menu)
+- [카테고리](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [웹 사이트 추가](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URL 저장](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [콘텐츠](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +43,7 @@ ht-degree: 0%
 1. **범주 이름** 필드에 이 범주를 식별할 고유한 이름을 입력하십시오.
 1. 범주 사용이 **예**(으)로 설정되어 있는지 확인하십시오.
 
-   이 페이지의 다른 옵션에 대한 자세한 내용은 [루트 범주](https://experienceleague.adobe.com/ko/docs/commerce-admin/catalog/categories/category-root)를 참조하십시오.
+   이 페이지의 다른 옵션에 대한 자세한 내용은 [루트 범주](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)를 참조하십시오.
 
    다음 그림은 예를 보여 줍니다.
 
@@ -131,7 +140,7 @@ Commerce은 사이트 기본 URL에 스토어 코드를 추가할 수 있는 옵
 
 이렇게 하면 `index.php` 및 `.htaccess`이(가) 향후 업그레이드 시 Commerce 코드베이스와 동기화되지 않습니다.
 
-[Commerce 사용 안내서](https://experienceleague.adobe.com/ko/docs/commerce-admin/stores-sales/site-store/store-urls)를 참조하세요.
+[Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)를 참조하세요.
 
 기본 URL에 스토어 코드를 추가하려면 다음을 수행합니다.
 

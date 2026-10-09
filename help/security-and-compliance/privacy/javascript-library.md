@@ -2,13 +2,22 @@
 title: 개인 정보 JavaScript 라이브러리
 description: Adobe Commerce에서 수집한 고객 개인 정보에 액세스하고 삭제하는 데 사용자 지정 도구를 사용하는 방법을 알아봅니다.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 0%
-
 ---
-
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
 # 개인 정보 JavaScript 라이브러리
@@ -21,7 +30,7 @@ Commerce 데이터 추적 서비스는 [GDPR(일반 데이터 보호 규정)](gd
 
 >[!NOTE]
 >
->[쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ko)가 활성화된 경우, Commerce은 구매자가 동의할 때까지 행동 데이터를 수집하지 않습니다. [!UICONTROL **쿠키 제한 모드**]&#x200B;를 사용하지 않도록 설정하면 Commerce에서 기본적으로 동작 데이터를 수집합니다.
+>[쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)가 활성화된 경우, Commerce은 구매자가 동의할 때까지 행동 데이터를 수집하지 않습니다. [!UICONTROL **쿠키 제한 모드**]&#x200B;를 사용하지 않도록 설정하면 Commerce에서 기본적으로 동작 데이터를 수집합니다.
 
 ## 설치
 

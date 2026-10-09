@@ -2,16 +2,25 @@
 title: 업그레이드를 위한 유지 관리 모드 옵션
 description: 업그레이드를 실행하는 동안 고객이 Adobe Commerce 상점 첫 화면에서 볼 수 있는 사용자 지정 유지 관리 모드 페이지를 만듭니다.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
-
 ---
-
 # 업그레이드를 위한 유지 관리 모드 옵션
 
-이 항목에서는 Magento 애플리케이션을 업그레이드하는 동안 사용자에게 표시할 사용자 지정 유지 관리 페이지를 만드는 방법에 대해 설명합니다. 사용자 지정 페이지 만들기는 선택 사항이지만 업그레이드 과정에서 사이트에 액세스할 수 있으므로 권장됩니다.
+이 항목에서는 Magento 응용 프로그램을 업그레이드하는 동안 사용자에게 표시할 사용자 지정 유지 관리 페이지를 만드는 방법에 대해 설명합니다. 사용자 지정 페이지 만들기는 선택 사항이지만 업그레이드 과정에서 사이트에 액세스할 수 있으므로 권장됩니다.
 
 사용자를 리디렉션할 사용자 지정 페이지를 만들면 사이트에 대한 액세스가 차단되고 사이트가 유지 관리 중임을 사용자에게 알립니다.
 
@@ -107,7 +116,7 @@ body
 1. 텍스트 편집기를 사용하여 서버 블록이 포함된 nginx 구성 파일을 엽니다.
 1. 서버 블록에 다음 내용을 추가하십시오. `server`은(는) 명확하게 하기 위해서만 표시되며, 두 번째 서버 블록은 추가하지 마십시오.
 
-   `/var/www/html/magento2`에 Magento이 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.110 및 192.0.2.115:
+   `/var/www/html/magento2`에 Magento가 설치된 시스템의 다음 허용 목록 IP 주소 192.0.2.110 및 192.0.2.115:
 
    ```conf
    server {

@@ -4,13 +4,27 @@ description: Adobe Commerce 프로젝트의 계획 단계에 대한 구현 모�
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
-
 ---
-
 # 계획 단계
 
 계획 단계에는 다음 활동이 포함됩니다.
@@ -46,7 +60,7 @@ ht-degree: 1%
     <td>Adobe Commerce 사이트에 대한 5가지 가장 일반적인 구성 문제를 수정하고 방지합니다.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ko">캐싱</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">캐싱</a></td>
     <td>캐시 관리 도구를 사용하여 사이트의 성능을 향상시킵니다.</td>
   </tr>
   <tr>
@@ -76,7 +90,7 @@ ht-degree: 1%
     <td colspan="2"><em>서비스 구성</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Fastly 설정</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Fastly 설정</a></td>
     <td>클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 Fastly 서비스를 구성합니다.</td>
   </tr>
   <tr>

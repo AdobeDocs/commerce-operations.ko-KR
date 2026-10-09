@@ -3,13 +3,27 @@ title: 배포 개요
 description: Commerce 애플리케이션의 배포 전략에 대해 알아보십시오.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 # 배포 개요
 
 이 항목에서는 Adobe Commerce 버전 2.2 이상의 프로덕션 사이트에 Commerce 애플리케이션을 배포하는 프로세스에 대해 설명합니다. Adobe은 배포 중에 가동 중단을 경험하지 않으려는 대규모 사이트를 보유한 사용자에게 이 배포 방법을 권장합니다.

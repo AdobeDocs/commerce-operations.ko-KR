@@ -2,13 +2,22 @@
 title: 개발 환경 권장 사항
 description: Adobe Commerce의 개발 환경 권장 사항에 대해 알아봅니다. 구현 지침 및 최적화 전략을 살펴보십시오.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
-
 ---
-
 # 개발 환경 권장 사항
 
 이 페이지에서는 Commerce 개발 환경에 대한 권장 사항을 제공합니다.
@@ -31,7 +40,7 @@ ht-degree: 0%
   bin/magento setup:di:compile
   ```
 
-  개발 모드에서 Magento은 주문형 생성을 수행하므로 실행할 필요가 없습니다. 클래스의 서명을 수정했으며 자동 생성된 `factories/proxies/interceptors`을(를) 다시 생성해야 하는 경우 해당 클래스 또는 _생성된_ 폴더를 제거하십시오.
+  개발 모드에서 Magento는 주문형 생성을 수행하므로 실행할 필요가 없습니다. 클래스의 서명을 수정했으며 자동 생성된 `factories/proxies/interceptors`을(를) 다시 생성해야 하는 경우 해당 클래스 또는 _생성된_ 폴더를 제거하십시오.
 
 * `setup:static-content:deploy`이(가) 저장소에 대한 정적 콘텐츠를 배포합니다.
 
@@ -39,7 +48,7 @@ ht-degree: 0%
   bin/magento setup:static-content:deploy
   ```
 
-  개발 모드에서 Magento은 온디맨드로 수행하므로 실행할 필요가 없습니다.
+  개발 모드에서 Magento는 온디맨드로 이 작업을 수행하므로 실행할 필요가 없습니다.
 
 ## 가상 컴퓨터의 일반 페이지 로드 시간
 

@@ -2,13 +2,22 @@
 title: 증분 ID 변경
 description: 사이트를 병합하거나 복원할 때 SQL을 사용하여 주문, 송장, 대변 메모 및 기타 Commerce 데이터베이스 엔터티의 증분 ID를 변경하는 방법에 대해 알아봅니다.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # 증분 ID 변경
 
 이 문서에서는 `ALTER TABLE` SQL 문을 사용하여 특정 Commerce 저장소의 Commerce 데이터베이스(DB) 엔터티(주문, 송장, 메모 등)에 대한 증분 ID를 변경하는 방법에 대해 설명합니다.
@@ -28,7 +37,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. _기술 자료_&#x200B;에서 [PayPal 게이트웨이 거부 요청 - 중복 송장 문제](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-26838)를 참조하십시오.
+>또한 PayPal의 지급 입고 환경설정에서 송장 ID당 복수 지급을 허용하여 PayPal에 대한 지급 게이트웨이 문제를 해결할 수 있습니다. _기술 자료_&#x200B;에서 [PayPal 게이트웨이 거부 요청 - 중복 송장 문제](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838)를 참조하십시오.
 
 ## 전제 조건 단계
 

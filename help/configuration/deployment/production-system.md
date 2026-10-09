@@ -2,13 +2,22 @@
 title: 프로덕션 시스템 설정
 description: Commerce 애플리케이션의 프로덕션 시스템을 설정하는 방법을 알아봅니다.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # 프로덕션 시스템 설정
 
 하나의 프로덕션 시스템을 가질 수 있습니다. 다음 사항은 모두 true여야 합니다.
@@ -16,11 +25,11 @@ ht-degree: 0%
 - 모든 Commerce 코드는 개발 및 빌드 시스템과 동일한 저장소의 소스 제어에 있습니다
 - 소스 제어에 다음 항목이 모두 _포함_&#x200B;되어 있는지 확인하십시오.
 
-   - `app/etc/config.php`
-   - `generated` 디렉터리(및 하위 디렉터리)
-   - `pub/media` 디렉터리
-   - `pub/media/wysiwyg` 디렉터리(및 하위 디렉터리)
-   - `pub/static` 디렉터리(및 하위 디렉터리)
+  - `app/etc/config.php`
+  - `generated` 디렉터리(및 하위 디렉터리)
+  - `pub/media` 디렉터리
+  - `pub/media/wysiwyg` 디렉터리(및 하위 디렉터리)
+  - `pub/static` 디렉터리(및 하위 디렉터리)
 
 - Commerce 2.2 이상을 설치하고 [프로덕션 모드](../bootstrap/application-modes.md#production-mode)에 대해 설정해야 합니다.
 - [개발, 빌드 및 프로덕션 시스템에 대한 필수 구성 요소](../deployment/prerequisites.md)에서 설명한 대로 파일 시스템 소유권 및 사용 권한이 설정되어 있습니다.

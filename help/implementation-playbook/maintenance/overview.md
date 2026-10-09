@@ -3,13 +3,25 @@ title: 유지 관리 및 지원 개요
 description: 새로 시작한 Adobe Commerce 구현을 적절하게 유지 관리하고 지원합니다.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # 유지 관리 및 지원 개요
 
 소비자들은 이미 그 어느 때보다 선택의 폭이 넓어졌다. 브랜드가 관심을 받기 위해 경쟁하는 데 부족함이 없는 상황에서, 당신은 소비자들에게 당신의 경쟁자들을 바라볼 어떠한 이유도 줄 수 없다. 우리가 보았듯이, 소비자에 대한 충성도와 인내는 희박하다. 그들이 당신의 브랜드를 포기하는 데 많은 비용이 들지 않고, 나쁜 전자 상거래 경험을 갖는 것은 그들이 포기하기 쉬운 방법입니다.
@@ -33,5 +45,5 @@ ht-degree: 0%
 플랫폼 및 상거래 관행을 지속적으로 개선하고 최적화하기 위해 비즈니스에 적합한 지원 모델을 파악하는 것은 구현 프로세스 동안 수행한 모든 수고를 유지 관리하는 중요한 단계입니다. 포괄적인 지속적인 지원 계획을 통해 상거래 사이트는 고객의 기대에 부응할 수 있으며 목표를 계속 달성할 수 있습니다.
 
 Adobe Commerce을 배포할 때에는 유지 관리 및 지원 전략에 포함할 내용을 고려하는 것이 중요합니다.
-Adobe Commerce 라이선스에는 전문가 지원이 포함되어 있습니다. 전문가 지원 및 Adobe 지원 계획에 대한 자세한 내용은 [Adobe 지원 계획](https://business.adobe.com/kr/customers/consulting-services/premier-support.html)을 참조하세요.
+Adobe Commerce 라이선스에는 전문가 지원이 포함되어 있습니다. 전문가 지원 및 Adobe 지원 계획에 대한 자세한 내용은 [Adobe 지원 계획](https://business.adobe.com/customers/consulting-services/premier-support.html)을 참조하세요.
 Adobe 지원 플랜 외에도 레거시 Magento 지원 약관이 있습니다. 적용 가능한 지원 서비스를 이해하려면 계약을 참조하여 보유하고 있는 지원 계약을 확인하거나 Adobe 계정 팀에 문의하십시오.

@@ -1,15 +1,29 @@
 ---
-title: ' [!DNL Observation for Adobe Commerce] nerdlet을 사용하는 방법'
-description: ' [!DNL Observation for Adobe Commerce] nerdlet을 사용하는 방법을 알아봅니다.'
+title: '[!DNL Observation for Adobe Commerce] Nerdlet을 사용하는 방법'
+description: '[!DNL Observation for Adobe Commerce] Nerdlet을 사용하는 방법을 알아봅니다.'
 exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '631'
 ht-degree: 0%
-
 ---
-
 # [!DNL Observation for Adobe Commerce] Nerdlet을 사용하는 방법
 
 ## 일반적인 문제 확인 방법
@@ -18,28 +32,28 @@ ht-degree: 0%
 
 * **[!UICONTROL Storage Free and MySQL % free storage by node]**&#x200B;개 프레임의 비율을 검사합니다.
 
-   * 저장 공간이 부족하면 프레임 헤더에 있는 링크를 따르십시오.
+  * 저장 공간이 부족하면 프레임 헤더에 있는 링크를 따르십시오.
 
 * **[!UICONTROL free system memory and Swap memory free in bytes]**&#x200B;개 프레임의 비율을 검사합니다.
 
-   * 이러한 메모리 상태가 매우 낮으면 문제의 원인이 될 수 있습니다.
+  * 이러한 메모리 상태가 매우 낮으면 문제의 원인이 될 수 있습니다.
 
 * **[!UICONTROL Alerts during the timeframe]** 프레임을 검사합니다.
 
-   * 클라우드 인프라의 Adobe Commerce에서 [!DNL Managed alerts]을(를) 제공합니다. 헤더의 링크를 클릭하면 특정 경고에 대한 작업을 결정하는 데 도움이 되는 [!DNL Support Knowledge Base]개의 문서를 볼 수 있습니다.
+  * 클라우드 인프라의 Adobe Commerce에서 [!DNL Managed alerts]을(를) 제공합니다. 헤더의 링크를 클릭하면 특정 경고에 대한 작업을 결정하는 데 도움이 되는 [!DNL Support Knowledge Base]개의 문서를 볼 수 있습니다.
 
 * **[!UICONTROL CPU % by host]** 프레임 검사: CPU 사용률이 높은 경우 헤더의 [!DNL Support Knowledge Base] 문서에서 프레임을 확인하십시오. 또한 트래픽 피크 기간 동안 데이터베이스 가져오기/내보내기 또는 백업이 수행되지 않는지 확인하십시오.
 
 * **[!UICONTROL Web Traffic volume compared to one week ago]** 프레임 확인: 같은 기간 동안 이전 주보다 트래픽이 훨씬 높은 경우 이에 대해 설명할 수 있습니까(예: 판매 캠페인 또는 마케팅된 새 제품)?
-   * 트래픽 증가를 설명할 수 없는 경우 프로덕션 환경의 평균 응답 시간(밀리초)을 확인합니다. 응답 시간에 기여하는 트래픽이 높을수록 일반적인 트래픽과 다릅니까? 시간대를 확장하여 예외 항목인지 확인합니다.
-   * 트래픽 증가가 웹 트랜잭션에 영향을 줍니까? **[!UICONTROL Response Code]** 프레임에서 오류를 확인합니다. 사이트가 다운된 경우 프레임 헤더의 `Site Down?` 링크를 클릭할 수 있습니다. 프레임은 발생하는 모든 오류와 그 빈도를 식별합니다.
-   * 누군가가 귀하의 웹 사이트에 변경 사항을 배포했습니까? **[!UICONTROL Deployment Log Entries]** 프레임은 문제 일정 동안 배포가 수행되었는지 여부를 나타냅니다. 배포 직후에 문제가 발생하면 배포 활동이 사이트에 추가 로드(캐시 지우기, 서비스 다시 시작 등)를 추가하고 있을 수 있습니다.
-   * 업사이징이나 다운사이징이 발생했습니까? 사이트가 일시적으로 업사이징된 경우 원래 클러스터 크기로 반환되었을 수 있습니다. 사이트 용량을 늘려야 한다는 요청이 있으면 업사이징이 발생할 수 있습니다. **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** 프레임을 확인하십시오. 이 프레임은 때로 하나의 특정 노드에서 중단을 감지합니다. 크기가 감소하면 하나 이상의 노드에 문제가 있을 수 있습니다.
+  * 트래픽 증가를 설명할 수 없는 경우 프로덕션 환경의 평균 응답 시간(밀리초)을 확인합니다. 응답 시간에 기여하는 트래픽이 높을수록 일반적인 트래픽과 다릅니까? 시간대를 확장하여 예외 항목인지 확인합니다.
+  * 트래픽 증가가 웹 트랜잭션에 영향을 줍니까? **[!UICONTROL Response Code]** 프레임에서 오류를 확인합니다. 사이트가 다운된 경우 프레임 헤더의 `Site Down?` 링크를 클릭할 수 있습니다. 프레임은 발생하는 모든 오류와 그 빈도를 식별합니다.
+  * 누군가가 귀하의 웹 사이트에 변경 사항을 배포했습니까? **[!UICONTROL Deployment Log Entries]** 프레임은 문제 일정 동안 배포가 수행되었는지 여부를 나타냅니다. 배포 직후에 문제가 발생하면 배포 활동이 사이트에 추가 로드(캐시 지우기, 서비스 다시 시작 등)를 추가하고 있을 수 있습니다.
+  * 업사이징이나 다운사이징이 발생했습니까? 사이트가 일시적으로 업사이징된 경우 원래 클러스터 크기로 반환되었을 수 있습니다. 사이트 용량을 늘려야 한다는 요청이 있으면 업사이징이 발생할 수 있습니다. **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** 프레임을 확인하십시오. 이 프레임은 때로 하나의 특정 노드에서 중단을 감지합니다. 크기가 감소하면 하나 이상의 노드에 문제가 있을 수 있습니다.
 
 * **[!UICONTROL IP Frequency]** 탭은 원본 서버에 대해 수행된 IP 주소에서 요청 빈도를 식별합니다(즉, [!DNL Fastly]에서 캐시되지 않은 요청이 74로 제공될 수 없음).
 
-   * [!DNL Fastly] 관련 문제에 대해 **[!UICONTROL Fastly Cache]** 프레임을 확인하고 오류 패싯을 선택하여 오류인 요청의 비율을 확인합니다. 비웹 로드와 일치하는 경우 백엔드 문제를 나타낼 수 있습니다.
-   * 웹 트래픽으로 인해 로드가 발생하지 않는 경우 느린 쿼리 또는 [!DNL crons]과 같은 비웹 요청의 빌드업이나 오류가 발생할 수 있습니다.
+  * [!DNL Fastly] 관련 문제에 대해 **[!UICONTROL Fastly Cache]** 프레임을 확인하고 오류 패싯을 선택하여 오류인 요청의 비율을 확인합니다. 비웹 로드와 일치하는 경우 백엔드 문제를 나타낼 수 있습니다.
+  * 웹 트래픽으로 인해 로드가 발생하지 않는 경우 느린 쿼리 또는 [!DNL crons]과 같은 비웹 요청의 빌드업이나 오류가 발생할 수 있습니다.
 
 * 문제/문제 타임라인과 일치할 수 있는 오류에 대해서는 **[!UICONTROL Database Errors]** 프레임을 확인하십시오.
 * 발생하는 SQL 문을 식별하려면 **[!UICONTROL Database mysql-slow.log]** 프레임을 확인하십시오. 쿼리가 최적화되지 않은 경우 `INSERT`, `UPDATE` 및 `DELETE` 명령에 시간이 걸릴 수 있습니다. 큰 테이블에 대해 `SELECT` 문을 수행하면 매우 비효율적일 수 있습니다.

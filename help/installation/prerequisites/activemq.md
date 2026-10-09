@@ -1,13 +1,22 @@
 ---
 title: 메시지 브로커(ActiveMQ Artemis)
 description: Adobe Commerce의 온-프레미스 설치를 위한 Apache ActiveMQ Artemis 메시지 브로커를 설치하고 구성하려면 다음 단계를 따르십시오.
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # 메시지 브로커(ActiveMQ Artemis)
 
 Adobe Commerce은 STOMP(Simple Text Oriented Messaging Protocol)를 통해 ActiveMQ Artemis 오픈 소스 메시지 브로커도 지원합니다. 안정적이고 확장 가능한 메시징 시스템을 제공하여 STOMP 기반 통합을 위한 유연성을 제공합니다.
@@ -15,7 +24,7 @@ Adobe Commerce은 STOMP(Simple Text Oriented Messaging Protocol)를 통해 Activ
 
 >[!NOTE]
 >
->ActiveMQ Artemis는 Adobe Commerce 2.4.5 이상 버전에서 도입되었습니다. 클라우드 인프라 프로젝트의 Adobe Commerce에 ActiveMQ Artemis를 설치하는 방법에 대한 자세한 내용은 *Cloud의 Commerce 안내서*&#x200B;에서 [ActiveMQ 서비스 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/activemq)을 참조하십시오.
+>ActiveMQ Artemis는 Adobe Commerce 2.4.5 이상 버전에서 도입되었습니다. 클라우드 인프라 프로젝트의 Adobe Commerce에 ActiveMQ Artemis를 설치하는 방법에 대한 자세한 내용은 *Cloud의 Commerce 안내서*&#x200B;에서 [ActiveMQ 서비스 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)을 참조하십시오.
 
 메시지 큐는 메시지의 발신자와 수신자가 서로 접촉하지 않는 비동기 통신 메커니즘을 제공한다. 메시지 대기열과 동시에 통신할 필요도 없습니다. 보낸 사람이 메시지를 대기열에 넣으면 받는 사람이 메시지를 받을 때까지 저장됩니다.
 
@@ -98,7 +107,7 @@ docker rm artemis
 
 Docker 컨테이너가 실행되면 다음에 액세스할 수 있습니다.
 
-- **웹 콘솔**: http://localhost:8161/console(기본 자격 증명: artemis/artemis)
+- **웹 콘솔**: http://localhost:8161/console (기본 자격 증명: artemis/artemis)
 - **STOMP 포트**: localhost:61613(Adobe Commerce 연결용)
 
 >[!NOTE]

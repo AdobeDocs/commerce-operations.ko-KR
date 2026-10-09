@@ -4,13 +4,23 @@ description: MySQL 트리거 및 슬레이브 연결이 Commerce 사이트 성�
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
-
 ---
-
 # MySQL 구성 모범 사례
 
 >[!NOTE]
@@ -48,7 +58,7 @@ ht-degree: 0%
 
 - 트리거가 실행될 때 일부 데이터를 작성하는 사용자 지정 트리거가 있는 경우 이 논리를 이동하여 감사 테이블에 직접 작성합니다. 예를 들어, 트리거를 만들려는 쿼리 뒤에 애플리케이션 코드에 쿼리를 추가하여 추가합니다.
 - 기존 사용자 지정 트리거를 검토하고 이를 제거하여 애플리케이션 측에서 테이블에 직접 작성하는 것이 좋습니다. [`SHOW TRIGGERS` SQL 문](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)을(를) 사용하여 데이터베이스에서 기존 트리거를 확인합니다.
-- 추가 지원, 질문 또는 우려 사항은 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)하십시오.
+- 추가 지원, 질문 또는 우려 사항은 [Adobe Commerce 지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)하십시오.
 
 ## 슬레이브 연결
 
@@ -62,7 +72,7 @@ MYSQL 슬레이브 연결을 활성화하면 Adobe Commerce은 데이터베이�
 
 ### 구성
 
-클라우드 인프라의 Adobe Commerce에서 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) 변수를 설정하여 MYSQL 슬레이브 연결에 대한 기본 구성을 재정의할 수 있습니다. 데이터베이스에 대한 읽기 전용 연결을 자동으로 사용하려면 이 변수를 `true`(으)로 설정하십시오.
+클라우드 인프라의 Adobe Commerce에서 [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) 변수를 설정하여 MYSQL 슬레이브 연결에 대한 기본 구성을 재정의할 수 있습니다. 데이터베이스에 대한 읽기 전용 연결을 자동으로 사용하려면 이 변수를 `true`(으)로 설정하십시오.
 
 **MySQL 슬레이브 연결을 사용하도록 설정하려면**:
 

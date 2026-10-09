@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL Redis] 탭'
-description: '[!UICONTROL Redis]의  [!DNL Observation for Adobe Commerce] 탭에 대해 알아봅니다.'
+description: '[!DNL Observation for Adobe Commerce]의 [!UICONTROL Redis] 탭에 대해 알아봅니다.'
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '256'
 ht-degree: 0%
-
 ---
-
 # [!DNL Redis] 탭
 
 ## [!UICONTROL Redis Node summary]
@@ -58,7 +72,7 @@ ht-degree: 0%
 
 ![마지막 DB 저장 이후 변경 내용 수정](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis]은(는) 메모리에 상주하며 정보를 저장소에 저장합니다. **[!UICONTROL Redis changes since last db save]** 프레임은 마지막 데이터베이스가 저장소에 저장된 이후에 발생한 메모리 변경 사항의 수를 나타냅니다. [&#x200B; 지속성에 대한 자세한 내용은 &#x200B;](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)Redis 지속성[!DNL Redis's]을 참조하세요.
+[!DNL Redis]은(는) 메모리에 상주하며 정보를 저장소에 저장합니다. **[!UICONTROL Redis changes since last db save]** 프레임은 마지막 데이터베이스가 저장소에 저장된 이후에 발생한 메모리 변경 사항의 수를 나타냅니다. [!DNL Redis's] 지속성에 대한 자세한 내용은 [Redis 지속성](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)을 참조하세요.
 
 ## [!UICONTROL Redis synchronization from Log]
 

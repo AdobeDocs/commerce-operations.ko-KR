@@ -1,13 +1,22 @@
 ---
-title: ' [!DNL Adobe Commerce Patching Automation]에 대한 GitHub 통합 설정'
-description: GitHub에 연결된 Adobe Commerce Cloud 프로젝트에 대한 패치 작업을 활성화하기 위해  [!DNL Adobe Commerce Patching Automation] GitHub 앱을 설치하는 방법을 알아봅니다.
-source-git-commit: bc614967131d4458e004a06baa94bbe9261c4cee
+title: '[!DNL Adobe Commerce Patching Automation]에 대한 GitHub 통합 설정'
+description: GitHub에 연결된 Adobe Commerce Cloud 프로젝트에 대한 패치 작업을 활성화하기 위해 [!DNL Adobe Commerce Patching Automation] GitHub 앱을 설치하는 방법을 알아봅니다.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
-
 ---
-
 
 # [!DNL Patching Automation]에 대한 GitHub 통합 설정
 
@@ -16,7 +25,7 @@ Adobe Commerce Cloud 프로젝트가 GitHub 리포지토리에 연결되어 있�
 ## 사전 요구 사항
 
 * 활성 Adobe Commerce Cloud 구독
-* [GitHub 통합](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)이(가) [`fetch-branches` 옵션을 사용하도록 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)한 상태로 Adobe Commerce Cloud 프로젝트에 대해 이미 구성되었습니다. [!DNL Patching Automation]이(가) 임시 통합 환경 분기를 만들고 푸시하므로 이 옵션을 사용하지 않도록 설정하면 패치 작업에서 환경을 만들지 못합니다.
+* [GitHub 통합](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)이(가) [`fetch-branches` 옵션을 사용하도록 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)한 상태로 Adobe Commerce Cloud 프로젝트에 대해 이미 구성되었습니다. [!DNL Patching Automation]이(가) 임시 통합 환경 분기를 만들고 푸시하므로 이 옵션을 사용하지 않도록 설정하면 패치 작업에서 환경을 만들지 못합니다.
 * [!DNL github.com]에 호스팅된 리포지토리입니다. 사용자 정의 도메인으로 구성된 GitHub 통합은 지원되지 않습니다.
 * GitHub 조직 또는 저장소에 대한 소유자 또는 관리자 액세스
 

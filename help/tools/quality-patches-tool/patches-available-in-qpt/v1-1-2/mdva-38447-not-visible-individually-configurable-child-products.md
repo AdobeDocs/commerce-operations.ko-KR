@@ -1,17 +1,44 @@
 ---
 title: 'MDVA-38447: "개별적으로 표시되지 않음" 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 MySQL 쿼리가 느려집니다.'
-description: MDVA-38447 Adobe Commerce 패치를 사용하면 "개별적으로 보이지 않음" 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 범주 필터를 사용하여 GraphQL 제품 쿼리에 대한 MySQL 쿼리가 느려지는 문제가 해결됩니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38447입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
+description: MDVA-38447 Adobe Commerce 패치를 사용하면 "개별적으로 보이지 않음" 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 범주 필터를 사용하여 GraphQL 제품 쿼리에 대한 MySQL 쿼리가 느려지는 문제가 해결됩니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-38447입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
 exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 1%
-
 ---
-
 # MDVA-38447: &quot;개별적으로 표시되지 않음&quot; 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 MySQL 쿼리가 느려집니다.
 
 MDVA-38447 Adobe Commerce 패치를 사용하면 &quot;개별적으로 보이지 않음&quot; 구성 가능한 하위 제품이 GraphQL 응답에서 반환되고 범주 필터를 사용하여 GraphQL 제품 쿼리에 대한 MySQL 쿼리가 느려지는 문제가 해결됩니다. 이 패치는 [품질 패치 도구(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.2가 설치된 경우에 사용할 수 있습니다. 패치 ID는 MDVA-38447입니다. 이 문제는 Adobe Commerce 2.4.4에서 수정됩니다.
@@ -50,30 +77,30 @@ B2B 모듈을 설치해야 합니다.
   $search: 문자열
   $pageSize: 정수!
   $currentPage: Int!
-) &lbrace;
+) {
   products(
     필터: $filter
     정렬: $sort
     검색: $search
     pageSize: $pageSize
     currentPage: $currentPage
-  ) &lbrace;
+  ) {
     total_count
-    page_info &lbrace;
+    page_info {
       total_pages
       current_page
       page_size
-    &rbrace;
-    항목 &lbrace;
+    }
+    항목 {
       이름
       sku
-    &rbrace;
-  &rbrace;
-&rbrace;</pre>
+    }
+  }
+}</pre>
 
 변수:
 
-<pre>{"filter":{"user_group":{"eq":"}&#x200B;},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
+<pre>{"filter":{"user_group":{"eq":"}},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
 </pre>
 
 <u>예상 결과</u>:
@@ -89,7 +116,7 @@ B2B 모듈을 설치해야 합니다.
 개별 패치를 적용하려면 배포 유형에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
 
 ## 관련 읽기
 
@@ -98,4 +125,4 @@ Adobe Commerce용 품질 패치에 대한 자세한 내용은 다음을 참조�
 * [품질 패치 도구 릴리스: 지원 기술 자료에서 품질 패치를 자체 제공하는 새로운 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
 * [!DNL Quality Patches Tool] 안내서에서 [품질 패치 도구를 사용하여 Adobe Commerce 문제에 패치를 사용할 수 있는지 확인](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko) 섹션을 참조하십시오.
+QPT에서 사용할 수 있는 다른 패치에 대한 정보는 [QPT에서 사용할 수 있는 패치](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 섹션을 참조하십시오.

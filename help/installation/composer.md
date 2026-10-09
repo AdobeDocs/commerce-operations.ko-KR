@@ -2,13 +2,22 @@
 title: 온프레미스 설치 빠른 시작
 description: Composer를 사용하여 자체 인프라에 Adobe Commerce을 설치하는 방법을 알아봅니다. 빠른 시작 단계 및 구성 요구 사항을 살펴봅니다.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
-
 ---
-
 # 온프레미스 설치 빠른 시작
 
 이 페이지의 지침에서는 자체 호스팅 인프라에 Adobe Commerce을 설치하는 방법을 설명합니다. 기존 설치 업그레이드에 대한 지침은 [_업그레이드 안내서_](../upgrade/overview.md)&#x200B;를 참조하십시오.
@@ -93,7 +102,7 @@ Adobe Commerce 메타패키지를 가져오려면 다음을 수행하십시오.
 
    >[!NOTE]
    >
-   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
+   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
 
    `Could not find package...` 또는 `...no matching package found`과(와) 같은 오류가 발생하면 명령에 오타가 없는지 확인하십시오. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 도움이 필요하면 [Adobe Commerce 지원](https://support.magento.com/hc/en-us)에 문의하십시오.
 

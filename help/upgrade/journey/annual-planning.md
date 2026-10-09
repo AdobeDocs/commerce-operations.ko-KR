@@ -2,13 +2,22 @@
 title: 연간 업그레이드 계획
 description: Adobe Commerce 프로젝트에 대한 연간 업그레이드 계획 수립을 위한 팁을 검토하십시오.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
-
 ---
-
 # 연간 업그레이드 계획
 
 많은 회사들이 연간 예산과 로드맵으로 일하고 있다. 이러한 연간 토론에서는 비즈니스의 전반적인 목표 및 주요 성과 지표(KPI)에 어떻게 적합한지 그 해의 플랫폼 상태, 방향 및 업그레이드 전략에 대해 언급하는 것이 중요합니다.
