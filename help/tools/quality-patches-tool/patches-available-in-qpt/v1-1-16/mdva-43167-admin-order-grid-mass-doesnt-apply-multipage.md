@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43167: 관리자 주문 그리드 일괄 작업이 다중 페이지에 적용되지 않음'
-description: MDVA-43167 패치는 관리자 사용자가 모든 주문을 선택할 때 관리자 주문 그리드 일괄 작업이 다중 페이지에 적용되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43167입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+description: MDVA-43167 패치는 관리자 사용자가 모든 주문을 선택할 때 관리자 주문 그리드 일괄 작업이 다중 페이지에 적용되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.16이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43167입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
