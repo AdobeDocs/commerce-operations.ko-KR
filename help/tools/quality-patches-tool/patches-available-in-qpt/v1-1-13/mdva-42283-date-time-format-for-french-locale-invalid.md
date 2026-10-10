@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42283: 프랑스어 로케일의 날짜-시간 형식이 잘못되었습니다.'
-description: MDVA-42283 패치는 프랑스어 로케일에 대한 관리 순서 그리드의 날짜-시간 형식이 잘못된 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42283입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
+description: MDVA-42283 패치는 프랑스어 로케일에 대한 관리 순서 그리드의 날짜-시간 형식이 잘못된 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42283입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: CMS
 role: Admin
 exl-id: ed99519d-03e2-444b-9cd1-e5c6e6d2ac2d

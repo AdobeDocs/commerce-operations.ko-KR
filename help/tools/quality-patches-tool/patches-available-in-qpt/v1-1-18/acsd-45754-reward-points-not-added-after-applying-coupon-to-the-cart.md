@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45754: 장바구니에 쿠폰을 적용한 후 보상 포인트가 추가되지 않음'
-description: ACSD-45754 패치는 장바구니에 쿠폰을 적용한 후 보상 포인트가 추가되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-45754입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
+description: ACSD-45754 패치는 장바구니에 쿠폰을 적용한 후 보상 포인트가 추가되지 않는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18이 설치된 경우 사용할 수 있습니다. 패치 ID는 ACSD-45754입니다. 이 문제는 Adobe Commerce 2.4.6에서 수정됩니다.
 feature: Orders, Rewards, Shopping Cart
 role: Admin
 exl-id: 02f3bfc4-440b-4d77-adf5-0824d1b21073

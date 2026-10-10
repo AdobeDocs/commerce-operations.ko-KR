@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43414: "inventory.reservations.updateSalabilityStatus"를 실행할 때 PHP 치명적인 오류 발생'
-description: MDVA-43414 패치는 숫자 SKU에서 'inventory.reservations.updateSalabilityStatus' 큐 소비자를 실행할 때 발생하는 PHP 치명적 오류를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43414입니다. 이 문제는 Adobe Commerce 2.4.2에서 해결되었습니다.
+description: MDVA-43414 패치는 숫자 SKU에서 'inventory.reservations.updateSalabilityStatus' 큐 소비자를 실행할 때 발생하는 PHP 치명적 오류를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-43414입니다. 이 문제는 Adobe Commerce 2.4.2에서 해결되었습니다.
 feature: Inventory, Orders
 role: Admin
 exl-id: 893a5665-ff1b-4862-a984-d9abf642fba3

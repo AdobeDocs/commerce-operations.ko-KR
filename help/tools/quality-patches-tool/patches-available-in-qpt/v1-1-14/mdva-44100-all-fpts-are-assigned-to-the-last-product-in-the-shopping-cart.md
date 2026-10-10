@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44100: 장바구니에 있는 마지막 제품에 모든 FPT가 할당됨'
-description: MDVA-44100 패치는 모든 FPT가 장바구니의 마지막 제품에 할당되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-44100입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
+description: MDVA-44100 패치는 모든 FPT가 장바구니의 마지막 제품에 할당되는 문제를 해결합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14가 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-44100입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: b370dcbb-cbe9-4f5d-9b8f-1722ab521fcb

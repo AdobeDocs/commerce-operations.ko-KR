@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42520: "국경 간 거래 활성화"를 사용할 때 세율이 두 번 적용됨'
-description: MDVA-42520 패치는 **국가 간 거래 활성화**를 사용할 때 세율이 두 번 적용되는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42520입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
+description: MDVA-42520 패치는 **국가 간 거래 활성화**를 사용할 때 세율이 두 번 적용되는 문제를 수정합니다. 이 패치는 [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11이 설치된 경우 사용할 수 있습니다. 패치 ID는 MDVA-42520입니다. 이 문제는 Adobe Commerce 2.4.5에서 수정됩니다.
 feature: Catalog Management, Orders, Taxes
 role: Admin
 exl-id: 34c101fd-3a47-4877-8a41-ccaeaa010969
