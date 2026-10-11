@@ -3,14 +3,28 @@ title: PHP 설정
 description: 다음 단계에 따라 필요한 PHP 확장 프로그램을 설치하고 Adobe Commerce의 온프레미스 설치에 필요한 PHP 설정을 구성합니다.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-05-12
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
-
 ---
-
 
 # PHP 설정
 
@@ -20,7 +34,7 @@ ht-degree: 0%
 >
 >지원되는 PHP 버전은 Adobe Commerce 릴리스에 따라 다릅니다. 설치 중인 릴리스에서 지원하는 정확한 PHP 버전은 [시스템 요구 사항](../system-requirements.md)을 참조하십시오.
 
-클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
+클라우드 구성 지침은 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
 
 ## PHP 프로세스 제어
 
@@ -207,8 +221,8 @@ PHP 옵션을 설정하려면 다음을 수행합니다.
 PHP 문제 해결에 대한 도움말은 다음 Adobe Commerce 지원 문서를 참조하십시오.
 
 - [브라우저에서 Adobe Commerce에 액세스할 때 PHP 버전 오류 또는 404 오류 발생](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP 설정 오류](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHP 버전 준비 확인 문제](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [일반적인 PHP 치명적인 오류 및 솔루션](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP 설정 오류](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHP 버전 준비 확인 문제](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [일반적인 PHP 치명적인 오류 및 솔루션](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2026-05-11 20:38:54 -->

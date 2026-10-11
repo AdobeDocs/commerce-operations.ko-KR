@@ -3,14 +3,23 @@ title: 릴리스된 버전
 description: Adobe Commerce의 특정 버전이 언제 릴리스되었는지 알아봅니다.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-last-update: 2026-08-12T00:00:00Z
-source-git-commit: 74ce0344595bdf33e84840a1d7ba7a3835b203b2
+last-update: 2026-08-12
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
-
 ---
-
 # 릴리스된 버전
 
 이 페이지에는 Adobe Commerce의 릴리스된 버전이 나열됩니다. 모든 부, 패치 및 보안 릴리스에 대한 릴리스 날짜와 **_regular_** 지원 종료 날짜가 들어 있습니다. **_확장_** 지원이 종료되는 날짜는 나열되지 않습니다.
@@ -24,8 +33,8 @@ Adobe은 버전 2.4.4 및 2.4.5에서 Adobe Commerce 고객을 위해 추가 비
 >[!NOTE]
 >
 >- Adobe은 각 릴리스에 사용할 수 있는 최신 보안 패치로 Adobe Commerce을 설치하거나 업그레이드할 것을 권장합니다.
->- 다른 보안 업데이트는 [Magento/Adobe Commerce에 대한 보안 업데이트](https://helpx.adobe.com/kr/security/products/magento.html)를 참조하십시오.
->- 가격은 [Adobe Commerce 가격](https://business.adobe.com/kr/products/magento/pricing.html)을 참조하세요.
+>- 다른 보안 업데이트는 [Magento/Adobe Commerce 보안 업데이트](https://helpx.adobe.com/security/products/magento.html)를 참조하십시오.
+>- 가격은 [Adobe Commerce 가격](https://business.adobe.com/products/magento/pricing.html)을 참조하세요.
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 

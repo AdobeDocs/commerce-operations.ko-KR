@@ -3,14 +3,26 @@ title: 구현 단계
 description: Adobe Commerce 프로젝트의 구현 단계에 대한 모범 사례에 대해 알아봅니다.
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
-last-update: 2026-01-20T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-01-20
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
-
 ---
-
 # 구현 모범 사례
 
 Adobe Commerce 프로젝트를 구현하는 방법에는 여러 가지가 있습니다. 이 섹션에 제공된 모범 사례에서는 Adobe이 고객과 파트너가 특정 사용 사례를 구현할 것으로 기대하는 방법을 설명합니다. 이러한 권장 사항은 사이트 구성 및 사용자 지정, 배포, 작업, 성능 및 업그레이드와 관련된 일반적인 문제와 잠재적 문제를 방지하는 데 도움이 되도록 설계되었습니다.
