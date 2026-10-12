@@ -2,14 +2,23 @@
 title: 메시지 소비자 구성
 description: 다음 단계에 따라 Adobe Commerce 메시지 대기열 소비자의 동작을 구성합니다.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
-
 ---
-
 # 메시지 소비자 구성
 
 이 명령을 실행하기 전에 다음 *또는*&#x200B;을(를) 수행해야 합니다. [응용 프로그램을 설치](../advanced.md)해야 합니다.
