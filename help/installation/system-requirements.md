@@ -42,7 +42,7 @@ Adobe은 다음 표에 나열된 시스템 요구 사항 조합만 지원합니�
 
 >[!BEGINTABS]
 
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 [클라우드의 Commerce 템플릿](https://github.com/magento/magento-cloud)은(는) 각 릴리스 라인에 대해 최신 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
@@ -73,7 +73,7 @@ Adobe Commerce 온-프레미스 버전 2.4.6, 2.4.5 또는 2.4.4를 실행하는
 
 >[!BEGINTABS]
 
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 {{$include /help/_includes/templated/cloud-requirements-table-alpha.md}}
 
@@ -89,7 +89,7 @@ Adobe Commerce 온-프레미스 버전 2.4.6, 2.4.5 또는 2.4.4를 실행하는
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6은 [2027년 8월 30일부터 ](../release/lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../release/lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
+>Adobe Commerce 2.4.6은 [2027년 8월 30일부터 &#x200B;](../release/lifecycle-policy.md#extended-support)까지 **2028년 5월 31일까지 [보안 전용 전환 기간](../release/lifecycle-policy.md#security-only-transitional-period)부터**&#x200B;까지 **추가 지원을 받습니다.**&#x200B;이 조항은 Adobe Commerce 고객만 사용할 수 있습니다. MySQL과 같은 타사 종속성에 대한 지원은 확장하지 않습니다.
 >
 >클라우드에서 Adobe Commerce을 실행하는 경우 **2028년 6월 1일** [보안 요구 사항 및 기한](../release/security-enforcement-policy.md) 전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션해야 합니다. 전체 라이프사이클 날짜는 [지원 종료 날짜](../release/lifecycle-policy.md#end-of-support-dates) 표를 참조하십시오.
 >
@@ -99,7 +99,7 @@ Adobe Commerce 온-프레미스 버전 2.4.6, 2.4.5 또는 2.4.4를 실행하는
 
 >[!BEGINTABS]
 
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 [Commerce on Cloud 템플릿](https://github.com/magento/magento-cloud)은(는) 특정 Commerce 버전과 호환되는 서비스에 대한 기본 구성을 제공합니다.
 
@@ -164,7 +164,7 @@ OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://
 
 >[!BEGINTABS]
 
->클라우드의 [!TAB Commerce]
+>[!TAB 클라우드의  Commerce]
 
 다음 표에서는 Adobe Commerce을 클라우드 플랫폼에 배포할 때 지원되는 PHP 확장을 보여 줍니다.
 
