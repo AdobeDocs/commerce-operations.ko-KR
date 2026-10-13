@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 06034766e0c2e09e414e1ebc7a5b388a07593406
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 0%
+ht-degree: 1%
 ---
 # 중요 및 시스템별 설정
 
@@ -185,8 +185,8 @@ ht-degree: 0%
 
 이러한 구성 값은 **스토어** > 설정 > **구성** > **카탈로그** > **인벤토리**&#x200B;의 관리자에서 사용할 수 있습니다.
 
-| 이름 | 구성 경로 | Commerce 버전 지원| 암호화되었습니까? | 시스템별? | 중요? | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
+| 이름 | 구성 경로 | Commerce 버전 지원 | 암호화되었습니까? | 시스템별? | 민감한? |
+|--------------|--------------|--------------|--------------|--------------|--------------|
 | Google API 키 | `cataloginventory/source_selection_distance_based_google/api_key` |  | 암호화됨 | | 중요 |
 
 ### XML 사이트 맵 중요 및 시스템별 경로

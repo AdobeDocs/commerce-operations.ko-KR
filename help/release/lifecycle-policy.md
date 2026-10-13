@@ -15,7 +15,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -216,4 +216,4 @@ Adobe 계정 팀에 문의하여 마이그레이션 평가를 시작합니다. �
 
 이 경로는 향후 업그레이드 의무를 없애지 않습니다. Adobe Commerce on Cloud 배포를 사용하는 고객은 릴리스 라인이 버전 업그레이드 적용 날짜에 도달하므로 계속 업그레이드해야 합니다.
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->

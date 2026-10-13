@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '25765'
+source-wordcount: '29236'
 ht-degree: 0%
-
 ---
 # Magento Open Source 릴리스 노트(v2.4.8)
 
@@ -154,7 +153,7 @@ Magento 설치 후 인덱서의 상태는 기본적으로 *준비* 상태여야 
 
 _AC-11420 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/71432aeb)_
 
-#### 기존 Magento 설치 시 타사 인덱서 모듈을 설치하면 기본적으로 일정에 따라 인덱서가 업데이트됩니다.
+#### 기존 Magento 설치에서 타사 인덱서 모듈을 설치할 때 기본적으로 인덱서를 일정에 따라 업데이트로 설정합니다.
 
 모든 새 인덱서는 기본적으로 [일정별 업데이트] 모드에 있습니다. 이전에는 기본 모드가 [저장 시 업데이트]였습니다. 사용자 지정 인덱서와도 동일합니다.
 
@@ -454,7 +453,7 @@ _AC-13529 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/6c
 
 #### 필수 전화 번호 필드에 빨간색 별표가 없습니다.
 
-이전 빨간색 별표는 전화 번호에 표시되지 않지만  전화 번호는 필수입니다. 이제 고정된 빨간색 별표가 전화 번호에서 필수 필드로 표시됩니다.
+전화 번호에 대해 이전 빨간색 별표가 표시되지 않았지만 전화 번호는 필수입니다. 이제 고정된 빨간색 별표가 전화 번호에서 필수 필드로 표시됩니다.
 
 _AC-13850 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/c699c206)_
 
@@ -514,7 +513,7 @@ _ACP2E-2978 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### 200개 이상의 주문을 내보낼 수 없음
 
-문제를 해결하기 위해 GET에서 POST로 HTTP 요청을 변경하여 이전에 제출된 선택한 ID의 요청 크기에 대한 서버 제한을 무시했습니다. 이전에는 GET 요청 크기에 대한 서버 제한으로 인해 문제가 발생했습니다.
+문제를 해결하기 위해 HTTP 요청을 GET에서 POST로 변경하여 이전에 전송된 선택한 ID의 요청 크기에 대한 서버 제한을 무시했습니다. 이전에는 GET 요청 크기에 대한 서버 제한으로 인해 문제가 발생했습니다.
 
 _ACP2E-3033 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/93d50f8d)_
 
@@ -538,7 +537,7 @@ _ACP2E-3149 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### 허용된 특정 국가에서는 COD를 사용할 수 없습니다.
 
-이제 필요할 때마다 허용된 특정 국가에서만 배달 현금을 사용할 수 있습니다.   AC-3216이 예상대로 작동합니다.
+이제 필요할 때마다 허용된 특정 국가에서만 AC-3216으로 배달 현금을 사용할 수 있습니다.
 
 _ACP2E-3171 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/6f4805f8)_
 
@@ -560,7 +559,7 @@ _ACP2E-3294 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 _ACP2E-3364 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/5184c067)_
 
-#### Magento 관리자 URL 라우팅 오류 감지 및 CORS 오류
+#### Magento 관리자 URL 라우팅이 잘못됨 감지 및 CORS 오류
 
 수정 후 사용자 정의 관리 도메인이 주 도메인의 하위 도메인인 경우 구성된 하위 도메인에서만 관리자에 액세스할 수 있습니다.
 
@@ -622,9 +621,9 @@ _ACP2E-3559 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 ### 관리자 UI, B2B
 
-#### 고객 헤더로 B2B 로그인에 여전히 Magento 브랜딩이 있음
+#### 고객 헤더로 B2B 로그인에 Magento 브랜딩이 여전히 있음
 
-이전에는 상점 헤더 표시에 Magento 브랜딩이 &quot;이제 &lt;store name>에서 &lt;customer name>(으)로 연결되었습니다&quot;라는 메시지가 표시되었습니다. 이제 수정되었으며 머리글에 ADOBE 브랜딩이 표시됩니다.
+이전에는 상점 헤더에서 Magento 브랜딩이 &quot;이제 &lt;스토어 이름>에서 &lt;고객 이름>으로 연결되었습니다&quot;라고 표시했습니다. 이제 수정되었으며 머리글에 ADOBE 브랜딩이 표시됩니다.
 
 _AC-13628 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -646,7 +645,7 @@ _ACP2E-3169 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 ### 관리자 UI, 배송
 
-#### 쿠폰 코드 카운트가   주문이 복수 배송으로 이루어진 경우 쿠폰 코드 관리 탭의 &quot;사용된 시간&quot; 열.
+#### 주문이 복수 발송으로 이루어진 경우 쿠폰 코드 관리 탭의 &quot;사용한 시간&quot; 열에 쿠폰 코드 카운트가 업데이트되지 않습니다.
 
 앞서 멀티배송으로 주문이 들어오면 쿠폰코드 관리 탭의 &#39;사용한 시간&#39; 열에서 쿠폰코드 카운트가 업데이트되지 않았다. 이제 다중 배송과 함께 원하는 값이 반영된 &quot;사용한 시간&quot; 모두에 올바른 카운트가 표시됩니다.
 
@@ -726,7 +725,7 @@ _ACP2E-2300 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 ### Analytics/보고, 클라우드
 
-#### Magento이 대부분의 New Relic cron 트랜잭션을 #34108
+#### Magento가 대부분의 New Relic cron 트랜잭션을 #34108
 
 AC가 cron 작업 관련 트랜잭션을 NewRelic에 올바르게 보고하고 있습니다. 이전에는 일부 cron job 관련 트랜잭션이 NR에서 &quot;OtherTransaction/Action/unknown&quot;으로 표시되었습니다
 
@@ -794,7 +793,7 @@ _AC-10698 - [GitHub 문제](https://github.com/magento/magento2/issues/37348) - 
 
 _AC-11641 - [GitHub 문제](https://github.com/magento/magento2/issues/32781) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/32511)_
 
-#### 기존 고객과 함께 체크아웃 내에서 Magento 2 로그인 Firefox 브라우저에서 콘솔 오류 발생
+#### Magento 2가 기존 고객과 체크아웃 내에서 로그인하면 Firefox 브라우저에서 콘솔 오류가 발생합니다
 
 이제 시스템에서 체크아웃 프로세스 중에 Firefox 브라우저에서 콘솔 오류가 발생하지 않고 로그인할 수 있습니다. 이전에는 체크아웃 중에 기존 고객으로 로그인하려고 하면 Firefox에서 콘솔 오류가 발생합니다.
 
@@ -818,7 +817,7 @@ _AC-11914 - [GitHub 문제](https://github.com/magento/magento2/issues/38694) - 
 
 _AC-11993 - [GitHub 문제](https://github.com/magento/magento2/issues/38742) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/1bafc571)_
 
-#### 쿠폰 코드 기능이 Magento 2.4.7의 체크아웃 페이지에서 제대로 작동하지 않음
+#### 쿠폰 코드 기능이 Magento 2.4.7의 체크아웃 페이지에서 제대로 작동하지 않습니다.
 
 이제 시스템은 가상 및 다운로드 가능한 제품에 대한 체크아웃 페이지에서 할인 코드/쿠폰 입력 필드를 활성화하여 사용자가 예상대로 할인 코드를 적용할 수 있습니다. 기존에는 할인코드/쿠폰 입력이 비활성화되고, 버튼 제목 텍스트가 &#39;쿠폰 취소&#39;로 표시돼 사용자가 할인코드를 적용하지 못했다.
 
@@ -944,7 +943,7 @@ _ACP2E-3296 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 _ACP2E-3402 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/078c387e)_
 
-#### 기프트 카드 제품 | 장바구니 병합이 기프트 카드를 병합하는 중입니다.
+#### 기프트 카드 제품 | 장바구니 병합에서 기프트 카드를 병합하는 중
 
 이제 기프트 카드 제품이 장바구니에서 올바르게 병합됩니다.
 
@@ -1192,7 +1191,7 @@ _ACP2E-2874 - [GitHub 코드 기여도](https://github.com/magento/inventory/com
 
 _ACP2E-2905 - [GitHub 문제](https://github.com/magento/magento2/issues/38506) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/a4fbf702)_
 
-#### dynamic-rows.js:658 찾을 수 없는 TypeError: 번들 제품을 편집하는 동안 dataRecord.slice
+#### dynamic-rows.js:658 발견되지 않은 TypeError: 번들 제품을 편집하는 동안 dataRecord.slice
 
 번들 제품에서 옵션을 삭제하는 동안 브라우저 콘솔에 Javascript 오류가 없습니다.
 
@@ -1452,7 +1451,7 @@ _ACP2E-3053 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 _ACP2E-3345 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### Magento 관리자에 저장한 후 제품에 대한 [CLOUD] 문제가 프론트엔드에 표시되지 않습니다.
+#### Magento Admin에 저장한 후 제품에 대한 [CLOUD] 문제가 프론트엔드에 표시되지 않습니다.
 
 수정 후 긴 이름의 하위 제품이 있는 구성 가능한 제품은 상점 앞에 표시되지 않습니다.
 
@@ -1712,7 +1711,7 @@ _AC-11489 - [GitHub 문제](https://github.com/magento/magento2/issues/38485) - 
 
 _AC-11592 - [GitHub 문제](https://github.com/magento/magento2/issues/38517) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/33161)_
 
-#### Magento이 LoggerProxy의 __wakeup 메서드에서 읽기 전용 속성을 수정하려고 합니다.
+#### Magento가 LoggerProxy의 __wakeup 메서드에서 읽기 전용 속성을 수정하려고 합니다.
 
 이제 시스템에서 LoggerProxy의 __절전 모드 해제 방법 중 이전에 읽기 전용 속성을 수정할 수 있으므로 사용자가 문제를 해결하지 않고도 원활한 작업을 수행할 수 있습니다. 이전에는 LoggerProxy의 __wakeup 메서드에서 읽기 전용 속성 값을 재할당하려고 하면 문제가 발생합니다.
 
@@ -1820,7 +1819,7 @@ _AC-12778 - [GitHub 문제](https://github.com/magento/magento2/issues/39062) - 
 
 _AC-12857 - [GitHub 문제](https://github.com/magento/magento2/issues/39083) - [GitHub 코드 기여](https://github.com/magento/magento2/commit/47b448e2)_
 
-#### [문제] Magento 모듈에서 참조되는 잘못된 클래스를 수정합니다.
+#### [문제]은(는) Magento 모듈에서 참조되는 잘못된 클래스를 수정합니다.
 
 이제 시스템에서 모듈의 클래스를 올바르게 참조하므로 더 원활한 작업을 수행할 수 있으며 클래스가 없는 경우에도 충돌이 발생하지 않습니다. 여기에는 Indexer 및 Creditmemo 모듈의 버그 수정과 PrintAction 클래스의 HttpGetActionInterface 구현이 포함됩니다. 이전에는 잘못된 클래스 참조를 사용하면 오류가 발생하고 잠재적인 시스템 충돌이 발생했으며 creditmemo PDF 파일의 파일 이름 및 재인덱싱 주식과 같은 특정 기능이 예상대로 작동하지 않았습니다.
 
@@ -1892,13 +1891,13 @@ _AC-6754 - [GitHub 문제](https://github.com/magento/magento2/issues/36163) - [
 
 _AC-8353 - [GitHub 문제](https://github.com/magento/magento2/issues/37253) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/37003)_
 
-#### [문제] `@author`에서 금지된 `Magento_Customer` 태그 제거(2부)
+#### [문제] `Magento_Customer`에서 금지된 `@author` 태그 제거(2부)
 
 이제 시스템은 특정 모듈에서 금지된 `@author` 태그를 제거하여 보다 깨끗하고 표준화된 코드를 보장함으로써 코딩 표준을 준수합니다. 이전에는 `@author` 태그가 일부 모듈에 있었으며, 이는 설정된 코딩 표준에 맞지 않습니다.
 
 _AC-8356 - [GitHub 문제](https://github.com/magento/magento2/issues/37250) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig 구문의 공백이 `[&lbrace;composer,auth&rbrace;.json]`에 대한 규칙을 어깁니다.
+#### editorconfig 구문의 공백이 `[{composer,auth}.json]`에 대한 규칙을 어깁니다.
 
 이제 편집기의 구문 오류가 해결된 후 시스템에서 작성기 및 auth.json 파일에 4공간 들여쓰기를 올바르게 적용합니다. 이전에는 editorconfig 구문의 공백으로 인해 이러한 파일의 형식이 2칸 들여쓰기로 잘못 지정되었습니다.
 
@@ -1916,7 +1915,7 @@ _AC-8662 - [GitHub 문제](https://github.com/magento/magento2/issues/37453) - [
 
 _AC-8984 - [GitHub 문제](https://github.com/magento/magento2/issues/29335) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/29298)_
 
-#### 필요한 주/지역이 있는 새 국가가 추가되면 Magento을 업그레이드하면 general/region/state_required가 재설정됩니다.
+#### 필수 상태/지역이 있는 새 국가가 추가되면 Magento를 업그레이드하면 general/region/state_required가 재설정됩니다.
 
 이제 필요한 상태의 새 국가가 추가되면 시스템에서 수정된 국가만 &#39;general/region/state_required&#39; 구성에 추가되므로 해당 지역이 비활성화되었다고 가정하는 사용자 정의 코드가 중단되지 않습니다. 이전에는 필수 상태의 새 국가를 추가하면 &#39;general/region/state_required&#39; 구성이 필수 상태의 기본 국가로 재설정되므로 구입이 중단될 가능성이 있었습니다.
 
@@ -2042,7 +2041,7 @@ GraphQL 쿼리를 통해 카테고리 집계가 있는 제품 검색을 요청�
 
 _ACP2E-2653 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 가격 필터 `&lbrace;from:"0"&rbrace;`이(가) 포함된 GraphQL 제품 호출이 결과를 반환하지 않습니다.
+#### 가격 필터 `{from:"0"}`이(가) 포함된 GraphQL 제품 호출이 결과를 반환하지 않습니다.
 
 이전에 필터가 있는 0가 제품 검색은 throw된 예외로 인해 결과를 전혀 반환하지 않았습니다. 이제 검색은 예상대로 결과를 반환합니다.
 
@@ -2165,7 +2164,7 @@ _LYNX-486_
 
 _LYNX-488_
 
-#### 구성에 따라 그룹화된 제품 썸네일이 표시됩니다     .
+#### 구성에 따라 그룹화된 제품 썸네일이 표시됩니다.
 
 구성 설정에 따라 그룹화된 제품 썸네일이 표시되도록 하는 문제가 해결되었습니다
 
@@ -2369,7 +2368,7 @@ _ACP2E-3476 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 ### 설치 및 관리
 
-#### Magento 업그레이드가 MariaDB 11.4 + 2.4.8-beta1에서 실패함
+#### MariaDB 11.4 + 2.4.8-beta1에서 Magento 업그레이드에 실패함
 
 오류 없이 업그레이드해야 합니다.
 
@@ -2763,9 +2762,9 @@ _LYNX-714_
 
 _LYNX-757_
 
-#### adobe-commerce/storefront-compatibility 패키지가 설치되면 OPTIONS 메서드를 사용한 GraphQL 호출에서 500개의 응답 코드를 반환합니다
+#### OPTIONS 메서드를 사용한 GraphQL 호출은 adobe-commerce/storefront-compatibility 패키지가 설치되면 500 응답 코드를 반환합니다
 
-adobe-commerce/storefront-compatibility 패키지가 설치될 때 OPTIONS 메서드를 사용한 GraphQL 호출에서 500 내부 서버 오류를 반환하던 문제를 수정했습니다. 이제 끝점이 예상대로 200/204 응답을 올바르게 반환합니다.
+Adobe-commerce/storefront-compatibility 패키지가 설치될 때 OPTIONS 메서드를 사용한 GraphQL 호출에서 500 내부 서버 오류를 반환하는 문제를 해결했습니다. 이제 끝점이 예상대로 200/204 응답을 올바르게 반환합니다.
 
 _LYNX-778_
 
@@ -2944,7 +2943,7 @@ _AC-11992 - [GitHub 문제](https://github.com/magento/magento2/issues/30857) - 
 
 _AC-13173 - [GitHub 문제](https://github.com/magento/magento2/issues/38961) - [GitHub 코드 기여](https://github.com/magento/magento2/pull/38940)_
 
-#### [문제] Magento >= 2.4.7에서 끊어진 번들 및 다운로드 가능한 제품 페이지 레이아웃을 수정했습니다.
+#### [문제] Magento >= 2.4.7에서 손상된 번들 및 다운로드 가능한 제품 페이지 레이아웃을 수정했습니다.
 
 번들 및 다운로드 가능한 제품 페이지의 레이아웃이 수정되어 모든 장치에서 일관되고 올바른 표시가 보장됩니다. 이전에는 이러한 페이지에서 제품 정보 미디어 블록의 재배열로 인해 레이아웃 문제가 발생했습니다.
 
@@ -2994,7 +2993,7 @@ _ACP2E-3139 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 _ACP2E-3332 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### 장바구니 규칙 &quot;전체 장바구니에 대한 고정 금액 할인&quot;  조치가 할인을 잘못 적용
+#### 장바구니 규칙 &quot;전체 장바구니에 대한 고정 금액 할인&quot; 작업이 할인을 잘못 적용합니다
 
 쿠폰 코드는 관리자 영역에서 주문 생성 시 대문자나 소문자에 관계없이 올바르게 검증됩니다. 이전에는 구성된 장바구니 규칙 코드의 정확한 문자 대/소문자와 일치하지 않으면 쿠폰 코드의 유효성을 검사하지 않았습니다.
 
