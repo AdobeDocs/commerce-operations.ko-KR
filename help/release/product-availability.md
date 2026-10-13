@@ -2,7 +2,7 @@
 title: 제품 가용성
 description: 현재 지원되는 Adobe Commerce 기능에 대해 알아보고 특정 Adobe Commerce 릴리스와의 호환성을 확인합니다.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-10-07
+last-update: 2026-10-12
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: a6c0c808ce57bf00b1ee0cfac6a17008df4d4e22
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## Commerce 서비스
 
-[Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ko)는 Commerce 인스턴스와 함께 강력한 기능과 빠른 응답 시간을 제공하는 Adobe 호스팅 기능 세트입니다.
+[Commerce 서비스](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)는 Commerce 인스턴스와 함께 강력한 기능과 빠른 응답 시간을 제공하는 Adobe 호스팅 기능 세트입니다.
 
 상인은 가장 최신 버전의 서비스를 사용하여 가장 높은 안정성과 기능을 보장하는 것이 좋습니다. 이 설명서에서는 현재 릴리스된 버전에 대해 설명합니다.
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-09-11 07:57:18 -->
+<!-- Last updated from includes: 2026-10-07 07:57:15 -->
