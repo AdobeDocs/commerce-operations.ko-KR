@@ -49,7 +49,7 @@ Adobe은 다음 표에 나열된 시스템 요구 사항 조합만 지원합니�
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 [`services.yaml` 파일](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)은(는) 기본 서비스 및 버전을 정의합니다.
-*클라우드 인프라의 Commerce* 안내서에서 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
+*클라우드 인프라의 Commerce* 안내서에서 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
 
 >[!TAB Commerce 온-프레미스]
 
@@ -106,7 +106,7 @@ Adobe Commerce 온-프레미스 버전 2.4.6, 2.4.5 또는 2.4.4를 실행하는
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 [`services.yaml` 파일](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)은(는) 기본 서비스 및 버전을 정의합니다.
-*클라우드 인프라의 Commerce* 안내서에서 [서비스 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
+*클라우드 인프라의 Commerce* 안내서에서 [서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)을 참조하십시오.
 
 >[!TAB Commerce 온-프레미스]
 
@@ -132,7 +132,7 @@ Adobe Commerce 온-프레미스 버전 2.4.6, 2.4.5 또는 2.4.4를 실행하는
 
 Adobe Commerce 사용 시 일반적인 문제를 방지하기 위해 `memory_limit`과(와) 같은 PHP 설정을 구성합니다. [필수 PHP 설정](prerequisites/php-settings.md)을 참조하세요.
 
-클라우드 구성 지침은 *클라우드 인프라의 Commerce* 안내서에서 [PHP 설정](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
+클라우드 구성 지침은 *클라우드 인프라의 Commerce* 안내서에서 [PHP 설정](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings)을 참조하십시오.
 
 ### PHP OPcache
 
@@ -160,7 +160,7 @@ OPcache를 별도로 설치해야 하는 경우 [PHP OPcache 설명서](https://
 
 >[!TIP]
 >
->클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)을 참조하십시오.
+>클라우드 인프라의 PHP 확장에 대해서는 _클라우드 인프라의 Commerce_ 안내서에서 [PHP 확장 사용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)을 참조하십시오.
 
 >[!BEGINTABS]
 
@@ -199,11 +199,11 @@ Adobe Commerce은 해당되는 경우를 제외하고 storefront 및 Admin에 �
 
 ### 메일 서버
 
-MTA(메일 전송 에이전트) 또는 SMTP 서버. 클라우드 인프라의 Commerce은 [SendGrid 이메일 서비스](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid)를 사용합니다.
+MTA(메일 전송 에이전트) 또는 SMTP 서버. 클라우드 인프라의 Commerce은 [SendGrid 이메일 서비스](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/project/sendgrid)를 사용합니다.
 
 ### 메모리
 
-Commerce Marketplace 및 기타 소스에서 애플리케이션과 확장을 업그레이드하려면 최대 2GB의 RAM이 필요할 수 있습니다. 시스템의 RAM이 2GB 미만이면 [스왑 파일을 만듭니다](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). 스왑 파일이 없으면 업그레이드가 실패할 수 있습니다.
+Commerce Marketplace 및 기타 소스에서 애플리케이션과 확장을 업그레이드하려면 최대 2GB의 RAM이 필요할 수 있습니다. 시스템의 RAM이 2GB 미만이면 [스왑 파일을 만듭니다](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). 스왑 파일이 없으면 업그레이드가 실패할 수 있습니다.
 
 ### 운영 체제 (Linux x86-64)
 
@@ -229,16 +229,16 @@ Adobe Commerce의 일부 작업에는 다음 시스템 도구가 필요합니다
 - 자체 서명된 SSL 인증서는 지원되지 않습니다.
 - TLS(전송 계층 보안) 요구 사항 - PayPal과 `repo.magento.com` 둘 다 TLS 1.2 이상이 필요합니다.
 
-클라우드 인프라의 Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Fastly 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)을 참조하십시오.
+클라우드 인프라의 Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Fastly 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)을 참조하십시오.
 
 ### Xdebug
 
 Adobe Commerce 개발 환경의 경우에만 [php_xdebug 2.5.x](https://xdebug.org/download) 이상을 사용하십시오. Xdebug는 성능에 부정적인 영향을 줄 수 있습니다.
 
-클라우드의 Adobe Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Xdebug 구성](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug)을 참조하십시오.
+클라우드의 Adobe Commerce에 대해서는 *클라우드 인프라의 Commerce* 안내서에서 [Xdebug 구성](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/test/debug)을 참조하십시오.
 
 >[!NOTE]
 >
->Xdebug의 알려진 문제는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 대한 액세스에 영향을 줄 수 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)를 참조하십시오.
+>Xdebug의 알려진 문제는 Adobe Commerce 설치 또는 설치 후 상점 또는 관리자에 대한 액세스에 영향을 줄 수 있습니다. _Commerce 지원 기술 자료_&#x200B;에서 [설치 `xdebug`에 영향을 주는 알려진 문제](https://experienceleague.adobe.com/ko/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)를 참조하십시오.
 
 <!-- Last updated from includes: 2026-10-07 13:03:29 -->
