@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Magento Open Source 해결 문제(v2.4.9)
 
@@ -669,9 +668,9 @@ _ACP2E-4698 - [GitHub 코드 기여도](https://github.com/magento/magento2-page
 
 ### 관리자 UI, B2B
 
-#### 고객 헤더로 B2B 로그인에 여전히 Magento 브랜딩이 있음
+#### 고객 헤더로 B2B 로그인에 Magento 브랜딩이 여전히 있음
 
-이전에는 상점 헤더 표시에 Magento 브랜딩이 &quot;이제 &lt;store name>에서 &lt;customer name>(으)로 연결되었습니다&quot;라는 메시지가 표시되었습니다. 이제 수정되었으며 머리글에 ADOBE 브랜딩이 표시됩니다.
+이전에는 상점 헤더에서 Magento 브랜딩이 &quot;이제 &lt;스토어 이름>에서 &lt;고객 이름>으로 연결되었습니다&quot;라고 표시했습니다. 이제 수정되었으며 머리글에 ADOBE 브랜딩이 표시됩니다.
 
 _AC-14361 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/fadcfa8b)_
 
@@ -3648,7 +3647,7 @@ _ACP2E-4212 - [GitHub 코드 기여도](https://github.com/magento/magento2/comm
 
 #### 업데이트 예약 미리 보기에서 웹 사이트 사이를 탐색할 수 없음
 
-이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, [Adobe Commerce 변수 및 마크업 태그](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/variables/markup-tags)에 설명된 대로 `{{store url}}` 마크업 태그를 사용하는 탐색 링크를 지원합니다.
+이 수정 전에 사용자 정의 도메인이 있는 스토어의 콘텐츠를 미리 보는 경우 예약된 업데이트 미리 보기가 중단됩니다. 이 수정 후 사용자 지정 스토어 도메인을 있는 그대로 미리 보고 미리보기 iframe 내에서 탐색할 수 있습니다. 이 수정 사항은 제품, 카테고리, CMS 페이지 및 CMS 블록을 포함하며, [Adobe Commerce 변수 및 마크업 태그](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)에 설명된 대로 `{{store url}}` 마크업 태그를 사용하는 탐색 링크를 지원합니다.
 
 _ACP2E-4308 - [GitHub 코드 기여도](https://github.com/magento/magento2/commit/0a3b7032)_
 
