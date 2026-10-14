@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.84'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.84'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.84
@@ -41,7 +41,7 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 1. **ACP2E-5041**: 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 **[!UICONTROL Special Price]** 대신 정가가 표시되는 문제가 해결되었습니다.
 1. **ACP2E-5059**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
 1. **ACP2E-5122**: 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 응용 프로그램 오류로 잘못 기록되는 문제를 해결했습니다.
-1. **ACP2E-5143**: 라우팅 메타데이터만 요청될 때 GraphQL 라우팅 쿼리가 전체 CMS 페이지 콘텐츠를 렌더링하는 문제를 해결하여 페이지 빌더 위젯이 포함된 CMS 페이지에 대한 데이터베이스 쿼리를 증가시킵니다.
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: 라우팅 메타데이터만 요청될 때 GraphQL `route` 쿼리가 전체 CMS 페이지 콘텐츠를 렌더링하는 문제를 해결하여 페이지 빌더 위젯을 포함하는 CMS 페이지에 대한 데이터베이스 쿼리 수를 늘립니다.
 1. **ACP2E-5183**: `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
 1. **ACP2E-5242**: 장바구니에 항목을 추가하는 동안 제품 가용성을 확인하는 동안 웹 사이트를 찾을 수 없음을 나타내는 오류가 표시되는 문제를 해결했습니다.
 1. **ACP2E-5263**: 모든 제품이 포함되기 전에 CSV 파일로 제품 내보내기를 중지하여 파일이 불완전할 수 있는 문제를 해결했습니다.
