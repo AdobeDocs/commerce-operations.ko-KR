@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.83'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.83'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.83
@@ -43,7 +43,7 @@ QPT v1.1.83에는 다음 패치가 포함됩니다.
 1. **ACP2E-4977**: 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 **[!UICONTROL Fixed Product Tax]**(FPT)가 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
 1. **AC-16530**: 장바구니에서 카탈로그 가격 규칙에 대해 예약된 업데이트를 일관되게 반영하지 않는 문제를 해결했습니다.
 1. **AC-11389**: 일부 반올림 시나리오에서 할인, 세금 및 주문 합계가 잘못 계산되는 문제를 해결했습니다.
-1. **ACP2E-4998**: 페이로드의 한 SKU가 없는 경우 전체 요청에 대해 `POST /V1/products/tier-prices` REST API 요청이 실패하여 올바른 SKU가 업데이트되지 않는 문제를 해결했습니다.
+1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: 페이로드의 하나의 SKU가 존재하지 않아 유효한 SKU가 업데이트되지 않는 경우 `POST /V1/products/tier-prices` REST API 요청이 완전히 실패하는 문제를 수정합니다.
 1. **ACP2E-5015**: 필요한 카탈로그 데이터를 사용할 수 없을 때 관리자에 공유 카탈로그를 저장하면 할당된 제품 및 가격을 실수로 제거할 수 있는 문제를 해결했습니다.
 1. **AC-14940**: 일부 스토어 관련 경우에 관리자의 고객 계정에 대한 **[!UICONTROL Reset Password]**&#x200B;을(를) 클릭해도 암호 재설정 이메일이 전송되지 않는 문제를 해결했습니다.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: 인덱서가 **[!UICONTROL Update by Schedule]**(으)로 설정된 경우 B2B 모듈을 설치하지 못하는 문제가 해결되었습니다.
