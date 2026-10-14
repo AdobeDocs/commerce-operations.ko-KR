@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2160'
+source-wordcount: '2137'
 ht-degree: 0%
 ---
 
@@ -28,25 +28,25 @@ ht-degree: 0%
 
 ## 2.4.4-p18
 
-Adobe Commerce 2.4.4-p18은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p18은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/kr/security/products/magento/apsb26-49.html)을 참조하십시오.
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
 ## 2.4.4-p17
 
-Adobe Commerce 2.4.4-p17은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p17은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/kr/security/products/magento/apsb26-05.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)을 참조하십시오.
 
 {{b2b-patches}}
 
 ## 2.4.4-p16
 
-Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -62,17 +62,17 @@ Adobe Commerce 2.4.4-p16은 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 ## 2.4.4-p15
 
-Adobe Commerce 2.4.4-p15는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p15는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/kr/security/products/magento/apsb25-71.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)을 참조하십시오.
 
 {{b2b-patches}}
 
 ## 2.4.4-p14
 
-Adobe Commerce 2.4.4-p14는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
+Adobe Commerce 2.4.4-p14는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다. Adobe Commerce 고객만 사용할 수 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/kr/security/products/magento/apsb25-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -94,7 +94,7 @@ Adobe Commerce 2.4.4-p14는 이전 릴리스 2.4.4에서 식별된 취약점에 
 
 Adobe Commerce 2.4.4-p13 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/kr/security/products/magento/apsb25-26.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -106,7 +106,7 @@ Adobe Commerce 2.4.4-p13 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p12 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/kr/security/products/magento/apsb25-08.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -118,7 +118,7 @@ Adobe Commerce 2.4.4-p12 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p11 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/kr/security/products/magento/apsb24-73.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)을 참조하십시오.
 
 {{b2b-patches}}
 
@@ -130,7 +130,7 @@ Adobe Commerce 2.4.4-p11 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p10 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/kr/security/products/magento/apsb24-61.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -144,7 +144,7 @@ Adobe Commerce 2.4.4-p10 보안 릴리스는 이전 릴리스 2.4.4에서 식별
 
 Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별된 취약점에 대한 보안 버그 수정을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/kr/security/products/magento/apsb24-40.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)을 참조하십시오.
 
 ### CVE-2024-34102용 핫픽스 적용
 
@@ -162,13 +162,13 @@ Adobe Commerce 2.4.4-p9 보안 릴리스는 이전 릴리스 2.4.4에서 식별�
 
 Adobe Commerce 2.4.4-p8 보안 릴리스는 Adobe Commerce 2.4.4 배포에 대한 보안 버그 수정 사항을 제공합니다. 이러한 업데이트는 이전 릴리스에서 식별된 취약점을 수정합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/kr/security/products/magento/apsb24-18.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)을 참조하십시오.
 
 ## 2.4.4-p7
 
 Adobe Commerce 2.4.4-p7 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/kr/security/products/magento/apsb24-03.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)을 참조하십시오.
 
 ### 강조 표시
 
@@ -185,7 +185,7 @@ Adobe Commerce 2.4.4-p7 보안 릴리스는 이전 릴리스에서 식별된 취
 
 Adobe Commerce 2.4.4-p6 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-50](https://helpx.adobe.com/kr/security/products/magento/apsb23-50.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)을 참조하십시오.
 
 이 릴리스에는 최신 보안 모범 사례를 준수하는 개선된 보안 기능도 포함되어 있습니다.
 
@@ -208,21 +208,21 @@ Adobe Commerce 2.4.4-p6 보안 릴리스는 이전 릴리스에서 식별된 취
 
 Adobe Commerce 2.4.4-p5 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-42](https://helpx.adobe.com/kr/security/products/magento/apsb23-42.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 
-`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
+`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
 
 ## 2.4.4-p4
 
 Adobe Commerce 2.4.4-p4 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 통해 규정 준수를 개선하기 위한 보안 개선 사항 및 플랫폼 업그레이드가 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-35](https://helpx.adobe.com/kr/security/products/magento/apsb23-35.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html)을 참조하십시오.
 
 ### CVE-2022-31160용 핫픽스 적용
 
-`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
+`jQuery-UI` 라이브러리 버전 1.13.1에는 여러 버전의 Adobe Commerce 및 Magento Open Source에 영향을 주는 알려진 보안 취약점(CVE-2022-31160)이 있습니다. 이 라이브러리는 Adobe Commerce 및 Magento Open Source 2.4.4, 2.4.5, 2.4.6의 종속성입니다. 영향을 받는 배포를 실행하는 판매자는 [jQuery UI 보안 취약점 CVE-2022-31160 수정 사항 for 2.4.4, 2.4.5 및 2.4.6 릴리스](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176) 기술 자료 문서에 지정된 패치를 적용해야 합니다.
 
 ### 강조 표시
 
@@ -242,13 +242,13 @@ Adobe Commerce 2.4.4-p4 보안 릴리스는 이전 릴리스에서 식별된 취
 
 Adobe Commerce 2.4.4-p3 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 보안 버그 수정 사항을 제공합니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-17](https://helpx.adobe.com/kr/security/products/magento/apsb23-17.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html)을 참조하십시오.
 
 ## 2.4.4-p2
 
 Adobe Commerce 2.4.4-p2 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 수정 사항을 제공합니다. 한 가지 수정 사항에는 새 구성 설정 생성이 포함됩니다. [!UICONTROL **전자 메일이 변경된 경우 전자 메일 확인 필요**] 구성 설정을 사용하면 관리자가 전자 메일 주소를 변경할 때 전자 메일 확인을 요구할 수 있습니다. <!-- AC-6292-->
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB22-48](https://helpx.adobe.com/kr/security/products/magento/apsb22-48.html)을 참조하십시오.
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)을 참조하십시오.
 
 ### AC-3022.patch를 적용하여 DHL을 배송 운송업체로 계속 제공
 
@@ -258,7 +258,7 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 Adobe Commerce 2.4.4-p1 보안 릴리스는 이전 릴리스에서 식별된 취약점에 대한 수정 사항을 제공합니다. 또한 이번 릴리스에는 최신 보안 모범 사례를 준수하도록 개선된 보안 기능도 포함되어 있습니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/kr/security/products/magento/apsb22-38.html)을 참조하십시오.t
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판](https://helpx.adobe.com/security/products/magento/apsb22-38.html)을 참조하십시오.t
 
 ### AC-3022.patch를 적용하여 DHL을 배송 운송업체로 계속 제공
 
@@ -275,6 +275,6 @@ DHL은 스키마 버전 6.2를 도입했으며 조만간 스키마 버전 6.0을
 
 **문제**: 2.4.4-p1 패키지에서 실행할 때 웹 API 및 통합 테스트에 이 오류가 표시됩니다. `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **해결 방법**: `require monolog/monolog:2.6.0` 명령을 실행하여 이전 버전의 Monolog를 설치하십시오. <!-- AC-3651-->
 
-**문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1[&#128279;](https://support.magento.com/hc/en-us/articles/8214752983949) 기술 자료 문서로 업그레이드한 후 다운그레이드된 패키지를 참조하십시오.
+**문제**: 판매자는 Adobe Commerce 2.4.4에서 Adobe Commerce 2.4.4-p1로 업그레이드하는 동안 패키지 버전 다운그레이드 알림을 볼 수 있습니다. 이러한 메시지는 무시할 수 있습니다. 패키지 버전의 불일치는 패키지 생성 중 예외 항목에서 발생합니다. 제품 기능은 영향을 받지 않았습니다. 영향을 받는 시나리오 및 해결 방법에 대한 자세한 내용은 2.4.4에서 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) 기술 자료 문서로 업그레이드한 후 다운그레이드된 [패키지를 참조하십시오.
 
 <!-- Last updated from includes: 2026-08-19 13:47:15 -->

@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # 코드 조각
 
@@ -21,7 +20,7 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 
 >[!NOTE]
 >
->Commerce 프로젝트가 클라우드에 배포된 경우 전체 페이지 캐싱은 바니시 대신 [Fastly](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly)를 사용합니다. 이 섹션의 항목은 온-프레미스 설치에만 적용됩니다.
+>Commerce 프로젝트가 클라우드에 배포된 경우 전체 페이지 캐싱은 바니시 대신 [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)를 사용합니다. 이 섹션의 항목은 온-프레미스 설치에만 적용됩니다.
 
 ## Adobe 서비스 버전 지원 {#supported-versions-only}
 
@@ -29,7 +28,7 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 >
 >Adobe은 모든 종속성 및 서비스의 지원되는 버전을 실행하는 배포에 대해서만 지원을 제공합니다. 이는 다음 경우에 적용됩니다.
 >
->* **플랫폼 서비스**(PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ 및 Nginx를 포함하지만 이에 국한되지 않음) - 판매자는 배포된 Adobe Commerce 릴리스와 호환되는 버전을 유지해야 합니다. [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko)을 참조하세요.
+>* **플랫폼 서비스**(PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ 및 Nginx를 포함하지만 이에 국한되지 않음) - 판매자는 배포된 Adobe Commerce 릴리스와 호환되는 버전을 유지해야 합니다. [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)을 참조하세요.
 >* **Commerce 서비스 확장**(Live Search, 제품 추천 및 결제 서비스 포함, 이에 국한되지 않음) - 최신 릴리스 버전만 지원됩니다.
 >* **사용자 지정 확장 및 타사 통합** - 판매자는 공급업체가 지원하는 버전에 이러한 확장이 유지되도록 해야 합니다.
 >
@@ -39,7 +38,20 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 
 ## 확장 지원을 위한 보안 패치 {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**확장 지원** 보안 패치는 Adobe Commerce 고객에게만 제공됩니다. Magento Open Source 코드 베이스에는 사용할 수 없습니다.
+>
+>**클라우드의 Adobe Commerce(릴리스 라인 2.4.4-2.4.6)** - 버전 업그레이드 적용 날짜 이전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오. 전환 지원 조항이 클라우드 업그레이드 적용을 대체하지 않습니다.
+>
+>다음도 참조하십시오.
+>
+>- [소프트웨어 수명 주기 정책](/help/release/lifecycle-policy.md) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
+>- [Commerce 환경을 보호하기 위한 필수 작업 및 기한](/help/release/security-enforcement-policy.md) — 적용 날짜 및 필수 작업
+
+## Adobe 보안 게시판 APSB26-49 {#security-bulletin-apsb26-49}
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html)을 참조하십시오.
 
 ## Commerce 전용 {#commerce-only}
 
@@ -65,7 +77,7 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 
 >[!NOTE]
 >
->이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/ko/docs/commerce-admin/b2b/release-notes)를 참조하세요.
+>이 보안 패치를 설치한 후 Adobe Commerce B2B 판매자도 최신 호환 가능한 B2B 보안 패치 릴리스로 업데이트해야 합니다. [B2B 릴리스 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)를 참조하세요.
 
 ## Adobe Commerce 전용 {#ee-only}
 
@@ -119,7 +131,7 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 
 >[!IMPORTANT]
 >
->Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
+>Adobe은 이 방법을 사용하여 Adobe에서 제공하는 공식 패치를 적용할 수 없습니다. 다음의 방법을 사용하십시오. 공식 패치를 적용하려면 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}을(를) 사용합니다. 사용자 정의 패치를 배포하기 전에 항상 포괄적인 테스트를 수행하십시오.
 
 ## 2025년 10월 보안 패치 백포트 {#oct-2025-backports}
 
@@ -150,7 +162,7 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 
 **핫픽스**:
 
-핫픽스를 사용할 수 있습니다. 패치에 대한 자세한 내용은 기술 자료에서 [JS 축소 및 번들링을 사용할 때 체크아웃 실패](https://experienceleague.adobe.com/ko/docs/experience-cloud-kcs/kbarticles/ka-27997)를 참조하십시오.
+핫픽스를 사용할 수 있습니다. 패치에 대한 자세한 내용은 기술 자료에서 [JS 축소 및 번들링을 사용할 때 체크아웃 실패](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)를 참조하십시오.
 
 ## Valkey Redis CLI 참고 {#valkey-redis-cli-note}
 
