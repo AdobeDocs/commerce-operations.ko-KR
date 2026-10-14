@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # 코드 조각
 
@@ -39,7 +38,20 @@ Redis 캐시는 Adobe Commerce 2.4.9 또는 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 및 2
 
 ## 확장 지원을 위한 보안 패치 {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**확장 지원** 보안 패치는 Adobe Commerce 고객에게만 제공됩니다. Magento Open Source 코드 베이스에는 사용할 수 없습니다.
+>
+>**클라우드의 Adobe Commerce(릴리스 라인 2.4.4-2.4.6)** - 버전 업그레이드 적용 날짜 이전에 지원되는 릴리스로 업그레이드하거나 [!DNL Adobe Commerce as a Cloud Service]&#x200B;(으)로 마이그레이션하십시오. 전환 지원 조항이 클라우드 업그레이드 적용을 대체하지 않습니다.
+>
+>다음도 참조하십시오.
+>
+>- [소프트웨어 수명 주기 정책](/help/release/lifecycle-policy.md) — 지원 종료 날짜, 확장 지원 및 보안 전용 전환 조항
+>- [Commerce 환경을 보호하기 위한 필수 작업 및 기한](/help/release/security-enforcement-policy.md) — 적용 날짜 및 필수 작업
+
+## Adobe 보안 게시판 APSB26-49 {#security-bulletin-apsb26-49}
+
+보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html)을 참조하십시오.
 
 ## Commerce 전용 {#commerce-only}
 

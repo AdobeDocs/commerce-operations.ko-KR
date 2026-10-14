@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: label="Cloud 2.4.4 - 2.4.9의 Adobe Commerce 전용" type="Informative" url="https://experienceleague.adobe.com/ko/docs/commerce/user-guides/product-solutions" tooltip="Cloud 버전 2.4.4 - 2.4.9의 Adobe Commerce에만 적용됩니다."
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Adobe은 고객을 안전하게 보호하는 데 필요한 단계를 수행하�
 
 1. 클라우드에서 안전하고 지원되는 Adobe Commerce 버전입니다. 완전히 지원되는 버전에는 2.4.8, 2.4.9 또는 사용 가능한 최신 릴리스가 포함됩니다. [라이프사이클 정책](/help/release/lifecycle-policy.md) 설명서를 참조하세요.
 
-클라우드 환경에서 Adobe Commerce을 보호하기 위해 조치를 취해야 하는지 확인하려면 아래 지침을 따르십시오. 아래 표 1에 요약된 기한까지 보안 요구 사항을 충족하지 않는 환경에서는 인바운드 트래픽이 중단되어 스토어프런트가 오프라인 상태가 됩니다. 기한 충족에 대해 우려되는 경우 가능한 한 빨리 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
+클라우드 환경에서 Adobe Commerce을 보호하기 위해 조치를 취해야 하는지 확인하려면 아래 지침을 따르십시오. 아래 표 1에 요약된 기한까지 보안 요구 사항을 충족하지 않는 환경에서는 관리자 액세스가 일시 중단될 수 있는 반면 상점은 온라인 상태이고/또는 인바운드 트래픽이 일시 중단되어 상점이 오프라인 상태가 될 수 있습니다. 기한 충족에 대해 우려되는 경우 가능한 한 빨리 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Adobe Commerce on Cloud 버전을 업그레이드해야 하는 경우 두 가지
 
 Adobe은 지원되는 타사 소프트웨어 버전을 채택하거나, Cloud에서 Adobe Commerce의 최신 버전으로 업그레이드하거나, Adobe Commerce as a Cloud Service으로 마이그레이션하는 데 필요한 단계를 실행하는 데 사용자를 지원하기 위해 최선을 다하고 있습니다.  기한 충족에 대한 우려가 있고 짧은 연장이 필요한 경우 가능한 한 빨리 계정 팀이나 [Adobe 지원](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)에 문의하십시오.
 
-위에서 공유한 시행 날짜까지 환경이 보안 요구 사항을 충족하지 않으면 Adobe은 Adobe Commerce 플랫폼 및 고객의 보안을 유지하기 위해 적절한 조치를 취하지 않을 수 없습니다. 여기에는 영향을 받는 인프라에 대한 트래픽 일시 중지가 포함되며, 그 결과 Commerce 상점 첫 페이지는 오프라인으로 전환됩니다.
+위에서 공유한 시행 날짜까지 환경이 보안 요구 사항을 충족하지 않으면 Adobe은 Adobe Commerce 플랫폼 및 고객의 보안을 유지하기 위해 적절한 조치를 취하지 않을 수 없습니다. 여기에는 스토어프런트가 온라인 상태인 동안 영향을 받는 환경의 모든 사용자에 대한 Adobe Commerce 관리자에 대한 액세스를 일시 중단하는 작업 및/또는 영향을 받는 인프라에 대한 트래픽을 일시 중단하는 작업이 포함될 수 있으며, 이로 인해 Commerce 스토어프런트가 오프라인 상태가 됩니다.
 
 트래픽 일시 중단 후에도 환경이 계속 규정을 준수하지 않는 경우 Adobe이 클라우드 서비스를 종료하여 서비스 해제 프로세스를 시작할 수 있습니다. 서비스 해제의 결과로 모든 인스턴스, 환경 및 분기를 포함하여 호스팅된 상거래 환경 내의 모든 데이터 및 자산은 영구적으로 삭제되며 복원할 수 없습니다.
 

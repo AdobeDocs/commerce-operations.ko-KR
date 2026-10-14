@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '1984'
 ht-degree: 0%
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 ## 2.4.5-p17
 
-Adobe Commerce 2.4.5-p17은 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다.
+Adobe Commerce 2.4.5-p17은 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다.
 
-보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-49](https://helpx.adobe.com/kr/security/products/magento/apsb26-49.html)을 참조하십시오.
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
@@ -60,7 +60,7 @@ Adobe Commerce 2.4.5는 이제 2026년 2월로 예정된 RabbitMQ 4.1 지원 종
 
 ## 2.4.5-p16
 
-Adobe Commerce 2.4.5-p16은 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다.
+Adobe Commerce 2.4.5-p16은 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB26-05](https://helpx.adobe.com/kr/security/products/magento/apsb26-05.html)을 참조하십시오.
 
@@ -84,7 +84,7 @@ Adobe Commerce 2.4.5-p16은 MariaDB 10.11과의 호환성을 검증받았으며,
 
 ## 2.4.5-p15
 
-Adobe Commerce 2.4.5-p15는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](../../lifecycle-policy.md#security-only-transitional-period)입니다.
+Adobe Commerce 2.4.5-p15는 이전 릴리스 2.4.5에서 식별된 취약점에 대한 보안 버그 수정을 제공하는 [확장 지원 보안 릴리스](/help/release/lifecycle-policy.md#security-only-transitional-period)입니다.
 
 보안 버그 수정에 대한 최신 정보는 [Adobe 보안 게시판 APSB25-94](https://helpx.adobe.com/kr/security/products/magento/apsb25-94.html)을 참조하십시오.
 
