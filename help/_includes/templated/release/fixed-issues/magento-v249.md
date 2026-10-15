@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Magento Open Source 해결 문제(v2.4.9)
 
@@ -669,9 +668,9 @@ _ACP2E-4698 - [GitHub 코드 기여도](https://github.com/magento/magento2-page
 
 ### 관리자 UI, B2B
 
-#### 고객 헤더로 B2B 로그인에 여전히 Magento 브랜딩이 있음
+#### 고객 헤더로 B2B 로그인에 Magento 브랜딩이 여전히 있음
 
-이전에는 상점 헤더 표시에 Magento 브랜딩이 &quot;이제 &lt;store name>에서 &lt;customer name>(으)로 연결되었습니다&quot;라는 메시지가 표시되었습니다. 이제 수정되었으며 머리글에 ADOBE 브랜딩이 표시됩니다.
+이전에는 상점 헤더에서 Magento 브랜딩이 &quot;이제 &lt;스토어 이름>에서 &lt;고객 이름>으로 연결되었습니다&quot;라고 표시했습니다. 이제 수정되었으며 머리글에 ADOBE 브랜딩이 표시됩니다.
 
 _AC-14361 - [GitHub 코드 기여](https://github.com/magento/magento2/commit/fadcfa8b)_
 
