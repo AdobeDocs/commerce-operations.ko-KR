@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.7 보안 패치 릴리스 노트
 description: Adobe Commerce 버전 2.4.7의 보안 패치 릴리스에 포함된 보안 버그 수정, 보안 개선 사항 및 기타 보안 관련 업데이트에 대해 알아봅니다.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-08-19
+last-update: 2026-10-14
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
+source-git-commit: 8959478d84467d8589a79e908b3f8750cb0a1c8b
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 0%
