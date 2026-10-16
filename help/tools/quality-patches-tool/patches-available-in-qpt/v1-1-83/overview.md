@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.83'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.83'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 353838f9e0d70ed280e41037731715fde449bedc
+source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -48,7 +48,7 @@ QPT v1.1.83에는 다음 패치가 포함됩니다.
 1. **AC-14940**: 일부 스토어 관련 경우에 관리자의 고객 계정에 대한 **[!UICONTROL Reset Password]**&#x200B;을(를) 클릭해도 암호 재설정 이메일이 전송되지 않는 문제를 해결했습니다.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: 인덱서가 **[!UICONTROL Update by Schedule]**(으)로 설정된 경우 B2B 모듈을 설치하지 못하는 문제가 해결되었습니다.
 1. **ACP2E-5205**: 범주 로드에 상당한 시간이 걸리거나 많은 범주 및 제품이 포함된 경우 시간 초과가 발생하는 문제를 해결합니다. 또한 이제 각 범주 리프에 대한 제품 수가 올바르게 표시됩니다.
-1. **ACP2E-3211**: 상점 첫 화면에서 같은 제품을 장바구니에 추가하면 같은 SKU에 대한 장바구니에서 단일 항목으로 결합하는 대신 개별 항목이 생성되는 문제를 해결합니다.
+1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: Storefront에서 동일한 제품을 장바구니에 추가하면 단일 항목으로 결합하는 대신 동일한 SKU에 대한 장바구니에서 개별 항목이 생성되는 문제를 해결합니다.
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: **[!UICONTROL Catalog Permissions]** 인덱스에 고객 그룹에서 제외된 웹 사이트가 포함된 문제를 해결했습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
