@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
+source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -43,12 +43,12 @@ QPT v1.1.83에는 다음 패치가 포함됩니다.
 1. **ACP2E-4977**: 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 **[!UICONTROL Fixed Product Tax]**(FPT)가 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
 1. **AC-16530**: 장바구니에서 카탈로그 가격 규칙에 대해 예약된 업데이트를 일관되게 반영하지 않는 문제를 해결했습니다.
 1. **AC-11389**: 일부 반올림 시나리오에서 할인, 세금 및 주문 합계가 잘못 계산되는 문제를 해결했습니다.
+1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: 필요한 카탈로그 데이터를 사용할 수 없을 때 관리자에 공유 카탈로그를 저장하면 할당된 제품 및 가격을 실수로 제거할 수 있는 문제를 해결했습니다.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: 페이로드의 하나의 SKU가 존재하지 않아 유효한 SKU가 업데이트되지 않는 경우 `POST /V1/products/tier-prices` REST API 요청이 완전히 실패하는 문제를 수정합니다.
-1. **ACP2E-5015**: 필요한 카탈로그 데이터를 사용할 수 없을 때 관리자에 공유 카탈로그를 저장하면 할당된 제품 및 가격을 실수로 제거할 수 있는 문제를 해결했습니다.
 1. **AC-14940**: 일부 스토어 관련 경우에 관리자의 고객 계정에 대한 **[!UICONTROL Reset Password]**&#x200B;을(를) 클릭해도 암호 재설정 이메일이 전송되지 않는 문제를 해결했습니다.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: 인덱서가 **[!UICONTROL Update by Schedule]**(으)로 설정된 경우 B2B 모듈을 설치하지 못하는 문제가 해결되었습니다.
 1. **ACP2E-5205**: 범주 로드에 상당한 시간이 걸리거나 많은 범주 및 제품이 포함된 경우 시간 초과가 발생하는 문제를 해결합니다. 또한 이제 각 범주 리프에 대한 제품 수가 올바르게 표시됩니다.
-1. **ACP2E-3211**: 상점 첫 화면에서 같은 제품을 장바구니에 추가하면 같은 SKU에 대한 장바구니에서 단일 항목으로 결합하는 대신 개별 항목이 생성되는 문제를 해결합니다.
+1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: Storefront에서 동일한 제품을 장바구니에 추가하면 단일 항목으로 결합하는 대신 동일한 SKU에 대한 장바구니에서 개별 항목이 생성되는 문제를 해결합니다.
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**: **[!UICONTROL Catalog Permissions]** 인덱스에 고객 그룹에서 제외된 웹 사이트가 포함된 문제를 해결했습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.

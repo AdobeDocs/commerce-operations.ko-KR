@@ -1,7 +1,7 @@
 ---
-source-git-commit: d3d2fcd6dd6023ced00872b04bbf6b624deca3be
+source-git-commit: 42acba2c908566207c9cbdd3b1c5b849366f9d32
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1283'
 ht-degree: 1%
 ---
 # 새로운 기능 템플릿
@@ -9,6 +9,136 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 10월 16일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 공유된 카탈로그 저장은 세션 읽기 오류</a> 후 제품 할당과 가격을 제거합니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: 병렬 추가 장바구니 요청은 동일한 SKU에 대해 별도의 항목을 생성</a>하는 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc196176d3fe1af2805f6733aae99d88563a2532">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 14일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998">ACP2E-4998에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. SKU가 없으면 올바른 제품에 대한 대량 계층 가격 업데이트가 수행되지 않습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c881ed90036eae94fc5ecb5a86bfab6a8343f9f1">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838">ACP2E-4838에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 제한된 관리자는 허용된 웹 사이트에서 고객을 삭제할 수 없습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/828758f6d2a65776578db16ab18a35fa20383e39">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741">ACP2E-4741에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 연결된 제품을 저장하면 사용자 지정 재고</a>를 사용하여 상점에서 다른 제품을 숨깁니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e826183cf7e720ab4ab8e824f2bb6c8cd27e3477">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143">ACP2E-5143에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL 경로 쿼리가 요청되지 않은 CMS 페이지 콘텐츠를 렌더링합니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30dceea6191f7cdd9e00a23ba71de49806295ef5">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128">AC-18128에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 영어 이외의 로케일에 대한 GraphQL 주문 날짜 및 댓글 타임스탬프가 올바르지 않습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9573db54f723502aed37dd91f58091bf1cdb7510">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096">AC-18096에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. Sales GraphQL 날짜 필드가 잘못된 지역화된 형식을 반환함</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e402772c2b4de56f3b83702a82f8328a6e0ef848">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 13일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2.4.10-alpha1 릴리스에 대한 설명서를 추가했습니다.<br />- 릴리스 특징 및 수정된 문제가 있는 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce 릴리스 노트</a>를 추가했습니다.<br />- 릴리스 특징 및 수정된 문제가 있는 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source 릴리스 노트</a>를 추가했습니다.<br />- 2.4.10-alpha.<br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 버전 3.0.28로 업데이트했습니다.<a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements"></a></p>
+</td>
+      <td>
+        주요 업데이트, 새로운 주제, 릴리스 정보
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/78a34dc069a30b72a1e0baff36085a2458a05983">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/versions">릴리스 버전</a> 주제에 2.4.10-alpha1 릴리스가 추가되었습니다.</p>
+</td>
+      <td>
+        릴리스 정보
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b045cf0b6bd0e74da1cfbaafe6b5493934f31039">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639">ACP2E-4639에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. Adobe Commerce GraphQL 스키마</a>에서 구매요청 목록 항목 유형의 철자가 잘못되었습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b18103789197712c457854d2c78c678e974e357">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 10월 9일
 
@@ -212,134 +342,6 @@ ht-degree: 1%
         주요 업데이트
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 8월 14일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>고객이 Cloud UI에서 서비스 종속 항목의 버전을 확인하는 방법에 대한 단계가 업데이트되었으며, 고객이 스토어에 대한 업그레이드 호환성 보고서를 생성하는 방법에 대한 가이드 링크를 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">타사 소프트웨어 종속 항목을 확인 및 업그레이드</a>에서 업데이트했습니다.</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/54ac98c35e1f161f390587601484db4e3294b6af">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 8월 13일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 필터 이름을 알 수 없는 GraphQL 요청으로 인해 PHP 예외 로그가 발생했습니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 과도한 메모리 사용으로 인한 메모리 부족 오류</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc891435d573c4c333e58e25b2dbe003ffa08f27">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce 2.4.5 및 2.4.6 버전에 대한 EOS 날짜의 오타가 수정되었습니다.</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8de65d309dcd4158627910ce5c0b87966db5c948">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 8월 12일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>프로덕션 용도로는 권장되지 않으며 업그레이드 호환성을 위해서만 제공되므로 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9 릴리스 정보</a>에서 지원되는 PHP 버전으로 PHP 8.4를 제거했습니다.</p>
-</td>
-      <td>
-        릴리스 정보, 기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. 비동기 인덱싱이 활성화된 경우 지연되면서 새 주문이 관리 주문 그리드에 나타납니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. Page Builder 텍스트 인라인 편집은 이식 가능한 지시문 대신 절대 미디어 URL을 저장합니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">커밋</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/versions">릴리스된 버전</a> 페이지의 여러 Adobe Commerce 릴리스 라인에 대한 지원 종료, 확장 지원 및 추가 보안 수정 프로비저닝 날짜가 수정되고 완료되었습니다.</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5a7f7a466e6419a3e712bcbec4224f98f8c480">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 8월 11일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>RabbitMQ 3.13을 Adobe Commerce 2.4.4-p18(최신)에 대해 지원되는 버전으로 추가하도록 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements">시스템 요구 사항</a>을 업데이트하여 Debian OS 업그레이드 경로에 대한 차단을 해결했습니다.</p>
-</td>
-      <td>
-        기술
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/046d641dc45b269c6495bef0c06c53bdc500227b">커밋</a></td>
     </tr>
   </tbody>
 </table>
