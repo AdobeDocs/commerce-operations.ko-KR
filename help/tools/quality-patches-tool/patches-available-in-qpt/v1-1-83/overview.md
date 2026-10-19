@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
+source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '519'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.83
@@ -33,19 +33,19 @@ ht-degree: 0%
 QPT v1.1.83에는 다음 패치가 포함됩니다.
 
 1. **AC-17975**: 특정 PHP 환경에서 관리자 워크플로, 체크아웃 인증, CAPTCHA 처리, 범주 관리, 구성 페이지 및 명령줄 작업에 영향을 주는 여러 PHP 8.5 호환성 문제를 해결합니다.
+1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: *보류 중* 상태일 때 계정에서 결제를 사용하여 주문한 주문을 관리자에서 편집할 수 없는 문제를 해결했습니다.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: 날짜 형식을 슬래시 구분(/)에서 대시 구분(-)으로 되돌려 Sales GraphQL 날짜 필드가 이전 릴리스와 다른 형식으로 날짜를 반환하는 문제를 해결했습니다.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: GraphQL에서 반환된 주문 날짜 및 주문 설명 타임스탬프에 영어가 아닌 로케일 설정에서 잘못된 일정 날짜가 표시되는 문제가 수정되었습니다.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: 제한된 권한이 있는 관리자 사용자가 고객 그리드에서 고객을 삭제할 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: GraphQL 스키마에서 구매요청 목록 항목 유형의 철자가 잘못된 문제를 해결했습니다. 이전 `items` 필드 및 `RequistionListItems` 유형은 계속 사용할 수 있지만 더 이상 사용되지 않습니다.
-1. **ACP2E-4877**: *보류 중* 상태일 때 **[!UICONTROL Payment on Account]**&#x200B;을(를) 사용하여 수행한 주문을 관리자에서 편집할 수 없는 문제를 해결했습니다.
 1. **ACP2E-4908**: 각 저장소 보기의 각 제품에 대해 별도의 레이아웃 캐시 항목이 생성되었으므로 큰 카탈로그가 Redis 또는 Valkey에서 과도한 메모리 사용을 초래하는 문제를 해결했습니다.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: 관리자에서 순서를 다시 정렬하면 다음 순서 번호를 할당하는 대신 `-1` 접미사가 있는 새 순서 번호가 만들어지는 문제가 해결되었습니다.
 1. **ACP2E-4977**: 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 **[!UICONTROL Fixed Product Tax]**(FPT)가 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
 1. **AC-16530**: 장바구니에서 카탈로그 가격 규칙에 대해 예약된 업데이트를 일관되게 반영하지 않는 문제를 해결했습니다.
-1. **AC-11389**: 일부 반올림 시나리오에서 할인, 세금 및 주문 합계가 잘못 계산되는 문제를 해결했습니다.
+1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: 일부 반올림 시나리오에서 할인, 세금 및 주문 합계가 잘못 계산되는 문제를 해결했습니다.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: 필요한 카탈로그 데이터를 사용할 수 없을 때 관리자에 공유 카탈로그를 저장하면 할당된 제품 및 가격을 실수로 제거할 수 있는 문제를 해결했습니다.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: 페이로드의 하나의 SKU가 존재하지 않아 유효한 SKU가 업데이트되지 않는 경우 `POST /V1/products/tier-prices` REST API 요청이 완전히 실패하는 문제를 수정합니다.
-1. **AC-14940**: 일부 스토어 관련 경우에 관리자의 고객 계정에 대한 **[!UICONTROL Reset Password]**&#x200B;을(를) 클릭해도 암호 재설정 이메일이 전송되지 않는 문제를 해결했습니다.
+1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: 관리자 계정의 [!UICONTROL Reset Password]을(를) 클릭해도 일부 스토어와 관련된 경우 암호 재설정 전자 메일이 전송되지 않는 문제가 해결되었습니다.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: 인덱서가 **[!UICONTROL Update by Schedule]**(으)로 설정된 경우 B2B 모듈을 설치하지 못하는 문제가 해결되었습니다.
 1. **ACP2E-5205**: 범주 로드에 상당한 시간이 걸리거나 많은 범주 및 제품이 포함된 경우 시간 초과가 발생하는 문제를 해결합니다. 또한 이제 각 범주 리프에 대한 제품 수가 올바르게 표시됩니다.
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: Storefront에서 동일한 제품을 장바구니에 추가하면 단일 항목으로 결합하는 대신 동일한 SKU에 대한 장바구니에서 개별 항목이 생성되는 문제를 해결합니다.
