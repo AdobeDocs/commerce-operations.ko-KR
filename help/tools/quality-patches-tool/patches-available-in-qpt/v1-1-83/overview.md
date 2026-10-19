@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.83'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.83'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.83
@@ -39,8 +39,8 @@ QPT v1.1.83에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: 제한된 권한이 있는 관리자 사용자가 고객 그리드에서 고객을 삭제할 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: GraphQL 스키마에서 구매요청 목록 항목 유형의 철자가 잘못된 문제를 해결했습니다. 이전 `items` 필드 및 `RequistionListItems` 유형은 계속 사용할 수 있지만 더 이상 사용되지 않습니다.
 1. **ACP2E-4908**: 각 저장소 보기의 각 제품에 대해 별도의 레이아웃 캐시 항목이 생성되었으므로 큰 카탈로그가 Redis 또는 Valkey에서 과도한 메모리 사용을 초래하는 문제를 해결했습니다.
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 고정 제품 세금(FPT)이 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: 관리자에서 순서를 다시 정렬하면 다음 순서 번호를 할당하는 대신 `-1` 접미사가 있는 새 순서 번호가 만들어지는 문제가 해결되었습니다.
-1. **ACP2E-4977**: 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 **[!UICONTROL Fixed Product Tax]**(FPT)가 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
 1. **AC-16530**: 장바구니에서 카탈로그 가격 규칙에 대해 예약된 업데이트를 일관되게 반영하지 않는 문제를 해결했습니다.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: 일부 반올림 시나리오에서 할인, 세금 및 주문 합계가 잘못 계산되는 문제를 해결했습니다.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: 필요한 카탈로그 데이터를 사용할 수 없을 때 관리자에 공유 카탈로그를 저장하면 할당된 제품 및 가격을 실수로 제거할 수 있는 문제를 해결했습니다.
