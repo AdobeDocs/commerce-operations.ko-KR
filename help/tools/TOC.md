@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '10898'
+source-wordcount: '10911'
 ht-degree: 0%
 ---
 
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938: :upgrade 설정 중 DB 트리거에 성능 문제가 발생했습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887: 고객 세션이 만료된 후 고객 장바구니가 지워짐](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: L2 Redis 캐시가 활성화된 경우 PHPSESSID가 로그인한 고객에 대한 POST 요청 시 다시 생성됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹 데이터 잘못 할당](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹의 데이터 잘못 할당](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: V1/customers [!DNL REST] API 끝점을 통해 고객을 업데이트하면 오류가 발생합니다](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352:  [!DNL GraphQL] API를 통해 기본 저장소에 대한 반환 특성 레이블을 반환합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514: 관리자의 Forms( [!DNL Page Builder] 브라우저 콘솔에 오류 발생)](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -806,7 +806,7 @@ ht-degree: 0%
       - [ACSD-64753: 배송 주소가 변경될 때 &quot;Pickup in Store&quot;에서 미리 선택한 저장소가 업데이트되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
     - v1.1.64 {#v1-1-64}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
-      - [ACSD-65684: B2B 1.5.2에서 Magento_Company를 업그레이드하는 작업은 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+      - [ACSD-65684: B2B 1.5.2의 Magento_Company 업그레이드는 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
       - [ACSD-65540: company_structure 업데이트에 REGEXP_LIKE 함수가 누락되어 SQL 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
       - [ACSD-63139: 제품 속성에 수천 개의 옵션 값이 포함된 경우 제품 내보내기가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
       - [ACSD-65100: [!UICONTROL Media Gallery Image Optimization] 구성에서 [!UICONTROL Maximum Width] 및 [!UICONTROL Maximum Height] 값을 제거하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: 큰 주소록으로 고객 계정을 열 때 관리자 사용자가 로그아웃함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4977: 구성 가능한 제품 송장 및 대변 메모 합계는 고정 제품 세금을 제외합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389: 주문 합계는 장바구니에 추가된 주문에 따라 달라집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877: 관리자의 계정 주문에 대해 보류 중인 지급에 대한 편집 단추 누락](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
       - [AC-14940: 고객의 스토어 보기가 삭제된 후 암호 재설정 이메일이 전송되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
