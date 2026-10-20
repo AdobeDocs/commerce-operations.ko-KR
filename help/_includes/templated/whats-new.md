@@ -114,7 +114,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>2.4.10-alpha1 릴리스에 대한 설명서를 추가했습니다.<br />- 릴리스 특징 및 수정된 문제가 있는 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce 릴리스 노트</a>를 추가했습니다.<br />- 릴리스 특징 및 수정된 문제가 있는 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source 릴리스 노트</a>를 추가했습니다.<br />- 2.4.10-alpha.<br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 버전 3.0.28로 업데이트했습니다.<a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements"></a></p>
+      <td><p>2.4.10-alpha1 릴리스에 대한 설명서를 추가했습니다.<br />- 릴리스 특징 및 수정된 문제가 있는 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce 릴리스 노트</a>를 추가했습니다.<br />- 릴리스 특징 및 수정된 문제가 있는 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source 릴리스 노트</a>를 추가했습니다.<br />- 2.4.10-alpha.<br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/cli-reference/uct">UCT CLI 참조</a>를 버전 3.0.28로 업데이트했습니다.<a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/installation-guide/system-requirements"></a></p>
 </td>
       <td>
         주요 업데이트, 새로운 주제, 릴리스 정보
