@@ -22,7 +22,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 공유된 카탈로그 저장은 세션 읽기 오류</a> 후 제품 할당과 가격을 제거합니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 공유된 카탈로그 저장은 세션 읽기 오류</a> 후 제품 할당과 가격을 제거합니다.</p>
 </td>
       <td>
         새 주제, qpt
@@ -30,7 +30,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">커밋</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: 병렬 추가 장바구니 요청은 동일한 SKU에 대해 별도의 항목을 생성</a>하는 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: 병렬 추가 장바구니 요청은 동일한 SKU에 대해 별도의 항목을 생성</a>하는 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
 </td>
       <td>
         새 주제, qpt

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.84
@@ -32,15 +32,15 @@ ht-degree: 0%
 
 QPT v1.1.84에는 다음 패치가 포함됩니다.
 
-1. **ACP2E-4913**: 교착 상태로 인해 배송 및 송장 발행 작업이 실패하는 문제를 해결했습니다.
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: 데이터베이스 교착 상태 후 REST API 배송 및 송장 만들기가 영구적으로 실패하는 문제를 해결했습니다.
 1. **ACP2E-5005**: 관리자가 번들 제품을 재구성하고 수량을 편집할 때 협상 가능한 견적의 번들 제품 옵션 수량이 이전 값으로 되돌아가는 문제를 해결했습니다.
 1. **ACP2E-5009**: Magento Open Source에서 Adobe Commerce으로 데이터 마이그레이션으로 범주 예약 디자인 변경 사항 및 제품 **[!UICONTROL Special Price]** 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
-1. **ACP2E-5017**: 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 역할을 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 `role`을(를) 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
 1. **ACP2E-5027**: 파일 잠금이 설정되어 있을 때 인덱서가 루프에 남아 있고 다시 인덱싱이 완료되지 않는 문제를 해결했습니다.
 1. **ACP2E-5029**: 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 내용이 **[!DNL Live Search]**&#x200B;에 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-5041**: 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 **[!UICONTROL Special Price]** 대신 정가가 표시되는 문제가 해결되었습니다.
-1. **ACP2E-5059**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
-1. **ACP2E-5122**: 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 응용 프로그램 오류로 잘못 기록되는 문제를 해결했습니다.
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
+1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 응용 프로그램 오류로 잘못 기록되는 문제를 해결했습니다.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: 라우팅 메타데이터만 요청될 때 GraphQL `route` 쿼리가 전체 CMS 페이지 콘텐츠를 렌더링하는 문제를 해결하여 페이지 빌더 위젯을 포함하는 CMS 페이지에 대한 데이터베이스 쿼리 수를 늘립니다.
 1. **ACP2E-5183**: `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
 1. **ACP2E-5242**: 장바구니에 항목을 추가하는 동안 제품 가용성을 확인하는 동안 웹 사이트를 찾을 수 없음을 나타내는 오류가 표시되는 문제를 해결했습니다.
