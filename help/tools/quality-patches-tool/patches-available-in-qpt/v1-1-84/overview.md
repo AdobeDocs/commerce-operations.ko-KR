@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.84'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.84'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.84
@@ -34,7 +34,7 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: 관리자가 번들 제품을 재구성하고 수량을 편집할 때 협상 가능한 견적의 번들 제품 옵션 수량이 이전 값으로 되돌아가는 문제를 해결했습니다.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: 데이터베이스 교착 상태 후 REST API 배송 및 송장 만들기가 영구적으로 실패하는 문제를 해결했습니다.
-1. **ACP2E-5009**: Magento Open Source에서 Adobe Commerce으로 데이터 마이그레이션으로 범주 예약 디자인 변경 사항 및 제품 **[!UICONTROL Special Price]** 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open Source에서 Adobe Commerce으로 데이터를 마이그레이션하는 동안 범주 예약 디자인 변경 사항 및 제품 **[!UICONTROL Special Price]** 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 `role`을(를) 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
 1. **ACP2E-5027**: 파일 잠금이 설정되어 있을 때 인덱서가 루프에 남아 있고 다시 인덱싱이 완료되지 않는 문제를 해결했습니다.
 1. **ACP2E-5029**: 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 내용이 **[!DNL Live Search]**&#x200B;에 표시되지 않는 문제를 해결했습니다.
