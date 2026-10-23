@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 422a6e38f4e2298baa02090ee71d4f0fdfc95e3b
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.84
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 QPT v1.1.84에는 다음 패치가 포함됩니다.
 
+1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: 관리자가 번들 제품을 재구성하고 수량을 편집할 때 협상 가능한 견적의 번들 제품 옵션 수량이 이전 값으로 되돌아가는 문제를 해결했습니다.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: 데이터베이스 교착 상태 후 REST API 배송 및 송장 만들기가 영구적으로 실패하는 문제를 해결했습니다.
-1. **ACP2E-5005**: 관리자가 번들 제품을 재구성하고 수량을 편집할 때 협상 가능한 견적의 번들 제품 옵션 수량이 이전 값으로 되돌아가는 문제를 해결했습니다.
-1. **ACP2E-5009**: Magento Open Source에서 Adobe Commerce으로 데이터 마이그레이션으로 범주 예약 디자인 변경 사항 및 제품 **[!UICONTROL Special Price]** 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open Source에서 Adobe Commerce으로 데이터를 마이그레이션하는 동안 범주 예약 디자인 변경 사항 및 제품 **[!UICONTROL Special Price]** 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 `role`을(를) 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
 1. **ACP2E-5027**: 파일 잠금이 설정되어 있을 때 인덱서가 루프에 남아 있고 다시 인덱싱이 완료되지 않는 문제를 해결했습니다.
 1. **ACP2E-5029**: 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 내용이 **[!DNL Live Search]**&#x200B;에 표시되지 않는 문제를 해결했습니다.
@@ -48,7 +48,6 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 1. **ACP2E-5034**: 배송 방법을 선택한 후 견적을 다시 계산할 때 협상 가능한 견적 관리가 합계를 *영*&#x200B;으로 잘못 재설정하고, 관리자의 **[!UICONTROL Configure]** 작업을 통해 만들어진 번들 제품 옵션 수량에 대한 업데이트를 삭제하고, 견적 소계의 동적 가격 번들 제품에 적용되는 항목 수준 할인을 올바르게 반영하지 못하는 문제를 해결했습니다.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: 기본이 아닌 재고 및 원본을 사용하는 동안 관련 제품, 상향 판매 또는 교차 판매로 연결된 제품이 저장된 후 제품이 상점 앞에서 사라지는 문제를 해결했습니다.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: 관리에서 기본 로케일이 아닌 로케일로 회사 계정을 편집하면 **[!UICONTROL Credit Limit]**&#x200B;이(가) `0`(으)로 재설정되는 문제가 해결되었습니다.
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: 기본이 아닌 재고 및 원본을 사용하는 동안 [!UICONTROL Related Product], [!UICONTROL Up-Sell] 또는 [!UICONTROL Cross-Sell]&#x200B;(으)로 연결된 제품을 저장한 후 제품이 상점 앞에서 사라지는 문제를 해결했습니다.
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**: 고객 계정이 전역적으로 공유될 때 여러 웹 사이트에 할당된 고객 세그먼트가 첫 번째 웹 사이트에서만 일치하는 고객을 반환하는 문제를 해결했습니다.
 1. **AC-15494**: products 쿼리에서 원래 문자 대신 HTML 이스케이프 처리된 특수 문자를 사용하여 제품 이름을 반환하는 문제를 해결했습니다.
 
