@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
+source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.84
@@ -36,7 +36,7 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: 데이터베이스 교착 상태 후 REST API 배송 및 송장 만들기가 영구적으로 실패하는 문제를 해결했습니다.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Magento Open Source에서 Adobe Commerce으로 데이터를 마이그레이션하는 동안 범주 예약 디자인 변경 사항 및 제품 **[!UICONTROL Special Price]** 예약 업데이트를 올바르게 마이그레이션하지 못하여 마이그레이션하는 동안 일부 예약 업데이트가 누락되거나 건너뛰게 되는 문제를 해결하고 마이그레이션 성능을 향상시킵니다.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 `role`을(를) 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
-1. **ACP2E-5027**: 파일 잠금이 설정되어 있을 때 인덱서가 루프에 남아 있고 다시 인덱싱이 완료되지 않는 문제를 해결했습니다.
+1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: 응용 프로그램 잠금이 사용되고 파일 잠금 공급자가 구성된 경우 인덱서가 자체 잠금을 계속 획득하려고 하므로 인덱서가 끝나지 않는 문제를 해결했습니다.
 1. **ACP2E-5029**: 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 내용이 **[!DNL Live Search]**&#x200B;에 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-5041**: 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 **[!UICONTROL Special Price]** 대신 정가가 표시되는 문제가 해결되었습니다.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
