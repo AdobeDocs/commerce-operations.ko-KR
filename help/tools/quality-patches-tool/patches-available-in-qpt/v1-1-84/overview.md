@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
+source-git-commit: d83b72ab0780e56af7cf7732de2bfe8de7d7b9c5
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '616'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.84
@@ -43,6 +43,8 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 응용 프로그램 오류로 잘못 기록되는 문제를 해결했습니다.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: 라우팅 메타데이터만 요청될 때 GraphQL `route` 쿼리가 전체 CMS 페이지 콘텐츠를 렌더링하는 문제를 해결하여 페이지 빌더 위젯을 포함하는 CMS 페이지에 대한 데이터베이스 쿼리 수를 늘립니다.
 1. **ACP2E-5183**: `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
+1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: 장바구니에 항목을 추가하는 동안 제품 가용성을 확인하는 동안 웹 사이트를 찾을 수 없음을 나타내는 오류가 표시되는 문제를 해결했습니다.
+1. **ACP2E-5263**: 모든 제품이 포함되기 전에 CSV 파일로 제품 내보내기를 중지하여 파일이 불완전할 수 있는 문제를 해결했습니다.
 1. **ACP2E-5242**: 장바구니에 항목을 추가하는 동안 제품 가용성을 확인하는 동안 웹 사이트를 찾을 수 없음을 나타내는 오류가 표시되는 문제를 해결했습니다.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**: 일관되지 않은 데이터로 인한 오류로 인해 내보내기가 중단된 후 제품 내보내기 CSV에서 제품이 누락된 문제를 해결했습니다.
 1. **ACP2E-5034**: 배송 방법을 선택한 후 견적을 다시 계산할 때 협상 가능한 견적 관리가 합계를 *영*&#x200B;으로 잘못 재설정하고, 관리자의 **[!UICONTROL Configure]** 작업을 통해 만들어진 번들 제품 옵션 수량에 대한 업데이트를 삭제하고, 견적 소계의 동적 가격 번들 제품에 적용되는 항목 수준 할인을 올바르게 반영하지 못하는 문제를 해결했습니다.
