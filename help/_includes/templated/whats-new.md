@@ -1,7 +1,7 @@
 ---
-source-git-commit: 42acba2c908566207c9cbdd3b1c5b849366f9d32
+source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1830'
 ht-degree: 1%
 ---
 # 새로운 기능 템플릿
@@ -9,6 +9,180 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 10월 23일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263">ACP2E-5263: 제품 CSV 내보내기가 일찍 중지되고 제품을 생략합니다</a>에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b9382dc0f240bcebddcb833940f6074854949964">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 22일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127">ACP2E-5127에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 영어 이외의 관리 로케일로 회사를 저장하면 신용 제한이 0으로</a>됩니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/67377f54c43f6dc50cb33aafbd003d4b365cbaf5">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005">ACP2E-5005에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 번들 제품 수량이 관리자 협상 가능한 견적으로 업데이트되지 않습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d6fa3a2ebb8591baad26251a7e0adde24b7adab6">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009">ACP2E-5009에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 콘텐츠 스테이징 마이그레이션이 잘못된 업데이트를 만들고 설정:upgrade</a>를 느리게 만듭니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9ee0ee2a0dd1f55f4b49b6023d69f61065387d49">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 21일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079">ACP2E-5079에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 고객 세그먼트는 글로벌 계정 공유를 사용하는 첫 번째 웹 사이트만 일치합니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b243d218091c48dc97f2ff7ffa3e79325aa889c5">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 20일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913">ACP2E-4913에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. REST API 배송 및 송장 생성이 데이터베이스 교착 상태 후 다시 시도되지 않습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c32b6c0780b2f6f8dbccd27f4d7bba3579520">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017">ACP2E-5017에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL 고객 역할 쿼리가 회사가 없는 고객에 대해 실패합니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5cc23e2d9c50215402b7454267cfe7a3c3201cd">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122">ACP2E-5122에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 처리된 GraphQL 장바구니 오류가 예외 로그</a>에 잘못 기록되었습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ba9e8ab95a6e8f079953f6de8906512f64ade22f">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059">ACP2E-5059: 동시 크론 작업이 중복 주문 확인 이메일을 보내기</a>에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7e234cf6acf7fa74f7f5eff0e39f606123dcc485">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 19일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940">AC-14940에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 고객의 스토어 보기가 삭제된 후 암호 재설정 이메일이 전송되지 않습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7ab75a56bd8ca9bc9bcc96dc21678c99711b6ef3">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389">AC-11389에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 주문 합계는 장바구니에 제품이 추가된 주문에 따라 달라집니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3e45719183a23e37a98a94aca955b902f5e795ed">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877">ACP2E-4877에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. [편집] 단추가 [관리자]의 [계정] 주문에서 보류 중인 지급에 대해 누락되었습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/620de17746347e5cb352b2c9f6a345bd5b41accb">커밋</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977">ACP2E-4977에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명 추가: 구성 가능한 제품 송장 및 대변 메모 합계가 고정 제품 세금을 제외</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd42ed03b4661e13c24dd3ce8df29375ae1c9e32">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 10월 16일
 
@@ -320,28 +494,6 @@ ht-degree: 1%
         새 주제, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 8월 19일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Symfony L2 캐시가 있는 Valkey로 이동하기 위한 더 명확한 온-프레미스와 클라우드 지침 및 새로운 마이그레이션 지침으로 Commerce 캐싱 설명서를 업데이트했습니다.<br />- <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/caching-overview">캐싱 개요 및 구성 옵션</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/cache-types">캐시 프론트엔드 및 유형 구성</a>.<br />- 업데이트 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/cache-options">캐시 백엔드 옵션 및 저장소 참조</a>.<br />- 성능 최적화를 위한 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2 캐시 구성</a> 업데이트 <code>RemoteSynchronizedCache</code>에서 Symfony L2 캐시로 마이그레이션하기 위한 지침<br />- Symfony L2 캐시가 있는 Valkey로의 클라우드 특정 마이그레이션 단계 <a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Valkey 및 Redis 서비스 구성에 대한 모범 사례</a>.</p>
-</td>
-      <td>
-        주요 업데이트
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">커밋</a></td>
     </tr>
   </tbody>
 </table>
