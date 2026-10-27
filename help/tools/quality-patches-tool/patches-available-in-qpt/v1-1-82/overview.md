@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.82'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.82에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.82'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.82에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 889cab9f0f353242319e1feaa090e74819f53027
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.82
@@ -61,9 +61,9 @@ QPT v1.1.82에는 다음 패치가 포함됩니다.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: 데이터베이스가 utf8mb4를 지원하도록 구성된 경우에도 관리자의 WYSIWYG 편집기 또는 페이지 빌더 콘텐츠에 4바이트 유니코드 문자 입력이 잘못 차단되는 문제를 해결했습니다.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: 보상 포인트 내역이 큰 스토어에서 보상 포인트 만료가 느리게 실행되어 보상 포인트 만료가 지연되는 문제를 해결했습니다.
 1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**: `products` GraphQL 쿼리에서 요청한 수량 값이 null을 반환하는 문제를 해결했습니다.
-1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: `requisition_lists GraphQL` 쿼리가 쿼리 기준과 일치하는 총 구매요청 목록 수 대신 현재 페이지의 항목 수만 반영하는 `total_count` 값을 반환하는 문제를 해결했습니다.
+1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: `requisition_lists` GraphQL 쿼리가 쿼리 기준과 일치하는 총 구매요청 목록 수 대신 현재 페이지의 항목 수만 반영하는 `total_count` 값을 반환하는 문제를 해결했습니다.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: 첫 번째 판매 가능한 하위 제품이 목록에 늦게 나타날 때 하위 제품이 많은 구성 가능한 제품에 대해 체크아웃 API 요청이 상당히 느려지는 문제를 해결했습니다.
-1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: 제품 경고 전자 메일 알림이 스토어 보기 전자 메일 설정을 무시하는 문제를 해결했습니다.
+1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: 제품 알림 전자 메일 알림이 스토어 보기 전자 메일 설정을 무시하는 문제를 해결했습니다.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: 관리자에서 주소록이 큰 고객 계정을 볼 때 예기치 않게 관리자 사용자가 기록되는 문제가 해결되었습니다.
 1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: 대량 저장소에서 **[!UICONTROL Asynchronous Indexing]**&#x200B;을(를) 사용하도록 설정한 경우 새 주문이 Admin Order Management 그리드에 표시되는 것이 지연되는 문제를 해결했습니다.
 1. **ACP2E-4981**: 페이지 빌더 제품 회전 메뉴에 관리자의 위치가 반영되지 않은 순서로 제품이 표시되고 일치하는 하위 제품이 개별적으로 표시될 때 구성 가능한 제품을 포함하는 문제가 수정되었습니다.
