@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.83'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.83'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.83에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.83
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 QPT v1.1.83에는 다음 패치가 포함됩니다.
 
-1. **AC-17975**: 특정 PHP 환경에서 관리자 워크플로, 체크아웃 인증, CAPTCHA 처리, 범주 관리, 구성 페이지 및 명령줄 작업에 영향을 주는 여러 PHP 8.5 호환성 문제를 해결합니다.
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: PHP 8.5를 사용할 때 Adobe Commerce 2.4.9에서 CLI 명령, 범주 편집, 디자인 구성 및 AJAX 고객 로그인이 실패하는 문제를 해결했습니다.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: *보류 중* 상태일 때 계정에서 결제를 사용하여 주문한 주문을 관리자에서 편집할 수 없는 문제를 해결했습니다.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: 날짜 형식을 슬래시 구분(/)에서 대시 구분(-)으로 되돌려 Sales GraphQL 날짜 필드가 이전 릴리스와 다른 형식으로 날짜를 반환하는 문제를 해결했습니다.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: GraphQL에서 반환된 주문 날짜 및 주문 설명 타임스탬프에 영어가 아닌 로케일 설정에서 잘못된 일정 날짜가 표시되는 문제가 수정되었습니다.
