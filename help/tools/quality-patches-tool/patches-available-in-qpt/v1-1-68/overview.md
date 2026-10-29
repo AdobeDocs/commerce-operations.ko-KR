@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a257144a94d94d7eb572031e2a188809cbff6ea8
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '267'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.68
@@ -44,7 +44,6 @@ QPT v1.1.68에는 다음 패치가 포함됩니다.
 1. **ACSD-66865**: **[!UICONTROL Catalog Price Rule]**&#x200B;을(를) 저장하면 인덱서가 무효화되고 영향을 받는 제품만 다시 인덱싱하는 대체 기능이 제공됩니다.
 1. **ACSD-66889**: CLI에서 인벤토리를 다시 인덱싱하는 동안 오류가 발생했습니다.
 1. **ACSD-66963**: `estimateTotals` 돌연변이는 할인 코드가 가상 제품이 있는 장바구니에 적용되면 할인에 대해 *null*&#x200B;을 반환합니다.
-1. **ACSD-66965**: 구매요청 목록 페이지의 인쇄 옵션으로 인해 오류가 발생합니다.
 1. **ACSD-66965**: **[!UICONTROL Requisition List]** 페이지의 **[!UICONTROL Print]** 옵션에서 오류가 발생합니다.
 1. **ACSD-67039**: `rp_token` 시스템 특성의 유효성 검사로 인해 고객 레코드가 저장되지 않았습니다.
 
