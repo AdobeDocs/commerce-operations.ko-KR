@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '11061'
+source-wordcount: '11091'
 ht-degree: 0%
 ---
 
@@ -806,7 +806,7 @@ ht-degree: 0%
       - [ACSD-64753: 배송 주소가 변경될 때 &quot;Pickup in Store&quot;에서 미리 선택한 저장소가 업데이트되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
     - v1.1.64 {#v1-1-64}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
-      - [ACSD-65684: B2B 1.5.2에서 Magento_Company를 업그레이드하는 작업은 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+      - [ACSD-65684: B2B 1.5.2의 Magento_Company 업그레이드는 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
       - [ACSD-65540: company_structure 업데이트에 REGEXP_LIKE 함수가 누락되어 SQL 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
       - [ACSD-63139: 제품 속성에 수천 개의 옵션 값이 포함된 경우 제품 내보내기가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
       - [ACSD-65100: [!UICONTROL Media Gallery Image Optimization] 구성에서 [!UICONTROL Maximum Width] 및 [!UICONTROL Maximum Height] 값을 제거하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875: 큰 주소록으로 고객 계정을 열 때 관리자 사용자가 로그아웃함](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-17975: PHP 8.5 호환성 문제는 CLI 명령, 범주 편집, 디자인 구성 및 고객 로그인에 영향을 미칩니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
+      - [AC-16530: 예약된 카탈로그 가격 규칙 업데이트 후 장바구니에 일치하지 않는 가격이 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
       - [ACP2E-4977: 구성 가능한 제품 송장 및 대변 메모 합계는 고정 제품 세금을 제외합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389: 주문 합계는 장바구니에 추가된 주문에 따라 달라집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877: 관리자의 계정 주문에 대해 보류 중인 지급에 대한 편집 단추 누락](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)

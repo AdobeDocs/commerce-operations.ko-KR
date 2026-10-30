@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # 릴리스 정보
@@ -34,6 +34,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - [!UICONTROL Compare Products] 페이지의 특성 레이블에 현재 스토어 보기 대신 다른 스토어 보기의 번역이 표시되는 문제를 해결했습니다.
+* **ACP2E-5075**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.10) - 범주 조건이 있는 고정 금액 장바구니 가격 규칙이 규칙이 번들 상위 제품만 일치할 때 동적 가격 번들 제품의 모든 하위 항목에 할인을 잘못 적용한 문제를 해결했습니다.
+* **ACP2E-5077**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7-p7 &lt;2.4.10) - 동시 `customerCart` GraphQL 쿼리 또는 `POST /V1/carts/mine REST` 요청이 활성 카트가 없는 고객에 대해 중복 활성 카트를 만드는 문제를 해결합니다.
+* **ACP2E-5088**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.10) - 세션이 만료되면 고객의 지속적인 장바구니가 지워지는 문제를 해결합니다.
+* **ACP2E-3991**(Adobe Commerce >=2.4.7 &lt;2.4.9) - 클라이언트 IP 주소가 올바르게 확인되지 않는 문제를 해결합니다.
+* **ACP2E-5092**(Adobe Commerce의 경우, B2B >=1.3.4 &lt;1.5.4) - 지역 없이 저장된 회사 주소의 경우 [!UICONTROL Company Profile] 페이지와 관리자 [!UICONTROL Customer Edit] 페이지에 오류가 표시된 후 나중에 해당 국가에 지역이 추가되는 문제를 수정합니다.
+* **ACP2E-5124**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - [!UICONTROL Validation Strategy]이(가) *오류 시 중지*(으)로 설정되어 있을 때 유효성 검사가 실패한 후 유효성 검사 결과에서 [!UICONTROL Import] 단추를 사용할 수 있는 문제를 수정합니다.
+* **AC-17456**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.9 &lt;2.4.10) - 관리 패널의 [!UICONTROL Design Configuration] 페이지에서 *[!UICONTROL Global]* 범위를 편집하면 PHP 8.4 및 8.5에서 *HTTP 500* 오류가 반환되는 문제가 해결되었습니다.
+* **ACP2E-5212**(Adobe Commerce의 경우 B2B >=1.3.4 &lt;1.5.4) - [!UICONTROL Quick Order]에서 `.csv` 확장명으로 이름이 변경된 CSV가 아닌 파일을 허용하는 문제가 해결되었습니다.
+* **ACP2E-5300**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.9 &lt;2.4.10) - 키워드가 관리 패널 [!UICONTROL Orders] 그리드에서 공백으로 구분되거나 쉼표로 구분된 여러 주문 번호를 검색하는 경우 일치하는 주문이 반환되지 않는 문제를 해결했습니다.
+* **ACP2E-5354**(Adobe Commerce의 경우 B2B >=1.5.3 &lt;1.5.4) - REST API를 통해 고객을 업데이트하면 회사 계정과 연결된 고객이 관리 [!UICONTROL Customers] 그리드에 여러 번 표시되는 문제가 해결되었습니다.
+* **ACP2E-5208**(Adobe Commerce의 경우 B2B >=1.5.1 &lt;1.5.4) - 변경 사항이 없는 경우에도 모든 Storefront 페이지 탐색에서 [!UICONTROL Requisition List] 섹션이 다시 로드되는 문제를 해결했습니다.
+* 버전 업데이트: **ACP2E-4894**
+* 대체된 패치: **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
