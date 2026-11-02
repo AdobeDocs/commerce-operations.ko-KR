@@ -1,7 +1,7 @@
 ---
-source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
+source-git-commit: 6ee589d7274397880a5404227f3c5ab9659f73a5
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '2002'
 ht-degree: 1%
 ---
 # 새로운 기능 템플릿
@@ -9,6 +9,94 @@ ht-degree: 1%
 ## 새로운 기능
 
 이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+
+### 2026년 10월 29일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530">AC-16530에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 예약된 카탈로그 가격 규칙 업데이트</a> 후 장바구니에 일관되지 않은 가격이 표시됩니다.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 28일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494">AC-15494에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL 제품 쿼리가 HTML 이스케이프 제품 이름을 반환함</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 27일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242">ACP2E-5242에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL은 장바구니 추가 요청 동안 스토어 ID를 웹 사이트 ID로 사용합니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026년 10월 26일
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>설명</th>
+      <th>유형</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027">ACP2E-5027에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 응용 프로그램 잠금이 파일 잠금 공급자를 사용할 때 인덱서가 완료되지 않습니다</a>.</p>
+</td>
+      <td>
+        새 주제, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d6f20dd3fe3dca1b8d61fd3afeb2e80bcaa9862">커밋</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026년 10월 23일
 
@@ -472,28 +560,6 @@ ht-degree: 1%
         주요 업데이트, 새 주제
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">커밋</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026년 8월 26일
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>설명</th>
-      <th>유형</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840에 대한 QPT 1.1.82 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL 제품 쿼리는 사용자 지정 재고 주식에서의 재고 제품에 대해 null 수량을 반환합니다</a>.</p>
-</td>
-      <td>
-        새 주제, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">커밋</a></td>
     </tr>
   </tbody>
 </table>

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.83
@@ -32,13 +32,13 @@ ht-degree: 0%
 
 QPT v1.1.83에는 다음 패치가 포함됩니다.
 
+1. **[ACP2E-4908](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)**: 각 스토어 보기의 각 제품에 대해 별도의 레이아웃 캐시 항목이 생성되었으므로 큰 카탈로그가 [!DNL Valkey]&#x200B;(또는 [!DNL Redis])에서 과도한 메모리 사용을 초래할 수 있는 문제를 해결했습니다.
 1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: PHP 8.5를 사용할 때 Adobe Commerce 2.4.9에서 CLI 명령, 범주 편집, 디자인 구성 및 AJAX 고객 로그인이 실패하는 문제를 해결했습니다.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: *보류 중* 상태일 때 계정에서 결제를 사용하여 주문한 주문을 관리자에서 편집할 수 없는 문제를 해결했습니다.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: 날짜 형식을 슬래시 구분(/)에서 대시 구분(-)으로 되돌려 Sales GraphQL 날짜 필드가 이전 릴리스와 다른 형식으로 날짜를 반환하는 문제를 해결했습니다.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: GraphQL에서 반환된 주문 날짜 및 주문 설명 타임스탬프에 영어가 아닌 로케일 설정에서 잘못된 일정 날짜가 표시되는 문제가 수정되었습니다.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: 제한된 권한이 있는 관리자 사용자가 고객 그리드에서 고객을 삭제할 수 없는 문제를 해결했습니다.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: GraphQL 스키마에서 구매요청 목록 항목 유형의 철자가 잘못된 문제를 해결했습니다. 이전 `items` 필드 및 `RequistionListItems` 유형은 계속 사용할 수 있지만 더 이상 사용되지 않습니다.
-1. **ACP2E-4908**: 각 저장소 보기의 각 제품에 대해 별도의 레이아웃 캐시 항목이 생성되었으므로 큰 카탈로그가 Redis 또는 Valkey에서 과도한 메모리 사용을 초래하는 문제를 해결했습니다.
 1. **[AC-16530](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)**: 장바구니에서 카탈로그 가격 규칙에 대해 예약된 업데이트를 일관되게 반영하지 않는 문제를 해결했습니다.
 1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: 구성 가능한 제품에 대한 송장 및 대변 메모 총계에 고정 제품 세금(FPT)이 포함되지 않아 합계가 주문 총계보다 낮은 문제를 해결했습니다.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: 관리자에서 순서를 다시 정렬하면 다음 순서 번호를 할당하는 대신 `-1` 접미사가 있는 새 순서 번호가 만들어지는 문제가 해결되었습니다.
