@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.84'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.84'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -39,10 +39,10 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: 파일 잠금이 설정되어 있을 때 인덱서가 루프에 남아 있고 다시 인덱싱이 완료되지 않는 문제를 해결했습니다.
 1. **ACP2E-5029**: 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 내용이 **[!DNL Live Search]**&#x200B;에 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-5041**: 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 **[!UICONTROL Special Price]** 대신 정가가 표시되는 문제가 해결되었습니다.
+1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 응용 프로그램 오류로 잘못 기록되는 문제를 해결했습니다.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: 라우팅 메타데이터만 요청될 때 GraphQL `route` 쿼리가 전체 CMS 페이지 콘텐츠를 렌더링하는 문제를 해결하여 [!DNL Page Builder] 위젯이 포함된 CMS 페이지에 대한 데이터베이스 쿼리를 증가시킵니다.
-1. **ACP2E-5183**: `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: 장바구니에 항목을 추가하는 동안 제품 가용성을 확인하는 동안 웹 사이트를 찾을 수 없음을 나타내는 오류가 표시되는 문제를 해결했습니다.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**: 모든 제품이 포함되기 전에 CSV 파일로 제품 내보내기를 중지하여 파일이 불완전할 수 있는 문제를 해결했습니다.
 1. **ACP2E-5034**: 배송 방법을 선택한 후 견적을 다시 계산할 때 협상 가능한 견적 관리가 합계를 *영*&#x200B;으로 잘못 재설정하고, 관리자의 **[!UICONTROL Configure]** 작업을 통해 만들어진 번들 제품 옵션 수량에 대한 업데이트를 삭제하고, 견적 소계의 동적 가격 번들 제품에 적용되는 항목 수준 할인을 올바르게 반영하지 못하는 문제를 해결했습니다.
