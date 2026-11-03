@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
-source-wordcount: '11102'
+source-wordcount: '11112'
 ht-degree: 0%
 ---
 
@@ -1079,6 +1079,7 @@ ht-degree: 0%
       - [AC-12854: 관리자 순서 변경은 -1 접미사가 있는 원래 주문 번호를 사용합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5183: PHP 8.5에서 `@magento_import`을(를) 사용하여 정적 콘텐츠 배포가 실패합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: GraphQL 제품 쿼리가 HTML 이스케이프 처리된 제품 이름을 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: GraphQL은 장바구니 추가 요청 동안 스토어 ID를 웹 사이트 ID로 사용합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027: 응용 프로그램 잠금이 파일 잠금 공급자를 사용할 때 인덱서가 완료되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
