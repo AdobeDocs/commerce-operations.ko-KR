@@ -6,6 +6,8 @@ feature: Services
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: da76473c-f99b-5ad0-9b14-896aed473f8a
     internal-label: Services
@@ -17,9 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+badgePaas: label="클라우드의 Commerce" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="클라우드 프로젝트의 Adobe Commerce에만 적용됩니다."
+source-git-commit: f1894f3a95e38f64affff0769e80557fe0b4a4d7
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1201'
 ht-degree: 0%
 ---
 
@@ -400,7 +403,7 @@ Adobe은 Managed Services 시스템에서 Adobe Commerce의 프로비저닝, 개
 
 Managed Services용 Adobe 보안 스택은 자동화 및 일관성을 사용하여 모든 수준에서 보안을 구축하여 사람의 오류를 줄입니다. 개발 및 운영 팀은 서로 다른 스택 수준에서 보안 제어 기능을 자동으로 상속합니다.
 
-Amazon Web Services 및 Microsoft Azure과 같은 플랫폼 파트너는 플랫폼 맞춤화를 적용할 때 최대 보안 범위를 보장하고 Adobe의 Managed Services 팀은 규정 준수, 로깅, 인증, 스캔 및 모니터링과 같은 핵심 보안 서비스, 서버 보안 및 보안 애플리케이션 구성을 제공합니다. 자세한 내용은 [Adobe Commerce 보안](https://business.adobe.com/kr/products/magento/secure-ecommerce.html)을 참조하십시오.
+Amazon Web Services 및 Microsoft Azure과 같은 플랫폼 파트너는 플랫폼 맞춤화를 적용할 때 최대 보안 범위를 보장하고 Adobe의 Managed Services 팀은 규정 준수, 로깅, 인증, 스캔 및 모니터링과 같은 핵심 보안 서비스, 서버 보안 및 보안 애플리케이션 구성을 제공합니다. 자세한 내용은 [Adobe Commerce 보안](https://business.adobe.com/products/magento/secure-ecommerce.html)을 참조하십시오.
 
 다음 다이어그램은 Adobe Managed Services 보안 기술 스택을 보여 줍니다.
 
@@ -446,7 +449,7 @@ Adobe은 Managed Services 시스템의 프로비저닝, 개발, 스테이징 및
   </tr>
   <tr>
     <td rowspan="3">업그레이드 실행</td>
-    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ] (스테이징 및 프로덕션)</td>
+    <td>인프라 서비스 업그레이드<br />[MariaDB, Redis, Open Search, Rabbit MQ](스테이징 및 프로덕션)</td>
     <td></td>
     <td></td>
     <td>소유자<br />CSE는 인프라 서비스 업그레이드를 조정합니다.<br />CSE는 업그레이드를 위한 회의 모임 이벤트를 예약합니다.<br />CSE는 프로덕션에서 스테이징으로 데이터를 마이그레이션합니다.</td>
