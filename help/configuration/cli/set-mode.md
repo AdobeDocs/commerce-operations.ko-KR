@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a6400a85be93c8576f5bb2866f4f5107acb5ec1d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # 작업 모드 설정
@@ -135,6 +135,10 @@ Enabled production mode.
 ```
 
 ### 개발자 모드로 변경
+
+>[!NOTE]
+>
+>개발자 모드는 Adobe Commerce 클라우드 환경에서 지원되지 않으며 Adobe Commerce 지원에서 애플리케이션 모드를 쉽게 변경할 수 없습니다.
 
 프로덕션에서 개발자 모드로 변경할 때 예기치 않은 오류가 발생하지 않도록 생성된 클래스와 프록시와 같은 개체 관리자 엔티티를 지워야 합니다. 그런 다음 모드를 변경할 수 있습니다. 다음 단계를 수행하십시오.
 
