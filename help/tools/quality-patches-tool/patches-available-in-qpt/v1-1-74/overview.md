@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '154'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.74
@@ -34,7 +34,7 @@ QPT v1.1.74에는 다음 패치가 포함됩니다.
 
 1. **ACSD-68636**: 다른 스토어에서 생성된 송장에 대한 기프트 카드 전자 메일 헤더에 스토어 소유자의 이름이 올바르게 표시되지 않는 문제가 수정되었습니다.
 1. **ACSD-68430**: 데이터에 특성 구성에서 삭제된 특성 옵션이 포함되어 있을 때 고객 또는 주소를 저장하지 못하는 문제를 해결했습니다.
-1. **ACSD-68499**: GraphQL `updateCartItems` 돌연변이는 사용 가능한 재고 이상의 수량에 대해 *성공*&#x200B;을 반환합니다.
+1. **ACSD-68499**: 사용 가능한 재고를 초과하는 수량을 업데이트할 때 GraphQL `updateCartItems` 돌연변이가 성공 응답을 반환하여 부풀려진 수량 및 합계를 초래하는 문제를 해결했습니다.
 1. **ACSD-68810**: **[!UICONTROL Customer Account Sharing]** 구성에도 불구하고 주문이 다른 웹 사이트에서 새로 만든 고객에게 할당되는 문제를 해결했습니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
