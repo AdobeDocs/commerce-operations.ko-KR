@@ -13,10 +13,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
+source-git-commit: bce83371e9d510552b871005d591981b1d099f80
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 2%
+source-wordcount: '545'
+ht-degree: 1%
 ---
 
 # Adobe Commerce 릴리스 노트
@@ -65,15 +65,18 @@ ht-degree: 2%
     </tr>
     <tr>
       <td>Adobe Commerce용 <strong>서비스</strong>
-        <p>혁신적인 Commerce 머천다이징 서비스의 최신 개선 사항에 대해 알아봅니다.</p>
+        <p>Commerce 서비스의 최신 개선 사항 및 혁신에 대해 알아보십시오.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=ko">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=ko">카탈로그 서비스</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">카탈로그 서비스</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">라이브 검색</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">결제 서비스</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce/aem-assets-integration/release-notes">Commerce/a&gt;용 AEM Assets 통합</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">제품 추천</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce/saas-data-export/release-notes">SaaS 데이터 내보내기 서비스</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce 서비스 커넥터</a></li>
+            <li><a href="https://experienceleague.adobe.com/ko/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer 커넥터</a></li>
             <li><a href="https://experienceleague.adobe.com/ko/docs/commerce/data-connection/release-notes">Experience Platform 커넥터</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=ko">라이브 검색</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=ko">결제 서비스</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=ko">제품 추천</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ko">서비스 커넥터</a></li>
           </ul>
         </td>
       <td><strong>도구</strong>
@@ -82,6 +85,7 @@ ht-degree: 2%
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Adobe App Builder 개발자용 API Mesh</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe Commerce용 Adobe I/O Events</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">관리자 UI SDK</a></li>
+            <li><a href="../../tools/commerce-version-tool/release-notes.md">Commerce 버전 도구</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">품질 패치 도구</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">사이트 전체 분석 도구</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">업그레이드 호환성 도구</a></li>
@@ -92,7 +96,7 @@ ht-degree: 2%
        <td><strong>상점 환경</strong>
         <p>고객을 위한 고유한 경험을 구축하는 데 사용할 수 있는 Storefront 기술의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ko">Adobe Commerce 상점 첫 화면</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/"">Adobe Commerce 상점 첫 화면</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=ko">페이지 빌더</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
