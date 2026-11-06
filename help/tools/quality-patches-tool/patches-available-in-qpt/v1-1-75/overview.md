@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.75'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.75에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.75'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.75에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '284'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.75
@@ -35,7 +35,7 @@ QPT v1.1.75에는 다음 패치가 포함됩니다.
 1. **ACSD-68359**: 큰 카트가 있는 **[!UICONTROL Pick in Store]**&#x200B;을(를) 선택할 때 *414* 오류가 수정되었습니다.
 1. **ACSD-68451**: 회사 관리자가 한 웹 사이트에 로그인하고 다른 웹 사이트에 관련 없는 회사를 만들지만 관련 없는 회사에 잘못 연결된 여러 웹 사이트에 대한 문제를 해결했습니다.
 1. **ACSD-68517**: **[!UICONTROL Catalog]** 및 **[!UICONTROL Catalog Search]** 페이지에서 양식 다시 제출 오류를 수정합니다.
-1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** 단추가 구성 가능한 제품을 만드는 동안 제한된 관리자에게 표시됩니다.
+1. **ACSD-68490**: 구성 가능한 제품을 만드는 동안 제한된 관리자의 **[!UICONTROL Add New Attribute]** 단추가 표시되는 문제를 해결했습니다.
 1. **ACSD-68573**: 범주 권한이 고객 위시리스트 항목에 제대로 적용되지 않는 문제를 해결했습니다. 수정 후에는 위시리스트 항목이 웹과 GraphQL 모두에서 올바르게 표시되고 페이지가 지정됩니다.
 1. **ACSD-68615**: 처리된 조합에 주문 ID가 누락된 경우 인벤토리 예약 보상 CLI에서 예외를 표시하는 문제를 해결했습니다.
 1. **ACSD-68793**: 공유 카탈로그에 할당할 때 유효한 제품이 잘못 거부되는 문제를 해결했습니다.
