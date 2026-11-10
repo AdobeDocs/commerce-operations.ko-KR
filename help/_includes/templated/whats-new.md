@@ -1,17 +1,20 @@
 ---
-source-git-commit: f805a1d27c2237ed7f9885524d01c6bd0df1b85c
+source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '2082'
 ht-degree: 0%
 ---
 # 새로운 기능 템플릿
 
 ## 새로운 기능
 
-이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 모든 부분 업데이트는 이 목록에서 제외합니다.
+이 페이지에는 지난 60일 동안의 변경 사항이 포함되어 있습니다. 복사 편집과 같은 부분 업데이트는 이 목록에서 제외됩니다.
 
 | 설명 | 유형 | 날짜/소스 |
 | --- | --- | --- |
+| [ACP2E-5205에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 큰 카탈로그로 인해 관리자의 범주 로드 및 시간 초과가 느려집니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205). | 새 주제, qpt | [2026년 11월 5일](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
+| [ACP2E-4908에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 큰 카탈로그가 과도한 Redis 또는 Valkey 메모리 사용을 초래합니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908). | 새 주제, qpt | [2026년 11월 2일](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
+| [ACP2E-5183에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. PHP 8.5에서 @magento_import](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183)을(를) 사용하여 정적 콘텐츠 배포가 실패합니다. | 새 주제, qpt | [2026년 11월 2일](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
 | [AC-16530에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 예약된 카탈로그 가격 규칙 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530) 후 장바구니에 일관되지 않은 가격이 표시됩니다. | 새 주제, qpt | [2026년 10월 29일](https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981) |
 | [AC-15494에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL 제품 쿼리가 HTML 이스케이프 제품 이름을 반환함](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494). | 새 주제, qpt | [2026년 10월 28일](https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945) |
 | [ACP2E-5242에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. GraphQL은 장바구니 추가 요청 동안 스토어 ID를 웹 사이트 ID로 사용합니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242). | 새 주제, qpt | [2026년 10월 27일](https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8) |
@@ -47,4 +50,3 @@ ht-degree: 0%
 | [개요: QPT(품질 패치 도구) v1.1.83](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)이(가) 추가되었습니다. | 새 주제, qpt | [2026년 10월 2일](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
 | [월별 격리된 보안 패치 적용 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/monthly-isolated-security-patches)이 추가되어 Adobe Commerce에서 전체 보안 패치 릴리스 사이에 화요일에 대상으로 격리된 CVE 수정 사항을 패치에서 제공하는 방법과 적용 및 확인하는 방법을 설명합니다. | 새 주제 | [2026년 9월 18일](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
 | `VALKEY_BACKEND` 및 `REDIS_BACKEND` 배포 변수가 Adobe Commerce에서 실제로 사용하는 캐시 서비스를 결정하지 않으며 `VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`이(가) 환경에서 실제로 사용할 수 있는 서비스와 일치해야 함을 명확히 하기 위해 [Redis/Valkey 서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) 가이드를 수정했습니다. | 기술 | [2026년 9월 15일](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
-| 이제 Adobe Commerce Patching Automation을 일반적으로 사용할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/caps-tool/intro)를 참조하세요. | 주요 업데이트, 새 주제 | [2026년 9월 8일](https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052) |
