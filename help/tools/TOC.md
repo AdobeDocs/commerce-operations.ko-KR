@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
+source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
 workflow-type: tm+mt
-source-wordcount: '11124'
+source-wordcount: '11153'
 ht-degree: 0%
 ---
 
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938: :upgrade 설정 중 DB 트리거에 성능 문제가 발생했습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887: 고객 세션이 만료된 후 고객 장바구니가 지워짐](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: L2 Redis 캐시가 활성화된 경우 PHPSESSID가 로그인한 고객에 대한 POST 요청 시 다시 생성됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹의 데이터 잘못 할당](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹 데이터 잘못 할당](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: V1/customers [!DNL REST] API 끝점을 통해 고객을 업데이트하면 오류가 발생합니다](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352:  [!DNL GraphQL] API를 통해 기본 저장소에 대한 반환 특성 레이블을 반환합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514: 관리자의 Forms( [!DNL Page Builder] 브라우저 콘솔에 오류 발생)](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -1080,6 +1080,8 @@ ht-degree: 0%
       - [AC-12854: 관리자 순서 변경은 -1 접미사가 있는 원래 주문 번호를 사용합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5034: B2B 품목 할인은 협상 가능한 견적의 동적 가격 번들 소계를 감소시키지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)
+      - [ACP2E-5041: 오래된 제품 양식을 저장하면 예약된 업데이트 후 특별 가격이 만료됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
       - [ACP2E-5183: PHP 8.5에서 `@magento_import`을(를) 사용하여 정적 콘텐츠 배포가 실패합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: GraphQL 제품 쿼리가 HTML 이스케이프 처리된 제품 이름을 반환합니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: GraphQL은 장바구니 추가 요청 동안 스토어 ID를 웹 사이트 ID로 사용합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
