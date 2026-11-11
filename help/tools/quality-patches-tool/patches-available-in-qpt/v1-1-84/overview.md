@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.84'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.84'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.84에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: 1904bb69074eca0a679ec41b4a3817d954f8f488
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -38,7 +38,7 @@ QPT v1.1.84에는 다음 패치가 포함됩니다.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: 고객이 회사에 할당되지 않은 경우 GraphQL을 통해 고객 `role`을(를) 쿼리하면 *내부 서버 오류*&#x200B;가 반환되는 문제를 해결했습니다.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: 파일 잠금이 설정되어 있을 때 인덱서가 루프에 남아 있고 다시 인덱싱이 완료되지 않는 문제를 해결했습니다.
 1. **ACP2E-5029**: 수동 다시 동기화가 수행될 때까지 카탈로그 가격 규칙 변경 내용이 **[!DNL Live Search]**&#x200B;에 표시되지 않는 문제를 해결했습니다.
-1. **ACP2E-5041**: 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 **[!UICONTROL Special Price]** 대신 정가가 표시되는 문제가 해결되었습니다.
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**: 예약된 업데이트 중에 제품을 저장하면 업데이트가 끝난 후 상점 앞에 **[!UICONTROL Special Price]** 대신 정가가 표시되는 문제가 해결되었습니다.
 1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: `@magento_import` 지시문을 사용하는 `LESS` 파일을 컴파일하는 동안 PHP 8.5에서 정적 콘텐츠 배포가 실패하는 문제를 해결했습니다.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: 장바구니에 대한 GraphQL 요청의 처리된 오류가 예외 로그에 응용 프로그램 오류로 잘못 기록되는 문제를 해결했습니다.
