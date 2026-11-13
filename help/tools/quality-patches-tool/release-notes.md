@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
+source-git-commit: b386ae4fb7b26db8498fb78d1a354c3267a862ca
 workflow-type: tm+mt
-source-wordcount: '33534'
+source-wordcount: '34321'
 ht-degree: 0%
 ---
 # 릴리스 정보
@@ -34,6 +34,35 @@ ht-degree: 0%
 >[!INFO]
 >
 >Magento Open Source 커뮤니티에서 만든 [!DNL quality patches]에 대한 자세한 내용은 [릴리스 정보](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)를 참조하세요.
+
+## v1.1.86 {#v1-1-86}
+
+* **ACP2E-3094**(Adobe Commerce >=2.4.5 &lt;2.4.8) - 권한이 많은 범주에 대한 [!UICONTROL Category Permissions]을(를) 보거나 편집하면 브라우저가 응답하지 않는 문제가 해결되었습니다.
+* **ACP2E-5046**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 관리자에서 주문을 만드는 동안 페이지를 새로 고치면 동일한 SKU가 여러 번 추가되는 문제를 수정합니다.
+* **ACP2E-5050**(Adobe Commerce >=2.4.6 &lt;2.4.10)의 경우) - 관리자에서 RMA를 보거나 저장하는 경우 [!UICONTROL Action Logs] 보고서에 RMA 번호가 표시되지 않는 문제가 해결되었습니다.
+* **ACP2E-5057**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.8) - [!UICONTROL Catalog Price Scope]이 *웹 사이트*&#x200B;로 설정된 경우 번들 제품에 대한 GraphQL 쿼리가 웹 사이트별 가격 대신 글로벌 번들 옵션 가격을 반환하는 문제를 해결했습니다.
+* **ACP2E-5061**(Adobe Commerce >=2.4.5 &lt;2.4.10)의 경우) - 카테고리 머천다이징 규칙이 `AND` 조건을 여러 값 중 하나와 일치하는 조건과 결합할 수 없는 문제를 해결합니다.
+* **ACP2E-5071**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.10) - 장바구니에 이미 사용 가능한 전체 수량이 포함되어 있을 때 재고 비가용성 메시지가 제품 페이지에 항상 표시되지 않는 문제를 해결했습니다.
+* **ACP2E-5094**(Adobe Commerce 및 Magento Open Source의 경우) >=2.4.6-p3 &lt;2.4.7 || >=2.4.8 &lt;2.4.10) - `MAGENTO_DC_*` 환경 변수가 설정되면 페이지 로드 속도가 훨씬 느려지는 문제를 해결했습니다.
+* **ACP2E-5118**(Adobe Commerce 및 Magento Open Source >=2.4.5 &lt;2.4.10)의 경우) - [!UICONTROL Translations] 캐시가 비활성화될 때 페이지 빌더 미리 보기가 렌더링되지 않는 문제를 수정합니다.
+* **ACP2E-5134**(Adobe Commerce >=2.4.6 &lt;2.4.10) - 회사의 [!UICONTROL Shared Catalog]에서 번들에 포함된 제품을 제거하면 장바구니에 번들 제품이 남아 있어 장바구니와 체크아웃 중에 오류가 발생하는 문제를 해결했습니다.
+* **ACP2E-5146**(Adobe Commerce의 경우 B2B >=1.3.4 &lt;1.5.4) - 다른 웹 사이트의 고객이 관리자 사용자와 동일한 ID를 가지고 있을 때 특정 웹 사이트로 제한된 관리자 사용자가 고객을 삭제할 수 없는 문제를 해결했습니다.
+* **ACP2E-5176**(Adobe Commerce >=2.4.7 &lt;2.4.10) - [!DNL Google Analytics] 4부터 [!DNL Google Tag Manager]까지 전송된 전자 상거래 이벤트가 [!DNL Universal Analytics] 형식을 사용하고 여러 체크아웃 이벤트를 생략하는 문제를 해결했습니다.
+* **ACP2E-5185**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 범주 트리에서 범주를 이동하면 오류가 표시되는 문제가 해결되었습니다. *범주 이동 오류가 있습니다*. 또는 저장소에 많은 URL 재작성 작업이 있을 때 완료하는 데 몇 분이 소요됩니다.
+* **ACP2E-4191**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.9) - EAV 유형 및 특성 캐시가 비활성화될 때 특정 REST API 요청이 무한 루프에 들어가는 문제를 해결했습니다.
+* **ACP2E-4973**(Adobe Commerce 및 Magento Open Source >=2.4.8-p1 &lt;2.4.9) - [!UICONTROL In-Store Delivery]에서 다른 게재 메서드로 전환해도 장바구니에서 연결된 저장소 주소가 지워지지 않는 문제가 해결되었습니다.
+* **ACP2E-5221**(Adobe Commerce의 경우 B2B >=1.5.3 &lt;1.5.4) - 많은 스토어와 고객 그룹이 있는 설치에서 [!UICONTROL Quick Order]을(를) 사용하도록 설정할 때 [!UICONTROL Catalog Product Permissions] 인덱서가 훨씬 더 오래 걸리는 문제를 해결했습니다.
+* **ACP2E-5245**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.8 &lt;2.4.9) - 첫 번째 주문에서 배송 및 청구에 동일한 주소를 사용하는 새로 등록한 고객이 다음 체크아웃 중에 해당 주소가 두 번 표시되는 문제를 수정합니다.
+* **ACP2E-5248**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - [!UICONTROL Edit Product Status] 권한이 없는 관리자 사용자가 PHP 8.5에서 [!UICONTROL Add Product] 페이지를 열 때 *null을 배열 오프셋으로 표시* 사용 중단 오류가 발생하는 문제를 해결했습니다.
+* **ACP2E-5254**(Adobe Commerce의 경우 B2B >=1.5.2 &lt;1.5.4) - 고객이 캐시를 지울 때까지 목록을 열 때 구매요청 목록에 추가된 제품이 표시되지 않는 문제를 수정합니다.
+* **ACP2E-5268**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.9 &lt;2.4.10) - [!UICONTROL Enable Frontend Resize]이 *No*(으)로 설정된 경우 구성 가능한 제품을 만들 수 없는 문제를 해결했습니다.
+* **ACP2E-3752**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.7 &lt;2.4.9) - 제품 가져오기 작업이 많이 생성될 때 제품 가져오기 처리로 인해 *정의되지 않은 배열 키 &quot;apply_to&quot;* 오류가 발생하는 문제가 해결되었습니다.
+* **ACP2E-5280**(Adobe Commerce >=2.4.9 &lt;2.4.10)의 경우) - [!UICONTROL Category Permissions]이(가) 활성화된 동안 로그인할 때 고객이 오류가 발생하는 문제를 수정합니다.
+* **ACP2E-5295**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.10) - 동일한 프로세스에서 [!UICONTROL Inventory] 인덱서 이후에 실행할 때 하위 프로세스에서 *실패* 오류와 함께 병렬 제품 가격 리인덱싱이 실패하는 문제를 수정합니다.
+* **ACP2E-5298**(Adobe Commerce >=2.4.5 &lt;2.4.10)의 경우) - 장바구니 가격 규칙에 대한 보기 전용 액세스 권한이 있는 관리자가 쿠폰 코드를 생성하거나 삭제할 수 있는 문제를 해결했습니다.
+* **ACP2E-5333**(Adobe Commerce >=2.4.5 &lt;2.4.10)의 경우) - `is not` 연산자를 사용하고 하나 이상의 값이 있는 [!UICONTROL Total Number of Orders] 조건으로 고객 세그먼트를 새로 고치는 데 실패하고 오류 *알 수 없는 연산자가 지정된 문제*&#x200B;가 해결되었습니다.
+* **ACP2E-5425**(Adobe Commerce 및 Magento Open Source의 경우 >=2.4.5 &lt;2.4.8) - 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 수정합니다.
+* 업데이트된 버전: **ACSD-63578**
 
 ## v1.1.85 {#v1-1-85}
 

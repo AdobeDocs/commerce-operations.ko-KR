@@ -19,24 +19,25 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: b6b79249367c0f104cf05269759d69747525b957
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '326'
 ht-degree: 0%
 ---
-# ACSD-63578: *[!UICONTROL Add to Order by SKU]*&#x200B;에서 **[!UICONTROL Delete]** 아이콘을 클릭해도 SKU가 제거되지 않습니다.
+# ACSD-63578: **[!UICONTROL Add to Order by SKU]**&#x200B;에서 **[!UICONTROL Delete]** 아이콘을 클릭해도 SKU가 제거되지 않습니다.
 
-ACSD-63578 패치는 관리자의 *[!UICONTROL Add to Order by SKU]*&#x200B;에서 **[!UICONTROL Delete]** 아이콘을 클릭해도 SKU가 제거되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63578입니다. 이 문제는 Adobe Commerce 2.4.8에서 수정됩니다.
+ACSD-63578 패치는 관리자의 **[!UICONTROL Add to Order by SKU]**&#x200B;에서 **[!UICONTROL Delete]** 아이콘을 클릭해도 SKU가 제거되지 않는 문제를 해결합니다. 이 패치는 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58이 설치된 경우에 사용할 수 있습니다. 패치 ID는 ACSD-63578입니다. 이 문제는 Adobe Commerce 2.4.9에서 수정될 예정입니다.
 
 ## 영향을 받는 제품 및 버전
 
 **Adobe Commerce 버전에 대한 패치가 만들어졌습니다.**
 
 * Adobe Commerce(모든 배포 방법) 2.4.6-p7
+* Adobe Commerce(모든 배포 방법) 2.4.8-p5
 
 **Adobe Commerce 버전과 호환:**
 
-* Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.7-p3
+* Adobe Commerce(모든 배포 방법) 2.4.4 - 2.4.8-p5
 
 >[!NOTE]
 >
@@ -44,11 +45,11 @@ ACSD-63578 패치는 관리자의 *[!UICONTROL Add to Order by SKU]*&#x200B;에�
 
 ## 문제
 
-관리자의 *[!UICONTROL Add to Order by SKU]*&#x200B;에서 **[!UICONTROL Delete]** 아이콘을 클릭해도 주문에서 SKU가 제거되지 않습니다.
+관리자의 **[!UICONTROL Add to Order by SKU]**&#x200B;에서 **[!UICONTROL Delete]** 아이콘을 클릭해도 주문에서 SKU가 제거되지 않습니다.
 
 <u>재현 단계</u>:
 
-1. 관리자 > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**(으)로 이동한 다음 **[!UICONTROL Create New Order]**&#x200B;을(를) 클릭합니다.
+1. **관리자** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**(으)로 이동한 다음 **[!UICONTROL Create New Order]**&#x200B;을(를) 클릭합니다.
 1. 고객을 선택합니다.
 1. **[!UICONTROL Add to Order by SKU]**&#x200B;을(를) 클릭합니다.
    * SKU를 입력합니다.
@@ -71,10 +72,10 @@ ACSD-63578 패치는 관리자의 *[!UICONTROL Add to Order by SKU]*&#x200B;에�
 개별 패치를 적용하려면 배포 방법에 따라 다음 링크를 사용합니다.
 
 * Adobe Commerce 또는 Magento Open Source 온-프레미스: [!DNL Quality Patches Tool] 가이드의 [[!DNL Quality Patches Tool] > 사용량](/help/tools/quality-patches-tool/usage.md)
-* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches).
+* 클라우드 인프라의 Adobe Commerce: Commerce on Cloud Infrastructure 안내서의 [업그레이드 및 패치 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)
 
 ## 관련 읽기
 
 [!DNL Quality Patches Tool]에 대한 자세한 내용은 다음을 참조하세요.
 
-* [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md).
+* [[!DNL Quality Patches Tool]: 도구 가이드의 품질 패치용 셀프서비스 도구](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
