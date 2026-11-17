@@ -1,7 +1,7 @@
 ---
-source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
+source-git-commit: 9e7338e0be69b83b92210b6299d92cc688681f8d
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2227'
 ht-degree: 0%
 ---
 # 새로운 기능 템플릿
@@ -12,6 +12,9 @@ ht-degree: 0%
 
 | 설명 | 유형 | 날짜/소스 |
 | --- | --- | --- |
+| 1.1.86 QPT(품질 패치 도구) 패키지 릴리스에 대한 [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ko)를 게시했습니다. | Qpt | [2026년 11월 13일](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
+| [ACP2E-5041에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 오래된 제품 양식을 저장하면 예약된 업데이트 후 특별 가격이 만료됩니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041). | 새 주제, qpt | [2026년 11월 11일](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
+| [ACP2E-5034: B2B 항목 할인에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명이 추가되었습니다. 동적 가격 번들 소계를 협상 가능한 견적으로 감소시키지 않습니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034). | 새 주제, qpt | [2026년 11월 11일](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
 | [ACP2E-5205에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 큰 카탈로그로 인해 관리자의 범주 로드 및 시간 초과가 느려집니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205). | 새 주제, qpt | [2026년 11월 5일](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
 | [ACP2E-4908에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 큰 카탈로그가 과도한 Redis 또는 Valkey 메모리 사용을 초래합니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908). | 새 주제, qpt | [2026년 11월 2일](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
 | [ACP2E-5183에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. PHP 8.5에서 @magento_import](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183)을(를) 사용하여 정적 콘텐츠 배포가 실패합니다. | 새 주제, qpt | [2026년 11월 2일](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
