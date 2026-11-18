@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 ---
 # 품질 패치 도구로 Adobe Commerce 패치 문제 확인
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 품질 패치 도구에서 사용할 수 있는 패치
 
-사용 가능한 패치 목록은 개발자 설명서에서 [품질 패치 도구](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=ko)를 참조하십시오.
+사용 가능한 패치 목록은 개발자 설명서에서 [품질 패치 도구](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)를 참조하십시오.
 
 ## 품질 패치 도구 설치 및 사용 방법
 
@@ -68,9 +68,9 @@ Adobe Commerce 온프레미스 및 Adobe Commerce 온클라우드 인프라의 �
 
 ### 클라우드 인프라에서 Adobe Commerce용 QPT를 설치하고 사용하는 방법
 
-클라우드 인프라에서 Adobe Commerce에 패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Adobe Commerce용 클라우드 > 패치 적용](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)을 참조하십시오.
+클라우드 인프라에서 Adobe Commerce에 패치를 적용하고 되돌리기 위해 QPT를 설치하고 사용하는 방법에 대한 자세한 내용은 개발자 설명서에서 [Adobe Commerce용 클라우드 > 패치 적용](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)을 참조하십시오.
 
 ## 관련 읽기
 
 * 개발자 설명서에서 [품질 패치 도구 릴리스 노트](/help/tools/quality-patches-tool/release-notes.md).
-* 지원 기술 자료에서 [Adobe에서 제공하는 작성기 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento).
+* _Adobe 지원 및 도구 안내서_&#x200B;의 [Adobe에서 제공하는 작성기 패치를 적용하는 방법](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento).

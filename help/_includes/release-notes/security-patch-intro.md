@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '138'
 ht-degree: 0%
-
 ---
 # 보안 패치 릴리스 노트 소개
 
@@ -18,4 +17,5 @@ ht-degree: 0%
 보안 패치 릴리스에 대해 자세히 알아보기:
 
 * [Adobe Commerce 보안 패치 릴리스 개요](/help/release/release-notes/security/overview.md#about-security-patch-releases)
-* 보안 패치 릴리스 다운로드 및 적용 지침은 _Adobe Commerce 기술 자료_&#x200B;의 [보안 패치를 가져오고 적용하는 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)에서 확인할 수 있습니다.
+* 보안 패치 릴리스로 업그레이드하는 방법에 대한 지침은 [보안 패치 업그레이드 예제](/help/upgrade/implementation/perform-upgrade.md#example---security-patch)를 참조하십시오.
+* 개별 보안 패치 파일을 적용하려면 _Adobe 지원 및 도구 안내서_&#x200B;에서 [Adobe에서 제공하는 작성기 패치 적용 방법](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)을 참조하십시오.
