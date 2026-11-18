@@ -10,9 +10,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 
@@ -41,6 +41,66 @@ bundle exec rake whatsnew_bp
 ```sh
 bundle exec rake whatsnew_bp since="jul 4"
 ```
+
+### `whatsnew_consolidated`
+
+게시된 새로운 기능 테이블을 구성된 Commerce 설명서 프로젝트의 `help/_includes/automated/whatsnew/consolidated.md`에 통합합니다.
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+[`_config.yml`](_config.yml)의 `whatsnew_consolidated.projects` 아래에서 프로젝트를 구성합니다. 각 항목에는 저장소 이름, 프로젝트 제목 및 절대 HTTP(S) 웹 사이트 URL이 필요합니다.
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/en/docs/commerce
+```
+
+항목을 이동하여 섹션 순서를 변경합니다. 두 플랫폼 모두에서 프로젝트를 자유롭게 인터리브할 수 있습니다. `.en`(으)로 끝나는 저장소 이름은 ExL 원본 경로 `help/_includes/templated/whats-new.md`을(를) 사용합니다. 다른 모든 리포지토리는 DevSite 원본 경로 `src/pages/_includes/templated/whats-new.md`을(를) 사용합니다.
+
+작업은 `AdobeDocs` GitHub 조직에서 공개 `main` 파일을 가져옵니다. 각 프로젝트 제목을 일반 텍스트 머리글로 표시하고 `website`에 새 기능 업데이트의 소스로 구성된 설명서 홈 페이지에 프로젝트 제목을 연결하는 문장으로 각 테이블을 소개합니다. 전체에서 `Description | Type | Date/source` 테이블 헤더를 사용합니다. DevSite 프로젝트에서만 이스케이프 처리된 `\<br/\>` 태그가 `<br/>`이(가) 되었습니다. 그렇지 않으면 본문 행, 중복, 링크 및 소스 행 순서는 변경되지 않습니다. 각 소스는 자체 기간을 정의합니다.
+
+알려진 no-update 메시지가 있는 프로젝트는 생략됩니다. 모든 프로젝트에 항목이 없는 경우 포함에는 하나의 전체 업데이트 없음 메시지가 포함됩니다. 구성, 가져오기, 구문 분석 또는 쓰기 실패가 기존 포함을 바꾸지 않고 작업에 실패합니다.
+
+이 작업에서는 생성 또는 업데이트 사용 페이지를 예약하지 않습니다.
+
+포커스가 있는 테스트 세트에는 `_jekyll` Rakefile을 로드하고 Bundler를 통해 실행되는 레이크 진입점 테스트가 포함되어 있습니다. 먼저 Bundler 및 `_jekyll` 번들을 설치하십시오.
+
+```sh
+cd _jekyll && bundle install
+```
+
+그런 다음 저장소 루트에서 테스트를 실행합니다.
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+기존 로컬 `help/_includes/automated/whatsnew/consolidated.md` 포함을 필터링하여 `help/_includes/automated/whatsnew/consolidated-feedback.md`을(를) 만듭니다.
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+작업이 `Feedback`을(를) 쉼표로 구분된 전체 형식 값으로 일치시키므로 대소문자와 주변 공백을 무시합니다. `Feedback, technical`과(와) 같은 결합된 형식이 포함됩니다. 설명, 소스 링크 또는 부분 형식 이름에 언급된 내용은 적합하지 않습니다.
+
+일치하는 행, 중복, 일반 텍스트 프로젝트 제목, 소스 문장(있는 경우), 프로젝트 및 행 순서는 변경되지 않습니다. 일치하는 항목이 없는 프로젝트는 생략됩니다. 일치하는 항목이 없으면 출력에는 전체 비피드백 메시지가 한 개 포함됩니다.
+
+입력이 이미 있어야 합니다. `bundle exec rake whatsnew_consolidated`을(를) 새로 고치려면 별도로 실행하십시오. 피드백 작업은 원격 콘텐츠를 가져오거나 프로젝트 구성을 읽거나 입력을 다시 생성하지 않습니다.
+
+누락되었거나 형식이 잘못된 입력이 필터링된 기존 포함을 바꾸지 않고 작업에 실패합니다. 입력 파일은 수정되지 않으며 필터링된 출력은 자동으로 게시됩니다.
 
 ### `get_released_versions`
 
