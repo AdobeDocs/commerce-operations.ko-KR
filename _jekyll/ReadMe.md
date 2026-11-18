@@ -57,13 +57,13 @@ whatsnew_consolidated:
   projects:
     - repo: commerce-operations.en
       title: Adobe Commerce operational guides
-      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+      website: https://experienceleague.adobe.com/ko/docs/commerce-operations/operational-guides/home
     - repo: commerce-webapi
       title: Adobe Commerce web APIs
       website: https://developer.adobe.com/commerce/webapi/
     - repo: commerce.en
       title: Adobe Commerce
-      website: https://experienceleague.adobe.com/en/docs/commerce
+      website: https://experienceleague.adobe.com/ko/docs/commerce
 ```
 
 항목을 이동하여 섹션 순서를 변경합니다. 두 플랫폼 모두에서 프로젝트를 자유롭게 인터리브할 수 있습니다. `.en`(으)로 끝나는 저장소 이름은 ExL 원본 경로 `help/_includes/templated/whats-new.md`을(를) 사용합니다. 다른 모든 리포지토리는 DevSite 원본 경로 `src/pages/_includes/templated/whats-new.md`을(를) 사용합니다.
