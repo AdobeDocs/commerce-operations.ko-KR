@@ -78,7 +78,7 @@ Adobe Commerce 고객이 중요한 보안 수정 사항을 더 빨리 적용할 
 
    새로운 월별 격리된 패치 파일은 릴리스 일정에 따라 제공됩니다. 영향을 받는 구성 요소 및 CVE에 대한 해당 보안 게시판을 검토하십시오. 각 게시판은 해당 월의 격리된 패치 파일을 설치하기 위한 단계별 지침이 포함된 릴리스 정보에 대한 링크입니다.
 
-1. **Commerce 버전 도구[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)를 사용하여 Commerce 설치의 보안 상태를 확인하세요**
+1. **Commerce 버전 도구[&#128279;](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/commerce-version-tool/intro)를 사용하여 Commerce 설치의 보안 상태를 확인하세요**
 
    이 도구는 현재 설치되어 있는 월별 패치, 누락된 패치 및 설치 시 노출된 CVE를 보고합니다. 이렇게 하면 버전 번호에만 의존하지 않고 필요한 작업에 대한 확실한 평가가 제공됩니다.
 
@@ -92,7 +92,7 @@ Adobe Commerce 고객이 중요한 보안 수정 사항을 더 빨리 적용할 
 
    >[!NOTE]
    >
-   >**클라우드 고객:** 먼저 설치된 클라우드 패치에서 Commerce [버전](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)을 확인하십시오. 수정 사항이 이미 포함되어 있을 수 있으며 수동으로 적용하면 충돌이 생기거나 수정 사항이 중복될 수 있습니다.
+   >**클라우드 고객:** 먼저 설치된 클라우드 패치에서 Commerce [버전](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)을 확인하십시오. 수정 사항이 이미 포함되어 있을 수 있으며 수동으로 적용하면 충돌이 생기거나 수정 사항이 중복될 수 있습니다.
 
 1. **파일을 설치된 구성 요소와 일치시키십시오.**
 
@@ -106,7 +106,7 @@ Adobe Commerce 고객이 중요한 보안 수정 사항을 더 빨리 적용할 
 
    일반 변경 프로세스에 따라 프로덕션으로 승격하기 전에 스테이징에서 유효성을 검사합니다.
 
-Cloud 고객은 [Adobe Commerce 패치 자동화](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro)를 사용하여 위의 수동 git 및 Composer 단계 대신 [관리] 패널을 통해 패치를 적용하거나 되돌릴 수도 있습니다.
+Cloud 고객은 [Adobe Commerce 패치 자동화](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/caps-tool/intro)를 사용하여 위의 수동 git 및 Composer 단계 대신 [관리] 패널을 통해 패치를 적용하거나 되돌릴 수도 있습니다.
 
 ## 배포 유형별 패치 작업
 
@@ -131,7 +131,7 @@ CE, EE, B2B 및 Page Builder 등 여러 구성 요소가 설치된 경우, 각 �
 
 ### 패치가 패치에 레이어드된 경우 내 설치의 보안 상태를 어떻게 알 수 있습니까?
 
-Adobe Commerce은 월별 보안 패치가 릴리스됨에 따라 설치 또는 누락된 패치와 설치 시 보호되는 CVE를 보고하는 독립 실행형 유틸리티인 [Commerce 버전 도구](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)을 도입했습니다. 이 도구는 버전 번호에 의존하지 않고 패치 메타데이터를 읽고 보고 및 CI(지속적 통합)를 위해 기계가 읽을 수 있는 출력을 제공합니다.
+Adobe Commerce은 월별 보안 패치가 릴리스됨에 따라 설치 또는 누락된 패치와 설치 시 보호되는 CVE를 보고하는 독립 실행형 유틸리티인 [Commerce 버전 도구](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/commerce-version-tool/intro)을 도입했습니다. 이 도구는 버전 번호에 의존하지 않고 패치 메타데이터를 읽고 보고 및 CI(지속적 통합)를 위해 기계가 읽을 수 있는 출력을 제공합니다.
 
 ### 이것은 Adobe이 버전 관리된 누적 보안 릴리스에서 물러났음을 의미합니까?
 
@@ -149,4 +149,4 @@ Adobe Commerce은 월별 보안 패치가 릴리스됨에 따라 설치 또는 �
 >* [릴리스 정책](versioning-policy.md)
 >* [패치 릴리스 일정](schedule.md)
 >* [Commerce 버전 도구](../tools/commerce-version-tool/intro.md)
->* [Adobe 보안 게시판 및 권고 조치](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Adobe 보안 게시판 및 권고 조치](https://helpx.adobe.com/kr/security/security-bulletin.html)

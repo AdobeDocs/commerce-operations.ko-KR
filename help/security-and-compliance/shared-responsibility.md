@@ -40,7 +40,7 @@ Adobe은 다음 사항을 담당합니다.
 * 안전한 애플리케이션 개발 보장
 * 판매자의 결제 프로세서에서 요청하는 경우 PCI 인증 획득
 * 보안 사고 대응 및 대응
-* 적극적으로 지원되는 버전에서 모든 타사 종속성, 플랫폼 서비스 및 Adobe Commerce 서비스 확장을 유지 관리합니다. Adobe은 지원되지 않는 종속성 버전을 실행하는 배포에 대한 보안 지원 또는 지원을 제공하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 및 [제품 가용성 매트릭스](/help/release/product-availability.md)를 참조하십시오.
+* 적극적으로 지원되는 버전에서 모든 타사 종속성, 플랫폼 서비스 및 Adobe Commerce 서비스 확장을 유지 관리합니다. Adobe은 지원되지 않는 종속성 버전을 실행하는 배포에 대한 보안 지원 또는 지원을 제공하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko) 및 [제품 가용성 매트릭스](/help/release/product-availability.md)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobe은 Adobe Commerce 솔루션에 사용되는 인프라 및 서비스에 대
 판매자는 Adobe Commerce on cloud infrastructure 솔루션의 맞춤화된 인스턴스에 대한 다음 보안 모범 사례를 담당합니다.
 
 * 저장소에 클라우드 인프라 구성 파일에 필요한 Adobe Commerce 추가
-* Adobe에서 출시한 직후에 보안 및 기타 패치를 맞춤형 Adobe Commerce on cloud infrastructure 솔루션에 적용합니다. 개별 보안 패치 파일의 경우 _Adobe 지원 및 도구 안내서_&#x200B;에서 [Adobe에서 제공하는 작성기 패치 적용 방법](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)을 참조하십시오.
+* Adobe에서 출시한 직후에 보안 및 기타 패치를 맞춤형 Adobe Commerce on cloud infrastructure 솔루션에 적용합니다. 개별 보안 패치 파일의 경우 _Adobe 지원 및 도구 안내서_&#x200B;에서 [Adobe에서 제공하는 작성기 패치 적용 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)을 참조하십시오.
 * 공급업체에서 출시한 직후 모든 사용자 정의 확장 및 코드에 보안 및 기타 패치 적용
 * 사용자 정의 Varnish VCL 파일 생성, 배포 및 테스트
 * 모든 사용자 지정 확장 및 코드를 포함하여 클라우드 인프라 솔루션에 대한 맞춤형 Adobe Commerce의 디자인, 테마 설정, 설치, 통합 및 보안
@@ -112,7 +112,7 @@ Adobe은 Adobe Commerce 솔루션에 사용되는 인프라 및 서비스에 대
   * Adobe Commerce 서비스 확장
   * 모든 타사 확장 및 사용자 정의 통합
 
-  Adobe은 지원되지 않는 버전을 실행하는 배포를 지원하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 및 [제품 가용성 매트릭스](/help/release/product-availability.md)를 참조하십시오.
+  Adobe은 지원되지 않는 버전을 실행하는 배포를 지원하지 않습니다. 지원되는 버전은 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ko) 및 [제품 가용성 매트릭스](/help/release/product-availability.md)를 참조하십시오.
 
 ## 클라우드 서비스 공급자 책임
 
