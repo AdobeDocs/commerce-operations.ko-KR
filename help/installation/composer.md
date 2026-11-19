@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 22c0b3cac685762f9c0d36f225a418a07ed5e1db
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # 온프레미스 설치 빠른 시작
@@ -102,7 +102,7 @@ Adobe Commerce 메타패키지를 가져오려면 다음을 수행하십시오.
 
    >[!NOTE]
    >
-   > Commerce 인증 키로 구성된 작성기 `[auth.json](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
+   > Commerce 인증 키로 구성된 작성기 [`auth.json`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) 파일 또는 환경 변수를 사용하는 경우 인증 키를 입력하라는 메시지가 표시되지 않습니다.
 
    `Could not find package...` 또는 `...no matching package found`과(와) 같은 오류가 발생하면 명령에 오타가 없는지 확인하십시오. 그래도 오류가 발생하면 Adobe Commerce을 다운로드할 수 있는 권한이 없을 수 있습니다. 도움이 필요하면 [Adobe Commerce 지원](https://support.magento.com/hc/en-us)에 문의하십시오.
 
