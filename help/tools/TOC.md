@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
+source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
 workflow-type: tm+mt
-source-wordcount: '11157'
+source-wordcount: '11161'
 ht-degree: 0%
 ---
 
@@ -806,7 +806,7 @@ ht-degree: 0%
       - [ACSD-64753: 배송 주소가 변경될 때 &quot;Pickup in Store&quot;에서 미리 선택한 저장소가 업데이트되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
     - v1.1.64 {#v1-1-64}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
-      - [ACSD-65684: B2B 1.5.2에서 Magento_Company를 업그레이드하는 작업은 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+      - [ACSD-65684: B2B 1.5.2의 Magento_Company 업그레이드는 company_structure에 100,000개 이상의 레코드가 있을 만큼 느립니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
       - [ACSD-65540: company_structure 업데이트에 REGEXP_LIKE 함수가 누락되어 SQL 오류가 발생했습니다.](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
       - [ACSD-63139: 제품 속성에 수천 개의 옵션 값이 포함된 경우 제품 내보내기가 실패합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
       - [ACSD-65100: [!UICONTROL Media Gallery Image Optimization] 구성에서 [!UICONTROL Maximum Width] 및 [!UICONTROL Maximum Height] 값을 제거하면 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
@@ -1099,6 +1099,8 @@ ht-degree: 0%
       - [ACP2E-4741: 연결된 제품을 저장하면 사용자 지정 스톡으로 상점 첫 화면에서 다른 제품이 숨겨집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+    - v1.1.86 {#v1-1-86}
+      - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
   - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)

@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2129'
 ht-degree: 0%
 ---
 # Commerce 사이트 및 인프라 보안
@@ -105,6 +105,7 @@ Commerce은 일반적으로 분기별로 보안 업데이트를 릴리스하지�
 - [보안 및 규정 준수 알림](../../../release/security-enforcement-policy.md)(Cloud 버전 2.4.4부터 2.4.9까지의 Adobe Commerce)
 - [업그레이드 안내서](../../../upgrade/overview.md)
 - [패치 적용 방법](../../../upgrade/patches/overview.md)
+- 개별 보안 패치 파일의 경우 _Adobe 지원 및 도구 안내서_&#x200B;에서 [Adobe에서 제공하는 작성기 패치 적용 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)을 참조하십시오.
 
 >[!TIP]
 >

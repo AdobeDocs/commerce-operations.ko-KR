@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 ---
 # 보안 사고에 대응하는 우수 사례
@@ -47,7 +47,7 @@ ht-degree: 0%
 - 모든 관리자 계정 액세스 감사
 - 고급 MFA(Multi-Factor Authentication) 컨트롤 사용
 - 중요한 로그 유지
-- 사용 중인 Adobe Commerce 버전에 대한 보안 업그레이드를 검토하십시오.
+- 사용 중인 Adobe Commerce 버전에 대한 [보안 패치 릴리스 정보](../../../release/release-notes/security/overview.md)를 검토하고 필요한 보안 패치를 적용하십시오.
 
 자세한 권장 사항은 아래에 자세히 설명되어 있습니다.
 

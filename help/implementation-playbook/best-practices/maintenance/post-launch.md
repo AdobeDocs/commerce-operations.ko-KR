@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2228'
 ht-degree: 0%
 ---
 # Adobe Commerce에 대한 출시 후 지원 및 유지 관리
@@ -88,8 +88,6 @@ Adobe Commerce Cloud에서 정기적인 보안 모니터링을 유지하기 위�
 
 - **보안 검색**: Adobe의 보안 검색 도구를 사용하여 Commerce 사이트에서 알려진 취약점 및 맬웨어를 모니터링합니다. 이 도구는 잠재적인 보안 위험 및 규정 준수 문제에 대한 경고를 제공합니다.
 
-- **일반 패치 및 업데이트 유지 관리**: Adobe의 보안 패치 및 업데이트를 사용할 수 있게 되면 적용합니다. 최신 Adobe Commerce 버전으로 업그레이드하면 위협에 대한 최신 방어 수단이 제공됩니다.
-
 - **감사 및 로그 모니터링**: New Relic 로그(Pro 프로젝트에 사용 가능)와 같은 도구를 사용하여 스테이징 및 프로덕션 환경에서 보안 로그를 중앙 집중화하고 분석함으로써 잠재적인 보안 문제와 위반 가능성을 높일 수 있습니다.
 
 - **계정 및 액세스 관리**: 인증되지 않았거나 오래된 계정을 제거하기 위해 정기적으로 사용자 및 관리자 계정을 감사합니다. 관리자 사용자를 위한 MFA(다단계 인증)를 통해 액세스 제어를 강화합니다.
@@ -122,13 +120,13 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 #### 보안 패치 및 업데이트
 
-다음은 Adobe Commerce Cloud 시스템의 보안을 유지하고 업데이트하기 위한 보안 패치 및 업데이트 모니터링의 주요 사례입니다.
+Adobe Commerce 설치를 최신 상태로 안전하게 유지하려면 다음 방법을 사용하십시오.
 
 - **Adobe Commerce 보안 경고에 가입**: [Adobe의 알림을 등록](https://experienceleague.adobe.com/ko/docs/commerce-admin/systems/security/security)하여 보안 취약점에 대한 정보를 지속적으로 받아 보십시오.
 
 - **릴리스 정보 확인**: 버전(예: 2.3.5-p1)에 대해 &quot;-pN&quot; 태그가 지정된 [보안 패치 릴리스 정보](/help/release/release-notes/security/overview.md)을 정기적으로 검토하고 중요한 수정 사항 및 개선 사항을 포함합니다.
 
-- **보안 패치를 즉시 적용**: 가능한 즉시 보안 패치를 적용합니다. 여기에는 최신 버전으로 업데이트하거나 특정 패치 파일을 적용하는 것이 포함됩니다.
+- **보안 패치를 즉시 적용**: 사용 가능한 보안 업데이트를 설치합니다. 개별 패치 파일의 경우 _Adobe 지원 및 도구 안내서_&#x200B;에서 [Adobe에서 제공하는 작성기 패치 적용 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)을 참조하십시오.
 
 - **클라우드 패치 사용**: Adobe Commerce Cloud의 경우 보안 패치가 클라우드 도구 세트 내에 번들로 제공될 수 있습니다. 이러한 수정 사항을 받으려면 세트 또는 Commerce 버전을 업그레이드해야 합니다.
 
@@ -136,7 +134,7 @@ Adobe Commerce Cloud에서 오류 로깅을 모니터링하기 위해 Adobe에�
 
 >[!TIP]
 >
->패치 적용 및 보안 유지에 대한 자세한 내용과 단계별 지침은 [보안 패치 릴리스 노트](../../../release/release-notes/security/overview.md) 및 [보안 패치를 적용하는 방법](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)을 참조하십시오. [사이트 전체 분석 도구](/help/tools/site-wide-analysis-tool/access.md) 보고서도 검토해야 합니다.
+>조사가 필요한 문제를 식별하려면 [사이트 전체 분석 도구 보고서](/help/tools/site-wide-analysis-tool/access.md)를 검토하십시오.
 
 #### PCI 준수
 
@@ -146,9 +144,9 @@ Adobe Commerce Cloud에서 PCI 규정을 준수하려면 다음 주요 사례를
 
 - **보안 전송 프로토콜 사용**: 암호화 및 적절한 키 관리를 사용하여 항상 TLS와 같은 보안 프로토콜을 통해 결제 데이터를 전송합니다.
 
-- **웹 응용 프로그램 방화벽(WAF) 활용**: Fastly를 기반으로 하는 WAF 서비스는 PCI DSS 6.6 요구 사항을 충족하고 사이트에 도달하기 전에 악성 트래픽을 차단하여 일반적인 취약점으로부터 보호합니다. 자세한 내용은 [여기](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md) 및 [여기](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)를 참조하세요.
+- **웹 응용 프로그램 방화벽(WAF) 사용**: PCI DSS 6.6 요구 사항 지원에 대한 지침은 [일반 보안 모니터링](#regular-security-monitoring) 및 [Fastly WAF 서비스](https://experienceleague.adobe.com/ko/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)를 참조하십시오.
 
-- **액세스 제한**: 권한이 있는 직원만 중요한 결제 데이터에 액세스할 수 있는지 확인하고 [액세스 제어를 적용하여 노출 위험을 줄이십시오](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md).
+- **액세스 제한**: 중요한 결제 데이터에 대한 액세스를 제한합니다. 계정 및 액세스 관리 방법은 [일반 보안 모니터링](#regular-security-monitoring)을 참조하세요.
 
 - **정기적인 보안 검색**: 정기적인 PCI ASV 검색을 수행하고 [환경을 모니터링](/help/security-and-compliance/shared-responsibility.md)하여 잠재적인 취약점을 해결합니다.
 

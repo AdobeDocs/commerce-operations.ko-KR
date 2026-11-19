@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # 공동 책임 보안 및 운영 모델
@@ -85,7 +85,7 @@ Adobe은 Adobe Commerce 솔루션에 사용되는 인프라 및 서비스에 대
 판매자는 Adobe Commerce on cloud infrastructure 솔루션의 맞춤화된 인스턴스에 대한 다음 보안 모범 사례를 담당합니다.
 
 * 저장소에 클라우드 인프라 구성 파일에 필요한 Adobe Commerce 추가
-* Adobe에서 출시한 직후 보안 및 기타 패치를 Adobe Commerce on cloud infrastructure 솔루션에 적용
+* Adobe에서 출시한 직후에 보안 및 기타 패치를 맞춤형 Adobe Commerce on cloud infrastructure 솔루션에 적용합니다. 개별 보안 패치 파일의 경우 _Adobe 지원 및 도구 안내서_&#x200B;에서 [Adobe에서 제공하는 작성기 패치 적용 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)을 참조하십시오.
 * 공급업체에서 출시한 직후 모든 사용자 정의 확장 및 코드에 보안 및 기타 패치 적용
 * 사용자 정의 Varnish VCL 파일 생성, 배포 및 테스트
 * 모든 사용자 지정 확장 및 코드를 포함하여 클라우드 인프라 솔루션에 대한 맞춤형 Adobe Commerce의 디자인, 테마 설정, 설치, 통합 및 보안
@@ -979,4 +979,3 @@ Storefront 이벤트 컬렉션은 제품 추천 및 라이브 검색 출력의 �
 | 제한에 대한 vCPU 사용량 모니터링 | R |   |
 
 {style="table-layout:auto"}
-

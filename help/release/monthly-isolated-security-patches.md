@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # 월별 격리 보안 패치 정책
@@ -84,7 +84,7 @@ Adobe Commerce 고객이 중요한 보안 수정 사항을 더 빨리 적용할 
 
 1. **기준 버전을 확인합니다.**
 
-   격리된 패치는 해당 제품군의 최신 보안 전용 `-p` 릴리스에 대해서만 테스트됩니다. 기준선에서 뒤처져 있으면 먼저 적용하십시오.
+   격리된 패치는 해당 제품군의 최신 보안 전용 `-p` 릴리스에 대해서만 테스트됩니다. 기준선에서 뒤처져 있으면 먼저 적용하십시오. 업그레이드하는 동안 보안 패치 릴리스를 지정하는 방법은 [보안 패치 업그레이드 예](../upgrade/implementation/perform-upgrade.md#example---security-patch)를 참조하십시오.
 
 1. **누락된 패치를 모두 순서대로 적용합니다.**
 

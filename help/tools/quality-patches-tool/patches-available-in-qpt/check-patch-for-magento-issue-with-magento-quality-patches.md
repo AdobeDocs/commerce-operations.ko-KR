@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 ---
 # 품질 패치 도구로 Adobe Commerce 패치 문제 확인
@@ -73,4 +73,4 @@ Adobe Commerce 온프레미스 및 Adobe Commerce 온클라우드 인프라의 �
 ## 관련 읽기
 
 * 개발자 설명서에서 [품질 패치 도구 릴리스 노트](/help/tools/quality-patches-tool/release-notes.md).
-* 지원 기술 자료에서 [Adobe에서 제공하는 작성기 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento).
+* _Adobe 지원 및 도구 안내서_&#x200B;의 [Adobe에서 제공하는 작성기 패치를 적용하는 방법](https://experienceleague.adobe.com/ko/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento).
