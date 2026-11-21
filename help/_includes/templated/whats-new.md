@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9e7338e0be69b83b92210b6299d92cc688681f8d
+source-git-commit: 7096b5f4fa4f40ac33aab5c5cf2bd09c1d25539c
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2293'
 ht-degree: 0%
 ---
 # 새로운 기능 템플릿
@@ -12,6 +12,10 @@ ht-degree: 0%
 
 | 설명 | 유형 | 날짜/소스 |
 | --- | --- | --- |
+| 더 넓고 좁은 화면에서 Experience League 피드백 컨트롤을 찾을 수 있는 위치, 댓글을 남기는 방법, Experience League 및 Adobe Developer에 대한 기여 지침을 찾을 수 있는 위치를 설명하도록 [설명서 피드백 지침](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/documentation-updates#provide-feedback)을 업데이트했습니다. | 피드백, 기술 | [2026년 11월 20일](https://github.com/AdobeDocs/commerce-operations.en/commit/def568dccb1ef329d82f8e7ea82c2611fbcc36f1) |
+| 피드백 전용 보기 및 설명서 피드백 제출에 대한 지침을 통해 Experience League 및 Adobe Developer의 업데이트를 통합하는 [설명서 업데이트](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/documentation-updates)를 추가했습니다. | 새 주제 | [2026년 11월 18일](https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c4051a3aafc67c71c8fc6d87f7862d1905204) |
+| [개요: QPT(품질 패치 도구) v1.1.86](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview)이(가) 추가되었습니다. | 새 주제, qpt | [2026년 11월 18일](https://github.com/AdobeDocs/commerce-operations.en/commit/f9f1054293854bd3423eed5166527640360afc0f) |
+| [개요: QPT(품질 패치 도구) v1.1.85](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview)이(가) 추가되었습니다. | 새 주제, qpt | [2026년 11월 17일](https://github.com/AdobeDocs/commerce-operations.en/commit/01b82c10845afcd16db6c22563d65df24f48d340) |
 | 1.1.86 QPT(품질 패치 도구) 패키지 릴리스에 대한 [릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=ko)를 게시했습니다. | Qpt | [2026년 11월 13일](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
 | [ACP2E-5041에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명을 추가했습니다. 오래된 제품 양식을 저장하면 예약된 업데이트 후 특별 가격이 만료됩니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041). | 새 주제, qpt | [2026년 11월 11일](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
 | [ACP2E-5034: B2B 항목 할인에 대한 QPT 1.1.84 수정 사항에 대한 자세한 설명이 추가되었습니다. 동적 가격 번들 소계를 협상 가능한 견적으로 감소시키지 않습니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034). | 새 주제, qpt | [2026년 11월 11일](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
@@ -51,5 +55,3 @@ ht-degree: 0%
 | [AC-12854에 대한 QPT 1.1.83 수정 사항에 대한 자세한 설명을 추가했습니다. 관리자 순서 변경은 -1 접미사가 있는 원래 주문 번호를 사용합니다](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854). | 새 주제, qpt | [2026년 10월 8일](https://github.com/AdobeDocs/commerce-operations.en/commit/087b7f48c2864837d394c6a9a72f9b30d6db3d90) |
 | [개요: QPT(품질 패치 도구) v1.1.84](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview)이(가) 추가되었습니다. | 새 주제, qpt | [2026년 10월 5일](https://github.com/AdobeDocs/commerce-operations.en/commit/7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a) |
 | [개요: QPT(품질 패치 도구) v1.1.83](https://experienceleague.adobe.com/ko/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)이(가) 추가되었습니다. | 새 주제, qpt | [2026년 10월 2일](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
-| [월별 격리된 보안 패치 적용 정책](https://experienceleague.adobe.com/ko/docs/commerce-operations/release/planning/monthly-isolated-security-patches)이 추가되어 Adobe Commerce에서 전체 보안 패치 릴리스 사이에 화요일에 대상으로 격리된 CVE 수정 사항을 패치에서 제공하는 방법과 적용 및 확인하는 방법을 설명합니다. | 새 주제 | [2026년 9월 18일](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
-| `VALKEY_BACKEND` 및 `REDIS_BACKEND` 배포 변수가 Adobe Commerce에서 실제로 사용하는 캐시 서비스를 결정하지 않으며 `VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`이(가) 환경에서 실제로 사용할 수 있는 서비스와 일치해야 함을 명확히 하기 위해 [Redis/Valkey 서비스 구성](https://experienceleague.adobe.com/ko/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) 가이드를 수정했습니다. | 기술 | [2026년 9월 15일](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
