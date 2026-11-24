@@ -13,7 +13,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: bce83371e9d510552b871005d591981b1d099f80
+source-git-commit: 0266f36925944eeb0e05b1d778b9a32560e16d7f
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -96,7 +96,7 @@ ht-degree: 1%
        <td><strong>상점 환경</strong>
         <p>고객을 위한 고유한 경험을 구축하는 데 사용할 수 있는 Storefront 기술의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/"">Adobe Commerce 상점 첫 화면</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/">Adobe Commerce 상점 첫 화면</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=ko">페이지 빌더</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
