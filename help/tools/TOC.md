@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: 50215e62371db397c96f9dbd2ff2b9a26ef3a131
 workflow-type: tm+mt
-source-wordcount: '11174'
+source-wordcount: '11205'
 ht-degree: 0%
 ---
 
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938: :upgrade 설정 중 DB 트리거에 성능 문제가 발생했습니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887: 고객 세션이 만료된 후 고객 장바구니가 지워짐](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: L2 Redis 캐시가 활성화된 경우 PHPSESSID가 로그인한 고객에 대한 POST 요청 시 다시 생성됩니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹 데이터 잘못 할당](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229: 오래된 X-Magento-Vary 값으로 인해 고객 그룹의 데이터 잘못 할당](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: V1/customers [!DNL REST] API 끝점을 통해 고객을 업데이트하면 오류가 발생합니다](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352:  [!DNL GraphQL] API를 통해 기본 저장소에 대한 반환 특성 레이블을 반환합니다.](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514: 관리자의 Forms( [!DNL Page Builder] 브라우저 콘솔에 오류 발생)](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -1102,6 +1102,8 @@ ht-degree: 0%
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-3094: 많은 권한이 있는 범주에 대한 범주 권한을 보거나 편집하면 브라우저가 응답하지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
+      - [ACP2E-5050: 관리자에서 RMA를 보거나 저장하면 작업 로그 보고서에 RMA 번호가 표시되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
   - [품질 패치 도구로 Adobe Commerce 패치 문제 확인](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 명령줄 도구 참조 {#cli-reference}
   - [Adobe Commerce(온-프레미스)](reference/commerce-on-premises.md)
