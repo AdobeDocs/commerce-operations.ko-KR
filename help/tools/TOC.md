@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '11234'
+source-wordcount: '11262'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,8 @@ ht-degree: 0%
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5134: 공유 카탈로그에서 번들 제품을 제거하면 장바구니에 번들이 남고 체크아웃 시 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
+      - [ACP2E-5118: 번역 캐시가 비활성화되면 페이지 빌더 미리 보기가 렌더링되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: 범주 머천다이징 규칙은 여러 값과 일치하는 조건과 AND 조건을 결합할 수 없습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
       - [ACP2E-5046: 관리자에서 주문을 생성하는 동안 페이지를 새로 고치면 동일한 SKU가 여러 번 추가됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
       - [ACP2E-3094: 많은 권한이 있는 범주에 대한 범주 권한을 보거나 편집하면 브라우저가 응답하지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
