@@ -1,12 +1,12 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.86'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.86'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.86
@@ -23,8 +23,8 @@ QPT v1.1.86에는 다음 패치가 포함됩니다.
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: 카테고리 머천다이징 규칙이 AND 조건을 여러 값 중 하나와 일치하는 조건과 결합할 수 없는 문제를 해결했습니다.
 1. **ACP2E-5071**: 장바구니에 이미 사용 가능한 전체 수량이 포함되어 있을 때 재고 비가용성 메시지가 제품 페이지에 항상 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-5094**: `MAGENTO_DC_*` 환경 변수가 설정되어 있을 때 페이지 로드 속도가 현저히 느려지는 문제를 해결했습니다.
+1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**: 회사 공유 카탈로그에서 번들에 포함된 제품을 제거하면 번들 제품이 장바구니에 남으며 장바구니와 체크아웃 중에 오류가 발생하는 문제를 해결했습니다.
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: **[!UICONTROL Translations]** 캐시를 사용하지 않도록 설정할 때 [!DNL Page Builder] 미리 보기가 렌더링되지 않는 문제를 해결했습니다.
-1. **ACP2E-5134**: 회사 [!UICONTROL Shared Catalog]에서 번들의 구성 요소 제품을 제거하면 장바구니에 번들 제품이 남아서 장바구니와 체크아웃 중에 오류가 발생하는 문제를 해결했습니다.
 1. **ACP2E-5146**: 다른 웹 사이트의 고객이 관리자 사용자와 동일한 ID를 가지고 있을 때 특정 웹 사이트로 제한된 관리자 사용자가 고객을 삭제할 수 없는 문제를 해결했습니다.
 1. **ACP2E-5176**: [!DNL Google Analytics 4]부터 [!DNL Google Tag Manager]까지 전자 상거래 이벤트에서 [!DNL Universal Analytics] 형식을 사용하고 여러 체크아웃 이벤트를 생략하는 문제를 해결했습니다.
 1. **ACP2E-5185**: 범주 트리에서 범주를 이동하면 오류 `There was a category move error`이 표시되거나 저장소에 많은 URL 재쓰기가 있을 때 완료되는 데 몇 분이 걸리는 문제를 해결했습니다.
