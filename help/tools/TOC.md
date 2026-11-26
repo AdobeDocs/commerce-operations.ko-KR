@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741: 연결된 제품을 저장하면 사용자 지정 스톡으로 상점 첫 화면에서 다른 제품이 숨겨집니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991: 클라이언트 IP 주소가 올바르게 확인되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929: 제품 비교 페이지의 속성 레이블에 현재 보기 대신 다른 저장소 보기의 번역이 표시됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245: 신규 고객이 동일한 주소를 사용하여 첫 번째 주문에서 배송 및 대금 청구를 하고 체크아웃 시 주소가 두 번 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752: 많은 가져오기 작업이 실행될 때 제품 가져오기로 인해 정의되지 않은 배열 키 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973: 매장 내 게재에서 다른 게재 방법으로 전환하면 장바구니에서 매장 주소가 지워지지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134: 공유 카탈로그에서 번들 제품을 제거하면 장바구니에 번들이 남고 체크아웃 시 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118: 번역 캐시가 비활성화되면 페이지 빌더 미리 보기가 렌더링되지 않음](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: 범주 머천다이징 규칙은 여러 값과 일치하는 조건과 AND 조건을 결합할 수 없습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
