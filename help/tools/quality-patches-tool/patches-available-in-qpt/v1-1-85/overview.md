@@ -1,6 +1,6 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.85'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.85에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.85'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.85에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
@@ -49,9 +49,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d61208c23f1d1fe38664a838149ba51958eddac
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 ---
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 QPT v1.1.85에는 다음 패치가 포함됩니다.
 
-1. **ACP2E-4929**: **[!UICONTROL Compare Products]** 페이지의 특성 레이블에 현재 저장소 보기 대신 다른 저장소 보기의 번역이 표시되는 문제를 해결했습니다.
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)**: 제품 비교 페이지의 특성 레이블에 현재 저장소 보기 대신 다른 저장소 보기의 번역이 표시되는 문제를 해결했습니다.
 1. **ACP2E-5075**: 범주 조건이 있는 고정 금액 장바구니 가격 규칙이 규칙이 번들 상위 제품만 일치할 때 동적 가격 번들 제품의 모든 하위 항목에 할인을 잘못 적용한 문제를 해결했습니다.
 1. **ACP2E-5077**: 동시 `customerCart` GraphQL 쿼리 또는 `POST /V1/carts/mine` REST 요청이 아직 활성 카트가 없는 고객에 대해 중복 활성 카트를 만드는 문제를 해결했습니다.
 1. **ACP2E-5088**: 세션이 만료되면 고객의 영구 장바구니가 지워지는 문제를 해결합니다.
-1. **ACP2E-3991**: 클라이언트 IP 주소가 올바르게 확인되지 않는 문제를 해결했습니다.
+1. **[ACP2E-3991](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)**: 클라이언트 IP 주소가 올바르게 확인되지 않는 문제를 해결했습니다.
 1. **ACP2E-5092**: 지역 없이 저장된 회사 주소의 해당 국가에 지역이 추가되면 **[!UICONTROL Company Profile]** 페이지와 관리자 고객 편집 페이지에 오류가 표시되는 문제가 해결되었습니다.
 1. **ACP2E-5124**: **[!UICONTROL Validation Strategy]**&#x200B;이(가) **[!UICONTROL Stop on Error]**(으)로 설정되어 있을 때 유효성 검사가 실패한 후 유효성 검사 결과에서 **[!UICONTROL Import]** 단추를 사용할 수 있는 문제를 해결했습니다.
 1. **AC-17456**: 관리 패널의 **[!UICONTROL Design Configuration]** 페이지에서 **[!UICONTROL Global]** 범위를 편집하면 PHP 8.4 및 8.5에서 *HTTP 500* 오류가 반환되는 문제가 해결되었습니다.
