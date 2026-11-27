@@ -1,12 +1,12 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.86'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.86'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.86
@@ -20,6 +20,8 @@ QPT v1.1.86에는 다음 패치가 포함됩니다.
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: 많은 권한이 있는 범주에 대한 **[!UICONTROL Category Permissions]**&#x200B;을(를) 보거나 편집하면 브라우저가 응답하지 않는 문제를 해결했습니다.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: 관리자에서 RMA를 보거나 저장하는 경우 **[!UICONTROL Action Logs]** 보고서에 RMA 번호가 표시되지 않는 문제가 해결되었습니다.
 1. **ACP2E-5057**: **[!UICONTROL Catalog Price Scope]**&#x200B;이(가) **[!UICONTROL Website]**(으)로 설정된 경우 번들 제품에 대한 [!DNL GraphQL] 쿼리가 웹 사이트별 가격 대신 전역 번들 옵션 가격을 반환하는 문제를 해결했습니다.
+1. **ACP2E-5061**: 범주 머천다이징 규칙이 `AND` 조건을 여러 값과 일치하는 조건과 결합할 수 없는 문제를 해결했습니다.
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**: 장바구니에 이미 사용 가능한 전체 수량이 포함되어 있을 때 재고 비가용성 메시지가 제품 페이지에 항상 표시되지 않는 문제를 해결했습니다.
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: 카테고리 머천다이징 규칙이 AND 조건을 여러 값 중 하나와 일치하는 조건과 결합할 수 없는 문제를 해결했습니다.
 1. **ACP2E-5071**: 장바구니에 이미 사용 가능한 전체 수량이 포함되어 있을 때 재고 비가용성 메시지가 제품 페이지에 항상 표시되지 않는 문제를 해결했습니다.
 1. **ACP2E-5094**: `MAGENTO_DC_*` 환경 변수가 설정되어 있을 때 페이지 로드 속도가 현저히 느려지는 문제를 해결했습니다.
