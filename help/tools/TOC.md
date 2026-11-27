@@ -4,9 +4,9 @@ user-guide-description: Adobe Commerce에서 사용할 수 있는 다양한 도�
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '11345'
+source-wordcount: '11399'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,9 @@ ht-degree: 0%
       - [ACP2E-4929: 제품 비교 페이지의 속성 레이블에 현재 보기 대신 다른 저장소 보기의 번역이 표시됩니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [개요: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5071: 구매자의 장바구니에 전체 가용 수량이 포함되어 있을 때 재고 비가용성 메시지가 항상 제품 페이지에 표시되는 것은 아닙니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
+      - [ACP2E-5176: Google Tag Manager를 통해 Google Analytics 4로 전송된 전자 상거래 이벤트는 Universal Analytics 형식을 사용하고 체크아웃 이벤트를 생략합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
+      - [ACP2E-4191: EAV 유형 및 속성 캐시가 비활성화될 때 REST API 요청이 무한 루프를 시작합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
       - [ACP2E-5245: 신규 고객이 동일한 주소를 사용하여 첫 번째 주문에서 배송 및 대금 청구를 하고 체크아웃 시 주소가 두 번 표시됨](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
       - [ACP2E-3752: 많은 가져오기 작업이 실행될 때 제품 가져오기로 인해 정의되지 않은 배열 키 오류가 발생합니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
       - [ACP2E-4973: 매장 내 게재에서 다른 게재 방법으로 전환하면 장바구니에서 매장 주소가 지워지지 않습니다](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
