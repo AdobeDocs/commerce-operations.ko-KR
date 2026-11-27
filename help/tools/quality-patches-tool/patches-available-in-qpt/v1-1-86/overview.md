@@ -1,12 +1,12 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.86'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.86'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
+source-git-commit: 29214be03aa7633cacaec058f65b7cc1d7adc4ea
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '684'
 ht-degree: 0%
 ---
 # 개요: [!DNL Quality Patches Tool]&#x200B;(QPT) v1.1.86
@@ -28,6 +28,8 @@ QPT v1.1.86에는 다음 패치가 포함됩니다.
 1. **ACP2E-5146**: 다른 웹 사이트의 고객이 관리자 사용자와 동일한 ID를 가지고 있을 때 특정 웹 사이트로 제한된 관리자 사용자가 고객을 삭제할 수 없는 문제를 해결했습니다.
 1. **ACP2E-5176**: [!DNL Google Analytics 4]부터 [!DNL Google Tag Manager]까지 전자 상거래 이벤트에서 [!DNL Universal Analytics] 형식을 사용하고 여러 체크아웃 이벤트를 생략하는 문제를 해결했습니다.
 1. **ACP2E-5185**: 범주 트리에서 범주를 이동하면 오류 `There was a category move error`이 표시되거나 저장소에 많은 URL 재쓰기가 있을 때 완료되는 데 몇 분이 걸리는 문제를 해결했습니다.
+1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**: EAV 유형 및 특성 캐시가 비활성화될 때 특정 REST API 요청이 무한 루프를 입력하는 문제를 해결했습니다.
+1. **ACP2E-4973**: **[!UICONTROL In-Store Delivery]**&#x200B;에서 다른 게재 메서드로 전환해도 장바구니에서 연결된 저장소 주소가 지워지지 않는 문제가 해결되었습니다.
 1. **ACP2E-4191**: **[!UICONTROL EAV types and attributes]** 캐시가 비활성화될 때 특정 REST API 요청이 무한 루프를 입력하는 문제를 해결했습니다.
 1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**: 매장 배달에서 다른 배달 방법으로 전환해도 장바구니에서 연결된 매장 주소가 지워지지 않는 문제를 해결했습니다.
 1. **ACP2E-5221**: 저장소 및 고객 그룹이 많은 설치에서 **[!UICONTROL Quick Order]**&#x200B;을(를) 사용하도록 설정할 때 **[!UICONTROL Catalog Product Permissions]** 인덱서가 훨씬 더 오래 걸리는 문제를 해결했습니다.
