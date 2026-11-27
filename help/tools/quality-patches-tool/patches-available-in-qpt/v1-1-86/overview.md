@@ -1,10 +1,10 @@
 ---
-title: '개요: [!DNL Quality Patches Tool] (QPT) v1.1.86'
-description: 이 하위 섹션에서는 [!DNL Quality Patches Tool] (QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
+title: '개요: [!DNL Quality Patches Tool](QPT) v1.1.86'
+description: 이 하위 섹션에서는 [!DNL Quality Patches Tool](QPT) v1.1.86에서 사용할 수 있는 패치로 해결된 문제에 대한 자세한 설명을 제공합니다.
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86에는 다음 패치가 포함됩니다.
 1. **ACP2E-5295**: 동일한 프로세스에서 **[!UICONTROL Inventory]** 인덱서 이후에 실행할 때 `Fail in child process` 오류와 함께 병렬 제품 가격 리인덱싱이 실패하는 문제를 해결했습니다.
 1. **ACP2E-5298**: 장바구니 가격 규칙에 대한 보기 전용 액세스 권한이 있는 관리자가 쿠폰 코드를 생성하거나 삭제할 수 있는 문제를 해결했습니다.
 1. **ACP2E-5333**: **[!UICONTROL is not]** 연산자를 사용하는 **[!UICONTROL Total Number of Orders]** 조건으로 고객 세그먼트를 새로 고치지 못하고 하나 이상의 값이 `Unknown operator specified` 오류로 인해 실패하는 문제를 해결했습니다.
-1. **ACP2E-5425**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**: 고객이 동일한 주문에 대해 중복 주문 확인 이메일을 받는 문제를 해결합니다.
 
 왼쪽의 메뉴를 사용하여 특정 패치 페이지로 이동합니다.
